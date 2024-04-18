@@ -139,18 +139,13 @@ function createExplosions(location: DimensionLocation) {
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **fillBlocks**
 `
-fillBlocks(begin: Vector3, end: Vector3, block: BlockPermutation | BlockType | string, options?: BlockFillOptions): number
+fillBlocks(volume: BlockVolumeBase | CompoundBlockVolume, block: BlockPermutation | BlockType | string, options?: BlockFillOptions): ListBlockVolume
 `
 
 Fills an area between begin and end with block of type block.
 
 #### **Parameters**
-- **begin**: [*Vector3*](Vector3.md)
-  
-  The lower northwest starting corner of the area.
-- **end**: [*Vector3*](Vector3.md)
-  
-  The upper southeast ending corner of the area.
+- **volume**: [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
 - **block**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md) | *string*
   
   Type of block to fill the volume with.
@@ -158,7 +153,7 @@ Fills an area between begin and end with block of type block.
   
   A set of additional options, such as a matching block to potentially replace this fill block with.
 
-**Returns** *number* -  Returns number of blocks placed.
+**Returns** [*ListBlockVolume*](ListBlockVolume.md) -  Returns number of blocks placed.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -168,6 +163,8 @@ Fills an area between begin and end with block of type block.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -406,7 +403,7 @@ Returns the current weather.
 playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
 `
 
-Plays a sound within the dimension for all players that are close to the sound.
+Plays a sound for all players.
 
 #### **Parameters**
 - **soundId**: *string*
@@ -427,6 +424,49 @@ Plays a sound within the dimension for all players that are close to the sound.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> An error will be thrown if volume is less than 0.0.
+>
+> An error will be thrown if fade is less than 0.0.
+>
+> An error will be thrown if pitch is less than 0.01.
+>
+> An error will be thrown if volume is less than 0.0.
+
+#### Examples
+##### ***playMusicAndSound.ts***
+```typescript
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, Vector3 } from '@minecraft/server';
+import { MinecraftDimensionTypes } from '@minecraft/vanilla-data';
+
+const players = world.getPlayers();
+const targetLocation: Vector3 = {
+    x: 0,
+    y: 0,
+    z: 0,
+};
+
+const musicOptions: MusicOptions = {
+    fade: 0.5,
+    loop: true,
+    volume: 1.0,
+};
+world.playMusic('music.menu', musicOptions);
+
+const worldSoundOptions: WorldSoundOptions = {
+    pitch: 0.5,
+    volume: 4.0,
+};
+const overworld = world.getDimension(MinecraftDimensionTypes.Overworld);
+overworld.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
+
+const playerSoundOptions: PlayerSoundOptions = {
+    pitch: 1.0,
+    volume: 1.0,
+};
+
+players[0].playSound('bucket.fill_water', playerSoundOptions);
+```
 ::: moniker-end
 
 ### **runCommand**

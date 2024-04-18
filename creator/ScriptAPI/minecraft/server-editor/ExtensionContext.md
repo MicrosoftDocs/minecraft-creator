@@ -49,6 +49,11 @@ This is used to access the players 3D block cursor and it's properties
 
 Type: [*Cursor*](Cursor.md)
 
+### **exportManager**
+`read-only exportManager: ExportManager;`
+
+Type: [*ExportManager*](ExportManager.md)
+
 ### **extensionInfo**
 `read-only extensionInfo: Extension;`
 

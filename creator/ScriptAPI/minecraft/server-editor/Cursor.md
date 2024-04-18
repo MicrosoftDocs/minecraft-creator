@@ -86,7 +86,7 @@ Get a property object which represents the current properties of the 3D block cu
 hide(): void
 `
 
-Hide the 3D block cursor from view until the corresponding @minecraft-server-editor-bindings.Cursor.show function is called
+Hide the 3D block cursor from view until the corresponding @minecraft-server-editor.Cursor.show function is called
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -99,7 +99,7 @@ Hide the 3D block cursor from view until the corresponding @minecraft-server-edi
 moveBy(offset: minecraftserver.Vector3): minecraftserver.Vector3
 `
 
-Manually offset the 3D block cursor by given amount.  Depending on the @minecraft-server-editor-bindings.CursorProperties.CursorControlMode - this function may have no effect
+Manually offset the 3D block cursor by given amount.  Depending on the @minecraft-server-editor.CursorProperties.CursorControlMode - this function may have no effect
 
 #### **Parameters**
 - **offset**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)

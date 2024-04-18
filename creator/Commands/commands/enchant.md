@@ -122,3 +122,6 @@ Quick Charge level: 1, 2, or 3
 Soul Speed level: 1, 2, or 3
 - `swift_sneak`
 Swift Sneak level: 1, 2, or 3
+- `wind_burst`
+- `density`
+- `breach`

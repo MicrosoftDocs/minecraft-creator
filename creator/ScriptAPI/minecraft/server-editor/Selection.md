@@ -190,7 +190,7 @@ Fetch the volume information of the last compound volume that was pushed to the 
 #### **Parameters**
 - **forceRelativity**?: [*@minecraft/server.CompoundBlockVolumePositionRelativity*](../../minecraft/server/CompoundBlockVolumePositionRelativity.md) = `null`
   
-  See the description for {@link @minecraft-server/CompoundBlockVolume.peekLastVolume}
+  See the description for @minecraft-server/CompoundBlockVolume.peekLastVolume
 
 **Returns** [*@minecraft/server.CompoundBlockVolumeItem*](../../minecraft/server/CompoundBlockVolumeItem.md) | *undefined* - Returns undefined if the stack is empty
 
@@ -238,9 +238,9 @@ Replace the contents of the current selection with a new specified selection.  T
 #### **Parameters**
 - **other**: [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) | [*Selection*](Selection.md)
   
-  {@link @minecraft-server/CompoundBlockVolume} - set the block component part of this selection to the specified compound block volume.  This will completely replace all block volume definitions in the selection.
+  @minecraft-server/CompoundBlockVolume - set the block component part of this selection to the specified compound block volume.  This will completely replace all block volume definitions in the selection.
   
-  {@link @Selection} - replace the selection with the specified selection
+  @Selection - replace the selection with the specified selection
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

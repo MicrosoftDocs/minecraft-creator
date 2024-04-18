@@ -15,10 +15,14 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
+Defines the entity's secondary color. Only works on certain entities that have secondary predefined color values (e.g., tropical fish).
+
 ## Properties
 
 ### **value**
 `read-only value: PaletteColor;`
+
+Value of this particular color.
 
 Type: [*PaletteColor*](PaletteColor.md)
 

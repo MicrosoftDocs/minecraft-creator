@@ -49,6 +49,9 @@ Type: *number*
 - [runJob](#runjob)
 ::: moniker-end
 - [runTimeout](#runtimeout)
+::: moniker range="=minecraft-bedrock-experimental"
+- [waitTick](#waittick)
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **clearJob**
@@ -208,3 +211,27 @@ Runs a set of code at a future time specified by tickDelay.
   Amount of time, in ticks, before the interval will be called.
 
 **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **waitTick**
+`
+waitTick(ticks?: number): Promise<void>
+`
+
+waitTick returns a promise that resolves after 1 tick. You may also provide an amount of ticks as a parameter and the promise will resolve after that many ticks instead.
+
+#### **Parameters**
+- **ticks**?: *number* = `null`
+  
+  The amount of ticks to wait. Minimum value is 1.
+
+**Returns** Promise&lt;*void*&gt; - A promise that is resolved when 1 tick has elapsed, or when "ticks" is specified it will wait the specified amount of ticks.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md)
+::: moniker-end

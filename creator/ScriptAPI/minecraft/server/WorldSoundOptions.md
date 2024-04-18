@@ -8,14 +8,14 @@ description: Contents of the @minecraft/server.WorldSoundOptions class.
 ---
 # WorldSoundOptions Interface
 
-Contains additional options for a world-level playSound occurrence.
+Contains additional options for a playSound occurrence.
 
 ## Properties
 
 ### **pitch**
 `pitch?: number;`
 
-Pitch of the sound played at the world level.
+Pitch of the sound played.
 
 Type: *number*
 

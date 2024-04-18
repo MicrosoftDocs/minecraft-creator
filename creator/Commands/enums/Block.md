@@ -582,6 +582,8 @@ Piston
 Stone Brick Stairs
 - `stone_brick_stairs`
 Stone Brick Stairs
+- `minecraft:dead_bubble_coral_block`
+- `dead_bubble_coral_block`
 - `minecraft:gray_candle`
 Gray Candle
 - `gray_candle`
@@ -594,6 +596,8 @@ Mangrove Planks
 Mangrove Planks
 - `minecraft:red_terracotta`
 - `red_terracotta`
+- `minecraft:dead_fire_coral_block`
+- `dead_fire_coral_block`
 - `minecraft:oxidized_copper_bulb`
 - `oxidized_copper_bulb`
 - `minecraft:magenta_wool`
@@ -870,6 +874,8 @@ Lava
 Loom
 - `loom`
 Loom
+- `minecraft:dead_tube_coral_block`
+- `dead_tube_coral_block`
 - `minecraft:end_stone`
 End Stone
 - `end_stone`
@@ -1050,6 +1056,8 @@ Redstone Ore
 - `bamboo_double_slab`
 - `minecraft:green_stained_glass`
 - `green_stained_glass`
+- `minecraft:bubble_coral_block`
+- `bubble_coral_block`
 - `minecraft:nether_brick_fence`
 Nether Brick Fence
 - `nether_brick_fence`
@@ -1174,6 +1182,8 @@ Crimson Button
 Crimson Button
 - `minecraft:acacia_planks`
 - `acacia_planks`
+- `minecraft:fire_coral_block`
+- `fire_coral_block`
 - `minecraft:magenta_concrete_powder`
 - `magenta_concrete_powder`
 - `minecraft:iron_door`
@@ -1286,6 +1296,8 @@ Yellow Candle Cake
 Mangrove Fence Gate
 - `mangrove_fence_gate`
 Mangrove Fence Gate
+- `minecraft:sunflower`
+- `sunflower`
 - `minecraft:pink_petals`
 - `pink_petals`
 - `minecraft:bamboo_hanging_sign`
@@ -1464,10 +1476,6 @@ Chiseled Deepslate
 Cut Copper Slab
 - `cut_copper_slab`
 Cut Copper Slab
-- `minecraft:coral_block`
-Coral Block
-- `coral_block`
-Coral Block
 - `minecraft:red_stained_glass`
 - `red_stained_glass`
 - `minecraft:acacia_pressure_plate`
@@ -1490,6 +1498,8 @@ Raw Copper Block
 Oxidized Cut Copper Slab
 - `oxidized_cut_copper_slab`
 Oxidized Cut Copper Slab
+- `minecraft:horn_coral_block`
+- `horn_coral_block`
 - `minecraft:beetroot`
 Beetroot
 - `beetroot`
@@ -1576,10 +1586,6 @@ Waxed Double Cut Copper Slab
 Kelp
 - `kelp`
 Kelp
-- `minecraft:double_plant`
-Double Plant
-- `double_plant`
-Double Plant
 - `minecraft:waxed_exposed_copper_door`
 - `waxed_exposed_copper_door`
 - `minecraft:deepslate_bricks`
@@ -1594,6 +1600,8 @@ Blue Glazed Terracotta
 Light Blue Glazed Terracotta
 - `light_blue_glazed_terracotta`
 Light Blue Glazed Terracotta
+- `minecraft:rose_bush`
+- `rose_bush`
 - `minecraft:flowering_azalea`
 Flowering Azalea
 - `flowering_azalea`
@@ -1644,6 +1652,8 @@ Trapped Chest
 Acacia Trapdoor
 - `acacia_trapdoor`
 Acacia Trapdoor
+- `minecraft:brain_coral_block`
+- `brain_coral_block`
 - `minecraft:standing_sign`
 Standing Sign
 - `standing_sign`
@@ -2086,12 +2096,16 @@ Double Stone Block Slab 4
 Double Stone Block Slab 4
 - `minecraft:bamboo_button`
 - `bamboo_button`
+- `minecraft:tall_grass`
+- `tall_grass`
 - `minecraft:nether_sprouts`
 Nether Sprouts
 - `nether_sprouts`
 Nether Sprouts
 - `minecraft:cyan_stained_glass_pane`
 - `cyan_stained_glass_pane`
+- `minecraft:dead_horn_coral_block`
+- `dead_horn_coral_block`
 - `minecraft:verdant_froglight`
 Verdant Froglight
 - `verdant_froglight`
@@ -2108,6 +2122,8 @@ Warped Stem
 - `horn_coral_fan`
 - `minecraft:green_shulker_box`
 - `green_shulker_box`
+- `minecraft:large_fern`
+- `large_fern`
 - `minecraft:stripped_crimson_hyphae`
 Stripped Crimson Hyphae
 - `stripped_crimson_hyphae`
@@ -2190,6 +2206,8 @@ Deepslate Redstone Ore
 Double Stone Block Slab
 - `double_stone_block_slab`
 Double Stone Block Slab
+- `minecraft:dead_brain_coral_block`
+- `dead_brain_coral_block`
 - `minecraft:mangrove_fence`
 Mangrove Fence
 - `mangrove_fence`
@@ -2550,6 +2568,8 @@ Waxed Cut Copper
 Cobbled Deepslate Slab
 - `cobbled_deepslate_slab`
 Cobbled Deepslate Slab
+- `minecraft:lilac`
+- `lilac`
 - `minecraft:spore_blossom`
 Spore Blossom
 - `spore_blossom`
@@ -2636,6 +2656,8 @@ Cauldron
 Cave Vines Head with Berries
 - `cave_vines_head_with_berries`
 Cave Vines Head with Berries
+- `minecraft:tube_coral_block`
+- `tube_coral_block`
 - `minecraft:birch_sapling`
 - `birch_sapling`
 - `minecraft:dark_oak_trapdoor`
@@ -2798,6 +2820,8 @@ Portal
 Birch Button
 - `birch_button`
 Birch Button
+- `minecraft:peony`
+- `peony`
 - `minecraft:command_block`
 Command Block
 - `command_block`
@@ -3122,6 +3146,14 @@ Red Flower
 Tallgrass
 - `minecraft:tallgrass`
 Tallgrass
+- `coral_block`
+Coral Block
+- `minecraft:coral_block`
+Coral Block
+- `double_plant`
+Double Plant
+- `minecraft:double_plant`
+Double Plant
 - `lava_cauldron`
 Lava Cauldron
 - `minecraft:lava_cauldron`

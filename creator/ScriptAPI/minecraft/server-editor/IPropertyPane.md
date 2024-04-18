@@ -54,6 +54,13 @@ Loc ID (resolved on client)
 
 Type: *string*
 
+### **visible**
+`visible: boolean;`
+
+Check visibility of the pane
+
+Type: *boolean*
+
 ### **width**
 `width: number;`
 

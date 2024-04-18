@@ -116,3 +116,4 @@ Darkness
 - `weaving`
 - `oozing`
 - `infested`
+- `raid_omen`
