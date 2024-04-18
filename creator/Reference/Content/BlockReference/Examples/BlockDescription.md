@@ -1,5 +1,5 @@
 ---
-author: mammerla
+author: JimSeaman42
 ms.author: mikeam
 title: Block Documentation - Block Description
 description: "A reference document detailing the block description section contained in the block behavior pack JSON file"
@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Block Documentation - Block Description
 
-The block `"description"` is a section inside the `"minecraft:block"` section of a custom block's behavior pack JSON file that contains a list of characteristics of a block that are applicable to all permutations of the block. The description MUST contain an identifier to identify the block by; the other fields are optional.
+The block `"description"` lives inside the `"minecraft:block"` section of a custom block's behavior pack JSON file, and contains a list of block characteristics that are applicable to all permutations of the block. The description MUST contain an identifier to identify the block by; the other fields are optional.
 
 ## Parameters
 
@@ -24,6 +24,7 @@ The block `"description"` is a section inside the `"minecraft:block"` section of
 |:----------|:----------|:----------|:----------|
 |category|*not set*|String|Determines which category this block will be placed under in the inventory and crafting table container screens. Options are "construction", "nature", "equipment", "items", and "none". If omitted or "none" is specified, the block will not appear in the inventory or crafting table container screens.|
 |group|*not set*|Localization String|Specifies the language file key that maps to which expandable/collapsible group this block will be a part of within a category. If this field is omitted, or there is no group whose name matches the loc string, this block will be placed standalone in the given category.|
+|is hidden in commands|false|Boolean|Determines whether or not this block can be used with commands. Commands can use blocks by default, but you may use this to disable that functionality.|
 
 ## Example
 
