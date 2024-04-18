@@ -14,7 +14,7 @@ In this article, we will look at the basic components that comprise all recipes,
 
 ## Recipe Parameters
 
-Recipe parameters are the building blocks that make up the recipe. While all recipes have parameters, not all recipes share the SAME parameters.
+Recipe parameters are the building blocks that make up the recipe... to continue our analogy, these are our ingredients. While all recipes have parameters, not all recipes share the SAME parameters.
 
 | Name | Type  | Description |
 |--------------|-----------|------------|
@@ -30,20 +30,20 @@ Recipe parameters are the building blocks that make up the recipe. While all rec
 |Addition |Smithing Transform |Items used to perform the transformation |
 |Base |Smithing Transform |Item to be transformed |
 
-
 ## Recipe Tags
 
-Recipe tags allow you to group together similar elments (e.g., different types of wood stairs) so that you can construct one recipe that can adapt to multiple different types of things. See [this article](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/TagsRecipeInput.md) for more information on recipe tags.
+Recipe tags allow you to group together similar elements, for example different types of wood stairs, so that you can construct one recipe that can adapt to a variety of parameters. See [this article](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/TagsRecipeInput.md) for more information on recipe tags.
 
 ## Recipe Unlocking
 
-Starting with version 1.20.10, a player can "unlock" recipes starting from very basic starters (e.g., a wooden pickaxe) up through the most sophisticated items.As part of designing your items and recipes, you can control how your item gets unlocked via the 'unlock' element in your recipe JSON.
+As of version 1.20.10, players can "unlock" recipes ranging from very basic starters (e.g., a wooden pickaxe) through the most sophisticated items. As part of the item and recipe design process, you can control how an item gets unlocked via the 'unlock' element in your recipe JSON.
 
-You can choose an unlock strategy for your recipe based on either:
+You can choose an unlock strategy for a recipe based on either an item or a context.
 
-An `item`, specifying the item to unlock. You can add a `data` tag, optionally, to filter down the item to a specific type of item.
+An `item` specifies the item to unlock. Optionally you can add a `data` tag to filter down to a specific type of item.
 
 Acacia Planks:
+
 ```json
   "unlock": [
     {
@@ -53,14 +53,14 @@ Acacia Planks:
   ]
 ```
 
-A `context` which can be one of three values:
+A `context` can be one of three values:
 
 * `AlwaysUnlocked`: Always unlock this item
 * `PlayerInWater`: Player enters the water
 * `PlayerHasManyItems`: Player has more than 10 items in their inventory
 
-
 Crafting table:
+
 ```json
   "unlock": {
     "context": "AlwaysUnlocked"
@@ -82,7 +82,6 @@ Chest:
 These are recipes that require a furnace. `Input` items will burn and transform into the item(s) specified in `Output`. Furnace recipes use the **input**, **output**, and **tags** parameters.
 
 * [Furnace reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Furnace.md)
-
 
 ### Shaped Recipe
 
@@ -119,4 +118,3 @@ Smithing Transform recipes are used with a smithing table to transform one item 
 Smithing trim recipes are used with a smithing table to add a color trim to an item while retaining properties.
 
 * [Smithing trim reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_SmithingTrim.md)
-
