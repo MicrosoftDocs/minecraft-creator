@@ -16,9 +16,12 @@ Contains additional options for a block fill operation.
 
 ## Properties
 
-### **matchingBlock**
-`matchingBlock?: BlockPermutation;`
+### **blockFilter**
+`blockFilter?: BlockFilter;`
 
-When specified, the fill operation will only apply to blocks that match this description.
+Type: [*BlockFilter*](BlockFilter.md)
 
-Type: [*BlockPermutation*](BlockPermutation.md)
+### **ignoreChunkBoundErrors**
+`ignoreChunkBoundErrors?: boolean;`
+
+Type: *boolean*

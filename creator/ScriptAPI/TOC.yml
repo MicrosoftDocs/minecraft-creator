@@ -530,6 +530,8 @@
       href: minecraft/server/ItemComponentRegistry.md
     - name: ItemComponentUseEvent
       href: minecraft/server/ItemComponentUseEvent.md
+    - name: ItemComponentUseOnEvent
+      href: minecraft/server/ItemComponentUseOnEvent.md
     - name: ItemCooldownComponent
       href: minecraft/server/ItemCooldownComponent.md
     - name: ItemDurabilityComponent
@@ -580,6 +582,8 @@
       href: minecraft/server/ItemUseOnBeforeEvent.md
     - name: ItemUseOnBeforeEventSignal
       href: minecraft/server/ItemUseOnBeforeEventSignal.md
+    - name: ItemUseOnEvent
+      href: minecraft/server/ItemUseOnEvent.md
     - name: LeverActionAfterEvent
       href: minecraft/server/LeverActionAfterEvent.md
     - name: LeverActionAfterEventSignal
@@ -894,6 +898,8 @@
       href: minecraft/server-editor/EditorMode.md
     - name: EditorStatusBarAlignment
       href: minecraft/server-editor/EditorStatusBarAlignment.md
+    - name: ExportResult
+      href: minecraft/server-editor/ExportResult.md
     - name: GraphicsSettingsProperty
       href: minecraft/server-editor/GraphicsSettingsProperty.md
     - name: InputModifier
@@ -912,6 +918,10 @@
       href: minecraft/server-editor/MouseInputType.md
     - name: PlaytestSessionResult
       href: minecraft/server-editor/PlaytestSessionResult.md
+    - name: ProjectExportType
+      href: minecraft/server-editor/ProjectExportType.md
+    - name: SimpleToolStatusBarVisibility
+      href: minecraft/server-editor/SimpleToolStatusBarVisibility.md
     - name: WidgetGroupSelectionMode
       href: minecraft/server-editor/WidgetGroupSelectionMode.md
     - name: BedrockEventSubscriptionCache
@@ -920,8 +930,6 @@
       href: minecraft/server-editor/BlockPalette.md
     - name: BlockPaletteManager
       href: minecraft/server-editor/BlockPaletteManager.md
-    - name: BrushShape
-      href: minecraft/server-editor/BrushShape.md
     - name: BrushShapeManager
       href: minecraft/server-editor/BrushShapeManager.md
     - name: ClipboardItem
@@ -938,6 +946,8 @@
       href: minecraft/server-editor/CustomWidget.md
     - name: CustomWidgetMoveEventData
       href: minecraft/server-editor/CustomWidgetMoveEventData.md
+    - name: ExportManager
+      href: minecraft/server-editor/ExportManager.md
     - name: Extension
       href: minecraft/server-editor/Extension.md
     - name: ExtensionContext
@@ -978,6 +988,8 @@
       href: minecraft/server-editor/SettingsUIElement.md
     - name: SimpleBlockPaletteItem
       href: minecraft/server-editor/SimpleBlockPaletteItem.md
+    - name: SimpleToolWrapper
+      href: minecraft/server-editor/SimpleToolWrapper.md
     - name: SimulationState
       href: minecraft/server-editor/SimulationState.md
     - name: TransactionManager
@@ -994,6 +1006,8 @@
       href: minecraft/server-editor/WidgetManager.md
     - name: WidgetStateChangeEventData
       href: minecraft/server-editor/WidgetStateChangeEventData.md
+    - name: BrushShape
+      href: minecraft/server-editor/BrushShape.md
     - name: ClipboardWriteOptions
       href: minecraft/server-editor/ClipboardWriteOptions.md
     - name: CursorProperties
@@ -1006,6 +1020,8 @@
       href: minecraft/server-editor/LogProperties.md
     - name: PlaytestGameOptions
       href: minecraft/server-editor/PlaytestGameOptions.md
+    - name: ProjectExportOptions
+      href: minecraft/server-editor/ProjectExportOptions.md
     - name: WidgetCreateOptions
       href: minecraft/server-editor/WidgetCreateOptions.md
     - name: WidgetGroupCreateOptions
@@ -1066,6 +1082,24 @@
       href: minecraft/server-editor/IPropertyPaneOptions.md
     - name: IRegisterExtensionOptionalParameters
       href: minecraft/server-editor/IRegisterExtensionOptionalParameters.md
+    - name: ISimpleTool
+      href: minecraft/server-editor/ISimpleTool.md
+    - name: ISimpleToolKeyPair
+      href: minecraft/server-editor/ISimpleToolKeyPair.md
+    - name: ISimpleToolOptions
+      href: minecraft/server-editor/ISimpleToolOptions.md
+    - name: ISimpleToolPaneComponent
+      href: minecraft/server-editor/ISimpleToolPaneComponent.md
+    - name: ISimpleToolPaneOptions
+      href: minecraft/server-editor/ISimpleToolPaneOptions.md
+    - name: ISimpleToolRailComponent
+      href: minecraft/server-editor/ISimpleToolRailComponent.md
+    - name: ISimpleToolRailOptions
+      href: minecraft/server-editor/ISimpleToolRailOptions.md
+    - name: ISimpleToolStatusBarComponent
+      href: minecraft/server-editor/ISimpleToolStatusBarComponent.md
+    - name: ISimpleToolStatusBarOptions
+      href: minecraft/server-editor/ISimpleToolStatusBarOptions.md
     - name: IStatusBarItem
       href: minecraft/server-editor/IStatusBarItem.md
     - name: ModalToolCreationParameters

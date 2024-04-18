@@ -30,6 +30,7 @@ Type: *boolean*
 
 ## Methods
 - [getText](#gettext)
+- [moveBy](#moveby)
 - [setText](#settext)
 
 ### **getText**
@@ -38,6 +39,17 @@ getText(): string
 `
 
 **Returns** *string*
+
+### **moveBy**
+`
+moveBy(delta: minecraftserver.Vector3): void
+`
+
+#### **Parameters**
+- **delta**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **setText**
 `

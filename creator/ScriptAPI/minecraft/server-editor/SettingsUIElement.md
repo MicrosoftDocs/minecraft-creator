@@ -11,9 +11,9 @@ description: Contents of the @minecraft/server-editor.SettingsUIElement class.
 ## Properties
 
 ### **initialValue**
-`read-only initialValue: boolean | number;`
+`read-only initialValue: boolean | number | string | minecraftserver.Vector3;`
 
-Type: *boolean* | *number*
+Type: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 ### **max**
 `read-only max?: number;`
@@ -30,24 +30,30 @@ Type: *number*
 
 Type: *string*
 
-### **valueChanged**
-`read-only valueChanged?: (arg: variant) => void;`
+### **onChange**
+`read-only onChange: (arg: boolean | number | string | minecraftserver.Vector3) => boolean;`
 
-Type: (arg: *boolean* | *number*) => *void*
+Type: (arg: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)) => *boolean*
+
+### **options**
+`read-only options?: string[];`
+
+Type: *string*[]
 
 ## Methods
 - [constructor](#constructor)
 
 ### **constructor**
 `
-new SettingsUIElement(name: string, initialValue: boolean | number, min?: number, max?: number, valueChanged?: (arg: variant) => void)
+new SettingsUIElement(name: string, initialValue: boolean | number | string | minecraftserver.Vector3, onChange: (arg: boolean | number | string | minecraftserver.Vector3) => boolean, min?: number, max?: number, options?: string[])
 `
 
 #### **Parameters**
 - **name**: *string*
-- **initialValue**: *boolean* | *number*
+- **initialValue**: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **onChange**: (arg: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)) => *boolean*
 - **min**?: *number* = `null`
 - **max**?: *number* = `null`
-- **valueChanged**?: (arg: *boolean* | *number*) => *void* = `null`
+- **options**?: *string*[] = `null`
 
 **Returns** [*SettingsUIElement*](SettingsUIElement.md)

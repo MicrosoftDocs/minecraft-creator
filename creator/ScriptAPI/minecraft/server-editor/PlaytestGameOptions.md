@@ -20,6 +20,11 @@ Type: *boolean*
 
 Type: [*@minecraft/server.Difficulty*](../../minecraft/server/Difficulty.md)
 
+### **dimensionId**
+`dimensionId?: string;`
+
+Type: *string*
+
 ### **disableWeather**
 `disableWeather?: boolean;`
 

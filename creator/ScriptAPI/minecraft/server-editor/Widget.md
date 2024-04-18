@@ -20,9 +20,19 @@ description: Contents of the @minecraft/server-editor.Widget class.
 Type: *boolean*
 
 ## Methods
+- [deleteWidget](#deletewidget)
 - [getIsSelected](#getisselected)
 - [getIsVisible](#getisvisible)
+- [setIsSelected](#setisselected)
 - [setIsVisible](#setisvisible)
+
+### **deleteWidget**
+`
+deleteWidget(): void
+`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **getIsSelected**
 `
@@ -37,6 +47,20 @@ getIsVisible(): boolean
 `
 
 **Returns** *boolean*
+
+### **setIsSelected**
+`
+setIsSelected(isSelected: boolean): void
+`
+
+#### **Parameters**
+- **isSelected**: *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **setIsVisible**
 `

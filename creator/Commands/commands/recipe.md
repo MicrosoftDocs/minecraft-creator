@@ -75,10 +75,13 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:weathered_copper_trapdoor`
 - `minecraft:flow_armor_trim_smithing_template_duplicate`
 - `minecraft:mace`
+- `minecraft:magenta_dye_from_lilac`
+- `minecraft:pink_dye_from_peony`
 - `minecraft:polished_tuff`
 - `minecraft:polished_tuff_slab`
 - `minecraft:polished_tuff_stairs`
 - `minecraft:polished_tuff_wall`
+- `minecraft:red_dye_from_rose_bush`
 - `minecraft:stonecutter_copper_block_to_chiseled_copper`
 - `minecraft:stonecutter_copper_block_to_copper_grate`
 - `minecraft:stonecutter_cut_copper_to_chiseled_copper`
@@ -88,6 +91,18 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:stonecutter_oxidized_copper_to_oxidized_chiseled_copper`
 - `minecraft:stonecutter_oxidized_copper_to_oxidized_copper_grate`
 - `minecraft:stonecutter_oxidized_cut_copper_to_oxidized_chiseled_copper`
+- `minecraft:stonecutter_polished_tuff_to_chiseled_tuff_bricks`
+- `minecraft:stonecutter_polished_tuff_to_polished_tuff_slab`
+- `minecraft:stonecutter_polished_tuff_to_polished_tuff_stairs`
+- `minecraft:stonecutter_polished_tuff_to_polished_tuff_wall`
+- `minecraft:stonecutter_polished_tuff_to_tuff_bricks`
+- `minecraft:stonecutter_polished_tuff_to_tuff_brick_slab`
+- `minecraft:stonecutter_polished_tuff_to_tuff_brick_stairs`
+- `minecraft:stonecutter_polished_tuff_to_tuff_brick_wall`
+- `minecraft:stonecutter_tuff_bricks_to_chiseled_tuff_bricks`
+- `minecraft:stonecutter_tuff_bricks_to_tuff_brick_slab`
+- `minecraft:stonecutter_tuff_bricks_to_tuff_brick_stairs`
+- `minecraft:stonecutter_tuff_bricks_to_tuff_brick_wall`
 - `minecraft:stonecutter_tuff_to_chiseled_tuff`
 - `minecraft:stonecutter_tuff_to_chiseled_tuff_bricks`
 - `minecraft:stonecutter_tuff_to_polished_tuff`
@@ -140,6 +155,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:waxing_weathered_copper_grate`
 - `minecraft:waxing_weathered_copper_trapdoor`
 - `minecraft:wind_charge`
+- `minecraft:yellow_dye_from_sunflower`
 - `minecraft:banner_pattern_flower`
 - `minecraft:blue_dye_from_cornflower`
 - `minecraft:WorkBench_recipeId_from_oak`
@@ -675,7 +691,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:magenta_dye_from_lapis_ink_bonemeal`
 - `minecraft:magenta_dye_from_lapis_ink_white`
 - `minecraft:magenta_dye_from_lapis_red_pink`
-- `minecraft:magenta_dye_from_lilac`
 - `minecraft:magenta_dye_from_purple_and_pink`
 - `minecraft:magenta_stained_hardened_clay`
 - `minecraft:magma`
@@ -753,7 +768,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:pink_carpet_from_white`
 - `minecraft:pink_concrete_powder`
 - `minecraft:pink_dye`
-- `minecraft:pink_dye_from_peony`
 - `minecraft:pink_dye_from_pink_petals`
 - `minecraft:pink_dye_from_red_bonemeal`
 - `minecraft:pink_stained_hardened_clay`
@@ -830,7 +844,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:red_carpet_from_white`
 - `minecraft:red_concrete_powder`
 - `minecraft:red_dye_from_beetroot`
-- `minecraft:red_dye_from_rose_bush`
 - `minecraft:red_nether_brick`
 - `minecraft:red_nether_brick_stairs`
 - `minecraft:red_nether_brick_wall`
@@ -1131,7 +1144,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:yellow_carpet_from_white`
 - `minecraft:yellow_concrete_powder`
 - `minecraft:yellow_dye_from_dandelion`
-- `minecraft:yellow_dye_from_sunflower`
 - `minecraft:yellow_stained_hardened_clay`
 - `wool_dye_wool_19_14`
 - `wool_dye_wool_19_13`

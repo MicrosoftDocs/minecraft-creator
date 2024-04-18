@@ -35,6 +35,16 @@ Return the 'capacity' of the bounding rectangle which represents the collection 
 
 Type: *number*
 
+### **items**
+`read-only items: CompoundBlockVolumeItem[];`
+
+Type: [*CompoundBlockVolumeItem*](CompoundBlockVolumeItem.md)[]
+
+### **itemsAbsolute**
+`read-only itemsAbsolute: CompoundBlockVolumeItem[];`
+
+Type: [*CompoundBlockVolumeItem*](CompoundBlockVolumeItem.md)[]
+
 ### **volumeCount**
 `read-only volumeCount: number;`
 
@@ -294,7 +304,7 @@ Set the origin of the compound volume to an absolute world space location
 translateOrigin(delta: Vector3, preserveExistingVolumes?: boolean): void
 `
 
-Similar to @minecraft-server/CompoundBlockVolume.setOrigin - this function will translate the origin by a given delta to a new position
+Similar to {@link @minecraft-server/CompoundBlockVolume.setOrigin} - this function will translate the origin by a given delta to a new position
 
 #### **Parameters**
 - **delta**: [*Vector3*](Vector3.md)

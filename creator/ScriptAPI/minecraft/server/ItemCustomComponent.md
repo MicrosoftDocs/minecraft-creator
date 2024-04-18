@@ -39,3 +39,8 @@ Type: (arg: [*ItemComponentMineBlockEvent*](ItemComponentMineBlockEvent.md)) => 
 This function will be called when an item containing this component is used by a player.
 
 Type: (arg: [*ItemComponentUseEvent*](ItemComponentUseEvent.md)) => *void*
+
+### **onUseOn**
+`onUseOn?: (arg: ItemComponentUseOnEvent) => void;`
+
+Type: (arg: [*ItemComponentUseOnEvent*](ItemComponentUseOnEvent.md)) => *void*

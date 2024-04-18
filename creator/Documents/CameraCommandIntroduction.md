@@ -85,6 +85,9 @@ This defines a new Camera Preset named "example:custom" which inherits settings 
 
 "rot_x" and "rot_y" specify the default rotations of the camera, around each of those axes. "rot_x" is equivalent to the pitch of the camera, though with positive values looking downward and negative values looking up, which matches the convention of the teleport command. "rot_y" is equivalent to the yaw, or compass direction of the camera, also matching the behavior of the teleport command. Both values are specified in degrees, and "rot_x" must be no lower than –90 and no higher than 90, to prevent the camera from going upside-down.
 
+> [!NOTE]
+> See more reference samples at the end of this article.
+
 ## Player state affecting rendering
 
 With this version of Minecraft, the minecraft:free Preset (and any presets based on it, which includes all custom presets) will not by default use the state of the player when the game is rendered. This includes a number of effects such as night vision and blindness. This can be enabled by adding "player_effects": true to the Camera Preset's JSON file. 
@@ -92,6 +95,14 @@ With this version of Minecraft, the minecraft:free Preset (and any presets based
 ## Player inside block rendering
 
 In typical Minecraft gameplay, there is a screen effect that covers the screen when the player's head is inside of a block and the camera is in a third-person perspective. Since the minecraft:free camera is not directly connected to the player, this was somewhat confusing to users, for example if the minecraft:free camera was active and the player teleported inside a mountain, the screen would go black. This functionality has been disabled for the minecraft:free camera and other custom Camera Presets. 
+
+## Player-camera distance affecting entity rendering
+
+The game typically only renders entities, players, and chunks in an area surrounding the player’s position. Because of this, setting the camera a long distance from the player or moving the player a long distance from the camera could result in unexpected visual results. If you have Content Log messages enabled, you may see a warning alerting you to this, but players typically do not have those messages enabled and will probably not see the warning.
+
+In addition, for entities to render, they need to be in loaded and ticking chunks. When a camera is set to move away from the player, it should sync player and entity data resulting in performant rendering at most gameplay distances.
+
+In the **camera.json** file, `extend_player_rendering` extends this maximum distance. As long as the camera and entities are in chunks that are loaded and ticking, they will render on the client when the camera moves. This has been optimized to show the player and any rides or entities connected by a leash. This may also show mobs and other entities that are between the player and the camera. This is an enhancement, and no action is needed to apply this functionality. This will make it possible to do a cutscene with the free camera flying over a large distance away from the player.
 
 ## Audio listener position
 
@@ -293,3 +304,41 @@ Then after another 0.5 seconds, return the camera back to normal.
 ## The Camera Command and Split-screen Gameplay
 
 When multiple people are playing in split-screen on the same device, they have separate cameras and separate targetable player entities. When the new Camera command is used (whether for "set" or "fade" options), that separation is not changed. Each player's camera can be separately affected. There are no plans for combining views in split-screen scenarios, or for supporting multiple split-screen-like views for individual players.
+
+## Additional free camera preset examples:
+
+### Player listener
+
+This controls what is used for the audio listener.
+
+Creators will sometimes want the player’s position to continue being where the audio system’s “ears” are, and other times they will want this listener position to be where the camera is.
+
+
+```json
+{
+  "format_version": "1.19.50",
+  "minecraft:camera_preset": {
+    "identifier": "example:example_player_listener",
+    "inherit_from": "minecraft:free",
+    "listener": "player"
+  }
+}
+```
+
+### Player effect
+
+Optional, defaults to `false`. Specify `true` to allow effects on the player to affect how the game renders when this preset is active.
+
+Basically, it determines whether the player state can affect rendering. A security camera's view of a player who is on fire shouldn't look like the security camera is on fire, for example.
+
+```json
+{
+  "format_version": "1.19.50",
+  "minecraft:camera_preset": {
+    "identifier": "example:example_player_effects",
+    "inherit_from": "minecraft:free",
+    "player_effects": true
+  }
+}
+```
+

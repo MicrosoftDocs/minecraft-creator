@@ -1,14 +1,14 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Schema Documentation - geometry uv_rotation future preview"
-description: "A reference document detailing the 'geometry uv_rotation future preview' schema"
+title: "Schema Documentation - geometry:1.21.0"
+description: "A reference document detailing the 'geometry:1.21.0' schema"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Schema Documentation - geometry (uv_rotation future preview)
+# Schema Documentation - geometry:1.21.0
 
-This schema corresponds to the *.geo.json files in the "models" folder of the resource pack with a new uv_rotation attribute, targeted for a future preview of Minecraft beyond 1.20.80.
+This schema corresponds to the *.geo.json files in the "models" folder of the resource pack with a new uv_rotation attribute.
 
 ```json
 geometry:{

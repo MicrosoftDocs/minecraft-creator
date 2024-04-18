@@ -31,31 +31,75 @@ Type: *number*
 
 ## Methods
 - [getTameItems](#gettameitems)
+- [isTamed](#istamed)
 - [tame](#tame)
+- [tamedToPlayer](#tamedtoplayer)
+- [tamedToPlayerId](#tamedtoplayerid)
 
 ### **getTameItems**
 `
-getTameItems(): string[]
+getTameItems(): ItemStack[]
 `
 
 Returns a set of items that can be used to tame this entity.
 
-**Returns** *string*[]
+**Returns** [*ItemStack*](ItemStack.md)[]
+
+> [!WARNING]
+> This function can throw errors.
+
+### **isTamed**
+`
+isTamed(): boolean
+`
+
+Returns true if the entity is tamed by player.
+
+**Returns** *boolean*
 
 > [!WARNING]
 > This function can throw errors.
 
 ### **tame**
 `
-tame(): boolean
+tame(player: Player): boolean
 `
 
 Tames this entity.
+
+#### **Parameters**
+- **player**: [*Player*](Player.md)
+  
+  Sets the owner of this entity to player.
 
 **Returns** *boolean* - Returns true if the entity was tamed.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **tamedToPlayer**
+`
+tamedToPlayer(): Player | undefined
+`
+
+Returns the player that owns the tamed entity, or 'undefined' if entity is not tamed.
+
+**Returns** [*Player*](Player.md) | *undefined*
+
+> [!WARNING]
+> This function can throw errors.
+
+### **tamedToPlayerId**
+`
+tamedToPlayerId(): string
+`
+
+Returns the id of player that owns the tamed entity, or empty string if entity is not tamed.
+
+**Returns** *string*
 
 > [!WARNING]
 > This function can throw errors.
