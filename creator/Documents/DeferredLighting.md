@@ -664,7 +664,7 @@ The following example JSON can be used as a starting point:
     "description"
     {
       "identifier": "my_pack:default_color_grading"
-    }
+    },
     "color_grading"
     {
       "midtones"
