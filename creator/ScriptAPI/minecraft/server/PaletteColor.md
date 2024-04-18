@@ -12,6 +12,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Enum containing colors to be used with EntityColorComponent and EntityColor2Component
+
 ## Constants
 ### **White**
 `White = 0`

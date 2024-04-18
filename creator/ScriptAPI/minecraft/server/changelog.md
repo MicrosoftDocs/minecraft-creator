@@ -141,6 +141,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ItemComponentMineBlockEvent`](ItemComponentMineBlockEvent.md)*
 #### Added *[`ItemComponentRegistry`](ItemComponentRegistry.md)*
 #### Added *[`ItemComponentUseEvent`](ItemComponentUseEvent.md)*
+#### Added *[`ItemComponentUseOnEvent`](ItemComponentUseOnEvent.md)*
 #### Added *[`ItemCooldownComponent`](ItemCooldownComponent.md)*
 #### Added *[`ItemEnchantableComponent`](ItemEnchantableComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
@@ -149,6 +150,7 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `componentId` type from *string* to *T*
 - Added function *[`matches`](ItemStack.md#matches)*
 #### Added *[`ItemTypes`](ItemTypes.md)*
+#### Added *[`ItemUseOnEvent`](ItemUseOnEvent.md)*
 #### Added *[`ListBlockVolume`](ListBlockVolume.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Changed *[`Player`](Player.md)*
@@ -190,6 +192,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`beforeEvents`](System.md#beforeevents)*
 - Added function *[`clearJob`](System.md#clearjob)*
 - Added function *[`runJob`](System.md#runjob)*
+- Added function *[`waitTick`](System.md#waittick)*
 #### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 #### Added *[`Trigger`](Trigger.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*

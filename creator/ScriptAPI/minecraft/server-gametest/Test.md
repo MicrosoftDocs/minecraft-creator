@@ -1039,7 +1039,7 @@ For blocks that are fluid containers - like a cauldron - changes the type of flu
   Location of the fluid container block.
 - **type**: [*@minecraft/server.FluidType*](../../minecraft/server/FluidType.md)
   
-  Type of fluid to set. See @minecraft/server-gametest.FluidType for a list of values.
+  Type of fluid to set. See {@link @minecraft/server-gametest.FluidType} for a list of values.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

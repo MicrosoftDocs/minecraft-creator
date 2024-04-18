@@ -240,8 +240,7 @@ Entity is calm
 - `minecraft:camel_unsaddled`
 - `minecraft:cat_gifted_owner`
 Entity is a cat who gifted its owner
-- `minecraft:clear_add_bad_omen`
-Entity clears added bad omen
+- `minecraft:clear_add_raid_omen`
 - `minecraft:command_block_activate`
 Entity activates a command block
 - `minecraft:command_block_deactivate`
@@ -306,8 +305,7 @@ Entity is from a player
 Entity is from a village
 - `minecraft:from_wandering_trader`
 Entity is from a wandering trader
-- `minecraft:gain_bad_omen`
-Entity gains a bad omen
+- `minecraft:gain_raid_omen`
 - `minecraft:go_lay_egg`
 Entity goes and lays an egg
 - `minecraft:has_target`

@@ -3,45 +3,19 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server-editor.BrushShape Class
+title: minecraft/server-editor.BrushShape Interface
 description: Contents of the @minecraft/server-editor.BrushShape class.
 ---
-# BrushShape Class
+# BrushShape Interface
 
 ## Properties
 
-### **getSettingsUIElements**
-`read-only getSettingsUIElements: () => SettingsUIElement[];`
-
-Type: () => [*SettingsUIElement*](SettingsUIElement.md)[]
-
 ### **icon**
-`read-only icon: string;`
+`icon: string;`
 
 Type: *string*
 
 ### **name**
-`read-only name: string;`
+`name: string;`
 
 Type: *string*
-
-### **rebuild**
-`read-only rebuild: () => minecraftserver.CompoundBlockVolume;`
-
-Type: () => [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
-
-## Methods
-- [constructor](#constructor)
-
-### **constructor**
-`
-new BrushShape(name: string, icon: string, rebuild: () => minecraftserver.CompoundBlockVolume, getSettingsUI: () => SettingsUIElement[])
-`
-
-#### **Parameters**
-- **name**: *string*
-- **icon**: *string*
-- **rebuild**: () => [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
-- **getSettingsUI**: () => [*SettingsUIElement*](SettingsUIElement.md)[]
-
-**Returns** [*BrushShape*](BrushShape.md)

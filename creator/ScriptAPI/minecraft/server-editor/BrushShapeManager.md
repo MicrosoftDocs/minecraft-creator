@@ -65,11 +65,14 @@ getSettingsUIElements(brushName: string): SettingsUIElement[]
 
 ### **registerBrushShape**
 `
-registerBrushShape(brushShape: BrushShape): void
+registerBrushShape(name: string, icon: string, rebuild: () => minecraftserver.CompoundBlockVolume, getSettingsUIElements: () => SettingsUIElement[]): void
 `
 
 #### **Parameters**
-- **brushShape**: [*BrushShape*](BrushShape.md)
+- **name**: *string*
+- **icon**: *string*
+- **rebuild**: () => [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
+- **getSettingsUIElements**: () => [*SettingsUIElement*](SettingsUIElement.md)[]
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -79,12 +82,14 @@ registerBrushShape(brushShape: BrushShape): void
 
 ### **uiSettingValueChanged**
 `
-uiSettingValueChanged(elementName: string, newValue: boolean | number): void
+uiSettingValueChanged(elementName: string, newValue: boolean | number | string | minecraftserver.Vector3): boolean
 `
 
 #### **Parameters**
 - **elementName**: *string*
-- **newValue**: *boolean* | *number*
+- **newValue**: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+**Returns** *boolean*
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

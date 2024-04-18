@@ -355,6 +355,7 @@ Plays a particular music track for all players.
 ##### ***playMusicAndSound.ts***
 ```typescript
 import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, Vector3 } from '@minecraft/server';
+import { MinecraftDimensionTypes } from '@minecraft/vanilla-data';
 
 const players = world.getPlayers();
 const targetLocation: Vector3 = {
@@ -374,7 +375,8 @@ const worldSoundOptions: WorldSoundOptions = {
     pitch: 0.5,
     volume: 4.0,
 };
-world.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
+const overworld = world.getDimension(MinecraftDimensionTypes.Overworld);
+overworld.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
 
 const playerSoundOptions: PlayerSoundOptions = {
     pitch: 1.0,
@@ -389,7 +391,7 @@ players[0].playSound('bucket.fill_water', playerSoundOptions);
 playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
 `
 
-Plays a sound for all players.
+Plays a sound for all players. DEPRECATED: Use Dimension.playSound.
 
 #### **Parameters**
 - **soundId**: *string*
@@ -414,6 +416,7 @@ Plays a sound for all players.
 ##### ***playMusicAndSound.ts***
 ```typescript
 import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, Vector3 } from '@minecraft/server';
+import { MinecraftDimensionTypes } from '@minecraft/vanilla-data';
 
 const players = world.getPlayers();
 const targetLocation: Vector3 = {
@@ -433,7 +436,8 @@ const worldSoundOptions: WorldSoundOptions = {
     pitch: 0.5,
     volume: 4.0,
 };
-world.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
+const overworld = world.getDimension(MinecraftDimensionTypes.Overworld);
+overworld.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
 
 const playerSoundOptions: PlayerSoundOptions = {
     pitch: 1.0,

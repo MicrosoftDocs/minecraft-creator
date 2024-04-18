@@ -19,7 +19,7 @@ Manager for Structure related APIs. Includes APIs for creating, getting, placing
 - [createFromWorld](#createfromworld)
 - [delete](#delete)
 - [get](#get)
-- [getIds](#getids)
+- [getWorldStructureIds](#getworldstructureids)
 - [place](#place)
 
 ### **createEmpty**
@@ -52,7 +52,7 @@ Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlock
 
 ### **createFromWorld**
 `
-createFromWorld(identifier: string, dimension: Dimension, blockVolume: BlockVolume, options?: StructureCreateOptions): Structure
+createFromWorld(identifier: string, dimension: Dimension, from: Vector3, to: Vector3, options?: StructureCreateOptions): Structure
 `
 
 Creates a new Structure from blocks in the world. This is functionally equivalent to the /structure save command.
@@ -64,9 +64,8 @@ Creates a new Structure from blocks in the world. This is functionally equivalen
 - **dimension**: [*Dimension*](Dimension.md)
   
   The dimension where the blocks should be read from.
-- **blockVolume**: [*BlockVolume*](BlockVolume.md)
-  
-  The location and bounds of the blocks that should be read.
+- **from**: [*Vector3*](Vector3.md)
+- **to**: [*Vector3*](Vector3.md)
 - **options**?: [*StructureCreateOptions*](StructureCreateOptions.md) = `null`
   
   Additional options for creating a structure from the world.
@@ -120,9 +119,9 @@ Gets a Structure that is saved to memory or the world.
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
-### **getIds**
+### **getWorldStructureIds**
 `
-getIds(): string[]
+getWorldStructureIds(): string[]
 `
 
 **Returns** *string*[]
