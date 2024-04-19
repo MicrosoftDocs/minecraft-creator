@@ -91,7 +91,7 @@ skinpack.sample.by=YourNameHere
 
 ### <skin_example>.png
 
-Download this file to use as an example. (Hint: right-click it and choose ")
+Download this file to use as an example.
 
 ![PNG graphic file that can be downloaded and used in a skin pack.](Media/SkinPack/skin_example.png)
 
