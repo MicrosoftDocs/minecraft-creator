@@ -94,6 +94,8 @@
           href: Documents/AddCustomItems.md
         - name: Creating and Adding Custom Sounds
           href: Documents/AddCustomSounds.md
+        - name: "Create a Skin Pack"
+          href: Documents/SkinPack.md
         - name: Introduction to Recipes
           href: Documents/RecipeIntroduction.md
         - name: Target Selectors
