@@ -139,6 +139,8 @@ You have a new look!
 
 ## Troubleshooting
 
+You can always download the [sample skinpack](https://github.com/microsoft/minecraft-samples/tree/main/skinpack) and compare the contents with your files.
+
 If Minecraft doesn't recognize your skin, then go to the main Minecraft Settings page, find the General tab, and make sure "Only Allow Trusted Skins" is toggled off.
 
 ![image of Minecraft Settings screen. General tab, with 'Only Allow Trusted Skins' toggled off](Media/SkinPack/toggle_off_only_allow_trusted_skin_packs.png)
