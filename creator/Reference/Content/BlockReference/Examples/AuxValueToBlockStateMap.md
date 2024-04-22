@@ -844,22 +844,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:coral_block:013|minecraft:coral_block |13|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 1]|
 |minecraft:coral_block:014|minecraft:coral_block |14|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 1]|
 |minecraft:coral_block:015|minecraft:coral_block |15|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 1]|
-|minecraft:coral_fan:000|minecraft:coral_fan |0|minecraft:coral_fan ["coral_color" = "blue", "coral_fan_direction" = 0]|
-|minecraft:coral_fan:001|minecraft:coral_fan |1|minecraft:coral_fan ["coral_color" = "pink", "coral_fan_direction" = 0]|
-|minecraft:coral_fan:002|minecraft:coral_fan |2|minecraft:coral_fan ["coral_color" = "purple", "coral_fan_direction" = 0]|
-|minecraft:coral_fan:003|minecraft:coral_fan |3|minecraft:coral_fan ["coral_color" = "red", "coral_fan_direction" = 0]|
-|minecraft:coral_fan:004|minecraft:coral_fan |4|minecraft:coral_fan ["coral_color" = "yellow", "coral_fan_direction" = 0]|
-|minecraft:coral_fan:005|minecraft:coral_fan |5|minecraft:coral_fan ["coral_color" = "blue", "coral_fan_direction" = 0]|
-|minecraft:coral_fan:006|minecraft:coral_fan |6|minecraft:coral_fan ["coral_color" = "blue", "coral_fan_direction" = 0]|
-|minecraft:coral_fan:007|minecraft:coral_fan |7|minecraft:coral_fan ["coral_color" = "blue", "coral_fan_direction" = 0]|
-|minecraft:coral_fan:008|minecraft:coral_fan |8|minecraft:coral_fan ["coral_color" = "blue", "coral_fan_direction" = 1]|
-|minecraft:coral_fan:009|minecraft:coral_fan |9|minecraft:coral_fan ["coral_color" = "pink", "coral_fan_direction" = 1]|
-|minecraft:coral_fan:010|minecraft:coral_fan |10|minecraft:coral_fan ["coral_color" = "purple", "coral_fan_direction" = 1]|
-|minecraft:coral_fan:011|minecraft:coral_fan |11|minecraft:coral_fan ["coral_color" = "red", "coral_fan_direction" = 1]|
-|minecraft:coral_fan:012|minecraft:coral_fan |12|minecraft:coral_fan ["coral_color" = "yellow", "coral_fan_direction" = 1]|
-|minecraft:coral_fan:013|minecraft:coral_fan |13|minecraft:coral_fan ["coral_color" = "blue", "coral_fan_direction" = 1]|
-|minecraft:coral_fan:014|minecraft:coral_fan |14|minecraft:coral_fan ["coral_color" = "blue", "coral_fan_direction" = 1]|
-|minecraft:coral_fan:015|minecraft:coral_fan |15|minecraft:coral_fan ["coral_color" = "blue", "coral_fan_direction" = 1]|
+|minecraft:coral_fan:000|minecraft:coral_fan |0|minecraft:tube_coral_fan ["coral_fan_direction" = 0]|
+|minecraft:coral_fan:001|minecraft:coral_fan |1|minecraft:brain_coral_fan ["coral_fan_direction" = 0]|
+|minecraft:coral_fan:002|minecraft:coral_fan |2|minecraft:bubble_coral_fan ["coral_fan_direction" = 0]|
+|minecraft:coral_fan:003|minecraft:coral_fan |3|minecraft:fire_coral_fan ["coral_fan_direction" = 0]|
+|minecraft:coral_fan:004|minecraft:coral_fan |4|minecraft:horn_coral_fan [ "coral_fan_direction" = 0]|
+|minecraft:coral_fan:005|minecraft:coral_fan |5|minecraft:tube_coral_fan ["coral_fan_direction" = 0]|
+|minecraft:coral_fan:006|minecraft:coral_fan |6|minecraft:tube_coral_fan ["coral_fan_direction" = 0]|
+|minecraft:coral_fan:007|minecraft:coral_fan |7|minecraft:coral_fan ["coral_fan_direction" = 0]|
+|minecraft:coral_fan:008|minecraft:coral_fan |8|minecraft:tube_coral_fan ["coral_fan_direction" = 1]|
+|minecraft:coral_fan:009|minecraft:coral_fan |9|minecraft:brain_coral_fan ["coral_fan_direction" = 1]|
+|minecraft:coral_fan:010|minecraft:coral_fan |10|minecraft:bubble_coral_fan ["coral_fan_direction" = 1]|
+|minecraft:coral_fan:011|minecraft:coral_fan |11|minecraft:fire_coral_fan ["coral_fan_direction" = 1]|
+|minecraft:coral_fan:012|minecraft:coral_fan |12|minecraft:horn_coral_fan ["coral_fan_direction" = 1]|
+|minecraft:coral_fan:013|minecraft:coral_fan |13|minecraft:tube_coral_fan ["coral_fan_direction" = 1]|
+|minecraft:coral_fan:014|minecraft:coral_fan |14|minecraft:tube_coral_fan ["coral_fan_direction" = 1]|
+|minecraft:coral_fan:015|minecraft:coral_fan |15|minecraft:tube_coral_fan ["coral_fan_direction" = 1]|
 |minecraft:coral_fan_dead:000|minecraft:coral_fan_dead |0|minecraft:coral_fan_dead ["coral_color" = "blue", "coral_fan_direction" = 0]|
 |minecraft:coral_fan_dead:001|minecraft:coral_fan_dead |1|minecraft:coral_fan_dead ["coral_color" = "pink", "coral_fan_direction" = 0]|
 |minecraft:coral_fan_dead:002|minecraft:coral_fan_dead |2|minecraft:coral_fan_dead ["coral_color" = "purple", "coral_fan_direction" = 0]|
@@ -2870,22 +2870,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:sandstone_stairs:005|minecraft:sandstone_stairs |5|minecraft:sandstone_stairs ["upside_down_bit" = 1, "weirdo_direction" = 1]|
 |minecraft:sandstone_stairs:006|minecraft:sandstone_stairs |6|minecraft:sandstone_stairs ["upside_down_bit" = 1, "weirdo_direction" = 2]|
 |minecraft:sandstone_stairs:007|minecraft:sandstone_stairs |7|minecraft:sandstone_stairs ["upside_down_bit" = 1, "weirdo_direction" = 3]|
-|minecraft:sapling:000|minecraft:sapling |0|minecraft:sapling ["age_bit" = 0, "sapling_type" = "oak"]|
-|minecraft:sapling:001|minecraft:sapling |1|minecraft:sapling ["age_bit" = 0, "sapling_type" = "spruce"]|
-|minecraft:sapling:002|minecraft:sapling |2|minecraft:sapling ["age_bit" = 0, "sapling_type" = "birch"]|
-|minecraft:sapling:003|minecraft:sapling |3|minecraft:sapling ["age_bit" = 0, "sapling_type" = "jungle"]|
-|minecraft:sapling:004|minecraft:sapling |4|minecraft:sapling ["age_bit" = 0, "sapling_type" = "acacia"]|
-|minecraft:sapling:005|minecraft:sapling |5|minecraft:sapling ["age_bit" = 0, "sapling_type" = "dark_oak"]|
-|minecraft:sapling:006|minecraft:sapling |6|minecraft:sapling ["age_bit" = 0, "sapling_type" = "oak"]|
-|minecraft:sapling:007|minecraft:sapling |7|minecraft:sapling ["age_bit" = 0, "sapling_type" = "oak"]|
-|minecraft:sapling:008|minecraft:sapling |8|minecraft:sapling ["age_bit" = 1, "sapling_type" = "oak"]|
-|minecraft:sapling:009|minecraft:sapling |9|minecraft:sapling ["age_bit" = 1, "sapling_type" = "spruce"]|
-|minecraft:sapling:010|minecraft:sapling |10|minecraft:sapling ["age_bit" = 1, "sapling_type" = "birch"]|
-|minecraft:sapling:011|minecraft:sapling |11|minecraft:sapling ["age_bit" = 1, "sapling_type" = "jungle"]|
-|minecraft:sapling:012|minecraft:sapling |12|minecraft:sapling ["age_bit" = 1, "sapling_type" = "acacia"]|
-|minecraft:sapling:013|minecraft:sapling |13|minecraft:sapling ["age_bit" = 1, "sapling_type" = "dark_oak"]|
-|minecraft:sapling:014|minecraft:sapling |14|minecraft:sapling ["age_bit" = 1, "sapling_type" = "oak"]|
-|minecraft:sapling:015|minecraft:sapling |15|minecraft:sapling ["age_bit" = 1, "sapling_type" = "oak"]|
+|minecraft:sapling:000|minecraft:sapling |0|minecraft:oak_sapling ["age_bit" = 0]|
+|minecraft:sapling:001|minecraft:sapling |1|minecraft:spruce_sapling ["age_bit" = 0]|
+|minecraft:sapling:002|minecraft:sapling |2|minecraft:birch_sapling ["age_bit" = 0|
+|minecraft:sapling:003|minecraft:sapling |3|minecraft:jungle_sapling ["age_bit" = 0]|
+|minecraft:sapling:004|minecraft:sapling |4|minecraft:acacia_sapling ["age_bit" = 0]|
+|minecraft:sapling:005|minecraft:sapling |5|minecraft:dark_oak_sapling ["age_bit" = 0]|
+|minecraft:sapling:006|minecraft:sapling |6|minecraft:oak_sapling ["age_bit" = 0]|
+|minecraft:sapling:007|minecraft:sapling |7|minecraft:oak_sapling ["age_bit" = 0]|
+|minecraft:sapling:008|minecraft:sapling |8|minecraft:oak_sapling ["age_bit" = 1]|
+|minecraft:sapling:009|minecraft:sapling |9|minecraft:spruce_sapling ["age_bit" = 1]|
+|minecraft:sapling:010|minecraft:sapling |10|minecraft:birch_sapling ["age_bit" = 1]|
+|minecraft:sapling:011|minecraft:sapling |11|minecraft:jungle_sapling ["age_bit" = 1]|
+|minecraft:sapling:012|minecraft:sapling |12|minecraft:acacia_sapling ["age_bit" = 1]|
+|minecraft:sapling:013|minecraft:sapling |13|minecraft:dark_oak_sapling ["age_bit" = 1]|
+|minecraft:sapling:014|minecraft:sapling |14|minecraft:oak_sapling ["age_bit" = 1]|
+|minecraft:sapling:015|minecraft:sapling |15|minecraft:oak_sapling ["age_bit" = 1]|
 |minecraft:scaffolding:000|minecraft:scaffolding |0|minecraft:scaffolding ["stability" = 0, "stability_check" = 0]|
 |minecraft:scaffolding:001|minecraft:scaffolding |1|minecraft:scaffolding ["stability" = 1, "stability_check" = 0]|
 |minecraft:scaffolding:002|minecraft:scaffolding |2|minecraft:scaffolding ["stability" = 2, "stability_check" = 0]|
