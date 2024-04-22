@@ -62,11 +62,11 @@ Let's enter our text into the title and body text field.
 
 We'll also press the plus sign in the button row two times to create two buttons.
 
-![Entry page](../Documents/Media/NPCDialogDesigner/entry.png)
+![Entry page](Media/NPCDialogueDesigner/entry.png)
 
 Let's also create a second page, named `directions`, that looks like this:
 
-![Directions page](../Documents/Media/NPCDialogDesigner/directions.png)
+![Directions page](Media/NPCDialogueDesigner/directions.png)
 
 Media/BehaviorPack/manifest_UUID_dependency.png
 
@@ -124,7 +124,7 @@ For example, the following code will render like this:
 
 ```Sarah owns a §bDiamond§r, an §cApple§r, and an §7Iron Sword§r!```
 
-![Preview of the text above, but with certain words formatted in matching colors](../Documents/Media/NPCDialogDesigner/formatting.png)
+![Preview of the text above, but with certain words formatted in matching colors](Media/NPCDialogueDesigner/formatting.png)
 
 ### Translations
 
