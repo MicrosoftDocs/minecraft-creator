@@ -1,5 +1,6 @@
 ---
 author: JannisX11
+ms.author: mikeam
 title: Create NPC Dialogue with DialogueDesigner
 description: "This tutorial shows how to create NPC entities with dialogue windows, using the DialogueDesigner tool."
 ms.service: minecraft-bedrock-edition
@@ -14,12 +15,13 @@ NPC dialogues are a great way to add stories to your custom map. They can be use
 
 Before learning how to create NPC dialogues, it is recommended that you understand the basics of creating resource and behavior packs.
 
-An NPC entity is required to use the dialogue. For simple applications, the built-in Minecraft NPC entity can be used, it comes with a list of texture presets for a lot of situations. But for custom designs, it is required to create a new entity. The [Minecraft Entity Wizard](https://learn.microsoft.com/en-us/minecraft/creator/documents/minecraftentitywizard) can be used to make this easier.
+An NPC entity is required to use the dialogue. For simple applications, the built-in Minecraft NPC entity can be used, it comes with a list of texture presets for a lot of situations. But for custom designs, it is required to create a new entity.
+The [Minecraft Entity Wizard](MinecraftEntityWizard.md) can be used to make this easier.
 
 - [Introduction to Behavior Packs](BehaviorPack.md)
 - [Introduction to Resource Packs](ResourcePack.md)
 - [NPC Dialogue Command](NPCDialogue.md)
-- [Creating New Entity Types](https://learn.microsoft.com/en-us/minecraft/creator/documents/introductiontoaddentity?view=minecraft-bedrock-stable)
+- [Creating New Entity Types](IntroductionToAddEntity.md)
 
 ## Set-up
 
@@ -167,4 +169,4 @@ When you are done, press the **Confirm** button. If there are JSON syntax errors
 
 Fix any JSON errors to proceed.
 
-You can learn more about the rawtext format here:  [Raw Message JSON](creator/Reference/Content/RawMessageJson.md).
+You can learn more about the rawtext format here:  [Raw Message JSON](../../creator/Reference/Content/RawMessageJson.md)().

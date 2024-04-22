@@ -33,7 +33,7 @@ There is a [sample NPC dialogue behavior pack](https://github.com/microsoft/mine
 
 ## Creating NPC Dialogue
 
-We will be building on the [Create a Custom NPC tutorial](creator/Documents/CreateNPCs.md) to create custom dialogue for that character. We will create a `dialogue` folder that contain a `scene.json` file in a behavior pack.
+We will be building on the [Create a Custom NPC tutorial](CreateNPCs.md) to create custom dialogue for that character. We will create a `dialogue` folder that contain a `scene.json` file in a behavior pack.
 
 ![NPC Dialogue behavior pack folder structure](Media\NPCs\NPCDialogueStructure.PNG)
 
@@ -104,7 +104,7 @@ You can also set up NPC buttons and commands that will behave identically as the
 
 ### Rawtext
 
-You can learn more about the rawtext format here: [Raw Message JSON](creator/Reference/Content/RawMessageJson.md)
+You can learn more about the rawtext format here: [Raw Message JSON](../../creator/Reference/Content/RawMessageJson.md)
 
 ## Dialogue Command
 
