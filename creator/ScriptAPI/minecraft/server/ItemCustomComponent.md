@@ -19,10 +19,28 @@ Contains a set of events that will be raised for an item. This object must be bo
 ### **onBeforeDurabilityDamage**
 `onBeforeDurabilityDamage?: (arg: ItemComponentBeforeDurabilityDamageEvent) => void;`
 
+This function will be called when an item containing this component is hitting an entity and about to take durability damage.
+
 Type: (arg: [*ItemComponentBeforeDurabilityDamageEvent*](ItemComponentBeforeDurabilityDamageEvent.md)) => *void*
+
+### **onCompleteUse**
+`onCompleteUse?: (arg: ItemComponentCompleteUseEvent) => void;`
+
+This function will be called when an item containing this component's use duration was completed.
+
+Type: (arg: [*ItemComponentCompleteUseEvent*](ItemComponentCompleteUseEvent.md)) => *void*
+
+### **onConsume**
+`onConsume?: (arg: ItemComponentConsumeEvent) => void;`
+
+This function will be called when an item containing this component is eaten by an entity.
+
+Type: (arg: [*ItemComponentConsumeEvent*](ItemComponentConsumeEvent.md)) => *void*
 
 ### **onHitEntity**
 `onHitEntity?: (arg: ItemComponentHitEntityEvent) => void;`
+
+This function will be called when an item containing this component is used to hit another entity.
 
 Type: (arg: [*ItemComponentHitEntityEvent*](ItemComponentHitEntityEvent.md)) => *void*
 
@@ -42,5 +60,7 @@ Type: (arg: [*ItemComponentUseEvent*](ItemComponentUseEvent.md)) => *void*
 
 ### **onUseOn**
 `onUseOn?: (arg: ItemComponentUseOnEvent) => void;`
+
+This function will be called when an item containing this component is used on a block.
 
 Type: (arg: [*ItemComponentUseOnEvent*](ItemComponentUseOnEvent.md)) => *void*

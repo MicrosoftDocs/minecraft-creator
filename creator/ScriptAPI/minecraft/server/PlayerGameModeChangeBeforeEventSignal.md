@@ -12,6 +12,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Manages callbacks that are connected to before a players game mode is changed.
+
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -20,6 +22,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 `
 subscribe(callback: (arg: PlayerGameModeChangeBeforeEvent) => void): (arg: PlayerGameModeChangeBeforeEvent) => void
 `
+
+Adds a callback that will be called before a players game mode is changed.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerGameModeChangeBeforeEvent*](PlayerGameModeChangeBeforeEvent.md)) => *void*
@@ -33,6 +37,8 @@ subscribe(callback: (arg: PlayerGameModeChangeBeforeEvent) => void): (arg: Playe
 `
 unsubscribe(callback: (arg: PlayerGameModeChangeBeforeEvent) => void): void
 `
+
+Removes a callback from being called before a players game mode is changed.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerGameModeChangeBeforeEvent*](PlayerGameModeChangeBeforeEvent.md)) => *void*

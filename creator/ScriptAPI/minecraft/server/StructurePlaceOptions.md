@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.StructurePlaceOptions Interface
 description: Contents of the @minecraft/server.StructurePlaceOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # StructurePlaceOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Provides additional options for [*@minecraft/server.StructureManager.place*](../../minecraft/server/StructureManager.md#place)
 

@@ -256,6 +256,14 @@ Type: *boolean*
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
 
+### **showDaysPlayed**
+`showDaysPlayed: boolean;`
+
+Type: *boolean*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
+
 ### **showDeathMessages**
 `showDeathMessages: boolean;`
 

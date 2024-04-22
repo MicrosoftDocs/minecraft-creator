@@ -98,7 +98,7 @@ Runs a command with if or unless there is a block with a set of block states tha
 Runs a command if a particular set of blocks in a volume matches the scan mode criteria
 
 ### If/unless an entity matches
-`/execute run <command: command>`
+`/execute run <command: codebuilderargs>`
 
 Runs a command if (or unless) a selector returns at least one matching entity.
 
@@ -111,7 +111,7 @@ Runs a command if (or unless) a selector returns at least one matching entity.
 Compares block to a given block `id`.
 - `blockStates`: block properties
 - `chainedCommand`: executechainedoption_0
-- `command`: command
+- `command`: codebuilderargs
 A `string` of the command to run. Must be a valid command.
 - `destination: x y z`: position
 - `dimension`: Dimension

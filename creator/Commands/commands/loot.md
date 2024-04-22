@@ -432,6 +432,7 @@ Granite Stairs
 - `minecraft:stone_shovel`
 Stone Shovel
 - `minecraft:light_gray_stained_glass_pane`
+- `minecraft:smooth_stone_slab`
 - `minecraft:melon_block`
 Melon Block
 - `minecraft:arrow`
@@ -1424,6 +1425,7 @@ Magma
 - `minecraft:ominous_bottle`
 - `minecraft:compound`
 [Education Edition] Compound
+- `minecraft:stone_brick_slab`
 - `minecraft:ice_bomb`
 [Education Edition] Ice Bomb
 - `minecraft:medicine`
@@ -1448,8 +1450,6 @@ Loom
 - `minecraft:polished_deepslate_double_slab`
 Polished Deepslate Double Slab
 - `minecraft:eye_armor_trim_smithing_template`
-- `minecraft:item.warped_door`
-Warped Door
 - `minecraft:netherite_axe`
 Netherite Axe
 - `minecraft:netherite_hoe`
@@ -1464,6 +1464,7 @@ Mud
 Netherite Helmet
 - `minecraft:netherite_scrap`
 Netherite Scrap
+- `minecraft:quartz_slab`
 - `minecraft:crimson_sign`
 Crimson Sign
 - `minecraft:concrete`
@@ -1620,9 +1621,9 @@ Unlit Redstone Torch
 - `minecraft:shelter_pottery_sherd`
 - `minecraft:sentry_armor_trim_smithing_template`
 - `minecraft:ward_armor_trim_smithing_template`
-- `minecraft:tide_armor_trim_smithing_template`
-- `minecraft:bamboo_block`
 - `minecraft:red_stained_glass_pane`
+- `minecraft:bamboo_block`
+- `minecraft:tide_armor_trim_smithing_template`
 - `minecraft:wayfinder_armor_trim_smithing_template`
 - `minecraft:red_carpet`
 - `minecraft:music_disc_relic`
@@ -1756,16 +1757,10 @@ Lit Blast Furnace
 - `minecraft:bamboo_stairs`
 - `minecraft:coral_block`
 Coral Block
-- `minecraft:stone_block_slab`
-Stone Block Slab
-- `minecraft:leaves`
-Leaves
 - `minecraft:stone_block_slab2`
 Stone Block Slab 2
 - `minecraft:leaves2`
 Leaves 2
-- `minecraft:birch_standing_sign`
-Birch Standing Sign
 - `minecraft:chiseled_polished_blackstone`
 Chiseled Polished Blackstone
 - `minecraft:stone_block_slab3`
@@ -1793,6 +1788,7 @@ Coral Fan
 - `minecraft:dead_brain_coral_fan`
 - `minecraft:dead_bubble_coral_fan`
 - `minecraft:dead_horn_coral_fan`
+- `minecraft:brick_slab`
 - `minecraft:lily_of_the_valley`
 - `minecraft:polished_blackstone_button`
 Polished Blackstone Button
@@ -1806,6 +1802,10 @@ Sapling
 - `minecraft:oak_leaves`
 - `minecraft:spruce_leaves`
 - `minecraft:jungle_leaves`
+- `minecraft:leaves`
+Leaves
+- `minecraft:stone_block_slab`
+Stone Block Slab
 - `minecraft:dark_oak_leaves`
 - `minecraft:azalea_leaves`
 Azalea Leaves
@@ -1825,6 +1825,9 @@ Red Sandstone
 - `minecraft:redstone_lamp`
 Redstone Lamp
 - `minecraft:dark_oak_slab`
+- `minecraft:sandstone_slab`
+- `minecraft:cobblestone_slab`
+- `minecraft:nether_brick_slab`
 - `minecraft:nether_wart_block`
 Nether Wart Block
 - `minecraft:element_116`
@@ -2190,10 +2193,14 @@ Crying Obsidian
 Banner Pattern
 - `minecraft:glow_berries`
 Glow Berries
+- `minecraft:birch_standing_sign`
+Birch Standing Sign
 - `minecraft:polished_basalt`
 Polished Basalt
 - `minecraft:nether_gold_ore`
 Nether Gold Ore
+- `minecraft:item.warped_door`
+Warped Door
 - `minecraft:mangrove_trapdoor`
 Mangrove Trapdoor
 - `minecraft:piston_arm_collision`

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.Structure Class
 description: Contents of the @minecraft/server.Structure class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # Structure Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents a loaded structure template (.mcstructure file). Structures can be placed in a world using the /structure command or the [*@minecraft/server.StructureManager*](../../minecraft/server/StructureManager.md) APIs.
 
@@ -39,9 +35,15 @@ Type: [*Vector3*](Vector3.md)
 - [getBlockPermutation](#getblockpermutation)
 - [getIsWaterlogged](#getiswaterlogged)
 - [isValid](#isvalid)
+::: moniker range="=minecraft-bedrock-experimental"
 - [saveAs](#saveas)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [saveToWorld](#savetoworld)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [setBlockPermutation](#setblockpermutation)
+::: moniker-end
 
 ### **getBlockPermutation**
 `
@@ -90,6 +92,7 @@ Returns whether the Structure is valid. The Structure may become invalid if it i
 
 **Returns** *boolean* - Returns whether the Structure is valid.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **saveAs**
 `
 saveAs(identifier: string, saveMode?: StructureSaveMode): Structure
@@ -107,6 +110,9 @@ Creates a copy of a Structure and saves it with a new name.
 
 **Returns** [*Structure*](Structure.md) - Returns the newly created structure.
 
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -114,13 +120,18 @@ Creates a copy of a Structure and saves it with a new name.
 > This function can throw errors.
 >
 > Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **saveToWorld**
 `
 saveToWorld(): void
 `
 
 Saves a modified Structure to the world file.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -129,7 +140,9 @@ Saves a modified Structure to the world file.
 > This function can throw errors.
 >
 > Throws [*InvalidStructureError*](InvalidStructureError.md)
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **setBlockPermutation**
 `
 setBlockPermutation(location: Vector3, blockPermutation?: BlockPermutation): void
@@ -145,6 +158,9 @@ Sets a BlockPermutation within a Structure.
   
   The BlockPermutation to set.
 
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -152,3 +168,4 @@ Sets a BlockPermutation within a Structure.
 > This function can throw errors.
 >
 > Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+::: moniker-end

@@ -85,6 +85,7 @@ controls whether mob griefing can happen in the world
 controls whether players can damage each other
 - `showcoordinates`
 controls whether coordinates are displayed
+- `showdaysplayed`
 - `naturalregeneration`
 controls whether players can regenerate health
 - `tntexplodes`

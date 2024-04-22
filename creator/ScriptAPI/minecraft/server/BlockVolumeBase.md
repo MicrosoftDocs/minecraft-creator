@@ -111,13 +111,13 @@ Get a [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) object wh
 
 ### **isInside**
 `
-isInside(pos: Vector3): boolean
+isInside(location: Vector3): boolean
 `
 
 Check to see if a given world block location is inside a BlockVolume
 
 #### **Parameters**
-- **pos**: [*Vector3*](Vector3.md)
+- **location**: [*Vector3*](Vector3.md)
 
 **Returns** *boolean*
 

@@ -518,10 +518,16 @@
       href: minecraft/server/ItemCompleteUseAfterEvent.md
     - name: ItemCompleteUseAfterEventSignal
       href: minecraft/server/ItemCompleteUseAfterEventSignal.md
+    - name: ItemCompleteUseEvent
+      href: minecraft/server/ItemCompleteUseEvent.md
     - name: ItemComponent
       href: minecraft/server/ItemComponent.md
     - name: ItemComponentBeforeDurabilityDamageEvent
       href: minecraft/server/ItemComponentBeforeDurabilityDamageEvent.md
+    - name: ItemComponentCompleteUseEvent
+      href: minecraft/server/ItemComponentCompleteUseEvent.md
+    - name: ItemComponentConsumeEvent
+      href: minecraft/server/ItemComponentConsumeEvent.md
     - name: ItemComponentHitEntityEvent
       href: minecraft/server/ItemComponentHitEntityEvent.md
     - name: ItemComponentMineBlockEvent

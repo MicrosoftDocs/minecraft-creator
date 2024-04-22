@@ -336,6 +336,8 @@ Oxidized Cut Copper Stairs
 Deepslate Tile Double Slab
 - `deepslate_tile_double_slab`
 Deepslate Tile Double Slab
+- `minecraft:sandstone_slab`
+- `sandstone_slab`
 - `minecraft:raw_gold_block`
 Raw Gold block
 - `raw_gold_block`
@@ -978,6 +980,8 @@ Dark Oak Fence Gate
 Dark Oak Fence Gate
 - `minecraft:bamboo_mosaic_double_slab`
 - `bamboo_mosaic_double_slab`
+- `minecraft:cobblestone_slab`
+- `cobblestone_slab`
 - `minecraft:crimson_nylium`
 Crimson Nylium
 - `crimson_nylium`
@@ -1036,10 +1040,6 @@ Frame
 Frame
 - `minecraft:spruce_log`
 - `spruce_log`
-- `minecraft:stone_block_slab`
-Stone Block Slab
-- `stone_block_slab`
-Stone Block Slab
 - `minecraft:lapis_block`
 Lapis Block
 - `lapis_block`
@@ -1908,6 +1908,8 @@ Weathered Cut Copper Slab
 Weathered Cut Copper Slab
 - `minecraft:dark_oak_leaves`
 - `dark_oak_leaves`
+- `minecraft:nether_brick_slab`
+- `nether_brick_slab`
 - `minecraft:fire`
 Fire
 - `fire`
@@ -2010,6 +2012,8 @@ Acacia Standing Sign
 - `exposed_copper_bulb`
 - `minecraft:dead_fire_coral`
 - `dead_fire_coral`
+- `minecraft:stone_brick_slab`
+- `stone_brick_slab`
 - `minecraft:crimson_stairs`
 Crimson Stairs
 - `crimson_stairs`
@@ -2232,6 +2236,8 @@ Mangrove Leaves
 Cobbled Deepslate
 - `cobbled_deepslate`
 Cobbled Deepslate
+- `minecraft:quartz_slab`
+- `quartz_slab`
 - `minecraft:bookshelf`
 Bookshelf
 - `bookshelf`
@@ -2666,6 +2672,8 @@ Dark Oak Trapdoor
 Dark Oak Trapdoor
 - `minecraft:orange_terracotta`
 - `orange_terracotta`
+- `minecraft:brick_slab`
+- `brick_slab`
 - `minecraft:waxed_oxidized_copper`
 Waxed Oxidized Copper
 - `waxed_oxidized_copper`
@@ -2676,6 +2684,8 @@ Waxed Oxidized Copper
 Stripped Oak Log
 - `stripped_oak_log`
 Stripped Oak Log
+- `minecraft:smooth_stone_slab`
+- `smooth_stone_slab`
 - `minecraft:polished_andesite`
 - `polished_andesite`
 - `minecraft:sea_lantern`
@@ -3154,6 +3164,10 @@ Coral Block
 Double Plant
 - `minecraft:double_plant`
 Double Plant
+- `stone_block_slab`
+Stone Block Slab
+- `minecraft:stone_block_slab`
+Stone Block Slab
 - `lava_cauldron`
 Lava Cauldron
 - `minecraft:lava_cauldron`

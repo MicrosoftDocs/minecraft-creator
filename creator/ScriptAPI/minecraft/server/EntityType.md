@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityType Class
 description: Contents of the @minecraft/server.EntityType class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityType Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents information about a type of entity.
 

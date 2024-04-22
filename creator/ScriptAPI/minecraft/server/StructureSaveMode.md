@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .StructureSaveMode Enumeration
 description: Contents of the .StructureSaveMode enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # StructureSaveMode Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Constants
 ### **Memory**

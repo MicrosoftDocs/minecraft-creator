@@ -12,6 +12,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Manages callbacks that are connected to after a players game mode is changed.
+
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -20,6 +22,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 `
 subscribe(callback: (arg: PlayerGameModeChangeAfterEvent) => void): (arg: PlayerGameModeChangeAfterEvent) => void
 `
+
+Adds a callback that will be called after a players game mode is changed.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*
@@ -33,6 +37,8 @@ subscribe(callback: (arg: PlayerGameModeChangeAfterEvent) => void): (arg: Player
 `
 unsubscribe(callback: (arg: PlayerGameModeChangeAfterEvent) => void): void
 `
+
+Removes a callback from being called after a players game mode is changed.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*

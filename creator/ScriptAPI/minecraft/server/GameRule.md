@@ -133,6 +133,10 @@ Controls whether Border Block effects are shown.
 `ShowCoordinates = "showCoordinates"`
 
 Controls whether player coordinates are displayed.
+### **ShowDaysPlayed**
+`ShowDaysPlayed = "showDaysPlayed"`
+
+Controls whether the days a player has played is displayed.
 ### **ShowDeathMessages**
 `ShowDeathMessages = "showDeathMessages"`
 
