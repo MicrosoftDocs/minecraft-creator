@@ -90,7 +90,7 @@ playsound mob.villager.haggle @initiator
 ```
 
 Here we are using the playsound command to play the villager haggle sound. The `@initiator` targets the player who has opened the dialogue. `@s` in this case would select the NPC entity.
-You can learn more about commands here: [Introduction to Commands](https://learn.microsoft.com/en-us/minecraft/creator/documents/commandsintroduction)
+You can learn more about commands here: [Introduction to Commands](CommandsIntroduction.md)
 
 ## Export
 
@@ -113,9 +113,9 @@ For more experienced users, DialogueDesigner offers some advanced features to su
 
 ### Formatting
 
-You can use Minecraft's [Formatting codes](../Reference/Content/RawMessageJson.md#formatting-codes-§) to add formatting to your text, including making your text bold, italic, or changing the color.
+You can use Minecraft's [Formatting codes](../Reference/Content/RawMessageJson.md#formatting-codes) to add formatting to your text, including making your text bold, italic, or changing the color.
 
-Simply enter the section sign (`§`), followed by a [specific number or letter](../Reference/Content/RawMessageJson.md#formatting-codes-§), into the text field, ahead of the word that you want to format. After the word, you can put `§r` to reset the formatting.
+Simply enter the section sign (`§`), followed by a [specific number or letter](../Reference/Content/RawMessageJson.md#formatting-codes), into the text field, ahead of the word that you want to format. After the word, you can put `§r` to reset the formatting.
 
 Formatting codes can be used directly in text fields, in translations, or in raw JSON text.
 You can test formatting by switching to Preview mode.

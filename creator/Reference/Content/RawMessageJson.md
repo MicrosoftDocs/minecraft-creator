@@ -72,7 +72,7 @@ This will remove the red formatting from the exclamation point:
 
 ![Tellraw message with red exclamation point reset to white](../Media/RawMessageJson/hello_world_reset.png)
 
-### Formatting Codes §
+### Formatting Codes
 
 |Format code |Unicode escape sequence |Color or Effect |
 |:----------:|-----------|-----------|
