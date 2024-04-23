@@ -1,5 +1,5 @@
 ---
-author: iconicNurdle
+author: JimSeaman42
 ms.author: mikeam
 title: Molang Documentation - Query Functions
 description: "A reference document detailing the query functions available via Molang"
@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Molang Documentation - Query Functions
 
-Query Functions are operators that access a wide variety of information. They can return simple true or false values (1.0 or 0.0) or more complex data. See the list of functions below for per-query documentation. For query functions that do not take parameters, use: `query.function_name`. For query functions that do take parameters, use parentheses with commas separating the arguments like: `query.function_name(1, 2, 'three')`.
+Query Functions are operators that access a wide variety of information. They can return simple true/false values (1.0 or 0.0) or more complex data. See the list of functions below for per-query documentation. For query functions that do not take parameters, use: `query.function_name`. For query functions that do take parameters, use parentheses with commas separating the arguments like: `query.function_name(1, 2, 'three')`.
 
 > [!IMPORTANT]
 > The list below includes only entity queries that are live. See [Experimental Entity Queries](ExperimentalQueryFunctions.md) for experimental Molang query functions.
@@ -36,7 +36,8 @@ Listed below are the currently available Molang query functions in the latest re
 | query.any_animation_finished| Only valid in an animation controller. Returns 1.0 if any animation in the current animation controller state has played through at least once, else it returns 0.0. |
 | query.any_tag| Returns 1.0 if the item or block has any of the tags specified, else it returns 0.0. |
 | query.approx_eq| Returns 1.0 if all of the arguments are within the smallest unit of measurement possible for the computer running this query of each other, else it returns 0.0. |
-| query.armor_color_slot| Takes the armor slot index as a parameter and returns the color value (0=Red, 1=Green, 2=Blue, 3=Alpha) of the armor in the requested slot. |
+| query.armor_color_slot| Takes the armor slot index as a parameter and returns the color value (0=Red, 1=Green, 2=Blue, 3=Alpha) of the armor in the requested slot. Valid values for the armor slot index are: 0=head, 1=chest, 2=legs, and 3=feet.|
+| query.armor_damage_slot| Takes the armor slot index as a parameter and returns the damage value of the armor in the requested slot. Valid values for the armor slot index are: 0=head, 1=chest, 2=legs, and 3=feet.|
 | query.armor_material_slot| Takes the armor slot index as a parameter and returns the armor material type (0=Default, 1=Enchanted, 2=Leather, 3=Enchanted Leather) in the requested armor slot. |
 | query.armor_texture_slot| Takes the armor slot index as a parameter and returns the texture type (0=Leather, 1=Chain, 2=Iron, 3=Diamond, 4=Gold) of the armor in requested slot. |
 | query.average_frame_time| Returns the time in *seconds* of the average frame time over the last `n` frames. If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.average_frame_time` (or the equivalent `query.average_frame_time(0)`) will return the frame time of the frame before the current one. `query.average_frame_time(1)` will return the average frame time of the previous two frames. Currently we store the history of the last 30 frames, although note that this may change in the future. Asking for more frames will result in only sampling the number of frames stored. |
@@ -313,7 +314,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.total_emitter_count| Returns the total number of active emitters in the world. |
 | query.total_particle_count| Returns the total number of active particles in the world. |
 | query.trade_tier| Returns the trade tier of the entity if it makes sense, else it returns 0.0. Applies to villager. |
-| query.unhappy_counter| Returns how unhappy the entity is. Applies to panda. |
+| query.unhappy_counter| Always returns zero. This query was originally meant to indicate panda unhappiness, but due to an early code change it has always only returned zero. |
 | query.variant| Returns the entity's variant index. Relates to `variant` component. |
 | query.vertical_speed| Returns the speed of the entity up or down in meters/second, where positive is up. |
 | query.walk_distance| Returns the total distance traveled by an entity while on the ground and not sneaking. |

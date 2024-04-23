@@ -53,9 +53,7 @@ Type: [*BlockType*](BlockType.md)
 
 ## Methods
 - [getAllStates](#getallstates)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getItemStack](#getitemstack)
-::: moniker-end
 - [getState](#getstate)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getTags](#gettags)
@@ -76,7 +74,6 @@ Returns all available block states associated with this block.
 
 **Returns** Record<*string*, *boolean* | *number* | *string*> - Returns the list of all of the block states that the permutation has.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemStack**
 `
 getItemStack(amount?: number): ItemStack | undefined
@@ -90,10 +87,6 @@ Retrieves a prototype item stack based on this block permutation that can be use
   Number of instances of this block to place in the prototype item stack.
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **getState**
 `

@@ -16,12 +16,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.9.0"
+    "version": "1.10.0"
 }
 ```
 
 ## Available Versions
 - `1.12.0-beta`
+- `1.10.0`
 - `1.9.0`
 - `1.8.0`
 - `1.7.0`
@@ -251,8 +252,11 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [IPlayerSpawnAfterEventSignal](IPlayerSpawnAfterEventSignal.md)
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
+- [ItemCompleteUseEvent](ItemCompleteUseEvent.md)
 - [ItemComponent](ItemComponent.md)
 - [ItemComponentBeforeDurabilityDamageEvent](ItemComponentBeforeDurabilityDamageEvent.md)
+- [ItemComponentCompleteUseEvent](ItemComponentCompleteUseEvent.md)
+- [ItemComponentConsumeEvent](ItemComponentConsumeEvent.md)
 - [ItemComponentHitEntityEvent](ItemComponentHitEntityEvent.md)
 - [ItemComponentMineBlockEvent](ItemComponentMineBlockEvent.md)
 - [ItemComponentRegistry](ItemComponentRegistry.md)

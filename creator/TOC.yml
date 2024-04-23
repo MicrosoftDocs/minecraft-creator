@@ -4,6 +4,8 @@
       href: index.yml
     - name: "Updates and News"
       items: 
+        - name: 1.20.80 Update Summary
+          href: Documents/Update1.20.80.md
         - name: 1.20.70 Update Summary
           href: Documents/Update1.20.70.md
         - name: 1.20.60 Update Summary
@@ -94,6 +96,8 @@
           href: Documents/AddCustomItems.md
         - name: Creating and Adding Custom Sounds
           href: Documents/AddCustomSounds.md
+        - name: "Create a Skin Pack"
+          href: Documents/SkinPack.md
         - name: Introduction to Recipes
           href: Documents/RecipeIntroduction.md
         - name: Target Selectors

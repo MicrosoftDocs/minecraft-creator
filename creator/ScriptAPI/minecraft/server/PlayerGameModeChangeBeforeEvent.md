@@ -12,24 +12,34 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Contains information regarding an event before a player interacts with an entity.
+
 ## Properties
 
 ### **cancel**
 `cancel: boolean;`
+
+If set to true the game mode change will be cancelled.
 
 Type: *boolean*
 
 ### **fromGameMode**
 `read-only fromGameMode: GameMode;`
 
+The current game mode.
+
 Type: [*GameMode*](GameMode.md)
 
 ### **player**
 `read-only player: Player;`
 
+Source Player for this event.
+
 Type: [*Player*](Player.md)
 
 ### **toGameMode**
 `toGameMode: GameMode;`
+
+The game mode being changed to.
 
 Type: [*GameMode*](GameMode.md)

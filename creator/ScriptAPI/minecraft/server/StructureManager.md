@@ -5,21 +5,21 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.StructureManager Class
 description: Contents of the @minecraft/server.StructureManager class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # StructureManager Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manager for Structure related APIs. Includes APIs for creating, getting, placing and deleting Structures.
 
 ## Methods
 - [createEmpty](#createempty)
+::: moniker range="=minecraft-bedrock-experimental"
 - [createFromWorld](#createfromworld)
+::: moniker-end
 - [delete](#delete)
 - [get](#get)
+::: moniker range="=minecraft-bedrock-experimental"
 - [getWorldStructureIds](#getworldstructureids)
+::: moniker-end
 - [place](#place)
 
 ### **createEmpty**
@@ -50,6 +50,7 @@ Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlock
 >
 > Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **createFromWorld**
 `
 createFromWorld(identifier: string, dimension: Dimension, from: Vector3, to: Vector3, options?: StructureCreateOptions): Structure
@@ -72,6 +73,9 @@ Creates a new Structure from blocks in the world. This is functionally equivalen
 
 **Returns** [*Structure*](Structure.md) - Returns the newly created Structure.
 
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -79,6 +83,7 @@ Creates a new Structure from blocks in the world. This is functionally equivalen
 > This function can throw errors.
 >
 > Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
+::: moniker-end
 
 ### **delete**
 `
@@ -119,6 +124,7 @@ Gets a Structure that is saved to memory or the world.
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getWorldStructureIds**
 `
 getWorldStructureIds(): string[]
@@ -126,8 +132,12 @@ getWorldStructureIds(): string[]
 
 **Returns** *string*[]
 
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+::: moniker-end
 
 ### **place**
 `

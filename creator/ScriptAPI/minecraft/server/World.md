@@ -45,17 +45,12 @@ Returns the general global scoreboard that applies to the world.
 
 Type: [*Scoreboard*](Scoreboard.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **structureManager**
 `read-only structureManager: StructureManager;`
 
 Returns the manager for [*@minecraft/server.Structure*](../../minecraft/server/Structure.md) related APIs.
 
 Type: [*StructureManager*](StructureManager.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ## Methods
 ::: moniker range="=minecraft-bedrock-experimental"
