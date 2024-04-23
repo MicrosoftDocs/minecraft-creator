@@ -28,6 +28,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:barter](EntityComponents/minecraftComponent_barter.md) |`minecraft:barter` enables the entity to drop an item as a barter exchange. |
 |[minecraft:block_climber](EntityComponents/minecraftComponent_block_climber.md) |`minecraft:block_climber` allows the player to detect and maneuver on the scaffolding block. |
 |[minecraft:block_sensor](EntityComponents/minecraftComponent_block_sensor.md) |`minecraft:block_sensor` initiates a specified event when a block in the block list is broken within the sensor range. |
+|[minecraft:body_rotation_blocked](EntityComponents/minecraftComponent_body_rotation_blocked.md) |When set, the entity will no longer visually rotate their body to match their facing direction. |
 |[minecraft:boostable](EntityComponents/minecraftComponent_boostable.md) |`minecraft:boostable` defines the conditions and behavior of a rideable entity's boost. |
 |[minecraft:boss](EntityComponents/minecraftComponent_boss.md) |`minecraft:boss` defines the current state of the boss for updating the boss HUD. |
 |[minecraft:break_blocks](EntityComponents/minecraftComponent_break_blocks.md) |`minecraft:break_blocks` specifies blocks that the entity can break as it moves around. |
