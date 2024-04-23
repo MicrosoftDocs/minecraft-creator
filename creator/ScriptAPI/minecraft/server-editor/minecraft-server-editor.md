@@ -259,7 +259,7 @@ Creates a strongly typed transaction handle to enforce type safety when adding u
   
   A function that will be invoked when the transaction is redone. The function will be passed a copy of the payload data that was inserted into the transaction log.
 
-**Returns** *UserDefinedTransactionHandle<T>* - - {@link UserDefinedTransactionHandle} - A strongly typed transaction handle that can be used to add transactions to the transaction manager.
+**Returns** *UserDefinedTransactionHandle<T>* - - UserDefinedTransactionHandle - A strongly typed transaction handle that can be used to add transactions to the transaction manager.
 
 ### **stringFromException**
 `

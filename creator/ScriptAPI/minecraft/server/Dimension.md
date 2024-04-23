@@ -74,12 +74,20 @@ Type: *string*
 containsBlock(volume: BlockVolumeBase, filter: BlockFilter, allowUnloadedChunks?: boolean): boolean
 `
 
+Searches the block volume for a block that satisfies the block filter.
+
 #### **Parameters**
 - **volume**: [*BlockVolumeBase*](BlockVolumeBase.md)
+  
+  Volume of blocks that will be checked.
 - **filter**: [*BlockFilter*](BlockFilter.md)
+  
+  Block filter that will be checked against each block in the volume.
 - **allowUnloadedChunks**?: *boolean* = `false`
+  
+  If set to true will suppress the UnloadedChunksError if some or all of the block volume is outside of the loaded chunks. Will only check the block locations that are within the loaded chunks in the volume.
 
-**Returns** *boolean*
+**Returns** *boolean* - Returns true if at least one block in the volume satisfies the filter, false otherwise.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -248,12 +256,20 @@ Gets the first block that intersects with a vector emanating from a location.
 getBlocks(volume: BlockVolumeBase, filter: BlockFilter, allowUnloadedChunks?: boolean): ListBlockVolume
 `
 
+Gets all the blocks in a volume that satisfy the filter.
+
 #### **Parameters**
 - **volume**: [*BlockVolumeBase*](BlockVolumeBase.md)
+  
+  Volume of blocks that will be checked.
 - **filter**: [*BlockFilter*](BlockFilter.md)
+  
+  Block filter that will be checked against each block in the volume.
 - **allowUnloadedChunks**?: *boolean* = `false`
+  
+  If set to true will suppress the UnloadedChunksError if some or all of the block volume is outside of the loaded chunks. Will only check the block locations that are within the loaded chunks in the volume.
 
-**Returns** [*ListBlockVolume*](ListBlockVolume.md)
+**Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns the ListBlockVolume that contains all the block locations that satisfied the block filter.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

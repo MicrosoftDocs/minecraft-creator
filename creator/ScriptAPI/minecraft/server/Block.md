@@ -164,9 +164,7 @@ Type: *number*
 - [center](#center)
 - [east](#east)
 - [getComponent](#getcomponent)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getItemStack](#getitemstack)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getRedstonePower](#getredstonepower)
 ::: moniker-end
@@ -270,7 +268,7 @@ Checks to see whether it is valid to place the specified block type or block per
 center(): Vector3
 `
 
-Returns the {@link @minecraft/server.Location} of the center of this block on the X, Y, and Z axis.
+Returns the @minecraft/server.Location of the center of this block on the X, Y, and Z axis.
 
 **Returns** [*Vector3*](Vector3.md)
 
@@ -312,7 +310,6 @@ Gets a component (that represents additional capabilities) for a block - for exa
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemStack**
 `
 getItemStack(amount?: number, withData?: boolean): ItemStack | undefined
@@ -330,14 +327,10 @@ Creates a prototype item stack based on this block that can be used with Contain
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the specified amount of items and data. Returns undefined if block type is incompatible.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getRedstonePower**

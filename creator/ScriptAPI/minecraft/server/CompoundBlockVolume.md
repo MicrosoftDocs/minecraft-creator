@@ -310,7 +310,7 @@ Similar to {@link @minecraft-server/CompoundBlockVolume.setOrigin} - this functi
 - **delta**: [*Vector3*](Vector3.md)
 - **preserveExistingVolumes**?: *boolean* = `null`
   
-  See the description for the arguments to {@link @minecraft-server/CompoundBlockVolume.setOrigin}
+  See the description for the arguments to @minecraft-server/CompoundBlockVolume.setOrigin
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

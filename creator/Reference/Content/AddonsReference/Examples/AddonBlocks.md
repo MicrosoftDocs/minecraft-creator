@@ -184,6 +184,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:acacia_log |
 | minecraft:acacia_planks |
 | minecraft:acacia_pressure_plate |
+| minecraft:acacia_sapling |
 | minecraft:acacia_slab |
 | minecraft:acacia_stairs |
 | minecraft:acacia_standing_sign |
@@ -243,6 +244,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:birch_log |
 | minecraft:birch_planks |
 | minecraft:birch_pressure_plate |
+| minecraft:birch_sapling |
 | minecraft:birch_slab |
 | minecraft:birch_stairs |
 | minecraft:birch_standing_sign |
@@ -282,6 +284,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:bookshelf |
 | minecraft:border_block |
 | minecraft:brain_coral |
+| minecraft:brain_coral_fan |
 | minecraft:brewing_stand |
 | minecraft:brick_block |
 | minecraft:brick_stairs |
@@ -300,6 +303,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:brown_wool |
 | minecraft:bubble_column |
 | minecraft:bubble_coral |
+| minecraft:bubble_coral_fan |
 | minecraft:budding_amethyst |
 | minecraft:cactus |
 | minecraft:cake |
@@ -371,7 +375,6 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:copper_ore |
 | minecraft:copper_trapdoor |
 | minecraft:coral_block |
-| minecraft:coral_fan |
 | minecraft:coral_fan_dead |
 | minecraft:coral_fan_hang |
 | minecraft:coral_fan_hang2 |
@@ -425,6 +428,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:dark_oak_log |
 | minecraft:dark_oak_planks |
 | minecraft:dark_oak_pressure_plate |
+| minecraft:dark_oak_sapling |
 | minecraft:dark_oak_slab |
 | minecraft:dark_oak_stairs |
 | minecraft:dark_oak_trapdoor |
@@ -623,6 +627,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:fence_gate |
 | minecraft:fire |
 | minecraft:fire_coral |
+| minecraft:fire_coral_fan |
 | minecraft:fletching_table |
 | minecraft:flower_pot |
 | minecraft:flowering_azalea |
@@ -706,11 +711,13 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:hard_yellow_stained_glass_pane |
 | minecraft:hardened_clay |
 | minecraft:hay_block |
+| minecraft:heavy_core |
 | minecraft:heavy_weighted_pressure_plate |
 | minecraft:honey_block |
 | minecraft:honeycomb_block |
 | minecraft:hopper |
 | minecraft:horn_coral |
+| minecraft:horn_coral_fan |
 | minecraft:ice |
 | minecraft:infested_deepslate |
 | minecraft:info_update |
@@ -733,6 +740,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:jungle_log |
 | minecraft:jungle_planks |
 | minecraft:jungle_pressure_plate |
+| minecraft:jungle_sapling |
 | minecraft:jungle_slab |
 | minecraft:jungle_stairs |
 | minecraft:jungle_standing_sign |
@@ -860,6 +868,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:oak_leaves |
 | minecraft:oak_log |
 | minecraft:oak_planks |
+| minecraft:oak_sapling |
 | minecraft:oak_slab |
 | minecraft:oak_stairs |
 | minecraft:oak_wood |
@@ -999,7 +1008,6 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:sand |
 | minecraft:sandstone |
 | minecraft:sandstone_stairs |
-| minecraft:sapling |
 | minecraft:scaffolding |
 | minecraft:sculk |
 | minecraft:sculk_catalyst |
@@ -1043,6 +1051,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:spruce_log |
 | minecraft:spruce_planks |
 | minecraft:spruce_pressure_plate |
+| minecraft:spruce_sapling |
 | minecraft:spruce_slab |
 | minecraft:spruce_stairs |
 | minecraft:spruce_standing_sign |
@@ -1104,6 +1113,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:trip_wire |
 | minecraft:tripwire_hook |
 | minecraft:tube_coral |
+| minecraft:tube_coral_fan |
 | minecraft:tuff |
 | minecraft:tuff_brick_double_slab |
 | minecraft:tuff_brick_slab |

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.StructureCreateOptions Interface
 description: Contents of the @minecraft/server.StructureCreateOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # StructureCreateOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Provides additional options for [*@minecraft/server.StructureManager.createFromWorld*](../../minecraft/server/StructureManager.md#createfromworld)
 

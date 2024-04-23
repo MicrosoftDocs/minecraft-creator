@@ -12,19 +12,27 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Contains information regarding an event after a players game mode is changed.
+
 ## Properties
 
 ### **fromGameMode**
 `read-only fromGameMode: GameMode;`
+
+The previous game mode before the change.
 
 Type: [*GameMode*](GameMode.md)
 
 ### **player**
 `read-only player: Player;`
 
+Source Player for this event.
+
 Type: [*Player*](Player.md)
 
 ### **toGameMode**
 `read-only toGameMode: GameMode;`
+
+The current game mode after the change.
 
 Type: [*GameMode*](GameMode.md)
