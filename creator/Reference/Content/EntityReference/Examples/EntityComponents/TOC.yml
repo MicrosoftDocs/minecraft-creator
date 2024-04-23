@@ -32,6 +32,8 @@
   href: minecraftComponent_block_climber.md
 - name: block_sensor
   href: minecraftComponent_block_sensor.md
+- name: body rotation blocked
+  href: minecraftComponent_body_rotation_blocked.md
 - name: boostable
   href: minecraftComponent_boostable.md
 - name: boss
