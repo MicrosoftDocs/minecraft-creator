@@ -8,7 +8,15 @@ ms.service: minecraft-bedrock-edition
 # Minecraft Bedrock 1.20.80 Update Notes for Creators
 
 Minecraft Bedrock has been updated to 1.20.80 and there are a number of changes of note for Add-On creators. The following features do not require experimental toggles.
- 
+
+## Entities 
+- minecraft:body_rotation_blocked component - prevents an entity from visually rotating their body to match their own facing direction.
+- is_sitting filter - checks if the entity is sitting.
+- has_damaged_equipment filter - checks if the entity has a certain damaged piece of equipment in the specified slot.
+
+## Molang 
+- query.armor_slot_damage - returns the damage value of the armor item in the specified slot.
+
 ## Camera
 - Entity render distance improvements - Entities that a player is riding or attached to by a leash will now show on chunks that have been ticked.
 
