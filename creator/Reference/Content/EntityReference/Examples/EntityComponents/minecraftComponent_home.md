@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Entity Documentation - minecraft:home
 
-`minecraft:home` saves a home point of interest for when the the entity is spawned.
+`minecraft:home` saves a home point of interest for when the entity is spawned.
 
 ## Parameters
 

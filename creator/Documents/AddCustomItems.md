@@ -620,7 +620,7 @@ manifest.json
 
 **Chestplate Resource Pack/attachables/custom_chestplate.attachable.json**
 
-This file defines which geometry will appear for the chestplate, as well as the the armor trim palette that will be used and any adjusted trim patterns. 
+This file defines which geometry will appear for the chestplate, as well as the armor trim palette that will be used and any adjusted trim patterns. 
 
 ```json
 {
