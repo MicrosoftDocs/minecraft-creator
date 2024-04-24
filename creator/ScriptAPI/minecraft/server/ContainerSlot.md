@@ -262,7 +262,7 @@ getTags(): string[]
 
 Returns all tags for the item in the slot.
 
-**Returns** *string*[] - Returns all tags for the item in the slot. Return an empty array if the the slot is empty.
+**Returns** *string*[] - Returns all tags for the item in the slot. Return an empty array if the slot is empty.
 
 > [!WARNING]
 > This function can throw errors.

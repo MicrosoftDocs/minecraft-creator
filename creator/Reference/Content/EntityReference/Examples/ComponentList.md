@@ -77,7 +77,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:health](EntityComponents/minecraftComponent_health.md) |`minecraft:health` specifies how much life an entity has when spawned.|
 |[minecraft:heartbeat](EntityComponents/minecraftComponent_heartbeat.md) |`minecraft:heartbeat` defines the entity heartbeat.|
 |[minecraft:hide](EntityComponents/minecraftComponent_hide.md) |`minecraft:hide` compels the entity to move to and hide at their owned POI or the closest nearby.|
-|[minecraft:home](EntityComponents/minecraftComponent_home.md) |`minecraft:home` saves a home point of interest for when the the entity is spawned.|
+|[minecraft:home](EntityComponents/minecraftComponent_home.md) |`minecraft:home` saves a home point of interest for when the entity is spawned.|
 |[minecraft:horse.jump_strength](EntityComponents/minecraftComponent_horse.jump_strength.md) |`minecraft:horse.jump_strength` defines the jump height for a horse or similar entity, such as a donkey.|
 |[minecraft:hurt_on_condition](EntityComponents/minecraftComponent_hurt_on_condition.md) |`minecraft:hurt_on_condition` defines a set of conditions under which the entity should take damage.|
 |[minecraft:input_ground_controlled](EntityComponents/minecraftComponent_input_ground_controlled.md) |`minecraft:input_ground_controlled` allows a ridable entity to be controlled using keyboard controls when ridden by a player. |

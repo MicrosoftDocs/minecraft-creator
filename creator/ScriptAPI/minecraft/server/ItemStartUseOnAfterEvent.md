@@ -8,7 +8,7 @@ description: Contents of the @minecraft/server.ItemStartUseOnAfterEvent class.
 ---
 # ItemStartUseOnAfterEvent Class
 
-Contains information related to an item being used on a block. This event fires when a player presses the the Use Item / Place Block button to successfully use an item or place a block. Fires for the first block that is interacted with when performing a build action. Note: This event cannot be used with Hoe or Axe items.
+Contains information related to an item being used on a block. This event fires when a player presses the Use Item / Place Block button to successfully use an item or place a block. Fires for the first block that is interacted with when performing a build action. Note: This event cannot be used with Hoe or Axe items.
 
 ## Properties
 
