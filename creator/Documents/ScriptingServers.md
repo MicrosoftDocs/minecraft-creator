@@ -14,7 +14,7 @@ In this article, we'll cover the foundation of everything you need to know about
 
 But first! A few warnings and notices on this topic before we get started:
 
-* ***Important:*** These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes or even removals of functionality in updated Minecraft versions. Check the [the Minecraft changelog](https://aka.ms/mcchanges) for details on any changes to Beta APIs.
+* ***Important:*** These APIs are experimental as part of the Beta APIs experiment. As with all experiments, you may see changes or even removals of functionality in updated Minecraft versions. Check the [Minecraft changelog](https://aka.ms/mcchanges) for details on any changes to Beta APIs.
 * We'll cover a few more advanced topics in this article, so you should  be familiar with the [basics of scripting](ScriptingGettingStarted.md) and general Minecraft customization concepts.
 * Make sure you back up worlds and files before you get deep into modifying and copying worlds around.
 * These tips work only in conjunction with Bedrock Dedicated Server, available at [Bedrock Server Download](https://www.minecraft.net/download/server/bedrock), that you can host on your own. This article does not apply to gameplay servers provided as part of Minecraft Realms.
