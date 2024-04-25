@@ -15,14 +15,14 @@ Have you seen `base_game_version`?
 
 Here's a handy table of the terms 
 
-| Term        | Example Value | What? |
+| Term    | Example Value | Description |
 |--------------|--------|------------|
-| base_game_version | 1.20.80 | Base game versioning is a method of keeping current or future changes in Vanilla Minecraft: Bedrock Edition from causing unexpected changes to your world files, and allowing you to lock your world template to a specific Minecraft version. Base game versioning does not affect texture packs or skin packs. |
-| format_version **manifest.json** | 2 | ??? |
-| format_version **entity.json** | 1.17.30  | Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it. |
-| format_version **controller.render.name** | 1.8.0 | ??? |
-| min_engine_version | 1, 16, 0 | ??? |
-| version | 1, 0, 0 | ??? |
+| `base_game_version` | 1.20.80 | Essentially, `base_game_version` is used to choose how vanilla elements should behave in a world. |
+| `format_version` in **manifest.json** | 2 | ??? |
+| `format_version` in **entity.json** | 1.17.30  | Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it. |
+| `format_version` in **controller.render.name** | 1.8.0 | ??? |
+| `min_engine_version` | 1, 16, 0 | ??? |
+| `version` | 1, 0, 0 | ??? |
 
 I'm not aware of many places where `format_version` doesn't imply the first version of Minecraft this feature is available in, except for **manifest.json**, where `format_version` is 2 because ... it's different.
 
