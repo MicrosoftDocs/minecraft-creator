@@ -20,7 +20,7 @@ Here's a handy table of ther terms
 | base_game_version | 1.20.80 |  |
 | format_version **manifest.json** | 2 | ??? |
 | format_version **entity.json** | 1.17.30  | Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it. |
-| format_version **controller.render.<name>** | 1.8.0 | ??? |
+| format_version **controller.render.name** | 1.8.0 | ??? |
 | min_engine_version | 1, 16, 0 | ??? |
 | version | 1, 0, 0 | ??? |
 
@@ -34,7 +34,7 @@ Here is a link to the [Comprehensive Pack Contents](../Documents/ComprehensivePa
 
 ## Versions of Things in a Behavior Pack
 
-Here is the introduction to [behavior packs](BehaviorPack.md).
+Here is the introduction to [behavior packs](../Documents/BehaviorPack.md).
 
 - [animation_controllers](../Reference/Content/AnimationsReference/Examples/AnimationController.md)
     - `<entity_name>`
@@ -133,7 +133,7 @@ Here is the introduction to [resource packs](../Documents/ResourcePack.md).
     - `<entity_render_controllers>`.json'
     "format_version": "1.8.0"
     - default.render_controllers.json
-- [biomes_client.json](../Reference/Content/FogsReferenceui/Examples/FogsIntroduction.md#biomes_clientjson)
+- [biomes_client.json](../Reference/Content/FogsReference/Examples/FogsIntroduction.md#biomes_clientjson)
 - [blocks.json]
     - "format_version": "1.19.30", 
 - [sounds.json]
@@ -209,7 +209,7 @@ Here is the introduction to [resource packs](../Documents/ResourcePack.md).
 }
 ```
 
-**dialogue/manifest.json** taken from the [NPC Dialogue](NPCDialogue.md) page.
+**dialogue/manifest.json** taken from the [NPC Dialogue](../Documents/NPCDialogue.md) page.
 
 ```json
   "format_version":"1.17",
