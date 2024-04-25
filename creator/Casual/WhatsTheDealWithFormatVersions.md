@@ -18,11 +18,11 @@ Here's a handy table of the terms
 | Term    | Example Value | Description |
 |--------------|--------|------------|
 | `base_game_version` | 1.20.80 | Essentially, `base_game_version` is used to choose how vanilla elements should behave in a world. |
-| `format_version` in **manifest.json** | 2 | ??? |
+| `format_version` in **manifest.json** | 2 |  |
 | `format_version` in **entity.json** | 1.17.30  | Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it. |
-| `format_version` in **controller.render.name** | 1.8.0 | ??? |
-| `min_engine_version` | 1, 16, 0 | ??? |
-| `version` | 1, 0, 0 | ??? |
+| `format_version` in **controller.render.name** | 1.8.0 |  |
+| `min_engine_version` | 1, 16, 0 | [Link to the definition in Client Entity Documentation Introduction](../Reference/Content/EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md#min_engine_version) |
+| `version` | 1, 0, 0 |  |
 
 I'm not aware of many places where `format_version` doesn't imply the first version of Minecraft this feature is available in, except for **manifest.json**, where `format_version` is 2 because ... it's different.
 
@@ -65,13 +65,16 @@ Here is the introduction to [behavior packs](../Documents/BehaviorPack.md).
         - `<scene>`.json
           "format_version":"1.17"
     - [manifest.json](../Documents/BehaviorPack.md#create-the-manifest-file)
-        "format_version": 1,
-          "header": {
-          "min_engine_version": [1, 12, 0],
-          "version": [0, 0, 1]
-         },
-         "modules": 
-            "version": [0, 0, 1]
+    
+    ```
+    "format_version": 1,
+    "header": {
+      "min_engine_version": [1, 12, 0],
+       "version": [0, 0, 1]
+    },
+    "modules": 
+      "version": [0, 0, 1]
+    ```
 - [items](../Documents/AddCustomItems.md)
     - `<item_name>`.json
         "format_version": "1.20.60"
@@ -82,19 +85,21 @@ Here is the introduction to [behavior packs](../Documents/BehaviorPack.md).
     - `<structure_name>`.mcstructure
        "format_version": 1.13.0
 - [manifest.json](../Documents/BehaviorPack.md#create-the-manifest-file)
-      "format_version": 2,
-      "header": {
-        "version": [1, 0, 0],
-       "min_engine_version": [1, 16, 0]
-      },
-      "modules":
-       [{
-          "version": [1, 0, 0]
-        }],
-      "dependencies": [
-      {
-        "version":[1, 0, 0]
-      }]
+      
+  ```
+  "format_version": 2,
+  "header": {
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 16, 0]
+  },
+  "modules": [{
+    "version": [1, 0, 0]
+  }],
+  "dependencies": [
+  {
+   "version":[1, 0, 0]
+  }]
+  ```
 
 ## Versions of Things in a Resource Pack
 
@@ -134,9 +139,9 @@ Here is the introduction to [resource packs](../Documents/ResourcePack.md).
     "format_version": "1.8.0"
     - default.render_controllers.json
 - [biomes_client.json](../Reference/Content/FogsReference/Examples/FogsIntroduction.md#biomes_client.md)
+    - `version "format_version"`
 - [blocks.json]
-    - "format_version": "1.19.30", 
-- [sounds.json]
+    - `"format_version": "1.19.30"` 
 
 ## Common Files
 
