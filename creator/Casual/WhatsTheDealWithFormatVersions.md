@@ -133,7 +133,7 @@ Here is the introduction to [resource packs](../Documents/ResourcePack.md).
     - `<entity_render_controllers>`.json'
     "format_version": "1.8.0"
     - default.render_controllers.json
-- [biomes_client.json](../Reference/Content/FogsReference/Examples/FogsIntroduction.md#biomes_clientjson)
+- [biomes_client.json](../Reference/Content/FogsReference/Examples/FogsIntroduction.md#biomes_client.json)
 - [blocks.json]
     - "format_version": "1.19.30", 
 - [sounds.json]
