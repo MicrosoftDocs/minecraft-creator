@@ -13,11 +13,11 @@ _This article is about something I wonder about while I'm creating stuff in Mine
 I keep seeing it over and over again in JSON files... `format_version` and `version` ... and what about `min_engine_version`?
 Have you seen `base_game_version`?
 
-Here's a handy table of ther terms 
+Here's a handy table of the terms 
 
 | Term        | Example Value | What? |
 |--------------|--------|------------|
-| base_game_version | 1.20.80 |  |
+| base_game_version | 1.20.80 | Base game versioning is a method of keeping current or future changes in Vanilla Minecraft: Bedrock Edition from causing unexpected changes to your world files, and allowing you to lock your world template to a specific Minecraft version. Base game versioning does not affect texture packs or skin packs. |
 | format_version **manifest.json** | 2 | ??? |
 | format_version **entity.json** | 1.17.30  | Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it. |
 | format_version **controller.render.name** | 1.8.0 | ??? |
@@ -133,7 +133,7 @@ Here is the introduction to [resource packs](../Documents/ResourcePack.md).
     - `<entity_render_controllers>`.json'
     "format_version": "1.8.0"
     - default.render_controllers.json
-- [biomes_client.json](../Reference/Content/FogsReference/Examples/FogsIntroduction.md#biomes_client.json)
+- [biomes_client.json](../Reference/Content/FogsReference/Examples/FogsIntroduction.md#biomes_client.md)
 - [blocks.json]
     - "format_version": "1.19.30", 
 - [sounds.json]
