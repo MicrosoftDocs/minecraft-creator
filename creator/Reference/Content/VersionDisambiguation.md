@@ -28,7 +28,7 @@ To see all the files in each add-on pack, take a look at the [Comprehensive Pack
 
 ## Versions in a Behavior Pack
 
-Here is the introduction to [behavior packs](../..Documents/BehaviorPack.md).
+Here is the introduction to [behavior packs](../../Documents/BehaviorPack.md).
 
 - [animation_controllers](AnimationsReference/Examples/AnimationController.md)
     - `<entity_name>`
@@ -132,7 +132,7 @@ Here is the introduction to [resource packs](../../Documents/ResourcePack.md).
     - `<entity_render_controllers>`.json'
     "format_version": "1.8.0"
     - default.render_controllers.json
-- [biomes_client.json](FogsReference/Examples/FogsIntroduction.md#biomes_client.md)
+- [biomes_client.json](FogsReference/Examples/FogsIntroduction.md)
     - `version "format_version"`
 - [blocks.json]
     - `"format_version": "1.19.30"` 
@@ -224,5 +224,5 @@ This can be useful for continuing to support an older version of an entity, when
 
 ## Script Module Version
 
-This isn't used in vanilla Minecraft, but I would be remiss if I did not include a link to the article about [Script Module Versioning](../Documents/ScriptVersioning.md).
+This isn't used in vanilla Minecraft, but I would be remiss if I did not include a link to the article about [Script Module Versioning](../../Documents/ScriptVersioning.md).
 
