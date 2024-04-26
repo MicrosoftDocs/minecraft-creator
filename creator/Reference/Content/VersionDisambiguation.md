@@ -15,20 +15,17 @@ Here's a handy table of the terms
 
 | Term    | Example Value | Description |
 |--------------|--------|------------|
-| `base_game_version` | 1.20.80 | Essentially, `base_game_version` is used to choose how vanilla elements should behave in a world. |
-| `format_version` in **manifest.json** | 2 |  |
-| `format_version` in **entity.json** | 1.17.30  | Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it. |
-| `format_version` in **controller.render.name** | 1.8.0 |  |
-| `min_engine_version` | 1, 16, 0 | [Link to the definition in Client Entity Documentation Introduction](EntityReference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md#min_engine_version) |
-| `version` | 1, 0, 0 |  |
+| `base_game_version` | "1.20.80" | Essentially, `base_game_version` is used to choose how vanilla elements should behave in a world. The `base_game_version` indicates that when a world with `base_game_version` `"1.20.80"` runs, it expects to see all of the vanilla gameplay elements (mobs, items, blocks) as they existed in the `"1.20.80"` release. This includes both the existence of those elements as well as their behavior. |
+| `format_version` in **manifest.json** | 2 | Pack manifest.json files don't have normal format_versions like other files do. New ones just have a format_version of 2. If the `format_version` is `0` or not specified, then **pack_manifest.json** will be backed up as **pack_manifest.json.old** and a new **manifest.json** with "format_version" 1 will be created. |
+| `format_version` in **entity.json** | "1.19.30"  | This is a format number at the top of all JSON files which represents the JSON data contract of that particular file. This number looks like a game release version number, but is not. This number is mostly unrelated to the game build or release number, the number matching the version of the game where this format was first introduced but other than that the tie shouldn't have effects on the game. It is used by the file loading code to allow for accurate loading and parsing of JSON files as the data stored in those files can grow or change over time. |
+| `format_version` in **controller.render.name** | "1.8.0" | Files made in older formats will still work in newer versions of the game, but only if the format version is set correctly. Incorrect format versions are a *frequent* source of errors. |
+| `min_engine_version` | [1, 16, 0] | When present, players can set the minimm version needed to allow the JSON to be parsed. The version in the definition is compared to the engine version for which the top resource pack was built. |
+| `version` | [0, 0, 1] | This is the version of the Scripting API that a behavior pack is authored against. It's also inside of the **manifest.json** for the pack, but is different from `min_engine_version`. It tells the scripting system which API bindings to use for any script code in the behavior pack. |
 
-I'm not aware of many places where `format_version` doesn't imply the first version of Minecraft this feature is available in, except for **manifest.json**, where `format_version` is 2 because ... it's different.
 
-I'm going to start by finding everwhere there is an iteration of the word 'version' in each of the different Add-On packs.
+The following sections contain the names of files in add-on packs that have version settings inside them.
 
-In each file, I'm going to delete anything that doesn't pertain to something to do with a version to build a collection of what files contain things that are versioned.
-
-Here is a link to the [Comprehensive Pack Contents](../../Documents/ComprehensivePackContents.md) article.
+To see all the files in each add-on pack, take a look at the [Comprehensive Pack Contents](../../Documents/ComprehensivePackContents.md) article.
 
 ## Versions in a Behavior Pack
 
@@ -51,7 +48,7 @@ Here is the introduction to [behavior packs](../..Documents/BehaviorPack.md).
             "format_version": "1.19.50"
 - [entities]()
     - `<entity_name>`.json
-         "format_version": "1.16.21",
+         "format_version": "1.19.30",
 - [features](FeaturesReference/Examples/FeaturesIntroduction.md)
     - `<feature>`.json
          "format_version": "1.13.0"
