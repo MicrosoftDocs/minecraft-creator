@@ -8,10 +8,9 @@ ms.service: minecraft-bedrock-edition
 
 # Version Disambiguation
 
-I keep seeing it over and over again in add-on pack JSON files... `format_version` and `version` ... and what about `min_engine_version`?
-Have you seen `base_game_version`? Why are there so many and how are they different?
+Different add-on pack JSON files have different versions of things. Have you er wondered about the difference between `format_version` and `version`? What about `min_engine_version` or `base_game_version`? 
 
-Here's a handy table of the terms 
+Why are there so many and how are they different?
 
 | Term    | Example Value | Description |
 |--------------|--------|------------|
