@@ -474,6 +474,8 @@
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
       - name: Raw Message JSON
         href: Reference/Content/RawMessageJSON.md
+      - name: Version Disambiguation
+        href: Reference/Content/VersionDisambiguation.md
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
