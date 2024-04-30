@@ -32,7 +32,6 @@ To create the model and texture, we're going to use [Blockbench](https://blockbe
 >[!IMPORTANT]
 >Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering. Users should use at their own discretion.
 
-
 ### Setting Up the Model
 
 When you first open Blockbench, you'll see a list of available model formats. Select **Bedrock Model**. You'll see a dialog about the basic settings for the project.
@@ -105,14 +104,14 @@ In this example, we'll be using the *look at* animation. This animation will rot
 Also, the entity will need a *look at* component in its behavior file. These are the looking components from the cow. You can play around with the numbers if you like.
 
 ```json
-            "minecraft:behavior.look_at_player": {
-                "priority": 7,
-                "look_distance": 6,
-                "probability": 0.02
-            },
-            "minecraft:behavior.random_look_around": {
-                "priority": 9
-            }
+  "minecraft:behavior.look_at_player": {
+    "priority": 7,
+    "look_distance": 6,
+    "probability": 0.02
+  },
+  "minecraft:behavior.random_look_around": {
+    "priority": 9
+  }
 ```
 
 Now that the behavior is set up, we'll head to the client entity file. Make sure that the format version for this file is set to 1.10.0 or higher for this to work.
@@ -120,17 +119,17 @@ Now that the behavior is set up, we'll head to the client entity file. Make sure
 First, let's link the animation. This is done in the animations section in the description tag of the entity. The second part here (`animation.common.look_at_target`) is the **global identifier** of the animation. This name is defined in the animation file and is valid anywhere in this pack or any other pack. The first part (`look_at_target`) is the **short name**. This is how we reference the animation within the entity file, and it's only valid in the scope of this entity.
 
 ```json
-            "animations": {
-                "look_at_target": "animation.common.look_at_target"
-            }
+  "animations": {
+    "look_at_target": "animation.common.look_at_target"
+  }
 ```
 
 Now, we need to play the animation. For simple animations that are always active while the entity exists, this is as simple as listing the short name in the scripts/animate array in the client entity file.
 
 ```json
-            "scripts": {
-                "animate": ["look_at_target"]
-            }
+  "scripts": {
+    "animate": ["look_at_target"]
+  }
 ```
 
 If you now test the robot in-game, you'll see that it will turn its head and look around.
@@ -154,16 +153,16 @@ Finally, press **Ctrl + S** to save the model and **animation**. Save the animat
 Now reference and play the animation in the client entity file as we've done with the *look at* animation. But now we'll only play the sway animation under the condition that the robot isn't on ground. This will look something like this:
 
 ```json
-            "animations": {
-                "look_at_target": "animation.common.look_at_target",
-                "sway": "animation.robot.sway"
-            },
-            "scripts": {
-                "animate": [
-                    "look_at_target",
-                    {"sway":"!query.is_on_ground"}
-                ]
-            }
+  "animations": {
+      "look_at_target": "animation.common.look_at_target",
+      "sway": "animation.robot.sway"
+  },
+  "scripts": {
+    "animate": [
+      "look_at_target",
+      {"sway":"!query.is_on_ground"}
+    ]
+  }
 ```
 
 If you now spawn a robot and push it down an edge, the animation will play. But it will only play once.
@@ -182,10 +181,10 @@ To set up the animation controller, create a new folder in the resource pack cal
 
 ```json
 {
-    "format_version": "1.10.0",
-    "animation_controllers": {
-        "controller.animation.robot.ground": {}
-    }
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.robot.ground": {}
+  }
 }
 ```
 
@@ -195,18 +194,18 @@ The only job of this state is to transition to the swaying state once the entity
 
 ```json
 {
-    "format_version": "1.10.0",
+  "format_version": "1.10.0",
     "animation_controllers": {
-        "controller.animation.robot.ground": {
-            "states": {
-                "default": {
-                    "transitions":[
-                        {"swaying": "!query.is_on_ground"}
-                    ]
-                }
-            }
+      "controller.animation.robot.ground": {
+        "states": {
+          "default": {
+            "transitions":[
+               {"swaying": "!query.is_on_ground"}
+            ]
+         }
         }
     }
+  }
 }
 ```
 
@@ -214,43 +213,43 @@ Now, we'll add the swaying state. This state will play the swaying animation and
 
 ```json
 {
-    "format_version": "1.10.0",
-    "animation_controllers": {
-        "controller.animation.robot.ground": {
-            "states": {
-                "default": {
-                    "transitions":[
-                        {"swaying": "!query.is_on_ground"}
-                    ]
-                },
-                "swaying": {
-                    "animations":[
-                        "sway"
-                    ],
-                    "transitions":[
-                        {"default": "query.all_animations_finished && query.is_on_ground"}
-                    ]
-                }
-            }
+  "format_version": "1.10.0",
+  "animation_controllers": {
+      "controller.animation.robot.ground": {
+        "states": {
+          "default": {
+             "transitions":[
+                {"swaying": "!query.is_on_ground"}
+              ]
+          },
+          "swaying": {
+            "animations":[
+              "sway"
+            ],
+            "transitions":[
+              {"default": "query.all_animations_finished && query.is_on_ground"}
+            ]
+          }
         }
-    }
+      }
+  }
 }
 ```
 
 Now we need to link the animation controller to our entity. Animation controllers can be linked the same way as animations in the client entity file. The controller is linked in the animations section and played in scripts.
 
 ```json
-            "animations": {
-                "look_at_target": "animation.common.look_at_target",
-                "sway": "animation.robot.sway",
-                "ground": "controller.animation.robot.ground"
-            },
-            "scripts": {
-                "animate": [
-                    "look_at_target",
-                    "ground"
-                ]
-            }
+  "animations": {
+    "look_at_target": "animation.common.look_at_target",
+    "sway": "animation.robot.sway",
+    "ground": "controller.animation.robot.ground"
+  },
+  "scripts": {
+    "animate": [
+      "look_at_target",
+      "ground"
+    ]
+  }
 ```
 
 If you test this in-game, the animation now works more than once. But, depending on the length of your animation, you might notice that if the robot loses the ground two times with a short interval, the second time it won't play the animation. That's because the first animation hasn't finished yet, so the controller hasn't been reset to the default state.
@@ -262,15 +261,15 @@ To prevent this, we can use the option `blend_transition`, which allows us to sm
 Ultimately, which solution is best depends on the use case. In this example, the animation fades out smoothly once the robot lands on the ground again.
 
 ```json
-                "swaying": {
-                    "animations":[
-                        "sway"
-                    ],
-                    "transitions":[
-                        {"default": "query.is_on_ground"}
-                    ],
-                    "blend_transition":0.5
-                }
+  "swaying": {
+    "animations":[
+      "sway"
+    ],
+    "transitions":[
+      {"default": "query.is_on_ground"}
+    ],
+    "blend_transition":0.5
+  }
 ```
 
 ## What's Next?
