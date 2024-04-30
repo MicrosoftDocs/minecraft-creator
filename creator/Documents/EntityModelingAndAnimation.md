@@ -181,10 +181,10 @@ To set up the animation controller, create a new folder in the resource pack cal
 
 ```json
 {
-    "format_version": "1.10.0",
-    "animation_controllers": {
-        "controller.animation.robot.ground": {}
-    }
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.robot.ground": {}
+  }
 }
 ```
 
