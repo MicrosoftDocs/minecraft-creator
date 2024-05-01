@@ -78,6 +78,7 @@ Type: *number*
 - [addImage](#addimage)
 - [addNumber](#addnumber)
 - [addString](#addstring)
+- [addTable](#addtable)
 - [addText](#addtext)
 - [addVector3](#addvector3)
 - [collapse](#collapse)
@@ -208,6 +209,22 @@ Adds a string item to the pane
 - **options**: *IPropertyItemOptions*
 
 **Returns** *IPropertyItem<T, Prop>*
+
+### **addTable**
+`
+addTable(options: IPropertyItemOptionsTable): ITablePropertyItem<{
+        EMPTY: undefined;
+    }, 'EMPTY'>
+`
+
+Adds a table to the pane.
+
+#### **Parameters**
+- **options**: *IPropertyItemOptionsTable*
+
+**Returns** *ITablePropertyItem<{
+        EMPTY: undefined;
+    }, 'EMPTY'>*
 
 ### **addText**
 `

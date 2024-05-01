@@ -878,6 +878,8 @@
       href: minecraft/server/Vector2.md
     - name: Vector3
       href: minecraft/server/Vector3.md
+    - name: VectorXZ
+      href: minecraft/server/VectorXZ.md
     - name: WorldSoundOptions
       href: minecraft/server/WorldSoundOptions.md
   - name: minecraft/server-editor
@@ -1078,6 +1080,8 @@
       href: minecraft/server-editor/IPropertyItemOptionsNumber.md
     - name: IPropertyItemOptionsSubPane
       href: minecraft/server-editor/IPropertyItemOptionsSubPane.md
+    - name: IPropertyItemOptionsTable
+      href: minecraft/server-editor/IPropertyItemOptionsTable.md
     - name: IPropertyItemOptionsText
       href: minecraft/server-editor/IPropertyItemOptionsText.md
     - name: IPropertyItemOptionsVector3
@@ -1086,6 +1090,8 @@
       href: minecraft/server-editor/IPropertyPane.md
     - name: IPropertyPaneOptions
       href: minecraft/server-editor/IPropertyPaneOptions.md
+    - name: IPropertyTableCellItem
+      href: minecraft/server-editor/IPropertyTableCellItem.md
     - name: IRegisterExtensionOptionalParameters
       href: minecraft/server-editor/IRegisterExtensionOptionalParameters.md
     - name: ISimpleTool

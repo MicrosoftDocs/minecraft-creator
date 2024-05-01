@@ -78,7 +78,10 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`containsBlock`](Dimension.md#containsblock)*
 - Added function *[`fillBlocks`](Dimension.md#fillblocks)*
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
+- Added function *[`getBlockAbove`](Dimension.md#getblockabove)*
+- Added function *[`getBlockBelow`](Dimension.md#getblockbelow)*
 - Added function *[`getBlocks`](Dimension.md#getblocks)*
+- Added function *[`getTopmostBlock`](Dimension.md#gettopmostblock)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
 - Added function *[`playSound`](Dimension.md#playsound)*
 - Added function *[`setBlockPermutation`](Dimension.md#setblockpermutation)*

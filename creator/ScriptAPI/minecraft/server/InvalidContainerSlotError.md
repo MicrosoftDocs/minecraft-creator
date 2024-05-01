@@ -10,3 +10,5 @@ description: Contents of the .InvalidContainerSlotError class.
 
 ## Extends
 - *Error*
+
+The container slot is invalid. This can occur when the owning container is destroyed or unloaded.
