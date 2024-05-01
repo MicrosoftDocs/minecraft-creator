@@ -46,7 +46,8 @@ In this section, you will create a folder called **My_BEHAVIOR_Pack**. Well, act
 1. Open the **development_behavior_packs** folder.
 1. Inside the development_behavior_packs folder, create a new folder and name it **My_BEHAVIOR_Pack**.
 1. Open the **My_BEHAVIOR_Pack** folder.
-    :::image type="content" source="Media/BehaviorPack/my_behavior_pack.png" alt-text="Image of My_BEHAVIOR_Pack folder located in the com.mojang development_behavior_packs folder":::
+
+    ![Image of My_BEHAVIOR_Pack folder located in the com.mojang development_behavior_packs folder](Media/BehaviorPack/my_behavior_pack.png)
 
 ### Create the manifest file
 
@@ -56,11 +57,13 @@ To load a behavior pack into Minecraft, you will need to create a manifest file.
 - **dependencies** - Creates a link between behavior packs and resource packs to add custom textures and visuals to Minecraft.
 
 > [!NOTE]
-> To learn more about how a manifest.json file works, see the the Addons Reference [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) documentation.
+> To learn more about how a manifest.json file works, see the Add-ons Reference [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) documentation.
 
 1. Create a new document in your My_BEHAVIOR_Pack folder and name it **manifest.json**.
-    1. You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable File Name Extensions under the View tab.
-    :::image type="content" source="Media/BehaviorPack/manifest_fileBP.png" alt-text="Image of the manifest.json file located within the My_BEHAVIOR_Pack folder":::
+1. You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable File Name Extensions under the View tab.
+   
+    ![Image of the manifest.json file located within the My_BEHAVIOR_Pack folder](Media/BehaviorPack/manifest_fileBP.png)
+
 1. Double-click the **manifest.json** file to open it in a text editor.
 1. Copy and paste the following code into your file.
 
@@ -94,7 +97,7 @@ To load a behavior pack into Minecraft, you will need to create a manifest file.
 
 ### Enter UUIDs
 
-Similar to the resource pack manifest file, you will need to generate two different UUIDs for the header and module sections of your manifest file. You can get UUIDs from an online generator such as https://www.uuidgenerator.net/.
+Similar to the resource pack manifest file, you will need to generate two different 'Universally Unique Identifiers (UUIDs)' for the header and module sections of your manifest file. You can get UUIDs from an online generator such as https://www.uuidgenerator.net/.
 
 ![Image of UUIDGenerator.net home screen with a custom UUID generated](Media/BehaviorPack/UUID.png)
 
@@ -124,7 +127,7 @@ Every entity's behaviors are defined in its JSON file that lives inside the code
 1. Create a text file in the **entities** folder and name it **cow.json**.
 1. Copy and paste the following code into your **cow.json** file. After you save the file, you're ready to go!
 
->[!Note]
+> [!NOTE]
 > This is the entire edited cow.json file. It's big because cows do a lot!
 
 ```json

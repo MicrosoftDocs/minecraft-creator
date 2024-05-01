@@ -21,6 +21,8 @@ Damage caused by a falling anvil.
 Damage caused from a non-Entity explosion. For example, an exploding bed.
 ### **campfire**
 `campfire = "campfire"`
+
+Damage caused by Campfires.
 ### **charging**
 `charging = "charging"`
 
@@ -103,12 +105,20 @@ Damage caused by a Piston.
 Damage caused by a projectile.
 ### **ramAttack**
 `ramAttack = "ramAttack"`
+
+Damage caused by Goat ramming.
 ### **selfDestruct**
 `selfDestruct = "selfDestruct"`
+
+Damage caused by the /kill command.
 ### **sonicBoom**
 `sonicBoom = "sonicBoom"`
+
+Damage caused by the Warden's Sonic Boom attack.
 ### **soulCampfire**
 `soulCampfire = "soulCampfire"`
+
+Damage caused by a Soul Campfire.
 ### **stalactite**
 `stalactite = "stalactite"`
 

@@ -41,6 +41,12 @@ Type: *string*
 - [findClosestBiome](#findclosestbiome)
 ::: moniker-end
 - [getBlock](#getblock)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getBlockAbove](#getblockabove)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getBlockBelow](#getblockbelow)
+::: moniker-end
 - [getBlockFromRay](#getblockfromray)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getBlocks](#getblocks)
@@ -49,6 +55,9 @@ Type: *string*
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
 - [getPlayers](#getplayers)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getTopmostBlock](#gettopmostblock)
+::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
 ::: moniker-end
@@ -227,6 +236,50 @@ Returns a block instance at the given location.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **getBlockAbove**
+`
+getBlockAbove(location: Vector3, options?: BlockRaycastOptions): Block | undefined
+`
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+- **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
+
+**Returns** [*Block*](Block.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getBlockBelow**
+`
+getBlockBelow(location: Vector3, options?: BlockRaycastOptions): Block | undefined
+`
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+- **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
+
+**Returns** [*Block*](Block.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+::: moniker-end
+
 ### **getBlockFromRay**
 `
 getBlockFromRay(location: Vector3, direction: Vector3, options?: BlockRaycastOptions): BlockRaycastHit | undefined
@@ -397,6 +450,28 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 > This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
+### **getTopmostBlock**
+`
+getTopmostBlock(locationXZ: VectorXZ, minHeight?: number): Block | undefined
+`
+
+#### **Parameters**
+- **locationXZ**: [*VectorXZ*](VectorXZ.md)
+- **minHeight**?: *number* = `null`
+
+**Returns** [*Block*](Block.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getWeather**
 `
 getWeather(): WeatherType
@@ -532,9 +607,15 @@ Runs a particular command asynchronously from the context of the broader dimensi
 setBlockPermutation(location: Vector3, permutation: BlockPermutation): void
 `
 
+Sets a block in the world using a BlockPermutation. BlockPermutations are blocks with a particular state.
+
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
+  
+  The location within the dimension to set the block.
 - **permutation**: [*BlockPermutation*](BlockPermutation.md)
+  
+  The block permutation to set.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -554,9 +635,15 @@ setBlockPermutation(location: Vector3, permutation: BlockPermutation): void
 setBlockType(location: Vector3, blockType: BlockType | string): void
 `
 
+Sets a block at a given location within the dimension.
+
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
+  
+  The location within the dimension to set the block.
 - **blockType**: [*BlockType*](BlockType.md) | *string*
+  
+  The type of block to set. This can be either a string identifier or a BlockType. The default block permutation is used.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

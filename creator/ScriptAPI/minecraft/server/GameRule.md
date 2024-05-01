@@ -12,6 +12,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Game rules. These values can also be controlled via the /gamerule command.
+
 ## Constants
 ### **CommandBlockOutput**
 `CommandBlockOutput = "commandBlockOutput"`
@@ -159,3 +161,5 @@ The block radius from world spawn that a player is allowed to spawn in. Does not
 Affects whether TNT blocks can be lit.
 ### **TntExplosionDropDecay**
 `TntExplosionDropDecay = "tntExplosionDropDecay"`
+
+Controls whether blocks randomly drop loot or all blocks drop loot when destroyed by an explosion. Defaults to false.

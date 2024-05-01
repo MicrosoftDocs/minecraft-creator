@@ -8,12 +8,22 @@ description: Contents of the .StructureRotation enumeration.
 ---
 # StructureRotation Enumeration
 
+Enum describing a structure's placement rotation.
+
 ## Constants
 ### **None**
 `None = "None"`
+
+No rotation.
 ### **Rotate180**
 `Rotate180 = "Rotate180"`
+
+180 degree rotation.
 ### **Rotate270**
 `Rotate270 = "Rotate270"`
+
+270 degree rotation.
 ### **Rotate90**
 `Rotate90 = "Rotate90"`
+
+90 degree rotation.

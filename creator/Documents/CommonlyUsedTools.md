@@ -70,10 +70,13 @@ bridge. is a light-weight, dedicated editor for Minecraft Add-Ons that makes it 
 
 bridge. is [open source](https://github.com/bridge-core/editor) and freely available to all Add-On creators on desktop and mobile platforms.
 
-
 ### [Snowstorm](https://jannisx11.github.io/snowstorm/)
 
 Snowstorm is a small application for Bedrock Edition created by the developer of Blockbench that can be used to create custom particle effects that are usable in-game.
+
+### [NPC DialogueDesigner](https://jannisx11.github.io/dialogue-designer/)
+
+DialogueDesigner is a Web application for Bedrock Edition created by the developer of Blockbench and Snowstorm that can be used to create NPC dialogues, as shown in this handy tutorial: [NPC DialogueDesigner](NPCDialogueDesigner.md).
 
 ## Creating Skins and Resource Packs
 

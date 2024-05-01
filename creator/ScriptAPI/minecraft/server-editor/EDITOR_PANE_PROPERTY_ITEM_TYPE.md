@@ -29,6 +29,8 @@ Type of item that can be added to the property pane
 `String = editorUI:String`
 ### **SubPane**
 `SubPane = editorUI:SubPane`
+### **Table**
+`Table = editorUI:Table`
 ### **Text**
 `Text = editorUI:Text`
 ### **Vec3**

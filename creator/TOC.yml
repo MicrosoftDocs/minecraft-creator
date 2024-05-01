@@ -220,6 +220,8 @@
           href: Documents/CreateNPCs.md
         - name: NPC Dialogue Command
           href: Documents/NPCDialogue.md
+        - name: NPC DialogueDesigner
+          href: Documents/NPCDialogueDesigner.md
         - name: Introduction to Loot Tables
           href: Documents/IntroductionToLootTables.md
         - name: Loot and Trade Table Functions
@@ -293,7 +295,7 @@
             - name: Chunker - World Settings
               href: Documents/ChunkerWorldSettings.md
             - name: Chunker - The Nether
-              href: Documents/ChunkerTheNether.md        
+              href: Documents/ChunkerTheNether.md
     - name: Reference Documentation
       items:
       - name: Commands
@@ -473,7 +475,9 @@
           - name: Molang Concepts
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
       - name: Raw Message JSON
-        href: Reference/Content/RawMessageJson.md
+        href: Reference/Content/RawMessageJSON.md
+      - name: Version Disambiguation
+        href: Reference/Content/VersionDisambiguation.md
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
