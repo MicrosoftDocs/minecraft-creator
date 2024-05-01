@@ -31,16 +31,23 @@ If you are creating the NPC from scratch, make sure to include the `"minecraft:n
 
 You can also use the NPC entity that is included with Minecraft and comes with a list of preset skins. You can use it by searching for the "NPC Spawn Egg" in the creative inventory, and using that spawn egg.
 
-## Creating a dialogue
+## Creating a Dialogue
 
-1. Open the DialogueDesigner web app in your web browser by navigating to [jannisx11.github.io/dialogue-designer](https://jannisx11.github.io/dialogue-designer/).
+Open the DialogueDesigner web app in your web browser by navigating to [jannisx11.github.io/dialogue-designer](https://jannisx11.github.io/dialogue-designer/).
+
+![NPCDD Home or Start page](/creator/Documents/Media/NPCDialogueDesigner/NPCDD_home.png)
+
 On the start screen, press **New Dialogue** to create a new project. This will bring you into the workspace.
 
-1. On the left side of the screen, you can see the sidebar. This is where you can manage your project and your different scenes.
+![NPCDD workspace](/creator/Documents/Media/NPCDialogueDesigner/NPCDD_workspace.png)
 
-1. In the sidebar, under File Name, enter the name of your dialogue file. You should use snake case here (each letter is lower-case, instead of spaces between words we use underscore characters). Let's call it `castle_guard`.
+On the left side of the screen, you can see the sidebar. This is where you can manage your project and your different scenes.
 
-1. Right below, we can enter the common prefix of all scenes in the project. This is usually the project name, plus an additional underscore at the end: `castle_guard_`.
+In the sidebar, under File Name, enter the name of your dialogue file. You should use snake case here (each letter is lower-case, instead of spaces between words we use underscore characters). Let's call it `castle_guard`.
+
+![NPCDD castle_guard naming example](/creator/Documents/Media/NPCDialogueDesigner/NPCDD_castle_guard.png)
+
+Right below, we can enter the common prefix of all scenes in the project. This is usually the project name, plus an additional underscore at the end: `castle_guard_`.
 
 ### Scenes
 
@@ -68,8 +75,6 @@ Let's also create a second page, named `directions`, that looks like this:
 
 ![Directions page](Media/NPCDialogueDesigner/directions.png)
 
-Media/BehaviorPack/manifest_UUID_dependency.png
-
 ### Linking scenes
 
 We can now go back to the entry scene, select the "Directions" button, and change the navigation option to `directions`.
@@ -77,7 +82,6 @@ This will tell the button to open the "directions" scene when clicked.
 
 Use the mode selector and switch to Preview mode to test this. Clicking the button should now navigate to the Directions scene.
 Clicking the "Goodbye!" button will close the dialog. That is the default behavior for buttons.
-
 
 ### Commands
 
@@ -109,7 +113,7 @@ You have now successfully created and implemented an NPC dialogue!
 
 ## Advanced features
 
-For more experienced users, DialogueDesigner offers some advanced features to support all features that the dialogue format provides.
+For more experienced users, DialogueDesigner offers some advanced features to support all capabilities that the dialogue format provides.
 
 ### Formatting
 
