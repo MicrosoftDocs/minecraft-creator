@@ -26,6 +26,7 @@ The [Minecraft Entity Wizard](MinecraftEntityWizard.md) can be used to make this
 ## Set-up
 
 Before getting started with the dialogue, we should set up our NPC entity.
+
 If you are using the Entity Wizard, proceed by creating an entity with the "NPC" behavior preset.
 If you are creating the NPC from scratch, make sure to include the `"minecraft:npc"` component and a type family called `"npc"`.
 
@@ -35,17 +36,17 @@ You can also use the NPC entity that is included with Minecraft and comes with a
 
 Open the DialogueDesigner web app in your web browser by navigating to [jannisx11.github.io/dialogue-designer](https://jannisx11.github.io/dialogue-designer/).
 
-![NPCDD Home or Start page](/creator/Documents/Media/NPCDialogueDesigner/NPCDD_home.png)
+![NPCDD Home or Start page](Media/NPCDialogueDesigner/NPCDD_home.png)
 
 On the start screen, press **New Dialogue** to create a new project. This will bring you into the workspace.
 
-![NPCDD workspace](/creator/Documents/Media/NPCDialogueDesigner/NPCDD_workspace.png)
+![NPCDD workspace](Media/NPCDialogueDesigner/NPCDD_workspace.png)
 
 On the left side of the screen, you can see the sidebar. This is where you can manage your project and your different scenes.
 
 In the sidebar, under File Name, enter the name of your dialogue file. You should use snake case here (each letter is lower-case, instead of spaces between words we use underscore characters). Let's call it `castle_guard`.
 
-![NPCDD castle_guard naming example](/creator/Documents/Media/NPCDialogueDesigner/NPCDD_castle_guard.png)
+![NPCDD castle_guard naming example](Media/NPCDialogueDesigner/NPCDD_castle_guard.png)
 
 Right below, we can enter the common prefix of all scenes in the project. This is usually the project name, plus an additional underscore at the end: `castle_guard_`.
 
@@ -169,8 +170,6 @@ Another powerful way to customize your text is to use JSON Rawtext. This allows 
 
 To edit raw JSON, select a text field, and set the text type selector to "Raw JSON". This will open a pop-up, in which you can edit the raw JSON.
 
-When you are done, press the **Confirm** button. If there are JSON syntax errors, a red error message will show up and prevent you from saving your changes.
+When you are done, press the **Confirm** button. If there are JSON syntax errors, a red error message will show up and prevent you from saving your changes. Fix any JSON errors to proceed.
 
-Fix any JSON errors to proceed.
-
-You can learn more about the rawtext format here:  [Raw Message JSON](../../creator/Reference/Content/RawMessageJson.md)().
+You can learn more about the rawtext format here: [Raw Message JSON](../../creator/Reference/Content/RawMessageJson.md).
