@@ -1,27 +1,29 @@
 ---
 author: JannisX11
 ms.author: mikeam
-title: Create NPC Dialogue with DialogueDesigner
+title: Create NPC Dialogues with DialogueDesigner
 description: "This tutorial shows how to create NPC entities with dialogue windows, using the DialogueDesigner tool."
 ms.service: minecraft-bedrock-edition
 ---
 
-# Create NPC Dialogue with DialogueDesigner
+# Create NPC Dialogues with DialogueDesigner
 
-This tutorial shows how to create NPC entities with dialogue windows, using the DialogueDesigner tool.
+This tutorial shows how to create NPC entities with dialogue windows, using the community [DialogueDesigner](https://jannisx11.github.io/dialogue-designer/) tool (jannisx11.github.io/dialogue-designer).
+
 NPC dialogues are a great way to add stories to your custom map. They can be used for anything from a simple text to provide information to the player, to complex multi page conversations with different reply options to choose from.
 
 ### Requirements
 
 Before learning how to create NPC dialogues, it is recommended that you understand the basics of creating resource and behavior packs.
 
-An NPC entity is required to use the dialogue. For simple applications, the built-in Minecraft NPC entity can be used, it comes with a list of texture presets for a lot of situations. But for custom designs, it is required to create a new entity.
-The [Minecraft Entity Wizard](MinecraftEntityWizard.md) can be used to make this easier.
-
 - [Introduction to Behavior Packs](BehaviorPack.md)
 - [Introduction to Resource Packs](ResourcePack.md)
 - [NPC Dialogue Command](NPCDialogue.md)
 - [Creating New Entity Types](IntroductionToAddEntity.md)
+
+An NPC entity is required to use the dialogue. For simple applications, the built-in Minecraft NPC entity can be used and it comes with a list of texture presets for a lot of situations. But for custom designs, it is required to create a new entity.
+
+The [Minecraft Entity Wizard](MinecraftEntityWizard.md) can be used to make this easier.
 
 ## Set-up
 
