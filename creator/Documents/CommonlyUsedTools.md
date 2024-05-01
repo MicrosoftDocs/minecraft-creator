@@ -76,7 +76,7 @@ Snowstorm is a small application for Bedrock Edition created by the developer of
 
 ### [NPC DialogueDesigner](https://jannisx11.github.io/dialogue-designer/)
 
-DialogueDesigner is a Web application for Bedrock Edition created by the developer of Blockbench and Snowstorm that can be used to create NPC dialogues, as shown in this handy tutorial: [NPC DialogueDesigner](creator/Documents/NPCDialogueDesigner.md).
+DialogueDesigner is a Web application for Bedrock Edition created by the developer of Blockbench and Snowstorm that can be used to create NPC dialogues, as shown in this handy tutorial: [NPC DialogueDesigner](NPCDialogueDesigner.md).
 
 ## Creating Skins and Resource Packs
 
