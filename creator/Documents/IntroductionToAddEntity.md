@@ -341,10 +341,10 @@ You can render multiple geometries on one entity by using multiple render contro
 Unlike geometry, materials is written as an array of objects. The purpose being that we can assign each bone a separate material. Each object in the array can have one key-value pair. The key selects a set of bones. An asterisk is used as a wildcard. This means that all bones, no matter the name, will have the default material assigned. Note that materials are assigned in order, meaning that materials further down in the list can overwrite previous materials.
 
 ```json
-        "materials": [
-            { "*": "Material.default" },
-            { "*_arm": "Material.transparent" }
-        ],
+  "materials": [
+    { "*": "Material.default" },
+    { "*_arm": "Material.transparent" }
+  ],
 ```
 
 In this example, we first apply the default material to all bones. Then, we overwrite the material with the transparent material on all bones that end in `_arm`. That way, all arm bones would support transparency.
@@ -360,16 +360,17 @@ When working with multiple resources of one type, it can be useful to use an arr
 We can define an array for the robot like this:
 
 ```json
-        "controller.render.robot": {
-            "arrays": {
-                "textures": {
-                    "Array.variant":[
-                        "Texture.default",
-                        "Texture.variant_b",
-                        "Texture.variant_c"
-                    ]
-                }
-            },
+  "controller.render.robot": {
+    "arrays": {
+      "textures": {
+        "Array.variant":[
+          "Texture.default",
+          "Texture.variant_b",
+          "Texture.variant_c"
+        ]
+      }
+    }
+  }
 ```
 
 In the arrays section we can define arrays for each of the three categories: `textures`, `materials`, and `geometries`. Inside the category, you can define arrays using `Array.<array name>` as the name. Each line inside the array links one texture that's defined in the client entity file.
@@ -443,14 +444,14 @@ Inside the folder, create a new text file called `robot.json`. The content of th
 
 ```json
 {
-    "format_version": "1.8.0",
-    "minecraft:spawn_rules": {
-        "description": {
-            "identifier": "sample:robot",
-            "population_control": "animal"
-        },
-        "conditions": []
-    }
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "sample:robot",
+      "population_control": "animal"
+    },
+  "conditions": []
+  }
 }
 ```
 
@@ -520,23 +521,23 @@ Since robots don't like water, we'll add a mechanic to damage robots in water or
 
 ```json
 {
-    "format_version": "1.10.0",
-    "animation_controllers": {
-        "controller.animation.robot.in_water": {
-            "states": {
-                "default": {
-                    "transitions": [
-                        {"in_water": "query.is_in_water_or_rain"}
-                    ]
-                },
-                "in_water": {
-                    "transitions": [
-                       {"default": "query.is_in_water_or_rain == 0"}
-                    ]
-                }
-            }
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.robot.in_water": {
+      "states": {
+        "default": {
+          "transitions": [
+            {"in_water": "query.is_in_water_or_rain"}
+          ]
+        },
+        "in_water": {
+          "transitions": [
+            {"default": "query.is_in_water_or_rain == 0"}
+          ]
         }
-    }
+      }
+     }
+  }
 }
 ```
 
@@ -568,20 +569,20 @@ For that reason, it's important to start commands with a slash in behavior anima
 As with animations in resource packs, we need to link all of our animations and animation controllers in the description tag of our entity, which will look like this:
 
 ```json
-        "description": {
-            "identifier": "sample:robot",
-            "is_spawnable": true,
-            "is_summonable": true,
-            "animations": {
-                "poison": "animation.robot.poison",
-                "in_water": "controller.animation.robot.in_water"
-            },
-            "scripts": {
-                "animate": [
-                    "in_water"
-                ]
-            }
-        },
+  "description": {
+    "identifier": "sample:robot",
+     "is_spawnable": true,
+     "is_summonable": true,
+     "animations": {
+        "poison": "animation.robot.poison",
+        "in_water": "controller.animation.robot.in_water"
+      },
+      "scripts": {
+        "animate": [
+          "in_water"
+        ]
+      }
+  }
 ```
 
 The animations section lists all animations and animation controllers that the entity uses and gives them a short name. In the scripts/animate section, we list the animations that should always run. We want the controller to detect the state to always run, but not the poison effect.
@@ -589,25 +590,27 @@ The animations section lists all animations and animation controllers that the e
 Now, we need to go back to the animation controller and add the poison effect. We'll also add a little regeneration mechanic along with a sound effect, so the robot won't die as easily.
 
 ```json
-            "states": {
-                "default": {
-                    "transitions": [
-                        {"in_water": "query.is_in_water_or_rain"}
-                    ]
-                },
-                "in_water": {
-                    "animations": [
-                        "poison"
-                    ],
-                    "on_exit": [
-                        "/effect @s regeneration 2 4 true",
-                        "/playsound random.fizz @a[r=16]"
-                    ],
-                    "transitions": [
-                        {"default": "query.is_in_water_or_rain == 0"}
-                    ]
-                }
-            }
+  "states": {
+    "default": {
+      "transitions": [
+         {"in_water": "query.is_in_water_or_rain"}
+      ]
+    },
+    "in_water": {
+      "animations": [
+        "poison"
+      ],
+      "on_exit": [
+        "/effect @s regeneration 2 4 true",
+        "/playsound random.fizz @a[r=16]"
+      ],
+          "transitions": [
+        {
+          "default": "query.is_in_water_or_rain == 0"
+        }
+      ]
+    }
+  }
 ```
 
 In the `animations` array, we list all the animations that should be running in this state, which is just `poison` in our case.

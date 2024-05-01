@@ -35,7 +35,7 @@ In Minecraft, all raw text is entered on one line. This is how to put that messa
 
 `/tellraw @a {"rawtext":[{"text":"Hello World"}]}`
 
-![Tellraw message saying Hello World!](../Media/RawMessageJson/hello_world.png)
+![Tellraw message saying Hello World!](../Media/RawMessageJSON/hello_world.png)
 
 ## Text
 
@@ -63,16 +63,16 @@ And this is how it would fit into the tellraw command, using the "all players" s
 
 `/tellraw @a {"rawtext":[{"text":"Hello §cWorld!"}]}`
 
-![Example of tellraw message with the word World in red](../Media/RawMessageJson/hello_world_red.png)
+![Example of tellraw message with the word World in red](../Media/RawMessageJSON/hello_world_red.png)
 
 If you want to reset the formatting, use `§r`.
 This will remove the red formatting from the exclamation point:
 
 `{"rawtext":[{"text":"Hello §cWorld§r!"}]}`
 
-![Tellraw message with red exclamation point reset to white](../Media/RawMessageJson/hello_world_reset.png)
+![Tellraw message with red exclamation point reset to white](../Media/RawMessageJSON/hello_world_reset.png)
 
-### Formatting Codes §
+### Formatting Codes
 
 |Format code |Unicode escape sequence |Color or Effect |
 |:----------:|-----------|-----------|
@@ -165,7 +165,7 @@ Here is that same command, reformatted for clarity:
 }
 ```
 
-![Tellraw message with user's own name selected and displayed](../Media/RawMessageJson/hello_alex.png)
+![Tellraw message with user's own name selected and displayed](../Media/RawMessageJSON/hello_alex.png)
 
 `selector` can also display the entity names found with the selector:
 
@@ -183,7 +183,7 @@ Example:
 
 `/tellraw @s {"rawtext": [{"text": "Your score is "}, {"score":{"name": "@s","objective": "objective_name"}}]}`
 
-![Tellraw command using selector and scoreboard data to tell player your score](../Media/RawMessageJson/your_score_is_100.png)
+![Tellraw command using selector and scoreboard data to tell player your score](../Media/RawMessageJSON/your_score_is_100.png)
 
 You can find more information about scoreboards in the [Scoreboard Introduction](../../documents/scoreboardintroduction.md).
 
@@ -193,4 +193,4 @@ If you want to change the color of a player name, when you add their name to the
 
 `/scoreboard players add §bBlueName objective 7`
 
-![Scoreboard display with player named BlueName's name colored blue](../Media/RawMessageJson/scoreboard_bluename.png)
+![Scoreboard display with player named BlueName's name colored blue](../Media/RawMessageJSON/scoreboard_bluename.png)

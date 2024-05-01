@@ -41,7 +41,7 @@ To update your existing Minecraft world to reflect the new world height values, 
 1. A pop-up called **World Update** will appear, prompting you to update your world.
     :::image type="content" source="Media/WorldHeightChange/UpdateWorldPopUp.png" alt-text="Image alerting Creators about updating to the new world generation and a prompt to make a backup copy of the world":::
 
-Included in the the pop up is a checkbox that will also create a back up of your world that will still be tied to a version of Minecraft before 1.18.
+Included in the pop up is a checkbox that will also create a back up of your world that will still be tied to a version of Minecraft before 1.18.
 
 5. Select **Update and Play**
 

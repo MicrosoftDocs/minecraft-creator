@@ -434,6 +434,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [TitleDisplayOptions](TitleDisplayOptions.md)
 - [Vector2](Vector2.md)
 - [Vector3](Vector3.md)
+- [VectorXZ](VectorXZ.md)
 - [WorldSoundOptions](WorldSoundOptions.md)
 
 ## Errors

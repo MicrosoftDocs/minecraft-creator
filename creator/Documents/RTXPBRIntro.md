@@ -126,14 +126,15 @@ For the Texture Set to work properly, you will need to define a JSON file to loa
 1. Double-click on `iron_block.texture_set.json` to edit the contents.
 1. Copy the following example.
 
-#### iron_block.texture_set.json
+**iron_block.texture_set.json**
 
 ```json
 {
   "format_version": "1.16.100",
   "minecraft:texture_set": {
     "color": "iron_block",
-    "metalness_emissive_roughness": "iron_block_mer",
+    "metalness_emissive_roughness": "iron_block_mer"
+  }
 }
 ```
 
