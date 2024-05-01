@@ -220,8 +220,6 @@
           href: Documents/CreateNPCs.md
         - name: NPC Dialogue Command
           href: Documents/NPCDialogue.md
-        - name: NPC DialogueDesigner
-          href: Documents/NPCDialogueDesigner.md
         - name: Introduction to Loot Tables
           href: Documents/IntroductionToLootTables.md
         - name: Loot and Trade Table Functions
@@ -295,7 +293,7 @@
             - name: Chunker - World Settings
               href: Documents/ChunkerWorldSettings.md
             - name: Chunker - The Nether
-              href: Documents/ChunkerTheNether.md
+              href: Documents/ChunkerTheNether.md        
     - name: Reference Documentation
       items:
       - name: Commands

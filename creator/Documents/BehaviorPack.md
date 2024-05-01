@@ -127,7 +127,7 @@ Every entity's behaviors are defined in its JSON file that lives inside the code
 1. Create a text file in the **entities** folder and name it **cow.json**.
 1. Copy and paste the following code into your **cow.json** file. After you save the file, you're ready to go!
 
-> [!NOTE]
+>[!Note]
 > This is the entire edited cow.json file. It's big because cows do a lot!
 
 ```json
