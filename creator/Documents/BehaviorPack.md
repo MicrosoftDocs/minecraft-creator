@@ -109,8 +109,6 @@ Similar to the resource pack manifest file, you will need to generate two differ
 
 There is a third section in the behavior pack's manifest.json file called 'dependencies' that is used to create a link between a resource pack and a behavior pack. This link is created when the UUID located in the header section of the resource pack's manifest.json file is the same as the UUID in the dependencies section of the behavior pack's manifest.json file. You do not need to have a resource pack to use a behavior pack, and you do not need to have a behavior pack to use a resource pack. If you do have both, you can use this solution to link them together so that when you load a behavior pack into a world, it automatically loads and activates the linked resource pack.
 
-![Image of resource pack manifest.json header UUID duplicated in behavior pack dependencies section](Media/BehaviorPack/manifest_UUID_dependency.png)
-
 1. Open the **manifest.json** file located in the **My_RESOURCE_Pack** folder in the **development_resource_packs** folder.
 1. Copy the UUID from the **header** section of the resource pack **manifest.json** file.
 1. Go to the **manifest.json** file located in the ***My_BEHAVIOR_Pack** folder in the **development_behavior_packs** folder.
