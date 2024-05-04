@@ -1,5 +1,5 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:entity_sensor
 description: "A reference document detailing the 'entity_sensor' entity component"
@@ -26,39 +26,59 @@ ms.service: minecraft-bedrock-edition
 ## Example
 
 ```json
-"minecraft:entity_sensor":{
-    "maximum_count": -1,
-    "minimum_count": 1,
-    "cooldown": -1,
-    "require_all": false,
-    "range": 10,
-    "event_filters": {"test": "has_trade_supply"},
-    "event": "minecraft:offer_trade"
+"minecraft:entity_sensor": {
+  "subsensors": [
+      {
+        "range": [10, 10],
+        "cooldown": -1,
+        "require_all": false,
+        "event_filters": {
+          "test": "has_trade_supply"
+        },
+        "event": "minecraft:offer_trade"
+      }
+  ]
 }
 ```
 
 ## Vanilla entities examples
 
-### pufferfish
-
 ```json
 "minecraft:entity_sensor": {
-          "sensor_range": 2.5,
-          "relative_range": false,
-          "minimum_count": 1,
-          "event_filters": {
-            "any_of": [
-              { "test": "is_family", "subject": "other", "value": "mob" },
-              { "all_of": [
-                { "test": "is_family", "subject": "other", "value": "player" },
-                { "none_of": 
-                  { "test": "has_ability", "subject": "other", "value": "instabuild" } 
-                }
-              ]}
-            ]
-          },
-          "event": "minecraft:start_half_puff"
-        }
+  "subsensors": [
+      {
+        "range": 2.5,
+        "relative_range": false,
+        "minimum_count": 1,
+         "event_filters": {
+             "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "mob"
+                 },
+                 {
+                "all_of": [
+                   {
+                     "test": "is_family",
+                     "subject": "other",
+                      "value": "player"
+                   },
+                   {
+                     "none_of": {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                  }
+                ]
+             }
+         ]
+       },
+     "event": "minecraft:start_half_puff"
+     }
+  ]
+}
 ```
 
 ## Vanilla entities using `minecraft:entity_sensor`
