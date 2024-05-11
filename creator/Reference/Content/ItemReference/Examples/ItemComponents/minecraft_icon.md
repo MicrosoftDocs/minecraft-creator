@@ -20,6 +20,8 @@ ms.service: minecraft-bedrock-edition
 
 ```json
 "minecraft:icon":{
-    "textures": "oak_slab"
+    "textures": {
+        "default": "oak_slab"
+    }
 }
 ```
