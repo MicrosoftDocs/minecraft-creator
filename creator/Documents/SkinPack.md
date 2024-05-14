@@ -18,7 +18,7 @@ These are the usual ones found in most add-on packs:
 And these are the files specific to a skin pack:
 
 - <skin_graphic>.png - The image that will be mapped into the player. There are some of tools out there to help with this, but for now, we are just going to use a basic graphic-editing program like Paint.net.
-- skins.json - JSON file containing the matadata about the skins in your skin pack
+- skins.json - JSON file containing the metadata about the skins in your skin pack
 
 If you put all these files together and make sure everything is complete and correct, then you will have created your own custom skin.
 
@@ -34,7 +34,7 @@ In this tutorial, you will learn:
 
 ## Sample Skin Pack
 
-There is a [sample skin pack](https://github.com/microsoft/minecraft-samples/tree/main/skin_pack_sample) available at the Microsoft samples Github. It may be used to understand the structure of skin packs and to check your work after the tutorial.
+There is a [sample skin pack](https://github.com/microsoft/minecraft-samples/tree/main/skin_pack_sample) available at the Microsoft samples GitHub. It may be used to understand the structure of skin packs and to check your work after the tutorial.
 
 ### Requirements
 
@@ -77,7 +77,7 @@ Start by creating a folder and naming it something like **My_SKIN_Pack**. Then, 
 
 1. Create a folder and name it **texts**.
 
-2. Create a text file in there and name it for your preferred languge, such as **en_US.lang**.
+2. Create a text file in there and name it for your preferred language, such as **en_US.lang**.
 
 3. Paste in this text:
 
@@ -129,7 +129,7 @@ You should see messages stating that the import has started and that the skin pa
 
 4. If you get messages asking you to make a choice between Character Creator or Classic Skin, choose **Classic Skin**.
 
-5. Choose the little, green **Featured Skins** button with the clotheshanger on it, select your skin, then click **Equip**.
+5. Choose the little, green **Featured Skins** button with the clothes hanger on it, select your skin, then click **Equip**.
 
 ![Image of the custom skin on the Featured Skins page.](Media/SkinPack/featured_skins.png)
 
@@ -150,4 +150,4 @@ If Minecraft doesn't recognize your skin, then go to the main Minecraft Settings
 Now that you know more about how skin packs work, maybe you should learn more about how the other add-on packs work.
 
 > [!div class="nextstepaction"]
-> [Comprehenvie Add-on Pack Contents](ComprehensivePackContents.md)
+> [Comprehensive Add-on Pack Contents](ComprehensivePackContents.md)
