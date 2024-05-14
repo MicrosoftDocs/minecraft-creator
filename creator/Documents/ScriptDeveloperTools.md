@@ -96,7 +96,7 @@ To configure the connection, add a `.vscode` subfolder to your behavior pack fol
       "request": "attach",
       "name": "Wait for Minecraft Debug Connections",
       "mode": "listen",
-      "localRoot": "${workspaceFolder}/",
+      "localRoot": "${workspaceFolder}/scripts/",
       "port": 19144
     }
   ]
@@ -160,7 +160,7 @@ At the root of the behavior pack you want to debug, add a `.vscode` subfolder. A
       "type": "minecraft-js",
       "request": "attach",
       "name": "Attach to Minecraft Bedrock Dedicated Server",
-      "localRoot": "${workspaceFolder}/",
+      "localRoot": "${workspaceFolder}/scripts/",
       "port": 19144
     }
   ]
