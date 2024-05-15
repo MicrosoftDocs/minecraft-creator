@@ -111,7 +111,7 @@ Resets the current value of this attribute to the minimum defined value.
 setCurrentValue(value: number): boolean
 `
 
-Sets the current value of this attribute.
+Sets the current value of this attribute. The provided value will be clamped to the range of this attribute.
 
 #### **Parameters**
 - **value**: *number*
