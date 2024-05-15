@@ -321,6 +321,7 @@ Hay Block
 Nautilus Shell
 - `minecraft:wooden_shovel`
 Wooden Shovel
+- `minecraft:music_disc_creator_music_box`
 - `minecraft:stonecutter_block`
 Stonecutter Block
 - `minecraft:exposed_copper`
@@ -395,8 +396,6 @@ Pumpkin Seeds
 [Education Edition] Helium (He)
 - `minecraft:melon_seeds`
 Melon Seeds
-- `minecraft:spawn_egg`
-Spawn Egg
 - `minecraft:raw_iron`
 Raw Iron
 - `minecraft:iron_axe`
@@ -516,6 +515,7 @@ Warped Wart Block
 - `minecraft:vine`
 Vine
 - `minecraft:spruce_fence`
+- `minecraft:petrified_oak_slab`
 - `minecraft:golden_sword`
 Golden Sword
 - `minecraft:lit_deepslate_redstone_ore`
@@ -870,8 +870,6 @@ Cake
 - `minecraft:snout_armor_trim_smithing_template`
 - `minecraft:purple_dye`
 Purple Dye
-- `minecraft:dye`
-Dye
 - `minecraft:music_disc_13`
 Music Disc 13
 - `minecraft:cyan_dye`
@@ -1969,9 +1967,9 @@ Item Dark Oak Door
 - `minecraft:magenta_stained_glass_pane`
 - `minecraft:light_block`
 Light Block
-- `minecraft:light_blue_stained_glass_pane`
 - `minecraft:end_crystal`
 End Crystal
+- `minecraft:light_blue_stained_glass_pane`
 - `minecraft:hard_purple_stained_glass_pane`
 - `minecraft:pink_stained_glass_pane`
 - `minecraft:cyan_stained_glass_pane`
@@ -2015,6 +2013,8 @@ Bell
 - `minecraft:stripped_birch_wood`
 - `minecraft:dark_oak_wood`
 - `minecraft:stripped_dark_oak_wood`
+- `minecraft:music_disc_creator`
+- `minecraft:music_disc_precipice`
 - `minecraft:hard_white_stained_glass`
 - `minecraft:packed_ice`
 Packed Ice
@@ -2189,8 +2189,12 @@ White Candle Cake
 Respawn Anchor
 - `minecraft:crying_obsidian`
 Crying Obsidian
+- `minecraft:dye`
+Dye
 - `minecraft:banner_pattern`
 Banner Pattern
+- `minecraft:spawn_egg`
+Spawn Egg
 - `minecraft:glow_berries`
 Glow Berries
 - `minecraft:birch_standing_sign`

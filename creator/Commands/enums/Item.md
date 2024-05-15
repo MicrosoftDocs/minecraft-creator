@@ -2236,6 +2236,8 @@ Brown Mushroom Block
 Brown Mushroom Block
 - `minecraft:gray_concrete_powder`
 - `gray_concrete_powder`
+- `minecraft:petrified_oak_slab`
+- `petrified_oak_slab`
 - `minecraft:gray_concrete`
 - `gray_concrete`
 - `minecraft:pink_candle`
@@ -3729,6 +3731,12 @@ Music Disc Pigstep
 Music Disc Pigstep
 - `minecraft:music_disc_relic`
 - `music_disc_relic`
+- `minecraft:music_disc_creator`
+- `music_disc_creator`
+- `minecraft:music_disc_creator_music_box`
+- `music_disc_creator_music_box`
+- `minecraft:music_disc_precipice`
+- `music_disc_precipice`
 - `minecraft:disc_fragment_5`
 Disc Fragment 5
 - `disc_fragment_5`
@@ -4312,6 +4320,7 @@ Real Double Stone Slab 2
 Real Double Stone Slab 3
 - `record_cat`
 Record Cat
+- `record_creator`
 - `record_13`
 Record 13
 - `fish`
@@ -4320,6 +4329,8 @@ Fish
 Clownfish
 - `muttoncooked`
 Cooked Mutton
+- `record_creator_music_box`
+- `record_precipice`
 - `appleenchanted`
 Enchanted Apple
 - `fireworkscharge`
@@ -4382,10 +4393,6 @@ Dye
 Banner Pattern
 - `spawn_egg`
 Spawn Egg
-- `minecraft:spawn_egg`
-Spawn Egg
-- `minecraft:dye`
-Dye
 - `minecraft:suspicious_stew`
 Suspicious Stew
 - `suspicious_stew`
@@ -4398,8 +4405,12 @@ Filled Map
 Jigsaw
 - `jigsaw`
 Jigsaw
+- `minecraft:dye`
+Dye
 - `minecraft:banner_pattern`
 Banner Pattern
+- `minecraft:spawn_egg`
+Spawn Egg
 
 ## References
 The following commands reference this enum:

@@ -15,7 +15,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
-Allows this entity to be leashed and defines the conditions and events for this entity when is leashed.
+Allows the entity to be leashed. Defines the conditions and events for when an entity is leashed.
 
 ## Properties
 
@@ -38,12 +38,8 @@ Type: *number*
 leash(leashHolder: Entity): void
 `
 
-Leashes this entity to another entity.
-
 #### **Parameters**
 - **leashHolder**: [*Entity*](Entity.md)
-  
-  The entity to leash this entity to.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

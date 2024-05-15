@@ -2602,6 +2602,8 @@ Brown Mushroom Block
 Brown Mushroom Block
 - `minecraft:gray_concrete_powder`
 - `gray_concrete_powder`
+- `minecraft:petrified_oak_slab`
+- `petrified_oak_slab`
 - `minecraft:gray_concrete`
 - `gray_concrete`
 - `minecraft:pink_candle`
