@@ -1,5 +1,5 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Getting Started With Minecraft Add-Ons
 description: "A tutorial covering how to start developing Add-Ons for Minecraft: Bedrock Edition"
@@ -110,7 +110,7 @@ There are three folders called **behavior_packs**, **resource_packs**, and **ski
 
 ### Development Packs
 
-You will use the **development_resource_packs** and **development_behavior_packs** folders for the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials. The **development_skin_packs** folder is used for developing skin packs. Development pack folders are updated each time Minecraft is launched so you can quickly load and test the changes you made to their contents.
+You will use the **development_resource_packs** and **development_behavior_packs** folders for the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials. Development pack folders are updated each time Minecraft is launched so you can quickly load and test the changes you made to their contents.
 
 ### minecraftWorlds
 
