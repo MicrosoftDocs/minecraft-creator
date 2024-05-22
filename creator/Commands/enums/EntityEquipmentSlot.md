@@ -22,6 +22,8 @@ Armor slow on chest
 Armor slot on legs
 - `slot.armor.feet`
 Armor slot on feet
+- `slot.armor.body`
+Armor slot for the whole body
 - `slot.hotbar`
 Hotbar slot
 - `slot.inventory`

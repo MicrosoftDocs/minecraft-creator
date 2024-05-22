@@ -42,6 +42,3 @@ Removes a callback from being called when an entity makes a melee attack on anot
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.

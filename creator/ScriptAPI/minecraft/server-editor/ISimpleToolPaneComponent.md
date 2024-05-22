@@ -15,30 +15,42 @@ The Simple Tool pane component represents the main window (or sub-window) for an
 ### **childPaneList**
 `read-only childPaneList: string[];`
 
+Get a list of the unique ID's of all of the child panes
+
 Type: *string[]*
 
 ### **id**
 `read-only id: string;`
+
+Get the unique ID of the pane
 
 Type: *string*
 
 ### **isVisible**
 `read-only isVisible: boolean;`
 
+Check the visibility of the pane
+
 Type: *boolean*
 
 ### **pane**
 `read-only pane: IPropertyPane;`
+
+Get a reference to actual property pane implementation that was constructed by the tool. This reference is used to construct the UI components that are displayed in the pane.
 
 Type: *IPropertyPane*
 
 ### **session**
 `read-only session: IPlayerUISession;`
 
+Get a reference to the IPlayerUISession. This is the primary interface to the editor UI and all of the editor extension controls
+
 Type: *IPlayerUISession*
 
 ### **simpleTool**
 `read-only simpleTool: ISimpleTool;`
+
+Get a reference to the parent tool.
 
 Type: *ISimpleTool*
 
@@ -53,6 +65,8 @@ Type: *ISimpleTool*
 findPane(idString: string): ISimpleToolPaneComponent | undefined
 `
 
+Find a pane reference by unique ID
+
 #### **Parameters**
 - **idString**: *string*
 
@@ -63,6 +77,8 @@ findPane(idString: string): ISimpleToolPaneComponent | undefined
 hidePane(): void
 `
 
+Hide the pane. Although the parent pane is used to execute the visibility request, the hidePane function will NOT affect the visibility of any sibling panes -- so it is possible to hide all of the child panes of a parent using this function
+
 **Returns** *void*
 
 ### **reconstructPane**
@@ -70,11 +86,15 @@ hidePane(): void
 reconstructPane(): void
 `
 
+This causes the reconstruction of the pane (and the child panes) as if the tool was being constructed for the first time. This is unfortunately necessary until such time that all of our UI components are able to communicate dynamically with their client counterparts. Certain controls require a full teardown and reconstruction to properly update their state. This is undergoing code changes and should become unnecessary in the future.
+
 **Returns** *void*
 
 ### **showPane**
 `
 showPane(): void
 `
+
+Show the pane. Note, if this is a sub-pane, then this function will ask the parent for permission to show, and may result in the visibility of any sibling panes to change as a result (depending on the `mutually exclusive visibility` flag)
 
 **Returns** *void*

@@ -11,6 +11,10 @@ description: Contents of the .EquipmentSlot enumeration.
 The equipment slot of the mob. This includes armor, offhand and mainhand slots.
 
 ## Constants
+### **Body**
+`Body = "Body"`
+
+The body slot. This slot is used to hold armor for non-humanoid mobs.
 ### **Chest**
 `Chest = "Chest"`
 

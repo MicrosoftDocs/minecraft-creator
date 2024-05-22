@@ -167,6 +167,9 @@ Type: *string*
 - [setCanPlaceOn](#setcanplaceon)
 - [setDynamicProperty](#setdynamicproperty)
 - [setLore](#setlore)
+::: moniker range="=minecraft-bedrock-experimental"
+- [createPotion](#createpotion)
+::: moniker-end
 
 ### **constructor**
 `
@@ -178,7 +181,7 @@ Creates a new instance of a stack of items for use in the world.
 #### **Parameters**
 - **itemType**: [*ItemType*](ItemType.md) | *string*
   
-  Type of item to create. See the @minecraft/vanilla-data.MinecraftItemTypes enumeration for a list of standard item types in Minecraft experiences.
+  Type of item to create. See the {@link @minecraft/vanilla-data.MinecraftItemTypes} enumeration for a list of standard item types in Minecraft experiences.
 - **amount**?: *number* = `1`
   
   Number of items to place in the stack, between 1-255. The provided value will be clamped to the item's maximum stack size. Note that certain items can only have one item in the stack.
@@ -533,6 +536,29 @@ function giveAwesomeSword(player: Player) {
     inventory.container.setItem(0, diamondAwesomeSword);
 }
 ```
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **createPotion**
+`
+static createPotion(options: PotionOptions): ItemStack
+`
+
+Helper function for creating potion items.
+
+#### **Parameters**
+- **options**: [*PotionOptions*](PotionOptions.md)
+
+**Returns** [*ItemStack*](ItemStack.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+::: moniker-end
 
 #### Examples
 ##### ***givePlayerIronFireSword.ts***

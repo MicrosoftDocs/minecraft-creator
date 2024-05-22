@@ -25,21 +25,6 @@ Type: [*Dimension*](Dimension.md)
 > [!WARNING]
 > This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
-### **fallDistance**
-`read-only fallDistance: number;`
-
-The distance an entity has fallen. The value is reset when the entity is teleported. The value is always 1 when gliding with Elytra.
-
-Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This property can throw errors when used.
-::: moniker-end
-
 ### **id**
 `read-only id: string;`
 
@@ -126,18 +111,6 @@ Type: *boolean*
 
 > [!WARNING]
 > This property can throw errors when used.
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **lifetimeState**
-`read-only lifetimeState: EntityLifetimeState;`
-
-Whether the entity reference that you have is valid or not.  For example, an entity may be unloaded if it moves into a chunk that is unloaded, but may be reactivated if the chunk it is within gets reloaded.
-
-Type: [*EntityLifetimeState*](EntityLifetimeState.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **location**
 `read-only location: Vector3;`

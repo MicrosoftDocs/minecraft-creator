@@ -9,7 +9,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [1.12.0-beta](#1120-beta)
+- [1.13.0-beta](#1130-beta)
 - [1.10.0](#1100)
 - [1.9.0](#190)
 - [1.8.0](#180)
@@ -22,7 +22,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.12.0-beta
+## 1.13.0-beta
 #### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
@@ -91,11 +91,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EnchantmentType`](EnchantmentType.md)*
 #### Added *[`EnchantmentTypes`](EnchantmentTypes.md)*
 #### Changed *[`Entity`](Entity.md)*
-- Added property *[`fallDistance`](Entity.md#falldistance)*
-- Added property *[`lifetimeState`](Entity.md#lifetimestate)*
 - Added property *[`target`](Entity.md#target)*
-- Changed function *[`addEffect`](Entity.md#addeffect)*
-  - Changed return type from *void* (throws exceptions) to [*Effect*](Effect.md) (throws exceptions)
 - Changed function *[`getComponent`](Entity.md#getcomponent)*
   - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
@@ -144,7 +140,9 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ItemComponentUseEvent`](ItemComponentUseEvent.md)*
 #### Added *[`ItemComponentUseOnEvent`](ItemComponentUseOnEvent.md)*
 #### Added *[`ItemEnchantableComponent`](ItemEnchantableComponent.md)*
+#### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
+- Added function *[`createPotion`](ItemStack.md#createpotion)*
 - Changed function *[`getComponent`](ItemStack.md#getcomponent)*
   - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
@@ -175,6 +173,10 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerIterator`](PlayerIterator.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
+#### Added *[`PotionEffectType`](PotionEffectType.md)*
+#### Added *[`PotionLiquidType`](PotionLiquidType.md)*
+#### Added *[`PotionModifierType`](PotionModifierType.md)*
+#### Added *[`Potions`](Potions.md)*
 #### Changed *[`ScreenDisplay`](ScreenDisplay.md)*
 - Added function *[`getHiddenHudElements`](ScreenDisplay.md#gethiddenhudelements)*
 - Added function *[`hideAllExcept`](ScreenDisplay.md#hideallexcept)*
@@ -232,6 +234,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`BlockVolumeIntersection`](BlockVolumeIntersection.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
+#### Added enum [`CustomComponentNameErrorReason`](CustomComponentNameErrorReason.md)
 #### Added enum [`Difficulty`](Difficulty.md)
 #### Added enum [`EnchantmentSlot`](EnchantmentSlot.md)
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
@@ -257,13 +260,15 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Tameable`
 - Added value `TameMount`
 - Added value `UnderwaterMovement`
-#### Added enum [`EntityLifetimeState`](EntityLifetimeState.md)
+#### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
+- Added value `Body`
 #### Added enum [`GameRule`](GameRule.md)
 #### Added enum [`HudElement`](HudElement.md)
 #### Added enum [`HudVisibility`](HudVisibility.md)
 #### Added enum [`InputPermissionCategory`](InputPermissionCategory.md)
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `Enchantable`
+- Added value `Potion`
 #### Added enum [`PaletteColor`](PaletteColor.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `HudElementsCount`

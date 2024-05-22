@@ -21,13 +21,13 @@ type BlockComponentTypeMap = {
   'minecraft:lavaContainer': BlockLavaContainerComponent;
   'minecraft:piston': BlockPistonComponent;
   'minecraft:potionContainer': BlockPotionContainerComponent;
-  'minecraft:recordPlayer': BlockRecordPlayerComponent;
+  'minecraft:record_player': BlockRecordPlayerComponent;
   'minecraft:sign': BlockSignComponent;
   'minecraft:snowContainer': BlockSnowContainerComponent;
   'minecraft:waterContainer': BlockWaterContainerComponent;
   'piston': BlockPistonComponent;
   'potionContainer': BlockPotionContainerComponent;
-  'recordPlayer': BlockRecordPlayerComponent;
+  'record_player': BlockRecordPlayerComponent;
   'sign': BlockSignComponent;
   'snowContainer': BlockSnowContainerComponent;
   'waterContainer': BlockWaterContainerComponent;

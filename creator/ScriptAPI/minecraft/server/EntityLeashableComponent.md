@@ -19,6 +19,66 @@ Allows the entity to be leashed. Defines the conditions and events for when an e
 
 ## Properties
 
+### **canBeStolen**
+`read-only canBeStolen: boolean;`
+
+Returns true if another entity can 'steal' the leashed entity by attaching their own leash to it.
+
+Type: *boolean*
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **hardDistance**
+`read-only hardDistance: number;`
+
+Distance in blocks at which the leash stiffens, restricting movement.
+
+Type: *number*
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **isLeashed**
+`read-only isLeashed: boolean;`
+
+Returns true if the entity is leashed.
+
+Type: *boolean*
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **leashHolder**
+`read-only leashHolder?: Entity;`
+
+Entity that is holding the leash.
+
+Type: [*Entity*](Entity.md)
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **leashHolderEntityId**
+`read-only leashHolderEntityId?: string;`
+
+Identifier of entity that is holding the leash.
+
+Type: *string*
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **maxDistance**
+`read-only maxDistance: number;`
+
+Distance in blocks at which the leash breaks.
+
+Type: *number*
+
+> [!WARNING]
+> This property can throw errors when used.
+
 ### **softDistance**
 `read-only softDistance: number;`
 
@@ -30,22 +90,28 @@ Type: *number*
 > This property can throw errors when used.
 
 ## Methods
-- [leash](#leash)
+- [leashTo](#leashto)
 - [unleash](#unleash)
 
-### **leash**
+### **leashTo**
 `
-leash(leashHolder: Entity): void
+leashTo(leashHolder: Entity): void
 `
+
+Leashes this entity to another entity.
 
 #### **Parameters**
 - **leashHolder**: [*Entity*](Entity.md)
+  
+  The entity to leash this entity to.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws if the entity to leash to is over the max distance, and if the player is dead or in spectator mode.
 
 ### **unleash**
 `

@@ -12,6 +12,16 @@ Contains a set of events that are available across the scope of the ExtensionCon
 
 ## Properties
 
+### **clipboardChange**
+`read-only clipboardChange: ClipboardChangeAfterEventSignal;`
+
+Type: [*ClipboardChangeAfterEventSignal*](ClipboardChangeAfterEventSignal.md)
+
+### **cursorAttachmentPropertyChange**
+`read-only cursorAttachmentPropertyChange: CursorAttachmentPropertyChangeAfterEventSignal;`
+
+Type: [*CursorAttachmentPropertyChangeAfterEventSignal*](CursorAttachmentPropertyChangeAfterEventSignal.md)
+
 ### **cursorPropertyChange**
 `read-only cursorPropertyChange: CursorPropertyChangeAfterEventSignal;`
 

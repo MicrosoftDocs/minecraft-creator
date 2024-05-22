@@ -33,6 +33,11 @@ Enum representing the cursor control mode
 
 Type: [*CursorControlMode*](CursorControlMode.md)
 
+### **fillColor**
+`fillColor?: minecraftserver.RGBA;`
+
+Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+
 ### **fixedModeDistance**
 `fixedModeDistance?: number;`
 

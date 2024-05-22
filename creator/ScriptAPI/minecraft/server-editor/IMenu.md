@@ -17,6 +17,13 @@ If defined, the menu will show a checked or unchecked checkbox.
 
 Type: *boolean*
 
+### **enabled**
+`enabled: boolean;`
+
+The menu will be in either an enabled or disabled state
+
+Type: *boolean*
+
 ### **id**
 `read-only id: string;`
 

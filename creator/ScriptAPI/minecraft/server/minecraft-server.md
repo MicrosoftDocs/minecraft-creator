@@ -21,7 +21,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```
 
 ## Available Versions
-- `1.12.0-beta`
+- `1.13.0-beta`
 - `1.10.0`
 - `1.9.0`
 - `1.8.0`
@@ -41,6 +41,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockVolumeIntersection](BlockVolumeIntersection.md)
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
 - [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
+- [CustomComponentNameErrorReason](CustomComponentNameErrorReason.md)
 - [Difficulty](Difficulty.md)
 - [Direction](Direction.md)
 - [DisplaySlotId](DisplaySlotId.md)
@@ -50,7 +51,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityComponentTypes](EntityComponentTypes.md)
 - [EntityDamageCause](EntityDamageCause.md)
 - [EntityInitializationCause](EntityInitializationCause.md)
-- [EntityLifetimeState](EntityLifetimeState.md)
 - [EquipmentSlot](EquipmentSlot.md)
 - [FluidType](FluidType.md)
 - [GameMode](GameMode.md)
@@ -266,6 +266,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemDurabilityComponent](ItemDurabilityComponent.md)
 - [ItemEnchantableComponent](ItemEnchantableComponent.md)
 - [ItemFoodComponent](ItemFoodComponent.md)
+- [ItemPotionComponent](ItemPotionComponent.md)
 - [ItemReleaseUseAfterEvent](ItemReleaseUseAfterEvent.md)
 - [ItemReleaseUseAfterEventSignal](ItemReleaseUseAfterEventSignal.md)
 - [ItemStack](ItemStack.md)
@@ -331,6 +332,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerPlaceBlockBeforeEventSignal](PlayerPlaceBlockBeforeEventSignal.md)
 - [PlayerSpawnAfterEvent](PlayerSpawnAfterEvent.md)
 - [PlayerSpawnAfterEventSignal](PlayerSpawnAfterEventSignal.md)
+- [PotionEffectType](PotionEffectType.md)
+- [PotionLiquidType](PotionLiquidType.md)
+- [PotionModifierType](PotionModifierType.md)
+- [Potions](Potions.md)
 - [PressurePlatePopAfterEvent](PressurePlatePopAfterEvent.md)
 - [PressurePlatePopAfterEventSignal](PressurePlatePopAfterEventSignal.md)
 - [PressurePlatePushAfterEvent](PressurePlatePushAfterEvent.md)
@@ -418,6 +423,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [NotEqualsComparison](NotEqualsComparison.md)
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
+- [PotionOptions](PotionOptions.md)
 - [ProjectileShootOptions](ProjectileShootOptions.md)
 - [RangeComparison](RangeComparison.md)
 - [RawMessage](RawMessage.md)
@@ -439,13 +445,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 
 ## Errors
 - [CommandError](CommandError.md)
+- [CustomComponentInvalidRegistryError](CustomComponentInvalidRegistryError.md)
+- [CustomComponentNameError](CustomComponentNameError.md)
 - [EnchantmentLevelOutOfBoundsError](EnchantmentLevelOutOfBoundsError.md)
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
 - [InvalidStructureError](InvalidStructureError.md)
 - [ItemCustomComponentAlreadyRegisteredError](ItemCustomComponentAlreadyRegisteredError.md)
-- [ItemCustomComponentNameError](ItemCustomComponentNameError.md)
 - [ItemCustomComponentReloadNewComponentError](ItemCustomComponentReloadNewComponentError.md)
 - [ItemCustomComponentReloadNewEventError](ItemCustomComponentReloadNewEventError.md)
 - [ItemCustomComponentReloadVersionError](ItemCustomComponentReloadVersionError.md)

@@ -3,11 +3,11 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ItemCustomComponentNameError Class
-description: Contents of the .ItemCustomComponentNameError class.
+title: .CustomComponentNameError Class
+description: Contents of the .CustomComponentNameError class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# ItemCustomComponentNameError Class
+# CustomComponentNameError Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -15,4 +15,9 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - *Error*
 
-Thrown when trying to register an item custom component with an invalid namespace.
+## Properties
+
+### **reason**
+`read-only reason: CustomComponentNameErrorReason;`
+
+Type: [*CustomComponentNameErrorReason*](CustomComponentNameErrorReason.md)

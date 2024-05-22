@@ -27,4 +27,4 @@ registerCustomComponent(name: string, customComponent: BlockCustomComponent): vo
 > [!WARNING]
 > This function can throw errors.
 >
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
+> Throws [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*CustomComponentNameError*](CustomComponentNameError.md), [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*

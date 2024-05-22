@@ -81,9 +81,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [BlockPalette](BlockPalette.md)
 - [BlockPaletteManager](BlockPaletteManager.md)
 - [BrushShapeManager](BrushShapeManager.md)
+- [ClipboardChangeAfterEvent](ClipboardChangeAfterEvent.md)
+- [ClipboardChangeAfterEventSignal](ClipboardChangeAfterEventSignal.md)
 - [ClipboardItem](ClipboardItem.md)
 - [ClipboardManager](ClipboardManager.md)
 - [Cursor](Cursor.md)
+- [CursorAttachmentPropertiesChangeAfterEvent](CursorAttachmentPropertiesChangeAfterEvent.md)
+- [CursorAttachmentPropertyChangeAfterEventSignal](CursorAttachmentPropertyChangeAfterEventSignal.md)
 - [CursorPropertiesChangeAfterEvent](CursorPropertiesChangeAfterEvent.md)
 - [CursorPropertyChangeAfterEventSignal](CursorPropertyChangeAfterEventSignal.md)
 - [CustomWidget](CustomWidget.md)
@@ -122,12 +126,14 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Interfaces
 - [BrushShape](BrushShape.md)
 - [ClipboardWriteOptions](ClipboardWriteOptions.md)
+- [CursorAttachmentProperties](CursorAttachmentProperties.md)
 - [CursorProperties](CursorProperties.md)
 - [CustomWidgetCreateOptions](CustomWidgetCreateOptions.md)
 - [ExtensionOptionalParameters](ExtensionOptionalParameters.md)
 - [LogProperties](LogProperties.md)
 - [PlaytestGameOptions](PlaytestGameOptions.md)
 - [ProjectExportOptions](ProjectExportOptions.md)
+- [SettingsUIElementOptions](SettingsUIElementOptions.md)
 - [WidgetCreateOptions](WidgetCreateOptions.md)
 - [WidgetGroupCreateOptions](WidgetGroupCreateOptions.md)
 - [ActionManager](ActionManager.md)
@@ -200,6 +206,23 @@ Executes an operation over a selection via chunks to allow splitting operation o
 
 #### **Parameters**
 - **selection**: *Selection*
+  
+  the selection to iterator over
+- **operation**: *(blockLocation: Vector3) => void*
+  
+  the operation to apply over each block location
+
+**Returns** *Promise<void>*
+
+### **executeLargeOperationFromIterator**
+`
+executeLargeOperationFromIterator(blockLocationIterator: BlockLocationIterator, operation: (blockLocation: Vector3) => void): Promise<void>
+`
+
+Executes an operation over a BlockLocationIterator via chunks to allow splitting operation over multiple game ticks
+
+#### **Parameters**
+- **blockLocationIterator**: *BlockLocationIterator*
   
   the selection to iterator over
 - **operation**: *(blockLocation: Vector3) => void*

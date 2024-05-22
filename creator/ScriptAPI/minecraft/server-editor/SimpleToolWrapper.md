@@ -15,10 +15,14 @@ A simple class wrapper to inherit in your tool which contains the initialization
 ### **session**
 `read-only session: IPlayerUISession;`
 
+The player UI session that the tool is running in Use this to access the player UI session, or any of the session's components
+
 Type: *IPlayerUISession*
 
 ### **simpleTool**
 `read-only simpleTool: ISimpleTool;`
+
+The simple tool instance that is created and managed by the wrapper Use this to access any of the tools components, or mess with the tools window visibility
 
 Type: *ISimpleTool*
 
@@ -31,6 +35,8 @@ Type: *ISimpleTool*
 setupSimpleTool(session: IPlayerUISession, options: ISimpleToolOptions): void
 `
 
+Setup the simple tool instance with the given options This will create and initialize the simple tool instance
+
 #### **Parameters**
 - **session**: *IPlayerUISession*
 - **options**: *ISimpleToolOptions*
@@ -41,5 +47,7 @@ setupSimpleTool(session: IPlayerUISession, options: ISimpleToolOptions): void
 `
 teardown(): void
 `
+
+Teardown the simple tool instance This will call the teardown function on the simple tool instance This function is automatically invoked by the Editor Extension system when the editor is shutting down
 
 **Returns** *void*

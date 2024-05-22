@@ -18,19 +18,30 @@ monikerRange: "=minecraft-bedrock-experimental"
 Represents a block that can play a record.
 
 ## Methods
-- [clearRecord](#clearrecord)
+- [ejectRecord](#ejectrecord)
+- [getRecord](#getrecord)
 - [isPlaying](#isplaying)
+- [pauseRecord](#pauserecord)
+- [playRecord](#playrecord)
 - [setRecord](#setrecord)
 
-### **clearRecord**
+### **ejectRecord**
 `
-clearRecord(): void
+ejectRecord(): void
 `
-
-Clears the currently playing record of this record-playing block.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getRecord**
+`
+getRecord(): ItemStack | undefined
+`
+
+**Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
 > [!WARNING]
 > This function can throw errors.
@@ -47,15 +58,38 @@ Returns true if the record-playing block is currently playing a record.
 > [!WARNING]
 > This function can throw errors.
 
+### **pauseRecord**
+`
+pauseRecord(): void
+`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **playRecord**
+`
+playRecord(): void
+`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
 ### **setRecord**
 `
-setRecord(recordItemType: ItemType | string): void
+setRecord(recordItemType?: ItemType | string, startPlaying?: boolean): void
 `
 
 Sets and plays a record based on an item type.
 
 #### **Parameters**
-- **recordItemType**: [*ItemType*](ItemType.md) | *string*
+- **recordItemType**?: [*ItemType*](ItemType.md) | *string* = `null`
+- **startPlaying**?: *boolean* = `true`
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -66,6 +100,6 @@ Sets and plays a record based on an item type.
 ## Constants
 
 ### **componentId**
-`static read-only componentId = "minecraft:recordPlayer";`
+`static read-only componentId = "minecraft:record_player";`
 
 Type: *string*
