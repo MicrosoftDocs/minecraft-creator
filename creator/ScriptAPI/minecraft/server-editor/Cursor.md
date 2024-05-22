@@ -43,13 +43,55 @@ Type: *boolean*
 > This property can throw errors when used.
 
 ## Methods
+- [attachClipboardItem](#attachclipboarditem)
+- [clearAttachment](#clearattachment)
+- [getAttachmentProperties](#getattachmentproperties)
 - [getPosition](#getposition)
 - [getProperties](#getproperties)
 - [hide](#hide)
 - [moveBy](#moveby)
 - [resetToDefaultState](#resettodefaultstate)
+- [setAttachmentProperties](#setattachmentproperties)
 - [setProperties](#setproperties)
 - [show](#show)
+
+### **attachClipboardItem**
+`
+attachClipboardItem(item: ClipboardItem): void
+`
+
+#### **Parameters**
+- **item**: [*ClipboardItem*](ClipboardItem.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **clearAttachment**
+`
+clearAttachment(): void
+`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **getAttachmentProperties**
+`
+getAttachmentProperties(): CursorAttachmentProperties
+`
+
+**Returns** [*CursorAttachmentProperties*](CursorAttachmentProperties.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
 
 ### **getPosition**
 `
@@ -86,7 +128,7 @@ Get a property object which represents the current properties of the 3D block cu
 hide(): void
 `
 
-Hide the 3D block cursor from view until the corresponding @minecraft-server-editor.Cursor.show function is called
+Hide the 3D block cursor from view until the corresponding {@link @minecraft-server-editor.Cursor.show} function is called
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -99,7 +141,7 @@ Hide the 3D block cursor from view until the corresponding @minecraft-server-edi
 moveBy(offset: minecraftserver.Vector3): minecraftserver.Vector3
 `
 
-Manually offset the 3D block cursor by given amount.  Depending on the @minecraft-server-editor.CursorProperties.CursorControlMode - this function may have no effect
+Manually offset the 3D block cursor by given amount.  Depending on the {@link @minecraft-server-editor.CursorProperties.CursorControlMode} - this function may have no effect
 
 #### **Parameters**
 - **offset**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
@@ -120,6 +162,20 @@ resetToDefaultState(): void
 `
 
 Reset the 3D block cursor to the system default state
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+
+### **setAttachmentProperties**
+`
+setAttachmentProperties(properties: CursorAttachmentProperties): void
+`
+
+#### **Parameters**
+- **properties**: [*CursorAttachmentProperties*](CursorAttachmentProperties.md)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

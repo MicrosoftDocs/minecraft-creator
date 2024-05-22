@@ -52,6 +52,8 @@ Dark Oak Button
 Deepslate Copper Ore
 - `deepslate_copper_ore`
 Deepslate Copper Ore
+- `minecraft:chiseled_stone_bricks`
+- `chiseled_stone_bricks`
 - `minecraft:nether_brick_stairs`
 Nether Brick Stairs
 - `nether_brick_stairs`
@@ -126,6 +128,8 @@ Waxed Oxidized Cut Copper
 Calcite
 - `calcite`
 Calcite
+- `minecraft:diorite_slab`
+- `diorite_slab`
 - `minecraft:stripped_dark_oak_log`
 Stripped Dark Oak Log
 - `stripped_dark_oak_log`
@@ -296,6 +300,8 @@ Oxidized Cut Copper Stairs
 Oxidized Cut Copper Stairs
 - `minecraft:sandstone_slab`
 - `sandstone_slab`
+- `minecraft:mossy_stone_brick_slab`
+- `mossy_stone_brick_slab`
 - `minecraft:raw_gold_block`
 Raw Gold Block
 - `raw_gold_block`
@@ -374,6 +380,8 @@ Sponge
 Normal Stone Stairs
 - `normal_stone_stairs`
 Normal Stone Stairs
+- `minecraft:end_stone_brick_slab`
+- `end_stone_brick_slab`
 - `minecraft:hardened_clay`
 Hardened Clay
 - `hardened_clay`
@@ -402,10 +410,14 @@ Smoker
 Stone
 - `stone`
 Stone
+- `minecraft:smooth_sandstone_slab`
+- `smooth_sandstone_slab`
 - `minecraft:birch_log`
 - `birch_log`
 - `minecraft:tuff_brick_wall`
 - `tuff_brick_wall`
+- `minecraft:purpur_slab`
+- `purpur_slab`
 - `minecraft:brain_coral`
 - `brain_coral`
 - `minecraft:stripped_spruce_wood`
@@ -438,6 +450,8 @@ Hay Block
 Waxed Weathered Copper
 - `waxed_weathered_copper`
 Waxed Weathered Copper
+- `minecraft:infested_cracked_stone_bricks`
+- `infested_cracked_stone_bricks`
 - `minecraft:waxed_oxidized_cut_copper_slab`
 Waxed Oxidized Cut Copper Slab
 - `waxed_oxidized_cut_copper_slab`
@@ -450,6 +464,8 @@ Waxed Oxidized Cut Copper Slab
 - `polished_tuff_wall`
 - `minecraft:bamboo_stairs`
 - `bamboo_stairs`
+- `minecraft:infested_mossy_stone_bricks`
+- `infested_mossy_stone_bricks`
 - `minecraft:torch`
 Torch
 - `torch`
@@ -470,6 +486,8 @@ Dripstone Block
 Vine
 - `vine`
 Vine
+- `minecraft:red_sandstone_slab`
+- `red_sandstone_slab`
 - `minecraft:cherry_trapdoor`
 - `cherry_trapdoor`
 - `minecraft:blackstone_slab`
@@ -638,6 +656,8 @@ Sandstone Stairs
 Red Mushroom Block
 - `red_mushroom_block`
 Red Mushroom Block
+- `minecraft:cracked_stone_bricks`
+- `cracked_stone_bricks`
 - `minecraft:sculk_catalyst`
 Sculk Catalyst
 - `sculk_catalyst`
@@ -718,10 +738,14 @@ Smithing Table
 - `poppy`
 - `minecraft:tuff_brick_slab`
 - `tuff_brick_slab`
+- `minecraft:mossy_stone_bricks`
+- `mossy_stone_bricks`
 - `minecraft:green_wool`
 - `green_wool`
 - `minecraft:green_carpet`
 - `green_carpet`
+- `minecraft:prismarine_brick_slab`
+- `prismarine_brick_slab`
 - `minecraft:wooden_door`
 Wooden Door
 - `wooden_door`
@@ -804,6 +828,8 @@ Rail
 Blackstone Wall
 - `blackstone_wall`
 Blackstone Wall
+- `minecraft:stone_bricks`
+- `stone_bricks`
 - `minecraft:mossy_cobblestone_stairs`
 Mossy Cobblestone Stairs
 - `mossy_cobblestone_stairs`
@@ -812,10 +838,6 @@ Mossy Cobblestone Stairs
 Detector Rail
 - `detector_rail`
 Detector Rail
-- `minecraft:monster_egg`
-Monster Egg
-- `monster_egg`
-Monster Egg
 - `minecraft:blue_orchid`
 - `blue_orchid`
 - `minecraft:green_stained_glass_pane`
@@ -828,6 +850,8 @@ Polished Granite Stairs
 - `birch_leaves`
 - `minecraft:pink_terracotta`
 - `pink_terracotta`
+- `minecraft:infested_cobblestone`
+- `infested_cobblestone`
 - `minecraft:cracked_deepslate_tiles`
 Cracked Deepslate Tiles
 - `cracked_deepslate_tiles`
@@ -844,6 +868,8 @@ Red Glazed Terracotta
 Dark Oak Fence Gate
 - `dark_oak_fence_gate`
 Dark Oak Fence Gate
+- `minecraft:mossy_cobblestone_slab`
+- `mossy_cobblestone_slab`
 - `minecraft:cobblestone_slab`
 - `cobblestone_slab`
 - `minecraft:crimson_nylium`
@@ -862,6 +888,8 @@ Structure Void
 Polished Blackstone Brick Slab
 - `polished_blackstone_brick_slab`
 Polished Blackstone Brick Slab
+- `minecraft:normal_stone_slab`
+- `normal_stone_slab`
 - `minecraft:spruce_sapling`
 - `spruce_sapling`
 - `minecraft:yellow_terracotta`
@@ -916,6 +944,8 @@ Redstone Ore
 - `green_stained_glass`
 - `minecraft:bubble_coral_block`
 - `bubble_coral_block`
+- `minecraft:infested_chiseled_stone_bricks`
+- `infested_chiseled_stone_bricks`
 - `minecraft:nether_brick_fence`
 Nether Brick Fence
 - `nether_brick_fence`
@@ -936,6 +966,8 @@ Deepslate Tile Slab
 Nether Wart Block
 - `nether_wart_block`
 Nether Wart Block
+- `minecraft:prismarine_slab`
+- `prismarine_slab`
 - `minecraft:cherry_door`
 - `cherry_door`
 - `minecraft:crimson_hyphae`
@@ -1090,6 +1122,8 @@ Smooth Stone
 - `gray_terracotta`
 - `minecraft:oxidized_copper_trapdoor`
 - `oxidized_copper_trapdoor`
+- `minecraft:granite_slab`
+- `granite_slab`
 - `minecraft:white_tulip`
 - `white_tulip`
 - `minecraft:lime_concrete`
@@ -1112,6 +1146,8 @@ Exposed Cut Copper Stairs
 Mangrove Stairs
 - `mangrove_stairs`
 Mangrove Stairs
+- `minecraft:polished_diorite_slab`
+- `polished_diorite_slab`
 - `minecraft:cut_copper_stairs`
 Cut Copper Stairs
 - `cut_copper_stairs`
@@ -1280,6 +1316,8 @@ Cut Copper Slab
 Cut Copper Slab
 - `minecraft:red_stained_glass`
 - `red_stained_glass`
+- `minecraft:infested_stone_bricks`
+- `infested_stone_bricks`
 - `minecraft:acacia_pressure_plate`
 Acacia Pressure Plate
 - `acacia_pressure_plate`
@@ -1364,6 +1402,8 @@ Coal Block
 Warped Fence Gate
 - `warped_fence_gate`
 Warped Fence Gate
+- `minecraft:cut_sandstone_slab`
+- `cut_sandstone_slab`
 - `minecraft:composter`
 Composter
 - `composter`
@@ -1474,18 +1514,6 @@ Campfire
 Campfire
 - `minecraft:light_blue_stained_glass`
 - `light_blue_stained_glass`
-- `minecraft:stone_block_slab2`
-Stone Block Slab 2
-- `stone_block_slab2`
-Stone Block Slab 2
-- `minecraft:stone_block_slab3`
-Stone Block Slab 3
-- `stone_block_slab3`
-Stone Block Slab 3
-- `minecraft:stone_block_slab4`
-Stone Block Slab 4
-- `stone_block_slab4`
-Stone Block Slab 4
 - `minecraft:soul_soil`
 Soul Soil
 - `soul_soil`
@@ -1520,6 +1548,8 @@ Waxed Oxidized Cut Copper Stairs
 - `waxed_weathered_copper_bulb`
 - `minecraft:calibrated_sculk_sensor`
 - `calibrated_sculk_sensor`
+- `minecraft:dark_prismarine_slab`
+- `dark_prismarine_slab`
 - `minecraft:copper_trapdoor`
 - `copper_trapdoor`
 - `minecraft:stripped_acacia_log`
@@ -1644,6 +1674,8 @@ Weathered Cut Copper Slab
 - `fern`
 - `minecraft:torchflower`
 - `torchflower`
+- `minecraft:infested_stone`
+- `infested_stone`
 - `minecraft:end_portal_frame`
 End Portal Frame
 - `end_portal_frame`
@@ -1722,6 +1754,8 @@ Light Gray Candle
 Polished Blackstone Pressure Plate
 - `polished_blackstone_pressure_plate`
 Polished Blackstone Pressure Plate
+- `minecraft:polished_granite_slab`
+- `polished_granite_slab`
 - `minecraft:tuff_brick_stairs`
 - `tuff_brick_stairs`
 - `minecraft:blue_shulker_box`
@@ -1760,6 +1794,8 @@ Deepslate Emerald Ore
 Quartz Bricks
 - `quartz_bricks`
 Quartz Bricks
+- `minecraft:andesite_slab`
+- `andesite_slab`
 - `minecraft:lime_candle`
 Lime Candle
 - `lime_candle`
@@ -1838,6 +1874,8 @@ Brick Stairs
 Brick Stairs
 - `minecraft:weathered_copper_trapdoor`
 - `weathered_copper_trapdoor`
+- `minecraft:smooth_red_sandstone_slab`
+- `smooth_red_sandstone_slab`
 - `minecraft:moss_block`
 Moss Block
 - `moss_block`
@@ -1854,10 +1892,6 @@ Pink Glazed Terracotta
 Waxed Weathered Cut Copper Slab
 - `waxed_weathered_cut_copper_slab`
 Waxed Weathered Cut Copper Slab
-- `minecraft:stonebrick`
-Stonebrick
-- `stonebrick`
-Stonebrick
 - `minecraft:fire_coral_fan`
 - `fire_coral_fan`
 - `minecraft:spruce_trapdoor`
@@ -1872,6 +1906,8 @@ Chain Command Block
 Red Sandstone
 - `red_sandstone`
 Red Sandstone
+- `minecraft:red_nether_brick_slab`
+- `red_nether_brick_slab`
 - `minecraft:exposed_chiseled_copper`
 - `exposed_chiseled_copper`
 - `minecraft:spruce_fence_gate`
@@ -2262,12 +2298,16 @@ Stripped Warped Stem
 Candle
 - `candle`
 Candle
+- `minecraft:polished_andesite_slab`
+- `polished_andesite_slab`
 - `minecraft:pointed_dripstone`
 Pointed Dripstone
 - `pointed_dripstone`
 Pointed Dripstone
 - `minecraft:red_carpet`
 - `red_carpet`
+- `minecraft:cut_red_sandstone_slab`
+- `cut_red_sandstone_slab`
 - `minecraft:deepslate_brick_stairs`
 Deepslate Brick Stairs
 - `deepslate_brick_stairs`
@@ -2336,6 +2376,8 @@ Crimson Roots
 Stonecutter Block
 - `stonecutter_block`
 Stonecutter Block
+- `minecraft:smooth_quartz_slab`
+- `smooth_quartz_slab`
 - `minecraft:yellow_concrete_powder`
 - `yellow_concrete_powder`
 - `minecraft:lime_stained_glass_pane`
@@ -2694,6 +2736,28 @@ Double Plant
 Stone Block Slab
 - `minecraft:stone_block_slab`
 Stone Block Slab
+- `stone_block_slab2`
+Stone Block Slab 2
+- `minecraft:stone_block_slab2`
+Stone Block Slab 2
+- `stone_block_slab3`
+Stone Block Slab 3
+- `minecraft:stone_block_slab3`
+Stone Block Slab 3
+- `stone_block_slab4`
+Stone Block Slab 4
+- `minecraft:stone_block_slab4`
+Stone Block Slab 4
+- `double_stone_block_slab`
+- `minecraft:double_stone_block_slab`
+- `monster_egg`
+Monster Egg
+- `minecraft:monster_egg`
+Monster Egg
+- `stonebrick`
+Stonebrick
+- `minecraft:stonebrick`
+Stonebrick
 - `minecraft:chicken`
 Chicken
 - `chicken`

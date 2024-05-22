@@ -36,8 +36,6 @@ Bee
 Axolotl
 - `axolotl`
 Axolotl
-- `minecraft:breeze`
-- `breeze`
 - `minecraft:pig`
 Pig
 - `pig`
@@ -74,8 +72,6 @@ Villager
 Wandering Trader
 - `wandering_trader`
 Wandering Trader
-- `minecraft:bogged`
-- `bogged`
 - `minecraft:mooshroom`
 Mooshroom
 - `mooshroom`

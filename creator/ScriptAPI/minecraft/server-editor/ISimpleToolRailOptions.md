@@ -15,15 +15,21 @@ The tool rail component allows the tool to register an icon and button (and dyna
 ### **displayAltText**
 `displayAltText: string;`
 
+The text for the tool description
+
 Type: *string*
 
 ### **displayStringId**
 `displayStringId: string;`
 
+The string ID for the tool description if it is in the localization language file.
+
 Type: *string*
 
 ### **icon**
 `icon: string;`
+
+The icon for the tool rail button. This is generally a URL to an image file in the editor extension resource pack e.g. `pack://textures/my-tool-icon.png`
 
 Type: *string*
 
@@ -50,9 +56,13 @@ Type: *(component: ISimpleToolRailComponent) => void*
 ### **tooltipAltText**
 `tooltipAltText: string;`
 
+The tooltip string for the tool rail button. Note: if an activation key binding was added to `ISimpleToolOptions`, then the key binding will be appended to the tooltip string.
+
 Type: *string*
 
 ### **tooltipStringId**
 `tooltipStringId: string;`
+
+The string ID for the tooltip string if it is in the localization language file. Note: if an activation key binding was added to `ISimpleToolOptions`, then the key binding will be appended to the tooltip string.
 
 Type: *string*

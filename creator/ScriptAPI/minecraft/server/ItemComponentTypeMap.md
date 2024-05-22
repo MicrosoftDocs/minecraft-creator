@@ -23,5 +23,7 @@ type ItemComponentTypeMap = {
   'minecraft:durability': ItemDurabilityComponent;
   'minecraft:enchantable': ItemEnchantableComponent;
   'minecraft:food': ItemFoodComponent;
+  'minecraft:potion': ItemPotionComponent;
+  'potion': ItemPotionComponent;
 };
 ```

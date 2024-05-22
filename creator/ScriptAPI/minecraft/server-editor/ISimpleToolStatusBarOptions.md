@@ -15,10 +15,14 @@ A set of options which define the basic properties of a status bar item for a si
 ### **alignment**
 `alignment: EditorStatusBarAlignment;`
 
+The alignment of the status bar item within the parent status bar container
+
 Type: *EditorStatusBarAlignment*
 
 ### **displayAltText**
 `displayAltText: string;`
+
+The text for the status bar item
 
 Type: *string*
 
@@ -45,9 +49,13 @@ Type: *(statusBar: ISimpleToolStatusBarComponent) => void*
 ### **size**
 `size: number;`
 
+The size of the status bar item within the parent status bar container
+
 Type: *number*
 
 ### **visibility**
 `visibility: SimpleToolStatusBarVisibility;`
+
+Determine the status bar visibility based on the existence and visibility of the tool's root property pane
 
 Type: *SimpleToolStatusBarVisibility*
