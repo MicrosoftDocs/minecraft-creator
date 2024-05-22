@@ -15,45 +15,33 @@ description: Contents of the @minecraft/server-editor.SettingsUIElement class.
 
 Type: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
-### **max**
-`read-only max?: number;`
-
-Type: *number*
-
-### **min**
-`read-only min?: number;`
-
-Type: *number*
-
 ### **name**
 `read-only name: string;`
 
 Type: *string*
 
 ### **onChange**
-`read-only onChange: (arg: boolean | number | string | minecraftserver.Vector3) => boolean;`
+`read-only onChange: (arg: boolean | number | string | minecraftserver.Vector3) => void;`
 
-Type: (arg: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)) => *boolean*
+Type: (arg: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)) => *void*
 
 ### **options**
-`read-only options?: string[];`
+`read-only options: SettingsUIElementOptions;`
 
-Type: *string*[]
+Type: [*SettingsUIElementOptions*](SettingsUIElementOptions.md)
 
 ## Methods
 - [constructor](#constructor)
 
 ### **constructor**
 `
-new SettingsUIElement(name: string, initialValue: boolean | number | string | minecraftserver.Vector3, onChange: (arg: boolean | number | string | minecraftserver.Vector3) => boolean, min?: number, max?: number, options?: string[])
+new SettingsUIElement(name: string, initialValue: boolean | number | string | minecraftserver.Vector3, onChange: (arg: boolean | number | string | minecraftserver.Vector3) => void, options?: SettingsUIElementOptions)
 `
 
 #### **Parameters**
 - **name**: *string*
 - **initialValue**: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-- **onChange**: (arg: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)) => *boolean*
-- **min**?: *number* = `null`
-- **max**?: *number* = `null`
-- **options**?: *string*[] = `null`
+- **onChange**: (arg: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)) => *void*
+- **options**?: [*SettingsUIElementOptions*](SettingsUIElementOptions.md) = `null`
 
 **Returns** [*SettingsUIElement*](SettingsUIElement.md)

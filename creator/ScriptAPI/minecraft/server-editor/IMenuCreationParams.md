@@ -26,6 +26,13 @@ Loc ID (resolved on client)
 
 Type: *string*
 
+### **enabled**
+`enabled: boolean;`
+
+Whether the menu should be enabled or disabled
+
+Type: *boolean*
+
 ### **name**
 `name: string;`
 

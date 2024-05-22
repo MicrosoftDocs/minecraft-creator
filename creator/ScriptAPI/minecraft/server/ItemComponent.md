@@ -16,5 +16,6 @@ description: Contents of the @minecraft/server.ItemComponent class.
 - [*ItemDurabilityComponent*](ItemDurabilityComponent.md)
 - [*ItemEnchantableComponent*](ItemEnchantableComponent.md)
 - [*ItemFoodComponent*](ItemFoodComponent.md)
+- [*ItemPotionComponent*](ItemPotionComponent.md)
 
 Base class for item components.

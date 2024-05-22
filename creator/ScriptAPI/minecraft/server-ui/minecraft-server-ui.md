@@ -65,6 +65,19 @@ form.show(players[0]).then((response) => {
 - [MessageFormResponse](MessageFormResponse.md)
 - [ModalFormData](ModalFormData.md)
 - [ModalFormResponse](ModalFormResponse.md)
+- [UIManager](UIManager.md)
 
 ## Errors
 - [FormRejectError](FormRejectError.md)
+
+## Objects
+  
+::: moniker range="=minecraft-bedrock-experimental"
+### **uiManager**
+`static read-only uiManager: UIManager;`
+
+Type: [*UIManager*](UIManager.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

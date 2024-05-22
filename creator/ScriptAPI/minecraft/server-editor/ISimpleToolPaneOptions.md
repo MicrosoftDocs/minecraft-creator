@@ -15,20 +15,28 @@ A set of options which define the basic properties of a window pane (or sub-pane
 ### **childPaneInitiallyVisible**
 `childPaneInitiallyVisible: string;`
 
+The id of the child pane that should be visible when the parent pane is first shown, or the editor tool is constructed and finalized
+
 Type: *string*
 
 ### **childPanes**
 `childPanes: ISimpleToolPaneOptions[];`
+
+An optional array of child panes. These panes are set up exactly the same as the top level pane, but are displayed as children inside the parent pane.
 
 Type: *ISimpleToolPaneOptions[]*
 
 ### **childPanesMutuallyExclusive**
 `childPanesMutuallyExclusive: boolean;`
 
+An optional flag to indicate whether the child panes are mutually exclusive. If this is true, then only one child pane can be visible at a time. If this is false, then multiple child panes can be visible at the same time. Visibility is controlled either through `showPane` or `hidePane` functions of the `ISimpleToolPaneComponent` or through the visibility methods in the top level tool (`ISimpleTool`)
+
 Type: *boolean*
 
 ### **id**
 `id: string;`
+
+The unique identifier for this pane. This is used to identify the pane in the tool's pane hierarchy.
 
 Type: *string*
 
@@ -60,9 +68,13 @@ Type: *(pane: ISimpleToolPaneComponent) => void*
 ### **titleAltText**
 `titleAltText: string;`
 
+The title of the pane. This will be displayed in the title bar of the pane.
+
 Type: *string*
 
 ### **titleStringId**
 `titleStringId: string;`
+
+The string id of the title of the pane. This will be displayed in the title bar of the pane if it exists in the language file, otherwise the titleAltText will be used.
 
 Type: *string*

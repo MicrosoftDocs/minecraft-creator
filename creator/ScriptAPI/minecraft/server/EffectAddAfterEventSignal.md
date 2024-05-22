@@ -42,6 +42,3 @@ Removes a callback from being called when an effect is added to an entity.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.

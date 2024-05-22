@@ -94,6 +94,8 @@
       href: minecraft/server-ui/ModalFormData.md
     - name: ModalFormResponse
       href: minecraft/server-ui/ModalFormResponse.md
+    - name: UIManager
+      href: minecraft/server-ui/UIManager.md
   - name: minecraft/server
     items:
     - name: minecraft/server
@@ -110,6 +112,8 @@
       href: minecraft/server/CompoundBlockVolumeAction.md
     - name: CompoundBlockVolumePositionRelativity
       href: minecraft/server/CompoundBlockVolumePositionRelativity.md
+    - name: CustomComponentNameErrorReason
+      href: minecraft/server/CustomComponentNameErrorReason.md
     - name: Difficulty
       href: minecraft/server/Difficulty.md
     - name: Direction
@@ -128,8 +132,6 @@
       href: minecraft/server/EntityDamageCause.md
     - name: EntityInitializationCause
       href: minecraft/server/EntityInitializationCause.md
-    - name: EntityLifetimeState
-      href: minecraft/server/EntityLifetimeState.md
     - name: EquipmentSlot
       href: minecraft/server/EquipmentSlot.md
     - name: FluidType
@@ -546,6 +548,8 @@
       href: minecraft/server/ItemEnchantableComponent.md
     - name: ItemFoodComponent
       href: minecraft/server/ItemFoodComponent.md
+    - name: ItemPotionComponent
+      href: minecraft/server/ItemPotionComponent.md
     - name: ItemReleaseUseAfterEvent
       href: minecraft/server/ItemReleaseUseAfterEvent.md
     - name: ItemReleaseUseAfterEventSignal
@@ -676,6 +680,14 @@
       href: minecraft/server/PlayerSpawnAfterEvent.md
     - name: PlayerSpawnAfterEventSignal
       href: minecraft/server/PlayerSpawnAfterEventSignal.md
+    - name: PotionEffectType
+      href: minecraft/server/PotionEffectType.md
+    - name: PotionLiquidType
+      href: minecraft/server/PotionLiquidType.md
+    - name: PotionModifierType
+      href: minecraft/server/PotionModifierType.md
+    - name: Potions
+      href: minecraft/server/Potions.md
     - name: PressurePlatePopAfterEvent
       href: minecraft/server/PressurePlatePopAfterEvent.md
     - name: PressurePlatePopAfterEventSignal
@@ -846,6 +858,8 @@
       href: minecraft/server/PlayAnimationOptions.md
     - name: PlayerSoundOptions
       href: minecraft/server/PlayerSoundOptions.md
+    - name: PotionOptions
+      href: minecraft/server/PotionOptions.md
     - name: ProjectileShootOptions
       href: minecraft/server/ProjectileShootOptions.md
     - name: RangeComparison
@@ -940,12 +954,20 @@
       href: minecraft/server-editor/BlockPaletteManager.md
     - name: BrushShapeManager
       href: minecraft/server-editor/BrushShapeManager.md
+    - name: ClipboardChangeAfterEvent
+      href: minecraft/server-editor/ClipboardChangeAfterEvent.md
+    - name: ClipboardChangeAfterEventSignal
+      href: minecraft/server-editor/ClipboardChangeAfterEventSignal.md
     - name: ClipboardItem
       href: minecraft/server-editor/ClipboardItem.md
     - name: ClipboardManager
       href: minecraft/server-editor/ClipboardManager.md
     - name: Cursor
       href: minecraft/server-editor/Cursor.md
+    - name: CursorAttachmentPropertiesChangeAfterEvent
+      href: minecraft/server-editor/CursorAttachmentPropertiesChangeAfterEvent.md
+    - name: CursorAttachmentPropertyChangeAfterEventSignal
+      href: minecraft/server-editor/CursorAttachmentPropertyChangeAfterEventSignal.md
     - name: CursorPropertiesChangeAfterEvent
       href: minecraft/server-editor/CursorPropertiesChangeAfterEvent.md
     - name: CursorPropertyChangeAfterEventSignal
@@ -1018,6 +1040,8 @@
       href: minecraft/server-editor/BrushShape.md
     - name: ClipboardWriteOptions
       href: minecraft/server-editor/ClipboardWriteOptions.md
+    - name: CursorAttachmentProperties
+      href: minecraft/server-editor/CursorAttachmentProperties.md
     - name: CursorProperties
       href: minecraft/server-editor/CursorProperties.md
     - name: CustomWidgetCreateOptions
@@ -1030,6 +1054,8 @@
       href: minecraft/server-editor/PlaytestGameOptions.md
     - name: ProjectExportOptions
       href: minecraft/server-editor/ProjectExportOptions.md
+    - name: SettingsUIElementOptions
+      href: minecraft/server-editor/SettingsUIElementOptions.md
     - name: WidgetCreateOptions
       href: minecraft/server-editor/WidgetCreateOptions.md
     - name: WidgetGroupCreateOptions

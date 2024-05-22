@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Use Visual Studio Code tools to write script
 
-Two new tools can make the process of writing your JavaScript easier and more fun within Visual Studio Code. In this article, we'll discuss how you can install custom type definitions for Minecraft to provide autocomplete as you work, the Minecraft Script Debugger, and the Minecraft Script Profiler.
+There are a few tools that can make the process of writing your JavaScript easier and more fun within Visual Studio Code. In this article, we'll discuss how you can install custom type definitions for Minecraft to provide autocomplete as you work, the Minecraft Script Debugger, and the Minecraft Script Profiler. A big note: in the GitHub repository at [https://github.com/microsoft/minecraft-scripting-samples](https://github.com/microsoft/minecraft-scripting-samples), there are various starter samples and examples that come with these tools pre-configured, so if you start your project using those, a lot of the configuration work is already done for you.  
 
 ## Custom type definition files for Visual Studio Code Intellisense
 
@@ -34,7 +34,8 @@ and inline reference documentation for types:
 ![Inline reference documentation in Visual Studio Code](Media/ScriptDeveloperTools/inlinedocumentation.png)
 
 >[!Note]
->We are updating these type definitions to match the latest APIs, so be sure to check npm often to see if there are updated type definitions.
+
+> We are updating these type definitions to match the latest APIs, so be sure to check npm often to see if there are updated type definitions.
 
 If you wish to access the latest beta API versions of modules, you can use the @beta version signifier, as follows:
 
@@ -81,11 +82,11 @@ While you're building out scripting within your packs, you will most likely depl
 
 #### Step 4: Prepare Visual Studio Code for a connection
 
-To debug with Minecraft Bedrock Edition, you'll need to connect from Minecraft and into Visual Studio Code. This sample assumes you are debugging on the same Windows 10 machine, but you can also debug across machines and across clients if you want to. If you are debugging across devices, you may need to open up a port within your firewall on the machine that you are running Visual Studio Code within.
+To debug with Minecraft Bedrock Edition, you'll need to connect from Minecraft and into Visual Studio Code. This set of steps assumes you are debugging on the same Windows machine that you are running Minecraft from, but you can also debug across machines and across clients if you want to. If you are debugging across devices, you may need to open up a port within your firewall on the machine that you are running Visual Studio Code within.
 
-To configure the connection, add a `.vscode` subfolder to your behavior pack folder.  Within that `.vscode` folder, add the following launch.json configuration file:
+You'll want to configure Visual Studio Code to know how to connect to Minecraft. If you're using a sample project such as the TS starter [minecraft-scripting-samples/ts-starter](https://github.com/microsoft/minecraft-scripting-samples/tree/main/ts-starter), this .vscode/launch.json file is already configured for you. But if you're creating a project from scratch, follow these instructions:
 
-(NOTE: you do not need to edit any lines of this file.)
+At the root of the behavior pack you want to debug, add a `.vscode` subfolder. Add the following launch.json file into that `.vscode` folder:
 
 ```json
 {
@@ -94,42 +95,40 @@ To configure the connection, add a `.vscode` subfolder to your behavior pack fol
     {
       "type": "minecraft-js",
       "request": "attach",
-      "name": "Wait for Minecraft Debug Connections",
-      "mode": "listen",
-      "localRoot": "${workspaceFolder}/",
+      "name": "Debug with Minecraft",
+      "mode": "connect",
+      "preLaunchTask": "build",
+      "sourceMapRoot": "${workspaceFolder}/dist/debug/",
+      "generatedSourceRoot": "${workspaceFolder}/dist/scripts/",
       "port": 19144
-    }
+   }
   ]
 }
 ```
 
-![Visual Studio Code with launch.json](Media/ScriptDeveloperTools/launchjson.png)
+Note that `generatedSourceRoot` should point at a folder where your JavaScript files (*.js) are generated and stored. `sourceMapRoot` should point at a folder where you have source map files - typically created during your build process - that tie your generated JavaScript source files back to your potential TypeScript source.
 
-#### Step 5. Run your Minecraft Behavior Pack
+#### Run your Minecraft Behavior Pack
 
-Now that you've prepared Visual Studio Code and prepared your Behavior Pack, you're ready to start debugging!
+Now that you've prepared Visual Studio Code and prepared your behavior pack, you're ready to start debugging!
 
-First, click **Start Debugging** inside of Visual Studio Code. This will put Visual Studio Code into *listen for a debugging connection* mode.
+Within Visual Studio Code, click the "Debug with Minecraft" option under the Run menu (or hit F5) to start debugging. This will place Visual Studio Code into "Listen Mode", where it awaits a connection from Minecraft.
 
-Start Minecraft and load into a world with your scripting behavior pack. You may want to set a break point inside of your script function. To do this, click to the left of the specific lines of code where you want to set your break point.
+Start Minecraft and load into a world with your scripting behavior pack.
 
-![Breakpoints set within Visual Studio Code](Media/ScriptDeveloperTools/listenandbreakpoints.png)
+Use this slash command to connect Minecraft to Visual Studio Code:
 
-Use this slash command to connect to Visual Studio Code on a port.
+`script debugger connect`
 
-`/script debugger connect localhost 19144`
+You should see a "Debugger connected to host" response from this command if the connection is successful.
 
-You should see connection success response from slash command.
+![Server debugger connected](Media/ScriptDeveloperTools/breakpointhit.png)
 
-Now, trigger the code (likely by running a test, for example `/gametest run (my test name)`)
-
-You should see your breakpoints get hit. You can also view local variables and add watches as necessary.
-
-![Breakpoints and local variables in Visual Studio Code](Media/ScriptDeveloperTools/breakpointhit.png)
+You can set breakpoints in your code by clicking on the left-hand side of the editor, on specific lines of code. As you run the tests in the behavior pack, your breakpoints should be hit. You can also view local variables and add watches as necessary.
 
 ### Debugging with Minecraft Bedrock Dedicated Server
 
-The procedure for debugging with Bedrock Dedicated Server is a little different. When debugging with Bedrock Dedicated Server, Bedrock Dedicated Server will listen for debug connections initiated from Visual Studio Code. You'll want to start by installing the Minecraft Bedrock Edition Debugger for Visual Studio Code as described above.
+The procedure for debugging with Bedrock Dedicated Server is a little different. When debugging with Bedrock Dedicated Server, Bedrock Dedicated Server (not Visual Studio Code) will listen for debug connections initiated from Visual Studio Code. You'll want to start by installing the Minecraft Bedrock Edition Debugger for Visual Studio Code as described above.
 
 #### Configure your Bedrock Dedicated Server
 
@@ -141,37 +140,7 @@ These settings configure debugging on Bedrock Dedicated Server:
 - `allow-inbound-script-debugging` (true false): enables the /script debugger listen command (and the opening of ports on a server).  Defaults to false.
 - `force-inbound-debug-port` (number): Locks the inbound debug port to a particular port. This will set the default script debugging port and prevent a user of the /script debugger listen command from specifying an alternate port.
 
-For this project, we can simply set allow-inbound-script-debugging to true.
-
 ![Editing server.properties for Bedrock Dedicated Server](Media/ScriptDeveloperTools/serverproperties.png)
-
-#### Prepare your Behavior Pack Project
-
-Your Visual Studio Code instance should be pointing at the root of your Behavior Pack within the development_behavior_packs folder of the Minecraft instance (so you should open Visual Studio code at `(my Bedrock Dedicated Server installation)\development_behavior_packs\(behaviorpackname)`)
-
-At the root of the behavior pack you want to debug, add a `.vscode` subfolder. Add the following launch.json file into that `.vscode` folder:
-(NOTE: you do not need to edit any lines of this file.)
-
-```json
-{
-  "version": "0.3.0",
-  "configurations": [
-    {
-      "type": "minecraft-js",
-      "request": "attach",
-      "name": "Attach to Minecraft Bedrock Dedicated Server",
-      "localRoot": "${workspaceFolder}/",
-      "port": 19144
-    }
-  ]
-}
-```
-
-#### Run your Minecraft Behavior Pack
-
-Now that you've prepared Visual Studio Code and prepared your behavior pack, you're ready to start debugging!
-
-Start Minecraft and load into a world with your scripting behavior pack.
 
 Within Bedrock Dedicated Server's console, use this slash command to start listening on a port:
 
@@ -181,26 +150,29 @@ You should see a "Debugger listening" response from this command.
 
 ![Server debugger listening to a port](Media/ScriptDeveloperTools/serverdebuggerlistening.png)
 
+Within Visual Studio Code, you'll want to configure your debug settings in `launch.json` to have Visual Studio connect to Dedicated Server. To do this, set "mode" to "connect".
+
+```json
+{
+    "version": "0.3.0",
+    "configurations": [
+      {
+        "type": "minecraft-js",
+        "request": "attach",
+        "name": "Debug with Minecraft",
+        "mode": "connect",
+        "preLaunchTask": "build",
+        "sourceMapRoot": "${workspaceFolder}/dist/debug/",
+        "generatedSourceRoot": "${workspaceFolder}/dist/scripts/",
+        "port": 19144
+      }
+    ]
+  }
+```
+
 Now, hit "Start Debugging" inside of Visual Studio Code.
 
-You can run commands in Bedrock Dedicated Server to initiate tests, such as `/gametest run (my test name)`.
-
-You can set breakpoints in your code by clicking on the left-hand side of the editor, on specific lines of code. As you run the tests in the behavior pack, your breakpoints should be hit. You can also view local variables and add watches as necessary.
-
-### Using sourcemap files in conjunction with the Minecraft debugger
-
-In many cases, you may use a language with more features that "compiles to" JavaScript. One popular example is TypeScript, which adds many helpful developer features on top of JavaScript. Using a language like TypeScript typically require build tools or a build process that compiles your TypeScript into the JavaScript that Minecraft can run. You can find out more about using TypeScript and setting up a build process through [this tutorial article](ScriptingGettingStarted.md). 
-
-To make the debugger function appropriately in conjunction with languages like TypeScript, you will need to let the debugger know where to find (a) your original TypeScript files, (b) your JavaScript files that are built from TypeScript, and (c) source map (typically .map) files that provide information for the debugger on how to connect between (a) and (b).
-
-So, when you use the debugger in combination with a compiled language like TypeScript, you will need to adjust the configuration of `launch.json` in your `.vscode` folder to provide that additional information. Specifically, you will need two additional paths, in addition to configuring `localRoot`: 
-
- * `localRoot` should point at the folder location of your core TypeScript (or other higher-level) language files
- * A `generatedSourceRoot` attribute should be added which points at the folder location of your generated JavaScript files. This may be something like a build folder within your project.
- * An additional `sourceMapRoot` attribute is needed to specify to the debugger where it can find your generated source map files. In some cases, source map files may be generated alongside your JavaScript source, so your `sourceMapRoot` may be the same as `generatedSourceRoot`. 
-
-Note that there may be additional configuration required in your build tools - for example, `gulp` or the TypeScript compiler `tsc` - to ensure that it generates source maps properly. If you are having problems getting the debugger to recognize breakpoints in your files, ensure that your built JavaScript files have a working reference to their corresponding source map file (typically listed at the bottom of a JS file in a JavaScript comment). Also, ensure that your source map file has a working reference to its corresponding source file (e.g., a TS file).
-
+As with when you debug against Minecraft clients, you can set breakpoints in your code by clicking on the left-hand side of the editor, on specific lines of code.
 
 ### Using the Minecraft Scripting Profiler
 
