@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 :::image type="content" source="Media/AddCustomSounds/Custom Sounds 1.png" alt-text="Image of player standing with two jukeboxes.":::
 
-Sounds are a great way to add a sense of immersion to your content. Whether it's blocks, animals, or the ever-important music disc, the sounds you hear while playing Minecraft pull you into the experience. In this tutorial, we will be changing the sound of a chest opening to a sound, adding not just immersion but personalization to your world.
+Sounds are a great way to add a sense of immersion to your content. Whether it's blocks, animals, or the ever-important music disc, the sounds you hear while playing Minecraft pull you into the experience. In this tutorial, we will be adding a custom sound that will play when we open a chest, increasing the immersion and personalization of your world.
 
 ## Prerequisites
 
@@ -36,10 +36,10 @@ For detailed information on resource packs, see the [Comprehensive Resource Pack
 
 Now that the resource pack has been created, it's time to set up a place for our sound files.
 
-1. In **File Explorer**, navigate to the **com.mojang** folder
-1. Open the **development_resource_packs** folder
-1. Open **custom_sound_pack**
-1. Create a folder called **sounds**
+1. In **File Explorer**, navigate to the **com.mojang** folder.
+1. Open the **development_resource_packs** folder.
+1. Open **custom_sound_pack**.
+1. Create a folder called **sounds**.
 
 When you're finished, your file structure will look like this:
 
@@ -65,10 +65,10 @@ Now we know where to place our custom sound file. Navigate to **com.mojang > dev
 
 ## Testing Your Sound
 
-The hard work is over, and now it's time to the test our custom sound! In order to test our sound, create a test world with your **custom_sound_pack** enabled and cheats turned ON, which will allow you to use the `/give` command. Once you're logged in, it's time to test.
+The hard work is over, and now it's time to the test our custom sound! In order to test our sound, create a test world with your **custom_sound_pack** enabled and cheats turned ON, which will allow you to use the `/give` command.
 
 1. Open the chat box
-1. Type the following command: /give @s chest
+1. Type the following command: `/give @s chest`
 
 Opening the chest should result in your custom sound playing. If that doesn't happen, some troubleshooting may be needed. Some common steps include:
 
