@@ -9,7 +9,7 @@ ms.service: minecraft-bedrock-edition
 # Experimental Features in Minecraft: Bedrock Edition
 
 > [!NOTE]
-> This documentation is segmented into `Stable` and `Experimental` document sets. To see full documentation about experimental features and APIs, be sure to select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle).
+> To see full documentation about experimental features and APIs, select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle).
 ![image showing the Document Versions Dropdown.](Media/ExperimentalFeatures/ExperimentalApiDocs.png)
 
 With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in the preview, and retail versions of Minecraft.
@@ -80,7 +80,7 @@ If you are building a new world from scratch to test experimental features, you 
 
    ![Image showcasing 4 toggles for experimental features available in Minecraft](Media/ExperimentalFeatures/ExperimentalToggle_121.png)
 
-2. When you get the popup asking **Activate Experimental Gameplay?**, select **Activate Experiments**.
+2. When you get the popup asking if you're sure, select **Turn on Experiments anyway**.
 
    ![image showing a pop up to confirm if you want ot activate experimental features in Minecraft.](Media/ExperimentalFeatures/ActivateExperiments_121.png)
 
@@ -90,18 +90,6 @@ If you want to add experimental features to an existing world, open that world's
 
 > [!NOTE]
 > A copy of your world will be generated automatically after you activate an experimental feature toggle. You can also manually create copies of your world as an extra precaution, in case something goes wrong.
-
-1. Select the world you want to add experimental features to and select the **Edit** button.
-
-   ![image of a world with the edit button selected](Media/ExperimentalFeatures/Edit.png)
-
-2. Under **Game** settings, navigate down to **Experiments** and select a toggle to enable the feature.
-
-   ![Image showcasing toggles for experimental features available in Minecraft](Media/ExperimentalFeatures/ExperimentalToggle_120.png)
-
-3. When you get the popup asking **Activate Experimental Gameplay?**, select **Activate Experiments**.
-
-   ![image showing a pop up to confirm if you want to activate experimental features in Minecraft](Media/ExperimentalFeatures/ActivateExperiments_120.png)
 
 After you select **Activate Experiments**, a copy of your existing world will be created. The copy will have the same name as the original world with "Copy of..." added in front of it.
 
