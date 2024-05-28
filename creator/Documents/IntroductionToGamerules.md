@@ -16,15 +16,16 @@ The `/gamerule` command lets you adjust certain features of your game world and 
 We recommend completing the following before beginning this tutorial:
 
 - [Introduction to Commands](CommandsIntroduction.md)
-- 
 
 ## List of /gamerule Commands
 
-For a full list of `/gamerule` commands and their descriptions, see [gamerule Command](../Commands/commands/gamerule.md).
+For a full list of `/gamerule` commands and their descriptions, see [gamerule Command](../Commands/commands/gamerule.md). 
+
+Don't worry if you don't know all of the `/gamerule` commands by heart - we'll go over the specific commands we want to use in the following sections.
 
 ## Sample /gamerule Configurations
 
-Now that you know the different `/gamerule` commands that you can use, let's take a look at how they can be used to create a customized experience in Minecraft. We'll use examples of different types of Minecraft worlds to explore how we might use gamerules to set up your world so that you can see how different sets of gamerules can create unique experiences for you and your players to enjoy.
+Now let's take a look at how we can use gamerules to create a customized experience in Minecraft. We'll use examples of different types of Minecraft worlds to explore how we might use gamerules to set up your world so that you can see how different sets of gamerules can create unique experiences for you and your players to enjoy.
 
 ### Amusement Park Gamerules
 
