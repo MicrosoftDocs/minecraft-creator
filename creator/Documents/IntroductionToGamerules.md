@@ -20,7 +20,7 @@ We recommend completing the following before beginning this tutorial:
 
 ## List of /gamerule Commands
 
-Here is a list of the current `/gamerule` commandsFor a full list of `/gamerule` commands and their descriptions, see [gamerule Command](../Commands/commands/gamerule.md).
+For a full list of `/gamerule` commands and their descriptions, see [gamerule Command](../Commands/commands/gamerule.md).
 
 ## Sample /gamerule Configurations
 
