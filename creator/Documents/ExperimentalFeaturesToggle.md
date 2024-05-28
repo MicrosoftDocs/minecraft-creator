@@ -15,11 +15,11 @@ ms.service: minecraft-bedrock-edition
 With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in the beta, preview, and retail versions of Minecraft.
 
 > [!NOTE]
-> The Experiments toggle list is subject to frequent changes and could have entirely different options from the ones in your own version of Minecraft.
+> The Experiments toggle list is subject to frequent changes and could have entirely different options from the ones in your own version of Minecraft. Also, the screen shots shown here might look different.
 
 ## Experimental Features available in Minecraft: Bedrock Edition
 
-There are three sets of experimental features available, depending on whether you are using a stable (retail) version of Minecraft, the latest version of Minecraft Preview, or a beta version of Minecraft.
+There are three sets of experimental features available, depending on whether you are using a retail version of Minecraft, the latest version of Minecraft Preview, or a beta version of Minecraft.
 
 ### Retail
 
