@@ -9,7 +9,7 @@ ms.service: minecraft-bedrock-edition
 # Experimental Features in Minecraft: Bedrock Edition
 
 > [!NOTE]
-> This documentation is segmented into `Stable` and `Experimental` document sets. To see full documentation about experimental features and APIs, be sure to select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle?view=minecraft-bedrock-experimental).
+> This documentation is segmented into `Stable` and `Experimental` document sets. To see full documentation about experimental features and APIs, be sure to select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle).
 ![image showing the Document Versions Dropdown.](Media/ExperimentalFeatures/ExperimentalApiDocs.png)
 
 With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in the beta, preview, and retail versions of Minecraft.
@@ -101,11 +101,11 @@ If you are building a new world from scratch to test experimental features, you 
 
 1. Under **Game** settings, navigate down to **Experiments** and select a toggle to enable the feature.
 
-   ![Image showcasing 4 toggles for experimental features available in Minecraft](Media/ExperimentalFeatures/ExperimentalToggle_21.png)
+   ![Image showcasing 4 toggles for experimental features available in Minecraft](Media/ExperimentalFeatures/ExperimentalToggle_121.png)
 
 2. When you get the popup asking **Activate Experimental Gameplay?**, select **Activate Experiments**.
 
-   ![image showing a pop up to confirm if you want ot activate experimental features in Minecraft.](Media/ExperimentalFeatures/ActivateExperiments.png)
+   ![image showing a pop up to confirm if you want ot activate experimental features in Minecraft.](Media/ExperimentalFeatures/ActivateExperiments_121.png)
 
 ### Toggle Experimental Features in an Existing World
 
