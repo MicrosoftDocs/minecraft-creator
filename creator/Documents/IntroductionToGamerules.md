@@ -35,7 +35,7 @@ As we mentioned earlier, when visiting an amusement park, it's always the most f
 | `commandblockoutput` | false | We don't want our guests getting all of the behind-the-scenes information on the mechanics of our park, so let's turn off command block output.|
 | `dodaylightcycle`    | true  | If your amusement park has night hours (and maybe attractions that feature light shows!), we definitely want the world to shift from day to night. |
 | `dofiretick`         | false |This setting will help us keep those minor disasters under control, especially if you have attractions that feature pyrotechnics! |
-| `domobspawning`      | false | Paying customers only, please! Let's turn off mob spawning so we don't get skeletons or creepers crashing the party. |
+| `domobspawning`      | false | Paying customers only, please! Let's turn off mob spawning so we don't get zombies or creepers crashing the party. |
 | `doweathercycle`     | false | This will prevent the weather from changing and ensure that it's sunny every day. |
 | `drowningdamage`     | false | A rule to help keep our guests safe. |
 | `falldamage`         | false | A rule to help keep our guests safe. |
