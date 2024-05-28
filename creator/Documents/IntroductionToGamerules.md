@@ -72,7 +72,7 @@ Of course, you can change these gamerules to fit your specific implementations. 
 
 Check out the following resources to see how you can tailor your Minecraft world even further.
 
-- Resource Packs
-- Behavior Packs
-- NPCs
-- Loot tables
+- [Create Custom Grass Blocks: An Introduction to Resource Packs](ResourcePack.md)
+- [Create an Angry Cow: An Introduction To Behavior Packs](BehaviorPack.md)
+- [Getting Started with Command Blocks](CommandBlocks.md)
+- [Loot and Trade Table Functions](LootAndTradeTableFunctions.md)
