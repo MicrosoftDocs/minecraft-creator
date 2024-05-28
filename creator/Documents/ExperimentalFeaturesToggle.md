@@ -12,14 +12,14 @@ ms.service: minecraft-bedrock-edition
 > This documentation is segmented into `Stable` and `Experimental` document sets. To see full documentation about experimental features and APIs, be sure to select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle).
 ![image showing the Document Versions Dropdown.](Media/ExperimentalFeatures/ExperimentalApiDocs.png)
 
-With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in the beta, preview, and retail versions of Minecraft.
+With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in the preview, and retail versions of Minecraft.
 
 > [!NOTE]
 > The Experiments toggle list is subject to frequent changes and could have entirely different options from the ones in your own version of Minecraft. Also, the screen shots shown here might look different.
 
 ## Experimental Features available in Minecraft: Bedrock Edition
 
-There are three sets of experimental features available, depending on whether you are using a retail version of Minecraft, the latest version of Minecraft Preview, or a beta version of Minecraft.
+There are two sets of experimental features available, depending on whether you are using a retail version of Minecraft or the latest version of Minecraft Preview.
 
 ### Retail
 
@@ -63,29 +63,6 @@ ADD-ON CREATORS - For creators of game packs and other add-ons
 |Creator Cameras | Contains new third person over the shoulder follow_orbit camera preset |
 |Render Dragon Features for Creators | Enable the deferred rendering pipeline. Requires a PBR-enables resource pack and compatible hardware.|
 
-### Beta
-
-Listed below are the currently available Experimental Features in the latest beta build at the time of this writing.
-
-> [!NOTE]
-> Differences between available features are marked in **Bold**.
-
-GAMEPLAY - Change the way your world works
-
-| Experimental Toggle | Description |
-|:------|:------|
-|Villager Trade Rebalancing |Contains updated trades for villages for the purpose of rebalancing|
-
-ADD-ON CREATORS - For creators of game packs and other add-ons
-
-| Experimental Toggle |Features |
-|:------|:------|
-|Holiday Creator Features |Data-driven block and item features. We are receiving feedback on these features from Marketplace creators and map-makers.|
-|Custom Biomes|Exposing parameters for biome generation to creators, enabling them to create their own unique biome configurations. |
-|Upcoming Creator Features |Experimental features including entity permutations and fogs/volumes. We are receiving feedback on these features from Marketplace creators and map-makers.|
-|Beta APIs|Provides "-beta" level script APIs (e.g., @minecraft/server 1.1.0-beta), as well as GameTest Framework APIs. |
-|Molang Features |Container for Molang experimental queries and language features that aren't tied to other experimental toggles. |
-
 ## How do I activate an Experimental Features toggle for my world?
 
 You can activate an experimental toggle for any of your new or existing worlds.
@@ -116,7 +93,7 @@ If you want to add experimental features to an existing world, open that world's
 
 1. Select the world you want to add experimental features to and select the **Edit** button.
 
-   ![image of a beta world with the edit button selected](Media/ExperimentalFeatures/Edit.png)
+   ![image of a world with the edit button selected](Media/ExperimentalFeatures/Edit.png)
 
 2. Under **Game** settings, navigate down to **Experiments** and select a toggle to enable the feature.
 
