@@ -163,6 +163,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`setOp`](Player.md#setop)*
 - Added function *[`spawnParticle`](Player.md#spawnparticle)*
 - Added function *[`startItemCooldown`](Player.md#startitemcooldown)*
+#### Added *[`PlayerCursorInventoryComponent`](PlayerCursorInventoryComponent.md)*
 #### Added *[`PlayerGameModeChangeAfterEvent`](PlayerGameModeChangeAfterEvent.md)*
 #### Added *[`PlayerGameModeChangeAfterEventSignal`](PlayerGameModeChangeAfterEventSignal.md)*
 #### Added *[`PlayerGameModeChangeBeforeEvent`](PlayerGameModeChangeBeforeEvent.md)*
@@ -242,6 +243,7 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Ageable`
 - Added value `Breathable`
 - Added value `Color2`
+- Added value `CursorInventory`
 - Added value `LavaMovement`
 - Added value `Leashable`
 - Added value `Movement`

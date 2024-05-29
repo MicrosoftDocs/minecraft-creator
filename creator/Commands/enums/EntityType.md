@@ -36,6 +36,8 @@ Bee
 Axolotl
 - `axolotl`
 Axolotl
+- `minecraft:breeze`
+- `breeze`
 - `minecraft:pig`
 Pig
 - `pig`
@@ -72,6 +74,8 @@ Villager
 Wandering Trader
 - `wandering_trader`
 Wandering Trader
+- `minecraft:bogged`
+- `bogged`
 - `minecraft:mooshroom`
 Mooshroom
 - `mooshroom`
@@ -376,6 +380,8 @@ Splash Potion
 Leash Knot
 - `leash_knot`
 Leash Knot
+- `minecraft:wind_charge_projectile`
+- `wind_charge_projectile`
 - `minecraft:boat`
 Boat
 - `boat`
