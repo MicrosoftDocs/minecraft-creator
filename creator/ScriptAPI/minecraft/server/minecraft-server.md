@@ -302,6 +302,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerBreakBlockAfterEventSignal](PlayerBreakBlockAfterEventSignal.md)
 - [PlayerBreakBlockBeforeEvent](PlayerBreakBlockBeforeEvent.md)
 - [PlayerBreakBlockBeforeEventSignal](PlayerBreakBlockBeforeEventSignal.md)
+- [PlayerCursorInventoryComponent](PlayerCursorInventoryComponent.md)
 - [PlayerDimensionChangeAfterEvent](PlayerDimensionChangeAfterEvent.md)
 - [PlayerDimensionChangeAfterEventSignal](PlayerDimensionChangeAfterEventSignal.md)
 - [PlayerGameModeChangeAfterEvent](PlayerGameModeChangeAfterEvent.md)

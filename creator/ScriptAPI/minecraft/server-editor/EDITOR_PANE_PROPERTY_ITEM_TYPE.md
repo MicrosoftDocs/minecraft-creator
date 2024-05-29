@@ -17,6 +17,8 @@ Type of item that can be added to the property pane
 `BlockPicker = editorUI:BlockPicker`
 ### **Boolean**
 `Boolean = editorUI:Boolean`
+### **ColorPicker**
+`ColorPicker = editorUI:ColorPicker`
 ### **Divider**
 `Divider = editorUI:Divider`
 ### **Dropdown**

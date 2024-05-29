@@ -620,6 +620,8 @@
       href: minecraft/server/PlayerBreakBlockBeforeEvent.md
     - name: PlayerBreakBlockBeforeEventSignal
       href: minecraft/server/PlayerBreakBlockBeforeEventSignal.md
+    - name: PlayerCursorInventoryComponent
+      href: minecraft/server/PlayerCursorInventoryComponent.md
     - name: PlayerDimensionChangeAfterEvent
       href: minecraft/server/PlayerDimensionChangeAfterEvent.md
     - name: PlayerDimensionChangeAfterEventSignal
@@ -906,6 +908,8 @@
       href: minecraft/server-editor/ActionTypes.md
     - name: BlockPaletteItemType
       href: minecraft/server-editor/BlockPaletteItemType.md
+    - name: CoreActionBarItemType
+      href: minecraft/server-editor/CoreActionBarItemType.md
     - name: CoreMenuType
       href: minecraft/server-editor/CoreMenuType.md
     - name: CursorControlMode
@@ -1066,6 +1070,12 @@
       href: minecraft/server-editor/BuiltInUIManager.md
     - name: EventSink
       href: minecraft/server-editor/EventSink.md
+    - name: IActionBar
+      href: minecraft/server-editor/IActionBar.md
+    - name: IActionBarItem
+      href: minecraft/server-editor/IActionBarItem.md
+    - name: IActionBarItemCreationParams
+      href: minecraft/server-editor/IActionBarItemCreationParams.md
     - name: IDisposable
       href: minecraft/server-editor/IDisposable.md
     - name: IDropdownItem
@@ -1096,6 +1106,8 @@
       href: minecraft/server-editor/IPropertyItemOptionsBool.md
     - name: IPropertyItemOptionsButton
       href: minecraft/server-editor/IPropertyItemOptionsButton.md
+    - name: IPropertyItemOptionsColorPicker
+      href: minecraft/server-editor/IPropertyItemOptionsColorPicker.md
     - name: IPropertyItemOptionsDataPicker
       href: minecraft/server-editor/IPropertyItemOptionsDataPicker.md
     - name: IPropertyItemOptionsDropdown

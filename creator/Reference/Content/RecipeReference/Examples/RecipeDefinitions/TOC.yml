@@ -1,3 +1,5 @@
+ - name: Introduction to Recipes 
+   href: RecipeIntroduction.md
  - name: Recipe Definition List
    href: ../RecipeDefinitionList.md
  - name: Recipe Tag List
@@ -18,5 +20,4 @@
    href: minecraftRecipe_SmithingTrim.md
  - name: Tags as Recipe Input
    href: TagsRecipeInput.md
- - name: Introduction to Recipes 
-   href: RecipeIntroduction.md
+ 

@@ -98,8 +98,12 @@ Type: *number*
 leashTo(leashHolder: Entity): void
 `
 
+Leashes this entity to another entity.
+
 #### **Parameters**
 - **leashHolder**: [*Entity*](Entity.md)
+  
+  The entity to leash this entity to.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

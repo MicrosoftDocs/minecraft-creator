@@ -22,6 +22,7 @@ Entity that can age grows to adulthood
 Entity has completed cooling down
 - `attacked`
 Entity is being attacked
+- `be_sheared`
 - `become_angry`
 Entity is going into a state of anger
 - `become_angry_event`
@@ -239,8 +240,7 @@ Entity is calm
 - `minecraft:camel_unsaddled`
 - `minecraft:cat_gifted_owner`
 Entity is a cat who gifted its owner
-- `minecraft:clear_add_bad_omen`
-Entity clears added bad omen
+- `minecraft:clear_add_raid_omen`
 - `minecraft:command_block_activate`
 Entity activates a command block
 - `minecraft:command_block_deactivate`
@@ -305,8 +305,7 @@ Entity is from a player
 Entity is from a village
 - `minecraft:from_wandering_trader`
 Entity is from a wandering trader
-- `minecraft:gain_bad_omen`
-Entity gains a bad omen
+- `minecraft:gain_raid_omen`
 - `minecraft:go_lay_egg`
 Entity goes and lays an egg
 - `minecraft:has_target`
@@ -527,6 +526,7 @@ Entity starts Johnny action
 - `minecraft:start_land`
 Entity starts tp land
 - `minecraft:start_peeking`
+- `minecraft:start_playing_idle_ground_sound`
 - `minecraft:start_roar`
 Entity starts roaring
 - `minecraft:start_sitting`
@@ -542,6 +542,7 @@ Entity stops exploding
 - `minecraft:stop_johnny`
 Entity stops Johnny action
 - `minecraft:stop_peeking`
+- `minecraft:stop_playing_idle_ground_sound`
 - `minecraft:stop_sitting`
 - `minecraft:stop_transforming`
 Entity stops transforming
