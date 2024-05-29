@@ -9,7 +9,7 @@ ms.service: minecraft-bedrock-edition
 # Experimental Features in Minecraft: Bedrock Edition
 
 > [!NOTE]
-> To see full documentation about experimental features and APIs, select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle).
+> To see full documentation about experimental features and APIs, select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle?view=minecraft-bedrock-experimental).
 ![image showing the Document Versions Dropdown.](Media/ExperimentalFeatures/ExperimentalApiDocs.png)
 
 With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in the preview, and retail versions of Minecraft.
@@ -38,13 +38,13 @@ ADD-ON CREATORS - For creators of game packs and other add-ons
 |:------|:------|
 |Holiday Creator Features | Add data-driven block and item technology to customize block shape, rotation, damage and more |
 |Custom Biomes| Create custom biomes and change world generation |
-|Upcoming Creator Features | Includes actor properties and adjustable fog parameters |
+|Upcoming Creator Features | Includes adjustable fog parameters |
 |Beta APIs| Use "-beta" versions of API modules in add-on packs |
 |Experimental Cameras | Contains example camera presets (the camera command is no longer experimental) |
 
 ### Preview
 
-These are the currently available Experimental toggles in the **1.21.10.41** preview build at the time of this writing.
+These are the currently available Experimental toggles in the **1.21.10** preview build at the time of this writing.
 
 GAMEPLAY - Change the way your world works
 
@@ -58,9 +58,9 @@ ADD-ON CREATORS - For creators of game packs and other add-ons
 |:------|:------|
 |Holiday Creator Features | Add data-driven block and item technology to customize block shape, rotation, damage and more |
 |Custom Biomes| Create custom biomes and change world generation |
-|Upcoming Creator Features | Includes actor properties and adjustable fog parameters |
+|Upcoming Creator Features | Includes adjustable fog parameters |
 |Beta APIs| Use "-beta" versions of API modules in add-on packs |
-|Creator Cameras | Contains new third person over the shoulder follow_orbit camera preset |
+|Creator Cameras: New Third Person Presets | Contains new third person over the shoulder follow_orbit camera preset |
 |Render Dragon Features for Creators | Enable the deferred rendering pipeline. Requires a PBR-enables resource pack and compatible hardware.|
 
 ## How do I activate an Experimental Features toggle for my world?
