@@ -1,12 +1,12 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Addons Documentation - Entity List
+title: Default Minecraft Entity Listings
 description: "A reference document detailing the entities and damage sources used in addons for Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Addons Documentation - Entity List
+# Default Minecraft Entity Listings
 
 An overview of the Entities and Damage Sources that can be used in Addons for Minecraft: Bedrock Edition.
 

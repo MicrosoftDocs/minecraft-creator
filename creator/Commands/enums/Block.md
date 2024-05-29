@@ -278,6 +278,8 @@ Polished Deepslate Slab
 Amethyst Block
 - `amethyst_block`
 Amethyst Block
+- `minecraft:dead_bubble_coral_wall_fan`
+- `dead_bubble_coral_wall_fan`
 - `minecraft:gold_block`
 Gold Block
 - `gold_block`
@@ -720,6 +722,8 @@ Brown Mushroom
 Brown Mushroom
 - `minecraft:cyan_concrete_powder`
 - `cyan_concrete_powder`
+- `minecraft:dead_fire_coral_wall_fan`
+- `dead_fire_coral_wall_fan`
 - `minecraft:brown_glazed_terracotta`
 Brown Glazed Terracotta
 - `brown_glazed_terracotta`
@@ -946,6 +950,8 @@ Mud Brick Slab
 Farmland
 - `farmland`
 Farmland
+- `minecraft:dead_brain_coral_wall_fan`
+- `dead_brain_coral_wall_fan`
 - `minecraft:rail`
 Rail
 - `rail`
@@ -960,14 +966,6 @@ Blackstone Wall
 Mossy Cobblestone Stairs
 - `mossy_cobblestone_stairs`
 Mossy Cobblestone Stairs
-- `minecraft:coral_fan_hang2`
-Coral Fan Hang 2
-- `coral_fan_hang2`
-Coral Fan Hang 2
-- `minecraft:coral_fan_hang3`
-Coral Fan Hang 3
-- `coral_fan_hang3`
-Coral Fan Hang 3
 - `minecraft:detector_rail`
 Detector Rail
 - `detector_rail`
@@ -996,6 +994,8 @@ Pink Candle Cake
 Cracked Deepslate Tiles
 - `cracked_deepslate_tiles`
 Cracked Deepslate Tiles
+- `minecraft:brain_coral_wall_fan`
+- `brain_coral_wall_fan`
 - `minecraft:mangrove_wood`
 Mangrove Wood
 - `mangrove_wood`
@@ -1258,10 +1258,6 @@ Barrel
 Chorus Flower
 - `chorus_flower`
 Chorus Flower
-- `minecraft:coral_fan_hang`
-Coral Fan Hang
-- `coral_fan_hang`
-Coral Fan Hang
 - `minecraft:orange_stained_glass`
 - `orange_stained_glass`
 - `minecraft:white_stained_glass_pane`
@@ -1468,6 +1464,8 @@ Waxed Weathered Cut Copper
 Waxed Weathered Cut Copper
 - `minecraft:white_stained_glass`
 - `white_stained_glass`
+- `minecraft:horn_coral_wall_fan`
+- `horn_coral_wall_fan`
 - `minecraft:oak_wood`
 - `oak_wood`
 - `minecraft:purple_stained_glass_pane`
@@ -1596,6 +1594,8 @@ Cyan Glazed Terracotta
 Cracked Deepslate Bricks
 - `cracked_deepslate_bricks`
 Cracked Deepslate Bricks
+- `minecraft:fire_coral_wall_fan`
+- `fire_coral_wall_fan`
 - `minecraft:jungle_fence_gate`
 Jungle Fence Gate
 - `jungle_fence_gate`
@@ -2354,6 +2354,8 @@ Polished Blackstone Wall
 Waxed Exposed Double Cut Copper Slab
 - `waxed_exposed_double_cut_copper_slab`
 Waxed Exposed Double Cut Copper Slab
+- `minecraft:bubble_coral_wall_fan`
+- `bubble_coral_wall_fan`
 - `minecraft:orange_tulip`
 - `orange_tulip`
 - `minecraft:brown_shulker_box`
@@ -2446,6 +2448,8 @@ Blue Ice
 Polished Andesite Stairs
 - `polished_andesite_stairs`
 Polished Andesite Stairs
+- `minecraft:dead_horn_coral_wall_fan`
+- `dead_horn_coral_wall_fan`
 - `minecraft:sculk`
 Sculk
 - `sculk`
@@ -2716,6 +2720,8 @@ Cave Vines Head with Berries
 Cave Vines Head with Berries
 - `minecraft:tube_coral_block`
 - `tube_coral_block`
+- `minecraft:dead_tube_coral_wall_fan`
+- `dead_tube_coral_wall_fan`
 - `minecraft:birch_sapling`
 - `birch_sapling`
 - `minecraft:dark_oak_trapdoor`
@@ -3052,6 +3058,8 @@ Cartography Table
 Cartography Table
 - `minecraft:oxidized_copper_door`
 - `oxidized_copper_door`
+- `minecraft:tube_coral_wall_fan`
+- `tube_coral_wall_fan`
 - `grass`
 Grass
 - `minecraft:grass`
@@ -3248,6 +3256,18 @@ Monster Egg
 Stonebrick
 - `minecraft:stonebrick`
 Stonebrick
+- `coral_fan_hang`
+Coral Fan Hang
+- `minecraft:coral_fan_hang`
+Coral Fan Hang
+- `coral_fan_hang2`
+Coral Fan Hang 2
+- `minecraft:coral_fan_hang2`
+Coral Fan Hang 2
+- `coral_fan_hang3`
+Coral Fan Hang 3
+- `minecraft:coral_fan_hang3`
+Coral Fan Hang 3
 - `lava_cauldron`
 Lava Cauldron
 - `minecraft:lava_cauldron`

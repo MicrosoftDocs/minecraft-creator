@@ -82,7 +82,7 @@ You can also change the game mode of a specific player using target selectors, w
 
 ## /gamerule
 
-This `/gamerule` command changes specific gameplay aspects and has options helpful for development. There are a large number of gamerules, which can be listed using the chat's auto-complete feature.
+This `/gamerule` command changes specific gameplay aspects and has options helpful for development. There are a large number of [gamerules](./IntroductionToGamerules.md), which can be listed using the chat's auto-complete feature.
 
 ```
 /gamerule <rule: BoolGameRule> [value: Boolean]

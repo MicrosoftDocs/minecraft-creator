@@ -72,6 +72,7 @@ Type: *number*
 - [addBlockPicker](#addblockpicker)
 - [addBool](#addbool)
 - [addButton](#addbutton)
+- [addColorPicker](#addcolorpicker)
 - [addDivider](#adddivider)
 - [addDropdown](#adddropdown)
 - [addEntityPicker](#addentitypicker)
@@ -132,6 +133,20 @@ Adds a button to the pane and binds the specified action to the button activate.
 **Returns** *IActionPropertyItem<{
         EMPTY: undefined;
     }, 'EMPTY'>*
+
+### **addColorPicker**
+`
+addColorPicker(obj: T, property: Prop, options: IPropertyItemOptionsColorPicker): IPropertyItem<T, Prop>
+`
+
+Adds a color picker item to the pane.
+
+#### **Parameters**
+- **obj**: *T*
+- **property**: *Prop*
+- **options**: *IPropertyItemOptionsColorPicker*
+
+**Returns** *IPropertyItem<T, Prop>*
 
 ### **addDivider**
 `

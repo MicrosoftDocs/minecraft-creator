@@ -1,12 +1,12 @@
 ---
 author: JimSeaman42
 ms.author: mikeam
-title: Fog Documentation - Introduction to Fogs
+title: Fog JSON and Introduction to Fogs
 description: "A reference document introducing the concept of fogs"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Fog Documentation - Introduction to Fogs
+# Fog JSON and Introduction to Fogs
 
 Fogs are a rendering feature that can be used to obscure a player's view distance, for example to occlude boundaries such as unloaded chunks beyond the render distance. Alternatively, fogs can be used to great effect in producing an atmospheric ambience. There are several types of fogs that can be used to produce a desired effect.
 

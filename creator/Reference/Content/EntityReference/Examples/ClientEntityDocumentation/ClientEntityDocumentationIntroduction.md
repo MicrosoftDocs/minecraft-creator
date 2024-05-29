@@ -1,14 +1,14 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - Entity JSON Introduction
+title: Client Entity JSON and Introduction
 description: "A reference document providing an introduction to the concept of entity JSON"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Entity Documentation - Entity JSON Introduction
+# Client Entity JSON and Introduction
 
-Entity definitions are contained within a Resource Pack.
+Typically, entities have a definition JSON file both wihin a behavior pack and a resource pack. This documentation pertains to the entity JSON contained within a Resource Pack.
 
 > [!TIP]
 > If this is your first time learning about Entities within Minecraft: Bedrock Edition, please feel free to check out our tutorial [Introduction to Behavior Packs](../../../../../Documents/BehaviorPack.md) to learn about all the files that go into how an Entity functions within Minecraft.

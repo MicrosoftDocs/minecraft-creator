@@ -1,12 +1,12 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Addons Documentation - Items
+title: Default Minecraft Item Listings
 description: "A reference document detailing the available items for use in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Addons Documentation - Items
+# Default Minecraft Item Listings
 
 Listed below are the available Items for use in Minecraft: Bedrock Edition.
 

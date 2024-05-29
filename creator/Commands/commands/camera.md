@@ -7,7 +7,7 @@ title: camera Command
 description: Description and usage of the camera command
 ---
 # `/camera` Command
-[Experimental feature.] Transforms the camera for the selected player to a different perspective.
+Transforms the camera for the selected player to a different perspective.
 
 <table>
   <tr>
@@ -166,6 +166,7 @@ A listing of available camera presets.
 - `minecraft:free`
 - `minecraft:third_person`
 - `minecraft:third_person_front`
+- `minecraft:follow_orbit`
 
 ### `Easing`
 Specifies an easing function to use for the camera.
