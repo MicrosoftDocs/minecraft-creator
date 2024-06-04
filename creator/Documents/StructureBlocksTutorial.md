@@ -6,7 +6,7 @@ description: "A tutorial on using Structure Blocks for Minecraft: Bedrock Editio
 ms.service: minecraft-bedrock-edition
 ---
 
-# SCreate a Village with Structure Blocks
+# Create a Village with Structure Blocks
 
 For this tutorial, we're going to use structure blocks and the command `/structure` to create a village and load in an epic statue one block at a time.
 

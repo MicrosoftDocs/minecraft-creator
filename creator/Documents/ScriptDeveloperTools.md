@@ -68,17 +68,25 @@ To use debugger capabilities, you'll want to install the Minecraft Bedrock Editi
 
 If you want to connect Minecraft Bedrock Edition client to Visual Studio Code running on the same machine (this is the most common scenario), you will need to exempt the Minecraft client from UWP loopback restrictions. To do this, run the following from a command prompt or the Start | Run app.
 
+Minecraft Bedrock Edition:
+
 ```powershell
 CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-1958404141-86561845-1752920682-3514627264-368642714-62675701-733520436
+```
+
+Minecraft Bedrock Edition Preview:
+
+```powershell
+CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-424268864-5579737-879501358-346833251-474568803-887069379-4040235476
 ```
 
 ![checknetisolation command being run](Media/ScriptDeveloperTools/commandprompt.png)
 
 #### Step 3: Open Visual Studio Code within your development_behavior_packs folder
 
-In order for the debugger to know where to find your source JavaScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript source files are.
+In order for the debugger to know where to find your source JavaScript or TypeScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript or TypeScript source files are. This may be inside of Minecraft's development_behavior_packs folder (e.g., `localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`) - or you may have your source code located in a separate folder (e.g., `c:\projects\myaddon`).
 
-While you're building out scripting within your packs, you will most likely deploy them to Minecraft's development_behavior_packs folder. This is located within `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`. Select the behavior pack you'd like to debug, and open up a Visual Studio Code window pointed at that folder.
+Open up a Visual Studio Code window pointed at the folder with your add-on script source.
 
 #### Step 4: Prepare Visual Studio Code for a connection
 
@@ -86,7 +94,9 @@ To debug with Minecraft Bedrock Edition, you'll need to connect from Minecraft a
 
 You'll want to configure Visual Studio Code to know how to connect to Minecraft. If you're using a sample project such as the TS starter [minecraft-scripting-samples/ts-starter](https://github.com/microsoft/minecraft-scripting-samples/tree/main/ts-starter), this .vscode/launch.json file is already configured for you. But if you're creating a project from scratch, follow these instructions:
 
-At the root of the behavior pack you want to debug, add a `.vscode` subfolder. Add the following launch.json file into that `.vscode` folder:
+At the root of the behavior pack you want to debug, add a `.vscode` subfolder. Add the following launch.json file into that `.vscode` folder.
+
+If your source is in JavaScript and you are developing directly against that source (you do not use a script build process), you'll want to configure `launch.json` as follows:
 
 ```json
 {
@@ -98,6 +108,32 @@ At the root of the behavior pack you want to debug, add a `.vscode` subfolder. A
       "name": "Debug with Minecraft",
       "mode": "connect",
       "preLaunchTask": "build",
+      "targetModuleUuid": "7c7e693f-99f4-41a9-95e0-1f57b37e1e12",
+      "localRoot": "${workspaceFolder}/",
+      "port": 19144
+   }
+  ]
+}
+```
+
+`localRoot` should point at the folder which contains your behavior pack with script within it.
+Port 19144 is the default networking port for Minecraft Script Debugging.
+
+In the example above, `targetModuleUuid` is an optional parameter that specifies the identifier of your script module, which is located in your behavior pack's `manifest.json` file. This is important to use if you are developing add-ons in Minecraft while there are multiple behavior packs with script active.
+
+If your source is in a language like TypeScript that generates JavaScript for Minecraft, you will want to use `sourceMapRoot` and `generatedSourceRoot` parameters in `launch.json`:
+
+```json
+{
+  "version": "0.3.0",
+  "configurations": [
+    {
+      "type": "minecraft-js",
+      "request": "attach",
+      "name": "Debug with Minecraft",
+      "mode": "connect",
+      "preLaunchTask": "build",
+      "targetModuleUuid": "7c7e693f-99f4-41a9-95e0-1f57b37e1e12",
       "sourceMapRoot": "${workspaceFolder}/dist/debug/",
       "generatedSourceRoot": "${workspaceFolder}/dist/scripts/",
       "port": 19144
@@ -106,7 +142,7 @@ At the root of the behavior pack you want to debug, add a `.vscode` subfolder. A
 }
 ```
 
-Note that `generatedSourceRoot` should point at a folder where your JavaScript files (*.js) are generated and stored. `sourceMapRoot` should point at a folder where you have source map files - typically created during your build process - that tie your generated JavaScript source files back to your potential TypeScript source.
+Note that `generatedSourceRoot` should point at a folder where your generated JavaScript files (*.js) are stored - for example, the outputs of a TypeScript build process. `sourceMapRoot` should point at a folder where you have source map files - typically created during your build process - that tie your generated JavaScript source files back to your potential TypeScript source.
 
 #### Run your Minecraft Behavior Pack
 
