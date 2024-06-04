@@ -2,10 +2,7 @@
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
+        "files": ["**/*.md", "**/*.yml"],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -27,10 +24,7 @@
         "group": "minecraft-core"
       },
       {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
+        "files": ["**/*.md", "**/*.yml"],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -59,12 +53,7 @@
     },
     "resource": [
       {
-        "files": [
-          "**/*.png",
-          "**/*.gif",
-          "**/*.jpg",
-          "**/*.pdf"
-        ],
+        "files": ["**/*.png", "**/*.gif", "**/*.jpg", "**/*.pdf"],
         "exclude": [
           "**/obj/**",
           "**/server-net/**",
@@ -81,12 +70,7 @@
         "group": "minecraft-core"
       },
       {
-        "files": [
-          "**/*.png",
-          "**/*.gif",
-          "**/*.jpg",
-          "**/*.pdf"
-        ],
+        "files": ["**/*.png", "**/*.gif", "**/*.jpg", "**/*.pdf"],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -105,14 +89,15 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/minecraft-creator",
       "ms.topic": "reference",
-      "uhfHeaderId": "minecraft-creator"
+      "uhfHeaderId": "minecraft-creator",
+      "brand": "minecraft",
+      "searchScope": ["Minecraft"]
     },
     "fileMetadata": {
       "ms.topic": {
         "Reference/Source/VanillaBehaviorPack_Snippets/**/*.md": "sample"
       },
-      "ms.prod": {
-      }
+      "ms.prod": {}
     },
     "template": [],
     "dest": "minecraft-creator",
