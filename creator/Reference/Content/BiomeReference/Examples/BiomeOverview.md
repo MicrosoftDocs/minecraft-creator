@@ -1,12 +1,12 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Biome Documentation - Overview
+title: Biome JSON and Overview
 description: "A reference document discussing biomes"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Biome Documentation - Overview
+# Biome JSON and Overview
 
 Biomes describe how a local patch of the world should look and behave. By writing custom biome data you could:
 
