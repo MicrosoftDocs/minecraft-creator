@@ -15,7 +15,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
-Defines the entity's strength to carry items.
+Defines the entity's ability to carry items. An entity with a higher strength would have higher potential carry capacity and more item slots.
 
 ## Properties
 

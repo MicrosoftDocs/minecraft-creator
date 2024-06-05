@@ -28,6 +28,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
 - [BlockPaletteItemType](BlockPaletteItemType.md)
+- [BrushPipelineOperationType](BrushPipelineOperationType.md)
 - [CoreActionBarItemType](CoreActionBarItemType.md)
 - [CoreMenuType](CoreMenuType.md)
 - [CursorControlMode](CursorControlMode.md)
@@ -125,6 +126,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [WidgetStateChangeEventData](WidgetStateChangeEventData.md)
 
 ## Interfaces
+- [BrushPipelineOperation](BrushPipelineOperation.md)
 - [BrushShape](BrushShape.md)
 - [ClipboardWriteOptions](ClipboardWriteOptions.md)
 - [CursorAttachmentProperties](CursorAttachmentProperties.md)

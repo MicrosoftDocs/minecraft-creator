@@ -305,6 +305,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerCursorInventoryComponent](PlayerCursorInventoryComponent.md)
 - [PlayerDimensionChangeAfterEvent](PlayerDimensionChangeAfterEvent.md)
 - [PlayerDimensionChangeAfterEventSignal](PlayerDimensionChangeAfterEventSignal.md)
+- [PlayerEmoteAfterEvent](PlayerEmoteAfterEvent.md)
+- [PlayerEmoteAfterEventSignal](PlayerEmoteAfterEventSignal.md)
 - [PlayerGameModeChangeAfterEvent](PlayerGameModeChangeAfterEvent.md)
 - [PlayerGameModeChangeAfterEventSignal](PlayerGameModeChangeAfterEventSignal.md)
 - [PlayerGameModeChangeBeforeEvent](PlayerGameModeChangeBeforeEvent.md)

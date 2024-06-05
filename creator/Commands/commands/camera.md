@@ -94,34 +94,38 @@ Specifies a camera transition with a specified position.
 
 
 ### Set camera to default
-`/camera <players: target> set <preset: CameraPresets> [default: default]`
+`/camera <players: target> set <preset: CameraPresets> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 Sets a camera using the default settings for the camera preset.
 
 ### Clear camera
-`/camera <players: target> clear`
+`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 Clears the current camera from the player.
 
 ### Fade out to times and color
-`/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float> color <red: int> <green: int> <blue: int>`
+`/camera <players: target> set <preset: CameraPresets> [default: default]`
 
 Specifies a camera fade-out type operation and color transition.
 
 ### Fade out to times
-`/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float>`
+`/camera <players: target> clear`
 
 Specifies a camera timed fade-out type operation.
 
 ### Fade to color
-`/camera <players: target> fade color <red: int> <green: int> <blue: int>`
+`/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float> color <red: int> <green: int> <blue: int>`
 
 Specifies a camera fade to a color wipe.
 
 ### Fade
-`/camera <players: target> fade`
+`/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float>`
 
 Specifies a general camera fade-out.
+
+### `/camera <players: target> fade color <red: int> <green: int> <blue: int>`
+
+### `/camera <players: target> fade`
 
 ## Arguments
 - `blue`: int
@@ -154,8 +158,10 @@ A camera preset defined in a camera JSON file.
 Red component of a color value. Valid values are between 0 and 255.
 - `xRot`: rotation
 x Rotation value
+- `xViewOffset`: float
 - `yRot`: rotation
 y Rotation value
+- `yViewOffset`: float
 
 ## Enums
 ### `CameraPresets`

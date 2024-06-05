@@ -164,6 +164,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`spawnParticle`](Player.md#spawnparticle)*
 - Added function *[`startItemCooldown`](Player.md#startitemcooldown)*
 #### Added *[`PlayerCursorInventoryComponent`](PlayerCursorInventoryComponent.md)*
+#### Added *[`PlayerEmoteAfterEvent`](PlayerEmoteAfterEvent.md)*
+#### Added *[`PlayerEmoteAfterEventSignal`](PlayerEmoteAfterEventSignal.md)*
 #### Added *[`PlayerGameModeChangeAfterEvent`](PlayerGameModeChangeAfterEvent.md)*
 #### Added *[`PlayerGameModeChangeAfterEventSignal`](PlayerGameModeChangeAfterEventSignal.md)*
 #### Added *[`PlayerGameModeChangeBeforeEvent`](PlayerGameModeChangeBeforeEvent.md)*
@@ -212,6 +214,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`gameRuleChange`](WorldAfterEvents.md#gamerulechange)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
+- Added property *[`playerEmote`](WorldAfterEvents.md#playeremote)*
 - Added property *[`playerGameModeChange`](WorldAfterEvents.md#playergamemodechange)*
 - Added property *[`playerInputPermissionCategoryChange`](WorldAfterEvents.md#playerinputpermissioncategorychange)*
 - Added property *[`playerInteractWithBlock`](WorldAfterEvents.md#playerinteractwithblock)*

@@ -1016,6 +1016,8 @@ Warped Roots
 Warped Roots
 - `minecraft:magenta_concrete`
 - `magenta_concrete`
+- `minecraft:dark_prismarine`
+- `dark_prismarine`
 - `minecraft:sticky_piston`
 Sticky Piston
 - `sticky_piston`
@@ -2530,6 +2532,8 @@ Grindstone
 Soul Campfire
 - `soul_campfire`
 Soul Campfire
+- `minecraft:prismarine_bricks`
+- `prismarine_bricks`
 - `minecraft:wooden_pressure_plate`
 Wooden Pressure Plate
 - `wooden_pressure_plate`
@@ -2685,9 +2689,7 @@ Planks
 - `minecraft:planks`
 Planks
 - `hard_stained_glass`
-- `minecraft:hard_stained_glass`
 - `hard_stained_glass_pane`
-- `minecraft:hard_stained_glass_pane`
 - `wooden_slab`
 Wooden Slab
 - `minecraft:wooden_slab`
@@ -2749,7 +2751,9 @@ Stone Block Slab 4
 - `minecraft:stone_block_slab4`
 Stone Block Slab 4
 - `double_stone_block_slab`
-- `minecraft:double_stone_block_slab`
+- `double_stone_block_slab2`
+- `double_stone_block_slab3`
+- `double_stone_block_slab4`
 - `monster_egg`
 Monster Egg
 - `minecraft:monster_egg`
@@ -4325,8 +4329,6 @@ Lodestone Compass
 - `ominous_trial_key`
 - `speckled_melon`
 Speckled Melon
-- `real_double_stone_slab4`
-Real Double Stone Slab 4
 - `nametag`
 Nametag
 - `glazedterracotta.white`
@@ -4376,12 +4378,6 @@ Glazed Terracotta Black
 - `glazedterracotta.red`
 Glazed Terracotta Red
 - `record_relic`
-- `real_double_stone_slab`
-Real Double Stone Slab
-- `real_double_stone_slab2`
-Real Double Stone Slab 2
-- `real_double_stone_slab3`
-Real Double Stone Slab 3
 - `record_cat`
 Record Cat
 - `record_creator`
