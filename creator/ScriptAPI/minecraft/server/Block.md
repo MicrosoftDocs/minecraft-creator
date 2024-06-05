@@ -120,7 +120,7 @@ Type: [*BlockType*](BlockType.md)
 ### **typeId**
 `read-only typeId: string;`
 
-Identifier of the type of block for this block.
+Identifier of the type of block for this block. Warning: Vanilla block names can be changed in future releases, try using 'Block.matches' instead for block comparison.
 
 Type: *string*
 

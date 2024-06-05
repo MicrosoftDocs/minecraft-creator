@@ -234,6 +234,8 @@ Warped Pressure Plate
 Diamond Block
 - `diamond_block`
 Diamond Block
+- `minecraft:dark_prismarine_double_slab`
+- `dark_prismarine_double_slab`
 - `minecraft:oak_stairs`
 Oak Stairs
 - `oak_stairs`
@@ -370,6 +372,8 @@ Powered Comparator
 Powered Comparator
 - `minecraft:jungle_fence`
 - `jungle_fence`
+- `minecraft:cut_sandstone_double_slab`
+- `cut_sandstone_double_slab`
 - `minecraft:warped_wall_sign`
 Warped Wall Sign
 - `warped_wall_sign`
@@ -408,6 +412,8 @@ Magenta Candle
 Mangrove Double Slab
 - `mangrove_double_slab`
 Mangrove Double Slab
+- `minecraft:smooth_quartz_double_slab`
+- `smooth_quartz_double_slab`
 - `minecraft:light_gray_stained_glass`
 - `light_gray_stained_glass`
 - `minecraft:obsidian`
@@ -440,6 +446,8 @@ Polished Deepslate Double Slab
 Stone Button
 - `stone_button`
 Stone Button
+- `minecraft:red_nether_brick_double_slab`
+- `red_nether_brick_double_slab`
 - `minecraft:waxed_copper_bulb`
 - `waxed_copper_bulb`
 - `minecraft:sponge`
@@ -456,6 +464,8 @@ Exposed Double Cut Copper Slab
 Normal Stone Stairs
 - `normal_stone_stairs`
 Normal Stone Stairs
+- `minecraft:diorite_double_slab`
+- `diorite_double_slab`
 - `minecraft:end_stone_brick_slab`
 - `end_stone_brick_slab`
 - `minecraft:hardened_clay`
@@ -526,6 +536,8 @@ Green Candle
 Waxed Exposed Copper
 - `waxed_exposed_copper`
 Waxed Exposed Copper
+- `minecraft:red_sandstone_double_slab`
+- `red_sandstone_double_slab`
 - `minecraft:birch_wood`
 - `birch_wood`
 - `minecraft:hay_block`
@@ -1082,6 +1094,10 @@ Lapis Block
 Coal Ore
 - `coal_ore`
 Coal Ore
+- `minecraft:mossy_stone_brick_double_slab`
+- `mossy_stone_brick_double_slab`
+- `minecraft:cut_red_sandstone_double_slab`
+- `cut_red_sandstone_double_slab`
 - `minecraft:redstone_ore`
 Redstone Ore
 - `redstone_ore`
@@ -1116,6 +1132,8 @@ Nether Wart Block
 Nether Wart Block
 - `minecraft:prismarine_slab`
 - `prismarine_slab`
+- `minecraft:prismarine_double_slab`
+- `prismarine_double_slab`
 - `minecraft:cherry_door`
 - `cherry_door`
 - `minecraft:crimson_hyphae`
@@ -1152,6 +1170,8 @@ Crimson Trapdoor
 Basalt
 - `basalt`
 Basalt
+- `minecraft:normal_stone_double_slab`
+- `normal_stone_double_slab`
 - `minecraft:stone_brick_double_slab`
 - `stone_brick_double_slab`
 - `minecraft:light_blue_terracotta`
@@ -1170,6 +1190,8 @@ Warped Roots
 Warped Roots
 - `minecraft:magenta_concrete`
 - `magenta_concrete`
+- `minecraft:dark_prismarine`
+- `dark_prismarine`
 - `minecraft:sticky_piston`
 Sticky Piston
 - `sticky_piston`
@@ -1212,6 +1234,8 @@ Frog Spawn
 Acacia Door
 - `acacia_door`
 Acacia Door
+- `minecraft:smooth_sandstone_double_slab`
+- `smooth_sandstone_double_slab`
 - `minecraft:red_shulker_box`
 - `red_shulker_box`
 - `minecraft:stripped_cherry_log`
@@ -1878,6 +1902,8 @@ Carrots
 - `waxed_oxidized_copper_door`
 - `minecraft:dead_horn_coral`
 - `dead_horn_coral`
+- `minecraft:andesite_double_slab`
+- `andesite_double_slab`
 - `minecraft:grass_block`
 - `grass_block`
 - `minecraft:tripwire_hook`
@@ -1958,6 +1984,8 @@ Fire
 Fire
 - `minecraft:fern`
 - `fern`
+- `minecraft:purpur_double_slab`
+- `purpur_double_slab`
 - `minecraft:torchflower`
 - `torchflower`
 - `minecraft:infested_stone`
@@ -2052,6 +2080,8 @@ Acacia Standing Sign
 Acacia Standing Sign
 - `minecraft:polished_granite_slab`
 - `polished_granite_slab`
+- `minecraft:smooth_red_sandstone_double_slab`
+- `smooth_red_sandstone_double_slab`
 - `minecraft:tuff_brick_stairs`
 - `tuff_brick_stairs`
 - `minecraft:blue_shulker_box`
@@ -2130,24 +2160,14 @@ Wooden Button
 Mangrove Door
 - `mangrove_door`
 Mangrove Door
+- `minecraft:end_stone_brick_double_slab`
+- `end_stone_brick_double_slab`
 - `minecraft:weathered_copper_door`
 - `weathered_copper_door`
 - `minecraft:pearlescent_froglight`
 Pearlescent Froglight
 - `pearlescent_froglight`
 Pearlescent Froglight
-- `minecraft:double_stone_block_slab2`
-Double Stone Block Slab 2
-- `double_stone_block_slab2`
-Double Stone Block Slab 2
-- `minecraft:double_stone_block_slab3`
-Double Stone Block Slab 3
-- `double_stone_block_slab3`
-Double Stone Block Slab 3
-- `minecraft:double_stone_block_slab4`
-Double Stone Block Slab 4
-- `double_stone_block_slab4`
-Double Stone Block Slab 4
 - `minecraft:bamboo_button`
 - `bamboo_button`
 - `minecraft:tall_grass`
@@ -2342,6 +2362,8 @@ Crying Obsidian
 - `dead_fire_coral_fan`
 - `minecraft:decorated_pot`
 - `decorated_pot`
+- `minecraft:granite_double_slab`
+- `granite_double_slab`
 - `minecraft:enchanting_table`
 Enchanting Table
 - `enchanting_table`
@@ -2418,6 +2440,8 @@ Budding Amethyst
 Budding Amethyst
 - `minecraft:sniffer_egg`
 - `sniffer_egg`
+- `minecraft:polished_diorite_double_slab`
+- `polished_diorite_double_slab`
 - `minecraft:birch_stairs`
 Birch Stairs
 - `birch_stairs`
@@ -2540,6 +2564,8 @@ Weathered Cut Copper
 Warped Standing Sign
 - `warped_standing_sign`
 Warped Standing Sign
+- `minecraft:polished_andesite_double_slab`
+- `polished_andesite_double_slab`
 - `minecraft:cracked_polished_blackstone_bricks`
 Cracked Polished Blackstone Bricks
 - `cracked_polished_blackstone_bricks`
@@ -2796,6 +2822,8 @@ End Portal
 - `yellow_stained_glass`
 - `minecraft:jungle_double_slab`
 - `jungle_double_slab`
+- `minecraft:polished_granite_double_slab`
+- `polished_granite_double_slab`
 - `minecraft:spruce_wood`
 - `spruce_wood`
 - `minecraft:blackstone`
@@ -2904,6 +2932,8 @@ Polished Blackstone Button
 - `crafter`
 - `minecraft:spruce_planks`
 - `spruce_planks`
+- `minecraft:mossy_cobblestone_double_slab`
+- `mossy_cobblestone_double_slab`
 - `minecraft:furnace`
 Furnace
 - `furnace`
@@ -2922,6 +2952,8 @@ Waxed Cut Copper Slab
 Polished Deepslate Wall
 - `polished_deepslate_wall`
 Polished Deepslate Wall
+- `minecraft:prismarine_brick_double_slab`
+- `prismarine_brick_double_slab`
 - `minecraft:dried_kelp_block`
 Dried Kelp Block
 - `dried_kelp_block`
@@ -2968,6 +3000,8 @@ Grindstone
 Soul Campfire
 - `soul_campfire`
 Soul Campfire
+- `minecraft:prismarine_bricks`
+- `prismarine_bricks`
 - `minecraft:wooden_pressure_plate`
 Wooden Pressure Plate
 - `wooden_pressure_plate`
@@ -3248,6 +3282,18 @@ Stone Block Slab 4
 Double Stone Block Slab
 - `minecraft:double_stone_block_slab`
 Double Stone Block Slab
+- `double_stone_block_slab2`
+Double Stone Block Slab 2
+- `minecraft:double_stone_block_slab2`
+Double Stone Block Slab 2
+- `double_stone_block_slab3`
+Double Stone Block Slab 3
+- `minecraft:double_stone_block_slab3`
+Double Stone Block Slab 3
+- `double_stone_block_slab4`
+Double Stone Block Slab 4
+- `minecraft:double_stone_block_slab4`
+Double Stone Block Slab 4
 - `monster_egg`
 Monster Egg
 - `minecraft:monster_egg`
