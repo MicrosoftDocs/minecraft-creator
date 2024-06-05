@@ -27,6 +27,7 @@ Type: *string*[]
 
 ## Methods
 - [activateBrushShape](#activatebrushshape)
+- [getBrushVolume](#getbrushvolume)
 - [getSettingsUIElements](#getsettingsuielements)
 - [registerBrushShape](#registerbrushshape)
 - [uiSettingValueChanged](#uisettingvaluechanged)
@@ -46,6 +47,20 @@ activateBrushShape(name: string): minecraftserver.CompoundBlockVolume
 
 > [!WARNING]
 > This function can throw errors.
+
+### **getBrushVolume**
+`
+getBrushVolume(origin: minecraftserver.Vector3, pipeline: BrushPipelineOperation[]): minecraftserver.CompoundBlockVolume | undefined
+`
+
+#### **Parameters**
+- **origin**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **pipeline**: [*BrushPipelineOperation*](BrushPipelineOperation.md)[]
+
+**Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) | *undefined*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **getSettingsUIElements**
 `

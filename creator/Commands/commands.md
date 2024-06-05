@@ -82,7 +82,6 @@ description: List and descriptions of Minecraft commands and enums
 | [`/titleraw`](./commands/titleraw.md) | Controls screen titles with JSON messages. | Game Directors | Yes |
 | [`/toggledownfall`](./commands/toggledownfall.md) | Toggles the weather. | Game Directors | Yes |
 | [`/transfer`](./commands/transfer.md) | Transfers a player to another server. | Owner | Yes |
-| [`/volumearea`](./commands/volumearea.md) | [Experimental Command]. Manages a set of named volumes. | Game Directors | Yes |
 | [`/weather`](./commands/weather.md) | Sets the weather in the environment. See more in the [Popular Commands documentation](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandspopularcommands#weather). | Game Directors | Yes |
 | [`/wsserver`](./commands/wsserver.md) | Attempts to connect to the websocket server on the provided URL. | Admin | Yes |
 | [`/xp`](./commands/xp.md) | Adds or removes player experience. | Game Directors | Yes |

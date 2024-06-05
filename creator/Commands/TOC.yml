@@ -146,8 +146,6 @@
   href: commands/toggledownfall.md
 - name: transfer
   href: commands/transfer.md
-- name: volumearea
-  href: commands/volumearea.md
 - name: weather
   href: commands/weather.md
 - name: wsserver

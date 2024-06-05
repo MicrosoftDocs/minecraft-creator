@@ -626,6 +626,10 @@
       href: minecraft/server/PlayerDimensionChangeAfterEvent.md
     - name: PlayerDimensionChangeAfterEventSignal
       href: minecraft/server/PlayerDimensionChangeAfterEventSignal.md
+    - name: PlayerEmoteAfterEvent
+      href: minecraft/server/PlayerEmoteAfterEvent.md
+    - name: PlayerEmoteAfterEventSignal
+      href: minecraft/server/PlayerEmoteAfterEventSignal.md
     - name: PlayerGameModeChangeAfterEvent
       href: minecraft/server/PlayerGameModeChangeAfterEvent.md
     - name: PlayerGameModeChangeAfterEventSignal
@@ -908,6 +912,8 @@
       href: minecraft/server-editor/ActionTypes.md
     - name: BlockPaletteItemType
       href: minecraft/server-editor/BlockPaletteItemType.md
+    - name: BrushPipelineOperationType
+      href: minecraft/server-editor/BrushPipelineOperationType.md
     - name: CoreActionBarItemType
       href: minecraft/server-editor/CoreActionBarItemType.md
     - name: CoreMenuType
@@ -1040,6 +1046,8 @@
       href: minecraft/server-editor/WidgetManager.md
     - name: WidgetStateChangeEventData
       href: minecraft/server-editor/WidgetStateChangeEventData.md
+    - name: BrushPipelineOperation
+      href: minecraft/server-editor/BrushPipelineOperation.md
     - name: BrushShape
       href: minecraft/server-editor/BrushShape.md
     - name: ClipboardWriteOptions

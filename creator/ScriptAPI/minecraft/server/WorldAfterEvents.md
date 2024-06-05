@@ -229,6 +229,16 @@ Fires when a player moved to a different dimension.
 Type: [*PlayerDimensionChangeAfterEventSignal*](PlayerDimensionChangeAfterEventSignal.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
+### **playerEmote**
+`read-only playerEmote: PlayerEmoteAfterEventSignal;`
+
+Type: [*PlayerEmoteAfterEventSignal*](PlayerEmoteAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
 ### **playerGameModeChange**
 `read-only playerGameModeChange: PlayerGameModeChangeAfterEventSignal;`
 
