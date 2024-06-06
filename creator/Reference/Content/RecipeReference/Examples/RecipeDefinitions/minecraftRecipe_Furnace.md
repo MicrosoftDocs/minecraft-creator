@@ -14,7 +14,7 @@ Represents a recipe that is to be used with a furnace. `Input` items will burn a
 
 |Name| Type| Description |
 |:-----------|:-----------|:-----------|
-|input| item names| Items used as input for the furnace recipe. |
+|input| item names| Items used as input for the furnace recipe. `data` is used to specify the data value of a block or item to an exact id, if the item has variations. `count` is the quantity of the item being input. |
 |output| item names| Items used as output for the furnace recipe. |
 |tags |String array|  Item that can create the furnace recipe, such as "furnace". |
 

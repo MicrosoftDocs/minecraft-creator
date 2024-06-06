@@ -27,7 +27,7 @@ Let's take a look at the overloads in more detail, beginning with the `/kill` co
 
 ## Kill
 
-`/kill` is a command that simulates the loot drop of a selected entity as if it were killed normally. This differs from `/loot spawn` in that some loot tables specify a condition of "condition": "killed_by_player" for specific loot to be dropped.  
+`/kill` is a command that simulates the loot drop of a selected entity as if it were killed normally. This differs from `/loot spawn` in that some loot tables specify a condition of `"condition": "killed_by_player"` for specific loot to be dropped.  
 
 ### Syntax
 
