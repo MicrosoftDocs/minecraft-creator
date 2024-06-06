@@ -49,7 +49,7 @@ The `/loot replace block` overload allows users to directly target containers an
 
 `/loot replace block <position: x y z> slot.container <slotId: int> [<count: int>] <source: loot|kill> <source parameter> [<tool>|mainhand|offhand]`
 
-## Parameters
+## Loot Replace Block Parameters
 
 - **replace block** - Keyword to identify overload.
 
@@ -85,7 +85,7 @@ The `/loot replace entity` overload allows users to directly target entities and
 
 `/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> [<count: int>] <source: loot|kill> <source parameter> [<tool>|mainhand|offhand]`
 
-## Parameters
+## Loot Replace Entity Parameters
 
 - **replace entity** - Keyword to identify overload.
 
