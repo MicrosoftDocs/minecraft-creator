@@ -1,12 +1,12 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Default Minecraft Block States and Traits
 description: A listing of default Minecraft block states and traits
 ms.service: minecraft-bedrock-edition
 ---
 
-## Block States
+# Block States
 
 | Block State Name| Type| Valid Values| Description |
 |:-----------|:-----------|:-----------|:-----------|

@@ -345,7 +345,7 @@ Loading enforces one biome per file, and the file name and the actual biome name
 
 Any component that this biome uses.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |minecraft:capped_surface| Object of type minecraft:capped_surface| Optional| Generates surface on blocks with non-solid blocks above or below.|
 |minecraft:climate| Object of type minecraft:climate| Optional| Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.|
@@ -365,7 +365,7 @@ minecraft:overworld_generation_rules| Object of type minecraft:overworld_generat
 
 Contains a description and components to define a biome.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |components| Object of type biome Components| Required| Components for this biome.
 description| Object of type biome Description| Required| Non-component settings, including the biome name.|
@@ -374,7 +374,7 @@ description| Object of type biome Description| Required| Non-component settings,
 
 Contains non-component settings for a biome.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |identifier| String| Required| The name of the biome, used by other features like the '/locate biome' command.|
 
@@ -382,7 +382,7 @@ Contains non-component settings for a biome.
 
 Contains a format version and a biome definition
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |format_version| String| Required| Version of the JSON schema used by this file|
 |minecraft:biome| Object of type biome Definition| Required| A single biome definition|
@@ -391,7 +391,7 @@ Contains a format version and a biome definition
 
 Specifies a particular block. Can be a string block name or a JSON object.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |name| String| Required| Name of the block|
 |states| Object| Optional| Contains members named after each state, with Boolean, integer, or string values.|
@@ -404,7 +404,7 @@ A JSON field that specifies a Molang expression. Can be an integer, float, Boole
 
 Generates surface on blocks with non-solid blocks above or below.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |beach_material| Object of type Block Specifier| Optional| Material used to decorate surface near sea level.|
 |ceiling_materials| Array of Object of type Block Specifier| Required| Materials used for the surface ceiling.|
@@ -417,7 +417,7 @@ Generates surface on blocks with non-solid blocks above or below.
 
 Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |ash| Float| Optional| Density of ash precipitation visuals|
 |blue_spores| Float| Optional| Density of blue spore precipitation visuals|
@@ -432,7 +432,7 @@ Describes temperature, humidity, precipitation, and similar. Biomes without this
 
 Similar to overworld_surface. Adds icebergs.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |foundation_material| Object of type Block Specifier| Required| Controls the block type used deep underground in this biome|
 |mid_material| Object of type Block Specifier| Required| Controls the block type used in a layer below the surface of this biome|
@@ -446,7 +446,7 @@ Similar to overworld_surface. Adds icebergs.
 
 Similar to overworld_surface. Adds colored strata and optional pillars.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |bryce_pillars| Boolean| Required| Whether the mesa generates with pillars|
 |clay_material| Object of type Block Specifier| Required| Base clay block to use|
@@ -464,7 +464,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 
 Noise parameters used to drive mountain terrain generation in Overworld.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |peaks_factor| Float| Optional| Does nothing|
 |steep_material_adjustment| Object of type minecraft:mountain_parameters - steep_material_adjustment settings| Optional| Defines surface material for steep slopes
@@ -475,7 +475,7 @@ Noise parameters used to drive mountain terrain generation in Overworld.
 
 Defines surface material for steep slopes
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |east_slopes| Boolean| Optional| Enable for east-facing slopes|
 material| Object of type Block Specifier| Optional| Block type use as steep material|
@@ -488,7 +488,7 @@ material| Object of type Block Specifier| Optional| Block type use as steep mate
 
 Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |enabled| Boolean| Required| If false, top slide will be disabled. If true, other parameters will be taken into account.|
 
@@ -497,7 +497,7 @@ Controls the density tapering that happens at the top of the world to prevent te
 
 Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |target_altitude| Float| Optional| Altitude with which this biome should be generated, relative to other biomes.|
 |target_humidity| Float| Optional| Humidity with which this biome should be generated, relative to other biomes.|
@@ -510,7 +510,7 @@ Controls how this biome is instantiated (and then potentially modified) during w
 
 Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |generate_for_climates| Array of Object of type minecraft:overworld_generation_rules - Weighted climate categories settings| Optional| Controls the world generation climate categories that this biome can spawn for. A single biome can be associated with multiple categories with different weightings.|
 |hills_transformation| Object of type minecraft:overworld_generation_rules - Weighted biome names settings| Optional| What biome to switch to when converting to a hilly biome|
@@ -533,7 +533,7 @@ An array of any size containing arrays of exactly two elements. For each contain
 
 Noise parameters used to drive terrain height in the Overworld.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |noise_params| Array of 2 Floats| Optional| First value is depth - more negative means deeper underwater, while more positive means higher. Second value is scale, which affects how much noise changes as it moves from the surface.|
 |noise_type| "default", "default_mutated", "river", "ocean", "deep_ocean", "lowlands", "taiga", "mountains", "highlands", "extreme", "less_extreme", "beach", "stone_beach", "mushroom", "swamp"| Optional| Specifies a preset based on a built-in setting rather than manually using noise_params|
@@ -543,7 +543,7 @@ Noise parameters used to drive terrain height in the Overworld.
 
 Specify fine-detail changes to blocks used in terrain generation (based on a noise function).
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |adjustments| Array of Object of type minecraft:surface_material_adjustments - surface adjustment settings| Optional| All adjustments that match the column's noise values will be applied in the order listed.|
 
@@ -552,7 +552,7 @@ Specify fine-detail changes to blocks used in terrain generation (based on a noi
 
 The specific blocks used for this surface adjustment
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |foundation_material| Object of type Block Specifier| Optional| Controls the block type used deep underground in this biome when this adjustment is active.|
 |mid_material| Object of type Block Specifier| Optional| Controls the block type used in a layer below the surface of this biome when this adjustment is active.|
@@ -565,7 +565,7 @@ The specific blocks used for this surface adjustment
 
 An adjustment to generated terrain, replacing blocks based on the specified settings.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |height_range| Array of 2 Molang expressions| Optional| Defines a range of noise values [min, max] for which this adjustment should be applied.|
 |materials| Object of type minecraft:surface_material_adjustments - surface adjustment materials settings| Required| |
@@ -577,7 +577,7 @@ An adjustment to generated terrain, replacing blocks based on the specified sett
 
 Controls the blocks used for the default Minecraft Overworld terrain generation.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |foundation_material| Object of type Block Specifier| Required| Controls the block type used deep underground in this biome.|
 |mid_material| Object of type Block Specifier| Required| Controls the block type used in a layer below the surface of this biome.|
@@ -591,7 +591,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 
 Similar to overworld_surface. Adds swamp surface details.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |foundation_material| Object of type Block Specifier| Required| Controls the block type used deep underground in this biome.|
 |mid_material| Object of type Block Specifier| Required| Controls the block type used in a layer below the surface of this biome.|
@@ -605,7 +605,7 @@ Similar to overworld_surface. Adds swamp surface details.
 
 Attach arbitrary string tags to this biome.
 
-|Name |Type |Required? |Description |
+|Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
 |tags| Array of String| Required| Array of string tags used by other systems such as entity spawning|
 
