@@ -354,7 +354,7 @@ Any component that this biome uses.
 |minecraft:mesa_surface| Object of type minecraft:mesa_surface| Optional| Similar to overworld_surface. Adds colored strata and optional pillars.|
 |minecraft:mountain_parameters| Object of type minecraft:mountain_parameters| Optional| Noise parameters used to drive mountain terrain generation in Overworld.|
 |minecraft:multinoise_generation_rules| Object of type minecraft:multinoise_generation_rules| Optional| Controls how this biome is instantiated (and then potentially modified) during world generation |of the nether.|
-minecraft:overworld_generation_rules| Object of type minecraft:overworld_generation_rules| Optional| Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.|
+|minecraft:overworld_generation_rules| Object of type minecraft:overworld_generation_rules| Optional| Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.|
 |minecraft:overworld_height| Object of type minecraft:overworld_height| Optional| Noise parameters used to drive terrain height in the Overworld.|
 |minecraft:surface_material_adjustments| Object of type minecraft:surface_material_adjustments| Optional| Specify fine-detail changes to blocks used in terrain generation (based on a noise function).|
 |minecraft:surface_parameters| Object of type minecraft:surface_parameters| Optional| Controls the blocks used for the default Minecraft Overworld terrain generation.|
@@ -516,7 +516,7 @@ Controls how this biome is instantiated (and then potentially modified) during w
 |generate_for_climates| Array of Object of type minecraft:overworld_generation_rules - Weighted climate categories settings| Optional| Controls the world generation climate categories that this biome can spawn for. A single biome can be associated with multiple categories with different weightings.|
 |hills_transformation| Object of type minecraft:overworld_generation_rules - Weighted biome names settings| Optional| What biome to switch to when converting to a hilly biome|
 |mutate_transformation| Object of type minecraft:overworld_generation_rules - Weighted biome names settings| Optional| What biome to switch to when converting to a mutated biome|
-|river_transformation| Object of type minecraft:overworld_generation_rules - Weighted biome names |settings| Optional| What biome to switch to when converting to a river biome (if not the Vanilla 'river' biome)|
+|river_transformation| Object of type minecraft:overworld_generation_rules - Weighted biome names settings| Optional| What biome to switch to when converting to a river biome (if not the Vanilla 'river' biome)|
 |shore_transformation| Object of type minecraft:overworld_generation_rules - Weighted biome names settings| Optional| What biome to switch to when adjacent to an ocean biome|
 
 
