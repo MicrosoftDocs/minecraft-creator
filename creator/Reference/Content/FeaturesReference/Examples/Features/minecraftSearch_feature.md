@@ -52,7 +52,7 @@ Attaching apples to a tree canopy
 
 ```json
 {
-  "format_version": 1.13.0,
+  "format_version": "1.13.0",
   "minecraft:search_feature": {
     "description": {
       "identifier": "example:find_valid_apples_feature"
@@ -64,5 +64,6 @@ Attaching apples to a tree canopy
     },
     "search_axis": "-y",
     "required_successes": 3
+  }
 }
 ```

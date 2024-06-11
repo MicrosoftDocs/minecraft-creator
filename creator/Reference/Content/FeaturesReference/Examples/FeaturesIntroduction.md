@@ -244,7 +244,7 @@ To control the world generation pass at which a feature rule is applied, you can
 
 Features attached with the second method are called "forced" or "explicit" features.
 
-Unlike feature rules, forced features are not defined in separate JSON files. Instead, they are specified in the existing biome JSON definitions via the "minecraft:forced_features" component.
+Unlike feature rules, forced features are not defined in separate JSON files. Instead, they are specified in the existing biome JSON definitions via the `"minecraft:forced_features"` component.
 Like feature rules, this component includes fields that define when features should be placed ("placement_pass") and how they should be scattered ("distribution").
 
 For more information about biome components (including the complete JSON schema), consult the [biome documentation](../../BiomeReference/Examples/BiomeOverview.md).

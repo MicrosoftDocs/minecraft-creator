@@ -19,7 +19,7 @@ All blocks within the geode fail to be placed.
 ### Schema
 
 ```json
-object "minecraft:geode_feature" : opt
+object "example:geode_feature" : opt
 {
   object "description"
   {
