@@ -347,7 +347,7 @@ Loading enforces one biome per file, and the file name and the actual biome name
 Any component that this biome uses.
 
 |Name |Type |Required |Description |
-|:----------|:--------|:-------|:--------|
+|:-----------|:-----------|:-------|:-----------|
 |minecraft:capped_surface| Object of type minecraft:capped_surface| Optional| Generates surface on blocks with non-solid blocks above or below.|
 |minecraft:climate| Object of type minecraft:climate| Optional| Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.|
 |minecraft:frozen_ocean_surface| Object of type minecraft:frozen_ocean_surface| Optional| Similar to overworld_surface. Adds icebergs.|
@@ -368,8 +368,8 @@ Contains a description and components to define a biome.
 
 |Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
-|components| Object of type biome Components| Required| Components for this biome.
-description| Object of type biome Description| Required| Non-component settings, including the biome name.|
+|components| Object of type biome Components| Required| Components for this biome.|
+|description| Object of type biome Description| Required| Non-component settings, including the biome name.|
 
 ## Biome Description
 
