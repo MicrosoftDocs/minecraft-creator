@@ -28,7 +28,7 @@ In this tutorial, you will learn:
 
 ## Structure Block Sample Behavior Pack
 
-There is a [sample Structure Blocks behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/structure_blocks_sample_behavior_pack) available at the Minecraft samples Github. You can download it to use the same structures used in the tutorial, or to simply get a sense of the structure of behavior packs.
+There is a [sample Structure Blocks behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/structure_blocks_sample_behavior_pack) available at the **Minecraft Samples** GitHub repo. You can download it to use the same structures used in the tutorial, or to simply get a sense of the structure of behavior packs.
 
 ## Create a Structure
 
@@ -49,7 +49,7 @@ To start, we'll save the log cabin.
 5. Leave Show Bounding Box on.
 6. Click Save.
 
-Great! The structure is saved and can now be used all over the in-game world.
+Now, the structure is saved and can be placed in your Minecraft world.
 
 ## Load the Structure
 
@@ -71,42 +71,48 @@ Let's begin building a village by adding another log cabin nearby.
 
 We'll need another set of stairs but otherwise it's looking good! Now you can place as many copies of this log cabin as you'd like to create a village. You can also customize the look of a village by saving different sections of this building as separate structures (like roofs, eaves, and such) and then varying how they're loaded in.
 
-## Creating Structures Using the /structure Command
+## Using the /structure Command
 
-So now we have a saved structure in a structure block. But what if we want to interact with a structure without using a structure block? Let's get to know the `/structure` command.
+So now we have a saved structure in a structure block. But what if we want to interact with a structure **without** using a structure block? Let's get to know the `/structure` command.
+
+**Save a structure**
+
+This command saves a structure and takes in a name, coordinates, and optionally a save mode, a flag to include entities, and a flag to include blocks.
 
 ```
 structure save <name: string> <from: x y z> <to: x y z> [saveMode: StructureSaveMode] [includesEntities: Boolean][includesBlocks: Boolean]
 ```
 
-This command saves a structure and takes in a name, coordinates, and optionally a save mode, a flag to include entities, and a flag to include blocks.
+**Load a structure**
+
+This command loads a structure and takes in the name, location, and optionally rotation, mirroring, animations, entities, and information on whether blocks are include, along with integrity and integrity string.
 
 ```
 structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includesEntites: Boolean] [includesBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string] 
 ```
 
-This command loads a structure and takes in the name, location, and optionally rotation, mirroring, animations, entities, and information on whether blocks are include, along with integrity and integrity string.
+**Delete a saved structure**
+
+This command deletes the saved structure:
 
 ```
 structure delete <name: string>
 ```
 
-Deletes the saved structure.
+![Image of chat open with the structure command entered](Media/StructureBlock/structurecommand.png)
 
-:::image type="content" source="Media/StructureBlock/structurecommand.png" alt-text="The chat open with the structure command entered":::
-
-Let's use the `/structure` command to save and load in a structure.
+Let's use the `/structure` command to save and load a structure.
 
 1. Return to your log cabin.
-1. Open the console and enter the `/structure save` command with the appropriate variables.
+1. Open the console and enter the `/structure save` command with the appropriate coordinates.
 
 - We're using the following: `/structure save house1 -371 120 877 -371 131 881 memory`
 
-1. Great! Now let's load in that same structure elsewhere.
+1. Now, let's load that same structure elsewhere.
 1. Move to a new spot that needs a house.
-1. Open the console and enter the `/structure load` command with your variables.
+1. Open the console and enter the `/structure load` command with your coordinates.
 
-- We're using `/structure load house1 ~ ~ ~ 90_degrees` to load in the house at a 90 degree angle.
+- We're using `/structure load house1 ~ ~ ~ 90_degrees` to load the house at a 90 degree angle.
 
 Great! Now we can build a village more quickly than before.
 
@@ -114,17 +120,21 @@ Great! Now we can build a village more quickly than before.
 
 :::image type="content" source="Media/StructureBlock/structureblockbyblock.png" alt-text="A statue loading in block by block in Adventure mode":::
 
-Let's say we want to load in a statue in Adventure mode, using an animation. This could be at the end of an epic adventure map to reward a player's persistence.
+Let's say we want to load a statue in Adventure mode, using an animation. This could be at the end of an epic adventure map to reward a player's persistence.
 
-We're going to place an impulse command block and use the structure command to load in the statue block by block. When users press an acacia button, the statue will load majestically.
+We're going to place an **impulse command block** and use the `/structure` command to load the statue block by block. When users press a button, the statue will appear majestically.
 
-1. Find an epic place for a statue to animate in.
-2. Open the console and type `/give @s command_block` to give yourself a command block.
-3. Type `/give @s acacia_button` to give yourself a acacia button.
-4. Place the command block and acacia button on two adjacent blocks.
-5. Right click the command block. 
-6. Enter `/structure load statue ~ ~ ~ 0_degrees none block_by_block 10` into the command input.
-    - This loads in the structure called statue at the current location, does not rotate or mirror it, and animates it in one block at a time over ten seconds.
+1. Find a good place for a statue.
+2. Open the chat console and type `/give @s command_block` to give yourself a command block.
+3. Type `/give @s acacia_button` to give yourself an button of any type of wood, such as acacia.
+4. Place the command block and acacia button on two blocks that are directly next to each other.
+5. Right-click the command block.
+6. Enter:
+
+`/structure load statue ~ ~ ~ 0_degrees none block_by_block 10`
+
+ ...into the command input.
+ This loads the structure called **statue** at the current location, does not rotate or mirror it, and animates it in one block at a time over ten seconds.
 7. Go to your world settings and change the world from Creative to Adventure.
 8. Click the acacia button and watch the statue arrive!
 
