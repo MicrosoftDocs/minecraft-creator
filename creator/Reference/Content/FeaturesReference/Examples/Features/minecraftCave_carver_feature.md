@@ -2,6 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:cave_carver_feature
+description: "A reference document detailing the 'cave_carver_feature' feature"
 ms.service: minecraft-bedrock-edition
 ---
 

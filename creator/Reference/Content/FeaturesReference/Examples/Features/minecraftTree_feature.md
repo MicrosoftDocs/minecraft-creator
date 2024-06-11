@@ -2,6 +2,7 @@
 author: iconicnurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:tree_feature
+description: "A reference document detailing the 'minecraftTree_feature' feature"
 ms.service: minecraft-bedrock-edition
 ---
 
