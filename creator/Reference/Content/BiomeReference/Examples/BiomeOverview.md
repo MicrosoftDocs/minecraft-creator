@@ -353,7 +353,7 @@ Any component that this biome uses.
 |minecraft:frozen_ocean_surface| Object of type minecraft:frozen_ocean_surface| Optional| Similar to overworld_surface. Adds icebergs.|
 |minecraft:mesa_surface| Object of type minecraft:mesa_surface| Optional| Similar to overworld_surface. Adds colored strata and optional pillars.|
 |minecraft:mountain_parameters| Object of type minecraft:mountain_parameters| Optional| Noise parameters used to drive mountain terrain generation in Overworld.|
-|minecraft:multinoise_generation_rules| Object of type minecraft:multinoise_generation_rules| Optional| Controls how this biome is instantiated (and then potentially modified) during world generation |of the nether.|
+|minecraft:multinoise_generation_rules| Object of type minecraft:multinoise_generation_rules| Optional| Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.|
 |minecraft:overworld_generation_rules| Object of type minecraft:overworld_generation_rules| Optional| Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.|
 |minecraft:overworld_height| Object of type minecraft:overworld_height| Optional| Noise parameters used to drive terrain height in the Overworld.|
 |minecraft:surface_material_adjustments| Object of type minecraft:surface_material_adjustments| Optional| Specify fine-detail changes to blocks used in terrain generation (based on a noise function).|
