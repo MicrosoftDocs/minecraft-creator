@@ -89,6 +89,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | mule| 2118425| 25 |
 | npc| 307| 51 |
 | ocelot| 21270| 22 |
+| ominous_item_spawner| 145| 145 |
 | painting| 83| 83 |
 | panda| 4977| 113 |
 | parrot| 21278| 30 |

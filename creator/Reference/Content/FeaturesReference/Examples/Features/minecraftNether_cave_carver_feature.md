@@ -1,5 +1,5 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:nether_cave_carver_feature
 description: "A reference document detailing the 'nether_cave_carver_feature' feature"
@@ -36,10 +36,10 @@ Carve nether caves normally
 
 ```json
 {
-"format_version": "1.16.100",
+"format_version": "1.13.0",
   "minecraft:nether_cave_carver_feature": {
     "description": {
-      "identifier": "minecraft:nether_cave_carver_feature"
+      "identifier": "example:nether_cave_carver_feature"
     },
     "fill_with": "minecraft:air"
     "width_modifier": 0.0

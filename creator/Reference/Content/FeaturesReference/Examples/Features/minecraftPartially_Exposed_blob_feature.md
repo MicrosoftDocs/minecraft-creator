@@ -35,7 +35,7 @@ Blobs of Magma blocks partially embedded in the floors of flooded caves
     "format_version": "1.13.0",
     "minecraft:partially_exposed_blob_feature": {
       "description": {
-        "identifier": "minecraft:underwater_magma_feature"
+        "identifier": "example:underwater_magma_feature"
       },
       "places_block": "minecraft:magma",
       "placement_radius_around_floor": 1,

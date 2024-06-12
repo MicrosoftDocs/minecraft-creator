@@ -109,6 +109,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.has_cape| Returns 1.0 if the player has a cape, else it returns 0.0. |
 | query.has_collision| Returns 1.0 if the entity has collisions enabled, else it returns 0.0. |
 | query.has_gravity| Returns 1.0 if the entity is affected by gravity, else it returns 0.0. |
+| query.has_head_gear| Returns boolean whether an entity has an item in their head armor slot or not, or false if no entity in current context. |
 | query.has_owner| Returns 1.0 if the entity has an owner ID, else it returns 0.0. Pertains to wolf. |
 | query.has_player_rider| Returns 1 if the entity has a player riding it in any seat, else it returns 0.|
 | query.has_property| Takes one argument: the name of the property on the entity. Returns 1.0 if a property with the given name exists, 0 otherwise.|

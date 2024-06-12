@@ -1,7 +1,8 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:cave_carver_feature
+description: "A reference document detailing the 'cave_carver_feature' feature"
 ms.service: minecraft-bedrock-edition
 ---
 
@@ -31,18 +32,18 @@ object "minecraft:cave_carver_feature" : opt
 
 ### Example
 
-Carve caves normally
+Carve caves normally.
 
 ```json
 {
-"format_version": "1.16.100",
-  "minecraft:cave_feature": {
-    "description": {
-      "identifier": "minecraft:underground_cave_carver_feature"
-    },
-    "fill_with": "minecraft:air",
-    "width_modifier": 0.0,
-  "skip_carve_chance": 15
-  }
+  "format_version": "1.13.0",
+    "minecraft:cave_carver_feature": {
+      "description": {
+        "identifier": "example:underground_cave_carver_feature"
+      },
+      "fill_with": "minecraft:air",
+      "width_modifier": 0.0,
+      "skip_carve_chance": 15
+    }
 }
 ```
