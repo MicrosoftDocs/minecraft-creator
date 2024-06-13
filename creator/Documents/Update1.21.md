@@ -39,11 +39,11 @@ Another set of Creator APIs have been released out of beta and into stable (see:
 - **EntityQueryOptions**
   - EntityQueryOptions
     - [volume](../ScriptAPI/minecraft/server/EntityQueryOptions.md#volume)
-- **Block TypeID**
+- **Block TypeId**
   - Block
     - [setType](../ScriptAPI/minecraft/server/Block.md#settype)
     - [type](../ScriptAPI/minecraft/server/Block.md#type)
-    - [typeID](../ScriptAPI/minecraft/server/Block.md#typeid)
+    - [typeId](../ScriptAPI/minecraft/server/Block.md#typeid)
     - [matches](../ScriptAPI/minecraft/server/Block.md#matches)
   - BlockType
     - [id](../ScriptAPI/minecraft/server/BlockType.md#id)
@@ -73,7 +73,6 @@ Another set of Creator APIs have been released out of beta and into stable (see:
     - [playerGameModeChange](../ScriptAPI/minecraft/server/WorldBeforeEvents.md#playergamemodechange)
 - **Block Volume APIs**
   - [ListBlockVolume](../ScriptAPI/minecraft/server/ListBlockVolume.md)
-  - [BoundingBox](../ScriptAPI/minecraft/server/BoundingBox.md)
   - [BlockVolumeBase](../ScriptAPI/minecraft/server/BlockVolumeBase.md)
   - [BlockLocationIterator](../ScriptAPI/minecraft/server/BlockLocationIterator.md)
 - **Color Component APIs**
@@ -147,9 +146,8 @@ Scripting is a powerful way to add complex behavior to your experience. It allow
 Looking ahead, here's what you can expect coming in future releases.
  
 **Script API**
-- Game Rule & Gamemode APIs
-- Block TypeID
+
 - Player Interact Events
-- [Custom Components](../Documents/CustomComponents.md) - allows extending Blocks and Items with the power of scripting. This is currently in experimental and we expect this to be stable in a couple of releases. 
+- [Custom Components](../Documents/CustomComponents.md) - allows extending Blocks and Items with the power of scripting. This is currently in experimental and we expect this to be stable in a couple of releases.
 
 For more information on what's next, follow our [Beta/Preview Changelogs](https://feedback.minecraft.net/hc/en-us/sections/360001185332).
