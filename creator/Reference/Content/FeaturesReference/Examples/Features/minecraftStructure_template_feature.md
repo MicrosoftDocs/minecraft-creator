@@ -49,7 +49,7 @@ Place a hot air balloon structure that "floats" in the air
 
 ```json
 {
-  "format_version": 1.13.0,
+  "format_version": "1.13.0",
   "minecraft:structure_template_feature": {
     "description": {
       "identifier": "example:hot_air_balloon_feature"
@@ -61,7 +61,7 @@ Place a hot air balloon structure that "floats" in the air
       "unburied": {},
       "block_intersection": {
         "block_allowlist": [
-          "example:air"
+          "minecraft:air"
         ]
       }
     }

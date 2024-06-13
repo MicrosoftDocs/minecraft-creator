@@ -24,8 +24,8 @@ ms.service: minecraft-bedrock-edition
 | min_item_count| 10| Integer| Limits the amount of each compostable item the mob can use. Any amount held over this number will be composted if possible. |
 | on_arrival| | Trigger| Event to run when the mob reaches their jobsite. |
 |priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| sound_delay_max| N/A| Integer| Unused. |
-| sound_delay_min| N/A| Integer| Unused. |
+| sound_delay_max|*not set*| Integer| Unused. |
+| sound_delay_min|*not set*| Integer| Unused. |
 | speed_multiplier| 0.50| Decimal| Movement speed multiplier of the mob when using this AI Goal |
 | use_block_max| 200| Integer| The maximum interval in which the mob will interact with the composter. |
 | use_block_min| 100| Integer| The minimum interval in which the mob will interact with the composter. |

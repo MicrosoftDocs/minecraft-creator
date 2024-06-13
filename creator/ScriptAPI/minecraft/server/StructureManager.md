@@ -12,14 +12,10 @@ Manager for Structure related APIs. Includes APIs for creating, getting, placing
 
 ## Methods
 - [createEmpty](#createempty)
-::: moniker range="=minecraft-bedrock-experimental"
 - [createFromWorld](#createfromworld)
-::: moniker-end
 - [delete](#delete)
 - [get](#get)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getWorldStructureIds](#getworldstructureids)
-::: moniker-end
 - [place](#place)
 
 ### **createEmpty**
@@ -27,7 +23,7 @@ Manager for Structure related APIs. Includes APIs for creating, getting, placing
 createEmpty(identifier: string, size: Vector3, saveMode?: StructureSaveMode): Structure
 `
 
-Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlockPermutation*](../../minecraft/server/Structure.md#setblockpermutation) to populate the structure with blocks and save changes with @minecraft/server.Structure.save.
+Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlockPermutation*](../../minecraft/server/Structure.md#setblockpermutation) to populate the structure with blocks and save changes with [*@minecraft/server.Structure.saveAs*](../../minecraft/server/Structure.md#saveas).
 
 #### **Parameters**
 - **identifier**: *string*
@@ -50,7 +46,6 @@ Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlock
 >
 > Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **createFromWorld**
 `
 createFromWorld(identifier: string, dimension: Dimension, from: Vector3, to: Vector3, options?: StructureCreateOptions): Structure
@@ -73,9 +68,6 @@ Creates a new Structure from blocks in the world. This is functionally equivalen
 
 **Returns** [*Structure*](Structure.md) - Returns the newly created Structure.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -83,7 +75,6 @@ Creates a new Structure from blocks in the world. This is functionally equivalen
 > This function can throw errors.
 >
 > Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
-::: moniker-end
 
 ### **delete**
 `
@@ -124,7 +115,6 @@ Gets a Structure that is saved to memory or the world.
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getWorldStructureIds**
 `
 getWorldStructureIds(): string[]
@@ -132,12 +122,8 @@ getWorldStructureIds(): string[]
 
 **Returns** *string*[]
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
-::: moniker-end
 
 ### **place**
 `

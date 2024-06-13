@@ -45,7 +45,7 @@ Blue vines in caves
 
 ```json
 {
-  "format_version": 1.13.0,
+  "format_version": "1.13.0",
   "minecraft:multiface_feature": {
     "description": {
       "identifier": "example:blue_vines_feature"

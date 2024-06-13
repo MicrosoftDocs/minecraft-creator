@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .EnchantmentLevelOutOfBoundsError Class
 description: Contents of the .EnchantmentLevelOutOfBoundsError class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EnchantmentLevelOutOfBoundsError Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - *Error*

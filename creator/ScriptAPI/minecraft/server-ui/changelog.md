@@ -9,16 +9,18 @@ description: Changelog of the `@minecraft/server-ui` module
 # `@minecraft/server-ui` Changelog
 
 ## Version Changes
-- [1.2.0-beta](#120-beta)
+- [1.3.0-beta](#130-beta)
+- [1.2.0](#120)
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.2.0-beta
+## 1.3.0-beta
 #### Changed version for module dependency `@minecraft/server` from `1.2.0` to `1.8.0`
-#### Changed *[`ModalFormData`](ModalFormData.md)*
-- Added function *[`submitButton`](ModalFormData.md#submitbutton)*
 #### Added *[`UIManager`](UIManager.md)*
 #### Added object `uiManager`
+## 1.2.0
+#### Changed *[`ModalFormData`](ModalFormData.md)*
+- Added function *[`submitButton`](ModalFormData.md#submitbutton)*
 ## 1.1.0
 #### Changed *[`FormResponse`](FormResponse.md)*
 - Added property *[`cancelationReason`](FormResponse.md#cancelationreason)*

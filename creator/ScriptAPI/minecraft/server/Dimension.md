@@ -61,9 +61,7 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [playSound](#playsound)
-::: moniker-end
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -488,7 +486,6 @@ Returns the current weather.
 > This function can't be called in read-only mode.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playSound**
 `
 playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
@@ -506,9 +503,6 @@ Plays a sound for all players.
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
   
   Additional options for configuring additional effects for the sound.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -558,7 +552,6 @@ const playerSoundOptions: PlayerSoundOptions = {
 
 players[0].playSound('bucket.fill_water', playerSoundOptions);
 ```
-::: moniker-end
 
 ### **runCommand**
 `

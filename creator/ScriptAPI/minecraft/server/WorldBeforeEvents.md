@@ -66,15 +66,10 @@ This event fires before a block is broken by a player.
 
 Type: [*PlayerBreakBlockBeforeEventSignal*](PlayerBreakBlockBeforeEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerGameModeChange**
 `read-only playerGameModeChange: PlayerGameModeChangeBeforeEventSignal;`
 
 Type: [*PlayerGameModeChangeBeforeEventSignal*](PlayerGameModeChangeBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithBlock**
@@ -119,15 +114,10 @@ Type: [*PlayerPlaceBlockBeforeEventSignal*](PlayerPlaceBlockBeforeEventSignal.md
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **weatherChange**
 `read-only weatherChange: WeatherChangeBeforeEventSignal;`
 
 Type: [*WeatherChangeBeforeEventSignal*](WeatherChangeBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **worldInitialize**

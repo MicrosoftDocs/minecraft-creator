@@ -37,14 +37,14 @@ object "minecraft:sequence_feature" : opt
 
 ```json
 {
-  "format_version": 1.3.0,
+  "format_version": 1.13.0,
   "minecraft:sequence_feature": {
     "description": {
       "identifier": "example:oak_tree_then_apples_feature"
     },
     "features": [
-      "oak_tree_feature",
-      "scatter_apples_feature"
+      "example:oak_tree_feature",
+      "example:scatter_apples_feature"
     ]
   }
 }

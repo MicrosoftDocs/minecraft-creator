@@ -84,6 +84,7 @@ Here is a list of all Intrinsic Block States within Minecraft: Bedrock Edition. 
 |occupied_bit |Boolean |True, False |bed |Determines if a bed block is occupied|
 |old_leaf_type |String |oak, spruce, birch, jungle |old leaf, leaves |Determines the leaf type of some blocks|
 |old_log_type |String |oak, spruce, birch, jungle |log |Determines the wood type of some blocks|
+|ominous| Boolean| True, False| Determines if the block is the ominous version|
 |open_bit |Boolean |True, False |acacia door, acacia fence gate, barrel, birch door, birch fence gate, crimson door, crimson fence gate, dark oak door, dark oak fence gate, fence gate, iron door, jungle door, jungle fence gate, mangrove door, mangrove fence gate, spruce door, spruce fence gate, warped door, warped fence gate, wooden door, lever |Determines if a door, gate, or trapdoor is open|
 |output_lit_bit |Boolean |True, False |powered comparator, unpowered comparator |Determines if a Comparator's output is lit|
 |output_subtract_bit |Boolean |True, False |powered comparator, unpowered comparator |Determines if a Comparator is set to subtract output|

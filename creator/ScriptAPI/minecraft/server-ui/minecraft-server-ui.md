@@ -43,12 +43,13 @@ form.show(players[0]).then((response) => {
 ```json
 {
     "module_name": "@minecraft/server-ui",
-    "version": "1.1.0"
+    "version": "1.2.0"
 }
 ```
 
 ## Available Versions
-- `1.2.0-beta`
+- `1.3.0-beta`
+- `1.2.0`
 - `1.1.0`
 - `1.0.0`
 - `0.1.0`

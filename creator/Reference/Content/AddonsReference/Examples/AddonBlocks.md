@@ -127,9 +127,11 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:bookshelf |
 | minecraft:border_block |
 | minecraft:brain_coral |
+| minecraft:brain_coral_block |
 | minecraft:brain_coral_fan |
 | minecraft:brewing_stand |
 | minecraft:brick_block |
+| minecraft:brick_slab |
 | minecraft:brick_stairs |
 | minecraft:brown_candle |
 | minecraft:brown_candle_cake |
@@ -146,6 +148,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:brown_wool |
 | minecraft:bubble_column |
 | minecraft:bubble_coral |
+| minecraft:bubble_coral_block |
 | minecraft:bubble_coral_fan |
 | minecraft:budding_amethyst |
 | minecraft:cactus |
@@ -204,6 +207,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cobbled_deepslate_stairs |
 | minecraft:cobbled_deepslate_wall |
 | minecraft:cobblestone |
+| minecraft:cobblestone_slab |
 | minecraft:cobblestone_wall |
 | minecraft:cocoa |
 | minecraft:colored_torch_bp |
@@ -217,7 +221,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:copper_grate |
 | minecraft:copper_ore |
 | minecraft:copper_trapdoor |
-| minecraft:coral_block |
 | minecraft:coral_fan_dead |
 | minecraft:coral_fan_hang |
 | minecraft:coral_fan_hang2 |
@@ -282,10 +285,15 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:daylight_detector |
 | minecraft:daylight_detector_inverted |
 | minecraft:dead_brain_coral |
+| minecraft:dead_brain_coral_block |
 | minecraft:dead_bubble_coral |
+| minecraft:dead_bubble_coral_block |
 | minecraft:dead_fire_coral |
+| minecraft:dead_fire_coral_block |
 | minecraft:dead_horn_coral |
+| minecraft:dead_horn_coral_block |
 | minecraft:dead_tube_coral |
+| minecraft:dead_tube_coral_block |
 | minecraft:deadbush |
 | minecraft:decorated_pot |
 | minecraft:deepslate |
@@ -317,7 +325,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:dirt_with_roots |
 | minecraft:dispenser |
 | minecraft:double_cut_copper_slab |
-| minecraft:double_plant |
 | minecraft:double_block_slab |
 | minecraft:double_block_slab2 |
 | minecraft:double_block_slab3 |
@@ -468,8 +475,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:exposed_double_cut_copper_slab |
 | minecraft:farmland |
 | minecraft:fence_gate |
+| minecraft:fern |
 | minecraft:fire |
 | minecraft:fire_coral |
+| minecraft:fire_coral_block |
 | minecraft:fire_coral_fan |
 | minecraft:fletching_table |
 | minecraft:flower_pot |
@@ -560,6 +569,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:honeycomb_block |
 | minecraft:hopper |
 | minecraft:horn_coral |
+| minecraft:horn_coral_block |
 | minecraft:horn_coral_fan |
 | minecraft:ice |
 | minecraft:infested_deepslate |
@@ -596,6 +606,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:lapis_block |
 | minecraft:lapis_ore |
 | minecraft:large_amethyst_bud |
+| minecraft:large_fern |
 | minecraft:lava |
 | minecraft:lectern |
 | minecraft:lever |
@@ -623,6 +634,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:light_gray_wool |
 | minecraft:light_weighted_pressure_plate |
 | minecraft:lightning_rod |
+| minecraft:lilac |
+| minecraft:lily_of_the_valley |
 | minecraft:lime_candle |
 | minecraft:lime_candle_cake |
 | minecraft:lime_carpet |
@@ -695,6 +708,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mycelium |
 | minecraft:nether_brick |
 | minecraft:nether_brick_fence |
+| minecraft:nether_brick_slab |
 | minecraft:nether_brick_stairs |
 | minecraft:nether_gold_ore |
 | minecraft:nether_sprouts |
@@ -742,6 +756,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:packed_ice |
 | minecraft:packed_mud |
 | minecraft:pearlescent_froglight |
+| minecraft:peony |
+| minecraft:petrified_oak_slab |
 | minecraft:pink_candle |
 | minecraft:pink_candle_cake |
 | minecraft:pink_carpet |
@@ -815,6 +831,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:quartz_block |
 | minecraft:quartz_bricks |
 | minecraft:quartz_ore |
+| minecraft:quartz_slab |
 | minecraft:quartz_stairs |
 | minecraft:rail |
 | minecraft:raw_copper_block |
@@ -848,8 +865,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:repeating_command_block |
 | minecraft:reserved6 |
 | minecraft:respawn_anchor |
+| minecraft:rose_bush |
 | minecraft:sand |
 | minecraft:sandstone |
+| minecraft:sandstone_slab |
 | minecraft:sandstone_stairs |
 | minecraft:scaffolding |
 | minecraft:sculk |
@@ -860,6 +879,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sea_lantern |
 | minecraft:sea_pickle |
 | minecraft:seagrass |
+| minecraft:short_grass |
 | minecraft:shroomlight |
 | minecraft:silver_glazed_terracotta |
 | minecraft:skull |
@@ -873,6 +893,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:smooth_red_sandstone_stairs |
 | minecraft:smooth_sandstone_stairs |
 | minecraft:smooth_stone |
+| minecraft:smooth_stone_slab |
 | minecraft:sniffer_egg |
 | minecraft:snow |
 | minecraft:snow_layer |
@@ -906,10 +927,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sticky_piston |
 | minecraft:sticky_piston_arm_collision |
 | minecraft:stone |
-| minecraft:stone_block_slab |
 | minecraft:stone_block_slab2 |
 | minecraft:stone_block_slab3 |
 | minecraft:stone_block_slab4 |
+| minecraft:stone_brick_slab |
 | minecraft:stone_brick_stairs |
 | minecraft:stone_button |
 | minecraft:stone_pressure_plate |
@@ -940,10 +961,11 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stripped_warped_stem |
 | minecraft:structure_block |
 | minecraft:structure_void |
+| minecraft:sunflower |
 | minecraft:suspicious_gravel |
 | minecraft:suspicious_sand |
 | minecraft:sweet_berry_bush |
-| minecraft:tallgrass |
+| minecraft:tall_grass |
 | minecraft:target |
 | minecraft:tinted_glass |
 | minecraft:tnt |
@@ -956,6 +978,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:trip_wire |
 | minecraft:tripwire_hook |
 | minecraft:tube_coral |
+| minecraft:tube_coral_block |
 | minecraft:tube_coral_fan |
 | minecraft:tuff |
 | minecraft:tuff_brick_double_slab |

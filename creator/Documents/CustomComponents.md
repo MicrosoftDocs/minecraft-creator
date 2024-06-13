@@ -12,7 +12,7 @@ Custom components are a new way of connecting the configuration of Blocks and It
 
 This new pattern combines a more structured way to listen to the block and item events while getting access to all the power within scripting and ensuring these events run with the same constraints as scripting events do today.
 
-In upcoming previews, we will introduce additional block custom component APIs.
+If you'd like to get started in building add-ons with custom components, see our [custom components tutorial](./CustomComponentsTutorial.md).
 
 ## Structure
 
@@ -20,7 +20,7 @@ This new feature is named _custom components_ because script is connected to a g
 
 ## Script API
 
-Starting from the script API, we are introducing two new major interfaces: `BlockTypeRegistry` and `BlockCustomComponent`. The `BlockTypeRegistry` contains a single method on it for registering a new custom component by name:
+Starting from the script API, we are introducing two new major interfaces for Blocks: `BlockTypeRegistry` and `BlockCustomComponent`. The `BlockTypeRegistry` contains a single method on it for registering a new custom component by name:
 
 ```typescript
 /**
@@ -129,19 +129,3 @@ As you author custom components and their corresponding scripting code, you have
 When making changes to JSON and/or the registration of new custom components, it will be necessary to exit out of a world and re-enter to see your changes reflected.
 
 Once in script, your callbacks can use any API available in the scripting API just like any other script today with the same constraints. We are looking forward to seeing what you create!
-
-## Roadmap
-
-This is the beginning of custom components, and the events available for a custom component to listen to will expand over the coming previews. In total, we expect that the entirety of the set of existing experimental data-driven event triggers will be covered by custom component events:
-
-|Block Events | Item Events  |
-|----------|-----------|
-| minecraft:on_step_on | minecraft:on_dig |
-| minecraft:on_step_off | minecraft:on_use_duration_complete |
-| minecraft:random_ticking | minecraft:on_consumed |
-| minecraft:queued_ticking | minecraft:on_use |
-| minecraft:on_fall_on| minecraft:on_use_on |
-| minecraft:on_player_placing| minecraft:on_hurt_entity
-| minecraft:on_interact | |
-| minecraft: on_player_destroyed | |
-| minecraft:on_placed | |

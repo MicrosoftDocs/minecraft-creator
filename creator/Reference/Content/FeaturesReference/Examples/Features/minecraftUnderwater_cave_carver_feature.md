@@ -39,10 +39,10 @@ Carve caves normally
 
 ```json
 {
-"format_version": "1.16.100",
+"format_version": "1.13.0",
   "minecraft:underwater_cave_carver_feature": {
     "description": {
-      "identifier": "minecraft:underground_cave_carver_feature"
+      "identifier": "example:underground_cave_carver_feature"
     },
     "fill_with": "minecraft:water",
     "width_modifier": 0.0,

@@ -828,22 +828,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:coral:013|minecraft:coral |13|minecraft:tube_coral|
 |minecraft:coral:014|minecraft:coral |14|minecraft:tube_coral|
 |minecraft:coral:015|minecraft:coral |15|minecraft:tube_coral|
-|minecraft:coral_block:000|minecraft:coral_block |0|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 0]|
-|minecraft:coral_block:001|minecraft:coral_block |1|minecraft:coral_block ["coral_color" = "pink", "dead_bit" = 0]|
-|minecraft:coral_block:002|minecraft:coral_block |2|minecraft:coral_block ["coral_color" = "purple", "dead_bit" = 0]|
-|minecraft:coral_block:003|minecraft:coral_block |3|minecraft:coral_block ["coral_color" = "red", "dead_bit" = 0]|
-|minecraft:coral_block:004|minecraft:coral_block |4|minecraft:coral_block ["coral_color" = "yellow", "dead_bit" = 0]|
-|minecraft:coral_block:005|minecraft:coral_block |5|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 0]|
-|minecraft:coral_block:006|minecraft:coral_block |6|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 0]|
-|minecraft:coral_block:007|minecraft:coral_block |7|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 0]|
-|minecraft:coral_block:008|minecraft:coral_block |8|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 1]|
-|minecraft:coral_block:009|minecraft:coral_block |9|minecraft:coral_block ["coral_color" = "pink", "dead_bit" = 1]|
-|minecraft:coral_block:010|minecraft:coral_block |10|minecraft:coral_block ["coral_color" = "purple", "dead_bit" = 1]|
-|minecraft:coral_block:011|minecraft:coral_block |11|minecraft:coral_block ["coral_color" = "red", "dead_bit" = 1]|
-|minecraft:coral_block:012|minecraft:coral_block |12|minecraft:coral_block ["coral_color" = "yellow", "dead_bit" = 1]|
-|minecraft:coral_block:013|minecraft:coral_block |13|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 1]|
-|minecraft:coral_block:014|minecraft:coral_block |14|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 1]|
-|minecraft:coral_block:015|minecraft:coral_block |15|minecraft:coral_block ["coral_color" = "blue", "dead_bit" = 1]|
+|minecraft:coral_block:000|minecraft:coral_block |0|minecraft:tube_coral_block|
+|minecraft:coral_block:001|minecraft:coral_block |1|minecraft:brain_coral__block|
+|minecraft:coral_block:002|minecraft:coral_block |2|minecraft:bubble_coral_block|
+|minecraft:coral_block:003|minecraft:coral_block |3|minecraft:fire_coral_block|
+|minecraft:coral_block:004|minecraft:coral_block |4|minecraft:horn_coral_block|
+|minecraft:coral_block:005|minecraft:coral_block |5|minecraft:tube_coral_block|
+|minecraft:coral_block:006|minecraft:coral_block |6|minecraft:tube_coral_block|
+|minecraft:coral_block:007|minecraft:coral_block |7|minecraft:tube_coral_block|
+|minecraft:coral_block:008|minecraft:coral_block |8|minecraft:dead_tube_coral_block|
+|minecraft:coral_block:009|minecraft:coral_block |9|minecraft:dead_brain_coral_block|
+|minecraft:coral_block:010|minecraft:coral_block |10|minecraft:dead_bubble_coral_block|
+|minecraft:coral_block:011|minecraft:coral_block |11|minecraft:dead_fire_coral_block|
+|minecraft:coral_block:012|minecraft:coral_block |12|minecraft:dead_horn_coral_block|
+|minecraft:coral_block:013|minecraft:coral_block |13|minecraft:dead_tube_coral_block|
+|minecraft:coral_block:014|minecraft:coral_block |14|minecraft:dead_tube_coral_block|
+|minecraft:coral_block:015|minecraft:coral_block |15|minecraft:dead_tube_coral_block|
 |minecraft:coral_fan:000|minecraft:coral_fan |0|minecraft:tube_coral_fan ["coral_fan_direction" = 0]|
 |minecraft:coral_fan:001|minecraft:coral_fan |1|minecraft:brain_coral_fan ["coral_fan_direction" = 0]|
 |minecraft:coral_fan:002|minecraft:coral_fan |2|minecraft:bubble_coral_fan ["coral_fan_direction" = 0]|
@@ -1275,22 +1275,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:dispenser:013|minecraft:dispenser |13|minecraft:dispenser ["facing_direction" = 5, "triggered_bit" = 1]|
 |minecraft:dispenser:014|minecraft:dispenser |14|minecraft:dispenser ["facing_direction" = 0, "triggered_bit" = 1]|
 |minecraft:dispenser:015|minecraft:dispenser |15|minecraft:dispenser ["facing_direction" = 0, "triggered_bit" = 1]|
-|minecraft:double_plant:000|minecraft:double_plant |0|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 0]|
-|minecraft:double_plant:001|minecraft:double_plant |1|minecraft:double_plant ["double_plant_type" = "syringa", "upper_block_bit" = 0]|
-|minecraft:double_plant:002|minecraft:double_plant |2|minecraft:double_plant ["double_plant_type" = "grass", "upper_block_bit" = 0]|
-|minecraft:double_plant:003|minecraft:double_plant |3|minecraft:double_plant ["double_plant_type" = "fern", "upper_block_bit" = 0]|
-|minecraft:double_plant:004|minecraft:double_plant |4|minecraft:double_plant ["double_plant_type" = "rose", "upper_block_bit" = 0]|
-|minecraft:double_plant:005|minecraft:double_plant |5|minecraft:double_plant ["double_plant_type" = "paeonia", "upper_block_bit" = 0]|
-|minecraft:double_plant:006|minecraft:double_plant |6|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 0]|
-|minecraft:double_plant:007|minecraft:double_plant |7|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 0]|
-|minecraft:double_plant:008|minecraft:double_plant |8|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 1]|
-|minecraft:double_plant:009|minecraft:double_plant |9|minecraft:double_plant ["double_plant_type" = "syringa", "upper_block_bit" = 1]|
-|minecraft:double_plant:010|minecraft:double_plant |10|minecraft:double_plant ["double_plant_type" = "grass", "upper_block_bit" = 1]|
-|minecraft:double_plant:011|minecraft:double_plant |11|minecraft:double_plant ["double_plant_type" = "fern", "upper_block_bit" = 1]|
-|minecraft:double_plant:012|minecraft:double_plant |12|minecraft:double_plant ["double_plant_type" = "rose", "upper_block_bit" = 1]|
-|minecraft:double_plant:013|minecraft:double_plant |13|minecraft:double_plant ["double_plant_type" = "paeonia", "upper_block_bit" = 1]|
-|minecraft:double_plant:014|minecraft:double_plant |14|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 1]|
-|minecraft:double_plant:015|minecraft:double_plant |15|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 1]|
+|minecraft:double_plant:000|minecraft:double_plant |0|minecraft:sunflower ["upper_block_bit" = 0]|
+|minecraft:double_plant:001|minecraft:double_plant |1|minecraft:lilac ["upper_block_bit" = 0]|
+|minecraft:double_plant:002|minecraft:double_plant |2|minecraft:tall_grass ["upper_block_bit" = 0]|
+|minecraft:double_plant:003|minecraft:double_plant |3|minecraft:large_fern ["upper_block_bit" = 0]|
+|minecraft:double_plant:004|minecraft:double_plant |4|minecraft:rose_bush ["upper_block_bit" = 0]|
+|minecraft:double_plant:005|minecraft:double_plant |5|minecraft:peony ["upper_block_bit" = 0]|
+|minecraft:double_plant:006|minecraft:double_plant |6|minecraft:sunflower ["upper_block_bit" = 0]|
+|minecraft:double_plant:007|minecraft:double_plant |7|minecraft:sunflower ["upper_block_bit" = 0]|
+|minecraft:double_plant:008|minecraft:double_plant |8|minecraft:sunflower ["upper_block_bit" = 1]|
+|minecraft:double_plant:009|minecraft:double_plant |9|minecraft:lilac ["upper_block_bit" = 1]|
+|minecraft:double_plant:010|minecraft:double_plant |10|minecraft:tall_grass ["upper_block_bit" = 1]|
+|minecraft:double_plant:011|minecraft:double_plant |11|minecraft:large_fern ["upper_block_bit" = 1]|
+|minecraft:double_plant:012|minecraft:double_plant |12|minecraft:rose_bush ["upper_block_bit" = 1]|
+|minecraft:double_plant:013|minecraft:double_plant |13|minecraft:peony ["upper_block_bit" = 1]|
+|minecraft:double_plant:014|minecraft:double_plant |14|minecraft:sunflower ["upper_block_bit" = 1]|
+|minecraft:double_plant:015|minecraft:double_plant |15|minecraft:sunflower ["upper_block_bit" = 1]|
 |minecraft:double_stone_block_slab2:000|minecraft:double_stone_block_slab2 |0|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "red_sandstone"]|
 |minecraft:double_stone_block_slab2:001|minecraft:double_stone_block_slab2 |1|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "purpur"]|
 |minecraft:double_stone_block_slab2:002|minecraft:double_stone_block_slab2 |2|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "prismarine_rough"]|
@@ -1355,22 +1355,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:double_stone_block_slab:013|minecraft:double_stone_block_slab |13|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "stone_brick"]|
 |minecraft:double_stone_block_slab:014|minecraft:double_stone_block_slab |14|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "quartz"]|
 |minecraft:double_stone_block_slab:015|minecraft:double_stone_block_slab |15|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "nether_brick"]|
-|minecraft:double_wooden_slab:000|minecraft:double_wooden_slab |0|minecraft:oak_double_slab ["top_slot_bit" = 0]|
-|minecraft:double_wooden_slab:001|minecraft:double_wooden_slab |1|minecraft:spruce_double_slab ["top_slot_bit" = 0]|
-|minecraft:double_wooden_slab:002|minecraft:double_wooden_slab |2|minecraft:birch_double_slab ["top_slot_bit" = 0]|
-|minecraft:double_wooden_slab:003|minecraft:double_wooden_slab |3|minecraft:jungle_double_slab ["top_slot_bit" = 0]|
-|minecraft:double_wooden_slab:004|minecraft:double_wooden_slab |4|minecraft:acacia_double_slab ["top_slot_bit" = 0]|
-|minecraft:double_wooden_slab:005|minecraft:double_wooden_slab |5|minecraft:dark_oak_double_slab ["top_slot_bit" = 0]|
-|minecraft:double_wooden_slab:006|minecraft:double_wooden_slab |6|minecraft:oak_double_slab ["top_slot_bit" = 0]|
-|minecraft:double_wooden_slab:007|minecraft:double_wooden_slab |7|minecraft:oak_double_slab ["top_slot_bit" = 0]|
-|minecraft:double_wooden_slab:008|minecraft:double_wooden_slab |8|minecraft:oak_double_slab ["top_slot_bit" = 1]|
-|minecraft:double_wooden_slab:009|minecraft:double_wooden_slab |9|minecraft:spruce_double_slab ["top_slot_bit" = 1]|
-|minecraft:double_wooden_slab:010|minecraft:double_wooden_slab |10|minecraft:birch_double_slab ["top_slot_bit" = 1]|
-|minecraft:double_wooden_slab:011|minecraft:double_wooden_slab |11|minecraft:jungle_double_slab ["top_slot_bit" = 1]|
-|minecraft:double_wooden_slab:012|minecraft:double_wooden_slab |12|minecraft:acacia_double_slab ["top_slot_bit" = 1]|
-|minecraft:double_wooden_slab:013|minecraft:double_wooden_slab |13|minecraft:dark_oak_double_slab ["top_slot_bit" = 1]|
-|minecraft:double_wooden_slab:014|minecraft:double_wooden_slab |14|minecraft:oak_double_slab ["top_slot_bit" = 1]|
-|minecraft:double_wooden_slab:015|minecraft:double_wooden_slab |15|minecraft:oak_double_slab ["top_slot_bit" = 1]|
+|minecraft:double_wooden_slab:000|minecraft:double_wooden_slab |0|minecraft:oak_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_wooden_slab:001|minecraft:double_wooden_slab |1|minecraft:spruce_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_wooden_slab:002|minecraft:double_wooden_slab |2|minecraft:birch_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_wooden_slab:003|minecraft:double_wooden_slab |3|minecraft:jungle_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_wooden_slab:004|minecraft:double_wooden_slab |4|minecraft:acacia_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_wooden_slab:005|minecraft:double_wooden_slab |5|minecraft:dark_oak_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_wooden_slab:006|minecraft:double_wooden_slab |6|minecraft:oak_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_wooden_slab:007|minecraft:double_wooden_slab |7|minecraft:oak_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_wooden_slab:008|minecraft:double_wooden_slab |8|minecraft:oak_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_wooden_slab:009|minecraft:double_wooden_slab |9|minecraft:spruce_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_wooden_slab:010|minecraft:double_wooden_slab |10|minecraft:birch_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_wooden_slab:011|minecraft:double_wooden_slab |11|minecraft:jungle_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_wooden_slab:012|minecraft:double_wooden_slab |12|minecraft:acacia_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_wooden_slab:013|minecraft:double_wooden_slab |13|minecraft:dark_oak_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_wooden_slab:014|minecraft:double_wooden_slab |14|minecraft:oak_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_wooden_slab:015|minecraft:double_wooden_slab |15|minecraft:oak_double_slab ["minecraft:vertical_half" = "top"]|
 |minecraft:dropper:000|minecraft:dropper |0|minecraft:dropper ["facing_direction" = 0, "triggered_bit" = 0]|
 |minecraft:dropper:001|minecraft:dropper |1|minecraft:dropper ["facing_direction" = 1, "triggered_bit" = 0]|
 |minecraft:dropper:002|minecraft:dropper |2|minecraft:dropper ["facing_direction" = 2, "triggered_bit" = 0]|
@@ -3294,22 +3294,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:stone_block_slab4:013|minecraft:stone_block_slab4 |13|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
 |minecraft:stone_block_slab4:014|minecraft:stone_block_slab4 |14|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
 |minecraft:stone_block_slab4:015|minecraft:stone_block_slab4 |15|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:stone_block_slab:000|minecraft:stone_block_slab |0|minecraft:stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "smooth_stone"]|
-|minecraft:stone_block_slab:001|minecraft:stone_block_slab |1|minecraft:stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "sandstone"]|
-|minecraft:stone_block_slab:002|minecraft:stone_block_slab |2|minecraft:stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "wood"]|
-|minecraft:stone_block_slab:003|minecraft:stone_block_slab |3|minecraft:stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "cobblestone"]|
-|minecraft:stone_block_slab:004|minecraft:stone_block_slab |4|minecraft:stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "brick"]|
-|minecraft:stone_block_slab:005|minecraft:stone_block_slab |5|minecraft:stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "stone_brick"]|
-|minecraft:stone_block_slab:006|minecraft:stone_block_slab |6|minecraft:stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "quartz"]|
-|minecraft:stone_block_slab:007|minecraft:stone_block_slab |7|minecraft:stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "nether_brick"]|
-|minecraft:stone_block_slab:008|minecraft:stone_block_slab |8|minecraft:stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "smooth_stone"]|
-|minecraft:stone_block_slab:009|minecraft:stone_block_slab |9|minecraft:stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "sandstone"]|
-|minecraft:stone_block_slab:010|minecraft:stone_block_slab |10|minecraft:stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "wood"]|
-|minecraft:stone_block_slab:011|minecraft:stone_block_slab |11|minecraft:stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "cobblestone"]|
-|minecraft:stone_block_slab:012|minecraft:stone_block_slab |12|minecraft:stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "brick"]|
-|minecraft:stone_block_slab:013|minecraft:stone_block_slab |13|minecraft:stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "stone_brick"]|
-|minecraft:stone_block_slab:014|minecraft:stone_block_slab |14|minecraft:stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "quartz"]|
-|minecraft:stone_block_slab:015|minecraft:stone_block_slab |15|minecraft:stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "nether_brick"]|
+|minecraft:stone_block_slab:000|minecraft:stone_block_slab |0|minecraft:smooth_stone_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab:001|minecraft:stone_block_slab |1|minecraft:sandstone_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab:002|minecraft:stone_block_slab |2|minecraft:petrified_oak_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab:003|minecraft:stone_block_slab |3|minecraft:cobblestone_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab:004|minecraft:stone_block_slab |4|minecraft:brick_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab:005|minecraft:stone_block_slab |5|minecraft:stone_brick_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab:006|minecraft:stone_block_slab |6|minecraft:quartz_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab:007|minecraft:stone_block_slab |7|minecraft:nether_brick_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab:008|minecraft:stone_block_slab |8|minecraft:smooth_stone_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab:009|minecraft:stone_block_slab |9|minecraft:sandstone_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab:010|minecraft:stone_block_slab |10|minecraft:petrified_oak_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab:011|minecraft:stone_block_slab |11|minecraft:cobblestone_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab:012|minecraft:stone_block_slab |12|minecraft:quartz_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab:013|minecraft:stone_block_slab |13|minecraft:stone_brick_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab:014|minecraft:stone_block_slab |14|minecraft:quartz_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab:015|minecraft:stone_block_slab |15|minecraft:nether_brick_slab ["minecraft:vertical_half" = "top"]|
 |minecraft:stone_brick_stairs:000|minecraft:stone_brick_stairs |0|minecraft:stone_brick_stairs ["upside_down_bit" = 0, "weirdo_direction" = 0]|
 |minecraft:stone_brick_stairs:001|minecraft:stone_brick_stairs |1|minecraft:stone_brick_stairs ["upside_down_bit" = 0, "weirdo_direction" = 1]|
 |minecraft:stone_brick_stairs:002|minecraft:stone_brick_stairs |2|minecraft:stone_brick_stairs ["upside_down_bit" = 0, "weirdo_direction" = 2]|
@@ -3434,10 +3434,10 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:sweet_berry_bush:005|minecraft:sweet_berry_bush |5|minecraft:sweet_berry_bush ["growth" = 5]|
 |minecraft:sweet_berry_bush:006|minecraft:sweet_berry_bush |6|minecraft:sweet_berry_bush ["growth" = 6]|
 |minecraft:sweet_berry_bush:007|minecraft:sweet_berry_bush |7|minecraft:sweet_berry_bush ["growth" = 7]|
-|minecraft:tallgrass:000|minecraft:tallgrass |0|minecraft:tallgrass ["tall_grass_type" = "default"]|
-|minecraft:tallgrass:001|minecraft:tallgrass |1|minecraft:tallgrass ["tall_grass_type" = "tall"]|
-|minecraft:tallgrass:002|minecraft:tallgrass |2|minecraft:tallgrass ["tall_grass_type" = "fern"]|
-|minecraft:tallgrass:003|minecraft:tallgrass |3|minecraft:tallgrass ["tall_grass_type" = "snow"]|
+|minecraft:tallgrass:000|minecraft:tallgrass |0|minecraft:short_grass|
+|minecraft:tallgrass:001|minecraft:tallgrass |1|minecraft:short_grass|
+|minecraft:tallgrass:002|minecraft:tallgrass |2|minecraft:fern|
+|minecraft:tallgrass:003|minecraft:tallgrass |3|minecraft:fern|
 |minecraft:tnt:000|minecraft:tnt |0|minecraft:tnt ["allow_underwater_bit" = 0, "explode_bit" = 0]|
 |minecraft:tnt:001|minecraft:tnt |1|minecraft:tnt ["allow_underwater_bit" = 0, "explode_bit" = 1]|
 |minecraft:tnt:002|minecraft:tnt |2|minecraft:tnt ["allow_underwater_bit" = 1, "explode_bit" = 0]|
@@ -3906,22 +3906,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:wooden_pressure_plate:013|minecraft:wooden_pressure_plate |13|minecraft:wooden_pressure_plate ["redstone_signal" = 13]|
 |minecraft:wooden_pressure_plate:014|minecraft:wooden_pressure_plate |14|minecraft:wooden_pressure_plate ["redstone_signal" = 14]|
 |minecraft:wooden_pressure_plate:015|minecraft:wooden_pressure_plate |15|minecraft:wooden_pressure_plate ["redstone_signal" = 15]|
-|minecraft:wooden_slab:000|minecraft:wooden_slab |0|minecraft:oak_slab ["top_slot_bit" = 0]|
-|minecraft:wooden_slab:001|minecraft:wooden_slab |1|minecraft:spruce_slab ["top_slot_bit" = 0]|
-|minecraft:wooden_slab:002|minecraft:wooden_slab |2|minecraft:birch_slab ["top_slot_bit" = 0]|
-|minecraft:wooden_slab:003|minecraft:wooden_slab |3|minecraft:jungle_slab ["top_slot_bit" = 0]|
-|minecraft:wooden_slab:004|minecraft:wooden_slab |4|minecraft:acacia_slab ["top_slot_bit" = 0]|
-|minecraft:wooden_slab:005|minecraft:wooden_slab |5|minecraft:dark_oak_slab ["top_slot_bit" = 0]|
-|minecraft:wooden_slab:006|minecraft:wooden_slab |6|minecraft:oak_slab ["top_slot_bit" = 0]|
-|minecraft:wooden_slab:007|minecraft:wooden_slab |7|minecraft:oak_slab ["top_slot_bit" = 0]|
-|minecraft:wooden_slab:008|minecraft:wooden_slab |8|minecraft:oak_slab ["top_slot_bit" = 1]|
-|minecraft:wooden_slab:009|minecraft:wooden_slab |9|minecraft:spruce_slab ["top_slot_bit" = 1]|
-|minecraft:wooden_slab:010|minecraft:wooden_slab |10|minecraft:birch_slab ["top_slot_bit" = 1]|
-|minecraft:wooden_slab:011|minecraft:wooden_slab |11|minecraft:jungle_slab ["top_slot_bit" = 1]|
-|minecraft:wooden_slab:012|minecraft:wooden_slab |12|minecraft:acacia_slab ["top_slot_bit" = 1]|
-|minecraft:wooden_slab:013|minecraft:wooden_slab |13|minecraft:dark_oak_slab ["top_slot_bit" = 1]|
-|minecraft:wooden_slab:014|minecraft:wooden_slab |14|minecraft:oak_slab ["top_slot_bit" = 1]|
-|minecraft:wooden_slab:015|minecraft:wooden_slab |15|minecraft:oak_slab ["top_slot_bit" = 1]|
+|minecraft:wooden_slab:000|minecraft:wooden_slab |0|minecraft:oak_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:wooden_slab:001|minecraft:wooden_slab |1|minecraft:spruce_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:wooden_slab:002|minecraft:wooden_slab |2|minecraft:birch_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:wooden_slab:003|minecraft:wooden_slab |3|minecraft:jungle_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:wooden_slab:004|minecraft:wooden_slab |4|minecraft:acacia_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:wooden_slab:005|minecraft:wooden_slab |5|minecraft:dark_oak_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:wooden_slab:006|minecraft:wooden_slab |6|minecraft:oak_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:wooden_slab:007|minecraft:wooden_slab |7|minecraft:oak_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:wooden_slab:008|minecraft:wooden_slab |8|minecraft:oak_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:wooden_slab:009|minecraft:wooden_slab |9|minecraft:spruce_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:wooden_slab:010|minecraft:wooden_slab |10|minecraft:birch_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:wooden_slab:011|minecraft:wooden_slab |11|minecraft:jungle_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:wooden_slab:012|minecraft:wooden_slab |12|minecraft:acacia_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:wooden_slab:013|minecraft:wooden_slab |13|minecraft:dark_oak_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:wooden_slab:014|minecraft:wooden_slab |14|minecraft:oak_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:wooden_slab:015|minecraft:wooden_slab |15|minecraft:oak_slab ["minecraft:vertical_half" = "top"]|
 |minecraft:wool:000|minecraft:wool |0|minecraft:white_wool|
 |minecraft:wool:001|minecraft:wool |1|minecraft:orange_wool|
 |minecraft:wool:002|minecraft:wool |2|minecraft:magenta_wool|

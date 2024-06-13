@@ -3,7 +3,9 @@
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
     - name: "Updates and News"
-      items: 
+      items:
+        - name: 1.21 Update Summary
+          href: Documents/Update1.21.md 
         - name: 1.20.80 Update Summary
           href: Documents/Update1.20.80.md
         - name: 1.20.70 Update Summary
@@ -158,8 +160,10 @@
             href: Documents/ScriptingGettingStarted.md
           - name: Use Visual Studio Code Tools to Write Script
             href: Documents/ScriptDeveloperTools.md
-          - name: Custom Components
+          - name: Introducing Custom Components
             href: Documents/CustomComponents.md
+          - name: Building with Custom Components
+            href: Documents/CustomComponentsTutorial.md
           - name: Game Loops and Timed Callbacks - a system.run Guide
             href: Documents/SystemRunGuide.md
           - name: Script Module Versioning
@@ -372,12 +376,6 @@
             href: Reference/Content/itemreference/Examples/ItemUsePriority.md
         - name: Recipe JSON
           href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
-        - name: Volume JSON
-          items:
-          - name: Volume Definitions
-            href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
-          - name: Volume Components
-            href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
         - name: Spawn Rule JSON
           items: 
           - name: Data-Driven Spawning Rules

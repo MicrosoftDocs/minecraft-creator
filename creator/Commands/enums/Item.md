@@ -2688,8 +2688,6 @@ Stained Glass Pane
 Planks
 - `minecraft:planks`
 Planks
-- `hard_stained_glass`
-- `hard_stained_glass_pane`
 - `wooden_slab`
 Wooden Slab
 - `minecraft:wooden_slab`
@@ -2750,10 +2748,6 @@ Stone Block Slab 3
 Stone Block Slab 4
 - `minecraft:stone_block_slab4`
 Stone Block Slab 4
-- `double_stone_block_slab`
-- `double_stone_block_slab2`
-- `double_stone_block_slab3`
-- `double_stone_block_slab4`
 - `monster_egg`
 Monster Egg
 - `minecraft:monster_egg`

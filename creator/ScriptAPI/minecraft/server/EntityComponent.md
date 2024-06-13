@@ -67,14 +67,9 @@ Base class for downstream entity components.
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **entity**
 `read-only entity: Entity;`
 
 The entity that owns this component. The entity will be undefined if it has been removed.
 
 Type: [*Entity*](Entity.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end

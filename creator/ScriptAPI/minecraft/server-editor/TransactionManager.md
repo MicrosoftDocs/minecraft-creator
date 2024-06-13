@@ -214,14 +214,14 @@ The pending list will be added to the open transaction record when a commit has 
 trackBlockChangeCompoundBlockVolume(compoundBlockVolume: minecraftserver.CompoundBlockVolume): boolean
 `
 
-Begin tracking block changes in an area defined by a {@link @minecraft-server/CompoundBlockVolume}.  These will be added to a pending changes list.
+Begin tracking block changes in an area defined by a [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md).  These will be added to a pending changes list.
 
 The pending list will be added to the open transaction record when a commit has been issued.
 
 #### **Parameters**
 - **compoundBlockVolume**: [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
   
-  {@link @minecraft-server/CompoundBlockVolume} to track.  Only non-void block locations will be tracked -- any changes falling into a void/negative space will not be tracked
+  [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) to track.  Only non-void block locations will be tracked -- any changes falling into a void/negative space will not be tracked
 
 **Returns** *boolean*
 
@@ -260,7 +260,7 @@ Begin tracking block changes that may happen in a selection volume.
 
 The volume is copied, so tracking will not move if the selection volume is translated after this instruction is issued.
 
-Selection Volumes can also represent irregular shapes with non-contiguous blocks and this tracking call will honor the actual selected areas in the volume (and not the negative space) (see {@link @minecraft-server/CompoundBlockVolume} for more details
+Selection Volumes can also represent irregular shapes with non-contiguous blocks and this tracking call will honor the actual selected areas in the volume (and not the negative space) (see [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) for more details
 
 #### **Parameters**
 - **selection**: [*Selection*](Selection.md)

@@ -16,8 +16,8 @@ Contains information and methods that can be used at the initialization of the s
 
 ## Properties
 
-### **blockTypeRegistry**
-`read-only blockTypeRegistry: BlockComponentRegistry;`
+### **blockComponentRegistry**
+`read-only blockComponentRegistry: BlockComponentRegistry;`
 
 Type: [*BlockComponentRegistry*](BlockComponentRegistry.md)
 

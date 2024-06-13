@@ -20,41 +20,48 @@ The following concepts are important for managing particles with entities via .j
 
 - **Animation timeline particle management** is part of an animation .json for the entity and can be used to set up a timeline that triggers particle effects at specified times while the animation is playing. Note that an actual physical animation is not needed, just the animation .json structure.
 
-Particles that are attached to entities are intrinsically tied to those entities. If the entity ceases to exist, the particle effects cease as well. Emitters follow either the entity, or a locator on the entity.
+Particles that are attached to entities are intrinsically tied to those entities. If the entity ceases to exist, the particle effects cease as well. Emitters follow either the entity or a locator on the entity.
 
 `time1/time2/...` are numerical time points, such as `0.0`.
-
-In this example, a smoke puff is generated three seconds after a cat sits down.
 
 ```json
 {
   "format_version": "1.8.0",
-  "animations": {
+  "animation_controllers": {
+
     ...
-    "animation.cat.sit": {
-      "loop": true,
-      "animation_length": 5.0,
-      "bones": {
-          // bone animation stuff
-       },
-      "particle_effects": {
-        "3.0": [
-          {
-            "effect": "smoke_puff"
-          }
-        ]
+
+    "controller.animation.blaze.flame": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "flaming": "query.is_charged" }
+          ]
+        },
+        "flaming": {
+          "particle_effects": [
+            {
+              "effect": "charged_flames"
+            }
+          ],
+          "transitions": [
+            { "default": "!query.is_charged" }
+          ]
+        }
       }
     },
+
     ...
-    }
+
   }
 }
-
 ```
 
-## Animation controller effects
+## Animation Controller Effects
 
-Animation controllers can specify effect events for their states. This allows for a list of particle effects to be started upon state entry and for those particle effects to be automatically ended when leaving the state. For particles that don't terminate (or don't terminate prior to state transition), they will be terminated at state exit.
+Animation controllers can specify effect events for their states. This allows for a list of particle effects to be started upon state entry, and for those particle effects to be automatically ended when leaving the state.  For particles that don't terminate (or don't terminate prior to state transition), they will be terminated at state exit.
+
+The array syntax allows for more than one effect to be triggered on state entry.
 
 The schema is:
 
@@ -68,8 +75,9 @@ The array syntax allows for more than one effect to be triggered on state entry.
 
 An example is the Blaze's flame-up effect in its animation controller. This animation controller has two states, "default" and "flaming". It transitions between the two via the "query.is_charged" entity flag check. When in the "flaming" state, the "charged_flames" effect is started (with no locator or initialization Molang expression), and is terminated when the state exits.
 
-```json
+**Blaze Example**
 
+```json
 {
   "format_version": "1.8.0",
   "animation_controllers": {
@@ -98,7 +106,45 @@ An example is the Blaze's flame-up effect in its animation controller. This anim
 }
 ```
 
-### Animation Timeline effects
+**Evoker Example**
+
+Another example is the Evoker's spell effect, which is actually implemented as two spell effects, using the locator for the left and right hands. The spell effects themselves are continuous, so the emitters will emit particles until the evoker is no longer casting a spell.
+
+```json
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.evoker.general": {
+      "states": {
+        "default": {
+            ...
+          "transitions": [
+            { "casting": "query.is_casting" }
+          ]
+        },
+        "casting": {
+            ...
+          "particle_effects": [
+            {
+              "effect": "spell",
+              "locator": "left_hand"
+            },
+            {
+              "effect": "spell",
+              "locator": "right_hand"
+          }
+          ],
+          "transitions": [
+            { "default": "!query.is_casting" }
+          ]
+        }
+      }
+    }
+  }
+}
+```
+
+### Animation Timeline Effects
 
 Animations can also trigger particle effects. These are fire-and-forget effects that are tied to a timeline, when the animation hits that time point, the effect(s) are fired.
 
@@ -114,6 +160,37 @@ Animations can also trigger particle effects. These are fire-and-forget effects 
       // single effect
     }
 }
+```
+
+`time1`, `time2`, and `time3` are numerical time points, such as "0.0".
+
+
+**Sitting Cat Example**
+
+In this example, when the cat sits down, after 3 seconds a smoke puff is generated
+
+```json
+{
+  "format_version": "1.8.0",
+  "animations": {
+    ...
+    "animation.cat.sit": {
+      "loop": true,
+      "animation_length": 5.0,
+      "bones": {
+          // bone animation stuff
+       },
+      "particle_effects": {
+        "3.0": [
+          {
+            "effect": "smoke_puff"
+          }
+        ]
+      }
+    },
+    ...
+    }
+  }
 ```
 
 ### Effect Event
@@ -152,3 +229,26 @@ The effect list is a list of internal effect names to actual particle effects bi
   }
 }
 ```
+
+This is an example of the flame-up effect for the Blaze. Inside the `"description"` section of an entity's resource definition we can add a `"particle_effects"` section that has a name/value pair. The **name** is the name that other .json in the entity will refer to, while the **value** is the name of the particle effect, as specified in the particle effect's .json file.
+
+```json
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:blaze",
+
+      ...
+
+       "particle_effects": {
+            "charged_flames": "minecraft:mobflame_emitter"
+        },
+
+        ...
+
+    }
+  }
+}
+```
+

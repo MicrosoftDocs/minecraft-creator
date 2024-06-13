@@ -304,13 +304,13 @@ Set the origin of the compound volume to an absolute world space location
 translateOrigin(delta: Vector3, preserveExistingVolumes?: boolean): void
 `
 
-Similar to {@link @minecraft-server/CompoundBlockVolume.setOrigin} - this function will translate the origin by a given delta to a new position
+Similar to [*@minecraft/server.CompoundBlockVolume.setOrigin*](../../minecraft/server/CompoundBlockVolume.md#setorigin) - this function will translate the origin by a given delta to a new position
 
 #### **Parameters**
 - **delta**: [*Vector3*](Vector3.md)
 - **preserveExistingVolumes**?: *boolean* = `null`
   
-  See the description for the arguments to @minecraft-server/CompoundBlockVolume.setOrigin
+  See the description for the arguments to [*@minecraft/server.CompoundBlockVolume.setOrigin*](../../minecraft/server/CompoundBlockVolume.md#setorigin)
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
