@@ -14,7 +14,7 @@ description: Contents of the @minecraft/server.EntityQueryOptions class.
 Contains options for selecting entities within an area.
 
 #### Examples
-##### ***testBlockConditional.ts***
+##### ***BlockConditional.ts***
 ```typescript
 import { Dimension } from '@minecraft/server';
 
@@ -42,7 +42,39 @@ function spawnFish(dimension: Dimension) {
         });
 }
 ```
-##### ***testPlaySoundChained.ts***
+##### ***EntityPropertyOptions.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={property=propId}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingAProperty(propId: string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+
+// Having this command:
+
+// execute as @e[has_property={propId=propValue}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyEqualsTo(propId: string, propValue: boolean | number | string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { equals: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***PlaySoundChained.ts***
 ```typescript
 import { Dimension } from '@minecraft/server';
 
@@ -67,163 +99,7 @@ function playSounds(dimension: Dimension) {
     });
 }
 ```
-##### ***testPropertyOptionsWithEqualsComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={propId=propValue}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingPropertyEqualsTo(propId: string, propValue: boolean | number | string) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { equals: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithGreaterThanComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// No equivalent commands as `propValue..` is inclusive in commands 
-
-function findEntitiesHavingPropertyGreaterThan(propId: string, propValue: number) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { greaterThan: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithGreaterThanOrEqualsComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={propId=propValue..}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingPropertyGreaterThanOrEqualsTo(propId: string, propValue: number) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { greaterThanOrEquals: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithHavingAProperty.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={property=propId}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingAProperty(propId: string) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithLessThanComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// No equivalent commands as `..propValue` is inclusive in commands 
-
-function findEntitiesHavingPropertyLessThan(propId: string, propValue: number) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { lessThan: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithLessThanOrEqualsComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={propId=..propValue}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingPropertyLessThanOrEqualsTo(propId: string, propValue: number) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { lessThanOrEquals: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithNotEqualsComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={propId=!propValue}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingPropertyNotEqualsTo(propId: string, propValue: boolean | number | string) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { notEquals: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithNotHavingAProperty.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={property=!propId}]
-
-// Equivalent scripting code would be:
-function findEntitiesNotHavingAProperty(propId: string) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, exclude: true }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithRangeComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={propId=lowerBoundValue..upperBoundValue}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingPropertyWithinRange(propId: string, lowerBoundValue: number, upperBoundValue: number) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { lowerBound: lowerBoundValue, upperBound: upperBoundValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testSendMessageAllPlayers.ts***
+##### ***SendMessageAllPlayers.ts***
 ```typescript
 import { Dimension } from '@minecraft/server';
 
@@ -248,7 +124,7 @@ function sendMessagesToPlayers(dimension: Dimension) {
     });
 }
 ```
-##### ***testSetScoreBoardChained.ts***
+##### ***SetScoreBoardChained.ts***
 ```typescript
 import { Dimension, world } from '@minecraft/server';
 
@@ -272,7 +148,7 @@ function setScores(dimension: Dimension) {
         });
 }
 ```
-##### ***testSummonMobChained.ts***
+##### ***SummonMobChained.ts***
 ```typescript
 import { Dimension } from '@minecraft/server';
 
@@ -339,7 +215,6 @@ If specified, includes entities that are least this distance away from the locat
 
 Type: *number*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **volume**
 `volume?: Vector3;`
 
@@ -347,12 +222,8 @@ In conjunction with location, specified a cuboid volume of entities to include.
 
 Type: [*Vector3*](Vector3.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
 #### Examples
-##### ***testBlockConditional.ts***
+##### ***BlockConditional.ts***
 ```typescript
 import { Dimension } from '@minecraft/server';
 
@@ -380,7 +251,39 @@ function spawnFish(dimension: Dimension) {
         });
 }
 ```
-##### ***testPlaySoundChained.ts***
+##### ***EntityPropertyOptions.ts***
+```typescript
+import { world, EntityQueryOptions } from '@minecraft/server';
+
+// Having this command:
+
+// execute as @e[has_property={property=propId}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingAProperty(propId: string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+
+// Having this command:
+
+// execute as @e[has_property={propId=propValue}]
+
+// Equivalent scripting code would be:
+function findEntitiesHavingPropertyEqualsTo(propId: string, propValue: boolean | number | string) {
+    const queryOption: EntityQueryOptions = {
+        propertyOptions: [{ propertyId: propId, value: { equals: propValue } }]
+    };
+
+    const overworld = world.getDimension('overworld');
+    const entities = overworld.getEntities(queryOption);
+}
+```
+##### ***PlaySoundChained.ts***
 ```typescript
 import { Dimension } from '@minecraft/server';
 
@@ -405,163 +308,7 @@ function playSounds(dimension: Dimension) {
     });
 }
 ```
-##### ***testPropertyOptionsWithEqualsComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={propId=propValue}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingPropertyEqualsTo(propId: string, propValue: boolean | number | string) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { equals: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithGreaterThanComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// No equivalent commands as `propValue..` is inclusive in commands 
-
-function findEntitiesHavingPropertyGreaterThan(propId: string, propValue: number) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { greaterThan: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithGreaterThanOrEqualsComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={propId=propValue..}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingPropertyGreaterThanOrEqualsTo(propId: string, propValue: number) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { greaterThanOrEquals: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithHavingAProperty.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={property=propId}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingAProperty(propId: string) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithLessThanComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// No equivalent commands as `..propValue` is inclusive in commands 
-
-function findEntitiesHavingPropertyLessThan(propId: string, propValue: number) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { lessThan: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithLessThanOrEqualsComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={propId=..propValue}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingPropertyLessThanOrEqualsTo(propId: string, propValue: number) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { lessThanOrEquals: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithNotEqualsComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={propId=!propValue}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingPropertyNotEqualsTo(propId: string, propValue: boolean | number | string) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { notEquals: propValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithNotHavingAProperty.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={property=!propId}]
-
-// Equivalent scripting code would be:
-function findEntitiesNotHavingAProperty(propId: string) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, exclude: true }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testPropertyOptionsWithRangeComparison.ts***
-```typescript
-import { world, EntityQueryOptions } from '@minecraft/server';
-
-// Having this command:
-
-// execute as @e[has_property={propId=lowerBoundValue..upperBoundValue}]
-
-// Equivalent scripting code would be:
-function findEntitiesHavingPropertyWithinRange(propId: string, lowerBoundValue: number, upperBoundValue: number) {
-    const queryOption: EntityQueryOptions = {
-        propertyOptions: [{ propertyId: propId, value: { lowerBound: lowerBoundValue, upperBound: upperBoundValue } }]
-    };
-
-    const overworld = world.getDimension('overworld');
-    const entities = overworld.getEntities(queryOption);
-}
-```
-##### ***testSendMessageAllPlayers.ts***
+##### ***SendMessageAllPlayers.ts***
 ```typescript
 import { Dimension } from '@minecraft/server';
 
@@ -586,7 +333,7 @@ function sendMessagesToPlayers(dimension: Dimension) {
     });
 }
 ```
-##### ***testSetScoreBoardChained.ts***
+##### ***SetScoreBoardChained.ts***
 ```typescript
 import { Dimension, world } from '@minecraft/server';
 
@@ -610,7 +357,7 @@ function setScores(dimension: Dimension) {
         });
 }
 ```
-##### ***testSummonMobChained.ts***
+##### ***SummonMobChained.ts***
 ```typescript
 import { Dimension } from '@minecraft/server';
 

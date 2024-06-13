@@ -22,11 +22,12 @@ Teleports entities to random locations.
 
 ## Usage
 ### Spread players
-`/spreadplayers <x: rotation> <z: rotation> <spreadDistance: float> <maxRange: float> <victim: target>`
+`/spreadplayers <x: rotation> <z: rotation> <spreadDistance: float> <maxRange: float> <victim: target> [maxHeight: rotation]`
 
 Spawn players at a particular `x` and `z` rotation with a defined `distance`, `max range`, and `players`.
 
 ## Arguments
+- `maxHeight`: rotation
 - `maxRange`: float
 The furthest distance that players can spawn from each other.
 Default: `0.0`.

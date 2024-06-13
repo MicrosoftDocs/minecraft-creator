@@ -14,9 +14,6 @@
   - name: Recipe Documentation
     tocHref: /minecraft/creator/reference/content/recipereference/
     topicHref: /minecraft/creator/reference/content/recipereference/index
-  - name: Volume Documentation
-    tocHref: /minecraft/creator/reference/content/volumereference/
-    topicHref: /minecraft/creator/reference/content/volumereference/index
   - name: Molang Documentation
     tocHref: /minecraft/creator/reference/content/molangreference/
     topicHref: /minecraft/creator/reference/content/molangreference/index

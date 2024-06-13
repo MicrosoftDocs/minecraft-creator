@@ -16,12 +16,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.10.0"
+    "version": "1.11.0"
 }
 ```
 
 ## Available Versions
 - `1.13.0-beta`
+- `1.11.0`
 - `1.10.0`
 - `1.9.0`
 - `1.8.0`
@@ -447,6 +448,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [WorldSoundOptions](WorldSoundOptions.md)
 
 ## Errors
+- [BlockCustomComponentAlreadyRegisteredError](BlockCustomComponentAlreadyRegisteredError.md)
+- [BlockCustomComponentReloadNewComponentError](BlockCustomComponentReloadNewComponentError.md)
+- [BlockCustomComponentReloadNewEventError](BlockCustomComponentReloadNewEventError.md)
+- [BlockCustomComponentReloadVersionError](BlockCustomComponentReloadVersionError.md)
 - [CommandError](CommandError.md)
 - [CustomComponentInvalidRegistryError](CustomComponentInvalidRegistryError.md)
 - [CustomComponentNameError](CustomComponentNameError.md)
@@ -465,25 +470,15 @@ Contains many types related to manipulating a Minecraft world, including entitie
 
 ## Constants
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **HudElementsCount**
 `static read-only HudElementsCount = 13;`
 
 Type: *number*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **HudVisibilityCount**
 `static read-only HudVisibilityCount = 2;`
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **MoonPhaseCount**
 `static read-only MoonPhaseCount = 8;`

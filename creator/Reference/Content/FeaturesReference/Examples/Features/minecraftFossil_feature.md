@@ -32,17 +32,17 @@ object "minecraft:fossil_feature" : opt
 
 ### Example
 
-Fossil composed of bone blocks and coal ore blocks
+Fossil composed of bone blocks and coal ore blocks.
 
 ```json
 {
-     "format_version": "1.16.0",
-     "minecraft:fossil_feature": {
+  "format_version": "1.13.0",
+    "minecraft:fossil_feature": {
       "description": {
-       "identifier": "minecraft:fossil_feature"
+        "identifier": "example:fossil_feature"
       },
       "ore_block": "minecraft:coal_ore",
       "max_empty_corners": 4
-     }
-    }
+  }
+}
 ```

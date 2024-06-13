@@ -22,4 +22,4 @@ Welcome to the Experimental Entity Query functions.
 | query.is_rising| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is rising, else it returns 0.0. |
 | query.is_scenting| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is scenting, else it returns 0.0. |
 | query.is_searching| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is searching, else it returns 0.0. |
-| query.is_spectator| (EXPERIMENTAL. Enable 'Spectator Mode' to use.) Returns 1.0 if the entity is spectator, else it returns 0.0. |
+| query.state_time| (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Only valid in an animation controller. Returns the time in seconds in the current animation controller state. |

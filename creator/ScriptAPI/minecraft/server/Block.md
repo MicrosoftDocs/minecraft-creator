@@ -99,7 +99,6 @@ Type: [*BlockPermutation*](BlockPermutation.md)
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **type**
 `read-only type: BlockType;`
 
@@ -107,16 +106,11 @@ Gets the type of block.
 
 Type: [*BlockType*](BlockType.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This property can throw errors when used.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **typeId**
 `read-only typeId: string;`
 
@@ -124,14 +118,10 @@ Identifier of the type of block for this block. Warning: Vanilla block names can
 
 Type: *string*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This property can throw errors when used.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **x**
 `read-only x: number;`
@@ -166,20 +156,19 @@ Type: *number*
 - [getComponent](#getcomponent)
 - [getItemStack](#getitemstack)
 ::: moniker range="=minecraft-bedrock-experimental"
+- [getMapColor](#getmapcolor)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getRedstonePower](#getredstonepower)
 ::: moniker-end
 - [getTags](#gettags)
 - [hasTag](#hastag)
 - [isValid](#isvalid)
-::: moniker range="=minecraft-bedrock-experimental"
 - [matches](#matches)
-::: moniker-end
 - [north](#north)
 - [offset](#offset)
 - [setPermutation](#setpermutation)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setType](#settype)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [setWaterlogged](#setwaterlogged)
 ::: moniker-end
@@ -232,7 +221,7 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) below t
 bottomCenter(): Vector3
 `
 
-Returns the @minecraft/server.Location of the center of this block on the X and Z axis.
+Returns the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) of the center of this block on the X and Z axis.
 
 **Returns** [*Vector3*](Vector3.md)
 
@@ -268,7 +257,7 @@ Checks to see whether it is valid to place the specified block type or block per
 center(): Vector3
 `
 
-Returns the @minecraft/server.Location of the center of this block on the X, Y, and Z axis.
+Returns the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) of the center of this block on the X, Y, and Z axis.
 
 **Returns** [*Vector3*](Vector3.md)
 
@@ -331,6 +320,23 @@ Creates a prototype item stack based on this block that can be used with Contain
 > This function can throw errors.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getMapColor**
+`
+getMapColor(): RGBA
+`
+
+**Returns** [*RGBA*](RGBA.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getRedstonePower**
@@ -406,7 +412,6 @@ Returns true if this reference to a block is still valid (for example, if the bl
 
 **Returns** *boolean* - True if this block object is still working and valid.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **matches**
 `
 matches(blockName: string, states?: Record<string, boolean | number | string>): boolean
@@ -424,14 +429,10 @@ Tests whether this block matches a specific criteria.
 
 **Returns** *boolean* - Returns true if the block matches the specified criteria.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **north**
 `
@@ -491,7 +492,6 @@ Sets the block in the dimension to the state of the permutation.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setType**
 `
 setType(blockType: BlockType | string): void
@@ -504,9 +504,6 @@ Sets the type of block.
   
   Identifier of the type of block to apply - for example, minecraft:powered_repeater.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -514,7 +511,6 @@ Sets the type of block.
 > This function can throw errors.
 >
 > Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setWaterlogged**

@@ -14,7 +14,7 @@ ms.service: minecraft-bedrock-edition
 
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
-| active_speed| 1| Decimal| The speed this entity moves when this behavior has started or while it's active. |
+| active_speed| 0.6| Decimal| The speed this entity moves when this behavior has started or while it's active. |
 | fireball_range| 64| Decimal| Maximum distance of this entity's fireball attack while strafing. |
 | flight_speed| 0.6| Decimal| The speed this entity moves while this behavior is not active. |
 | priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|

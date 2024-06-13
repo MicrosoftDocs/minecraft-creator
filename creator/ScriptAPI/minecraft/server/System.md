@@ -59,12 +59,12 @@ Type: *number*
 clearJob(jobId: number): void
 `
 
-Cancels the execution of a job queued via System.runJob.
+Cancels the execution of a job queued via [*@minecraft/server.System.runJob*](../../minecraft/server/System.md#runjob).
 
 #### **Parameters**
 - **jobId**: *number*
   
-  The job ID returned from System.runJob.
+  The job ID returned from [*@minecraft/server.System.runJob*](../../minecraft/server/System.md#runjob).
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -75,7 +75,7 @@ Cancels the execution of a job queued via System.runJob.
 clearRun(runId: number): void
 `
 
-Cancels the execution of a function run that was previously scheduled via System.run.
+Cancels the execution of a function run that was previously scheduled via [*@minecraft/server.System.run*](../../minecraft/server/System.md#run).
 
 #### **Parameters**
 - **runId**: *number*
@@ -157,7 +157,7 @@ Queues a generator to run until completion.  The generator will be given a time 
   
   The instance of the generator to run.
 
-**Returns** *number* - An opaque handle that can be used with System.clearJob to stop the run of this generator.
+**Returns** *number* - An opaque handle that can be used with [*@minecraft/server.System.clearJob*](../../minecraft/server/System.md#clearjob) to stop the run of this generator.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
