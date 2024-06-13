@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EnchantmentType Class
 description: Contents of the @minecraft/server.EnchantmentType class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EnchantmentType Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information on a type of enchantment.
 

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .EnchantmentTypeNotCompatibleError Class
 description: Contents of the .EnchantmentTypeNotCompatibleError class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EnchantmentTypeNotCompatibleError Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - *Error*

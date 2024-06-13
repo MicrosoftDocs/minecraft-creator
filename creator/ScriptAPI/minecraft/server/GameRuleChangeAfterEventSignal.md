@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.GameRuleChangeAfterEventSignal Class
 description: Contents of the @minecraft/server.GameRuleChangeAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # GameRuleChangeAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to when a world.gameRules property has changed.
 

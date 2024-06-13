@@ -26,17 +26,12 @@ Contains a set of events that are applicable to the entirety of the world. Event
 
 Type: [*WorldBeforeEvents*](WorldBeforeEvents.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **gameRules**
 `read-only gameRules: GameRules;`
 
 The game rules that apply to the world.
 
 Type: [*GameRules*](GameRules.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **scoreboard**
 `read-only scoreboard: Scoreboard;`

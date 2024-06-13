@@ -24,14 +24,9 @@ Type: *boolean*
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **id**
 `read-only id: string;`
 
 Block type name - for example, `minecraft:acacia_stairs`.
 
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end

@@ -120,17 +120,12 @@ This event is fired after an explosion occurs.
 
 Type: [*ExplosionAfterEventSignal*](ExplosionAfterEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **gameRuleChange**
 `read-only gameRuleChange: GameRuleChangeAfterEventSignal;`
 
 This event fires when a world.gameRules property has changed.
 
 Type: [*GameRuleChangeAfterEventSignal*](GameRuleChangeAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **itemCompleteUse**
 `read-only itemCompleteUse: ItemCompleteUseAfterEventSignal;`
@@ -238,15 +233,10 @@ Type: [*PlayerEmoteAfterEventSignal*](PlayerEmoteAfterEventSignal.md)
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerGameModeChange**
 `read-only playerGameModeChange: PlayerGameModeChangeAfterEventSignal;`
 
 Type: [*PlayerGameModeChangeAfterEventSignal*](PlayerGameModeChangeAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInputPermissionCategoryChange**
