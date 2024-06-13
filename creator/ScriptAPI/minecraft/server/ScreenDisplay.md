@@ -58,27 +58,16 @@ world.afterEvents.playerSpawn.subscribe(event => {
 ```
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [getHiddenHudElements](#gethiddenhudelements)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [hideAllExcept](#hideallexcept)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [isForcedHidden](#isforcedhidden)
-::: moniker-end
 - [isValid](#isvalid)
-::: moniker range="=minecraft-bedrock-experimental"
 - [resetHudElements](#resethudelements)
-::: moniker-end
 - [setActionBar](#setactionbar)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setHudVisibility](#sethudvisibility)
-::: moniker-end
 - [setTitle](#settitle)
 - [updateSubtitle](#updatesubtitle)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getHiddenHudElements**
 `
 getHiddenHudElements(): HudElement[]
@@ -86,17 +75,12 @@ getHiddenHudElements(): HudElement[]
 
 **Returns** [*HudElement*](HudElement.md)[]
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **hideAllExcept**
 `
 hideAllExcept(hudElements?: HudElement[]): void
@@ -105,17 +89,12 @@ hideAllExcept(hudElements?: HudElement[]): void
 #### **Parameters**
 - **hudElements**?: [*HudElement*](HudElement.md)[] = `null`
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isForcedHidden**
 `
 isForcedHidden(hudElement: HudElement): boolean
@@ -126,15 +105,11 @@ isForcedHidden(hudElement: HudElement): boolean
 
 **Returns** *boolean*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ### **isValid**
 `
@@ -145,21 +120,16 @@ Returns true if the current reference to this screen display manager object is v
 
 **Returns** *boolean*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **resetHudElements**
 `
 resetHudElements(): void
 `
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ### **setActionBar**
 `
@@ -179,7 +149,6 @@ Set the action bar text - a piece of text that displays beneath the title and ab
 > [!WARNING]
 > This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setHudVisibility**
 `
 setHudVisibility(visible: HudVisibility, hudElements?: HudElement[]): void
@@ -195,15 +164,11 @@ Sets visibility of a particular element of the heads up display (HUD).
   
   Optional list of HUD elements to configure visibility for.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ### **setTitle**
 `

@@ -253,7 +253,7 @@ In the **behavior pack/entities/** folder, open `robot.json` and replace the sin
 
 ## Animations
 
-In this section, we'll just add a simple wheel animation to the robot. If you want to learn more about animations, how to use animation controllers, and how to create animations in [Blockbench](https://www.blockbench.net/), read [this guide](EntityModelingAndAnimation.md).
+In this section, we'll just add a simple wheel animation to the robot. If you want to learn more about animations, how to use animation controllers, and how to create animations in [BlockBench](https://www.blockbench.net/), read [this guide](EntityModelingAndAnimation.md).
 
 Animations are stored in animation files. So the first thing we need to do is create a folder called `animations` in the resource pack and create a file called `robot.animation.json` inside it. In that file, we'll create a new animation called `animation.robot.drive`. We also want to set `loop` to `true` so the animation will keep playing. The file should look like this:
 

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.Enchantment Interface
 description: Contents of the @minecraft/server.Enchantment class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # Enchantment Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 This interface represents a specific leveled enchantment that is applied to an item.
 

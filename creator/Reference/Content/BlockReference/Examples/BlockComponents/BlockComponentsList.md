@@ -14,6 +14,7 @@ Below is a list of all the available Block Components within Minecraft: Bedrock 
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
+|[minecraft:breathability](minecraftBlock_breathability.md)| solid | String| Specifies whether the block is breathable by defining if the block is treated as a `solid` or as `air`. The default is `solid` if this component is omitted. Experimental toggles required: Holiday Creator Features|
 |[minecraft:collision_box](minecraftBlock_collision_box.md)| true| Boolean/JSON Object| Defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used. Experimental toggles required: Holiday Creator Features (in format versions before 1.19.50).|
 |[minecraft:crafting_table](minecraftBlock_crafting_table.md) |*not set*| JSON Object | Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. Experimental toggles required: Holiday Creator Features (in format versions before 1.19.50).|
 |[minecraft:custom_components](../../../../../Documents/CustomComponents.md)| --| Array| Sets an ordered list of custom component names bound in script to be executed on a block event. Experimental toggles required: Beta APIs.|

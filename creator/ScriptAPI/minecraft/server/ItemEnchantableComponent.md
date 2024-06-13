@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemEnchantableComponent Class
 description: Contents of the @minecraft/server.ItemEnchantableComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemEnchantableComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*ItemComponent*](ItemComponent.md)

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .HudVisibility Enumeration
 description: Contents of the .HudVisibility enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # HudVisibility Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Enumeration that specifies how to treat the visibility of a HUD element.
 

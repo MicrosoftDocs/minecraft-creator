@@ -39,15 +39,15 @@ Scattering multiple different plants around a monument
 
 ```json
 {
-  "format_version": 1.3.0,
+  "format_version": "1.13.0",
   "minecraft:aggregate_feature": {
     "description": {
       "identifier": "example:monument_with_flowers_feature"
     },
     "features": [
-      "monument_feature",
-      "scatter_white_flowers_feature",
-      "scatter_yellow_flower_feature"
+      "example:monument_feature",
+      "example:scatter_white_flowers_feature",
+      "example:scatter_yellow_flower_feature"
     ]
   }
 }

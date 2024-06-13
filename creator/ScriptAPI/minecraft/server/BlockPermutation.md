@@ -39,17 +39,12 @@ function createSignAt(location: DimensionLocation) {
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **type**
 `read-only type: BlockType;`
 
 The [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) that the permutation has.
 
 Type: [*BlockType*](BlockType.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ## Methods
 - [getAllStates](#getallstates)

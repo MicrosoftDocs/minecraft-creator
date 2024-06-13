@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockTypes Class
 description: Contents of the @minecraft/server.BlockTypes class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockTypes Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains a catalog of Minecraft Block Types that are available in this world.
 

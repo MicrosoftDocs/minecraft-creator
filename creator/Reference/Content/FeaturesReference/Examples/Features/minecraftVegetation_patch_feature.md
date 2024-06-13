@@ -1,13 +1,14 @@
 ---
 author: iconicnurdle
 ms.author: mikeam
-title: Features Documentation - minecraft:vegetation_patch_feature 
+title: Features Documentation - minecraft:vegetation_patch_feature
+description: "A reference document detailing the 'vegetation_patch_feature' feature"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Features Documentation - minecraft:vegetation_patch_feature 
+# Features Documentation - minecraft:vegetation_patch_feature
 
-`minecraft:vegetation_patch_feature` scatters vegetation in an area. The vegetation feature's appearance can be modified by adjusting the radius and depth that it will generate. 
+`minecraft:vegetation_patch_feature` scatters vegetation in an area. The vegetation feature's appearance can be modified by adjusting the radius and depth that it will generate.
 
 ### Schema
 
@@ -39,34 +40,39 @@ object "minecraft:vegetation_patch_feature" : opt
 
 ```json
 {
-  "format_version": "1.16.0",
+  "format_version": "1.13.0",
   "minecraft:vegetation_patch_feature": {
     "description": {
-      "identifier": "example:custom_patch_feature"
+      "identifier": "example:clay_pool_with_dripleaves_feature"
     },
     "replaceable_blocks": [
+      "minecraft:clay",
+      "minecraft:moss_block",
+      "minecraft:sand",
+      "minecraft:gravel",
       "minecraft:dirt",
       "minecraft:podzol",
       "minecraft:dirt_with_roots",
       "minecraft:grass_block",
       "minecraft:mycelium",
       "minecraft:stone",
-      "minecraft:sand"
+      "minecraft:cave_vines",
+      "minecraft:cave_vines_body_with_berries",
+      "minecraft:cave_vines_head_with_berries"
     ],
-    "ground_block": "minecraft:cactus",
-    "vegetation_feature": "example:flowering_cactus_vegetation_feature",
+    "ground_block": "minecraft:clay",
+    "vegetation_feature": "minecraft:dripleaf_feature",
     "surface": "floor",
-    "depth": {
-      "range_min": 1,
-      "range_max": 2
-    },
+    "depth": 3,
     "vertical_range": 5,
-    "vegetation_chance": 0.8,
+    "vegetation_chance": 0.1,
     "horizontal_radius": {
       "range_min": 4,
       "range_max": 8
     },
-    "extra_edge_column_chance": 0.3
+    "extra_deep_block_chance": 0.8,
+    "extra_edge_column_chance": 0.7,
+    "waterlogged": true
   }
 }
 ```

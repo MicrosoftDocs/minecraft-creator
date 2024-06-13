@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .EnchantmentTypeUnknownIdError Class
 description: Contents of the .EnchantmentTypeUnknownIdError class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EnchantmentTypeUnknownIdError Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - *Error*

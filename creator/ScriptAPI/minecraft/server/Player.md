@@ -107,18 +107,13 @@ Type: [*ScreenDisplay*](ScreenDisplay.md)
 > [!WARNING]
 > This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **selectedSlotIndex**
 `selectedSlotIndex: number;`
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 > [!IMPORTANT]
 > This property can't be edited in read-only mode.
-::: moniker-end
 
 ### **totalXpNeededForNextLevel**
 `read-only totalXpNeededForNextLevel: number;`
@@ -146,12 +141,8 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [eatItem](#eatitem)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getGameMode](#getgamemode)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getItemCooldown](#getitemcooldown)
-::: moniker-end
 - [getSpawnPoint](#getspawnpoint)
 - [getTotalXp](#gettotalxp)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -165,9 +156,7 @@ Type: *number*
 - [queueMusic](#queuemusic)
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setGameMode](#setgamemode)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [setOp](#setop)
 ::: moniker-end
@@ -175,9 +164,7 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [spawnParticle](#spawnparticle)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [startItemCooldown](#startitemcooldown)
-::: moniker-end
 - [stopMusic](#stopmusic)
 
 ### **addExperience**
@@ -245,7 +232,6 @@ Eats an item, providing the item's hunger and saturation effects to the player. 
 > Throws if the item is not a food item.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getGameMode**
 `
 getGameMode(): GameMode
@@ -255,14 +241,9 @@ Retrieves the active gamemode for this player, if specified.
 
 **Returns** [*GameMode*](GameMode.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getItemCooldown**
 `
 getItemCooldown(cooldownCategory: string): number
@@ -277,12 +258,8 @@ Gets the current item cooldown time for a particular cooldown category.
 
 **Returns** *number*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ### **getSpawnPoint**
 `
@@ -473,7 +450,6 @@ function sendPlayerMessages(player: Player) {
 }
 ```
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setGameMode**
 `
 setGameMode(gameMode?: GameMode): void
@@ -486,15 +462,11 @@ Sets a gamemode override for this player.
   
   Active gamemode.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setOp**
@@ -592,7 +564,6 @@ world.afterEvents.playerSpawn.subscribe(event => {
 ```
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **startItemCooldown**
 `
 startItemCooldown(cooldownCategory: string, tickDuration: number): void
@@ -608,15 +579,11 @@ Sets the item cooldown time for a particular cooldown category.
   
   Duration in ticks of the item cooldown.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ### **stopMusic**
 `

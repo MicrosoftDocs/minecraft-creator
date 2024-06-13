@@ -86,19 +86,19 @@ Placing a single pumpkin block
 
 ```json
 {
-  "format_version": 1.13.0,
+  "format_version": "1.13.0",
   "minecraft:single_block_feature": {
     "description": {
       "identifier": "example:single_pumpkin_feature"
     },
-    "places_block": "example:pumpkin",
+    "places_block": "minecraft:pumpkin",
     "enforce_placement_rules": true,
     "enforce_survivability_rules": true,
     "may_place_on": [
-      "example:grass"
+      "minecraft:grass"
     ],
     "may_replace": [
-      "example:air"
+      "minecraft:air"
     ]
   }
 }

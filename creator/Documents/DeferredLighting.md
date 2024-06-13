@@ -504,8 +504,6 @@ Please refer to the following articles to get started with these systems:
 
 >- [Fog in Resource Packs](FogInResourcePacks.md)
 
->- [Volume JSON Documentation](../Reference/Content/VolumeReference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md)
-
 Note that the Deferred Technical Preview does not fully support tinted absorption as described in the `"media_coefficients"` section of **Fog in Resource Packs**. The JSON format takes an RGB triplet for this value to describe how much light the fog will absorb on a per-channel granularity. This is the behavior for RTX Resource Packs, but volumes in the Deferred Technical Preview only operate at a single-channel of granularity. Therefore, our engine will calculate the standard luminance of the RGB triplet specified for absorption and use it instead of the RGB triplet itself when in "Deferred Technical Preview" mode.
 
 Luminance is calculated as follows: 

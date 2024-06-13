@@ -160,9 +160,7 @@ Type: *string*
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
 - [isStackableWith](#isstackablewith)
-::: moniker range="=minecraft-bedrock-experimental"
 - [matches](#matches)
-::: moniker-end
 - [setCanDestroy](#setcandestroy)
 - [setCanPlaceOn](#setcanplaceon)
 - [setDynamicProperty](#setdynamicproperty)
@@ -371,7 +369,6 @@ Returns whether this item stack can be stacked with the given `itemStack`. This 
 
 **Returns** *boolean* - True if the Item Stack is stackable with the itemStack passed in.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **matches**
 `
 matches(itemName: string, states?: Record<string, boolean | number | string>): boolean
@@ -388,10 +385,6 @@ Version safe way of checking if an item matches.
    Applicable only for blocks. An optional set of states to compare against. If states is not specified, matches checks against the set of types more broadly.
 
 **Returns** *boolean* - Returns a boolean whether the specified item matches.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **setCanDestroy**
 `

@@ -76,11 +76,13 @@ object "minecraft:scatter_feature" : opt
 
 ### Example
 
-Scattering flowers at sea level across half the chunks in a biome
+Scattering flowers at sea level across half the chunks in a biome.
+
+**Version 1.13.0**
 
 ```json
 {
-  "format_version": 1.13.0,
+  "format_version": "1.13.0",
   "minecraft:scatter_feature": {
     "description": {
       "identifier": "example:scatter_flowers_feature"
@@ -96,6 +98,35 @@ Scattering flowers at sea level across half the chunks in a biome
     "z": {
       "distribution": "uniform",
       "extent": [ 0, 15 ]
+    }
+  }
+}
+```
+
+**Version 1.21.10**
+
+Uses "distribution" field to define the scattering settings.
+
+```json
+{
+  "format_version": "1.21.10",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "example:scatter_flowers_feature"
+    },
+    "places_feature": "example:flower_feature",
+    "distribution": {
+      "iterations": 10,
+      "scatter_chance": 50.0,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 15 ]
+      },
+      "y": 64,
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 15 ]
+      }
     }
   }
 }

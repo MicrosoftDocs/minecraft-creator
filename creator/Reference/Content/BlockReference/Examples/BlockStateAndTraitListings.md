@@ -1,12 +1,12 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Default Minecraft Block States and Traits
 description: A listing of default Minecraft block states and traits
 ms.service: minecraft-bedrock-edition
 ---
 
-## Block States
+# Block States
 
 | Block State Name| Type| Valid Values| Description |
 |:-----------|:-----------|:-----------|:-----------|
@@ -73,6 +73,7 @@ ms.service: minecraft-bedrock-edition
 | occupied_bit| Boolean| True, False| Determines if a bed block is occupied |
 | old_leaf_type| String| oak, spruce, birch, jungle| Determines the leaf type of some blocks |
 | old_log_type| String| oak, spruce, birch, jungle| Determines the wood type of some blocks |
+| ominous| Boolean| True, False| Determines if the block is the ominous version|
 | open_bit| Boolean| True, False| Determines if a door, gate, or trapdoor is open |
 | orientation| Integer| 0-11| A 12-variant orientation|
 | output_lit_bit| Boolean| True, False| Determines if a Comparator's output is lit |
