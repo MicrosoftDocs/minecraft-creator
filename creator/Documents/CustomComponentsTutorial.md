@@ -100,6 +100,19 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
 Notice that the component code and name do not reference the strawberry item itself. You can reuse components on multiple items that have similar behavior.
 
+> [!NOTE]
+> As of this writing, custom components are still in preview. For this reason you will want to use a -beta scripting module in the dependencies
+> section of your behavior pack manifest.json.
+
+```JSON
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.13.0-beta"
+    }
+  ]
+```
+
 ## Block Custom Components
 
 Block custom components work very similarly to item custom components. First we need our block definition:
