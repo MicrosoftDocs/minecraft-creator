@@ -30,7 +30,7 @@ Another set of Creator APIs have been released out of beta and into stable (see:
   - [HudVisibility](../ScriptAPI/minecraft/server/HudVisibility.md)
 - **Weather Before Event**
   - [WeatherChangeBeforeEvent](../ScriptAPI/minecraft/server/WeatherChangeBeforeEvent.md)
-- **Enchantment APIs
+- **Enchantment APIs**
   - [ItemEnchantableComponent](../ScriptAPI/minecraft/server/ItemEnchantableComponent.md)
   - [Enchantment](../ScriptAPI/minecraft/server/Enchantment.md)
   - [EnchantmentSlot](../ScriptAPI/minecraft/server/EnchantmentSlot.md)
