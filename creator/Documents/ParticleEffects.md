@@ -19,6 +19,8 @@ In this tutorial you will learn:
 > - How to create custom particle effects in Minecraft: Bedrock Edition.
 > - How to make a new particle effect.
 
+You'll also use [Snowstorm](./SnowstormOverview.md) - a community tool that will make editing particle effects much easier!
+
 ### Requirements
 
 It is recommended that the following be completed before beginning this tutorial:
@@ -47,15 +49,21 @@ All values in particle effects use **meters** (blocks) and **seconds** as units.
 
 ## Snowstorm
 
-We'll be using snowstorm to create the particle effects in this guide. Snowstorm can be used as a [web app](https://snowstorm.app/) or as an [extension](https://marketplace.visualstudio.com/items?itemName=JannisX11.snowstorm) for VSCode. It allows users to preview the particle effect live while changing parameters. The web app is useful for beginners, while the VSCode extension offers a faster process for working with multiple particle effects.
+We'll be using Snowstorm to create the particle effects in this guide. [Snowstorm](./SnowstormOverview.md) can be used as a [web app](https://snowstorm.app/) or as an [extension](https://marketplace.visualstudio.com/items?itemName=JannisX11.snowstorm) for VSCode. It allows users to preview the particle effect live while changing parameters. The web app is useful for beginners, while the VSCode extension offers a faster process for working with multiple particle effects.
 
 ### Interface
 
-Snowstorm includes a 3D preview section, sidebar, menu bar, and expression bar below the menu.
+Snowstorm includes a 3D preview section, sidebar organized by section tab buttons, a menu bar, and an expression bar below the menu.
 
 ![Snowstorm interface](Media/ParticleEffects/snowstorminterface.png)
 
-The sidebar details the parameters and settings that make up a particle. Many of the fields support Molang, which means static numbers can be added, but for more control over the value, mathematical expressions that use Molang can be used. Hovering over a field will cause a description of the field to appear.
+Across the tabs and into the sidebar, you'll see the parameters and settings that make up a particle.
+
+The first tab is the "Quick Setup" tab, which allows you to select from a set of pre-set motions, timings, and physics configurations.
+
+![Snowstorm Quick Setup](Media/ParticleEffects/snowstormquicksetup.png)
+
+Within the sidebar, many of the fields support Molang, which means static numbers can be added, but for more control over the value, mathematical expressions that use Molang can be used. Hovering over a field will cause a description of the field to appear.
 
 If you end up with a complex Molang expression, it can be edited in the expression bar below the menu.
 
@@ -67,7 +75,7 @@ Below the expression bar is the preview screen. To navigate in the 3D space, use
 
 ### Import and Export
 
-In the web app, files have to be imported and exported via the **File** menu. To preview the generated file, switch to the **Code** tab in the top right corner of the window.
+In the web app, files have to be imported and exported via the **File** menu. To see the markup for the file, switch to the **Code** tab in the top right corner of the window.
 
 ![Code tab in Snowstorm](Media/ParticleEffects/snowstormcode.png)
 
@@ -79,7 +87,12 @@ If using the VSCode extension, create a new file named `<name>.particle.json` in
 
 ## Creating a Particle Effect
 
-In this guide, we'll create a colored smoke effect step-by-step. To begin, open Snowstorm and locate the meta section in the sidebar. Type in the identifier of the particle effect – we'll use **sample:colored_smoke**.
+In this guide, we'll create a colored smoke effect step-by-step.
+
+> [!NOTE]
+> The Quick Setup tab in Snowstorm provides an easy way to get started with custom particle effects, but in this tutorial we'll take a more leisurely tour through various Snowstorm settings areas.
+
+To begin, open Snowstorm and locate the meta section in the sidebar. Type in the identifier of the particle effect – we'll use **sample:colored_smoke**.
 
 ![Identifier in Snowstorm](Media/ParticleEffects/snowstormidentifier.png)
 
