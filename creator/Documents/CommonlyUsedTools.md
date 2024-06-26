@@ -54,11 +54,17 @@ goBrush is a server plugin for Java Edition that adds in-game tools designed for
 
 goPaint is a server plugin for Java Edition that allows creators to efficiently "paint" blocks with a variety of brush shapes.
 
-## Creating Models
+## Creating Models and Visuals
 
 ### [Blockbench](https://blockbench.net/)
 
 Blockbench is a free entity-modeling application for creating working Bedrock Edition entity models, as well as creating textures and the ability to animate them for Bedrock Edition maps. Blockbench has external plugin support, enabling developers to create additional tools to use within the program. It also has the ability to export models into a standard OBJ format, Java Edition block model, and more.
+
+### [Snowstorm](https://snowstorm.app/)
+
+Snowstorm is a small application for Bedrock Edition created by the developer of Blockbench that can be used to create custom particle effects that are usable in-game. To get started with [Snowstorm](./SnowstormOverview.md), visit a [tutorial](./ParticleEffects.md) on building particle effects with Snowstorm.
+
+## JSON Definition Editing
 
 ### [Blockception VSCode Extension](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension)
 
@@ -69,10 +75,6 @@ An extension that provides support for files such as .mcfunction, .json and .lan
 bridge. is a light-weight, dedicated editor for Minecraft Add-Ons that makes it easy to get started with Add-Ons and later scales with your growing needs. It requires zero setup and provides you with an [instantly bootable development environment](https://editor.bridge-core.app/) with syntax highlighting, [code completions and file diagnostics](https://bridge-core.app/guide/features/index.html#auto-completions-and-validation) all designed to make developing Minecraft Add-Ons more convenient. To read more, please refer to bridge.'s [getting started guide](https://bridge-core.app/guide/index.html) or [learn more about why you should use bridge.](https://bridge-core.app/guide/why-bridge.html)
 
 bridge. is [open source](https://github.com/bridge-core/editor) and freely available to all Add-On creators on desktop and mobile platforms.
-
-### [Snowstorm](https://jannisx11.github.io/snowstorm/)
-
-Snowstorm is a small application for Bedrock Edition created by the developer of Blockbench that can be used to create custom particle effects that are usable in-game.
 
 ### [NPC DialogueDesigner](https://jannisx11.github.io/dialogue-designer/)
 

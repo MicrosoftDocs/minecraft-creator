@@ -286,7 +286,7 @@
               href: Documents/GameTestGettingStarted.md
             - name: Build your First GameTest
               href: Documents/GameTestBuildYourFirstGameTest.md
-        - name: Bedrock Editor
+        - name: "Bedrock Editor - World Editing"
           items:
             - name: Editor Overview
               href: Documents/EditorOverview.md
@@ -296,15 +296,17 @@
               href: Documents/EditorTutorial.md
             - name: Building Editor Extensions
               href: Documents/EditorExtensionsIntroduction.md
-        - name: Blockbench
+        - name: "Blockbench - Model Editing"
           items:
-            - name: Minecraft Item Wizard
-              href: Documents/MinecraftItemWizard.md 
             - name: Minecraft Entity Wizard
               href: Documents/MinecraftEntityWizard.md
+            - name: Minecraft Item Wizard
+              href: Documents/MinecraftItemWizard.md 
             - name: Minecraft Block Wizard
               href: Documents/MinecraftBlockWizard.md
-        - name: Chunker
+        - name: "Snowstorm - Particle Editing"
+          href: Documents/SnowstormOverview.md
+        - name: "Chunker - World Conversion"
           items:
             - name: Chunker - Overview
               href: Documents/ChunkerOverview.md
