@@ -7,7 +7,7 @@ title: Introduction to Gamerules
 description: An introduction to the /gamerule command and its function in a Minecraft world
 ---
 
-# Gamerules
+# Introduction to Gamerules
 
 The `/gamerule` command lets you adjust certain features of your game world and even turn them on and off. Gamerules can be extremely helpful when setting up the basics for how your Minecraft world will behave. For example, if you want to create an amusement park world, you can use gamerules to make sure that it's always a sunny, perfect day to enjoy all of the rides or attractions. Let's take a closer look at gamerules to see how we can use them to create experiences in Minecraft.
 
@@ -17,11 +17,11 @@ We recommend completing the following before beginning this tutorial:
 
 - [Introduction to Commands](CommandsIntroduction.md)
 
-## List of /gamerule Commands
+## Using /gamerule Commands
 
-For a full list of `/gamerule` commands and their descriptions, see [gamerule Command](../Commands/commands/gamerule.md). 
+For a full list of `/gamerule` commands and their descriptions, see [gamerule Command](../Commands/commands/gamerule.md).
 
-Don't worry if you don't know all of the `/gamerule` commands by heart - we'll go over the specific commands we want to use in the following sections.
+Don't worry if you don't know all of the `/gamerule` commands by heart - we'll go over the specific commands we want to use in the following sections. For now, just know that you can use the command in Minecraft in the following format: `/gamerule [INSERT GAMERULE COMMAND HERE] [INSERT GAMERULE VALUE HERE]`.
 
 ## Sample /gamerule Configurations
 
@@ -77,3 +77,11 @@ Check out the following resources to see how you can tailor your Minecraft world
 - [Create an Angry Cow: An Introduction To Behavior Packs](BehaviorPack.md)
 - [Getting Started with Command Blocks](CommandBlocks.md)
 - [Loot and Trade Table Functions](LootAndTradeTableFunctions.md)
+
+### Scripting and Gamerules
+
+As you progress through your Minecraft customization journey, you may become interested in writing scripts that set all of these gamerules at once. Though your gamerules will stay in place in your created worlds, scripts can help to make your Minecraft experiences more efficient and enjoyable, since you won't have to enter the individual `/gamerule` commands every time you start up a new world. You can also change the gamerules based on certain conditions and use other advanced techniques to customize your experience for you and your friends.
+
+To learn more about Minecraft scripting, see [Introduction to Scripting in Minecraft](ScriptingIntroduction.md).
+
+Once you have begun writing scripts, you can use this reference to include gamerules in your scripts with the appropriate names and syntax: [GameRule Enumeration](../ScriptAPI/minecraft/server/GameRule.md).
