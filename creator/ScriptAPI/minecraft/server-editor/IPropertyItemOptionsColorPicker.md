@@ -17,3 +17,8 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsColorP
 `showAlpha: boolean;`
 
 Type: *boolean*
+
+### **variant**
+`variant: ColorPickerVariant;`
+
+Type: *ColorPickerVariant*

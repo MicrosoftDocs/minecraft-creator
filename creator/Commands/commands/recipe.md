@@ -38,6 +38,14 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:quartz_bricks`
+- `minecraft:sandstone`
+- `minecraft:smooth_sandstone`
+- `minecraft:smooth_sandstone_stairs`
+- `minecraft:stonecutter_sandstone_cut`
+- `minecraft:stonecutter_sandstone_heiroglyphs`
+- `minecraft:stonecutter_waxed_oxidized_cut_copper_to_cut_copper_slab`
+- `minecraft:yellow_dye_from_dandelion`
 - `minecraft:grindstone`
 - `minecraft:lodestone`
 - `minecraft:mossy_stonebrick`
@@ -852,7 +860,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:purpur_block`
 - `minecraft:purpur_stairs`
 - `minecraft:quartz_block`
-- `minecraft:quartz_bricks`
 - `minecraft:quartz_stairs`
 - `minecraft:rabbit_stew_from_brown_mushroom`
 - `minecraft:rabbit_stew_from_red_mushroom`
@@ -887,7 +894,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:repeater`
 - `minecraft:respawn_anchor`
 - `minecraft:rib_armor_trim_smithing_template_duplicate`
-- `minecraft:sandstone`
 - `minecraft:sandstone_stairs`
 - `minecraft:sandstone_wall`
 - `minecraft:scaffolding`
@@ -911,8 +917,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:smooth_quartz_stairs`
 - `minecraft:smooth_red_sandstone`
 - `minecraft:smooth_red_sandstone_stairs`
-- `minecraft:smooth_sandstone`
-- `minecraft:smooth_sandstone_stairs`
 - `minecraft:snout_armor_trim_smithing_template_duplicate`
 - `minecraft:snow`
 - `minecraft:snow_layer`
@@ -1023,8 +1027,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:stonecutter_red_sanddouble_stone_slab`
 - `minecraft:stonecutter_red_sandstone_stairs`
 - `minecraft:stonecutter_red_sandstone_wall`
-- `minecraft:stonecutter_sandstone_cut`
-- `minecraft:stonecutter_sandstone_heiroglyphs`
 - `minecraft:stonecutter_sandstone_stairs`
 - `minecraft:stonecutter_sandstone_wall`
 - `minecraft:stonecutter_slab_from_polished_blackstone`
@@ -1058,7 +1060,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:stonecutter_waxed_oxidized_copper_to_cut_copper`
 - `minecraft:stonecutter_waxed_oxidized_copper_to_cut_copper_slab`
 - `minecraft:stonecutter_waxed_oxidized_copper_to_cut_copper_stairs`
-- `minecraft:stonecutter_waxed_oxidized_cut_copper_to_cut_copper_slab`
 - `minecraft:stonecutter_waxed_oxidized_cut_copper_to_cut_copper_stairs`
 - `minecraft:stonecutter_waxed_weathered_copper_to_cut_copper`
 - `minecraft:stonecutter_waxed_weathered_copper_to_cut_copper_slab`
@@ -1144,7 +1145,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:yellow_carpet`
 - `minecraft:yellow_carpet_from_white`
 - `minecraft:yellow_concrete_powder`
-- `minecraft:yellow_dye_from_dandelion`
 - `minecraft:yellow_stained_hardened_clay`
 - `wool_dye_wool_19_14`
 - `wool_dye_wool_19_13`

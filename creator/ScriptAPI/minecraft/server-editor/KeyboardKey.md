@@ -11,6 +11,8 @@ description: Contents of the .KeyboardKey enumeration.
 Keyboard key
 
 ## Constants
+### **UNDEFINED**
+`UNDEFINED = 0`
 ### **BACKSPACE**
 `BACKSPACE = 8`
 ### **TAB**
