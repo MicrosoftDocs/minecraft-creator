@@ -19,6 +19,21 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 
 ## Properties
 
+### **airSupply**
+`airSupply: number;`
+
+The current air supply of the entity.
+
+Type: *number*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
+
+> [!WARNING]
+> This property can throw errors when used.
+>
+> Will throw an error if the air supply is out of bounds [suffocationTime, maxAirSupply].
+
 ### **breathesAir**
 `read-only breathesAir: boolean;`
 
@@ -53,6 +68,16 @@ Type: *boolean*
 `read-only breathesWater: boolean;`
 
 If true, this entity can breathe in water.
+
+Type: *boolean*
+
+> [!WARNING]
+> This property can throw errors when used.
+
+### **canBreathe**
+`read-only canBreathe: boolean;`
+
+If true, the entity is able to breathe.
 
 Type: *boolean*
 
@@ -102,7 +127,6 @@ Type: *number*
 ## Methods
 - [getBreatheBlocks](#getbreatheblocks)
 - [getNonBreatheBlocks](#getnonbreatheblocks)
-- [setAirSupply](#setairsupply)
 
 ### **getBreatheBlocks**
 `
@@ -124,17 +148,6 @@ getNonBreatheBlocks(): BlockPermutation[]
 List of blocks this entity can't breathe in.
 
 **Returns** [*BlockPermutation*](BlockPermutation.md)[]
-
-> [!WARNING]
-> This function can throw errors.
-
-### **setAirSupply**
-`
-setAirSupply(value: number): void
-`
-
-#### **Parameters**
-- **value**: *number*
 
 > [!WARNING]
 > This function can throw errors.

@@ -13,11 +13,11 @@ A set of options which define the basic properties of a simple tool, and the opt
 ## Properties
 
 ### **activationKeyBinding**
-`activationKeyBinding: ISimpleToolKeyPair;`
+`activationKeyBinding: ISimpleToolKeyBinding;`
 
 A key binding that will activate the tool. Note that if the tool is a modal tool, then the key binding will be tied to the tool rail activation, and appear as a tooltip on the tool rail button. If the tool is a global tool, then the key binding will be tied to a menu item in the View menu, and appear as a stateful menu item which will control the pane visibility. If there's no pane required, then the key binding is ignored
 
-Type: *ISimpleToolKeyPair*
+Type: *ISimpleToolKeyBinding*
 
 ### **name**
 `name: string;`

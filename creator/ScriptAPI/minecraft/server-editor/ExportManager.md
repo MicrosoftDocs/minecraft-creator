@@ -11,14 +11,15 @@ description: Contents of the @minecraft/server-editor.ExportManager class.
 ## Methods
 - [beginExportProject](#beginexportproject)
 - [canExportProject](#canexportproject)
+- [getGameOptions](#getgameoptions)
 
 ### **beginExportProject**
 `
-beginExportProject(options: ProjectExportOptions): Promise<ExportResult>
+beginExportProject(options: GameOptions): Promise<ExportResult>
 `
 
 #### **Parameters**
-- **options**: [*ProjectExportOptions*](ProjectExportOptions.md)
+- **options**: [*GameOptions*](GameOptions.md)
 
 **Returns** Promise&lt;[*ExportResult*](ExportResult.md)&gt;
 
@@ -40,3 +41,16 @@ canExportProject(): boolean
 
 > [!WARNING]
 > This function can throw errors.
+
+### **getGameOptions**
+`
+getGameOptions(useDefault?: boolean): GameOptions
+`
+
+#### **Parameters**
+- **useDefault**?: *boolean* = `null`
+
+**Returns** [*GameOptions*](GameOptions.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
