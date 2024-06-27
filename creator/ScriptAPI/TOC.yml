@@ -914,6 +914,8 @@
       href: minecraft/server-editor/BlockPaletteItemType.md
     - name: BrushPipelineOperationType
       href: minecraft/server-editor/BrushPipelineOperationType.md
+    - name: ColorPickerVariant
+      href: minecraft/server-editor/ColorPickerVariant.md
     - name: CoreActionBarItemType
       href: minecraft/server-editor/CoreActionBarItemType.md
     - name: CoreMenuType
@@ -922,6 +924,8 @@
       href: minecraft/server-editor/CursorControlMode.md
     - name: CursorTargetMode
       href: minecraft/server-editor/CursorTargetMode.md
+    - name: DaylightCycle
+      href: minecraft/server-editor/DaylightCycle.md
     - name: EDITOR_PANE_PROPERTY_ITEM_TYPE
       href: minecraft/server-editor/EDITOR_PANE_PROPERTY_ITEM_TYPE.md
     - name: EditorInputContext
@@ -932,14 +936,14 @@
       href: minecraft/server-editor/EditorStatusBarAlignment.md
     - name: ExportResult
       href: minecraft/server-editor/ExportResult.md
+    - name: GamePublishSetting
+      href: minecraft/server-editor/GamePublishSetting.md
     - name: GraphicsSettingsProperty
       href: minecraft/server-editor/GraphicsSettingsProperty.md
     - name: InputModifier
       href: minecraft/server-editor/InputModifier.md
     - name: KeyboardKey
       href: minecraft/server-editor/KeyboardKey.md
-    - name: KeyInputType
-      href: minecraft/server-editor/KeyInputType.md
     - name: LayoutDirection
       href: minecraft/server-editor/LayoutDirection.md
     - name: MouseActionCategory
@@ -948,6 +952,8 @@
       href: minecraft/server-editor/MouseActionType.md
     - name: MouseInputType
       href: minecraft/server-editor/MouseInputType.md
+    - name: PlayerPermissionLevel
+      href: minecraft/server-editor/PlayerPermissionLevel.md
     - name: PlaytestSessionResult
       href: minecraft/server-editor/PlaytestSessionResult.md
     - name: ProjectExportType
@@ -1060,10 +1066,10 @@
       href: minecraft/server-editor/CustomWidgetCreateOptions.md
     - name: ExtensionOptionalParameters
       href: minecraft/server-editor/ExtensionOptionalParameters.md
+    - name: GameOptions
+      href: minecraft/server-editor/GameOptions.md
     - name: LogProperties
       href: minecraft/server-editor/LogProperties.md
-    - name: PlaytestGameOptions
-      href: minecraft/server-editor/PlaytestGameOptions.md
     - name: ProjectExportOptions
       href: minecraft/server-editor/ProjectExportOptions.md
     - name: SettingsUIElementOptions
@@ -1110,6 +1116,8 @@
       href: minecraft/server-editor/IPropertyItem.md
     - name: IPropertyItemOptions
       href: minecraft/server-editor/IPropertyItemOptions.md
+    - name: IPropertyItemOptionsBlockList
+      href: minecraft/server-editor/IPropertyItemOptionsBlockList.md
     - name: IPropertyItemOptionsBool
       href: minecraft/server-editor/IPropertyItemOptionsBool.md
     - name: IPropertyItemOptionsButton
@@ -1142,8 +1150,8 @@
       href: minecraft/server-editor/IRegisterExtensionOptionalParameters.md
     - name: ISimpleTool
       href: minecraft/server-editor/ISimpleTool.md
-    - name: ISimpleToolKeyPair
-      href: minecraft/server-editor/ISimpleToolKeyPair.md
+    - name: ISimpleToolKeyBinding
+      href: minecraft/server-editor/ISimpleToolKeyBinding.md
     - name: ISimpleToolOptions
       href: minecraft/server-editor/ISimpleToolOptions.md
     - name: ISimpleToolPaneComponent

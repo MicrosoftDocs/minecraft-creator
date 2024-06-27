@@ -98,6 +98,8 @@ Red Nether Brick
 Cobbled Deepslate Stairs
 - `cobbled_deepslate_stairs`
 Cobbled Deepslate Stairs
+- `minecraft:smooth_sandstone`
+- `smooth_sandstone`
 - `minecraft:snow_layer`
 Snow Layer
 - `snow_layer`
@@ -256,10 +258,6 @@ Flower Pot
 Polished Deeplate Stairs
 - `polished_deepslate_stairs`
 Polished Deeplate Stairs
-- `minecraft:yellow_flower`
-Yellow Flower
-- `yellow_flower`
-Yellow Flower
 - `minecraft:lime_shulker_box`
 - `lime_shulker_box`
 - `minecraft:weathered_chiseled_copper`
@@ -392,6 +390,26 @@ Hardened Clay
 Stripped Jungle Log
 - `stripped_jungle_log`
 Stripped Jungle Log
+- `minecraft:light_block_9`
+- `light_block_9`
+- `minecraft:light_block_8`
+- `light_block_8`
+- `minecraft:light_block_7`
+- `light_block_7`
+- `minecraft:light_block_6`
+- `light_block_6`
+- `minecraft:light_block_5`
+- `light_block_5`
+- `minecraft:light_block_4`
+- `light_block_4`
+- `minecraft:light_block_3`
+- `light_block_3`
+- `minecraft:light_block_2`
+- `light_block_2`
+- `minecraft:light_block_1`
+- `light_block_1`
+- `minecraft:light_block_0`
+- `light_block_0`
 - `minecraft:oak_sapling`
 - `oak_sapling`
 - `minecraft:light_gray_terracotta`
@@ -1644,6 +1662,8 @@ Tinted Glass
 Big Dripleaf
 - `big_dripleaf`
 Big Dripleaf
+- `minecraft:cut_sandstone`
+- `cut_sandstone`
 - `minecraft:warped_hanging_sign`
 - `warped_hanging_sign`
 - `minecraft:lime_wool`
@@ -1658,6 +1678,8 @@ Reeds
 - `black_shulker_box`
 - `minecraft:jungle_sapling`
 - `jungle_sapling`
+- `minecraft:chiseled_sandstone`
+- `chiseled_sandstone`
 - `minecraft:barrier`
 Barrier
 - `barrier`
@@ -1834,6 +1856,18 @@ Pearlescent Froglight
 - `bamboo_button`
 - `minecraft:tall_grass`
 - `tall_grass`
+- `minecraft:light_block_12`
+- `light_block_12`
+- `minecraft:light_block_13`
+- `light_block_13`
+- `minecraft:light_block_10`
+- `light_block_10`
+- `minecraft:light_block_11`
+- `light_block_11`
+- `minecraft:light_block_14`
+- `light_block_14`
+- `minecraft:light_block_15`
+- `light_block_15`
 - `minecraft:nether_sprouts`
 Nether Sprouts
 - `nether_sprouts`
@@ -2492,10 +2526,6 @@ Polished Deepslate Wall
 Dried Kelp Block
 - `dried_kelp_block`
 Dried Kelp Block
-- `minecraft:light_block`
-Light Block
-- `light_block`
-Light Block
 - `minecraft:crimson_fence`
 Crimson Fence
 - `crimson_fence`
@@ -2610,6 +2640,8 @@ Cartography Table
 Cartography Table
 - `minecraft:oxidized_copper_door`
 - `oxidized_copper_door`
+- `minecraft:dandelion`
+- `dandelion`
 - `grass`
 Grass
 - `concretepowder`
@@ -2636,6 +2668,8 @@ Double Stone Slab 2
 Double Stone Slab 3
 - `double_stone_slab4`
 Double Stone Slab 4
+- `yellow_flower`
+Yellow Flower
 - `wool`
 Wool
 - `minecraft:wool`
@@ -2756,6 +2790,10 @@ Monster Egg
 Stonebrick
 - `minecraft:stonebrick`
 Stonebrick
+- `light_block`
+Light Block
+- `minecraft:light_block`
+Light Block
 - `minecraft:chicken`
 Chicken
 - `chicken`
@@ -4343,8 +4381,6 @@ Glazed Terracotta Magenta
 Glazed Terracotta Lime
 - `glazedterracotta.light_blue`
 Glazed Terracotta Light Blue
-- `record_strad`
-Record Strad
 - `glazedterracotta.yellow`
 Glazed Terracotta Yellow
 - `cooked_fish`
@@ -4401,6 +4437,8 @@ Record Mall
 Record Mellohi
 - `record_stal`
 Record Stal
+- `record_strad`
+Record Strad
 - `record_wait`
 Record Wait
 - `record_ward`

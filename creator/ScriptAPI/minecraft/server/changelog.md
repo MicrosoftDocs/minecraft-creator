@@ -9,7 +9,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [1.13.0-beta](#1130-beta)
+- [1.14.0-beta](#1140-beta)
 - [1.11.0](#1110)
 - [1.10.0](#1100)
 - [1.9.0](#190)
@@ -23,7 +23,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.13.0-beta
+## 1.14.0-beta
 #### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
@@ -166,6 +166,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
+- Added property *[`isHardcore`](World.md#ishardcore)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`blockExplode`](WorldAfterEvents.md#blockexplode)*

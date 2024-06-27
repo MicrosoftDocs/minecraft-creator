@@ -14,11 +14,11 @@ description: Contents of the @minecraft/server-editor.PlaytestManager class.
 
 ### **beginPlaytest**
 `
-beginPlaytest(options: PlaytestGameOptions): Promise<PlaytestSessionResult>
+beginPlaytest(options: GameOptions): Promise<PlaytestSessionResult>
 `
 
 #### **Parameters**
-- **options**: [*PlaytestGameOptions*](PlaytestGameOptions.md)
+- **options**: [*GameOptions*](GameOptions.md)
 
 **Returns** Promise&lt;[*PlaytestSessionResult*](PlaytestSessionResult.md)&gt;
 

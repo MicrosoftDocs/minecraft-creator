@@ -69,6 +69,7 @@ Width of the panel in rem.
 Type: *number*
 
 ## Methods
+- [addBlockList](#addblocklist)
 - [addBlockPicker](#addblockpicker)
 - [addBool](#addbool)
 - [addButton](#addbutton)
@@ -88,6 +89,22 @@ Type: *number*
 - [hide](#hide)
 - [removePropertyPane](#removepropertypane)
 - [show](#show)
+
+### **addBlockList**
+`
+addBlockList(options: IPropertyItemOptionsBlockList): IBlockListPropertyItem<{
+        EMPTY: undefined;
+    }, 'EMPTY'>
+`
+
+Adds a block list to the pane.
+
+#### **Parameters**
+- **options**: *IPropertyItemOptionsBlockList*
+
+**Returns** *IBlockListPropertyItem<{
+        EMPTY: undefined;
+    }, 'EMPTY'>*
 
 ### **addBlockPicker**
 `
@@ -189,6 +206,8 @@ Adds an EntityPicker item to the pane.
 `
 addImage(obj: T, property: Prop, options: IPropertyItemOptionsImage): IPropertyItem<T, Prop>
 `
+
+Adds an image item to the pane.
 
 #### **Parameters**
 - **obj**: *T*
