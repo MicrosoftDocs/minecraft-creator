@@ -271,12 +271,12 @@ Take this example of a **lighting/global.json** file:
       "blocks": { 
         "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
       },
-    }, 
-    "actors": { 
-        "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
-    },
-    "particles": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+      "actors": { 
+          "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
+      },
+      "particles": { 
+              "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+      }
     }
 } 
 ```
