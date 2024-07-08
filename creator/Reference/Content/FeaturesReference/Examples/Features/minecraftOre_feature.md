@@ -86,15 +86,15 @@ Malachite ore in different materials
     "description": {
       "identifier": "example:oil_deposit_feature"
     },
-  "count": 12,
-  "replace_rules": [
-    {
+    "count": 12,
+    "replace_rules": [
+      {
       "places_block": "example:oil_block",
       "may_replace": [
         "minecraft:sand"
       ]
-    }
-  ]
+      }
+    ]
   }
 }
 ```

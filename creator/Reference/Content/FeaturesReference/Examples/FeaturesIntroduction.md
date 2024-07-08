@@ -18,20 +18,58 @@ All features must specify the version that they target via the "format_version" 
 
 ### Example
 
+A comparison of different versions for the same feature.
+
+**Version 1.13.0**
+
 ```json
 {
   "format_version": "1.13.0",
-  "minecraft:ore_feature": {
+  "minecraft:scatter_feature": {
     "description": {
-      "identifier": "minecraft:coal_ore_feature"
+      "identifier": "example:scatter_flowers_feature"
     },
-    "count": 17,
-    "places_block": "minecraft:coal_ore",
-    "may_replace": [
-      {
-        "name": "minecraft:stone"
+    "places_feature": "example:flower_feature",
+    "iterations": 10,
+    "scatter_chance": 50.0,
+    "x": {
+      "distribution": "uniform",
+      "extent": [ 0, 15 ]
+    },
+    "y": 64,
+    "z": {
+      "distribution": "uniform",
+      "extent": [ 0, 15 ]
+    }
+  }
+}
+```
+
+**Version 1.21.10**
+
+Uses "distribution" field to define the scattering settings.
+
+```json
+{
+  "format_version": "1.21.10",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "example:scatter_flowers_feature"
+    },
+    "places_feature": "example:flower_feature",
+    "distribution": {
+      "iterations": 10,
+      "scatter_chance": 50.0,
+      "x": {
+        "distribution": "uniform",
+        "extent": [ 0, 15 ]
+      },
+      "y": 64,
+      "z": {
+        "distribution": "uniform",
+        "extent": [ 0, 15 ]
       }
-    ]
+    }
   }
 }
 ```
