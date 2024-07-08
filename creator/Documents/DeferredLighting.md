@@ -33,7 +33,7 @@ To opt into the Deferred Lighting Pipeline, you will need to provide a PBR-enabl
 
 The Deferred Lighting Pipeline uses the same rules for PBR texture sets used for RTX. If you are not familiar with Physically Based Rendering or building texture sets, there is an overview available on our documentation website in [Introduction to Physically Based Rendering](RTXPBRIntro.md) and more detail on creating the texture sets in [Introduction to Texture Sets](../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md)
 
-For Height Map values, the new pipeline supports both Height Map and Normal inputs. In the Deferred Lighting mode, however, you are now able to set PBR textures for entities and mobs in addition to blocks. They follow the exact same Texture Set rules and can be added similarly to the textures/entity folder within your resource pack. In the Deferred Lighting mode, PBR textures via Texture Sets are supported for blocks, entities and now particles! They follow the exact same Texture Set rules as blocks and can be added similarly to either the "textures/entity" or "textures/particle" folder within your resource pack.
+For Height Map values, the new pipeline supports both Height Map and Normal inputs. In the Deferred Lighting mode, however, you are now able to set PBR textures for entities and mobs in addition to blocks. They follow the exact same Texture Set rules and can be added similarly to the textures/entity folder within your resource pack. In the Deferred Lighting mode, PBR textures via Texture Sets are supported for blocks, entities, particles and items! They follow the exact same Texture Set rules as blocks and can be added similarly to either the "textures/entity" or "textures/particle" or "textures/items" folder within your resource pack.
 
 The key thing that communicates to the game client that a resource pack is capable of Deferred Lighting is the presence of a certain string(s) in the capabilities array in your pack's **manifest.json**.
 
@@ -93,19 +93,19 @@ File location: lighting/global.json
 
 ```json
 {
-  version "format_version",
-  object "directional_lights"
+    version "format_version",
+    object "directional_lights"
     {
-      object "sun"
-      {
-          float "illuminance" : optkeyframe, // How bright the sun is, measured in lux (lx)
-          color "color" : optkeyframe // The RGB color that the sun contributes to direct surface lighting; supports RGB array or HEX string
-      },
-      object "moon"
-      {
-          float "illuminance" : optkeyframe,  // How bright the moon is; measured in lux (lx)
-          color "color" : optkeyframe // The RGB color that the moon contributes to direct surface lighting; supports RGB array or HEX string
-      }
+        object "sun"
+        {
+            float "illuminance" : optkeyframe, // How bright the sun is, measured in lux (lx)
+            color "color" : optkeyframe // The RGB color that the sun contributes to direct surface lighting; supports RGB array or HEX string
+        },
+        object "moon"
+        {
+            float "illuminance" : optkeyframe,  // How bright the moon is; measured in lux (lx)
+            color "color" : optkeyframe // The RGB color that the moon contributes to direct surface lighting; supports RGB array or HEX string
+        }
         float "orbital_offset_degrees" : optkeyframe // The rotational offset of the sun and moon from their standard orbital axis; measured in degrees
     },
     object "point_lights"
@@ -118,20 +118,24 @@ File location: lighting/global.json
     },
     object "pbr"
     {
-      object "blocks"
-      {
-        color "global_metalness_emissive_roughness" // The default MER value to use for blocks when not defined via textureset; supports RGB array or HEX string
-      },
-      object "actors"
-      {
-        color "global_metalness_emissive_roughness" // The default MER value to use for actors/mobs when not defined via textureset; supports RGB array or HEX string
-      },
-      object "particles"
-      {
-        color "global_metalness_emissive_roughness" // The default MER value to use for particles when not defined via textureset; supports RGB array or HEX string
-      }
+        object "blocks"
+        {
+            color "global_metalness_emissive_roughness" // The default MER value to use for blocks when not defined via textureset; supports RGB array or HEX string
+        },
+        object "actors"
+        {
+            color "global_metalness_emissive_roughness" // The default MER value to use for actors/mobs when not defined via textureset; supports RGB array or HEX string
+        },
+        object "particles"
+        {
+            color "global_metalness_emissive_roughness" // The default MER value to use for particles when not defined via textureset; supports RGB array or HEX string
+        },
+        object "items"
+        {
+            color "global_metalness_emissive_roughness" // The default MER value to use for items when not defined via textureset; supports RGB array or HEX string
+        }
     }
- }
+}
 ```
 
 ### Directional Lights
@@ -170,7 +174,7 @@ Color values can be described either as an array of 3 numerical values from the 
 
 ### PBR Uniforms
 
-The `"pbr"` object is meant to complement the larger Texture Set functionality by acting as a default or fallback value when texture set detail isn't provided for particular blocks, entities, or particles. For example, if you provide texture sets for pigs and creepers, but no other actors, then, when a cow is rendered in game, the `"global_metalness_emissive_roughness"` value defined in global.json will be applied uniformly across the entire surface of the cow. This allows you to quickly provide a general art direction without having to author textures for every single game object initially, and iteratively add more detail to the blocks/actors as you see fit.
+The `"pbr"` object is meant to complement the larger Texture Set functionality by acting as a default or fallback value when texture set detail isn't provided for particular blocks, entities, particles, or items. For example, if you provide texture sets for pigs and creepers, but no other actors, then, when a cow is rendered in game, the `"global_metalness_emissive_roughness"` value defined in global.json will be applied uniformly across the entire surface of the cow. This allows you to quickly provide a general art direction without having to author textures for every single game object initially, and iteratively add more detail to the blocks/actors as you see fit.
 
 Values can either be described as an array of 3 numerical values from the range 0-1 or as a 3 hexadecimal digit string.
 
@@ -252,15 +256,15 @@ Take this example of a **lighting/global.json** file:
 {
     "format_version": [1, 0, 0], 
     "directional_lights": {
-      "sun": {
-        "illuminance": 100000,
-        "color": [ 255.0, 255.0, 255.0, 255.0 ]
-      },
-      "moon": { 
-        "illuminance": 0.27,
-        "color": [ 255.0, 255.0, 255.0, 255.0 ]
-      }, 
-    "orbital_offset_degrees": 0.0
+        "sun": {
+            "illuminance": 100000,
+            "color": [ 255.0, 255.0, 255.0, 255.0 ]
+        },
+        "moon": { 
+            "illuminance": 0.27,
+            "color": [ 255.0, 255.0, 255.0, 255.0 ]
+        }, 
+        "orbital_offset_degrees": 0.0
     },
     "point_lights": { 
         "colors": { 
@@ -268,15 +272,18 @@ Take this example of a **lighting/global.json** file:
         } 
     },
     "pbr": { 
-      "blocks": { 
-        "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
-      },
-    }, 
-    "actors": { 
-        "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
-    },
-    "particles": { 
+        "blocks": { 
             "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+        },
+        "actors": { 
+            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+        },
+        "particles": { 
+            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+        },
+        "items": { 
+            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+        }
     }
 } 
 ```
@@ -318,17 +325,18 @@ With all of this in mind, we can adjust our lighting/global.json slightly to alt
     },
     "pbr": { 
         "blocks": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]
+            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]
         }, 
         "actors": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
+            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
         },
         "particles": { 
             "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+        },
+        "items": { 
+            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
         }
-    },
-    
-
+    }
 }
 ```
 
@@ -347,42 +355,45 @@ To get you going, we provide the following example JSON files that will give you
 
 ```json
 {
-  "format_version": [1, 0, 0], 
-  "directional_lights": {
-    "sun": {
-      "illuminance": {
-        "0.0": 1.0,
-        "0.25": 400.0,
-        "0.35": 20000.0,
-        "0.5": 109880.0,
-        "0.65": 20000.0,
-        "0.75": 400.0,
-        "1.0": 1.0
-      },
-      "color": [ 255.0, 255.0, 255.0, 255.0 ]
+    "format_version": [1, 0, 0], 
+    "directional_lights": {
+        "sun": {
+            "illuminance": {
+                "0.0": 1.0,
+                "0.25": 400.0,
+                "0.35": 20000.0,
+                "0.5": 109880.0,
+                "0.65": 20000.0,
+                "0.75": 400.0,
+                "1.0": 1.0
+            },
+            "color": [ 255.0, 255.0, 255.0, 255.0 ]
+        },
+        "moon": { 
+            "illuminance": 0.27,
+            "color": "#ffffffff"
+        }, 
+        "orbital_offset_degrees": 3.0
     },
-    "moon": { 
-        "illuminance": 0.27,
-        "color": "#ffffffff"
-    }, 
-    "orbital_offset_degrees": 3.0
-  },
-  "point_lights": { 
-      "colors": { 
-         "minecraft:soul_torch": "#FFFFFF"
-      } 
-  },
-  "pbr": { 
-      "blocks": { 
-        "global_metalness_emissive_roughness": [0.0, 0.0, 1.0]  
-      }, 
-      "actors": { 
-        "global_metalness_emissive_roughness": "#0000ff"
-      },
-      "particles": { 
-         "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
-      }
-  } 
+    "point_lights": { 
+        "colors": { 
+           "minecraft:soul_torch": "#FFFFFF"
+        } 
+    },
+    "pbr": { 
+        "blocks": { 
+            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+        }, 
+        "actors": { 
+            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+        },
+        "particles": { 
+            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+        },
+        "items": { 
+            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+        }
+    } 
 }
 ```
 
