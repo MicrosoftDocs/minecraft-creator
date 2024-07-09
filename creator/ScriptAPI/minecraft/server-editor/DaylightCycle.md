@@ -3,19 +3,15 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .KeyInputType Enumeration
-description: Contents of the .KeyInputType enumeration.
+title: .DaylightCycle Enumeration
+description: Contents of the .DaylightCycle enumeration.
 ---
-# KeyInputType Enumeration
-
-Keyboard Key Actions
+# DaylightCycle Enumeration
 
 ## Constants
-### **Press**
-`Press = 1`
-
-Button was pressed.
-### **Release**
-`Release = 2`
-
-Button was released.
+### **Normal**
+`Normal = 0`
+### **AlwaysDay**
+`AlwaysDay = 1`
+### **LockTime**
+`LockTime = 2`

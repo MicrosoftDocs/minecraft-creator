@@ -33,6 +33,20 @@ Icon, if any (from resource pack on client)
 
 Type: *string*
 
+### **inputContextId**
+`inputContextId: string;`
+
+Modal input context identifier
+
+Type: *string*
+
+### **inputContextLabel**
+`inputContextLabel: string;`
+
+Localized text label for modal input context
+
+Type: *string*
+
 ### **tooltipAltText**
 `tooltipAltText: string;`
 
