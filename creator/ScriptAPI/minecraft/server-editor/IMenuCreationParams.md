@@ -19,13 +19,6 @@ Whether the menu should show a checkmark
 
 Type: *boolean*
 
-### **displayStringId**
-`displayStringId: string;`
-
-Loc ID (resolved on client)
-
-Type: *string*
-
 ### **enabled**
 `enabled: boolean;`
 
@@ -33,10 +26,10 @@ Whether the menu should be enabled or disabled
 
 Type: *boolean*
 
-### **name**
-`name: string;`
+### **label**
+`label: string;`
 
-The name of the menu
+Localized display text of the menu
 
 Type: *string*
 

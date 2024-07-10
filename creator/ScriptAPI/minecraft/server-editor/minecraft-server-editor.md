@@ -39,6 +39,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [EditorInputContext](EditorInputContext.md)
 - [EditorMode](EditorMode.md)
 - [EditorStatusBarAlignment](EditorStatusBarAlignment.md)
+- [EntityOperationType](EntityOperationType.md)
 - [ExportResult](ExportResult.md)
 - [GamePublishSetting](GamePublishSetting.md)
 - [GraphicsSettingsProperty](GraphicsSettingsProperty.md)
@@ -253,18 +254,6 @@ getBlockPickerDefaultAllowBlockList(): string[]
 Returns a string array of the default block types for the Block picker control. Can be used to further filter blocks from the Block picker.
 
 **Returns** *string[]* - Default allowed block list
-
-### **getLocalizationId**
-`
-getLocalizationId(locId: string): string
-`
-
-Adds the resource pack editor prefix and returns the full localization ID
-
-#### **Parameters**
-- **locId**: *string*
-
-**Returns** *string*
 
 ### **registerEditorExtension**
 `

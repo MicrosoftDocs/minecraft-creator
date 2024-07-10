@@ -48,7 +48,7 @@ Begins a camera fade transition. A fade transition is a full-screen color that f
 
 ### **setCamera**
 `
-setCamera(cameraPreset: string, setOptions?: CameraDefaultOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions): void
+setCamera(cameraPreset: string, setOptions?: CameraDefaultOptions | CameraFixedBoomOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions): void
 `
 
 Sets the current active camera for the specified player.
@@ -57,7 +57,7 @@ Sets the current active camera for the specified player.
 - **cameraPreset**: *string*
   
   Identifier of a camera preset file defined within JSON.
-- **setOptions**?: [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) = `null`
+- **setOptions**?: [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) = `null`
   
   Additional options for the camera.
 

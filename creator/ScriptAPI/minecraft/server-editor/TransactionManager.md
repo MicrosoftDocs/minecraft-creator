@@ -15,6 +15,7 @@ Transaction Manager is the basis of the UNDO and REDO operations, and allows a c
 The transactions are stored as a stack, and can be undone in stack order to restore the world to it's original state
 
 ## Methods
+- [addEntityOperation](#addentityoperation)
 - [addUserDefinedOperation](#adduserdefinedoperation)
 - [commitOpenTransaction](#commitopentransaction)
 - [commitTrackedChanges](#committrackedchanges)
@@ -30,6 +31,25 @@ The transactions are stored as a stack, and can be undone in stack order to rest
 - [trackBlockChangeSelection](#trackblockchangeselection)
 - [undo](#undo)
 - [undoSize](#undosize)
+
+### **addEntityOperation**
+`
+addEntityOperation(entity: minecraftserver.Entity, type: EntityOperationType): boolean
+`
+
+#### **Parameters**
+- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+- **type**: [*EntityOperationType*](EntityOperationType.md)
+
+**Returns** *boolean*
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*
 
 ### **addUserDefinedOperation**
 `
