@@ -558,6 +558,8 @@ Waxed Exposed Copper
 - `red_sandstone_double_slab`
 - `minecraft:birch_wood`
 - `birch_wood`
+- `minecraft:red_sand`
+- `red_sand`
 - `minecraft:hay_block`
 Hay Block
 - `hay_block`
@@ -924,6 +926,8 @@ Birch Fence Gate
 Redstone Wire
 - `redstone_wire`
 Redstone Wire
+- `minecraft:quartz_pillar`
+- `quartz_pillar`
 - `minecraft:waxed_exposed_cut_copper`
 Waxed Exposed Cut Copper
 - `waxed_exposed_cut_copper`
@@ -982,6 +986,8 @@ Farmland
 Farmland
 - `minecraft:dead_brain_coral_wall_fan`
 - `dead_brain_coral_wall_fan`
+- `minecraft:cut_red_sandstone`
+- `cut_red_sandstone`
 - `minecraft:rail`
 Rail
 - `rail`
@@ -1296,6 +1302,10 @@ Daylight Detector Inverted
 Barrel
 - `barrel`
 Barrel
+- `minecraft:smooth_quartz`
+- `smooth_quartz`
+- `minecraft:coarse_dirt`
+- `coarse_dirt`
 - `minecraft:chorus_flower`
 Chorus Flower
 - `chorus_flower`
@@ -1444,6 +1454,8 @@ Spruce Door
 Frosted Ice
 - `frosted_ice`
 Frosted Ice
+- `minecraft:chipped_anvil`
+- `chipped_anvil`
 - `minecraft:large_amethyst_bud`
 Large Amethyst Bud
 - `large_amethyst_bud`
@@ -2686,6 +2698,8 @@ Cobbled Deepslate Slab
 Cobbled Deepslate Slab
 - `minecraft:lilac`
 - `lilac`
+- `minecraft:chiseled_quartz_block`
+- `chiseled_quartz_block`
 - `minecraft:spore_blossom`
 Spore Blossom
 - `spore_blossom`
@@ -2780,6 +2794,8 @@ Cave Vines Head with Berries
 Cave Vines Head with Berries
 - `minecraft:tube_coral_block`
 - `tube_coral_block`
+- `minecraft:chiseled_red_sandstone`
+- `chiseled_red_sandstone`
 - `minecraft:dead_tube_coral_wall_fan`
 - `dead_tube_coral_wall_fan`
 - `minecraft:birch_sapling`
@@ -2936,6 +2952,8 @@ Polished Deepslate
 Polished Deepslate
 - `minecraft:tuff_double_slab`
 - `tuff_double_slab`
+- `minecraft:smooth_red_sandstone`
+- `smooth_red_sandstone`
 - `minecraft:purpur_stairs`
 Purpur Stairs
 - `purpur_stairs`
@@ -3044,6 +3062,8 @@ Lime Candle Cake
 Lime Candle Cake
 - `minecraft:waxed_oxidized_copper_grate`
 - `waxed_oxidized_copper_grate`
+- `minecraft:damaged_anvil`
+- `damaged_anvil`
 - `minecraft:birch_double_slab`
 - `birch_double_slab`
 - `minecraft:white_concrete`

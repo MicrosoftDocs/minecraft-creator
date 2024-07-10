@@ -7,7 +7,7 @@ title: scoreboard Command
 description: Description and usage of the scoreboard command
 ---
 # `/scoreboard` Command
-Tracks and displays scores for various objectives. See more information about its use in the [Scoreboards Objectives Commands documentation](./../../Documents/ScoreboardIntroduction.md#scoreboard-objectives-commands) page.
+Tracks and displays scores for various objectives. See more information about its use in the [Scoreboards Objectives Commands documentation](/creator/documents/scoreboardintroduction#scoreboard-objectives-commands) page.
 
 <table>
   <tr>
@@ -94,7 +94,7 @@ Max int
 Min wildcard int
 - `min`: int
 Min int
-- `objective`: ScoreboardObjectives
+- `objective`: [ScoreboardObjectives](../enums/ScoreboardObjectives.md)
 Objective for the game to track
 - `operation`: operator
 A command operator of the `operation` to be applied. Must be `=`, `+=`, `-=`, `*=`, `/=`, `*/`, `<>`, `<`, or. `>`.
@@ -108,7 +108,7 @@ A [target selector](https://learn.microsoft.com/minecraft/creator/documents/comm
 An `enum` of `ascending` or `descending`.
 - `targetName`: targets
 A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers.
-- `targetObjective`: ScoreboardObjectives
+- `targetObjective`: [ScoreboardObjectives](../enums/ScoreboardObjectives.md)
 
 
 ## Enums

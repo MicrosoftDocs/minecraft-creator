@@ -23,6 +23,8 @@ Effect type for the given identifier.
 
 #### **Parameters**
 - **identifier**: *string*
+  
+  The identifier for the effect.
 
 **Returns** [*EffectType*](EffectType.md) | *undefined* - Effect type for the given identifier or undefined if the effect does not exist.
 

@@ -395,6 +395,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [CameraEaseOptions](CameraEaseOptions.md)
 - [CameraFadeOptions](CameraFadeOptions.md)
 - [CameraFadeTimeOptions](CameraFadeTimeOptions.md)
+- [CameraFixedBoomOptions](CameraFixedBoomOptions.md)
 - [CameraSetFacingOptions](CameraSetFacingOptions.md)
 - [CameraSetLocationOptions](CameraSetLocationOptions.md)
 - [CameraSetPosOptions](CameraSetPosOptions.md)

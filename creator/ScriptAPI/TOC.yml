@@ -800,6 +800,8 @@
       href: minecraft/server/CameraFadeOptions.md
     - name: CameraFadeTimeOptions
       href: minecraft/server/CameraFadeTimeOptions.md
+    - name: CameraFixedBoomOptions
+      href: minecraft/server/CameraFixedBoomOptions.md
     - name: CameraSetFacingOptions
       href: minecraft/server/CameraSetFacingOptions.md
     - name: CameraSetLocationOptions
@@ -934,6 +936,8 @@
       href: minecraft/server-editor/EditorMode.md
     - name: EditorStatusBarAlignment
       href: minecraft/server-editor/EditorStatusBarAlignment.md
+    - name: EntityOperationType
+      href: minecraft/server-editor/EntityOperationType.md
     - name: ExportResult
       href: minecraft/server-editor/ExportResult.md
     - name: GamePublishSetting
