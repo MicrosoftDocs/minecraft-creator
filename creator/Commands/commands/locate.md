@@ -22,7 +22,7 @@ Finds the nearest specified biome or structure if it exists in the current dimen
 
 ## Usage
 ### Locate feature, new chunks
-`/locate structure <structure: Structure> [useNewChunksOnly: Boolean]`
+`/locate structure <structure: StructureFeature> [useNewChunksOnly: Boolean]`
 
 Locate a feature with optional new chunks only.
 
@@ -30,7 +30,7 @@ Locate a feature with optional new chunks only.
 
 ## Arguments
 - `biome`: Biome
-- `structure`: Structure
+- `structure`: StructureFeature
 - `useNewChunksOnly`: [Boolean](../enums/Boolean.md)
 A `Boolean` to specify whether to use new chunks only.
 Default: `false`.
@@ -125,45 +125,23 @@ Default: `false`.
 - `mangrove_swamp`
 - `cherry_grove`
 
-### `Structure`
-Locate Structures
+### `StructureFeature`
 
 #### Values
-- `end_city`
-End City
-- `fortress`
-Nether Fortress
-- `mineshaft`
-Mineshaft
-- `monument`
-Ocean Monument
-- `stronghold`
-Stronghold
-- `temple`
-Could be a swamp hut, igloo, desert pyramid temple, or jungle pyramid temple
-- `village`
-Village
-- `mansion`
-Woodland Mansion
-- `shipwreck`
-Shipwreck
-- `buried_treasure`
-Buried Treasure
-- `ruins`
-Ocean Ruins
-- `pillager_outpost`
-Pillager Outpost
-- `ruined_portal`
-Ruined Portal
-- `bastion_remnant`
-Bastion Remnant
-- `ancient_city`
-Ancient City
-- `trail_ruins`
-- `trial_chambers`
-- `ancientcity`
-- `bastionremnant`
-- `buriedtreasure`
-- `endcity`
-- `pillageroutpost`
-- `ruinedportal`
+- `minecraft:end_city`
+- `minecraft:fortress`
+- `minecraft:mineshaft`
+- `minecraft:monument`
+- `minecraft:stronghold`
+- `minecraft:temple`
+- `minecraft:village`
+- `minecraft:mansion`
+- `minecraft:shipwreck`
+- `minecraft:buried_treasure`
+- `minecraft:ruins`
+- `minecraft:pillager_outpost`
+- `minecraft:ruined_portal`
+- `minecraft:bastion_remnant`
+- `minecraft:ancient_city`
+- `minecraft:trail_ruins`
+- `minecraft:trial_chambers`

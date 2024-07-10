@@ -24,7 +24,7 @@ The two versions also use a fairly different block format. Java has flattened it
 
 Both Bedrock and Java have different structures and implementation of commands. Bedrock's command structure is similar to the system used in versions of Java up to 1.13. It also uses a component-based system for commands instead of raw JSON strings. Instead of using JSON strings to customize entities, you can summon an entity with an event to fire and name it in a single command.
 
-There are also differences per version in the way that redstone works, and while the majority of redstone circuits work well between versions, more complex circuits may not. This is because Bedrock doesn't support quasi-connectivity, while Java does. Systems that utilize mechanics such as Block Update Detector (BUD) switches won't work. Pistons require one tick to retract and won't leave blocks behind if given a one-tick pulse. Additionally, the way updates happen is slightly different.
+There are also differences per version in the way that redstone works, and while the majority of redstone circuits work well between versions, more complex circuits may not work as well in Bedrock. This is because Bedrock doesn't support quasi-connectivity, while Java does. Systems that use mechanics such as Block Update Detector (BUD) switches won't work the same way in Bedrock. Pistons require one tick to retract and won't leave blocks behind if given a one-tick pulse. Additionally, the way updates happen is slightly different.
 
 ## Resource Packs
 

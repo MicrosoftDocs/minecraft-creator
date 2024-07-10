@@ -19,23 +19,9 @@ Layout direction for sub panes
 
 Type: *LayoutDirection*
 
-### **titleAltText**
-`titleAltText: string;`
+### **title**
+`title: string;`
 
-Fallback display text if no loc ID
-
-Type: *string*
-
-### **titleStringId**
-`titleStringId: string;`
-
-Loc ID (resolved on client)
+Localized title of the property pane
 
 Type: *string*
-
-### **width**
-`width: number;`
-
-Width of the panel in rem. This property is ignored in case of sub panes
-
-Type: *number*

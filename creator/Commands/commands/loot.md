@@ -141,10 +141,10 @@ Lantern
 - `minecraft:torchflower_seeds`
 - `minecraft:smooth_stone`
 Smooth Stone
-- `minecraft:beetroot`
-Beetroot
 - `minecraft:element_43`
 [Education Edition] Technetium (Tc)
+- `minecraft:beetroot`
+Beetroot
 - `minecraft:music_disc_strad`
 Music Disc Strad
 - `minecraft:bamboo_sign`
@@ -249,6 +249,7 @@ Iron Ingot
 - `minecraft:slime_spawn_egg`
 Slime Spawn Egg
 - `minecraft:pink_carpet`
+- `minecraft:chipped_anvil`
 - `minecraft:porkchop`
 Porkchop
 - `minecraft:cookie`
@@ -397,9 +398,6 @@ Raw Iron
 Iron Axe
 - `minecraft:nether_wart`
 Nether Wart
-- `minecraft:bamboo_double_slab`
-- `minecraft:element_35`
-Bromine (Br)
 - `minecraft:beetroot_seeds`
 Beetroot Seeds
 - `minecraft:powder_snow`
@@ -452,16 +450,16 @@ Wooden Sword
 Netherite Boots
 - `minecraft:music_disc_mall`
 Music Disc Mall
-- `minecraft:farmland`
-[Education Edition] Farmland
-- `minecraft:wooden_axe`
-Wooden Axe
 - `minecraft:zombie_pigman_spawn_egg`
 Zombie Pigman Spawn Egg
 - `minecraft:crimson_trapdoor`
 Crimson Trapdoor
 - `minecraft:raw_gold`
 Raw Gold
+- `minecraft:wooden_axe`
+Wooden Axe
+- `minecraft:farmland`
+[Education Edition] Farmland
 - `minecraft:salmon_bucket`
 Salmon Bucket
 - `minecraft:planks`
@@ -713,10 +711,11 @@ Evoker Spawn Egg
 Nether Wart
 - `minecraft:powder_snow_bucket`
 Powder Snow Bucket
-- `minecraft:axolotl_bucket`
-Axolotl Bucket
 - `minecraft:parrot_spawn_egg`
 Parrot Spawn Egg
+- `minecraft:damaged_anvil`
+- `minecraft:axolotl_bucket`
+Axolotl Bucket
 - `minecraft:light_block_9`
 - `minecraft:wolf_spawn_egg`
 Wolf Spawn Egg
@@ -884,13 +883,13 @@ Blaze Rod
 Sticky Piston Arm Collision
 - `minecraft:light_gray_dye`
 Light Gray Dye
-- `minecraft:piglin_brute_spawn_egg`
-Piglin Brute Spawn Egg
-- `minecraft:element_41`
-[Education Edition] Niobium (Nb)
 - `minecraft:gray_dye`
 Gray Dye
 - `minecraft:quartz_double_slab`
+- `minecraft:element_41`
+[Education Edition] Niobium (Nb)
+- `minecraft:piglin_brute_spawn_egg`
+Piglin Brute Spawn Egg
 - `minecraft:rabbit_spawn_egg`
 Rabbit Spawn Egg
 - `minecraft:pink_dye`
@@ -1341,10 +1340,10 @@ Spruce Door
 - `minecraft:birch_hanging_sign`
 - `minecraft:birch_door`
 Birch Door
-- `minecraft:acacia_door`
-Acacia Door
 - `minecraft:element_42`
 [Education Edition] Molybdenum (Mo)
+- `minecraft:acacia_door`
+Acacia Door
 - `minecraft:turtle_scute`
 - `minecraft:netherite_leggings`
 Netherite Leggings
@@ -1358,6 +1357,7 @@ Splash Potion
 - `minecraft:shulker_shell`
 Shulker Shell
 - `minecraft:light_blue_concrete`
+- `minecraft:chiseled_quartz_block`
 - `minecraft:redstone_block`
 Redstone Block
 - `minecraft:brain_coral`
@@ -1498,13 +1498,13 @@ Polished Deepslate Slab
 Deepslate Tile Slab
 - `minecraft:amethyst_shard`
 Amethyst Shard
+- `minecraft:music_disc_otherside`
+Music Disc Otherside
+- `minecraft:element_33`
+[Education Edition] Arsenic (As)
 - `minecraft:howl_pottery_sherd`
 - `minecraft:birch_chest_boat`
 Birch Chest Boat
-- `minecraft:element_33`
-[Education Edition] Arsenic (As)
-- `minecraft:music_disc_otherside`
-Music Disc Otherside
 - `minecraft:smooth_red_sandstone_stairs`
 Smooth Red Sandstone Stairs
 - `minecraft:goat_horn`
@@ -1564,6 +1564,7 @@ Chest Boat
 - `minecraft:light_block_1`
 - `minecraft:echo_shard`
 Echo Shard
+- `minecraft:smooth_quartz`
 - `minecraft:birch_trapdoor`
 Birch Trapdoor
 - `minecraft:trader_llama_spawn_egg`
@@ -1633,6 +1634,12 @@ Stone
 - `minecraft:diorite`
 - `minecraft:light_block_10`
 - `minecraft:green_stained_glass_pane`
+- `minecraft:coarse_dirt`
+- `minecraft:cobblestone_double_slab`
+- `minecraft:element_11`
+[Education Edition] Sodium (Na)
+- `minecraft:dark_oak_planks`
+- `minecraft:red_sand`
 - `minecraft:cracked_deepslate_tiles`
 Cracked Deepslate Tiles
 - `minecraft:white_terracotta`
@@ -1733,6 +1740,7 @@ Log
 - `minecraft:structure_block`
 Structure Block
 - `minecraft:jungle_fence`
+- `minecraft:cut_red_sandstone`
 - `minecraft:acacia_fence`
 - `minecraft:dark_oak_fence`
 - `minecraft:element_53`
@@ -1804,9 +1812,6 @@ Stone Block Slab 3
 - `minecraft:element_16`
 [Education Edition] Sulfur (S)
 - `minecraft:sandstone_double_slab`
-- `minecraft:cobblestone_double_slab`
-- `minecraft:element_11`
-[Education Edition] Sodium (Na)
 - `minecraft:red_sandstone_double_slab`
 - `minecraft:dark_oak_sapling`
 - `minecraft:prismarine_double_slab`
@@ -1884,6 +1889,8 @@ Sandstone
 Spruce Button
 - `minecraft:red_sandstone`
 Red Sandstone
+- `minecraft:chiseled_red_sandstone`
+- `minecraft:smooth_red_sandstone`
 - `minecraft:jungle_slab`
 - `minecraft:acacia_slab`
 - `minecraft:redstone_lamp`
@@ -1916,9 +1923,9 @@ Red Nether Brick Stairs
 - `minecraft:light_gray_shulker_box`
 - `minecraft:light_blue_concrete_powder`
 - `minecraft:acacia_planks`
-- `minecraft:dark_oak_planks`
 - `minecraft:quartz_block`
 Quartz Block
+- `minecraft:quartz_pillar`
 - `minecraft:tube_coral`
 - `minecraft:fire_coral`
 - `minecraft:diamond_ore`
@@ -1946,6 +1953,9 @@ Warped Fungus
 [Education Edition] End Portal Frame
 - `minecraft:anvil`
 Anvil
+- `minecraft:big_dripleaf`
+Big Dripleaf
+- `minecraft:deprecated_anvil`
 - `minecraft:infested_stone`
 - `minecraft:conduit`
 Conduit
@@ -2143,6 +2153,9 @@ Pearlescent Froglight
 [Education Edition] Gallium (Ga)
 - `minecraft:element_34`
 [Education Edition] Selenium (Se)
+- `minecraft:bamboo_double_slab`
+- `minecraft:element_35`
+Bromine (Br)
 - `minecraft:element_36`
 [Education Edition] Krypton (Kr)
 - `minecraft:element_37`
@@ -2734,8 +2747,6 @@ Crimson Stem
 Warped Hyphae
 - `minecraft:tuff_stairs`
 - `minecraft:grass_block`
-- `minecraft:big_dripleaf`
-Big Dripleaf
 - `minecraft:item.reeds`
 Reeds
 - `minecraft:deepslate_gold_ore`

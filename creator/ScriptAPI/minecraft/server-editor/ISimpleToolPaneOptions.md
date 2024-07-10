@@ -65,16 +65,9 @@ Type: *(pane: ISimpleToolPaneComponent) => void*
 
 Type: *(pane: ISimpleToolPaneComponent) => void*
 
-### **titleAltText**
-`titleAltText: string;`
+### **title**
+`title: string;`
 
 The title of the pane. This will be displayed in the title bar of the pane.
-
-Type: *string*
-
-### **titleStringId**
-`titleStringId: string;`
-
-The string id of the title of the pane. This will be displayed in the title bar of the pane if it exists in the language file, otherwise the titleAltText will be used.
 
 Type: *string*

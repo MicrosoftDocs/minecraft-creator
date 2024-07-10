@@ -13,6 +13,13 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsNumber
 
 ## Properties
 
+### **isFloat**
+`isFloat: boolean;`
+
+If we should treat the number as floating point. By default is false
+
+Type: *boolean*
+
 ### **max**
 `max: number;`
 
