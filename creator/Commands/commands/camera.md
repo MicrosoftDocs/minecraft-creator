@@ -7,7 +7,7 @@ title: camera Command
 description: Description and usage of the camera command
 ---
 # `/camera` Command
-Transforms the camera for the selected player to a different perspective.
+[Experimental feature.] Transforms the camera for the selected player to a different perspective.
 
 <table>
   <tr>
@@ -77,51 +77,57 @@ Sets a camera with override positions and facing at a particular entity.
 Sets a camera with override positions facing a particular position.
 
 ### Set camera with override position
-`/camera <players: target> set <preset: CameraPresets> pos <position: x y z>`
+`/camera <players: target> target_entity <entity: target>`
 
 Specifies a camera transition with a specified position.
 
 ### Set camera with override rotation
-`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation>`
+`/camera <players: target> target_entity <entity: target> target_center_offset <xTargetCenterOffset: float> <yTargetCenterOffset: float> <zTargetCenterOffset: float>`
 
 
 ### Set camera with override facing looking at entity
-`/camera <players: target> set <preset: CameraPresets> facing <lookAtEntity: target>`
+`/camera <players: target> remove_target`
 
 
 ### Set camera with override facing looking at position
-`/camera <players: target> set <preset: CameraPresets> facing <lookAtPosition: x y z>`
+`/camera <players: target> set <preset: CameraPresets> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 
 ### Set camera to default
-`/camera <players: target> set <preset: CameraPresets> view_offset <xViewOffset: float> <yViewOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 Sets a camera using the default settings for the camera preset.
 
 ### Clear camera
-`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> pos <position: x y z>`
 
 Clears the current camera from the player.
 
 ### Fade out to times and color
-`/camera <players: target> set <preset: CameraPresets> [default: default]`
+`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation>`
 
 Specifies a camera fade-out type operation and color transition.
 
 ### Fade out to times
-`/camera <players: target> clear`
+`/camera <players: target> set <preset: CameraPresets> facing <lookAtEntity: target>`
 
 Specifies a camera timed fade-out type operation.
 
 ### Fade to color
-`/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float> color <red: int> <green: int> <blue: int>`
+`/camera <players: target> set <preset: CameraPresets> facing <lookAtPosition: x y z>`
 
 Specifies a camera fade to a color wipe.
 
 ### Fade
-`/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float>`
+`/camera <players: target> set <preset: CameraPresets> [default: default]`
 
 Specifies a general camera fade-out.
+
+### `/camera <players: target> clear`
+
+### `/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float> color <red: int> <green: int> <blue: int>`
+
+### `/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float>`
 
 ### `/camera <players: target> fade color <red: int> <green: int> <blue: int>`
 
@@ -136,6 +142,7 @@ Specifies that the camera movement should be reset to its default parameters.
 Specified time for the easing.
 - `easeType`: Easing
 Specified type of the easing to use.
+- `entity`: target
 - `fadeInSeconds`: float
 Specifies a fade-in time value.
 - `fadeOutSeconds`: float
@@ -158,10 +165,13 @@ A camera preset defined in a camera JSON file.
 Red component of a color value. Valid values are between 0 and 255.
 - `xRot`: rotation
 x Rotation value
+- `xTargetCenterOffset`: float
 - `xViewOffset`: float
 - `yRot`: rotation
 y Rotation value
+- `yTargetCenterOffset`: float
 - `yViewOffset`: float
+- `zTargetCenterOffset`: float
 
 ## Enums
 ### `CameraPresets`

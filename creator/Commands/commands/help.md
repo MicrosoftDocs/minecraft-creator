@@ -212,8 +212,11 @@ A particular command used for configuring an Agent in an educational context.
 - `codebuilder_actorinfo`
 - `enchant`
 Adds an enchantment to a player's selected item.
+- `clearrealmevents`
 - `allowlist`
+- `whitelist`
 - `changesetting`
+- `sendshowstoreoffer`
 - `reloadconfig`
 - `script`
 Contains additional tools for managing the runtime of script, including debugger and profiler options.

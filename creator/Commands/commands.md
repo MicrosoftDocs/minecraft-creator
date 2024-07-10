@@ -10,7 +10,7 @@ description: List and descriptions of Minecraft commands and enums
 |Command   |Description   |Required Permission Level  | Requires Cheats Enabled |
 |----------|-----------|-----------|-----------|
 | [`/allowlist`](./commands/allowlist.md) | Manages the server allowlist. | Owner | Yes |
-| [`/camera`](./commands/camera.md) | [Experimental feature.] Transforms the camera for the selected player to a different perspective. | Game Directors | Yes |
+| [`/camera`](./commands/camera.md) | Transforms the camera for the selected player to a different perspective. | Game Directors | Yes |
 | [`/camerashake`](./commands/camerashake.md) | Applies shaking to the players&#39; camera with specified intensity and duration. Parameters: &#39;stop&#39; or &#39;add&#39; the effect, specify player (target), intensity (float, min 0.0 to max 4.0), seconds(float, min 0.01), and shakeType (positional or rotational). Must have &#x60;Allow Camera Shake&#x60; option turned on in user settings. | Game Directors | Yes |
 | [`/changesetting`](./commands/changesetting.md) | Changes a setting on the dedicated server while it&#39;s running. | Owner | Yes |
 | [`/clear`](./commands/clear.md) | Clears items from player inventory. | Game Directors | Yes |

@@ -40,17 +40,10 @@ In case of sub pane this is the id of the parent pane.
 
 Type: *string*
 
-### **titleAltText**
-`titleAltText: string;`
+### **title**
+`title: string;`
 
-Fallback display text if no loc ID
-
-Type: *string*
-
-### **titleStringId**
-`titleStringId: string;`
-
-Loc ID (resolved on client)
+Localized title of the property pane
 
 Type: *string*
 

@@ -24,17 +24,10 @@ Callback to execute when the value is updated.
 
 Type: *OnChangeCallback<PropertyBag, string>*
 
-### **titleAltText**
-`titleAltText: string;`
+### **title**
+`title: string;`
 
-Fallback display text if no loc ID
-
-Type: *string*
-
-### **titleStringId**
-`titleStringId: string;`
-
-Loc ID (resolved on client)
+Localized title of the property item
 
 Type: *string*
 
