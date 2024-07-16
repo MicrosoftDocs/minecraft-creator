@@ -31,12 +31,12 @@ To opt into the Deferred Lighting Pipeline, you will need to provide a PBR-enabl
 
 ## Continue Reading More about Deferred Lighting:
 
-[PBR Resource Packs](PBRResourcePacks.md)
-[Enabling Deferred Technical Preview in Your World](EnablingDeferredTechnicalPreview.md)
-[Enabling Deferred Technical Preview](EnablingDeferredTechnicalPreview.md)
-[Lighting Customization](LightingCustomization.md)
-[Atmospherics Customization](AtmosphericsCustomization.md)
-[Volumetric Fog Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
-[Reflections Customization](ReflectionsCustomization.md)
-[Color Grading Tone Mapping Customization](ColorGradingToneMappingCustomization.md)
-[Key Frame JSON Syntax](KeyFrameJSONSyntax.md)
+- [PBR Resource Packs](PBRResourcePacks.md)
+- [Enabling Deferred Technical Preview in Your World](EnablingDeferredTechnicalPreview.md)
+- [Enabling Deferred Technical Preview](EnablingDeferredTechnicalPreview.md)
+- [Lighting Customization](LightingCustomization.md)
+- [Atmospherics Customization](AtmosphericsCustomization.md)
+- [Volumetric Fog Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
+- [Reflections Customization](ReflectionsCustomization.md)
+- [Color Grading Tone Mapping Customization](ColorGradingToneMappingCustomization.md)
+- [Key Frame JSON Syntax](KeyFrameJSONSyntax.md)
