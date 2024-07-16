@@ -20,7 +20,7 @@ landingContent:
   # Card (optional)
   - title: Learn About Deferred Lighting
     linkLists:
-      - linkListType: reference
+      - linkListType: learn
         links:
           - text: Getting Started with Deferred Lighting
             url: GettingStartedDeferredLighting.md

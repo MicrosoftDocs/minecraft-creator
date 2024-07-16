@@ -180,7 +180,7 @@ Values can either be described as an array of 3 numerical values from the range 
 
 ## Atmospherics JSON Schema
 
-File location: lighting/ atmospherics.json
+File location: lighting/atmospherics.json
 
 ```json
 {
