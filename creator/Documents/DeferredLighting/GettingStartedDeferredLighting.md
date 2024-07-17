@@ -29,14 +29,14 @@ All newly added lighting capabilities are opt-in, and appropriate defaults will 
 
 To opt into the Deferred Lighting Pipeline, you will need to provide a PBR-enabled resource pack and join a world with the "Render Dragon Features for Creators" Experiment enabled. Resource packs built for RTX should work with the new pipeline, but you will likely want to add some JSON files to make full use of the pipeline, as explained in the following sections.
 
-## Continue Reading More about Deferred Lighting:
+## Continue Reading about Deferred Lighting:
 
 - [PBR Resource Packs](PBRResourcePacks.md)
 - [Enabling Deferred Technical Preview in Your World](EnablingDeferredTechnicalPreview.md)
 - [Enabling Deferred Technical Preview](EnablingDeferredTechnicalPreview.md)
 - [Lighting Customization](LightingCustomization.md)
 - [Atmospherics Customization](AtmosphericsCustomization.md)
-- [Volumetric Fog Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
+- [Volumetric Fog and Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
 - [Reflections Customization](ReflectionsCustomization.md)
-- [Color Grading Tone Mapping Customization](ColorGradingToneMappingCustomization.md)
+- [Color Grading and Tone Mapping Customization](ColorGradingToneMappingCustomization.md)
 - [Key Frame JSON Syntax](KeyFrameJSONSyntax.md)
