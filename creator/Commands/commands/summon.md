@@ -21,18 +21,15 @@ Summons an entity.
 </table>
 
 ## Usage
-### Summon entity
-`/summon <entityType: EntityType> [spawnPos: x y z] [yRot: rotation] [xRot: rotation] [spawnEvent: EntityEvents] [nameTag: string]`
-
-Summon an `entity` into an optional `spawn position`, `spawn event`, and `nametag`.
-
 ### Summon entity with nametag
-`/summon <entityType: EntityType> <nameTag: string> [spawnPos: x y z]`
+`/summon <entityType: EntityType> [spawnPos: x y z] [yRot: rotation] [xRot: rotation] [spawnEvent: EntityEvents] [nameTag: string]`
 
 Summon an `entity` with a `nametag` into an optional `spawn position`.
 
-### `/summon <entityType: EntityType> [spawnPos: x y z] facing <lookAtPosition: x y z> [spawnEvent: EntityEvents] [nameTag: string]`
+### `/summon <entityType: EntityType> <nameTag: string> [spawnPos: x y z]`
 
+
+### `/summon <entityType: EntityType> [spawnPos: x y z] facing <lookAtPosition: x y z> [spawnEvent: EntityEvents] [nameTag: string]`
 
 ### `/summon <entityType: EntityType> [spawnPos: x y z] facing <lookAtEntity: target> [spawnEvent: EntityEvents] [nameTag: string]`
 

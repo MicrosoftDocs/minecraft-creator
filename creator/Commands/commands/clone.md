@@ -26,10 +26,10 @@ Clones a set of blocks from one region to another.
 
 Clone a set of blocks from one location to a destination with an optional `maskMode` and `cloneMode`.
 
-### Clone with optional `maskMode`, `cloneMode`, `tileName`, `tileData`
+### Clone with optional `maskMode`, `cloneMode`, `tileName`, `blockStates`
 `/clone <begin: x y z> <end: x y z> <destination: x y z> filtered <cloneMode: CloneMode> <tileName: Block> [blockStates: block properties]`
 
-Clone a set of blocks from one location to a destination with an optional `maskMode` and `cloneMode`, as well as optional `tileName` or `tileData` data  to specify the blocks to clone.
+Clone a set of blocks from one location to a destination with an optional `maskMode` and `cloneMode`, as well as optional `tileName` or `blockStates` data  to specify the blocks to clone.
 
 ## Arguments
 - `begin: x y z`: position

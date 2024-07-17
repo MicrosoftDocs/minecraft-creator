@@ -65,6 +65,7 @@ Type: *number*
 - [addBlockList](#addblocklist)
 - [addBlockPicker](#addblockpicker)
 - [addBool](#addbool)
+- [addBool_deprecated](#addbool_deprecated)
 - [addButton](#addbutton)
 - [addColorPicker](#addcolorpicker)
 - [addDivider](#adddivider)
@@ -76,6 +77,7 @@ Type: *number*
 - [addTable](#addtable)
 - [addText](#addtext)
 - [addVector3](#addvector3)
+- [addVector3_deprecated](#addvector3_deprecated)
 - [collapse](#collapse)
 - [createPropertyPane](#createpropertypane)
 - [expand](#expand)
@@ -115,7 +117,18 @@ Adds a BlockPicker item to the pane.
 
 ### **addBool**
 `
-addBool(obj: T, property: Prop, options: IPropertyItemOptionsBool): IPropertyItem<T, Prop>
+addBool(value: IObservableProp<boolean>, options: IBoolPropertyItemOptions): IBoolPropertyItem
+`
+
+#### **Parameters**
+- **value**: *IObservableProp<boolean>*
+- **options**: *IBoolPropertyItemOptions*
+
+**Returns** *IBoolPropertyItem*
+
+### **addBool_deprecated**
+`
+addBool_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsBool): IPropertyItem<T, Prop>
 `
 
 Adds a boolean item to the pane.
@@ -129,20 +142,16 @@ Adds a boolean item to the pane.
 
 ### **addButton**
 `
-addButton(action: RegisteredAction<NoArgsAction>, options: IPropertyItemOptionsButton): IActionPropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>
+addButton(action: (() => void) | RegisteredAction<NoArgsAction>, options: IButtonPropertyItemOptions): IButtonPropertyItem
 `
 
 Adds a button to the pane and binds the specified action to the button activate.
 
 #### **Parameters**
-- **action**: *RegisteredAction<NoArgsAction>*
-- **options**: *IPropertyItemOptionsButton*
+- **action**: *(() => void) | RegisteredAction<NoArgsAction>*
+- **options**: *IButtonPropertyItemOptions*
 
-**Returns** *IActionPropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>*
+**Returns** *IButtonPropertyItem*
 
 ### **addColorPicker**
 `
@@ -160,12 +169,12 @@ Adds a color picker item to the pane.
 
 ### **addDivider**
 `
-addDivider(): IPropertyItem<PropertyBag, string>
+addDivider(): IPropertyItemBase
 `
 
 Adds an divider item to the pane.
 
-**Returns** *IPropertyItem<PropertyBag, string>*
+**Returns** *IPropertyItemBase*
 
 ### **addDropdown**
 `
@@ -197,17 +206,16 @@ Adds an EntityPicker item to the pane.
 
 ### **addImage**
 `
-addImage(obj: T, property: Prop, options: IPropertyItemOptionsImage): IPropertyItem<T, Prop>
+addImage(value: IObservableProp<string | ImageResourceData>, options: IImagePropertyItemOptions): IImagePropertyItem
 `
 
 Adds an image item to the pane.
 
 #### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsImage*
+- **value**: *IObservableProp<string | ImageResourceData>*
+- **options**: *IImagePropertyItemOptions*
 
-**Returns** *IPropertyItem<T, Prop>*
+**Returns** *IImagePropertyItem*
 
 ### **addNumber**
 `
@@ -255,21 +263,33 @@ Adds a table to the pane.
 
 ### **addText**
 `
-addText(obj: T, property: Prop, options: IPropertyItemOptionsText): IPropertyItem<T, Prop>
+addText(value: IObservableProp<LocalizedString>, options: ITextPropertyItemOptions): ITextPropertyItem
 `
 
 Adds a multiline Text item to the pane.
 
 #### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsText*
+- **value**: *IObservableProp<LocalizedString>*
+- **options**: *ITextPropertyItemOptions*
 
-**Returns** *IPropertyItem<T, Prop>*
+**Returns** *ITextPropertyItem*
 
 ### **addVector3**
 `
-addVector3(obj: T, property: Prop, options: IPropertyItemOptionsVector3): IVector3PropertyItem<T, Prop>
+addVector3(value: IObservableProp<Vector3>, options: IVector3PropertyItemOptions): IVector3PropertyItem
+`
+
+Adds a Vec3 item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<Vector3>*
+- **options**: *IVector3PropertyItemOptions*
+
+**Returns** *IVector3PropertyItem*
+
+### **addVector3_deprecated**
+`
+addVector3_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsVector3): IVector3PropertyItem_deprecated<T, Prop>
 `
 
 Adds a Vec3 item to the pane.
@@ -279,7 +299,7 @@ Adds a Vec3 item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsVector3*
 
-**Returns** *IVector3PropertyItem<T, Prop>*
+**Returns** *IVector3PropertyItem_deprecated<T, Prop>*
 
 ### **collapse**
 `

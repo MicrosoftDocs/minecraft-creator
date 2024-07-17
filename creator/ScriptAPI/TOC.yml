@@ -914,8 +914,12 @@
       href: minecraft/server-editor/ActionTypes.md
     - name: BlockPaletteItemType
       href: minecraft/server-editor/BlockPaletteItemType.md
+    - name: BoolPropertyItemVariant
+      href: minecraft/server-editor/BoolPropertyItemVariant.md
     - name: BrushPipelineOperationType
       href: minecraft/server-editor/BrushPipelineOperationType.md
+    - name: ButtonPropertyItemVariant
+      href: minecraft/server-editor/ButtonPropertyItemVariant.md
     - name: ColorPickerVariant
       href: minecraft/server-editor/ColorPickerVariant.md
     - name: CoreActionBarItemType
@@ -928,8 +932,6 @@
       href: minecraft/server-editor/CursorTargetMode.md
     - name: DaylightCycle
       href: minecraft/server-editor/DaylightCycle.md
-    - name: EDITOR_PANE_PROPERTY_ITEM_TYPE
-      href: minecraft/server-editor/EDITOR_PANE_PROPERTY_ITEM_TYPE.md
     - name: EditorInputContext
       href: minecraft/server-editor/EditorInputContext.md
     - name: EditorMode
@@ -944,10 +946,14 @@
       href: minecraft/server-editor/GamePublishSetting.md
     - name: GraphicsSettingsProperty
       href: minecraft/server-editor/GraphicsSettingsProperty.md
+    - name: ImageResourceType
+      href: minecraft/server-editor/ImageResourceType.md
     - name: InputModifier
       href: minecraft/server-editor/InputModifier.md
     - name: KeyboardKey
       href: minecraft/server-editor/KeyboardKey.md
+    - name: LayoutAlignment
+      href: minecraft/server-editor/LayoutAlignment.md
     - name: LayoutDirection
       href: minecraft/server-editor/LayoutDirection.md
     - name: MouseActionCategory
@@ -962,8 +968,12 @@
       href: minecraft/server-editor/PlaytestSessionResult.md
     - name: ProjectExportType
       href: minecraft/server-editor/ProjectExportType.md
+    - name: PropertyItemType
+      href: minecraft/server-editor/PropertyItemType.md
     - name: SimpleToolStatusBarVisibility
       href: minecraft/server-editor/SimpleToolStatusBarVisibility.md
+    - name: ThemeSettingsColorKey
+      href: minecraft/server-editor/ThemeSettingsColorKey.md
     - name: WidgetGroupSelectionMode
       href: minecraft/server-editor/WidgetGroupSelectionMode.md
     - name: BedrockEventSubscriptionCache
@@ -1018,6 +1028,8 @@
       href: minecraft/server-editor/ModeChangeAfterEvent.md
     - name: ModeChangeAfterEventSignal
       href: minecraft/server-editor/ModeChangeAfterEventSignal.md
+    - name: ObservableValidator
+      href: minecraft/server-editor/ObservableValidator.md
     - name: PlaytestManager
       href: minecraft/server-editor/PlaytestManager.md
     - name: PrimarySelectionChangeAfterEventSignal
@@ -1042,12 +1054,16 @@
       href: minecraft/server-editor/SimpleToolWrapper.md
     - name: SimulationState
       href: minecraft/server-editor/SimulationState.md
+    - name: ThemeSettings
+      href: minecraft/server-editor/ThemeSettings.md
     - name: TransactionManager
       href: minecraft/server-editor/TransactionManager.md
     - name: UserDefinedTransactionHandle
       href: minecraft/server-editor/UserDefinedTransactionHandle.md
     - name: UserDefinedTransactionHandlerId
       href: minecraft/server-editor/UserDefinedTransactionHandlerId.md
+    - name: Vector3LimitObservableValidator
+      href: minecraft/server-editor/Vector3LimitObservableValidator.md
     - name: Widget
       href: minecraft/server-editor/Widget.md
     - name: WidgetGroup
@@ -1078,6 +1094,8 @@
       href: minecraft/server-editor/ProjectExportOptions.md
     - name: SettingsUIElementOptions
       href: minecraft/server-editor/SettingsUIElementOptions.md
+    - name: WeightedBlock
+      href: minecraft/server-editor/WeightedBlock.md
     - name: WidgetCreateOptions
       href: minecraft/server-editor/WidgetCreateOptions.md
     - name: WidgetGroupCreateOptions
@@ -1094,6 +1112,14 @@
       href: minecraft/server-editor/IActionBarItem.md
     - name: IActionBarItemCreationParams
       href: minecraft/server-editor/IActionBarItemCreationParams.md
+    - name: IBoolPropertyItem
+      href: minecraft/server-editor/IBoolPropertyItem.md
+    - name: IBoolPropertyItemOptions
+      href: minecraft/server-editor/IBoolPropertyItemOptions.md
+    - name: IButtonPropertyItem
+      href: minecraft/server-editor/IButtonPropertyItem.md
+    - name: IButtonPropertyItemOptions
+      href: minecraft/server-editor/IButtonPropertyItemOptions.md
     - name: IDisposable
       href: minecraft/server-editor/IDisposable.md
     - name: IDropdownItem
@@ -1104,6 +1130,10 @@
       href: minecraft/server-editor/IEventToken.md
     - name: IGlobalInputManager
       href: minecraft/server-editor/IGlobalInputManager.md
+    - name: IImagePropertyItem
+      href: minecraft/server-editor/IImagePropertyItem.md
+    - name: IImagePropertyItemOptions
+      href: minecraft/server-editor/IImagePropertyItemOptions.md
     - name: IMenu
       href: minecraft/server-editor/IMenu.md
     - name: IMenuContainer
@@ -1114,34 +1144,34 @@
       href: minecraft/server-editor/IModalTool.md
     - name: IModalToolContainer
       href: minecraft/server-editor/IModalToolContainer.md
+    - name: IObservable
+      href: minecraft/server-editor/IObservable.md
     - name: IPlayerLogger
       href: minecraft/server-editor/IPlayerLogger.md
     - name: IPropertyItem
       href: minecraft/server-editor/IPropertyItem.md
+    - name: IPropertyItemBase
+      href: minecraft/server-editor/IPropertyItemBase.md
     - name: IPropertyItemOptions
       href: minecraft/server-editor/IPropertyItemOptions.md
+    - name: IPropertyItemOptionsBase
+      href: minecraft/server-editor/IPropertyItemOptionsBase.md
     - name: IPropertyItemOptionsBlockList
       href: minecraft/server-editor/IPropertyItemOptionsBlockList.md
     - name: IPropertyItemOptionsBool
       href: minecraft/server-editor/IPropertyItemOptionsBool.md
-    - name: IPropertyItemOptionsButton
-      href: minecraft/server-editor/IPropertyItemOptionsButton.md
     - name: IPropertyItemOptionsColorPicker
       href: minecraft/server-editor/IPropertyItemOptionsColorPicker.md
     - name: IPropertyItemOptionsDataPicker
       href: minecraft/server-editor/IPropertyItemOptionsDataPicker.md
     - name: IPropertyItemOptionsDropdown
       href: minecraft/server-editor/IPropertyItemOptionsDropdown.md
-    - name: IPropertyItemOptionsImage
-      href: minecraft/server-editor/IPropertyItemOptionsImage.md
     - name: IPropertyItemOptionsNumber
       href: minecraft/server-editor/IPropertyItemOptionsNumber.md
     - name: IPropertyItemOptionsSubPane
       href: minecraft/server-editor/IPropertyItemOptionsSubPane.md
     - name: IPropertyItemOptionsTable
       href: minecraft/server-editor/IPropertyItemOptionsTable.md
-    - name: IPropertyItemOptionsText
-      href: minecraft/server-editor/IPropertyItemOptionsText.md
     - name: IPropertyItemOptionsVector3
       href: minecraft/server-editor/IPropertyItemOptionsVector3.md
     - name: IPropertyPane
@@ -1172,5 +1202,13 @@
       href: minecraft/server-editor/ISimpleToolStatusBarOptions.md
     - name: IStatusBarItem
       href: minecraft/server-editor/IStatusBarItem.md
+    - name: ITextPropertyItem
+      href: minecraft/server-editor/ITextPropertyItem.md
+    - name: ITextPropertyItemOptions
+      href: minecraft/server-editor/ITextPropertyItemOptions.md
+    - name: IVector3PropertyItem
+      href: minecraft/server-editor/IVector3PropertyItem.md
+    - name: IVector3PropertyItemOptions
+      href: minecraft/server-editor/IVector3PropertyItemOptions.md
     - name: ModalToolCreationParameters
       href: minecraft/server-editor/ModalToolCreationParameters.md

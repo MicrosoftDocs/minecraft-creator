@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server-editor.ProbabilityBlockPaletteIte
 ## Methods
 - [constructor](#constructor)
 - [addBlock](#addblock)
+- [getBlocks](#getblocks)
 - [removeBlockAt](#removeblockat)
 
 ### **constructor**
@@ -42,6 +43,13 @@ addBlock(block: minecraftserver.BlockPermutation | minecraftserver.BlockType | s
 > This function can throw errors.
 >
 > Throws *Error*
+
+### **getBlocks**
+`
+getBlocks(): WeightedBlock[]
+`
+
+**Returns** [*WeightedBlock*](WeightedBlock.md)[]
 
 ### **removeBlockAt**
 `
