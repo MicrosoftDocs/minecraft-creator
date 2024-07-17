@@ -21,25 +21,23 @@ Fills all or parts of a region with a specific block.
 </table>
 
 ## Usage
-### Fill with optional fill mode
-`/fill <from: x y z> <to: x y z> <tileName: Block> <blockStates: block properties> [oldBlockHandling: FillMode]`
-
-Fill a region `from` one position `to` another of a particular `block name`, `block id`, with an optional `fill mode`.
-
-### Fill with replacement block name or block ID
-`/fill <from: x y z> <to: x y z> <tileName: Block> [oldBlockHandling: FillMode]`
-
-Fill a region `from` one position `to` another of a particular `block name` or `block id` with a replacement `block name` or `block id`.
-
 ### Fill with block state, optional fill mode
-`/fill <from: x y z> <to: x y z> <tileName: Block> <blockStates: block properties> replace [replaceTileName: Block] [replaceBlockStates: block properties]`
+`/fill <from: x y z> <to: x y z> <tileName: Block> <blockStates: block properties> [oldBlockHandling: FillMode]`
 
 Fill a region `from` one position `to` another of a particular `block state` with an optional fill mode.
 
 ### Fill, filter on block states, optional replace with tile name or block state
-`/fill <from: x y z> <to: x y z> <tileName: Block> replace [replaceTileName: Block] [replaceBlockStates: block properties]`
+`/fill <from: x y z> <to: x y z> <tileName: Block> [oldBlockHandling: FillMode]`
 
 Fill a region `from` one position `to` another of a particular `block name`, filtering on particular `block states`, and replacing with blocks using an optional `replacement tile name` and optional `replacement block states`.
+
+### Fill, filtering on block states, with replacement blocks and states
+`/fill <from: x y z> <to: x y z> <tileName: Block> <blockStates: block properties> replace [replaceTileName: Block] [replaceBlockStates: block properties]`
+
+
+### Fill with replacement blocks and states
+`/fill <from: x y z> <to: x y z> <tileName: Block> replace [replaceTileName: Block] [replaceBlockStates: block properties]`
+
 
 ## Arguments
 - `blockStates`: block properties

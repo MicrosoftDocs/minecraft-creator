@@ -36,7 +36,6 @@ ADD-ON CREATORS - For creators of game packs and other add-ons
 
 | Experimental Toggle | Description |
 |:------|:------|
-|Holiday Creator Features | Add data-driven block and item technology to customize block shape, rotation, damage and more |
 |Custom Biomes| Create custom biomes and change world generation |
 |Upcoming Creator Features | Includes adjustable fog parameters |
 |Beta APIs| Use "-beta" versions of API modules in add-on packs |

@@ -3,21 +3,42 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .IVector3PropertyItem type alias.
+title: minecraft/server-editor.IVector3PropertyItem Interface
+description: Contents of the @minecraft/server-editor.IVector3PropertyItem class.
 ---
-# IVector3PropertyItem Type Alias
+# IVector3PropertyItem Interface
+
+## Extends
+- *IPropertyItemBase*
 
 A property item which supports Vector3 properties
 
-## Declaration
-`export type IVector3PropertyItem<T extends PropertyBag, Prop extends keyof T & string> = IPropertyItem<T, Prop> & {
-    updateAxisLimits(limits: {
-        minX?: number;
-        maxX?: number;
-        minY?: number;
-        maxY?: number;
-        minZ?: number;
-        maxZ?: number;
-    }): void;
-};`
+## Properties
+
+### **value**
+`read-only value: Readonly<Vector3>;`
+
+Current value of the property item.
+
+Type: *Readonly<Vector3>*
+
+## Methods
+- [updateAxisLimits](#updateaxislimits)
+
+### **updateAxisLimits**
+`
+updateAxisLimits(limits: {
+        min?: Partial<Vector3>;
+        max?: Partial<Vector3>;
+    }): void
+`
+
+Updates Vector3 limits and clamps the current value.
+
+#### **Parameters**
+- **limits**: *{
+        min?: Partial<Vector3>;
+        max?: Partial<Vector3>;
+    }*
+
+**Returns** *void*

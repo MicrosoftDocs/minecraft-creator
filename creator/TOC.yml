@@ -346,10 +346,6 @@
             href: Reference/Content/blockreference/Examples/Definitions/BlockCulling.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
-          - name: Block Triggers
-            href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
-          - name: Block Event Responses
-            href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
         - name: Entity JSON
           items:
           - name: Filters

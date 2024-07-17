@@ -4,11 +4,11 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: . Type Alias
-description: Contents of the .ButtonVariant type alias.
+description: Contents of the .IObservableProp type alias.
 ---
-# ButtonVariant Type Alias
+# IObservableProp Type Alias
 
-The possible variants of a button.
+Type that can be an observable or a value.
 
 ## Declaration
-`export declare type ButtonVariant = 'secondary' | 'primary' | 'destructive' | 'hero';`
+`export type IObservableProp<T> = IObservable<T> | T;`
