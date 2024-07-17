@@ -45,9 +45,11 @@
       "redirect_url": "/minecraft/creator/documents/gettingstarted",
       "redirect_document_id": false
     },
-    
-
-    
+    {
+      "source_path": "Documents/DeferredLighting.md",
+      "redirect_url": "/minecraft/creator/documents/deferredlighting/gettingstarteddeferredlighting",
+      "redirect_document_id": false
+    },
     {
       "source_path": "minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponents/menu_category_component.md",
       "redirect_url": "/minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponentList",
