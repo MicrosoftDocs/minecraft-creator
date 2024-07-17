@@ -73,10 +73,6 @@ landingContent:
         links:
           - text: Block Components List
             url: Content/blockreference/Examples/BlockComponents/BlockComponentsList.md
-          - text: Block Trigger List
-            url: Content/blockreference/Examples/BlockTriggers/BlockTriggerList.md
-          - text: Block Event Responses List
-            url: Content/blockreference/Examples/BlockEvents/BlockEventList.md
   # Card (comment to space cards)
   - title: Entities
     linkLists:

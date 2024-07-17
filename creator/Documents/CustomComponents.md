@@ -20,7 +20,7 @@ This new feature is named _custom components_ because script is connected to a g
 
 ## Script API
 
-Starting from the script API, we are introducing two new major interfaces for Blocks: `BlockTypeRegistry` and `BlockCustomComponent`. The `BlockTypeRegistry` contains a single method on it for registering a new custom component by name:
+Starting from the script API, we are introducing two new major interfaces for Blocks: `BlockTypeRegistry` and `BlockCustomComponent`. (NOTE: BlockTypeRegistry is known as BlockComponentRegistry in preview versions of Minecraft after 1.21.0) The `BlockTypeRegistry` contains a single method on it for registering a new custom component by name:
 
 ```typescript
 /**
@@ -128,4 +128,8 @@ As you author custom components and their corresponding scripting code, you have
 
 When making changes to JSON and/or the registration of new custom components, it will be necessary to exit out of a world and re-enter to see your changes reflected.
 
-Once in script, your callbacks can use any API available in the scripting API just like any other script today with the same constraints. We are looking forward to seeing what you create!
+Once in script, your callbacks can use any API available in the scripting API just like any other script today with the same constraints. 
+
+## Get started in building custom components
+
+If you'd like to get started in building add-ons with custom components, visit the [custom components tutorial](./CustomComponentsTutorial.md). One important note: in preview versions of Minecraft after 1.21.0, BlockTypeRegistry is known as BlockComponentRegistry.

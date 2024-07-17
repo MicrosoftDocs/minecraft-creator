@@ -10,8 +10,6 @@ ms.service: minecraft-bedrock-edition
 
 `minecraft:breathability` is a string that specifies whether the block is breathable by defining if the block is treated as a `solid` or as `air`. 
 
-**Experimental toggles required: Holiday Creator Features**
-
 ## Default Value of the Component
 
 The default is `solid` if this component is omitted. 
