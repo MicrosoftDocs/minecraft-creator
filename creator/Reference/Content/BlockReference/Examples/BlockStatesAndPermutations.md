@@ -20,6 +20,9 @@ The "states" field is contained in the "description" section of a custom block's
 >
 > "test:integer_state":{"values":{"min":0,"max":3}} would be the same as "test:integer_state":[0, 1, 2, 3]
 
+> [!NOTE]
+> To use custom block states, the _Holiday Creator Features_ experiment must be toggled ON.
+
 ## Block Permutations
 
 You can think of permutations as different variations of the same block. For example, you may have a TV block with a different permutation for each way it may be rotated (North, South, East, or West). These permutations are all the same TV block, but with different rotations.

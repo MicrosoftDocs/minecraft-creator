@@ -21,7 +21,11 @@ Finds the nearest specified biome or structure if it exists in the current dimen
 </table>
 
 ## Usage
-### `/locate structure <structure: StructureFeature> [useNewChunksOnly: Boolean]`
+
+### Locate feature, new chunks
+`/locate structure <structure: StructureFeature> [useNewChunksOnly: Boolean]`
+
+Locate a feature with optional new chunks only.
 
 ### `/locate biome <biome: Biome>`
 
