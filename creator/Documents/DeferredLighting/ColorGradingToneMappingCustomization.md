@@ -147,4 +147,3 @@ The following example JSON can be used as a starting point:
 - [Volumetric Fog and Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
 - [Reflections Customization](ReflectionsCustomization.md)
 - [Key Frame JSON Syntax](KeyFrameJSONSyntax.md)
-

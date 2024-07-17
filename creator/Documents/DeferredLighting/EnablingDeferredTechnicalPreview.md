@@ -14,7 +14,7 @@ Toggle this Experiment **on**, and ensure that your PBR-enabled resource pack is
 
 Note that if you are hosting a Realm to share worlds in Preview, make sure to require players to download resource packs to join.
 
-![Image of the Settings screen, Experiments tab, Render Dragon Features for Creators toggle is on](Media/DeferredLighting/experiments_renderDragon_ON.png)
+![Image of the Settings screen, Experiments tab, Render Dragon Features for Creators toggle is on](Media/experiments_renderDragon_ON.png)
 
 After you enter the world, you will see new options in the "Video" settings menu.
 
@@ -22,7 +22,7 @@ Under "Graphics Mode," the UI element will change to a dropdown selection where 
 
 Toggle this **on**. Your world will now be rendered with the Deferred Lighting Pipeline!
 
-![Image showing Video settings, Graphics mode, Deferred technical preview checkbox](Media/DeferredLighting/settings_video_graphicsMode_deferredTechnicalPreview.png)
+![Image showing Video settings, Graphics mode, Deferred technical preview checkbox](Media/settings_video_graphicsMode_deferredTechnicalPreview.png)
 
 ### Hardware Requirements
 
