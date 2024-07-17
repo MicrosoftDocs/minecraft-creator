@@ -33,7 +33,6 @@ To opt into the Deferred Lighting Pipeline, you will need to provide a PBR-enabl
 
 - [PBR Resource Packs](PBRResourcePacks.md)
 - [Enabling Deferred Technical Preview in Your World](EnablingDeferredTechnicalPreview.md)
-- [Enabling Deferred Technical Preview](EnablingDeferredTechnicalPreview.md)
 - [Lighting Customization](LightingCustomization.md)
 - [Atmospherics Customization](AtmosphericsCustomization.md)
 - [Volumetric Fog and Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
