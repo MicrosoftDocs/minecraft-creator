@@ -201,7 +201,7 @@ Similar to item custom components, we use the `minecraft:custom_components` comp
 
 ### Registering Block Custom Components in Script
 
-Similar to items, we register the component in script with a list of events that the component is listening to and the behavior that should be run when the event is raised. For items we used the `ItemComponentRegistry` to do this; for blocks we use the `BlockComponentRegistry` (formerly `BlockTypeRegistry`). In this case, we have two components to fill out. The item example above showed how to do this by placing your behavior in the registration statement. These two components will look at two alternate ways you can organize your code.
+Similar to items, we register the component in script with a list of events that the component is listening to and the behavior that should be run when the event is raised. For items we used the `ItemComponentRegistry` to do this; for blocks we use the `BlockComponentRegistry` (or `BlockTypeRegistry` in versions of Minecraft 1.21.0 or prior). In this case, we have two components to fill out. The item example above showed how to do this by placing your behavior in the registration statement. These two components will look at two alternate ways you can organize your code.
 
 ### "example:crop_grow" Component
 

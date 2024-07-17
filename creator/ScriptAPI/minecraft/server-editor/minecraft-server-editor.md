@@ -28,14 +28,15 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
 - [BlockPaletteItemType](BlockPaletteItemType.md)
+- [BoolPropertyItemVariant](BoolPropertyItemVariant.md)
 - [BrushPipelineOperationType](BrushPipelineOperationType.md)
+- [ButtonPropertyItemVariant](ButtonPropertyItemVariant.md)
 - [ColorPickerVariant](ColorPickerVariant.md)
 - [CoreActionBarItemType](CoreActionBarItemType.md)
 - [CoreMenuType](CoreMenuType.md)
 - [CursorControlMode](CursorControlMode.md)
 - [CursorTargetMode](CursorTargetMode.md)
 - [DaylightCycle](DaylightCycle.md)
-- [EDITOR_PANE_PROPERTY_ITEM_TYPE](EDITOR_PANE_PROPERTY_ITEM_TYPE.md)
 - [EditorInputContext](EditorInputContext.md)
 - [EditorMode](EditorMode.md)
 - [EditorStatusBarAlignment](EditorStatusBarAlignment.md)
@@ -43,8 +44,10 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ExportResult](ExportResult.md)
 - [GamePublishSetting](GamePublishSetting.md)
 - [GraphicsSettingsProperty](GraphicsSettingsProperty.md)
+- [ImageResourceType](ImageResourceType.md)
 - [InputModifier](InputModifier.md)
 - [KeyboardKey](KeyboardKey.md)
+- [LayoutAlignment](LayoutAlignment.md)
 - [LayoutDirection](LayoutDirection.md)
 - [MouseActionCategory](MouseActionCategory.md)
 - [MouseActionType](MouseActionType.md)
@@ -52,7 +55,9 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [PlayerPermissionLevel](PlayerPermissionLevel.md)
 - [PlaytestSessionResult](PlaytestSessionResult.md)
 - [ProjectExportType](ProjectExportType.md)
+- [PropertyItemType](PropertyItemType.md)
 - [SimpleToolStatusBarVisibility](SimpleToolStatusBarVisibility.md)
+- [ThemeSettingsColorKey](ThemeSettingsColorKey.md)
 - [WidgetGroupSelectionMode](WidgetGroupSelectionMode.md)
 
 # Type Aliases
@@ -60,16 +65,17 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [Action](Action.md)
 - [ActionID](ActionID.md)
 - [ActivationFunctionType](ActivationFunctionType.md)
-- [ButtonVariant](ButtonVariant.md)
 - [EventHandler](EventHandler.md)
-- [IActionPropertyItem](IActionPropertyItem.md)
 - [IBlockListPropertyItem](IBlockListPropertyItem.md)
 - [IDropdownPropertyItem](IDropdownPropertyItem.md)
+- [ImageResourceData](ImageResourceData.md)
+- [IObservableProp](IObservableProp.md)
 - [IPlayerUISession](IPlayerUISession.md)
 - [ITablePropertyItem](ITablePropertyItem.md)
-- [IVector3PropertyItem](IVector3PropertyItem.md)
+- [IVector3PropertyItem_deprecated](IVector3PropertyItem_deprecated.md)
 - [KeyBinding](KeyBinding.md)
 - [KeyBindingInfo](KeyBindingInfo.md)
+- [LocalizedString](LocalizedString.md)
 - [ModalToolLifecycleEventPayload](ModalToolLifecycleEventPayload.md)
 - [MouseModifiers](MouseModifiers.md)
 - [MouseProps](MouseProps.md)
@@ -112,6 +118,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [MinecraftEditor](MinecraftEditor.md)
 - [ModeChangeAfterEvent](ModeChangeAfterEvent.md)
 - [ModeChangeAfterEventSignal](ModeChangeAfterEventSignal.md)
+- [ObservableValidator](ObservableValidator.md)
 - [PlaytestManager](PlaytestManager.md)
 - [PrimarySelectionChangeAfterEventSignal](PrimarySelectionChangeAfterEventSignal.md)
 - [PrimarySelectionChangedEvent](PrimarySelectionChangedEvent.md)
@@ -124,9 +131,11 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [SimpleBlockPaletteItem](SimpleBlockPaletteItem.md)
 - [SimpleToolWrapper](SimpleToolWrapper.md)
 - [SimulationState](SimulationState.md)
+- [ThemeSettings](ThemeSettings.md)
 - [TransactionManager](TransactionManager.md)
 - [UserDefinedTransactionHandle](UserDefinedTransactionHandle.md)
 - [UserDefinedTransactionHandlerId](UserDefinedTransactionHandlerId.md)
+- [Vector3LimitObservableValidator](Vector3LimitObservableValidator.md)
 - [Widget](Widget.md)
 - [WidgetGroup](WidgetGroup.md)
 - [WidgetManager](WidgetManager.md)
@@ -144,6 +153,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [LogProperties](LogProperties.md)
 - [ProjectExportOptions](ProjectExportOptions.md)
 - [SettingsUIElementOptions](SettingsUIElementOptions.md)
+- [WeightedBlock](WeightedBlock.md)
 - [WidgetCreateOptions](WidgetCreateOptions.md)
 - [WidgetGroupCreateOptions](WidgetGroupCreateOptions.md)
 - [ActionManager](ActionManager.md)
@@ -152,30 +162,36 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [IActionBar](IActionBar.md)
 - [IActionBarItem](IActionBarItem.md)
 - [IActionBarItemCreationParams](IActionBarItemCreationParams.md)
+- [IBoolPropertyItem](IBoolPropertyItem.md)
+- [IBoolPropertyItemOptions](IBoolPropertyItemOptions.md)
+- [IButtonPropertyItem](IButtonPropertyItem.md)
+- [IButtonPropertyItemOptions](IButtonPropertyItemOptions.md)
 - [IDisposable](IDisposable.md)
 - [IDropdownItem](IDropdownItem.md)
 - [IDropdownPropertyItemMixIn](IDropdownPropertyItemMixIn.md)
 - [IEventToken](IEventToken.md)
 - [IGlobalInputManager](IGlobalInputManager.md)
+- [IImagePropertyItem](IImagePropertyItem.md)
+- [IImagePropertyItemOptions](IImagePropertyItemOptions.md)
 - [IMenu](IMenu.md)
 - [IMenuContainer](IMenuContainer.md)
 - [IMenuCreationParams](IMenuCreationParams.md)
 - [IModalTool](IModalTool.md)
 - [IModalToolContainer](IModalToolContainer.md)
+- [IObservable](IObservable.md)
 - [IPlayerLogger](IPlayerLogger.md)
 - [IPropertyItem](IPropertyItem.md)
+- [IPropertyItemBase](IPropertyItemBase.md)
 - [IPropertyItemOptions](IPropertyItemOptions.md)
+- [IPropertyItemOptionsBase](IPropertyItemOptionsBase.md)
 - [IPropertyItemOptionsBlockList](IPropertyItemOptionsBlockList.md)
 - [IPropertyItemOptionsBool](IPropertyItemOptionsBool.md)
-- [IPropertyItemOptionsButton](IPropertyItemOptionsButton.md)
 - [IPropertyItemOptionsColorPicker](IPropertyItemOptionsColorPicker.md)
 - [IPropertyItemOptionsDataPicker](IPropertyItemOptionsDataPicker.md)
 - [IPropertyItemOptionsDropdown](IPropertyItemOptionsDropdown.md)
-- [IPropertyItemOptionsImage](IPropertyItemOptionsImage.md)
 - [IPropertyItemOptionsNumber](IPropertyItemOptionsNumber.md)
 - [IPropertyItemOptionsSubPane](IPropertyItemOptionsSubPane.md)
 - [IPropertyItemOptionsTable](IPropertyItemOptionsTable.md)
-- [IPropertyItemOptionsText](IPropertyItemOptionsText.md)
 - [IPropertyItemOptionsVector3](IPropertyItemOptionsVector3.md)
 - [IPropertyPane](IPropertyPane.md)
 - [IPropertyPaneOptions](IPropertyPaneOptions.md)
@@ -191,6 +207,10 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ISimpleToolStatusBarComponent](ISimpleToolStatusBarComponent.md)
 - [ISimpleToolStatusBarOptions](ISimpleToolStatusBarOptions.md)
 - [IStatusBarItem](IStatusBarItem.md)
+- [ITextPropertyItem](ITextPropertyItem.md)
+- [ITextPropertyItemOptions](ITextPropertyItemOptions.md)
+- [IVector3PropertyItem](IVector3PropertyItem.md)
+- [IVector3PropertyItemOptions](IVector3PropertyItemOptions.md)
 - [ModalToolCreationParameters](ModalToolCreationParameters.md)
 
 ## Functions
@@ -254,6 +274,23 @@ getBlockPickerDefaultAllowBlockList(): string[]
 Returns a string array of the default block types for the Block picker control. Can be used to further filter blocks from the Block picker.
 
 **Returns** *string[]* - Default allowed block list
+
+### **makeObservable**
+`
+makeObservable(initialValue: T, validator: ObservableValidator<T>): IObservable<T>
+`
+
+Creates an observable object that stores a value state.
+
+#### **Parameters**
+- **initialValue**: *T*
+  
+  Initial value of the observable.
+- **validator**: *ObservableValidator<T>*
+  
+  Optional validator to use for the setter.
+
+**Returns** *IObservable<T>*
 
 ### **registerEditorExtension**
 `

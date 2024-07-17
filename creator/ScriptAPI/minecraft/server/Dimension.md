@@ -453,9 +453,15 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 getTopmostBlock(locationXZ: VectorXZ, minHeight?: number): Block | undefined
 `
 
+Returns the highest block at the given XZ location.
+
 #### **Parameters**
 - **locationXZ**: [*VectorXZ*](VectorXZ.md)
+  
+  Location to retrieve the topmost block for.
 - **minHeight**?: *number* = `null`
+  
+  The Y height to begin the search from. Defaults to the maximum dimension height.
 
 **Returns** [*Block*](Block.md) | *undefined*
 
