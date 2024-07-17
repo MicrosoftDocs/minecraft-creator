@@ -332,7 +332,7 @@ The following are suggested settings for a test world, but feel free to tweak th
 
 1. If there's no custom block resource pack or behavior pack - do you have a manifest file?
 1. Does your file structure match the minecraft-samples packs?
-1. Have you created a world with cheats and Holiday Creator enabled?
+1. Have you created a world with cheats enabled?
 1. Are you using Minecraft: Bedrock Edition version 1.19.20 or later?
 1. If the `demo:die` doesn't appear in the game - is your behavior pack formatted correctly?
 1. If your textures don't load correctly - Do your textures and **texture_terrain.json** file match the **custom_block_resource_pack** samples?

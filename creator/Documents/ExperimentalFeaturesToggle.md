@@ -23,19 +23,19 @@ There are two sets of experimental features available, depending on whether you 
 
 ### Retail
 
-These are the currently available Experimental toggles in the **1.20.81** retail build at the time of this writing.
+These are the currently available Experimental toggles in the **1.21.0** retail build at the time of this writing.
 
 GAMEPLAY - Change the way your world works
 
 | Experimental Toggle | Description |
 |:------|:------|
 |Villager Trade Rebalancing |Contains updated trades for villages for the purpose of rebalancing|
-|Update 1.21 | New features and content for Minecraft 1.21 |
 
 ADD-ON CREATORS - For creators of game packs and other add-ons
 
 | Experimental Toggle | Description |
 |:------|:------|
+|Holiday Creator Features | Add data-driven block and item technology to customize block shape, rotation, damage and more |
 |Custom Biomes| Create custom biomes and change world generation |
 |Upcoming Creator Features | Includes adjustable fog parameters |
 |Beta APIs| Use "-beta" versions of API modules in add-on packs |
@@ -43,7 +43,7 @@ ADD-ON CREATORS - For creators of game packs and other add-ons
 
 ### Preview
 
-These are the currently available Experimental toggles in the **1.21.10** preview build at the time of this writing.
+These are the currently available Experimental toggles in the **1.21.20.23** preview build at the time of this writing.
 
 GAMEPLAY - Change the way your world works
 
@@ -55,11 +55,11 @@ ADD-ON CREATORS - For creators of game packs and other add-ons
 
 | Experimental Toggle |Features |
 |:------|:------|
-|Holiday Creator Features | Add data-driven block and item technology to customize block shape, rotation, damage and more |
 |Custom Biomes| Create custom biomes and change world generation |
 |Upcoming Creator Features | Includes adjustable fog parameters |
 |Beta APIs| Use "-beta" versions of API modules in add-on packs |
-|Creator Cameras: New Third Person Presets | Contains new third person over the shoulder follow_orbit camera preset |
+|Creator Cameras: New Third Person Presets | Contains new third person over the shoulder follow_orbit camera preset|
+|Creator Cameras: Focus Target Camera | Enables behavior for the existing free camera to target an entity|
 |Render Dragon Features for Creators | Enable the deferred rendering pipeline. Requires a PBR-enables resource pack and compatible hardware.|
 
 ## How do I activate an Experimental Features toggle for my world?
