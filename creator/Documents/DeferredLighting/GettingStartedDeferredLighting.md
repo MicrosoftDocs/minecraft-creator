@@ -18,7 +18,7 @@ Additionally, new properties for describing the atmosphere of your world enable 
 > [!NOTE]
 > Deferred lighting features are experimental. As with all experiments, you may see additions, removals, and changes in functionality in Minecraft versions without significant advanced warning. Check the Minecraft Changelog for details on any changes.
 >
->To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](ExperimentalFeaturesToggle.md).
+>To learn more about Experimental Features, please visit [Experimental Features in Minecraft: Bedrock Edition](../ExperimentalFeaturesToggle.md).
 
 All newly added lighting capabilities are opt-in, and appropriate defaults will be used if any parameters aren't supplied by a resource pack. These properties are also designed to complement and extend the existing Texture Set capabilities found in RTX resource packs (Texture Sets are no longer restricted to RTX-only packs).
 
