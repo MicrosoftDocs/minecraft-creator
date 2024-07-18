@@ -15,6 +15,8 @@ New data-driving capabilities for Color Grading and Tone Mapping are available i
 
 Minecraft's color grading system allows for many degrees of customization of the final image. You can control the saturation, contrast, gain, and offset of pixels per RGB channel. This can be done on a global scale regardless of pixel luminance, or it can be done on a more fine-grained scale with unique sets of parameters for shadows, midtones and highlights. The highlight parameters are applied to the brightest pixels, the shadow parameters applied to the darkest pixels, and the midtone parameters applied to the pixels with luminance close to the average luminance of the scene.
 
+In order to enable highlight and/or shadow grading, you must be sure to set the corresponding `"enabled"` parameter to `true` along with any actual grading parameters for that luminance range; simply specifying a Shadow Max or Highlight Min is not enough. The Minecraft Bedrock Editor is a great way to see the effects of these parameters in real-time.
+
 For convenience, when data-driving, midtones will be applied to all pixels unless highlights or shadows are specified. Think of midtones as your global settings, whereas highlights and shadows further refine the bright or dark regions of the image.
 
 - **Saturation** - Determines the hue intensity of colors. A value of `1.0` results in no change in saturation to the original image. A value of `0.0` results in a grayscale image. Values `> 1.0` will increase the purity of colors.
@@ -73,6 +75,7 @@ Color grading configurations are JSON files located in the "color_grading" direc
       }
       object "highlights" : opt // Optional color grading parameters for highlights.
       {
+        bool "enabled" <true | false>
         float "highlightsMin" <1.0 - 4.0> : opt
         float[3] "contrast" <0.0-4.0> : opt
         float[3] "gain" <0.0-10.0> : opt
@@ -82,6 +85,7 @@ Color grading configurations are JSON files located in the "color_grading" direc
       }
       object "shadows" : opt // Optional color grading parameters for shadows.
       {
+        bool "enabled" <true | false>
         float "shadowsMax" <0.1 - 1.0> : opt
         float[3] "contrast" <0.0-4.0> : opt
         float[3] "gain" <0.0-10.0> : opt
