@@ -87,13 +87,17 @@
         - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
           href: Documents/DifferencesBetweenBedrockAndJava.md
         - name: "More Sources of Info"
-          href: Documents/MoreInfoSources.md          
+          href: Documents/MoreInfoSources.md
         - name: Minecraft File Extensions
           href: Documents/MinecraftFileExtensions.md
         - name: Add-on Pack Contents
           href: Documents/ComprehensivePackContents.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
+        - name: Deferred Lighting
+          items:  
+          - name: Deferred Lighting
+            href: Documents/DeferredLighting/index.yml
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
@@ -110,8 +114,6 @@
           items:
           - name: Designing Gameplay for Various Devices
             href: Documents/DesigningGameplayForVariousDevices.md
-          - name: Getting Started with Deferred Lighting
-            href: Documents/DeferredLighting.md
           - name: World Templates and Base Game Versioning
             href: Documents/BaseGameVersioning.md
           - name: Editing NBTs Safely
