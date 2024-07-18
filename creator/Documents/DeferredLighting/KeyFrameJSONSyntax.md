@@ -47,6 +47,9 @@ Take this example of a **lighting/global.json** file:
         "items": { 
             "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
         }
+    },
+    "emissive": {
+        "desaturation": 0.1
     }
 } 
 ```
@@ -99,6 +102,9 @@ With all of this in mind, we can adjust our lighting/global.json slightly to alt
         "items": { 
             "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
         }
+    },
+    "emissive": {
+        "desaturation": 0.1
     }
 }
 ```
