@@ -186,7 +186,7 @@
           href: Documents/AddCustomSounds.md
         - name: "Create a Skin Pack"
           href: Documents/SkinPack.md
-    - name: Worlds
+    - name: Worlds and Cameras
       items:
         - name: Survival Spawn Creation
           href: Documents/SurvivalSpawnCreation.md
@@ -202,12 +202,18 @@
           href: Documents/IntroductionToStructureBlocks.md
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
-        - name: Free Camera Preset Tutorial
-          href: Documents/CameraTutorialFreeCameraPreset.md
         - name: Data-Driven Overworld Height and Void Generation
           href: Documents/DataDrivenOverworldHeight.md
         - name: Fog in Resource Packs
           href: Documents/FogInResourcePacks.md
+        - name: Cameras
+          items:  
+          - name: Free Camera Preset Tutorial
+            href: Documents/CameraTutorialFreeCameraPreset.md
+          - name: The Camera Command
+            href: Documents/CameraCommandIntroduction.md
+          - name: Camera Script APIs
+            href: ScriptAPI/minecraft/server/Camera.md
     - name: Entities and Particles
       items:
         - name: Creating New Entity Types
