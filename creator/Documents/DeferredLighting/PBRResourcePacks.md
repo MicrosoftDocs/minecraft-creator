@@ -13,7 +13,8 @@ The Deferred Lighting Pipeline uses the same rules for PBR texture sets used for
 
 For Height Map values, the new pipeline supports both Height Map and Normal inputs. In the Deferred Lighting mode, however, you are now able to set PBR textures for entities and mobs in addition to blocks. They follow the exact same Texture Set rules and can be added similarly to the textures/entity folder within your resource pack. In the Deferred Lighting mode, PBR textures via Texture Sets are supported for blocks, entities, particles and items! They follow the exact same Texture Set rules as blocks and can be added similarly to either the "textures/entity" or "textures/particle" or "textures/items" folder within your resource pack.
 
-Deferred Lighting also supports a new Texture Set property that describes a surface's Sub Surface Scattering properties in addition to Metalness, Emissive and Roughness. See the dedicated [Sub Surface Scattering]() page or the updated [Texture Sets documentation](../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md) for more details.
+Deferred Lighting also supports a new Texture Set property that describes a surface's Sub Surface Scattering properties in addition to Metalness, Emissive and Roughness. See the dedicated [Sub Surface Scattering](SubSurfaceScatteringCustomization.md
+) page or the updated [Texture Sets documentation](../../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md) for more details.
 
 The key thing that communicates to the game client that a resource pack is capable of Deferred Lighting is the presence of a certain string(s) in the capabilities array in your pack's **manifest.json**.
 
