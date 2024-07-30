@@ -36,7 +36,8 @@ s = TextureSet _subsurface
 
 Higher sub-surface values will increase the effect, allowing more light to penetrate the surface of a given object more and more, while a value of 0 will have no sub-surface effect.  The effect is calibrated to allow a maximum penetration depth of roughly 1 block.
 
-The [Texture Sets documentation](../Reference/Content/TextureSetsReference/TextureSetsConcepts/TextureSetsIntroduction.md) has updated guidance.
+The [Texture Sets documentation](../Reference/Content/TextureSetsReference/TextureSetsIntroduction.md) has updated guidance.
+
 ## Continue Reading about Deferred Lighting:
 
 - [Deferred Lighting](GettingStartedDeferredLighting.md)
