@@ -13,10 +13,13 @@ Minecraft Bedrock 1.21.30 Previews add a new capability to Texture Sets for the 
 
 Below is a comparison of a forest scene with no sub surface scattering vs full sub surface scattering applied to all leaves.
 
-TODO: can we do that image comparison thing here that you cooked up a while back, please?
-![Image showing a forest in Minecraft with no Sub Surface Scattering enabled](Media/sub_surface_scattering_off.png)
+# [Sub Surface Scattering OFF](#tab/Sub Surface Scattering OFF)
 
-![Image showing a forest in Minecraft with Sub Surface Scattering enabled on the tree leaves allowing sunlight to penetrate through the canopy](Media/sub_surface_scattering_on.png)
+[Image showing a forest in Minecraft with NO Sub Surface Scattering enabled](Media/sub_surface_scattering_off.png)
+
+# [Sub Surface Scattering ON](#tab/Sub Surface Scattering ON)
+
+[Image showing a forest in Minecraft with Sub Surface Scattering enabled on the tree leaves allowing sunlight to penetrate through the canopy](Media/sub_surface_scattering_on.png)
 
 This effect can be controlled via Texture Sets, much like how metalness, emissive and roughness are controlled.  Note that metalness and sub-surface cannot be used in conjunction with each other for the same pixel in a texture or uniform value.  That is, only non-metals can exhibit sub-surface scattering effects.  If non-zero values are provided for both metalness and sub-surface, then the larger value will win and the other will be ignored.  In the event of a tie, subsurface will take precedence.
 
