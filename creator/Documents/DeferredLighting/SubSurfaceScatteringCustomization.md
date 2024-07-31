@@ -17,11 +17,11 @@ Below is a comparison of a forest scene with no sub surface scattering vs full s
 
 # [Sub Surface Scattering OFF](#tab/SubSurfaceScatteringOFF)
 
-[Image showing a forest in Minecraft with NO Sub Surface Scattering enabled](Media/sub_surface_scattering_off.png)
+![Image showing a forest in Minecraft with NO Sub Surface Scattering enabled](Media/sub_surface_scattering_off.png)
 
 # [Sub Surface Scattering ON](#tab/SubSurfaceScatteringON)
 
-[Image showing a forest in Minecraft with Sub Surface Scattering enabled on the tree leaves allowing sunlight to penetrate through the canopy](Media/sub_surface_scattering_on.png)
+![Image showing a forest in Minecraft with Sub Surface Scattering enabled on the tree leaves allowing sunlight to penetrate through the canopy](Media/sub_surface_scattering_on.png)
 
 ---
 
