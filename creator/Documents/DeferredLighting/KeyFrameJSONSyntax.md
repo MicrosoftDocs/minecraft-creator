@@ -36,16 +36,16 @@ Take this example of a **lighting/global.json** file:
     },
     "pbr": { 
         "blocks": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         },
         "actors": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         },
         "particles": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         },
         "items": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         }
     }
 } 
@@ -88,16 +88,16 @@ With all of this in mind, we can adjust our lighting/global.json slightly to alt
     },
     "pbr": { 
         "blocks": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]
         }, 
         "actors": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         },
         "particles": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         },
         "items": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         }
     }
 }
@@ -108,7 +108,7 @@ Key frames currently support floats and colors (both RGB and hexadecimal) and th
 
 The following diagram can be used to reference key times of the day:
 
-![Image showing the times of day as numerical values. Noon = 0.0, Sunset = 0.25, Midnight = 0.5, Sunrise = 0.75](Media/key_frame_times_of_day.png)## Key Frame JSON Syntax
+![Image showing the times of day as numerical values. Noon = 0.0, Sunset = 0.25, Midnight = 0.5, Sunrise = 0.75](Media/key_frame_times_of_day.png)
 
 ## Continue Reading about Deferred Lighting:
 

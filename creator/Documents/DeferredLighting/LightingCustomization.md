@@ -47,11 +47,9 @@ Color values can be described either as an array of 3 numerical values from the 
 
 ### PBR Uniforms
 
-The `"pbr"` object is meant to complement the larger Texture Set functionality by acting as a default or fallback value when texture set detail isn't provided for particular blocks, entities, particles, or items. For example, if you provide texture sets for pigs and creepers, but no other actors, then, when a cow is rendered in game, the `"global_metalness_emissive_roughness"` value defined in **global.json** will be applied uniformly across the entire surface of the cow. 
+The `"pbr"` object is meant to complement the larger Texture Set functionality by acting as a default or fallback value when texture set detail isn't provided for particular blocks, entities, particles, or items. For example, if you provide texture sets for pigs and creepers, but no other entities, then, when a cow is rendered in game, the `"global_metalness_emissive_roughness_subsurface"` value defined in **global.json** will be applied uniformly across the entire surface of the cow. This allows you to quickly provide a general art direction without having to author textures for every single game object initially, and iteratively add more detail to the blocks/entities as you see fit.
 
-This allows you to quickly provide a general art direction without having to author textures for every single game object initially, and iteratively add more detail to the blocks/actors as you see fit.
-
-Values can either be described as an array of 3 numerical values from the range 0-1 or as a 3 hexadecimal digit string.
+Values can be described either as an array of 4 numerical values from the range 0-1, or as a 4 hexadecimal digit string.
 
 ### Global Lighting JSON Schema
 
@@ -86,19 +84,19 @@ File location: **lighting/global.json**
     {
         object "blocks"
         {
-            color "global_metalness_emissive_roughness" // The default MER value to use for blocks when not defined via textureset; supports RGB array or HEX string
+            color "global_metalness_emissive_roughness_subsurface" // The default MERS value to use for blocks when not defined via textureset; supports RGBA array or HEX string
         },
         object "actors"
         {
-            color "global_metalness_emissive_roughness" // The default MER value to use for actors/mobs when not defined via textureset; supports RGB array or HEX string
+            color "global_metalness_emissive_roughness_subsurface" // The default MERS value to use for actors/mobs when not defined via textureset; supports RGBA array or HEX string
         },
         object "particles"
         {
-            color "global_metalness_emissive_roughness" // The default MER value to use for particles when not defined via textureset; supports RGB array or HEX string
+            color "global_metalness_emissive_roughness_subsurface" // The default MERS value to use for particles when not defined via textureset; supports RGBA array or HEX string
         },
         object "items"
         {
-            color "global_metalness_emissive_roughness" // The default MER value to use for items when not defined via textureset; supports RGB array or HEX string
+            color "global_metalness_emissive_roughness_subsurface" // The default MERS value to use for items when not defined via textureset; supports RGBA array or HEX string
         }
     }
 }
@@ -135,16 +133,16 @@ File location: **lighting/global.json**
     },
     "pbr": { 
         "blocks": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         }, 
         "actors": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         },
         "particles": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         },
         "items": { 
-            "global_metalness_emissive_roughness": [0.0, 0.0, 255.0]  
+            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
         }
     } 
 }
