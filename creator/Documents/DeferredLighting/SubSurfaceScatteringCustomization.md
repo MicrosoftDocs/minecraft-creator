@@ -7,11 +7,11 @@ description: "Subsurface Scattering Customization section of Deferred Lighting i
 ms.service: minecraft-bedrock-edition
 ---
 
-# Sub-Surface Scattering
+# Subsurface Scattering
 
-Minecraft Bedrock 1.21.30 Previews add a capability to Texture Sets for the Deferred Technical Preview: Sub-Surface Scattering. This new feature can be used to simulate the effect that occurs when light is shined on translucent surfaces such as leaves, wax, and skin.
+Minecraft Bedrock 1.21.30 Previews add a capability to Texture Sets for the Deferred Technical Preview: subsurface Scattering. This new feature can be used to simulate the effect that occurs when light is shined on translucent surfaces such as leaves, wax, and skin.
 
-## Compare subsurface Scattering Images
+## Compare Subsurface Scattering Images
 
 This is a comparison of a forest scene with no subsurface scattering vs full subsurface scattering applied to all leaves.
 
