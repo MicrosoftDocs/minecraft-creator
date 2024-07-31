@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 Minecraft supports a Physically Based Rendering (PBR) color pipeline (e.g. used for Ray Tracing). This uses more texture data than just 'color', which enables richer, more realistic visuals. Using PBR, you can have layers for different specular reflections, emissivity, normal maps, and more, which goes beyond the classic color pipeline for Vanilla Minecraft. Texture Sets have been added as the feature for defining multiple PBR layers for a texture resource. Texture Sets are data driven from json files.
 
-## Texture Set JSON Schema – Version 1.16.100
+## Texture Set JSON Schema ï¿½ Version 1.16.100
 
 ```json
 {
@@ -28,7 +28,7 @@ Minecraft supports a Physically Based Rendering (PBR) color pipeline (e.g. used 
 
 ```
 
-## Texture Set JSON Schema – Version 1.21.30
+## Texture Set JSON Schema ï¿½ Version 1.21.30
 
 This new schema version is only applicable to resource packs used in the Deferred Technical Preview at this time. RTX-based resource packs will not make use of the "metalness_emissive_roughness_subsurface" field.
 
@@ -138,7 +138,7 @@ You could also specify values of textures using numerical or hexadecimal values.
 }
 ```
 
-This example makes use of the Sub Surface property in addition to MER.
+This example makes use of the subsurface property in addition to MER.
 
 ```json
 {
@@ -153,7 +153,7 @@ This example makes use of the Sub Surface property in addition to MER.
 
 ## Invalid *.texture_set.json
 
-If a Texture Set is invalid, CONTENT_ERROR will be logged and the Texture Set will not be used.
+If a Texture Set is invalid, `CONTENT_ERROR` will be logged and the Texture Set will not be used.
 
 A Texture Set is invalid if:
 
@@ -174,6 +174,6 @@ A Texture Set is invalid if:
 
 ## Referencing Texture Resources
 
-If you have duplicate image references, the priority of file extensions is: .tga > .png > .jpg > .jpeg.
+If you have duplicate image references, the priority of file extensions is: **.tga > .png > .jpg > .jpeg**
 
-For example: if grass.png and grass.tga both exist in the folder, grass.tga will be chosen. This also applies to other data driven files, like actor json referencing a texture resource.
+For example, if **grass.png** and **grass.tga** both exist in the folder, then **grass.tga** will be chosen. This also applies to other data driven files, like actor json referencing a texture resource.
