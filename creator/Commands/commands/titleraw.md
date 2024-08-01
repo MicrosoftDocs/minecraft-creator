@@ -7,7 +7,7 @@ title: titleraw Command
 description: Description and usage of the titleraw command
 ---
 # `/titleraw` Command
-Controls screen titles with JSON messages.
+Controls the text and behavior for screen titles using JSON messages.
 
 <table>
   <tr>
@@ -24,39 +24,39 @@ Controls screen titles with JSON messages.
 ### Clear raw title
 `/titleraw <player: target> clear`
 
-`Clear` `raw title` for a given `player`.
+`Clear` the raw title for a given `player`.
 
 ### Reset raw title
 `/titleraw <player: target> reset`
 
-`Reset` `raw title` for a given `player`.
+`Reset` the raw subtitle text for a given `player` to blank text and sets the `fadeIn`, `stay`, and `fadeOut` times to their default values.
 
 ### Add raw title
 `/titleraw <player: target> <titleLocation: TitleRawSet> <raw json titleText: json>`
 
-Add a `raw title` for a `player` at a given `location` with a `title message`.
+Add a raw title for a `player` at a given `location` with a `title message`.
 
 ### Add raw title, fade in, fade out
 `/titleraw <player: target> times <fadeIn: int> <stay: int> <fadeOut: int>`
 
-Add a `raw title` for a `player` with set `fade in`, `stay`, `fade out` times.
+Add a raw title for a `player` with set `fadeIn`, `stay`, `fadeOut` times.
 
 ## Arguments
 - `fadeIn`: int
-An `integer` of gameticks for the title to fade in.
+The number of gameticks for the raw title to fade in.
 Default: `0`.
 - `fadeOut`: int
-An `integer` of gameticks for the title to fade out.
+The number of gameticks for the raw title to fade out.
 Default: `0`.
 - `player`: target
 A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.
 - `raw json titleText`: json
-
+A JSON `string` for the raw title text.
 - `stay`: int
-An `integer` of gameticks for the title to stay.
+The number of gameticks for the raw title to stay.
 Default: `0`.
 - `titleLocation`: TitleRawSet
-
+The location where the raw title will display. Uses the `TitleRawSet` Enums `title`, `subtitle`, or `actionbar`.
 
 ## Enums
 ### `TitleRawSet`
@@ -64,8 +64,8 @@ Enum of Title Raw Set
 
 #### Values
 - `title`
-Title
+Displays the raw title text as large text in the center of the screen.
 - `subtitle`
-Subtitle
+Displays the raw title text as smaller text below the `title`.
 - `actionbar`
-Action Bar
+Displays the raw title text just above the player's action bar.

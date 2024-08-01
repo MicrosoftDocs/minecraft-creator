@@ -27,6 +27,8 @@ createGroup(options?: WidgetGroupCreateOptions): WidgetGroup
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *Error*
 
 ### **deleteGroup**
 `
@@ -41,3 +43,5 @@ deleteGroup(groupToDelete: WidgetGroup): void
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *Error*, [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)

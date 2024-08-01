@@ -21,7 +21,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```
 
 ## Available Versions
-- `1.14.0-beta`
+- `1.15.0-beta`
 - `1.11.0`
 - `1.10.0`
 - `1.9.0`

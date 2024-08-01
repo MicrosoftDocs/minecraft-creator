@@ -25,115 +25,120 @@
       "redirect_url": "/minecraft/creator/documents/learningjourneyguide",
       "redirect_document_id": false
     },
-      {
-        "source_path": "Documents/PackagingARandomSeedWorldTemplate.md",
-        "redirect_url": "/minecraft/creator/documents/createaworldtemplate",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "Documents/PackagingAWorldTemplate.md",
-        "redirect_url": "/minecraft/creator/documents/createaworldtemplate",
-        "redirect_document_id": false
-      },
-      {
-          "source_path": "Documents/CustomBlock.md",
-          "redirect_url": "/minecraft/creator/documents/addcustomdieblock",
-          "redirect_document_id": false
-      },
-      {
-        "source_path": "Documents/addonpackinstallation.md",
-        "redirect_url": "/minecraft/creator/documents/gettingstarted",
-        "redirect_document_id": false
+    {
+      "source_path": "Documents/PackagingARandomSeedWorldTemplate.md",
+      "redirect_url": "/minecraft/creator/documents/createaworldtemplate",
+      "redirect_document_id": false
     },
     {
-        "source_path": "minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponents/menu_category_component.md",
-        "redirect_url": "/minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponentList",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_chargeable.md",
-        "redirect_url": "/minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponentList",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "Reference/Content/BlockReference/Examples/BlockComponentsList.md",
-        "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "Reference/Content/BlockReference/Examples/BlockComponents/minecraftblock_unit_cube.md",
-        "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "Reference/Content/BlockReference/Examples/BlockStatesList.md",
-        "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/intrinsicblockstateslist",
-        "redirect_document_id": false
-      },
-      {
-        "source_path": "Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_controller_1.10.0.md",
-        "redirect_url": "/reference/content/schemasreference/schemas/schemaslist",
-        "redirect_document_id": false
-      },
-      {
-          "source_path": "Reference/content/featuresreference/examples/features/minecraftbeards_and_shavers.md",
-          "redirect_url": "/reference/content/featuresreference/features/featurelist",
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "Reference/content/featuresreference/examples/features/minecraftConditional_list.md",
-          "redirect_url": "/reference/content/featuresreference/features/featurelist",
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "Reference/content/featuresreference/examples/features/minecraftRect_layout.md",
-          "redirect_url": "/reference/content/featuresreference/features/featurelist",
-          "redirect_document_id": false
-      },
-      {
-          "source_path": "Reference/content/featuresreference/examples/features/minecraftScan_surface.md",
-          "redirect_url": "/reference/content/featuresreference/features/featurelist",
-          "redirect_document_id": false
-      },
-   {
-          "source_path": "Reference/content/featuresreference/examples/features/minecraftunderwater_cave_carver.md",
-          "redirect_url": "/reference/content/featuresreference/features/minecraftunderwater_cave_carver_feature",
-          "redirect_document_id": false
-      }, 
-    {
-        "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_feeling_happy.md",
-        "redirect_url": "/reference/content/entityreference/examples/aigoallist",
-        "redirect_document_id": false
+      "source_path": "Documents/PackagingAWorldTemplate.md",
+      "redirect_url": "/minecraft/creator/documents/createaworldtemplate",
+      "redirect_document_id": false
     },
     {
-        "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_rising.md",
-        "redirect_url": "/reference/content/entityreference/examples/aigoallist",
-        "redirect_document_id": false
+      "source_path": "Documents/CustomBlock.md",
+      "redirect_url": "/minecraft/creator/documents/addcustomdieblock",
+      "redirect_document_id": false
     },
     {
-        "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_scenting.md",
-        "redirect_url": "/reference/content/entityreference/examples/aigoallist",
-        "redirect_document_id": false
+      "source_path": "Documents/addonpackinstallation.md",
+      "redirect_url": "/minecraft/creator/documents/gettingstarted",
+      "redirect_document_id": false
     },
     {
-        "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_on_use.md",
-        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
-        "redirect_document_id": false
+      "source_path": "Documents/DeferredLighting.md",
+      "redirect_url": "/minecraft/creator/documents/deferredlighting/gettingstarteddeferredlighting",
+      "redirect_document_id": false
     },
     {
-        "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_on_use_on.md",
-        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
-        "redirect_document_id": false
+      "source_path": "minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponents/menu_category_component.md",
+      "redirect_url": "/minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponentList",
+      "redirect_document_id": false
     },
     {
-        "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_render_offsets.md",
-        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
-        "redirect_document_id": false
+      "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_chargeable.md",
+      "redirect_url": "/minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponentList",
+      "redirect_document_id": false
     },
     {
-        "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_weapon.md",
-        "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
-        "redirect_document_id": false
+      "source_path": "Reference/Content/BlockReference/Examples/BlockComponentsList.md",
+      "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/BlockReference/Examples/BlockComponents/minecraftblock_unit_cube.md",
+      "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/BlockReference/Examples/BlockStatesList.md",
+      "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/intrinsicblockstateslist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_controller_1.10.0.md",
+      "redirect_url": "/reference/content/schemasreference/schemas/schemaslist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/content/featuresreference/examples/features/minecraftbeards_and_shavers.md",
+      "redirect_url": "/reference/content/featuresreference/features/featurelist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/content/featuresreference/examples/features/minecraftConditional_list.md",
+      "redirect_url": "/reference/content/featuresreference/features/featurelist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/content/featuresreference/examples/features/minecraftRect_layout.md",
+      "redirect_url": "/reference/content/featuresreference/features/featurelist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/content/featuresreference/examples/features/minecraftScan_surface.md",
+      "redirect_url": "/reference/content/featuresreference/features/featurelist",
+      "redirect_document_id": false
+    },
+    { 
+      "source_path": "Reference/content/featuresreference/examples/features/minecraftunderwater_cave_carver.md",
+      "redirect_url": "/reference/content/featuresreference/features/minecraftunderwater_cave_carver_feature",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_feeling_happy.md",
+      "redirect_url": "/reference/content/entityreference/examples/aigoallist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_rising.md",
+      "redirect_url": "/reference/content/entityreference/examples/aigoallist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_scenting.md",
+      "redirect_url": "/reference/content/entityreference/examples/aigoallist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_on_use.md",
+      "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_on_use_on.md",
+      "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_render_offsets.md",
+      "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_weapon.md",
+      "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
+      "redirect_document_id": false
     }
-    ]
+  ]
 }

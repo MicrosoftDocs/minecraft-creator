@@ -14,3 +14,13 @@ description: Contents of the @minecraft/server-editor.WidgetGroupCreateOptions c
 `groupSelectionMode?: WidgetGroupSelectionMode;`
 
 Type: [*WidgetGroupSelectionMode*](WidgetGroupSelectionMode.md)
+
+### **showBounds**
+`showBounds?: boolean;`
+
+Type: *boolean*
+
+### **visible**
+`visible?: boolean;`
+
+Type: *boolean*

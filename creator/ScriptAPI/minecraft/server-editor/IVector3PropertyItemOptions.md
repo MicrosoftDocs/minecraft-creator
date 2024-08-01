@@ -22,6 +22,13 @@ If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
+### **isInteger**
+`isInteger: boolean;`
+
+If we should treat the Vector3 properties as integer values. By default is false.
+
+Type: *boolean*
+
 ### **max**
 `max: Partial<Vector3>;`
 

@@ -12,6 +12,14 @@ Validates min/max limits of observable objects that support Vector3
 
 ## Properties
 
+### **_isInteger**
+`_isInteger: boolean;`
+
+Type: *boolean*
+  
+> [!IMPORTANT]
+> This property can't be edited in read-only mode.
+
 ### **_max**
 `_max: Partial<Vector3>;`
 
@@ -35,7 +43,7 @@ Type: *Partial<Vector3>*
 
 ### **constructor**
 `
-new Vector3LimitObservableValidator(min: Partial<Vector3>, max: Partial<Vector3>)
+new Vector3LimitObservableValidator(min: Partial<Vector3>, max: Partial<Vector3>, isInteger: boolean)
 `
 
 Constructs a new instance of the `Vector3LimitObservableValidator` class
@@ -43,6 +51,7 @@ Constructs a new instance of the `Vector3LimitObservableValidator` class
 #### **Parameters**
 - **min**: *Partial<Vector3>*
 - **max**: *Partial<Vector3>*
+- **isInteger**: *boolean*
 
 **Returns** *Vector3LimitObservableValidator*
 

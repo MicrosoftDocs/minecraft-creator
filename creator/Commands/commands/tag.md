@@ -33,11 +33,11 @@ List all `tags` on a given `entity`.
 
 ## Arguments
 - `action`: TagChangeAction
-
+Change the `tags` on an `entity` using the `TagChangeAction` Enums.
 - `entity`: targets
 The command's target.
 - `name`: TagValues
-
+The `tag` name.
 
 ## Enums
 ### `TagChangeAction`
@@ -45,6 +45,6 @@ Enum of Tag Change Actions
 
 #### Values
 - `add`
-Add
+Add a `tag` to an `entity`.
 - `remove`
-Remove
+Remove a `tag` from an entity.

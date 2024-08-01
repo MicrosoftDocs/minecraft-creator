@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server-editor.IPropertyItemOptionsColorPicker Interface
-description: Contents of the @minecraft/server-editor.IPropertyItemOptionsColorPicker class.
+title: minecraft/server-editor.IPropertyItemOptionsColorPicker_deprecated Interface
+description: Contents of the @minecraft/server-editor.IPropertyItemOptionsColorPicker_deprecated class.
 ---
-# IPropertyItemOptionsColorPicker Interface
+# IPropertyItemOptionsColorPicker_deprecated Interface
 
 ## Extends
 - *IPropertyItemOptions*
@@ -19,6 +19,6 @@ description: Contents of the @minecraft/server-editor.IPropertyItemOptionsColorP
 Type: *boolean*
 
 ### **variant**
-`variant: ColorPickerVariant;`
+`variant: ColorPickerPropertyItemVariant;`
 
-Type: *ColorPickerVariant*
+Type: *ColorPickerPropertyItemVariant*
