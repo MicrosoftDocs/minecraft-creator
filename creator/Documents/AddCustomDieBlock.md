@@ -335,7 +335,7 @@ The following are suggested settings for a test world, but feel free to tweak th
 1. Have you created a world with cheats enabled?
 1. Are you using Minecraft: Bedrock Edition version 1.19.20 or later?
 1. If the `demo:die` doesn't appear in the game - is your behavior pack formatted correctly?
-1. If your textures don't load correctly - Do your textures and **texture_terrain.json** file match the **custom_block_resource_pack** samples?
+1. If your textures don't load correctly - Do your textures and **terrain_texture.json** file match the **custom_block_resource_pack** samples?
 
 Now place your block anywhere you'd like. The die is red in hand and in the hotbar because of the **carried_textures** using the red die block. The sides will look like a colorful die when the block is placed, and walking on the block will use the **stone** sound.
 
