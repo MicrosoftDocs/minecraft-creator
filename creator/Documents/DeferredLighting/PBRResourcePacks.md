@@ -45,57 +45,6 @@ Texture Sets are good for defining the surface properties of individual blocks o
 
 ![Image of the file structure for a resource pack with a manifest file, a lighting folder containing global.json and atmospherics.json files, and a textures file containing a "blocks" folder, an "entities" folder, and a textures_list.json file.](Media/RP_file_structure.png)
 
-## Global Lighting JSON Schema
-
-File location: lighting/global.json
-
-```json
-{
-    version "format_version",
-    object "directional_lights"
-    {
-        object "sun"
-        {
-            float "illuminance" : optkeyframe, // How bright the sun is, measured in lux (lx)
-            color "color" : optkeyframe // The RGB color that the sun contributes to direct surface lighting; supports RGB array or HEX string
-        },
-        object "moon"
-        {
-            float "illuminance" : optkeyframe,  // How bright the moon is; measured in lux (lx)
-            color "color" : optkeyframe // The RGB color that the moon contributes to direct surface lighting; supports RGB array or HEX string
-        }
-        float "orbital_offset_degrees" : optkeyframe // The rotational offset of the sun and moon from their standard orbital axis; measured in degrees
-    },
-    object "point_lights"
-    { 
-        "colors": { // List of key-value pairs where the key is a namespace-qualified block name and the value is a color (supports RGB array or HEX string) 
-          string: color, 
-           ... 
-          string: color 
-        } 
-    },
-    object "pbr"
-    {
-        object "blocks"
-        {
-            color "global_metalness_emissive_roughness" // The default MER value to use for blocks when not defined via textureset; supports RGB array or HEX string
-        },
-        object "actors"
-        {
-            color "global_metalness_emissive_roughness" // The default MER value to use for actors/mobs when not defined via textureset; supports RGB array or HEX string
-        },
-        object "particles"
-        {
-            color "global_metalness_emissive_roughness" // The default MER value to use for particles when not defined via textureset; supports RGB array or HEX string
-        },
-        object "items"
-        {
-            color "global_metalness_emissive_roughness" // The default MER value to use for items when not defined via textureset; supports RGB array or HEX string
-        }
-    }
-}
-```
-
 ## Continue Reading about Deferred Lighting:
 
 - [Deferred Lighting](GettingStartedDeferredLighting.md)
