@@ -94,10 +94,28 @@
           href: Documents/ComprehensivePackContents.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
-        - name: Deferred Lighting
+        - name: "Advanced Rendering: Deferred Lighting" 
           items:  
-          - name: Deferred Lighting
+          - name: Deferred Lighting Topics
             href: Documents/DeferredLighting/index.yml
+          - name: Getting Started with Deferred Lighting
+            href: Documents/DeferredLighting/GettingStartedDeferredLighting.md
+          - name: PBR Resource Packs
+            href: Documents/DeferredLighting/PBRResourcePacks.md
+          - name: Enabling Deferred Technical Preview in Your World
+            href: Documents/DeferredLighting/EnablingDeferredTechnicalPreview.md
+          - name: Lighting Customization
+            href: Documents/DeferredLighting/LightingCustomization.md
+          - name: Atmospherics Customization
+            href: Documents/DeferredLighting/AtmosphericsCustomization.md
+          - name: Volumetric Fog and Light Shafts Customization
+            href: Documents/DeferredLighting/VolumetricFogLightShaftsCustomization.md
+          - name: Reflections Customization
+            href: Documents/DeferredLighting/ReflectionsCustomization.md
+          - name: Color Grading and Tone Mapping Customization
+            href: Documents/DeferredLighting/ColorGradingToneMappingCustomization.md
+          - name: Key Frame JSON Syntax
+            href: Documents/DeferredLighting/KeyFrameJSONSyntax.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
