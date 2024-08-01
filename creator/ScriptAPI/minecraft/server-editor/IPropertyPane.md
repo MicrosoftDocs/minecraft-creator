@@ -63,17 +63,20 @@ Type: *number*
 
 ## Methods
 - [addBlockList](#addblocklist)
-- [addBlockPicker](#addblockpicker)
 - [addBool](#addbool)
 - [addBool_deprecated](#addbool_deprecated)
 - [addButton](#addbutton)
 - [addColorPicker](#addcolorpicker)
+- [addColorPicker_deprecated](#addcolorpicker_deprecated)
+- [addComboBox](#addcombobox)
 - [addDivider](#adddivider)
 - [addDropdown](#adddropdown)
-- [addEntityPicker](#addentitypicker)
+- [addDropdown_deprecated](#adddropdown_deprecated)
 - [addImage](#addimage)
 - [addNumber](#addnumber)
+- [addNumber_deprecated](#addnumber_deprecated)
 - [addString](#addstring)
+- [addString_deprecated](#addstring_deprecated)
 - [addTable](#addtable)
 - [addText](#addtext)
 - [addVector3](#addvector3)
@@ -100,20 +103,6 @@ Adds a block list to the pane.
 **Returns** *IBlockListPropertyItem<{
         EMPTY: undefined;
     }, 'EMPTY'>*
-
-### **addBlockPicker**
-`
-addBlockPicker(obj: T, property: Prop, options: IPropertyItemOptionsDataPicker): IPropertyItem<T, Prop>
-`
-
-Adds a BlockPicker item to the pane.
-
-#### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsDataPicker*
-
-**Returns** *IPropertyItem<T, Prop>*
 
 ### **addBool**
 `
@@ -155,7 +144,20 @@ Adds a button to the pane and binds the specified action to the button activate.
 
 ### **addColorPicker**
 `
-addColorPicker(obj: T, property: Prop, options: IPropertyItemOptionsColorPicker): IPropertyItem<T, Prop>
+addColorPicker(value: IObservableProp<RGBA>, options: IColorPickerPropertyItemOptions): IColorPickerPropertyItem
+`
+
+Adds a color picker item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<RGBA>*
+- **options**: *IColorPickerPropertyItemOptions*
+
+**Returns** *IColorPickerPropertyItem*
+
+### **addColorPicker_deprecated**
+`
+addColorPicker_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsColorPicker_deprecated): IPropertyItem<T, Prop>
 `
 
 Adds a color picker item to the pane.
@@ -163,9 +165,22 @@ Adds a color picker item to the pane.
 #### **Parameters**
 - **obj**: *T*
 - **property**: *Prop*
-- **options**: *IPropertyItemOptionsColorPicker*
+- **options**: *IPropertyItemOptionsColorPicker_deprecated*
 
 **Returns** *IPropertyItem<T, Prop>*
+
+### **addComboBox**
+`
+addComboBox(value: IObservableProp<string>, options: IComboBoxPropertyItemOptions): IComboBoxPropertyItem
+`
+
+Adds a combo box item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<string>*
+- **options**: *IComboBoxPropertyItemOptions*
+
+**Returns** *IComboBoxPropertyItem*
 
 ### **addDivider**
 `
@@ -178,7 +193,20 @@ Adds an divider item to the pane.
 
 ### **addDropdown**
 `
-addDropdown(obj: T, property: Prop, options: IPropertyItemOptionsDropdown): IDropdownPropertyItem<T, Prop>
+addDropdown(value: IObservableProp<number>, options: IDropdownPropertyItemOptions): IDropdownPropertyItem
+`
+
+Adds an Dropdown item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<number>*
+- **options**: *IDropdownPropertyItemOptions*
+
+**Returns** *IDropdownPropertyItem*
+
+### **addDropdown_deprecated**
+`
+addDropdown_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsDropdown): IDropdownPropertyItem_deprecated<T, Prop>
 `
 
 Adds an DropDown item to the pane.
@@ -188,21 +216,7 @@ Adds an DropDown item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsDropdown*
 
-**Returns** *IDropdownPropertyItem<T, Prop>*
-
-### **addEntityPicker**
-`
-addEntityPicker(obj: T, property: Prop, options: IPropertyItemOptionsDataPicker): IPropertyItem<T, Prop>
-`
-
-Adds an EntityPicker item to the pane.
-
-#### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsDataPicker*
-
-**Returns** *IPropertyItem<T, Prop>*
+**Returns** *IDropdownPropertyItem_deprecated<T, Prop>*
 
 ### **addImage**
 `
@@ -219,7 +233,20 @@ Adds an image item to the pane.
 
 ### **addNumber**
 `
-addNumber(obj: T, property: Prop, options: IPropertyItemOptionsNumber): IPropertyItem<T, Prop>
+addNumber(value: IObservableProp<number>, options: INumberPropertyItemOptions): INumberPropertyItem
+`
+
+Adds a number item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<number>*
+- **options**: *INumberPropertyItemOptions*
+
+**Returns** *INumberPropertyItem*
+
+### **addNumber_deprecated**
+`
+addNumber_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsNumber): IPropertyItem<T, Prop>
 `
 
 Adds a number item to the pane.
@@ -233,7 +260,18 @@ Adds a number item to the pane.
 
 ### **addString**
 `
-addString(obj: T, property: Prop, options: IPropertyItemOptions): IPropertyItem<T, Prop>
+addString(value: IObservableProp<string>, options: IStringPropertyItemOptions): IStringPropertyItem
+`
+
+#### **Parameters**
+- **value**: *IObservableProp<string>*
+- **options**: *IStringPropertyItemOptions*
+
+**Returns** *IStringPropertyItem*
+
+### **addString_deprecated**
+`
+addString_deprecated(obj: T, property: Prop, options: IPropertyItemOptions): IPropertyItem<T, Prop>
 `
 
 Adds a string item to the pane

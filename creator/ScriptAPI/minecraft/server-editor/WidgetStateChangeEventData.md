@@ -15,13 +15,18 @@ description: Contents of the @minecraft/server-editor.WidgetStateChangeEventData
 
 Type: [*WidgetGroup*](WidgetGroup.md)
 
-### **isSelected**
-`read-only isSelected?: boolean;`
+### **location**
+`read-only location?: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+### **selected**
+`read-only selected?: boolean;`
 
 Type: *boolean*
 
-### **isVisible**
-`read-only isVisible?: boolean;`
+### **visible**
+`read-only visible?: boolean;`
 
 Type: *boolean*
 

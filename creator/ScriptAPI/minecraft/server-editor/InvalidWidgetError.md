@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server-editor.LineWidget Class
-description: Contents of the @minecraft/server-editor.LineWidget class.
+title: .InvalidWidgetError Class
+description: Contents of the .InvalidWidgetError class.
 ---
-# LineWidget Class
+# InvalidWidgetError Class
 
 ## Extends
-- [*Widget*](Widget.md)
+- *Error*

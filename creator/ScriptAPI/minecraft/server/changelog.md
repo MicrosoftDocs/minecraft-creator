@@ -9,7 +9,7 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [1.14.0-beta](#1140-beta)
+- [1.15.0-beta](#1150-beta)
 - [1.11.0](#1110)
 - [1.10.0](#1100)
 - [1.9.0](#190)
@@ -23,7 +23,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.14.0-beta
+## 1.15.0-beta
 #### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
@@ -151,6 +151,13 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerInputPermissionCategoryChangeAfterEvent`](PlayerInputPermissionCategoryChangeAfterEvent.md)*
 #### Added *[`PlayerInputPermissionCategoryChangeAfterEventSignal`](PlayerInputPermissionCategoryChangeAfterEventSignal.md)*
 #### Added *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
+#### Changed *[`PlayerInteractWithBlockAfterEvent`](PlayerInteractWithBlockAfterEvent.md)*
+- Added property *[`beforeItemStack`](PlayerInteractWithBlockAfterEvent.md#beforeitemstack)*
+- Added property *[`isFirstEvent`](PlayerInteractWithBlockAfterEvent.md#isfirstevent)*
+#### Changed *[`PlayerInteractWithBlockBeforeEvent`](PlayerInteractWithBlockBeforeEvent.md)*
+- Added property *[`isFirstEvent`](PlayerInteractWithBlockBeforeEvent.md#isfirstevent)*
+#### Changed *[`PlayerInteractWithEntityAfterEvent`](PlayerInteractWithEntityAfterEvent.md)*
+- Added property *[`beforeItemStack`](PlayerInteractWithEntityAfterEvent.md#beforeitemstack)*
 #### Added *[`PlayerIterator`](PlayerIterator.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*

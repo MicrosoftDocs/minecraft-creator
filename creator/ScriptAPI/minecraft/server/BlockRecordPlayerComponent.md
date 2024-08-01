@@ -30,6 +30,8 @@ Represents a block that can play a record.
 ejectRecord(): void
 `
 
+Ejects the currently set record of this record-playing block.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -40,6 +42,8 @@ ejectRecord(): void
 `
 getRecord(): ItemStack | undefined
 `
+
+Gets the currently set record of this record-playing block.
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined*
 
@@ -63,6 +67,8 @@ Returns true if the record-playing block is currently playing a record.
 pauseRecord(): void
 `
 
+Pauses the currently playing record of this record-playing block.
+
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -73,6 +79,8 @@ pauseRecord(): void
 `
 playRecord(): void
 `
+
+Plays the currently set record of this record-playing block.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

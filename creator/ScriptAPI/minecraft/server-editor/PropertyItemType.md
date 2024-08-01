@@ -13,14 +13,14 @@ Type of item that can be added to the property pane
 ## Constants
 ### **BlockList**
 `BlockList = editorUI:BlockList`
-### **BlockPicker**
-`BlockPicker = editorUI:BlockPicker`
 ### **Boolean**
 `Boolean = editorUI:Boolean`
 ### **Button**
 `Button = editorUI:Button`
 ### **ColorPicker**
 `ColorPicker = editorUI:ColorPicker`
+### **ComboBox**
+`ComboBox = editorUI:ComboBox`
 ### **Divider**
 `Divider = editorUI:Divider`
 ### **Dropdown**

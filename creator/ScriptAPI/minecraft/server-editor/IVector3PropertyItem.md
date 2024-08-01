@@ -23,7 +23,37 @@ Current value of the property item.
 Type: *Readonly<Vector3>*
 
 ## Methods
+- [setTitle](#settitle)
+- [setTooltip](#settooltip)
 - [updateAxisLimits](#updateaxislimits)
+
+### **setTitle**
+`
+setTitle(title: LocalizedString | undefined): void
+`
+
+Updates title of the button.
+
+#### **Parameters**
+- **title**: *LocalizedString | undefined*
+  
+  New button title.
+
+**Returns** *void*
+
+### **setTooltip**
+`
+setTooltip(tooltip: LocalizedString | undefined): void
+`
+
+Updates tooltip description of the button.
+
+#### **Parameters**
+- **tooltip**: *LocalizedString | undefined*
+  
+  New button tooltip.
+
+**Returns** *void*
 
 ### **updateAxisLimits**
 `

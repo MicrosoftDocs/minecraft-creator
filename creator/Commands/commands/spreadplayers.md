@@ -28,6 +28,8 @@ Spawn players at a particular `x` and `z` rotation with a defined `distance`, `m
 
 ## Arguments
 - `maxHeight`: rotation
+The maximum height that players can spawn.
+Default: `0.0`.
 - `maxRange`: float
 The furthest distance that players can spawn from each other.
 Default: `0.0`.

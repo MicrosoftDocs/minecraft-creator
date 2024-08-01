@@ -36,6 +36,8 @@ Warped Door
 - `bamboo_block`
 - `minecraft:waxed_oxidized_chiseled_copper`
 - `waxed_oxidized_chiseled_copper`
+- `minecraft:end_stone_brick_wall`
+- `end_stone_brick_wall`
 - `minecraft:granite`
 - `granite`
 - `minecraft:blue_stained_glass_pane`
@@ -94,6 +96,8 @@ Beacon
 Red Nether Brick
 - `red_nether_brick`
 Red Nether Brick
+- `minecraft:brick_wall`
+- `brick_wall`
 - `minecraft:cobbled_deepslate_stairs`
 Cobbled Deepslate Stairs
 - `cobbled_deepslate_stairs`
@@ -118,6 +122,8 @@ Glow Frame
 Hanging Roots
 - `hanging_roots`
 Hanging Roots
+- `minecraft:red_sandstone_wall`
+- `red_sandstone_wall`
 - `minecraft:prismarine_bricks_stairs`
 Prismarine Bricks Stairs
 - `prismarine_bricks_stairs`
@@ -550,6 +556,8 @@ Mangrove Planks
 Mangrove Planks
 - `minecraft:red_terracotta`
 - `red_terracotta`
+- `minecraft:diorite_wall`
+- `diorite_wall`
 - `minecraft:dead_fire_coral_block`
 - `dead_fire_coral_block`
 - `minecraft:oxidized_copper_bulb`
@@ -586,6 +594,8 @@ Emerald Block
 Emerald Block
 - `minecraft:suspicious_sand`
 - `suspicious_sand`
+- `minecraft:mossy_cobblestone_wall`
+- `mossy_cobblestone_wall`
 - `minecraft:heavy_weighted_pressure_plate`
 Heavy Weighted Pressure Plate
 - `heavy_weighted_pressure_plate`
@@ -1310,6 +1320,8 @@ Jukebox
 Jukebox
 - `minecraft:stripped_cherry_wood`
 - `stripped_cherry_wood`
+- `minecraft:prismarine_wall`
+- `prismarine_wall`
 - `minecraft:border_block`
 Border Block
 - `border_block`
@@ -1482,10 +1494,14 @@ Chorus Plant
 Mud Brick Stairs
 - `mud_brick_stairs`
 Mud Brick Stairs
+- `minecraft:stone_brick_wall`
+- `stone_brick_wall`
 - `minecraft:smooth_red_sandstone_stairs`
 Smooth Red Sandstone Stairs
 - `smooth_red_sandstone_stairs`
 Smooth Red Sandstone Stairs
+- `minecraft:andesite_wall`
+- `andesite_wall`
 - `minecraft:white_glazed_terracotta`
 White Glazed Terracotta
 - `white_glazed_terracotta`
@@ -1510,6 +1526,8 @@ Acacia Trapdoor
 Glow Lichen
 - `glow_lichen`
 Glow Lichen
+- `minecraft:purpur_pillar`
+- `purpur_pillar`
 - `minecraft:twisting_vines`
 Twisting Vines
 - `twisting_vines`
@@ -1554,6 +1572,8 @@ Soul Soil
 Soul Sand
 - `soul_sand`
 Soul Sand
+- `minecraft:granite_wall`
+- `granite_wall`
 - `minecraft:spruce_hanging_sign`
 - `spruce_hanging_sign`
 - `minecraft:polished_diorite`
@@ -2126,6 +2146,8 @@ Budding Amethyst
 Birch Stairs
 - `birch_stairs`
 Birch Stairs
+- `minecraft:nether_brick_wall`
+- `nether_brick_wall`
 - `minecraft:purple_glazed_terracotta`
 Purple Glazed Terracotta
 - `purple_glazed_terracotta`
@@ -2330,6 +2352,8 @@ Brown Mushroom Block
 Pink Candle
 - `pink_candle`
 Pink Candle
+- `minecraft:red_nether_brick_wall`
+- `red_nether_brick_wall`
 - `minecraft:purple_shulker_box`
 - `purple_shulker_box`
 - `minecraft:carved_pumpkin`
@@ -2586,6 +2610,8 @@ Soul Campfire
 Wooden Pressure Plate
 - `wooden_pressure_plate`
 Wooden Pressure Plate
+- `minecraft:sandstone_wall`
+- `sandstone_wall`
 - `minecraft:birch_fence`
 - `birch_fence`
 - `minecraft:waxed_oxidized_copper_grate`
@@ -2612,6 +2638,8 @@ Cobbled Deepslate Wall
 Weathered Copper
 - `weathered_copper`
 Weathered Copper
+- `minecraft:mossy_stone_brick_wall`
+- `mossy_stone_brick_wall`
 - `minecraft:lime_terracotta`
 - `lime_terracotta`
 - `minecraft:cherry_fence_gate`

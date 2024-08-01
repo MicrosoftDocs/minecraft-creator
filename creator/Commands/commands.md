@@ -10,7 +10,7 @@ description: List and descriptions of Minecraft commands and enums
 |Command   |Description   |Required Permission Level  | Requires Cheats Enabled |
 |----------|-----------|-----------|-----------|
 | [`/allowlist`](./commands/allowlist.md) | Manages the server allowlist. | Owner | Yes |
-| [`/camera`](./commands/camera.md) | Transforms the camera for the selected player to a different perspective. | Game Directors | Yes |
+| [`/camera`](./commands/camera.md) | Transforms the camera for the selected player(s) to a different perspective. | Game Directors | Yes |
 | [`/camerashake`](./commands/camerashake.md) | Applies shaking to the players&#39; camera with specified intensity and duration. Parameters: &#39;stop&#39; or &#39;add&#39; the effect, specify player (target), intensity (float, min 0.0 to max 4.0), seconds(float, min 0.01), and shakeType (positional or rotational). Must have &#x60;Allow Camera Shake&#x60; option turned on in user settings. | Game Directors | Yes |
 | [`/changesetting`](./commands/changesetting.md) | Changes a setting on the dedicated server while it&#39;s running. | Owner | Yes |
 | [`/clear`](./commands/clear.md) | Clears items from player inventory. | Game Directors | Yes |
@@ -60,6 +60,7 @@ description: List and descriptions of Minecraft commands and enums
 | [`/scoreboard`](./commands/scoreboard.md) | Tracks and displays scores for various objectives. See more information about its use in the [Scoreboards Objectives Commands documentation](&#x2F;creator&#x2F;documents&#x2F;scoreboardintroduction#scoreboard-objectives-commands) page. | Game Directors | Yes |
 | [`/script`](./commands/script.md) | Debugging options for script within Minecraft. | Admin | Yes |
 | [`/scriptevent`](./commands/scriptevent.md) | Causes an event to fire within script with the specified message ID and payload. This can be used to connect scripting with any location where commands are used. | Game Directors | Yes |
+| [`/sendshowstoreoffer`](./commands/sendshowstoreoffer.md) | Available on dedicated server only with administrator permissions. Specifies that a marketplace page should be opened up. | Owner | Yes |
 | [`/setblock`](./commands/setblock.md) | Changes a block to another block. | Game Directors | Yes |
 | [`/setmaxplayers`](./commands/setmaxplayers.md) | Sets the maximum number of players for this game session. | Host | Yes |
 | [`/setworldspawn`](./commands/setworldspawn.md) | Sets the location where new players or players who die will spawn in the world. | Game Directors | Yes |
@@ -78,8 +79,8 @@ description: List and descriptions of Minecraft commands and enums
 | [`/testforblocks`](./commands/testforblocks.md) | Tests whether the blocks in two regions match. | Game Directors | Yes |
 | [`/tickingarea`](./commands/tickingarea.md) | Add, remove, or list ticking areas. See more information in the [Ticking Area documentation](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;tickingareacommand). | Game Directors | Yes |
 | [`/time`](./commands/time.md) | Changes or queries the world&#39;s game time. See more in the [Popular Commands documentation](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandspopularcommands#time). | Game Directors | Yes |
-| [`/title`](./commands/title.md) | Controls screen titles. | Game Directors | Yes |
-| [`/titleraw`](./commands/titleraw.md) | Controls screen titles with JSON messages. | Game Directors | Yes |
+| [`/title`](./commands/title.md) | Controls the text and behavior for screen titles using plain text. | Game Directors | Yes |
+| [`/titleraw`](./commands/titleraw.md) | Controls the text and behavior for screen titles using JSON messages. | Game Directors | Yes |
 | [`/toggledownfall`](./commands/toggledownfall.md) | Toggles the weather. | Game Directors | Yes |
 | [`/transfer`](./commands/transfer.md) | Transfers a player to another server. | Owner | Yes |
 | [`/weather`](./commands/weather.md) | Sets the weather in the environment. See more in the [Popular Commands documentation](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandspopularcommands#weather). | Game Directors | Yes |
@@ -90,7 +91,7 @@ description: List and descriptions of Minecraft commands and enums
 |Type   |Description   |Is Enum?   |
 |----------|-----------|-----------|
 | block properties |  |   |
-| command | A command |   |
+| codebuilderargs |  |   |
 | compareoperator |  |   |
 | executechainedoption_0 |  |   |
 | filepath | A &#x60;filepath&#x60; of this format: &#x60;&#x2F;path&#x2F;to&#x2F;file&#x60;. |   |
