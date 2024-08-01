@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ColorPickerVariant Enumeration
-description: Contents of the .ColorPickerVariant enumeration.
+title: .ColorPickerPropertyItemVariant Enumeration
+description: Contents of the .ColorPickerPropertyItemVariant enumeration.
 ---
-# ColorPickerVariant Enumeration
+# ColorPickerPropertyItemVariant Enumeration
 
 The possible variants of a color picker.
 

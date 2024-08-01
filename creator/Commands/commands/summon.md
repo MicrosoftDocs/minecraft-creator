@@ -45,6 +45,6 @@ A `string` of the in-game event for the entity.
 - `spawnPos: x y z`: position
 A `vector` of `float` numbers for the position of the summoned entity.
 - `xRot`: rotation
-
+The `float` degrees `x` to rotate a player when teleporting.
 - `yRot`: rotation
-
+The `float` degrees `y` to rotate a player when teleporting.

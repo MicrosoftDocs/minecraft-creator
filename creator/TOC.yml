@@ -87,13 +87,35 @@
         - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
           href: Documents/DifferencesBetweenBedrockAndJava.md
         - name: "More Sources of Info"
-          href: Documents/MoreInfoSources.md          
+          href: Documents/MoreInfoSources.md
         - name: Minecraft File Extensions
           href: Documents/MinecraftFileExtensions.md
         - name: Add-on Pack Contents
           href: Documents/ComprehensivePackContents.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
+        - name: "Advanced Rendering: Deferred Lighting" 
+          items:  
+          - name: Deferred Lighting Topics
+            href: Documents/DeferredLighting/index.yml
+          - name: Getting Started with Deferred Lighting
+            href: Documents/DeferredLighting/GettingStartedDeferredLighting.md
+          - name: PBR Resource Packs
+            href: Documents/DeferredLighting/PBRResourcePacks.md
+          - name: Enabling Deferred Technical Preview in Your World
+            href: Documents/DeferredLighting/EnablingDeferredTechnicalPreview.md
+          - name: Lighting Customization
+            href: Documents/DeferredLighting/LightingCustomization.md
+          - name: Atmospherics Customization
+            href: Documents/DeferredLighting/AtmosphericsCustomization.md
+          - name: Volumetric Fog and Light Shafts Customization
+            href: Documents/DeferredLighting/VolumetricFogLightShaftsCustomization.md
+          - name: Reflections Customization
+            href: Documents/DeferredLighting/ReflectionsCustomization.md
+          - name: Color Grading and Tone Mapping Customization
+            href: Documents/DeferredLighting/ColorGradingToneMappingCustomization.md
+          - name: Key Frame JSON Syntax
+            href: Documents/DeferredLighting/KeyFrameJSONSyntax.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
@@ -110,8 +132,6 @@
           items:
           - name: Designing Gameplay for Various Devices
             href: Documents/DesigningGameplayForVariousDevices.md
-          - name: Getting Started with Deferred Lighting
-            href: Documents/DeferredLighting.md
           - name: World Templates and Base Game Versioning
             href: Documents/BaseGameVersioning.md
           - name: Editing NBTs Safely
@@ -184,7 +204,7 @@
           href: Documents/AddCustomSounds.md
         - name: "Create a Skin Pack"
           href: Documents/SkinPack.md
-    - name: Worlds
+    - name: Worlds and Cameras
       items:
         - name: Survival Spawn Creation
           href: Documents/SurvivalSpawnCreation.md
@@ -200,12 +220,18 @@
           href: Documents/IntroductionToStructureBlocks.md
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
-        - name: Free Camera Preset Tutorial
-          href: Documents/CameraTutorialFreeCameraPreset.md
         - name: Data-Driven Overworld Height and Void Generation
           href: Documents/DataDrivenOverworldHeight.md
         - name: Fog in Resource Packs
           href: Documents/FogInResourcePacks.md
+        - name: Cameras
+          items:  
+          - name: Free Camera Preset Tutorial
+            href: Documents/CameraTutorialFreeCameraPreset.md
+          - name: The Camera Command
+            href: Documents/CameraCommandIntroduction.md
+          - name: Camera Script APIs
+            href: ScriptAPI/minecraft/server/Camera.md
     - name: Entities and Particles
       items:
         - name: Creating New Entity Types

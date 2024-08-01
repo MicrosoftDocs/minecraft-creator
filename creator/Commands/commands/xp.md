@@ -24,15 +24,15 @@ Adds or removes player experience.
 ### Add XP
 `/xp <amount: int> [player: target]`
 
-`Add` an `integer` `xp` to a `player`.
+`Add` a given positive `integer` amount of `xp` to the target `player`.
 
 ### Remove XP
 `/xp <amount: int> [player: target]`
 
-`Remove` a given negative `integer` amount of `xp` levels from `player`.
+`Remove` a given negative `integer` amount of `xp` from the target `player`.
 
 ## Arguments
 - `amount`: int
-An `integer` of the experience to add to the player. May be negative to remove xp levels only. 
+An `integer` of the experience to add to the player. May only be negative to remove xp.
 - `player`: target
-A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.
+A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player who should receive or lose xp.

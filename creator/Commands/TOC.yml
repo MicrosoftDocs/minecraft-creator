@@ -102,6 +102,8 @@
   href: commands/script.md
 - name: scriptevent
   href: commands/scriptevent.md
+- name: sendshowstoreoffer
+  href: commands/sendshowstoreoffer.md
 - name: setblock
   href: commands/setblock.md
 - name: setmaxplayers
