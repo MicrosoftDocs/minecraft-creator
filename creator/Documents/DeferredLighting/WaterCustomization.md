@@ -102,14 +102,3 @@ The following example JSON can be used as a starting point for an ocean:
     }
 }
 ```
-
-## Continue Reading about Deferred Lighting:
-
-- [Deferred Lighting](GettingStartedDeferredLighting.md)
-- [PBR Resource Packs](PBRResourcePacks.md)
-- [Enabling Deferred Technical Preview in Your World](EnablingDeferredTechnicalPreview.md)
-- [Lighting Customization](LightingCustomization.md)
-- [Atmospherics Customization](AtmosphericsCustomization.md)
-- [Volumetric Fog and Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
-- [Color Grading and Tone Mapping Customization](ColorGradingToneMappingCustomization.md)
-- [Key Frame JSON Syntax](KeyFrameJSONSyntax.md)

@@ -40,3 +40,7 @@ landingContent:
             url: ColorGradingToneMappingCustomization.md
           - text: Key Frame JSON Syntax
             url: KeyFrameJSONSyntax.md
+          - text: Subsurface Scattering Customization
+            url: SubSurfaceScatteringCustomization.md
+          - text: Water Customization
+            url: WaterCustomization.md
