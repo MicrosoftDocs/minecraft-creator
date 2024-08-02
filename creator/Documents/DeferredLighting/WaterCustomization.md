@@ -27,7 +27,7 @@ Waves are an optional effect that can be used to complement water surface animat
 There are a variety of ways to customize waves to convey different types of water:
 - Depth: Determines how much waves displace the water surface. Larger values will result in deeper waves, whereas smaller values will produce shallower waves.
 - Frequency: Determines how many waves there are per water block. Can also be thought of as the size of the waves. Larger values will create more tightly packed waves, whereas smaller values will spread waves out over a wider area.
-- Frequency Scaling: Specifies how much wave frequency changes between octaves. A value of 1 will result in no change between octaves. Values higher than 1 will cause freqencies to increase while values less than 1 will cause frequencies to decrease.
+- Frequency Scaling: Specifies how much wave frequency changes between octaves. A value of 1 will result in no change between octaves. Values higher than 1 will cause frequencies to increase while values less than 1 will cause frequencies to decrease.
 - Mix: Controls how much each octave is blended into the neighboring octave.
 - Octaves: Determines how many different layers of waves to simulate. Larger values will produce more complex waves.
 - Pull: Controls how much smaller waves are pulled into larger waves. A value of 0 results in no pull. Values larger than 0 will pull waves in a standard concave fashion, whereas values less than 0 will pull waves in a convex fashion, resulting in more pillowing waves as opposed to cresting waves.
