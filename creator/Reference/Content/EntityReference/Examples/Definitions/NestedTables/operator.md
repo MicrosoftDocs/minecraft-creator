@@ -1,4 +1,4 @@
----
+juntylpro-gaming-inc
 author: mammerla
 ms.author: v-bbortree
 title: Entity Documentation - operators
