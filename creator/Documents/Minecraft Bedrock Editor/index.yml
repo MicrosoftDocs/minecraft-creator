@@ -1,0 +1,32 @@
+### YamlMime:Landing
+
+title: Bedrock Editor # < 60 chars
+summary: "Content related to Bedrock Editor." # < 160 chars
+
+metadata:
+  title: Bedrock Editor # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Minecraft's Bedrock Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: minecraft-bedrock-edition
+  ms.topic: landing-page # Required
+  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/31/2024 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Learn About Bedrock Editor
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Editor Overview
+            url: EditorOverview.md
+          - text: Editor Installation
+            url: EditorInstallation.md
+          - text: Editor Tutorial
+            url: EditorTutorial.md
+          - text: Editor Extensions Introduction
+            url: EditorExtensionsIntroduction.md
