@@ -140,14 +140,3 @@ The following example JSON can be used as a starting point:
 
 <a name="ref_reinhard"></a>[3] Reinhard, Erik & Stark, Michael & Shirley, Peter & Ferwerda, James. 2002. Photographic Tone Reproduction for Digital Images. ACM Transactions on Graphics. Vol 21. https://www-old.cs.utah.edu/docs/techreports/2002/pdf/UUCS-02-001.pdf
 
-
-## Continue Reading about Deferred Lighting:
-
-- [Deferred Lighting](GettingStartedDeferredLighting.md)
-- [PBR Resource Packs](PBRResourcePacks.md)
-- [Enabling Deferred Technical Preview in Your World](EnablingDeferredTechnicalPreview.md)
-- [Lighting Customization](LightingCustomization.md)
-- [Atmospherics Customization](AtmosphericsCustomization.md)
-- [Volumetric Fog and Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
-- [Reflections Customization](ReflectionsCustomization.md)
-- [Key Frame JSON Syntax](KeyFrameJSONSyntax.md)

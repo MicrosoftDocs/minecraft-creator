@@ -116,6 +116,10 @@
             href: Documents/DeferredLighting/ColorGradingToneMappingCustomization.md
           - name: Key Frame JSON Syntax
             href: Documents/DeferredLighting/KeyFrameJSONSyntax.md
+          - name: Subsurface Scattering Customization
+            href: Documents/DeferredLighting/SubSurfaceScatteringCustomization.md
+          - name: Water Customization
+            href: Documents/DeferredLighting/WaterCustomization.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack

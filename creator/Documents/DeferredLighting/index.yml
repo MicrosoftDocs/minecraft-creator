@@ -28,6 +28,13 @@ landingContent:
             url: PBRResourcePacks.md
           - text: Enabling Deferred Technical Preview in Your World
             url: EnablingDeferredTechnicalPreview.md
+          - text: Key Frame JSON Syntax
+            url: KeyFrameJSONSyntax.md
+
+  - title: Deferred Lighting Customization
+    linkLists:
+      - linkListType: learn
+        links:
           - text: Lighting Customization
             url: LightingCustomization.md
           - text: Atmospherics Customization
@@ -38,5 +45,7 @@ landingContent:
             url: ReflectionsCustomization.md
           - text: Color Grading and Tone Mapping Customization
             url: ColorGradingToneMappingCustomization.md
-          - text: Key Frame JSON Syntax
-            url: KeyFrameJSONSyntax.md
+          - text: Subsurface Scattering Customization
+            url: SubSurfaceScatteringCustomization.md
+          - text: Water Customization
+            url: WaterCustomization.md

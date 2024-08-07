@@ -45,13 +45,3 @@ Texture Sets are good for defining the surface properties of individual blocks o
 
 ![Image of the file structure for a resource pack with a manifest file, a lighting folder containing global.json and atmospherics.json files, and a textures file containing a "blocks" folder, an "entities" folder, and a textures_list.json file.](Media/RP_file_structure.png)
 
-## Continue Reading about Deferred Lighting:
-
-- [Deferred Lighting](GettingStartedDeferredLighting.md)
-- [Enabling Deferred Technical Preview in Your World](EnablingDeferredTechnicalPreview.md)
-- [Lighting Customization](LightingCustomization.md)
-- [Atmospherics Customization](AtmosphericsCustomization.md)
-- [Volumetric Fog and Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
-- [Reflections Customization](ReflectionsCustomization.md)
-- [Color Grading and Tone Mapping Customization](ColorGradingToneMappingCustomization.md)
-- [Key Frame JSON Syntax](KeyFrameJSONSyntax.md)

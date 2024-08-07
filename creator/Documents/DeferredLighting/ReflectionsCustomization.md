@@ -14,14 +14,3 @@ Minecraft Bedrock **1.21.20.22+** Previews further enhance the reflections avail
 SSR currently provides only mirror-like reflections. In order to preserve the look of rougher materials, the application of SSR begins to fade at roughness values greater than 0.3 (i.e., ~76/255), and SSR is not applied at all for roughness values greater than or equal to 0.4 (i.e., 102/255).
 
 Creators can make use of the Roughness and Metalness parameters in Texture Sets to control how different materials elicit reflections. Default PBR values for blocks, actors and particles defined in the global lighting JSON will also impact this property for blocks/actors/particles with no Texture Set.
-
-## Continue Reading about Deferred Lighting:
-
-- [Deferred Lighting](GettingStartedDeferredLighting.md)
-- [PBR Resource Packs](PBRResourcePacks.md)
-- [Enabling Deferred Technical Preview in Your World](EnablingDeferredTechnicalPreview.md)
-- [Lighting Customization](LightingCustomization.md)
-- [Atmospherics Customization](AtmosphericsCustomization.md)
-- [Volumetric Fog and Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
-- [Color Grading and Tone Mapping Customization](ColorGradingToneMappingCustomization.md)
-- [Key Frame JSON Syntax](KeyFrameJSONSyntax.md)
