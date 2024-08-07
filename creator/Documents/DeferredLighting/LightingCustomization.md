@@ -159,13 +159,3 @@ File location: **lighting/global.json**
 }
 ```
 
-## Continue Reading about Deferred Lighting:
-
-- [Deferred Lighting](GettingStartedDeferredLighting.md)
-- [PBR Resource Packs](PBRResourcePacks.md)
-- [Enabling Deferred Technical Preview in Your World](EnablingDeferredTechnicalPreview.md)
-- [Atmospherics Customization](AtmosphericsCustomization.md)
-- [Volumetric Fog and Light Shafts Customization](VolumetricFogLightShaftsCustomization.md)
-- [Reflections Customization](ReflectionsCustomization.md)
-- [Color Grading and Tone Mapping Customization](ColorGradingToneMappingCustomization.md)
-- [Key Frame JSON Syntax](KeyFrameJSONSyntax.md)
