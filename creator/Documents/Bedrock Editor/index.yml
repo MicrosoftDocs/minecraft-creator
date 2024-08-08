@@ -18,15 +18,44 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Learn About Bedrock Editor
+  - title: Learn about Bedrock Editor
     linkLists:
-      - linkListType: learn
+      - linkListType: overview
         links:
           - text: Editor Overview
             url: EditorOverview.md
-          - text: Editor Installation
+          - text: Tool Mode
+            url: EditorToolMode.md
+          - text: World Options
+            url: EditorWorldOptions.md
+          - text: Action Bar
+            url: EditorActionBar.md
+          - text: Block Picker
+            url: EditorBlockPicker.md
+          - text: Selection Tool
+            url: EditorSelectionTool.md
+          - text: Brush Tool
+            url: EditorBrushTool.md
+          - text: Paste Preview
+            url: EditorPastePreview.md
+          - text: Line Tool
+            url: EditorLineTool.md
+          - text: Summon Tool
+            url: EditorSummonTool.md
+
+  - title: Working with Bedrock Editor
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Installation
             url: EditorInstallation.md
-          - text: Editor Tutorial
+          - text: Keyboard Inputs and Input Mapping
+            url: EditorKeyboardInputs.md
+          - text: Tutorial
             url: EditorTutorial.md
+          - text: Editor Create, Import, Export a World
+            url: EditorWorkflow.md
           - text: Editor Extensions Introduction
             url: EditorExtensionsIntroduction.md
+          - text: Editor and Deferred Lighting
+            url: EditorDeferredLighting.md

@@ -1,6 +1,6 @@
 ---
-author: JDHeaden
-ms.author: v-jillheaden
+author: iconicNurdle
+ms.author: mikeam
 title: Minecraft Bedrock Editor Tutorial
 description: "A step-by-step guide for using Minecraft Editor"
 ms.service: minecraft-bedrock-edition
