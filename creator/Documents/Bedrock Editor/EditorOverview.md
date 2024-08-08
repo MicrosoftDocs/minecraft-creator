@@ -55,13 +55,13 @@ It's recommended that the following be completed before beginning this tutorial.
 
 After you launch the Editor from the shortcut, you get a screen that says "Create New Project."
 
-![Image of the Minecraft Editor starting page](Media/Editor/editor_install_new_project.png)
+![Image of the Minecraft Editor starting page](Media/editor_install_new_project.png)
 
 While you're creating a project, you can configure the name, export settings, and the usual settings for a Minecraft world.
 
 Export settings will apply when you export as a playable world from the Editor (.mcworld).
 
-![Image of the Minecraft Editor configuration page](Media/Editor/editor_overview_project_settings.png)
+![Image of the Minecraft Editor configuration page](Media/editor_overview_project_settings.png)
 
 New projects load with a Welcome/Quick Start screen. If you close it and you want it open again, go to the Help menu and select Quick Start.
 
@@ -71,7 +71,7 @@ Editor looks like your usual Minecraft game with a user interface (UI) on top of
 
 Go to the **File** menu and select **UI Settings**.
 
-![Editor User Interface appearance settings showing UI scale, font, and theme drop-down menus](Media/Editor/editor_overview_ui_settings.png)
+![Editor User Interface appearance settings showing UI scale, font, and theme drop-down menus](Media/editor_overview_ui_settings.png)
 
 >- UI Scale - Makes the menu bar and windows larger or smaller in relation to the project world.
 >- Font - Changes the size of the text in the windows.
@@ -95,7 +95,7 @@ If you do want to close the window, click the X in the corner. Some windows can 
 
 ## Welcome/Quick Start
 
-![Animation of the parts of the Quick Start Welcome screen](Media/Editor/EditorQuickStartMenu.gif)
+![Animation of the parts of the Quick Start Welcome screen](Media/EditorQuickStartMenu.gif)
 
 |Tab  |Content  |
 |:-------|:---------|
@@ -112,11 +112,11 @@ The two modes within Editor are Tool Mode and Crosshair Mode.
 
 **Tool Mode** has multi-block editing tools and the user interface. When you move the mouse without holding any mouse buttons, your cursor is freely available to use the user interface.
 
-![Tool Mode has the user interface with tools](Media/Editor/editor_overview_tool_mode.png)
+![Tool Mode has the user interface with tools](Media/editor_overview_tool_mode.png)
 
 **Crosshair Mode** has more precise, single-block editing capabilities. It also uses the usual Minecraft keybindings you can see on the Settings > Controls > Keyboard & Mouse screen. When you move the mouse, you look around.
 
-![Crosshair mode has no user interface and looks like the Minecraft game](Media/Editor/editor_overview_crosshair_mode.png)
+![Crosshair mode has no user interface and looks like the Minecraft game](Media/editor_overview_crosshair_mode.png)
 
 In a new project, before you touch anything, you are in Tool Mode.
 

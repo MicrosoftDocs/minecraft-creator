@@ -2,7 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Minecraft Bedrock Editor Keyboard Inputs
-description: "An overview of the parts of Minecraft Bedrock Editor"
+description: "An overview of the keyboard input shortcuts in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
 ---
 
@@ -12,12 +12,12 @@ ms.service: minecraft-bedrock-edition
 
 | Action | Keyboard Shortcut | Mode |
 |:----|:----|:----|
-| Forward | `W` (_*Tool: Hold down right mouse button_) | Tool + Crosshair |
-| Left | `A` (_*Tool: Hold down right mouse button_)| Tool + Crosshair |
-| Backward | `S` (_*Tool: Hold down right mouse button_)| Tool + Crosshair |
-| Right | `D` (_*Tool: Hold down right mouse button_)| Tool + Crosshair |
-| Up | `Space` (_*Tool: Hold down right mouse button_)| Tool + Crosshair |
-| Down | `Shift` (_*Tool: Hold down right mouse button_)| Tool + Crosshair |
+| Forward | `W` (*Tool: Hold down right mouse button*) | Tool + Crosshair |
+| Left | `A` (*Tool: Hold down right mouse button*)| Tool + Crosshair |
+| Backward | `S` (*Tool: Hold down right mouse button*)| Tool + Crosshair |
+| Right | `D` (*Tool: Hold down right mouse button*)| Tool + Crosshair |
+| Up | `Space` (*Tool: Hold down right mouse button*)| Tool + Crosshair |
+| Down | `Shift` (*Tool: Hold down right mouse button*)| Tool + Crosshair |
 | Increase speed | Quickly press `W` twice (_*Tool: Hold down right mouse button_)| Tool + Crosshair |
 | Fly toggle | Quickly press `space` twice | Crosshair |
 | Display 3D cursor - baseline for Tool Mode | `Esc` | Tool only |

@@ -2,7 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Minecraft Bedrock Editor World Options
-description: "An overview of the tool mode parts of Minecraft Bedrock Editor"
+description: "An overview of the World Options in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
 ---
 
@@ -20,7 +20,7 @@ ms.service: minecraft-bedrock-edition
 
 Playtest your Editor project as a playable Minecraft world. No changes will be saved to your project. Available only when hosting a single player world.
 
-![Editor selection tool window](Media/Editor/editor_overview_test_world_tool_window.png)
+![Editor selection tool window](Media/editor_overview_test_world_tool_window.png)
 
 ### Game Mode
 

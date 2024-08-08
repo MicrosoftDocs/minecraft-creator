@@ -2,7 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Minecraft Bedrock Editor Action Bar
-description: "An overview of the action bar part of Minecraft Bedrock Editor"
+description: "An overview of the Action Bar part of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
 ---
 
@@ -17,9 +17,12 @@ The Action Bar has quick functions like **undo** and **redo** that affect the th
 | Crosshair Mode| `Ctrl Tab` |
 
 
-
 ////////////////////////////
 Editor – Action bar
 Goals
 •	Move action bar topics here
 •	Show how a user can add things to the right or left action bar
+
+## How to add actions to the Action bar
+
+

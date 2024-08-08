@@ -2,7 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Minecraft Bedrock Editor Selection Tool
-description: "An overview of the action bar part of Minecraft Bedrock Editor"
+description: "An overview of the Selection Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
 ---
 

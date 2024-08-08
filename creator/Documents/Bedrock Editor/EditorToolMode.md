@@ -2,7 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Minecraft Bedrock Editor Tool Mode
-description: "An overview of the tool mode parts of Minecraft Bedrock Editor"
+description: "An overview of the Tool Mode parts of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
 ---
 

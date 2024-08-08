@@ -2,7 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Minecraft Bedrock Editor Block Picker
-description: "An overview of the action bar part of Minecraft Bedrock Editor"
+description: "An overview of the Block Picker in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
 ---
 
