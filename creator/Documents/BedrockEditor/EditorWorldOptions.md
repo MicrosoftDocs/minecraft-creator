@@ -10,17 +10,15 @@ ms.service: minecraft-bedrock-edition
 
 ## World Options
 
-- **Actors** - If you want to pause or unpause actors like mobs.
+- **Pause** - If you want to pause or unpause entities.
 
 - **Change dimension** - You start in the Overworld by default. Go here to change to the Nether or the End.
-
-- **Daylight cycle** - Turn off to set the time of day to noon and stop time there. Turn on to start the day/night cycle again.
 
 ## Test World
 
 Playtest your Editor project as a playable Minecraft world. No changes will be saved to your project. Available only when hosting a single player world.
 
-![Editor selection tool window](Media/editor_overview_test_world_tool_window.png)
+ ![Editor selection tool window](Media/editor_test_settings.png)
 
 ### Game Mode
 
@@ -30,18 +28,37 @@ Choose Survival, Creative, or Adventure.
 
 Choose Peaceful, Easy, Normal, or Hard.
 
-### World options
+### Spawn at Current Location
 
-You can toggle Daylight Cycle, Weather Cycle, Show Coordinates, and Spawn at Current Location on or off.
+If unchecked, the player spawns at the usual spawnpoint for that world.
+
+## Advanced Settings
+
+### Daylight Cycle
+
+Normal, Always Day, or LockTime.
+
+### Custom Time 
+
+This will be enabled if you choose Custom from the Time of Day option.
 
 ### Time of Day
 
-Choose Default, Day, Noon, Sunset, Night, Midnight, or Sunrise.
+Choose Default, Day, Noon, Sunset, Night, Midnight, or Sunrise, or Custom.
 
-Practice: Test a world
+### Weather Cycle
+
+Toggle on or off.
+
+### Weather
+
+Clear, Rain, or Thunder.
+
+
+## Practice: Test a world
 
 1. After selecting the options you want, click the Test World button.
 
-2. Your world loads must as it will in regular Minecraft. 
+2. Your world loads much as it will in regular Minecraft. 
 
 3. Whenever you're ready to continue editing, press **Esc**. From here, you can choose to Resume Testing or Return to Editor.

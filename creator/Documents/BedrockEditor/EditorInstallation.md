@@ -15,7 +15,9 @@ Minecraft's Bedrock Editor is a multiblock editing experience that helps you eas
 > It will change significantly as we get feedback from creators like you.
 > Also, the images of Editor in this document might vary a little from what you have on your screen.
 
-First, we are going to install Minecraft Preview. Then, we will create the shortcut that launches Editor. After that, we will open Editor and make sure it works.
+First, we are going to install Minecraft Preview. 
+Then, we will create the shortcut that launches Editor. 
+After that, we will open Editor and make sure it works.
 
 --------
 
