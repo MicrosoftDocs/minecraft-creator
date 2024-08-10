@@ -15,16 +15,6 @@ This tutorial is intended to guide you through using Minecraft Bedrock Editor to
 > It will change significantly as we get feedback from creators like you.
 > Also, the images of Editor in this document might vary a little from what you have on your screen.
 
---------
-
-In this tutorial, you will learn the following:
-
-> [!div class="checklist"]
->
-> - How to use some of the tools in Editor to accomplish tasks
-
---------
-
 ## Requirements
 
 To get started, you need the following:

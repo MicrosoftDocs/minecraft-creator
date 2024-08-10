@@ -30,8 +30,6 @@ landingContent:
             url: EditorWorldOptions.md
           - text: Action Bar
             url: EditorActionBar.md
-          - text: Block Picker
-            url: EditorBlockPicker.md
           - text: Selection Tool
             url: EditorSelectionTool.md
           - text: Brush Tool
@@ -57,5 +55,3 @@ landingContent:
             url: EditorWorkflow.md
           - text: Editor Extensions Introduction
             url: EditorExtensionsIntroduction.md
-          - text: Editor and Deferred Lighting
-            url: EditorDeferredLighting.md
