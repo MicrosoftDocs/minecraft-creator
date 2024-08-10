@@ -34,7 +34,7 @@ If you're curious about Minecraft file extensions, here is an article about them
 1. Launch Editor and click the Play button.
 1. Click the import icon next to the Create New Project button to open the Windows file explorer.
 
- ![The Editor import button is next to the create new project button](Media/Editor/editor_overview_import_button.png)
+ ![The Editor import button is next to the create new project button](Media/editor_overview_import_button.png)
 
 3. In the file explorer, choose the .mcworld, .mctemplate, or .mcproject you want to import.
 4. When the file is imported, a success message is displayed.

@@ -46,7 +46,7 @@ The contents of these containers will change as Editor is developed.
 
 - **Export as** - When you're ready to share your project (or just see it in non-Editor Minecraft) selecting **File > Export as > Playable world** to start the process to create a .mcworld file in the **projectbackups** folder inside the **com.mojang** folder in your computer.
 
-If you don't know how to find your com.mojang folder, there are instructions in the Bedrock [Getting Started](/creator/Documents/GettingStarted.md) tutorial.
+If you don't know how to find your com.mojang folder, there are instructions in the Bedrock [Getting Started](../GettingStarted.md) tutorial.
 
 Editor has its own filetype: .mcproject. These files will always open in Editor, if you have it installed.
 
@@ -57,7 +57,7 @@ To **import** projects, go to the Create New Project screen and click the import
 Navigate to a .mcworld, .mctemplate, or .mcproject files.
 After the file is imported, it is converted to an .mcproject file.
 
-If you want to learn more about Minecraft file types like .mcproject and .mcworld, there is more information on the [Minecraft File Types](MinecraftFileExtensions.md) page.
+If you want to learn more about Minecraft file types like .mcproject and .mcworld, there is more information on the [Minecraft File Types](../MinecraftFileExtensions.md) page.
 
 - **UI settings** - This is where you can adjust the UI Scale, Font, and Theme color settings of the Editor UI.
 
