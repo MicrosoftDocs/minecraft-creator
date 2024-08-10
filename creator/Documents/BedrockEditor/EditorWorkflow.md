@@ -19,11 +19,11 @@ Here are the steps to create a project, make a quick edit, export the file, and 
 1. Close Editor by going to **File ... Pause screen** and then choose **Save & Quit** like you usually do.
 1. Go to the **projectbackups** folder in your **com.mojang** folder. You should find a file with the name you gave it appended to the date, time, and a **.mcworld** extension.
 
-If you need a reminder about how to find the **com.mojang** folder on your computer, there are some steps in the [Getting Started](GettingStarted.md) article.
+If you need a reminder about how to find the **com.mojang** folder on your computer, there are some steps in the [Getting Started](../GettingStarted.md) article.
 
 The **projectbackups** folder does not exist until the first time you export a project from Editor.
 
-If you're curious about Minecraft file extensions, here is an article about them called [Minecraft File Extensions](MinecraftFileExtensions.md) where you can learn more.
+If you're curious about Minecraft file extensions, here is an article about them called [Minecraft File Extensions](../MinecraftFileExtensions.md) where you can learn more.
 
 1. If Editor is closed, then when you double-click the **.mcworld** file Minecraft will launch like usual and import the .mcworld file. The world you created in Editor will be listed among any other Minecraft worlds you already have. However, if Editor is still running, then double-clicking the file will cause it to be imported into Editor instead.
 1. To send your project file to someone else so they can work with it in Editor, go back to the **projectbackups** file in your com.mojang folder.
