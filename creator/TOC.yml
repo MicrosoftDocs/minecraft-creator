@@ -316,14 +316,16 @@
               href: Documents/GameTestBuildYourFirstGameTest.md
         - name: "Bedrock Editor - World Editing"
           items:
+            - name: Editor Topics
+              href: Documents/BedrockEditor/index.yml
             - name: Editor Overview
-              href: Documents/EditorOverview.md
+              href: Documents/BedrockEditor/EditorOverview.md
             - name: Editor Installation Guide
-              href: Documents/EditorInstallation.md
+              href: Documents/BedrockEditor/EditorInstallation.md
             - name: Editor Tutorial
-              href: Documents/EditorTutorial.md
+              href: Documents/BedrockEditor/EditorTutorial.md
             - name: Building Editor Extensions
-              href: Documents/EditorExtensionsIntroduction.md
+              href: Documents/BedrockEditor/EditorExtensionsIntroduction.md
         - name: "Blockbench - Model Editing"
           items:
             - name: Minecraft Entity Wizard
