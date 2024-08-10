@@ -1,7 +1,7 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Minecraft Bedrock Editor Deferred Lighting
+title: Minecraft Bedrock Editor Line Tool
 description: "An overview of the Line Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
 ---

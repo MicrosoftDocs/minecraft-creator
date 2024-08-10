@@ -14,15 +14,12 @@ The Action Bar has quick functions like **undo** and **redo** that affect the th
 |:-------|:-------|
 | Undo | `Ctrl Z` |
 | Redo | `Ctrl Y` |
+| Attach Debugger | - |
+| Input Mapping | - |
+| Reload | - |
 | Crosshair Mode| `Ctrl Tab` |
 
 
-////////////////////////////
-Editor – Action bar
-Goals
-•	Move action bar topics here
-•	Show how a user can add things to the right or left action bar
-
 ## How to add actions to the Action bar
 
-
+Press the [+] on either the right or left side and choose the Action you want to add to the bar from the menu.
