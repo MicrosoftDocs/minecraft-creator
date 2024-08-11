@@ -23,7 +23,7 @@ There are two sets of experimental features available, depending on whether you 
 
 ### Retail
 
-These are the currently available Experimental toggles in the **1.21.0** retail build at the time of this writing.
+These are the currently available Experimental toggles in the **1.21.10** retail build at the time of this writing.
 
 GAMEPLAY - Change the way your world works
 
@@ -37,9 +37,10 @@ ADD-ON CREATORS - For creators of game packs and other add-ons
 |:------|:------|
 |Holiday Creator Features | Add data-driven block and item technology to customize block shape, rotation, damage and more |
 |Custom Biomes| Create custom biomes and change world generation |
-|Upcoming Creator Features | Includes adjustable fog parameters |
+|Upcoming Creator Features | Includes actor properties and adjustable fog parameters |
 |Beta APIs| Use "-beta" versions of API modules in add-on packs |
-|Experimental Cameras | Contains example camera presets (the camera command is no longer experimental) |
+|Creator Cameras: New Third Person Presets | Contains new third person over the shoulder follow-orbit camera preset |
+|Render Dragon Features for Creators | Enable the deferred rendering pipeline. Requires a PBR-enabled resource pack and compatible hardware. |
 
 ### Preview
 
