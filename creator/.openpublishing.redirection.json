@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_peek.md",
+      "redirect_url": "/minecraft/creator/reference/content/entityreference/examplesaigoallist.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/CommandsHowToMakeACTMWorld.md",
       "redirect_url": "/minecraft/creator/documents/CreateAnInWorldGame",
       "redirect_document_id": false
