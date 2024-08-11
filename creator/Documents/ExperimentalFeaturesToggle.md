@@ -10,6 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 > [!NOTE]
 > To see full documentation about experimental features and APIs, select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle?view=minecraft-bedrock-experimental).
+
 ![image showing the Document Versions Dropdown.](Media/ExperimentalFeatures/ExperimentalApiDocs.png)
 
 With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in the preview, and retail versions of Minecraft.
@@ -82,7 +83,7 @@ If you are building a new world from scratch to test experimental features, you 
 
 2. When you get the popup asking if you're sure, select **Turn on Experiments anyway**.
 
-   ![image showing a pop up to confirm if you want ot activate experimental features in Minecraft.](Media/ExperimentalFeatures/ActivateExperiments_121.png)
+   ![image showing a pop up to confirm if you want to activate experimental features in Minecraft.](Media/ExperimentalFeatures/ActivateExperiments_121.png)
 
 ### Toggle Experimental Features in an Existing World
 
