@@ -108,7 +108,6 @@ AI Goal Component |Description
 [minecraft:behavior.owner_hurt_by_target](EntityGoals/minecraftBehavior_owner_hurt_by_target.md)|`minecraft:behavior.owner_hurt_by_target` compels an entity to react when the owner is hit by a target.
 [minecraft:behavior.owner_hurt_target](EntityGoals/minecraftBehavior_owner_hurt_target.md)|`minecraft:behavior.owner_hurt_target` compels an entity to react when the owner hits a target.
 [minecraft:behavior.panic](EntityGoals/minecraftBehavior_panic.md)|`minecraft:behavior.panic` compels an entity to react when it receives damage.
-[minecraft:behavior.peek](EntityGoals/minecraftBehavior_peek.md)|`minecraft:behavior.peek` compels an entity to peek out.
 [minecraft:behavior.pet_sleep_with_owner](EntityGoals/minecraftBehavior_pet_sleep_with_owner.md)|`minecraft:behavior.pet_sleep_with_owner` compels an entity to sleep on a bed shared with its' owner.
 [minecraft:behavior.pickup_items](EntityGoals/minecraftBehavior_pickup_items.md)|`minecraft:behavior.pickup_items` compels an entity to pick up selected items off the ground.
 [minecraft:behavior.play](EntityGoals/minecraftBehavior_play.md)|`minecraft:behavior.play` compels an entity to play with entities that have been tagged as `baby`.
