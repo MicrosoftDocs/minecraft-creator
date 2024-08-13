@@ -21,7 +21,7 @@ ms.service: minecraft-bedrock-edition
 |goal_radius| 0.5| Decimal| Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot. |
 |max_dist| 0.0| Decimal|  Maximum distance this mob will look for items to pick up. |
 |pickup_based_on_chance| false|Boolean|  If true, depending on the difficulty, there is a random chance that the mob may not be able to pickup items. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal. |
 |track_target| false| Boolean|  If true, this mob will chase after the target as long as it's a valid target. |
 

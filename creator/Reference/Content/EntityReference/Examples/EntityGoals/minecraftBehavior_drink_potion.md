@@ -15,7 +15,7 @@ ms.service: minecraft-bedrock-edition
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |potions |*not set* |List |A list of potions that this entity can drink. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |speed_modifier| 0.0| Decimal| The movement speed modifier to apply to the entity while it is drinking a potion. A value of 0 represents no change in speed.|
 
 ### Potion Parameters

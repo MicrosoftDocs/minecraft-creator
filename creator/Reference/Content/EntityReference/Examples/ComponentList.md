@@ -53,6 +53,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:drying_out_timer](EntityComponents/minecraftComponent_drying_out_timer.md) |`minecraft:drying_out_timer` sets a timer for drying out that will count down and initiate 'dried_out_event' or will stop as soon as the entity gets under rain or water, initiating `stopped_drying_out_event`.|
 |[minecraft:dweller](EntityComponents/minecraftComponent_dweller.md) |`minecraft:dweller` compels an entity to join and migrate between villages and other dwellings.|
 |[minecraft:economy_trade_table](EntityComponents/minecraftComponent_economy_trade_table.md) |`minecraft:economy_trade_table` defines the entity's ability to trade with players.|
+|[minecraft:entity_armor_equipment_slot_mapping](EntityComponents/minecraftComponent_entity_armor_equipment_slot_mapping.md) |`minecraft:entity_armor_equipment_slot_mapping` specifies the armor slot where an item in the `minecraft:equippable` second slot should be equipped.|
 |[minecraft:entity_sensor](EntityComponents/minecraftComponent_entity_sensor.md) |`minecraft:entity_sensor` initiates an event when a set of conditions are met by other entities within the defined range.|
 |[minecraft:environment_sensor](EntityComponents/minecraftComponent_environment_sensor.md) |`minecraft:environment_sensor` creates a trigger based on environment conditions.|
 |[minecraft:equip_item](EntityComponents/minecraftComponent_equip_item.md) |`minecraft:equip_item` compels the entity to put on the desired equipment.|

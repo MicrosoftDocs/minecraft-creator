@@ -1,14 +1,14 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
-title: Entity Documentation - any_slot_empty
-description: "A reference document detailing the 'any_slot_empty' entity filter"
+title: Entity Documentation - owner_distance
+description: "A reference document detailing the 'owner_distance' entity filter"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Entity Documentation - any_slot_empty
+# Entity Documentation - owner_distance
 
-Returns true when the designated equipment location for the subject entity has any empty slot.
+Tests the distance between the subject and its owner. Returns false if there is no owner.
 
 ## subject
 
@@ -19,7 +19,7 @@ Returns true when the designated equipment location for the subject entity has a
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |
-| self| The entity or object calling the test. |
+| self| The entity or object calling the test |
 | target| The caller's current target. |
 
 ### operator
@@ -39,30 +39,20 @@ Returns true when the designated equipment location for the subject entity has a
 
 ### value
 
-(Optional) The equipment location to test.
-
-|Options|
-|:-----------|
-| any|
-| armor|
-| body|
-| feet|
-| hand|
-| head|
-| inventory|
-| leg|
-| torso|
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+| value | *not set* | Decimal | A floating point value. |
 
 ## Examples
 
 ### Full
 
 ```json
-{ "test": "any_slot_empty", "subject": "self", "operator": "equals", "value": "any" }
+{ "test": "owner_distance", "subject": "self", "operator": "equals", "value": 0.00}
 ```
 
 ### Short (using Defaults)
 
 ```json
-{ "test": "any_slot_empty" }
+{ "test": "owner_distance", "value": "0.00" }
 ```

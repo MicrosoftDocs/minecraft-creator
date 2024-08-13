@@ -28,7 +28,7 @@ ms.service: minecraft-bedrock-edition
 | knockback_range| 4 | Integer| The radius (in blocks) of the knockback effect. |
 | knockback_vertical_strength| 4| Integer| The strength of the vertical knockback. |
 | on_roar_end| | Trigger| Event that is triggered when the roar ends. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

@@ -49,8 +49,8 @@ Below is a list of all the available Entities within Minecraft: Bedrock Edition 
 |[fox](../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)|
 |[frog](../../../Source/VanillaBehaviorPack_Snippets/entities/frog.md)|
 |[ghast](../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)|
-|&nbsp; [glow_squid](../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)|
-|&nbsp; [goat](../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)|
+|[glow_squid](../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)|
+|[goat](../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)|
 |[guardian](../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)|
 |[hoglin](../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)|
 |[hopper_minecart](../../../Source/VanillaBehaviorPack_Snippets/entities/hopper_minecart.md)|

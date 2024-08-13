@@ -155,9 +155,11 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.swell| -1473132493 |
 | minecraft:behavior.swim_idle| 6562850329755828441 |
 | minecraft:behavior.swim_wander| 12378924708543723854 |
+| minecraft:behavior.swim_up_for_breath| 6795851152810947053|
 | minecraft:behavior.swim_with_entity| 10204691344094313319 |
 | minecraft:behavior.swoop_attack| 7451467701814397451 |
 | minecraft:behavior.take_flower| 1218648257 |
+| minecraft:behavior.teleport_to_owner| 1980014114121577323|
 | minecraft:behavior.tempt| 422904556 |
 | minecraft:behavior.timer_flag_1| 9107193206350859182 |
 | minecraft:behavior.timer_flag_2| 9107192106839230971 |
@@ -222,6 +224,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:despawn| 1674909940 |
 | minecraft:drying_out_timer| 2113510784 |
 | minecraft:economy_trade_table| 1705466896 |
+| minecraft:entity_armor_equipment_slot_mapping| 388041038|
 | minecraft:entity_sensor| -406052184 |
 | minecraft:environment_sensor| 687748970 |
 | minecraft:equip_item| -1774220620 |

@@ -17,7 +17,7 @@ ms.service: minecraft-bedrock-edition
 |items|*not set* |List |List of items that this mob likes |
 |look_distance|8.0 |Decimal |Distance in blocks the mob will beg from. |
 |look_time |[2, 4]|Range ["range_min", "range_max"] |The range of time in seconds this mob will stare at the player holding a food they like, begging for it. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

@@ -1,16 +1,23 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
-title: Entity Documentation - any_slot_empty
-description: "A reference document detailing the 'any_slot_empty' entity filter"
+title: Entity Documentation - is_navigating
+description: "A reference document detailing the 'is_navigating' entity filter"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Entity Documentation - any_slot_empty
+# Entity Documentation - is_navigating
 
-Returns true when the designated equipment location for the subject entity has any empty slot.
+Tests if the subject is currently pathfinding. Requires a `minecraft:navigation` component.
 
-## subject
+## Parameters
+
+> [!NOTE]
+> `is_navigating` does **not** require any parameters to work properly. It can be used as a standalone filter.
+>
+> `is_navigating` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
+
+### subject
 
 | Options| Description |
 |:-----------|:-----------|
@@ -19,7 +26,7 @@ Returns true when the designated equipment location for the subject entity has a
 | other| The other member of an interaction, not the caller. |
 | parent| The caller's current parent. |
 | player| The player involved with the interaction. |
-| self| The entity or object calling the test. |
+| self| The entity or object calling the test |
 | target| The caller's current target. |
 
 ### operator
@@ -39,30 +46,8 @@ Returns true when the designated equipment location for the subject entity has a
 
 ### value
 
-(Optional) The equipment location to test.
+|Name |Default Value  |Type  |Description  |
+|---------|---------|---------|---------|
+|value |true |Boolean |(Optional) true or false. |
 
-|Options|
-|:-----------|
-| any|
-| armor|
-| body|
-| feet|
-| hand|
-| head|
-| inventory|
-| leg|
-| torso|
 
-## Examples
-
-### Full
-
-```json
-{ "test": "any_slot_empty", "subject": "self", "operator": "equals", "value": "any" }
-```
-
-### Short (using Defaults)
-
-```json
-{ "test": "any_slot_empty" }
-```

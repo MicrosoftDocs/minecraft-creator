@@ -348,19 +348,19 @@ Any component that this biome uses.
 
 |Name |Type |Required |Description |
 |:-----------|:-----------|:-------|:-----------|
-|minecraft:capped_surface| Object of type minecraft:capped_surface| Optional| Generates surface on blocks with non-solid blocks above or below.|
-|minecraft:climate| Object of type minecraft:climate| Optional| Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.|
-|minecraft:frozen_ocean_surface| Object of type minecraft:frozen_ocean_surface| Optional| Similar to overworld_surface. Adds icebergs.|
-|minecraft:mesa_surface| Object of type minecraft:mesa_surface| Optional| Similar to overworld_surface. Adds colored strata and optional pillars.|
-|minecraft:mountain_parameters| Object of type minecraft:mountain_parameters| Optional| Noise parameters used to drive mountain terrain generation in Overworld.|
-|minecraft:multinoise_generation_rules| Object of type minecraft:multinoise_generation_rules| Optional| Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.|
-|minecraft:overworld_generation_rules| Object of type minecraft:overworld_generation_rules| Optional| Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.|
-|minecraft:overworld_height| Object of type minecraft:overworld_height| Optional| Noise parameters used to drive terrain height in the Overworld.|
-|minecraft:surface_material_adjustments| Object of type minecraft:surface_material_adjustments| Optional| Specify fine-detail changes to blocks used in terrain generation (based on a noise function).|
-|minecraft:surface_parameters| Object of type minecraft:surface_parameters| Optional| Controls the blocks used for the default Minecraft Overworld terrain generation.|
-|minecraft:swamp_surface| Object of type minecraft:swamp_surface| Optional| Similar to overworld_surface. Adds swamp surface details.|
-|minecraft:tags| Object of type minecraft:tags| Optional| Attach arbitrary string tags to this biome.|
-|minecraft:the_end_surface| Object of type minecraft:the_end_surface| Optional| Use default Minecraft End terrain generation.|
+|minecraft:capped_surface| Object | Optional| Generates surface on blocks with non-solid blocks above or below.|
+|minecraft:climate| Object | Optional| Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.|
+|minecraft:frozen_ocean_surface| Object | Optional| Similar to overworld_surface. Adds icebergs.|
+|minecraft:mesa_surface| Object | Optional| Similar to overworld_surface. Adds colored strata and optional pillars.|
+|minecraft:mountain_parameters| Object | Optional| Noise parameters used to drive mountain terrain generation in Overworld.|
+|minecraft:multinoise_generation_rules| Object | Optional| Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.|
+|minecraft:overworld_generation_rules| Object | Optional| Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.|
+|minecraft:overworld_height| Object | Optional| Noise parameters used to drive terrain height in the Overworld.|
+|minecraft:surface_material_adjustments| Object | Optional| Specify fine-detail changes to blocks used in terrain generation (based on a noise function).|
+|minecraft:surface_parameters| Object | Optional| Controls the blocks used for the default Minecraft Overworld terrain generation.|
+|minecraft:swamp_surface| Object | Optional| Similar to overworld_surface. Adds swamp surface details.|
+|minecraft:tags| Object | Optional| Attach arbitrary string tags to this biome.|
+|minecraft:the_end_surface| Object | Optional| Use default Minecraft End terrain generation.|
 
 ## Biome Definition
 
