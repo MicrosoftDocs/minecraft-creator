@@ -55,21 +55,15 @@ Type: *string*
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
 - [getPlayers](#getplayers)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getTopmostBlock](#gettopmostblock)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
 ::: moniker-end
 - [playSound](#playsound)
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setBlockPermutation](#setblockpermutation)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [setBlockType](#setblocktype)
-::: moniker-end
 - [setWeather](#setweather)
 - [spawnEntity](#spawnentity)
 - [spawnItem](#spawnitem)
@@ -447,7 +441,6 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 > [!WARNING]
 > This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getTopmostBlock**
 `
 getTopmostBlock(locationXZ: VectorXZ, minHeight?: number): Block | undefined
@@ -465,15 +458,11 @@ Returns the highest block at the given XZ location.
 
 **Returns** [*Block*](Block.md) | *undefined*
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
 > [!WARNING]
 > This function can throw errors.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getWeather**
@@ -600,7 +589,6 @@ Runs a particular command asynchronously from the context of the broader dimensi
 >
 > Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setBlockPermutation**
 `
 setBlockPermutation(location: Vector3, permutation: BlockPermutation): void
@@ -616,9 +604,6 @@ Sets a block in the world using a BlockPermutation. BlockPermutations are blocks
   
   The block permutation to set.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -626,9 +611,7 @@ Sets a block in the world using a BlockPermutation. BlockPermutations are blocks
 > This function can throw errors.
 >
 > Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setBlockType**
 `
 setBlockType(location: Vector3, blockType: BlockType | string): void
@@ -644,9 +627,6 @@ Sets a block at a given location within the dimension.
   
   The type of block to set. This can be either a string identifier or a BlockType. The default block permutation is used.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
 
@@ -654,7 +634,6 @@ Sets a block at a given location within the dimension.
 > This function can throw errors.
 >
 > Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **setWeather**
 `

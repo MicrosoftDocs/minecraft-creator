@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .BlockCustomComponentAlreadyRegisteredError Class
 description: Contents of the .BlockCustomComponentAlreadyRegisteredError class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockCustomComponentAlreadyRegisteredError Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - *Error*

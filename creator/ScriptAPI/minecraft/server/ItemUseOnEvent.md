@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemUseOnEvent Class
 description: Contents of the @minecraft/server.ItemUseOnEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemUseOnEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Classes that extend ItemUseOnEvent
 - [*ItemComponentUseOnEvent*](ItemComponentUseOnEvent.md)
