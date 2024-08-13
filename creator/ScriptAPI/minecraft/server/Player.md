@@ -25,17 +25,12 @@ Type: [*Camera*](Camera.md)
 > [!WARNING]
 > This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **inputPermissions**
 `read-only inputPermissions: PlayerInputPermissions;`
 
 Input permissions of the player.
 
 Type: [*PlayerInputPermissions*](PlayerInputPermissions.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **isEmoting**
 `read-only isEmoting: boolean;`

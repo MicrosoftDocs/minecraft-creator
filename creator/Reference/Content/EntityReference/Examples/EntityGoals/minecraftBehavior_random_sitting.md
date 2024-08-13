@@ -18,7 +18,7 @@ ms.service: minecraft-bedrock-edition
 |min_sit_time| 10| Decimal| The minimum amount of time in seconds before the entity can stand back up. |
 |start_chance| 0.1| Decimal| This is the chance that the entity will start this goal, from 0 to 1. |
 |stop_chance| 0.3| Decimal|  This is the chance that the entity will stop this goal, from 0 to 1. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

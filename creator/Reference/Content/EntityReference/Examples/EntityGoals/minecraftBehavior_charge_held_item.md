@@ -15,7 +15,7 @@ ms.service: minecraft-bedrock-edition
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | items| *not set*| Array| The list of items that can be used to charge the held item. This list is required and must have at least one item in it. |
-|priority|*not set*|Integer| The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer| The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

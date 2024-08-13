@@ -20,7 +20,7 @@ ms.service: minecraft-bedrock-edition
 | fractional_rotation| 0.5| Decimal| The entity will attempt to rotate to face where the player is facing each tick. The entity will target this percentage of their difference in their current facing angles each tick (from 0.0 to 1.0 where 1.0 = 100%). This is limited by FractionalRotationLimit. A value of 0.0 will result in the entity no longer turning to where the player is facing. |
 | fractional_rotation_limit| 5.0| Decimal| Limits the total degrees the entity can rotate to face where the player is facing on each tick. |
 | mount_speed_multiplier| 1.0| Decimal| Speed multiplier of mount when controlled by player. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

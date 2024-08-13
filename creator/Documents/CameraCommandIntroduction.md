@@ -311,7 +311,7 @@ When multiple people are playing in split-screen on the same device, they have s
 
 This controls what is used for the audio listener.
 
-Creators will sometimes want the player’s position to continue being where the audio system’s “ears” are, and other times they will want this listener position to be where the camera is.
+Creators will sometimes want the player’s position to continue being where the audio system’s "ears" are, and other times they will want this listener position to be where the camera is.
 
 
 ```json

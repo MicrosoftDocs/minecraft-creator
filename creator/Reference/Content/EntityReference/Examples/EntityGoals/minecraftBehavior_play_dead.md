@@ -19,7 +19,7 @@ ms.service: minecraft-bedrock-edition
 | duration| 1.000000| Decimal| The amount of time the entity will play dead (in seconds). |
 | filters| | Minecraft Filter| The list of other triggers required for the entity to activate play dead |
 | force_below_health| 0| Integer| The amount of health at which damage will cause the entity to play dead. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | random_damage_range| [0, 0]| Range [a, b]| The range of damage that may cause the goal to start depending on randomness. Damage taken below the min will never cause the goal to start. Damage taken above the max will always cause the goal to start. |
 | random_start_chance| 1.000000| Decimal| The likelihood of this goal starting upon taking damage. |
 

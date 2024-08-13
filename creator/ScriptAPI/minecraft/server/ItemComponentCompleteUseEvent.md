@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemComponentCompleteUseEvent Class
 description: Contents of the @minecraft/server.ItemComponentCompleteUseEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemComponentCompleteUseEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*ItemCompleteUseEvent*](ItemCompleteUseEvent.md)

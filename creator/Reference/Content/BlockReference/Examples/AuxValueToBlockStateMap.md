@@ -166,22 +166,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:andesite_stairs:005|minecraft:andesite_stairs |5|minecraft:andesite_stairs ["upside_down_bit" = 1, "weirdo_direction" = 1]|
 |minecraft:andesite_stairs:006|minecraft:andesite_stairs |6|minecraft:andesite_stairs ["upside_down_bit" = 1, "weirdo_direction" = 2]|
 |minecraft:andesite_stairs:007|minecraft:andesite_stairs |7|minecraft:andesite_stairs ["upside_down_bit" = 1, "weirdo_direction" = 3]|
-|minecraft:anvil:000|minecraft:anvil |0|minecraft:anvil ["damage" = "undamaged", "minecraft:cardinal_direction" = "south"]|
-|minecraft:anvil:001|minecraft:anvil |1|minecraft:anvil ["damage" = "undamaged", "minecraft:cardinal_direction" = "west"]|
-|minecraft:anvil:002|minecraft:anvil |2|minecraft:anvil ["damage" = "undamaged", "minecraft:cardinal_direction" = "north"]|
-|minecraft:anvil:003|minecraft:anvil |3|minecraft:anvil ["damage" = "undamaged", "minecraft:cardinal_direction" = "east"]|
-|minecraft:anvil:004|minecraft:anvil |4|minecraft:anvil ["damage" = "slightly_damaged", "minecraft:cardinal_direction" = "south"]|
-|minecraft:anvil:005|minecraft:anvil |5|minecraft:anvil ["damage" = "slightly_damaged", "minecraft:cardinal_direction" = "west"]|
-|minecraft:anvil:006|minecraft:anvil |6|minecraft:anvil ["damage" = "slightly_damaged", "minecraft:cardinal_direction" = "north"]|
-|minecraft:anvil:007|minecraft:anvil |7|minecraft:anvil ["damage" = "slightly_damaged", "minecraft:cardinal_direction" = "east"]|
-|minecraft:anvil:008|minecraft:anvil |8|minecraft:anvil ["damage" = "very_damaged", "minecraft:cardinal_direction" = "south"]|
-|minecraft:anvil:009|minecraft:anvil |9|minecraft:anvil ["damage" = "very_damaged", "minecraft:cardinal_direction" = "west"]|
-|minecraft:anvil:010|minecraft:anvil |10|minecraft:anvil ["damage" = "very_damaged", "minecraft:cardinal_direction" = "north"]|
-|minecraft:anvil:011|minecraft:anvil |11|minecraft:anvil ["damage" = "very_damaged", "minecraft:cardinal_direction" = "east"]|
-|minecraft:anvil:012|minecraft:anvil |12|minecraft:anvil ["damage" = "broken", "minecraft:cardinal_direction" = "south"]|
-|minecraft:anvil:013|minecraft:anvil |13|minecraft:anvil ["damage" = "broken", "minecraft:cardinal_direction" = "west"]|
-|minecraft:anvil:014|minecraft:anvil |14|minecraft:anvil ["damage" = "broken", "minecraft:cardinal_direction" = "north"]|
-|minecraft:anvil:015|minecraft:anvil |15|minecraft:anvil ["damage" = "broken", "minecraft:cardinal_direction" = "east"]|
+|minecraft:anvil:000|minecraft:anvil |0|minecraft:anvil ["minecraft:cardinal_direction" = "south"]|
+|minecraft:anvil:001|minecraft:anvil |1|minecraft:anvil ["minecraft:cardinal_direction" = "west"]|
+|minecraft:anvil:002|minecraft:anvil |2|minecraft:anvil ["minecraft:cardinal_direction" = "north"]|
+|minecraft:anvil:003|minecraft:anvil |3|minecraft:anvil ["minecraft:cardinal_direction" = "east"]|
+|minecraft:anvil:004|minecraft:anvil |4|minecraft:anvil ["minecraft:cardinal_direction" = "south"]|
+|minecraft:anvil:005|minecraft:anvil |5|minecraft:anvil ["minecraft:cardinal_direction" = "west"]|
+|minecraft:anvil:006|minecraft:anvil |6|minecraft:anvil ["minecraft:cardinal_direction" = "north"]|
+|minecraft:anvil:007|minecraft:anvil |7|minecraft:anvil ["minecraft:cardinal_direction" = "east"]|
+|minecraft:anvil:008|minecraft:anvil |8|minecraft:anvil ["minecraft:cardinal_direction" = "south"]|
+|minecraft:anvil:009|minecraft:anvil |9|minecraft:anvil ["minecraft:cardinal_direction" = "west"]|
+|minecraft:anvil:010|minecraft:anvil |10|minecraft:anvil ["minecraft:cardinal_direction" = "north"]|
+|minecraft:anvil:011|minecraft:anvil |11|minecraft:anvil ["minecraft:cardinal_direction" = "east"]|
+|minecraft:anvil:012|minecraft:anvil |12|minecraft:anvil ["minecraft:cardinal_direction" = "south"]|
+|minecraft:anvil:013|minecraft:anvil |13|minecraft:anvil ["minecraft:cardinal_direction" = "west"]|
+|minecraft:anvil:014|minecraft:anvil |14|minecraft:anvil ["minecraft:cardinal_direction" = "north"]|
+|minecraft:anvil:015|minecraft:anvil |15|minecraft:anvil ["minecraft:cardinal_direction" = "east"]|
 |minecraft:bamboo:000|minecraft:bamboo |0|minecraft:bamboo ["age_bit" = 0, "bamboo_leaf_size" = "no_leaves", "bamboo_stalk_thickness" = "thin"]|
 |minecraft:bamboo:001|minecraft:bamboo |1|minecraft:bamboo ["age_bit" = 0, "bamboo_leaf_size" = "no_leaves", "bamboo_stalk_thickness" = "thick"]|
 |minecraft:bamboo:002|minecraft:bamboo |2|minecraft:bamboo ["age_bit" = 0, "bamboo_leaf_size" = "small_leaves", "bamboo_stalk_thickness" = "thin"]|
@@ -876,54 +876,54 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:coral_fan_dead:013|minecraft:coral_fan_dead |13|minecraft:coral_fan_dead ["coral_color" = "blue", "coral_fan_direction" = 1]|
 |minecraft:coral_fan_dead:014|minecraft:coral_fan_dead |14|minecraft:coral_fan_dead ["coral_color" = "blue", "coral_fan_direction" = 1]|
 |minecraft:coral_fan_dead:015|minecraft:coral_fan_dead |15|minecraft:coral_fan_dead ["coral_color" = "blue", "coral_fan_direction" = 1]|
-|minecraft:coral_fan_hang2:000|minecraft:coral_fan_hang2 |0|minecraft:coral_fan_hang2 ["coral_direction" = 0, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang2:001|minecraft:coral_fan_hang2 |1|minecraft:coral_fan_hang2 ["coral_direction" = 0, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang2:002|minecraft:coral_fan_hang2 |2|minecraft:coral_fan_hang2 ["coral_direction" = 0, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang2:003|minecraft:coral_fan_hang2 |3|minecraft:coral_fan_hang2 ["coral_direction" = 0, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang2:004|minecraft:coral_fan_hang2 |4|minecraft:coral_fan_hang2 ["coral_direction" = 1, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang2:005|minecraft:coral_fan_hang2 |5|minecraft:coral_fan_hang2 ["coral_direction" = 1, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang2:006|minecraft:coral_fan_hang2 |6|minecraft:coral_fan_hang2 ["coral_direction" = 1, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang2:007|minecraft:coral_fan_hang2 |7|minecraft:coral_fan_hang2 ["coral_direction" = 1, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang2:008|minecraft:coral_fan_hang2 |8|minecraft:coral_fan_hang2 ["coral_direction" = 2, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang2:009|minecraft:coral_fan_hang2 |9|minecraft:coral_fan_hang2 ["coral_direction" = 2, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang2:010|minecraft:coral_fan_hang2 |10|minecraft:coral_fan_hang2 ["coral_direction" = 2, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang2:011|minecraft:coral_fan_hang2 |11|minecraft:coral_fan_hang2 ["coral_direction" = 2, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang2:012|minecraft:coral_fan_hang2 |12|minecraft:coral_fan_hang2 ["coral_direction" = 3, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang2:013|minecraft:coral_fan_hang2 |13|minecraft:coral_fan_hang2 ["coral_direction" = 3, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang2:014|minecraft:coral_fan_hang2 |14|minecraft:coral_fan_hang2 ["coral_direction" = 3, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang2:015|minecraft:coral_fan_hang2 |15|minecraft:coral_fan_hang2 ["coral_direction" = 3, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang3:000|minecraft:coral_fan_hang3 |0|minecraft:coral_fan_hang3 ["coral_direction" = 0, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang3:001|minecraft:coral_fan_hang3 |1|minecraft:coral_fan_hang3 ["coral_direction" = 0, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang3:002|minecraft:coral_fan_hang3 |2|minecraft:coral_fan_hang3 ["coral_direction" = 0, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang3:003|minecraft:coral_fan_hang3 |3|minecraft:coral_fan_hang3 ["coral_direction" = 0, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang3:004|minecraft:coral_fan_hang3 |4|minecraft:coral_fan_hang3 ["coral_direction" = 1, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang3:005|minecraft:coral_fan_hang3 |5|minecraft:coral_fan_hang3 ["coral_direction" = 1, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang3:006|minecraft:coral_fan_hang3 |6|minecraft:coral_fan_hang3 ["coral_direction" = 1, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang3:007|minecraft:coral_fan_hang3 |7|minecraft:coral_fan_hang3 ["coral_direction" = 1, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang3:008|minecraft:coral_fan_hang3 |8|minecraft:coral_fan_hang3 ["coral_direction" = 2, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang3:009|minecraft:coral_fan_hang3 |9|minecraft:coral_fan_hang3 ["coral_direction" = 2, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang3:010|minecraft:coral_fan_hang3 |10|minecraft:coral_fan_hang3 ["coral_direction" = 2, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang3:011|minecraft:coral_fan_hang3 |11|minecraft:coral_fan_hang3 ["coral_direction" = 2, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang3:012|minecraft:coral_fan_hang3 |12|minecraft:coral_fan_hang3 ["coral_direction" = 3, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang3:013|minecraft:coral_fan_hang3 |13|minecraft:coral_fan_hang3 ["coral_direction" = 3, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang3:014|minecraft:coral_fan_hang3 |14|minecraft:coral_fan_hang3 ["coral_direction" = 3, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang3:015|minecraft:coral_fan_hang3 |15|minecraft:coral_fan_hang3 ["coral_direction" = 3, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang:000|minecraft:coral_fan_hang |0|minecraft:coral_fan_hang ["coral_direction" = 0, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang:001|minecraft:coral_fan_hang |1|minecraft:coral_fan_hang ["coral_direction" = 0, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang:002|minecraft:coral_fan_hang |2|minecraft:coral_fan_hang ["coral_direction" = 0, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang:003|minecraft:coral_fan_hang |3|minecraft:coral_fan_hang ["coral_direction" = 0, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang:004|minecraft:coral_fan_hang |4|minecraft:coral_fan_hang ["coral_direction" = 1, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang:005|minecraft:coral_fan_hang |5|minecraft:coral_fan_hang ["coral_direction" = 1, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang:006|minecraft:coral_fan_hang |6|minecraft:coral_fan_hang ["coral_direction" = 1, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang:007|minecraft:coral_fan_hang |7|minecraft:coral_fan_hang ["coral_direction" = 1, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang:008|minecraft:coral_fan_hang |8|minecraft:coral_fan_hang ["coral_direction" = 2, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang:009|minecraft:coral_fan_hang |9|minecraft:coral_fan_hang ["coral_direction" = 2, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang:010|minecraft:coral_fan_hang |10|minecraft:coral_fan_hang ["coral_direction" = 2, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang:011|minecraft:coral_fan_hang |11|minecraft:coral_fan_hang ["coral_direction" = 2, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
-|minecraft:coral_fan_hang:012|minecraft:coral_fan_hang |12|minecraft:coral_fan_hang ["coral_direction" = 3, "coral_hang_type_bit" = 0, "dead_bit" = 0]|
-|minecraft:coral_fan_hang:013|minecraft:coral_fan_hang |13|minecraft:coral_fan_hang ["coral_direction" = 3, "coral_hang_type_bit" = 1, "dead_bit" = 0]|
-|minecraft:coral_fan_hang:014|minecraft:coral_fan_hang |14|minecraft:coral_fan_hang ["coral_direction" = 3, "coral_hang_type_bit" = 0, "dead_bit" = 1]|
-|minecraft:coral_fan_hang:015|minecraft:coral_fan_hang |15|minecraft:coral_fan_hang ["coral_direction" = 3, "coral_hang_type_bit" = 1, "dead_bit" = 1]|
+|minecraft:coral_fan_hang2:000|minecraft:coral_fan_hang2 |0|minecraft:bubble_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang2:001|minecraft:coral_fan_hang2 |1|minecraft:fire_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang2:002|minecraft:coral_fan_hang2 |2|minecraft:dead_bubble_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang2:003|minecraft:coral_fan_hang2 |3|minecraft:dead_fire_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang2:004|minecraft:coral_fan_hang2 |4|bubble_coral_wall_fan:coral_fan_hang2 ["coral_direction" = 1]|
+|minecraft:coral_fan_hang2:005|minecraft:coral_fan_hang2 |5|minecraft:fire_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang2:006|minecraft:coral_fan_hang2 |6|minecraft:dead_bubble_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang2:007|minecraft:coral_fan_hang2 |7|minecraft:dead_bubble_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang2:008|minecraft:coral_fan_hang2 |8|minecraft:bubble_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang2:009|minecraft:coral_fan_hang2 |9|minecraft:fire_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang2:010|minecraft:coral_fan_hang2 |10|minecraft:dead_bubble_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang2:011|minecraft:coral_fan_hang2 |11|minecraft:dead_bubble_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang2:012|minecraft:coral_fan_hang2 |12|minecraft:bubble_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang2:013|minecraft:coral_fan_hang2 |13|minecraft:fire_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang2:014|minecraft:coral_fan_hang2 |14|minecraft:dead_bubble_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang2:015|minecraft:coral_fan_hang2 |15|minecraft:dead_bubble_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang3:000|minecraft:coral_fan_hang3 |0|minecraft:horn_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang3:001|minecraft:coral_fan_hang3 |1|minecraft:horn_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang3:002|minecraft:coral_fan_hang3 |2|minecraft:dead_horn_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang3:003|minecraft:coral_fan_hang3 |3|minecraft:dead_horn_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang3:004|minecraft:coral_fan_hang3 |4|minecraft:horn_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang3:005|minecraft:coral_fan_hang3 |5|minecraft:horn_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang3:006|minecraft:coral_fan_hang3 |6|minecraft:dead_horn_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang3:007|minecraft:coral_fan_hang3 |7|minecraft:dead_horn_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang3:008|minecraft:coral_fan_hang3 |8|minecraft:horn_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang3:009|minecraft:coral_fan_hang3 |9|minecraft:horn_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang3:010|minecraft:coral_fan_hang3 |10|minecraft:dead_horn_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang3:011|minecraft:coral_fan_hang3 |11|minecraft:dead_horn_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang3:012|minecraft:coral_fan_hang3 |12|minecraft:horn_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang3:013|minecraft:coral_fan_hang3 |13|minecraft:horn_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang3:014|minecraft:coral_fan_hang3 |14|minecraft:dead_horn_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang3:015|minecraft:coral_fan_hang3 |15|minecraft:dead_horn_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang:000|minecraft:coral_fan_hang |0|minecraft:tube_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang:001|minecraft:coral_fan_hang |1|minecraft:brain_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang:002|minecraft:coral_fan_hang |2|minecraft:dead_tube_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang:003|minecraft:coral_fan_hang |3|minecraft:dead_brain_coral_wall_fan ["coral_direction" = 0]|
+|minecraft:coral_fan_hang:004|minecraft:coral_fan_hang |4|minecraft:tube_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang:005|minecraft:coral_fan_hang |5|minecraft:brain_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang:006|minecraft:coral_fan_hang |6|minecraft:dead_tube_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang:007|minecraft:coral_fan_hang |7|minecraft:dead_brain_coral_wall_fan ["coral_direction" = 1]|
+|minecraft:coral_fan_hang:008|minecraft:coral_fan_hang |8|minecraft:tube_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang:009|minecraft:coral_fan_hang |9|minecraft:brain_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang:010|minecraft:coral_fan_hang |10|minecraft:dead_tube_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang:011|minecraft:coral_fan_hang |11|minecraft:dead_brain_coral_wall_fan ["coral_direction" = 2]|
+|minecraft:coral_fan_hang:012|minecraft:coral_fan_hang |12|minecraft:tube_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang:013|minecraft:coral_fan_hang |13|minecraft:brain_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang:014|minecraft:coral_fan_hang |14|minecraft:dead_tube_coral_wall_fan ["coral_direction" = 3]|
+|minecraft:coral_fan_hang:015|minecraft:coral_fan_hang |15|minecraft:dead_brain_coral_wall_fan ["coral_direction" = 3]|
 |minecraft:crimson_button:000|minecraft:crimson_button |0|minecraft:crimson_button ["button_pressed_bit" = 0, "facing_direction" = 0]|
 |minecraft:crimson_button:001|minecraft:crimson_button |1|minecraft:crimson_button ["button_pressed_bit" = 0, "facing_direction" = 1]|
 |minecraft:crimson_button:002|minecraft:crimson_button |2|minecraft:crimson_button ["button_pressed_bit" = 0, "facing_direction" = 2]|
@@ -1257,8 +1257,8 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:diorite_stairs:005|minecraft:diorite_stairs |5|minecraft:diorite_stairs ["upside_down_bit" = 1, "weirdo_direction" = 1]|
 |minecraft:diorite_stairs:006|minecraft:diorite_stairs |6|minecraft:diorite_stairs ["upside_down_bit" = 1, "weirdo_direction" = 2]|
 |minecraft:diorite_stairs:007|minecraft:diorite_stairs |7|minecraft:diorite_stairs ["upside_down_bit" = 1, "weirdo_direction" = 3]|
-|minecraft:dirt:000|minecraft:dirt |0|minecraft:dirt ["dirt_type" = "normal"]|
-|minecraft:dirt:001|minecraft:dirt |1|minecraft:dirt ["dirt_type" = "coarse"]|
+|minecraft:dirt:000|minecraft:dirt |0|minecraft:dirt|
+|minecraft:dirt:001|minecraft:dirt |1|minecraft:coarse_dirt|
 |minecraft:dispenser:000|minecraft:dispenser |0|minecraft:dispenser ["facing_direction" = 0, "triggered_bit" = 0]|
 |minecraft:dispenser:001|minecraft:dispenser |1|minecraft:dispenser ["facing_direction" = 1, "triggered_bit" = 0]|
 |minecraft:dispenser:002|minecraft:dispenser |2|minecraft:dispenser ["facing_direction" = 2, "triggered_bit" = 0]|
@@ -1275,102 +1275,102 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:dispenser:013|minecraft:dispenser |13|minecraft:dispenser ["facing_direction" = 5, "triggered_bit" = 1]|
 |minecraft:dispenser:014|minecraft:dispenser |14|minecraft:dispenser ["facing_direction" = 0, "triggered_bit" = 1]|
 |minecraft:dispenser:015|minecraft:dispenser |15|minecraft:dispenser ["facing_direction" = 0, "triggered_bit" = 1]|
-|minecraft:double_plant:000|minecraft:double_plant |0|minecraft:sunflower ["upper_block_bit" = 0]|
-|minecraft:double_plant:001|minecraft:double_plant |1|minecraft:lilac ["upper_block_bit" = 0]|
-|minecraft:double_plant:002|minecraft:double_plant |2|minecraft:tall_grass ["upper_block_bit" = 0]|
-|minecraft:double_plant:003|minecraft:double_plant |3|minecraft:large_fern ["upper_block_bit" = 0]|
-|minecraft:double_plant:004|minecraft:double_plant |4|minecraft:rose_bush ["upper_block_bit" = 0]|
-|minecraft:double_plant:005|minecraft:double_plant |5|minecraft:peony ["upper_block_bit" = 0]|
-|minecraft:double_plant:006|minecraft:double_plant |6|minecraft:sunflower ["upper_block_bit" = 0]|
-|minecraft:double_plant:007|minecraft:double_plant |7|minecraft:sunflower ["upper_block_bit" = 0]|
-|minecraft:double_plant:008|minecraft:double_plant |8|minecraft:sunflower ["upper_block_bit" = 1]|
-|minecraft:double_plant:009|minecraft:double_plant |9|minecraft:lilac ["upper_block_bit" = 1]|
-|minecraft:double_plant:010|minecraft:double_plant |10|minecraft:tall_grass ["upper_block_bit" = 1]|
-|minecraft:double_plant:011|minecraft:double_plant |11|minecraft:large_fern ["upper_block_bit" = 1]|
-|minecraft:double_plant:012|minecraft:double_plant |12|minecraft:rose_bush ["upper_block_bit" = 1]|
-|minecraft:double_plant:013|minecraft:double_plant |13|minecraft:peony ["upper_block_bit" = 1]|
-|minecraft:double_plant:014|minecraft:double_plant |14|minecraft:sunflower ["upper_block_bit" = 1]|
-|minecraft:double_plant:015|minecraft:double_plant |15|minecraft:sunflower ["upper_block_bit" = 1]|
-|minecraft:double_stone_block_slab2:000|minecraft:double_stone_block_slab2 |0|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "red_sandstone"]|
-|minecraft:double_stone_block_slab2:001|minecraft:double_stone_block_slab2 |1|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "purpur"]|
-|minecraft:double_stone_block_slab2:002|minecraft:double_stone_block_slab2 |2|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "prismarine_rough"]|
-|minecraft:double_stone_block_slab2:003|minecraft:double_stone_block_slab2 |3|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "prismarine_dark"]|
-|minecraft:double_stone_block_slab2:004|minecraft:double_stone_block_slab2 |4|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "prismarine_brick"]|
-|minecraft:double_stone_block_slab2:005|minecraft:double_stone_block_slab2 |5|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "mossy_cobblestone"]|
-|minecraft:double_stone_block_slab2:006|minecraft:double_stone_block_slab2 |6|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "smooth_sandstone"]|
-|minecraft:double_stone_block_slab2:007|minecraft:double_stone_block_slab2 |7|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "red_nether_brick"]|
-|minecraft:double_stone_block_slab2:008|minecraft:double_stone_block_slab2 |8|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "red_sandstone"]|
-|minecraft:double_stone_block_slab2:009|minecraft:double_stone_block_slab2 |9|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "purpur"]|
-|minecraft:double_stone_block_slab2:010|minecraft:double_stone_block_slab2 |10|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "prismarine_rough"]|
-|minecraft:double_stone_block_slab2:011|minecraft:double_stone_block_slab2 |11|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "prismarine_dark"]|
-|minecraft:double_stone_block_slab2:012|minecraft:double_stone_block_slab2 |12|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "prismarine_brick"]|
-|minecraft:double_stone_block_slab2:013|minecraft:double_stone_block_slab2 |13|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "mossy_cobblestone"]|
-|minecraft:double_stone_block_slab2:014|minecraft:double_stone_block_slab2 |14|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "smooth_sandstone"]|
-|minecraft:double_stone_block_slab2:015|minecraft:double_stone_block_slab2 |15|minecraft:double_stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "red_nether_brick"]|
-|minecraft:double_stone_block_slab3:000|minecraft:double_stone_block_slab3 |0|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "end_stone_brick"]|
-|minecraft:double_stone_block_slab3:001|minecraft:double_stone_block_slab3 |1|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "smooth_red_sandstone"]|
-|minecraft:double_stone_block_slab3:002|minecraft:double_stone_block_slab3 |2|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "polished_andesite"]|
-|minecraft:double_stone_block_slab3:003|minecraft:double_stone_block_slab3 |3|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "andesite"]|
-|minecraft:double_stone_block_slab3:004|minecraft:double_stone_block_slab3 |4|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "diorite"]|
-|minecraft:double_stone_block_slab3:005|minecraft:double_stone_block_slab3 |5|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "polished_diorite"]|
-|minecraft:double_stone_block_slab3:006|minecraft:double_stone_block_slab3 |6|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "granite"]|
-|minecraft:double_stone_block_slab3:007|minecraft:double_stone_block_slab3 |7|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "polished_granite"]|
-|minecraft:double_stone_block_slab3:008|minecraft:double_stone_block_slab3 |8|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "end_stone_brick"]|
-|minecraft:double_stone_block_slab3:009|minecraft:double_stone_block_slab3 |9|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "smooth_red_sandstone"]|
-|minecraft:double_stone_block_slab3:010|minecraft:double_stone_block_slab3 |10|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "polished_andesite"]|
-|minecraft:double_stone_block_slab3:011|minecraft:double_stone_block_slab3 |11|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "andesite"]|
-|minecraft:double_stone_block_slab3:012|minecraft:double_stone_block_slab3 |12|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "diorite"]|
-|minecraft:double_stone_block_slab3:013|minecraft:double_stone_block_slab3 |13|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "polished_diorite"]|
-|minecraft:double_stone_block_slab3:014|minecraft:double_stone_block_slab3 |14|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "granite"]|
-|minecraft:double_stone_block_slab3:015|minecraft:double_stone_block_slab3 |15|minecraft:double_stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "polished_granite"]|
-|minecraft:double_stone_block_slab4:000|minecraft:double_stone_block_slab4 |0|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:double_stone_block_slab4:001|minecraft:double_stone_block_slab4 |1|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "smooth_quartz"]|
-|minecraft:double_stone_block_slab4:002|minecraft:double_stone_block_slab4 |2|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "stone"]|
-|minecraft:double_stone_block_slab4:003|minecraft:double_stone_block_slab4 |3|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "cut_sandstone"]|
-|minecraft:double_stone_block_slab4:004|minecraft:double_stone_block_slab4 |4|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "cut_red_sandstone"]|
-|minecraft:double_stone_block_slab4:005|minecraft:double_stone_block_slab4 |5|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:double_stone_block_slab4:006|minecraft:double_stone_block_slab4 |6|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:double_stone_block_slab4:007|minecraft:double_stone_block_slab4 |7|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:double_stone_block_slab4:008|minecraft:double_stone_block_slab4 |8|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:double_stone_block_slab4:009|minecraft:double_stone_block_slab4 |9|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "smooth_quartz"]|
-|minecraft:double_stone_block_slab4:010|minecraft:double_stone_block_slab4 |10|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "stone"]|
-|minecraft:double_stone_block_slab4:011|minecraft:double_stone_block_slab4 |11|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "cut_sandstone"]|
-|minecraft:double_stone_block_slab4:012|minecraft:double_stone_block_slab4 |12|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "cut_red_sandstone"]|
-|minecraft:double_stone_block_slab4:013|minecraft:double_stone_block_slab4 |13|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:double_stone_block_slab4:014|minecraft:double_stone_block_slab4 |14|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:double_stone_block_slab4:015|minecraft:double_stone_block_slab4 |15|minecraft:double_stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:double_stone_block_slab:000|minecraft:double_stone_block_slab |0|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "smooth_stone"]|
-|minecraft:double_stone_block_slab:001|minecraft:double_stone_block_slab |1|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "sandstone"]|
-|minecraft:double_stone_block_slab:002|minecraft:double_stone_block_slab |2|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "wood"]|
-|minecraft:double_stone_block_slab:003|minecraft:double_stone_block_slab |3|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "cobblestone"]|
-|minecraft:double_stone_block_slab:004|minecraft:double_stone_block_slab |4|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "brick"]|
-|minecraft:double_stone_block_slab:005|minecraft:double_stone_block_slab |5|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "stone_brick"]|
-|minecraft:double_stone_block_slab:006|minecraft:double_stone_block_slab |6|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "quartz"]|
-|minecraft:double_stone_block_slab:007|minecraft:double_stone_block_slab |7|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "bottom", "stone_slab_type" = "nether_brick"]|
-|minecraft:double_stone_block_slab:008|minecraft:double_stone_block_slab |8|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "smooth_stone"]|
-|minecraft:double_stone_block_slab:009|minecraft:double_stone_block_slab |9|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "sandstone"]|
-|minecraft:double_stone_block_slab:010|minecraft:double_stone_block_slab |10|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "wood"]|
-|minecraft:double_stone_block_slab:011|minecraft:double_stone_block_slab |11|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "cobblestone"]|
-|minecraft:double_stone_block_slab:012|minecraft:double_stone_block_slab |12|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "brick"]|
-|minecraft:double_stone_block_slab:013|minecraft:double_stone_block_slab |13|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "stone_brick"]|
-|minecraft:double_stone_block_slab:014|minecraft:double_stone_block_slab |14|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "quartz"]|
-|minecraft:double_stone_block_slab:015|minecraft:double_stone_block_slab |15|minecraft:double_stone_block_slab ["minecraft:vertical_half" = "top", "stone_slab_type" = "nether_brick"]|
-|minecraft:double_wooden_slab:000|minecraft:double_wooden_slab |0|minecraft:oak_double_slab ["minecraft:vertical_half" = "bottom"]|
-|minecraft:double_wooden_slab:001|minecraft:double_wooden_slab |1|minecraft:spruce_double_slab ["minecraft:vertical_half" = "bottom"]|
-|minecraft:double_wooden_slab:002|minecraft:double_wooden_slab |2|minecraft:birch_double_slab ["minecraft:vertical_half" = "bottom"]|
-|minecraft:double_wooden_slab:003|minecraft:double_wooden_slab |3|minecraft:jungle_double_slab ["minecraft:vertical_half" = "bottom"]|
-|minecraft:double_wooden_slab:004|minecraft:double_wooden_slab |4|minecraft:acacia_double_slab ["minecraft:vertical_half" = "bottom"]|
-|minecraft:double_wooden_slab:005|minecraft:double_wooden_slab |5|minecraft:dark_oak_double_slab ["minecraft:vertical_half" = "bottom"]|
-|minecraft:double_wooden_slab:006|minecraft:double_wooden_slab |6|minecraft:oak_double_slab ["minecraft:vertical_half" = "bottom"]|
-|minecraft:double_wooden_slab:007|minecraft:double_wooden_slab |7|minecraft:oak_double_slab ["minecraft:vertical_half" = "bottom"]|
-|minecraft:double_wooden_slab:008|minecraft:double_wooden_slab |8|minecraft:oak_double_slab ["minecraft:vertical_half" = "top"]|
-|minecraft:double_wooden_slab:009|minecraft:double_wooden_slab |9|minecraft:spruce_double_slab ["minecraft:vertical_half" = "top"]|
-|minecraft:double_wooden_slab:010|minecraft:double_wooden_slab |10|minecraft:birch_double_slab ["minecraft:vertical_half" = "top"]|
-|minecraft:double_wooden_slab:011|minecraft:double_wooden_slab |11|minecraft:jungle_double_slab ["minecraft:vertical_half" = "top"]|
-|minecraft:double_wooden_slab:012|minecraft:double_wooden_slab |12|minecraft:acacia_double_slab ["minecraft:vertical_half" = "top"]|
-|minecraft:double_wooden_slab:013|minecraft:double_wooden_slab |13|minecraft:dark_oak_double_slab ["minecraft:vertical_half" = "top"]|
-|minecraft:double_wooden_slab:014|minecraft:double_wooden_slab |14|minecraft:oak_double_slab ["minecraft:vertical_half" = "top"]|
-|minecraft:double_wooden_slab:015|minecraft:double_wooden_slab |15|minecraft:oak_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_plant:000|minecraft:double_plant |0|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 0]|
+|minecraft:double_plant:001|minecraft:double_plant |1|minecraft:double_plant ["double_plant_type" = "syringa", "upper_block_bit" = 0]|
+|minecraft:double_plant:002|minecraft:double_plant |2|minecraft:double_plant ["double_plant_type" = "grass", "upper_block_bit" = 0]|
+|minecraft:double_plant:003|minecraft:double_plant |3|minecraft:double_plant ["double_plant_type" = "fern", "upper_block_bit" = 0]|
+|minecraft:double_plant:004|minecraft:double_plant |4|minecraft:double_plant ["double_plant_type" = "rose", "upper_block_bit" = 0]|
+|minecraft:double_plant:005|minecraft:double_plant |5|minecraft:double_plant ["double_plant_type" = "paeonia", "upper_block_bit" = 0]|
+|minecraft:double_plant:006|minecraft:double_plant |6|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 0]|
+|minecraft:double_plant:007|minecraft:double_plant |7|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 0]|
+|minecraft:double_plant:008|minecraft:double_plant |8|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 1]|
+|minecraft:double_plant:009|minecraft:double_plant |9|minecraft:double_plant ["double_plant_type" = "syringa", "upper_block_bit" = 1]|
+|minecraft:double_plant:010|minecraft:double_plant |10|minecraft:double_plant ["double_plant_type" = "grass", "upper_block_bit" = 1]|
+|minecraft:double_plant:011|minecraft:double_plant |11|minecraft:double_plant ["double_plant_type" = "fern", "upper_block_bit" = 1]|
+|minecraft:double_plant:012|minecraft:double_plant |12|minecraft:double_plant ["double_plant_type" = "rose", "upper_block_bit" = 1]|
+|minecraft:double_plant:013|minecraft:double_plant |13|minecraft:double_plant ["double_plant_type" = "paeonia", "upper_block_bit" = 1]|
+|minecraft:double_plant:014|minecraft:double_plant |14|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 1]|
+|minecraft:double_plant:015|minecraft:double_plant |15|minecraft:double_plant ["double_plant_type" = "sunflower", "upper_block_bit" = 1]|
+|minecraft:double_stone_block_slab2:000|minecraft:double_stone_block_slab2 |0|minecraft:red_sandstone_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab2:001|minecraft:double_stone_block_slab2 |1|minecraft:purpur_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab2:002|minecraft:double_stone_block_slab2 |2|minecraft:prismarine_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab2:003|minecraft:double_stone_block_slab2 |3|minecraft:dark_prismarine_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab2:004|minecraft:double_stone_block_slab2 |4|minecraft:prismarine_brick_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab2:005|minecraft:double_stone_block_slab2 |5|minecraft:mossy_cobblestone_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab2:006|minecraft:double_stone_block_slab2 |6|minecraft:smooth_sandstone_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab2:007|minecraft:double_stone_block_slab2 |7|minecraft:red_nether_brick_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab2:008|minecraft:double_stone_block_slab2 |8|minecraft:red_sandstone_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab2:009|minecraft:double_stone_block_slab2 |9|minecraft:purpur_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab2:010|minecraft:double_stone_block_slab2 |10|minecraft:prismarine_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab2:011|minecraft:double_stone_block_slab2 |11|minecraft:dark_prismarine_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab2:012|minecraft:double_stone_block_slab2 |12|minecraft:prismarine_brick_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab2:013|minecraft:double_stone_block_slab2 |13|minecraft:mossy_cobblestone_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab2:014|minecraft:double_stone_block_slab2 |14|minecraft:smooth_sandstone_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab2:015|minecraft:double_stone_block_slab2 |15|minecraft:red_nether_brick_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab3:000|minecraft:double_stone_block_slab3 |0|minecraft:end_stone_brick_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab3:001|minecraft:double_stone_block_slab3 |1|minecraft:smooth_red_sandstone_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab3:002|minecraft:double_stone_block_slab3 |2|minecraft:polished_andesite_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab3:003|minecraft:double_stone_block_slab3 |3|minecraft:andesite_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab3:004|minecraft:double_stone_block_slab3 |4|minecraft:diorite_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab3:005|minecraft:double_stone_block_slab3 |5|minecraft:polished_diorite_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab3:006|minecraft:double_stone_block_slab3 |6|minecraft:granite_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab3:007|minecraft:double_stone_block_slab3 |7|minecraft:polished_granite_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab3:008|minecraft:double_stone_block_slab3 |8|minecraft:end_stone_brick_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab3:009|minecraft:double_stone_block_slab3 |9|minecraft:smooth_red_sandstone_double_slab ["minecraft:vertical_half" = "top""]|
+|minecraft:double_stone_block_slab3:010|minecraft:double_stone_block_slab3 |10|minecraft:polished_andesite_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab3:011|minecraft:double_stone_block_slab3 |11|minecraft:andesite_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab3:012|minecraft:double_stone_block_slab3 |12|minecraft:diorite_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab3:013|minecraft:double_stone_block_slab3 |13|minecraft:polished_diorite_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab3:014|minecraft:double_stone_block_slab3 |14|minecraft:granite_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab3:015|minecraft:double_stone_block_slab3 |15|minecraft:polished_granite_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab4:000|minecraft:double_stone_block_slab4 |0|minecraft:mossy_stone_brick_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab4:001|minecraft:double_stone_block_slab4 |1|minecraft:smooth_quartz_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab4:002|minecraft:double_stone_block_slab4 |2|minecraft:normal_stone_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab4:003|minecraft:double_stone_block_slab4 |3|minecraft:cut_sandstone_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab4:004|minecraft:double_stone_block_slab4 |4|minecraft:cut_red_sandstone_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab4:005|minecraft:double_stone_block_slab4 |5|minecraft:mossy_stone_brick_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab4:006|minecraft:double_stone_block_slab4 |6|minecraft:mossy_stone_brick_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab4:007|minecraft:double_stone_block_slab4 |7|minecraft:mossy_stone_brick_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab4:008|minecraft:double_stone_block_slab4 |8|minecraft:mossy_stone_brick_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab4:009|minecraft:double_stone_block_slab4 |9|minecraft:smooth_quartz_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab4:010|minecraft:double_stone_block_slab4 |10|minecraft:normal_stone_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab4:011|minecraft:double_stone_block_slab4 |11|minecraft:cut_sandstone_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab4:012|minecraft:double_stone_block_slab4 |12|minecraft:cut_red_sandstone_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab4:013|minecraft:double_stone_block_slab4 |13|minecraft:mossy_stone_brick_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab4:014|minecraft:double_stone_block_slab4 |14|minecraft:mossy_stone_brick_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab4:015|minecraft:double_stone_block_slab4 |15|minecraft:mossy_stone_brick_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab:000|minecraft:double_stone_block_slab |0|minecraft:smooth_stone_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab:001|minecraft:double_stone_block_slab |1|minecraft:sandstone_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab:002|minecraft:double_stone_block_slab |2|minecraft:petrified_oak_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab:003|minecraft:double_stone_block_slab |3|minecraft:cobblestone_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab:004|minecraft:double_stone_block_slab |4|minecraft:brick_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab:005|minecraft:double_stone_block_slab |5|minecraft:stone_brick_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab:006|minecraft:double_stone_block_slab |6|minecraft:quartz_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab:007|minecraft:double_stone_block_slab |7|minecraft:nether_brick_double_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:double_stone_block_slab:008|minecraft:double_stone_block_slab |8|minecraft:smooth_stone_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab:009|minecraft:double_stone_block_slab |9|minecraft:sandstone_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab:010|minecraft:double_stone_block_slab |10|minecraft:petrified_oak_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab:011|minecraft:double_stone_block_slab |11|minecraft:cobblestone_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab:012|minecraft:double_stone_block_slab |12|minecraft:brick_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab:013|minecraft:double_stone_block_slab |13|minecraft:stone_brick_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab:014|minecraft:double_stone_block_slab |14|minecraft:quartz_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_stone_block_slab:015|minecraft:double_stone_block_slab |15|minecraft:nether_brick_double_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:double_wooden_slab:000|minecraft:double_wooden_slab |0|minecraft:oak_double_slab ["top_slot_bit" = 0]|
+|minecraft:double_wooden_slab:001|minecraft:double_wooden_slab |1|minecraft:spruce_double_slab ["top_slot_bit" = 0]|
+|minecraft:double_wooden_slab:002|minecraft:double_wooden_slab |2|minecraft:birch_double_slab ["top_slot_bit" = 0]|
+|minecraft:double_wooden_slab:003|minecraft:double_wooden_slab |3|minecraft:jungle_double_slab ["top_slot_bit" = 0]|
+|minecraft:double_wooden_slab:004|minecraft:double_wooden_slab |4|minecraft:acacia_double_slab ["top_slot_bit" = 0]|
+|minecraft:double_wooden_slab:005|minecraft:double_wooden_slab |5|minecraft:dark_oak_double_slab ["top_slot_bit" = 0]|
+|minecraft:double_wooden_slab:006|minecraft:double_wooden_slab |6|minecraft:oak_double_slab ["top_slot_bit" = 0]|
+|minecraft:double_wooden_slab:007|minecraft:double_wooden_slab |7|minecraft:oak_double_slab ["top_slot_bit" = 0]|
+|minecraft:double_wooden_slab:008|minecraft:double_wooden_slab |8|minecraft:oak_double_slab ["top_slot_bit" = 1]|
+|minecraft:double_wooden_slab:009|minecraft:double_wooden_slab |9|minecraft:spruce_double_slab ["top_slot_bit" = 1]|
+|minecraft:double_wooden_slab:010|minecraft:double_wooden_slab |10|minecraft:birch_double_slab ["top_slot_bit" = 1]|
+|minecraft:double_wooden_slab:011|minecraft:double_wooden_slab |11|minecraft:jungle_double_slab ["top_slot_bit" = 1]|
+|minecraft:double_wooden_slab:012|minecraft:double_wooden_slab |12|minecraft:acacia_double_slab ["top_slot_bit" = 1]|
+|minecraft:double_wooden_slab:013|minecraft:double_wooden_slab |13|minecraft:dark_oak_double_slab ["top_slot_bit" = 1]|
+|minecraft:double_wooden_slab:014|minecraft:double_wooden_slab |14|minecraft:oak_double_slab ["top_slot_bit" = 1]|
+|minecraft:double_wooden_slab:015|minecraft:double_wooden_slab |15|minecraft:oak_double_slab ["top_slot_bit" = 1]|
 |minecraft:dropper:000|minecraft:dropper |0|minecraft:dropper ["facing_direction" = 0, "triggered_bit" = 0]|
 |minecraft:dropper:001|minecraft:dropper |1|minecraft:dropper ["facing_direction" = 1, "triggered_bit" = 0]|
 |minecraft:dropper:002|minecraft:dropper |2|minecraft:dropper ["facing_direction" = 2, "triggered_bit" = 0]|
@@ -1409,8 +1409,8 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:end_rod:003|minecraft:end_rod |3|minecraft:end_rod ["facing_direction" = 3]|
 |minecraft:end_rod:004|minecraft:end_rod |4|minecraft:end_rod ["facing_direction" = 4]|
 |minecraft:end_rod:005|minecraft:end_rod |5|minecraft:end_rod ["facing_direction" = 5]|
-|minecraft:end_rod:006|minecraft:end_rod |6|minecraft:light_block ["block_light_level" = 14]|
-|minecraft:end_rod:007|minecraft:end_rod |7|minecraft:light_block ["block_light_level" = 14]|
+|minecraft:end_rod:006|minecraft:end_rod |6|minecraft:light_block_14|
+|minecraft:end_rod:007|minecraft:end_rod |7|minecraft:light_block_14|
 |minecraft:ender_chest:000|minecraft:ender_chest |0|minecraft:ender_chest ["minecraft:cardinal_direction" = "north"]|
 |minecraft:ender_chest:001|minecraft:ender_chest |1|minecraft:ender_chest ["minecraft:cardinal_direction" = "north"]|
 |minecraft:ender_chest:002|minecraft:ender_chest |2|minecraft:ender_chest ["minecraft:cardinal_direction" = "north"]|
@@ -2065,22 +2065,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:lever:013|minecraft:lever |13|minecraft:lever ["lever_direction" = "up_north_south", "open_bit" = 1]|
 |minecraft:lever:014|minecraft:lever |14|minecraft:lever ["lever_direction" = "up_east_west", "open_bit" = 1]|
 |minecraft:lever:015|minecraft:lever |15|minecraft:lever ["lever_direction" = "down_north_south", "open_bit" = 1]|
-|minecraft:light_block:000|minecraft:light_block |0|minecraft:light_block ["block_light_level" = 0]|
-|minecraft:light_block:001|minecraft:light_block |1|minecraft:light_block ["block_light_level" = 1]|
-|minecraft:light_block:002|minecraft:light_block |2|minecraft:light_block ["block_light_level" = 2]|
-|minecraft:light_block:003|minecraft:light_block |3|minecraft:light_block ["block_light_level" = 3]|
-|minecraft:light_block:004|minecraft:light_block |4|minecraft:light_block ["block_light_level" = 4]|
-|minecraft:light_block:005|minecraft:light_block |5|minecraft:light_block ["block_light_level" = 5]|
-|minecraft:light_block:006|minecraft:light_block |6|minecraft:light_block ["block_light_level" = 6]|
-|minecraft:light_block:007|minecraft:light_block |7|minecraft:light_block ["block_light_level" = 7]|
-|minecraft:light_block:008|minecraft:light_block |8|minecraft:light_block ["block_light_level" = 8]|
-|minecraft:light_block:009|minecraft:light_block |9|minecraft:light_block ["block_light_level" = 9]|
-|minecraft:light_block:010|minecraft:light_block |10|minecraft:light_block ["block_light_level" = 10]|
-|minecraft:light_block:011|minecraft:light_block |11|minecraft:light_block ["block_light_level" = 11]|
-|minecraft:light_block:012|minecraft:light_block |12|minecraft:light_block ["block_light_level" = 12]|
-|minecraft:light_block:013|minecraft:light_block |13|minecraft:light_block ["block_light_level" = 13]|
-|minecraft:light_block:014|minecraft:light_block |14|minecraft:light_block ["block_light_level" = 14]|
-|minecraft:light_block:015|minecraft:light_block |15|minecraft:light_block ["block_light_level" = 15]|
+|minecraft:light_block:000|minecraft:light_block |0|minecraft:light_block_0|
+|minecraft:light_block:001|minecraft:light_block |1|minecraft:light_block_1|
+|minecraft:light_block:002|minecraft:light_block |2|minecraft:light_block_2|
+|minecraft:light_block:003|minecraft:light_block |3|minecraft:light_block_3|
+|minecraft:light_block:004|minecraft:light_block |4|minecraft:light_block_4|
+|minecraft:light_block:005|minecraft:light_block |5|minecraft:light_block_5|
+|minecraft:light_block:006|minecraft:light_block |6|minecraft:light_block_6|
+|minecraft:light_block:007|minecraft:light_block |7|minecraft:light_block_7|
+|minecraft:light_block:008|minecraft:light_block |8|minecraft:light_block_8|
+|minecraft:light_block:009|minecraft:light_block |9|minecraft:light_block_9|
+|minecraft:light_block:010|minecraft:light_block |10|minecraft:light_block10_|
+|minecraft:light_block:011|minecraft:light_block |11|minecraft:light_block_11|
+|minecraft:light_block:012|minecraft:light_block |12|minecraft:light_block_12|
+|minecraft:light_block:013|minecraft:light_block |13|minecraft:light_block_13|
+|minecraft:light_block:014|minecraft:light_block |14|minecraft:light_block_14|
+|minecraft:light_block:015|minecraft:light_block |15|minecraft:light_block_15|
 |minecraft:light_blue_candle:000|minecraft:light_blue_candle |0|minecraft:light_blue_candle ["candles" = 0, "lit" = 0]|
 |minecraft:light_blue_candle:001|minecraft:light_blue_candle |1|minecraft:light_blue_candle ["candles" = 1, "lit" = 0]|
 |minecraft:light_blue_candle:002|minecraft:light_blue_candle |2|minecraft:light_blue_candle ["candles" = 2, "lit" = 0]|
@@ -2351,14 +2351,14 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:melon_stem:005|minecraft:melon_stem |5|minecraft:melon_stem ["growth" = 5]|
 |minecraft:melon_stem:006|minecraft:melon_stem |6|minecraft:melon_stem ["growth" = 6]|
 |minecraft:melon_stem:007|minecraft:melon_stem |7|minecraft:melon_stem ["growth" = 7]|
-|minecraft:monster_egg:000|minecraft:monster_egg |0|minecraft:monster_egg ["monster_egg_stone_type" = "stone"]|
-|minecraft:monster_egg:001|minecraft:monster_egg |1|minecraft:monster_egg ["monster_egg_stone_type" = "cobblestone"]|
-|minecraft:monster_egg:002|minecraft:monster_egg |2|minecraft:monster_egg ["monster_egg_stone_type" = "stone_brick"]|
-|minecraft:monster_egg:003|minecraft:monster_egg |3|minecraft:monster_egg ["monster_egg_stone_type" = "mossy_stone_brick"]|
-|minecraft:monster_egg:004|minecraft:monster_egg |4|minecraft:monster_egg ["monster_egg_stone_type" = "cracked_stone_brick"]|
-|minecraft:monster_egg:005|minecraft:monster_egg |5|minecraft:monster_egg ["monster_egg_stone_type" = "chiseled_stone_brick"]|
-|minecraft:monster_egg:006|minecraft:monster_egg |6|minecraft:monster_egg ["monster_egg_stone_type" = "stone"]|
-|minecraft:monster_egg:007|minecraft:monster_egg |7|minecraft:monster_egg ["monster_egg_stone_type" = "stone"]|
+|minecraft:monster_egg:000|minecraft:monster_egg |0|minecraft:infested_stone|
+|minecraft:monster_egg:001|minecraft:monster_egg |1|minecraft:infested_cobblestone|
+|minecraft:monster_egg:002|minecraft:monster_egg |2|minecraft:infested_stone_bricks|
+|minecraft:monster_egg:003|minecraft:monster_egg |3|minecraft:infested_mossy_stone_bricks|
+|minecraft:monster_egg:004|minecraft:monster_egg |4|minecraft:infested_cracked_stone_bricks|
+|minecraft:monster_egg:005|minecraft:monster_egg |5|minecraft:infested_chiseled_stone_bricks|
+|minecraft:monster_egg:006|minecraft:monster_egg |6|minecraft:infested_stone|
+|minecraft:monster_egg:007|minecraft:monster_egg |7|minecraft:infested_stone|
 |minecraft:mossy_cobblestone_stairs:000|minecraft:mossy_cobblestone_stairs |0|minecraft:mossy_cobblestone_stairs ["upside_down_bit" = 0, "weirdo_direction" = 0]|
 |minecraft:mossy_cobblestone_stairs:001|minecraft:mossy_cobblestone_stairs |1|minecraft:mossy_cobblestone_stairs ["upside_down_bit" = 0, "weirdo_direction" = 1]|
 |minecraft:mossy_cobblestone_stairs:002|minecraft:mossy_cobblestone_stairs |2|minecraft:mossy_cobblestone_stairs ["upside_down_bit" = 0, "weirdo_direction" = 2]|
@@ -2611,10 +2611,10 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:powered_repeater:013|minecraft:powered_repeater |13|minecraft:powered_repeater ["minecraft:cardinal_direction" = "west", "repeater_delay" = 3]|
 |minecraft:powered_repeater:014|minecraft:powered_repeater |14|minecraft:powered_repeater ["minecraft:cardinal_direction" = "north", "repeater_delay" = 3]|
 |minecraft:powered_repeater:015|minecraft:powered_repeater |15|minecraft:powered_repeater ["minecraft:cardinal_direction" = "east", "repeater_delay" = 3]|
-|minecraft:prismarine:000|minecraft:prismarine |0|minecraft:prismarine ["prismarine_block_type" = "default"]|
-|minecraft:prismarine:001|minecraft:prismarine |1|minecraft:prismarine ["prismarine_block_type" = "dark"]|
-|minecraft:prismarine:002|minecraft:prismarine |2|minecraft:prismarine ["prismarine_block_type" = "bricks"]|
-|minecraft:prismarine:003|minecraft:prismarine |3|minecraft:prismarine ["prismarine_block_type" = "default"]|
+|minecraft:prismarine:000|minecraft:prismarine |0|minecraft:prismarine|
+|minecraft:prismarine:001|minecraft:prismarine |1|minecraft:dark_prismarine|
+|minecraft:prismarine:002|minecraft:prismarine |2|minecraft:prismarine_bricks|
+|minecraft:prismarine:003|minecraft:prismarine |3|minecraft:prismarine|
 |minecraft:prismarine_bricks_stairs:000|minecraft:prismarine_bricks_stairs |0|minecraft:prismarine_bricks_stairs ["upside_down_bit" = 0, "weirdo_direction" = 0]|
 |minecraft:prismarine_bricks_stairs:001|minecraft:prismarine_bricks_stairs |1|minecraft:prismarine_bricks_stairs ["upside_down_bit" = 0, "weirdo_direction" = 1]|
 |minecraft:prismarine_bricks_stairs:002|minecraft:prismarine_bricks_stairs |2|minecraft:prismarine_bricks_stairs ["upside_down_bit" = 0, "weirdo_direction" = 2]|
@@ -2685,22 +2685,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:purpur_stairs:005|minecraft:purpur_stairs |5|minecraft:purpur_stairs ["upside_down_bit" = 1, "weirdo_direction" = 1]|
 |minecraft:purpur_stairs:006|minecraft:purpur_stairs |6|minecraft:purpur_stairs ["upside_down_bit" = 1, "weirdo_direction" = 2]|
 |minecraft:purpur_stairs:007|minecraft:purpur_stairs |7|minecraft:purpur_stairs ["upside_down_bit" = 1, "weirdo_direction" = 3]|
-|minecraft:quartz_block:000|minecraft:quartz_block |0|minecraft:quartz_block ["chisel_type" = "default", "pillar_axis" = "y"]|
-|minecraft:quartz_block:001|minecraft:quartz_block |1|minecraft:quartz_block ["chisel_type" = "chiseled", "pillar_axis" = "y"]|
-|minecraft:quartz_block:002|minecraft:quartz_block |2|minecraft:quartz_block ["chisel_type" = "lines", "pillar_axis" = "y"]|
-|minecraft:quartz_block:003|minecraft:quartz_block |3|minecraft:quartz_block ["chisel_type" = "smooth", "pillar_axis" = "y"]|
-|minecraft:quartz_block:004|minecraft:quartz_block |4|minecraft:quartz_block ["chisel_type" = "default", "pillar_axis" = "x"]|
-|minecraft:quartz_block:005|minecraft:quartz_block |5|minecraft:quartz_block ["chisel_type" = "chiseled", "pillar_axis" = "x"]|
-|minecraft:quartz_block:006|minecraft:quartz_block |6|minecraft:quartz_block ["chisel_type" = "lines", "pillar_axis" = "x"]|
-|minecraft:quartz_block:007|minecraft:quartz_block |7|minecraft:quartz_block ["chisel_type" = "smooth", "pillar_axis" = "x"]|
-|minecraft:quartz_block:008|minecraft:quartz_block |8|minecraft:quartz_block ["chisel_type" = "default", "pillar_axis" = "z"]|
-|minecraft:quartz_block:009|minecraft:quartz_block |9|minecraft:quartz_block ["chisel_type" = "chiseled", "pillar_axis" = "z"]|
-|minecraft:quartz_block:010|minecraft:quartz_block |10|minecraft:quartz_block ["chisel_type" = "lines", "pillar_axis" = "z"]|
-|minecraft:quartz_block:011|minecraft:quartz_block |11|minecraft:quartz_block ["chisel_type" = "smooth", "pillar_axis" = "z"]|
-|minecraft:quartz_block:012|minecraft:quartz_block |12|minecraft:quartz_block ["chisel_type" = "default", "pillar_axis" = "y"]|
-|minecraft:quartz_block:013|minecraft:quartz_block |13|minecraft:quartz_block ["chisel_type" = "chiseled", "pillar_axis" = "y"]|
-|minecraft:quartz_block:014|minecraft:quartz_block |14|minecraft:quartz_block ["chisel_type" = "lines", "pillar_axis" = "y"]|
-|minecraft:quartz_block:015|minecraft:quartz_block |15|minecraft:quartz_block ["chisel_type" = "smooth", "pillar_axis" = "y"]|
+|minecraft:quartz_block:000|minecraft:quartz_block |0|minecraft:quartz_block ["pillar_axis" = "y"]|
+|minecraft:quartz_block:001|minecraft:quartz_block |1|minecraft:chiseled_quartz_block ["pillar_axis" = "y"]|
+|minecraft:quartz_block:002|minecraft:quartz_block |2|minecraft:quartz_pillar ["pillar_axis" = "y"]|
+|minecraft:quartz_block:003|minecraft:quartz_block |3|minecraft:smooth_quartz ["pillar_axis" = "y"]|
+|minecraft:quartz_block:004|minecraft:quartz_block |4|minecraft:quartz_block ["pillar_axis" = "x"]|
+|minecraft:quartz_block:005|minecraft:quartz_block |5|minecraft:chiseled_quartz_block ["pillar_axis" = "x"]|
+|minecraft:quartz_block:006|minecraft:quartz_block |6|minecraft:quartz_pillar ["pillar_axis" = "x"]|
+|minecraft:quartz_block:007|minecraft:quartz_block |7|minecraft:smooth_quartz ["pillar_axis" = "x"]|
+|minecraft:quartz_block:008|minecraft:quartz_block |8|minecraft:quartz_block ["pillar_axis" = "z"]|
+|minecraft:quartz_block:009|minecraft:quartz_block |9|minecraft:chiseled_quartz_block ["pillar_axis" = "z"]|
+|minecraft:quartz_block:010|minecraft:quartz_block |10|minecraft:quartz_pillar ["pillar_axis" = "z"]|
+|minecraft:quartz_block:011|minecraft:quartz_block |11|minecraft:smooth_quartz ["pillar_axis" = "z"]|
+|minecraft:quartz_block:012|minecraft:quartz_block |12|minecraft:quartz_block ["pillar_axis" = "y"]|
+|minecraft:quartz_block:013|minecraft:quartz_block |13|minecraft:chiseled_quartz_block ["pillar_axis" = "y"]|
+|minecraft:quartz_block:014|minecraft:quartz_block |14|minecraft:quartz_pillar ["pillar_axis" = "y"]|
+|minecraft:quartz_block:015|minecraft:quartz_block |15|minecraft:smooth_quartz ["pillar_axis" = "y"]|
 |minecraft:quartz_stairs:000|minecraft:quartz_stairs |0|minecraft:quartz_stairs ["upside_down_bit" = 0, "weirdo_direction" = 0]|
 |minecraft:quartz_stairs:001|minecraft:quartz_stairs |1|minecraft:quartz_stairs ["upside_down_bit" = 0, "weirdo_direction" = 1]|
 |minecraft:quartz_stairs:002|minecraft:quartz_stairs |2|minecraft:quartz_stairs ["upside_down_bit" = 0, "weirdo_direction" = 2]|
@@ -2783,10 +2783,10 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:red_nether_brick_stairs:005|minecraft:red_nether_brick_stairs |5|minecraft:red_nether_brick_stairs ["upside_down_bit" = 1, "weirdo_direction" = 1]|
 |minecraft:red_nether_brick_stairs:006|minecraft:red_nether_brick_stairs |6|minecraft:red_nether_brick_stairs ["upside_down_bit" = 1, "weirdo_direction" = 2]|
 |minecraft:red_nether_brick_stairs:007|minecraft:red_nether_brick_stairs |7|minecraft:red_nether_brick_stairs ["upside_down_bit" = 1, "weirdo_direction" = 3]|
-|minecraft:red_sandstone:000|minecraft:red_sandstone |0|minecraft:red_sandstone ["sand_stone_type" = "default"]|
-|minecraft:red_sandstone:001|minecraft:red_sandstone |1|minecraft:red_sandstone ["sand_stone_type" = "heiroglyphs"]|
-|minecraft:red_sandstone:002|minecraft:red_sandstone |2|minecraft:red_sandstone ["sand_stone_type" = "cut"]|
-|minecraft:red_sandstone:003|minecraft:red_sandstone |3|minecraft:red_sandstone ["sand_stone_type" = "smooth"]|
+|minecraft:red_sandstone:000|minecraft:red_sandstone |0|minecraft:red_sandstone|
+|minecraft:red_sandstone:001|minecraft:red_sandstone |1|minecraft:chiseled_red_sandstone|
+|minecraft:red_sandstone:002|minecraft:red_sandstone |2|minecraft:cut_red_sandstone|
+|minecraft:red_sandstone:003|minecraft:red_sandstone |3|minecraft:smooth_red_sandstone|
 |minecraft:red_sandstone_stairs:000|minecraft:red_sandstone_stairs |0|minecraft:red_sandstone_stairs ["upside_down_bit" = 0, "weirdo_direction" = 0]|
 |minecraft:red_sandstone_stairs:001|minecraft:red_sandstone_stairs |1|minecraft:red_sandstone_stairs ["upside_down_bit" = 0, "weirdo_direction" = 1]|
 |minecraft:red_sandstone_stairs:002|minecraft:red_sandstone_stairs |2|minecraft:red_sandstone_stairs ["upside_down_bit" = 0, "weirdo_direction" = 2]|
@@ -2856,12 +2856,12 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:respawn_anchor:002|minecraft:respawn_anchor |2|minecraft:respawn_anchor ["respawn_anchor_charge" = 2]|
 |minecraft:respawn_anchor:003|minecraft:respawn_anchor |3|minecraft:respawn_anchor ["respawn_anchor_charge" = 3]|
 |minecraft:respawn_anchor:004|minecraft:respawn_anchor |4|minecraft:respawn_anchor ["respawn_anchor_charge" = 4]|
-|minecraft:sand:000|minecraft:sand |0|minecraft:sand ["sand_type" = "normal"]|
-|minecraft:sand:001|minecraft:sand |1|minecraft:sand ["sand_type" = "red"]|
-|minecraft:sandstone:000|minecraft:sandstone |0|minecraft:sandstone ["sand_stone_type" = "default"]|
-|minecraft:sandstone:001|minecraft:sandstone |1|minecraft:sandstone ["sand_stone_type" = "heiroglyphs"]|
-|minecraft:sandstone:002|minecraft:sandstone |2|minecraft:sandstone ["sand_stone_type" = "cut"]|
-|minecraft:sandstone:003|minecraft:sandstone |3|minecraft:sandstone ["sand_stone_type" = "smooth"]|
+|minecraft:sand:000|minecraft:sand |0|minecraft:sand|
+|minecraft:sand:001|minecraft:sand |1|minecraft:red_sand|
+|minecraft:sandstone:000|minecraft:sandstone |0|minecraft:sandstone|
+|minecraft:sandstone:001|minecraft:sandstone |1|minecraft:chiseled_sandstone|
+|minecraft:sandstone:002|minecraft:sandstone |2|minecraft:cut_sandstone|
+|minecraft:sandstone:003|minecraft:sandstone |3|minecraft:smooth_sandstone|
 |minecraft:sandstone_stairs:000|minecraft:sandstone_stairs |0|minecraft:sandstone_stairs ["upside_down_bit" = 0, "weirdo_direction" = 0]|
 |minecraft:sandstone_stairs:001|minecraft:sandstone_stairs |1|minecraft:sandstone_stairs ["upside_down_bit" = 0, "weirdo_direction" = 1]|
 |minecraft:sandstone_stairs:002|minecraft:sandstone_stairs |2|minecraft:sandstone_stairs ["upside_down_bit" = 0, "weirdo_direction" = 2]|
@@ -3246,54 +3246,54 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:stone:005|minecraft:stone |5|minecraft:andesite|
 |minecraft:stone:006|minecraft:stone |6|minecraft:polished_andesite|
 |minecraft:stone:007|minecraft:stone |7|minecraft:stone|
-|minecraft:stone_block_slab2:000|minecraft:stone_block_slab2 |0|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "red_sandstone"]|
-|minecraft:stone_block_slab2:001|minecraft:stone_block_slab2 |1|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "purpur"]|
-|minecraft:stone_block_slab2:002|minecraft:stone_block_slab2 |2|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "prismarine_rough"]|
-|minecraft:stone_block_slab2:003|minecraft:stone_block_slab2 |3|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "prismarine_dark"]|
-|minecraft:stone_block_slab2:004|minecraft:stone_block_slab2 |4|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "prismarine_brick"]|
-|minecraft:stone_block_slab2:005|minecraft:stone_block_slab2 |5|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "mossy_cobblestone"]|
-|minecraft:stone_block_slab2:006|minecraft:stone_block_slab2 |6|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "smooth_sandstone"]|
-|minecraft:stone_block_slab2:007|minecraft:stone_block_slab2 |7|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "bottom", "stone_slab_type_2" = "red_nether_brick"]|
-|minecraft:stone_block_slab2:008|minecraft:stone_block_slab2 |8|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "red_sandstone"]|
-|minecraft:stone_block_slab2:009|minecraft:stone_block_slab2 |9|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "purpur"]|
-|minecraft:stone_block_slab2:010|minecraft:stone_block_slab2 |10|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "prismarine_rough"]|
-|minecraft:stone_block_slab2:011|minecraft:stone_block_slab2 |11|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "prismarine_dark"]|
-|minecraft:stone_block_slab2:012|minecraft:stone_block_slab2 |12|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "prismarine_brick"]|
-|minecraft:stone_block_slab2:013|minecraft:stone_block_slab2 |13|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "mossy_cobblestone"]|
-|minecraft:stone_block_slab2:014|minecraft:stone_block_slab2 |14|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "smooth_sandstone"]|
-|minecraft:stone_block_slab2:015|minecraft:stone_block_slab2 |15|minecraft:stone_block_slab2 ["minecraft:vertical_half" = "top", "stone_slab_type_2" = "red_nether_brick"]|
-|minecraft:stone_block_slab3:000|minecraft:stone_block_slab3 |0|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "end_stone_brick"]|
-|minecraft:stone_block_slab3:001|minecraft:stone_block_slab3 |1|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "smooth_red_sandstone"]|
-|minecraft:stone_block_slab3:002|minecraft:stone_block_slab3 |2|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "polished_andesite"]|
-|minecraft:stone_block_slab3:003|minecraft:stone_block_slab3 |3|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "andesite"]|
-|minecraft:stone_block_slab3:004|minecraft:stone_block_slab3 |4|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "diorite"]|
-|minecraft:stone_block_slab3:005|minecraft:stone_block_slab3 |5|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "polished_diorite"]|
-|minecraft:stone_block_slab3:006|minecraft:stone_block_slab3 |6|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "granite"]|
-|minecraft:stone_block_slab3:007|minecraft:stone_block_slab3 |7|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "bottom", "stone_slab_type_3" = "polished_granite"]|
-|minecraft:stone_block_slab3:008|minecraft:stone_block_slab3 |8|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "end_stone_brick"]|
-|minecraft:stone_block_slab3:009|minecraft:stone_block_slab3 |9|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "smooth_red_sandstone"]|
-|minecraft:stone_block_slab3:010|minecraft:stone_block_slab3 |10|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "polished_andesite"]|
-|minecraft:stone_block_slab3:011|minecraft:stone_block_slab3 |11|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "andesite"]|
-|minecraft:stone_block_slab3:012|minecraft:stone_block_slab3 |12|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "diorite"]|
-|minecraft:stone_block_slab3:013|minecraft:stone_block_slab3 |13|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "polished_diorite"]|
-|minecraft:stone_block_slab3:014|minecraft:stone_block_slab3 |14|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "granite"]|
-|minecraft:stone_block_slab3:015|minecraft:stone_block_slab3 |15|minecraft:stone_block_slab3 ["minecraft:vertical_half" = "top", "stone_slab_type_3" = "polished_granite"]|
-|minecraft:stone_block_slab4:000|minecraft:stone_block_slab4 |0|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:stone_block_slab4:001|minecraft:stone_block_slab4 |1|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "smooth_quartz"]|
-|minecraft:stone_block_slab4:002|minecraft:stone_block_slab4 |2|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "stone"]|
-|minecraft:stone_block_slab4:003|minecraft:stone_block_slab4 |3|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "cut_sandstone"]|
-|minecraft:stone_block_slab4:004|minecraft:stone_block_slab4 |4|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "cut_red_sandstone"]|
-|minecraft:stone_block_slab4:005|minecraft:stone_block_slab4 |5|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:stone_block_slab4:006|minecraft:stone_block_slab4 |6|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:stone_block_slab4:007|minecraft:stone_block_slab4 |7|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "bottom", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:stone_block_slab4:008|minecraft:stone_block_slab4 |8|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:stone_block_slab4:009|minecraft:stone_block_slab4 |9|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "smooth_quartz"]|
-|minecraft:stone_block_slab4:010|minecraft:stone_block_slab4 |10|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "stone"]|
-|minecraft:stone_block_slab4:011|minecraft:stone_block_slab4 |11|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "cut_sandstone"]|
-|minecraft:stone_block_slab4:012|minecraft:stone_block_slab4 |12|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "cut_red_sandstone"]|
-|minecraft:stone_block_slab4:013|minecraft:stone_block_slab4 |13|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:stone_block_slab4:014|minecraft:stone_block_slab4 |14|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
-|minecraft:stone_block_slab4:015|minecraft:stone_block_slab4 |15|minecraft:stone_block_slab4 ["minecraft:vertical_half" = "top", "stone_slab_type_4" = "mossy_stone_brick"]|
+|minecraft:stone_block_slab2:000|minecraft:stone_block_slab2 |0|minecraft:red_sandstone_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab2:001|minecraft:stone_block_slab2 |1|minecraft:purpur_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab2:002|minecraft:stone_block_slab2 |2|minecraft:prismarine_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab2:003|minecraft:stone_block_slab2 |3|minecraft:dark_prismarine_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab2:004|minecraft:stone_block_slab2 |4|minecraft:prismarine_brick_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab2:005|minecraft:stone_block_slab2 |5|minecraft:mossy_cobblestone_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab2:006|minecraft:stone_block_slab2 |6|minecraft:smooth_sandstone_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab2:007|minecraft:stone_block_slab2 |7|minecraft:red_nether_brick_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab2:008|minecraft:stone_block_slab2 |8|minecraft:red_sandstone_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab2:009|minecraft:stone_block_slab2 |9|minecraft:purpur_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab2:010|minecraft:stone_block_slab2 |10|minecraft:prismarine_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab2:011|minecraft:stone_block_slab2 |11|minecraft:dark_prismarine_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab2:012|minecraft:stone_block_slab2 |12|minecraft:prismarine_brick_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab2:013|minecraft:stone_block_slab2 |13|minecraft:mossy_cobblestone_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab2:014|minecraft:stone_block_slab2 |14|minecraft:smooth_sandstone_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab2:015|minecraft:stone_block_slab2 |15|minecraft:red_nether_brick_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab3:000|minecraft:stone_block_slab3 |0|minecraft:end_stone_brick_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab3:001|minecraft:stone_block_slab3 |1|minecraft:smooth_red_sandstone_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab3:002|minecraft:stone_block_slab3 |2|minecraft:polished_andesite_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab3:003|minecraft:stone_block_slab3 |3|minecraft:andesite_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab3:004|minecraft:stone_block_slab3 |4|minecraft:diorite_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab3:005|minecraft:stone_block_slab3 |5|minecraft:polished_diorite_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab3:006|minecraft:stone_block_slab3 |6|minecraft:granite_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab3:007|minecraft:stone_block_slab3 |7|minecraft:polished_granite_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab3:008|minecraft:stone_block_slab3 |8|minecraft:end_stone_brick_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab3:009|minecraft:stone_block_slab3 |9|minecraft:smooth_red_sandstone_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab3:010|minecraft:stone_block_slab3 |10|minecraft:polished_andesite_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab3:011|minecraft:stone_block_slab3 |11|minecraft:andesite_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab3:012|minecraft:stone_block_slab3 |12|minecraft:diorite_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab3:013|minecraft:stone_block_slab3 |13|minecraft:polished_diorite_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab3:014|minecraft:stone_block_slab3 |14|minecraft:granite_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab3:015|minecraft:stone_block_slab3 |15|minecraft:polished_granite_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab4:000|minecraft:stone_block_slab4 |0|minecraft:mossy_stone_brick_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab4:001|minecraft:stone_block_slab4 |1|minecraft:smooth_quartz_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab4:002|minecraft:stone_block_slab4 |2|minecraft:normal_stone_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab4:003|minecraft:stone_block_slab4 |3|minecraft:cut_sandstone_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab4:004|minecraft:stone_block_slab4 |4|minecraft:cut_red_sandstone_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab4:005|minecraft:stone_block_slab4 |5|minecraft:mossy_stone_brick_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab4:006|minecraft:stone_block_slab4 |6|minecraft:mossy_stone_brick_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab4:007|minecraft:stone_block_slab4 |7|minecraft:mossy_stone_brick_slab ["minecraft:vertical_half" = "bottom"]|
+|minecraft:stone_block_slab4:008|minecraft:stone_block_slab4 |8|minecraft:mossy_stone_brick_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab4:009|minecraft:stone_block_slab4 |9|minecraft:smooth_quartz_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab4:010|minecraft:stone_block_slab4 |10|minecraft:normal_stone_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab4:011|minecraft:stone_block_slab4 |11|minecraft:cut_sandstone_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab4:012|minecraft:stone_block_slab4 |12|minecraft:cut_red_sandstone_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab4:013|minecraft:stone_block_slab4 |13|minecraft:mossy_stone_brick_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab4:014|minecraft:stone_block_slab4 |14|minecraft:mossy_stone_brick_slab ["minecraft:vertical_half" = "top"]|
+|minecraft:stone_block_slab4:015|minecraft:stone_block_slab4 |15|minecraft:mossy_stone_brick_slab ["minecraft:vertical_half" = "top"]|
 |minecraft:stone_block_slab:000|minecraft:stone_block_slab |0|minecraft:smooth_stone_slab ["minecraft:vertical_half" = "bottom"]|
 |minecraft:stone_block_slab:001|minecraft:stone_block_slab |1|minecraft:sandstone_slab ["minecraft:vertical_half" = "bottom"]|
 |minecraft:stone_block_slab:002|minecraft:stone_block_slab |2|minecraft:petrified_oak_slab ["minecraft:vertical_half" = "bottom"]|

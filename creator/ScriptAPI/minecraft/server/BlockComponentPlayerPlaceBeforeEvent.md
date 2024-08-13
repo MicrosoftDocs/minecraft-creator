@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockComponentPlayerPlaceBeforeEvent Class
 description: Contents of the @minecraft/server.BlockComponentPlayerPlaceBeforeEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockComponentPlayerPlaceBeforeEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*BlockEvent*](BlockEvent.md)

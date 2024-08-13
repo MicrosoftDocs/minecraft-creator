@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemComponentMineBlockEvent Class
 description: Contents of the @minecraft/server.ItemComponentMineBlockEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemComponentMineBlockEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information regarding the mining of a block using an item.
 

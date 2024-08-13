@@ -36,8 +36,6 @@
   href: minecraftBehavior_delayed_attack.md
 - name: behavior.dig
   href: minecraftBehavior_dig.md
-- name: behavior.drink_milk
-  href: minecraftBehavior_drink_milk.md
 - name: behavior.door_interact
   href: minecraftBehavior_door_interact.md
 - name: behavior.dragonchargeplayer
@@ -55,7 +53,9 @@
 - name: behavior.dragonstrafeplayer
   href: minecraftBehavior_dragonstrafeplayer.md
 - name: behavior.dragontakeoff
-  href: minecraftBehavior_dragontakeoff.md  
+  href: minecraftBehavior_dragontakeoff.md
+- name: behavior.drink_milk
+  href: minecraftBehavior_drink_milk.md
 - name: behavior.drink_potion
   href: minecraftBehavior_drink_potion.md
 - name: behavior.drop_item_for
@@ -194,8 +194,6 @@
   href: minecraftBehavior_owner_hurt_target.md
 - name: behavior.panic
   href: minecraftBehavior_panic.md
-- name: behavior.peek
-  href: minecraftBehavior_peek.md
 - name: behavior.pet_sleep_with_owner
   href: minecraftBehavior_pet_sleep_with_owner.md
 - name: behavior.pickup_items

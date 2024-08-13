@@ -146,29 +146,36 @@ Fog settings in this layer are saved and then restored per player on world load.
                 object "air" : opt // Fog density values as light passes through air blocks.
                 {
                     float "max_density"<0.000000-1.000000> // The maximum amount of opaqueness that the ground fog will take on. A value from [0.0, 1.0].
-                    float "max_density_height"<0.000000-320.000000> : opt // The height in blocks that the ground fog will become it's maximum density.
-                    float "zero_density_height"<0.000000-320.000000> : opt // The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.
+                    float "max_density_height"<-64.000000-320.000000> : opt // The height in blocks that the ground fog will become it's maximum density.
+                    float "zero_density_height"<-64.000000-320.000000> : opt // The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.
+                    bool "uniform" : opt // When set to true, the density will be uniform across all heights.
+                }
+                object "weather" : opt // Fog density values as light passes through air blocks with active weather (rain, snow, etc..).
+                {
+                    float "max_density"<0.000000-1.000000> // The maximum amount of opaqueness that the ground fog will take on. A value from [0.0, 1.0].
+                    float "max_density_height"<-64.000000-320.000000> : opt // The height in blocks that the ground fog will become it's maximum density.
+                    float "zero_density_height"<-64.000000-320.000000> : opt // The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.
                     bool "uniform" : opt // When set to true, the density will be uniform across all heights.
                 }
                 object "water" : opt // Fog density values as light passes through water blocks.
                 {
                     float "max_density"<0.000000-1.000000> // The maximum amount of opaqueness that the ground fog will take on. A value from [0.0, 1.0].
-                    float "max_density_height"<0.000000-320.000000> : opt // The height in blocks that the ground fog will become it's maximum density.
-                    float "zero_density_height"<0.000000-320.000000> : opt // The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.
+                    float "max_density_height"<-64.000000-320.000000> : opt // The height in blocks that the ground fog will become it's maximum density.
+                    float "zero_density_height"<-64.000000-320.000000> : opt // The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.
                     bool "uniform" : opt // When set to true, the density will be uniform across all heights.
                 }
                 object "lava" : opt // Fog density values as light passes through lava blocks.
                 {
                     float "max_density"<0.000000-1.000000> // The maximum amount of opaqueness that the ground fog will take on. A value from [0.0, 1.0].
-                    float "max_density_height"<0.000000-320.000000> : opt // The height in blocks that the ground fog will become it's maximum density.
-                    float "zero_density_height"<0.000000-320.000000> : opt // The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.
+                    float "max_density_height"<-64.000000-320.000000> : opt // The height in blocks that the ground fog will become it's maximum density.
+                    float "zero_density_height"<-64.000000-320.000000> : opt // The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.
                     bool "uniform" : opt // When set to true, the density will be uniform across all heights.
                 }
                 object "lava_resistance" : opt // Fog density values as light passes through lava blocks while the player has lava resistance.
                 {
                     float "max_density"<0.000000-1.000000> // The maximum amount of opaqueness that the ground fog will take on. A value from [0.0, 1.0].
-                    float "max_density_height"<0.000000-320.000000> : opt // The height in blocks that the ground fog will become it's maximum density.
-                    float "zero_density_height"<0.000000-320.000000> : opt // The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.
+                    float "max_density_height"<-64.000000-320.000000> : opt // The height in blocks that the ground fog will become it's maximum density.
+                    float "zero_density_height"<-64.000000-320.000000> : opt // The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.
                     bool "uniform" : opt // When set to true, the density will be uniform across all heights.
                 }
             }

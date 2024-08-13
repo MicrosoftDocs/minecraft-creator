@@ -21,7 +21,7 @@ ms.service: minecraft-bedrock-edition
 | minimum_path_length| 5| Integer| The minimum length (in blocks) of the mobs path to a block, in order to consider jumping to it. |
 | preferred_blocks| | Array| Blocks that the mob prefers jumping to. |
 | preferred_blocks_chance| 1.000000| Decimal| Chance (between 0.0 and 1.0) that the mob will jump to a preferred block, if in range. Only matters if preferred blocks are defined. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | scale_factor| 0.700000| Decimal| The scale factor of the bounding box of the mob while it is jumping. |
 | search_height| 10| Integer| The height (in blocks, in range [2, 15]) of the search box, centered around the mob. |
 | search_width| 8| Integer| The width (in blocks, in range [2, 15]) of the search box, centered around the mob. |

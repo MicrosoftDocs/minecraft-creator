@@ -17,8 +17,8 @@ ms.service: minecraft-bedrock-edition
 |add_items| | JSON Object|  Loot table with items to add to the player's inventory upon successful interaction.|
 |cooldown| 0.0| Decimal|  Time in seconds before this entity can be interacted with again. |
 |cooldown_after_being_attacked| 0.0| Decimal|  Time in seconds before this entity can be interacted with after being attacked. |
-|drop_item_slot| --| String| The slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers; Armor slots are denoted by `slot.armor.head`, `slot.armor.chest`, `slot.armor.legs`, and `slot.armor.feet`. |
-|equip_item_slot| --| String| The slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers; Armor slots are denoted by `slot.armor.head`, `slot.armor.chest`, `slot.armor.legs`, and `slot.armor.feet`. |
+|drop_item_slot| --| String| The slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers; Armor slots are denoted by `slot.armor.head`, `slot.armor.chest`, `slot.armor.legs`, `slot.armor.feet`, and `slot.armor.body`. |
+|equip_item_slot| --| String| The slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers; Armor slots are denoted by `slot.armor.head`, `slot.armor.chest`, `slot.armor.legs`, `slot.armor.feet`, and `slot.armor.body`. |
 |health_amount| 0| Integer | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. |
 |hurt_item| 0| Integer|  The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |
 |interact_text|*not set* | String|  Text to show while playing with touch-screen controls when the player is able to interact in this way with this entity. |
