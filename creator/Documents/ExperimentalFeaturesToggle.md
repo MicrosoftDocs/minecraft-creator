@@ -9,7 +9,7 @@ ms.service: minecraft-bedrock-edition
 # Experimental Features in Minecraft: Bedrock Edition
 
 > [!NOTE]
-> To see full documentation about experimental features and APIs, select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle?view=minecraft-bedrock-experimental).
+> To see full documentation about experimental features and APIs, select the **Minecraft Bedrock Experimental APIs** option.
 
 ![image showing the Document Versions Dropdown.](Media/ExperimentalFeatures/ExperimentalApiDocs.png)
 
