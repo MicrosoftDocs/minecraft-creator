@@ -23,7 +23,7 @@ ms.service: minecraft-bedrock-edition
 | items_per_use_max| 20| Integer| The maximum number of items which can be added to the composter per block interaction. |
 | min_item_count| 10| Integer| Limits the amount of each compostable item the mob can use. Any amount held over this number will be composted if possible. |
 | on_arrival| | Trigger| Event to run when the mob reaches their jobsite. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | sound_delay_max|*not set*| Integer| Unused. |
 | sound_delay_min|*not set*| Integer| Unused. |
 | speed_multiplier| 0.50| Decimal| Movement speed multiplier of the mob when using this AI Goal |

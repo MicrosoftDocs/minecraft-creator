@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemComponentRegistry Class
 description: Contents of the @minecraft/server.ItemComponentRegistry class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemComponentRegistry Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Provides the functionality for registering custom components for items.
 

@@ -19,7 +19,7 @@ ms.service: minecraft-bedrock-edition
 | duration| 0.0| Decimal| Goal duration in seconds |
 | idle_time| | Decimal| The minimum idle time in seconds between the last detected disturbance to the start of digging. |
 | on_start| *not set* | Trigger| Event(s) to run when the goal starts. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | suspicion_is_disturbance| false| Boolean| If true, finding new suspicious locations count as disturbances that may delay the start of this goal. |
 | vibration_is_disturbance| false| Boolean| If true, vibrations count as disturbances that may delay the start of this goal. |
 | on_start| *not set* | Trigger| Event(s) to run when the goal starts. |

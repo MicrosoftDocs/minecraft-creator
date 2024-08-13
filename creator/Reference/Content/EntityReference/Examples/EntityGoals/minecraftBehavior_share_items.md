@@ -18,7 +18,7 @@ ms.service: minecraft-bedrock-edition
 |cooldown | 0.0 | Decimal |The amount of time in seconds that the mob has to wait before selecting a target of the same type again. |
 |goal_radius| 0.5| Decimal|  Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot. |
 |max_dist| 0.0| Decimal|  Maximum distance in blocks this mob will look for entities to share items with. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal. |
 
 ### entity_types

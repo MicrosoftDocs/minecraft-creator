@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .ItemCustomComponentReloadNewEventError Class
 description: Contents of the .ItemCustomComponentReloadNewEventError class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemCustomComponentReloadNewEventError Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - *Error*

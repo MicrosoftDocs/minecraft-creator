@@ -4,6 +4,8 @@
       href: index.yml
     - name: "Updates and News"
       items:
+        - name: 1.21.20 Update Summary
+          href: Documents/Update1.21.20.md 
         - name: 1.21 Update Summary
           href: Documents/Update1.21.md 
         - name: 1.20.80 Update Summary
@@ -298,6 +300,8 @@
             href: Documents/AddCustomDieBlock.md
           - name: 'Create a Sushi Block: Advanced Custom Blocks' 
             href: Documents/AdvancedCustomBlocks.md
+          - name: Item Display Transforms
+            href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
           - name: Custom Block Render Lighting 
             href: Documents/CustomBlockRenderLighting.md
           - name: Advanced Custom Block Oversized 
@@ -480,6 +484,8 @@
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.19.30.md
           - name: geometry:1.21.0
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.21.0.md
+          - name: Item Display Transforms in geometry:1.21.0
+            href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
           - name: persona_actor_animation
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_persona_actor_animation_1.8.0.md          
         - name: Animation JSON

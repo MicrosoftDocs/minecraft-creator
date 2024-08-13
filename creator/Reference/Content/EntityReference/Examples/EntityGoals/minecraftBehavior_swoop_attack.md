@@ -14,7 +14,7 @@ ms.service: minecraft-bedrock-edition
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | damage_reach| 0.2| Decimal| Added to the base size of the entity, to determine the target's maximum allowable distance, when trying to deal attack damage. |
 | delay_range| [10, 20]| Range [a, b]| Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | speed_multiplier| 1| Decimal| During swoop attack behavior, this determines the multiplier the entity's speed is modified by when moving toward the target. |
 
 ## Example

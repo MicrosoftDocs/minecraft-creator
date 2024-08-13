@@ -26,6 +26,8 @@ landingContent:
             url:  ../../../Documents/AddCustomDieBlock.md
           - text: Block Description
             url: Examples/BlockDescription.md
+          - text: Item Display Transforms
+            url: Examples/ItemDisplayTransforms.md            
   # Card (optional)
   - title: Block Components
     linkLists:
@@ -35,5 +37,7 @@ landingContent:
             url: Examples/BlockComponents/BlockComponentsList.md
           - text: "minecraft:flammable"
             url: Examples/BlockComponents/minecraftBlock_flammable.md
-          - text: "minecraft:random_ticking"
-            url: Examples/BlockTriggers/minecraftBlock_random_ticking.md
+          - text: "minecraft:geometry"
+            url: Examples/BlockComponents/minecraftBlock_geometry.md            
+          - text: "minecraft:material_instances"
+            url: Examples/BlockComponents/minecraftBlock_material_instances.md            

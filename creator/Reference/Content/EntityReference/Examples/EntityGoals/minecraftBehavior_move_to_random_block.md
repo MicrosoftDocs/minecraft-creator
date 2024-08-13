@@ -17,7 +17,7 @@ ms.service: minecraft-bedrock-edition
 |block_distance| 16.0| Decimal| Defines the distance from the mob, in blocks, that the block to move to will be chosen. |
 |within_radius| 0.0| Decimal|Defines the distance in blocks the mob has to be from the block for the movement to be finished. |
 | speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
-|priority| -1| Integer| The Minecraft behavior priority. The higher the priority, the sooner this behavior will be executed as a goal. |
+| priority| -1| Integer| The Minecraft behavior priority. The higher the priority, the sooner this behavior will be executed as a goal. |
 
 ## Example
 

@@ -22,7 +22,7 @@ ms.service: minecraft-bedrock-edition
 | sound_delay_min| 0| Integer| The min interval in which a sound will play. |
 | speed_multiplier| 0.50| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
 | work_in_rain_tolerance| -1| Integer| If "can_work_in_rain" is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

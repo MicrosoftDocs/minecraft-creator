@@ -9,7 +9,8 @@ ms.service: minecraft-bedrock-edition
 # Experimental Features in Minecraft: Bedrock Edition
 
 > [!NOTE]
-> To see full documentation about experimental features and APIs, select the [Minecraft Bedrock Experimental APIs option](/minecraft/creator/documents/experimentalfeaturestoggle?view=minecraft-bedrock-experimental).
+> To see full documentation about experimental features and APIs, select the **Minecraft Bedrock Experimental APIs** option or use [this link](/minecraft/creator/documents/experimentalfeaturestoggle?view=minecraft-bedrock-experimental).
+
 ![image showing the Document Versions Dropdown.](Media/ExperimentalFeatures/ExperimentalApiDocs.png)
 
 With each retail version of Minecraft: Bedrock Edition, there are a few features that are currently in an experimental state. Experimental Features can be toggled on for creators who are interested in testing the latest features offered in the preview, and retail versions of Minecraft.
@@ -23,7 +24,7 @@ There are two sets of experimental features available, depending on whether you 
 
 ### Retail
 
-These are the currently available Experimental toggles in the **1.21.0** retail build at the time of this writing.
+These are the currently available Experimental toggles in the **1.21.20** retail build at the time of this writing.
 
 GAMEPLAY - Change the way your world works
 
@@ -39,7 +40,8 @@ ADD-ON CREATORS - For creators of game packs and other add-ons
 |Custom Biomes| Create custom biomes and change world generation |
 |Upcoming Creator Features | Includes adjustable fog parameters |
 |Beta APIs| Use "-beta" versions of API modules in add-on packs |
-|Experimental Cameras | Contains example camera presets (the camera command is no longer experimental) |
+|Creator Cameras: New Third Person Presets | Contains new third person over the shoulder follow-orbit camera preset |
+|Render Dragon Features for Creators | Enable the deferred rendering pipeline. Requires a PBR-enabled resource pack and compatible hardware. |
 
 ### Preview
 
@@ -81,7 +83,7 @@ If you are building a new world from scratch to test experimental features, you 
 
 2. When you get the popup asking if you're sure, select **Turn on Experiments anyway**.
 
-   ![image showing a pop up to confirm if you want ot activate experimental features in Minecraft.](Media/ExperimentalFeatures/ActivateExperiments_121.png)
+   ![image showing a pop up to confirm if you want to activate experimental features in Minecraft.](Media/ExperimentalFeatures/ActivateExperiments_121.png)
 
 ### Toggle Experimental Features in an Existing World
 

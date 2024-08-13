@@ -19,5 +19,3 @@ The default is `solid` if this component is omitted.
 ```json
 "minecraft:breathability": "solid"
 ```
-
-
