@@ -8,23 +8,21 @@ ms.service: minecraft-bedrock-edition
 
 # Third Person Camera Preset
 
-In this tutorial, you will learn about the **third_person** camera presets.
+In this overview, you will learn about the **third_person** camera presets. These presets can be applied using commands, JSON, and script APIs.
 
-The **third_person** presets can be applied using commands, JSON, and script APIs.
+You can find more information about the camera system in the [Camera Command Introduction](CameraCommandIntroduction.md) and in the [Free Camera Preset](CameraPresetFree.md) tutorial, using commands and script.
 
-You can find more information about the camera system in the Camera Command Introduction and in the tutorials for the **free_camera**, using commands and script.
+## Third Person Camera Functionality
 
-## Third_Person Camera Functionality
-
-The third_person camera preset can be used to set the follow orbit preset camera on a player. This lets you 'attach' the camera to a player. 
+The third person camera preset can be used to set the follow orbit preset camera on a player. This lets you 'attach' the camera to a player. 
 
 Here is the command to use follow_orbit:
 
 `/camera @s set minecraft:follow_orbit`
 
-You will need to use this experimental toggle for the follow-orbit preset: **Creator Camera: Focus Target Camera**.
+You will need to use this experimental toggle for the follow-orbit preset: **Creator Cameras: Focus Target Camera**.
 
-**Example**
+**Follow Orbit Example**
 
 ```json
 {
@@ -41,7 +39,6 @@ You will need to use this experimental toggle for the follow-orbit preset: **Cre
 ### View offset – follow orbit only 
 
 The view offset can be used to create an over the shoulder type view for the player. 
-You can set the offset via a command or JSON.
 The x and y offset is a range between -100 and 100.
 
 `/camera @s set minecraft:follow_orbit view_offset viewX viewY`
@@ -83,7 +80,7 @@ Here are three different examples:
 
 ### Understanding the third person camera 
 
-When making third person camera games and experiences, you will have the option to use and customize 2 presets:
+When making third person camera games and experiences, you will have the option to use and customize two presets:
 
 - Follow orbit - This preset allows the third person camera to have its pivot point adjusted.
 
