@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 In this overview, you will learn about the **third_person** camera presets. These presets can be applied using commands, JSON, and script APIs.
 
-You can find more information about the camera system in the [Camera Command Introduction](CameraCommandIntroduction.md) and in the [Free Camera Preset](CameraPresetFree.md) tutorial, using commands and script.
+You can find more information about the camera system in the [Camera System Introduction](CameraCommandIntroduction.md) and in the [Free Camera Preset](CameraPresetFree.md) tutorial, using commands and script.
 
 ## Third Person Camera Functionality
 

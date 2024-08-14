@@ -232,10 +232,10 @@
           href: Documents/FogInResourcePacks.md
         - name: Cameras
           items:  
+          - name: Camera System Introduction
+            href: Documents/CameraCommandIntroduction.md
           - name: Free Camera Preset Tutorial
             href: Documents/CameraTutorialFreeCameraPreset.md
-          - name: The Camera Command
-            href: Documents/CameraCommandIntroduction.md
           - name: Camera Script APIs
             href: ScriptAPI/minecraft/server/Camera.md
     - name: Entities and Particles

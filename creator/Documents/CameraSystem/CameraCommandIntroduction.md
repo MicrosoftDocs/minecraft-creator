@@ -1,12 +1,12 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Camera Command Introduction
-description: "An introduction to the `/camera` command"
+title: Camera System Introduction
+description: "An introduction to the camera system"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Camera Command
+# The Camera System
 
 The Bedrock version of Minecraft has a `/camera` command that adds the ability to control how players view the game or adds full-screen fades for a more polished experience. This document goes into all the relevant detail of how it works and can be used to make interesting new experiences.
 
