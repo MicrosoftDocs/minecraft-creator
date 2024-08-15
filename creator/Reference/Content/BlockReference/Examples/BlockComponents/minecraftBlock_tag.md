@@ -2,7 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Block Documentation - tag
-description: "A reference document detailing the 'loot' block component"
+description: "A reference document detailing the 'tag' block component"
 ms.service: minecraft-bedrock-edition
 ---
 
