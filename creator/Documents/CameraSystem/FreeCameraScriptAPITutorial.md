@@ -2,7 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Free Camera Script API Tutorial
-description: "An introduction to the camera system"
+description: "A tutorial about free camera script API."
 ms.service: minecraft-bedrock-edition
 ---
 
