@@ -30,6 +30,8 @@
    href: minecraftBlock_placement_filter.md
  - name: selection_box
    href: minecraftBlock_selection_box.md
+ - name: tag
+   href: minecraftBlock_tag.md
  - name: transformation
    href: minecraftBlock_transformation.md
  - name: unit_cube

@@ -380,6 +380,8 @@
             href: Reference/Content/blockreference/Examples/Definitions/BlockCulling.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
+          - name: Vanilla Block Tags
+            href: Reference/Content/blockreference/Examples/VanillaBlockTags.md
         - name: Entity JSON
           items:
           - name: Filters
