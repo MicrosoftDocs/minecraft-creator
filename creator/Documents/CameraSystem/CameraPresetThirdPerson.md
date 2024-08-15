@@ -74,20 +74,19 @@ Setting the rotation will set a default starting rotation for:
 
 >- The follow orbit camera's first spawn  
 
->- The angles at which the camera will follow the player for the fixed boom camera.  
+>- The angles at which the camera will follow the player for the fixed boom camera
 
 Because you can set the rotation of the camera in the follow orbit preset, the starting rotation will be overwritten immediately when the mouse is moved. 
 
-**Radius**
+### Radius
 
 The radius, distance from player, is customizable within a minimum radius of 0.1 and a maximum radius of 100, allowing you to set the camera any distance from the player. 
 
-Rotation limits
+### Rotation limits
 
 The rotation, or the arc around the player, is not limited, allowing you to set the camera to rotate 360 degrees around the player. When rotating, the camera facing-direction will face the player by default.
 
-
-### View offset 
+### View offset
 
 The view offset allows you to anchor the camera to a point in the focal view that is not the player. This offset will force the player to be shifted to the side of the offset and stay to the side even as the player moves.  View offset 
 
