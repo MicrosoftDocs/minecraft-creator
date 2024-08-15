@@ -20,16 +20,22 @@ Type: [*BrushShape*](BrushShape.md)
 
 Type: [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
 
-### **brushShapeNames**
-`read-only brushShapeNames: string[];`
+### **brushShapeList**
+`read-only brushShapeList: BrushShape[];`
 
-Type: *string*[]
+Type: [*BrushShape*](BrushShape.md)[]
 
 ## Methods
 - [activateBrushShape](#activatebrushshape)
-- [getBrushVolume](#getbrushvolume)
+- [activateBrushTool](#activatebrushtool)
+- [beginPainting](#beginpainting)
+- [deactivateBrushTool](#deactivatebrushtool)
+- [endPainting](#endpainting)
 - [getSettingsUIElements](#getsettingsuielements)
 - [registerBrushShape](#registerbrushshape)
+- [setBlockPaletteOverride](#setblockpaletteoverride)
+- [setBrushMask](#setbrushmask)
+- [setBrushShape](#setbrushshape)
 - [uiSettingValueChanged](#uisettingvaluechanged)
 
 ### **activateBrushShape**
@@ -47,17 +53,37 @@ activateBrushShape(name: string): minecraftserver.CompoundBlockVolume
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *@minecraft/server.Error*
 
-### **getBrushVolume**
+### **activateBrushTool**
 `
-getBrushVolume(origin: minecraftserver.Vector3, pipeline: BrushPipelineOperation[]): minecraftserver.CompoundBlockVolume | undefined
+activateBrushTool(): void
 `
 
-#### **Parameters**
-- **origin**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-- **pipeline**: [*BrushPipelineOperation*](BrushPipelineOperation.md)[]
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
-**Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) | *undefined*
+### **beginPainting**
+`
+beginPainting(): void
+`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **deactivateBrushTool**
+`
+deactivateBrushTool(): void
+`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+### **endPainting**
+`
+endPainting(): void
+`
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.
@@ -77,6 +103,8 @@ getSettingsUIElements(brushName: string): SettingsUIElement[]
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *Error*
 
 ### **registerBrushShape**
 `
@@ -94,6 +122,51 @@ registerBrushShape(name: string, icon: string, rebuild: () => minecraftserver.Co
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *Error*
+
+### **setBlockPaletteOverride**
+`
+setBlockPaletteOverride(overrideBlock?: minecraftserver.BlockPermutation | minecraftserver.BlockType | string): void
+`
+
+#### **Parameters**
+- **overrideBlock**?: [*@minecraft/server.BlockPermutation*](../../minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string* = `null`
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*
+
+### **setBrushMask**
+`
+setBrushMask(mask: BlockMaskList): void
+`
+
+#### **Parameters**
+- **mask**: [*BlockMaskList*](BlockMaskList.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*
+
+### **setBrushShape**
+`
+setBrushShape(shape: minecraftserver.Vector3[] | minecraftserver.CompoundBlockVolume): void
+`
+
+#### **Parameters**
+- **shape**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)[] | [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
 
 ### **uiSettingValueChanged**
 `
@@ -111,3 +184,5 @@ uiSettingValueChanged(elementName: string, newValue: boolean | number | string |
 
 > [!WARNING]
 > This function can throw errors.
+>
+> Throws *Error*

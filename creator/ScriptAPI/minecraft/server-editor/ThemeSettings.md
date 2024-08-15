@@ -10,6 +10,7 @@ description: Contents of the @minecraft/server-editor.ThemeSettings class.
 
 ## Methods
 - [addNewTheme](#addnewtheme)
+- [canThemeBeModified](#canthemebemodified)
 - [deleteTheme](#deletetheme)
 - [getCurrentTheme](#getcurrenttheme)
 - [getThemeList](#getthemelist)
@@ -32,6 +33,16 @@ addNewTheme(name: string): void
 > This function can throw errors.
 >
 > Throws *Error*
+
+### **canThemeBeModified**
+`
+canThemeBeModified(name: string): boolean
+`
+
+#### **Parameters**
+- **name**: *string*
+
+**Returns** *boolean*
 
 ### **deleteTheme**
 `
@@ -65,13 +76,13 @@ getThemeList(): string[]
 
 ### **resolveColorKey**
 `
-resolveColorKey(key: ThemeSettingsColorKey): minecraftserver.RGBA | undefined
+resolveColorKey(key: ThemeSettingsColorKey): minecraftserver.RGBA
 `
 
 #### **Parameters**
 - **key**: [*ThemeSettingsColorKey*](ThemeSettingsColorKey.md)
 
-**Returns** [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md) | *undefined*
+**Returns** [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 ### **setCurrentTheme**
 `

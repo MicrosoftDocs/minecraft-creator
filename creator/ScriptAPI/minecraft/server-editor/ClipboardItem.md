@@ -28,6 +28,7 @@ Type: *boolean*
 - [getPredictedWriteAsSelection](#getpredictedwriteasselection)
 - [getSize](#getsize)
 - [readFromSelection](#readfromselection)
+- [readFromStructure](#readfromstructure)
 - [readFromWorld](#readfromworld)
 - [writeToWorld](#writetoworld)
 
@@ -126,6 +127,22 @@ Copy the contents of the area represented by a [*@minecraft/server-editor.Select
 
 > [!WARNING]
 > This function can throw errors.
+
+### **readFromStructure**
+`
+readFromStructure(structure: EditorStructure): void
+`
+
+#### **Parameters**
+- **structure**: [*EditorStructure*](EditorStructure.md)
+
+> [!IMPORTANT]
+> This function can't be called in read-only mode.
+
+> [!WARNING]
+> This function can throw errors.
+>
+> Throws *Error*
 
 ### **readFromWorld**
 `

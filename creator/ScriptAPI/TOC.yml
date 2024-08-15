@@ -912,12 +912,12 @@
       href: minecraft/server-editor/changelog.md
     - name: ActionTypes
       href: minecraft/server-editor/ActionTypes.md
+    - name: BlockMaskListType
+      href: minecraft/server-editor/BlockMaskListType.md
     - name: BlockPaletteItemType
       href: minecraft/server-editor/BlockPaletteItemType.md
     - name: BoolPropertyItemVariant
       href: minecraft/server-editor/BoolPropertyItemVariant.md
-    - name: BrushPipelineOperationType
-      href: minecraft/server-editor/BrushPipelineOperationType.md
     - name: ButtonPropertyItemVariant
       href: minecraft/server-editor/ButtonPropertyItemVariant.md
     - name: ColorPickerPropertyItemVariant
@@ -1006,6 +1006,14 @@
       href: minecraft/server-editor/ClipboardItem.md
     - name: ClipboardManager
       href: minecraft/server-editor/ClipboardManager.md
+    - name: CurrentThemeChangeAfterEvent
+      href: minecraft/server-editor/CurrentThemeChangeAfterEvent.md
+    - name: CurrentThemeChangeAfterEventSignal
+      href: minecraft/server-editor/CurrentThemeChangeAfterEventSignal.md
+    - name: CurrentThemeColorChangeAfterEvent
+      href: minecraft/server-editor/CurrentThemeColorChangeAfterEvent.md
+    - name: CurrentThemeColorChangeAfterEventSignal
+      href: minecraft/server-editor/CurrentThemeColorChangeAfterEventSignal.md
     - name: Cursor
       href: minecraft/server-editor/Cursor.md
     - name: CursorAttachmentPropertiesChangeAfterEvent
@@ -1016,6 +1024,8 @@
       href: minecraft/server-editor/CursorPropertiesChangeAfterEvent.md
     - name: CursorPropertyChangeAfterEventSignal
       href: minecraft/server-editor/CursorPropertyChangeAfterEventSignal.md
+    - name: EditorStructureManager
+      href: minecraft/server-editor/EditorStructureManager.md
     - name: EntityIdentifierObservableValidator
       href: minecraft/server-editor/EntityIdentifierObservableValidator.md
     - name: ExportManager
@@ -1106,8 +1116,8 @@
       href: minecraft/server-editor/WidgetManager.md
     - name: WidgetStateChangeEventData
       href: minecraft/server-editor/WidgetStateChangeEventData.md
-    - name: BrushPipelineOperation
-      href: minecraft/server-editor/BrushPipelineOperation.md
+    - name: BlockMaskList
+      href: minecraft/server-editor/BlockMaskList.md
     - name: BrushShape
       href: minecraft/server-editor/BrushShape.md
     - name: ClipboardWriteOptions
@@ -1116,6 +1126,10 @@
       href: minecraft/server-editor/CursorAttachmentProperties.md
     - name: CursorProperties
       href: minecraft/server-editor/CursorProperties.md
+    - name: EditorStructure
+      href: minecraft/server-editor/EditorStructure.md
+    - name: EditorStructureSearchOptions
+      href: minecraft/server-editor/EditorStructureSearchOptions.md
     - name: ExtensionOptionalParameters
       href: minecraft/server-editor/ExtensionOptionalParameters.md
     - name: GameOptions
@@ -1142,6 +1156,8 @@
       href: minecraft/server-editor/WidgetComponentSplineOptions.md
     - name: WidgetComponentTextOptions
       href: minecraft/server-editor/WidgetComponentTextOptions.md
+    - name: WidgetCreateOptions
+      href: minecraft/server-editor/WidgetCreateOptions.md
     - name: WidgetGroupCreateOptions
       href: minecraft/server-editor/WidgetGroupCreateOptions.md
     - name: ActionManager
@@ -1242,6 +1258,12 @@
       href: minecraft/server-editor/IPropertyTableCellItem.md
     - name: IRegisterExtensionOptionalParameters
       href: minecraft/server-editor/IRegisterExtensionOptionalParameters.md
+    - name: IRootPropertyPane
+      href: minecraft/server-editor/IRootPropertyPane.md
+    - name: IRootPropertyPaneHeaderAction
+      href: minecraft/server-editor/IRootPropertyPaneHeaderAction.md
+    - name: IRootPropertyPaneOptions
+      href: minecraft/server-editor/IRootPropertyPaneOptions.md
     - name: ISimpleTool
       href: minecraft/server-editor/ISimpleTool.md
     - name: ISimpleToolKeyBinding
@@ -1266,6 +1288,10 @@
       href: minecraft/server-editor/IStringPropertyItem.md
     - name: IStringPropertyItemOptions
       href: minecraft/server-editor/IStringPropertyItemOptions.md
+    - name: ISubPanePropertyItem
+      href: minecraft/server-editor/ISubPanePropertyItem.md
+    - name: ISubPanePropertyItemOptions
+      href: minecraft/server-editor/ISubPanePropertyItemOptions.md
     - name: ITextPropertyItem
       href: minecraft/server-editor/ITextPropertyItem.md
     - name: ITextPropertyItemOptions

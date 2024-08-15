@@ -5,8 +5,12 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-gametest.SculkSpreader Class
 description: Contents of the @minecraft/server-gametest.SculkSpreader class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # SculkSpreader Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Implements a class that can be used for testing sculk spreading behaviors. This sculk spreader class can drive the growth of sculk around a particular block.
 

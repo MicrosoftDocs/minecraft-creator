@@ -462,6 +462,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
+- [InvalidIteratorError](InvalidIteratorError.md)
 - [InvalidStructureError](InvalidStructureError.md)
 - [ItemCustomComponentAlreadyRegisteredError](ItemCustomComponentAlreadyRegisteredError.md)
 - [ItemCustomComponentReloadNewComponentError](ItemCustomComponentReloadNewComponentError.md)
