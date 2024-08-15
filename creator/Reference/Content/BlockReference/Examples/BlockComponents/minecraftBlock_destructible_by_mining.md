@@ -17,7 +17,8 @@ This component can be specified as a `Boolean`. If this component is omitted, th
 ## Parameters
 
 | Name| Type | Default Value| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
+|:-----------:|:-----------:|:-----------:|:-----------|
+| item_specific_speeds | Array | True | Optional array of objects to describe item-specific block destroy speeds. Each object contains an 'item' ItemDescriptor and a **`destroy_speed`** float. This array currently requires the **UpcomingFeatures** experiment toggle to be enabled. **`destroy_speed`** is required and it is the speed applied while using the defined item. **`item`** is required and it is an `ItemDescriptor` filtering for the item used while mining.|
 | seconds_to_destroy| Decimal | 0.0| Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times. |
 
 ## Example (Boolean)

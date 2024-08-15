@@ -3,13 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .BrushPipelineOperationType Enumeration
-description: Contents of the .BrushPipelineOperationType enumeration.
+title: .BlockMaskListType Enumeration
+description: Contents of the .BlockMaskListType enumeration.
 ---
-# BrushPipelineOperationType Enumeration
+# BlockMaskListType Enumeration
 
 ## Constants
-### **Include**
-`Include = 0`
-### **Exclude**
-`Exclude = 1`
+### **Mask**
+`Mask = "Mask"`
+### **Replace**
+`Replace = "Replace"`

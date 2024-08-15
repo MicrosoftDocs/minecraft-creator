@@ -44,6 +44,8 @@ Piston Arm Collision
 Piston Arm Collision
 - `minecraft:waxed_oxidized_chiseled_copper`
 - `waxed_oxidized_chiseled_copper`
+- `minecraft:wet_sponge`
+- `wet_sponge`
 - `minecraft:end_stone_brick_wall`
 - `end_stone_brick_wall`
 - `minecraft:granite`
@@ -3294,10 +3296,6 @@ Stained Glass Pane
 Planks
 - `minecraft:planks`
 Planks
-- `hard_stained_glass`
-- `minecraft:hard_stained_glass`
-- `hard_stained_glass_pane`
-- `minecraft:hard_stained_glass_pane`
 - `wooden_slab`
 Wooden Slab
 - `minecraft:wooden_slab`

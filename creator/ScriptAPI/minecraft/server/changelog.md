@@ -88,6 +88,8 @@ description: Changelog of the `@minecraft/server` module
 - Changed function *[`getComponent`](ItemStack.md#getcomponent)*
   - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
+#### Changed *[`ItemUseOnAfterEvent`](ItemUseOnAfterEvent.md)*
+- Added property *[`isFirstEvent`](ItemUseOnAfterEvent.md#isfirstevent)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Changed *[`Player`](Player.md)*
 - Added function *[`eatItem`](Player.md#eatitem)*
@@ -545,6 +547,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`EasingType`](EasingType.md)
 #### Changed enum [`EntityDamageCause`](EntityDamageCause.md)
 - Added value `campfire`
+- Added value `maceSmash`
 - Added value `ramAttack`
 - Added value `sonicBoom`
 - Added value `soulCampfire`

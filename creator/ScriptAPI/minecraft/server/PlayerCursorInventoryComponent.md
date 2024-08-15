@@ -15,10 +15,14 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
+Represents the players cursor inventory. Used when moving items between between containers in the inventory UI. Not used with touch controls.
+
 ## Properties
 
 ### **item**
 `read-only item?: ItemStack;`
+
+The ItemStack currently in the players cursor inventory.
 
 Type: [*ItemStack*](ItemStack.md)
 
@@ -32,6 +36,8 @@ Type: [*ItemStack*](ItemStack.md)
 `
 clear(): void
 `
+
+Clears the players cursor inventory.
 
 > [!IMPORTANT]
 > This function can't be called in read-only mode.

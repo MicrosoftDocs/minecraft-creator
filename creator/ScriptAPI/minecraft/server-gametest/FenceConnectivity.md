@@ -5,8 +5,12 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-gametest.FenceConnectivity Class
 description: Contents of the @minecraft/server-gametest.FenceConnectivity class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # FenceConnectivity Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Returns information about whether this fence is connected to other fences in several directions.
 

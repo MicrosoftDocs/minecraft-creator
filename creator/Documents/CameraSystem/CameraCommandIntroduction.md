@@ -1,17 +1,16 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Camera Command Introduction
-description: "An introduction to the `/camera` command"
+title: Camera System Introduction
+description: "An introduction to the camera system"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Camera Command
+# The Camera System
 
 The Bedrock version of Minecraft has a `/camera` command that adds the ability to control how players view the game or adds full-screen fades for a more polished experience. This document goes into all the relevant detail of how it works and can be used to make interesting new experiences.
 
 This new feature adds the concept of Camera Presets, plus a new command to interact with those presets.
-
 
 ## Camera Presets
 
@@ -24,7 +23,7 @@ The built-in Camera Preset names are:
 >- "minecraft:third_person_front"
 >- "minecraft:free"
 
-The first three names correspond to the standard gameplay perspective options which you can cycle through by pressing F5 on the keyboard, pressing "up" on the controller directional pad, or by selecting the perspective you want in the Settings menu.  
+The first three names correspond to the standard gameplay perspective options which you can cycle through by pressing F5 on the keyboard, pressing "up" on the controller directional pad, or by selecting the perspective you want in the Settings menu.
 
 The last name is for the new free camera, which just floats in space and does nothing.
 
@@ -34,7 +33,7 @@ Custom content can define its own Camera Presets. For example, an "example:sky" 
 
 Inside the com.mojang folder for the version of Minecraft you want the camera to appear in, open your development_behavior_packs folder and do this:
 
-1. Create a Behavior Pack folder, as shown in the [Behavior Pack tutorial](BehaviorPack.md).
+1. Create a Behavior Pack folder, as shown in the [Behavior Pack tutorial](../../Documents/BehaviorPack.md).
 
 1. Inside the Behavior Pack folder, create another folder and name it **Cameras**.
 
@@ -48,7 +47,7 @@ Inside the com.mojang folder for the version of Minecraft you want the camera to
 
 Your folder structure should look like this:
 
-![Image showing the folder and file structure created by following the steps.](Media/CameraCommand/camera_cmd_behavior_pack_structure.png)
+![Image showing the folder and file structure created by following the steps](../../Documents/CameraSystem/Media/camera_cmd_behavior_pack_structure.png)
 
 You should now be able to create a world using this add-on and transition to the camera by using the identifier in the JSON.
 
@@ -209,7 +208,34 @@ First, all fades must take at least 0.5 seconds so they won't happen more than t
 
 Second, if a fade is already in progress, new fades will continue to use the same color as the in-progress fade effect. This prevents full-screen changes between different colors.
 
-## Additional Notes and Nuances  
+## Additional Notes and Nuances
+
+### Targeting
+
+**Aim Assist**
+ 
+Aim assist allows content creators to enable aim assist for players with specified settings. The Aim assist will find a target in a specified range and allow players to interact with them directly. When in free cam, for example a bird's-eye view, it can be hard to target things like levers and buttons so aim assist will help highlight whatever the player is aiming at in any given moment. It should improve players' aiming experience that allows players to target and interact with blocks and actors easily regardless of the camera preset chosen by the creator.   
+
+**Focus Target** 
+
+Focus target adds the ability to target and track an entity with various options. Focus target will first be built on top of the existing `minecraft:free camera`. This behavior would mimic a security camera where the creator could choose what entity they want to track with customizable features.
+
+Experimental toggle: **Creator Camera: Focus Target Camera**
+
+You can add, remove, and apply a center offset to a focus target.
+
+Adding a target:
+
+`/camera @s target_entity <entity>`
+
+Removing a target: 
+
+`/camera @s remove_target`
+
+Applying a center offset:
+
+`/camera @s target_entity <entity> target_center_offset <x, y, z>`
+
 
 ### User Input during the "minecraft:free" camera
 
@@ -311,7 +337,7 @@ When multiple people are playing in split-screen on the same device, they have s
 
 This controls what is used for the audio listener.
 
-Creators will sometimes want the player’s position to continue being where the audio system’s "ears" are, and other times they will want this listener position to be where the camera is.
+Creators will sometimes want the player’s position to continue being where the audio system’s “ears” are, and other times they will want this listener position to be where the camera is.
 
 
 ```json
@@ -341,4 +367,3 @@ Basically, it determines whether the player state can affect rendering. A securi
   }
 }
 ```
-

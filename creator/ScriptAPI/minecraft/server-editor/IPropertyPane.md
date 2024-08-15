@@ -33,33 +33,12 @@ Provides visibility change events
 
 Type: *EventSink<PropertyPaneVisibilityUpdate>*
 
-### **parentPaneId**
-`read-only parentPaneId: string;`
-
-In case of sub pane this is the id of the parent pane.
-
-Type: *string*
-
-### **title**
-`title: string;`
-
-Localized title of the property pane
-
-Type: *string*
-
 ### **visible**
 `visible: boolean;`
 
 Check visibility of the pane
 
 Type: *boolean*
-
-### **width**
-`width: number;`
-
-Width of the panel in rem.
-
-Type: *number*
 
 ## Methods
 - [addBlockList](#addblocklist)
@@ -82,10 +61,12 @@ Type: *number*
 - [addVector3](#addvector3)
 - [addVector3_deprecated](#addvector3_deprecated)
 - [collapse](#collapse)
-- [createPropertyPane](#createpropertypane)
+- [createSubPane](#createsubpane)
 - [expand](#expand)
+- [getTitle](#gettitle)
 - [hide](#hide)
-- [removePropertyPane](#removepropertypane)
+- [removeSubPane](#removesubpane)
+- [setTitle](#settitle)
 - [show](#show)
 
 ### **addBlockList**
@@ -348,17 +329,17 @@ Collapse the pane.
 
 **Returns** *void*
 
-### **createPropertyPane**
+### **createSubPane**
 `
-createPropertyPane(options: IPropertyPaneOptions): IPropertyPane
+createSubPane(options: ISubPanePropertyItemOptions): ISubPanePropertyItem
 `
 
-Creates an internal sub panel that is presented inside a extender control.
+Creates an sub pane that can store property items.
 
 #### **Parameters**
-- **options**: *IPropertyPaneOptions*
+- **options**: *ISubPanePropertyItemOptions*
 
-**Returns** *IPropertyPane*
+**Returns** *ISubPanePropertyItem*
 
 ### **expand**
 `
@@ -369,6 +350,15 @@ Expand the pane.
 
 **Returns** *void*
 
+### **getTitle**
+`
+getTitle(): LocalizedString | undefined
+`
+
+Returns property pane title.
+
+**Returns** *LocalizedString | undefined*
+
 ### **hide**
 `
 hide(): void
@@ -378,17 +368,31 @@ Hide the pane.
 
 **Returns** *void*
 
-### **removePropertyPane**
+### **removeSubPane**
 `
-removePropertyPane(paneToRemove: IPropertyPane): boolean
+removeSubPane(paneToRemove: IPropertyPane): boolean
 `
 
-Removes a child property pane from the parent pane.
+Removes an existing sub pane.
 
 #### **Parameters**
 - **paneToRemove**: *IPropertyPane*
 
 **Returns** *boolean*
+
+### **setTitle**
+`
+setTitle(newTitle: LocalizedString | undefined): void
+`
+
+Updates title of property pane.
+
+#### **Parameters**
+- **newTitle**: *LocalizedString | undefined*
+  
+  New title
+
+**Returns** *void*
 
 ### **show**
 `
