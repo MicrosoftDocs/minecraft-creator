@@ -1,12 +1,12 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Camera Command Tutorial - Free Camera Preset
-description: "A tutorial about the Free Camera Preset command"
+title: Free Camera Preset
+description: "A tutorial about the Free Camera Preset"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Free Camera Preset: Command Basics
+# Free Camera Preset
 
 In this tutorial you will learn how the **free camera** preset command works.
 
@@ -39,7 +39,7 @@ To get the coordinates you'll use to set the position of the camera, go into a w
 
 The camera command supports adjusting the position relative to the world or to the player in these three ways:
 
-![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/CameraCommand/creator_xyz_coordinates.jpg)
+![Graphic showing X, Y, and Z coordinates on a Minecraft map](Media/creator_xyz_coordinates.jpg)
 
 **1. World coordinates**
 
@@ -71,22 +71,23 @@ To set the camera to be 5 blocks South, use a negative z coordinate like this:
 
 **3. Distance from the player, in the direction the player is facing**
 
-To set the camera to be 5 blocks in front of the player:
+This command sets the camera to be 5 blocks in front of the player:
 
 `/camera @s set minecraft:free pos ^ ^ ^5`
 
-Action: Find coordinates and set the location of the free camera to those coordinates. 
+To find coordinates and set the location of the free camera to those coordinates. 
 
-Steps: 
->- Go into creative mode and grab coordinates. 
->- Return your player to the starting area. 
->- Use a command like this to position the camera at the coordinates:
+1. Go into creative mode and note the coordinates.
+
+1. Return your player to the starting area.
+
+1. Use a command like this to position the camera at the coordinates:
 
 `/camera @s set minecraft:free pos -51 80 22`
 
-![Animation showing the result of entering /camera @s set minecraft:free pos -51 80 22](Media/CameraCommand/step_1.gif)
+![Animation showing the result of entering /camera @s set minecraft:free pos -51 80 22](Media/step_1.gif)
 
-![World with coordinates toggled on, coordinates displayed are -51 80 22](Media/CameraCommand/free_camera_preset_coordinates.png)
+![World with coordinates toggled on, coordinates displayed are -51 80 22](Media/free_camera_preset_coordinates.png)
 
 In this example, the camera is in the right location. Now, we need to set the facing direction or rotation.
 
@@ -105,7 +106,7 @@ This is the same command from the previous step, with the addition of `facing @s
 
 `/camera @s set minecraft:free pos -51 80 22 facing @s`
 
-![Animation showing the camera moving to the given position and facing the player.](Media/CameraCommand/step_2.gif)
+![Animation showing the camera moving to the given position and facing the player.](Media/step_2.gif)
 
 ### Set the camera rotation
 
@@ -119,7 +120,7 @@ The rotation of the camera 360 degrees around the target parallel to the earth. 
 
 The angle up or down, perpendicular to the earth. Pitch is limited to a range of 90 facing straight down to -90 facing straight up. This limitation is to prevent rolling the camera upside down.
 
-![Graphic showing yaw (y) and pitch (x) relative to the player.](Media/CameraCommand/creator_pitch_and_yaw.jpg)
+![Graphic showing yaw (y) and pitch (x) relative to the player.](Media/creator_pitch_and_yaw.jpg)
 
 A couple of notes about position:
 
@@ -127,7 +128,7 @@ A couple of notes about position:
 
 >- When setting the camera relative to the player's position, you many notice an offset that may place the camera not relative to 0 but relative to some offset from the player.
 
-![Animation showing the effect of setting the camera position.](Media/CameraCommand/relative_position.png)
+![Animation showing the effect of setting the camera position.](Media/relative_position.png)
 
 In this example, the camera is in position and facing the player, but the movement of the camera was not smooth - it was immediate. To fix this, let's add a transition to make the movement more cinematic. 
 
@@ -145,7 +146,7 @@ This example shows how to add an easing transition to the position and facing di
 
 `/camera @s set minecraft:free ease 8 linear pos -51 80 22 facing @s`
 
-![Animation showing the camera doing a linear easing transition](Media/CameraCommand/step_3.gif)
+![Animation showing the camera doing a linear easing transition](Media/step_3.gif)
 
 Enter the command with your coordinates, time, and an ease to demonstrate the difference between the transition with and without easing.
 
@@ -169,13 +170,13 @@ This example shows the effect of setting all three values to 5 seconds:
 
 `/camera @a fade time 5 5 5`
 
-![Animation showing a camera fade with each value set to 5 seconds](Media/CameraCommand/step_4_5_5_5.gif)
+![Animation showing a camera fade with each value set to 5 seconds.](Media/step_4_5_5_5.gif)
 
 This example will set the fade-in to 3 seconds, the hold to 2 seconds, and the fade-out to 3 seconds:
 
 `/camera @a fade time 3 2 3`
 
-![Animation showing a camera fade with values set to 3, 2, and 3 seconds, respectively.](Media/CameraCommand/step_4_3_2_3.gif)
+![Animation showing a camera fade with values set to 3, 2, and 3 seconds, respectively.](Media/step_4_3_2_3.gif)
 
 The target is set to `@a`, so that the fade will be seen by all players. You can also set it so that only the player sees the fade.
 
@@ -185,17 +186,17 @@ In addition to the length of the fade, you can set the color of the fade by adju
 
 `/camera @a fade color 0 0 0` would make a classic fade to black.
 
-![Image of a Minecraft world faded to black](Media/CameraCommand/black_fade.png)
+![Image of a Minecraft world faded to black.](Media/black_fade.png)
 
 `/camera @a fade color 255 255 255` makes the screen fade to white.
 
-![Image of a Minecraft world faded to white](Media/CameraCommand/white_fade.png)
+![Image of a Minecraft world faded to white.](Media/white_fade.png)
 
 To make a red fade, set red to 255, green to 0, and blue to 0 like this:
 
 `/camera @a fade color 255 0 0`
 
-![Image of a screen of Minecraft that has a red wash over the scene.](Media/CameraCommand/red_fade.png)
+![Image of a screen of Minecraft that has a red wash over the scene.](Media/red_fade.png)
 
 ## Step 5: Prevent the Player from Moving
 
@@ -227,9 +228,13 @@ When teleporting a player to a location, it's nice to have a transition that mak
 
 Here is the example of the first part - configuring a 10-second fade...
 
-![Animation showing the configuration of fade time to cover a teleport action.](<Media/CameraCommand/Step 6 pt 1.gif>)
+![Animation showing the configuration of fade time to cover a teleport action.](Media/Step_6_pt_1.gif)
 
 This is the result showing that when the player's screen fades in, they have been teleported to an entirely new location.
 
-![Animation showing a screen fading back in with the player in a new location](<Media/CameraCommand/Step 6 pt 2.gif>)
+![Animation showing a screen fading back in with the player in a new location](Media/Step_6_pt_2.gif)
+
+## Focus Target
+
+Focus target adds the ability to target and track an entity with various options. Focus target will first be built on top of the existing minecraft:free camera. This behavior would mimic a security camera where the creator could choose what entity they want to track with customizable features 
 
