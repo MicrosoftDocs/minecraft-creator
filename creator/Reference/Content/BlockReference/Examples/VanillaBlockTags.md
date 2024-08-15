@@ -30,21 +30,21 @@ Note: most of the earlier block tags did not have a namespace when released and 
 >- "log"
 >- "metal"
 >- "minecraft:crop"
->- "minecraft:diamond_tier_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:gold_tier_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:iron_tier_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:is_digger_item_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:is_hatchet_item_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:is_hoe_item_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:is_mace_item_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:is_pickaxe_item_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:is_shears_item_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:is_shovel_item_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:is_sword_item_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:is_tool_item_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:netherite_tier_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:stone_tier_destructible "Requires UpcomingFeatures Experiment
->- "minecraft:wood_tier_destructible "Requires UpcomingFeatures Experiment
+>- "minecraft:diamond_tier_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:gold_tier_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:iron_tier_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:is_digger_item_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:is_hatchet_item_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:is_hoe_item_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:is_mace_item_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:is_pickaxe_item_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:is_shears_item_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:is_shovel_item_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:is_sword_item_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:is_tool_item_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:netherite_tier_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:stone_tier_destructible" **Requires UpcomingFeatures Experiment**
+>- "minecraft:wood_tier_destructible" **Requires UpcomingFeatures Experiment**
 >- "mob_spawner"
 >- "not_feature_replaceable"
 >- "oak"
