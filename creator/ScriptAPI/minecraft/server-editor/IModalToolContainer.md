@@ -17,20 +17,11 @@ Tools within this container.
 
 Type: *IModalTool[]*
 
-### **selectedOptionId**
-`read-only selectedOptionId: string;`
-
-The id of the selected tool in container.
-
-Type: *string*
-
 ## Methods
 - [addTool](#addtool)
-- [dispose](#dispose)
-- [hide](#hide)
+- [getSelectedToolId](#getselectedtoolid)
 - [removeTool](#removetool)
-- [setSelectedOptionId](#setselectedoptionid)
-- [show](#show)
+- [setSelectedToolId](#setselectedtoolid)
 
 ### **addTool**
 `
@@ -47,23 +38,14 @@ Create a new tool in the modal tool container represented via button on the tool
 
 **Returns** *IModalTool*
 
-### **dispose**
+### **getSelectedToolId**
 `
-dispose(): void
-`
-
-Destroy the menu and its items.
-
-**Returns** *void*
-
-### **hide**
-`
-hide(): void
+getSelectedToolId(): string | undefined
 `
 
-Hide the tool container and its items.
+Returns identifier of the selected tool.
 
-**Returns** *void*
+**Returns** *string | undefined*
 
 ### **removeTool**
 `
@@ -79,24 +61,16 @@ Remove an existing tool by id from the tool container
 
 **Returns** *void*
 
-### **setSelectedOptionId**
+### **setSelectedToolId**
 `
-setSelectedOptionId(value: string | undefined, update: boolean): void
+setSelectedToolId(id: string | undefined): void
 `
 
-Sets the selected tool.
+Selects a tool in the container.
 
 #### **Parameters**
-- **value**: *string | undefined*
-- **update**: *boolean*
-
-**Returns** *void*
-
-### **show**
-`
-show(): void
-`
-
-Show the tool container and its items.
+- **id**: *string | undefined*
+  
+  Identifier of the tool
 
 **Returns** *void*

@@ -36,6 +36,8 @@ Warped Door
 - `bamboo_block`
 - `minecraft:waxed_oxidized_chiseled_copper`
 - `waxed_oxidized_chiseled_copper`
+- `minecraft:wet_sponge`
+- `wet_sponge`
 - `minecraft:end_stone_brick_wall`
 - `end_stone_brick_wall`
 - `minecraft:granite`
@@ -2720,128 +2722,64 @@ Double Stone Slab 4
 Yellow Flower
 - `wool`
 Wool
-- `minecraft:wool`
-Wool
 - `log`
-Log
-- `minecraft:log`
 Log
 - `log2`
 Log 2
-- `minecraft:log2`
-Log 2
 - `coral`
-Coral
-- `minecraft:coral`
 Coral
 - `fence`
 Fence
-- `minecraft:fence`
-Fence
 - `carpet`
-Carpet
-- `minecraft:carpet`
 Carpet
 - `shulker_box`
 Shulker Box
-- `minecraft:shulker_box`
-Shulker Box
 - `concrete`
-Concrete
-- `minecraft:concrete`
 Concrete
 - `stained_hardened_clay`
 Stained Hardened Clay
-- `minecraft:stained_hardened_clay`
-Stained Hardened Clay
 - `concrete_powder`
-Concrete Powder
-- `minecraft:concrete_powder`
 Concrete Powder
 - `stained_glass`
 Stained Glass
-- `minecraft:stained_glass`
-Stained Glass
 - `stained_glass_pane`
-Stained Glass Pane
-- `minecraft:stained_glass_pane`
 Stained Glass Pane
 - `planks`
 Planks
-- `minecraft:planks`
-Planks
 - `wooden_slab`
-Wooden Slab
-- `minecraft:wooden_slab`
 Wooden Slab
 - `leaves`
 Leaves
-- `minecraft:leaves`
-Leaves
 - `leaves2`
-Leaves 2
-- `minecraft:leaves2`
 Leaves 2
 - `wood`
 Wood
-- `minecraft:wood`
-Wood
 - `sapling`
-Sapling
-- `minecraft:sapling`
 Sapling
 - `coral_fan`
 Coral Fan
-- `minecraft:coral_fan`
-Coral Fan
 - `coral_fan_dead`
-Coral Fan Dead
-- `minecraft:coral_fan_dead`
 Coral Fan Dead
 - `red_flower`
 Red Flower
-- `minecraft:red_flower`
-Red Flower
 - `tallgrass`
-Tallgrass
-- `minecraft:tallgrass`
 Tallgrass
 - `coral_block`
 Coral Block
-- `minecraft:coral_block`
-Coral Block
 - `double_plant`
-Double Plant
-- `minecraft:double_plant`
 Double Plant
 - `stone_block_slab`
 Stone Block Slab
-- `minecraft:stone_block_slab`
-Stone Block Slab
 - `stone_block_slab2`
-Stone Block Slab 2
-- `minecraft:stone_block_slab2`
 Stone Block Slab 2
 - `stone_block_slab3`
 Stone Block Slab 3
-- `minecraft:stone_block_slab3`
-Stone Block Slab 3
 - `stone_block_slab4`
-Stone Block Slab 4
-- `minecraft:stone_block_slab4`
 Stone Block Slab 4
 - `monster_egg`
 Monster Egg
-- `minecraft:monster_egg`
-Monster Egg
 - `stonebrick`
 Stonebrick
-- `minecraft:stonebrick`
-Stonebrick
-- `light_block`
-Light Block
-- `minecraft:light_block`
-Light Block
 - `minecraft:chicken`
 Chicken
 - `chicken`
@@ -2908,12 +2846,8 @@ Splash Potion
 Ender Pearl
 - `ender_pearl`
 Ender Pearl
-- `minecraft:boat`
-Boat
 - `boat`
 Boat
-- `minecraft:chest_boat`
-Chest Boat
 - `chest_boat`
 Chest Boat
 - `minecraft:lingering_potion`
@@ -3761,6 +3695,8 @@ Empty Map
 Saddle
 - `saddle`
 Saddle
+- `minecraft:bundle`
+- `bundle`
 - `minecraft:leather_horse_armor`
 Leather Horse Armor
 - `leather_horse_armor`
@@ -4541,16 +4477,6 @@ Suspicious Stew
 Filled Map
 - `filled_map`
 Filled Map
-- `minecraft:jigsaw`
-Jigsaw
-- `jigsaw`
-Jigsaw
-- `minecraft:dye`
-Dye
-- `minecraft:banner_pattern`
-Banner Pattern
-- `minecraft:spawn_egg`
-Spawn Egg
 
 ## References
 The following commands reference this enum:

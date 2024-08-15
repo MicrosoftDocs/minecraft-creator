@@ -75,6 +75,11 @@ Type: *boolean*
 
 Type: [*@minecraft/server.GameMode*](../../minecraft/server/GameMode.md)
 
+### **hardcore**
+`hardcore?: boolean;`
+
+Type: *boolean*
+
 ### **immediateRespawn**
 `immediateRespawn?: boolean;`
 

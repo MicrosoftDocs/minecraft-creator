@@ -79,6 +79,8 @@ Damage caused by touching a Lava block.
 `lightning = "lightning"`
 
 Damage caused by being struck by lightning.
+### **maceSmash**
+`maceSmash = "maceSmash"`
 ### **magic**
 `magic = "magic"`
 

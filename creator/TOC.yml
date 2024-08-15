@@ -232,12 +232,17 @@
           href: Documents/FogInResourcePacks.md
         - name: Cameras
           items:  
+          - name: Camera System
+            href: Documents/CameraSystem/index.yml
+          - name: Camera System Introduction
+            href: Documents/CameraSystem/CameraCommandIntroduction.md
           - name: Free Camera Preset Tutorial
-            href: Documents/CameraTutorialFreeCameraPreset.md
-          - name: The Camera Command
-            href: Documents/CameraCommandIntroduction.md
+            href: Documents/CameraSystem/CameraPresetFree.md
+          - name: Third Person Camera Preset
+            href: Documents/CameraSystem/CameraPresetThirdPerson.md
           - name: Camera Script APIs
-            href: ScriptAPI/minecraft/server/Camera.md
+            href: Documents/CameraSystem/FreeCameraScriptAPITutorial.md
+
     - name: Entities and Particles
       items:
         - name: Creating New Entity Types
@@ -380,6 +385,8 @@
             href: Reference/Content/blockreference/Examples/Definitions/BlockCulling.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
+          - name: Vanilla Block Tags
+            href: Reference/Content/blockreference/Examples/VanillaBlockTags.md
         - name: Entity JSON
           items:
           - name: Filters
