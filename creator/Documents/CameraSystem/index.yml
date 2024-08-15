@@ -22,7 +22,7 @@ landingContent:
     linkLists:
       - linkListType: learn
         links:
-          - text: Camera System
+          - text: Camera System Introduction
             url: CameraCommandIntroduction.md
           - text: Free Camera Command Tutorial
             url: CameraPresetFree.md
