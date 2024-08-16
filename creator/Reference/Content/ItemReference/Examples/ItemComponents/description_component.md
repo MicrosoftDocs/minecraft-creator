@@ -26,10 +26,12 @@ ms.service: minecraft-bedrock-edition
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |category |items |String |The creative category that this item belongs to. Options include "construction", "nature", "equipment", "items", and "none"|
-|group |-- |ItemGroup |The creative group that this item belongs to. Group name is limited to 256 characters. |
+|group |-- |Enumerator |The creative group that this item belongs to. Group name is limited to 256 characters. |
 |is_hidden_in_commands |-- |Boolean |Determines whether or not this item can be used with commands. Commands can use items by default. |
 
-### ItemGroup Value Types
+### group
+Here are the following item groups that can be set for the value of `group`.
+
 - itemGroup.name.anvil
 - itemGroup.name.arrow
 - itemGroup.name.axe
