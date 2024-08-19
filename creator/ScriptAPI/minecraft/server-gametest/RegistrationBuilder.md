@@ -5,8 +5,12 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-gametest.RegistrationBuilder Class
 description: Contents of the @minecraft/server-gametest.RegistrationBuilder class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # RegistrationBuilder Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A utility class to set GameTest parameters for a test. Methods can be chained together to set multiple properties.
 

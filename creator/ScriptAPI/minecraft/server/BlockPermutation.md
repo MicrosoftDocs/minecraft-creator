@@ -50,12 +50,8 @@ Type: [*BlockType*](BlockType.md)
 - [getAllStates](#getallstates)
 - [getItemStack](#getitemstack)
 - [getState](#getstate)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getTags](#gettags)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [hasTag](#hastag)
-::: moniker-end
 - [matches](#matches)
 - [withState](#withstate)
 - [resolve](#resolve)
@@ -97,7 +93,6 @@ Gets a state for the permutation.
 
 **Returns** *boolean* | *number* | *string* | *undefined* - Returns the state if the permutation has it, else `undefined`.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getTags**
 `
 getTags(): string[]
@@ -107,11 +102,6 @@ Creates a copy of the permutation.
 
 **Returns** *string*[]
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **hasTag**
 `
 hasTag(tag: string): boolean
@@ -123,9 +113,6 @@ Checks to see if the permutation has a specific tag.
 - **tag**: *string*
 
 **Returns** *boolean* - Returns `true` if the permutation has the tag, else `false`.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 #### Examples
 ##### ***check_block_tags.js***
@@ -140,7 +127,6 @@ console.log(`Block is dirt: ${blockPerm.hasTag("dirt")}`);
 console.log(`Block is wood: ${blockPerm.hasTag("wood")}`);
 console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
 ```
-::: moniker-end
 
 ### **matches**
 `

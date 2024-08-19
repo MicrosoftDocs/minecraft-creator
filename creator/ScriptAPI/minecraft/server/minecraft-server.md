@@ -16,12 +16,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.11.0"
+    "version": "1.13.0"
 }
 ```
 
 ## Available Versions
 - `1.15.0-beta`
+- `1.13.0`
+- `1.12.0`
 - `1.11.0`
 - `1.10.0`
 - `1.9.0`
@@ -460,6 +462,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
+- [InvalidIteratorError](InvalidIteratorError.md)
 - [InvalidStructureError](InvalidStructureError.md)
 - [ItemCustomComponentAlreadyRegisteredError](ItemCustomComponentAlreadyRegisteredError.md)
 - [ItemCustomComponentReloadNewComponentError](ItemCustomComponentReloadNewComponentError.md)

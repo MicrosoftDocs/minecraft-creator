@@ -259,24 +259,6 @@ Listed below are the mathematical functions available for use in Molang.
 | `math.sqrt(value)`| Square root of value |
 | `math.trunc(value)`| Round value towards zero |
 
-## Arrow Operator `->`
-
-Some return values of query function, or values stored in temp/entity/context variables can be a reference to another entity.  The `->` operator allows an expression to access variables or run queries on that entity.  For example, the example below will find all pigs within four meters of the current entity(including itself if it's a pig), and increment a variable `v.x` on itself if the block immediately above each pig is flammable (such as an oak button).
-
-> [!CAUTION]
-> In the case where the left-hand-side of the `->` operator has an error (value is null, the entity was killed previously, or some other issue), the expression will not evaluate the right-hand-side and will return 0.
->
-> This implementation style was a choice between performance and not requiring content creators to overly worry about checking for potentially bad values everywhere.
-
-### Example
-
-```
-v.x = 0;
-for_each(v.pig, query.get_nearby_entities(4, 'minecraft:pig'), {
-    v.x = v.x + v.pig->query.get_relative_block_state(0, 1, 0, 'flammable');
-});
-```
-
 ## Brace Scope Delimiters `{ }`
 
 One can group a series of statements into a single group by wrapping them in `{` and `}` symbols.  This is used primarily in loops and conditional statements:
@@ -326,19 +308,6 @@ loop(10, {
  v.x = v.y;
  v.y = t.x;
 });
-```
-
-## for_each
-
-[`query.get_nearby_entities`](QueryFunctions.md#list-of-entity-queries) returns an array of entities.  In order to iterate through them, you can use the following new built-in function `for_each`.  It takes three parameters: `for_each(<variable>, <array>, <expression>);`  The variable can be any variable, either a `temp.` or `variable.`, although we would recommend using `temp.` to not pollute the entity's variable space.  The expression is any Molang expression you want to execute for each entry in the array).
-
-### Example
-
-```
-"v.x = 0;
-for_each(t.pig, query.get_nearby_entities(4, 'minecraft:pig'), {
-    v.x = v.x + 1;
-});"
 ```
 
 ## break

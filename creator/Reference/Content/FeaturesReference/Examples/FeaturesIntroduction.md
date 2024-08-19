@@ -139,10 +139,7 @@ The [Example Feature Schema](ExampleFeatureSchema.md) document has an example of
 
 ## Attaching Features
 
-Features must be attached to at least one biome in order to show up in the world. During world generation, biomes attempt to place their attached features chunk-by-chunk. Features can be attached in two ways:
-
-1. Through a feature rule definition
-2. Through the "minecraft:forced_features" biome component
+Features must be attached to at least one biome in order to show up in the world. During world generation, biomes attempt to place their attached features chunk-by-chunk. Features can be attached via a feature rule definition.
 
 ## Feature Rules
 
@@ -217,66 +214,86 @@ To control the world generation pass at which a feature rule is applied, you can
   version "format_version"
   object "minecraft:feature_rules"
   {
-      object "description"
-      {
-          string "identifier" // The name of this feature rule in the format 'namespace_name:rule_name'. 'rule_name' must match the filename.
-          feature_reference "places_feature" // Named reference to the feature controlled by this rule.
-      }
-      object "conditions" // Parameters to control where and when the feature will be placed.
-      {
-          string "placement_pass" // When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.
-          biome_filter_group "minecraft:biome_filter" : opt // List of filter tests to determine which biomes this rule will attach to.
-      }
-      object "distribution" : opt // Parameters controlling the initial scatter of the feature.
-      {
-          molang "iterations" // Number of scattered positions to generate
-          object "scatter_chance" : opt // Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
-          {
-              int "numerator"<1-*>
-              int "denominator"<1-*>
-          }
-          molang "scatter_chance" : opt // Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
-          enumerated_value "coordinate_eval_order"<"xyz", "xzy", "yxz", "yzx", "zxy", "zyx"> : opt // The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to "xzy".
-          molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
-          object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
-          {
-            enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
-            int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
-            int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
-            array "extent"[2]
-              {
-                molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-              }
-          }
-          molang "z" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
-          object "z" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
-          {
-            enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
-            int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
-            int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
-            array "extent"[2]
-              {
-                molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-              }
-          }
-          molang "y" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
-          object "y" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
-          {
-            enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
-            int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
-            int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
-            array "extent"[2]
-             {
-                molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-             }
-          }
-        }
+    object "description"
+    {
+      string "identifier" // The name of this feature rule in the format 'namespace_name:rule_name'. 'rule_name' must match the filename.
+      feature_reference "places_feature" // Named reference to the feature controlled by this rule.
     }
+    object "conditions" // Parameters to control where and when the feature will be placed.
+    {
+      string "placement_pass" // When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.
+      biome_filter_group "minecraft:biome_filter" : opt // List of filter tests to determine which biomes this rule will attach to. Object of type FilterGroup
+    }
+      object "distribution" : opt // Parameters controlling the initial scatter of the feature. Object of type ScatterParams
+  }
 }
 ```
+
+### Coordinate Evaluation Order
+
+CoordinateEvaluationOrder enumerator, supported values are: "xyz", "xzy", "yxz", "yzx", "zxy", "zyx".
+
+### Coordinate Range
+
+Represents the scatter distribution over a coordinate (x/y/z), can also be built by an expression.
+
+| Name| Type | Required? | Description |
+|:-----------|:-----------|:-----------|:-----------|
+| distribution | *n/a* | Required | Type of distribution. Supported distributions are defined by "Random Distribution Type". |
+| extent | Array | Required | Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around. |
+| grid_offset | Integer | Optional | When the distribution type is grid, defines the offset along this axis. |
+| step_size | Integer | Optional | When the distribution type is grid, defines the distance between steps along this axis. |
+
+### Filter Group
+
+Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.
+
+| Name| Type | Required? | Description |
+|:-----------|:-----------|:-----------|:-----------|
+| AND | Object of type Filter Group | Optional | Evaluates all tests in the group, all must pass in order for the group to pass. |
+| NOT | Object of type Filter Group | Optional | Evaluates all tests in the group, all must fail in order for the group to pass. |
+| OR | Object of type Filter Group | Optional | Evaluates tests in the group, one or more must pass in order for the group to pass. |
+| all | Object of type Filter Group | Optional | Evaluates all tests in the group, all must pass in order for the group to pass. |
+| all_of | Object of type Filter Group | Optional | Evaluates all tests in the group, all must pass in order for the group to pass. |
+| any | Object of type Filter Group | Optional | Evaluates tests in the group, one or more must pass in order for the group to pass. |
+| any_of | Object of type Filter Group | Optional | Evaluates tests in the group, one or more must pass in order for the group to pass. |
+| none_of | Object of type Filter Group | Optional | Evaluates all tests in the group, all must fail in order for the group to pass |
+
+### Filter Test
+
+| Name| Type | Required? | Description |
+|:-----------|:-----------|:-----------|:-----------|
+| domain | Object | Optional | The domain the test should be performed in. |
+| operator | Object | Optional | The comparison to apply with 'value'. |
+| subject | Object | Optional | The subject of this filter test |
+| test | String | Required | The name of the test to apply. |
+| value | Object | OptionalOptional | The value being compared with the test. |
+
+### Random Distribution Type
+
+`RandomDistributionType` enumerator, supported values are: "uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid".
+
+### Scatter Chance
+
+Scatter probability represented by an expression or an object with a numerator and denominator.
+
+| Name| Type | Required? | Description |
+|:-----------|:-----------|:-----------|:-----------|
+| denominator | Integer | Required | Denominator for scatter probability. |
+| numerator | Integer | Required | Numerator for scatter probability. |
+
+### Scatter Params
+
+Controls the scatter distribution of a particular object.
+
+| Name| Type | Required? | Description |
+|:-----------|:-----------|:-----------|:-----------|
+| coordinate_eval_order | *n/a* | Optional | The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to "xzy". Supported orders are defined by "Coordinate Evaluation Order". |
+| iterations | Object of type struct SharedTypes::Legacy::ExpressionNode | Required | Number of scattered positions to generate. |
+| scatter_chance | Object of type Scatter Chance | Optional | Probability that this scatter will occur. Not evaluated each iteration; either no iterations will run, or all will. |
+| x | Object of type Coordinate Range | Required | Distribution for the coordinate (evaluated each iteration). |
+| y | Object of type Coordinate Range | Required | Distribution for the coordinate (evaluated each iteration). |
+| z | Object of type Coordinate Range | Required | Distribution for the coordinate (evaluated each iteration). |
 
 ## Forced Features
 

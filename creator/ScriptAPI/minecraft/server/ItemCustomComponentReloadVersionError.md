@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .ItemCustomComponentReloadVersionError Class
 description: Contents of the .ItemCustomComponentReloadVersionError class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemCustomComponentReloadVersionError Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - *Error*

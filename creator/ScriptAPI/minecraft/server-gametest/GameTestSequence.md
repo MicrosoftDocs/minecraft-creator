@@ -5,8 +5,12 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-gametest.GameTestSequence Class
 description: Contents of the @minecraft/server-gametest.GameTestSequence class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # GameTestSequence Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Executes a set of steps defined via chained .thenXyz methods, sequentially. This facilitates a 'script' of GameTest setup methods and assertions over time.
 

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemComponentHitEntityEvent Class
 description: Contents of the @minecraft/server.ItemComponentHitEntityEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemComponentHitEntityEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information regarding when an item is used to hit an entity.
 

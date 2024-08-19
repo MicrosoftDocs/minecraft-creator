@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockComponentStepOnEvent Class
 description: Contents of the @minecraft/server.BlockComponentStepOnEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockComponentStepOnEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*BlockEvent*](BlockEvent.md)

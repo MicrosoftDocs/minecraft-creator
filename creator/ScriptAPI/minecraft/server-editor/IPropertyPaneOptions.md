@@ -8,20 +8,13 @@ description: Contents of the @minecraft/server-editor.IPropertyPaneOptions class
 ---
 # IPropertyPaneOptions Interface
 
-The options to create a pane.
+Common optional properties used for constructing a property pane.
 
 ## Properties
 
-### **direction**
-`direction: LayoutDirection;`
-
-Layout direction for sub panes
-
-Type: *LayoutDirection*
-
 ### **title**
-`title: string;`
+`title: LocalizedString;`
 
 Localized title of the property pane
 
-Type: *string*
+Type: *LocalizedString*

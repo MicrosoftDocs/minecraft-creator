@@ -17,6 +17,16 @@ Contains a set of events that are available across the scope of the ExtensionCon
 
 Type: [*ClipboardChangeAfterEventSignal*](ClipboardChangeAfterEventSignal.md)
 
+### **currentThemeChange**
+`read-only currentThemeChange: CurrentThemeChangeAfterEventSignal;`
+
+Type: [*CurrentThemeChangeAfterEventSignal*](CurrentThemeChangeAfterEventSignal.md)
+
+### **currentThemeColorChange**
+`read-only currentThemeColorChange: CurrentThemeColorChangeAfterEventSignal;`
+
+Type: [*CurrentThemeColorChangeAfterEventSignal*](CurrentThemeColorChangeAfterEventSignal.md)
+
 ### **cursorAttachmentPropertyChange**
 `read-only cursorAttachmentPropertyChange: CursorAttachmentPropertyChangeAfterEventSignal;`
 

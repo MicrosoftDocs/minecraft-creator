@@ -18,7 +18,7 @@ ms.service: minecraft-bedrock-edition
 | can_tempt_vertically| false| Boolean| If true, vertical distance to the player will be considered when tempting. |
 | can_tempt_while_ridden| false| Boolean| If true, the mob can be tempted even if it has a passenger riding it. |
 | items| | List| List of items this mob is tempted by |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | sound_interval| [0.0, 0.0]| Range [a, b] |Range of random ticks to wait between tempt sounds. |
 | speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
 | tempt_sound| | String | Sound to play while the mob is being tempted. |

@@ -18,7 +18,7 @@ ms.service: minecraft-bedrock-edition
 | entity_types | {} | JSON Object | Entity filter to determine which targets the behavior affects. |
 | must_reach | true | Boolean | The entity must be able to reach attacker. |
 | priority | 1 | Decimal| The percentage chance that the entity has to attack aggressors of its village, where 1.0 = 100%. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

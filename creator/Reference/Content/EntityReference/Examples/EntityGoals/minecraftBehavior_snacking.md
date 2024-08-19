@@ -15,7 +15,7 @@ ms.service: minecraft-bedrock-edition
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |items|*not set* | List| Items that we are interested in snacking on. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |snacking_cooldown| 7.5| Decimal| The cooldown time in seconds before the mob is able to snack again. |
 |snacking_cooldown_min| 0.5| Decimal| The minimum time in seconds before the mob is able to snack again. |
 |snacking_stop_chance| 0.0017| Decimal| This is the chance that the mob will stop snacking, from 0 to 1. |

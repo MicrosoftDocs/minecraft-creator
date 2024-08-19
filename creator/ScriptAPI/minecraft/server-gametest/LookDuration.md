@@ -5,8 +5,12 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .LookDuration Enumeration
 description: Contents of the .LookDuration enumeration.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # LookDuration Enumeration
+
+> [!CAUTION]
+> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Constants
 ### **Continuous**

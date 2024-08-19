@@ -70,6 +70,8 @@
   href: minecraftComponent_conditional_bandwidth_optimization.md
 - name: custom_hit_test
   href: minecraftComponent_custom_hit_test.md
+- name: damage_absorption
+  href: minecraftComponent_damage_absorption.md
 - name: damage_over_time
   href: minecraftComponent_damage_over_time.md
 - name: damage_sensor

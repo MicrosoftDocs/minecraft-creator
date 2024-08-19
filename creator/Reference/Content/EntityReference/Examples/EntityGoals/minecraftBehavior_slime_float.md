@@ -15,7 +15,7 @@ ms.service: minecraft-bedrock-edition
 | Name| Default Value| Type| Description |
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | jump_chance_percentage| 0.8| Decimal| Percent chance a slime or magma cube has to jump while in water/lava. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | speed_multiplier| 1.2| Decimal| Determines the multiplier the entity's speed is modified by when moving through water/lava. |
 
 ## Example

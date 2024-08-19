@@ -5,8 +5,12 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-gametest.NavigationResult Class
 description: Contents of the @minecraft/server-gametest.NavigationResult class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # NavigationResult Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Properties
 

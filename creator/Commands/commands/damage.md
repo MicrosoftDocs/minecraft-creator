@@ -79,6 +79,7 @@ Entity Attack
 Projectile
 - `suffocation`
 Suffocation
+- `mace_smash`
 - `fall`
 Fall
 - `starve`

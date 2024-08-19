@@ -21,7 +21,7 @@ ms.service: minecraft-bedrock-edition
 |sound_interval|0 |Range ["range_min", "range_max"] |The range of time in seconds to randomly wait before playing the sound again. |
 |on_admire_item_start|*not set* | ["event", "target"] |What happens when the entity starts admiring an item. |
 |on_admire_item_stop|*not set* | ["event", "target"] |What happens when the entity stops admiring an item. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 

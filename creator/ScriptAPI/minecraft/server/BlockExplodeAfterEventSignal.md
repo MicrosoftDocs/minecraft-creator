@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockExplodeAfterEventSignal Class
 description: Contents of the @minecraft/server.BlockExplodeAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockExplodeAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to when an explosion occurs, as it impacts individual blocks.
 
