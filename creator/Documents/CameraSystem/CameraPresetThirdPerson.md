@@ -142,3 +142,13 @@ The following code sample shows the follow_orbit camera with a view offset, radi
 } 
 ```
 
+```json
+{ 
+  "format_version": "1.19.50", 
+  "minecraft:camera_preset": { 
+    "identifier": "minecraft:follow_orbit", 
+    "starting_rot_x": 10,
+    "starting_rot_y": 10
+  } 
+} 
+```
