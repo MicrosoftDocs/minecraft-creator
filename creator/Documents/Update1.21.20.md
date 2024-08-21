@@ -22,8 +22,6 @@ Minecraft Bedrock has been updated to 1.21.20 and there are a number of changes 
   - [on_player_placing](../ScriptAPI/minecraft/server/BlockCustomComponent.md#beforeonplayerplace)
   - [on_placed](../ScriptAPI/minecraft/server/BlockCustomComponent.md#onplace)
 
-- item_display_transforms is a new control for minecraft:geometry. This controls the way a block is visually represented in the UI, on the player, and floating on the ground. It exists inside minecraft:geometry, and requires format_version 1.21.20.
-
 ## Entities
 
 - minecraft:behavior.swim_up_for_breath is a newly exposed AI goal component, which allows a mob to try to move to a location where it can breathe air once it is close to running out of its breathable supply.
@@ -161,6 +159,7 @@ Looking ahead, here's what you can expect coming in future releases.
 
 - Destructible_by_mining - This will allow creators to set the tool tiers for vanilla and custom blocks.
 - Redstone properties and components - This will allow for access to customize Redstone connectivity.
+- item_display_transforms is a new control for minecraft:geometry. This controls the way a block is visually represented in the UI, on the player, and floating on the ground. It exists inside minecraft:geometry, and requires format_version 1.21.20. The item_display_transforms element does require the "Upcoming Creator Features" experimental toggle.
 
 ### Script API
 
