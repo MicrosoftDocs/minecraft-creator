@@ -31,7 +31,7 @@ Custom content can define its own Camera Presets. For example, an "example:sky" 
 
 ## Adding one or more Camera Presets to a Behavior Pack
 
-Inside the com.mojang folder for the version of Minecraft you want the camera to appear in, open your development_behavior_packs folder and do this:
+Inside the **com.mojang** folder for the version of Minecraft you want the camera to appear in, open your development_behavior_packs folder and do this:
 
 1. Create a Behavior Pack folder, as shown in the [Behavior Pack tutorial](../../Documents/BehaviorPack.md).
 
@@ -220,21 +220,21 @@ Aim assist allows content creators to enable aim assist for players with specifi
 
 Focus target adds the ability to target and track an entity with various options. Focus target will first be built on top of the existing `minecraft:free camera`. This behavior would mimic a security camera where the creator could choose what entity they want to track with customizable features.
 
+In addition to adding, removing and applying a center offset to a focus target, you can also control the speed of rotation for targeting an entity and quickly snap the camera's focus onto a target entity.
+
 Experimental toggle: **Creator Camera: Focus Target Camera**
 
 You can add, remove, and apply a center offset to a focus target.
 
-Adding a target:
+- Add a target: `/camera @s target_entity <entity>`
 
-`/camera @s target_entity <entity>`
+- Remove a target: `/camera @s remove_target`
 
-Removing a target: 
+- Apply a center offset: `/camera @s target_entity <entity> target_center_offset <x, y, z>`
 
-`/camera @s remove_target`
+- Set the rotation speed: `rotation_speed` (Uses a float the represents degrees turned per second.)
 
-Applying a center offset:
-
-`/camera @s target_entity <entity> target_center_offset <x, y, z>`
+- Set the camera's focus on a target: `snap_to_target` (Boolean value)
 
 
 ### User Input during the "minecraft:free" camera
