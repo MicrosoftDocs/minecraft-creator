@@ -248,9 +248,9 @@ Experimental toggle: **Creator Camera: Focus Target Camera**
   } 
   ```
 
-### User Input during the "minecraft:free" camera
+### User input
 
-When the "minecraft:free" camera (or a custom camera based on it) is used via the "set" option of the Camera command, user input will be handled as if the player is in the first-person camera view. This means that the player can continue to turn around, place blocks, or otherwise interact with the world as usual, they just will not see it from the typical viewpoint. If player input is not desired when the "minecraft:free" camera is active, other commands can be used to limit the player's abilities. See "Combining Multiple Commands Together" below for some suggestions.
+When the "minecraft:free" camera (or a custom camera based on it) is used via the "set" option of the Camera command, user input will be handled as if the player is in the first-person camera view. This means that the player can continue to turn around, place blocks, or otherwise interact with the world as usual, they just will not see it from the typical viewpoint. If player input is not desired when the "minecraft:free" camera is active, other commands can be used to limit the player's abilities. See the "Combining Multiple Commands Together" section for some suggestions.
 
 ## Persistence of Camera State
 
