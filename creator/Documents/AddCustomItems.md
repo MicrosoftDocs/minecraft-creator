@@ -712,7 +712,7 @@ This file creates the custom shape of the chestplate that the texture and armor 
 }
 ```
 
-**Chestplate Resource Pack/textures/items**
+### Chestplate Resource Pack/textures/items
 
 Here are the image files to download and use for the custom chestplate icon and the geometry's texture itself.
 
@@ -726,7 +726,7 @@ Here is the chestplate texture:
 
 Here is the modified "wild" trim pattern:
 
-![Downloadable image that can be used in a resource plack for the chestplate trim.](Media/AddCustomItems/custom_wild.png)
+![Downloadable image that can be used in a resource pack for the chestplate trim.](Media/AddCustomItems/custom_wild.png)
 
 **Chestplate Resource Pack/textures/item_texture.json**
 
@@ -758,12 +758,21 @@ If your chestplate instead looks like this...
 
 ## Dyeable Custom Items
 
-Custom items can now be dyed in cauldrons. To use the dyeable component the format version on the item and the attachable needs to be 1.21.30.
+Custom items can now be dyed in cauldrons. To use the dyeable component the format version on the item and the attachable needs to be 1.21.30 or higher.
+
+This section of the tutorial assumes that you have successfully completed the previous section: **Custom Chestplate with Vanilla Armor Trim**.
+
+Start by creating a copy of your Custom Chestplate with Vanilla Armor Trim add-on packs.
+
+## Dyable Custom Chestplate Behavior Pack
 
 **Chestplate Behavior Pack/items/custom_chestplate.item.json**
 
-Edit format version to be 1.21.30
-Edit Minecraft:icon:
+Inside the behavior pack, open custom_chestplate.item.json and do this:
+
+1. Edit the format version to be **1.21.30**.
+
+2. Edit `minecraft:icon`:
 
 ```json
 "minecraft:icon": {
@@ -774,22 +783,77 @@ Edit Minecraft:icon:
 },
 ```
 
-Add:
+3. Add `minecraft:dyeable`.
+
 ```json
 "minecraft:dyeable": {
   "default_color":  "#175882"
 }
 ```
 
+... So that the final version of **custom_chestplate.item.json** looks like this:
+
+```json
+{ 
+"format_version": "1.21.30", 
+  "minecraft:item": { 
+    "description": { 
+      "identifier": "demo:custom_chestplate", 
+      "menu_category": { 
+        "category": "equipment", 
+        "group": "itemGroup.name.chestplate" 
+      }
+    },
+    "components": { 
+      "minecraft:max_stack_size": 1, 
+      "minecraft:icon": {
+        "textures": {
+          "default": "custom_chestplate_icon",
+          "dyed": "custom_chestplate_icon_gray"
+        }
+},
+      "minecraft:wearable": { 
+        "protection": 10, 
+        "slot": "slot.armor.chest" 
+      }, 
+      "minecraft:durability": { 
+        "damage_chance": { 
+          "min": 10, 
+          "max": 50 
+      }, 
+        "max_durability": 1560 
+      }, 
+      "minecraft:repairable": { 
+        "repair_items": [ 
+          { 
+            "items": ["pink_dye"], 
+            "repair_amount": 390 
+          } 
+        ] 
+      }, 
+      "minecraft:tags": { 
+        "tags": [ 
+          "minecraft:is_armor", 
+          "minecraft:trimmable_armors" 
+        ] 
+      },
+      "minecraft:dyeable": {
+        "default_color":  "#175882"
+} 
+    } 
+  } 
+}
+```
+
 If you do not want a default color you can leave the "default_color" off and the texture will be the same as if you did not 
 have the component until it is dyed.
 
-For the icon to be dyed correctly you need to provide a grayscale .tga version of your icon image. To do this, make a copy of .png, change the
-extension to .tga, and change the configuration to grayscale.
+For the icon to be dyed correctly. you need to provide a grayscale .tga version of your icon image. To do this, make a copy of the .png file, change the extension to .tga, and then change the configuration to grayscale.
+
+Hint: You can use the icon graphics from the previous section: [**Chestplate Resource Pack/textures/items**](/creator/Documents/AddCustomItems.md#chestplate-resource-packtexturesitems).
 
 
-Chestplate Resource Pack
-Edit file layout:
+**Chestplate Resource Pack:**
 
 ```
  attachables
@@ -809,29 +873,34 @@ Edit file layout:
  manifest.json
 ```
 
-### Chestplate Resource
+You edit **Pack/attachables/custom_chestplate.attachable.json** like this...
 
-**Pack/attachables/custom_chestplate.attachable.json**
+1. Edit the format version to be **1.21.30**.
 
-Edit format version to be 1.21.30.
-Edit "render_controllers" to be:
+2. Edit "render_controllers" like this...
 
 ```json
 "render_controllers": [ "controller.render.custom_chestplate" ],
+```
 
-- Edit materials to be:
+3. Edit materials to be:
+```
       "materials": {
         "default": "armor",
         "dyed": "entity_alphatest_change_color"
       },
+```
 
-- Edit textures to be:
+4. Edit textures to be:
+```
       "textures": {
         "default": "textures/items/custom_chestplate.png",
         "dyed": "textures/items/custom_chestplate_grayscale.tga"
       },
+```
 
-- Add scripts:
+5. Add scripts:
+```
       "scripts": {
         "pre_animation": [
           "variable.is_dyed = query.armor_color_slot(1, 0) != 0.0 || query.armor_color_slot(1, 1) != 0.0 || query.armor_color_slot(1, 2) != 0.0 || query.armor_color_slot(1, 3) != 0.0;"
@@ -839,7 +908,41 @@ Edit "render_controllers" to be:
       }
 ```
 
-**Add Chestplate resource pack\render_controllers\custom_chestplate.render_controllers.json**
+So that the final version of **custom_chestplate.attachable.json** looks like this:
+
+```json
+{
+  "format_version": "1.20.60", 
+  "minecraft:attachable": { 
+    "description": { 
+      "identifier": "demo:custom_chestplate", 
+      "render_controllers": ["controller.render.armor"], 
+      "materials": { 
+        "default": "armor",
+        "dyed": "entity_alphatest_change_color"
+      }, 
+      "textures": { 
+        "default": "textures/items/custom_chestplate.png",
+        "dyed": "textures/items/custom_chestplate_grayscale.tga"
+      }, 
+      "geometry": { 
+        "default": "geometry.custom_chestplate"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.is_dyed = query.armor_color_slot(1, 0) != 0.0 || query.armor_color_slot(1, 1) != 0.0 || query.armor_color_slot(1, 2) != 0.0 || query.armor_color_slot(1, 3) != 0.0;"
+        ]
+      }
+    }
+  }
+}
+```
+
+### custom_chestplate.render_controllers.json
+
+1. In the resource pack, add the **render_controllers** directory and put a new file in there named: **custom_chestplate.render_controllers.json**.
+
+2. Copy and paste this content in there:
 
 ```json
 {
@@ -878,7 +981,7 @@ Edit "render_controllers" to be:
 }
 ```
 
-Example of dyed item:
+After you have edited and saved all of the files, you should be able to dye your custom chestplate in a cauldron full of dye and it will look like this: 
 
 ![Image of a dyable chestplate that has been dyed blue.](Media/AddCustomItems/dyeable_dyed_chestplate.png)
 
