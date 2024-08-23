@@ -224,18 +224,29 @@ In addition to adding, removing and applying a center offset to a focus target, 
 
 Experimental toggle: **Creator Camera: Focus Target Camera**
 
-You can add, remove, and apply a center offset to a focus target.
-
 - Add a target: `/camera @s target_entity <entity>`
 
 - Remove a target: `/camera @s remove_target`
 
 - Apply a center offset: `/camera @s target_entity <entity> target_center_offset <x, y, z>`
 
-- Set the rotation speed: `rotation_speed` (Uses a float the represents degrees turned per second.)
+- Set the rotation speed: `rotation_speed` uses a float that represents degrees turned per second.
 
-- Set the camera's focus on a target: `snap_to_target` (Boolean value)
+- `snap_to_target` sets the camera's focus on the target entity for the first frame and continues tracking it with the given rotation speed. Only works when a valid `rotation_speed` is entered
 
+  Example for `snap_to_target` and `rotation_speed`:
+
+  ```json
+  { 
+    "format_version": "1.21.30",
+      "minecraft:camera_preset": {
+      "identifier": "example:custom_target",
+      "inherit_from": "minecraft:free",
+      "rotation_speed": 10.0,
+      "snap_to_target": true
+    } 
+  } 
+  ```
 
 ### User Input during the "minecraft:free" camera
 
