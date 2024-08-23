@@ -853,7 +853,7 @@ For the icon to be dyed correctly. you need to provide a grayscale .tga version 
 Hint: You can use the icon graphics from the previous section: [**Chestplate Resource Pack/textures/items**](/creator/Documents/AddCustomItems.md#chestplate-resource-packtexturesitems).
 
 
-**Dyeable Chestplate Resource Pack:**
+**Dyeable Custom Chestplate Resource Pack:**
 
 ```
  attachables
@@ -984,6 +984,8 @@ So that the final version of **custom_chestplate.attachable.json** looks like th
 After you have edited and saved all of the files, you should be able to dye your custom chestplate in a cauldron full of dye and it will look like this: 
 
 ![Image of a dyable chestplate that has been dyed blue.](Media/AddCustomItems/dyeable_dyed_chestplate.png)
+
+To learn more about the dyeable item component, take a look at the [`minecraft:dyeable` reference page](/creator/Reference/Content/ItemReference/Examples/ItemComponents/minecraft_dyeable.md).
 
 ## Next Steps
 
