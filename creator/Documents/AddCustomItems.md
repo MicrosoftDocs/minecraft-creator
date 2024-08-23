@@ -809,7 +809,7 @@ Edit file layout:
  manifest.json
 ```
 
-### Chestplate Resource**
+### Chestplate Resource
 
 **Pack/attachables/custom_chestplate.attachable.json**
 
