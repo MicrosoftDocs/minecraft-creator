@@ -216,13 +216,14 @@ Second, if a fade is already in progress, new fades will continue to use the sam
  
 Aim assist allows content creators to enable aim assist for players with specified settings. The Aim assist will find a target in a specified range and allow players to interact with them directly. When in free cam, for example a bird's-eye view, it can be hard to target things like levers and buttons so aim assist will help highlight whatever the player is aiming at in any given moment. It should improve players' aiming experience that allows players to target and interact with blocks and actors easily regardless of the camera preset chosen by the creator.   
 
-**Focus Target** 
+**Focus Target**
 
-Focus target adds the ability to target and track an entity with various options. Focus target will first be built on top of the existing `minecraft:free camera`. This behavior would mimic a security camera where the creator could choose what entity they want to track with customizable features.
+>[!IMPORTANT]
+> This feature is experimental and it is behind the experimental toggle: **Creator Camera: Focus Target Camera**
+
+Focus target adds the ability to target and track an entity with various options. Focus target is built on top of the existing `minecraft:free camera`. This behavior would mimic a security camera where the creator could choose what entity they want to track with customizable features.
 
 In addition to adding, removing and applying a center offset to a focus target, you can also control the speed of rotation for targeting an entity and quickly snap the camera's focus onto a target entity.
-
-Experimental toggle: **Creator Camera: Focus Target Camera**
 
 - Add a target: `/camera @s target_entity <entity>`
 
