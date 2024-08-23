@@ -20,6 +20,8 @@
    href: minecraft_display_name.md
  - name: durability
    href: minecraft_durability.md
+ - name: dyeable
+   href: minecraft_dyeable.md
  - name: enchantable
    href: minecraft_enchantable.md
  - name: entity_placer
