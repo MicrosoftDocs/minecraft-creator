@@ -337,6 +337,26 @@
               href: Documents/BedrockEditor/EditorInstallation.md
             - name: Editor Tutorial
               href: Documents/BedrockEditor/EditorTutorial.md
+            - name: Editor Action Bar
+              href: Documents/BedrockEditor/EditorActionBar.md
+            - name: Editor Brush Tool
+              href: Documents/BedrockEditor/EditorBrushTool.md
+            - name: Editor Deferred Lighting
+              href: Documents/BedrockEditor/EditorDeferredLighting.md
+            - name: Editor Keyboard Inputs
+              href: Documents/BedrockEditor/EditorKeyboardInputs.md
+            - name: Editor Paste Preview
+              href: Documents/BedrockEditor/EditorPastePreview.md
+            - name: Editor Selection Tool
+              href: Documents/BedrockEditor/EditorSelectionTool.md
+            - name: Editor Summon Tool
+              href: Documents/BedrockEditor/EditorSummonTool.md
+            - name: Editor Tool Mode
+              href: Documents/BedrockEditor/EditorToolMode.md
+            - name: Editor Workflow
+              href: Documents/BedrockEditor/EditorWorkflow.md
+            - name: Editor World Options
+              href: Documents/BedrockEditor/EditorWorldOptions.md
             - name: Building Editor Extensions
               href: Documents/BedrockEditor/EditorExtensionsIntroduction.md
         - name: "Blockbench - Model Editing"

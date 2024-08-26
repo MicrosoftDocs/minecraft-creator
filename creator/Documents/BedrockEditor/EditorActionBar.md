@@ -20,6 +20,5 @@ The Action Bar has quick functions like **undo** and **redo** that affect the th
 | Crosshair Mode| `Ctrl Tab` |
 
 
-## How to add actions to the Action bar
-
-Press the [+] on either the right or left side and choose the Action you want to add to the bar from the menu.
+To add an action to the bar, press the [+] on either the right or left side and choose the action you want to add to the bar from the menu.
+To remove an Action, click the little triangle in the lower left corner of the action and choose **Clear** from the drop-down menu.
