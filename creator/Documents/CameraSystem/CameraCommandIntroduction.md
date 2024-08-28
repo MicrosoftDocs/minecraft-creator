@@ -31,7 +31,7 @@ Custom content can define its own Camera Presets. For example, an "example:sky" 
 
 ## Adding one or more Camera Presets to a Behavior Pack
 
-Inside the com.mojang folder for the version of Minecraft you want the camera to appear in, open your development_behavior_packs folder and do this:
+Inside the **com.mojang** folder for the version of Minecraft you want the camera to appear in, open your development_behavior_packs folder and do this:
 
 1. Create a Behavior Pack folder, as shown in the [Behavior Pack tutorial](../../Documents/BehaviorPack.md).
 
@@ -216,30 +216,42 @@ Second, if a fade is already in progress, new fades will continue to use the sam
  
 Aim assist allows content creators to enable aim assist for players with specified settings. The Aim assist will find a target in a specified range and allow players to interact with them directly. When in free cam, for example a bird's-eye view, it can be hard to target things like levers and buttons so aim assist will help highlight whatever the player is aiming at in any given moment. It should improve players' aiming experience that allows players to target and interact with blocks and actors easily regardless of the camera preset chosen by the creator.   
 
-**Focus Target** 
+**Focus Target**
 
-Focus target adds the ability to target and track an entity with various options. Focus target will first be built on top of the existing `minecraft:free camera`. This behavior would mimic a security camera where the creator could choose what entity they want to track with customizable features.
+>[!IMPORTANT]
+> This feature is experimental and it is behind the experimental toggle: **Creator Camera: Focus Target Camera**
 
-Experimental toggle: **Creator Camera: Focus Target Camera**
+Focus target adds the ability to target and track an entity with various options. Focus target is built on top of the existing `minecraft:free camera`. This behavior would mimic a security camera where the creator could choose what entity they want to track with customizable features.
 
-You can add, remove, and apply a center offset to a focus target.
+In addition to adding, removing and applying a center offset to a focus target, you can also control the speed of rotation for targeting an entity and quickly snap the camera's focus onto a target entity.
 
-Adding a target:
+- Add a target: `/camera @s target_entity <entity>`
 
-`/camera @s target_entity <entity>`
+- Remove a target: `/camera @s remove_target`
 
-Removing a target: 
+- Apply a center offset: `/camera @s target_entity <entity> target_center_offset <x, y, z>`
 
-`/camera @s remove_target`
+- Set the rotation speed: `rotation_speed` uses a float that represents degrees turned per second.
 
-Applying a center offset:
+- `snap_to_target` sets the camera's focus on the target entity for the first frame and continues tracking it with the given rotation speed. Only works when a valid `rotation_speed` is entered
 
-`/camera @s target_entity <entity> target_center_offset <x, y, z>`
+  Example for `snap_to_target` and `rotation_speed`:
 
+  ```json
+  { 
+    "format_version": "1.21.30",
+      "minecraft:camera_preset": {
+      "identifier": "example:custom_target",
+      "inherit_from": "minecraft:free",
+      "rotation_speed": 10.0,
+      "snap_to_target": true
+    } 
+  } 
+  ```
 
-### User Input during the "minecraft:free" camera
+### User Input
 
-When the "minecraft:free" camera (or a custom camera based on it) is used via the "set" option of the Camera command, user input will be handled as if the player is in the first-person camera view. This means that the player can continue to turn around, place blocks, or otherwise interact with the world as usual, they just will not see it from the typical viewpoint. If player input is not desired when the "minecraft:free" camera is active, other commands can be used to limit the player's abilities. See "Combining Multiple Commands Together" below for some suggestions.
+When the "minecraft:free" camera (or a custom camera based on it) is used via the "set" option of the Camera command, user input will be handled as if the player is in the first-person camera view. This means that the player can continue to turn around, place blocks, or otherwise interact with the world as usual, they just will not see it from the typical viewpoint. If player input is not desired when the "minecraft:free" camera is active, other commands can be used to limit the player's abilities. See the "Combining Multiple Commands Together" section for some suggestions.
 
 ## Persistence of Camera State
 
