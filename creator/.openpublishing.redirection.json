@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path": "Documents/EditorOverview.md",
+      "redirect_url": "/minecraft/creator/documents/EditorOverview.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/EditorInstallation.md",
+      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorInstallation.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/EditorTutorial.md",
+      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorTutorial.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/EditorExtensionsIntroduction.md",
+      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorExtensionsIntroduction.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/CameraCommandIntroduction.md",
       "redirect_url": "/minecraft/creator/documents/CameraSystem/CameraCommandIntroduction",
       "redirect_document_id": false
@@ -8,6 +28,7 @@
     {
       "source_path": "Documents/CameraTutorialFreeCameraPreset.md",
       "redirect_url": "/minecraft/creator/documents/CameraSystem/CameraTutorialFreeCameraPreset",
+      "redirect_document_id": false
     },
     {
       "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_peek.md",
@@ -16,7 +37,7 @@
     },
     {
       "source_path": "Documents/CommandsHowToMakeACTMWorld.md",
-      "redirect_url": "/minecraft/creator/documents/CreateAnInWorldGame",
+      "redirect_url": "/minecraft/creator/documents/CreateAnInWorldGame.md",
       "redirect_document_id": false
     },
     {
