@@ -2,22 +2,22 @@
   "redirections": [
     {
       "source_path": "Documents/EditorOverview.md",
-      "redirect_url": "/minecraft/creator/documents/EditorOverview.md",
+      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorOverview",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/EditorInstallation.md",
-      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorInstallation.md",
+      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorInstallation",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/EditorTutorial.md",
-      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorTutorial.md",
+      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorTutorial",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/EditorExtensionsIntroduction.md",
-      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorExtensionsIntroduction.md",
+      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorExtensionsIntroduction",
       "redirect_document_id": false
     },
     {
@@ -31,22 +31,22 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_peek.md",
+      "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_peek",
       "redirect_url": "/minecraft/creator/reference/content/entityreference/examplesaigoallist.md",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/CommandsHowToMakeACTMWorld.md",
-      "redirect_url": "/minecraft/creator/documents/CreateAnInWorldGame.md",
+      "redirect_url": "/minecraft/creator/documents/CreateAnInWorldGame",
       "redirect_document_id": false
     },
     {
-      "source_path": "Reference/Content/RecipeReference/Examples/RecipeDefinitions/RecipeIntroduction.md",
+      "source_path": "Reference/Content/RecipeReference/Examples/RecipeDefinitions/RecipeIntroduction",
       "redirect_url": "/minecraft/creator/documents/RecipeIntroduction",
       "redirect_document_id": false
     },
     {
-      "source_path": "creator/Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_breathability.md",
+      "source_path": "creator/Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_breathability",
       "redirect_url": "creator/Reference/Content/BlockReference/Examples/BlockComponents/BlockComponentsList",
       "redirect_document_id": false
     },
