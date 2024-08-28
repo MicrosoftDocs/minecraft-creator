@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "Documents/EditorOverview.md",
-      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorOverview",
+      "redirect_url": "/minecraft/creator/documents/EditorOverview",
       "redirect_document_id": false
     },
     {
@@ -31,8 +31,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_peek",
-      "redirect_url": "/minecraft/creator/reference/content/entityreference/examplesaigoallist.md",
+      "source_path": "Reference/Content/EntityReference/Examples/EntityGoals/minecraftBehavior_peek.md",
+      "redirect_url": "/minecraft/creator/reference/content/entityreference/examplesaigoallist",
       "redirect_document_id": false
     },
     {
@@ -41,12 +41,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "Reference/Content/RecipeReference/Examples/RecipeDefinitions/RecipeIntroduction",
+      "source_path": "Reference/Content/RecipeReference/Examples/RecipeDefinitions/RecipeIntroduction.md",
       "redirect_url": "/minecraft/creator/documents/RecipeIntroduction",
       "redirect_document_id": false
     },
     {
-      "source_path": "creator/Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_breathability",
+      "source_path": "creator/Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_breathability.md",
       "redirect_url": "creator/Reference/Content/BlockReference/Examples/BlockComponents/BlockComponentsList",
       "redirect_document_id": false
     },
