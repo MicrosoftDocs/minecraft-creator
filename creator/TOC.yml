@@ -329,14 +329,36 @@
               href: Documents/GameTestBuildYourFirstGameTest.md
         - name: "Bedrock Editor - World Editing"
           items:
+            - name: Editor Topics
+              href: Documents/BedrockEditor/index.yml
             - name: Editor Overview
-              href: Documents/EditorOverview.md
+              href: Documents/BedrockEditor/EditorOverview.md
             - name: Editor Installation Guide
-              href: Documents/EditorInstallation.md
+              href: Documents/BedrockEditor/EditorInstallation.md
             - name: Editor Tutorial
-              href: Documents/EditorTutorial.md
+              href: Documents/BedrockEditor/EditorTutorial.md
+            - name: Editor Action Bar
+              href: Documents/BedrockEditor/EditorActionBar.md
+            - name: Editor Brush Tool
+              href: Documents/BedrockEditor/EditorBrushTool.md
+            - name: Editor Deferred Lighting
+              href: Documents/BedrockEditor/EditorDeferredLighting.md
+            - name: Editor Keyboard Inputs
+              href: Documents/BedrockEditor/EditorKeyboardInputs.md
+            - name: Editor Paste Preview
+              href: Documents/BedrockEditor/EditorPastePreview.md
+            - name: Editor Selection Tool
+              href: Documents/BedrockEditor/EditorSelectionTool.md
+            - name: Editor Summon Tool
+              href: Documents/BedrockEditor/EditorSummonTool.md
+            - name: Editor Tool Mode
+              href: Documents/BedrockEditor/EditorToolMode.md
+            - name: Editor Workflow
+              href: Documents/BedrockEditor/EditorWorkflow.md
+            - name: Editor World Options
+              href: Documents/BedrockEditor/EditorWorldOptions.md
             - name: Building Editor Extensions
-              href: Documents/EditorExtensionsIntroduction.md
+              href: Documents/BedrockEditor/EditorExtensionsIntroduction.md
         - name: "Blockbench - Model Editing"
           items:
             - name: Minecraft Entity Wizard
