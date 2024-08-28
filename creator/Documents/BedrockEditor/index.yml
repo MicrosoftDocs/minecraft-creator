@@ -36,8 +36,6 @@ landingContent:
             url: EditorBrushTool.md
           - text: Paste Preview
             url: EditorPastePreview.md
-          - text: Line Tool
-            url: EditorLineTool.md
           - text: Summon Tool
             url: EditorSummonTool.md
 
