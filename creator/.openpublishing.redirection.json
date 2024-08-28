@@ -2,7 +2,7 @@
   "redirections": [
     {
       "source_path": "Documents/EditorOverview.md",
-      "redirect_url": "/minecraft/creator/documents/EditorOverview",
+      "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorOverview",
       "redirect_document_id": false
     },
     {
