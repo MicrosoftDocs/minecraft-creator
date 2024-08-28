@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-ui.UIManager Class
 description: Contents of the @minecraft/server-ui.UIManager class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # UIManager Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Methods
 - [closeAllForms](#closeallforms)

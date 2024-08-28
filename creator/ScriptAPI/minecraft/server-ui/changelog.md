@@ -10,12 +10,15 @@ description: Changelog of the `@minecraft/server-ui` module
 
 ## Version Changes
 - [1.4.0-beta](#140-beta)
+- [1.3.0](#130)
 - [1.2.0](#120)
 - [1.1.0](#110)
 - [1.0.0](#100)
 
 ## 1.4.0-beta
-#### Changed version for module dependency `@minecraft/server` from `1.2.0` to `1.8.0`
+#### Changed version for module dependency `@minecraft/server` from `1.3.0` to `1.8.0`
+## 1.3.0
+#### Changed version for module dependency `@minecraft/server` from `1.2.0` to `1.3.0`
 #### Added *[`UIManager`](UIManager.md)*
 #### Added object `uiManager`
 ## 1.2.0
