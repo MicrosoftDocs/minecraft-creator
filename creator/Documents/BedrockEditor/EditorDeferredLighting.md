@@ -17,4 +17,3 @@ On the Settings Editor Window, you can find the options for:
 - Color Grading
 
 When Deferred Lighting is enabled, you can use these options.
-
