@@ -16,7 +16,7 @@ If you'd like to get started in building add-ons with custom components, see our
 
 ## Structure
 
-This new feature is named _custom components_ because script is connected to a given Block or Item’s JSON in a manner very similar to attaching one of the built-in Minecraft components. As such, there is both a JSON aspect to the feature as well as a script aspect of the feature.
+This new feature is named _custom components_ because script is connected to a given Block or Item's JSON in a manner very similar to attaching one of the built-in Minecraft components. As such, there is both a JSON aspect to the feature as well as a script aspect of the feature.
 
 ## Script API
 

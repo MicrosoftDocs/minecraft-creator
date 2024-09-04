@@ -1322,6 +1322,10 @@ Jukebox
 Jukebox
 - `minecraft:stripped_cherry_wood`
 - `stripped_cherry_wood`
+- `minecraft:jigsaw`
+Jigsaw
+- `jigsaw`
+Jigsaw
 - `minecraft:prismarine_wall`
 - `prismarine_wall`
 - `minecraft:border_block`

@@ -38,9 +38,11 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:bundle`
 - `minecraft:andesite_wall`
 - `minecraft:brick_wall`
 - `minecraft:cobblestone_wall`
+- `minecraft:cyan_dye_from_pitcher_plant`
 - `minecraft:diorite_wall`
 - `minecraft:end_brick_wall`
 - `minecraft:granite_wall`
@@ -542,7 +544,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:cyan_concrete_powder`
 - `minecraft:cyan_dye`
 - `minecraft:cyan_dye_from_lapis_lazuli`
-- `minecraft:cyan_dye_from_pitcher_plant`
 - `minecraft:cyan_stained_hardened_clay`
 - `minecraft:dark_oak_boat`
 - `minecraft:dark_oak_chest_boat`

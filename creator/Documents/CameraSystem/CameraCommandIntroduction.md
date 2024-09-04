@@ -97,7 +97,7 @@ In typical Minecraft gameplay, there is a screen effect that covers the screen w
 
 ## Player-camera distance affecting entity rendering
 
-The game typically only renders entities, players, and chunks in an area surrounding the player’s position. Because of this, setting the camera a long distance from the player or moving the player a long distance from the camera could result in unexpected visual results. If you have Content Log messages enabled, you may see a warning alerting you to this, but players typically do not have those messages enabled and will probably not see the warning.
+The game typically only renders entities, players, and chunks in an area surrounding the player's position. Because of this, setting the camera a long distance from the player or moving the player a long distance from the camera could result in unexpected visual results. If you have Content Log messages enabled, you may see a warning alerting you to this, but players typically do not have those messages enabled and will probably not see the warning.
 
 In addition, for entities to render, they need to be in loaded and ticking chunks. When a camera is set to move away from the player, it should sync player and entity data resulting in performant rendering at most gameplay distances.
 
@@ -349,7 +349,7 @@ When multiple people are playing in split-screen on the same device, they have s
 
 This controls what is used for the audio listener.
 
-Creators will sometimes want the player’s position to continue being where the audio system’s “ears” are, and other times they will want this listener position to be where the camera is.
+Creators will sometimes want the player's position to continue being where the audio system's "ears" are, and other times they will want this listener position to be where the camera is.
 
 
 ```json
