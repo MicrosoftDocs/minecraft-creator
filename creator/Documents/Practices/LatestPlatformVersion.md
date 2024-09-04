@@ -47,7 +47,7 @@ Example _non-conformant_ content:
   "modules": [{
     "version": [1, 0, 7],
     "type": "world_template",
-    "uuid": "6ea7c7a6-7db3-496d-8155-edd8a5003116"
+    "uuid": "6eb7c7a6-7db3-496d-8155-edd8a5003116"
   }],
   "format_version": 2
 }
