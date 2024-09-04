@@ -28,10 +28,10 @@ In this tutorial, you will learn how to:
 > - Apply a fade
 > - Clear camera during a fade
 > - Teleport during a fade
-> - Activate a camera based on a player’s distance from a location
+> - Activate a camera based on a player's distance from a location
 > - Set up an NPC to activate a camera
 
-To practice these features and see what they look like in the game, let’s try out a cutscene scenario. Say you want to make a cutscene where the camera transitions from the player’s view to show a flyover of the landscape and then turn to face the player. Let’s try it!
+To practice these features and see what they look like in the game, let's try out a cutscene scenario. Say you want to make a cutscene where the camera transitions from the player's view to show a flyover of the landscape and then turn to face the player. Let's try it!
 
 **Step 1: Set up your Script API workspace**
 
@@ -82,7 +82,7 @@ enum CameraTypes {
 }
 ```
 
-We are creating an enum to easily reference the different types of cameras that we’ll have active in our gameplay session. This assigns reference numbers to the individual camera types. Setting them equal to numeric values allows us to iterate through them if we use the camera types in an array.
+We are creating an enum to easily reference the different types of cameras that we'll have active in our gameplay session. This assigns reference numbers to the individual camera types. Setting them equal to numeric values allows us to iterate through them if we use the camera types in an array.
 
 1. Add the following code example below the enum:
 
@@ -137,7 +137,7 @@ const player = event.player;
 PlayerSpawnCameraSetup(player);}
 );
 ```
-To setup a camera for the player, we need to know when they’ve joined the game. But we actually want to be able to reset the camera state when they’ve died as well, so we can capture both of those scenarios by subscribing to the playerSpawn after event.
+To setup a camera for the player, we need to know when they've joined the game. But we actually want to be able to reset the camera state when they've died as well, so we can capture both of those scenarios by subscribing to the playerSpawn after event.
 
 2. To setup the camera per player we will replace the empty `PlayerSpawnCameraSetup` with this snippet:
 
@@ -175,7 +175,7 @@ if (PlayerCameraStates != null && PlayerCameraStates.length > 0) {
 ```
 For this function we are passing the player in, this both allows us to check if they are already initialized in our camera state system, but has the added benefit of allowing us to do this at a per player level meaning this setup will work in multiplayer.
 
-We check the existing `PlayerCameraStates` array for the player, if they are stored in the array we will reset their state back to the default camera state defined earlier in this function. If they are new player who is not captured in the camera states, we’ll add them to the array with the default settings.
+We check the existing `PlayerCameraStates` array for the player, if they are stored in the array we will reset their state back to the default camera state defined earlier in this function. If they are new player who is not captured in the camera states, we'll add them to the array with the default settings.
 
 3. Add the following function below the **PlayerSpawnCameraSetup** function:
 
@@ -246,9 +246,9 @@ function ApplyPlayerCamera(ct: CameraTypes, currentPlayer: Player) {
 }
 ```
 
-The `ApplyPlayerCamera` function sets the player’s camera to a specific camera type. This function takes the parameters for the cameraType enum that we created and a player, allowing it to be run for any player uniquely.
+The `ApplyPlayerCamera` function sets the player's camera to a specific camera type. This function takes the parameters for the cameraType enum that we created and a player, allowing it to be run for any player uniquely.
 
-The switch state inside of the function sets up different configurations for the player depending on the camera being selected. In this logic we also set the previous state of the camera, allowing for reverting the camera state to it’s previous form when needed. Like when looking at the NPC Greeter in a close up camera and then reverting back to whatever camera the player was using last when the dialogue is completed.
+The switch state inside of the function sets up different configurations for the player depending on the camera being selected. In this logic we also set the previous state of the camera, allowing for reverting the camera state to it's previous form when needed. Like when looking at the NPC Greeter in a close up camera and then reverting back to whatever camera the player was using last when the dialogue is completed.
 
 4. Add the following function below `playerSpawn` subscriber:
 
@@ -347,7 +347,7 @@ function gameTick() {
 system.run(gameTick);
 ```
 
-Using **system.run** we will start a function that is called every tick. To improve performance inside of that gameTick function we won’t do our logic every tick, but instead every other tick. This is represented by the `%2` in the `if(curtick % 2)` statement, if the number is bigger the check will happen less often, but doing this check becomes less taxing. The player has 3 camera types that are either updated constantly or need to have an action taken during the time of the camera transitioning. 
+Using **system.run** we will start a function that is called every tick. To improve performance inside of that gameTick function we won't do our logic every tick, but instead every other tick. This is represented by the `%2` in the `if(curtick % 2)` statement, if the number is bigger the check will happen less often, but doing this check becomes less taxing. The player has 3 camera types that are either updated constantly or need to have an action taken during the time of the camera transitioning. 
 
-For the cutscene camera, we need to countdown until it’s complete, to be able to to reset the camera to a different state.
+For the cutscene camera, we need to countdown until it's complete, to be able to to reset the camera to a different state.
 

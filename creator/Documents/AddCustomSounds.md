@@ -51,7 +51,7 @@ The stage is set, and now it's time to get your custom sound ready! For our exam
 
 You can either record a sound using your audio software, or use the software to open a sound that has been saved to your computer. Once your file is open in the audio software, it needs to be exported as a .OGG file. This can be done in Audacity by navigating to **File > Export > Export as OGG**.
 
-For this tutorial, we’ll export a custom sound file with the name `chestopen.ogg` (you’ll see why, later).
+For this tutorial, we'll export a custom sound file with the name `chestopen.ogg` (you'll see why, later).
 
 If you'd like an example sound file to use, download [this sample .OGG file](https://github.com/microsoft/minecraft-samples/tree/main/custom_sounds).
 

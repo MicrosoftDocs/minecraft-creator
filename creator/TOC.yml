@@ -46,6 +46,8 @@
               href: Documents/WorldHeightChange.md    
     - name: Casual Creator Article Series
       items:              
+        - name: "Building Debug Tools"
+          href: Casual/DebugTools.md
         - name: "Chill Dreams Add-On: Part 1 - The Dream Turkey"
           href: Casual/ChillDreamsPart1TheDreamTurkey.md
         - name: "Chill Dreams Add-On: Part 2 - Making Dreams Come True"
@@ -541,11 +543,16 @@
         href: Reference/Content/RawMessageJSON.md
       - name: Version Disambiguation
         href: Reference/Content/VersionDisambiguation.md
+    - name: Best Practices & Tips
+      items:
+      - name: "Use the Latest Platform Version"
+        href: Documents/Practices/LatestPlatformVersion.md
+      - name: "Tips for Using This Site"
+        href: Documents/TipsForUsingThisSite.md                  
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
         href: Documents/ContributorGuide.md
       - name: Contributor Style Guide
         href: Documents/StyleGuide.md
-    - name: "Tips for Using This Site"
-      href: Documents/TipsForUsingThisSite.md          
+
