@@ -8,7 +8,12 @@ ms.service: minecraft-bedrock-edition
 
 # Third Person Camera Preset
 
-In this overview, you will learn about the **third_person** camera presets. 
+In this overview, you will learn about the **third_person** camera presets.
+
+> [!IMPORTANT]
+> This feature is experimental. To use the presets explained here, the following experimental toggle must be turned on:
+> **Creator Cameras: New Third Person Presets**
+
 The third_person camera presets were designed to provide a detached camera that can be set at a customizable range from the player, and attached to the player or other non-player entities, with the option of camera-relative player controls de-coupled from player facing direction. 
 
 You can find more information about the camera system in the [Camera System Introduction](CameraCommandIntroduction.md) and in the [Free Camera Preset](CameraPresetFree.md) tutorial, using commands and script.
@@ -19,11 +24,6 @@ The two third_person presets are:
 
 -	Minecraft:follow_orbit
 -	Minecraft:third_person_boom
-
-To use either preset, the following experimental toggle must be turned on:
-
-- **Creator Cameras: New Third Person Presets**.
-
 
 ## Parameters and definitions of the third person camera 
 
