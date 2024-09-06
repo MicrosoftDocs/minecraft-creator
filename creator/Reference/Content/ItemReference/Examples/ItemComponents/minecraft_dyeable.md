@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Item Documentation - minecraft:dyeable
 
-`minecraft:dyeable` enables custom items to be dyed in cauldrons. To use the dyeable component, the format version on the item and the attachable needs to be 1.21.30 or greater.
+`minecraft:dyeable` enables custom items to be dyed in cauldrons. To use the dyeable component, the format version on the item and the attachable needs to have a `format_version` of **1.21.30** or greater.
 
 ## Parameters
 

@@ -811,8 +811,8 @@ Inside the behavior pack, open custom_chestplate.item.json and do this:
           "default": "custom_chestplate_icon",
           "dyed": "custom_chestplate_icon_gray"
         }
-},
-      "minecraft:wearable": { 
+      },
+      "minecraft:wearable": {
         "protection": 10, 
         "slot": "slot.armor.chest" 
       }, 
@@ -839,7 +839,7 @@ Inside the behavior pack, open custom_chestplate.item.json and do this:
       },
       "minecraft:dyeable": {
         "default_color":  "#175882"
-} 
+      }
     } 
   } 
 }
