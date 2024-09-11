@@ -101,6 +101,8 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
 It is up to you which pattern you prefer depending on the needs of your add-on or world! They are both functionally the same. An important note is that all the event notifications are stateless, and the event parameters will inform you which specific block they pertain to in the world.
 
+To find out more about the Custom Component APIs, see the documentation for the [ItemCustomComponent](../ScriptAPI/minecraft/server/ItemCustomComponent.md) and [BlockCustomComponent](../ScriptAPI/minecraft/server/BlockCustomComponent.md) APIs.
+
 ## JSON
 
 With a custom component registered to a specific name, then it becomes a question of how to attach it to a custom block.

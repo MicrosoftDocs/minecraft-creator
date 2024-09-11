@@ -22,8 +22,8 @@ Number of slots that this entity can gain per extra strength.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **canBeSiphonedFrom**
 `read-only canBeSiphonedFrom: boolean;`
@@ -32,8 +32,8 @@ If true, the contents of this inventory can be removed by a hopper.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **container**
 `read-only container?: Container;`
@@ -42,8 +42,8 @@ Defines the container for this entity. The container will be undefined if the en
 
 Type: [*Container*](Container.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **containerType**
 `read-only containerType: string;`
@@ -52,8 +52,8 @@ Type of container this entity has.
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **inventorySize**
 `read-only inventorySize: number;`
@@ -62,8 +62,8 @@ Number of slots the container has.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **private**
 `read-only private: boolean;`
@@ -72,8 +72,8 @@ If true, the entity will not drop it's inventory on death.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **restrictToOwner**
 `read-only restrictToOwner: boolean;`
@@ -82,8 +82,8 @@ If true, the entity's inventory can only be accessed by its owner or itself.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

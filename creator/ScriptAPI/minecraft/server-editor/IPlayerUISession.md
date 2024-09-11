@@ -12,12 +12,12 @@ The IPlayerUISession represents the editor user interface for a given player and
 
 ## Declaration
 `export type IPlayerUISession<PerPlayerStorage = Record<string, never>> = {
-    createStatusBarItem(alignment: EditorStatusBarAlignment, size: number): IStatusBarItem;
     createPropertyPane(options: IRootPropertyPaneOptions): IRootPropertyPane;
     readonly actionManager: ActionManager;
     readonly inputManager: IGlobalInputManager;
     readonly menuBar: IMenuContainer;
     readonly actionBar: IActionBar;
+    readonly statusBar: IStatusBar;
     readonly toolRail: IModalToolContainer;
     readonly log: IPlayerLogger;
     readonly extensionContext: ExtensionContext;

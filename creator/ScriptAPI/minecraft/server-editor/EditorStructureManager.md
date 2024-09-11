@@ -25,12 +25,10 @@ createFromClipboardItem(item: ClipboardItem, structureName: string): EditorStruc
 - **structureName**: *string*
 
 **Returns** [*EditorStructure*](EditorStructure.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **getExistingTags**
 `
@@ -38,12 +36,10 @@ getExistingTags(): string[]
 `
 
 **Returns** *string*[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **loadStructure**
 `
@@ -55,12 +51,10 @@ loadStructure(location: string, id: string): EditorStructure
 - **id**: *string*
 
 **Returns** [*EditorStructure*](EditorStructure.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **saveStructure**
 `
@@ -69,12 +63,10 @@ saveStructure(structure: EditorStructure): void
 
 #### **Parameters**
 - **structure**: [*EditorStructure*](EditorStructure.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **searchStructures**
 `
@@ -85,9 +77,7 @@ searchStructures(options?: EditorStructureSearchOptions): EditorStructure[]
 - **options**?: [*EditorStructureSearchOptions*](EditorStructureSearchOptions.md) = `null`
 
 **Returns** [*EditorStructure*](EditorStructure.md)[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

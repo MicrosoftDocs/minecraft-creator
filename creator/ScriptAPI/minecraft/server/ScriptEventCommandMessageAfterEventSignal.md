@@ -26,9 +26,9 @@ Registers a new ScriptEvent handler.
 - **options**?: [*ScriptEventMessageFilterOptions*](ScriptEventMessageFilterOptions.md) = `null`
 
 **Returns** (arg: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -39,6 +39,6 @@ Unsubscribes a particular handler for a ScriptEvent event.
 
 #### **Parameters**
 - **callback**: (arg: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

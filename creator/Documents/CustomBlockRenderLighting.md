@@ -1,5 +1,5 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Exploring Material Instances and Render Lighting Options
 description: "An Advanced Tutorial Detailing the Use of Render and Lighting Options for Custom Blocks in Minecraft: Bedrock Edition"
@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 Okay, so we can make blocks that are different shapes, which is awesome! But what if we want more cool options? How does a stained glass block work, anyhow?
 
-Let's explore some fun effects using the render options available through the **_material_instances_** component.
+Let's explore some fun effects using the render options available through the **material_instances** component.
 
 ## Prerequisites
 
@@ -19,11 +19,11 @@ It's recommended that the following be completed before beginning this tutorial:
 - [Custom Blocks Part One: The Simplest Block](AddCustomDieBlock.md)
 - [Custom Blocks Part Two: Geometry and Material Instances](AdvancedCustomBlocks.md)
 
-In this tutorial, we will focus on understanding how the different render methods in the **_material_instances_** component affect the rendering of our custom block. To exemplify this, we will be using the bubble fish block shown below because it has a wide range of pixel types that are affected differently by each render method.
+In this tutorial, we will focus on understanding how the different render methods in the **material_instances** component affect the rendering of our custom block. To exemplify this, we will be using the bubble fish block shown below because it has a wide range of pixel types that are affected differently by each render method.
 
-:::image type="content" source="Media/RenderAndLighting/ral1.png" alt-text="An image showing a bubble block containing a fish.":::
+![An image showing a bubble block containing a fish.](Media/RenderAndLighting/ral1.png)
 
-**_Say "Hello" to the bubble fish!_**
+**Say "Hello" to the bubble fish!**
 
 Bubble fish is made of several blocks.
 
@@ -35,12 +35,12 @@ You can create your own transparent block, or check out the [minecraft-samples](
 
 > [!VIDEO https://www.youtube.com/embed/TIv-FsWwo8g] > _Another tutorial, another excellent follow-along video!_
 
-**_Complete Setup in Resource Pack_**
+**Complete Setup in Resource Pack**
 
 This isn't our first time setting up a custom block, so this time we're giving you shortened steps. If at any point you get lost, please refer back to the previous custom block tutorials or the minecraft-samples page noted above.
 
-1. Export the file in **_Blockbench_** just as we did for the sushi block.
-1. Add the downloaded geometry file by navigating to **_custom_block_resource_pack/models/blocks_** and copying the file in.
+1. Export the file in **Blockbench** just as we did for the sushi block.
+1. Add the downloaded geometry file by navigating to **custom_block_resource_pack/models/blocks** and copying the file in.
 
 ```json
 {
@@ -81,21 +81,21 @@ This isn't our first time setting up a custom block, so this time we're giving y
 }
 ```
 
-3. Add the bubble fish texture in the **_custom_block_resource_pack/textures/blocks_** folder.
+3. Add the bubble fish texture in the **custom_block_resource_pack/textures/blocks** folder.
 
-:::image type="content" source="Media/RenderAndLighting/ral2.png" alt-text="An image showing the bubble fish texture.":::
+![An image showing the bubble fish texture.](Media/RenderAndLighting/ral2.png)
 
-4. Add a friendly name in **_terrain_texture.json_** by navigating to **_custom_block_resource_pack/textures_** and editing the **_terrain_texture.json_** file.
-1. Navigate to **_custom_block_resource_pack/texts/en_US.lang_** and add a localized named for the bubble fish.
+4. Add a friendly name in **terrain_texture.json** by navigating to **custom_block_resource_pack/textures** and editing the **terrain_texture.json** file.
+1. Navigate to **custom_block_resource_pack/texts/en_US.lang** and add a localized named for the bubble fish.
 1. Finally, you can add an entry to blocks.json to give this block a sound. Remember, if you are using custom geometry and materials an entry in blocks.json is completely optional, so we did not add one for this block.
 
 Whew, that was a lot to cover... Great work!
 
 ## Behavior Pack
 
-**_Create a json file for the custom block_**
+**Create a JSON file for the custom block**
 
-Now it's time to create the behavior pack custom block json file.
+Now it's time to create the behavior pack custom block JSON file.
 
 ```json
 {
@@ -116,15 +116,15 @@ Now it's time to create the behavior pack custom block json file.
 }
 ```
 
-As always, we identify the block, reference the geometry, and then include the texture. In this case, we'll use **_bubble_fish_** on all sides.
+As always, we identify the block, reference the geometry, and then include the texture. In this case, we'll use **bubble_fish** on all sides.
 
-**_Render methods_**
+**Render methods**
 
-Now we're onto the good stuff! Render methods using the **_material_instances_** component.
+Now we're onto the good stuff! Render methods using the **material_instances** component.
 
 We'll be exploring the render_methods parameter available to textures. The default is opaque, so let's see how that renders our bubble fish block.
 
-**_Opaque_**
+**Opaque**
 
 ```json
   "minecraft:material_instances": {
@@ -135,11 +135,11 @@ We'll be exploring the render_methods parameter available to textures. The defau
     }
 ```
 
-:::image type="content" source="Media/RenderAndLighting/ral3.png" alt-text="Screenshot of a bubble block shown with the opaque render.":::
+![Screenshot of a bubble block shown with the opaque render.](Media/RenderAndLighting/ral3.png)
 
 As you can see, transparency and translucency are not respected. Those colors are rendered in the nearest opaque color.
 
-**_Double-Sided_**
+**Double-Sided**
 
 ```json
 "minecraft:material_instances": {
@@ -150,8 +150,6 @@ As you can see, transparency and translucency are not respected. Those colors ar
 }
 ```
 
-:::image type="content" source="Media/RenderAndLighting/ral3.png" alt-text="Screenshot of a bubble block shown with the opaque render.":::
-
 Double-sided disables backface culling.
 
 'Backface culling' is a rendering technique used to improve performance, where only the side of the block that you can see is rendered.
@@ -160,7 +158,7 @@ The 'opaque' render method does backface culling by default to improve performan
 
 However, you can only tell the difference between "opaque" and "double_sided" if your head is inside the block. For "opaque," you will NOT be able to see the inside of the block around you. For "double_sided," you WILL be able to see the inside of the block around you. But from the outside, these two render methods look identical.
 
-**_Alpha Test_**
+**render_method: alpha_test**
 
 ```json
 "minecraft:material_instances": {
@@ -171,11 +169,11 @@ However, you can only tell the difference between "opaque" and "double_sided" if
 }
 ```
 
-:::image type="content" source="Media/RenderAndLighting/ral5.png" alt-text="Screenshot of a bubble block shown with the alpha test render.":::
+![Screenshot of a bubble block shown with the alpha test render.](Media/RenderAndLighting/ral5.png)
 
 Alpha test doesn't respect translucency, which affects the transparent teal pixels of this block. But it does respect transparent and opaque pixels. This render method also disables backface culling, which is why you can see the back of the bubble through the transparent parts. At least we can see the fish!
 
-**_Blend_**
+**render_method: blend**
 
 ```json
 "minecraft:material_instances": {
@@ -186,7 +184,7 @@ Alpha test doesn't respect translucency, which affects the transparent teal pixe
 }
 ```
 
-:::image type="content" source="Media/RenderAndLighting/ral6.png" alt-text="Screenshot of a bubble block shown with the blend render.":::
+![Screenshot of a bubble block shown with the blend render.](Media/RenderAndLighting/ral6.png)
 
 Blend allows transparent, translucent, and opaque to show and does backface culling by default, which is why you can not see the backface through the transparent parts.
 
@@ -196,7 +194,7 @@ This render method is perfect for our bubble block that contains all 3 types of 
 
 There are also two different lighting options to explore.
 
-**_Ambient Occlusion_**
+**ambient_occlusion**
 
 If true, shadows will be created around and underneath the block.
 
@@ -210,11 +208,11 @@ If true, shadows will be created around and underneath the block.
     }
 ```
 
-:::image type="content" source="Media/RenderAndLighting/ral7.png" alt-text="Screenshot of a bubble block shown with the ambient occlusion lighting effect.":::
+![Screenshot of a bubble block shown with the ambient occlusion lighting effect.](Media/RenderAndLighting/ral7.png)
 
 Here you can see our block on the left has ambient occlusion set to 'true,' while the block on the right has ambient occlusion set to 'false.'
 
-**_Face dimming_**
+**face_dimming**
 
 Should the material be dimmed by the side it's facing?
 
@@ -229,6 +227,10 @@ Should the material be dimmed by the side it's facing?
 ```
 
 Similar to our ambient occlusion example, you can see the block on the left has face dimming set to 'true,' while the right block has the option set to 'false'.
+
+## render_method": "alpha_test_single_sided 
+
+Alpha test single sided is very similar to alpha test. It doesn't respect translucency, which affects the transparent teal pixels of this block. But it does respect transparent and opaque pixels. This render method enables backface culling, which is why you can’t see the back of the bubble through the transparent parts. Just like a regular glass block! 
 
 ## Next Steps
 

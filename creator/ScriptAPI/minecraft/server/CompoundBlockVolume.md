@@ -91,9 +91,9 @@ clear(): void
 `
 
 Clear the contents of the volume stack
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getBlockLocationIterator**
 `
@@ -109,9 +109,9 @@ Areas of a volume which have been overridden by a subtractive volume will not be
 Note that the Block Locations returned by this iterator are in absolute world space (irrespective of whether the compound volume items pushed are absolute or relative)
 
 **Returns** [*BlockLocationIterator*](BlockLocationIterator.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getBoundingBox**
 `
@@ -123,9 +123,9 @@ Get the largest bounding box that represents a container for all of the volumes 
 Note that the bounding box returned is represented in absolute world space  (irrespective of whether the compound volume items pushed are absolute or relative)
 
 **Returns** [*BoundingBox*](BoundingBox.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getMax**
 `
@@ -137,9 +137,9 @@ Get the max block location of the outermost bounding rectangle which represents 
 Note that the max location returned is in absolute world space (irrespective of whether the compound volume items pushed are absolute or relative)
 
 **Returns** [*Vector3*](Vector3.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getMin**
 `
@@ -151,9 +151,9 @@ Get the min block location of the outermost bounding rectangle which represents 
 Note that the min location returned is in absolute world space (irrespective of whether the compound volume items pushed are absolute or relative)
 
 **Returns** [*Vector3*](Vector3.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getOrigin**
 `
@@ -163,9 +163,9 @@ getOrigin(): Vector3
 Fetch the origin in world space of the compound volume
 
 **Returns** [*Vector3*](Vector3.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **isEmpty**
 `
@@ -175,9 +175,9 @@ isEmpty(): boolean
 Return a boolean which signals if there are any volume items pushed to the volume
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **isInside**
 `
@@ -192,9 +192,9 @@ E.g. if the stack contains a large cube followed by a slightly smaller negative 
 - **worldLocation**: [*Vector3*](Vector3.md)
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **peekLastVolume**
 `
@@ -217,9 +217,9 @@ Inspect the last entry pushed to the volume stack without affecting the stack co
   If no flag is specified, the item returned retains whatever relativity it had when it was pushed
 
 **Returns** [*CompoundBlockVolumeItem*](CompoundBlockVolumeItem.md) | *undefined* - Returns undefined if the stack is empty
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **popVolume**
 `
@@ -229,9 +229,9 @@ popVolume(): boolean
 Remove the last entry from the volume stack.  This will reduce the stack size by one
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **pushVolume**
 `
@@ -246,9 +246,9 @@ The item also contains a `locationRelativity` which determines whether it is rel
 - **item**: [*CompoundBlockVolumeItem*](CompoundBlockVolumeItem.md)
   
   Item to push to the end of the stack
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **replaceOrAddLastVolume**
 `
@@ -265,9 +265,9 @@ If the volume stack is NOT empty, this function will replace the last item on th
   Item to add or replace
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setOrigin**
 `
@@ -295,9 +295,9 @@ Set the origin of the compound volume to an absolute world space location
   This will set a new origin, but the existing sphere locations will remain relative to the original origin.
   
   Now, you can push the relative sphere locations again (this time they will be relative to the new origin) - resulting in 2 spheres next to each other.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **translateOrigin**
 `
@@ -311,6 +311,6 @@ Similar to [*@minecraft/server.CompoundBlockVolume.setOrigin*](../../minecraft/s
 - **preserveExistingVolumes**?: *boolean* = `null`
   
   See the description for the arguments to [*@minecraft/server.CompoundBlockVolume.setOrigin*](../../minecraft/server/CompoundBlockVolume.md#setorigin)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

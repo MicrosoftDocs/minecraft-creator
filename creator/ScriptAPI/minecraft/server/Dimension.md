@@ -19,8 +19,8 @@ Height range of the dimension.
 
 Type: [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **id**
 `read-only id: string;`
@@ -92,11 +92,10 @@ Searches the block volume for a block that satisfies the block filter.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
 ::: moniker-end
 
 ### **createExplosion**
@@ -118,14 +117,11 @@ Creates an explosion at the specified location.
   Additional configurable options for the explosion.
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 ##### ***createExplosions.ts***
@@ -166,14 +162,11 @@ Fills an area between begin and end with block of type block.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -199,14 +192,11 @@ Finds the location of the closest biome of a particular type. Note that the find
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
 ::: moniker-end
 
 ### **getBlock**
@@ -222,11 +212,10 @@ Returns a block instance at the given location.
   The location at which to return a block.
 
 **Returns** [*Block*](Block.md) | *undefined* - Block at the specified location, or 'undefined' if asking for a block at an unloaded chunk.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getBlockAbove**
@@ -242,12 +231,10 @@ getBlockAbove(location: Vector3, options?: BlockRaycastOptions): Block | undefin
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -264,12 +251,10 @@ getBlockBelow(location: Vector3, options?: BlockRaycastOptions): Block | undefin
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 ::: moniker-end
 
 ### **getBlockFromRay**
@@ -291,9 +276,9 @@ Gets the first block that intersects with a vector emanating from a location.
   Additional options for processing this raycast query.
 
 **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getBlocks**
@@ -318,11 +303,10 @@ Gets all the blocks in a volume that satisfy the filter.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
 ::: moniker-end
 
 ### **getEntities**
@@ -338,9 +322,9 @@ Returns a set of entities based on a set of conditions defined via the EntityQue
   Additional options that can be used to filter the set of entities returned.
 
 **Returns** [*Entity*](Entity.md)[] - An entity array.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 #### Examples
 ##### ***checkFeatherNearby.ts***
@@ -420,9 +404,9 @@ Gets entities that intersect with a specified vector emanating from a location.
   Additional options for processing this raycast query.
 
 **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[]
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getPlayers**
 `
@@ -437,9 +421,9 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
   Additional options that can be used to filter the set of players returned.
 
 **Returns** [*Player*](Player.md)[] - A player array.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getTopmostBlock**
 `
@@ -457,12 +441,10 @@ Returns the highest block at the given XZ location.
   The Y height to begin the search from. Defaults to the maximum dimension height.
 
 **Returns** [*Block*](Block.md) | *undefined*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getWeather**
@@ -476,9 +458,9 @@ Returns the current weather.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 ::: moniker-end
 
 ### **playSound**
@@ -498,20 +480,14 @@ Plays a sound for all players.
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
   
   Additional options for configuring additional effects for the sound.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> An error will be thrown if volume is less than 0.0.
->
-> An error will be thrown if fade is less than 0.0.
->
-> An error will be thrown if pitch is less than 0.01.
->
-> An error will be thrown if volume is less than 0.0.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - An error will be thrown if volume is less than 0.0.
+  - An error will be thrown if fade is less than 0.0.
+  - An error will be thrown if pitch is less than 0.01.
+  - An error will be thrown if volume is less than 0.0.
 
 #### Examples
 ##### ***playMusicAndSound.ts***
@@ -561,14 +537,11 @@ Runs a command synchronously using the context of the broader dimenion.
   Command to run. Note that command strings should not start with slash.
 
 **Returns** [*CommandResult*](CommandResult.md) - Returns a command result with a count of successful values from the command.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*CommandError*](CommandError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*CommandError*](CommandError.md)
 
 ### **runCommandAsync**
 `
@@ -583,11 +556,10 @@ Runs a particular command asynchronously from the context of the broader dimensi
   Command to run. Note that command strings should not start with slash.
 
 **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a CommandResult with an indicator of command results.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
+  
+Notes:
+- This function can throw errors.
+  - Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
 
 ### **setBlockPermutation**
 `
@@ -603,14 +575,11 @@ Sets a block in the world using a BlockPermutation. BlockPermutations are blocks
 - **permutation**: [*BlockPermutation*](BlockPermutation.md)
   
   The block permutation to set.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **setBlockType**
 `
@@ -626,14 +595,11 @@ Sets a block at a given location within the dimension.
 - **blockType**: [*BlockType*](BlockType.md) | *string*
   
   The type of block to set. This can be either a string identifier or a BlockType. The default block permutation is used.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **setWeather**
 `
@@ -649,12 +615,10 @@ Sets the current weather within the dimension
 - **duration**?: *number* = `null`
   
   Sets the duration of the weather (in ticks). If no duration is provided, the duration will be set to a random duration between 300 and 900 seconds.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **spawnEntity**
 `
@@ -673,14 +637,11 @@ Creates a new entity (e.g., a mob) at the specified location.
 - **options**?: [*SpawnEntityOptions*](SpawnEntityOptions.md) = `null`
 
 **Returns** [*Entity*](Entity.md) - Newly created entity at the specified location.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 ##### ***createOldHorse.ts***
@@ -734,14 +695,11 @@ Creates a new item stack as an entity at the specified location.
   The location at which to create the item stack.
 
 **Returns** [*Entity*](Entity.md) - Newly created item stack entity at the specified location.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 ##### ***spawnFeatherItem.ts***
@@ -773,14 +731,11 @@ Creates a new particle emitter at a specified location in the world.
 - **molangVariables**?: [*MolangVariableMap*](MolangVariableMap.md) = `null`
   
   A set of optional, customizable variables that can be adjusted for this particle.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 ##### ***spawnParticle.ts***

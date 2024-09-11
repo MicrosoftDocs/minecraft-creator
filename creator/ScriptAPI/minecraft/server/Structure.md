@@ -26,10 +26,9 @@ The dimensions of the structure. For example, a single block structure will have
 
 Type: [*Vector3*](Vector3.md)
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws [*InvalidStructureError*](InvalidStructureError.md)
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidStructureError*](InvalidStructureError.md)
 
 ## Methods
 - [getBlockPermutation](#getblockpermutation)
@@ -52,11 +51,10 @@ Returns a BlockPermutation representing the block contained within the Structure
   The block location relative to the Structure's origin.
 
 **Returns** [*BlockPermutation*](BlockPermutation.md) | *undefined* - Returns a BlockPermutation. Returns undefined if a block does not exist at the given location.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
 ### **getIsWaterlogged**
 `
@@ -71,11 +69,10 @@ Returns whether the block at the given location is waterlogged.
   The block location relative to the Structure's origin.
 
 **Returns** *boolean* - Returns whether the block at the given location is waterlogged. Returns false if a block does not exist at the given location.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
 ### **isValid**
 `
@@ -102,14 +99,11 @@ Creates a copy of a Structure and saves it with a new name.
   Determines how the Structure should be saved. Defaults to saving to the world.
 
 **Returns** [*Structure*](Structure.md) - Returns the newly created structure.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
 ### **saveToWorld**
 `
@@ -117,14 +111,11 @@ saveToWorld(): void
 `
 
 Saves a modified Structure to the world file.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*InvalidStructureError*](InvalidStructureError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidStructureError*](InvalidStructureError.md)
 
 ### **setBlockPermutation**
 `
@@ -140,11 +131,8 @@ Sets a BlockPermutation within a Structure.
 - **blockPermutation**?: [*BlockPermutation*](BlockPermutation.md) = `null`
   
   The BlockPermutation to set.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)

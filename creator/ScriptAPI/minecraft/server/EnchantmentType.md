@@ -38,6 +38,6 @@ new EnchantmentType(enchantmentType: string)
 - **enchantmentType**: *string*
 
 **Returns** [*EnchantmentType*](EnchantmentType.md)
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.

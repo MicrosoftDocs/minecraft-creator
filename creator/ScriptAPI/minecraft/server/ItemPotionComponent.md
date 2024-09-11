@@ -26,8 +26,8 @@ The PotionEffectType associated with the potion item.
 
 Type: [*PotionEffectType*](PotionEffectType.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **potionLiquidType**
 `read-only potionLiquidType: PotionLiquidType;`
@@ -36,8 +36,8 @@ The PotionLiquidType associated with the potion item.
 
 Type: [*PotionLiquidType*](PotionLiquidType.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **potionModifierType**
 `read-only potionModifierType: PotionModifierType;`
@@ -46,8 +46,8 @@ The PotionModifierType associated with the potion item.
 
 Type: [*PotionModifierType*](PotionModifierType.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

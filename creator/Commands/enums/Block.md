@@ -30,6 +30,8 @@ Polished Basalt
 Nether Gold Ore
 - `nether_gold_ore`
 Nether Gold Ore
+- `minecraft:zombie_head`
+- `zombie_head`
 - `minecraft:warped_door`
 Warped Door
 - `warped_door`
@@ -896,6 +898,8 @@ Warped Stairs
 Smithing Table
 - `smithing_table`
 Smithing Table
+- `minecraft:player_head`
+- `player_head`
 - `minecraft:weathered_copper_grate`
 - `weathered_copper_grate`
 - `minecraft:poppy`
@@ -1620,10 +1624,6 @@ Oxidized Cut Copper Slab
 Beetroot
 - `beetroot`
 Beetroot
-- `minecraft:skull`
-Skull
-- `skull`
-Skull
 - `minecraft:light_gray_candle_cake`
 Light Gray Candle Cake
 - `light_gray_candle_cake`
@@ -1696,6 +1696,8 @@ Warped Fence Gate
 Warped Fence Gate
 - `minecraft:cut_sandstone_slab`
 - `cut_sandstone_slab`
+- `minecraft:skeleton_skull`
+- `skeleton_skull`
 - `minecraft:composter`
 Composter
 - `composter`
@@ -1864,6 +1866,8 @@ Fletching Table
 Fletching Table
 - `minecraft:cherry_leaves`
 - `cherry_leaves`
+- `minecraft:creeper_head`
+- `creeper_head`
 - `minecraft:black_glazed_terracotta`
 Black Glazed Terracotta
 - `black_glazed_terracotta`
@@ -1874,6 +1878,8 @@ Waxed Oxidized Cut Copper Stairs
 Waxed Oxidized Cut Copper Stairs
 - `minecraft:waxed_weathered_copper_bulb`
 - `waxed_weathered_copper_bulb`
+- `minecraft:dragon_head`
+- `dragon_head`
 - `minecraft:calibrated_sculk_sensor`
 - `calibrated_sculk_sensor`
 - `minecraft:dark_prismarine_slab`
@@ -2066,6 +2072,8 @@ Magenta Candle Cake
 Magenta Candle Cake
 - `minecraft:exposed_copper_trapdoor`
 - `exposed_copper_trapdoor`
+- `minecraft:mushroom_stem`
+- `mushroom_stem`
 - `minecraft:black_terracotta`
 - `black_terracotta`
 - `minecraft:deepslate_gold_ore`
@@ -2548,6 +2556,8 @@ Polished Andesite Stairs
 Polished Andesite Stairs
 - `minecraft:dead_horn_coral_wall_fan`
 - `dead_horn_coral_wall_fan`
+- `minecraft:piglin_head`
+- `piglin_head`
 - `minecraft:sculk`
 Sculk
 - `sculk`
@@ -2650,6 +2660,8 @@ Cracked Polished Blackstone Bricks
 Flowing Lava
 - `flowing_lava`
 Flowing Lava
+- `minecraft:wither_skeleton_skull`
+- `wither_skeleton_skull`
 - `minecraft:polished_tuff`
 - `polished_tuff`
 - `minecraft:magenta_stained_glass`
@@ -3404,6 +3416,10 @@ Coral Fan Hang 3
 Light Block
 - `minecraft:light_block`
 Light Block
+- `skull`
+Skull
+- `minecraft:skull`
+Skull
 - `lava_cauldron`
 Lava Cauldron
 - `minecraft:lava_cauldron`

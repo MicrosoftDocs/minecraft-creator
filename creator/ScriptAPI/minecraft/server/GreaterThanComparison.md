@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.GreaterThanComparison Interface
 description: Contents of the @minecraft/server.GreaterThanComparison class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # GreaterThanComparison Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Greater than operator.
 

@@ -27,8 +27,7 @@ Registers an item custom component that can be used in item JSON configuration.
 - **itemCustomComponent**: [*ItemCustomComponent*](ItemCustomComponent.md)
   
   The collection of event functions that will be called when the event occurs on an item using this custom component id.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*CustomComponentNameError*](CustomComponentNameError.md), [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*ItemCustomComponentAlreadyRegisteredError*](ItemCustomComponentAlreadyRegisteredError.md), [*ItemCustomComponentReloadNewComponentError*](ItemCustomComponentReloadNewComponentError.md), [*ItemCustomComponentReloadNewEventError*](ItemCustomComponentReloadNewEventError.md), [*ItemCustomComponentReloadVersionError*](ItemCustomComponentReloadVersionError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*CustomComponentNameError*](CustomComponentNameError.md), [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*ItemCustomComponentAlreadyRegisteredError*](ItemCustomComponentAlreadyRegisteredError.md), [*ItemCustomComponentReloadNewComponentError*](ItemCustomComponentReloadNewComponentError.md), [*ItemCustomComponentReloadNewEventError*](ItemCustomComponentReloadNewEventError.md), [*ItemCustomComponentReloadVersionError*](ItemCustomComponentReloadVersionError.md)

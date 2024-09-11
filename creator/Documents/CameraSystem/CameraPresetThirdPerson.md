@@ -8,7 +8,12 @@ ms.service: minecraft-bedrock-edition
 
 # Third Person Camera Preset
 
-In this overview, you will learn about the **third_person** camera presets. 
+In this overview, you will learn about the **third_person** camera presets.
+
+> [!IMPORTANT]
+> This feature is experimental. To use the presets explained here, the following experimental toggle must be turned on:
+> **Creator Cameras: New Third Person Presets**
+
 The third_person camera presets were designed to provide a detached camera that can be set at a customizable range from the player, and attached to the player or other non-player entities, with the option of camera-relative player controls de-coupled from player facing direction. 
 
 You can find more information about the camera system in the [Camera System Introduction](CameraCommandIntroduction.md) and in the [Free Camera Preset](CameraPresetFree.md) tutorial, using commands and script.
@@ -20,23 +25,14 @@ The two third_person presets are:
 -	Minecraft:follow_orbit
 -	Minecraft:third_person_boom
 
-To use either preset, the following experimental toggle must be turned on:
-
-- **Creator Cameras: New Third Person Presets**.
-
-
 ## Parameters and definitions of the third person camera 
 
 - **Radius**: Sets the camera distance from the player, measured in blocks. 
-- **Rotation**: Sets the degree to which the camera can rotate around the player. 
+- **Rotation**: Sets the degree to which the camera can rotate around the player.
+  - **Yaw**: Sets the rotation of the camera 360 degrees around the target parallel to the earth. The yaw value can be up to 180 to point directly to the right, and up to -180 to point directly to the left. 
+  - **Pitch**: Sets the angle up or down, perpendicular to the earth. Pitch is limited to a range of 90 (facing straight down) to -90 (facing straight up). This limitation is to prevent rolling the camera upside down. 
 - **Starting rotation**: Sets the initial rotation around the player. 
-- **Offset**: Sets the reference point that the camera is anchored to, relative to the player. Entity offset anchors to the player position, while view offset anchors to a point on the screen. 
-- **Turn speed**: Set how fast the camera can turn, in degrees. 
-- **Yaw**: Sets the rotation of the camera 360 degrees around the target parallel to the earth. The yaw value can be up to 180 to point directly to the right, and up to -180 to point directly to the left. 
-- **Pitch**: Sets the angle up or down, perpendicular to the earth. Pitch is limited to a range of 90 (facing straight down) to -90 (facing straight up). This limitation is to prevent rolling the camera upside down. 
-- **Angle spring**: Set damping values for the rotation of the camera, controls how snappy/smooth the camera rotates as it aims up/down and left/right. 
-- **Distance spring**: Set damping value for the camera following the player, controlling how smoothly it follows at the set radius.  
-- **Camera-relative movement**: Controls whether the character is locked to the same rotation as the camera rotation (current Minecraft third person camera controls). 
+- **Offset**: Sets the reference point that the camera is anchored to, relative to the player. Entity offset anchors to the player position, while view offset anchors to a point on the screen.
 
 ### Follow Orbit
 
@@ -47,18 +43,17 @@ The follow orbit preset lets you 'attach' the camera to a player, apply an offse
 `/camera @s set minecraft:follow_orbit`
 
 
-## Third Person Boom (aka fixed boom) 
+## Third Person Boom (or Fixed Boom) 
 
 The boom preset is more specialized with fewer parameters to set up. As with the follow orbit, it also let's you 'attach' the camera to a player, apply an offset and set the radius (distance), pitch and yaw, but this preset does not rotate around the player. See below for a JSON sample.  
 
 **Command**
 
-`/camera @s set Minecraft:third_person_boom`
+`/camera @s set Minecraft:fixed_boom`
 
+## Radius, Rotation
 
-## Radius, Rotation, and Speed 
-
-Both presets allow you to set the radius to be a customized distance from the player, but only the **follow_orbit** preset allows you to set the rotation along with the speed of that rotation. 
+Both presets allow you to set the radius to be a customized distance from the player, but only the **follow_orbit** preset allows you to set the rotation. 
 
 The default radius and rotation are determined by the resource pack but can be defined in the behavior pack. Radius and rotation for follow orbit and fixed boom, how the camera rotates around the player, have a default radius of 10 but can be overwritten for both presets in the behavior pack. 
 
@@ -76,11 +71,6 @@ The radius, distance from player, is customizable within a minimum radius of 0.1
 ### Rotation Limits
 
 The rotation, or the arc around the player, is not limited, allowing you to set the camera to rotate 360 degrees around the player. When rotating, the camera facing-direction will face the player by default.
-
-### Rotation speed    
-
-The speed at which the camera rotates around the player is equal to the speed of the player inputs (e.g. mouse movements). This can be customized to rotate faster or slower and is measured in rotation degrees per second. 
-
 
 ### View Offset
 

@@ -25,9 +25,9 @@ Adds a callback that will be called when a chargeable item is released from char
 - **callback**: (arg: [*ItemReleaseUseAfterEvent*](ItemReleaseUseAfterEvent.md)) => *void*
 
 **Returns** (arg: [*ItemReleaseUseAfterEvent*](ItemReleaseUseAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -38,6 +38,6 @@ Removes a callback from being called when a chargeable item is released from cha
 
 #### **Parameters**
 - **callback**: (arg: [*ItemReleaseUseAfterEvent*](ItemReleaseUseAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

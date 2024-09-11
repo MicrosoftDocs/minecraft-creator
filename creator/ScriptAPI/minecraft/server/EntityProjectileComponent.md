@@ -35,9 +35,9 @@ projectileComp?.shoot(velocity);
 The fraction of the projectile's speed maintained every tick while traveling through air. 
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **catchFireOnHurt**
 `catchFireOnHurt: boolean;`
@@ -45,9 +45,9 @@ Type: *number*
 If true, the entity will be set on fire when hurt. The default burn duration is 5 seconds. This duration can be modified via the onFireTime property. The entity will not catch fire if immune or if the entity is wet.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **critParticlesOnProjectileHurt**
 `critParticlesOnProjectileHurt: boolean;`
@@ -55,9 +55,9 @@ Type: *boolean*
 If true, the projectile will spawn crit particles when hit by a player. E.g. Player attacking a Shulker bullet.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **destroyOnProjectileHurt**
 `destroyOnProjectileHurt: boolean;`
@@ -65,19 +65,19 @@ Type: *boolean*
 If true, the projectile will be destroyed when it takes damage. E.g. Player attacking a Shulker bullet.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **gravity**
 `gravity: number;`
 
-The gravity applied to the projectile. When the entity is not on the ground, subtracts this amount from the projectile's change in vertical position every tick. The higher the value, the faster the projectile falls. If negative, the entity will rise instead of fall.
+The gravity applied to the projectile. When the entity is not on the ground, subtracts this amount from the projectile’s change in vertical position every tick. The higher the value, the faster the projectile falls. If negative, the entity will rise instead of fall.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **hitEntitySound**
 `hitEntitySound?: string;`
@@ -85,9 +85,9 @@ Type: *number*
 The sound that plays when the projectile hits an entity.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **hitGroundSound**
 `hitGroundSound?: string;`
@@ -95,9 +95,9 @@ Type: *string*
 The sound that plays when the projectile hits a block.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **hitParticle**
 `hitParticle?: string;`
@@ -105,9 +105,9 @@ Type: *string*
 The particle that spawns when the projectile hits something.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **lightningStrikeOnHit**
 `lightningStrikeOnHit: boolean;`
@@ -115,9 +115,9 @@ Type: *string*
 If true and the weather is thunder and the entity has line of sight to the sky, the entity will be struck by lightning when hit. E.g. A thrown Trident with the Channeling enchantment.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **liquidInertia**
 `liquidInertia: number;`
@@ -125,9 +125,9 @@ Type: *boolean*
 The fraction of the projectile's speed maintained every tick while traveling through a liquid. 
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **onFireTime**
 `onFireTime: number;`
@@ -135,9 +135,9 @@ Type: *number*
 Duration in seconds that the entity hit will be on fire for when catchFireOnHurt is set to true.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **owner**
 `owner?: Entity;`
@@ -145,9 +145,9 @@ Type: *number*
 The owner of the projectile. This is used to determine what the projectile can collide with and damage. It also determines which entity is assigned as the attacker.
 
 Type: [*Entity*](Entity.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **shouldBounceOnHit**
 `shouldBounceOnHit: boolean;`
@@ -155,9 +155,9 @@ Type: [*Entity*](Entity.md)
 If true, the projectile will bounce off mobs when no damage is taken. E.g. A spawning wither.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **stopOnHit**
 `stopOnHit: boolean;`
@@ -165,9 +165,9 @@ Type: *boolean*
 If true, the projectile will stop moving when an entity is hit as thought it had been blocked. E.g. Thrown trident on hit behavior.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Methods
 - [shoot](#shoot)
@@ -186,14 +186,11 @@ Shoots the projectile with a given velocity. The projectile will be shot from it
 - **options**?: [*ProjectileShootOptions*](ProjectileShootOptions.md) = `null`
   
   Optional configuration for the shoot.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the component or entity no longer exist.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the component or entity no longer exist.
 
 ## Constants
 

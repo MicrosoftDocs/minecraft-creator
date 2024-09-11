@@ -10,7 +10,7 @@ description: Contents of the @minecraft/server-editor.CurrentThemeChangeAfterEve
 
 ## Properties
 
-### **name**
-`read-only name: string;`
+### **id**
+`read-only id: string;`
 
 Type: *string*
