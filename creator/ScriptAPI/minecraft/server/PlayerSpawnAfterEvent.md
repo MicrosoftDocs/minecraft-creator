@@ -18,9 +18,9 @@ An event that contains more information about a player spawning.
 If true, this is the initial spawn of a player after joining the game.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **player**
 `player: Player;`
@@ -28,6 +28,6 @@ Type: *boolean*
 Object that represents the player that joined the game.
 
 Type: [*Player*](Player.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.

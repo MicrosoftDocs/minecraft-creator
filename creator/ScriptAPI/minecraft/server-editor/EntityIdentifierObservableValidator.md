@@ -16,9 +16,9 @@ Validates observable objects that support string as EntityType
 `_defaultValue: string;`
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **defaultValue**
 `read-only defaultValue: string;`

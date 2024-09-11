@@ -32,12 +32,10 @@ Adds a new objective to the scoreboard.
 - **displayName**?: *string* = `null`
 
 **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **clearObjectiveAtDisplaySlot**
 `
@@ -50,9 +48,9 @@ Clears the objective that occupies a display slot.
 - **displaySlotId**: [*DisplaySlotId*](DisplaySlotId.md)
 
 **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getObjective**
 `
@@ -109,12 +107,10 @@ Removes an objective from the scoreboard.
 - **objectiveId**: [*ScoreboardObjective*](ScoreboardObjective.md) | *string*
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setObjectiveAtDisplaySlot**
 `
@@ -128,9 +124,7 @@ Sets an objective into a display slot with specified additional display settings
 - **objectiveDisplaySetting**: [*ScoreboardObjectiveDisplayOptions*](ScoreboardObjectiveDisplayOptions.md)
 
 **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined* - Returns the previous `ScoreboardObjective` set at the display slot, if no objective was previously set it returns `undefined`.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

@@ -69,10 +69,9 @@ Count of the slots in the container that are empty.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws if the container is invalid.
+Notes:
+  - This property can throw errors when used.
+    - Throws if the container is invalid.
 
 ### **size**
 `read-only size: number;`
@@ -81,10 +80,9 @@ The number of slots in this container. For example, a standard single-block ches
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws if the container is invalid.
+Notes:
+  - This property can throw errors when used.
+    - Throws if the container is invalid.
 
 ## Methods
 - [addItem](#additem)
@@ -110,12 +108,10 @@ Adds an item to the container. The item is placed in the first available slot(s)
   The stack of items to add.
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **clearAll**
 `
@@ -123,14 +119,11 @@ clearAll(): void
 `
 
 Clears all inventory items in the container.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the container is invalid.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the container is invalid.
 
 ### **getItem**
 `
@@ -145,11 +138,10 @@ Gets an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) of 
   Zero-based index of the slot to retrieve items from.
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the container is invalid or if the `slot` index is out of bounds.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the container is invalid or if the `slot` index is out of bounds.
 
 #### Examples
 ##### ***getItem.ts***
@@ -179,11 +171,10 @@ Returns a container slot. This acts as a reference to a slot at the given index 
   The index of the slot to return. This index must be within the bounds of the container.
 
 **Returns** [*ContainerSlot*](ContainerSlot.md)
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the container is invalid or if the `slot` index is out of bounds.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the container is invalid or if the `slot` index is out of bounds.
 
 ### **isValid**
 `
@@ -211,14 +202,11 @@ Moves an item from one slot to another, potentially across containers.
 - **toContainer**: [*Container*](Container.md)
   
   Target container to transfer to. Note this can be the same container as the source.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
 
 #### Examples
 ##### ***moveItem.ts***
@@ -250,14 +238,11 @@ Sets an item stack within a particular slot.
 - **itemStack**?: [*ItemStack*](ItemStack.md) = `null`
   
   Stack of items to place within the specified slot. Setting `itemStack` to undefined will clear the slot.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the container is invalid or if the `slot` index is out of bounds.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the container is invalid or if the `slot` index is out of bounds.
 
 ### **swapItems**
 `
@@ -276,14 +261,11 @@ Swaps items between two different slots within containers.
 - **otherContainer**: [*Container*](Container.md)
   
   Target container to swap with. Note this can be the same container as this source.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if either this container or `otherContainer` are invalid or if the `slot` or `otherSlot` are out of bounds.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if either this container or `otherContainer` are invalid or if the `slot` or `otherSlot` are out of bounds.
 
 #### Examples
 ##### ***swapItems.ts***
@@ -317,14 +299,11 @@ Moves an item from one slot to another container, or to the first available slot
   Target container to transfer to. Note this can be the same container as the source.
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the items that couldn't be transferred. Returns undefined if all items were transferred.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
 
 #### Examples
 ##### ***transferItem.ts***

@@ -66,9 +66,9 @@ Gets the equipped item for the given EquipmentSlot.
   The equipment slot. e.g. "head", "chest", "offhand"
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined* - Returns the item equipped to the given EquipmentSlot. If empty, returns undefined.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getEquipmentSlot**
 `
@@ -83,9 +83,9 @@ Gets the ContainerSlot corresponding to the given EquipmentSlot.
   The equipment slot. e.g. "head", "chest", "offhand".
 
 **Returns** [*ContainerSlot*](ContainerSlot.md) - Returns the ContainerSlot corresponding to the given EquipmentSlot.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **setEquipment**
 `
@@ -103,12 +103,10 @@ Replaces the item in the given EquipmentSlot.
   The item to equip. If undefined, clears the slot.
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ## Constants
 

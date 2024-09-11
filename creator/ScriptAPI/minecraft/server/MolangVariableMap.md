@@ -43,9 +43,9 @@ Adds the following variables to Molang:
 #### **Parameters**
 - **variableName**: *string*
 - **color**: [*RGB*](RGB.md)
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **setColorRGBA**
 `
@@ -65,9 +65,9 @@ Adds the following variables to Molang:
 #### **Parameters**
 - **variableName**: *string*
 - **color**: [*RGBA*](RGBA.md)
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **setFloat**
 `
@@ -83,9 +83,9 @@ Sets a numeric (decimal) value within the Molang variable map.
 - **number**: *number*
   
   Value for the Molang-based variable to set.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **setSpeedAndDirection**
 `
@@ -106,9 +106,9 @@ Adds the following variables to Molang:
 - **variableName**: *string*
 - **speed**: *number*
 - **direction**: [*Vector3*](Vector3.md)
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **setVector3**
 `
@@ -126,6 +126,6 @@ Adds the following variables to Molang:
 #### **Parameters**
 - **variableName**: *string*
 - **vector**: [*Vector3*](Vector3.md)
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.

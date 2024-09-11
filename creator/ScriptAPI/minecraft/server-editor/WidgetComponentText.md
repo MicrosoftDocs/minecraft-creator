@@ -17,14 +17,14 @@ description: Contents of the @minecraft/server-editor.WidgetComponentText class.
 `color: minecraftserver.RGBA;`
 
 Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **label**
 `label: string;`
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.

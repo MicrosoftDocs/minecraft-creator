@@ -316,6 +316,7 @@ Dried Kelp
 - `minecraft:beetroot_soup`
 Beetroot Soup
 - `minecraft:waxed_weathered_copper_door`
+- `minecraft:piglin_head`
 - `minecraft:wooden_pickaxe`
 Wooden Pickaxe
 - `minecraft:magenta_candle_cake`
@@ -324,8 +325,6 @@ Magenta Candle Cake
 Campfire
 - `minecraft:melon_slice`
 Melon Slice
-- `minecraft:element_1`
-[Education Edition] Hydrogen (H)
 - `minecraft:hay_block`
 Hay Block
 - `minecraft:nautilus_shell`
@@ -341,14 +340,14 @@ Exposed Copper
 Cooked Beef
 - `minecraft:comparator`
 Comparator
-- `minecraft:witch_spawn_egg`
-Witch Spawn Egg
-- `minecraft:dirt`
-Dirt
 - `minecraft:element_62`
 [Education Edition] Samarium (Sm)
 - `minecraft:rotten_flesh`
 Rotten Flesh
+- `minecraft:dirt`
+Dirt
+- `minecraft:witch_spawn_egg`
+Witch Spawn Egg
 - `minecraft:campfire`
 Campfire
 - `minecraft:lingering_potion`
@@ -391,10 +390,10 @@ Wheat Seeds
 Command Block Minecart
 - `minecraft:chest`
 Chest
-- `minecraft:pumpkin_seeds`
-Pumpkin Seeds
 - `minecraft:element_2`
 [Education Edition] Helium (He)
+- `minecraft:pumpkin_seeds`
+Pumpkin Seeds
 - `minecraft:melon_seeds`
 Melon Seeds
 - `minecraft:raw_iron`
@@ -1049,8 +1048,6 @@ Squid Spawn Egg
 - `minecraft:purple_carpet`
 - `minecraft:bat_spawn_egg`
 Bat Spawn Egg
-- `minecraft:element_0`
-[Education Edition] Unknown (?)
 - `minecraft:ghast_spawn_egg`
 Ghast Spawn Egg
 - `minecraft:chiseled_nether_bricks`
@@ -1274,8 +1271,6 @@ Emerald
 Flower Pot
 - `minecraft:empty_map`
 Empty Map
-- `minecraft:skull`
-Skull
 - `minecraft:exposed_chiseled_copper`
 - `minecraft:end_stone_brick_wall`
 - `minecraft:crimson_nylium`
@@ -1601,9 +1596,9 @@ Quartz Stairs
 - `minecraft:dark_oak_hanging_sign`
 - `minecraft:polished_tuff`
 - `minecraft:crimson_hanging_sign`
-- `minecraft:warped_hanging_sign`
 - `minecraft:brown_candle`
 Brown Candle
+- `minecraft:warped_hanging_sign`
 - `minecraft:waxed_oxidized_copper`
 Waxed Oxidized Copper
 - `minecraft:double_stone_block_slab`
@@ -1635,6 +1630,7 @@ Unlit Redstone Torch
 - `minecraft:tide_armor_trim_smithing_template`
 - `minecraft:wayfinder_armor_trim_smithing_template`
 - `minecraft:red_carpet`
+- `minecraft:wither_skeleton_skull`
 - `minecraft:music_disc_relic`
 - `minecraft:wool`
 Wool
@@ -1648,6 +1644,16 @@ Stone
 [Education Edition] Sodium (Na)
 - `minecraft:coarse_dirt`
 - `minecraft:cobblestone_double_slab`
+- `minecraft:skeleton_skull`
+- `minecraft:zombie_head`
+- `minecraft:yellow_shulker_box`
+- `minecraft:player_head`
+- `minecraft:cut_sandstone`
+- `minecraft:creeper_head`
+- `minecraft:dragon_head`
+- `minecraft:orange_stained_glass`
+- `minecraft:skull`
+Skull
 - `minecraft:dark_oak_planks`
 - `minecraft:red_sand`
 - `minecraft:cracked_deepslate_tiles`
@@ -1685,8 +1691,6 @@ Waxed Oxidized Cut Copper
 - `minecraft:birch_planks`
 - `minecraft:mossy_stone_brick_wall`
 - `minecraft:tuff_brick_slab`
-- `minecraft:element_3`
-[Education Edition] Lithium (Li)
 - `minecraft:copper_door`
 - `minecraft:oxidized_copper_door`
 - `minecraft:warped_nylium`
@@ -1772,8 +1776,6 @@ Stonebrick
 - `minecraft:bubble_coral_block`
 - `minecraft:horn_coral_block`
 - `minecraft:dead_tube_coral_block`
-- `minecraft:green_candle`
-Green Candle
 - `minecraft:dead_bubble_coral_block`
 - `minecraft:dead_fire_coral_block`
 - `minecraft:suspicious_sand`
@@ -1894,7 +1896,6 @@ Azalea Leaves Flowered
 - `minecraft:sandstone`
 Sandstone
 - `minecraft:chiseled_sandstone`
-- `minecraft:cut_sandstone`
 - `minecraft:smooth_sandstone`
 - `minecraft:hard_light_gray_stained_glass_pane`
 - `minecraft:spruce_button`
@@ -1963,6 +1964,7 @@ Tallgrass
 [Education Edition] Lawrencium (Lr)
 - `minecraft:brown_mushroom_block`
 Brown Mushroom Block
+- `minecraft:mushroom_stem`
 - `minecraft:dark_oak_log`
 - `minecraft:log2`
 Log 2
@@ -2009,7 +2011,6 @@ Concrete Powder
 - `minecraft:element_75`
 [Education Edition] Rhenium (Re)
 - `minecraft:white_stained_glass`
-- `minecraft:orange_stained_glass`
 - `minecraft:element_64`
 [Education Edition] Gadolinium (Gd)
 - `minecraft:magenta_stained_glass`
@@ -2052,7 +2053,6 @@ End Crystal
 Undyed Shulker Box
 - `minecraft:light_blue_shulker_box`
 - `minecraft:hard_green_stained_glass_pane`
-- `minecraft:yellow_shulker_box`
 - `minecraft:lime_shulker_box`
 - `minecraft:gray_shulker_box`
 - `minecraft:deepslate_diamond_ore`
@@ -2100,8 +2100,6 @@ Cobbled Deepslate
 - `minecraft:hard_lime_stained_glass`
 - `minecraft:hard_gray_stained_glass`
 - `minecraft:hard_light_gray_stained_glass`
-- `minecraft:red_candle`
-Red Candle
 - `minecraft:hard_green_stained_glass`
 - `minecraft:element_84`
 [Education Edition] Polonium (Po)
@@ -2149,10 +2147,20 @@ Pink Candle
 Cyan Candle
 - `minecraft:purple_candle`
 Purple Candle
+- `minecraft:green_candle`
+Green Candle
+- `minecraft:red_candle`
+Red Candle
 - `minecraft:polished_deepslate_wall`
 Polished Deepslate Wall
 - `minecraft:black_candle`
 Black Candle
+- `minecraft:element_0`
+[Education Edition] Unknown (?)
+- `minecraft:element_1`
+[Education Edition] Hydrogen (H)
+- `minecraft:element_3`
+[Education Edition] Lithium (Li)
 - `minecraft:element_5`
 [Education Edition] Boron (B)
 - `minecraft:element_6`
@@ -2707,8 +2715,6 @@ Chiseled Deepslate
 - `minecraft:bamboo_trapdoor`
 - `minecraft:mangrove_wall_sign`
 Mangrove Wall Sign
-- `minecraft:item.skull`
-Skull
 - `minecraft:light_gray_candle_cake`
 Light Gray Candle Cake
 - `minecraft:cherry_leaves`

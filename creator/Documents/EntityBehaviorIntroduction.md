@@ -80,6 +80,7 @@ Inside the description tag, a few basic properties define how the game registers
 | `is_summonable` | Boolean  | If true, the entity can be summoned using the `/summon` command.  |
 | `animations`  | Object   | A list of behavior animations or behavior animation controllers. These aren't used for visible model animations. These can be used to run commands or events on the entity.|
 | `scripts` | Object   | Scripts work similarly to how they work in client entity files, and they can be used to play behavior animations.  |
+| `spawn_category` | String | Currently not fully implemented, so we recommend that creators do not set a value for this property. This property is optional. Available values include `monster`, `creature`, `ambient`, `axolotls`, `underground_water_creature`, `water_creature`, `water_ambient` and `misc`. If you do set this property, we recommend a value of `misc`.  |
 
 ## Components Basics
 

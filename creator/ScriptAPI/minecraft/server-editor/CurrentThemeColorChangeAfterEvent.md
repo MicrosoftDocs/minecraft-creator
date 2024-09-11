@@ -16,6 +16,6 @@ description: Contents of the @minecraft/server-editor.CurrentThemeColorChangeAft
 Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 ### **colorKey**
-`read-only colorKey: ThemeSettingsColorKey;`
+`read-only colorKey: string;`
 
-Type: [*ThemeSettingsColorKey*](ThemeSettingsColorKey.md)
+Type: *string*

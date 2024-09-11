@@ -15,26 +15,25 @@ description: Contents of the @minecraft/server-editor.WidgetGroup class.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
 
 ### **visible**
 `visible: boolean;`
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **visibleBounds**
 `visibleBounds: boolean;`
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Methods
 - [createWidget](#createwidget)
@@ -53,22 +52,19 @@ createWidget(location: minecraftserver.Vector3, options?: WidgetCreateOptions): 
 - **options**?: [*WidgetCreateOptions*](WidgetCreateOptions.md) = `null`
 
 **Returns** [*Widget*](Widget.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
 
 ### **delete**
 `
 "delete"(): void
 `
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **deleteWidget**
 `
@@ -77,37 +73,28 @@ deleteWidget(widgetToDelete: Widget): void
 
 #### **Parameters**
 - **widgetToDelete**: [*Widget*](Widget.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md), [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md), [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
 
 ### **deselectAllWidgets**
 `
 deselectAllWidgets(): void
 `
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
 
 ### **selectAllWidgets**
 `
 selectAllWidgets(): void
 `
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)

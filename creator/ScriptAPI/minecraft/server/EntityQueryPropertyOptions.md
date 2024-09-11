@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityQueryPropertyOptions Interface
 description: Contents of the @minecraft/server.EntityQueryPropertyOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityQueryPropertyOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Properties
 

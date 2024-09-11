@@ -22,8 +22,8 @@ Speed in effect when the entity is turning.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **startSpeed**
 `read-only startSpeed: number;`
@@ -32,8 +32,8 @@ Start speed during a glide.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

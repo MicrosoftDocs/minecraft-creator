@@ -22,8 +22,8 @@ The type of entity that is added as a rider for this entity when spawned under c
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **spawnEvent**
 `read-only spawnEvent: string;`
@@ -32,8 +32,8 @@ Optional spawn event to trigger on the rider when that rider is spawned for this
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

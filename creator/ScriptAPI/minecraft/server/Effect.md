@@ -19,8 +19,8 @@ Gets an amplifier that may have been applied to this effect. Sample values range
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **displayName**
 `read-only displayName: string;`
@@ -29,8 +29,8 @@ Gets the player-friendly name of this effect.
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **duration**
 `read-only duration: number;`
@@ -39,8 +39,8 @@ Gets the entire specified duration, in ticks, of this effect. There are 20 ticks
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **typeId**
 `read-only typeId: string;`
@@ -49,8 +49,8 @@ Gets the type id of this effect.
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [isValid](#isvalid)

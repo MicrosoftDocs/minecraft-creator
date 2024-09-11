@@ -3,10 +3,12 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EditorStatusBarAlignment Enumeration
-description: Contents of the .EditorStatusBarAlignment enumeration.
+title: .StatusBarAlignment Enumeration
+description: Contents of the .StatusBarAlignment enumeration.
 ---
-# EditorStatusBarAlignment Enumeration
+# StatusBarAlignment Enumeration
+
+Position for items on the status bar
 
 ## Constants
 ### **Right**

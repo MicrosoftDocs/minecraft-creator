@@ -21,11 +21,8 @@ setPrimitive(primitive: WidgetComponentRenderPrimitiveAxialSphere | WidgetCompon
 
 #### **Parameters**
 - **primitive**: [*WidgetComponentRenderPrimitiveAxialSphere*](WidgetComponentRenderPrimitiveAxialSphere.md) | [*WidgetComponentRenderPrimitiveBox*](WidgetComponentRenderPrimitiveBox.md) | [*WidgetComponentRenderPrimitiveDisc*](WidgetComponentRenderPrimitiveDisc.md) | [*WidgetComponentRenderPrimitiveLine*](WidgetComponentRenderPrimitiveLine.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)

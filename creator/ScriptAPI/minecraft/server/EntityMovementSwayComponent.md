@@ -22,8 +22,8 @@ Amplitude of the sway motion.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **swayFrequency**
 `read-only swayFrequency: number;`
@@ -32,8 +32,8 @@ Amount of sway frequency.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

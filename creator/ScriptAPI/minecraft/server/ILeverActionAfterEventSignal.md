@@ -28,9 +28,9 @@ Subscribes to the event.
 - **callback**: (arg: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
 
 **Returns** (arg: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -41,6 +41,6 @@ Unsubscribes from the event.
 
 #### **Parameters**
 - **callback**: (arg: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

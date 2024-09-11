@@ -19,8 +19,7 @@ registerCustomComponent(name: string, customComponent: BlockCustomComponent): vo
 #### **Parameters**
 - **name**: *string*
 - **customComponent**: [*BlockCustomComponent*](BlockCustomComponent.md)
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*BlockCustomComponentAlreadyRegisteredError*](BlockCustomComponentAlreadyRegisteredError.md), [*BlockCustomComponentReloadNewComponentError*](BlockCustomComponentReloadNewComponentError.md), [*BlockCustomComponentReloadNewEventError*](BlockCustomComponentReloadNewEventError.md), [*BlockCustomComponentReloadVersionError*](BlockCustomComponentReloadVersionError.md), [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*CustomComponentNameError*](CustomComponentNameError.md), [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*BlockCustomComponentAlreadyRegisteredError*](BlockCustomComponentAlreadyRegisteredError.md), [*BlockCustomComponentReloadNewComponentError*](BlockCustomComponentReloadNewComponentError.md), [*BlockCustomComponentReloadNewEventError*](BlockCustomComponentReloadNewEventError.md), [*BlockCustomComponentReloadVersionError*](BlockCustomComponentReloadVersionError.md), [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*CustomComponentNameError*](CustomComponentNameError.md), [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md)

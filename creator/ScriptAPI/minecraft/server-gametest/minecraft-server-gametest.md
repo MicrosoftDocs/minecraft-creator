@@ -5,10 +5,14 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server-gametest Module
 description: Contents of the @minecraft/server-gametest module
+monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/server-gametest` Module
 
 The @minecraft/server-gametest module provides scriptable APIs for scaffolding and testing content experiences in Minecraft.
+
+> [!CAUTION]
+> This module is still in pre-release.  It may change or it may be removed in future releases.
 
 ## [Changelog](changelog.md)
 
@@ -16,13 +20,12 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 ```json
 {
     "module_name": "@minecraft/server-gametest",
-    "version": "0.1.0"
+    "version": "1.0.0-beta"
 }
 ```
 
 ## Available Versions
 - `1.0.0-beta`
-- `0.1.0`
 
 ## Enumerations
 - [GameTestErrorType](GameTestErrorType.md)
@@ -47,7 +50,6 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 
 ## Functions
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **register**
 `
 register(testClassName: string, testName: string, testFunction: (arg: Test) => void): RegistrationBuilder
@@ -67,12 +69,9 @@ Registers a new GameTest function. This GameTest will become available in Minecr
   Implementation of the test function.
 
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*@minecraft/server-gametest.RegistrationBuilder*](../../minecraft/server-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
 ##### ***simpleMobTest.ts***
@@ -96,9 +95,7 @@ gameTest
     .maxTicks(400)
     .structureName('gametests:mediumglass');
 ```
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **registerAsync**
 `
 registerAsync(testClassName: string, testName: string, testFunction: (arg: Test) => Promise<void>): RegistrationBuilder
@@ -118,12 +115,9 @@ Registers a new GameTest function that is designed for asynchronous execution. T
   Implementation of the test function.
 
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - Returns a [*@minecraft/server-gametest.RegistrationBuilder*](../../minecraft/server-gametest/RegistrationBuilder.md) object where additional options for this test can be specified via builder methods.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
 ##### ***simpleMobAsyncTest.ts***
@@ -147,4 +141,3 @@ gameTest
     .maxTicks(400)
     .structureName('gametests:mediumglass');
 ```
-::: moniker-end

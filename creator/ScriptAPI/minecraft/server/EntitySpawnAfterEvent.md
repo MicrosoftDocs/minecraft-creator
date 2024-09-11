@@ -39,9 +39,9 @@ Type: [*EntityInitializationCause*](EntityInitializationCause.md)
 Entity that was spawned.
 
 Type: [*Entity*](Entity.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 #### Examples
 ##### ***logEntitySpawnEvents.ts***

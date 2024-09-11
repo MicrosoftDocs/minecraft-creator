@@ -72,14 +72,11 @@ function spawnFeather(location: DimensionLocation) {
 Number of the items in the stack. Valid values range between 1-255. The provided value will be clamped to the item's maximum stack size.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws if the value is outside the range of 1-255.
+Notes:
+  - This property can't be edited in read-only mode.
+  - This property can throw errors when used.
+    - Throws if the value is outside the range of 1-255.
 
 ### **isStackable**
 `read-only isStackable: boolean;`
@@ -94,9 +91,9 @@ Type: *boolean*
 Gets or sets whether the item is kept on death.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **lockMode**
 `lockMode: ItemLockMode;`
@@ -104,9 +101,9 @@ Type: *boolean*
 Gets or sets the item's lock mode. The default value is `ItemLockMode.none`.
 
 Type: [*ItemLockMode*](ItemLockMode.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **maxAmount**
 `read-only maxAmount: number;`
@@ -121,14 +118,11 @@ Type: *number*
 Given name of this stack of items. The name tag is displayed when hovering over the item. Setting the name tag to an empty string or `undefined` will remove the name tag.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws if the length exceeds 255 characters.
+Notes:
+  - This property can't be edited in read-only mode.
+  - This property can throw errors when used.
+    - Throws if the length exceeds 255 characters.
 
 ### **type**
 `read-only type: ItemType;`
@@ -185,11 +179,10 @@ Creates a new instance of a stack of items for use in the world.
   Number of items to place in the stack, between 1-255. The provided value will be clamped to the item's maximum stack size. Note that certain items can only have one item in the stack.
 
 **Returns** [*ItemStack*](ItemStack.md)
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if `itemType` is invalid, or if `amount` is outside the range of 1-255.
+  
+Notes:
+- This function can throw errors.
+  - Throws if `itemType` is invalid, or if `amount` is outside the range of 1-255.
 
 ### **clearDynamicProperties**
 `
@@ -215,9 +208,9 @@ getCanDestroy(): string[]
 Get the list of block types this item can break in Adventure mode.
 
 **Returns** *string*[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getCanPlaceOn**
 `
@@ -227,9 +220,9 @@ getCanPlaceOn(): string[]
 Get the list of block types this item can be placed on in Adventure mode.
 
 **Returns** *string*[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getComponent**
 `
@@ -397,14 +390,11 @@ The list of block types this item can break in Adventure mode. The block names a
 - **blockIdentifiers**?: *string*[] = `null`
   
   String list of block types that the item can destroy.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if any of the provided block identifiers are invalid.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if any of the provided block identifiers are invalid.
 
 #### Examples
 ##### ***example.ts***
@@ -440,14 +430,11 @@ The list of block types this item can be placed on in Adventure mode. This is on
 - **blockIdentifiers**?: *string*[] = `null`
   
   String list of block types that the item can be placed on.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if any of the provided block identifiers are invalid.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if any of the provided block identifiers are invalid.
 
 #### Examples
 ##### ***example.ts***
@@ -483,11 +470,10 @@ Sets a specified property to a value. Note: This function only works with non-st
 - **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
   Data value of the property to set.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the item stack is stackable.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the item stack is stackable.
 
 ### **setLore**
 `
@@ -500,12 +486,10 @@ Sets the lore value - a secondary display string - for an ItemStack. The lore li
 - **loreList**?: *string*[] = `null`
   
   List of lore lines. Each element in the list represents a new line. The maximum lore line count is 20. The maximum lore line length is 50 characters.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***diamondAwesomeSword.ts***
@@ -545,12 +529,10 @@ Helper function for creating potion items.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 ::: moniker-end
 
 #### Examples

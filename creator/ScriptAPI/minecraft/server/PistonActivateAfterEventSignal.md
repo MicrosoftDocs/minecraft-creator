@@ -35,9 +35,9 @@ subscribe(callback: (arg: PistonActivateAfterEvent) => void): (arg: PistonActiva
 - **callback**: (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
 
 **Returns** (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -48,9 +48,9 @@ Removes a callback from being called when a piston expands or retracts.
 
 #### **Parameters**
 - **callback**: (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
 ##### ***pistonAfterEvent.ts***

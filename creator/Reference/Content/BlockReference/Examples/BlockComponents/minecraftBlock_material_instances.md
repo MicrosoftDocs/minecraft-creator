@@ -24,10 +24,22 @@ The following are parameters of EACH material instance you provide:
 
 | Name |Default Value |Type |Description |
 |:----|:----|:----|:----|
-| ambient_occlusion| true| Boolean| Should this material have ambient occlusion applied when lighting? If true, shadows will be created around and underneath the block. |
-| face_dimming| true| Boolean| Should this material be dimmed by the direction it's facing? |
-| render_method| opaque| String| The render method to use. Must be one of these options: `opaque` - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency. `double_sided` - Used for completely disabling backface culling. `blend` - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures). `alpha_test` - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling.  |
-| texture| | String| Texture name for the material. |
+| ambient_occlusion | true | Boolean| Should this material have ambient occlusion applied when lighting? If true, shadows will be created around and underneath the block. |
+| face_dimming | true | Boolean | This material should be dimmed by the direction it's facing. |
+| render_method | opaque | String | The render method to use. Must be one of the options listed in the table below. See this page to understand the relationship between render method and render distance.  |
+| texture | *none* | String | Texture name for the material. |
+
+### render_method Table
+
+For more information about custom block render distance, see the [Custom Block Render Distance](../../../../../../creator/Documents/CustomBlockRenderDistance.md).
+
+| Render Method | Description |
+|:----|:----|
+| opaque | Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency |
+| double_sided | Used for completely disabling backface culling |
+| blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures) |
+| alpha_test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling |
+| alpha_test_single_sided | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling |
 
 ## Example (using * and all parameters of a material instance)
 

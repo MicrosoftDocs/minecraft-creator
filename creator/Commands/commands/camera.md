@@ -95,59 +95,67 @@ Removes a camera target.
 
 
 ### Set camera to default
-`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float>`
+`/camera <players: target> set <preset: CameraPresets> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Sets a camera using the default settings for the camera preset.
 
 ### Sets a camera from a position
-`/camera <players: target> set <preset: CameraPresets> pos <position: x y z>`
+`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 Sets a camera from a position.
 
 ### Camera facing rotation
-`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation>`
+`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Specifies a camera with a particular rotatoin
 
 ### Fade out to times
-`/camera <players: target> set <preset: CameraPresets> facing <lookAtEntity: target>`
+`/camera <players: target> set <preset: CameraPresets> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Specifies a camera timed fade-out type operation.
 
 ### Camera preset facing/looking at a position
-`/camera <players: target> set <preset: CameraPresets> facing <lookAtPosition: x y z>`
+`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Specifies a camera looking at a particular position.
 
 ### Fade
-`/camera <players: target> set <preset: CameraPresets> [default: default]`
+`/camera <players: target> set <preset: CameraPresets> pos <position: x y z>`
 
 Specifies a general camera fade-out.
 
 ### Clear
-`/camera <players: target> clear`
+`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation>`
 
 Clears any active camera changes for the player.
 
 ### Timed color-tinted fade
-`/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float> color <red: int> <green: int> <blue: int>`
+`/camera <players: target> set <preset: CameraPresets> facing <lookAtEntity: target>`
 
 Applies a color tinted fade for the specified fade in, hold, and out time periods.
 
 ### Timed fade
-`/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float>`
+`/camera <players: target> set <preset: CameraPresets> facing <lookAtPosition: x y z>`
 
 Applies a fade for the specified fade in, hold, and out time periods.
 
 ### Color-tinted fade
-`/camera <players: target> fade color <red: int> <green: int> <blue: int>`
+`/camera <players: target> set <preset: CameraPresets> [default: default]`
 
 Applies a color-tinted fade for the selected player(s).
 
 ### Fade
-`/camera <players: target> fade`
+`/camera <players: target> clear`
 
 Applies a fade for the selected player(s)
+
+### `/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float> color <red: int> <green: int> <blue: int>`
+
+### `/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float>`
+
+### `/camera <players: target> fade color <red: int> <green: int> <blue: int>`
+
+### `/camera <players: target> fade`
 
 ## Arguments
 - `blue`: int
@@ -180,18 +188,21 @@ The position to locate the camera at.
 A camera preset defined in a camera JSON file.
 - `red`: int
 Red component of a color value. Valid values are between 0 and 255.
+- `xEntityOffset`: float
 - `xRot`: rotation
 x Rotation value
 - `xTargetCenterOffset`: float
 X offset from the center of a targeted entity
 - `xViewOffset`: float
 X component of a view offset
+- `yEntityOffset`: float
 - `yRot`: rotation
 y Rotation value
 - `yTargetCenterOffset`: float
 Y offset from the center of a targeted entity
 - `yViewOffset`: float
 Y component of a view offset
+- `zEntityOffset`: float
 - `zTargetCenterOffset`: float
 Z offset from the center of a targeted entity
 

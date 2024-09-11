@@ -22,8 +22,8 @@ Current value for variant for this entity, as specified via components.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

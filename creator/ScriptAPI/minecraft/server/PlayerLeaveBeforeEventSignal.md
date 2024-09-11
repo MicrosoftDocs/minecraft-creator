@@ -25,9 +25,9 @@ Adds a callback that will be called when a player leaves the world.
 - **callback**: (arg: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*
 
 **Returns** (arg: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -38,6 +38,6 @@ Removes a callback that will be called when a player leaves the world.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

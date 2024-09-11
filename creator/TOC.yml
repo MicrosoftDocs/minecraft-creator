@@ -311,6 +311,8 @@
             href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
           - name: Custom Block Render Lighting 
             href: Documents/CustomBlockRenderLighting.md
+          - name: Custom Block Render Distance
+            href: Documents/CustomBlockRenderDistance.md
           - name: Advanced Custom Block Oversized 
             href: Documents/CustomBlockOversized.md
     - name: Tools and Libraries
