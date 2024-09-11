@@ -18,8 +18,5 @@ Welcome to the Experimental Entity Query functions.
 
 | Name| Description |
 |:-----------|:-----------|
-| query.is_feeling_happy| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is feeling happy, else it returns 0.0. |
-| query.is_rising| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is rising, else it returns 0.0. |
-| query.is_scenting| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is scenting, else it returns 0.0. |
-| query.is_searching| (EXPERIMENTAL. Enable **Sniffer** to use.)Returns 1.0 if the entity is searching, else it returns 0.0. |
-| query.state_time| (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Only valid in an animation controller. Returns the time in seconds in the current animation controller state. |
+| query.client_memory_tier | (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Returns a number representing the client RAM memory tier, 0 = 'Undetermined', 1 = 'SuperLow', 2 = 'Low', 3 = 'Mid', 4 = 'High', or 5 = 'SuperHigh'. Available on the Client (Resource Packs) only. |
+| query.server_memory_tier | (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Returns a number representing the server RAM memory tier, 0 = 'Undetermined', 1 = 'SuperLow', 2 = 'Low', 3 = 'Mid', 4 = 'High', or 5 = 'SuperHigh'. Available on the server side (Behavior Packs) only. |
