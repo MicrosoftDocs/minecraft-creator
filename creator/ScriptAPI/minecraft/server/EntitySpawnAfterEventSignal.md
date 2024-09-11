@@ -41,9 +41,9 @@ Method to register an event handler for what happens when an entity spawns.
   Function that handles the spawn event.
 
 **Returns** (arg: [*EntitySpawnAfterEvent*](EntitySpawnAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -56,9 +56,9 @@ Unregisters a method that was previously subscribed to the subscription event.
 - **callback**: (arg: [*EntitySpawnAfterEvent*](EntitySpawnAfterEvent.md)) => *void*
   
   Original function that was passed into the subscribe event, that is to be unregistered.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
 ##### ***logEntitySpawnEvents.ts***

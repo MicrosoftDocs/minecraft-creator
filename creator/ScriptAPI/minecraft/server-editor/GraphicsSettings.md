@@ -55,9 +55,9 @@ Modifies a graphics settings property value.
   New property value.
 
 **Returns** *void*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **setAll**
 `
@@ -72,6 +72,6 @@ Modify multiple graphics settings properties.
   Property map to set available property values. If the property is not defined in the map, it will not be modified.
 
 **Returns** *void*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.

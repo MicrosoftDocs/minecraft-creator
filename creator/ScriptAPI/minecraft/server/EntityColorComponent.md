@@ -21,9 +21,9 @@ Defines the entity's color. Only works on certain entities that have predefined 
 Value of this particular color.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Constants
 

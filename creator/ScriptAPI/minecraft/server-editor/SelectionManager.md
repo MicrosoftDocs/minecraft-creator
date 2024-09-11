@@ -19,8 +19,8 @@ The primary [*@minecraft/server-editor.Selection*](../../minecraft/server-editor
 
 Type: [*Selection*](Selection.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [create](#create)
@@ -33,9 +33,7 @@ create(): Selection
 Create a new, empty [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) object
 
 **Returns** [*Selection*](Selection.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

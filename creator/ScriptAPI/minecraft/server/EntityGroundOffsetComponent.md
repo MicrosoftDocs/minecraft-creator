@@ -21,9 +21,9 @@ Sets the offset from the ground that the entity is actually at.
 Value of this particular ground offset. Note that this value is effectively read only; setting the ground offset value will not have an impact on the related entity.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Constants
 

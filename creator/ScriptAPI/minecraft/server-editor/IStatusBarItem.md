@@ -17,16 +17,20 @@ Unique ID for the item.
 
 Type: *string*
 
-### **text**
-`text: string;`
-
-Text to display.
-
-Type: *string*
-
 ## Methods
+- [getText](#gettext)
 - [hide](#hide)
+- [setText](#settext)
 - [show](#show)
+
+### **getText**
+`
+getText(): LocalizedString
+`
+
+Returns display text of the item.
+
+**Returns** *LocalizedString*
 
 ### **hide**
 `
@@ -34,6 +38,20 @@ hide(): void
 `
 
 Hide the Status Bar Item.
+
+**Returns** *void*
+
+### **setText**
+`
+setText(text: LocalizedString): void
+`
+
+Updates display text of the item.
+
+#### **Parameters**
+- **text**: *LocalizedString*
+  
+  New display text
 
 **Returns** *void*
 

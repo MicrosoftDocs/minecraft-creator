@@ -25,9 +25,9 @@ Adds a callback that will be called when the scripting environment is initialize
 - **callback**: (arg: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
 
 **Returns** (arg: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -38,6 +38,6 @@ Removes a callback from being called the scripting environment is initialized fo
 
 #### **Parameters**
 - **callback**: (arg: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

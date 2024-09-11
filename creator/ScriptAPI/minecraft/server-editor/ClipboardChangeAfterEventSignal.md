@@ -21,9 +21,9 @@ subscribe(callback: (arg: ClipboardChangeAfterEvent) => void): (arg: ClipboardCh
 - **callback**: (arg: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
 
 **Returns** (arg: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -32,6 +32,6 @@ unsubscribe(callback: (arg: ClipboardChangeAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

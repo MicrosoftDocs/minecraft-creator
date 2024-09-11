@@ -22,9 +22,14 @@ Schedules an action to be executed once an area is loaded, or after a certain am
 
 ## Usage
 ### Schedule function call, delay time int
-`/schedule on_area_loaded add <from: x y z> <to: x y z> <function: filepath>`
+`/schedule clear <function: filepath>`
 
 Schedule a function call with a delay using a time integer.
+
+### Schedule function call, delay time ticks
+`/schedule on_area_loaded add <from: x y z> <to: x y z> <function: filepath>`
+
+Schedule a function call with a delay using a time in game ticks.
 
 ### Schedule function call, delay time ticks
 `/schedule on_area_loaded add circle <center: x y z> <radius: int> <function: filepath>`
@@ -35,6 +40,16 @@ Schedule a function call with a delay using a time in game ticks.
 `/schedule on_area_loaded add tickingarea <name: string> <function: filepath>`
 
 Schedule a function call with a delay using a time in game ticks.
+
+### Schedule function call when area loaded, location
+`/schedule on_area_loaded clear tickingarea <name: string> [function: filepath]`
+
+Schedule a function when an area is loaded from a location to another location.
+
+### Schedule function call when area loaded, radius
+`/schedule on_area_loaded clear function <function: filepath>`
+
+Schedule a function when an area is loaded in a radius.
 
 ## Arguments
 - `center: x y z`: position

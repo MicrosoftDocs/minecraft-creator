@@ -74,12 +74,10 @@ getHiddenHudElements(): HudElement[]
 `
 
 **Returns** [*HudElement*](HudElement.md)[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **hideAllExcept**
 `
@@ -88,12 +86,10 @@ hideAllExcept(hudElements?: HudElement[]): void
 
 #### **Parameters**
 - **hudElements**?: [*HudElement*](HudElement.md)[] = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **isForcedHidden**
 `
@@ -104,12 +100,10 @@ isForcedHidden(hudElement: HudElement): boolean
 - **hudElement**: [*HudElement*](HudElement.md)
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **isValid**
 `
@@ -124,12 +118,10 @@ Returns true if the current reference to this screen display manager object is v
 `
 resetHudElements(): void
 `
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setActionBar**
 `
@@ -142,12 +134,10 @@ Set the action bar text - a piece of text that displays beneath the title and ab
 - **text**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
   
   New value for the action bar text.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setHudVisibility**
 `
@@ -163,12 +153,10 @@ Sets visibility of a particular element of the heads up display (HUD).
 - **hudElements**?: [*HudElement*](HudElement.md)[] = `null`
   
   Optional list of HUD elements to configure visibility for.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setTitle**
 `
@@ -180,12 +168,10 @@ Will cause a title to show up on the player's on screen display. Will clear the 
 #### **Parameters**
 - **title**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
 - **options**?: [*TitleDisplayOptions*](TitleDisplayOptions.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***setTitle.ts***
@@ -243,12 +229,10 @@ Updates the subtitle if the subtitle was previously displayed via the setTitle m
 
 #### **Parameters**
 - **subtitle**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***setTitle.ts***

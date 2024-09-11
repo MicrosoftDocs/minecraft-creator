@@ -25,9 +25,9 @@ Adds a callback that will be called when an item is used.
 - **callback**: (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
 
 **Returns** (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -38,6 +38,6 @@ Removes a callback from being called when an item is used.
 
 #### **Parameters**
 - **callback**: (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

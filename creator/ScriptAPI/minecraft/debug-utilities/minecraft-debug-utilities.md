@@ -34,6 +34,6 @@ disableWatchdogTimingWarnings(disable: boolean): void
 
 #### **Parameters**
 - **disable**: *boolean*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.

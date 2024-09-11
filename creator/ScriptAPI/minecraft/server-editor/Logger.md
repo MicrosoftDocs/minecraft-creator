@@ -32,12 +32,10 @@ Once your editor extension development process is complete, and you're ready to 
   
   The message string to send to the log window
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **error**
 `
@@ -51,12 +49,10 @@ The error channel is generally used when the editor extension experiences an err
   
   The message string to send to the log window
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **info**
 `
@@ -70,12 +66,10 @@ The info channel is intended to communicate general, non-fatal or non-erroneous 
   
   The message string to send to the log window
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **warning**
 `
@@ -89,9 +83,7 @@ The warning channel is intended to inform the user of "potential" issues (missin
   
   The message string to send to the log window
 - **properties**?: [*LogProperties*](LogProperties.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

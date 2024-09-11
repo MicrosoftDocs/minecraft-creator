@@ -17,9 +17,9 @@ description: Contents of the @minecraft/server-editor.WidgetComponentSpline clas
 `splineType: SplineType;`
 
 Type: [*SplineType*](SplineType.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Methods
 - [getControlPoints](#getcontrolpoints)
@@ -32,14 +32,11 @@ getControlPoints(): Widget[]
 `
 
 **Returns** [*Widget*](Widget.md)[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **getInterpolatedPoints**
 `
@@ -50,14 +47,11 @@ getInterpolatedPoints(maxPointsPerControlSegment?: number): minecraftserver.Vect
 - **maxPointsPerControlSegment**?: *number* = `null`
 
 **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **setControlPoints**
 `
@@ -66,11 +60,8 @@ setControlPoints(widgetList: Widget[]): void
 
 #### **Parameters**
 - **widgetList**: [*Widget*](Widget.md)[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)

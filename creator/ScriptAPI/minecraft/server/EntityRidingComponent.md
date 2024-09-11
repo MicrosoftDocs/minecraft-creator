@@ -22,8 +22,8 @@ The entity this entity is currently riding on.
 
 Type: [*Entity*](Entity.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

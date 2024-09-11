@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerCursorInventoryComponent Class
 description: Contents of the @minecraft/server.PlayerCursorInventoryComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerCursorInventoryComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
@@ -26,8 +22,8 @@ The ItemStack currently in the players cursor inventory.
 
 Type: [*ItemStack*](ItemStack.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [clear](#clear)
@@ -38,12 +34,10 @@ clear(): void
 `
 
 Clears the players cursor inventory.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ## Constants
 

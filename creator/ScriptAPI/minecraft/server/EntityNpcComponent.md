@@ -25,9 +25,9 @@ Adds NPC capabilities to an entity such as custom skin, name, and dialogue inter
 The DialogueScene that is opened when players first interact with the NPC.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **name**
 `name: string;`
@@ -35,9 +35,9 @@ Type: *string*
 The name of the NPC as it is displayed to players.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **skinIndex**
 `skinIndex: number;`
@@ -45,9 +45,9 @@ Type: *string*
 The index of the skin the NPC will use.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Constants
 

@@ -22,8 +22,8 @@ Maximum strength of this entity, as defined in the entity type definition.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **value**
 `read-only value: number;`
@@ -32,8 +32,8 @@ Current value of the strength component that has been set for entities.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

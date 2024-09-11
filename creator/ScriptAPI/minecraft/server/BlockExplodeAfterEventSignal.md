@@ -25,9 +25,9 @@ Adds a callback that will be called when an explosion occurs, as it impacts indi
 - **callback**: (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
 
 **Returns** (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -38,6 +38,6 @@ Removes a callback from being called when an explosion occurs, as it impacts ind
 
 #### **Parameters**
 - **callback**: (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

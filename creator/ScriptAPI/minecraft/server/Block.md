@@ -26,10 +26,9 @@ Returns true if this block is an air block (i.e., empty space).
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+Notes:
+  - This property can throw errors when used.
+    - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **isLiquid**
 `read-only isLiquid: boolean;`
@@ -38,10 +37,9 @@ Returns true if this block is a liquid block - (e.g., a water block and a lava b
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+Notes:
+  - This property can throw errors when used.
+    - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **isSolid**
@@ -54,10 +52,9 @@ Type: *boolean*
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+Notes:
+  - This property can throw errors when used.
+    - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -71,10 +68,9 @@ Type: *boolean*
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+Notes:
+  - This property can throw errors when used.
+    - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ### **location**
@@ -84,8 +80,8 @@ Coordinates of the specified block.
 
 Type: [*Vector3*](Vector3.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **permutation**
 `read-only permutation: BlockPermutation;`
@@ -94,10 +90,9 @@ Additional block configuration data that describes the block.
 
 Type: [*BlockPermutation*](BlockPermutation.md)
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+Notes:
+  - This property can throw errors when used.
+    - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **type**
 `read-only type: BlockType;`
@@ -106,10 +101,9 @@ Gets the type of block.
 
 Type: [*BlockType*](BlockType.md)
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+Notes:
+  - This property can throw errors when used.
+    - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **typeId**
 `read-only typeId: string;`
@@ -118,10 +112,9 @@ Identifier of the type of block for this block. Warning: Vanilla block names can
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+Notes:
+  - This property can throw errors when used.
+    - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **x**
 `read-only x: number;`
@@ -191,11 +184,10 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) above t
   Number of steps above to step before returning.
 
 **Returns** [*Block*](Block.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **below**
 `
@@ -210,11 +202,10 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) below t
   Number of steps below to step before returning.
 
 **Returns** [*Block*](Block.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **bottomCenter**
 `
@@ -245,11 +236,10 @@ Checks to see whether it is valid to place the specified block type or block per
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ### **center**
@@ -274,11 +264,10 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
   Number of steps to the east to step before returning.
 
 **Returns** [*Block*](Block.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **getComponent**
 `
@@ -293,11 +282,10 @@ Gets a component (that represents additional capabilities) for a block - for exa
   The identifier of the component (e.g., 'minecraft:inventory'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.BlockComponentTypes*](../../minecraft/server/BlockComponentTypes.md) enum.
 
 **Returns** *BlockComponentTypeMap[T] | undefined* - Returns the component if it exists on the block, otherwise undefined.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **getItemStack**
 `
@@ -315,11 +303,10 @@ Creates a prototype item stack based on this block that can be used with Contain
   Whether additional data facets of the item stack are included.
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the specified amount of items and data. Returns undefined if block type is incompatible.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getMapColor**
@@ -331,11 +318,10 @@ getMapColor(): RGBA
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -350,11 +336,10 @@ Returns the net redstone power of this block.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ### **getTags**
@@ -365,11 +350,10 @@ getTags(): string[]
 Returns a set of tags for a block.
 
 **Returns** *string*[] - The list of tags that the block has.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **hasTag**
 `
@@ -384,11 +368,10 @@ Checks to see if the permutation of this block has a specific tag.
   Tag to check for.
 
 **Returns** *boolean* - Returns `true` if the permutation of this block has the tag, else `false`.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 ##### ***check_block_tags.js***
@@ -428,11 +411,10 @@ Tests whether this block matches a specific criteria.
   Optional set of block states to test this block against.
 
 **Returns** *boolean* - Returns true if the block matches the specified criteria.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **north**
 `
@@ -447,11 +429,10 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
   Number of steps to the north to step before returning.
 
 **Returns** [*Block*](Block.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **offset**
 `
@@ -466,11 +447,10 @@ Returns a block at an offset relative vector to this block.
   The offset vector. For example, an offset of 0, 1, 0 will return the block above the current block.
 
 **Returns** [*Block*](Block.md) | *undefined* - Block at the specified offset, or undefined if that block could not be retrieved (for example, the block and its relative chunk is not loaded yet.)
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **setPermutation**
 `
@@ -483,14 +463,11 @@ Sets the block in the dimension to the state of the permutation.
 - **permutation**: [*BlockPermutation*](BlockPermutation.md)
   
   Permutation that contains a set of property states for the Block.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **setType**
 `
@@ -503,14 +480,11 @@ Sets the type of block.
 - **blockType**: [*BlockType*](BlockType.md) | *string*
   
   Identifier of the type of block to apply - for example, minecraft:powered_repeater.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setWaterlogged**
@@ -527,14 +501,11 @@ Sets whether this block has a water logged state - for example, whether stairs a
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ### **south**
@@ -550,11 +521,10 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
   Number of steps to the south to step before returning.
 
 **Returns** [*Block*](Block.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **trySetPermutation**
@@ -573,14 +543,11 @@ Tries to set the block in the dimension to the state of the permutation by first
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ### **west**
@@ -596,8 +563,7 @@ Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the 
   Number of steps to the west to step before returning.
 
 **Returns** [*Block*](Block.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)

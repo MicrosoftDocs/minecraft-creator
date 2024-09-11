@@ -26,6 +26,8 @@ Polished Basalt
 Nether Gold Ore
 - `nether_gold_ore`
 Nether Gold Ore
+- `minecraft:zombie_head`
+- `zombie_head`
 - `minecraft:warped_door`
 Warped Door
 - `warped_door`
@@ -764,6 +766,8 @@ Warped Stairs
 Smithing Table
 - `smithing_table`
 Smithing Table
+- `minecraft:player_head`
+- `player_head`
 - `minecraft:weathered_copper_grate`
 - `weathered_copper_grate`
 - `minecraft:poppy`
@@ -1390,10 +1394,6 @@ Oxidized Cut Copper Slab
 Beetroot
 - `beetroot`
 Beetroot
-- `minecraft:skull`
-Skull
-- `skull`
-Skull
 - `minecraft:white_candle`
 White Candle
 - `white_candle`
@@ -1454,6 +1454,8 @@ Warped Fence Gate
 Warped Fence Gate
 - `minecraft:cut_sandstone_slab`
 - `cut_sandstone_slab`
+- `minecraft:skeleton_skull`
+- `skeleton_skull`
 - `minecraft:composter`
 Composter
 - `composter`
@@ -1594,6 +1596,8 @@ Fletching Table
 Fletching Table
 - `minecraft:cherry_leaves`
 - `cherry_leaves`
+- `minecraft:creeper_head`
+- `creeper_head`
 - `minecraft:black_glazed_terracotta`
 Black Glazed Terracotta
 - `black_glazed_terracotta`
@@ -1604,6 +1608,8 @@ Waxed Oxidized Cut Copper Stairs
 Waxed Oxidized Cut Copper Stairs
 - `minecraft:waxed_weathered_copper_bulb`
 - `waxed_weathered_copper_bulb`
+- `minecraft:dragon_head`
+- `dragon_head`
 - `minecraft:calibrated_sculk_sensor`
 - `calibrated_sculk_sensor`
 - `minecraft:dark_prismarine_slab`
@@ -1750,6 +1756,8 @@ Prismarine
 Prismarine
 - `minecraft:exposed_copper_trapdoor`
 - `exposed_copper_trapdoor`
+- `minecraft:mushroom_stem`
+- `mushroom_stem`
 - `minecraft:black_terracotta`
 - `black_terracotta`
 - `minecraft:deepslate_gold_ore`
@@ -2180,6 +2188,8 @@ Blue Ice
 Polished Andesite Stairs
 - `polished_andesite_stairs`
 Polished Andesite Stairs
+- `minecraft:piglin_head`
+- `piglin_head`
 - `minecraft:sculk`
 Sculk
 - `sculk`
@@ -2262,6 +2272,8 @@ Weathered Cut Copper
 Cracked Polished Blackstone Bricks
 - `cracked_polished_blackstone_bricks`
 Cracked Polished Blackstone Bricks
+- `minecraft:wither_skeleton_skull`
+- `wither_skeleton_skull`
 - `minecraft:polished_tuff`
 - `polished_tuff`
 - `minecraft:magenta_stained_glass`
@@ -2784,6 +2796,8 @@ Stone Block Slab 4
 Monster Egg
 - `stonebrick`
 Stonebrick
+- `skull`
+Skull
 - `minecraft:chicken`
 Chicken
 - `chicken`
@@ -3583,8 +3597,6 @@ Crossbow
 Crossbow
 - `minecraft:mace`
 - `mace`
-- `minecraft:ominous_bottle`
-- `ominous_bottle`
 - `minecraft:shield`
 Shield
 - `shield`
@@ -3747,6 +3759,8 @@ Experience Bottle
 Potion
 - `potion`
 Potion
+- `minecraft:ominous_bottle`
+- `ominous_bottle`
 - `minecraft:spyglass`
 Spyglass
 - `spyglass`
@@ -4119,8 +4133,6 @@ Book
 Writeable Book
 - `writable_book`
 Writeable Book
-- `minecraft:trial_key`
-- `trial_key`
 - `minecraft:enchanted_book`
 Enchanted Book
 - `enchanted_book`
@@ -4337,6 +4349,10 @@ Firework Rocket
 Firework Star
 - `firework_star`
 Firework Star
+- `minecraft:trial_key`
+- `trial_key`
+- `minecraft:ominous_trial_key`
+- `ominous_trial_key`
 - `minecraft:lodestone_compass`
 Lodestone Compass
 - `lodestone_compass`
@@ -4345,8 +4361,6 @@ Lodestone Compass
 - `wither_spawn_egg`
 - `minecraft:ender_dragon_spawn_egg`
 - `ender_dragon_spawn_egg`
-- `minecraft:ominous_trial_key`
-- `ominous_trial_key`
 - `speckled_melon`
 Speckled Melon
 - `nametag`

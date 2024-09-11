@@ -29,8 +29,8 @@ The face at of the block beneath the 3D block cursor which is intersected by the
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isVisible**
 `read-only isVisible: boolean;`
@@ -39,8 +39,8 @@ Query whether or not the 3D block cursor is visible or hidden
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [attachClipboardItem](#attachclipboarditem)
@@ -62,23 +62,19 @@ attachClipboardItem(item: ClipboardItem): void
 
 #### **Parameters**
 - **item**: [*ClipboardItem*](ClipboardItem.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **clearAttachment**
 `
 clearAttachment(): void
 `
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **getAttachmentProperties**
 `
@@ -86,12 +82,10 @@ getAttachmentProperties(): CursorAttachmentProperties
 `
 
 **Returns** [*CursorAttachmentProperties*](CursorAttachmentProperties.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **getPosition**
 `
@@ -101,12 +95,10 @@ getPosition(): minecraftserver.Vector3
 Get the world position of the 3D block cursor
 
 **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **getProperties**
 `
@@ -116,12 +108,10 @@ getProperties(): CursorProperties
 Get a property object which represents the current properties of the 3D block cursor.
 
 **Returns** [*CursorProperties*](CursorProperties.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **hide**
 `
@@ -129,12 +119,10 @@ hide(): void
 `
 
 Hide the 3D block cursor from view until the corresponding [*@minecraft/server-editor.Cursor.show*](../../minecraft/server-editor/Cursor.md#show) function is called
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **moveBy**
 `
@@ -149,12 +137,10 @@ Manually offset the 3D block cursor by given amount.  Depending on the [*@minecr
   Amount by which the 3D block cursor should be moved
 
 **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - Return the newly modified position (or previous position if movement was restricted)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **resetToDefaultState**
 `
@@ -162,12 +148,10 @@ resetToDefaultState(): void
 `
 
 Reset the 3D block cursor to the system default state
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setAttachmentProperties**
 `
@@ -176,12 +160,10 @@ setAttachmentProperties(properties: CursorAttachmentProperties): void
 
 #### **Parameters**
 - **properties**: [*CursorAttachmentProperties*](CursorAttachmentProperties.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setProperties**
 `
@@ -194,12 +176,10 @@ Set the 3D block cursor properties to a given state
 - **properties**: [*CursorProperties*](CursorProperties.md)
   
   A set of optional parameters within a property state which represent the intended 3D block cursor state
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **show**
 `
@@ -207,9 +187,7 @@ show(): void
 `
 
 Make the 3D block cursor visible on screen
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

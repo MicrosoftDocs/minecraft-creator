@@ -150,6 +150,8 @@
       href: minecraft/server/ItemComponentTypes.md
     - name: ItemLockMode
       href: minecraft/server/ItemLockMode.md
+    - name: MemoryTier
+      href: minecraft/server/MemoryTier.md
     - name: MoonPhase
       href: minecraft/server/MoonPhase.md
     - name: ObjectiveSortOrder
@@ -210,26 +212,20 @@
       href: minecraft/server/BlockExplodeAfterEvent.md
     - name: BlockExplodeAfterEventSignal
       href: minecraft/server/BlockExplodeAfterEventSignal.md
+    - name: BlockFluidContainerComponent
+      href: minecraft/server/BlockFluidContainerComponent.md
     - name: BlockInventoryComponent
       href: minecraft/server/BlockInventoryComponent.md
-    - name: BlockLavaContainerComponent
-      href: minecraft/server/BlockLavaContainerComponent.md
-    - name: BlockLiquidContainerComponent
-      href: minecraft/server/BlockLiquidContainerComponent.md
     - name: BlockLocationIterator
       href: minecraft/server/BlockLocationIterator.md
     - name: BlockPermutation
       href: minecraft/server/BlockPermutation.md
     - name: BlockPistonComponent
       href: minecraft/server/BlockPistonComponent.md
-    - name: BlockPotionContainerComponent
-      href: minecraft/server/BlockPotionContainerComponent.md
     - name: BlockRecordPlayerComponent
       href: minecraft/server/BlockRecordPlayerComponent.md
     - name: BlockSignComponent
       href: minecraft/server/BlockSignComponent.md
-    - name: BlockSnowContainerComponent
-      href: minecraft/server/BlockSnowContainerComponent.md
     - name: BlockStates
       href: minecraft/server/BlockStates.md
     - name: BlockStateType
@@ -242,8 +238,6 @@
       href: minecraft/server/BlockVolume.md
     - name: BlockVolumeBase
       href: minecraft/server/BlockVolumeBase.md
-    - name: BlockWaterContainerComponent
-      href: minecraft/server/BlockWaterContainerComponent.md
     - name: BoundingBoxUtils
       href: minecraft/server/BoundingBoxUtils.md
     - name: ButtonPushAfterEvent
@@ -260,6 +254,8 @@
       href: minecraft/server/ChatSendBeforeEvent.md
     - name: ChatSendBeforeEventSignal
       href: minecraft/server/ChatSendBeforeEventSignal.md
+    - name: ClientSystemInfo
+      href: minecraft/server/ClientSystemInfo.md
     - name: CommandResult
       href: minecraft/server/CommandResult.md
     - name: Component
@@ -544,6 +540,8 @@
       href: minecraft/server/ItemCooldownComponent.md
     - name: ItemDurabilityComponent
       href: minecraft/server/ItemDurabilityComponent.md
+    - name: ItemDyeableComponent
+      href: minecraft/server/ItemDyeableComponent.md
     - name: ItemEnchantableComponent
       href: minecraft/server/ItemEnchantableComponent.md
     - name: ItemFoodComponent
@@ -738,6 +736,8 @@
       href: minecraft/server/SystemAfterEvents.md
     - name: SystemBeforeEvents
       href: minecraft/server/SystemBeforeEvents.md
+    - name: SystemInfo
+      href: minecraft/server/SystemInfo.md
     - name: TargetBlockHitAfterEvent
       href: minecraft/server/TargetBlockHitAfterEvent.md
     - name: TargetBlockHitAfterEventSignal
@@ -938,8 +938,6 @@
       href: minecraft/server-editor/EditorInputContext.md
     - name: EditorMode
       href: minecraft/server-editor/EditorMode.md
-    - name: EditorStatusBarAlignment
-      href: minecraft/server-editor/EditorStatusBarAlignment.md
     - name: EntityOperationType
       href: minecraft/server-editor/EntityOperationType.md
     - name: ExportResult
@@ -982,6 +980,8 @@
       href: minecraft/server-editor/SimpleToolStatusBarVisibility.md
     - name: SplineType
       href: minecraft/server-editor/SplineType.md
+    - name: StatusBarAlignment
+      href: minecraft/server-editor/StatusBarAlignment.md
     - name: ThemeSettingsColorKey
       href: minecraft/server-editor/ThemeSettingsColorKey.md
     - name: WidgetComponentType
@@ -1282,8 +1282,12 @@
       href: minecraft/server-editor/ISimpleToolStatusBarComponent.md
     - name: ISimpleToolStatusBarOptions
       href: minecraft/server-editor/ISimpleToolStatusBarOptions.md
+    - name: IStatusBar
+      href: minecraft/server-editor/IStatusBar.md
     - name: IStatusBarItem
       href: minecraft/server-editor/IStatusBarItem.md
+    - name: IStatusBarItemCreationParams
+      href: minecraft/server-editor/IStatusBarItemCreationParams.md
     - name: IStringPropertyItem
       href: minecraft/server-editor/IStringPropertyItem.md
     - name: IStringPropertyItemOptions

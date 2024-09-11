@@ -14,25 +14,25 @@ description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimi
 `center: minecraftserver.Vector3;`
 
 Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **color**
 `color: minecraftserver.RGBA;`
 
 Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **size**
 `size?: minecraftserver.Vector3;`
 
 Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Methods
 - [constructor](#constructor)

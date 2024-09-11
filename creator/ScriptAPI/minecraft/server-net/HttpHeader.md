@@ -40,9 +40,9 @@ async function updateScore() {
 Key of the HTTP header.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **value**
 `value: minecraftserveradmin.SecretString | string;`
@@ -50,9 +50,9 @@ Type: *string*
 Value of the HTTP header.
 
 Type: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/SecretString.md) | *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Methods
 - [constructor](#constructor)

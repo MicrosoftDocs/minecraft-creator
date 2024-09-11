@@ -18,6 +18,6 @@ Contains data related to an entity loaded within the world. This could happen wh
 Entity that was loaded.
 
 Type: [*Entity*](Entity.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.

@@ -16,12 +16,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.13.0"
+    "version": "1.14.0"
 }
 ```
 
 ## Available Versions
-- `1.15.0-beta`
+- `1.16.0-beta`
+- `1.14.0`
 - `1.13.0`
 - `1.12.0`
 - `1.11.0`
@@ -63,6 +64,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [InputPermissionCategory](InputPermissionCategory.md)
 - [ItemComponentTypes](ItemComponentTypes.md)
 - [ItemLockMode](ItemLockMode.md)
+- [MemoryTier](MemoryTier.md)
 - [MoonPhase](MoonPhase.md)
 - [ObjectiveSortOrder](ObjectiveSortOrder.md)
 - [PaletteColor](PaletteColor.md)
@@ -100,23 +102,19 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockEvent](BlockEvent.md)
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
 - [BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)
+- [BlockFluidContainerComponent](BlockFluidContainerComponent.md)
 - [BlockInventoryComponent](BlockInventoryComponent.md)
-- [BlockLavaContainerComponent](BlockLavaContainerComponent.md)
-- [BlockLiquidContainerComponent](BlockLiquidContainerComponent.md)
 - [BlockLocationIterator](BlockLocationIterator.md)
 - [BlockPermutation](BlockPermutation.md)
 - [BlockPistonComponent](BlockPistonComponent.md)
-- [BlockPotionContainerComponent](BlockPotionContainerComponent.md)
 - [BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)
 - [BlockSignComponent](BlockSignComponent.md)
-- [BlockSnowContainerComponent](BlockSnowContainerComponent.md)
 - [BlockStates](BlockStates.md)
 - [BlockStateType](BlockStateType.md)
 - [BlockType](BlockType.md)
 - [BlockTypes](BlockTypes.md)
 - [BlockVolume](BlockVolume.md)
 - [BlockVolumeBase](BlockVolumeBase.md)
-- [BlockWaterContainerComponent](BlockWaterContainerComponent.md)
 - [BoundingBoxUtils](BoundingBoxUtils.md)
 - [ButtonPushAfterEvent](ButtonPushAfterEvent.md)
 - [ButtonPushAfterEventSignal](ButtonPushAfterEventSignal.md)
@@ -125,6 +123,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ChatSendAfterEventSignal](ChatSendAfterEventSignal.md)
 - [ChatSendBeforeEvent](ChatSendBeforeEvent.md)
 - [ChatSendBeforeEventSignal](ChatSendBeforeEventSignal.md)
+- [ClientSystemInfo](ClientSystemInfo.md)
 - [CommandResult](CommandResult.md)
 - [Component](Component.md)
 - [CompoundBlockVolume](CompoundBlockVolume.md)
@@ -267,6 +266,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemComponentUseOnEvent](ItemComponentUseOnEvent.md)
 - [ItemCooldownComponent](ItemCooldownComponent.md)
 - [ItemDurabilityComponent](ItemDurabilityComponent.md)
+- [ItemDyeableComponent](ItemDyeableComponent.md)
 - [ItemEnchantableComponent](ItemEnchantableComponent.md)
 - [ItemFoodComponent](ItemFoodComponent.md)
 - [ItemPotionComponent](ItemPotionComponent.md)
@@ -364,6 +364,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [System](System.md)
 - [SystemAfterEvents](SystemAfterEvents.md)
 - [SystemBeforeEvents](SystemBeforeEvents.md)
+- [SystemInfo](SystemInfo.md)
 - [TargetBlockHitAfterEvent](TargetBlockHitAfterEvent.md)
 - [TargetBlockHitAfterEventSignal](TargetBlockHitAfterEventSignal.md)
 - [Trigger](Trigger.md)

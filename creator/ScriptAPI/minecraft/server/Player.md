@@ -22,8 +22,24 @@ The player's Camera.
 
 Type: [*Camera*](Camera.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **clientSystemInfo**
+`read-only clientSystemInfo: ClientSystemInfo;`
+
+Contains the player's device information.
+
+Type: [*ClientSystemInfo*](ClientSystemInfo.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can throw errors when used.
+    - Throws *Error*
+::: moniker-end
 
 ### **inputPermissions**
 `read-only inputPermissions: PlayerInputPermissions;`
@@ -39,8 +55,8 @@ If true, the player is currently emoting.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isFlying**
 `read-only isFlying: boolean;`
@@ -49,8 +65,8 @@ Whether the player is flying. For example, in Creative or Spectator mode.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isGliding**
 `read-only isGliding: boolean;`
@@ -59,8 +75,8 @@ Whether the player is gliding with Elytra.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isJumping**
 `read-only isJumping: boolean;`
@@ -69,8 +85,8 @@ Whether the player is jumping. This will remain true while the player is holding
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **level**
 `read-only level: number;`
@@ -79,8 +95,8 @@ The current overall level for the player, based on their experience.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **name**
 `read-only name: string;`
@@ -89,8 +105,8 @@ Name of the player.
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **onScreenDisplay**
 `read-only onScreenDisplay: ScreenDisplay;`
@@ -99,16 +115,16 @@ Contains methods for manipulating the on-screen display of a Player.
 
 Type: [*ScreenDisplay*](ScreenDisplay.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **selectedSlotIndex**
 `selectedSlotIndex: number;`
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **totalXpNeededForNextLevel**
 `read-only totalXpNeededForNextLevel: number;`
@@ -117,8 +133,8 @@ The overall total set of experience needed to achieve the next level for a playe
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **xpEarnedAtCurrentLevel**
 `read-only xpEarnedAtCurrentLevel: number;`
@@ -127,8 +143,8 @@ The current set of experience achieved for the player.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [addExperience](#addexperience)
@@ -175,12 +191,10 @@ Adds/removes experience to/from the Player and returns the current experience of
   Amount of experience to add. Note that this can be negative. Min/max bounds at -2^24 ~ 2^24
 
 **Returns** *number* - Returns the current experience of the Player.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **addLevels**
 `
@@ -195,12 +209,10 @@ Adds/removes level to/from the Player and returns the current level of the Playe
   Amount to add to the player. Min/max bounds at -2^24 ~ 2^24
 
 **Returns** *number* - Returns the current level of the Player.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **eatItem**
@@ -217,14 +229,11 @@ Eats an item, providing the item's hunger and saturation effects to the player. 
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the item is not a food item.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the item is not a food item.
 ::: moniker-end
 
 ### **getGameMode**
@@ -235,9 +244,9 @@ getGameMode(): GameMode
 Retrieves the active gamemode for this player, if specified.
 
 **Returns** [*GameMode*](GameMode.md)
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getItemCooldown**
 `
@@ -252,9 +261,9 @@ Gets the current item cooldown time for a particular cooldown category.
   Specifies the cooldown category to retrieve the current cooldown for.
 
 **Returns** *number*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getSpawnPoint**
 `
@@ -264,9 +273,9 @@ getSpawnPoint(): DimensionLocation | undefined
 Gets the current spawn point of the player.
 
 **Returns** [*DimensionLocation*](DimensionLocation.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getTotalXp**
 `
@@ -276,9 +285,9 @@ getTotalXp(): number
  Gets the total experience of the Player.
 
 **Returns** *number*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **isOp**
@@ -292,9 +301,9 @@ Returns true if this player has operator-level permissions.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 ::: moniker-end
 
 ### **playMusic**
@@ -311,12 +320,10 @@ Plays a music track that only this particular player can hear.
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
   
   Additional options for the music track.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **playSound**
 `
@@ -330,12 +337,10 @@ Plays a sound that only this particular player can hear.
 - **soundOptions**?: [*PlayerSoundOptions*](PlayerSoundOptions.md) = `null`
   
   Additional optional options for the sound.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **postClientMessage**
@@ -351,12 +356,10 @@ This is an internal-facing method for posting a system message to downstream cli
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 ::: moniker-end
 
 ### **queueMusic**
@@ -373,18 +376,13 @@ Queues an additional music track that only this particular player can hear. If a
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
   
   Additional options for the music track.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> An error will be thrown if volume is less than 0.0.
->
-> An error will be thrown if fade is less than 0.0.
->
-> 
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - An error will be thrown if volume is less than 0.0.
+  - An error will be thrown if fade is less than 0.0.
+  - 
 
 ### **resetLevel**
 `
@@ -392,12 +390,10 @@ resetLevel(): void
 `
 
 Resets the level of the player.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **sendMessage**
 `
@@ -410,11 +406,10 @@ Sends a message to the player.
 - **message**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
   
   The message to be displayed.
-
-> [!WARNING]
-> This function can throw errors.
->
-> This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
+  
+Notes:
+- This function can throw errors.
+  - This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
 #### Examples
 ##### ***sendMessagesToPlayer.ts***
@@ -456,12 +451,10 @@ Sets a gamemode override for this player.
 - **gameMode**?: [*GameMode*](GameMode.md) = `null`
   
   Active gamemode.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setOp**
@@ -476,12 +469,10 @@ Will change the specified players permissions, and whether they are operator or 
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 ::: moniker-end
 
 ### **setSpawnPoint**
@@ -493,14 +484,11 @@ Sets the current starting spawn point for this particular player.
 
 #### **Parameters**
 - **spawnPoint**?: [*DimensionLocation*](DimensionLocation.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **spawnParticle**
@@ -523,14 +511,11 @@ Creates a new particle emitter at a specified location in the world. Only visibl
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 ##### ***spawnParticle.ts***
@@ -573,12 +558,10 @@ Sets the item cooldown time for a particular cooldown category.
 - **tickDuration**: *number*
   
   Duration in ticks of the item cooldown.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **stopMusic**
 `
@@ -586,9 +569,7 @@ stopMusic(): void
 `
 
 Stops any music tracks from playing for this particular player.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

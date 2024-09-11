@@ -16,25 +16,25 @@ Validates min/max limits of observable objects that support Vector3
 `_isInteger: boolean;`
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **_max**
 `_max: Partial<Vector3>;`
 
 Type: *Partial<Vector3>*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **_min**
 `_min: Partial<Vector3>;`
 
 Type: *Partial<Vector3>*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Methods
 - [constructor](#(constructor))
