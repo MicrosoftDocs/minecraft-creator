@@ -10,8 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 When creating a Custom Block you have a lot of things to consider about how it is displayed in the world. One of the important ones for making it feel like a seamless integration with existing blocks is getting the right render distance. 
 
-If you’re making a new crop you want it to stay visible as long as a the existing vanilla crops do. To be able to control the render distance we first need to understand the relationship between render_method and render distance. 
-
+If you’re making a new crop you want it to stay visible as long as the existing vanilla crops do. To be able to control the render distance we first need to understand the relationship between render method and render distance. 
 
 ## Render Method
 
