@@ -198,7 +198,10 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:amethyst_cluster |
 | minecraft:ancient_debris |
 | minecraft:andesite |
+| minecraft:andesite_double_slab |
+| minecraft:andesite_slab |
 | minecraft:andesite_stairs |
+| minecraft:andesite_wall |
 | minecraft:anvil |
 | minecraft:azalea |
 | minecraft:azalea_leaves |
@@ -287,7 +290,10 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:brain_coral_fan |
 | minecraft:brewing_stand |
 | minecraft:brick_block |
+| minecraft:brick_double_slab |
+| minecraft:brick_slab |
 | minecraft:brick_stairs |
+| minecraft:brick_wall |
 | minecraft:brown_candle |
 | minecraft:brown_candle_cake |
 | minecraft:brown_carpet |
@@ -323,7 +329,6 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:chain |
 | minecraft:chain_command_block |
 | minecraft:chemical_heat |
-| minecraft:chemistry_table |
 | minecraft:cherry_button |
 | minecraft:cherry_door |
 | minecraft:cherry_double_slab |
@@ -363,10 +368,13 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:cobblestone |
 | minecraft:cobblestone_wall |
 | minecraft:cocoa |
-| minecraft:colored_torch_bp |
-| minecraft:colored_torch_rg |
+| minecraft:colored_torch_blue |
+| minecraft:colored_torch_green |
+| minecraft:colored_torch_purple |
+| minecraft:colored_torch_red |
 | minecraft:command_block |
 | minecraft:composter |
+| minecraft:compound_creator |
 | minecraft:conduit |
 | minecraft:copper_block |
 | minecraft:copper_bulb |
@@ -465,11 +473,17 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:deepslate_tile_wall |
 | minecraft:deepslate_tiles |
 | minecraft:deny |
+| minecraft:deprecated_anvil |
+| minecraft:deprecated_purpur_block_1 |
+| minecraft:deprecated_purpur_block_2 |
 | minecraft:detector_rail |
 | minecraft:diamond_block |
 | minecraft:diamond_ore |
 | minecraft:diorite |
+| minecraft:diorite_double_slab |
+| minecraft:diorite_slab
 | minecraft:diorite_stairs |
+| minecraft:diorite_wall |
 | minecraft:dirt |
 | minecraft:dirt_with_roots |
 | minecraft:dispenser |
@@ -602,6 +616,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:element_97 |
 | minecraft:element_98 |
 | minecraft:element_99 |
+| minecraft:element_constructor |
 | minecraft:emerald_block |
 | minecraft:emerald_ore |
 | minecraft:enchanting_table |
@@ -612,6 +627,9 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:end_portal_frame |
 | minecraft:end_rod |
 | minecraft:end_stone |
+| minecraft:end_stone_brick_double_slab |
+| minecraft:end_stone_brick_slab |
+| minecraft:end_stone_brick_wall |
 | minecraft:ender_chest |
 | minecraft:exposed_chiseled_copper |
 | minecraft:exposed_copper |
@@ -648,7 +666,10 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:gold_ore |
 | minecraft:golden_rail |
 | minecraft:granite |
+| minecraft:granite_double_slab |
+| minecraft:granite_slab |
 | minecraft:granite_stairs |
+| minecraft:granite_wall |
 | minecraft:grass_block |
 | minecraft:grass_path |
 | minecraft:gravel |
@@ -748,6 +769,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:jungle_wall_sign |
 | minecraft:jungle_wood |
 | minecraft:kelp |
+| minecraft:lab_table |
 | minecraft:ladder |
 | minecraft:lantern |
 | minecraft:lapis_block |
@@ -831,6 +853,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:mangrove_trapdoor |
 | minecraft:mangrove_wall_sign |
 | minecraft:mangrove_wood |
+| minecraft:material_reducer |
 | minecraft:medium_amethyst_bud |
 | minecraft:melon_block |
 | minecraft:melon_stem |
@@ -839,8 +862,14 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:moss_block |
 | minecraft:moss_carpet |
 | minecraft:mossy_cobblestone |
+| minecraft:mossy_cobblestone_double_slab |
+| minecraft:mossy_cobblestone_slab |
 | minecraft:mossy_cobblestone_stairs |
+| minecraft:mossy_cobblestone_wall |
+| minecraft:mossy_stone_brick_double_slab |
+| minecraft:mossy_stone_brick_slab |
 | minecraft:mossy_stone_brick_stairs |
+| minecraft:mossy_stone_brick_wall |
 | minecraft:moving_block |
 | minecraft:mud |
 | minecraft:mud_brick_double_slab |
@@ -852,7 +881,9 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:mycelium |
 | minecraft:nether_brick |
 | minecraft:nether_brick_fence |
+| minecraft:nether_brick_slab |
 | minecraft:nether_brick_stairs |
+| minecraft:nether_brick_wall |
 | minecraft:nether_gold_ore |
 | minecraft:nether_sprouts |
 | minecraft:nether_wart |
@@ -953,7 +984,10 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:powered_repeater |
 | minecraft:prismarine |
 | minecraft:prismarine_bricks_stairs |
+| minecraft:prismarine_double_slab |
+| minecraft:prismarine_slab |
 | minecraft:prismarine_stairs |
+| minecraft:prismarine_wall |
 | minecraft:pumpkin |
 | minecraft:pumpkin_stem |
 | minecraft:purple_candle |
@@ -968,6 +1002,8 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:purple_terracotta |
 | minecraft:purple_wool |
 | minecraft:purpur_block |
+| minecraft:purpur_pillar |
+| minecraft:purpur_slab |
 | minecraft:purpur_stairs |
 | minecraft:quartz_block |
 | minecraft:quartz_bricks |
@@ -987,9 +1023,15 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:red_mushroom |
 | minecraft:red_mushroom_block |
 | minecraft:red_nether_brick |
+| minecraft:red_nether_brick_double_slab |
+| minecraft:red_nether_brick_slab |
 | minecraft:red_nether_brick_stairs |
+| minecraft:red_nether_brick_wall |
 | minecraft:red_sandstone |
+| minecraft:red_sandstone_double_slab |
+| minecraft:red_sandstone_slab |
 | minecraft:red_sandstone_stairs |
+| minecraft:red_sandstone_wall |
 | minecraft:red_shulker_box |
 | minecraft:red_stained_glass |
 | minecraft:red_stained_glass_pane |
@@ -1007,7 +1049,10 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:respawn_anchor |
 | minecraft:sand |
 | minecraft:sandstone |
+| minecraft:sandstone_double_slab |
+| minecraft:sandstone_slab |
 | minecraft:sandstone_stairs |
+| minecraft:sandstone_wall |
 | minecraft:scaffolding |
 | minecraft:sculk |
 | minecraft:sculk_catalyst |
@@ -1067,7 +1112,10 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:stone_block_slab2 |
 | minecraft:stone_block_slab3 |
 | minecraft:stone_block_slab4 |
+| minecraft:stone_brick_double_slab |
+| minecraft:stone_brick_slab |
 | minecraft:stone_brick_stairs |
+| minecraft:stone_brick_wall |
 | minecraft:stone_button |
 | minecraft:stone_pressure_plate |
 | minecraft:stone_stairs |
@@ -1126,6 +1174,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:tuff_wall |
 | minecraft:turtle_egg |
 | minecraft:twisting_vines |
+| minecraft:underwater_tnt |
 | minecraft:underwater_torch |
 | minecraft:undyed_shulker_box |
 | minecraft:unknown |
@@ -1210,6 +1259,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:weathered_double_cut_copper_slab |
 | minecraft:web |
 | minecraft:weeping_vines |
+| minecraft:wet_sponge |
 | minecraft:wheat |
 | minecraft:white_candle |
 | minecraft:white_candle_cake |
