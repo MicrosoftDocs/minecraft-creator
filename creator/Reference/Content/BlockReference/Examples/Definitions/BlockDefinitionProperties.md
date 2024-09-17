@@ -14,7 +14,7 @@ These properties are part of the Block Definition and Block Properties that are 
 
 ```json
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.30",
   "minecraft:block": {
     "description": {
       "identifier": "design:lavenderstone"
@@ -38,7 +38,7 @@ These properties are part of the Block Definition and Block Properties that are 
 |:----------|:----------|:----------|:----------|
 |format_version|*not set* | String| Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it.|
 |minecraft:block|*not set*| JSON Object| JSON container used for descriptions.|
-|[components](../BlockComponentsList.md)|*not set*| List| List of all components that are used in this block.|
+|[components](../BlockComponentsList.md)| *not set* | List  List of all components that are used in this block.|
 
 ### Identifier
 

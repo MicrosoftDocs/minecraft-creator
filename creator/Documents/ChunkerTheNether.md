@@ -40,21 +40,21 @@ Information on how to back up your worlds can be found on the [Mojang support we
 
 ## Load Chunker
 
-Navigate to https://chunker.app to open Chunker. No login is required, and sessions are fully anonymous.
+Open the Chunker app. If you don't have Chunker, see [Chunker - Overview](ChunkerOverview.md).
 
-## Upload your world
+## Choose your world
 
-As we're using Bedrock Edition on Windows 10, we're going to utilize the built-in "Export World" functionality. This can be found at the bottom of the "Edit World" screen. After exporting, you'll be given a `.mcworld` file that Chunker can understand.
+Since we're using Bedrock Edition on Windows 10, we're going to use the built-in **Export World** functionality. This can be found at the bottom of the **Edit World** screen. After exporting, you'll have a `.mcworld` file that Chunker can understand.
 
 ![Export world button](Media/Chunker/netherexportworld.png)
 
-In Chunker, click **Upload Archive**. Navigate to the file you exported and select it. Click **Start Upload** to upload your world to Chunker.
+In Chunker, click **Select Archive**. Navigate to the file you exported and select it. Click **Start** to load your world in Chunker.
 
 For more information on locating your world on other devices/editions, check out this article on the [Mojang support website](https://help.minecraft.net/hc/en-us/articles/360035131551-Where-are-Minecraft-files-stored-).
 
-## Choosing an export version
+## Choose an export version
 
-As we only want to modify our world, we'll select the version marked as "Source Version". Selecting an output different to the source will result in Chunker rebuilding the world.
+Because we only want to modify our world, select the version marked as **Source Version**. Selecting an output different to the source will cause Chunker to rebuild the world.
 
 ![Chunker export window](Media/Chunker/netherexportchunker.png)
 
@@ -74,11 +74,11 @@ Chunker Advanced Mode allows you to modify conversion settings. To tell Chunker 
 
 You can now click **Convert**, and Chunker will get to work on preparing your modified world. After a few moments a successful conversion screen should appear.
 
-## Download
+## Save
 
-![Chunker download window](Media/Chunker/netherdownload.png)
+![Chunker download window](Media/Chunker/nethersave.png)
 
-Click **Download** to download your newly converted world. Press Download to download your newly converted world. Your download link will be available for 30 minutes before it is purged from Chunker.
+Click **Save** to save your newly converted world.
 
 ## Import World
 

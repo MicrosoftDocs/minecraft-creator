@@ -175,6 +175,7 @@ Listed below are the available Damage Sources that can be used when working with
 | freezing|  |
 | lava|  |
 | lightning|  |
+| mace_smash|  |
 | magic|  |
 | magma|  |
 | none|  |

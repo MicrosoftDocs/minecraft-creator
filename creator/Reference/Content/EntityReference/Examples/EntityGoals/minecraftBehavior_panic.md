@@ -14,7 +14,7 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|damage_sources| all| List| The list of Entity Damage Sources that will cause this mob to panic: [campfire, fire, fire_tick, freezing, lava, lightning, magma, soul_campfire, temperature, entity_attack, entity_explosion, fireworks, magic, projectile, ram_attack, sonic_boom, wither] |
+|damage_sources| [campfire, fire, fire_tick, freezing, lava, lightning, magma, soul_campfire, temperature, entity_attack, entity_explosion, fireworks, magic, projectile, ram_attack, sonic_boom, wither, mace_smash]| List| The list of Entity Damage Sources that will cause this mob to panic. |
 |force| false| Boolean| If true, this mob will not stop panicking until it can't move anymore or the goal is removed from it. |
 |ignore_mob_damage| false| Boolean| If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in "damage_sources." |
 |panic_sound| *not set*| String| Sound to play when event occurs. |

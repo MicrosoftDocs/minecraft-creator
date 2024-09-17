@@ -650,22 +650,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:chalkboard:001|minecraft:chalkboard |1|minecraft:chalkboard ["direction" = 1]|
 |minecraft:chalkboard:002|minecraft:chalkboard |2|minecraft:chalkboard ["direction" = 2]|
 |minecraft:chalkboard:003|minecraft:chalkboard |3|minecraft:chalkboard ["direction" = 3]|
-|minecraft:chemistry_table:000|minecraft:chemistry_table |0|minecraft:chemistry_table ["chemistry_table_type" = "compound_creator", "direction" = 0]|
-|minecraft:chemistry_table:001|minecraft:chemistry_table |1|minecraft:chemistry_table ["chemistry_table_type" = "compound_creator", "direction" = 1]|
-|minecraft:chemistry_table:002|minecraft:chemistry_table |2|minecraft:chemistry_table ["chemistry_table_type" = "compound_creator", "direction" = 2]|
-|minecraft:chemistry_table:003|minecraft:chemistry_table |3|minecraft:chemistry_table ["chemistry_table_type" = "compound_creator", "direction" = 3]|
-|minecraft:chemistry_table:004|minecraft:chemistry_table |4|minecraft:chemistry_table ["chemistry_table_type" = "material_reducer", "direction" = 0]|
-|minecraft:chemistry_table:005|minecraft:chemistry_table |5|minecraft:chemistry_table ["chemistry_table_type" = "material_reducer", "direction" = 1]|
-|minecraft:chemistry_table:006|minecraft:chemistry_table |6|minecraft:chemistry_table ["chemistry_table_type" = "material_reducer", "direction" = 2]|
-|minecraft:chemistry_table:007|minecraft:chemistry_table |7|minecraft:chemistry_table ["chemistry_table_type" = "material_reducer", "direction" = 3]|
-|minecraft:chemistry_table:008|minecraft:chemistry_table |8|minecraft:chemistry_table ["chemistry_table_type" = "element_constructor", "direction" = 0]|
-|minecraft:chemistry_table:009|minecraft:chemistry_table |9|minecraft:chemistry_table ["chemistry_table_type" = "element_constructor", "direction" = 1]|
-|minecraft:chemistry_table:010|minecraft:chemistry_table |10|minecraft:chemistry_table ["chemistry_table_type" = "element_constructor", "direction" = 2]|
-|minecraft:chemistry_table:011|minecraft:chemistry_table |11|minecraft:chemistry_table ["chemistry_table_type" = "element_constructor", "direction" = 3]|
-|minecraft:chemistry_table:012|minecraft:chemistry_table |12|minecraft:chemistry_table ["chemistry_table_type" = "lab_table", "direction" = 0]|
-|minecraft:chemistry_table:013|minecraft:chemistry_table |13|minecraft:chemistry_table ["chemistry_table_type" = "lab_table", "direction" = 1]|
-|minecraft:chemistry_table:014|minecraft:chemistry_table |14|minecraft:chemistry_table ["chemistry_table_type" = "lab_table", "direction" = 2]|
-|minecraft:chemistry_table:015|minecraft:chemistry_table |15|minecraft:chemistry_table ["chemistry_table_type" = "lab_table", "direction" = 3]|
+|minecraft:chemistry_table:000|minecraft:chemistry_table |0|minecraft:ompound_creator ["direction" = 0]|
+|minecraft:chemistry_table:001|minecraft:chemistry_table |1|minecraft:compound_creator ["direction" = 1]|
+|minecraft:chemistry_table:002|minecraft:chemistry_table |2|minecraft:ompound_creator ["direction" = 2]|
+|minecraft:chemistry_table:003|minecraft:chemistry_table |3|minecraft:ompound_creator ["direction" = 3]|
+|minecraft:chemistry_table:004|minecraft:chemistry_table |4|minecraft:material_reducer ["direction" = 0]|
+|minecraft:chemistry_table:005|minecraft:chemistry_table |5|minecraft:material_reducer ["direction" = 1]|
+|minecraft:chemistry_table:006|minecraft:chemistry_table |6|minecraft:material_reducer ["direction" = 2]|
+|minecraft:chemistry_table:007|minecraft:chemistry_table |7|minecraft:material_reducer ["direction" = 3]|
+|minecraft:chemistry_table:008|minecraft:chemistry_table |8|minecraft:element_constructor ["direction" = 0]|
+|minecraft:chemistry_table:009|minecraft:chemistry_table |9|minecraft:element_constructor ["direction" = 1]|
+|minecraft:chemistry_table:010|minecraft:chemistry_table |10|minecraft:element_constructor ["direction" = 2]|
+|minecraft:chemistry_table:011|minecraft:chemistry_table |11|minecraft:[element_constructor "direction" = 3]|
+|minecraft:chemistry_table:012|minecraft:chemistry_table |12|minecraft:lab_table ["direction" = 0]|
+|minecraft:chemistry_table:013|minecraft:chemistry_table |13|minecraft:lab_table ["direction" = 1]|
+|minecraft:chemistry_table:014|minecraft:chemistry_table |14|minecraft:lab_table ["direction" = 2]|
+|minecraft:chemistry_table:015|minecraft:chemistry_table |15|minecraft:lab_table ["direction" = 3]|
 |minecraft:chest:000|minecraft:chest |0|minecraft:chest ["minecraft:cardinal_direction" = "north"]|
 |minecraft:chest:001|minecraft:chest |1|minecraft:chest ["minecraft:cardinal_direction" = "north"]|
 |minecraft:chest:002|minecraft:chest |2|minecraft:chest ["minecraft:cardinal_direction" = "north"]|
@@ -684,22 +684,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:chorus_flower:007|minecraft:chorus_flower |7|minecraft:chorus_flower ["age" = 7]|
 |minecraft:cobbled_deepslate_slab:000|minecraft:cobbled_deepslate_slab |0|minecraft:cobbled_deepslate_slab ["minecraft:vertical_half" = "bottom"]|
 |minecraft:cobbled_deepslate_slab:001|minecraft:cobbled_deepslate_slab |1|minecraft:cobbled_deepslate_slab ["minecraft:vertical_half" = "top"]|
-|minecraft:cobblestone_wall:000|minecraft:cobblestone_wall |0|minecraft:cobblestone_wall ["wall_block_type" = "cobblestone"]|
-|minecraft:cobblestone_wall:001|minecraft:cobblestone_wall |1|minecraft:cobblestone_wall ["wall_block_type" = "mossy_cobblestone"]|
-|minecraft:cobblestone_wall:002|minecraft:cobblestone_wall |2|minecraft:cobblestone_wall ["wall_block_type" = "granite"]|
-|minecraft:cobblestone_wall:003|minecraft:cobblestone_wall |3|minecraft:cobblestone_wall ["wall_block_type" = "diorite"]|
-|minecraft:cobblestone_wall:004|minecraft:cobblestone_wall |4|minecraft:cobblestone_wall ["wall_block_type" = "andesite"]|
-|minecraft:cobblestone_wall:005|minecraft:cobblestone_wall |5|minecraft:cobblestone_wall ["wall_block_type" = "sandstone"]|
-|minecraft:cobblestone_wall:006|minecraft:cobblestone_wall |6|minecraft:cobblestone_wall ["wall_block_type" = "brick"]|
-|minecraft:cobblestone_wall:007|minecraft:cobblestone_wall |7|minecraft:cobblestone_wall ["wall_block_type" = "stone_brick"]|
-|minecraft:cobblestone_wall:008|minecraft:cobblestone_wall |8|minecraft:cobblestone_wall ["wall_block_type" = "mossy_stone_brick"]|
-|minecraft:cobblestone_wall:009|minecraft:cobblestone_wall |9|minecraft:cobblestone_wall ["wall_block_type" = "nether_brick"]|
-|minecraft:cobblestone_wall:010|minecraft:cobblestone_wall |10|minecraft:cobblestone_wall ["wall_block_type" = "end_brick"]|
-|minecraft:cobblestone_wall:011|minecraft:cobblestone_wall |11|minecraft:cobblestone_wall ["wall_block_type" = "prismarine"]|
-|minecraft:cobblestone_wall:012|minecraft:cobblestone_wall |12|minecraft:cobblestone_wall ["wall_block_type" = "red_sandstone"]|
-|minecraft:cobblestone_wall:013|minecraft:cobblestone_wall |13|minecraft:cobblestone_wall ["wall_block_type" = "red_nether_brick"]|
-|minecraft:cobblestone_wall:014|minecraft:cobblestone_wall |14|minecraft:cobblestone_wall ["wall_block_type" = "cobblestone"]|
-|minecraft:cobblestone_wall:015|minecraft:cobblestone_wall |15|minecraft:cobblestone_wall ["wall_block_type" = "cobblestone"]|
+|minecraft:cobblestone_wall:000|minecraft:cobblestone_wall |0|minecraft:cobblestone_wall|
+|minecraft:cobblestone_wall:001|minecraft:cobblestone_wall |1|minecraft:mossy_cobblestone_wall|
+|minecraft:cobblestone_wall:002|minecraft:cobblestone_wall |2|minecraft:granite_wall|
+|minecraft:cobblestone_wall:003|minecraft:cobblestone_wall |3|minecraft:diorite_wall|
+|minecraft:cobblestone_wall:004|minecraft:cobblestone_wall |4|minecraft:andesite_wall|
+|minecraft:cobblestone_wall:005|minecraft:cobblestone_wall |5|minecraft:sandstone_wall|
+|minecraft:cobblestone_wall:006|minecraft:cobblestone_wall |6|minecraft:brick_wall|
+|minecraft:cobblestone_wall:007|minecraft:cobblestone_wall |7|minecraft:stone_brick_wall|
+|minecraft:cobblestone_wall:008|minecraft:cobblestone_wall |8|minecraft:mossy_stone_brick_wall|
+|minecraft:cobblestone_wall:009|minecraft:cobblestone_wall |9|minecraft:nether_brick_wall|
+|minecraft:cobblestone_wall:010|minecraft:cobblestone_wall |10|minecraft:end_brick_wall|
+|minecraft:cobblestone_wall:011|minecraft:cobblestone_wall |11|minecraft:prismarine_wall|
+|minecraft:cobblestone_wall:012|minecraft:cobblestone_wall |12|minecraft:red_sandstone_wall|
+|minecraft:cobblestone_wall:013|minecraft:cobblestone_wall |13|minecraft:red_nether_brick_wall|
+|minecraft:cobblestone_wall:014|minecraft:cobblestone_wall |14|minecraft:cobblestone_wall|
+|minecraft:cobblestone_wall:015|minecraft:cobblestone_wall |15|minecraft:cobblestone_wall|
 |minecraft:cocoa:000|minecraft:cocoa |0|minecraft:cocoa ["age" = 0, "direction" = 0]|
 |minecraft:cocoa:001|minecraft:cocoa |1|minecraft:cocoa ["age" = 0, "direction" = 1]|
 |minecraft:cocoa:002|minecraft:cocoa |2|minecraft:cocoa ["age" = 0, "direction" = 2]|
@@ -716,38 +716,38 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:cocoa:013|minecraft:cocoa |13|minecraft:cocoa ["age" = 3, "direction" = 1]|
 |minecraft:cocoa:014|minecraft:cocoa |14|minecraft:cocoa ["age" = 3, "direction" = 2]|
 |minecraft:cocoa:015|minecraft:cocoa |15|minecraft:cocoa ["age" = 3, "direction" = 3]|
-|minecraft:colored_torch_bp:000|minecraft:colored_torch_bp |0|minecraft:colored_torch_bp ["color_bit" = 0, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_bp:001|minecraft:colored_torch_bp |1|minecraft:colored_torch_bp ["color_bit" = 0, "torch_facing_direction" = "west"]|
-|minecraft:colored_torch_bp:002|minecraft:colored_torch_bp |2|minecraft:colored_torch_bp ["color_bit" = 0, "torch_facing_direction" = "east"]|
-|minecraft:colored_torch_bp:003|minecraft:colored_torch_bp |3|minecraft:colored_torch_bp ["color_bit" = 0, "torch_facing_direction" = "north"]|
-|minecraft:colored_torch_bp:004|minecraft:colored_torch_bp |4|minecraft:colored_torch_bp ["color_bit" = 0, "torch_facing_direction" = "south"]|
-|minecraft:colored_torch_bp:005|minecraft:colored_torch_bp |5|minecraft:colored_torch_bp ["color_bit" = 0, "torch_facing_direction" = "top"]|
-|minecraft:colored_torch_bp:006|minecraft:colored_torch_bp |6|minecraft:colored_torch_bp ["color_bit" = 0, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_bp:007|minecraft:colored_torch_bp |7|minecraft:colored_torch_bp ["color_bit" = 0, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_bp:008|minecraft:colored_torch_bp |8|minecraft:colored_torch_bp ["color_bit" = 1, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_bp:009|minecraft:colored_torch_bp |9|minecraft:colored_torch_bp ["color_bit" = 1, "torch_facing_direction" = "west"]|
-|minecraft:colored_torch_bp:010|minecraft:colored_torch_bp |10|minecraft:colored_torch_bp ["color_bit" = 1, "torch_facing_direction" = "east"]|
-|minecraft:colored_torch_bp:011|minecraft:colored_torch_bp |11|minecraft:colored_torch_bp ["color_bit" = 1, "torch_facing_direction" = "north"]|
-|minecraft:colored_torch_bp:012|minecraft:colored_torch_bp |12|minecraft:colored_torch_bp ["color_bit" = 1, "torch_facing_direction" = "south"]|
-|minecraft:colored_torch_bp:013|minecraft:colored_torch_bp |13|minecraft:colored_torch_bp ["color_bit" = 1, "torch_facing_direction" = "top"]|
-|minecraft:colored_torch_bp:014|minecraft:colored_torch_bp |14|minecraft:colored_torch_bp ["color_bit" = 1, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_bp:015|minecraft:colored_torch_bp |15|minecraft:colored_torch_bp ["color_bit" = 1, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_rg:000|minecraft:colored_torch_rg |0|minecraft:colored_torch_rg ["color_bit" = 0, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_rg:001|minecraft:colored_torch_rg |1|minecraft:colored_torch_rg ["color_bit" = 0, "torch_facing_direction" = "west"]|
-|minecraft:colored_torch_rg:002|minecraft:colored_torch_rg |2|minecraft:colored_torch_rg ["color_bit" = 0, "torch_facing_direction" = "east"]|
-|minecraft:colored_torch_rg:003|minecraft:colored_torch_rg |3|minecraft:colored_torch_rg ["color_bit" = 0, "torch_facing_direction" = "north"]|
-|minecraft:colored_torch_rg:004|minecraft:colored_torch_rg |4|minecraft:colored_torch_rg ["color_bit" = 0, "torch_facing_direction" = "south"]|
-|minecraft:colored_torch_rg:005|minecraft:colored_torch_rg |5|minecraft:colored_torch_rg ["color_bit" = 0, "torch_facing_direction" = "top"]|
-|minecraft:colored_torch_rg:006|minecraft:colored_torch_rg |6|minecraft:colored_torch_rg ["color_bit" = 0, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_rg:007|minecraft:colored_torch_rg |7|minecraft:colored_torch_rg ["color_bit" = 0, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_rg:008|minecraft:colored_torch_rg |8|minecraft:colored_torch_rg ["color_bit" = 1, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_rg:009|minecraft:colored_torch_rg |9|minecraft:colored_torch_rg ["color_bit" = 1, "torch_facing_direction" = "west"]|
-|minecraft:colored_torch_rg:010|minecraft:colored_torch_rg |10|minecraft:colored_torch_rg ["color_bit" = 1, "torch_facing_direction" = "east"]|
-|minecraft:colored_torch_rg:011|minecraft:colored_torch_rg |11|minecraft:colored_torch_rg ["color_bit" = 1, "torch_facing_direction" = "north"]|
-|minecraft:colored_torch_rg:012|minecraft:colored_torch_rg |12|minecraft:colored_torch_rg ["color_bit" = 1, "torch_facing_direction" = "south"]|
-|minecraft:colored_torch_rg:013|minecraft:colored_torch_rg |13|minecraft:colored_torch_rg ["color_bit" = 1, "torch_facing_direction" = "top"]|
-|minecraft:colored_torch_rg:014|minecraft:colored_torch_rg |14|minecraft:colored_torch_rg ["color_bit" = 1, "torch_facing_direction" = "unknown"]|
-|minecraft:colored_torch_rg:015|minecraft:colored_torch_rg |15|minecraft:colored_torch_rg ["color_bit" = 1, "torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_bp:000|minecraft:colored_torch_bp |0|minecraft:colored_torch_blue ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_bp:001|minecraft:colored_torch_bp |1|minecraft:colored_torch_blue ["torch_facing_direction" = "west"]|
+|minecraft:colored_torch_bp:002|minecraft:colored_torch_bp |2|minecraft:colored_torch_blue ["torch_facing_direction" = "east"]|
+|minecraft:colored_torch_bp:003|minecraft:colored_torch_bp |3|minecraft:colored_torch_blue ["torch_facing_direction" = "north"]|
+|minecraft:colored_torch_bp:004|minecraft:colored_torch_bp |4|minecraft:colored_torch_blue ["torch_facing_direction" = "south"]|
+|minecraft:colored_torch_bp:005|minecraft:colored_torch_bp |5|minecraft:colored_torch_blue ["torch_facing_direction" = "top"]|
+|minecraft:colored_torch_bp:006|minecraft:colored_torch_bp |6|minecraft:colored_torch_blue ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_bp:007|minecraft:colored_torch_bp |7|minecraft:colored_torch_blue ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_bp:008|minecraft:colored_torch_bp |8|minecraft:colored_torch_purple ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_bp:009|minecraft:colored_torch_bp |9|minecraft:colored_torch_purple ["torch_facing_direction" = "west"]|
+|minecraft:colored_torch_bp:010|minecraft:colored_torch_bp |10|minecraft:colored_torch_purple ["torch_facing_direction" = "east"]|
+|minecraft:colored_torch_bp:011|minecraft:colored_torch_bp |11|minecraft:colored_torch_purple ["torch_facing_direction" = "north"]|
+|minecraft:colored_torch_bp:012|minecraft:colored_torch_bp |12|minecraft:colored_torch_purple ["torch_facing_direction" = "south"]|
+|minecraft:colored_torch_bp:013|minecraft:colored_torch_bp |13|minecraft:colored_torch_purple ["torch_facing_direction" = "top"]|
+|minecraft:colored_torch_bp:014|minecraft:colored_torch_bp |14|minecraft:colored_torch_purple ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_bp:015|minecraft:colored_torch_bp |15|minecraft:colored_torch_purple ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_rg:000|minecraft:colored_torch_rg |0|minecraft:colored_torch_red ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_rg:001|minecraft:colored_torch_rg |1|minecraft:colored_torch_red ["torch_facing_direction" = "west"]|
+|minecraft:colored_torch_rg:002|minecraft:colored_torch_rg |2|minecraft:colored_torch_red ["torch_facing_direction" = "east"]|
+|minecraft:colored_torch_rg:003|minecraft:colored_torch_rg |3|minecraft:colored_torch_red ["torch_facing_direction" = "north"]|
+|minecraft:colored_torch_rg:004|minecraft:colored_torch_rg |4|minecraft:colored_torch_red ["torch_facing_direction" = "south"]|
+|minecraft:colored_torch_rg:005|minecraft:colored_torch_rg |5|minecraft:colored_torch_red ["torch_facing_direction" = "top"]|
+|minecraft:colored_torch_rg:006|minecraft:colored_torch_rg |6|minecraft:colored_torch_red ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_rg:007|minecraft:colored_torch_rg |7|minecraft:colored_torch_red ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_rg:008|minecraft:colored_torch_rg |8|minecraft:colored_torch_green ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_rg:009|minecraft:colored_torch_rg |9|minecraft:colored_torch_green ["torch_facing_direction" = "west"]|
+|minecraft:colored_torch_rg:010|minecraft:colored_torch_rg |10|minecraft:colored_torch_green ["torch_facing_direction" = "east"]|
+|minecraft:colored_torch_rg:011|minecraft:colored_torch_rg |11|minecraft:colored_torch_green ["torch_facing_direction" = "north"]|
+|minecraft:colored_torch_rg:012|minecraft:colored_torch_rg |12|minecraft:colored_torch_green ["torch_facing_direction" = "south"]|
+|minecraft:colored_torch_rg:013|minecraft:colored_torch_rg |13|minecraft:colored_torch_green ["torch_facing_direction" = "top"]|
+|minecraft:colored_torch_rg:014|minecraft:colored_torch_rg |14|minecraft:colored_torch_green ["torch_facing_direction" = "unknown"]|
+|minecraft:colored_torch_rg:015|minecraft:colored_torch_rg |15|minecraft:colored_torch_green ["torch_facing_direction" = "unknown"]|
 |minecraft:command_block:000|minecraft:command_block |0|minecraft:command_block ["conditional_bit" = 0, "facing_direction" = 0]|
 |minecraft:command_block:001|minecraft:command_block |1|minecraft:command_block ["conditional_bit" = 0, "facing_direction" = 1]|
 |minecraft:command_block:002|minecraft:command_block |2|minecraft:command_block ["conditional_bit" = 0, "facing_direction" = 2]|
@@ -2661,22 +2661,22 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:purple_glazed_terracotta:005|minecraft:purple_glazed_terracotta |5|minecraft:purple_glazed_terracotta ["facing_direction" = 5]|
 |minecraft:purple_glazed_terracotta:006|minecraft:purple_glazed_terracotta |6|minecraft:purple_glazed_terracotta ["facing_direction" = 0]|
 |minecraft:purple_glazed_terracotta:007|minecraft:purple_glazed_terracotta |7|minecraft:purple_glazed_terracotta ["facing_direction" = 0]|
-|minecraft:purpur_block:000|minecraft:purpur_block |0|minecraft:purpur_block ["chisel_type" = "default", "pillar_axis" = "y"]|
-|minecraft:purpur_block:001|minecraft:purpur_block |1|minecraft:purpur_block ["chisel_type" = "chiseled", "pillar_axis" = "y"]|
-|minecraft:purpur_block:002|minecraft:purpur_block |2|minecraft:purpur_block ["chisel_type" = "lines", "pillar_axis" = "y"]|
-|minecraft:purpur_block:003|minecraft:purpur_block |3|minecraft:purpur_block ["chisel_type" = "smooth", "pillar_axis" = "y"]|
-|minecraft:purpur_block:004|minecraft:purpur_block |4|minecraft:purpur_block ["chisel_type" = "default", "pillar_axis" = "x"]|
-|minecraft:purpur_block:005|minecraft:purpur_block |5|minecraft:purpur_block ["chisel_type" = "chiseled", "pillar_axis" = "x"]|
-|minecraft:purpur_block:006|minecraft:purpur_block |6|minecraft:purpur_block ["chisel_type" = "lines", "pillar_axis" = "x"]|
-|minecraft:purpur_block:007|minecraft:purpur_block |7|minecraft:purpur_block ["chisel_type" = "smooth", "pillar_axis" = "x"]|
-|minecraft:purpur_block:008|minecraft:purpur_block |8|minecraft:purpur_block ["chisel_type" = "default", "pillar_axis" = "z"]|
-|minecraft:purpur_block:009|minecraft:purpur_block |9|minecraft:purpur_block ["chisel_type" = "chiseled", "pillar_axis" = "z"]|
-|minecraft:purpur_block:010|minecraft:purpur_block |10|minecraft:purpur_block ["chisel_type" = "lines", "pillar_axis" = "z"]|
-|minecraft:purpur_block:011|minecraft:purpur_block |11|minecraft:purpur_block ["chisel_type" = "smooth", "pillar_axis" = "z"]|
-|minecraft:purpur_block:012|minecraft:purpur_block |12|minecraft:purpur_block ["chisel_type" = "default", "pillar_axis" = "y"]|
-|minecraft:purpur_block:013|minecraft:purpur_block |13|minecraft:purpur_block ["chisel_type" = "chiseled", "pillar_axis" = "y"]|
-|minecraft:purpur_block:014|minecraft:purpur_block |14|minecraft:purpur_block ["chisel_type" = "lines", "pillar_axis" = "y"]|
-|minecraft:purpur_block:015|minecraft:purpur_block |15|minecraft:purpur_block ["chisel_type" = "smooth", "pillar_axis" = "y"]|
+|minecraft:purpur_block:000|minecraft:purpur_block |0|minecraft:purpur_block ["pillar_axis" = "y"]|
+|minecraft:purpur_block:001|minecraft:purpur_block |1|minecraft:deprecated_purpur_block_1 ["pillar_axis" = "y"]|
+|minecraft:purpur_block:002|minecraft:purpur_block |2|minecraft:purpur_pillar ["pillar_axis" = "y"]|
+|minecraft:purpur_block:003|minecraft:purpur_block |3|minecraft:deprecated_purpur_block_2 ["pillar_axis" = "y"]|
+|minecraft:purpur_block:004|minecraft:purpur_block |4|minecraft:purpur_block ["pillar_axis" = "x"]|
+|minecraft:purpur_block:005|minecraft:purpur_block |5|minecraft:deprecated_purpur_block_1 ["pillar_axis" = "x"]|
+|minecraft:purpur_block:006|minecraft:purpur_block |6|minecraft:purpur_pillar ["pillar_axis" = "x"]|
+|minecraft:purpur_block:007|minecraft:purpur_block |7|minecraft:deprecated_purpur_block_2 ["pillar_axis"" = "x"]|
+|minecraft:purpur_block:008|minecraft:purpur_block |8|minecraft:purpur_block ["pillar_axis" = "z"]|
+|minecraft:purpur_block:009|minecraft:purpur_block |9|minecraft:deprecated_purpur_block_1 ["pillar_axis" = "z"]|
+|minecraft:purpur_block:010|minecraft:purpur_block |10|minecraft:purpur_pillar ["pillar_axis" = "z"]|
+|minecraft:purpur_block:011|minecraft:purpur_block |11|minecraft:deprecated_purpur_block_2 ["pillar_axis" = "z"]|
+|minecraft:purpur_block:012|minecraft:purpur_block |12|minecraft:purpur_block ["pillar_axis" = "y"]|
+|minecraft:purpur_block:013|minecraft:purpur_block |13|minecraft:deprecated_purpur_block_1 ["pillar_axis" = "y"]|
+|minecraft:purpur_block:014|minecraft:purpur_block |14|minecraft:purpur_pillar ["pillar_axis" = "y"]|
+|minecraft:purpur_block:015|minecraft:purpur_block |15|minecraft:deprecated_purpur_block_2 ["pillar_axis" = "y"]|
 |minecraft:purpur_stairs:000|minecraft:purpur_stairs |0|minecraft:purpur_stairs ["upside_down_bit" = 0, "weirdo_direction" = 0]|
 |minecraft:purpur_stairs:001|minecraft:purpur_stairs |1|minecraft:purpur_stairs ["upside_down_bit" = 0, "weirdo_direction" = 1]|
 |minecraft:purpur_stairs:002|minecraft:purpur_stairs |2|minecraft:purpur_stairs ["upside_down_bit" = 0, "weirdo_direction" = 2]|
@@ -3012,8 +3012,8 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:soul_fire:015|minecraft:soul_fire |15|minecraft:soul_fire ["age" = 15]|
 |minecraft:soul_lantern:000|minecraft:soul_lantern |0|minecraft:soul_lantern ["hanging" = 0]|
 |minecraft:soul_lantern:001|minecraft:soul_lantern |1|minecraft:soul_lantern ["hanging" = 1]|
-|minecraft:sponge:000|minecraft:sponge |0|minecraft:sponge ["sponge_type" = "dry"]|
-|minecraft:sponge:001|minecraft:sponge |1|minecraft:sponge ["sponge_type" = "wet"]|
+|minecraft:sponge:000|minecraft:sponge |0|minecraft:sponge|
+|minecraft:sponge:001|minecraft:sponge |1|minecraft:wet_sponge|
 |minecraft:spruce_button:000|minecraft:spruce_button |0|minecraft:spruce_button ["button_pressed_bit" = 0, "facing_direction" = 0]|
 |minecraft:spruce_button:001|minecraft:spruce_button |1|minecraft:spruce_button ["button_pressed_bit" = 0, "facing_direction" = 1]|
 |minecraft:spruce_button:002|minecraft:spruce_button |2|minecraft:spruce_button ["button_pressed_bit" = 0, "facing_direction" = 2]|
@@ -3424,8 +3424,8 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:structure_block:005|minecraft:structure_block |5|minecraft:structure_block ["structure_block_type" = "export"]|
 |minecraft:structure_block:006|minecraft:structure_block |6|minecraft:structure_block ["structure_block_type" = "data"]|
 |minecraft:structure_block:007|minecraft:structure_block |7|minecraft:structure_block ["structure_block_type" = "data"]|
-|minecraft:structure_void:000|minecraft:structure_void |0|minecraft:structure_void ["structure_void_type" = "void"]|
-|minecraft:structure_void:001|minecraft:structure_void |1|minecraft:structure_void ["structure_void_type" = "air"]|
+|minecraft:structure_void:000|minecraft:structure_void |0|minecraft:structure_void|
+|minecraft:structure_void:001|minecraft:structure_void |1|minecraft:structure_void|
 |minecraft:sweet_berry_bush:000|minecraft:sweet_berry_bush |0|minecraft:sweet_berry_bush ["growth" = 0]|
 |minecraft:sweet_berry_bush:001|minecraft:sweet_berry_bush |1|minecraft:sweet_berry_bush ["growth" = 1]|
 |minecraft:sweet_berry_bush:002|minecraft:sweet_berry_bush |2|minecraft:sweet_berry_bush ["growth" = 2]|
@@ -3434,14 +3434,14 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:sweet_berry_bush:005|minecraft:sweet_berry_bush |5|minecraft:sweet_berry_bush ["growth" = 5]|
 |minecraft:sweet_berry_bush:006|minecraft:sweet_berry_bush |6|minecraft:sweet_berry_bush ["growth" = 6]|
 |minecraft:sweet_berry_bush:007|minecraft:sweet_berry_bush |7|minecraft:sweet_berry_bush ["growth" = 7]|
-|minecraft:tallgrass:000|minecraft:tallgrass |0|minecraft:short_grass|
-|minecraft:tallgrass:001|minecraft:tallgrass |1|minecraft:short_grass|
-|minecraft:tallgrass:002|minecraft:tallgrass |2|minecraft:fern|
-|minecraft:tallgrass:003|minecraft:tallgrass |3|minecraft:fern|
-|minecraft:tnt:000|minecraft:tnt |0|minecraft:tnt ["allow_underwater_bit" = 0, "explode_bit" = 0]|
-|minecraft:tnt:001|minecraft:tnt |1|minecraft:tnt ["allow_underwater_bit" = 0, "explode_bit" = 1]|
-|minecraft:tnt:002|minecraft:tnt |2|minecraft:tnt ["allow_underwater_bit" = 1, "explode_bit" = 0]|
-|minecraft:tnt:003|minecraft:tnt |3|minecraft:tnt ["allow_underwater_bit" = 1, "explode_bit" = 1]|
+|minecraft:tallgrass:000|minecraft:tallgrass |0|minecraft:tallgrass ["tall_grass_type" = "default"]|
+|minecraft:tallgrass:001|minecraft:tallgrass |1|minecraft:tallgrass ["tall_grass_type" = "tall"]|
+|minecraft:tallgrass:002|minecraft:tallgrass |2|minecraft:tallgrass ["tall_grass_type" = "fern"]|
+|minecraft:tallgrass:003|minecraft:tallgrass |3|minecraft:tallgrass ["tall_grass_type" = "snow"]|
+|minecraft:tnt:000|minecraft:tnt |0|minecraft:tnt "explode_bit" = 0]|
+|minecraft:tnt:001|minecraft:tnt |1|minecraft:tnt ["explode_bit" = 1]|
+|minecraft:tnt:002|minecraft:tnt |2|minecraft:underwater_tnt ["explode_bit" = 0]|
+|minecraft:tnt:003|minecraft:tnt |3|minecraft:underwater_tnt ["explode_bit" = 1]|
 |minecraft:torch:000|minecraft:torch |0|minecraft:torch ["torch_facing_direction" = "unknown"]|
 |minecraft:torch:001|minecraft:torch |1|minecraft:torch ["torch_facing_direction" = "west"]|
 |minecraft:torch:002|minecraft:torch |2|minecraft:torch ["torch_facing_direction" = "east"]|
