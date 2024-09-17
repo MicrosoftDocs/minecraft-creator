@@ -14,33 +14,33 @@ This page describes how to customize atmospherics effects.
 
 ## Atmospherics JSON Schema
 
-> NOTE: As of version `1.21.40.30+`, the JSON files for atmospheric scattering have been relocated to the `atmospherics` directory.
+> NOTE: As of version `1.21.40.22`, the JSON files for atmospheric scattering have been relocated to the `atmospherics` directory.
 
 File location: atmospherics/atmospherics.json
 
 ```json
 {
-    object "minecraft:atmosphere_settings"
+  object "minecraft:atmosphere_settings"
+  {
+    string "format_version", // The 3-part schema version for parsing these atmosphere settings.
+    object "description"
     {
-        string "format_version", // The 3-part schema version for parsing these atmosphere settings.
-        object "description"
-        {
-            string "identifier" // The identifier for these atmosphere settings. The identifier must include a namespace.
-        },
-        object "horizon_blend_stops" // How the atmosphere is divided up
-        {
-            float "min" : optkeyframe, // The minimum horizon height
-            float "start" : optkeyframe, // The height relative to the horizon where the zenith contribution will take over
-            float "mie_start" : optkeyframe, // The height relative to the horizon where mie scattering begins
-            float "max" : optkeyframe // The maximum horizon height
-        }
-        float "rayleigh_strength" : optkeyframe, // How strong the atmosphere's rayleigh scattering term is
-        float "sun_mie_strength" : optkeyframe, // How strong the sun's mie scattering term is
-        float "moon_mie_strength" : optkeyframe, // How strong the moon's mie scattering term is
-        float "sun_glare_shape" : optkeyframe, // How the lobe of the mie scattering is shaped
-        color "sky_zenith_color" : optkeyframe, // The RGB color of the zenith region of the atmosphere; supports RGB array or HEX string
-        color "sky_horizon_color" : optkeyframe // The RGB color of the horizon region of the atmosphere; supports RGB array or HEX string
+      string "identifier" // The identifier for these atmosphere settings. The identifier must include a namespace.
+    },
+    object "horizon_blend_stops" // How the atmosphere is divided up
+    {
+      float "min" : optkeyframe, // The minimum horizon height
+      float "start" : optkeyframe, // The height relative to the horizon where the zenith contribution will take over
+      float "mie_start" : optkeyframe, // The height relative to the horizon where mie scattering begins
+      float "max" : optkeyframe // The maximum horizon height
     }
+    float "rayleigh_strength" : optkeyframe, // How strong the atmosphere's rayleigh scattering term is
+    float "sun_mie_strength" : optkeyframe, // How strong the sun's mie scattering term is
+    float "moon_mie_strength" : optkeyframe, // How strong the moon's mie scattering term is
+    float "sun_glare_shape" : optkeyframe, // How the lobe of the mie scattering is shaped
+    color "sky_zenith_color" : optkeyframe, // The RGB color of the zenith region of the atmosphere; supports RGB array or HEX string
+    color "sky_horizon_color" : optkeyframe // The RGB color of the horizon region of the atmosphere; supports RGB array or HEX string
+  }
 }
 ```
 
