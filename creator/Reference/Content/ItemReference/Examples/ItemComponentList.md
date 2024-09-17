@@ -20,6 +20,7 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:damage](ItemComponents/minecraft_damage.md)|*not set* | JSON Object| Determines how much extra damage the item does on attack.|
 |[minecraft:display_name](ItemComponents/minecraft_display_name.md)|*not set* | JSON Object| Defines the text shown when an item name is shown, such as hover text.|
 |[minecraft:durability](ItemComponents/minecraft_durability.md)|*not set* |JSON Object| Determines how much damage the item can take before breaking, and allows the item to be combined in crafting.|
+|[minecraft:dyeable](ItemComponents/minecraft_dyeable.md)|*not set* | JSON Object|  The dyeable item component enables custom items to be dyed in cauldrons. |
 |[minecraft:enchantable](ItemComponents/minecraft_enchantable.md)|*not set* |JSON Object| Determines what enchantments can be applied to the item. Not all enchantments will have an effect on all item components.|
 |[minecraft:entity_placer](ItemComponents/minecraft_entity_placer.md)|*not set* | JSON Object|  Allows the item to place specified entities into the world.|
 |[minecraft:food](ItemComponents/minecraft_food.md)|*not set* | JSON Object|  When an item has a food component, it becomes edible to the player. Must have the `minecraft:use_modifiers` component in order to function properly.|
@@ -33,6 +34,7 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:liquid_clipped](ItemComponents/minecraft_liquid_clipped.md)|*not set* | JSON Object| Determines whether an item interacts with liquid blocks on use.|
 |[minecraft:max_stack_size](ItemComponents/minecraft_max_stack_size.md)|*not set* | JSON Object| Determines how many of the item can be stacked.|
 |[minecraft:projectile](ItemComponents/minecraft_projectile.md)|*not set* | JSON Object| Projectile item component. Projectile items shoot out, like an arrow.|
+|[minecraft:rarity](ItemComponents/minecraft_rarity.md)|*not set* | String|  The rarity item component allows the specifying of the base rarity of an item. |
 |[minecraft:record](ItemComponents/minecraft_record.md)|*not set* | JSON Object|  The record item component allows the item to play a sound when used in a jukebox. |
 |[minecraft:repairable](ItemComponents/minecraft_repairable.md)|*not set* | JSON Object|  Repairable item component: Determines which items can be used to repair a defined item, as well as the amount of durability specified items will repair.|
 |[minecraft:shooter](ItemComponents/minecraft_shooter.md)|*not set* | JSON Object|  Shooter Item Component. Must have the `minecraft:use_modifiers` component in order to function properly.|
