@@ -20,4 +20,54 @@ ms.service: minecraft-bedrock-edition
 
 ## Example
 
-
+```json
+{ 
+"format_version": "1.21.30", 
+  "minecraft:item": { 
+    "description": { 
+      "identifier": "demo:custom_chestplate", 
+      "menu_category": { 
+        "category": "equipment", 
+        "group": "itemGroup.name.chestplate" 
+      }
+    },
+    "components": { 
+      "minecraft:max_stack_size": 1, 
+      "minecraft:icon": {
+        "textures": {
+          "default": "custom_chestplate_icon",
+          "dyed": "custom_chestplate_icon_gray"
+        }
+      },
+      "minecraft:wearable": {
+        "protection": 10, 
+        "slot": "slot.armor.chest" 
+      }, 
+      "minecraft:durability": { 
+        "damage_chance": { 
+          "min": 10, 
+          "max": 50 
+      }, 
+        "max_durability": 1560 
+      }, 
+      "minecraft:repairable": { 
+        "repair_items": [ 
+          { 
+            "items": ["pink_dye"], 
+            "repair_amount": 390 
+          } 
+        ] 
+      }, 
+      "minecraft:tags": { 
+        "tags": [ 
+          "minecraft:is_armor", 
+          "minecraft:trimmable_armors" 
+        ] 
+      },
+      "minecraft:dyeable": {
+        "default_color":  "#175882"
+      }
+    } 
+  } 
+}
+```

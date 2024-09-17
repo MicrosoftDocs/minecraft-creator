@@ -766,9 +766,9 @@ Start by creating a copy of your Custom Chestplate with Vanilla Armor Trim add-o
 
 ## Dyable Custom Chestplate Behavior Pack
 
-**Chestplate Behavior Pack/items/custom_chestplate.item.json**
+**Chestplate Behavior Pack/textures/item_texture.json**
 
-Inside the behavior pack, open custom_chestplate.item.json and do this:
+Inside the behavior pack, open **textures/item_texture.json** and do this:
 
 1. Edit the format version to be **1.21.30**.
 
@@ -791,7 +791,7 @@ Inside the behavior pack, open custom_chestplate.item.json and do this:
 }
 ```
 
-... So that the final version of **custom_chestplate.item.json** looks like this:
+... So that the final version of **item_texture.json** looks like this:
 
 ```json
 { 
@@ -884,28 +884,31 @@ You edit **Pack/attachables/custom_chestplate.attachable.json** like this...
 ```
 
 3. Edit materials to be:
-```
-      "materials": {
-        "default": "armor",
-        "dyed": "entity_alphatest_change_color"
-      },
+
+```json
+"materials": {
+  "default": "armor",
+  "dyed": "entity_alphatest_change_color"
+},
 ```
 
 4. Edit textures to be:
-```
-      "textures": {
-        "default": "textures/items/custom_chestplate.png",
-        "dyed": "textures/items/custom_chestplate_grayscale.tga"
-      },
+
+```json
+"textures": {
+  "default": "textures/items/custom_chestplate.png",
+  "dyed": "textures/items/custom_chestplate_grayscale.tga"
+},
 ```
 
 5. Add scripts:
-```
-      "scripts": {
-        "pre_animation": [
-          "variable.is_dyed = query.armor_color_slot(1, 0) != 0.0 || query.armor_color_slot(1, 1) != 0.0 || query.armor_color_slot(1, 2) != 0.0 || query.armor_color_slot(1, 3) != 0.0;"
-        ]
-      }
+
+```json
+"scripts": {
+  "pre_animation": [
+    "variable.is_dyed = query.armor_color_slot(1, 0) != 0.0 || query.armor_color_slot(1, 1) != 0.0 || query.armor_color_slot(1, 2) != 0.0 || query.armor_color_slot(1, 3) != 0.0;"
+  ]
+}
 ```
 
 So that the final version of **custom_chestplate.attachable.json** looks like this:
@@ -968,14 +971,8 @@ So that the final version of **custom_chestplate.attachable.json** looks like th
     "custom_chestplate": {
       "textures": "textures/items/custom_chestplate.png"
     },
-    "custom_chestplate_icon": {
-      "textures": "textures/items/custom_chestplate_ico.png"
-    },
     "custom_chestplate_icon_gray": {
       "textures": "textures/items/custom_chestplate_icon_grayscale.tga"
-    },
-    "custom_chestplate_gray": {
-      "textures": "textures/items/custom_chestplate_grayscale_fixed.tga"
     }
   }
 }
