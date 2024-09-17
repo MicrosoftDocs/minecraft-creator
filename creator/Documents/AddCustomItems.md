@@ -845,12 +845,11 @@ Inside the behavior pack, open **textures/item_texture.json** and do this:
 }
 ```
 
-If you do not want a default color you can leave the "default_color" off and the texture will be the same as if you did not 
-have the component until it is dyed.
+If you do not want a default color you can leave the "default_color" off and the texture will be the same as if you did not have the component until it is dyed.
 
 For the icon to be dyed correctly. you need to provide a grayscale .tga version of your icon image. To do this, make a copy of the .png file, change the extension to .tga, and then change the configuration to grayscale.
 
-Hint: You can use the icon graphics from the previous section: [**Chestplate Resource Pack/textures/items**](/creator/Documents/AddCustomItems.md#chestplate-resource-packtexturesitems).
+Hint: You can use the icon graphics from the previous section.
 
 **Dyeable Custom Chestplate Resource Pack:**
 
@@ -981,7 +980,7 @@ After you have edited and saved all of the files, you should be able to dye your
 
 ![Image of a dyable chestplate that has been dyed blue.](Media/AddCustomItems/dyeable_dyed_chestplate.png)
 
-To learn more about the dyeable item component, take a look at the [`minecraft:dyeable` reference page](/creator/Reference/Content/ItemReference/Examples/ItemComponents/minecraft_dyeable.md).
+To learn more about the dyeable item component, take a look at the [`minecraft:dyeable` reference page](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_dyeable.md).
 
 ## Next Steps
 

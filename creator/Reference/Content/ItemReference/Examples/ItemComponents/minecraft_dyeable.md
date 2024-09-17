@@ -14,8 +14,8 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|default_color|*not set* | String | ... |
-|dyed |*not set* | String | ...|
+| default_color|*not set* | String | ... |
+| dyed |*not set* | String | ...|
 
 
 ## Example
