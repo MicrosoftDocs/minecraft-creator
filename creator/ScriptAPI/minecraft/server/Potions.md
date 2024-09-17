@@ -28,6 +28,8 @@ Retrieves a type handle for a specified potion effect id.
 
 #### **Parameters**
 - **potionEffectId**: *string*
+  
+  A valid potion effect id. See @minecraft/vanilla-data.MinecraftPotionEffectTypes
 
 **Returns** [*PotionEffectType*](PotionEffectType.md) | *undefined* - A type handle wrapping the valid effect id, or undefined for an invalid effect id.
 

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockExplodeAfterEventSignal Class
 description: Contents of the @minecraft/server.BlockExplodeAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockExplodeAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to when an explosion occurs, as it impacts individual blocks.
 
@@ -29,9 +25,9 @@ Adds a callback that will be called when an explosion occurs, as it impacts indi
 - **callback**: (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
 
 **Returns** (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -42,6 +38,6 @@ Removes a callback from being called when an explosion occurs, as it impacts ind
 
 #### **Parameters**
 - **callback**: (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

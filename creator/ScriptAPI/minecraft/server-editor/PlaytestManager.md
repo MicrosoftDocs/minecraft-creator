@@ -14,19 +14,17 @@ description: Contents of the @minecraft/server-editor.PlaytestManager class.
 
 ### **beginPlaytest**
 `
-beginPlaytest(options: PlaytestGameOptions): Promise<PlaytestSessionResult>
+beginPlaytest(options: GameOptions): Promise<PlaytestSessionResult>
 `
 
 #### **Parameters**
-- **options**: [*PlaytestGameOptions*](PlaytestGameOptions.md)
+- **options**: [*GameOptions*](GameOptions.md)
 
 **Returns** Promise&lt;[*PlaytestSessionResult*](PlaytestSessionResult.md)&gt;
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **getPlaytestSessionAvailability**
 `
@@ -34,9 +32,7 @@ getPlaytestSessionAvailability(): PlaytestSessionResult
 `
 
 **Returns** [*PlaytestSessionResult*](PlaytestSessionResult.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

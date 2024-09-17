@@ -30,7 +30,6 @@ AI Goal Component |Description
 [minecraft:behavior.defend_village_target](EntityGoals/minecraftBehavior_defend_village_target.md)|`minecraft:behavior.defend_village_target` compels the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village, this goal will cause the entity to attack the player regardless of filter conditions.
 [minecraft:behavior.delayed_attack](EntityGoals/minecraftBehavior_delayed_attack.md)|`minecraft:behavior.delayed_attack` compels the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village, this goal will cause the entity to attack the player regardless of filter conditions.
 [minecraft:behavior.dig](EntityGoals/minecraftBehavior_dig.md)|`minecraft:behavior.dig` activates the "DIGGING" entity flag during the specified duration. Currently only Warden can use the dig goal.
-[minecraft:behavior.drink_milk](EntityGoals/minecraftBehavior_drink_milk.md)|`minecraft:behavior.drink_milk` compels the mob to drink milk based on specified environment conditions.
 [minecraft:behavior.door_interact](EntityGoals/minecraftBehavior_door_interact.md)|`minecraft:behavior.door_interact` allows an entity to interact with doors.
 [minecraft:behavior.dragonchargeplayer](EntityGoals/minecraftBehavior_dragonchargeplayer.md)|`minecraft:behavior.dragonchargeplayer`  compels this entity to attack a player by charging at them. The player is chosen by the `minecraft:behavior.dragonscanning`. Can only be used by the Ender Dragon.
 [minecraft:behavior.dragondeath](EntityGoals/minecraftBehavior_dragondeath.md)|`minecraft:behavior.dragondeath` controls the entity's death state and animation.
@@ -40,6 +39,7 @@ AI Goal Component |Description
 [minecraft:behavior.dragonscanning](EntityGoals/minecraftBehavior_dragonscanning.md)|`minecraft:behavior.dragonscanning` compels an entity to look around for a player to attack while in perch mode.
 [minecraft:behavior.dragonstrafeplayer](EntityGoals/minecraftBehavior_dragonstrafeplayer.md)|`minecraft:behavior.dragonstrafeplayer` compels this entity to fly around looking for a player to shoot fireballs at. Can only be used by the Ender Dragon.
 [minecraft:behavior.dragontakeoff](EntityGoals/minecraftBehavior_dragontakeoff.md)|`minecraft:behavior.dragontakeoff` compels an entity to leave perch mode and go back to flying around.
+[minecraft:behavior.drink_milk](EntityGoals/minecraftBehavior_drink_milk.md)|`minecraft:behavior.drink_milk` compels the mob to drink milk based on specified environment conditions.
 [minecraft:behavior.drink_potion](EntityGoals/minecraftBehavior_drink_potion.md)|`minecraft:behavior.drink_potion` compels an entity to drink a potion as a reaction to an event or when set conditions are met.
 [minecraft:behavior.drop_item_for](EntityGoals/minecraftBehavior_drop_item_for.md)|`minecraft:behavior.drop_item_for` compels the entity to move toward a target, and drop an item near the target. This goal requires a `minecraft:navigation` to execute.
 [minecraft:behavior.eat_block](EntityGoals/minecraftBehavior_eat_block.md)|`minecraft:behavior.eat_block` compels the entity to consume a block, replace the eaten block with another block, and trigger an event as a result.
@@ -108,7 +108,6 @@ AI Goal Component |Description
 [minecraft:behavior.owner_hurt_by_target](EntityGoals/minecraftBehavior_owner_hurt_by_target.md)|`minecraft:behavior.owner_hurt_by_target` compels an entity to react when the owner is hit by a target.
 [minecraft:behavior.owner_hurt_target](EntityGoals/minecraftBehavior_owner_hurt_target.md)|`minecraft:behavior.owner_hurt_target` compels an entity to react when the owner hits a target.
 [minecraft:behavior.panic](EntityGoals/minecraftBehavior_panic.md)|`minecraft:behavior.panic` compels an entity to react when it receives damage.
-[minecraft:behavior.peek](EntityGoals/minecraftBehavior_peek.md)|`minecraft:behavior.peek` compels an entity to peek out.
 [minecraft:behavior.pet_sleep_with_owner](EntityGoals/minecraftBehavior_pet_sleep_with_owner.md)|`minecraft:behavior.pet_sleep_with_owner` compels an entity to sleep on a bed shared with its' owner.
 [minecraft:behavior.pickup_items](EntityGoals/minecraftBehavior_pickup_items.md)|`minecraft:behavior.pickup_items` compels an entity to pick up selected items off the ground.
 [minecraft:behavior.play](EntityGoals/minecraftBehavior_play.md)|`minecraft:behavior.play` compels an entity to play with entities that have been tagged as `baby`.
@@ -161,12 +160,17 @@ AI Goal Component |Description
 [minecraft:behavior.summon_entity](EntityGoals/minecraftBehavior_summon_entity.md)|`minecraft:behavior.summon_entity` compels an entity to attack other entities by summoning new entities.
 [minecraft:behavior.swell](EntityGoals/minecraftBehavior_swell.md)|`minecraft:behavior.swell` compels an entity to grow in size when approached, and scale down back to normal after a certain distance.
 [minecraft:behavior.swim_idle](EntityGoals/minecraftBehavior_swim_idle.md)|`minecraft:behavior.swim_idle` compels the entity go idle, if swimming. Entity must be in water.
+[minecraft:behavior.swim_up_for_breath](EntityGoals/minecraftBehavior_swim_up_for_breath.md)|`minecraft:behavior.swim_up_for_breath` compels the mob to try to move to air when it is close to running out of its total breathable supply. Requires `minecraft:breathable`.
 [minecraft:behavior.swim_wander](EntityGoals/minecraftBehavior_swim_wander.md)|`minecraft:behavior.swim_wander` compels the entity to wander around while swimming, when not path-finding.
 [minecraft:behavior.swim_with_entity](EntityGoals/minecraftBehavior_swim_with_entity.md)|`minecraft:behavior.swim_with_entity` compels the entity follow another entity. Both entities must be swimming and in water.
 [minecraft:behavior.swoop_attack](EntityGoals/minecraftBehavior_swoop_attack.md)|`minecraft:behavior.swoop_attack` compels an entity to attack using swoop attack behavior. Ideal for use with flying mobs. The behavior ends if the entity has a horizontal collision or gets hit.
 [minecraft:behavior.take_flower](EntityGoals/minecraftBehavior_take_flower.md)|`minecraft:behavior.take_flower` compels an entity to receive flowers when presented from the `iron_golem` entity.
 [minecraft:behavior.target_when_pushed](EntityGoals/minecraftBehavior_target_when_pushed.md)|`minecraft:behavior.target_when_pushed` compels an entity to target an entity when pushed.
+[minecraft:behavior.teleport_to_owner](EntityGoals/minecraftBehavior_teleport_to_owner.md)|`minecraft:behavior.teleport_to_owner` allows an entity to teleport to its owner.|
 [minecraft:behavior.tempt](EntityGoals/minecraftBehavior_tempt.md)|`minecraft:behavior.tempt` compels an entity to be tempted by a set item.
+[minecraft:behavior.timer_flag_1](EntityGoals/minecraftBehavior_timer_flag_1.md)|`minecraft:behavior.timer_flag_1` fires an event when this behavior starts, then waits for a duration before stopping.
+[minecraft:behavior.timer_flag_2](EntityGoals/minecraftBehavior_timer_flag_2.md)|`minecraft:behavior.timer_flag_2` fires an event when this behavior starts, then waits for a duration before stopping.
+[minecraft:behavior.timer_flag_3](EntityGoals/minecraftBehavior_timer_flag_3.md)|`minecraft:behavior.timer_flag_3` fires an event when this behavior starts, then waits for a duration before stopping.
 [minecraft:behavior.trade_interest](EntityGoals/minecraftBehavior_trade_interest.md)|`minecraft:behavior.trade_interest` compels an entity to focus on a player that will initiate a trade.
 [minecraft:behavior.trade_with_player](EntityGoals/minecraftBehavior_trade_with_player.md)|`minecraft:behavior.trade_with_player` compels an entity to focus on a player that will initiate a trade.
 [minecraft:behavior.vex_copy_owner_target](EntityGoals/minecraftBehavior_vex_copy_owner_target.md)|`minecraft:behavior.vex_copy_owner_target` compels an entity of the`vex` family to target the same entity as its owner.

@@ -30,22 +30,12 @@ See [Custom Item Use Priority](../ItemUsePriority.md) for more information on us
 "minecraft:food":{
     "can_always_eat": false,
     "nutrition" : 3,
-    "saturation_modifier": "normal",
+    "saturation_modifier": 0.6,
     "using_converts_to": "bowl"
 }
 ```
 
 ## Vanilla examples
-
-### appleEnchanted
-
-```json
-"minecraft:food": {
-  "nutrition": 4,
-  "saturation_modifier": "supernatural",
-  "can_always_eat": true
-}
-```
 
 ## Vanilla items using `minecraft:food`
 

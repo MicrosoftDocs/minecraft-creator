@@ -45,9 +45,9 @@ However, because we're measuring blocks - the size or span of a BlockVolume woul
 A world block location that represents a corner in a 3D rectangle
 
 Type: [*Vector3*](Vector3.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **to**
 `to: Vector3;`
@@ -55,9 +55,9 @@ Type: [*Vector3*](Vector3.md)
 A world block location that represents the opposite corner in a 3D rectangle
 
 Type: [*Vector3*](Vector3.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Methods
 - [constructor](#constructor)
@@ -91,9 +91,9 @@ Check to see if the given location is directly adjacent to the outer surface of 
   The world block location to test
 
 **Returns** *boolean* - If the location is either inside or more than 0 blocks away, the function will return false.,If the location is directly contacting the outer surface of the BlockVolume, the function will return true. - If the location is either inside or more than 0 blocks away, the function will return false.,If the location is directly contacting the outer surface of the BlockVolume, the function will return true.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **doesVolumeTouchFaces**
 `
@@ -108,9 +108,9 @@ Check to see if a two block volumes are directly adjacent and two faces touch.
   The volume to test
 
 **Returns** *boolean* - If the outer faces of both block volumes touch and are directly adjacent at any point, return true.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **intersects**
 `
@@ -123,6 +123,6 @@ Return an enumeration which represents the intersection between two BlockVolume 
 - **other**: [*BlockVolume*](BlockVolume.md)
 
 **Returns** [*BlockVolumeIntersection*](BlockVolumeIntersection.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

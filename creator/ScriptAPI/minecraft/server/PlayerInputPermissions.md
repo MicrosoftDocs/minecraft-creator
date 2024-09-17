@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerInputPermissions Class
 description: Contents of the @minecraft/server.PlayerInputPermissions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerInputPermissions Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains properties for enabling/disabling player input permissions.
 

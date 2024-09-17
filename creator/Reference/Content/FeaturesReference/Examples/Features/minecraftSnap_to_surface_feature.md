@@ -33,12 +33,12 @@ Define a feature that snaps the `cave_vine_feature` to the ceiling
 
 ```json
 {
-  "format_version": "1.16.0",
+  "format_version": "1.13.0",
   "minecraft:snap_to_surface_feature": {
     "description": {
-      "identifier": "minecraft:cave_vine_snapped_to_ceiling_feature"
+      "identifier": "example:cave_vine_snapped_to_ceiling_feature"
     },
-    "feature_to_snap":  "minecraft:cave_vine_feature",
+    "feature_to_snap":  "example:cave_vine_feature",
     "vertical_search_range":  12,
     "surface": "ceiling"
   }

@@ -25,9 +25,9 @@ Adds a callback that will be called when an item stops being used on a block.
 - **callback**: (arg: [*ItemStopUseOnAfterEvent*](ItemStopUseOnAfterEvent.md)) => *void*
 
 **Returns** (arg: [*ItemStopUseOnAfterEvent*](ItemStopUseOnAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -38,6 +38,6 @@ Removes a callback from being called when an item is used on a block.
 
 #### **Parameters**
 - **callback**: (arg: [*ItemStopUseOnAfterEvent*](ItemStopUseOnAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

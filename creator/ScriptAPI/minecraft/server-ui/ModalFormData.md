@@ -48,9 +48,7 @@ function showExampleModal(player: Player) {
 - [dropdown](#dropdown)
 - [show](#show)
 - [slider](#slider)
-::: moniker range="=minecraft-bedrock-experimental"
 - [submitButton](#submitbutton)
-::: moniker-end
 - [textField](#textfield)
 - [title](#title)
 - [toggle](#toggle)
@@ -91,12 +89,10 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
   Player to show this dialog to.
 
 **Returns** Promise&lt;[*ModalFormResponse*](ModalFormResponse.md)&gt;
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **slider**
 `
@@ -114,7 +110,6 @@ Adds a numeric slider to the form.
 
 **Returns** [*ModalFormData*](ModalFormData.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **submitButton**
 `
 submitButton(submitButtonText: minecraftserver.RawMessage | string): ModalFormData
@@ -124,10 +119,6 @@ submitButton(submitButtonText: minecraftserver.RawMessage | string): ModalFormDa
 - **submitButtonText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 **Returns** [*ModalFormData*](ModalFormData.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **textField**
 `

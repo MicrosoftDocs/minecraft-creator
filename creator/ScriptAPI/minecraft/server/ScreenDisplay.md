@@ -58,45 +58,27 @@ world.afterEvents.playerSpawn.subscribe(event => {
 ```
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [getHiddenHudElements](#gethiddenhudelements)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [hideAllExcept](#hideallexcept)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [isForcedHidden](#isforcedhidden)
-::: moniker-end
 - [isValid](#isvalid)
-::: moniker range="=minecraft-bedrock-experimental"
 - [resetHudElements](#resethudelements)
-::: moniker-end
 - [setActionBar](#setactionbar)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setHudVisibility](#sethudvisibility)
-::: moniker-end
 - [setTitle](#settitle)
 - [updateSubtitle](#updatesubtitle)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getHiddenHudElements**
 `
 getHiddenHudElements(): HudElement[]
 `
 
 **Returns** [*HudElement*](HudElement.md)[]
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **hideAllExcept**
 `
 hideAllExcept(hudElements?: HudElement[]): void
@@ -104,18 +86,11 @@ hideAllExcept(hudElements?: HudElement[]): void
 
 #### **Parameters**
 - **hudElements**?: [*HudElement*](HudElement.md)[] = `null`
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isForcedHidden**
 `
 isForcedHidden(hudElement: HudElement): boolean
@@ -125,16 +100,10 @@ isForcedHidden(hudElement: HudElement): boolean
 - **hudElement**: [*HudElement*](HudElement.md)
 
 **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-::: moniker-end
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **isValid**
 `
@@ -145,21 +114,14 @@ Returns true if the current reference to this screen display manager object is v
 
 **Returns** *boolean*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **resetHudElements**
 `
 resetHudElements(): void
 `
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-::: moniker-end
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setActionBar**
 `
@@ -172,14 +134,11 @@ Set the action bar text - a piece of text that displays beneath the title and ab
 - **text**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
   
   New value for the action bar text.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setHudVisibility**
 `
 setHudVisibility(visible: HudVisibility, hudElements?: HudElement[]): void
@@ -194,16 +153,10 @@ Sets visibility of a particular element of the heads up display (HUD).
 - **hudElements**?: [*HudElement*](HudElement.md)[] = `null`
   
   Optional list of HUD elements to configure visibility for.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-::: moniker-end
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setTitle**
 `
@@ -215,12 +168,10 @@ Will cause a title to show up on the player's on screen display. Will clear the 
 #### **Parameters**
 - **title**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
 - **options**?: [*TitleDisplayOptions*](TitleDisplayOptions.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***setTitle.ts***
@@ -278,12 +229,10 @@ Updates the subtitle if the subtitle was previously displayed via the setTitle m
 
 #### **Parameters**
 - **subtitle**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***setTitle.ts***

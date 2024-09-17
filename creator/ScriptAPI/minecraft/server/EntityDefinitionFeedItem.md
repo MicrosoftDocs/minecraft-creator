@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityDefinitionFeedItem Class
 description: Contents of the @minecraft/server.EntityDefinitionFeedItem class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityDefinitionFeedItem Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 As part of the Ageable component, represents a set of items that can be fed to an entity and the rate at which that causes them to grow.
 

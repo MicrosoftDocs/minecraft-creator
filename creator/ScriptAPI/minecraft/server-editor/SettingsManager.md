@@ -18,3 +18,8 @@ The SettingsManager (accessible from the [*@minecraft/server-editor.ExtensionCon
 Manages graphics settings properties.
 
 Type: [*GraphicsSettings*](GraphicsSettings.md)
+
+### **theme**
+`read-only theme: ThemeSettings;`
+
+Type: [*ThemeSettings*](ThemeSettings.md)

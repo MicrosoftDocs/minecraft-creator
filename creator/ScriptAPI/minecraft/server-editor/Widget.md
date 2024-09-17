@@ -8,67 +8,240 @@ description: Contents of the @minecraft/server-editor.Widget class.
 ---
 # Widget Class
 
-## Classes that extend Widget
-- [*CustomWidget*](CustomWidget.md)
-- [*LineWidget*](LineWidget.md)
-
 ## Properties
 
-### **valid**
-`read-only valid: boolean;`
+### **collisionOffset**
+`collisionOffset: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **collisionRadius**
+`collisionRadius: number;`
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **location**
+`location: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **selectable**
+`read-only selectable: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **selected**
+`selected: boolean;`
+
+Type: *boolean*
+
+### **showBoundingBox**
+`showBoundingBox: boolean;`
+
+Type: *boolean*
+
+### **showCollisionRadius**
+`showCollisionRadius: boolean;`
+
+Type: *boolean*
+
+### **snapToBlockLocation**
+`snapToBlockLocation: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **visible**
+`visible: boolean;`
 
 Type: *boolean*
 
 ## Methods
-- [deleteWidget](#deletewidget)
-- [getIsSelected](#getisselected)
-- [getIsVisible](#getisvisible)
-- [setIsSelected](#setisselected)
-- [setIsVisible](#setisvisible)
+- [addEntityComponent](#addentitycomponent)
+- [addGizmoComponent](#addgizmocomponent)
+- [addGuideComponent](#addguidecomponent)
+- [addRenderPrimitiveComponent](#addrenderprimitivecomponent)
+- [addSplineComponent](#addsplinecomponent)
+- [addTextComponent](#addtextcomponent)
+- [delete](#delete)
+- [deleteComponent](#deletecomponent)
+- [getComponent](#getcomponent)
+- [getComponents](#getcomponents)
+- [setStateChangeEvent](#setstatechangeevent)
 
-### **deleteWidget**
+### **addEntityComponent**
 `
-deleteWidget(): void
-`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-### **getIsSelected**
-`
-getIsSelected(): boolean
-`
-
-**Returns** *boolean*
-
-### **getIsVisible**
-`
-getIsVisible(): boolean
-`
-
-**Returns** *boolean*
-
-### **setIsSelected**
-`
-setIsSelected(isSelected: boolean): void
+addEntityComponent(componentName: string, actorNameId: string, options?: WidgetComponentEntityOptions): WidgetComponentEntity
 `
 
 #### **Parameters**
-- **isSelected**: *boolean*
+- **componentName**: *string*
+- **actorNameId**: *string*
+- **options**?: [*WidgetComponentEntityOptions*](WidgetComponentEntityOptions.md) = `null`
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+**Returns** [*WidgetComponentEntity*](WidgetComponentEntity.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
-> [!WARNING]
-> This function can throw errors.
-
-### **setIsVisible**
+### **addGizmoComponent**
 `
-setIsVisible(isVisible: boolean): void
+addGizmoComponent(componentName: string, options?: WidgetComponentGizmoOptions): WidgetComponentGizmo
 `
 
 #### **Parameters**
-- **isVisible**: *boolean*
+- **componentName**: *string*
+- **options**?: [*WidgetComponentGizmoOptions*](WidgetComponentGizmoOptions.md) = `null`
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+**Returns** [*WidgetComponentGizmo*](WidgetComponentGizmo.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **addGuideComponent**
+`
+addGuideComponent(componentName: string, options?: WidgetComponentGuideOptions): WidgetComponentGuide
+`
+
+#### **Parameters**
+- **componentName**: *string*
+- **options**?: [*WidgetComponentGuideOptions*](WidgetComponentGuideOptions.md) = `null`
+
+**Returns** [*WidgetComponentGuide*](WidgetComponentGuide.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **addRenderPrimitiveComponent**
+`
+addRenderPrimitiveComponent(componentName: string, primitiveType: WidgetComponentRenderPrimitiveAxialSphere | WidgetComponentRenderPrimitiveBox | WidgetComponentRenderPrimitiveDisc | WidgetComponentRenderPrimitiveLine, options?: WidgetComponentRenderPrimitiveOptions): WidgetComponentRenderPrimitive
+`
+
+#### **Parameters**
+- **componentName**: *string*
+- **primitiveType**: [*WidgetComponentRenderPrimitiveAxialSphere*](WidgetComponentRenderPrimitiveAxialSphere.md) | [*WidgetComponentRenderPrimitiveBox*](WidgetComponentRenderPrimitiveBox.md) | [*WidgetComponentRenderPrimitiveDisc*](WidgetComponentRenderPrimitiveDisc.md) | [*WidgetComponentRenderPrimitiveLine*](WidgetComponentRenderPrimitiveLine.md)
+- **options**?: [*WidgetComponentRenderPrimitiveOptions*](WidgetComponentRenderPrimitiveOptions.md) = `null`
+
+**Returns** [*WidgetComponentRenderPrimitive*](WidgetComponentRenderPrimitive.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **addSplineComponent**
+`
+addSplineComponent(componentName: string, options?: WidgetComponentSplineOptions): WidgetComponentSpline
+`
+
+#### **Parameters**
+- **componentName**: *string*
+- **options**?: [*WidgetComponentSplineOptions*](WidgetComponentSplineOptions.md) = `null`
+
+**Returns** [*WidgetComponentSpline*](WidgetComponentSpline.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **addTextComponent**
+`
+addTextComponent(componentName: string, label: string, options?: WidgetComponentTextOptions): WidgetComponentText
+`
+
+#### **Parameters**
+- **componentName**: *string*
+- **label**: *string*
+- **options**?: [*WidgetComponentTextOptions*](WidgetComponentTextOptions.md) = `null`
+
+**Returns** [*WidgetComponentText*](WidgetComponentText.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **delete**
+`
+"delete"(): void
+`
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md), [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
+
+### **deleteComponent**
+`
+deleteComponent(componentOrName: string | WidgetComponentBase): void
+`
+
+#### **Parameters**
+- **componentOrName**: *string* | [*WidgetComponentBase*](WidgetComponentBase.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **getComponent**
+`
+getComponent(componentName: string): WidgetComponentBase
+`
+
+#### **Parameters**
+- **componentName**: *string*
+
+**Returns** [*WidgetComponentBase*](WidgetComponentBase.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **getComponents**
+`
+getComponents(): WidgetComponentBase[]
+`
+
+**Returns** [*WidgetComponentBase*](WidgetComponentBase.md)[]
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **setStateChangeEvent**
+`
+setStateChangeEvent(eventFunction?: (arg: WidgetStateChangeEventData) => void): void
+`
+
+#### **Parameters**
+- **eventFunction**?: (arg: [*WidgetStateChangeEventData*](WidgetStateChangeEventData.md)) => *void* = `null`
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidWidgetError*](InvalidWidgetError.md), [*InvalidWidgetError*](InvalidWidgetError.md)

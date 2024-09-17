@@ -21,9 +21,9 @@ Additional variant value. Can be used to further differentiate variants.
 Value of the mark variant value for this entity.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Constants
 

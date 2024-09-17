@@ -21,9 +21,9 @@ When present on an item, this item can take damage in the process of being used.
 Returns the current damage level of this particular item.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **maxDurability**
 `read-only maxDurability: number;`
@@ -32,8 +32,8 @@ Represents the amount of damage that this item can take before breaking.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [getDamageChance](#getdamagechance)
@@ -52,12 +52,10 @@ Returns the maximum chance that this item would be damaged using the damageRange
   Unbreaking factor to consider in factoring the damage chance. Incoming unbreaking parameter must be within the range [0, 3].
 
 **Returns** *number*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **getDamageChanceRange**
 `
@@ -67,12 +65,10 @@ getDamageChanceRange(): minecraftcommon.NumberRange
 A range of numbers that is used to calculate the damage chance for an item. The damage chance will fall within this range.
 
 **Returns** [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ## Constants
 

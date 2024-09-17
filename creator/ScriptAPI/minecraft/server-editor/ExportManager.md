@@ -11,22 +11,22 @@ description: Contents of the @minecraft/server-editor.ExportManager class.
 ## Methods
 - [beginExportProject](#beginexportproject)
 - [canExportProject](#canexportproject)
+- [getGameOptions](#getgameoptions)
+- [getGameVersion](#getgameversion)
 
 ### **beginExportProject**
 `
-beginExportProject(options: ProjectExportOptions): Promise<ExportResult>
+beginExportProject(options: GameOptions): Promise<ExportResult>
 `
 
 #### **Parameters**
-- **options**: [*ProjectExportOptions*](ProjectExportOptions.md)
+- **options**: [*GameOptions*](GameOptions.md)
 
 **Returns** Promise&lt;[*ExportResult*](ExportResult.md)&gt;
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **canExportProject**
 `
@@ -34,9 +34,32 @@ canExportProject(): boolean
 `
 
 **Returns** *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+### **getGameOptions**
+`
+getGameOptions(useDefault?: boolean): GameOptions
+`
 
-> [!WARNING]
-> This function can throw errors.
+#### **Parameters**
+- **useDefault**?: *boolean* = `null`
+
+**Returns** [*GameOptions*](GameOptions.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **getGameVersion**
+`
+getGameVersion(): string
+`
+
+**Returns** *string*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*

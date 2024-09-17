@@ -21,9 +21,9 @@ getTypeFamilies(): string[]
 `
 
 **Returns** *string*[]
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **hasTypeFamily**
 `
@@ -34,9 +34,9 @@ hasTypeFamily(typeFamily: string): boolean
 - **typeFamily**: *string*
 
 **Returns** *boolean*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ## Constants
 

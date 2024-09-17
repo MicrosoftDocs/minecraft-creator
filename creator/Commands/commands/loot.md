@@ -132,32 +132,78 @@ Music Disc Ward
 Enderman Spawn Egg
 - `minecraft:air`
 Air
-- `minecraft:skull_pottery_sherd`
-- `minecraft:rabbit`
-Rabbit
-- `minecraft:sea_lantern`
-Sea Lantern
-- `minecraft:creeper_banner_pattern`
-Creeper Banner Pattern
-- `minecraft:element_25`
-[Education Edition] Manganese (Mn)
-- `minecraft:mangrove_leaves`
-Mangrove Leaves
-- `minecraft:polished_blackstone_brick_slab`
-Polished Blackstone Brick Slab
-- `minecraft:mushroom_stew`
-Mushroom Stew
-- `minecraft:ravager_spawn_egg`
-Ravager Spawn Egg
-- `minecraft:cooked_porkchop`
-Cooked Porkchop
-- `minecraft:stripped_oak_log`
-Stripped Oak Log
-- `minecraft:element_50`
-[Education Edition] Tin (Sn)
 - `minecraft:bamboo_sign`
 - `minecraft:apple`
 Apple
+- `minecraft:trial_key`
+- `minecraft:iron_sword`
+Iron Sword
+- `minecraft:red_sandstone_slab`
+- `minecraft:lantern`
+Lantern
+- `minecraft:torchflower_seeds`
+- `minecraft:smooth_stone`
+Smooth Stone
+- `minecraft:element_43`
+[Education Edition] Technetium (Tc)
+- `minecraft:beetroot`
+Beetroot
+- `minecraft:music_disc_strad`
+Music Disc Strad
+- `minecraft:sparkler`
+Sparkler
+- `minecraft:warped_door`
+Warped Door
+- `minecraft:cooked_salmon`
+Cooked Salmon
+- `minecraft:pufferfish_spawn_egg`
+Pufferfish Spawn Egg
+- `minecraft:red_mushroom_block`
+Red Mushroom Block
+- `minecraft:underwater_tnt`
+- `minecraft:crimson_fungus`
+Crimson Fungus
+- `minecraft:item.frame`
+Frame
+- `minecraft:bundle`
+- `minecraft:deepslate_tile_wall`
+Deepslate Tile Wall
+- `minecraft:golden_carrot`
+Golden Carrot
+- `minecraft:spruce_stairs`
+Spruce Stairs
+- `minecraft:element_13`
+[Education Edition] Aluminum (Al)
+- `minecraft:poisonous_potato`
+Poisonous Potato
+- `minecraft:breeze_rod`
+- `minecraft:smooth_quartz_slab`
+- `minecraft:raw_gold_block`
+Raw Gold Block
+- `minecraft:vex_armor_trim_smithing_template`
+- `minecraft:black_carpet`
+- `minecraft:carrot`
+Carrot
+- `minecraft:strider_spawn_egg`
+Strider Spawn Egg
+- `minecraft:command_block`
+Command Block
+- `minecraft:potion`
+Potion
+- `minecraft:chicken`
+Chicken
+- `minecraft:ominous_trial_key`
+- `minecraft:dead_fire_coral_fan`
+- `minecraft:sweet_berries`
+Sweet Berries
+- `minecraft:white_candle`
+White Candle
+- `minecraft:clay_ball`
+Clay Ball
+- `minecraft:element_68`
+[Education Edition] Erbium (Er)
+- `minecraft:wind_charge`
+- `minecraft:diorite_wall`
 - `minecraft:hard_blue_stained_glass`
 - `minecraft:angler_pottery_sherd`
 - `minecraft:golden_apple`
@@ -170,13 +216,33 @@ Golden Horse Armor
 Smooth Quarts Stairs
 - `minecraft:potato`
 Potato
+- `minecraft:element_15`
+Phosphorus (P)
 - `minecraft:nether_star`
 Nether Star
 - `minecraft:enchanted_golden_apple`
 Enchanted Golden Apple
 - `minecraft:magenta_terracotta`
-- `minecraft:element_15`
-Phosphorus (P)
+- `minecraft:skull_pottery_sherd`
+- `minecraft:rabbit`
+Rabbit
+- `minecraft:sea_lantern`
+Sea Lantern
+- `minecraft:creeper_banner_pattern`
+Creeper Banner Pattern
+- `minecraft:ravager_spawn_egg`
+Ravager Spawn Egg
+- `minecraft:cooked_porkchop`
+Cooked Porkchop
+- `minecraft:mangrove_leaves`
+Mangrove Leaves
+- `minecraft:polished_blackstone_brick_slab`
+Polished Blackstone Brick Slab
+- `minecraft:mushroom_stew`
+Mushroom Stew
+- `minecraft:cherry_chest_boat`
+- `minecraft:bread`
+Bread
 - `minecraft:stone_brick_stairs`
 Stone Brick Stairs
 - `minecraft:yellow_glazed_terracotta`
@@ -194,17 +260,11 @@ Iron Ingot
 - `minecraft:slime_spawn_egg`
 Slime Spawn Egg
 - `minecraft:pink_carpet`
+- `minecraft:chipped_anvil`
 - `minecraft:porkchop`
 Porkchop
 - `minecraft:cookie`
 Cookie
-- `minecraft:cherry_chest_boat`
-- `minecraft:diamond_block`
-Diamond Block
-- `minecraft:element_7`
-[Education Edition] Nitrogen (N)
-- `minecraft:bread`
-Bread
 - `minecraft:music_disc_chirp`
 Music Disc Chirp
 - `minecraft:prismarine_bricks_stairs`
@@ -222,10 +282,10 @@ Cod
 Pillager Spawn Egg
 - `minecraft:iron_pickaxe`
 Iron Pickaxe
-- `minecraft:wild_armor_trim_smithing_template`
+- `minecraft:spruce_planks`
 - `minecraft:element_27`
 [Education Edition] Cobalt (Co)
-- `minecraft:spruce_planks`
+- `minecraft:wild_armor_trim_smithing_template`
 - `minecraft:beef`
 Beef
 - `minecraft:gray_stained_glass_pane`
@@ -243,11 +303,6 @@ Silver Glazed Terracotta
 Cocoa Beans
 - `minecraft:tropical_fish`
 Tropical Fish
-- `minecraft:stone_axe`
-Stone Axe
-- `minecraft:stained_glass_pane`
-Stained Glass Pane
-- `minecraft:polished_diorite_slab`
 - `minecraft:trapped_chest`
 Trapped Chest
 - `minecraft:pufferfish`
@@ -256,19 +311,12 @@ Pufferfish
 Ancient Debris
 - `minecraft:bucket`
 Bucket
-- `minecraft:sparkler`
-Sparkler
-- `minecraft:warped_door`
-Warped Door
-- `minecraft:element_61`
-[Education Edition] Promethium (Pm)
-- `minecraft:cooked_salmon`
-Cooked Salmon
 - `minecraft:dried_kelp`
 Dried Kelp
 - `minecraft:beetroot_soup`
 Beetroot Soup
 - `minecraft:waxed_weathered_copper_door`
+- `minecraft:piglin_head`
 - `minecraft:wooden_pickaxe`
 Wooden Pickaxe
 - `minecraft:magenta_candle_cake`
@@ -277,8 +325,6 @@ Magenta Candle Cake
 Campfire
 - `minecraft:melon_slice`
 Melon Slice
-- `minecraft:element_1`
-[Education Edition] Hydrogen (H)
 - `minecraft:hay_block`
 Hay Block
 - `minecraft:nautilus_shell`
@@ -294,24 +340,10 @@ Exposed Copper
 Cooked Beef
 - `minecraft:comparator`
 Comparator
-- `minecraft:raw_gold_block`
-Raw Gold Block
-- `minecraft:vex_armor_trim_smithing_template`
-- `minecraft:black_carpet`
-- `minecraft:carrot`
-Carrot
-- `minecraft:strider_spawn_egg`
-Strider Spawn Egg
-- `minecraft:command_block`
-Command Block
-- `minecraft:potion`
-Potion
-- `minecraft:chicken`
-Chicken
-- `minecraft:rotten_flesh`
-Rotten Flesh
 - `minecraft:element_62`
 [Education Edition] Samarium (Sm)
+- `minecraft:rotten_flesh`
+Rotten Flesh
 - `minecraft:dirt`
 Dirt
 - `minecraft:witch_spawn_egg`
@@ -339,16 +371,6 @@ Horse Spawn Egg
 - `minecraft:baked_potato`
 Baked Potato
 - `minecraft:pink_tulip`
-- `minecraft:deepslate_tile_wall`
-Deepslate Tile Wall
-- `minecraft:golden_carrot`
-Golden Carrot
-- `minecraft:spruce_stairs`
-Spruce Stairs
-- `minecraft:poisonous_potato`
-Poisonous Potato
-- `minecraft:element_13`
-[Education Edition] Aluminum (Al)
 - `minecraft:polished_granite`
 - `minecraft:chiseled_copper`
 - `minecraft:obsidian`
@@ -356,25 +378,6 @@ Obsidian
 - `minecraft:prize_pottery_sherd`
 - `minecraft:pumpkin_pie`
 Pumpkin Pie
-- `minecraft:red_sandstone_slab`
-- `minecraft:lantern`
-Lantern
-- `minecraft:torchflower_seeds`
-- `minecraft:iron_sword`
-Iron Sword
-- `minecraft:trial_key`
-- `minecraft:smooth_stone`
-Smooth Stone
-- `minecraft:beetroot`
-Beetroot
-- `minecraft:element_43`
-[Education Edition] Technetium (Tc)
-- `minecraft:music_disc_strad`
-Music Disc Strad
-- `minecraft:sweet_berries`
-Sweet Berries
-- `minecraft:white_candle`
-White Candle
 - `minecraft:spruce_wood`
 - `minecraft:rabbit_stew`
 Rabbit Stew
@@ -387,10 +390,10 @@ Wheat Seeds
 Command Block Minecart
 - `minecraft:chest`
 Chest
-- `minecraft:pumpkin_seeds`
-Pumpkin Seeds
 - `minecraft:element_2`
 [Education Edition] Helium (He)
+- `minecraft:pumpkin_seeds`
+Pumpkin Seeds
 - `minecraft:melon_seeds`
 Melon Seeds
 - `minecraft:raw_iron`
@@ -399,21 +402,18 @@ Raw Iron
 Iron Axe
 - `minecraft:nether_wart`
 Nether Wart
-- `minecraft:bamboo_double_slab`
-- `minecraft:element_35`
-Bromine (Br)
 - `minecraft:beetroot_seeds`
 Beetroot Seeds
-- `minecraft:iron_bars`
-Iron Bars
-- `minecraft:polar_bear_spawn_egg`
-Polar Bear Spawn Egg
-- `minecraft:pitcher_pod`
-- `minecraft:element_80`
-[Education Edition] Mercury (Hg)
 - `minecraft:powder_snow`
 Powder Snow
 - `minecraft:lime_carpet`
+- `minecraft:iron_bars`
+Iron Bars
+- `minecraft:element_80`
+[Education Edition] Mercury (Hg)
+- `minecraft:polar_bear_spawn_egg`
+Polar Bear Spawn Egg
+- `minecraft:pitcher_pod`
 - `minecraft:element_104`
 [Education Edition] Rutherfordium (Rf)
 - `minecraft:iron_shovel`
@@ -425,10 +425,6 @@ Flint and Steel
 - `minecraft:granite_stairs`
 Granite Stairs
 - `minecraft:mourner_pottery_sherd`
-- `minecraft:stone_shovel`
-Stone Shovel
-- `minecraft:light_gray_stained_glass_pane`
-- `minecraft:smooth_stone_slab`
 - `minecraft:melon_block`
 Melon Block
 - `minecraft:arrow`
@@ -453,33 +449,44 @@ Wooden Sword
 Netherite Boots
 - `minecraft:music_disc_mall`
 Music Disc Mall
-- `minecraft:farmland`
-[Education Edition] Farmland
-- `minecraft:wooden_axe`
-Wooden Axe
 - `minecraft:zombie_pigman_spawn_egg`
 Zombie Pigman Spawn Egg
 - `minecraft:crimson_trapdoor`
 Crimson Trapdoor
 - `minecraft:raw_gold`
 Raw Gold
+- `minecraft:wooden_axe`
+Wooden Axe
+- `minecraft:farmland`
+[Education Edition] Farmland
+- `minecraft:stone_shovel`
+Stone Shovel
+- `minecraft:light_gray_stained_glass_pane`
+- `minecraft:light_block_15`
+- `minecraft:smooth_stone_slab`
 - `minecraft:salmon_bucket`
 Salmon Bucket
 - `minecraft:planks`
 Planks
 - `minecraft:stone_pickaxe`
 Stone Pickaxe
+- `minecraft:stone_axe`
+Stone Axe
+- `minecraft:stained_glass_pane`
+Stained Glass Pane
+- `minecraft:polished_diorite_slab`
+- `minecraft:diamond_sword`
+Diamond Sword
+- `minecraft:colored_torch_purple`
+- `minecraft:oxidized_copper_trapdoor`
+- `minecraft:end_stone_brick_slab`
+- `minecraft:smithing_table`
+Smithing Table
 - `minecraft:exposed_copper_trapdoor`
 - `minecraft:chainmail_helmet`
 Chainmail Helmet
 - `minecraft:diamond_shovel`
 Diamond Shovel
-- `minecraft:oxidized_copper_trapdoor`
-- `minecraft:end_stone_brick_slab`
-- `minecraft:smithing_table`
-Smithing Table
-- `minecraft:diamond_sword`
-Diamond Sword
 - `minecraft:diamond_pickaxe`
 Diamond Pickaxe
 - `minecraft:diamond_axe`
@@ -524,10 +531,10 @@ Elytra
 Lit Redstone Lamp
 - `minecraft:golden_pickaxe`
 Golden Pickaxe
-- `minecraft:golden_axe`
-Golden Axe
 - `minecraft:element_52`
 [Education Edition] Tellurium (Te)
+- `minecraft:golden_axe`
+Golden Axe
 - `minecraft:string`
 String
 - `minecraft:feather`
@@ -545,6 +552,7 @@ Wooden Hoe
 - `minecraft:stone_hoe`
 Stone Hoe
 - `minecraft:blue_orchid`
+- `minecraft:brick_wall`
 - `minecraft:panda_spawn_egg`
 Panda Spawn Egg
 - `minecraft:brown_terracotta`
@@ -589,10 +597,6 @@ Beetroot
 Chainmail Leggings
 - `minecraft:chainmail_boots`
 Chainmail Boots
-- `minecraft:soul_sand`
-Soul Sand
-- `minecraft:element_49`
-[Education Edition] Indium (In)
 - `minecraft:snowball`
 Snowball
 - `minecraft:iron_helmet`
@@ -630,11 +634,11 @@ Axolotl Spawn Egg
 Diamond Leggings
 - `minecraft:diamond_boots`
 Diamond Boots
+- `minecraft:element_51`
+[Education Edition] Antimony (Sb)
 - `minecraft:golden_helmet`
 Golden Helmet
 - `minecraft:green_stained_glass`
-- `minecraft:element_51`
-[Education Edition] Antimony (Sb)
 - `minecraft:golden_chestplate`
 Golden Chestplate
 - `minecraft:glowstone`
@@ -655,14 +659,14 @@ Carpet
 - `minecraft:flint`
 Flint
 - `minecraft:cyan_carpet`
+- `minecraft:wet_sponge`
 - `minecraft:heart_of_the_sea`
 Heart of the Sea
 - `minecraft:painting`
 Painting
+- `minecraft:colored_torch_blue`
 - `minecraft:oak_sign`
 Oak Sign
-- `minecraft:element_55`
-[Education Edition] Cesium (Cs)
 - `minecraft:music_disc_wait`
 Music Disc Wait
 - `minecraft:wooden_door`
@@ -677,12 +681,13 @@ Tadpole Bucket
 - `minecraft:bone`
 Bone
 - `minecraft:cherry_wall_sign`
+- `minecraft:element_74`
+[Education Edition] Tungsten (W)
 - `minecraft:water_bucket`
 Water Bucket
 - `minecraft:mossy_stone_bricks`
 - `minecraft:tube_coral_block`
-- `minecraft:element_74`
-[Education Edition] Tungsten (W)
+- `minecraft:dead_brain_coral_wall_fan`
 - `minecraft:shulker_spawn_egg`
 Shulker Spawn Egg
 - `minecraft:mangrove_fence_gate`
@@ -714,10 +719,12 @@ Evoker Spawn Egg
 Nether Wart
 - `minecraft:powder_snow_bucket`
 Powder Snow Bucket
-- `minecraft:axolotl_bucket`
-Axolotl Bucket
 - `minecraft:parrot_spawn_egg`
 Parrot Spawn Egg
+- `minecraft:damaged_anvil`
+- `minecraft:axolotl_bucket`
+Axolotl Bucket
+- `minecraft:light_block_9`
 - `minecraft:wolf_spawn_egg`
 Wolf Spawn Egg
 - `minecraft:minecart`
@@ -729,17 +736,17 @@ Saddle
 Iron Door
 - `minecraft:redstone`
 Redstone
-- `minecraft:clay_ball`
-Clay Ball
-- `minecraft:wind_charge`
-- `minecraft:element_68`
-[Education Edition] Erbium (Er)
 - `minecraft:heavy_core`
+- `minecraft:sheep_spawn_egg`
+Sheep Spawn Egg
+- `minecraft:sniffer_egg`
 - `minecraft:elder_guardian_spawn_egg`
 Elder Guardian Spawn Egg
 - `minecraft:fire_coral_fan`
+- `minecraft:red_sandstone_wall`
 - `minecraft:crossbow`
 Crossbow
+- `minecraft:dead_fire_coral_wall_fan`
 - `minecraft:white_shulker_box`
 - `minecraft:activator_rail`
 Activator Rail
@@ -794,14 +801,14 @@ Sugar Cane
 - `minecraft:hard_lime_stained_glass_pane`
 - `minecraft:lit_pumpkin`
 Lit Pumpkin
-- `minecraft:heartbreak_pottery_sherd`
-- `minecraft:yellow_terracotta`
-- `minecraft:element_23`
-[Education Edition] Vanadium (V)
 - `minecraft:granite`
 - `minecraft:paper`
 Paper
 - `minecraft:magenta_shulker_box`
+- `minecraft:element_23`
+[Education Edition] Vanadium (V)
+- `minecraft:heartbreak_pottery_sherd`
+- `minecraft:yellow_terracotta`
 - `minecraft:tadpole_spawn_egg`
 Tadpole Spawn Egg
 - `minecraft:coral`
@@ -849,6 +856,9 @@ Black Dye
 Green Dye
 - `minecraft:shulker_box`
 Shulker Box
+- `minecraft:red_candle_cake`
+Red Candle Cake
+- `minecraft:dandelion`
 - `minecraft:deny`
 [Education Edition] Deny
 - `minecraft:deepslate_brick_wall`
@@ -877,6 +887,7 @@ Music Disc 13
 - `minecraft:cyan_dye`
 Cyan Dye
 - `minecraft:orange_wool`
+- `minecraft:andesite_double_slab`
 - `minecraft:blaze_rod`
 Blaze Rod
 - `minecraft:oak_planks`
@@ -884,13 +895,13 @@ Blaze Rod
 Sticky Piston Arm Collision
 - `minecraft:light_gray_dye`
 Light Gray Dye
-- `minecraft:piglin_brute_spawn_egg`
-Piglin Brute Spawn Egg
-- `minecraft:element_41`
-[Education Edition] Niobium (Nb)
 - `minecraft:gray_dye`
 Gray Dye
 - `minecraft:quartz_double_slab`
+- `minecraft:element_41`
+[Education Edition] Niobium (Nb)
+- `minecraft:piglin_brute_spawn_egg`
+Piglin Brute Spawn Egg
 - `minecraft:rabbit_spawn_egg`
 Rabbit Spawn Egg
 - `minecraft:pink_dye`
@@ -899,6 +910,7 @@ Pink Dye
 Lime Dye
 - `minecraft:blast_furnace`
 Blast Furnace
+- `minecraft:light_block_0`
 - `minecraft:yellow_dye`
 Yellow Dye
 - `minecraft:light_blue_dye`
@@ -936,6 +948,7 @@ Bone Meal
 Turtle Helmet
 - `minecraft:ink_sac`
 Ink Sac
+- `minecraft:compound_creator`
 - `minecraft:medium_amethyst_bud`
 Medium Amethyst Bud
 - `minecraft:lapis_lazuli`
@@ -982,14 +995,12 @@ Ender Pearl
 - `minecraft:smooth_stone_double_slab`
 - `minecraft:hard_red_stained_glass`
 - `minecraft:white_carpet`
-- `minecraft:breeze_rod`
-- `minecraft:smooth_quartz_slab`
 - `minecraft:ghast_tear`
 Ghast Tear
-- `minecraft:glass_bottle`
-Glass Bottle
 - `minecraft:element_44`
 [Education Edition] Ruthenium (Ru)
+- `minecraft:glass_bottle`
+Glass Bottle
 - `minecraft:cooked_mutton`
 Cooked Mutton
 - `minecraft:fermented_spider_eye`
@@ -1009,8 +1020,6 @@ Cauldron
 Chicken Spawn Egg
 - `minecraft:pig_spawn_egg`
 Pig Spawn Egg
-- `minecraft:sheep_spawn_egg`
-Sheep Spawn Egg
 - `minecraft:mooshroom_spawn_egg`
 Mooshroom Spawn Egg
 - `minecraft:brown_stained_glass_pane`
@@ -1027,8 +1036,6 @@ Bleach
 Spider Spawn Egg
 - `minecraft:colored_torch_rg`
 Colored Torch RG
-- `minecraft:element_21`
-[Education Edition] Scandium (Sc)
 - `minecraft:zombie_spawn_egg`
 Zombie Spawn Egg
 - `minecraft:hard_red_stained_glass_pane`
@@ -1041,8 +1048,6 @@ Squid Spawn Egg
 - `minecraft:purple_carpet`
 - `minecraft:bat_spawn_egg`
 Bat Spawn Egg
-- `minecraft:element_0`
-[Education Edition] Unknown (?)
 - `minecraft:ghast_spawn_egg`
 Ghast Spawn Egg
 - `minecraft:chiseled_nether_bricks`
@@ -1101,6 +1106,7 @@ Flowering Azalea
 - `minecraft:netherite_pickaxe`
 Netherite Pickaxe
 - `minecraft:pink_terracotta`
+- `minecraft:light_block_14`
 - `minecraft:jukebox`
 Jukebox
 - `minecraft:zombie_horse_spawn_egg`
@@ -1130,6 +1136,7 @@ Warden Spawn Egg
 - `minecraft:magenta_concrete`
 - `minecraft:zombie_villager_spawn_egg`
 Zombie Villager Spawn Egg
+- `minecraft:diorite_double_slab`
 - `minecraft:orange_tulip`
 - `minecraft:weathered_cut_copper_stairs`
 Weathered Cut Copper Stairs
@@ -1146,12 +1153,9 @@ Cod Spawn Egg
 - `minecraft:standing_sign`
 Standing Sign
 - `minecraft:host_armor_trim_smithing_template`
-- `minecraft:pufferfish_spawn_egg`
-Pufferfish Spawn Egg
-- `minecraft:red_mushroom_block`
-Red Mushroom Block
 - `minecraft:salmon_spawn_egg`
 Salmon Spawn Egg
+- `minecraft:normal_stone_double_slab`
 - `minecraft:warped_slab`
 Warped Slab
 - `minecraft:dolphin_spawn_egg`
@@ -1159,12 +1163,11 @@ Dolphin Spawn Egg
 - `minecraft:yellow_carpet`
 - `minecraft:turtle_spawn_egg`
 Turtle Spawn Egg
-- `minecraft:element_28`
-[Education Edition] Nickel (Ni)
 - `minecraft:double_cut_copper_slab`
 Double Cut Copper Slab
 - `minecraft:phantom_spawn_egg`
 Phantom Spawn Egg
+- `minecraft:element_constructor`
 - `minecraft:item.acacia_door`
 Acacia Door
 - `minecraft:oxidized_cut_copper_slab`
@@ -1172,6 +1175,8 @@ Oxidized Cut Copper Slab
 - `minecraft:cat_spawn_egg`
 Cat Spawn Egg
 - `minecraft:light_gray_wool`
+- `minecraft:cherry_fence`
+- `minecraft:purpur_double_slab`
 - `minecraft:quartz`
 Quartz
 - `minecraft:fox_spawn_egg`
@@ -1199,9 +1204,9 @@ Oxidized Cut Copper
 - `minecraft:goat_spawn_egg`
 Goat Spawn Egg
 - `minecraft:prismarine_slab`
-- `minecraft:bolt_armor_trim_smithing_template`
 - `minecraft:element_4`
 [Education Edition] Beryllium (Be)
+- `minecraft:bolt_armor_trim_smithing_template`
 - `minecraft:iron_golem_spawn_egg`
 - `minecraft:ender_dragon_spawn_egg`
 - `minecraft:wither_spawn_egg`
@@ -1245,8 +1250,6 @@ Fire Charge
 - `minecraft:waxed_weathered_cut_copper_slab`
 Waxed Weathered Cut Copper Slab
 - `minecraft:infested_cracked_stone_bricks`
-- `minecraft:element_47`
-[Education Edition] Silver (Ag)
 - `minecraft:waxed_oxidized_cut_copper_slab`
 Waxed Oxidized Cut Copper Slab
 - `minecraft:raw_copper`
@@ -1254,21 +1257,22 @@ Raw Copper
 - `minecraft:polished_andesite`
 - `minecraft:experience_bottle`
 Experience Bottle
-- `minecraft:writable_book`
-Writable Book
 - `minecraft:element_69`
 [Education Edition] Thulium (Tm)
+- `minecraft:writable_book`
+Writable Book
 - `minecraft:bamboo_fence_gate`
 - `minecraft:deepslate_brick_double_slab`
 Deepslate Brick Double Slab
 - `minecraft:emerald`
 Emerald
+- `minecraft:dark_prismarine_double_slab`
 - `minecraft:flower_pot`
 Flower Pot
 - `minecraft:empty_map`
 Empty Map
-- `minecraft:skull`
-Skull
+- `minecraft:exposed_chiseled_copper`
+- `minecraft:end_stone_brick_wall`
 - `minecraft:crimson_nylium`
 Crimson Nylium
 - `minecraft:firework_rocket`
@@ -1285,8 +1289,7 @@ Enchanted Book
 Totem of Undying
 - `minecraft:netherbrick`
 Netherbrick
-- `minecraft:element_63`
-[Education Edition] Europium (Eu)
+- `minecraft:dead_bubble_coral_wall_fan`
 - `minecraft:tnt_minecart`
 TNT Minecart
 - `minecraft:polished_granite_slab`
@@ -1327,9 +1330,9 @@ Acacia Sign
 Prismarine Crystals
 - `minecraft:lead`
 Lead
-- `minecraft:brush`
 - `minecraft:element_32`
 [Education Edition] Germanium (Ge)
+- `minecraft:brush`
 - `minecraft:armor_stand`
 Armor Stand
 - `minecraft:phantom_membrane`
@@ -1339,10 +1342,11 @@ Spruce Door
 - `minecraft:birch_hanging_sign`
 - `minecraft:birch_door`
 Birch Door
-- `minecraft:acacia_door`
-Acacia Door
+- `minecraft:granite_wall`
 - `minecraft:element_42`
 [Education Edition] Molybdenum (Mo)
+- `minecraft:acacia_door`
+Acacia Door
 - `minecraft:turtle_scute`
 - `minecraft:netherite_leggings`
 Netherite Leggings
@@ -1351,13 +1355,13 @@ Dark Oak Door
 - `minecraft:yellow_stained_glass_pane`
 - `minecraft:popped_chorus_fruit`
 Popped Chorus Fruit
-- `minecraft:element_73`
-[Education Edition] Tantalum (Ta)
 - `minecraft:splash_potion`
 Splash Potion
 - `minecraft:shulker_shell`
 Shulker Shell
+- `minecraft:mossy_cobblestone_wall`
 - `minecraft:light_blue_concrete`
+- `minecraft:chiseled_quartz_block`
 - `minecraft:redstone_block`
 Redstone Block
 - `minecraft:brain_coral`
@@ -1371,14 +1375,13 @@ Banner
 Mangrove Planks
 - `minecraft:iron_nugget`
 Iron Nugget
-- `minecraft:coral_fan_hang2`
-Coral Fan Hang 2
 - `minecraft:birch_sign`
 Birch Sign
 - `minecraft:coral_fan_dead`
 Coral Fan Dead
 - `minecraft:balloon`
 Balloon
+- `minecraft:smooth_sandstone_double_slab`
 - `minecraft:jungle_sign`
 Jungle Sign
 - `minecraft:oak_fence`
@@ -1412,8 +1415,6 @@ Piglin Banner Pattern
 - `minecraft:boat`
 Boat
 - `minecraft:guster_banner_pattern`
-- `minecraft:element_78`
-[Education Edition] Platinum (Pt)
 - `minecraft:honeycomb`
 Honeycomb
 - `minecraft:red_nether_brick`
@@ -1426,10 +1427,10 @@ Stripped Warped Hyphae
 Mangrove Sign
 - `minecraft:blue_candle_cake`
 Blue Candle Cake
-- `minecraft:magma`
-Magma
 - `minecraft:element_22`
 [Education Edition] Titanium (Ti)
+- `minecraft:magma`
+Magma
 - `minecraft:ominous_bottle`
 - `minecraft:compound`
 [Education Edition] Compound
@@ -1441,10 +1442,10 @@ Magma
 - `minecraft:hard_light_blue_stained_glass_pane`
 - `minecraft:glow_stick`
 Glow Stick
-- `minecraft:lodestone_compass`
-Lodestone Compass
 - `minecraft:element_83`
 [Education Edition] Bismuth (Bi)
+- `minecraft:lodestone_compass`
+Lodestone Compass
 - `minecraft:quartz_ore`
 Quartz Ore
 - `minecraft:netherite_shovel`
@@ -1460,6 +1461,7 @@ Polished Deepslate Double Slab
 - `minecraft:eye_armor_trim_smithing_template`
 - `minecraft:netherite_axe`
 Netherite Axe
+- `minecraft:mossy_cobblestone_double_slab`
 - `minecraft:netherite_hoe`
 Netherite Hoe
 - `minecraft:black_candle_cake`
@@ -1498,19 +1500,15 @@ Cobbled Deepslate Slab
 Polished Deepslate Slab
 - `minecraft:deepslate_tile_slab`
 Deepslate Tile Slab
-- `minecraft:cobbled_deepslate_wall`
-Cobbled Deepslate Wall
-- `minecraft:element_76`
-[Education Edition] Osmium (Os)
 - `minecraft:amethyst_shard`
 Amethyst Shard
+- `minecraft:music_disc_otherside`
+Music Disc Otherside
+- `minecraft:element_33`
+[Education Edition] Arsenic (As)
 - `minecraft:howl_pottery_sherd`
 - `minecraft:birch_chest_boat`
 Birch Chest Boat
-- `minecraft:element_33`
-[Education Edition] Arsenic (As)
-- `minecraft:music_disc_otherside`
-Music Disc Otherside
 - `minecraft:smooth_red_sandstone_stairs`
 Smooth Red Sandstone Stairs
 - `minecraft:goat_horn`
@@ -1567,8 +1565,10 @@ Recovery Compass
 Tripwire Hook
 - `minecraft:chest_boat`
 Chest Boat
+- `minecraft:light_block_1`
 - `minecraft:echo_shard`
 Echo Shard
+- `minecraft:smooth_quartz`
 - `minecraft:birch_trapdoor`
 Birch Trapdoor
 - `minecraft:trader_llama_spawn_egg`
@@ -1583,8 +1583,6 @@ Lit Furnace
 - `minecraft:cherry_hanging_sign`
 - `minecraft:cherry_slab`
 - `minecraft:bamboo_mosaic_slab`
-- `minecraft:yellow_flower`
-Yellow Flower
 - `minecraft:bamboo_raft`
 - `minecraft:bamboo_chest_raft`
 - `minecraft:element_89`
@@ -1595,14 +1593,12 @@ Quartz Stairs
 - `minecraft:explorer_pottery_sherd`
 - `minecraft:jungle_hanging_sign`
 - `minecraft:acacia_hanging_sign`
-- `minecraft:element_82`
-[Education Edition] Lead (Pb)
 - `minecraft:dark_oak_hanging_sign`
 - `minecraft:polished_tuff`
 - `minecraft:crimson_hanging_sign`
-- `minecraft:warped_hanging_sign`
 - `minecraft:brown_candle`
 Brown Candle
+- `minecraft:warped_hanging_sign`
 - `minecraft:waxed_oxidized_copper`
 Waxed Oxidized Copper
 - `minecraft:double_stone_block_slab`
@@ -1610,6 +1606,9 @@ Double Stone Block Slab
 - `minecraft:archer_pottery_sherd`
 - `minecraft:stone_brick_double_slab`
 - `minecraft:blade_pottery_sherd`
+- `minecraft:gray_candle_cake`
+Gray Candle Cake
+- `minecraft:light_block_5`
 - `minecraft:danger_pottery_sherd`
 - `minecraft:flow_pottery_sherd`
 - `minecraft:friend_pottery_sherd`
@@ -1631,13 +1630,32 @@ Unlit Redstone Torch
 - `minecraft:tide_armor_trim_smithing_template`
 - `minecraft:wayfinder_armor_trim_smithing_template`
 - `minecraft:red_carpet`
+- `minecraft:wither_skeleton_skull`
 - `minecraft:music_disc_relic`
 - `minecraft:wool`
 Wool
+- `minecraft:red_nether_brick_wall`
 - `minecraft:stone`
 Stone
-- `minecraft:green_stained_glass_pane`
 - `minecraft:diorite`
+- `minecraft:light_block_10`
+- `minecraft:green_stained_glass_pane`
+- `minecraft:element_11`
+[Education Edition] Sodium (Na)
+- `minecraft:coarse_dirt`
+- `minecraft:cobblestone_double_slab`
+- `minecraft:skeleton_skull`
+- `minecraft:zombie_head`
+- `minecraft:yellow_shulker_box`
+- `minecraft:player_head`
+- `minecraft:cut_sandstone`
+- `minecraft:creeper_head`
+- `minecraft:dragon_head`
+- `minecraft:orange_stained_glass`
+- `minecraft:skull`
+Skull
+- `minecraft:dark_oak_planks`
+- `minecraft:red_sand`
 - `minecraft:cracked_deepslate_tiles`
 Cracked Deepslate Tiles
 - `minecraft:white_terracotta`
@@ -1646,6 +1664,7 @@ Cracked Polished Blackstone Bricks
 - `minecraft:orange_terracotta`
 - `minecraft:lime_terracotta`
 - `minecraft:gray_terracotta`
+- `minecraft:smooth_red_sandstone_double_slab`
 - `minecraft:cyan_terracotta`
 - `minecraft:purple_terracotta`
 - `minecraft:green_terracotta`
@@ -1661,18 +1680,17 @@ Stained Hardened Clay
 - `minecraft:wolf_armor`
 - `minecraft:deepslate_coal_ore`
 Deepslate Coal Ore
-- `minecraft:tuff_slab`
 - `minecraft:element_9`
 [Education Edition] Fluorine (F)
+- `minecraft:tuff_slab`
 - `minecraft:waxed_oxidized_cut_copper`
 Waxed Oxidized Cut Copper
 - `minecraft:polished_tuff_slab`
 - `minecraft:light_blue_wool`
 - `minecraft:oxidized_chiseled_copper`
 - `minecraft:birch_planks`
+- `minecraft:mossy_stone_brick_wall`
 - `minecraft:tuff_brick_slab`
-- `minecraft:element_3`
-[Education Edition] Lithium (Li)
 - `minecraft:copper_door`
 - `minecraft:oxidized_copper_door`
 - `minecraft:warped_nylium`
@@ -1685,8 +1703,6 @@ Waterlily
 - `minecraft:waxed_exposed_copper_door`
 - `minecraft:waxed_oxidized_copper_door`
 - `minecraft:acacia_log`
-- `minecraft:ominous_trial_key`
-- `minecraft:dead_fire_coral_fan`
 - `minecraft:nether_brick_stairs`
 Nether Brick Stairs
 - `minecraft:white_wool`
@@ -1699,14 +1715,14 @@ Nether Brick Stairs
 Stripped Warped Stem
 - `minecraft:infested_stone_bricks`
 - `minecraft:cyan_wool`
-- `minecraft:blue_wool`
 - `minecraft:element_18`
 [Education Edition] Argon (Ar)
-- `minecraft:brown_wool`
-- `minecraft:element_29`
-[Education Edition] Copper (Cu)
+- `minecraft:blue_wool`
 - `minecraft:cherry_double_slab`
 - `minecraft:brown_stained_glass`
+- `minecraft:element_29`
+[Education Edition] Copper (Cu)
+- `minecraft:brown_wool`
 - `minecraft:red_wool`
 - `minecraft:spruce_standing_sign`
 Spruce Standing Sign
@@ -1739,12 +1755,13 @@ Log
 - `minecraft:structure_block`
 Structure Block
 - `minecraft:jungle_fence`
+- `minecraft:cut_red_sandstone`
 - `minecraft:acacia_fence`
 - `minecraft:dark_oak_fence`
-- `minecraft:fence`
-Fence
 - `minecraft:element_53`
 [Education Edition] Iodine (I)
+- `minecraft:fence`
+Fence
 - `minecraft:waxed_oxidized_double_cut_copper_slab`
 Waxed Oxidized Double Cut Copper Slab
 - `minecraft:stone_bricks`
@@ -1759,8 +1776,6 @@ Stonebrick
 - `minecraft:bubble_coral_block`
 - `minecraft:horn_coral_block`
 - `minecraft:dead_tube_coral_block`
-- `minecraft:green_candle`
-Green Candle
 - `minecraft:dead_bubble_coral_block`
 - `minecraft:dead_fire_coral_block`
 - `minecraft:suspicious_sand`
@@ -1779,10 +1794,9 @@ Coral Block
 Stone Block Slab
 - `minecraft:leaves`
 Leaves
+- `minecraft:andesite_wall`
 - `minecraft:prismarine_brick_slab`
 - `minecraft:mossy_cobblestone_slab`
-- `minecraft:element_8`
-[Education Edition] Oxygen (O)
 - `minecraft:smooth_sandstone_slab`
 - `minecraft:stone_block_slab2`
 Stone Block Slab 2
@@ -1797,25 +1811,51 @@ Lectern
 - `minecraft:andesite_slab`
 - `minecraft:bubble_coral`
 - `minecraft:diorite_slab`
+- `minecraft:prismarine_bricks`
 - `minecraft:granite_slab`
 - `minecraft:spruce_leaves`
+- `minecraft:birch_standing_sign`
+Birch Standing Sign
+- `minecraft:prismarine_wall`
 - `minecraft:chiseled_polished_blackstone`
 Chiseled Polished Blackstone
 - `minecraft:stone_block_slab3`
 Stone Block Slab 3
 - `minecraft:normal_stone_slab`
 - `minecraft:cut_sandstone_slab`
-- `minecraft:cyan_stained_glass_pane`
 - `minecraft:element_16`
 [Education Edition] Sulfur (S)
+- `minecraft:cyan_stained_glass_pane`
 - `minecraft:sandstone_double_slab`
-- `minecraft:cobblestone_double_slab`
-- `minecraft:element_11`
-[Education Edition] Sodium (Na)
+- `minecraft:red_sandstone_double_slab`
+- `minecraft:dark_oak_sapling`
+- `minecraft:prismarine_double_slab`
+- `minecraft:prismarine_brick_double_slab`
+- `minecraft:waxed_cut_copper_stairs`
+Waxed Cut Copper Stairs
+- `minecraft:red_nether_brick_double_slab`
+- `minecraft:fern`
 - `minecraft:normal_stone_stairs`
 Normal Stone Stairs
 - `minecraft:double_stone_block_slab2`
 Double Stone Block Slab 2
+- `minecraft:end_stone_brick_double_slab`
+- `minecraft:polished_andesite_double_slab`
+- `minecraft:border_block`
+Border Block
+- `minecraft:polished_diorite_double_slab`
+- `minecraft:granite_double_slab`
+- `minecraft:element_10`
+[Education Edition] Neon (Ne)
+- `minecraft:polished_granite_double_slab`
+- `minecraft:mossy_stone_brick_double_slab`
+- `minecraft:dead_fire_coral`
+- `minecraft:purple_stained_glass_pane`
+- `minecraft:smooth_quartz_double_slab`
+- `minecraft:cut_sandstone_double_slab`
+- `minecraft:dragon_egg`
+Dragon Egg
+- `minecraft:cut_red_sandstone_double_slab`
 - `minecraft:waxed_oxidized_copper_grate`
 - `minecraft:tnt`
 TNT
@@ -1825,6 +1865,7 @@ Double Stone Block Slab 4
 Sweet Berry Bush
 - `minecraft:tube_coral_fan`
 - `minecraft:bubble_coral_fan`
+- `minecraft:nether_brick_wall`
 - `minecraft:horn_coral_fan`
 - `minecraft:tinted_glass`
 Tinted Glass
@@ -1841,7 +1882,6 @@ Polished Blackstone Button
 Sea Pickle
 - `minecraft:oak_sapling`
 - `minecraft:acacia_sapling`
-- `minecraft:dark_oak_sapling`
 - `minecraft:sapling`
 Sapling
 - `minecraft:oak_leaves`
@@ -1855,11 +1895,15 @@ Soul Fire
 Azalea Leaves Flowered
 - `minecraft:sandstone`
 Sandstone
+- `minecraft:chiseled_sandstone`
+- `minecraft:smooth_sandstone`
 - `minecraft:hard_light_gray_stained_glass_pane`
 - `minecraft:spruce_button`
 Spruce Button
 - `minecraft:red_sandstone`
 Red Sandstone
+- `minecraft:chiseled_red_sandstone`
+- `minecraft:smooth_red_sandstone`
 - `minecraft:jungle_slab`
 - `minecraft:acacia_slab`
 - `minecraft:redstone_lamp`
@@ -1892,9 +1936,16 @@ Red Nether Brick Stairs
 - `minecraft:light_gray_shulker_box`
 - `minecraft:light_blue_concrete_powder`
 - `minecraft:acacia_planks`
-- `minecraft:dark_oak_planks`
 - `minecraft:quartz_block`
 Quartz Block
+- `minecraft:quartz_pillar`
+- `minecraft:deprecated_purpur_block_1`
+- `minecraft:element_77`
+[Education Edition] Iridium (Ir)
+- `minecraft:purpur_pillar`
+- `minecraft:deprecated_purpur_block_2`
+- `minecraft:sandstone_wall`
+- `minecraft:stone_brick_wall`
 - `minecraft:tube_coral`
 - `minecraft:fire_coral`
 - `minecraft:diamond_ore`
@@ -1903,13 +1954,6 @@ Diamond Ore
 - `minecraft:small_amethyst_bud`
 Small Amethyst Bud
 - `minecraft:dead_bubble_coral`
-- `minecraft:dead_fire_coral`
-- `minecraft:purple_stained_glass_pane`
-- `minecraft:element_6`
-[Education Edition] Carbon (C)
-- `minecraft:waxed_cut_copper_stairs`
-Waxed Cut Copper Stairs
-- `minecraft:fern`
 - `minecraft:soul_soil`
 Soul Soil
 - `minecraft:acacia_pressure_plate`
@@ -1920,6 +1964,7 @@ Tallgrass
 [Education Edition] Lawrencium (Lr)
 - `minecraft:brown_mushroom_block`
 Brown Mushroom Block
+- `minecraft:mushroom_stem`
 - `minecraft:dark_oak_log`
 - `minecraft:log2`
 Log 2
@@ -1929,18 +1974,22 @@ Warped Fungus
 [Education Edition] End Portal Frame
 - `minecraft:anvil`
 Anvil
+- `minecraft:big_dripleaf`
+Big Dripleaf
+- `minecraft:deprecated_anvil`
 - `minecraft:infested_stone`
 - `minecraft:conduit`
 Conduit
 - `minecraft:prismarine`
 Prismarine
+- `minecraft:dark_prismarine`
 - `minecraft:gray_concrete`
 - `minecraft:light_gray_concrete`
 - `minecraft:cyan_concrete`
 - `minecraft:purple_concrete`
-- `minecraft:brown_concrete`
 - `minecraft:element_56`
 [Education Edition] Barium (Ba)
+- `minecraft:brown_concrete`
 - `minecraft:green_concrete`
 - `minecraft:lime_candle`
 Lime Candle
@@ -1959,14 +2008,13 @@ Spruce Trapdoor
 - `minecraft:black_concrete_powder`
 - `minecraft:concrete_powder`
 Concrete Powder
-- `minecraft:white_stained_glass`
 - `minecraft:element_75`
 [Education Edition] Rhenium (Re)
-- `minecraft:orange_stained_glass`
-- `minecraft:magenta_stained_glass`
-- `minecraft:stripped_jungle_wood`
+- `minecraft:white_stained_glass`
 - `minecraft:element_64`
 [Education Edition] Gadolinium (Gd)
+- `minecraft:magenta_stained_glass`
+- `minecraft:stripped_jungle_wood`
 - `minecraft:yellow_stained_glass`
 - `minecraft:item.hopper`
 Hopper
@@ -2005,7 +2053,6 @@ End Crystal
 Undyed Shulker Box
 - `minecraft:light_blue_shulker_box`
 - `minecraft:hard_green_stained_glass_pane`
-- `minecraft:yellow_shulker_box`
 - `minecraft:lime_shulker_box`
 - `minecraft:gray_shulker_box`
 - `minecraft:deepslate_diamond_ore`
@@ -2040,6 +2087,8 @@ Bell
 - `minecraft:stripped_dark_oak_wood`
 - `minecraft:music_disc_creator`
 - `minecraft:music_disc_precipice`
+- `minecraft:material_reducer`
+- `minecraft:lab_table`
 - `minecraft:hard_white_stained_glass`
 - `minecraft:packed_ice`
 Packed Ice
@@ -2051,17 +2100,37 @@ Cobbled Deepslate
 - `minecraft:hard_lime_stained_glass`
 - `minecraft:hard_gray_stained_glass`
 - `minecraft:hard_light_gray_stained_glass`
-- `minecraft:red_candle`
-Red Candle
 - `minecraft:hard_green_stained_glass`
-- `minecraft:hard_stained_glass`
-Hard Stained Glass
 - `minecraft:element_84`
 [Education Edition] Polonium (Po)
+- `minecraft:hard_stained_glass`
+Hard Stained Glass
 - `minecraft:hard_yellow_stained_glass_pane`
 - `minecraft:hard_blue_stained_glass_pane`
 - `minecraft:hard_stained_glass_pane`
 [Education Edition] Hard Stained Glass Pane
+- `minecraft:gravel`
+Gravel
+- `minecraft:colored_torch_red`
+- `minecraft:chiseled_tuff`
+- `minecraft:colored_torch_green`
+- `minecraft:light_block_2`
+- `minecraft:light_block_3`
+- `minecraft:light_block_4`
+- `minecraft:light_block_6`
+- `minecraft:moss_block`
+Moss Block
+- `minecraft:lightning_rod`
+Lightning Rod
+- `minecraft:light_block_7`
+- `minecraft:deepslate_tile_double_slab`
+Deepslate Tile Double Slab
+- `minecraft:light_block_8`
+- `minecraft:light_block_11`
+- `minecraft:gold_block`
+Gold Block
+- `minecraft:light_block_12`
+- `minecraft:light_block_13`
 - `minecraft:crimson_slab`
 Crimson Slab
 - `minecraft:candle`
@@ -2078,14 +2147,30 @@ Pink Candle
 Cyan Candle
 - `minecraft:purple_candle`
 Purple Candle
+- `minecraft:green_candle`
+Green Candle
+- `minecraft:red_candle`
+Red Candle
 - `minecraft:polished_deepslate_wall`
 Polished Deepslate Wall
 - `minecraft:black_candle`
 Black Candle
+- `minecraft:element_0`
+[Education Edition] Unknown (?)
+- `minecraft:element_1`
+[Education Edition] Hydrogen (H)
+- `minecraft:element_3`
+[Education Edition] Lithium (Li)
 - `minecraft:element_5`
 [Education Edition] Boron (B)
-- `minecraft:element_10`
-[Education Edition] Neon (Ne)
+- `minecraft:element_6`
+[Education Edition] Carbon (C)
+- `minecraft:diamond_block`
+Diamond Block
+- `minecraft:element_7`
+[Education Edition] Nitrogen (N)
+- `minecraft:element_8`
+[Education Edition] Oxygen (O)
 - `minecraft:element_12`
 [Education Edition] Magnesium (Mg)
 - `minecraft:element_14`
@@ -2100,16 +2185,25 @@ Black Candle
 Pearlescent Froglight
 - `minecraft:element_20`
 [Education Edition] Calcium (Ca)
+- `minecraft:element_21`
+[Education Edition] Scandium (Sc)
 - `minecraft:element_24`
 [Education Edition] Chromium (Cr)
+- `minecraft:element_25`
+[Education Edition] Manganese (Mn)
 - `minecraft:element_26`
 [Education Edition] Iron (Fe)
+- `minecraft:element_28`
+[Education Edition] Nickel (Ni)
 - `minecraft:element_30`
 [Education Edition] Zinc (Zn)
 - `minecraft:element_31`
 [Education Edition] Gallium (Ga)
 - `minecraft:element_34`
 [Education Edition] Selenium (Se)
+- `minecraft:bamboo_double_slab`
+- `minecraft:element_35`
+Bromine (Br)
 - `minecraft:element_36`
 [Education Edition] Krypton (Kr)
 - `minecraft:element_37`
@@ -2124,10 +2218,22 @@ Pearlescent Froglight
 [Education Edition] Rhodium (Rh)
 - `minecraft:element_46`
 [Education Edition] Palladium (Pd)
+- `minecraft:element_47`
+[Education Edition] Silver (Ag)
 - `minecraft:element_48`
 [Education Edition] Cadmium (Cd)
+- `minecraft:soul_sand`
+Soul Sand
+- `minecraft:element_49`
+[Education Edition] Indium (In)
+- `minecraft:stripped_oak_log`
+Stripped Oak Log
+- `minecraft:element_50`
+[Education Edition] Tin (Sn)
 - `minecraft:element_54`
 [Education Edition] Xenon (Xe)
+- `minecraft:element_55`
+[Education Edition] Cesium (Cs)
 - `minecraft:crafting_table`
 Crafting Table
 - `minecraft:element_57`
@@ -2138,6 +2244,10 @@ Crafting Table
 [Education Edition] Praseodymium (Pr)
 - `minecraft:element_60`
 [Education Edition]Neodymium (Nd)
+- `minecraft:element_61`
+[Education Edition] Promethium (Pm)
+- `minecraft:element_63`
+[Education Edition] Europium (Eu)
 - `minecraft:element_65`
 [Education Edition] Terbium (Tb)
 - `minecraft:element_66`
@@ -2150,8 +2260,14 @@ Crafting Table
 [Education Edition] Lutetium (Lu)
 - `minecraft:element_72`
 [Education Edition] Hafnium (Hf)
-- `minecraft:element_77`
-[Education Edition] Iridium (Ir)
+- `minecraft:element_73`
+[Education Edition] Tantalum (Ta)
+- `minecraft:cobbled_deepslate_wall`
+Cobbled Deepslate Wall
+- `minecraft:element_76`
+[Education Edition] Osmium (Os)
+- `minecraft:element_78`
+[Education Edition] Platinum (Pt)
 - `minecraft:crafter`
 - `minecraft:redstone_torch`
 Redstone Torch
@@ -2159,6 +2275,8 @@ Redstone Torch
 [Education Edition] Gold (Au)
 - `minecraft:element_81`
 [Education Edition]Thallium (Ti)
+- `minecraft:element_82`
+[Education Edition] Lead (Pb)
 - `minecraft:tuff_bricks`
 - `minecraft:element_85`
 [Education Edition] Astatine (At)
@@ -2240,8 +2358,6 @@ Banner Pattern
 Spawn Egg
 - `minecraft:glow_berries`
 Glow Berries
-- `minecraft:birch_standing_sign`
-Birch Standing Sign
 - `minecraft:polished_basalt`
 Polished Basalt
 - `minecraft:nether_gold_ore`
@@ -2263,8 +2379,6 @@ Target
 Blackstone Double Slab
 - `minecraft:jungle_button`
 Jungle Button
-- `minecraft:gray_candle_cake`
-Gray Candle Cake
 - `minecraft:cherry_pressure_plate`
 - `minecraft:crimson_wall_sign`
 Crimson Wall Sign
@@ -2308,8 +2422,6 @@ Light Blue Candle Cake
 Moss Carpet
 - `minecraft:amethyst_block`
 Amethyst Block
-- `minecraft:gold_block`
-Gold Block
 - `minecraft:chiseled_bookshelf`
 - `minecraft:weathered_chiseled_copper`
 - `minecraft:iron_trapdoor`
@@ -2322,8 +2434,6 @@ Noteblock
 Tuff
 - `minecraft:mangrove_log`
 Mangrove Log
-- `minecraft:deepslate_tile_double_slab`
-Deepslate Tile Double Slab
 - `minecraft:torchflower`
 - `minecraft:copper_grate`
 - `minecraft:powered_comparator`
@@ -2377,7 +2487,6 @@ Gold Ore
 Stonecutter
 - `minecraft:warped_planks`
 Warped Planks
-- `minecraft:cherry_fence`
 - `minecraft:golden_rail`
 Golden Rail
 - `minecraft:invisible_bedrock`
@@ -2391,10 +2500,6 @@ Smooth Basalt
 Emerald Block
 - `minecraft:heavy_weighted_pressure_plate`
 Heavy Weighted Pressure Plate
-- `minecraft:moss_block`
-Moss Block
-- `minecraft:lightning_rod`
-Lightning Rod
 - `minecraft:underwater_torch`
 Underwater Torch
 - `minecraft:wall_banner`
@@ -2475,10 +2580,9 @@ Rail
 Blackstone Wall
 - `minecraft:mossy_cobblestone_stairs`
 Mossy Cobblestone Stairs
-- `minecraft:coral_fan_hang3`
-Coral Fan Hang 3
 - `minecraft:detector_rail`
 Detector Rail
+- `minecraft:brain_coral_wall_fan`
 - `minecraft:red_glazed_terracotta`
 Red Glazed Terracotta
 - `minecraft:dark_oak_fence_gate`
@@ -2500,10 +2604,6 @@ Lit Redstone Ore
 Stripped Mangrove Wood
 - `minecraft:bone_block`
 Bone Block
-- `minecraft:crimson_fungus`
-Crimson Fungus
-- `minecraft:item.frame`
-Frame
 - `minecraft:lapis_block`
 Lapis Block
 - `minecraft:coal_ore`
@@ -2540,8 +2640,6 @@ Honeycomb Block
 Blackstone
 - `minecraft:chorus_flower`
 Chorus Flower
-- `minecraft:coral_fan_hang`
-Coral Fan Hang
 - `minecraft:cracked_nether_bricks`
 Cracked Nether Bricks
 - `minecraft:powered_repeater`
@@ -2599,13 +2697,12 @@ Melon Stem
 Crimson Planks
 - `minecraft:waxed_weathered_cut_copper`
 Waxed Weathered Cut Copper
+- `minecraft:horn_coral_wall_fan`
 - `minecraft:waxed_oxidized_copper_trapdoor`
 - `minecraft:brick_stairs`
 Brick Stairs
 - `minecraft:wall_sign`
 Wall Sign
-- `minecraft:border_block`
-Border Block
 - `minecraft:shroomlight`
 Shroomlight
 - `minecraft:dark_oak_stairs`
@@ -2618,8 +2715,6 @@ Chiseled Deepslate
 - `minecraft:bamboo_trapdoor`
 - `minecraft:mangrove_wall_sign`
 Mangrove Wall Sign
-- `minecraft:item.skull`
-Skull
 - `minecraft:light_gray_candle_cake`
 Light Gray Candle Cake
 - `minecraft:cherry_leaves`
@@ -2630,6 +2725,7 @@ Cyan Glazed Terracotta
 - `minecraft:chiseled_tuff_bricks`
 - `minecraft:cracked_deepslate_bricks`
 Cracked Deepslate Bricks
+- `minecraft:fire_coral_wall_fan`
 - `minecraft:flowing_lava`
 Flowing Lava
 - `minecraft:jungle_fence_gate`
@@ -2689,8 +2785,6 @@ Crimson Stem
 Warped Hyphae
 - `minecraft:tuff_stairs`
 - `minecraft:grass_block`
-- `minecraft:big_dripleaf`
-Big Dripleaf
 - `minecraft:item.reeds`
 Reeds
 - `minecraft:deepslate_gold_ore`
@@ -2743,7 +2837,6 @@ Cocoa
 - `minecraft:lever`
 Lever
 - `minecraft:weathered_copper_trapdoor`
-- `minecraft:exposed_chiseled_copper`
 - `minecraft:mangrove_fence`
 Mangrove Fence
 - `minecraft:oxidized_copper_grate`
@@ -2759,6 +2852,7 @@ Enchanting Table
 Polished Blackstone Wall
 - `minecraft:waxed_exposed_double_cut_copper_slab`
 Waxed Exposed Double Cut Copper Slab
+- `minecraft:bubble_coral_wall_fan`
 - `minecraft:azalea`
 Azalea
 - `minecraft:mud_bricks`
@@ -2772,7 +2866,6 @@ Bamboo Sapling
 Standing Banner
 - `minecraft:budding_amethyst`
 Budding Amethyst
-- `minecraft:sniffer_egg`
 - `minecraft:jungle_double_slab`
 - `minecraft:purple_glazed_terracotta`
 Purple Glazed Terracotta
@@ -2786,6 +2879,7 @@ Dried Kelp Block
 Blackstone Stairs
 - `minecraft:blue_ice`
 Blue Ice
+- `minecraft:dead_horn_coral_wall_fan`
 - `minecraft:weathered_double_cut_copper_slab`
 Weathered Double Cut Copper Slab
 - `minecraft:netherrack`
@@ -2798,14 +2892,13 @@ Mangrove Button
 Birch Door
 - `minecraft:cherry_wood`
 - `minecraft:bamboo_standing_sign`
+- `minecraft:dead_tube_coral_wall_fan`
 - `minecraft:deepslate_lapis_ore`
 Deepslate Lapis Ore
 - `minecraft:cherry_log`
 - `minecraft:prismarine_stairs`
 Prismarine Stairs
 - `minecraft:polished_tuff_stairs`
-- `minecraft:dragon_egg`
-Dragon Egg
 - `minecraft:nether_brick`
 Nether Brick
 - `minecraft:deepslate_iron_ore`
@@ -2843,8 +2936,6 @@ Acacia Fence Gate
 Lit Smoker
 - `minecraft:lapis_ore`
 Lapis Ore
-- `minecraft:red_candle_cake`
-Red Candle Cake
 - `minecraft:repeating_command_block`
 Repeating Command Block
 - `minecraft:cherry_planks`
@@ -2858,7 +2949,6 @@ Amethyst Cluster
 - `minecraft:waxed_chiseled_copper`
 - `minecraft:crimson_fence`
 Crimson Fence
-- `minecraft:chiseled_tuff`
 - `minecraft:dispenser`
 Dispenser
 - `minecraft:item.soul_campfire`
@@ -2882,6 +2972,5 @@ Raw Iron Block
 Iron Block
 - `minecraft:stripped_mangrove_log`
 Stripped Mangrove Log
-- `minecraft:gravel`
-Gravel
+- `minecraft:tube_coral_wall_fan`
 - `editor:map_marker_spawn_egg`

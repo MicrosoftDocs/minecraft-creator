@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .EnchantmentSlot Enumeration
 description: Contents of the .EnchantmentSlot enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EnchantmentSlot Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Constants
 ### **ArmorFeet**

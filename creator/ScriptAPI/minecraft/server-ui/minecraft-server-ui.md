@@ -43,12 +43,14 @@ form.show(players[0]).then((response) => {
 ```json
 {
     "module_name": "@minecraft/server-ui",
-    "version": "1.1.0"
+    "version": "1.3.0"
 }
 ```
 
 ## Available Versions
-- `1.2.0-beta`
+- `1.4.0-beta`
+- `1.3.0`
+- `1.2.0`
 - `1.1.0`
 - `1.0.0`
 - `0.1.0`
@@ -72,12 +74,7 @@ form.show(players[0]).then((response) => {
 
 ## Objects
   
-::: moniker range="=minecraft-bedrock-experimental"
 ### **uiManager**
 `static read-only uiManager: UIManager;`
 
 Type: [*UIManager*](UIManager.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end

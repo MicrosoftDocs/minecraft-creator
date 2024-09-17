@@ -25,9 +25,9 @@ Adds a callback that will be called before an item is used on a block.
 - **callback**: (arg: [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)) => *void*
 
 **Returns** (arg: [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -38,6 +38,6 @@ Removes a callback from being called before an item is used on a block.
 
 #### **Parameters**
 - **callback**: (arg: [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

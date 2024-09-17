@@ -12,20 +12,6 @@ The tool rail component allows the tool to register an icon and button (and dyna
 
 ## Properties
 
-### **displayAltText**
-`displayAltText: string;`
-
-The text for the tool description
-
-Type: *string*
-
-### **displayStringId**
-`displayStringId: string;`
-
-The string ID for the tool description if it is in the localization language file.
-
-Type: *string*
-
 ### **icon**
 `icon: string;`
 
@@ -53,16 +39,16 @@ Type: *(component: ISimpleToolRailComponent) => void*
 
 Type: *(component: ISimpleToolRailComponent) => void*
 
-### **tooltipAltText**
-`tooltipAltText: string;`
+### **title**
+`title: string;`
 
-The tooltip string for the tool rail button. Note: if an activation key binding was added to `ISimpleToolOptions`, then the key binding will be appended to the tooltip string.
+The text for the tool title
 
 Type: *string*
 
-### **tooltipStringId**
-`tooltipStringId: string;`
+### **tooltip**
+`tooltip: string;`
 
-The string ID for the tooltip string if it is in the localization language file. Note: if an activation key binding was added to `ISimpleToolOptions`, then the key binding will be appended to the tooltip string.
+The tooltip description for the tool. Note: if an activation key binding was added to `ISimpleToolOptions`, then the key binding will be appended to the tooltip string.
 
 Type: *string*

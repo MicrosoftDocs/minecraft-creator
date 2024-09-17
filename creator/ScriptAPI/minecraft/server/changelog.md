@@ -9,7 +9,11 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [1.13.0-beta](#1130-beta)
+- [1.16.0-beta](#1160-beta)
+- [1.14.0](#1140)
+- [1.13.0](#1130)
+- [1.12.0](#1120)
+- [1.11.0](#1110)
 - [1.10.0](#1100)
 - [1.9.0](#190)
 - [1.8.0](#180)
@@ -22,23 +26,148 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.13.0-beta
+## 1.16.0-beta
 #### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added property *[`isWaterlogged`](Block.md#iswaterlogged)*
-- Added property *[`type`](Block.md#type)*
-- Added property *[`typeId`](Block.md#typeid)*
 - Added function *[`canPlace`](Block.md#canplace)*
 - Changed function *[`getComponent`](Block.md#getcomponent)*
   - Changed return type from [*BlockComponent*](BlockComponent.md) (throws exceptions) to *BlockComponentTypeMap[T] | undefined* (throws exceptions)
   - Changed argument `componentId` type from *string* to *T*
+- Added function *[`getMapColor`](Block.md#getmapcolor)*
 - Added function *[`getRedstonePower`](Block.md#getredstonepower)*
-- Added function *[`matches`](Block.md#matches)*
-- Added function *[`setType`](Block.md#settype)*
 - Added function *[`setWaterlogged`](Block.md#setwaterlogged)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
+#### Added *[`BlockFluidContainerComponent`](BlockFluidContainerComponent.md)*
+#### Added *[`BlockLocationIterator`](BlockLocationIterator.md)*
+#### Changed *[`BlockType`](BlockType.md)*
+- Added property *[`canBeWaterlogged`](BlockType.md#canbewaterlogged)*
+#### Added *[`BlockVolume`](BlockVolume.md)*
+#### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
+- Added function *[`getBlockLocationIterator`](BlockVolumeBase.md#getblocklocationiterator)*
+- Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
+#### Added *[`BoundingBoxUtils`](BoundingBoxUtils.md)*
+#### Changed *[`Camera`](Camera.md)*
+- Changed function *[`setCamera`](Camera.md#setcamera)*
+  - Changed argument `setOptions` type from [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) to [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md)
+#### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
+#### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
+#### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
+#### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
+#### Added *[`ClientSystemInfo`](ClientSystemInfo.md)*
+#### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`containsBlock`](Dimension.md#containsblock)*
+- Added function *[`fillBlocks`](Dimension.md#fillblocks)*
+- Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
+- Added function *[`getBlockAbove`](Dimension.md#getblockabove)*
+- Added function *[`getBlockBelow`](Dimension.md#getblockbelow)*
+- Added function *[`getBlocks`](Dimension.md#getblocks)*
+- Added function *[`getWeather`](Dimension.md#getweather)*
+- Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
+  - Added argument `options`
+#### Changed *[`Entity`](Entity.md)*
+- Added property *[`target`](Entity.md#target)*
+- Changed function *[`getComponent`](Entity.md#getcomponent)*
+  - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined*
+  - Changed argument `componentId` type from *string* to *T*
+#### Added *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
+#### Added *[`EntityIterator`](EntityIterator.md)*
+#### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
+#### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
+#### Added *[`FilterGroup`](FilterGroup.md)*
+#### Added *[`FluidContainer`](FluidContainer.md)*
+#### Added *[`ItemDyeableComponent`](ItemDyeableComponent.md)*
+#### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
+#### Changed *[`ItemStack`](ItemStack.md)*
+- Added function *[`createPotion`](ItemStack.md#createpotion)*
+- Changed function *[`getComponent`](ItemStack.md#getcomponent)*
+  - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
+  - Changed argument `componentId` type from *string* to *T*
+#### Changed *[`ItemUseOnAfterEvent`](ItemUseOnAfterEvent.md)*
+- Added property *[`isFirstEvent`](ItemUseOnAfterEvent.md#isfirstevent)*
+#### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
+#### Changed *[`Player`](Player.md)*
+- Added property *[`clientSystemInfo`](Player.md#clientsysteminfo)*
+- Added function *[`eatItem`](Player.md#eatitem)*
+- Added function *[`isOp`](Player.md#isop)*
+- Added function *[`postClientMessage`](Player.md#postclientmessage)*
+- Added function *[`setOp`](Player.md#setop)*
+- Added function *[`spawnParticle`](Player.md#spawnparticle)*
+#### Changed *[`PlayerInteractWithBlockAfterEvent`](PlayerInteractWithBlockAfterEvent.md)*
+- Added property *[`beforeItemStack`](PlayerInteractWithBlockAfterEvent.md#beforeitemstack)*
+- Added property *[`isFirstEvent`](PlayerInteractWithBlockAfterEvent.md#isfirstevent)*
+#### Changed *[`PlayerInteractWithBlockBeforeEvent`](PlayerInteractWithBlockBeforeEvent.md)*
+- Added property *[`isFirstEvent`](PlayerInteractWithBlockBeforeEvent.md#isfirstevent)*
+#### Changed *[`PlayerInteractWithEntityAfterEvent`](PlayerInteractWithEntityAfterEvent.md)*
+- Added property *[`beforeItemStack`](PlayerInteractWithEntityAfterEvent.md#beforeitemstack)*
+#### Added *[`PlayerIterator`](PlayerIterator.md)*
+#### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
+#### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
+#### Added *[`PotionEffectType`](PotionEffectType.md)*
+#### Added *[`PotionLiquidType`](PotionLiquidType.md)*
+#### Added *[`PotionModifierType`](PotionModifierType.md)*
+#### Added *[`Potions`](Potions.md)*
+#### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
+#### Changed *[`System`](System.md)*
+- Added property *[`beforeEvents`](System.md#beforeevents)*
+- Added property *[`serverSystemInfo`](System.md#serversysteminfo)*
+#### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
+#### Added *[`SystemInfo`](SystemInfo.md)*
+#### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
+#### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
+#### Changed *[`World`](World.md)*
+- Added property *[`isHardcore`](World.md#ishardcore)*
+- Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
+- Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
+- Added property *[`playerInteractWithBlock`](WorldAfterEvents.md#playerinteractwithblock)*
+- Added property *[`playerInteractWithEntity`](WorldAfterEvents.md#playerinteractwithentity)*
+#### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
+- Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
+- Added property *[`playerInteractWithBlock`](WorldBeforeEvents.md#playerinteractwithblock)*
+- Added property *[`playerInteractWithEntity`](WorldBeforeEvents.md#playerinteractwithentity)*
+- Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
+#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Added value `FluidContainer`
+#### Added enum [`BlockVolumeIntersection`](BlockVolumeIntersection.md)
+#### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
+#### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
+#### Added enum [`Difficulty`](Difficulty.md)
+#### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
+- Added value `Breathable`
+- Added value `Npc`
+#### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
+- Added value `Body`
+#### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
+- Added value `Dyeable`
+- Added value `Potion`
+#### Added enum [`MemoryTier`](MemoryTier.md)
+#### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+#### Added constant `TicksPerDay`
+## 1.14.0
+#### Added *[`BlockRecordPlayerComponent`](BlockRecordPlayerComponent.md)*
+#### Added *[`PlayerCursorInventoryComponent`](PlayerCursorInventoryComponent.md)*
+#### Added *[`PlayerEmoteAfterEvent`](PlayerEmoteAfterEvent.md)*
+#### Added *[`PlayerEmoteAfterEventSignal`](PlayerEmoteAfterEventSignal.md)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`playerEmote`](WorldAfterEvents.md#playeremote)*
+#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Added value `RecordPlayer`
+#### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
+- Added value `CursorInventory`
+## 1.13.0
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`getTopmostBlock`](Dimension.md#gettopmostblock)*
+#### Added *[`EntityLeashableComponent`](EntityLeashableComponent.md)*
+#### Added *[`EntityStrengthComponent`](EntityStrengthComponent.md)*
+#### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
+- Added value `Leashable`
+- Added value `Strength`
+## 1.12.0
 #### Added *[`BlockComponentEntityFallOnEvent`](BlockComponentEntityFallOnEvent.md)*
 #### Added *[`BlockComponentOnPlaceEvent`](BlockComponentOnPlaceEvent.md)*
 #### Added *[`BlockComponentPlayerDestroyEvent`](BlockComponentPlayerDestroyEvent.md)*
@@ -51,85 +180,32 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BlockComponentTickEvent`](BlockComponentTickEvent.md)*
 #### Added *[`BlockExplodeAfterEvent`](BlockExplodeAfterEvent.md)*
 #### Added *[`BlockExplodeAfterEventSignal`](BlockExplodeAfterEventSignal.md)*
-#### Added *[`BlockLavaContainerComponent`](BlockLavaContainerComponent.md)*
-#### Added *[`BlockLiquidContainerComponent`](BlockLiquidContainerComponent.md)*
-#### Added *[`BlockLocationIterator`](BlockLocationIterator.md)*
 #### Changed *[`BlockPermutation`](BlockPermutation.md)*
-- Added property *[`type`](BlockPermutation.md#type)*
 - Added function *[`getTags`](BlockPermutation.md#gettags)*
 - Added function *[`hasTag`](BlockPermutation.md#hastag)*
-#### Added *[`BlockPotionContainerComponent`](BlockPotionContainerComponent.md)*
-#### Added *[`BlockRecordPlayerComponent`](BlockRecordPlayerComponent.md)*
-#### Added *[`BlockSnowContainerComponent`](BlockSnowContainerComponent.md)*
-#### Changed *[`BlockType`](BlockType.md)*
-- Added property *[`canBeWaterlogged`](BlockType.md#canbewaterlogged)*
-- Added property *[`id`](BlockType.md#id)*
-#### Added *[`BlockTypes`](BlockTypes.md)*
-#### Added *[`BlockVolume`](BlockVolume.md)*
-#### Added *[`BlockVolumeBase`](BlockVolumeBase.md)*
-#### Added *[`BlockWaterContainerComponent`](BlockWaterContainerComponent.md)*
-#### Added *[`BoundingBoxUtils`](BoundingBoxUtils.md)*
-#### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
-#### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
-#### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
-#### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
-#### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
 #### Changed *[`Dimension`](Dimension.md)*
-- Added function *[`containsBlock`](Dimension.md#containsblock)*
-- Added function *[`fillBlocks`](Dimension.md#fillblocks)*
-- Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
-- Added function *[`getBlockAbove`](Dimension.md#getblockabove)*
-- Added function *[`getBlockBelow`](Dimension.md#getblockbelow)*
-- Added function *[`getBlocks`](Dimension.md#getblocks)*
-- Added function *[`getTopmostBlock`](Dimension.md#gettopmostblock)*
-- Added function *[`getWeather`](Dimension.md#getweather)*
-- Added function *[`playSound`](Dimension.md#playsound)*
 - Added function *[`setBlockPermutation`](Dimension.md#setblockpermutation)*
 - Added function *[`setBlockType`](Dimension.md#setblocktype)*
-- Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
-  - Added argument `options`
-#### Added *[`EnchantmentType`](EnchantmentType.md)*
-#### Added *[`EnchantmentTypes`](EnchantmentTypes.md)*
-#### Changed *[`Entity`](Entity.md)*
-- Added property *[`target`](Entity.md#target)*
-- Changed function *[`getComponent`](Entity.md#getcomponent)*
-  - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined*
-  - Changed argument `componentId` type from *string* to *T*
-#### Added *[`EntityAddRiderComponent`](EntityAddRiderComponent.md)*
+#### Changed *[`EnchantmentTypes`](EnchantmentTypes.md)*
+- Added function *[`getAll`](EnchantmentTypes.md#getall)*
 #### Added *[`EntityAgeableComponent`](EntityAgeableComponent.md)*
-#### Added *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
-#### Added *[`EntityColor2Component`](EntityColor2Component.md)*
-#### Changed *[`EntityComponent`](EntityComponent.md)*
-- Added property *[`entity`](EntityComponent.md#entity)*
 #### Added *[`EntityDefinitionFeedItem`](EntityDefinitionFeedItem.md)*
 #### Changed *[`EntityHitBlockAfterEvent`](EntityHitBlockAfterEvent.md)*
 - Added property *[`hitBlockPermutation`](EntityHitBlockAfterEvent.md#hitblockpermutation)*
-#### Added *[`EntityIterator`](EntityIterator.md)*
 #### Added *[`EntityLavaMovementComponent`](EntityLavaMovementComponent.md)*
-#### Added *[`EntityLeashableComponent`](EntityLeashableComponent.md)*
 #### Added *[`EntityMovementComponent`](EntityMovementComponent.md)*
 #### Added *[`EntityMovementGlideComponent`](EntityMovementGlideComponent.md)*
 #### Added *[`EntityMovementSwayComponent`](EntityMovementSwayComponent.md)*
-#### Added *[`EntityNavigationClimbComponent`](EntityNavigationClimbComponent.md)*
-#### Added *[`EntityNavigationComponent`](EntityNavigationComponent.md)*
-#### Added *[`EntityNavigationFloatComponent`](EntityNavigationFloatComponent.md)*
-#### Added *[`EntityNavigationFlyComponent`](EntityNavigationFlyComponent.md)*
-#### Added *[`EntityNavigationGenericComponent`](EntityNavigationGenericComponent.md)*
-#### Added *[`EntityNavigationHoverComponent`](EntityNavigationHoverComponent.md)*
-#### Added *[`EntityNavigationWalkComponent`](EntityNavigationWalkComponent.md)*
-#### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
-#### Added *[`EntityRideableComponent`](EntityRideableComponent.md)*
-#### Added *[`EntityRidingComponent`](EntityRidingComponent.md)*
-#### Added *[`EntityStrengthComponent`](EntityStrengthComponent.md)*
 #### Added *[`EntityTameableComponent`](EntityTameableComponent.md)*
-#### Added *[`EntityTameMountComponent`](EntityTameMountComponent.md)*
-#### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
+#### Changed *[`EntityTameMountComponent`](EntityTameMountComponent.md)*
+- Added property *[`isTamed`](EntityTameMountComponent.md#istamed)*
+- Added property *[`isTamedToPlayer`](EntityTameMountComponent.md#istamedtoplayer)*
+- Added property *[`tamedToPlayer`](EntityTameMountComponent.md#tamedtoplayer)*
+- Added property *[`tamedToPlayerId`](EntityTameMountComponent.md#tamedtoplayerid)*
+- Added function *[`tameToPlayer`](EntityTameMountComponent.md#tametoplayer)*
 #### Added *[`EntityUnderwaterMovementComponent`](EntityUnderwaterMovementComponent.md)*
-#### Added *[`FilterGroup`](FilterGroup.md)*
-#### Added *[`FluidContainer`](FluidContainer.md)*
-#### Added *[`GameRuleChangeAfterEvent`](GameRuleChangeAfterEvent.md)*
-#### Added *[`GameRuleChangeAfterEventSignal`](GameRuleChangeAfterEventSignal.md)*
-#### Added *[`GameRules`](GameRules.md)*
+#### Changed *[`GameRules`](GameRules.md)*
+- Added property *[`showDaysPlayed`](GameRules.md#showdaysplayed)*
 #### Added *[`ItemCompleteUseEvent`](ItemCompleteUseEvent.md)*
 #### Added *[`ItemComponentBeforeDurabilityDamageEvent`](ItemComponentBeforeDurabilityDamageEvent.md)*
 #### Added *[`ItemComponentCompleteUseEvent`](ItemComponentCompleteUseEvent.md)*
@@ -139,44 +215,84 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ItemComponentRegistry`](ItemComponentRegistry.md)*
 #### Added *[`ItemComponentUseEvent`](ItemComponentUseEvent.md)*
 #### Added *[`ItemComponentUseOnEvent`](ItemComponentUseOnEvent.md)*
-#### Added *[`ItemEnchantableComponent`](ItemEnchantableComponent.md)*
-#### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
-#### Changed *[`ItemStack`](ItemStack.md)*
-- Added function *[`createPotion`](ItemStack.md#createpotion)*
-- Changed function *[`getComponent`](ItemStack.md#getcomponent)*
-  - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
-  - Changed argument `componentId` type from *string* to *T*
-- Added function *[`matches`](ItemStack.md#matches)*
 #### Added *[`ItemTypes`](ItemTypes.md)*
 #### Added *[`ItemUseOnEvent`](ItemUseOnEvent.md)*
-#### Added *[`ListBlockVolume`](ListBlockVolume.md)*
-#### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Changed *[`Player`](Player.md)*
 - Added property *[`inputPermissions`](Player.md#inputpermissions)*
+#### Added *[`PlayerInputPermissionCategoryChangeAfterEvent`](PlayerInputPermissionCategoryChangeAfterEvent.md)*
+#### Added *[`PlayerInputPermissionCategoryChangeAfterEventSignal`](PlayerInputPermissionCategoryChangeAfterEventSignal.md)*
+#### Added *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
+#### Changed *[`System`](System.md)*
+- Added function *[`clearJob`](System.md#clearjob)*
+- Added function *[`runJob`](System.md#runjob)*
+- Added function *[`waitTicks`](System.md#waitticks)*
+#### Added *[`Trigger`](Trigger.md)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`blockExplode`](WorldAfterEvents.md#blockexplode)*
+- Added property *[`playerInputPermissionCategoryChange`](WorldAfterEvents.md#playerinputpermissioncategorychange)*
+#### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
+- Added property *[`worldInitialize`](WorldBeforeEvents.md#worldinitialize)*
+#### Added *[`WorldInitializeBeforeEvent`](WorldInitializeBeforeEvent.md)*
+#### Added *[`WorldInitializeBeforeEventSignal`](WorldInitializeBeforeEventSignal.md)*
+#### Added enum [`CustomComponentNameErrorReason`](CustomComponentNameErrorReason.md)
+#### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
+- Added value `Ageable`
+- Added value `LavaMovement`
+- Added value `Movement`
+- Added value `MovementGlide`
+- Added value `MovementSway`
+- Added value `Tameable`
+- Added value `UnderwaterMovement`
+#### Changed enum [`GameRule`](GameRule.md)
+- Added value `ShowDaysPlayed`
+#### Added enum [`InputPermissionCategory`](InputPermissionCategory.md)
+## 1.11.0
+#### Changed *[`Block`](Block.md)*
+- Added property *[`type`](Block.md#type)*
+- Added property *[`typeId`](Block.md#typeid)*
+- Added function *[`matches`](Block.md#matches)*
+- Added function *[`setType`](Block.md#settype)*
+#### Changed *[`BlockPermutation`](BlockPermutation.md)*
+- Added property *[`type`](BlockPermutation.md#type)*
+#### Changed *[`BlockType`](BlockType.md)*
+- Added property *[`id`](BlockType.md#id)*
+#### Added *[`BlockTypes`](BlockTypes.md)*
+#### Added *[`BlockVolumeBase`](BlockVolumeBase.md)*
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`playSound`](Dimension.md#playsound)*
+#### Added *[`EnchantmentType`](EnchantmentType.md)*
+#### Added *[`EnchantmentTypes`](EnchantmentTypes.md)*
+#### Added *[`EntityAddRiderComponent`](EntityAddRiderComponent.md)*
+#### Added *[`EntityColor2Component`](EntityColor2Component.md)*
+#### Changed *[`EntityComponent`](EntityComponent.md)*
+- Added property *[`entity`](EntityComponent.md#entity)*
+#### Added *[`EntityNavigationClimbComponent`](EntityNavigationClimbComponent.md)*
+#### Added *[`EntityNavigationComponent`](EntityNavigationComponent.md)*
+#### Added *[`EntityNavigationFloatComponent`](EntityNavigationFloatComponent.md)*
+#### Added *[`EntityNavigationFlyComponent`](EntityNavigationFlyComponent.md)*
+#### Added *[`EntityNavigationGenericComponent`](EntityNavigationGenericComponent.md)*
+#### Added *[`EntityNavigationHoverComponent`](EntityNavigationHoverComponent.md)*
+#### Added *[`EntityNavigationWalkComponent`](EntityNavigationWalkComponent.md)*
+#### Added *[`EntityRideableComponent`](EntityRideableComponent.md)*
+#### Added *[`EntityRidingComponent`](EntityRidingComponent.md)*
+#### Added *[`EntityTameMountComponent`](EntityTameMountComponent.md)*
+#### Added *[`GameRuleChangeAfterEvent`](GameRuleChangeAfterEvent.md)*
+#### Added *[`GameRuleChangeAfterEventSignal`](GameRuleChangeAfterEventSignal.md)*
+#### Added *[`GameRules`](GameRules.md)*
+#### Added *[`ItemEnchantableComponent`](ItemEnchantableComponent.md)*
+#### Changed *[`ItemStack`](ItemStack.md)*
+- Added function *[`matches`](ItemStack.md#matches)*
+#### Added *[`ListBlockVolume`](ListBlockVolume.md)*
+#### Changed *[`Player`](Player.md)*
 - Added property *[`selectedSlotIndex`](Player.md#selectedslotindex)*
-- Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getGameMode`](Player.md#getgamemode)*
 - Added function *[`getItemCooldown`](Player.md#getitemcooldown)*
-- Added function *[`isOp`](Player.md#isop)*
-- Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`setGameMode`](Player.md#setgamemode)*
-- Added function *[`setOp`](Player.md#setop)*
-- Added function *[`spawnParticle`](Player.md#spawnparticle)*
 - Added function *[`startItemCooldown`](Player.md#startitemcooldown)*
 #### Added *[`PlayerGameModeChangeAfterEvent`](PlayerGameModeChangeAfterEvent.md)*
 #### Added *[`PlayerGameModeChangeAfterEventSignal`](PlayerGameModeChangeAfterEventSignal.md)*
 #### Added *[`PlayerGameModeChangeBeforeEvent`](PlayerGameModeChangeBeforeEvent.md)*
 #### Added *[`PlayerGameModeChangeBeforeEventSignal`](PlayerGameModeChangeBeforeEventSignal.md)*
-#### Added *[`PlayerInputPermissionCategoryChangeAfterEvent`](PlayerInputPermissionCategoryChangeAfterEvent.md)*
-#### Added *[`PlayerInputPermissionCategoryChangeAfterEventSignal`](PlayerInputPermissionCategoryChangeAfterEventSignal.md)*
-#### Added *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
-#### Added *[`PlayerIterator`](PlayerIterator.md)*
-#### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
-#### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
-#### Added *[`PotionEffectType`](PotionEffectType.md)*
-#### Added *[`PotionLiquidType`](PotionLiquidType.md)*
-#### Added *[`PotionModifierType`](PotionModifierType.md)*
-#### Added *[`Potions`](Potions.md)*
 #### Changed *[`ScreenDisplay`](ScreenDisplay.md)*
 - Added function *[`getHiddenHudElements`](ScreenDisplay.md#gethiddenhudelements)*
 - Added function *[`hideAllExcept`](ScreenDisplay.md#hideallexcept)*
@@ -184,7 +300,6 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`resetHudElements`](ScreenDisplay.md#resethudelements)*
 - Added function *[`setHudVisibility`](ScreenDisplay.md#sethudvisibility)*
 #### Added *[`Seat`](Seat.md)*
-#### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Changed *[`Structure`](Structure.md)*
 - Added function *[`saveAs`](Structure.md#saveas)*
 - Added function *[`saveToWorld`](Structure.md#savetoworld)*
@@ -192,88 +307,37 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`StructureManager`](StructureManager.md)*
 - Added function *[`createFromWorld`](StructureManager.md#createfromworld)*
 - Added function *[`getWorldStructureIds`](StructureManager.md#getworldstructureids)*
-#### Changed *[`System`](System.md)*
-- Added property *[`beforeEvents`](System.md#beforeevents)*
-- Added function *[`clearJob`](System.md#clearjob)*
-- Added function *[`runJob`](System.md#runjob)*
-- Added function *[`waitTicks`](System.md#waitticks)*
-#### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
-#### Added *[`Trigger`](Trigger.md)*
-#### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
-#### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Added *[`WeatherChangeBeforeEvent`](WeatherChangeBeforeEvent.md)*
 #### Added *[`WeatherChangeBeforeEventSignal`](WeatherChangeBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
 - Added property *[`gameRules`](World.md#gamerules)*
-- Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
-- Added property *[`blockExplode`](WorldAfterEvents.md#blockexplode)*
-- Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`gameRuleChange`](WorldAfterEvents.md#gamerulechange)*
-- Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`playerGameModeChange`](WorldAfterEvents.md#playergamemodechange)*
-- Added property *[`playerInputPermissionCategoryChange`](WorldAfterEvents.md#playerinputpermissioncategorychange)*
-- Added property *[`playerInteractWithBlock`](WorldAfterEvents.md#playerinteractwithblock)*
-- Added property *[`playerInteractWithEntity`](WorldAfterEvents.md#playerinteractwithentity)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
-- Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerGameModeChange`](WorldBeforeEvents.md#playergamemodechange)*
-- Added property *[`playerInteractWithBlock`](WorldBeforeEvents.md#playerinteractwithblock)*
-- Added property *[`playerInteractWithEntity`](WorldBeforeEvents.md#playerinteractwithentity)*
-- Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 - Added property *[`weatherChange`](WorldBeforeEvents.md#weatherchange)*
-- Added property *[`worldInitialize`](WorldBeforeEvents.md#worldinitialize)*
-#### Added *[`WorldInitializeBeforeEvent`](WorldInitializeBeforeEvent.md)*
-#### Added *[`WorldInitializeBeforeEventSignal`](WorldInitializeBeforeEventSignal.md)*
-#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
-- Added value `LavaContainer`
-- Added value `PotionContainer`
-- Added value `RecordPlayer`
-- Added value `SnowContainer`
-- Added value `WaterContainer`
-#### Added enum [`BlockVolumeIntersection`](BlockVolumeIntersection.md)
-#### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
-#### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
-#### Added enum [`CustomComponentNameErrorReason`](CustomComponentNameErrorReason.md)
-#### Added enum [`Difficulty`](Difficulty.md)
 #### Added enum [`EnchantmentSlot`](EnchantmentSlot.md)
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Added value `AddRider`
-- Added value `Ageable`
-- Added value `Breathable`
 - Added value `Color2`
-- Added value `LavaMovement`
-- Added value `Leashable`
-- Added value `Movement`
-- Added value `MovementGlide`
-- Added value `MovementSway`
 - Added value `NavigationClimb`
 - Added value `NavigationFloat`
 - Added value `NavigationFly`
 - Added value `NavigationGeneric`
 - Added value `NavigationHover`
 - Added value `NavigationWalk`
-- Added value `Npc`
 - Added value `Rideable`
 - Added value `Riding`
-- Added value `Strength`
-- Added value `Tameable`
 - Added value `TameMount`
-- Added value `UnderwaterMovement`
-#### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
-- Added value `Body`
 #### Added enum [`GameRule`](GameRule.md)
 #### Added enum [`HudElement`](HudElement.md)
 #### Added enum [`HudVisibility`](HudVisibility.md)
-#### Added enum [`InputPermissionCategory`](InputPermissionCategory.md)
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `Enchantable`
-- Added value `Potion`
 #### Added enum [`PaletteColor`](PaletteColor.md)
-#### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `HudElementsCount`
 #### Added constant `HudVisibilityCount`
-#### Added constant `TicksPerDay`
 ## 1.10.0
 #### Changed *[`Block`](Block.md)*
 - Added function *[`getItemStack`](Block.md#getitemstack)*
@@ -488,6 +552,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`EasingType`](EasingType.md)
 #### Changed enum [`EntityDamageCause`](EntityDamageCause.md)
 - Added value `campfire`
+- Added value `maceSmash`
 - Added value `ramAttack`
 - Added value `sonicBoom`
 - Added value `soulCampfire`

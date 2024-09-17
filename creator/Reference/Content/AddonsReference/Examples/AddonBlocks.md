@@ -1,174 +1,17 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Addons Documentation - Blocks
+title: Default Minecraft Block Listings
 description: "A reference document listing the available blocks for use in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Addon - Blocks
+# Default Minecraft Block Listings
 
 Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 
 > [!NOTE]
 > To learn more about how blocks function in Minecraft: Bedrock Edition, please take a look at the [Block JSON Documentation](../../BlockReference/index.yml)
-
-## BlockStates
-
-| Block State Name| Type| Valid Values| Description |
-|:-----------|:-----------|:-----------|:-----------|
-| active| Boolean | True, False| Determines whether the block is active or not |
-| age| Integer| 0 - 15| Represents the age of the block |
-| age_bit| Boolean| True, False| Determines if saplings should grow |
-| allow_underwater_bit| Boolean|  True, False| Determines if a TNT block works underwater |
-| attached_bit| Boolean| True, False| Determines if a tripwire is attached to another tripwire |
-| attachment| String|standing, hanging, side, multiple| Determines the type of attachment used by a bell or grindstone block |
-| bamboo_leaf_size| String| no_leaves, small_leaves, large_leaves| Determines the size of bamboo leaves |
-| bamboo_stalk_thickness| String|thin, thick| Determines the thickness of a bamboo stalk |
-| big_dripleaf_tilt| String| none, unstable, partial_tilt, full_tilt| Determines the tilt state of big dripleaf block |
-| bite_counter| Integer |0 - 6| Tracks how many bites of cake have been taken |
-| books_stored| Integer |0 - 6| Determines how many books are stored in the chiseled bookshelf |
-| brewing_stand_slot_a_bit| Boolean| True, False| Determines if a bottle is shown in slot a of the brewing stand |
-| brewing_stand_slot_b_bit| Boolean| True, False| Determines if a bottle is shown in slot b of the brewing stand |
-| brewing_stand_slot_c_bit| Boolean| True, False| Determines if a bottle is shown in slot c of the brewing stand |
-| button_pressed_bit| Boolean| True, False| Determines if a button is in the pressed state or not |
-| candles| Integer|  0 - 3| Describes how many extra candles are in the same block space |
-| cauldron_liquid| String|water, lava| Determines the type of liquid in a cauldron |
-| chemistry_table_type| String| compound_creator, material_reducer, element_constructor, lab_table| Determines the type of the work benches that are behind the edu features toggle |
-| chisel_type| String| default, chiseled, lines, smooth| Determines the pattern of quartz and purpur blocks |
-| cluster_count| Integer| 0 - 3| Describes how many sea pickles are in a cluster |
-| color| String| white, orange, magenta, light_blue, yellow, lime, pink, gray, silver, cyan, purple, blue, brown, green, red, black| Determines the color of a block like wool |
-| color_bit| Boolean| True, False| Sets if a torch is a colored torch block |
-| conditional_bit| Boolean| True, False| Determines if a command block is conditional or not |
-| coral_color| String| blue, pink, purple, red, yellow, blue dead, pink dead, red dead, yellow dead| Determines the color of a coral block |
-| coral_direction| Integer| 0 - 3| Describes the rotation of coral fans |
-| coral_hang_type_bit| Boolean| True, False| Describes the type of hanging for coral fans |
-| covered_bit| Boolean|True, False| Describes if a top snow block is covering another block |
-| cracked_state| String| no_cracks, cracked, max_cracked| Determines the cracked state of turtle eggs |
-| crafting| Boolean| True, False| Describes if the block has just crafted|
-| damage| String| undamaged, slightly_damaged, very_damaged, broken| Determines the state of damage of an Anvil |
-| dead_bit| Boolean| True, False| Determines if coral, coral fans, or sea pickles are dead |
-| direction| Integer| 0 - 3| Determines the North, South, East, and West direction of some blocks. 0 = South, 1 = West, 2 = North 3 = East |
-| dirt_type| String| normal, coarse| Determines the dirt type of a block |
-| disarmed_bit| Boolean| True, False| Determines if a tripwire is disarmed or not. |
-| door_hinge_bit| Boolean|True, False| Determines if door's hinge is mirrored or not |
-| double_plant_type| String| sunflower, syringa, grass, fern, rose, paeonia| Determines the type of a double plant block |
-| drag_down| Boolean| True, False| Describes if bubble columns drag entities down or pushes them up |
-| dripstone_thickness| String| tip, frustum, base, middle, merge| Determines the type of a pointed dripstone block |
-| end_portal_eye_bit| Boolean| True, False| Determines if an end portal block has an Eye in it |
-| explode_bit| Boolean| True, False| Determines if a TNT block should start its explode sequence |
-| facing_direction| Integer| 0 - 5| Determines the Up, Down, North, South, East, and West direction of some blocks. 0 = Down, 1 = Up, 2 = North, 3 = South, 4 = West, 5 = East |
-| fill_level| Integer| 0 - 6| Determines fill level of a cauldron block |
-| flower_type| String| poppy, orchid, allium, houstonia, tulip_red, tulip_orange, tulip_white, tulip_pink, oxeye, cornflower, lily_of_the_valley| Determines the type of a flower block |
-| ground_sign_direction| Integer| 0 - 15| Describes the rotation of signs and standing banners |
-| growth| Integer| 0 - 7| Determines the growth level of crops |
-| hanging| Boolean| True, False| Describes if a lantern block is hanging or not |
-| head_piece_bit| Boolean| True, False| Determines if a block is the pillow side of a bed |
-| height| Integer| 0 - 7| Determines the height of a top snow block |
-| huge_mushroom_bits| Integer| 0 - 15| Determines which huge mushroom block to be displayed |
-| in_wall_bit| Boolean| True, False| Determines if a fence block is connected to a wall block |
-| infiniburn_bit| Boolean| True, False| Determines if a block should burn infinitely |
-| item_frame_map_bit| Boolean| True, False| Describes if an item frame block has a map in it |
-| item_frame_photo_bit| Boolean| True, False| Describes if an item frame block has a photo in it |
-| liquid_depth| Integer| 0 - 15| Determines the level of liquid blocks |
-| lit| Boolean| True, False| Determines if a block is lit or not |
-| moisturized_amount| Integer| 0 - 7| Determines the moisture level of crops |
-| monster_egg_stone_type| String| stone, cobblestone, stone_brick, mossy_stone_brick, cracked_stone_brick, chiseled_stone_brick| Determines the stone type of a monster egg block |
-| new_leaf_type| String| acacia, dark_oak| Determines the leaf type of some blocks |
-| new_log_type| String| acacia, dark_oak| Determines the wood type of some blocks |
-| no_drop_bit| Boolean| True, False| Determines if a skull block should drop loot |
-| occupied_bit| Boolean| True, False| Determines if a bed block is occupied |
-| old_leaf_type| String| oak, spruce, birch, jungle| Determines the leaf type of some blocks |
-| old_log_type| String| oak, spruce, birch, jungle| Determines the wood type of some blocks |
-| open_bit| Boolean| True, False| Determines if a door, gate, or trapdoor is open |
-| orientation| Integer| 0-11| A 12-variant orientation|
-| output_lit_bit| Boolean| True, False| Determines if a Comparator's output is lit |
-| output_subtract_bit| Boolean| True, False| Determines if a Comparator is set to subtract output |
-| persistent_bit| Boolean| True, False| Determines if a leaf block is persistent |
-| portal_axis| String| unknown, x, z| Determines the orientation of portal blocks |
-| powered_bit| Boolean| True, False| Shows when an observer or tripwire sends a redstone signal |
-| rail_data_bit| Boolean| True, False| Shows if a rail has a redstone signal |
-| rail_direction| Integer| 0 - 8| Determines the orientation of a placed rail block |
-| redstone_signal| Integer| 0 - 15| Determines the signal strength of a redstone signal |
-| repeater_delay| Integer| 0 - 3| Determines the amount of delay of a repeater |
-| sand_stone_type| String| default, hieroglyphs, cut, smooth| Determines the pattern of a sandstone block |
-| sand_type| String| normal, red| Determines the sand type of a block |
-| sapling_type| String| evergreen, birch, jungle, acacia, roofed_oak| Determines the type of the sapling block |
-| sea_grass_type| String| default, double_top, double_bot| Determines the type of a seagrass block |
-| sponge_type| String| dry, wet| Determines the type of a sponge block |
-| stability| Integer| 0 - 5| Determines the stability of a scaffolding block |
-| stability_check| Boolean| True, False| Describes if a scaffolding block has been checked for stability |
-| stone_brick_type| String| default, mossy, cracked, chiseled, smooth| Determines the type of a stone brick block |
-| stone_slab_type| String| smooth_stone, sandstone, wood, cobblestone, brick, stone_brick, quartz, nether_brick| Determines the type of some stone slab blocks |
-| stone_slab_type_2| String| red_sandstone, purpur, prismarine_rough, prismarine_dark, prismarine_brick, mossy_cobblestone, smooth_sandstone, red_nether_brick| Determines the type of some stone slab blocks |
-| stone_slab_type_3| String| end_stone_brick, smooth_red_sandstone, polished_andesite, andesite, diorite, polished_diorite, granite, polished_granite| Determines the type of some stone slab blocks |
-| stone_slab_type_4| String| mossy_stone_brick, smooth_quartz, stone, cut_sandstone, cut_red_sandstone| Determines the type of some stone slab blocks |
-| stone_type| String| stone, granite, granite_smooth, diorite, diorite_smooth, andesite, andesite_smooth| Determines the stone type of a block |
-| stripped_bit| Boolean| True, False| Describes if a wood log has been stripped of bark |
-| structure_block_type| String| data, save, load, corner, invalid, export| Determines the state of a structure block |
-| structure_void_type| String| void, air| Determines which void mode to draw for structure blocks |
-| suspended_bit| Boolean| True, False| Indicates if a tripwire block is suspended |
-| tall_grass_type| String| default, tall, fern, snow| Determines the type of a tall grass block |
-| toggle_bit| Boolean| True, False| Determines if a hopper block is active or not |
-| top_slot_bit| Boolean| True, False| Shows if a slab is the top half of the block or not |
-| torch_facing_direction| String| unknown, west, east, north, south, top| Determines the block that a torch is attached to in relation to its position |
-| trial_spawner_state| Integer| 0-5| Determines the block state for the trial spawner |
-| triggered_bit| Boolean| True, False| Determines if a dispenser is triggered |
-| turtle_egg_count| String| one_egg, two_egg, three_egg, four_egg| Determines the amount of turtle eggs in an egg block |
-| update_bit| Boolean| True, False| Determines if a leaf block or flower block should be updated |
-| upper_block_bit| Boolean| True, False| Determines if a block is the upper half of an object like a door or a tall plant |
-| upside_down_bit| Boolean| True, False| Determines if a stair block or trapdoor block is upside down |
-| vine_direction_bits| Integer| 0 - 15| Determines the facing direction for vines, works like the facing_direction block state |
-| wall_block_type| String| cobblestone, mossy_cobblestone, granite, diorite, andesite, sandstone, brick, stone_brick, mossy_stone_brick, nether_brick, end_brick, prismarine, red_sandstone, red_nether_brick| Determines the type of a stone used in a wall block |
-| wall_connection_type_east| String| none, short, tall| Determines what kind of connection a wall has to the east |
-| wall_connection_type_north| String| none, short, tall| Determines what kind of connection a wall has to the north |
-| wall_connection_type_south| String| none, short, tall| Determines what kind of connection a wall has to the south |
-| wall_connection_type_west| String| none, short, tall| Determines what kind of connection a wall has to the west |
-| wall_post_bit| Boolean| True, False| Determines if a wall should contain a post |
-| weirdo_direction| Integer | 0 - 3| Describes the rotation of stairs |
-| wood_type| String| oak, spruce, birch, jungle, acacia, dark_oak| Determines the wood type of a block |
-
-## BlockTraits
-
-List of all Block Traits and the Block States they include.
-Experimental toggles required : Upcoming Creator Features
-
-| Block Trait| Type | Valid Values | Description |
-|:----------|:---------|:----------|:--------|
-| "minecraft:placement_direction"| JSON Object|  |Adds the "minecraft:cardinal_direction" and/or "minecraft:facing_direction" states and setter function to the block. The values of these states are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
-| minecraft:cardinal_direction| String| north, south, east, west| Defines the cardinal placement direction of a block. |
-| minecraft:facing_direction| String| down, up, north, south, east, west | Defines all placement directions of a block. |
-| y_rotation_offset| Decimal |0.0 - 360.0 | The y rotation offset to apply to the block. Must be [0.0, 90.0, 180.0, 270.0]. Default is 0, meaning if the player is facing north, the "minecraft:cardinal_direction" and/or minecraft:facing_direction state will be north. |
-| "minecraft:placement_position"| PlacementPosition| | Adds the "minecraft:block_face" and/or "minecraft:vertical_half" BlockStates. The value of these state(s) are set when the block is placed. `enabled_states` array specifies which states to enable. Must specify at least one.|
-| minecraft:block_face| String| down, up, north, south, east, west| Which block face the player placed the block on. |
-| minecraft:vertical_half| String| bottom, top| Which vertical half of the space the block is placed in. |
-
-### Block trait example
-
-```json
-{
-  "format_version": "1.20.0",
-  "minecraft:block": {
-    "description": {
-      "identifier": "test:placement_direction_trait_block",
-      "traits" : {
-        "minecraft:placement_direction": {
-            "enabled_states": ["minecraft:cardinal_direction"], // 4 permutations
-            "y_rotation_offset": 0.0 // 0.0-360.0
-          }
-      }
-    },
-    "permutations": [
-       {
-          "condition": "query.block_state('minecraft:cardinal_direction') == 1", // west
-          "components": {
-              // ... 
-          }
-        }
-    ]
-  }
-}
-```
 
 ## List of Blocks
 
@@ -287,7 +130,9 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:bookshelf |
 | minecraft:border_block |
 | minecraft:brain_coral |
+| minecraft:brain_coral_block |
 | minecraft:brain_coral_fan |
+| minecraft:brain_coral_wall_fan |
 | minecraft:brewing_stand |
 | minecraft:brick_block |
 | minecraft:brick_double_slab |
@@ -309,7 +154,9 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:brown_wool |
 | minecraft:bubble_column |
 | minecraft:bubble_coral |
+| minecraft:bubble_coral_block |
 | minecraft:bubble_coral_fan |
+| minecraft:bubble_coral_wall_fan |
 | minecraft:budding_amethyst |
 | minecraft:cactus |
 | minecraft:cake |
@@ -347,11 +194,16 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:cherry_wall_sign |
 | minecraft:cherry_wood |
 | minecraft:chest |
+| minecraft:chipped_anvil |
 | minecraft:chiseled_bookshelf |
 | minecraft:chiseled_copper |
 | minecraft:chiseled_deepslate |
 | minecraft:chiseled_nether_bricks |
 | minecraft:chiseled_polished_blackstone |
+| minecraft:chiseled_quartz_block |
+| minecraft:chiseled_red_sandstone |
+| minecraft:chiseled_sandstone |
+| minecraft:chiseled_stone_bricks |
 | minecraft:chiseled_tuff |
 | minecraft:chiseled_tuff_bricks |
 | minecraft:chorus_flower |
@@ -360,12 +212,15 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:client_request_placeholder_block |
 | minecraft:coal_block |
 | minecraft:coal_ore |
+| minecraft:coarse_dirt |
 | minecraft:cobbled_deepslate |
 | minecraft:cobbled_deepslate_double_slab |
 | minecraft:cobbled_deepslate_slab |
 | minecraft:cobbled_deepslate_stairs |
 | minecraft:cobbled_deepslate_wall |
 | minecraft:cobblestone |
+| minecraft:cobblestone_double_slab |
+| minecraft:cobblestone_slab |
 | minecraft:cobblestone_wall |
 | minecraft:cocoa |
 | minecraft:colored_torch_blue |
@@ -382,15 +237,12 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:copper_grate |
 | minecraft:copper_ore |
 | minecraft:copper_trapdoor |
-| minecraft:coral_block |
 | minecraft:coral_fan_dead |
-| minecraft:coral_fan_hang |
-| minecraft:coral_fan_hang2 |
-| minecraft:coral_fan_hang3 |
 | minecraft:cracked_deepslate_bricks |
 | minecraft:cracked_deepslate_tiles |
 | minecraft:cracked_nether_bricks |
 | minecraft:cracked_polished_blackstone_bricks |
+| minecraft:cracked_stone_bricks |
 | minecraft:crafter |
 | minecraft:crafting_table |
 | minecraft:crimson_button |
@@ -415,6 +267,12 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:cut_copper |
 | minecraft:cut_copper_slab |
 | minecraft:cut_copper_stairs |
+| minecraft:cut_red_sandstone |
+| minecraft:cut_red_sandstone_double_slab |
+| minecraft:cut_red_sandstone_slab |
+| minecraft:cut_sandstone |
+| minecraft:cut_sandstone_double_slab |
+| minecraft:cut_sandstone_slab |
 | minecraft:cyan_candle |
 | minecraft:cyan_candle_cake |
 | minecraft:cyan_carpet |
@@ -426,6 +284,8 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:cyan_stained_glass_pane |
 | minecraft:cyan_terracotta |
 | minecraft:cyan_wool |
+| minecraft:damaged_anvil |
+| minecraft:dandelion |
 | minecraft:dark_oak_button |
 | minecraft:dark_oak_door |
 | minecraft:dark_oak_double_slab |
@@ -441,16 +301,33 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:dark_oak_stairs |
 | minecraft:dark_oak_trapdoor |
 | minecraft:dark_oak_wood |
+| minecraft:dark_prismarine |
+| minecraft:dark_prismarine_double_slab |
+| minecraft:dark_prismarine_slab |
 | minecraft:dark_prismarine_stairs |
 | minecraft:darkoak_standing_sign |
 | minecraft:darkoak_wall_sign |
 | minecraft:daylight_detector |
 | minecraft:daylight_detector_inverted |
 | minecraft:dead_brain_coral |
+| minecraft:dead_brain_coral_wall_fan |
 | minecraft:dead_bubble_coral |
+| minecraft:dead_bubble_coral_wall_fan |
 | minecraft:dead_fire_coral |
+| minecraft:dead_fire_coral_wall_fan |
 | minecraft:dead_horn_coral |
+| minecraft:dead_horn_coral_wall_fan |
 | minecraft:dead_tube_coral |
+| minecraft:dead_tube_coral_wall_fan |
+| minecraft:dead_brain_coral_block |
+| minecraft:dead_bubble_coral |
+| minecraft:dead_bubble_coral_block |
+| minecraft:dead_fire_coral |
+| minecraft:dead_fire_coral_block |
+| minecraft:dead_horn_coral |
+| minecraft:dead_horn_coral_block |
+| minecraft:dead_tube_coral |
+| minecraft:dead_tube_coral_block |
 | minecraft:deadbush |
 | minecraft:decorated_pot |
 | minecraft:deepslate |
@@ -643,9 +520,12 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:exposed_double_cut_copper_slab |
 | minecraft:farmland |
 | minecraft:fence_gate |
+| minecraft:fern |
 | minecraft:fire |
 | minecraft:fire_coral |
+| minecraft:fire_coral_block |
 | minecraft:fire_coral_fan |
+| minecraft:fire_coral_wall_fan |
 | minecraft:fletching_table |
 | minecraft:flower_pot |
 | minecraft:flowering_azalea |
@@ -738,9 +618,17 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:honeycomb_block |
 | minecraft:hopper |
 | minecraft:horn_coral |
+| minecraft:horn_coral_block |
 | minecraft:horn_coral_fan |
+| minecraft:horn_coral_wall_fan |
 | minecraft:ice |
+| minecraft:infested_chiseled_stone_bricks |
+| minecraft:infested_cobblestone |
+| minecraft:infested_cracked_stone_bricks |
 | minecraft:infested_deepslate |
+| minecraft:infested_mossy_stone_bricks |
+| minecraft:infested_stone |
+| minecraft:infested_stone_bricks |
 | minecraft:info_update |
 | minecraft:info_update2 |
 | minecraft:invisible_bedrock |
@@ -775,10 +663,26 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:lapis_block |
 | minecraft:lapis_ore |
 | minecraft:large_amethyst_bud |
+| minecraft:large_fern |
 | minecraft:lava |
 | minecraft:lectern |
 | minecraft:lever |
-| minecraft:light_block |
+| minecraft:light_block_0 |
+| minecraft:light_block_1 |
+| minecraft:light_block_10 |
+| minecraft:light_block_11 |
+| minecraft:light_block_12 |
+| minecraft:light_block_13 |
+| minecraft:light_block_14 |
+| minecraft:light_block_15 |
+| minecraft:light_block_2 |
+| minecraft:light_block_3 |
+| minecraft:light_block_4 |
+| minecraft:light_block_5 |
+| minecraft:light_block_6 |
+| minecraft:light_block_7 |
+| minecraft:light_block_8 |
+| minecraft:light_block_9 |
 | minecraft:light_blue_candle |
 | minecraft:light_blue_candle_cake |
 | minecraft:light_blue_carpet |
@@ -802,6 +706,8 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:light_gray_wool |
 | minecraft:light_weighted_pressure_plate |
 | minecraft:lightning_rod |
+| minecraft:lilac |
+| minecraft:lily_of_the_valley |
 | minecraft:lime_candle |
 | minecraft:lime_candle_cake |
 | minecraft:lime_carpet |
@@ -858,7 +764,6 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:melon_block |
 | minecraft:melon_stem |
 | minecraft:mob_spawner |
-| minecraft:monster_egg |
 | minecraft:moss_block |
 | minecraft:moss_carpet |
 | minecraft:mossy_cobblestone |
@@ -880,6 +785,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:muddy_mangrove_roots |
 | minecraft:mycelium |
 | minecraft:nether_brick |
+| minecraft:nether_brick_double_slab |
 | minecraft:nether_brick_fence |
 | minecraft:nether_brick_slab |
 | minecraft:nether_brick_stairs |
@@ -891,6 +797,8 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:netherite_block |
 | minecraft:netherrack |
 | minecraft:netherreactor |
+| minecraft:normal_stone_double_slab |
+| minecraft:normal_stone_slab |
 | minecraft:normal_stone_stairs |
 | minecraft:noteblock |
 | minecraft:oak_double_slab |
@@ -930,6 +838,9 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:packed_ice |
 | minecraft:packed_mud |
 | minecraft:pearlescent_froglight |
+| minecraft:petrified_oak_double_slab |
+| minecraft:peony |
+| minecraft:petrified_oak_slab |
 | minecraft:pink_candle |
 | minecraft:pink_candle_cake |
 | minecraft:pink_carpet |
@@ -949,6 +860,8 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:podzol |
 | minecraft:pointed_dripstone |
 | minecraft:polished_andesite |
+| minecraft:polished_andesite_double_slab |
+| minecraft:polished_andesite_slab |
 | minecraft:polished_andesite_stairs |
 | minecraft:polished_basalt |
 | minecraft:polished_blackstone |
@@ -969,8 +882,12 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:polished_deepslate_stairs |
 | minecraft:polished_deepslate_wall |
 | minecraft:polished_diorite |
+| minecraft:polished_diorite_double_slab |
+| minecraft:polished_diorite_slab |
 | minecraft:polished_diorite_stairs |
 | minecraft:polished_granite |
+| minecraft:polished_granite_double_slab |
+| minecraft:polished_granite_slab |
 | minecraft:polished_granite_stairs |
 | minecraft:polished_tuff |
 | minecraft:polished_tuff_double_slab |
@@ -983,6 +900,9 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:powered_comparator |
 | minecraft:powered_repeater |
 | minecraft:prismarine |
+| minecraft:prismarine_brick_double_slab |
+| minecraft:prismarine_brick_slab |
+| minecraft:prismarine_bricks |
 | minecraft:prismarine_bricks_stairs |
 | minecraft:prismarine_double_slab |
 | minecraft:prismarine_slab |
@@ -1003,11 +923,15 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:purple_wool |
 | minecraft:purpur_block |
 | minecraft:purpur_pillar |
+| minecraft:purpur_double_slab |
 | minecraft:purpur_slab |
 | minecraft:purpur_stairs |
 | minecraft:quartz_block |
 | minecraft:quartz_bricks |
+| minecraft:quartz_double_slab |
 | minecraft:quartz_ore |
+| minecraft:quartz_pillar |
+| minecraft:quartz_slab |
 | minecraft:quartz_stairs |
 | minecraft:rail |
 | minecraft:raw_copper_block |
@@ -1027,6 +951,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:red_nether_brick_slab |
 | minecraft:red_nether_brick_stairs |
 | minecraft:red_nether_brick_wall |
+| minecraft:red_sand |
 | minecraft:red_sandstone |
 | minecraft:red_sandstone_double_slab |
 | minecraft:red_sandstone_slab |
@@ -1047,6 +972,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:repeating_command_block |
 | minecraft:reserved6 |
 | minecraft:respawn_anchor |
+| minecraft:rose_bush |
 | minecraft:sand |
 | minecraft:sandstone |
 | minecraft:sandstone_double_slab |
@@ -1062,6 +988,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:sea_lantern |
 | minecraft:sea_pickle |
 | minecraft:seagrass |
+| minecraft:short_grass |
 | minecraft:shroomlight |
 | minecraft:silver_glazed_terracotta |
 | minecraft:skull |
@@ -1071,10 +998,21 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:smithing_table |
 | minecraft:smoker |
 | minecraft:smooth_basalt |
+| minecraft:smooth_quartz |
+| minecraft:smooth_quartz_double_slab |
+| minecraft:smooth_quartz_slab |
 | minecraft:smooth_quartz_stairs |
+| minecraft:smooth_red_sandstone |
+| minecraft:smooth_red_sandstone_double_slab |
+| minecraft:smooth_red_sandstone_slab |
 | minecraft:smooth_red_sandstone_stairs |
+| minecraft:smooth_sandstone |
+| minecraft:smooth_sandstone_double_slab |
+| minecraft:smooth_sandstone_slab |
 | minecraft:smooth_sandstone_stairs |
 | minecraft:smooth_stone |
+| minecraft:smooth_stone_double_slab |
+| minecraft:smooth_stone_slab |
 | minecraft:sniffer_egg |
 | minecraft:snow |
 | minecraft:snow_layer |
@@ -1109,6 +1047,7 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:sticky_piston_arm_collision |
 | minecraft:stone |
 | minecraft:stone_block_slab |
+| minecraft:minecraft:stone_brick_double_slab |
 | minecraft:stone_block_slab2 |
 | minecraft:stone_block_slab3 |
 | minecraft:stone_block_slab4 |
@@ -1119,7 +1058,6 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:stone_button |
 | minecraft:stone_pressure_plate |
 | minecraft:stone_stairs |
-| minecraft:stonebrick |
 | minecraft:stonecutter |
 | minecraft:stonecutter_block |
 | minecraft:stripped_acacia_log |
@@ -1145,10 +1083,11 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:stripped_warped_stem |
 | minecraft:structure_block |
 | minecraft:structure_void |
+| minecraft:sunflower |
 | minecraft:suspicious_gravel |
 | minecraft:suspicious_sand |
 | minecraft:sweet_berry_bush |
-| minecraft:tallgrass |
+| minecraft:tall_grass |
 | minecraft:target |
 | minecraft:tinted_glass |
 | minecraft:tnt |
@@ -1161,7 +1100,9 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:trip_wire |
 | minecraft:tripwire_hook |
 | minecraft:tube_coral |
+| minecraft:tube_coral_block |
 | minecraft:tube_coral_fan |
+| minecraft:tube_coral_wall_fan |
 | minecraft:tuff |
 | minecraft:tuff_brick_double_slab |
 | minecraft:tuff_brick_slab |
@@ -1281,7 +1222,6 @@ Experimental toggles required : Upcoming Creator Features
 | minecraft:yellow_carpet |
 | minecraft:yellow_concrete |
 | minecraft:yellow_concrete_powder |
-| minecraft:yellow_flower |
 | minecraft:yellow_glazed_terracotta |
 | minecraft:yellow_shulker_box |
 | minecraft:yellow_stained_glass |

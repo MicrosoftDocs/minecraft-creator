@@ -42,8 +42,8 @@ The container which holds an [*@minecraft/server.ItemStack*](../../minecraft/ser
 
 Type: [*Container*](Container.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

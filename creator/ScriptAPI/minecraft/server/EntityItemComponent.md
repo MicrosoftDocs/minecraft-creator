@@ -48,8 +48,8 @@ Item stack represented by this entity in the world.
 
 Type: [*ItemStack*](ItemStack.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

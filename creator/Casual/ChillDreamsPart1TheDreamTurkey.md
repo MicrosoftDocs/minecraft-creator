@@ -145,7 +145,7 @@ function startDreamSleep(player: Player) {
 }
 ```
 
-What this code does is detect if the player eats a turkey for at least 60 ticks (3 seconds) by measuring the time in between the start and stop events. When the dream sequence starts, I’ll basically set the action bar with some text that will fade in and fade out. Because title/subtitle/and action bar are generally all controlled by the same fade in/fade out logic, we set the title too, here, even if we’re not really using that text.
+What this code does is detect if the player eats a turkey for at least 60 ticks (3 seconds) by measuring the time in between the start and stop events. When the dream sequence starts, I'll basically set the action bar with some text that will fade in and fade out. Because title/subtitle/and action bar are generally all controlled by the same fade in/fade out logic, we set the title too, here, even if we're not really using that text.
 
 If you try it out with `gulp` again, gulp should compile the TypeScript into JavaScript and push it into the Minecraft folder.
 
@@ -157,7 +157,7 @@ So, that's it for this first part of building the Chill Dreams Add-On. I got a s
 
 You can see the final output at [the end of start 1 on GitHub](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/1_dream_turkey).
 
-In the next part, we’ll implement the Dream effect more broadly – and in the third and final section, we'll add a new concept of "Memories" to make Dreams more interesting. Stay tuned for the next two parts!
+In the next part, we'll implement the Dream effect more broadly – and in the third and final section, we'll add a new concept of "Memories" to make Dreams more interesting. Stay tuned for the next two parts!
 
 --
 

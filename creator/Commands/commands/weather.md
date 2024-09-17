@@ -35,11 +35,11 @@ Sets the weather in the environment. See more in the [Popular Commands documenta
 - `duration`: int
 An optional `integer` that will a random number between 300 and 900 seconds if not specified.
 - `type`: WeatherType
-An `enum` of `clear`, `rain` (or snow in cold biomes), or `thunder` (blizzard in cold biomes).
+An `enum` of `clear`, `rain` (will cause snow in cold biomes), or `thunder` (will cause blizzard in cold biomes).
 
 ## Enums
 ### `WeatherType`
-An `enum` of `clear`, `rain` (or snow in cold biomes), or `thunder` (blizzard in cold biomes).
+An `enum` of `clear`, `rain` (will cause snow in cold biomes), or `thunder` (will cause blizzard in cold biomes).
 
 #### Values
 - `clear`

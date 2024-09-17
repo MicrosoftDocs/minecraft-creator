@@ -22,7 +22,7 @@ Add or clear status effects.
 
 ## Usage
 ### Clear effect
-`/effect <player: target> clear`
+`/effect <player: target> clear [effect: Effect]`
 
 Clear the effect for a target player.
 
@@ -30,6 +30,8 @@ Clear the effect for a target player.
 `/effect <player: target> <effect: Effect> [seconds: int] [amplifier: int] [hideParticles: Boolean]`
 
 Add effect to target player with optional `seconds`, `amplifier`, and `hideParticles`.
+
+### `/effect <player: target> <effect: Effect> infinite [amplifier: int] [hideParticles: Boolean]`
 
 ## Arguments
 - `amplifier`: int

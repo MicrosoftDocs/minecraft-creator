@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .InputPermissionCategory Enumeration
 description: Contents of the .InputPermissionCategory enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # InputPermissionCategory Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Input permission categories. Used by @minecraft/server.PlayerInputPermissionCategoryChangeAfterEvent to specify which category was changed.
 

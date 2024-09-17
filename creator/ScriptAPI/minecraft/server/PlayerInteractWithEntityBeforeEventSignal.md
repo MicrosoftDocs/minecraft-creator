@@ -25,9 +25,9 @@ Adds a callback that will be called before a player interacts with an entity.
 - **callback**: (arg: [*PlayerInteractWithEntityBeforeEvent*](PlayerInteractWithEntityBeforeEvent.md)) => *void*
 
 **Returns** (arg: [*PlayerInteractWithEntityBeforeEvent*](PlayerInteractWithEntityBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -38,6 +38,6 @@ Removes a callback from being called before a player interacts with an entity.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerInteractWithEntityBeforeEvent*](PlayerInteractWithEntityBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

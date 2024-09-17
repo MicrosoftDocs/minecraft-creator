@@ -1,8 +1,6 @@
- - name: Addon - Blocks
+ - name: Block Identifier Listings
    href: AddonBlocks.md
- - name: Addon - Entities
+ - name: Entity Identifier Listings
    href: addonEntities.md
- - name: Addon - Items
+ - name: Item Identifier Listings
    href: AddonItems.md
- - name: Addon - Manifest JSON
-   href: AddonManifest.md

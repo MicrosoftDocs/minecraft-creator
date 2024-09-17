@@ -29,9 +29,9 @@ Adds a callback that will be called when new chat messages are sent.
 - **callback**: (arg: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
 
 **Returns** (arg: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
 ##### ***custom_command.js***
@@ -56,6 +56,6 @@ Removes a callback from being called when new chat messages are sent.
 
 #### **Parameters**
 - **callback**: (arg: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

@@ -8,25 +8,20 @@ description: Contents of the @minecraft/server-editor.IDropdownItem class.
 ---
 # IDropdownItem Interface
 
+Properties of dropdown property item children
+
 ## Properties
 
-### **displayAltText**
-`read-only displayAltText: string;`
+### **label**
+`read-only label: string;`
 
-Fallback display text if no loc ID
-
-Type: *string*
-
-### **displayStringId**
-`read-only displayStringId: string;`
-
-Loc ID (resolved on client)
+Localized display text of the dropdown item.
 
 Type: *string*
 
 ### **value**
 `read-only value: number;`
 
-The selectable value of the DropDown item.
+The selectable value of the dropdown item.
 
 Type: *number*

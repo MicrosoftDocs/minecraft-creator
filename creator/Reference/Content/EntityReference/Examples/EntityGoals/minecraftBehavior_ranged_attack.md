@@ -23,7 +23,7 @@ ms.service: minecraft-bedrock-edition
 | burst_shots| 1| Integer| Number of shots fired every time the attacking entity uses a charged up attack. |
 | charge_charged_trigger| 0| Decimal| Time (in seconds, then add "charge_shoot_trigger"), before a charged up attack is done charging. Charge-time decays while target is not in sight. |
 | charge_shoot_trigger| 0| Decimal| Amount of time (in seconds, then doubled) a charged shot must be charging before reloading burst shots. Charge-time decays while target is not in sight. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | ranged_fov| 90| Decimal| Field of view (in degrees) when using sensing to detect a target for attack. |
 | set_persistent| false| Boolean| Allows the entity to be set to persist upon targeting a player |
 | speed_multiplier| 1| Decimal| During attack behavior, this multiplier modifies the entity's speed when moving toward the target. |
