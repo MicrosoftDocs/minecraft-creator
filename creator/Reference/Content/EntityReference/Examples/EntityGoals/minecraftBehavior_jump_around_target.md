@@ -2,7 +2,7 @@
 author: v-kimjeff
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.jump_around_target
-description: "A reference document detailing the 'behavior.find_underwater_treasure' entity goal"
+description: "A reference document detailing the 'behavior.jump_around_target' entity goal"
 ms.service: minecraft-bedrock-edition
 ---
 
