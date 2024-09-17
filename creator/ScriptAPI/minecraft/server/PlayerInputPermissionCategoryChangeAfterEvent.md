@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerInputPermissionCategoryChangeAfterEvent Class
 description: Contents of the @minecraft/server.PlayerInputPermissionCategoryChangeAfterEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerInputPermissionCategoryChangeAfterEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information regarding an event after a players input permissions change.
 

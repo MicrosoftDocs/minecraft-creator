@@ -25,9 +25,9 @@ Adds a callback that will be called when a chargeable item stops charging.
 - **callback**: (arg: [*ItemStopUseAfterEvent*](ItemStopUseAfterEvent.md)) => *void*
 
 **Returns** (arg: [*ItemStopUseAfterEvent*](ItemStopUseAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -38,6 +38,6 @@ Removes a callback from being called when a chargeable item stops charging.
 
 #### **Parameters**
 - **callback**: (arg: [*ItemStopUseAfterEvent*](ItemStopUseAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

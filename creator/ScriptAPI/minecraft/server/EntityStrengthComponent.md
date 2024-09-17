@@ -5,17 +5,13 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityStrengthComponent Class
 description: Contents of the @minecraft/server.EntityStrengthComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityStrengthComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
-Defines the entity's strength to carry items.
+Defines the entity's ability to carry items. An entity with a higher strength would have higher potential carry capacity and more item slots.
 
 ## Properties
 
@@ -26,8 +22,8 @@ Maximum strength of this entity, as defined in the entity type definition.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **value**
 `read-only value: number;`
@@ -36,8 +32,8 @@ Current value of the strength component that has been set for entities.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

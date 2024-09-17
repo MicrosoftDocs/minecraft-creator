@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerGameModeChangeBeforeEventSignal Class
 description: Contents of the @minecraft/server.PlayerGameModeChangeBeforeEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerGameModeChangeBeforeEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to before a players game mode is changed.
 
@@ -29,9 +25,9 @@ Adds a callback that will be called before a players game mode is changed.
 - **callback**: (arg: [*PlayerGameModeChangeBeforeEvent*](PlayerGameModeChangeBeforeEvent.md)) => *void*
 
 **Returns** (arg: [*PlayerGameModeChangeBeforeEvent*](PlayerGameModeChangeBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -42,6 +38,6 @@ Removes a callback from being called before a players game mode is changed.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerGameModeChangeBeforeEvent*](PlayerGameModeChangeBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.Seat Class
 description: Contents of the @minecraft/server.Seat class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # Seat Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Describes a particular seating position on this rideable entity.
 

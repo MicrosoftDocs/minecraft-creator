@@ -1,12 +1,12 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Addons Documentation - Entity List
+title: Default Minecraft Entity Listings
 description: "A reference document detailing the entities and damage sources used in addons for Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Addons Documentation - Entity List
+# Default Minecraft Entity Listings
 
 An overview of the Entities and Damage Sources that can be used in Addons for Minecraft: Bedrock Edition.
 
@@ -89,6 +89,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | mule| 2118425| 25 |
 | npc| 307| 51 |
 | ocelot| 21270| 22 |
+| ominous_item_spawner| 145| 145 |
 | painting| 83| 83 |
 | panda| 4977| 113 |
 | parrot| 21278| 30 |

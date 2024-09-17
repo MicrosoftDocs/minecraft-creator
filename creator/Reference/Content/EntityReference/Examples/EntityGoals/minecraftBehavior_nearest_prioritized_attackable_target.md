@@ -21,7 +21,7 @@ ms.service: minecraft-bedrock-edition
 |must_see| false| Boolean| If true, only entities in this mob's viewing range can be selected as targets. |
 |must_see_forget_duration| 3.0| Decimal| Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more. |
 |persist_time| 0.0f| Decimal| Time in seconds for a valid target to stay targeted when it becomes and invalid target. |
-|priority| 0| Integer| Specifies the priority in which filtered enemy types should be attacked. Lower number means higher priority. |
+| priority| 0| Integer| Specifies the priority in which filtered enemy types should be attacked. Lower number means higher priority. |
 |reevaluate_description| false| Boolean| If true, the mob will stop being targeted if it stops meeting any conditions. |
 |reselect_targets| false| Boolean| If true, the target will change to the current closest entity whenever a different entity is closer. |
 |scan_interval| 10| Integer| How many ticks to wait between scanning for a target. |

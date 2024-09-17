@@ -12,20 +12,6 @@ Parameters for creating a modal tool in the tool container
 
 ## Properties
 
-### **displayAltText**
-`displayAltText: string;`
-
-The displayed string for the tool
-
-Type: *string*
-
-### **displayStringId**
-`displayStringId: string;`
-
-Loc ID (resolved on client)
-
-Type: *string*
-
 ### **icon**
 `icon: string;`
 
@@ -33,16 +19,30 @@ Icon, if any (from resource pack on client)
 
 Type: *string*
 
-### **tooltipAltText**
-`tooltipAltText: string;`
+### **inputContextId**
+`inputContextId: string;`
 
-tooltipAltText alt text, if any
+Modal input context identifier
 
 Type: *string*
 
-### **tooltipStringId**
-`tooltipStringId: string;`
+### **inputContextLabel**
+`inputContextLabel: string;`
 
-Tooltip localization string ID
+Localized text label for modal input context
+
+Type: *string*
+
+### **title**
+`title: string;`
+
+Title of the tool
+
+Type: *string*
+
+### **tooltip**
+`tooltip: string;`
+
+Tooltip description of the toll
 
 Type: *string*

@@ -87,6 +87,11 @@ The instance of the players Settings Manager and the contract through which the 
 
 Type: [*SettingsManager*](SettingsManager.md)
 
+### **structureManager**
+`read-only structureManager: EditorStructureManager;`
+
+Type: [*EditorStructureManager*](EditorStructureManager.md)
+
 ### **transactionManager**
 `read-only transactionManager: TransactionManager;`
 

@@ -1,0 +1,55 @@
+### YamlMime:Landing
+
+title: Bedrock Editor # < 60 chars
+summary: "Content related to Bedrock Editor." # < 160 chars
+
+metadata:
+  title: Bedrock Editor # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Minecraft's Bedrock Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: minecraft-bedrock-edition
+  ms.topic: landing-page # Required
+  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/31/2024 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Learn about Bedrock Editor
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Editor Overview
+            url: EditorOverview.md
+          - text: Tool Mode
+            url: EditorToolMode.md
+          - text: World Options
+            url: EditorWorldOptions.md
+          - text: Action Bar
+            url: EditorActionBar.md
+          - text: Selection Tool
+            url: EditorSelectionTool.md
+          - text: Brush Tool
+            url: EditorBrushTool.md
+          - text: Paste Preview
+            url: EditorPastePreview.md
+          - text: Summon Tool
+            url: EditorSummonTool.md
+
+  - title: Working with Bedrock Editor
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Installation
+            url: EditorInstallation.md
+          - text: Keyboard Inputs and Input Mapping
+            url: EditorKeyboardInputs.md
+          - text: Tutorial
+            url: EditorTutorial.md
+          - text: Editor Create, Import, Export a World
+            url: EditorWorkflow.md
+          - text: Editor Extensions Introduction
+            url: EditorExtensionsIntroduction.md

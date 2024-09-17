@@ -20,7 +20,7 @@ ms.service: minecraft-bedrock-edition
 |goal_radius| 0.5| Decimal|  Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot. |
 |initial_eat_delay| 0| Integer|  Time in seconds before starting to eat/raid once it arrives at it. |
 |max_to_eat| 6| Integer| Maximum number of crops this entity wants to eat/raid. If set to zero or less then it doesn't have a maximum. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |search_height| 0 | Integer | Maximum distance to look for a block in y. |
 |search_range| 0| Integer| Distance in blocks the mob will look for crops to eat. |
 |speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal. |

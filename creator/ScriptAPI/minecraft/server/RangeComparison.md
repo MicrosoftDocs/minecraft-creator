@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.RangeComparison Interface
 description: Contents of the @minecraft/server.RangeComparison class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # RangeComparison Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Operator represents a lower/upper bound structure for expressing a potential range of numbers.
 

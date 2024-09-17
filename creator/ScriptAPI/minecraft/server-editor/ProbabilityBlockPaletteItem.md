@@ -14,6 +14,7 @@ description: Contents of the @minecraft/server-editor.ProbabilityBlockPaletteIte
 ## Methods
 - [constructor](#constructor)
 - [addBlock](#addblock)
+- [getBlocks](#getblocks)
 - [removeBlockAt](#removeblockat)
 
 ### **constructor**
@@ -34,14 +35,18 @@ addBlock(block: minecraftserver.BlockPermutation | minecraftserver.BlockType | s
 #### **Parameters**
 - **block**: [*@minecraft/server.BlockPermutation*](../../minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string*
 - **weight**: *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+### **getBlocks**
+`
+getBlocks(): WeightedBlock[]
+`
 
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*
+**Returns** [*WeightedBlock*](WeightedBlock.md)[]
 
 ### **removeBlockAt**
 `
@@ -50,11 +55,8 @@ removeBlockAt(index: number): void
 
 #### **Parameters**
 - **index**: *number*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md), *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md), *Error*

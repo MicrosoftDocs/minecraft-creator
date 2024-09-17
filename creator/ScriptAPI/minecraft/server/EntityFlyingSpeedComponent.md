@@ -21,9 +21,9 @@ Represents the flying speed of an entity.
 Current value of the flying speed of the associated entity.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Constants
 

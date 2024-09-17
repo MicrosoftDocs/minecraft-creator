@@ -61,9 +61,9 @@ Returns a SecretString that is a placeholder for a secret configured in a JSON f
 - **name**: *string*
 
 **Returns** [*SecretString*](SecretString.md) | *undefined*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
 ##### ***getPlayerProfile.ts***

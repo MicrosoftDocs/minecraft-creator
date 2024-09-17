@@ -28,8 +28,8 @@ Current value of this attribute for this instance.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **defaultValue**
 `read-only defaultValue: number;`
@@ -38,8 +38,8 @@ Returns the default defined value for this attribute.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **effectiveMax**
 `read-only effectiveMax: number;`
@@ -48,8 +48,8 @@ Returns the effective max of this attribute given any other ambient components o
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **effectiveMin**
 `read-only effectiveMin: number;`
@@ -58,8 +58,8 @@ Returns the effective min of this attribute given any other ambient components o
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [resetToDefaultValue](#resettodefaultvalue)
@@ -73,12 +73,10 @@ resetToDefaultValue(): void
 `
 
 Resets the current value of this attribute to the defined default value.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **resetToMaxValue**
 `
@@ -86,12 +84,10 @@ resetToMaxValue(): void
 `
 
 Resets the current value of this attribute to the maximum defined value.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **resetToMinValue**
 `
@@ -99,12 +95,10 @@ resetToMinValue(): void
 `
 
 Resets the current value of this attribute to the minimum defined value.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setCurrentValue**
 `
@@ -117,9 +111,7 @@ Sets the current value of this attribute. The provided value will be clamped to 
 - **value**: *number*
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

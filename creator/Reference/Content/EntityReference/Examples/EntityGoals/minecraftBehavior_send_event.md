@@ -16,7 +16,7 @@ ms.service: minecraft-bedrock-edition
 |:----------|:----------|:----------|:----------|
 |cast_duration|*not set*| Decimal| Time in seconds for the entire event sending process. |
 |look_at_target| true|Boolean| If true, the mob will face the entity it sends an event to. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |sequence|*not set* | List| List of events to send.|
 
 ### sequence

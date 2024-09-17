@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityTameableComponent Class
 description: Contents of the @minecraft/server.EntityTameableComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityTameableComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
@@ -26,8 +22,8 @@ Returns a set of items that can be used to tame this entity.
 
 Type: [*ItemStack*](ItemStack.md)[]
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isTamed**
 `read-only isTamed: boolean;`
@@ -36,8 +32,8 @@ Returns true if the entity is tamed by player.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **probability**
 `read-only probability: number;`
@@ -46,8 +42,8 @@ The chance of taming the entity with each item use between 0.0 and 1.0, where 1.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **tamedToPlayer**
 `read-only tamedToPlayer?: Player;`
@@ -56,8 +52,8 @@ Returns the player that has tamed the entity, or 'undefined' if entity is not ta
 
 Type: [*Player*](Player.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **tamedToPlayerId**
 `read-only tamedToPlayerId?: string;`
@@ -66,8 +62,8 @@ Returns the id of player that has tamed the entity, or 'undefined' if entity is 
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [tame](#tame)
@@ -85,12 +81,10 @@ Set this entity as tamed by the given player.
   The player that this entity should be tamed by.
 
 **Returns** *boolean* - Returns true if the entity was tamed.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ## Constants
 

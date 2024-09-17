@@ -8,14 +8,26 @@ description: Contents of the @minecraft/server.PlayerInteractWithEntityAfterEven
 ---
 # PlayerInteractWithEntityAfterEvent Class
 
-Contains information regarding an event after a player interacts with an entity.
+Contains information regarding an event after a player successfully interacts with an entity.
 
 ## Properties
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **beforeItemStack**
+`read-only beforeItemStack?: ItemStack;`
+
+The ItemStack before the interaction succeeded, or undefined if hand is empty.
+
+Type: [*ItemStack*](ItemStack.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **itemStack**
 `read-only itemStack?: ItemStack;`
 
-The item stack that is being used in the interaction, or undefined if empty hand.
+The ItemStack after the interaction succeeded, or undefined if hand is empty.
 
 Type: [*ItemStack*](ItemStack.md)
 

@@ -58,6 +58,6 @@ getBlockHit(): BlockHitInformation
 Contains additional information about the block that was hit by the projectile.
 
 **Returns** [*BlockHitInformation*](BlockHitInformation.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

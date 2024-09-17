@@ -21,8 +21,8 @@ The primary [*@minecraft/server-editor.ClipboardItem*](../../minecraft/server-ed
 
 Type: [*ClipboardItem*](ClipboardItem.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [create](#create)
@@ -35,9 +35,7 @@ create(): ClipboardItem
 Create a new  [*@minecraft/server-editor.ClipboardItem*](../../minecraft/server-editor/ClipboardItem.md) object
 
 **Returns** [*ClipboardItem*](ClipboardItem.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

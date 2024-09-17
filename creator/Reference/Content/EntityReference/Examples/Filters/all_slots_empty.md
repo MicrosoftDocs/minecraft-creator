@@ -45,6 +45,7 @@ Returns true when the designated equipment location for the subject entity is co
 |:-----------|
 | any|
 | armor|
+| body|
 | feet|
 | hand|
 | head|

@@ -2,6 +2,7 @@
 author: iconicnurdle
 ms.author: mikeam
 title: Features Documentation - minecraft:tree_feature
+description: "A reference document detailing the 'minecraftTree_feature' feature"
 ms.service: minecraft-bedrock-edition
 ---
 
@@ -108,7 +109,7 @@ object "minecraft:tree_feature" : opt
         {
                "leaf_block" // The block that forms the canopy of the tree.
                "height" // Number of layers for the canopy.
-               "radius" // The radius of the canopy. 
+               "radius" // The radius of the canopy.
           int "trunk_width"<1-*> : opt // The width of the tree trunk.
               chance_information "wide_bottom_layer_hole_chance" // Probability of the canopy having a hole in the bottom layer [0-100%].
               chance_information "corner_hole_chance" // Probability of the canopy having a hole in the corner [0-100%].
@@ -172,7 +173,7 @@ object "minecraft:tree_feature" : opt
           int "core_width"<1-*> // Width of the tree trunk.
           int "outer_radius"<0-*> // Radius used for the base and top layers.
           int "inner_radius"<0-*> // Radius used for the middle layers.
-               "leaf_block" // The block that forms the canopy of the tree. 
+               "leaf_block" // The block that forms the canopy of the tree.
             }
           object "spruce_canopy" : opt
         {
@@ -252,7 +253,7 @@ object "minecraft:tree_feature" : opt
         {
                "leaf_block" // The block that forms the canopy of the tree.
                "height" // Number of layers for the canopy.
-               "radius" // The radius of the canopy. 
+               "radius" // The radius of the canopy.
           int "trunk_width"<1-*> : opt // The width of the tree trunk.
               chance_information "wide_bottom_layer_hole_chance" // Probability of the canopy having a hole in the bottom layer [0-100%].
               chance_information "corner_hole_chance" // Probability of the canopy having a hole in the corner [0-100%].
@@ -311,7 +312,7 @@ object "minecraft:tree_feature" : opt
                "leaf_block" // The block that forms the canopy of the tree.
             }
           object "roofed_canopy" : opt
-        { 
+        {
           int "canopy_height"<3-*> // Roofed canopies feature a base and a top layer, and an extra cap layer on some occasions, this value controls the number of layers in the middle.
           int "core_width"<1-*> // Width of the tree trunk.
           int "outer_radius"<0-*> // Radius used for the base and top layers.
@@ -837,123 +838,66 @@ object "minecraft:tree_feature" : opt
 }
 ```
 
-### Example
+### Example: Azalea Tree
 
 ```json
 {
   "format_version": "1.13.0",
   "minecraft:tree_feature": {
     "description": {
-      "identifier": "example:custom_tree_feature"
+      "identifier": "example:azalea_tree_feature"
     },
-    "trunk": {
+    "acacia_trunk": {
+      "trunk_width": 1,
       "trunk_height": {
-        "range_min": 8,
-        "range_max": 15
+        "base": 4,
+        "intervals": [2],
+        "min_height_for_canopy": 3
       },
-      "trunk_block": "minecraft:mangrove_log"
-    },
-    "canopy": {
-      "canopy_offset": {
-        "min": -3,
-        "max": 0
-      },
-      "variation_chance": [
-        {
-          "numerator": 1,
-          "denominator": 2
-        },
-        {
-          "numerator": 1,
-          "denominator": 2
-        },
-        {
-          "numerator": 1,
-          "denominator": 2
-        },
-        {
-          "numerator": 1,
-          "denominator": 1
-        }
-      ],
-      "leaf_block": "minecraft:dirt"
-    },
-    "base_block": [
-      "minecraft:dirt",
-      {
-        "name": "minecraft:dirt",
+      "trunk_block": {
+        "name": "minecraft:log",
         "states": {
-          "dirt_type": "coarse"
+          "old_log_type": "oak"
+        }
+      },
+      "trunk_lean": {
+        "allow_diagonal_growth": true,
+        "lean_height": {
+          "range_min": 2,
+          "range_max": 3
+        },
+        "lean_steps": {
+          "range_min": 3,
+          "range_max": 4
+        },
+        "lean_length": {
+          "range_min": 1,
+          "range_max": 2
         }
       }
-    ],
+    },
+    "random_spread_canopy": {
+      "canopy_height": 2,
+      "canopy_radius": 3,
+      "leaf_placement_attempts": 50,
+      "leaf_blocks": [
+        ["minecraft:azalea_leaves", 3],
+        ["minecraft:azalea_leaves_flowered", 1]
+      ]
+    },
+    "base_block": ["minecraft:dirt_with_roots"],
     "may_grow_on": [
       "minecraft:dirt",
       "minecraft:grass_block",
       "minecraft:podzol",
+      "minecraft:dirt",
+      "minecraft:farmland",
       "minecraft:dirt_with_roots",
       "minecraft:moss_block",
+      "minecraft:clay",
       "minecraft:mycelium",
       "minecraft:mud",
-      "minecraft:muddy_mangrove_roots",
-      "minecraft:crimson_nylium",
-      "minecraft:nether_wart_block",
-      "minecraft:nether_wart",
-      "minecraft:end_stone",
-      {
-        "name": "minecraft:dirt",
-        "states": {
-          "dirt_type": "coarse"
-        }
-      },
-      {
-        "name": "minecraft:farmland",
-        "states": {
-          "moisturized_amount": 0
-        }
-      },
-      {
-        "name": "minecraft:farmland",
-        "states": {
-          "moisturized_amount": 1
-        }
-      },
-      {
-        "name": "minecraft:farmland",
-        "states": {
-          "moisturized_amount": 2
-        }
-      },
-      {
-        "name": "minecraft:farmland",
-        "states": {
-          "moisturized_amount": 3
-        }
-      },
-      {
-        "name": "minecraft:farmland",
-        "states": {
-          "moisturized_amount": 4
-        }
-      },
-      {
-        "name": "minecraft:farmland",
-        "states": {
-          "moisturized_amount": 5
-        }
-      },
-      {
-        "name": "minecraft:farmland",
-        "states": {
-          "moisturized_amount": 6
-        }
-      },
-      {
-        "name": "minecraft:farmland",
-        "states": {
-          "moisturized_amount": 7
-        }
-      }
+      "minecraft:muddy_mangrove_roots"
     ],
     "may_replace": [
       "minecraft:oak_leaves",
@@ -973,21 +917,24 @@ object "minecraft:tree_feature" : opt
       "minecraft:tallgrass",
       "minecraft:grass_block",
       "minecraft:air",
-      "minecraft:double_plant"
+      "minecraft:sunflower",
+      "minecraft:lilac",
+      "minecraft:tall_grass",
+      "minecraft:large_fern",
+      "minecraft:rose_bush",
+      "minecraft:peony"
     ],
     "may_grow_through": [
       "minecraft:dirt",
       "minecraft:grass_block",
-      "minecraft:crimson_nylium",
-      "minecraft:nether_wart_block",
-      "minecraft:nether_wart",
-      "minecraft:end_stone",
-      {
-        "name": "minecraft:dirt",
-        "states": {
-          "dirt_type": "coarse"
-        }
-      }
+      "minecraft:moss_carpet",
+      "minecraft:tallgrass",
+      "minecraft:sunflower",
+      "minecraft:lilac",
+      "minecraft:tall_grass",
+      "minecraft:large_fern",
+      "minecraft:rose_bush",
+      "minecraft:peony"
     ]
   }
 }

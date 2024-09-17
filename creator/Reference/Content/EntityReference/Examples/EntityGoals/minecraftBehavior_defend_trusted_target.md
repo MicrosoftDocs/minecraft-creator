@@ -27,7 +27,7 @@ ms.service: minecraft-bedrock-edition
 |must_see_forget_duration| 3.0| Decimal| Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more. |
 |reevaluate_description| false| Boolean| If true, the mob will stop being targeted if it stops meeting any conditions. |
 |on_defend_start | *not set* | Array | Event that can occur with Target when defense event begins. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |sound_chance| 0.05| Decimal | Probability that a sound will play. |
 |within_radius| 0.0| Decimal| Distance in blocks that the target can be within to launch an attack.|
 

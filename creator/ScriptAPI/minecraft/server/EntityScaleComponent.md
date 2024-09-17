@@ -21,9 +21,9 @@ Sets the entity's visual size.
 Current value for the scale property set on entities.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Constants
 

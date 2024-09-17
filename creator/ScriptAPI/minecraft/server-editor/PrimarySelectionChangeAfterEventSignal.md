@@ -21,9 +21,9 @@ subscribe(callback: (arg: SelectionEventAfterEvent) => void): (arg: SelectionEve
 - **callback**: (arg: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
 
 **Returns** (arg: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -32,6 +32,6 @@ unsubscribe(callback: (arg: SelectionEventAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

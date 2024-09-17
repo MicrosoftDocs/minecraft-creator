@@ -26,6 +26,8 @@ Polished Basalt
 Nether Gold Ore
 - `nether_gold_ore`
 Nether Gold Ore
+- `minecraft:zombie_head`
+- `zombie_head`
 - `minecraft:warped_door`
 Warped Door
 - `warped_door`
@@ -36,6 +38,10 @@ Warped Door
 - `bamboo_block`
 - `minecraft:waxed_oxidized_chiseled_copper`
 - `waxed_oxidized_chiseled_copper`
+- `minecraft:wet_sponge`
+- `wet_sponge`
+- `minecraft:end_stone_brick_wall`
+- `end_stone_brick_wall`
 - `minecraft:granite`
 - `granite`
 - `minecraft:blue_stained_glass_pane`
@@ -94,10 +100,14 @@ Beacon
 Red Nether Brick
 - `red_nether_brick`
 Red Nether Brick
+- `minecraft:brick_wall`
+- `brick_wall`
 - `minecraft:cobbled_deepslate_stairs`
 Cobbled Deepslate Stairs
 - `cobbled_deepslate_stairs`
 Cobbled Deepslate Stairs
+- `minecraft:smooth_sandstone`
+- `smooth_sandstone`
 - `minecraft:snow_layer`
 Snow Layer
 - `snow_layer`
@@ -116,6 +126,8 @@ Glow Frame
 Hanging Roots
 - `hanging_roots`
 Hanging Roots
+- `minecraft:red_sandstone_wall`
+- `red_sandstone_wall`
 - `minecraft:prismarine_bricks_stairs`
 Prismarine Bricks Stairs
 - `prismarine_bricks_stairs`
@@ -256,10 +268,6 @@ Flower Pot
 Polished Deeplate Stairs
 - `polished_deepslate_stairs`
 Polished Deeplate Stairs
-- `minecraft:yellow_flower`
-Yellow Flower
-- `yellow_flower`
-Yellow Flower
 - `minecraft:lime_shulker_box`
 - `lime_shulker_box`
 - `minecraft:weathered_chiseled_copper`
@@ -392,6 +400,26 @@ Hardened Clay
 Stripped Jungle Log
 - `stripped_jungle_log`
 Stripped Jungle Log
+- `minecraft:light_block_9`
+- `light_block_9`
+- `minecraft:light_block_8`
+- `light_block_8`
+- `minecraft:light_block_7`
+- `light_block_7`
+- `minecraft:light_block_6`
+- `light_block_6`
+- `minecraft:light_block_5`
+- `light_block_5`
+- `minecraft:light_block_4`
+- `light_block_4`
+- `minecraft:light_block_3`
+- `light_block_3`
+- `minecraft:light_block_2`
+- `light_block_2`
+- `minecraft:light_block_1`
+- `light_block_1`
+- `minecraft:light_block_0`
+- `light_block_0`
 - `minecraft:oak_sapling`
 - `oak_sapling`
 - `minecraft:light_gray_terracotta`
@@ -440,6 +468,8 @@ Waxed Exposed Copper
 Waxed Exposed Copper
 - `minecraft:birch_wood`
 - `birch_wood`
+- `minecraft:red_sand`
+- `red_sand`
 - `minecraft:hay_block`
 Hay Block
 - `hay_block`
@@ -530,6 +560,8 @@ Mangrove Planks
 Mangrove Planks
 - `minecraft:red_terracotta`
 - `red_terracotta`
+- `minecraft:diorite_wall`
+- `diorite_wall`
 - `minecraft:dead_fire_coral_block`
 - `dead_fire_coral_block`
 - `minecraft:oxidized_copper_bulb`
@@ -566,6 +598,8 @@ Emerald Block
 Emerald Block
 - `minecraft:suspicious_sand`
 - `suspicious_sand`
+- `minecraft:mossy_cobblestone_wall`
+- `mossy_cobblestone_wall`
 - `minecraft:heavy_weighted_pressure_plate`
 Heavy Weighted Pressure Plate
 - `heavy_weighted_pressure_plate`
@@ -732,6 +766,8 @@ Warped Stairs
 Smithing Table
 - `smithing_table`
 Smithing Table
+- `minecraft:player_head`
+- `player_head`
 - `minecraft:weathered_copper_grate`
 - `weathered_copper_grate`
 - `minecraft:poppy`
@@ -770,6 +806,8 @@ Redstone Block
 Birch Fence Gate
 - `birch_fence_gate`
 Birch Fence Gate
+- `minecraft:quartz_pillar`
+- `quartz_pillar`
 - `minecraft:waxed_exposed_cut_copper`
 Waxed Exposed Cut Copper
 - `waxed_exposed_cut_copper`
@@ -820,6 +858,8 @@ Mud Brick Slab
 Farmland
 - `farmland`
 Farmland
+- `minecraft:cut_red_sandstone`
+- `cut_red_sandstone`
 - `minecraft:rail`
 Rail
 - `rail`
@@ -1016,6 +1056,8 @@ Warped Roots
 Warped Roots
 - `minecraft:magenta_concrete`
 - `magenta_concrete`
+- `minecraft:dark_prismarine`
+- `dark_prismarine`
 - `minecraft:sticky_piston`
 Sticky Piston
 - `sticky_piston`
@@ -1088,6 +1130,10 @@ Quartz Ore
 Barrel
 - `barrel`
 Barrel
+- `minecraft:smooth_quartz`
+- `smooth_quartz`
+- `minecraft:coarse_dirt`
+- `coarse_dirt`
 - `minecraft:chorus_flower`
 Chorus Flower
 - `chorus_flower`
@@ -1216,6 +1262,8 @@ Spruce Door
 Frosted Ice
 - `frosted_ice`
 Frosted Ice
+- `minecraft:chipped_anvil`
+- `chipped_anvil`
 - `minecraft:large_amethyst_bud`
 Large Amethyst Bud
 - `large_amethyst_bud`
@@ -1278,6 +1326,12 @@ Jukebox
 Jukebox
 - `minecraft:stripped_cherry_wood`
 - `stripped_cherry_wood`
+- `minecraft:jigsaw`
+Jigsaw
+- `jigsaw`
+Jigsaw
+- `minecraft:prismarine_wall`
+- `prismarine_wall`
 - `minecraft:border_block`
 Border Block
 - `border_block`
@@ -1340,10 +1394,6 @@ Oxidized Cut Copper Slab
 Beetroot
 - `beetroot`
 Beetroot
-- `minecraft:skull`
-Skull
-- `skull`
-Skull
 - `minecraft:white_candle`
 White Candle
 - `white_candle`
@@ -1404,6 +1454,8 @@ Warped Fence Gate
 Warped Fence Gate
 - `minecraft:cut_sandstone_slab`
 - `cut_sandstone_slab`
+- `minecraft:skeleton_skull`
+- `skeleton_skull`
 - `minecraft:composter`
 Composter
 - `composter`
@@ -1450,10 +1502,14 @@ Chorus Plant
 Mud Brick Stairs
 - `mud_brick_stairs`
 Mud Brick Stairs
+- `minecraft:stone_brick_wall`
+- `stone_brick_wall`
 - `minecraft:smooth_red_sandstone_stairs`
 Smooth Red Sandstone Stairs
 - `smooth_red_sandstone_stairs`
 Smooth Red Sandstone Stairs
+- `minecraft:andesite_wall`
+- `andesite_wall`
 - `minecraft:white_glazed_terracotta`
 White Glazed Terracotta
 - `white_glazed_terracotta`
@@ -1478,6 +1534,8 @@ Acacia Trapdoor
 Glow Lichen
 - `glow_lichen`
 Glow Lichen
+- `minecraft:purpur_pillar`
+- `purpur_pillar`
 - `minecraft:twisting_vines`
 Twisting Vines
 - `twisting_vines`
@@ -1522,6 +1580,8 @@ Soul Soil
 Soul Sand
 - `soul_sand`
 Soul Sand
+- `minecraft:granite_wall`
+- `granite_wall`
 - `minecraft:spruce_hanging_sign`
 - `spruce_hanging_sign`
 - `minecraft:polished_diorite`
@@ -1536,6 +1596,8 @@ Fletching Table
 Fletching Table
 - `minecraft:cherry_leaves`
 - `cherry_leaves`
+- `minecraft:creeper_head`
+- `creeper_head`
 - `minecraft:black_glazed_terracotta`
 Black Glazed Terracotta
 - `black_glazed_terracotta`
@@ -1546,6 +1608,8 @@ Waxed Oxidized Cut Copper Stairs
 Waxed Oxidized Cut Copper Stairs
 - `minecraft:waxed_weathered_copper_bulb`
 - `waxed_weathered_copper_bulb`
+- `minecraft:dragon_head`
+- `dragon_head`
 - `minecraft:calibrated_sculk_sensor`
 - `calibrated_sculk_sensor`
 - `minecraft:dark_prismarine_slab`
@@ -1642,6 +1706,8 @@ Tinted Glass
 Big Dripleaf
 - `big_dripleaf`
 Big Dripleaf
+- `minecraft:cut_sandstone`
+- `cut_sandstone`
 - `minecraft:warped_hanging_sign`
 - `warped_hanging_sign`
 - `minecraft:lime_wool`
@@ -1656,6 +1722,8 @@ Reeds
 - `black_shulker_box`
 - `minecraft:jungle_sapling`
 - `jungle_sapling`
+- `minecraft:chiseled_sandstone`
+- `chiseled_sandstone`
 - `minecraft:barrier`
 Barrier
 - `barrier`
@@ -1688,6 +1756,8 @@ Prismarine
 Prismarine
 - `minecraft:exposed_copper_trapdoor`
 - `exposed_copper_trapdoor`
+- `minecraft:mushroom_stem`
+- `mushroom_stem`
 - `minecraft:black_terracotta`
 - `black_terracotta`
 - `minecraft:deepslate_gold_ore`
@@ -1832,6 +1902,18 @@ Pearlescent Froglight
 - `bamboo_button`
 - `minecraft:tall_grass`
 - `tall_grass`
+- `minecraft:light_block_12`
+- `light_block_12`
+- `minecraft:light_block_13`
+- `light_block_13`
+- `minecraft:light_block_10`
+- `light_block_10`
+- `minecraft:light_block_11`
+- `light_block_11`
+- `minecraft:light_block_14`
+- `light_block_14`
+- `minecraft:light_block_15`
+- `light_block_15`
 - `minecraft:nether_sprouts`
 Nether Sprouts
 - `nether_sprouts`
@@ -2078,6 +2160,8 @@ Budding Amethyst
 Birch Stairs
 - `birch_stairs`
 Birch Stairs
+- `minecraft:nether_brick_wall`
+- `nether_brick_wall`
 - `minecraft:purple_glazed_terracotta`
 Purple Glazed Terracotta
 - `purple_glazed_terracotta`
@@ -2104,6 +2188,8 @@ Blue Ice
 Polished Andesite Stairs
 - `polished_andesite_stairs`
 Polished Andesite Stairs
+- `minecraft:piglin_head`
+- `piglin_head`
 - `minecraft:sculk`
 Sculk
 - `sculk`
@@ -2186,6 +2272,8 @@ Weathered Cut Copper
 Cracked Polished Blackstone Bricks
 - `cracked_polished_blackstone_bricks`
 Cracked Polished Blackstone Bricks
+- `minecraft:wither_skeleton_skull`
+- `wither_skeleton_skull`
 - `minecraft:polished_tuff`
 - `polished_tuff`
 - `minecraft:magenta_stained_glass`
@@ -2258,6 +2346,8 @@ Cobbled Deepslate Slab
 Cobbled Deepslate Slab
 - `minecraft:lilac`
 - `lilac`
+- `minecraft:chiseled_quartz_block`
+- `chiseled_quartz_block`
 - `minecraft:spore_blossom`
 Spore Blossom
 - `spore_blossom`
@@ -2280,6 +2370,8 @@ Brown Mushroom Block
 Pink Candle
 - `pink_candle`
 Pink Candle
+- `minecraft:red_nether_brick_wall`
+- `red_nether_brick_wall`
 - `minecraft:purple_shulker_box`
 - `purple_shulker_box`
 - `minecraft:carved_pumpkin`
@@ -2328,6 +2420,8 @@ Cauldron
 Cauldron
 - `minecraft:tube_coral_block`
 - `tube_coral_block`
+- `minecraft:chiseled_red_sandstone`
+- `chiseled_red_sandstone`
 - `minecraft:birch_sapling`
 - `birch_sapling`
 - `minecraft:dark_oak_trapdoor`
@@ -2442,6 +2536,8 @@ Crimson Fungus
 Polished Deepslate
 - `polished_deepslate`
 Polished Deepslate
+- `minecraft:smooth_red_sandstone`
+- `smooth_red_sandstone`
 - `minecraft:purpur_stairs`
 Purpur Stairs
 - `purpur_stairs`
@@ -2490,10 +2586,6 @@ Polished Deepslate Wall
 Dried Kelp Block
 - `dried_kelp_block`
 Dried Kelp Block
-- `minecraft:light_block`
-Light Block
-- `light_block`
-Light Block
 - `minecraft:crimson_fence`
 Crimson Fence
 - `crimson_fence`
@@ -2530,14 +2622,20 @@ Grindstone
 Soul Campfire
 - `soul_campfire`
 Soul Campfire
+- `minecraft:prismarine_bricks`
+- `prismarine_bricks`
 - `minecraft:wooden_pressure_plate`
 Wooden Pressure Plate
 - `wooden_pressure_plate`
 Wooden Pressure Plate
+- `minecraft:sandstone_wall`
+- `sandstone_wall`
 - `minecraft:birch_fence`
 - `birch_fence`
 - `minecraft:waxed_oxidized_copper_grate`
 - `waxed_oxidized_copper_grate`
+- `minecraft:damaged_anvil`
+- `damaged_anvil`
 - `minecraft:white_concrete`
 - `white_concrete`
 - `minecraft:trial_spawner`
@@ -2558,6 +2656,8 @@ Cobbled Deepslate Wall
 Weathered Copper
 - `weathered_copper`
 Weathered Copper
+- `minecraft:mossy_stone_brick_wall`
+- `mossy_stone_brick_wall`
 - `minecraft:lime_terracotta`
 - `lime_terracotta`
 - `minecraft:cherry_fence_gate`
@@ -2606,6 +2706,8 @@ Cartography Table
 Cartography Table
 - `minecraft:oxidized_copper_door`
 - `oxidized_copper_door`
+- `minecraft:dandelion`
+- `dandelion`
 - `grass`
 Grass
 - `concretepowder`
@@ -2632,132 +2734,70 @@ Double Stone Slab 2
 Double Stone Slab 3
 - `double_stone_slab4`
 Double Stone Slab 4
+- `yellow_flower`
+Yellow Flower
 - `wool`
-Wool
-- `minecraft:wool`
 Wool
 - `log`
 Log
-- `minecraft:log`
-Log
 - `log2`
-Log 2
-- `minecraft:log2`
 Log 2
 - `coral`
 Coral
-- `minecraft:coral`
-Coral
 - `fence`
-Fence
-- `minecraft:fence`
 Fence
 - `carpet`
 Carpet
-- `minecraft:carpet`
-Carpet
 - `shulker_box`
-Shulker Box
-- `minecraft:shulker_box`
 Shulker Box
 - `concrete`
 Concrete
-- `minecraft:concrete`
-Concrete
 - `stained_hardened_clay`
-Stained Hardened Clay
-- `minecraft:stained_hardened_clay`
 Stained Hardened Clay
 - `concrete_powder`
 Concrete Powder
-- `minecraft:concrete_powder`
-Concrete Powder
 - `stained_glass`
-Stained Glass
-- `minecraft:stained_glass`
 Stained Glass
 - `stained_glass_pane`
 Stained Glass Pane
-- `minecraft:stained_glass_pane`
-Stained Glass Pane
 - `planks`
 Planks
-- `minecraft:planks`
-Planks
-- `hard_stained_glass`
-- `minecraft:hard_stained_glass`
-- `hard_stained_glass_pane`
-- `minecraft:hard_stained_glass_pane`
 - `wooden_slab`
-Wooden Slab
-- `minecraft:wooden_slab`
 Wooden Slab
 - `leaves`
 Leaves
-- `minecraft:leaves`
-Leaves
 - `leaves2`
-Leaves 2
-- `minecraft:leaves2`
 Leaves 2
 - `wood`
 Wood
-- `minecraft:wood`
-Wood
 - `sapling`
-Sapling
-- `minecraft:sapling`
 Sapling
 - `coral_fan`
 Coral Fan
-- `minecraft:coral_fan`
-Coral Fan
 - `coral_fan_dead`
-Coral Fan Dead
-- `minecraft:coral_fan_dead`
 Coral Fan Dead
 - `red_flower`
 Red Flower
-- `minecraft:red_flower`
-Red Flower
 - `tallgrass`
-Tallgrass
-- `minecraft:tallgrass`
 Tallgrass
 - `coral_block`
 Coral Block
-- `minecraft:coral_block`
-Coral Block
 - `double_plant`
-Double Plant
-- `minecraft:double_plant`
 Double Plant
 - `stone_block_slab`
 Stone Block Slab
-- `minecraft:stone_block_slab`
-Stone Block Slab
 - `stone_block_slab2`
-Stone Block Slab 2
-- `minecraft:stone_block_slab2`
 Stone Block Slab 2
 - `stone_block_slab3`
 Stone Block Slab 3
-- `minecraft:stone_block_slab3`
-Stone Block Slab 3
 - `stone_block_slab4`
 Stone Block Slab 4
-- `minecraft:stone_block_slab4`
-Stone Block Slab 4
-- `double_stone_block_slab`
-- `minecraft:double_stone_block_slab`
 - `monster_egg`
-Monster Egg
-- `minecraft:monster_egg`
 Monster Egg
 - `stonebrick`
 Stonebrick
-- `minecraft:stonebrick`
-Stonebrick
+- `skull`
+Skull
 - `minecraft:chicken`
 Chicken
 - `chicken`
@@ -2824,12 +2864,8 @@ Splash Potion
 Ender Pearl
 - `ender_pearl`
 Ender Pearl
-- `minecraft:boat`
-Boat
 - `boat`
 Boat
-- `minecraft:chest_boat`
-Chest Boat
 - `chest_boat`
 Chest Boat
 - `minecraft:lingering_potion`
@@ -3561,8 +3597,6 @@ Crossbow
 Crossbow
 - `minecraft:mace`
 - `mace`
-- `minecraft:ominous_bottle`
-- `ominous_bottle`
 - `minecraft:shield`
 Shield
 - `shield`
@@ -3677,6 +3711,8 @@ Empty Map
 Saddle
 - `saddle`
 Saddle
+- `minecraft:bundle`
+- `bundle`
 - `minecraft:leather_horse_armor`
 Leather Horse Armor
 - `leather_horse_armor`
@@ -3723,6 +3759,8 @@ Experience Bottle
 Potion
 - `potion`
 Potion
+- `minecraft:ominous_bottle`
+- `ominous_bottle`
 - `minecraft:spyglass`
 Spyglass
 - `spyglass`
@@ -4095,8 +4133,6 @@ Book
 Writeable Book
 - `writable_book`
 Writeable Book
-- `minecraft:trial_key`
-- `trial_key`
 - `minecraft:enchanted_book`
 Enchanted Book
 - `enchanted_book`
@@ -4313,6 +4349,10 @@ Firework Rocket
 Firework Star
 - `firework_star`
 Firework Star
+- `minecraft:trial_key`
+- `trial_key`
+- `minecraft:ominous_trial_key`
+- `ominous_trial_key`
 - `minecraft:lodestone_compass`
 Lodestone Compass
 - `lodestone_compass`
@@ -4321,12 +4361,8 @@ Lodestone Compass
 - `wither_spawn_egg`
 - `minecraft:ender_dragon_spawn_egg`
 - `ender_dragon_spawn_egg`
-- `minecraft:ominous_trial_key`
-- `ominous_trial_key`
 - `speckled_melon`
 Speckled Melon
-- `real_double_stone_slab4`
-Real Double Stone Slab 4
 - `nametag`
 Nametag
 - `glazedterracotta.white`
@@ -4347,8 +4383,6 @@ Glazed Terracotta Magenta
 Glazed Terracotta Lime
 - `glazedterracotta.light_blue`
 Glazed Terracotta Light Blue
-- `record_strad`
-Record Strad
 - `glazedterracotta.yellow`
 Glazed Terracotta Yellow
 - `cooked_fish`
@@ -4376,12 +4410,6 @@ Glazed Terracotta Black
 - `glazedterracotta.red`
 Glazed Terracotta Red
 - `record_relic`
-- `real_double_stone_slab`
-Real Double Stone Slab
-- `real_double_stone_slab2`
-Real Double Stone Slab 2
-- `real_double_stone_slab3`
-Real Double Stone Slab 3
 - `record_cat`
 Record Cat
 - `record_creator`
@@ -4411,6 +4439,8 @@ Record Mall
 Record Mellohi
 - `record_stal`
 Record Stal
+- `record_strad`
+Record Strad
 - `record_wait`
 Record Wait
 - `record_ward`
@@ -4465,16 +4495,6 @@ Suspicious Stew
 Filled Map
 - `filled_map`
 Filled Map
-- `minecraft:jigsaw`
-Jigsaw
-- `jigsaw`
-Jigsaw
-- `minecraft:dye`
-Dye
-- `minecraft:banner_pattern`
-Banner Pattern
-- `minecraft:spawn_egg`
-Spawn Egg
 
 ## References
 The following commands reference this enum:

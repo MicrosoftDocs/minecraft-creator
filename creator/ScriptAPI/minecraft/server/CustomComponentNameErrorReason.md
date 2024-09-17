@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .CustomComponentNameErrorReason Enumeration
 description: Contents of the .CustomComponentNameErrorReason enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CustomComponentNameErrorReason Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Constants
 ### **NoNamespace**

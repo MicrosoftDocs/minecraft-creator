@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.NotEqualsComparison Interface
 description: Contents of the @minecraft/server.NotEqualsComparison class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # NotEqualsComparison Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Not equal to operator.
 

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .HudElement Enumeration
 description: Contents of the .HudElement enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # HudElement Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Constants
 ### **PaperDoll**

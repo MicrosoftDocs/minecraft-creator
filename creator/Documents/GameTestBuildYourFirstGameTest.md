@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Building your first GameTest
 description: "A guide to building a GameTest using structures and JavaScript"
 ms.service: minecraft-bedrock-edition
@@ -50,10 +50,8 @@ With this simple foundation, GameTests can be created with a few lines of JavaSc
 
 ## Start building your own tests
 
-To get started, you'll want to begin with your own behavior pack. To begin your behavior pack, create a new folder in the `development_behavior_packs` folder called `startertests`.
-
->[!IMPORTANT]
->To build and run your own GameTests, you must use the latest Beta versions of Minecraft (version 1.16.230+). See [Minecraft Betas](https://aka.ms/mcbeta) for more information.
+> [!NOTE]
+> A completed version of this tutorial is available on GitHub, at [https://github.com/microsoft/minecraft-gametests](https://github.com/microsoft/minecraft-gametests/main/starterTestsTutorial/). You can use this sample to compare against your sample, or if you just want to see what this looks like when completed.
 
 Within the `startertests` folder, you'll also want to include two subfolders:
 
@@ -66,35 +64,43 @@ You can start a behavior pack manifest with a manifest.json file within your sta
 
 ``` JSON
 {
-    "format_version": 2,
-    "header": {
-        "description": "Introductory tests for Minecraft GameTest Framework.",
-        "name": "Starter Hello World Tests",
-        "uuid": "1a2f42bd-98d4-4e0d-8e3f-934ab8a0c05e",
-        "version": [0, 0, 1],
-        "min_engine_version": [ 1, 19, 0 ]
-    }
+  "format_version": 2,
+  "header": {
+    "description": "Introductory tests for Minecraft GameTest Framework.",
+    "name": "Starter Hello World Tests",
+    "uuid": "afeeb2ab-0404-4518-822f-9837117e78e1",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  }
 }
 ```
 
 A behavior pack manifest needs to have additional elements to support GameTests.  The `modules` section needs one module, added beneath the header section, that registers your JavaScript code entry point, as follows:
 
 ``` JSON
-    "modules": [
-        {
-            "description": "Script that implements basic starter tests.",
-            "type": "script",
-            "language": "javascript",
-            "uuid": "1a1b53fc-5653-4a75-91b7-9cdf027674ae",
-            "version": [0, 0, 1],
-            "entry": "scripts/StarterTests.js"
-        }
-    ]
+  "modules": [
+    {
+      "description": "Script that implements basic starter tests.",
+      "type": "script",
+      "language": "javascript",
+      "uuid": "ead57a90-41fc-4f3b-8e1a-ccc64c99da0c",
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "entry": "scripts/StarterTests.js"
+    }
+  ]
 ```
-
->[!Caution]
->This sample now represents the manifest format for registering JavaScript for version 1.19. Prior to version 1.19, the `type` attribute should be set to "javascript", and the language attribute should be omittted.
-> Also note that this sample uses the new `dependencies` format and versioning introduced in version 1.19.30, where you can use `module_name` to reference built-in script modules. `version` now uses a string, and the targeted module versions should be `1.0.0-beta.`
 
 Note several facets of this `module`:
 
@@ -105,59 +111,67 @@ Note several facets of this `module`:
 In addition, you will need to establish dependencies on Minecraft APIs and GameTest Framework.  You can do this with additional dependencies added beneath the modules section below:
 
 ``` JSON
-    "dependencies": [
-      {
-        "module_name": "@minecraft/server",
-        "version": "1.0.0-beta"
-      },
-      {
-        "module_name": "@minecraft/server-gametest",
-        "version": "1.0.0-beta"
-      }
-    ]
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.13.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-gametest",
+      "version": "1.0.0-beta"
+    }
+  ]
 ```
 
 >[!IMPORTANT]
->As you can see, GameTest Framework tests dependent on versions "1.0.0-beta" of Minecraft APIs and GameTest Framework. Beta versions indicate that these features are still **experimental**. As with all experiments, we are improving their capabilities over time, and API signatures may change build over build without advanced notice.  Check the Minecraft Changelog for more changes over time.
+>As you can see, GameTest Framework tests dependent on versions "1.13.0-beta" of Minecraft APIs and GameTest Framework. Beta versions indicate that these features are still **experimental**. As with all experiments, we are improving their capabilities over time, and API signatures may change build over build without advanced notice.  Check the Minecraft Changelog for more changes over time.
 
 A full manifest file for a Behavior Pack with a GameTest looks like:
 
 ``` JSON
 {
-    "format_version": 2,
-    "header": {
-        "description": "Introductory tests for Minecraft GameTest Framework.",
-        "name": "Starter Hello World Tests",
-        "uuid": "1a2f42bd-98d4-4e0d-8e3f-934ab8a0c05e",
-        "version": [0, 0, 1],
-        "min_engine_version": [ 1, 19, 0 ]
-    },
-    "modules": [
-        {
-            "description": "Script that implements basic starter tests.",
-            "type": "script",
-            "language": "javascript",
-            "uuid": "1a1b53fc-5653-4a75-91b7-9cdf027674ae",
-            "version": [0, 0, 1],
-            "entry": "scripts/StarterTests.js"
-        }
+  "format_version": 2,
+  "header": {
+    "description": "Introductory tests for Minecraft GameTest Framework.",
+    "name": "Starter Hello World Tests",
+    "uuid": "afeeb2ab-0404-4518-822f-9837117e78e1",
+    "version": [
+      1,
+      0,
+      0
     ],
-    "dependencies": [
-      {
-        "module_name": "@minecraft/server",
-        "version": "1.0.0-beta"
-      },
-      {
-        "module_name": "@minecraft/server-gametest",
-        "version": "1.0.0-beta"
-      }
+    "min_engine_version": [
+      1,
+      21,
+      0
     ]
+  },
+  "modules": [
+    {
+      "description": "Script that implements basic starter tests.",
+      "type": "script",
+      "language": "javascript",
+      "uuid": "ead57a90-41fc-4f3b-8e1a-ccc64c99da0c",
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "entry": "scripts/StarterTests.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.13.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-gametest",
+      "version": "1.0.0-beta"
+    }
+  ]
 }
 ```
-
->[!Caution]
-> This sample now represents the manifest format for registering JavaScript for version 1.19.30. Prior to version 1.19, the `type` attribute should be set to "javascript", and the language attribute should be omittted.
-> Also note that this sample uses the new `dependencies` format and versioning introduced in version 1.19.30, where you can use `module_name` to reference built-in script modules. `version` now uses a string, and the targeted module versions should be `1.0.0-beta.`
 
 ### GameTest Registration
 
@@ -176,7 +190,6 @@ To register your GameTest scripts, you'll want to use the RegistrationBuilder cl
 An example line of JavaScript that uses RegistrationBuilder looks like:
 
 ```javascript
-// Registration Code for our test
 GameTest.register("StarterTests", "simpleMobTest", simpleMobTest)
         .maxTicks(410)
         .structureName("startertests:mediumglass"); /* use the mediumglass.mcstructure file */
@@ -198,19 +211,18 @@ Sample Test:
 import * as GameTest from "@minecraft/server-gametest";
 
 function simpleMobTest(test) {
-  const attackerId = "fox";
-  const victimId = "chicken";
-
-  test.spawn(attackerId, { x: 5, y: 2, z: 5});
-  test.spawn(victimId, { x: 2, y: 2, z: 2});
-
-  test.assertEntityPresentInArea(victimId, true);
-
-  // Succeed when the victim dies
+  const foxId = "fox";
+  const chickenId = "chicken";
+  
+  test.spawn(foxId, { x: 5, y: 2, z: 5 });
+  test.spawn(chickenId, { x: 2, y: 2, z: 2 });
+  
+  test.assertEntityPresentInArea(chickenId, true);
+  
   test.succeedWhen(() => {
-    test.assertEntityPresentInArea(victimId, false);
+    test.assertEntityPresentInArea(chickenId, false);
   });
-};
+}
 ```
 
 Some things to observe in this test function:
@@ -225,24 +237,22 @@ The full JavaScript StarterTests.js file looks like:
 import * as GameTest from "@minecraft/server-gametest";
 
 function simpleMobTest(test) {
-  const attackerId = "fox";
-  const victimId = "chicken";
-
-  test.spawn(attackerId, { x: 5, y: 2, z: 5});
-  test.spawn(victimId, { x: 2, y: 2, z: 2});
-
-  test.assertEntityPresentInArea(victimId, true);
-
-  // Succeed when the victim dies
+  const foxId = "fox";
+  const chickenId = "chicken";
+  
+  test.spawn(foxId, { x: 5, y: 2, z: 5 });
+  test.spawn(chickenId, { x: 2, y: 2, z: 2 });
+  
+  test.assertEntityPresentInArea(chickenId, true);
+  
   test.succeedWhen(() => {
-    test.assertEntityPresentInArea(victimId, false);
+    test.assertEntityPresentInArea(chickenId, false);
   });
-};
+}
 
-// Registration Code for our test
 GameTest.register("StarterTests", "simpleMobTest", simpleMobTest)
-        .maxTicks(410)
-        .structureName("startertests:mediumglass"); /* use the mediumglass.mcstructure file */
+  .maxTicks(410)
+  .structureName("startertests:mediumglass"); /* use the mediumglass.mcstructure file */
 ```
 
 To finish the sample, you will want to use a structure block to define the test.

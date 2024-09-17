@@ -19,6 +19,8 @@ The minecraft:cooldown component.
 `Durability = "minecraft:durability"`
 
 The minecraft:durability component.
+### **Dyeable**
+`Dyeable = "minecraft:dyeable"`
 ### **Enchantable**
 `Enchantable = "minecraft:enchantable"`
 

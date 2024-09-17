@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .ItemCustomComponentAlreadyRegisteredError Class
 description: Contents of the .ItemCustomComponentAlreadyRegisteredError class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemCustomComponentAlreadyRegisteredError Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - *Error*

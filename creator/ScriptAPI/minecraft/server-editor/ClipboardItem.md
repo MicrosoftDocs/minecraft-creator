@@ -19,8 +19,8 @@ Return whether there is any block content in the item
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [clear](#clear)
@@ -28,6 +28,7 @@ Type: *boolean*
 - [getPredictedWriteAsSelection](#getpredictedwriteasselection)
 - [getSize](#getsize)
 - [readFromSelection](#readfromselection)
+- [readFromStructure](#readfromstructure)
 - [readFromWorld](#readfromworld)
 - [writeToWorld](#writetoworld)
 
@@ -37,12 +38,10 @@ clear(): void
 `
 
 Clear the contents of the item
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **getPredictedWriteAsCompoundBlockVolume**
 `
@@ -62,12 +61,10 @@ This function does not perform any write operations, and instead returns only a 
   An optional set of write parameters which govern how the ClipboardItem should be potentially applied to the world
 
 **Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) - A [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) which represents the occupied block volumes within the ClipboardItem as they would be written to the world with the specified [*@minecraft/server-editor.ClipboardWriteOptions*](../../minecraft/server-editor/ClipboardWriteOptions.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **getPredictedWriteAsSelection**
 `
@@ -87,12 +84,10 @@ This function does not perform any write operations, and instead returns only a 
   An optional set of write parameters which govern how the ClipboardItem should be potentially applied to the world
 
 **Returns** [*Selection*](Selection.md) - A [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) which represents the occupied block volumes within the ClipboardItem as they would be written to the world with the specified [*@minecraft/server-editor.ClipboardWriteOptions*](../../minecraft/server-editor/ClipboardWriteOptions.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **getSize**
 `
@@ -102,12 +97,10 @@ getSize(): minecraftserver.Vector3
 Get the bounding size of the ClipboardItem
 
 **Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **readFromSelection**
 `
@@ -120,12 +113,23 @@ Copy the contents of the area represented by a [*@minecraft/server-editor.Select
 - **selection**: [*Selection*](Selection.md)
   
   A volume which represents the area to be copied
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+### **readFromStructure**
+`
+readFromStructure(structure: EditorStructure): void
+`
 
-> [!WARNING]
-> This function can throw errors.
+#### **Parameters**
+- **structure**: [*EditorStructure*](EditorStructure.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
 
 ### **readFromWorld**
 `
@@ -141,12 +145,10 @@ Copy the contents of a rectangular volume into the Clipboard Item
 - **to**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   The world location of the opposite corner of a bounding volume
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **writeToWorld**
 `
@@ -164,9 +166,7 @@ Apply the contents of a ClipboardItem to the world at a given location using a s
   An optional set of write parameters which modify the properties of the ClipboardItem as it is applied to the world
 
 **Returns** *boolean* - Success or Failure
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
