@@ -14,7 +14,7 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| value| *not set* | String | Sets the base rarity of the item. Valid values are "common", "uncommon", "rare", and "epic". The rarity of an item automatically increases when enchanted, either to rare when the base rarity is common or yncommon, or epic when the base rarity is rare. |
+| value| *not set* | String | Sets the base rarity of the item. Valid values are "common", "uncommon", "rare", and "epic". The rarity of an item automatically increases when enchanted, either to rare when the base rarity is common or uncommon, or epic when the base rarity is rare. |
 
 
 ## Example
