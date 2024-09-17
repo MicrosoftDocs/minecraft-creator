@@ -17,9 +17,9 @@ There are a wide variety of tools that have been created for the purpose of incr
 
 Map creation is one of the largest and most time-consuming components of content creation. That being said, there are a significant number of map creation tools available to make this process significantly more efficient.
 
-### [Chunker](https://chunker.app/)
+### [Chunker](https://github.com/HiveGamesOSS/Chunker/)
 
-Chunker is a web tool for Minecraft: Bedrock Edition worlds. It's specifically useful for converting worlds between Minecraft: Java Edition and Bedrock Edition, as well as easily configuring world settings. Conversion includes level settings, chunk data (such as blocks and biomes), dimensions, and more. To learn more about using Chunker, you can begin with the [Chunker Overview](ChunkerOverview.md) guide, which goes over the steps needed to do simple conversions and leads to more advanced features of the tool.
+Chunker is a Java-based tool for Minecraft: Bedrock Edition worlds. It's specifically useful for converting worlds between Minecraft: Java Edition and Bedrock Edition, as well as easily configuring world settings. Conversion includes level settings, chunk data (such as blocks and biomes), dimensions, and more. To learn more about using Chunker, you can begin with the [Chunker Overview](ChunkerOverview.md) guide, which goes over the steps needed to do simple conversions and leads to more advanced features of the tool.
 
 ### [Amulet](https://www.amuletmc.com/)
 

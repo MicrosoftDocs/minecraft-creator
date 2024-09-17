@@ -19,7 +19,7 @@ Survival spawns should generally contain everything necessary for players to exp
 
 If you're depending on your build blending into natural generation, your first step should be locating an appropriate **Bedrock Edition** seed to base your world on and then generating an area to build on. As of 1.18, Bedrock and Java have seed parity so long as the seed number is 9 or fewer characters.
 
-The most stable way to build a survival spawn is to build it directly in Bedrock Edition, however most publicly available [tools](CommonlyUsedTools.md) for building in Minecraft exist for Java Edition. Fortunately, tools such as [Chunker](https://chunker.app) that allow converting Bedrock Edition worlds into Java Edition worlds exist.
+The most stable way to build a survival spawn is to build it directly in Bedrock Edition, however most publicly available [tools](CommonlyUsedTools.md) for building in Minecraft exist for Java Edition. Fortunately, tools such as [Chunker](ChunkerOverview.md) that allow converting Bedrock Edition worlds into Java Edition worlds exist.
 
 ## Generating Bedrock Terrain
 
@@ -27,7 +27,7 @@ Trying to convert a newly created Bedrock Edition world to Java Edition would re
 
 ## Converting Worlds
 
-Converting worlds used to be a clunky and confusing process that was prone to error. With the introduction of [Chunker](https://chunker.app), that process has been made exponentially easier. Not only can you use Chunker to convert worlds, but you can also use it to prune chunks, change world settings, and much much more! [Read how to utilize the power of Chunker](ChunkerOverview.md) to help prepare your worlds!
+Converting worlds used to be a clunky and confusing process that was prone to error. With the introduction of [Chunker](ChunkerOverview.md), that process has been made exponentially easier. Not only can you use Chunker to convert worlds, but you can also use it to prune chunks, change world settings, and much much more! [Read how to utilize the power of Chunker](ChunkerOverview.md) to help prepare your worlds!
 
 ## Things to Keep in Mind While Building
 

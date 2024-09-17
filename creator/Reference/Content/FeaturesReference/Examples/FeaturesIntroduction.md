@@ -244,6 +244,35 @@ Represents the scatter distribution over a coordinate (x/y/z), can also be built
 | grid_offset | Integer | Optional | When the distribution type is grid, defines the offset along this axis. |
 | step_size | Integer | Optional | When the distribution type is grid, defines the distance between steps along this axis. |
 
+### Feature Rule Conditions
+
+| Name| Type | Required? | Description |
+|:-----------|:-----------|:-----------|:-----------|
+| minecraft:biome_filter | Object of type Filter Group | Optional | List of which filter tests are attached to which biomes. |
+| placement_pass | String | Required | When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass. |
+
+### Feature Rule Definition
+
+| Name| Type | Required? | Description |
+|:-----------|:-----------|:-----------|:-----------|
+| conditions | Object of type Feature Rule Conditions | Required | Parameters to control where and when the feature will be placed. |
+| description | Object of type Feature Rule Description | Required | Identifier for the Feature Rule and Feature to place. |
+| distribution | Object of type Scatter Params | Optional | Parameters controlling the initial scatter of the feature. |
+
+### Feature Rule Description
+
+| Name| Type | Required? | Description |
+|:-----------|:-----------|:-----------|:-----------|
+| identifier | String | Required | The name of this feature rule in the format `namespace_name:rule_name`. `rule_name` must match the filename. |
+| places_feature | String | Required | Named reference to the feature controlled by this rule. |
+
+### Feature Rule JSON File
+
+| Name| Type | Required? | Description |
+|:-----------|:-----------|:-----------|:-----------|
+| format_version | String | Required | Version of the JSON schema used by this file. |
+| minecraft:feature_rules | Object of type Feature Rule Definition | Required | A single Feature Rule Definition. |
+
 ### Filter Group
 
 Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.

@@ -51,6 +51,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.find_cover| -1231227755 |
 | minecraft:behavior.find_mount| 731306871 |
 | minecraft:behavior.find_underwater_treasure| -1602192311 |
+| minecraft:behavior.fire_at_target| 15552728018745447502 |
 | minecraft:behavior.flee_sun| -617664229 |
 | minecraft:behavior.float| 1758503000 |
 | minecraft:behavior.float_wander| -1122048364 |
@@ -66,6 +67,8 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.hold_ground| 1804286487 |
 | minecraft:behavior.hurt_by_target| -1710404297 |
 | minecraft:behavior.inspect_bookshelf| 40191182 |
+| minecraft:behavior.investigate_suspicious_location| 17828766620487298865 |
+| minecraft:behavior.jump_around_target| 11795366379540415834 |
 | minecraft:behavior.jump_to_block| 9920654059703051752 |
 | minecraft:behavior.knockback_roar| 10556128811593022910 |
 | minecraft:behavior.lay_down| -2074934675 |
@@ -80,6 +83,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.melee_box_attack| 16943510645914782909 |
 | minecraft:behavior.mingle| 385775952 |
 | minecraft:behavior.mount_pathing| 1112137677 |
+| minecraft:behavior.move_around_target| 12172580866581071579 |
 | minecraft:behavior.move_indoors| 15759011189030877060 |
 | minecraft:behavior.move_outdoors| 13363481534821336549 |
 | minecraft:behavior.move_through_village| 779377630 |

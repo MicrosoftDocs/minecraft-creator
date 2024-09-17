@@ -20,6 +20,8 @@
    href: minecraft_display_name.md
  - name: durability
    href: minecraft_durability.md
+ - name: dyeable
+   href: minecraft_dyeable.md
  - name: enchantable
    href: minecraft_enchantable.md
  - name: entity_placer
@@ -46,6 +48,8 @@
    href: minecraft_max_stack_size.md
  - name: projectile
    href: minecraft_projectile.md
+ - name: rarity
+   href: minecraft_rarity.md
  - name: record
    href: minecraft_record.md
  - name: repairable
