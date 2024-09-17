@@ -14,7 +14,7 @@ ms.service: minecraft-bedrock-edition
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |attack_cooldown_complete_event|*not set* | JSON Object |  Event to be run when the cooldown is complete. |
-| attack_cooldown_time| [0.0, 1.0]| Range [a, b]| Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max). |
+| attack_cooldown_time| [0.00, 1.00]| Range [a, b]| Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max). |
 
 ## Example
 

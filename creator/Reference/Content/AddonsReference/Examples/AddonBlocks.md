@@ -44,6 +44,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:andesite_double_slab |
 | minecraft:andesite_slab |
 | minecraft:andesite_stairs |
+| minecraft:andesite_wall |
 | minecraft:anvil |
 | minecraft:azalea |
 | minecraft:azalea_leaves |
@@ -137,6 +138,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:brick_double_slab |
 | minecraft:brick_slab |
 | minecraft:brick_stairs |
+| minecraft:brick_wall |
 | minecraft:brown_candle |
 | minecraft:brown_candle_cake |
 | minecraft:brown_carpet |
@@ -174,7 +176,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chain |
 | minecraft:chain_command_block |
 | minecraft:chemical_heat |
-| minecraft:chemistry_table |
 | minecraft:cherry_button |
 | minecraft:cherry_door |
 | minecraft:cherry_double_slab |
@@ -222,10 +223,13 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cobblestone_slab |
 | minecraft:cobblestone_wall |
 | minecraft:cocoa |
-| minecraft:colored_torch_bp |
-| minecraft:colored_torch_rg |
+| minecraft:colored_torch_blue |
+| minecraft:colored_torch_green |
+| minecraft:colored_torch_purple |
+| minecraft:colored_torch_red |
 | minecraft:command_block |
 | minecraft:composter |
+| minecraft:compound_creator |
 | minecraft:conduit |
 | minecraft:copper_block |
 | minecraft:copper_bulb |
@@ -347,13 +351,16 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:deepslate_tiles |
 | minecraft:deny |
 | minecraft:deprecated_anvil |
+| minecraft:deprecated_purpur_block_1 |
+| minecraft:deprecated_purpur_block_2 |
 | minecraft:detector_rail |
 | minecraft:diamond_block |
 | minecraft:diamond_ore |
 | minecraft:diorite |
 | minecraft:diorite_double_slab |
-| minecraft:diorite_slab |
+| minecraft:diorite_slab
 | minecraft:diorite_stairs |
+| minecraft:diorite_wall |
 | minecraft:dirt |
 | minecraft:dirt_with_roots |
 | minecraft:dispenser |
@@ -486,6 +493,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:element_97 |
 | minecraft:element_98 |
 | minecraft:element_99 |
+| minecraft:element_constructor |
 | minecraft:emerald_block |
 | minecraft:emerald_ore |
 | minecraft:enchanting_table |
@@ -498,6 +506,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:end_stone |
 | minecraft:end_stone_brick_double_slab |
 | minecraft:end_stone_brick_slab |
+| minecraft:end_stone_brick_wall |
 | minecraft:ender_chest |
 | minecraft:exposed_chiseled_copper |
 | minecraft:exposed_copper |
@@ -540,6 +549,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:granite_double_slab |
 | minecraft:granite_slab |
 | minecraft:granite_stairs |
+| minecraft:granite_wall |
 | minecraft:grass_block |
 | minecraft:grass_path |
 | minecraft:gravel |
@@ -647,6 +657,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:jungle_wall_sign |
 | minecraft:jungle_wood |
 | minecraft:kelp |
+| minecraft:lab_table |
 | minecraft:ladder |
 | minecraft:lantern |
 | minecraft:lapis_block |
@@ -748,6 +759,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mangrove_trapdoor |
 | minecraft:mangrove_wall_sign |
 | minecraft:mangrove_wood |
+| minecraft:material_reducer |
 | minecraft:medium_amethyst_bud |
 | minecraft:melon_block |
 | minecraft:melon_stem |
@@ -758,10 +770,11 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mossy_cobblestone_double_slab |
 | minecraft:mossy_cobblestone_slab |
 | minecraft:mossy_cobblestone_stairs |
+| minecraft:mossy_cobblestone_wall |
 | minecraft:mossy_stone_brick_double_slab |
 | minecraft:mossy_stone_brick_slab |
 | minecraft:mossy_stone_brick_stairs |
-| minecraft:mossy_stone_bricks |
+| minecraft:mossy_stone_brick_wall |
 | minecraft:moving_block |
 | minecraft:mud |
 | minecraft:mud_brick_double_slab |
@@ -776,6 +789,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:nether_brick_fence |
 | minecraft:nether_brick_slab |
 | minecraft:nether_brick_stairs |
+| minecraft:nether_brick_wall |
 | minecraft:nether_gold_ore |
 | minecraft:nether_sprouts |
 | minecraft:nether_wart |
@@ -893,6 +907,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:prismarine_double_slab |
 | minecraft:prismarine_slab |
 | minecraft:prismarine_stairs |
+| minecraft:prismarine_wall |
 | minecraft:pumpkin |
 | minecraft:pumpkin_stem |
 | minecraft:purple_candle |
@@ -907,6 +922,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:purple_terracotta |
 | minecraft:purple_wool |
 | minecraft:purpur_block |
+| minecraft:purpur_pillar |
 | minecraft:purpur_double_slab |
 | minecraft:purpur_slab |
 | minecraft:purpur_stairs |
@@ -934,11 +950,13 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:red_nether_brick_double_slab |
 | minecraft:red_nether_brick_slab |
 | minecraft:red_nether_brick_stairs |
+| minecraft:red_nether_brick_wall |
 | minecraft:red_sand |
 | minecraft:red_sandstone |
 | minecraft:red_sandstone_double_slab |
 | minecraft:red_sandstone_slab |
 | minecraft:red_sandstone_stairs |
+| minecraft:red_sandstone_wall |
 | minecraft:red_shulker_box |
 | minecraft:red_stained_glass |
 | minecraft:red_stained_glass_pane |
@@ -960,6 +978,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sandstone_double_slab |
 | minecraft:sandstone_slab |
 | minecraft:sandstone_stairs |
+| minecraft:sandstone_wall |
 | minecraft:scaffolding |
 | minecraft:sculk |
 | minecraft:sculk_catalyst |
@@ -1032,9 +1051,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stone_block_slab2 |
 | minecraft:stone_block_slab3 |
 | minecraft:stone_block_slab4 |
+| minecraft:stone_brick_double_slab |
 | minecraft:stone_brick_slab |
 | minecraft:stone_brick_stairs |
-| minecraft:stone_bricks |
+| minecraft:stone_brick_wall |
 | minecraft:stone_button |
 | minecraft:stone_pressure_plate |
 | minecraft:stone_stairs |
@@ -1095,6 +1115,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:tuff_wall |
 | minecraft:turtle_egg |
 | minecraft:twisting_vines |
+| minecraft:underwater_tnt |
 | minecraft:underwater_torch |
 | minecraft:undyed_shulker_box |
 | minecraft:unknown |
@@ -1179,6 +1200,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:weathered_double_cut_copper_slab |
 | minecraft:web |
 | minecraft:weeping_vines |
+| minecraft:wet_sponge |
 | minecraft:wheat |
 | minecraft:white_candle |
 | minecraft:white_candle_cake |
