@@ -14,8 +14,8 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| default_color|*not set* | String | ... |
-| dyed |*not set* | String | ...|
+| default_color| *not set* | String | Color to use by default. If you do not want a default color you can leave the "default_color" off and the texture will be the same as if you did not have the component until it is dyed. |
+| dyed | *not set* | String | Texture for the dyed item. |
 
 
 ## Example
