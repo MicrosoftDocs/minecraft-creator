@@ -852,7 +852,6 @@ For the icon to be dyed correctly. you need to provide a grayscale .tga version 
 
 Hint: You can use the icon graphics from the previous section: [**Chestplate Resource Pack/textures/items**](/creator/Documents/AddCustomItems.md#chestplate-resource-packtexturesitems).
 
-
 **Dyeable Custom Chestplate Resource Pack:**
 
 ```
