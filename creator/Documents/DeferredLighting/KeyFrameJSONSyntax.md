@@ -15,41 +15,30 @@ Here's how it works:
 
 Take this example of a **lighting/global.json** file:
 
+> [!NOTE]
+> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
+
 ```json
 {
-    "format_version": [1, 0, 0], 
-    "directional_lights": {
-        "sun": {
-            "illuminance": 100000,
-            "color": [ 255.0, 255.0, 255.0, 255.0 ]
+    "minecraft:lighting_settings": {
+        "format_version": "1.21.40",
+        "description": {
+            "identifier": "my_pack:default_lighting"
         },
-        "moon": { 
-            "illuminance": 0.27,
-            "color": [ 255.0, 255.0, 255.0, 255.0 ]
-        }, 
-        "orbital_offset_degrees": 0.0
-    },
-    "point_lights": { 
-        "colors": { 
-            "minecraft:soul_torch": "#FFFFFF"
-        } 
-    },
-    "pbr": { 
-        "blocks": { 
-            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
+        "directional_lights": {
+            "sun": {
+                "illuminance": 100000,
+                "color": [ 255.0, 255.0, 255.0, 255.0 ]
+            },
+            "moon": { 
+                "illuminance": 0.27,
+                "color": [ 255.0, 255.0, 255.0, 255.0 ]
+            }, 
+            "orbital_offset_degrees": 0.0
         },
-        "actors": { 
-            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
-        },
-        "particles": { 
-            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
-        },
-        "items": { 
-            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
+        "emissive": {
+            "desaturation": 0.1
         }
-    },
-    "emissive": {
-        "desaturation": 0.1
     }
 } 
 ```
@@ -64,47 +53,33 @@ With all of this in mind, we can adjust our lighting/global.json slightly to alt
 
 ```json
 {
-    "format_version": [1, 0, 0], 
-    "directional_lights": {
-        "sun": {
-            "illuminance": {
-              "0.0": 100000.0,  // Noon
-              "0.25": 20000.0, // Sunset
-              "0.35": 400.0,
-              "0.5": 1.0,  // Midnight
-              "0.65": 400.0,
-              "0.75": 20000.0, // Sunrise
-              "1.0": 100000.0   // Noon
+    "minecraft:lighting_settings": {
+        "format_version": "1.21.40",
+        "description": {
+            "identifier": "my_pack:default_lighting"
+        },
+        "directional_lights": {
+            "sun": {
+                "illuminance": {
+                  "0.0": 100000.0,  // Noon
+                  "0.25": 20000.0, // Sunset
+                  "0.35": 400.0,
+                  "0.5": 1.0,  // Midnight
+                  "0.65": 400.0,
+                  "0.75": 20000.0, // Sunrise
+                  "1.0": 100000.0   // Noon
+                },
+                "color": [ 255.0, 255.0, 255.0, 255.0 ]
             },
-            "color": [ 255.0, 255.0, 255.0, 255.0 ]
+            "moon": { 
+                "illuminance": 0.27,
+                "color": [ 255.0, 255.0, 255.0, 255.0 ]
+            }, 
+            "orbital_offset_degrees": 0.0
         },
-        "moon": { 
-            "illuminance": 0.27,
-            "color": [ 255.0, 255.0, 255.0, 255.0 ]
-        }, 
-        "orbital_offset_degrees": 0.0
-    },
-    "point_lights": { 
-        "colors": { 
-            "minecraft:soul_torch": "#FFFFFF"
-        } 
-    },
-    "pbr": { 
-        "blocks": { 
-            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]
-        }, 
-        "actors": { 
-            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
-        },
-        "particles": { 
-            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
-        },
-        "items": { 
-            "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]  
+        "emissive": {
+            "desaturation": 0.1
         }
-    },
-    "emissive": {
-        "desaturation": 0.1
     }
 }
 ```

@@ -31,6 +31,9 @@ The following example is a good place to start:
 
 ### fogs/default_fog_settings.json
 
+> [!NOTE]
+> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
+
 ```json
 {
   "format_version": "1.16.100", 
