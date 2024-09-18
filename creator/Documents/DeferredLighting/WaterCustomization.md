@@ -38,7 +38,7 @@ There are a variety of ways to customize waves to convey different types of wate
 
 ### Schema
 
->[!Note] 
+> [!NOTE]
 > We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
 
 Water configurations are JSON files located in the "water" directory in a resource pack. They must have the filename "water.json", and adhere to the following format:
