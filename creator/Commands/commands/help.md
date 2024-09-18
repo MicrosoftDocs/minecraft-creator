@@ -59,12 +59,14 @@ Command name enumeration
 Manages tags stored in entities.
 - `camera`
 Experimental camera command.
+- `script`
+Contains additional tools for managing the runtime of script, including debugger and profiler options.
+- `stop`
 - `transfer`
 - `clear`
 Clears items from player inventory.
 - `time`
 Changes or queries the world's game time.
-- `stop`
 - `camerashake`
 Applies shaking to the players' camera with a specified intensity and duration.
 - `clearspawnpoint`
@@ -218,5 +220,3 @@ Adds an enchantment to a player's selected item.
 - `changesetting`
 - `sendshowstoreoffer`
 - `reloadconfig`
-- `script`
-Contains additional tools for managing the runtime of script, including debugger and profiler options.

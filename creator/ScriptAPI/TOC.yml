@@ -158,6 +158,8 @@
       href: minecraft/server/ObjectiveSortOrder.md
     - name: PaletteColor
       href: minecraft/server/PaletteColor.md
+    - name: PlatformType
+      href: minecraft/server/PlatformType.md
     - name: ScoreboardIdentityType
       href: minecraft/server/ScoreboardIdentityType.md
     - name: ScriptEventSource

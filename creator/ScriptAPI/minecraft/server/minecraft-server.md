@@ -68,6 +68,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [MoonPhase](MoonPhase.md)
 - [ObjectiveSortOrder](ObjectiveSortOrder.md)
 - [PaletteColor](PaletteColor.md)
+- [PlatformType](PlatformType.md)
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
 - [ScriptEventSource](ScriptEventSource.md)
 - [SignSide](SignSide.md)

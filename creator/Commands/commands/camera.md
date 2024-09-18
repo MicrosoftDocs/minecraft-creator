@@ -212,10 +212,10 @@ A listing of available camera presets.
 
 #### Values
 - `minecraft:first_person`
+- `minecraft:follow_orbit`
 - `minecraft:free`
 - `minecraft:third_person`
 - `minecraft:third_person_front`
-- `minecraft:follow_orbit`
 
 ### `Easing`
 Specifies an easing function to use for the camera.
