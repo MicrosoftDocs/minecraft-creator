@@ -7,7 +7,7 @@ title: reload Command
 description: Description and usage of the reload command
 ---
 # `/reload` Command
-Reloads functions and script files from all behavior packs, as well as provides a more comprehensive "reload the entirety of the world" option (/reload all).
+Reloads all function and script files from all behavior packs.
 
 <table>
   <tr>
@@ -25,7 +25,3 @@ Reloads functions and script files from all behavior packs, as well as provides 
 `/reload`
 
 Reload all function and script files.
-
-`/reload all`
-
-Will reload the entire world, by essentially exiting out of the world and then reloading it. 

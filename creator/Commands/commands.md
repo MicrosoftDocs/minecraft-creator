@@ -105,7 +105,6 @@ description: List and descriptions of Minecraft commands and enums
 | rotation | An &#x60;enum&#x60; of the rotation when loading in a structure. Must be one of &#x60;0_degrees&#x60;, &#x60;90_degrees&#x60;, &#x60;180_degrees&#x60;, or &#x60;270_degrees&#x60;.,Default: &#x60;0_degrees&#x60;. |   |
 | string | A &#x60;string&#x60; that is either one word or a quoted &#x60;string&#x60;  with a space. |   |
 | target | A &#x60;string&#x60; or [&#x60;target selector&#x60;](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandsintroduction#target-selectors) to identify which player is targeted. |   |
-| targets | An &#x60;array&#x60; of &#x60;string&#x60; or [&#x60;target selector&#x60;](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandsintroduction#target-selectors) to identify which player is targeted. |   |
 | text | A &#x60;string&#x60; . |   |
 | wildcard int | A 32-bit &#x60;integer&#x60; or an asterisk &#x60;*&#x60; for a wildcard.  |   |
 | [`Block`](./enums/Block.md) | Minecraft block | Yes |
