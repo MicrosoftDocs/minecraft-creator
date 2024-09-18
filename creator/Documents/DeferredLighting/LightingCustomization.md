@@ -11,9 +11,10 @@ ms.service: minecraft-bedrock-edition
 
 This page describes how to customize lighting with Directional Lights, Point Lights and more with JSON.
 
-> NOTE: As of version `1.21.40.30+`, the JSON for lighting has been split into 3 separate files.
+> [!NOTE]
+> As of version `1.21.40.22`, the JSON for lighting has been split into 3 separate files.
 
-### Directional Lights
+## Directional Lights
 
 The `"directional_lights"` object is where you can configure properties of the sun and the moon. These properties will affect how strong their respective light contributions are, what colors they contribute to various surfaces they illuminate and the angle at which they cast shadows. It will also greatly influence the color of the sky by way of atmospheric scattering calculations (see atmospherics/atmospherics.json for more details).
 
@@ -24,7 +25,7 @@ Illuminance values that correspond to "real world" values are suitable for use i
 Color values can either be described as an array of 3 or 4 numerical values from the range 0-255 or as a 6 or 8 hexadecimal digit string.
 Any of these values can be individually key framed (see Key Frame Syntax section for more details).
 
-### Point Lights
+## Point Lights
 
 The `"point_lights"` object allows you to specify which blocks should be considered point lights and what color a given point light should emit.
 
@@ -47,21 +48,22 @@ To change the strength of a point light, refer to the [documentation for lightEm
 
 Color values can be described either as an array of 3 numerical values from the range 0-255 or as a 6-digit hexadecimal string.
 
-### PBR Uniforms
+## PBR Uniforms
 
 The `"pbr"` object is meant to complement the larger Texture Set functionality by acting as a default or fallback value when texture set detail isn't provided for particular blocks, entities, particles, or items. For example, if you provide texture sets for pigs and creepers, but no other entities, then, when a cow is rendered in game, the `"global_metalness_emissive_roughness_subsurface"` value defined in **pbr/global.json** will be applied uniformly across the entire surface of the cow. This allows you to quickly provide a general art direction without having to author textures for every single game object initially, and iteratively add more detail to the blocks/entities as you see fit.
 
 Values can be described either as an array of 4 numerical values from the range 0-255, or as a 4 hexadecimal digit string.
 
-### Emissive
+## Emissive
 
 The `"emissive"` object allows for some control over how emissive light sources behave. These parameters can be especially useful for fine-tuning emissive light sources for certain types of tone mapping.
+
 >- `"desaturation"` a factor from [0-1] that controls how much the albedo of a given pixel is desaturated when computing the color of emissive light. A value of 0 results in no desaturation, while a value of 1 results in full desaturation of the albedo color.
 
-### Lighting JSON Schemas
+## Lighting JSON Schemas
 
 > [!NOTE]
->We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
+> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
 
 File location: **lighting/global.json**
 
