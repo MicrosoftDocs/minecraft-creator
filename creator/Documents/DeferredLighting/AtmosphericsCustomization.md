@@ -14,10 +14,11 @@ This page describes how to customize atmospherics effects.
 
 ## Atmospherics JSON Schema
 
->[!Note] 
+>[!NOTE]
 > We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
 
->[!Note] As of version `1.21.40.22`, the JSON files for atmospheric scattering have been relocated to the `atmospherics` directory.
+>[!NOTE] 
+> As of version `1.21.40.22`, the JSON files for atmospheric scattering have been relocated to the `atmospherics` directory.
 
 File location: atmospherics/atmospherics.json
 

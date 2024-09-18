@@ -15,8 +15,8 @@ Here's how it works:
 
 Take this example of a **lighting/global.json** file:
 
->[!Note] 
->We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
+> [!NOTE]
+> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
 
 ```json
 {
