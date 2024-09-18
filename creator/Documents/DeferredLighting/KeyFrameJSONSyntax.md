@@ -38,6 +38,10 @@ Take this example of a **lighting/global.json** file:
         },
         "emissive": {
             "desaturation": 0.1
+        },
+        "ambient": {
+            "illuminance": 0.02,
+            "color": "#ffffffff"
         }
     }
 } 
@@ -79,6 +83,10 @@ With all of this in mind, we can adjust our lighting/global.json slightly to alt
         },
         "emissive": {
             "desaturation": 0.1
+        },
+        "ambient": {
+            "illuminance": 0.02,
+            "color": "#ffffffff"
         }
     }
 }
