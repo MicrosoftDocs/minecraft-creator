@@ -16,3 +16,19 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [*SystemInfo*](SystemInfo.md)
 
 Contains the device information for a client instance.
+
+## Properties
+
+### **maxRenderDistance**
+`read-only maxRenderDistance: number;`
+
+The max render distance for the device in chunks.
+
+Type: *number*
+
+### **platformType**
+`read-only platformType: PlatformType;`
+
+The platform type of the device.
+
+Type: [*PlatformType*](PlatformType.md)

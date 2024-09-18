@@ -146,6 +146,7 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Dyeable`
 - Added value `Potion`
 #### Added enum [`MemoryTier`](MemoryTier.md)
+#### Added enum [`PlatformType`](PlatformType.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `TicksPerDay`
 ## 1.14.0

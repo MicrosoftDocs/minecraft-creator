@@ -24,6 +24,9 @@ However, it is recommended that a new capability string be used going forward fo
 
 The new capability string is "pbr":
 
+> [!NOTE]
+> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
+
 ```json
 { 
   "format_version": 1,
@@ -41,7 +44,7 @@ The new capability string is "pbr":
 
 ## Deferred Lighting JSON Files
 
-Texture Sets are good for defining the surface properties of individual blocks or mobs, but for more global lighting properties, JSON files provide a simple way to data-drive the renderer. The JSONs described here should be located inside of a "lighting" directory in the root of a given resource pack.
+Texture Sets are good for defining the surface properties of individual blocks or mobs, but for more global lighting properties, JSON files provide a simple way to data-drive the renderer. Here is a handy image to reference the full folder structure for Deferred-associated JSON files.
 
-![Image of the file structure for a resource pack with a manifest file, a lighting folder containing global.json and atmospherics.json files, and a textures file containing a "blocks" folder, an "entities" folder, and a textures_list.json file.](Media/RP_file_structure.png)
+![Image of the file structure for a resource pack with a manifest file, an atmospherics folder containing an atmospherics.json file, a color_grading folder containing a color_grading.json, a lighting folder containing a global.json file, a pbr folder containing a global.json file, a point_lights folder containing a global.json, a textures folder containing a "blocks" folder, an "entities" folder, an "items" folder, a "particles" folder and a textures_list.json file, and a water folder containing a water.json.](Media/RP_file_structure.png)
 
