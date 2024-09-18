@@ -53,7 +53,8 @@ For instance, the relative difference in luminous power between a torch and an E
 
 ### Schema
 
->[!Note] We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
+>[!Note] 
+> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
 
 Color grading configurations are JSON files located in the "color_grading" directory in a resource pack. They must have the filename "color_grading.json", and adhere to the following format:
 

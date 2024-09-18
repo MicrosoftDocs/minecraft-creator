@@ -60,7 +60,8 @@ The `"emissive"` object allows for some control over how emissive light sources 
 
 ### Lighting JSON Schemas
 
->[!Note] We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
+>[!Note] 
+>We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
 
 File location: **lighting/global.json**
 
