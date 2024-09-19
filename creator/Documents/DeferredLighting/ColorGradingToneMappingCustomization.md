@@ -60,9 +60,9 @@ Color grading configurations are JSON files located in the "color_grading" direc
 
 ```json
 {
+  string "format_version", // The 3-part schema version for parsing these color grading settings.
   object "minecraft:color_grading_settings"
   {
-    string "format_version", // The 3-part schema version for parsing these color grading settings.
     object "description"
     {
       string "identifier" // The identifier for these color grading settings. The identifier must include a namespace.
@@ -112,8 +112,8 @@ The following example JSON can be used as a starting point:
 
 ```json
 {
+  "format_version": "1.21.40",
   "minecraft:color_grading_settings": {
-    "format_version": "1.21.40",
     "description": {
       "identifier": "my_pack:default_color_grading"
     },

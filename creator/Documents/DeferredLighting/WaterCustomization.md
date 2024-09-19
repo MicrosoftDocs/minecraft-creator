@@ -38,16 +38,13 @@ There are a variety of ways to customize waves to convey different types of wate
 
 ### Schema
 
-> [!NOTE]
-> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
-
 Water configurations are JSON files located in the "water" directory in a resource pack. They must have the filename "water.json", and adhere to the following format:
 
 ```json
 {
+    string "format_version", // The 3-part schema version for parsing these water settings.
     object "minecraft:water_settings"
     {
-        string "format_version", // The 3-part schema version for parsing these water settings.
         object "description"
         {
             string "identifier" // The identifier for these water settings. The identifier must include a namespace.
@@ -81,8 +78,8 @@ The following example JSON can be used as a starting point for an ocean:
 **water/water.json**
 ```json
 {
+    "format_version": "1.21.40",
     "minecraft:water_settings": {
-        "format_version": "1.21.40",
         "description": {
             "identifier": "my_pack:default_water"
         },
