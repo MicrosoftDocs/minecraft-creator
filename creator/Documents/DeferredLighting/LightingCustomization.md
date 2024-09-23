@@ -181,7 +181,7 @@ File location: **pbr/global.json**
 
 ```json
 {
-    "minecraft:minecraft:point_light_settings": {
+    "minecraft:point_light_settings": {
         "format_version": "1.21.40",
         "colors": { 
            "minecraft:soul_torch": "#FFFFFF"
