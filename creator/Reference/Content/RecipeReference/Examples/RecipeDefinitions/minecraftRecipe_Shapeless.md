@@ -32,11 +32,13 @@ Represents a shapeless crafting recipe.
             "identifier": "minecraft:firecharge_coal_sulphur"
         },
      "priority": 0,
-     "ingredients": {
+     "ingredients": [
+        {
         "item": "minecraft:fireball",
         "data": 0,
         "count": 4
-     },
+        }
+     ],
     "result": {
         "item": "minecraft:blaze_powder",
         "data": 4

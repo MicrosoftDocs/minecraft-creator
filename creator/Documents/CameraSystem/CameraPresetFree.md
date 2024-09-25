@@ -1,12 +1,12 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Free Camera Preset
+title: Free Camera Preset Tutorial
 description: "A tutorial about the Free Camera Preset"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Free Camera Preset
+# Free Camera Preset Tutorial
 
 In this tutorial you will learn how the **free camera** preset command works.
 
