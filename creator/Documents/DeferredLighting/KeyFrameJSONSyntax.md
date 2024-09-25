@@ -15,13 +15,10 @@ Here's how it works:
 
 Take this example of a **lighting/global.json** file:
 
-> [!NOTE]
-> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
-
 ```json
 {
+    "format_version": "1.21.40",
     "minecraft:lighting_settings": {
-        "format_version": "1.21.40",
         "description": {
             "identifier": "my_pack:default_lighting"
         },
@@ -57,8 +54,8 @@ With all of this in mind, we can adjust our lighting/global.json slightly to alt
 
 ```json
 {
+    "format_version": "1.21.40",
     "minecraft:lighting_settings": {
-        "format_version": "1.21.40",
         "description": {
             "identifier": "my_pack:default_lighting"
         },

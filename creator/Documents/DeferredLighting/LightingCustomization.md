@@ -72,16 +72,13 @@ The `"emissive"` object allows for some control over how emissive light sources 
 
 ## Lighting JSON Schemas
 
-> [!NOTE]
-> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
-
 File location: **lighting/global.json**
 
 ```json
 {
+    string "format_version", // The 3-part schema version for parsing these lighting settings.
     object "minecraft:lighting_settings"
     {
-        string "format_version", // The 3-part schema version for parsing these lighting settings.
         object "description"
         {
             string "identifier" // The identifier for these lighting settings. The identifier must include a namespace.
@@ -117,9 +114,9 @@ File location: **point_lights/global.json**
 
 ```json
 {
+    string "format_version", // The 3-part schema version for parsing these point light settings.
     object "minecraft:point_light_settings"
     {
-        string "format_version", // The 3-part schema version for parsing these point light settings.
         object "colors" // List of key-value pairs where the key is a namespace-qualified block name and the value is a color (supports RGB array or HEX string)
         {
             string: color, 
@@ -134,9 +131,9 @@ File location: **pbr/global.json**
 
 ```json
 {
+    string "format_version", // The 3-part schema version for parsing these pbr fallback settings.
     object "minecraft:pbr_fallback_settings"
     {
-        string "format_version", // The 3-part schema version for parsing these pbr fallback settings.
         object "blocks"
         {
             color "global_metalness_emissive_roughness_subsurface" // The default MERS value to use for blocks when not defined via textureset; supports RGBA array or HEX string
@@ -161,8 +158,8 @@ File location: **pbr/global.json**
 
 ```json
 {
+    "format_version": "1.21.40",
     "minecraft:lighting_settings": {
-        "format_version": "1.21.40",
         "description": {
             "identifier": "my_pack:default_lighting_"
         },
@@ -200,8 +197,8 @@ File location: **pbr/global.json**
 
 ```json
 {
-    "minecraft:point_light_settings": {
-        "format_version": "1.21.40",
+    "format_version": "1.21.40",
+    "minecraft:minecraft:point_light_settings": {
         "colors": { 
            "minecraft:soul_torch": "#FFFFFF"
         }
@@ -213,8 +210,8 @@ File location: **pbr/global.json**
 
 ```json
 {
+    "format_version": "1.21.40",
     "minecraft:pbr_fallback_settings": {
-        "format_version": "1.21.40",
         "blocks": {
             "global_metalness_emissive_roughness_subsurface": [0.0, 0.0, 255.0, 0.0]
         },

@@ -14,18 +14,15 @@ This page describes how to customize atmospherics effects.
 ## Atmospherics JSON Schema
 
 > [!NOTE]
-> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
-
-> [!NOTE]
 > As of version `1.21.40.22`, the JSON files for atmospheric scattering have been relocated to the `atmospherics` directory.
 
 File location: atmospherics/atmospherics.json
 
 ```json
 {
+  string "format_version", // The 3-part schema version for parsing these atmosphere settings.
   object "minecraft:atmosphere_settings"
   {
-    string "format_version", // The 3-part schema version for parsing these atmosphere settings.
     object "description"
     {
       string "identifier" // The identifier for these atmosphere settings. The identifier must include a namespace.
@@ -55,8 +52,8 @@ Note that the colors defined for the sun and moon directional lights in lighting
 
 ```json
 {
+    "format_version": "1.21.40",
     "minecraft:atmosphere_settings": {
-        "format_version": "1.21.40",
         "description": {
             "identifier": "my_pack:default_atmospherics"
         },
