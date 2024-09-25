@@ -38,7 +38,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
-- `minecraft:bundle`
 - `minecraft:acacia_boat`
 - `minecraft:acacia_door`
 - `minecraft:acacia_fence`
@@ -88,6 +87,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:brown_stained_glass_pane_from_pane`
 - `minecraft:brown_stained_hardened_clay`
 - `minecraft:brown_stained_hardened_clay_from_cocoa_beans`
+- `minecraft:bundle`
 - `minecraft:cyan_banner`
 - `minecraft:cyan_carpet`
 - `minecraft:cyan_carpet_from_white`

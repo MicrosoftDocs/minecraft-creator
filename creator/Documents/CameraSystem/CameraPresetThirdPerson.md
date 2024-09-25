@@ -1,12 +1,12 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Third Person Camera Preset
+title: Third Person Camera Preset Overview
 description: "An overview about the Third_Person Camera Presets"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Third Person Camera Preset
+# Third Person Camera Preset Overview
 
 In this overview, you will learn about the **third_person** camera presets.
 
