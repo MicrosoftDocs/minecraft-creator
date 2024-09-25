@@ -24,9 +24,6 @@ However, it is recommended that a new capability string be used going forward fo
 
 The new capability string is "pbr":
 
-> [!NOTE]
-> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
-
 ```json
 { 
   "format_version": 1,
