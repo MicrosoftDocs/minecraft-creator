@@ -192,6 +192,11 @@ To view all of the available behaviors and AI Goal Components that an entity can
 
 ## What's Next?
 
+If you'd like to see another tutorial on using Blockbench with the Minecraft Entity Wizard, you can watch it on the [Minecraft Creator Channel](https://aka.ms/mcv).
+
+> [!div class="nextstepaction"]
+> [Tutorial Video](https://www.youtube.com/watch?v=OdZlKpLOkj4)
+
 Want to learn more about building with Blockbench? The Blockbench Wiki has step by step guides and reference documentation for modeling, texturing, and animating any custom creation you can imagine.
 
 > [!div class="nextstepaction"]
