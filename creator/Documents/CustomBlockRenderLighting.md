@@ -33,7 +33,9 @@ The bubble's texture was created in Paint3D to be able to create opaque, translu
 
 You can create your own transparent block, or check out the [minecraft-samples](https://github.com/microsoft/minecraft-samples) page for more information.
 
-> [!VIDEO https://www.youtube.com/embed/TIv-FsWwo8g] > _Another tutorial, another excellent follow-along video!_
+> [!VIDEO https://www.youtube.com/embed/TIv-FsWwo8g]
+
+Another tutorial, another excellent follow-along video!
 
 **Complete Setup in Resource Pack**
 
@@ -173,6 +175,11 @@ However, you can only tell the difference between "opaque" and "double_sided" if
 
 Alpha test doesn't respect translucency, which affects the transparent teal pixels of this block. But it does respect transparent and opaque pixels. This render method also disables backface culling, which is why you can see the back of the bubble through the transparent parts. At least we can see the fish!
 
+**render_method: alpha_test_single_sided**
+
+`render method: alpha_test_single_sided` is very similar to alpha test. It doesn't respect translucency, which affects the transparent teal pixels of this block. But it does respect transparent and opaque pixels. This render method enables backface culling, which is why you can’t see the back of the bubble through the transparent parts. Just like a regular glass block! 
+
+
 **render_method: blend**
 
 ```json
@@ -227,10 +234,6 @@ Should the material be dimmed by the side it's facing?
 ```
 
 Similar to our ambient occlusion example, you can see the block on the left has face dimming set to 'true,' while the right block has the option set to 'false'.
-
-## render_method": "alpha_test_single_sided 
-
-Alpha test single sided is very similar to alpha test. It doesn't respect translucency, which affects the transparent teal pixels of this block. But it does respect transparent and opaque pixels. This render method enables backface culling, which is why you can’t see the back of the bubble through the transparent parts. Just like a regular glass block! 
 
 ## Next Steps
 

@@ -12,6 +12,15 @@ Before building your first Add-On for Minecraft: Bedrock Edition, you will need 
 
 ![Image of a cow chasing Steve. Run, Steve, run!](Media/BehaviorPack/Introduction-to-Behavior-Packs.jpg)
 
+
+## On the Minecraft Creator Channel
+
+> [!VIDEO https://www.youtube.com/embed/TUFeM5P4IwM]
+
+If you prefer to watch a video version of this tutorial, you can view it on the [Minecraft Creator Channel](https://aka.ms/mcv), [available here](https://www.youtube.com/watch?v=TUFeM5P4IwM).
+
+## Tutorial Overview
+
 In this tutorial, you will learn the following:
 
 > [!div class="checklist"]

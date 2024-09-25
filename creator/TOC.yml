@@ -219,7 +219,7 @@
         - name: Survival Spawn Creation
           href: Documents/SurvivalSpawnCreation.md
         - name: Building a Parkour Challenge World
-          items:            
+          items:   
           - name: Parkour Introduction
             href: Documents/ParkourIntro.md
           - name: Parkour World Walkthrough
@@ -236,17 +236,16 @@
           href: Documents/FogInResourcePacks.md
         - name: Cameras
           items:  
-          - name: Camera System
+          - name: Camera System Document List
             href: Documents/CameraSystem/index.yml
           - name: Camera System Introduction
             href: Documents/CameraSystem/CameraCommandIntroduction.md
           - name: Free Camera Preset Tutorial
             href: Documents/CameraSystem/CameraPresetFree.md
+          - name: Free Camera Script API Tutorial
+            href: Documents/CameraSystem/FreeCameraScriptAPITutorial.md
           - name: Third Person Camera Preset
             href: Documents/CameraSystem/CameraPresetThirdPerson.md
-          - name: Camera Script APIs
-            href: Documents/CameraSystem/FreeCameraScriptAPITutorial.md
-
     - name: Entities and Particles
       items:
         - name: Creating New Entity Types

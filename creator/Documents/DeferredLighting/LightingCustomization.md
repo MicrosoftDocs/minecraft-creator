@@ -48,6 +48,16 @@ To change the strength of a point light, refer to the [documentation for lightEm
 
 Color values can be described either as an array of 3 numerical values from the range 0-255 or as a 6-digit hexadecimal string.
 
+## Ambient Light
+
+The `"ambient"` object allows for some control over how surfaces are lit when there are no other sensible light sources available. For instance, imagine a scene with no direct or indirect light sources, like a dark cavern with no torches or lava. Absent any light source, the player would be left in complete darkness. Another common case is when no indirect specular contribution is available. This often happens when in underground scenes where there is no exposure to the sky and when SSR can't be calculated for one reason or another. The ambient object allows packs to specify a minimum, fallback light source to provide for both cases.
+
+The `"color"` value can either be described as an array of 3 numerical values from the range 0-255 or as a 6 hexadecimal digit string.
+
+The `"illuminance"` value corresponds to the strength, in lux (lx), of the ambient light, and should be kept quite low in general. The allowed range for this value is 0.0 - 5.0.
+
+If not provided, a default color of `#FFFFFF` and illuminance of `0.02` will be used.
+
 ## PBR Uniforms
 
 The `"pbr"` object is meant to complement the larger Texture Set functionality by acting as a default or fallback value when texture set detail isn't provided for particular blocks, entities, particles, or items. For example, if you provide texture sets for pigs and creepers, but no other entities, then, when a cow is rendered in game, the `"global_metalness_emissive_roughness_subsurface"` value defined in **pbr/global.json** will be applied uniformly across the entire surface of the cow. This allows you to quickly provide a general art direction without having to author textures for every single game object initially, and iteratively add more detail to the blocks/entities as you see fit.
@@ -93,6 +103,11 @@ File location: **lighting/global.json**
         object "emissive"
         {
             float "desaturation" // The amount of desaturation to apply to albedo color values during emissive light calculation; values range from [0, 1]
+        },
+        object "ambient"
+        {
+            float "illuminance",  // How bright the ambient light is; measured in lux (lx)
+            color "color" // The RGB color that the ambient light contributes to surface lighting; supports RGB array or HEX string
         }
     }
 }
@@ -172,6 +187,10 @@ File location: **pbr/global.json**
         },
         "emissive": {
             "desaturation": 0.1
+        },
+        "ambient": {
+            "illuminance": 0.02,
+            "color": "#ffffffff"
         }
     }
 }
@@ -181,7 +200,7 @@ File location: **pbr/global.json**
 
 ```json
 {
-    "minecraft:minecraft:point_light_settings": {
+    "minecraft:point_light_settings": {
         "format_version": "1.21.40",
         "colors": { 
            "minecraft:soul_torch": "#FFFFFF"

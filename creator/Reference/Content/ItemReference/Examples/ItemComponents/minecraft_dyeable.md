@@ -10,12 +10,13 @@ ms.service: minecraft-bedrock-edition
 
 `minecraft:dyeable` enables custom items to be dyed in cauldrons. To use the dyeable component, the format version on the item and the attachable needs to have a `format_version` of **1.21.30** or greater.
 
-## Parameters
+For more information, take a look at the [Add Custom Items tutorial](../../../../../Documents/AddCustomItems.md#dyeable-custom-items).
+
+## Parameter
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | default_color| *not set* | String | Color to use by default. If you do not want a default color you can leave the "default_color" off and the texture will be the same as if you did not have the component until it is dyed. |
-| dyed | *not set* | String | Texture for the dyed item. |
 
 
 ## Example
