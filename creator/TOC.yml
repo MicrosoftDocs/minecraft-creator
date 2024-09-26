@@ -4,6 +4,8 @@
       href: index.yml
     - name: "Updates and News"
       items:
+        - name: 1.21.30 Update Summary
+          href: Documents/Update1.21.30.md 
         - name: 1.21.20 Update Summary
           href: Documents/Update1.21.20.md 
         - name: 1.21 Update Summary
@@ -46,6 +48,8 @@
               href: Documents/WorldHeightChange.md    
     - name: Casual Creator Article Series
       items:              
+        - name: "Building Debug Tools"
+          href: Casual/DebugTools.md
         - name: "Chill Dreams Add-On: Part 1 - The Dream Turkey"
           href: Casual/ChillDreamsPart1TheDreamTurkey.md
         - name: "Chill Dreams Add-On: Part 2 - Making Dreams Come True"
@@ -215,7 +219,7 @@
         - name: Survival Spawn Creation
           href: Documents/SurvivalSpawnCreation.md
         - name: Building a Parkour Challenge World
-          items:            
+          items:   
           - name: Parkour Introduction
             href: Documents/ParkourIntro.md
           - name: Parkour World Walkthrough
@@ -232,17 +236,16 @@
           href: Documents/FogInResourcePacks.md
         - name: Cameras
           items:  
-          - name: Camera System
+          - name: Camera System Document List
             href: Documents/CameraSystem/index.yml
           - name: Camera System Introduction
             href: Documents/CameraSystem/CameraCommandIntroduction.md
           - name: Free Camera Preset Tutorial
             href: Documents/CameraSystem/CameraPresetFree.md
+          - name: Free Camera Script API Tutorial
+            href: Documents/CameraSystem/FreeCameraScriptAPITutorial.md
           - name: Third Person Camera Preset
             href: Documents/CameraSystem/CameraPresetThirdPerson.md
-          - name: Camera Script APIs
-            href: Documents/CameraSystem/FreeCameraScriptAPITutorial.md
-
     - name: Entities and Particles
       items:
         - name: Creating New Entity Types
@@ -309,6 +312,8 @@
             href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
           - name: Custom Block Render Lighting 
             href: Documents/CustomBlockRenderLighting.md
+          - name: Custom Block Render Distance
+            href: Documents/CustomBlockRenderDistance.md
           - name: Advanced Custom Block Oversized 
             href: Documents/CustomBlockOversized.md
     - name: Tools and Libraries
@@ -541,11 +546,16 @@
         href: Reference/Content/RawMessageJSON.md
       - name: Version Disambiguation
         href: Reference/Content/VersionDisambiguation.md
+    - name: Best Practices & Tips
+      items:
+      - name: "Use the Latest Platform Version"
+        href: Documents/Practices/LatestPlatformVersion.md
+      - name: "Tips for Using This Site"
+        href: Documents/TipsForUsingThisSite.md                  
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
         href: Documents/ContributorGuide.md
       - name: Contributor Style Guide
         href: Documents/StyleGuide.md
-    - name: "Tips for Using This Site"
-      href: Documents/TipsForUsingThisSite.md          
+

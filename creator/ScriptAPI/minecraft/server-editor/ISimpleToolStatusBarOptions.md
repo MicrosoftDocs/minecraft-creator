@@ -13,18 +13,11 @@ A set of options which define the basic properties of a status bar item for a si
 ## Properties
 
 ### **alignment**
-`alignment: EditorStatusBarAlignment;`
+`alignment: StatusBarAlignment;`
 
 The alignment of the status bar item within the parent status bar container
 
-Type: *EditorStatusBarAlignment*
-
-### **displayAltText**
-`displayAltText: string;`
-
-The text for the status bar item
-
-Type: *string*
+Type: *StatusBarAlignment*
 
 ### **onFinalize**
 `onFinalize: (statusBar: ISimpleToolStatusBarComponent) => void;`
@@ -52,6 +45,13 @@ Type: *(statusBar: ISimpleToolStatusBarComponent) => void*
 The size of the status bar item within the parent status bar container
 
 Type: *number*
+
+### **text**
+`text: LocalizedString;`
+
+The text for the status bar item
+
+Type: *LocalizedString*
 
 ### **visibility**
 `visibility: SimpleToolStatusBarVisibility;`

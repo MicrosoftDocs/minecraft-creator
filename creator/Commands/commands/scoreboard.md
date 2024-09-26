@@ -47,32 +47,32 @@ List objectives.
 Use `setdisplay` `belowname` `[objective]` to display objective information below player names.  
 
 ### List players
-`/scoreboard players list [playername: targets]`
+`/scoreboard players list [playername: target]`
 
 List players on scoreboard.
 
 ### Reset player objective
-`/scoreboard players reset <player: targets> [objective: ScoreboardObjectives]`
+`/scoreboard players reset <player: target> [objective: ScoreboardObjectives]`
 
 `Reset` one `player`'s chosen `objective`.
 
 ### Test score
-`/scoreboard players test <player: targets> <objective: ScoreboardObjectives> <min: wildcard int> [max: wildcard int]`
+`/scoreboard players test <player: target> <objective: ScoreboardObjectives> <min: wildcard int> [max: wildcard int]`
 
 `Test` whether a `player`'s `score` is within a specified range.
 
 ### Give random score
-`/scoreboard players random <player: targets> <objective: ScoreboardObjectives> <min: int> <max: int>`
+`/scoreboard players random <player: target> <objective: ScoreboardObjectives> <min: int> <max: int>`
 
 Give a player a random score within a range.
 
 ### Change score, count
-`/scoreboard players <action: ScoreboardPlayersNumAction> <player: targets> <objective: ScoreboardObjectives> <count: int>`
+`/scoreboard players <action: ScoreboardPlayersNumAction> <player: target> <objective: ScoreboardObjectives> <count: int>`
 
 Change a `player`'s `score` using a math `operation` by a `count`.
 
 ### Change score, math operation
-`/scoreboard players operation <targetName: targets> <targetObjective: ScoreboardObjectives> <operation: operator> <selector: targets> <objective: ScoreboardObjectives>`
+`/scoreboard players operation <targetName: target> <targetObjective: ScoreboardObjectives> <operation: operator> <selector: target> <objective: ScoreboardObjectives>`
 
 Change a `player`'s `score` using a math `operation` on another player's score.
 
@@ -98,15 +98,15 @@ Min int
 Objective for the game to track
 - `operation`: operator
 A command operator of the `operation` to be applied. Must be `=`, `+=`, `-=`, `*=`, `/=`, `*/`, `<>`, `<`, or. `>`.
-- `player`: targets
+- `player`: target
 A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.
-- `playername`: targets
+- `playername`: target
 A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers.
-- `selector`: targets
+- `selector`: target
 A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the source score havers to use as source inputs.
 - `sortOrder`: ScoreboardSortOrder
 An `enum` of `ascending` or `descending`.
-- `targetName`: targets
+- `targetName`: target
 A [target selector](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors), player selector, UUID, unique ID, or `*` for all of the score havers.
 - `targetObjective`: [ScoreboardObjectives](../enums/ScoreboardObjectives.md)
 

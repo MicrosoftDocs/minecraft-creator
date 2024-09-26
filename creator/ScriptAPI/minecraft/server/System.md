@@ -38,6 +38,22 @@ Represents the current world tick of the server.
 
 Type: *number*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **serverSystemInfo**
+`read-only serverSystemInfo: SystemInfo;`
+
+Contains the device information for the server.
+
+Type: [*SystemInfo*](SystemInfo.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can throw errors when used.
+    - Throws *Error*
+::: moniker-end
+
 ## Methods
 - [clearJob](#clearjob)
 - [clearRun](#clearrun)
@@ -58,6 +74,8 @@ Cancels the execution of a job queued via [*@minecraft/server.System.runJob*](..
 - **jobId**: *number*
   
   The job ID returned from [*@minecraft/server.System.runJob*](../../minecraft/server/System.md#runjob).
+  
+Notes:
 
 ### **clearRun**
 `
@@ -68,6 +86,8 @@ Cancels the execution of a function run that was previously scheduled via [*@min
 
 #### **Parameters**
 - **runId**: *number*
+  
+Notes:
 
 ### **run**
 `
@@ -82,6 +102,8 @@ Runs a specified function at the next available future time. This is frequently 
   Function callback to run at the next game tick.
 
 **Returns** *number* - An opaque identifier that can be used with the `clearRun` function to cancel the execution of this run.
+  
+Notes:
 
 #### Examples
 ##### ***trapTick.ts***
@@ -120,6 +142,8 @@ Runs a set of code on an interval.
   An interval of every N ticks that the callback will be called upon.
 
 **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
+  
+Notes:
 
 #### Examples
 ##### ***every30Seconds.ts***
@@ -146,6 +170,8 @@ Queues a generator to run until completion.  The generator will be given a time 
   The instance of the generator to run.
 
 **Returns** *number* - An opaque handle that can be used with [*@minecraft/server.System.clearJob*](../../minecraft/server/System.md#clearjob) to stop the run of this generator.
+  
+Notes:
 
 #### Examples
 ##### ***cubeGenerator.ts***
@@ -195,6 +221,8 @@ Runs a set of code at a future time specified by tickDelay.
   Amount of time, in ticks, before the interval will be called.
 
 **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
+  
+Notes:
 
 ### **waitTicks**
 `
@@ -205,8 +233,7 @@ waitTicks(ticks: number): Promise<void>
 - **ticks**: *number*
 
 **Returns** Promise&lt;*void*&gt;
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md)

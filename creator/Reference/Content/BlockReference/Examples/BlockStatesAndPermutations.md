@@ -13,6 +13,7 @@ Consider block permutations as variations of the same block, while block states 
 ## Block States
 
 Block states are variables that can be set to different values. Their current value can be evaluated in a permutation's "condition" to determine if that permutation should be used.
+
 The "states" field is contained in the "description" section of a custom block's behavior pack JSON file. It is a JSON object. Inside, a map of key/value pairs must be provided. Each key is the name of a state, which must be properly namespaced. Each value is an array that contains all of the possible values of that state. State values can be Booleans, numbers, or strings.
 
 > [!NOTE]

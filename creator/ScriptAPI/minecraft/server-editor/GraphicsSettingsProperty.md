@@ -11,6 +11,8 @@ description: Contents of the .GraphicsSettingsProperty enumeration.
 Enumeration representing identifiers for graphics settings properties.
 
 ## Constants
+### **ShowChunkBoundaries**
+`ShowChunkBoundaries = "ShowChunkBoundaries"`
 ### **ShowInvisibleBlocks**
 `ShowInvisibleBlocks = "ShowInvisibleBlocks"`
 

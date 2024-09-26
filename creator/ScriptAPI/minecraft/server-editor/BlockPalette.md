@@ -31,11 +31,10 @@ getItem(index: number): IBlockPaletteItem
 - **index**: *number*
 
 **Returns** [*IBlockPaletteItem*](IBlockPaletteItem.md)
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md)
 
 ### **removeItemAt**
 `
@@ -44,22 +43,19 @@ removeItemAt(index: number): void
 
 #### **Parameters**
 - **index**: *number*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md)
 
 ### **removeItems**
 `
 removeItems(): void
 `
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setItem**
 `
@@ -69,11 +65,8 @@ setItem(blockPaletteItem: IBlockPaletteItem, index: number): void
 #### **Parameters**
 - **blockPaletteItem**: [*IBlockPaletteItem*](IBlockPaletteItem.md)
 - **index**: *number*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md)

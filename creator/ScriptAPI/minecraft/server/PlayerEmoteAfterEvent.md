@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerEmoteAfterEvent Class
 description: Contents of the @minecraft/server.PlayerEmoteAfterEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerEmoteAfterEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Properties
 

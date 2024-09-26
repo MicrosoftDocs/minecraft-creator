@@ -21,12 +21,10 @@ beginPlaytest(options: GameOptions): Promise<PlaytestSessionResult>
 - **options**: [*GameOptions*](GameOptions.md)
 
 **Returns** Promise&lt;[*PlaytestSessionResult*](PlaytestSessionResult.md)&gt;
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **getPlaytestSessionAvailability**
 `
@@ -34,9 +32,7 @@ getPlaytestSessionAvailability(): PlaytestSessionResult
 `
 
 **Returns** [*PlaytestSessionResult*](PlaytestSessionResult.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

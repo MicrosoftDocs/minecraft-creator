@@ -22,8 +22,8 @@ Whether the piston is in the process of expanding or retracting.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **state**
 `read-only state: BlockPistonState;`
@@ -32,8 +32,8 @@ The current state of the piston.
 
 Type: [*BlockPistonState*](BlockPistonState.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [getAttachedBlocks](#getattachedblocks)
@@ -47,9 +47,9 @@ getAttachedBlocks(): Block[]
 Retrieves a set of blocks that this piston is connected with.
 
 **Returns** [*Block*](Block.md)[]
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getAttachedBlocksLocations**
 `
@@ -59,9 +59,9 @@ getAttachedBlocksLocations(): Vector3[]
 Retrieves a set of block locations that this piston is connected with.
 
 **Returns** [*Vector3*](Vector3.md)[]
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ## Constants
 

@@ -28,6 +28,8 @@
    href: minecraftBlock_material_instances.md
  - name: placement_filter
    href: minecraftBlock_placement_filter.md
+ - name: redstone_conductivity
+   href: minecraftBlock_redstone_conductivity.md
  - name: selection_box
    href: minecraftBlock_selection_box.md
  - name: tag

@@ -21,9 +21,9 @@ subscribe(callback: (arg: CurrentThemeChangeAfterEvent) => void): (arg: CurrentT
 - **callback**: (arg: [*CurrentThemeChangeAfterEvent*](CurrentThemeChangeAfterEvent.md)) => *void*
 
 **Returns** (arg: [*CurrentThemeChangeAfterEvent*](CurrentThemeChangeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -32,6 +32,6 @@ unsubscribe(callback: (arg: CurrentThemeChangeAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*CurrentThemeChangeAfterEvent*](CurrentThemeChangeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

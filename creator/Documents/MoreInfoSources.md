@@ -10,6 +10,8 @@ ms.service: minecraft-bedrock-edition
 
 Where possible, we aim to make the documentation here as comprehensive as we can get it - but the breadth of Minecraft possibilities can't be contained on just one website!
 
+First, we have a YouTube channel! Check out the [Minecraft Creator Channel](https://aka.ms/mcv) for a growing library of tutorial videos that accompany some of the articles you see here on this site.
+
 Here are many other handy references and sources of information that you can use when building Minecraft solutions.
 
 ## bedrock-samples GitHub repository

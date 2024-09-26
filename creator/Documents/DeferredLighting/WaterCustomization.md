@@ -42,6 +42,7 @@ Water configurations are JSON files located in the "water" directory in a resour
 
 ```json
 {
+    string "format_version", // The 3-part schema version for parsing these water settings.
     object "minecraft:water_settings"
     {
         object "description"
@@ -77,6 +78,7 @@ The following example JSON can be used as a starting point for an ocean:
 **water/water.json**
 ```json
 {
+    "format_version": "1.21.40",
     "minecraft:water_settings": {
         "description": {
             "identifier": "my_pack:default_water"

@@ -110,15 +110,10 @@ Includes entities with the specified name.
 
 Type: *string*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **propertyOptions**
 `propertyOptions?: EntityQueryPropertyOptions[];`
 
 Type: [*EntityQueryPropertyOptions*](EntityQueryPropertyOptions.md)[]
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **scoreOptions**
 `scoreOptions?: EntityQueryScoreOptions[];`

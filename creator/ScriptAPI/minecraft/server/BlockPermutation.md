@@ -159,9 +159,9 @@ Returns a derived BlockPermutation with a specific property set.
   Value of the block property.
 
 **Returns** [*BlockPermutation*](BlockPermutation.md)
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **resolve**
 `
@@ -177,9 +177,9 @@ Given a type identifier and an optional set of properties, will return a BlockPe
 - **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
 
 **Returns** [*BlockPermutation*](BlockPermutation.md)
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 #### Examples
 ##### ***addBlockColorCube.ts***

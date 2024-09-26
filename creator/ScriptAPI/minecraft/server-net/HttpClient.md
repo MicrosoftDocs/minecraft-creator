@@ -44,9 +44,9 @@ Cancels all pending requests.
 
 #### **Parameters**
 - **reason**: *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **get**
 `
@@ -61,9 +61,9 @@ Performs a simple HTTP get request.
   URL to make an HTTP Request to.
 
 **Returns** Promise&lt;[*HttpResponse*](HttpResponse.md)&gt; - An awaitable promise that contains the HTTP response.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **request**
 `
@@ -78,9 +78,9 @@ Performs an HTTP request.
   Contains an HTTP Request object with configuration data on the HTTP request.
 
 **Returns** Promise&lt;[*HttpResponse*](HttpResponse.md)&gt; - An awaitable promise that contains the HTTP response.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
 ##### ***simpleHttpRequest.ts***

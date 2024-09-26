@@ -21,9 +21,9 @@ Defines how much friction affects this entity.
 Current value of the friction modifier of the associated entity.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Constants
 

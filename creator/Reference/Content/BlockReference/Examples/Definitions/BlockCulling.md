@@ -11,10 +11,12 @@ ms.service: minecraft-bedrock-edition
 These properties are part of Block Culling used within block JSON files. This helps the system determine how to change the appearance of this block.
 
 ## Code Example of a Custom Block's Culling JSON file
+
 This section shows how to specify particular faces and/or bones in a geometry file for culling checks. 
 Note that face culling and bone culling can both exist in the same culling file.
 
-A face or bone culls (is not visible) if the neighbor in the "direction" direction is full and opaque (a full cube, and drawing using the "opaque" render-method in the minecraft:material_instances component). Note that if a minecraft:transform component rotates the block, the directions rotate as well
+A face or bone culls (becomes invisible) if the neighbor in the `"direction"` direction is full and opaque (a full cube, and drawing using the "opaque" render-method in the `minecraft:material_instances component`). 
+Note that if a `minecraft:transform` component rotates the block, the directions rotate as well.
 
 ```json
 {
@@ -51,6 +53,69 @@ A face or bone culls (is not visible) if the neighbor in the "direction" directi
 }
 ```
 
+**Example: minecraft:geometry.full_block**
+
+```json
+{
+  "format_version": "1.20.60",
+  "minecraft:block_culling_rules": {
+    "description": {
+      "identifier": "demo:my_glass_block"
+    },
+    "rules": [
+      {
+       "geometry_part": { 
+          "bone": "block",
+          "cube": 0,
+          "face": "north" 
+        },
+        "direction": "north"
+      },
+      {
+        "geometry_part": { 
+          "bone": "block",
+          "cube": 0,
+          "face": "south" 
+        },
+        "direction": "south"
+      },
+        {
+        "geometry_part": { 
+          "bone": "block",
+          "cube": 0,
+          "face": "east"
+        },
+        "direction": "east"
+      },
+      {
+        "geometry_part": {
+          "bone": "block",
+          "cube": 0, 
+          "face": "west"
+        },
+        "direction": "west"
+      },
+      {
+        "geometry_part": {
+          "bone": "block",
+          "cube": 0, 
+          "face": "up"
+        },
+        "direction": "up"
+      },
+      {
+        "geometry_part": {
+          "bone": "block",
+          "cube": 0, 
+          "face": "down"
+        },
+        "direction": "down"
+      }
+    ]
+  }
+}
+```
+
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |format_version|*not set* | String| Specifies the version of the game this entity was made in. If the version is lower than the current version, any changes made to the entity in the vanilla version will be applied to it.|
@@ -64,8 +129,6 @@ A face or bone culls (is not visible) if the neighbor in the "direction" directi
 |description|*not set* | JSON Object | Contains the identifier used by minecraft:geometry block components to refer to this culling data |
 
 ### Rules
-
-The rules list specifies the 
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|

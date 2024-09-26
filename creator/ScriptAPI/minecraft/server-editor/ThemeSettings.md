@@ -20,45 +20,39 @@ description: Contents of the @minecraft/server-editor.ThemeSettings class.
 
 ### **addNewTheme**
 `
-addNewTheme(name: string): void
+addNewTheme(id: string): void
 `
 
 #### **Parameters**
-- **name**: *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*
+- **id**: *string*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
 
 ### **canThemeBeModified**
 `
-canThemeBeModified(name: string): boolean
+canThemeBeModified(id: string): boolean
 `
 
 #### **Parameters**
-- **name**: *string*
+- **id**: *string*
 
 **Returns** *boolean*
 
 ### **deleteTheme**
 `
-deleteTheme(name: string): void
+deleteTheme(id: string): void
 `
 
 #### **Parameters**
-- **name**: *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*
+- **id**: *string*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
 
 ### **getCurrentTheme**
 `
@@ -86,34 +80,28 @@ resolveColorKey(key: ThemeSettingsColorKey): minecraftserver.RGBA
 
 ### **setCurrentTheme**
 `
-setCurrentTheme(name: string): void
+setCurrentTheme(id: string): void
 `
 
 #### **Parameters**
-- **name**: *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*
+- **id**: *string*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
 
 ### **updateThemeColor**
 `
-updateThemeColor(name: string, key: ThemeSettingsColorKey, newColor: minecraftserver.RGBA): void
+updateThemeColor(id: string, key: ThemeSettingsColorKey, newColor: minecraftserver.RGBA): void
 `
 
 #### **Parameters**
-- **name**: *string*
+- **id**: *string*
 - **key**: [*ThemeSettingsColorKey*](ThemeSettingsColorKey.md)
 - **newColor**: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*

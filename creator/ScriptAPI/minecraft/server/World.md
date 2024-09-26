@@ -102,9 +102,9 @@ A method that is internal-only, used for broadcasting specific messages between 
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 ::: moniker-end
 
 ### **clearDynamicProperties**
@@ -131,9 +131,9 @@ getAllPlayers(): Player[]
 Returns an array of all active players within the world.
 
 **Returns** [*Player*](Player.md)[]
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getDay**
 `
@@ -166,11 +166,10 @@ Returns a dimension object.
   The name of the dimension. For example, "overworld", "nether" or "the_end".
 
 **Returns** [*Dimension*](Dimension.md) - The requested dimension
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the given dimension name is invalid
+  
+Notes:
+- This function can throw errors.
+  - Throws if the given dimension name is invalid
 
 ### **getDynamicProperty**
 `
@@ -185,11 +184,6 @@ Returns a property value.
   The property identifier.
 
 **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the given dynamic property identifier is not defined.
 
 #### Examples
 ##### ***incrementDynamicProperty.ts***
@@ -291,11 +285,10 @@ Returns an entity based on the provided id.
   The id of the entity.
 
 **Returns** [*Entity*](Entity.md) | *undefined* - The requested entity object.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the given entity id is invalid.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the given entity id is invalid.
 
 ### **getMoonPhase**
 `
@@ -319,11 +312,10 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
   Additional options that can be used to filter the set of players returned.
 
 **Returns** [*Player*](Player.md)[] - A player array.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the provided EntityQueryOptions are invalid.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the provided EntityQueryOptions are invalid.
 
 ### **getTimeOfDay**
 `
@@ -344,12 +336,10 @@ Plays a particular music track for all players.
 #### **Parameters**
 - **trackId**: *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***playMusicAndSound.ts***
@@ -397,20 +387,14 @@ Plays a sound for all players. DEPRECATED: Use Dimension.playSound.
 - **soundId**: *string*
 - **location**: [*Vector3*](Vector3.md)
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> An error will be thrown if volume is less than 0.0.
->
-> An error will be thrown if fade is less than 0.0.
->
-> An error will be thrown if pitch is less than 0.01.
->
-> An error will be thrown if volume is less than 0.0.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - An error will be thrown if volume is less than 0.0.
+  - An error will be thrown if fade is less than 0.0.
+  - An error will be thrown if pitch is less than 0.01.
+  - An error will be thrown if volume is less than 0.0.
 
 #### Examples
 ##### ***playMusicAndSound.ts***
@@ -461,18 +445,13 @@ Queues an additional music track for players. If a track is not playing, a music
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
   
   Additional options for the music track.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> An error will be thrown if volume is less than 0.0.
->
-> An error will be thrown if fade is less than 0.0.
->
-> 
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - An error will be thrown if volume is less than 0.0.
+  - An error will be thrown if fade is less than 0.0.
+  - 
 
 ### **sendMessage**
 `
@@ -485,11 +464,10 @@ Sends a message to all players.
 - **message**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
   
   The message to be displayed.
-
-> [!WARNING]
-> This function can throw errors.
->
-> This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
+  
+Notes:
+- This function can throw errors.
+  - This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
 #### Examples
 ##### ***nestedTranslation.ts***
@@ -538,9 +516,9 @@ Sets the world time.
 - **absoluteTime**: *number*
   
   The world time, in ticks.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setDefaultSpawnLocation**
 `
@@ -553,14 +531,11 @@ Sets a default spawn location for all players.
 - **spawnLocation**: [*Vector3*](Vector3.md)
   
   Location of the spawn point. Note that this is assumed to be within the overworld dimension.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **setDynamicProperty**
 `
@@ -576,11 +551,10 @@ Sets a specified property to a value.
 - **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
   Data value of the property to set.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the given dynamic property identifier is not defined.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the given dynamic property identifier is not defined.
 
 #### Examples
 ##### ***incrementDynamicProperty.ts***
@@ -662,14 +636,11 @@ Sets the time of day.
 - **timeOfDay**: *number* | [*TimeOfDay*](TimeOfDay.md)
   
   The time of day, in ticks, between 0 and 24000.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the provided time of day is not within the valid range.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the provided time of day is not within the valid range.
 
 ### **stopMusic**
 `
@@ -677,6 +648,6 @@ stopMusic(): void
 `
 
 Stops any music tracks from playing.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

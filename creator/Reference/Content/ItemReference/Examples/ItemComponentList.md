@@ -34,6 +34,7 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:liquid_clipped](ItemComponents/minecraft_liquid_clipped.md)| *not set* | JSON Object| Determines whether an item interacts with liquid blocks on use.|
 |[minecraft:max_stack_size](ItemComponents/minecraft_max_stack_size.md)| *not set* | JSON Object| Determines how many of the item can be stacked.|
 |[minecraft:projectile](ItemComponents/minecraft_projectile.md)| *not set* | JSON Object| Projectile item component. Projectile items shoot out, like an arrow.|
+|[minecraft:rarity](ItemComponents/minecraft_rarity.md)|*not set* | String|  The rarity item component allows the specifying of the base rarity of an item. |
 |[minecraft:record](ItemComponents/minecraft_record.md)| *not set* | JSON Object|  The record item component allows the item to play a sound when used in a jukebox. |
 |[minecraft:repairable](ItemComponents/minecraft_repairable.md)| *not set* | JSON Object|  Repairable item component: Determines which items can be used to repair a defined item, as well as the amount of durability specified items will repair.|
 |[minecraft:shooter](ItemComponents/minecraft_shooter.md)| *not set* | JSON Object|  Shooter Item Component. Must have the `minecraft:use_modifiers` component in order to function properly.|
@@ -45,3 +46,4 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:use_animation](ItemComponents/minecraft_use_animation.md)| *not set* | JSON Object| Determines which animation plays when using an item.|
 |[minecraft:use_modifiers](ItemComponents/minecraft_use_modifiers.md)| *not set* | JSON Object| Modifies use effects, including how long an item takes to use and the player's speed when used in combination with components like Shooter, Throwable or Food.|
 |[minecraft:wearable](ItemComponents/minecraft_wearable.md)| *not set* | JSON Object| Determines where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.|
+

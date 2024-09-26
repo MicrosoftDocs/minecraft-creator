@@ -27,9 +27,9 @@ This type is usable for iterating over a set of entities. This means it can be u
 `
 
 **Returns** Iterator&lt;[*Entity*](Entity.md)&gt;
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **next**
 `
@@ -39,6 +39,6 @@ next(): IteratorResult<Entity>
 Retrieves the next item in this iteration. The resulting IteratorResult contains .done and .value properties which can be used to see the next Entity in the iteration.
 
 **Returns** IteratorResult&lt;[*Entity*](Entity.md)&gt;
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

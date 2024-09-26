@@ -22,8 +22,8 @@ Value of this particular color.
 
 Type: [*PaletteColor*](PaletteColor.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

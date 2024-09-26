@@ -29,9 +29,9 @@ Adds a callback that will be called when a script runtime is being terminated du
 - **callback**: (arg: [*WatchdogTerminateBeforeEvent*](WatchdogTerminateBeforeEvent.md)) => *void*
 
 **Returns** (arg: [*WatchdogTerminateBeforeEvent*](WatchdogTerminateBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -42,6 +42,6 @@ Removes a callback from being called when a script runtime is being terminated d
 
 #### **Parameters**
 - **callback**: (arg: [*WatchdogTerminateBeforeEvent*](WatchdogTerminateBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

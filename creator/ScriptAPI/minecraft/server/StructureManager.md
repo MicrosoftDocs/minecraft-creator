@@ -37,14 +37,11 @@ Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlock
   How the Structure should be saved upon creation. Defaults to StructureSaveMode.Memory.
 
 **Returns** [*Structure*](Structure.md) - Returns the newly created Structure.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
 
 ### **createFromWorld**
 `
@@ -67,14 +64,11 @@ Creates a new Structure from blocks in the world. This is functionally equivalen
   Additional options for creating a structure from the world.
 
 **Returns** [*Structure*](Structure.md) - Returns the newly created Structure.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
 
 ### **delete**
 `
@@ -89,14 +83,11 @@ Deletes a structure from memory and from the world if it exists.
   The structure identifier or Structure object that should be deleted. Note, a Structure object will become invalid after it is deleted.
 
 **Returns** *boolean* - Returns whether the structure was removed.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
 
 ### **get**
 `
@@ -111,9 +102,9 @@ Gets a Structure that is saved to memory or the world.
   The name of the structure to get.
 
 **Returns** [*Structure*](Structure.md) | *undefined* - Returns a Structure if it exists, otherwise undefined.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getWorldStructureIds**
 `
@@ -121,9 +112,9 @@ getWorldStructureIds(): string[]
 `
 
 **Returns** *string*[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **place**
 `
@@ -145,11 +136,8 @@ Places a structure in the world. Structures placed in unloaded chunks will be qu
 - **options**?: [*StructurePlaceOptions*](StructurePlaceOptions.md) = `null`
   
   Additional options for Structure placement.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)

@@ -22,8 +22,8 @@ Dimension that the entity is currently within.
 
 Type: [*Dimension*](Dimension.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **id**
 `read-only id: string;`
@@ -39,8 +39,8 @@ Whether the entity is touching a climbable block. For example, a player next to 
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isFalling**
 `read-only isFalling: boolean;`
@@ -49,8 +49,8 @@ Whether the entity has a fall distance greater than 0, or greater than 1 while g
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isInWater**
 `read-only isInWater: boolean;`
@@ -59,8 +59,8 @@ Whether any part of the entity is inside a water block.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isOnGround**
 `read-only isOnGround: boolean;`
@@ -69,8 +69,8 @@ Whether the entity is on top of a solid block. This property may behave in unexp
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isSleeping**
 `read-only isSleeping: boolean;`
@@ -79,8 +79,8 @@ If true, the entity is currently sleeping.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isSneaking**
 `isSneaking: boolean;`
@@ -88,9 +88,9 @@ Type: *boolean*
 Whether the entity is sneaking - that is, moving more slowly and more quietly.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **isSprinting**
 `read-only isSprinting: boolean;`
@@ -99,8 +99,8 @@ Whether the entity is sprinting. For example, a player using the sprint action, 
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isSwimming**
 `read-only isSwimming: boolean;`
@@ -109,8 +109,8 @@ Whether the entity is in the swimming state. For example, a player using the swi
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **location**
 `read-only location: Vector3;`
@@ -119,8 +119,8 @@ Current location of the entity.
 
 Type: [*Vector3*](Vector3.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **nameTag**
 `nameTag: string;`
@@ -128,9 +128,9 @@ Type: [*Vector3*](Vector3.md)
 Given name of the entity.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **scoreboardIdentity**
 `read-only scoreboardIdentity?: ScoreboardIdentity;`
@@ -152,8 +152,8 @@ Type: [*Entity*](Entity.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 ::: moniker-end
 
 ### **typeId**
@@ -226,12 +226,10 @@ Adds or updates an effect, like poison, to the entity.
   Additional options for the effect.
 
 **Returns** [*Effect*](Effect.md) | *undefined* - Returns nothing if the effect was added or updated successfully. This can throw an error if the duration or amplifier are outside of the valid ranges, or if the effect does not exist.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***poisonVillager.ts***
@@ -291,12 +289,10 @@ Adds a specified tag to an entity.
   Content of the tag to add. The tag must be less than 256 characters.
 
 **Returns** *boolean* - Returns true if the tag was added successfully. This can fail if the tag already exists on the entity.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **applyDamage**
 `
@@ -314,12 +310,10 @@ Applies a set of damage to an entity.
   Additional options about the source of damage, which may add additional effects or spur additional behaviors on this entity.
 
 **Returns** *boolean* - Whether the entity takes any damage. This can return false if the entity is invulnerable or if the damage applied is less than or equal to 0.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***applyDamageThenHeal.ts***
@@ -356,12 +350,10 @@ Applies impulse vector to the current velocity of the entity.
 - **vector**: [*Vector3*](Vector3.md)
   
   Impulse vector.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***yeetEntity.ts***
@@ -399,12 +391,10 @@ Applies impulse vector to the current velocity of the entity.
 - **verticalStrength**: *number*
   
   Knockback strength for the vertical vector.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***bounceSkeletons.ts***
@@ -435,9 +425,9 @@ clearDynamicProperties(): void
 `
 
 Clears all dynamic properties that have been set on this entity.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **clearVelocity**
 `
@@ -445,12 +435,10 @@ clearVelocity(): void
 `
 
 Sets the current velocity of the Entity to zero. Note that this method may not have an impact on Players.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***yeetEntity.ts***
@@ -481,12 +469,10 @@ Extinguishes the fire if the entity is on fire. Note that you can call getCompon
   Whether to show any visual effects connected to the extinguishing.
 
 **Returns** *boolean* - Returns whether the entity was on fire.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***setEntityOnFire.ts***
@@ -521,9 +507,9 @@ Returns the first intersecting block from the direction that this entity is look
   Additional configuration options for the ray cast.
 
 **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined* - Returns the first intersecting block from the direction that this entity is looking at.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getComponent**
 `
@@ -561,9 +547,9 @@ Returns a property value.
   The property identifier.
 
 **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getDynamicPropertyIds**
 `
@@ -573,9 +559,9 @@ getDynamicPropertyIds(): string[]
 Returns the available set of dynamic property identifiers that have been used on this entity.
 
 **Returns** *string*[] - A string array of the dynamic properties set on this entity.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getDynamicPropertyTotalByteCount**
 `
@@ -585,9 +571,9 @@ getDynamicPropertyTotalByteCount(): number
 Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity. This includes the size of both the key and the value.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
 
 **Returns** *number*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getEffect**
 `
@@ -602,9 +588,9 @@ Returns the effect for the specified EffectType on the entity, undefined if the 
   The effect identifier.
 
 **Returns** [*Effect*](Effect.md) | *undefined* - Effect object for the specified effect, undefined if the effect is not present, or throws an error if the effect does not exist.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getEffects**
 `
@@ -614,9 +600,9 @@ getEffects(): Effect[]
 Returns a set of effects applied to this entity.
 
 **Returns** [*Effect*](Effect.md)[] - List of effects.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getEntitiesFromViewDirection**
 `
@@ -631,9 +617,9 @@ Gets the entities that this entity is looking at by performing a ray cast from t
   Additional configuration options for the ray cast.
 
 **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[] - Returns a set of entities from the direction that this entity is looking at.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getHeadLocation**
 `
@@ -643,9 +629,9 @@ getHeadLocation(): Vector3
 Returns the current location of the head component of this entity.
 
 **Returns** [*Vector3*](Vector3.md) - Returns the current location of the head component of this entity.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getProperty**
 `
@@ -660,11 +646,10 @@ Gets an entity Property value. If the property was set using the setProperty fun
   The entity Property identifier.
 
 **Returns** *boolean* | *number* | *string* | *undefined* - Returns the current property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the entity is invalid.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the entity is invalid.
 
 ### **getRotation**
 `
@@ -674,9 +659,9 @@ getRotation(): Vector2
 Returns the current rotation component of this entity.
 
 **Returns** [*Vector2*](Vector2.md) - Returns a Vec2 containing the rotation of this entity (in degrees).
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getTags**
 `
@@ -686,9 +671,9 @@ getTags(): string[]
 Returns all tags associated with the entity.
 
 **Returns** *string*[] - An array containing all tags as strings.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getVelocity**
 `
@@ -698,9 +683,9 @@ getVelocity(): Vector3
 Returns the current velocity vector of the entity.
 
 **Returns** [*Vector3*](Vector3.md) - Returns the current velocity vector of the entity.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 #### Examples
 ##### ***getFireworkVelocity.ts***
@@ -728,9 +713,9 @@ getViewDirection(): Vector3
 Returns the current view direction of the entity.
 
 **Returns** [*Vector3*](Vector3.md) - Returns the current view direction of the entity.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **hasComponent**
 `
@@ -759,9 +744,9 @@ Returns whether an entity has a particular tag.
   Identifier of the tag to test for.
 
 **Returns** *boolean* - Returns whether an entity has a particular tag.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **isValid**
 `
@@ -780,12 +765,10 @@ kill(): boolean
 Kills this entity. The entity will drop loot as normal.
 
 **Returns** *boolean* - Returns true if entity can be killed (even if it is already dead), otherwise it returns false.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***tagsQuery.ts***
@@ -825,11 +808,10 @@ Matches the entity against the passed in options. Uses the location of the entit
   The query to perform the match against.
 
 **Returns** *boolean* - Returns true if the entity matches the criteria in the passed in EntityQueryOptions, otherwise it returns false.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the query options are misconfigured.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the query options are misconfigured.
 
 ### **playAnimation**
 `
@@ -845,12 +827,10 @@ Cause the entity to play the given animation.
 - **options**?: [*PlayAnimationOptions*](PlayAnimationOptions.md) = `null`
   
   Additional options to control the playback and transitions of the animation.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **remove**
 `
@@ -858,12 +838,10 @@ remove(): void
 `
 
 Immediately removes the entity from the world. The removed entity will not perform a death animation or drop loot upon removal.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **removeEffect**
 `
@@ -878,12 +856,10 @@ Removes the specified EffectType on the entity, or returns false if the effect i
   The effect identifier.
 
 **Returns** *boolean* - Returns true if the effect has been removed. Returns false if the effect is not found or does not exist.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **removeTag**
 `
@@ -898,12 +874,10 @@ Removes a specified tag from an entity.
   Content of the tag to remove.
 
 **Returns** *boolean* - Returns whether the tag existed on the entity.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **resetProperty**
 `
@@ -918,14 +892,11 @@ Resets an Entity Property back to its default value, as specified in the Entity'
   The Entity Property identifier.
 
 **Returns** *boolean* | *number* | *string* - Returns the default property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
 
 ### **runCommand**
 `
@@ -940,14 +911,11 @@ Runs a synchronous command on the entity.
   The command string. Note: This should not include a leading forward slash.
 
 **Returns** [*CommandResult*](CommandResult.md) - A command result containing whether the command was successful.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*CommandError*](CommandError.md), *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*CommandError*](CommandError.md), *Error*
 
 ### **runCommandAsync**
 `
@@ -962,9 +930,9 @@ Runs a particular command asynchronously from the context of this entity. Note t
   Command to run. Note that command strings should not start with slash.
 
 **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a JSON structure with command response values.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **setDynamicProperty**
 `
@@ -980,9 +948,9 @@ Sets a specified property to a value.
 - **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
   Data value of the property to set.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **setOnFire**
 `
@@ -1000,12 +968,10 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
   Whether side-effects should be applied (e.g. thawing freeze) and other conditions such as rain or fire protection should be taken into consideration.
 
 **Returns** *boolean* - Whether the entity was set on fire. This can fail if seconds is less than or equal to zero, the entity is wet or the entity is immune to fire.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***setEntityOnFire.ts***
@@ -1041,22 +1007,15 @@ Sets an Entity Property to the provided value. This property change is not appli
 - **value**: *boolean* | *number* | *string*
   
   The property value. The provided type must be compatible with the type specified in the entity's definition. 
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the entity is invalid.
->
-> Throws if an invalid identifier is provided.
->
-> Throws if the provided value type does not match the property type.
->
-> Throws if the provided value is outside the expected range (int, float properties).
->
-> Throws if the provided string value does not match the set of accepted enum values (enum properties
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the entity is invalid.
+  - Throws if an invalid identifier is provided.
+  - Throws if the provided value type does not match the property type.
+  - Throws if the provided value is outside the expected range (int, float properties).
+  - Throws if the provided string value does not match the set of accepted enum values (enum properties
 
 ### **setRotation**
 `
@@ -1069,12 +1028,10 @@ Sets the main rotation of the entity.
 - **rotation**: [*Vector2*](Vector2.md)
   
   The x and y rotation of the entity (in degrees). For most mobs, the x rotation controls the head tilt and the y rotation controls the body rotation.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **teleport**
 `
@@ -1090,12 +1047,10 @@ Teleports the selected entity to a new location
 - **teleportOptions**?: [*TeleportOptions*](TeleportOptions.md) = `null`
   
   Options regarding the teleport operation.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
 ##### ***teleportMovement.ts***
@@ -1134,14 +1089,11 @@ Triggers an entity type event. For every entity, a number of events are defined 
 - **eventName**: *string*
   
   Name of the entity type event to trigger. If a namespace is not specified, minecraft: is assumed.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> If the event is not defined in the definition of the entity, an error will be thrown.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - If the event is not defined in the definition of the entity, an error will be thrown.
 
 #### Examples
 ##### ***triggerEvent.ts***
@@ -1173,9 +1125,7 @@ Attempts to try a teleport, but may not complete the teleport operation (for exa
   Options regarding the teleport operation.
 
 **Returns** *boolean* - Returns whether the teleport succeeded. This can fail if the destination chunk is unloaded or if the teleport would result in intersecting with blocks.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

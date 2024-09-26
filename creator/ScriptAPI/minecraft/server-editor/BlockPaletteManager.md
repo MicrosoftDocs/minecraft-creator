@@ -29,9 +29,9 @@ addOrReplacePalette(paletteId: string, palette: BlockPalette): void
 #### **Parameters**
 - **paletteId**: *string*
 - **palette**: [*BlockPalette*](BlockPalette.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getPalette**
 `
@@ -60,9 +60,9 @@ getPaletteItem(paletteId: string, index: number): IBlockPaletteItem
 - **index**: *number*
 
 **Returns** [*IBlockPaletteItem*](IBlockPaletteItem.md)
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getPrimaryPalette**
 `
@@ -77,9 +77,9 @@ getSelectedBlockType(): minecraftserver.BlockType
 `
 
 **Returns** [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getSelectedItem**
 `
@@ -95,12 +95,10 @@ removePalette(paletteId: string): void
 
 #### **Parameters**
 - **paletteId**: *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setPaletteItem**
 `
@@ -111,12 +109,10 @@ setPaletteItem(paletteId: string, index: number, item: IBlockPaletteItem): void
 - **paletteId**: *string*
 - **index**: *number*
 - **item**: [*IBlockPaletteItem*](IBlockPaletteItem.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setPrimaryPalette**
 `
@@ -125,12 +121,10 @@ setPrimaryPalette(paletteId: string): void
 
 #### **Parameters**
 - **paletteId**: *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setSelectedItem**
 `
@@ -139,9 +133,7 @@ setSelectedItem(item: IBlockPaletteItem): void
 
 #### **Parameters**
 - **item**: [*IBlockPaletteItem*](IBlockPaletteItem.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

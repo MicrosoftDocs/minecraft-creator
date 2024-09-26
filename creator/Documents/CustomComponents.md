@@ -16,7 +16,7 @@ If you'd like to get started in building add-ons with custom components, see our
 
 ## Structure
 
-This new feature is named _custom components_ because script is connected to a given Block or Item’s JSON in a manner very similar to attaching one of the built-in Minecraft components. As such, there is both a JSON aspect to the feature as well as a script aspect of the feature.
+This new feature is named _custom components_ because script is connected to a given Block or Item's JSON in a manner very similar to attaching one of the built-in Minecraft components. As such, there is both a JSON aspect to the feature as well as a script aspect of the feature.
 
 ## Script API
 
@@ -100,6 +100,8 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 ```
 
 It is up to you which pattern you prefer depending on the needs of your add-on or world! They are both functionally the same. An important note is that all the event notifications are stateless, and the event parameters will inform you which specific block they pertain to in the world.
+
+To find out more about the Custom Component APIs, see the documentation for the [ItemCustomComponent](../ScriptAPI/minecraft/server/ItemCustomComponent.md) and [BlockCustomComponent](../ScriptAPI/minecraft/server/BlockCustomComponent.md) APIs.
 
 ## JSON
 
