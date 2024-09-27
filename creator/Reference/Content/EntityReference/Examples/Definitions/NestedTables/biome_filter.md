@@ -11,7 +11,7 @@ ms.service: minecraft-bedrock-edition
 The minecraft:biome_filter component allows creators to specify which biomes an entity spawns in. Each biome in the game has one or more tags which are used to determine what biomes entities spawn in.
 
 > [!NOTE]
-> To learn more about how biomes are defined in JSON, please visit [Biome Documentation - Overview](/creator/Reference/Content/BiomeReferene/Examples/BiomeOverview.md)
+> To learn more about how biomes are defined in JSON, please visit [Biome Documentation - Overview](../../../../BiomeReference/Examples/BiomeOverview.md)
 
 Below is the list of Biome tags that can be used:
 
@@ -98,7 +98,7 @@ Listed below are all of the available biomes within Minecraft: Bedrock Edition a
 | Birch Forest Hills| animal, monster, birch, forest, hills, bee_habitat |
 | Birch Forest Hills M| animal, monster, forest, birch, mutated, hills, overworld_generation |
 | Birch Forest M| animal, monster, forest, birch, mutated, bee_habitat, overworld_generation |
-| Cherry Grove| mountains, monster, overworld, cherry_grove, bee_habitat |
+| Cherry Grove| mountain, monster, overworld, cherry_grove, bee_habitat |
 | Cold Beach| beach, cold, monster, overworld |
 | Cold Ocean| ocean, cold, monster, overworld |
 | Cold Taiga| animal, cold, forest, monster, overworld, taiga |
@@ -126,12 +126,12 @@ Listed below are all of the available biomes within Minecraft: Bedrock Edition a
 | Frozen Ocean| ocean, frozen, monster, overworld |
 | Frozen Peaks| mountain, monster, overworld, frozen, frozen_peaks |
 | Frozen River| river, frozen, overworld |
-| Grove| mountains, cold, monster, overworld, grove |
+| Grove| mountain, cold, monster, overworld, grove |
 | Hell| nether, nether_wastes, spawn_magma_cubes, spawn_zombified_piglin, spawn_few_piglins, spawn_ghast, spawn_endermen |
 | Ice Mountains| frozen, ice, mountain, overworld |
 | Ice Plains| frozen, ice, ice_plains, overworld |
 | Ice Plains Spikes| frozen, ice_plains, monster, mutated, overworld |
-| Jagged Peaks| mountains, monster, overworld, frozen, jagged_peaks |
+| Jagged Peaks| mountain, monster, overworld, frozen, jagged_peaks |
 | Jungle| animal, jungle, monster, overworld, rare |
 | Jungle Edge| animal, monster, jungle, edge, overworld |
 | Jungle Edge M| animal, monster, jungle, edge, mutated, overworld_generation |
@@ -141,7 +141,7 @@ Listed below are all of the available biomes within Minecraft: Bedrock Edition a
 | Lukewarm Ocean| ocean, lukewarm, monster, overworld |
 | Lush Caves| caves, lush_caves, overworld, monster |
 | Mangrove Swamp| overworld, mangrove_swamp |
-| Meadow | mountains, monster, overworld, meadow, bee_habitat |
+| Meadow | mountain, monster, overworld, meadow, bee_habitat |
 | Mega Taiga | animal, forest, mega, monster, overworld, rare, taiga |
 | Mega Taiga Hills | animal, forest, hills, mega, monster, overworld, taiga |
 | Mesa| mesa, monster, overworld |
@@ -166,7 +166,7 @@ Listed below are all of the available biomes within Minecraft: Bedrock Edition a
 | Snowy Slopes| mountain, monster, overworld, snowy_slopes, frozen |
 | Soulsand Valley| nether, soulsand_valley, spawn_ghast, spawn_endermen |
 | Stone Beach| beach, monster, overworld, stone |
-| Stony Peaks| mountains, monster, overworld |
+| Stony Peaks| mountain, monster, overworld |
 | Sunflower Plains| animal, monster, mutated, overworld, plains, bee_habitat |
 | Swampland| animal, monster, overworld, swamp |
 | Swampland M| animal, monster, mutated, swamp, overworld_generation |
