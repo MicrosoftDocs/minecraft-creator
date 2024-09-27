@@ -8,6 +8,8 @@
    href: minecraft_allow_off_hand.md
  - name: block_placer
    href: minecraft_block_placer.md
+ - name: bundle_interaction
+   href: minecraft_bundle_interaction.md
  - name: can_destroy_in_creative
    href: minecraft_can_destroy_in_creative.md
  - name: cooldown
@@ -60,6 +62,8 @@
    href: minecraft_should_despawn.md
  - name: stacked_by_data
    href: minecraft_stacked_by_data.md
+ - name: storage_item
+   href: minecraft_storage_item.md
  - name: tags
    href: minecraft_tags.md
  - name: throwable
