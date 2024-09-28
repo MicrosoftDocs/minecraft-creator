@@ -14,7 +14,7 @@ If you've never done anything like that before, maybe the best first step is to 
 
 **You, as a creator, can add your favorite things to our favorite game by using add-on packs.**
 
-Along the way, you will learn how to use computer science stuff like files and directories, JavaScript Object Notation (JSON), reference documentation,and the same tools your fellow creators use to create and test the contents of their add-on packs.
+Along the way, you will learn how to use computer science stuff like files and directories, JavaScript Object Notation (JSON), reference documentation, and the same tools your fellow creators use to create and test the contents of their add-on packs.
 
 Oh! That's a good thing to learn now: resource packs, behavior packs, and skin packs are collectively or generically known as add-on packs.
 
@@ -36,7 +36,7 @@ Behavior packs are used to modify an entity, like a cow.
 
 ## Step 3: Make more complex things
 
-You've mastered the basics, and now it's time to move to the next level. These creations are slightly more complex, but will allow you to create more of a personalized experience for your players.
+You've mastered the basics, and now it's time to move to the next level. These creations are slightly more complex, but learning about them will help you create a more personalized experience for your players.
 
 - [Add a Custom Sounds](AddCustomSounds.md)
 - [Create an Entity](IntroductionToAddEntity.md)
@@ -46,7 +46,7 @@ You've mastered the basics, and now it's time to move to the next level. These c
 
 ## Advanced stuff that might not use add-on packs
 
-Now that you've pushed through both the basic and intermediate creations, you've come to the top of the mountain. These are the advanced-level tutorials and we're not going to lie, they can get complex. However, by mastering these creations you will bring yourself that much closer to making your dreams into reality.
+After you pushed through both the basic and intermediate creations, you come to the top of the mountain. These are the advanced-level tutorials and -- we're not going to lie -- they can get complex. However, by mastering these creations you will bring yourself closer to making your Minecraft dreams into Minecraft reality.
 
 - [Commonly Used Tools](CommonlyUsedTools.md)
 - [Animate a Block Texture](CreateAnimatedBlockTexture.md)
@@ -58,7 +58,7 @@ Now that you've pushed through both the basic and intermediate creations, you've
 
 ## Next Steps
 
-If you've made it this far, congratulations! You went on an amazing creator experience and came out the other side. Now that you've completed our suggested path, we have good news and better news (this is Minecraft, we don't do bad news here).
+If you've made it this far, congratulations! You went on an amazing creator experience and came out the other side. Now that you've completed our suggested path, we have good news and better news (this is Minecraft, we don't do bad news here...)
 
 The good news is that you now have an incredible set of skills at your disposal to make custom content and provide players with something unique and fun. The better news is that this is just a small sample of what you can find on the creator learning portal. So take some time and look around, continue to create, and always keep learning!
 
