@@ -59,8 +59,6 @@ After you pushed through both the basic and intermediate creations, you come to 
 - [Create an In-World Game with Commands](CreateAnInWorldGame.md) If your world needs a game in it, here's one way to do that with commands.
 - [Non-Player Character (NPC) Dialogue](NPCDialogue.md)
 - [Minecraft Bedrock Editor](BedrockEditor/EditorOverview.md)
-- [Deferred Lighting](DeferredLighting/GettingStartedDeferredLighting.md)
-- [The Camera System](CameraSystem/CameraCommandIntroduction.md)
 
 ## Next Steps
 
