@@ -59,12 +59,10 @@ After you pushed through both the basic and intermediate creations, you come to 
 - [Create an In-World Game with Commands](CreateAnInWorldGame.md) If your world needs a game in it, here's one way to do that with commands.
 - [Non-Player Character (NPC) Dialogue](NPCDialogue.md)
 - [Minecraft Bedrock Editor](BedrockEditor/EditorOverview.md)
-- [Deferred Lighting](DeferredLighting/GettingStartedDeferredLighting.md)
-- [The Camera System](CameraSystem/CameraCommandIntroduction.md)
 
 ## Next Steps
 
-If you've made it this far, congratulations! You went on an amazing creator experience and came out the other side. Now that you've completed our suggested path, we have good news and better news (this is Minecraft, we don't do bad news here...)
+If you've made it this far, congratulations! You went on an amazing creator experience and came out the other side. Now that you've completed our suggested path, we have good news and better news.
 
 The good news is that you now have an incredible set of skills at your disposal to make custom content and provide players with something unique and fun. The better news is that this is just a small sample of what you can find on the creator learning portal. So take some time and look around, continue to create, and always keep learning!
 
