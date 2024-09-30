@@ -62,7 +62,7 @@ After you pushed through both the basic and intermediate creations, you come to 
 
 ## Next Steps
 
-If you've made it this far, congratulations! You went on an amazing creator experience and came out the other side. Now that you've completed our suggested path, we have good news and better news (this is Minecraft, we don't do bad news here...)
+If you've made it this far, congratulations! You went on an amazing creator experience and came out the other side. Now that you've completed our suggested path, we have good news and better news.
 
 The good news is that you now have an incredible set of skills at your disposal to make custom content and provide players with something unique and fun. The better news is that this is just a small sample of what you can find on the creator learning portal. So take some time and look around, continue to create, and always keep learning!
 
