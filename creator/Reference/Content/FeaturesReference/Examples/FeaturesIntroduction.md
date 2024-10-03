@@ -95,7 +95,7 @@ The features system does not require a resource pack.
 If you are using structures in your features that contain custom blocks or items, you will need to follow the resource pack setup that adds the dependency of a resource pack.
 
 There are examples of structures in the [structure blocks sample behavior pack](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md).
-There's more information about behavior pack and resource pack dependencies in the [Introduction to Behavior Packs](../../../../Documents/BehaviorPack.md#create-the-dependency).
+There's more information about behavior packs in the [Introduction to Behavior Packs](../../../../Documents/BehaviorPack.md) article.
 
 ## Supported features
 

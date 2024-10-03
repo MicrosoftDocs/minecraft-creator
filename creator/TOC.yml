@@ -176,8 +176,6 @@
             href: Documents/TickJsonIntroduction.md
           - name: The Damage Command
             href: Documents/CommandsDamageIntroduction.md
-          - name: The Camera Command
-            href: Documents/CameraCommandIntroduction.md
           - name: The Tickingarea Command
             href: Documents/TickingAreaCommand.md
           - name: New /execute command syntax
@@ -374,6 +372,10 @@
               href: Documents/MinecraftBlockWizard.md
         - name: "Snowstorm - Particle Editing"
           href: Documents/SnowstormOverview.md
+        - name: "Minecraft Creator Tools"
+          items:
+            - name: Minecraft Creator Tools
+              href: Documents/MCToolsOverview.md
         - name: "Chunker - World Conversion"
           items:
             - name: Chunker - Overview
