@@ -21,7 +21,7 @@ function createExplosions(location: DimensionLocation) {
     location.dimension.createExplosion(location, 15, { breaksBlocks: false });
 
     // Creates an explosion of radius 15 that does not cause fire
-    location.dimension.createExplosion(location, 15, { causesFire: true });
+    location.dimension.createExplosion(location, 15, { causesFire: false });
 
     // Creates an explosion of radius 10 that can go underwater
     location.dimension.createExplosion(location, 10, { allowUnderwater: true });
@@ -69,7 +69,7 @@ function createExplosions(location: DimensionLocation) {
     location.dimension.createExplosion(location, 15, { breaksBlocks: false });
 
     // Creates an explosion of radius 15 that does not cause fire
-    location.dimension.createExplosion(location, 15, { causesFire: true });
+    location.dimension.createExplosion(location, 15, { causesFire: false });
 
     // Creates an explosion of radius 10 that can go underwater
     location.dimension.createExplosion(location, 10, { allowUnderwater: true });
