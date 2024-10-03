@@ -36,6 +36,7 @@ Note: most of the earlier block tags did not have a namespace when released and 
 | "minecraft:iron_tier_destructible" |
 | "minecraft:is_hatchet_item_destructible" |
 | "minecraft:is_hoe_item_destructible" |
+| "minecraft:is_item_tier_destructible" |
 | "minecraft:is_mace_item_destructible" |
 | "minecraft:is_pickaxe_item_destructible" |
 | "minecraft:is_shears_item_destructible" |
