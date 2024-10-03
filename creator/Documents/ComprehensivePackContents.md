@@ -50,7 +50,7 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
 - [dialogue]
     - `<scene_dialogue>`
         - `<scene>`.json
-    - [manifest.json](BehaviorPack.md#create-the-manifest-file)
+    - [manifest.json](BehaviorPack.md)
 - [functions](FunctionsIntroduction.md)
     - `<entity_name>`
         - `<entity_name_function>`.mcfunction
@@ -72,7 +72,7 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
     - `<language>`.lang
 - [trading](LootAndTradeTableFunctions.md)
     - `<villager_trades>`.json
-- [manifest.json](BehaviorPack.md#create-the-manifest-file) **(required)**
+- [manifest.json](BehaviorPack.md) **(required)**
 - pack_icon.png
 
 ## Comprehensive Resource Pack

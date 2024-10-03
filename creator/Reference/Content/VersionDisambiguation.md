@@ -59,7 +59,7 @@ Here is the introduction to [behavior packs](../../Documents/BehaviorPack.md).
     - `<scene_dialogue>`
         - `<scene>`.json
           "format_version":"1.17"
-    - [manifest.json](../../Documents/BehaviorPack.md#create-the-manifest-file)
+    - [manifest.json](../../Documents/BehaviorPack.md)
     
     ```
     "format_version": 1,
@@ -79,7 +79,7 @@ Here is the introduction to [behavior packs](../../Documents/BehaviorPack.md).
 - [structures](FeaturesReference/Examples/Features/minecraftStructure_template_feature.md)
     - `<structure_name>`.mcstructure
        "format_version": 1.13.0
-- [manifest.json](../../Documents/BehaviorPack.md#create-the-manifest-file)
+- [manifest.json](../../Documents/BehaviorPack.md)
       
   ```
   "format_version": 2,
