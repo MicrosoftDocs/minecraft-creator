@@ -17,6 +17,7 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:block_placer](ItemComponents/minecraft_block_placer.md)| *not set* | JSON Object|  Block Placer item component. Items with this component will place a block when used.|
 |[minecraft:bundle_interaction](ItemComponents/minecraft_bundle_interaction.md)| *not set* | JSON Object| Enables the bundle-specific interaction scheme and tooltip for an item.|
 |[minecraft:can_destroy_in_creative](ItemComponents/minecraft_can_destroy_in_creative.md)| *not set* | JSON Object| Determines if the item will break blocks in Creative Mode while swinging.|
+|[minecraft:compostable](ItemComponents/minecraft_compostable.md)| *not set* | JSON Object| Specifies that an item is compostable and provides the chance of creating a composting layer in the composter.|
 |[minecraft:cooldown](ItemComponents/minecraft_cooldown.md)| *not set* | JSON Object| Cool down time for a component. After use, all items in a specified 'cool down category' become unusable for a determined amount of time defined in the component.|
 |[minecraft:damage](ItemComponents/minecraft_damage.md)| *not set* | JSON Object| Determines how much extra damage the item does on attack.|
 |[minecraft:display_name](ItemComponents/minecraft_display_name.md)| *not set* | JSON Object| Defines the text shown when an item name is shown, such as hover text.|
