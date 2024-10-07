@@ -14,8 +14,10 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|protection|0| Integer| How much protection the wearable has.|
-|slot|*not set*| Enumerator| Determines where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.|
+| protection| 0 | Integer| How much protection the wearable has.|
+| slot|*not set*| Enumerator| Determines where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.|
+| dispensable |*not set*| Boolean| **Optional** - Certain components have a 'dispensed' behavior. These items can be dispensed to the player.|
+
 
 See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
 
