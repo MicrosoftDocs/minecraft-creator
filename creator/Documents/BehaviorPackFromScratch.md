@@ -45,9 +45,15 @@ For Minecraft to find and use your behavior files, you have to set up the folder
 In this section, you will create a folder called **My_BEHAVIOR_Pack**. Well, actually you don't have to call it that. In fact, you can name this folder anything you want, but the other folders have to be named exactly like this tutorial says so that Minecraft knows where to look.
 
 1. Open your **com.mojang** folder.
-1. Open the **development_behavior_packs** folder.
-1. Inside the development_behavior_packs folder, create a new folder and name it **My_BEHAVIOR_Pack**.
-1. Open the **My_BEHAVIOR_Pack** folder.
+
+* Press **Win+R** to open **Run**.
+* If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Alternatively, if you are using preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Click **OK**.
+
+2. Open the **development_behavior_packs** folder.
+3. Inside the development_behavior_packs folder, create a new folder and name it **My_BEHAVIOR_Pack**.
+4. Open the **My_BEHAVIOR_Pack** folder.
 
     ![Image of My_BEHAVIOR_Pack folder located in the com.mojang development_behavior_packs folder](Media/BehaviorPack/my_behavior_pack.png)
 

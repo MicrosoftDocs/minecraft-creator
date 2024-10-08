@@ -43,10 +43,19 @@ For Minecraft to find and use your resource files, you must set up the folders a
 
 We will start by creating a folder called **My_RESOURCE_Pack**. Technically you can name this folder anything you want, but the other folders have to be named exactly as specified in this tutorial so that Minecraft knows where to find the information.
 
+
+### Locating com.mojang on a Windows device
+
 1. Open the **com.mojang** folder.
-1. Double-click the **development_resource_packs** folder to open it.
-1. Add a new folder and name it **My_RESOURCE_Pack**.
-1. Double-click the **My_RESOURCE_Pack** folder to open it.
+
+* Press **Win+R** to open **Run**.
+* If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Alternatively, if you are using preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Click **OK**.
+
+2. Double-click the **development_resource_packs** folder to open it.
+3. Add a new folder and name it **My_RESOURCE_Pack**.
+4. Double-click the **My_RESOURCE_Pack** folder to open it.
     ![image of newly created folder with a single Folder called My_RESOURCE_Pack located in the development resource packs folder](Media/ResourcePack/myresourcepack.png)
 
 ### Create a Manifest File

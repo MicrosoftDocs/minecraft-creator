@@ -88,10 +88,11 @@ To locate the **com.mojang** folder on your computer, you will need to have the 
 
 :::image type="content" source="Media/GettingStarted/viewHiddenFolders.png" alt-text="Image of Windows 10 File Explorer window's view options. The File name extensions and Hidden items boxes are checked to indicate that they are set to true":::
 
-### Locating com.mojang
+### Locating com.mojang on a Windows device
 
 1. Press **Win+R** to open **Run**.
-1. Copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+1. If you are using the main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+1. Alternatively, if you are using the preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
 1. Click **OK**.
 
 >[!TIP]

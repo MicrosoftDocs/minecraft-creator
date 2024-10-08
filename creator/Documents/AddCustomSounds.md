@@ -37,9 +37,15 @@ For detailed information on resource packs, see the [Comprehensive Resource Pack
 Now that the resource pack has been created, it's time to set up a place for our sound files.
 
 1. In **File Explorer**, navigate to the **com.mojang** folder.
-1. Open the **development_resource_packs** folder.
-1. Open **custom_sound_pack**.
-1. Create a folder called **sounds**.
+
+* Press **Win+R** to open **Run**.
+* If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Alternatively, if you are using preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Click **OK**.
+
+2. Open the **development_resource_packs** folder.
+3. Open **custom_sound_pack**.
+4. Create a folder called **sounds**.
 
 When you're finished, your file structure will look like this:
 
