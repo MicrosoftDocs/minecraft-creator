@@ -8,6 +8,20 @@ ms.service: minecraft-bedrock-edition
 
 # Editor Keyboard Inputs
 
+You can use the Keyboard Settings to view the default keyboard shortcuts and set custom keyboard shortcuts. Custom shortcuts are available in Editor and all Editor extensions!
+
+To set a custom keyboard shortcut, 
+
+1. Use the left pane of the Keyboard Settings window to locate the input you want to map. 
+1. Click the **Shortcut** field for the input.
+1. Press the keyboard buttons that you want to use for your custom shortcut. 
+1. Click the **Save** button. If you have made mul
+
+[!NOTE]
+All custom shortcuts must be saved before closing the Keyboard Settings window. If you do not save your custom shortcuts, they will revert to the default shortcuts when the window is closed.
+
+To clear a keyboard shortcut, right-click it or click the **Unbind** button in the far-right column. Both methods for clearing a shortcut will remove it entirely, including the default key binding.
+
 ## Input Mapping - Core
 
 Click the Input Mapping button to open the modal to configure registered bindings.
