@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockLocationIterator Class
 description: Contents of the @minecraft/server.BlockLocationIterator class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockLocationIterator Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Implements
 - Iterator&lt;[*Vector3*](Vector3.md)&gt;

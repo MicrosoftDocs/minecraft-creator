@@ -71,7 +71,6 @@ Type: [*PlayerBreakBlockBeforeEventSignal*](PlayerBreakBlockBeforeEventSignal.md
 
 Type: [*PlayerGameModeChangeBeforeEventSignal*](PlayerGameModeChangeBeforeEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithBlock**
 `read-only playerInteractWithBlock: PlayerInteractWithBlockBeforeEventSignal;`
 
@@ -79,21 +78,12 @@ Fires before a player interacts with a block.
 
 Type: [*PlayerInteractWithBlockBeforeEventSignal*](PlayerInteractWithBlockBeforeEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithEntity**
 `read-only playerInteractWithEntity: PlayerInteractWithEntityBeforeEventSignal;`
 
 Fires before a player interacts with an entity.
 
 Type: [*PlayerInteractWithEntityBeforeEventSignal*](PlayerInteractWithEntityBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **playerLeave**
 `read-only playerLeave: PlayerLeaveBeforeEventSignal;`

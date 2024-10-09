@@ -33,15 +33,10 @@ The game rules that apply to the world.
 
 Type: [*GameRules*](GameRules.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isHardcore**
 `read-only isHardcore: boolean;`
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **scoreboard**
 `read-only scoreboard: Scoreboard;`

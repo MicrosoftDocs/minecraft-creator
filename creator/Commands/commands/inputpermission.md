@@ -41,8 +41,17 @@ Retrieves the permissions of entities that match the selection.
 Permission type to set.
 
 #### Values
-- `movement`
 - `camera`
+- `movement`
+- `jump`
+- `lateral_movement`
+- `sneak`
+- `dismount`
+- `mount`
+- `move_backward`
+- `move_forward`
+- `move_left`
+- `move_right`
 
 ### `state`
 State value to set for the permission.

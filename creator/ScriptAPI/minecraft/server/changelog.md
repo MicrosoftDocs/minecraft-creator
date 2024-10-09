@@ -9,7 +9,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [1.16.0-beta](#1160-beta)
+- [1.17.0-beta](#1170-beta)
+- [1.15.0](#1150)
 - [1.14.0](#1140)
 - [1.13.0](#1130)
 - [1.12.0](#1120)
@@ -26,7 +27,8 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.16.0-beta
+## 1.17.0-beta
+#### Added module peer dependency *`@minecraft/vanilla-data`*
 #### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
@@ -37,16 +39,27 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from [*BlockComponent*](BlockComponent.md) (throws exceptions) to *BlockComponentTypeMap[T] | undefined* (throws exceptions)
   - Changed argument `componentId` type from *string* to *T*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
-- Added function *[`getRedstonePower`](Block.md#getredstonepower)*
 - Added function *[`setWaterlogged`](Block.md#setwaterlogged)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockFluidContainerComponent`](BlockFluidContainerComponent.md)*
-#### Added *[`BlockLocationIterator`](BlockLocationIterator.md)*
+#### Changed *[`BlockPermutation`](BlockPermutation.md)*
+- Changed function *[`getState`](BlockPermutation.md#getstate)*
+  - Changed return type from *boolean* | *number* | *string* to *minecraftvanilladata.BlockStateSuperset[T] | undefined*
+  - Changed argument `stateName` type from *string* to *T*
+- Changed function *[`matches`](BlockPermutation.md#matches)*
+  - Changed argument `blockName` type from *string* to *T*
+  - Changed argument `states` type from Record<*string*, *boolean* | *number* | *string*> to *BlockStateArg<T>*
+- Changed function *[`resolve`](BlockPermutation.md#resolve)*
+  - Changed return type from [*BlockPermutation*](BlockPermutation.md) (throws exceptions) to *BlockPermutation* (throws exceptions)
+  - Changed argument `blockName` type from *string* to *T*
+  - Changed argument `states` type from Record<*string*, *boolean* | *number* | *string*> to *BlockStateArg<T>*
+- Changed function *[`withState`](BlockPermutation.md#withstate)*
+  - Changed return type from [*BlockPermutation*](BlockPermutation.md) (throws exceptions) to *BlockPermutation* (throws exceptions)
+  - Changed argument `name` type from *string* to *T*
+  - Changed argument `value` type from *boolean* | *number* | *string* to *minecraftvanilladata.BlockStateSuperset[T]*
 #### Changed *[`BlockType`](BlockType.md)*
 - Added property *[`canBeWaterlogged`](BlockType.md#canbewaterlogged)*
-#### Added *[`BlockVolume`](BlockVolume.md)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
-- Added function *[`getBlockLocationIterator`](BlockVolumeBase.md#getblocklocationiterator)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Added *[`BoundingBoxUtils`](BoundingBoxUtils.md)*
 #### Changed *[`Camera`](Camera.md)*
@@ -73,12 +86,15 @@ description: Changelog of the `@minecraft/server` module
 - Changed function *[`getComponent`](Entity.md#getcomponent)*
   - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
-#### Added *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
+#### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
+- Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
+- Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
 #### Added *[`EntityIterator`](EntityIterator.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
 #### Added *[`FilterGroup`](FilterGroup.md)*
 #### Added *[`FluidContainer`](FluidContainer.md)*
+#### Added *[`InputInfo`](InputInfo.md)*
 #### Added *[`ItemDyeableComponent`](ItemDyeableComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
@@ -91,18 +107,17 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Changed *[`Player`](Player.md)*
 - Added property *[`clientSystemInfo`](Player.md#clientsysteminfo)*
+- Added property *[`inputInfo`](Player.md#inputinfo)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`isOp`](Player.md#isop)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`setOp`](Player.md#setop)*
 - Added function *[`spawnParticle`](Player.md#spawnparticle)*
-#### Changed *[`PlayerInteractWithBlockAfterEvent`](PlayerInteractWithBlockAfterEvent.md)*
-- Added property *[`beforeItemStack`](PlayerInteractWithBlockAfterEvent.md#beforeitemstack)*
-- Added property *[`isFirstEvent`](PlayerInteractWithBlockAfterEvent.md#isfirstevent)*
-#### Changed *[`PlayerInteractWithBlockBeforeEvent`](PlayerInteractWithBlockBeforeEvent.md)*
-- Added property *[`isFirstEvent`](PlayerInteractWithBlockBeforeEvent.md#isfirstevent)*
-#### Changed *[`PlayerInteractWithEntityAfterEvent`](PlayerInteractWithEntityAfterEvent.md)*
-- Added property *[`beforeItemStack`](PlayerInteractWithEntityAfterEvent.md#beforeitemstack)*
+#### Added *[`PlayerInputModeChangeAfterEvent`](PlayerInputModeChangeAfterEvent.md)*
+#### Added *[`PlayerInputModeChangeAfterEventSignal`](PlayerInputModeChangeAfterEventSignal.md)*
+#### Changed *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
+- Added function *[`isPermissionCategoryEnabled`](PlayerInputPermissions.md#ispermissioncategoryenabled)*
+- Added function *[`setPermissionCategory`](PlayerInputPermissions.md#setpermissioncategory)*
 #### Added *[`PlayerIterator`](PlayerIterator.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
@@ -111,6 +126,9 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PotionModifierType`](PotionModifierType.md)*
 #### Added *[`Potions`](Potions.md)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
+#### Changed *[`StructureManager`](StructureManager.md)*
+- Added function *[`placeJigsaw`](StructureManager.md#placejigsaw)*
+- Added function *[`placeJigsawStructure`](StructureManager.md#placejigsawstructure)*
 #### Changed *[`System`](System.md)*
 - Added property *[`beforeEvents`](System.md#beforeevents)*
 - Added property *[`serverSystemInfo`](System.md#serversysteminfo)*
@@ -119,29 +137,34 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
-- Added property *[`isHardcore`](World.md#ishardcore)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
-- Added property *[`playerInteractWithBlock`](WorldAfterEvents.md#playerinteractwithblock)*
-- Added property *[`playerInteractWithEntity`](WorldAfterEvents.md#playerinteractwithentity)*
+- Added property *[`playerInputModeChange`](WorldAfterEvents.md#playerinputmodechange)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
-- Added property *[`playerInteractWithBlock`](WorldBeforeEvents.md#playerinteractwithblock)*
-- Added property *[`playerInteractWithEntity`](WorldBeforeEvents.md#playerinteractwithentity)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
 - Added value `FluidContainer`
-#### Added enum [`BlockVolumeIntersection`](BlockVolumeIntersection.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Added enum [`Difficulty`](Difficulty.md)
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
-- Added value `Breathable`
 - Added value `Npc`
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
+#### Added enum [`InputMode`](InputMode.md)
+#### Changed enum [`InputPermissionCategory`](InputPermissionCategory.md)
+- Added value `LateralMovement`
+- Added value `Sneak`
+- Added value `Jump`
+- Added value `Mount`
+- Added value `Dismount`
+- Added value `MoveForward`
+- Added value `MoveBackward`
+- Added value `MoveLeft`
+- Added value `MoveRight`
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `Dyeable`
 - Added value `Potion`
@@ -149,6 +172,32 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`PlatformType`](PlatformType.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `TicksPerDay`
+## 1.15.0
+#### Changed *[`Block`](Block.md)*
+- Added function *[`getRedstonePower`](Block.md#getredstonepower)*
+#### Added *[`BlockLocationIterator`](BlockLocationIterator.md)*
+#### Added *[`BlockVolume`](BlockVolume.md)*
+#### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
+- Added function *[`getBlockLocationIterator`](BlockVolumeBase.md#getblocklocationiterator)*
+#### Added *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
+#### Changed *[`PlayerInteractWithBlockAfterEvent`](PlayerInteractWithBlockAfterEvent.md)*
+- Added property *[`beforeItemStack`](PlayerInteractWithBlockAfterEvent.md#beforeitemstack)*
+- Added property *[`isFirstEvent`](PlayerInteractWithBlockAfterEvent.md#isfirstevent)*
+#### Changed *[`PlayerInteractWithBlockBeforeEvent`](PlayerInteractWithBlockBeforeEvent.md)*
+- Added property *[`isFirstEvent`](PlayerInteractWithBlockBeforeEvent.md#isfirstevent)*
+#### Changed *[`PlayerInteractWithEntityAfterEvent`](PlayerInteractWithEntityAfterEvent.md)*
+- Added property *[`beforeItemStack`](PlayerInteractWithEntityAfterEvent.md#beforeitemstack)*
+#### Changed *[`World`](World.md)*
+- Added property *[`isHardcore`](World.md#ishardcore)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`playerInteractWithBlock`](WorldAfterEvents.md#playerinteractwithblock)*
+- Added property *[`playerInteractWithEntity`](WorldAfterEvents.md#playerinteractwithentity)*
+#### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
+- Added property *[`playerInteractWithBlock`](WorldBeforeEvents.md#playerinteractwithblock)*
+- Added property *[`playerInteractWithEntity`](WorldBeforeEvents.md#playerinteractwithentity)*
+#### Added enum [`BlockVolumeIntersection`](BlockVolumeIntersection.md)
+#### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
+- Added value `Breathable`
 ## 1.14.0
 #### Added *[`BlockRecordPlayerComponent`](BlockRecordPlayerComponent.md)*
 #### Added *[`PlayerCursorInventoryComponent`](PlayerCursorInventoryComponent.md)*

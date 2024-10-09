@@ -16,12 +16,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.14.0"
+    "version": "1.15.0"
 }
 ```
 
 ## Available Versions
-- `1.16.0-beta`
+- `1.17.0-beta`
+- `1.15.0`
 - `1.14.0`
 - `1.13.0`
 - `1.12.0`
@@ -61,6 +62,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [GameRule](GameRule.md)
 - [HudElement](HudElement.md)
 - [HudVisibility](HudVisibility.md)
+- [InputMode](InputMode.md)
 - [InputPermissionCategory](InputPermissionCategory.md)
 - [ItemComponentTypes](ItemComponentTypes.md)
 - [ItemLockMode](ItemLockMode.md)
@@ -84,6 +86,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockComponentTypeMap](BlockComponentTypeMap.md)
 - [EntityComponentTypeMap](EntityComponentTypeMap.md)
 - [ItemComponentTypeMap](ItemComponentTypeMap.md)
+- [BlockStateArg](BlockStateArg.md)
 
 ## Classes
 - [BiomeType](BiomeType.md)
@@ -250,6 +253,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [GameRules](GameRules.md)
 - [IButtonPushAfterEventSignal](IButtonPushAfterEventSignal.md)
 - [ILeverActionAfterEventSignal](ILeverActionAfterEventSignal.md)
+- [InputInfo](InputInfo.md)
 - [IPlayerJoinAfterEventSignal](IPlayerJoinAfterEventSignal.md)
 - [IPlayerLeaveAfterEventSignal](IPlayerLeaveAfterEventSignal.md)
 - [IPlayerSpawnAfterEventSignal](IPlayerSpawnAfterEventSignal.md)
@@ -315,6 +319,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerGameModeChangeAfterEventSignal](PlayerGameModeChangeAfterEventSignal.md)
 - [PlayerGameModeChangeBeforeEvent](PlayerGameModeChangeBeforeEvent.md)
 - [PlayerGameModeChangeBeforeEventSignal](PlayerGameModeChangeBeforeEventSignal.md)
+- [PlayerInputModeChangeAfterEvent](PlayerInputModeChangeAfterEvent.md)
+- [PlayerInputModeChangeAfterEventSignal](PlayerInputModeChangeAfterEventSignal.md)
 - [PlayerInputPermissionCategoryChangeAfterEvent](PlayerInputPermissionCategoryChangeAfterEvent.md)
 - [PlayerInputPermissionCategoryChangeAfterEventSignal](PlayerInputPermissionCategoryChangeAfterEventSignal.md)
 - [PlayerInputPermissions](PlayerInputPermissions.md)
@@ -426,6 +432,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [GreaterThanComparison](GreaterThanComparison.md)
 - [GreaterThanOrEqualsComparison](GreaterThanOrEqualsComparison.md)
 - [ItemCustomComponent](ItemCustomComponent.md)
+- [JigsawPlaceOptions](JigsawPlaceOptions.md)
+- [JigsawStructurePlaceOptions](JigsawStructurePlaceOptions.md)
 - [LessThanComparison](LessThanComparison.md)
 - [LessThanOrEqualsComparison](LessThanOrEqualsComparison.md)
 - [MusicOptions](MusicOptions.md)
@@ -464,6 +472,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
+- [InvalidEntityError](InvalidEntityError.md)
 - [InvalidIteratorError](InvalidIteratorError.md)
 - [InvalidStructureError](InvalidStructureError.md)
 - [ItemCustomComponentAlreadyRegisteredError](ItemCustomComponentAlreadyRegisteredError.md)
@@ -472,6 +481,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemCustomComponentReloadVersionError](ItemCustomComponentReloadVersionError.md)
 - [LocationInUnloadedChunkError](LocationInUnloadedChunkError.md)
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
+- [PlaceJigsawError](PlaceJigsawError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
 
 ## Constants

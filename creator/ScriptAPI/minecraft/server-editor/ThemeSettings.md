@@ -13,6 +13,7 @@ description: Contents of the @minecraft/server-editor.ThemeSettings class.
 - [canThemeBeModified](#canthemebemodified)
 - [deleteTheme](#deletetheme)
 - [getCurrentTheme](#getcurrenttheme)
+- [getThemeColors](#getthemecolors)
 - [getThemeList](#getthemelist)
 - [resolveColorKey](#resolvecolorkey)
 - [setCurrentTheme](#setcurrenttheme)
@@ -60,6 +61,16 @@ getCurrentTheme(): string
 `
 
 **Returns** *string*
+
+### **getThemeColors**
+`
+getThemeColors(id: string): Record<string, minecraftserver.RGBA> | undefined
+`
+
+#### **Parameters**
+- **id**: *string*
+
+**Returns** Record<*string*, [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)> | *undefined*
 
 ### **getThemeList**
 `

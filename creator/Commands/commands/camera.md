@@ -216,6 +216,7 @@ A listing of available camera presets.
 - `minecraft:free`
 - `minecraft:third_person`
 - `minecraft:third_person_front`
+- `minecraft:fixed_boom`
 
 ### `Easing`
 Specifies an easing function to use for the camera.

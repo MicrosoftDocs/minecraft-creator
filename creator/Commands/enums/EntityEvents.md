@@ -92,6 +92,8 @@ Adds attributes to an entity
 - `minecraft:add_biome_and_skin`
 Entity is affected by biome and skin
 - `minecraft:add_can_ride`
+- `minecraft:add_damage_timer`
+- `minecraft:add_periodic_damage`
 - `minecraft:ageable_grow_up`
 Entity can grow to adulthood
 - `minecraft:ageable_set_baby`
@@ -127,6 +129,8 @@ Entity responds to eating a rose
 - `minecraft:ate_torchflower`
 - `minecraft:ate_tulip`
 Entity responds to eating a tulip
+- `minecraft:attacked_by_mob`
+- `minecraft:attacked_by_player`
 - `minecraft:baby_on_calm`
 Entity is a calmed baby
 - `minecraft:become_aggressive`
@@ -271,6 +275,7 @@ Entity is born
 Entity is born wild
 - `minecraft:entity_spawned`
 Entity has spawned
+- `minecraft:entity_spawned_by_creaking_heart`
 - `minecraft:entity_transformed`
 Entity is transformed
 - `minecraft:exited_bubble_column`
@@ -388,6 +393,8 @@ Entity is scared
 Entity is sheared
 - `minecraft:on_tame`
 Entity is tamed
+- `minecraft:on_target_start_looking`
+- `minecraft:on_target_stop_looking`
 - `minecraft:on_trust`
 Entity trusts
 - `minecraft:on_unleash`
@@ -530,6 +537,7 @@ Entity starts tp land
 - `minecraft:start_roar`
 Entity starts roaring
 - `minecraft:start_sitting`
+- `minecraft:start_swaying`
 - `minecraft:start_transforming`
 Entity starts transforming
 - `minecraft:start_unrolling`
@@ -544,6 +552,7 @@ Entity stops Johnny action
 - `minecraft:stop_peeking`
 - `minecraft:stop_playing_idle_ground_sound`
 - `minecraft:stop_sitting`
+- `minecraft:stop_swaying`
 - `minecraft:stop_transforming`
 Entity stops transforming
 - `minecraft:switch_to_melee`

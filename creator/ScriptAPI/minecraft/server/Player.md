@@ -41,6 +41,18 @@ Notes:
     - Throws *Error*
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **inputInfo**
+`read-only inputInfo: InputInfo;`
+
+Contains the player's input information.
+
+Type: [*InputInfo*](InputInfo.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **inputPermissions**
 `read-only inputPermissions: PlayerInputPermissions;`
 

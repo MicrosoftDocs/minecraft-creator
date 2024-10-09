@@ -81,17 +81,17 @@ Retrieves a prototype item stack based on this block permutation that can be use
 
 ### **getState**
 `
-getState(stateName: string): boolean | number | string | undefined
+getState(stateName: T): minecraftvanilladata.BlockStateSuperset[T] | undefined
 `
 
 Gets a state for the permutation.
 
 #### **Parameters**
-- **stateName**: *string*
+- **stateName**: *T*
   
   Name of the block state who's value is to be returned.
 
-**Returns** *boolean* | *number* | *string* | *undefined* - Returns the state if the permutation has it, else `undefined`.
+**Returns** *minecraftvanilladata.BlockStateSuperset[T] | undefined* - Returns the state if the permutation has it, else `undefined`.
 
 ### **getTags**
 `
@@ -130,53 +130,53 @@ console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
 
 ### **matches**
 `
-matches(blockName: string, states?: Record<string, boolean | number | string>): boolean
+matches(blockName: T, states: BlockStateArg<T>): boolean
 `
 
 Returns a boolean whether a specified permutation matches this permutation. If states is not specified, matches checks against the set of types more broadly.
 
 #### **Parameters**
-- **blockName**: *string*
+- **blockName**: *T*
   
   An optional set of states to compare against.
-- **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
+- **states**: *BlockStateArg<T>*
 
 **Returns** *boolean*
 
 ### **withState**
 `
-withState(name: string, value: boolean | number | string): BlockPermutation
+withState(name: T, value: minecraftvanilladata.BlockStateSuperset[T]): BlockPermutation
 `
 
 Returns a derived BlockPermutation with a specific property set.
 
 #### **Parameters**
-- **name**: *string*
+- **name**: *T*
   
   Identifier of the block property.
-- **value**: *boolean* | *number* | *string*
+- **value**: *minecraftvanilladata.BlockStateSuperset[T]*
   
   Value of the block property.
 
-**Returns** [*BlockPermutation*](BlockPermutation.md)
+**Returns** *BlockPermutation*
   
 Notes:
 - This function can throw errors.
 
 ### **resolve**
 `
-static resolve(blockName: string, states?: Record<string, boolean | number | string>): BlockPermutation
+static resolve(blockName: T, states: BlockStateArg<T>): BlockPermutation
 `
 
 Given a type identifier and an optional set of properties, will return a BlockPermutation object that is usable in other block APIs (e.g., block.setPermutation)
 
 #### **Parameters**
-- **blockName**: *string*
+- **blockName**: *T*
   
   Identifier of the block to check.
-- **states**?: Record<*string*, *boolean* | *number* | *string*> = `null`
+- **states**: *BlockStateArg<T>*
 
-**Returns** [*BlockPermutation*](BlockPermutation.md)
+**Returns** *BlockPermutation*
   
 Notes:
 - This function can throw errors.
