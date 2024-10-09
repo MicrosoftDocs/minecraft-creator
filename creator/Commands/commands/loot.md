@@ -91,6 +91,20 @@ Replace `loot` from a `block` at a `position` into a `slotID` in a specified amo
 
 Replace `loot` from a `block` at a `position` from `killing` an `entity` using a `tool`.
 
+### `/loot spawn <position: x y z> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+
+### `/loot give <players: target> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+
+### `/loot insert <position: x y z> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+
+### `/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> <count: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+
+### `/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+
+### `/loot replace block <position: x y z> slot.container <slotId: int> <count: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+
+### `/loot replace block <position: x y z> slot.container <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+
 ## Arguments
 - `<tool>|mainhand|offhand`: Tool
 Specifies the hand holding the tool
@@ -108,6 +122,7 @@ A `vector` made up of x y z coordinates with `float` numbers.
 An `integer` to specify the slot.
 - `slotType`: [EntityEquipmentSlot](../enums/EntityEquipmentSlot.md)
 Entity equipment slot
+- `TargetBlockPosition: x y z`: position
 
 ## Enums
 ### `Tool`
@@ -178,6 +193,7 @@ Polished Blackstone Brick Slab
 - `minecraft:mushroom_stew`
 Mushroom Stew
 - `minecraft:weathered_copper_door`
+- `minecraft:pale_oak_fence`
 - `minecraft:iron_horse_armor`
 Iron Horse Armor
 - `minecraft:gray_bundle`
@@ -290,6 +306,7 @@ Raw Gold Block
 Carrot
 - `minecraft:strider_spawn_egg`
 Strider Spawn Egg
+- `minecraft:pale_oak_chest_boat`
 - `minecraft:command_block`
 Command Block
 - `minecraft:potion`
@@ -537,10 +554,10 @@ Wooden Axe
 Light Blue Glazed Terracotta
 - `minecraft:stone_sword`
 Stone Sword
+- `minecraft:light_block_15`
 - `minecraft:stone_shovel`
 Stone Shovel
 - `minecraft:light_gray_stained_glass_pane`
-- `minecraft:light_block_15`
 - `minecraft:smooth_stone_slab`
 - `minecraft:salmon_bucket`
 Salmon Bucket
@@ -928,6 +945,7 @@ Bee Spawn Egg
 Mud Brick Slab
 - `minecraft:brown_dye`
 Brown Dye
+- `minecraft:pale_oak_wall_sign`
 - `minecraft:polished_diorite`
 - `minecraft:cut_red_sandstone_slab`
 - `minecraft:frame`
@@ -951,6 +969,7 @@ Blaze Rod
 - `minecraft:oak_planks`
 - `minecraft:sticky_piston_arm_collision`
 Sticky Piston Arm Collision
+- `minecraft:pale_oak_leaves`
 - `minecraft:light_gray_dye`
 Light Gray Dye
 - `minecraft:gray_dye`
@@ -1007,16 +1026,17 @@ Turtle Helmet
 - `minecraft:ink_sac`
 Ink Sac
 - `minecraft:compound_creator`
-- `minecraft:medium_amethyst_bud`
-Medium Amethyst Bud
-- `minecraft:lapis_lazuli`
-Lapis Lazuli
 - `minecraft:stripped_crimson_stem`
 Stripped Crimson Stem
 - `minecraft:camera`
 Camera
 - `minecraft:chorus_fruit`
 Chorus Fruit
+- `minecraft:pale_moss_carpet`
+- `minecraft:medium_amethyst_bud`
+Medium Amethyst Bud
+- `minecraft:lapis_lazuli`
+Lapis Lazuli
 - `minecraft:waxed_copper_grate`
 - `minecraft:suspicious_stew`
 Suspicious Stew
@@ -1145,6 +1165,7 @@ Wither Skeleton Spawn Egg
 Spruce Sign
 - `minecraft:donkey_spawn_egg`
 Donkey Spawn Egg
+- `minecraft:creaking_spawn_egg`
 - `minecraft:stripped_spruce_wood`
 - `minecraft:double_plant`
 Double Plant
@@ -1157,10 +1178,10 @@ Mule Spawn Egg
 Skeleton Horse Spawn Egg
 - `minecraft:flowering_azalea`
 Flowering Azalea
+- `minecraft:light_block_14`
 - `minecraft:netherite_pickaxe`
 Netherite Pickaxe
 - `minecraft:pink_terracotta`
-- `minecraft:light_block_14`
 - `minecraft:jukebox`
 Jukebox
 - `minecraft:zombie_horse_spawn_egg`
@@ -1170,6 +1191,7 @@ Zombie Horse Spawn Egg
 - `minecraft:npc_spawn_egg`
 NPC Spawn Egg
 - `minecraft:breeze_spawn_egg`
+- `minecraft:pale_oak_hanging_sign`
 - `minecraft:end_stone`
 End Stone
 - `minecraft:llama_spawn_egg`
@@ -1297,6 +1319,7 @@ Waxed Oxidized Cut Copper Slab
 - `minecraft:polished_andesite`
 - `minecraft:raw_copper`
 Raw Copper
+- `minecraft:pale_oak_stairs`
 - `minecraft:experience_bottle`
 Experience Bottle
 - `minecraft:element_69`
@@ -1388,6 +1411,7 @@ Netherite Leggings
 - `minecraft:dark_oak_door`
 Dark Oak Door
 - `minecraft:yellow_stained_glass_pane`
+- `minecraft:pale_oak_slab`
 - `minecraft:popped_chorus_fruit`
 Popped Chorus Fruit
 - `minecraft:splash_potion`
@@ -1397,6 +1421,7 @@ Shulker Shell
 - `minecraft:mossy_cobblestone_wall`
 - `minecraft:light_blue_concrete`
 - `minecraft:chiseled_quartz_block`
+- `minecraft:pale_oak_wood`
 - `minecraft:redstone_block`
 Redstone Block
 - `minecraft:brain_coral`
@@ -1564,6 +1589,7 @@ Pink Glazed Terracotta
 - `minecraft:blue_concrete`
 - `minecraft:jungle_chest_boat`
 Jungle Chest Boat
+- `minecraft:creaking_heart`
 - `minecraft:spruce_chest_boat`
 Spruce Chest Boat
 - `minecraft:white_concrete_powder`
@@ -1576,6 +1602,7 @@ Dark Oak Chest Boat
 [Education Edition] Info Update
 - `minecraft:mangrove_chest_boat`
 Mangrove Chest Boat
+- `minecraft:pale_oak_trapdoor`
 - `minecraft:sculk_shrieker`
 Sculk Shrieker
 - `minecraft:recovery_compass`
@@ -1731,6 +1758,12 @@ Waterlily
 - `minecraft:waxed_exposed_copper_door`
 - `minecraft:waxed_oxidized_copper_door`
 - `minecraft:acacia_log`
+- `minecraft:pale_oak_boat`
+- `minecraft:smooth_basalt`
+Smooth Basalt
+- `minecraft:pale_oak_sign`
+- `minecraft:pale_oak_door`
+- `minecraft:green_carpet`
 - `minecraft:nether_brick_stairs`
 Nether Brick Stairs
 - `minecraft:white_wool`
@@ -1767,12 +1800,7 @@ Deepslate Brick Stairs
 - `minecraft:light_blue_carpet`
 - `minecraft:hard_black_stained_glass`
 - `minecraft:gray_carpet`
-- `minecraft:slime`
-Slime
-- `minecraft:pumpkin`
-Pumpkin
 - `minecraft:light_gray_carpet`
-- `minecraft:green_carpet`
 - `minecraft:oak_log`
 - `minecraft:birch_log`
 - `minecraft:jungle_log`
@@ -1930,6 +1958,7 @@ Spruce Button
 - `minecraft:red_sandstone`
 Red Sandstone
 - `minecraft:chiseled_red_sandstone`
+- `minecraft:stripped_pale_oak_wood`
 - `minecraft:smooth_red_sandstone`
 - `minecraft:jungle_slab`
 - `minecraft:acacia_slab`
@@ -1999,6 +2028,7 @@ Log 2
 Warped Fungus
 - `minecraft:end_portal_frame`
 [Education Edition] End Portal Frame
+- `minecraft:pale_hanging_moss`
 - `minecraft:anvil`
 Anvil
 - `minecraft:big_dripleaf`
@@ -2066,9 +2096,9 @@ Reinforced Deepslate
 - `minecraft:orange_stained_glass_pane`
 - `minecraft:item.dark_oak_door`
 Item Dark Oak Door
-- `minecraft:magenta_stained_glass_pane`
 - `minecraft:light_block`
 Light Block
+- `minecraft:magenta_stained_glass_pane`
 - `minecraft:end_crystal`
 End Crystal
 - `minecraft:light_blue_stained_glass_pane`
@@ -2089,9 +2119,9 @@ Deepslate Diamond Ore
 - `minecraft:red_shulker_box`
 - `minecraft:red_sandstone_stairs`
 Red Sandstone Stairs
-- `minecraft:black_shulker_box`
 - `minecraft:carved_pumpkin`
 Carved Pumpkin
+- `minecraft:black_shulker_box`
 - `minecraft:piston`
 Piston
 - `minecraft:torchflower_crop`
@@ -2157,6 +2187,10 @@ Deepslate Tile Double Slab
 Gold Block
 - `minecraft:light_block_12`
 - `minecraft:light_block_13`
+- `minecraft:slime`
+Slime
+- `minecraft:pumpkin`
+Pumpkin
 - `minecraft:crimson_slab`
 Crimson Slab
 - `minecraft:candle`
@@ -2205,6 +2239,7 @@ Diamond Block
 [Education Edition] Magnesium (Mg)
 - `minecraft:element_14`
 [Education Edition] Silicon (Si)
+- `minecraft:pale_oak_standing_sign`
 - `minecraft:client_request_placeholder_block`
 [Education Edition] Client Request Placeholder Block
 - `minecraft:element_17`
@@ -2405,6 +2440,7 @@ Target
 Blackstone Double Slab
 - `minecraft:jungle_button`
 Jungle Button
+- `minecraft:pale_oak_fence_gate`
 - `minecraft:cherry_pressure_plate`
 - `minecraft:crimson_wall_sign`
 Crimson Wall Sign
@@ -2416,6 +2452,7 @@ Glow Frame
 Hanging Roots
 - `minecraft:calcite`
 Calcite
+- `minecraft:pale_oak_pressure_plate`
 - `minecraft:stripped_dark_oak_log`
 Stripped Dark Oak Log
 - `minecraft:lime_glazed_terracotta`
@@ -2463,6 +2500,7 @@ Mangrove Log
 Powered Comparator
 - `minecraft:warped_wall_sign`
 Warped Wall Sign
+- `minecraft:pale_oak_sapling`
 - `minecraft:mangrove_double_slab`
 Mangrove Double Slab
 - `minecraft:waxed_exposed_copper_grate`
@@ -2513,8 +2551,6 @@ Invisible Bedrock
 - `minecraft:oxidized_copper_bulb`
 - `minecraft:orange_glazed_terracotta`
 Orange Glazed Terracotta
-- `minecraft:smooth_basalt`
-Smooth Basalt
 - `minecraft:emerald_block`
 Emerald Block
 - `minecraft:heavy_weighted_pressure_plate`
@@ -2569,6 +2605,7 @@ Light Weighted Pressure Plate
 Polished Blackstone
 - `minecraft:mycelium`
 Mycelium
+- `minecraft:pale_oak_planks`
 - `minecraft:stone_stairs`
 Stone Stairs
 - `minecraft:warped_stairs`
@@ -2599,6 +2636,7 @@ Rail
 Blackstone Wall
 - `minecraft:mossy_cobblestone_stairs`
 Mossy Cobblestone Stairs
+- `minecraft:stripped_pale_oak_log`
 - `minecraft:detector_rail`
 Detector Rail
 - `minecraft:brain_coral_wall_fan`
@@ -2631,6 +2669,7 @@ Coal Ore
 Redstone Ore
 - `minecraft:nether_brick_fence`
 Nether Brick Fence
+- `minecraft:pale_oak_button`
 - `minecraft:crimson_hyphae`
 Crimson Hyphae
 - `minecraft:polished_blackstone_stairs`
@@ -2773,6 +2812,7 @@ Acacia Trapdoor
 - `minecraft:glow_lichen`
 Glow Lichen
 - `minecraft:acacia_double_slab`
+- `minecraft:pale_moss_block`
 - `minecraft:soul_lantern`
 Soul Lantern
 - `minecraft:bee_nest`
@@ -2806,6 +2846,7 @@ Warped Hyphae
 - `minecraft:grass_block`
 - `minecraft:item.reeds`
 Reeds
+- `minecraft:pale_oak_log`
 - `minecraft:deepslate_gold_ore`
 Deepslate Gold Ore
 - `minecraft:item.camera`
@@ -2978,6 +3019,7 @@ Lime Candle Cake
 Grass Path
 - `minecraft:weathered_copper`
 Weathered Copper
+- `minecraft:pale_oak_double_slab`
 - `minecraft:cherry_fence_gate`
 - `minecraft:gray_glazed_terracotta`
 Gray Glazed Terracotta

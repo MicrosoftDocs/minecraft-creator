@@ -106,6 +106,7 @@ description: List and descriptions of Minecraft commands and enums
 | string | A &#x60;string&#x60; that is either one word or a quoted &#x60;string&#x60;  with a space. |   |
 | target | A &#x60;string&#x60; or [&#x60;target selector&#x60;](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandsintroduction#target-selectors) to identify which player is targeted. |   |
 | text | A &#x60;string&#x60; . |   |
+| time | An &#x60;enum&#x60; of &#x60;d&#x60; for one day, &#x60;s&#x60; for one second, or &#x60;t&#x60; for a single gametick. |   |
 | wildcard int | A 32-bit &#x60;integer&#x60; or an asterisk &#x60;*&#x60; for a wildcard.  |   |
 | [`Block`](./enums/Block.md) | Minecraft block | Yes |
 | [`Boolean`](./enums/Boolean.md) | Boolean value | Yes |

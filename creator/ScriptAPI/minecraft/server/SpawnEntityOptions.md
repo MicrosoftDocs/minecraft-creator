@@ -18,3 +18,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 `initialPersistence?: boolean;`
 
 Type: *boolean*
+
+### **initialRotation**
+`initialRotation?: number;`
+
+Type: *number*

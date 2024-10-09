@@ -30,11 +30,11 @@ If true label text will be hidden. It will be visible by default.
 Type: *boolean*
 
 ### **onChange**
-`onChange: (newValue: RGBA, oldValue: RGBA) => void;`
+`onChange: (newValue: minecraftserver.RGBA, oldValue: minecraftserver.RGBA) => void;`
 
 This callback is called when UI control value is changed.
 
-Type: *(newValue: RGBA, oldValue: RGBA) => void*
+Type: *(newValue: minecraftserver.RGBA, oldValue: minecraftserver.RGBA) => void*
 
 ### **title**
 `title: LocalizedString;`

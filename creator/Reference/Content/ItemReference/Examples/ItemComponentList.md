@@ -17,6 +17,7 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:block_placer](ItemComponents/minecraft_block_placer.md)| *not set* | JSON Object|  Block Placer item component. Items with this component will place a block when used.|
 |[minecraft:bundle_interaction](ItemComponents/minecraft_bundle_interaction.md)| *not set* | JSON Object| Enables the bundle-specific interaction scheme and tooltip for an item.|
 |[minecraft:can_destroy_in_creative](ItemComponents/minecraft_can_destroy_in_creative.md)| *not set* | JSON Object| Determines if the item will break blocks in Creative Mode while swinging.|
+|[minecraft:compostable](ItemComponents/minecraft_compostable.md)| *not set* | JSON Object| Specifies that an item is compostable and provides the chance of creating a composting layer in the composter.|
 |[minecraft:cooldown](ItemComponents/minecraft_cooldown.md)| *not set* | JSON Object| Cool down time for a component. After use, all items in a specified 'cool down category' become unusable for a determined amount of time defined in the component.|
 |[minecraft:damage](ItemComponents/minecraft_damage.md)| *not set* | JSON Object| Determines how much extra damage the item does on attack.|
 |[minecraft:display_name](ItemComponents/minecraft_display_name.md)| *not set* | JSON Object| Defines the text shown when an item name is shown, such as hover text.|
@@ -29,7 +30,7 @@ Below is a list of all the available Item Components within Minecraft: Bedrock E
 |[minecraft:hand_equipped](ItemComponents/minecraft_hand_equipped.md)| *not set* | JSON Object| Determines if an item is rendered like a tool while in hand.|
 |[minecraft:hover_text_color](ItemComponents/minecraft_hover_text_color.md)| *not set* |  JSON Object| Determines the color of the item name when hovering over it.|
 |[minecraft:icon](ItemComponents/minecraft_icon.md)| *not set* | JSON Object| Determines the icon to represent the item in the UI and elsewhere.|
-|[minecraft:interact_button](ItemComponents/minecraft_interact_button.md)| *not set* | JSON Object| This component is a boolean or string that determines if the interact button is shown in touch controls and what text is displayed on the button. When set to 'true', default 'Use Item' text will be used.|
+|[minecraft:interact_button](ItemComponents/minecraft_interact_button.md)| *not set* | JSON Object| This component is a Boolean or string that determines if the interact button is shown in touch controls and what text is displayed on the button. When set to 'true', default 'Use Item' text will be used.|
 |[minecraft:item](ItemComponents/minecraft_item.md)| *not set* | JSON Object| A definition of the item, including the 'description' and 'components' sections of the item file.|
 |[minecraft:liquid_clipped](ItemComponents/minecraft_liquid_clipped.md)| *not set* | JSON Object| Determines whether an item interacts with liquid blocks on use.|
 |[minecraft:max_stack_size](ItemComponents/minecraft_max_stack_size.md)| *not set* | JSON Object| Determines how many of the item can be stacked.|

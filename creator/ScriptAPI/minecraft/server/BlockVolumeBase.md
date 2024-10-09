@@ -15,9 +15,7 @@ description: Contents of the @minecraft/server.BlockVolumeBase class.
 Base type for BlockVolumes.
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [getBlockLocationIterator](#getblocklocationiterator)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getBoundingBox](#getboundingbox)
 ::: moniker-end
@@ -28,7 +26,6 @@ Base type for BlockVolumes.
 - [isInside](#isinside)
 - [translate](#translate)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getBlockLocationIterator**
 `
 getBlockLocationIterator(): BlockLocationIterator
@@ -37,13 +34,9 @@ getBlockLocationIterator(): BlockLocationIterator
 Fetch a [*@minecraft/server.BlockLocationIterator*](../../minecraft/server/BlockLocationIterator.md) that represents all of the block world locations within the specified volume
 
 **Returns** [*BlockLocationIterator*](BlockLocationIterator.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getBoundingBox**

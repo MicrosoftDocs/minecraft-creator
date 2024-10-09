@@ -61,13 +61,19 @@ Let's create a custom die block with six different sides that is a different col
 We'll begin by creating a behavior pack for the custom block:
 
 1. In **File Explorer**, navigate to the **com.mojang** folder.
-1. Open the **development_behavior_packs** folder.
-1. Create a folder and name it **custom_block_behavior_pack**.
-1. Open the **custom_block_behavior_pack** folder, and create a text file.
-1. Rename the text file **manifest.json**.
-1. Open **manifest.json** in a text editor.
-1. Copy the code below into the **manifest.json** file.
-1. Get new UUIDs from UUIDgenerator.net.
+
+* Press **Win+R** to open **Run**.
+* If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Alternatively, if you are using preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Click **OK**.
+
+2. Open the **development_behavior_packs** folder.
+3. Create a folder and name it **custom_block_behavior_pack**.
+4. Open the **custom_block_behavior_pack** folder, and create a text file.
+5. Rename the text file **manifest.json**.
+6. Open **manifest.json** in a text editor.
+7. Copy the code below into the **manifest.json** file.
+8. Get new UUIDs from UUIDgenerator.net.
 
 ```json
 {

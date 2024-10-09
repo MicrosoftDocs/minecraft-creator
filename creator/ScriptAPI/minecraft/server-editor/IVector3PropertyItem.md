@@ -16,11 +16,11 @@ A property item which supports Vector3 properties
 ## Properties
 
 ### **value**
-`read-only value: Readonly<Vector3>;`
+`read-only value: Readonly<minecraftserver.Vector3>;`
 
 Current value of the property item.
 
-Type: *Readonly<Vector3>*
+Type: *Readonly<minecraftserver.Vector3>*
 
 ## Methods
 - [setTitle](#settitle)
@@ -58,8 +58,8 @@ Updates tooltip description of the button.
 ### **updateAxisLimits**
 `
 updateAxisLimits(limits: {
-        min?: Partial<Vector3>;
-        max?: Partial<Vector3>;
+        min?: Partial<minecraftserver.Vector3>;
+        max?: Partial<minecraftserver.Vector3>;
     }): void
 `
 
@@ -67,8 +67,8 @@ Updates Vector3 limits and clamps the current value.
 
 #### **Parameters**
 - **limits**: *{
-        min?: Partial<Vector3>;
-        max?: Partial<Vector3>;
+        min?: Partial<minecraftserver.Vector3>;
+        max?: Partial<minecraftserver.Vector3>;
     }*
 
 **Returns** *void*

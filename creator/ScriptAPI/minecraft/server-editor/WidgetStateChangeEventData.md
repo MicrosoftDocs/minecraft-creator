@@ -20,6 +20,11 @@ Type: [*WidgetGroup*](WidgetGroup.md)
 
 Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
+### **mouseEvent**
+`read-only mouseEvent?: WidgetMouseButtonEventData;`
+
+Type: [*WidgetMouseButtonEventData*](WidgetMouseButtonEventData.md)
+
 ### **selected**
 `read-only selected?: boolean;`
 

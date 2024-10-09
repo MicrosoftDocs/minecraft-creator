@@ -37,5 +37,7 @@ Type of item that can be added to the property pane
 `Table = editorUI:Table`
 ### **Text**
 `Text = editorUI:Text`
+### **ToggleGroup**
+`ToggleGroup = editorUI:ToggleGroup`
 ### **Vector3**
 `Vector3 = editorUI:Vector3`
