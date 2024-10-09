@@ -151,9 +151,7 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getMapColor](#getmapcolor)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getRedstonePower](#getredstonepower)
-::: moniker-end
 - [getTags](#gettags)
 - [hasTag](#hastag)
 - [isValid](#isvalid)
@@ -324,7 +322,6 @@ Notes:
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getRedstonePower**
 `
 getRedstonePower(): number | undefined
@@ -333,14 +330,10 @@ getRedstonePower(): number | undefined
 Returns the net redstone power of this block.
 
 **Returns** *number* | *undefined* - Returns undefined if redstone power is not applicable to this block.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **getTags**
 `

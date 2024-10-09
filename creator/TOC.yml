@@ -346,6 +346,8 @@
               href: Documents/BedrockEditor/EditorBrushTool.md
             - name: Editor Deferred Lighting
               href: Documents/BedrockEditor/EditorDeferredLighting.md
+            - name: Editor Structures Panel
+              href: Documents/BedrockEditor/EditorStructures.md
             - name: Editor Keyboard Inputs
               href: Documents/BedrockEditor/EditorKeyboardInputs.md
             - name: Editor Paste Preview

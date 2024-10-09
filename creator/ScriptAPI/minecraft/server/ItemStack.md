@@ -353,14 +353,14 @@ Checks whether this item stack has a particular tag associated with it.
 isStackableWith(itemStack: ItemStack): boolean
 `
 
-Returns whether this item stack can be stacked with the given `itemStack`. This is determined by comparing the item type and any custom data and properties associated with the item stacks. The amount of each item stack is not taken into consideration.
+Returns whether this item stack can be stacked with the given `itemStack`. This is determined by comparing the item type and any custom data and properties associated with the item stacks. The amount of each item stack is not taken into consideration, but for non-stackable items this will always return false.
 
 #### **Parameters**
 - **itemStack**: [*ItemStack*](ItemStack.md)
   
-  ItemStack to check stacking compatability with.
+  ItemStack to check stacking compatibility with.
 
-**Returns** *boolean* - True if the Item Stack is stackable with the itemStack passed in.
+**Returns** *boolean* - True if the Item Stack is stackable with the itemStack passed in. False for non-stackable items.
 
 ### **matches**
 `

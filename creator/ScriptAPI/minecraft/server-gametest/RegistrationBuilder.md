@@ -19,6 +19,7 @@ A utility class to set GameTest parameters for a test. Methods can be chained to
 - [requiredSuccessfulAttempts](#requiredsuccessfulattempts)
 - [rotateTest](#rotatetest)
 - [setupTicks](#setupticks)
+- [structureLocation](#structurelocation)
 - [structureName](#structurename)
 - [tag](#tag)
 
@@ -142,6 +143,21 @@ Sets the number of ticks for a test to wait before executing when the structure 
 
 #### **Parameters**
 - **tickCount**: *number*
+
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **structureLocation**
+`
+structureLocation(structureLocation: minecraftserver.Vector3): RegistrationBuilder
+`
+
+Overrides the default structure placement with a specific location. If height (y) is set to Dimension.heightRange.max, the structure will snap to the ground.
+
+#### **Parameters**
+- **structureLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
   

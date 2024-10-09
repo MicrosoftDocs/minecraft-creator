@@ -80,6 +80,8 @@ Spruce Stairs
 Spruce Stairs
 - `minecraft:diorite`
 - `diorite`
+- `minecraft:pale_oak_fence_gate`
+- `pale_oak_fence_gate`
 - `minecraft:polished_tuff_slab`
 - `polished_tuff_slab`
 - `minecraft:cherry_pressure_plate`
@@ -288,6 +290,8 @@ Iron Trapdoor
 Muddy Mangrove Roots
 - `muddy_mangrove_roots`
 Muddy Mangrove Roots
+- `minecraft:pale_oak_pressure_plate`
+- `pale_oak_pressure_plate`
 - `minecraft:stripped_jungle_wood`
 - `stripped_jungle_wood`
 - `minecraft:noteblock`
@@ -306,6 +310,10 @@ Mangrove Log
 Oxidized Cut Copper Stairs
 - `oxidized_cut_copper_stairs`
 Oxidized Cut Copper Stairs
+- `minecraft:pale_oak_fence`
+- `pale_oak_fence`
+- `minecraft:pale_oak_leaves`
+- `pale_oak_leaves`
 - `minecraft:sandstone_slab`
 - `sandstone_slab`
 - `minecraft:mossy_stone_brick_slab`
@@ -346,6 +354,8 @@ Waxed Cut Copper Stairs
 Mob Spawner
 - `mob_spawner`
 Mob Spawner
+- `minecraft:pale_oak_sapling`
+- `pale_oak_sapling`
 - `minecraft:polished_granite`
 - `polished_granite`
 - `minecraft:magenta_candle`
@@ -420,6 +430,8 @@ Stripped Jungle Log
 - `light_block_1`
 - `minecraft:light_block_0`
 - `light_block_0`
+- `minecraft:pale_oak_door`
+- `pale_oak_door`
 - `minecraft:oak_sapling`
 - `oak_sapling`
 - `minecraft:light_gray_terracotta`
@@ -592,6 +604,8 @@ Smooth Basalt
 Waterlily
 - `waterlily`
 Waterlily
+- `minecraft:stripped_pale_oak_wood`
+- `stripped_pale_oak_wood`
 - `minecraft:emerald_block`
 Emerald Block
 - `emerald_block`
@@ -744,6 +758,8 @@ Bamboo
 Quartz Block
 - `quartz_block`
 Quartz Block
+- `minecraft:pale_oak_planks`
+- `pale_oak_planks`
 - `minecraft:stone_stairs`
 Stone Stairs
 - `stone_stairs`
@@ -994,12 +1010,16 @@ Nether Brick Fence
 - `pink_tulip`
 - `minecraft:oak_slab`
 - `oak_slab`
+- `minecraft:stripped_pale_oak_log`
+- `stripped_pale_oak_log`
 - `minecraft:deepslate_tile_slab`
 Deepslate Tile Slab
 - `deepslate_tile_slab`
 Deepslate Tile Slab
 - `minecraft:pink_concrete_powder`
 - `pink_concrete_powder`
+- `minecraft:pale_oak_slab`
+- `pale_oak_slab`
 - `minecraft:dead_tube_coral`
 - `dead_tube_coral`
 - `minecraft:nether_wart_block`
@@ -1370,6 +1390,8 @@ Cut Copper Slab
 Cut Copper Slab
 - `minecraft:red_stained_glass`
 - `red_stained_glass`
+- `minecraft:pale_oak_wood`
+- `pale_oak_wood`
 - `minecraft:infested_stone_bricks`
 - `infested_stone_bricks`
 - `minecraft:acacia_pressure_plate`
@@ -1490,6 +1512,8 @@ Oxidized Cut Copper
 Oxidized Cut Copper
 - `minecraft:blue_wool`
 - `blue_wool`
+- `minecraft:pale_oak_hanging_sign`
+- `pale_oak_hanging_sign`
 - `minecraft:weeping_vines`
 Weeping Vines
 - `weeping_vines`
@@ -1548,6 +1572,8 @@ Dark Oak Door
 Dark Oak Door
 - `minecraft:oak_fence`
 - `oak_fence`
+- `minecraft:pale_moss_block`
+- `pale_moss_block`
 - `minecraft:soul_lantern`
 Soul Lantern
 - `soul_lantern`
@@ -1730,6 +1756,8 @@ Barrier
 Barrier
 - `minecraft:black_carpet`
 - `black_carpet`
+- `minecraft:pale_oak_log`
+- `pale_oak_log`
 - `minecraft:weathered_cut_copper_slab`
 Weathered Cut Copper Slab
 - `weathered_cut_copper_slab`
@@ -1744,6 +1772,10 @@ Weathered Cut Copper Slab
 - `torchflower`
 - `minecraft:infested_stone`
 - `infested_stone`
+- `minecraft:pale_hanging_moss`
+- `pale_hanging_moss`
+- `minecraft:pale_moss_carpet`
+- `pale_moss_carpet`
 - `minecraft:end_portal_frame`
 End Portal Frame
 - `end_portal_frame`
@@ -2346,12 +2378,16 @@ Cobbled Deepslate Slab
 Cobbled Deepslate Slab
 - `minecraft:lilac`
 - `lilac`
+- `minecraft:pale_oak_trapdoor`
+- `pale_oak_trapdoor`
 - `minecraft:chiseled_quartz_block`
 - `chiseled_quartz_block`
 - `minecraft:spore_blossom`
 Spore Blossom
 - `spore_blossom`
 Spore Blossom
+- `minecraft:pale_oak_stairs`
+- `pale_oak_stairs`
 - `minecraft:emerald_ore`
 Emerald Ore
 - `emerald_ore`
@@ -2408,6 +2444,10 @@ Deepslate Brick Stairs
 Dark Prismarine Stairs
 - `dark_prismarine_stairs`
 Dark Prismarine Stairs
+- `minecraft:creaking_heart`
+- `creaking_heart`
+- `minecraft:pale_oak_button`
+- `pale_oak_button`
 - `minecraft:chiseled_tuff_bricks`
 - `chiseled_tuff_bricks`
 - `minecraft:light_blue_concrete`
@@ -3432,6 +3472,8 @@ Ravager Spawn Egg
 - `armadillo_spawn_egg`
 - `minecraft:bogged_spawn_egg`
 - `bogged_spawn_egg`
+- `minecraft:creaking_spawn_egg`
+- `creaking_spawn_egg`
 - `editor:map_marker_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit
@@ -3979,6 +4021,8 @@ Mangrove Sign
 Mangrove Sign
 - `minecraft:cherry_sign`
 - `cherry_sign`
+- `minecraft:pale_oak_sign`
+- `pale_oak_sign`
 - `minecraft:bamboo_sign`
 - `bamboo_sign`
 - `minecraft:crimson_sign`
@@ -4269,6 +4313,8 @@ Mangrove Boat
 Mangrove Boat
 - `minecraft:cherry_boat`
 - `cherry_boat`
+- `minecraft:pale_oak_boat`
+- `pale_oak_boat`
 - `minecraft:bamboo_raft`
 - `bamboo_raft`
 - `minecraft:oak_chest_boat`
@@ -4301,6 +4347,8 @@ Mangrove Chest Boat
 Mangrove Chest Boat
 - `minecraft:cherry_chest_boat`
 - `cherry_chest_boat`
+- `minecraft:pale_oak_chest_boat`
+- `pale_oak_chest_boat`
 - `minecraft:bamboo_chest_raft`
 - `bamboo_chest_raft`
 - `minecraft:redstone`

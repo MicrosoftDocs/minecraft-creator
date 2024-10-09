@@ -58,6 +58,7 @@ Type: *boolean*
 - [addString_deprecated](#addstring_deprecated)
 - [addTable](#addtable)
 - [addText](#addtext)
+- [addToggleGroup](#addtogglegroup)
 - [addVector3](#addvector3)
 - [addVector3_deprecated](#addvector3_deprecated)
 - [collapse](#collapse)
@@ -125,13 +126,13 @@ Adds a button to the pane and binds the specified action to the button activate.
 
 ### **addColorPicker**
 `
-addColorPicker(value: IObservableProp<RGBA>, options: IColorPickerPropertyItemOptions): IColorPickerPropertyItem
+addColorPicker(value: IObservableProp<minecraftserver.RGBA>, options: IColorPickerPropertyItemOptions): IColorPickerPropertyItem
 `
 
 Adds a color picker item to the pane.
 
 #### **Parameters**
-- **value**: *IObservableProp<RGBA>*
+- **value**: *IObservableProp<minecraftserver.RGBA>*
 - **options**: *IColorPickerPropertyItemOptions*
 
 **Returns** *IColorPickerPropertyItem*
@@ -293,15 +294,28 @@ Adds a multiline Text item to the pane.
 
 **Returns** *ITextPropertyItem*
 
+### **addToggleGroup**
+`
+addToggleGroup(value: IObservableProp<number>, options: IToggleGroupPropertyItemOptions): IToggleGroupPropertyItem
+`
+
+Adds a toggle button group to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<number>*
+- **options**: *IToggleGroupPropertyItemOptions*
+
+**Returns** *IToggleGroupPropertyItem*
+
 ### **addVector3**
 `
-addVector3(value: IObservableProp<Vector3>, options: IVector3PropertyItemOptions): IVector3PropertyItem
+addVector3(value: IObservableProp<minecraftserver.Vector3>, options: IVector3PropertyItemOptions): IVector3PropertyItem
 `
 
 Adds a Vec3 item to the pane.
 
 #### **Parameters**
-- **value**: *IObservableProp<Vector3>*
+- **value**: *IObservableProp<minecraftserver.Vector3>*
 - **options**: *IVector3PropertyItemOptions*
 
 **Returns** *IVector3PropertyItem*
