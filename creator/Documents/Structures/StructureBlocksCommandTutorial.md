@@ -1,14 +1,14 @@
 ---
 author: JimSeaman42
 ms.author: mikeam
-title: Create a Village with Structure Blocks
+title: Structure Blocks and the Structure Command Tutorial
 description: "A tutorial on using Structure Blocks for Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Create a Village with Structure Blocks
+# Structure Blocks and the Structure Command Tutorial
 
-For this tutorial, we're going to use structure blocks and the command `/structure` to create a village and load in an epic statue one block at a time.
+For this tutorial, we're going to use structure blocks and the command `/structure` to create a village and load in an epic statue one block at a time so we can enjoy the animation effects.
 
 We recommend reviewing the following articles before you begin:
 
@@ -79,25 +79,20 @@ So now we have a saved structure in a structure block. But what if we want to in
 
 This command saves a structure and takes in a name, coordinates, and optionally a save mode, a flag to include entities, and a flag to include blocks.
 
-```
-structure save <name: string> <from: x y z> <to: x y z> [saveMode: StructureSaveMode] [includesEntities: Boolean][includesBlocks: Boolean]
-```
+`structure save <name: string> <from: x y z> <to: x y z> [saveMode: StructureSaveMode] [includesEntities: Boolean][includesBlocks: Boolean]`
 
 **Load a structure**
 
 This command loads a structure and takes in the name, location, and optionally rotation, mirroring, animations, entities, and information on whether blocks are include, along with integrity and integrity string.
 
-```
-structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includesEntites: Boolean] [includesBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string] 
-```
+`structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includesEntites: Boolean] [includesBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
+
 
 **Delete a saved structure**
 
 This command deletes the saved structure:
 
-```
-structure delete <name: string>
-```
+`structure delete <name: string>`
 
 ![Image of chat open with the structure command entered](Media/StructureBlock/structurecommand.png)
 
@@ -108,7 +103,8 @@ Let's use the `/structure` command to save and load a structure.
 
 - We're using the following: `/structure save house1 -371 120 877 -371 131 881 memory`
 
-1. Now, let's load that same structure elsewhere.
+Now, let's load that same structure elsewhere, and rotate it, just to see how that works.
+
 1. Move to a new spot that needs a house.
 1. Open the console and enter the `/structure load` command with your coordinates.
 
@@ -121,6 +117,7 @@ Great! Now we can build a village more quickly than before.
 :::image type="content" source="Media/StructureBlock/structureblockbyblock.png" alt-text="A statue loading in block by block in Adventure mode":::
 
 Let's say we want to load a statue in Adventure mode, using an animation. This could be at the end of an epic adventure map to reward a player's persistence.
+Or maybe you want to use this as a way to give clues during gameplay.
 
 We're going to place an **impulse command block** and use the `/structure` command to load the statue block by block. When users press a button, the statue will appear majestically.
 
@@ -134,9 +131,11 @@ We're going to place an **impulse command block** and use the `/structure` comma
 `/structure load statue ~ ~ ~ 0_degrees none block_by_block 10`
 
  ...into the command input.
- This loads the structure called **statue** at the current location, does not rotate or mirror it, and animates it in one block at a time over ten seconds.
-7. Go to your world settings and change the world from Creative to Adventure.
-8. Click the acacia button and watch the statue arrive!
+
+ This loads the structure called **statue** at the current location. It does not rotate or mirror it, but animates it in one block at a time over ten seconds. If you wanted to use this mechanic to create a timed scenario, of course you could change 10 to something else.
+
+7. After you load the structure, change your world from Creative mode to Adventure mode. (Hint: Use `/gamemode adventure` or `/gamemode a`.)
+8. Click the acacia button and watch!
 
 ## What's Next?
 
