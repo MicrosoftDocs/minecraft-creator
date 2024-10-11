@@ -29,5 +29,4 @@ landingContent:
           - text: Structure Blocks Command Tutorial
             url: StructureBlocksCommandTutorial.md
           - text: Structure Command Reference Document
-            url: ../../creator/Commands/commands/structure.md
-
+            url: ../../Commands/commands/structure.md
