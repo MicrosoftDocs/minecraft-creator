@@ -13,7 +13,7 @@ In Minecraft, animation controllers do pretty much what they say: manage animati
 In this guide, we will cover what animation controllers are and what they do and how to use them effectively. For specific information, such as code samples and in-depth definitions, we'll refer to the [Animation Controllers Reference Doc](../Reference/Content/AnimationsReference/Examples/AnimationController.md)
 
 ![NOTE]
-This guide will not cover how to create custom animations. You can use programs like **Blockbench** to create custom animations to add flavor to your custom blocks and entities, but for this guide, we will only cover how to use animation controllers and how to transition between animations. For more information on creating animations, see []().
+This guide will not cover how to create custom animations. You can use programs like **Blockbench** to create custom animations to add flavor to your custom blocks and entities, but for this guide, we will only cover how to use animation controllers and how to transition between animations. For more information on creating animations, see [Animation Documentation - Getting Started](../Reference/Content/AnimationsReference/Examples/AnimationGettingStarted.md).
 
 ## Key Concepts
 
@@ -89,3 +89,9 @@ Make sure you define your animation controller under the `modules` section of yo
     }
 ]
 ```
+
+## Conclusion
+
+Now that you know how to create and deploy an animation controller, try playing around with states and conditions to create customized experiences in your world. Animation controllers can create simple effects for ambiance, such as making a villager yawn when they're tired, or world-changing events, such as an incubator that turns on when four magic gems are inserted and hatches a whole brood of ender dragons! If you manage them correctly, you can tell a whole story through animation controllers and the effects they have on the entities and blocks in your world.
+
+For more information on Animations and Animation controllers, including detailed information on states and other concepts, check out our reference documentation.
