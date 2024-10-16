@@ -108,7 +108,6 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.owner_hurt_by_target| 530667419 |
 | minecraft:behavior.owner_hurt_target| 995655261 |
 | minecraft:behavior.panic| -169886247 |
-| minecraft:behavior.peek| 211304085 |
 | minecraft:behavior.pet_sleep_with_owner| 1379392240 |
 | minecraft:behavior.pickup_items| 644287189 |
 | minecraft:behavior.play| 9028661884418335188 |
@@ -226,6 +225,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:dash| -51257122 |
 | minecraft:default_look_angle| -815556357 |
 | minecraft:despawn| 1674909940 |
+| minecraft:dimension_bound| -1843592159 |
 | minecraft:drying_out_timer| 2113510784 |
 | minecraft:economy_trade_table| 1705466896 |
 | minecraft:entity_armor_equipment_slot_mapping| 388041038|
@@ -275,7 +275,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:jump.dynamic| 945664737 |
 | minecraft:jump.static| 1064987526 |
 | minecraft:leashable| 893445039 |
-| minecraft:lookat| -1329707008 |
+| minecraft:looked_at| -1189178052 |
 | minecraft:loot| 1775814032 |
 | minecraft:managed_wandering_trader| 846609640 |
 | minecraft:mark_variant| 663621689 |
@@ -329,6 +329,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:trade_table| 50480315 |
 | minecraft:trail| 1632590434 |
 | minecraft:transformation| -457894577 |
+| minecraft:transient| -413020544 |
 | minecraft:trusting| 936499892 |
 | minecraft:type_family| -255011285 |
 | minecraft:variant| -1789583977 |

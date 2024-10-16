@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_lookat.md",
+      "redirect_url": "/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_looked_at",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/EditorOverview.md",
       "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorOverview",
       "redirect_document_id": false

@@ -50,7 +50,8 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:damage_over_time](EntityComponents/minecraftComponent_damage_over_time.md) |`minecraft:damage_over_time` applies a defined amount of damage to the entity at specified intervals.|
 |[minecraft:damage_sensor](EntityComponents/minecraftComponent_damage_sensor.md) |`minecraft:damage_sensor` defines what events to initiate when the entity is damaged by specific entities or items.|
 |[minecraft:default_look_angle](EntityComponents/minecraftComponent_default_look_angle.md) |`minecraft:default_look_angle` sets the entity's default head rotation angle. |
-|[minecraft:despawn](EntityComponents/minecraftComponent_despawn.md) |`minecraft:despawn` compels an entity despawn when the despawn rules or optional filters evaluate to true.|
+|[minecraft:despawn](EntityComponents/minecraftComponent_despawn.md) |`minecraft:despawn` prevents the entity from changing dimension through portals.|
+|[minecraft:dimension_bound](EntityComponents/minecraftComponent_dimension_bound.md) |`minecraft:dimension_bound` compels an entity despawn when the despawn rules or optional filters evaluate to true.|
 |[minecraft:drying_out_timer](EntityComponents/minecraftComponent_drying_out_timer.md) |`minecraft:drying_out_timer` sets a timer for drying out that will count down and initiate 'dried_out_event' or will stop as soon as the entity gets under rain or water, initiating `stopped_drying_out_event`.|
 |[minecraft:dweller](EntityComponents/minecraftComponent_dweller.md) |`minecraft:dweller` compels an entity to join and migrate between villages and other dwellings.|
 |[minecraft:economy_trade_table](EntityComponents/minecraftComponent_economy_trade_table.md) |`minecraft:economy_trade_table` defines the entity's ability to trade with players.|
@@ -108,7 +109,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:knockback_resistance](EntityComponents/minecraftComponent_knockback_resistance.md) |`minecraft:knockback_resistance` allows an entity to resist being knocked backwards by a melee attack.|
 |[minecraft:lava_movement](EntityComponents/minecraftComponent_lava_movement.md) |`minecraft:lava_movement` allows an entity a custom movement speed across lava blocks.|
 |[minecraft:leashable](EntityComponents/minecraftComponent_leashable.md) |`minecraft:leashable` allows this entity to be leashed and defines the conditions and events for the entity when leashed.|
-|[minecraft:lookat](EntityComponents/minecraftComponent_lookat.md) |`minecraft:lookat` defines the behavior when another entity looks at this entity.|
+|[minecraft:looked_at](EntityComponents/minecraftComponent_looked_at.md) |`minecraft:looked_at` defines the behavior when another entity looks at the owner entity.|
 |[minecraft:loot](EntityComponents/minecraftComponent_loot.md) |`minecraft:loot` sets the loot table for what items the entity drops upon death. |
 |[minecraft:managed_wandering_trader](EntityComponents/minecraftComponent_managed_wandering_trader.md) |`minecraft:managed_wandering_trader` manages the entity's ability to trade. |
 |[minecraft:mark_variant](EntityComponents/minecraftComponent_mark_variant.md) |`minecraft:mark_variant` sets the variant for the entity to be used. |
@@ -167,7 +168,8 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:timer](EntityComponents/minecraftComponent_timer.md) |`minecraft:timer` adds a timer after which an event will initiate.|
 |[minecraft:trade_table](EntityComponents/minecraftComponent_trade_table.md) |`minecraft:trade_table` defines this entity's ability to trade with players.|
 |[minecraft:trail](EntityComponents/minecraftComponent_trail.md) |`minecraft:trail` causes an entity to leave a trail of blocks as it moves about the world. |
-|[minecraft:transformation](EntityComponents/minecraftComponent_transformation.md) |`minecraft:transformation` defines an entity's transformation from the current definition into another.|
+|[minecraft:transformation](EntityComponents/minecraftComponent_transformation.md) |`minecraft:transformation` defines an entity's transformation from the current definition into another. |
+|[minecraft:transient](EntityComponents/minecraftComponent_transient.md) |An entity with the `minecraft:transient` component will NEVER persist, and will forever disappear when unloaded. |
 |[minecraft:trust](EntityComponents/minecraftComponent_trust.md) |`minecraft:trust` allows the entity to trust one or more players.|
 |[minecraft:trusting](EntityComponents/minecraftComponent_trusting.md) |`minecraft:trusting` defines the rules for an entity to trust players. |
 |[minecraft:type_family](EntityComponents/minecraftComponent_type_family.md) |`minecraft:type_family` defines the families the entity belongs to. |
