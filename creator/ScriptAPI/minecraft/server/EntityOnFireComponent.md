@@ -14,24 +14,29 @@ description: Contents of the @minecraft/server.EntityOnFireComponent class.
 When present on an entity, this entity is on fire.
 
 #### Examples
-##### ***setEntityOnFire.ts***
+
+##### ***setOnFire.ts***
+
 ```typescript
-import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
+import { system, EntityOnFireComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function setAblaze(entity: Entity) {
-    entity.setOnFire(20, true);
+function setOnFire(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
 
-    system.runTimeout(() => {
-        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
-        if (onfire) {
-            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
-        }
-        // This will extinguish the entity
-        entity.extinguishFire(true);
-    }, 30); // Run in 30 ticks or ~1.5 seconds
-    
+  skelly.setOnFire(20, true);
+
+  system.runTimeout(() => {
+    const onfire = skelly.getComponent(EntityComponentTypes.OnFire) as EntityOnFireComponent;
+    log(onfire?.onFireTicksRemaining + " fire ticks remaining.");
+
+    skelly.extinguishFire(true);
+    log("Never mind. Fire extinguished.");
+  }, 20);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setOnFire.ts) code sandbox.
 
 ## Properties
 
@@ -50,21 +55,26 @@ Type: *number*
 Type: *string*
 
 #### Examples
-##### ***setEntityOnFire.ts***
+
+##### ***setOnFire.ts***
+
 ```typescript
-import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
+import { system, EntityOnFireComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function setAblaze(entity: Entity) {
-    entity.setOnFire(20, true);
+function setOnFire(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
 
-    system.runTimeout(() => {
-        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
-        if (onfire) {
-            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
-        }
-        // This will extinguish the entity
-        entity.extinguishFire(true);
-    }, 30); // Run in 30 ticks or ~1.5 seconds
-    
+  skelly.setOnFire(20, true);
+
+  system.runTimeout(() => {
+    const onfire = skelly.getComponent(EntityComponentTypes.OnFire) as EntityOnFireComponent;
+    log(onfire?.onFireTicksRemaining + " fire ticks remaining.");
+
+    skelly.extinguishFire(true);
+    log("Never mind. Fire extinguished.");
+  }, 20);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setOnFire.ts) code sandbox.

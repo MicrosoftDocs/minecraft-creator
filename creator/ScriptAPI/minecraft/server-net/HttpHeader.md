@@ -11,7 +11,9 @@ description: Contents of the @minecraft/server-net.HttpHeader class.
 Represents an HTTP header - a key/value pair of meta-information about a request.
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -31,6 +33,8 @@ async function updateScore() {
     await http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.
 
 ## Properties
 
@@ -69,7 +73,9 @@ new HttpHeader(key: string, value: minecraftserveradmin.SecretString | string)
 **Returns** [*HttpHeader*](HttpHeader.md)
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -89,3 +95,5 @@ async function updateScore() {
     await http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.

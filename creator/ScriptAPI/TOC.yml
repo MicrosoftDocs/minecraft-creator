@@ -64,6 +64,8 @@
       href: minecraft/server-net/changelog.md
     - name: HttpRequestMethod
       href: minecraft/server-net/HttpRequestMethod.md
+    - name: PacketId
+      href: minecraft/server-net/PacketId.md
     - name: HttpClient
       href: minecraft/server-net/HttpClient.md
     - name: HttpHeader
@@ -72,6 +74,18 @@
       href: minecraft/server-net/HttpRequest.md
     - name: HttpResponse
       href: minecraft/server-net/HttpResponse.md
+    - name: NetworkBeforeEvents
+      href: minecraft/server-net/NetworkBeforeEvents.md
+    - name: PacketReceiveBeforeEventSignal
+      href: minecraft/server-net/PacketReceiveBeforeEventSignal.md
+    - name: PacketReceivedBeforeEvent
+      href: minecraft/server-net/PacketReceivedBeforeEvent.md
+    - name: PacketSendBeforeEvent
+      href: minecraft/server-net/PacketSendBeforeEvent.md
+    - name: PacketSendBeforeEventSignal
+      href: minecraft/server-net/PacketSendBeforeEventSignal.md
+    - name: PacketEventOptions
+      href: minecraft/server-net/PacketEventOptions.md
   - name: minecraft/server-ui
     items:
     - name: minecraft/server-ui

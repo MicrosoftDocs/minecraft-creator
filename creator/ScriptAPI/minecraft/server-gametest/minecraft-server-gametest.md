@@ -74,27 +74,30 @@ Notes:
 - This function can't be called in read-only mode.
 
 #### Examples
-##### ***simpleMobTest.ts***
+
+##### ***simpleMobGameTest.ts***
+
 ```typescript
-import * as gameTest from '@minecraft/server-gametest';
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-gameTest
-    .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
-        const attackerId = 'fox';
-        const victimId = 'chicken';
+function simpleMobGameTest(test: Test) {
+  const attackerId = MinecraftEntityTypes.Fox;
+  const victimId = MinecraftEntityTypes.Chicken;
 
-        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-        test.spawn(victimId, { x: 2, y: 2, z: 2 });
+  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+  test.spawn(victimId, { x: 2, y: 2, z: 2 });
 
-        test.assertEntityPresentInArea(victimId, true);
+  test.assertEntityPresentInArea(victimId, true);
 
-        test.succeedWhen(() => {
-            test.assertEntityPresentInArea(victimId, false);
-        });
-    })
-    .maxTicks(400)
-    .structureName('gametests:mediumglass');
+  test.succeedWhen(() => {
+    test.assertEntityPresentInArea(victimId, false);
+  });
+}
+register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).structureName("gametests:mediumglass");
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobGameTest.ts) code sandbox.
 
 ### **registerAsync**
 `
@@ -120,7 +123,9 @@ Notes:
 - This function can't be called in read-only mode.
 
 #### Examples
+
 ##### ***simpleMobAsyncTest.ts***
+
 ```typescript
 import * as gameTest from '@minecraft/server-gametest';
 
@@ -141,3 +146,5 @@ gameTest
     .maxTicks(400)
     .structureName('gametests:mediumglass');
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobAsyncTest.ts) code sandbox.

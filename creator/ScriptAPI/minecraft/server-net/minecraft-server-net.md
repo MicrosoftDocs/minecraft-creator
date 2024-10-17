@@ -29,14 +29,28 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
 
 ## Enumerations
 - [HttpRequestMethod](HttpRequestMethod.md)
+- [PacketId](PacketId.md)
 
 ## Classes
 - [HttpClient](HttpClient.md)
 - [HttpHeader](HttpHeader.md)
 - [HttpRequest](HttpRequest.md)
 - [HttpResponse](HttpResponse.md)
+- [NetworkBeforeEvents](NetworkBeforeEvents.md)
+- [PacketReceiveBeforeEventSignal](PacketReceiveBeforeEventSignal.md)
+- [PacketReceivedBeforeEvent](PacketReceivedBeforeEvent.md)
+- [PacketSendBeforeEvent](PacketSendBeforeEvent.md)
+- [PacketSendBeforeEventSignal](PacketSendBeforeEventSignal.md)
+
+## Interfaces
+- [PacketEventOptions](PacketEventOptions.md)
 
 ## Objects
+  
+### **beforeEvents**
+`static read-only beforeEvents: NetworkBeforeEvents;`
+
+Type: [*NetworkBeforeEvents*](NetworkBeforeEvents.md)
   
 ### **http**
 `static read-only http: HttpClient;`
