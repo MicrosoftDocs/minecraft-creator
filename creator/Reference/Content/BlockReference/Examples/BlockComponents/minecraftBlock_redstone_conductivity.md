@@ -10,9 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 `minecraft:redstone_conductivity` specifies whether a block has redstone properties. If the component is not provided, the default values are used. 
 
-Requires the Upcoming Creator Features experiment. If you use this component, make sure to use **1.21.30** format version for your block JSON.
-
-Experimental toggles required: Upcoming Creator Features
+Requires 1.21.30 format version and above. Experimental toggles required: Upcoming Creator Features (in format versions before **1.21.30**).
 
 ## Parameters
 

@@ -533,12 +533,12 @@ Here is a list of all supported Aux Values and their corresponding Block States.
 |minecraft:brown_mushroom_block:007|minecraft:brown_mushroom_block |7|minecraft:brown_mushroom_block ["huge_mushroom_bits" = 7]|
 |minecraft:brown_mushroom_block:008|minecraft:brown_mushroom_block |8|minecraft:brown_mushroom_block ["huge_mushroom_bits" = 8]|
 |minecraft:brown_mushroom_block:009|minecraft:brown_mushroom_block |9|minecraft:brown_mushroom_block ["huge_mushroom_bits" = 9]|
-|minecraft:brown_mushroom_block:010|minecraft:brown_mushroom_block |10|minecraft:brown_mushroom_block ["huge_mushroom_bits" = 10]|
+|minecraft:brown_mushroom_block:010|minecraft:brown_mushroom_block |10|minecraft:mushroom_stem ["huge_mushroom_bits" = 10]|
 |minecraft:brown_mushroom_block:011|minecraft:brown_mushroom_block |11|minecraft:brown_mushroom_block ["huge_mushroom_bits" = 11]|
 |minecraft:brown_mushroom_block:012|minecraft:brown_mushroom_block |12|minecraft:brown_mushroom_block ["huge_mushroom_bits" = 12]|
 |minecraft:brown_mushroom_block:013|minecraft:brown_mushroom_block |13|minecraft:brown_mushroom_block ["huge_mushroom_bits" = 13]|
 |minecraft:brown_mushroom_block:014|minecraft:brown_mushroom_block |14|minecraft:brown_mushroom_block ["huge_mushroom_bits" = 14]|
-|minecraft:brown_mushroom_block:015|minecraft:brown_mushroom_block |15|minecraft:brown_mushroom_block ["huge_mushroom_bits" = 15]|
+|minecraft:brown_mushroom_block:015|minecraft:brown_mushroom_block |15|minecraft:mushroom_stem ["huge_mushroom_bits" = 15]|
 |minecraft:bubble_column:000|minecraft:bubble_column |0|minecraft:bubble_column ["drag_down" = 0]|
 |minecraft:bubble_column:001|minecraft:bubble_column |1|minecraft:bubble_column ["drag_down" = 1]|
 |minecraft:cactus:000|minecraft:cactus |0|minecraft:cactus ["age" = 0]|

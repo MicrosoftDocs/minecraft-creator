@@ -1,5 +1,5 @@
 ---
-author: v-kimjeff
+author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:behavior.fire_at_target
 description: "A reference document detailing the 'behavior.behavior.fire_at_target' entity goal"
@@ -24,7 +24,7 @@ ms.service: minecraft-bedrock-edition
 | owner_offset| [0.000, 0.000, 0.000]| Vector [a, b, c]| Offset vector from the owner_anchor.|
 | post_shoot_delay| 0.200000| Decimal| Time in seconds between firing the projectile and ending the goal.|
 | pre_shoot_delay| 0.750000| Decimal| Time in seconds before firing the projectile.|
-| projectile_def| *not set*| String| Actor definition to use as projectile for the ranged attack. The actor must be a projectile.|
+| projectile_def| *not set*| String| Actor definition to use as projectile for the ranged attack. The actor must be a projectile. This field is required for the goal to be usable.|
 | ranged_fov| 90.000000| Decimal| Field of view (in degrees) when using sensing to detect a target for attack.|
 | target_anchor| 2| Integer| Entity anchor for projectile target.|
 | target_offset| [0.000, 0.000, 0.000]| Vector [a, b, c]| Offset vector from the target_anchor.|

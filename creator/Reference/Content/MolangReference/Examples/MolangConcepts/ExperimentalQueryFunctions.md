@@ -18,5 +18,6 @@ Welcome to the Experimental Entity Query functions.
 
 | Name| Description |
 |:-----------|:-----------|
+| query.client_max_render_distance | (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Returns the max render distance in chunks of the current client. Available on the Client (Resource Packs) only. |
 | query.client_memory_tier | (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Returns a number representing the client RAM memory tier, 0 = 'Undetermined', 1 = 'SuperLow', 2 = 'Low', 3 = 'Mid', 4 = 'High', or 5 = 'SuperHigh'. Available on the Client (Resource Packs) only. |
 | query.server_memory_tier | (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Returns a number representing the server RAM memory tier, 0 = 'Undetermined', 1 = 'SuperLow', 2 = 'Low', 3 = 'Mid', 4 = 'High', or 5 = 'SuperHigh'. Available on the server side (Behavior Packs) only. |

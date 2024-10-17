@@ -8,13 +8,13 @@ ms.service: minecraft-bedrock-edition
 
 # Features Documentation - minecraft:single_block_feature
 
-`minecraft:single_block_feature` places a single block in the world. The `may_place_on` and `may_replace` fields are allow lists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The block's internal survivability and placement rules can optionally be enforced with the `enforce_survivability_rules` and `enforce_placement_rules` fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures.
+`minecraft:single_block_feature` places a single block in the world. The `places_block` field supports a single block or a list of weighted blocks, where the weight defines how likely it is for that block to be selected. The `may_attach_to` and `may_replace` fields are allowlists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The `may_not_attach_to` field is a denylist that specifies what blocks can't be close to the placement location. The `randomize_rotation` field will randomize the block's cardinal orientation. The block's internal survivability and placement rules can optionally be enforced with the `enforce_survivability_rules` and `enforce_placement_rules` fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures.
 
-**Succeeds if**
-The block is successfully placed in the world.
+Succeeds if: The block is successfully placed in the world.
 
-**Fails if**
-The block fails to be placed.
+Fails if: The block fails to be placed.
+
+Example use: Placing a single pumpkin or carved pumpkin block where carved pumpkins are less likely to appear.
 
 ### Schema
 
@@ -85,20 +85,40 @@ The block fails to be placed.
 
 ```json
 {
-  "format_version": "1.13.0",
+  "format_version": "1.21.40",
   "minecraft:single_block_feature": {
     "description": {
       "identifier": "example:single_pumpkin_feature"
     },
-    "places_block": "minecraft:pumpkin",
-    "enforce_placement_rules": true,
-    "enforce_survivability_rules": true,
-    "may_place_on": [
-      "minecraft:grass"
+    "places_block": [
+      {
+        "block": "minecraft:pumpkin",
+        "weight": 5
+      },
+      {
+        "block": "minecraft:carved_pumpkin",
+        "weight": 1
+      }
     ],
-    "may_replace": [
-      "minecraft:air"
-    ]
+    "randomize_rotation": true,
+    "enforce_survivability_rules": true,
+    "enforce_placement_rules": true,
+    "may_attach_to": {
+      "auto_rotate": false,
+      "min_sides_must_attach": 1,
+      "south": [
+        "minecraft:grass",
+        "minecraft:dirt"
+      ]
+    },
+    "may_not_attach_to": {
+      "south": {
+        "name": "minecraft:dirt",
+        "states": {
+          "dirt_type": "coarse"
+        }
+      }
+    }
   }
 }
 ```
