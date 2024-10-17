@@ -11,31 +11,35 @@ description: Contents of the @minecraft/server.BlockPermutation class.
 Contains the combination of type [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../../minecraft/server/Block.md)).
 
 #### Examples
-##### ***createTranslatedSign.ts***
+
+##### ***addTranslatedSign.ts***
+
 ```typescript
-// A function the creates a sign at the specified location with the specified text
-import { DimensionLocation, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
-import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+import { world, BlockPermutation, BlockSignComponent, BlockComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
 
-function createSignAt(location: DimensionLocation) {
-    const signBlock = location.dimension.getBlock(location);
+function addTranslatedSign(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    if (!signBlock) {
-        console.warn('Could not find a block at specified location.');
-        return;
-    }
+  const dim = players[0].dimension;
 
-    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
-    signBlock.setPermutation(signPerm); // Update block to be a sign
+  const signBlock = dim.getBlock(targetLocation);
 
-    // Update the sign block's text
-    // with "Steve's Head"
-    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
-    if (signComponent) {
-        signComponent.setText({ translate: 'item.skull.player.name', with: ['Steve'] });
-    }
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
+
+  signComponent?.setText({ translate: "item.skull.player.name", with: [players[0].name] });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/addTranslatedSign.ts) code sandbox.
 
 ## Properties
 
@@ -115,18 +119,26 @@ Checks to see if the permutation has a specific tag.
 **Returns** *boolean* - Returns `true` if the permutation has the tag, else `false`.
 
 #### Examples
-##### ***check_block_tags.js***
+
+##### ***checkBlockTags.ts***
+
 ```typescript
-import { world } from "@minecraft/server";
+import { DimensionLocation } from "@minecraft/server";
 
-// Fetch the block
-const block = world.getDimension("overworld").getBlock({ x: 1, y: 2, z: 3 });
-const blockPerm = block.getPermutation();
+function checkBlockTags(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  // Fetch the block
+  const block = targetLocation.dimension.getBlock(targetLocation);
 
-console.log(`Block is dirt: ${blockPerm.hasTag("dirt")}`);
-console.log(`Block is wood: ${blockPerm.hasTag("wood")}`);
-console.log(`Block is stone: ${blockPerm.hasTag("stone")}`);
+  // check that the block is loaded
+  if (block) {
+    log(`Block is dirt: ${block.hasTag("dirt")}`);
+    log(`Block is wood: ${block.hasTag("wood")}`);
+    log(`Block is stone: ${block.hasTag("stone")}`);
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/checkBlockTags.ts) code sandbox.
 
 ### **matches**
 `
@@ -182,12 +194,16 @@ Notes:
 - This function can throw errors.
 
 #### Examples
-##### ***addBlockColorCube.ts***
-```typescript
-import { DimensionLocation, BlockPermutation } from '@minecraft/server';
-import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
 
-const allWoolBlocks: string[] = [
+##### ***addBlockColorCube.ts***
+
+```typescript
+import { BlockPermutation, DimensionLocation } from "@minecraft/server";
+import { Vector3Utils } from "@minecraft/math";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
+
+function addBlockColorCube(targetLocation: DimensionLocation) {
+  const allWoolBlocks: string[] = [
     MinecraftBlockTypes.WhiteWool,
     MinecraftBlockTypes.OrangeWool,
     MinecraftBlockTypes.MagentaWool,
@@ -204,48 +220,54 @@ const allWoolBlocks: string[] = [
     MinecraftBlockTypes.GreenWool,
     MinecraftBlockTypes.RedWool,
     MinecraftBlockTypes.BlackWool,
-];
+  ];
 
-const cubeDim = 7;
+  const cubeDim = 7;
 
-function placeRainbowCube(location: DimensionLocation) {
-    let colorIndex = 0;
-    for (let x = 0; x <= cubeDim; x++) {
-        for (let y = 0; y <= cubeDim; y++) {
-            for (let z = 0; z <= cubeDim; z++) {
-                colorIndex++;
-                location.dimension
-                    .getBlock({ x: location.x + x, y: location.y + y, z: location.z + z })
-                    ?.setPermutation(BlockPermutation.resolve(allWoolBlocks[colorIndex % allWoolBlocks.length]));
-            }
-        }
+  let colorIndex = 0;
+
+  for (let x = 0; x <= cubeDim; x++) {
+    for (let y = 0; y <= cubeDim; y++) {
+      for (let z = 0; z <= cubeDim; z++) {
+        colorIndex++;
+        targetLocation.dimension
+          .getBlock(Vector3Utils.add(targetLocation, { x, y, z }))
+          ?.setPermutation(BlockPermutation.resolve(allWoolBlocks[colorIndex % allWoolBlocks.length]));
+      }
     }
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/addBlockColorCube.ts) code sandbox.
 
 #### Examples
-##### ***createTranslatedSign.ts***
+
+##### ***addTranslatedSign.ts***
+
 ```typescript
-// A function the creates a sign at the specified location with the specified text
-import { DimensionLocation, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
-import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+import { world, BlockPermutation, BlockSignComponent, BlockComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
 
-function createSignAt(location: DimensionLocation) {
-    const signBlock = location.dimension.getBlock(location);
+function addTranslatedSign(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    if (!signBlock) {
-        console.warn('Could not find a block at specified location.');
-        return;
-    }
+  const dim = players[0].dimension;
 
-    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
-    signBlock.setPermutation(signPerm); // Update block to be a sign
+  const signBlock = dim.getBlock(targetLocation);
 
-    // Update the sign block's text
-    // with "Steve's Head"
-    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
-    if (signComponent) {
-        signComponent.setText({ translate: 'item.skull.player.name', with: ['Steve'] });
-    }
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
+
+  signComponent?.setText({ translate: "item.skull.player.name", with: [players[0].name] });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/addTranslatedSign.ts) code sandbox.

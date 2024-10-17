@@ -31,7 +31,3 @@ Motion controller input.
 `Touch = "Touch"`
 
 Touch input.
-### **Undetermined**
-`Undetermined = "Undetermined"`
-
-Input type not detected.

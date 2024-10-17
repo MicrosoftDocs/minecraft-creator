@@ -11,7 +11,9 @@ description: Contents of the @minecraft/server-net.HttpRequest class.
 Main object for structuring a request.
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -31,6 +33,8 @@ async function updateScore() {
     await http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.
 
 ## Properties
 
@@ -177,7 +181,9 @@ Notes:
 - This function can't be called in read-only mode.
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -197,3 +203,5 @@ async function updateScore() {
     await http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.

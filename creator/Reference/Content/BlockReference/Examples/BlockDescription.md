@@ -30,7 +30,7 @@ The block `"description"` lives inside the `"minecraft:block"` section of a cust
 
 ```json
 {
- "format_version": "1.21.20",
+ "format_version": "1.21.40",
  "minecraft:block": {
   "description": {
    "identifier": "design:lavenderstone"

@@ -25,7 +25,7 @@ Type: [*InputMode*](InputMode.md)
 
 Notes:
   - This property can throw errors when used.
-    - Throws [*InvalidEntityError*](InvalidEntityError.md)
+    - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **touchOnlyAffectsHotbar**
 `read-only touchOnlyAffectsHotbar: boolean;`

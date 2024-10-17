@@ -245,6 +245,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cracked_stone_bricks |
 | minecraft:crafter |
 | minecraft:crafting_table |
+| minecraft:creeper_head |
 | minecraft:crimson_button |
 | minecraft:crimson_door |
 | minecraft:crimson_double_slab |
@@ -371,6 +372,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:double_block_slab3 |
 | minecraft:double_block_slab4 |
 | minecraft:dragon_egg |
+| minecraft:dragon_head |
 | minecraft:dried_kelp_block |
 | minecraft:dripstone_block |
 | minecraft:dropper |
@@ -783,6 +785,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mud_brick_wall |
 | minecraft:mud_bricks |
 | minecraft:muddy_mangrove_roots |
+| minecraft:mushroom_stem |
 | minecraft:mycelium |
 | minecraft:nether_brick |
 | minecraft:nether_brick_double_slab |
@@ -841,6 +844,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:petrified_oak_double_slab |
 | minecraft:peony |
 | minecraft:petrified_oak_slab |
+| minecraft:piglin_head |
 | minecraft:pink_candle |
 | minecraft:pink_candle_cake |
 | minecraft:pink_carpet |
@@ -857,6 +861,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:piston_arm_collision |
 | minecraft:pitcher_crop |
 | minecraft:pitcher_plant |
+| minecraft:player_head |
 | minecraft:podzol |
 | minecraft:pointed_dripstone |
 | minecraft:polished_andesite |
@@ -991,7 +996,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:short_grass |
 | minecraft:shroomlight |
 | minecraft:silver_glazed_terracotta |
-| minecraft:skull |
+| minecraft:skeleton_skull |
 | minecraft:slime |
 | minecraft:small_amethyst_bud |
 | minecraft:small_dripleaf_block |
@@ -1214,6 +1219,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:white_terracotta |
 | minecraft:white_wool |
 | minecraft:wither_rose |
+| minecraft:wither_skeleton_skull |
 | minecraft:wooden_button |
 | minecraft:wooden_door |
 | minecraft:wooden_pressure_plate |
@@ -1228,3 +1234,4 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:yellow_stained_glass_pane |
 | minecraft:yellow_terracotta |
 | minecraft:yellow_wool |
+| minecraft:zombie_head |
