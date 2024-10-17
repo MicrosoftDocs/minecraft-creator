@@ -86,6 +86,7 @@ description: Changelog of the `@minecraft/server` module
 - Changed function *[`getComponent`](Entity.md#getcomponent)*
   - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
+- Added function *[`lookAt`](Entity.md#lookat)*
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*

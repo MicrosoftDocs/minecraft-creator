@@ -1,5 +1,5 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Entity Documentation - minecraft:damage_sensor
 description: "A reference document detailing the 'damage_sensor' entity component"
@@ -23,10 +23,10 @@ ms.service: minecraft-bedrock-edition
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |cause| none| String|  Type of damage that triggers an event. |
-|damage_modifier| 0.0| Decimal|  A modifier that adds to/removes the base damage from the damage cause. Does not reduce damage to less than 0. |
-|damage_multiplier| 1.0| Decimal| A multiplier that modifies the base damage from the damage cause. If deals_damage is true the multiplier can only reduce the damage the entity will take to a minimum of 1. |
-|deals_damage| true| Boolean|  If true the damage dealt to the entity will remove health, if set to false the entity will ignore the damage. |
-| on_damage|*not set* | JSON Object| Specifies filters for entity definitions and events. |
+|damage_modifier| 0.00| Decimal| A modifier that adds/removes to the base damage received from the specified damage cause. It does not reduce damage to less than 0. |
+|damage_multiplier| 1.00| Decimal| A multiplier that modifies the base damage received from the specified damage cause. If `"deals_damage"` is true, the multiplier can only reduce the damage the entity will take to a minimum of 1. |
+|deals_damage| true| Boolean| If true, the damage dealt to the entity will remove health, if false the entity will ignore the damage. Defines how received damage affects the entity: <br>- "yes", received damage is applied to the entity. <br>- "no", received damage is not applied to the entity. <br>- "no_but_side_effects_apply", received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on.|
+|on_damage|*not set* | JSON Object| Defines which entities the trigger applies to, and which, if any, event to emit when damaged. |
 |on_damage_sound_event|*not set* | String|  Defines what sound to play, if any, when the on_damage filters are met. |
 
 ### on_damage

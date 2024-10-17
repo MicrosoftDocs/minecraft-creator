@@ -138,14 +138,6 @@ Notes:
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md)
 
-#### Examples
-##### ***testIfButtonNotPressed.js***
-```typescript
-test.assertBlockState(buttonPos, (block) => {
-  return block.permutation.getProperty("button_pressed_bit") == 0;
-});
-```
-
 ### **assertCanReachLocation**
 `
 assertCanReachLocation(mob: minecraftserver.Entity, blockLocation: minecraftserver.Vector3, canReach?: boolean): void
@@ -234,12 +226,6 @@ Notes:
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md)
 
-#### Examples
-##### ***horseArmorTest.js***
-```typescript
-test.assertEntityHasArmor("minecraft:horse", armorSlotTorso, "diamond_horse_armor", 0, horseLocation, true);
-```
-
 ### **assertEntityHasComponent**
 `
 assertEntityHasComponent(entityTypeIdentifier: string, componentIdentifier: string, blockLocation: minecraftserver.Vector3, hasComponent?: boolean): void
@@ -264,12 +250,6 @@ Tests that an entity has a particular component. If not, an exception is thrown.
 Notes:
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md)
-
-#### Examples
-##### ***sheepShearedTest.js***
-```typescript
-test.assertEntityHasComponent("minecraft:sheep", "minecraft:is_sheared", entityLoc, false);
-```
 
 ### **assertEntityInstancePresent**
 `
@@ -313,7 +293,9 @@ Notes:
   - Throws [*GameTestError*](GameTestError.md)
 
 #### Examples
+
 ##### ***simpleMobTest.ts***
+
 ```typescript
 import * as gameTest from '@minecraft/server-gametest';
 
@@ -334,6 +316,8 @@ gameTest
     .maxTicks(400)
     .structureName('gametests:mediumglass');
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobTest.ts) code sandbox.
 
 ### **assertEntityPresent**
 `
@@ -380,7 +364,9 @@ Notes:
   - Throws [*GameTestError*](GameTestError.md)
 
 #### Examples
+
 ##### ***simpleMobTest.ts***
+
 ```typescript
 import * as gameTest from '@minecraft/server-gametest';
 
@@ -401,6 +387,32 @@ gameTest
     .maxTicks(400)
     .structureName('gametests:mediumglass');
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobTest.ts) code sandbox.
+
+##### ***simpleMobGameTest.ts***
+
+```typescript
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function simpleMobGameTest(test: Test) {
+  const attackerId = MinecraftEntityTypes.Fox;
+  const victimId = MinecraftEntityTypes.Chicken;
+
+  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+  test.spawn(victimId, { x: 2, y: 2, z: 2 });
+
+  test.assertEntityPresentInArea(victimId, true);
+
+  test.succeedWhen(() => {
+    test.assertEntityPresentInArea(victimId, false);
+  });
+}
+register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).structureName("gametests:mediumglass");
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobGameTest.ts) code sandbox.
 
 ### **assertEntityState**
 `
@@ -423,16 +435,6 @@ Tests that an entity (e.g., a skeleton) at the specified location has a particul
 Notes:
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md)
-
-#### Examples
-##### ***villagerEffectTest.js***
-```typescript
-test.assertEntityState(
-  villagerPos,
-  "minecraft:villager_v2",
-  (entity) => entity.getEffect(MinecraftEffectTypes.Regeneration).duration > 120
-); // At least 6 seconds remaining in the villagers' effect
-```
 
 ### **assertEntityTouching**
 `
@@ -499,12 +501,6 @@ Tests that items of a particular type and count are present within an area. If n
 Notes:
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md)
-
-#### Examples
-##### ***findFeathers.js***
-```typescript
-test.assertItemEntityCountIs(Items.feather, expectedFeatherLoc, 0, 1);
-```
 
 ### **assertItemEntityPresent**
 `
@@ -957,6 +953,32 @@ Notes:
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md)
 
+#### Examples
+
+##### ***minibiomes.ts***
+
+```typescript
+import { EntityComponentTypes } from "@minecraft/server";
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftBlockTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function minibiomes(test: Test) {
+  const minecart = test.spawn(MinecraftEntityTypes.Minecart, { x: 9, y: 7, z: 7 });
+  const pig = test.spawn(MinecraftEntityTypes.Pig, { x: 9, y: 7, z: 7 });
+
+  test.setBlockType(MinecraftBlockTypes.Cobblestone, { x: 10, y: 7, z: 7 });
+
+  const minecartRideableComp = minecart.getComponent(EntityComponentTypes.Rideable);
+
+  minecartRideableComp?.addRider(pig);
+
+  test.succeedWhenEntityPresent(MinecraftEntityTypes.Pig, { x: 8, y: 3, z: 1 }, true);
+}
+register("ChallengeTests", "minibiomes", minibiomes).structureName("gametests:minibiomes").maxTicks(160);
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/minibiomes.ts) code sandbox.
+
 ### **setFluidContainer**
 `
 setFluidContainer(location: minecraftserver.Vector3, type: minecraftserver.FluidType): void
@@ -1018,7 +1040,9 @@ Notes:
   - Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
 
 #### Examples
+
 ##### ***simpleMobTest.ts***
+
 ```typescript
 import * as gameTest from '@minecraft/server-gametest';
 
@@ -1039,11 +1063,75 @@ gameTest
     .maxTicks(400)
     .structureName('gametests:mediumglass');
 ```
-##### ***spawnAdultPig.js***
-```typescript
-test.spawn("minecraft:pig<minecraft:ageable_grow_up>", { x: 1, y: 2, z: 1 });
 
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobTest.ts) code sandbox.
+
+##### ***simpleMobGameTest.ts***
+
+```typescript
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function simpleMobGameTest(test: Test) {
+  const attackerId = MinecraftEntityTypes.Fox;
+  const victimId = MinecraftEntityTypes.Chicken;
+
+  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+  test.spawn(victimId, { x: 2, y: 2, z: 2 });
+
+  test.assertEntityPresentInArea(victimId, true);
+
+  test.succeedWhen(() => {
+    test.assertEntityPresentInArea(victimId, false);
+  });
+}
+register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).structureName("gametests:mediumglass");
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobGameTest.ts) code sandbox.
+
+##### ***phantomsShouldFlyFromCats.ts***
+
+```typescript
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function phantomsShouldFlyFromCats(test: Test) {
+  test.spawn(MinecraftEntityTypes.Cat, { x: 4, y: 3, z: 3 });
+  test.spawn(MinecraftEntityTypes.Phantom, { x: 4, y: 3, z: 3 });
+
+  test.succeedWhenEntityPresent(MinecraftEntityTypes.Phantom, { x: 4, y: 6, z: 3 }, true);
+}
+
+register("MobBehaviorTests", "phantoms_should_fly_from_cats", phantomsShouldFlyFromCats)
+  .structureName("gametests:glass_cells");
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/phantomsShouldFlyFromCats.ts) code sandbox.
+
+##### ***minibiomes.ts***
+
+```typescript
+import { EntityComponentTypes } from "@minecraft/server";
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftBlockTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function minibiomes(test: Test) {
+  const minecart = test.spawn(MinecraftEntityTypes.Minecart, { x: 9, y: 7, z: 7 });
+  const pig = test.spawn(MinecraftEntityTypes.Pig, { x: 9, y: 7, z: 7 });
+
+  test.setBlockType(MinecraftBlockTypes.Cobblestone, { x: 10, y: 7, z: 7 });
+
+  const minecartRideableComp = minecart.getComponent(EntityComponentTypes.Rideable);
+
+  minecartRideableComp?.addRider(pig);
+
+  test.succeedWhenEntityPresent(MinecraftEntityTypes.Pig, { x: 8, y: 3, z: 1 }, true);
+}
+register("ChallengeTests", "minibiomes", minibiomes).structureName("gametests:minibiomes").maxTicks(160);
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/minibiomes.ts) code sandbox.
 
 ### **spawnAtLocation**
 `
@@ -1064,12 +1152,6 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
-
-#### Examples
-##### ***spawnAdultPig.js***
-```typescript
-test.spawn("minecraft:pig<minecraft:ageable_grow_up>", { x: 1.5, y: 2, z: 1.5 });
-```
 
 ### **spawnItem**
 `
@@ -1092,16 +1174,6 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/server.GameTestError*](../../minecraft/server/GameTestError.md)
-
-#### Examples
-##### ***spawnEmeralds.js***
-```typescript
-const oneEmerald = new ItemStack(MinecraftItemTypes.Emerald, 1, 0);
-const fiveEmeralds = new ItemStack(MinecraftItemTypes.Emerald, 5, 0);
-
-test.spawnItem(oneEmerald, { x: 3.5, y: 3, z: 1.5 });
-test.spawnItem(fiveEmeralds, { x: 1.5, y: 3, z: 1.5 });
-```
 
 ### **spawnSimulatedPlayer**
 `
@@ -1188,12 +1260,6 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*GameTestError*](GameTestError.md)
-
-#### Examples
-##### ***spreadFromFaceTowardDirection.js***
-```typescript
-test.spreadFromFaceTowardDirection({ x: 1, y: 2, z: 1 }, Direction.south, Direction.down);
-```
 
 ### **startSequence**
 `
@@ -1286,27 +1352,30 @@ Notes:
 - This function can throw errors.
 
 #### Examples
-##### ***simpleMobTest.ts***
+
+##### ***simpleMobGameTest.ts***
+
 ```typescript
-import * as gameTest from '@minecraft/server-gametest';
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-gameTest
-    .register('StarterTests', 'simpleMobTest', (test: gameTest.Test) => {
-        const attackerId = 'fox';
-        const victimId = 'chicken';
+function simpleMobGameTest(test: Test) {
+  const attackerId = MinecraftEntityTypes.Fox;
+  const victimId = MinecraftEntityTypes.Chicken;
 
-        test.spawn(attackerId, { x: 5, y: 2, z: 5 });
-        test.spawn(victimId, { x: 2, y: 2, z: 2 });
+  test.spawn(attackerId, { x: 5, y: 2, z: 5 });
+  test.spawn(victimId, { x: 2, y: 2, z: 2 });
 
-        test.assertEntityPresentInArea(victimId, true);
+  test.assertEntityPresentInArea(victimId, true);
 
-        test.succeedWhen(() => {
-            test.assertEntityPresentInArea(victimId, false);
-        });
-    })
-    .maxTicks(400)
-    .structureName('gametests:mediumglass');
+  test.succeedWhen(() => {
+    test.assertEntityPresentInArea(victimId, false);
+  });
+}
+register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).structureName("gametests:mediumglass");
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobGameTest.ts) code sandbox.
 
 ### **succeedWhenBlockPresent**
 `
@@ -1377,6 +1446,51 @@ Depending on the value of isPresent, tests for the presence of an entity on ever
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+#### Examples
+
+##### ***phantomsShouldFlyFromCats.ts***
+
+```typescript
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function phantomsShouldFlyFromCats(test: Test) {
+  test.spawn(MinecraftEntityTypes.Cat, { x: 4, y: 3, z: 3 });
+  test.spawn(MinecraftEntityTypes.Phantom, { x: 4, y: 3, z: 3 });
+
+  test.succeedWhenEntityPresent(MinecraftEntityTypes.Phantom, { x: 4, y: 6, z: 3 }, true);
+}
+
+register("MobBehaviorTests", "phantoms_should_fly_from_cats", phantomsShouldFlyFromCats)
+  .structureName("gametests:glass_cells");
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/phantomsShouldFlyFromCats.ts) code sandbox.
+
+##### ***minibiomes.ts***
+
+```typescript
+import { EntityComponentTypes } from "@minecraft/server";
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftBlockTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function minibiomes(test: Test) {
+  const minecart = test.spawn(MinecraftEntityTypes.Minecart, { x: 9, y: 7, z: 7 });
+  const pig = test.spawn(MinecraftEntityTypes.Pig, { x: 9, y: 7, z: 7 });
+
+  test.setBlockType(MinecraftBlockTypes.Cobblestone, { x: 10, y: 7, z: 7 });
+
+  const minecartRideableComp = minecart.getComponent(EntityComponentTypes.Rideable);
+
+  minecartRideableComp?.addRider(pig);
+
+  test.succeedWhenEntityPresent(MinecraftEntityTypes.Pig, { x: 8, y: 3, z: 1 }, true);
+}
+register("ChallengeTests", "minibiomes", minibiomes).structureName("gametests:minibiomes").maxTicks(160);
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/minibiomes.ts) code sandbox.
 
 ### **triggerInternalBlockEvent**
 `

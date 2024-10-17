@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Entity Documentation - minecraft:behavior.move_towards_home_restriction
 
-`minecraft:behavior.move_towards_home_restriction` allows mobs with the home component to move toward their pre-defined area that the mob should be restricted to.
+`minecraft:behavior.move_towards_home_restriction` aallows entities with a `"minecraft:home"` component to move towards their home position. If `"restriction_radius"` is set, entities will be able to run this behavior only if outside of it.
 
 ## Parameter
 

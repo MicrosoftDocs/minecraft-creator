@@ -191,6 +191,9 @@ Type: *string*
 - [hasTag](#hastag)
 - [isValid](#isvalid)
 - [kill](#kill)
+::: moniker range="=minecraft-bedrock-experimental"
+- [lookAt](#lookat)
+::: moniker-end
 - [matches](#matches)
 - [playAnimation](#playanimation)
 - [remove](#remove)
@@ -232,49 +235,58 @@ Notes:
 - This function can throw errors.
 
 #### Examples
-##### ***poisonVillager.ts***
+
+##### ***spawnPoisonedVillager.ts***
+
 ```typescript
-// Spawns a villager and gives it the poison effect
-import {
-    DimensionLocation,
-} from '@minecraft/server';
-import { MinecraftEffectTypes } from '@minecraft/vanilla-data';
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
 
-function spawnPoisonedVillager(location: DimensionLocation) {
-    const villagerType = 'minecraft:villager_v2<minecraft:ageable_grow_up>';
-    const villager = location.dimension.spawnEntity(villagerType, location);
-    const duration = 20;
+function spawnPoisonedVillager(
+    targetLocation: DimensionLocation
+) {
+  const villagerType = "minecraft:villager_v2<minecraft:ageable_grow_up>";
+  const villager = targetLocation.dimension.spawnEntity(villagerType, targetLocation);
+  const duration = 20;
 
-    villager.addEffect(MinecraftEffectTypes.Poison, duration, { amplifier: 1 });
+  villager.addEffect(MinecraftEffectTypes.Poison, duration, { amplifier: 1 });
 }
-
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/spawnPoisonedVillager.ts) code sandbox.
+
 ##### ***quickFoxLazyDog.ts***
+
 ```typescript
-// Spawns a fox over a dog
-import { DimensionLocation } from '@minecraft/server';
-import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
 
-function spawnAdultHorse(location: DimensionLocation) {
-    // Create fox (our quick brown fox)
-    const fox = location.dimension.spawnEntity(MinecraftEntityTypes.Fox, {
-        x: location.x,
-        y: location.y + 2,
-        z: location.z,
-    });
+function quickFoxLazyDog(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const fox = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Fox, {
+    x: targetLocation.x + 1,
+    y: targetLocation.y + 2,
+    z: targetLocation.z + 3,
+  });
 
-    fox.addEffect('speed', 10, {
-        amplifier: 2,
-    });
+  fox.addEffect(MinecraftEffectTypes.Speed, 10, {
+    amplifier: 2,
+  });
+  log("Created a fox.");
 
-    // Create wolf (our lazy dog)
-    const wolf = location.dimension.spawnEntity(MinecraftEntityTypes.Wolf, location);
-    wolf.addEffect('slowness', 10, {
-        amplifier: 2,
-    });
-    wolf.isSneaking = true;
+  const wolf = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Wolf, {
+    x: targetLocation.x + 4,
+    y: targetLocation.y + 2,
+    z: targetLocation.z + 3,
+  });
+  wolf.addEffect(MinecraftEffectTypes.Slowness, 10, {
+    amplifier: 2,
+  });
+  wolf.isSneaking = true;
+  log("Created a sneaking wolf.", 1);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/quickFoxLazyDog.ts) code sandbox.
 
 ### **addTag**
 `
@@ -293,6 +305,35 @@ Adds a specified tag to an entity.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+#### Examples
+
+##### ***tagsQuery.ts***
+
+```typescript
+import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
+
+function tagsQuery(targetLocation: DimensionLocation) {
+  const mobs = ["creeper", "skeleton", "sheep"];
+
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    const mobTypeId = mobs[i % mobs.length];
+    const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
+    entity.addTag("mobparty." + mobTypeId);
+  }
+
+  const eqo: EntityQueryOptions = {
+    tags: ["mobparty.skeleton"],
+  };
+
+  for (const entity of targetLocation.dimension.getEntities(eqo)) {
+    entity.kill();
+  }
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/tagsQuery.ts) code sandbox.
 
 ### **applyDamage**
 `
@@ -316,28 +357,31 @@ Notes:
 - This function can throw errors.
 
 #### Examples
+
 ##### ***applyDamageThenHeal.ts***
+
 ```typescript
-// A function that applies damage and then heals the entity
-import { Entity, EntityComponentTypes, system, world } from '@minecraft/server';
+import { system, EntityHealthComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function applyDamageAndHeal(entity: Entity) {
-    entity.applyDamage(19); // Many mobs have max damage of 20 so this is a near-death mob
+function applyDamageThenHeal(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
 
-    system.runTimeout(() => {
-        const health = entity.getComponent(EntityComponentTypes.Health);
-        if (health) {
-            world.sendMessage(`Entity health before heal: ${health.currentValue}`);
+  skelly.applyDamage(19); // skeletons have max damage of 20 so this is a near-death skeleton
 
-            health.resetToMaxValue();
-
-            world.sendMessage(`Entity after before heal: ${health.currentValue}`);
-        } else {
-            console.warn('Entity does not have health component');
-        }
-    }, 40); // Run in a few seconds (40 ticks)
+  system.runTimeout(() => {
+    const health = skelly.getComponent(EntityComponentTypes.Health) as EntityHealthComponent;
+    log("Skeleton health before heal: " + health?.currentValue);
+    health?.resetToMaxValue();
+    log("Skeleton health after heal: " + health?.currentValue);
+  }, 20);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/applyDamageThenHeal.ts) code sandbox.
 
 ### **applyImpulse**
 `
@@ -356,20 +400,24 @@ Notes:
 - This function can throw errors.
 
 #### Examples
-##### ***yeetEntity.ts***
+
+##### ***applyImpulse.ts***
+
 ```typescript
-// A function that throws entities up in the air
-import { Entity } from '@minecraft/server';
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function yeetEntity(entity: Entity) {
+function applyImpulse(targetLocation: DimensionLocation) {
+  const zombie = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Zombie, targetLocation);
 
-    // Zero out the entity's velocity before applying impulse
-    entity.clearVelocity();
+  zombie.clearVelocity();
 
-    // throw the zombie up in the air
-    entity.applyImpulse({ x: 0, y: 15, z: 0 });
+  // throw the zombie up in the air
+  zombie.applyImpulse({ x: 0, y: 0.5, z: 0 });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/applyImpulse.ts) code sandbox.
 
 ### **applyKnockback**
 `
@@ -397,27 +445,31 @@ Notes:
 - This function can throw errors.
 
 #### Examples
+
 ##### ***bounceSkeletons.ts***
+
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
+import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
 
-function mobParty(targetLocation: DimensionLocation) {
-    const mobs = ['creeper', 'skeleton', 'sheep'];
+function bounceSkeletons(targetLocation: DimensionLocation) {
+  const mobs = ["creeper", "skeleton", "sheep"];
 
-    // create some sample mob data
-    for (let i = 0; i < 10; i++) {
-        targetLocation.dimension.spawnEntity(mobs[i % mobs.length], targetLocation);
-    }
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    targetLocation.dimension.spawnEntity(mobs[i % mobs.length], targetLocation);
+  }
 
-    const eqo: EntityQueryOptions = {
-        type: 'skeleton',
-    };
+  const eqo: EntityQueryOptions = {
+    type: "skeleton",
+  };
 
-    for (const entity of targetLocation.dimension.getEntities(eqo)) {
-        entity.applyKnockback(0, 0, 0, 1);
-    }
+  for (const entity of targetLocation.dimension.getEntities(eqo)) {
+    entity.applyKnockback(0, 0, 0, 1);
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/bounceSkeletons.ts) code sandbox.
 
 ### **clearDynamicProperties**
 `
@@ -441,20 +493,24 @@ Notes:
 - This function can throw errors.
 
 #### Examples
-##### ***yeetEntity.ts***
+
+##### ***applyImpulse.ts***
+
 ```typescript
-// A function that throws entities up in the air
-import { Entity } from '@minecraft/server';
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function yeetEntity(entity: Entity) {
+function applyImpulse(targetLocation: DimensionLocation) {
+  const zombie = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Zombie, targetLocation);
 
-    // Zero out the entity's velocity before applying impulse
-    entity.clearVelocity();
+  zombie.clearVelocity();
 
-    // throw the zombie up in the air
-    entity.applyImpulse({ x: 0, y: 15, z: 0 });
+  // throw the zombie up in the air
+  zombie.applyImpulse({ x: 0, y: 0.5, z: 0 });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/applyImpulse.ts) code sandbox.
 
 ### **extinguishFire**
 `
@@ -475,24 +531,29 @@ Notes:
 - This function can throw errors.
 
 #### Examples
-##### ***setEntityOnFire.ts***
+
+##### ***setOnFire.ts***
+
 ```typescript
-import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
+import { system, EntityOnFireComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function setAblaze(entity: Entity) {
-    entity.setOnFire(20, true);
+function setOnFire(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
 
-    system.runTimeout(() => {
-        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
-        if (onfire) {
-            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
-        }
-        // This will extinguish the entity
-        entity.extinguishFire(true);
-    }, 30); // Run in 30 ticks or ~1.5 seconds
-    
+  skelly.setOnFire(20, true);
+
+  system.runTimeout(() => {
+    const onfire = skelly.getComponent(EntityComponentTypes.OnFire) as EntityOnFireComponent;
+    log(onfire?.onFireTicksRemaining + " fire ticks remaining.");
+
+    skelly.extinguishFire(true);
+    log("Never mind. Fire extinguished.");
+  }, 20);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setOnFire.ts) code sandbox.
 
 ### **getBlockFromViewDirection**
 `
@@ -688,22 +749,28 @@ Notes:
 - This function can throw errors.
 
 #### Examples
+
 ##### ***getFireworkVelocity.ts***
+
 ```typescript
-// A function that spawns fireworks and logs their velocity after 5 ticks
-import { DimensionLocation, system, world } from '@minecraft/server';
-import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
+import { system, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function spawnFireworks(location: DimensionLocation) {
-    const fireworkRocket = location.dimension.spawnEntity(MinecraftEntityTypes.FireworksRocket, location);
+function getFireworkVelocity(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  const fireworkRocket = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.FireworksRocket, targetLocation);
 
-    system.runTimeout(() => {
-        const velocity = fireworkRocket.getVelocity();
+  system.runTimeout(() => {
+    const velocity = fireworkRocket.getVelocity();
 
-        world.sendMessage(`Velocity of firework is: ${velocity.x}, ${velocity.y}, ${velocity.z}`);
-    }, 5);
+    log("Velocity of firework is: (x: " + velocity.x + ", y:" + velocity.y + ", z:" + velocity.z + ")");
+  }, 5);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/getFireworkVelocity.ts) code sandbox.
 
 ### **getViewDirection**
 `
@@ -771,29 +838,54 @@ Notes:
 - This function can throw errors.
 
 #### Examples
+
 ##### ***tagsQuery.ts***
+
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
+import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
 
-function mobParty(targetLocation: DimensionLocation) {
-    const mobs = ['creeper', 'skeleton', 'sheep'];
+function tagsQuery(targetLocation: DimensionLocation) {
+  const mobs = ["creeper", "skeleton", "sheep"];
 
-    // create some sample mob data
-    for (let i = 0; i < 10; i++) {
-        const mobTypeId = mobs[i % mobs.length];
-        const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
-        entity.addTag('mobparty.' + mobTypeId);
-    }
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    const mobTypeId = mobs[i % mobs.length];
+    const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
+    entity.addTag("mobparty." + mobTypeId);
+  }
 
-    const eqo: EntityQueryOptions = {
-        tags: ['mobparty.skeleton'],
-    };
+  const eqo: EntityQueryOptions = {
+    tags: ["mobparty.skeleton"],
+  };
 
-    for (const entity of targetLocation.dimension.getEntities(eqo)) {
-        entity.kill();
-    }
+  for (const entity of targetLocation.dimension.getEntities(eqo)) {
+    entity.kill();
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/tagsQuery.ts) code sandbox.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **lookAt**
+`
+lookAt(targetLocation: Vector3): void
+`
+
+Sets the rotation of the entity to face a target location. Both pitch and yaw will be set, if applicable, such as for mobs where the pitch controls the head tilt and the yaw controls the body rotation.
+
+#### **Parameters**
+- **targetLocation**: [*Vector3*](Vector3.md)
+  
+  The target location that this entity should face/look towards.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+::: moniker-end
 
 ### **matches**
 `
@@ -974,24 +1066,29 @@ Notes:
 - This function can throw errors.
 
 #### Examples
-##### ***setEntityOnFire.ts***
+
+##### ***setOnFire.ts***
+
 ```typescript
-import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
+import { system, EntityOnFireComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function setAblaze(entity: Entity) {
-    entity.setOnFire(20, true);
+function setOnFire(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
 
-    system.runTimeout(() => {
-        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
-        if (onfire) {
-            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
-        }
-        // This will extinguish the entity
-        entity.extinguishFire(true);
-    }, 30); // Run in 30 ticks or ~1.5 seconds
-    
+  skelly.setOnFire(20, true);
+
+  system.runTimeout(() => {
+    const onfire = skelly.getComponent(EntityComponentTypes.OnFire) as EntityOnFireComponent;
+    log(onfire?.onFireTicksRemaining + " fire ticks remaining.");
+
+    skelly.extinguishFire(true);
+    log("Never mind. Fire extinguished.");
+  }, 20);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setOnFire.ts) code sandbox.
 
 ### **setProperty**
 `
@@ -1053,30 +1150,56 @@ Notes:
 - This function can throw errors.
 
 #### Examples
-##### ***teleportMovement.ts***
+
+##### ***teleport.ts***
+
 ```typescript
-import { world, system } from '@minecraft/server';
+import { system, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-const overworld = world.getDimension('overworld');
-const targetLocation = { x: 0, y: 0, z: 0 };
+function teleport(targetLocation: DimensionLocation) {
+  const cow = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Cow, targetLocation);
 
-const pig = overworld.spawnEntity('minecraft:pig', targetLocation);
+  system.runTimeout(() => {
+    cow.teleport(
+      { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 2 },
+      {
+        facingLocation: targetLocation,
+      }
+    );
+  }, 20);
+}
+```
 
-let inc = 1;
-const runId = system.runInterval(() => {
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/teleport.ts) code sandbox.
+
+##### ***teleportMovement.ts***
+
+```typescript
+import { system, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function teleportMovement(targetLocation: DimensionLocation) {
+  const pig = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Pig, targetLocation);
+
+  let inc = 1;
+  const runId = system.runInterval(() => {
     pig.teleport(
-        { x: targetLocation.x + inc / 4, y: targetLocation.y + inc / 4, z: targetLocation.z + inc / 4 },
-        {
-            facingLocation: targetLocation,
-        },
+      { x: targetLocation.x + inc / 4, y: targetLocation.y + inc / 4, z: targetLocation.z + inc / 4 },
+      {
+        facingLocation: targetLocation,
+      }
     );
 
     if (inc > 100) {
-        system.clearRun(runId);
+      system.clearRun(runId);
     }
     inc++;
-}, 4);
+  }, 4);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/teleportMovement.ts) code sandbox.
 
 ### **triggerEvent**
 `
@@ -1096,7 +1219,9 @@ Notes:
   - If the event is not defined in the definition of the entity, an error will be thrown.
 
 #### Examples
+
 ##### ***triggerEvent.ts***
+
 ```typescript
 // A function that spawns a creeper and triggers it to explode immediately
 import { DimensionLocation } from '@minecraft/server';
@@ -1108,6 +1233,23 @@ function spawnExplodingCreeper(location: DimensionLocation) {
     creeper.triggerEvent('minecraft:start_exploding_forced');
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/triggerEvent.ts) code sandbox.
+
+##### ***triggerEvent.ts***
+
+```typescript
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function triggerEvent(targetLocation: DimensionLocation) {
+  const creeper = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Creeper, targetLocation);
+
+  creeper.triggerEvent("minecraft:start_exploding_forced");
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/triggerEvent.ts) code sandbox.
 
 ### **tryTeleport**
 `
