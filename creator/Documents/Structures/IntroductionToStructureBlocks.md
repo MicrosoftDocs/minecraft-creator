@@ -61,12 +61,12 @@ We are going to select a house, save it, and then load it into a different area,
    If you enter too large of a value for any of these coordinates, it will be changed to the highest possible value.
    You can click and drag the selection image to get a better view of your selection.
 
-   Offset values are relative to the placement of the structure block. There do not appear to be limits for the X: and Z: offset values. As long as the area is spawned in, you can grab it.
-
    The maximum offset values, from sea-level (Y=63) are:
    - X: ???
    - Y: -127 to 252
    - Z: ???
+
+   Offset values are relative to the placement of the structure block. There do not appear to be limits for the X: and Z: offset values. As long as the area is spawned in, you can grab it.
 
 1. In the Structure Name field, give the structure a short and memorable filename like "house1" and be sure to use only lowercase letters, numbers, underscores, and hyphens in the name.
 
@@ -83,7 +83,7 @@ We are going to select a house, save it, and then load it into a different area,
 1. We are also going to leave these settings as they are:
    - Include Entities: Saves any entities like animals or mobs that may be present in the selection.
    - Remove Blocks: Removes all blocks and captures only the entities within the selection.
-   - Redstone Save Mode:  you can use redstone to activate a structure block and make it save or load a structure into your world. We're not doing that yet, so feel free to ignore this setting for now.
+   - Redstone Save Mode: You can use redstone to activate a structure block and make it save or load a structure into your world. We're not doing that yet, so feel free to ignore this setting for now.
      - Save in Memory is faster, but you can only load the structure in this one world. This is the more common way to save.
      - Save to Disk is slower, but saves the structure to be used in different play sessions.
      Why is it called "Redstone Save Mode?" Because
@@ -123,7 +123,6 @@ To load a structure, start by placing a structure block and put it in 'Load' mod
 
 ![A structure block using load mode](Media/load.png)
 
-
 ### Importing a Saved Structure
 
 Notice the **Import** button. This button allows you to import a .mcstructure file from anywhere on your computer into your Minecraft world.
@@ -141,7 +140,6 @@ For this example, **mystructure:1** was chosen, and the structure block's name a
 When a structure is successfully loaded, you will see a message in the structure block UI telling you the structure has been successfully imported.
 
 ![Load Mode file picker window with selected file ready to be imported.](Media/importButton3.png)
-
 
 
 After the structure is imported, and the structure block UI looks similar to the UI above, the structure can be loaded into the world.
@@ -166,16 +164,17 @@ Here are some other important notes about importing a structure:
 
 This mode uses three structure blocks: two to set the size and position of the selection, and one to detect the area selected by the other two blocks.
 
-///TODO: get an image of 2 corner blocks selecting an area
-
 ![A structure block using corner mode](Media/corner.png)
 
-
 1. Place a structure block in corner mode outside of one of the structure's sides. Remember the name you use to save it.
-1. Place another structure block in corner mode on the opposite side of the structure with the same name.
+
+1. Place another structure block in corner mode on the opposite corner of the structure and give it the same name.
+
 1. Place a third structure block and select Save Mode.
-1. Enter the name used in the two corner mode structure blocks.
-1. Then Detect the sizing in save mode. All blocks must have the same name and have at least 1 block between them to detect the structure.
+
+1. Enter the same name again that was used for the other two corner mode structure blocks.
+
+1. Click Detect. The selection box should encompass the area between the corners of the corner mode blocks. All three blocks must have the same name and there must be at least 1 block between the corners for the Save block to detect the structure.
 
 ![A statue surrounded in corner mode structure blocks.](Media/statueWaterfall.png)
 
@@ -184,17 +183,17 @@ This mode uses three structure blocks: two to set the size and position of the s
 
 ![A structure block using 3D Export mode](Media/3d.png)
 
-Export mode can be used to create a .glb file that will be usable in behavior packs or a file that can be used to 3D print a Minecraft structure.
+Export mode is used to create a .glb file that will be usable in behavior packs or a file that can be used to 3D print a Minecraft structure.
 
 To export a 3D file, follow these steps:
 
-1. Structure Name: Enter a name for the structure using only lowercase characters.
+1. In the Structure Name field, enter a name for the structure using only lowercase characters.
 
-1. Relative Position: Select the origin of the structure outline. You can select portions into the ground.
+1. For Relative Position, select the origin of the structure outline. You can select portions into the ground.
 
-1. Structure size: set distance from relative position to build that cube in space in Minecraft.
+1. Structure size sets the distance from the relative position to build that cube in space in Minecraft.
 
-1. Remove blocks: Don't use inner blocks. 
+1. Choose to Remove blocks so that inner blocks will not be printed.
 
 ## What's Next?
 
@@ -204,12 +203,4 @@ Now we have seen a behavior pack in action, you can learn more about how they wo
 > [Structure Blocks Tutorial](structureblockstutorial.md)
 
 To see examples of structures, check out the Minecraft [Structure Blocks Behavior Pack Samples](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md).
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-TODO: revamp the Structure Block BP sample
-
-
-
-
 

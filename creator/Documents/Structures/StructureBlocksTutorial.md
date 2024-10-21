@@ -1,5 +1,5 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Structure Blocks Tutorial
 description: "A tutorial on using Structure Blocks for Minecraft: Bedrock Edition"
