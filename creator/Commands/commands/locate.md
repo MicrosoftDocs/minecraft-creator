@@ -121,6 +121,7 @@ Default: `false`.
 - `deep_dark`
 - `mangrove_swamp`
 - `cherry_grove`
+- `pale_garden`
 
 ### `StructureFeature`
 

@@ -16,11 +16,11 @@ A property item which supports Color Picker properties
 ## Properties
 
 ### **value**
-`read-only value: RGBA;`
+`read-only value: minecraftserver.RGBA;`
 
 Current value of the property item.
 
-Type: *RGBA*
+Type: *minecraftserver.RGBA*
 
 ## Methods
 - [setTitle](#settitle)

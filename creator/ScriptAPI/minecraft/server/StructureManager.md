@@ -17,6 +17,12 @@ Manager for Structure related APIs. Includes APIs for creating, getting, placing
 - [get](#get)
 - [getWorldStructureIds](#getworldstructureids)
 - [place](#place)
+::: moniker range="=minecraft-bedrock-experimental"
+- [placeJigsaw](#placejigsaw)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [placeJigsawStructure](#placejigsawstructure)
+::: moniker-end
 
 ### **createEmpty**
 `
@@ -141,3 +147,71 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **placeJigsaw**
+`
+placeJigsaw(pool: string, targetJigsaw: string, maxDepth: number, dimension: Dimension, location: Vector3, options?: JigsawPlaceOptions): void
+`
+
+Places a partial jigsaw structure in the world. This is useful for debugging connections between jigsaw blocks.
+
+#### **Parameters**
+- **pool**: *string*
+  
+  The identifier of the template pool to start from.
+- **targetJigsaw**: *string*
+  
+  The name of the jigsaw block to start from. This block must be included in at least one of the starting pool structure templates.
+- **maxDepth**: *number*
+  
+  The maximum recursion depth for the jigsaw structure.
+- **dimension**: [*Dimension*](Dimension.md)
+  
+  The dimension to place the jigsaw structure in.
+- **location**: [*Vector3*](Vector3.md)
+  
+  The location where the jigsaw structure will begin generating relative to the targetJigsaw block.
+- **options**?: [*JigsawPlaceOptions*](JigsawPlaceOptions.md) = `null`
+  
+  Optional settings to use when generating the jigsaw structure.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*PlaceJigsawError*](PlaceJigsawError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **placeJigsawStructure**
+`
+placeJigsawStructure(identifier: string, dimension: Dimension, location: Vector3, options?: JigsawStructurePlaceOptions): void
+`
+
+Places a jigsaw structure in the world.
+
+#### **Parameters**
+- **identifier**: *string*
+  
+  The identifier of the jigsaw structure.
+- **dimension**: [*Dimension*](Dimension.md)
+  
+  The dimension to place the jigsaw structure in.
+- **location**: [*Vector3*](Vector3.md)
+  
+  The location where the jigsaw structure will begin generating. Note that the y value will be overridden by the structure's start height unless the ignoreStarJigsawStructurePlaceOptions ignoreStartHeight option is set.
+- **options**?: [*JigsawStructurePlaceOptions*](JigsawStructurePlaceOptions.md) = `null`
+  
+  Optional settings to use when generating the jigsaw structure.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*PlaceJigsawError*](PlaceJigsawError.md)
+::: moniker-end

@@ -151,9 +151,7 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getMapColor](#getmapcolor)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getRedstonePower](#getredstonepower)
-::: moniker-end
 - [getTags](#gettags)
 - [hasTag](#hastag)
 - [isValid](#isvalid)
@@ -324,7 +322,6 @@ Notes:
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getRedstonePower**
 `
 getRedstonePower(): number | undefined
@@ -333,14 +330,10 @@ getRedstonePower(): number | undefined
 Returns the net redstone power of this block.
 
 **Returns** *number* | *undefined* - Returns undefined if redstone power is not applicable to this block.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **getTags**
 `
@@ -374,17 +367,26 @@ Notes:
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
-##### ***check_block_tags.js***
+
+##### ***checkBlockTags.ts***
+
 ```typescript
-import { world } from "@minecraft/server";
+import { DimensionLocation } from "@minecraft/server";
 
-// Fetch the block
-const block = world.getDimension("overworld").getBlock({ x: 1, y: 2, z: 3 });
+function checkBlockTags(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  // Fetch the block
+  const block = targetLocation.dimension.getBlock(targetLocation);
 
-console.log(`Block is dirt: ${block.hasTag("dirt")}`);
-console.log(`Block is wood: ${block.hasTag("wood")}`);
-console.log(`Block is stone: ${block.hasTag("stone")}`);
+  // check that the block is loaded
+  if (block) {
+    log(`Block is dirt: ${block.hasTag("dirt")}`);
+    log(`Block is wood: ${block.hasTag("wood")}`);
+    log(`Block is stone: ${block.hasTag("stone")}`);
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/checkBlockTags.ts) code sandbox.
 
 ### **isValid**
 `

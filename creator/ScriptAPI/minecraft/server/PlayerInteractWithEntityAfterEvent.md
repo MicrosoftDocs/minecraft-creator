@@ -12,17 +12,12 @@ Contains information regarding an event after a player successfully interacts wi
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **beforeItemStack**
 `read-only beforeItemStack?: ItemStack;`
 
 The ItemStack before the interaction succeeded, or undefined if hand is empty.
 
 Type: [*ItemStack*](ItemStack.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **itemStack**
 `read-only itemStack?: ItemStack;`

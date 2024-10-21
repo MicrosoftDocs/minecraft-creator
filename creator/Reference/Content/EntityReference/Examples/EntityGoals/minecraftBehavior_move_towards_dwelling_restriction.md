@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Entity Documentation - minecraft:behavior.move_towards_dwelling_restriction
 
-`minecraft:behavior.move_towards_dwelling_restriction` allows mobs with the dweller component to move toward their Village area that the mob should be restricted to.
+`minecraft:behavior.move_towards_dwelling_restriction` allows entities with the `"minecraft:dweller"` component to move toward their village area that the entity should be restricted to.
 
 ## Parameter
 

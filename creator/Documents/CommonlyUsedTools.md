@@ -1,5 +1,5 @@
 ---
-author: neonerz
+author: iconicNurdle
 ms.author: mikeam
 title: Commonly Used Tools
 description: "A guide detailing popular tools used to modify Minecraft content"
@@ -64,7 +64,7 @@ Blockbench is a free entity-modeling application for creating working Bedrock Ed
 
 Snowstorm is a small application for Bedrock Edition created by the developer of Blockbench that can be used to create custom particle effects that are usable in-game. To get started with [Snowstorm](./SnowstormOverview.md), visit a [tutorial](./ParticleEffects.md) on building particle effects with Snowstorm.
 
-## JSON Definition Editing
+## Project and JSON Definition Editing
 
 ### [Blockception VSCode Extension](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension)
 
@@ -75,6 +75,12 @@ An extension that provides support for files such as .mcfunction, .json and .lan
 bridge. is a light-weight, dedicated editor for Minecraft Add-Ons that makes it easy to get started with Add-Ons and later scales with your growing needs. It requires zero setup and provides you with an [instantly bootable development environment](https://editor.bridge-core.app/) with syntax highlighting, [code completions and file diagnostics](https://bridge-core.app/guide/features/index.html#auto-completions-and-validation) all designed to make developing Minecraft Add-Ons more convenient. To read more, please refer to bridge.'s [getting started guide](https://bridge-core.app/guide/index.html) or [learn more about why you should use bridge.](https://bridge-core.app/guide/why-bridge.html)
 
 bridge. is [open source](https://github.com/bridge-core/editor) and freely available to all Add-On creators on desktop and mobile platforms.
+
+### [Minecraft Creator Tools](./MCToolsOverview.md)
+
+Minecraft Creator Tools is both a website and an NPM-based command line tool that you can use to start or extend your Minecraft projects. It also includes validators to help find and point out potential issues in the project.
+
+Minecraft Creator Tools is also open source and [available on GitHub](https://github.com/mojang/minecraft-creator-tools).
 
 ### [NPC DialogueDesigner](https://jannisx11.github.io/dialogue-designer/)
 

@@ -9,7 +9,9 @@ description: Contents of the @minecraft/server-net.HttpClient class.
 # HttpClient Class
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -29,6 +31,8 @@ async function updateScore() {
     await http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.
 
 ## Methods
 - [cancelAll](#cancelall)
@@ -83,7 +87,9 @@ Notes:
 - This function can't be called in read-only mode.
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -103,9 +109,13 @@ async function updateScore() {
     await http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -125,3 +135,5 @@ async function updateScore() {
     await http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.

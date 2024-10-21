@@ -30,25 +30,25 @@ If we should treat the Vector3 properties as integer values. By default is false
 Type: *boolean*
 
 ### **max**
-`max: Partial<Vector3>;`
+`max: Partial<minecraftserver.Vector3>;`
 
 The min possible limits. If undefined, Number.MAX_SAFE_INTEGER will be used.
 
-Type: *Partial<Vector3>*
+Type: *Partial<minecraftserver.Vector3>*
 
 ### **min**
-`min: Partial<Vector3>;`
+`min: Partial<minecraftserver.Vector3>;`
 
 The min possible limits. If undefined, Number.MIN_SAFE_INTEGER will be used.
 
-Type: *Partial<Vector3>*
+Type: *Partial<minecraftserver.Vector3>*
 
 ### **onChange**
-`onChange: (newValue: Vector3, oldValue: Vector3) => void;`
+`onChange: (newValue: minecraftserver.Vector3, oldValue: minecraftserver.Vector3) => void;`
 
 This callback is called when UI control is changed.
 
-Type: *(newValue: Vector3, oldValue: Vector3) => void*
+Type: *(newValue: minecraftserver.Vector3, oldValue: minecraftserver.Vector3) => void*
 
 ### **title**
 `title: LocalizedString;`

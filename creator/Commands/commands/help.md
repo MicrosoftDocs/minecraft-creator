@@ -61,6 +61,8 @@ Manages tags stored in entities.
 Experimental camera command.
 - `script`
 Contains additional tools for managing the runtime of script, including debugger and profiler options.
+- `connect`
+Attempts to connect to the websocket server on the provided URL.
 - `stop`
 - `transfer`
 - `clear`
@@ -201,8 +203,6 @@ Toggles the weather.
 - `weather`
 Sets the weather.
 - `wsserver`
-Attempts to connect to the websocket server on the provided URL.
-- `connect`
 Attempts to connect to the websocket server on the provided URL.
 - `xp`
 Adds or removes player experience.

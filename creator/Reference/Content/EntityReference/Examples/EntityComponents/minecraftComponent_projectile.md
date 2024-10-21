@@ -36,6 +36,7 @@ ms.service: minecraft-bedrock-edition
 |on_hit|*not set*| JSON Object| Defines the behaviors that may execute on a projectile's hit, including impact damage, impact effect, and stuck in ground. See more on these parameters below. |
 | particle| ironcrack| String| Particle to use upon collision. |
 | power| 1.3 | Decimal| Determines the velocity of the projectile. |
+| reflect_immunity | 0.0 | Decimal | During the specified time, in seconds, the projectile cannot be reflected by hitting it. |
 | reflect_on_hurt| False| Boolean| If true, this entity will be reflected back when hit. |
 | shoot_sound| *not set*| String| The sound that plays when the projectile is shot. |
 | shoot_target| True| Boolean| If true, the projectile will be shot towards the target of the entity firing it. |

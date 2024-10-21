@@ -82,6 +82,8 @@
   href: minecraftComponent_default_look_angle.md
 - name: despawn
   href: minecraftComponent_despawn.md
+- name: dimension_bound
+  href: minecraftComponent_dimension_bound.md
 - name: drying_out_timer
   href: minecraftComponent_drying_out_timer.md
 - name: dweller
@@ -194,8 +196,8 @@
   href: minecraftComponent_lava_movement.md
 - name: leashable
   href: minecraftComponent_leashable.md
-- name: lookat
-  href: minecraftComponent_lookat.md
+- name: looked_at
+  href: minecraftComponent_looked_at.md
 - name: loot
   href: minecraftComponent_loot.md
 - name: managed_wandering_trader
@@ -320,6 +322,8 @@
   href: minecraftComponent_trail.md
 - name: transformation
   href: minecraftComponent_transformation.md
+- name: transient
+  href: minecraftComponent_transient.md
 - name: trust
   href: minecraftComponent_trust.md
 - name: trusting

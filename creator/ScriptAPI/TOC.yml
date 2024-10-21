@@ -12,6 +12,8 @@
       href: minecraft/debug-utilities/minecraft-debug-utilities.md
     - name: minecraft/debug-utilities Changelog
       href: minecraft/debug-utilities/changelog.md
+    - name: RuntimeStats
+      href: minecraft/debug-utilities/RuntimeStats.md
   - name: minecraft/server-admin
     items:
     - name: minecraft/server-admin
@@ -62,6 +64,8 @@
       href: minecraft/server-net/changelog.md
     - name: HttpRequestMethod
       href: minecraft/server-net/HttpRequestMethod.md
+    - name: PacketId
+      href: minecraft/server-net/PacketId.md
     - name: HttpClient
       href: minecraft/server-net/HttpClient.md
     - name: HttpHeader
@@ -70,6 +74,18 @@
       href: minecraft/server-net/HttpRequest.md
     - name: HttpResponse
       href: minecraft/server-net/HttpResponse.md
+    - name: NetworkBeforeEvents
+      href: minecraft/server-net/NetworkBeforeEvents.md
+    - name: PacketReceiveBeforeEventSignal
+      href: minecraft/server-net/PacketReceiveBeforeEventSignal.md
+    - name: PacketReceivedBeforeEvent
+      href: minecraft/server-net/PacketReceivedBeforeEvent.md
+    - name: PacketSendBeforeEvent
+      href: minecraft/server-net/PacketSendBeforeEvent.md
+    - name: PacketSendBeforeEventSignal
+      href: minecraft/server-net/PacketSendBeforeEventSignal.md
+    - name: PacketEventOptions
+      href: minecraft/server-net/PacketEventOptions.md
   - name: minecraft/server-ui
     items:
     - name: minecraft/server-ui
@@ -144,6 +160,8 @@
       href: minecraft/server/HudElement.md
     - name: HudVisibility
       href: minecraft/server/HudVisibility.md
+    - name: InputMode
+      href: minecraft/server/InputMode.md
     - name: InputPermissionCategory
       href: minecraft/server/InputPermissionCategory.md
     - name: ItemComponentTypes
@@ -508,6 +526,8 @@
       href: minecraft/server/IButtonPushAfterEventSignal.md
     - name: ILeverActionAfterEventSignal
       href: minecraft/server/ILeverActionAfterEventSignal.md
+    - name: InputInfo
+      href: minecraft/server/InputInfo.md
     - name: IPlayerJoinAfterEventSignal
       href: minecraft/server/IPlayerJoinAfterEventSignal.md
     - name: IPlayerLeaveAfterEventSignal
@@ -638,6 +658,10 @@
       href: minecraft/server/PlayerGameModeChangeBeforeEvent.md
     - name: PlayerGameModeChangeBeforeEventSignal
       href: minecraft/server/PlayerGameModeChangeBeforeEventSignal.md
+    - name: PlayerInputModeChangeAfterEvent
+      href: minecraft/server/PlayerInputModeChangeAfterEvent.md
+    - name: PlayerInputModeChangeAfterEventSignal
+      href: minecraft/server/PlayerInputModeChangeAfterEventSignal.md
     - name: PlayerInputPermissionCategoryChangeAfterEvent
       href: minecraft/server/PlayerInputPermissionCategoryChangeAfterEvent.md
     - name: PlayerInputPermissionCategoryChangeAfterEventSignal
@@ -856,6 +880,10 @@
       href: minecraft/server/GreaterThanOrEqualsComparison.md
     - name: ItemCustomComponent
       href: minecraft/server/ItemCustomComponent.md
+    - name: JigsawPlaceOptions
+      href: minecraft/server/JigsawPlaceOptions.md
+    - name: JigsawStructurePlaceOptions
+      href: minecraft/server/JigsawStructurePlaceOptions.md
     - name: LessThanComparison
       href: minecraft/server/LessThanComparison.md
     - name: LessThanOrEqualsComparison
@@ -966,6 +994,10 @@
       href: minecraft/server-editor/MouseInputType.md
     - name: NumberPropertyItemVariant
       href: minecraft/server-editor/NumberPropertyItemVariant.md
+    - name: PaintCompletionState
+      href: minecraft/server-editor/PaintCompletionState.md
+    - name: PaintMode
+      href: minecraft/server-editor/PaintMode.md
     - name: Plane
       href: minecraft/server-editor/Plane.md
     - name: PlayerPermissionLevel
@@ -990,6 +1022,8 @@
       href: minecraft/server-editor/WidgetComponentType.md
     - name: WidgetGroupSelectionMode
       href: minecraft/server-editor/WidgetGroupSelectionMode.md
+    - name: WidgetMouseButtonActionType
+      href: minecraft/server-editor/WidgetMouseButtonActionType.md
     - name: BedrockEventSubscriptionCache
       href: minecraft/server-editor/BedrockEventSubscriptionCache.md
     - name: BlockIdentifierObservableValidator
@@ -1116,6 +1150,8 @@
       href: minecraft/server-editor/WidgetGroup.md
     - name: WidgetManager
       href: minecraft/server-editor/WidgetManager.md
+    - name: WidgetMouseButtonEventData
+      href: minecraft/server-editor/WidgetMouseButtonEventData.md
     - name: WidgetStateChangeEventData
       href: minecraft/server-editor/WidgetStateChangeEventData.md
     - name: BlockMaskList
@@ -1302,6 +1338,12 @@
       href: minecraft/server-editor/ITextPropertyItem.md
     - name: ITextPropertyItemOptions
       href: minecraft/server-editor/ITextPropertyItemOptions.md
+    - name: IToggleGroupPropertyItem
+      href: minecraft/server-editor/IToggleGroupPropertyItem.md
+    - name: IToggleGroupPropertyItemEntry
+      href: minecraft/server-editor/IToggleGroupPropertyItemEntry.md
+    - name: IToggleGroupPropertyItemOptions
+      href: minecraft/server-editor/IToggleGroupPropertyItemOptions.md
     - name: IVector3PropertyItem
       href: minecraft/server-editor/IVector3PropertyItem.md
     - name: IVector3PropertyItemOptions

@@ -53,6 +53,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [MouseActionType](MouseActionType.md)
 - [MouseInputType](MouseInputType.md)
 - [NumberPropertyItemVariant](NumberPropertyItemVariant.md)
+- [PaintCompletionState](PaintCompletionState.md)
+- [PaintMode](PaintMode.md)
 - [Plane](Plane.md)
 - [PlayerPermissionLevel](PlayerPermissionLevel.md)
 - [PlaytestSessionResult](PlaytestSessionResult.md)
@@ -65,6 +67,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ThemeSettingsColorKey](ThemeSettingsColorKey.md)
 - [WidgetComponentType](WidgetComponentType.md)
 - [WidgetGroupSelectionMode](WidgetGroupSelectionMode.md)
+- [WidgetMouseButtonActionType](WidgetMouseButtonActionType.md)
 
 # Type Aliases
 - [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
@@ -95,6 +98,9 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ShutdownFunctionType](ShutdownFunctionType.md)
 - [SupportedKeyboardActionTypes](SupportedKeyboardActionTypes.md)
 - [SupportedMouseActionTypes](SupportedMouseActionTypes.md)
+- [TooltipInteractiveContent](TooltipInteractiveContent.md)
+- [TooltipInteractiveContentDescription](TooltipInteractiveContentDescription.md)
+- [TooltipLink](TooltipLink.md)
 - [UnregisterInputBindingCallback](UnregisterInputBindingCallback.md)
 
 ## Classes
@@ -161,6 +167,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [WidgetComponentText](WidgetComponentText.md)
 - [WidgetGroup](WidgetGroup.md)
 - [WidgetManager](WidgetManager.md)
+- [WidgetMouseButtonEventData](WidgetMouseButtonEventData.md)
 - [WidgetStateChangeEventData](WidgetStateChangeEventData.md)
 
 ## Interfaces
@@ -256,6 +263,9 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ISubPanePropertyItemOptions](ISubPanePropertyItemOptions.md)
 - [ITextPropertyItem](ITextPropertyItem.md)
 - [ITextPropertyItemOptions](ITextPropertyItemOptions.md)
+- [IToggleGroupPropertyItem](IToggleGroupPropertyItem.md)
+- [IToggleGroupPropertyItemEntry](IToggleGroupPropertyItemEntry.md)
+- [IToggleGroupPropertyItemOptions](IToggleGroupPropertyItemOptions.md)
 - [IVector3PropertyItem](IVector3PropertyItem.md)
 - [IVector3PropertyItemOptions](IVector3PropertyItemOptions.md)
 - [ModalToolCreationParameters](ModalToolCreationParameters.md)
@@ -284,9 +294,21 @@ Takes the input object (a property bag of values) and bind it to the pane as a d
 
 **Returns** *T*
 
+### **deserialize**
+`
+deserialize(s: string): unknown
+`
+
+Deserialize anything, defaults to the same behavior as JSON.parse but will use custom deserializers passed into {@link registerSerializationForType}.
+
+#### **Parameters**
+- **s**: *string*
+
+**Returns** *unknown*
+
 ### **executeLargeOperation**
 `
-executeLargeOperation(selection: Selection, operation: (blockLocation: Vector3) => void): Promise<void>
+executeLargeOperation(selection: Selection, operation: (blockLocation: minecraftserver.Vector3) => void): Promise<void>
 `
 
 Executes an operation over a selection via chunks to allow splitting operation over multiple game ticks
@@ -295,7 +317,7 @@ Executes an operation over a selection via chunks to allow splitting operation o
 - **selection**: *Selection*
   
   the selection to iterator over
-- **operation**: *(blockLocation: Vector3) => void*
+- **operation**: *(blockLocation: minecraftserver.Vector3) => void*
   
   the operation to apply over each block location
 
@@ -303,16 +325,16 @@ Executes an operation over a selection via chunks to allow splitting operation o
 
 ### **executeLargeOperationFromIterator**
 `
-executeLargeOperationFromIterator(blockLocationIterator: BlockLocationIterator, operation: (blockLocation: Vector3) => void): Promise<void>
+executeLargeOperationFromIterator(blockLocationIterator: minecraftserver.BlockLocationIterator, operation: (blockLocation: minecraftserver.Vector3) => void): Promise<void>
 `
 
 Executes an operation over a BlockLocationIterator via chunks to allow splitting operation over multiple game ticks
 
 #### **Parameters**
-- **blockLocationIterator**: *BlockLocationIterator*
+- **blockLocationIterator**: *minecraftserver.BlockLocationIterator*
   
   the selection to iterator over
-- **operation**: *(blockLocation: Vector3) => void*
+- **operation**: *(blockLocation: minecraftserver.Vector3) => void*
   
   the operation to apply over each block location
 
@@ -359,6 +381,21 @@ Registers an editor extension into Minecraft. This function calls underlying fun
 
 **Returns** *Extension*
 
+### **registerSerializationForType**
+`
+registerSerializationForType(typeConstructor: Function, name: string, serializer: (obj: T) => Record<string, unknown>, deserializer: (vals: Record<string, unknown>) => T): void
+`
+
+Register a type to have custom serialization/deserialization when using {@link serialize} and {@link deserialize}.
+
+#### **Parameters**
+- **typeConstructor**: *Function*
+- **name**: *string*
+- **serializer**: *(obj: T) => Record<string, unknown>*
+- **deserializer**: *(vals: Record<string, unknown>) => T*
+
+**Returns** *void*
+
 ### **registerUserDefinedTransactionHandler**
 `
 registerUserDefinedTransactionHandler(transactionManager: TransactionManager, undoHandler: (payload: T) => void, redoHandler: (payload: T) => void): UserDefinedTransactionHandle<T>
@@ -378,6 +415,18 @@ Creates a strongly typed transaction handle to enforce type safety when adding u
   A function that will be invoked when the transaction is redone. The function will be passed a copy of the payload data that was inserted into the transaction log.
 
 **Returns** *UserDefinedTransactionHandle<T>* - - {@link UserDefinedTransactionHandle} - A strongly typed transaction handle that can be used to add transactions to the transaction manager.
+
+### **serialize**
+`
+serialize(obj: unknown): string
+`
+
+Serialize anything, defaults to the same behavior as JSON.stringify but will use custom serializers passed into {@link registerSerializationForType}.
+
+#### **Parameters**
+- **obj**: *unknown*
+
+**Returns** *string*
 
 ### **stringFromException**
 `
