@@ -12,8 +12,8 @@ For this tutorial, we're going to use structure blocks and the command `/structu
 
 We recommend reviewing the following articles before you begin:
 
-- [Introduction to Commands](CommandsIntroduction.md)
-- [Introduction to Structure Blocks](IntroductionToStructureBlocks.md)
+- [Introduction to Commands](../CommandsIntroduction.md)
+- [Introduction to Structure Blocks](../IntroductionToStructureBlocks.md)
 
 You should also download the structure blocks sample if you'd like to follow along with these buildings.
 
