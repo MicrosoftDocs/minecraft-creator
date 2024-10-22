@@ -25,10 +25,8 @@ The [isHardcore](../ScriptAPI/minecraft/server/World.md#ishardcore) API can be u
 - [minecraft:damage_sensor](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_damage_sensor.md) - The "deals_damage" field has been changed from a Boolean to supporting three values to allow for a new capability to apply side-effects of an attack, but avoid direct damage.
 - [minecraft:home](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_home.md)
   - restriction_type - allows defining how an entity is restricted to its home position.
-- execute_event_on_home_block - allows the entity to execute an event on the block at its home position.
 - [minecraft:dimension_bound](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_dimension_bound.md) - prevents entities from changing dimension through portals.
 - [minecraft:transient](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_transient.md) - entities with this component will never be saved.
-- reset_target - allows an entity to reset its target.
 
 ## Items
 
