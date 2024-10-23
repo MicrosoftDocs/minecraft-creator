@@ -310,6 +310,8 @@
             href: Documents/AdvancedCustomBlocks.md
           - name: Item Display Transforms
             href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
+          - name: Customizing the Item for a Block
+            href: Reference/Content/blockreference/Examples/CustomizingItemForABlock.md
           - name: Custom Block Render Lighting 
             href: Documents/CustomBlockRenderLighting.md
           - name: Custom Block Render Distance
