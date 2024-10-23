@@ -83,7 +83,7 @@
         - name: 10. Create a Loot Table
           href: Documents/CreateLootTable.md
         - name: 11. Create a Village with Structure Blocks
-          href: Documents/StructureBlocksTutorial.md
+          href: Documents/Structures/StructureBlocksCommandTutorial.md
     - name: Concepts
       items:
         - name: Getting Started with Add-Ons
@@ -227,7 +227,7 @@
           - name: Parkour World Creation Guide
             href: Documents/ParkourWorldGuide.md 
         - name: Introduction to Structure Blocks
-          href: Documents/IntroductionToStructureBlocks.md
+          href: Documents/Structures/IntroductionToStructureBlocks.md
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
         - name: Data-Driven Overworld Height and Void Generation
@@ -297,11 +297,11 @@
         - name: Default Block State and Trait Listings
           href: Reference/Content/blockreference/Examples/BlockStateAndTraitListings.md
         - name: Create a Village with Structure Blocks
-          href: Documents/StructureBlocksTutorial.md
+          href: Documents/Structures/IntroductionToStructureBlocks.md
         - name: Getting Started with Command Blocks
           href: Documents/CommandBlocks.md
         - name: Building Custom Blocks
-          items:               
+          items: 
           - name: Block Traits
             href: Reference/Content/blockreference/Examples/BlockTraits.md
           - name: Create a Custom Die Block 
@@ -310,6 +310,8 @@
             href: Documents/AdvancedCustomBlocks.md
           - name: Item Display Transforms
             href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
+          - name: Customizing the Item for a Block
+            href: Reference/Content/blockreference/Examples/CustomizingItemForABlock.md
           - name: Custom Block Render Lighting 
             href: Documents/CustomBlockRenderLighting.md
           - name: Custom Block Render Distance

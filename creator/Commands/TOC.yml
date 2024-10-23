@@ -1,5 +1,7 @@
 - name: List of commands
   href: commands.md
+- name: aimassist
+  href: commands/aimassist.md
 - name: allowlist
   href: commands/allowlist.md
 - name: camera

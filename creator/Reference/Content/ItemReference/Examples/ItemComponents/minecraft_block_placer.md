@@ -8,7 +8,8 @@ ms.service: minecraft-bedrock-edition
 
 # Item Documentation - minecraft:block_placer 
 
-`minecraft:block_placer` sets the item as a Planter item component for blocks. Items with this component will place a block when used. 
+`minecraft:block_placer` sets the item as a planter item component for blocks. Items with this component will place a block when used.
+
 [EXPERIMENTAL] This component can also be used instead of the `minecraft:icon` component to render the block this item will place as the icon (Requires the "Upcoming Creator Features" toggle). 
 
 ## Parameters 

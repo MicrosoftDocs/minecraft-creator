@@ -350,6 +350,8 @@ Melon Block
 Waxed Cut Copper Stairs
 - `waxed_cut_copper_stairs`
 Waxed Cut Copper Stairs
+- `minecraft:open_eyeblossom`
+- `open_eyeblossom`
 - `minecraft:mob_spawner`
 Mob Spawner
 - `mob_spawner`
@@ -500,6 +502,8 @@ Waxed Oxidized Cut Copper Slab
 Waxed Oxidized Cut Copper Slab
 - `minecraft:oak_leaves`
 - `oak_leaves`
+- `minecraft:resin_clump`
+- `resin_clump`
 - `minecraft:brain_coral_fan`
 - `brain_coral_fan`
 - `minecraft:polished_tuff_wall`
@@ -1696,6 +1700,8 @@ Warped Wart Block
 Warped Wart Block
 - `minecraft:light_gray_shulker_box`
 - `light_gray_shulker_box`
+- `minecraft:resin_bricks`
+- `resin_bricks`
 - `minecraft:tuff_stairs`
 - `tuff_stairs`
 - `minecraft:yellow_carpet`
@@ -1792,6 +1798,8 @@ Prismarine
 - `mushroom_stem`
 - `minecraft:black_terracotta`
 - `black_terracotta`
+- `minecraft:resin_brick_stairs`
+- `resin_brick_stairs`
 - `minecraft:deepslate_gold_ore`
 Deepslate Gold Ore
 - `deepslate_gold_ore`
@@ -1844,6 +1852,8 @@ Acacia Stairs
 - `brown_concrete`
 - `minecraft:cherry_slab`
 - `cherry_slab`
+- `minecraft:chiseled_resin_bricks`
+- `chiseled_resin_bricks`
 - `minecraft:bubble_coral`
 - `bubble_coral`
 - `minecraft:orange_shulker_box`
@@ -1958,6 +1968,8 @@ Nether Sprouts
 Verdant Froglight
 - `verdant_froglight`
 Verdant Froglight
+- `minecraft:resin_block`
+- `resin_block`
 - `minecraft:warped_slab`
 Warped Slab
 - `warped_slab`
@@ -2124,6 +2136,8 @@ Crying Obsidian
 Crying Obsidian
 - `minecraft:lime_carpet`
 - `lime_carpet`
+- `minecraft:closed_eyeblossom`
+- `closed_eyeblossom`
 - `minecraft:dead_fire_coral_fan`
 - `dead_fire_coral_fan`
 - `minecraft:decorated_pot`
@@ -2370,6 +2384,8 @@ Wheat
 Waxed Cut Copper
 - `waxed_cut_copper`
 Waxed Cut Copper
+- `minecraft:resin_brick_slab`
+- `resin_brick_slab`
 - `minecraft:heavy_core`
 - `heavy_core`
 - `minecraft:cobbled_deepslate_slab`
@@ -2686,6 +2702,8 @@ Wooden Pressure Plate
 Grass Path
 - `grass_path`
 Grass Path
+- `minecraft:resin_brick_wall`
+- `resin_brick_wall`
 - `minecraft:cobbled_deepslate_wall`
 Cobbled Deepslate Wall
 - `cobbled_deepslate_wall`
@@ -4157,6 +4175,8 @@ Brick
 Netherbrick
 - `netherbrick`
 Netherbrick
+- `minecraft:resin_brick`
+- `resin_brick`
 - `minecraft:prismarine_shard`
 Prismarine Shard
 - `prismarine_shard`

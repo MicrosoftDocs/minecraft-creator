@@ -37,3 +37,32 @@ Type: *boolean*
 Notes:
   - This property can throw errors when used.
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
+
+## Methods
+- [getButtonState](#getbuttonstate)
+- [getMovementVector](#getmovementvector)
+
+### **getButtonState**
+`
+getButtonState(button: InputButton): ButtonState
+`
+
+#### **Parameters**
+- **button**: [*InputButton*](InputButton.md)
+
+**Returns** [*ButtonState*](ButtonState.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
+
+### **getMovementVector**
+`
+getMovementVector(): Vector2
+`
+
+**Returns** [*Vector2*](Vector2.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)

@@ -14,18 +14,22 @@ description: Contents of the @minecraft/server-editor.ThemeSettings class.
 - [deleteTheme](#deletetheme)
 - [getCurrentTheme](#getcurrenttheme)
 - [getThemeColors](#getthemecolors)
-- [getThemeList](#getthemelist)
+- [getThemeIdList](#getthemeidlist)
+- [getThemeName](#getthemename)
 - [resolveColorKey](#resolvecolorkey)
 - [setCurrentTheme](#setcurrenttheme)
+- [setThemeName](#setthemename)
 - [updateThemeColor](#updatethemecolor)
 
 ### **addNewTheme**
 `
-addNewTheme(id: string): void
+addNewTheme(id: string, name?: string, sourceThemeId?: string): void
 `
 
 #### **Parameters**
 - **id**: *string*
+- **name**?: *string* = `null`
+- **sourceThemeId**?: *string* = `null`
   
 Notes:
 - This function can't be called in read-only mode.
@@ -72,12 +76,26 @@ getThemeColors(id: string): Record<string, minecraftserver.RGBA> | undefined
 
 **Returns** Record<*string*, [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)> | *undefined*
 
-### **getThemeList**
+### **getThemeIdList**
 `
-getThemeList(): string[]
+getThemeIdList(): string[]
 `
 
 **Returns** *string*[]
+
+### **getThemeName**
+`
+getThemeName(id: string): string
+`
+
+#### **Parameters**
+- **id**: *string*
+
+**Returns** *string*
+  
+Notes:
+- This function can throw errors.
+  - Throws *Error*
 
 ### **resolveColorKey**
 `
@@ -96,6 +114,20 @@ setCurrentTheme(id: string): void
 
 #### **Parameters**
 - **id**: *string*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
+
+### **setThemeName**
+`
+setThemeName(id: string, name: string): void
+`
+
+#### **Parameters**
+- **id**: *string*
+- **name**: *string*
   
 Notes:
 - This function can't be called in read-only mode.
