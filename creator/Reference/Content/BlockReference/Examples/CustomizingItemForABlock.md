@@ -2,7 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Customizing the Item for a Block
-description: "An overview about the block_placer item component icon"
+description: "An overview about specifying the block an item places"
 ms.service: minecraft-bedrock-edition
 ---
 
