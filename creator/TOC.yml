@@ -227,7 +227,7 @@
           - name: Parkour World Creation Guide
             href: Documents/ParkourWorldGuide.md 
         - name: Introduction to Structure Blocks
-          href: Documents/IntroductionToStructureBlocks.md
+          href: Documents/Structures/IntroductionToStructureBlocks.md
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
         - name: Data-Driven Overworld Height and Void Generation
