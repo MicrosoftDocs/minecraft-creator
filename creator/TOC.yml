@@ -448,6 +448,8 @@
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
           - name: Custom Item Use Priority
             href: Reference/Content/itemreference/Examples/ItemUsePriority.md
+          - name: Customizing the Item for a Block
+            href: Reference/Content/itemreference/Examples/ItemComponent_CustomizingItemforBlock.md
         - name: Recipe JSON
           href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
         - name: Spawn Rule JSON
