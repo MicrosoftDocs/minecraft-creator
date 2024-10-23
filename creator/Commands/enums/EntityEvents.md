@@ -253,6 +253,7 @@ Entity deactivates a command block
 Entity converts to a drowned
 - `minecraft:convert_to_zombie`
 Entity converts to a zombie
+- `minecraft:crumble`
 - `minecraft:crystal_explode`
 Entity explodes a crystal
 - `minecraft:defend_wandering_trader`
@@ -540,6 +541,7 @@ Entity starts roaring
 - `minecraft:start_swaying`
 - `minecraft:start_transforming`
 Entity starts transforming
+- `minecraft:start_twitching`
 - `minecraft:start_unrolling`
 - `minecraft:stop_aggro`
 Entity stops being aggravated

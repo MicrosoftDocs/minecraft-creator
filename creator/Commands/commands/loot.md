@@ -330,6 +330,7 @@ Smooth Stone
 Beetroot
 - `minecraft:music_disc_strad`
 Music Disc Strad
+- `minecraft:resin_brick`
 - `minecraft:white_candle`
 White Candle
 - `minecraft:sweet_berries`
@@ -343,6 +344,11 @@ Clay Ball
 - `minecraft:bamboo_sign`
 - `minecraft:apple`
 Apple
+- `minecraft:stripped_oak_log`
+Stripped Oak Log
+- `minecraft:element_50`
+[Education Edition] Tin (Sn)
+- `minecraft:board`
 - `minecraft:hard_blue_stained_glass`
 - `minecraft:angler_pottery_sherd`
 - `minecraft:golden_apple`
@@ -577,6 +583,7 @@ Diamond Sword
 - `minecraft:end_stone_brick_slab`
 - `minecraft:smithing_table`
 Smithing Table
+- `minecraft:resin_brick_stairs`
 - `minecraft:exposed_copper_trapdoor`
 - `minecraft:chainmail_helmet`
 Chainmail Helmet
@@ -808,7 +815,6 @@ Parrot Spawn Egg
 - `minecraft:damaged_anvil`
 - `minecraft:axolotl_bucket`
 Axolotl Bucket
-- `minecraft:light_block_9`
 - `minecraft:wolf_spawn_egg`
 Wolf Spawn Egg
 - `minecraft:minecart`
@@ -820,6 +826,7 @@ Saddle
 Iron Door
 - `minecraft:redstone`
 Redstone
+- `minecraft:closed_eyeblossom`
 - `minecraft:heavy_core`
 - `minecraft:sheep_spawn_egg`
 Sheep Spawn Egg
@@ -1150,6 +1157,7 @@ Guardian Spawn Egg
 - `minecraft:husk_spawn_egg`
 Husk Spawn Egg
 - `minecraft:lime_concrete_powder`
+- `minecraft:chalkboard`
 - `minecraft:piglin_spawn_egg`
 Piglin Spawn Egg
 - `minecraft:white_concrete`
@@ -1388,6 +1396,7 @@ Acacia Sign
 Prismarine Crystals
 - `minecraft:lead`
 Lead
+- `minecraft:chiseled_resin_bricks`
 - `minecraft:element_32`
 [Education Edition] Germanium (Ge)
 - `minecraft:brush`
@@ -1593,9 +1602,9 @@ Jungle Chest Boat
 - `minecraft:spruce_chest_boat`
 Spruce Chest Boat
 - `minecraft:white_concrete_powder`
-- `minecraft:spire_armor_trim_smithing_template`
 - `minecraft:acacia_chest_boat`
 Acacia Chest Boat
+- `minecraft:spire_armor_trim_smithing_template`
 - `minecraft:dark_oak_chest_boat`
 Dark Oak Chest Boat
 - `minecraft:info_update`
@@ -1692,9 +1701,9 @@ Wool
 - `minecraft:stone`
 Stone
 - `minecraft:polished_granite`
-- `minecraft:diorite`
-- `minecraft:light_block_10`
 - `minecraft:green_stained_glass_pane`
+- `minecraft:light_block_10`
+- `minecraft:diorite`
 - `minecraft:element_11`
 [Education Edition] Sodium (Na)
 - `minecraft:coarse_dirt`
@@ -1764,6 +1773,12 @@ Smooth Basalt
 - `minecraft:pale_oak_sign`
 - `minecraft:pale_oak_door`
 - `minecraft:green_carpet`
+- `minecraft:normal_stone_stairs`
+Normal Stone Stairs
+- `minecraft:resin_brick_slab`
+- `minecraft:double_stone_block_slab2`
+Double Stone Block Slab 2
+- `minecraft:resin_clump`
 - `minecraft:nether_brick_stairs`
 Nether Brick Stairs
 - `minecraft:white_wool`
@@ -1890,10 +1905,6 @@ Stone Block Slab 3
 Waxed Cut Copper Stairs
 - `minecraft:red_nether_brick_double_slab`
 - `minecraft:fern`
-- `minecraft:normal_stone_stairs`
-Normal Stone Stairs
-- `minecraft:double_stone_block_slab2`
-Double Stone Block Slab 2
 - `minecraft:end_stone_brick_double_slab`
 - `minecraft:polished_andesite_double_slab`
 - `minecraft:border_block`
@@ -2182,6 +2193,7 @@ Lightning Rod
 - `minecraft:deepslate_tile_double_slab`
 Deepslate Tile Double Slab
 - `minecraft:light_block_8`
+- `minecraft:light_block_9`
 - `minecraft:light_block_11`
 - `minecraft:gold_block`
 Gold Block
@@ -2291,10 +2303,6 @@ Bromine (Br)
 Soul Sand
 - `minecraft:element_49`
 [Education Edition] Indium (In)
-- `minecraft:stripped_oak_log`
-Stripped Oak Log
-- `minecraft:element_50`
-[Education Edition] Tin (Sn)
 - `minecraft:element_54`
 [Education Edition] Xenon (Xe)
 - `minecraft:element_55`
@@ -2500,6 +2508,7 @@ Mangrove Log
 Powered Comparator
 - `minecraft:warped_wall_sign`
 Warped Wall Sign
+- `minecraft:open_eyeblossom`
 - `minecraft:pale_oak_sapling`
 - `minecraft:mangrove_double_slab`
 Mangrove Double Slab
@@ -2528,6 +2537,7 @@ Polished Blackstone Brick Double Slab
 Waxed Exposed Copper
 - `minecraft:waxed_weathered_copper`
 Waxed Weathered Copper
+- `minecraft:resin_brick_double_slab`
 - `minecraft:cyan_candle_cake`
 Cyan Candle Cake
 - `minecraft:polished_tuff_wall`
@@ -2788,6 +2798,7 @@ Cracked Deepslate Bricks
 Flowing Lava
 - `minecraft:jungle_fence_gate`
 Jungle Fence Gate
+- `minecraft:resin_brick_wall`
 - `minecraft:exposed_copper_grate`
 - `minecraft:coal_block`
 Coal Block
@@ -2842,6 +2853,7 @@ Crimson Stem
 - `minecraft:tuff_brick_double_slab`
 - `minecraft:warped_hyphae`
 Warped Hyphae
+- `minecraft:resin_bricks`
 - `minecraft:tuff_stairs`
 - `minecraft:grass_block`
 - `minecraft:item.reeds`
@@ -2888,6 +2900,7 @@ End Brick Stairs
 Nether Sprouts
 - `minecraft:verdant_froglight`
 Verdant Froglight
+- `minecraft:resin_block`
 - `minecraft:warped_stem`
 Warped Stem
 - `minecraft:stripped_crimson_hyphae`

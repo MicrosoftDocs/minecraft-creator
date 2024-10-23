@@ -24,8 +24,6 @@ landingContent:
         links:
           - text: Structure Block Overview
             url: IntroductionToStructureBlocks.md
-          - text: A Structure Block Tutorial
-            url: StructureBlocksTutorial.md
           - text: Structure Blocks Command Tutorial
             url: StructureBlocksCommandTutorial.md
           - text: Structure Command Reference Document

@@ -180,6 +180,6 @@ To export a 3D file, follow these steps:
 Now we have seen a structure block in action, you can learn more about how they work and what else you can do with them. Use structure blocks to save and load structures, learn the `/structure` command, and even learn a simple animation using a command block in the tutorial.
 
 > [!div class="nextstepaction"]
-> [Structure Blocks Tutorial](structureblockstutorial.md)
+> [Structure Blocks Tutorial](structureblockscommandtutorial.md)
 
 To see examples of structures, check out the Minecraft [Structure Blocks Behavior Pack Samples](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md).

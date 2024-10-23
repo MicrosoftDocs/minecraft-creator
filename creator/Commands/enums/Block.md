@@ -410,6 +410,8 @@ Melon Block
 Waxed Cut Copper Stairs
 - `waxed_cut_copper_stairs`
 Waxed Cut Copper Stairs
+- `minecraft:open_eyeblossom`
+- `open_eyeblossom`
 - `minecraft:mob_spawner`
 Mob Spawner
 - `mob_spawner`
@@ -602,6 +604,8 @@ Waxed Oxidized Cut Copper Slab
 Waxed Oxidized Cut Copper Slab
 - `minecraft:oak_leaves`
 - `oak_leaves`
+- `minecraft:resin_clump`
+- `resin_clump`
 - `minecraft:brain_coral_fan`
 - `brain_coral_fan`
 - `minecraft:cyan_candle_cake`
@@ -792,6 +796,8 @@ Brown Glazed Terracotta
 Brown Glazed Terracotta
 - `minecraft:waxed_copper_trapdoor`
 - `waxed_copper_trapdoor`
+- `minecraft:resin_brick_double_slab`
+- `resin_brick_double_slab`
 - `minecraft:oxidized_copper`
 Oxidized Copper
 - `oxidized_copper`
@@ -1976,6 +1982,8 @@ Warped Wart Block
 Warped Wart Block
 - `minecraft:light_gray_shulker_box`
 - `light_gray_shulker_box`
+- `minecraft:resin_bricks`
+- `resin_bricks`
 - `minecraft:carrots`
 Carrots
 - `carrots`
@@ -2110,6 +2118,8 @@ Magenta Candle Cake
 - `mushroom_stem`
 - `minecraft:black_terracotta`
 - `black_terracotta`
+- `minecraft:resin_brick_stairs`
+- `resin_brick_stairs`
 - `minecraft:deepslate_gold_ore`
 Deepslate Gold Ore
 - `deepslate_gold_ore`
@@ -2164,6 +2174,8 @@ Acacia Stairs
 - `brown_concrete`
 - `minecraft:cherry_slab`
 - `cherry_slab`
+- `minecraft:chiseled_resin_bricks`
+- `chiseled_resin_bricks`
 - `minecraft:bubble_coral`
 - `bubble_coral`
 - `minecraft:orange_shulker_box`
@@ -2298,6 +2310,8 @@ Nether Sprouts
 Verdant Froglight
 - `verdant_froglight`
 Verdant Froglight
+- `minecraft:resin_block`
+- `resin_block`
 - `minecraft:warped_slab`
 Warped Slab
 - `warped_slab`
@@ -2474,6 +2488,8 @@ Crying Obsidian
 Crying Obsidian
 - `minecraft:lime_carpet`
 - `lime_carpet`
+- `minecraft:closed_eyeblossom`
+- `closed_eyeblossom`
 - `minecraft:dead_fire_coral_fan`
 - `dead_fire_coral_fan`
 - `minecraft:decorated_pot`
@@ -2766,6 +2782,8 @@ Wheat
 Waxed Cut Copper
 - `waxed_cut_copper`
 Waxed Cut Copper
+- `minecraft:resin_brick_slab`
+- `resin_brick_slab`
 - `minecraft:heavy_core`
 - `heavy_core`
 - `minecraft:cobbled_deepslate_slab`
@@ -3164,6 +3182,8 @@ Lime Candle Cake
 Grass Path
 - `grass_path`
 Grass Path
+- `minecraft:resin_brick_wall`
+- `resin_brick_wall`
 - `minecraft:cobbled_deepslate_wall`
 Cobbled Deepslate Wall
 - `cobbled_deepslate_wall`

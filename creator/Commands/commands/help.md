@@ -67,6 +67,7 @@ Attempts to connect to the websocket server on the provided URL.
 - `transfer`
 - `clear`
 Clears items from player inventory.
+- `aimassist`
 - `time`
 Changes or queries the world's game time.
 - `camerashake`
