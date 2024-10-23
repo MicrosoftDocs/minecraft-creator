@@ -6,11 +6,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "Documents/IntroductionToStructureBlocks.md",
-      "redirect_url": "/minecraft/creator/documents/structures/IntroductionToStructureBlocks",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "Documents/StructureBlocksTutorial.md",
       "redirect_url": "/minecraft/creator/documents/structures/StructureBlocksTutorial",
       "redirect_document_id": false
