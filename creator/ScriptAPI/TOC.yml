@@ -124,6 +124,8 @@
       href: minecraft/server/BlockPistonState.md
     - name: BlockVolumeIntersection
       href: minecraft/server/BlockVolumeIntersection.md
+    - name: ButtonState
+      href: minecraft/server/ButtonState.md
     - name: CompoundBlockVolumeAction
       href: minecraft/server/CompoundBlockVolumeAction.md
     - name: CompoundBlockVolumePositionRelativity
@@ -160,6 +162,8 @@
       href: minecraft/server/HudElement.md
     - name: HudVisibility
       href: minecraft/server/HudVisibility.md
+    - name: InputButton
+      href: minecraft/server/InputButton.md
     - name: InputMode
       href: minecraft/server/InputMode.md
     - name: InputPermissionCategory
@@ -640,6 +644,10 @@
       href: minecraft/server/PlayerBreakBlockBeforeEvent.md
     - name: PlayerBreakBlockBeforeEventSignal
       href: minecraft/server/PlayerBreakBlockBeforeEventSignal.md
+    - name: PlayerButtonInputAfterEvent
+      href: minecraft/server/PlayerButtonInputAfterEvent.md
+    - name: PlayerButtonInputAfterEventSignal
+      href: minecraft/server/PlayerButtonInputAfterEventSignal.md
     - name: PlayerCursorInventoryComponent
       href: minecraft/server/PlayerCursorInventoryComponent.md
     - name: PlayerDimensionChangeAfterEvent
@@ -878,6 +886,8 @@
       href: minecraft/server/GreaterThanComparison.md
     - name: GreaterThanOrEqualsComparison
       href: minecraft/server/GreaterThanOrEqualsComparison.md
+    - name: InputEventOptions
+      href: minecraft/server/InputEventOptions.md
     - name: ItemCustomComponent
       href: minecraft/server/ItemCustomComponent.md
     - name: JigsawPlaceOptions

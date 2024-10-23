@@ -38,6 +38,10 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:chiseled_resin_bricks_from_slabs`
+- `minecraft:creaking_heart`
+- `minecraft:gray_dye_from_closed_eyeblossom`
+- `minecraft:orange_dye_from_open_eyeblossom`
 - `minecraft:pale_moss_carpet`
 - `minecraft:pale_oak_boat`
 - `minecraft:pale_oak_button`
@@ -60,8 +64,18 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:purpur_slab`
 - `minecraft:red_sandstone_stairs_from_chiseled`
 - `minecraft:red_sandstone_stairs_from_cut`
+- `minecraft:resin_block`
+- `minecraft:resin_bricks`
+- `minecraft:resin_brick_slab`
+- `minecraft:resin_brick_stairs`
+- `minecraft:resin_brick_wall`
+- `minecraft:resin_clump_from_resin_block`
 - `minecraft:sandstone_stairs_from_chiseled`
 - `minecraft:sandstone_stairs_from_cut`
+- `minecraft:stonecutter_resin_brick_chiseled`
+- `minecraft:stonecutter_resin_brick_slab`
+- `minecraft:stonecutter_resin_brick_stairs`
+- `minecraft:stonecutter_resin_brick_wall`
 - `minecraft:stonecutter_stonebrick_chiseled2`
 - `minecraft:stonecutter_stonebrick_slab2`
 - `minecraft:stonecutter_stonebrick_stairs2`

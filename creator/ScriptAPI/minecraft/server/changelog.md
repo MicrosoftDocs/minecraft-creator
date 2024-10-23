@@ -114,6 +114,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`setOp`](Player.md#setop)*
 - Added function *[`spawnParticle`](Player.md#spawnparticle)*
+#### Added *[`PlayerButtonInputAfterEvent`](PlayerButtonInputAfterEvent.md)*
+#### Added *[`PlayerButtonInputAfterEventSignal`](PlayerButtonInputAfterEventSignal.md)*
 #### Added *[`PlayerInputModeChangeAfterEvent`](PlayerInputModeChangeAfterEvent.md)*
 #### Added *[`PlayerInputModeChangeAfterEventSignal`](PlayerInputModeChangeAfterEventSignal.md)*
 #### Changed *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
@@ -142,12 +144,14 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
+- Added property *[`playerButtonInput`](WorldAfterEvents.md#playerbuttoninput)*
 - Added property *[`playerInputModeChange`](WorldAfterEvents.md#playerinputmodechange)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
 - Added value `FluidContainer`
+#### Added enum [`ButtonState`](ButtonState.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Added enum [`Difficulty`](Difficulty.md)
@@ -155,6 +159,7 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Npc`
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
+#### Added enum [`InputButton`](InputButton.md)
 #### Added enum [`InputMode`](InputMode.md)
 #### Changed enum [`InputPermissionCategory`](InputPermissionCategory.md)
 - Added value `LateralMovement`

@@ -9,6 +9,7 @@ description: List and descriptions of Minecraft commands and enums
 # List and summary of commands:
 |Command   |Description   |Required Permission Level  | Requires Cheats Enabled |
 |----------|-----------|-----------|-----------|
+| [`/aimassist`](./commands/aimassist.md) | Enable Aim Assist | Game Directors | Yes |
 | [`/allowlist`](./commands/allowlist.md) | Manages the server allowlist. | Owner | Yes |
 | [`/camera`](./commands/camera.md) | Transforms the camera for the selected player(s) to a different perspective. | Game Directors | Yes |
 | [`/camerashake`](./commands/camerashake.md) | Applies shaking to the players&#39; camera with specified intensity and duration. Parameters: &#39;stop&#39; or &#39;add&#39; the effect, specify player (target), intensity (float, min 0.0 to max 4.0), seconds(float, min 0.01), and shakeType (positional or rotational). Must have &#x60;Allow Camera Shake&#x60; option turned on in user settings. | Game Directors | Yes |

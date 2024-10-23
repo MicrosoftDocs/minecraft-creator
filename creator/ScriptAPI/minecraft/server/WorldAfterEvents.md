@@ -211,6 +211,18 @@ This event fires for a block that is broken by a player.
 
 Type: [*PlayerBreakBlockAfterEventSignal*](PlayerBreakBlockAfterEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerButtonInput**
+`read-only playerButtonInput: PlayerButtonInputAfterEventSignal;`
+
+This event fires when an {@link @minecraft/Server.InputButton} state is changed.
+
+Type: [*PlayerButtonInputAfterEventSignal*](PlayerButtonInputAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **playerDimensionChange**
 `read-only playerDimensionChange: PlayerDimensionChangeAfterEventSignal;`
 
