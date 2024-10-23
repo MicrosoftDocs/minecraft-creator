@@ -296,6 +296,8 @@
           href: Reference/Content/blockreference/Examples/BlockStatesAndPermutations.md
         - name: Default Block State and Trait Listings
           href: Reference/Content/blockreference/Examples/BlockStateAndTraitListings.md
+        - name: Customizing the Item for a Block
+          href: Reference/Content/blockreference/Examples/CustomizingItemForABlock.md
         - name: Create a Village with Structure Blocks
           href: Documents/Structures/IntroductionToStructureBlocks.md
         - name: Getting Started with Command Blocks
@@ -418,8 +420,6 @@
             href: Reference/Content/blockreference/Examples/Definitions/BlockCulling.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
-          - name: Customizing the Item for a Block
-            href: Reference/Content/blockreference/Examples/CustomizingItemForABlock.md
           - name: Vanilla Block Tags
             href: Reference/Content/blockreference/Examples/VanillaBlockTags.md
         - name: Entity JSON
