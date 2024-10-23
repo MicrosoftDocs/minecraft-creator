@@ -1,8 +1,13 @@
 {
   "redirections": [
     {
+      "source_path": "Documents/Structures/StructureBlocksTutorial.md",
+      "redirect_url": "/minecraft/creator/documents/structures/StructureBlocksCommandTutorial",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/IntroductionToStructureBlocks.md",
-      "redirect_url": "/minecraft/creator/documents/structures/IntroductionToStructureBlocks",
+      "redirect_url": "/minecraft/creator/documents/structures/StructureBlocksCommandTutorial",
       "redirect_document_id": false
     },
     {
