@@ -61,7 +61,6 @@ Note: Some filters can modify blocks directly as a side-effect of filter evaluat
   - Probability: The chance of the block being replaced. 
 
 
-
 ## Example JSON 
 
 This example shows how a Structure Template can be dynamically modified at generation time to replace blocks and add loot tables. The first rule randomly replaces 20% of Gravel blocks with Dirt blocks. The second rule replaces 10% of Gravel blocks with Coarse Dirt blocks. The third rule replaces 10% of Mud Bricks blocks with Packed Mud. Finally, the fourth rule replaces a single random Gravel block with a Suspicious Gravel block and adds a loot table to it. 
