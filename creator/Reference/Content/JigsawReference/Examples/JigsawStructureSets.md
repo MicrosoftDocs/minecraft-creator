@@ -2,7 +2,7 @@
 author: iconicNurdle
 ms.author: mikeam
 title: Jigsaw Structure Sets Documentation 
-description: "A reference document about Jigsaw JSON Template Pools"
+description: "A reference document about Jigsaw Structure Sets"
 ms.service: minecraft-bedrock-edition
 ---
 

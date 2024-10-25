@@ -23,11 +23,11 @@ landingContent:
       - linkListType: reference
         links:
           - text: Jigsaw Structures
-            url: Examples/JigsawReference/JigsawJigsawStructures.md
+            url: Examples/JigsawJigsawStructures.md
           - text: Processor List
-            url: Examples/JigsawReference/JigsawProcessorList.md
+            url: Examples/JigsawProcessorList.md
           - text: Structure Sets
-            url: Examples/JigsawReference/JigsawStructureSets.md
+            url: Examples/JigsawStructureSets.md
           - text: Template Pool
-            url: Examples/JigsawReference/JigsawTemplatePool.md
+            url: Examples/JigsawTemplatePool.md
 
