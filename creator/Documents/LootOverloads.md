@@ -54,7 +54,7 @@ Let's take a look at the overloads in more detail, beginning with the `/kill` co
 
 **position** - Position specifying the block in the world to mine for loot.
 
-**[tool|mainhand|offhand]** - (Optional) Tool with which to simulate mining a given block. Default is `mainhand`.
+**[tool|mainhand|offhand]** - (Optional) Tool with which to simulate mining a given block. Default is an empty hand.
 
 **Output** - If successful, the command returns a message saying how many items were dropped. The command returns an error message if the position is out of the world or if the position is not loaded.
 
