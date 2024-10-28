@@ -25,9 +25,9 @@ landingContent:
           - text: Jigsaw Structures
             url: Examples/JigsawJigsawStructures.md
           - text: Processor List
-            url: Examples/JigsawProcessorList.md
+            url: Examples/JigsawProcessors.md
           - text: Structure Sets
             url: Examples/JigsawStructureSets.md
           - text: Template Pool
-            url: Examples/JigsawTemplatePool.md
+            url: Examples/JigsawTemplatePools.md
 
