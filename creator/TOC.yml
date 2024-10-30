@@ -457,9 +457,9 @@
           - name: Jigsaw Structures
             href: Reference/Content/WorldgenReference/Examples/JigsawJigsawStructures.md
           - name: Jigsaw Processor List
-            href: Reference/Content/WorldgenReference/Examples/JigsawProcessorList.md
+            href: Reference/Content/WorldgenReference/Examples/JigsawProcessors.md
           - name: Jigsaw Template Pool
-            href: Reference/Content/WorldgenReference/Examples/JigsawTemplatePool.md
+            href: Reference/Content/WorldgenReference/Examples/JigsawTemplatePools.md
           - name: Jigsaw Structure Sets
             href: Reference/Content/WorldgenReference/Examples/JigsawStructureSets.md
         - name: Recipe JSON
