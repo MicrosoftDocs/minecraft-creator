@@ -228,6 +228,8 @@
             href: Documents/ParkourWorldGuide.md 
         - name: Introduction to Structure Blocks
           href: Documents/Structures/IntroductionToStructureBlocks.md
+        - name: Introduction to Jigsaw Structures
+          href: Documents/Structures/IntroductionToJigsawStructures.md 
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
         - name: Data-Driven Overworld Height and Void Generation
@@ -450,6 +452,16 @@
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
           - name: Custom Item Use Priority
             href: Reference/Content/itemreference/Examples/ItemUsePriority.md
+        - name: Jigsaw JSON
+          items:
+          - name: Jigsaw Structures
+            href: Reference/Content/WorldgenReference/Examples/JigsawJigsawStructures.md
+          - name: Jigsaw Processor List
+            href: Reference/Content/WorldgenReference/Examples/JigsawProcessors.md
+          - name: Jigsaw Template Pool
+            href: Reference/Content/WorldgenReference/Examples/JigsawTemplatePools.md
+          - name: Jigsaw Structure Sets
+            href: Reference/Content/WorldgenReference/Examples/JigsawStructureSets.md
         - name: Recipe JSON
           href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
         - name: Spawn Rule JSON
