@@ -19,6 +19,13 @@ A key binding that will activate the tool. Note that if the tool is a modal tool
 
 Type: *ISimpleToolKeyBinding*
 
+### **id**
+`id: string;`
+
+The unique identifier of the tool.
+
+Type: *string*
+
 ### **name**
 `name: string;`
 

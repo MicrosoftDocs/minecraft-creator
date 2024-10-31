@@ -36,7 +36,7 @@ The respective icon textures would need to be added:
  - my_custom_bundle_open_front.png
  - my_custom_bundle_open_back.png
 
-Note that it’s important that the filenames are the item name, plus **"_open_front"** and **"_open_back"** respectively.
+Note that it's important that the filenames are the item name, plus **"_open_front"** and **"_open_back"** respectively.
 
 ### Example
 

@@ -10,10 +10,20 @@ description: Contents of the @minecraft/server-editor.WidgetComponentBaseOptions
 
 ## Properties
 
+### **lockToSurface**
+`lockToSurface?: boolean;`
+
+Type: *boolean*
+
 ### **offset**
 `offset?: minecraftserver.Vector3;`
 
 Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+### **stateChangeEvent**
+`stateChangeEvent?: (arg: WidgetComponentStateChangeEventData) => void;`
+
+Type: (arg: [*WidgetComponentStateChangeEventData*](WidgetComponentStateChangeEventData.md)) => *void*
 
 ### **visible**
 `visible?: boolean;`

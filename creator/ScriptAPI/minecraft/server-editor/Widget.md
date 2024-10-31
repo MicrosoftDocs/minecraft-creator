@@ -10,6 +10,14 @@ description: Contents of the @minecraft/server-editor.Widget class.
 
 ## Properties
 
+### **bindPositionToBlockCursor**
+`bindPositionToBlockCursor: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
 ### **collisionOffset**
 `collisionOffset: minecraftserver.Vector3;`
 
@@ -30,6 +38,14 @@ Notes:
 `location: minecraftserver.Vector3;`
 
 Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **lockPositionToSurface**
+`lockPositionToSurface: boolean;`
+
+Type: *boolean*
 
 Notes:
   - This property can't be edited in read-only mode.
@@ -72,6 +88,7 @@ Notes:
 Type: *boolean*
 
 ## Methods
+- [addClipboardComponent](#addclipboardcomponent)
 - [addEntityComponent](#addentitycomponent)
 - [addGizmoComponent](#addgizmocomponent)
 - [addGuideComponent](#addguidecomponent)
@@ -83,6 +100,23 @@ Type: *boolean*
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [setStateChangeEvent](#setstatechangeevent)
+
+### **addClipboardComponent**
+`
+addClipboardComponent(componentName: string, clipboardItem?: ClipboardItem, options?: WidgetComponentClipboardOptions): WidgetComponentClipboard
+`
+
+#### **Parameters**
+- **componentName**: *string*
+- **clipboardItem**?: [*ClipboardItem*](ClipboardItem.md) = `null`
+- **options**?: [*WidgetComponentClipboardOptions*](WidgetComponentClipboardOptions.md) = `null`
+
+**Returns** [*WidgetComponentClipboard*](WidgetComponentClipboard.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **addEntityComponent**
 `
@@ -135,12 +169,12 @@ Notes:
 
 ### **addRenderPrimitiveComponent**
 `
-addRenderPrimitiveComponent(componentName: string, primitiveType: WidgetComponentRenderPrimitiveAxialSphere | WidgetComponentRenderPrimitiveBox | WidgetComponentRenderPrimitiveDisc | WidgetComponentRenderPrimitiveLine, options?: WidgetComponentRenderPrimitiveOptions): WidgetComponentRenderPrimitive
+addRenderPrimitiveComponent(componentName: string, primitiveType: WidgetComponentRenderPrimitiveTypeAxialSphere | WidgetComponentRenderPrimitiveTypeBox | WidgetComponentRenderPrimitiveTypeDisc | WidgetComponentRenderPrimitiveTypeLine, options?: WidgetComponentRenderPrimitiveOptions): WidgetComponentRenderPrimitive
 `
 
 #### **Parameters**
 - **componentName**: *string*
-- **primitiveType**: [*WidgetComponentRenderPrimitiveAxialSphere*](WidgetComponentRenderPrimitiveAxialSphere.md) | [*WidgetComponentRenderPrimitiveBox*](WidgetComponentRenderPrimitiveBox.md) | [*WidgetComponentRenderPrimitiveDisc*](WidgetComponentRenderPrimitiveDisc.md) | [*WidgetComponentRenderPrimitiveLine*](WidgetComponentRenderPrimitiveLine.md)
+- **primitiveType**: [*WidgetComponentRenderPrimitiveTypeAxialSphere*](WidgetComponentRenderPrimitiveTypeAxialSphere.md) | [*WidgetComponentRenderPrimitiveTypeBox*](WidgetComponentRenderPrimitiveTypeBox.md) | [*WidgetComponentRenderPrimitiveTypeDisc*](WidgetComponentRenderPrimitiveTypeDisc.md) | [*WidgetComponentRenderPrimitiveTypeLine*](WidgetComponentRenderPrimitiveTypeLine.md)
 - **options**?: [*WidgetComponentRenderPrimitiveOptions*](WidgetComponentRenderPrimitiveOptions.md) = `null`
 
 **Returns** [*WidgetComponentRenderPrimitive*](WidgetComponentRenderPrimitive.md)
@@ -244,4 +278,4 @@ setStateChangeEvent(eventFunction?: (arg: WidgetStateChangeEventData) => void): 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*InvalidWidgetError*](InvalidWidgetError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
+  - Throws [*InvalidWidgetError*](InvalidWidgetError.md)

@@ -3,10 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server-editor.WidgetComponentRenderPrimitiveLine Class
-description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimitiveLine class.
+title: minecraft/server-editor.WidgetComponentRenderPrimitiveTypeLine Class
+description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimitiveTypeLine class.
 ---
-# WidgetComponentRenderPrimitiveLine Class
+# WidgetComponentRenderPrimitiveTypeLine Class
+
+## Extends
+- [*WidgetComponentRenderPrimitiveTypeBase*](WidgetComponentRenderPrimitiveTypeBase.md)
 
 ## Properties
 
@@ -39,7 +42,7 @@ Notes:
 
 ### **constructor**
 `
-new WidgetComponentRenderPrimitiveLine(start: minecraftserver.Vector3, end: minecraftserver.Vector3, color: minecraftserver.RGBA)
+new WidgetComponentRenderPrimitiveTypeLine(start: minecraftserver.Vector3, end: minecraftserver.Vector3, color: minecraftserver.RGBA)
 `
 
 #### **Parameters**
@@ -47,4 +50,4 @@ new WidgetComponentRenderPrimitiveLine(start: minecraftserver.Vector3, end: mine
 - **end**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 - **color**: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
-**Returns** [*WidgetComponentRenderPrimitiveLine*](WidgetComponentRenderPrimitiveLine.md)
+**Returns** [*WidgetComponentRenderPrimitiveTypeLine*](WidgetComponentRenderPrimitiveTypeLine.md)

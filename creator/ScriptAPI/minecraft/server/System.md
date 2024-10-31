@@ -48,10 +48,6 @@ Type: [*SystemInfo*](SystemInfo.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-Notes:
-  - This property can throw errors when used.
-    - Throws *Error*
 ::: moniker-end
 
 ## Methods

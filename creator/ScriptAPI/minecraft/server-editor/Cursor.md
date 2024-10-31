@@ -43,49 +43,14 @@ Notes:
   - This property can throw errors when used.
 
 ## Methods
-- [attachClipboardItem](#attachclipboarditem)
-- [clearAttachment](#clearattachment)
-- [getAttachmentProperties](#getattachmentproperties)
 - [getPosition](#getposition)
 - [getProperties](#getproperties)
+- [getRay](#getray)
 - [hide](#hide)
 - [moveBy](#moveby)
 - [resetToDefaultState](#resettodefaultstate)
-- [setAttachmentProperties](#setattachmentproperties)
 - [setProperties](#setproperties)
 - [show](#show)
-
-### **attachClipboardItem**
-`
-attachClipboardItem(item: ClipboardItem): void
-`
-
-#### **Parameters**
-- **item**: [*ClipboardItem*](ClipboardItem.md)
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-
-### **clearAttachment**
-`
-clearAttachment(): void
-`
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-
-### **getAttachmentProperties**
-`
-getAttachmentProperties(): CursorAttachmentProperties
-`
-
-**Returns** [*CursorAttachmentProperties*](CursorAttachmentProperties.md)
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
 
 ### **getPosition**
 `
@@ -112,6 +77,18 @@ Get a property object which represents the current properties of the 3D block cu
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+### **getRay**
+`
+getRay(): CursorRay
+`
+
+**Returns** [*CursorRay*](CursorRay.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
 
 ### **hide**
 `
@@ -148,18 +125,6 @@ resetToDefaultState(): void
 `
 
 Reset the 3D block cursor to the system default state
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-
-### **setAttachmentProperties**
-`
-setAttachmentProperties(properties: CursorAttachmentProperties): void
-`
-
-#### **Parameters**
-- **properties**: [*CursorAttachmentProperties*](CursorAttachmentProperties.md)
   
 Notes:
 - This function can't be called in read-only mode.

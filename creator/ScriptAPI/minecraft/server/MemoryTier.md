@@ -15,27 +15,23 @@ monikerRange: "=minecraft-bedrock-experimental"
 Describes the memory of a device.
 
 ## Constants
-### **Undetermined**
-`Undetermined = 0`
-
-Memory not detected.
 ### **SuperLow**
-`SuperLow = 1`
+`SuperLow = 0`
 
 Max memory for Super Low Tier is 1.5GBs.
 ### **Low**
-`Low = 2`
+`Low = 1`
 
  Max memory for Low Tier is 2GBs.
 ### **Mid**
-`Mid = 3`
+`Mid = 2`
 
 Max memory for Mid Tier is 4GBs.
 ### **High**
-`High = 4`
+`High = 3`
 
 Max memory for High Tier is 8GBs.
 ### **SuperHigh**
-`SuperHigh = 5`
+`SuperHigh = 4`
 
 Memory for Super High Tier is above 8GBs.

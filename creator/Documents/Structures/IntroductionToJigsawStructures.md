@@ -8,9 +8,15 @@ ms.service: minecraft-bedrock-edition
 
 # Introduction to Jigsaw Structures
 
-In this overview, you will be learning about Jigsaw Structures! Jigsaw Structures are large structures comprised of multiple structure templates. These structure templates contain Jigsaw Blocks which specify how each structure template should connect to one another. 
+In this overview, you will be learning about Jigsaw Structures! Jigsaw Structures are large structures comprised of multiple structure templates. These structure templates contain Jigsaw Blocks which specify how each structure template should connect to one another.
 
-Jigsaw Structures can generate randomly in the world. Examples of Vanilla Jigsaw Structures include Trail Ruins and Trial Chambers. 
+Jigsaw Structures can generate randomly in the world. Examples of Vanilla Jigsaw Structures include Trail Ruins and Trial Chambers.
+
+## On the Minecraft Creator Channel
+
+A brief tutorial on creating with Jigsaw structures is available on the [Minecraft Creator Channel](https://aka.ms/mcv):
+
+> [!VIDEO https://www.youtube.com/embed/57sLxXDkaA0]
 
 ## Terminology
 
@@ -24,10 +30,10 @@ Jigsaw Structures can generate randomly in the world. Examples of Vanilla Jigsaw
 
 ### Pack Structure
 
-Jigsaw Structures are defined using these four JSON files: 
+Jigsaw Structures are defined using these four JSON files:
 
 - mystructure.json
-- mystructureprocessor.json 
+- mystructureprocessor.json
 - mystructureset.json
 - mytemplatepool.json
 
@@ -47,13 +53,15 @@ behavior_packs
         mytemplatepool.json
 ```
 
-## Processor List 
+## Processors
 
 Processors are functions that run when placing a Structure Template in the world. Currently, the only supported processor is the Block Rules processor, which describes how individual blocks of Structure Templates should be modified when placed in the world. For example, you might want to randomly replace half of the Cobblestone blocks with Mossy Cobblestone. Or you might want to replace Gravel with Suspicious Gravel and add a loot table.  
 
-The example below shows how a Structure Template can be dynamically modified at generation time to replace blocks and add loot tables. 
+The example below shows how a Structure Template can be dynamically modified at generation time to replace blocks and add loot tables.
 
-The first rule randomly replaces 20% of Gravel blocks with Dirt blocks. The second rule replaces 10% of Gravel blocks with Coarse Dirt blocks. The third rule replaces 10% of Mud Bricks blocks with Packed Mud. Finally, the fourth rule replaces a single random Gravel block with a Suspicious Gravel block and adds a loot table to it. 
+The first rule randomly replaces 20% of Gravel blocks with Dirt blocks. The second rule replaces 10% of Gravel blocks with Coarse Dirt blocks. The third rule replaces 10% of Mud Bricks blocks with Packed Mud. Finally, the fourth rule replaces a single random Gravel block with a Suspicious Gravel block and adds a loot table to it.
+
+- [Reference: Worldgen Processors](./../../Reference/Content/WorldgenReference/Examples/JigsawProcessors.md)
 
 ```json
 {
@@ -122,7 +130,9 @@ The first rule randomly replaces 20% of Gravel blocks with Dirt blocks. The seco
 
 ### Template Pool
 
-Template Pools are groups of related structure templates with assigned weights and processors. During world generation, the Jigsaw Structure "Start Pool" specifies which Template Pool to use first. A Structure Template is then randomly chosen from the pool and placed as the first structure piece. Jigsaw Blocks within the placed structure may also specify Template Pools from which subsequent structure pieces are placed recursively until the Jigsaw Structure becomes fully generated. 
+Template Pools are groups of related structure templates with assigned weights and processors. During world generation, the Jigsaw Structure "Start Pool" specifies which Template Pool to use first. A Structure Template is then randomly chosen from the pool and placed as the first structure piece. Jigsaw Blocks within the placed structure may also specify Template Pools from which subsequent structure pieces are placed recursively until the Jigsaw Structure becomes fully generated.
+
+- [Reference: Worldgen Template Pools](./../../Reference/Content/WorldgenReference/Examples/JigsawTemplatePools.md)
 
 **Template Pool Example**
 
@@ -160,8 +170,10 @@ Template Pools are groups of related structure templates with assigned weights a
 
 Jigsaw Structures are large structures comprised of multiple Structure Templates, each containing Jigsaw Blocks to determine their relative placement and constraints. These structures also have rules guiding how and where they are generated within the world. Examples of Jigsaw Structures include Trail Ruins and Trial Chambers.
 
+- [Reference: Worldgen Template Pools](./../../Reference/Content/WorldgenReference/Examples/JigsawJigsawStructures.md)
+
 >[!Note]
-> Other Jigsaw Structures such as Villages and Bastions use a legacy version of the Jigsaw Structure System and cannot be modified via JSON. 
+> Other Jigsaw Structures such as Villages and Bastions use a legacy version of the Jigsaw Structure System and cannot be modified via JSON.
 
 ```json
 { 
@@ -187,13 +199,15 @@ Jigsaw Structures are large structures comprised of multiple Structure Templates
 } 
 ```
 
-### Structure Sets 
+### Structure Sets
 
-A Structure Set contains a set of Jigsaw Structures and rules for how those structures should be placed in the world relative to other instances of structures from the same set. Each structure within a set is paired with a weight that influences how frequently it is chosen. 
+A Structure Set contains a set of Jigsaw Structures and rules for how those structures should be placed in the world relative to other instances of structures from the same set. Each structure within a set is paired with a weight that influences how frequently it is chosen.
+
+- [Reference: Worldgen Structure Sets](./../../Reference/Content/WorldgenReference/Examples/JigsawStructureSets.md)
 
 **Structure Set Example**
 
-Jigsaw Structures placed (red) with 32 spacing, (blue) 4 separation. Each pixel is 1 chunk. 
+Jigsaw Structures placed (red) with 32 spacing, (blue) 4 separation. Each pixel is 1 chunk.
 
 ```json
 { 

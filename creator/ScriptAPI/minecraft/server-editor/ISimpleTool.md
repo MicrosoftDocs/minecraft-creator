@@ -12,6 +12,13 @@ The simple tool wrapper will create, bind and manage the lifecycle of all the de
 
 ## Properties
 
+### **id**
+`read-only id: string;`
+
+Get the tool unique id
+
+Type: *string*
+
 ### **menu**
 `read-only menu: IMenu | undefined;`
 
