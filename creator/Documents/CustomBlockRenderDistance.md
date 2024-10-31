@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 When creating a Custom Block you have a lot of things to consider about how it is displayed in the world. One of the important ones for making it feel like a seamless integration with existing blocks is getting the right render distance. 
 
-If you’re making a new crop you want it to stay visible as long as the existing vanilla crops do. To be able to control the render distance we first need to understand the relationship between render method and render distance. 
+If you're making a new crop you want it to stay visible as long as the existing vanilla crops do. To be able to control the render distance we first need to understand the relationship between render method and render distance. 
 
 ## Render Method
 
@@ -35,8 +35,8 @@ Use this table to find see the values for each of these under "perfect" conditio
 | Far | opaque | Render Distance / 2  | Render Distance |
 | Near | double_sided, blend, alpha_test, alpha_test_single_sided | 0 | Render Distance – Far Render Distance Start |
 
-Far blocks are also rendered in the near group, so there isn’t a gap where far blocks aren’t visible. 
+Far blocks are also rendered in the near group, so there isn't a gap where far blocks aren't visible. 
 
 ### Blend Exceptions 
 
-For Vanilla blocks, water is a special case. It can be inserted into the far group even though it uses a blend texture. This can’t be currently replicated through Custom Blocks. 
+For Vanilla blocks, water is a special case. It can be inserted into the far group even though it uses a blend texture. This can't be currently replicated through Custom Blocks. 

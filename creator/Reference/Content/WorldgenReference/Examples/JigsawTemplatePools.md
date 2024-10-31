@@ -12,7 +12,7 @@ Template Pools are groups of related structure templates with assigned weights a
 
 ## Properties 
 
-- Identifier: Identifier of the template pool. This is used by both the start_pool property of the Jigsaw Structure JSON and the Jigsaw Block’s Target Pool field. 
+- Identifier: Identifier of the template pool. This is used by both the start_pool property of the Jigsaw Structure JSON and the Jigsaw Block's Target Pool field. 
 
 - Elements: An array of pool elements. 
 
@@ -20,7 +20,7 @@ Template Pools are groups of related structure templates with assigned weights a
 
   - Element Type: The type of element. Currently, only minecraft:single_pool_element is supported. 
 
-  - Location: The path of the structure file. This path is relative to the behavior pack’s "structures" folder. 
+  - Location: The path of the structure file. This path is relative to the behavior pack's "structures" folder. 
 
   - Processors (optional): The identifier of the processor list to use when placing the structure. 
 
