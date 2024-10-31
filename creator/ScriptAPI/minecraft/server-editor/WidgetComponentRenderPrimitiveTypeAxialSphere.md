@@ -3,10 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server-editor.WidgetComponentRenderPrimitiveAxialSphere Class
-description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimitiveAxialSphere class.
+title: minecraft/server-editor.WidgetComponentRenderPrimitiveTypeAxialSphere Class
+description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimitiveTypeAxialSphere class.
 ---
-# WidgetComponentRenderPrimitiveAxialSphere Class
+# WidgetComponentRenderPrimitiveTypeAxialSphere Class
+
+## Extends
+- [*WidgetComponentRenderPrimitiveTypeBase*](WidgetComponentRenderPrimitiveTypeBase.md)
 
 ## Properties
 
@@ -39,7 +42,7 @@ Notes:
 
 ### **constructor**
 `
-new WidgetComponentRenderPrimitiveAxialSphere(center: minecraftserver.Vector3, radius: number, color?: minecraftserver.RGBA)
+new WidgetComponentRenderPrimitiveTypeAxialSphere(center: minecraftserver.Vector3, radius: number, color?: minecraftserver.RGBA)
 `
 
 #### **Parameters**
@@ -47,4 +50,4 @@ new WidgetComponentRenderPrimitiveAxialSphere(center: minecraftserver.Vector3, r
 - **radius**: *number*
 - **color**?: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md) = `null`
 
-**Returns** [*WidgetComponentRenderPrimitiveAxialSphere*](WidgetComponentRenderPrimitiveAxialSphere.md)
+**Returns** [*WidgetComponentRenderPrimitiveTypeAxialSphere*](WidgetComponentRenderPrimitiveTypeAxialSphere.md)

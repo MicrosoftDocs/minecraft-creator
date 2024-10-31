@@ -31,3 +31,4 @@ description: Contents of the @minecraft/common module
 - [EngineError](EngineError.md)
 - [InvalidArgumentError](InvalidArgumentError.md)
 - [PropertyOutOfBoundsError](PropertyOutOfBoundsError.md)
+- [RuntimeConditionError](RuntimeConditionError.md)

@@ -112,6 +112,7 @@ Entity is a baby
 Entity responds to eating an allium flower
 - `minecraft:ate_bluet`
 Entity responds to eating a bluet flower
+- `minecraft:ate_closed_eyeblossom`
 - `minecraft:ate_cornflower`
 Entity responds to eating a cornflower
 - `minecraft:ate_daisy`
@@ -120,6 +121,7 @@ Entity responds to eating a daisy
 Entity responds to eating a dandelion
 - `minecraft:ate_lily`
 Entity responds to eating a lily
+- `minecraft:ate_open_eyeblossom`
 - `minecraft:ate_orchid`
 Entity responds to eating an orchid
 - `minecraft:ate_poppy`
@@ -129,8 +131,6 @@ Entity responds to eating a rose
 - `minecraft:ate_torchflower`
 - `minecraft:ate_tulip`
 Entity responds to eating a tulip
-- `minecraft:attacked_by_mob`
-- `minecraft:attacked_by_player`
 - `minecraft:baby_on_calm`
 Entity is a calmed baby
 - `minecraft:become_aggressive`
@@ -256,6 +256,8 @@ Entity converts to a zombie
 - `minecraft:crumble`
 - `minecraft:crystal_explode`
 Entity explodes a crystal
+- `minecraft:damaged_by_entity`
+- `minecraft:damaged_by_player`
 - `minecraft:defend_wandering_trader`
 Entity defends a wandering trader
 - `minecraft:donkey_saddled`
@@ -327,6 +329,7 @@ Horse is wearing a saddle
 - `minecraft:horse_unsaddled`
 Horse is not wearing a saddle
 - `minecraft:increase_max_health`
+- `minecraft:increment_swaying_ticks`
 - `minecraft:join_caravan`
 Entity joins a caravan
 - `minecraft:laid_egg`
@@ -426,6 +429,7 @@ Entity is in ranged mode
 Entity is no longer persistent
 - `minecraft:remove_raid_trigger`
 Raid trigger is removed
+- `minecraft:reset_swaying_ticks`
 - `minecraft:resupply_trades`
 Entities with a trade are having those trades resupplied
 - `minecraft:roll_up`
@@ -538,7 +542,6 @@ Entity starts tp land
 - `minecraft:start_roar`
 Entity starts roaring
 - `minecraft:start_sitting`
-- `minecraft:start_swaying`
 - `minecraft:start_transforming`
 Entity starts transforming
 - `minecraft:start_twitching`
@@ -554,7 +557,6 @@ Entity stops Johnny action
 - `minecraft:stop_peeking`
 - `minecraft:stop_playing_idle_ground_sound`
 - `minecraft:stop_sitting`
-- `minecraft:stop_swaying`
 - `minecraft:stop_transforming`
 Entity stops transforming
 - `minecraft:switch_to_melee`

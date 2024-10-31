@@ -12,37 +12,30 @@ Parameters for creating a modal tool in the tool container
 
 ## Properties
 
+### **action**
+`action: RegisteredAction<NoArgsAction>;`
+
+Action associated with tool activation
+
+Type: *RegisteredAction<NoArgsAction>*
+
 ### **icon**
 `icon: string;`
 
-Icon, if any (from resource pack on client)
-
-Type: *string*
-
-### **inputContextId**
-`inputContextId: string;`
-
-Modal input context identifier
-
-Type: *string*
-
-### **inputContextLabel**
-`inputContextLabel: string;`
-
-Localized text label for modal input context
+Icon resource
 
 Type: *string*
 
 ### **title**
 `title: string;`
 
-Title of the tool
+Localized title of the tool
 
 Type: *string*
 
 ### **tooltip**
 `tooltip: string;`
 
-Tooltip description of the toll
+Tooltip description of the tool
 
 Type: *string*

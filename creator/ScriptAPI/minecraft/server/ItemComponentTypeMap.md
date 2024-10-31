@@ -15,11 +15,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Declaration
 ```ts
 type ItemComponentTypeMap = {
+  'compostable': ItemCompostableComponent;
   'cooldown': ItemCooldownComponent;
   'durability': ItemDurabilityComponent;
   'dyeable': ItemDyeableComponent;
   'enchantable': ItemEnchantableComponent;
   'food': ItemFoodComponent;
+  'minecraft:compostable': ItemCompostableComponent;
   'minecraft:cooldown': ItemCooldownComponent;
   'minecraft:durability': ItemDurabilityComponent;
   'minecraft:dyeable': ItemDyeableComponent;

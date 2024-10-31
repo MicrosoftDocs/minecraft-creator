@@ -26,16 +26,18 @@ Type: *IModalTool[]*
 
 ### **addTool**
 `
-addTool(params: ModalToolCreationParameters, action: RegisteredAction<NoArgsAction>): IModalTool
+addTool(id: string, params: ModalToolCreationParameters): IModalTool
 `
 
 Create a new tool in the modal tool container represented via button on the tool rail.
 
 #### **Parameters**
+- **id**: *string*
+  
+  Unique identifier for the tool
 - **params**: *ModalToolCreationParameters*
   
   Construction parameters for the new tool
-- **action**: *RegisteredAction<NoArgsAction>*
 
 **Returns** *IModalTool*
 

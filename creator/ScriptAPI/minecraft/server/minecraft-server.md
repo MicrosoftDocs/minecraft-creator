@@ -271,6 +271,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemComponentRegistry](ItemComponentRegistry.md)
 - [ItemComponentUseEvent](ItemComponentUseEvent.md)
 - [ItemComponentUseOnEvent](ItemComponentUseOnEvent.md)
+- [ItemCompostableComponent](ItemCompostableComponent.md)
 - [ItemCooldownComponent](ItemCooldownComponent.md)
 - [ItemDurabilityComponent](ItemDurabilityComponent.md)
 - [ItemDyeableComponent](ItemDyeableComponent.md)

@@ -96,9 +96,11 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`FilterGroup`](FilterGroup.md)*
 #### Added *[`FluidContainer`](FluidContainer.md)*
 #### Added *[`InputInfo`](InputInfo.md)*
+#### Added *[`ItemCompostableComponent`](ItemCompostableComponent.md)*
 #### Added *[`ItemDyeableComponent`](ItemDyeableComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
+- Added property *[`compostingChance`](ItemStack.md#compostingchance)*
 - Added function *[`createPotion`](ItemStack.md#createpotion)*
 - Changed function *[`getComponent`](ItemStack.md#getcomponent)*
   - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
@@ -172,6 +174,7 @@ description: Changelog of the `@minecraft/server` module
 - Added value `MoveLeft`
 - Added value `MoveRight`
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
+- Added value `Compostable`
 - Added value `Dyeable`
 - Added value `Potion`
 #### Added enum [`MemoryTier`](MemoryTier.md)

@@ -9,6 +9,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentBase class.
 # WidgetComponentBase Class
 
 ## Classes that extend WidgetComponentBase
+- [*WidgetComponentClipboard*](WidgetComponentClipboard.md)
 - [*WidgetComponentEntity*](WidgetComponentEntity.md)
 - [*WidgetComponentGizmo*](WidgetComponentGizmo.md)
 - [*WidgetComponentGuide*](WidgetComponentGuide.md)
@@ -35,6 +36,14 @@ Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 Notes:
   - This property can throw errors when used.
     - Throws [*@minecraft/server.InvalidWidgetComponentError*](../../minecraft/server/InvalidWidgetComponentError.md)
+
+### **lockToSurface**
+`lockToSurface: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **name**
 `read-only name: string;`
@@ -74,11 +83,25 @@ Notes:
 
 ## Methods
 - [delete](#delete)
+- [setStateChangeEvent](#setstatechangeevent)
 
 ### **delete**
 `
 "delete"(): void
 `
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md)
+
+### **setStateChangeEvent**
+`
+setStateChangeEvent(eventFunction?: (arg: WidgetComponentStateChangeEventData) => void): void
+`
+
+#### **Parameters**
+- **eventFunction**?: (arg: [*WidgetComponentStateChangeEventData*](WidgetComponentStateChangeEventData.md)) => *void* = `null`
   
 Notes:
 - This function can't be called in read-only mode.

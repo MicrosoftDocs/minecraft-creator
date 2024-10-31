@@ -3,10 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server-editor.WidgetComponentRenderPrimitiveDisc Class
-description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimitiveDisc class.
+title: minecraft/server-editor.WidgetComponentRenderPrimitiveTypeDisc Class
+description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimitiveTypeDisc class.
 ---
-# WidgetComponentRenderPrimitiveDisc Class
+# WidgetComponentRenderPrimitiveTypeDisc Class
+
+## Extends
+- [*WidgetComponentRenderPrimitiveTypeBase*](WidgetComponentRenderPrimitiveTypeBase.md)
 
 ## Properties
 
@@ -39,7 +42,7 @@ Notes:
 
 ### **constructor**
 `
-new WidgetComponentRenderPrimitiveDisc(center: minecraftserver.Vector3, radius: number, color: minecraftserver.RGBA)
+new WidgetComponentRenderPrimitiveTypeDisc(center: minecraftserver.Vector3, radius: number, color: minecraftserver.RGBA)
 `
 
 #### **Parameters**
@@ -47,4 +50,4 @@ new WidgetComponentRenderPrimitiveDisc(center: minecraftserver.Vector3, radius: 
 - **radius**: *number*
 - **color**: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
-**Returns** [*WidgetComponentRenderPrimitiveDisc*](WidgetComponentRenderPrimitiveDisc.md)
+**Returns** [*WidgetComponentRenderPrimitiveTypeDisc*](WidgetComponentRenderPrimitiveTypeDisc.md)
