@@ -116,35 +116,35 @@ Example:
   "format_version": "1.21.60",
   "minecraft:block": {
     "description": {
-    "identifier": "testpack:custom_block_with_item_visual",
-    "menu_category": {
-      "category": "items",
-      "group": "itemGroup.name.custom"
-    }
+      "identifier": "testpack:custom_block_with_item_visual",
+      "menu_category": {
+        "category": "items",
+        "group": "itemGroup.name.custom"
+      }
     },
     "components": {
-    "minecraft:geometry": {
-      "identifier": "minecraft:geometry.full_block"
-    },
-    "minecraft:material_instances": {
-      "*": {
-      "texture": "dirt"
-      }
-    },
-    "minecraft:item_visual": {
-      "geometry": {
+      "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"
       },
-      "material_instances": {
-      "*": {
-      "texture": "stone",
-      "render_method": "opaque"
-      }
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "dirt"
+        }
+      },
+      "minecraft:item_visual": {
+        "geometry": {
+          "identifier": "minecraft:geometry.full_block"
+        },
+        "material_instances": {
+          "*": {
+          "texture": "stone",
+          "render_method": "opaque"
+          }
+        }
       }
     }
-    }
   }
-  }
+}
 ```
 
 This is an image of a custom block that looks like dirt in your hand and hotbar, but looks like stone when you place it.
