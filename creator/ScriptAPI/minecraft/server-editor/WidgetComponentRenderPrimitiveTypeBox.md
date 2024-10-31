@@ -3,10 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server-editor.WidgetComponentRenderPrimitiveBox Class
-description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimitiveBox class.
+title: minecraft/server-editor.WidgetComponentRenderPrimitiveTypeBox Class
+description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimitiveTypeBox class.
 ---
-# WidgetComponentRenderPrimitiveBox Class
+# WidgetComponentRenderPrimitiveTypeBox Class
+
+## Extends
+- [*WidgetComponentRenderPrimitiveTypeBase*](WidgetComponentRenderPrimitiveTypeBase.md)
 
 ## Properties
 
@@ -39,7 +42,7 @@ Notes:
 
 ### **constructor**
 `
-new WidgetComponentRenderPrimitiveBox(center: minecraftserver.Vector3, color: minecraftserver.RGBA, size?: minecraftserver.Vector3)
+new WidgetComponentRenderPrimitiveTypeBox(center: minecraftserver.Vector3, color: minecraftserver.RGBA, size?: minecraftserver.Vector3)
 `
 
 #### **Parameters**
@@ -47,4 +50,4 @@ new WidgetComponentRenderPrimitiveBox(center: minecraftserver.Vector3, color: mi
 - **color**: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 - **size**?: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) = `null`
 
-**Returns** [*WidgetComponentRenderPrimitiveBox*](WidgetComponentRenderPrimitiveBox.md)
+**Returns** [*WidgetComponentRenderPrimitiveTypeBox*](WidgetComponentRenderPrimitiveTypeBox.md)

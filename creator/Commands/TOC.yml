@@ -76,6 +76,8 @@
   href: commands/particle.md
 - name: permission
   href: commands/permission.md
+- name: place
+  href: commands/place.md
 - name: playanimation
   href: commands/playanimation.md
 - name: playsound

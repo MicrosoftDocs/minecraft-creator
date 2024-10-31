@@ -9,13 +9,13 @@ description: Contents of the .PrimitiveType enumeration.
 # PrimitiveType Enumeration
 
 ## Constants
-### **AxialSphere**
-`AxialSphere = "AxialSphere"`
-### **Box**
-`Box = "Box"`
-### **Disc**
-`Disc = "Disc"`
-### **Line**
-`Line = "Line"`
 ### **Text**
-`Text = "Text"`
+`Text = 0`
+### **Box**
+`Box = 1`
+### **Line**
+`Line = 2`
+### **Disc**
+`Disc = 4`
+### **AxialSphere**
+`AxialSphere = 5`

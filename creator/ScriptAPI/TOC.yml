@@ -562,6 +562,8 @@
       href: minecraft/server/ItemComponentUseEvent.md
     - name: ItemComponentUseOnEvent
       href: minecraft/server/ItemComponentUseOnEvent.md
+    - name: ItemCompostableComponent
+      href: minecraft/server/ItemCompostableComponent.md
     - name: ItemCooldownComponent
       href: minecraft/server/ItemCooldownComponent.md
     - name: ItemDurabilityComponent
@@ -1062,10 +1064,6 @@
       href: minecraft/server-editor/CurrentThemeColorChangeAfterEventSignal.md
     - name: Cursor
       href: minecraft/server-editor/Cursor.md
-    - name: CursorAttachmentPropertiesChangeAfterEvent
-      href: minecraft/server-editor/CursorAttachmentPropertiesChangeAfterEvent.md
-    - name: CursorAttachmentPropertyChangeAfterEventSignal
-      href: minecraft/server-editor/CursorAttachmentPropertyChangeAfterEventSignal.md
     - name: CursorPropertiesChangeAfterEvent
       href: minecraft/server-editor/CursorPropertiesChangeAfterEvent.md
     - name: CursorPropertyChangeAfterEventSignal
@@ -1136,6 +1134,8 @@
       href: minecraft/server-editor/Widget.md
     - name: WidgetComponentBase
       href: minecraft/server-editor/WidgetComponentBase.md
+    - name: WidgetComponentClipboard
+      href: minecraft/server-editor/WidgetComponentClipboard.md
     - name: WidgetComponentEntity
       href: minecraft/server-editor/WidgetComponentEntity.md
     - name: WidgetComponentGizmo
@@ -1144,16 +1144,20 @@
       href: minecraft/server-editor/WidgetComponentGuide.md
     - name: WidgetComponentRenderPrimitive
       href: minecraft/server-editor/WidgetComponentRenderPrimitive.md
-    - name: WidgetComponentRenderPrimitiveAxialSphere
-      href: minecraft/server-editor/WidgetComponentRenderPrimitiveAxialSphere.md
-    - name: WidgetComponentRenderPrimitiveBox
-      href: minecraft/server-editor/WidgetComponentRenderPrimitiveBox.md
-    - name: WidgetComponentRenderPrimitiveDisc
-      href: minecraft/server-editor/WidgetComponentRenderPrimitiveDisc.md
-    - name: WidgetComponentRenderPrimitiveLine
-      href: minecraft/server-editor/WidgetComponentRenderPrimitiveLine.md
+    - name: WidgetComponentRenderPrimitiveTypeAxialSphere
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeAxialSphere.md
+    - name: WidgetComponentRenderPrimitiveTypeBase
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeBase.md
+    - name: WidgetComponentRenderPrimitiveTypeBox
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeBox.md
+    - name: WidgetComponentRenderPrimitiveTypeDisc
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeDisc.md
+    - name: WidgetComponentRenderPrimitiveTypeLine
+      href: minecraft/server-editor/WidgetComponentRenderPrimitiveTypeLine.md
     - name: WidgetComponentSpline
       href: minecraft/server-editor/WidgetComponentSpline.md
+    - name: WidgetComponentStateChangeEventData
+      href: minecraft/server-editor/WidgetComponentStateChangeEventData.md
     - name: WidgetComponentText
       href: minecraft/server-editor/WidgetComponentText.md
     - name: WidgetGroup
@@ -1170,10 +1174,10 @@
       href: minecraft/server-editor/BrushShape.md
     - name: ClipboardWriteOptions
       href: minecraft/server-editor/ClipboardWriteOptions.md
-    - name: CursorAttachmentProperties
-      href: minecraft/server-editor/CursorAttachmentProperties.md
     - name: CursorProperties
       href: minecraft/server-editor/CursorProperties.md
+    - name: CursorRay
+      href: minecraft/server-editor/CursorRay.md
     - name: EditorStructure
       href: minecraft/server-editor/EditorStructure.md
     - name: EditorStructureSearchOptions
@@ -1192,6 +1196,8 @@
       href: minecraft/server-editor/WeightedBlock.md
     - name: WidgetComponentBaseOptions
       href: minecraft/server-editor/WidgetComponentBaseOptions.md
+    - name: WidgetComponentClipboardOptions
+      href: minecraft/server-editor/WidgetComponentClipboardOptions.md
     - name: WidgetComponentEntityOptions
       href: minecraft/server-editor/WidgetComponentEntityOptions.md
     - name: WidgetComponentGizmoOptions

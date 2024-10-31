@@ -47,6 +47,7 @@ description: List and descriptions of Minecraft commands and enums
 | [`/op`](./commands/op.md) | Grants operator status to a player. | Admin | No |
 | [`/particle`](./commands/particle.md) | Creates a particle emitter | Game Directors | Yes |
 | [`/permission`](./commands/permission.md) | Reloads and applies permissions. This command is for use on a dedicated server only. | Owner | Yes |
+| [`/place`](./commands/place.md) | Places a jigsaw structure in the world. | Admin | Yes |
 | [`/playanimation`](./commands/playanimation.md) | Makes one or more entities play a one-off animation. | Game Directors | Yes |
 | [`/playsound`](./commands/playsound.md) | Plays a sound. | Game Directors | Yes |
 | [`/project`](./commands/project.md) | This command contains additional tools for managing an Editor project. This command is available in Editor mode only. | Game Directors | No |

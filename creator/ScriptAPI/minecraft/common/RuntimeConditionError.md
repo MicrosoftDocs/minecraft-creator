@@ -3,15 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .Plane Enumeration
-description: Contents of the .Plane enumeration.
+title: .RuntimeConditionError Class
+description: Contents of the .RuntimeConditionError class.
 ---
-# Plane Enumeration
+# RuntimeConditionError Class
 
-## Constants
-### **XY**
-`XY = 0`
-### **XZ**
-`XZ = 1`
-### **YZ**
-`YZ = 2`
+## Extends
+- *Error*

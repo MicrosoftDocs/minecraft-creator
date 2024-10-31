@@ -9,6 +9,8 @@ description: Contents of the .WidgetComponentType enumeration.
 # WidgetComponentType Enumeration
 
 ## Constants
+### **Clipboard**
+`Clipboard = "Clipboard"`
 ### **Entity**
 `Entity = "Entity"`
 ### **Gizmo**

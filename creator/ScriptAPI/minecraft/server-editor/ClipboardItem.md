@@ -12,6 +12,11 @@ A ClipboardItem is a handle to an object which represents a set of blocks in a c
 
 ## Properties
 
+### **id**
+`read-only id: string;`
+
+Type: *string*
+
 ### **isEmpty**
 `read-only isEmpty: boolean;`
 

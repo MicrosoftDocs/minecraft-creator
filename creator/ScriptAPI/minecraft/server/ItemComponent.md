@@ -12,6 +12,7 @@ description: Contents of the @minecraft/server.ItemComponent class.
 - [*Component*](Component.md)
 
 ## Classes that extend ItemComponent
+- [*ItemCompostableComponent*](ItemCompostableComponent.md)
 - [*ItemCooldownComponent*](ItemCooldownComponent.md)
 - [*ItemDurabilityComponent*](ItemDurabilityComponent.md)
 - [*ItemDyeableComponent*](ItemDyeableComponent.md)

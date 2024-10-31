@@ -11,6 +11,8 @@ description: Contents of the .ItemComponentTypes enumeration.
 The types of item components that are accessible via function ItemStack.getComponent.
 
 ## Constants
+### **Compostable**
+`Compostable = "minecraft:compostable"`
 ### **Cooldown**
 `Cooldown = "minecraft:cooldown"`
 

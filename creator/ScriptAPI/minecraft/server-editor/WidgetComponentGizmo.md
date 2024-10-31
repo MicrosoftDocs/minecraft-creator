@@ -10,3 +10,10 @@ description: Contents of the @minecraft/server-editor.WidgetComponentGizmo class
 
 ## Extends
 - [*WidgetComponentBase*](WidgetComponentBase.md)
+
+## Properties
+
+### **activated**
+`activated: boolean;`
+
+Type: *boolean*

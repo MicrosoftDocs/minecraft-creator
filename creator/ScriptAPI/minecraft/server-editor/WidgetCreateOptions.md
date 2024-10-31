@@ -10,6 +10,11 @@ description: Contents of the @minecraft/server-editor.WidgetCreateOptions class.
 
 ## Properties
 
+### **bindPositionToBlockCursor**
+`bindPositionToBlockCursor?: boolean;`
+
+Type: *boolean*
+
 ### **collisionOffset**
 `collisionOffset?: minecraftserver.Vector3;`
 
@@ -19,6 +24,11 @@ Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 `collisionRadius?: number;`
 
 Type: *number*
+
+### **lockToSurface**
+`lockToSurface?: boolean;`
+
+Type: *boolean*
 
 ### **selectable**
 `selectable?: boolean;`

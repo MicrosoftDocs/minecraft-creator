@@ -40,6 +40,13 @@ The unique identifier for this pane. This is used to identify the pane in the to
 
 Type: *string*
 
+### **infoTooltip**
+`infoTooltip: TooltipInteractiveContent;`
+
+Information tooltip displayed on the root pane header.
+
+Type: *TooltipInteractiveContent*
+
 ### **onBeginFinalize**
 `onBeginFinalize: (pane: ISimpleToolPaneComponent) => void;`
 

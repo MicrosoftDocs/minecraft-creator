@@ -142,6 +142,7 @@ Creates a particle emitter.
 Reloads all function and script files from all behavior packs.
 - `permission`
 - `ops`
+- `place`
 - `playanimation`
 Makes one or more entities play a one-off animation. Assumes all variables are setup correctly.
 - `playsound`

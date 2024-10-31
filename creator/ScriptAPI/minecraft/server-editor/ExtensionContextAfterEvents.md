@@ -27,11 +27,6 @@ Type: [*CurrentThemeChangeAfterEventSignal*](CurrentThemeChangeAfterEventSignal.
 
 Type: [*CurrentThemeColorChangeAfterEventSignal*](CurrentThemeColorChangeAfterEventSignal.md)
 
-### **cursorAttachmentPropertyChange**
-`read-only cursorAttachmentPropertyChange: CursorAttachmentPropertyChangeAfterEventSignal;`
-
-Type: [*CursorAttachmentPropertyChangeAfterEventSignal*](CursorAttachmentPropertyChangeAfterEventSignal.md)
-
 ### **cursorPropertyChange**
 `read-only cursorPropertyChange: CursorPropertyChangeAfterEventSignal;`
 

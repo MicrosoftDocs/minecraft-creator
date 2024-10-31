@@ -9,7 +9,7 @@ description: Contents of the .SplineType enumeration.
 # SplineType Enumeration
 
 ## Constants
-### **Hermite**
-`Hermite = "Hermite"`
 ### **Line**
-`Line = "Line"`
+`Line = 0`
+### **Hermite**
+`Hermite = 1`
