@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 All entities in Minecraft have specific rules that determine their behavior. Most entities share common behaviors, such as fleeing from stronger mobs or players when their health is low. These behaviors help to create a dynamic environment in Minecraft worlds by telling entities how to behave passively as well as how to react to interaction from players or other mobs. However, the world of Minecraft has a diverse ecosystem and, as you might imagine, there are many entities that behave in ways that are unique. This adds character and flair to entities and keeps the playing experience fresh.
 
-For creators, this also allows us to take vanilla entities and add some flavor to the worlds and game modes that we create. Not only can you adjust the behaviors of entities with unique behaviors, you can add your own behaviors to existing entities in your add-on pack!
+The entities we're discussing here are slightly different from other vanilla entities that have specific behavior components (or even combinations of components). While many of them do have components that initiate or dictate their behavior, each of these entities have certain attributes built into their code which might not be apparent when you look at their JSON file.
 
 For starters, let's take a look at the entities in Minecraft with unique behaviors.
 
@@ -32,7 +32,7 @@ For starters, let's take a look at the entities in Minecraft with unique behavio
 
 ## Custom Behavior
 
-Take a look at some of the entities in the table above and you can get an idea of how behavior can be customized. It doesn't even have to be something brand new - you can change how aggressive an entity or mob is or what conditions cause them to attack other entities. You can base entire game modes around entities with unique and interesting behaviors that keep your players on edge and provide fresh and fun experiences in your Minecraft world.
+When we take a look at some of the entities in the table above, you can still get an idea for how their behavior can be customized. It doesn't even have to be a brand new behavior - you can change how aggressive an entity or mob is or what conditions cause them to attack other entities. You can base entire game modes around entities with unique and interesting behaviors that keep your players on edge and provide fresh and fun experiences in your Minecraft world.
 
 To learn more about customizing the behavior of entities in Minecraft, see [Introduction to Behavior Packs](BehaviorPack.md).
 
