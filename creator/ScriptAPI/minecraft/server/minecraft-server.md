@@ -415,6 +415,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [CameraSetLocationOptions](CameraSetLocationOptions.md)
 - [CameraSetPosOptions](CameraSetPosOptions.md)
 - [CameraSetRotOptions](CameraSetRotOptions.md)
+- [CameraTargetOptions](CameraTargetOptions.md)
 - [CompoundBlockVolumeItem](CompoundBlockVolumeItem.md)
 - [DefinitionModifier](DefinitionModifier.md)
 - [DimensionLocation](DimensionLocation.md)

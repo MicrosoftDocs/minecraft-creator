@@ -12,6 +12,9 @@ Jigsaw Structures are large structures comprised of multiple Structure Templates
 
 Note: Other Jigsaw Structures such as Villages and Bastions use a legacy version of the Jigsaw Structure System and cannot be modified via JSON.
 
+>[!IMPORTANT]
+> This feature is currently experimental, subject to change, and is only available when the **Data-driven Jigsaw Structures** experiment is enabled for a world.
+
 ## Properties
 
 - Biome Filter: Specifies the biomes in which the Jigsaw Structure can generate.

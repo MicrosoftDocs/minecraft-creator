@@ -3,23 +3,23 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.CameraFixedBoomOptions Interface
-description: Contents of the @minecraft/server.CameraFixedBoomOptions class.
+title: minecraft/server.CameraTargetOptions Interface
+description: Contents of the @minecraft/server.CameraTargetOptions class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# CameraFixedBoomOptions Interface
+# CameraTargetOptions Interface
 
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Properties
 
-### **entityOffset**
-`entityOffset?: Vector3;`
+### **offsetFromTargetCenter**
+`offsetFromTargetCenter?: Vector3;`
 
 Type: [*Vector3*](Vector3.md)
 
-### **viewOffset**
-`viewOffset?: Vector2;`
+### **targetEntity**
+`targetEntity: Entity;`
 
-Type: [*Vector2*](Vector2.md)
+Type: [*Entity*](Entity.md)

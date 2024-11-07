@@ -12,6 +12,9 @@ Processors are functions that run when placing a Structure Template in the world
 
 A Processor List contains one or more Processors that are run in sequence on each block. Each Processor contains one or more Predicates with a given Filter. If all the filters pass, the placed block will be modified according to the Output State.
 
+>[!IMPORTANT]
+> This feature is currently experimental, subject to change, and is only available when the **Data-driven Jigsaw Structures** experiment is enabled for a world.
+
 ## Properties
 
 - Identifier: Identifier of the Processor List. This is referenced by Template Pools when pairing processors with Structure Templates.

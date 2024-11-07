@@ -55,6 +55,8 @@ Entity, such as a sponge, has gone through the process of drying and it no longe
 Entity is going into a body of water
 - `escaped_event`
 Entity is no longer trapped
+- `fed_open_eyeblossom`
+- `fed_wither_rose`
 - `find_flower_timeout`
 Entity, such as a bee, has exhausted its search for flowers and will now do something else
 - `find_hive_event`
@@ -621,10 +623,12 @@ Entity digs
 - `on_item_found`
 - `on_not_riding_parent`
 Entity is not riding parent
+- `on_poison_effect_added`
 - `on_pregnant`
 - `on_rising_end`
 - `on_scenting_success`
 - `on_search_and_digging_success`
+- `on_wither_effect_added`
 - `perish_event`
 Entity enters the event of perishing
 - `pickup_item_delay`
