@@ -44,7 +44,7 @@ Notes:
 
 ### **setCamera**
 `
-setCamera(cameraPreset: string, setOptions?: CameraDefaultOptions | CameraFixedBoomOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions): void
+setCamera(cameraPreset: string, setOptions?: CameraDefaultOptions | CameraFixedBoomOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions | CameraTargetOptions): void
 `
 
 Sets the current active camera for the specified player.
@@ -53,7 +53,7 @@ Sets the current active camera for the specified player.
 - **cameraPreset**: *string*
   
   Identifier of a camera preset file defined within JSON.
-- **setOptions**?: [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) = `null`
+- **setOptions**?: [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md) = `null`
   
   Additional options for the camera.
   

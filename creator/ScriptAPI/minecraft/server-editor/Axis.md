@@ -3,15 +3,15 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .Plane Enumeration
-description: Contents of the .Plane enumeration.
+title: .Axis Enumeration
+description: Contents of the .Axis enumeration.
 ---
-# Plane Enumeration
+# Axis Enumeration
 
 ## Constants
-### **XY**
-`XY = 1`
-### **XZ**
-`XZ = 2`
-### **YZ**
-`YZ = 4`
+### **X**
+`X = 1`
+### **Y**
+`Y = 2`
+### **Z**
+`Z = 4`

@@ -184,18 +184,20 @@ function createExplosions(log: (message: string, status?: number) => void, targe
 fillBlocks(volume: BlockVolumeBase | CompoundBlockVolume, block: BlockPermutation | BlockType | string, options?: BlockFillOptions): ListBlockVolume
 `
 
-Fills an area between begin and end with block of type block.
+Fills an area of blocks with a specific block type.
 
 #### **Parameters**
 - **volume**: [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
+  
+  Volume of blocks to be filled.
 - **block**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md) | *string*
   
   Type of block to fill the volume with.
 - **options**?: [*BlockFillOptions*](BlockFillOptions.md) = `null`
   
-  A set of additional options, such as a matching block to potentially replace this fill block with.
+  A set of additional options, such as a block filter which can be used to include / exclude specific blocks in the fill.
 
-**Returns** [*ListBlockVolume*](ListBlockVolume.md) -  Returns number of blocks placed.
+**Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns a ListBlockVolume which contains all the blocks that were placed.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

@@ -846,6 +846,8 @@
       href: minecraft/server/CameraSetPosOptions.md
     - name: CameraSetRotOptions
       href: minecraft/server/CameraSetRotOptions.md
+    - name: CameraTargetOptions
+      href: minecraft/server/CameraTargetOptions.md
     - name: CompoundBlockVolumeItem
       href: minecraft/server/CompoundBlockVolumeItem.md
     - name: DefinitionModifier
@@ -954,6 +956,8 @@
       href: minecraft/server-editor/changelog.md
     - name: ActionTypes
       href: minecraft/server-editor/ActionTypes.md
+    - name: Axis
+      href: minecraft/server-editor/Axis.md
     - name: BlockMaskListType
       href: minecraft/server-editor/BlockMaskListType.md
     - name: BlockPaletteItemType
@@ -1024,6 +1028,8 @@
       href: minecraft/server-editor/PropertyItemType.md
     - name: SimpleToolStatusBarVisibility
       href: minecraft/server-editor/SimpleToolStatusBarVisibility.md
+    - name: SpeedSettingsProperty
+      href: minecraft/server-editor/SpeedSettingsProperty.md
     - name: SplineType
       href: minecraft/server-editor/SplineType.md
     - name: StatusBarAlignment
@@ -1044,6 +1050,8 @@
       href: minecraft/server-editor/BlockPalette.md
     - name: BlockPaletteManager
       href: minecraft/server-editor/BlockPaletteManager.md
+    - name: BlockUtilities
+      href: minecraft/server-editor/BlockUtilities.md
     - name: BrushShapeManager
       href: minecraft/server-editor/BrushShapeManager.md
     - name: ClipboardChangeAfterEvent
@@ -1120,6 +1128,8 @@
       href: minecraft/server-editor/SimpleToolWrapper.md
     - name: SimulationState
       href: minecraft/server-editor/SimulationState.md
+    - name: SpeedSettings
+      href: minecraft/server-editor/SpeedSettings.md
     - name: ThemeSettings
       href: minecraft/server-editor/ThemeSettings.md
     - name: TransactionManager
