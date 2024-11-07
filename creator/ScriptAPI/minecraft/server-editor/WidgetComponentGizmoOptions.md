@@ -10,3 +10,15 @@ description: Contents of the @minecraft/server-editor.WidgetComponentGizmoOption
 
 ## Extends
 - [*WidgetComponentBaseOptions*](WidgetComponentBaseOptions.md)
+
+## Properties
+
+### **axes**
+`axes?: Axis;`
+
+Type: [*Axis*](Axis.md)
+
+### **enablePlanes**
+`enablePlanes?: boolean;`
+
+Type: *boolean*

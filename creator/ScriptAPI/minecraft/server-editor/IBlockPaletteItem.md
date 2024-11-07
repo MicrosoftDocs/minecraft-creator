@@ -27,10 +27,10 @@ getBlock(): minecraftserver.BlockType | undefined
 
 ### **getDisplayName**
 `
-getDisplayName(): string
+getDisplayName(): string | undefined
 `
 
-**Returns** *string*
+**Returns** *string* | *undefined*
 
 ### **getType**
 `

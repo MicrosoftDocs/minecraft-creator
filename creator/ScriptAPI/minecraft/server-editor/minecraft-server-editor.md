@@ -27,6 +27,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
+- [Axis](Axis.md)
 - [BlockMaskListType](BlockMaskListType.md)
 - [BlockPaletteItemType](BlockPaletteItemType.md)
 - [BoolPropertyItemVariant](BoolPropertyItemVariant.md)
@@ -62,6 +63,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ProjectExportType](ProjectExportType.md)
 - [PropertyItemType](PropertyItemType.md)
 - [SimpleToolStatusBarVisibility](SimpleToolStatusBarVisibility.md)
+- [SpeedSettingsProperty](SpeedSettingsProperty.md)
 - [SplineType](SplineType.md)
 - [StatusBarAlignment](StatusBarAlignment.md)
 - [ThemeSettingsColorKey](ThemeSettingsColorKey.md)
@@ -71,6 +73,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 # Type Aliases
 - [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
+- [SpeedSettingsPropertyTypeMap](SpeedSettingsPropertyTypeMap.md)
 - [Action](Action.md)
 - [ActionID](ActionID.md)
 - [ActivationFunctionType](ActivationFunctionType.md)
@@ -108,6 +111,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [BlockIdentifierObservableValidator](BlockIdentifierObservableValidator.md)
 - [BlockPalette](BlockPalette.md)
 - [BlockPaletteManager](BlockPaletteManager.md)
+- [BlockUtilities](BlockUtilities.md)
 - [BrushShapeManager](BrushShapeManager.md)
 - [ClipboardChangeAfterEvent](ClipboardChangeAfterEvent.md)
 - [ClipboardChangeAfterEventSignal](ClipboardChangeAfterEventSignal.md)
@@ -146,6 +150,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [SimpleBlockPaletteItem](SimpleBlockPaletteItem.md)
 - [SimpleToolWrapper](SimpleToolWrapper.md)
 - [SimulationState](SimulationState.md)
+- [SpeedSettings](SpeedSettings.md)
 - [ThemeSettings](ThemeSettings.md)
 - [TransactionManager](TransactionManager.md)
 - [UserDefinedTransactionHandle](UserDefinedTransactionHandle.md)

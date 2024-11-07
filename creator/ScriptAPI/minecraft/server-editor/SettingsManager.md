@@ -19,6 +19,11 @@ Manages graphics settings properties.
 
 Type: [*GraphicsSettings*](GraphicsSettings.md)
 
+### **speed**
+`read-only speed: SpeedSettings;`
+
+Type: [*SpeedSettings*](SpeedSettings.md)
+
 ### **theme**
 `read-only theme: ThemeSettings;`
 

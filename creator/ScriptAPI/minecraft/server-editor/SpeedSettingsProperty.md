@@ -3,15 +3,11 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .Plane Enumeration
-description: Contents of the .Plane enumeration.
+title: .SpeedSettingsProperty Enumeration
+description: Contents of the .SpeedSettingsProperty enumeration.
 ---
-# Plane Enumeration
+# SpeedSettingsProperty Enumeration
 
 ## Constants
-### **XY**
-`XY = 1`
-### **XZ**
-`XZ = 2`
-### **YZ**
-`YZ = 4`
+### **FlySpeedMultiplier**
+`FlySpeedMultiplier = "FlySpeedMultiplier"`

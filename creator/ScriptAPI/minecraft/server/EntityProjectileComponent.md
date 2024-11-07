@@ -84,7 +84,7 @@ Notes:
 ### **gravity**
 `gravity: number;`
 
-The gravity applied to the projectile. When the entity is not on the ground, subtracts this amount from the projectile's change in vertical position every tick. The higher the value, the faster the projectile falls. If negative, the entity will rise instead of fall.
+The gravity applied to the projectile. When the entity is not on the ground, subtracts this amount from the projectile’s change in vertical position every tick. The higher the value, the faster the projectile falls. If negative, the entity will rise instead of fall.
 
 Type: *number*
 

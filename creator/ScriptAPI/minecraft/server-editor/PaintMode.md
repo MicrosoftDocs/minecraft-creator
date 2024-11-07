@@ -13,3 +13,5 @@ description: Contents of the .PaintMode enumeration.
 `BlockPaint = 0`
 ### **FreehandSelect**
 `FreehandSelect = 1`
+### **Smooth**
+`Smooth = 2`

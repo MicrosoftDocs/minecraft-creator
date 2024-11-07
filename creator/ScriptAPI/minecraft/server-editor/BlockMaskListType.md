@@ -9,6 +9,8 @@ description: Contents of the .BlockMaskListType enumeration.
 # BlockMaskListType Enumeration
 
 ## Constants
+### **Disabled**
+`Disabled = "Disabled"`
 ### **Mask**
 `Mask = "Mask"`
 ### **Replace**

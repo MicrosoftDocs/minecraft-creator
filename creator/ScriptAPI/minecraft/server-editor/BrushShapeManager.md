@@ -36,6 +36,8 @@ Type: [*BrushShape*](BrushShape.md)[]
 - [setBrushMask](#setbrushmask)
 - [setBrushShape](#setbrushshape)
 - [setBrushShapeOffset](#setbrushshapeoffset)
+- [setBrushShapeVisible](#setbrushshapevisible)
+- [setSmoothStrength](#setsmoothstrength)
 - [singlePaint](#singlepaint)
 - [switchBrushPaintMode](#switchbrushpaintmode)
 - [switchBrushShape](#switchbrushshape)
@@ -155,6 +157,28 @@ setBrushShapeOffset(offset: minecraftserver.Vector3): void
 
 #### **Parameters**
 - **offset**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setBrushShapeVisible**
+`
+setBrushShapeVisible(visible: boolean): void
+`
+
+#### **Parameters**
+- **visible**: *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setSmoothStrength**
+`
+setSmoothStrength(smoothStrength: number): void
+`
+
+#### **Parameters**
+- **smoothStrength**: *number*
   
 Notes:
 - This function can't be called in read-only mode.
