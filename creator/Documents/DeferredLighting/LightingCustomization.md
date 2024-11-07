@@ -22,7 +22,7 @@ The celestial bodies that are the sun and moon are assumed to be opposite of eac
 
 Illuminance values that correspond to "real world" values are suitable for use in our pipeline. For instance, the sun at noon on a clear day measures upwards of 100,000 lux, while the moon only registers < 1 lux. Tone mapping and auto-exposure will appropriately rebalance drastic differences in light intensities.
 
-Color values can either be described as an array of 3 or 4 numerical values from the range 0-255 or as a 6 or 8 hexadecimal digit string.
+Color values should be described as an array of 3 numerical values from the range 0-255 or as a 6 hexadecimal digit string.
 Any of these values can be individually key framed (see Key Frame Syntax section for more details).
 
 ## Point Lights
@@ -73,6 +73,11 @@ The `"emissive"` object allows for some control over how emissive light sources 
 ## Lighting JSON Schemas
 
 File location: **lighting/global.json**
+
+Schema Version|Updates
+--|--
+`1.21.60`|Changed the data type for sun and moon colors from RGBA to RGB.
+`1.21.40`|N/A
 
 ```json
 {
@@ -158,10 +163,10 @@ File location: **pbr/global.json**
 
 ```json
 {
-    "format_version": "1.21.40",
+    "format_version": "1.21.60",
     "minecraft:lighting_settings": {
         "description": {
-            "identifier": "my_pack:default_lighting_"
+            "identifier": "my_pack:default_lighting"
         },
         "directional_lights": {
             "sun": {
@@ -174,11 +179,11 @@ File location: **pbr/global.json**
                     "0.75": 20000.0,
                     "1.0": 109880.0
                 },
-                "color": [ 255.0, 255.0, 255.0, 255.0 ]
+                "color": [ 255.0, 255.0, 255.0 ]
             },
             "moon": { 
                 "illuminance": 0.27,
-                "color": "#ffffffff"
+                "color": "#ffffff"
             }, 
             "orbital_offset_degrees": 3.0
         },
@@ -187,7 +192,7 @@ File location: **pbr/global.json**
         },
         "ambient": {
             "illuminance": 0.02,
-            "color": "#ffffffff"
+            "color": "#ffffff"
         }
     }
 }
