@@ -10,6 +10,9 @@ ms.service: minecraft-bedrock-edition
 
 A Structure Set contains a set of Jigsaw Structures and rules for how those structures should be placed in the world relative to other instances of structures from the same set. Each structure within a set is paired with a weight that influences how frequently it is chosen.
 
+>[!IMPORTANT]
+> This feature is currently experimental, subject to change, and is only available when the **Data-driven Jigsaw Structures** experiment is enabled for a world.
+
 ## Properties
 
 - Identifier: The name of the Structure Set.
