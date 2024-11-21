@@ -9,7 +9,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [1.17.0-beta](#1170-beta)
+- [1.18.0-beta](#1180-beta)
+- [1.16.0](#1160)
 - [1.15.0](#1150)
 - [1.14.0](#1140)
 - [1.13.0](#1130)
@@ -27,7 +28,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.17.0-beta
+## 1.18.0-beta
 #### Added module peer dependency *`@minecraft/vanilla-data`*
 #### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
@@ -41,7 +42,6 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
 - Added function *[`setWaterlogged`](Block.md#setwaterlogged)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
-#### Added *[`BlockFluidContainerComponent`](BlockFluidContainerComponent.md)*
 #### Changed *[`BlockPermutation`](BlockPermutation.md)*
 - Changed function *[`getState`](BlockPermutation.md#getstate)*
   - Changed return type from *boolean* | *number* | *string* to *minecraftvanilladata.BlockStateSuperset[T] | undefined*
@@ -69,15 +69,13 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
-#### Added *[`ClientSystemInfo`](ClientSystemInfo.md)*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
 #### Changed *[`Dimension`](Dimension.md)*
-- Added function *[`containsBlock`](Dimension.md#containsblock)*
-- Added function *[`fillBlocks`](Dimension.md#fillblocks)*
+- Changed function *[`fillBlocks`](Dimension.md#fillblocks)*
+  - Changed argument `volume` type from [*BlockVolumeBase*](BlockVolumeBase.md) to [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
 - Added function *[`getBlockAbove`](Dimension.md#getblockabove)*
 - Added function *[`getBlockBelow`](Dimension.md#getblockbelow)*
-- Added function *[`getBlocks`](Dimension.md#getblocks)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
   - Added argument `options`
@@ -94,22 +92,17 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
 #### Added *[`FilterGroup`](FilterGroup.md)*
-#### Added *[`FluidContainer`](FluidContainer.md)*
 #### Added *[`InputInfo`](InputInfo.md)*
 #### Added *[`ItemCompostableComponent`](ItemCompostableComponent.md)*
 #### Added *[`ItemDyeableComponent`](ItemDyeableComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
-- Added property *[`compostingChance`](ItemStack.md#compostingchance)*
 - Added function *[`createPotion`](ItemStack.md#createpotion)*
 - Changed function *[`getComponent`](ItemStack.md#getcomponent)*
   - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
-#### Changed *[`ItemUseOnAfterEvent`](ItemUseOnAfterEvent.md)*
-- Added property *[`isFirstEvent`](ItemUseOnAfterEvent.md#isfirstevent)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Changed *[`Player`](Player.md)*
-- Added property *[`clientSystemInfo`](Player.md#clientsysteminfo)*
 - Added property *[`inputInfo`](Player.md#inputinfo)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`isOp`](Player.md#isop)*
@@ -131,14 +124,14 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PotionModifierType`](PotionModifierType.md)*
 #### Added *[`Potions`](Potions.md)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
+#### Added *[`ShutdownBeforeEventSignal`](ShutdownBeforeEventSignal.md)*
+#### Added *[`ShutdownEvent`](ShutdownEvent.md)*
 #### Changed *[`StructureManager`](StructureManager.md)*
 - Added function *[`placeJigsaw`](StructureManager.md#placejigsaw)*
 - Added function *[`placeJigsawStructure`](StructureManager.md#placejigsawstructure)*
 #### Changed *[`System`](System.md)*
 - Added property *[`beforeEvents`](System.md#beforeevents)*
-- Added property *[`serverSystemInfo`](System.md#serversysteminfo)*
 #### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
-#### Added *[`SystemInfo`](SystemInfo.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
@@ -151,8 +144,6 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
-#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
-- Added value `FluidContainer`
 #### Added enum [`ButtonState`](ButtonState.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
@@ -177,10 +168,27 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Compostable`
 - Added value `Dyeable`
 - Added value `Potion`
-#### Added enum [`MemoryTier`](MemoryTier.md)
-#### Added enum [`PlatformType`](PlatformType.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `TicksPerDay`
+## 1.16.0
+#### Added *[`BlockFluidContainerComponent`](BlockFluidContainerComponent.md)*
+#### Added *[`ClientSystemInfo`](ClientSystemInfo.md)*
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`containsBlock`](Dimension.md#containsblock)*
+- Added function *[`fillBlocks`](Dimension.md#fillblocks)*
+- Added function *[`getBlocks`](Dimension.md#getblocks)*
+#### Added *[`FluidContainer`](FluidContainer.md)*
+#### Changed *[`ItemUseOnAfterEvent`](ItemUseOnAfterEvent.md)*
+- Added property *[`isFirstEvent`](ItemUseOnAfterEvent.md#isfirstevent)*
+#### Changed *[`Player`](Player.md)*
+- Added property *[`clientSystemInfo`](Player.md#clientsysteminfo)*
+#### Changed *[`System`](System.md)*
+- Added property *[`serverSystemInfo`](System.md#serversysteminfo)*
+#### Added *[`SystemInfo`](SystemInfo.md)*
+#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Added value `FluidContainer`
+#### Added enum [`MemoryTier`](MemoryTier.md)
+#### Added enum [`PlatformType`](PlatformType.md)
 ## 1.15.0
 #### Changed *[`Block`](Block.md)*
 - Added function *[`getRedstonePower`](Block.md#getredstonepower)*

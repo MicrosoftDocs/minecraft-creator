@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .PlatformType Enumeration
 description: Contents of the .PlatformType enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlatformType Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Describes what kind of platform is a device.
 

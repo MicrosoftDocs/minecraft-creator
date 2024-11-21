@@ -22,7 +22,7 @@ When present, the item can be composted in the composter block if the composting
 ### **compostingChance**
 `read-only compostingChance: number;`
 
-This is the percent chance of the item composting in the composter block and generating a compost layer. Note this api will not return the percent chance for some vanilla items. To get the compostable chance for all items, use the compostingChance property on the ItemStack.
+This is the percent chance of the item composting in the composter block and generating a compost layer. Note this api will also return the composting chance for vanilla items that are compostable but do not use the compostable item component.
 
 Type: *number*
 

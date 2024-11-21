@@ -16,6 +16,11 @@ A set of events that fire before an actual action occurs. In most cases, you can
 
 ## Properties
 
+### **shutdown**
+`read-only shutdown: ShutdownBeforeEventSignal;`
+
+Type: [*ShutdownBeforeEventSignal*](ShutdownBeforeEventSignal.md)
+
 ### **watchdogTerminate**
 `read-only watchdogTerminate: WatchdogTerminateBeforeEventSignal;`
 

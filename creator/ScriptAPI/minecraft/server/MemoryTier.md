@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .MemoryTier Enumeration
 description: Contents of the .MemoryTier enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # MemoryTier Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Describes the memory of a device.
 

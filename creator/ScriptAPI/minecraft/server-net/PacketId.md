@@ -43,8 +43,8 @@ Represents the unique type of network packet.
 `AvailableCommandsPacket = "AvailableCommandsPacket"`
 ### **AwardAchievementPacket**
 `AwardAchievementPacket = "AwardAchievementPacket"`
-### **BiomeDefinitionList**
-`BiomeDefinitionList = "BiomeDefinitionList"`
+### **BiomeDefinitionListPacket**
+`BiomeDefinitionListPacket = "BiomeDefinitionListPacket"`
 ### **BlockActorDataPacket**
 `BlockActorDataPacket = "BlockActorDataPacket"`
 ### **BlockEventPacket**
@@ -77,12 +77,16 @@ Represents the unique type of network packet.
 `ClientboundCloseFormPacket = "ClientboundCloseFormPacket"`
 ### **ClientboundDebugRendererPacket**
 `ClientboundDebugRendererPacket = "ClientboundDebugRendererPacket"`
+### **ClientboundMapItemDataPacket**
+`ClientboundMapItemDataPacket = "ClientboundMapItemDataPacket"`
 ### **ClientCacheBlobStatusPacket**
 `ClientCacheBlobStatusPacket = "ClientCacheBlobStatusPacket"`
 ### **ClientCacheMissResponsePacket**
 `ClientCacheMissResponsePacket = "ClientCacheMissResponsePacket"`
 ### **ClientCacheStatusPacket**
 `ClientCacheStatusPacket = "ClientCacheStatusPacket"`
+### **ClientCameraAimAssistPacket**
+`ClientCameraAimAssistPacket = "ClientCameraAimAssistPacket"`
 ### **ClientToServerHandshakePacket**
 `ClientToServerHandshakePacket = "ClientToServerHandshakePacket"`
 ### **CodeBuilderPacket**
@@ -189,8 +193,6 @@ Represents the unique type of network packet.
 `MapCreateLockedCopyPacket = "MapCreateLockedCopyPacket"`
 ### **MapInfoRequestPacket**
 `MapInfoRequestPacket = "MapInfoRequestPacket"`
-### **MapItemDataPacket**
-`MapItemDataPacket = "MapItemDataPacket"`
 ### **MobArmorEquipmentPacket**
 `MobArmorEquipmentPacket = "MobArmorEquipmentPacket"`
 ### **MobEffectPacket**

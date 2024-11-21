@@ -15,3 +15,7 @@ description: Contents of the .PaintMode enumeration.
 `FreehandSelect = 1`
 ### **Smooth**
 `Smooth = 2`
+### **Roughen**
+`Roughen = 3`
+### **Flatten**
+`Flatten = 4`

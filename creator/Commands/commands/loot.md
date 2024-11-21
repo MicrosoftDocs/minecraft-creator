@@ -41,67 +41,85 @@ Give `loot` to `player` using a `loot table` while `looting` using a `tool`.
 
 Give `loot` to `player` using the `loot table` from `killing` an `entity` using a `tool`.
 
-### Insert loot from position, looting with tool
+### Give loot to player, mining a block using tool
 `/loot insert <position: x y z> loot <loot_table: string> [<tool>|mainhand|offhand: Tool]`
+
+Give `loot` to `player` using the `loot table` from `mining` a block at `position` using a `tool`.
+
+### Insert loot from position, looting with tool
+`/loot insert <position: x y z> kill <entity: target> [<tool>|mainhand|offhand: Tool]`
 
 Insert `loot` from a `position` using the `loot table` from `looting` using a `tool`.
 
 ### Insert loot from position, killing entity with tool
-`/loot insert <position: x y z> kill <entity: target> [<tool>|mainhand|offhand: Tool]`
+`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> <count: int> loot <loot_table: string> [<tool>|mainhand|offhand: Tool]`
 
 Insert `loot` from a `position` using a `loot table` from `killing` an `entity` using a `tool`.
 
+### Insert loot from position, mining a block with tool
+`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> loot <loot_table: string> [<tool>|mainhand|offhand: Tool]`
+
+Insert `loot` from a `position` using a `loot table` from `mining` a block at `position` using a `tool`.
+
 ### Replace loot, slot, count, looting with tool
-`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> <count: int> loot <loot_table: string> [<tool>|mainhand|offhand: Tool]`
+`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> <count: int> kill <entity: target> [<tool>|mainhand|offhand: Tool]`
 
 Replace `loot` for a `player` in a `slot` with a `count` while `looting` from a `loot table` using a `tool`.
 
 ### Replace loot, slot, looting with tool
-`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> loot <loot_table: string> [<tool>|mainhand|offhand: Tool]`
+`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> kill <entity: target> [<tool>|mainhand|offhand: Tool]`
 
 Replace `loot` for a `player` in a `slot` while `looting` using a `tool`.
 
 ### Replace loot, slot, count, killing entity with tool
-`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> <count: int> kill <entity: target> [<tool>|mainhand|offhand: Tool]`
+`/loot replace block <position: x y z> slot.container <slotId: int> <count: int> loot <loot_table: string> [<tool>|mainhand|offhand: Tool]`
 
 Replace `loot` for a `player` in a `slot` with a `count` from `killing` an `entity` using a `tool`.
 
 ### Replace loot, slot, killing entity with tool
-`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> kill <entity: target> [<tool>|mainhand|offhand: Tool]`
+`/loot replace block <position: x y z> slot.container <slotId: int> loot <loot_table: string> [<tool>|mainhand|offhand: Tool]`
 
 Replace `loot` for a `player` in a `slot` from `killing` an `entity` using a `tool`.
 
+### Replace loot, slot, count, mining a block with tool
+`/loot replace block <position: x y z> slot.container <slotId: int> <count: int> kill <entity: target> [<tool>|mainhand|offhand: Tool]`
+
+Replace `loot` for a `player` in a `slot` with a `count` from `mining` a block at `position` using a `tool`.
+
+### Replace loot, slot, mining a block with tool
+`/loot replace block <position: x y z> slot.container <slotId: int> kill <entity: target> [<tool>|mainhand|offhand: Tool]`
+
+Replace `loot` for a `player` in a `slot` from `mining` a block at `position` using a `tool`.
+
 ### Replace loot, slot, count, looting with a tool
-`/loot replace block <position: x y z> slot.container <slotId: int> <count: int> loot <loot_table: string> [<tool>|mainhand|offhand: Tool]`
+`/loot spawn <position: x y z> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
 Replace `loot` with a specified `int` amount of loot from a `block` at a `position` into a `slotId`.
 
 ### Replace loot, slot, looting with `tool` 
-`/loot replace block <position: x y z> slot.container <slotId: int> loot <loot_table: string> [<tool>|mainhand|offhand: Tool]`
+`/loot give <players: target> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
 Replace `loot` from a `block` at a `position` into a `slot` from looting with a tool.
 
 ### Replace loot slot, count, killing `entity` with a tool
-`/loot replace block <position: x y z> slot.container <slotId: int> <count: int> kill <entity: target> [<tool>|mainhand|offhand: Tool]`
+`/loot insert <position: x y z> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
-Replace `loot` from a `block` at a `position` into a `slotID` in a specified amount, from killing an `entity`  with a tool.
+Replace `loot` from a `block` at a `position` into a `slotID` in a specified amount, from killing an `entity` with a tool.
 
 ### Replace loot from block, killing `entity` with tool
-`/loot replace block <position: x y z> slot.container <slotId: int> kill <entity: target> [<tool>|mainhand|offhand: Tool]`
+`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> <count: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
 Replace `loot` from a `block` at a `position` from `killing` an `entity` using a `tool`.
 
-### `/loot spawn <position: x y z> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+### Replace loot slot, count, mining a block with a tool
+`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
-### `/loot give <players: target> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+Replace `loot` from a `block` at a `position` into a `slotID` in a specified amount, from `mining` a block at `position` using a `tool`.
 
-### `/loot insert <position: x y z> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+### Replace loot from block, mining a block with tool.
+`/loot replace block <position: x y z> slot.container <slotId: int> <count: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
-### `/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> <count: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
-
-### `/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
-
-### `/loot replace block <position: x y z> slot.container <slotId: int> <count: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+Replace `loot` from a `block` at a `position` from `mining` a block at `position` using a `tool`.
 
 ### `/loot replace block <position: x y z> slot.container <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
