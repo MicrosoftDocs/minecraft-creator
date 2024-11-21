@@ -37,7 +37,9 @@ Type: [*BrushShape*](BrushShape.md)[]
 - [setBrushShape](#setbrushshape)
 - [setBrushShapeOffset](#setbrushshapeoffset)
 - [setBrushShapeVisible](#setbrushshapevisible)
-- [setSmoothStrength](#setsmoothstrength)
+- [setFlattenHeight](#setflattenheight)
+- [setFlattenRadius](#setflattenradius)
+- [setTerrainStrength](#setterrainstrength)
 - [singlePaint](#singlepaint)
 - [switchBrushPaintMode](#switchbrushpaintmode)
 - [switchBrushShape](#switchbrushshape)
@@ -172,13 +174,35 @@ setBrushShapeVisible(visible: boolean): void
 Notes:
 - This function can't be called in read-only mode.
 
-### **setSmoothStrength**
+### **setFlattenHeight**
 `
-setSmoothStrength(smoothStrength: number): void
+setFlattenHeight(flattenHeight: number): void
 `
 
 #### **Parameters**
-- **smoothStrength**: *number*
+- **flattenHeight**: *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setFlattenRadius**
+`
+setFlattenRadius(flattenRadius: number): void
+`
+
+#### **Parameters**
+- **flattenRadius**: *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setTerrainStrength**
+`
+setTerrainStrength(terrainStrength: number): void
+`
+
+#### **Parameters**
+- **terrainStrength**: *number*
   
 Notes:
 - This function can't be called in read-only mode.

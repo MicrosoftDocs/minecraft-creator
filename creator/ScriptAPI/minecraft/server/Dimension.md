@@ -30,13 +30,9 @@ Identifier of the dimension.
 Type: *string*
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [containsBlock](#containsblock)
-::: moniker-end
 - [createExplosion](#createexplosion)
-::: moniker range="=minecraft-bedrock-experimental"
 - [fillBlocks](#fillblocks)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [findClosestBiome](#findclosestbiome)
 ::: moniker-end
@@ -48,9 +44,7 @@ Type: *string*
 - [getBlockBelow](#getblockbelow)
 ::: moniker-end
 - [getBlockFromRay](#getblockfromray)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getBlocks](#getblocks)
-::: moniker-end
 - [getEntities](#getentities)
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
@@ -69,7 +63,6 @@ Type: *string*
 - [spawnItem](#spawnitem)
 - [spawnParticle](#spawnparticle)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **containsBlock**
 `
 containsBlock(volume: BlockVolumeBase, filter: BlockFilter, allowUnloadedChunks?: boolean): boolean
@@ -89,14 +82,10 @@ Searches the block volume for a block that satisfies the block filter.
   If set to true will suppress the UnloadedChunksError if some or all of the block volume is outside of the loaded chunks. Will only check the block locations that are within the loaded chunks in the volume.
 
 **Returns** *boolean* - Returns true if at least one block in the volume satisfies the filter, false otherwise.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
-::: moniker-end
 
 ### **createExplosion**
 `
@@ -178,7 +167,6 @@ function createExplosions(log: (message: string, status?: number) => void, targe
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/createExplosions.ts) code sandbox.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **fillBlocks**
 `
 fillBlocks(volume: BlockVolumeBase | CompoundBlockVolume, block: BlockPermutation | BlockType | string, options?: BlockFillOptions): ListBlockVolume
@@ -198,15 +186,11 @@ Fills an area of blocks with a specific block type.
   A set of additional options, such as a block filter which can be used to include / exclude specific blocks in the fill.
 
 **Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns a ListBlockVolume which contains all the blocks that were placed.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **findClosestBiome**
@@ -319,7 +303,6 @@ Gets the first block that intersects with a vector emanating from a location.
 Notes:
 - This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getBlocks**
 `
 getBlocks(volume: BlockVolumeBase, filter: BlockFilter, allowUnloadedChunks?: boolean): ListBlockVolume
@@ -339,14 +322,10 @@ Gets all the blocks in a volume that satisfy the filter.
   If set to true will suppress the UnloadedChunksError if some or all of the block volume is outside of the loaded chunks. Will only check the block locations that are within the loaded chunks in the volume.
 
 **Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns the ListBlockVolume that contains all the block locations that satisfied the block filter.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
-::: moniker-end
 
 ### **getEntities**
 `

@@ -256,6 +256,7 @@ Entity converts to a drowned
 - `minecraft:convert_to_zombie`
 Entity converts to a zombie
 - `minecraft:crumble`
+- `minecraft:crumble_and_notify_creaking_heart`
 - `minecraft:crystal_explode`
 Entity explodes a crystal
 - `minecraft:damaged_by_entity`

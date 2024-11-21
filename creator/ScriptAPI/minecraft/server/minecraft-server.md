@@ -16,12 +16,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.15.0"
+    "version": "1.16.0"
 }
 ```
 
 ## Available Versions
-- `1.17.0-beta`
+- `1.18.0-beta`
+- `1.16.0`
 - `1.15.0`
 - `1.14.0`
 - `1.13.0`
@@ -86,9 +87,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 
 # Type Aliases
 - [BlockComponentTypeMap](BlockComponentTypeMap.md)
+- [BlockStateArg](BlockStateArg.md)
 - [EntityComponentTypeMap](EntityComponentTypeMap.md)
 - [ItemComponentTypeMap](ItemComponentTypeMap.md)
-- [BlockStateArg](BlockStateArg.md)
 
 ## Classes
 - [BiomeType](BiomeType.md)
@@ -371,6 +372,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ScriptEventCommandMessageAfterEventSignal](ScriptEventCommandMessageAfterEventSignal.md)
 - [Seat](Seat.md)
 - [ServerMessageAfterEventSignal](ServerMessageAfterEventSignal.md)
+- [ShutdownBeforeEventSignal](ShutdownBeforeEventSignal.md)
+- [ShutdownEvent](ShutdownEvent.md)
 - [Structure](Structure.md)
 - [StructureManager](StructureManager.md)
 - [System](System.md)

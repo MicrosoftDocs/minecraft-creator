@@ -25,7 +25,6 @@ Type: [*Camera*](Camera.md)
 Notes:
   - This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **clientSystemInfo**
 `read-only clientSystemInfo: ClientSystemInfo;`
 
@@ -33,13 +32,9 @@ Contains the player's device information.
 
 Type: [*ClientSystemInfo*](ClientSystemInfo.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws *Error*
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **inputInfo**

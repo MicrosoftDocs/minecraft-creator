@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockFillOptions Interface
 description: Contents of the @minecraft/server.BlockFillOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockFillOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains additional options for a block fill operation.
 
