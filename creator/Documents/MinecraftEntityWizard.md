@@ -36,9 +36,10 @@ It's recommended that the following be completed before beginning this tutorial.
 
 - Either have [Blockbench](https://blockbench.net) installed or access to [Blockbench web app](https://web.blockbench.net)
 - [Getting Started with Add-On Development](GettingStarted.md)
+- Check out the [Introduction to Blockbench](./Blockbench.md)
 
 >[!IMPORTANT]
->Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering. Users should use at their own discretion.
+>Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering.
 
 
 ## Installation
