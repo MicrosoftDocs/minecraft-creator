@@ -108,22 +108,6 @@ Notes:
   - This property can throw errors when used.
     - Throws if the value is outside the range of 1-255.
 
-::: moniker range="=minecraft-bedrock-experimental"
-### **compostingChance**
-`read-only compostingChance: number;`
-
-This is the percent chance of the item composting in the composter block and generating a compost layer.
-
-Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-Notes:
-  - This property can throw errors when used.
-    - Throws *Error*
-::: moniker-end
-
 ### **isStackable**
 `read-only isStackable: boolean;`
 

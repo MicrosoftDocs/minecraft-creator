@@ -38,17 +38,12 @@ Represents the current world tick of the server.
 
 Type: *number*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **serverSystemInfo**
 `read-only serverSystemInfo: SystemInfo;`
 
 Contains the device information for the server.
 
 Type: [*SystemInfo*](SystemInfo.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ## Methods
 - [clearJob](#clearjob)

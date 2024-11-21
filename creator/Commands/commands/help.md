@@ -109,6 +109,7 @@ Interacts with game test.
 - `gettopsolidblock`
 - `give`
 Gives an item to a player.
+- `globalpause`
 - `help`
 Provides help/list of commands.
 - `?`

@@ -1,5 +1,7 @@
  - name: Block Components List
-   href: BlockComponentsList.md 
+   href: BlockComponentsList.md
+ - name: breathability
+   href: minecraftBlock_breathability.md
  - name: collision_box
    href: minecraftBlock_collision_box.md
  - name: crafting_table
@@ -16,6 +18,8 @@
    href: minecraftBlock_friction.md
  - name: geometry
    href: minecraftBlock_geometry.md
+ - name: item_visual
+   href: minecraftBlock_item_visual.md
  - name: light_dampening
    href: minecraftBlock_light_dampening.md
  - name: light_emission
@@ -36,5 +40,3 @@
    href: minecraftBlock_tag.md
  - name: transformation
    href: minecraftBlock_transformation.md
- - name: unit_cube
-   href: minecraftBlock_unit_cube.md

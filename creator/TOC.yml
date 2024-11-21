@@ -372,6 +372,8 @@
               href: Documents/BedrockEditor/EditorExtensionsIntroduction.md
         - name: "Blockbench - Model Editing"
           items:
+            - name: Introduction to Blockbench
+              href: Documents/Blockbench.md
             - name: Minecraft Entity Wizard
               href: Documents/MinecraftEntityWizard.md
             - name: Minecraft Item Wizard

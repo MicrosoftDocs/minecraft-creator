@@ -151,7 +151,7 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **placeJigsaw**
 `
-placeJigsaw(pool: string, targetJigsaw: string, maxDepth: number, dimension: Dimension, location: Vector3, options?: JigsawPlaceOptions): void
+placeJigsaw(pool: string, targetJigsaw: string, maxDepth: number, dimension: Dimension, location: Vector3, options?: JigsawPlaceOptions): BoundingBox
 `
 
 Places a partial jigsaw structure in the world. This is useful for debugging connections between jigsaw blocks.
@@ -176,6 +176,8 @@ Places a partial jigsaw structure in the world. This is useful for debugging con
   
   Optional settings to use when generating the jigsaw structure.
 
+**Returns** [*BoundingBox*](BoundingBox.md) - Returns a [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
+
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
@@ -188,7 +190,7 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **placeJigsawStructure**
 `
-placeJigsawStructure(identifier: string, dimension: Dimension, location: Vector3, options?: JigsawStructurePlaceOptions): void
+placeJigsawStructure(identifier: string, dimension: Dimension, location: Vector3, options?: JigsawStructurePlaceOptions): BoundingBox
 `
 
 Places a jigsaw structure in the world.
@@ -206,6 +208,8 @@ Places a jigsaw structure in the world.
 - **options**?: [*JigsawStructurePlaceOptions*](JigsawStructurePlaceOptions.md) = `null`
   
   Optional settings to use when generating the jigsaw structure.
+
+**Returns** [*BoundingBox*](BoundingBox.md) - Returns a [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Getting Started with the Minecraft Item Wizard
 
-The Minecraft Item Wizard is a plugin for Blockbench. It allows you to add a custom item to Minecraft without any coding experience or knowledge of the addon system. It does this by generating an addon on your computer, which you can add to your world.
+The Minecraft Item Wizard is a plugin for [Blockbench](./Blockbench.md). It allows you to add a custom item to Minecraft without any coding experience or knowledge of the addon system. It does this by generating an addon on your computer, which you can add to your world.
 
 After you have created a custom item with the Wizard, you can use Blockbench to design a custom 3D model for it.
 
@@ -41,7 +41,7 @@ To get started, you need the following:
 - A Windows computer (or an Android device)
 
 >[!IMPORTANT]
->Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering. Users should use at their own discretion.
+>Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering.
 
 ## Getting Started
 
