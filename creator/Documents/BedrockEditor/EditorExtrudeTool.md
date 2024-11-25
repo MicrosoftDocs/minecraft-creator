@@ -6,7 +6,7 @@ description: "An overview of the Extrude Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Editor Flatten Tool
+# Editor Extrude Tool
 
 The extrude tool is used to add or subract blocks of the same type around the cursor.
 
