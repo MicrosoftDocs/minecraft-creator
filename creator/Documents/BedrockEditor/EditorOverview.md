@@ -114,7 +114,11 @@ Before we dive into the Tool Mode UI, you might want to take a moment to familia
 
 - Moving around: In Tool Mode, hold the right mouse button down while you press `W`, `A`, `S`, `D`, `Space`, and `Shift` keys. You do not need to hold down the right mouse button to use the same keys to move around in Crosshair Mode.
 
+- Fly Speed: In Tool Mode, click the **View** menu and select **View Settings** to open the View Settings panel. From here, you can set your fly speed from 1 to 10 so that you can navigate your project faster.
+
 - Look-to-teleport: In Tool Mode, point your cursor at a block in the distance, and hit `G` on your keyboard. You will be "Grapple teleported" there. This function does not work in Crosshair Mode.
+
+- Directional Compass: In the upper-right corner of the editor window, the directional compass will show you which cardinal direction you are facing. You can even click a direction to snap your view to face it.
 
 ## Editor and Bedrock Dedicated Server
 
