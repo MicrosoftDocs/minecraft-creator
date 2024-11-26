@@ -362,6 +362,18 @@
               href: Documents/BedrockEditor/EditorSelectionTool.md
             - name: Editor Summon Tool
               href: Documents/BedrockEditor/EditorSummonTool.md
+            - name: Editor Flatten Tool
+              href: Documents/BedrockEditor/EditorFlattenTool.md
+            - name: Editor Smart Fill Tool
+              href: Documents/BedrockEditor/EditorFillTool.md
+            - name: Editor Terrain Tool
+              href: Documents/BedrockEditor/EditorTerrainTool.md
+            - name: Editor Extrude Tool
+              href: Documents/BedrockEditor/EditorExtrudeTool.md
+            - name: Editor Repeater Tool
+              href: Documents/BedrockEditor/EditorRepeaterTool.md
+            - name: Editor Farm Tool
+              href: Documents/BedrockEditor/EditorFarmTool.md
             - name: Editor Tool Mode
               href: Documents/BedrockEditor/EditorToolMode.md
             - name: Editor Workflow
