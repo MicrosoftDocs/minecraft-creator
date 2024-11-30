@@ -44,6 +44,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | cod| 9072| 112 |
 | command_block_minecart| 524388| 100 |
 | cow| 4875| 11 |
+| creaking | 2962 | 146 |
 | creeper| 2849| 33 |
 | dolphin| 8991| 31 |
 | donkey| 2118424| 24 |

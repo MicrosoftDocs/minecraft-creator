@@ -23,7 +23,9 @@
  - name: light_dampening
    href: minecraftBlock_light_dampening.md
  - name: light_emission
-   href: minecraftBlock_light_emission.md    
+   href: minecraftBlock_light_emission.md
+ - name: liquid_detection 
+   href: minecraftBlock_liquid_detection.md
  - name: loot
    href: minecraftBlock_loot.md
  - name: map_color

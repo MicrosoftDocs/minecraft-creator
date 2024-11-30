@@ -24,7 +24,7 @@ The following are parameters of EACH material instance you provide:
 
 | Name |Default Value |Type |Description |
 |:----|:----|:----|:----|
-| ambient_occlusion | true | Boolean| Should this material have ambient occlusion applied when lighting? If true, shadows will be created around and underneath the block. |
+| ambient_occlusion | *not set** | Decimal| If this material has ambient occlusion applied when lighting, shadows will be created around and underneath the block. Decimal value controls exponent applied to a value after lighting. |
 | face_dimming | true | Boolean | This material should be dimmed by the direction it's facing. |
 | render_method | opaque | String | The render method to use. Must be one of the options listed in the table below. See this page to understand the relationship between render method and render distance.  |
 | texture | *none* | String | Texture name for the material. |

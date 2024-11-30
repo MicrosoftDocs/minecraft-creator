@@ -40,6 +40,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:can_climb](EntityComponents/minecraftComponent_can_climb.md) |`minecraft:can_climb` allows an entity to climb ladders. |
 |[minecraft:can_fly](EntityComponents/minecraftComponent_can_fly.md) |`minecraft:can_fly` allows an entity the ability to fly. |
 |[minecraft:can_power_jump](EntityComponents/minecraftComponent_can_power_jump.md) |`minecraft:can_power_jump` allows an entity to power jump similar to the `horse` entity. |
+|[minecraft:cannot_be_attacked](EntityComponents/minecraftComponent_cannot_be_attacked.md) | `minecraft:cannot_be_attacked` blocks entities from attacking the owner entity unless they have the `minecraft:ignore_cannot_be_attacked` component. |
 |[minecraft:celebrate_hunt](EntityComponents/minecraftComponent_celebrate_hunt.md) |`minecraft:celebrate_hunt` compels an entity to celebrate when hunting a specific entity. |
 |[minecraft:color](EntityComponents/minecraftComponent_color.md) |`minecraft:color` defines the entity's main color. |
 |[minecraft:color2](EntityComponents/minecraftComponent_color2.md) |`minecraft:color2` defines the entity's second texture color. |
@@ -83,6 +84,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:home](EntityComponents/minecraftComponent_home.md) |`minecraft:home` saves a home point of interest for when the entity is spawned.|
 |[minecraft:horse.jump_strength](EntityComponents/minecraftComponent_horse.jump_strength.md) |`minecraft:horse.jump_strength` defines the jump height for a horse or similar entity, such as a donkey.|
 |[minecraft:hurt_on_condition](EntityComponents/minecraftComponent_hurt_on_condition.md) |`minecraft:hurt_on_condition` defines a set of conditions under which the entity should take damage.|
+|[minecraft:ignore_cannot_be_attacked](EntityComponents/minecraftComponent_ignore_cannot_be_attacked.md) | `ignore_cannot_be_attacked` when set, blocks entities from attacking the owner entity unless they have the `minecraft:ignore_cannot_be_attacked` component. |
 |[minecraft:input_ground_controlled](EntityComponents/minecraftComponent_input_ground_controlled.md) |`minecraft:input_ground_controlled` allows a ridable entity to be controlled using keyboard controls when ridden by a player. |
 |[minecraft:inside_block_notifier](EntityComponents/minecraftComponent_inside_block_notifier.md) |`minecraft:inside_block_notifier` verifies whether the entity is inside any of the listed blocks.|
 |[minecraft:insomnia](EntityComponents/minecraftComponent_insomnia.md) |`minecraft:insomnia` adds a timer since last rested to see if phantoms should spawn.|
