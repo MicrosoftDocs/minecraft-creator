@@ -57,7 +57,9 @@
 - name: can_join_raid
   href: minecraftComponent_can_join_raid.md
 - name: can_power_jump
-  href: minecraftComponent_can_power_jump.md   
+  href: minecraftComponent_can_power_jump.md
+- name: cannot_be_attacked
+  href: minecraftComponent_cannot_be_attacked.md
 - name: celebrate_hunt
   href: minecraftComponent_celebrate_hunt.md
 - name: color
@@ -144,6 +146,8 @@
   href: minecraftComponent_horse.jump_strength.md
 - name: hurt_on_condition
   href: minecraftComponent_hurt_on_condition.md
+- name: ignore_cannot_be_attacked
+  href: minecraftComponent_ignore_cannot_be_attacked.md
 - name: input_ground_controlled
   href: minecraftComponent_input_ground_controlled.md
 - name: inside_block_notifier

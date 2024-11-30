@@ -67,6 +67,7 @@ ms.service: minecraft-bedrock-edition
 | lit| Boolean| True, False| Determines if a block is lit or not |
 | moisturized_amount| Integer| 0 - 7| Determines the moisture level of crops |
 | monster_egg_stone_type| String| stone, cobblestone, stone_brick, mossy_stone_brick, cracked_stone_brick, chiseled_stone_brick| Determines the stone type of a monster egg block |
+| natural | Boolean | True, False | If the block has been placed by worldgen or by a player |
 | new_leaf_type| String| acacia, dark_oak| DEPRECATED - Determines the leaf type of some blocks |
 | new_log_type| String| acacia, dark_oak| Determines the wood type of some blocks |
 | no_drop_bit| Boolean| True, False| Determines if a skull block should drop loot |
@@ -78,6 +79,10 @@ ms.service: minecraft-bedrock-edition
 | orientation| Integer| 0-11| A 12-variant orientation|
 | output_lit_bit| Boolean| True, False| Determines if a Comparator's output is lit |
 | output_subtract_bit| Boolean| True, False| Determines if a Comparator is set to subtract output |
+| pale_moss_carpet_side_east | String | none, short, tall | Determines the looks of a pale moss carpet east face |
+| pale_moss_carpet_side_north | String | none, short, tall | Determines the looks of a pale moss carpet north face |
+| pale_moss_carpet_side_south | String | none, short, tall | Determines the looks of a pale moss carpet south face |
+| pale_moss_carpet_side_west | String | none, short, tall | Determines the looks of a pale moss carpet west face |
 | persistent_bit| Boolean| True, False| Determines if a leaf block is persistent |
 | portal_axis| String| unknown, x, z| Determines the orientation of portal blocks |
 | powered_bit| Boolean| True, False| Shows when an observer or tripwire sends a redstone signal |
@@ -103,6 +108,7 @@ ms.service: minecraft-bedrock-edition
 | structure_void_type| String| void, air| DEPRECATED - Determines which void mode to draw for structure blocks |
 | suspended_bit| Boolean| True, False| Indicates if a tripwire block is suspended |
 | tall_grass_type| String| default, tall, fern, snow| DEPRECATED - Determines the type of a tall grass block |
+| tip | Boolean | True, False | Determines if the block is the last one in a directional chain of blocks |
 | toggle_bit| Boolean| True, False| Determines if a hopper block is active or not |
 | top_slot_bit| Boolean| True, False| Shows if a slab is the top half of the block or not |
 | torch_facing_direction| String| unknown, west, east, north, south, top| Determines the block that a torch is attached to in relation to its position |

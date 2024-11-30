@@ -266,13 +266,6 @@ Represents the scatter distribution over a coordinate (x/y/z), can also be built
 | identifier | String | Required | The name of this feature rule in the format `namespace_name:rule_name`. `rule_name` must match the filename. |
 | places_feature | String | Required | Named reference to the feature controlled by this rule. |
 
-### Feature Rule JSON File
-
-| Name| Type | Required? | Description |
-|:-----------|:-----------|:-----------|:-----------|
-| format_version | String | Required | Version of the JSON schema used by this file. |
-| minecraft:feature_rules | Object of type Feature Rule Definition | Required | A single Feature Rule Definition. |
-
 ### Filter Group
 
 Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.

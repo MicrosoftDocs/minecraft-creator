@@ -18,6 +18,5 @@ Welcome to the Experimental Entity Query functions.
 
 | Name| Description |
 |:-----------|:-----------|
-| query.client_max_render_distance | (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Returns the max render distance in chunks of the current client. Available on the Client (Resource Packs) only. |
-| query.client_memory_tier | (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Returns a number representing the client RAM memory tier, 0 = 'Undetermined', 1 = 'SuperLow', 2 = 'Low', 3 = 'Mid', 4 = 'High', or 5 = 'SuperHigh'. Available on the Client (Resource Packs) only. |
-| query.server_memory_tier | (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Returns a number representing the server RAM memory tier, 0 = 'Undetermined', 1 = 'SuperLow', 2 = 'Low', 3 = 'Mid', 4 = 'High', or 5 = 'SuperHigh'. Available on the server side (Behavior Packs) only. |
+| query.last_input_mode_is_any | (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Takes one or more arguments ('keyboard_and_mouse', 'touch', 'gamepad', or 'motion_controller'). If the last input used is any of the specified string values, returns 1.0. Otherwise returns 0.0. Available on the Client (Resource Packs) only. |
+| query.touch_only_affects_hotbar | (EXPERIMENTAL. Enable 'Upcoming Creator Features' to use.) Returns 1.0 if the touch input only affects the touchbar, otherwise returns 0.0. Available on the Client (Resource Packs) only. |

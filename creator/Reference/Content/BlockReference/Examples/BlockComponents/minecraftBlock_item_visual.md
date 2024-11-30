@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 `minecraft:item_visual` is a `JSON Object` component that specifies the block's item representation. The object contains `geometry` and `material_instances` parameters which map to the existing `minecraft:geometry` and `minecraft:material_instances` block components respectively. 
 
-Both `minecraft:geometry` and `minecraft:material_instances` components are required when using the `minecraft:item_visual` component.
+Both `minecraft:geometry` and `minecraft:material_instances` parameters are required when using the `minecraft:item_visual` component.
 
 Experimental toggles required: Upcoming Creator Features
 
