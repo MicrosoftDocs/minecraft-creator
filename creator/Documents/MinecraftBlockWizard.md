@@ -12,7 +12,7 @@ The Minecraft Block Wizard is a plugin for [Blockbench](./Blockbench.md). It all
 
 After you have created a custom block with the Wizard, you can use Blockbench to design a custom 3D model for it.
 
-The plugin works similarly to the [Minecraft Entity Wizard](https://www.minecraft.net/en-us/creator/article/introduction-minecraft-entity-wizard-blockbench), which you can use to create custom entities.
+The plugin works similarly to the [Minecraft Entity Wizard](https://www.minecraft.net/creator/article/introduction-minecraft-entity-wizard-blockbench), which you can use to create custom entities.
 
 ## Demonstration: How to Make a Custom Block
 

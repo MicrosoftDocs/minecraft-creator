@@ -165,4 +165,4 @@ Looking ahead, here's what you can expect coming in future releases.
 
 - Player Interact Events
 
-For more information on what's next, follow our [Beta/Preview Changelogs](https://feedback.minecraft.net/hc/en-us/sections/360001185332).
+For more information on what's next, follow our [Beta/Preview Changelogs](https://feedback.minecraft.net/hc/sections/360001185332).

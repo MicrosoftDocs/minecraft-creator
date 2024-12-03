@@ -560,6 +560,8 @@
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_persona_actor_animation_1.8.0.md          
         - name: Animation JSON
           href: Reference/Content/animationsreference/Examples/TOC.yml
+        - name: Client Biome JSON
+          href: Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md
         - name: Fog JSON
           href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
         - name: Particle JSON

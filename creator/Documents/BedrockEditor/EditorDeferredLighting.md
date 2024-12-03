@@ -23,5 +23,5 @@ When Deferred Lighting is enabled, you can use these options.
 
 To learn more about deferred lighting please reference the following documentation:
 
-* [Getting Started with Deferred Lighting](https://learn.microsoft.com/en-us/minecraft/creator/documents/deferredlighting/gettingstarteddeferredlighting?view=minecraft-bedrock-stable)
-* [Enabling Deferred Technical Preview in Your World](https://learn.microsoft.com/en-us/minecraft/creator/documents/deferredlighting/enablingdeferredtechnicalpreview?view=minecraft-bedrock-stable)
+* [Getting Started with Deferred Lighting](./../DeferredLighting/GettingStartedDeferredLighting.md)
+* [Enabling Deferred Technical Preview in Your World](./../DeferredLighting/EnablingDeferredTechnicalPreview.md)

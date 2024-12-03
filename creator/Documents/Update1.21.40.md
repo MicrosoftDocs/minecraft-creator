@@ -121,4 +121,4 @@ Looking ahead, here's what you can expect coming in future releases.
 - Input APIs - Script APIs and Molang queries that detection of some input events.
 - /schedule delay - A command that queues a function to be executed after a certain amount of time. 
 
-For more information on what's next, follow our [Beta/Preview Changelogs](https://feedback.minecraft.net/hc/en-us/sections/360001185332).
+For more information on what's next, follow our [Beta/Preview Changelogs](https://feedback.minecraft.net/hc/sections/360001185332).

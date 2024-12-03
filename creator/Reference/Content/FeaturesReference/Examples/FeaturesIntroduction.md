@@ -330,4 +330,4 @@ For more information about biome components (including the complete JSON schema)
 
 All currently listed features as of version 1.20.40 have been combined into a [sample pack](https://github.com/microsoft/minecraft-samples/blob/main/FeaturesSamples.mcaddon) that can be used in your world as a tutorial to further learn how the feature and feature rules work.
 
-Additionally, check the `feature` and `feature_rules` folders of the latest [Minecraft Dedicated Server](https://www.minecraft.net/en-us/download/server/bedrock) for examples of Vanilla feature rules.
+Additionally, check the `feature` and `feature_rules` folders of the latest [Minecraft Dedicated Server](https://www.minecraft.net/download/server/bedrock) for examples of Vanilla feature rules.

@@ -22,7 +22,7 @@ All existing worlds will be automatically updated to reflect the new world heigh
 
 Existing Minecraft worlds that use the **Infinite** World Type will be updated differently than **Flat** worlds. 
 
-To learn more about old world types, please visit [Old World Types in Minecraft: Bedrock Edition](https://feedback.minecraft.net/hc/en-us/articles/4411688594317-Old-Worlds-Types-in-Minecraft-Bedrock-Edition-FAQ-).
+To learn more about old world types, please visit [Old World Types in Minecraft: Bedrock Edition](https://feedback.minecraft.net/hc/articles/4411688594317-Old-Worlds-Types-in-Minecraft-Bedrock-Edition-FAQ-).
 
 ### Updating Infinite Worlds
 

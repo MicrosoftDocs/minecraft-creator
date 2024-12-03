@@ -36,7 +36,7 @@ Find the survival world you want to bring up to date with the new Nether. We'll 
 ## Back up your world
 When you are doing anything potentially destructive to a world, it's highly recommended you make a backup.
 
-Information on how to back up your worlds can be found on the [Mojang support website](https://help.minecraft.net/hc/en-us/articles/360034754912-Backing-up-Minecraft-worlds-).
+Information on how to back up your worlds can be found on the [Mojang support website](https://help.minecraft.net/hc/articles/15518267480461-How-to-Back-Up-Your-Minecraft-Save-to-the-Cloud-on-PC-Mac-Chromebook-and-Linux).
 
 ## Load Chunker
 
@@ -49,8 +49,6 @@ Since we're using Bedrock Edition on Windows 10, we're going to use the built-in
 ![Export world button](Media/Chunker/netherexportworld.png)
 
 In Chunker, click **Select Archive**. Navigate to the file you exported and select it. Click **Start** to load your world in Chunker.
-
-For more information on locating your world on other devices/editions, check out this article on the [Mojang support website](https://help.minecraft.net/hc/en-us/articles/360035131551-Where-are-Minecraft-files-stored-).
 
 ## Choose an export version
 
