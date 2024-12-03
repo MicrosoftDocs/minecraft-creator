@@ -90,4 +90,4 @@ Looking ahead, here's what you can expect coming in future releases.
 - Player Interact Events
 - [Custom Components](../Documents/CustomComponents.md) - allows extending Blocks and Items with the power of scripting. This is currently in experimental with many more APIs to come. It will continue to iterate for a bit before moving to stable. 
 
-For more information on what's next, follow our [Beta/Preview Changelogs](https://feedback.minecraft.net/hc/en-us/sections/360001185332).
+For more information on what's next, follow our [Beta/Preview Changelogs](https://feedback.minecraft.net/hc/sections/360001185332).

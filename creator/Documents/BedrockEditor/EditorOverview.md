@@ -15,8 +15,8 @@ For a more in-depth experience using the tools to accomplish basic tasks, take a
 There's more information about Editor on the [Minecraft: Bedrock Editor GitHub site](https://github.com/Mojang/minecraft-editor)!
 
 > [!IMPORTANT]
-> The Editor is in early preview and we're working to add more capabilities.
-> It will change significantly as we get feedback from creators like you.
+> The Editor is in beta and we're working to add more capabilities.
+> It will continue to change as we get feedback from creators like you.
 > Also, the images of Editor in this document might vary a little from what you have on your screen.
 
 --------
@@ -41,11 +41,11 @@ In this manual, you will learn the following:
 
 To get started, you need the following:
 
-- A Windows 10 (or higher) computer with Minecraft Bedrock Editor
+- A Windows 10 (or higher) computer with Minecraft Bedrock Editor 
 - Keyboard and mouse
 
 > [!IMPORTANT]
-> Editor is not available on mobile.
+> Editor is PC only and not available on mobile or console.
 
 It's recommended that the following be completed before beginning this tutorial.
 
@@ -53,7 +53,7 @@ It's recommended that the following be completed before beginning this tutorial.
 
 ## Creating an Editor Project
 
-After you launch the Editor from the shortcut, you get a screen that says "Create New Project."
+After you launch Editor, you get a screen that says "Create New Project."
 
 ![Image of the Minecraft Editor starting page](Media/editor_install_new_project.png)
 
@@ -95,16 +95,15 @@ If you do want to close the window, click the X in the corner. Some windows can 
 
 ## Welcome/Quick Start
 
-![Animation of the parts of the Quick Start Welcome screen](Media/EditorQuickStartMenu.gif)
+![Animation of the parts of the Quick Start Welcome screen](Media/editor_quick_start.png)
 
 |Tab  |Content  |
 |:-------|:---------|
-| Introduction | Welcome to Minecraft Editor!<br>Minecraft Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock. We are early in our development and excited for the opportunity to build alongside our creator community!<br>Click through the tabs above to learn the basics! |
-| Movement | Hold down your right mouse button on the viewport to enable movement.<br>Move horizontally using `W A S D`.<br>Move vertically using `Shift` or `Space`. |
-|Selection|Left-click anywhere in the world to select a single block.<br>Use the gizmo or hold Shift between left-clicks to place opposite corners of an area. Press Ctrl to make additional selections.<br>Move using the gizmo, or hold down Alt and move with arrow keys (horizontal) and page up/page down (vertical).<br>Resize using corner gizmos, or hold Ctrl (increase) or Shift (decrease) with arrow keys and page up/page down.|
-|Tools|Select the brush from the left toolrail.<br>Left-click and drag to paint.|
-|Actions|Undo (`Ctrl Z`) or redo (`Ctrl Y`) your edits.<br>Cut (`Ctrl X`) or copy (`Ctrl C`) a selection.<br>Select a single block and quick paste (`Ctrl V`) what you cut or copied.<br>Or, paste preview (`Ctrl Shift V`) and use arrow keys and page-up / page-down for precise placement.|
-|Help|Editor will be exclusively available in Bedrock Preview until the feature set and quality meets our standards to be made visible in the Launcher.<br>- Documentation<br>- Log issues and give feedback.<br>You may close this panel. To reopen at any point, select "QuickStart" from the top "Help" menu.|
+| Introduction | Welcome to the Minecraft Editor Beta, a tool designed to help you create stunning worlds in Bedrock with ease. <br> <br> You may find these links helpful on your journey: <br> <br> <ur> <li> [Documentation](https://aka.ms/BedrockEditorDocs) </li> <li> [Report problems and give feedback](https://aka.ms/BedrockEditorFeedback) </li> <li> [Editor Community](https://aka.ms/BedrockEditorCommunity) </li></ur> <br>  To reopen Quick Start, you can find it under the 'Help' menu.|
+| Movement | To navigate in the Editor, you'll need a keyboard and mouse. Trackpads or controllers aren't recommended. <br> <br> To move around in Editor: <br> <br><ur> <li> Hold down the right mouse button to look around. </li><li> While holding the right mouse button, move horizontally with `WASD` and vertically with `SHIFT` and `SPACE`. </li></ur> |
+|Tools|You can find tools on the left rail. Each tool allows you to edit your world in different ways. <br> <br>Click on the Information button ("i") at the top right corner of each tool to learn more about how it works.|
+|Actions|Actions are shortcuts that live at the top of your screen. Hit the “+” button in the Action Bar to customize which are displayed.<br> <br>At the top center of your screen is the Block Hotbar. Click once to change the active block, click twice to open the Block Picker to customize the Hotbar.<br> <br> You can create a new Hotbar by clicking the Hotbar Menu button to the right.  
+|
 
 ## Movement
 
@@ -114,7 +113,11 @@ Before we dive into the Tool Mode UI, you might want to take a moment to familia
 
 - Moving around: In Tool Mode, hold the right mouse button down while you press `W`, `A`, `S`, `D`, `Space`, and `Shift` keys. You do not need to hold down the right mouse button to use the same keys to move around in Crosshair Mode.
 
+- Fly Speed: In Tool Mode, click the **View** menu and select **View Settings** to open the View Settings panel. From here, you can set your fly speed from 1 to 10 so that you can navigate your project faster.
+
 - Look-to-teleport: In Tool Mode, point your cursor at a block in the distance, and hit `G` on your keyboard. You will be "Grapple teleported" there. This function does not work in Crosshair Mode.
+
+- Directional Compass: In the upper-right corner of the editor window, the directional compass will show you which cardinal direction you are facing. You can even click a direction to snap your view to face it.
 
 ## Editor and Bedrock Dedicated Server
 
@@ -151,7 +154,7 @@ If correctly set up, you should see the output say
 
 Editor Mode is controlled by a flag in the level data (not by the command line), so you need to launch the server either by having the server create a new Editor project, or by launching the server using an existing Editor project.
 
-When the server is up and running, any client connections from Minecraft Bedrock Preview Edition will connect as editor sessions and present the editor interface.  Connections from Non-Preview editions of Minecraft will be refused.
+When the server is up and running, any client connections from Minecraft Bedrock Edition will connect as editor sessions and present the editor interface.  If using a Preview version, connections from Non-Preview editions of Minecraft will be refused.
 
 ## What's Next?
 

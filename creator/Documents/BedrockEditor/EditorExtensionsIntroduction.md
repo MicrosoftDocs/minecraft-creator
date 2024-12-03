@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 How do you get started? Well, that depends on what you already know. There are a lot of parts to it and the more you know about each part, the easier it will be. Let's assume...
 
->- You have Minecraft Bedrock Preview running on a Windows PC.
+>- You have Minecraft Bedrock running on a Windows PC.
 >- You have worked with Resource Packs and Behavior Packs to change something in Minecraft. If not, you should start with [Getting Started with Minecraft Add-ons](../GettingStarted.md).
 >- You know how to use slash commands in Minecraft as shown in the [Commands Introduction](../CommandsIntroduction.md).
 >- You have taken a look at [Minecraft scripting](../ScriptingGettingStarted.md) and set up your programming environment so you can try it.
