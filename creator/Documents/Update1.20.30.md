@@ -11,7 +11,7 @@ Minecraft Bedrock has been updated to 1.20.30 and there are a number of changes 
 
 ## Commands
 
-The [/camera command](../Documents/CameraCommandIntroduction.md) gives creators control over custom camera. This release focuses on the ```minecraft:free``` camera preset. Learn how to use this preset here: [Camera Command Tutorial - Free Camera Preset](../Documents/CameraTutorialFreeCameraPreset.md)
+The [/camera command](../Documents/CameraCommandIntroduction.md) gives creators control over custom camera. This release focuses on the ```minecraft:free``` camera preset. Learn how to use this preset here: [Camera Command Tutorial - Free Camera Preset](../Documents/CameraSystem/CameraPresetFree.md)
 
 Additional presets and more camera capabilities are planned for the future.
 

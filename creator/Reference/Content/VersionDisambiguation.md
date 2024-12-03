@@ -42,7 +42,7 @@ Here is the introduction to [behavior packs](../../Documents/BehaviorPack.md).
 - [blocks](../../Documents/AddCustomDieBlock.md)
     - `<block_name>`.json
         "format_version": "1.19.30"
-- [cameras](../../Documents/CameraTutorialFreeCameraPreset.md)
+- [cameras](../../Documents/CameraSystem/CameraPresetFree.md)
     - presets
         - `<identifier>`.json
             "format_version": "1.19.50"

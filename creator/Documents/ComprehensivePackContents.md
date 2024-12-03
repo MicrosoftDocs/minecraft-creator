@@ -36,7 +36,7 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
     - `<entity_name_animations>`.json
 - [blocks](AddCustomDieBlock.md)
     - `<block_name>`.json
-- [cameras](CameraTutorialFreeCameraPreset.md)
+- [cameras](./CameraSystem/CameraPresetFree.md)
     - presets
         - `<identifier>`.json
 - [entities]()
