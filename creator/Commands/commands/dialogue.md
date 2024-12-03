@@ -7,7 +7,7 @@ title: dialogue Command
 description: Description and usage of the dialogue command
 ---
 # `/dialogue` Command
-Opens NPC dialogue for a player. See the page on the [Dialogue documentation](https://learn.microsoft.com/en-us/minecraft/creator/documents/npcdialogue#dialogue-command) for more information.
+Opens NPC dialogue for a player. See the page on the [Dialogue documentation](./../../Documents/NPCDialogue.md#dialogue-command) for more information.
 
 <table>
   <tr>

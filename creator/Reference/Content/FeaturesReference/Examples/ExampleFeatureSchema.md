@@ -377,6 +377,10 @@ Here is an example of the complete feature schema:
     string "surface" : opt // Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'
     bool "allow_air_placement" : opt // Determines whether the feature can snap through air blocks. Defaults to true.
     bool "allow_underwater_placement" : opt // Determines whether the feature can snap through water blocks. Defaults to false.
+    array "allowed_surface_blocks" : opt // A list of blocks that the feature is permitted to snap to. Leaving this empty results in the feature snapping to blocks that can provide support for the given face (up/down/horizontal)
+      {
+        "<any array element>"
+      }
   }
   object "minecraft:structure_template_feature" : opt
   {

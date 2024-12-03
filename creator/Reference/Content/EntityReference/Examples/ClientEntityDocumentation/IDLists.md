@@ -351,6 +351,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:ambient_sound_interval| -1314051310 |
 | minecraft:can_climb| -550459594 |
 | minecraft:can_fly| 985724318 |
+| minecraft:cannot_be_attacked| 1363084217 |
 | minecraft:can_power_jump| -763124853 |
 | minecraft:color| 1069623177 |
 | minecraft:color2| 1429635777 |
@@ -361,6 +362,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:flying_speed| -570508595 |
 | minecraft:friction_modifier| -714364556 |
 | minecraft:ground_offset| -1816881803 |
+| minecraft:ignore_cannot_be_attacked | 2139692418 |
 | minecraft:input_ground_controlled| -646415617 |
 | minecraft:is_baby| 1853172763 |
 | minecraft:is_charged| 125340337 |

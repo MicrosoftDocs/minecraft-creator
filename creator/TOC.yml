@@ -4,6 +4,8 @@
       href: index.yml
     - name: "Updates and News"
       items:
+        - name: 1.21.50 Update Summary
+          href: Documents/Update1.21.50.md 
         - name: 1.21.40 Update Summary
           href: Documents/Update1.21.40.md 
         - name: 1.21.30 Update Summary
@@ -362,6 +364,18 @@
               href: Documents/BedrockEditor/EditorSelectionTool.md
             - name: Editor Summon Tool
               href: Documents/BedrockEditor/EditorSummonTool.md
+            - name: Editor Flatten Tool
+              href: Documents/BedrockEditor/EditorFlattenTool.md
+            - name: Editor Smart Fill Tool
+              href: Documents/BedrockEditor/EditorFillTool.md
+            - name: Editor Terrain Tool
+              href: Documents/BedrockEditor/EditorTerrainTool.md
+            - name: Editor Extrude Tool
+              href: Documents/BedrockEditor/EditorExtrudeTool.md
+            - name: Editor Repeater Tool
+              href: Documents/BedrockEditor/EditorRepeaterTool.md
+            - name: Editor Farm Tool
+              href: Documents/BedrockEditor/EditorFarmTool.md
             - name: Editor Tool Mode
               href: Documents/BedrockEditor/EditorToolMode.md
             - name: Editor Workflow
@@ -546,6 +560,8 @@
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_persona_actor_animation_1.8.0.md          
         - name: Animation JSON
           href: Reference/Content/animationsreference/Examples/TOC.yml
+        - name: Client Biome JSON
+          href: Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md
         - name: Fog JSON
           href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
         - name: Particle JSON

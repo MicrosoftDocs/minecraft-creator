@@ -36,7 +36,7 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
     - `<entity_name_animations>`.json
 - [blocks](AddCustomDieBlock.md)
     - `<block_name>`.json
-- [cameras](CameraTutorialFreeCameraPreset.md)
+- [cameras](./CameraSystem/CameraPresetFree.md)
     - presets
         - `<identifier>`.json
 - [entities]()
@@ -129,7 +129,7 @@ Here is an introduction to [resource packs](ResourcePack.md).
     - `<graphic>`.png
     - `<graphic>`.jpg
     - `<file>`.json
-- [biomes_client.json](../Reference/Content/FogsReference/Examples/FogsIntroduction.md#biomes)
+- [biomes_client.json - deprecated, see client biomes](../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md)
 - [blocks.json](AddCustomDieBlock.md#define-textures-and-sounds-with-blocksjson)
 - [manifest.json](ResourcePack.md#create-a-manifest-file) **(required)**
 - pack_icon.png

@@ -106,4 +106,4 @@ Additional scripting APIs are planned to move to stable in an upcoming release:
 - Effect Add Events
 - DataDrivenEntity Trigger After Event
 
-For more information on what's next, follow our [Beta/Preview Changelogs](https://feedback.minecraft.net/hc/en-us/sections/360001185332).
+For more information on what's next, follow our [Beta/Preview Changelogs](https://feedback.minecraft.net/hc/sections/360001185332).
