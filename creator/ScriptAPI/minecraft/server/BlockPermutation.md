@@ -51,14 +51,72 @@ The [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) that th
 Type: [*BlockType*](BlockType.md)
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
+- [canBeDestroyedByLiquidSpread](#canbedestroyedbyliquidspread)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [canContainLiquid](#cancontainliquid)
+::: moniker-end
 - [getAllStates](#getallstates)
 - [getItemStack](#getitemstack)
 - [getState](#getstate)
 - [getTags](#gettags)
 - [hasTag](#hastag)
+::: moniker range="=minecraft-bedrock-experimental"
+- [isLiquidBlocking](#isliquidblocking)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [liquidSpreadCausesSpawn](#liquidspreadcausesspawn)
+::: moniker-end
 - [matches](#matches)
 - [withState](#withstate)
 - [resolve](#resolve)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **canBeDestroyedByLiquidSpread**
+`
+canBeDestroyedByLiquidSpread(liquidType: LiquidType): boolean
+`
+
+Returns whether this block is removed when touched by liquid.
+
+#### **Parameters**
+- **liquidType**: [*LiquidType*](LiquidType.md)
+  
+  The type of liquid this function should be called for.
+
+**Returns** *boolean* - Whether this block is removed when touched by liquid.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws *Error*
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **canContainLiquid**
+`
+canContainLiquid(liquidType: LiquidType): boolean
+`
+
+Returns whether this block can have a liquid placed over it, i.e. be waterlogged.
+
+#### **Parameters**
+- **liquidType**: [*LiquidType*](LiquidType.md)
+  
+  The type of liquid this function should be called for.
+
+**Returns** *boolean* - Whether this block can have a liquid placed over it.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws *Error*
+::: moniker-end
 
 ### **getAllStates**
 `
@@ -139,6 +197,52 @@ function checkBlockTags(log: (message: string, status?: number) => void, targetL
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/checkBlockTags.ts) code sandbox.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **isLiquidBlocking**
+`
+isLiquidBlocking(liquidType: LiquidType): boolean
+`
+
+Returns whether this block stops liquid from flowing.
+
+#### **Parameters**
+- **liquidType**: [*LiquidType*](LiquidType.md)
+  
+  The type of liquid this function should be called for.
+
+**Returns** *boolean* - Whether this block stops liquid from flowing.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws *Error*
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **liquidSpreadCausesSpawn**
+`
+liquidSpreadCausesSpawn(liquidType: LiquidType): boolean
+`
+
+Returns whether this block is removed and spawns its item when touched by liquid.
+
+#### **Parameters**
+- **liquidType**: [*LiquidType*](LiquidType.md)
+  
+  The type of liquid this function should be called for.
+
+**Returns** *boolean* - Whether this block is removed and spawns its item when touched by liquid.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws *Error*
+::: moniker-end
 
 ### **matches**
 `

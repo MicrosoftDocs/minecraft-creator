@@ -35,17 +35,26 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added property *[`isWaterlogged`](Block.md#iswaterlogged)*
+- Added function *[`canBeDestroyedByLiquidSpread`](Block.md#canbedestroyedbyliquidspread)*
+- Added function *[`canContainLiquid`](Block.md#cancontainliquid)*
 - Added function *[`canPlace`](Block.md#canplace)*
 - Changed function *[`getComponent`](Block.md#getcomponent)*
   - Changed return type from [*BlockComponent*](BlockComponent.md) (throws exceptions) to *BlockComponentTypeMap[T] | undefined* (throws exceptions)
   - Changed argument `componentId` type from *string* to *T*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
+- Added function *[`isLiquidBlocking`](Block.md#isliquidblocking)*
+- Added function *[`liquidCanFlowFromDirection`](Block.md#liquidcanflowfromdirection)*
+- Added function *[`liquidSpreadCausesSpawn`](Block.md#liquidspreadcausesspawn)*
 - Added function *[`setWaterlogged`](Block.md#setwaterlogged)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Changed *[`BlockPermutation`](BlockPermutation.md)*
+- Added function *[`canBeDestroyedByLiquidSpread`](BlockPermutation.md#canbedestroyedbyliquidspread)*
+- Added function *[`canContainLiquid`](BlockPermutation.md#cancontainliquid)*
 - Changed function *[`getState`](BlockPermutation.md#getstate)*
   - Changed return type from *boolean* | *number* | *string* to *minecraftvanilladata.BlockStateSuperset[T] | undefined*
   - Changed argument `stateName` type from *string* to *T*
+- Added function *[`isLiquidBlocking`](BlockPermutation.md#isliquidblocking)*
+- Added function *[`liquidSpreadCausesSpawn`](BlockPermutation.md#liquidspreadcausesspawn)*
 - Changed function *[`matches`](BlockPermutation.md#matches)*
   - Changed argument `blockName` type from *string* to *T*
   - Changed argument `states` type from Record<*string*, *boolean* | *number* | *string*> to *BlockStateArg<T>*
@@ -70,6 +79,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
+#### Changed *[`ContainerSlot`](ContainerSlot.md)*
+- Added function *[`setDynamicProperties`](ContainerSlot.md#setdynamicproperties)*
 #### Changed *[`Dimension`](Dimension.md)*
 - Changed function *[`fillBlocks`](Dimension.md#fillblocks)*
   - Changed argument `volume` type from [*BlockVolumeBase*](BlockVolumeBase.md) to [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
@@ -85,6 +96,7 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
 - Added function *[`lookAt`](Entity.md#lookat)*
+- Added function *[`setDynamicProperties`](Entity.md#setdynamicproperties)*
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
@@ -101,6 +113,7 @@ description: Changelog of the `@minecraft/server` module
 - Changed function *[`getComponent`](ItemStack.md#getcomponent)*
   - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
+- Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Changed *[`Player`](Player.md)*
 - Added property *[`inputInfo`](Player.md#inputinfo)*
@@ -131,11 +144,13 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`placeJigsawStructure`](StructureManager.md#placejigsawstructure)*
 #### Changed *[`System`](System.md)*
 - Added property *[`beforeEvents`](System.md#beforeevents)*
+- Added function *[`scriptEvent`](System.md#scriptevent)*
 #### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
+- Added function *[`setDynamicProperties`](World.md#setdynamicproperties)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
@@ -168,6 +183,8 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Compostable`
 - Added value `Dyeable`
 - Added value `Potion`
+#### Added enum [`LiquidType`](LiquidType.md)
+#### Added enum [`NamespaceNameErrorReason`](NamespaceNameErrorReason.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `TicksPerDay`
 ## 1.16.0

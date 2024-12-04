@@ -23,6 +23,13 @@ Whether the start height defined in the jigsaw structure definition should be ig
 
 Type: *boolean*
 
+### **includeEntities**
+`includeEntities?: boolean;`
+
+Whether entities should be included in the structure. Defaults to true.
+
+Type: *boolean*
+
 ### **keepJigsaws**
 `keepJigsaws?: boolean;`
 

@@ -108,6 +108,9 @@ Type: [*StructureManager*](StructureManager.md)
 - [sendMessage](#sendmessage)
 - [setAbsoluteTime](#setabsolutetime)
 - [setDefaultSpawnLocation](#setdefaultspawnlocation)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setDynamicProperties](#setdynamicproperties)
+::: moniker-end
 - [setDynamicProperty](#setdynamicproperty)
 - [setTimeOfDay](#settimeofday)
 - [stopMusic](#stopmusic)
@@ -533,6 +536,26 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setDynamicProperties**
+`
+setDynamicProperties(values: Record<string, boolean | number | string | Vector3>): void
+`
+
+Sets multiple dynamic properties with specific values.
+
+#### **Parameters**
+- **values**: Record<*string*, *boolean* | *number* | *string* | [*Vector3*](Vector3.md)>
+  
+  A Record of key value pairs of the dynamic properties to set.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+::: moniker-end
 
 ### **setDynamicProperty**
 `

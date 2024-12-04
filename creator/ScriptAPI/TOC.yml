@@ -12,6 +12,10 @@
       href: minecraft/debug-utilities/minecraft-debug-utilities.md
     - name: minecraft/debug-utilities Changelog
       href: minecraft/debug-utilities/changelog.md
+    - name: handleCounts
+      href: minecraft/debug-utilities/handleCounts.md
+    - name: PluginStats
+      href: minecraft/debug-utilities/PluginStats.md
     - name: RuntimeStats
       href: minecraft/debug-utilities/RuntimeStats.md
   - name: minecraft/server-admin
@@ -172,10 +176,14 @@
       href: minecraft/server/ItemComponentTypes.md
     - name: ItemLockMode
       href: minecraft/server/ItemLockMode.md
+    - name: LiquidType
+      href: minecraft/server/LiquidType.md
     - name: MemoryTier
       href: minecraft/server/MemoryTier.md
     - name: MoonPhase
       href: minecraft/server/MoonPhase.md
+    - name: NamespaceNameErrorReason
+      href: minecraft/server/NamespaceNameErrorReason.md
     - name: ObjectiveSortOrder
       href: minecraft/server/ObjectiveSortOrder.md
     - name: PaletteColor

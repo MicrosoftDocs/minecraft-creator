@@ -3492,7 +3492,6 @@ Ravager Spawn Egg
 - `bogged_spawn_egg`
 - `minecraft:creaking_spawn_egg`
 - `creaking_spawn_egg`
-- `editor:map_marker_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit
 - `chorus_fruit`
@@ -4523,14 +4522,7 @@ Firework Star
 - `trial_key`
 - `minecraft:ominous_trial_key`
 - `ominous_trial_key`
-- `minecraft:lodestone_compass`
-Lodestone Compass
-- `lodestone_compass`
-Lodestone Compass
-- `minecraft:wither_spawn_egg`
-- `wither_spawn_egg`
-- `minecraft:ender_dragon_spawn_egg`
-- `ender_dragon_spawn_egg`
+- `editor:map_marker_spawn_egg`
 - `speckled_melon`
 Speckled Melon
 - `nametag`
@@ -4669,8 +4661,16 @@ Filled Map
 Filled Map
 - `minecraft:colored_torch_rg`
 - `colored_torch_rg`
+- `minecraft:ender_dragon_spawn_egg`
+- `ender_dragon_spawn_egg`
+- `minecraft:wither_spawn_egg`
+- `wither_spawn_egg`
 - `minecraft:colored_torch_bp`
 - `colored_torch_bp`
+- `minecraft:lodestone_compass`
+Lodestone Compass
+- `lodestone_compass`
+Lodestone Compass
 - `minecraft:dye`
 Dye
 - `minecraft:banner_pattern`
