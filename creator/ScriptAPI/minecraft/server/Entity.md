@@ -202,6 +202,9 @@ Type: *string*
 - [resetProperty](#resetproperty)
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setDynamicProperties](#setdynamicproperties)
+::: moniker-end
 - [setDynamicProperty](#setdynamicproperty)
 - [setOnFire](#setonfire)
 - [setProperty](#setproperty)
@@ -1025,6 +1028,26 @@ Runs a particular command asynchronously from the context of this entity. Note t
   
 Notes:
 - This function can throw errors.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setDynamicProperties**
+`
+setDynamicProperties(values: Record<string, boolean | number | string | Vector3>): void
+`
+
+Sets multiple dynamic properties with specific values.
+
+#### **Parameters**
+- **values**: Record<*string*, *boolean* | *number* | *string* | [*Vector3*](Vector3.md)>
+  
+  A Record of key value pairs of the dynamic properties to set.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+::: moniker-end
 
 ### **setDynamicProperty**
 `

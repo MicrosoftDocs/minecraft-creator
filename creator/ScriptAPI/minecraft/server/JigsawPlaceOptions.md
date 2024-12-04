@@ -16,6 +16,13 @@ Provides additional options for [*@minecraft/server.StructureManager.placeJigsaw
 
 ## Properties
 
+### **includeEntities**
+`includeEntities?: boolean;`
+
+Whether entities should be included in the structure. Defaults to true.
+
+Type: *boolean*
+
 ### **keepJigsaws**
 `keepJigsaws?: boolean;`
 

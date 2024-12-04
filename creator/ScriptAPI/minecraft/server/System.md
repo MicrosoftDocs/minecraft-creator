@@ -52,6 +52,9 @@ Type: [*SystemInfo*](SystemInfo.md)
 - [runInterval](#runinterval)
 - [runJob](#runjob)
 - [runTimeout](#runtimeout)
+::: moniker range="=minecraft-bedrock-experimental"
+- [scriptEvent](#scriptevent)
+::: moniker-end
 - [waitTicks](#waitticks)
 
 ### **clearJob**
@@ -220,6 +223,25 @@ Runs a set of code at a future time specified by tickDelay.
 **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
   
 Notes:
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **scriptEvent**
+`
+scriptEvent(id: string, message: string): void
+`
+
+#### **Parameters**
+- **id**: *string*
+- **message**: *string*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md)
+::: moniker-end
 
 ### **waitTicks**
 `

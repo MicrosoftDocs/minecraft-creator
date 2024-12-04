@@ -3258,6 +3258,14 @@ Cartography Table
 - `tube_coral_wall_fan`
 - `minecraft:dandelion`
 - `dandelion`
+- `movingblock`
+Moving Block
+- `minecraft:movingblock`
+Moving Block
+- `invisiblebedrock`
+Invisible Bedrock
+- `minecraft:invisiblebedrock`
+Invisible Bedrock
 - `grass`
 Grass
 - `minecraft:grass`
@@ -3286,14 +3294,6 @@ Tripwire
 Sea Lantern
 - `minecraft:sealantern`
 Sea Lantern
-- `movingblock`
-Moving Block
-- `minecraft:movingblock`
-Moving Block
-- `invisiblebedrock`
-Invisible Bedrock
-- `minecraft:invisiblebedrock`
-Invisible Bedrock
 - `stone_slab2`
 Stone Slab 2
 - `minecraft:stone_slab2`
