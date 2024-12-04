@@ -28,9 +28,20 @@ Contains debug utility functions.
 - `1.0.0-beta`
 
 ## Interfaces
+- [handleCounts](handleCounts.md)
+- [PluginStats](PluginStats.md)
 - [RuntimeStats](RuntimeStats.md)
 
 ## Functions
+
+### **collectPluginStats**
+`
+collectPluginStats(): PluginStats
+`
+
+Collect type usage stats for each active script plugin/add-on.
+
+**Returns** [*PluginStats*](PluginStats.md) - PluginStats object.
 
 ### **collectRuntimeStats**
 `

@@ -69,8 +69,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [InputPermissionCategory](InputPermissionCategory.md)
 - [ItemComponentTypes](ItemComponentTypes.md)
 - [ItemLockMode](ItemLockMode.md)
+- [LiquidType](LiquidType.md)
 - [MemoryTier](MemoryTier.md)
 - [MoonPhase](MoonPhase.md)
+- [NamespaceNameErrorReason](NamespaceNameErrorReason.md)
 - [ObjectiveSortOrder](ObjectiveSortOrder.md)
 - [PaletteColor](PaletteColor.md)
 - [PlatformType](PlatformType.md)
@@ -491,6 +493,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemCustomComponentReloadVersionError](ItemCustomComponentReloadVersionError.md)
 - [LocationInUnloadedChunkError](LocationInUnloadedChunkError.md)
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
+- [NamespaceNameError](NamespaceNameError.md)
 - [PlaceJigsawError](PlaceJigsawError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
 
