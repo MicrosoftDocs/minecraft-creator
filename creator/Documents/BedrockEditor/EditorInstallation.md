@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # How to get Minecraft Editor
 
-Minecraft's Bedrock Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock. The Editor is available in Retail and Preview editions of Minecraft Bedrock, and you get to the user interface through a shortcut you create on your computer desktop.
+Minecraft's Bedrock Editor is a multiblock editing experience that helps you easily craft high-quality worlds in Minecraft Bedrock. The Editor is available in Retail and Preview editions of Minecraft Bedrock. You can access the Editor either through the Minecraft Launcher or a shortcut you create on your computer desktop.
 
 > [!IMPORTANT]
 > The Editor is in Beta and we're working to add more capabilities.
@@ -41,24 +41,32 @@ To get started, you need the following:
 > [!IMPORTANT]
 > Editor is PC only and not available on mobile or console.
 
-## Install Minecraft 
+## Install Bedrock 
 
-You will need the latest installation of Bedrock Retail and/or Preview. To learn more about what Preview is and where to get it, here is an [article about Preview on Minecraft.net](https://aka.ms/PreviewFAQ).
+The Bedrock Editor is a seperate mode of Bedrock. So if you already have Bedrock, you already have the Editor. If you do not, you will need the latest installation of Bedrock Retail and/or Preview. To learn more about what Preview is and where to get it, here is an [article about Preview on Minecraft.net](https://aka.ms/PreviewFAQ).
 
-You can get Minecraft Launcher from the Microsoft Store.
+The easiest way to install either of these versions is from the Minecraft Launcher. You can get Minecraft Launcher from the Microsoft Store.
 
-![Image of Minecraft Launcher app in the Microsoft Store](Media/editor_install_preview_through_launcher.png)
+![Image of Minecraft Launcher app in the Microsoft Store](Media/editor_launcher_ms_store.png)
 
 
-Once you have the Minecraft Launcher installed, you can install Retail and Preview from there.
+Once you have the Minecraft Launcher installed, navigate to the "Creator Tools" tab. From here you can install Retail and Preview versions of Bedrock.
 
 ![Image of Minecraft Launcher app to install versions of Bedrock](Media/editor_launcher_install.png)
 
-After you install Bedrock, launch it normally to make sure everything is successfully installed.
+To switch what version you are targeting, select the version from the drop down.
 
-Looks good? Great. Close Preview and move on to the next step.
+![Image of Minecraft Launcher app install versions](Media/editor_launcher_version.png)
+
+After you install Bedrock, the Launcher will update with a "Create" button under the "Creator Tools" tab.
+
+![Image of Minecraft Launcher app to launch Editor](Media/editor_launcher_create.png)
+
+To Launch Editor simply click the "Create" button and the Launcher will open Bedrock in Editor mode.
 
 ## Make a Shortcut
+
+Alternatively, if you already have Bedrock installed and want to create a shortcut to make accessing Editor easier in the future, follow these steps.
 
 1. Right-click on your desktop, select **New** from the dropdown, and choose to create a new **Shortcut**.  
 
