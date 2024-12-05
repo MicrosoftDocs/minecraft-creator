@@ -138,7 +138,7 @@ The predicates used are: count, durability, enchantments, and item.
 >   - levels: the level of the enchantment
 >   - range_max: the maximum value
 >   - range_min: the minimum value
->- **item:** an item iID  
+>- **item:** an item ID  
 
 Example:
 
