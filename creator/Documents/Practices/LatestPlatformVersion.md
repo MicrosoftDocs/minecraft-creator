@@ -1,12 +1,12 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Latest Platform Version
+title: Latest Platform Version Guidance
 description: "A guide to using the latest platform version in your content"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Ensure your content is up to date
+# Latest Platform Version Guidance
 
 When delivering your add-ons and worlds to players, you'll want to ensure that it is built on "up to date" versions of the Minecraft Bedrock platform. What do we mean by up to date? Unfortunately, versions are a little complicated in Minecraft; this article attempts to document the latest versions of content across sources.
 

@@ -47,6 +47,13 @@ Editor v0.8 added a number of new capabilities including:
 
 - [/schedule delay](../Commands/commands/schedule.md#delaymode) - Queue a function to be executed after a certain amount of time.
 
+## Molang
+
+Device Info Queries - The following Molang queries that return platform/device information is now stable:
+- query.client_memory_tier
+- query.server_memory_tier
+- query.client_max_render_distance
+
 ## Creator API
 
 Another set of Creator APIs have been released out of beta and into stable (see: [script versioning](ScriptVersioning.md) for information on how we version Creator APIs).

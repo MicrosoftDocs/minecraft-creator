@@ -12,18 +12,6 @@ The type (or template) of a block. Does not contain permutation data (state) oth
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
-### **canBeWaterlogged**
-`read-only canBeWaterlogged: boolean;`
-
-Represents whether this type of block can be waterlogged.
-
-Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
 ### **id**
 `read-only id: string;`
 

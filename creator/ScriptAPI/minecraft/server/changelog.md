@@ -66,8 +66,6 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from [*BlockPermutation*](BlockPermutation.md) (throws exceptions) to *BlockPermutation* (throws exceptions)
   - Changed argument `name` type from *string* to *T*
   - Changed argument `value` type from *boolean* | *number* | *string* to *minecraftvanilladata.BlockStateSuperset[T]*
-#### Changed *[`BlockType`](BlockType.md)*
-- Added property *[`canBeWaterlogged`](BlockType.md#canbewaterlogged)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Added *[`BoundingBoxUtils`](BoundingBoxUtils.md)*
