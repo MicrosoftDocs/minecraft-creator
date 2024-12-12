@@ -14,7 +14,7 @@ But if you want to support an environment where players can play Minecraft survi
 
 It turns out there are also a lot of hidden things that could potentially cause "conflicts" across add-ons. For example, if two add-ons ship an entity called `"common:boss"`, then based on per-world pack stack order, one of them will "win" and the other won't be available. Even if one creator ships two separate add-ons with the same mob in it with the same namespace, it can cause versioning issues if the implementation of that entity evolves over time across packs or version and the "old version" unexpectedly loads in a new version of a world.
 
-Based on this, we introduce the concept of a "cooperative" add-on. A Cooperative Add-On is "just" a behavior pack+resource pack combo, but in its behavior is generally additive and does not fundamentally change the gameplay of other experiences, such as the vanilla gameplay experiences or inadvertently conflcit with other add-ons. It also takes precautions to avoid accidental conflicts, and to be more robust over the course of versions.
+Based on this, we introduce the concept of a "Cooperative" Add-On. A Cooperative Add-On is "just" a behavior pack+resource pack combo, but its behavior is generally additive and does not fundamentally change the gameplay of other experiences, such as the vanilla gameplay experiences or inadvertently conflict with other add-ons. It also takes precautions to avoid accidental conflicts, and to be more robust over the course of versions.
 
 What follows is a set of guidelines for building these cooperative, additive-only add-ons. In many places, and out of a sense of precaution, you'll want to go to longer lengths to avoid add-ons that have any potential to conflict with other add-ons. Keep in mind that some of these rules are relatively strict; if you're creating an add-on for sharing with your friends, you may not need to adhere to all of these guidelines because the risk of "add-on conflicts" is probably much less.
 
@@ -153,6 +153,10 @@ All textures should be placed at least 2 folders deep (although additional folde
 
 Like texture names, texture references need to be unique to prevent items from using the wrong texture when multiple add-ons are applied. When creating texture references, use the pack's "namespace:" before the name. This will prevent any conflicts.
 
+### Localization (Lang Files)
+
+If you localize your packs via .lang resource files, ensure that you use namespaced names for your .lang string replacement tokens.
+
 ### Geometry Identifiers
 
 Geometry identifiers also need to be unique to prevent items from using the wrong geo file when multiple add-ons are applied. Geometry identifiers need to start with "geometry.". Because of that, we recommend that add ".namespace" immediately after "geometry.". Your geometry identifiers will look like this: `geometry.creatorname_gamename.whatever.else`. Doing this will prevent conflicts with other geometry files in add-ons.
@@ -215,7 +219,7 @@ Using this naming convention also allows creators to use tick.json in their pack
 
 ### Sounds
 
-Sounds are located within the Resource pack, and can override other sounds based on their file path and nane. To prevent unwanted overrides, we suggest placing your sound files at least 2 folders deep in the sounds folder (although more can be used if desired).
+Sounds are located within the Resource pack, and can override other sounds based on their file path and name. To prevent unwanted overrides, we suggest placing your sound files at least 2 folders deep in the sounds folder (although more can be used if desired).
 
 The first folder is your creator name, and the second folder is the pack name. This will cause your folder structure to look like this:
 
@@ -316,7 +320,7 @@ Lastly, do not use `setLore` APIs on your books, as it will be added to all the 
 
 ## Summary of Cooperative Add-On Creator Guidelines
 
-Use namespaces and custom folder names to ensure that the identifiers used across your add-on are unique, and cannot accidentially collide with other add-ons.
+Use namespaces and custom folder names to ensure that the identifiers used across your add-on are unique, and cannot accidentally collide with other add-ons.
 
 Do not use certain features, like custom dimension sizes or UI JSON overrides, that don't scale to being cooperatively overridden.
 
