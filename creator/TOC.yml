@@ -588,6 +588,8 @@
       items:
       - name: "Use the Latest Platform Version"
         href: Documents/Practices/LatestPlatformVersion.md
+      - name: "Building Cooperative Add-Ons"
+        href: Documents/Practices/GuidelinesForBuildingCooperativeAddons.md
       - name: "Tips for Using This Site"
         href: Documents/TipsForUsingThisSite.md                  
     - name: Contribute
