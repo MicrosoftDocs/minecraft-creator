@@ -40,6 +40,10 @@ Export watchdog statistics on script runtime behavior and memory consumption.
 
 ### `/script profiler stop`
 
+### `/script diagnostics startcapture`
+
+### `/script diagnostics stopcapture`
+
 ## Arguments
 - `host`: string
 - `port`: int

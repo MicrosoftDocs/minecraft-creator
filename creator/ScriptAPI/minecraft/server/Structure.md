@@ -119,7 +119,7 @@ Notes:
 
 ### **setBlockPermutation**
 `
-setBlockPermutation(location: Vector3, blockPermutation?: BlockPermutation): void
+setBlockPermutation(location: Vector3, blockPermutation?: BlockPermutation, waterlogged?: boolean): void
 `
 
 Sets a BlockPermutation within a Structure.
@@ -131,6 +131,9 @@ Sets a BlockPermutation within a Structure.
 - **blockPermutation**?: [*BlockPermutation*](BlockPermutation.md) = `null`
   
   The BlockPermutation to set.
+- **waterlogged**?: *boolean* = `false`
+  
+  Specifies whether the block should be waterlogged. Air and undefined blocks cannot be waterlogged.
   
 Notes:
 - This function can't be called in read-only mode.

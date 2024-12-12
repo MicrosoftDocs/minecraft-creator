@@ -3,11 +3,11 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .NamespaceNameError Class
-description: Contents of the .NamespaceNameError class.
+title: .ScriptEventMessageSizeError Class
+description: Contents of the .ScriptEventMessageSizeError class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# NamespaceNameError Class
+# ScriptEventMessageSizeError Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -15,11 +15,4 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - *Error*
 
-Thrown when a name requires a namespace and an error occurs when validating that namespace
-
-## Properties
-
-### **reason**
-`read-only reason: NamespaceNameErrorReason;`
-
-Type: [*NamespaceNameErrorReason*](NamespaceNameErrorReason.md)
+Thrown when the message for a script event exceeds the maximum allowed length

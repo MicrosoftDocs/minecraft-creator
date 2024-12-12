@@ -230,9 +230,15 @@ Notes:
 scriptEvent(id: string, message: string): void
 `
 
+Causes an event to fire within script with the specified message ID and payload.
+
 #### **Parameters**
 - **id**: *string*
+  
+  Identifier of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world.
 - **message**: *string*
+  
+  Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. Message may not exceed 2048 characters in length.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -240,7 +246,7 @@ scriptEvent(id: string, message: string): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md)
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md), [*ScriptEventMessageSizeError*](ScriptEventMessageSizeError.md)
 ::: moniker-end
 
 ### **waitTicks**
