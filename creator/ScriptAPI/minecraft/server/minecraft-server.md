@@ -495,6 +495,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
 - [NamespaceNameError](NamespaceNameError.md)
 - [PlaceJigsawError](PlaceJigsawError.md)
+- [ScriptEventMessageSizeError](ScriptEventMessageSizeError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
 
 ## Constants

@@ -159,8 +159,6 @@ Represents the unique type of network packet.
 `InventorySlotPacket = "InventorySlotPacket"`
 ### **InventoryTransactionPacket**
 `InventoryTransactionPacket = "InventoryTransactionPacket"`
-### **ItemComponentPacket**
-`ItemComponentPacket = "ItemComponentPacket"`
 ### **ItemStackRequestPacket**
 `ItemStackRequestPacket = "ItemStackRequestPacket"`
 ### **ItemStackResponse**
