@@ -27,6 +27,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Enumerations
 - [ActionTypes](ActionTypes.md)
+- [Axis](Axis.md)
 - [BlockMaskListType](BlockMaskListType.md)
 - [BlockPaletteItemType](BlockPaletteItemType.md)
 - [BoolPropertyItemVariant](BoolPropertyItemVariant.md)
@@ -53,6 +54,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [MouseActionType](MouseActionType.md)
 - [MouseInputType](MouseInputType.md)
 - [NumberPropertyItemVariant](NumberPropertyItemVariant.md)
+- [PaintCompletionState](PaintCompletionState.md)
+- [PaintMode](PaintMode.md)
 - [Plane](Plane.md)
 - [PlayerPermissionLevel](PlayerPermissionLevel.md)
 - [PlaytestSessionResult](PlaytestSessionResult.md)
@@ -60,18 +63,20 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ProjectExportType](ProjectExportType.md)
 - [PropertyItemType](PropertyItemType.md)
 - [SimpleToolStatusBarVisibility](SimpleToolStatusBarVisibility.md)
+- [SpeedSettingsProperty](SpeedSettingsProperty.md)
 - [SplineType](SplineType.md)
 - [StatusBarAlignment](StatusBarAlignment.md)
 - [ThemeSettingsColorKey](ThemeSettingsColorKey.md)
 - [WidgetComponentType](WidgetComponentType.md)
 - [WidgetGroupSelectionMode](WidgetGroupSelectionMode.md)
+- [WidgetMouseButtonActionType](WidgetMouseButtonActionType.md)
 
 # Type Aliases
-- [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
 - [Action](Action.md)
 - [ActionID](ActionID.md)
 - [ActivationFunctionType](ActivationFunctionType.md)
 - [EventHandler](EventHandler.md)
+- [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
 - [IBlockListPropertyItem](IBlockListPropertyItem.md)
 - [IDropdownPropertyItem_deprecated](IDropdownPropertyItem_deprecated.md)
 - [ImageResourceData](ImageResourceData.md)
@@ -93,8 +98,12 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [Ray](Ray.md)
 - [RegisteredAction](RegisteredAction.md)
 - [ShutdownFunctionType](ShutdownFunctionType.md)
+- [SpeedSettingsPropertyTypeMap](SpeedSettingsPropertyTypeMap.md)
 - [SupportedKeyboardActionTypes](SupportedKeyboardActionTypes.md)
 - [SupportedMouseActionTypes](SupportedMouseActionTypes.md)
+- [TooltipInteractiveContent](TooltipInteractiveContent.md)
+- [TooltipInteractiveContentDescription](TooltipInteractiveContentDescription.md)
+- [TooltipLink](TooltipLink.md)
 - [UnregisterInputBindingCallback](UnregisterInputBindingCallback.md)
 
 ## Classes
@@ -102,6 +111,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [BlockIdentifierObservableValidator](BlockIdentifierObservableValidator.md)
 - [BlockPalette](BlockPalette.md)
 - [BlockPaletteManager](BlockPaletteManager.md)
+- [BlockUtilities](BlockUtilities.md)
 - [BrushShapeManager](BrushShapeManager.md)
 - [ClipboardChangeAfterEvent](ClipboardChangeAfterEvent.md)
 - [ClipboardChangeAfterEventSignal](ClipboardChangeAfterEventSignal.md)
@@ -112,8 +122,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [CurrentThemeColorChangeAfterEvent](CurrentThemeColorChangeAfterEvent.md)
 - [CurrentThemeColorChangeAfterEventSignal](CurrentThemeColorChangeAfterEventSignal.md)
 - [Cursor](Cursor.md)
-- [CursorAttachmentPropertiesChangeAfterEvent](CursorAttachmentPropertiesChangeAfterEvent.md)
-- [CursorAttachmentPropertyChangeAfterEventSignal](CursorAttachmentPropertyChangeAfterEventSignal.md)
 - [CursorPropertiesChangeAfterEvent](CursorPropertiesChangeAfterEvent.md)
 - [CursorPropertyChangeAfterEventSignal](CursorPropertyChangeAfterEventSignal.md)
 - [EditorStructureManager](EditorStructureManager.md)
@@ -142,6 +150,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [SimpleBlockPaletteItem](SimpleBlockPaletteItem.md)
 - [SimpleToolWrapper](SimpleToolWrapper.md)
 - [SimulationState](SimulationState.md)
+- [SpeedSettings](SpeedSettings.md)
 - [ThemeSettings](ThemeSettings.md)
 - [TransactionManager](TransactionManager.md)
 - [UserDefinedTransactionHandle](UserDefinedTransactionHandle.md)
@@ -149,46 +158,37 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [Vector3LimitObservableValidator](Vector3LimitObservableValidator.md)
 - [Widget](Widget.md)
 - [WidgetComponentBase](WidgetComponentBase.md)
+- [WidgetComponentClipboard](WidgetComponentClipboard.md)
 - [WidgetComponentEntity](WidgetComponentEntity.md)
 - [WidgetComponentGizmo](WidgetComponentGizmo.md)
 - [WidgetComponentGuide](WidgetComponentGuide.md)
 - [WidgetComponentRenderPrimitive](WidgetComponentRenderPrimitive.md)
-- [WidgetComponentRenderPrimitiveAxialSphere](WidgetComponentRenderPrimitiveAxialSphere.md)
-- [WidgetComponentRenderPrimitiveBox](WidgetComponentRenderPrimitiveBox.md)
-- [WidgetComponentRenderPrimitiveDisc](WidgetComponentRenderPrimitiveDisc.md)
-- [WidgetComponentRenderPrimitiveLine](WidgetComponentRenderPrimitiveLine.md)
+- [WidgetComponentRenderPrimitiveTypeAxialSphere](WidgetComponentRenderPrimitiveTypeAxialSphere.md)
+- [WidgetComponentRenderPrimitiveTypeBase](WidgetComponentRenderPrimitiveTypeBase.md)
+- [WidgetComponentRenderPrimitiveTypeBox](WidgetComponentRenderPrimitiveTypeBox.md)
+- [WidgetComponentRenderPrimitiveTypeDisc](WidgetComponentRenderPrimitiveTypeDisc.md)
+- [WidgetComponentRenderPrimitiveTypeLine](WidgetComponentRenderPrimitiveTypeLine.md)
 - [WidgetComponentSpline](WidgetComponentSpline.md)
+- [WidgetComponentStateChangeEventData](WidgetComponentStateChangeEventData.md)
 - [WidgetComponentText](WidgetComponentText.md)
 - [WidgetGroup](WidgetGroup.md)
 - [WidgetManager](WidgetManager.md)
+- [WidgetMouseButtonEventData](WidgetMouseButtonEventData.md)
 - [WidgetStateChangeEventData](WidgetStateChangeEventData.md)
 
 ## Interfaces
+- [ActionManager](ActionManager.md)
 - [BlockMaskList](BlockMaskList.md)
 - [BrushShape](BrushShape.md)
+- [BuiltInUIManager](BuiltInUIManager.md)
 - [ClipboardWriteOptions](ClipboardWriteOptions.md)
-- [CursorAttachmentProperties](CursorAttachmentProperties.md)
 - [CursorProperties](CursorProperties.md)
+- [CursorRay](CursorRay.md)
 - [EditorStructure](EditorStructure.md)
 - [EditorStructureSearchOptions](EditorStructureSearchOptions.md)
+- [EventSink](EventSink.md)
 - [ExtensionOptionalParameters](ExtensionOptionalParameters.md)
 - [GameOptions](GameOptions.md)
-- [LogProperties](LogProperties.md)
-- [ProjectExportOptions](ProjectExportOptions.md)
-- [SettingsUIElementOptions](SettingsUIElementOptions.md)
-- [WeightedBlock](WeightedBlock.md)
-- [WidgetComponentBaseOptions](WidgetComponentBaseOptions.md)
-- [WidgetComponentEntityOptions](WidgetComponentEntityOptions.md)
-- [WidgetComponentGizmoOptions](WidgetComponentGizmoOptions.md)
-- [WidgetComponentGuideOptions](WidgetComponentGuideOptions.md)
-- [WidgetComponentRenderPrimitiveOptions](WidgetComponentRenderPrimitiveOptions.md)
-- [WidgetComponentSplineOptions](WidgetComponentSplineOptions.md)
-- [WidgetComponentTextOptions](WidgetComponentTextOptions.md)
-- [WidgetCreateOptions](WidgetCreateOptions.md)
-- [WidgetGroupCreateOptions](WidgetGroupCreateOptions.md)
-- [ActionManager](ActionManager.md)
-- [BuiltInUIManager](BuiltInUIManager.md)
-- [EventSink](EventSink.md)
 - [IActionBar](IActionBar.md)
 - [IActionBarItem](IActionBarItem.md)
 - [IActionBarItemCreationParams](IActionBarItemCreationParams.md)
@@ -256,9 +256,26 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ISubPanePropertyItemOptions](ISubPanePropertyItemOptions.md)
 - [ITextPropertyItem](ITextPropertyItem.md)
 - [ITextPropertyItemOptions](ITextPropertyItemOptions.md)
+- [IToggleGroupPropertyItem](IToggleGroupPropertyItem.md)
+- [IToggleGroupPropertyItemEntry](IToggleGroupPropertyItemEntry.md)
+- [IToggleGroupPropertyItemOptions](IToggleGroupPropertyItemOptions.md)
 - [IVector3PropertyItem](IVector3PropertyItem.md)
 - [IVector3PropertyItemOptions](IVector3PropertyItemOptions.md)
+- [LogProperties](LogProperties.md)
 - [ModalToolCreationParameters](ModalToolCreationParameters.md)
+- [ProjectExportOptions](ProjectExportOptions.md)
+- [SettingsUIElementOptions](SettingsUIElementOptions.md)
+- [WeightedBlock](WeightedBlock.md)
+- [WidgetComponentBaseOptions](WidgetComponentBaseOptions.md)
+- [WidgetComponentClipboardOptions](WidgetComponentClipboardOptions.md)
+- [WidgetComponentEntityOptions](WidgetComponentEntityOptions.md)
+- [WidgetComponentGizmoOptions](WidgetComponentGizmoOptions.md)
+- [WidgetComponentGuideOptions](WidgetComponentGuideOptions.md)
+- [WidgetComponentRenderPrimitiveOptions](WidgetComponentRenderPrimitiveOptions.md)
+- [WidgetComponentSplineOptions](WidgetComponentSplineOptions.md)
+- [WidgetComponentTextOptions](WidgetComponentTextOptions.md)
+- [WidgetCreateOptions](WidgetCreateOptions.md)
+- [WidgetGroupCreateOptions](WidgetGroupCreateOptions.md)
 
 ## Errors
 - [InvalidWidgetComponentError](InvalidWidgetComponentError.md)
@@ -284,9 +301,21 @@ Takes the input object (a property bag of values) and bind it to the pane as a d
 
 **Returns** *T*
 
+### **deserialize**
+`
+deserialize(s: string): unknown
+`
+
+Deserialize anything, defaults to the same behavior as JSON.parse but will use custom deserializers passed into {@link registerSerializationForType}.
+
+#### **Parameters**
+- **s**: *string*
+
+**Returns** *unknown*
+
 ### **executeLargeOperation**
 `
-executeLargeOperation(selection: Selection, operation: (blockLocation: Vector3) => void): Promise<void>
+executeLargeOperation(selection: Selection, operation: (blockLocation: minecraftserver.Vector3) => void): Promise<void>
 `
 
 Executes an operation over a selection via chunks to allow splitting operation over multiple game ticks
@@ -295,7 +324,7 @@ Executes an operation over a selection via chunks to allow splitting operation o
 - **selection**: *Selection*
   
   the selection to iterator over
-- **operation**: *(blockLocation: Vector3) => void*
+- **operation**: *(blockLocation: minecraftserver.Vector3) => void*
   
   the operation to apply over each block location
 
@@ -303,16 +332,16 @@ Executes an operation over a selection via chunks to allow splitting operation o
 
 ### **executeLargeOperationFromIterator**
 `
-executeLargeOperationFromIterator(blockLocationIterator: BlockLocationIterator, operation: (blockLocation: Vector3) => void): Promise<void>
+executeLargeOperationFromIterator(blockLocationIterator: minecraftserver.BlockLocationIterator, operation: (blockLocation: minecraftserver.Vector3) => void): Promise<void>
 `
 
 Executes an operation over a BlockLocationIterator via chunks to allow splitting operation over multiple game ticks
 
 #### **Parameters**
-- **blockLocationIterator**: *BlockLocationIterator*
+- **blockLocationIterator**: *minecraftserver.BlockLocationIterator*
   
   the selection to iterator over
-- **operation**: *(blockLocation: Vector3) => void*
+- **operation**: *(blockLocation: minecraftserver.Vector3) => void*
   
   the operation to apply over each block location
 
@@ -359,6 +388,21 @@ Registers an editor extension into Minecraft. This function calls underlying fun
 
 **Returns** *Extension*
 
+### **registerSerializationForType**
+`
+registerSerializationForType(typeConstructor: Function, name: string, serializer: (obj: T) => Record<string, unknown>, deserializer: (vals: Record<string, unknown>) => T): void
+`
+
+Register a type to have custom serialization/deserialization when using {@link serialize} and {@link deserialize}.
+
+#### **Parameters**
+- **typeConstructor**: *Function*
+- **name**: *string*
+- **serializer**: *(obj: T) => Record<string, unknown>*
+- **deserializer**: *(vals: Record<string, unknown>) => T*
+
+**Returns** *void*
+
 ### **registerUserDefinedTransactionHandler**
 `
 registerUserDefinedTransactionHandler(transactionManager: TransactionManager, undoHandler: (payload: T) => void, redoHandler: (payload: T) => void): UserDefinedTransactionHandle<T>
@@ -378,6 +422,18 @@ Creates a strongly typed transaction handle to enforce type safety when adding u
   A function that will be invoked when the transaction is redone. The function will be passed a copy of the payload data that was inserted into the transaction log.
 
 **Returns** *UserDefinedTransactionHandle<T>* - - {@link UserDefinedTransactionHandle} - A strongly typed transaction handle that can be used to add transactions to the transaction manager.
+
+### **serialize**
+`
+serialize(obj: unknown): string
+`
+
+Serialize anything, defaults to the same behavior as JSON.stringify but will use custom serializers passed into {@link registerSerializationForType}.
+
+#### **Parameters**
+- **obj**: *unknown*
+
+**Returns** *string*
 
 ### **stringFromException**
 `

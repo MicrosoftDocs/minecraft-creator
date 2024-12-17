@@ -11,8 +11,17 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
+ 
+## Required Experiments
+- Third Person Cameras
+
 
 ## Properties
+
+### **entityOffset**
+`entityOffset?: Vector3;`
+
+Type: [*Vector3*](Vector3.md)
 
 ### **viewOffset**
 `viewOffset?: Vector2;`

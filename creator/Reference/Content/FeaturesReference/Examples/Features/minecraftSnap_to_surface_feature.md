@@ -40,7 +40,12 @@ Define a feature that snaps the `cave_vine_feature` to the ceiling
     },
     "feature_to_snap":  "example:cave_vine_feature",
     "vertical_search_range":  12,
-    "surface": "ceiling"
+    "surface": "ceiling",
+    "allowed_surface_blocks": {
+      {
+        "name": "minecraft:cobblestone"
+      }
+    }
   }
 }
 ```

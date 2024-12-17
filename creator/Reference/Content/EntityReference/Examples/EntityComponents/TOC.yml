@@ -57,7 +57,9 @@
 - name: can_join_raid
   href: minecraftComponent_can_join_raid.md
 - name: can_power_jump
-  href: minecraftComponent_can_power_jump.md   
+  href: minecraftComponent_can_power_jump.md
+- name: cannot_be_attacked
+  href: minecraftComponent_cannot_be_attacked.md
 - name: celebrate_hunt
   href: minecraftComponent_celebrate_hunt.md
 - name: color
@@ -82,6 +84,8 @@
   href: minecraftComponent_default_look_angle.md
 - name: despawn
   href: minecraftComponent_despawn.md
+- name: dimension_bound
+  href: minecraftComponent_dimension_bound.md
 - name: drying_out_timer
   href: minecraftComponent_drying_out_timer.md
 - name: dweller
@@ -142,6 +146,8 @@
   href: minecraftComponent_horse.jump_strength.md
 - name: hurt_on_condition
   href: minecraftComponent_hurt_on_condition.md
+- name: ignore_cannot_be_attacked
+  href: minecraftComponent_ignore_cannot_be_attacked.md
 - name: input_ground_controlled
   href: minecraftComponent_input_ground_controlled.md
 - name: inside_block_notifier
@@ -194,8 +200,8 @@
   href: minecraftComponent_lava_movement.md
 - name: leashable
   href: minecraftComponent_leashable.md
-- name: lookat
-  href: minecraftComponent_lookat.md
+- name: looked_at
+  href: minecraftComponent_looked_at.md
 - name: loot
   href: minecraftComponent_loot.md
 - name: managed_wandering_trader
@@ -320,6 +326,8 @@
   href: minecraftComponent_trail.md
 - name: transformation
   href: minecraftComponent_transformation.md
+- name: transient
+  href: minecraftComponent_transient.md
 - name: trust
   href: minecraftComponent_trust.md
 - name: trusting

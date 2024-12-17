@@ -38,21 +38,12 @@ Represents the current world tick of the server.
 
 Type: *number*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **serverSystemInfo**
 `read-only serverSystemInfo: SystemInfo;`
 
 Contains the device information for the server.
 
 Type: [*SystemInfo*](SystemInfo.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-Notes:
-  - This property can throw errors when used.
-    - Throws *Error*
-::: moniker-end
 
 ## Methods
 - [clearJob](#clearjob)
@@ -61,6 +52,9 @@ Notes:
 - [runInterval](#runinterval)
 - [runJob](#runjob)
 - [runTimeout](#runtimeout)
+::: moniker range="=minecraft-bedrock-experimental"
+- [scriptEvent](#scriptevent)
+::: moniker-end
 - [waitTicks](#waitticks)
 
 ### **clearJob**
@@ -106,25 +100,27 @@ Runs a specified function at the next available future time. This is frequently 
 Notes:
 
 #### Examples
+
 ##### ***trapTick.ts***
+
 ```typescript
-import { system, world } from '@minecraft/server';
+import { world, system } from "@minecraft/server";
 
-function printEveryMinute() {
-    try {
-        // Minecraft runs at 20 ticks per second.
-        if (system.currentTick % 1200 === 0) {
-            world.sendMessage('Another minute passes...');
-        }
-    } catch (e) {
-        console.warn('Error: ' + e);
+function trapTick() {
+  try {
+    // Minecraft runs at 20 ticks per second.
+    if (system.currentTick % 1200 === 0) {
+      world.sendMessage("Another minute passes...");
     }
+  } catch (e) {
+    console.warn("Error: " + e);
+  }
 
-    system.run(printEveryMinute);
+  system.run(trapTick);
 }
-
-printEveryMinute();
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/trapTick.ts) code sandbox.
 
 ### **runInterval**
 `
@@ -146,16 +142,22 @@ Runs a set of code on an interval.
 Notes:
 
 #### Examples
+
 ##### ***every30Seconds.ts***
+
 ```typescript
-import { system, world } from '@minecraft/server';
+import { world, system, DimensionLocation } from "@minecraft/server";
 
-const intervalRunIdentifier = Math.floor(Math.random() * 10000);
+function every30Seconds(targetLocation: DimensionLocation) {
+  const intervalRunIdentifier = Math.floor(Math.random() * 10000);
 
-system.runInterval(() => {
-    world.sendMessage('This is an interval run ' + intervalRunIdentifier + ' sending a message every 30 seconds.');
-}, 600);
+  system.runInterval(() => {
+    world.sendMessage("This is an interval run " + intervalRunIdentifier + " sending a message every 30 seconds.");
+  }, 600);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/every30Seconds.ts) code sandbox.
 
 ### **runJob**
 `
@@ -174,36 +176,34 @@ Queues a generator to run until completion.  The generator will be given a time 
 Notes:
 
 #### Examples
-##### ***cubeGenerator.ts***
-```typescript
-import { BlockPermutation, DimensionLocation, world, ButtonPushAfterEvent, system } from '@minecraft/server';
 
-// A simple generator that places blocks in a cube at a specific location
-// with a specific size, yielding after every block place.
-function* blockPlacingGenerator(blockPerm: BlockPermutation, startingLocation: DimensionLocation, size: number) {
-    for (let x = startingLocation.x; x < startingLocation.x + size; x++) {
-        for (let y = startingLocation.y; y < startingLocation.y + size; y++) {
-            for (let z = startingLocation.z; z < startingLocation.z + size; z++) {
-                const block = startingLocation.dimension.getBlock({ x: x, y: y, z: z });
-                if (block) {
-                    block.setPermutation(blockPerm);
-                }
-                yield;
-            }
-        }
-    }
+##### ***cubeGenerator.ts***
+
+```typescript
+import { system, BlockPermutation, DimensionLocation } from "@minecraft/server";
+
+function cubeGenerator(targetLocation: DimensionLocation) {
+  const blockPerm = BlockPermutation.resolve("minecraft:cobblestone");
+
+  system.runJob(blockPlacingGenerator(blockPerm, targetLocation, 15));
 }
 
-// When a button is pushed, we will place a 15x15x15 cube of cobblestone 10 blocks above it
-world.afterEvents.buttonPush.subscribe((buttonPushEvent: ButtonPushAfterEvent) => {
-    const cubePos = buttonPushEvent.block.location;
-    cubePos.y += 10;
-
-    const blockPerm = BlockPermutation.resolve('minecraft:cobblestone');
-
-    system.runJob(blockPlacingGenerator(blockPerm, { dimension: buttonPushEvent.dimension, ...cubePos }, 15));
-});
+function* blockPlacingGenerator(blockPerm: BlockPermutation, startingLocation: DimensionLocation, size: number) {
+  for (let x = startingLocation.x; x < startingLocation.x + size; x++) {
+    for (let y = startingLocation.y; y < startingLocation.y + size; y++) {
+      for (let z = startingLocation.z; z < startingLocation.z + size; z++) {
+        const block = startingLocation.dimension.getBlock({ x: x, y: y, z: z });
+        if (block) {
+          block.setPermutation(blockPerm);
+        }
+        yield;
+      }
+    }
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/cubeGenerator.ts) code sandbox.
 
 ### **runTimeout**
 `
@@ -223,6 +223,31 @@ Runs a set of code at a future time specified by tickDelay.
 **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
   
 Notes:
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **scriptEvent**
+`
+scriptEvent(id: string, message: string): void
+`
+
+Causes an event to fire within script with the specified message ID and payload.
+
+#### **Parameters**
+- **id**: *string*
+  
+  Identifier of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world.
+- **message**: *string*
+  
+  Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. Message may not exceed 2048 characters in length.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md), [*ScriptEventMessageSizeError*](ScriptEventMessageSizeError.md)
+::: moniker-end
 
 ### **waitTicks**
 `

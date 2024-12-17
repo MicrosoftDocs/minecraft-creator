@@ -1,6 +1,31 @@
 {
   "redirections": [
     {
+      "source_path": "Documents/Structures/StructureBlocksTutorial.md",
+      "redirect_url": "/minecraft/creator/documents/structures/StructureBlocksCommandTutorial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/IntroductionToStructureBlocks.md",
+      "redirect_url": "/minecraft/creator/documents/structures/StructureBlocksCommandTutorial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/StructureBlocksTutorial.md",
+      "redirect_url": "/minecraft/creator/documents/structures/StructureBlocksTutorial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/StructureBlocksCommandTutorial.md",
+      "redirect_url": "/minecraft/creator/documents/structures/StructureBlocksCommandTutorial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_lookat.md",
+      "redirect_url": "/reference/content/entityreference/examples/entitycomponents/minecraftcomponent_looked_at",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/EditorOverview.md",
       "redirect_url": "/minecraft/creator/documents/bedrockeditor/EditorOverview",
       "redirect_document_id": false
@@ -27,7 +52,7 @@
     },
     {
       "source_path": "Documents/CameraTutorialFreeCameraPreset.md",
-      "redirect_url": "/minecraft/creator/documents/CameraSystem/CameraTutorialFreeCameraPreset",
+      "redirect_url": "/minecraft/creator/documents/CameraSystem/CameraPresetFree",
       "redirect_document_id": false
     },
     {

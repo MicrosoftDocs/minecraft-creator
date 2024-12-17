@@ -20,25 +20,6 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
 
 ## [Changelog](changelog.md)
 
-#### Examples
-##### ***createActionForm.js***
-```typescript
-const form = new ActionFormData()
-  .title("Months")
-  .body("Choose your favorite month!")
-  .button("January")
-  .button("February")
-  .button("March")
-  .button("April")
-  .button("May");
-
-form.show(players[0]).then((response) => {
-  if (response.selection === 3) {
-    dimension.runCommand("say I like April too!");
-  }
-});
-```
-
 ## Manifest Details
 ```json
 {

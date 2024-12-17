@@ -19,6 +19,7 @@ A utility class to set GameTest parameters for a test. Methods can be chained to
 - [requiredSuccessfulAttempts](#requiredsuccessfulattempts)
 - [rotateTest](#rotatetest)
 - [setupTicks](#setupticks)
+- [structureLocation](#structurelocation)
 - [structureName](#structurename)
 - [tag](#tag)
 
@@ -148,6 +149,21 @@ Sets the number of ticks for a test to wait before executing when the structure 
 Notes:
 - This function can't be called in read-only mode.
 
+### **structureLocation**
+`
+structureLocation(structureLocation: minecraftserver.Vector3): RegistrationBuilder
+`
+
+Overrides the default structure placement with a specific location. If height (y) is set to Dimension.heightRange.max, the structure will snap to the ground.
+
+#### **Parameters**
+- **structureLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+**Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
+  
+Notes:
+- This function can't be called in read-only mode.
+
 ### **structureName**
 `
 structureName(structureName: string): RegistrationBuilder
@@ -163,6 +179,27 @@ Sets the name of the structure for a test to use. "xyz:bar" will load `/structur
 Notes:
 - This function can't be called in read-only mode.
 
+#### Examples
+
+##### ***phantomsShouldFlyFromCats.ts***
+
+```typescript
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function phantomsShouldFlyFromCats(test: Test) {
+  test.spawn(MinecraftEntityTypes.Cat, { x: 4, y: 3, z: 3 });
+  test.spawn(MinecraftEntityTypes.Phantom, { x: 4, y: 3, z: 3 });
+
+  test.succeedWhenEntityPresent(MinecraftEntityTypes.Phantom, { x: 4, y: 6, z: 3 }, true);
+}
+
+register("MobBehaviorTests", "phantoms_should_fly_from_cats", phantomsShouldFlyFromCats)
+  .structureName("gametests:glass_cells");
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/phantomsShouldFlyFromCats.ts) code sandbox.
+
 ### **tag**
 `
 tag(tag: string): RegistrationBuilder
@@ -177,3 +214,24 @@ Adds a tag to a test. You can run all tests with a given tag with `/gametest run
   
 Notes:
 - This function can't be called in read-only mode.
+
+#### Examples
+
+##### ***phantomsShouldFlyFromCats.ts***
+
+```typescript
+import { Test, register } from "@minecraft/server-gametest";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function phantomsShouldFlyFromCats(test: Test) {
+  test.spawn(MinecraftEntityTypes.Cat, { x: 4, y: 3, z: 3 });
+  test.spawn(MinecraftEntityTypes.Phantom, { x: 4, y: 3, z: 3 });
+
+  test.succeedWhenEntityPresent(MinecraftEntityTypes.Phantom, { x: 4, y: 6, z: 3 }, true);
+}
+
+register("MobBehaviorTests", "phantoms_should_fly_from_cats", phantomsShouldFlyFromCats)
+  .structureName("gametests:glass_cells");
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/phantomsShouldFlyFromCats.ts) code sandbox.

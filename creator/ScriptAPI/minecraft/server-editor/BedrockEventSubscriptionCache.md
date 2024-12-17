@@ -17,19 +17,19 @@ A cache for bedrock event subscriptions. Stores off a subscription by event key,
 
 ### **constructor**
 `
-new BedrockEventSubscriptionCache(mEvents: WorldAfterEvents)
+new BedrockEventSubscriptionCache(mEvents: minecraftserver.WorldAfterEvents)
 `
 
 Constructs a new instance of the `BedrockEventSubscriptionCache` class
 
 #### **Parameters**
-- **mEvents**: *WorldAfterEvents*
+- **mEvents**: *minecraftserver.WorldAfterEvents*
 
 **Returns** *BedrockEventSubscriptionCache*
 
 ### **subscribeToBedrockEvent**
 `
-subscribeToBedrockEvent(event: T, params: Parameters<WorldAfterEvents[T]['subscribe']>): ReturnType<WorldAfterEvents[T]['subscribe']>
+subscribeToBedrockEvent(event: T, params: Parameters<minecraftserver.WorldAfterEvents[T]['subscribe']>): ReturnType<minecraftserver.WorldAfterEvents[T]['subscribe']>
 `
 
 Subcribes to a bedrock event using the key of the desired event. When subscribed, the event handler is both returned, but also cached internally for unsubscription. This means the caller of the subscription does not need to worry about unsubscription since the cache will automatically unsubscribe handlers on overall teardown.
@@ -38,11 +38,11 @@ Subcribes to a bedrock event using the key of the desired event. When subscribed
 - **event**: *T*
   
   The event on the bedrock APIs to which to subscribe
-- **params**: *Parameters<WorldAfterEvents[T]['subscribe']>*
+- **params**: *Parameters<minecraftserver.WorldAfterEvents[T]['subscribe']>*
   
   The parameters to the subscription method for the event. Auto complete will display this for you
 
-**Returns** *ReturnType<WorldAfterEvents[T]['subscribe']>*
+**Returns** *ReturnType<minecraftserver.WorldAfterEvents[T]['subscribe']>*
 
 ### **teardown**
 `

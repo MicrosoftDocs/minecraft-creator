@@ -1,0 +1,30 @@
+### YamlMime:Landing
+
+title: Structures # < 60 chars
+summary: "Content related to working with Structures in Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Structures # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Minecraft structures can be saved and edited in a variety of ways." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: minecraft-bedrock-edition
+  ms.topic: landing-page # Required
+  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/13/2024 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Learn About Structures
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Structure Block Overview
+            url: IntroductionToStructureBlocks.md
+          - text: Structure Blocks Command Tutorial
+            url: StructureBlocksCommandTutorial.md
+          - text: Structure Command Reference Document
+            url: ../../Commands/commands/structure.md

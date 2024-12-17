@@ -9,6 +9,7 @@ description: List and descriptions of Minecraft commands and enums
 # List and summary of commands:
 |Command   |Description   |Required Permission Level  | Requires Cheats Enabled |
 |----------|-----------|-----------|-----------|
+| [`/aimassist`](./commands/aimassist.md) | Enable Aim Assist | Game Directors | Yes |
 | [`/allowlist`](./commands/allowlist.md) | Manages the server allowlist. | Owner | Yes |
 | [`/camera`](./commands/camera.md) | Transforms the camera for the selected player(s) to a different perspective. | Game Directors | Yes |
 | [`/camerashake`](./commands/camerashake.md) | Applies shaking to the players&#39; camera with specified intensity and duration. Parameters: &#39;stop&#39; or &#39;add&#39; the effect, specify player (target), intensity (float, min 0.0 to max 4.0), seconds(float, min 0.01), and shakeType (positional or rotational). Must have &#x60;Allow Camera Shake&#x60; option turned on in user settings. | Game Directors | Yes |
@@ -46,11 +47,12 @@ description: List and descriptions of Minecraft commands and enums
 | [`/op`](./commands/op.md) | Grants operator status to a player. | Admin | No |
 | [`/particle`](./commands/particle.md) | Creates a particle emitter | Game Directors | Yes |
 | [`/permission`](./commands/permission.md) | Reloads and applies permissions. This command is for use on a dedicated server only. | Owner | Yes |
+| [`/place`](./commands/place.md) | Places a jigsaw structure, feature, or feature rule in the world. | Admin | Yes |
 | [`/playanimation`](./commands/playanimation.md) | Makes one or more entities play a one-off animation. | Game Directors | Yes |
 | [`/playsound`](./commands/playsound.md) | Plays a sound. | Game Directors | Yes |
 | [`/project`](./commands/project.md) | This command contains additional tools for managing an Editor project. This command is available in Editor mode only. | Game Directors | No |
 | [`/recipe`](./commands/recipe.md) | Supports unlocking of built-in (vanilla) recipes that a particular player can craft with. | Game Directors | Yes |
-| [`/reload`](./commands/reload.md) | Reloads all function and script files from all behavior packs. | Admin | Yes |
+| [`/reload`](./commands/reload.md) | Reloads all function and script files from all behavior packs. | Game Directors | Yes |
 | [`/reloadconfig`](./commands/reloadconfig.md) | Reloads configuration files relating to variables, secrets, permissions, etc. | Owner | Yes |
 | [`/replaceitem`](./commands/replaceitem.md) | Replaces items in inventories. | Game Directors | Yes |
 | [`/ride`](./commands/ride.md) | Makes entities ride other entities, stops entities from riding, makes rides evict their riders, or summons rides or riders. | Game Directors | Yes |
@@ -106,6 +108,7 @@ description: List and descriptions of Minecraft commands and enums
 | string | A &#x60;string&#x60; that is either one word or a quoted &#x60;string&#x60;  with a space. |   |
 | target | A &#x60;string&#x60; or [&#x60;target selector&#x60;](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandsintroduction#target-selectors) to identify which player is targeted. |   |
 | text | A &#x60;string&#x60; . |   |
+| time | An &#x60;enum&#x60; of &#x60;d&#x60; for one day, &#x60;s&#x60; for one second, or &#x60;t&#x60; for a single gametick. |   |
 | wildcard int | A 32-bit &#x60;integer&#x60; or an asterisk &#x60;*&#x60; for a wildcard.  |   |
 | [`Block`](./enums/Block.md) | Minecraft block | Yes |
 | [`Boolean`](./enums/Boolean.md) | Boolean value | Yes |

@@ -10,8 +10,8 @@ description: Contents of the .Plane enumeration.
 
 ## Constants
 ### **XY**
-`XY = "XY"`
+`XY = 1`
 ### **XZ**
-`XZ = "XZ"`
+`XZ = 2`
 ### **YZ**
-`YZ = "YZ"`
+`YZ = 4`

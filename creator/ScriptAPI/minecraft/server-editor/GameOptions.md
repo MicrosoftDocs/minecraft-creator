@@ -10,6 +10,11 @@ description: Contents of the @minecraft/server-editor.GameOptions class.
 
 ## Properties
 
+### **bedsWork**
+`bedsWork?: boolean;`
+
+Type: *boolean*
+
 ### **bonusChest**
 `bonusChest?: boolean;`
 
@@ -162,6 +167,11 @@ Type: *boolean*
 
 ### **simulationDistance**
 `simulationDistance?: number;`
+
+Type: *number*
+
+### **sleepSkipPercent**
+`sleepSkipPercent?: number;`
 
 Type: *number*
 

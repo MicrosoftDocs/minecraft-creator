@@ -25,7 +25,6 @@ Type: [*Camera*](Camera.md)
 Notes:
   - This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **clientSystemInfo**
 `read-only clientSystemInfo: ClientSystemInfo;`
 
@@ -33,12 +32,20 @@ Contains the player's device information.
 
 Type: [*ClientSystemInfo*](ClientSystemInfo.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws *Error*
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **inputInfo**
+`read-only inputInfo: InputInfo;`
+
+Contains the player's input information.
+
+Type: [*InputInfo*](InputInfo.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
 ### **inputPermissions**
@@ -342,6 +349,40 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
 
+#### Examples
+
+##### ***playMusicAndSound.ts***
+
+```typescript
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, DimensionLocation } from "@minecraft/server";
+
+function playMusicAndSound(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  const musicOptions: MusicOptions = {
+    fade: 0.5,
+    loop: true,
+    volume: 1.0,
+  };
+  world.playMusic("music.menu", musicOptions);
+
+  const worldSoundOptions: WorldSoundOptions = {
+    pitch: 0.5,
+    volume: 4.0,
+  };
+  world.playSound("ambient.weather.thunder", targetLocation, worldSoundOptions);
+
+  const playerSoundOptions: PlayerSoundOptions = {
+    pitch: 1.0,
+    volume: 1.0,
+  };
+
+  players[0].playSound("bucket.fill_water", playerSoundOptions);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/playMusicAndSound.ts) code sandbox.
+
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **postClientMessage**
 `
@@ -412,33 +453,100 @@ Notes:
   - This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
 #### Examples
-##### ***sendMessagesToPlayer.ts***
-```typescript
-import { Player } from "@minecraft/server";
 
-function sendPlayerMessages(player: Player) {
+##### ***nestedTranslation.ts***
+
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function nestedTranslation(targetLocation: DimensionLocation) {
+  // Displays "Apple or Coal"
+  const rawMessage = {
+    translate: "accessibility.list.or.two",
+    with: { rawtext: [{ translate: "item.apple.name" }, { translate: "item.coal.name" }] },
+  };
+  world.sendMessage(rawMessage);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/nestedTranslation.ts) code sandbox.
+
+##### ***scoreWildcard.ts***
+
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function scoreWildcard(targetLocation: DimensionLocation) {
+  // Displays the player's score for objective "obj". Each player will see their own score.
+  const rawMessage = { score: { name: "*", objective: "obj" } };
+  world.sendMessage(rawMessage);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/scoreWildcard.ts) code sandbox.
+
+##### ***sendBasicMessage.ts***
+
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function sendBasicMessage(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  players[0].sendMessage("Hello World!");
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/sendBasicMessage.ts) code sandbox.
+
+##### ***sendPlayerMessages.ts***
+
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function sendPlayerMessages(targetLocation: DimensionLocation) {
+  for (const player of world.getAllPlayers()) {
     // Displays "First or Second"
-    const rawMessage = { translate: 'accessibility.list.or.two', with: ['First', 'Second'] };
+    const rawMessage = { translate: "accessibility.list.or.two", with: ["First", "Second"] };
     player.sendMessage(rawMessage);
 
     // Displays "Hello, world!"
-    player.sendMessage('Hello, world!');
+    player.sendMessage("Hello, world!");
 
     // Displays "Welcome, Amazing Player 1!"
-    player.sendMessage({ translate: 'authentication.welcome', with: ['Amazing Player 1'] });
+    player.sendMessage({ translate: "authentication.welcome", with: ["Amazing Player 1"] });
 
     // Displays the player's score for objective "obj". Each player will see their own score.
-    const rawMessageWithScore = { score: { name: '*', objective: 'obj' } };
+    const rawMessageWithScore = { score: { name: "*", objective: "obj" } };
     player.sendMessage(rawMessageWithScore);
-    
+
     // Displays "Apple or Coal"
     const rawMessageWithNestedTranslations = {
-        translate: 'accessibility.list.or.two',
-        with: { rawtext: [{ translate: 'item.apple.name' }, { translate: 'item.coal.name' }] },
+      translate: "accessibility.list.or.two",
+      with: { rawtext: [{ translate: "item.apple.name" }, { translate: "item.coal.name" }] },
     };
     player.sendMessage(rawMessageWithNestedTranslations);
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/sendPlayerMessages.ts) code sandbox.
+
+##### ***sendTranslatedMessage.ts***
+
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function sendTranslatedMessage(
+    targetLocation: DimensionLocation
+) {
+  const players = world.getPlayers();
+
+  players[0].sendMessage({ translate: "authentication.welcome", with: ["Amazing Player 1"] });
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/sendTranslatedMessage.ts) code sandbox.
 
 ### **setGameMode**
 `
@@ -518,7 +626,9 @@ Notes:
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
+
 ##### ***spawnParticle.ts***
+
 ```typescript
 import { world, MolangVariableMap, Vector3 } from '@minecraft/server';
 
@@ -542,6 +652,8 @@ world.afterEvents.playerSpawn.subscribe(event => {
     }
 });
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/spawnParticle.ts) code sandbox.
 ::: moniker-end
 
 ### **startItemCooldown**

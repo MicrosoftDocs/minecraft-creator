@@ -16,16 +16,28 @@ The projectile component controls the properties of a projectile entity and allo
 This component is present when the entity has the minecraft:projectile component.
 
 #### Examples
-##### ***shootArrow.ts***
-```typescript
-import { world, Vector3 } from '@minecraft/server';
 
-const location: Vector3 = { x: 0, y: -59, z: 0 }; // Replace with the coordinates of where you want to spawn the arrow
-const velocity: Vector3 = { x: 0, y: 0, z: 5 };
-const arrow = world.getDimension('overworld').spawnEntity('minecraft:arrow', location);
-const projectileComp = arrow.getComponent('minecraft:projectile');
-projectileComp?.shoot(velocity);
+##### ***shootArrow.ts***
+
+```typescript
+import { DimensionLocation, EntityProjectileComponent } from "@minecraft/server";
+
+function shootArrow(targetLocation: DimensionLocation) {
+  const velocity = { x: 0, y: 1, z: 5 };
+
+  const arrow = targetLocation.dimension.spawnEntity("minecraft:arrow", {
+    x: targetLocation.x,
+    y: targetLocation.y + 2,
+    z: targetLocation.z,
+  });
+
+  const projectileComp = arrow.getComponent("minecraft:projectile") as EntityProjectileComponent;
+
+  projectileComp?.shoot(velocity);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/shootArrow.ts) code sandbox.
 
 ## Properties
 
@@ -200,13 +212,25 @@ Notes:
 Type: *string*
 
 #### Examples
-##### ***shootArrow.ts***
-```typescript
-import { world, Vector3 } from '@minecraft/server';
 
-const location: Vector3 = { x: 0, y: -59, z: 0 }; // Replace with the coordinates of where you want to spawn the arrow
-const velocity: Vector3 = { x: 0, y: 0, z: 5 };
-const arrow = world.getDimension('overworld').spawnEntity('minecraft:arrow', location);
-const projectileComp = arrow.getComponent('minecraft:projectile');
-projectileComp?.shoot(velocity);
+##### ***shootArrow.ts***
+
+```typescript
+import { DimensionLocation, EntityProjectileComponent } from "@minecraft/server";
+
+function shootArrow(targetLocation: DimensionLocation) {
+  const velocity = { x: 0, y: 1, z: 5 };
+
+  const arrow = targetLocation.dimension.spawnEntity("minecraft:arrow", {
+    x: targetLocation.x,
+    y: targetLocation.y + 2,
+    z: targetLocation.z,
+  });
+
+  const projectileComp = arrow.getComponent("minecraft:projectile") as EntityProjectileComponent;
+
+  projectileComp?.shoot(velocity);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/shootArrow.ts) code sandbox.

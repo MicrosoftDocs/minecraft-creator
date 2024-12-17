@@ -12,7 +12,7 @@ Reloads all function and script files from all behavior packs.
 <table>
   <tr>
     <th>Permission Level</th>
-    <td>Admin</td>
+    <td>Game Directors</td>
   </tr>
   <tr>
     <th>Requires Cheats?</th>

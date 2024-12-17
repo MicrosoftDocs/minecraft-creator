@@ -1,0 +1,12 @@
+ - name: Client Biomes Overview
+   href: ./../ClientBiomesOverview.md
+ - name: ambient_sounds
+   href: minecraftClientBiomes_ambient_sounds.md
+ - name: biome_music
+   href: minecraftClientBiomes_biome_music.md
+ - name: fog_appearance
+   href: minecraftClientBiomes_fog_appearance.md
+ - name: sky_color
+   href: minecraftClientBiomes_sky_color.md
+ - name: water_appearance
+   href: minecraftClientBiomes_water_appearance.md

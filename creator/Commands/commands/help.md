@@ -61,10 +61,13 @@ Manages tags stored in entities.
 Experimental camera command.
 - `script`
 Contains additional tools for managing the runtime of script, including debugger and profiler options.
+- `connect`
+Attempts to connect to the websocket server on the provided URL.
 - `stop`
 - `transfer`
 - `clear`
 Clears items from player inventory.
+- `aimassist`
 - `time`
 Changes or queries the world's game time.
 - `camerashake`
@@ -106,6 +109,7 @@ Interacts with game test.
 - `gettopsolidblock`
 - `give`
 Gives an item to a player.
+- `globalpause`
 - `help`
 Provides help/list of commands.
 - `?`
@@ -139,6 +143,7 @@ Creates a particle emitter.
 Reloads all function and script files from all behavior packs.
 - `permission`
 - `ops`
+- `place`
 - `playanimation`
 Makes one or more entities play a one-off animation. Assumes all variables are setup correctly.
 - `playsound`
@@ -201,8 +206,6 @@ Toggles the weather.
 - `weather`
 Sets the weather.
 - `wsserver`
-Attempts to connect to the websocket server on the provided URL.
-- `connect`
 Attempts to connect to the websocket server on the provided URL.
 - `xp`
 Adds or removes player experience.

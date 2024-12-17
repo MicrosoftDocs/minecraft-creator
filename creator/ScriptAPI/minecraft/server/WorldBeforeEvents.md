@@ -22,6 +22,39 @@ Type: [*ChatSendBeforeEventSignal*](ChatSendBeforeEventSignal.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+#### Examples
+
+##### ***customCommand.ts***
+
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function customCommand(targetLocation: DimensionLocation) {
+  const chatCallback = world.beforeEvents.chatSend.subscribe((eventData) => {
+    if (eventData.message.includes("cancel")) {
+      // Cancel event if the message contains "cancel"
+      eventData.cancel = true;
+    } else {
+      const args = eventData.message.split(" ");
+
+      if (args.length > 0) {
+        switch (args[0].toLowerCase()) {
+          case "echo":
+            // Send a modified version of chat message
+            world.sendMessage(`Echo '${eventData.message.substring(4).trim()}'`);
+            break;
+          case "help":
+            world.sendMessage(`Available commands: echo <message>`);
+            break;
+        }
+      }
+    }
+  });
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/customCommand.ts) code sandbox.
 ::: moniker-end
 
 ### **effectAdd**
@@ -71,7 +104,6 @@ Type: [*PlayerBreakBlockBeforeEventSignal*](PlayerBreakBlockBeforeEventSignal.md
 
 Type: [*PlayerGameModeChangeBeforeEventSignal*](PlayerGameModeChangeBeforeEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithBlock**
 `read-only playerInteractWithBlock: PlayerInteractWithBlockBeforeEventSignal;`
 
@@ -79,21 +111,12 @@ Fires before a player interacts with a block.
 
 Type: [*PlayerInteractWithBlockBeforeEventSignal*](PlayerInteractWithBlockBeforeEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithEntity**
 `read-only playerInteractWithEntity: PlayerInteractWithEntityBeforeEventSignal;`
 
 Fires before a player interacts with an entity.
 
 Type: [*PlayerInteractWithEntityBeforeEventSignal*](PlayerInteractWithEntityBeforeEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **playerLeave**
 `read-only playerLeave: PlayerLeaveBeforeEventSignal;`

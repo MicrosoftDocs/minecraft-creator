@@ -243,59 +243,123 @@ Here is an example of the complete feature schema:
         feature_reference "<any array element>" : opt
       }
   }
-  object "minecraft:single_block_feature" : opt
-  {
-    object "description"
-    {
-      string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
-    }
-    "places_block" // Reference to the block to be placed.
-    bool "enforce_placement_rules" // If true, enforce the block's canPlace check.
-    bool "enforce_survivability_rules" // If true, enforce the block's canSurvive check.
-    object "may_attach_to" : opt
-    {
-      int "min_sides_must_attach"<1-4> : opt
-      bool "auto_rotate" : opt // Automatically rotate the block to attach sensibly.
-      "top" : opt
-      array "top" : opt
+      object "minecraft:single_block_feature" : opt
       {
-        "<any array element>"
-      }
-      "bottom" : opt
-      array "bottom" : opt
-      {
+          object "description"
+          {
+              string "identifier" // The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.
+          }
+          object "places_block" : opt // Reference to the block to be placed.
+          array "places_block" : opt
+          {
+              object "<any array element>" : opt
+              {
+                  float "weight" // Random weight of this block. A higher number will increase the probability of this block to be picked during placement.
+                  object "block" // Reference to the block to be placed.
+              }
+          }
+          bool "enforce_placement_rules" // If true, enforce the block's canPlace check.
+          bool "enforce_survivability_rules" // If true, enforce the block's canSurvive check.
+          bool "randomize_rotation" : opt // If true, randomizes the block's cardinal orientation.
+          object "may_attach_to" : opt // Allowlist which specifies where the block can be placed.
+          {
+              int "min_sides_must_attach"<1-4> : opt // Number of side faces that need to pass the attach conditions before the block can be placed. Default value is four.
+              bool "auto_rotate" : opt // Automatically rotate the block to attach sensibly. This setting is ignored if 'randomize_rotation' is enabled.
+               "top" : opt
+              array "top" : opt
+              {
                    "<any array element>"
-      }
-      "north" : opt
-      array "north" : opt
-      {
-        "<any array element>"
-      }
-      "east" : opt
-      array "east" : opt
-      {
-        "<any array element>"
-      }
-      "south" : opt
-      array "south" : opt
-      {
-        "<any array element>"
-      }
-      "west" : opt
-      array "west" : opt
-      {
-        "<any array element>"
-      }
-      "all" : opt
-      array "all" : opt
-      {
-        "<any array element>"
-      }
-        "sides" : opt
-        array "sides" : opt
-      {
-        "<any array element>"
-      }
+              }
+               "bottom" : opt
+              array "bottom" : opt
+              {
+                   "<any array element>"
+              }
+               "north" : opt
+              array "north" : opt
+              {
+                   "<any array element>"
+              }
+               "east" : opt
+              array "east" : opt
+              {
+                   "<any array element>"
+              }
+               "south" : opt
+              array "south" : opt
+              {
+                   "<any array element>"
+              }
+               "west" : opt
+              array "west" : opt
+              {
+                   "<any array element>"
+              }
+               "all" : opt
+              array "all" : opt
+              {
+                   "<any array element>"
+              }
+               "sides" : opt
+              array "sides" : opt
+              {
+                   "<any array element>"
+              }
+               "diagonal" : opt
+              array "diagonal" : opt
+              {
+                   "<any array element>"
+              }
+          }
+          object "may_not_attach_to" : opt // Denylist which specifies where the block can't be placed.
+          {
+               "top" : opt
+              array "top" : opt
+              {
+                   "<any array element>"
+              }
+               "bottom" : opt
+              array "bottom" : opt
+              {
+                   "<any array element>"
+              }
+               "north" : opt
+              array "north" : opt
+              {
+                   "<any array element>"
+              }
+               "east" : opt
+              array "east" : opt
+              {
+                   "<any array element>"
+              }
+               "south" : opt
+              array "south" : opt
+              {
+                   "<any array element>"
+              }
+               "west" : opt
+              array "west" : opt
+              {
+                   "<any array element>"
+              }
+               "all" : opt
+              array "all" : opt
+              {
+                   "<any array element>"
+              }
+               "sides" : opt
+              array "sides" : opt
+              {
+                   "<any array element>"
+              }
+               "diagonal" : opt
+              array "diagonal" : opt
+              {
+                   "<any array element>"
+              }
+          }
+          array "may_replace" : opt
     }
       array "may_replace" : opt
     {
@@ -313,6 +377,10 @@ Here is an example of the complete feature schema:
     string "surface" : opt // Defines the surface that the y-value of the placement position will be snapped to. Valid values: 'ceiling', 'floor' and 'random_horizontal'
     bool "allow_air_placement" : opt // Determines whether the feature can snap through air blocks. Defaults to true.
     bool "allow_underwater_placement" : opt // Determines whether the feature can snap through water blocks. Defaults to false.
+    array "allowed_surface_blocks" : opt // A list of blocks that the feature is permitted to snap to. Leaving this empty results in the feature snapping to blocks that can provide support for the given face (up/down/horizontal)
+      {
+        "<any array element>"
+      }
   }
   object "minecraft:structure_template_feature" : opt
   {

@@ -16,13 +16,17 @@ Have you ever been in the middle of an adventure in Minecraft and you just had t
 
 For me, personally, I happened to have a spare mini PC and an empty screen. What better to display on it than some beautiful dynamic Minecraft-y scenes? I could sure use a "Minecraft screensaver."
 
-I also wanted to accomplish this goal in the Minecraftiest way possible: through Add-Ons. Add-Ons let you add extensions to your existing Minecraft experiences, like survival worlds. While Add-Ons are a [cool new addition to the Minecraft Marketplace](https://www.minecraft.net/en-us/article/introducing-Add-Ons) and there is a diverse set of new experiences, Add-Ons and mods have been available and delivered in the community for a long time, whether it's Add-Ons for Bedrock or Mods for Java. You can build your own nifty Add-Ons! There is also an [amazing community focused on building Add-Ons for Bedrock - (bedrock.dev)](https://wiki.bedrock.dev/discord.html).
+I also wanted to accomplish this goal in the Minecraftiest way possible: through Add-Ons. Add-Ons let you add extensions to your existing Minecraft experiences, like survival worlds. While Add-Ons are a [cool new addition to the Minecraft Marketplace](https://www.minecraft.net/article/introducing-Add-Ons) and there is a diverse set of new experiences, Add-Ons and mods have been available and delivered in the community for a long time, whether it's Add-Ons for Bedrock or Mods for Java. You can build your own nifty Add-Ons! There is also an [amazing community focused on building Add-Ons for Bedrock - (bedrock.dev)](https://wiki.bedrock.dev/discord.html).
 
 This is the first in a three-part set of articles.
 
 1. The Dream Turkey - _you are here_
 1. [Making Dreams Come True](./ChillDreamsPart2MakingDreamsComeTrue.md)
 1. [Smells Like Memories](./ChillDreamsPart3SmellsLikeMemories.md)
+
+There is also a video available for part 1 of this series:
+
+> [!VIDEO https://www.youtube.com/embed/24l6iKTB-HQ]
 
 You can get the sample from this project from [https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/). Note that there are subfolders for each part of this series, along with the "complete" sample.
 
