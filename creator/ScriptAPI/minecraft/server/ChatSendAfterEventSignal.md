@@ -33,20 +33,6 @@ Adds a callback that will be called when new chat messages are sent.
 Notes:
 - This function can't be called in read-only mode.
 
-#### Examples
-##### ***custom_command.js***
-```typescript
-const chatCallback = World.beforeEvents.chatSend.subscribe((eventData) => {
-  if (eventData.message.includes("cancel")) {
-    // Cancel event if the message contains "cancel"
-    eventData.canceled = true;
-  } else {
-    // Modify chat message being sent
-    eventData.message = `Modified '${eventData.message}'`;
-  }
-});
-```
-
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg: ChatSendAfterEvent) => void): void

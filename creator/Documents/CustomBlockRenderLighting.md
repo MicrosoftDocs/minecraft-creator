@@ -177,7 +177,7 @@ Alpha test doesn't respect translucency, which affects the transparent teal pixe
 
 **render_method: alpha_test_single_sided**
 
-`render method: alpha_test_single_sided` is very similar to alpha test. It doesn't respect translucency, which affects the transparent teal pixels of this block. But it does respect transparent and opaque pixels. This render method enables backface culling, which is why you can’t see the back of the bubble through the transparent parts. Just like a regular glass block! 
+`render method: alpha_test_single_sided` is very similar to alpha test. It doesn't respect translucency, which affects the transparent teal pixels of this block. But it does respect transparent and opaque pixels. This render method enables backface culling, which is why you can't see the back of the bubble through the transparent parts. Just like a regular glass block! 
 
 
 **render_method: blend**

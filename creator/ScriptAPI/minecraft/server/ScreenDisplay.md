@@ -11,51 +11,73 @@ description: Contents of the @minecraft/server.ScreenDisplay class.
 Contains information about user interface elements that are showing up on the screen.
 
 #### Examples
+
 ##### ***setTitle.ts***
-```typescript
-import { world } from '@minecraft/server';
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('§o§6You respawned!§r');
-});
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function setTitle(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  if (players.length > 0) {
+    players[0].onScreenDisplay.setTitle("§o§6Fancy Title§r");
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitle.ts) code sandbox.
+
 ##### ***setTitleAndSubtitle.ts***
+
 ```typescript
-import { world } from '@minecraft/server';
+import { world, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('You respawned', {
-        stayDuration: 100,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: 'Try not to die next time!',
-    });
-});
+function setTitleAndSubtitle(
+    targetLocation: DimensionLocation
+) {
+  const players = world.getPlayers();
+
+  players[0].onScreenDisplay.setTitle("Chapter 1", {
+    stayDuration: 100,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "Trouble in Block Town",
+  });
+}
 ```
-##### ***titleCountdown.ts***
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitleAndSubtitle.ts) code sandbox.
+
+##### ***countdown.ts***
+
 ```typescript
-import { world, system } from '@minecraft/server';
+import { world, system, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe(event => {
-    event.player.onScreenDisplay.setTitle('Get ready!', {
-        stayDuration: 220,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: '10',
-    });
+function countdown(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    let countdown = 10;
+  players[0].onScreenDisplay.setTitle("Get ready!", {
+    stayDuration: 220,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "10",
+  });
 
-    const intervalId = system.runInterval(() => {
-        countdown--;
-        event.player.onScreenDisplay.updateSubtitle(countdown.toString());
+  let countdown = 10;
 
-        if (countdown == 0) {
-            system.clearRun(intervalId);
-        }
-    }, 20);
-});
+  const intervalId = system.runInterval(() => {
+    countdown--;
+    players[0].onScreenDisplay.updateSubtitle(countdown.toString());
+
+    if (countdown == 0) {
+      system.clearRun(intervalId);
+    }
+  }, 20);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/countdown.ts) code sandbox.
 
 ## Methods
 - [getHiddenHudElements](#gethiddenhudelements)
@@ -174,51 +196,73 @@ Notes:
 - This function can throw errors.
 
 #### Examples
+
 ##### ***setTitle.ts***
-```typescript
-import { world } from '@minecraft/server';
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('§o§6You respawned!§r');
-});
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function setTitle(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  if (players.length > 0) {
+    players[0].onScreenDisplay.setTitle("§o§6Fancy Title§r");
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitle.ts) code sandbox.
+
 ##### ***setTitleAndSubtitle.ts***
+
 ```typescript
-import { world } from '@minecraft/server';
+import { world, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('You respawned', {
-        stayDuration: 100,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: 'Try not to die next time!',
-    });
-});
+function setTitleAndSubtitle(
+    targetLocation: DimensionLocation
+) {
+  const players = world.getPlayers();
+
+  players[0].onScreenDisplay.setTitle("Chapter 1", {
+    stayDuration: 100,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "Trouble in Block Town",
+  });
+}
 ```
-##### ***titleCountdown.ts***
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitleAndSubtitle.ts) code sandbox.
+
+##### ***countdown.ts***
+
 ```typescript
-import { world, system } from '@minecraft/server';
+import { world, system, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe(event => {
-    event.player.onScreenDisplay.setTitle('Get ready!', {
-        stayDuration: 220,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: '10',
-    });
+function countdown(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    let countdown = 10;
+  players[0].onScreenDisplay.setTitle("Get ready!", {
+    stayDuration: 220,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "10",
+  });
 
-    const intervalId = system.runInterval(() => {
-        countdown--;
-        event.player.onScreenDisplay.updateSubtitle(countdown.toString());
+  let countdown = 10;
 
-        if (countdown == 0) {
-            system.clearRun(intervalId);
-        }
-    }, 20);
-});
+  const intervalId = system.runInterval(() => {
+    countdown--;
+    players[0].onScreenDisplay.updateSubtitle(countdown.toString());
+
+    if (countdown == 0) {
+      system.clearRun(intervalId);
+    }
+  }, 20);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/countdown.ts) code sandbox.
 
 ### **updateSubtitle**
 `
@@ -235,48 +279,102 @@ Notes:
 - This function can throw errors.
 
 #### Examples
+
+##### ***countdown.ts***
+
+```typescript
+import { world, system, DimensionLocation } from "@minecraft/server";
+
+function countdown(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  players[0].onScreenDisplay.setTitle("Get ready!", {
+    stayDuration: 220,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "10",
+  });
+
+  let countdown = 10;
+
+  const intervalId = system.runInterval(() => {
+    countdown--;
+    players[0].onScreenDisplay.updateSubtitle(countdown.toString());
+
+    if (countdown == 0) {
+      system.clearRun(intervalId);
+    }
+  }, 20);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/countdown.ts) code sandbox.
+
+#### Examples
+
 ##### ***setTitle.ts***
-```typescript
-import { world } from '@minecraft/server';
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('§o§6You respawned!§r');
-});
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function setTitle(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  if (players.length > 0) {
+    players[0].onScreenDisplay.setTitle("§o§6Fancy Title§r");
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitle.ts) code sandbox.
+
 ##### ***setTitleAndSubtitle.ts***
+
 ```typescript
-import { world } from '@minecraft/server';
+import { world, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('You respawned', {
-        stayDuration: 100,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: 'Try not to die next time!',
-    });
-});
+function setTitleAndSubtitle(
+    targetLocation: DimensionLocation
+) {
+  const players = world.getPlayers();
+
+  players[0].onScreenDisplay.setTitle("Chapter 1", {
+    stayDuration: 100,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "Trouble in Block Town",
+  });
+}
 ```
-##### ***titleCountdown.ts***
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitleAndSubtitle.ts) code sandbox.
+
+##### ***countdown.ts***
+
 ```typescript
-import { world, system } from '@minecraft/server';
+import { world, system, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe(event => {
-    event.player.onScreenDisplay.setTitle('Get ready!', {
-        stayDuration: 220,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: '10',
-    });
+function countdown(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    let countdown = 10;
+  players[0].onScreenDisplay.setTitle("Get ready!", {
+    stayDuration: 220,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "10",
+  });
 
-    const intervalId = system.runInterval(() => {
-        countdown--;
-        event.player.onScreenDisplay.updateSubtitle(countdown.toString());
+  let countdown = 10;
 
-        if (countdown == 0) {
-            system.clearRun(intervalId);
-        }
-    }, 20);
-});
+  const intervalId = system.runInterval(() => {
+    countdown--;
+    players[0].onScreenDisplay.updateSubtitle(countdown.toString());
+
+    if (countdown == 0) {
+      system.clearRun(intervalId);
+    }
+  }, 20);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/countdown.ts) code sandbox.

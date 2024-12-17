@@ -69,6 +69,8 @@ Listed below are the currently available Molang query functions in the latest re
 | query.cardinal_facing| Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
 | query.cardinal_facing_2d| Returns the current facing of the player ignoring up/down part of the direction (North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
 | query.cardinal_player_facing| Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
+| query.client_max_render_distance | Returns the max render distance in chunks of the current client. Available on the Client (Resource Packs) only. |
+| query.client_memory_tier | Returns a number representing the client RAM memory tier, 0 = 'Undetermined', 1 = 'SuperLow', 2 = 'Low', 3 = 'Mid', 4 = 'High', or 5 = 'SuperHigh'. Available on the Client (Resource Packs) only. |
 | query.combine_entities| Combines any valid entity references from all arguments into a single array. Note that order is not preserved, and duplicates and invalid values are removed. |
 | query.cooldown_time| Returns the total cooldown time in seconds for the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. Uses the same name and id that the replaceitem command takes when querying entities. |
 | query.cooldown_time_remaining| Returns the cooldown time remaining in seconds for specified cooldown type or the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. Uses the same name and id that the replaceitem command takes when querying entities. Returns highest cooldown if no parameters are supplied. |
@@ -282,6 +284,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.roll_counter| Returns the roll counter of the entity. Pertains to panda.|
 | query.rotation_to_camera| Returns the rotation required to aim at the camera. Requires one argument representing the rotation axis you would like (0 for x, 1 for y) |
 | query.scoreboard| Takes one argument - the name of the scoreboard entry for this entity. Returns the specified scoreboard value for this entity. Available only with behavior packs.|
+| query.server_memory_tier | Returns a number representing the server RAM memory tier, 0 = 'SuperLow', 1 = 'Low', 2 = 'Mid', 3 = 'High', or 4 = 'SuperHigh'. Available on the server side (Behavior Packs) only. |
 
 | Name | Description |
 |:---------|:---------|

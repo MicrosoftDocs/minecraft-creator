@@ -11,16 +11,27 @@ description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimi
 ## Extends
 - [*WidgetComponentBase*](WidgetComponentBase.md)
 
+## Properties
+
+### **primitiveType**
+`read-only primitiveType: PrimitiveType;`
+
+Type: [*PrimitiveType*](PrimitiveType.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
+
 ## Methods
 - [setPrimitive](#setprimitive)
 
 ### **setPrimitive**
 `
-setPrimitive(primitive: WidgetComponentRenderPrimitiveAxialSphere | WidgetComponentRenderPrimitiveBox | WidgetComponentRenderPrimitiveDisc | WidgetComponentRenderPrimitiveLine): void
+setPrimitive(primitive: WidgetComponentRenderPrimitiveTypeAxialSphere | WidgetComponentRenderPrimitiveTypeBox | WidgetComponentRenderPrimitiveTypeDisc | WidgetComponentRenderPrimitiveTypeLine): void
 `
 
 #### **Parameters**
-- **primitive**: [*WidgetComponentRenderPrimitiveAxialSphere*](WidgetComponentRenderPrimitiveAxialSphere.md) | [*WidgetComponentRenderPrimitiveBox*](WidgetComponentRenderPrimitiveBox.md) | [*WidgetComponentRenderPrimitiveDisc*](WidgetComponentRenderPrimitiveDisc.md) | [*WidgetComponentRenderPrimitiveLine*](WidgetComponentRenderPrimitiveLine.md)
+- **primitive**: [*WidgetComponentRenderPrimitiveTypeAxialSphere*](WidgetComponentRenderPrimitiveTypeAxialSphere.md) | [*WidgetComponentRenderPrimitiveTypeBox*](WidgetComponentRenderPrimitiveTypeBox.md) | [*WidgetComponentRenderPrimitiveTypeDisc*](WidgetComponentRenderPrimitiveTypeDisc.md) | [*WidgetComponentRenderPrimitiveTypeLine*](WidgetComponentRenderPrimitiveTypeLine.md)
   
 Notes:
 - This function can't be called in read-only mode.

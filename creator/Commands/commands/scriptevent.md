@@ -28,6 +28,6 @@ Passes a message with the specified ID and payload.
 
 ## Arguments
 - `message`: message
-Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world.
+Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. Message may not exceed 2048 characters in length.
 - `messageId`: string
 Identifier of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world.

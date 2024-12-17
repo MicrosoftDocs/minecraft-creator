@@ -175,6 +175,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cave_vines_head_with_berries |
 | minecraft:chain |
 | minecraft:chain_command_block |
+| minecraft:chalkboard |
 | minecraft:chemical_heat |
 | minecraft:cherry_button |
 | minecraft:cherry_door |
@@ -202,6 +203,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chiseled_polished_blackstone |
 | minecraft:chiseled_quartz_block |
 | minecraft:chiseled_red_sandstone |
+| minecraft:chiseled_resin_bricks |
 | minecraft:chiseled_sandstone |
 | minecraft:chiseled_stone_bricks |
 | minecraft:chiseled_tuff |
@@ -210,6 +212,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chorus_plant |
 | minecraft:clay |
 | minecraft:client_request_placeholder_block |
+| minecraft:closed_eyeblossom |
 | minecraft:coal_block |
 | minecraft:coal_ore |
 | minecraft:coarse_dirt |
@@ -245,6 +248,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cracked_stone_bricks |
 | minecraft:crafter |
 | minecraft:crafting_table |
+| minecraft:creaking_heart |
+| minecraft:creeper_head |
 | minecraft:crimson_button |
 | minecraft:crimson_door |
 | minecraft:crimson_double_slab |
@@ -371,6 +376,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:double_block_slab3 |
 | minecraft:double_block_slab4 |
 | minecraft:dragon_egg |
+| minecraft:dragon_head |
 | minecraft:dried_kelp_block |
 | minecraft:dripstone_block |
 | minecraft:dropper |
@@ -783,6 +789,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mud_brick_wall |
 | minecraft:mud_bricks |
 | minecraft:muddy_mangrove_roots |
+| minecraft:mushroom_stem |
 | minecraft:mycelium |
 | minecraft:nether_brick |
 | minecraft:nether_brick_double_slab |
@@ -814,6 +821,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:observer |
 | minecraft:obsidian |
 | minecraft:ochre_froglight |
+| minecraft:open_eyeblossom |
 | minecraft:orange_candle |
 | minecraft:orange_candle_cake |
 | minecraft:orange_carpet |
@@ -837,10 +845,31 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:oxidized_double_cut_copper_slab |
 | minecraft:packed_ice |
 | minecraft:packed_mud |
+| minecraft:pale_hanging_moss |
+| minecraft:pale_moss_block |
+| minecraft:pale_moss_carpet |
+| minecraft:pale_oak_button |
+| minecraft:pale_oak_door |
+| minecraft:pale_oak_double_slab |
+| minecraft:pale_oak_fence |
+| minecraft:pale_oak_fence_gate |
+| minecraft:pale_oak_hanging_sign |
+| minecraft:pale_oak_leaves |
+| minecraft:pale_oak_log |
+| minecraft:pale_oak_planks |
+| minecraft:pale_oak_pressure_plate |
+| minecraft:pale_oak_sapling |
+| minecraft:pale_oak_slab |
+| minecraft:pale_oak_stairs |
+| minecraft:pale_oak_standing_sign |
+| minecraft:pale_oak_trapdoor |
+| minecraft:pale_oak_wall_sign |
+| minecraft:pale_oak_wood |
 | minecraft:pearlescent_froglight |
 | minecraft:petrified_oak_double_slab |
 | minecraft:peony |
 | minecraft:petrified_oak_slab |
+| minecraft:piglin_head |
 | minecraft:pink_candle |
 | minecraft:pink_candle_cake |
 | minecraft:pink_carpet |
@@ -857,6 +886,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:piston_arm_collision |
 | minecraft:pitcher_crop |
 | minecraft:pitcher_plant |
+| minecraft:player_head |
 | minecraft:podzol |
 | minecraft:pointed_dripstone |
 | minecraft:polished_andesite |
@@ -971,6 +1001,13 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:reinforced_deepslate |
 | minecraft:repeating_command_block |
 | minecraft:reserved6 |
+| minecraft:resin_block |
+| minecraft:resin_brick_double_slab |
+| minecraft:resin_brick_slab |
+| minecraft:resin_brick_stairs |
+| minecraft:resin_brick_wall |
+| minecraft:resin_bricks |
+| minecraft:resin_clump |
 | minecraft:respawn_anchor |
 | minecraft:rose_bush |
 | minecraft:sand |
@@ -991,7 +1028,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:short_grass |
 | minecraft:shroomlight |
 | minecraft:silver_glazed_terracotta |
-| minecraft:skull |
+| minecraft:skeleton_skull |
 | minecraft:slime |
 | minecraft:small_amethyst_bud |
 | minecraft:small_dripleaf_block |
@@ -1077,6 +1114,8 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:stripped_mangrove_wood |
 | minecraft:stripped_oak_log |
 | minecraft:stripped_oak_wood |
+| minecraft:stripped_pale_oak_log |
+| minecraft:stripped_pale_oak_wood |
 | minecraft:stripped_spruce_log |
 | minecraft:stripped_spruce_wood |
 | minecraft:stripped_warped_hyphae |
@@ -1214,6 +1253,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:white_terracotta |
 | minecraft:white_wool |
 | minecraft:wither_rose |
+| minecraft:wither_skeleton_skull |
 | minecraft:wooden_button |
 | minecraft:wooden_door |
 | minecraft:wooden_pressure_plate |
@@ -1228,3 +1268,4 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:yellow_stained_glass_pane |
 | minecraft:yellow_terracotta |
 | minecraft:yellow_wool |
+| minecraft:zombie_head |

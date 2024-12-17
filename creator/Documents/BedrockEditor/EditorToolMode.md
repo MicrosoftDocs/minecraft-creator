@@ -99,6 +99,8 @@ This menu is also a good place to go for a reminder about these keyboard shortcu
 
 - **Time of Day Settings**
 
+- **Navigation Panel**
+
 - **Weather**
 
 For more information about World Options, take a look at the [Editor World Options page](EditorWorldOptions.md).

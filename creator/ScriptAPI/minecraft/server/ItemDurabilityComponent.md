@@ -13,6 +13,36 @@ description: Contents of the @minecraft/server.ItemDurabilityComponent class.
 
 When present on an item, this item can take damage in the process of being used. Note that this component only applies to data-driven items.
 
+#### Examples
+
+##### ***giveHurtDiamondSword.ts***
+
+```typescript
+import { world, ItemStack, EntityInventoryComponent, EntityComponentTypes, ItemComponentTypes, ItemDurabilityComponent, DimensionLocation } from "@minecraft/server";
+import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+
+function giveHurtDiamondSword(
+    targetLocation: DimensionLocation
+) {
+  const hurtDiamondSword = new ItemStack(MinecraftItemTypes.DiamondSword);
+
+  const durabilityComponent = hurtDiamondSword.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent;
+
+  if (durabilityComponent !== undefined) {
+    durabilityComponent.damage = durabilityComponent.maxDurability / 2;
+  }
+
+  for (const player of world.getAllPlayers()) {
+    const inventory = player.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent;
+    if (inventory && inventory.container) {
+      inventory.container.addItem(hurtDiamondSword);
+    }
+  }
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/giveHurtDiamondSword.ts) code sandbox.
+
 ## Properties
 
 ### **damage**
@@ -76,3 +106,33 @@ Notes:
 `static read-only componentId = "minecraft:durability";`
 
 Type: *string*
+
+#### Examples
+
+##### ***giveHurtDiamondSword.ts***
+
+```typescript
+import { world, ItemStack, EntityInventoryComponent, EntityComponentTypes, ItemComponentTypes, ItemDurabilityComponent, DimensionLocation } from "@minecraft/server";
+import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+
+function giveHurtDiamondSword(
+    targetLocation: DimensionLocation
+) {
+  const hurtDiamondSword = new ItemStack(MinecraftItemTypes.DiamondSword);
+
+  const durabilityComponent = hurtDiamondSword.getComponent(ItemComponentTypes.Durability) as ItemDurabilityComponent;
+
+  if (durabilityComponent !== undefined) {
+    durabilityComponent.damage = durabilityComponent.maxDurability / 2;
+  }
+
+  for (const player of world.getAllPlayers()) {
+    const inventory = player.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent;
+    if (inventory && inventory.container) {
+      inventory.container.addItem(hurtDiamondSword);
+    }
+  }
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/giveHurtDiamondSword.ts) code sandbox.

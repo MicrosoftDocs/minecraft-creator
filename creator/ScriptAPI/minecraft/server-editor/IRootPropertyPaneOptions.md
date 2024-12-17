@@ -21,3 +21,10 @@ The options to create a root pane.
 Optional action button to be displayed on the header.
 
 Type: *IRootPropertyPaneHeaderAction*
+
+### **infoTooltip**
+`infoTooltip: TooltipInteractiveContent;`
+
+Optional information tooltip for the pane to be displayed on the header.
+
+Type: *TooltipInteractiveContent*

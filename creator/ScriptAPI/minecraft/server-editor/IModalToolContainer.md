@@ -19,24 +19,36 @@ Type: *IModalTool[]*
 
 ## Methods
 - [addTool](#addtool)
+- [focusToolInputContext](#focustoolinputcontext)
 - [getSelectedToolId](#getselectedtoolid)
 - [removeTool](#removetool)
 - [setSelectedToolId](#setselectedtoolid)
 
 ### **addTool**
 `
-addTool(params: ModalToolCreationParameters, action: RegisteredAction<NoArgsAction>): IModalTool
+addTool(id: string, params: ModalToolCreationParameters): IModalTool
 `
 
 Create a new tool in the modal tool container represented via button on the tool rail.
 
 #### **Parameters**
+- **id**: *string*
+  
+  Unique identifier for the tool
 - **params**: *ModalToolCreationParameters*
   
   Construction parameters for the new tool
-- **action**: *RegisteredAction<NoArgsAction>*
 
 **Returns** *IModalTool*
+
+### **focusToolInputContext**
+`
+focusToolInputContext(): void
+`
+
+Activates input bindings for the selected tool by enabling viewport focus
+
+**Returns** *void*
 
 ### **getSelectedToolId**
 `
