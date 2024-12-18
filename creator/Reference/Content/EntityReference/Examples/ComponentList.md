@@ -176,8 +176,9 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:trusting](EntityComponents/minecraftComponent_trusting.md) |`minecraft:trusting` defines the rules for an entity to trust players. |
 |[minecraft:type_family](EntityComponents/minecraftComponent_type_family.md) |`minecraft:type_family` defines the families the entity belongs to. |
 |[minecraft:underwater_movement](EntityComponents/minecraftComponent_underwater_movement.md) |`minecraft:underwater_movement` defines the speed an entity can move in the water. |
+|[minecraft:variable_max_auto_step](EntityComponents/minecraftComponent_variable_max_auto_step.md) |`minecraft:variable_max_auto_step` defines a maximum auto step height that is different depending on whether the entity is on a block that prevents jumping. |
 |[minecraft:variant](EntityComponents/minecraftComponent_variant.md) |`minecraft:variant` is used to differentiate the component group of a variant of an entity from others, such as `ocelot`, `villager` and `horse`. |
+|[minecraft:vibration_listener](EntityComponents/minecraftComponent_vibration_listener.md) |`minecraft:variable_max_auto_step` defines a maximum auto step height that is different depending on whether the entity is on a block that prevents jumping. |
 |[minecraft:walk_animation_speed](EntityComponents/minecraftComponent_walk_animation_speed.md) |`minecraft:walk_animation_speed` sets the speed multiplier for the entity's walk animation speed. |
 |[minecraft:wants_jockey](EntityComponents/minecraftComponent_wants_jockey.md) |`minecraft:wants_jockey` sets that the entity wants to become a jockey. |
 |[minecraft:water_movement](EntityComponents/minecraftComponent_water_movement.md) |`minecraft:water_movement` defines the speed with which an entity can move through water. |
-|[minecraft:variable_max_auto_step](EntityComponents/minecraftComponent_variable_max_auto_step.md) |`minecraft:variable_max_auto_step` defines a maximum auto step height that is different depending on whether the entity is on a block that prevents jumping. |
