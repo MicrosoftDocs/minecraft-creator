@@ -17,10 +17,19 @@ Represents a shapeless crafting recipe.
 
 |Name |Type |Description |
 |:-----------|:-----------|:-----------|
-|ingredients| Array of item names|  Items used as input (without a shape) for the recipe. |
-| priority| Integer| Sets the priority order of the recipe. Lower numbers represent a higher priority.|
+|ingredients| RecipeItem Array |  Items used as input (without a shape) for the recipe. |
+|priority| Integer| Sets the priority order of the recipe. Lower numbers represent a higher priority.|
 |result| Array of item names| These items are the result. |
 |tags|String array |(*optional*) Item that can create the shapeless recipe such as "stonecutter". |
+
+### RecipeIngredient
+A ingredient for a shapeless crafting recipe.
+
+| Name| Default Value| Type| Description |
+|:-----------|:-----------|:-----------|:-----------|
+| item| *not set*| string| The item `typeId` to be used ex, "minecraft:string" |
+| data| 0| number| The data aux id to be used |
+| count| 1| number| The count of this item. |
 
 ## Shapeless Recipe Example
 
