@@ -16,3 +16,22 @@ ms.service: minecraft-bedrock-edition
 |:----------|:----------|:----------|:----------|
 | destroy_speeds| *not set*| Array| A list of blocks to dig, with correlating speeds of digging.|
 | use_efficiency| *not set*| Boolean| Determines whether the item should be impacted if the `efficiency` enchant is applied to it.|
+
+## Example
+
+```json
+"minecraft:digger": {
+  "use_efficiency": true,
+  "destroy_speeds": [
+    {
+      "speed": 6,
+      "block": {
+        "tags": "query.any_tag( 'wood' )"
+      }
+    },
+    {
+      "block": "minecraft:coal_ore",
+      "speed": 2
+    }
+  ]
+}

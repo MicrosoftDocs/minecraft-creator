@@ -40,7 +40,7 @@ The equivalent to Java's data packs, Bedrock's behavior packs share some similar
 
 ## Controls
 
-Currently, both versions of Minecraft support mouse and keyboard controls, but on Bedrock has controller support. Additionally, depending on the hardware used to access Bedrock there is a significant change that users may be using touch controls. This becomes an important consideration when determining which type of content to create for each version.
+Currently, both versions of Minecraft support mouse and keyboard controls, but only Bedrock has controller support. Additionally, depending on the hardware used to access Bedrock there is a significant change that users may be using touch controls. This becomes an important consideration when determining which type of content to create for each version.
 
 ## Crossplay
 

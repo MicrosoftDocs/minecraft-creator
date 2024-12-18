@@ -44,18 +44,20 @@ ms.service: minecraft-bedrock-edition
     "controlling_seat": 0,
     "crouching_skip_interact": true,
     "family_types": [],
-    "interact_text": ,
+    "interact_text": "Ride me",
     "priority": 0,
     "pull_in_entities": false,
     "rider_can_interact": false,
     "seat_count": 1,
-    "seats": {
-        "lock_rider_rotation": 181,
-        "max_rider_count": "seat_count",
-        "min_rider_count": 0,
-        "position": [0, 0, 0],
-        "rotate_rider_by": 0
-    },
+    "seats": [
+        {
+            "lock_rider_rotation": 181,
+            "max_rider_count": "seat_count",
+            "min_rider_count": 0,
+            "position": [0, 0, 0],
+            "rotate_rider_by": 0
+        }
+    ],
 }
 ```
 
