@@ -12,33 +12,52 @@ The simple tool wrapper will create, bind and manage the lifecycle of all the de
 
 ## Properties
 
+### **id**
+`read-only id: string;`
+
+Get the tool unique id
+
+Type: *string*
+
 ### **menu**
 `read-only menu: IMenu | undefined;`
+
+Get a reference to the menu component that was automatically created for the tool This generally only happens if the tool is a global tool (i.e. has a pane and does not have a tool rail component) In this case a menu item is automatically created and some visibility controls are inserted. If you have additional menu options you want to add, this is the ideal control to add children to
 
 Type: *IMenu | undefined*
 
 ### **name**
 `read-only name: string;`
 
+Get the tool name
+
 Type: *string*
 
 ### **pane**
 `read-only pane: ISimpleToolPaneComponent;`
+
+Get a reference to the root (primary) property pane component - if no component was requested, this function will throw an error
 
 Type: *ISimpleToolPaneComponent*
 
 ### **session**
 `read-only session: IPlayerUISession;`
 
+Get a reference to the IPlayerUISession. This is the primary interface to the editor UI and all of the editor extension controls
+
 Type: *IPlayerUISession*
 
 ### **statusBar**
 `read-only statusBar: ISimpleToolStatusBarComponent;`
 
+Get a reference to the status bar component - if no component was requested, this function will throw an error
+
 Type: *ISimpleToolStatusBarComponent*
 
 ### **toolRail**
 `read-only toolRail: ISimpleToolRailComponent;`
+
+Get a reference to the tool rail component - if no component was requested, this function will throw an error
 
 Type: *ISimpleToolRailComponent*
 
@@ -58,6 +77,8 @@ Type: *ISimpleToolRailComponent*
 findPane(idString: string): ISimpleToolPaneComponent | undefined
 `
 
+Find a pane or subpane by it's unique ID.
+
 #### **Parameters**
 - **idString**: *string*
 
@@ -67,6 +88,8 @@ findPane(idString: string): ISimpleToolPaneComponent | undefined
 `
 hidePane(idString: string): void
 `
+
+Hide a particular pane or subpane by it's unique ID. If no ID is provided (or cannot be found) the function will throw an error Although the parent pane is used to execute the visibility request, the hidePane function will NOT affect the visibility of any sibling panes -- so it is possible to hide all of the child panes of a parent using this function
 
 #### **Parameters**
 - **idString**: *string*
@@ -78,6 +101,8 @@ hidePane(idString: string): void
 logDebug(message: string): void
 `
 
+Send a tagged Debug log message to the console. The tag will contain the tool name
+
 #### **Parameters**
 - **message**: *string*
 
@@ -87,6 +112,8 @@ logDebug(message: string): void
 `
 logError(message: string): void
 `
+
+Send a tagged Error log message to the console. The tag will contain the tool name
 
 #### **Parameters**
 - **message**: *string*
@@ -98,6 +125,8 @@ logError(message: string): void
 logInfo(message: string): void
 `
 
+Send a tagged Informational log message to the console. The tag will contain the tool name
+
 #### **Parameters**
 - **message**: *string*
 
@@ -107,6 +136,8 @@ logInfo(message: string): void
 `
 logWarn(message: string): void
 `
+
+Send a tagged Warning log message to the console. The tag will contain the tool name
 
 #### **Parameters**
 - **message**: *string*
@@ -118,6 +149,8 @@ logWarn(message: string): void
 showPane(idString: string): void
 `
 
+Show a particular pane or subpane by it's unique ID. If no ID is provided (or cannot be found) the function will throw an error Note that the showPane function (when used with a child pane) will use the parent pane to execute the visibility request. In this case, if the child panes are marked as mututally exclusive, then the siblings of the requested pane will be hidden
+
 #### **Parameters**
 - **idString**: *string*
 
@@ -128,6 +161,8 @@ showPane(idString: string): void
 showPaneExclusively(idString: string): void
 `
 
+Much like the showPane function, but will hide all other panes that are not the requested pane irrespective of the exclusivity setting
+
 #### **Parameters**
 - **idString**: *string*
 
@@ -137,5 +172,7 @@ showPaneExclusively(idString: string): void
 `
 teardown(): void
 `
+
+A teardown function implemented by the ISimpleTool implementation, and is called by the system during editor extension shutdown. Don't override this function - instead, implement the onTeardown event in the ISimpleToolOptions structure
 
 **Returns** *void*

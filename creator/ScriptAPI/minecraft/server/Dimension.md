@@ -19,8 +19,8 @@ Height range of the dimension.
 
 Type: [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **id**
 `read-only id: string;`
@@ -30,45 +30,39 @@ Identifier of the dimension.
 Type: *string*
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [containsBlock](#containsblock)
-::: moniker-end
 - [createExplosion](#createexplosion)
-::: moniker range="=minecraft-bedrock-experimental"
 - [fillBlocks](#fillblocks)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [findClosestBiome](#findclosestbiome)
 ::: moniker-end
 - [getBlock](#getblock)
-- [getBlockFromRay](#getblockfromray)
 ::: moniker range="=minecraft-bedrock-experimental"
-- [getBlocks](#getblocks)
+- [getBlockAbove](#getblockabove)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getBlockBelow](#getblockbelow)
+::: moniker-end
+- [getBlockFromRay](#getblockfromray)
+- [getBlocks](#getblocks)
 - [getEntities](#getentities)
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
 - [getPlayers](#getplayers)
+- [getTopmostBlock](#gettopmostblock)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [playSound](#playsound)
-::: moniker-end
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setBlockPermutation](#setblockpermutation)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [setBlockType](#setblocktype)
-::: moniker-end
 - [setWeather](#setweather)
 - [spawnEntity](#spawnentity)
 - [spawnItem](#spawnitem)
 - [spawnParticle](#spawnparticle)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **containsBlock**
 `
 containsBlock(volume: BlockVolumeBase, filter: BlockFilter, allowUnloadedChunks?: boolean): boolean
@@ -88,15 +82,10 @@ Searches the block volume for a block that satisfies the block filter.
   If set to true will suppress the UnloadedChunksError if some or all of the block volume is outside of the loaded chunks. Will only check the block locations that are within the loaded chunks in the volume.
 
 **Returns** *boolean* - Returns true if at least one block in the volume satisfies the filter, false otherwise.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
-::: moniker-end
+  
+Notes:
+- This function can throw errors.
+  - Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
 
 ### **createExplosion**
 `
@@ -117,63 +106,94 @@ Creates an explosion at the specified location.
   Additional configurable options for the explosion.
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
-##### ***createExplosions.ts***
+
+##### ***createExplosion.ts***
+
 ```typescript
-// Creates an explosion of radius 15 that does not break blocks
-import { DimensionLocation } from '@minecraft/server';
+import { DimensionLocation } from "@minecraft/server";
 
-function createExplosions(location: DimensionLocation) {
-    // Creates an explosion of radius 15 that does not break blocks
-    location.dimension.createExplosion(location, 15, { breaksBlocks: false });
-
-    // Creates an explosion of radius 15 that does not cause fire
-    location.dimension.createExplosion(location, 15, { causesFire: true });
-
-    // Creates an explosion of radius 10 that can go underwater
-    location.dimension.createExplosion(location, 10, { allowUnderwater: true });
+function createExplosion(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  log("Creating an explosion of radius 10.");
+  targetLocation.dimension.createExplosion(targetLocation, 10);
 }
 ```
 
-::: moniker range="=minecraft-bedrock-experimental"
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/createExplosion.ts) code sandbox.
+
+##### ***createNoBlockExplosion.ts***
+
+```typescript
+import { DimensionLocation } from "@minecraft/server";
+import { Vector3Utils } from "@minecraft/math";
+
+function createNoBlockExplosion(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  const explodeNoBlocksLoc = Vector3Utils.floor(Vector3Utils.add(targetLocation, { x: 1, y: 2, z: 1 }));
+
+  log("Creating an explosion of radius 15 that does not break blocks.");
+  targetLocation.dimension.createExplosion(explodeNoBlocksLoc, 15, { breaksBlocks: false });
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/createNoBlockExplosion.ts) code sandbox.
+
+##### ***createExplosions.ts***
+
+```typescript
+import { DimensionLocation } from "@minecraft/server";
+import { Vector3Utils } from "@minecraft/math";
+
+function createExplosions(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const explosionLoc = Vector3Utils.add(targetLocation, { x: 0.5, y: 0.5, z: 0.5 });
+
+  // Creates an explosion of radius 15 that does not cause fire
+  location.dimension.createExplosion(location, 15, { causesFire: false });
+
+  log("Creating an explosion of radius 15 that causes fire.");
+  targetLocation.dimension.createExplosion(explosionLoc, 15, { causesFire: true });
+
+  const belowWaterLoc = Vector3Utils.add(targetLocation, { x: 3, y: 1, z: 3 });
+
+  log("Creating an explosion of radius 10 that can go underwater.");
+  targetLocation.dimension.createExplosion(belowWaterLoc, 10, { allowUnderwater: true });
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/createExplosions.ts) code sandbox.
+
 ### **fillBlocks**
 `
 fillBlocks(volume: BlockVolumeBase | CompoundBlockVolume, block: BlockPermutation | BlockType | string, options?: BlockFillOptions): ListBlockVolume
 `
 
-Fills an area between begin and end with block of type block.
+Fills an area of blocks with a specific block type.
 
 #### **Parameters**
 - **volume**: [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
+  
+  Volume of blocks to be filled.
 - **block**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md) | *string*
   
   Type of block to fill the volume with.
 - **options**?: [*BlockFillOptions*](BlockFillOptions.md) = `null`
   
-  A set of additional options, such as a matching block to potentially replace this fill block with.
+  A set of additional options, such as a block filter which can be used to include / exclude specific blocks in the fill.
 
-**Returns** [*ListBlockVolume*](ListBlockVolume.md) -  Returns number of blocks placed.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
-::: moniker-end
+**Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns a ListBlockVolume which contains all the blocks that were placed.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **findClosestBiome**
@@ -198,14 +218,11 @@ Finds the location of the closest biome of a particular type. Note that the find
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
 ::: moniker-end
 
 ### **getBlock**
@@ -221,11 +238,50 @@ Returns a block instance at the given location.
   The location at which to return a block.
 
 **Returns** [*Block*](Block.md) | *undefined* - Block at the specified location, or 'undefined' if asking for a block at an unloaded chunk.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+::: moniker range="=minecraft-bedrock-experimental"
+### **getBlockAbove**
+`
+getBlockAbove(location: Vector3, options?: BlockRaycastOptions): Block | undefined
+`
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+- **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
+
+**Returns** [*Block*](Block.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getBlockBelow**
+`
+getBlockBelow(location: Vector3, options?: BlockRaycastOptions): Block | undefined
+`
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+- **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
+
+**Returns** [*Block*](Block.md) | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+::: moniker-end
 
 ### **getBlockFromRay**
 `
@@ -246,11 +302,10 @@ Gets the first block that intersects with a vector emanating from a location.
   Additional options for processing this raycast query.
 
 **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined*
+  
+Notes:
+- This function can throw errors.
 
-> [!WARNING]
-> This function can throw errors.
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getBlocks**
 `
 getBlocks(volume: BlockVolumeBase, filter: BlockFilter, allowUnloadedChunks?: boolean): ListBlockVolume
@@ -270,15 +325,10 @@ Gets all the blocks in a volume that satisfy the filter.
   If set to true will suppress the UnloadedChunksError if some or all of the block volume is outside of the loaded chunks. Will only check the block locations that are within the loaded chunks in the volume.
 
 **Returns** [*ListBlockVolume*](ListBlockVolume.md) - Returns the ListBlockVolume that contains all the block locations that satisfied the block filter.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
-::: moniker-end
+  
+Notes:
+- This function can throw errors.
+  - Throws *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
 
 ### **getEntities**
 `
@@ -293,58 +343,91 @@ Returns a set of entities based on a set of conditions defined via the EntityQue
   Additional options that can be used to filter the set of entities returned.
 
 **Returns** [*Entity*](Entity.md)[] - An entity array.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 #### Examples
-##### ***checkFeatherNearby.ts***
+
+##### ***bounceSkeletons.ts***
+
 ```typescript
-import { DimensionLocation, EntityComponentTypes } from "@minecraft/server";
+import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
 
-// Returns true if a feather item entity is within 'distance' blocks of 'location'.
-function isFeatherNear(location: DimensionLocation, distance: number): boolean {
-    const items = location.dimension.getEntities({
-        location: location,
-        maxDistance: 20,
-    });
-    
-    for (const item of items) {
-        const itemComp = item.getComponent(EntityComponentTypes.Item);
-    
-        if (itemComp) {
-            if (itemComp.itemStack.typeId.endsWith('feather')) {
-                return true;
-            }
-        }
-    }
+function bounceSkeletons(targetLocation: DimensionLocation) {
+  const mobs = ["creeper", "skeleton", "sheep"];
 
-    return false;
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    targetLocation.dimension.spawnEntity(mobs[i % mobs.length], targetLocation);
+  }
+
+  const eqo: EntityQueryOptions = {
+    type: "skeleton",
+  };
+
+  for (const entity of targetLocation.dimension.getEntities(eqo)) {
+    entity.applyKnockback(0, 0, 0, 1);
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/bounceSkeletons.ts) code sandbox.
+
 ##### ***tagsQuery.ts***
+
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
+import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
 
-function mobParty(targetLocation: DimensionLocation) {
-    const mobs = ['creeper', 'skeleton', 'sheep'];
+function tagsQuery(targetLocation: DimensionLocation) {
+  const mobs = ["creeper", "skeleton", "sheep"];
 
-    // create some sample mob data
-    for (let i = 0; i < 10; i++) {
-        const mobTypeId = mobs[i % mobs.length];
-        const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
-        entity.addTag('mobparty.' + mobTypeId);
-    }
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    const mobTypeId = mobs[i % mobs.length];
+    const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
+    entity.addTag("mobparty." + mobTypeId);
+  }
 
-    const eqo: EntityQueryOptions = {
-        tags: ['mobparty.skeleton'],
-    };
+  const eqo: EntityQueryOptions = {
+    tags: ["mobparty.skeleton"],
+  };
 
-    for (const entity of targetLocation.dimension.getEntities(eqo)) {
-        entity.kill();
-    }
+  for (const entity of targetLocation.dimension.getEntities(eqo)) {
+    entity.kill();
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/tagsQuery.ts) code sandbox.
+
+##### ***testThatEntityIsFeatherItem.ts***
+
+```typescript
+import { EntityItemComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+
+function testThatEntityIsFeatherItem(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  const items = targetLocation.dimension.getEntities({
+    location: targetLocation,
+    maxDistance: 20,
+  });
+
+  for (const item of items) {
+    const itemComp = item.getComponent(EntityComponentTypes.Item) as EntityItemComponent;
+
+    if (itemComp) {
+      if (itemComp.itemStack.typeId.endsWith("feather")) {
+        log("Success! Found a feather", 1);
+      }
+    }
+  }
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/testThatEntityIsFeatherItem.ts) code sandbox.
 
 ### **getEntitiesAtBlockLocation**
 `
@@ -375,9 +458,9 @@ Gets entities that intersect with a specified vector emanating from a location.
   Additional options for processing this raycast query.
 
 **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[]
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getPlayers**
 `
@@ -392,9 +475,30 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
   Additional options that can be used to filter the set of players returned.
 
 **Returns** [*Player*](Player.md)[] - A player array.
+  
+Notes:
+- This function can throw errors.
 
-> [!WARNING]
-> This function can throw errors.
+### **getTopmostBlock**
+`
+getTopmostBlock(locationXZ: VectorXZ, minHeight?: number): Block | undefined
+`
+
+Returns the highest block at the given XZ location.
+
+#### **Parameters**
+- **locationXZ**: [*VectorXZ*](VectorXZ.md)
+  
+  Location to retrieve the topmost block for.
+- **minHeight**?: *number* = `null`
+  
+  The Y height to begin the search from. Defaults to the maximum dimension height.
+
+**Returns** [*Block*](Block.md) | *undefined*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getWeather**
@@ -408,12 +512,11 @@ Returns the current weather.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playSound**
 `
 playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
@@ -431,59 +534,14 @@ Plays a sound for all players.
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
   
   Additional options for configuring additional effects for the sound.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> An error will be thrown if volume is less than 0.0.
->
-> An error will be thrown if fade is less than 0.0.
->
-> An error will be thrown if pitch is less than 0.01.
->
-> An error will be thrown if volume is less than 0.0.
-
-#### Examples
-##### ***playMusicAndSound.ts***
-```typescript
-import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, Vector3 } from '@minecraft/server';
-import { MinecraftDimensionTypes } from '@minecraft/vanilla-data';
-
-const players = world.getPlayers();
-const targetLocation: Vector3 = {
-    x: 0,
-    y: 0,
-    z: 0,
-};
-
-const musicOptions: MusicOptions = {
-    fade: 0.5,
-    loop: true,
-    volume: 1.0,
-};
-world.playMusic('music.menu', musicOptions);
-
-const worldSoundOptions: WorldSoundOptions = {
-    pitch: 0.5,
-    volume: 4.0,
-};
-const overworld = world.getDimension(MinecraftDimensionTypes.Overworld);
-overworld.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
-
-const playerSoundOptions: PlayerSoundOptions = {
-    pitch: 1.0,
-    volume: 1.0,
-};
-
-players[0].playSound('bucket.fill_water', playerSoundOptions);
-```
-::: moniker-end
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - An error will be thrown if volume is less than 0.0.
+  - An error will be thrown if fade is less than 0.0.
+  - An error will be thrown if pitch is less than 0.01.
+  - An error will be thrown if volume is less than 0.0.
 
 ### **runCommand**
 `
@@ -498,14 +556,11 @@ Runs a command synchronously using the context of the broader dimenion.
   Command to run. Note that command strings should not start with slash.
 
 **Returns** [*CommandResult*](CommandResult.md) - Returns a command result with a count of successful values from the command.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*CommandError*](CommandError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*CommandError*](CommandError.md)
 
 ### **runCommandAsync**
 `
@@ -520,55 +575,50 @@ Runs a particular command asynchronously from the context of the broader dimensi
   Command to run. Note that command strings should not start with slash.
 
 **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a CommandResult with an indicator of command results.
+  
+Notes:
+- This function can throw errors.
+  - Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
 
-> [!WARNING]
-> This function can throw errors.
->
-> Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setBlockPermutation**
 `
 setBlockPermutation(location: Vector3, permutation: BlockPermutation): void
 `
 
+Sets a block in the world using a BlockPermutation. BlockPermutations are blocks with a particular state.
+
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
+  
+  The location within the dimension to set the block.
 - **permutation**: [*BlockPermutation*](BlockPermutation.md)
+  
+  The block permutation to set.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setBlockType**
 `
 setBlockType(location: Vector3, blockType: BlockType | string): void
 `
 
+Sets a block at a given location within the dimension.
+
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
+  
+  The location within the dimension to set the block.
 - **blockType**: [*BlockType*](BlockType.md) | *string*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
+  
+  The type of block to set. This can be either a string identifier or a BlockType. The default block permutation is used.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ### **setWeather**
 `
@@ -584,12 +634,10 @@ Sets the current weather within the dimension
 - **duration**?: *number* = `null`
   
   Sets the duration of the weather (in ticks). If no duration is provided, the duration will be set to a random duration between 300 and 900 seconds.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **spawnEntity**
 `
@@ -608,52 +656,78 @@ Creates a new entity (e.g., a mob) at the specified location.
 - **options**?: [*SpawnEntityOptions*](SpawnEntityOptions.md) = `null`
 
 **Returns** [*Entity*](Entity.md) - Newly created entity at the specified location.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
-##### ***createOldHorse.ts***
-```typescript
-// Spawns an adult horse
-import { DimensionLocation } from '@minecraft/server';
 
-function spawnAdultHorse(location: DimensionLocation) {
-    // Create a horse and triggering the 'ageable_grow_up' event, ensuring the horse is created as an adult
-    location.dimension.spawnEntity('minecraft:horse<minecraft:ageable_grow_up>', location);
+##### ***spawnAdultHorse.ts***
+
+```typescript
+import { DimensionLocation } from "@minecraft/server";
+import { Vector3Utils } from "@minecraft/math";
+
+function spawnAdultHorse(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  log("Create a horse and triggering the ageable_grow_up event, ensuring the horse is created as an adult");
+  targetLocation.dimension.spawnEntity(
+    "minecraft:horse<minecraft:ageable_grow_up>",
+    Vector3Utils.add(targetLocation, { x: 0, y: 1, z: 0 })
+  );
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/spawnAdultHorse.ts) code sandbox.
+
 ##### ***quickFoxLazyDog.ts***
+
 ```typescript
-// Spawns a fox over a dog
-import { DimensionLocation } from '@minecraft/server';
-import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
 
-function spawnAdultHorse(location: DimensionLocation) {
-    // Create fox (our quick brown fox)
-    const fox = location.dimension.spawnEntity(MinecraftEntityTypes.Fox, {
-        x: location.x,
-        y: location.y + 2,
-        z: location.z,
-    });
+function quickFoxLazyDog(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const fox = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Fox, {
+    x: targetLocation.x + 1,
+    y: targetLocation.y + 2,
+    z: targetLocation.z + 3,
+  });
 
-    fox.addEffect('speed', 10, {
-        amplifier: 2,
-    });
+  fox.addEffect(MinecraftEffectTypes.Speed, 10, {
+    amplifier: 2,
+  });
+  log("Created a fox.");
 
-    // Create wolf (our lazy dog)
-    const wolf = location.dimension.spawnEntity(MinecraftEntityTypes.Wolf, location);
-    wolf.addEffect('slowness', 10, {
-        amplifier: 2,
-    });
-    wolf.isSneaking = true;
+  const wolf = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Wolf, {
+    x: targetLocation.x + 4,
+    y: targetLocation.y + 2,
+    z: targetLocation.z + 3,
+  });
+  wolf.addEffect(MinecraftEffectTypes.Slowness, 10, {
+    amplifier: 2,
+  });
+  wolf.isSneaking = true;
+  log("Created a sneaking wolf.", 1);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/quickFoxLazyDog.ts) code sandbox.
+
+##### ***triggerEvent.ts***
+
+```typescript
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function triggerEvent(targetLocation: DimensionLocation) {
+  const creeper = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Creeper, targetLocation);
+
+  creeper.triggerEvent("minecraft:start_exploding_forced");
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/triggerEvent.ts) code sandbox.
 
 ### **spawnItem**
 `
@@ -669,27 +743,57 @@ Creates a new item stack as an entity at the specified location.
   The location at which to create the item stack.
 
 **Returns** [*Entity*](Entity.md) - Newly created item stack entity at the specified location.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
-##### ***spawnFeatherItem.ts***
-```typescript
-// Spawns a feather at a location
-import { ItemStack, DimensionLocation } from '@minecraft/server';
-import { MinecraftItemTypes } from '@minecraft/vanilla-data';
 
-function spawnFeather(location: DimensionLocation) {
-    const featherItem = new ItemStack(MinecraftItemTypes.Feather, 1);
-    location.dimension.spawnItem(featherItem, location);
+##### ***itemStacks.ts***
+
+```typescript
+import { ItemStack, DimensionLocation } from "@minecraft/server";
+import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+
+function itemStacks(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const oneItemLoc = { x: targetLocation.x + targetLocation.y + 3, y: 2, z: targetLocation.z + 1 };
+  const fiveItemsLoc = { x: targetLocation.x + 1, y: targetLocation.y + 2, z: targetLocation.z + 1 };
+  const diamondPickaxeLoc = { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 4 };
+
+  const oneEmerald = new ItemStack(MinecraftItemTypes.Emerald, 1);
+  const onePickaxe = new ItemStack(MinecraftItemTypes.DiamondPickaxe, 1);
+  const fiveEmeralds = new ItemStack(MinecraftItemTypes.Emerald, 5);
+
+  log(`Spawning an emerald at (${oneItemLoc.x}, ${oneItemLoc.y}, ${oneItemLoc.z})`);
+  targetLocation.dimension.spawnItem(oneEmerald, oneItemLoc);
+
+  log(`Spawning five emeralds at (${fiveItemsLoc.x}, ${fiveItemsLoc.y}, ${fiveItemsLoc.z})`);
+  targetLocation.dimension.spawnItem(fiveEmeralds, fiveItemsLoc);
+
+  log(`Spawning a diamond pickaxe at (${diamondPickaxeLoc.x}, ${diamondPickaxeLoc.y}, ${diamondPickaxeLoc.z})`);
+  targetLocation.dimension.spawnItem(onePickaxe, diamondPickaxeLoc);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/itemStacks.ts) code sandbox.
+
+##### ***spawnFeatherItem.ts***
+
+```typescript
+import { ItemStack, DimensionLocation } from "@minecraft/server";
+import { MinecraftItemTypes } from "@minecraft/vanilla-data";
+
+function spawnFeatherItem(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const featherItem = new ItemStack(MinecraftItemTypes.Feather, 1);
+
+  targetLocation.dimension.spawnItem(featherItem, targetLocation);
+  log(`New feather created at ${targetLocation.x}, ${targetLocation.y}, ${targetLocation.z}!`);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/spawnFeatherItem.ts) code sandbox.
 
 ### **spawnParticle**
 `
@@ -708,37 +812,33 @@ Creates a new particle emitter at a specified location in the world.
 - **molangVariables**?: [*MolangVariableMap*](MolangVariableMap.md) = `null`
   
   A set of optional, customizable variables that can be adjusted for this particle.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
+
 ##### ***spawnParticle.ts***
+
 ```typescript
-// A function that spawns a particle at a random location near the target location for all players in the server
-import { world, MolangVariableMap, DimensionLocation, Vector3 } from '@minecraft/server';
+import { MolangVariableMap, DimensionLocation } from "@minecraft/server";
 
-function spawnConfetti(location: DimensionLocation) {
-    for (let i = 0; i < 100; i++) {
-        const molang = new MolangVariableMap();
+function spawnParticle(targetLocation: DimensionLocation) {
+  for (let i = 0; i < 100; i++) {
+    const molang = new MolangVariableMap();
 
-        molang.setColorRGB('variable.color', {
-            red: Math.random(),
-            green: Math.random(),
-            blue: Math.random()
-        });
+    molang.setColorRGB("variable.color", { red: Math.random(), green: Math.random(), blue: Math.random() });
 
-        const newLocation: Vector3 = {
-            x: location.x + Math.floor(Math.random() * 8) - 4,
-            y: location.y + Math.floor(Math.random() * 8) - 4,
-            z: location.z + Math.floor(Math.random() * 8) - 4,
-        };
-        location.dimension.spawnParticle('minecraft:colored_flame_particle', newLocation, molang);
-    }
+    const newLocation = {
+      x: targetLocation.x + Math.floor(Math.random() * 8) - 4,
+      y: targetLocation.y + Math.floor(Math.random() * 8) - 4,
+      z: targetLocation.z + Math.floor(Math.random() * 8) - 4,
+    };
+    targetLocation.dimension.spawnParticle("minecraft:colored_flame_particle", newLocation, molang);
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/spawnParticle.ts) code sandbox.

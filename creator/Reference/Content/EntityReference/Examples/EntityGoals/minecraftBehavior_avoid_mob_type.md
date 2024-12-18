@@ -22,7 +22,7 @@ ms.service: minecraft-bedrock-edition
 | max_dist| 3.0 | Decimal | Maximum distance to look for an avoid target for the entity. |
 | max_flee| 10.0 | Decimal | How many blocks away from its avoid target the entity must be for it to stop fleeing from the avoid target. |
 | on_escape_event| | Trigger | Event that is triggered when escaping from a mob. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | probability_per_strength| 1.0 | Decimal | Percent chance this entity will stop avoiding another entity based on that entity's strength, where 1.0 = 100%. |
 | remove_target| false | Boolean | Determine if we should remove target when fleeing or not. |
 | sound_interval| [3.0, 8.0] | Range [a, b] | The range of time in seconds to randomly wait before playing the sound again. |

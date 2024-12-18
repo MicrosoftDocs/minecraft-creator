@@ -5,19 +5,75 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityLeashableComponent Class
 description: Contents of the @minecraft/server.EntityLeashableComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityLeashableComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
-Allows this entity to be leashed and defines the conditions and events for this entity when is leashed.
+Allows the entity to be leashed. Defines the conditions and events for when an entity is leashed.
 
 ## Properties
+
+### **canBeStolen**
+`read-only canBeStolen: boolean;`
+
+Returns true if another entity can 'steal' the leashed entity by attaching their own leash to it.
+
+Type: *boolean*
+
+Notes:
+  - This property can throw errors when used.
+
+### **hardDistance**
+`read-only hardDistance: number;`
+
+Distance in blocks at which the leash stiffens, restricting movement.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+### **isLeashed**
+`read-only isLeashed: boolean;`
+
+Returns true if the entity is leashed.
+
+Type: *boolean*
+
+Notes:
+  - This property can throw errors when used.
+
+### **leashHolder**
+`read-only leashHolder?: Entity;`
+
+Entity that is holding the leash.
+
+Type: [*Entity*](Entity.md)
+
+Notes:
+  - This property can throw errors when used.
+
+### **leashHolderEntityId**
+`read-only leashHolderEntityId?: string;`
+
+Identifier of entity that is holding the leash.
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+
+### **maxDistance**
+`read-only maxDistance: number;`
+
+Distance in blocks at which the leash breaks.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
 
 ### **softDistance**
 `read-only softDistance: number;`
@@ -26,16 +82,16 @@ Distance in blocks at which the 'spring' effect starts acting to keep this entit
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
-- [leash](#leash)
+- [leashTo](#leashto)
 - [unleash](#unleash)
 
-### **leash**
+### **leashTo**
 `
-leash(leashHolder: Entity): void
+leashTo(leashHolder: Entity): void
 `
 
 Leashes this entity to another entity.
@@ -44,12 +100,11 @@ Leashes this entity to another entity.
 - **leashHolder**: [*Entity*](Entity.md)
   
   The entity to leash this entity to.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the entity to leash to is over the max distance, and if the player is dead or in spectator mode.
 
 ### **unleash**
 `
@@ -57,12 +112,10 @@ unleash(): void
 `
 
 Unleashes this entity if it is leashed to another entity.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ## Constants
 

@@ -1,5 +1,5 @@
 ---
-author: neonerz
+author: iconicNurdle
 ms.author: mikeam
 title: Commonly Used Tools
 description: "A guide detailing popular tools used to modify Minecraft content"
@@ -17,9 +17,9 @@ There are a wide variety of tools that have been created for the purpose of incr
 
 Map creation is one of the largest and most time-consuming components of content creation. That being said, there are a significant number of map creation tools available to make this process significantly more efficient.
 
-### [Chunker](https://chunker.app/)
+### [Chunker](https://github.com/HiveGamesOSS/Chunker/)
 
-Chunker is a web tool for Minecraft: Bedrock Edition worlds. It's specifically useful for converting worlds between Minecraft: Java Edition and Bedrock Edition, as well as easily configuring world settings. Conversion includes level settings, chunk data (such as blocks and biomes), dimensions, and more. To learn more about using Chunker, you can begin with the [Chunker Overview](ChunkerOverview.md) guide, which goes over the steps needed to do simple conversions and leads to more advanced features of the tool.
+Chunker is a Java-based tool for Minecraft: Bedrock Edition worlds. It's specifically useful for converting worlds between Minecraft: Java Edition and Bedrock Edition, as well as easily configuring world settings. Conversion includes level settings, chunk data (such as blocks and biomes), dimensions, and more. To learn more about using Chunker, you can begin with the [Chunker Overview](ChunkerOverview.md) guide, which goes over the steps needed to do simple conversions and leads to more advanced features of the tool.
 
 ### [Amulet](https://www.amuletmc.com/)
 
@@ -54,11 +54,17 @@ goBrush is a server plugin for Java Edition that adds in-game tools designed for
 
 goPaint is a server plugin for Java Edition that allows creators to efficiently "paint" blocks with a variety of brush shapes.
 
-## Creating Models
+## Creating Models and Visuals
 
 ### [Blockbench](https://blockbench.net/)
 
 Blockbench is a free entity-modeling application for creating working Bedrock Edition entity models, as well as creating textures and the ability to animate them for Bedrock Edition maps. Blockbench has external plugin support, enabling developers to create additional tools to use within the program. It also has the ability to export models into a standard OBJ format, Java Edition block model, and more.
+
+### [Snowstorm](https://snowstorm.app/)
+
+Snowstorm is a small application for Bedrock Edition created by the developer of Blockbench that can be used to create custom particle effects that are usable in-game. To get started with [Snowstorm](./SnowstormOverview.md), visit a [tutorial](./ParticleEffects.md) on building particle effects with Snowstorm.
+
+## Project and JSON Definition Editing
 
 ### [Blockception VSCode Extension](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension)
 
@@ -70,10 +76,15 @@ bridge. is a light-weight, dedicated editor for Minecraft Add-Ons that makes it 
 
 bridge. is [open source](https://github.com/bridge-core/editor) and freely available to all Add-On creators on desktop and mobile platforms.
 
+### [Minecraft Creator Tools](./MCToolsOverview.md)
 
-### [Snowstorm](https://jannisx11.github.io/snowstorm/)
+Minecraft Creator Tools is both a website and an NPM-based command line tool that you can use to start or extend your Minecraft projects. It also includes validators to help find and point out potential issues in the project.
 
-Snowstorm is a small application for Bedrock Edition created by the developer of Blockbench that can be used to create custom particle effects that are usable in-game.
+Minecraft Creator Tools is also open source and [available on GitHub](https://github.com/mojang/minecraft-creator-tools).
+
+### [NPC DialogueDesigner](https://jannisx11.github.io/dialogue-designer/)
+
+DialogueDesigner is a Web application for Bedrock Edition created by the developer of Blockbench and Snowstorm that can be used to create NPC dialogues, as shown in this handy tutorial: [NPC DialogueDesigner](NPCDialogueDesigner.md).
 
 ## Creating Skins and Resource Packs
 

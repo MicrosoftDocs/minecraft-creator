@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemTypes Class
 description: Contents of the @minecraft/server.ItemTypes class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemTypes Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Returns the set of item types registered within Minecraft.
 

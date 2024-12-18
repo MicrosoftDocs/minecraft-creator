@@ -12,18 +12,10 @@ The tool rail component allows the tool to register an icon and button (and dyna
 
 ## Properties
 
-### **displayAltText**
-`displayAltText: string;`
-
-Type: *string*
-
-### **displayStringId**
-`displayStringId: string;`
-
-Type: *string*
-
 ### **icon**
 `icon: string;`
+
+The icon for the tool rail button. This is generally a URL to an image file in the editor extension resource pack e.g. `pack://textures/my-tool-icon.png`
 
 Type: *string*
 
@@ -47,12 +39,16 @@ Type: *(component: ISimpleToolRailComponent) => void*
 
 Type: *(component: ISimpleToolRailComponent) => void*
 
-### **tooltipAltText**
-`tooltipAltText: string;`
+### **title**
+`title: string;`
+
+The text for the tool title
 
 Type: *string*
 
-### **tooltipStringId**
-`tooltipStringId: string;`
+### **tooltip**
+`tooltip: string;`
+
+The tooltip description for the tool. Note: if an activation key binding was added to `ISimpleToolOptions`, then the key binding will be appended to the tooltip string.
 
 Type: *string*

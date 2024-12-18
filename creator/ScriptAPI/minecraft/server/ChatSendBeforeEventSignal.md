@@ -14,6 +14,39 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 Manages callbacks that are connected to an event that fires before chat messages are sent.
 
+#### Examples
+
+##### ***customCommand.ts***
+
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function customCommand(targetLocation: DimensionLocation) {
+  const chatCallback = world.beforeEvents.chatSend.subscribe((eventData) => {
+    if (eventData.message.includes("cancel")) {
+      // Cancel event if the message contains "cancel"
+      eventData.cancel = true;
+    } else {
+      const args = eventData.message.split(" ");
+
+      if (args.length > 0) {
+        switch (args[0].toLowerCase()) {
+          case "echo":
+            // Send a modified version of chat message
+            world.sendMessage(`Echo '${eventData.message.substring(4).trim()}'`);
+            break;
+          case "help":
+            world.sendMessage(`Available commands: echo <message>`);
+            break;
+        }
+      }
+    }
+  });
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/customCommand.ts) code sandbox.
+
 ## Methods
 - [subscribe](#subscribe)
 - [unsubscribe](#unsubscribe)
@@ -29,9 +62,9 @@ Adds a callback that will be called before new chat messages are sent.
 - **callback**: (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
 
 **Returns** (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -42,6 +75,39 @@ Removes a callback from being called before new chat messages are sent.
 
 #### **Parameters**
 - **callback**: (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+#### Examples
+
+##### ***customCommand.ts***
+
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function customCommand(targetLocation: DimensionLocation) {
+  const chatCallback = world.beforeEvents.chatSend.subscribe((eventData) => {
+    if (eventData.message.includes("cancel")) {
+      // Cancel event if the message contains "cancel"
+      eventData.cancel = true;
+    } else {
+      const args = eventData.message.split(" ");
+
+      if (args.length > 0) {
+        switch (args[0].toLowerCase()) {
+          case "echo":
+            // Send a modified version of chat message
+            world.sendMessage(`Echo '${eventData.message.substring(4).trim()}'`);
+            break;
+          case "help":
+            world.sendMessage(`Available commands: echo <message>`);
+            break;
+        }
+      }
+    }
+  });
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/customCommand.ts) code sandbox.

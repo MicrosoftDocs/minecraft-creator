@@ -24,6 +24,7 @@ The following commands reference this enum:
 - [gametest](../commands/gametest.md)
 - [locate](../commands/locate.md)
 - [mobevent](../commands/mobevent.md)
+- [place](../commands/place.md)
 - [structure](../commands/structure.md)
 - [teleport](../commands/teleport.md)
 - [tickingarea](../commands/tickingarea.md)

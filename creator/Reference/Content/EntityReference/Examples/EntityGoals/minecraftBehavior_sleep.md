@@ -19,7 +19,7 @@ ms.service: minecraft-bedrock-edition
 |:----------|:----------|:----------|:----------|
 | can_sleep_while_riding| false| Boolean|  If true, the mob will be able to use the sleep goal if riding something. |
 | cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | sleep_collider_height| 1.0| Decimal|  The height of the mob's collider while sleeping. |
 | sleep_collider_width| 1.0| Decimal|  The width of the mob's collider while sleeping. |
 | sleep_y_offset| 1.0| Decimal|  The y offset of the mob's collider while sleeping. |

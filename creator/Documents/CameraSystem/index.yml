@@ -1,0 +1,54 @@
+### YamlMime:Landing
+
+title: Camera System # < 60 chars
+summary: "The Camera System section features content about cameras." # < 160 chars
+
+metadata:
+  title: Camera System # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "The Camera System section features regular ideas and samples you can build, learn from, and use. Come back often for more ideas!"  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: minecraft-bedrock-edition
+  ms.topic: landing-page # Required
+  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/24/2024 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Pages
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Camera System Introduction
+            url: CameraCommandIntroduction.md
+          - text: Free Camera Command Tutorial
+            url: CameraPresetFree.md
+          - text: Free Camera Script API Tutorial
+            url: FreeCameraScriptAPITutorial.md
+          - text: Third Person Presets Overview
+            url: CameraPresetThirdPerson.md
+  - title: Camera APIs
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: minecraft/server.Camera Class
+            url: ../../ScriptAPI/minecraft/server/Camera.md
+          - text: minecraft/server.CameraDefaultOptions Interface
+            url: ../../ScriptAPI/minecraft/server/CameraDefaultOptions.md
+          - text: minecraft/server.CameraEaseOptions Interface
+            url: ../../ScriptAPI/minecraft/server/CameraEaseOptions.md
+          - text: minecraft/server.CameraFadeOptions Interface
+            url: ../../ScriptAPI/minecraft/server/CameraFadeOptions.md
+          - text: minecraft/server.CameraFadeTimeOptions Interface
+            url: ../../ScriptAPI/minecraft/server/CameraFadeTimeOptions.md
+          - text: minecraft/server.CameraSetFacingOptions Interface
+            url: ../../ScriptAPI/minecraft/server/CameraSetFacingOptions.md
+          - text: minecraft/server.CameraSetLocationOptions Interface
+            url: ../../ScriptAPI/minecraft/server/CameraSetLocationOptions.md
+          - text: minecraft/server.CameraSetPosOptions Interface
+            url: ../../ScriptAPI/minecraft/server/CameraSetPosOptions.md
+          - text: minecraft/server.CameraSetRotOptions Interface
+            url: ../../ScriptAPI/minecraft/server/CameraSetRotOptions.md

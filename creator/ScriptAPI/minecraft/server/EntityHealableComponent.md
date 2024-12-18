@@ -22,8 +22,8 @@ Determines if an item can be used regardless of the entity being at full health.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [getFeedItems](#getfeeditems)
@@ -36,9 +36,9 @@ getFeedItems(): FeedItem[]
 A set of items that can specifically heal this entity.
 
 **Returns** [*FeedItem*](FeedItem.md)[] - Entity that this component is associated with.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ## Constants
 

@@ -14,103 +14,131 @@ description: Contents of the @minecraft/server.BlockSignComponent class.
 Represents a block that can display text on it.
 
 #### Examples
+
+##### ***addSign.ts***
+
+```typescript
+import { world, BlockPermutation, BlockSignComponent, BlockComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
+
+function addSign(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  const dim = players[0].dimension;
+
+  const signBlock = dim.getBlock(targetLocation);
+
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
+
+  signComponent?.setText(`Basic sign!\nThis is green on the front.`);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/addSign.ts) code sandbox.
+
 ##### ***addTwoSidedSign.ts***
+
 ```typescript
-// A function the creates a sign at the specified location with text on both sides and dye colors
-import {
-    DimensionLocation,
-    BlockPermutation,
-    BlockSignComponent,
-    BlockComponentTypes,
-    DyeColor,
-    SignSide,
-} from '@minecraft/server';
-import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+import { BlockPermutation, BlockSignComponent, SignSide, DyeColor, BlockComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
 
-function createSignAt(location: DimensionLocation) {
-    const block = location.dimension.getBlock(location);
-    if (!block) {
-        console.warn('Could not find a block at specified location.');
-        return;
-    }
-    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, {
-        ground_sign_direction: 8,
-    });
-    block.setPermutation(signPerm);
-    const sign = block.getComponent(BlockComponentTypes.Sign);
+function addTwoSidedSign(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const signBlock = targetLocation.dimension.getBlock(targetLocation);
 
-    if (sign !== undefined) {
-        sign.setText(`Party Sign!\nThis is green on the front.`);
-        sign.setText(`Party Sign!\nThis is red on the back.`, SignSide.Back);
-        sign.setTextDyeColor(DyeColor.Green);
-        sign.setTextDyeColor(DyeColor.Red, SignSide.Back);
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
 
-        // players cannot edit sign!
-        sign.setWaxed(true);
-    } else {
-        console.warn('Could not find a sign component on the block.');
-    }
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
+
+  if (signComponent) {
+    signComponent.setText(`Party Sign!\nThis is green on the front.`);
+    signComponent.setText(`Party Sign!\nThis is red on the back.`, SignSide.Back);
+    signComponent.setTextDyeColor(DyeColor.Green);
+    signComponent.setTextDyeColor(DyeColor.Red, SignSide.Back);
+
+    // players cannot edit sign!
+    signComponent.setWaxed(true);
+  } else {
+    log("Could not find sign component.");
+  }
 }
 ```
-##### ***setSignText.ts***
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/addTwoSidedSign.ts) code sandbox.
+
+##### ***updateSignText.ts***
+
 ```typescript
-import {
-    BlockComponentTypes,
-    DimensionLocation,
-    RawMessage,
-    RawText,
-} from '@minecraft/server';
+import { BlockSignComponent, BlockComponentTypes, DimensionLocation, RawMessage, RawText } from "@minecraft/server";
 
-// Function which updates a sign blocks text to raw text
-function updateSignText(signLocation: DimensionLocation) {
-    const block = signLocation.dimension.getBlock(signLocation);
-    if (!block) {
-        console.warn('Could not find a block at specified location.');
-        return;
-    }
+function updateSignText(targetLocation: DimensionLocation) {
+  const block = targetLocation.dimension.getBlock(targetLocation);
+  if (!block) {
+    console.warn("Could not find a block at specified location.");
+    return;
+  }
 
-    const sign = block.getComponent(BlockComponentTypes.Sign);
-    if (sign) {
-        // RawMessage
-        const helloWorldMessage: RawMessage = { text: 'Hello World' };
-        sign.setText(helloWorldMessage);
+  const sign = block.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
+  if (sign) {
+    // RawMessage
+    const helloWorldMessage: RawMessage = { text: "Hello World" };
+    sign.setText(helloWorldMessage);
 
-        // RawText
-        const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
-        sign.setText(helloWorldText);
+    // RawText
+    const helloWorldText: RawText = { rawtext: [{ text: "Hello World" }] };
+    sign.setText(helloWorldText);
 
-        // Regular string
-        sign.setText('Hello World');
-    } else {
-        console.warn('Could not find a sign component on the block.');
-    }
+    // Regular string
+    sign.setText("Hello World");
+  } else {
+    console.warn("Could not find a sign component on the block.");
+  }
 }
 ```
-##### ***createTranslatedSign.ts***
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/updateSignText.ts) code sandbox.
+
+##### ***addTranslatedSign.ts***
+
 ```typescript
-// A function the creates a sign at the specified location with the specified text
-import { DimensionLocation, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
-import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+import { world, BlockPermutation, BlockSignComponent, BlockComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
 
-function createSignAt(location: DimensionLocation) {
-    const signBlock = location.dimension.getBlock(location);
+function addTranslatedSign(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    if (!signBlock) {
-        console.warn('Could not find a block at specified location.');
-        return;
-    }
+  const dim = players[0].dimension;
 
-    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
-    signBlock.setPermutation(signPerm); // Update block to be a sign
+  const signBlock = dim.getBlock(targetLocation);
 
-    // Update the sign block's text
-    // with "Steve's Head"
-    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
-    if (signComponent) {
-        signComponent.setText({ translate: 'item.skull.player.name', with: ['Steve'] });
-    }
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
+
+  signComponent?.setText({ translate: "item.skull.player.name", with: [players[0].name] });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/addTranslatedSign.ts) code sandbox.
 
 ## Properties
 
@@ -121,8 +149,8 @@ Whether or not players can edit the sign. This happens if a sign has had a honey
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [getRawText](#getrawtext)
@@ -145,9 +173,9 @@ Returns the RawText of the sign if `setText` was called with a RawMessage or a R
   The side of the sign to read the message from. If not provided, this will return the message from the front side of the sign.
 
 **Returns** [*RawText*](RawText.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getText**
 `
@@ -162,9 +190,9 @@ Returns the text of the sign if `setText` was called with a string, otherwise re
   The side of the sign to read the message from. If not provided, this will return the message from the front side of the sign.
 
 **Returns** *string* | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getTextDyeColor**
 `
@@ -179,9 +207,9 @@ Gets the dye that is on the text or undefined if the sign has not been dyed.
   The side of the sign to read the dye from. If not provided, this will return the dye on the front side of the sign.
 
 **Returns** [*DyeColor*](DyeColor.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **setText**
 `
@@ -197,50 +225,11 @@ Sets the text of the sign component.
 - **side**?: [*SignSide*](SignSide.md) = `0`
   
   The side of the sign the message will be set on. If not provided, the message will be set on the front side of the sign.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the provided message is greater than 512 characters in length.
-
-#### Examples
-##### ***setSignText.ts***
-```typescript
-import {
-    BlockComponentTypes,
-    DimensionLocation,
-    RawMessage,
-    RawText,
-} from '@minecraft/server';
-
-// Function which updates a sign blocks text to raw text
-function updateSignText(signLocation: DimensionLocation) {
-    const block = signLocation.dimension.getBlock(signLocation);
-    if (!block) {
-        console.warn('Could not find a block at specified location.');
-        return;
-    }
-
-    const sign = block.getComponent(BlockComponentTypes.Sign);
-    if (sign) {
-        // RawMessage
-        const helloWorldMessage: RawMessage = { text: 'Hello World' };
-        sign.setText(helloWorldMessage);
-
-        // RawText
-        const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
-        sign.setText(helloWorldText);
-
-        // Regular string
-        sign.setText('Hello World');
-    } else {
-        console.warn('Could not find a sign component on the block.');
-    }
-}
-```
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the provided message is greater than 512 characters in length.
 
 ### **setTextDyeColor**
 `
@@ -256,12 +245,10 @@ Sets the dye color of the text.
 - **side**?: [*SignSide*](SignSide.md) = `0`
   
   The side of the sign the color will be set on. If not provided, the color will be set on the front side of the sign.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setWaxed**
 `
@@ -272,12 +259,10 @@ Makes it so players cannot edit this sign.
 
 #### **Parameters**
 - **waxed**: *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ## Constants
 
@@ -287,100 +272,128 @@ Makes it so players cannot edit this sign.
 Type: *string*
 
 #### Examples
+
+##### ***addSign.ts***
+
+```typescript
+import { world, BlockPermutation, BlockSignComponent, BlockComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
+
+function addSign(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  const dim = players[0].dimension;
+
+  const signBlock = dim.getBlock(targetLocation);
+
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
+
+  signComponent?.setText(`Basic sign!\nThis is green on the front.`);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/addSign.ts) code sandbox.
+
 ##### ***addTwoSidedSign.ts***
+
 ```typescript
-// A function the creates a sign at the specified location with text on both sides and dye colors
-import {
-    DimensionLocation,
-    BlockPermutation,
-    BlockSignComponent,
-    BlockComponentTypes,
-    DyeColor,
-    SignSide,
-} from '@minecraft/server';
-import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+import { BlockPermutation, BlockSignComponent, SignSide, DyeColor, BlockComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
 
-function createSignAt(location: DimensionLocation) {
-    const block = location.dimension.getBlock(location);
-    if (!block) {
-        console.warn('Could not find a block at specified location.');
-        return;
-    }
-    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, {
-        ground_sign_direction: 8,
-    });
-    block.setPermutation(signPerm);
-    const sign = block.getComponent(BlockComponentTypes.Sign);
+function addTwoSidedSign(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const signBlock = targetLocation.dimension.getBlock(targetLocation);
 
-    if (sign !== undefined) {
-        sign.setText(`Party Sign!\nThis is green on the front.`);
-        sign.setText(`Party Sign!\nThis is red on the back.`, SignSide.Back);
-        sign.setTextDyeColor(DyeColor.Green);
-        sign.setTextDyeColor(DyeColor.Red, SignSide.Back);
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
 
-        // players cannot edit sign!
-        sign.setWaxed(true);
-    } else {
-        console.warn('Could not find a sign component on the block.');
-    }
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
+
+  if (signComponent) {
+    signComponent.setText(`Party Sign!\nThis is green on the front.`);
+    signComponent.setText(`Party Sign!\nThis is red on the back.`, SignSide.Back);
+    signComponent.setTextDyeColor(DyeColor.Green);
+    signComponent.setTextDyeColor(DyeColor.Red, SignSide.Back);
+
+    // players cannot edit sign!
+    signComponent.setWaxed(true);
+  } else {
+    log("Could not find sign component.");
+  }
 }
 ```
-##### ***setSignText.ts***
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/addTwoSidedSign.ts) code sandbox.
+
+##### ***updateSignText.ts***
+
 ```typescript
-import {
-    BlockComponentTypes,
-    DimensionLocation,
-    RawMessage,
-    RawText,
-} from '@minecraft/server';
+import { BlockSignComponent, BlockComponentTypes, DimensionLocation, RawMessage, RawText } from "@minecraft/server";
 
-// Function which updates a sign blocks text to raw text
-function updateSignText(signLocation: DimensionLocation) {
-    const block = signLocation.dimension.getBlock(signLocation);
-    if (!block) {
-        console.warn('Could not find a block at specified location.');
-        return;
-    }
+function updateSignText(targetLocation: DimensionLocation) {
+  const block = targetLocation.dimension.getBlock(targetLocation);
+  if (!block) {
+    console.warn("Could not find a block at specified location.");
+    return;
+  }
 
-    const sign = block.getComponent(BlockComponentTypes.Sign);
-    if (sign) {
-        // RawMessage
-        const helloWorldMessage: RawMessage = { text: 'Hello World' };
-        sign.setText(helloWorldMessage);
+  const sign = block.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
+  if (sign) {
+    // RawMessage
+    const helloWorldMessage: RawMessage = { text: "Hello World" };
+    sign.setText(helloWorldMessage);
 
-        // RawText
-        const helloWorldText: RawText = { rawtext: [{ text: 'Hello World' }] };
-        sign.setText(helloWorldText);
+    // RawText
+    const helloWorldText: RawText = { rawtext: [{ text: "Hello World" }] };
+    sign.setText(helloWorldText);
 
-        // Regular string
-        sign.setText('Hello World');
-    } else {
-        console.warn('Could not find a sign component on the block.');
-    }
+    // Regular string
+    sign.setText("Hello World");
+  } else {
+    console.warn("Could not find a sign component on the block.");
+  }
 }
 ```
-##### ***createTranslatedSign.ts***
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/updateSignText.ts) code sandbox.
+
+##### ***addTranslatedSign.ts***
+
 ```typescript
-// A function the creates a sign at the specified location with the specified text
-import { DimensionLocation, BlockPermutation, BlockComponentTypes } from '@minecraft/server';
-import { MinecraftBlockTypes } from '@minecraft/vanilla-data';
+import { world, BlockPermutation, BlockSignComponent, BlockComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
 
-function createSignAt(location: DimensionLocation) {
-    const signBlock = location.dimension.getBlock(location);
+function addTranslatedSign(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    if (!signBlock) {
-        console.warn('Could not find a block at specified location.');
-        return;
-    }
+  const dim = players[0].dimension;
 
-    const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
-    signBlock.setPermutation(signPerm); // Update block to be a sign
+  const signBlock = dim.getBlock(targetLocation);
 
-    // Update the sign block's text
-    // with "Steve's Head"
-    const signComponent = signBlock.getComponent(BlockComponentTypes.Sign);
-    if (signComponent) {
-        signComponent.setText({ translate: 'item.skull.player.name', with: ['Steve'] });
-    }
+  if (!signBlock) {
+    log("Could not find a block at specified location.");
+    return -1;
+  }
+  const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
+
+  signBlock.setPermutation(signPerm);
+
+  const signComponent = signBlock.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
+
+  signComponent?.setText({ translate: "item.skull.player.name", with: [players[0].name] });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/addTranslatedSign.ts) code sandbox.

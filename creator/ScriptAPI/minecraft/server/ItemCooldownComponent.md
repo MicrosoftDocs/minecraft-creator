@@ -22,8 +22,8 @@ Represents the cooldown category that this item is associated with.
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **cooldownTicks**
 `read-only cooldownTicks: number;`
@@ -32,8 +32,8 @@ Amount of time, in ticks, it will take this item to cooldown.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [getCooldownTicksRemaining](#getcooldownticksremaining)
@@ -49,12 +49,10 @@ getCooldownTicksRemaining(player: Player): number
 - **player**: [*Player*](Player.md)
 
 **Returns** *number*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **isCooldownCategory**
 `
@@ -69,12 +67,10 @@ Will return true if the item is the cooldown category passed in and false otherw
   The cooldown category that might be associated with this item.
 
 **Returns** *boolean* - True if the item is the given cooldown category.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **startCooldown**
 `
@@ -85,12 +81,10 @@ Starts a new cooldown period for this item.
 
 #### **Parameters**
 - **player**: [*Player*](Player.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ## Constants
 

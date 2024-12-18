@@ -15,6 +15,7 @@ geometry:{
     version "format_version"
     bool "debug" : opt
     array "minecraft:geometry"[1,*]
+
     {
         object "<any array element>"
         {
@@ -29,7 +30,147 @@ geometry:{
                 }
                 int "texture_width" : opt // Assumed width in texels of the texture that will be bound to this geometry.
                 int "texture_height" : opt // Assumed height in texels of the texture that will be bound to this geometry.
-            }
+            },
+            object "item_display_transforms" : opt // Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: ["gui", "firstperson_righthand", "firstperson_lefthand", "thirdperson_righthand", "thirdperson_lefthand", "ground", "fixed", "head"]. 
+            { 
+              object "gui" : opt { 
+                array "translation"[3] : opt {     
+                  float "<any array element>" // Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+                array "rotation"[3] : opt {
+                  float "<any array element>" // Range (in degrees): (-360, -360, -360) to (360, 360, 360). 
+                } 
+                array "scale"[3] : opt {
+                  float "<any array element>" // Range: (0, 0, 0) to (4, 4, 4). 
+                } 
+                array "rotation_pivot"[3] : opt {     
+                  float "<any array element>" // The pivot point for the applied rotation. Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+                array "scale_pivot"[3] : opt {
+                  float "<any array element>" // The pivot point for the applied scale. Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+                bool "fit_to_frame" : opt // If true, the geometry will be automatically scaled and translated to fit within the GUI frame. Default is 'true'. 
+              }  
+              object "firstperson_righthand" : opt { 
+                array "translation"[3] : opt {     
+                  float "<any array element>" // Range: (-80, -80, -80) to (80, 80, 80). 
+                  } 
+                array "rotation"[3] : opt {     
+                  float "<any array element>" // Range (in degrees): (-360, -360, -360) to (360, 360, 360). 
+                  } 
+                array "scale"[3] : opt {     
+                  float "<any array element>" // Range: (0, 0, 0) to (4, 4, 4).
+                  } 
+                array "rotation_pivot"[3] : opt {     
+                  float "<any array element>" // The pivot point for the applied rotation. Range: (-80, -80, -80) to (80, 80, 80). 
+                  } 
+                array "scale_pivot"[3] : opt {     
+                  float "<any array element>" // The pivot point for the applied scale. Range: (-80, -80, -80) to (80, 80, 80). 
+                  } 
+              } 
+              object "firstperson_lefthand" : opt { 
+                  array "translation"[3] : opt {     
+                    float "<any array element>" // Range: (-80, -80, -80) to (80, 80, 80). 
+                  },
+                  array "rotation"[3] : opt {     
+                    float "<any array element>" // Range (in degrees): (-360, -360, -360) to (360, 360, 360). 
+                  },
+                  array "scale"[3] : opt {     
+                    float "<any array element>" // Range: (0, 0, 0) to (4, 4, 4). 
+                  } 
+                  array "rotation_pivot"[3] : opt {     
+                    float "<any array element>" // The pivot point for the applied rotation. Range: (-80, -80, -80) to (80, 80, 80). 
+                  } 
+                  array "scale_pivot"[3] : opt {     
+                    float "<any array element>" // The pivot point for the applied scale. Range: (-80, -80, -80) to (80, 80, 80). 
+                  } 
+              }
+              object "thirdperson_righthand" : opt { 
+                array "translation"[3] : opt {     
+                  float "<any array element>" // Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+                array "rotation"[3] : opt {     
+                  float "<any array element>" // Range (in degrees): (-360, -360, -360) to (360, 360, 360). 
+                } 
+                array "scale"[3] : opt {     
+                  float "<any array element>" // Range: (0, 0, 0) to (4, 4, 4). 
+                } 
+                array "rotation_pivot"[3] : opt {     
+                  float "<any array element>" // The pivot point for the applied rotation. Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+                array "scale_pivot"[3] : opt {     
+                 float "<any array element>" // The pivot point for the applied scale. Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+              } 
+              object "thirdperson_lefthand" : opt { 
+                array "translation"[3] : opt {     
+                 float "<any array element>" // Range: (-80, -80, -80) to (80, 80, 80). 
+              } 
+                array "rotation"[3] : opt {     
+                  float "<any array element>" // Range (in degrees): (-360, -360, -360) to (360, 360, 360). 
+              } 
+                array "scale"[3] : opt {     
+                  float "<any array element>" // Range: (0, 0, 0) to (4, 4, 4). 
+                } 
+                array "rotation_pivot"[3] : opt {     
+                  float "<any array element>" // The pivot point for the applied rotation. Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+                array "scale_pivot"[3] : opt {     
+                  float "<any array element>" // The pivot point for the applied scale. Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+              } 
+              object "ground" : opt { 
+                array "translation"[3] : opt {     
+                  float "<any array element>" // Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+                array "rotation"[3] : opt {     
+                  float "<any array element>" // Range (in degrees): (-360, -360, -360) to (360, 360, 360). 
+                } 
+                array "scale"[3] : opt {     
+                  float "<any array element>" // Range: (0, 0, 0) to (4, 4, 4). 
+                } 
+                array "rotation_pivot"[3] : opt {     
+                  float "<any array element>" // The pivot point for the applied rotation. Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+                array "scale_pivot"[3] : opt {     
+                  float "<any array element>" // The pivot point for the applied scale. Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+              } 
+              object "fixed" : opt { 
+                array "translation"[3] : opt {     
+                  float "<any array element>" // Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+                array "rotation"[3] : opt {     
+                  float "<any array element>" // Range (in degrees): (-360, -360, -360) to (360, 360, 360). 
+                } 
+                array "scale"[3] : opt {     
+                    float "<any array element>" // Range: (0, 0, 0) to (4, 4, 4). 
+                } 
+                  array "rotation_pivot"[3] : opt {     
+                    float "<any array element>" // The pivot point for the applied rotation. Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+                  array "scale_pivot"[3] : opt {     
+                     float "<any array element>" // The pivot point for the applied scale. Range: (-80, -80, -80) to (80, 80, 80). 
+                } 
+              } 
+                object "head" : opt { 
+                  array "translation"[3] : opt {     
+                    float "<any array element>" // Range: (-80, -80, -80) to (80, 80, 80). 
+                  } 
+                  array "rotation"[3] : opt {     
+                    float "<any array element>" // Range (in degrees): (-360, -360, -360) to (360, 360, 360). 
+                  } 
+                  array "scale"[3] : opt {     
+                    float "<any array element>" // Range: (0, 0, 0) to (4, 4, 4). 
+                  } 
+                  array "rotation_pivot"[3] : opt {     
+                    float "<any array element>" // The pivot point for the applied rotation. Range: (-80, -80, -80) to (80, 80, 80). 
+                  } 
+                  array "scale_pivot"[3] : opt {     
+                     float "<any array element>" // The pivot point for the applied scale. Range: (-80, -80, -80) to (80, 80, 80). 
+                  } 
+                } 
+            } 
             string "cape" : opt
             array "bones" : opt // Bones define the 'skeleton' of the mob: the parts that can be animated, and to which geometry and other bones are attached.
             {
@@ -242,6 +383,5 @@ geometry:{
         }
     }
 }
-
 ----------
 ```

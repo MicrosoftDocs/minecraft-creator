@@ -17,53 +17,47 @@ Tools within this container.
 
 Type: *IModalTool[]*
 
-### **selectedOptionId**
-`read-only selectedOptionId: string;`
-
-The id of the selected tool in container.
-
-Type: *string*
-
 ## Methods
 - [addTool](#addtool)
-- [dispose](#dispose)
-- [hide](#hide)
+- [focusToolInputContext](#focustoolinputcontext)
+- [getSelectedToolId](#getselectedtoolid)
 - [removeTool](#removetool)
-- [setSelectedOptionId](#setselectedoptionid)
-- [show](#show)
+- [setSelectedToolId](#setselectedtoolid)
 
 ### **addTool**
 `
-addTool(params: ModalToolCreationParameters, action: RegisteredAction<NoArgsAction>): IModalTool
+addTool(id: string, params: ModalToolCreationParameters): IModalTool
 `
 
 Create a new tool in the modal tool container represented via button on the tool rail.
 
 #### **Parameters**
+- **id**: *string*
+  
+  Unique identifier for the tool
 - **params**: *ModalToolCreationParameters*
   
   Construction parameters for the new tool
-- **action**: *RegisteredAction<NoArgsAction>*
 
 **Returns** *IModalTool*
 
-### **dispose**
+### **focusToolInputContext**
 `
-dispose(): void
+focusToolInputContext(): void
 `
 
-Destroy the menu and its items.
+Activates input bindings for the selected tool by enabling viewport focus
 
 **Returns** *void*
 
-### **hide**
+### **getSelectedToolId**
 `
-hide(): void
+getSelectedToolId(): string | undefined
 `
 
-Hide the tool container and its items.
+Returns identifier of the selected tool.
 
-**Returns** *void*
+**Returns** *string | undefined*
 
 ### **removeTool**
 `
@@ -79,24 +73,16 @@ Remove an existing tool by id from the tool container
 
 **Returns** *void*
 
-### **setSelectedOptionId**
+### **setSelectedToolId**
 `
-setSelectedOptionId(value: string | undefined, update: boolean): void
+setSelectedToolId(id: string | undefined): void
 `
 
-Sets the selected tool.
+Selects a tool in the container.
 
 #### **Parameters**
-- **value**: *string | undefined*
-- **update**: *boolean*
-
-**Returns** *void*
-
-### **show**
-`
-show(): void
-`
-
-Show the tool container and its items.
+- **id**: *string | undefined*
+  
+  Identifier of the tool
 
 **Returns** *void*

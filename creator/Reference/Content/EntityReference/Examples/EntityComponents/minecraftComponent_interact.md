@@ -14,24 +14,24 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|add_items| | JSON Object|  Loot table with items to add to the player's inventory upon successful interaction.|
-|cooldown| 0.0| Decimal|  Time in seconds before this entity can be interacted with again. |
-|cooldown_after_being_attacked| 0.0| Decimal|  Time in seconds before this entity can be interacted with after being attacked. |
-|drop_item_slot| --| String| The slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers; Armor slots are denoted by `slot.armor.head`, `slot.armor.chest`, `slot.armor.legs`, and `slot.armor.feet`. |
-|equip_item_slot| --| String| The slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers; Armor slots are denoted by `slot.armor.head`, `slot.armor.chest`, `slot.armor.legs`, and `slot.armor.feet`. |
-|health_amount| 0| Integer | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. |
-|hurt_item| 0| Integer|  The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |
-|interact_text|*not set* | String|  Text to show while playing with touch-screen controls when the player is able to interact in this way with this entity. |
-|on_interact|*not set* | JSON object | Events to initiate when the interaction occurs. |
-|particle_on_start|*not set* | JSON Object|  Particle effect that will be initiated at the start of the interaction.|
-|play_sounds|*not set* | String| One or more sound identifiers to play when the interaction occurs. |
-|repair_entity_item|--| JSON object| Allows the repair of a given entity's item.|
-|spawn_entities|*not set* | String| Entity to spawn when the interaction occurs. |
-|spawn_items|*not set* |JSON Object|  Loot table with items to drop on the ground upon successful interaction.|
-|swing| false| Boolean| If true, the player will do the 'swing' animation when interacting with this entity. |
-|transform_to_item|*not set* | String|  The item used will transform to this item upon successful interaction. Format: `itemName:auxValue` |
-|use_item| false| Boolean| If true, the interaction will use an item. |
-| vibration| entity_interact |String| Vibration to emit when the interaction occurs. Admitted values are entity_interact (used by default), shear, and none (no vibration emitted). |
+| add_items| | JSON Object|  Loot table with items to add to the player's inventory upon successful interaction.|
+| cooldown| 0.0| Decimal|  Time in seconds before this entity can be interacted with again. |
+| cooldown_after_being_attacked| 0.0| Decimal|  Time in seconds before this entity can be interacted with after being attacked. |
+| drop_item_slot| --| String| The slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers; Armor slots are denoted by `slot.armor.head`, `slot.armor.chest`, `slot.armor.legs`, `slot.armor.feet`, and `slot.armor.body`. |
+| equip_item_slot| --| String| The slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers; Armor slots are denoted by `slot.armor.head`, `slot.armor.chest`, `slot.armor.legs`, `slot.armor.feet`, and `slot.armor.body`. |
+| health_amount| 0| Integer | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. |
+| hurt_item| 0| Integer|  The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |
+| interact_text|*not set* | String|  Text to show while playing with touch-screen controls when the player is able to interact in this way with this entity. |
+| on_interact|*not set* | JSON object | Events to initiate when the interaction occurs. |
+| particle_on_start|*not set* | JSON Object|  Particle effect that will be initiated at the start of the interaction.|
+| play_sounds|*not set* | String| One or more sound identifiers to play when the interaction occurs. |
+| repair_entity_item|--| JSON object| Allows the repair of a given entity's item.|
+| spawn_entities|*not set* | String| Entity to spawn when the interaction occurs. |
+| spawn_items|*not set* |JSON Object|  Loot table with items to drop on the ground upon successful interaction.|
+| swing| false| Boolean| If true, the player will do the 'swing' animation when interacting with this entity. |
+| transform_to_item|*not set* | String|  The item used will transform to this item upon successful interaction. Format: `itemName:auxValue` |
+| use_item| false| Boolean| If true, the interaction will use an item. |
+| vibration| entity_interact |String| Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact. |
 
 ### add_items
 

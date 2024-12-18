@@ -83,7 +83,7 @@ Start by placing five command blocks all next to each other and all pointing in 
 
 Edit each block's settings and command input like this:
 
-1. Repeat, Unconditional, Always Active - Command Input: `/testforblock X Y Z wool 14`
+1. Repeat, Unconditional, Always Active - Command Input: `/testforblock X Y Z red_wool`
     >[!Important]
     > Be sure to replace `X Y Z` with the coordinates of where the wool will be placed in your own world.
 
@@ -96,7 +96,7 @@ Edit each block's settings and command input like this:
 
 ### What are the command blocks doing?
 
-1. A `/testforblock` command checks for the existence of red wool (indicated by the aux code `wool 14`) at the expected coordinates in the monument.
+1. A `/testforblock` command checks for the existence of red wool (indicated by the block state `red_wool`) at the expected coordinates in the monument.
 1. If the previous command successfully found the wool block, a `/scoreboard` command will check the score of the fake #red player. If the score is 0, that means the red wool hasn't been placed before.
 1. Because this is the first time the red wool is being placed, the player will receive one diamond for doing it.
 1. The score for "#red" will be set to 1, indicating that the red wool has been placed correctly.
@@ -104,12 +104,12 @@ Edit each block's settings and command input like this:
 
 ### Detecting green wool
 
-Next, set up five more command blocks just like the ones for red, but change every instance of the word "red" to "green" and make sure the X Y Z is the location where you want to detect green wool. The aux code for green wool is 13.
+Next, set up five more command blocks just like the ones for red, but change every instance of the word "red" to "green" and make sure the X Y Z is the location where you want to detect green wool. The block state for green wool is green_wool.
 
 Here are the command inputs:
 
 ```
-/testforblock X Y Z wool 13
+/testforblock X Y Z green_wool
 /scoreboard players test #green wool_placed 0 0
 /give @a diamond
 /scoreboard players set #green wool_placed 1
@@ -118,10 +118,10 @@ Here are the command inputs:
 
 ### Detecting blue wool
 
-Do the same thing again, but change the color to blue (aux code 11) and the X Y Z, etc.
+Do the same thing again, but change 'green_wool' to 'blue_wool' and the X Y Z coordinates.
 
 ```
-/testforblock X Y Z wool 11
+/testforblock X Y Z blue_wool
 /scoreboard players test #blue wool_placed 0 0
 /give @a diamond
 /scoreboard players set #blue wool_placed 1

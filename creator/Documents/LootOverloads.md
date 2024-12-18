@@ -1,5 +1,5 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Loot Overloads
 description: "An overview covering loot overloads"
@@ -10,12 +10,12 @@ ms.service: minecraft-bedrock-edition
 
 Now that you understand how loot tables work and how to customize them, it's time to learn about loot overloads. Loot overloads are commands that may be used to access items from loot tables in a variety of ways. The loot overloads include:
 
-- `/kill` simulates the loot drop of an entity if it were killed normally.
-- `/loot replace block` allows users to populate target containers with items from a specified loot source.
-- `/loot replace entity` allows user to populate target entities with items from a specified loot source.
-- `/loot spawn` drops the loot of any entity that has a defined loot table in the world.
+- `/kill` simulates the loot drop of an entity if it were killed normally
+- `/mine` simulates the loot drop of a block if it were mined normally
+- `/loot replace block` allows users to populate target containers with items from a specified loot source
+- `/loot replace entity` allows user to populate target entities with items from a specified loot source
+- `/loot spawn` drops the loot of any entity that has a defined loot table in the world
 
- 
 ### Requirements
 
 It's recommended that the following be completed before beginning this tutorial.
@@ -27,7 +27,7 @@ Let's take a look at the overloads in more detail, beginning with the `/kill` co
 
 ## Kill
 
-`/kill` is a command that simulates the loot drop of a selected entity as if it were killed normally. This differs from `/loot spawn` in that some loot tables specify a condition of "condition": "killed_by_player" for specific loot to be dropped.  
+`/kill` is a command that simulates the loot drop of a selected entity as if it were killed normally. This differs from `/loot spawn` in that some loot tables specify a condition of `"condition": "killed_by_player"` for specific loot to be dropped.  
 
 ### Syntax
 
@@ -41,15 +41,32 @@ Let's take a look at the overloads in more detail, beginning with the `/kill` co
 
 **Output** - Command returns an error message if no entity is found or if more than one entity is specified.
 
+## Mine
+
+`/mine` is a command that simulates the loot drop of a selected block in the world as if it were mined normally.
+
+### Syntax
+
+`mine <position: x y z> [tool|mainhand|offhand]` - Obtains item resource drops from the target block's loot table, taking into account the tool, or no tool if none is specified. Enchanted tools held in the mainhand when `mainhand` is specified will have their enchantment evaluated for dropping loot.
+
+
+**mine** - Keyword to identify overload.
+
+**position** - Position specifying the block in the world to mine for loot.
+
+**[tool|mainhand|offhand]** - (Optional) Tool with which to simulate mining a given block. Default is an empty hand.
+
+**Output** - If successful, the command returns a message saying how many items were dropped. The command returns an error message if the position is out of the world or if the position is not loaded.
+
 ## Loot replace block
 
 The `/loot replace block` overload allows users to directly target containers and populate slots with items from a specified loot source. This source could be a currently existing loot table in Minecraft, a custom loot table, or a loot table associated with an entity.
 
 ### Syntax
 
-`/loot replace block <position: x y z> slot.container <slotId: int> [<count: int>] <source: loot|kill> <source parameter> [<tool>|mainhand|offhand]`
+`/loot replace block <position: x y z> slot.container <slotId: int> [<count: int>] <source: loot|kill|mine> <source parameter> [<tool>|mainhand|offhand]`
 
-## Parameters
+## Loot Replace Block Parameters
 
 - **replace block** - Keyword to identify overload.
 
@@ -61,7 +78,7 @@ The `/loot replace block` overload allows users to directly target containers an
 
 - **count** - (Optional) Number of consecutive slots to be filled. If the count is 0, no items are dropped. If a count is not specified, as many slots as possible are filled.
 
-- **source** - `loot` (path to a loot table) or `kill` (loot that drops from a killed entity)
+- **source** - `loot` (path to a loot table), `kill` (loot that drops from a killed entity), or `mine` (loot that drops from a block when mined)
 
 ### Output
 
@@ -83,9 +100,9 @@ The `/loot replace entity` overload allows users to directly target entities and
 
 ### Syntax
 
-`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> [<count: int>] <source: loot|kill> <source parameter> [<tool>|mainhand|offhand]`
+`/loot replace entity <entity: target> <slotType: EntityEquipmentSlot> <slotId: int> [<count: int>] <source: loot|kill|mine> <source parameter> [<tool>|mainhand|offhand]`
 
-## Parameters
+## Loot Replace Entity Parameters
 
 - **replace entity** - Keyword to identify overload.
 
@@ -97,7 +114,7 @@ The `/loot replace entity` overload allows users to directly target entities and
 
 - **count** - (Optional) Number of consecutive slots to be filled. If the count is 0, no items are dropped. If a count is not specified, as many slots as possible are filled.
 
-- **source** - `loot` (path to a loot table) or `kill` (loot that drops from a killed entity)
+- **source** - `loot` (path to a loot table), `kill` (loot that drops from a killed entity), or `mine` (loot that drops from a block when mined)
 
 ### Output
 
@@ -144,13 +161,13 @@ The `/loot spawn` command allows creators to drop the loot of any entity that ha
 
 ## Source Parameter Variations
 
-Certain loot overloads, such as `loot replace block` and `loot replace entity` have the option to use the `loot` and `kill` source parameter variations. The following details how these variations operate in the loot overloads.
+Certain loot overloads, such as `loot replace block` and `loot replace entity` have the option to use the `loot`, `kill`, and `mine` source parameter variations. The following details how these variations operate in the loot overloads.
 
 ### loot
 
 `loot` is used to specify that the source is a defined loot table (or even a custom loot table) that can be found at a given path. The path to the loot table must be surrounded by quotes.
 
-`/loot replace block <position: x y z> slot.container <slotId: int> [<count: int>] <source: loot|kill> <source parameter> [<tool>|mainhand|offhand]`
+`/loot replace block <position: x y z> slot.container <slotId: int> [<count: int>] loot "loot_table" [<tool>|mainhand|offhand]`
 
 The `loot_table` parameter is mandatory and it must be the path of the loot table to use, surrounded by quotation marks.
 
@@ -179,9 +196,21 @@ The target entity must be present within the world or the command will return an
 
 `/loot replace block <position: x y z> slot.container <slotId: int> [<count: int>] kill <entity: target> [<tool>|mainhand|offhand]`
 
-Examples:
+Example:
 
 - `/loot replace block 0 0 0 slot.container 0 1 kill @e[type=blaze]`
 
 This will fill the target container slots 0 through 1 with items that would be dropped if the blaze was killed by a player.
 The count parameter works the same for the kill source variation as it does for the loot source variation.
+
+### mine
+
+Using the `mine` variation specifies that the user wants to simulate mining a specific block in the world and use it's loot table as the source for the loot to be dropped.
+
+The target block must be present and loaded within the world or the command will return an error saying that blocks outside the world cannot be accessed.
+
+`/loot replace block <position: x y z> slot.container <slotId: int> [<count: int>] mine <position: x y z> [<tool>|mainhand|offhand]`
+
+Example:
+
+- `/loot replace block 0 0 0 slot.container 0 1 mine 0 0 0`

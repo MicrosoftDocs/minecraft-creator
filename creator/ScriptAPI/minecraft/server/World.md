@@ -26,7 +26,39 @@ Contains a set of events that are applicable to the entirety of the world. Event
 
 Type: [*WorldBeforeEvents*](WorldBeforeEvents.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
+#### Examples
+
+##### ***customCommand.ts***
+
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function customCommand(targetLocation: DimensionLocation) {
+  const chatCallback = world.beforeEvents.chatSend.subscribe((eventData) => {
+    if (eventData.message.includes("cancel")) {
+      // Cancel event if the message contains "cancel"
+      eventData.cancel = true;
+    } else {
+      const args = eventData.message.split(" ");
+
+      if (args.length > 0) {
+        switch (args[0].toLowerCase()) {
+          case "echo":
+            // Send a modified version of chat message
+            world.sendMessage(`Echo '${eventData.message.substring(4).trim()}'`);
+            break;
+          case "help":
+            world.sendMessage(`Available commands: echo <message>`);
+            break;
+        }
+      }
+    }
+  });
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/customCommand.ts) code sandbox.
+
 ### **gameRules**
 `read-only gameRules: GameRules;`
 
@@ -34,9 +66,10 @@ The game rules that apply to the world.
 
 Type: [*GameRules*](GameRules.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
+### **isHardcore**
+`read-only isHardcore: boolean;`
+
+Type: *boolean*
 
 ### **scoreboard**
 `read-only scoreboard: Scoreboard;`
@@ -75,6 +108,9 @@ Type: [*StructureManager*](StructureManager.md)
 - [sendMessage](#sendmessage)
 - [setAbsoluteTime](#setabsolutetime)
 - [setDefaultSpawnLocation](#setdefaultspawnlocation)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setDynamicProperties](#setdynamicproperties)
+::: moniker-end
 - [setDynamicProperty](#setdynamicproperty)
 - [setTimeOfDay](#settimeofday)
 - [stopMusic](#stopmusic)
@@ -97,9 +133,9 @@ A method that is internal-only, used for broadcasting specific messages between 
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 ::: moniker-end
 
 ### **clearDynamicProperties**
@@ -126,9 +162,9 @@ getAllPlayers(): Player[]
 Returns an array of all active players within the world.
 
 **Returns** [*Player*](Player.md)[]
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getDay**
 `
@@ -161,11 +197,10 @@ Returns a dimension object.
   The name of the dimension. For example, "overworld", "nether" or "the_end".
 
 **Returns** [*Dimension*](Dimension.md) - The requested dimension
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the given dimension name is invalid
+  
+Notes:
+- This function can throw errors.
+  - Throws if the given dimension name is invalid
 
 ### **getDynamicProperty**
 `
@@ -181,79 +216,81 @@ Returns a property value.
 
 **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
 
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the given dynamic property identifier is not defined.
-
 #### Examples
+
 ##### ***incrementDynamicProperty.ts***
+
 ```typescript
-import * as mc from '@minecraft/server';
+import { world, DimensionLocation } from "@minecraft/server";
 
-function incrementProperty(propertyName: string): boolean {
-    let number = mc.world.getDynamicProperty(propertyName);
+function incrementDynamicProperty(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  let number = world.getDynamicProperty("samplelibrary:number");
 
-    console.warn('Current value is: ' + number);
+  log("Current value is: " + number);
 
-    if (number === undefined) {
-        number = 0;
-    }
+  if (number === undefined) {
+    number = 0;
+  }
 
-    if (typeof number !== 'number') {
-        console.warn('Number is of an unexpected type.');
-        return false;
-    }
+  if (typeof number !== "number") {
+    log("Number is of an unexpected type.");
+    return -1;
+  }
 
-    mc.world.setDynamicProperty(propertyName, number + 1);
-    return true;
+  world.setDynamicProperty("samplelibrary:number", number + 1);
 }
-
-incrementProperty('samplelibrary:number');
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/incrementDynamicProperty.ts) code sandbox.
+
 ##### ***incrementDynamicPropertyInJsonBlob.ts***
+
 ```typescript
-import * as mc from '@minecraft/server';
+import { world, DimensionLocation } from "@minecraft/server";
 
-function updateWorldProperty(propertyName: string): boolean {
-    let paintStr = mc.world.getDynamicProperty(propertyName);
-    let paint: { color: string; intensity: number } | undefined = undefined;
+function incrementDynamicPropertyInJsonBlob(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  let paintStr = world.getDynamicProperty("samplelibrary:longerjson");
+  let paint: { color: string; intensity: number } | undefined = undefined;
 
-    console.log('Current value is: ' + paintStr);
+  log("Current value is: " + paintStr);
 
-    if (paintStr === undefined) {
-        paint = {
-            color: 'purple',
-            intensity: 0,
-        };
-    } else {
-        if (typeof paintStr !== 'string') {
-            console.warn('Paint is of an unexpected type.');
-            return false;
-        }
-
-        try {
-            paint = JSON.parse(paintStr);
-        } catch (e) {
-            console.warn('Error parsing serialized struct.');
-            return false;
-        }
+  if (paintStr === undefined) {
+    paint = {
+      color: "purple",
+      intensity: 0,
+    };
+  } else {
+    if (typeof paintStr !== "string") {
+      log("Paint is of an unexpected type.");
+      return -1;
     }
 
-    if (!paint) {
-        console.warn('Error parsing serialized struct.');
-        return false;
+    try {
+      paint = JSON.parse(paintStr);
+    } catch (e) {
+      log("Error parsing serialized struct.");
+      return -1;
     }
+  }
 
-    paint.intensity++;
-    paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
-    mc.world.setDynamicProperty(propertyName, paintStr);
+  if (!paint) {
+    log("Error parsing serialized struct.");
+    return -1;
+  }
 
-    return true;
+  paint.intensity++;
+  paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
+  world.setDynamicProperty("samplelibrary:longerjson", paintStr);
 }
-
-updateWorldProperty('samplelibrary:longerjson');
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/incrementDynamicPropertyInJsonBlob.ts) code sandbox.
 
 ### **getDynamicPropertyIds**
 `
@@ -286,11 +323,10 @@ Returns an entity based on the provided id.
   The id of the entity.
 
 **Returns** [*Entity*](Entity.md) | *undefined* - The requested entity object.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the given entity id is invalid.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the given entity id is invalid.
 
 ### **getMoonPhase**
 `
@@ -314,11 +350,10 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
   Additional options that can be used to filter the set of players returned.
 
 **Returns** [*Player*](Player.md)[] - A player array.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the provided EntityQueryOptions are invalid.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the provided EntityQueryOptions are invalid.
 
 ### **getTimeOfDay**
 `
@@ -339,47 +374,44 @@ Plays a particular music track for all players.
 #### **Parameters**
 - **trackId**: *string*
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
+
 ##### ***playMusicAndSound.ts***
+
 ```typescript
-import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, Vector3 } from '@minecraft/server';
-import { MinecraftDimensionTypes } from '@minecraft/vanilla-data';
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, DimensionLocation } from "@minecraft/server";
 
-const players = world.getPlayers();
-const targetLocation: Vector3 = {
-    x: 0,
-    y: 0,
-    z: 0,
-};
+function playMusicAndSound(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-const musicOptions: MusicOptions = {
+  const musicOptions: MusicOptions = {
     fade: 0.5,
     loop: true,
     volume: 1.0,
-};
-world.playMusic('music.menu', musicOptions);
+  };
+  world.playMusic("music.menu", musicOptions);
 
-const worldSoundOptions: WorldSoundOptions = {
+  const worldSoundOptions: WorldSoundOptions = {
     pitch: 0.5,
     volume: 4.0,
-};
-const overworld = world.getDimension(MinecraftDimensionTypes.Overworld);
-overworld.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
+  };
+  world.playSound("ambient.weather.thunder", targetLocation, worldSoundOptions);
 
-const playerSoundOptions: PlayerSoundOptions = {
+  const playerSoundOptions: PlayerSoundOptions = {
     pitch: 1.0,
     volume: 1.0,
-};
+  };
 
-players[0].playSound('bucket.fill_water', playerSoundOptions);
+  players[0].playSound("bucket.fill_water", playerSoundOptions);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/playMusicAndSound.ts) code sandbox.
 
 ### **playSound**
 `
@@ -392,55 +424,48 @@ Plays a sound for all players. DEPRECATED: Use Dimension.playSound.
 - **soundId**: *string*
 - **location**: [*Vector3*](Vector3.md)
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> An error will be thrown if volume is less than 0.0.
->
-> An error will be thrown if fade is less than 0.0.
->
-> An error will be thrown if pitch is less than 0.01.
->
-> An error will be thrown if volume is less than 0.0.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - An error will be thrown if volume is less than 0.0.
+  - An error will be thrown if fade is less than 0.0.
+  - An error will be thrown if pitch is less than 0.01.
+  - An error will be thrown if volume is less than 0.0.
 
 #### Examples
+
 ##### ***playMusicAndSound.ts***
+
 ```typescript
-import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, Vector3 } from '@minecraft/server';
-import { MinecraftDimensionTypes } from '@minecraft/vanilla-data';
+import { world, MusicOptions, WorldSoundOptions, PlayerSoundOptions, DimensionLocation } from "@minecraft/server";
 
-const players = world.getPlayers();
-const targetLocation: Vector3 = {
-    x: 0,
-    y: 0,
-    z: 0,
-};
+function playMusicAndSound(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-const musicOptions: MusicOptions = {
+  const musicOptions: MusicOptions = {
     fade: 0.5,
     loop: true,
     volume: 1.0,
-};
-world.playMusic('music.menu', musicOptions);
+  };
+  world.playMusic("music.menu", musicOptions);
 
-const worldSoundOptions: WorldSoundOptions = {
+  const worldSoundOptions: WorldSoundOptions = {
     pitch: 0.5,
     volume: 4.0,
-};
-const overworld = world.getDimension(MinecraftDimensionTypes.Overworld);
-overworld.playSound('ambient.weather.thunder', targetLocation, worldSoundOptions);
+  };
+  world.playSound("ambient.weather.thunder", targetLocation, worldSoundOptions);
 
-const playerSoundOptions: PlayerSoundOptions = {
+  const playerSoundOptions: PlayerSoundOptions = {
     pitch: 1.0,
     volume: 1.0,
-};
+  };
 
-players[0].playSound('bucket.fill_water', playerSoundOptions);
+  players[0].playSound("bucket.fill_water", playerSoundOptions);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/playMusicAndSound.ts) code sandbox.
 
 ### **queueMusic**
 `
@@ -456,18 +481,13 @@ Queues an additional music track for players. If a track is not playing, a music
 - **musicOptions**?: [*MusicOptions*](MusicOptions.md) = `null`
   
   Additional options for the music track.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> An error will be thrown if volume is less than 0.0.
->
-> An error will be thrown if fade is less than 0.0.
->
-> 
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - An error will be thrown if volume is less than 0.0.
+  - An error will be thrown if fade is less than 0.0.
+  - 
 
 ### **sendMessage**
 `
@@ -480,47 +500,10 @@ Sends a message to all players.
 - **message**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
   
   The message to be displayed.
-
-> [!WARNING]
-> This function can throw errors.
->
-> This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
-
-#### Examples
-##### ***nestedTranslation.ts***
-```typescript
-import { world } from '@minecraft/server';
-
-// Displays "Apple or Coal"
-const rawMessage = {
-    translate: 'accessibility.list.or.two',
-    with: { rawtext: [{ translate: 'item.apple.name' }, { translate: 'item.coal.name' }] },
-};
-world.sendMessage(rawMessage);
-```
-##### ***scoreWildcard.ts***
-```typescript
-import { world } from '@minecraft/server';
-
-// Displays the player's score for objective "obj". Each player will see their own score.
-const rawMessage = { score: { name: '*', objective: 'obj' } };
-world.sendMessage(rawMessage);
-```
-##### ***simpleString.ts***
-```typescript
-import { world } from '@minecraft/server';
-
-// Displays "Hello, world!"
-world.sendMessage('Hello, world!');
-```
-##### ***translation.ts***
-```typescript
-import { world } from '@minecraft/server';
-
-// Displays "First or Second"
-const rawMessage = { translate: 'accessibility.list.or.two', with: ['First', 'Second'] };
-world.sendMessage(rawMessage);
-```
+  
+Notes:
+- This function can throw errors.
+  - This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
 ### **setAbsoluteTime**
 `
@@ -533,9 +516,9 @@ Sets the world time.
 - **absoluteTime**: *number*
   
   The world time, in ticks.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setDefaultSpawnLocation**
 `
@@ -548,14 +531,31 @@ Sets a default spawn location for all players.
 - **spawnLocation**: [*Vector3*](Vector3.md)
   
   Location of the spawn point. Note that this is assumed to be within the overworld dimension.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+::: moniker range="=minecraft-bedrock-experimental"
+### **setDynamicProperties**
+`
+setDynamicProperties(values: Record<string, boolean | number | string | Vector3>): void
+`
 
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+Sets multiple dynamic properties with specific values.
+
+#### **Parameters**
+- **values**: Record<*string*, *boolean* | *number* | *string* | [*Vector3*](Vector3.md)>
+  
+  A Record of key value pairs of the dynamic properties to set.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+::: moniker-end
 
 ### **setDynamicProperty**
 `
@@ -571,80 +571,86 @@ Sets a specified property to a value.
 - **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
   Data value of the property to set.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the given dynamic property identifier is not defined.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the given dynamic property identifier is not defined.
 
 #### Examples
+
 ##### ***incrementDynamicProperty.ts***
+
 ```typescript
-import * as mc from '@minecraft/server';
+import { world, DimensionLocation } from "@minecraft/server";
 
-function incrementProperty(propertyName: string): boolean {
-    let number = mc.world.getDynamicProperty(propertyName);
+function incrementDynamicProperty(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  let number = world.getDynamicProperty("samplelibrary:number");
 
-    console.warn('Current value is: ' + number);
+  log("Current value is: " + number);
 
-    if (number === undefined) {
-        number = 0;
-    }
+  if (number === undefined) {
+    number = 0;
+  }
 
-    if (typeof number !== 'number') {
-        console.warn('Number is of an unexpected type.');
-        return false;
-    }
+  if (typeof number !== "number") {
+    log("Number is of an unexpected type.");
+    return -1;
+  }
 
-    mc.world.setDynamicProperty(propertyName, number + 1);
-    return true;
+  world.setDynamicProperty("samplelibrary:number", number + 1);
 }
-
-incrementProperty('samplelibrary:number');
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/incrementDynamicProperty.ts) code sandbox.
+
 ##### ***incrementDynamicPropertyInJsonBlob.ts***
+
 ```typescript
-import * as mc from '@minecraft/server';
+import { world, DimensionLocation } from "@minecraft/server";
 
-function updateWorldProperty(propertyName: string): boolean {
-    let paintStr = mc.world.getDynamicProperty(propertyName);
-    let paint: { color: string; intensity: number } | undefined = undefined;
+function incrementDynamicPropertyInJsonBlob(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  let paintStr = world.getDynamicProperty("samplelibrary:longerjson");
+  let paint: { color: string; intensity: number } | undefined = undefined;
 
-    console.log('Current value is: ' + paintStr);
+  log("Current value is: " + paintStr);
 
-    if (paintStr === undefined) {
-        paint = {
-            color: 'purple',
-            intensity: 0,
-        };
-    } else {
-        if (typeof paintStr !== 'string') {
-            console.warn('Paint is of an unexpected type.');
-            return false;
-        }
-
-        try {
-            paint = JSON.parse(paintStr);
-        } catch (e) {
-            console.warn('Error parsing serialized struct.');
-            return false;
-        }
+  if (paintStr === undefined) {
+    paint = {
+      color: "purple",
+      intensity: 0,
+    };
+  } else {
+    if (typeof paintStr !== "string") {
+      log("Paint is of an unexpected type.");
+      return -1;
     }
 
-    if (!paint) {
-        console.warn('Error parsing serialized struct.');
-        return false;
+    try {
+      paint = JSON.parse(paintStr);
+    } catch (e) {
+      log("Error parsing serialized struct.");
+      return -1;
     }
+  }
 
-    paint.intensity++;
-    paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
-    mc.world.setDynamicProperty(propertyName, paintStr);
+  if (!paint) {
+    log("Error parsing serialized struct.");
+    return -1;
+  }
 
-    return true;
+  paint.intensity++;
+  paintStr = JSON.stringify(paint); // be very careful to ensure your serialized JSON str cannot exceed limits
+  world.setDynamicProperty("samplelibrary:longerjson", paintStr);
 }
-
-updateWorldProperty('samplelibrary:longerjson');
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/incrementDynamicPropertyInJsonBlob.ts) code sandbox.
 
 ### **setTimeOfDay**
 `
@@ -657,14 +663,11 @@ Sets the time of day.
 - **timeOfDay**: *number* | [*TimeOfDay*](TimeOfDay.md)
   
   The time of day, in ticks, between 0 and 24000.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the provided time of day is not within the valid range.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the provided time of day is not within the valid range.
 
 ### **stopMusic**
 `
@@ -672,6 +675,6 @@ stopMusic(): void
 `
 
 Stops any music tracks from playing.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

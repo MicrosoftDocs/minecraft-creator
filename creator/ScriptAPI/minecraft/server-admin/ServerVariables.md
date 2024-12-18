@@ -11,7 +11,9 @@ description: Contents of the @minecraft/server-admin.ServerVariables class.
 A collection of server variables defined in dedicated server configuration.
 
 #### Examples
+
 ##### ***getPlayerProfile.ts***
+
 ```typescript
 import { variables, secrets } from "@minecraft/server-admin";
 import { http, HttpRequest, HttpRequestMethod, HttpHeader, HttpResponse } from "@minecraft/server-net";
@@ -37,6 +39,8 @@ function getPlayerProfile(playerId: string): Promise<HttpResponse> {
     return http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/getPlayerProfile.ts) code sandbox.
 
 ## Properties
 
@@ -61,12 +65,14 @@ Returns the value of variable that has been configured in a dedicated server con
 - **name**: *string*
 
 **Returns** *any* | *undefined*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
+
 ##### ***getPlayerProfile.ts***
+
 ```typescript
 import { variables, secrets } from "@minecraft/server-admin";
 import { http, HttpRequest, HttpRequestMethod, HttpHeader, HttpResponse } from "@minecraft/server-net";
@@ -92,3 +98,5 @@ function getPlayerProfile(playerId: string): Promise<HttpResponse> {
     return http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/getPlayerProfile.ts) code sandbox.

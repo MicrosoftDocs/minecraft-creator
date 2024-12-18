@@ -20,32 +20,82 @@ Type: [*BrushShape*](BrushShape.md)
 
 Type: [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
 
-### **brushShapeNames**
-`read-only brushShapeNames: string[];`
+### **brushShapeList**
+`read-only brushShapeList: BrushShape[];`
 
-Type: *string*[]
+Type: [*BrushShape*](BrushShape.md)[]
 
 ## Methods
-- [activateBrushShape](#activatebrushshape)
+- [activateBrushTool](#activatebrushtool)
+- [beginPainting](#beginpainting)
+- [deactivateBrushTool](#deactivatebrushtool)
+- [endPainting](#endpainting)
+- [getBrushShapeOffset](#getbrushshapeoffset)
 - [getSettingsUIElements](#getsettingsuielements)
 - [registerBrushShape](#registerbrushshape)
+- [setBrushMask](#setbrushmask)
+- [setBrushShape](#setbrushshape)
+- [setBrushShapeOffset](#setbrushshapeoffset)
+- [setBrushShapeVisible](#setbrushshapevisible)
+- [setFlattenHeight](#setflattenheight)
+- [setFlattenRadius](#setflattenradius)
+- [setTerrainStrength](#setterrainstrength)
+- [singlePaint](#singlepaint)
+- [switchBrushPaintMode](#switchbrushpaintmode)
+- [switchBrushShape](#switchbrushshape)
 - [uiSettingValueChanged](#uisettingvaluechanged)
 
-### **activateBrushShape**
+### **activateBrushTool**
 `
-activateBrushShape(name: string): minecraftserver.CompoundBlockVolume
+activateBrushTool(): void
+`
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **beginPainting**
+`
+beginPainting(onComplete: (arg: PaintCompletionState) => void): void
 `
 
 #### **Parameters**
-- **name**: *string*
+- **onComplete**: (arg: [*PaintCompletionState*](PaintCompletionState.md)) => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
 
-**Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
+### **deactivateBrushTool**
+`
+deactivateBrushTool(): void
+`
+  
+Notes:
+- This function can't be called in read-only mode.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+### **endPainting**
+`
+endPainting(cancelled: boolean): void
+`
 
-> [!WARNING]
-> This function can throw errors.
+#### **Parameters**
+- **cancelled**: *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
+
+### **getBrushShapeOffset**
+`
+getBrushShapeOffset(): minecraftserver.Vector3
+`
+
+**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getSettingsUIElements**
 `
@@ -56,12 +106,11 @@ getSettingsUIElements(brushName: string): SettingsUIElement[]
 - **brushName**: *string*
 
 **Returns** [*SettingsUIElement*](SettingsUIElement.md)[]
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
 
 ### **registerBrushShape**
 `
@@ -73,12 +122,129 @@ registerBrushShape(name: string, icon: string, rebuild: () => minecraftserver.Co
 - **icon**: *string*
 - **rebuild**: () => [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
 - **getSettingsUIElements**: () => [*SettingsUIElement*](SettingsUIElement.md)[]
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+### **setBrushMask**
+`
+setBrushMask(mask: BlockMaskList): void
+`
 
-> [!WARNING]
-> This function can throw errors.
+#### **Parameters**
+- **mask**: [*BlockMaskList*](BlockMaskList.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
+
+### **setBrushShape**
+`
+setBrushShape(shape: minecraftserver.Vector3[] | minecraftserver.CompoundBlockVolume): void
+`
+
+#### **Parameters**
+- **shape**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)[] | [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setBrushShapeOffset**
+`
+setBrushShapeOffset(offset: minecraftserver.Vector3): void
+`
+
+#### **Parameters**
+- **offset**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setBrushShapeVisible**
+`
+setBrushShapeVisible(visible: boolean): void
+`
+
+#### **Parameters**
+- **visible**: *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setFlattenHeight**
+`
+setFlattenHeight(flattenHeight: number): void
+`
+
+#### **Parameters**
+- **flattenHeight**: *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setFlattenRadius**
+`
+setFlattenRadius(flattenRadius: number): void
+`
+
+#### **Parameters**
+- **flattenRadius**: *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setTerrainStrength**
+`
+setTerrainStrength(terrainStrength: number): void
+`
+
+#### **Parameters**
+- **terrainStrength**: *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **singlePaint**
+`
+singlePaint(onComplete: (arg: PaintCompletionState) => void): void
+`
+
+#### **Parameters**
+- **onComplete**: (arg: [*PaintCompletionState*](PaintCompletionState.md)) => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
+
+### **switchBrushPaintMode**
+`
+switchBrushPaintMode(paintMode: PaintMode): void
+`
+
+#### **Parameters**
+- **paintMode**: [*PaintMode*](PaintMode.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **switchBrushShape**
+`
+switchBrushShape(name: string): minecraftserver.CompoundBlockVolume
+`
+
+#### **Parameters**
+- **name**: *string*
+
+**Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *@minecraft/server.Error*
 
 ### **uiSettingValueChanged**
 `
@@ -90,9 +256,8 @@ uiSettingValueChanged(elementName: string, newValue: boolean | number | string |
 - **newValue**: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*

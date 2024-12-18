@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.WeatherChangeBeforeEventSignal Class
 description: Contents of the @minecraft/server.WeatherChangeBeforeEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WeatherChangeBeforeEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to before weather changing.
 
@@ -29,9 +25,9 @@ Adds a callback that will be called before weather changes.
 - **callback**: (arg: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
 
 **Returns** (arg: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -42,6 +38,6 @@ Removes a callback from being called before weather changes.
 
 #### **Parameters**
 - **callback**: (arg: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

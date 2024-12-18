@@ -36,7 +36,7 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
     - `<entity_name_animations>`.json
 - [blocks](AddCustomDieBlock.md)
     - `<block_name>`.json
-- [cameras](CameraTutorialFreeCameraPreset.md)
+- [cameras](./CameraSystem/CameraPresetFree.md)
     - presets
         - `<identifier>`.json
 - [entities]()
@@ -50,7 +50,7 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
 - [dialogue]
     - `<scene_dialogue>`
         - `<scene>`.json
-    - [manifest.json](BehaviorPack.md#create-the-manifest-file)
+    - [manifest.json](BehaviorPack.md)
 - [functions](FunctionsIntroduction.md)
     - `<entity_name>`
         - `<entity_name_function>`.mcfunction
@@ -72,7 +72,7 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
     - `<language>`.lang
 - [trading](LootAndTradeTableFunctions.md)
     - `<villager_trades>`.json
-- [manifest.json](BehaviorPack.md#create-the-manifest-file) **(required)**
+- [manifest.json](BehaviorPack.md) **(required)**
 - pack_icon.png
 
 ## Comprehensive Resource Pack
@@ -129,7 +129,7 @@ Here is an introduction to [resource packs](ResourcePack.md).
     - `<graphic>`.png
     - `<graphic>`.jpg
     - `<file>`.json
-- [biomes_client.json](../Reference/Content/FogsReference/Examples/FogsIntroduction.md#biomes_clientjson)
+- [biomes_client.json - deprecated, see client biomes](../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md)
 - [blocks.json](AddCustomDieBlock.md#define-textures-and-sounds-with-blocksjson)
 - [manifest.json](ResourcePack.md#create-a-manifest-file) **(required)**
 - pack_icon.png

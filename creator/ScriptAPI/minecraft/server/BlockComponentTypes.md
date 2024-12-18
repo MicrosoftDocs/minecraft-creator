@@ -8,20 +8,24 @@ description: Contents of the .BlockComponentTypes enumeration.
 ---
 # BlockComponentTypes Enumeration
 
+The types of block components that are accessible via function Block.getComponent.
+
 ## Constants
+### **FluidContainer**
+`FluidContainer = "minecraft:fluidContainer"`
 ### **Inventory**
 `Inventory = "minecraft:inventory"`
-### **LavaContainer**
-`LavaContainer = "minecraft:lavaContainer"`
+
+Represents the inventory of a block in the world. Used with blocks like chests.
 ### **Piston**
 `Piston = "minecraft:piston"`
-### **PotionContainer**
-`PotionContainer = "minecraft:potionContainer"`
+
+When present, this block has piston-like behavior. Contains additional properties for discovering block piston state.
 ### **RecordPlayer**
-`RecordPlayer = "minecraft:recordPlayer"`
+`RecordPlayer = "minecraft:record_player"`
+
+Represents a block that can play a record.
 ### **Sign**
 `Sign = "minecraft:sign"`
-### **SnowContainer**
-`SnowContainer = "minecraft:snowContainer"`
-### **WaterContainer**
-`WaterContainer = "minecraft:waterContainer"`
+
+Represents a block that can display text on it.

@@ -13,6 +13,7 @@ Consider block permutations as variations of the same block, while block states 
 ## Block States
 
 Block states are variables that can be set to different values. Their current value can be evaluated in a permutation's "condition" to determine if that permutation should be used.
+
 The "states" field is contained in the "description" section of a custom block's behavior pack JSON file. It is a JSON object. Inside, a map of key/value pairs must be provided. Each key is the name of a state, which must be properly namespaced. Each value is an array that contains all of the possible values of that state. State values can be Booleans, numbers, or strings.
 
 > [!NOTE]
@@ -29,7 +30,7 @@ You can think of permutations as different variations of the same block. For exa
 
 Another example is a lamp block with one permutation for its "on" state that consists of a high light emission, and another permutation for its "off" state that consists of zero light emission. These permutations are the same lamp, simply having different light emission values.
 
-Permutations allow you to create variations of the same block inside one block behavior pack json file instead of making files for each variation of the same block. For the lamp, instead of making 2 separate behavior pack JSON files, one for the lamp that is "on" and one for the lamp that is "off", you have one file with 2 permutations.
+Permutations allow you to create variations of the same block inside one block behavior pack JSON file instead of making files for each variation of the same block. For the lamp, instead of making two separate behavior pack JSON files, one for the lamp that is "on" and one for the lamp that is "off", you have one file with two permutations.
 
 Each permutation is a JSON Object that consists of 2 parameters, shown below.
 
@@ -82,7 +83,7 @@ The block has one permutation for "on" and one permutation for "off". The first 
 
 The second permutation's condition requires that the block state `"custom:is_lit"` be equal to false to be used.
 
-Now the question becomes "How does the block state "custom:is_lit" get set or changed?"
+Now the question becomes "How does the block state `"custom:is_lit"` get set or changed?"
 
 ### Using the /setblock command to set a custom block with a specific value for a block state
 
@@ -93,15 +94,11 @@ One way to give a block a specific state value is by using the `/setblock` comma
 > [!NOTE]
 > You can list several block states with specific values in the brackets to set multiple block states at once.
 
-### Using events to set a specific block state
-
-Events can also be used to set a specific block state. Use a [block event trigger component](./BlockTriggers/BlockTriggerList.md) to determine when you want an event to fire, and use the event response "set_block_state" to set the block state to a specific value when it fires.
-
 ### Unlimited* Power
 
 A cap of 65,536 permutations that all blocks on a map can generate has been placed due to performance concerns. Attempting to add a resource pack with more permutations than said cap will result in the following warning:
 
->World with over 65536 block permutations may degrade performance. Current world has XXXXXX permutations."
+"Worlds with over 65536 block permutations may degrade performance. Current world has XXXXXX permutations."
 
 This warning will block marketplace ingestion, so you'll definitely want to fix this issue before submitting. The good news is that you can troubleshoot the issue with the debug log, which contains a list of blocks with permutations, sorted with the largest amount at the top.
 

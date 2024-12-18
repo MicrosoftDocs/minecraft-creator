@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityMovementGlideComponent Class
 description: Contents of the @minecraft/server.EntityMovementGlideComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityMovementGlideComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*EntityBaseMovementComponent*](EntityBaseMovementComponent.md)
@@ -26,8 +22,8 @@ Speed in effect when the entity is turning.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **startSpeed**
 `read-only startSpeed: number;`
@@ -36,8 +32,8 @@ Start speed during a glide.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

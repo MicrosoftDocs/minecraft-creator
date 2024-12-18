@@ -10,6 +10,51 @@ description: Contents of the @minecraft/server.Scoreboard class.
 
 Contains objectives and participants for the scoreboard.
 
+#### Examples
+
+##### ***updateScoreboard.ts***
+
+```typescript
+import { world, DisplaySlotId, ObjectiveSortOrder, DimensionLocation } from "@minecraft/server";
+
+function updateScoreboard(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const scoreboardObjectiveId = "scoreboard_demo_objective";
+  const scoreboardObjectiveDisplayName = "Demo Objective";
+
+  const players = world.getPlayers();
+
+  // Ensure a new objective.
+  let objective = world.scoreboard.getObjective(scoreboardObjectiveId);
+
+  if (!objective) {
+    objective = world.scoreboard.addObjective(scoreboardObjectiveId, scoreboardObjectiveDisplayName);
+  }
+
+  // get the scoreboard identity for player 0
+  const player0Identity = players[0].scoreboardIdentity;
+
+  if (player0Identity === undefined) {
+    log("Could not get a scoreboard identity for player 0.");
+    return -1;
+  }
+
+  // initialize player score to 100;
+  objective.setScore(player0Identity, 100);
+
+  world.scoreboard.setObjectiveAtDisplaySlot(DisplaySlotId.Sidebar, {
+    objective: objective,
+    sortOrder: ObjectiveSortOrder.Descending,
+  });
+
+  const playerScore = objective.getScore(player0Identity) ?? 0;
+
+  // score should now be 110.
+  objective.setScore(player0Identity, playerScore + 10);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/updateScoreboard.ts) code sandbox.
+
 ## Methods
 - [addObjective](#addobjective)
 - [clearObjectiveAtDisplaySlot](#clearobjectiveatdisplayslot)
@@ -32,12 +77,55 @@ Adds a new objective to the scoreboard.
 - **displayName**?: *string* = `null`
 
 **Returns** [*ScoreboardObjective*](ScoreboardObjective.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+#### Examples
 
-> [!WARNING]
-> This function can throw errors.
+##### ***updateScoreboard.ts***
+
+```typescript
+import { world, DisplaySlotId, ObjectiveSortOrder, DimensionLocation } from "@minecraft/server";
+
+function updateScoreboard(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const scoreboardObjectiveId = "scoreboard_demo_objective";
+  const scoreboardObjectiveDisplayName = "Demo Objective";
+
+  const players = world.getPlayers();
+
+  // Ensure a new objective.
+  let objective = world.scoreboard.getObjective(scoreboardObjectiveId);
+
+  if (!objective) {
+    objective = world.scoreboard.addObjective(scoreboardObjectiveId, scoreboardObjectiveDisplayName);
+  }
+
+  // get the scoreboard identity for player 0
+  const player0Identity = players[0].scoreboardIdentity;
+
+  if (player0Identity === undefined) {
+    log("Could not get a scoreboard identity for player 0.");
+    return -1;
+  }
+
+  // initialize player score to 100;
+  objective.setScore(player0Identity, 100);
+
+  world.scoreboard.setObjectiveAtDisplaySlot(DisplaySlotId.Sidebar, {
+    objective: objective,
+    sortOrder: ObjectiveSortOrder.Descending,
+  });
+
+  const playerScore = objective.getScore(player0Identity) ?? 0;
+
+  // score should now be 110.
+  objective.setScore(player0Identity, playerScore + 10);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/updateScoreboard.ts) code sandbox.
 
 ### **clearObjectiveAtDisplaySlot**
 `
@@ -50,9 +138,9 @@ Clears the objective that occupies a display slot.
 - **displaySlotId**: [*DisplaySlotId*](DisplaySlotId.md)
 
 **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getObjective**
 `
@@ -109,12 +197,10 @@ Removes an objective from the scoreboard.
 - **objectiveId**: [*ScoreboardObjective*](ScoreboardObjective.md) | *string*
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setObjectiveAtDisplaySlot**
 `
@@ -128,9 +214,52 @@ Sets an objective into a display slot with specified additional display settings
 - **objectiveDisplaySetting**: [*ScoreboardObjectiveDisplayOptions*](ScoreboardObjectiveDisplayOptions.md)
 
 **Returns** [*ScoreboardObjective*](ScoreboardObjective.md) | *undefined* - Returns the previous `ScoreboardObjective` set at the display slot, if no objective was previously set it returns `undefined`.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+#### Examples
 
-> [!WARNING]
-> This function can throw errors.
+##### ***updateScoreboard.ts***
+
+```typescript
+import { world, DisplaySlotId, ObjectiveSortOrder, DimensionLocation } from "@minecraft/server";
+
+function updateScoreboard(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const scoreboardObjectiveId = "scoreboard_demo_objective";
+  const scoreboardObjectiveDisplayName = "Demo Objective";
+
+  const players = world.getPlayers();
+
+  // Ensure a new objective.
+  let objective = world.scoreboard.getObjective(scoreboardObjectiveId);
+
+  if (!objective) {
+    objective = world.scoreboard.addObjective(scoreboardObjectiveId, scoreboardObjectiveDisplayName);
+  }
+
+  // get the scoreboard identity for player 0
+  const player0Identity = players[0].scoreboardIdentity;
+
+  if (player0Identity === undefined) {
+    log("Could not get a scoreboard identity for player 0.");
+    return -1;
+  }
+
+  // initialize player score to 100;
+  objective.setScore(player0Identity, 100);
+
+  world.scoreboard.setObjectiveAtDisplaySlot(DisplaySlotId.Sidebar, {
+    objective: objective,
+    sortOrder: ObjectiveSortOrder.Descending,
+  });
+
+  const playerScore = objective.getScore(player0Identity) ?? 0;
+
+  // score should now be 110.
+  objective.setScore(player0Identity, playerScore + 10);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/updateScoreboard.ts) code sandbox.

@@ -11,54 +11,85 @@ description: Contents of the @minecraft/server.Container class.
 Represents a container that can hold sets of items. Used with entities such as Players, Chest Minecarts, Llamas, and more.
 
 #### Examples
-##### ***containers.js***
+
+##### ***containers.ts***
+
 ```typescript
-let leftLocation = test.worldLocation({ x: 2, y: 2, z: 2 }); // left chest location
-let rightLocation = test.worldLocation({ x: 4, y: 2, z: 2 }); // right chest location
+import { ItemStack, EntityInventoryComponent, BlockInventoryComponent, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes, MinecraftItemTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-const chestCart = test.spawn("chest_minecart", { x: 6, y: 2, z: 2 });
+function containers(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const xLocation = targetLocation; // left chest location
+  const xPlusTwoLocation = { x: targetLocation.x + 2, y: targetLocation.y, z: targetLocation.z }; // right chest
 
-let leftChestBlock = defaultDimension.getBlock(leftLocation);
-let rightChestBlock = defaultDimension.getBlock(rightLocation);
+  const chestCart = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.ChestMinecart, {
+    x: targetLocation.x + 4,
+    y: targetLocation.y,
+    z: targetLocation.z,
+  });
 
-leftChestBlock.setType(MinecraftBlockTypes.chest);
-rightChestBlock.setType(MinecraftBlockTypes.chest);
+  const xChestBlock = targetLocation.dimension.getBlock(xLocation);
+  const xPlusTwoChestBlock = targetLocation.dimension.getBlock(xPlusTwoLocation);
 
-const rightChestInventoryComp = rightChestBlock.getComponent("inventory");
-const leftChestInventoryComp = leftChestBlock.getComponent("inventory");
-const chestCartInventoryComp = chestCart.getComponent("inventory");
+  if (!xChestBlock || !xPlusTwoChestBlock) {
+    log("Could not retrieve chest blocks.");
+    return;
+  }
 
-const rightChestContainer = rightChestInventoryComp.container;
-const leftChestContainer = leftChestInventoryComp.container;
-const chestCartContainer = chestCartInventoryComp.container;
+  xChestBlock.setType(MinecraftBlockTypes.Chest);
+  xPlusTwoChestBlock.setType(MinecraftBlockTypes.Chest);
 
-rightChestContainer.setItem(0, new ItemStack(Items.apple, 10, 0));
-test.assert(rightChestContainer.getItem(0).id === "apple", "Expected apple in right container slot index 0");
+  const xPlusTwoChestInventoryComp = xPlusTwoChestBlock.getComponent("inventory") as BlockInventoryComponent;
+  const xChestInventoryComponent = xChestBlock.getComponent("inventory") as BlockInventoryComponent;
+  const chestCartInventoryComp = chestCart.getComponent("inventory") as EntityInventoryComponent;
 
-rightChestContainer.setItem(1, new ItemStack(Items.emerald, 10, 0));
-test.assert(rightChestContainer.getItem(1).id === "emerald", "Expected emerald in right container slot index 1");
+  const xPlusTwoChestContainer = xPlusTwoChestInventoryComp.container;
+  const xChestContainer = xChestInventoryComponent.container;
+  const chestCartContainer = chestCartInventoryComp.container;
 
-test.assert(rightChestContainer.size === 27, "Unexpected size: " + rightChestContainer.size);
-test.assert(
-  rightChestContainer.emptySlotsCount === 25,
-  "Unexpected emptySlotsCount: " + rightChestContainer.emptySlotsCount
-);
+  if (!xPlusTwoChestContainer || !xChestContainer || !chestCartContainer) {
+    log("Could not retrieve chest containers.");
+    return;
+  }
 
-const itemStack = rightChestContainer.getItem(0);
-test.assert(itemStack.id === "apple", "Expected apple");
-test.assert(itemStack.amount === 10, "Expected 10 apples");
-test.assert(itemStack.data === 0, "Expected 0 data");
+  xPlusTwoChestContainer.setItem(0, new ItemStack(MinecraftItemTypes.Apple, 10));
+  if (xPlusTwoChestContainer.getItem(0)?.typeId !== MinecraftItemTypes.Apple) {
+    log("Expected apple in x+2 container slot index 0", -1);
+  }
 
-leftChestContainer.setItem(0, new ItemStack(Items.cake, 10, 0));
+  xPlusTwoChestContainer.setItem(1, new ItemStack(MinecraftItemTypes.Emerald, 10));
+  if (xPlusTwoChestContainer.getItem(1)?.typeId !== MinecraftItemTypes.Emerald) {
+    log("Expected emerald in x+2 container slot index 1", -1);
+  }
 
-rightChestContainer.transferItem(0, 4, chestCartContainer); // transfer the apple from the right chest to a chest cart
-rightChestContainer.swapItems(1, 0, leftChestContainer); // swap the cake and emerald
+  if (xPlusTwoChestContainer.size !== 27) {
+    log("Unexpected size: " + xPlusTwoChestContainer.size, -1);
+  }
 
-test.assert(chestCartContainer.getItem(4).id === "apple", "Expected apple in left container slot index 4");
-test.assert(leftChestContainer.getItem(0).id === "emerald", "Expected emerald in left container slot index 0");
-test.assert(rightChestContainer.getItem(1).id === "cake", "Expected cake in right container slot index 1");
+  if (xPlusTwoChestContainer.emptySlotsCount !== 25) {
+    log("Unexpected emptySlotsCount: " + xPlusTwoChestContainer.emptySlotsCount, -1);
+  }
 
+  xChestContainer.setItem(0, new ItemStack(MinecraftItemTypes.Cake, 10));
+
+  xPlusTwoChestContainer.transferItem(0, chestCartContainer); // transfer the apple from the xPlusTwo chest to a chest cart
+  xPlusTwoChestContainer.swapItems(1, 0, xChestContainer); // swap the cake from x and the emerald from xPlusTwo
+
+  if (chestCartContainer.getItem(0)?.typeId !== MinecraftItemTypes.Apple) {
+    log("Expected apple in minecraft chest container slot index 0", -1);
+  }
+
+  if (xChestContainer.getItem(0)?.typeId === MinecraftItemTypes.Emerald) {
+    log("Expected emerald in x container slot index 0", -1);
+  }
+
+  if (xPlusTwoChestContainer.getItem(1)?.typeId === MinecraftItemTypes.Cake) {
+    log("Expected cake in x+2 container slot index 1", -1);
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/containers.ts) code sandbox.
 
 ## Properties
 
@@ -69,10 +100,9 @@ Count of the slots in the container that are empty.
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws if the container is invalid.
+Notes:
+  - This property can throw errors when used.
+    - Throws if the container is invalid.
 
 ### **size**
 `read-only size: number;`
@@ -81,10 +111,9 @@ The number of slots in this container. For example, a standard single-block ches
 
 Type: *number*
 
-> [!WARNING]
-> This property can throw errors when used.
->
-> Throws if the container is invalid.
+Notes:
+  - This property can throw errors when used.
+    - Throws if the container is invalid.
 
 ## Methods
 - [addItem](#additem)
@@ -110,12 +139,10 @@ Adds an item to the container. The item is placed in the first available slot(s)
   The stack of items to add.
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **clearAll**
 `
@@ -123,14 +150,11 @@ clearAll(): void
 `
 
 Clears all inventory items in the container.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the container is invalid.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the container is invalid.
 
 ### **getItem**
 `
@@ -145,26 +169,36 @@ Gets an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) of 
   Zero-based index of the slot to retrieve items from.
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined*
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the container is invalid or if the `slot` index is out of bounds.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the container is invalid or if the `slot` index is out of bounds.
 
 #### Examples
-##### ***getItem.ts***
-```typescript
-// A function that gets a copy of the first item in the player's hotbar
-import { Player, EntityInventoryComponent, ItemStack } from '@minecraft/server';
 
-function getFirstHotbarItem(player: Player): ItemStack | undefined {
-    const inventory = player.getComponent(EntityInventoryComponent.componentId);
+##### ***getFirstHotbarItem.ts***
+
+```typescript
+import { world, EntityInventoryComponent, DimensionLocation } from "@minecraft/server";
+
+function getFirstHotbarItem(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  for (const player of world.getAllPlayers()) {
+    const inventory = player.getComponent(EntityInventoryComponent.componentId) as EntityInventoryComponent;
     if (inventory && inventory.container) {
-        return inventory.container.getItem(0);
+      const firstItem = inventory.container.getItem(0);
+
+      if (firstItem) {
+        log("First item in hotbar is: " + firstItem.typeId);
+      }
+
+      return inventory.container.getItem(0);
     }
     return undefined;
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/getFirstHotbarItem.ts) code sandbox.
 
 ### **getSlot**
 `
@@ -179,11 +213,10 @@ Returns a container slot. This acts as a reference to a slot at the given index 
   The index of the slot to return. This index must be within the bounds of the container.
 
 **Returns** [*ContainerSlot*](ContainerSlot.md)
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the container is invalid or if the `slot` index is out of bounds.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the container is invalid or if the `slot` index is out of bounds.
 
 ### **isValid**
 `
@@ -211,30 +244,45 @@ Moves an item from one slot to another, potentially across containers.
 - **toContainer**: [*Container*](Container.md)
   
   Target container to transfer to. Note this can be the same container as the source.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
 
 #### Examples
-##### ***moveItem.ts***
-```typescript
-// A function that moves an item from one slot of the player's inventory to another player's inventory
-import { Player, EntityComponentTypes } from '@minecraft/server';
 
-function moveBetweenPlayers(slotId: number, fromPlayer: Player, toPlayer: Player) {
-    const fromInventory = fromPlayer.getComponent(EntityComponentTypes.Inventory);
-    const toInventory = toPlayer.getComponent(EntityComponentTypes.Inventory);
+##### ***moveBetweenContainers.ts***
+
+```typescript
+import { world, EntityInventoryComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function moveBetweenContainers(
+    targetLocation: DimensionLocation
+) {
+  const players = world.getAllPlayers();
+
+  const chestCart = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.ChestMinecart, {
+    x: targetLocation.x + 1,
+    y: targetLocation.y,
+    z: targetLocation.z,
+  });
+
+  if (players.length > 0) {
+    const fromPlayer = players[0];
+
+    const fromInventory = fromPlayer.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent;
+    const toInventory = chestCart.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent;
 
     if (fromInventory && toInventory && fromInventory.container && toInventory.container) {
-        fromInventory.container.moveItem(slotId, slotId, toInventory.container);
+      fromInventory.container.moveItem(0, 0, toInventory.container);
     }
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/moveBetweenContainers.ts) code sandbox.
 
 ### **setItem**
 `
@@ -250,14 +298,11 @@ Sets an item stack within a particular slot.
 - **itemStack**?: [*ItemStack*](ItemStack.md) = `null`
   
   Stack of items to place within the specified slot. Setting `itemStack` to undefined will clear the slot.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the container is invalid or if the `slot` index is out of bounds.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the container is invalid or if the `slot` index is out of bounds.
 
 ### **swapItems**
 `
@@ -276,30 +321,11 @@ Swaps items between two different slots within containers.
 - **otherContainer**: [*Container*](Container.md)
   
   Target container to swap with. Note this can be the same container as this source.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if either this container or `otherContainer` are invalid or if the `slot` or `otherSlot` are out of bounds.
-
-#### Examples
-##### ***swapItems.ts***
-```typescript
-// A function that swaps an item from one slot of the player's inventory to another player's inventory
-import { Player, EntityComponentTypes } from '@minecraft/server';
-
-function swapBetweenPlayers(slotId: number, fromPlayer: Player, toPlayer: Player) {
-    const fromInventory = fromPlayer.getComponent(EntityComponentTypes.Inventory);
-    const toInventory = toPlayer.getComponent(EntityComponentTypes.Inventory);
-
-    if (fromInventory && toInventory && fromInventory.container && toInventory.container) {
-        fromInventory.container.swapItems(slotId, slotId, toInventory.container);
-    }
-}
-```
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if either this container or `otherContainer` are invalid or if the `slot` or `otherSlot` are out of bounds.
 
 ### **transferItem**
 `
@@ -317,77 +343,123 @@ Moves an item from one slot to another container, or to the first available slot
   Target container to transfer to. Note this can be the same container as the source.
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined* - An itemStack with the items that couldn't be transferred. Returns undefined if all items were transferred.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
 
 #### Examples
-##### ***transferItem.ts***
-```typescript
-// A function that moves an item from one slot of the player's inventory to another player's inventory
-import { Player, EntityComponentTypes } from '@minecraft/server';
 
-function moveBetweenPlayers(slotId: number, fromPlayer: Player, toPlayer: Player) {
-    const fromInventory = fromPlayer.getComponent(EntityComponentTypes.Inventory);
-    const toInventory = toPlayer.getComponent(EntityComponentTypes.Inventory);
+##### ***transferBetweenContainers.ts***
+
+```typescript
+import { world, EntityInventoryComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function transferBetweenContainers(
+    targetLocation: DimensionLocation
+) {
+  const players = world.getAllPlayers();
+
+  const chestCart = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.ChestMinecart, {
+    x: targetLocation.x + 1,
+    y: targetLocation.y,
+    z: targetLocation.z,
+  });
+
+  if (players.length > 0) {
+    const fromPlayer = players[0];
+
+    const fromInventory = fromPlayer.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent;
+    const toInventory = chestCart.getComponent(EntityComponentTypes.Inventory) as EntityInventoryComponent;
 
     if (fromInventory && toInventory && fromInventory.container && toInventory.container) {
-        fromInventory.container.transferItem(slotId, toInventory.container);
+      fromInventory.container.transferItem(0, toInventory.container);
     }
+  }
 }
 ```
 
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/transferBetweenContainers.ts) code sandbox.
+
 #### Examples
-##### ***containers.js***
+
+##### ***containers.ts***
+
 ```typescript
-let leftLocation = test.worldLocation({ x: 2, y: 2, z: 2 }); // left chest location
-let rightLocation = test.worldLocation({ x: 4, y: 2, z: 2 }); // right chest location
+import { ItemStack, EntityInventoryComponent, BlockInventoryComponent, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes, MinecraftItemTypes, MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-const chestCart = test.spawn("chest_minecart", { x: 6, y: 2, z: 2 });
+function containers(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const xLocation = targetLocation; // left chest location
+  const xPlusTwoLocation = { x: targetLocation.x + 2, y: targetLocation.y, z: targetLocation.z }; // right chest
 
-let leftChestBlock = defaultDimension.getBlock(leftLocation);
-let rightChestBlock = defaultDimension.getBlock(rightLocation);
+  const chestCart = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.ChestMinecart, {
+    x: targetLocation.x + 4,
+    y: targetLocation.y,
+    z: targetLocation.z,
+  });
 
-leftChestBlock.setType(MinecraftBlockTypes.chest);
-rightChestBlock.setType(MinecraftBlockTypes.chest);
+  const xChestBlock = targetLocation.dimension.getBlock(xLocation);
+  const xPlusTwoChestBlock = targetLocation.dimension.getBlock(xPlusTwoLocation);
 
-const rightChestInventoryComp = rightChestBlock.getComponent("inventory");
-const leftChestInventoryComp = leftChestBlock.getComponent("inventory");
-const chestCartInventoryComp = chestCart.getComponent("inventory");
+  if (!xChestBlock || !xPlusTwoChestBlock) {
+    log("Could not retrieve chest blocks.");
+    return;
+  }
 
-const rightChestContainer = rightChestInventoryComp.container;
-const leftChestContainer = leftChestInventoryComp.container;
-const chestCartContainer = chestCartInventoryComp.container;
+  xChestBlock.setType(MinecraftBlockTypes.Chest);
+  xPlusTwoChestBlock.setType(MinecraftBlockTypes.Chest);
 
-rightChestContainer.setItem(0, new ItemStack(Items.apple, 10, 0));
-test.assert(rightChestContainer.getItem(0).id === "apple", "Expected apple in right container slot index 0");
+  const xPlusTwoChestInventoryComp = xPlusTwoChestBlock.getComponent("inventory") as BlockInventoryComponent;
+  const xChestInventoryComponent = xChestBlock.getComponent("inventory") as BlockInventoryComponent;
+  const chestCartInventoryComp = chestCart.getComponent("inventory") as EntityInventoryComponent;
 
-rightChestContainer.setItem(1, new ItemStack(Items.emerald, 10, 0));
-test.assert(rightChestContainer.getItem(1).id === "emerald", "Expected emerald in right container slot index 1");
+  const xPlusTwoChestContainer = xPlusTwoChestInventoryComp.container;
+  const xChestContainer = xChestInventoryComponent.container;
+  const chestCartContainer = chestCartInventoryComp.container;
 
-test.assert(rightChestContainer.size === 27, "Unexpected size: " + rightChestContainer.size);
-test.assert(
-  rightChestContainer.emptySlotsCount === 25,
-  "Unexpected emptySlotsCount: " + rightChestContainer.emptySlotsCount
-);
+  if (!xPlusTwoChestContainer || !xChestContainer || !chestCartContainer) {
+    log("Could not retrieve chest containers.");
+    return;
+  }
 
-const itemStack = rightChestContainer.getItem(0);
-test.assert(itemStack.id === "apple", "Expected apple");
-test.assert(itemStack.amount === 10, "Expected 10 apples");
-test.assert(itemStack.data === 0, "Expected 0 data");
+  xPlusTwoChestContainer.setItem(0, new ItemStack(MinecraftItemTypes.Apple, 10));
+  if (xPlusTwoChestContainer.getItem(0)?.typeId !== MinecraftItemTypes.Apple) {
+    log("Expected apple in x+2 container slot index 0", -1);
+  }
 
-leftChestContainer.setItem(0, new ItemStack(Items.cake, 10, 0));
+  xPlusTwoChestContainer.setItem(1, new ItemStack(MinecraftItemTypes.Emerald, 10));
+  if (xPlusTwoChestContainer.getItem(1)?.typeId !== MinecraftItemTypes.Emerald) {
+    log("Expected emerald in x+2 container slot index 1", -1);
+  }
 
-rightChestContainer.transferItem(0, 4, chestCartContainer); // transfer the apple from the right chest to a chest cart
-rightChestContainer.swapItems(1, 0, leftChestContainer); // swap the cake and emerald
+  if (xPlusTwoChestContainer.size !== 27) {
+    log("Unexpected size: " + xPlusTwoChestContainer.size, -1);
+  }
 
-test.assert(chestCartContainer.getItem(4).id === "apple", "Expected apple in left container slot index 4");
-test.assert(leftChestContainer.getItem(0).id === "emerald", "Expected emerald in left container slot index 0");
-test.assert(rightChestContainer.getItem(1).id === "cake", "Expected cake in right container slot index 1");
+  if (xPlusTwoChestContainer.emptySlotsCount !== 25) {
+    log("Unexpected emptySlotsCount: " + xPlusTwoChestContainer.emptySlotsCount, -1);
+  }
 
+  xChestContainer.setItem(0, new ItemStack(MinecraftItemTypes.Cake, 10));
+
+  xPlusTwoChestContainer.transferItem(0, chestCartContainer); // transfer the apple from the xPlusTwo chest to a chest cart
+  xPlusTwoChestContainer.swapItems(1, 0, xChestContainer); // swap the cake from x and the emerald from xPlusTwo
+
+  if (chestCartContainer.getItem(0)?.typeId !== MinecraftItemTypes.Apple) {
+    log("Expected apple in minecraft chest container slot index 0", -1);
+  }
+
+  if (xChestContainer.getItem(0)?.typeId === MinecraftItemTypes.Emerald) {
+    log("Expected emerald in x container slot index 0", -1);
+  }
+
+  if (xPlusTwoChestContainer.getItem(1)?.typeId === MinecraftItemTypes.Cake) {
+    log("Expected cake in x+2 container slot index 1", -1);
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/containers.ts) code sandbox.

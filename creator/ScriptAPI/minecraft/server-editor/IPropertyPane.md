@@ -33,27 +33,6 @@ Provides visibility change events
 
 Type: *EventSink<PropertyPaneVisibilityUpdate>*
 
-### **parentPaneId**
-`read-only parentPaneId: string;`
-
-In case of sub pane this is the id of the parent pane.
-
-Type: *string*
-
-### **titleAltText**
-`titleAltText: string;`
-
-Fallback display text if no loc ID
-
-Type: *string*
-
-### **titleStringId**
-`titleStringId: string;`
-
-Loc ID (resolved on client)
-
-Type: *string*
-
 ### **visible**
 `visible: boolean;`
 
@@ -61,49 +40,66 @@ Check visibility of the pane
 
 Type: *boolean*
 
-### **width**
-`width: number;`
-
-Width of the panel in rem.
-
-Type: *number*
-
 ## Methods
-- [addBlockPicker](#addblockpicker)
+- [addBlockList](#addblocklist)
 - [addBool](#addbool)
+- [addBool_deprecated](#addbool_deprecated)
 - [addButton](#addbutton)
+- [addColorPicker](#addcolorpicker)
+- [addColorPicker_deprecated](#addcolorpicker_deprecated)
+- [addComboBox](#addcombobox)
 - [addDivider](#adddivider)
 - [addDropdown](#adddropdown)
-- [addEntityPicker](#addentitypicker)
+- [addDropdown_deprecated](#adddropdown_deprecated)
 - [addImage](#addimage)
 - [addNumber](#addnumber)
+- [addNumber_deprecated](#addnumber_deprecated)
 - [addString](#addstring)
+- [addString_deprecated](#addstring_deprecated)
+- [addTable](#addtable)
 - [addText](#addtext)
+- [addToggleGroup](#addtogglegroup)
 - [addVector3](#addvector3)
+- [addVector3_deprecated](#addvector3_deprecated)
 - [collapse](#collapse)
-- [createPropertyPane](#createpropertypane)
+- [createSubPane](#createsubpane)
 - [expand](#expand)
+- [getTitle](#gettitle)
 - [hide](#hide)
-- [removePropertyPane](#removepropertypane)
+- [removeSubPane](#removesubpane)
+- [setTitle](#settitle)
 - [show](#show)
 
-### **addBlockPicker**
+### **addBlockList**
 `
-addBlockPicker(obj: T, property: Prop, options: IPropertyItemOptionsDataPicker): IPropertyItem<T, Prop>
+addBlockList(options: IPropertyItemOptionsBlockList): IBlockListPropertyItem<{
+        EMPTY: undefined;
+    }, 'EMPTY'>
 `
 
-Adds a BlockPicker item to the pane.
+Adds a block list to the pane.
 
 #### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsDataPicker*
+- **options**: *IPropertyItemOptionsBlockList*
 
-**Returns** *IPropertyItem<T, Prop>*
+**Returns** *IBlockListPropertyItem<{
+        EMPTY: undefined;
+    }, 'EMPTY'>*
 
 ### **addBool**
 `
-addBool(obj: T, property: Prop, options: IPropertyItemOptionsBool): IPropertyItem<T, Prop>
+addBool(value: IObservableProp<boolean>, options: IBoolPropertyItemOptions): IBoolPropertyItem
+`
+
+#### **Parameters**
+- **value**: *IObservableProp<boolean>*
+- **options**: *IBoolPropertyItemOptions*
+
+**Returns** *IBoolPropertyItem*
+
+### **addBool_deprecated**
+`
+addBool_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsBool): IPropertyItem<T, Prop>
 `
 
 Adds a boolean item to the pane.
@@ -117,33 +113,82 @@ Adds a boolean item to the pane.
 
 ### **addButton**
 `
-addButton(action: RegisteredAction<NoArgsAction>, options: IPropertyItemOptionsButton): IActionPropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>
+addButton(action: (() => void) | RegisteredAction<NoArgsAction>, options: IButtonPropertyItemOptions): IButtonPropertyItem
 `
 
 Adds a button to the pane and binds the specified action to the button activate.
 
 #### **Parameters**
-- **action**: *RegisteredAction<NoArgsAction>*
-- **options**: *IPropertyItemOptionsButton*
+- **action**: *(() => void) | RegisteredAction<NoArgsAction>*
+- **options**: *IButtonPropertyItemOptions*
 
-**Returns** *IActionPropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>*
+**Returns** *IButtonPropertyItem*
+
+### **addColorPicker**
+`
+addColorPicker(value: IObservableProp<minecraftserver.RGBA>, options: IColorPickerPropertyItemOptions): IColorPickerPropertyItem
+`
+
+Adds a color picker item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<minecraftserver.RGBA>*
+- **options**: *IColorPickerPropertyItemOptions*
+
+**Returns** *IColorPickerPropertyItem*
+
+### **addColorPicker_deprecated**
+`
+addColorPicker_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsColorPicker_deprecated): IPropertyItem<T, Prop>
+`
+
+Adds a color picker item to the pane.
+
+#### **Parameters**
+- **obj**: *T*
+- **property**: *Prop*
+- **options**: *IPropertyItemOptionsColorPicker_deprecated*
+
+**Returns** *IPropertyItem<T, Prop>*
+
+### **addComboBox**
+`
+addComboBox(value: IObservableProp<string>, options: IComboBoxPropertyItemOptions): IComboBoxPropertyItem
+`
+
+Adds a combo box item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<string>*
+- **options**: *IComboBoxPropertyItemOptions*
+
+**Returns** *IComboBoxPropertyItem*
 
 ### **addDivider**
 `
-addDivider(): IPropertyItem<PropertyBag, string>
+addDivider(): IPropertyItemBase
 `
 
 Adds an divider item to the pane.
 
-**Returns** *IPropertyItem<PropertyBag, string>*
+**Returns** *IPropertyItemBase*
 
 ### **addDropdown**
 `
-addDropdown(obj: T, property: Prop, options: IPropertyItemOptionsDropdown): IDropdownPropertyItem<T, Prop>
+addDropdown(value: IObservableProp<number>, options: IDropdownPropertyItemOptions): IDropdownPropertyItem
+`
+
+Adds an Dropdown item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<number>*
+- **options**: *IDropdownPropertyItemOptions*
+
+**Returns** *IDropdownPropertyItem*
+
+### **addDropdown_deprecated**
+`
+addDropdown_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsDropdown): IDropdownPropertyItem_deprecated<T, Prop>
 `
 
 Adds an DropDown item to the pane.
@@ -153,37 +198,37 @@ Adds an DropDown item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsDropdown*
 
-**Returns** *IDropdownPropertyItem<T, Prop>*
-
-### **addEntityPicker**
-`
-addEntityPicker(obj: T, property: Prop, options: IPropertyItemOptionsDataPicker): IPropertyItem<T, Prop>
-`
-
-Adds an EntityPicker item to the pane.
-
-#### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsDataPicker*
-
-**Returns** *IPropertyItem<T, Prop>*
+**Returns** *IDropdownPropertyItem_deprecated<T, Prop>*
 
 ### **addImage**
 `
-addImage(obj: T, property: Prop, options: IPropertyItemOptionsImage): IPropertyItem<T, Prop>
+addImage(value: IObservableProp<string | ImageResourceData>, options: IImagePropertyItemOptions): IImagePropertyItem
 `
 
-#### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsImage*
+Adds an image item to the pane.
 
-**Returns** *IPropertyItem<T, Prop>*
+#### **Parameters**
+- **value**: *IObservableProp<string | ImageResourceData>*
+- **options**: *IImagePropertyItemOptions*
+
+**Returns** *IImagePropertyItem*
 
 ### **addNumber**
 `
-addNumber(obj: T, property: Prop, options: IPropertyItemOptionsNumber): IPropertyItem<T, Prop>
+addNumber(value: IObservableProp<number>, options: INumberPropertyItemOptions): INumberPropertyItem
+`
+
+Adds a number item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<number>*
+- **options**: *INumberPropertyItemOptions*
+
+**Returns** *INumberPropertyItem*
+
+### **addNumber_deprecated**
+`
+addNumber_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsNumber): IPropertyItem<T, Prop>
 `
 
 Adds a number item to the pane.
@@ -197,7 +242,18 @@ Adds a number item to the pane.
 
 ### **addString**
 `
-addString(obj: T, property: Prop, options: IPropertyItemOptions): IPropertyItem<T, Prop>
+addString(value: IObservableProp<string>, options: IStringPropertyItemOptions): IStringPropertyItem
+`
+
+#### **Parameters**
+- **value**: *IObservableProp<string>*
+- **options**: *IStringPropertyItemOptions*
+
+**Returns** *IStringPropertyItem*
+
+### **addString_deprecated**
+`
+addString_deprecated(obj: T, property: Prop, options: IPropertyItemOptions): IPropertyItem<T, Prop>
 `
 
 Adds a string item to the pane
@@ -209,23 +265,64 @@ Adds a string item to the pane
 
 **Returns** *IPropertyItem<T, Prop>*
 
+### **addTable**
+`
+addTable(options: IPropertyItemOptionsTable): ITablePropertyItem<{
+        EMPTY: undefined;
+    }, 'EMPTY'>
+`
+
+Adds a table to the pane.
+
+#### **Parameters**
+- **options**: *IPropertyItemOptionsTable*
+
+**Returns** *ITablePropertyItem<{
+        EMPTY: undefined;
+    }, 'EMPTY'>*
+
 ### **addText**
 `
-addText(obj: T, property: Prop, options: IPropertyItemOptionsText): IPropertyItem<T, Prop>
+addText(value: IObservableProp<LocalizedString>, options: ITextPropertyItemOptions): ITextPropertyItem
 `
 
 Adds a multiline Text item to the pane.
 
 #### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsText*
+- **value**: *IObservableProp<LocalizedString>*
+- **options**: *ITextPropertyItemOptions*
 
-**Returns** *IPropertyItem<T, Prop>*
+**Returns** *ITextPropertyItem*
+
+### **addToggleGroup**
+`
+addToggleGroup(value: IObservableProp<number>, options: IToggleGroupPropertyItemOptions): IToggleGroupPropertyItem
+`
+
+Adds a toggle button group to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<number>*
+- **options**: *IToggleGroupPropertyItemOptions*
+
+**Returns** *IToggleGroupPropertyItem*
 
 ### **addVector3**
 `
-addVector3(obj: T, property: Prop, options: IPropertyItemOptionsVector3): IVector3PropertyItem<T, Prop>
+addVector3(value: IObservableProp<minecraftserver.Vector3>, options: IVector3PropertyItemOptions): IVector3PropertyItem
+`
+
+Adds a Vec3 item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<minecraftserver.Vector3>*
+- **options**: *IVector3PropertyItemOptions*
+
+**Returns** *IVector3PropertyItem*
+
+### **addVector3_deprecated**
+`
+addVector3_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsVector3): IVector3PropertyItem_deprecated<T, Prop>
 `
 
 Adds a Vec3 item to the pane.
@@ -235,7 +332,7 @@ Adds a Vec3 item to the pane.
 - **property**: *Prop*
 - **options**: *IPropertyItemOptionsVector3*
 
-**Returns** *IVector3PropertyItem<T, Prop>*
+**Returns** *IVector3PropertyItem_deprecated<T, Prop>*
 
 ### **collapse**
 `
@@ -246,17 +343,17 @@ Collapse the pane.
 
 **Returns** *void*
 
-### **createPropertyPane**
+### **createSubPane**
 `
-createPropertyPane(options: IPropertyPaneOptions): IPropertyPane
+createSubPane(options: ISubPanePropertyItemOptions): ISubPanePropertyItem
 `
 
-Creates an internal sub panel that is presented inside a extender control.
+Creates an sub pane that can store property items.
 
 #### **Parameters**
-- **options**: *IPropertyPaneOptions*
+- **options**: *ISubPanePropertyItemOptions*
 
-**Returns** *IPropertyPane*
+**Returns** *ISubPanePropertyItem*
 
 ### **expand**
 `
@@ -267,6 +364,15 @@ Expand the pane.
 
 **Returns** *void*
 
+### **getTitle**
+`
+getTitle(): LocalizedString | undefined
+`
+
+Returns property pane title.
+
+**Returns** *LocalizedString | undefined*
+
 ### **hide**
 `
 hide(): void
@@ -276,17 +382,31 @@ Hide the pane.
 
 **Returns** *void*
 
-### **removePropertyPane**
+### **removeSubPane**
 `
-removePropertyPane(paneToRemove: IPropertyPane): boolean
+removeSubPane(paneToRemove: IPropertyPane): boolean
 `
 
-Removes a child property pane from the parent pane.
+Removes an existing sub pane.
 
 #### **Parameters**
 - **paneToRemove**: *IPropertyPane*
 
 **Returns** *boolean*
+
+### **setTitle**
+`
+setTitle(newTitle: LocalizedString | undefined): void
+`
+
+Updates title of property pane.
+
+#### **Parameters**
+- **newTitle**: *LocalizedString | undefined*
+  
+  New title
+
+**Returns** *void*
 
 ### **show**
 `

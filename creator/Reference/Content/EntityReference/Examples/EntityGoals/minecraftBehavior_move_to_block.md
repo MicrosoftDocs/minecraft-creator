@@ -44,10 +44,21 @@ ms.service: minecraft-bedrock-edition
 
 ```json
 "minecraft:behavior.move_to_block":{
-    "goal_radius": 0.5,
-    "search_height": 1,
-    "search_range": 0,
-    "speed_multiplier": 1.0
+    "priority": 10,
+    "search_range": 16,
+    "search_height": 10,
+    "tick_interval": 1,
+    "goal_radius": 0.633, // was tested with 0.4 when the goal radius wasn't squared. sqrt(0.4)~0.633
+    "target_blocks": [
+        "bee_nest",
+        "beehive"
+    ],
+    "on_reach": [
+        {
+            "event": "minecraft:bee_returned_to_hive",
+            "target": "block"
+        }
+    ]
 }
 ```
 

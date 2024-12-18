@@ -57,10 +57,10 @@ Defining a growing plant feature with variable body and head blocks and height d
 
 ```json
 {
-  "format_version": "1.16.0",
+  "format_version": "1.13.0",
   "minecraft:growing_plant_feature": {
     "description": {
-      "identifier": "minecraft:cave_vine_feature"
+      "identifier": "example:cave_vine_feature"
     },
     "height_distribution": [
       [{ "range_min": 1, "range_max": 13 }, 2],

@@ -33,14 +33,9 @@ Block that was hit by the attack.
 
 Type: [*Block*](Block.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **hitBlockPermutation**
 `read-only hitBlockPermutation: BlockPermutation;`
 
 Block permutation that was hit by the attack.
 
 Type: [*BlockPermutation*](BlockPermutation.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end

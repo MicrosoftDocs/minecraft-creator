@@ -11,7 +11,9 @@ description: Contents of the @minecraft/server-net.HttpRequest class.
 Main object for structuring a request.
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -32,6 +34,8 @@ async function updateScore() {
 }
 ```
 
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.
+
 ## Properties
 
 ### **body**
@@ -40,9 +44,9 @@ async function updateScore() {
 Content of the body of the HTTP request.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **headers**
 `headers: HttpHeader[];`
@@ -50,9 +54,9 @@ Type: *string*
 A collection of HTTP headers to add to the outbound request.
 
 Type: [*HttpHeader*](HttpHeader.md)[]
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **method**
 `method: HttpRequestMethod;`
@@ -60,9 +64,9 @@ Type: [*HttpHeader*](HttpHeader.md)[]
 HTTP method (e.g., GET or PUT or PATCH) to use for making the request.
 
 Type: [*HttpRequestMethod*](HttpRequestMethod.md)
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **timeout**
 `timeout: number;`
@@ -70,9 +74,9 @@ Type: [*HttpRequestMethod*](HttpRequestMethod.md)
 Amount of time, in seconds, before the request times out and is abandoned.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **uri**
 `uri: string;`
@@ -80,9 +84,9 @@ Type: *number*
 The HTTP resource to access.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Methods
 - [constructor](#constructor)
@@ -114,9 +118,9 @@ Adds an additional header to the overall list of headers used in the correspondi
 - **value**: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/SecretString.md) | *string*
 
 **Returns** [*HttpRequest*](HttpRequest.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setBody**
 `
@@ -129,9 +133,9 @@ Updates the content of the body of the HTTP request.
 - **body**: *string*
 
 **Returns** [*HttpRequest*](HttpRequest.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setHeaders**
 `
@@ -144,9 +148,9 @@ Replaces and applies a set of HTTP Headers for the request.
 - **headers**: [*HttpHeader*](HttpHeader.md)[]
 
 **Returns** [*HttpRequest*](HttpRequest.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setMethod**
 `
@@ -159,9 +163,9 @@ Sets the desired HTTP method (e.g., GET or PUT or PATCH) to use for making the r
 - **method**: [*HttpRequestMethod*](HttpRequestMethod.md)
 
 **Returns** [*HttpRequest*](HttpRequest.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setTimeout**
 `
@@ -172,12 +176,14 @@ setTimeout(timeout: number): HttpRequest
 - **timeout**: *number*
 
 **Returns** [*HttpRequest*](HttpRequest.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -197,3 +203,5 @@ async function updateScore() {
     await http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.

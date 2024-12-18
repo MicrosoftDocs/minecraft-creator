@@ -11,7 +11,9 @@ description: Contents of the @minecraft/server-net.HttpHeader class.
 Represents an HTTP header - a key/value pair of meta-information about a request.
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -32,6 +34,8 @@ async function updateScore() {
 }
 ```
 
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.
+
 ## Properties
 
 ### **key**
@@ -40,9 +44,9 @@ async function updateScore() {
 Key of the HTTP header.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **value**
 `value: minecraftserveradmin.SecretString | string;`
@@ -50,9 +54,9 @@ Type: *string*
 Value of the HTTP header.
 
 Type: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/SecretString.md) | *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Methods
 - [constructor](#constructor)
@@ -69,7 +73,9 @@ new HttpHeader(key: string, value: minecraftserveradmin.SecretString | string)
 **Returns** [*HttpHeader*](HttpHeader.md)
 
 #### Examples
+
 ##### ***simpleHttpRequest.ts***
+
 ```typescript
 import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
 
@@ -89,3 +95,5 @@ async function updateScore() {
     await http.request(req);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.

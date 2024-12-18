@@ -30,12 +30,12 @@ Define a feature that places the `underwater_magma_snap_to_surface_feature`, if 
 
 ```json
 {
-    "format_version": "1.16.0",
+    "format_version": "1.13.0",
     "minecraft:surface_relative_threshold_feature": {
     "description": {
-      "identifier": "minecraft:underwater_magma_underground_feature"
+      "identifier": "example:underwater_magma_underground_feature"
     },
-    "feature_to_snap": "minecraft:underwater_magma_snap_to_surface_feature",
+    "feature_to_snap": "example:underwater_magma_snap_to_surface_feature",
     "minimum_distance_below_surface": 2
   }
 }

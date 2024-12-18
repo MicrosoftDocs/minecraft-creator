@@ -55,6 +55,8 @@ Entity, such as a sponge, has gone through the process of drying and it no longe
 Entity is going into a body of water
 - `escaped_event`
 Entity is no longer trapped
+- `fed_open_eyeblossom`
+- `fed_wither_rose`
 - `find_flower_timeout`
 Entity, such as a bee, has exhausted its search for flowers and will now do something else
 - `find_hive_event`
@@ -92,6 +94,8 @@ Adds attributes to an entity
 - `minecraft:add_biome_and_skin`
 Entity is affected by biome and skin
 - `minecraft:add_can_ride`
+- `minecraft:add_damage_timer`
+- `minecraft:add_periodic_damage`
 - `minecraft:ageable_grow_up`
 Entity can grow to adulthood
 - `minecraft:ageable_set_baby`
@@ -110,6 +114,7 @@ Entity is a baby
 Entity responds to eating an allium flower
 - `minecraft:ate_bluet`
 Entity responds to eating a bluet flower
+- `minecraft:ate_closed_eyeblossom`
 - `minecraft:ate_cornflower`
 Entity responds to eating a cornflower
 - `minecraft:ate_daisy`
@@ -118,6 +123,7 @@ Entity responds to eating a daisy
 Entity responds to eating a dandelion
 - `minecraft:ate_lily`
 Entity responds to eating a lily
+- `minecraft:ate_open_eyeblossom`
 - `minecraft:ate_orchid`
 Entity responds to eating an orchid
 - `minecraft:ate_poppy`
@@ -249,8 +255,12 @@ Entity deactivates a command block
 Entity converts to a drowned
 - `minecraft:convert_to_zombie`
 Entity converts to a zombie
+- `minecraft:crumble`
+- `minecraft:crumble_and_notify_creaking_heart`
 - `minecraft:crystal_explode`
 Entity explodes a crystal
+- `minecraft:damaged_by_entity`
+- `minecraft:damaged_by_player`
 - `minecraft:defend_wandering_trader`
 Entity defends a wandering trader
 - `minecraft:donkey_saddled`
@@ -271,6 +281,7 @@ Entity is born
 Entity is born wild
 - `minecraft:entity_spawned`
 Entity has spawned
+- `minecraft:entity_spawned_by_creaking_heart`
 - `minecraft:entity_transformed`
 Entity is transformed
 - `minecraft:exited_bubble_column`
@@ -321,6 +332,7 @@ Horse is wearing a saddle
 - `minecraft:horse_unsaddled`
 Horse is not wearing a saddle
 - `minecraft:increase_max_health`
+- `minecraft:increment_swaying_ticks`
 - `minecraft:join_caravan`
 Entity joins a caravan
 - `minecraft:laid_egg`
@@ -388,6 +400,8 @@ Entity is scared
 Entity is sheared
 - `minecraft:on_tame`
 Entity is tamed
+- `minecraft:on_target_start_looking`
+- `minecraft:on_target_stop_looking`
 - `minecraft:on_trust`
 Entity trusts
 - `minecraft:on_unleash`
@@ -418,6 +432,7 @@ Entity is in ranged mode
 Entity is no longer persistent
 - `minecraft:remove_raid_trigger`
 Raid trigger is removed
+- `minecraft:reset_swaying_ticks`
 - `minecraft:resupply_trades`
 Entities with a trade are having those trades resupplied
 - `minecraft:roll_up`
@@ -532,6 +547,7 @@ Entity starts roaring
 - `minecraft:start_sitting`
 - `minecraft:start_transforming`
 Entity starts transforming
+- `minecraft:start_twitching`
 - `minecraft:start_unrolling`
 - `minecraft:stop_aggro`
 Entity stops being aggravated
@@ -608,10 +624,12 @@ Entity digs
 - `on_item_found`
 - `on_not_riding_parent`
 Entity is not riding parent
+- `on_poison_effect_added`
 - `on_pregnant`
 - `on_rising_end`
 - `on_scenting_success`
 - `on_search_and_digging_success`
+- `on_wither_effect_added`
 - `perish_event`
 Entity enters the event of perishing
 - `pickup_item_delay`

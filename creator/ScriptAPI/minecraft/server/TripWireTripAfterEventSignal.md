@@ -11,37 +11,45 @@ description: Contents of the @minecraft/server.TripWireTripAfterEventSignal clas
 Manages callbacks that are connected to when a trip wire is tripped.
 
 #### Examples
+
 ##### ***tripWireTripEvent.ts***
+
 ```typescript
-import { Vector3, world, BlockPermutation, TripWireTripAfterEvent, system } from '@minecraft/server';
+import { world, system, BlockPermutation, TripWireTripAfterEvent, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
 
-const overworld = world.getDimension('overworld');
-const targetLocation: Vector3 = { x: 0, y: 0, z: 0 };
+function tripWireTripEvent(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  // set up a tripwire
+  const redstone = targetLocation.dimension.getBlock({
+    x: targetLocation.x,
+    y: targetLocation.y - 1,
+    z: targetLocation.z,
+  });
+  const tripwire = targetLocation.dimension.getBlock(targetLocation);
 
-// set up a tripwire
-const redstone = overworld.getBlock({ x: targetLocation.x, y: targetLocation.y - 1, z: targetLocation.z });
-const tripwire = overworld.getBlock(targetLocation);
+  if (redstone === undefined || tripwire === undefined) {
+    log("Could not find block at location.");
+    return -1;
+  }
 
-if (redstone === undefined || tripwire === undefined) {
-    console.warn('Could not find block at location.');
-} else {
+  redstone.setPermutation(BlockPermutation.resolve(MinecraftBlockTypes.RedstoneBlock));
+  tripwire.setPermutation(BlockPermutation.resolve(MinecraftBlockTypes.TripWire));
 
-redstone.setPermutation(BlockPermutation.resolve('redstone_block'));
-tripwire.setPermutation(BlockPermutation.resolve('tripwire'));
-
-world.afterEvents.tripWireTrip.subscribe((tripWireTripEvent: TripWireTripAfterEvent) => {
+  world.afterEvents.tripWireTrip.subscribe((tripWireTripEvent: TripWireTripAfterEvent) => {
     const eventLoc = tripWireTripEvent.block.location;
 
     if (eventLoc.x === targetLocation.x && eventLoc.y === targetLocation.y && eventLoc.z === targetLocation.z) {
-        console.warn(
-            'Tripwire trip event at tick ' +
-                system.currentTick +
-                (tripWireTripEvent.sources.length > 0 ? ' by entity ' + tripWireTripEvent.sources[0].id : ''),
-        );
+      log(
+        "Tripwire trip event at tick " +
+          system.currentTick +
+          (tripWireTripEvent.sources.length > 0 ? " by entity " + tripWireTripEvent.sources[0].id : "")
+      );
     }
-});
+  });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/tripWireTripEvent.ts) code sandbox.
 
 ## Methods
 - [subscribe](#subscribe)
@@ -58,9 +66,9 @@ Adds a callback that will be called when a trip wire is tripped.
 - **callback**: (arg: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
 
 **Returns** (arg: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -71,39 +79,47 @@ Removes a callback from being called when a trip wire is tripped.
 
 #### **Parameters**
 - **callback**: (arg: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
+
 ##### ***tripWireTripEvent.ts***
+
 ```typescript
-import { Vector3, world, BlockPermutation, TripWireTripAfterEvent, system } from '@minecraft/server';
+import { world, system, BlockPermutation, TripWireTripAfterEvent, DimensionLocation } from "@minecraft/server";
+import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
 
-const overworld = world.getDimension('overworld');
-const targetLocation: Vector3 = { x: 0, y: 0, z: 0 };
+function tripWireTripEvent(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  // set up a tripwire
+  const redstone = targetLocation.dimension.getBlock({
+    x: targetLocation.x,
+    y: targetLocation.y - 1,
+    z: targetLocation.z,
+  });
+  const tripwire = targetLocation.dimension.getBlock(targetLocation);
 
-// set up a tripwire
-const redstone = overworld.getBlock({ x: targetLocation.x, y: targetLocation.y - 1, z: targetLocation.z });
-const tripwire = overworld.getBlock(targetLocation);
+  if (redstone === undefined || tripwire === undefined) {
+    log("Could not find block at location.");
+    return -1;
+  }
 
-if (redstone === undefined || tripwire === undefined) {
-    console.warn('Could not find block at location.');
-} else {
+  redstone.setPermutation(BlockPermutation.resolve(MinecraftBlockTypes.RedstoneBlock));
+  tripwire.setPermutation(BlockPermutation.resolve(MinecraftBlockTypes.TripWire));
 
-redstone.setPermutation(BlockPermutation.resolve('redstone_block'));
-tripwire.setPermutation(BlockPermutation.resolve('tripwire'));
-
-world.afterEvents.tripWireTrip.subscribe((tripWireTripEvent: TripWireTripAfterEvent) => {
+  world.afterEvents.tripWireTrip.subscribe((tripWireTripEvent: TripWireTripAfterEvent) => {
     const eventLoc = tripWireTripEvent.block.location;
 
     if (eventLoc.x === targetLocation.x && eventLoc.y === targetLocation.y && eventLoc.z === targetLocation.z) {
-        console.warn(
-            'Tripwire trip event at tick ' +
-                system.currentTick +
-                (tripWireTripEvent.sources.length > 0 ? ' by entity ' + tripWireTripEvent.sources[0].id : ''),
-        );
+      log(
+        "Tripwire trip event at tick " +
+          system.currentTick +
+          (tripWireTripEvent.sources.length > 0 ? " by entity " + tripWireTripEvent.sources[0].id : "")
+      );
     }
-});
+  });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/tripWireTripEvent.ts) code sandbox.

@@ -36,8 +36,6 @@
   href: minecraftBehavior_delayed_attack.md
 - name: behavior.dig
   href: minecraftBehavior_dig.md
-- name: behavior.drink_milk
-  href: minecraftBehavior_drink_milk.md
 - name: behavior.door_interact
   href: minecraftBehavior_door_interact.md
 - name: behavior.dragonchargeplayer
@@ -55,7 +53,9 @@
 - name: behavior.dragonstrafeplayer
   href: minecraftBehavior_dragonstrafeplayer.md
 - name: behavior.dragontakeoff
-  href: minecraftBehavior_dragontakeoff.md  
+  href: minecraftBehavior_dragontakeoff.md
+- name: behavior.drink_milk
+  href: minecraftBehavior_drink_milk.md
 - name: behavior.drink_potion
   href: minecraftBehavior_drink_potion.md
 - name: behavior.drop_item_for
@@ -84,6 +84,8 @@
   href: minecraftBehavior_find_mount.md
 - name: behavior.find_underwater_treasure
   href: minecraftBehavior_find_underwater_treasure.md
+- name: behavior.fire_at_target.md
+  href: minecraftBehavior_fire_at_target.md
 - name: behavior.flee_sun
   href: minecraftBehavior_flee_sun.md
 - name: behavior.float
@@ -120,6 +122,8 @@
   href: minecraftBehavior_inspect_bookshelf.md
 - name: behavior.investigate_suspicious_location
   href: minecraftBehavior_investigate_suspicious_location.md
+- name: behavior.jump_around_target
+  href: minecraftBehavior_jump_around_target.md
 - name: behavior.jump_to_block
   href: minecraftBehavior_jump_to_block.md
 - name: behavior.knockback_roar
@@ -148,6 +152,8 @@
   href: minecraftBehavior_mingle.md
 - name: behavior.mount_pathing
   href: minecraftBehavior_mount_pathing.md
+- name: behavior.move_around_target
+  href: minecraftBehavior_move_around_target.md
 - name: behavior.move_indoors
   href: minecraftBehavior_move_indoors.md
 - name: behavior.move_outdoors
@@ -194,8 +200,6 @@
   href: minecraftBehavior_owner_hurt_target.md
 - name: behavior.panic
   href: minecraftBehavior_panic.md
-- name: behavior.peek
-  href: minecraftBehavior_peek.md
 - name: behavior.pet_sleep_with_owner
   href: minecraftBehavior_pet_sleep_with_owner.md
 - name: behavior.pickup_items

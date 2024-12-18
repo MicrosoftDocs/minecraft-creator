@@ -13,14 +13,20 @@ description: Contents of the @minecraft/server-editor.ISimpleToolRailComponent c
 ### **session**
 `read-only session: IPlayerUISession;`
 
+Get a reference to the IPlayerUISession. This is the primary interface to the editor UI and all of the editor extension controls
+
 Type: *IPlayerUISession*
 
 ### **simpleTool**
 `read-only simpleTool: ISimpleTool;`
 
+Get a reference to the parent tool.
+
 Type: *ISimpleTool*
 
 ### **toolRail**
 `read-only toolRail: IModalTool;`
+
+Get the implementation interface of the underlying tool rail component
 
 Type: *IModalTool*

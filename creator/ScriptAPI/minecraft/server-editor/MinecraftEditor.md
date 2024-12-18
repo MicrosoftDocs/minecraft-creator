@@ -19,8 +19,8 @@ A global instance of the log output class object.  This is not contextualized to
 
 Type: [*Logger*](Logger.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **simulation**
 `read-only simulation: SimulationState;`

@@ -7,7 +7,7 @@ title: title Command
 description: Description and usage of the title command
 ---
 # `/title` Command
-Controls screen titles.
+Controls the text and behavior for screen titles using plain text.
 
 <table>
   <tr>
@@ -24,12 +24,12 @@ Controls screen titles.
 ### Clear title
 `/title <player: target> clear`
 
-`Clear` `title` for a given `player`.
+`Clear` the `title` for a given `player`.
 
 ### Reset title
 `/title <player: target> reset`
 
-`Reset` `title` for a given `player`.
+`Reset` the subtitle text for a given `player` to blank text and sets the `fadeIn`, `stay`, and `fadeOut` times to their default values.
 
 ### Add title, location, message
 `/title <player: target> <titleLocation: TitleSet> <titleText: message>`
@@ -43,20 +43,20 @@ Add a `title` for a `player` with set `fade in`, `stay`, and `fade out` times.
 
 ## Arguments
 - `fadeIn`: int
-An `integer` of gameticks for the title to fade in.
+The number of gameticks for the title to fade in.
 Default: `10`.
 - `fadeOut`: int
-An `integer` of gameticks for the title to fade out.
+The number of gameticks for the title to fade out.
 Default: `20`.
 - `player`: target
 A player name `string` or [`target selector`](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction#target-selectors) to identify the player.
 - `stay`: int
-An `integer` of gameticks for the title to stay.
+The number of gameticks for the title to stay.
 Default: `70`.
 - `titleLocation`: TitleSet
 An `enum` of `title`, `subtitle`, or `actionbar`.
 - `titleText`: message
-A `plain text` `string`  for the title.
+A `plain text` `string`  for the title text.
 
 ## Enums
 ### `TitleSet`
@@ -64,8 +64,8 @@ Enum of Title Sets
 
 #### Values
 - `title`
-Title
+Displays the title text as large text in the center of the screen.
 - `subtitle`
-Subtitle
+Displays the title text as smaller text below the `title`.
 - `actionbar`
-Action Bar
+Displays the title text just above the player's action bar.

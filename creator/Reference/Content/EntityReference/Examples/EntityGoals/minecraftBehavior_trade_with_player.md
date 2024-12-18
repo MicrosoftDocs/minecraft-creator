@@ -14,7 +14,7 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|priority|*not set*|Integer|Conditions that need to be met for the behavior to start.|
+| priority|*not set*|Integer|Conditions that need to be met for the behavior to start.|
 |filters| -- |Minecraft filter|The higher the priority, the sooner this behavior will be executed as a goal.|
 |max_distance_from_player|8.00|Decimal|The max distance that the mob can be from the player before exiting the goal.|
 

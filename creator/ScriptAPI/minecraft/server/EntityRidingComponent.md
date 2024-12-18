@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityRidingComponent Class
 description: Contents of the @minecraft/server.EntityRidingComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityRidingComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
@@ -26,8 +22,8 @@ The entity this entity is currently riding on.
 
 Type: [*Entity*](Entity.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

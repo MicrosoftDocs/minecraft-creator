@@ -27,7 +27,7 @@ ms.service: minecraft-bedrock-edition
 |must_see |false |Boolean |Determines if target-validity requires this entity to be in range only, or both in range and in sight. |
 |must_see_forget_duration |3.0 |Decimal |Time (in seconds) the target must not be seen by this entity to become invalid. Used only if "must_see" is true.|
 |persist_time |0.0 |Decimal |Time (in seconds) this entity can continue attacking the target after the target is no longer valid. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |reevaluate_description| false| Boolean| If true, the mob will stop being targeted if it stops meeting any conditions. |
 |reselect_targets |false |Boolean |Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each "scan_interval" or "attack_interval". |
 |scan_interval |10 |Integer |If "attack_interval" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to "scan_interval", minimum value is 1. Values under 10 can affect performance. |

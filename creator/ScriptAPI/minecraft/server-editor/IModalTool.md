@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server-editor.IModalTool class.
 ### **id**
 `read-only id: string;`
 
-Unique ID for the tool
+Unique identifier for the tool
 
 Type: *string*
 
@@ -26,48 +26,29 @@ Type: *EventSink<ModalToolLifecycleEventPayload>*
 
 ## Methods
 - [bindPropertyPane](#bindpropertypane)
-- [dispose](#dispose)
-- [hide](#hide)
 - [registerKeyBinding](#registerkeybinding)
 - [registerMouseButtonBinding](#registermousebuttonbinding)
 - [registerMouseDragBinding](#registermousedragbinding)
 - [registerMouseWheelBinding](#registermousewheelbinding)
-- [show](#show)
 - [unregisterInputBindings](#unregisterinputbindings)
 
 ### **bindPropertyPane**
 `
-bindPropertyPane(pane: IPropertyPane): void
+bindPropertyPane(pane: IRootPropertyPane): void
 `
 
-Binds a property pane to the toggle option. Show/hide will be handle depending selection state.
+Binds a property pane to the tool. When the tool is selected, the pane's visibility updates. Only one pane can be bound at a time.
 
 #### **Parameters**
-- **pane**: *IPropertyPane*
-
-**Returns** *void*
-
-### **dispose**
-`
-dispose(): void
-`
-
-Destroy the tool.
-
-**Returns** *void*
-
-### **hide**
-`
-hide(): void
-`
-
-Hide the tool.
+- **pane**: *IRootPropertyPane*
+  
+  Root pane associated with the modal tool
 
 **Returns** *void*
 
 ### **registerKeyBinding**
 `
-registerKeyBinding(action: SupportedKeyboardActionTypes, button: KeyboardKey, modifier: InputModifier): void
+registerKeyBinding(action: SupportedKeyboardActionTypes, binding: KeyBinding, info: KeyBindingInfo): void
 `
 
 Register a key press binding for an action which will be handled by the tool input context.
@@ -76,12 +57,12 @@ Register a key press binding for an action which will be handled by the tool inp
 - **action**: *SupportedKeyboardActionTypes*
   
   Action to register the binding for.
-- **button**: *KeyboardKey*
+- **binding**: *KeyBinding*
   
-  Keyboard key to invoke action.
-- **modifier**: *InputModifier*
+  Keyboard binding to invoke action.
+- **info**: *KeyBindingInfo*
   
-  Modifiers to create an input binding chord (Default: None).
+  Additional information about key binding.
 
 **Returns** *void*
 
@@ -127,20 +108,11 @@ Register an action to be called when mouse wheel is scrolled.
 
 **Returns** *void*
 
-### **show**
-`
-show(): void
-`
-
-Show the tool.
-
-**Returns** *void*
-
 ### **unregisterInputBindings**
 `
 unregisterInputBindings(): void
 `
 
-Unregister all input binding for this toggle.
+Unregister all input binding for this tool.
 
 **Returns** *void*

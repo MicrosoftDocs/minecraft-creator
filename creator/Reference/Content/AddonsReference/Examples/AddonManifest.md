@@ -140,7 +140,7 @@ Listed below are two examples showcasing how a manifest.json file can be written
         "uuid": "66c6e9a8-3093-462a-9c36-dbb052165822",
         "pack_scope": "world",
         "version": [1, 0, 0],
-        "min_engine_version": [1, 20, 0],
+        "min_engine_version": [1, 20, 0]
     },
     "modules": [
         {

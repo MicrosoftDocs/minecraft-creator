@@ -51,6 +51,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.find_cover| -1231227755 |
 | minecraft:behavior.find_mount| 731306871 |
 | minecraft:behavior.find_underwater_treasure| -1602192311 |
+| minecraft:behavior.fire_at_target| 15552728018745447502 |
 | minecraft:behavior.flee_sun| -617664229 |
 | minecraft:behavior.float| 1758503000 |
 | minecraft:behavior.float_wander| -1122048364 |
@@ -66,6 +67,8 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.hold_ground| 1804286487 |
 | minecraft:behavior.hurt_by_target| -1710404297 |
 | minecraft:behavior.inspect_bookshelf| 40191182 |
+| minecraft:behavior.investigate_suspicious_location| 17828766620487298865 |
+| minecraft:behavior.jump_around_target| 11795366379540415834 |
 | minecraft:behavior.jump_to_block| 9920654059703051752 |
 | minecraft:behavior.knockback_roar| 10556128811593022910 |
 | minecraft:behavior.lay_down| -2074934675 |
@@ -80,6 +83,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.melee_box_attack| 16943510645914782909 |
 | minecraft:behavior.mingle| 385775952 |
 | minecraft:behavior.mount_pathing| 1112137677 |
+| minecraft:behavior.move_around_target| 12172580866581071579 |
 | minecraft:behavior.move_indoors| 15759011189030877060 |
 | minecraft:behavior.move_outdoors| 13363481534821336549 |
 | minecraft:behavior.move_through_village| 779377630 |
@@ -104,7 +108,6 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.owner_hurt_by_target| 530667419 |
 | minecraft:behavior.owner_hurt_target| 995655261 |
 | minecraft:behavior.panic| -169886247 |
-| minecraft:behavior.peek| 211304085 |
 | minecraft:behavior.pet_sleep_with_owner| 1379392240 |
 | minecraft:behavior.pickup_items| 644287189 |
 | minecraft:behavior.play| 9028661884418335188 |
@@ -155,9 +158,11 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:behavior.swell| -1473132493 |
 | minecraft:behavior.swim_idle| 6562850329755828441 |
 | minecraft:behavior.swim_wander| 12378924708543723854 |
+| minecraft:behavior.swim_up_for_breath| 6795851152810947053|
 | minecraft:behavior.swim_with_entity| 10204691344094313319 |
 | minecraft:behavior.swoop_attack| 7451467701814397451 |
 | minecraft:behavior.take_flower| 1218648257 |
+| minecraft:behavior.teleport_to_owner| 1980014114121577323|
 | minecraft:behavior.tempt| 422904556 |
 | minecraft:behavior.timer_flag_1| 9107193206350859182 |
 | minecraft:behavior.timer_flag_2| 9107192106839230971 |
@@ -220,8 +225,10 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:dash| -51257122 |
 | minecraft:default_look_angle| -815556357 |
 | minecraft:despawn| 1674909940 |
+| minecraft:dimension_bound| -1843592159 |
 | minecraft:drying_out_timer| 2113510784 |
 | minecraft:economy_trade_table| 1705466896 |
+| minecraft:entity_armor_equipment_slot_mapping| 388041038|
 | minecraft:entity_sensor| -406052184 |
 | minecraft:environment_sensor| 687748970 |
 | minecraft:equip_item| -1774220620 |
@@ -268,7 +275,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:jump.dynamic| 945664737 |
 | minecraft:jump.static| 1064987526 |
 | minecraft:leashable| 893445039 |
-| minecraft:lookat| -1329707008 |
+| minecraft:looked_at| -1189178052 |
 | minecraft:loot| 1775814032 |
 | minecraft:managed_wandering_trader| 846609640 |
 | minecraft:mark_variant| 663621689 |
@@ -322,6 +329,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:trade_table| 50480315 |
 | minecraft:trail| 1632590434 |
 | minecraft:transformation| -457894577 |
+| minecraft:transient| -413020544 |
 | minecraft:trusting| 936499892 |
 | minecraft:type_family| -255011285 |
 | minecraft:variant| -1789583977 |
@@ -343,6 +351,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:ambient_sound_interval| -1314051310 |
 | minecraft:can_climb| -550459594 |
 | minecraft:can_fly| 985724318 |
+| minecraft:cannot_be_attacked| 1363084217 |
 | minecraft:can_power_jump| -763124853 |
 | minecraft:color| 1069623177 |
 | minecraft:color2| 1429635777 |
@@ -353,6 +362,7 @@ Listed below are the ID values for each set of Entity JSON Entries.
 | minecraft:flying_speed| -570508595 |
 | minecraft:friction_modifier| -714364556 |
 | minecraft:ground_offset| -1816881803 |
+| minecraft:ignore_cannot_be_attacked | 2139692418 |
 | minecraft:input_ground_controlled| -646415617 |
 | minecraft:is_baby| 1853172763 |
 | minecraft:is_charged| 125340337 |

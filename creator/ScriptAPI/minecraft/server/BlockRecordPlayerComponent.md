@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockRecordPlayerComponent Class
 description: Contents of the @minecraft/server.BlockRecordPlayerComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockRecordPlayerComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*BlockComponent*](BlockComponent.md)
@@ -18,22 +14,35 @@ monikerRange: "=minecraft-bedrock-experimental"
 Represents a block that can play a record.
 
 ## Methods
-- [clearRecord](#clearrecord)
+- [ejectRecord](#ejectrecord)
+- [getRecord](#getrecord)
 - [isPlaying](#isplaying)
+- [pauseRecord](#pauserecord)
+- [playRecord](#playrecord)
 - [setRecord](#setrecord)
 
-### **clearRecord**
+### **ejectRecord**
 `
-clearRecord(): void
+ejectRecord(): void
 `
 
-Clears the currently playing record of this record-playing block.
+Ejects the currently set record of this record-playing block.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+### **getRecord**
+`
+getRecord(): ItemStack | undefined
+`
 
-> [!WARNING]
-> This function can throw errors.
+Gets the currently set record of this record-playing block.
+
+**Returns** [*ItemStack*](ItemStack.md) | *undefined*
+  
+Notes:
+- This function can throw errors.
 
 ### **isPlaying**
 `
@@ -43,29 +52,50 @@ isPlaying(): boolean
 Returns true if the record-playing block is currently playing a record.
 
 **Returns** *boolean*
+  
+Notes:
+- This function can throw errors.
 
-> [!WARNING]
-> This function can throw errors.
+### **pauseRecord**
+`
+pauseRecord(): void
+`
+
+Pauses the currently playing record of this record-playing block.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+
+### **playRecord**
+`
+playRecord(): void
+`
+
+Plays the currently set record of this record-playing block.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setRecord**
 `
-setRecord(recordItemType: ItemType | string): void
+setRecord(recordItemType?: ItemType | string, startPlaying?: boolean): void
 `
 
 Sets and plays a record based on an item type.
 
 #### **Parameters**
-- **recordItemType**: [*ItemType*](ItemType.md) | *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+- **recordItemType**?: [*ItemType*](ItemType.md) | *string* = `null`
+- **startPlaying**?: *boolean* = `true`
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ## Constants
 
 ### **componentId**
-`static read-only componentId = "minecraft:recordPlayer";`
+`static read-only componentId = "minecraft:record_player";`
 
 Type: *string*

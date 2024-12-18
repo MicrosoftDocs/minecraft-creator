@@ -36,9 +36,10 @@ It's recommended that the following be completed before beginning this tutorial.
 
 - Either have [Blockbench](https://blockbench.net) installed or access to [Blockbench web app](https://web.blockbench.net)
 - [Getting Started with Add-On Development](GettingStarted.md)
+- Check out the [Introduction to Blockbench](./Blockbench.md)
 
 >[!IMPORTANT]
->Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering. Users should use at their own discretion.
+>Blockbench is provided by external, third-party contributors and is not a Mojang/Microsoft offering.
 
 
 ## Installation
@@ -191,6 +192,11 @@ To view all of the available behaviors and AI Goal Components that an entity can
 > [Entity JSON Documentation](../Reference/Content/EntityReference/index.yml)
 
 ## What's Next?
+
+If you'd like to see another tutorial on using Blockbench with the Minecraft Entity Wizard, you can watch it on the [Minecraft Creator Channel](https://aka.ms/mcv).
+
+> [!div class="nextstepaction"]
+> [Tutorial Video](https://www.youtube.com/watch?v=OdZlKpLOkj4)
 
 Want to learn more about building with Blockbench? The Blockbench Wiki has step by step guides and reference documentation for modeling, texturing, and animating any custom creation you can imagine.
 

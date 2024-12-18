@@ -259,24 +259,6 @@ Listed below are the mathematical functions available for use in Molang.
 | `math.sqrt(value)`| Square root of value |
 | `math.trunc(value)`| Round value towards zero |
 
-## Arrow Operator `->`
-
-Some return values of query function, or values stored in temp/entity/context variables can be a reference to another entity.  The `->` operator allows an expression to access variables or run queries on that entity.  For example, the example below will find all pigs within four meters of the current entity(including itself if it's a pig), and increment a variable `v.x` on itself if the block immediately above each pig is flammable (such as an oak button).
-
-> [!CAUTION]
-> In the case where the left-hand-side of the `->` operator has an error (value is null, the entity was killed previously, or some other issue), the expression will not evaluate the right-hand-side and will return 0.
->
-> This implementation style was a choice between performance and not requiring content creators to overly worry about checking for potentially bad values everywhere.
-
-### Example
-
-```
-v.x = 0;
-for_each(v.pig, query.get_nearby_entities(4, 'minecraft:pig'), {
-    v.x = v.x + v.pig->query.get_relative_block_state(0, 1, 0, 'flammable');
-});
-```
-
 ## Brace Scope Delimiters `{ }`
 
 One can group a series of statements into a single group by wrapping them in `{` and `}` symbols.  This is used primarily in loops and conditional statements:
@@ -328,19 +310,6 @@ loop(10, {
 });
 ```
 
-## for_each
-
-[`query.get_nearby_entities`](QueryFunctions.md#list-of-entity-queries) returns an array of entities.  In order to iterate through them, you can use the following new built-in function `for_each`.  It takes three parameters: `for_each(<variable>, <array>, <expression>);`  The variable can be any variable, either a `temp.` or `variable.`, although we would recommend using `temp.` to not pollute the entity's variable space.  The expression is any Molang expression you want to execute for each entry in the array).
-
-### Example
-
-```
-"v.x = 0;
-for_each(t.pig, query.get_nearby_entities(4, 'minecraft:pig'), {
-    v.x = v.x + 1;
-});"
-```
-
 ## break
 
 This will exit out of a `loop` or `for_each` early.
@@ -380,7 +349,7 @@ loop(10, {
 
 ## Null Coalescing Operator `??`
 
-Similar to how the null-coalescing operator works in C, you can now reference a variable that may or may not exist without seeing a content error.  If it doesn't, you can now provide a default value to use.  Previously, if a variable didn't exist you would get a content error.  This was to make sure variables were always initialized correctly to avoid uninitialized variable bugs.
+Similar to how the null-coalescing operator works in C#, you can now reference a variable that may or may not exist without seeing a content error.  If it doesn't, you can now provide a default value to use.  Previously, if a variable didn't exist you would get a content error.  This was to make sure variables were always initialized correctly to avoid uninitialized variable bugs.
 
 Unfortunately this then required initialized scripts, or in some cases some complex work-arounds to make sure variables were initialized.  Now, if you know a variable won't be initialized in the first run of a script, you can use the following:
 

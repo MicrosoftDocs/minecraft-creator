@@ -4,7 +4,7 @@ title: Casual Creator # < 60 chars
 summary: "The Casual Creator section features regular content on ideas and samples you can build, learn from, and use." # < 160 chars
 
 metadata:
-  title: Causal Creator # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Casual Creator # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: "The Casual Creator section features regular ideas and samples you can build, learn from, and use. Come back often for more ideas!"  # Required; article description that is displayed in search results. < 160 chars.
   ms.service: minecraft-bedrock-edition
   ms.topic: landing-page # Required
@@ -27,4 +27,10 @@ landingContent:
            - text: Part 2 - Making Dreams Come True
              url: ./ChillDreamsPart2MakingDreamsComeTrue.md
            - text: Part 3 - Smells Like Memories
-             url: ./ChillDreamsPart3SmellsLikeMemories.md             
+             url: ./ChillDreamsPart3SmellsLikeMemories.md       
+  - title: More articles
+    linkLists:
+      - linkListType: learn
+        links:
+           - text: Building Debug Tools
+             url: ./DebugTools.md

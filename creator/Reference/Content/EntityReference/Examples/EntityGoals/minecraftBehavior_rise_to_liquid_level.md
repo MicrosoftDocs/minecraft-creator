@@ -15,7 +15,7 @@ ms.service: minecraft-bedrock-edition
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |liquid_y_offset| 0.0| Decimal| Vertical offset from the liquid |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |rise_delta | 0.0| Decimal| Displacement for how much the entity will move up in the vertical axis.|
 |sink_delta | 0.0| Decimal| Displacement for how much the entity will move down in the vertical axis|
 

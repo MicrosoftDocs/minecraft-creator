@@ -16,13 +16,17 @@ Have you ever been in the middle of an adventure in Minecraft and you just had t
 
 For me, personally, I happened to have a spare mini PC and an empty screen. What better to display on it than some beautiful dynamic Minecraft-y scenes? I could sure use a "Minecraft screensaver."
 
-I also wanted to accomplish this goal in the Minecraftiest way possible: through Add-Ons. Add-Ons let you add extensions to your existing Minecraft experiences, like survival worlds. While Add-Ons are a [cool new addition to the Minecraft Marketplace](https://www.minecraft.net/en-us/article/introducing-Add-Ons) and there is a diverse set of new experiences, Add-Ons and mods have been available and delivered in the community for a long time, whether it's Add-Ons for Bedrock or Mods for Java. You can build your own nifty Add-Ons! There is also an [amazing community focused on building Add-Ons for Bedrock - (bedrock.dev)](https://wiki.bedrock.dev/discord.html).
+I also wanted to accomplish this goal in the Minecraftiest way possible: through Add-Ons. Add-Ons let you add extensions to your existing Minecraft experiences, like survival worlds. While Add-Ons are a [cool new addition to the Minecraft Marketplace](https://www.minecraft.net/article/introducing-Add-Ons) and there is a diverse set of new experiences, Add-Ons and mods have been available and delivered in the community for a long time, whether it's Add-Ons for Bedrock or Mods for Java. You can build your own nifty Add-Ons! There is also an [amazing community focused on building Add-Ons for Bedrock - (bedrock.dev)](https://wiki.bedrock.dev/discord.html).
 
 This is the first in a three-part set of articles.
 
 1. The Dream Turkey - _you are here_
 1. [Making Dreams Come True](./ChillDreamsPart2MakingDreamsComeTrue.md)
 1. [Smells Like Memories](./ChillDreamsPart3SmellsLikeMemories.md)
+
+There is also a video available for part 1 of this series:
+
+> [!VIDEO https://www.youtube.com/embed/24l6iKTB-HQ]
 
 You can get the sample from this project from [https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/). Note that there are subfolders for each part of this series, along with the "complete" sample.
 
@@ -145,7 +149,7 @@ function startDreamSleep(player: Player) {
 }
 ```
 
-What this code does is detect if the player eats a turkey for at least 60 ticks (3 seconds) by measuring the time in between the start and stop events. When the dream sequence starts, I’ll basically set the action bar with some text that will fade in and fade out. Because title/subtitle/and action bar are generally all controlled by the same fade in/fade out logic, we set the title too, here, even if we’re not really using that text.
+What this code does is detect if the player eats a turkey for at least 60 ticks (3 seconds) by measuring the time in between the start and stop events. When the dream sequence starts, I'll basically set the action bar with some text that will fade in and fade out. Because title/subtitle/and action bar are generally all controlled by the same fade in/fade out logic, we set the title too, here, even if we're not really using that text.
 
 If you try it out with `gulp` again, gulp should compile the TypeScript into JavaScript and push it into the Minecraft folder.
 
@@ -157,7 +161,7 @@ So, that's it for this first part of building the Chill Dreams Add-On. I got a s
 
 You can see the final output at [the end of start 1 on GitHub](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/1_dream_turkey).
 
-In the next part, we’ll implement the Dream effect more broadly – and in the third and final section, we'll add a new concept of "Memories" to make Dreams more interesting. Stay tuned for the next two parts!
+In the next part, we'll implement the Dream effect more broadly – and in the third and final section, we'll add a new concept of "Memories" to make Dreams more interesting. Stay tuned for the next two parts!
 
 --
 

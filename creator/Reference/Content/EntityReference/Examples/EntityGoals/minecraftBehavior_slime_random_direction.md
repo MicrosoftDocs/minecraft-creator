@@ -17,7 +17,7 @@ ms.service: minecraft-bedrock-edition
 | add_random_time_range| 3| Integer| Additional time (in whole seconds), chosen randomly in the range of [0, "add_random_time_range"], to add to "min_change_direction_time". |
 | min_change_direction_time| 2| Decimal| Constant minimum time (in seconds) to wait before choosing a new direction. |
 | turn_range| 360| Integer| Maximum rotation angle range (in degrees) when randomly choosing a new direction. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 
 ## Example
 
