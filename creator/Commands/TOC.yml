@@ -1,5 +1,7 @@
 - name: List of commands
   href: commands.md
+- name: aimassist
+  href: commands/aimassist.md
 - name: allowlist
   href: commands/allowlist.md
 - name: camera
@@ -74,6 +76,8 @@
   href: commands/particle.md
 - name: permission
   href: commands/permission.md
+- name: place
+  href: commands/place.md
 - name: playanimation
   href: commands/playanimation.md
 - name: playsound
@@ -102,6 +106,8 @@
   href: commands/script.md
 - name: scriptevent
   href: commands/scriptevent.md
+- name: sendshowstoreoffer
+  href: commands/sendshowstoreoffer.md
 - name: setblock
   href: commands/setblock.md
 - name: setmaxplayers
@@ -146,8 +152,6 @@
   href: commands/toggledownfall.md
 - name: transfer
   href: commands/transfer.md
-- name: volumearea
-  href: commands/volumearea.md
 - name: weather
   href: commands/weather.md
 - name: wsserver

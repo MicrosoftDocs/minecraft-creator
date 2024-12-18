@@ -25,9 +25,9 @@ Adds a callback that will be called when an effect is added to an entity.
 - **callback**: (arg: [*EffectAddBeforeEvent*](EffectAddBeforeEvent.md)) => *void*
 
 **Returns** (arg: [*EffectAddBeforeEvent*](EffectAddBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -38,6 +38,6 @@ Removes a callback from being called when an effect is added to an entity.
 
 #### **Parameters**
 - **callback**: (arg: [*EffectAddBeforeEvent*](EffectAddBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

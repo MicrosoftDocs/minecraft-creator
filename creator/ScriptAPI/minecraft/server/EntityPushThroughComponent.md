@@ -21,9 +21,9 @@ Sets the distance through which the entity can push through.
 Value of the push through distances of this entity.
 
 Type: *number*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ## Constants
 

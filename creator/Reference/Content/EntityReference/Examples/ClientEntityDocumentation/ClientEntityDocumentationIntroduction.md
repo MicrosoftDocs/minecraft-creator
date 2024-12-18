@@ -1,14 +1,14 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - Entity JSON Introduction
+title: Client Entity JSON and Introduction
 description: "A reference document providing an introduction to the concept of entity JSON"
 ms.service: minecraft-bedrock-edition
 ---
 
-# Entity Documentation - Entity JSON Introduction
+# Client Entity JSON and Introduction
 
-Entity definitions are contained within a Resource Pack.
+Typically, entities have a definition JSON file both wihin a behavior pack and a resource pack. This documentation pertains to the entity JSON contained within a Resource Pack.
 
 > [!TIP]
 > If this is your first time learning about Entities within Minecraft: Bedrock Edition, please feel free to check out our tutorial [Introduction to Behavior Packs](../../../../../Documents/BehaviorPack.md) to learn about all the files that go into how an Entity functions within Minecraft.
@@ -160,7 +160,11 @@ This sets the color or texture used for the entity Spawn Egg. There are 2 ways t
 }
 ```
 
-When there are more than one texture associated with a texture name you can use an index to pick the one that you want. If no index is specified than it is assumed to be 0 and the first texture in the list is used.
+The other way is to specify a texture.
+
+Example Spawn Egg specifying a texture. The texture is located in the "items_texture" JSON in the textures folder of the Resource Pack. When there are more than one texture associated with a texture name you can use an index to pick the one that you want. If no index is specified than it is assumed to be 0 and the first texture in the list is used.
+
+When more than one texture is associated with a texture name, you can use an index to pick the one that you want. If no index is specified than it is assumed to be 0 and the first texture in the list is used.
 
 ### Example Spawn Egg specifying a texture
 

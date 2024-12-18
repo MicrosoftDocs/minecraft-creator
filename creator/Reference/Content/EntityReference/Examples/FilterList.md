@@ -65,6 +65,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[is_mark_variant](Filters/is_mark_variant.md)|Returns true if the subject entity is the mark variant number provided. |
 |[is_missing_health](Filters/is_missing_health.md)|Tests if the subject is not at full health. |
 |[is_moving](Filters/is_moving.md)|Returns true if the subject entity is moving. |
+|[is_navigating](Filters/is_navigating.md)|Returns true if the subject entity is navigating. |
 |[is_owner](Filters/is_owner.md)|Returns true if the subject entity is the owner of the calling entity. |
 |[is_persistent](Filters/is_persistent.md)|Tests if the subject's persistence matches the bool value passed in. |
 |[is_raider](Filters/is_raider.md)|Returns true if the subject entity is a raider. |
@@ -89,6 +90,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[on_ground](Filters/on_ground.md)|Returns true when the subject entity is on the ground. |
 |[on_hot_block](Filters/on_hot_block.md)|Tests if the subject is on a hot block. |
 |[on_ladder](Filters/on_ladder.md)|Returns true when the subject entity is on a ladder. |
+|[owner_distance](Filters/owner_distance.md)|Tests the distance between the calling entity and its owner.|
 |[random_chance](Filters/random_chance.md)|Returns true if the random chance rolls 0 out of a specified max range. |
 |[rider_count](Filters/rider_count.md)|Returns the number of riders on this entity. |
 |[surface_mob](Filters/surface_mob.md)|Tests if the subject is a surface mob. |

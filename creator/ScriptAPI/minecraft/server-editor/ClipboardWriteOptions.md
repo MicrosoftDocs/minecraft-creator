@@ -12,19 +12,6 @@ Interface used to specify the options when a clipboard item is being written to 
 
 ## Properties
 
-### **anchor**
-`anchor?: minecraftserver.Vector3;`
-
-The anchor is a unit vector representation of the side or corner of the Clipboard Item to be written to the world.
-
-`{0, 0, 0}` represents the center of the Clipboard item, `{0, 1, 0}` represents the top, `{-1, -1, -1}` represents the bottom/back/left corner, etc
-
-The anchor is used in conjunction with the item size to determine the object relative anchor point where the object will be applied in the world.
-
-Values for the X/Y/Z components should be within the range `(-1 <= X/Y/Z <=1)`
-
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-
 ### **mirror**
 `mirror?: minecraftserver.StructureMirrorAxis;`
 
@@ -37,6 +24,11 @@ An enum which represents the axis (or combination of axis') along which the item
 - XZ
 
 Type: [*@minecraft/server.StructureMirrorAxis*](../../minecraft/server/StructureMirrorAxis.md)
+
+### **normalizedOrigin**
+`normalizedOrigin?: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 ### **offset**
 `offset?: minecraftserver.Vector3;`

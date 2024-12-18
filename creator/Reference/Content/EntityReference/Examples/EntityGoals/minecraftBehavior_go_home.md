@@ -19,7 +19,7 @@ ms.service: minecraft-bedrock-edition
 | interval| 120| Integer| A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal. |
 | on_failed| | Trigger| Event(s) to run when this goal fails. |
 | on_home| | Trigger| Event(s) to run when this mob gets home. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
 
 ## Example

@@ -21,15 +21,12 @@ Changes a block to another block.
 </table>
 
 ## Usage
-### Set block, tile data
+### Set block, block states
 `/setblock <position: x y z> <tileName: Block> <blockStates: block properties> [oldBlockHandling: SetBlockMode]`
 
-Set a `block` in a `position` using `tile name` with optional `tile data` and `old block handling` fill methods.
-
-### Set block, block states
-`/setblock <position: x y z> <tileName: Block> [oldBlockHandling: SetBlockMode]`
-
 Set a `block` in a `position` using `tile name` with optional `block states` and `old block handling` fill methods.
+
+### `/setblock <position: x y z> <tileName: Block> [oldBlockHandling: SetBlockMode]`
 
 ## Arguments
 - `blockStates`: block properties

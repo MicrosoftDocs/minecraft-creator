@@ -14,7 +14,7 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 |summon_choices|*not set* | List|  List of spells for the mob to use to summon entities.|
 
 ### summon_choices
@@ -41,16 +41,17 @@ ms.service: minecraft-bedrock-edition
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 | base_delay| 0.0|Decimal| Amount of time in seconds to wait before this step starts |
-|delay_per_summon| 0.0| Decimal|  Amount of time in seconds before each entity is summoned in this step |
-|entity_lifespan| -1.0| Decimal|  Amount of time in seconds that the spawned entity will be alive for. A value of -1.0 means it will remain alive for as long as it can |
-|[entity_type](../Definitions/NestedTables/entity_types.md)|*not set* | String|  The entity type of the entities we will spawn in this step |
-|num_entities_spawned| 1| Integer| Number of entities that will be spawned in this step |
-|shape| line| String| The base shape of this step. Valid values are circle and line |
-|size| 1.0| Decimal| The base size of the entity |
-|sound_event|*not set* | String|  The sound event to play for this step |
-|summon_cap| 0| Integer|  Maximum number of summoned entities at any given time |
-| summon_cap_radius| 0.0| Decimal|Maximum radius where the summon entities can spawn  |
-|target| self| String|  The target of the spell. This is where the spell will start (line will start here, circle will be centered here) |
+| delay_per_summon| 0.0| Decimal|  Amount of time in seconds before each entity is summoned in this step |
+| entity_lifespan| -1.0| Decimal|  Amount of time in seconds that the spawned entity will be alive for. A value of -1.0 means it will remain alive for as long as it can |
+| [entity_type](../Definitions/NestedTables/entity_types.md)|*not set* | String|  The entity type of the entities we will spawn in this step |
+| num_entities_spawned| 1| Integer| Number of entities that will be spawned in this step |
+| shape| line| String| The base shape of this step. Valid values are circle and line |
+| size| 1.0| Decimal| The base size of the entity |
+| sound_event|*not set* | String|  The sound event to play for this step |
+| summon_cap| 0| Integer|  Maximum number of summoned entities at any given time |
+| summon_cap_radius | 0.0| Decimal|Maximum radius where the summon entities can spawn  |
+| summon_event | *not set* | String | Event to invoke on each summoned entity on spawn |
+| target | self| String|  The target of the spell. This is where the spell will start (line will start here, circle will be centered here) |
 
 ## Example
 

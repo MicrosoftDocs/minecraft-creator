@@ -13,6 +13,11 @@ This leverages a starter sample available from [https://github.com/microsoft/min
 > [!IMPORTANT]
 > Just getting started with JavaScript? You may want to check out the [Scripting Introduction](./ScriptingIntroduction.md) article which will show the basics of creating a very basic behavior pack with JavaScript fundamentals. Once you're comfortable with the JavaScript fundamentals and concepts, this article will help you use TypeScript with Minecraft. TypeScript is a more helpfully structured dialect of JavaScript; however, because TypeScript requires compilation of your TypeScript source into JavaScript that Minecraft can use, there is a bit more project structure you'll need to establish up front that this tutorial will walk you through.  
 
+## On the Minecraft Creator Channel
+
+> [!VIDEO https://www.youtube.com/embed/kkm8xxqGVvs]
+If you prefer to watch a video version of this tutorial, you can view it on the [Minecraft Creator Channel](https://aka.ms/mcv), [available here](https://www.youtube.com/watch?v=kkm8xxqGVvs).
+
 ## Prerequisites
 
 ### Install Node.js tools, if you haven't already

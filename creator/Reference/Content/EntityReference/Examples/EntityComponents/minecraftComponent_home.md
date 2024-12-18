@@ -8,14 +8,16 @@ ms.service: minecraft-bedrock-edition
 
 # Entity Documentation - minecraft:home
 
-`minecraft:home` saves a home point of interest for when the entity is spawned.
+`minecraft:home` saves a home position for when the entity is spawned.
 
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-| home_block_list| *not set*| List| Optional block list that the home position will be associated with. If any of the blocks no longer exist at that position, the home restriction is removed. Example syntax: minecraft:sand.  Not supported: minecraft:sand:1 |
-| restriction_radius| -1| Integer| The radius that the entity will be restricted to in relation to its home |
+| home_block_list | *not set* | List | Optional list of blocks that can be considered a valid home. If no such block longer exists at that position, the home restriction is removed. Example syntax: minecraft:sand. Not supported: minecraft:sand:1. |
+| restriction_radius | 0 | Integer | Optional radius that the entity will be restricted to in relation to its home. |
+| restriction_type | *not set* | String | Defines how the the entity will be restricted to its home position. The possible values are: "none" which poses no restriction, "random_movement" which restricts randomized movement to be around the home position, and "all_movement", which restricts any kind of movement to be around the home position. However, entities that somehow got too far away from their home will always be able to move closer to it, if prompted to do so. |
+
 
 ## Example
 

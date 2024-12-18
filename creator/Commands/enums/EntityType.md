@@ -36,8 +36,6 @@ Bee
 Axolotl
 - `axolotl`
 Axolotl
-- `minecraft:breeze`
-- `breeze`
 - `minecraft:pig`
 Pig
 - `pig`
@@ -74,8 +72,6 @@ Villager
 Wandering Trader
 - `wandering_trader`
 Wandering Trader
-- `minecraft:bogged`
-- `bogged`
 - `minecraft:mooshroom`
 Mooshroom
 - `mooshroom`
@@ -160,6 +156,10 @@ Tadpole
 Allay
 - `allay`
 Allay
+- `minecraft:husk`
+Husk
+- `husk`
+Husk
 - `minecraft:tropicalfish`
 Tropical Fish
 - `tropicalfish`
@@ -204,6 +204,10 @@ Zombie Horse
 Zombie
 - `zombie`
 Zombie
+- `minecraft:stray`
+Stray
+- `stray`
+Stray
 - `minecraft:drowned`
 Drowned
 - `drowned`
@@ -252,14 +256,6 @@ Blaze
 Warden
 - `warden`
 Warden
-- `minecraft:stray`
-Stray
-- `stray`
-Stray
-- `minecraft:husk`
-Husk
-- `husk`
-Husk
 - `minecraft:wither_skeleton`
 Wither Skeleton
 - `wither_skeleton`
@@ -328,6 +324,12 @@ Piglin
 Zoglin
 - `zoglin`
 Zoglin
+- `minecraft:breeze`
+- `breeze`
+- `minecraft:bogged`
+- `bogged`
+- `minecraft:creaking`
+- `creaking`
 - `minecraft:minecart`
 Minecart
 - `minecart`
@@ -380,6 +382,8 @@ Splash Potion
 Leash Knot
 - `leash_knot`
 Leash Knot
+- `minecraft:wind_charge_projectile`
+- `wind_charge_projectile`
 - `minecraft:boat`
 Boat
 - `boat`
@@ -408,6 +412,10 @@ Fireworks Rocket
 NPC
 - `npc`
 NPC
+- `editor:ruler_pointer_selected`
+- `editor:location_pointer_idle`
+- `editor:location_pointer_selected`
+- `editor:ruler_idle`
 - `editor:map_marker`
 
 ## References

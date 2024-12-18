@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EqualsComparison Interface
 description: Contents of the @minecraft/server.EqualsComparison class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EqualsComparison Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Equal to operator.
 

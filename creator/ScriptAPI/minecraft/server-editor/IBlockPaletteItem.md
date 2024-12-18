@@ -27,10 +27,10 @@ getBlock(): minecraftserver.BlockType | undefined
 
 ### **getDisplayName**
 `
-getDisplayName(): string
+getDisplayName(): string | undefined
 `
 
-**Returns** *string*
+**Returns** *string* | *undefined*
 
 ### **getType**
 `
@@ -46,11 +46,8 @@ setBlock(block: minecraftserver.BlockPermutation | minecraftserver.BlockType | s
 
 #### **Parameters**
 - **block**: [*@minecraft/server.BlockPermutation*](../../minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*

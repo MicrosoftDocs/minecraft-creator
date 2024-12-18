@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerGameModeChangeAfterEventSignal Class
 description: Contents of the @minecraft/server.PlayerGameModeChangeAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerGameModeChangeAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected to after a players game mode is changed.
 
@@ -29,9 +25,9 @@ Adds a callback that will be called after a players game mode is changed.
 - **callback**: (arg: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*
 
 **Returns** (arg: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -42,6 +38,6 @@ Removes a callback from being called after a players game mode is changed.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

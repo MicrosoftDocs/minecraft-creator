@@ -40,17 +40,17 @@ Here is a list of all Intrinsic Block States within Minecraft: Bedrock Edition. 
 |color_bit |Boolean |True, False |blue colored torch |Sets if a torch is a colored torch block|
 |composter_fill_level|Integer | 0 - 8 | composter |Sets level of material in a composter|
 |conditional_bit |Boolean |True, False |chain command block, repeating command block |Determines if a command block is conditional or not|
-|coral_color |String |blue, pink, purple, red, yellow, blue dead, pink dead, red dead, yellow dead |coral fan, coral fan dead, coral, coral block |Determines the color of a coral block|
+|coral_color |String |blue, pink, purple, red, yellow, blue dead, pink dead, red dead, yellow dead |coral fan, coral fan dead, coral, coral block |DEPRECATED - Determines the color of a coral block|
 |coral_direction |Integer |0 - 3 |coral fan hang, coral fan hang 2, coral fan hang 3 |Describes the rotation of coral fans|
 |coral_fan_direction| Integer |0, 1 |coral fan, coral fan dead| Determines direction fan-shaped coral is facing|
-|coral_hang_type_bit |Boolean |True, False |coral fan hang, coral fan hang 2, coral fan hang 3 |Describes the type of hanging for coral fans|
+|coral_hang_type_bit |Boolean |True, False |coral fan hang, coral fan hang 2, coral fan hang 3 |DEPRECATED - Describes the type of hanging for coral fans|
 |covered_bit |Boolean |True, False |top snow |Describes if a top snow block is covering another block|
 |cracked_state |String |no_cracks, cracked, max_cracked |turtle egg |Determines the cracked state of turtle eggs|
-|damage |String |undamaged, slightly_damaged, very_damaged, broken |anvil |Determines the state of damage of an Anvil|
+|damage |String |undamaged, slightly_damaged, very_damaged, broken |anvil |DEPRECATED - Determines the state of damage of an Anvil|
 |deprecated|*none* |*none* |*not used*|Denotes deprecated blocks, this block state is will be removed|
-|dead_bit |Boolean |True, False |coral fan hang, coral fan hang 2, coral fan hang 3 |Determines if coral, coral fans, or sea pickles are dead|
+|dead_bit |Boolean |True, False |coral fan hang, coral fan hang 2, coral fan hang 3 |DEPRECATED - Determines if coral, coral fans, or sea pickles are dead|
 |direction |Integer |0 - 3 |acacia door, acacia fence gate, acacia trapdoor, anvil, bed, bell, birch door, birch fence gate, birch trapdoor, campfire, carved pumpkin, chalkboard, chemistry table, cocoa, crimson door, crimson fence gate, crimson trapdoor, dark oak door, dark oak fence gate, dark oak trapdoor, end portal frame, fence gate, iron door, iron trapdoor, jungle door, jungle fence gate, jungle trapdoor, lectern, loom, mangrove door, mangrove fence gate, mangrove trapdoor, powered comparator, powered repeater, pumpkin, soul campfire, spruce door, spruce fence gate, spruce trapdoor, trapdoor, trip wire hook, unpowered comparator, unpowered repeater, warped door, warped fence gate, warped trapdoor, wooden door |Determines the North, South, East, and West direction of some blocks. 0 = South, 1 = West, 2 = North 3 = East|
-|dirt_type |String |normal, coarse |dirt |Determines the dirt type of a block|
+|dirt_type |String |normal, coarse |dirt |DEPRECATED - Determines the dirt type of a block|
 |disarmed_bit |Boolean |True, False |trip wire block |Determines if a tripwire is disarmed or not.|
 |door_hinge_bit |Boolean |True, False |acacia door, birch door, crimson door, dark oak door, iron door, jungle door, mangrove door, spruce door, warped door, wooden door |Determines if a door's hinge is mirrored or not|
 |double_plant_type |String |sunflower, syringa, grass, fern, rose, peony |double plant |Determines the type of a double plant block|
@@ -77,13 +77,14 @@ Here is a list of all Intrinsic Block States within Minecraft: Bedrock Edition. 
 |liquid_depth |Integer |0 - 15 |lava, water, flowing lava, flowing water |Determines the level of liquid blocks|
 |lit |Boolean |True, False  |candle, candle cake, black candle, black candle cake, blue candle, blue candle cake, brown candle, brown candle cake, cyan candle, cyan candle cake, gray candle, gray candle cake, green candle, green candle cake, light blue candle, light blue candle cake, light gray candle, light gray candle cake, lime candle, lime candle cake, magenta candle, magenta candle cake, orange candle, orange candle cake, pink candle, pink candle cake, purple candle, purple candle cake, red candle, red candle cake, white candle, white candle cake, yellow candle, yellow candle cake |Determines if a block is lit or not|
 |moisturized_amount |Integer |0 - 7 |farm|Determines the moisture level of crops|
-|monster_egg_stone_type |String |stone, cobblestone, stone_brick, mossy_stone_brick, cracked_stone_brick, chiseled_stone_brick |monster stone egg, monster egg |Determines the stone type of a monster egg block|
+|monster_egg_stone_type |String |stone, cobblestone, stone_brick, mossy_stone_brick, cracked_stone_brick, chiseled_stone_brick |monster stone egg, monster egg |DEPRECATED - Determines the stone type of a monster egg block|
 |multi_face_direction_bits|Integer |0 - 63 |glow lichen, sculk vein | 6 different 1-bit states used to determine direction|
 |new_leaf_type |String |acacia, dark_oak |new leaf |Determines the leaf type of some blocks|
-|new_log_type |String |acacia, dark_oak |new log |Determines the wood type of some blocks|
+|new_log_type |String |acacia, dark_oak |new log |DEPRECATED - Determines the wood type of some blocks|
 |occupied_bit |Boolean |True, False |bed |Determines if a bed block is occupied|
 |old_leaf_type |String |oak, spruce, birch, jungle |old leaf, leaves |Determines the leaf type of some blocks|
-|old_log_type |String |oak, spruce, birch, jungle |log |Determines the wood type of some blocks|
+|old_log_type |String |oak, spruce, birch, jungle |log |DEPRECATED - Determines the wood type of some blocks|
+|ominous| Boolean| True, False| Determines if the block is the ominous version|
 |open_bit |Boolean |True, False |acacia door, acacia fence gate, barrel, birch door, birch fence gate, crimson door, crimson fence gate, dark oak door, dark oak fence gate, fence gate, iron door, jungle door, jungle fence gate, mangrove door, mangrove fence gate, spruce door, spruce fence gate, warped door, warped fence gate, wooden door, lever |Determines if a door, gate, or trapdoor is open|
 |output_lit_bit |Boolean |True, False |powered comparator, unpowered comparator |Determines if a Comparator's output is lit|
 |output_subtract_bit |Boolean |True, False |powered comparator, unpowered comparator |Determines if a Comparator is set to subtract output|
@@ -98,20 +99,20 @@ Here is a list of all Intrinsic Block States within Minecraft: Bedrock Edition. 
 |repeater_delay |Integer |0 - 3 |powered repeater, unpowered repeater |Determines the amount of delay of a repeater|
 |respawn_anchor_charge |Integer |0 - 4 |respawn anchor | Determines level of charge (number of respawns remaining) for a respawn anchor |
 |rotation|Integer |0 - 15 |jigsaw |Sets rotation for jigsaw block|
-|sandstone_type |String |default, hieroglyphs, cut, smooth |sandstone, red sandstone |Determines the pattern of a sandstone block|
-|sand_type |String |normal, red |sand |Determines the sand type of a block|
+|sandstone_type |String |default, hieroglyphs, cut, smooth |sandstone, red sandstone |DEPRECATED - Determines the pattern of a sandstone block|
+|sand_type |String |normal, red |sand |DEPRECATED - Determines the sand type of a block|
 |sapling_type |String |evergreen, birch, jungle, acacia, roofed_oak |bamboo sapling, sapling |Determines the type of the sapling block|
 |sculk_sensor_phase | String | inactive, active, cooldown | *TBD* |Determines the current phase of a sculk sensor block. |
 |sea_grass_type |String |default, double_top, double_bot |sea grass |Determines the type of a seagrass block|
 |sponge_type |String |dry, wet |sponge |Determines the type of a sponge block|
 |stability |Integer |0 - 7 |scaffolding |Determines the stability of a scaffolding block|
 |stability_check |Boolean |True, False |scaffolding |Describes if a scaffolding block has been checked for stability|
-|stone_brick_type |String |default, mossy, cracked, chiseled, smooth |stone brick |Determines the type of a stone brick block|
+|stone_brick_type |String |default, mossy, cracked, chiseled, smooth |stone brick |DEPRECATED - Determines the type of a stone brick block|
 |stone_slab_type |String |smooth_stone, sandstone, wood, cobblestone, brick, stone_brick, quartz, nether_brick |double stone slab, stone slab |Determines the type of some stone slab blocks|
 |stone_slab_type_2 |String |red_sandstone, purpur, prismarine_rough, prismarine_dark, prismarine_brick, mossy_cobblestone, smooth_sandstone, red_nether_brick |double stone slab 2, stone slab 2 |Determines the type of some stone slab blocks|
 |stone_slab_type_3 |String |end_stone_brick, smooth_red_sandstone, polished_andesite, andesite, diorite, polished_diorite, granite, polished_granite |double stone slab 3, stone slab 3 |Determines the type of some stone slab blocks|
 |stone_slab_type_4 |String |mossy_stone_brick, smooth_quartz, stone, cut_sandstone, cut_red_sandstone |double stone slab 4, stone slab 4 |Determines the type of some stone slab blocks|
-|stone_type |String |stone, granite, granite_smooth, diorite, diorite_smooth, andesite, andesite_smooth |stone, granite, smooth granite, diorite, smooth diorite, andesite, smooth andesite |Determines the stone type of a block|
+|stone_type |String |stone, granite, granite_smooth, diorite, diorite_smooth, andesite, andesite_smooth |stone, granite, smooth granite, diorite, smooth diorite, andesite, smooth andesite |DEPRECATED - Determines the stone type of a block|
 |stripped_bit |Boolean |True, False |mangrove wood, wood |Describes if a wood log has been stripped of bark|
 |structure_block_type |String |data, save, load, corner, invalid, export |structure block |Determines the state of a structure block|
 |structure_void_type |String |void, air |structure void |Determines which void mode to draw for structure blocks|
@@ -136,4 +137,4 @@ Here is a list of all Intrinsic Block States within Minecraft: Bedrock Edition. 
 |wall_post_bit |Boolean |True, False |blackstone wall, border, cobbled deepslate wall, cobblestone wall, deepslate brick wall, deepslate tile wall, mud brick wall, polished blackstone brick wall, polished blackstone wall, polished deepslate wall |Determines if a wall should contain a post|
 |weeping_vines_age|Integer | 0 - 15 |weeping vines | Determines the age of weeping vines|
 |weirdo_direction |Integer | 0 - 3 |acacia stairs, acacia trapdoor, andesite stairs, blackstone stairs, birch stairs, birch trapdoor, brick stairs, cobbled deepslate stairs, cobblestone stairs, crimson stairs, crimson trapdoor, cut copper stairs, dark oak stairs, dark oak trapdoor, dark prismarine stairs, deepslate brick stairs, deepslate tile stairs, diorite stairs, end brick stairs, exposed cut copper stairs, granite stairs, iron trapdoor, jungle stairs, jungle trapdoor, mangrove stairs, mangrove trapdoor, mossy cobblestone stairs, mossy stone brick stairs, mud brick stairs, nether brick stairs, normal stone stairs, oak stairs, oxidized cut copper stairs, polished andesite stairs, polished blackstone brick stairs, polished blackstone stairs, polished deepslate stairs, polished diorite stairs, polished granite stairs, prismarine bricks stairs, prismarine stairs, purpur stairs, quartz stairs, red sandstone stairs, sandstone stairs, smooth quartz stairs, smooth red sandstone stairs, smooth sandstone stairs, spruce stairs, spruce trapdoor, stone brick stairs, trapdoor, warped stairs, warped trapdoor, waxed cut copper stairs, waxed exposed cut copper stairs, waxed oxidized cut copper stairs, waxed weathered cut copper stairs, weathered cut copper stairs |Describes the rotation of stairs|
-|wood_type |String |oak, spruce, birch, jungle, acacia, dark_oak |fence, double wooden slab, planks, wood, wooden slab |Determines the wood type of a block|
+|wood_type |String |oak, spruce, birch, jungle, acacia, dark_oak |fence, double wooden slab, planks, wood, wooden slab |DEPRECATED - Determines the wood type of a block|

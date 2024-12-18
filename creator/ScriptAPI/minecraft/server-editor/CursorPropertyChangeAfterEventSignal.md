@@ -21,9 +21,9 @@ subscribe(callback: (arg: CursorPropertiesChangeAfterEvent) => void): (arg: Curs
 - **callback**: (arg: [*CursorPropertiesChangeAfterEvent*](CursorPropertiesChangeAfterEvent.md)) => *void*
 
 **Returns** (arg: [*CursorPropertiesChangeAfterEvent*](CursorPropertiesChangeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -32,6 +32,6 @@ unsubscribe(callback: (arg: CursorPropertiesChangeAfterEvent) => void): void
 
 #### **Parameters**
 - **callback**: (arg: [*CursorPropertiesChangeAfterEvent*](CursorPropertiesChangeAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

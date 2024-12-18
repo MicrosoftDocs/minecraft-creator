@@ -10,13 +10,33 @@ description: Contents of the @minecraft/server-editor.WidgetCreateOptions class.
 
 ## Properties
 
-### **initialVisibility**
-`initialVisibility?: boolean;`
+### **bindPositionToBlockCursor**
+`bindPositionToBlockCursor?: boolean;`
 
 Type: *boolean*
 
-### **isSelectable**
-`isSelectable?: boolean;`
+### **collisionOffset**
+`collisionOffset?: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+
+### **collisionRadius**
+`collisionRadius?: number;`
+
+Type: *number*
+
+### **lockToSurface**
+`lockToSurface?: boolean;`
+
+Type: *boolean*
+
+### **selectable**
+`selectable?: boolean;`
+
+Type: *boolean*
+
+### **snapToBlockLocation**
+`snapToBlockLocation?: boolean;`
 
 Type: *boolean*
 
@@ -24,3 +44,8 @@ Type: *boolean*
 `stateChangeEvent?: (arg: WidgetStateChangeEventData) => void;`
 
 Type: (arg: [*WidgetStateChangeEventData*](WidgetStateChangeEventData.md)) => *void*
+
+### **visible**
+`visible?: boolean;`
+
+Type: *boolean*

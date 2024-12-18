@@ -20,35 +20,18 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
 
 ## [Changelog](changelog.md)
 
-#### Examples
-##### ***createActionForm.js***
-```typescript
-const form = new ActionFormData()
-  .title("Months")
-  .body("Choose your favorite month!")
-  .button("January")
-  .button("February")
-  .button("March")
-  .button("April")
-  .button("May");
-
-form.show(players[0]).then((response) => {
-  if (response.selection === 3) {
-    dimension.runCommand("say I like April too!");
-  }
-});
-```
-
 ## Manifest Details
 ```json
 {
     "module_name": "@minecraft/server-ui",
-    "version": "1.1.0"
+    "version": "1.3.0"
 }
 ```
 
 ## Available Versions
-- `1.2.0-beta`
+- `1.4.0-beta`
+- `1.3.0`
+- `1.2.0`
 - `1.1.0`
 - `1.0.0`
 - `0.1.0`
@@ -65,6 +48,14 @@ form.show(players[0]).then((response) => {
 - [MessageFormResponse](MessageFormResponse.md)
 - [ModalFormData](ModalFormData.md)
 - [ModalFormResponse](ModalFormResponse.md)
+- [UIManager](UIManager.md)
 
 ## Errors
 - [FormRejectError](FormRejectError.md)
+
+## Objects
+  
+### **uiManager**
+`static read-only uiManager: UIManager;`
+
+Type: [*UIManager*](UIManager.md)

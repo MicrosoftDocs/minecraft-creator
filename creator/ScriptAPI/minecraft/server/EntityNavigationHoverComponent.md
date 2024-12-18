@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityNavigationHoverComponent Class
 description: Contents of the @minecraft/server.EntityNavigationHoverComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityNavigationHoverComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*EntityNavigationComponent*](EntityNavigationComponent.md)

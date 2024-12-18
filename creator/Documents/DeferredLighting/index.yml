@@ -1,0 +1,51 @@
+### YamlMime:Landing
+
+title: Deferred Lighting # < 60 chars
+summary: "Content related to Deferred Lighting in Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Deferred Lighting # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Minecraft supports a Physically Based Rendering (PBR) pipeline that can be used for Deferred Lighting and Ray Tracing." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: minecraft-bedrock-edition
+  ms.topic: landing-page # Required
+  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/13/2024 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Learn About Deferred Lighting
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Getting Started with Deferred Lighting
+            url: GettingStartedDeferredLighting.md
+          - text: PBR Resource Packs
+            url: PBRResourcePacks.md
+          - text: Enabling Deferred Technical Preview in Your World
+            url: EnablingDeferredTechnicalPreview.md
+          - text: Key Frame JSON Syntax
+            url: KeyFrameJSONSyntax.md
+
+  - title: Deferred Lighting Customization
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Lighting Customization
+            url: LightingCustomization.md
+          - text: Atmospherics Customization
+            url: AtmosphericsCustomization.md
+          - text: Volumetric Fog and Light Shafts Customization
+            url: VolumetricFogLightShaftsCustomization.md
+          - text: Reflections Customization
+            url: ReflectionsCustomization.md
+          - text: Color Grading and Tone Mapping Customization
+            url: ColorGradingToneMappingCustomization.md
+          - text: Subsurface Scattering Customization
+            url: SubSurfaceScatteringCustomization.md
+          - text: Water Customization
+            url: WaterCustomization.md

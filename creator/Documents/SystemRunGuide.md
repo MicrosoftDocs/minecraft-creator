@@ -25,14 +25,14 @@ Before we dive into how to use the system.run APIs, let's first go over the Mine
 1) Process "asynchronous code" continuations
     - Code following await would execute here.
 
+1) Process system job queue with a time slice based on current and previous frame estimates
+    - For generators created with system.runJob.
+
 1) Loop over system.run callbacks and after events.
     - Process all system.run callbacks.
     - Process all before and after events.
     - Possibly queue any new before and after events as a result of previous steps.
     - Repeat until no more events or system callbacks are queued for the current tick.
-
-1) Process system job queue with time remaining
-    - For generators created with system.runJob.
 
 1) Increment tick and end the script portion of the tick.
 
@@ -139,7 +139,7 @@ It can be difficult to know how much work can be done in a given tick without sl
 
 The system.runJob method aims to provide a mechanism for performing long running tasks on your behalf without the need to micromanage the amount of work that occurs each tick. It does this by performing work in small increments while closely monitoring how much time has been used, and how much time is left. When approaching the limit, it will stop and continue the remainder of the work next tick, or the tick after, or some future tick until all the work is completed.
 
-How does it work? With the help of JavaScript generator functions. For example, let's say you want to place a 10x10x10 structure of blocks. If you attempt do this in a single tick, you risk running into a watchdog limit and a simulation slowdown. When using system.runJob, you can rely on the job system to only do as much work as the tick will allow. This may mean that your cube of blocks can be completed within a single frame, but more likely it will take a few frames to get the job done on anything less than the fastest PC hardware. Keep in mind that this is a tradeoff with system.runJob. You allow the job system to keep the simulation running at a consistent rate, but with the understanding that your task may not finish in the same number of ticks on all devices, or even on the same device depending on how much time is allotted to the job queue in a given tick.
+How does it work? With the help of JavaScript generator functions. For example, let's say you want to place a 10x10x10 structure of blocks. If you attempt do this in a single tick, you risk running into a watchdog limit and a simulation slowdown. When using system.runJob, you can rely on the job system to only do as much work as the tick will allow. This may mean that your cube of blocks can be completed within a single frame, but more likely it will take a few frames to get the job done on anything less than the fastest PC hardware. Keep in mind that this is the tradeoff with system.runJob. You allow the job system to keep the simulation running at a consistent rate, but with the understanding that your task may not finish in the same number of ticks on all devices, or even on the same device depending on how much time is allotted to the job queue in a given tick.
 
 ```javascript
 import {

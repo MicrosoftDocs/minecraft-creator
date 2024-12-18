@@ -22,23 +22,8 @@ Dimension that the entity is currently within.
 
 Type: [*Dimension*](Dimension.md)
 
-> [!WARNING]
-> This property can throw errors when used.
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **fallDistance**
-`read-only fallDistance: number;`
-
-The distance an entity has fallen. The value is reset when the entity is teleported. The value is always 1 when gliding with Elytra.
-
-Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!WARNING]
-> This property can throw errors when used.
-::: moniker-end
+Notes:
+  - This property can throw errors when used.
 
 ### **id**
 `read-only id: string;`
@@ -54,8 +39,8 @@ Whether the entity is touching a climbable block. For example, a player next to 
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isFalling**
 `read-only isFalling: boolean;`
@@ -64,8 +49,8 @@ Whether the entity has a fall distance greater than 0, or greater than 1 while g
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isInWater**
 `read-only isInWater: boolean;`
@@ -74,8 +59,8 @@ Whether any part of the entity is inside a water block.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isOnGround**
 `read-only isOnGround: boolean;`
@@ -84,8 +69,8 @@ Whether the entity is on top of a solid block. This property may behave in unexp
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isSleeping**
 `read-only isSleeping: boolean;`
@@ -94,8 +79,8 @@ If true, the entity is currently sleeping.
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isSneaking**
 `isSneaking: boolean;`
@@ -103,9 +88,9 @@ Type: *boolean*
 Whether the entity is sneaking - that is, moving more slowly and more quietly.
 
 Type: *boolean*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **isSprinting**
 `read-only isSprinting: boolean;`
@@ -114,8 +99,8 @@ Whether the entity is sprinting. For example, a player using the sprint action, 
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **isSwimming**
 `read-only isSwimming: boolean;`
@@ -124,20 +109,8 @@ Whether the entity is in the swimming state. For example, a player using the swi
 
 Type: *boolean*
 
-> [!WARNING]
-> This property can throw errors when used.
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **lifetimeState**
-`read-only lifetimeState: EntityLifetimeState;`
-
-Whether the entity reference that you have is valid or not.  For example, an entity may be unloaded if it moves into a chunk that is unloaded, but may be reactivated if the chunk it is within gets reloaded.
-
-Type: [*EntityLifetimeState*](EntityLifetimeState.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
+Notes:
+  - This property can throw errors when used.
 
 ### **location**
 `read-only location: Vector3;`
@@ -146,8 +119,8 @@ Current location of the entity.
 
 Type: [*Vector3*](Vector3.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **nameTag**
 `nameTag: string;`
@@ -155,9 +128,9 @@ Type: [*Vector3*](Vector3.md)
 Given name of the entity.
 
 Type: *string*
-  
-> [!IMPORTANT]
-> This property can't be edited in read-only mode.
+
+Notes:
+  - This property can't be edited in read-only mode.
 
 ### **scoreboardIdentity**
 `read-only scoreboardIdentity?: ScoreboardIdentity;`
@@ -179,8 +152,8 @@ Type: [*Entity*](Entity.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 ::: moniker-end
 
 ### **typeId**
@@ -218,6 +191,9 @@ Type: *string*
 - [hasTag](#hastag)
 - [isValid](#isvalid)
 - [kill](#kill)
+::: moniker range="=minecraft-bedrock-experimental"
+- [lookAt](#lookat)
+::: moniker-end
 - [matches](#matches)
 - [playAnimation](#playanimation)
 - [remove](#remove)
@@ -226,6 +202,9 @@ Type: *string*
 - [resetProperty](#resetproperty)
 - [runCommand](#runcommand)
 - [runCommandAsync](#runcommandasync)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setDynamicProperties](#setdynamicproperties)
+::: moniker-end
 - [setDynamicProperty](#setdynamicproperty)
 - [setOnFire](#setonfire)
 - [setProperty](#setproperty)
@@ -253,57 +232,64 @@ Adds or updates an effect, like poison, to the entity.
   Additional options for the effect.
 
 **Returns** [*Effect*](Effect.md) | *undefined* - Returns nothing if the effect was added or updated successfully. This can throw an error if the duration or amplifier are outside of the valid ranges, or if the effect does not exist.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
-##### ***poisonVillager.ts***
+
+##### ***spawnPoisonedVillager.ts***
+
 ```typescript
-// Spawns a villager and gives it the poison effect
-import {
-    DimensionLocation,
-} from '@minecraft/server';
-import { MinecraftEffectTypes } from '@minecraft/vanilla-data';
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEffectTypes } from "@minecraft/vanilla-data";
 
-function spawnPoisonedVillager(location: DimensionLocation) {
-    const villagerType = 'minecraft:villager_v2<minecraft:ageable_grow_up>';
-    const villager = location.dimension.spawnEntity(villagerType, location);
-    const duration = 20;
+function spawnPoisonedVillager(
+    targetLocation: DimensionLocation
+) {
+  const villagerType = "minecraft:villager_v2<minecraft:ageable_grow_up>";
+  const villager = targetLocation.dimension.spawnEntity(villagerType, targetLocation);
+  const duration = 20;
 
-    villager.addEffect(MinecraftEffectTypes.Poison, duration, { amplifier: 1 });
+  villager.addEffect(MinecraftEffectTypes.Poison, duration, { amplifier: 1 });
 }
-
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/spawnPoisonedVillager.ts) code sandbox.
+
 ##### ***quickFoxLazyDog.ts***
+
 ```typescript
-// Spawns a fox over a dog
-import { DimensionLocation } from '@minecraft/server';
-import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes, MinecraftEffectTypes } from "@minecraft/vanilla-data";
 
-function spawnAdultHorse(location: DimensionLocation) {
-    // Create fox (our quick brown fox)
-    const fox = location.dimension.spawnEntity(MinecraftEntityTypes.Fox, {
-        x: location.x,
-        y: location.y + 2,
-        z: location.z,
-    });
+function quickFoxLazyDog(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const fox = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Fox, {
+    x: targetLocation.x + 1,
+    y: targetLocation.y + 2,
+    z: targetLocation.z + 3,
+  });
 
-    fox.addEffect('speed', 10, {
-        amplifier: 2,
-    });
+  fox.addEffect(MinecraftEffectTypes.Speed, 10, {
+    amplifier: 2,
+  });
+  log("Created a fox.");
 
-    // Create wolf (our lazy dog)
-    const wolf = location.dimension.spawnEntity(MinecraftEntityTypes.Wolf, location);
-    wolf.addEffect('slowness', 10, {
-        amplifier: 2,
-    });
-    wolf.isSneaking = true;
+  const wolf = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Wolf, {
+    x: targetLocation.x + 4,
+    y: targetLocation.y + 2,
+    z: targetLocation.z + 3,
+  });
+  wolf.addEffect(MinecraftEffectTypes.Slowness, 10, {
+    amplifier: 2,
+  });
+  wolf.isSneaking = true;
+  log("Created a sneaking wolf.", 1);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/quickFoxLazyDog.ts) code sandbox.
 
 ### **addTag**
 `
@@ -318,12 +304,39 @@ Adds a specified tag to an entity.
   Content of the tag to add. The tag must be less than 256 characters.
 
 **Returns** *boolean* - Returns true if the tag was added successfully. This can fail if the tag already exists on the entity.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+#### Examples
 
-> [!WARNING]
-> This function can throw errors.
+##### ***tagsQuery.ts***
+
+```typescript
+import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
+
+function tagsQuery(targetLocation: DimensionLocation) {
+  const mobs = ["creeper", "skeleton", "sheep"];
+
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    const mobTypeId = mobs[i % mobs.length];
+    const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
+    entity.addTag("mobparty." + mobTypeId);
+  }
+
+  const eqo: EntityQueryOptions = {
+    tags: ["mobparty.skeleton"],
+  };
+
+  for (const entity of targetLocation.dimension.getEntities(eqo)) {
+    entity.kill();
+  }
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/tagsQuery.ts) code sandbox.
 
 ### **applyDamage**
 `
@@ -341,36 +354,37 @@ Applies a set of damage to an entity.
   Additional options about the source of damage, which may add additional effects or spur additional behaviors on this entity.
 
 **Returns** *boolean* - Whether the entity takes any damage. This can return false if the entity is invulnerable or if the damage applied is less than or equal to 0.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
+
 ##### ***applyDamageThenHeal.ts***
+
 ```typescript
-// A function that applies damage and then heals the entity
-import { Entity, EntityComponentTypes, system, world } from '@minecraft/server';
+import { system, EntityHealthComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function applyDamageAndHeal(entity: Entity) {
-    entity.applyDamage(19); // Many mobs have max damage of 20 so this is a near-death mob
+function applyDamageThenHeal(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
 
-    system.runTimeout(() => {
-        const health = entity.getComponent(EntityComponentTypes.Health);
-        if (health) {
-            world.sendMessage(`Entity health before heal: ${health.currentValue}`);
+  skelly.applyDamage(19); // skeletons have max damage of 20 so this is a near-death skeleton
 
-            health.resetToMaxValue();
-
-            world.sendMessage(`Entity after before heal: ${health.currentValue}`);
-        } else {
-            console.warn('Entity does not have health component');
-        }
-    }, 40); // Run in a few seconds (40 ticks)
+  system.runTimeout(() => {
+    const health = skelly.getComponent(EntityComponentTypes.Health) as EntityHealthComponent;
+    log("Skeleton health before heal: " + health?.currentValue);
+    health?.resetToMaxValue();
+    log("Skeleton health after heal: " + health?.currentValue);
+  }, 20);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/applyDamageThenHeal.ts) code sandbox.
 
 ### **applyImpulse**
 `
@@ -383,28 +397,30 @@ Applies impulse vector to the current velocity of the entity.
 - **vector**: [*Vector3*](Vector3.md)
   
   Impulse vector.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
-##### ***yeetEntity.ts***
+
+##### ***applyImpulse.ts***
+
 ```typescript
-// A function that throws entities up in the air
-import { Entity } from '@minecraft/server';
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function yeetEntity(entity: Entity) {
+function applyImpulse(targetLocation: DimensionLocation) {
+  const zombie = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Zombie, targetLocation);
 
-    // Zero out the entity's velocity before applying impulse
-    entity.clearVelocity();
+  zombie.clearVelocity();
 
-    // throw the zombie up in the air
-    entity.applyImpulse({ x: 0, y: 15, z: 0 });
+  // throw the zombie up in the air
+  zombie.applyImpulse({ x: 0, y: 0.5, z: 0 });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/applyImpulse.ts) code sandbox.
 
 ### **applyKnockback**
 `
@@ -426,35 +442,37 @@ Applies impulse vector to the current velocity of the entity.
 - **verticalStrength**: *number*
   
   Knockback strength for the vertical vector.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
+
 ##### ***bounceSkeletons.ts***
+
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
+import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
 
-function mobParty(targetLocation: DimensionLocation) {
-    const mobs = ['creeper', 'skeleton', 'sheep'];
+function bounceSkeletons(targetLocation: DimensionLocation) {
+  const mobs = ["creeper", "skeleton", "sheep"];
 
-    // create some sample mob data
-    for (let i = 0; i < 10; i++) {
-        targetLocation.dimension.spawnEntity(mobs[i % mobs.length], targetLocation);
-    }
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    targetLocation.dimension.spawnEntity(mobs[i % mobs.length], targetLocation);
+  }
 
-    const eqo: EntityQueryOptions = {
-        type: 'skeleton',
-    };
+  const eqo: EntityQueryOptions = {
+    type: "skeleton",
+  };
 
-    for (const entity of targetLocation.dimension.getEntities(eqo)) {
-        entity.applyKnockback(0, 0, 0, 1);
-    }
+  for (const entity of targetLocation.dimension.getEntities(eqo)) {
+    entity.applyKnockback(0, 0, 0, 1);
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/bounceSkeletons.ts) code sandbox.
 
 ### **clearDynamicProperties**
 `
@@ -462,9 +480,9 @@ clearDynamicProperties(): void
 `
 
 Clears all dynamic properties that have been set on this entity.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **clearVelocity**
 `
@@ -472,28 +490,30 @@ clearVelocity(): void
 `
 
 Sets the current velocity of the Entity to zero. Note that this method may not have an impact on Players.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
-##### ***yeetEntity.ts***
+
+##### ***applyImpulse.ts***
+
 ```typescript
-// A function that throws entities up in the air
-import { Entity } from '@minecraft/server';
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function yeetEntity(entity: Entity) {
+function applyImpulse(targetLocation: DimensionLocation) {
+  const zombie = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Zombie, targetLocation);
 
-    // Zero out the entity's velocity before applying impulse
-    entity.clearVelocity();
+  zombie.clearVelocity();
 
-    // throw the zombie up in the air
-    entity.applyImpulse({ x: 0, y: 15, z: 0 });
+  // throw the zombie up in the air
+  zombie.applyImpulse({ x: 0, y: 0.5, z: 0 });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/applyImpulse.ts) code sandbox.
 
 ### **extinguishFire**
 `
@@ -508,32 +528,35 @@ Extinguishes the fire if the entity is on fire. Note that you can call getCompon
   Whether to show any visual effects connected to the extinguishing.
 
 **Returns** *boolean* - Returns whether the entity was on fire.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
-##### ***setEntityOnFire.ts***
+
+##### ***setOnFire.ts***
+
 ```typescript
-import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
+import { system, EntityOnFireComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function setAblaze(entity: Entity) {
-    entity.setOnFire(20, true);
+function setOnFire(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
 
-    system.runTimeout(() => {
-        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
-        if (onfire) {
-            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
-        }
-        // This will extinguish the entity
-        entity.extinguishFire(true);
-    }, 30); // Run in 30 ticks or ~1.5 seconds
-    
+  skelly.setOnFire(20, true);
+
+  system.runTimeout(() => {
+    const onfire = skelly.getComponent(EntityComponentTypes.OnFire) as EntityOnFireComponent;
+    log(onfire?.onFireTicksRemaining + " fire ticks remaining.");
+
+    skelly.extinguishFire(true);
+    log("Never mind. Fire extinguished.");
+  }, 20);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setOnFire.ts) code sandbox.
 
 ### **getBlockFromViewDirection**
 `
@@ -548,9 +571,9 @@ Returns the first intersecting block from the direction that this entity is look
   Additional configuration options for the ray cast.
 
 **Returns** [*BlockRaycastHit*](BlockRaycastHit.md) | *undefined* - Returns the first intersecting block from the direction that this entity is looking at.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getComponent**
 `
@@ -588,9 +611,9 @@ Returns a property value.
   The property identifier.
 
 **Returns** *boolean* | *number* | *string* | [*Vector3*](Vector3.md) | *undefined* - Returns the value for the property, or undefined if the property has not been set.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getDynamicPropertyIds**
 `
@@ -600,9 +623,9 @@ getDynamicPropertyIds(): string[]
 Returns the available set of dynamic property identifiers that have been used on this entity.
 
 **Returns** *string*[] - A string array of the dynamic properties set on this entity.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getDynamicPropertyTotalByteCount**
 `
@@ -612,9 +635,9 @@ getDynamicPropertyTotalByteCount(): number
 Returns the total size, in bytes, of all the dynamic properties that are currently stored for this entity. This includes the size of both the key and the value.  This can be useful for diagnosing performance warning signs - if, for example, an entity has many megabytes of associated dynamic properties, it may be slow to load on various devices.
 
 **Returns** *number*
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getEffect**
 `
@@ -629,9 +652,9 @@ Returns the effect for the specified EffectType on the entity, undefined if the 
   The effect identifier.
 
 **Returns** [*Effect*](Effect.md) | *undefined* - Effect object for the specified effect, undefined if the effect is not present, or throws an error if the effect does not exist.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getEffects**
 `
@@ -641,9 +664,9 @@ getEffects(): Effect[]
 Returns a set of effects applied to this entity.
 
 **Returns** [*Effect*](Effect.md)[] - List of effects.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getEntitiesFromViewDirection**
 `
@@ -658,9 +681,9 @@ Gets the entities that this entity is looking at by performing a ray cast from t
   Additional configuration options for the ray cast.
 
 **Returns** [*EntityRaycastHit*](EntityRaycastHit.md)[] - Returns a set of entities from the direction that this entity is looking at.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getHeadLocation**
 `
@@ -670,9 +693,9 @@ getHeadLocation(): Vector3
 Returns the current location of the head component of this entity.
 
 **Returns** [*Vector3*](Vector3.md) - Returns the current location of the head component of this entity.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getProperty**
 `
@@ -687,11 +710,10 @@ Gets an entity Property value. If the property was set using the setProperty fun
   The entity Property identifier.
 
 **Returns** *boolean* | *number* | *string* | *undefined* - Returns the current property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the entity is invalid.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the entity is invalid.
 
 ### **getRotation**
 `
@@ -701,9 +723,9 @@ getRotation(): Vector2
 Returns the current rotation component of this entity.
 
 **Returns** [*Vector2*](Vector2.md) - Returns a Vec2 containing the rotation of this entity (in degrees).
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getTags**
 `
@@ -713,9 +735,9 @@ getTags(): string[]
 Returns all tags associated with the entity.
 
 **Returns** *string*[] - An array containing all tags as strings.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **getVelocity**
 `
@@ -725,27 +747,33 @@ getVelocity(): Vector3
 Returns the current velocity vector of the entity.
 
 **Returns** [*Vector3*](Vector3.md) - Returns the current velocity vector of the entity.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 #### Examples
+
 ##### ***getFireworkVelocity.ts***
+
 ```typescript
-// A function that spawns fireworks and logs their velocity after 5 ticks
-import { DimensionLocation, system, world } from '@minecraft/server';
-import { MinecraftEntityTypes } from '@minecraft/vanilla-data';
+import { system, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function spawnFireworks(location: DimensionLocation) {
-    const fireworkRocket = location.dimension.spawnEntity(MinecraftEntityTypes.FireworksRocket, location);
+function getFireworkVelocity(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  const fireworkRocket = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.FireworksRocket, targetLocation);
 
-    system.runTimeout(() => {
-        const velocity = fireworkRocket.getVelocity();
+  system.runTimeout(() => {
+    const velocity = fireworkRocket.getVelocity();
 
-        world.sendMessage(`Velocity of firework is: ${velocity.x}, ${velocity.y}, ${velocity.z}`);
-    }, 5);
+    log("Velocity of firework is: (x: " + velocity.x + ", y:" + velocity.y + ", z:" + velocity.z + ")");
+  }, 5);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/getFireworkVelocity.ts) code sandbox.
 
 ### **getViewDirection**
 `
@@ -755,9 +783,9 @@ getViewDirection(): Vector3
 Returns the current view direction of the entity.
 
 **Returns** [*Vector3*](Vector3.md) - Returns the current view direction of the entity.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **hasComponent**
 `
@@ -786,9 +814,9 @@ Returns whether an entity has a particular tag.
   Identifier of the tag to test for.
 
 **Returns** *boolean* - Returns whether an entity has a particular tag.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **isValid**
 `
@@ -807,37 +835,60 @@ kill(): boolean
 Kills this entity. The entity will drop loot as normal.
 
 **Returns** *boolean* - Returns true if entity can be killed (even if it is already dead), otherwise it returns false.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
+
 ##### ***tagsQuery.ts***
+
 ```typescript
-import { EntityQueryOptions, DimensionLocation } from '@minecraft/server';
+import { EntityQueryOptions, DimensionLocation } from "@minecraft/server";
 
-function mobParty(targetLocation: DimensionLocation) {
-    const mobs = ['creeper', 'skeleton', 'sheep'];
+function tagsQuery(targetLocation: DimensionLocation) {
+  const mobs = ["creeper", "skeleton", "sheep"];
 
-    // create some sample mob data
-    for (let i = 0; i < 10; i++) {
-        const mobTypeId = mobs[i % mobs.length];
-        const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
-        entity.addTag('mobparty.' + mobTypeId);
-    }
+  // create some sample mob data
+  for (let i = 0; i < 10; i++) {
+    const mobTypeId = mobs[i % mobs.length];
+    const entity = targetLocation.dimension.spawnEntity(mobTypeId, targetLocation);
+    entity.addTag("mobparty." + mobTypeId);
+  }
 
-    const eqo: EntityQueryOptions = {
-        tags: ['mobparty.skeleton'],
-    };
+  const eqo: EntityQueryOptions = {
+    tags: ["mobparty.skeleton"],
+  };
 
-    for (const entity of targetLocation.dimension.getEntities(eqo)) {
-        entity.kill();
-    }
+  for (const entity of targetLocation.dimension.getEntities(eqo)) {
+    entity.kill();
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/tagsQuery.ts) code sandbox.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **lookAt**
+`
+lookAt(targetLocation: Vector3): void
+`
+
+Sets the rotation of the entity to face a target location. Both pitch and yaw will be set, if applicable, such as for mobs where the pitch controls the head tilt and the yaw controls the body rotation.
+
+#### **Parameters**
+- **targetLocation**: [*Vector3*](Vector3.md)
+  
+  The target location that this entity should face/look towards.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+::: moniker-end
 
 ### **matches**
 `
@@ -852,11 +903,10 @@ Matches the entity against the passed in options. Uses the location of the entit
   The query to perform the match against.
 
 **Returns** *boolean* - Returns true if the entity matches the criteria in the passed in EntityQueryOptions, otherwise it returns false.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the query options are misconfigured.
+  
+Notes:
+- This function can throw errors.
+  - Throws if the query options are misconfigured.
 
 ### **playAnimation**
 `
@@ -872,12 +922,10 @@ Cause the entity to play the given animation.
 - **options**?: [*PlayAnimationOptions*](PlayAnimationOptions.md) = `null`
   
   Additional options to control the playback and transitions of the animation.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **remove**
 `
@@ -885,12 +933,10 @@ remove(): void
 `
 
 Immediately removes the entity from the world. The removed entity will not perform a death animation or drop loot upon removal.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **removeEffect**
 `
@@ -905,12 +951,10 @@ Removes the specified EffectType on the entity, or returns false if the effect i
   The effect identifier.
 
 **Returns** *boolean* - Returns true if the effect has been removed. Returns false if the effect is not found or does not exist.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **removeTag**
 `
@@ -925,12 +969,10 @@ Removes a specified tag from an entity.
   Content of the tag to remove.
 
 **Returns** *boolean* - Returns whether the tag existed on the entity.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **resetProperty**
 `
@@ -945,14 +987,11 @@ Resets an Entity Property back to its default value, as specified in the Entity'
   The Entity Property identifier.
 
 **Returns** *boolean* | *number* | *string* - Returns the default property value. For enum properties, a string is returned. For float and int properties, a number is returned. For undefined properties, undefined is returned.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
 
 ### **runCommand**
 `
@@ -967,14 +1006,11 @@ Runs a synchronous command on the entity.
   The command string. Note: This should not include a leading forward slash.
 
 **Returns** [*CommandResult*](CommandResult.md) - A command result containing whether the command was successful.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*CommandError*](CommandError.md), *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*CommandError*](CommandError.md), *Error*
 
 ### **runCommandAsync**
 `
@@ -989,9 +1025,29 @@ Runs a particular command asynchronously from the context of this entity. Note t
   Command to run. Note that command strings should not start with slash.
 
 **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a JSON structure with command response values.
+  
+Notes:
+- This function can throw errors.
 
-> [!WARNING]
-> This function can throw errors.
+::: moniker range="=minecraft-bedrock-experimental"
+### **setDynamicProperties**
+`
+setDynamicProperties(values: Record<string, boolean | number | string | Vector3>): void
+`
+
+Sets multiple dynamic properties with specific values.
+
+#### **Parameters**
+- **values**: Record<*string*, *boolean* | *number* | *string* | [*Vector3*](Vector3.md)>
+  
+  A Record of key value pairs of the dynamic properties to set.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+::: moniker-end
 
 ### **setDynamicProperty**
 `
@@ -1007,9 +1063,9 @@ Sets a specified property to a value.
 - **value**?: *boolean* | *number* | *string* | [*Vector3*](Vector3.md) = `null`
   
   Data value of the property to set.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **setOnFire**
 `
@@ -1027,32 +1083,35 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
   Whether side-effects should be applied (e.g. thawing freeze) and other conditions such as rain or fire protection should be taken into consideration.
 
 **Returns** *boolean* - Whether the entity was set on fire. This can fail if seconds is less than or equal to zero, the entity is wet or the entity is immune to fire.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
-##### ***setEntityOnFire.ts***
+
+##### ***setOnFire.ts***
+
 ```typescript
-import { world, Entity, EntityComponentTypes, system } from "@minecraft/server";
+import { system, EntityOnFireComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-function setAblaze(entity: Entity) {
-    entity.setOnFire(20, true);
+function setOnFire(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const skelly = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Skeleton, targetLocation);
 
-    system.runTimeout(() => {
-        const onfire = entity.getComponent(EntityComponentTypes.OnFire);
-        if (onfire) {
-            world.sendMessage(`${onfire.onFireTicksRemaining} fire ticks remaining, extinguishing the entity.`);
-        }
-        // This will extinguish the entity
-        entity.extinguishFire(true);
-    }, 30); // Run in 30 ticks or ~1.5 seconds
-    
+  skelly.setOnFire(20, true);
+
+  system.runTimeout(() => {
+    const onfire = skelly.getComponent(EntityComponentTypes.OnFire) as EntityOnFireComponent;
+    log(onfire?.onFireTicksRemaining + " fire ticks remaining.");
+
+    skelly.extinguishFire(true);
+    log("Never mind. Fire extinguished.");
+  }, 20);
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setOnFire.ts) code sandbox.
 
 ### **setProperty**
 `
@@ -1068,22 +1127,15 @@ Sets an Entity Property to the provided value. This property change is not appli
 - **value**: *boolean* | *number* | *string*
   
   The property value. The provided type must be compatible with the type specified in the entity's definition. 
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws if the entity is invalid.
->
-> Throws if an invalid identifier is provided.
->
-> Throws if the provided value type does not match the property type.
->
-> Throws if the provided value is outside the expected range (int, float properties).
->
-> Throws if the provided string value does not match the set of accepted enum values (enum properties
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the entity is invalid.
+  - Throws if an invalid identifier is provided.
+  - Throws if the provided value type does not match the property type.
+  - Throws if the provided value is outside the expected range (int, float properties).
+  - Throws if the provided string value does not match the set of accepted enum values (enum properties
 
 ### **setRotation**
 `
@@ -1096,12 +1148,10 @@ Sets the main rotation of the entity.
 - **rotation**: [*Vector2*](Vector2.md)
   
   The x and y rotation of the entity (in degrees). For most mobs, the x rotation controls the head tilt and the y rotation controls the body rotation.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **teleport**
 `
@@ -1117,38 +1167,62 @@ Teleports the selected entity to a new location
 - **teleportOptions**?: [*TeleportOptions*](TeleportOptions.md) = `null`
   
   Options regarding the teleport operation.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
-##### ***teleportMovement.ts***
+
+##### ***teleport.ts***
+
 ```typescript
-import { world, system } from '@minecraft/server';
+import { system, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
 
-const overworld = world.getDimension('overworld');
-const targetLocation = { x: 0, y: 0, z: 0 };
+function teleport(targetLocation: DimensionLocation) {
+  const cow = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Cow, targetLocation);
 
-const pig = overworld.spawnEntity('minecraft:pig', targetLocation);
+  system.runTimeout(() => {
+    cow.teleport(
+      { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 2 },
+      {
+        facingLocation: targetLocation,
+      }
+    );
+  }, 20);
+}
+```
 
-let inc = 1;
-const runId = system.runInterval(() => {
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/teleport.ts) code sandbox.
+
+##### ***teleportMovement.ts***
+
+```typescript
+import { system, DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function teleportMovement(targetLocation: DimensionLocation) {
+  const pig = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Pig, targetLocation);
+
+  let inc = 1;
+  const runId = system.runInterval(() => {
     pig.teleport(
-        { x: targetLocation.x + inc / 4, y: targetLocation.y + inc / 4, z: targetLocation.z + inc / 4 },
-        {
-            facingLocation: targetLocation,
-        },
+      { x: targetLocation.x + inc / 4, y: targetLocation.y + inc / 4, z: targetLocation.z + inc / 4 },
+      {
+        facingLocation: targetLocation,
+      }
     );
 
     if (inc > 100) {
-        system.clearRun(runId);
+      system.clearRun(runId);
     }
     inc++;
-}, 4);
+  }, 4);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/teleportMovement.ts) code sandbox.
 
 ### **triggerEvent**
 `
@@ -1161,17 +1235,16 @@ Triggers an entity type event. For every entity, a number of events are defined 
 - **eventName**: *string*
   
   Name of the entity type event to trigger. If a namespace is not specified, minecraft: is assumed.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> If the event is not defined in the definition of the entity, an error will be thrown.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - If the event is not defined in the definition of the entity, an error will be thrown.
 
 #### Examples
+
 ##### ***triggerEvent.ts***
+
 ```typescript
 // A function that spawns a creeper and triggers it to explode immediately
 import { DimensionLocation } from '@minecraft/server';
@@ -1183,6 +1256,23 @@ function spawnExplodingCreeper(location: DimensionLocation) {
     creeper.triggerEvent('minecraft:start_exploding_forced');
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/triggerEvent.ts) code sandbox.
+
+##### ***triggerEvent.ts***
+
+```typescript
+import { DimensionLocation } from "@minecraft/server";
+import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
+
+function triggerEvent(targetLocation: DimensionLocation) {
+  const creeper = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Creeper, targetLocation);
+
+  creeper.triggerEvent("minecraft:start_exploding_forced");
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/triggerEvent.ts) code sandbox.
 
 ### **tryTeleport**
 `
@@ -1200,9 +1290,7 @@ Attempts to try a teleport, but may not complete the teleport operation (for exa
   Options regarding the teleport operation.
 
 **Returns** *boolean* - Returns whether the teleport succeeded. This can fail if the destination chunk is unloaded or if the teleport would result in intersecting with blocks.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

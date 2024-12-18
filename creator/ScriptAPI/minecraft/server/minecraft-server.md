@@ -16,12 +16,18 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.10.0"
+    "version": "1.16.0"
 }
 ```
 
 ## Available Versions
-- `1.12.0-beta`
+- `1.18.0-beta`
+- `1.16.0`
+- `1.15.0`
+- `1.14.0`
+- `1.13.0`
+- `1.12.0`
+- `1.11.0`
 - `1.10.0`
 - `1.9.0`
 - `1.8.0`
@@ -39,8 +45,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockComponentTypes](BlockComponentTypes.md)
 - [BlockPistonState](BlockPistonState.md)
 - [BlockVolumeIntersection](BlockVolumeIntersection.md)
+- [ButtonState](ButtonState.md)
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
 - [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
+- [CustomComponentNameErrorReason](CustomComponentNameErrorReason.md)
 - [Difficulty](Difficulty.md)
 - [Direction](Direction.md)
 - [DisplaySlotId](DisplaySlotId.md)
@@ -50,19 +58,24 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityComponentTypes](EntityComponentTypes.md)
 - [EntityDamageCause](EntityDamageCause.md)
 - [EntityInitializationCause](EntityInitializationCause.md)
-- [EntityLifetimeState](EntityLifetimeState.md)
 - [EquipmentSlot](EquipmentSlot.md)
 - [FluidType](FluidType.md)
 - [GameMode](GameMode.md)
 - [GameRule](GameRule.md)
 - [HudElement](HudElement.md)
 - [HudVisibility](HudVisibility.md)
+- [InputButton](InputButton.md)
+- [InputMode](InputMode.md)
 - [InputPermissionCategory](InputPermissionCategory.md)
 - [ItemComponentTypes](ItemComponentTypes.md)
 - [ItemLockMode](ItemLockMode.md)
+- [LiquidType](LiquidType.md)
+- [MemoryTier](MemoryTier.md)
 - [MoonPhase](MoonPhase.md)
+- [NamespaceNameErrorReason](NamespaceNameErrorReason.md)
 - [ObjectiveSortOrder](ObjectiveSortOrder.md)
 - [PaletteColor](PaletteColor.md)
+- [PlatformType](PlatformType.md)
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
 - [ScriptEventSource](ScriptEventSource.md)
 - [SignSide](SignSide.md)
@@ -76,6 +89,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 
 # Type Aliases
 - [BlockComponentTypeMap](BlockComponentTypeMap.md)
+- [BlockStateArg](BlockStateArg.md)
 - [EntityComponentTypeMap](EntityComponentTypeMap.md)
 - [ItemComponentTypeMap](ItemComponentTypeMap.md)
 
@@ -97,23 +111,19 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockEvent](BlockEvent.md)
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
 - [BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)
+- [BlockFluidContainerComponent](BlockFluidContainerComponent.md)
 - [BlockInventoryComponent](BlockInventoryComponent.md)
-- [BlockLavaContainerComponent](BlockLavaContainerComponent.md)
-- [BlockLiquidContainerComponent](BlockLiquidContainerComponent.md)
 - [BlockLocationIterator](BlockLocationIterator.md)
 - [BlockPermutation](BlockPermutation.md)
 - [BlockPistonComponent](BlockPistonComponent.md)
-- [BlockPotionContainerComponent](BlockPotionContainerComponent.md)
 - [BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)
 - [BlockSignComponent](BlockSignComponent.md)
-- [BlockSnowContainerComponent](BlockSnowContainerComponent.md)
 - [BlockStates](BlockStates.md)
 - [BlockStateType](BlockStateType.md)
 - [BlockType](BlockType.md)
 - [BlockTypes](BlockTypes.md)
 - [BlockVolume](BlockVolume.md)
 - [BlockVolumeBase](BlockVolumeBase.md)
-- [BlockWaterContainerComponent](BlockWaterContainerComponent.md)
 - [BoundingBoxUtils](BoundingBoxUtils.md)
 - [ButtonPushAfterEvent](ButtonPushAfterEvent.md)
 - [ButtonPushAfterEventSignal](ButtonPushAfterEventSignal.md)
@@ -122,6 +132,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ChatSendAfterEventSignal](ChatSendAfterEventSignal.md)
 - [ChatSendBeforeEvent](ChatSendBeforeEvent.md)
 - [ChatSendBeforeEventSignal](ChatSendBeforeEventSignal.md)
+- [ClientSystemInfo](ClientSystemInfo.md)
 - [CommandResult](CommandResult.md)
 - [Component](Component.md)
 - [CompoundBlockVolume](CompoundBlockVolume.md)
@@ -247,6 +258,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [GameRules](GameRules.md)
 - [IButtonPushAfterEventSignal](IButtonPushAfterEventSignal.md)
 - [ILeverActionAfterEventSignal](ILeverActionAfterEventSignal.md)
+- [InputInfo](InputInfo.md)
 - [IPlayerJoinAfterEventSignal](IPlayerJoinAfterEventSignal.md)
 - [IPlayerLeaveAfterEventSignal](IPlayerLeaveAfterEventSignal.md)
 - [IPlayerSpawnAfterEventSignal](IPlayerSpawnAfterEventSignal.md)
@@ -262,10 +274,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemComponentRegistry](ItemComponentRegistry.md)
 - [ItemComponentUseEvent](ItemComponentUseEvent.md)
 - [ItemComponentUseOnEvent](ItemComponentUseOnEvent.md)
+- [ItemCompostableComponent](ItemCompostableComponent.md)
 - [ItemCooldownComponent](ItemCooldownComponent.md)
 - [ItemDurabilityComponent](ItemDurabilityComponent.md)
+- [ItemDyeableComponent](ItemDyeableComponent.md)
 - [ItemEnchantableComponent](ItemEnchantableComponent.md)
 - [ItemFoodComponent](ItemFoodComponent.md)
+- [ItemPotionComponent](ItemPotionComponent.md)
 - [ItemReleaseUseAfterEvent](ItemReleaseUseAfterEvent.md)
 - [ItemReleaseUseAfterEventSignal](ItemReleaseUseAfterEventSignal.md)
 - [ItemStack](ItemStack.md)
@@ -301,12 +316,19 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerBreakBlockAfterEventSignal](PlayerBreakBlockAfterEventSignal.md)
 - [PlayerBreakBlockBeforeEvent](PlayerBreakBlockBeforeEvent.md)
 - [PlayerBreakBlockBeforeEventSignal](PlayerBreakBlockBeforeEventSignal.md)
+- [PlayerButtonInputAfterEvent](PlayerButtonInputAfterEvent.md)
+- [PlayerButtonInputAfterEventSignal](PlayerButtonInputAfterEventSignal.md)
+- [PlayerCursorInventoryComponent](PlayerCursorInventoryComponent.md)
 - [PlayerDimensionChangeAfterEvent](PlayerDimensionChangeAfterEvent.md)
 - [PlayerDimensionChangeAfterEventSignal](PlayerDimensionChangeAfterEventSignal.md)
+- [PlayerEmoteAfterEvent](PlayerEmoteAfterEvent.md)
+- [PlayerEmoteAfterEventSignal](PlayerEmoteAfterEventSignal.md)
 - [PlayerGameModeChangeAfterEvent](PlayerGameModeChangeAfterEvent.md)
 - [PlayerGameModeChangeAfterEventSignal](PlayerGameModeChangeAfterEventSignal.md)
 - [PlayerGameModeChangeBeforeEvent](PlayerGameModeChangeBeforeEvent.md)
 - [PlayerGameModeChangeBeforeEventSignal](PlayerGameModeChangeBeforeEventSignal.md)
+- [PlayerInputModeChangeAfterEvent](PlayerInputModeChangeAfterEvent.md)
+- [PlayerInputModeChangeAfterEventSignal](PlayerInputModeChangeAfterEventSignal.md)
 - [PlayerInputPermissionCategoryChangeAfterEvent](PlayerInputPermissionCategoryChangeAfterEvent.md)
 - [PlayerInputPermissionCategoryChangeAfterEventSignal](PlayerInputPermissionCategoryChangeAfterEventSignal.md)
 - [PlayerInputPermissions](PlayerInputPermissions.md)
@@ -331,6 +353,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerPlaceBlockBeforeEventSignal](PlayerPlaceBlockBeforeEventSignal.md)
 - [PlayerSpawnAfterEvent](PlayerSpawnAfterEvent.md)
 - [PlayerSpawnAfterEventSignal](PlayerSpawnAfterEventSignal.md)
+- [PotionEffectType](PotionEffectType.md)
+- [PotionLiquidType](PotionLiquidType.md)
+- [PotionModifierType](PotionModifierType.md)
+- [Potions](Potions.md)
 - [PressurePlatePopAfterEvent](PressurePlatePopAfterEvent.md)
 - [PressurePlatePopAfterEventSignal](PressurePlatePopAfterEventSignal.md)
 - [PressurePlatePushAfterEvent](PressurePlatePushAfterEvent.md)
@@ -348,11 +374,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ScriptEventCommandMessageAfterEventSignal](ScriptEventCommandMessageAfterEventSignal.md)
 - [Seat](Seat.md)
 - [ServerMessageAfterEventSignal](ServerMessageAfterEventSignal.md)
+- [ShutdownBeforeEventSignal](ShutdownBeforeEventSignal.md)
+- [ShutdownEvent](ShutdownEvent.md)
 - [Structure](Structure.md)
 - [StructureManager](StructureManager.md)
 - [System](System.md)
 - [SystemAfterEvents](SystemAfterEvents.md)
 - [SystemBeforeEvents](SystemBeforeEvents.md)
+- [SystemInfo](SystemInfo.md)
 - [TargetBlockHitAfterEvent](TargetBlockHitAfterEvent.md)
 - [TargetBlockHitAfterEventSignal](TargetBlockHitAfterEventSignal.md)
 - [Trigger](Trigger.md)
@@ -386,10 +415,12 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [CameraEaseOptions](CameraEaseOptions.md)
 - [CameraFadeOptions](CameraFadeOptions.md)
 - [CameraFadeTimeOptions](CameraFadeTimeOptions.md)
+- [CameraFixedBoomOptions](CameraFixedBoomOptions.md)
 - [CameraSetFacingOptions](CameraSetFacingOptions.md)
 - [CameraSetLocationOptions](CameraSetLocationOptions.md)
 - [CameraSetPosOptions](CameraSetPosOptions.md)
 - [CameraSetRotOptions](CameraSetRotOptions.md)
+- [CameraTargetOptions](CameraTargetOptions.md)
 - [CompoundBlockVolumeItem](CompoundBlockVolumeItem.md)
 - [DefinitionModifier](DefinitionModifier.md)
 - [DimensionLocation](DimensionLocation.md)
@@ -411,13 +442,17 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ExplosionOptions](ExplosionOptions.md)
 - [GreaterThanComparison](GreaterThanComparison.md)
 - [GreaterThanOrEqualsComparison](GreaterThanOrEqualsComparison.md)
+- [InputEventOptions](InputEventOptions.md)
 - [ItemCustomComponent](ItemCustomComponent.md)
+- [JigsawPlaceOptions](JigsawPlaceOptions.md)
+- [JigsawStructurePlaceOptions](JigsawStructurePlaceOptions.md)
 - [LessThanComparison](LessThanComparison.md)
 - [LessThanOrEqualsComparison](LessThanOrEqualsComparison.md)
 - [MusicOptions](MusicOptions.md)
 - [NotEqualsComparison](NotEqualsComparison.md)
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
+- [PotionOptions](PotionOptions.md)
 - [ProjectileShootOptions](ProjectileShootOptions.md)
 - [RangeComparison](RangeComparison.md)
 - [RawMessage](RawMessage.md)
@@ -438,42 +473,42 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [WorldSoundOptions](WorldSoundOptions.md)
 
 ## Errors
+- [BlockCustomComponentAlreadyRegisteredError](BlockCustomComponentAlreadyRegisteredError.md)
+- [BlockCustomComponentReloadNewComponentError](BlockCustomComponentReloadNewComponentError.md)
+- [BlockCustomComponentReloadNewEventError](BlockCustomComponentReloadNewEventError.md)
+- [BlockCustomComponentReloadVersionError](BlockCustomComponentReloadVersionError.md)
 - [CommandError](CommandError.md)
+- [CustomComponentInvalidRegistryError](CustomComponentInvalidRegistryError.md)
+- [CustomComponentNameError](CustomComponentNameError.md)
 - [EnchantmentLevelOutOfBoundsError](EnchantmentLevelOutOfBoundsError.md)
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
+- [InvalidEntityError](InvalidEntityError.md)
+- [InvalidIteratorError](InvalidIteratorError.md)
 - [InvalidStructureError](InvalidStructureError.md)
 - [ItemCustomComponentAlreadyRegisteredError](ItemCustomComponentAlreadyRegisteredError.md)
-- [ItemCustomComponentNameError](ItemCustomComponentNameError.md)
 - [ItemCustomComponentReloadNewComponentError](ItemCustomComponentReloadNewComponentError.md)
 - [ItemCustomComponentReloadNewEventError](ItemCustomComponentReloadNewEventError.md)
 - [ItemCustomComponentReloadVersionError](ItemCustomComponentReloadVersionError.md)
 - [LocationInUnloadedChunkError](LocationInUnloadedChunkError.md)
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
+- [NamespaceNameError](NamespaceNameError.md)
+- [PlaceJigsawError](PlaceJigsawError.md)
+- [ScriptEventMessageSizeError](ScriptEventMessageSizeError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
 
 ## Constants
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **HudElementsCount**
 `static read-only HudElementsCount = 13;`
 
 Type: *number*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **HudVisibilityCount**
 `static read-only HudVisibilityCount = 2;`
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **MoonPhaseCount**
 `static read-only MoonPhaseCount = 8;`

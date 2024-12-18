@@ -40,6 +40,13 @@ Location relative to the bottom north-west corner of the block where the item is
 
 Type: [*Vector3*](Vector3.md)
 
+### **isFirstEvent**
+`read-only isFirstEvent: boolean;`
+
+This value will be true if the event was triggered on players initial interaction button press and false on events triggered from holding the interaction button.
+
+Type: *boolean*
+
 ### **itemStack**
 `read-only itemStack?: ItemStack;`
 

@@ -1,5 +1,7 @@
  - name: Block Components List
-   href: BlockComponentsList.md 
+   href: BlockComponentsList.md
+ - name: breathability
+   href: minecraftBlock_breathability.md
  - name: collision_box
    href: minecraftBlock_collision_box.md
  - name: crafting_table
@@ -16,10 +18,14 @@
    href: minecraftBlock_friction.md
  - name: geometry
    href: minecraftBlock_geometry.md
+ - name: item_visual
+   href: minecraftBlock_item_visual.md
  - name: light_dampening
    href: minecraftBlock_light_dampening.md
  - name: light_emission
-   href: minecraftBlock_light_emission.md    
+   href: minecraftBlock_light_emission.md
+ - name: liquid_detection 
+   href: minecraftBlock_liquid_detection.md
  - name: loot
    href: minecraftBlock_loot.md
  - name: map_color
@@ -28,9 +34,11 @@
    href: minecraftBlock_material_instances.md
  - name: placement_filter
    href: minecraftBlock_placement_filter.md
+ - name: redstone_conductivity
+   href: minecraftBlock_redstone_conductivity.md
  - name: selection_box
    href: minecraftBlock_selection_box.md
+ - name: tag
+   href: minecraftBlock_tag.md
  - name: transformation
    href: minecraftBlock_transformation.md
- - name: unit_cube
-   href: minecraftBlock_unit_cube.md

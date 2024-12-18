@@ -32,6 +32,30 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
 - [ServerSecrets](ServerSecrets.md)
 - [ServerVariables](ServerVariables.md)
 
+## Functions
+
+### **transferPlayer**
+`
+transferPlayer(player: minecraftserver.Player, host: string, port: number): void
+`
+
+Transfer player to another server.
+
+#### **Parameters**
+- **player**: [*@minecraft/server.Player*](../../minecraft/server/Player.md)
+  
+  Player to transfer.
+- **host**: *string*
+  
+  Host of the server to transfer to.
+- **port**: *number*
+  
+  Port of the server to transfer to.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+
 ## Objects
   
 ### **secrets**

@@ -17,8 +17,9 @@ This component can be specified as a `Boolean`. If this component is omitted, th
 ## Parameters
 
 | Name| Type | Default Value| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| seconds_to_destroy| Decimal | 0.0| Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times. |
+|:-----------:|:-----------:|:-----------:|:-----------|
+| item_specific_speeds | Array | True | Optional array of objects to describe item-specific block destroy speeds. Each object contains an **`item`** ItemDescriptor and a **`destroy_speed`** float. **`destroy_speed`** is required and it is the speed applied while using the defined item. **`item`** is required and it is an ItemDescriptor filtering for the item used while mining. |
+| seconds_to_destroy| Decimal | 0.0 | Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times. |
 
 ## Example (Boolean)
 
@@ -29,7 +30,41 @@ This component can be specified as a `Boolean`. If this component is omitted, th
 ## Example (JSON Object)
 
 ```json
+"minecraft:destructible_by_mining": { 
+  "seconds_to_destroy": 10, 
+  "item_specific_speeds": [ 
+    { 
+      "item": { "tags": "q.any_tag('minecraft:is_pickaxe', 'my_pack:custom_tool') " }, 
+      "destroy_speed": 5.0 
+    } 
+  ] 
+} 
+```
+
+```json
 "minecraft:destructible_by_mining": {
-    "seconds_to_destroy": 10
+	"seconds_to_destroy": 10,
+	"item_specific_speeds": [
+		{
+			"item": { "tags": "q.any_tag('minecraft:is_pickaxe') " },
+			"destroy_speed": 5.0
+		}
+	]
+}
+```
+
+```json
+"minecraft:destructible_by_mining": {
+	"seconds_to_destroy": 10,
+	"item_specific_speeds": [
+		{
+			"item": "minecraft:iron_pickaxe",
+			"destroy_speed": 5.0
+		},
+		{
+			"item": "minecraft:diamond_pickaxe",
+			"destroy_speed": 2.0
+		}
+	]
 }
 ```

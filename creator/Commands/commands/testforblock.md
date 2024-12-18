@@ -21,10 +21,10 @@ Tests whether a certain block is in a specific location.
 </table>
 
 ## Usage
-### Test for block, optional data value
+### Test for block, optional block state
 `/testforblock <position: x y z> <tileName: Block> [blockStates: block properties]`
 
-Test for a `block name` in a `vector` position with optional `data value`.
+Test for a `block name` in a `vector` position with optional `block states`.
 
 ## Arguments
 - `blockStates`: block properties

@@ -16,7 +16,7 @@ ms.service: minecraft-bedrock-edition
 |:-----------:|:-----------:|:-----------:|:-----------:|
 | max_distance| 3| Decimal| A charge attack cannot start if the entity is farther than this distance to the target. |
 | min_distance| 2| Decimal| A charge attack cannot start if the entity is closer than this distance to the target. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | speed_multiplier| 1| Decimal| Modifies the entity's speed when charging toward the target. |
 | success_rate| 0.1428| Decimal| Percent chance this entity will start a charge attack, if not already attacking (1.0 = 100%) |
 

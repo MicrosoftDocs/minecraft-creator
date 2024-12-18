@@ -36,10 +36,10 @@ Listed below are the currently available Molang query functions in the latest re
 | query.any_animation_finished| Only valid in an animation controller. Returns 1.0 if any animation in the current animation controller state has played through at least once, else it returns 0.0. |
 | query.any_tag| Returns 1.0 if the item or block has any of the tags specified, else it returns 0.0. |
 | query.approx_eq| Returns 1.0 if all of the arguments are within the smallest unit of measurement possible for the computer running this query of each other, else it returns 0.0. |
-| query.armor_color_slot| Takes the armor slot index as a parameter and returns the color value (0=Red, 1=Green, 2=Blue, 3=Alpha) of the armor in the requested slot. Valid values for the armor slot index are: 0=head, 1=chest, 2=legs, and 3=feet.|
-| query.armor_damage_slot| Takes the armor slot index as a parameter and returns the damage value of the armor in the requested slot. Valid values for the armor slot index are: 0=head, 1=chest, 2=legs, and 3=feet.|
+| query.armor_color_slot| Takes the armor slot index as a parameter and returns the color value (0=Red, 1=Green, 2=Blue, 3=Alpha) of the armor in the requested slot. Valid values for the armor slot index are: 0=head, 1=chest, 2=legs, 3=feet, and 4=body.|
+| query.armor_damage_slot| Takes the armor slot index as a parameter and returns the damage value of the armor in the requested slot. Valid values for the armor slot index are: 0=head, 1=chest, 2=legs, 3=feet, and 4=body.|
 | query.armor_material_slot| Takes the armor slot index as a parameter and returns the armor material type (0=Default, 1=Enchanted, 2=Leather, 3=Enchanted Leather) in the requested armor slot. |
-| query.armor_texture_slot| Takes the armor slot index as a parameter and returns the texture type (0=Leather, 1=Chain, 2=Iron, 3=Diamond, 4=Gold) of the armor in requested slot. |
+| query.armor_texture_slot| Takes the armor slot index as a parameter, and returns the texture type of the requested slot. The valid values for the armor slot index are: 0=head, 1=chest, 2=legs, 3=feet, and 4=body. |
 | query.average_frame_time| Returns the time in *seconds* of the average frame time over the last `n` frames. If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.average_frame_time` (or the equivalent `query.average_frame_time(0)`) will return the frame time of the frame before the current one. `query.average_frame_time(1)` will return the average frame time of the previous two frames. Currently we store the history of the last 30 frames, although note that this may change in the future. Asking for more frames will result in only sampling the number of frames stored. |
 | query.block_face| Returns the block face for this (only valid for certain triggers such as placing blocks, or interacting with block) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
 | query.block_has_all_tags| Takes a world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided. |
@@ -69,6 +69,8 @@ Listed below are the currently available Molang query functions in the latest re
 | query.cardinal_facing| Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
 | query.cardinal_facing_2d| Returns the current facing of the player ignoring up/down part of the direction (North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
 | query.cardinal_player_facing| Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
+| query.client_max_render_distance | Returns the max render distance in chunks of the current client. Available on the Client (Resource Packs) only. |
+| query.client_memory_tier | Returns a number representing the client RAM memory tier, 0 = 'Undetermined', 1 = 'SuperLow', 2 = 'Low', 3 = 'Mid', 4 = 'High', or 5 = 'SuperHigh'. Available on the Client (Resource Packs) only. |
 | query.combine_entities| Combines any valid entity references from all arguments into a single array. Note that order is not preserved, and duplicates and invalid values are removed. |
 | query.cooldown_time| Returns the total cooldown time in seconds for the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. Uses the same name and id that the replaceitem command takes when querying entities. |
 | query.cooldown_time_remaining| Returns the cooldown time remaining in seconds for specified cooldown type or the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. Uses the same name and id that the replaceitem command takes when querying entities. Returns highest cooldown if no parameters are supplied. |
@@ -81,7 +83,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.distance_from_camera| Returns the distance of the root of this entity or particle emitter from the camera. |
 | query.effect_emitter_count| Returns the total number of active emitters of the callee's particle effect type. |
 | query.effect_particle_count| Returns the total number of active particles of the callee's particle effect type. |
-| query.equipment_count| Returns the number of equipped pieces of armor for an entity from 0 to 4, not counting items held in hands. (To query for hand slots, use `query.is_item_equipped` or `query.is_item_name_any`).|
+| query.equipment_count| Returns the number of equipped pieces of armor for an entity from 0 to 5, not counting items held in hands. (To query for hand slots, use `query.is_item_equipped` or `query.is_item_name_any`).|
 | query.equipped_item_all_tags| Takes a slot name followed by any tags you want to check for in the form of `tag_name` and returns 1 if all of the tags are on that equipped item, 0 otherwise. `query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_shovel')` |
 | query.equipped_item_any_tag| Takes a slot name followed by any tag you want to check for in the form of `tag_name` and returns 0 if none of the tags are on that equipped item or 1 if at least 1 tag exists. |
 | query.equipped_item_is_attachable| Takes the desired hand slot as a parameter (0 or `main_hand` for main hand, 1 or `off_hand` for off hand), and returns whether the item is an attachable item or not. Applies to armor. |
@@ -109,6 +111,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.has_cape| Returns 1.0 if the player has a cape, else it returns 0.0. |
 | query.has_collision| Returns 1.0 if the entity has collisions enabled, else it returns 0.0. |
 | query.has_gravity| Returns 1.0 if the entity is affected by gravity, else it returns 0.0. |
+| query.has_head_gear| Returns boolean whether an entity has an item in their head armor slot or not, or false if no entity in current context. |
 | query.has_owner| Returns 1.0 if the entity has an owner ID, else it returns 0.0. Pertains to wolf. |
 | query.has_player_rider| Returns 1 if the entity has a player riding it in any seat, else it returns 0.|
 | query.has_property| Takes one argument: the name of the property on the entity. Returns 1.0 if a property with the given name exists, 0 otherwise.|
@@ -281,6 +284,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.roll_counter| Returns the roll counter of the entity. Pertains to panda.|
 | query.rotation_to_camera| Returns the rotation required to aim at the camera. Requires one argument representing the rotation axis you would like (0 for x, 1 for y) |
 | query.scoreboard| Takes one argument - the name of the scoreboard entry for this entity. Returns the specified scoreboard value for this entity. Available only with behavior packs.|
+| query.server_memory_tier | Returns a number representing the server RAM memory tier, 0 = 'SuperLow', 1 = 'Low', 2 = 'Mid', 3 = 'High', or 4 = 'SuperHigh'. Available on the server side (Behavior Packs) only. |
 
 | Name | Description |
 |:---------|:---------|
@@ -294,6 +298,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.sneeze_counter| Returns the sneeze counter of the entity. Pertains to panda.|
 | query.spellcolor| Returns a struct representing the entity spell color for the specified entity. The struct contains `.r` `.g` `.b` and `.a` members, each 0.0 to 1.0. If no entity is specified, each member value will be 0.0. Pertains to evoker spell particles. |
 | query.standing_scale| Returns the scale of how far up the entity is standing. Pertains to polar bear. |
+| query.state_time| Only valid in an animation controller. Returns the time in seconds in the current animation controller state. |
 | query.structural_integrity| Returns the structural integrity for the entity, otherwise returns 0. Applies to minecart.|
 | query.surface_particle_color| Returns the particle color for the block located in the surface below the entity (scanned up to 10 blocks down). The struct contains `.r` `.g` `.b` and `.a` members, each 0.0 to 1.0. If no entity is specified or if no surface is found, each member value is set to 0.0. Available on clients (Resource Packs) only. |
 | query.surface_particle_texture_coordinate| Returns the texture coordinate for generating particles for the block located in the surface below the entity (scanned up to 10 blocks down) in a struct with `u` and `v` keys. If no entity is specified or if no surface is found, u and v will be 0.0. Available on clients (Resource Packs) only. |

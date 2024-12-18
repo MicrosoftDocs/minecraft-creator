@@ -11,92 +11,96 @@ description: Contents of the @minecraft/server.ScreenDisplay class.
 Contains information about user interface elements that are showing up on the screen.
 
 #### Examples
+
 ##### ***setTitle.ts***
-```typescript
-import { world } from '@minecraft/server';
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('§o§6You respawned!§r');
-});
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function setTitle(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  if (players.length > 0) {
+    players[0].onScreenDisplay.setTitle("§o§6Fancy Title§r");
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitle.ts) code sandbox.
+
 ##### ***setTitleAndSubtitle.ts***
+
 ```typescript
-import { world } from '@minecraft/server';
+import { world, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('You respawned', {
-        stayDuration: 100,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: 'Try not to die next time!',
-    });
-});
+function setTitleAndSubtitle(
+    targetLocation: DimensionLocation
+) {
+  const players = world.getPlayers();
+
+  players[0].onScreenDisplay.setTitle("Chapter 1", {
+    stayDuration: 100,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "Trouble in Block Town",
+  });
+}
 ```
-##### ***titleCountdown.ts***
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitleAndSubtitle.ts) code sandbox.
+
+##### ***countdown.ts***
+
 ```typescript
-import { world, system } from '@minecraft/server';
+import { world, system, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe(event => {
-    event.player.onScreenDisplay.setTitle('Get ready!', {
-        stayDuration: 220,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: '10',
-    });
+function countdown(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    let countdown = 10;
+  players[0].onScreenDisplay.setTitle("Get ready!", {
+    stayDuration: 220,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "10",
+  });
 
-    const intervalId = system.runInterval(() => {
-        countdown--;
-        event.player.onScreenDisplay.updateSubtitle(countdown.toString());
+  let countdown = 10;
 
-        if (countdown == 0) {
-            system.clearRun(intervalId);
-        }
-    }, 20);
-});
+  const intervalId = system.runInterval(() => {
+    countdown--;
+    players[0].onScreenDisplay.updateSubtitle(countdown.toString());
+
+    if (countdown == 0) {
+      system.clearRun(intervalId);
+    }
+  }, 20);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/countdown.ts) code sandbox.
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [getHiddenHudElements](#gethiddenhudelements)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [hideAllExcept](#hideallexcept)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [isForcedHidden](#isforcedhidden)
-::: moniker-end
 - [isValid](#isvalid)
-::: moniker range="=minecraft-bedrock-experimental"
 - [resetHudElements](#resethudelements)
-::: moniker-end
 - [setActionBar](#setactionbar)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setHudVisibility](#sethudvisibility)
-::: moniker-end
 - [setTitle](#settitle)
 - [updateSubtitle](#updatesubtitle)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getHiddenHudElements**
 `
 getHiddenHudElements(): HudElement[]
 `
 
 **Returns** [*HudElement*](HudElement.md)[]
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **hideAllExcept**
 `
 hideAllExcept(hudElements?: HudElement[]): void
@@ -104,18 +108,11 @@ hideAllExcept(hudElements?: HudElement[]): void
 
 #### **Parameters**
 - **hudElements**?: [*HudElement*](HudElement.md)[] = `null`
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isForcedHidden**
 `
 isForcedHidden(hudElement: HudElement): boolean
@@ -125,16 +122,10 @@ isForcedHidden(hudElement: HudElement): boolean
 - **hudElement**: [*HudElement*](HudElement.md)
 
 **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-::: moniker-end
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **isValid**
 `
@@ -145,21 +136,14 @@ Returns true if the current reference to this screen display manager object is v
 
 **Returns** *boolean*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **resetHudElements**
 `
 resetHudElements(): void
 `
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-::: moniker-end
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setActionBar**
 `
@@ -172,14 +156,11 @@ Set the action bar text - a piece of text that displays beneath the title and ab
 - **text**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
   
   New value for the action bar text.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setHudVisibility**
 `
 setHudVisibility(visible: HudVisibility, hudElements?: HudElement[]): void
@@ -194,16 +175,10 @@ Sets visibility of a particular element of the heads up display (HUD).
 - **hudElements**?: [*HudElement*](HudElement.md)[] = `null`
   
   Optional list of HUD elements to configure visibility for.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
-::: moniker-end
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **setTitle**
 `
@@ -215,59 +190,79 @@ Will cause a title to show up on the player's on screen display. Will clear the 
 #### **Parameters**
 - **title**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
 - **options**?: [*TitleDisplayOptions*](TitleDisplayOptions.md) = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
+
 ##### ***setTitle.ts***
-```typescript
-import { world } from '@minecraft/server';
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('§o§6You respawned!§r');
-});
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function setTitle(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  if (players.length > 0) {
+    players[0].onScreenDisplay.setTitle("§o§6Fancy Title§r");
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitle.ts) code sandbox.
+
 ##### ***setTitleAndSubtitle.ts***
+
 ```typescript
-import { world } from '@minecraft/server';
+import { world, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('You respawned', {
-        stayDuration: 100,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: 'Try not to die next time!',
-    });
-});
+function setTitleAndSubtitle(
+    targetLocation: DimensionLocation
+) {
+  const players = world.getPlayers();
+
+  players[0].onScreenDisplay.setTitle("Chapter 1", {
+    stayDuration: 100,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "Trouble in Block Town",
+  });
+}
 ```
-##### ***titleCountdown.ts***
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitleAndSubtitle.ts) code sandbox.
+
+##### ***countdown.ts***
+
 ```typescript
-import { world, system } from '@minecraft/server';
+import { world, system, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe(event => {
-    event.player.onScreenDisplay.setTitle('Get ready!', {
-        stayDuration: 220,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: '10',
-    });
+function countdown(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    let countdown = 10;
+  players[0].onScreenDisplay.setTitle("Get ready!", {
+    stayDuration: 220,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "10",
+  });
 
-    const intervalId = system.runInterval(() => {
-        countdown--;
-        event.player.onScreenDisplay.updateSubtitle(countdown.toString());
+  let countdown = 10;
 
-        if (countdown == 0) {
-            system.clearRun(intervalId);
-        }
-    }, 20);
-});
+  const intervalId = system.runInterval(() => {
+    countdown--;
+    players[0].onScreenDisplay.updateSubtitle(countdown.toString());
+
+    if (countdown == 0) {
+      system.clearRun(intervalId);
+    }
+  }, 20);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/countdown.ts) code sandbox.
 
 ### **updateSubtitle**
 `
@@ -278,56 +273,108 @@ Updates the subtitle if the subtitle was previously displayed via the setTitle m
 
 #### **Parameters**
 - **subtitle**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 #### Examples
+
+##### ***countdown.ts***
+
+```typescript
+import { world, system, DimensionLocation } from "@minecraft/server";
+
+function countdown(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  players[0].onScreenDisplay.setTitle("Get ready!", {
+    stayDuration: 220,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "10",
+  });
+
+  let countdown = 10;
+
+  const intervalId = system.runInterval(() => {
+    countdown--;
+    players[0].onScreenDisplay.updateSubtitle(countdown.toString());
+
+    if (countdown == 0) {
+      system.clearRun(intervalId);
+    }
+  }, 20);
+}
+```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/countdown.ts) code sandbox.
+
+#### Examples
+
 ##### ***setTitle.ts***
-```typescript
-import { world } from '@minecraft/server';
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('§o§6You respawned!§r');
-});
+```typescript
+import { world, DimensionLocation } from "@minecraft/server";
+
+function setTitle(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
+
+  if (players.length > 0) {
+    players[0].onScreenDisplay.setTitle("§o§6Fancy Title§r");
+  }
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitle.ts) code sandbox.
+
 ##### ***setTitleAndSubtitle.ts***
+
 ```typescript
-import { world } from '@minecraft/server';
+import { world, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe((event) => {
-    event.player.onScreenDisplay.setTitle('You respawned', {
-        stayDuration: 100,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: 'Try not to die next time!',
-    });
-});
+function setTitleAndSubtitle(
+    targetLocation: DimensionLocation
+) {
+  const players = world.getPlayers();
+
+  players[0].onScreenDisplay.setTitle("Chapter 1", {
+    stayDuration: 100,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "Trouble in Block Town",
+  });
+}
 ```
-##### ***titleCountdown.ts***
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setTitleAndSubtitle.ts) code sandbox.
+
+##### ***countdown.ts***
+
 ```typescript
-import { world, system } from '@minecraft/server';
+import { world, system, DimensionLocation } from "@minecraft/server";
 
-world.afterEvents.playerSpawn.subscribe(event => {
-    event.player.onScreenDisplay.setTitle('Get ready!', {
-        stayDuration: 220,
-        fadeInDuration: 2,
-        fadeOutDuration: 4,
-        subtitle: '10',
-    });
+function countdown(targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    let countdown = 10;
+  players[0].onScreenDisplay.setTitle("Get ready!", {
+    stayDuration: 220,
+    fadeInDuration: 2,
+    fadeOutDuration: 4,
+    subtitle: "10",
+  });
 
-    const intervalId = system.runInterval(() => {
-        countdown--;
-        event.player.onScreenDisplay.updateSubtitle(countdown.toString());
+  let countdown = 10;
 
-        if (countdown == 0) {
-            system.clearRun(intervalId);
-        }
-    }, 20);
-});
+  const intervalId = system.runInterval(() => {
+    countdown--;
+    players[0].onScreenDisplay.updateSubtitle(countdown.toString());
+
+    if (countdown == 0) {
+      system.clearRun(intervalId);
+    }
+  }, 20);
+}
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/countdown.ts) code sandbox.

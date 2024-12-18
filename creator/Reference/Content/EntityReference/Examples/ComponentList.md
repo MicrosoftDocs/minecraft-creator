@@ -40,19 +40,23 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:can_climb](EntityComponents/minecraftComponent_can_climb.md) |`minecraft:can_climb` allows an entity to climb ladders. |
 |[minecraft:can_fly](EntityComponents/minecraftComponent_can_fly.md) |`minecraft:can_fly` allows an entity the ability to fly. |
 |[minecraft:can_power_jump](EntityComponents/minecraftComponent_can_power_jump.md) |`minecraft:can_power_jump` allows an entity to power jump similar to the `horse` entity. |
+|[minecraft:cannot_be_attacked](EntityComponents/minecraftComponent_cannot_be_attacked.md) | `minecraft:cannot_be_attacked` blocks entities from attacking the owner entity unless they have the `minecraft:ignore_cannot_be_attacked` component. |
 |[minecraft:celebrate_hunt](EntityComponents/minecraftComponent_celebrate_hunt.md) |`minecraft:celebrate_hunt` compels an entity to celebrate when hunting a specific entity. |
 |[minecraft:color](EntityComponents/minecraftComponent_color.md) |`minecraft:color` defines the entity's main color. |
 |[minecraft:color2](EntityComponents/minecraftComponent_color2.md) |`minecraft:color2` defines the entity's second texture color. |
 |[minecraft:combat_regeneration](EntityComponents/minecraftComponent_combat_regeneration.md) |`minecraft:combat_regeneration` gives Regeneration I and removes Mining Fatigue from the entity that kills the Actor's attack target. |
 |[minecraft:conditional_bandwidth_optimization](EntityComponents/minecraftComponent_conditional_bandwidth_optimization.md) |`minecraft:conditional_bandwidth_optimization` defines the Conditional Spatial Update Bandwidth Optimizations of this entity. |
 |[minecraft:custom_hit_test](EntityComponents/minecraftComponent_custom_hit_test.md) |`minecraft:custom_hit_test` defines a list of hitboxes for melee and ranged hits against the entity.|
+|[minecraft:damage_absorption](EntityComponents/minecraftComponent_damage_absorption.md) | `minecraft:damage_absorption` allows an item to absorb damage that would otherwise be dealt to its wearer. For this to happen, the item needs to be equipped in an armor slot. The absorbed damage reduces the item's durability, with any excess damage being ignored. Because of this, the item also needs a `minecraft:durability` component.|
 |[minecraft:damage_over_time](EntityComponents/minecraftComponent_damage_over_time.md) |`minecraft:damage_over_time` applies a defined amount of damage to the entity at specified intervals.|
 |[minecraft:damage_sensor](EntityComponents/minecraftComponent_damage_sensor.md) |`minecraft:damage_sensor` defines what events to initiate when the entity is damaged by specific entities or items.|
 |[minecraft:default_look_angle](EntityComponents/minecraftComponent_default_look_angle.md) |`minecraft:default_look_angle` sets the entity's default head rotation angle. |
-|[minecraft:despawn](EntityComponents/minecraftComponent_despawn.md) |`minecraft:despawn` compels an entity despawn when the despawn rules or optional filters evaluate to true.|
+|[minecraft:despawn](EntityComponents/minecraftComponent_despawn.md) |`minecraft:despawn` prevents the entity from changing dimension through portals.|
+|[minecraft:dimension_bound](EntityComponents/minecraftComponent_dimension_bound.md) |`minecraft:dimension_bound` compels an entity despawn when the despawn rules or optional filters evaluate to true.|
 |[minecraft:drying_out_timer](EntityComponents/minecraftComponent_drying_out_timer.md) |`minecraft:drying_out_timer` sets a timer for drying out that will count down and initiate 'dried_out_event' or will stop as soon as the entity gets under rain or water, initiating `stopped_drying_out_event`.|
 |[minecraft:dweller](EntityComponents/minecraftComponent_dweller.md) |`minecraft:dweller` compels an entity to join and migrate between villages and other dwellings.|
 |[minecraft:economy_trade_table](EntityComponents/minecraftComponent_economy_trade_table.md) |`minecraft:economy_trade_table` defines the entity's ability to trade with players.|
+|[minecraft:entity_armor_equipment_slot_mapping](EntityComponents/minecraftComponent_entity_armor_equipment_slot_mapping.md) |`minecraft:entity_armor_equipment_slot_mapping` specifies the armor slot where an item in the `minecraft:equippable` second slot should be equipped.|
 |[minecraft:entity_sensor](EntityComponents/minecraftComponent_entity_sensor.md) |`minecraft:entity_sensor` initiates an event when a set of conditions are met by other entities within the defined range.|
 |[minecraft:environment_sensor](EntityComponents/minecraftComponent_environment_sensor.md) |`minecraft:environment_sensor` creates a trigger based on environment conditions.|
 |[minecraft:equip_item](EntityComponents/minecraftComponent_equip_item.md) |`minecraft:equip_item` compels the entity to put on the desired equipment.|
@@ -80,6 +84,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:home](EntityComponents/minecraftComponent_home.md) |`minecraft:home` saves a home point of interest for when the entity is spawned.|
 |[minecraft:horse.jump_strength](EntityComponents/minecraftComponent_horse.jump_strength.md) |`minecraft:horse.jump_strength` defines the jump height for a horse or similar entity, such as a donkey.|
 |[minecraft:hurt_on_condition](EntityComponents/minecraftComponent_hurt_on_condition.md) |`minecraft:hurt_on_condition` defines a set of conditions under which the entity should take damage.|
+|[minecraft:ignore_cannot_be_attacked](EntityComponents/minecraftComponent_ignore_cannot_be_attacked.md) | `ignore_cannot_be_attacked` when set, blocks entities from attacking the owner entity unless they have the `minecraft:ignore_cannot_be_attacked` component. |
 |[minecraft:input_ground_controlled](EntityComponents/minecraftComponent_input_ground_controlled.md) |`minecraft:input_ground_controlled` allows a ridable entity to be controlled using keyboard controls when ridden by a player. |
 |[minecraft:inside_block_notifier](EntityComponents/minecraftComponent_inside_block_notifier.md) |`minecraft:inside_block_notifier` verifies whether the entity is inside any of the listed blocks.|
 |[minecraft:insomnia](EntityComponents/minecraftComponent_insomnia.md) |`minecraft:insomnia` adds a timer since last rested to see if phantoms should spawn.|
@@ -106,7 +111,7 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:knockback_resistance](EntityComponents/minecraftComponent_knockback_resistance.md) |`minecraft:knockback_resistance` allows an entity to resist being knocked backwards by a melee attack.|
 |[minecraft:lava_movement](EntityComponents/minecraftComponent_lava_movement.md) |`minecraft:lava_movement` allows an entity a custom movement speed across lava blocks.|
 |[minecraft:leashable](EntityComponents/minecraftComponent_leashable.md) |`minecraft:leashable` allows this entity to be leashed and defines the conditions and events for the entity when leashed.|
-|[minecraft:lookat](EntityComponents/minecraftComponent_lookat.md) |`minecraft:lookat` defines the behavior when another entity looks at this entity.|
+|[minecraft:looked_at](EntityComponents/minecraftComponent_looked_at.md) |`minecraft:looked_at` defines the behavior when another entity looks at the owner entity.|
 |[minecraft:loot](EntityComponents/minecraftComponent_loot.md) |`minecraft:loot` sets the loot table for what items the entity drops upon death. |
 |[minecraft:managed_wandering_trader](EntityComponents/minecraftComponent_managed_wandering_trader.md) |`minecraft:managed_wandering_trader` manages the entity's ability to trade. |
 |[minecraft:mark_variant](EntityComponents/minecraftComponent_mark_variant.md) |`minecraft:mark_variant` sets the variant for the entity to be used. |
@@ -165,7 +170,8 @@ Below is a list of all available Components within Minecraft: Bedrock Edition fo
 |[minecraft:timer](EntityComponents/minecraftComponent_timer.md) |`minecraft:timer` adds a timer after which an event will initiate.|
 |[minecraft:trade_table](EntityComponents/minecraftComponent_trade_table.md) |`minecraft:trade_table` defines this entity's ability to trade with players.|
 |[minecraft:trail](EntityComponents/minecraftComponent_trail.md) |`minecraft:trail` causes an entity to leave a trail of blocks as it moves about the world. |
-|[minecraft:transformation](EntityComponents/minecraftComponent_transformation.md) |`minecraft:transformation` defines an entity's transformation from the current definition into another.|
+|[minecraft:transformation](EntityComponents/minecraftComponent_transformation.md) |`minecraft:transformation` defines an entity's transformation from the current definition into another. |
+|[minecraft:transient](EntityComponents/minecraftComponent_transient.md) |An entity with the `minecraft:transient` component will NEVER persist, and will forever disappear when unloaded. |
 |[minecraft:trust](EntityComponents/minecraftComponent_trust.md) |`minecraft:trust` allows the entity to trust one or more players.|
 |[minecraft:trusting](EntityComponents/minecraftComponent_trusting.md) |`minecraft:trusting` defines the rules for an entity to trust players. |
 |[minecraft:type_family](EntityComponents/minecraftComponent_type_family.md) |`minecraft:type_family` defines the families the entity belongs to. |

@@ -24,11 +24,11 @@ highlightedContent:
     #card
     - title: "Minecraft Bedrock Editor"
       itemType: whats-new
-      url: Documents/EditorOverview.md
+      url: Documents/BedrockEditor/EditorOverview.md
     #card
-    - title: "1.20.80 Update Summary"
+    - title: "1.21.50 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.20.80.md
+      url: Documents/Update1.21.50.md
     #card
     - title: Camera Command
       itemType: whats-new
@@ -36,7 +36,7 @@ highlightedContent:
     #card
     - title: "Building Editor Extensions"
       itemType: whats-new
-      url: Documents/EditorExtensionsIntroduction.md
+      url: Documents/BedrockEditor/EditorExtensionsIntroduction.md
     #card
     - title: Minecraft Item Wizard
       itemType: whats-new

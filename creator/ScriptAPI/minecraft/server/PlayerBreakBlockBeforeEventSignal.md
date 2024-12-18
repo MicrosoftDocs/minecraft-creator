@@ -26,9 +26,9 @@ Adds a callback that will be called before a block is broken by a player.
 - **options**?: [*BlockEventOptions*](BlockEventOptions.md) = `null`
 
 **Returns** (arg: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -39,6 +39,6 @@ Removes a callback from being called before a player breaks a block.
 
 #### **Parameters**
 - **callback**: (arg: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.

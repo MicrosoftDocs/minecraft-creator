@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .BlockVolumeIntersection Enumeration
 description: Contents of the .BlockVolumeIntersection enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockVolumeIntersection Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Description of the resulting intersection test on two BlockVolume objects
 

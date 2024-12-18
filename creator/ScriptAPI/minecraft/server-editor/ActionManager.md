@@ -10,15 +10,6 @@ description: Contents of the @minecraft/server-editor.ActionManager class.
 
 Binds actions to the client and manages their lifetime. Action managers are managed on a per player basis since client side UI is per player.
 
-## Properties
-
-### **activeToolId**
-`activeToolId: string | undefined;`
-
-The active tool ID
-
-Type: *string | undefined*
-
 ## Methods
 - [createAction](#createaction)
 

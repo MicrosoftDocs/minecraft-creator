@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemComponentRegistry Class
 description: Contents of the @minecraft/server.ItemComponentRegistry class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemComponentRegistry Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Provides the functionality for registering custom components for items.
 
@@ -31,8 +27,7 @@ Registers an item custom component that can be used in item JSON configuration.
 - **itemCustomComponent**: [*ItemCustomComponent*](ItemCustomComponent.md)
   
   The collection of event functions that will be called when the event occurs on an item using this custom component id.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*ItemCustomComponentAlreadyRegisteredError*](ItemCustomComponentAlreadyRegisteredError.md), [*ItemCustomComponentNameError*](ItemCustomComponentNameError.md), [*ItemCustomComponentReloadNewComponentError*](ItemCustomComponentReloadNewComponentError.md), [*ItemCustomComponentReloadNewEventError*](ItemCustomComponentReloadNewEventError.md), [*ItemCustomComponentReloadVersionError*](ItemCustomComponentReloadVersionError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*CustomComponentNameError*](CustomComponentNameError.md), [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*ItemCustomComponentAlreadyRegisteredError*](ItemCustomComponentAlreadyRegisteredError.md), [*ItemCustomComponentReloadNewComponentError*](ItemCustomComponentReloadNewComponentError.md), [*ItemCustomComponentReloadNewEventError*](ItemCustomComponentReloadNewEventError.md), [*ItemCustomComponentReloadVersionError*](ItemCustomComponentReloadVersionError.md)

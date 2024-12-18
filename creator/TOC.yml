@@ -3,7 +3,17 @@
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
     - name: "Updates and News"
-      items: 
+      items:
+        - name: 1.21.50 Update Summary
+          href: Documents/Update1.21.50.md 
+        - name: 1.21.40 Update Summary
+          href: Documents/Update1.21.40.md 
+        - name: 1.21.30 Update Summary
+          href: Documents/Update1.21.30.md 
+        - name: 1.21.20 Update Summary
+          href: Documents/Update1.21.20.md 
+        - name: 1.21 Update Summary
+          href: Documents/Update1.21.md 
         - name: 1.20.80 Update Summary
           href: Documents/Update1.20.80.md
         - name: 1.20.70 Update Summary
@@ -40,8 +50,10 @@
               href: Documents/CavesAndCliffsEntities.md
             - name: World Height Changes in Caves and Cliffs Part 2
               href: Documents/WorldHeightChange.md    
-    - name: Casual Creator
+    - name: Casual Creator Article Series
       items:              
+        - name: "Building Debug Tools"
+          href: Casual/DebugTools.md
         - name: "Chill Dreams Add-On: Part 1 - The Dream Turkey"
           href: Casual/ChillDreamsPart1TheDreamTurkey.md
         - name: "Chill Dreams Add-On: Part 2 - Making Dreams Come True"
@@ -73,7 +85,7 @@
         - name: 10. Create a Loot Table
           href: Documents/CreateLootTable.md
         - name: 11. Create a Village with Structure Blocks
-          href: Documents/StructureBlocksTutorial.md
+          href: Documents/Structures/StructureBlocksCommandTutorial.md
     - name: Concepts
       items:
         - name: Getting Started with Add-Ons
@@ -84,24 +96,40 @@
           href: Documents/BehaviorPack.md
         - name: 'Differences Between Minecraft: Bedrock Edition and Minecraft: Java Edition'
           href: Documents/DifferencesBetweenBedrockAndJava.md
-        - name: Designing Gameplay for Various Devices
-          href: Documents/DesigningGameplayForVariousDevices.md
+        - name: "More Sources of Info"
+          href: Documents/MoreInfoSources.md
         - name: Minecraft File Extensions
           href: Documents/MinecraftFileExtensions.md
         - name: Add-on Pack Contents
           href: Documents/ComprehensivePackContents.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
-        - name: Adding Custom Items
-          href: Documents/AddCustomItems.md
-        - name: Creating and Adding Custom Sounds
-          href: Documents/AddCustomSounds.md
-        - name: "Create a Skin Pack"
-          href: Documents/SkinPack.md
-        - name: Introduction to Recipes
-          href: Documents/RecipeIntroduction.md
-        - name: Target Selectors
-          href: Documents/targetselectors.md
+        - name: "Advanced Rendering: Deferred Lighting" 
+          items:  
+          - name: Deferred Lighting Topics
+            href: Documents/DeferredLighting/index.yml
+          - name: Getting Started with Deferred Lighting
+            href: Documents/DeferredLighting/GettingStartedDeferredLighting.md
+          - name: PBR Resource Packs
+            href: Documents/DeferredLighting/PBRResourcePacks.md
+          - name: Enabling Deferred Technical Preview in Your World
+            href: Documents/DeferredLighting/EnablingDeferredTechnicalPreview.md
+          - name: Lighting Customization
+            href: Documents/DeferredLighting/LightingCustomization.md
+          - name: Atmospherics Customization
+            href: Documents/DeferredLighting/AtmosphericsCustomization.md
+          - name: Volumetric Fog and Light Shafts Customization
+            href: Documents/DeferredLighting/VolumetricFogLightShaftsCustomization.md
+          - name: Reflections Customization
+            href: Documents/DeferredLighting/ReflectionsCustomization.md
+          - name: Color Grading and Tone Mapping Customization
+            href: Documents/DeferredLighting/ColorGradingToneMappingCustomization.md
+          - name: Key Frame JSON Syntax
+            href: Documents/DeferredLighting/KeyFrameJSONSyntax.md
+          - name: Subsurface Scattering Customization
+            href: Documents/DeferredLighting/SubSurfaceScatteringCustomization.md
+          - name: Water Customization
+            href: Documents/DeferredLighting/WaterCustomization.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
@@ -116,8 +144,8 @@
             href: Documents/PreparingRawTextForLocalization.md
         - name: Advanced Topics
           items:
-          - name: Getting Started with Deferred Lighting
-            href: Documents/DeferredLighting.md
+          - name: Designing Gameplay for Various Devices
+            href: Documents/DesigningGameplayForVariousDevices.md
           - name: World Templates and Base Game Versioning
             href: Documents/BaseGameVersioning.md
           - name: Editing NBTs Safely
@@ -136,36 +164,40 @@
           href: Documents/RedstoneGuide.md
         - name: Molang Beginner's Guide
           href: Documents/MolangBeginnersGuide.md
+        - name: Introduction to Game Rules
+          href: Documents/IntroductionToGamerules.md
         - name: Introduction to Commands
           href: Documents/CommandsIntroduction.md
-        - name: Introduction to Scripting
-          href: Documents/ScriptingIntroduction.md
-        - name: Custom Components
-          href: Documents/CustomComponents.md
         - name: Commands
           items:  
           - name: Popular Commands
             href: Documents/CommandsPopularCommands.md
+          - name: Target Selectors
+            href: Documents/targetselectors.md
           - name: Introduction to Functions
             href: Documents/FunctionsIntroduction.md
           - name: How to use tick.json
             href: Documents/TickJsonIntroduction.md
           - name: The Damage Command
             href: Documents/CommandsDamageIntroduction.md
-          - name: The Camera Command
-            href: Documents/CameraCommandIntroduction.md
           - name: The Tickingarea Command
             href: Documents/TickingAreaCommand.md
           - name: New /execute command syntax
             href: Documents/CommandsNewExecute.md
           - name: Create an In-World Game with Commands
             href: Documents/CreateAnInWorldGame.md
+        - name: Introduction to Scripting
+          href: Documents/ScriptingIntroduction.md
         - name: Scripting
           items:  
           - name: Build Gameplay with TypeScript
             href: Documents/ScriptingGettingStarted.md
           - name: Use Visual Studio Code Tools to Write Script
             href: Documents/ScriptDeveloperTools.md
+          - name: Introducing Custom Components
+            href: Documents/CustomComponents.md
+          - name: Building with Custom Components
+            href: Documents/CustomComponentsTutorial.md
           - name: Game Loops and Timed Callbacks - a system.run Guide
             href: Documents/SystemRunGuide.md
           - name: Script Module Versioning
@@ -176,34 +208,52 @@
           href: Documents/ScoreboardIntroduction.md
         - name: Scoreboard Operations Tutorial
           href: Documents/ScoreboardOperationsTutorial.md
-        - name: Free Camera Preset Tutorial
-          href: Documents/CameraTutorialFreeCameraPreset.md
     - name: Assets and Sound
       items:
-        - name: Adding Custom Sounds
-          href: Documents/AddCustomSounds.md
         - name: Introduction to Sound
           href: Documents/IntroductionToSound.md
-    - name: Worlds
+        - name: Creating and Adding Custom Sounds
+          href: Documents/AddCustomSounds.md
+        - name: "Create a Skin Pack"
+          href: Documents/SkinPack.md
+    - name: Worlds and Cameras
       items:
         - name: Survival Spawn Creation
           href: Documents/SurvivalSpawnCreation.md
-        - name: Parkour Introduction
-          href: Documents/ParkourIntro.md
-        - name: Parkour World Walkthrough
-          href: Documents/ParkourWorldWalkthrough.md
-        - name: Parkour World Creation Guide
-          href: Documents/ParkourWorldGuide.md 
+        - name: Building a Parkour Challenge World
+          items:   
+          - name: Parkour Introduction
+            href: Documents/ParkourIntro.md
+          - name: Parkour World Walkthrough
+            href: Documents/ParkourWorldWalkthrough.md
+          - name: Parkour World Creation Guide
+            href: Documents/ParkourWorldGuide.md 
         - name: Introduction to Structure Blocks
-          href: Documents/IntroductionToStructureBlocks.md
+          href: Documents/Structures/IntroductionToStructureBlocks.md
+        - name: Introduction to Jigsaw Structures
+          href: Documents/Structures/IntroductionToJigsawStructures.md 
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
         - name: Data-Driven Overworld Height and Void Generation
           href: Documents/DataDrivenOverworldHeight.md
         - name: Fog in Resource Packs
           href: Documents/FogInResourcePacks.md
-    - name: Entities
+        - name: Cameras
+          items:  
+          - name: Camera System Document List
+            href: Documents/CameraSystem/index.yml
+          - name: Camera System Introduction
+            href: Documents/CameraSystem/CameraCommandIntroduction.md
+          - name: Free Camera Preset Tutorial
+            href: Documents/CameraSystem/CameraPresetFree.md
+          - name: Free Camera Script API Tutorial
+            href: Documents/CameraSystem/FreeCameraScriptAPITutorial.md
+          - name: Third Person Camera Preset
+            href: Documents/CameraSystem/CameraPresetThirdPerson.md
+    - name: Entities and Particles
       items:
+        - name: Creating New Entity Types
+          href: Documents/IntroductionToAddEntity.md
         - name: Introduction to Entity Properties
           href: Documents/IntroductionToEntityProperties.md
         - name: Entity Modeling and Animation
@@ -214,44 +264,64 @@
           href: Documents/EntityEvents.md
         - name: Creating a Goblin Chef Entity 
           href: Documents/MakerSeriesMakingTheGoblinChef.md
-        - name: Creating New Entity Types
-          href: Documents/IntroductionToAddEntity.md
-        - name: Create a Custom NPC
-          href: Documents/CreateNPCs.md
-        - name: NPC Dialogue Command
-          href: Documents/NPCDialogue.md
-        - name: NPC DialogueDesigner
-          href: Documents/NPCDialogueDesigner.md
-        - name: Introduction to Loot Tables
-          href: Documents/IntroductionToLootTables.md
-        - name: Loot and Trade Table Functions
-          href: Documents/LootAndTradeTableFunctions.md
-        - name: Loot Overloads
-          href: Documents/LootOverloads.md
-        - name: Loot Table Conditions
-          href: Documents/LootTableConditions.md
-        - name: Creating a Loot Table
-          href: Documents/CreateLootTable.md
+        - name: NPCs
+          items:  
+          - name: Create a Custom NPC
+            href: Documents/CreateNPCs.md
+          - name: NPC Dialogue Command
+            href: Documents/NPCDialogue.md
+          - name: NPC DialogueDesigner
+            href: Documents/NPCDialogueDesigner.md
+        - name: Loot Tables
+          items:  
+          - name: Introduction to Loot Tables
+            href: Documents/IntroductionToLootTables.md
+          - name: Loot and Trade Table Functions
+            href: Documents/LootAndTradeTableFunctions.md
+          - name: Loot Overloads
+            href: Documents/LootOverloads.md
+          - name: Loot Table Conditions
+            href: Documents/LootTableConditions.md
+          - name: Creating a Loot Table
+            href: Documents/CreateLootTable.md
+        - name: Introduction to Particles
+          href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
         - name: Particle Effects
           href: Documents/ParticleEffects.md
+    - name: Items and Recipes
+      items:    
+        - name: Introduction to Recipes
+          href: Documents/RecipeIntroduction.md
+        - name: Adding Custom Items
+          href: Documents/AddCustomItems.md
     - name: Blocks
       items:
-        - name: Create a Custom Die Block 
-          href: Documents/AddCustomDieBlock.md
-        - name: 'Create a Sushi Block: Advanced Custom Blocks' 
-          href: Documents/AdvancedCustomBlocks.md
-        - name: Custom Block Render Lighting 
-          href: Documents/CustomBlockRenderLighting.md
-        - name: Advanced Custom Block Oversized 
-          href: Documents/CustomBlockOversized.md
         - name: Block States and Permutations
           href: Reference/Content/blockreference/Examples/BlockStatesAndPermutations.md
-        - name: Block Traits
-          href: Reference/Content/blockreference/Examples/BlockTraits.md
+        - name: Default Block State and Trait Listings
+          href: Reference/Content/blockreference/Examples/BlockStateAndTraitListings.md
         - name: Create a Village with Structure Blocks
-          href: Documents/StructureBlocksTutorial.md
+          href: Documents/Structures/IntroductionToStructureBlocks.md
         - name: Getting Started with Command Blocks
           href: Documents/CommandBlocks.md
+        - name: Building Custom Blocks
+          items: 
+          - name: Block Traits
+            href: Reference/Content/blockreference/Examples/BlockTraits.md
+          - name: Create a Custom Die Block 
+            href: Documents/AddCustomDieBlock.md
+          - name: 'Create a Sushi Block: Advanced Custom Blocks' 
+            href: Documents/AdvancedCustomBlocks.md
+          - name: Item Display Transforms
+            href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
+          - name: Customizing the Item for a Block
+            href: Reference/Content/blockreference/Examples/CustomizingItemForABlock.md
+          - name: Custom Block Render Lighting 
+            href: Documents/CustomBlockRenderLighting.md
+          - name: Custom Block Render Distance
+            href: Documents/CustomBlockRenderDistance.md
+          - name: Advanced Custom Block Oversized 
+            href: Documents/CustomBlockOversized.md
     - name: Tools and Libraries
       items:
         - name: Commonly Used Tools
@@ -268,25 +338,69 @@
               href: Documents/GameTestGettingStarted.md
             - name: Build your First GameTest
               href: Documents/GameTestBuildYourFirstGameTest.md
-        - name: Bedrock Editor
+        - name: "Bedrock Editor - World Editing"
           items:
+            - name: Editor Topics
+              href: Documents/BedrockEditor/index.yml
             - name: Editor Overview
-              href: Documents/EditorOverview.md
+              href: Documents/BedrockEditor/EditorOverview.md
             - name: Editor Installation Guide
-              href: Documents/EditorInstallation.md
+              href: Documents/BedrockEditor/EditorInstallation.md
             - name: Editor Tutorial
-              href: Documents/EditorTutorial.md
+              href: Documents/BedrockEditor/EditorTutorial.md
+            - name: Editor Action Bar
+              href: Documents/BedrockEditor/EditorActionBar.md
+            - name: Editor Brush Tool
+              href: Documents/BedrockEditor/EditorBrushTool.md
+            - name: Editor Deferred Lighting
+              href: Documents/BedrockEditor/EditorDeferredLighting.md
+            - name: Editor Structures Panel
+              href: Documents/BedrockEditor/EditorStructures.md
+            - name: Editor Keyboard Inputs
+              href: Documents/BedrockEditor/EditorKeyboardInputs.md
+            - name: Editor Paste Preview
+              href: Documents/BedrockEditor/EditorPastePreview.md
+            - name: Editor Selection Tool
+              href: Documents/BedrockEditor/EditorSelectionTool.md
+            - name: Editor Summon Tool
+              href: Documents/BedrockEditor/EditorSummonTool.md
+            - name: Editor Flatten Tool
+              href: Documents/BedrockEditor/EditorFlattenTool.md
+            - name: Editor Smart Fill Tool
+              href: Documents/BedrockEditor/EditorFillTool.md
+            - name: Editor Terrain Tool
+              href: Documents/BedrockEditor/EditorTerrainTool.md
+            - name: Editor Extrude Tool
+              href: Documents/BedrockEditor/EditorExtrudeTool.md
+            - name: Editor Repeater Tool
+              href: Documents/BedrockEditor/EditorRepeaterTool.md
+            - name: Editor Farm Tool
+              href: Documents/BedrockEditor/EditorFarmTool.md
+            - name: Editor Tool Mode
+              href: Documents/BedrockEditor/EditorToolMode.md
+            - name: Editor Workflow
+              href: Documents/BedrockEditor/EditorWorkflow.md
+            - name: Editor World Options
+              href: Documents/BedrockEditor/EditorWorldOptions.md
             - name: Building Editor Extensions
-              href: Documents/EditorExtensionsIntroduction.md
-        - name: Blockbench
+              href: Documents/BedrockEditor/EditorExtensionsIntroduction.md
+        - name: "Blockbench - Model Editing"
           items:
-            - name: Minecraft Item Wizard
-              href: Documents/MinecraftItemWizard.md 
+            - name: Introduction to Blockbench
+              href: Documents/Blockbench.md
             - name: Minecraft Entity Wizard
               href: Documents/MinecraftEntityWizard.md
+            - name: Minecraft Item Wizard
+              href: Documents/MinecraftItemWizard.md 
             - name: Minecraft Block Wizard
               href: Documents/MinecraftBlockWizard.md
-        - name: Chunker
+        - name: "Snowstorm - Particle Editing"
+          href: Documents/SnowstormOverview.md
+        - name: "Minecraft Creator Tools"
+          items:
+            - name: Minecraft Creator Tools
+              href: Documents/MCToolsOverview.md
+        - name: "Chunker - World Conversion"
           items:
             - name: Chunker - Overview
               href: Documents/ChunkerOverview.md
@@ -304,15 +418,13 @@
         href: ScriptAPI/TOC.yml
       - name: Behavior Pack JSON Files
         items:
-        - name: Addons JSON
-          items:
-          - name: Addon Content
-            href: Reference/Content/AddonsReference/Examples/TOC.yml
-        - name: Biomes
+        - name: Add-On Manifest JSON
+          href: Reference/Content/AddonsReference/Examples/AddonManifest.md
+        - name: Biome JSON
           href: Reference/Content/biomereference/Examples/BiomeOverview.md
         - name: Block JSON
           items:
-          - name: Block JSON File Structure
+          - name: Block Definitions
             href: Reference/Content/blockreference/Examples/BlockJsonFileStructure.md
           - name: Block Description
             href: Reference/Content/blockreference/Examples/BlockDescription.md
@@ -326,10 +438,8 @@
             href: Reference/Content/blockreference/Examples/Definitions/BlockCulling.md
           - name: Block Components
             href: Reference/Content/blockreference/Examples/BlockComponents/TOC.yml
-          - name: Block Triggers
-            href: Reference/Content/blockreference/Examples/BlockTriggers/TOC.yml
-          - name: Block Event Responses
-            href: Reference/Content/blockreference/Examples/BlockEvents/TOC.yml
+          - name: Vanilla Block Tags
+            href: Reference/Content/blockreference/Examples/VanillaBlockTags.md
         - name: Entity JSON
           items:
           - name: Filters
@@ -350,29 +460,27 @@
             href: Reference/Content/featuresreference/Examples/Features/TOC.yml
           - name: Feature Example Schema
             href: Reference/Content/FeaturesReference/Examples/ExampleFeatureSchema.md
-        - name: Fog JSON
-          items:
-          - name: Introduction to Fogs
-            href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
         - name: Item JSON
           items:
-          - name: Item Definition
+          - name: Item Definitions
             href: Reference/Content/ItemReference/Examples/ItemDefinition.md
           - name: Item Components
             href: Reference/Content/itemreference/Examples/ItemComponents/TOC.yml
           - name: Custom Item Use Priority
             href: Reference/Content/itemreference/Examples/ItemUsePriority.md
+        - name: Jigsaw JSON
+          items:
+          - name: Jigsaw Structures
+            href: Reference/Content/WorldgenReference/Examples/JigsawJigsawStructures.md
+          - name: Jigsaw Processor List
+            href: Reference/Content/WorldgenReference/Examples/JigsawProcessors.md
+          - name: Jigsaw Template Pool
+            href: Reference/Content/WorldgenReference/Examples/JigsawTemplatePools.md
+          - name: Jigsaw Structure Sets
+            href: Reference/Content/WorldgenReference/Examples/JigsawStructureSets.md
         - name: Recipe JSON
-          items:
-          - name: Recipe Definitions
-            href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
-        - name: Volume JSON
-          items:
-          - name: Volume Components
-            href: Reference/Content/volumereference/Examples/VolumeComponents/TOC.yml
-          - name: Volume Definitions
-            href: Reference/Content/volumereference/Examples/VolumeDefinitions/VolumeDefinitionProperties.md
-        - name: Spawn Rules
+          href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
+        - name: Spawn Rule JSON
           items: 
           - name: Data-Driven Spawning Rules
             href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/DataDrivenSpawning.md
@@ -424,7 +532,7 @@
         items:
         - name: Client Entity JSON
           href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md
-        - name: Geometry and Animation
+        - name: Geometry and Animation JSON
           items:
           - name: Schemas List
             href: Reference/Content/schemasreference/SchemasList.md
@@ -446,41 +554,48 @@
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.19.30.md
           - name: geometry:1.21.0
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.21.0.md
+          - name: Item Display Transforms in geometry:1.21.0
+            href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
           - name: persona_actor_animation
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_persona_actor_animation_1.8.0.md          
         - name: Animation JSON
-          items:
-          - name: Animation References
-            href: Reference/Content/animationsreference/Examples/TOC.yml
+          href: Reference/Content/animationsreference/Examples/TOC.yml
+        - name: Client Biome JSON
+          href: Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md
         - name: Fog JSON
-          items:
-          - name: Introduction to Fogs
-            href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
+          href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
         - name: Particle JSON
           items:
-          - name: Introduction to Particles
-            href: Reference/Content/ParticlesReference/ParticlesIntroduction.md
           - name: Particle Components
             href: Reference/Content/ParticlesReference/ParticleComponents/TOC.yml
           - name: Particle Examples
             href: Reference/Content/ParticlesReference/Examples/TOC.yml
         - name: Texture Set JSON
-          items:
-          - name: Introduction to Texture Sets
-            href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
+          href: Reference/Content/texturesetsreference/texturesetsconcepts/texturesetsintroduction.md
       - name: Molang
         items:
-          - name: Molang Homepage
+          - name: Molang Reference
             href: Reference/Content/molangreference/index.yml
           - name: Molang Concepts
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
+      - name: Default Minecraft Listings
+        href: Reference/Content/AddonsReference/Examples/TOC.yml
       - name: Raw Message JSON
         href: Reference/Content/RawMessageJSON.md
       - name: Version Disambiguation
         href: Reference/Content/VersionDisambiguation.md
+    - name: Best Practices & Tips
+      items:
+      - name: "Use the Latest Platform Version"
+        href: Documents/Practices/LatestPlatformVersion.md
+      - name: "Building Cooperative Add-Ons"
+        href: Documents/Practices/GuidelinesForBuildingCooperativeAddons.md
+      - name: "Tips for Using This Site"
+        href: Documents/TipsForUsingThisSite.md                  
     - name: Contribute
       items:
       - name: "Contributing to Minecraft: Bedrock Documentation"
         href: Documents/ContributorGuide.md
       - name: Contributor Style Guide
         href: Documents/StyleGuide.md
+

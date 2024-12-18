@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .GameRule Enumeration
 description: Contents of the .GameRule enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # GameRule Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Game rules. These values can also be controlled via the /gamerule command.
 

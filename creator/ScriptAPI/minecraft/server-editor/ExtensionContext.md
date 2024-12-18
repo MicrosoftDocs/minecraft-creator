@@ -30,6 +30,11 @@ Type: [*ExtensionContextAfterEvents*](ExtensionContextAfterEvents.md)
 
 Type: [*BlockPaletteManager*](BlockPaletteManager.md)
 
+### **blockUtilities**
+`read-only blockUtilities: BlockUtilities;`
+
+Type: [*BlockUtilities*](BlockUtilities.md)
+
 ### **brushShapeManager**
 `read-only brushShapeManager: BrushShapeManager;`
 
@@ -86,6 +91,11 @@ Type: [*SelectionManager*](SelectionManager.md)
 The instance of the players Settings Manager and the contract through which the settings for the player can be modified.
 
 Type: [*SettingsManager*](SettingsManager.md)
+
+### **structureManager**
+`read-only structureManager: EditorStructureManager;`
+
+Type: [*EditorStructureManager*](EditorStructureManager.md)
 
 ### **transactionManager**
 `read-only transactionManager: TransactionManager;`

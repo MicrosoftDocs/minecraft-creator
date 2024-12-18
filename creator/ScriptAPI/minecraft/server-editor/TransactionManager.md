@@ -15,6 +15,7 @@ Transaction Manager is the basis of the UNDO and REDO operations, and allows a c
 The transactions are stored as a stack, and can be undone in stack order to restore the world to it's original state
 
 ## Methods
+- [addEntityOperation](#addentityoperation)
 - [addUserDefinedOperation](#adduserdefinedoperation)
 - [commitOpenTransaction](#commitopentransaction)
 - [commitTrackedChanges](#committrackedchanges)
@@ -31,6 +32,22 @@ The transactions are stored as a stack, and can be undone in stack order to rest
 - [undo](#undo)
 - [undoSize](#undosize)
 
+### **addEntityOperation**
+`
+addEntityOperation(entity: minecraftserver.Entity, type: EntityOperationType): boolean
+`
+
+#### **Parameters**
+- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+- **type**: [*EntityOperationType*](EntityOperationType.md)
+
+**Returns** *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*
+
 ### **addUserDefinedOperation**
 `
 addUserDefinedOperation(transactionHandlerId: UserDefinedTransactionHandlerId, operationData: string, operationName?: string): void
@@ -40,12 +57,10 @@ addUserDefinedOperation(transactionHandlerId: UserDefinedTransactionHandlerId, o
 - **transactionHandlerId**: [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
 - **operationData**: *string*
 - **operationName**?: *string* = `null`
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **commitOpenTransaction**
 `
@@ -57,12 +72,10 @@ Commit all of the transaction operations currently attached to the open transact
 The open record will be closed and all tracking operations will cease.
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **commitTrackedChanges**
 `
@@ -74,12 +87,10 @@ This function will commit the pending changes caused by any of the track changes
 Pending block changes from tracking operations will be added to the transaction record before submission to the transaction manager
 
 **Returns** *number* - Returns the number of change requests that were being tracked
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **createUserDefinedTransactionHandler**
 `
@@ -91,12 +102,10 @@ createUserDefinedTransactionHandler(undoClosure: (arg: string) => void, redoClos
 - **redoClosure**: (arg: *string*) => *void*
 
 **Returns** [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **discardOpenTransaction**
 `
@@ -108,12 +117,10 @@ Discard the currently open transaction without committing it to the transaction 
 All records within the transaction will be discarded, and any tracking requests currently active will be stopped
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **discardTrackedChanges**
 `
@@ -123,12 +130,10 @@ discardTrackedChanges(): number
 Discard any pending tracked changes.  This does not affect the current open transaction contents, only the pending tracked block operations
 
 **Returns** *number* - Returns the number of change requests that were discarded
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **openTransaction**
 `
@@ -145,12 +150,10 @@ All transaction operations within a record are grouped and treated as a single a
   Give the transaction record a name
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **redo**
 `
@@ -162,12 +165,10 @@ Perform an redo operation.  This will take the last transaction record on the re
 
 
 The transaction record affected by this operation will be transferred to the undo stack in case the creator decides to undo it
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **redoSize**
 `
@@ -177,12 +178,10 @@ redoSize(): number
 Return the number of transaction records on the redo stack.
 
 **Returns** *number*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **trackBlockChangeArea**
 `
@@ -202,34 +201,30 @@ The pending list will be added to the open transaction record when a commit has 
   Max block location of a bounding area
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **trackBlockChangeCompoundBlockVolume**
 `
 trackBlockChangeCompoundBlockVolume(compoundBlockVolume: minecraftserver.CompoundBlockVolume): boolean
 `
 
-Begin tracking block changes in an area defined by a {@link @minecraft-server/CompoundBlockVolume}.  These will be added to a pending changes list.
+Begin tracking block changes in an area defined by a [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md).  These will be added to a pending changes list.
 
 The pending list will be added to the open transaction record when a commit has been issued.
 
 #### **Parameters**
 - **compoundBlockVolume**: [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
   
-  {@link @minecraft-server/CompoundBlockVolume} to track.  Only non-void block locations will be tracked -- any changes falling into a void/negative space will not be tracked
+  [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) to track.  Only non-void block locations will be tracked -- any changes falling into a void/negative space will not be tracked
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **trackBlockChangeList**
 `
@@ -244,12 +239,10 @@ Begin tracking block changes in a list of specified block locations.
   An array of block locations to monitor for changes
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **trackBlockChangeSelection**
 `
@@ -260,7 +253,7 @@ Begin tracking block changes that may happen in a selection volume.
 
 The volume is copied, so tracking will not move if the selection volume is translated after this instruction is issued.
 
-Selection Volumes can also represent irregular shapes with non-contiguous blocks and this tracking call will honor the actual selected areas in the volume (and not the negative space) (see {@link @minecraft-server/CompoundBlockVolume} for more details
+Selection Volumes can also represent irregular shapes with non-contiguous blocks and this tracking call will honor the actual selected areas in the volume (and not the negative space) (see [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) for more details
 
 #### **Parameters**
 - **selection**: [*Selection*](Selection.md)
@@ -270,12 +263,10 @@ Selection Volumes can also represent irregular shapes with non-contiguous blocks
   The Selection Volume is copied, so further changes to the volume after this call will not be reflected in the tracking list.
 
 **Returns** *boolean*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **undo**
 `
@@ -287,12 +278,10 @@ Perform an undo operation.  This will take the last transaction record on the st
 
 
 The transaction record affected by this operation will be transferred to the redo stack in case the creator decides to reapply it
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **undoSize**
 `
@@ -302,9 +291,7 @@ undoSize(): number
 Return how many transactions records currently exist on the stack
 
 **Returns** *number*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.

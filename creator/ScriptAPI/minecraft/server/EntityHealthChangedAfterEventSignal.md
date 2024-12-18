@@ -26,9 +26,9 @@ Adds a callback that will be called when the health of an entity changes.
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
 **Returns** (arg: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -39,9 +39,6 @@ Removes a callback from being called when the health of an entity changes.
 
 #### **Parameters**
 - **callback**: (arg: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.

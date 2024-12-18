@@ -5,40 +5,13 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemEnchantableComponent Class
 description: Contents of the @minecraft/server.ItemEnchantableComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemEnchantableComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*ItemComponent*](ItemComponent.md)
 
 When present on an item, this item can have enchantments applied to it.
-
-#### Examples
-##### ***givePlayerIronFireSword.ts***
-```typescript
-// Spawns a bunch of item stacks
-import { EnchantmentType, ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
-import { MinecraftItemTypes, MinecraftEnchantmentTypes } from '@minecraft/vanilla-data';
-
-function giveFireSword(player: Player) {
-    const ironFireSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
-
-    const enchantments = ironFireSword?.getComponent(ItemComponentTypes.Enchantable);
-    if (enchantments) {
-        enchantments.addEnchantment({ type: new EnchantmentType(MinecraftEnchantmentTypes.FireAspect), level: 1 });
-    }
-
-    const inventory = player.getComponent('minecraft:inventory');
-    if (inventory === undefined || inventory.container === undefined) {
-        return;
-    }
-    inventory.container.setItem(0, ironFireSword);
-}
-```
 
 ## Properties
 
@@ -47,8 +20,8 @@ function giveFireSword(player: Player) {
 
 Type: [*EnchantmentSlot*](EnchantmentSlot.md)[]
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Methods
 - [addEnchantment](#addenchantment)
@@ -71,14 +44,11 @@ Adds an enchantment to the item stack.
 - **enchantment**: [*Enchantment*](Enchantment.md)
   
   The enchantment interface to be added.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*EnchantmentLevelOutOfBoundsError*](EnchantmentLevelOutOfBoundsError.md), [*EnchantmentTypeNotCompatibleError*](EnchantmentTypeNotCompatibleError.md), [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md), *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*EnchantmentLevelOutOfBoundsError*](EnchantmentLevelOutOfBoundsError.md), [*EnchantmentTypeNotCompatibleError*](EnchantmentTypeNotCompatibleError.md), [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md), *Error*
 
 ### **addEnchantments**
 `
@@ -91,14 +61,11 @@ Adds a list of enchantments to the item stack.
 - **enchantments**: [*Enchantment*](Enchantment.md)[]
   
   The list of enchantments to be added.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*EnchantmentLevelOutOfBoundsError*](EnchantmentLevelOutOfBoundsError.md), [*EnchantmentTypeNotCompatibleError*](EnchantmentTypeNotCompatibleError.md), [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md), *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*EnchantmentLevelOutOfBoundsError*](EnchantmentLevelOutOfBoundsError.md), [*EnchantmentTypeNotCompatibleError*](EnchantmentTypeNotCompatibleError.md), [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md), *Error*
 
 ### **canAddEnchantment**
 `
@@ -113,11 +80,10 @@ Checks whether an enchantment can be added to the item stack.
   The enchantment interface to be added.
 
 **Returns** *boolean* - Returns true if the enchantment can be added to the item stack.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*EnchantmentLevelOutOfBoundsError*](EnchantmentLevelOutOfBoundsError.md), [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*EnchantmentLevelOutOfBoundsError*](EnchantmentLevelOutOfBoundsError.md), [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md)
 
 ### **getEnchantment**
 `
@@ -132,11 +98,10 @@ Gets the enchantment of a given type from the item stack.
   The enchantment type to get.
 
 **Returns** [*Enchantment*](Enchantment.md) | *undefined* - Returns the enchantment if it exists on the item stack.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md)
 
 ### **getEnchantments**
 `
@@ -146,9 +111,9 @@ getEnchantments(): Enchantment[]
 Gets all enchantments on the item stack.
 
 **Returns** [*Enchantment*](Enchantment.md)[] - Returns a list of enchantments on the item stack.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can throw errors.
 
 ### **hasEnchantment**
 `
@@ -163,11 +128,10 @@ Checks whether an item stack has a given enchantment type.
   The enchantment type to check for.
 
 **Returns** *boolean* - Returns true if the item stack has the enchantment type.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md)
 
 ### **removeAllEnchantments**
 `
@@ -175,12 +139,10 @@ removeAllEnchantments(): void
 `
 
 Removes all enchantments applied to this item stack.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **removeEnchantment**
 `
@@ -193,14 +155,11 @@ Removes an enchantment of the given type.
 - **enchantmentType**: [*EnchantmentType*](EnchantmentType.md) | *string*
   
   The enchantment type to remove.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md), *Error*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*EnchantmentTypeUnknownIdError*](EnchantmentTypeUnknownIdError.md), *Error*
 
 ## Constants
 
@@ -208,26 +167,3 @@ Removes an enchantment of the given type.
 `static read-only componentId = "minecraft:enchantable";`
 
 Type: *string*
-
-#### Examples
-##### ***givePlayerIronFireSword.ts***
-```typescript
-// Spawns a bunch of item stacks
-import { EnchantmentType, ItemComponentTypes, ItemStack, Player } from '@minecraft/server';
-import { MinecraftItemTypes, MinecraftEnchantmentTypes } from '@minecraft/vanilla-data';
-
-function giveFireSword(player: Player) {
-    const ironFireSword = new ItemStack(MinecraftItemTypes.DiamondSword, 1);
-
-    const enchantments = ironFireSword?.getComponent(ItemComponentTypes.Enchantable);
-    if (enchantments) {
-        enchantments.addEnchantment({ type: new EnchantmentType(MinecraftEnchantmentTypes.FireAspect), level: 1 });
-    }
-
-    const inventory = player.getComponent('minecraft:inventory');
-    if (inventory === undefined || inventory.container === undefined) {
-        return;
-    }
-    inventory.container.setItem(0, ironFireSword);
-}
-```

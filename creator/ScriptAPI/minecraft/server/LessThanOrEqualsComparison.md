@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.LessThanOrEqualsComparison Interface
 description: Contents of the @minecraft/server.LessThanOrEqualsComparison class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # LessThanOrEqualsComparison Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Less than or equal to operator.
 

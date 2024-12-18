@@ -1,5 +1,5 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Getting Started With Minecraft Add-Ons
 description: "A tutorial covering how to start developing Add-Ons for Minecraft: Bedrock Edition"
@@ -88,10 +88,11 @@ To locate the **com.mojang** folder on your computer, you will need to have the 
 
 :::image type="content" source="Media/GettingStarted/viewHiddenFolders.png" alt-text="Image of Windows 10 File Explorer window's view options. The File name extensions and Hidden items boxes are checked to indicate that they are set to true":::
 
-### Locating com.mojang
+### Locating com.mojang on a Windows device
 
 1. Press **Win+R** to open **Run**.
-1. Copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+1. If you are using the main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+1. Alternatively, if you are using the preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
 1. Click **OK**.
 
 >[!TIP]
@@ -110,7 +111,7 @@ There are three folders called **behavior_packs**, **resource_packs**, and **ski
 
 ### Development Packs
 
-You will use the **development_resource_packs** and **development_behavior_packs** folders for the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials. The **development_skin_packs** folder is used for developing skin packs. Development pack folders are updated each time Minecraft is launched so you can quickly load and test the changes you made to their contents.
+You will use the **development_resource_packs** and **development_behavior_packs** folders for the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials. Development pack folders are updated each time Minecraft is launched so you can quickly load and test the changes you made to their contents.
 
 ### minecraftWorlds
 

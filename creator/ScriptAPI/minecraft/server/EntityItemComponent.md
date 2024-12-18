@@ -14,30 +14,34 @@ description: Contents of the @minecraft/server.EntityItemComponent class.
 If added onto the entity, this indicates that the entity represents a free-floating item in the world. Lets you retrieve the actual item stack contents via the itemStack property.
 
 #### Examples
-##### ***checkFeatherNearby.ts***
+
+##### ***testThatEntityIsFeatherItem.ts***
+
 ```typescript
-import { DimensionLocation, EntityComponentTypes } from "@minecraft/server";
+import { EntityItemComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
 
-// Returns true if a feather item entity is within 'distance' blocks of 'location'.
-function isFeatherNear(location: DimensionLocation, distance: number): boolean {
-    const items = location.dimension.getEntities({
-        location: location,
-        maxDistance: 20,
-    });
-    
-    for (const item of items) {
-        const itemComp = item.getComponent(EntityComponentTypes.Item);
-    
-        if (itemComp) {
-            if (itemComp.itemStack.typeId.endsWith('feather')) {
-                return true;
-            }
-        }
+function testThatEntityIsFeatherItem(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  const items = targetLocation.dimension.getEntities({
+    location: targetLocation,
+    maxDistance: 20,
+  });
+
+  for (const item of items) {
+    const itemComp = item.getComponent(EntityComponentTypes.Item) as EntityItemComponent;
+
+    if (itemComp) {
+      if (itemComp.itemStack.typeId.endsWith("feather")) {
+        log("Success! Found a feather", 1);
+      }
     }
-
-    return false;
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/testThatEntityIsFeatherItem.ts) code sandbox.
 
 ## Properties
 
@@ -48,8 +52,8 @@ Item stack represented by this entity in the world.
 
 Type: [*ItemStack*](ItemStack.md)
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 
@@ -59,27 +63,31 @@ Type: [*ItemStack*](ItemStack.md)
 Type: *string*
 
 #### Examples
-##### ***checkFeatherNearby.ts***
+
+##### ***testThatEntityIsFeatherItem.ts***
+
 ```typescript
-import { DimensionLocation, EntityComponentTypes } from "@minecraft/server";
+import { EntityItemComponent, EntityComponentTypes, DimensionLocation } from "@minecraft/server";
 
-// Returns true if a feather item entity is within 'distance' blocks of 'location'.
-function isFeatherNear(location: DimensionLocation, distance: number): boolean {
-    const items = location.dimension.getEntities({
-        location: location,
-        maxDistance: 20,
-    });
-    
-    for (const item of items) {
-        const itemComp = item.getComponent(EntityComponentTypes.Item);
-    
-        if (itemComp) {
-            if (itemComp.itemStack.typeId.endsWith('feather')) {
-                return true;
-            }
-        }
+function testThatEntityIsFeatherItem(
+  log: (message: string, status?: number) => void,
+  targetLocation: DimensionLocation
+) {
+  const items = targetLocation.dimension.getEntities({
+    location: targetLocation,
+    maxDistance: 20,
+  });
+
+  for (const item of items) {
+    const itemComp = item.getComponent(EntityComponentTypes.Item) as EntityItemComponent;
+
+    if (itemComp) {
+      if (itemComp.itemStack.typeId.endsWith("feather")) {
+        log("Success! Found a feather", 1);
+      }
     }
-
-    return false;
+  }
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/testThatEntityIsFeatherItem.ts) code sandbox.

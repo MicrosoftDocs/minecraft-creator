@@ -12,17 +12,12 @@ Contains a set of events that are available across the scope of the World.
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **blockExplode**
 `read-only blockExplode: BlockExplodeAfterEventSignal;`
 
 This event fires for each BlockLocation destroyed by an explosion. It is fired after the blocks have already been destroyed.
 
 Type: [*BlockExplodeAfterEventSignal*](BlockExplodeAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **buttonPush**
 `read-only buttonPush: ButtonPushAfterEventSignal;`
@@ -120,17 +115,12 @@ This event is fired after an explosion occurs.
 
 Type: [*ExplosionAfterEventSignal*](ExplosionAfterEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **gameRuleChange**
 `read-only gameRuleChange: GameRuleChangeAfterEventSignal;`
 
 This event fires when a world.gameRules property has changed.
 
 Type: [*GameRuleChangeAfterEventSignal*](GameRuleChangeAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **itemCompleteUse**
 `read-only itemCompleteUse: ItemCompleteUseAfterEventSignal;`
@@ -221,6 +211,18 @@ This event fires for a block that is broken by a player.
 
 Type: [*PlayerBreakBlockAfterEventSignal*](PlayerBreakBlockAfterEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerButtonInput**
+`read-only playerButtonInput: PlayerButtonInputAfterEventSignal;`
+
+This event fires when an {@link @minecraft/Server.InputButton} state is changed.
+
+Type: [*PlayerButtonInputAfterEventSignal*](PlayerButtonInputAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **playerDimensionChange**
 `read-only playerDimensionChange: PlayerDimensionChangeAfterEventSignal;`
 
@@ -228,17 +230,28 @@ Fires when a player moved to a different dimension.
 
 Type: [*PlayerDimensionChangeAfterEventSignal*](PlayerDimensionChangeAfterEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
+### **playerEmote**
+`read-only playerEmote: PlayerEmoteAfterEventSignal;`
+
+Type: [*PlayerEmoteAfterEventSignal*](PlayerEmoteAfterEventSignal.md)
+
 ### **playerGameModeChange**
 `read-only playerGameModeChange: PlayerGameModeChangeAfterEventSignal;`
 
 Type: [*PlayerGameModeChangeAfterEventSignal*](PlayerGameModeChangeAfterEventSignal.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerInputModeChange**
+`read-only playerInputModeChange: PlayerInputModeChangeAfterEventSignal;`
+
+This event fires when a player's {@link @minecraft/Server.InputMode} changes.
+
+Type: [*PlayerInputModeChangeAfterEventSignal*](PlayerInputModeChangeAfterEventSignal.md)
+
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInputPermissionCategoryChange**
 `read-only playerInputPermissionCategoryChange: PlayerInputPermissionCategoryChangeAfterEventSignal;`
 
@@ -246,11 +259,6 @@ This event fires when a players input permissions change.
 
 Type: [*PlayerInputPermissionCategoryChangeAfterEventSignal*](PlayerInputPermissionCategoryChangeAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithBlock**
 `read-only playerInteractWithBlock: PlayerInteractWithBlockAfterEventSignal;`
 
@@ -258,21 +266,12 @@ An event for when a player interacts with a block.
 
 Type: [*PlayerInteractWithBlockAfterEventSignal*](PlayerInteractWithBlockAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInteractWithEntity**
 `read-only playerInteractWithEntity: PlayerInteractWithEntityAfterEventSignal;`
 
 This event fires when a player interacts with an entity.
 
 Type: [*PlayerInteractWithEntityAfterEventSignal*](PlayerInteractWithEntityAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **playerJoin**
 `read-only playerJoin: PlayerJoinAfterEventSignal;`

@@ -9,6 +9,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 ---
 # `@minecraft/debug-utilities` Module
 
+Contains debug utility functions.
+
 > [!CAUTION]
 > This module is still in pre-release.  It may change or it may be removed in future releases.
 
@@ -25,15 +27,42 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Available Versions
 - `1.0.0-beta`
 
+## Interfaces
+- [handleCounts](handleCounts.md)
+- [PluginStats](PluginStats.md)
+- [RuntimeStats](RuntimeStats.md)
+
 ## Functions
+
+### **collectPluginStats**
+`
+collectPluginStats(): PluginStats
+`
+
+Collect type usage stats for each active script plugin/add-on.
+
+**Returns** [*PluginStats*](PluginStats.md) - PluginStats object.
+
+### **collectRuntimeStats**
+`
+collectRuntimeStats(): RuntimeStats
+`
+
+Collect memory stats for script runtimes.
+
+**Returns** [*RuntimeStats*](RuntimeStats.md) - RuntimeStats object.
 
 ### **disableWatchdogTimingWarnings**
 `
 disableWatchdogTimingWarnings(disable: boolean): void
 `
 
+Disable watchdog slow and spike warnings per plugin.
+
 #### **Parameters**
 - **disable**: *boolean*
-
-> [!WARNING]
-> This function can throw errors.
+  
+  Flag to disable or re-enable warnings.
+  
+Notes:
+- This function can throw errors.

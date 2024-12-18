@@ -30,9 +30,9 @@ Will call your function every time an entity is removed from the game.
   Additional filtering options for this event.
 
 **Returns** (arg: [*EntityRemoveAfterEvent*](EntityRemoveAfterEvent.md)) => *void* - Returns a closure that can be used in subsequent unsubscribe operations.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
@@ -43,9 +43,6 @@ Unsubscribes your function from subsequent calls when an entity is removed.
 
 #### **Parameters**
 - **callback**: (arg: [*EntityRemoveAfterEvent*](EntityRemoveAfterEvent.md)) => *void*
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.

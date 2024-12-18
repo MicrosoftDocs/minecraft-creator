@@ -36,15 +36,9 @@ Saves or loads a structure in the world. See examples of this command in use in 
 
 `Delete` a `structure` by `name`.
 
-### Load structure
-`/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
+### `/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
 
-`Load` a `structure` with required structure `name` and `to`, and optional `rotation`, `mirror`, `entities`, `blocks`, `integrity`, and `seed`.
-
-### Load structure, optional animation mode, animation seconds
-`/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
-
-`Load` a `structure` with required structure `name` and `to`, and optional `rotation`, `mirror`, `animation mode`, `animation seconds`, `entities`, `blocks`, `integrity`, and `seed`.
+### `/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
 
 ## Arguments
 - `animationMode`: StructureAnimationMode

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemComponentUseEvent Class
 description: Contents of the @minecraft/server.ItemComponentUseEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemComponentUseEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains information regarding the use of an item.
 

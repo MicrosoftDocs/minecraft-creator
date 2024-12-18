@@ -61,13 +61,19 @@ Let's create a custom die block with six different sides that is a different col
 We'll begin by creating a behavior pack for the custom block:
 
 1. In **File Explorer**, navigate to the **com.mojang** folder.
-1. Open the **development_behavior_packs** folder.
-1. Create a folder and name it **custom_block_behavior_pack**.
-1. Open the **custom_block_behavior_pack** folder, and create a text file.
-1. Rename the text file **manifest.json**.
-1. Open **manifest.json** in a text editor.
-1. Copy the code below into the **manifest.json** file.
-1. Get new UUIDs from UUIDgenerator.net.
+
+* Press **Win+R** to open **Run**.
+* If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Alternatively, if you are using preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
+* Click **OK**.
+
+2. Open the **development_behavior_packs** folder.
+3. Create a folder and name it **custom_block_behavior_pack**.
+4. Open the **custom_block_behavior_pack** folder, and create a text file.
+5. Rename the text file **manifest.json**.
+6. Open **manifest.json** in a text editor.
+7. Copy the code below into the **manifest.json** file.
+8. Get new UUIDs from UUIDgenerator.net.
 
 ```json
 {
@@ -332,10 +338,10 @@ The following are suggested settings for a test world, but feel free to tweak th
 
 1. If there's no custom block resource pack or behavior pack - do you have a manifest file?
 1. Does your file structure match the minecraft-samples packs?
-1. Have you created a world with cheats and Holiday Creator enabled?
+1. Have you created a world with cheats enabled?
 1. Are you using Minecraft: Bedrock Edition version 1.19.20 or later?
 1. If the `demo:die` doesn't appear in the game - is your behavior pack formatted correctly?
-1. If your textures don't load correctly - Do your textures and **texture_terrain.json** file match the **custom_block_resource_pack** samples?
+1. If your textures don't load correctly - Do your textures and **terrain_texture.json** file match the **custom_block_resource_pack** samples?
 
 Now place your block anywhere you'd like. The die is red in hand and in the hotbar because of the **carried_textures** using the red die block. The sides will look like a colorful die when the block is placed, and walking on the block will use the **stone** sound.
 

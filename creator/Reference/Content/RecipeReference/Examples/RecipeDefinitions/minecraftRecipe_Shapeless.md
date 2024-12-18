@@ -18,7 +18,7 @@ Represents a shapeless crafting recipe.
 |Name |Type |Description |
 |:-----------|:-----------|:-----------|
 |ingredients| Array of item names|  Items used as input (without a shape) for the recipe. |
-|priority| Integer| Sets the priority order of the recipe. Lower numbers represent a higher priority.|
+| priority| Integer| Sets the priority order of the recipe. Lower numbers represent a higher priority.|
 |result| Array of item names| These items are the result. |
 |tags|String array |(*optional*) Item that can create the shapeless recipe such as "stonecutter". |
 
@@ -32,11 +32,13 @@ Represents a shapeless crafting recipe.
             "identifier": "minecraft:firecharge_coal_sulphur"
         },
      "priority": 0,
-     "ingredients": {
+     "ingredients": [
+        {
         "item": "minecraft:fireball",
         "data": 0,
         "count": 4
-     },
+        }
+     ],
     "result": {
         "item": "minecraft:blaze_powder",
         "data": 4

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.EntityAddRiderComponent Class
 description: Contents of the @minecraft/server.EntityAddRiderComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityAddRiderComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
@@ -26,8 +22,8 @@ The type of entity that is added as a rider for this entity when spawned under c
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ### **spawnEvent**
 `read-only spawnEvent: string;`
@@ -36,8 +32,8 @@ Optional spawn event to trigger on the rider when that rider is spawned for this
 
 Type: *string*
 
-> [!WARNING]
-> This property can throw errors when used.
+Notes:
+  - This property can throw errors when used.
 
 ## Constants
 

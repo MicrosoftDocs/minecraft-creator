@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Parkour Map Walkthrough
 
-Our team a map that shows off cool parkour mechanics you can use to challenge players and create a fun gameplay loop. We'll walk through the parkour mechanics that go into this sample parkour map.
+Our team made a map that shows off cool parkour mechanics you can use to challenge players and create a fun gameplay loop. We'll walk through the parkour mechanics that go into this sample parkour map.
 
 > [!div class="checklist"]
 >
@@ -24,7 +24,7 @@ Establishing the overall map objective early on allows you to work your way to a
 
 In a Vanilla Minecraft Survivor map, you can say that reaching The End and slaying the Ender Dragon is the main objective that each player must complete in order to 'win' the game. In this example, we can begin to break down some of the requirements and start asking game design questions for how a player can complete their objective.
 
-- How do the player reach The End?
+- How does the player reach The End?
 - What challenges will the player face on their journey to reach the End?
 - What is the reward for completing the objective?
 
@@ -37,11 +37,11 @@ the objective and start thinking about the challenges that a player will face to
 
 - What is the path I want the player to take?
 - What can I do that will challenge players but still be fun to attempt?
-- Where is the start point and the end point (starting line and finishing line respectively)?
+- Where are the start point and the end point (starting line and finishing line respectively)?
 
 ## Challenges
 
-Simply crossing the finish line may be a rewarding task on their own, but adding player facing definition such as jumps, puzzles and traps can create unique challenges for the player to overcome in their journey to complete the map.
+Simply crossing the finish line may be a rewarding task on its own, but adding player facing definition such as jumps, puzzles and traps can create unique challenges for the player to overcome in their journey to complete the map.
 
 In a parkour map, challenges come from combining gameplay mechanics such as movement speed, jumps, blocks used, and logic puzzles, all while having to continue their journey to the finish line as fast as possible.
 

@@ -21,7 +21,7 @@ ms.service: minecraft-bedrock-edition
 | min_ram_distance| 0.000000| Decimal| The minimum distance the entity can start a ram attack. |
 | on_start| | Trigger| The event to trigger when attacking. |
 | pre_ram_sound| | String| The sound to play when an entity is about to perform a ram attack. |
-|priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
 | ram_distance| 0.000000| Decimal| The distance the mob start to run with ram speed. |
 | ram_impact_sound| | String| The sound to play when an entity is impacting on a ram attack. |
 | ram_speed| 2.000000| Decimal| The entity's speed when charging toward the target. |

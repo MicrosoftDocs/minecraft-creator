@@ -109,6 +109,24 @@ Applies an enchantment as if it were enchanted through an enchanting table using
 }
 ```
 
+### set_potion
+
+This function sets the potion type of compatible items with a potion id.
+
+```json
+{
+    "type": "item",
+    "name": "minecraft:potion",
+    "weight": 1,
+    "functions": [
+        {
+            "function": "set_potion",
+            "id": "strong_regeneration"
+        }
+    ]
+}
+```
+
 ### specific_enchants
 
 This function allows you to set a list of specific enchantments on an item. It also allows you to apply enchantments to items that wouldn't normally be enchantable in-game.

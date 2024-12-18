@@ -12,22 +12,24 @@ Manager for Structure related APIs. Includes APIs for creating, getting, placing
 
 ## Methods
 - [createEmpty](#createempty)
-::: moniker range="=minecraft-bedrock-experimental"
 - [createFromWorld](#createfromworld)
-::: moniker-end
 - [delete](#delete)
 - [get](#get)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getWorldStructureIds](#getworldstructureids)
-::: moniker-end
 - [place](#place)
+::: moniker range="=minecraft-bedrock-experimental"
+- [placeJigsaw](#placejigsaw)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [placeJigsawStructure](#placejigsawstructure)
+::: moniker-end
 
 ### **createEmpty**
 `
 createEmpty(identifier: string, size: Vector3, saveMode?: StructureSaveMode): Structure
 `
 
-Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlockPermutation*](../../minecraft/server/Structure.md#setblockpermutation) to populate the structure with blocks and save changes with @minecraft/server.Structure.save.
+Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlockPermutation*](../../minecraft/server/Structure.md#setblockpermutation) to populate the structure with blocks and save changes with [*@minecraft/server.Structure.saveAs*](../../minecraft/server/Structure.md#saveas).
 
 #### **Parameters**
 - **identifier**: *string*
@@ -41,16 +43,12 @@ Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlock
   How the Structure should be saved upon creation. Defaults to StructureSaveMode.Memory.
 
 **Returns** [*Structure*](Structure.md) - Returns the newly created Structure.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **createFromWorld**
 `
 createFromWorld(identifier: string, dimension: Dimension, from: Vector3, to: Vector3, options?: StructureCreateOptions): Structure
@@ -72,18 +70,11 @@ Creates a new Structure from blocks in the world. This is functionally equivalen
   Additional options for creating a structure from the world.
 
 **Returns** [*Structure*](Structure.md) - Returns the newly created Structure.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
-::: moniker-end
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
 
 ### **delete**
 `
@@ -98,14 +89,11 @@ Deletes a structure from memory and from the world if it exists.
   The structure identifier or Structure object that should be deleted. Note, a Structure object will become invalid after it is deleted.
 
 **Returns** *boolean* - Returns whether the structure was removed.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
 
 ### **get**
 `
@@ -120,24 +108,19 @@ Gets a Structure that is saved to memory or the world.
   The name of the structure to get.
 
 **Returns** [*Structure*](Structure.md) | *undefined* - Returns a Structure if it exists, otherwise undefined.
+  
+Notes:
+- This function can't be called in read-only mode.
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getWorldStructureIds**
 `
 getWorldStructureIds(): string[]
 `
 
 **Returns** *string*[]
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-::: moniker-end
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **place**
 `
@@ -159,11 +142,80 @@ Places a structure in the world. Structures placed in unloaded chunks will be qu
 - **options**?: [*StructurePlaceOptions*](StructurePlaceOptions.md) = `null`
   
   Additional options for Structure placement.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+::: moniker range="=minecraft-bedrock-experimental"
+### **placeJigsaw**
+`
+placeJigsaw(pool: string, targetJigsaw: string, maxDepth: number, dimension: Dimension, location: Vector3, options?: JigsawPlaceOptions): BoundingBox
+`
 
-> [!WARNING]
-> This function can throw errors.
->
-> Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+Places a partial jigsaw structure in the world. This is useful for debugging connections between jigsaw blocks.
+
+#### **Parameters**
+- **pool**: *string*
+  
+  The identifier of the template pool to start from.
+- **targetJigsaw**: *string*
+  
+  The name of the jigsaw block to start from. This block must be included in at least one of the starting pool structure templates.
+- **maxDepth**: *number*
+  
+  The maximum recursion depth for the jigsaw structure.
+- **dimension**: [*Dimension*](Dimension.md)
+  
+  The dimension to place the jigsaw structure in.
+- **location**: [*Vector3*](Vector3.md)
+  
+  The location where the jigsaw structure will begin generating relative to the targetJigsaw block.
+- **options**?: [*JigsawPlaceOptions*](JigsawPlaceOptions.md) = `null`
+  
+  Optional settings to use when generating the jigsaw structure.
+
+**Returns** [*BoundingBox*](BoundingBox.md) - Returns a [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*PlaceJigsawError*](PlaceJigsawError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **placeJigsawStructure**
+`
+placeJigsawStructure(identifier: string, dimension: Dimension, location: Vector3, options?: JigsawStructurePlaceOptions): BoundingBox
+`
+
+Places a jigsaw structure in the world.
+
+#### **Parameters**
+- **identifier**: *string*
+  
+  The identifier of the jigsaw structure.
+- **dimension**: [*Dimension*](Dimension.md)
+  
+  The dimension to place the jigsaw structure in.
+- **location**: [*Vector3*](Vector3.md)
+  
+  The location where the jigsaw structure will begin generating. Note that the y value will be overridden by the structure's start height unless the ignoreStarJigsawStructurePlaceOptions ignoreStartHeight option is set.
+- **options**?: [*JigsawStructurePlaceOptions*](JigsawStructurePlaceOptions.md) = `null`
+  
+  Optional settings to use when generating the jigsaw structure.
+
+**Returns** [*BoundingBox*](BoundingBox.md) - Returns a [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*PlaceJigsawError*](PlaceJigsawError.md)
+::: moniker-end

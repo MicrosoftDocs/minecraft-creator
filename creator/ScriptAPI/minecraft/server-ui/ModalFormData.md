@@ -11,46 +11,50 @@ description: Contents of the @minecraft/server-ui.ModalFormData class.
 Used to create a fully customizable pop-up form for a player.
 
 #### Examples
-##### ***modalFormSimple.ts***
+
+##### ***showBasicModalForm.ts***
+
 ```typescript
-import { Player } from '@minecraft/server';
-import { ModalFormData } from '@minecraft/server-ui';
+import { world, DimensionLocation } from "@minecraft/server";
+import { ModalFormData } from "@minecraft/server-ui";
 
-function showExampleModal(player: Player) {
-    const modalForm = new ModalFormData().title('Example Modal Controls for §o§7ModalFormData§r');
+function showBasicModalForm(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    modalForm.toggle('Toggle w/o default');
-    modalForm.toggle('Toggle w/ default', true);
+  const modalForm = new ModalFormData().title("Example Modal Controls for §o§7ModalFormData§r");
 
-    modalForm.slider('Slider w/o default', 0, 50, 5);
-    modalForm.slider('Slider w/ default', 0, 50, 5, 30);
+  modalForm.toggle("Toggle w/o default");
+  modalForm.toggle("Toggle w/ default", true);
 
-    modalForm.dropdown('Dropdown w/o default', ['option 1', 'option 2', 'option 3']);
-    modalForm.dropdown('Dropdown w/ default', ['option 1', 'option 2', 'option 3'], 2);
+  modalForm.slider("Slider w/o default", 0, 50, 5);
+  modalForm.slider("Slider w/ default", 0, 50, 5, 30);
 
-    modalForm.textField('Input w/o default', 'type text here');
-    modalForm.textField('Input w/ default', 'type text here', 'this is default');
+  modalForm.dropdown("Dropdown w/o default", ["option 1", "option 2", "option 3"]);
+  modalForm.dropdown("Dropdown w/ default", ["option 1", "option 2", "option 3"], 2);
 
-    modalForm
-        .show(player)
-        .then(formData => {
-            player.sendMessage(`Modal form results: ${JSON.stringify(formData.formValues, undefined, 2)}`);
-        })
-        .catch((error: Error) => {
-            player.sendMessage('Failed to show form: ' + error);
-            return -1;
-        });
+  modalForm.textField("Input w/o default", "type text here");
+  modalForm.textField("Input w/ default", "type text here", "this is default");
+
+  modalForm
+    .show(players[0])
+    .then((formData) => {
+      players[0].sendMessage(`Modal form results: ${JSON.stringify(formData.formValues, undefined, 2)}`);
+    })
+    .catch((error: Error) => {
+      log("Failed to show form: " + error);
+      return -1;
+    });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/showBasicModalForm.ts) code sandbox.
 
 ## Methods
 - [constructor](#constructor)
 - [dropdown](#dropdown)
 - [show](#show)
 - [slider](#slider)
-::: moniker range="=minecraft-bedrock-experimental"
 - [submitButton](#submitbutton)
-::: moniker-end
 - [textField](#textfield)
 - [title](#title)
 - [toggle](#toggle)
@@ -91,12 +95,10 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
   Player to show this dialog to.
 
 **Returns** Promise&lt;[*ModalFormResponse*](ModalFormResponse.md)&gt;
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
-
-> [!WARNING]
-> This function can throw errors.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **slider**
 `
@@ -114,7 +116,6 @@ Adds a numeric slider to the form.
 
 **Returns** [*ModalFormData*](ModalFormData.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **submitButton**
 `
 submitButton(submitButtonText: minecraftserver.RawMessage | string): ModalFormData
@@ -124,10 +125,6 @@ submitButton(submitButtonText: minecraftserver.RawMessage | string): ModalFormDa
 - **submitButtonText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
 
 **Returns** [*ModalFormData*](ModalFormData.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **textField**
 `
@@ -169,34 +166,40 @@ Adds a toggle checkbox button to the form.
 **Returns** [*ModalFormData*](ModalFormData.md)
 
 #### Examples
-##### ***modalFormSimple.ts***
+
+##### ***showBasicModalForm.ts***
+
 ```typescript
-import { Player } from '@minecraft/server';
-import { ModalFormData } from '@minecraft/server-ui';
+import { world, DimensionLocation } from "@minecraft/server";
+import { ModalFormData } from "@minecraft/server-ui";
 
-function showExampleModal(player: Player) {
-    const modalForm = new ModalFormData().title('Example Modal Controls for §o§7ModalFormData§r');
+function showBasicModalForm(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
+  const players = world.getPlayers();
 
-    modalForm.toggle('Toggle w/o default');
-    modalForm.toggle('Toggle w/ default', true);
+  const modalForm = new ModalFormData().title("Example Modal Controls for §o§7ModalFormData§r");
 
-    modalForm.slider('Slider w/o default', 0, 50, 5);
-    modalForm.slider('Slider w/ default', 0, 50, 5, 30);
+  modalForm.toggle("Toggle w/o default");
+  modalForm.toggle("Toggle w/ default", true);
 
-    modalForm.dropdown('Dropdown w/o default', ['option 1', 'option 2', 'option 3']);
-    modalForm.dropdown('Dropdown w/ default', ['option 1', 'option 2', 'option 3'], 2);
+  modalForm.slider("Slider w/o default", 0, 50, 5);
+  modalForm.slider("Slider w/ default", 0, 50, 5, 30);
 
-    modalForm.textField('Input w/o default', 'type text here');
-    modalForm.textField('Input w/ default', 'type text here', 'this is default');
+  modalForm.dropdown("Dropdown w/o default", ["option 1", "option 2", "option 3"]);
+  modalForm.dropdown("Dropdown w/ default", ["option 1", "option 2", "option 3"], 2);
 
-    modalForm
-        .show(player)
-        .then(formData => {
-            player.sendMessage(`Modal form results: ${JSON.stringify(formData.formValues, undefined, 2)}`);
-        })
-        .catch((error: Error) => {
-            player.sendMessage('Failed to show form: ' + error);
-            return -1;
-        });
+  modalForm.textField("Input w/o default", "type text here");
+  modalForm.textField("Input w/ default", "type text here", "this is default");
+
+  modalForm
+    .show(players[0])
+    .then((formData) => {
+      players[0].sendMessage(`Modal form results: ${JSON.stringify(formData.formValues, undefined, 2)}`);
+    })
+    .catch((error: Error) => {
+      log("Failed to show form: " + error);
+      return -1;
+    });
 }
 ```
+
+(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/showBasicModalForm.ts) code sandbox.

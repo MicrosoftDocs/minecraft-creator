@@ -15,3 +15,9 @@ ms.service: minecraft-bedrock-edition
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
 |value|*not set* | Integer| How much extra damage the item does on attack. Note that this must be a positive value.|
+
+## Example
+
+```json
+"minecraft:damage": 2,
+```

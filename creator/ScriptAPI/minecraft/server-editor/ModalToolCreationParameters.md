@@ -12,37 +12,30 @@ Parameters for creating a modal tool in the tool container
 
 ## Properties
 
-### **displayAltText**
-`displayAltText: string;`
+### **action**
+`action: RegisteredAction<NoArgsAction>;`
 
-The displayed string for the tool
+Action associated with tool activation
 
-Type: *string*
-
-### **displayStringId**
-`displayStringId: string;`
-
-Loc ID (resolved on client)
-
-Type: *string*
+Type: *RegisteredAction<NoArgsAction>*
 
 ### **icon**
 `icon: string;`
 
-Icon, if any (from resource pack on client)
+Icon resource
 
 Type: *string*
 
-### **tooltipAltText**
-`tooltipAltText: string;`
+### **title**
+`title: string;`
 
-tooltipAltText alt text, if any
+Localized title of the tool
 
 Type: *string*
 
-### **tooltipStringId**
-`tooltipStringId: string;`
+### **tooltip**
+`tooltip: string;`
 
-Tooltip localization string ID
+Tooltip description of the tool
 
 Type: *string*

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.BlockLocationIterator Class
 description: Contents of the @minecraft/server.BlockLocationIterator class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockLocationIterator Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Implements
 - Iterator&lt;[*Vector3*](Vector3.md)&gt;
@@ -35,9 +31,9 @@ Unless otherwise specified by the parent shape - the BlockLocationIterator will 
 `
 
 **Returns** Iterator&lt;[*Vector3*](Vector3.md)&gt;
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **next**
 `
@@ -45,6 +41,6 @@ next(): IteratorResult<Vector3>
 `
 
 **Returns** IteratorResult&lt;[*Vector3*](Vector3.md)&gt;
-
-> [!IMPORTANT]
-> This function can't be called in read-only mode.
+  
+Notes:
+- This function can't be called in read-only mode.
