@@ -36,6 +36,7 @@ The following components provide the specifics in determining the ways in which 
 | [minecraft:density_limit](../Definitions/NestedTables/density_limit.md)| Allows players to specify the amount of mobs to spawn in certain locations. |
 | [minecraft:difficulty_filter](../Definitions/NestedTables/difficulty_filter.md)| Allows creators to set which mobs spawn depending on difficulty level. |
 | [minecraft:disallow_spawns_in_bubble](../Definitions/NestedTables/disallow_spawns_in_bubble.md)| Allows creators to keep entities from spawning in bubbles. |
+| [minecraft:distance_filter](../Definitions/NestedTables/distance_filter.md)| Allows players to set specific distances for entities to spawn. |
 | [minecraft:entity_types](../Definitions/NestedTables/entity_types.md) |This is a specific type of JSON object used by Minecraft: Bedrock Edition to encapsulate entity data that can be used in certain behaviors and components. |
 | [minecraft:height_filter](../Definitions/NestedTables/height_filter.md) |Allows players to set mob spawning within specific heights of the map. |
 | [minecraft:herd](../Definitions/NestedTables/herd.md)| Allows players to determine the herd size of animals.|
@@ -48,6 +49,7 @@ The following components provide the specifics in determining the ways in which 
 | [minecraft:spawns_on_block_filter](../Definitions/NestedTables/spawns_on_block_filter.md) |Allows an entity to spawn on a particular block. |
 | [minecraft:spawns_on_block_prevented_filter](../Definitions/NestedTables/spawns_on_block_prevented_filter.md) |Prevents an entity from spawning on a particular block. |
 | [minecraft:spawns_on_surface](../Definitions/NestedTables/spawns_on_surface.md) |Allows an entity to spawn on the surface. |
+| [minecraft:spawns_underground](../Definitions/NestedTables/spawns_underground.md)|Allows an entity to spawn underground.  |
 | [minecraft:spawns_underwater](../Definitions/NestedTables/spawns_underwater.md)|Allows the mob to spawn underwater.  |
 | [minecraft:weight](../Definitions/NestedTables/weight.md)|Allows players to set a priority for how often that mob should spawn. |
 | [minecraft:world_age_filter](../Definitions/NestedTables/world_age_filter.md) |Allows players to set mob spawns after a specified amount of time has passed within a world.|
