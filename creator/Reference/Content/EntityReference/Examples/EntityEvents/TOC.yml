@@ -2,6 +2,8 @@
    href: ../EventList.md
  - name: emit_particle
    href: minecraftEvents_emit_particle.md
+ - name: emit_vibration
+   href: minecraftEvents_emit_vibration.md
  - name: entity_born
    href: minecraftEvents_entity_born.md
  - name: entity_spawned
@@ -14,5 +16,7 @@
    href: minecraftEvents_queue_command.md
  - name: play_sound
    href: minecraftEvents_play_sound.md
+ - name: reset_target
+   href: minecraftEvents_reset_target.md
  - name: set_property
    href: minecraftEvents_set_property.md

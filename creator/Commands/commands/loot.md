@@ -116,12 +116,15 @@ Replace `loot` from a `block` at a `position` from `killing` an `entity` using a
 
 Replace `loot` from a `block` at a `position` into a `slotID` in a specified amount, from `mining` a block at `position` using a `tool`.
 
-### Replace loot from block, mining a block with tool.
+### Replace loot at a slot in a container block with a count, using the results that come from mining a block with tool
 `/loot replace block <position: x y z> slot.container <slotId: int> <count: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
-Replace `loot` from a `block` at a `position` from `mining` a block at `position` using a `tool`.
+Replace `loot` in a continer `block` (e.g., a chest) at a `slotId` with an overriden `count`, with the results from `mining` a block at `position` using a `tool`.
 
-### `/loot replace block <position: x y z> slot.container <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+### Replace loot at a slot in a container block, using the results that come from mining a block with tool
+`/loot replace block <position: x y z> slot.container <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+
+Replace `loot` in a continer `block` (e.g., a chest) at a `slotId`, with the results from `mining` a block at `position` using a `tool`.
 
 ## Arguments
 - `<tool>|mainhand|offhand`: Tool

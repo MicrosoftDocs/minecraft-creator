@@ -52,6 +52,8 @@
               href: Documents/WorldHeightChange.md    
     - name: Casual Creator Article Series
       items:              
+        - name: "Add your Cat to Minecraft"
+          href: Casual/AddYourCatToMinecraft.md
         - name: "Building Debug Tools"
           href: Casual/DebugTools.md
         - name: "Chill Dreams Add-On: Part 1 - The Dream Turkey"
