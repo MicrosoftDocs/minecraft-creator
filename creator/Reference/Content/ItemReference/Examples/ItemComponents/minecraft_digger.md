@@ -10,6 +10,10 @@ ms.service: minecraft-bedrock-edition
 
 `minecraft:digger` allows a creator to determine how quickly an item can dig specific blocks.
 
+[Here is a list of addon blocks.](../../../AddonsReference/Examples/AddonBlocks.md)
+
+[Here is a list of vanilla block tags.](../../../BlockReference/Examples/VanillaBlockTags.md)
+
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |
