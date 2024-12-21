@@ -39,3 +39,4 @@ ms.service: minecraft-bedrock-edition
     }
   ]
 }
+```
