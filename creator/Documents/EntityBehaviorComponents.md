@@ -22,67 +22,54 @@ As part of a behavior pack, behavior components are defined within an entity's `
 
 ![Image of behavior pack folder and file structure](Media/BehaviorPack/behavior-pack-structure.png)
 
-Let's use the `cow.json` file shown in this example to learn more about adjusting the cow entity's behavior in game.
+### Behavior Priority
 
-### Components vs Goals
+Behavior components are evaluated independently, which means that different behaviors might be evaluated simultaneously. This can either help to create a seamless behavior, where two harmonious actions are performed at the same time, or it can cause two incompatible behaviors to compete. In the case where incompatible behaviors compete, you may see errors or notice that your entity's behaviors don't work, at all.
 
-Behavior components will work whether they are included in the `components` section or the `goals` section of an entity's `.json` file. The main difference between components and goals is that goals operate using a priority system.
+To resolve this issue, it's important to know that behavior components work on a priority system. Behavior components with a lower priority value are executed first - so a component with a `priority` of `1` would execute *before* a component with a `priority` of `2`. Behavior components also **resolve** on the same prioirty, meaning that, even if a component with a higher `priority` value meets the conditions for execution, the component with the lower `priority` value would resolve first before the next component is allowed to start. This helps to create a sequence of behaviors and seamless switching between behaviors.
 
-When used as `components`, entity behaviors are evaluated independently and that different behaviors might be evaluated simultaneously. This can either help to create a seamless behavior, where two harmonious actions are performed at the same time, or it can cause two incompatible behaviors to compete. In the case where incompatible behaviors compete, you may see errors or notice that your entity's behaviors don't work, at all.
+### Adding Custom Behavior
 
-When behaviors are used as `goals`, they work on a priority system. Goals with a lower priority value are executed first - so a goal with a `priority` of `1` would execute *before* a goal with a `priority` of `2`. Goals also **resolve** on the same prioirty, meaning that, even if a goal with a higher `priority` value meets the conditions for execution, the goal with the lower `priority` value would resolve first before the next goal is allowed to start. This helps to create a sequence of behaviors and seamless switching between goals.
-
-Components and goals are both effective uses for behavior components - neither one is better than the other, but the most important thing to remember is how the difference in execution and resolution can affect an entity's behavior in game. With this knowledge, let's try working with behavior components.
-
-## Adding Custom Behavior
-
-By default, the cow is a pretty passive mob. It doesn't move very fast and really only reacts when it is attacked. What should we do if we want to make the cow a bit more wary of its surroundings? Let's try making a cow that gets suspicious of entities that come within a certain distance of it and keep a watchful eye on the target.
+For a complete tutorial on adding custom behavior, check out the [Create an Angry Cow: An Introduction To Behavior Packs (from scratch)](BehaviorPacksFromScratch.md) guide. This will help you get an understanding of how to add components to an entity's `.json` file, where to add the code, and how to test and deploy your behavior pack. Pay close attention to the final angry cow components list to make sure you see how `priority` will affect the custom entity's behavior:
 
 ```json
-"minecraft:entity": {
-    "components": {
-        "minecraft:type_family": {
-            "family: ["cow"]
-        }
-    },
-
-    "goals": [
-        {
-            "goal": "minecraft:behavior.nearest_attackable_target",
-            "priority": 1,
-            "entity_types": [
-                {
-                    "filters":{
-                        "all_of": [
-                            {
-                                "test": "is_family",
-                                "subject": "other",
-                                "operator": "!=",
-                                "value": "cow"
-                            }
-                        ]
-                    },
-                    "max_dist": 25,
-                    "must_see": true,
-                    "must_reach": false
-                }
-            ]
-        }
-        {
-            "goal": "minecraft:behavior.look_at_target",
-            "priority": 2,
-            "look_distance": 25
-        }
-    ]
-}
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 2,
+                "must_see": true,
+                "reselect_targets": true,
+                "within_radius": 25.0,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                        },
+                        "max_dist": 32
+                    }
+                ]
+            },
+            "minecraft:behavior.melee_attack": {
+                "priority": 3
+            },
+            "minecraft:attack": {
+                "damage": 3
+            }
 ```
 
-By adding the following goal to the `cow.json` file, we have created a suspicious cow. Let's break it down:
+See how `minecraft:behavior.nearest_attackable_target` has a lower `priority` value than the `minecraft:behavior.melee_attack` component? That's because we want to target only attackable entities that are *not cows*. If we didn't have the priorities set the way we do, then the cow may attack indiscriminantly or might try attacking things that don't take damage, causing it to get stuck in a loop.
 
-- `"goal": "minecraft:behavior.nearest_attackable_target"` - This goal and its parameters tell the cow to target the nearest entity within 25 blocks that is not a cow. 
-    - We use the `entity_types` parameter and `filters` to test any entities within 25 blocks to see if their entity family type is anything other than `cow`.
-    - We use the `goals` section's ability to prioritize this action so that the cow will focus on finding a target first, using the `priority` parameter and setting it to `1`.
-- `"goal": "minecraft:behavior.look_at_target"` - This goal tells the cow to look at its current target. 
-    - Because we don't set any parameters besides `priority` and `look_distance`, the cow will continue to look at its selected target.
+## Essential Behavior Components
 
-Because we set the `priority` of the second goal to `2` (a higher value than the `priority` of the previous goal), the cow will select a new target if a different entity (that is not a cow) gets closer than its current target. If we had reversed these priorities, then the cow would continue to look at the first target until it either died or moved outside the 25 block range. By paying close attention to the nuances of behavior components, we can create specific types of entity behaviors and tailor the circumstances that cause entities to execute those behaviors.
+Now that you know how to add behavior components and design custom behavior, let's take a look at some of the most important behavior components in Minecraft. While Minecraft does not have "required" components, there are some - like `minecraft:movement`, `minecraft:health`, and `minecraft:interact` that are essential to an entity's ability to have a meaningful impact on your world. Behavior components are similar. There are no requirements for behavior components, but there are definitely some behaviors that are extremely common and give entities a "baseline" ability to interact with the world, with other entities, and with players. Here's a list of some of the most common entity behaviors:
+
+| Behavior | Purpose | Common Users |
+|----------|---------|--------------|
+| minecraft:behavior.look_at_player | Makes the entity look at a player. | Passive mobs, neutral mobs |
+| minecraft:behavior.random_stroll | Makes an entity wander around in a random path. | Passive mobs |
+| minecraft:behavior.nearest_attackable_target | Targets the nearest entity to attack. | Hostile mobs |
+| minecraft:behavior.attack | Defines how the entity attacks its target. | Hostile mobs |
+| minecraft:behavior.hurt_by_target | Makes the entity retaliate when it is hurt. | Passive mobs, hostile mobs |
+| minecraft:behavior.breed | Enables breeding for an entity. | Passive mobs |
+| minecraft:behavior.follow_owner | Makes an entity follow its owner. | Tamed mobs |
+| minecraft:behavior.sit | Makes an entity sit on command. | Tamed mobs |
