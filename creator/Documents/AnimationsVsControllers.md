@@ -8,15 +8,15 @@ ms.service: minecraft-bedrock-edition
 
 # Animations vs Animation Controllers
 
-In Minecraft: Bedrock Edition, animations and animation controllers are two parts of the system that helps entities move and interact with the world. Though they sound very similar and are part of the same system, they serve very different functions and it's essential to understand how they interact.
+In Minecraft: Bedrock Edition, animations and animation controllers are two parts of the system that helps entities move and interact with the world. Though they sound very similar and are both part of a resource pack, they serve very different functions and it's essential to understand how they interact.
 
 First, let's start by describing each part of the entity animation system.
 
 ## Major Differences
 
-Animations in Minecraft define the raw animation data for an entity. Animation files contain keyframe data that shows how the game should manipulate the bones, properties, or other components of an entity's model over a specific period of time (in frames). You can use animations to define specific sequences, such as walking, attacking, or idle poses that the entity should repeat when performing certain actions. For more specific information on animations, check out [Animation Documentation - Getting Started]().
+Animations in Minecraft define the raw animation data for an entity. Animation files contain keyframe data that shows how the game should manipulate the bones, properties, or other components of an entity's model over a specific period of time (in frames). You can use animations to define specific sequences, such as walking, attacking, or idle poses that the entity should repeat when performing certain actions. For more specific information on animations, check out [Animation Documentation - Getting Started](../Reference/Content/AnimationsReference/Examples/AnimationGettingStarted.md).
 
-Animation controllers add logic to an entity to manage and trigger animations at the appropriate time or in response to an appropriate event. Animation controllers are state machines that control which animation plays and when it should start. To learn more about animation controllers, see [Introduction to Animation Controllers]().
+Animation controllers add logic to an entity to manage and trigger animations at the appropriate time or in response to an appropriate event. Animation controllers are state machines that control which animation plays and when it should start. To learn more about animation controllers, see [Introduction to Animation Controllers](IntroductionToAnimationControllers.md).
 
 Here's a table that helps to illustrate the differences between animations and animation controllers:
 
@@ -104,3 +104,7 @@ We can see that the corresponding animation controller determines the `state` of
 1. When the player commands the wolf to sit, the controller then `transitions` the wolf into the `sitting` state.
 1. In the `sitting` state, the wolf plays the `wolf_sitting` animation.
 1. The controller then transitions the wolf back to the default state if the query to check whether the wolf is still sitting returns `false`.
+
+## Using Animations and Animation Controllers
+
+Now that you know the difference between these two essential parts of the entity movement system, you can start using them to create or enhance your resource packs in Minecraft. For more information on using animations and animation controllers, see our guides on each of these topics.
