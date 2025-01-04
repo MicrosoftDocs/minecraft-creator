@@ -175,6 +175,8 @@ Replace the value for `identifier:` and feel free to change which blocks are use
 
 Replace the `identifier:` and the `structure:` values.
 
+To adjust the number and proximity of your generated structures, try changing the `separation` and `spacing` values.
+
 ```json
 {
   "format_version": "1.21.20",
@@ -245,17 +247,13 @@ Create a world with your jigsaw behavior pack activated and the **Data-Driven Ji
 
 The jigsaw structure should be generated into the world. Be prepared for some ... interesting placement.
 
-### The /locate Command
-
 If you can't find your jigsaw structures, you can use the `/locate` command.
 
-When you start entering the command, it should shortcut to your namespace and structure names. 
+When you start entering the command, it should auto-populate after your namespace and give you the structure names that were generated into your world. 
 
 `\locate structure mike:basic_dungeon`
 
-### The /place Command
-
-Use the `/place` command to just generate a jigsaw structure.
+If you want a bit more control, use the `/place` command to generate a jigsaw structure at your location.
 
 Your values will vary, depending on your identifier and name for your pool and jigsawTarget.
 
@@ -263,13 +261,96 @@ The schema is:
 
 `/place jigsaw <pool: filepath> <jigsawTarget: string> <maxDepth: int> [pos: x y z] [keepJigsaws: Boolean] [includeEntities: Boolean]`
 
-Here is the bare minimum command if you used the same names as the sample behavior pack.
+Here is the minimum command if you used the same names as the sample behavior pack.
 
 `/place jigsaw mike:ns7x4 mike:nx7x4 10 ~ ~ ~`
 
+## Fallback Pools, End Caps, and Interior Vignettes
+
+After you experiment with your jigsaw blocks and structures to get a basic understanding of how they can be configured to pull structures from a pool and join them together, you can see that you can also put smaller structures into a pool and use a jigsaw block to put things you'd like to randomly find, like a bed, crafting table, or maybe a loot chest. You can also use this method to place end caps (also known simply as walls) over the parts of your structures that would be open to the elements, otherwise.
+
+1. First, open your world where you build your original structures so you can build and save whatever additional walls and interior features you want placed in them. For example, in the larger room, maybe sometimes you want beds. Or sometimes you want something like a kitchen.
+
+1. Build your end cap walls and interior features and put jigsaw blocks in them. Pay attention to where you want the jigsaw blocks to make your new structures get places in your original structures. 
+
+1. Save each new structure to your **structures** folder.
+
+1. End caps are included in the pool as the larger structures are built in the fallback pool. The jigsaw behavior pack example shows that the **ns7x4.json** template pool uses the **nscap.json** fallback pool, like this:
+
+```json
+{
+  "format_version": "1.21.20",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "mike:ns7x4"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mike/nshall",
+          "processors": "mike:stone_brick_replacement"
+        },
+        "weight": 4
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mike/21room",
+          "processors": "mike:stone_brick_replacement"
+        },
+        "weight": 1
+      }
+    ],
+    "fallback": "mike:nscap"
+  }
+}
+```
+
+The interior structures will be generated from the **5x5int.json** template pool.
+
+```json
+{
+  "format_version": "1.21.20",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "mike:5x5int"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mike/beds5x5int",
+          "processors": "mike:stone_brick_replacement"
+        },
+        "weight": 4
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mike/chestcarpet5x5int",
+          "processors": "mike:stone_brick_replacement"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "mike/kitchen5x5int",
+          "processors": "mike:stone_brick_replacement"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}
+```
+
+After you get the new bits added in, try it out! What else could you do with jigsaw blocks? 
+
 ## What's Next?
 
-Now that you've generated your own jigsaw structures, you can learn more about fine tuning the placement, including generating smaller random structures inside larger structures in the upcoming advanced jigsaw tutorial. While that is being written, here is a link to the jigsaw structures overview so you can get more ideas about what you can do.
+Now that you have some hands-on experience, take a look at the overview that explains the parts. 
 
 > [!div class="nextstepaction"]
-[Instroduction to Jigsaw Structures](IntroductionToJigsawStructures.md)
+[Introduction to Jigsaw Structures](IntroductionToJigsawStructures.md)
