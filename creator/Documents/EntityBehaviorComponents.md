@@ -8,10 +8,10 @@ ms.service: minecraft-bedrock-edition
 
 # Entity Behavior (AI) Components
 
-Entity behavior components are one of the specific ways we can use components to get entities to behave a certain way. Behavior components determine how entities act in the game by controlling how they move, interact with objects or other entities, or respond to certain events. Here are some key points to keep in mind:
+Entity behavior components are one of the specific ways we can use components to get entities to behave a certain way. Behavior components determine how entities decide how to act in the game by controlling how they move, interact with objects or other entities, or respond to certain events. Here are some key points to keep in mind:
 
 - Behavior components are defined in `.json` files as part of a behavior pack.
-- Behavior components start with `minecraft:behavior`.
+- Behavior components start with `minecraft:behavior.`.
 - Minecraft Bedrock edition includes many built-in behavior components. For a full list, see [Entity Documentation - AI Goal Component List](../Reference/Content/EntityReference/Examples/AIGoalList.md).
 - Many behavior components accept parameters to fine-tune an entity's actions or responses to events, such as `speed_multiplier` or `target_distance`.
 
@@ -72,5 +72,3 @@ Now that you know how to add behavior components and design custom behavior, let
 | minecraft:behavior.breed | Enables breeding for an entity. | Passive mobs |
 | minecraft:behavior.follow_owner | Makes an entity follow its owner. | Tamed mobs |
 | minecraft:behavior.sit | Makes an entity sit on command. | Tamed mobs |
-
-Go give 
