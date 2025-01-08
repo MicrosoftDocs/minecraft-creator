@@ -29,7 +29,7 @@ To resolve this issue, it's important to know that behavior components work on a
 
 ### Adding Custom Behavior
 
-For a complete tutorial on adding custom behavior, check out the [Create an Angry Cow: An Introduction To Behavior Packs (from scratch)](BehaviorPacksFromScratch.md) guide. This will help you get an understanding of how to add components to an entity's `.json` file, where to add the code, and how to test and deploy your behavior pack. Pay close attention to the final angry cow components list to make sure you see how `priority` will affect the custom entity's behavior:
+For a complete tutorial on adding custom behavior, check out the [Create an Angry Cow: An Introduction To Behavior Packs (from scratch)](./BehaviorPackFromScratch.md) guide. This will help you get an understanding of how to add components to an entity's `.json` file, where to add the code, and how to test and deploy your behavior pack. Pay close attention to the final angry cow components list to make sure you see how `priority` will affect the custom entity's behavior:
 
 ```json
             "minecraft:behavior.nearest_attackable_target": {
