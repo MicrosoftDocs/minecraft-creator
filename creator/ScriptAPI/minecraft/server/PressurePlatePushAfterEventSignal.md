@@ -16,28 +16,28 @@ Manages callbacks that are connected to when a pressure plate is pushed.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PressurePlatePushAfterEvent) => void): (arg: PressurePlatePushAfterEvent) => void
+subscribe(callback: (arg0: PressurePlatePushAfterEvent) => void): (arg0: PressurePlatePushAfterEvent) => void
 `
 
 Adds a callback that will be called when a pressure plate is pushed.
 
 #### **Parameters**
-- **callback**: (arg: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
 
-**Returns** (arg: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
+**Returns** (arg0: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PressurePlatePushAfterEvent) => void): void
+unsubscribe(callback: (arg0: PressurePlatePushAfterEvent) => void): void
 `
 
 Removes a callback from being called when a pressure plate is pushed.
 
 #### **Parameters**
-- **callback**: (arg: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PressurePlatePushAfterEvent*](PressurePlatePushAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

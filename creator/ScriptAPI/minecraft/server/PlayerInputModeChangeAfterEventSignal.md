@@ -20,28 +20,28 @@ Manages callbacks that are connected to player input mode.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerInputModeChangeAfterEvent) => void): (arg: PlayerInputModeChangeAfterEvent) => void
+subscribe(callback: (arg0: PlayerInputModeChangeAfterEvent) => void): (arg0: PlayerInputModeChangeAfterEvent) => void
 `
 
 Adds a callback that will be called after the player input mode changes.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerInputModeChangeAfterEvent*](PlayerInputModeChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerInputModeChangeAfterEvent*](PlayerInputModeChangeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*PlayerInputModeChangeAfterEvent*](PlayerInputModeChangeAfterEvent.md)) => *void*
+**Returns** (arg0: [*PlayerInputModeChangeAfterEvent*](PlayerInputModeChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerInputModeChangeAfterEvent) => void): void
+unsubscribe(callback: (arg0: PlayerInputModeChangeAfterEvent) => void): void
 `
 
 Removes a callback from being called after the player input mode changes.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerInputModeChangeAfterEvent*](PlayerInputModeChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerInputModeChangeAfterEvent*](PlayerInputModeChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

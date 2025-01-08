@@ -269,11 +269,11 @@ Notes:
 
 ### **setStateChangeEvent**
 `
-setStateChangeEvent(eventFunction?: (arg: WidgetStateChangeEventData) => void): void
+setStateChangeEvent(eventFunction?: (arg0: WidgetStateChangeEventData) => void): void
 `
 
 #### **Parameters**
-- **eventFunction**?: (arg: [*WidgetStateChangeEventData*](WidgetStateChangeEventData.md)) => *void* = `null`
+- **eventFunction**?: (arg0: [*WidgetStateChangeEventData*](WidgetStateChangeEventData.md)) => *void* = `null`
   
 Notes:
 - This function can't be called in read-only mode.

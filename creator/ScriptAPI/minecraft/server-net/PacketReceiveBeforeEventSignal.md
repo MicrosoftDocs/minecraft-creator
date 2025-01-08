@@ -14,25 +14,25 @@ description: Contents of the @minecraft/server-net.PacketReceiveBeforeEventSigna
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PacketReceivedBeforeEvent) => void, options?: PacketEventOptions): (arg: PacketReceivedBeforeEvent) => void
+subscribe(callback: (arg0: PacketReceivedBeforeEvent) => void, options?: PacketEventOptions): (arg0: PacketReceivedBeforeEvent) => void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*PacketReceivedBeforeEvent*](PacketReceivedBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PacketReceivedBeforeEvent*](PacketReceivedBeforeEvent.md)) => *void*
 - **options**?: [*PacketEventOptions*](PacketEventOptions.md) = `null`
 
-**Returns** (arg: [*PacketReceivedBeforeEvent*](PacketReceivedBeforeEvent.md)) => *void*
+**Returns** (arg0: [*PacketReceivedBeforeEvent*](PacketReceivedBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PacketReceivedBeforeEvent) => void): void
+unsubscribe(callback: (arg0: PacketReceivedBeforeEvent) => void): void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*PacketReceivedBeforeEvent*](PacketReceivedBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PacketReceivedBeforeEvent*](PacketReceivedBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

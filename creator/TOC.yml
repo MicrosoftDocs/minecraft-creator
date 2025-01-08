@@ -260,8 +260,14 @@
           href: Documents/IntroductionToEntityProperties.md
         - name: Entity Modeling and Animation
           href: Documents/EntityModelingAndAnimation.md
+        - name: Introduction to Animation Controllers
+          href: Documents/IntroductionToAnimationControllers.md
+        - name: Animations vs Animation Controllers
+          href: Documents/AnimationsVsControllers.md
         - name: Entity Behavior Introduction
           href: Documents/EntityBehaviorIntroduction.md
+        - name: Entity Behavior (AI) Components
+          href: Documents/EntityBehaviorComponents.md
         - name: Entity Events
           href: Documents/EntityEvents.md
         - name: Creating a Goblin Chef Entity 

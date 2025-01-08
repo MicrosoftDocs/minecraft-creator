@@ -38,6 +38,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:lodestone`
 - `minecraft:chiseled_resin_bricks_from_slabs`
 - `minecraft:creaking_heart`
 - `minecraft:gray_dye_from_closed_eyeblossom`
@@ -359,7 +360,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:stonecutter_waxed_oxidized_cut_copper_to_cut_copper_slab`
 - `minecraft:yellow_dye_from_dandelion`
 - `minecraft:grindstone`
-- `minecraft:lodestone`
 - `minecraft:mossy_stonebrick`
 - `minecraft:mossy_stonebrick_from_moss`
 - `minecraft:mossy_stone_brick_stairs`

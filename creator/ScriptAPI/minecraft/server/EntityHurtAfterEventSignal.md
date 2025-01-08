@@ -16,29 +16,29 @@ Manages callbacks that are connected to when an entity is hurt.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: EntityHurtAfterEvent) => void, options?: EntityEventOptions): (arg: EntityHurtAfterEvent) => void
+subscribe(callback: (arg0: EntityHurtAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityHurtAfterEvent) => void
 `
 
 Adds a callback that will be called when an entity is hurt.
 
 #### **Parameters**
-- **callback**: (arg: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
-**Returns** (arg: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
+**Returns** (arg0: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: EntityHurtAfterEvent) => void): void
+unsubscribe(callback: (arg0: EntityHurtAfterEvent) => void): void
 `
 
 Removes a callback from being called when an entity is hurt.
 
 #### **Parameters**
-- **callback**: (arg: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EntityHurtAfterEvent*](EntityHurtAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

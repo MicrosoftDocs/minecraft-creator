@@ -14,24 +14,24 @@ description: Contents of the @minecraft/server-editor.CurrentThemeColorChangeAft
 
 ### **subscribe**
 `
-subscribe(callback: (arg: CurrentThemeColorChangeAfterEvent) => void): (arg: CurrentThemeColorChangeAfterEvent) => void
+subscribe(callback: (arg0: CurrentThemeColorChangeAfterEvent) => void): (arg0: CurrentThemeColorChangeAfterEvent) => void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*CurrentThemeColorChangeAfterEvent*](CurrentThemeColorChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*CurrentThemeColorChangeAfterEvent*](CurrentThemeColorChangeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*CurrentThemeColorChangeAfterEvent*](CurrentThemeColorChangeAfterEvent.md)) => *void*
+**Returns** (arg0: [*CurrentThemeColorChangeAfterEvent*](CurrentThemeColorChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: CurrentThemeColorChangeAfterEvent) => void): void
+unsubscribe(callback: (arg0: CurrentThemeColorChangeAfterEvent) => void): void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*CurrentThemeColorChangeAfterEvent*](CurrentThemeColorChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*CurrentThemeColorChangeAfterEvent*](CurrentThemeColorChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

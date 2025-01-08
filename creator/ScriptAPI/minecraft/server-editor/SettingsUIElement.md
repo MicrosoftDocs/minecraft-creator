@@ -21,9 +21,9 @@ Type: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../mine
 Type: *string*
 
 ### **onChange**
-`read-only onChange: (arg: boolean | number | string | minecraftserver.Vector3) => void;`
+`read-only onChange: (arg0: boolean | number | string | minecraftserver.Vector3) => void;`
 
-Type: (arg: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)) => *void*
+Type: (arg0: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)) => *void*
 
 ### **options**
 `read-only options: SettingsUIElementOptions;`
@@ -35,13 +35,13 @@ Type: [*SettingsUIElementOptions*](SettingsUIElementOptions.md)
 
 ### **constructor**
 `
-new SettingsUIElement(name: string, initialValue: boolean | number | string | minecraftserver.Vector3, onChange: (arg: boolean | number | string | minecraftserver.Vector3) => void, options?: SettingsUIElementOptions)
+new SettingsUIElement(name: string, initialValue: boolean | number | string | minecraftserver.Vector3, onChange: (arg0: boolean | number | string | minecraftserver.Vector3) => void, options?: SettingsUIElementOptions)
 `
 
 #### **Parameters**
 - **name**: *string*
 - **initialValue**: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-- **onChange**: (arg: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)) => *void*
+- **onChange**: (arg0: *boolean* | *number* | *string* | [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)) => *void*
 - **options**?: [*SettingsUIElementOptions*](SettingsUIElementOptions.md) = `null`
 
 **Returns** [*SettingsUIElement*](SettingsUIElement.md)

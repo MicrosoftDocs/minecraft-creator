@@ -16,33 +16,33 @@ Allows registration for an event that fires when an entity is removed from  the 
 
 ### **subscribe**
 `
-subscribe(callback: (arg: EntityRemoveAfterEvent) => void, options?: EntityEventOptions): (arg: EntityRemoveAfterEvent) => void
+subscribe(callback: (arg0: EntityRemoveAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityRemoveAfterEvent) => void
 `
 
 Will call your function every time an entity is removed from the game.
 
 #### **Parameters**
-- **callback**: (arg: [*EntityRemoveAfterEvent*](EntityRemoveAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EntityRemoveAfterEvent*](EntityRemoveAfterEvent.md)) => *void*
   
   Function to call.
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
   
   Additional filtering options for this event.
 
-**Returns** (arg: [*EntityRemoveAfterEvent*](EntityRemoveAfterEvent.md)) => *void* - Returns a closure that can be used in subsequent unsubscribe operations.
+**Returns** (arg0: [*EntityRemoveAfterEvent*](EntityRemoveAfterEvent.md)) => *void* - Returns a closure that can be used in subsequent unsubscribe operations.
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: EntityRemoveAfterEvent) => void): void
+unsubscribe(callback: (arg0: EntityRemoveAfterEvent) => void): void
 `
 
 Unsubscribes your function from subsequent calls when an entity is removed.
 
 #### **Parameters**
-- **callback**: (arg: [*EntityRemoveAfterEvent*](EntityRemoveAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EntityRemoveAfterEvent*](EntityRemoveAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

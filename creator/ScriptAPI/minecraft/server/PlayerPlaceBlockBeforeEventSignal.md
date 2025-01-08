@@ -20,29 +20,29 @@ Manages callbacks that are connected to before a block is placed by a player.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerPlaceBlockBeforeEvent) => void, options?: BlockEventOptions): (arg: PlayerPlaceBlockBeforeEvent) => void
+subscribe(callback: (arg0: PlayerPlaceBlockBeforeEvent) => void, options?: BlockEventOptions): (arg0: PlayerPlaceBlockBeforeEvent) => void
 `
 
 Adds a callback that will be called before a block is placed by a player.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)) => *void*
 - **options**?: [*BlockEventOptions*](BlockEventOptions.md) = `null`
 
-**Returns** (arg: [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)) => *void*
+**Returns** (arg0: [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerPlaceBlockBeforeEvent) => void): void
+unsubscribe(callback: (arg0: PlayerPlaceBlockBeforeEvent) => void): void
 `
 
 Removes a callback from being called before an block is placed by a player.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerPlaceBlockBeforeEvent*](PlayerPlaceBlockBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

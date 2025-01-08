@@ -16,29 +16,29 @@ Manages callbacks that are connected to before a player breaks a block.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerBreakBlockBeforeEvent) => void, options?: BlockEventOptions): (arg: PlayerBreakBlockBeforeEvent) => void
+subscribe(callback: (arg0: PlayerBreakBlockBeforeEvent) => void, options?: BlockEventOptions): (arg0: PlayerBreakBlockBeforeEvent) => void
 `
 
 Adds a callback that will be called before a block is broken by a player.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
 - **options**?: [*BlockEventOptions*](BlockEventOptions.md) = `null`
 
-**Returns** (arg: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
+**Returns** (arg0: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerBreakBlockBeforeEvent) => void): void
+unsubscribe(callback: (arg0: PlayerBreakBlockBeforeEvent) => void): void
 `
 
 Removes a callback from being called before a player breaks a block.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerBreakBlockBeforeEvent*](PlayerBreakBlockBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

@@ -159,6 +159,9 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 - [eatItem](#eatitem)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getAimAssist](#getaimassist)
+::: moniker-end
 - [getGameMode](#getgamemode)
 - [getItemCooldown](#getitemcooldown)
 - [getSpawnPoint](#getspawnpoint)
@@ -241,6 +244,24 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws if the item is not a food item.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getAimAssist**
+`
+getAimAssist(): PlayerAimAssist
+`
+
+The player's aim-assist settings.
+
+**Returns** [*PlayerAimAssist*](PlayerAimAssist.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+ 
+#### Required Experiments
+- Camera Aim Assist
+
 ::: moniker-end
 
 ### **getGameMode**

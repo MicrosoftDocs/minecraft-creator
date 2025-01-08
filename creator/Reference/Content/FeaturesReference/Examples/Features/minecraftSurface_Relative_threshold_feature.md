@@ -35,7 +35,7 @@ Define a feature that places the `underwater_magma_snap_to_surface_feature`, if 
     "description": {
       "identifier": "example:underwater_magma_underground_feature"
     },
-    "feature_to_snap": "example:underwater_magma_snap_to_surface_feature",
+    "feature_to_place": "log_decoration_feature" ,
     "minimum_distance_below_surface": 2
   }
 }

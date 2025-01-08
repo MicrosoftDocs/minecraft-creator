@@ -94,12 +94,12 @@ Notes:
 
 ### **createUserDefinedTransactionHandler**
 `
-createUserDefinedTransactionHandler(undoClosure: (arg: string) => void, redoClosure: (arg: string) => void): UserDefinedTransactionHandlerId
+createUserDefinedTransactionHandler(undoClosure: (arg0: string) => void, redoClosure: (arg0: string) => void): UserDefinedTransactionHandlerId
 `
 
 #### **Parameters**
-- **undoClosure**: (arg: *string*) => *void*
-- **redoClosure**: (arg: *string*) => *void*
+- **undoClosure**: (arg0: *string*) => *void*
+- **redoClosure**: (arg0: *string*) => *void*
 
 **Returns** [*UserDefinedTransactionHandlerId*](UserDefinedTransactionHandlerId.md)
   

@@ -14,24 +14,24 @@ description: Contents of the @minecraft/server-editor.PrimarySelectionChangeAfte
 
 ### **subscribe**
 `
-subscribe(callback: (arg: SelectionEventAfterEvent) => void): (arg: SelectionEventAfterEvent) => void
+subscribe(callback: (arg0: SelectionEventAfterEvent) => void): (arg0: SelectionEventAfterEvent) => void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
+- **callback**: (arg0: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
 
-**Returns** (arg: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
+**Returns** (arg0: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: SelectionEventAfterEvent) => void): void
+unsubscribe(callback: (arg0: SelectionEventAfterEvent) => void): void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
+- **callback**: (arg0: [*SelectionEventAfterEvent*](SelectionEventAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

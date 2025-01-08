@@ -16,13 +16,13 @@ Manages callbacks that are connected to piston activations.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PistonActivateAfterEvent) => void): (arg: PistonActivateAfterEvent) => void
+subscribe(callback: (arg0: PistonActivateAfterEvent) => void): (arg0: PistonActivateAfterEvent) => void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
 
-**Returns** (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
+**Returns** (arg0: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
@@ -74,13 +74,13 @@ function pistonAfterEvent(log: (message: string, status?: number) => void, targe
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PistonActivateAfterEvent) => void): void
+unsubscribe(callback: (arg0: PistonActivateAfterEvent) => void): void
 `
 
 Removes a callback from being called when a piston expands or retracts.
 
 #### **Parameters**
-- **callback**: (arg: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PistonActivateAfterEvent*](PistonActivateAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

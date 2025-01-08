@@ -16,28 +16,28 @@ Manages callbacks that are run on the first tick of the World. Do note that this
 
 ### **subscribe**
 `
-subscribe(callback: (arg: WorldInitializeAfterEvent) => void): (arg: WorldInitializeAfterEvent) => void
+subscribe(callback: (arg0: WorldInitializeAfterEvent) => void): (arg0: WorldInitializeAfterEvent) => void
 `
 
 Adds a callback that will be called when the scripting environment is initialized for a World.
 
 #### **Parameters**
-- **callback**: (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
+**Returns** (arg0: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: WorldInitializeAfterEvent) => void): void
+unsubscribe(callback: (arg0: WorldInitializeAfterEvent) => void): void
 `
 
 Removes a callback from being called the scripting environment is initialized for a World.
 
 #### **Parameters**
-- **callback**: (arg: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*WorldInitializeAfterEvent*](WorldInitializeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

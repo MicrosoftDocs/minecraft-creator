@@ -43,9 +43,6 @@ function createExplosions(log: (message: string, status?: number) => void, targe
   log("Creating an explosion of radius 15 that causes fire.");
   targetLocation.dimension.createExplosion(explosionLoc, 15, { causesFire: true });
 
-  // Creates an explosion of radius 15 that does not cause fire
-  location.dimension.createExplosion(location, 15, { causesFire: false });
-
   const belowWaterLoc = Vector3Utils.add(targetLocation, { x: 3, y: 1, z: 3 });
 
   log("Creating an explosion of radius 10 that can go underwater.");
@@ -117,9 +114,6 @@ function createExplosions(log: (message: string, status?: number) => void, targe
 
   log("Creating an explosion of radius 15 that causes fire.");
   targetLocation.dimension.createExplosion(explosionLoc, 15, { causesFire: true });
-
-  // Creates an explosion of radius 15 that does not cause fire
-  location.dimension.createExplosion(location, 15, { causesFire: false });
 
   const belowWaterLoc = Vector3Utils.add(targetLocation, { x: 3, y: 1, z: 3 });
 

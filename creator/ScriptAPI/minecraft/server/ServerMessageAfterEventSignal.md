@@ -20,28 +20,28 @@ Manages callbacks that are message passing to a server. This event is not curren
 
 ### **subscribe**
 `
-subscribe(callback: (arg: MessageReceiveAfterEvent) => void): (arg: MessageReceiveAfterEvent) => void
+subscribe(callback: (arg0: MessageReceiveAfterEvent) => void): (arg0: MessageReceiveAfterEvent) => void
 `
 
 Adds a callback that will be called when an internal message is passed.
 
 #### **Parameters**
-- **callback**: (arg: [*MessageReceiveAfterEvent*](MessageReceiveAfterEvent.md)) => *void*
+- **callback**: (arg0: [*MessageReceiveAfterEvent*](MessageReceiveAfterEvent.md)) => *void*
 
-**Returns** (arg: [*MessageReceiveAfterEvent*](MessageReceiveAfterEvent.md)) => *void*
+**Returns** (arg0: [*MessageReceiveAfterEvent*](MessageReceiveAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: MessageReceiveAfterEvent) => void): void
+unsubscribe(callback: (arg0: MessageReceiveAfterEvent) => void): void
 `
 
 Removes a callback from being called when an internal message is passed.
 
 #### **Parameters**
-- **callback**: (arg: [*MessageReceiveAfterEvent*](MessageReceiveAfterEvent.md)) => *void*
+- **callback**: (arg0: [*MessageReceiveAfterEvent*](MessageReceiveAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

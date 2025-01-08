@@ -16,28 +16,28 @@ Manages callbacks that are connected to when an explosion occurs, as it impacts 
 
 ### **subscribe**
 `
-subscribe(callback: (arg: BlockExplodeAfterEvent) => void): (arg: BlockExplodeAfterEvent) => void
+subscribe(callback: (arg0: BlockExplodeAfterEvent) => void): (arg0: BlockExplodeAfterEvent) => void
 `
 
 Adds a callback that will be called when an explosion occurs, as it impacts individual blocks.
 
 #### **Parameters**
-- **callback**: (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
+**Returns** (arg0: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: BlockExplodeAfterEvent) => void): void
+unsubscribe(callback: (arg0: BlockExplodeAfterEvent) => void): void
 `
 
 Removes a callback from being called when an explosion occurs, as it impacts individual blocks.
 
 #### **Parameters**
-- **callback**: (arg: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*BlockExplodeAfterEvent*](BlockExplodeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

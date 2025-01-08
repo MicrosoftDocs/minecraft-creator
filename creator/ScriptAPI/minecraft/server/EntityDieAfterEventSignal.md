@@ -16,33 +16,33 @@ Supports registering for an event that fires after an entity has died.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: EntityDieAfterEvent) => void, options?: EntityEventOptions): (arg: EntityDieAfterEvent) => void
+subscribe(callback: (arg0: EntityDieAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityDieAfterEvent) => void
 `
 
 Subscribes to an event that fires when an entity dies.
 
 #### **Parameters**
-- **callback**: (arg: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void*
   
   Function to call when an entity dies.
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
   
   Additional filtering options for when the subscription fires.
 
-**Returns** (arg: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void* - Returns the closure that can be used in future downstream calls to unsubscribe.
+**Returns** (arg0: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void* - Returns the closure that can be used in future downstream calls to unsubscribe.
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: EntityDieAfterEvent) => void): void
+unsubscribe(callback: (arg0: EntityDieAfterEvent) => void): void
 `
 
 Stops this event from calling your function when an entity dies.
 
 #### **Parameters**
-- **callback**: (arg: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

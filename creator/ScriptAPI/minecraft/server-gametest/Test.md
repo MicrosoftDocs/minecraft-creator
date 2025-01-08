@@ -121,7 +121,7 @@ Notes:
 
 ### **assertBlockState**
 `
-assertBlockState(blockLocation: minecraftserver.Vector3, callback: (arg: minecraftserver.Block) => boolean): void
+assertBlockState(blockLocation: minecraftserver.Vector3, callback: (arg0: minecraftserver.Block) => boolean): void
 `
 
 Tests that a block has a particular state value at the specified location. If it does not have that state value, an exception is thrown.
@@ -130,7 +130,7 @@ Tests that a block has a particular state value at the specified location. If it
 - **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
   
   Location of the block to test at.
-- **callback**: (arg: [*@minecraft/server.Block*](../../minecraft/server/Block.md)) => *boolean*
+- **callback**: (arg0: [*@minecraft/server.Block*](../../minecraft/server/Block.md)) => *boolean*
   
   Callback function that contains additional tests based on the block at the specified location.
   
@@ -416,7 +416,7 @@ register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).struc
 
 ### **assertEntityState**
 `
-assertEntityState(blockLocation: minecraftserver.Vector3, entityTypeIdentifier: string, callback: (arg: minecraftserver.Entity) => boolean): void
+assertEntityState(blockLocation: minecraftserver.Vector3, entityTypeIdentifier: string, callback: (arg0: minecraftserver.Entity) => boolean): void
 `
 
 Tests that an entity (e.g., a skeleton) at the specified location has a particular piece of data. If not, an error is thrown.
@@ -428,7 +428,7 @@ Tests that an entity (e.g., a skeleton) at the specified location has a particul
 - **entityTypeIdentifier**: *string*
   
   Identifier of the entity (e.g., 'minecraft:skeleton') to look for. Note if no namespace is specified, 'minecraft:' is assumed.
-- **callback**: (arg: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)) => *boolean*
+- **callback**: (arg0: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)) => *boolean*
   
   Callback function where facets of the selected entity can be tested for. If this callback function returns false or no entity with the specified identifier is found, an exception is thrown.
   

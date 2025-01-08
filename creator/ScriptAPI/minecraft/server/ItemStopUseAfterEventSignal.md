@@ -16,28 +16,28 @@ Manages callbacks that are connected to the stopping of charging for an item tha
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemStopUseAfterEvent) => void): (arg: ItemStopUseAfterEvent) => void
+subscribe(callback: (arg0: ItemStopUseAfterEvent) => void): (arg0: ItemStopUseAfterEvent) => void
 `
 
 Adds a callback that will be called when a chargeable item stops charging.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemStopUseAfterEvent*](ItemStopUseAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemStopUseAfterEvent*](ItemStopUseAfterEvent.md)) => *void*
 
-**Returns** (arg: [*ItemStopUseAfterEvent*](ItemStopUseAfterEvent.md)) => *void*
+**Returns** (arg0: [*ItemStopUseAfterEvent*](ItemStopUseAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemStopUseAfterEvent) => void): void
+unsubscribe(callback: (arg0: ItemStopUseAfterEvent) => void): void
 `
 
 Removes a callback from being called when a chargeable item stops charging.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemStopUseAfterEvent*](ItemStopUseAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemStopUseAfterEvent*](ItemStopUseAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
