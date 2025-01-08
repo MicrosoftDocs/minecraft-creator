@@ -14,24 +14,24 @@ description: Contents of the @minecraft/server-editor.CurrentThemeChangeAfterEve
 
 ### **subscribe**
 `
-subscribe(callback: (arg: CurrentThemeChangeAfterEvent) => void): (arg: CurrentThemeChangeAfterEvent) => void
+subscribe(callback: (arg0: CurrentThemeChangeAfterEvent) => void): (arg0: CurrentThemeChangeAfterEvent) => void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*CurrentThemeChangeAfterEvent*](CurrentThemeChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*CurrentThemeChangeAfterEvent*](CurrentThemeChangeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*CurrentThemeChangeAfterEvent*](CurrentThemeChangeAfterEvent.md)) => *void*
+**Returns** (arg0: [*CurrentThemeChangeAfterEvent*](CurrentThemeChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: CurrentThemeChangeAfterEvent) => void): void
+unsubscribe(callback: (arg0: CurrentThemeChangeAfterEvent) => void): void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*CurrentThemeChangeAfterEvent*](CurrentThemeChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*CurrentThemeChangeAfterEvent*](CurrentThemeChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

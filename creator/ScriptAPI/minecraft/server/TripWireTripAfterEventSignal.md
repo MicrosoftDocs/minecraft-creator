@@ -57,28 +57,28 @@ function tripWireTripEvent(log: (message: string, status?: number) => void, targ
 
 ### **subscribe**
 `
-subscribe(callback: (arg: TripWireTripAfterEvent) => void): (arg: TripWireTripAfterEvent) => void
+subscribe(callback: (arg0: TripWireTripAfterEvent) => void): (arg0: TripWireTripAfterEvent) => void
 `
 
 Adds a callback that will be called when a trip wire is tripped.
 
 #### **Parameters**
-- **callback**: (arg: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
+- **callback**: (arg0: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
 
-**Returns** (arg: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
+**Returns** (arg0: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: TripWireTripAfterEvent) => void): void
+unsubscribe(callback: (arg0: TripWireTripAfterEvent) => void): void
 `
 
 Removes a callback from being called when a trip wire is tripped.
 
 #### **Parameters**
-- **callback**: (arg: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
+- **callback**: (arg0: [*TripWireTripAfterEvent*](TripWireTripAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

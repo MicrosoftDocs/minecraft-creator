@@ -53,28 +53,28 @@ function customCommand(targetLocation: DimensionLocation) {
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ChatSendBeforeEvent) => void): (arg: ChatSendBeforeEvent) => void
+subscribe(callback: (arg0: ChatSendBeforeEvent) => void): (arg0: ChatSendBeforeEvent) => void
 `
 
 Adds a callback that will be called before new chat messages are sent.
 
 #### **Parameters**
-- **callback**: (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
 
-**Returns** (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
+**Returns** (arg0: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ChatSendBeforeEvent) => void): void
+unsubscribe(callback: (arg0: ChatSendBeforeEvent) => void): void
 `
 
 Removes a callback from being called before new chat messages are sent.
 
 #### **Parameters**
-- **callback**: (arg: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*ChatSendBeforeEvent*](ChatSendBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

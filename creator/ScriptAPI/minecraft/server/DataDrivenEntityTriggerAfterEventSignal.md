@@ -16,29 +16,29 @@ Contains event registration related to firing of a data driven entity event - fo
 
 ### **subscribe**
 `
-subscribe(callback: (arg: DataDrivenEntityTriggerAfterEvent) => void, options?: EntityDataDrivenTriggerEventOptions): (arg: DataDrivenEntityTriggerAfterEvent) => void
+subscribe(callback: (arg0: DataDrivenEntityTriggerAfterEvent) => void, options?: EntityDataDrivenTriggerEventOptions): (arg0: DataDrivenEntityTriggerAfterEvent) => void
 `
 
 Adds a callback that will be called after a data driven entity event is triggered.
 
 #### **Parameters**
-- **callback**: (arg: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
+- **callback**: (arg0: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
 - **options**?: [*EntityDataDrivenTriggerEventOptions*](EntityDataDrivenTriggerEventOptions.md) = `null`
 
-**Returns** (arg: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
+**Returns** (arg0: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: DataDrivenEntityTriggerAfterEvent) => void): void
+unsubscribe(callback: (arg0: DataDrivenEntityTriggerAfterEvent) => void): void
 `
 
 Removes a callback that will be called after a data driven entity event is triggered.
 
 #### **Parameters**
-- **callback**: (arg: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
+- **callback**: (arg0: [*DataDrivenEntityTriggerAfterEvent*](DataDrivenEntityTriggerAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

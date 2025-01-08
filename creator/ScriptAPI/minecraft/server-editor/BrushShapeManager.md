@@ -55,11 +55,11 @@ Notes:
 
 ### **beginPainting**
 `
-beginPainting(onComplete: (arg: PaintCompletionState) => void): void
+beginPainting(onComplete: (arg0: PaintCompletionState) => void): void
 `
 
 #### **Parameters**
-- **onComplete**: (arg: [*PaintCompletionState*](PaintCompletionState.md)) => *void*
+- **onComplete**: (arg0: [*PaintCompletionState*](PaintCompletionState.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
@@ -209,11 +209,11 @@ Notes:
 
 ### **singlePaint**
 `
-singlePaint(onComplete: (arg: PaintCompletionState) => void): void
+singlePaint(onComplete: (arg0: PaintCompletionState) => void): void
 `
 
 #### **Parameters**
-- **onComplete**: (arg: [*PaintCompletionState*](PaintCompletionState.md)) => *void*
+- **onComplete**: (arg0: [*PaintCompletionState*](PaintCompletionState.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

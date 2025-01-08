@@ -16,29 +16,29 @@ Manages callbacks that are connected to when an effect is added to an entity.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: EffectAddAfterEvent) => void, options?: EntityEventOptions): (arg: EffectAddAfterEvent) => void
+subscribe(callback: (arg0: EffectAddAfterEvent) => void, options?: EntityEventOptions): (arg0: EffectAddAfterEvent) => void
 `
 
 Adds a callback that will be called when an effect is added to an entity.
 
 #### **Parameters**
-- **callback**: (arg: [*EffectAddAfterEvent*](EffectAddAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EffectAddAfterEvent*](EffectAddAfterEvent.md)) => *void*
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
-**Returns** (arg: [*EffectAddAfterEvent*](EffectAddAfterEvent.md)) => *void*
+**Returns** (arg0: [*EffectAddAfterEvent*](EffectAddAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: EffectAddAfterEvent) => void): void
+unsubscribe(callback: (arg0: EffectAddAfterEvent) => void): void
 `
 
 Removes a callback from being called when an effect is added to an entity.
 
 #### **Parameters**
-- **callback**: (arg: [*EffectAddAfterEvent*](EffectAddAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EffectAddAfterEvent*](EffectAddAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

@@ -16,28 +16,28 @@ Manages callbacks that are connected to the start of charging for a chargeable i
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemStartUseAfterEvent) => void): (arg: ItemStartUseAfterEvent) => void
+subscribe(callback: (arg0: ItemStartUseAfterEvent) => void): (arg0: ItemStartUseAfterEvent) => void
 `
 
 Adds a callback that will be called when a chargeable item starts charging.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemStartUseAfterEvent*](ItemStartUseAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemStartUseAfterEvent*](ItemStartUseAfterEvent.md)) => *void*
 
-**Returns** (arg: [*ItemStartUseAfterEvent*](ItemStartUseAfterEvent.md)) => *void*
+**Returns** (arg0: [*ItemStartUseAfterEvent*](ItemStartUseAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemStartUseAfterEvent) => void): void
+unsubscribe(callback: (arg0: ItemStartUseAfterEvent) => void): void
 `
 
 Removes a callback from being called when a chargeable item starts charging.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemStartUseAfterEvent*](ItemStartUseAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemStartUseAfterEvent*](ItemStartUseAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

@@ -16,28 +16,28 @@ Manages callbacks that are connected to an item use event.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemUseAfterEvent) => void): (arg: ItemUseAfterEvent) => void
+subscribe(callback: (arg0: ItemUseAfterEvent) => void): (arg0: ItemUseAfterEvent) => void
 `
 
 Adds a callback that will be called when an item is used.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
 
-**Returns** (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
+**Returns** (arg0: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemUseAfterEvent) => void): void
+unsubscribe(callback: (arg0: ItemUseAfterEvent) => void): void
 `
 
 Removes a callback from being called when an item is used.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemUseAfterEvent*](ItemUseAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

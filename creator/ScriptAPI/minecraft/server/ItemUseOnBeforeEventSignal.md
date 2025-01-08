@@ -16,28 +16,28 @@ Manages callbacks that fire before an item being used on a block event.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemUseOnBeforeEvent) => void): (arg: ItemUseOnBeforeEvent) => void
+subscribe(callback: (arg0: ItemUseOnBeforeEvent) => void): (arg0: ItemUseOnBeforeEvent) => void
 `
 
 Adds a callback that will be called before an item is used on a block.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)) => *void*
 
-**Returns** (arg: [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)) => *void*
+**Returns** (arg0: [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemUseOnBeforeEvent) => void): void
+unsubscribe(callback: (arg0: ItemUseOnBeforeEvent) => void): void
 `
 
 Removes a callback from being called before an item is used on a block.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

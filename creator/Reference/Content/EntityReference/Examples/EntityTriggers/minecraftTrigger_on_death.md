@@ -10,9 +10,6 @@ ms.service: minecraft-bedrock-edition
 
 `minecraft:on_death` adds a trigger to call on this entity's death.
 
->[!IMPORTANT]
-> `minecraft:on_death` can only be used by the `ender_dragon` entity.
-
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |

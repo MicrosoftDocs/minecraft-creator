@@ -21,9 +21,9 @@ Type: *boolean*
 Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
 
 ### **stateChangeEvent**
-`stateChangeEvent?: (arg: WidgetComponentStateChangeEventData) => void;`
+`stateChangeEvent?: (arg0: WidgetComponentStateChangeEventData) => void;`
 
-Type: (arg: [*WidgetComponentStateChangeEventData*](WidgetComponentStateChangeEventData.md)) => *void*
+Type: (arg0: [*WidgetComponentStateChangeEventData*](WidgetComponentStateChangeEventData.md)) => *void*
 
 ### **visible**
 `visible?: boolean;`

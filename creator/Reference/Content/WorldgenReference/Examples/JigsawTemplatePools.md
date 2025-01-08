@@ -59,7 +59,7 @@ Template Pools are groups of related structure templates with assigned weights a
         "element": { 
           "element_type": "minecraft:single_pool_element", 
           "location": "minecraft:trail_ruins/tower/tower_top_2", 
-          "processors": "minecraft:trail_ruins_tower_top_archaeology" 
+          "processors": "minecraft:trail_ruins_tower_top_archaeology",
           "projection": "minecraft:terrain_matching" 
         }, 
         "weight": 2 

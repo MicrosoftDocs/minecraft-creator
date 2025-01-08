@@ -16,28 +16,28 @@ Manages callbacks that are connected to weather changing.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: WeatherChangeAfterEvent) => void): (arg: WeatherChangeAfterEvent) => void
+subscribe(callback: (arg0: WeatherChangeAfterEvent) => void): (arg0: WeatherChangeAfterEvent) => void
 `
 
 Adds a callback that will be called when weather changes.
 
 #### **Parameters**
-- **callback**: (arg: [*WeatherChangeAfterEvent*](WeatherChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*WeatherChangeAfterEvent*](WeatherChangeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*WeatherChangeAfterEvent*](WeatherChangeAfterEvent.md)) => *void*
+**Returns** (arg0: [*WeatherChangeAfterEvent*](WeatherChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: WeatherChangeAfterEvent) => void): void
+unsubscribe(callback: (arg0: WeatherChangeAfterEvent) => void): void
 `
 
 Removes a callback from being called when weather changes.
 
 #### **Parameters**
-- **callback**: (arg: [*WeatherChangeAfterEvent*](WeatherChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*WeatherChangeAfterEvent*](WeatherChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

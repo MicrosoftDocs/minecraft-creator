@@ -20,28 +20,28 @@ Manages callbacks that are connected to chat messages being sent.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ChatSendAfterEvent) => void): (arg: ChatSendAfterEvent) => void
+subscribe(callback: (arg0: ChatSendAfterEvent) => void): (arg0: ChatSendAfterEvent) => void
 `
 
 Adds a callback that will be called when new chat messages are sent.
 
 #### **Parameters**
-- **callback**: (arg: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
 
-**Returns** (arg: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
+**Returns** (arg0: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ChatSendAfterEvent) => void): void
+unsubscribe(callback: (arg0: ChatSendAfterEvent) => void): void
 `
 
 Removes a callback from being called when new chat messages are sent.
 
 #### **Parameters**
-- **callback**: (arg: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ChatSendAfterEvent*](ChatSendAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

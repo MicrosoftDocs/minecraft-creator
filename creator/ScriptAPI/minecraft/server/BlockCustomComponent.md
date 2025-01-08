@@ -13,64 +13,64 @@ Contains a set of events that will be raised for a block. This object must be bo
 ## Properties
 
 ### **beforeOnPlayerPlace**
-`beforeOnPlayerPlace?: (arg: BlockComponentPlayerPlaceBeforeEvent) => void;`
+`beforeOnPlayerPlace?: (arg0: BlockComponentPlayerPlaceBeforeEvent) => void;`
 
 This function will be called before a player places the block.
 
-Type: (arg: [*BlockComponentPlayerPlaceBeforeEvent*](BlockComponentPlayerPlaceBeforeEvent.md)) => *void*
+Type: (arg0: [*BlockComponentPlayerPlaceBeforeEvent*](BlockComponentPlayerPlaceBeforeEvent.md)) => *void*
 
 ### **onEntityFallOn**
-`onEntityFallOn?: (arg: BlockComponentEntityFallOnEvent) => void;`
+`onEntityFallOn?: (arg0: BlockComponentEntityFallOnEvent) => void;`
 
 This function will be called when an entity falls onto the block that this custom component is bound to.
 
-Type: (arg: [*BlockComponentEntityFallOnEvent*](BlockComponentEntityFallOnEvent.md)) => *void*
+Type: (arg0: [*BlockComponentEntityFallOnEvent*](BlockComponentEntityFallOnEvent.md)) => *void*
 
 ### **onPlace**
-`onPlace?: (arg: BlockComponentOnPlaceEvent) => void;`
+`onPlace?: (arg0: BlockComponentOnPlaceEvent) => void;`
 
 This function will be called when the block that this custom component is bound to is placed.
 
-Type: (arg: [*BlockComponentOnPlaceEvent*](BlockComponentOnPlaceEvent.md)) => *void*
+Type: (arg0: [*BlockComponentOnPlaceEvent*](BlockComponentOnPlaceEvent.md)) => *void*
 
 ### **onPlayerDestroy**
-`onPlayerDestroy?: (arg: BlockComponentPlayerDestroyEvent) => void;`
+`onPlayerDestroy?: (arg0: BlockComponentPlayerDestroyEvent) => void;`
 
 This function will be called when a player destroys a specific block.
 
-Type: (arg: [*BlockComponentPlayerDestroyEvent*](BlockComponentPlayerDestroyEvent.md)) => *void*
+Type: (arg0: [*BlockComponentPlayerDestroyEvent*](BlockComponentPlayerDestroyEvent.md)) => *void*
 
 ### **onPlayerInteract**
-`onPlayerInteract?: (arg: BlockComponentPlayerInteractEvent) => void;`
+`onPlayerInteract?: (arg0: BlockComponentPlayerInteractEvent) => void;`
 
 This function will be called when a player sucessfully interacts with the block that this custom component is bound to.
 
-Type: (arg: [*BlockComponentPlayerInteractEvent*](BlockComponentPlayerInteractEvent.md)) => *void*
+Type: (arg0: [*BlockComponentPlayerInteractEvent*](BlockComponentPlayerInteractEvent.md)) => *void*
 
 ### **onRandomTick**
-`onRandomTick?: (arg: BlockComponentRandomTickEvent) => void;`
+`onRandomTick?: (arg0: BlockComponentRandomTickEvent) => void;`
 
 This function will be called when a block randomly ticks.
 
-Type: (arg: [*BlockComponentRandomTickEvent*](BlockComponentRandomTickEvent.md)) => *void*
+Type: (arg0: [*BlockComponentRandomTickEvent*](BlockComponentRandomTickEvent.md)) => *void*
 
 ### **onStepOff**
-`onStepOff?: (arg: BlockComponentStepOffEvent) => void;`
+`onStepOff?: (arg0: BlockComponentStepOffEvent) => void;`
 
 This function will be called when an entity steps off the block that this custom component is bound to.
 
-Type: (arg: [*BlockComponentStepOffEvent*](BlockComponentStepOffEvent.md)) => *void*
+Type: (arg0: [*BlockComponentStepOffEvent*](BlockComponentStepOffEvent.md)) => *void*
 
 ### **onStepOn**
-`onStepOn?: (arg: BlockComponentStepOnEvent) => void;`
+`onStepOn?: (arg0: BlockComponentStepOnEvent) => void;`
 
 This function will be called when an entity steps onto the block that this custom component is bound to.
 
-Type: (arg: [*BlockComponentStepOnEvent*](BlockComponentStepOnEvent.md)) => *void*
+Type: (arg0: [*BlockComponentStepOnEvent*](BlockComponentStepOnEvent.md)) => *void*
 
 ### **onTick**
-`onTick?: (arg: BlockComponentTickEvent) => void;`
+`onTick?: (arg0: BlockComponentTickEvent) => void;`
 
 This function will be called when a block ticks.
 
-Type: (arg: [*BlockComponentTickEvent*](BlockComponentTickEvent.md)) => *void*
+Type: (arg0: [*BlockComponentTickEvent*](BlockComponentTickEvent.md)) => *void*

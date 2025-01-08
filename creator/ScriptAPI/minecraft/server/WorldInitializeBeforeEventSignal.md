@@ -16,28 +16,28 @@ Manages callbacks that are run at the initialization of the scripting environmen
 
 ### **subscribe**
 `
-subscribe(callback: (arg: WorldInitializeBeforeEvent) => void): (arg: WorldInitializeBeforeEvent) => void
+subscribe(callback: (arg0: WorldInitializeBeforeEvent) => void): (arg0: WorldInitializeBeforeEvent) => void
 `
 
 Adds a callback that will be called when the scripting environment is initialized for a World.
 
 #### **Parameters**
-- **callback**: (arg: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
 
-**Returns** (arg: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
+**Returns** (arg0: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: WorldInitializeBeforeEvent) => void): void
+unsubscribe(callback: (arg0: WorldInitializeBeforeEvent) => void): void
 `
 
 Removes a callback from being called the scripting environment is initialized for a World.
 
 #### **Parameters**
-- **callback**: (arg: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

@@ -16,29 +16,29 @@ Manages callbacks that are connected to when the health of an entity changes.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: EntityHealthChangedAfterEvent) => void, options?: EntityEventOptions): (arg: EntityHealthChangedAfterEvent) => void
+subscribe(callback: (arg0: EntityHealthChangedAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityHealthChangedAfterEvent) => void
 `
 
 Adds a callback that will be called when the health of an entity changes.
 
 #### **Parameters**
-- **callback**: (arg: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
 - **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
 
-**Returns** (arg: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
+**Returns** (arg0: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: EntityHealthChangedAfterEvent) => void): void
+unsubscribe(callback: (arg0: EntityHealthChangedAfterEvent) => void): void
 `
 
 Removes a callback from being called when the health of an entity changes.
 
 #### **Parameters**
-- **callback**: (arg: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EntityHealthChangedAfterEvent*](EntityHealthChangedAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

@@ -14,24 +14,24 @@ description: Contents of the @minecraft/server-editor.ClipboardChangeAfterEventS
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ClipboardChangeAfterEvent) => void): (arg: ClipboardChangeAfterEvent) => void
+subscribe(callback: (arg0: ClipboardChangeAfterEvent) => void): (arg0: ClipboardChangeAfterEvent) => void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
+**Returns** (arg0: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ClipboardChangeAfterEvent) => void): void
+unsubscribe(callback: (arg0: ClipboardChangeAfterEvent) => void): void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ClipboardChangeAfterEvent*](ClipboardChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

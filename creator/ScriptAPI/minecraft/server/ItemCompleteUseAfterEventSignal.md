@@ -16,28 +16,28 @@ Manages callbacks that are connected to the completion of charging for a chargea
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemCompleteUseAfterEvent) => void): (arg: ItemCompleteUseAfterEvent) => void
+subscribe(callback: (arg0: ItemCompleteUseAfterEvent) => void): (arg0: ItemCompleteUseAfterEvent) => void
 `
 
 Adds a callback that will be called when a chargeable item completes charging.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemCompleteUseAfterEvent*](ItemCompleteUseAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemCompleteUseAfterEvent*](ItemCompleteUseAfterEvent.md)) => *void*
 
-**Returns** (arg: [*ItemCompleteUseAfterEvent*](ItemCompleteUseAfterEvent.md)) => *void*
+**Returns** (arg0: [*ItemCompleteUseAfterEvent*](ItemCompleteUseAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemCompleteUseAfterEvent) => void): void
+unsubscribe(callback: (arg0: ItemCompleteUseAfterEvent) => void): void
 `
 
 Removes a callback from being called when a chargeable item completes charging.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemCompleteUseAfterEvent*](ItemCompleteUseAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemCompleteUseAfterEvent*](ItemCompleteUseAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

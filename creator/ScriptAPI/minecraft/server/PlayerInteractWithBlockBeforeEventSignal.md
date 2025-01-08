@@ -16,28 +16,28 @@ Manages callbacks that are connected to before a player interacts with a block.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerInteractWithBlockBeforeEvent) => void): (arg: PlayerInteractWithBlockBeforeEvent) => void
+subscribe(callback: (arg0: PlayerInteractWithBlockBeforeEvent) => void): (arg0: PlayerInteractWithBlockBeforeEvent) => void
 `
 
 Adds a callback that will be called before a player interacts with a block.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*
 
-**Returns** (arg: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*
+**Returns** (arg0: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerInteractWithBlockBeforeEvent) => void): void
+unsubscribe(callback: (arg0: PlayerInteractWithBlockBeforeEvent) => void): void
 `
 
 Removes a callback from being called before a player interacts with a block.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

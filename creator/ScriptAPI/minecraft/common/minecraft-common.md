@@ -23,6 +23,9 @@ description: Contents of the @minecraft/common module
 - `1.1.0`
 - `1.0.0`
 
+## Enumerations
+- [InvalidArgumentErrorType](InvalidArgumentErrorType.md)
+
 ## Interfaces
 - [NumberRange](NumberRange.md)
 

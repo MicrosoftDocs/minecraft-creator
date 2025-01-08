@@ -16,28 +16,28 @@ Manages callbacks that are connected to after a player interacts with an entity.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerInteractWithEntityAfterEvent) => void): (arg: PlayerInteractWithEntityAfterEvent) => void
+subscribe(callback: (arg0: PlayerInteractWithEntityAfterEvent) => void): (arg0: PlayerInteractWithEntityAfterEvent) => void
 `
 
 Adds a callback that will be called after a player interacts with an entity.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*
 
-**Returns** (arg: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*
+**Returns** (arg0: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerInteractWithEntityAfterEvent) => void): void
+unsubscribe(callback: (arg0: PlayerInteractWithEntityAfterEvent) => void): void
 `
 
 Removes a callback from being called after a player interacts with an entity.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerInteractWithEntityAfterEvent*](PlayerInteractWithEntityAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
