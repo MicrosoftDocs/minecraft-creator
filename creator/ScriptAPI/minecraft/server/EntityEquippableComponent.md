@@ -11,7 +11,7 @@ description: Contents of the @minecraft/server.EntityEquippableComponent class.
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
 
-Provides access to a mob's equipment slots. This component only works with players currently.
+Provides access to a mob's equipment slots. This component exists for all mob entities.
 
 #### Examples
 

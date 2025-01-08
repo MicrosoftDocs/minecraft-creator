@@ -19,28 +19,28 @@ Provides an adaptable interface for callers to subscribe to an event that fires 
 
 ### **subscribe**
 `
-subscribe(callback: (arg: LeverActionAfterEvent) => void): (arg: LeverActionAfterEvent) => void
+subscribe(callback: (arg0: LeverActionAfterEvent) => void): (arg0: LeverActionAfterEvent) => void
 `
 
 Subscribes to the event.
 
 #### **Parameters**
-- **callback**: (arg: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
+- **callback**: (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
 
-**Returns** (arg: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
+**Returns** (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: LeverActionAfterEvent) => void): void
+unsubscribe(callback: (arg0: LeverActionAfterEvent) => void): void
 `
 
 Unsubscribes from the event.
 
 #### **Parameters**
-- **callback**: (arg: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
+- **callback**: (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

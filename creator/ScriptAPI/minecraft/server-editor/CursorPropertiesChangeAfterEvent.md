@@ -10,6 +10,11 @@ description: Contents of the @minecraft/server-editor.CursorPropertiesChangeAfte
 
 ## Properties
 
+### **position**
+`read-only position?: CursorPosition;`
+
+Type: [*CursorPosition*](CursorPosition.md)
+
 ### **properties**
 `read-only properties: CursorProperties;`
 

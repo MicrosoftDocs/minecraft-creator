@@ -30,6 +30,11 @@ description: Changelog of the `@minecraft/server` module
 
 ## 1.18.0-beta
 #### Added module peer dependency *`@minecraft/vanilla-data`*
+#### Added *[`AimAssistCategory`](AimAssistCategory.md)*
+#### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
+#### Added *[`AimAssistPreset`](AimAssistPreset.md)*
+#### Added *[`AimAssistPresetSettings`](AimAssistPresetSettings.md)*
+#### Added *[`AimAssistRegistry`](AimAssistRegistry.md)*
 #### Added *[`BiomeType`](BiomeType.md)*
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
@@ -71,7 +76,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BoundingBoxUtils`](BoundingBoxUtils.md)*
 #### Changed *[`Camera`](Camera.md)*
 - Changed function *[`setCamera`](Camera.md#setcamera)*
-  - Changed argument `setOptions` type from [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) to [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md)
+  - Changed argument `setOptions` type from [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md) to [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md)
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
@@ -116,10 +121,12 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Player`](Player.md)*
 - Added property *[`inputInfo`](Player.md#inputinfo)*
 - Added function *[`eatItem`](Player.md#eatitem)*
+- Added function *[`getAimAssist`](Player.md#getaimassist)*
 - Added function *[`isOp`](Player.md#isop)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
 - Added function *[`setOp`](Player.md#setop)*
 - Added function *[`spawnParticle`](Player.md#spawnparticle)*
+#### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
 #### Added *[`PlayerButtonInputAfterEvent`](PlayerButtonInputAfterEvent.md)*
 #### Added *[`PlayerButtonInputAfterEventSignal`](PlayerButtonInputAfterEventSignal.md)*
 #### Added *[`PlayerInputModeChangeAfterEvent`](PlayerInputModeChangeAfterEvent.md)*
@@ -148,6 +155,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
+- Added function *[`getAimAssist`](World.md#getaimassist)*
 - Added function *[`setDynamicProperties`](World.md#setdynamicproperties)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
@@ -157,6 +165,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
+#### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
 #### Added enum [`ButtonState`](ButtonState.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)

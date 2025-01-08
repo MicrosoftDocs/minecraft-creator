@@ -16,28 +16,28 @@ Manages callbacks that are connected to successful player dimension changes.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerDimensionChangeAfterEvent) => void): (arg: PlayerDimensionChangeAfterEvent) => void
+subscribe(callback: (arg0: PlayerDimensionChangeAfterEvent) => void): (arg0: PlayerDimensionChangeAfterEvent) => void
 `
 
 Subscribes the specified callback to a player dimension change after event.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
+**Returns** (arg0: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerDimensionChangeAfterEvent) => void): void
+unsubscribe(callback: (arg0: PlayerDimensionChangeAfterEvent) => void): void
 `
 
 Removes the specified callback from a player dimension change after event.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerDimensionChangeAfterEvent*](PlayerDimensionChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

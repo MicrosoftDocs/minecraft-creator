@@ -52,7 +52,7 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
 
 ### **register**
 `
-register(testClassName: string, testName: string, testFunction: (arg: Test) => void): RegistrationBuilder
+register(testClassName: string, testName: string, testFunction: (arg0: Test) => void): RegistrationBuilder
 `
 
 Registers a new GameTest function. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].
@@ -64,7 +64,7 @@ Registers a new GameTest function. This GameTest will become available in Minecr
 - **testName**: *string*
   
   Name of this specific test.
-- **testFunction**: (arg: [*Test*](Test.md)) => *void*
+- **testFunction**: (arg0: [*Test*](Test.md)) => *void*
   
   Implementation of the test function.
 
@@ -101,7 +101,7 @@ register("StarterTests", "simpleMobTest", simpleMobGameTest).maxTicks(400).struc
 
 ### **registerAsync**
 `
-registerAsync(testClassName: string, testName: string, testFunction: (arg: Test) => Promise<void>): RegistrationBuilder
+registerAsync(testClassName: string, testName: string, testFunction: (arg0: Test) => Promise<void>): RegistrationBuilder
 `
 
 Registers a new GameTest function that is designed for asynchronous execution. This GameTest will become available in Minecraft via /gametest run [testClassName]:[testName].
@@ -113,7 +113,7 @@ Registers a new GameTest function that is designed for asynchronous execution. T
 - **testName**: *string*
   
   Name of this specific test.
-- **testFunction**: (arg: [*Test*](Test.md)) => Promise&lt;*void*&gt;
+- **testFunction**: (arg0: [*Test*](Test.md)) => Promise&lt;*void*&gt;
   
   Implementation of the test function.
 

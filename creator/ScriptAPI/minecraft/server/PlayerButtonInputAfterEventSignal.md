@@ -20,29 +20,29 @@ Manages callbacks that are connected to player inputs.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerButtonInputAfterEvent) => void, options?: InputEventOptions): (arg: PlayerButtonInputAfterEvent) => void
+subscribe(callback: (arg0: PlayerButtonInputAfterEvent) => void, options?: InputEventOptions): (arg0: PlayerButtonInputAfterEvent) => void
 `
 
 Adds a callback that will be called after the player performs an input.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerButtonInputAfterEvent*](PlayerButtonInputAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerButtonInputAfterEvent*](PlayerButtonInputAfterEvent.md)) => *void*
 - **options**?: [*InputEventOptions*](InputEventOptions.md) = `null`
 
-**Returns** (arg: [*PlayerButtonInputAfterEvent*](PlayerButtonInputAfterEvent.md)) => *void*
+**Returns** (arg0: [*PlayerButtonInputAfterEvent*](PlayerButtonInputAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerButtonInputAfterEvent) => void): void
+unsubscribe(callback: (arg0: PlayerButtonInputAfterEvent) => void): void
 `
 
 Removes a callback from being called after the player performs an input.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerButtonInputAfterEvent*](PlayerButtonInputAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerButtonInputAfterEvent*](PlayerButtonInputAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

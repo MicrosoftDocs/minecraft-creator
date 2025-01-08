@@ -91,6 +91,9 @@ Type: [*StructureManager*](StructureManager.md)
 ::: moniker-end
 - [clearDynamicProperties](#cleardynamicproperties)
 - [getAbsoluteTime](#getabsolutetime)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getAimAssist](#getaimassist)
+::: moniker-end
 - [getAllPlayers](#getallplayers)
 - [getDay](#getday)
 - [getDefaultSpawnLocation](#getdefaultspawnlocation)
@@ -153,6 +156,24 @@ getAbsoluteTime(): number
 Returns the absolute time since the start of the world.
 
 **Returns** *number*
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getAimAssist**
+`
+getAimAssist(): AimAssistRegistry
+`
+
+The aim-assist presets and categories that can be used in the world.
+
+**Returns** [*AimAssistRegistry*](AimAssistRegistry.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+ 
+#### Required Experiments
+- Camera Aim Assist
+
+::: moniker-end
 
 ### **getAllPlayers**
 `

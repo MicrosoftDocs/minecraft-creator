@@ -16,28 +16,28 @@ Manages callbacks that are connected to when an explosion occurs.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ExplosionAfterEvent) => void): (arg: ExplosionAfterEvent) => void
+subscribe(callback: (arg0: ExplosionAfterEvent) => void): (arg0: ExplosionAfterEvent) => void
 `
 
 Adds a callback that will be called when an explosion occurs.
 
 #### **Parameters**
-- **callback**: (arg: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
 
-**Returns** (arg: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
+**Returns** (arg0: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ExplosionAfterEvent) => void): void
+unsubscribe(callback: (arg0: ExplosionAfterEvent) => void): void
 `
 
 Removes a callback from being called when an explosion occurs.
 
 #### **Parameters**
-- **callback**: (arg: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ExplosionAfterEvent*](ExplosionAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

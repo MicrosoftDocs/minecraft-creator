@@ -14,24 +14,24 @@ description: Contents of the @minecraft/server.PlayerEmoteAfterEventSignal class
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerEmoteAfterEvent) => void): (arg: PlayerEmoteAfterEvent) => void
+subscribe(callback: (arg0: PlayerEmoteAfterEvent) => void): (arg0: PlayerEmoteAfterEvent) => void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerEmoteAfterEvent*](PlayerEmoteAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerEmoteAfterEvent*](PlayerEmoteAfterEvent.md)) => *void*
 
-**Returns** (arg: [*PlayerEmoteAfterEvent*](PlayerEmoteAfterEvent.md)) => *void*
+**Returns** (arg0: [*PlayerEmoteAfterEvent*](PlayerEmoteAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerEmoteAfterEvent) => void): void
+unsubscribe(callback: (arg0: PlayerEmoteAfterEvent) => void): void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerEmoteAfterEvent*](PlayerEmoteAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerEmoteAfterEvent*](PlayerEmoteAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

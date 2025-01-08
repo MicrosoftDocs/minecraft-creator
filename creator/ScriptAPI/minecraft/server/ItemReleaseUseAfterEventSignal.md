@@ -16,28 +16,28 @@ Manages callbacks that are connected to the releasing of charging for a chargeab
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemReleaseUseAfterEvent) => void): (arg: ItemReleaseUseAfterEvent) => void
+subscribe(callback: (arg0: ItemReleaseUseAfterEvent) => void): (arg0: ItemReleaseUseAfterEvent) => void
 `
 
 Adds a callback that will be called when a chargeable item is released from charging.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemReleaseUseAfterEvent*](ItemReleaseUseAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemReleaseUseAfterEvent*](ItemReleaseUseAfterEvent.md)) => *void*
 
-**Returns** (arg: [*ItemReleaseUseAfterEvent*](ItemReleaseUseAfterEvent.md)) => *void*
+**Returns** (arg0: [*ItemReleaseUseAfterEvent*](ItemReleaseUseAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemReleaseUseAfterEvent) => void): void
+unsubscribe(callback: (arg0: ItemReleaseUseAfterEvent) => void): void
 `
 
 Removes a callback from being called when a chargeable item is released from charging.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemReleaseUseAfterEvent*](ItemReleaseUseAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemReleaseUseAfterEvent*](ItemReleaseUseAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

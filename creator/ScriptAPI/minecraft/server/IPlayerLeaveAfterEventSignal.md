@@ -19,28 +19,28 @@ Provides an adaptable interface for callers to subscribe to an event that fires 
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerLeaveAfterEvent) => void): (arg: PlayerLeaveAfterEvent) => void
+subscribe(callback: (arg0: PlayerLeaveAfterEvent) => void): (arg0: PlayerLeaveAfterEvent) => void
 `
 
 Subscribes to the event.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerLeaveAfterEvent*](PlayerLeaveAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerLeaveAfterEvent*](PlayerLeaveAfterEvent.md)) => *void*
 
-**Returns** (arg: [*PlayerLeaveAfterEvent*](PlayerLeaveAfterEvent.md)) => *void*
+**Returns** (arg0: [*PlayerLeaveAfterEvent*](PlayerLeaveAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerLeaveAfterEvent) => void): void
+unsubscribe(callback: (arg0: PlayerLeaveAfterEvent) => void): void
 `
 
 Unsubscribes from the event.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerLeaveAfterEvent*](PlayerLeaveAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerLeaveAfterEvent*](PlayerLeaveAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

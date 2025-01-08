@@ -16,28 +16,28 @@ Manages callbacks that are connected to when a target block is hit.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: TargetBlockHitAfterEvent) => void): (arg: TargetBlockHitAfterEvent) => void
+subscribe(callback: (arg0: TargetBlockHitAfterEvent) => void): (arg0: TargetBlockHitAfterEvent) => void
 `
 
 Adds a callback that will be called when a target block is hit.
 
 #### **Parameters**
-- **callback**: (arg: [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)) => *void*
+- **callback**: (arg0: [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)) => *void*
 
-**Returns** (arg: [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)) => *void*
+**Returns** (arg0: [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: TargetBlockHitAfterEvent) => void): void
+unsubscribe(callback: (arg0: TargetBlockHitAfterEvent) => void): void
 `
 
 Removes a callback from being called when a target block is hit.
 
 #### **Parameters**
-- **callback**: (arg: [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)) => *void*
+- **callback**: (arg0: [*TargetBlockHitAfterEvent*](TargetBlockHitAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

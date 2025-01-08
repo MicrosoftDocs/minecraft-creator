@@ -16,28 +16,28 @@ Manages callbacks that are connected to a player leaving the world.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerLeaveBeforeEvent) => void): (arg: PlayerLeaveBeforeEvent) => void
+subscribe(callback: (arg0: PlayerLeaveBeforeEvent) => void): (arg0: PlayerLeaveBeforeEvent) => void
 `
 
 Adds a callback that will be called when a player leaves the world.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*
 
-**Returns** (arg: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*
+**Returns** (arg0: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerLeaveBeforeEvent) => void): void
+unsubscribe(callback: (arg0: PlayerLeaveBeforeEvent) => void): void
 `
 
 Removes a callback that will be called when a player leaves the world.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerLeaveBeforeEvent*](PlayerLeaveBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

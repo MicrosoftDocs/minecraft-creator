@@ -21,3 +21,10 @@ Specifies that a passed-in argument to a method is not correct or allowed.
 Index of the argument that is in error.
 
 Type: *number*
+
+### **type**
+`read-only type: InvalidArgumentErrorType;`
+
+Type of the argument error.
+
+Type: [*InvalidArgumentErrorType*](InvalidArgumentErrorType.md)

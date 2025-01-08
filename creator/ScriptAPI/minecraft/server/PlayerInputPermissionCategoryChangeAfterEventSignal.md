@@ -16,28 +16,28 @@ Manages callbacks that are connected to after a players input permissions change
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerInputPermissionCategoryChangeAfterEvent) => void): (arg: PlayerInputPermissionCategoryChangeAfterEvent) => void
+subscribe(callback: (arg0: PlayerInputPermissionCategoryChangeAfterEvent) => void): (arg0: PlayerInputPermissionCategoryChangeAfterEvent) => void
 `
 
 Adds a callback that will be called after a players input permissions change.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerInputPermissionCategoryChangeAfterEvent*](PlayerInputPermissionCategoryChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerInputPermissionCategoryChangeAfterEvent*](PlayerInputPermissionCategoryChangeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*PlayerInputPermissionCategoryChangeAfterEvent*](PlayerInputPermissionCategoryChangeAfterEvent.md)) => *void*
+**Returns** (arg0: [*PlayerInputPermissionCategoryChangeAfterEvent*](PlayerInputPermissionCategoryChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerInputPermissionCategoryChangeAfterEvent) => void): void
+unsubscribe(callback: (arg0: PlayerInputPermissionCategoryChangeAfterEvent) => void): void
 `
 
 Removes a callback from being called after a players input permissions change.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerInputPermissionCategoryChangeAfterEvent*](PlayerInputPermissionCategoryChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerInputPermissionCategoryChangeAfterEvent*](PlayerInputPermissionCategoryChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

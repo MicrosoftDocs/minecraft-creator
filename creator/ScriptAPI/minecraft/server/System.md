@@ -246,7 +246,7 @@ Causes an event to fire within script with the specified message ID and payload.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md), [*ScriptEventMessageSizeError*](ScriptEventMessageSizeError.md)
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*NamespaceNameError*](NamespaceNameError.md)
 ::: moniker-end
 
 ### **waitTicks**
@@ -254,10 +254,14 @@ Notes:
 waitTicks(ticks: number): Promise<void>
 `
 
+waitTicks returns a promise that resolves after the requested number of ticks.
+
 #### **Parameters**
 - **ticks**: *number*
+  
+  The amount of ticks to wait. Minimum value is 1.
 
-**Returns** Promise&lt;*void*&gt;
+**Returns** Promise&lt;*void*&gt; - A promise that is resolved when the specified amount of ticks have occurred.
   
 Notes:
 - This function can throw errors.

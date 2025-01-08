@@ -13,50 +13,50 @@ Contains a set of events that will be raised for an item. This object must be bo
 ## Properties
 
 ### **onBeforeDurabilityDamage**
-`onBeforeDurabilityDamage?: (arg: ItemComponentBeforeDurabilityDamageEvent) => void;`
+`onBeforeDurabilityDamage?: (arg0: ItemComponentBeforeDurabilityDamageEvent) => void;`
 
 This function will be called when an item containing this component is hitting an entity and about to take durability damage.
 
-Type: (arg: [*ItemComponentBeforeDurabilityDamageEvent*](ItemComponentBeforeDurabilityDamageEvent.md)) => *void*
+Type: (arg0: [*ItemComponentBeforeDurabilityDamageEvent*](ItemComponentBeforeDurabilityDamageEvent.md)) => *void*
 
 ### **onCompleteUse**
-`onCompleteUse?: (arg: ItemComponentCompleteUseEvent) => void;`
+`onCompleteUse?: (arg0: ItemComponentCompleteUseEvent) => void;`
 
 This function will be called when an item containing this component's use duration was completed.
 
-Type: (arg: [*ItemComponentCompleteUseEvent*](ItemComponentCompleteUseEvent.md)) => *void*
+Type: (arg0: [*ItemComponentCompleteUseEvent*](ItemComponentCompleteUseEvent.md)) => *void*
 
 ### **onConsume**
-`onConsume?: (arg: ItemComponentConsumeEvent) => void;`
+`onConsume?: (arg0: ItemComponentConsumeEvent) => void;`
 
 This function will be called when an item containing this component is eaten by an entity.
 
-Type: (arg: [*ItemComponentConsumeEvent*](ItemComponentConsumeEvent.md)) => *void*
+Type: (arg0: [*ItemComponentConsumeEvent*](ItemComponentConsumeEvent.md)) => *void*
 
 ### **onHitEntity**
-`onHitEntity?: (arg: ItemComponentHitEntityEvent) => void;`
+`onHitEntity?: (arg0: ItemComponentHitEntityEvent) => void;`
 
 This function will be called when an item containing this component is used to hit another entity.
 
-Type: (arg: [*ItemComponentHitEntityEvent*](ItemComponentHitEntityEvent.md)) => *void*
+Type: (arg0: [*ItemComponentHitEntityEvent*](ItemComponentHitEntityEvent.md)) => *void*
 
 ### **onMineBlock**
-`onMineBlock?: (arg: ItemComponentMineBlockEvent) => void;`
+`onMineBlock?: (arg0: ItemComponentMineBlockEvent) => void;`
 
 This function will be called when an item containing this component is used to mine a block.
 
-Type: (arg: [*ItemComponentMineBlockEvent*](ItemComponentMineBlockEvent.md)) => *void*
+Type: (arg0: [*ItemComponentMineBlockEvent*](ItemComponentMineBlockEvent.md)) => *void*
 
 ### **onUse**
-`onUse?: (arg: ItemComponentUseEvent) => void;`
+`onUse?: (arg0: ItemComponentUseEvent) => void;`
 
 This function will be called when an item containing this component is used by a player.
 
-Type: (arg: [*ItemComponentUseEvent*](ItemComponentUseEvent.md)) => *void*
+Type: (arg0: [*ItemComponentUseEvent*](ItemComponentUseEvent.md)) => *void*
 
 ### **onUseOn**
-`onUseOn?: (arg: ItemComponentUseOnEvent) => void;`
+`onUseOn?: (arg0: ItemComponentUseOnEvent) => void;`
 
 This function will be called when an item containing this component is used on a block.
 
-Type: (arg: [*ItemComponentUseOnEvent*](ItemComponentUseOnEvent.md)) => *void*
+Type: (arg0: [*ItemComponentUseOnEvent*](ItemComponentUseOnEvent.md)) => *void*

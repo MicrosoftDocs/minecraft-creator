@@ -14,6 +14,7 @@ description: Changelog of the `@minecraft/common` module
 - [1.0.0](#100)
 
 ## 1.2.0
+#### Added enum [`InvalidArgumentErrorType`](InvalidArgumentErrorType.md)
 ## 1.1.0
 ## 1.0.0
 #### Added `@minecraft/common` Module

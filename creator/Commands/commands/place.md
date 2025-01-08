@@ -203,6 +203,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:fixup_mesa_gold_position_feature`
 - `minecraft:silverfish_feature`
 - `minecraft:grass_double_plant_upper_feature`
+- `minecraft:random_oak_tree_from_sapling_feature`
 - `minecraft:underground_extra_cave_carver_feature`
 - `minecraft:scatter_fern_feature`
 - `minecraft:select_roofed_tree_feature`
@@ -256,6 +257,8 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:swamp_tree_feature`
 - `minecraft:diamond_ore_buried_feature`
 - `minecraft:scatter_sweet_berry_bush_feature`
+- `minecraft:jungle_tall_grass_feature`
+- `minecraft:random_oak_tree_with_beehive_from_sapling_feature`
 - `minecraft:scatter_red_mushroom_feature`
 - `minecraft:cherry_tree_feature`
 - `minecraft:big_dripleaf_west_feature`
@@ -274,7 +277,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:pale_moss_patch_bonemeal_feature`
 - `minecraft:optional_spruce_tree_with_vines_feature`
 - `minecraft:bamboo_then_podzol_feature`
-- `minecraft:jungle_tall_grass_feature`
 - `minecraft:grass_double_plant_patch_feature`
 - `minecraft:scatter_tall_grass_feature`
 - `minecraft:optional_fallen_oak_tree_feature`

@@ -16,29 +16,29 @@ Allows for registering an event handler that responds to inbound /scriptevent co
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ScriptEventCommandMessageAfterEvent) => void, options?: ScriptEventMessageFilterOptions): (arg: ScriptEventCommandMessageAfterEvent) => void
+subscribe(callback: (arg0: ScriptEventCommandMessageAfterEvent) => void, options?: ScriptEventMessageFilterOptions): (arg0: ScriptEventCommandMessageAfterEvent) => void
 `
 
 Registers a new ScriptEvent handler.
 
 #### **Parameters**
-- **callback**: (arg: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
 - **options**?: [*ScriptEventMessageFilterOptions*](ScriptEventMessageFilterOptions.md) = `null`
 
-**Returns** (arg: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
+**Returns** (arg0: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ScriptEventCommandMessageAfterEvent) => void): void
+unsubscribe(callback: (arg0: ScriptEventCommandMessageAfterEvent) => void): void
 `
 
 Unsubscribes a particular handler for a ScriptEvent event.
 
 #### **Parameters**
-- **callback**: (arg: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

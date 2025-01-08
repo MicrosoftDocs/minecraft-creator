@@ -13,6 +13,8 @@ Type of item that can be added to the property pane
 ## Constants
 ### **BlockList**
 `BlockList = editorUI:BlockList`
+### **BlockTable**
+`BlockTable = editorUI:BlockTable`
 ### **Boolean**
 `Boolean = editorUI:Boolean`
 ### **Button**

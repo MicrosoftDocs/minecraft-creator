@@ -4,6 +4,8 @@
       href: minecraft/common/minecraft-common.md
     - name: minecraft/common Changelog
       href: minecraft/common/changelog.md
+    - name: InvalidArgumentErrorType
+      href: minecraft/common/InvalidArgumentErrorType.md
     - name: NumberRange
       href: minecraft/common/NumberRange.md
   - name: minecraft/debug-utilities
@@ -122,6 +124,8 @@
       href: minecraft/server/minecraft-server.md
     - name: minecraft/server Changelog
       href: minecraft/server/changelog.md
+    - name: AimAssistTargetMode
+      href: minecraft/server/AimAssistTargetMode.md
     - name: BlockComponentTypes
       href: minecraft/server/BlockComponentTypes.md
     - name: BlockPistonState
@@ -210,6 +214,16 @@
       href: minecraft/server/WatchdogTerminateReason.md
     - name: WeatherType
       href: minecraft/server/WeatherType.md
+    - name: AimAssistCategory
+      href: minecraft/server/AimAssistCategory.md
+    - name: AimAssistCategorySettings
+      href: minecraft/server/AimAssistCategorySettings.md
+    - name: AimAssistPreset
+      href: minecraft/server/AimAssistPreset.md
+    - name: AimAssistPresetSettings
+      href: minecraft/server/AimAssistPresetSettings.md
+    - name: AimAssistRegistry
+      href: minecraft/server/AimAssistRegistry.md
     - name: BiomeType
       href: minecraft/server/BiomeType.md
     - name: BiomeTypes
@@ -646,6 +660,8 @@
       href: minecraft/server/PistonActivateAfterEventSignal.md
     - name: Player
       href: minecraft/server/Player.md
+    - name: PlayerAimAssist
+      href: minecraft/server/PlayerAimAssist.md
     - name: PlayerBreakBlockAfterEvent
       href: minecraft/server/PlayerBreakBlockAfterEvent.md
     - name: PlayerBreakBlockAfterEventSignal
@@ -920,6 +936,8 @@
       href: minecraft/server/NotEqualsComparison.md
     - name: PlayAnimationOptions
       href: minecraft/server/PlayAnimationOptions.md
+    - name: PlayerAimAssistSettings
+      href: minecraft/server/PlayerAimAssistSettings.md
     - name: PlayerSoundOptions
       href: minecraft/server/PlayerSoundOptions.md
     - name: PotionOptions
@@ -974,6 +992,8 @@
       href: minecraft/server-editor/BlockMaskListType.md
     - name: BlockPaletteItemType
       href: minecraft/server-editor/BlockPaletteItemType.md
+    - name: BlockTableOperationType
+      href: minecraft/server-editor/BlockTableOperationType.md
     - name: BoolPropertyItemVariant
       href: minecraft/server-editor/BoolPropertyItemVariant.md
     - name: ButtonPropertyItemVariant
@@ -1200,6 +1220,8 @@
       href: minecraft/server-editor/BuiltInUIManager.md
     - name: ClipboardWriteOptions
       href: minecraft/server-editor/ClipboardWriteOptions.md
+    - name: CursorPosition
+      href: minecraft/server-editor/CursorPosition.md
     - name: CursorProperties
       href: minecraft/server-editor/CursorProperties.md
     - name: CursorRay
@@ -1220,6 +1242,12 @@
       href: minecraft/server-editor/IActionBarItem.md
     - name: IActionBarItemCreationParams
       href: minecraft/server-editor/IActionBarItemCreationParams.md
+    - name: IBlockTableEntryInfo
+      href: minecraft/server-editor/IBlockTableEntryInfo.md
+    - name: IBlockTablePropertyItem
+      href: minecraft/server-editor/IBlockTablePropertyItem.md
+    - name: IBlockTablePropertyItemOptions
+      href: minecraft/server-editor/IBlockTablePropertyItemOptions.md
     - name: IBoolPropertyItem
       href: minecraft/server-editor/IBoolPropertyItem.md
     - name: IBoolPropertyItemOptions

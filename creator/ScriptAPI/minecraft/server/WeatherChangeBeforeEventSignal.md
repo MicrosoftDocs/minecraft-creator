@@ -16,28 +16,28 @@ Manages callbacks that are connected to before weather changing.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: WeatherChangeBeforeEvent) => void): (arg: WeatherChangeBeforeEvent) => void
+subscribe(callback: (arg0: WeatherChangeBeforeEvent) => void): (arg0: WeatherChangeBeforeEvent) => void
 `
 
 Adds a callback that will be called before weather changes.
 
 #### **Parameters**
-- **callback**: (arg: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
 
-**Returns** (arg: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
+**Returns** (arg0: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: WeatherChangeBeforeEvent) => void): void
+unsubscribe(callback: (arg0: WeatherChangeBeforeEvent) => void): void
 `
 
 Removes a callback from being called before weather changes.
 
 #### **Parameters**
-- **callback**: (arg: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*WeatherChangeBeforeEvent*](WeatherChangeBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

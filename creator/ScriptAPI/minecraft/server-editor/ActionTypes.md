@@ -15,3 +15,5 @@ The types of actions that are supported. This type corresponds to the expected a
 `MouseRayCastAction = MouseRayCastAction`
 ### **NoArgsAction**
 `NoArgsAction = NoArgsAction`
+### **StatefulAction**
+`StatefulAction = StatefulAction`

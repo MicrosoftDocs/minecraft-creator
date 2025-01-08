@@ -42,6 +42,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - `0.1.0`
 
 ## Enumerations
+- [AimAssistTargetMode](AimAssistTargetMode.md)
 - [BlockComponentTypes](BlockComponentTypes.md)
 - [BlockPistonState](BlockPistonState.md)
 - [BlockVolumeIntersection](BlockVolumeIntersection.md)
@@ -94,6 +95,11 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemComponentTypeMap](ItemComponentTypeMap.md)
 
 ## Classes
+- [AimAssistCategory](AimAssistCategory.md)
+- [AimAssistCategorySettings](AimAssistCategorySettings.md)
+- [AimAssistPreset](AimAssistPreset.md)
+- [AimAssistPresetSettings](AimAssistPresetSettings.md)
+- [AimAssistRegistry](AimAssistRegistry.md)
 - [BiomeType](BiomeType.md)
 - [BiomeTypes](BiomeTypes.md)
 - [Block](Block.md)
@@ -312,6 +318,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PistonActivateAfterEvent](PistonActivateAfterEvent.md)
 - [PistonActivateAfterEventSignal](PistonActivateAfterEventSignal.md)
 - [Player](Player.md)
+- [PlayerAimAssist](PlayerAimAssist.md)
 - [PlayerBreakBlockAfterEvent](PlayerBreakBlockAfterEvent.md)
 - [PlayerBreakBlockAfterEventSignal](PlayerBreakBlockAfterEventSignal.md)
 - [PlayerBreakBlockBeforeEvent](PlayerBreakBlockBeforeEvent.md)
@@ -451,6 +458,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [MusicOptions](MusicOptions.md)
 - [NotEqualsComparison](NotEqualsComparison.md)
 - [PlayAnimationOptions](PlayAnimationOptions.md)
+- [PlayerAimAssistSettings](PlayerAimAssistSettings.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
 - [PotionOptions](PotionOptions.md)
 - [ProjectileShootOptions](ProjectileShootOptions.md)
@@ -495,7 +503,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
 - [NamespaceNameError](NamespaceNameError.md)
 - [PlaceJigsawError](PlaceJigsawError.md)
-- [ScriptEventMessageSizeError](ScriptEventMessageSizeError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
 
 ## Constants

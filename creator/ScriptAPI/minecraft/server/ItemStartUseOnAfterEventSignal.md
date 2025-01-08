@@ -16,28 +16,28 @@ Manages callbacks that are connected to an item starting being used on a block e
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ItemStartUseOnAfterEvent) => void): (arg: ItemStartUseOnAfterEvent) => void
+subscribe(callback: (arg0: ItemStartUseOnAfterEvent) => void): (arg0: ItemStartUseOnAfterEvent) => void
 `
 
 Adds a callback that will be called when an item is used on a block.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemStartUseOnAfterEvent*](ItemStartUseOnAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemStartUseOnAfterEvent*](ItemStartUseOnAfterEvent.md)) => *void*
 
-**Returns** (arg: [*ItemStartUseOnAfterEvent*](ItemStartUseOnAfterEvent.md)) => *void*
+**Returns** (arg0: [*ItemStartUseOnAfterEvent*](ItemStartUseOnAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ItemStartUseOnAfterEvent) => void): void
+unsubscribe(callback: (arg0: ItemStartUseOnAfterEvent) => void): void
 `
 
 Removes a callback from being called when an item is used on a block.
 
 #### **Parameters**
-- **callback**: (arg: [*ItemStartUseOnAfterEvent*](ItemStartUseOnAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ItemStartUseOnAfterEvent*](ItemStartUseOnAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

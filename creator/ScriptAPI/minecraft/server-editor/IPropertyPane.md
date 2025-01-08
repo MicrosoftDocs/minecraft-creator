@@ -42,6 +42,7 @@ Type: *boolean*
 
 ## Methods
 - [addBlockList](#addblocklist)
+- [addBlockTable](#addblocktable)
 - [addBool](#addbool)
 - [addBool_deprecated](#addbool_deprecated)
 - [addButton](#addbutton)
@@ -85,6 +86,18 @@ Adds a block list to the pane.
 **Returns** *IBlockListPropertyItem<{
         EMPTY: undefined;
     }, 'EMPTY'>*
+
+### **addBlockTable**
+`
+addBlockTable(options: IBlockTablePropertyItemOptions): IBlockTablePropertyItem
+`
+
+Adds a block table to the pane.
+
+#### **Parameters**
+- **options**: *IBlockTablePropertyItemOptions*
+
+**Returns** *IBlockTablePropertyItem*
 
 ### **addBool**
 `

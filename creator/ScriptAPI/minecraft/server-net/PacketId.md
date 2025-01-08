@@ -37,6 +37,8 @@ Represents the unique type of network packet.
 `AnimatePacket = "AnimatePacket"`
 ### **AnvilDamagePacket**
 `AnvilDamagePacket = "AnvilDamagePacket"`
+### **AutomationClientConnectPacket**
+`AutomationClientConnectPacket = "AutomationClientConnectPacket"`
 ### **AvailableActorIdentifiersPacket**
 `AvailableActorIdentifiersPacket = "AvailableActorIdentifiersPacket"`
 ### **AvailableCommandsPacket**
@@ -87,6 +89,8 @@ Represents the unique type of network packet.
 `ClientCacheStatusPacket = "ClientCacheStatusPacket"`
 ### **ClientCameraAimAssistPacket**
 `ClientCameraAimAssistPacket = "ClientCameraAimAssistPacket"`
+### **ClientMovementPredictionSyncPacket**
+`ClientMovementPredictionSyncPacket = "ClientMovementPredictionSyncPacket"`
 ### **ClientToServerHandshakePacket**
 `ClientToServerHandshakePacket = "ClientToServerHandshakePacket"`
 ### **CodeBuilderPacket**
@@ -159,10 +163,12 @@ Represents the unique type of network packet.
 `InventorySlotPacket = "InventorySlotPacket"`
 ### **InventoryTransactionPacket**
 `InventoryTransactionPacket = "InventoryTransactionPacket"`
+### **ItemRegistryPacket**
+`ItemRegistryPacket = "ItemRegistryPacket"`
 ### **ItemStackRequestPacket**
 `ItemStackRequestPacket = "ItemStackRequestPacket"`
-### **ItemStackResponse**
-`ItemStackResponse = "ItemStackResponse"`
+### **ItemStackResponsePacket**
+`ItemStackResponsePacket = "ItemStackResponsePacket"`
 ### **JigsawStructureDataPacket**
 `JigsawStructureDataPacket = "JigsawStructureDataPacket"`
 ### **LabTablePacket**
@@ -261,8 +267,8 @@ Represents the unique type of network packet.
 `PlayStatusPacket = "PlayStatusPacket"`
 ### **PositionTrackingDBClientRequestPacket**
 `PositionTrackingDBClientRequestPacket = "PositionTrackingDBClientRequestPacket"`
-### **PositionTrackingDBServerBroadcast**
-`PositionTrackingDBServerBroadcast = "PositionTrackingDBServerBroadcast"`
+### **PositionTrackingDBServerBroadcastPacket**
+`PositionTrackingDBServerBroadcastPacket = "PositionTrackingDBServerBroadcastPacket"`
 ### **PurchaseReceiptPacket**
 `PurchaseReceiptPacket = "PurchaseReceiptPacket"`
 ### **RefreshEntitlementsPacket**
@@ -371,10 +377,10 @@ Represents the unique type of network packet.
 `StopSoundPacket = "StopSoundPacket"`
 ### **StructureBlockUpdatePacket**
 `StructureBlockUpdatePacket = "StructureBlockUpdatePacket"`
-### **StructureTemplateDataExportPacket**
-`StructureTemplateDataExportPacket = "StructureTemplateDataExportPacket"`
 ### **StructureTemplateDataRequestPacket**
 `StructureTemplateDataRequestPacket = "StructureTemplateDataRequestPacket"`
+### **StructureTemplateDataResponsePacket**
+`StructureTemplateDataResponsePacket = "StructureTemplateDataResponsePacket"`
 ### **SubChunkPacket**
 `SubChunkPacket = "SubChunkPacket"`
 ### **SubChunkRequestPacket**
@@ -409,11 +415,13 @@ Represents the unique type of network packet.
 `UpdateBlockSyncedPacket = "UpdateBlockSyncedPacket"`
 ### **UpdateClientInputLocksPacket**
 `UpdateClientInputLocksPacket = "UpdateClientInputLocksPacket"`
+### **UpdateEquipPacket**
+`UpdateEquipPacket = "UpdateEquipPacket"`
 ### **UpdatePlayerGameTypePacket**
 `UpdatePlayerGameTypePacket = "UpdatePlayerGameTypePacket"`
 ### **UpdateSoftEnumPacket**
 `UpdateSoftEnumPacket = "UpdateSoftEnumPacket"`
 ### **UpdateSubChunkBlocksPacket**
 `UpdateSubChunkBlocksPacket = "UpdateSubChunkBlocksPacket"`
-### **WSConnectPacket**
-`WSConnectPacket = "WSConnectPacket"`
+### **UpdateTradePacket**
+`UpdateTradePacket = "UpdateTradePacket"`

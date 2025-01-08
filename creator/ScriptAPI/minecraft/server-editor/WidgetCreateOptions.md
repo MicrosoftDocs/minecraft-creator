@@ -41,9 +41,9 @@ Type: *boolean*
 Type: *boolean*
 
 ### **stateChangeEvent**
-`stateChangeEvent?: (arg: WidgetStateChangeEventData) => void;`
+`stateChangeEvent?: (arg0: WidgetStateChangeEventData) => void;`
 
-Type: (arg: [*WidgetStateChangeEventData*](WidgetStateChangeEventData.md)) => *void*
+Type: (arg0: [*WidgetStateChangeEventData*](WidgetStateChangeEventData.md)) => *void*
 
 ### **visible**
 `visible?: boolean;`

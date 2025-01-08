@@ -16,28 +16,28 @@ Manages callbacks that are connected to after a players game mode is changed.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PlayerGameModeChangeAfterEvent) => void): (arg: PlayerGameModeChangeAfterEvent) => void
+subscribe(callback: (arg0: PlayerGameModeChangeAfterEvent) => void): (arg0: PlayerGameModeChangeAfterEvent) => void
 `
 
 Adds a callback that will be called after a players game mode is changed.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*
+**Returns** (arg0: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PlayerGameModeChangeAfterEvent) => void): void
+unsubscribe(callback: (arg0: PlayerGameModeChangeAfterEvent) => void): void
 `
 
 Removes a callback from being called after a players game mode is changed.
 
 #### **Parameters**
-- **callback**: (arg: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*PlayerGameModeChangeAfterEvent*](PlayerGameModeChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

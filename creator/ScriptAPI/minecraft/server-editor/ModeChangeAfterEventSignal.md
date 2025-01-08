@@ -16,28 +16,28 @@ Manages callbacks that are connected to when a player editor mode changes.
 
 ### **subscribe**
 `
-subscribe(callback: (arg: ModeChangeAfterEvent) => void): (arg: ModeChangeAfterEvent) => void
+subscribe(callback: (arg0: ModeChangeAfterEvent) => void): (arg0: ModeChangeAfterEvent) => void
 `
 
 Subscribes the specified callback to an editor mode change after event.
 
 #### **Parameters**
-- **callback**: (arg: [*ModeChangeAfterEvent*](ModeChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ModeChangeAfterEvent*](ModeChangeAfterEvent.md)) => *void*
 
-**Returns** (arg: [*ModeChangeAfterEvent*](ModeChangeAfterEvent.md)) => *void*
+**Returns** (arg0: [*ModeChangeAfterEvent*](ModeChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: ModeChangeAfterEvent) => void): void
+unsubscribe(callback: (arg0: ModeChangeAfterEvent) => void): void
 `
 
 Removes the specified callback from an editor mode change after event.
 
 #### **Parameters**
-- **callback**: (arg: [*ModeChangeAfterEvent*](ModeChangeAfterEvent.md)) => *void*
+- **callback**: (arg0: [*ModeChangeAfterEvent*](ModeChangeAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

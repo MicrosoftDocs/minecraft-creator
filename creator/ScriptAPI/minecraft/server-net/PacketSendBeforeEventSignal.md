@@ -14,25 +14,25 @@ description: Contents of the @minecraft/server-net.PacketSendBeforeEventSignal c
 
 ### **subscribe**
 `
-subscribe(callback: (arg: PacketSendBeforeEvent) => void, options?: PacketEventOptions): (arg: PacketSendBeforeEvent) => void
+subscribe(callback: (arg0: PacketSendBeforeEvent) => void, options?: PacketEventOptions): (arg0: PacketSendBeforeEvent) => void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*PacketSendBeforeEvent*](PacketSendBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PacketSendBeforeEvent*](PacketSendBeforeEvent.md)) => *void*
 - **options**?: [*PacketEventOptions*](PacketEventOptions.md) = `null`
 
-**Returns** (arg: [*PacketSendBeforeEvent*](PacketSendBeforeEvent.md)) => *void*
+**Returns** (arg0: [*PacketSendBeforeEvent*](PacketSendBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: PacketSendBeforeEvent) => void): void
+unsubscribe(callback: (arg0: PacketSendBeforeEvent) => void): void
 `
 
 #### **Parameters**
-- **callback**: (arg: [*PacketSendBeforeEvent*](PacketSendBeforeEvent.md)) => *void*
+- **callback**: (arg0: [*PacketSendBeforeEvent*](PacketSendBeforeEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.

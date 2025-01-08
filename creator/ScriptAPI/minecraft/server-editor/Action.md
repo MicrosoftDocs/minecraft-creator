@@ -11,4 +11,4 @@ description: Contents of the .Action type alias.
 Full set of all possible raw actions
 
 ## Declaration
-`export type Action = NoArgsAction | MouseRayCastAction;`
+`export type Action = NoArgsAction | MouseRayCastAction | StatefulAction;`

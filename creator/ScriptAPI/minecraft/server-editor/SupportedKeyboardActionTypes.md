@@ -11,4 +11,4 @@ description: Contents of the .SupportedKeyboardActionTypes type alias.
 Full set of all possible keyboard actions
 
 ## Declaration
-`export type SupportedKeyboardActionTypes = RegisteredAction<NoArgsAction>;`
+`export type SupportedKeyboardActionTypes = RegisteredAction<NoArgsAction> | RegisteredAction<StatefulAction>;`

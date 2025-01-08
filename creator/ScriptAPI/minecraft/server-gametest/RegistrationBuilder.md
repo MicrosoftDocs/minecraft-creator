@@ -151,18 +151,21 @@ Notes:
 
 ### **structureLocation**
 `
-structureLocation(structureLocation: minecraftserver.Vector3): RegistrationBuilder
+structureLocation(structureLocation: minecraftserver.Vector3, structureDimension?: minecraftserver.DimensionType | string): RegistrationBuilder
 `
 
-Overrides the default structure placement with a specific location. If height (y) is set to Dimension.heightRange.max, the structure will snap to the ground.
+Overrides the default structure placement with a specific location and dimension. If height (y) is set to Dimension.heightRange.max, the structure will snap to the ground. If the dimension is not specified, it will run in the dimension the command was run from.
 
 #### **Parameters**
 - **structureLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **structureDimension**?: [*@minecraft/server.DimensionType*](../../minecraft/server/DimensionType.md) | *string* = `null`
 
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
 
 ### **structureName**
 `

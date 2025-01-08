@@ -5,25 +5,23 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.CameraTargetOptions Interface
 description: Contents of the @minecraft/server.CameraTargetOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CameraTargetOptions Interface
 
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
- 
-## Required Experiments
-- Focus Target Camera
-
+Used to target an entity with a free camera.
 
 ## Properties
 
 ### **offsetFromTargetCenter**
 `offsetFromTargetCenter?: Vector3;`
 
+Set an <x, y, z> offset from the target entity's center.
+
 Type: [*Vector3*](Vector3.md)
 
 ### **targetEntity**
 `targetEntity: Entity;`
+
+The singular entity you want to target.
 
 Type: [*Entity*](Entity.md)

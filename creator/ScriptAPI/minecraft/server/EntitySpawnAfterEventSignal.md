@@ -16,17 +16,17 @@ Registers a script-based event handler for handling what happens when an entity 
 
 ### **subscribe**
 `
-subscribe(callback: (arg: EntitySpawnAfterEvent) => void): (arg: EntitySpawnAfterEvent) => void
+subscribe(callback: (arg0: EntitySpawnAfterEvent) => void): (arg0: EntitySpawnAfterEvent) => void
 `
 
 Method to register an event handler for what happens when an entity spawns.
 
 #### **Parameters**
-- **callback**: (arg: [*EntitySpawnAfterEvent*](EntitySpawnAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EntitySpawnAfterEvent*](EntitySpawnAfterEvent.md)) => *void*
   
   Function that handles the spawn event.
 
-**Returns** (arg: [*EntitySpawnAfterEvent*](EntitySpawnAfterEvent.md)) => *void*
+**Returns** (arg0: [*EntitySpawnAfterEvent*](EntitySpawnAfterEvent.md)) => *void*
   
 Notes:
 - This function can't be called in read-only mode.
@@ -65,13 +65,13 @@ function logEntitySpawnEvent(
 
 ### **unsubscribe**
 `
-unsubscribe(callback: (arg: EntitySpawnAfterEvent) => void): void
+unsubscribe(callback: (arg0: EntitySpawnAfterEvent) => void): void
 `
 
 Unregisters a method that was previously subscribed to the subscription event.
 
 #### **Parameters**
-- **callback**: (arg: [*EntitySpawnAfterEvent*](EntitySpawnAfterEvent.md)) => *void*
+- **callback**: (arg0: [*EntitySpawnAfterEvent*](EntitySpawnAfterEvent.md)) => *void*
   
   Original function that was passed into the subscribe event, that is to be unregistered.
   
