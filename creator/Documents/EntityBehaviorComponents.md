@@ -8,11 +8,10 @@ ms.service: minecraft-bedrock-edition
 
 # Entity Behavior (AI) Components
 
-Now that we know how to use entity components to create a behavior pack, let's take a look at one of the specific ways we can use those components to get our custom entities to behave a certain way. Behavior AI components determine how entities act in the game by controlling how they move, interact with objects or other entities, or respond to certain events. Here are some key points to keep in mind:
+Entity behavior components are one of the specific ways we can use components to get entities to behave a certain way. Behavior components determine how entities act in the game by controlling how they move, interact with objects or other entities, or respond to certain events. Here are some key points to keep in mind:
 
 - Behavior components are defined in `.json` files as part of a behavior pack.
-- Behavior components are defined under the `minecraft:behavior` property in the entity's `.json` file.
-- Behavior components are included under an entity's `behavior` or `goals` section to define specific actions or responses to events.
+- Behavior components start with `minecraft:behavior`.
 - Minecraft Bedrock edition includes many built-in behavior components. For a full list, see [Entity Documentation - AI Goal Component List](../Reference/Content/EntityReference/Examples/AIGoalList.md).
 - Many behavior components accept parameters to fine-tune an entity's actions or responses to events, such as `speed_multiplier` or `target_distance`.
 
@@ -24,9 +23,9 @@ As part of a behavior pack, behavior components are defined within an entity's `
 
 ### Behavior Priority
 
-Behavior components are evaluated independently, which means that different behaviors might be evaluated simultaneously. This can either help to create a seamless behavior, where two harmonious actions are performed at the same time, or it can cause two incompatible behaviors to compete. In the case where incompatible behaviors compete, you may see errors or notice that your entity's behaviors don't work, at all.
+Behavior components are evaluated independently, which means that different behaviors might be evaluated simultaneously. This can either help to create a seamless behavior, where two harmonious actions are performed at the same time, or it can cause two incompatible behaviors to compete. In the case where incompatible behaviors compete, you may see errors or notice that your entity's behaviors don't work in the way you expect.
 
-To resolve this issue, it's important to know that behavior components work on a priority system. Behavior components with a lower priority value are executed first - so a component with a `priority` of `1` would execute *before* a component with a `priority` of `2`. Behavior components also **resolve** on the same prioirty, meaning that, even if a component with a higher `priority` value meets the conditions for execution, the component with the lower `priority` value would resolve first before the next component is allowed to start. This helps to create a sequence of behaviors and seamless switching between behaviors.
+To resolve this issue, it's important to know that behavior components work on a priority system. Behavior components with a lower priority value are executed first - so a component with a `priority` of `1` would execute *before* a component with a `priority` of `2`. Behavior components also **resolve** on the same priority, meaning that, even if a component with a higher `priority` value meets the conditions for execution, the component with the lower `priority` value would resolve first before the next component is allowed to start. This helps to create a sequence of behaviors and seamless switching between behaviors.
 
 ### Adding Custom Behavior
 
@@ -73,3 +72,5 @@ Now that you know how to add behavior components and design custom behavior, let
 | minecraft:behavior.breed | Enables breeding for an entity. | Passive mobs |
 | minecraft:behavior.follow_owner | Makes an entity follow its owner. | Tamed mobs |
 | minecraft:behavior.sit | Makes an entity sit on command. | Tamed mobs |
+
+Go give 
