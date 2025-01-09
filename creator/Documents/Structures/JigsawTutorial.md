@@ -31,10 +31,14 @@ If you want to follow the video exactly, you should know how to use scripts to d
 - [Introduction to Scripting](../ScriptingIntroduction.md)
 - [Getting Started with Scripting](../ScriptingGettingStarted.md)
 
+## Jigsaw Basic Dungeon Sample Pack
+
+And, of course, you can always try out the [Jigsaw - Basic Dungeon sample pack](https://github.com/microsoft/minecraft-samples/tree/main/jigsaws/basic_dungeon) first.
+
 ### Jigsaw Behavior Pack
 
-> ![NOTE]
-> For your first structures, create them with brightly colored or glowing blocks that will be easier to find in a world when you generate the structures.
+![NOTE]
+> For your first tests, try building them with brightly colored or glowing blocks that will be easy to find.
 
 1. Start with the [behavior_pack_sample](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) from the Minecraft samples on Github.
 
@@ -50,17 +54,19 @@ If you want to follow the video exactly, you should know how to use scripts to d
 
 1. After you create your smaller structures, put jigsaw blocks on the sides where you want them to connect with other structures.
 
-This is the plan that was used in the video:
+   This is the plan that was used in the video:
 
-![image showing a variety of structures with jigsaw blocks placed at connection points along at least two of the walls of each structure](Media/jigsaw_placement_plan.png)
+   ![image showing a variety of structures with jigsaw blocks placed at connection points along at least two of the walls of each structure](Media/jigsaw_placement_plan.png)
 
-Notice how there are only three large structures, according to the names: 21room, nshall, and ewhall. 
+   Notice how there are only three large structures, according to the names: 21room, nshall, and ewhall. 
 
-Don't worry about the internal structures of messhall-interior or sleepingarea-interior, or chests-interior, yet. That will be covered later in the advanced tutorial.
-
-For now, maybe make only two structures just to keep things simple.
+   Don't worry about the internal structures of messhall-interior or sleepingarea-interior, or chests-interior, yet. That will be covered later.
 
 3. Use structure blocks to save and export each structure with meaningful names that help you figure out how they should fit together. 
+
+   In the video, "nshall" means "north-south hall", meaning that hallway is intended to connect to the top or bottom jigsaw blocks of the larger structures. It does not actually involve XYZ game coordinates, if you're wondering.
+
+   Also notice that larger structures can connect to other larger structures. It all depends on what template pools you assign to the jigsaw blocks.
 
 4. Export the structures to the **structures** folder in your behavior pack.
 
@@ -255,7 +261,7 @@ When you start entering the command, it should auto-populate after your namespac
 
 If you want a bit more control, use the `/place` command to generate a jigsaw structure at your location.
 
-Your values will vary, depending on your identifier and name for your pool and jigsawTarget.
+Your values will vary, depending on your identifier and name for your pool and `jigsawTarget`.
 
 The schema is:
 
@@ -346,7 +352,7 @@ The interior structures will be generated from the **5x5int.json** template pool
 }
 ```
 
-After you get the new bits added in, try it out! What else could you do with jigsaw blocks? 
+After you get the new bits added in, try it out! What other structures could you generate randomly?
 
 ## What's Next?
 
