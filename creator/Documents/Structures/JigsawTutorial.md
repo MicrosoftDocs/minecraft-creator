@@ -31,16 +31,12 @@ If you want to follow the video exactly, you should know how to use scripts to d
 - [Introduction to Scripting](../ScriptingIntroduction.md)
 - [Getting Started with Scripting](../ScriptingGettingStarted.md)
 
-## Jigsaw Basic Dungeon Sample Pack
-
-And, of course, you can always try out the [Jigsaw - Basic Dungeon sample pack](https://github.com/microsoft/minecraft-samples/tree/main/jigsaws/basic_dungeon) first.
-
-### Jigsaw Behavior Pack
+## Jigsaw Behavior Pack
 
 ![NOTE]
-> For your first tests, try building them with brightly colored or glowing blocks that will be easy to find.
+> There are a lot of "moving parts" to this feature, so here is a link to the [Jigsaw - Basic Dungeon sample pack](https://github.com/microsoft/minecraft-samples/tree/main/jigsaws/basic_dungeon) that goes along with the video, just in case you get lost along the way. This behavior pack is different from the starter ["Angry Cow" behavior pack](../BehaviorPack.md) mentioned in step 1.
 
-1. Start with the [behavior_pack_sample](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) from the Minecraft samples on Github.
+1. If you don't want to do everything from scratch, you can start with the [behavior_pack_sample](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) from the Minecraft samples on Github.
 
 1. Download the "angry cow" sample behavior pack, pop it into the **development_behavior_pack** folder in your **com.mojang** folder. You won't need a resource pack.
 
@@ -49,6 +45,9 @@ And, of course, you can always try out the [Jigsaw - Basic Dungeon sample pack](
 1. Make sure you know how to get back to your behavior pack files. We're going to edit them and do lots of experimentation.
 
 ### Create the Structures for Jigsaw Purposes
+
+![NOTE]
+> For your first structures, try building them with brightly colored or glowing blocks that will be easy to find.
 
 1. For the easiest creation experience, make another world in Minecraft: It should be creative mode, with no mobs, no weather, no daylight cycles, cheats toggled on, and the **Data-Driven Jigsaw Structures** experiment toggled on.
 
