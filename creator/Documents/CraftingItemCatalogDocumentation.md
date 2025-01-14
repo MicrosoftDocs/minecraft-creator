@@ -34,7 +34,7 @@ The name of the group serves two purposes:
 
 - The second is that it is the localization string that is display when you hover over your group name. The localization string needs to include the namespace.
 
-## Example - item_catalog/crafting_item_catalog.json
+**Example 1: item_catalog/crafting_item_catalog.json**
 
 This is an example of adding an entirely new group to the construction category
 
@@ -81,7 +81,7 @@ You can also add items to an existing group. You specify this the same way as ma
 
 At the end of this page, there is the list of all existing groups currently used by Minecraft Bedrock.
 
-## Example - item_catalog/crafting_item_catalog.json
+**Example 2: item_catalog/crafting_item_catalog.json**
 
 ```json
 {
@@ -114,7 +114,7 @@ Our new item "3" shows up when expanding the helmet group.
 
 You don't need to add your items to a group, you can add them to a loose group. These aren't represented with a collapsible group.
 
-## Example - item_catalog/crafting_item_catalog.json
+**Example 3: item_catalog/crafting_item_catalog.json**
 
 ```json
 {
@@ -146,7 +146,7 @@ Items 4, 5, and 6 are all added outside of a group as loose items.
 
 In all the previous examples we've only done one group and one category at a time. You are able to add multiple groups within a category, as well as add to multiple categories. The order in which groups are added to a category is the order that they will show up in game.
 
-## Example - item_catalog/crafting_item_catalog.json
+**Example 4: item_catalog/crafting_item_catalog.json**
 
 The following is an accumulation of all the above examples.
 
