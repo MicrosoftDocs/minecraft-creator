@@ -37,6 +37,4 @@ A block's behavior pack JSON file must be set up in a certain way with specific 
 |description|*not set*|JSON Object|List of block characteristics that are applicable to all permutations of the block. The description MUST contain an identifier; the other fields are optional. View the other fields in [Block Description](BlockDescription.md).|
 |components|*not set*|JSON Object|List of all components used in this block. View the list of components in [Block Components List](../Examples/BlockComponents/BlockComponentsList.md)
 
-(../BlockComponents/BlockComponentsList.md).
-
 Another section that may be found inside the `"minecraft:block"` object is the "permutations" section. This section can hold different versions of a block, allowing you to specify which components you want the block to have under certain conditions.
