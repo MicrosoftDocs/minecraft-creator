@@ -11,7 +11,15 @@ description: Contents of the .CoreActionBarItemType enumeration.
 Predefined action bar items
 
 ## Constants
+### **Export**
+`Export = editor:actionBarItem:export`
+### **Locate**
+`Locate = editor:actionBarItem:locate`
+### **Playtest**
+`Playtest = editor:actionBarItem:playtest`
 ### **Redo**
 `Redo = editor:actionBarItem:redo`
+### **Settings**
+`Settings = editor:actionBarItem:settings`
 ### **Undo**
 `Undo = editor:actionBarItem:undo`

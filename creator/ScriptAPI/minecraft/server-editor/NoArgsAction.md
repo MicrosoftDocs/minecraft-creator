@@ -12,6 +12,6 @@ An action which needs no additional client side arguments on execute
 
 ## Declaration
 `export type NoArgsAction = {
-    actionType: ActionTypes.NoArgsAction;
+    readonly actionType: ActionTypes.NoArgsAction;
     readonly onExecute: () => void;
 };`
