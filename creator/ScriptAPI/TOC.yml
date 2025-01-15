@@ -14,8 +14,8 @@
       href: minecraft/debug-utilities/minecraft-debug-utilities.md
     - name: minecraft/debug-utilities Changelog
       href: minecraft/debug-utilities/changelog.md
-    - name: handleCounts
-      href: minecraft/debug-utilities/handleCounts.md
+    - name: HandleCounts
+      href: minecraft/debug-utilities/HandleCounts.md
     - name: PluginStats
       href: minecraft/debug-utilities/PluginStats.md
     - name: RuntimeStats
@@ -1002,6 +1002,8 @@
       href: minecraft/server-editor/ColorPickerPropertyItemVariant.md
     - name: ComboBoxPropertyItemDataType
       href: minecraft/server-editor/ComboBoxPropertyItemDataType.md
+    - name: ContinuousActionState
+      href: minecraft/server-editor/ContinuousActionState.md
     - name: CoreActionBarItemType
       href: minecraft/server-editor/CoreActionBarItemType.md
     - name: CoreMenuType

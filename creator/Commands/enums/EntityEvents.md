@@ -549,6 +549,7 @@ Entity starts roaring
 Entity starts transforming
 - `minecraft:start_twitching`
 - `minecraft:start_unrolling`
+- `minecraft:started_riding`
 - `minecraft:stop_aggro`
 Entity stops being aggravated
 - `minecraft:stop_celebrating`
@@ -562,6 +563,7 @@ Entity stops Johnny action
 - `minecraft:stop_sitting`
 - `minecraft:stop_transforming`
 Entity stops transforming
+- `minecraft:stopped_riding`
 - `minecraft:switch_to_melee`
 Entity switches to melee attack
 - `minecraft:switch_to_ranged`

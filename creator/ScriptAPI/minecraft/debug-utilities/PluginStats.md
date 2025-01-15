@@ -11,6 +11,6 @@ description: Contents of the @minecraft/debug-utilities.PluginStats class.
 ## Properties
 
 ### **plugins**
-`plugins: handleCounts[];`
+`plugins: HandleCounts[];`
 
-Type: [*handleCounts*](handleCounts.md)[]
+Type: [*HandleCounts*](HandleCounts.md)[]

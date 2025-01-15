@@ -28,7 +28,7 @@ Contains debug utility functions.
 - `1.0.0-beta`
 
 ## Interfaces
-- [handleCounts](handleCounts.md)
+- [HandleCounts](HandleCounts.md)
 - [PluginStats](PluginStats.md)
 - [RuntimeStats](RuntimeStats.md)
 

@@ -12,6 +12,6 @@ An action which returns the ray corresponding to a vector from the users mouse c
 
 ## Declaration
 `export type MouseRayCastAction = {
-    actionType: ActionTypes.MouseRayCastAction;
+    readonly actionType: ActionTypes.MouseRayCastAction;
     readonly onExecute: (mouseRay: Ray, mouseProps: MouseProps) => void;
 };`
