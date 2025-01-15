@@ -248,12 +248,11 @@ Both the following examples for the item and block will add these to the planks 
 }
 ```
 
-
 ## Item and Block Format Versions Before 1.21.60
 
 For blocks and items if you did not specify `menu_category`, or left the `category` field blank, the category would default to the "Items" category. This means that if you were to add this block or item to a category other than "Items", you will get the warning mentioned above.
 
-# Vanilla Groups
+### Vanilla Groups
 
 This is a list of all the groups used by Vanilla.
 
