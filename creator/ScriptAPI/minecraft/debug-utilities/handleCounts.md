@@ -3,10 +3,10 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/debug-utilities.handleCounts Interface
-description: Contents of the @minecraft/debug-utilities.handleCounts class.
+title: minecraft/debug-utilities.HandleCounts Interface
+description: Contents of the @minecraft/debug-utilities.HandleCounts class.
 ---
-# handleCounts Interface
+# HandleCounts Interface
 
 ## Properties
 

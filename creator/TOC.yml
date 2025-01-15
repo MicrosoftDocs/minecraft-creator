@@ -233,7 +233,9 @@
         - name: Introduction to Structure Blocks
           href: Documents/Structures/IntroductionToStructureBlocks.md
         - name: Introduction to Jigsaw Structures
-          href: Documents/Structures/IntroductionToJigsawStructures.md 
+          href: Documents/Structures/IntroductionToJigsawStructures.md
+        - name: The Jigsaw Tutorial
+          href: Documents/Structures/JigsawTutorial.md
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
         - name: Data-Driven Overworld Height and Void Generation

@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Introduction to Jigsaw Structures
 
-In this overview, you will be learning about Jigsaw Structures! Jigsaw Structures are large structures comprised of multiple structure templates. These structure templates contain Jigsaw Blocks which specify how each structure template should connect to one another.
+In this overview, you will be learning about Jigsaw Structures! Jigsaw Structures are large structures composed of multiple structures generated from templates. These structure templates contain Jigsaw Blocks which specify how each structure template should connect to one another when they are created in the game.
 
 Jigsaw Structures can generate randomly in the world. Examples of Vanilla Jigsaw Structures include Trail Ruins and Trial Chambers.
 
@@ -40,7 +40,7 @@ Jigsaw Structures are defined using these four JSON files:
 - mystructureset.json
 - mytemplatepool.json
 
-These files are stored within the worldgen folder of the behavior pack in this structure:
+These files are stored within the **worldgen** folder of the behavior pack in this structure:
 
 ```
 behavior_packs 
@@ -58,11 +58,15 @@ behavior_packs
 
 ## Processors
 
-Processors are functions that run when placing a Structure Template in the world. Currently, the only supported processor is the Block Rules processor, which describes how individual blocks of Structure Templates should be modified when placed in the world. For example, you might want to randomly replace half of the Cobblestone blocks with Mossy Cobblestone. Or you might want to replace Gravel with Suspicious Gravel and add a loot table.  
+Processors are functions that run when placing a Structure Template in the world. Currently, the only supported processor is the Block Rules processor, which describes how individual blocks of Structure Templates should be modified when placed in the world. For example, you might want to randomly replace half of the cobblestone blocks with mossy cobblestone. Or you might want to replace gravel with suspicious gravel and add a loot table.
 
 The example below shows how a Structure Template can be dynamically modified at generation time to replace blocks and add loot tables.
 
-The first rule randomly replaces 20% of Gravel blocks with Dirt blocks. The second rule replaces 10% of Gravel blocks with Coarse Dirt blocks. The third rule replaces 10% of Mud Bricks blocks with Packed Mud. Finally, the fourth rule replaces a single random Gravel block with a Suspicious Gravel block and adds a loot table to it.
+The first rule randomly replaces 20% of Gravel blocks with Dirt blocks. The second rule replaces 10% of Gravel blocks with Coarse Dirt blocks. 
+
+The third rule replaces 10% of Mud Bricks blocks with Packed Mud. 
+
+Finally, the fourth rule replaces a single random Gravel block with a Suspicious Gravel block and adds a loot table to it.
 
 - [Reference: Worldgen Processors](./../../Reference/Content/WorldgenReference/Examples/JigsawProcessors.md)
 
@@ -216,22 +220,28 @@ Jigsaw Structures placed (red) with 32 spacing, (blue) 4 separation. Each pixel 
 { 
   "format_version": "1.21.20", 
   "minecraft:structure_set": { 
-    "description": { 
-      "identifier": "minecraft:trail_ruins" 
-    }, 
-    "placement": { 
-      "type": "minecraft:random_spread", 
-      "salt": 83469867, 
-      "separation": 8, 
-      "spacing": 34, 
-      "spread_type": "linear" 
-    }, 
-    "structures": [ 
-      { 
-        "structure": "minecraft:trail_ruins", 
-        "weight": 1 
-      } 
-    ] 
+     "description": { 
+       "identifier": "minecraft:trail_ruins" 
+     }, 
+     "placement": { 
+       "type": "minecraft:random_spread", 
+       "salt": 83469867, 
+       "separation": 8, 
+       "spacing": 34, 
+       "spread_type": "linear" 
+     }, 
+     "structures": [ 
+       { 
+        "structure": "minecraft:trail_ruins", 
+        "weight": 1 
+       } 
+     ] 
   } 
 } 
 ```
+
+## What's Next?
+
+Now that you have read about the parts, let's learn how to use jigsaw structures.
+
+> [A Jigsaw Tutorial](JigsawTutorial.md)

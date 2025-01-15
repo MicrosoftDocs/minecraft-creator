@@ -11,6 +11,8 @@ description: Contents of the .ActionTypes enumeration.
 The types of actions that are supported. This type corresponds to the expected arguments passed by the onExecute handler of an action.
 
 ## Constants
+### **ContinuousAction**
+`ContinuousAction = ContinuousAction`
 ### **MouseRayCastAction**
 `MouseRayCastAction = MouseRayCastAction`
 ### **NoArgsAction**

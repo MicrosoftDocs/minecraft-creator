@@ -245,6 +245,10 @@ The first folder is your creator name, and the second is the name of the add-on 
 <behavior pack name> -> trading -> <creator name> -> <pack name> -> <trade table file name>.
 ```
 
+### JSON UI and Custom Fonts overrides are disalllowed
+
+Because JSON UI (i.e., files in <resource pack name>/ui) and fonts (i.e., files in <resource pack name>/font) are not overridable in a cooperative manner - such that multiple add-ons can customize the same asset - cooperative add-ons should not override any JSON UI or font glyph files.
+
 ### Folder Structures
 
 For folders like textures, functions, loot tables, sounds, and trading we recommend that your folder structure appear like this, textures-> <creator_name> -> <pack_name>.
