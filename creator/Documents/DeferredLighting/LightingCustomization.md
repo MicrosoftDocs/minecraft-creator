@@ -70,13 +70,20 @@ The `"emissive"` object allows for some control over how emissive light sources 
 
 >- `"desaturation"` a factor from [0-1] that controls how much the albedo of a given pixel is desaturated when computing the color of emissive light. A value of 0 results in no desaturation, while a value of 1 results in full desaturation of the albedo color.
 
+## Sky
+
+The `"sky"` object allows you to control some properties of the sky in terms of its contribution as a light source. The sky contributes significantly to indirect diffuse (aka, indirect bounce light from the sky) and to indirect specular (aka, reflections of the sky, clouds, etc...).
+
+>- `"intensity"` a factor from [0.1-1] that controls how much sky light is factored into the indirect term for both diffuse and specular. A value of 1.0 will cause the sky to contribute more to indirect light and will result in shadows being less dark, while a value of 0.1 will result in darker shadows, because there is less indirect light contributed from the sky. The default value, if not provided, is 0.1.
+
 ## Lighting JSON Schemas
 
 File location: **lighting/global.json**
 
 Schema Version|Updates
 --|--
-`1.21.60`|Changed the data type for sun and moon colors from RGBA to RGB.
+`1.21.70`|Added a new object for controlling the sky intensity
+`1.21.60`|Changed the data type for sun and moon colors from RGBA to RGB
 `1.21.40`|N/A
 
 ```json
@@ -110,6 +117,10 @@ Schema Version|Updates
         {
             float "illuminance",  // How bright the ambient light is; measured in lux (lx)
             color "color" // The RGB color that the ambient light contributes to surface lighting; supports RGB array or HEX string
+        },
+        object "sky"
+        {
+            float "intensity" // Scales how much energy the sky contributes to lighting; values range from [0.1, 1]
         }
     }
 }
@@ -163,7 +174,7 @@ File location: **pbr/global.json**
 
 ```json
 {
-    "format_version": "1.21.60",
+    "format_version": "1.21.70",
     "minecraft:lighting_settings": {
         "description": {
             "identifier": "my_pack:default_lighting"
@@ -193,6 +204,9 @@ File location: **pbr/global.json**
         "ambient": {
             "illuminance": 0.02,
             "color": "#ffffff"
+        },
+        "sky": {
+            "intensity": 0.1
         }
     }
 }
