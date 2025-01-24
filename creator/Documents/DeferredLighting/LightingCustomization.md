@@ -74,7 +74,7 @@ The `"emissive"` object allows for some control over how emissive light sources 
 
 The `"sky"` object allows you to control some properties of the sky in terms of its contribution as a light source. The sky contributes significantly to indirect diffuse (aka, indirect bounce light from the sky) and to indirect specular (aka, reflections of the sky, clouds, etc...).
 
->- `"intensity"` a factor from [0.1-1] that controls how much sky light is factored into the indirect term for both diffuse and specular. A value of 1.0 will cause the sky to contribute more to indirect light and will result in shadows being less dark, while a value of 0.1 will result in darker shadows, because there is less indirect light contributed from the sky. The default value, if not provided, is 0.1.
+>- `"intensity"` a factor from [0.1-1] that controls how much sky light is factored into the indirect term for both diffuse and specular. A value of 1.0 will cause the sky to contribute more to indirect light and will result in shadows being less dark, while a value of 0.1 will result in darker shadows, because there is less indirect light contributed from the sky. The default value, if not provided, is 1.0.
 
 ## Lighting JSON Schemas
 
@@ -206,7 +206,7 @@ File location: **pbr/global.json**
             "color": "#ffffff"
         },
         "sky": {
-            "intensity": 0.1
+            "intensity": 1.0
         }
     }
 }
