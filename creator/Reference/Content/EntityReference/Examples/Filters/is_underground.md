@@ -70,7 +70,7 @@ Returns true when the subject entity is underground. An entity is considered und
 
 ```json
 {
-    "test": "is_underwater",
+    "test": "is_underground",
     "subject": "self",
     "operator": "==",
     "value": true
