@@ -1,12 +1,12 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: A Features Tutorial
-description: "How to add a feature to a world."
+title: Features Tutorial - A Simple Feature
+description: "How to add a simple feature to a world with a behavior pack."
 ms.service: minecraft-bedrock-edition
 ---
 
-# Using Features
+# Features Tutorial - a Simple Feature
 
 This tutorial explains how to create and test a features behavior pack using the **hot_air_balloon** sample feature from the [Minecraft Custom Features Project sample pack](https://github.com/microsoft/minecraft-samples/tree/main/custom_features).
 
@@ -30,8 +30,7 @@ If you are new to the world of creating, exporting, and importing structures, we
 
 1. Inside custom_features, find the **example_feature_set** folder, we want only the **behavior_packs** folder and the **resource_packs** folder right now.
 
-
-## 1. hot_air_balloon - Behavior Pack Structure
+## hot_air_balloon - Behavior Pack Structure
 
 This example uses only a behavior pack, so [create one of those](BehaviorPack.md) and call it something like **hot_air_balloon_BP**.
 
@@ -48,6 +47,10 @@ The pack should have this structure:
       - hot_air_balloon.mcstructure
   - manifest.json
 ```
+
+Go ahead and put the manifest.json file in there.
+
+The path and contents for the other files are next.
 
 ### feature_rules/hot_air_balloon_feature_rules.json
 
@@ -187,7 +190,14 @@ This graphic shows how the feature is distributed in relation to the surface are
 
 ## What Success Looks Like...
 
-This feature has its own light source (blue soul flames!), which is why I chose it for this tutorial - it's easier to find your feature at night.
+This feature has its own light source (blue soul flames!) so it's easier to find your feature at night.
 
 ![Image of a forest at night with dozens of beautiful glowing balloons hanging over it. ](Media/Features/features_tutorial_hot_air_balloon_vista_night.png)
 
+
+## What's Next?
+
+Want to work with a more complicated feature? 
+
+> [!div class="nextstepaction"]
+> [Features Tutorial Advanced](FeaturesTutorial_2.md)
