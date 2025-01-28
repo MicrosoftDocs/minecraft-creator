@@ -1,7 +1,7 @@
 ---
 author: v-kimjeff
 ms.author: mikeam
-title: Introduction to Sound
+title: Introduction to Enchantments
 description: "A guide to Enchantments in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ---
