@@ -96,11 +96,27 @@ Opening the chest should result in your custom sound playing. If that doesn't ha
 
 ## Adding New Sounds
 
-So four different types of rain sounds aren't enough for you? Then let's discover how to add brand new sounds to Minecraft. For this task, we'll dive into the **sound_defnitions.json** file. If you don't already have one, create this file under **com.mojang > development_resource_packs > custom_sound_pack > sounds** and edit it.
+So four different types of rain sounds aren't enough for you? Then let's discover how to add brand new sounds to Minecraft. For this task, we'll dive into the **sounds.json** and **sound_defnitions.json** files. If you don't already have them, create **sounds.json** under **com.mojang > development_resource_packs > custom_sound_pack** and **sound_definitions.json** under **com.mojang > development_resource_packs > custom_sound_pack > sounds**.
 
 Use the [sample sounds.json file in the vanilla resource pack](https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/sounds/sound_definitions.json) to locate the category of sound you want to add.
 
 So now, instead of replacing the sound of a chest opening, like we did earlier, let's say we want to have two different sounds that play randomly when we open a chest. Navigate back to your **com.mojang > development_resource_packs > custom_sound_pack > sounds > random** folder and rename **chestopen.ogg** to **chestopen2.ogg**
+
+In **sounds.json**, add the following code:
+
+```json
+{
+    "individual_event_sounds" : {
+        "events" : {
+            "chest.open" : {
+            "pitch" : [ 0.90, 1.0 ],
+            "sound" : "random.chestopen",
+            "volume" : 0.50
+            }
+        }
+    }
+}
+```
 
 In **sound_definitions.json**, add the following code:
 
