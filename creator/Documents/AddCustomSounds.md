@@ -109,9 +109,9 @@ In **sounds.json**, add the following code:
     "individual_event_sounds" : {
         "events" : {
             "chest.open" : {
-            "pitch" : [ 0.90, 1.0 ],
-            "sound" : "random.chestopen",
-            "volume" : 0.50
+                "pitch" : [ 0.90, 1.0 ],
+                "sound" : "random.chestopen",
+                "volume" : 0.50
             }
         }
     }
