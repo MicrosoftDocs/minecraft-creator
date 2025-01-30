@@ -45,7 +45,7 @@ You will be making changes in both a resource pack and a behavior pack to get cu
 
 :::image type="content" source="Media/AddCustomDieBlock/AddCustomBlock2.png" alt-text="Image of file structure for a completed custom block":::
 
-Imagine that the behavior pack contains all of the information about a block's behavior. The behavior pack will contain the <custom_block>.json file that specifies components that give a block specific behaviors such as friction, flammability, desctructibility, and more. Components can also control some visual elements such as geometry, materials, render methods, and lighting.
+Imagine that the behavior pack contains all of the information about a block's behavior. The behavior pack will contain the <custom_block>.json file that specifies components that give a block specific behaviors such as friction, flammability, destructibility, and more. Components can also control some visual elements such as geometry, materials, render methods, and lighting.
 
 >[!Note]
 > If components are given in the behavior pack to control the visual properties of a block, they will override the visual properties specified for that block in the blocks.json file. That's why blocks.json becomes optional once you start relying on behavior packs more heavily.
