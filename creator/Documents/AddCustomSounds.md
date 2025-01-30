@@ -142,7 +142,7 @@ When we test our sound again, you should notice that opening a chest will play o
 
 You can also add custom sounds that aren't played by in-game events. You can use the `/playsound` command to play any sound in the game, including the sounds added in your resource packs. Even if your sounds don't play automatically, you can still play them manually or use resources like command blocks to play your sounds at appropriate times based on your world and game modes.
 
-To learn more about the `/playsound` command, see the [reference docs](./commands/playsound.md).
+To learn more about the `/playsound` command, see the [reference docs](../Commands/commands/playsound.md).
 
 ## Next Steps
 
