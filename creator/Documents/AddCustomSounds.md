@@ -26,7 +26,7 @@ You will also need the following:
 
 ## Create a Resource Pack
 
-The first step in our journey is to create a resource pack to hold your custom sounds. If you completed the prerequisites as suggested (hint, hint), you're already familiar with this process.
+The first step in our journey is to create a resource pack to hold your custom sounds. If you completed the prerequisites as suggested (hint, hint), you're already familiar with this process. Name your resource pack **custom_sound_pack**
 
 For a quick refresher, see [Introduction to Resource Packs](ResourcePack.md).
 
@@ -51,6 +51,8 @@ When you're finished, your file structure will look like this:
 
 :::image type="content" source="Media/AddCustomSounds/sound-pack-structure.png" alt-text="Visual representation of the file structure for custom sounds.":::
 
+You'll need to create more sub-folders along the way, but we'll get into that at in a bit.
+
 ## Finding the Right Sound
 
 The stage is set, and now it's time to get your custom sound ready! For our example we will be using [Audacity](https://www.audacityteam.org/), however any audio processing software will work as long as it can export files in a .OGG format.
@@ -65,9 +67,20 @@ If you'd like an example sound file to use, download [this sample .OGG file](htt
 
 Congratulations, things are moving along nicely. You have a sound to replace, a new sound ready, and your resource pack is set up. Now it's time to figure out where your sound will live.
 
+The [vanilla resource pack](https://github.com/Mojang/bedrock-samples/tree/main/resource_pack/sounds) contains every sound in vanilla Minecraft and this folder will show you how to structure your custom resource pack so that you can replace the sounds you want.
+
 From here, you COULD scroll through the list of every Minecraft sound and find the sound file for a chest opening. Instead, we recommend using **CTRL+F** to find the file. For our example, the file we are looking for is the **chestopen** file; it happens to be located at **sounds/random/chestopen**.
 
 Now we know where to place our custom sound file. Navigate to **com.mojang > development_resource_packs > custom_sound_pack > sounds**. In the **sounds** folder, create a new folder named **random** and place your custom **chestopen.ogg** file into it.
+
+If you want to replace other sounds, locate them in the vanilla resource pack and recreate the folder structure in your resource pack. For example, if you want to change one of the sounds for rain in your world, you'll need to create the following sub-folders:
+
+**com.mojang > development_resource_packs > sounds > ambient > weather**
+
+Inside the weather folder you can add [files for the rain sounds you want to replace](https://github.com/Mojang/bedrock-samples/tree/main/resource_pack/sounds/ambient/weather).
+
+>[!Note]
+> You must give your new sound file the *exact same name* as the file you want to replace; however, you *do not* need to use the same format. So you can replace **rain1.fsb** with **rain1.ogg**, as long as the file name before the extension matches exactly.
 
 ## Testing Your Sound
 
@@ -80,6 +93,56 @@ Opening the chest should result in your custom sound playing. If that doesn't ha
 
 - Checking your file structure
 - Checking the file type of your custom sound file
+
+## Adding New Sounds
+
+So four different types of rain sounds aren't enough for you? Then let's discover how to add brand new sounds to Minecraft. For this task, we'll dive into the **sounds.json** and **sound_defnitions.json** files. If you don't already have them, create **sounds.json** under **com.mojang > development_resource_packs > custom_sound_pack** and **sound_definitions.json** under **com.mojang > development_resource_packs > custom_sound_pack > sounds**.
+
+Use the [sample sounds.json file in the vanilla resource pack](https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/sounds/sound_definitions.json) to locate the category of sound you want to add.
+
+So now, instead of replacing the sound of a chest opening, like we did earlier, let's say we want to have two different sounds that play randomly when we open a chest. Navigate back to your **com.mojang > development_resource_packs > custom_sound_pack > sounds > random** folder and rename **chestopen.ogg** to **chestopen2.ogg**
+
+In **sounds.json**, add the following code:
+
+```json
+{
+    "individual_event_sounds" : {
+        "events" : {
+            "chest.open" : {
+                "pitch" : [ 0.90, 1.0 ],
+                "sound" : "random.chestopen",
+                "volume" : 0.50
+            }
+        }
+    }
+}
+```
+
+In **sound_definitions.json**, add the following code:
+
+```json
+"format_version" : "1.20.20",
+"sound_definitions" : {
+    "random.chestopen" : {
+        "__use_legacy_max_distance" : "true",
+        "category" : "block",
+        "max_distance" : null,
+        "min_distance" : null,
+        "sounds" : [ 
+            "sounds/random/chestopen",
+            "sounds/random/chestopen2"
+        ]
+    }
+}
+```
+
+When we test our sound again, you should notice that opening a chest will play one of your two chest open sounds randomly! 
+
+### Using the /playsound command
+
+You can also add custom sounds that aren't played by in-game events. You can use the `/playsound` command to play any sound in the game, including the sounds added in your resource packs. Even if your sounds don't play automatically, you can still play them manually or use resources like command blocks to play your sounds at appropriate times based on your world and game modes.
+
+To learn more about the `/playsound` command, see the [reference docs](../Commands/commands/playsound.md).
 
 ## Next Steps
 
