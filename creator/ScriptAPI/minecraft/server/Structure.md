@@ -19,6 +19,18 @@ The name of the structure. The identifier must include a namespace. For structur
 
 Type: *string*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **isValid**
+`read-only isValid: boolean;`
+
+Returns whether the Structure is valid. The Structure may become invalid if it is deleted.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **size**
 `read-only size: Vector3;`
 
@@ -33,7 +45,6 @@ Notes:
 ## Methods
 - [getBlockPermutation](#getblockpermutation)
 - [getIsWaterlogged](#getiswaterlogged)
-- [isValid](#isvalid)
 - [saveAs](#saveas)
 - [saveToWorld](#savetoworld)
 - [setBlockPermutation](#setblockpermutation)
@@ -73,15 +84,6 @@ Returns whether the block at the given location is waterlogged.
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
-
-### **isValid**
-`
-isValid(): boolean
-`
-
-Returns whether the Structure is valid. The Structure may become invalid if it is deleted.
-
-**Returns** *boolean* - Returns whether the Structure is valid.
 
 ### **saveAs**
 `

@@ -39,6 +39,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 #### Values
 - `*`
 - `minecraft:lodestone`
+- `minecraft:yellow_dye_from_wildflowers`
 - `minecraft:chiseled_resin_bricks_from_slabs`
 - `minecraft:creaking_heart`
 - `minecraft:gray_dye_from_closed_eyeblossom`

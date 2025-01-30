@@ -9,7 +9,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [1.18.0-beta](#1180-beta)
+- [2.0.0-beta](#200-beta)
+- [1.17.0](#1170)
 - [1.16.0](#1160)
 - [1.15.0](#1150)
 - [1.14.0](#1140)
@@ -28,7 +29,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.18.0-beta
+## 2.0.0-beta
 #### Added module peer dependency *`@minecraft/vanilla-data`*
 #### Added *[`AimAssistCategory`](AimAssistCategory.md)*
 #### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
@@ -39,7 +40,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`BiomeTypes`](BiomeTypes.md)*
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
-- Added property *[`isWaterlogged`](Block.md#iswaterlogged)*
+- Added property *[`isValid`](Block.md#isvalid)*
 - Added function *[`canBeDestroyedByLiquidSpread`](Block.md#canbedestroyedbyliquidspread)*
 - Added function *[`canContainLiquid`](Block.md#cancontainliquid)*
 - Added function *[`canPlace`](Block.md#canplace)*
@@ -48,10 +49,16 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `componentId` type from *string* to *T*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
 - Added function *[`isLiquidBlocking`](Block.md#isliquidblocking)*
+- Removed function *isValid*
 - Added function *[`liquidCanFlowFromDirection`](Block.md#liquidcanflowfromdirection)*
 - Added function *[`liquidSpreadCausesSpawn`](Block.md#liquidspreadcausesspawn)*
-- Added function *[`setWaterlogged`](Block.md#setwaterlogged)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
+#### Changed *[`BlockComponentRegistry`](BlockComponentRegistry.md)*
+- Changed function *[`registerCustomComponent`](BlockComponentRegistry.md#registercustomcomponent)*
+  - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
+#### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
+- Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
+#### Added *[`BlockMapColorComponent`](BlockMapColorComponent.md)*
 #### Changed *[`BlockPermutation`](BlockPermutation.md)*
 - Added function *[`canBeDestroyedByLiquidSpread`](BlockPermutation.md#canbedestroyedbyliquidspread)*
 - Added function *[`canContainLiquid`](BlockPermutation.md#cancontainliquid)*
@@ -74,15 +81,28 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Added *[`BoundingBoxUtils`](BoundingBoxUtils.md)*
+#### Changed *[`ButtonPushAfterEventSignal`](ButtonPushAfterEventSignal.md)*
+- Removed base class *IButtonPushAfterEventSignal*
+- Added function *[`subscribe`](ButtonPushAfterEventSignal.md#subscribe)*
+- Added function *[`unsubscribe`](ButtonPushAfterEventSignal.md#unsubscribe)*
 #### Changed *[`Camera`](Camera.md)*
+- Added property *[`isValid`](Camera.md#isvalid)*
 - Changed function *[`setCamera`](Camera.md#setcamera)*
   - Changed argument `setOptions` type from [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md) to [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md)
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
 #### Added *[`ChatSendBeforeEventSignal`](ChatSendBeforeEventSignal.md)*
+#### Changed *[`Component`](Component.md)*
+- Added property *[`isValid`](Component.md#isvalid)*
+- Removed function *isValid*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
+#### Changed *[`Container`](Container.md)*
+- Added property *[`isValid`](Container.md#isvalid)*
+- Removed function *isValid*
 #### Changed *[`ContainerSlot`](ContainerSlot.md)*
+- Added property *[`isValid`](ContainerSlot.md#isvalid)*
+- Removed function *isValid*
 - Added function *[`setDynamicProperties`](ContainerSlot.md#setdynamicproperties)*
 #### Changed *[`Dimension`](Dimension.md)*
 - Changed function *[`fillBlocks`](Dimension.md#fillblocks)*
@@ -91,24 +111,58 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getBlockAbove`](Dimension.md#getblockabove)*
 - Added function *[`getBlockBelow`](Dimension.md#getblockbelow)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
+- Added function *[`placeFeature`](Dimension.md#placefeature)*
+- Added function *[`placeFeatureRule`](Dimension.md#placefeaturerule)*
+- Removed function *runCommandAsync*
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
+  - Changed argument `identifier` type from *string* to [*EntityType*](EntityType.md) | *string*
   - Added argument `options`
+#### Changed *[`Effect`](Effect.md)*
+- Added property *[`isValid`](Effect.md#isvalid)*
+- Removed function *isValid*
 #### Changed *[`Entity`](Entity.md)*
+- Added property *[`isValid`](Entity.md#isvalid)*
 - Added property *[`target`](Entity.md#target)*
+- Changed function *[`applyKnockback`](Entity.md#applyknockback)*
+  - Added argument `horizontalForce`
+  - Removed argument `directionX`
+  - Removed argument `directionZ`
+  - Removed argument `horizontalStrength`
 - Changed function *[`getComponent`](Entity.md#getcomponent)*
-  - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined*
+  - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined* (throws exceptions)
   - Changed argument `componentId` type from *string* to *T*
+- Changed function *[`getComponents`](Entity.md#getcomponents)*
+  - Changed return type from [*EntityComponent*](EntityComponent.md)[] to [*EntityComponent*](EntityComponent.md)[] (throws exceptions)
+- Changed function *[`hasComponent`](Entity.md#hascomponent)*
+  - Changed return type from *boolean* to *boolean* (throws exceptions)
+- Removed function *isValid*
 - Added function *[`lookAt`](Entity.md#lookat)*
+- Removed function *runCommandAsync*
 - Added function *[`setDynamicProperties`](Entity.md#setdynamicproperties)*
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
+#### Changed *[`EntityComponent`](EntityComponent.md)*
+- Changed type for *[`entity`](EntityComponent.md#entity)* from [*Entity*](Entity.md) to [*Entity*](Entity.md) (throws exceptions)
+#### Changed *[`EntityInventoryComponent`](EntityInventoryComponent.md)*
+- Changed type for *[`container`](EntityInventoryComponent.md#container)* from [*Container*](Container.md) to [*Container*](Container.md) (throws exceptions)
 #### Added *[`EntityIterator`](EntityIterator.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
+#### Added *[`EntitySpawnCallbackArgs`](EntitySpawnCallbackArgs.md)*
+#### Added *[`EntitySpawnType`](EntitySpawnType.md)*
 #### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
 #### Added *[`FilterGroup`](FilterGroup.md)*
-#### Added *[`InputInfo`](InputInfo.md)*
-#### Added *[`ItemCompostableComponent`](ItemCompostableComponent.md)*
+#### Removed *IButtonPushAfterEventSignal*
+#### Removed *ILeverActionAfterEventSignal*
+#### Changed *[`InputInfo`](InputInfo.md)*
+- Added function *[`getButtonState`](InputInfo.md#getbuttonstate)*
+- Added function *[`getMovementVector`](InputInfo.md#getmovementvector)*
+#### Removed *IPlayerJoinAfterEventSignal*
+#### Removed *IPlayerLeaveAfterEventSignal*
+#### Removed *IPlayerSpawnAfterEventSignal*
+#### Changed *[`ItemComponentRegistry`](ItemComponentRegistry.md)*
+- Changed function *[`registerCustomComponent`](ItemComponentRegistry.md#registercustomcomponent)*
+  - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
 #### Added *[`ItemDyeableComponent`](ItemDyeableComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
@@ -117,9 +171,15 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
   - Changed argument `componentId` type from *string* to *T*
 - Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
+#### Changed *[`LeverActionAfterEventSignal`](LeverActionAfterEventSignal.md)*
+- Removed base class *ILeverActionAfterEventSignal*
+- Added function *[`subscribe`](LeverActionAfterEventSignal.md#subscribe)*
+- Added function *[`unsubscribe`](LeverActionAfterEventSignal.md#unsubscribe)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
+#### Removed *MinecraftDimensionTypes*
+#### Added *[`ObstructionCallbackArgs`](ObstructionCallbackArgs.md)*
 #### Changed *[`Player`](Player.md)*
-- Added property *[`inputInfo`](Player.md#inputinfo)*
+- Added property *[`graphicsMode`](Player.md#graphicsmode)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getAimAssist`](Player.md#getaimassist)*
 - Added function *[`isOp`](Player.md#isop)*
@@ -129,42 +189,77 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
 #### Added *[`PlayerButtonInputAfterEvent`](PlayerButtonInputAfterEvent.md)*
 #### Added *[`PlayerButtonInputAfterEventSignal`](PlayerButtonInputAfterEventSignal.md)*
-#### Added *[`PlayerInputModeChangeAfterEvent`](PlayerInputModeChangeAfterEvent.md)*
-#### Added *[`PlayerInputModeChangeAfterEventSignal`](PlayerInputModeChangeAfterEventSignal.md)*
 #### Changed *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
-- Added function *[`isPermissionCategoryEnabled`](PlayerInputPermissions.md#ispermissioncategoryenabled)*
-- Added function *[`setPermissionCategory`](PlayerInputPermissions.md#setpermissioncategory)*
+- Removed property *cameraEnabled*
+- Removed property *movementEnabled*
 #### Added *[`PlayerIterator`](PlayerIterator.md)*
+#### Changed *[`PlayerJoinAfterEventSignal`](PlayerJoinAfterEventSignal.md)*
+- Removed base class *IPlayerJoinAfterEventSignal*
+- Added function *[`subscribe`](PlayerJoinAfterEventSignal.md#subscribe)*
+- Added function *[`unsubscribe`](PlayerJoinAfterEventSignal.md#unsubscribe)*
+#### Changed *[`PlayerLeaveAfterEventSignal`](PlayerLeaveAfterEventSignal.md)*
+- Removed base class *IPlayerLeaveAfterEventSignal*
+- Added function *[`subscribe`](PlayerLeaveAfterEventSignal.md#subscribe)*
+- Added function *[`unsubscribe`](PlayerLeaveAfterEventSignal.md#unsubscribe)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
+#### Changed *[`PlayerSpawnAfterEventSignal`](PlayerSpawnAfterEventSignal.md)*
+- Removed base class *IPlayerSpawnAfterEventSignal*
+- Added function *[`subscribe`](PlayerSpawnAfterEventSignal.md#subscribe)*
+- Added function *[`unsubscribe`](PlayerSpawnAfterEventSignal.md#unsubscribe)*
 #### Added *[`PotionEffectType`](PotionEffectType.md)*
 #### Added *[`PotionLiquidType`](PotionLiquidType.md)*
 #### Added *[`PotionModifierType`](PotionModifierType.md)*
 #### Added *[`Potions`](Potions.md)*
+#### Changed *[`ScoreboardIdentity`](ScoreboardIdentity.md)*
+- Added property *[`isValid`](ScoreboardIdentity.md#isvalid)*
+- Removed function *isValid*
+#### Changed *[`ScoreboardObjective`](ScoreboardObjective.md)*
+- Added property *[`isValid`](ScoreboardObjective.md#isvalid)*
+- Removed function *isValid*
+#### Changed *[`ScreenDisplay`](ScreenDisplay.md)*
+- Added property *[`isValid`](ScreenDisplay.md#isvalid)*
+- Removed function *isValid*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Added *[`ShutdownBeforeEventSignal`](ShutdownBeforeEventSignal.md)*
 #### Added *[`ShutdownEvent`](ShutdownEvent.md)*
+#### Added *[`SpawnRulesRegistry`](SpawnRulesRegistry.md)*
+#### Added *[`StartupBeforeEventSignal`](StartupBeforeEventSignal.md)*
+#### Added *[`StartupEvent`](StartupEvent.md)*
+#### Changed *[`Structure`](Structure.md)*
+- Added property *[`isValid`](Structure.md#isvalid)*
+- Removed function *isValid*
 #### Changed *[`StructureManager`](StructureManager.md)*
 - Added function *[`placeJigsaw`](StructureManager.md#placejigsaw)*
 - Added function *[`placeJigsawStructure`](StructureManager.md#placejigsawstructure)*
 #### Changed *[`System`](System.md)*
 - Added property *[`beforeEvents`](System.md#beforeevents)*
-- Added function *[`scriptEvent`](System.md#scriptevent)*
+- Added property *[`isEditorWorld`](System.md#iseditorworld)*
+- Added function *[`sendScriptEvent`](System.md#sendscriptevent)*
 #### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
 #### Changed *[`World`](World.md)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getAimAssist`](World.md#getaimassist)*
+- Removed function *playSound*
 - Added function *[`setDynamicProperties`](World.md#setdynamicproperties)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`playerButtonInput`](WorldAfterEvents.md#playerbuttoninput)*
-- Added property *[`playerInputModeChange`](WorldAfterEvents.md#playerinputmodechange)*
+- Removed property *worldInitialize*
+- Added property *[`worldLoad`](WorldAfterEvents.md#worldload)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
+- Removed property *worldInitialize*
+#### Removed *WorldInitializeAfterEvent*
+#### Removed *WorldInitializeAfterEventSignal*
+#### Removed *WorldInitializeBeforeEvent*
+#### Removed *WorldInitializeBeforeEventSignal*
+#### Added *[`WorldLoadAfterEvent`](WorldLoadAfterEvent.md)*
+#### Added *[`WorldLoadAfterEventSignal`](WorldLoadAfterEventSignal.md)*
 #### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
 #### Added enum [`ButtonState`](ButtonState.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
@@ -172,9 +267,37 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`Difficulty`](Difficulty.md)
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Added value `Npc`
+#### Changed enum [`EntityDamageCause`](EntityDamageCause.md)
+- Removed value `suicide`
+#### Added enum [`EntitySpawnCategory`](EntitySpawnCategory.md)
+#### Added enum [`EntitySpawnReason`](EntitySpawnReason.md)
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
+#### Added enum [`GraphicsMode`](GraphicsMode.md)
 #### Added enum [`InputButton`](InputButton.md)
+#### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
+- Added value `Dyeable`
+- Added value `Potion`
+#### Added enum [`LiquidType`](LiquidType.md)
+#### Added enum [`NamespaceNameErrorReason`](NamespaceNameErrorReason.md)
+#### Added enum [`TintMethod`](TintMethod.md)
+#### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
+#### Added constant `TicksPerDay`
+## 1.17.0
+#### Changed *[`Block`](Block.md)*
+- Added property *[`isWaterlogged`](Block.md#iswaterlogged)*
+- Added function *[`setWaterlogged`](Block.md#setwaterlogged)*
+#### Added *[`InputInfo`](InputInfo.md)*
+#### Added *[`ItemCompostableComponent`](ItemCompostableComponent.md)*
+#### Changed *[`Player`](Player.md)*
+- Added property *[`inputInfo`](Player.md#inputinfo)*
+#### Added *[`PlayerInputModeChangeAfterEvent`](PlayerInputModeChangeAfterEvent.md)*
+#### Added *[`PlayerInputModeChangeAfterEventSignal`](PlayerInputModeChangeAfterEventSignal.md)*
+#### Changed *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
+- Added function *[`isPermissionCategoryEnabled`](PlayerInputPermissions.md#ispermissioncategoryenabled)*
+- Added function *[`setPermissionCategory`](PlayerInputPermissions.md#setpermissioncategory)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`playerInputModeChange`](WorldAfterEvents.md#playerinputmodechange)*
 #### Added enum [`InputMode`](InputMode.md)
 #### Changed enum [`InputPermissionCategory`](InputPermissionCategory.md)
 - Added value `LateralMovement`
@@ -188,12 +311,6 @@ description: Changelog of the `@minecraft/server` module
 - Added value `MoveRight`
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `Compostable`
-- Added value `Dyeable`
-- Added value `Potion`
-#### Added enum [`LiquidType`](LiquidType.md)
-#### Added enum [`NamespaceNameErrorReason`](NamespaceNameErrorReason.md)
-#### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
-#### Added constant `TicksPerDay`
 ## 1.16.0
 #### Added *[`BlockFluidContainerComponent`](BlockFluidContainerComponent.md)*
 #### Added *[`ClientSystemInfo`](ClientSystemInfo.md)*
@@ -521,7 +638,8 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`dataDrivenEntityTrigger`](WorldAfterEvents.md#datadrivenentitytrigger)*
 #### Added enum [`FluidType`](FluidType.md)
 ## 1.7.0
-#### Changed version for module dependency `@minecraft/common` from `1.0.0` to `1.1.0`
+#### Added module dependency `@minecraft/common@1.1.0` 
+#### Removed module dependency `@minecraft/common@1.0.0` 
 #### Changed *[`Block`](Block.md)*
 - Added function *[`above`](Block.md#above)*
 - Added function *[`below`](Block.md#below)*

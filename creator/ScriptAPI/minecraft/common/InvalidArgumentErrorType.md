@@ -11,6 +11,10 @@ description: Contents of the .InvalidArgumentErrorType enumeration.
 An enum describing the type of InvalidArgumentError
 
 ## Constants
+### **Duplicate**
+`Duplicate = "Duplicate"`
+
+The argument has a duplicate in this domain.
 ### **Empty**
 `Empty = "Empty"`
 

@@ -36,7 +36,7 @@ Notes:
   - This property can throw errors when used.
 
 ### **container**
-`read-only container?: Container;`
+`read-only container: Container;`
 
 Defines the container for this entity. The container will be undefined if the entity has been removed.
 
@@ -44,6 +44,7 @@ Type: [*Container*](Container.md)
 
 Notes:
   - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **containerType**
 `read-only containerType: string;`

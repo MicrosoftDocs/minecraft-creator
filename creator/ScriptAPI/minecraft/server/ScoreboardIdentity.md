@@ -26,6 +26,18 @@ Identifier of the scoreboard identity.
 
 Type: *number*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **isValid**
+`read-only isValid: boolean;`
+
+Returns true if the ScoreboardIdentity reference is still valid.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **type**
 `read-only type: ScoreboardIdentityType;`
 
@@ -35,7 +47,6 @@ Type: [*ScoreboardIdentityType*](ScoreboardIdentityType.md)
 
 ## Methods
 - [getEntity](#getentity)
-- [isValid](#isvalid)
 
 ### **getEntity**
 `
@@ -48,12 +59,3 @@ If the scoreboard identity is an entity or player, returns the entity that this 
   
 Notes:
 - This function can throw errors.
-
-### **isValid**
-`
-isValid(): boolean
-`
-
-Returns true if the ScoreboardIdentity reference is still valid.
-
-**Returns** *boolean*

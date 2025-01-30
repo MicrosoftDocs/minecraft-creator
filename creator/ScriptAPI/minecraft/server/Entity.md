@@ -112,6 +112,18 @@ Type: *boolean*
 Notes:
   - This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **isValid**
+`read-only isValid: boolean;`
+
+Returns whether the entity can be manipulated by script. A Player is considered valid when it's EntityLifetimeState is set to Loaded.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **location**
 `read-only location: Vector3;`
 
@@ -189,7 +201,6 @@ Type: *string*
 - [getViewDirection](#getviewdirection)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
-- [isValid](#isvalid)
 - [kill](#kill)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [lookAt](#lookat)
@@ -201,7 +212,6 @@ Type: *string*
 - [removeTag](#removetag)
 - [resetProperty](#resetproperty)
 - [runCommand](#runcommand)
-- [runCommandAsync](#runcommandasync)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [setDynamicProperties](#setdynamicproperties)
 ::: moniker-end
@@ -424,21 +434,13 @@ function applyImpulse(targetLocation: DimensionLocation) {
 
 ### **applyKnockback**
 `
-applyKnockback(directionX: number, directionZ: number, horizontalStrength: number, verticalStrength: number): void
+applyKnockback(horizontalForce: VectorXZ, verticalStrength: number): void
 `
 
 Applies impulse vector to the current velocity of the entity.
 
 #### **Parameters**
-- **directionX**: *number*
-  
-  X direction in horizontal plane.
-- **directionZ**: *number*
-  
-  Z direction in horizontal plane.
-- **horizontalStrength**: *number*
-  
-  Knockback strength for the horizontal vector.
+- **horizontalForce**: [*VectorXZ*](VectorXZ.md)
 - **verticalStrength**: *number*
   
   Knockback strength for the vertical vector.
@@ -588,6 +590,10 @@ Gets a component (that represents additional capabilities) for an entity.
   The identifier of the component (e.g., 'minecraft:health'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.EntityComponentTypes*](../../minecraft/server/EntityComponentTypes.md) enum.
 
 **Returns** *EntityComponentTypeMap[T] | undefined* - Returns the component if it exists on the entity, otherwise undefined.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getComponents**
 `
@@ -597,6 +603,10 @@ getComponents(): EntityComponent[]
 Returns all components that are both present on this entity and supported by the API.
 
 **Returns** [*EntityComponent*](EntityComponent.md)[] - Returns all components that are both present on this entity and supported by the API.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getDynamicProperty**
 `
@@ -800,6 +810,10 @@ Returns true if the specified component is present on this entity.
   The identifier of the component (e.g., 'minecraft:rideable') to retrieve. If no namespace prefix is specified, 'minecraft:' is assumed.
 
 **Returns** *boolean* - Returns true if the specified component is present on this entity.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **hasTag**
 `
@@ -817,15 +831,6 @@ Returns whether an entity has a particular tag.
   
 Notes:
 - This function can throw errors.
-
-### **isValid**
-`
-isValid(): boolean
-`
-
-Returns whether the entity can be manipulated by script. A Player is considered valid when it's EntityLifetimeState is set to Loaded.
-
-**Returns** *boolean* - Whether the entity is valid.
 
 ### **kill**
 `
@@ -1011,23 +1016,6 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*CommandError*](CommandError.md), *Error*
-
-### **runCommandAsync**
-`
-runCommandAsync(commandString: string): Promise<CommandResult>
-`
-
-Runs a particular command asynchronously from the context of this entity. Note that there is a maximum queue of 128 asynchronous commands that can be run in a given tick.
-
-#### **Parameters**
-- **commandString**: *string*
-  
-  Command to run. Note that command strings should not start with slash.
-
-**Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a JSON structure with command response values.
-  
-Notes:
-- This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setDynamicProperties**

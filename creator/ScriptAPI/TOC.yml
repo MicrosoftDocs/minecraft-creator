@@ -158,6 +158,10 @@
       href: minecraft/server/EntityDamageCause.md
     - name: EntityInitializationCause
       href: minecraft/server/EntityInitializationCause.md
+    - name: EntitySpawnCategory
+      href: minecraft/server/EntitySpawnCategory.md
+    - name: EntitySpawnReason
+      href: minecraft/server/EntitySpawnReason.md
     - name: EquipmentSlot
       href: minecraft/server/EquipmentSlot.md
     - name: FluidType
@@ -166,6 +170,8 @@
       href: minecraft/server/GameMode.md
     - name: GameRule
       href: minecraft/server/GameRule.md
+    - name: GraphicsMode
+      href: minecraft/server/GraphicsMode.md
     - name: HudElement
       href: minecraft/server/HudElement.md
     - name: HudVisibility
@@ -210,6 +216,8 @@
       href: minecraft/server/StructureSaveMode.md
     - name: TimeOfDay
       href: minecraft/server/TimeOfDay.md
+    - name: TintMethod
+      href: minecraft/server/TintMethod.md
     - name: WatchdogTerminateReason
       href: minecraft/server/WatchdogTerminateReason.md
     - name: WeatherType
@@ -264,6 +272,8 @@
       href: minecraft/server/BlockInventoryComponent.md
     - name: BlockLocationIterator
       href: minecraft/server/BlockLocationIterator.md
+    - name: BlockMapColorComponent
+      href: minecraft/server/BlockMapColorComponent.md
     - name: BlockPermutation
       href: minecraft/server/BlockPermutation.md
     - name: BlockPistonComponent
@@ -506,6 +516,10 @@
       href: minecraft/server/EntitySpawnAfterEvent.md
     - name: EntitySpawnAfterEventSignal
       href: minecraft/server/EntitySpawnAfterEventSignal.md
+    - name: EntitySpawnCallbackArgs
+      href: minecraft/server/EntitySpawnCallbackArgs.md
+    - name: EntitySpawnType
+      href: minecraft/server/EntitySpawnType.md
     - name: EntityStrengthComponent
       href: minecraft/server/EntityStrengthComponent.md
     - name: EntityTameableComponent
@@ -548,18 +562,8 @@
       href: minecraft/server/GameRuleChangeAfterEventSignal.md
     - name: GameRules
       href: minecraft/server/GameRules.md
-    - name: IButtonPushAfterEventSignal
-      href: minecraft/server/IButtonPushAfterEventSignal.md
-    - name: ILeverActionAfterEventSignal
-      href: minecraft/server/ILeverActionAfterEventSignal.md
     - name: InputInfo
       href: minecraft/server/InputInfo.md
-    - name: IPlayerJoinAfterEventSignal
-      href: minecraft/server/IPlayerJoinAfterEventSignal.md
-    - name: IPlayerLeaveAfterEventSignal
-      href: minecraft/server/IPlayerLeaveAfterEventSignal.md
-    - name: IPlayerSpawnAfterEventSignal
-      href: minecraft/server/IPlayerSpawnAfterEventSignal.md
     - name: ItemCompleteUseAfterEvent
       href: minecraft/server/ItemCompleteUseAfterEvent.md
     - name: ItemCompleteUseAfterEventSignal
@@ -650,10 +654,10 @@
       href: minecraft/server/ListBlockVolume.md
     - name: MessageReceiveAfterEvent
       href: minecraft/server/MessageReceiveAfterEvent.md
-    - name: MinecraftDimensionTypes
-      href: minecraft/server/MinecraftDimensionTypes.md
     - name: MolangVariableMap
       href: minecraft/server/MolangVariableMap.md
+    - name: ObstructionCallbackArgs
+      href: minecraft/server/ObstructionCallbackArgs.md
     - name: PistonActivateAfterEvent
       href: minecraft/server/PistonActivateAfterEvent.md
     - name: PistonActivateAfterEventSignal
@@ -790,6 +794,12 @@
       href: minecraft/server/ShutdownBeforeEventSignal.md
     - name: ShutdownEvent
       href: minecraft/server/ShutdownEvent.md
+    - name: SpawnRulesRegistry
+      href: minecraft/server/SpawnRulesRegistry.md
+    - name: StartupBeforeEventSignal
+      href: minecraft/server/StartupBeforeEventSignal.md
+    - name: StartupEvent
+      href: minecraft/server/StartupEvent.md
     - name: Structure
       href: minecraft/server/Structure.md
     - name: StructureManager
@@ -830,14 +840,10 @@
       href: minecraft/server/WorldAfterEvents.md
     - name: WorldBeforeEvents
       href: minecraft/server/WorldBeforeEvents.md
-    - name: WorldInitializeAfterEvent
-      href: minecraft/server/WorldInitializeAfterEvent.md
-    - name: WorldInitializeAfterEventSignal
-      href: minecraft/server/WorldInitializeAfterEventSignal.md
-    - name: WorldInitializeBeforeEvent
-      href: minecraft/server/WorldInitializeBeforeEvent.md
-    - name: WorldInitializeBeforeEventSignal
-      href: minecraft/server/WorldInitializeBeforeEventSignal.md
+    - name: WorldLoadAfterEvent
+      href: minecraft/server/WorldLoadAfterEvent.md
+    - name: WorldLoadAfterEventSignal
+      href: minecraft/server/WorldLoadAfterEventSignal.md
     - name: BiomeSearchOptions
       href: minecraft/server/BiomeSearchOptions.md
     - name: BlockCustomComponent
@@ -1032,6 +1038,8 @@
       href: minecraft/server-editor/InputModifier.md
     - name: KeyboardKey
       href: minecraft/server-editor/KeyboardKey.md
+    - name: KeyProcessingState
+      href: minecraft/server-editor/KeyProcessingState.md
     - name: LayoutAlignment
       href: minecraft/server-editor/LayoutAlignment.md
     - name: LayoutDirection
@@ -1056,6 +1064,8 @@
       href: minecraft/server-editor/PlaytestSessionResult.md
     - name: PrimitiveType
       href: minecraft/server-editor/PrimitiveType.md
+    - name: ProgressIndicatorPropertyItemVariant
+      href: minecraft/server-editor/ProgressIndicatorPropertyItemVariant.md
     - name: ProjectExportType
       href: minecraft/server-editor/ProjectExportType.md
     - name: PropertyItemType
@@ -1286,6 +1296,10 @@
       href: minecraft/server-editor/IImagePropertyItem.md
     - name: IImagePropertyItemOptions
       href: minecraft/server-editor/IImagePropertyItemOptions.md
+    - name: ILinkPropertyItem
+      href: minecraft/server-editor/ILinkPropertyItem.md
+    - name: ILinkPropertyItemOptions
+      href: minecraft/server-editor/ILinkPropertyItemOptions.md
     - name: IMenu
       href: minecraft/server-editor/IMenu.md
     - name: IMenuContainer
@@ -1304,6 +1318,10 @@
       href: minecraft/server-editor/IObservable.md
     - name: IPlayerLogger
       href: minecraft/server-editor/IPlayerLogger.md
+    - name: IProgressIndicatorPropertyItem
+      href: minecraft/server-editor/IProgressIndicatorPropertyItem.md
+    - name: IProgressIndicatorPropertyItemOptions
+      href: minecraft/server-editor/IProgressIndicatorPropertyItemOptions.md
     - name: IPropertyItem
       href: minecraft/server-editor/IPropertyItem.md
     - name: IPropertyItemBase
@@ -1334,6 +1352,8 @@
       href: minecraft/server-editor/IPropertyPaneOptions.md
     - name: IPropertyTableCellItem
       href: minecraft/server-editor/IPropertyTableCellItem.md
+    - name: IRegisteredKeyBinding
+      href: minecraft/server-editor/IRegisteredKeyBinding.md
     - name: IRegisterExtensionOptionalParameters
       href: minecraft/server-editor/IRegisterExtensionOptionalParameters.md
     - name: IRootPropertyPane

@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .InvalidEntityError Class
 description: Contents of the .InvalidEntityError class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # InvalidEntityError Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - *Error*

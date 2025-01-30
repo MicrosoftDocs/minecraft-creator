@@ -43,9 +43,6 @@ Insert block locations into container.
 - **locations**: [*Vector3*](Vector3.md)[]
   
   Array of block locations to be inserted into container.
-  
-Notes:
-- This function can't be called in read-only mode.
 
 ### **remove**
 `
@@ -58,6 +55,3 @@ Remove block locations from container.
 - **locations**: [*Vector3*](Vector3.md)[]
   
   Array of block locations to be removed from container.
-  
-Notes:
-- This function can't be called in read-only mode.

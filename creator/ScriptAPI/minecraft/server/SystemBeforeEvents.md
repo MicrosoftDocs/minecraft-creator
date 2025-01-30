@@ -21,6 +21,11 @@ A set of events that fire before an actual action occurs. In most cases, you can
 
 Type: [*ShutdownBeforeEventSignal*](ShutdownBeforeEventSignal.md)
 
+### **startup**
+`read-only startup: StartupBeforeEventSignal;`
+
+Type: [*StartupBeforeEventSignal*](StartupBeforeEventSignal.md)
+
 ### **watchdogTerminate**
 `read-only watchdogTerminate: WatchdogTerminateBeforeEventSignal;`
 

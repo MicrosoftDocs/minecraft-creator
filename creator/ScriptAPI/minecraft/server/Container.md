@@ -104,6 +104,18 @@ Notes:
   - This property can throw errors when used.
     - Throws if the container is invalid.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **isValid**
+`read-only isValid: boolean;`
+
+Returns whether a container object (or the entity or block that this container is associated with) is still available for use in this context.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **size**
 `read-only size: number;`
 
@@ -120,7 +132,6 @@ Notes:
 - [clearAll](#clearall)
 - [getItem](#getitem)
 - [getSlot](#getslot)
-- [isValid](#isvalid)
 - [moveItem](#moveitem)
 - [setItem](#setitem)
 - [swapItems](#swapitems)
@@ -217,15 +228,6 @@ Returns a container slot. This acts as a reference to a slot at the given index 
 Notes:
 - This function can throw errors.
   - Throws if the container is invalid or if the `slot` index is out of bounds.
-
-### **isValid**
-`
-isValid(): boolean
-`
-
-Returns whether a container object (or the entity or block that this container is associated with) is still available for use in this context.
-
-**Returns** *boolean*
 
 ### **moveItem**
 `

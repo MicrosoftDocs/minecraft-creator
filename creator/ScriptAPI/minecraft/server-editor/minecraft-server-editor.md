@@ -50,6 +50,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ImageResourceType](ImageResourceType.md)
 - [InputModifier](InputModifier.md)
 - [KeyboardKey](KeyboardKey.md)
+- [KeyProcessingState](KeyProcessingState.md)
 - [LayoutAlignment](LayoutAlignment.md)
 - [LayoutDirection](LayoutDirection.md)
 - [MouseActionCategory](MouseActionCategory.md)
@@ -62,6 +63,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [PlayerPermissionLevel](PlayerPermissionLevel.md)
 - [PlaytestSessionResult](PlaytestSessionResult.md)
 - [PrimitiveType](PrimitiveType.md)
+- [ProgressIndicatorPropertyItemVariant](ProgressIndicatorPropertyItemVariant.md)
 - [ProjectExportType](ProjectExportType.md)
 - [PropertyItemType](PropertyItemType.md)
 - [SimpleToolStatusBarVisibility](SimpleToolStatusBarVisibility.md)
@@ -82,6 +84,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
 - [IBlockListPropertyItem](IBlockListPropertyItem.md)
 - [IDropdownPropertyItem_deprecated](IDropdownPropertyItem_deprecated.md)
+- [ImageAnimationData](ImageAnimationData.md)
 - [ImageResourceData](ImageResourceData.md)
 - [IObservableProp](IObservableProp.md)
 - [IPlayerUISession](IPlayerUISession.md)
@@ -218,6 +221,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [IGlobalInputManager](IGlobalInputManager.md)
 - [IImagePropertyItem](IImagePropertyItem.md)
 - [IImagePropertyItemOptions](IImagePropertyItemOptions.md)
+- [ILinkPropertyItem](ILinkPropertyItem.md)
+- [ILinkPropertyItemOptions](ILinkPropertyItemOptions.md)
 - [IMenu](IMenu.md)
 - [IMenuContainer](IMenuContainer.md)
 - [IMenuCreationParams](IMenuCreationParams.md)
@@ -227,6 +232,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [INumberPropertyItemOptions](INumberPropertyItemOptions.md)
 - [IObservable](IObservable.md)
 - [IPlayerLogger](IPlayerLogger.md)
+- [IProgressIndicatorPropertyItem](IProgressIndicatorPropertyItem.md)
+- [IProgressIndicatorPropertyItemOptions](IProgressIndicatorPropertyItemOptions.md)
 - [IPropertyItem](IPropertyItem.md)
 - [IPropertyItemBase](IPropertyItemBase.md)
 - [IPropertyItemOptions](IPropertyItemOptions.md)
@@ -242,6 +249,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [IPropertyPane](IPropertyPane.md)
 - [IPropertyPaneOptions](IPropertyPaneOptions.md)
 - [IPropertyTableCellItem](IPropertyTableCellItem.md)
+- [IRegisteredKeyBinding](IRegisteredKeyBinding.md)
 - [IRegisterExtensionOptionalParameters](IRegisterExtensionOptionalParameters.md)
 - [IRootPropertyPane](IRootPropertyPane.md)
 - [IRootPropertyPaneHeaderAction](IRootPropertyPaneHeaderAction.md)
@@ -360,7 +368,7 @@ Executes an operation over a BlockLocationIterator via chunks to allow splitting
 getDefaultAllowBlockList(): string[]
 `
 
-Returns a string array of the default block types for editor operations. Can be used to further filter blocks.
+Returns a string array of the default block types for editor operations. Can be used to further filter blocks. This will throw if called in early execution.
 
 **Returns** *string[]* - Default allowed block list
 

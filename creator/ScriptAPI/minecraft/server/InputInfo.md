@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.InputInfo Class
 description: Contents of the @minecraft/server.InputInfo class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # InputInfo Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains the input information for a client instance.
 
@@ -39,9 +35,14 @@ Notes:
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ## Methods
+::: moniker range="=minecraft-bedrock-experimental"
 - [getButtonState](#getbuttonstate)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getMovementVector](#getmovementvector)
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getButtonState**
 `
 getButtonState(button: InputButton): ButtonState
@@ -51,18 +52,27 @@ getButtonState(button: InputButton): ButtonState
 - **button**: [*InputButton*](InputButton.md)
 
 **Returns** [*ButtonState*](ButtonState.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getMovementVector**
 `
 getMovementVector(): Vector2
 `
 
 **Returns** [*Vector2*](Vector2.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end

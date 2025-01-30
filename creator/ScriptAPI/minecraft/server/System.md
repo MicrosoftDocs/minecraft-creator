@@ -38,6 +38,18 @@ Represents the current world tick of the server.
 
 Type: *number*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **isEditorWorld**
+`read-only isEditorWorld: boolean;`
+
+Returns true if this is a world where the editor is currently loaded, returns false otherwise.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **serverSystemInfo**
 `read-only serverSystemInfo: SystemInfo;`
 
@@ -53,7 +65,7 @@ Type: [*SystemInfo*](SystemInfo.md)
 - [runJob](#runjob)
 - [runTimeout](#runtimeout)
 ::: moniker range="=minecraft-bedrock-experimental"
-- [scriptEvent](#scriptevent)
+- [sendScriptEvent](#sendscriptevent)
 ::: moniker-end
 - [waitTicks](#waitticks)
 
@@ -225,9 +237,9 @@ Runs a set of code at a future time specified by tickDelay.
 Notes:
 
 ::: moniker range="=minecraft-bedrock-experimental"
-### **scriptEvent**
+### **sendScriptEvent**
 `
-scriptEvent(id: string, message: string): void
+sendScriptEvent(id: string, message: string): void
 `
 
 Causes an event to fire within script with the specified message ID and payload.

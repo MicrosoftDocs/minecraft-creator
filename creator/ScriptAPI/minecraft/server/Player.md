@@ -37,16 +37,27 @@ Notes:
     - Throws *Error*
 
 ::: moniker range="=minecraft-bedrock-experimental"
+### **graphicsMode**
+`read-only graphicsMode: GraphicsMode;`
+
+Gets the current graphics mode of the player's client. This can be changed in the Video section of the settings menu based on what hardware is available.
+
+Type: [*GraphicsMode*](GraphicsMode.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
 ### **inputInfo**
 `read-only inputInfo: InputInfo;`
 
 Contains the player's input information.
 
 Type: [*InputInfo*](InputInfo.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **inputPermissions**
 `read-only inputPermissions: PlayerInputPermissions;`

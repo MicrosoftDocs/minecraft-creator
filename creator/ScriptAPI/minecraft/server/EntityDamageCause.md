@@ -137,10 +137,6 @@ Damage caused over time by having an empty hunger bar.
 `suffocation = "suffocation"`
 
 Damage caused by an Entity being out of air and inside a non-liquid block.
-### **suicide**
-`suicide = "suicide"`
-
-Damage caused by an Entity killing itself. For example, from the /kill command.
 ### **temperature**
 `temperature = "temperature"`
 

@@ -79,11 +79,24 @@ function countdown(targetLocation: DimensionLocation) {
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/countdown.ts) code sandbox.
 
+## Properties
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **isValid**
+`read-only isValid: boolean;`
+
+Returns true if the current reference to this screen display manager object is valid and functional.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ## Methods
 - [getHiddenHudElements](#gethiddenhudelements)
 - [hideAllExcept](#hideallexcept)
 - [isForcedHidden](#isforcedhidden)
-- [isValid](#isvalid)
 - [resetHudElements](#resethudelements)
 - [setActionBar](#setactionbar)
 - [setHudVisibility](#sethudvisibility)
@@ -126,15 +139,6 @@ isForcedHidden(hudElement: HudElement): boolean
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-
-### **isValid**
-`
-isValid(): boolean
-`
-
-Returns true if the current reference to this screen display manager object is valid and functional.
-
-**Returns** *boolean*
 
 ### **resetHudElements**
 `

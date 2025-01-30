@@ -116,15 +116,12 @@ Replace `loot` from a `block` at a `position` from `killing` an `entity` using a
 
 Replace `loot` from a `block` at a `position` into a `slotID` in a specified amount, from `mining` a block at `position` using a `tool`.
 
-### Replace loot at a slot in a container block with a count, using the results that come from mining a block with tool
+### Replace loot from block, mining a block with tool.
 `/loot replace block <position: x y z> slot.container <slotId: int> <count: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
-Replace `loot` in a continer `block` (e.g., a chest) at a `slotId` with an overriden `count`, with the results from `mining` a block at `position` using a `tool`.
+Replace `loot` from a `block` at a `position` from `mining` a block at `position` using a `tool`.
 
-### Replace loot at a slot in a container block, using the results that come from mining a block with tool
-`/loot replace block <position: x y z> slot.container <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
-
-Replace `loot` in a continer `block` (e.g., a chest) at a `slotId`, with the results from `mining` a block at `position` using a `tool`.
+### `/loot replace block <position: x y z> slot.container <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
 ## Arguments
 - `<tool>|mainhand|offhand`: Tool
@@ -2071,6 +2068,7 @@ Big Dripleaf
 Conduit
 - `minecraft:prismarine`
 Prismarine
+- `minecraft:leaf_litter`
 - `minecraft:dark_prismarine`
 - `minecraft:gray_concrete`
 - `minecraft:light_gray_concrete`
@@ -2089,6 +2087,7 @@ Lime Candle
 - `minecraft:pink_concrete_powder`
 - `minecraft:spruce_trapdoor`
 Spruce Trapdoor
+- `minecraft:firefly_bush`
 - `minecraft:light_gray_concrete_powder`
 - `minecraft:purple_concrete_powder`
 - `minecraft:blue_concrete_powder`
@@ -2703,6 +2702,7 @@ Nether Brick Fence
 - `minecraft:pale_oak_button`
 - `minecraft:crimson_hyphae`
 Crimson Hyphae
+- `minecraft:wildflowers`
 - `minecraft:polished_blackstone_stairs`
 Polished Blackstone Stairs
 - `minecraft:small_dripleaf_block`
@@ -2954,6 +2954,7 @@ Mud Bricks
 - `minecraft:birch_wall_sign`
 Birch Wall Sign
 - `minecraft:bamboo_wall_sign`
+- `minecraft:bush`
 - `minecraft:bamboo_sapling`
 Bamboo Sapling
 - `minecraft:standing_banner`

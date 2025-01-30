@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.ItemCompostableComponent Class
 description: Contents of the @minecraft/server.ItemCompostableComponent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ItemCompostableComponent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - [*ItemComponent*](ItemComponent.md)

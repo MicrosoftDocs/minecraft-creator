@@ -53,9 +53,14 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [placeFeature](#placefeature)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [placeFeatureRule](#placefeaturerule)
+::: moniker-end
 - [playSound](#playsound)
 - [runCommand](#runcommand)
-- [runCommandAsync](#runcommandasync)
 - [setBlockPermutation](#setblockpermutation)
 - [setBlockType](#setblocktype)
 - [setWeather](#setweather)
@@ -514,6 +519,65 @@ Notes:
 - This function can't be called in read-only mode.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **placeFeature**
+`
+placeFeature(featureName: string, location: Vector3, shouldThrow?: boolean): boolean
+`
+
+Places the given feature into the dimension at the specified location.
+
+#### **Parameters**
+- **featureName**: *string*
+  
+  The string identifier for the feature.
+- **location**: [*Vector3*](Vector3.md)
+  
+  Location to place the feature.
+- **shouldThrow**?: *boolean* = `false`
+  
+  Specifies if the function call will throw an error if the feature could not be placed.
+  
+  Note: The function call will always throw an error if using an unknown feature name or trying to place in a unloaded chunk.
+
+**Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **placeFeatureRule**
+`
+placeFeatureRule(featureRuleName: string, location: Vector3): boolean
+`
+
+Places the given feature rule into the dimension at the specified location.
+
+#### **Parameters**
+- **featureRuleName**: *string*
+  
+  The string identifier for the feature rule.
+- **location**: [*Vector3*](Vector3.md)
+  
+  Location to place the feature rule.
+
+**Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
+::: moniker-end
+
 ### **playSound**
 `
 playSound(soundId: string, location: Vector3, soundOptions?: WorldSoundOptions): void
@@ -558,24 +622,6 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*CommandError*](CommandError.md)
-
-### **runCommandAsync**
-`
-runCommandAsync(commandString: string): Promise<CommandResult>
-`
-
-Runs a particular command asynchronously from the context of the broader dimension.  Note that there is a maximum queue of 128 asynchronous commands that can be run in a given tick.
-
-#### **Parameters**
-- **commandString**: *string*
-  
-  Command to run. Note that command strings should not start with slash.
-
-**Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt; - For commands that return data, returns a CommandResult with an indicator of command results.
-  
-Notes:
-- This function can throw errors.
-  - Throws an exception if the command fails due to incorrect parameters or command syntax, or in erroneous cases for the command. Note that in many cases, if the command does not operate (e.g., a target selector found no matches), this method will not throw an exception.
 
 ### **setBlockPermutation**
 `
@@ -638,13 +684,13 @@ Notes:
 
 ### **spawnEntity**
 `
-spawnEntity(identifier: string, location: Vector3, options?: SpawnEntityOptions): Entity
+spawnEntity(identifier: EntityType | string, location: Vector3, options?: SpawnEntityOptions): Entity
 `
 
 Creates a new entity (e.g., a mob) at the specified location.
 
 #### **Parameters**
-- **identifier**: *string*
+- **identifier**: [*EntityType*](EntityType.md) | *string*
   
   Identifier of the type of entity to spawn. If no namespace is specified, 'minecraft:' is assumed.
 - **location**: [*Vector3*](Vector3.md)
