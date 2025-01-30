@@ -141,10 +141,3 @@ Type: [*PlayerPlaceBlockBeforeEventSignal*](PlayerPlaceBlockBeforeEventSignal.md
 `read-only weatherChange: WeatherChangeBeforeEventSignal;`
 
 Type: [*WeatherChangeBeforeEventSignal*](WeatherChangeBeforeEventSignal.md)
-
-### **worldInitialize**
-`read-only worldInitialize: WorldInitializeBeforeEventSignal;`
-
-This event fires immediately when the script environment is initialized on a World. Not all script functionality may be available. For guaranteed access to world state, use the world initialize after event.
-
-Type: [*WorldInitializeBeforeEventSignal*](WorldInitializeBeforeEventSignal.md)

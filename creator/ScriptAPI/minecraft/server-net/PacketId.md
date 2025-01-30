@@ -187,10 +187,6 @@ Represents the unique type of network packet.
 `LevelEventPacket = "LevelEventPacket"`
 ### **LevelSoundEventPacket**
 `LevelSoundEventPacket = "LevelSoundEventPacket"`
-### **LevelSoundEventPacketV1**
-`LevelSoundEventPacketV1 = "LevelSoundEventPacketV1"`
-### **LevelSoundEventPacketV2**
-`LevelSoundEventPacketV2 = "LevelSoundEventPacketV2"`
 ### **LoginPacket**
 `LoginPacket = "LoginPacket"`
 ### **MapCreateLockedCopyPacket**
@@ -261,6 +257,8 @@ Represents the unique type of network packet.
 `PlayerStartItemCooldownPacket = "PlayerStartItemCooldownPacket"`
 ### **PlayerToggleCrafterSlotRequestPacket**
 `PlayerToggleCrafterSlotRequestPacket = "PlayerToggleCrafterSlotRequestPacket"`
+### **PlayerUpdateEntityOverridesPacket**
+`PlayerUpdateEntityOverridesPacket = "PlayerUpdateEntityOverridesPacket"`
 ### **PlaySoundPacket**
 `PlaySoundPacket = "PlaySoundPacket"`
 ### **PlayStatusPacket**
@@ -415,6 +413,8 @@ Represents the unique type of network packet.
 `UpdateBlockSyncedPacket = "UpdateBlockSyncedPacket"`
 ### **UpdateClientInputLocksPacket**
 `UpdateClientInputLocksPacket = "UpdateClientInputLocksPacket"`
+### **UpdateClientOptions**
+`UpdateClientOptions = "UpdateClientOptions"`
 ### **UpdateEquipPacket**
 `UpdateEquipPacket = "UpdateEquipPacket"`
 ### **UpdatePlayerGameTypePacket**

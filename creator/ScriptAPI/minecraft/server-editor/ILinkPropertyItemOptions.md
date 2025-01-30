@@ -1,0 +1,37 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+title: minecraft/server-editor.ILinkPropertyItemOptions Interface
+description: Contents of the @minecraft/server-editor.ILinkPropertyItemOptions class.
+---
+# ILinkPropertyItemOptions Interface
+
+## Extends
+- *IPropertyItemOptionsBase*
+
+Optional properties for Link property item
+
+## Properties
+
+### **hideIcon**
+`hideIcon: boolean;`
+
+Hides the link icon. If undefined, it will default to false.
+
+Type: *boolean*
+
+### **title**
+`title: LocalizedString;`
+
+Localized title of the text item.
+
+Type: *LocalizedString*
+
+### **tooltip**
+`tooltip: LocalizedString;`
+
+Tooltip description of the property item
+
+Type: *LocalizedString*

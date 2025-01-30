@@ -156,6 +156,7 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/server.InvalidEntityError*](../../minecraft/server/InvalidEntityError.md)
 
 ### **title**
 `

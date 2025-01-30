@@ -215,7 +215,7 @@ Type: [*PlayerBreakBlockAfterEventSignal*](PlayerBreakBlockAfterEventSignal.md)
 ### **playerButtonInput**
 `read-only playerButtonInput: PlayerButtonInputAfterEventSignal;`
 
-This event fires when an {@link @minecraft/Server.InputButton} state is changed.
+This event fires when an [*@minecraft/server.InputButton*](../../minecraft/server/InputButton.md) state is changed.
 
 Type: [*PlayerButtonInputAfterEventSignal*](PlayerButtonInputAfterEventSignal.md)
 
@@ -240,17 +240,12 @@ Type: [*PlayerEmoteAfterEventSignal*](PlayerEmoteAfterEventSignal.md)
 
 Type: [*PlayerGameModeChangeAfterEventSignal*](PlayerGameModeChangeAfterEventSignal.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInputModeChange**
 `read-only playerInputModeChange: PlayerInputModeChangeAfterEventSignal;`
 
-This event fires when a player's {@link @minecraft/Server.InputMode} changes.
+This event fires when a player's [*@minecraft/server.InputMode*](../../minecraft/server/InputMode.md) changes.
 
 Type: [*PlayerInputModeChangeAfterEventSignal*](PlayerInputModeChangeAfterEventSignal.md)
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **playerInputPermissionCategoryChange**
 `read-only playerInputPermissionCategoryChange: PlayerInputPermissionCategoryChangeAfterEventSignal;`
@@ -350,9 +345,12 @@ This event will be triggered when the weather changes within Minecraft.
 
 Type: [*WeatherChangeAfterEventSignal*](WeatherChangeAfterEventSignal.md)
 
-### **worldInitialize**
-`read-only worldInitialize: WorldInitializeAfterEventSignal;`
+::: moniker range="=minecraft-bedrock-experimental"
+### **worldLoad**
+`read-only worldLoad: WorldLoadAfterEventSignal;`
 
-This event fires when the script environment is initialized on a World.
+Type: [*WorldLoadAfterEventSignal*](WorldLoadAfterEventSignal.md)
 
-Type: [*WorldInitializeAfterEventSignal*](WorldInitializeAfterEventSignal.md)
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

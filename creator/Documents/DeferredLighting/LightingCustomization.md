@@ -68,7 +68,13 @@ Values can be described either as an array of 4 numerical values from the range 
 
 The `"emissive"` object allows for some control over how emissive light sources behave. These parameters can be especially useful for fine-tuning emissive light sources for certain types of tone mapping.
 
->- `"desaturation"` a factor from [0-1] that controls how much the albedo of a given pixel is desaturated when computing the color of emissive light. A value of 0 results in no desaturation, while a value of 1 results in full desaturation of the albedo color.
+>- `"desaturation"` is a factor from [0.0-1.0] that controls how much the albedo of a given pixel is desaturated when computing the color of emissive light. A value of 0.0 results in no desaturation, while a value of 1.0 results in full desaturation of the albedo color.
+
+## Sky
+
+The `"sky"` object allows you to control some properties of the sky in terms of its contribution as a light source. The sky contributes significantly to indirect diffuse (meaning indirect bounce light from the sky) and to indirect specular (reflections of the sky, clouds, etc...).
+
+>- `"intensity"` is a factor from [0.1-1.0] that controls how much sky light is factored into the indirect term for both diffuse and specular. A value of 1.0 will cause the sky to contribute more to indirect light and will result in shadows being less dark, while a value of 0.1 will result in darker shadows, because there is less indirect light contributed from the sky. The default value, if not provided, is 1.0.
 
 ## Lighting JSON Schemas
 
@@ -76,7 +82,8 @@ File location: **lighting/global.json**
 
 Schema Version|Updates
 --|--
-`1.21.60`|Changed the data type for sun and moon colors from RGBA to RGB.
+`1.21.70`|Added a new object for controlling the sky intensity
+`1.21.60`|Changed the data type for sun and moon colors from RGBA to RGB
 `1.21.40`|N/A
 
 ```json
@@ -104,12 +111,16 @@ Schema Version|Updates
         },
         object "emissive"
         {
-            float "desaturation" // The amount of desaturation to apply to albedo color values during emissive light calculation; values range from [0, 1]
+            float "desaturation" // The amount of desaturation to apply to albedo color values during emissive light calculation; values range from [0.0, 1.0]
         },
         object "ambient"
         {
             float "illuminance",  // How bright the ambient light is; measured in lux (lx)
             color "color" // The RGB color that the ambient light contributes to surface lighting; supports RGB array or HEX string
+        },
+        object "sky"
+        {
+            float "intensity" // Scales how much energy the sky contributes to lighting; values range from [0.1, 1.0]
         }
     }
 }
@@ -163,7 +174,7 @@ File location: **pbr/global.json**
 
 ```json
 {
-    "format_version": "1.21.60",
+    "format_version": "1.21.70",
     "minecraft:lighting_settings": {
         "description": {
             "identifier": "my_pack:default_lighting"
@@ -193,6 +204,9 @@ File location: **pbr/global.json**
         "ambient": {
             "illuminance": 0.02,
             "color": "#ffffff"
+        },
+        "sky": {
+            "intensity": 1.0
         }
     }
 }

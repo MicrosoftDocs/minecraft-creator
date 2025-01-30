@@ -16,12 +16,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.16.0"
+    "version": "1.17.0"
 }
 ```
 
 ## Available Versions
-- `1.18.0-beta`
+- `2.0.0-beta`
+- `1.17.0`
 - `1.16.0`
 - `1.15.0`
 - `1.14.0`
@@ -59,10 +60,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityComponentTypes](EntityComponentTypes.md)
 - [EntityDamageCause](EntityDamageCause.md)
 - [EntityInitializationCause](EntityInitializationCause.md)
+- [EntitySpawnCategory](EntitySpawnCategory.md)
+- [EntitySpawnReason](EntitySpawnReason.md)
 - [EquipmentSlot](EquipmentSlot.md)
 - [FluidType](FluidType.md)
 - [GameMode](GameMode.md)
 - [GameRule](GameRule.md)
+- [GraphicsMode](GraphicsMode.md)
 - [HudElement](HudElement.md)
 - [HudVisibility](HudVisibility.md)
 - [InputButton](InputButton.md)
@@ -85,6 +89,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [StructureRotation](StructureRotation.md)
 - [StructureSaveMode](StructureSaveMode.md)
 - [TimeOfDay](TimeOfDay.md)
+- [TintMethod](TintMethod.md)
 - [WatchdogTerminateReason](WatchdogTerminateReason.md)
 - [WeatherType](WeatherType.md)
 
@@ -120,6 +125,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockFluidContainerComponent](BlockFluidContainerComponent.md)
 - [BlockInventoryComponent](BlockInventoryComponent.md)
 - [BlockLocationIterator](BlockLocationIterator.md)
+- [BlockMapColorComponent](BlockMapColorComponent.md)
 - [BlockPermutation](BlockPermutation.md)
 - [BlockPistonComponent](BlockPistonComponent.md)
 - [BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)
@@ -241,6 +247,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntitySkinIdComponent](EntitySkinIdComponent.md)
 - [EntitySpawnAfterEvent](EntitySpawnAfterEvent.md)
 - [EntitySpawnAfterEventSignal](EntitySpawnAfterEventSignal.md)
+- [EntitySpawnCallbackArgs](EntitySpawnCallbackArgs.md)
+- [EntitySpawnType](EntitySpawnType.md)
 - [EntityStrengthComponent](EntityStrengthComponent.md)
 - [EntityTameableComponent](EntityTameableComponent.md)
 - [EntityTameMountComponent](EntityTameMountComponent.md)
@@ -262,12 +270,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [GameRuleChangeAfterEvent](GameRuleChangeAfterEvent.md)
 - [GameRuleChangeAfterEventSignal](GameRuleChangeAfterEventSignal.md)
 - [GameRules](GameRules.md)
-- [IButtonPushAfterEventSignal](IButtonPushAfterEventSignal.md)
-- [ILeverActionAfterEventSignal](ILeverActionAfterEventSignal.md)
 - [InputInfo](InputInfo.md)
-- [IPlayerJoinAfterEventSignal](IPlayerJoinAfterEventSignal.md)
-- [IPlayerLeaveAfterEventSignal](IPlayerLeaveAfterEventSignal.md)
-- [IPlayerSpawnAfterEventSignal](IPlayerSpawnAfterEventSignal.md)
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
 - [ItemCompleteUseEvent](ItemCompleteUseEvent.md)
@@ -313,8 +316,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [LeverActionAfterEventSignal](LeverActionAfterEventSignal.md)
 - [ListBlockVolume](ListBlockVolume.md)
 - [MessageReceiveAfterEvent](MessageReceiveAfterEvent.md)
-- [MinecraftDimensionTypes](MinecraftDimensionTypes.md)
 - [MolangVariableMap](MolangVariableMap.md)
+- [ObstructionCallbackArgs](ObstructionCallbackArgs.md)
 - [PistonActivateAfterEvent](PistonActivateAfterEvent.md)
 - [PistonActivateAfterEventSignal](PistonActivateAfterEventSignal.md)
 - [Player](Player.md)
@@ -383,6 +386,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ServerMessageAfterEventSignal](ServerMessageAfterEventSignal.md)
 - [ShutdownBeforeEventSignal](ShutdownBeforeEventSignal.md)
 - [ShutdownEvent](ShutdownEvent.md)
+- [SpawnRulesRegistry](SpawnRulesRegistry.md)
+- [StartupBeforeEventSignal](StartupBeforeEventSignal.md)
+- [StartupEvent](StartupEvent.md)
 - [Structure](Structure.md)
 - [StructureManager](StructureManager.md)
 - [System](System.md)
@@ -403,10 +409,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [World](World.md)
 - [WorldAfterEvents](WorldAfterEvents.md)
 - [WorldBeforeEvents](WorldBeforeEvents.md)
-- [WorldInitializeAfterEvent](WorldInitializeAfterEvent.md)
-- [WorldInitializeAfterEventSignal](WorldInitializeAfterEventSignal.md)
-- [WorldInitializeBeforeEvent](WorldInitializeBeforeEvent.md)
-- [WorldInitializeBeforeEventSignal](WorldInitializeBeforeEventSignal.md)
+- [WorldLoadAfterEvent](WorldLoadAfterEvent.md)
+- [WorldLoadAfterEventSignal](WorldLoadAfterEventSignal.md)
 
 ## Interfaces
 - [BiomeSearchOptions](BiomeSearchOptions.md)
@@ -503,6 +507,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
 - [NamespaceNameError](NamespaceNameError.md)
 - [PlaceJigsawError](PlaceJigsawError.md)
+- [SpawnRulesInvalidRegistryError](SpawnRulesInvalidRegistryError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
 
 ## Constants

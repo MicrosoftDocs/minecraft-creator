@@ -12,7 +12,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-All the different input buttons that are supported. Use with {@link @minecraft/server.PlayerInput.getButtonState} via {@link @minecraft/server.Player.input} or [*@minecraft/server.PlayerButtonInputAfterEvent*](../../minecraft/server/PlayerButtonInputAfterEvent.md) via [*@minecraft/server.WorldAfterEvents.playerButtonInput*](../../minecraft/server/WorldAfterEvents.md#playerbuttoninput)
+All the different input buttons that are supported. Use with [*@minecraft/server.InputInfo.getButtonState*](../../minecraft/server/InputInfo.md#getbuttonstate) via [*@minecraft/server.Player.inputInfo*](../../minecraft/server/Player.md#inputinfo) or [*@minecraft/server.PlayerButtonInputAfterEvent*](../../minecraft/server/PlayerButtonInputAfterEvent.md) via [*@minecraft/server.WorldAfterEvents.playerButtonInput*](../../minecraft/server/WorldAfterEvents.md#playerbuttoninput)
 
 ## Constants
 ### **Jump**

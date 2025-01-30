@@ -204,6 +204,8 @@
             href: Documents/SystemRunGuide.md
           - name: Script Module Versioning
             href: Documents/ScriptVersioning.md
+          - name: Scripting v2.0.0 Overview
+            href: Documents/Scriptingv2.0.0Overview.md
           - name: Use Script Along with Dedicated Servers
             href: Documents/ScriptingServers.md
         - name: Introduction to Scoreboards
@@ -238,6 +240,10 @@
           href: Documents/Structures/JigsawTutorial.md
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
+        - name: A Simple Feature Tutorial
+          href: Documents/FeaturesTutorial_1.md
+        - name: A More Complex Feature Tutorial
+          href: Documents/FeaturesTutorial_2.md
         - name: Data-Driven Overworld Height and Void Generation
           href: Documents/DataDrivenOverworldHeight.md
         - name: Fog in Resource Packs
@@ -304,6 +310,8 @@
           href: Documents/RecipeIntroduction.md
         - name: Adding Custom Items
           href: Documents/AddCustomItems.md
+        - name: Introduction to Enchantments
+          href: Documents/IntroToEnchantments.md
     - name: Blocks
       items:
         - name: Block States and Permutations
@@ -600,6 +608,8 @@
         href: Documents/Practices/LatestPlatformVersion.md
       - name: "Building Cooperative Add-Ons"
         href: Documents/Practices/GuidelinesForBuildingCooperativeAddons.md
+      - name: "Improving Performance and Resource Usage"
+        href: Documents/Practices/ImprovingPerformanceAndResourceUsage.md
       - name: "Tips for Using This Site"
         href: Documents/TipsForUsingThisSite.md                  
     - name: Contribute

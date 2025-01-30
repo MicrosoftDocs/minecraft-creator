@@ -23,6 +23,9 @@ Unless otherwise specified by the parent shape - the BlockLocationIterator will 
 
 ## Methods
 - [[Symbol.iterator]](#[symbol.iterator])
+::: moniker range="=minecraft-bedrock-experimental"
+- [isValid](#isvalid)
+::: moniker-end
 - [next](#next)
 
 ### **[Symbol.iterator]**
@@ -34,6 +37,24 @@ Unless otherwise specified by the parent shape - the BlockLocationIterator will 
   
 Notes:
 - This function can't be called in read-only mode.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **isValid**
+`
+isValid(): boolean
+`
+
+Checks if the underlining block volume has been invalidated. Will return false if the block volume was modified between creating the iterator and iterating it, and true otherwise.
+
+**Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md)
+::: moniker-end
 
 ### **next**
 `

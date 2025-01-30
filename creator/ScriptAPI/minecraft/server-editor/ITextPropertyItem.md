@@ -11,7 +11,7 @@ description: Contents of the @minecraft/server-editor.ITextPropertyItem class.
 ## Extends
 - *IPropertyItemBase*
 
-A property item which supports Vector3 properties
+A property item which supports Text properties
 
 ## Properties
 

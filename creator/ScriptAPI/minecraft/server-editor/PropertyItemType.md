@@ -29,8 +29,12 @@ Type of item that can be added to the property pane
 `Dropdown = editorUI:Dropdown`
 ### **Image**
 `Image = editorUI:Image`
+### **Link**
+`Link = editorUI:Link`
 ### **Number**
 `Number = editorUI:Number`
+### **ProgressIndicator**
+`ProgressIndicator = editorUI:ProgressIndicator`
 ### **String**
 `String = editorUI:String`
 ### **SubPane**
