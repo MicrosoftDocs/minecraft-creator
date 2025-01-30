@@ -304,6 +304,8 @@
           href: Documents/RecipeIntroduction.md
         - name: Adding Custom Items
           href: Documents/AddCustomItems.md
+        - name: Introduction to Enchantments
+          href: Documents/IntroToEnchantments.md
     - name: Blocks
       items:
         - name: Block States and Permutations
