@@ -602,6 +602,8 @@
         href: Documents/Practices/LatestPlatformVersion.md
       - name: "Building Cooperative Add-Ons"
         href: Documents/Practices/GuidelinesForBuildingCooperativeAddons.md
+      - name: "Improving Performance and Resource Usage"
+        href: Documents/Practices/ImprovingPerformanceAndResourceUsage.md
       - name: "Tips for Using This Site"
         href: Documents/TipsForUsingThisSite.md                  
     - name: Contribute

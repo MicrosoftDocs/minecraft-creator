@@ -103,6 +103,7 @@ Many players will add 10+ add-on packs to their worlds, which can cause problems
   - Aim for below 256x256 for blocks and items.
   - Aim for below 2048x2048 for everything else.
   - Prioritize efficient use of space over power-of-2 (e.g., 512x512, 1024x1024) sizing.
+  - See [Improving Performance and Resource Usage](./ImprovingPerformanceAndResourceUsage.md) for more tips.
 - Use techniques like Molang and materials to produce color variants of textures, rather than creating, say, 8 color-tinted texture variants of the same texture.
 
 ## Types of Customizations to Avoid
