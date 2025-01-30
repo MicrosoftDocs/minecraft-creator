@@ -136,10 +136,13 @@ In **sound_definitions.json**, add the following code:
 }
 ```
 
-When we test our sound again, you should notice that opening a chest will play one of your two chest open sounds randomly!
+When we test our sound again, you should notice that opening a chest will play one of your two chest open sounds randomly! 
 
->[!Note]
-> Creating custom sounds is limited to replacing sounds that currently exist and adding additional sounds to categories that currently exist. Adding "brand new" sounds that don't currently exist in the game is not currently possible.
+### Using the /playsound command
+
+You can also add custom sounds that aren't played by in-game events. You can use the `/playsound` command to play any sound in the game, including the sounds added in your resource packs. Even if your sounds don't play automatically, you can still play them manually or use resources like command blocks to play your sounds at appropriate times based on your world and game modes.
+
+To learn more about the `/playsound` command, see the [reference docs](./commands/playsound.md).
 
 ## Next Steps
 
