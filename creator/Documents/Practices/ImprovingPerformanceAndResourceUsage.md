@@ -194,7 +194,7 @@ Try not to use long running commands or script operations often (e.g. a big bloc
 
 Consider creating your own in-game performance toggles with varying levels of fidelity and features.
 
-With newer script APIs for getting at the rough outlines of a player's client system [e.g., player.clientSystemInfo](../../ScriptAPI/minecraft/server/ClientSystemInfo.md), you can key time-intensive behaviors (e.g., spawning mobs) based on the rough outlines of performance (e.g., the more render distance a player has, assumedly the more performant their device is.)
+With newer script APIs for getting at the rough outlines of a player's client system [e.g., player.clientSystemInfo](../../ScriptAPI/minecraft/server/ClientSystemInfo.md), you can key time-intensive behaviors (e.g., spawning particles) based on the rough outlines of performance (e.g., the more render distance a player has, assumedly the more performant their device is.) You will want to carefully ensure that the fundamental gameplay experience doesn't change depending on the performance profile of the player's device, however - for example, you don't want that fewer monsters spawn in a given area if the client device information is on the lower end.
 
 Prepare for low end devices by testing on these devices as early as possible in your development process. You don't know how it's going to perform until you test.
 
