@@ -10,6 +10,20 @@ description: Contents of the @minecraft/server.Camera class.
 
 Contains methods relating to the active camera for the specified player.
 
+## Properties
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **isValid**
+`read-only isValid: boolean;`
+
+Returns whether the Camera is valid to access and use. A Camera is considered valid when the owning Player of the Camera is loaded and valid itself.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ## Methods
 - [clear](#clear)
 - [fade](#fade)

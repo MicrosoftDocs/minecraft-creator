@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: minecraft/server.PlayerInputModeChangeAfterEvent Class
 description: Contents of the @minecraft/server.PlayerInputModeChangeAfterEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerInputModeChangeAfterEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Event data for when a player input mode changes.
 

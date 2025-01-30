@@ -8,13 +8,13 @@ ms.service: minecraft-bedrock-edition
 
 # Features Documentation - Introduction to Features
 
-Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or an entity, it's probably a feature!
+Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or an entity, it's probably a feature.
 
 Features can be standalone or composed of multiple sub-features. In practice, most features in Minecraft are defined as a chain of two or more features. These chains typically end with features that place blocks in the world. Other feature types control flow such as conditional, sequential, or random distribution.
 
 ## JSON Format
 
-All features must specify the version that they target via the "format_version" field. The remainder of the data is contained in independent JSON sub-objects for each supported feature type. These feature types define the behavior of the feature and include properties specific to that behavior. To be valid, a definition must include exactly one of these type objects. See the full feature schema below for additional details and the full list of supported feature types.
+All features must specify the version that they target via the `"format_version"` field. The remainder of the data is contained in independent JSON sub-objects for each supported feature type. These feature types define the behavior of the feature and include properties specific to that behavior. To be valid, a definition must include exactly one of these type objects. See the full feature schema below for additional details and the full list of supported feature types.
 
 ### Example
 
@@ -76,7 +76,12 @@ Uses "distribution" field to define the scattering settings.
 
 ## Adding Features
 
-Features are read from JSON files in the "features" subfolder of behavior packs. Loading enforces one feature per file; the file name and the name of the feature must match. Feature names can include a namespace of the form `"namespace:feature_name"` to help distinguish them from features that may be in other behavior packs.
+Features are read from JSON files in the "features" subfolder of behavior packs. 
+
+Loading enforces one feature per file; the file name and the name of the feature must match. 
+
+Feature names can include a namespace of the form `"namespace:feature_name"` to help distinguish them from features that may be in other behavior packs.
+
 This namespace is not considered when matching the filename to the feature name. For example, in a file called `"my_tree_feature.json"`, both `"my_tree_feature"` and `"my_pack_name:my_tree_feature"` would be valid identifiers.
 
 If two behavior packs define the same feature name (including namespace), then the feature from the highest pack in the stack will be used. This allows users to override base features.
@@ -84,6 +89,7 @@ If two behavior packs define the same feature name (including namespace), then t
 ### Behavior pack definition
 
 To add features, you need to know the behavior pack structure for them.
+
 In your behavior pack folder you will want to create a **features** folder and  **feature_rules** folder. These two folders will contain all of the required JSON files to define your features.
 
 The `"min_engine_version"` for the pack needs to be 1.20.20.
@@ -231,7 +237,7 @@ To control the world generation pass at which a feature rule is applied, you can
 
 ### Coordinate Evaluation Order
 
-CoordinateEvaluationOrder enumerator, supported values are: "xyz", "xzy", "yxz", "yzx", "zxy", "zyx".
+`CoordinateEvaluationOrder` enumerator, supported values are: "xyz", "xzy", "yxz", "yzx", "zxy", "zyx".
 
 ### Coordinate Range
 

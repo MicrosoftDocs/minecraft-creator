@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.LeverActionAfterEventSignal class
 ---
 # LeverActionAfterEventSignal Class
 
-## Extends
-- [*ILeverActionAfterEventSignal*](ILeverActionAfterEventSignal.md)
-
 Manages callbacks that are connected to lever moves (activates or deactivates).
 
 #### Examples
@@ -51,6 +48,52 @@ function leverActionEvent(log: (message: string, status?: number) => void, targe
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/leverActionEvent.ts) code sandbox.
+
+## Methods
+::: moniker range="=minecraft-bedrock-experimental"
+- [subscribe](#subscribe)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [unsubscribe](#unsubscribe)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **subscribe**
+`
+subscribe(callback: (arg0: LeverActionAfterEvent) => void): (arg0: LeverActionAfterEvent) => void
+`
+
+Adds a callback that will be called when a lever is moved (activates or deactivates).
+
+#### **Parameters**
+- **callback**: (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
+
+**Returns** (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **unsubscribe**
+`
+unsubscribe(callback: (arg0: LeverActionAfterEvent) => void): void
+`
+
+Removes a callback from being called when a lever is moved (activates or deactivates).
+
+#### **Parameters**
+- **callback**: (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+::: moniker-end
 
 #### Examples
 

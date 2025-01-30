@@ -26,6 +26,13 @@ Icon resource for the item.
 
 Type: *string*
 
+### **iconAnimation**
+`iconAnimation: ImageAnimationData;`
+
+Animation data for sprite sheet icon image
+
+Type: *ImageAnimationData*
+
 ### **label**
 `label: string;`
 

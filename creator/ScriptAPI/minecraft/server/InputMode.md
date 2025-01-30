@@ -5,12 +5,8 @@ ms.author: jashir
 ms.service: minecraft-bedrock-edition
 title: .InputMode Enumeration
 description: Contents of the .InputMode enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # InputMode Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Describes the type of input of a device.
 

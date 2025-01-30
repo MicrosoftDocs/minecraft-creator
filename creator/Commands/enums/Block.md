@@ -32,6 +32,8 @@ Nether Gold Ore
 Nether Gold Ore
 - `minecraft:zombie_head`
 - `zombie_head`
+- `minecraft:leaf_litter`
+- `leaf_litter`
 - `minecraft:warped_door`
 Warped Door
 - `warped_door`
@@ -244,6 +246,8 @@ Warped Pressure Plate
 Warped Pressure Plate
 - `minecraft:stripped_acacia_wood`
 - `stripped_acacia_wood`
+- `minecraft:firefly_bush`
+- `firefly_bush`
 - `minecraft:diamond_block`
 Diamond Block
 - `diamond_block`
@@ -2544,6 +2548,8 @@ Bell
 Lectern
 - `lectern`
 Lectern
+- `minecraft:bush`
+- `bush`
 - `minecraft:stripped_crimson_stem`
 Stripped Crimson Stem
 - `stripped_crimson_stem`
@@ -2992,6 +2998,8 @@ Acacia Fence Gate
 Lit Deepslate Redstone Ore
 - `lit_deepslate_redstone_ore`
 Lit Deepslate Redstone Ore
+- `minecraft:wildflowers`
+- `wildflowers`
 - `minecraft:lit_smoker`
 Lit Smoker
 - `lit_smoker`

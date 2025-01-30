@@ -8,9 +8,6 @@ description: Contents of the @minecraft/server.ButtonPushAfterEventSignal class.
 ---
 # ButtonPushAfterEventSignal Class
 
-## Extends
-- [*IButtonPushAfterEventSignal*](IButtonPushAfterEventSignal.md)
-
 Manages callbacks that are connected to when a button is pushed.
 
 #### Examples
@@ -49,6 +46,52 @@ function buttonPushEvent(log: (message: string, status?: number) => void, target
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/buttonPushEvent.ts) code sandbox.
+
+## Methods
+::: moniker range="=minecraft-bedrock-experimental"
+- [subscribe](#subscribe)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [unsubscribe](#unsubscribe)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **subscribe**
+`
+subscribe(callback: (arg0: ButtonPushAfterEvent) => void): (arg0: ButtonPushAfterEvent) => void
+`
+
+Adds a callback that will be called when a button is pushed.
+
+#### **Parameters**
+- **callback**: (arg0: [*ButtonPushAfterEvent*](ButtonPushAfterEvent.md)) => *void*
+
+**Returns** (arg0: [*ButtonPushAfterEvent*](ButtonPushAfterEvent.md)) => *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **unsubscribe**
+`
+unsubscribe(callback: (arg0: ButtonPushAfterEvent) => void): void
+`
+
+Removes a callback from being called when a button is pushed.
+
+#### **Parameters**
+- **callback**: (arg0: [*ButtonPushAfterEvent*](ButtonPushAfterEvent.md)) => *void*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+::: moniker-end
 
 #### Examples
 

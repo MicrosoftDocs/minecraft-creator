@@ -58,6 +58,17 @@ Notes:
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
+### **isValid**
+`read-only isValid: boolean;`
+
+Returns true if this reference to a block is still valid (for example, if the block is unloaded, references to that block will no longer be valid.)
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **isWaterlogged**
 `read-only isWaterlogged: boolean;`
 
@@ -65,13 +76,9 @@ Returns or sets whether this block has water on it.
 
 Type: *boolean*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **location**
 `read-only location: Vector3;`
@@ -163,7 +170,6 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [isLiquidBlocking](#isliquidblocking)
 ::: moniker-end
-- [isValid](#isvalid)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [liquidCanFlowFromDirection](#liquidcanflowfromdirection)
 ::: moniker-end
@@ -175,9 +181,7 @@ Type: *number*
 - [offset](#offset)
 - [setPermutation](#setpermutation)
 - [setType](#settype)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setWaterlogged](#setwaterlogged)
-::: moniker-end
 - [south](#south)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [trySetPermutation](#trysetpermutation)
@@ -472,15 +476,6 @@ Notes:
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
-### **isValid**
-`
-isValid(): boolean
-`
-
-Returns true if this reference to a block is still valid (for example, if the block is unloaded, references to that block will no longer be valid.)
-
-**Returns** *boolean* - True if this block object is still working and valid.
-
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **liquidCanFlowFromDirection**
 `
@@ -615,7 +610,6 @@ Notes:
 - This function can throw errors.
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setWaterlogged**
 `
 setWaterlogged(isWaterlogged: boolean): void
@@ -627,15 +621,11 @@ Sets whether this block has a water logged state - for example, whether stairs a
 - **isWaterlogged**: *boolean*
   
   true if the block should have water within it.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **south**
 `

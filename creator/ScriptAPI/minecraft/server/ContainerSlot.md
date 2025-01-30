@@ -35,6 +35,18 @@ Notes:
   - This property can throw errors when used.
     - Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **isValid**
+`read-only isValid: boolean;`
+
+Returns whether the ContainerSlot is valid. The container slot is valid if the container exists and is loaded, and the slot index is valid.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **keepOnDeath**
 `keepOnDeath: boolean;`
 
@@ -117,7 +129,6 @@ Notes:
 - [hasItem](#hasitem)
 - [hasTag](#hastag)
 - [isStackableWith](#isstackablewith)
-- [isValid](#isvalid)
 - [setCanDestroy](#setcandestroy)
 - [setCanPlaceOn](#setcanplaceon)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -295,15 +306,6 @@ Returns whether this item stack can be stacked with the given `itemStack`. This 
 Notes:
 - This function can throw errors.
   - Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
-
-### **isValid**
-`
-isValid(): boolean
-`
-
-Returns whether the ContainerSlot is valid. The container slot is valid if the container exists and is loaded, and the slot index is valid.
-
-**Returns** *boolean*
 
 ### **setCanDestroy**
 `

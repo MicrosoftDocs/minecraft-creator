@@ -17,21 +17,21 @@ Base class for downstream Component implementations.
 
 ## Properties
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **isValid**
+`read-only isValid: boolean;`
+
+Returns whether the component is valid. A component is considered valid if its owner is valid, in addition to any addition to any additional validation required by the component.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **typeId**
 `read-only typeId: string;`
 
 Identifier of the component.
 
 Type: *string*
-
-## Methods
-- [isValid](#isvalid)
-
-### **isValid**
-`
-isValid(): boolean
-`
-
-Returns whether the component is valid. A component is considered valid if its owner is valid, in addition to any addition to any additional validation required by the component.
-
-**Returns** *boolean* - Whether the component is valid.

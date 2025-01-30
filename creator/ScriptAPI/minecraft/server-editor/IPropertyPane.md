@@ -53,8 +53,10 @@ Type: *boolean*
 - [addDropdown](#adddropdown)
 - [addDropdown_deprecated](#adddropdown_deprecated)
 - [addImage](#addimage)
+- [addLink](#addlink)
 - [addNumber](#addnumber)
 - [addNumber_deprecated](#addnumber_deprecated)
+- [addProgressIndicator](#addprogressindicator)
 - [addString](#addstring)
 - [addString_deprecated](#addstring_deprecated)
 - [addTable](#addtable)
@@ -226,6 +228,19 @@ Adds an image item to the pane.
 
 **Returns** *IImagePropertyItem*
 
+### **addLink**
+`
+addLink(value: IObservableProp<string>, options: ILinkPropertyItemOptions): ILinkPropertyItem
+`
+
+Adds a multiline Text item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<string>*
+- **options**: *ILinkPropertyItemOptions*
+
+**Returns** *ILinkPropertyItem*
+
 ### **addNumber**
 `
 addNumber(value: IObservableProp<number>, options: INumberPropertyItemOptions): INumberPropertyItem
@@ -252,6 +267,18 @@ Adds a number item to the pane.
 - **options**: *IPropertyItemOptionsNumber*
 
 **Returns** *IPropertyItem<T, Prop>*
+
+### **addProgressIndicator**
+`
+addProgressIndicator(options: IProgressIndicatorPropertyItemOptions): IProgressIndicatorPropertyItem
+`
+
+Adds a Progress Indicator item to the pane.
+
+#### **Parameters**
+- **options**: *IProgressIndicatorPropertyItemOptions*
+
+**Returns** *IProgressIndicatorPropertyItem*
 
 ### **addString**
 `

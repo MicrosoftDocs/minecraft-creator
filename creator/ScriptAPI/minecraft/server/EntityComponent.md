@@ -73,3 +73,7 @@ Base class for downstream entity components.
 The entity that owns this component. The entity will be undefined if it has been removed.
 
 Type: [*Entity*](Entity.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)

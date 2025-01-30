@@ -9,16 +9,21 @@ description: Changelog of the `@minecraft/server-ui` module
 # `@minecraft/server-ui` Changelog
 
 ## Version Changes
-- [1.4.0-beta](#140-beta)
+- [2.0.0-beta](#200-beta)
 - [1.3.0](#130)
 - [1.2.0](#120)
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 1.4.0-beta
-#### Changed version for module dependency `@minecraft/server` from `1.3.0` to `1.8.0`
+## 2.0.0-beta
+#### Added module dependency `@minecraft/server@2.0.0-beta` 
+#### Removed module dependency `@minecraft/server@1.3.0` 
+#### Changed *[`MessageFormData`](MessageFormData.md)*
+- Changed function *[`show`](MessageFormData.md#show)*
+  - Changed return type from Promise&lt;[*MessageFormResponse*](MessageFormResponse.md)&gt; (throws exceptions) to Promise&lt;[*MessageFormResponse*](MessageFormResponse.md)&gt; (throws exceptions)
 ## 1.3.0
-#### Changed version for module dependency `@minecraft/server` from `1.2.0` to `1.3.0`
+#### Added module dependency `@minecraft/server@1.3.0` 
+#### Removed module dependency `@minecraft/server@1.2.0` 
 #### Added *[`UIManager`](UIManager.md)*
 #### Added object `uiManager`
 ## 1.2.0

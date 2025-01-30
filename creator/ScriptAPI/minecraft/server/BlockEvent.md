@@ -38,7 +38,7 @@ Contains information regarding an event that impacts a specific block.
 ### **block**
 `read-only block: Block;`
 
-Block impacted by this event.
+Block currently in the world at the location of this event.
 
 Type: [*Block*](Block.md)
 
