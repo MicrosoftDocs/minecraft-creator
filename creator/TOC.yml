@@ -204,6 +204,8 @@
             href: Documents/SystemRunGuide.md
           - name: Script Module Versioning
             href: Documents/ScriptVersioning.md
+          - name: Scripting v2.0.0 Overview
+            href: Documents/Scriptingv2.0.0Overview.md
           - name: Use Script Along with Dedicated Servers
             href: Documents/ScriptingServers.md
         - name: Introduction to Scoreboards
