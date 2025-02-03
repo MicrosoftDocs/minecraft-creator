@@ -12,7 +12,7 @@ If you are new to Minecraft add-on development, creating your first working beha
 
 ### Building a Grizzly Bear with the Minecraft Entity Wizard
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmJb]
+>[!VIDEO 6eee691c-6562-45f0-a62b-994195d29a4b]
 
 Blockbench is a 3D modeling program with native support for many Minecraft 3D model formats. Once you have created your basic entity in the Entity Wizard, you can continue to use Blockbench to modify the model, and you can edit the behavior in an external program (more on that later).
 
