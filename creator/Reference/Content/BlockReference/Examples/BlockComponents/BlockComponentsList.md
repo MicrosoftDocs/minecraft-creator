@@ -35,6 +35,7 @@ Below is a list of all the available Block Components within Minecraft: Bedrock 
 |[minecraft:redstone_conductivity](minecraftBlock_redstone_conductivity.md)| True | Boolean | `minecraft:redstone_conductivity` specifies whether a block has redstone properties. |
 |[minecraft:selection_box](minecraftBlock_selection_box.md)|  Boolean / JSON Object | true |  Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.|
 |[tag](minecraftBlock_tag.md)| *not set* | JSON Object | `tag:` is an empty JSON Object that defines a tag to be added to a block. The component has no body or parameters. It is simply a flag, and when the block is parsed it will be added to the block's tag list.|
+|[minecraft:tick](minecraftBlock_tick.md)|*not set*|JSON Object|Configures the interval at which a block ticks.|
 |[minecraft:transformation](minecraftBlock_transformation.md)| rotation[0, 0, 0]| Vector [a, b, c]| The block's translation around the center of the cube in degrees. The rotation order is [x, y, z]. Angles need to be in multiples of 90.|
 
 ## Unsupported features
