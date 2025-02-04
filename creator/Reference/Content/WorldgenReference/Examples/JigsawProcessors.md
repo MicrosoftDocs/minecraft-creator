@@ -65,7 +65,15 @@ Note: Some filters can modify blocks directly as a side-effect of filter evaluat
 
 ## Example JSON
 
-This example shows how a Structure Template can be dynamically modified at generation time to replace blocks and add loot tables. The first rule randomly replaces 20% of Gravel blocks with Dirt blocks. The second rule replaces 10% of Gravel blocks with Coarse Dirt blocks. The third rule replaces 10% of Mud Bricks blocks with Packed Mud. Finally, the fourth rule replaces a single random Gravel block with a Suspicious Gravel block and adds a loot table to it.
+This example shows how a structure template can be dynamically modified at generation time to replace blocks and add loot tables. 
+
+The first rule randomly replaces 20% of gravel blocks with dirt blocks. 
+
+The second rule replaces 10% of gravel blocks with coarse dirt blocks. 
+
+The third rule replaces 10% of mud bricks blocks with packed mud. 
+
+Finally, the fourth rule replaces a single random gravel block with a suspicious gravel block and adds a loot table to it.
 
 ```json
 { 
@@ -113,17 +121,9 @@ This example shows how a Structure Template can be dynamically modified at gener
               "predicate_type": "minecraft:block_match", 
               "block": "minecraft:gravel" 
             }, 
-            "position_predicate": { 
-              "predicate_type": "minecraft:archeology_block_loot", 
-              "limit": 1, 
-              "loot_table": "loot_tables/entities/trail_ruins_brushable_block_common.json", 
-              "block_mapping": [ 
-                { 
-                  "key": "minecraft:gravel", 
-                  "value": "minecraft:suspicious_gravel" 
-                } 
-              ] 
-            } 
+            "output_state": {
+              "name": "minecraft:suspicious_gravel"
+            }
           } 
         ] 
       } 
