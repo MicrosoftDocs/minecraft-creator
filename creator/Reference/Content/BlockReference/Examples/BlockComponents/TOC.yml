@@ -40,5 +40,7 @@
    href: minecraftBlock_selection_box.md
  - name: tag
    href: minecraftBlock_tag.md
+ - name: tick
+   href: minecraftBlock_tick.md
  - name: transformation
    href: minecraftBlock_transformation.md
