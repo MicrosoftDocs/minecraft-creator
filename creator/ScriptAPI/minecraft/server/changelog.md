@@ -56,6 +56,8 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockComponentRegistry`](BlockComponentRegistry.md)*
 - Changed function *[`registerCustomComponent`](BlockComponentRegistry.md#registercustomcomponent)*
   - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
+#### Changed *[`BlockFluidContainerComponent`](BlockFluidContainerComponent.md)*
+- Changed constant *[`componentId`](BlockFluidContainerComponent.md#componentid)* from `minecraft:fluidContainer` to `minecraft:fluid_container`
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Added *[`BlockMapColorComponent`](BlockMapColorComponent.md)*
@@ -148,8 +150,6 @@ description: Changelog of the `@minecraft/server` module
 - Changed type for *[`container`](EntityInventoryComponent.md#container)* from [*Container*](Container.md) to [*Container*](Container.md) (throws exceptions)
 #### Added *[`EntityIterator`](EntityIterator.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
-#### Added *[`EntitySpawnCallbackArgs`](EntitySpawnCallbackArgs.md)*
-#### Added *[`EntitySpawnType`](EntitySpawnType.md)*
 #### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
 #### Added *[`FilterGroup`](FilterGroup.md)*
 #### Removed *IButtonPushAfterEventSignal*
@@ -177,7 +177,6 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`unsubscribe`](LeverActionAfterEventSignal.md#unsubscribe)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Removed *MinecraftDimensionTypes*
-#### Added *[`ObstructionCallbackArgs`](ObstructionCallbackArgs.md)*
 #### Changed *[`Player`](Player.md)*
 - Added property *[`graphicsMode`](Player.md#graphicsmode)*
 - Added function *[`eatItem`](Player.md#eatitem)*
@@ -223,7 +222,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Added *[`ShutdownBeforeEventSignal`](ShutdownBeforeEventSignal.md)*
 #### Added *[`ShutdownEvent`](ShutdownEvent.md)*
-#### Added *[`SpawnRulesRegistry`](SpawnRulesRegistry.md)*
 #### Added *[`StartupBeforeEventSignal`](StartupBeforeEventSignal.md)*
 #### Added *[`StartupEvent`](StartupEvent.md)*
 #### Changed *[`Structure`](Structure.md)*
@@ -242,7 +240,9 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`World`](World.md)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getAimAssist`](World.md#getaimassist)*
+- Added function *[`getDifficulty`](World.md#getdifficulty)*
 - Removed function *playSound*
+- Added function *[`setDifficulty`](World.md#setdifficulty)*
 - Added function *[`setDynamicProperties`](World.md#setdynamicproperties)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
@@ -261,6 +261,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`WorldLoadAfterEvent`](WorldLoadAfterEvent.md)*
 #### Added *[`WorldLoadAfterEventSignal`](WorldLoadAfterEventSignal.md)*
 #### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
+#### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
+- Changed value `FluidContainer` from `minecraft:fluidContainer` to `minecraft:fluid_container`
 #### Added enum [`ButtonState`](ButtonState.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
@@ -269,8 +271,6 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Npc`
 #### Changed enum [`EntityDamageCause`](EntityDamageCause.md)
 - Removed value `suicide`
-#### Added enum [`EntitySpawnCategory`](EntitySpawnCategory.md)
-#### Added enum [`EntitySpawnReason`](EntitySpawnReason.md)
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
 #### Added enum [`GraphicsMode`](GraphicsMode.md)

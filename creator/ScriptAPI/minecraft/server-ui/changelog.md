@@ -18,9 +18,15 @@ description: Changelog of the `@minecraft/server-ui` module
 ## 2.0.0-beta
 #### Added module dependency `@minecraft/server@2.0.0-beta` 
 #### Removed module dependency `@minecraft/server@1.3.0` 
+#### Changed *[`ActionFormData`](ActionFormData.md)*
+- Added function *[`header`](ActionFormData.md#header)*
+- Added function *[`label`](ActionFormData.md#label)*
 #### Changed *[`MessageFormData`](MessageFormData.md)*
 - Changed function *[`show`](MessageFormData.md#show)*
   - Changed return type from Promise&lt;[*MessageFormResponse*](MessageFormResponse.md)&gt; (throws exceptions) to Promise&lt;[*MessageFormResponse*](MessageFormResponse.md)&gt; (throws exceptions)
+#### Changed *[`ModalFormData`](ModalFormData.md)*
+- Added function *[`header`](ModalFormData.md#header)*
+- Added function *[`label`](ModalFormData.md#label)*
 ## 1.3.0
 #### Added module dependency `@minecraft/server@1.3.0` 
 #### Removed module dependency `@minecraft/server@1.2.0` 

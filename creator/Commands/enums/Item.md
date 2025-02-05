@@ -176,6 +176,8 @@ Lime Glazed Terracotta
 Trapdoor
 - `trapdoor`
 Trapdoor
+- `minecraft:cactus_flower`
+- `cactus_flower`
 - `minecraft:dead_brain_coral_fan`
 - `dead_brain_coral_fan`
 - `minecraft:seagrass`
@@ -1414,6 +1416,8 @@ Acacia Pressure Plate
 Raw Copper Block
 - `raw_copper_block`
 Raw Copper Block
+- `minecraft:tall_dry_grass`
+- `tall_dry_grass`
 - `minecraft:oxidized_cut_copper_slab`
 Oxidized Cut Copper Slab
 - `oxidized_cut_copper_slab`
@@ -1780,6 +1784,8 @@ Weathered Cut Copper Slab
 - `fern`
 - `minecraft:torchflower`
 - `torchflower`
+- `minecraft:short_dry_grass`
+- `short_dry_grass`
 - `minecraft:infested_stone`
 - `infested_stone`
 - `minecraft:pale_hanging_moss`
@@ -3508,6 +3514,10 @@ Chorus Fruit
 Popped Chorus Fruit
 - `popped_chorus_fruit`
 Popped Chorus Fruit
+- `minecraft:brown_egg`
+- `brown_egg`
+- `minecraft:blue_egg`
+- `blue_egg`
 - `minecraft:leather_helmet`
 Leather Helmet
 - `leather_helmet`

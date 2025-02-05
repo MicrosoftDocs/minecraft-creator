@@ -38,7 +38,10 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:cake`
 - `minecraft:lodestone`
+- `minecraft:pink_dye_from_cactus_flower`
+- `minecraft:pumpkin_pie`
 - `minecraft:yellow_dye_from_wildflowers`
 - `minecraft:chiseled_resin_bricks_from_slabs`
 - `minecraft:creaking_heart`
@@ -625,7 +628,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:brown_dye_from_cocoa_beans`
 - `minecraft:brush`
 - `minecraft:bucket`
-- `minecraft:cake`
 - `minecraft:calibrated_sculk_sensor`
 - `minecraft:campfire`
 - `minecraft:candle`
@@ -976,7 +978,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:polished_deepslate_wall_from_polished_deepslate_stonecut`
 - `minecraft:prismarine`
 - `minecraft:prismarine_stairs`
-- `minecraft:pumpkin_pie`
 - `minecraft:pumpkin_seeds`
 - `minecraft:purple_candle`
 - `minecraft:purple_dye`
