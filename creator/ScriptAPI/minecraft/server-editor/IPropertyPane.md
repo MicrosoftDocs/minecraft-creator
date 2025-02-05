@@ -8,6 +8,9 @@ description: Contents of the @minecraft/server-editor.IPropertyPane class.
 ---
 # IPropertyPane Interface
 
+## Extends
+- *IPane*
+
 Property pane present dynamic content. It can be associated with an object and presented with different kind of controls.
 
 ## Properties
@@ -19,26 +22,12 @@ Pane state for being expanded or collapsed.
 
 Type: *boolean*
 
-### **id**
-`read-only id: string;`
-
-Unique ID for the property pane.
-
-Type: *string*
-
 ### **onPropertyPaneVisibilityUpdated**
 `onPropertyPaneVisibilityUpdated: EventSink<PropertyPaneVisibilityUpdate>;`
 
 Provides visibility change events
 
 Type: *EventSink<PropertyPaneVisibilityUpdate>*
-
-### **visible**
-`visible: boolean;`
-
-Check visibility of the pane
-
-Type: *boolean*
 
 ## Methods
 - [addBlockList](#addblocklist)
@@ -66,12 +55,9 @@ Type: *boolean*
 - [addVector3_deprecated](#addvector3_deprecated)
 - [collapse](#collapse)
 - [createSubPane](#createsubpane)
-- [expand](#expand)
 - [getTitle](#gettitle)
-- [hide](#hide)
 - [removeSubPane](#removesubpane)
 - [setTitle](#settitle)
-- [show](#show)
 
 ### **addBlockList**
 `
@@ -105,6 +91,8 @@ Adds a block table to the pane.
 `
 addBool(value: IObservableProp<boolean>, options: IBoolPropertyItemOptions): IBoolPropertyItem
 `
+
+Adds a togglable boolean item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<boolean>*
@@ -233,7 +221,7 @@ Adds an image item to the pane.
 addLink(value: IObservableProp<string>, options: ILinkPropertyItemOptions): ILinkPropertyItem
 `
 
-Adds a multiline Text item to the pane.
+Adds a Link item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<string>*
@@ -284,6 +272,8 @@ Adds a Progress Indicator item to the pane.
 `
 addString(value: IObservableProp<string>, options: IStringPropertyItemOptions): IStringPropertyItem
 `
+
+Adds an editable string item to the pane
 
 #### **Parameters**
 - **value**: *IObservableProp<string>*
@@ -395,32 +385,14 @@ Creates an sub pane that can store property items.
 
 **Returns** *ISubPanePropertyItem*
 
-### **expand**
-`
-expand(): void
-`
-
-Expand the pane.
-
-**Returns** *void*
-
 ### **getTitle**
 `
 getTitle(): LocalizedString | undefined
 `
 
-Returns property pane title.
+Returns pane title.
 
 **Returns** *LocalizedString | undefined*
-
-### **hide**
-`
-hide(): void
-`
-
-Hide the pane.
-
-**Returns** *void*
 
 ### **removeSubPane**
 `
@@ -439,20 +411,11 @@ Removes an existing sub pane.
 setTitle(newTitle: LocalizedString | undefined): void
 `
 
-Updates title of property pane.
+Updates title of pane.
 
 #### **Parameters**
 - **newTitle**: *LocalizedString | undefined*
   
   New title
-
-**Returns** *void*
-
-### **show**
-`
-show(): void
-`
-
-Show the pane and all of its property items.
 
 **Returns** *void*

@@ -55,6 +55,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:pale_garden_pale_oak_tree_feature_rules`
 - `minecraft:mesa_before_surface_gold_ore_feature`
 - `minecraft:overworld_underground_diamond_ore_feature_square`
+- `minecraft:mesa_after_surface_dry_grass_feature_rules`
 - `minecraft:overworld_underground_iron_ore_small_feature`
 - `minecraft:mesa_underground_gold_ore_feature`
 - `minecraft:overworld_underground_coal_ore_upper_feature`
@@ -74,8 +75,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:overworld_underground_coal_ore_lower_feature`
 - `minecraft:overworld_underground_copper_ore_feature`
 - `minecraft:overworld_underground_diamond_ore_feature`
-- `minecraft:plains_after_surface_double_plant_sunflower_feature_rules`
-- `minecraft:savanna_after_surface_tall_grass_feature_rules`
 - `minecraft:overworld_underground_diamond_ore_large_feature`
 - `minecraft:overworld_underground_iron_ore_middle_feature`
 - `minecraft:overworld_underground_diorite_feature`
@@ -88,6 +87,8 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:overworld_underground_extra_gravel_ore_feature`
 - `minecraft:overworld_underground_gold_ore_lower_feature`
 - `minecraft:overworld_underground_granite_feature`
+- `minecraft:desert_after_surface_dry_grass_feature_rules`
+- `minecraft:flower_forest_after_surface_flowers_feature_rules`
 - `minecraft:overworld_underground_granite_lower_feature`
 - `minecraft:overworld_underground_granite_upper_feature`
 - `minecraft:overworld_underground_iron_ore_feature`
@@ -116,6 +117,8 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:taiga_first_double_plant_fern_feature`
 - `minecraft:taiga_first_sweet_berry_bush_feature`
 - `minecraft:bamboo_jungle_after_surface_bamboo_feature`
+- `minecraft:savanna_after_surface_tall_grass_feature_rules`
+- `minecraft:plains_after_surface_double_plant_sunflower_feature_rules`
 - `minecraft:bamboo_jungle_after_surface_tall_grass_feature_rules`
 - `minecraft:overworld_underwater_magma_feature`
 - `minecraft:cherry_grove_after_surface_cherry_tree_feature_rules`
@@ -128,7 +131,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:deep_warm_ocean_after_surface_seagrass_feature_rules`
 - `minecraft:flower_forest_surface_flowers_feature`
 - `minecraft:swamp_after_surface_flowers_feature_rules`
-- `minecraft:flower_forest_after_surface_flowers_feature_rules`
 - `minecraft:meadow_after_surface_flowers_feature_rules`
 - `minecraft:forest_after_surface_tall_grass_feature_rules`
 - `minecraft:jungle_after_surface_flowers_feature_rules`
@@ -149,10 +151,10 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:overworld_after_surface_flowers_feature_rules`
 - `minecraft:plains_after_surface_flowers_feature_rules`
 - `minecraft:plains_after_surface_tall_grass_feature_rules`
-- `minecraft:taiga_after_surface_brown_mushroom_feature_rules`
 - `minecraft:river_after_surface_seagrass_feature_rules`
 - `minecraft:swamp_after_surface_seagrass_feature_rules`
 - `minecraft:swamp_after_surface_waterlily_feature_rules`
+- `minecraft:taiga_after_surface_brown_mushroom_feature_rules`
 - `minecraft:taiga_after_surface_red_mushroom_feature_rules`
 - `minecraft:taiga_after_surface_sweet_berry_bush_feature_rules`
 - `minecraft:taiga_after_surface_tall_grass_feature_rules`
@@ -279,6 +281,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:random_roofed_forest_feature`
 - `minecraft:diamond_ore_buried_feature`
 - `minecraft:scatter_meadow_wildflowers_feature`
+- `minecraft:short_dry_grass_feature`
 - `minecraft:scatter_sweet_berry_bush_feature`
 - `minecraft:jungle_tall_grass_feature`
 - `minecraft:random_oak_tree_with_beehive_from_sapling_feature`
@@ -302,6 +305,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:beehive_west_feature`
 - `minecraft:crimson_fungus_feature`
 - `minecraft:warped_roots_scatter_feature`
+- `minecraft:scatter_dry_grass_feature`
 - `minecraft:scatter_meadow_tall_grass_feature`
 - `minecraft:scatter_bush_feature`
 - `minecraft:optional_spruce_tree_with_vines_feature`
@@ -391,6 +395,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:optional_fallen_jungle_tree_feature`
 - `minecraft:jungle_tree_with_cocoa_feature`
 - `minecraft:noop_undecorated_jungle_tree_feature`
+- `minecraft:random_dry_grass_block_feature`
 - `minecraft:bush_feature`
 - `minecraft:optional_podzol_feature`
 - `minecraft:grass_double_plant_feature`
@@ -416,6 +421,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:fallen_oak_tree_feature`
 - `minecraft:fallen_jungle_tree_feature`
 - `minecraft:select_undecorated_jungle_tree_feature`
+- `minecraft:tall_dry_grass_feature`
 - `minecraft:pale_hanging_moss_feature`
 - `minecraft:grass_double_plant_lower_feature`
 - `minecraft:fixup_grass_double_plant_upper_position_feature`

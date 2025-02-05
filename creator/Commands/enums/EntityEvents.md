@@ -63,8 +63,6 @@ Entity, such as a bee, has exhausted its search for flowers and will now do some
 Entity, presumably a bee, will begin searching for a hive
 - `find_hive_timeout`
 Entity, such as a bee, has exhausted its search for a hive and will now do something else
-- `from_egg`
-Entity is spawned from an egg
 - `from_explosion`
 Entity is in a state that results from being in an explosion
 - `from_village`
@@ -321,6 +319,8 @@ Entity is from a wandering trader
 Entity goes and lays an egg
 - `minecraft:has_target`
 Entity has a target
+- `minecraft:hatch_cold`
+- `minecraft:hatch_warm`
 - `minecraft:hive_full`
 Hive is full
 - `minecraft:hopper_activate`
@@ -478,6 +478,7 @@ Entity spawns as a baby strider jockey
 Entity spawns as a butcher
 - `minecraft:spawn_cleric`
 Entity spawns as a cleric
+- `minecraft:spawn_cold`
 - `minecraft:spawn_emerging`
 Entity spawns emerging
 - `minecraft:spawn_farmer`
@@ -498,6 +499,8 @@ Entity spawns as a midnight cat
 Entity spawns as a skilled adult
 - `minecraft:spawn_tame_adult`
 - `minecraft:spawn_tame_baby`
+- `minecraft:spawn_temperate`
+- `minecraft:spawn_warm`
 - `minecraft:spawn_wild_adult`
 - `minecraft:spawn_wild_ashen`
 - `minecraft:spawn_wild_baby`

@@ -20,6 +20,18 @@
       href: minecraft/debug-utilities/PluginStats.md
     - name: RuntimeStats
       href: minecraft/debug-utilities/RuntimeStats.md
+  - name: minecraft/diagnostics
+    items:
+    - name: minecraft/diagnostics
+      href: minecraft/diagnostics/minecraft-diagnostics.md
+    - name: minecraft/diagnostics Changelog
+      href: minecraft/diagnostics/changelog.md
+    - name: SentryBreadcrumbLevel
+      href: minecraft/diagnostics/SentryBreadcrumbLevel.md
+    - name: Sentry
+      href: minecraft/diagnostics/Sentry.md
+    - name: SentryOptions
+      href: minecraft/diagnostics/SentryOptions.md
   - name: minecraft/server-admin
     items:
     - name: minecraft/server-admin
@@ -158,10 +170,6 @@
       href: minecraft/server/EntityDamageCause.md
     - name: EntityInitializationCause
       href: minecraft/server/EntityInitializationCause.md
-    - name: EntitySpawnCategory
-      href: minecraft/server/EntitySpawnCategory.md
-    - name: EntitySpawnReason
-      href: minecraft/server/EntitySpawnReason.md
     - name: EquipmentSlot
       href: minecraft/server/EquipmentSlot.md
     - name: FluidType
@@ -516,10 +524,6 @@
       href: minecraft/server/EntitySpawnAfterEvent.md
     - name: EntitySpawnAfterEventSignal
       href: minecraft/server/EntitySpawnAfterEventSignal.md
-    - name: EntitySpawnCallbackArgs
-      href: minecraft/server/EntitySpawnCallbackArgs.md
-    - name: EntitySpawnType
-      href: minecraft/server/EntitySpawnType.md
     - name: EntityStrengthComponent
       href: minecraft/server/EntityStrengthComponent.md
     - name: EntityTameableComponent
@@ -656,8 +660,6 @@
       href: minecraft/server/MessageReceiveAfterEvent.md
     - name: MolangVariableMap
       href: minecraft/server/MolangVariableMap.md
-    - name: ObstructionCallbackArgs
-      href: minecraft/server/ObstructionCallbackArgs.md
     - name: PistonActivateAfterEvent
       href: minecraft/server/PistonActivateAfterEvent.md
     - name: PistonActivateAfterEventSignal
@@ -794,8 +796,6 @@
       href: minecraft/server/ShutdownBeforeEventSignal.md
     - name: ShutdownEvent
       href: minecraft/server/ShutdownEvent.md
-    - name: SpawnRulesRegistry
-      href: minecraft/server/SpawnRulesRegistry.md
     - name: StartupBeforeEventSignal
       href: minecraft/server/StartupBeforeEventSignal.md
     - name: StartupEvent
@@ -1306,6 +1306,12 @@
       href: minecraft/server-editor/IMenuContainer.md
     - name: IMenuCreationParams
       href: minecraft/server-editor/IMenuCreationParams.md
+    - name: IModalControlPane
+      href: minecraft/server-editor/IModalControlPane.md
+    - name: IModalOverlayPane
+      href: minecraft/server-editor/IModalOverlayPane.md
+    - name: IModalOverlayPaneOptions
+      href: minecraft/server-editor/IModalOverlayPaneOptions.md
     - name: IModalTool
       href: minecraft/server-editor/IModalTool.md
     - name: IModalToolContainer
@@ -1316,6 +1322,8 @@
       href: minecraft/server-editor/INumberPropertyItemOptions.md
     - name: IObservable
       href: minecraft/server-editor/IObservable.md
+    - name: IPane
+      href: minecraft/server-editor/IPane.md
     - name: IPlayerLogger
       href: minecraft/server-editor/IPlayerLogger.md
     - name: IProgressIndicatorPropertyItem

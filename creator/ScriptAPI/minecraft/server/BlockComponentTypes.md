@@ -12,7 +12,7 @@ The types of block components that are accessible via function Block.getComponen
 
 ## Constants
 ### **FluidContainer**
-`FluidContainer = "minecraft:fluidContainer"`
+`FluidContainer = "minecraft:fluid_container"`
 ### **Inventory**
 `Inventory = "minecraft:inventory"`
 

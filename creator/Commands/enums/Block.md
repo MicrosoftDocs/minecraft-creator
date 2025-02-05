@@ -206,6 +206,8 @@ Lime Glazed Terracotta
 Trapdoor
 - `trapdoor`
 Trapdoor
+- `minecraft:cactus_flower`
+- `cactus_flower`
 - `minecraft:dead_brain_coral_fan`
 - `dead_brain_coral_fan`
 - `minecraft:seagrass`
@@ -1648,6 +1650,8 @@ Mangrove Wall Sign
 Raw Copper Block
 - `raw_copper_block`
 Raw Copper Block
+- `minecraft:tall_dry_grass`
+- `tall_dry_grass`
 - `minecraft:oxidized_cut_copper_slab`
 Oxidized Cut Copper Slab
 - `oxidized_cut_copper_slab`
@@ -2096,6 +2100,8 @@ Fire
 - `purpur_double_slab`
 - `minecraft:torchflower`
 - `torchflower`
+- `minecraft:short_dry_grass`
+- `short_dry_grass`
 - `minecraft:infested_stone`
 - `infested_stone`
 - `minecraft:pale_hanging_moss`

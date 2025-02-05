@@ -23,20 +23,3 @@ Type: [*BlockComponentRegistry*](BlockComponentRegistry.md)
 `read-only itemComponentRegistry: ItemComponentRegistry;`
 
 Type: [*ItemComponentRegistry*](ItemComponentRegistry.md)
-
-## Methods
-- [getSpawnRulesRegistry](#getspawnrulesregistry)
-
-### **getSpawnRulesRegistry**
-`
-getSpawnRulesRegistry(): SpawnRulesRegistry
-`
-
-**Returns** [*SpawnRulesRegistry*](SpawnRulesRegistry.md)
- 
-#### Required Experiments
-- Simplified Spawn Rules
-
-  
-Notes:
-- This function can't be called in read-only mode.
