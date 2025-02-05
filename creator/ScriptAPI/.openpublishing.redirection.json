@@ -1281,8 +1281,6 @@
         "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-net/minecraft-server-net",
         "redirect_document_id": false
     },
-
-
     {
         "source_path": "mojang-minecraft-ui/ActionFormData.md",
         "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/actionformdata",
@@ -1325,32 +1323,32 @@
     },
     {
         "source_path": "mojang-minecraft-ui/mojang-minecraft-ui.md",
-        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/minecraft-server-ui.md",
+        "redirect_url": "/minecraft/creator/scriptapi/minecraft/server-ui/minecraft-server-ui",
         "redirect_document_id": false
     },
     {
         "source_path": "Reference/content/featuresreference/examples/features/minecraftbeards_and_shavers.md",
-        "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
+        "redirect_url": "/reference/content/featuresreference/features/featurelist",
         "redirect_document_id": false
     },
     {
         "source_path": "Reference/content/featuresreference/examples/features/minecraftConditional_list.md",
-        "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
+        "redirect_url": "/reference/content/featuresreference/features/featurelist",
         "redirect_document_id": false
     },
     {
         "source_path": "Reference/content/featuresreference/examples/features/minecraftRect_layout.md",
-        "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
+        "redirect_url": "/reference/content/featuresreference/features/featurelist",
         "redirect_document_id": false
     },
     {
         "source_path": "Reference/content/featuresreference/examples/features/minecraftcan_surface.md",
-        "redirect_url": "/reference/content/featuresreference/features/featurelist.md",
+        "redirect_url": "/reference/content/featuresreference/features/featurelist",
         "redirect_document_id": false
     },
     {
         "source_path": "Reference/content/featuresreference/examples/features/minecraftunderwater_cave_carver.md",
-        "redirect_url": "/reference/content/featuresreference/features/minecraftunderwater_cave_carver_feature.md",
+        "redirect_url": "/reference/content/featuresreference/features/minecraftunderwater_cave_carver_feature",
         "redirect_document_id": false
     }
   ]
