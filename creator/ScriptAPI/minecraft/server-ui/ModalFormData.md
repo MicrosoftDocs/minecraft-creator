@@ -52,6 +52,12 @@ function showBasicModalForm(log: (message: string, status?: number) => void, tar
 ## Methods
 - [constructor](#constructor)
 - [dropdown](#dropdown)
+::: moniker range="=minecraft-bedrock-experimental"
+- [header](#header)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [label](#label)
+::: moniker-end
 - [show](#show)
 - [slider](#slider)
 - [submitButton](#submitbutton)
@@ -81,6 +87,44 @@ Adds a dropdown with choices to the form.
 - **defaultValueIndex**?: *number* = `null`
 
 **Returns** [*ModalFormData*](ModalFormData.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **header**
+`
+header(text: minecraftserver.RawMessage | string): ModalFormData
+`
+
+Adds a header to the form.
+
+#### **Parameters**
+- **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+  
+  Text to display.
+
+**Returns** [*ModalFormData*](ModalFormData.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **label**
+`
+label(text: minecraftserver.RawMessage | string): ModalFormData
+`
+
+Adds a label to the form.
+
+#### **Parameters**
+- **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+  
+  Text to display.
+
+**Returns** [*ModalFormData*](ModalFormData.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **show**
 `

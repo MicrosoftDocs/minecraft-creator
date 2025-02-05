@@ -80,6 +80,12 @@ function showFavoriteMonth(log: (message: string, status?: number) => void, targ
 - [constructor](#constructor)
 - [body](#body)
 - [button](#button)
+::: moniker range="=minecraft-bedrock-experimental"
+- [header](#header)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [label](#label)
+::: moniker-end
 - [show](#show)
 - [title](#title)
 
@@ -116,6 +122,44 @@ Adds a button to this form with an icon from a resource pack.
 - **iconPath**?: *string* = `null`
 
 **Returns** [*ActionFormData*](ActionFormData.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **header**
+`
+header(text: minecraftserver.RawMessage | string): ActionFormData
+`
+
+Adds a header to the form.
+
+#### **Parameters**
+- **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+  
+  Text to display.
+
+**Returns** [*ActionFormData*](ActionFormData.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **label**
+`
+label(text: minecraftserver.RawMessage | string): ActionFormData
+`
+
+Adds a label to the form.
+
+#### **Parameters**
+- **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+  
+  Text to display.
+
+**Returns** [*ActionFormData*](ActionFormData.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **show**
 `

@@ -103,6 +103,6 @@ Notes:
 ## Constants
 
 ### **componentId**
-`static read-only componentId = "minecraft:fluidContainer";`
+`static read-only componentId = "minecraft:fluid_container";`
 
 Type: *string*
