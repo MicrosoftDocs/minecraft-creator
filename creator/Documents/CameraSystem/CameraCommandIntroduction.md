@@ -220,7 +220,7 @@ Aim assist allows content creators to enable aim assist for players with specifi
 
 Focus target adds the ability to target and track a singular entity with various options. 
 
-Focus target is built on top of the existing `minecraft:free` camera. This behavior mimics a security camera where the creator could choose what entity they want to track with customizable features. 
+Focus target is built on top of the existing `minecraft:free` camera. This behavior mimics a security camera where the creator can choose what entity they want to track with customizable features. 
 
 Here are options you can use within the Minecraft console:
 
@@ -230,7 +230,7 @@ Apply an offset from the entity’s center (optional): `/camera @s target_entity
 
 Remove the targeting logic from the free camera: `/camera @s remove_target`
 
-Additionally, you can use the `/camera @s clear` command to remove the targeting logic, or when a target is 64 chunks (1024 blocks) away from the target camera’s location it will automatically be taken off.
+Additionally, you can use the `/camera @s clear` command to remove the targeting logic, or when a target is 64 chunks (1024 blocks) away from the target camera's location it will automatically be removed.
 
 In addition to these commands, you can also control a variety of options through a behavior pack:
 
