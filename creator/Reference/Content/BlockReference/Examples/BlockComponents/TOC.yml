@@ -12,6 +12,8 @@
    href: minecraftBlock_destructible_by_mining.md
  - name: display_name
    href: minecraftBlock_display_name.md
+ - name: entity_fall_on
+   href: minecraftBlock_entity_fall_on.md
  - name: flammable
    href: minecraftBlock_flammable.md
  - name: friction
