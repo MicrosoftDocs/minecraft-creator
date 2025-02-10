@@ -218,52 +218,81 @@ Aim assist allows content creators to enable aim assist for players with specifi
 
 **Focus Target**
 
->[!IMPORTANT]
-> This feature is experimental and it is behind the experimental toggle: **Creator Camera: Focus Target Camera**
+Focus target adds the ability to target and track a singular entity with various options. 
 
-Focus target adds the ability to target and track an entity with various options. Focus target is built on top of the existing `minecraft:free camera`. This behavior would mimic a security camera where the creator could choose what entity they want to track with customizable features.
+Focus target is built on top of the existing `minecraft:free` camera. This behavior mimics a security camera where the creator can choose what entity they want to track with customizable features. 
 
-In addition to adding, removing and applying a center offset to a focus target, you can also control the speed of rotation for targeting an entity and quickly snap the camera's focus onto a target entity.
+Here are options you can use within the Minecraft console:
 
-- Add a target: `/camera @s target_entity <entity>`
+Add a target: `/camera @s target_entity <entity>`
 
-- Remove a target: `/camera @s remove_target`
+Apply an offset from the entity’s center (optional): `/camera @s target_entity <entity> target_center_offset <x, y, z>`
 
-- Apply a center offset: `/camera @s target_entity <entity> target_center_offset <x, y, z>`
+Remove the targeting logic from the free camera: `/camera @s remove_target`
 
-- Set the rotation speed: `rotation_speed` uses a float that represents degrees turned per second.
+Additionally, you can use the `/camera @s clear` command to remove the targeting logic, or when a target is 64 chunks (1024 blocks) away from the target camera's location it will automatically be removed.
 
-- `snap_to_target` sets the camera's focus on the target entity for the first frame and continues tracking it with the given rotation speed. Only works when a valid `rotation_speed` is entered
+In addition to these commands, you can also control a variety of options through a behavior pack:
 
-  Example for `snap_to_target` and `rotation_speed`:
+- `"rotation_speed":` is a float value that controls the rotation speed of the target camera is degrees per second. Must be > 0.0f. By default this is set to 0.0f which is "perfect" tracking and will always keep up with the target no matter the speed.
 
-  ```json
-  { 
-    "format_version": "1.21.30",
-      "minecraft:camera_preset": {
-      "identifier": "example:custom_target",
-      "inherit_from": "minecraft:free",
-      "rotation_speed": 10.0,
-      "snap_to_target": true
-    } 
-  } 
-  ```
+-  `"snap_to_target":` is a Boolean that, if true and used in combination with a valid rotation speed, will make the camera snap to the target in the first frame of tracking, then continue to track at the given rotation speed. This value defaults to false where the camera will always rotate at the given valid rotation speed.
+
+Note for horizontal rotation limits: The direction the free camera is initially facing when spawned in will be what the target camera considers as 'zero' rotation. That means that if you were to have horizontal rotation limits, they would be based relative to where the target camera was FIRST looking.
+
+- `"horizontal_rotation_limit":` is a Vec2 of floats where the default is 360.0 degrees. The x value of the Vec2 is the rotation allowed to the left (CCW) turning of the target camera. The y value of the Vec2 is the rotation allowed to the right (CW) of the target camera. The sum of the x and y values cannot exceed 360.0 degrees. The default values are [ 0.0, 360.0 ].
+For example if you wanted 45.0 degrees of rotation to the left and 30.0 degrees of rotation to the right of where the free camera was first spawned in, you would enter `"horizontal_rotation_limit": [ 45.0, 30.0 ]`. Notice that both values are positive.
+
+  For vertical rotation limits, this rotation limit is based on world space, meaning that it does not depend on the initial rotation of the free camera:
+
+  - 0.0 degrees equates to straight down
+
+  - 90.0 degrees is the horizon 
+
+  - 180.0 degrees is straight up
+
+- `"vertical_rotation_limit":` is a Vec2 of floats where the default is 180.0 degrees rotation up and down. The sum of the x and y values cannot exceed 180.0 degrees. The default values are [ 0.0, 180.0 ].
+For example if you wanted 45.0 degrees of rotation down from the horizon and 30.0 degrees of rotation up from the horizon, you would enter "vertical_rotation_limit": [ 45.0, 120.0 ].
+
+- `"continue_targeting":` is a Boolean that will try to continually target the entity if it leaves either a valid rotation limit or tracking radius. Defaults to false meaning that after the entity has left valid rotation limits or tracking radius, the target camera will return to where it was initially looking.
+
+- `"tracking_radius":` is a float value denoting the block distance from the target camera that you want it to listen for the specified entity. Default value is 50.0 blocks.
+
+Here is an example camera file from a behavior pack with the default values:
+
+```json
+{
+  "format_version": "1.21.30",
+    "minecraft:camera_preset": {
+    "identifier": "example:custom_target",
+    "inherit_from": "minecraft:free",
+    "rotation_speed": 0.0,
+    "snap_to_target": false,
+    "horizontal_rotation_limit": [ 0.0, 360.0 ],
+    "vertical_rotation_limit": [ 0.0, 180.0 ],
+    "continue_targeting": false,
+    "tracking_radius": 50.0
+  }
+}
+```
 
 ### User Input
 
-When the "minecraft:free" camera (or a custom camera based on it) is used via the "set" option of the Camera command, user input will be handled as if the player is in the first-person camera view. This means that the player can continue to turn around, place blocks, or otherwise interact with the world as usual, they just will not see it from the typical viewpoint. If player input is not desired when the "minecraft:free" camera is active, other commands can be used to limit the player's abilities. See the "Combining Multiple Commands Together" section for some suggestions.
+When the `"minecraft:free"` camera (or a custom camera based on it) is used via the "set" option of the Camera command, user input will be handled as if the player is in the first-person camera view. This means that the player can continue to turn around, place blocks, or otherwise interact with the world as usual, they just will not see it from the typical viewpoint. 
+
+If player input is not desired when the `"minecraft:free"` camera is active, other commands can be used to limit the player's abilities. See the "Combining Multiple Commands Together" section for some suggestions.
 
 ## Persistence of Camera State
 
-There will be no persistence of camera state for players across game sessions. For example, if a player is under the effect of "/camera … set", then they exit the game in any way and rejoin later, they will load into the world as if no camera command is active. It will be up to the created world's logic to put rejoined players back into the desired camera state.
+There will be no persistence of camera state for players across game sessions. For example, if a player is under the effect of "`/camera … set`", then they exit the game in any way and rejoin later, they will load into the world as if no camera command is active. It will be up to the created world's logic to put rejoined players back into the desired camera state.
 
 During the time a player is loaded into a particular world, it will persist any position or rotation values that have been specified to override a camera's default JSON state.
 
-For example, if a player is set to a custom camera with a custom position:
+For example, if a player is set to a custom camera with a custom position like this:
 
 `/camera @a set example:my_camera pos 100 100 100`
 
-Then the player is put back to normal:
+... then the player is put back to normal:
 
 `/camera @a clear`
 
@@ -271,7 +300,7 @@ Later, the camera is put back to the custom camera:
 
 `/camera @a set example:my_camera`
 
-The example:my_camera camera will be at 100 100 100 instead of its default position specified in the JSON file. 
+The `example:my_camera` camera will be at 100 100 100 instead of its default position specified in the JSON file. 
 
 To return that camera back to normal, the player could either exit and rejoin the game, or the following command could activate the camera while returning it back to its default state:
 
