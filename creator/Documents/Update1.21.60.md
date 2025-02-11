@@ -11,7 +11,11 @@ ms.date: 02/07/2025 #Required; mm/dd/yyyy format.
 
 Minecraft Bedrock has been updated to 1.21.60 and there are a number of changes of note for Add-On creators. The following features do not require experimental toggles.
 
-## Editor 
+> [!VIDEO https://www.youtube.com/embed/nVL3eH4zwbg]
+*Video version of this article from the Minecraft Creator Channel*
+
+## Editor
+
 **Editor v0.8.5 The Sculpting Update**
 
 Editor is now available on stable builds and is accessible via the Minecraft Launcher on Windows PC.
@@ -43,8 +47,8 @@ Editor v0.8.5 added a number of new capabilities including:
   - WorldAfterEvents
     - [playerInputModeChange](../ScriptAPI/minecraft/server/WorldAfterEvents.md#playerinputmodechange)
 - Improvements to Input APIs to allow for InputPermission toggling of:  LateralMovement, Sneak, Jump, Mount, Dismount, MoveForward, MoveBackward, MoveLeft, and MoveRight. This includes:
-    - [inputpermission](../Commands/commands/inputpermission.md) command
-    - [InputPermissionCategory](../ScriptAPI/minecraft/server/InputPermissionCategory.md) script API enums
+  - [inputpermission](../Commands/commands/inputpermission.md) command
+  - [InputPermissionCategory](../ScriptAPI/minecraft/server/InputPermissionCategory.md) script API enums
 
 ## Blocks
 
@@ -71,19 +75,21 @@ Editor v0.8.5 added a number of new capabilities including:
 - Creative inventory order - Block and item order improvements allow custom blocks to be shown in the inventory alphabetically and supports nested blocks and items.
 
 ## Entities
+
 - The [minecraft:breedable](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_breedable.md) component now has a field that enables the offspring's [minecraft:color](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_color.md) attribute to be a blend of the parents' "minecraft:color".
   - "combine_parent_colors", If a color mutation will not happen, the baby will get a combination of the parents' colors if the colors are compatible. Color combinations follow the rules of DyeItem combinations. If the colors are not compatible the baby will get one of the parents colors chosen randomly
 - New entity filter [home_distance], which checks the distance of an entity from its home.
 - New entity filter [is_bound_to_creaking_heart], which checks if the Creaking Heart that spawned the subject Creaking still exists
 
 ## Camera
+
 - [Focus Target](../Documents/CameraSystem/CameraPresetFree.md#focus-target) - The command and JSON functionality moves to stable.
 
 ## Commands
 
 - [/loot](../Commands/commands/loot.md) Command - The mine overload that allows for custom loot tables for custom blocks is fully released.
 - Added support for input glyph replacement in [/me](../Commands/commands/me.md) and [/tell](../Commands/commands/tell.md) commands. For example, using input string ":_input_key.jump:" will be replaced with "JUMP" when using keyboard, or an emoji in case of using a gamepad.
-    
+
 ## What's Next
 
 Looking ahead, here's what you can expect coming in future releases.
@@ -109,6 +115,5 @@ Looking ahead, here's what you can expect coming in future releases.
 - server-ui - Improvements to sever-ui forms allowing for more formatting options.
 - Input APIs - Additional APIs allowing for detecting player input.
 - Scripting 2.0 changes - See [Scripting 2.0 Overview](../Documents/ScriptingV2.0.0Overview.md) for more information.
-
 
 For more information on what's next, follow our [Beta/Preview Changelogs](https://feedback.minecraft.net/hc/sections/360001185332).
