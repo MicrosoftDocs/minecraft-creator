@@ -55,6 +55,8 @@ Here is an introduction to [behavior packs](BehaviorPack.md).
     - `<entity_name>`
         - `<entity_name_function>`.mcfunction
     - [tick.json](TickJsonIntroduction.md)
+- [item_catalog](CraftingItemCatalogDocumentation.md)
+    - `crafting_item_catalog.json`
 - [items](AddCustomItems.md)
     - `<item_name>`.json
 - [loot_tables](IntroductionToLootTables.md)
