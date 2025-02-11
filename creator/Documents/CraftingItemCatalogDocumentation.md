@@ -146,7 +146,7 @@ Items 4, 5, and 6 are all added outside of a group as loose items.
 
 In all the previous examples we've only done one group and one category at a time. You are able to add multiple groups within a category, as well as add to multiple categories. The order in which groups are added to a category is the order that they will show up in game.
 
-**Example 4: item_catalog/crafting_item_catalog.json**
+### Example 4: item_catalog/crafting_item_catalog.json
 
 The following is an accumulation of all the above examples.
 
