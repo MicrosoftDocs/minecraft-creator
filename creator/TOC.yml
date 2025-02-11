@@ -4,6 +4,8 @@
       href: index.yml
     - name: "Updates and News"
       items:
+        - name: 1.21.60 Update Summary
+          href: Documents/Update1.21.60.md 
         - name: 1.21.50 Update Summary
           href: Documents/Update1.21.50.md 
         - name: 1.21.40 Update Summary
@@ -14,24 +16,24 @@
           href: Documents/Update1.21.20.md 
         - name: 1.21 Update Summary
           href: Documents/Update1.21.md 
-        - name: 1.20.80 Update Summary
-          href: Documents/Update1.20.80.md
-        - name: 1.20.70 Update Summary
-          href: Documents/Update1.20.70.md
-        - name: 1.20.60 Update Summary
-          href: Documents/Update1.20.60.md
-        - name: 1.20.50 Update Summary
-          href: Documents/Update1.20.50.md
-        - name: 1.20.40 Update Summary
-          href: Documents/Update1.20.40.md
-        - name: 1.20.30 Update Summary
-          href: Documents/Update1.20.30.md
-        - name: 1.20.10 Update Summary
-          href: Documents/Update1.20.10.md
-        - name: 1.20 Update Summary
-          href: Documents/Update1.20.md
         - name: "Update Summary Archive"
           items:
+            - name: 1.20.80 Update Summary
+              href: Documents/Update1.20.80.md
+            - name: 1.20.70 Update Summary
+              href: Documents/Update1.20.70.md
+            - name: 1.20.60 Update Summary
+              href: Documents/Update1.20.60.md
+            - name: 1.20.50 Update Summary
+              href: Documents/Update1.20.50.md
+            - name: 1.20.40 Update Summary
+              href: Documents/Update1.20.40.md
+            - name: 1.20.30 Update Summary
+              href: Documents/Update1.20.30.md
+            - name: 1.20.10 Update Summary
+              href: Documents/Update1.20.10.md
+            - name: 1.20 Update Summary
+              href: Documents/Update1.20.md
             - name: 1.19.80 Update Summary
               href: Documents/Update1.19.80.md
             - name: 1.19.70 Update Summary
@@ -358,48 +360,58 @@
               href: Documents/GameTestBuildYourFirstGameTest.md
         - name: "Bedrock Editor - World Editing"
           items:
-            - name: Editor Topics
+            - name: Topics
               href: Documents/BedrockEditor/index.yml
-            - name: Editor Overview
+            - name: Overview
               href: Documents/BedrockEditor/EditorOverview.md
-            - name: Editor Installation Guide
+            - name: Installation Guide
               href: Documents/BedrockEditor/EditorInstallation.md
-            - name: Editor Tutorial
+            - name: Tutorial
               href: Documents/BedrockEditor/EditorTutorial.md
-            - name: Editor Action Bar
+            - name: Action Bar
               href: Documents/BedrockEditor/EditorActionBar.md
-            - name: Editor Brush Tool
-              href: Documents/BedrockEditor/EditorBrushTool.md
-            - name: Editor Deferred Lighting
+            - name: Deferred Lighting
               href: Documents/BedrockEditor/EditorDeferredLighting.md
-            - name: Editor Structures Panel
-              href: Documents/BedrockEditor/EditorStructures.md
-            - name: Editor Keyboard Inputs
+            - name: Keyboard Inputs
               href: Documents/BedrockEditor/EditorKeyboardInputs.md
-            - name: Editor Paste Preview
+            - name: Paste Preview
               href: Documents/BedrockEditor/EditorPastePreview.md
-            - name: Editor Selection Tool
-              href: Documents/BedrockEditor/EditorSelectionTool.md
-            - name: Editor Summon Tool
-              href: Documents/BedrockEditor/EditorSummonTool.md
-            - name: Editor Flatten Tool
-              href: Documents/BedrockEditor/EditorFlattenTool.md
-            - name: Editor Smart Fill Tool
-              href: Documents/BedrockEditor/EditorFillTool.md
-            - name: Editor Terrain Tool
-              href: Documents/BedrockEditor/EditorTerrainTool.md
-            - name: Editor Extrude Tool
-              href: Documents/BedrockEditor/EditorExtrudeTool.md
-            - name: Editor Repeater Tool
-              href: Documents/BedrockEditor/EditorRepeaterTool.md
-            - name: Editor Farm Tool
-              href: Documents/BedrockEditor/EditorFarmTool.md
-            - name: Editor Tool Mode
+            - name: Tool Mode
               href: Documents/BedrockEditor/EditorToolMode.md
-            - name: Editor Workflow
+            - name: Workflow
               href: Documents/BedrockEditor/EditorWorkflow.md
-            - name: Editor World Options
+            - name: World Options
               href: Documents/BedrockEditor/EditorWorldOptions.md
+            - name: "Inspectors and Panels"
+              items:
+              - name: Block Inspector
+                href: Documents/BedrockEditor/EditorBlockInspector.md
+              - name: Entity Inspector
+                href: Documents/BedrockEditor/EditorEntityInspector.md
+              - name: Structures Panel
+                href: Documents/BedrockEditor/EditorStructures.md
+              - name: Workbench
+                href: Documents/BedrockEditor/EditorWorkbench.md
+            - name: Tools
+              items:
+              - name: Brush Tool
+                href: Documents/BedrockEditor/EditorBrushTool.md
+              - name: Selection Tool
+                href: Documents/BedrockEditor/EditorSelectionTool.md
+              - name: Summon Tool
+                href: Documents/BedrockEditor/EditorSummonTool.md
+              - name: Flatten Tool
+                href: Documents/BedrockEditor/EditorFlattenTool.md
+              - name: Smart Fill Tool
+                href: Documents/BedrockEditor/EditorFillTool.md
+              - name: Terrain Tool
+                href: Documents/BedrockEditor/EditorTerrainTool.md
+              - name: Extrude Tool
+                href: Documents/BedrockEditor/EditorExtrudeTool.md
+              - name: Repeater Tool
+                href: Documents/BedrockEditor/EditorRepeaterTool.md
+              - name: Farm Tool
+                href: Documents/BedrockEditor/EditorFarmTool.md
             - name: Building Editor Extensions
               href: Documents/BedrockEditor/EditorExtensionsIntroduction.md
         - name: "Blockbench - Model Editing"
