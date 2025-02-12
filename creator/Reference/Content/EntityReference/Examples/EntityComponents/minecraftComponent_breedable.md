@@ -31,6 +31,7 @@ ms.service: minecraft-bedrock-edition
 |[mutation_factor](#mutation_factor)|*not set* | JSON Object|  Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number corresponding with a higher likelihood of mutation.|
 |mutation_strategy| none| String| Strategy used for mutating variants and extra variants for offspring. Current valid alternatives are 'random' and 'none'.|
 |parent_centric_attribute_blending | -- | List| [EXPERIMENTAL] List of attributes that should benefit from parent centric attribute blending. For example, horses blend their health, movement, and jump_strength in their offspring.|
+|property_inheritance | -- | List| List of Entity Properties that should be inherited from the parent entities and potentially mutated.|
 |random_extra_variant_mutation_interval| 0| Range [a, b]| Range used to determine a random extra variant.|
 |random_variant_mutation_interval| 0| Range [a, b]| Range used to determine a random variant.|
 |require_full_health| false| Boolean|  If true, the entity needs to be at full health before it can breed. |
@@ -72,7 +73,7 @@ ms.service: minecraft-bedrock-edition
 
 |Name |Default Value  |Type  |Description  |
 |:----------|:----------|:----------|:----------|
-|color| 0| Decimal| The percentage chance of a mutation on the entity's color. |
+|color| 0| Decimal| The percentage chance of the offspring getting its color as if spawned rather than inheriting color from its parents. |
 |extra_baby_chance| 0| Decimal| Chance between 0.0 and 1.0 that up to 16 babies will spawn, where 1.0 is 100%. |
 |extra_variant| 0| Decimal| The percentage chance of a mutation on the entity's extra variant type. |
 |inherit_tamed| true|Boolean| If true, babies of tamed parents will be automatically tamed.|

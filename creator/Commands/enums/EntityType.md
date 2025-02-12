@@ -414,9 +414,9 @@ NPC
 NPC
 - `editor:ruler_pointer_selected`
 - `editor:location_pointer_idle`
+- `editor:location_pointer_selected`
 - `editor:ruler_idle`
 - `editor:map_marker`
-- `editor:location_pointer_selected`
 
 ## References
 The following commands reference this enum:

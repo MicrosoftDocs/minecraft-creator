@@ -245,6 +245,7 @@ Entity is calm
 - `minecraft:cat_gifted_owner`
 Entity is a cat who gifted its owner
 - `minecraft:clear_add_raid_omen`
+- `minecraft:cold_color`
 - `minecraft:command_block_activate`
 Entity activates a command block
 - `minecraft:command_block_deactivate`
@@ -575,6 +576,7 @@ Entity switches to ranged attack
 Entity's target is far enough
 - `minecraft:target_too_close`
 Entity's target it too close
+- `minecraft:temperate_color`
 - `minecraft:threat_detected`
 - `minecraft:to_full_puff`
 Entity fully puffs
@@ -613,6 +615,7 @@ Entity turns white
 - `minecraft:turn_yellow`
 Entity turns yellow
 - `minecraft:unroll`
+- `minecraft:warm_color`
 - `navigation_off_land`
 Entity navigates off land
 - `navigation_on_land`
