@@ -19,6 +19,8 @@ Type of item that can be added to the property pane
 `Boolean = editorUI:Boolean`
 ### **Button**
 `Button = editorUI:Button`
+### **ButtonPane**
+`ButtonPane = editorUI:ButtonPane`
 ### **ColorPicker**
 `ColorPicker = editorUI:ColorPicker`
 ### **ComboBox**

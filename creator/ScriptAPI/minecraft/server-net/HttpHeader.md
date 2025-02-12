@@ -46,7 +46,6 @@ Key of the HTTP header.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
 
 ### **value**
 `value: minecraftserveradmin.SecretString | string;`
@@ -56,7 +55,6 @@ Value of the HTTP header.
 Type: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/SecretString.md) | *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
 
 ## Methods
 - [constructor](#constructor)

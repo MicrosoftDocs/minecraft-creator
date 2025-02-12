@@ -11,10 +11,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
- 
-## Required Experiments
-- Camera Aim Assist
-
 
 Settings used with AimAssistRegistry.addCategory for creation of the AimAssistCategory.
 

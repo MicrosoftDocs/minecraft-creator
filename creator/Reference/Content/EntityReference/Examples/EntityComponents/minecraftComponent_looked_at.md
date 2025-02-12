@@ -21,6 +21,7 @@ ms.service: minecraft-bedrock-edition
 |look_at_locations | *not set* | List | A list of locations on the owner entity towards which line of sight checks are performed. At least one location must be unobstructed for the entity to be considered as looked at. Valid values: "head", "body", "feet". |
 | looked_at_cooldown| [0, 0]| Range [a, b] | Specifies the range for the random number of seconds that must pass before the owner entity can check again for entities looking at it, after detecting an entity looking at it. |
 | looked_at_event | *not set* | String | Defines the event to trigger when an entity is detected looking at the owner entity. |
+| min_looked_at_duration | *not set* | String | Defines the minimum, continuous time the owner entity has to be looked at before being considered as such. Defaults to 0 if not explicitly specified. |
 | not_looked_at_event | *not set* | String | Defines the event to trigger when no entity is found looking at the owner entity. |
 | scale_fov_by_distance | True | Boolean | When true, the field of view narrows as the distance between the owner entity and the entity looking at it increases. This ensures that the width of the view cone remains somewhat constant towards the owner entity position, regardless of distance. |
 | search_radius | 10| Decimal | Maximum distance the owner entity will search for entities looking at it. |

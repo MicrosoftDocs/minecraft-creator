@@ -350,6 +350,7 @@ Any component that this biome uses.
 |:-----------|:-----------|:-------|:-----------|
 |minecraft:capped_surface| Object | Optional| Generates surface on blocks with non-solid blocks above or below.|
 |minecraft:climate| Object | Optional| Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.|
+|minecraft:creature_spawn_probability| Object | Optional| Probability between [0.0, 0.75] of creatures spawning within the biome on chunk generation.|
 |minecraft:frozen_ocean_surface| Object | Optional| Similar to overworld_surface. Adds icebergs.|
 |minecraft:mesa_surface| Object | Optional| Similar to overworld_surface. Adds colored strata and optional pillars.|
 |minecraft:mountain_parameters| Object | Optional| Noise parameters used to drive mountain terrain generation in Overworld.|

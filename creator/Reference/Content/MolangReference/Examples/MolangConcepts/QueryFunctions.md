@@ -10,9 +10,6 @@ ms.service: minecraft-bedrock-edition
 
 Query Functions are operators that access a wide variety of information. They can return simple true/false values (1.0 or 0.0) or more complex data. See the list of functions below for per-query documentation. For query functions that do not take parameters, use: `query.function_name`. For query functions that do take parameters, use parentheses with commas separating the arguments like: `query.function_name(1, 2, 'three')`.
 
-> [!IMPORTANT]
-> The list below includes only entity queries that are live. See [Experimental Entity Queries](ExperimentalQueryFunctions.md) for experimental Molang query functions.
-
 ## Example
 
 ```json
@@ -241,6 +238,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.key_frame_lerp_time| Returns the ratio between the previous and next key frames in an animation. |
 | query.last_frame_time| Returns the time in *seconds* of the last frame. If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.last_frame_time` (or the equivalent `query.last_frame_time(0)`) will return the frame time of the frame before the current one. `query.last_frame_time(1)` will return the frame time of two frames ago. Currently we store the history of the last 30 frames, although note that this may change in the future. Passing an index more than the available data will return the oldest frame stored. |
 | query.last_hit_by_player| Returns 1.0 if the entity was last hit by the player, else it returns 0.0. If called by the client always returns 0.0. Relates to the `on_death` component. |
+| query.last_input_mode_is_any| Takes one or more arguments ('keyboard_and_mouse', 'touch', 'gamepad', or 'motion_controller'). If the last input used is any of the specified string values, returns 1.0. Otherwise returns 0.0. Available on the Client (Resource Packs) only. |
 | query.lie_amount| Returns the lie down amount for the entity. Applies to panda. |
 | query.life_span| Returns the limited life span of an entity, or 0.0 if it lives forever. Applies to evocation fang. |
 | query.life_time| Returns the time in seconds since the current animation started, else 0.0 if not called within an animation. |
@@ -318,6 +316,7 @@ Listed below are the currently available Molang query functions in the latest re
 | query.timer_flag_3| Returns 1.0 if behavior.timer_flag_3 is running, else it returns 0.0.|
 | query.total_emitter_count| Returns the total number of active emitters in the world. |
 | query.total_particle_count| Returns the total number of active particles in the world. |
+| query.touch_only_affects_hotbar| Returns 1.0 if the touch input only affects the touchbar, otherwise returns 0.0. Available on the Client (Resource Packs) only. |
 | query.trade_tier| Returns the trade tier of the entity if it makes sense, else it returns 0.0. Applies to villager. |
 | query.unhappy_counter| Always returns zero. This query was originally meant to indicate panda unhappiness, but due to an early code change it has always only returned zero. |
 | query.variant| Returns the entity's variant index. Relates to `variant` component. |

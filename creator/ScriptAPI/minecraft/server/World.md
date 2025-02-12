@@ -174,10 +174,6 @@ The aim-assist presets and categories that can be used in the world.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
- 
-#### Required Experiments
-- Camera Aim Assist
-
 ::: moniker-end
 
 ### **getAllPlayers**
