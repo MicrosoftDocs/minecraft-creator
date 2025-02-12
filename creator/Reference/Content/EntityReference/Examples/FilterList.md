@@ -34,6 +34,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[has_tag](Filters/has_tag.md)|Returns true if the subject entity has the tag provided. |
 |[has_target](Filters/has_target.md)|Returns true if the subject entity has a valid target. |
 |[has_trade_supply](Filters/has_trade_supply.md)|Tests whether the target has any trade supply left. Will return false if the target cannot be traded with. |
+|[home_distance](Filters/home_distance.md)| Tests the distance between the subject and its home. Returns false if the subject has no home or if their home is in a different dimension. |
 |[hourly_clock_time](Filters/hourly_clock_time.md)|Compares the current 24 hour time with an int value in the range[0, 24000] |
 |[in_block](Filters/in_block.md)|Returns true when the subject entity is inside a specified Block type. |
 |[in_caravan](Filters/in_caravan.md)|Returns true if the subject entity is in a caravan. |
@@ -50,6 +51,7 @@ Below is a list of all the available filters within Minecraft: Bedrock Edition f
 |[is_baby](Filters/is_baby.md)|Returns `true` when the subject entity is a baby. |
 |[is_biome](Filters/is_biome.md)|Tests whether the Subject is currently in the named biome. |
 |[is_block](Filters/is_block.md)|Returns true when the block has the given name. |
+|[is_bound_to_creaking_heart](Filters/is_bound_to_creaking_heart.md)|Tests that the Creaking Heart that spawned the subject Creaking still exists. |
 |[is_brightness](Filters/is_brightness.md)|Tests the current brightness against a provided value in the range (0.0, 1.0). |
 |[is_climbing](Filters/is_climbing.md)|Returns true if the subject entity is climbing. |
 |[is_color](Filters/is_color.md)|Returns true if the subject entity is the named color. |

@@ -12,8 +12,6 @@ ms.service: minecraft-bedrock-edition
 
 Both `minecraft:geometry` and `minecraft:material_instances` parameters are required when using the `minecraft:item_visual` component.
 
-Experimental toggles required: Upcoming Creator Features
-
 ## Parameters
 
 |Name |Default Value  |Type  |Description  |

@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "Reference/Content/MolangReference/Examples/MolangConcepts/ExperimentalQueryFunctions.md",
+      "redirect_url": "/minecraft/creator/reference/content/molangreference/examples/molangconcepts/QueryFunctions",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/Structures/StructureBlocksTutorial.md",
       "redirect_url": "/minecraft/creator/documents/structures/StructureBlocksCommandTutorial",
       "redirect_document_id": false
