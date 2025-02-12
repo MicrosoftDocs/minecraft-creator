@@ -1008,6 +1008,8 @@
       href: minecraft/server-editor/ColorPickerPropertyItemVariant.md
     - name: ComboBoxPropertyItemDataType
       href: minecraft/server-editor/ComboBoxPropertyItemDataType.md
+    - name: ContiguousSelectionType
+      href: minecraft/server-editor/ContiguousSelectionType.md
     - name: ContinuousActionState
       href: minecraft/server-editor/ContinuousActionState.md
     - name: CoreActionBarItemType
@@ -1232,6 +1234,8 @@
       href: minecraft/server-editor/BuiltInUIManager.md
     - name: ClipboardWriteOptions
       href: minecraft/server-editor/ClipboardWriteOptions.md
+    - name: ContiguousSelectionProperties
+      href: minecraft/server-editor/ContiguousSelectionProperties.md
     - name: CursorPosition
       href: minecraft/server-editor/CursorPosition.md
     - name: CursorProperties
@@ -1264,6 +1268,10 @@
       href: minecraft/server-editor/IBoolPropertyItem.md
     - name: IBoolPropertyItemOptions
       href: minecraft/server-editor/IBoolPropertyItemOptions.md
+    - name: IButtonPanePropertyItem
+      href: minecraft/server-editor/IButtonPanePropertyItem.md
+    - name: IButtonPanePropertyItemOptions
+      href: minecraft/server-editor/IButtonPanePropertyItemOptions.md
     - name: IButtonPropertyItem
       href: minecraft/server-editor/IButtonPropertyItem.md
     - name: IButtonPropertyItemOptions
@@ -1422,6 +1430,8 @@
       href: minecraft/server-editor/ModalToolCreationParameters.md
     - name: ProjectExportOptions
       href: minecraft/server-editor/ProjectExportOptions.md
+    - name: QuickExtrudeProperties
+      href: minecraft/server-editor/QuickExtrudeProperties.md
     - name: SettingsUIElementOptions
       href: minecraft/server-editor/SettingsUIElementOptions.md
     - name: WeightedBlock

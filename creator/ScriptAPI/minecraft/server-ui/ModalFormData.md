@@ -51,6 +51,9 @@ function showBasicModalForm(log: (message: string, status?: number) => void, tar
 
 ## Methods
 - [constructor](#constructor)
+::: moniker range="=minecraft-bedrock-experimental"
+- [divider](#divider)
+::: moniker-end
 - [dropdown](#dropdown)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [header](#header)
@@ -73,6 +76,20 @@ new ModalFormData()
 Creates a new modal form builder.
 
 **Returns** [*ModalFormData*](ModalFormData.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **divider**
+`
+divider(): ModalFormData
+`
+
+Adds a section divider to the form.
+
+**Returns** [*ModalFormData*](ModalFormData.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **dropdown**
 `

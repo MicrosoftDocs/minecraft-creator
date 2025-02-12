@@ -46,7 +46,6 @@ Content of the body of the HTTP request.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
 
 ### **headers**
 `headers: HttpHeader[];`
@@ -56,7 +55,6 @@ A collection of HTTP headers to add to the outbound request.
 Type: [*HttpHeader*](HttpHeader.md)[]
 
 Notes:
-  - This property can't be edited in read-only mode.
 
 ### **method**
 `method: HttpRequestMethod;`
@@ -66,7 +64,6 @@ HTTP method (e.g., GET or PUT or PATCH) to use for making the request.
 Type: [*HttpRequestMethod*](HttpRequestMethod.md)
 
 Notes:
-  - This property can't be edited in read-only mode.
 
 ### **timeout**
 `timeout: number;`
@@ -76,7 +73,6 @@ Amount of time, in seconds, before the request times out and is abandoned.
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
 
 ### **uri**
 `uri: string;`
@@ -86,7 +82,6 @@ The HTTP resource to access.
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
 
 ## Methods
 - [constructor](#constructor)
@@ -120,7 +115,6 @@ Adds an additional header to the overall list of headers used in the correspondi
 **Returns** [*HttpRequest*](HttpRequest.md)
   
 Notes:
-- This function can't be called in read-only mode.
 
 ### **setBody**
 `
@@ -135,7 +129,6 @@ Updates the content of the body of the HTTP request.
 **Returns** [*HttpRequest*](HttpRequest.md)
   
 Notes:
-- This function can't be called in read-only mode.
 
 ### **setHeaders**
 `
@@ -150,7 +143,6 @@ Replaces and applies a set of HTTP Headers for the request.
 **Returns** [*HttpRequest*](HttpRequest.md)
   
 Notes:
-- This function can't be called in read-only mode.
 
 ### **setMethod**
 `
@@ -165,7 +157,6 @@ Sets the desired HTTP method (e.g., GET or PUT or PATCH) to use for making the r
 **Returns** [*HttpRequest*](HttpRequest.md)
   
 Notes:
-- This function can't be called in read-only mode.
 
 ### **setTimeout**
 `
@@ -178,7 +169,6 @@ setTimeout(timeout: number): HttpRequest
 **Returns** [*HttpRequest*](HttpRequest.md)
   
 Notes:
-- This function can't be called in read-only mode.
 
 #### Examples
 

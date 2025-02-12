@@ -11,10 +11,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
- 
-## Required Experiments
-- Camera Aim Assist
-
 
 Handle to an aim-assist category that exists in the world.aimAssist registry.
 

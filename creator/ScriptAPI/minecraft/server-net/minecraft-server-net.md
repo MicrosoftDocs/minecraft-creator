@@ -45,6 +45,10 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
 ## Interfaces
 - [PacketEventOptions](PacketEventOptions.md)
 
+## Errors
+- [InternalHttpRequestError](InternalHttpRequestError.md)
+- [MalformedHttpRequestError](MalformedHttpRequestError.md)
+
 ## Objects
   
 ### **beforeEvents**
