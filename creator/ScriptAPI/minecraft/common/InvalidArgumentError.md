@@ -22,9 +22,15 @@ Index of the argument that is in error.
 
 Type: *number*
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **type**
 `read-only type: InvalidArgumentErrorType;`
 
 Type of the argument error.
 
 Type: [*InvalidArgumentErrorType*](InvalidArgumentErrorType.md)
+
+Notes:
+  - This property can be read in early-execution mode.

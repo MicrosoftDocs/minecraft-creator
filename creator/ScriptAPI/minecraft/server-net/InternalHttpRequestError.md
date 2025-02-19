@@ -22,9 +22,15 @@ The platform-provided numeric error code for the error.
 
 Type: *number*
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **message**
 `read-only message: string;`
 
 The platform-provided message for the error.
 
 Type: *string*
+
+Notes:
+  - This property can be read in early-execution mode.

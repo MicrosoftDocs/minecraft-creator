@@ -427,6 +427,7 @@ Entity is promoted to illager captain
 Entity is promoted to patrol captain
 - `minecraft:raid_expired`
 Raid is expired
+- `minecraft:randomize_sound_variant`
 - `minecraft:ranged_mode`
 Entity is in ranged mode
 - `minecraft:remove_persistence`

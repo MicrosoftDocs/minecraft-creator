@@ -61,6 +61,9 @@ Constructor that takes a unique Id to associate with the created AimAssistCatego
 - **identifier**: *string*
 
 **Returns** [*AimAssistCategorySettings*](AimAssistCategorySettings.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getBlockPriorities**
 `
@@ -93,6 +96,9 @@ Sets the priority settings used for block targeting.
   A record mapping block Ids to their priority settings. Larger numbers have greater priority.
 
 **Returns** *void*
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setEntityPriorities**
 `
@@ -107,3 +113,6 @@ Sets the priority settings used for entity targeting.
   A record mapping entity Ids to their priority settings. Larger numbers have greater priority.
 
 **Returns** *void*
+  
+Notes:
+- This function can't be called in read-only mode.
