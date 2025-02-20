@@ -12,13 +12,10 @@ Event related to the spawning of an entity.
 
 ## Example
 
-Pillager who spawns in riding a Ravager during a raid
+A stray that spawns in running `change_to_skeleton`, as used [here](https://github.com/Mojang/bedrock-samples/blob/43ca2795c201b6fff53f38597c4d01f6c4593e1a/behavior_pack/spawn_rules/stray.json#L18)
 
 ```json
-"minecraft:pillager_rider_for_raid": {
-    "minecraft:addrider": {
-        "entity_type": "minecraft:pillager",
-        "spawn_event": "minecraft:spawn_for_raid"
-    }
-}
+"minecraft:spawn_event": {
+    "event": "change_to_skeleton"
+},
 ```
