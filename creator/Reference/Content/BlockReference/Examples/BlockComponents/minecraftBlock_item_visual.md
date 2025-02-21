@@ -1,46 +1,25 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:item_visual
-description: "A reference document detailing the 'item_visual' block component"
+title: "Block Components Documentation - minecraft:item_visual"
+description: "Describes the minecraft:item_visual block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:item_visual
+# Block Components Documentation - minecraft:item_visual
 
-`minecraft:item_visual` is a `JSON Object` component that specifies the block's item representation. The object contains `geometry` and `material_instances` parameters which map to the existing `minecraft:geometry` and `minecraft:material_instances` block components respectively. 
+The description identifier of the geometry and material used to render the item of this block.
+Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.50).
 
-Both `minecraft:geometry` and `minecraft:material_instances` parameters are required when using the `minecraft:item_visual` component.
+## Alternate Simple Representations
 
-## Parameters
+This item can also be represented as a `String`.
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| geometry| *not set* | JSON Object | The `minecraft:geometry` component used to represent the item's geometry. See [geometry](minecraftBlock_geometry.md) for more information on component use. |
-| material_instances | *not set*  | JSON Object| The `minecraft:material_instances` component used to represent the item's materials. See [material_instances](minecraftBlock_material_instances.md) for more information on component use. |
 
-## Example
+## Item Visual Properties
 
-```json
-"minecraft:item_visual":{
-    "geometry": {
-        "identifier": "minecraft:geometry.full_block"
-    },
-    "material_instances": {
-        "*": {
-            "texture": "dirt",
-            "render_method": "opaque"
-        }
-    }
-},
-"minecraft:geometry": {
-    "identifier": "minecraft:geometry.full_block"
-},
-"minecraft:material_instances": {
-    "*": {
-        "texture": "stone",
-        "render_method": "opaque"
-    }
-}
-```
-
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| geometry | *not set* | Array of objects | [Required] The "minecraft:geometry" component that will be used for the item. |  | 
+| material_instances | *not set* | Array of objects | [Required] The "minecraft:material_instances" component that will be used for the item. |  | 

@@ -21,5 +21,6 @@ registerCustomComponent(name: string, customComponent: BlockCustomComponent): vo
 - **customComponent**: [*BlockCustomComponent*](BlockCustomComponent.md)
   
 Notes:
+- This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*BlockCustomComponentAlreadyRegisteredError*](BlockCustomComponentAlreadyRegisteredError.md), [*BlockCustomComponentReloadNewComponentError*](BlockCustomComponentReloadNewComponentError.md), [*BlockCustomComponentReloadNewEventError*](BlockCustomComponentReloadNewEventError.md), [*BlockCustomComponentReloadVersionError*](BlockCustomComponentReloadVersionError.md), [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md)

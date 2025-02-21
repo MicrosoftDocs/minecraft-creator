@@ -1,21 +1,33 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:loot
-description: "A reference document detailing the 'loot' block component"
+title: "Block Components Documentation - minecraft:loot"
+description: "Describes the minecraft:loot block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:loot
+# Block Components Documentation - minecraft:loot
 
-`minecraft:loot` is a Path String component that specifies the path to the loot table, relative to the behavior pack. Path string is limited to 256 characters.
+The path to the loot table, relative to the behavior pack. Path string is limited to 256 characters.
 
-## Default Value of the Component
+## Alternate Simple Representations
 
-This component is specified as a `Path String`, so it does not have a default value. You must provide a valid path to a loot table in order to use this component.
+This item can also be represented as a `String`.
 
-## Example
+
+## Samples
+
+#### [Block Orange Ore](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json)
+
 
 ```json
-"minecraft:loot": "<path_to_behavior_pack>/loot_tables/customblockloot.json"
+"minecraft:loot": "loot_tables/blocks/orange_ore.json"
+```
+
+#### [Apple Block](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json)
+
+
+```json
+"minecraft:loot": "loot_tables/blocks/apple_block.json"
 ```

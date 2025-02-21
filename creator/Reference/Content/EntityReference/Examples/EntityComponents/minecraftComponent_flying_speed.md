@@ -1,40 +1,48 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:flying_speed
-description: "A reference document detailing the 'flying_speed' entity component"
+title: "Entity Documentation - minecraft:flying_speed"
+description: "Describes the minecraft:flying_speed entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:flying_speed
+# Entity Documentation - minecraft:flying_speed
 
-`minecraft:flying_speed` sets the speed, in Blocks, at which the entity flies.
+Speed in Blocks that this entity flies at.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 0| Decimal| Flying speed in blocks per tick. |
+## Flying Speed Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 0.02 | Decimal number | Flying speed in blocks per tick. | Allay: `0.1`, Bee: `0.15`, Ender Dragon: `0.6` | 
 
-```json
-"minecraft:flying_speed":{
-    "value": 2.0,
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Allay](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/allay.json)
 
-### ender_dragon
 
 ```json
 "minecraft:flying_speed": {
-    "value": 0.6
+  "value": 0.1
 }
 ```
 
-## Vanilla entities using `minecraft:flying_speed`
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
 
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
+
+```json
+"minecraft:flying_speed": {
+  "value": 0.15
+}
+```
+
+#### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
+
+
+```json
+"minecraft:flying_speed": {
+  "value": 0.6
+}
+```

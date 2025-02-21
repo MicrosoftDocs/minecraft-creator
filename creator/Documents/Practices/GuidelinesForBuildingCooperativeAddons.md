@@ -147,7 +147,7 @@ Texture names need to be unique to prevent items from using the wrong texture wh
 All textures should be placed at least 2 folders deep (although additional folders can be used if you want for additional organization.) The first folder should be your creator name and the second folder should be the pack name. The folder structure will look like this.
 
 ```powershell
-<resource pack name> -> textures -> <creator name> -> <pack name> -> mycustomtexture.png
+&lt;resource pack name&gt; -> textures -> &lt;creator name&gt; -> &lt;pack name&gt; -> mycustomtexture.png
 ```
 
 ### Texture Reference
@@ -173,7 +173,7 @@ Loot table names need to be unique, or they can conflict with other loot tables 
 The first folder is your creator name, and the second is the name of the add-on pack name. Here is an example below:
 
 ```powershell
-<behavior pack name> -> loot_tables -> <creator name> -> <pack name> -> <loot table name>
+<behavior pack name> -> loot_tables -> &lt;creator name&gt; -> &lt;pack name&gt; -> <loot table name>
 ```
 
 ### Animations
@@ -213,7 +213,7 @@ To prevent this, we suggest that every creator nests their functions in 2 folder
 The first folder is your creator name, and the second is the name of the add-on pack name. Here is an example below:
 
 ```powershell
-<behavior pack name> -> functions -> <creator name> -> <pack name> -> <function file name>.
+<behavior pack name> -> functions -> &lt;creator name&gt; -> &lt;pack name&gt; -> <function file name>.
 ```
 
 Using this naming convention also allows creators to use tick.json in their packs without conflicting with other creators.
@@ -225,7 +225,7 @@ Sounds are located within the Resource pack, and can override other sounds based
 The first folder is your creator name, and the second folder is the pack name. This will cause your folder structure to look like this:
 
 ```powershell
-<resource pack name> -> sounds -> <creator name> -> <pack name>
+&lt;resource pack name&gt; -> sounds -> &lt;creator name&gt; -> &lt;pack name&gt;
 ```
 
 ### Sound Reference
@@ -243,12 +243,12 @@ Trade table names need to be unique, or they can conflict with other trade table
 The first folder is your creator name, and the second is the name of the add-on pack name. Here is an example below: 
 
 ```powershell
-<behavior pack name> -> trading -> <creator name> -> <pack name> -> <trade table file name>.
+<behavior pack name> -> trading -> &lt;creator name&gt; -> &lt;pack name&gt; -> <trade table file name>.
 ```
 
 ### JSON UI and Custom Fonts overrides are disalllowed
 
-Because JSON UI (i.e., files in <resource pack name>/ui) and fonts (i.e., files in <resource pack name>/font) are not overridable in a cooperative manner - such that multiple add-ons can customize the same asset - cooperative add-ons should not override any JSON UI or font glyph files.
+Because JSON UI (i.e., files in &lt;resource pack name&gt;/ui) and fonts (i.e., files in &lt;resource pack name&gt;/font) are not overridable in a cooperative manner - such that multiple add-ons can customize the same asset - cooperative add-ons should not override any JSON UI or font glyph files.
 
 ### Folder Structures
 

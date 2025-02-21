@@ -28,6 +28,7 @@ Adds a callback that will be called after a player interacts with a block.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **unsubscribe**
 `
@@ -41,3 +42,4 @@ Removes a callback from being called after a player interacts with a block.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

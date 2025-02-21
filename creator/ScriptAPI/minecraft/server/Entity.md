@@ -592,6 +592,7 @@ Gets a component (that represents additional capabilities) for an entity.
 **Returns** *EntityComponentTypeMap[T] | undefined* - Returns the component if it exists on the entity, otherwise undefined.
   
 Notes:
+- This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 

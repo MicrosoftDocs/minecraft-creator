@@ -1,24 +1,33 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.roar
-description: "A reference document detailing the 'behavior.roar' entity goal"
+title: "Entity Documentation - minecraft:behavior.roar"
+description: "Describes the minecraft:behavior.roar ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.roar
 
-`minecraft:behavior.roar` compels this entity to roar at another entity based on data in `minecraft:anger_level`. When the anger threshold specified in `minecraft:anger_level` has been reached, this entity will roar for the specified amount of time, look at the other entity, apply anger boost towards it, and finally target it.
+Allows this entity to roar at another entity based on data in `minecraft:anger_level`. Once the anger threshold specified in `minecraft:anger_level` has been reached, this entity will roar for the specified amount of time, look at the other entity, apply anger boost towards it, and finally target it.
 
-## Parameters
+> [!Note]
+> Requires the following component in order to work properly:
+> 
+> * [Anger Level (minecraft:anger_level)](../EntityComponents/minecraftComponent_anger_level.md)
+> 
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| duration| 0.0| decimal| The amount of time to roar for. |
+## Roar Behavior Properties
 
-## Vanilla entities examples
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| duration | 0 | Decimal number | The amount of time to roar for. | Warden: `4.2` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Warden: `2` | 
 
-### warden
+## Samples
+
+#### [Warden](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/warden.json)
+
 
 ```json
 "minecraft:behavior.roar": {
@@ -26,7 +35,3 @@ ms.service: minecraft-bedrock-edition
   "duration": 4.2
 }
 ```
-
-## Vanilla entities using `roar`
-
-- [warden](../../../../Source/VanillaBehaviorPack_Snippets/entities/warden.md)

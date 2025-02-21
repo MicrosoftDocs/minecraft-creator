@@ -27,6 +27,7 @@ Retrieves a dimension type using a string-based identifier.
 **Returns** [*DimensionType*](DimensionType.md) | *undefined*
   
 Notes:
+- This function can be called in early-execution mode.
 
 ### **getAll**
 `
@@ -38,3 +39,4 @@ Retrieves an array of all dimension types.
 **Returns** [*DimensionType*](DimensionType.md)[]
   
 Notes:
+- This function can be called in early-execution mode.

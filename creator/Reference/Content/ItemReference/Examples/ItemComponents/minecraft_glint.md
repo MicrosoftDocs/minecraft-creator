@@ -1,36 +1,19 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:glint
-description: "A reference document detailing the 'glint' item component"
+title: "Items Documentation - minecraft:glint"
+description: "Describes the minecraft:glint item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:glint
+# Items Documentation - minecraft:glint
 
-`minecraft:glint` determines whether the item has the enchanted glint render effect on it.
+Determines whether the item has the enchanted glint render effect on it.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| value|*not set*| Boolean| Whether the item has the enchanted glint render effect.|
+## Glint Properties
 
-## Example
-
-```json
-"minecraft:glint": false
-```
-
-## Vanilla entities examples
-
-### appleEnchanted
-
-```json
-"minecraft:glint": true
-```
-
-## Vanilla entities using `minecraft:glint`
-
-- [apple](../../../../Source/VanillaBehaviorPack_Snippets/items/apple.md)
-- [appleEnchanted](../../../../Source/VanillaBehaviorPack_Snippets/items/appleEnchanted.md)
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | Boolean true/false | Whether the item has the enchanted glint render effect. |  | 

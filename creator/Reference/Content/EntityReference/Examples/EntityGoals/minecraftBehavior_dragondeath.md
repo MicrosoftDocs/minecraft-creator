@@ -1,44 +1,35 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.dragondeath
-description: "A reference document detailing the 'behavior.dragondeath' entity goal"
+title: "Entity Documentation - minecraft:behavior.dragondeath"
+description: "Describes the minecraft:behavior.dragondeath ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.dragondeath
 
-`minecraft:behavior.dragondeath` controls the entity's death state and animation.
+Allows the dragon to go out with glory. This controls the Ender Dragon's death animation.
 
-> [!NOTE]
-> This behavior can only be used by the `ender_dragon` entity type.
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Ender Dragon (minecraft:ender_dragon)
+> 
 
-## Parameters
+## Dragondeath Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.dragondeath":{
-    "priority": 1,
-}
-```
+#### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
 
-## Vanilla entities examples
-
-### ender_dragon
 
 ```json
-"dragon_death": {
-        "minecraft:behavior.dragondeath": {
-          "priority": 0
-        }
+"minecraft:behavior.dragondeath": {
+  "priority": 0
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.dragondeath`
-
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)

@@ -18,7 +18,7 @@ Validates observable objects that support string as BlockType
 Type: *string*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be used in read-only mode.
 
 ### **defaultValue**
 `read-only defaultValue: string;`

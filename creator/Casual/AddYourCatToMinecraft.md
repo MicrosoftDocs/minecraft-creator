@@ -42,7 +42,7 @@ From here, you'll want to customize the model to make it look exactly how you wa
 
 Once you are done, use Save Project (Ctrl-Alt-S) to save your updated .bbmodel file.
 
-Then, what we'll do is update our project back in MCTools to use the newly updated textures and geometry. To do that, drag and drop your updated <catname>.geo.bbmodel file back onto the mctools.dev web page. This will show you a pop-up that says how it will integrate the updates into your project. Click OK.
+Then, what we'll do is update our project back in MCTools to use the newly updated textures and geometry. To do that, drag and drop your updated &lt;catname&gt;.geo.bbmodel file back onto the mctools.dev web page. This will show you a pop-up that says how it will integrate the updates into your project. Click OK.
 
 ![Integrate changes to your model](./Media/eliza_integrate.png)
 

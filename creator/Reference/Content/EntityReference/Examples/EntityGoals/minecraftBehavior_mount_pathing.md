@@ -1,70 +1,108 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.mount_pathing
-description: "A reference document detailing the 'behavior.mount_pathing' entity goal"
+title: "Entity Documentation - minecraft:behavior.mount_pathing"
+description: "Describes the minecraft:behavior.mount_pathing ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.mount_pathing
 
-`minecraft:behavior.mount_pathing` compels an entity to move around on its own while mounted. `minecraft:behavior.mount_pathing` also will allow an entity to target another entity for an attack.
+Allows the mob to move around on its own while mounted seeking a target to attack. Also will allow an entity to target another entity for an attack.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
-|target_dist| 0.0| Decimal| The distance at which this mob wants to be away from its target. |
-|track_target| false| Boolean| If true, this mob will chase after the target as long as it's a valid target. |
+## Mount Pathing Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cat: `1`, Cave Spider: `5`, Chicken: `2` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Cat: `1.25`, Chicken: `1.5` | 
+| target_dist | 0 | Decimal number | The distance at which this mob wants to be away from its target | Skeleton Horse: `4` | 
+| track_target | false | Boolean true/false | If true, this mob will chase after the target as long as it's a valid target | Cat: `true` | 
 
-```json
-"minecraft:behavior.mount_pathing":{
-    "priority": 2,
-    "speed_multiplier": 1.5,
-    "target_dist": 0.5,
-    "track_target": false
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
-### husk
 
 ```json
 "minecraft:behavior.mount_pathing": {
-          "priority": 2,
-          "speed_multiplier": 1.25,
-          "target_dist": 0.0,
-          "track_target": true
-        }
+  "priority": 1,
+  "speed_multiplier": 1.25,
+  "target_dist": 0,
+  "track_target": true
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.mount_pathing`
+#### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
-- [zombie pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+
+```json
+"minecraft:behavior.mount_pathing": {
+  "priority": 5,
+  "speed_multiplier": 1.25,
+  "target_dist": 0,
+  "track_target": true
+}
+```
+
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
+
+
+```json
+"minecraft:behavior.mount_pathing": {
+  "priority": 2,
+  "speed_multiplier": 1.5,
+  "target_dist": 0,
+  "track_target": true
+}
+```
+
+#### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
+
+
+```json
+"minecraft:behavior.mount_pathing": {
+  "priority": 2,
+  "speed_multiplier": 1.25,
+  "target_dist": 0,
+  "track_target": true
+}
+```
+
+#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
+
+
+```json
+"minecraft:behavior.mount_pathing": {
+  "priority": 5,
+  "speed_multiplier": 1.5,
+  "target_dist": 0,
+  "track_target": true
+}
+```
+
+#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
+
+
+```json
+"minecraft:behavior.mount_pathing": {
+  "priority": 2,
+  "speed_multiplier": 1.5,
+  "target_dist": 4,
+  "track_target": true
+}
+```
+
+#### [Sheepomelon](https://github.com/microsoft/minecraft-samples/tree/main/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json)
+
+
+```json
+"minecraft:behavior.mount_pathing": {
+  "priority": 3,
+  "speed_multiplier": 1.5,
+  "target_dist": 0,
+  "track_target": true
+}
+```

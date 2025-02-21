@@ -28,6 +28,7 @@ Adds a callback that will be called when a player leaves the world.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **unsubscribe**
 `
@@ -41,3 +42,4 @@ Removes a callback that will be called when a player leaves the world.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

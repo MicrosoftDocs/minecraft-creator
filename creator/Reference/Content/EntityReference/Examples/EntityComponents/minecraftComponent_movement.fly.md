@@ -1,39 +1,30 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:movement.fly
-description: "A reference document detailing the 'movement.fly' entity component"
+title: "Entity Documentation - minecraft:movement.fly"
+description: "Describes the minecraft:movement.fly entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:movement.fly
 
-`minecraft:movement.fly` compels the entity to fly.
+This move control causes the mob to fly.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| start_speed| 0.1| Decimal|Initial speed of the entity when it starts gliding. |
-| speed_when_turning| 0.2| Decimal|Speed that the entity adjusts to when it has to turn quickly. |
+## Fly Movement Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. |  | 
+| speed_when_turning | 0.2 | Decimal number | Speed that the mob adjusts to when it has to turn quickly. |  | 
+| start_speed | 0.1 | Decimal number | Initial speed of the mob when it starts gliding. |  | 
 
-```json
-"minecraft:movement.fly":{
-    "max_turn": 30.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
 
-### parrot
 
 ```json
-"minecraft:movement.fly": {
-      }
+"minecraft:movement.fly": {}
 ```
-
-## Vanilla entities using `minecraft:movement.fly`
-
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)

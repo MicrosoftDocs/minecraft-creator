@@ -85,7 +85,7 @@ Here are the steps to creating your Minecraft world:
 1. Then, when you're ready to use that world on a dedicated server, copy it from your Minecraft client's Worlds folder:
 `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds`
 1. Each subfolder is a world. Usually the last world you played in will have the most updated "Date modified." Unfortunately, world subfolders don't have very friendly names (typically, something like "fyqEYmKXAwA=") to help you figure out which world is which.
-1. Copy the contents of this world subfolder over to your Bedrock Dedicated Server. By default, Bedrock Dedicated Server will load the world it uses from `<Bedrock Dedicated Server>/worlds/Bedrock level`, but you can customize the name of the world to something other than "Bedrock level" in the `<Bedrock Dedicated Server>/server.properties` file.
+1. Copy the contents of this world subfolder over to your Bedrock Dedicated Server. By default, Bedrock Dedicated Server will load the world it uses from `&lt;Bedrock Dedicated Server&gt;/worlds/Bedrock level`, but you can customize the name of the world to something other than "Bedrock level" in the `&lt;Bedrock Dedicated Server&gt;/server.properties` file.
 1. When you run the Bedrock Dedicated Server executable, you should see it load up the world. It will also generate a log entry like the following:
 
 `[2022-05-20 07:00:06:619 INFO] Experiment(s) active: gtst`
@@ -98,7 +98,7 @@ Now that you have a custom world up and running with a bit of JavaScript within 
 
 By default, most server configuration is stored within the "server.properties" file in the root of your Minecraft Bedrock Dedicated Server folder. Here, you can configure default permissions for new players that enter the game, server ports, number of threads, and more. Much of the documentation is embedded in line within "server.properties." To get started, open "server.properties" with your favorite text editor, like Notepad.
 
-For scripting, configuration files are stored in the "<Bedrock Dedicated Server>/config/" folder. In that folder is the subfolder "<Bedrock Dedicated Server>/config/default/", which controls default settings for all script modules.
+For scripting, configuration files are stored in the "&lt;Bedrock Dedicated Server&gt;/config/" folder. In that folder is the subfolder "&lt;Bedrock Dedicated Server&gt;/config/default/", which controls default settings for all script modules.
 Within the "default" folder is a "permissions.json" file, which controls the default set of Mojang scripting modules that are accessible to worlds, assuming they have the Beta APIs experiment enabled.
 
 ![Default allowed modules for a server](Media/ScriptingServers/allowedmodules.png)
@@ -124,14 +124,14 @@ You can set different permissions for different references to scripts that are e
   ],
 ```
 
-* Next, to customize the set of built in modules your behavior pack's script module can access, you can place a "permissions.json" file within that folder. (Yes, the UUID folder name is a bit clunky, but we hope to improve this in a future update). We strongly recommend keeping `<Bedrock Dedicated Server>/config/default/permissions.json` basic and minimal, while extending additional module permissions on an individual basis.
+* Next, to customize the set of built in modules your behavior pack's script module can access, you can place a "permissions.json" file within that folder. (Yes, the UUID folder name is a bit clunky, but we hope to improve this in a future update). We strongly recommend keeping `&lt;Bedrock Dedicated Server&gt;/config/default/permissions.json` basic and minimal, while extending additional module permissions on an individual basis.
 
 ![Extending permissions by adding @minecraft/minecraft-server-net](Media/ScriptingServers/permissions2.png)
 
 ## Variables and Secrets
 
 You can also empower server administrators to further configure how script modules function. For example, maybe your script has alternate levels of difficulty by controlling mob spawn rate that you wish to let administrators configure. To do this, put a "variables.
-json" file within either your `<Bedrock Dedicated Server>config/default/` folder or within a `<Bedrock Dedicated Server>config/<module UUID>/` folder.  By placing it in a JSON file, it makes it more clear to server administrators what they can configure, vs. requiring them to hand-edit your JavaScript. The variables JSON file can contain a basic JSON description. For example:
+json" file within either your `&lt;Bedrock Dedicated Server&gt;config/default/` folder or within a `&lt;Bedrock Dedicated Server&gt;config/<module UUID>/` folder.  By placing it in a JSON file, it makes it more clear to server administrators what they can configure, vs. requiring them to hand-edit your JavaScript. The variables JSON file can contain a basic JSON description. For example:
 
 ```json
 {
@@ -146,7 +146,7 @@ const spawnRate = variables.get("mobSpawnRate");
 ```
 
 There is a similar system for storing "secrets" – that is, more sensitive data that you want to ensure can be used only in very constrained ways. For example, secrets could be data like authentication tokens that you wish to pass to a web service.
-`variables.json`, `secrets.json` can be placed by a server administrator within either your `<Bedrock Dedicated Server>config/default/` folder or within a `<Bedrock Dedicated Server>config/<module UUID>/` folder. What makes `secrets.json` a little different is that it is not designed to let you get at the value of the secret in JavaScript – at least not directly. Instead, it returns an opaque ServerSecrets object that can be used in certain methods, like the "@minecraft/server-net" module's HttpHeader object constructor.
+`variables.json`, `secrets.json` can be placed by a server administrator within either your `&lt;Bedrock Dedicated Server&gt;config/default/` folder or within a `&lt;Bedrock Dedicated Server&gt;config/<module UUID>/` folder. What makes `secrets.json` a little different is that it is not designed to let you get at the value of the secret in JavaScript – at least not directly. Instead, it returns an opaque ServerSecrets object that can be used in certain methods, like the "@minecraft/server-net" module's HttpHeader object constructor.
 See this sample in the [ServerSecrets object for an example usage](../ScriptAPI/minecraft/server-admin/ServerSecrets.md).
 
 ## Building a process for working with your server

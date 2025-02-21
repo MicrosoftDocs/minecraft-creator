@@ -28,6 +28,7 @@ Subscribes the specified callback to a player dimension change after event.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **unsubscribe**
 `
@@ -41,3 +42,4 @@ Removes the specified callback from a player dimension change after event.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

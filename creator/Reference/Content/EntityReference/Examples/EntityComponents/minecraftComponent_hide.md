@@ -1,29 +1,22 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:hide
-description: "A reference document detailing the 'hide' entity component"
+title: "Entity Documentation - minecraft:hide"
+description: "Describes the minecraft:hide entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:hide
 
-`minecraft:hide` compels an entity to move to and hide at their owned POI or the closest nearby.
+Moves to and hides at their owned POI or the closest nearby.
 
-## Example
 
-```json
-  "minecraft:hide": {}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
-### villager_v2
 
 ```json
 "minecraft:hide": {}
 ```
-
-## Vanilla entities using `minecraft:hide`
-
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)

@@ -1,82 +1,121 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:scale
-description: "A reference document detailing the 'scale' entity component"
+title: "Entity Documentation - minecraft:scale"
+description: "Describes the minecraft:scale entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:scale
+# Entity Documentation - minecraft:scale
 
-`minecraft:scale` sets the entity's visual size by scaling the model size.
+Sets the entity's visual size.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 1.0| Decimal| The value of the scale. 1.0 means the entity will appear at the scale they are defined in their model. Higher numbers make the entity bigger. |
+## Scale Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 1 | Decimal number | The value of the scale. 1.0 means the entity will appear at the scale they are defined in their model. Higher numbers make the entity bigger. | Armadillo: `0.6`, Axolotl: `0.5`, Camel: `0.45` | 
+
+## Samples
+
+#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
+
 
 ```json
-"minecraft:scale":{
-    "value": 1.0
+"minecraft:scale": {
+  "value": 0.6
 }
 ```
 
-## Vanilla entities examples
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-### rabbit
-
-> [!NOTE]
-> In the `rabbit` example. A `baby` component group has been set up to establish a "baby" version of the rabbit by manipulating the `value` of `minecraft:scale`.
 
 ```json
-"baby": {
-    "minecraft:is_baby": {
-        },
-    "minecraft:scale": {
-          "value":0.4
-    }
+"minecraft:scale": {
+  "value": 0.5
+}
 ```
 
-## Vanilla entities using `minecraft:scale`
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
-- [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+
+```json
+"minecraft:scale": {
+  "value": 0.45
+}
+```
+
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+
+At /minecraft:entity/component_groups/minecraft:cat_baby/minecraft:scale/: 
+
+```json
+"minecraft:scale": {
+  "value": 0.4
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:cat_adult/minecraft:scale/: 
+
+```json
+"minecraft:scale": {
+  "value": 0.8
+}
+```
+
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
+
+
+```json
+"minecraft:scale": {
+  "value": 0.65
+}
+```
+
+#### [Fish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fish.json)
+
+
+```json
+"minecraft:scale": {
+  "value": 1
+}
+```
+
+#### [Pufferfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pufferfish.json)
+
+
+```json
+"minecraft:scale": {
+  "value": 1.2
+}
+```
+
+#### [Salmon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/salmon.json)
+
+At /minecraft:entity/component_groups/scale_large/minecraft:scale/: 
+
+```json
+"minecraft:scale": {
+  "value": 1.5
+}
+```
+
+#### [Tropicalfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tropicalfish.json)
+
+
+```json
+"minecraft:scale": {
+  "value": 1.3
+}
+```
+
+#### [Turtle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/turtle.json)
+
+
+```json
+"minecraft:scale": {
+  "value": 0.16
+}
+```

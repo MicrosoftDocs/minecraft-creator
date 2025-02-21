@@ -1,79 +1,65 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - clock_time
-description: "A reference document detailing the 'clock_time' entity filter"
+title: "Entity Filters Documentation - minecraft:clock_time"
+description: "Describes the minecraft:clock_time entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - clock_time
+# Entity Filters Documentation - minecraft:clock_time
 
-`clock_time` allows a creator to compare the current time with a float value in the range (0.0, 1.0).
+Compares the current time with a float value in the range (0.0, 1.0).0.0= Noon0.25= Sunset0.5= Midnight0.75= Sunrise.
 
-|Value |Definition |
-|:----|:----|
-|0.0 |Noon |
-|0.25 |Sunset |
-|0.5 |Midnight |
-|0.75 |Sunrise |
+> [!Note]
+> `hourly_clock_time` an updated version of the clock_time filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
 
-> [!IMPORTANT]
-> [hourly_clock_time](hourly_clock_time.md) is an updated version of the `clock_time` filter that uses an Integer in a range of 0 to 24000 based on the in-game time.
 
-## Parameters
+## Clock Time Properties
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |Decimal|(Required) A floating point value.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | Decimal number | (Required) A floating point value. |  | 
 
-> [!NOTE]
-> `clock_time` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+### Operator choices
 
-### subject
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+### Subject choices
 
-### operator
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+## Samples
 
-## Examples
-
-### Full
+At Full..: 
 
 ```json
 { "test": "clock_time", "subject": "self", "operator": "equals", "value": "0.00" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "clock_time", "value": "0.00" }
 ```
-
-## Vanilla entity examples
-
-No entities currently use `clock_time`
-
-## Vanilla entities using `clock_time`
-
-No entities currently use `clock_time`

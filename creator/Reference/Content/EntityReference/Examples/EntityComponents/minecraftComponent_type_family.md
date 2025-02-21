@@ -1,151 +1,172 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:type_family
-description: "A reference document detailing the 'type_family' entity component"
+title: "Entity Documentation - minecraft:type_family"
+description: "Describes the minecraft:type_family entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:type_family
+# Entity Documentation - minecraft:type_family
 
-`minecraft:type_family` defines the families this entity belongs to.
+Defines the families this entity belongs to.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|family|*not set* | List|  List of family names. |
+## Type Family Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| family | *not set* | Array of strings | List of family names. | Allay: `["allay","mob"]`, Armadillo: `["armadillo","mob"]`, Armor Stand: `["armor_stand","inanimate","mob"]` | 
 
-```json
-"minecraft:type_family":{
-    "family":[ "villager", "blacksmith", "armorer", "mob"]
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Allay](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/allay.json)
 
-### armor_stand
 
 ```json
 "minecraft:type_family": {
-        "family": [ "armor_stand", "inanimate", "mob" ]
+  "family": [
+    "allay",
+    "mob"
+  ]
 }
 ```
 
-### hopper_minecraft
+#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
+
 
 ```json
 "minecraft:type_family": {
-        "family": [ "minecart", "inanimate" ]
+  "family": [
+    "armadillo",
+    "mob"
+  ]
 }
 ```
 
-### skeleton
+#### [Armor Stand](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armor_stand.json)
+
 
 ```json
 "minecraft:type_family": {
-        "family": [ "skeleton", "undead", "monster", "mob" ]
+  "family": [
+    "armor_stand",
+    "inanimate",
+    "mob"
+  ]
 }
 ```
 
-### villager_v2
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-> [!NOTE]
-> In the `villager_v2` example, the entity has been set up in different roles such as `farmer` and `fisherman`. Below is taken from `farmer`
 
 ```json
-"farmer": {
-        "minecraft:type_family": {
-          "family": [ "villager", "peasant", "farmer", "mob" ]
-    }
+"minecraft:type_family": {
+  "family": [
+    "aquatic",
+    "axolotl",
+    "mob"
+  ]
+}
 ```
 
-## Vanilla entities using `minecraft:type_family`
+#### [Bat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bat.json)
 
-- [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
-- [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [chest_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/chest_minecart.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [command_block_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/command_block_minecart.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [ender_crystal](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_crystal.md)
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
-- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
-- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [hopper_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/hopper_minecart.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [lightning_bolt](../../../../Source/VanillaBehaviorPack_Snippets/entities/lightning_bolt.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/minecart.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [npc](../../../../Source/VanillaBehaviorPack_Snippets/entities/npc.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
-- [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
-- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [tnt_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)
-- [tnt](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt.md)
-- [tripod_camera](../../../../Source/VanillaBehaviorPack_Snippets/entities/tripod_camera.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [vex](../../../../Source/VanillaBehaviorPack_Snippets/entities/vex.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
-- [wither skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
-- [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
-- [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+
+```json
+"minecraft:type_family": {
+  "family": [
+    "bat",
+    "mob"
+  ]
+}
+```
+
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
+
+
+```json
+"minecraft:type_family": {
+  "family": [
+    "blaze",
+    "monster",
+    "mob"
+  ]
+}
+```
+
+#### [Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/boat.json)
+
+
+```json
+"minecraft:type_family": {
+  "family": [
+    "boat",
+    "inanimate"
+  ]
+}
+```
+
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
+
+
+```json
+"minecraft:type_family": {
+  "family": [
+    "bogged",
+    "skeleton",
+    "monster",
+    "mob",
+    "undead"
+  ]
+}
+```
+
+#### [Breeze Wind Charge Projectile](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze_wind_charge_projectile.json)
+
+
+```json
+"minecraft:type_family": {
+  "family": [
+    "wind_charge",
+    "wind_charge_projectile"
+  ]
+}
+```
+
+#### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
+
+
+```json
+"minecraft:type_family": {
+  "family": [
+    "breeze",
+    "monster",
+    "mob"
+  ]
+}
+```
+
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+
+
+```json
+"minecraft:type_family": {
+  "family": [
+    "camel",
+    "mob"
+  ]
+}
+```
+
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+
+
+```json
+"minecraft:type_family": {
+  "family": [
+    "cat",
+    "mob"
+  ]
+}
+```

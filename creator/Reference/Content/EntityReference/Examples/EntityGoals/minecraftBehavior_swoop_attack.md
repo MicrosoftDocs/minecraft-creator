@@ -1,46 +1,39 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.swoop_attack
-description: "A reference document detailing the 'behavior.swoop_attack' entity goal"
+title: "Entity Documentation - behavior.swoop_attack"
+description: "Describes the behavior.swoop_attack AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.swoop_attack
+# Entity Documentation - behavior.swoop_attack
 
-`minecraft:behavior.swoop_attack` compels an entity to attack using swoop attack behavior. Ideal for use with flying mobs. The behavior ends if the entity has a horizontal collision or gets hit.
+Allows an entity to attack using swoop attack behavior; Ideal for use with flying mobs. The behavior ends if the entity has a horizontal collision or gets hit.
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| damage_reach| 0.2| Decimal| Added to the base size of the entity, to determine the target's maximum allowable distance, when trying to deal attack damage. |
-| delay_range| [10, 20]| Range [a, b]| Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| speed_multiplier| 1| Decimal| During swoop attack behavior, this determines the multiplier the entity's speed is modified by when moving toward the target. |
 
-## Example
+## Swoop Attack Behavior Properties
 
-```json
-"minecraft:behavior.swoop_attack": {
-    "priority": 2,
-    "damage_reach": 0.2,
-    "speed_multiplier": 1.0,
-    "delay_range": [ 10, 20 ]
-}
-```
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| damage_reach | 0.2 | Decimal number | Added to the base size of the entity, to determine the target's maximum allowable distance, when trying to deal attack damage. | Phantom: `0.2` | 
+| delay_range | *not set* | Range of integers | Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack. | Phantom: `[10,20]` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Phantom: `2` | 
+| speed_multiplier | 1 | Decimal number | During swoop attack behavior, this determines the multiplier the entity's speed is modified by when moving toward the target. | Phantom: `1` | 
 
-## Vanilla entities examples
+## Samples
 
-### dolphin
+#### [Phantom](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/phantom.json)
+
 
 ```json
-"minecraft:behavior.swoop_attack": {
-    "priority": 2,
-    "damage_reach": 0.2,
-    "speed_multiplier": 1.0,
-    "delay_range": [ 10.0, 20.0 ]
+{
+  "priority": 2,
+  "damage_reach": 0.2,
+  "speed_multiplier": 1,
+  "delay_range": [
+    10,
+    20
+  ]
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.swoop_attack`
-
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)

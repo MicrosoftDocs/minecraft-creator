@@ -1,54 +1,42 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.random_fly
-description: "A reference document detailing the 'behavior.random_fly' entity goal"
+title: "Entity Documentation - minecraft:behavior.random_fly"
+description: "Describes the minecraft:behavior.random_fly ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.random_fly
 
-`minecraft:behavior.random_fly` compels an entity to fly to a random spot.
+Allows a mob to randomly fly around.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| can_land_on_trees| true|Boolean|  If true, the mob can stop flying and land on a tree instead of the ground. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|xz_dist| 10| Integer| Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1. |
-| y_dist| 7| Integer| Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1. |
+## Random Fly Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| avoid_damage_blocks | *not set* | String |  | Parrot: `true` | 
+| can_land_on_trees | true | Boolean true/false | If true, the mob can stop flying and land on a tree instead of the ground | Parrot: `true` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Parrot: `3` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Parrot: `1` | 
+| xz_dist | 10 | Integer number | Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1 | Parrot: `15` | 
+| y_dist | 7 | Integer number | Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1 | Parrot: `1` | 
+| y_offset | *not set* | Decimal number |  |  | 
 
-```json
-"minecraft:behavior.random_fly":{
-    "priority": 2,
-    "can_land_on_tree":true,
-    "speed_multiplier": 1.2,
-    "avoid_damage_blocks": false,
-    "xy_dist": 3,
-    "y_dist": 10,
-    "y_offset": 0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
 
-### parrot
 
 ```json
 "minecraft:behavior.random_fly": {
-          "priority": 2,
-          "xz_dist": 15,
-          "y_dist": 1,
-          "y_offset": 0,
-          "speed_multiplier": 1.0,
-          "can_land_on_trees": true,
-          "avoid_damage_blocks": true
-        }
+  "priority": 3,
+  "xz_dist": 15,
+  "y_dist": 1,
+  "y_offset": 0,
+  "speed_multiplier": 1,
+  "can_land_on_trees": true,
+  "avoid_damage_blocks": true
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.random_fly`
-
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)

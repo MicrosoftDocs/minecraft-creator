@@ -63,6 +63,9 @@ Constructor that takes a unique Id to associate with the created AimAssistPreset
 - **identifier**: *string*
 
 **Returns** [*AimAssistPresetSettings*](AimAssistPresetSettings.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getExcludedTargets**
 `
@@ -104,6 +107,9 @@ Sets the list of block/entity Ids to exclude from aim assist targeting.
   An array of block/entity Ids.
 
 **Returns** *void*
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setItemSettings**
 `
@@ -118,6 +124,9 @@ Sets the per-item aim-assist category Ids.
   A record mapping item Ids to aim-assist category Ids. Category Ids must have a namespace.
 
 **Returns** *void*
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **setLiquidTargetingItems**
 `
@@ -132,3 +141,6 @@ Sets the list of item Ids that will target liquid blocks with aim-assist when be
   An array of item Ids.
 
 **Returns** *void*
+  
+Notes:
+- This function can't be called in read-only mode.

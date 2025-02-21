@@ -1,40 +1,46 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:movement.amphibious
-description: "A reference document detailing the 'movement.amphibious' entity component"
+title: "Entity Documentation - minecraft:movement.amphibious"
+description: "Describes the minecraft:movement.amphibious entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:movement.amphibious
 
-`minecraft:movement.amphibious` compels an entity to swim in water and walk on land.
+This move control allows the mob to swim in water and walk on land.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| max_turn| 30.0| Decimal| The maximum number in degrees the entity can turn per tick. |
+## Amphibious Movement Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. | Axolotl: `15`, Turtle: `5` | 
 
-```json
-"minecraft:movement.amphibious":{
-    "max_turn": 30.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-### turtle
 
 ```json
 "minecraft:movement.amphibious": {
-        "max_turn": 5.0
-      }
+  "max_turn": 15
+}
 ```
 
-## Vanilla entities using `minecraft:movement.amphibious`
+#### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
+
+```json
+"minecraft:movement.amphibious": {}
+```
+
+#### [Turtle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/turtle.json)
+
+
+```json
+"minecraft:movement.amphibious": {
+  "max_turn": 5
+}
+```

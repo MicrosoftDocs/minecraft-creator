@@ -1,42 +1,38 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.slime_keep_on_jumping
-description: "A reference document detailing the 'behavior.slime_keep_on_jumping' entity goal"
+title: "Entity Documentation - minecraft:behavior.slime_keep_on_jumping"
+description: "Describes the minecraft:behavior.slime_keep_on_jumping ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.slime_keep_on_jumping
 
-`minecraft:behavior.slime_keep_on_jumping` compels the entity to continuously jump around like a slime.
+Allows the entity to continuously jump around like a slime.
 
-## Parameters
+> [!Note]
+> Can only be used on the following types of entity:
+> 
+> * Slime (minecraft:slime)
+> * Magma Cube (minecraft:magma_cube)
+> 
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| speed_multiplier| 1| Decimal| Determines the multiplier this entity's speed is modified by when jumping around. |
+## Slime Keep On Jumping Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Magma Cube: `5` | 
+| speed_multiplier | 1 | Decimal number | Determines the multiplier this entity's speed is modified by when jumping around. | Magma Cube: `1` | 
 
-```json
-"minecraft:behavior.slime_keep_on_jumping":{
-    "speed_multiplier": 1.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Magma Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/magma_cube.json)
 
-### slime
 
 ```json
 "minecraft:behavior.slime_keep_on_jumping": {
-    "priority": 5,
-    "speed_multiplier": 1.0
+  "priority": 5,
+  "speed_multiplier": 1
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.slime_keep_on_jumping`
-
-- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)

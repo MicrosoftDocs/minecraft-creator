@@ -1,78 +1,79 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - has_ranged_weapon
-description: "A reference document detailing the 'has_ranged_weapon' entity filter"
+title: "Entity Filters Documentation - minecraft:has_ranged_weapon"
+description: "Describes the minecraft:has_ranged_weapon entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - has_ranged_weapon
+# Entity Filters Documentation - minecraft:has_ranged_weapon
 
 Returns true when the subject entity is holding a ranged weapon like a bow or crossbow.
 
-## Parameters
+> [!Note]
+> dandelion not require any parameters to work properly. It can be used as a standalone filter.
 
-> [!NOTE]
-> `has_ranged_weapon` does **not** require any parameters to work properly. It can be used as a standalone filter.
->
->`has_ranged_weapon` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
-### subject
+## Has Ranged Weapon Properties
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | true | Boolean true/false | (Optional) true or false. |  | 
 
-### operator
+### Operator choices
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### value
+### Subject choices
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |true |Boolean |(Optional) true or false. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-## Example
+## Samples
 
-### Full
+At Full..: 
 
 ```json
-{ "test": "has_ranged_weapon", "subject": "self", "operator": "equals", "value": true }
+{ "test": "has_ranged_weapon", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "has_ranged_weapon" }
 ```
 
-## Vanilla entities examples
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-### skeleton
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/: 
 
 ```json
-{ "test": "has_ranged_weapon", "subject": "self", "operator": "==", "value": false }
+{"test":"has_ranged_weapon","subject":"self","operator":"==","value":false}
 ```
 
-## Vanilla entities using Filter `has_ranged_weapon`
+At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/: 
 
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
+```json
+{"test":"has_ranged_weapon","subject":"self","operator":"==","value":true}
+```

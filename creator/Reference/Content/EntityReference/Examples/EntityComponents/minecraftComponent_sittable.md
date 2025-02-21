@@ -1,43 +1,29 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:sittable
-description: "A reference document detailing the 'sittable' entity component"
+title: "Entity Documentation - minecraft:sittable"
+description: "Describes the minecraft:sittable entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:sittable
 
-`minecraft:sittable` defines the entity's 'sit' state.
+Defines the entity's 'sit' state.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| sit_event| *not set*| String| Event to run when the entity enters the 'sit' state |
-| stand_event| *not set*| String| Event to run when the entity exits the 'sit' state |
+## Sittable Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| sit_event | *not set* | String | Event to run when the entity enters the 'sit' state |  | 
+| stand_event | *not set* | String | Event to run when the entity exits the 'sit' state |  | 
 
-```json
-"minecraft:sittable":{
-    "sit_event": {"event": "minecraft:taking_a_seat"},
-    "stand_event": {"event": "minecraft:time_to_go"}
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
-### cat
 
 ```json
-"minecraft:sittable": {
-}
+"minecraft:sittable": {}
 ```
-
-## Vanilla entities using `minecraft:sittable`
-
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)

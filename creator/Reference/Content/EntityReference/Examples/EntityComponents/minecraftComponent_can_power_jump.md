@@ -1,34 +1,22 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:can_power_jump
-description: "A reference document detailing the 'can_power_jump' entity component"
+title: "Entity Documentation - minecraft:can_power_jump"
+description: "Describes the minecraft:can_power_jump entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:can_power_jump
+# Entity Documentation - minecraft:can_power_jump
 
-`minecraft:can_power_jump` allows an entity to power jump similar to the `horse` entity.
+Allows the entity to power jump like the Horse does in Vanilla.
 
-## Example
 
-```json
-"minecraft:can_power_jump":{
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
 
-### donkey
 
 ```json
-"minecraft:can_power_jump": {
-}
+"minecraft:can_power_jump": {}
 ```
-
-## Vanilla entities using `minecraft:can_power_jump`
-
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)

@@ -1,43 +1,42 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:damage_over_time
-description: "A reference document detailing the 'damage_over_time' entity component"
+title: "Entity Documentation - minecraft:damage_over_time"
+description: "Describes the minecraft:damage_over_time entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:damage_over_time
 
-`minecraft:damage_over_time` applies a defined amount of damage to the entity at specified intervals.
+Applies defined amount of damage to the entity at specified intervals.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| damage_per_hurt| 1| Integer| Amount of damage caused each hurt. |
-|time_between_hurt| 0.0| Decimal| Time in seconds between damage. |
+## Damage Over Time Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| damage_per_hurt | 1 | Integer number | Amount of damage caused each hurt. | Axolotl: `1` | 
+| time_between_hurt | 0 | Decimal number | Time in seconds between damage. | Vex: `1` | 
 
-```json
-"minecraft:damage_over_time":{
-    "damage_per_hurt": 1,
-    "time_between_hurt": 0.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-### axolotl
 
 ```json
 "minecraft:damage_over_time": {
-    "damage_per_hurt": 1,
-    "time_between_hurt": 0
+  "damage_per_hurt": 1,
+  "time_between_hurt": 0
 }
 ```
 
-## Vanilla entities using `minecraft:damage_over_time`
+#### [Vex](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/vex.json)
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
+
+```json
+"minecraft:damage_over_time": {
+  "damage_per_hurt": 1,
+  "time_between_hurt": 1
+}
+```

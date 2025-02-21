@@ -1,17 +1,32 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:tags
-description: "A reference document detailing the 'tags' item component"
+title: "Items Documentation - tags"
+description: "Describes the tags Items"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:tags
+# Items Documentation - tags
 
-`minecraft:tags` determines which tags are included on a given item.
+Determines which tags are included on a given item.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| tags|*not set* | Array| An array which can contain multiple item tags. |
+## Tags Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| tags | *not set* | Array of objects | An array that can contain multiple item tags. | Apple: `["minecraft:is_food"]` | 
+
+## Samples
+
+#### [Apple](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/apple.json)
+
+
+```json
+{
+  "tags": [
+    "minecraft:is_food"
+  ]
+}
+```

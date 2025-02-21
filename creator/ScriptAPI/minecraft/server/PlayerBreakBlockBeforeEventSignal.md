@@ -29,6 +29,7 @@ Adds a callback that will be called before a block is broken by a player.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **unsubscribe**
 `
@@ -42,3 +43,4 @@ Removes a callback from being called before a player breaks a block.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

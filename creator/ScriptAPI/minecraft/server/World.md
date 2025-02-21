@@ -19,12 +19,18 @@ Contains a set of events that are applicable to the entirety of the world.  Even
 
 Type: [*WorldAfterEvents*](WorldAfterEvents.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **beforeEvents**
 `read-only beforeEvents: WorldBeforeEvents;`
 
 Contains a set of events that are applicable to the entirety of the world. Event callbacks are called immediately. Event callbacks are executed in read-only mode.
 
 Type: [*WorldBeforeEvents*](WorldBeforeEvents.md)
+
+Notes:
+  - This property can be read in early-execution mode.
 
 #### Examples
 

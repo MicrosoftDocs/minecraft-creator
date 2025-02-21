@@ -75,6 +75,7 @@ Adds a callback that will be called when a lever is moved (activates or deactiva
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -93,6 +94,7 @@ Removes a callback from being called when a lever is moved (activates or deactiv
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 ::: moniker-end
 
 #### Examples

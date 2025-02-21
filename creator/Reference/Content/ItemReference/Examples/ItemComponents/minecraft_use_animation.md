@@ -1,17 +1,26 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:use_animation
-description: "A reference document detailing the 'use animation' item component"
+title: "Items Documentation - use_animation"
+description: "Describes the use_animation Items"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:use_animation
+# Items Documentation - use_animation
 
-`minecraft:use_animation` determines which animation plays when using an item.
+Use_animation specifies which animation is played when the player uses the item.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| value| | String | Which animation to play when using an item.|
+## Use Animation Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | String | Specifies which animation to play when the the item is used. |  | 
+
+## Samples
+
+#### [Apple](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/apple.json)
+
+
+`eat`

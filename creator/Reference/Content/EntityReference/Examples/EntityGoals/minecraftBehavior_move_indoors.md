@@ -1,45 +1,44 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.move_indoors
-description: "A reference document detailing the 'behavior.move_indoors' entity goal"
+title: "Entity Documentation - minecraft:behavior.move_indoors"
+description: "Describes the minecraft:behavior.move_indoors ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.move_indoors
 
-`minecraft:behavior.move_indoors` compels an entity to move indoors.
+Allows this entity to move indoors.
 
-## Parameters
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| speed_multiplier| 0.800000| Decimal| The movement speed modifier to apply to the entity while it is moving indoors. |
-| timeout_cooldown| 8.000000| Decimal| The cooldown time in seconds before the goal can be reused after pathfinding fails. |
+## Move Indoors Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `6`, Villager: `4` | 
+| speed_multiplier | 0.8 | Decimal number | The movement speed modifier to apply to the entity while it is moving indoors. | Villager V2: `0.8` | 
+| timeout_cooldown | 8 | Decimal number | The cooldown time in seconds before the goal can be reused after pathfinding fails | Villager V2: `8` | 
 
-```json
-"minecraft:behavior.move_indoors": {
-    "speed_multiplier": 0.8,
-    "timeout_cooldown": 8.0
-}
-```
+## Samples
 
-## Vanilla examples
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
-### villager_v2
 
 ```json
 "minecraft:behavior.move_indoors": {
-    "priority": 6,
-    "speed_multiplier": 0.8,
-    "timeout_cooldown": 8.0
+  "priority": 6,
+  "speed_multiplier": 0.8,
+  "timeout_cooldown": 8
 }
 ```
 
-### Vanilla mobs using `move_indoors`
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [villager_v2](../../../../source/vanillabehaviorpack_snippets/entities/villager_v2.md)
+
+```json
+"minecraft:behavior.move_indoors": {
+  "priority": 4,
+  "speed_multiplier": 0.8
+}
+```

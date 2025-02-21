@@ -1,52 +1,52 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.beg
-description: "A reference document detailing the 'behavior.beg' entity goal"
+title: "Entity Documentation - minecraft:behavior.beg"
+description: "Describes the minecraft:behavior.beg ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.beg
 
-`minecraft:behavior.beg` compels an entity to react by tilting its head when a player is holding select items nearby.
+Allows this mob to look at and follow the player that holds food they like.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|items|*not set* |List |List of items that this mob likes |
-|look_distance|8.0 |Decimal |Distance in blocks the mob will beg from. |
-|look_time |[2, 4]|Range ["range_min", "range_max"] |The range of time in seconds this mob will stare at the player holding a food they like, begging for it. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Beg Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| items | *not set* | Array of strings | List of items that this mob likes | Wolf: `["bone","porkchop","cooked_porkchop","chicken","cooked_chicken","beef","cooked_beef","rotten_flesh","muttonraw","muttoncooked","rabbit","cooked_rabbit"]` | 
+| look_distance | 8 | Decimal number | Distance in blocks the mob will beg from | Wolf: `8` | 
+| look_time | *not set* | Range of integers | The range of time in seconds this mob will stare at the player holding a food they like, begging for it | Wolf: `[2,4]` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Wolf: `9` | 
 
-```json
-"minecraft:behavior.beg":{
-    "priority": 1,
-    "items": ["bone","egg"],
-    "look_distance": 4,
-    "look_time": {
-        "range_min":0,
-        "range_max":4
-    }
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Wolf](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wolf.json)
 
-### wolf
 
 ```json
 "minecraft:behavior.beg": {
-        "priority": 9,
-        "look_distance": 8,
-        "look_time": [ 2, 4 ],
-        "items": [ "bone", "porkchop", "cooked_porkchop", "chicken", "cooked_chicken", 
-                   "beef", "cooked_beef", "rotten_flesh", "muttonraw", "muttoncooked", "rabbit", "cooked_rabbit" ]
-      }
+  "priority": 9,
+  "look_distance": 8,
+  "look_time": [
+    2,
+    4
+  ],
+  "items": [
+    "bone",
+    "porkchop",
+    "cooked_porkchop",
+    "chicken",
+    "cooked_chicken",
+    "beef",
+    "cooked_beef",
+    "rotten_flesh",
+    "muttonraw",
+    "muttoncooked",
+    "rabbit",
+    "cooked_rabbit"
+  ]
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.beg`
-
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)

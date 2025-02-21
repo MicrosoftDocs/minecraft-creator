@@ -1,33 +1,19 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:push_through
-description: "A reference document detailing the 'push_through' entity component"
+title: "Entity Documentation - minecraft:push_through"
+description: "Describes the minecraft:push_through entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:push_through
+# Entity Documentation - minecraft:push_through
 
-`minecraft:push_through` sets the distance through which the entity can push through.
+Sets the distance through which the entity can push through.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 0.0| Decimal| The value of the entity's push-through, in blocks. |
+## Push Through Properties
 
-## Example
-
-```json
-"minecraft:push_through":{
-    "value": 0.5
-}
-```
-
-## Vanilla entities examples
-
-No entities currently use `minecraft:push_through`
-
-## Vanilla entities using `minecraft:push_through`
-
-No entities currently use `minecraft:push_through`
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 0 | Decimal number | The value of the entity's push-through, in blocks. |  | 

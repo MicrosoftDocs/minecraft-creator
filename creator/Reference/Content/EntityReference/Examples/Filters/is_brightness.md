@@ -1,74 +1,76 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - is_brightness
-description: "A reference document detailing the 'is_brightness' entity filter"
+title: "Entity Filters Documentation - minecraft:is_brightness"
+description: "Describes the minecraft:is_brightness entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - is_brightness
+# Entity Filters Documentation - minecraft:is_brightness
 
-Tests the current brightness against a provided value in the range (0.0, 1.0).
+Tests the current brightness against a provided value in the range (0.0f, 1.0f).
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |Decimal |(Required) The brightness value to compare with. |
+## Is Brightness Properties
 
->[!Note]
-> `is_brightness` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | Decimal number | (Required) The brightness value to compare with. |  | 
 
-### subject
+### Operator choices
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### operator
+### Subject choices
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-## Example
+## Samples
 
-### Full
+At Full..: 
 
 ```json
 { "test": "is_brightness", "subject": "self", "operator": "equals", "value": "0.50" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "is_brightness", "value": "0.50" }
 ```
 
-## Vanilla entities examples
+#### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-### spider
+At /minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/: 
 
 ```json
-{ "test": "is_brightness", "operator": "<", "value": 0.49 }
+{"test":"is_brightness","operator":"<","value":0.49}
 ```
 
-## Vanilla entities using `is_brightness`
+At /minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/: 
 
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
+```json
+{"test":"is_brightness","operator":">","value":0.49}
+```

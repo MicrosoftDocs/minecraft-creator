@@ -1,40 +1,31 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:heartbeat
-description: "A reference document detailing the 'heartbeat' entity component"
+title: "Entity Documentation - minecraft:heartbeat"
+description: "Describes the minecraft:heartbeat entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:heartbeat
 
-`minecraft:heartbeat` defines the entity's heartbeat.
+Defines the entity's heartbeat.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| interval| 1.00| Molang| A Molang expression defining the inter-beat interval in seconds. A value of zero or less means no heartbeat. |
-| sound_event| heartbeat| String| Level sound event to be played as the heartbeat sound. |
+## Heartbeat Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| interval | 1.00 | String | A Molang expression defining the inter-beat interval in seconds. A value of zero or less means no heartbeat. | Warden: `"2.0 - math.clamp(query.anger_level / 80 * 1.5, 0, 1.5)"` | 
+| sound_event | heartbeat | String | Level sound event to be played as the heartbeat sound. |  | 
 
-```json
-"minecraft:heartbeat": {
-        "interval": "2.0 - math.clamp(query.anger_level / 80 * 1.5, 0, 1.5)"
-      }
-```
+## Samples
 
-## Vanilla entities examples
+#### [Warden](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/warden.json)
 
-### warden
 
 ```json
 "minecraft:heartbeat": {
-        "interval": "2.0 - math.clamp(query.anger_level / 80 * 1.5, 0, 1.5)"
-      }
+  "interval": "2.0 - math.clamp(query.anger_level / 80 * 1.5, 0, 1.5)"
+}
 ```
-
-## Vanilla entities using `minecraft:heartbeat`
-
-- [warden](../../../../Source/VanillaBehaviorPack_Snippets/entities/warden.md)

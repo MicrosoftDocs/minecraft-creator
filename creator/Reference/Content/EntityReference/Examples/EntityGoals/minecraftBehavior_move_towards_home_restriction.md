@@ -1,45 +1,57 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.move_towards_home_restriction
-description: "A reference document detailing the 'behavior.move_towards_home_restriction' entity goal"
+title: "Entity Documentation - minecraft:behavior.move_towards_home_restriction"
+description: "Describes the minecraft:behavior.move_towards_home_restriction ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.move_towards_home_restriction
 
-`minecraft:behavior.move_towards_home_restriction` aallows entities with a `"minecraft:home"` component to move towards their home position. If `"restriction_radius"` is set, entities will be able to run this behavior only if outside of it.
+Allows entities with a `minecraft:home` component to move towards their home position. 
+		If `restriction_radius` is set, entities will be able to run this behavior only if outside of it.
 
-## Parameter
+> [!Note]
+> Requires the following component in order to work properly:
+> 
+> * [Home (minecraft:home)](../EntityComponents/minecraftComponent_home.md)
+> 
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| speed_multiplier| 1.0| Decimal| This multiplier modifies the entity's speed when moving towards its restriction. |
+## Move Towards Home Restriction Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bee: `9`, Elder Guardian: `5`, Wandering Trader: `6` | 
+| speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. | Elder Guardian: `1`, Wandering Trader: `0.6` | 
+
+## Samples
+
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
+
 
 ```json
 "minecraft:behavior.move_towards_home_restriction": {
-    "priority": 4,
-    "speed_multiplier": 1.0
+  "priority": 9
 }
 ```
 
-## Vanilla mob examples
+#### [Elder Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/elder_guardian.json)
 
-### guardian
 
 ```json
 "minecraft:behavior.move_towards_home_restriction": {
-    "priority": 5,
-    "speed_multiplier": 1.0
+  "priority": 5,
+  "speed_multiplier": 1
 }
-
 ```
 
-### Vanilla mobs using `move_towards_home_restriction`
+#### [Wandering Trader](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wandering_trader.json)
 
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [guardian](../../../../source/vanillabehaviorpack_snippets/entities/guardian.md)
+
+```json
+"minecraft:behavior.move_towards_home_restriction": {
+  "priority": 6,
+  "speed_multiplier": 0.6
+}
+```

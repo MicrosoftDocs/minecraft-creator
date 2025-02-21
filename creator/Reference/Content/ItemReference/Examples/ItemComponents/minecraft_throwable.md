@@ -1,37 +1,51 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:throwable
-description: "A reference document detailing the 'throwable' item component"
+title: "Items Documentation - throwable"
+description: "Describes the throwable Items"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:throwable
+# Items Documentation - throwable
 
-`minecraft:throwable` sets the throwable item component.
+Sets the throwable item component.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|do_swing_animation|false |Boolean|Whether the item should use the swing animation when thrown.|
-|launch_power_scale|1.0|Float |The scale at which the power of the throw increases|
-|max_draw_duration|0.0|Float | The maximum duration to draw a throwable item.|
-|max_launch_power|1.0|Float |The maximum power to launch the throwable item.|
-|min_draw_duration|0.0|Float |The minimum duration to draw a throwable item.|
-|scale_power_by_draw_duration|false|Boolean|Whether or not the power of the throw increases with duration charged. When true, The longer you hold, the more power it will have when released.|
+## Throwable Properties
 
-See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| do_swing_animation | *not set* | Boolean true/false | Determines whether the item should use the swing animation when thrown. Default is set to false. | Wind Charge: `true` | 
+| launch_power_scale | *not set* | Decimal number | The scale at which the power of the throw increases. Default is set to 1.0. | Wind Charge: `1.5`, My Sword Chuck: `1` | 
+| max_draw_duration | *not set* | Decimal number | The maximum duration to draw a throwable item. Default is set to 0.0. |  | 
+| max_launch_power | *not set* | Decimal number | The maximum power to launch the throwable item. Default is set to 1.0. | Wind Charge: `1.5`, My Sword Chuck: `1` | 
+| min_draw_duration | *not set* | Decimal number | The minimum duration to draw a throwable item. Default is set to 0.0. |  | 
+| scale_power_by_draw_duration | *not set* | Boolean true/false | Whether or not the power of the throw increases with duration charged. Default is set to false. |  | 
 
-## Example
+## Samples
+
+#### [Wind Charge](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/wind_charge.json)
+
 
 ```json
-"minecraft:throwable":{
-    "do_swing_animation" : false,
-    "launch_power_scale" : 1.0,
-    "max_draw_duration" : 0.0,
-    "max_launch_power" : 1.0,
-    "min_draw_duration" : 0.0,
-    "scale_power_by_draw_duration" : false
+{
+  "do_swing_animation": true,
+  "launch_power_scale": 1.5,
+  "max_launch_power": 1.5
+}
+```
+
+#### [My Sword Chuck](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json)
+
+
+```json
+{
+  "do_swing_animation": true,
+  "launch_power_scale": 1,
+  "max_draw_duration": 0,
+  "max_launch_power": 1,
+  "min_draw_duration": 0,
+  "scale_power_by_draw_duration": false
 }
 ```

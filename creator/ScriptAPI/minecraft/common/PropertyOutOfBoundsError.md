@@ -18,12 +18,21 @@ description: Contents of the .PropertyOutOfBoundsError class.
 
 Type: *number*
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **minValue**
 `read-only minValue: number;`
 
 Type: *number*
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **value**
 `read-only value: number;`
 
 Type: *number*
+
+Notes:
+  - This property can be read in early-execution mode.

@@ -1,77 +1,95 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - in_caravan
-description: "A reference document detailing the 'in_caravan' entity filter"
+title: "Entity Filters Documentation - minecraft:in_caravan"
+description: "Describes the minecraft:in_caravan entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - in_caravan
+# Entity Filters Documentation - minecraft:in_caravan
 
 Returns true if the subject entity is in a caravan.
 
-## Parameters
+> [!Note]
+> Does not require any parameters to work properly. It can be used as a standalone filter.
 
-> [!NOTE]
-> `in_caravan` does **not** require any parameters to work properly. It can be used as a standalone filter.
->
-> `in_caravan` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
-### subject
+## In Caravan Properties
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| minecraft:damage_sensor | *not set* | [Damage Sensor](#damage-sensor-item-type) item |  | Llama: `{"triggers":{"cause":"all","deals_damage":true}}` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | true | Boolean true/false | (Optional) true or false. |  | 
 
-### operator
+## Damage Sensor item type
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+#### Minecraft:damage_sensor Properties
 
-### value
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| triggers | *not set* | String |  | Llama: `{"cause":"all","deals_damage":true}` | 
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |true |Boolean |(Optional) true or false. |
+### Operator choices
 
-## Example
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### Full
+### Subject choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
+
+## Samples
+
+At Full..: 
 
 ```json
-{ "test": "in_caravan", "subject": "self", "operator": "equals", "value": true }
+{ "test": "in_caravan", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "in_caravan" }
 ```
 
-## Vanilla entities examples
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
 
-### llama
+At /minecraft:entity/component_groups/minecraft:in_caravan/: 
 
 ```json
-{ "test": "in_caravan", "value": false }
+{
+  "minecraft:damage_sensor": {
+    "triggers": {
+      "cause": "all",
+      "deals_damage": true
+    }
+  }
+}
 ```
 
-## Vanilla entities using `in_caravan`
+At /minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/: 
 
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
+```json
+{"test":"in_caravan","value":false}
+```

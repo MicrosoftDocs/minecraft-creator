@@ -1,42 +1,35 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.enderman_leave_block
-description: "A reference document detailing the 'behavior.enderman_leave_block' entity goal"
+title: "Entity Documentation - minecraft:behavior.enderman_leave_block"
+description: "Describes the minecraft:behavior.enderman_leave_block ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.enderman_leave_block
 
-`minecraft:behavior.enderman_leave_block` compels the entity to drop the block they are currently holding.
+Allows the enderman to drop a block they are carrying.
 
-> [!NOTE]
-> This behavior can only be used by the `enderman` entity type.
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Enderman (minecraft:enderman)
+> 
 
-## Parameters
+## Enderman Leave Block Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Enderman: `10` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.enderman_leave_block":{
-    "priority": 8
-}
-```
+#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
 
-## Vanilla entities examples
-
-### enderman
 
 ```json
 "minecraft:behavior.enderman_leave_block": {
-    "priority": 10
+  "priority": 10
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.enderman_leave_block`
-
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)

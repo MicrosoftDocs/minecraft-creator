@@ -1,101 +1,139 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - has_component
-description: "A reference document detailing the 'has_component' entity filter"
+title: "Entity Filters Documentation - minecraft:has_component"
+description: "Describes the minecraft:has_component entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - has_component
+# Entity Filters Documentation - minecraft:has_component
 
 Returns true when the subject entity contains the named component.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |String | (Required) The component name to look for |
+## Has Component Properties
 
-### Nested Table
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | String | (Required) The component name to look for |  | 
 
-> [!NOTE]
-> `has_component` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+### Operator choices
 
-### subject
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+### Subject choices
 
-### operator
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+## Samples
 
-## Examples
-
-### Full
+At Full..: 
 
 ```json
 { "test": "has_component", "subject": "self", "operator": "equals", "value": "minecraft:explode" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "has_component", "value": "minecraft:explode" }
 ```
 
-## Vanilla entities examples
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-### zombie pigman
+At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/1/: 
 
 ```json
-{
- "test": "has_component", "subject": "other", "value": "minecraft:is_baby"
-}
+{"test":"has_component","subject":"self","operator":"!=","value":"minecraft:attack_cooldown"}
 ```
 
-## Vanilla entities using `has_component`
+At /minecraft:entity/events/minecraft:entity_born/sequence/1/filters/: 
 
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
-- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [tnt_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)
-- [vex](../../../../Source/VanillaBehaviorPack_Snippets/entities/vex.md)
-- [villager_V2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+```json
+{"test":"has_component","operator":"!=","value":"minecraft:variant"}
+```
+
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+
+
+```json
+{"test":"has_component","operator":"!=","value":"minecraft:is_baby"}
+```
+
+#### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
+
+At /minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/2/: 
+
+```json
+{"test":"has_component","operator":"!=","value":"minecraft:explode"}
+```
+
+At /minecraft:entity/events/minecraft:start_exploding_forced/sequence/0/filters/: 
+
+```json
+{"test":"has_component","operator":"!=","value":"minecraft:is_charged"}
+```
+
+At /minecraft:entity/events/minecraft:start_exploding_forced/sequence/1/filters/: 
+
+```json
+{"test":"has_component","value":"minecraft:is_charged"}
+```
+
+#### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
+
+At /minecraft:entity/events/minecraft:convert_to_zombie/sequence/1/filters/: 
+
+```json
+{"test":"has_component","value":"minecraft:is_baby"}
+```
+
+#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
+
+At /minecraft:entity/component_groups/minecraft:panda_baby/minecraft:behavior.sneeze/entity_types/0/filters/all_of/0/: 
+
+```json
+{"test":"has_component","subject":"other","operator":"!=","value":"minecraft:is_baby"}
+```
+
+At /minecraft:entity/events/minecraft:panda_weak/sequence/1/filters/: 
+
+```json
+{"test":"has_component","operator":"==","value":"minecraft:is_baby"}
+```
+
+#### [Sheep](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sheep.json)
+
+At /minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/3/: 
+
+```json
+{"test":"has_component","value":"minecraft:is_dyeable"}
+```
+
+At /minecraft:entity/events/minecraft:on_eat_block/sequence/1/filters/: 
+
+```json
+{"subject":"self","test":"has_component","operator":"!=","value":"minecraft:is_baby"}
+```

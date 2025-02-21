@@ -36,6 +36,7 @@ Adds a callback that will be called when a player joins the world.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -54,4 +55,5 @@ Removes a callback from being called when a player joins the world.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 ::: moniker-end

@@ -1,46 +1,32 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:scale_by_age
-description: "A reference document detailing the 'scale_by_age' entity component"
+title: "Entity Documentation - minecraft:scale_by_age"
+description: "Describes the minecraft:scale_by_age entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:scale_by_age
 
-`minecraft:scale_by_age` defines the entity's size interpolation based on the entity's age.
+Defines the entity's size interpolation based on the entity's age.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| end_scale| 1| Decimal| Ending scale of the entity when it's fully grown. |
-| start_scale| 1| Decimal| Initial scale of the newborn entity. |
+## Scale By Age Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| end_scale | 1 | Decimal number | Ending scale of the entity when it's fully grown. | Donkey: `1` | 
+| start_scale | 1 | Decimal number | Initial scale of the newborn entity. | Donkey: `0.5` | 
 
-```json
-"minecraft:scale_by_age":{
-    "end_scale": 1.0,
-    "start_scale": 1.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
 
-### horse
 
 ```json
 "minecraft:scale_by_age": {
-    "start_scale": 0.5,
-    "end_scale": 1.0
+  "start_scale": 0.5,
+  "end_scale": 1
 }
 ```
-
-## Vanilla entities using `minecraft:scale_by_age`
-
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)

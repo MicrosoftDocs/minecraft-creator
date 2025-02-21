@@ -1,73 +1,65 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - is_humid
-description: "A reference document detailing the 'is_humid' entity filter"
+title: "Entity Filters Documentation - minecraft:is_humid"
+description: "Describes the minecraft:is_humid entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - is_humid
+# Entity Filters Documentation - minecraft:is_humid
 
-Tests whether the subject is in an area with humidity.
+Tests whether the Subject is in an area with humidity.
 
-## Parameters
+> [!Note]
+> Does not require any parameters to work properly. It can be used as a standalone filter.
 
-> [!NOTE]
-> `is_humid` does **not** require any parameters to work properly. It can be used as a standalone filter.
->
-> `is_humid` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
 
-### subject
+## Is Humid Properties
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | true | Boolean true/false | (Optional) true or false. |  | 
 
-### operator
+### Operator choices
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### value
+### Subject choices
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |true |Boolean |(Optional) true or false. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-## Example
+## Samples
 
-### Full
+At Full..: 
 
 ```json
-{ "test": "is_humid", "subject": "self", "operator": "equals", "value": true }
+{ "test": "is_humid", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "is_humid" }
 ```
-
-## Vanilla entities examples
-
-No entities currently use `is_humid`.
-
-## Vanilla entities using `is_humid`
-
-No entities currently use `is_humid`.

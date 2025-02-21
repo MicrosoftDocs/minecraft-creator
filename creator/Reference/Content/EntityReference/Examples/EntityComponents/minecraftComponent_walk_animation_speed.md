@@ -1,33 +1,19 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:walk_animation_speed
-description: "A reference document detailing the 'walk_animation_speed' entity component"
+title: "Entity Documentation - minecraft:walk_animation_speed"
+description: "Describes the minecraft:walk_animation_speed entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:walk_animation_speed
+# Entity Documentation - minecraft:walk_animation_speed
 
-`minecraft:walk_animation_speed` sets the speed multiplier for this entity's walk animation speed.
+Sets the speed multiplier for this entity's walk animation speed.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 0.0| Decimal| The higher the number, the faster the animation for walking plays. A value of 1.0 means normal speed, while 2.0 means twice as fast.|
+## Walk Animation Speed Properties
 
-## Example
-
-```json
-"minecraft:walk_animation_speed":{
-    "value": 0.0
-}
-```
-
-## Vanilla entities examples
-
-No entities currently use `minecraft:walk_animation_speed`
-
-## Vanilla entities using `minecraft:walk_animation_speed`
-
-No entities currently use `minecraft:walk_animation_speed`
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 1 | Decimal number | The higher the number, the faster the animation for walking plays. A value of 1.0 means normal speed, while 2.0 means twice as fast. |  | 

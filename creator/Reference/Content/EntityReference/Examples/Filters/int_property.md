@@ -1,57 +1,83 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - int_property
-description: "A reference document detailing the 'int_property' entity filter"
+title: "Entity Filters Documentation - minecraft:int_property"
+description: "Describes the minecraft:int_property entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - int_property
+# Entity Filters Documentation - minecraft:int_property
 
-Returns true when the `int` actor property matches the value provided.
+Returns true when the int actor property matches the value provided.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-| domain| self|String| (Required) The property name to look for. |
-| operator|equals |String | (Optional) The comparison to apply with 'value'.|
-| subject| self| String| (Optional) The subject of this filter test. |
-| value|*not set* |Integer | (Required) An integer value. |
+## Int Property Properties
 
-### operator
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| domain | *not set* | String | (Required) The property name to look for |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | Integer number | (Required) An integer value. |  | 
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+### Operator choices
 
-## Examples
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### Full
+### Subject choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
+
+## Samples
+
+At Full..: 
 
 ```json
 { "test": "int_property", "subject": "self", "domain": "minecraft:can_climb", "operator": "equals", "value": "0" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "int_property", "domain": "minecraft:can_climb", "value": "0" }
 ```
 
-## Vanilla entity examples
+#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
 
-No entities currently use `int_property`
+At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/0/: 
 
-## Vanilla entities using `int_property`
+```json
+{"test":"int_property","domain":"minecraft:creaking_swaying_ticks","operator":">","value":0}
+```
 
-No entities currently use `int_property`
+At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/1/: 
+
+```json
+{"test":"int_property","domain":"minecraft:creaking_swaying_ticks","operator":"<=","value":5}
+```
+
+At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/4/filters/: 
+
+```json
+{"test":"int_property","domain":"minecraft:creaking_swaying_ticks","operator":">","value":5}
+```

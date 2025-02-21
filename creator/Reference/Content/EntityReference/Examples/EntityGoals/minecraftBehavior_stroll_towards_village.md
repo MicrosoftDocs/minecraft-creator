@@ -1,54 +1,40 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.stroll_towards_village
-description: "A reference document detailing the 'behavior.stroll_towards_village' entity goal"
+title: "Entity Documentation - behavior.stroll_towards_village"
+description: "Describes the behavior.stroll_towards_village AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# minecraft:behavior.stroll_towards_village
+# Entity Documentation - behavior.stroll_towards_village
 
-`minecraft:behavior.stroll_towards_village` compels an entity to navigate and search for a nearby village.
+Allows the mob to move into a random location within a village within the search range.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again. |
-|goal_radius| 0.5| Decimal| Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|search_range| 0| Integer| The distance in blocks to search for points inside villages. If <= 0, find the closest village regardless of distance. |
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
-|start_chance| 0.1| Decimal| This is the chance that the mob will start this goal, from 0 to 1. |
+## Stroll Towards Village Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| cooldown_time | 0 | Decimal number | Time in seconds the mob has to wait before using the goal again | Fox: `10` | 
+| goal_radius | 0.5 | Decimal number | Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot | Fox: `3` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Fox: `11` | 
+| search_range | 0 | Integer number | The distance in blocks to search for points inside villages. If <= 0, find the closest village regardless of distance. | Fox: `32` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Fox: `1` | 
+| start_chance | 0.1 | Decimal number | This is the chance that the mob will start this goal, from 0 to 1 | Fox: `0.005` | 
 
-```json
-"minecraft:behavior.stroll_towards_village":{
-    "priority": 4,
-    "speed_multiplier": 1.0,
-    "goal_radius": 4.0,
-    "cooldown_time": 10.0,
-    "search_range": 64,
-    "start_chance": 0.02
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
 
-### fox
 
 ```json
-"minecraft:behavior.stroll_towards_village": {
-    "priority": 11,
-    "speed_multiplier": 1.0,
-    "goal_radius": 3.0,
-    "cooldown_time": 10.0,
-    "search_range": 32,
-    "start_chance": 0.005
+{
+  "priority": 11,
+  "speed_multiplier": 1,
+  "goal_radius": 3,
+  "cooldown_time": 10,
+  "search_range": 32,
+  "start_chance": 0.005
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.stroll_towards_village`
-
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)

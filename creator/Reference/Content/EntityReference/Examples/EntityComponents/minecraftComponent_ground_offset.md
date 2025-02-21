@@ -1,33 +1,19 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:ground_offset
-description: "A reference document detailing the 'ground_offset' entity component"
+title: "Entity Documentation - minecraft:ground_offset"
+description: "Describes the minecraft:ground_offset entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:ground_offset
+# Entity Documentation - minecraft:ground_offset
 
-`minecraft:ground_offset` sets the offset from the ground that the entity is actually at.
+Sets the offset from the ground that the entity is actually at.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 1.0| Decimal| The value of the entity's offset from the terrain, in blocks. |
+## Ground Offset Properties
 
-## Example
-
-```json
-"minecraft:ground_offset":{
-    "value": 0.5
-}
-```
-
-## Vanilla entities examples
-
-No entities currently use `minecraft:ground_offset`
-
-## Vanilla entities using `minecraft:ground_offset`
-
-No entities currently use `minecraft:ground_offset`
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 0 | Decimal number | The value of the entity's offset from the terrain, in blocks. |  | 

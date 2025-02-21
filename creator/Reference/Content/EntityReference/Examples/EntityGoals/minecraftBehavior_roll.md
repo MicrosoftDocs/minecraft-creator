@@ -1,43 +1,42 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.roll
-description: "A reference document detailing the 'behavior.roll' entity goal"
+title: "Entity Documentation - minecraft:behavior.roll"
+description: "Describes the minecraft:behavior.roll ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.roll
 
-`minecraft:behavior.roll` compels an entity to roll forward.
+This allows the mob to roll forward.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|probability| 1.0| Decimal| The probability that the mob will use the goal. |
+## Roll Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Panda: `12` | 
+| probability | *not set* | Decimal number | The probability that the mob will use the goal. | Panda: `0.0016`, `0.013` | 
 
-```json
-"minecraft:behavior.roll":{
-    "priority": 7,
-    "probability": 0.6
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
 
-### panda
+At /minecraft:entity/component_groups/minecraft:panda_baby/minecraft:behavior.roll/: 
 
 ```json
 "minecraft:behavior.roll": {
   "priority": 12,
   "probability": 0.0016
 }
-
 ```
 
-## Vanilla entities using `minecraft:behavior.roll`
+At /minecraft:entity/component_groups/minecraft:panda_playful/minecraft:behavior.roll/: 
 
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
+```json
+"minecraft:behavior.roll": {
+  "priority": 12,
+  "probability": 0.013
+}
+```

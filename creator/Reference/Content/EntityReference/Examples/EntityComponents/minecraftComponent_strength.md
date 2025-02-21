@@ -1,42 +1,69 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:strength
-description: "A reference document detailing the 'strength' entity component"
+title: "Entity Documentation - minecraft:strength"
+description: "Describes the minecraft:strength entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:strength
 
-`minecraft:strength` defines the entity's ability to carry items.
+Defines the entity's strength to carry items.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| max| 5| Integer| The maximum strength of the entity |
-|value| 1| Integer|  The initial value of the strength |
+## Strength Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max | 5 | Integer number | The maximum strength of this entity | Llama: `5` | 
+| value | 1 | Integer number | The initial value of the strength | Llama: `1`, `2`, `3`, `4`, `5` | 
 
-```json
-"minecraft:strength":{
-    "max": 9000,
-    "value": 1
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
 
-### llama
+At /minecraft:entity/component_groups/minecraft:strength_1/minecraft:strength/: 
 
 ```json
 "minecraft:strength": {
-    "value": 1,
-    "max": 5
+  "value": 1,
+  "max": 5
 }
 ```
 
-## Vanilla entities using `minecraft:strength`
+At /minecraft:entity/component_groups/minecraft:strength_2/minecraft:strength/: 
 
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
+```json
+"minecraft:strength": {
+  "value": 2,
+  "max": 5
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:strength_3/minecraft:strength/: 
+
+```json
+"minecraft:strength": {
+  "value": 3,
+  "max": 5
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:strength_4/minecraft:strength/: 
+
+```json
+"minecraft:strength": {
+  "value": 4,
+  "max": 5
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:strength_5/minecraft:strength/: 
+
+```json
+"minecraft:strength": {
+  "value": 5,
+  "max": 5
+}
+```

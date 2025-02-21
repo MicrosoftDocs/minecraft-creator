@@ -1,136 +1,246 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:healable
-description: "A reference document detailing the 'healable' entity component"
+title: "Entity Documentation - minecraft:healable"
+description: "Describes the minecraft:healable entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:healable
 
-`minecraft:healable` defines the interactions with the entity for healing it.
+How entities heal.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| filters| *not set*| Minecraft Filter| The filter group that defines conditions for using this item to heal the entity. |
-| force_use| False| Boolean| Determines if an item can be used regardless of entity being at full health. |
-| items| *not set*| Array| The array of items that can be used to heal the entity.|
+## Healable Properties
 
-### items
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| filters | *not set* | Minecraft filter | The filter group that defines the conditions for using this item to heal the entity. | Parrot: `{"test":"is_riding","operator":"!=","value":true}` | 
+| force_use | false | Boolean true/false | Determines if item can be used regardless of entity being at full health. | Parrot: `true` | 
+| items | *not set* | Array of [Items](#items-item-type) items | The array of items that can be used to heal this entity. | Camel: `[{"item":"cactus","heal_amount":2}]`, Cat: `[{"item":"fish","heal_amount":2},{"item":"salmon","heal_amount":2}]` | 
 
-`items` is an array defined by two parameters. Each item has the following properties:
+## Items item type
+The array of items that can be used to heal this entity.
 
-| Name| Default Value| Type| Description |
-|:-----------|:-----------|:-----------|:-----------|
-| heal_amount| 1| Integer| The amount of health the entity gains when fed this item. |
-| item| *not set*| String| Item identifier that can be used to heal the entity. |
 
-## Example
+#### Items Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| heal_amount | 1 | Integer number | The amount of health this entity gains when fed this item. |  | 
+| item | *not set* | String | Item identifier that can be used to heal this entity. |  | 
+
+## Samples
+
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+
 
 ```json
-"minecraft:healable":{
-    "filters": {"test": "has_damage", "value": "fatal"} ,
-    "force_use": false,
-    "items": [
-        {
-        "heal_amount": 1,
-        "item": "carrot"
-        }
-    ]
+"minecraft:healable": {
+  "items": [
+    {
+      "item": "cactus",
+      "heal_amount": 2
+    }
+  ]
 }
 ```
 
-## Vanilla entities examples
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
-### wolf
 
 ```json
- "minecraft:healable": {
-        "items": [
-          {
-            "item": "porkchop",
-            "heal_amount": 3
-          },
-          {
-            "item": "cooked_porkchop",
-            "heal_amount": 8
-          },
-          {
-            "item": "fish",
-            "heal_amount": 2
-          },
-          {
-            "item": "salmon",
-            "heal_amount": 2
-          },
-          {
-            "item": "clownfish",
-            "heal_amount": 1
-          },
-          {
-            "item": "pufferfish",
-            "heal_amount": 1
-          },
-          {
-            "item": "cooked_fish",
-            "heal_amount": 5
-          },
-          {
-            "item": "cooked_salmon",
-            "heal_amount": 6
-          },
-          {
-            "item": "beef",
-            "heal_amount": 3
-          },
-          {
-            "item": "cooked_beef",
-            "heal_amount": 8
-          },
-          {
-            "item": "chicken",
-            "heal_amount": 2
-          },
-          {
-            "item": "cooked_chicken",
-            "heal_amount": 6
-          },
-          {
-            "item": "muttonRaw",
-            "heal_amount": 2
-          },
-          {
-            "item": "muttonCooked",
-            "heal_amount": 6
-          },
-          {
-            "item": "rotten_flesh",
-            "heal_amount": 4
-          },
-          {
-            "item": "rabbit",
-            "heal_amount": 3
-          },
-          {
-            "item": "cooked_rabbit",
-            "heal_amount": 5
-          },
-          {
-            "item": "rabbit_stew",
-            "heal_amount": 10
-          }
-        ]
-      }
+"minecraft:healable": {
+  "items": [
+    {
+      "item": "fish",
+      "heal_amount": 2
+    },
+    {
+      "item": "salmon",
+      "heal_amount": 2
+    }
+  ]
+}
 ```
 
-## Vanilla entities using `minecraft:healable`
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
 
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
+
+```json
+"minecraft:healable": {
+  "items": [
+    {
+      "item": "wheat",
+      "heal_amount": 2
+    },
+    {
+      "item": "sugar",
+      "heal_amount": 1
+    },
+    {
+      "item": "hay_block",
+      "heal_amount": 20
+    },
+    {
+      "item": "apple",
+      "heal_amount": 3
+    },
+    {
+      "item": "golden_carrot",
+      "heal_amount": 4
+    },
+    {
+      "item": "golden_apple",
+      "heal_amount": 10
+    },
+    {
+      "item": "appleEnchanted",
+      "heal_amount": 10
+    }
+  ]
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:healable": {
+  "items": [
+    {
+      "item": "wheat",
+      "heal_amount": 2
+    },
+    {
+      "item": "hay_block",
+      "heal_amount": 10
+    }
+  ]
+}
+```
+
+#### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
+
+
+```json
+"minecraft:healable": {
+  "force_use": true,
+  "filters": {
+    "test": "is_riding",
+    "operator": "!=",
+    "value": true
+  },
+  "items": [
+    {
+      "item": "cookie",
+      "heal_amount": 0,
+      "effects": [
+        {
+          "name": "fatal_poison",
+          "chance": 1,
+          "duration": 1000,
+          "amplifier": 0
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### [Sniffer](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sniffer.json)
+
+
+```json
+"minecraft:healable": {
+  "items": [
+    {
+      "item": "torchflower_seeds",
+      "heal_amount": 2
+    }
+  ]
+}
+```
+
+#### [Wolf](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wolf.json)
+
+
+```json
+"minecraft:healable": {
+  "items": [
+    {
+      "item": "porkchop",
+      "heal_amount": 6
+    },
+    {
+      "item": "cooked_porkchop",
+      "heal_amount": 16
+    },
+    {
+      "item": "fish",
+      "heal_amount": 4
+    },
+    {
+      "item": "salmon",
+      "heal_amount": 4
+    },
+    {
+      "item": "clownfish",
+      "heal_amount": 2
+    },
+    {
+      "item": "pufferfish",
+      "heal_amount": 2
+    },
+    {
+      "item": "cooked_fish",
+      "heal_amount": 10
+    },
+    {
+      "item": "cooked_salmon",
+      "heal_amount": 12
+    },
+    {
+      "item": "beef",
+      "heal_amount": 6
+    },
+    {
+      "item": "cooked_beef",
+      "heal_amount": 16
+    },
+    {
+      "item": "chicken",
+      "heal_amount": 4
+    },
+    {
+      "item": "cooked_chicken",
+      "heal_amount": 12
+    },
+    {
+      "item": "muttonRaw",
+      "heal_amount": 4
+    },
+    {
+      "item": "muttonCooked",
+      "heal_amount": 12
+    },
+    {
+      "item": "rotten_flesh",
+      "heal_amount": 8
+    },
+    {
+      "item": "rabbit",
+      "heal_amount": 6
+    },
+    {
+      "item": "cooked_rabbit",
+      "heal_amount": 10
+    },
+    {
+      "item": "rabbit_stew",
+      "heal_amount": 20
+    }
+  ]
+}
+```

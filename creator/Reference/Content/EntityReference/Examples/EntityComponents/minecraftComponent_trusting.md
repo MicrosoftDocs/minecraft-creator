@@ -1,49 +1,40 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:trusting
-description: "A reference document detailing the 'trusting' entity component"
+title: "Entity Documentation - minecraft:trusting"
+description: "Describes the minecraft:trusting entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:trusting
 
-`minecraft:trusting` defines the rules for an entity to trust players.
+Defines the rules for a mob to trust players.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:-----------|:-----------|:-----------|:-----------|
-| probability| 1.00| Decimal| The chance of the entity trusting with each item use between 0.0 and 1.0, where 1.0 is 100%. |
-| trust_event| *not set*| String| Event to initiate when the entity becomes trusting. |
-| trust_items| *not set*| List| The list of items that can be used to get the entity to trust players. |
+## Trusting Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| probability | 1 | Decimal number | The chance of the entity trusting with each item use between 0.0 and 1.0, where 1.0 is 100%. | Ocelot: `0.33` | 
+| trust_event | *not set* | String | Event to run when this entity becomes trusting. | Ocelot: `{"event":"minecraft:on_trust","target":"self"}` | 
+| trust_items | *not set* | Array of strings | The list of items that can be used to get the entity to trust players. | Ocelot: `["fish","salmon"]` | 
 
-```json
-"minecraft:trusting": {
-    "probability": 1.00,
-    "trust_items": ["emerald", "gold" ],
-    "trust_event": {
-        "event": "minecraft:trust",
-        "target": "self"
-    }
-```
+## Samples
 
-## Vanilla entities examples
+#### [Ocelot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ocelot.json)
 
-### ocelot
 
 ```json
 "minecraft:trusting": {
-          "probability": 0.33,
-          "trust_items": [ "fish", "salmon" ],
-          "trust_event": {
-            "event": "minecraft:on_trust",
-            "target": "self"
-          }
+  "probability": 0.33,
+  "trust_items": [
+    "fish",
+    "salmon"
+  ],
+  "trust_event": {
+    "event": "minecraft:on_trust",
+    "target": "self"
+  }
+}
 ```
-
-## Vanilla entities using `minecraft:trusting`
-
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)

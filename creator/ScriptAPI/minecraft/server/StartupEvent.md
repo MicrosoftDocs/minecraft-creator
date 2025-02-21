@@ -19,7 +19,13 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 Type: [*BlockComponentRegistry*](BlockComponentRegistry.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **itemComponentRegistry**
 `read-only itemComponentRegistry: ItemComponentRegistry;`
 
 Type: [*ItemComponentRegistry*](ItemComponentRegistry.md)
+
+Notes:
+  - This property can be read in early-execution mode.

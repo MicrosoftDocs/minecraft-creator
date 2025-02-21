@@ -268,12 +268,6 @@
           href: Documents/IntroductionToAddEntity.md
         - name: Introduction to Entity Properties
           href: Documents/IntroductionToEntityProperties.md
-        - name: Entity Modeling and Animation
-          href: Documents/EntityModelingAndAnimation.md
-        - name: Introduction to Animation Controllers
-          href: Documents/IntroductionToAnimationControllers.md
-        - name: Animations vs Animation Controllers
-          href: Documents/AnimationsVsControllers.md
         - name: Entity Behavior Introduction
           href: Documents/EntityBehaviorIntroduction.md
         - name: Entity Behavior (AI) Components
@@ -282,6 +276,22 @@
           href: Documents/EntityEvents.md
         - name: Creating a Goblin Chef Entity 
           href: Documents/MakerSeriesMakingTheGoblinChef.md
+        - name: Animations and Rendering
+          items:  
+          - name: Entity Modeling and Animation
+            href: Documents/EntityModelingAndAnimation.md
+          - name: Animations Overview
+            href: Documents/Animations/AnimationsOverview.md
+          - name: Introduction to Animation Controllers
+            href: Documents/IntroductionToAnimationControllers.md
+          - name: Animation Controllers Overview
+            href: Documents/Animations/AnimationController.md
+          - name: Animations vs Animation Controllers
+            href: Documents/AnimationsVsControllers.md
+          - name: Render Controllers
+            href: Documents/Animations/AnimationRenderController.md
+          - name: Upgrading Animations
+            href: Documents/Animations/AnimationUpgrade.md
         - name: NPCs
           items:  
           - name: Create a Custom NPC
@@ -448,10 +458,10 @@
         href: ScriptAPI/TOC.yml
       - name: Behavior Pack JSON Files
         items:
-        - name: Add-On Manifest JSON
-          href: Reference/Content/AddonsReference/Examples/AddonManifest.md
+        - name: Pack Manifest JSON (Behavior or Resource or Skin)
+          href: Reference/Content/AddonsReference/PackManifest.md
         - name: Biome JSON
-          href: Reference/Content/biomereference/Examples/BiomeOverview.md
+          href: Documents/Biomes/BiomeOverview.md
         - name: Block JSON
           items:
           - name: Block Definitions
@@ -562,16 +572,10 @@
         items:
         - name: Client Entity JSON
           href: Reference/Content/entityreference/Examples/ClientEntityDocumentation/ClientEntityDocumentationIntroduction.md
-        - name: Geometry and Animation JSON
+        - name: Geometry JSON
           items:
           - name: Schemas List
             href: Reference/Content/schemasreference/SchemasList.md
-          - name: actor_animation
-            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_1.8.0.md
-          - name: block_reference
-            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_block_reference_1.10.0.md
-          - name: chance_information
-            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_chance_information_1.14.0.md
           - name: geometry:1.8.0
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.8.0.md
           - name: geometry:1.12.0
@@ -586,14 +590,22 @@
             href: Reference/Content/SchemasReference/Schemas/minecraftSchema_geometry_1.21.0.md
           - name: Item Display Transforms in geometry:1.21.0
             href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
-          - name: persona_actor_animation
-            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_persona_actor_animation_1.8.0.md          
         - name: Animation JSON
-          href: Reference/Content/animationsreference/Examples/TOC.yml
+          items: 
+          - name: Animations 
+            href: Documents/Animations/AnimationsOverview.md
+          - name: Animation Controllers 
+            href: Documents/Animations/AnimationController.md
+          - name: Animations 1.8.0
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_actor_animation_1.8.0.md
+          - name: Animations for Persona 1.8.0
+            href: Reference/Content/SchemasReference/Schemas/minecraftSchema_persona_actor_animation_1.8.0.md          
+          - name: Animation Upgrades 
+            href: Documents/Animations/AnimationUpgrade.md
         - name: Client Biome JSON
           href: Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md
         - name: Fog JSON
-          href: Reference/Content/fogsreference/Examples/FogsIntroduction.md
+          href: Reference/Content/FogsReference/fogs.md
         - name: Particle JSON
           items:
           - name: Particle Components
@@ -609,7 +621,7 @@
           - name: Molang Concepts
             href: Reference/Content/Molangreference/Examples/Molangconcepts/TOC.yml
       - name: Default Minecraft Listings
-        href: Reference/Content/AddonsReference/Examples/TOC.yml
+        href: Reference/Content/VanillaListingsReference/TOC.yml
       - name: Raw Message JSON
         href: Reference/Content/RawMessageJSON.md
       - name: Version Disambiguation

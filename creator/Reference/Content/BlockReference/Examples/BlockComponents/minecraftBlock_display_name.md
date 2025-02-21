@@ -1,23 +1,16 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:display_name
-description: "A reference document detailing the 'display_name' block component"
+title: "Block Components Documentation - minecraft:display_name"
+description: "Describes the minecraft:display_name block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:display_name
+# Block Components Documentation - minecraft:display_name
 
-`minecraft:display_name` is a `String` component that specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this component is omitted, the name of the block will be used as the display name.
+Specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this component is omitted, the name of the block will be used as the display name.
 
-## Default Value of the Component
+## Alternate Simple Representations
 
-This component is specified as a `Localization String`. If this component is omitted, the default value for this component is the name of the block.
-
-## Example
-
-```json
-"minecraft:display_name": "customBlock"
-```
-
-[Click here for a list of existing vanilla block names.](../../../AddonsReference/Examples/AddonBlocks.md#list-of-blocks)
+This item can also be represented as a `String`.

@@ -1,47 +1,73 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:home
-description: "A reference document detailing the 'home' entity component"
+title: "Entity Documentation - minecraft:home"
+description: "Describes the minecraft:home entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:home
 
-`minecraft:home` saves a home position for when the entity is spawned.
-
-## Parameters
-
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| home_block_list | *not set* | List | Optional list of blocks that can be considered a valid home. If no such block longer exists at that position, the home restriction is removed. Example syntax: minecraft:sand. Not supported: minecraft:sand:1. |
-| restriction_radius | 0 | Integer | Optional radius that the entity will be restricted to in relation to its home. |
-| restriction_type | *not set* | String | Defines how the the entity will be restricted to its home position. The possible values are: "none" which poses no restriction, "random_movement" which restricts randomized movement to be around the home position, and "all_movement", which restricts any kind of movement to be around the home position. However, entities that somehow got too far away from their home will always be able to move closer to it, if prompted to do so. |
+Saves a home position for when the the entity is spawned.
 
 
-## Example
+## Home Properties
 
-```json
-"minecraft:home":{
-    "home_block_list": [],
-    "restriction_radius":  -1
-}
-```
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| home_block_list | *not set* | Array of strings | Optional list of blocks that can be considered a valid home. If no such block longer exists at that position, <br>											the home restriction is removed. Example syntax: minecraft:sand. Not supported: minecraft:sand:1. | Bee: `["minecraft:bee_nest","minecraft:beehive"]` | 
+| restriction_radius | 0 | Integer number | Optional radius that the entity will be restricted to in relation to its home. | Bee: `22`, Creaking: `32`, Elder Guardian: `16` | 
+| restriction_type | none | String | Defines how the the entity will be restricted to its home position. The possible values are: <br>												<br>- "none", which poses no restriction. <br>												<br>- "random_movement", which restricts randomized movement to be around the home position. <br>												<br>- "all_movement", which restricts any kind of movement to be around the home position. <br>													However, entities that somehow got too far away from their home will always be able to move closer to it, if prompted to do so. | Bee: `"random_movement"`, Creaking: `"all_movement"` | 
 
-## Vanilla entities examples
+## Samples
 
-### elder_guardian
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
+
 
 ```json
 "minecraft:home": {
-    "restriction_radius": 16
+  "restriction_type": "random_movement",
+  "restriction_radius": 22,
+  "home_block_list": [
+    "minecraft:bee_nest",
+    "minecraft:beehive"
+  ]
 }
 ```
 
-## Vanilla entities using `minecraft:home`
+#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
 
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
+
+```json
+"minecraft:home": {
+  "restriction_type": "all_movement",
+  "restriction_radius": 32
+}
+```
+
+#### [Elder Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/elder_guardian.json)
+
+
+```json
+"minecraft:home": {
+  "restriction_type": "random_movement",
+  "restriction_radius": 16
+}
+```
+
+#### [Piglin Brute](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin_brute.json)
+
+
+```json
+"minecraft:home": {}
+```
+
+#### [Wandering Trader](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wandering_trader.json)
+
+
+```json
+"minecraft:home": {
+  "restriction_radius": 16
+}
+```

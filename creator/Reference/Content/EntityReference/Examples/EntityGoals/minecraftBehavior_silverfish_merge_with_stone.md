@@ -1,42 +1,35 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.silverfish_merge_with_stone
-description: "A reference document detailing the 'behavior.silverfish_merge_with_stone' entity goal"
+title: "Entity Documentation - minecraft:behavior.silverfish_merge_with_stone"
+description: "Describes the minecraft:behavior.silverfish_merge_with_stone ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.silverfish_merge_with_stone
 
-`minecraft:behavior.silverfish_merge_with_stone` compels an entity to enter a stone block.
+Allows the mob to go into stone blocks like Silverfish do.
 
-> [!NOTE]
-> This behavior can only be used by the `silverfish` entity type.
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Silverfish (minecraft:silverfish)
+> 
 
-## Parameters
+## Silverfish Merge With Stone Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Silverfish: `5` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.silverfish_merge_with_stone":{
-    "priority": 2
-}
-```
+#### [Silverfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/silverfish.json)
 
-## Vanilla entities examples
-
-### silverfish
 
 ```json
 "minecraft:behavior.silverfish_merge_with_stone": {
-    "priority": 5
+  "priority": 5
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.silverfish_merge_with_stone`
-
-- [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)

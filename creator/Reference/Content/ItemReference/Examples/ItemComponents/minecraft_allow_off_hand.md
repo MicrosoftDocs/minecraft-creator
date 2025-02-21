@@ -1,17 +1,19 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:allow_off_hand
-description: "A reference document detailing the 'allow_off_hand' item component"
+title: "Items Documentation - minecraft:allow_off_hand"
+description: "Describes the minecraft:allow_off_hand item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:allow_off_hand
+# Items Documentation - minecraft:allow_off_hand
 
-`minecraft:allow_off_hand` determines whether an item can be placed in the off-hand slot of the inventory.
+The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value|*not set* |Boolean |Whether the item can be placed in the off-hand slot.|
+## Allow Off Hand Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | Boolean true/false | Determines whether the item can be placed in the off hand slot. |  | 

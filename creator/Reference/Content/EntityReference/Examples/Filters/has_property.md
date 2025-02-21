@@ -1,56 +1,62 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - has_property
-description: "A reference document detailing the 'has_property' entity filter"
+title: "Entity Filters Documentation - minecraft:has_property"
+description: "Describes the minecraft:has_property entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - has_property
+# Entity Filters Documentation - minecraft:has_property
 
 Tests for the presence of a property of the subject entity.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-| subject| self|String| (Optional) The subject of this filter test.|
-| operator|equals |String | (Optional) The comparison to apply with 'value'.|
-| value|*not set* |String | (Required) The property name to look for. |
+## Has Property Properties
 
-### operator
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | String | (Required) The property name to look for |  | 
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+### Operator choices
 
-## Examples
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### Full
+### Subject choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
+
+## Samples
+
+At Full..: 
 
 ```json
 { "test": "has_property", "subject": "self", "operator": "equals", "value": "minecraft:can_climb" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "has_property", "value": "minecraft:can_climb" }
 ```
-
-## Vanilla entity examples
-
-No entities currently use `has_property`
-
-## Vanilla entities using `has_property`
-
-No entities currently use `has_property`
