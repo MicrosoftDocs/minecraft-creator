@@ -1,45 +1,34 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.swell
-description: "A reference document detailing the 'behavior.swell' entity goal"
+title: "Entity Documentation - behavior.swell"
+description: "Describes the behavior.swell AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.swell
+# Entity Documentation - behavior.swell
 
-`minecraft:behavior.swell` compels an entity to grow in size when approached and scale down back to normal after a certain distance.
+Allows the creeper to swell up when a player is nearby. It can only be used by Creepers.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|stop_distance| 2.0| Decimal| This mob stops swelling when a target has moved away at least this many blocks. |
-| start_distance| 10.0|Decimal| This mob starts swelling when a target is at least this many blocks away. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Swell Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Creeper: `2` | 
+| start_distance | 10 | Decimal number | This mob starts swelling when a target is at least this many blocks away | Creeper: `2.5` | 
+| stop_distance | 2 | Decimal number | This mob stops swelling when a target has moved away at least this many blocks | Creeper: `6` | 
 
-```json
-"minecraft:behavior.swell":{
-    "priority": 3,
-    "start_distance": 15.0,
-    "stop_distance": 5.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
 
-### creeper
 
 ```json
-"minecraft:behavior.swell": {
-    "start_distance": 2.5,
-    "stop_distance": 6.0,
-    "priority": 2
+{
+  "start_distance": 2.5,
+  "stop_distance": 6,
+  "priority": 2
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.swell`
-
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)

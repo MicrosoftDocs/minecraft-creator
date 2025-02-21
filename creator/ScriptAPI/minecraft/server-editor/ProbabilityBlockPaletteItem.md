@@ -26,6 +26,9 @@ new ProbabilityBlockPaletteItem(displayName?: string)
 - **displayName**?: *string* = `null`
 
 **Returns** [*ProbabilityBlockPaletteItem*](ProbabilityBlockPaletteItem.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **addBlock**
 `

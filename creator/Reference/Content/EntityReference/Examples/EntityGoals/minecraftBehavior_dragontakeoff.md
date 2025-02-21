@@ -1,42 +1,35 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.dragontakeoff
-description: "A reference document detailing the 'dragontakeoff' entity goal"
+title: "Entity Documentation - minecraft:behavior.dragontakeoff"
+description: "Describes the minecraft:behavior.dragontakeoff ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.dragontakeoff
 
-`minecraft:behavior.dragontakeoff` compels an entity to leave perch mode and go back to flying around.
+Allows the dragon to leave perch mode and go back to flying around.
 
-> [!NOTE]
-> This behavior can only be used by the `ender_dragon` entity type.
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Ender Dragon (minecraft:ender_dragon)
+> 
 
-## Parameters
+## Dragontakeoff Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.dragontakeoff":{
-    "priority": 1
-}
-```
+#### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
 
-## Vanilla entities examples
-
-### ender_dragon
 
 ```json
 "minecraft:behavior.dragontakeoff": {
-    "priority": 0
+  "priority": 0
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.dragontakeoff`
-
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)

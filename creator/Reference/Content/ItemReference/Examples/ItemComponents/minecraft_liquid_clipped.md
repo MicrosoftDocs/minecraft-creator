@@ -1,17 +1,19 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:liquid_clipped
-description: "A reference document detailing the 'liquid_clipped' item component"
+title: "Items Documentation - minecraft:liquid_clipped"
+description: "Describes the minecraft:liquid_clipped item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:liquid_clipped
+# Items Documentation - minecraft:liquid_clipped
 
-`minecraft:liquid_clipped` determines whether an item interacts with liquid blocks on use.
+The liquid_clipped component determines whether the item interacts with liquid blocks on use.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| value|*not set*| Boolean| Whether an item interacts with liquid blocks on use.|
+## Liquid Clipped Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | Boolean true/false | Deterines whether the item interacts with liquid blocks on use. |  | 

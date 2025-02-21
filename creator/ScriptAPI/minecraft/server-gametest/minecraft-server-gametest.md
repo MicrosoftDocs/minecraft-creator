@@ -72,6 +72,7 @@ Registers a new GameTest function. This GameTest will become available in Minecr
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 #### Examples
 
@@ -121,6 +122,7 @@ Registers a new GameTest function that is designed for asynchronous execution. T
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 #### Examples
 

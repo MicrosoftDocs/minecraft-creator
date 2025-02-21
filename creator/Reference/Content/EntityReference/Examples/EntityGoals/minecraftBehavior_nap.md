@@ -1,101 +1,106 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.nap
-description: "A reference document detailing the 'behavior.nap' entity goal"
+title: "Entity Documentation - minecraft:behavior.nap"
+description: "Describes the minecraft:behavior.nap ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.nap
 
-`minecraft:behavior.nap` compels a mob to occasionally stop and take a nap under certain conditions.
+Allows mobs to occassionally stop and take a nap under certain conditions.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|cooldown_max| 0.0| Decimal|  Maximum time in seconds the mob has to wait before using the goal again. |
-|cooldown_min| 0.0| Decimal|  Minimum time in seconds the mob has to wait before using the goal again. |
-|mob_detect_dist| 6.0| Decimal|  The block distance in x and z that will be checked for mobs that this mob detects. |
-|mob_detect_height| 6.0| Decimal|  The block distance in y that will be checked for mobs that this mob detects. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Nap Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| can_nap_filters | *not set* | [Can Nap Filters](#can-nap-filters-item-type) item |  | Fox: `{"all_of":[{"test":"in_water","subject":"self","operator":"==","value":false},{"test":"on_ground","subject":"self","operator":"==","value":true},{"test":"is_underground","subject":"self","operator":"==","value":true},{"test":"weather_at_position","subject":"self","operator":"!=","value":"thunderstorm"}]}` | 
+| cooldown_max | 0 | Decimal number | Maximum time in seconds the mob has to wait before using the goal again | Fox: `7` | 
+| cooldown_min | 0 | Decimal number | Minimum time in seconds the mob has to wait before using the goal again | Fox: `2` | 
+| mob_detect_dist | 6 | Decimal number | The block distance in x and z that will be checked for mobs that this mob detects | Fox: `12` | 
+| mob_detect_height | 6 | Decimal number | The block distance in y that will be checked for mobs that this mob detects | Fox: `6` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Fox: `8` | 
+| wake_mob_exceptions | *not set* | [Wake Mob Exceptions](#wake-mob-exceptions-item-type) item |  | Fox: `{"any_of":[{"test":"trusts","subject":"other","operator":"==","value":true},{"test":"is_family","subject":"other","operator":"==","value":"fox"},{"test":"is_sneaking","subject":"other","operator":"==","value":true}]}` | 
 
-```json
-"minecraft:behavior.nap":{
-    "priority": 7,
-    "cooldown_min": 2.5,
-    "cooldown_max": 5.0,
-    "mob_detect_dist": 16.0,
-    "mob_detect_height": 10.0
-}
-```
+## Can Nap Filters item type
 
-## Vanilla entities examples
+#### Can_nap_filters Properties
 
-### fox
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| all_of | *not set* | String |  | Fox: `[{"test":"in_water","subject":"self","operator":"==","value":false},{"test":"on_ground","subject":"self","operator":"==","value":true},{"test":"is_underground","subject":"self","operator":"==","value":true},{"test":"weather_at_position","subject":"self","operator":"!=","value":"thunderstorm"}]` | 
+
+## Wake Mob Exceptions item type
+
+#### Wake_mob_exceptions Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| any_of | *not set* | String |  | Fox: `[{"test":"trusts","subject":"other","operator":"==","value":true},{"test":"is_family","subject":"other","operator":"==","value":"fox"},{"test":"is_sneaking","subject":"other","operator":"==","value":true}]` | 
+
+## Samples
+
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+
 
 ```json
 "minecraft:behavior.nap": {
-          "priority": 8,
-          "cooldown_min": 2.0,
-          "cooldown_max": 7.0,
-          "mob_detect_dist": 12.0,
-          "mob_detect_height": 6.0,
-          "can_nap_filters": {
-            "all_of": [
-              {
-                "test": "in_water",
-                "subject": "self",
-                "operator": "==",
-                "value": false
-              },
-              {
-                "test": "on_ground",
-                "subject": "self",
-                "operator": "==",
-                "value": true
-              },
-              {
-                "test": "is_underground",
-                "subject": "self",
-                "operator": "==",
-                "value": true
-              },
-              {
-                "test": "weather_at_position",
-                "subject": "self",
-                "operator": "!=",
-                "value": "thunderstorm"
-              }
-            ]
-          },
-          "wake_mob_exceptions": {
-            "any_of": [
-              {
-                "test": "trusts",
-                "subject": "other",
-                "operator": "==",
-                "value": true
-              },
-              {
-                "test": "is_family",
-                "subject": "other",
-                "operator": "==",
-                "value": "fox"
-              },
-              {
-                "test": "is_sneaking",
-                "subject": "other",
-                "operator": "==",
-                "value": true
-              }
-            ]
-          }
-        }
+  "priority": 8,
+  "cooldown_min": 2,
+  "cooldown_max": 7,
+  "mob_detect_dist": 12,
+  "mob_detect_height": 6,
+  "can_nap_filters": {
+    "all_of": [
+      {
+        "test": "in_water",
+        "subject": "self",
+        "operator": "==",
+        "value": false
+      },
+      {
+        "test": "on_ground",
+        "subject": "self",
+        "operator": "==",
+        "value": true
+      },
+      {
+        "test": "is_underground",
+        "subject": "self",
+        "operator": "==",
+        "value": true
+      },
+      {
+        "test": "weather_at_position",
+        "subject": "self",
+        "operator": "!=",
+        "value": "thunderstorm"
+      }
+    ]
+  },
+  "wake_mob_exceptions": {
+    "any_of": [
+      {
+        "test": "trusts",
+        "subject": "other",
+        "operator": "==",
+        "value": true
+      },
+      {
+        "test": "is_family",
+        "subject": "other",
+        "operator": "==",
+        "value": "fox"
+      },
+      {
+        "test": "is_sneaking",
+        "subject": "other",
+        "operator": "==",
+        "value": true
+      }
+    ]
+  }
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.nap`
-
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)

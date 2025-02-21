@@ -17,3 +17,6 @@ description: Contents of the .CustomComponentNameError class.
 `read-only reason: CustomComponentNameErrorReason;`
 
 Type: [*CustomComponentNameErrorReason*](CustomComponentNameErrorReason.md)
+
+Notes:
+  - This property can be read in early-execution mode.

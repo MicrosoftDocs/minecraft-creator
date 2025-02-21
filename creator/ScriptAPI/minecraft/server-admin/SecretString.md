@@ -22,3 +22,6 @@ new SecretString(value: string)
 - **value**: *string*
 
 **Returns** [*SecretString*](SecretString.md)
+  
+Notes:
+- This function can't be called in read-only mode.

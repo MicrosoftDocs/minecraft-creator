@@ -1,48 +1,36 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.rise_to_liquid_level
-description: "A reference document detailing the 'behavior.rise_to_liquid_level' entity goal"
+title: "Entity Documentation - minecraft:behavior.rise_to_liquid_level"
+description: "Describes the minecraft:behavior.rise_to_liquid_level ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.rise_to_liquid_level
 
-`minecraft:behavior.rise_to_liquid_level` compels an entity to rise to the top of a liquid block if they are located in one or have spawned under a liquid block.
+Allows the mob to stay at a certain level when in liquid.
 
-## Parameter
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|liquid_y_offset| 0.0| Decimal| Vertical offset from the liquid |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|rise_delta | 0.0| Decimal| Displacement for how much the entity will move up in the vertical axis.|
-|sink_delta | 0.0| Decimal| Displacement for how much the entity will move down in the vertical axis|
+## Rise To Liquid Level Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| liquid_y_offset | 0 | Decimal number | Target distance down from the liquid surface. i.e. Positive values move the target Y down. | Strider: `0.25` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| rise_delta | 0 | Decimal number | Movement up in Y per tick when below the liquid surface. | Strider: `0.01` | 
+| sink_delta | 0 | Decimal number | Movement down in Y per tick when above the liquid surface. | Strider: `0.01` | 
 
-```json
-"minecraft:behavior.rise_to_liquid_level":{
-    "priority": 0,
-    "liquid_y_offset": 0.25,
-    "rise_delta": 0.5,
-    "sink_delta": 0.5
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Strider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/strider.json)
 
-### strider
 
 ```json
 "minecraft:behavior.rise_to_liquid_level": {
-        "priority": 0,
-        "liquid_y_offset": 0.25,
-        "rise_delta": 0.01,
-        "sink_delta": 0.01
-      }
+  "priority": 0,
+  "liquid_y_offset": 0.25,
+  "rise_delta": 0.01,
+  "sink_delta": 0.01
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.rise_to_liquid_level`
-
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)

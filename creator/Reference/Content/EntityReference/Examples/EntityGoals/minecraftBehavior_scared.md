@@ -1,41 +1,32 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.scared
-description: "A reference document detailing the 'behavior.scared' entity goal"
+title: "Entity Documentation - minecraft:behavior.scared"
+description: "Describes the minecraft:behavior.scared ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.scared
 
-`minecraft:behavior.scared` compels an entity to become scared when the weather outside is thundering.
+Allows the a mob to become scared when the weather outside is thundering.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| sound_interval| 0| Integer| The interval in which a sound will play when active in a 1/delay chance to kick off. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Scared Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Panda: `1` | 
+| sound_interval | 0 | Integer number | The interval in which a sound will play when active in a 1/delay chance to kick off | Panda: `20` | 
 
-```json
-"minecraft:behavior.scared":{
-    "sound_interval": 0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
 
-### panda
 
 ```json
 "minecraft:behavior.scared": {
-          "priority": 1,
-          "sound_interval": 20
-        }
+  "priority": 1,
+  "sound_interval": 20
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.scared`
-
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)

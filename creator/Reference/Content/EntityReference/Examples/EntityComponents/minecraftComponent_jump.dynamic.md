@@ -1,31 +1,22 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:jump.dynamic
-description: "A reference document detailing the 'jump.dynamic' entity component"
+title: "Entity Documentation - minecraft:jump.dynamic"
+description: "Describes the minecraft:jump.dynamic entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:jump.dynamic
 
-`minecraft:jump.dynamic` defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.
+Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.
 
-## Example
 
-```json
-"minecraft:jump.dynamic":{
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Rabbit](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/rabbit.json)
 
-### rabbit
 
 ```json
-"minecraft:jump.dynamic": {
-      }
+"minecraft:jump.dynamic": {}
 ```
-
-## Vanilla entities using `minecraft:jump.dynamic`
-
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)

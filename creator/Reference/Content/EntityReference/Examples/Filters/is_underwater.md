@@ -1,101 +1,89 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - is_underwater
-description: "A reference document detailing the 'is_underwater' entity filter"
+title: "Entity Filters Documentation - minecraft:is_underwater"
+description: "Describes the minecraft:is_underwater entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - is_underwater
+# Entity Filters Documentation - minecraft:is_underwater
 
-Returns true when the subject entity is under water.
+Returns true when the subject entity is under water. An entity is considered underwater if it is completely submerged in water blocks.
 
-> [!IMPORTANT]
-> An entity is considered underwater if it is completely submerged in water blocks.
+> [!Note]
+> Does not require any parameters to work properly. It can be used as a standalone filter.
 
-## Parameters
 
-> [!NOTE]
-> `is_underwater` does **not** require any parameters to work properly. It can be used as a standalone filter.
->
-> `is_underwater` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and `value` parameters.
+## Is Underwater Properties
 
-### subject
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | true | Boolean true/false | (Optional) true or false. |  | 
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+### Operator choices
 
-### operator
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+### Subject choices
 
-### value
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |true |Boolean |(Optional) true or false. |
+## Samples
 
-## Example
-
-### Full
+At Full..: 
 
 ```json
-{ "test": "is_underwater", "subject": "self", "operator": "equals", "value": true}
+{ "test": "is_underwater", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "is_underwater" }
 ```
 
-## Vanilla entities examples
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-### stray
-
-```json
-{
-    "test": "is_underwater",
-    "subject": "self",
-    "operator": "==",
-    "value": true
-}
-```
-
-### wolf
+At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/: 
 
 ```json
-{
-    "test": "is_underwater",
-    "subject": "other",
-    "operator": "!=",
-    "value": true
-}
+{"test":"is_underwater","subject":"self","operator":"==","value":true}
 ```
 
-## Vanilla entities using `is_underwater`
+#### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
 
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+At /minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/triggers/filters/: 
+
+```json
+{"test":"is_underwater","subject":"self","operator":"==","value":false}
+```
+
+#### [Zombie](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie.json)
+
+At /minecraft:entity/components/minecraft:environment_sensor/triggers/filters/: 
+
+```json
+{"test":"is_underwater","operator":"==","value":true}
+```

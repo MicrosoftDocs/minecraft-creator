@@ -18,12 +18,21 @@ description: Contents of the .GameTestError class.
 
 Type: [*GameTestErrorContext*](GameTestErrorContext.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **messageParameters**
 `read-only messageParameters: string[];`
 
 Type: *string*[]
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **type**
 `read-only type: GameTestErrorType;`
 
 Type: [*GameTestErrorType*](GameTestErrorType.md)
+
+Notes:
+  - This property can be read in early-execution mode.

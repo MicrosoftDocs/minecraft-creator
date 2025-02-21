@@ -1,77 +1,62 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - distance_to_nearest_player
-description: "A reference document detailing the 'distance_to_nearest_player' entity filter"
+title: "Entity Filters Documentation - minecraft:distance_to_nearest_player"
+description: "Describes the minecraft:distance_to_nearest_player entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - distance_to_nearest_player
+# Entity Filters Documentation - minecraft:distance_to_nearest_player
 
-`distance_to_nearest_player` compares the distance to the nearest player with a float value.
+Compares the distance to the nearest Player with a float value.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value | |Decimal|(Required) A floating point value.|
+## Distance To Nearest Player Properties
 
-> [!NOTE]
-> `distance_to_nearest_player` can also use `subject` and [operators](../Definitions/NestedTables/operator.md) parameters but they are optional.
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | Decimal number | (Required) A floating point value. |  | 
 
-### subject
+### Operator choices
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### operator
+### Subject choices
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-## Examples
+## Samples
 
-### Full
+At Full..: 
 
 ```json
 { "test": "distance_to_nearest_player", "subject": "self", "operator": "equals", "value": "0.00" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "distance_to_nearest_player", "value": "0.00" }
 ```
-
-## Vanilla entities examples
-
-### zoglin
-
-```json
-{ "test": "distance_to_nearest_player", "operator": ">", "value": 54 }
-```
-
-## Vanilla entities using `distance_to_nearest_player`
-
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)

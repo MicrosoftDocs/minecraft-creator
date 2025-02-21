@@ -347,6 +347,7 @@ Gets a component (that represents additional capabilities) for a block - for exa
 **Returns** *BlockComponentTypeMap[T] | undefined* - Returns the component if it exists on the block, otherwise undefined.
   
 Notes:
+- This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
@@ -482,11 +483,15 @@ Notes:
 liquidCanFlowFromDirection(liquidType: LiquidType, flowDirection: Direction): boolean
 `
 
+Returns whether liquid can flow into the block from the provided direction, or flow out from the provided direction when liquid is placed into it with a bucket.
+
 #### **Parameters**
 - **liquidType**: [*LiquidType*](LiquidType.md)
+  
+  The type of liquid this function should be called for.
 - **flowDirection**: [*Direction*](Direction.md)
 
-**Returns** *boolean*
+**Returns** *boolean* - Whether liquid can flow into the block from the provided direction, or flow out from the provided direction when liquid is placed into it with a bucket
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

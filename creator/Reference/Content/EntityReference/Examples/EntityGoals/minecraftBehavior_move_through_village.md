@@ -1,45 +1,34 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.move_through_village
-description: "A reference document detailing the 'behavior.move_through_village' entity goal"
+title: "Entity Documentation - minecraft:behavior.move_through_village"
+description: "Describes the minecraft:behavior.move_through_village ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.move_through_village
 
-`minecraft:behavior.move_through_village` compels an entity to navigate around a village by creating a path to patrol.
+Can only be used by Villagers. Allows the villagers to create paths around the village.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|only_at_night| false| Boolean| If true, the mob will only move through the village during night time. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
+## Move Through Village Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| only_at_night | false | Boolean true/false | If true, the mob will only move through the village during night time | Iron Golem: `true` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Iron Golem: `3` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Iron Golem: `0.6` | 
 
-```json
-"minecraft:behavior.move_through_village":{
-    "priority": 1,
-    "only_at_night":true,
-    "speed_multiplier": 1.25
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Iron Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/iron_golem.json)
 
-### iron_golem
 
 ```json
 "minecraft:behavior.move_through_village": {
-        "priority": 3,
-        "speed_multiplier": 0.6,
-        "only_at_night": true
-      }
+  "priority": 3,
+  "speed_multiplier": 0.6,
+  "only_at_night": true
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.move_through_village`
-
-- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)

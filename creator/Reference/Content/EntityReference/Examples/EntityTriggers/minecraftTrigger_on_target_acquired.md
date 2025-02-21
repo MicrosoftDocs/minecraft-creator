@@ -1,67 +1,145 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:on_target_acquired
-description: "A reference document detailing the 'on_target_acquired' entity trigger"
+title: "Entity Documentation - minecraft:on_target_acquired"
+description: "Describes the minecraft:on_target_acquired entity trigger"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:on_target_acquired
 
-`minecraft:on_target_acquired` adds a trigger to call when this entity finds a target.
+Adds a trigger to call when this entity finds a target.
 
->[!IMPORTANT]
-> `minecraft:on_target_acquired` requires a target in order to work properly.
->
->- [minecraft:behavior.nearest_attackable_target](../EntityGoals/minecraftBehavior_nearest_attackable_target.md)
->- [minecraft:behavior.hurt_by_target](../EntityGoals/minecraftBehavior_hurt_by_target.md)
 
-## Parameters
+## On Target Acquired Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|event|*not set* | String|  The event to run when the conditions for this trigger are met. |
-|[filters](../FilterList.md)|*not set* | Minecraft Filter| The list of conditions for this trigger to execute. |
-|target| self| String| The target of the event. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| event | *not set* | String | The event to run when the conditions for this trigger are met. | Bee: `"attacked"`, Cave Spider: `"minecraft:become_angry"`, Drowned: `"minecraft:has_target"` | 
+| filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. | Llama: `{"all_of":[{"test":"is_family","subject":"target","value":"wolf"},{"test":"has_component","subject":"target","operator":"!=","value":"minecraft:is_tamed"}]}` | 
+| target | self | String | The target of the event. | Bee: `"self"` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:on_target_acquired":{
-    "event": "minecraft:all_range_mode",
-    "filters": "has_ranged_weapon",
-    "target": "self",
-}
-```
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
 
-## Vanilla entities examples
-
-### enderman
 
 ```json
 "minecraft:on_target_acquired": {
-    "event": "minecraft:become_angry",
-    "target": "self"
+  "event": "attacked",
+  "target": "self"
 }
 ```
 
-## Vanilla entities using `minecraft:on_target_acquired`
+#### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "minecraft:become_angry"
+}
+```
+
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "minecraft:has_target",
+  "target": "self"
+}
+```
+
+#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
+
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "minecraft:become_angry",
+  "target": "self"
+}
+```
+
+#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
+
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "become_angry_event",
+  "target": "self"
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:on_target_acquired": {
+  "filters": {
+    "all_of": [
+      {
+        "test": "is_family",
+        "subject": "target",
+        "value": "wolf"
+      },
+      {
+        "test": "has_component",
+        "subject": "target",
+        "operator": "!=",
+        "value": "minecraft:is_tamed"
+      }
+    ]
+  },
+  "event": "minecraft:mad_at_wolf",
+  "target": "self"
+}
+```
+
+#### [Magma Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/magma_cube.json)
+
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "minecraft:become_aggressive",
+  "target": "self"
+}
+```
+
+#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
+
+At /minecraft:entity/component_groups/minecraft:panda_baby/minecraft:on_target_acquired/: 
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "minecraft:on_scared",
+  "target": "self"
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:panda_angry/minecraft:on_target_acquired/: 
+
+```json
+"minecraft:on_target_acquired": {}
+```
+
+#### [Polar Bear](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/polar_bear.json)
+
+At /minecraft:entity/component_groups/minecraft:adult_wild/minecraft:on_target_acquired/: 
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "minecraft:on_anger",
+  "target": "self"
+}
+```
+
+#### [Vindicator](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/vindicator.json)
+
+
+```json
+"minecraft:on_target_acquired": {
+  "event": "minecraft:become_aggro",
+  "target": "self"
+}
+```

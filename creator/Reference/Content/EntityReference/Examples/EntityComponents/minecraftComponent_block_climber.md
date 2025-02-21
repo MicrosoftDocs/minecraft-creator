@@ -1,32 +1,22 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:block_climber
-description: "A reference document detailing the 'block_climber' entity component"
+title: "Entity Documentation - minecraft:block_climber"
+description: "Describes the minecraft:block_climber entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:block_climber
 
-`minecraft:block_climber` allows an entity to detect and manuever on the scaffolding block.
+Allows the player to detect and manuever on the scaffolding block.
 
-## Example
 
-```json
-"minecraft:block_climber":{}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Endermite](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/endermite.json)
 
-### player
+
 ```json
 "minecraft:block_climber": {}
 ```
-
-## Vanilla entities using `minecraft:block_climber`
-
-- [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)

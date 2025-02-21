@@ -22,6 +22,9 @@ Max expected value for the condition.
 
 Type: *number*
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **minValue**
 `read-only minValue: number;`
 
@@ -29,9 +32,15 @@ Min expected value for the condition.
 
 Type: *number*
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **value**
 `read-only value: number;`
 
 Passed-in value for the argument.
 
 Type: *number*
+
+Notes:
+  - This property can be read in early-execution mode.

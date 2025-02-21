@@ -1,38 +1,30 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.restrict_open_door
-description: "A reference document detailing the 'behavior.restrict_open_door' entity goal"
+title: "Entity Documentation - minecraft:behavior.restrict_open_door"
+description: "Describes the minecraft:behavior.restrict_open_door ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.restrict_open_door
 
-`minecraft:behavior.restrict_open_door` compels an entity to stay indoors while the sun is down.
+Allows the mob to stay indoors during night time.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Restrict Open Door Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager: `5` | 
 
-```json
-"minecraft:behavior.restrict_open_door":{
-    "priority": 2
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
-### villager
 
 ```json
-"minecraft:annotation.open_door": {
+"minecraft:behavior.restrict_open_door": {
+  "priority": 5
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.restrict_open_door`
-
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)

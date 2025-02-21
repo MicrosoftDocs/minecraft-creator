@@ -1,55 +1,56 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.look_at_trading_player
-description: "A reference document detailing the 'behavior.look_at_trading_player' entity goal"
+title: "Entity Documentation - minecraft:behavior.look_at_trading_player"
+description: "Describes the minecraft:behavior.look_at_trading_player ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.look_at_trading_player
 
-`minecraft:behavior.look_at_trading_player` compels an entity to look at the player that is currently trading with the entity.
+Compels an entity to look at the player that is currently trading with the entity.
 
->[!IMPORTANT]
-> `minecraft:behavior.look_at_trading_player` requires the ability to trade in order to work properly.
-
-## Parameters
-
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|angle_of_view_horizontal| 360| Integer| TThe angle in degrees that the mob can see in the X-axis (left-right).|
-|angle_of_view_vertical| 360| Integer| The angle in degrees that the mob can see in the Y-axis (up-down). |
-|look_distance| 8.0| Decimal| The distance in blocks from which the entity will look at. |
-|look_time| [2, 4]| Range [a, b]| Time range to look at the entity. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|probability| 0.02|  Decimal| The probability of looking at the target. A value of 1.00 is 100%. |
+> [!Note]
+> Requires the ability to trade in order to work properly.
 
 
-## Example
+## Look At Trading Player Behavior Properties
 
-```json
-"minecraft:behavior.look_at_trading_player":{
-    "priority": 6,
-    "angle_of_view_horizontal":90,
-    "angle_of_view_vertical":90,
-    "look_distance": 8.0,
-    "look_time": [1,5],
-    "probability": 0.02
-}
-```
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| angle_of_view_horizontal | 360 | Integer number | The angle in degrees that the mob can see in the Y-axis (up-down). |  | 
+| angle_of_view_vertical | 360 | Integer number | The angle in degrees that the mob can see in the X-axis (left-right). |  | 
+| look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at the player this mob is trading with. |  | 
+| look_time | *not set* | Range of integers | Time range to look at the player this mob is trading with. |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `7`, Villager: `2`, Wandering Trader: `4` | 
+| probability | 0.02 | Decimal number | The probability of looking at the target. A value of 1.00 is 100%. |  | 
 
-## Vanilla entities examples
+## Samples
 
-### villager_v2
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+
 
 ```json
 "minecraft:behavior.look_at_trading_player": {
-        "priority": 7
-      }
+  "priority": 7
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.look_at_trading_player`
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+
+```json
+"minecraft:behavior.look_at_trading_player": {
+  "priority": 2
+}
+```
+
+#### [Wandering Trader](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wandering_trader.json)
+
+
+```json
+"minecraft:behavior.look_at_trading_player": {
+  "priority": 4
+}
+```

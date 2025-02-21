@@ -1,61 +1,144 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:inventory
-description: "A reference document detailing the 'inventory' entity component"
+title: "Entity Documentation - minecraft:inventory"
+description: "Describes the minecraft:inventory entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:inventory
 
-`minecraft:inventory` defines how an entity's inventory is managed.
+Defines this entity's inventory properties.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| additional_slots_per_strength| 0| Integer| Number of slots that this entity can gain per extra strength |
-| can_be_siphoned_from| False| Boolean| If true, the contents of this inventory can be removed by a hopper |
-| container_type| none | String | Type of container the entity has. Can be horse, minecart_chest, chest_boat, minecart_hopper, inventory, container or hopper |
-| inventory_size| 5| Integer| Number of slots the container has |
-| private| False| Boolean| If true, the entity will not drop its inventory on death |
-| restrict_to_owner| False| Boolean| If true, the entity's inventory can only be accessed by its owner or itself |
+## Inventory Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| additional_slots_per_strength | 0 | Integer number | Number of slots that this entity can gain per extra strength | Llama: `3` | 
+| can_be_siphoned_from | false | Boolean true/false | If true, the contents of this inventory can be removed by a hopper | Chest Boat: `true` | 
+| container_type | none | String | Type of container this entity has. Can be horse, minecart_chest, chest_boat, minecart_hopper, inventory, container or hopper | Camel: `"horse"`, Chest Boat: `"chest_boat"`, Chest Minecart: `"minecart_chest"` | 
+| inventory_size | 5 | Integer number | Number of slots the container has | Allay: `1`, Chest Boat: `27`, Donkey: `16` | 
+| private | false | Boolean true/false | If true, the entity will not drop its inventory on death | Panda: `true` | 
+| restrict_to_owner | false | Boolean true/false | If true, the entity's inventory can only be accessed by its owner or itself |  | 
 
-```json
-"minecraft:inventory":{
-    "additional_slots_per_strength": 0,
-    "can_be_siphoned_from": false,
-    "container_type": ,
-    "inventory_size": 5,
-    "private": false,
-    "restrict_to_owner": false
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Allay](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/allay.json)
 
-### chest_minecart
 
 ```json
 "minecraft:inventory": {
-    "container_type": "minecart_chest",
-    "inventory_size": 27,
-    "can_be_siphoned_from": true
+  "inventory_size": 1
 }
 ```
 
-## Vanilla entities using `minecraft:inventory`
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
 
-- [chest_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/chest_minecart.md)
-- [command_block_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/command_block_minecart.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [hopper_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/hopper_minecart.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
+
+```json
+"minecraft:inventory": {
+  "container_type": "horse"
+}
+```
+
+#### [Chest Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chest_boat.json)
+
+
+```json
+"minecraft:inventory": {
+  "container_type": "chest_boat",
+  "inventory_size": 27,
+  "can_be_siphoned_from": true
+}
+```
+
+#### [Chest Minecart](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chest_minecart.json)
+
+
+```json
+"minecraft:inventory": {
+  "container_type": "minecart_chest",
+  "inventory_size": 27,
+  "can_be_siphoned_from": true
+}
+```
+
+#### [Command Block Minecart](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/command_block_minecart.json)
+
+
+```json
+"minecraft:inventory": {}
+```
+
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
+
+
+```json
+"minecraft:inventory": {
+  "inventory_size": 16,
+  "container_type": "horse"
+}
+```
+
+#### [Hopper Minecart](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hopper_minecart.json)
+
+
+```json
+"minecraft:inventory": {
+  "container_type": "minecart_hopper",
+  "inventory_size": 5,
+  "can_be_siphoned_from": true
+}
+```
+
+#### [Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/horse.json)
+
+
+```json
+"minecraft:inventory": {
+  "inventory_size": 2,
+  "container_type": "horse"
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:inventory": {
+  "inventory_size": 16,
+  "container_type": "horse",
+  "additional_slots_per_strength": 3
+}
+```
+
+#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
+
+
+```json
+"minecraft:inventory": {
+  "inventory_size": 1,
+  "private": true
+}
+```
+
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
+
+
+```json
+"minecraft:inventory": {
+  "inventory_size": 8
+}
+```
+
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+
+
+```json
+"minecraft:inventory": {
+  "inventory_size": 8,
+  "private": true
+}
+```

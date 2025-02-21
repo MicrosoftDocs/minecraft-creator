@@ -1,51 +1,84 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:mark_variant
-description: "A reference document detailing the 'mark_variant' entity component"
+title: "Entity Documentation - minecraft:mark_variant"
+description: "Describes the minecraft:mark_variant entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:mark_variant
+# Entity Documentation - minecraft:mark_variant
 
-`minecraft:mark_variant` sets the variant for the entity to be used.
+Mark Variant is typically used as an additional per-type way (besides `variant`) to express a different visual form of the same mob.
 
-> [!IMPORTANT]
-> `minecraft:mark_variant` requires the entity to be set up to use variants with the `minecraft:variant` property component.
 
-## Parameters
+## Mark Variant Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 0| Integer|  The ID of the variant. By convention, 0 is the ID of the base entity. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 0 | Integer number | The Id of the mark_variant. By convention, 0 is the Id of the base entity. | Bee: `1`, Horse: `2`, `3`, `4` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:mark_variant":{
-    "value": 1
-}
-```
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
 
-## Vanilla entities examples
-
-### villager_v2
-
-> [!NOTE]
-> In the villager_v2 example, the `desert_villager` has been assigned the `value` of `1`.
 
 ```json
 "minecraft:mark_variant": {
-    "value": 1
+  "value": 1
 }
 ```
 
-## Vanilla entities using `minecraft:mark_variant`
+#### [Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/horse.json)
 
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
+At /minecraft:entity/component_groups/minecraft:markings_none/minecraft:mark_variant/: 
+
+```json
+"minecraft:mark_variant": {
+  "value": 0
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:markings_white_fields/minecraft:mark_variant/: 
+
+```json
+"minecraft:mark_variant": {
+  "value": 2
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:markings_white_dots/minecraft:mark_variant/: 
+
+```json
+"minecraft:mark_variant": {
+  "value": 3
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:markings_black_dots/minecraft:mark_variant/: 
+
+```json
+"minecraft:mark_variant": {
+  "value": 4
+}
+```
+
+#### [Tropicalfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tropicalfish.json)
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_6/minecraft:mark_variant/: 
+
+```json
+"minecraft:mark_variant": {
+  "value": 5
+}
+```
+
+#### [Zombie Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
+
+At /minecraft:entity/component_groups/taiga_villager/minecraft:mark_variant/: 
+
+```json
+"minecraft:mark_variant": {
+  "value": 6
+}
+```

@@ -1,38 +1,29 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:burns_in_daylight
-description: "A reference document detailing the 'burns_in_daylight' entity component"
+title: "Entity Documentation - minecraft:burns_in_daylight"
+description: "Describes the minecraft:burns_in_daylight entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:burns_in_daylight
 
-`minecraft:burns_in_daylight` compels an entity to burn when it's daylight.
+Specifies if a mob burns in daylight.
 
-## Example
 
-```json
-"minecraft:burns_in_daylight": {
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-### phantom
 
 ```json
-"minecraft:burns_in_daylight": {
-}
+"minecraft:burns_in_daylight": {}
 ```
 
-## Vanilla entities using `minecraft:burns_in_daylight`
+#### [Magma Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/magma_cube.json)
 
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+
+```json
+"minecraft:burns_in_daylight": false
+```

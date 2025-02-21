@@ -72,8 +72,6 @@
   href: minecraftComponent_conditional_bandwidth_optimization.md
 - name: custom_hit_test
   href: minecraftComponent_custom_hit_test.md
-- name: damage_absorption
-  href: minecraftComponent_damage_absorption.md
 - name: damage_over_time
   href: minecraftComponent_damage_over_time.md
 - name: damage_sensor
@@ -228,8 +226,6 @@
   href: minecraftComponent_movement.jump.md
 - name: movement.skip
   href: minecraftComponent_movement.skip.md
-- name: movement_sound_distance_offset
-  href: minecraftComponent_movement_sound_distance_offset.md
 - name: movement.sway
   href: minecraftComponent_movement.sway.md
 - name: nameable

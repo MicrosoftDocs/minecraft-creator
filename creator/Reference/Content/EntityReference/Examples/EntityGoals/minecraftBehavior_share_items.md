@@ -1,75 +1,84 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.share_items
-description: "A reference document detailing the 'behavior.share_items' entity goal"
+title: "Entity Documentation - minecraft:behavior.share_items"
+description: "Describes the minecraft:behavior.share_items ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.share_items
 
-`minecraft:behavior.share_items` compels an entity to share items they have in their inventory with other specific entities that have been defined.
+Allows the mob to give items it has to others.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|[entity_types](../Definitions/NestedTables/entity_types.md)|*not set* | JSON Object| List of entities this mob will share items with.|
-|cooldown | 0.0 | Decimal |The amount of time in seconds that the mob has to wait before selecting a target of the same type again. |
-|goal_radius| 0.5| Decimal|  Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot. |
-|max_dist| 0.0| Decimal|  Maximum distance in blocks this mob will look for entities to share items with. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal. |
+## Share Items Behavior Properties
 
-### entity_types
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| entity_types | *not set* | Array of [Entity Types](#entity-types-item-type) items | List of entities this mob will share items with | Villager V2: `[{"filters":{"test":"is_family","subject":"other","value":"villager"}}]` | 
+| goal_radius | 0.5 | Decimal number | Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot | Villager V2: `2` | 
+| max_dist | 0 | Decimal number | Maximum distance in blocks this mob will look for entities to share items with | Villager V2: `3` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `10`, Villager: `8` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Villager V2: `0.5` | 
 
-`entity_types` is a JSON Object variable that can use the following parameters:
+## Entity Types item type
+List of entities this mob will share items with.
 
-|Name |Default Value |Type |Description |
-|:-----|:--------------|:-----|:------------|
-|filters | |Minecraft Filter|Conditions that make this entry in the list valid. |
-|max_dist |16 |Decimal |Maximum distance this mob can be away to be a valid choice. |
-|must_see |false |Boolean |If true, the mob has to be visible to be a valid choice. |
-|must_see_forget_duration |3.0 | Decimal |Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more. |
-|reevaluate_description| false| Boolean| If true, the mob will stop being targeted if it stops meeting any conditions. |
-|sprint_speed_multiplier |1.0 |Decimal |Multiplier for the running speed. A value of 1.0 means the speed is unchanged. |
-|walk_speed_multiplier |1.0 |Decimal |Multiplier for the walking speed. A value of 1.0 means the speed is unchanged. |
 
-## Example
+#### Entity Types Properties
 
-```json
-"minecraft:behavior.share_items":{
-    "priority": 8,
-    "speed_multiplier": 1.0,
-    "max_dist": 2.0,
-    "goal_radius": 3.0,
-    "entity_types": [
-        {
-            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
-        }
-    ]
-}
-```
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| cooldown | 0 | Decimal number | The amount of time in seconds that the mob has to wait before selecting a target of the same type again |  | 
+| filters | *not set* | Minecraft filter | Conditions that make this entry in the list valid |  | 
+| max_dist | 16 | Decimal number | Maximum distance this mob can be away to be a valid choice |  | 
+| must_see | false | Boolean true/false | If true, the mob has to be visible to be a valid choice |  | 
+| must_see_forget_duration | 3 | Decimal number | Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more |  | 
+| reevaluate_description | false | Boolean true/false | If true, the mob will stop being targeted if it stops meeting any conditions. |  | 
+| sprint_speed_multiplier | 1 | Decimal number | Multiplier for the running speed. A value of 1.0 means the speed is unchanged |  | 
+| walk_speed_multiplier | 1 | Decimal number | Multiplier for the walking speed. A value of 1.0 means the speed is unchanged |  | 
 
-## Vanilla entities examples
+## Samples
 
-### villager_v2
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+
 
 ```json
 "minecraft:behavior.share_items": {
-        "priority": 9,
-        "max_dist": 3,
-        "goal_radius":  2.0,
-        "speed_multiplier": 0.5,
-        "entity_types": [
-          {
-            "filters": { "test" :  "is_family", "subject" : "other", "value" :  "villager"}
-          }
-        ]
-      },
+  "priority": 10,
+  "max_dist": 3,
+  "goal_radius": 2,
+  "speed_multiplier": 0.5,
+  "entity_types": [
+    {
+      "filters": {
+        "test": "is_family",
+        "subject": "other",
+        "value": "villager"
+      }
+    }
+  ]
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.share_items`
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
+
+```json
+"minecraft:behavior.share_items": {
+  "priority": 8,
+  "max_dist": 3,
+  "goal_radius": 2,
+  "speed_multiplier": 0.5,
+  "entity_types": [
+    {
+      "filters": {
+        "test": "is_family",
+        "subject": "other",
+        "value": "villager"
+      }
+    }
+  ]
+}
+```

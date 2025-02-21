@@ -1,43 +1,42 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.ocelot_sit_on_block
-description: "A reference document detailing the 'behavior.ocelot_sit_on_block' entity goal"
+title: "Entity Documentation - minecraft:behavior.ocelot_sit_on_block"
+description: "Describes the minecraft:behavior.ocelot_sit_on_block ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.ocelot_sit_on_block
 
-`minecraft:behavior.ocelot_sit_on_block` compels an entity to sit in place, similar to the ocelot entity animation pose.
+Allows to mob to be able to sit in place like the ocelot.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
+## Ocelot Sit On Block Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cat: `7`, Ocelot: `6` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Cat: `1` | 
 
-```json
-"minecraft:behavior.ocelot_sit_on_block":{
-    "priority": 4,
-    "speed_multiplier": 1.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
-### ocelot
 
 ```json
 "minecraft:behavior.ocelot_sit_on_block": {
-          "priority": 6,
-          "speed_multiplier": 1.0
-        }
+  "priority": 7,
+  "speed_multiplier": 1
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.ocelot_sit_on_block`
+#### [Ocelot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ocelot.json)
 
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
+
+```json
+"minecraft:behavior.ocelot_sit_on_block": {
+  "priority": 6,
+  "speed_multiplier": 1
+}
+```

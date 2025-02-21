@@ -1,48 +1,146 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:color2
-description: "A reference document detailing the 'color2' entity component"
+title: "Entity Documentation - minecraft:color2"
+description: "Describes the minecraft:color2 entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:color2
+# Entity Documentation - minecraft:color2
 
-`minecraft:color2` Defines the entity's second texture color.
+Defines the entity's second texture color.
 
-> [!NOTE]
-> This attribute only works on vanilla entities that have a second predefined color value (`tropical fish`)
+> [!Note]
+> Only works on vanilla entities that have a second predefined color values (tropical fish).
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 0| Integer|  The Palette Color value of the entity. |
+## Color2 Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 0 | Integer number | The second Palette Color value of the entity. | Tropicalfish: `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`, `9`, `10`, `11`, `12`, `13`, `14` | 
 
-```json
-"minecraft:color2":{
-    "value": 2,
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Tropicalfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tropicalfish.json)
 
-### tropical fish
-
->[!Note]
->This snippet shows `minecraft:color` and `minecraft:color2` working together to create a special variant.
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_white/minecraft:color2/: 
 
 ```json
-"minecraft:color": {
-    "value": 0
-},
 "minecraft:color2": {
-    "value": 7
+  "value": 0
 }
 ```
 
-## Vanilla entities using `minecraft:color2`
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_orange/minecraft:color2/: 
 
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
+```json
+"minecraft:color2": {
+  "value": 1
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_magenta/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 2
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_lightblue/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 3
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_yellow/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 4
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_lightgreen/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 5
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_pink/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 6
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_gray/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 7
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_silver/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 8
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_cyan/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 9
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_purple/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 10
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_blue/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 11
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_brown/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 12
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_green/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 13
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:tropicalfish_pattern_red/minecraft:color2/: 
+
+```json
+"minecraft:color2": {
+  "value": 14
+}
+```

@@ -1,43 +1,39 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.squid_flee
-description: "A reference document detailing the 'behavior.squid_flee' entity goal"
+title: "Entity Documentation - behavior.squid_flee"
+description: "Describes the behavior.squid_flee AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.squid_flee
+# Entity Documentation - behavior.squid_flee
 
-`minecraft:behavior.squid_flee` compels an entity to swim away when attacked.
+Allows the squid to swim away. Can only be used by the Squid.
 
-> [!NOTE]
-> This behavior can only be used by the `squid` entity type.
 
-## Parameters
+## Squid Flee Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Glow Squid: `2` | 
 
-## Example
+## Samples
+
+#### [Glow Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/glow_squid.json)
+
 
 ```json
-"minecraft:behavior.squid_flee":{
-    "priority": 2
+{
+  "priority": 2
 }
 ```
 
-## Vanilla entities examples
+#### [Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/squid.json)
 
-### squid
 
 ```json
-"minecraft:behavior.squid_flee": {
-    "priority": 2
+{
+  "priority": 2
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.squid_flee`
-
-- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)

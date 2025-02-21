@@ -1,54 +1,77 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.swim_wander
-description: "A reference document detailing the 'behavior.swim_wander' entity goal"
+title: "Entity Documentation - behavior.swim_wander"
+description: "Describes the behavior.swim_wander AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.swim_wander
+# Entity Documentation - behavior.swim_wander
 
-`minecraft:behavior.swim_wander` compels the entity to wander around while swimming, when not path-finding.
+Allows the entity to wander around while swimming, when not path-finding.
 
-## Parameters
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| interval| 0.00833| Decimal| Percent chance to start wandering, when not path-finding. 1 = 100% |
-| look_ahead| 5| Decimal| Distance to look ahead for obstacle avoidance, while wandering. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| speed_multiplier| 1| Decimal| This multiplier modifies the entity's speed when wandering. |
-| wander_time| 5| Decimal| Amount of time (in seconds) to wander after wandering behavior was successfully started. |
+## Swim Wander Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| interval | 0.00833 | Decimal number | Percent chance to start wandering, when not path-finding. 1 = 100% | Fish: `0.1`, Pufferfish: `1`, Salmon: `0.0166` | 
+| look_ahead | 5 | Decimal number | Distance to look ahead for obstacle avoidance, while wandering. | Fish: `2`, Salmon: `5` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Fish: `4`, Pufferfish: `5` | 
+| speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when wandering. | Fish: `1`, Salmon: `0.014` | 
+| wander_time | 5 | Decimal number | Amount of time (in seconds) to wander after wandering behavior was successfully started. | Fish: `5` | 
+
+## Samples
+
+#### [Fish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fish.json)
+
 
 ```json
-"minecraft:behavior.swim_wander": {
-    "priority": 4,
-    "interval": 0.00833,
-    "look_ahead": 5.0,
-    "speed_multiplier": 1.0,
-    "wander_time": 5.0
+{
+  "priority": 4,
+  "interval": 0.1,
+  "look_ahead": 2,
+  "speed_multiplier": 1,
+  "wander_time": 5
 }
 ```
 
-## Vanilla entities examples
+#### [Pufferfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pufferfish.json)
 
-### fish
 
 ```json
-"minecraft:behavior.swim_wander": {
-    "priority": 4,
-    "interval": 0.1,
-    "look_ahead": 2.0,
-    "speed_multiplier": 1.0,
-    "wander_time": 5.0
+{
+  "priority": 5,
+  "interval": 1,
+  "look_ahead": 2,
+  "speed_multiplier": 1,
+  "wander_time": 5
 }
 ```
 
-## Vanilla entities using `minecraft:behavior.swim_wander`
+#### [Salmon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/salmon.json)
 
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
+
+```json
+{
+  "priority": 4,
+  "interval": 0.0166,
+  "look_ahead": 5,
+  "speed_multiplier": 0.014,
+  "wander_time": 5
+}
+```
+
+#### [Tropicalfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tropicalfish.json)
+
+
+```json
+{
+  "priority": 4,
+  "interval": 0.1,
+  "look_ahead": 2,
+  "speed_multiplier": 1,
+  "wander_time": 5
+}
+```

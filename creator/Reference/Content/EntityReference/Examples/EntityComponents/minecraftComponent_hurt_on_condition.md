@@ -1,136 +1,180 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:hurt_on_condition
-description: "A reference document detailing the 'hurt_on_condition' entity component"
+title: "Entity Documentation - minecraft:hurt_on_condition"
+description: "Describes the minecraft:hurt_on_condition entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:hurt_on_condition
 
-`minecraft:hurt_on_condition` defines a set of conditions under which an entity should take damage.
+Defines a set of conditions under which an entity should take damage.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|damage_conditions| *not set*| Array | List of damage conditions that, when met, can cause damage to the entity.  |
+## Hurt On Condition Properties
 
-### damage_conditions
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| damage_conditions | *not set* | Array of [Damage Conditions](#damage-conditions-item-type) items | List of damage conditions that when met can cause damage to the entity. | Allay: `[{"filters":{"test":"in_lava","subject":"self","operator":"==","value":true},"cause":"lava","damage_per_tick":4}]`, Armadillo: `[{"filters":{"test":"in_lava","subject":"self"},"cause":"lava","damage_per_tick":4}]` | 
 
-`damage_conditions` is an array defined by three parameters. Each item has the following properties:
+## Damage Conditions item type
+List of damage conditions that when met can cause damage to the entity.
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|[filters](../FilterList.md)|*not set* | Minecraft Filter| Filter used to test for|
-|cause|*not set* |String| The kind of damage that is caused to the entity. Various armors and spells use this to determine if the entity is immune. |
-|damage_per_tick |*not set*| Integer| Amount of damage done each tick that the conditions are met.|
 
-### cause
+#### Damage Conditions Properties
 
-> [!IMPORTANT]
-> A list of available damage sources can be found at [Entity Damage Source](../../../AddonsReference/Examples/AddonEntities.md#entity-damage-source) located in the Addons Documentation.
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| cause | *not set* | String | The kind of damage that is caused to the entity. Various armors and spells use this to determine if the entity is immune. |  | 
+| damage_per_tick | 1 | Integer number | The amount of damage done each tick that the conditions are met. |  | 
+| filters | *not set* | Minecraft filter | The set of conditions that must be satisfied before the entity takes the defined damage. |  | 
 
-## Example
+## Samples
 
-```json
-"minecraft:hurt_on_condition":{
-    "damage_conditions": [
-        {
-            "filters": {"test": "in_water", "subject": "self", "operator": "==", "value": true},
-            "cause": "drowning",
-            "damage_per_tick": 1
-        }
-    ]
-}
-```
+#### [Allay](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/allay.json)
 
-## Vanilla entities examples
-
-### chicken
 
 ```json
 "minecraft:hurt_on_condition": {
-        "damage_conditions": [
-          {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
-            "cause": "lava",
-            "damage_per_tick": 4
-          }
-        ]
-      }
+  "damage_conditions": [
+    {
+      "filters": {
+        "test": "in_lava",
+        "subject": "self",
+        "operator": "==",
+        "value": true
+      },
+      "cause": "lava",
+      "damage_per_tick": 4
+    }
+  ]
+}
 ```
 
-## Vanilla entities using `minecraft:hurt_on_condition`
+#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
 
-- [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
-- [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
-- [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
-- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [hopper_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/hopper_minecart.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [npc](../../../../Source/VanillaBehaviorPack_Snippets/entities/npc.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [shulker_bullet](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker_bullet.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
-- [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
-- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [tripod_camera](../../../../Source/VanillaBehaviorPack_Snippets/entities/tripod_camera.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+
+```json
+"minecraft:hurt_on_condition": {
+  "damage_conditions": [
+    {
+      "filters": {
+        "test": "in_lava",
+        "subject": "self"
+      },
+      "cause": "lava",
+      "damage_per_tick": 4
+    }
+  ]
+}
+```
+
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
+
+
+```json
+"minecraft:hurt_on_condition": {
+  "damage_conditions": [
+    {
+      "filters": {
+        "test": "in_contact_with_water",
+        "operator": "==",
+        "value": true
+      },
+      "cause": "drowning",
+      "damage_per_tick": 1
+    }
+  ]
+}
+```
+
+#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
+
+
+```json
+"minecraft:hurt_on_condition": {
+  "damage_conditions": [
+    {
+      "filters": {
+        "test": "in_lava"
+      },
+      "cause": "lava",
+      "damage_per_tick": 4
+    }
+  ]
+}
+```
+
+#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
+
+
+```json
+"minecraft:hurt_on_condition": {
+  "damage_conditions": [
+    {
+      "filters": {
+        "test": "in_lava",
+        "subject": "self"
+      },
+      "cause": "lava",
+      "damage_per_tick": 4
+    },
+    {
+      "filters": {
+        "test": "in_contact_with_water"
+      },
+      "cause": "drowning",
+      "damage_per_tick": 1
+    }
+  ]
+}
+```
+
+#### [Snow Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/snow_golem.json)
+
+
+```json
+"minecraft:hurt_on_condition": {
+  "damage_conditions": [
+    {
+      "filters": {
+        "test": "in_lava",
+        "subject": "self",
+        "operator": "==",
+        "value": true
+      },
+      "cause": "lava",
+      "damage_per_tick": 4
+    },
+    {
+      "filters": {
+        "all_of": [
+          {
+            "test": "is_temperature_value",
+            "operator": ">",
+            "value": 1
+          },
+          {
+            "test": "has_component",
+            "subject": "self",
+            "operator": "!=",
+            "value": "minecraft:effect.fire_resistance"
+          }
+        ]
+      },
+      "cause": "temperature",
+      "damage_per_tick": 1
+    },
+    {
+      "filters": {
+        "test": "in_contact_with_water",
+        "operator": "==",
+        "value": true
+      },
+      "cause": "drowning",
+      "damage_per_tick": 1
+    }
+  ]
+}
+```

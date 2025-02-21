@@ -1,46 +1,42 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.flee_sun
-description: "A reference document detailing the 'behavior.flee_sun' entity goal"
+title: "Entity Documentation - minecraft:behavior.flee_sun"
+description: "Describes the minecraft:behavior.flee_sun ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.flee_sun
 
-`minecraft:behavior.flee_sun` compels the entity to actively avoid the sunlight.
+Allows the mob to run away from direct sunlight and seek shade.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
+## Flee Sun Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Bogged: `2`, Zombie Villager V2: `4` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Bogged: `1` | 
 
-```json
-"minecraft:behavior.flee_sun":{
-    "priority": 2,
-    "speed_multiplier":1.50
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-### skeleton
 
 ```json
 "minecraft:behavior.flee_sun": {
-        "priority": 2,
-        "speed_multiplier": 1
-      }
+  "priority": 2,
+  "speed_multiplier": 1
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.flee_sun`
+#### [Zombie Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
 
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
+
+```json
+"minecraft:behavior.flee_sun": {
+  "priority": 4,
+  "speed_multiplier": 1
+}
+```

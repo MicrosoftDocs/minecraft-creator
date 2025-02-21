@@ -1,17 +1,19 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:hover_text_color
-description: "A reference document detailing the 'hover_text_color' item component"
+title: "Items Documentation - minecraft:hover_text_color"
+description: "Describes the minecraft:hover_text_color item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:hover_text_color
+# Items Documentation - minecraft:hover_text_color
 
-`minecraft:hover_text_color` determines the color of the item name when hovering over it.
+Determines the color of the item name when hovering over it.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| value|*not set*| JSON object| The color of the item hover text.|
+## Hover Text Color Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | String | The color of the item hover text. |  | 

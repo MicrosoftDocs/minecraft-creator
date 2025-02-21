@@ -1,38 +1,37 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.emerge
-description: "A reference document detailing the 'behavior.emerge' entity goal"
+title: "Entity Documentation - minecraft:behavior.emerge"
+description: "Describes the minecraft:behavior.emerge ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.emerge
 
-`minecraft:behavior.emerge` activates the "EMERGING" entity flag during the specified duration and triggers "on_done" at the end.
+Allows this entity to emerge from the ground.
 
-## Parameters
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| cooldown_time| 0.50| Integer| Time in seconds the mob has to wait before using the goal again |
-| duration| 5.00| Decimal| Goal duration in seconds |
-| on_done| *not set* | Trigger to be executed when the goal execution is about to end |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Emerge Behavior Properties
 
-## Vanilla entities examples
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| cooldown_time | 0 | Integer number | Time in seconds the mob has to wait before using the goal again |  | 
+| duration | 5 | Decimal number | Goal duration in seconds | Warden: `7` | 
+| on_done | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Trigger to be executed when the goal execution is about to end | Warden: `{"event":"minecraft:emerged","target":"self"}` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
-### warden
+## Samples
+
+#### [Warden](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/warden.json)
+
 
 ```json
 "minecraft:behavior.emerge": {
-        "duration": 7.0,
-        "on_done": {
-           "event": "minecraft:emerged",
-           "target": "self"
-        }
+  "duration": 7,
+  "on_done": {
+    "event": "minecraft:emerged",
+    "target": "self"
+  }
 }
 ```
-
-## Vanilla entities using `emerge`
-
-- [warden](../../../../Source/VanillaBehaviorPack_Snippets/entities/warden.md)

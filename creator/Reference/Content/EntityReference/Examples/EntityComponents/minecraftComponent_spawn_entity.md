@@ -1,100 +1,207 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:spawn_entity
-description: "A reference document detailing the 'spawn_entity' entity component"
+title: "Entity Documentation - minecraft:spawn_entity"
+description: "Describes the minecraft:spawn_entity entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:spawn_entity
 
-`minecraft:spawn_entity` adds a timer after which the entity will spawn another entity or item (similar to the vanilla chicken's egg-laying behavior).
+Adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior).
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| entities | *not set*|List of entities | A list of entities to spawn in |
+## Spawn Entity Properties
 
-## Entities
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| entities | *not set* | [Entities](#entities-item-type) item |  | Armadillo: `{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"mob.armadillo.scute_drop","spawn_item":"armadillo_scute"}`, Chicken: `[{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"temperate"}]},{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"brown_egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"warm"}]},{"min_wait_time":300,"max_wait_time":600,"spawn_sound":"plop","spawn_item":"blue_egg","filters":[{"test":"rider_count","subject":"self","operator":"==","value":0},{"test":"enum_property","subject":"self","domain":"minecraft:climate_variant","value":"cold"}]}]`, Ocelot: `{"filters":[{"test":"random_chance","value":7}],"min_wait_time":0,"max_wait_time":0,"num_to_spawn":2,"single_use":true,"spawn_entity":"minecraft:ocelot","spawn_event":"minecraft:entity_born","spawn_method":"born","spawn_sound":""}` | 
+| filters | *not set* | Minecraft filter | If present, the specified entity will only spawn if the filter evaluates to true. |  | 
+| max_wait_time | 600 | Integer number | Maximum amount of time to randomly wait in seconds before another entity is spawned. |  | 
+| min_wait_time | 300 | Integer number | Minimum amount of time to randomly wait in seconds before another entity is spawned. |  | 
+| num_to_spawn | 1 | Integer number | The number of entities of this type to spawn each time that this triggers. |  | 
+| should_leash | false | Boolean true/false | If true, this the spawned entity will be leashed to the parent. |  | 
+| single_use | false | Boolean true/false | If true, this component will only ever spawn the specified entity once. |  | 
+| spawn_entity | *not set* | String | Identifier of the entity to spawn, leave empty to spawn the item defined by "spawn_item" instead. |  | 
+| spawn_event | minecraft:entity_born | String | Event to call on the spawned entity when it spawns. |  | 
+| spawn_item | egg | String | Item identifier of the item to spawn. |  | 
+| spawn_item_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call on this entity when the item is spawned. |  | 
+| spawn_method | born | String | Method to use to spawn the entity. |  | 
+| spawn_sound | plop | String | Identifier of the sound effect to play when the entity is spawned. |  | 
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| filters| *not set*| Minecraft Filter| If present, the specified entity will only spawn if the filter evaluates to true. |
-| max_wait_time| 600| Integer| Maximum amount of time to randomly wait in seconds before another entity is spawned. |
-| min_wait_time| 300| Integer| Minimum amount of time to randomly wait in seconds before another entity is spawned. |
-| num_to_spawn| 1| Integer| The number of entities of this type to spawn each time that this triggers. |
-| should_leash| false| Boolean| If true, this the spawned entity will be leashed to the parent. |
-| single_use| false| Boolean| If true, this component will only ever spawn the specified entity once. |
-| spawn_entity| *not set*| String| Identifier of the entity to spawn, leave empty to spawn the item defined by "spawn_item" instead. |
-| spawn_event| minecraft:entity_born| String| Event to call on the entity when it spawns. |
-| spawn_item| egg| String| Item identifier of the item to spawn. |
-| spawn_item_event| --| Trigger| Event to call on the entity when the item is spawned. |
-| spawn_method| born| String| Method to use to spawn the entity. |
-| spawn_sound| plop| String| Identifier of the sound effect to play when the entity is spawned. |
+## Entities item type
 
-## Example
+#### Entities Properties
 
-### Spawning an entity
-```json
-"minecraft:spawn_entity":{
-    "entities": [{
-        "filters": [
-            {"test":"is_daytime", "value": false}
-        ] ,
-        "max_wait_time": 600,
-        "min_wait_time": 300,
-        "num_to_spawn": 1,
-        "should_leash": false,
-        "single_use": false,
-        "spawn_entity": "minecraft:chicken",
-        "spawn_event": "minecraft:entity_born",
-        "spawn_method": "born",
-        "spawn_sound": "plop",
-        }
-    ]
-}
-```
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| filters | *not set* | Array of [Filters](#filters-item-type) items |  |  | 
+| max_wait_time | *not set* | Decimal number |  | Armadillo: `600` | 
+| min_wait_time | *not set* | Decimal number |  | Armadillo: `300` | 
+| num_to_spawn | *not set* | Decimal number |  |  | 
+| should_leash | *not set* | String |  |  | 
+| single_use | *not set* | String |  |  | 
+| spawn_entity | *not set* | String |  |  | 
+| spawn_event | *not set* | String |  |  | 
+| spawn_item | *not set* | String |  | Armadillo: `"armadillo_scute"` | 
+| spawn_sound | *not set* | String |  | Armadillo: `"mob.armadillo.scute_drop"` | 
 
-### Spawning an item
-```json
-"minecraft:spawn_entity":{
-    "entities": [{
-        "filters": [
-            {"test":"is_daytime", "value": false}
-        ] ,
-        "max_wait_time": 600,
-        "min_wait_time": 300,
-        "num_to_spawn": 1,
-        "should_leash": false,
-        "single_use": false,
-        "spawn_item_event": { "event": "example:just_laid_an_egg" },
-        "spawn_item": "egg",
-        "spawn_sound": "plop",
-        }
-    ]
-}
-```
+## Filters item type
 
-## Vanilla entities examples
+#### Filters Properties
 
-### chicken
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | *not set* | String |  | Chicken: `"=="` | 
+| subject | *not set* | String |  | Chicken: `"self"` | 
+| test | *not set* | String |  | Chicken: `"rider_count"` | 
+| value | *not set* | Decimal number |  | Chicken: `0` | 
+
+## Samples
+
+#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
+
 
 ```json
 "minecraft:spawn_entity": {
-    "entities": {
-        "min_wait_time": 300,
-        "max_wait_time": 600,
-        "spawn_sound": "plop",
-            "spawn_item": "egg",
-            "filters": {
-              "test": "rider_count", "subject": "self", "operator": "==", "value": 0
-            }
-    }
+  "entities": {
+    "min_wait_time": 300,
+    "max_wait_time": 600,
+    "spawn_sound": "mob.armadillo.scute_drop",
+    "spawn_item": "armadillo_scute"
+  }
 }
 ```
 
-## Vanilla entities using `minecraft:spawn_entity`
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
 
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+
+```json
+"minecraft:spawn_entity": {
+  "entities": [
+    {
+      "min_wait_time": 300,
+      "max_wait_time": 600,
+      "spawn_sound": "plop",
+      "spawn_item": "egg",
+      "filters": [
+        {
+          "test": "rider_count",
+          "subject": "self",
+          "operator": "==",
+          "value": 0
+        },
+        {
+          "test": "enum_property",
+          "subject": "self",
+          "domain": "minecraft:climate_variant",
+          "value": "temperate"
+        }
+      ]
+    },
+    {
+      "min_wait_time": 300,
+      "max_wait_time": 600,
+      "spawn_sound": "plop",
+      "spawn_item": "brown_egg",
+      "filters": [
+        {
+          "test": "rider_count",
+          "subject": "self",
+          "operator": "==",
+          "value": 0
+        },
+        {
+          "test": "enum_property",
+          "subject": "self",
+          "domain": "minecraft:climate_variant",
+          "value": "warm"
+        }
+      ]
+    },
+    {
+      "min_wait_time": 300,
+      "max_wait_time": 600,
+      "spawn_sound": "plop",
+      "spawn_item": "blue_egg",
+      "filters": [
+        {
+          "test": "rider_count",
+          "subject": "self",
+          "operator": "==",
+          "value": 0
+        },
+        {
+          "test": "enum_property",
+          "subject": "self",
+          "domain": "minecraft:climate_variant",
+          "value": "cold"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### [Ocelot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ocelot.json)
+
+
+```json
+"minecraft:spawn_entity": {
+  "entities": {
+    "filters": [
+      {
+        "test": "random_chance",
+        "value": 7
+      }
+    ],
+    "min_wait_time": 0,
+    "max_wait_time": 0,
+    "num_to_spawn": 2,
+    "single_use": true,
+    "spawn_entity": "minecraft:ocelot",
+    "spawn_event": "minecraft:entity_born",
+    "spawn_method": "born",
+    "spawn_sound": ""
+  }
+}
+```
+
+#### [Sniffer](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sniffer.json)
+
+
+```json
+"minecraft:spawn_entity": {
+  "entities": {
+    "min_wait_time": 0,
+    "max_wait_time": 0,
+    "spawn_sound": "plop",
+    "spawn_item": "sniffer_egg",
+    "spawn_item_event": {
+      "event": "on_egg_spawned",
+      "target": "self"
+    },
+    "single_use": true
+  }
+}
+```
+
+#### [Wandering Trader](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wandering_trader.json)
+
+
+```json
+"minecraft:spawn_entity": {
+  "entities": [
+    {
+      "min_wait_time": 0,
+      "max_wait_time": 0,
+      "spawn_entity": "trader_llama",
+      "spawn_event": "minecraft:from_wandering_trader",
+      "single_use": true,
+      "num_to_spawn": 2,
+      "should_leash": true
+    }
+  ]
+}
+```

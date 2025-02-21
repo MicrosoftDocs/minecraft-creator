@@ -1,29 +1,12 @@
 ---
-author: iconicNUrdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:trust
-description: "A reference document detailing the 'trust' entity component"
+title: "Entity Documentation - minecraft:trust"
+description: "Describes the minecraft:trust entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:trust
 
-`minecraft:trust` compels the entity to trust one or more players.
-
-## Example
-
-```json
-"minecraft:trust": {}
-```
-
-## Vanilla entities examples
-
-### fox
-
-```json
-"minecraft:trust": {}
-```
-
-## Vanilla entities using `minecraft:trust`
-
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+Allows this entity to trust multiple players.

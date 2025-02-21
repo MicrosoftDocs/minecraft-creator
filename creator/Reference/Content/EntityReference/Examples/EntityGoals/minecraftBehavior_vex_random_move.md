@@ -1,36 +1,19 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.vex_random_move
-description: "A reference document detailing the 'behavior.vex_random_move' entity goal"
+title: "Entity Documentation - behavior.vex_random_move"
+description: "Describes the behavior.vex_random_move AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.vex_random_move
+# Entity Documentation - behavior.vex_random_move
 
-`minecraft:behavior.vex_random_move` allows an entity of the`vex` family to move randomly.
+Allows the mob to move around randomly like the Vex.
 
-> [!CAUTION]
-> `minecraft:behavior.vex_random_move` is no longer used for the `vex` entity. Instead, `minecraft:navigation.walk` and `minecraft:behavior.float`allow the `vex` entity to navigate.
 
-## Parameters
+## Vex Random Move Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-
-## Example
-
-```json
-"minecraft:behavior.vex_random_move":{
-    "priority": 2
-}
-```
-
-## Vanilla entities examples
-
-No entities currently use `minecraft:behavior.vex_random_move`
-
-## Vanilla entities using `minecraft:behavior.vex_random_move`
-
-No entities currently use `minecraft:behavior.vex_random_move`
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 

@@ -1,45 +1,39 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.receive_love
-description: "A reference document detailing the 'behavior.receive_love' entity goal"
+title: "Entity Documentation - minecraft:behavior.receive_love"
+description: "Describes the minecraft:behavior.receive_love ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.receive_love
 
-`minecraft:behavior.receive_love` inspires an entity to mate with another similar entity when approached to breed.
+Allows the villager to stop so another villager can breed with it. Can only be used by a Villager.
 
-> [!NOTE]
-> This behavior can only be used by the `villager` entity type.
 
-## Parameters
+## Receive Love Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `6`, Villager: `7` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.receive_love":{
-    "priority": 2,
-    "speed_multiplier": 1.0
-}
-```
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
-## Vanilla entities examples
-
-### villager_v2
 
 ```json
 "minecraft:behavior.receive_love": {
-          "priority": 6
-        }
+  "priority": 6
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.receive_love`
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
+
+```json
+"minecraft:behavior.receive_love": {
+  "priority": 7
+}
+```

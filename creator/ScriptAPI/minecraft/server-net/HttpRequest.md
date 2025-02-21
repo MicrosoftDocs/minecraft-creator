@@ -46,6 +46,7 @@ Content of the body of the HTTP request.
 Type: *string*
 
 Notes:
+  - This property can be edited in early-execution mode.
 
 ### **headers**
 `headers: HttpHeader[];`
@@ -55,6 +56,7 @@ A collection of HTTP headers to add to the outbound request.
 Type: [*HttpHeader*](HttpHeader.md)[]
 
 Notes:
+  - This property can be edited in early-execution mode.
 
 ### **method**
 `method: HttpRequestMethod;`
@@ -64,6 +66,7 @@ HTTP method (e.g., GET or PUT or PATCH) to use for making the request.
 Type: [*HttpRequestMethod*](HttpRequestMethod.md)
 
 Notes:
+  - This property can be edited in early-execution mode.
 
 ### **timeout**
 `timeout: number;`
@@ -73,6 +76,7 @@ Amount of time, in seconds, before the request times out and is abandoned.
 Type: *number*
 
 Notes:
+  - This property can be edited in early-execution mode.
 
 ### **uri**
 `uri: string;`
@@ -82,6 +86,7 @@ The HTTP resource to access.
 Type: *string*
 
 Notes:
+  - This property can be edited in early-execution mode.
 
 ## Methods
 - [constructor](#constructor)
@@ -100,6 +105,9 @@ new HttpRequest(uri: string)
 - **uri**: *string*
 
 **Returns** [*HttpRequest*](HttpRequest.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **addHeader**
 `
@@ -115,6 +123,7 @@ Adds an additional header to the overall list of headers used in the correspondi
 **Returns** [*HttpRequest*](HttpRequest.md)
   
 Notes:
+- This function can be called in early-execution mode.
 
 ### **setBody**
 `
@@ -129,6 +138,7 @@ Updates the content of the body of the HTTP request.
 **Returns** [*HttpRequest*](HttpRequest.md)
   
 Notes:
+- This function can be called in early-execution mode.
 
 ### **setHeaders**
 `
@@ -143,6 +153,7 @@ Replaces and applies a set of HTTP Headers for the request.
 **Returns** [*HttpRequest*](HttpRequest.md)
   
 Notes:
+- This function can be called in early-execution mode.
 
 ### **setMethod**
 `
@@ -157,6 +168,7 @@ Sets the desired HTTP method (e.g., GET or PUT or PATCH) to use for making the r
 **Returns** [*HttpRequest*](HttpRequest.md)
   
 Notes:
+- This function can be called in early-execution mode.
 
 ### **setTimeout**
 `
@@ -169,6 +181,7 @@ setTimeout(timeout: number): HttpRequest
 **Returns** [*HttpRequest*](HttpRequest.md)
   
 Notes:
+- This function can be called in early-execution mode.
 
 #### Examples
 

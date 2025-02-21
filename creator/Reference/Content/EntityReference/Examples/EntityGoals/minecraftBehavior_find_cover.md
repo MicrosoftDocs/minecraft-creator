@@ -1,45 +1,45 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.find_cover
-description: "A reference document detailing the 'behavior.find_cover' entity goal"
+title: "Entity Documentation - minecraft:behavior.find_cover"
+description: "Describes the minecraft:behavior.find_cover ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.find_cover
 
-`minecraft:behavior.find_cover` compels an entity to locate shade in the world.
+Allows the mob to seek shade.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
+## Find Cover Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| cooldown_time | 0 | Decimal number | Time in seconds the mob has to wait before using the goal again | Fox: `5` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Fox: `9` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Fox: `1` | 
 
-```json
-"minecraft:behavior.find_cover":{
-    "priority": 2,
-    "cooldown_time":10,
-    "speed_multiplier":3
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
 
-### fox
+At /minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:behavior.find_cover/: 
 
 ```json
 "minecraft:behavior.find_cover": {
-          "priority": 0,
-          "speed_multiplier": 1,
-          "cooldown_time": 0.0
-        }
+  "priority": 0,
+  "speed_multiplier": 1,
+  "cooldown_time": 0
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.find_cover`
+At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.find_cover/: 
 
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+```json
+"minecraft:behavior.find_cover": {
+  "priority": 9,
+  "speed_multiplier": 1,
+  "cooldown_time": 5
+}
+```

@@ -1,21 +1,16 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:light_dampening
-description: "A reference document detailing the 'light_dampening' block component"
+title: "Block Components Documentation - minecraft:light_dampening"
+description: "Describes the minecraft:light_dampening block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:light_dampening
+# Block Components Documentation - minecraft:light_dampening
 
-`minecraft:light_dampening` is an `Integer` component that sets the amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more.
+The amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more.
 
-## Default Value of the Component
+## Alternate Simple Representations
 
-This component is specified as an `Integer`. If this component is omitted, the default value for this component is `15` (a full block that doesn't let any light through).
-
-## Example
-
-```json
-"minecraft:light_dampening": 7
-```
+This item can also be represented as a `Integer number`.

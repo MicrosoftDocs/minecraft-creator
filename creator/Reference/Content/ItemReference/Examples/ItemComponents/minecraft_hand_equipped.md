@@ -1,17 +1,35 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:hand_equipped
-description: "A reference document detailing the 'hand_equipped' item component"
+title: "Items Documentation - minecraft:hand_equipped"
+description: "Describes the minecraft:hand_equipped item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:hand_equipped
+# Items Documentation - minecraft:hand_equipped
 
-`minecraft:hand_equipped` determines if an item is rendered like a tool while in-hand.
+The hand_equipped component determines if an item is rendered like a tool while it is in a player's hand.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| value|*not set*| Boolean| Determines if the item is rendered like a tool in-hand.|
+## Hand Equipped Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | Boolean true/false | Determines whether the item is rendered like a tool while in the player's hand. |  | 
+
+## Samples
+
+#### [AppleEnchanted](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/appleEnchanted.json)
+
+
+```json
+"minecraft:hand_equipped": false
+```
+
+#### [Breeze Rod](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/breeze_rod.json)
+
+
+```json
+"minecraft:hand_equipped": true
+```

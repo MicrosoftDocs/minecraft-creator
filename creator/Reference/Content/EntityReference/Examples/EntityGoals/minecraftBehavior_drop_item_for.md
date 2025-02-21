@@ -1,106 +1,92 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.drop_item_for
-description: "A reference document detailing the 'behavior.drop_item_for' entity goal"
+title: "Entity Documentation - minecraft:behavior.drop_item_for"
+description: "Describes the minecraft:behavior.drop_item_for ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.drop_item_for
 
-`minecraft:behavior.drop_item_for` compels the entity to move toward a target and drop an item near the target. This goal requires a `minecraft:navigation` to execute.
+Allows the entity to move toward a target, and drop an item near the target.
 
-## Parameters
+> [!Note]
+> Requires the following component in order to work properly:
+> 
+> * [Navigation (minecraft:navigation)](../EntityComponents/minecraftComponent_navigation.md)
+> 
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| cooldown| 0.2| Decimal| Total time that the goal is on cooldown before it can be used again. |
-| drop_item_chance| 1.0| Decimal| The percent chance the entity will drop an item when using this goal. |
-| entity_types| | Minecraft Filter| The list of conditions another entity must meet to be a valid target to drop an item for. |
-| goal_radius| 0.50| Decimal| Distance in blocks within the entity considers it has reached its target position.  |
-| loot_table| | String| The loot table that contains the possible loot the entity can drop with this goal. |
-| max_head_look_at_height| 10.0| Decimal| The maximum height the entities head will look at when dropping the item. The entity will always be looking at its target. |
-| minimum_teleport_distance| 2.0| Decimal| If the target position is farther away than this distance on any tick, the entity will teleport to the target position. |
-| offering_distance| 1.0| Decimal| The preferred distance the entity tries to be from the target it is dropping an item for. |
-| on_drop_attempt| | Trigger| The event to trigger when the entity attempts to drop an item. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| search_count| 0| Integer| The number of blocks each tick that the entity will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick. |
-| search_height| 1| Integer| The Height in blocks the entity will search within to find a valid target position. |
-| search_range| 0| Integer| The distance in blocks the entity will search within to find a valid target position. |
-| seconds_before_pickup| 0.0| Decimal| The numbers of seconds that will pass before the dropped entity can be picked up from the ground. |
-| speed_multiplier| 1.00| Decimal| Movement speed multiplier of the entity when using this Goal. |
-| target_range| [1, 1, 1]| Vector [a, b, c]| The range in blocks within which the entity searches to find a target to drop an item for. |
-| teleport_offset| [0, 1, 0]| Vector [a, b, c]| When the entity teleports, offset the teleport position by this many blocks in the X, Y, and Z coordinate. |
-| time_of_day_range| [0, 1]| Range [a, b]| The valid times of day that this goal can be used. For reference: noon is 0.0, sunset is 0.25, midnight is 0.5, and sunrise is 0.75, and back to noon for 1.0. |
+## Drop Item For Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| cooldown | 0.2 | Decimal number | Total time that the goal is on cooldown before it can be used again. | Cat: `0.25` | 
+| drop_item_chance | 1 | Decimal number | The percent chance the entity will drop an item when using this goal. | Cat: `0.7` | 
+| entity_types | *not set* | Minecraft filter | The list of conditions another entity must meet to be a valid target to drop an item for. | Cat: `[{"filters":{"test":"is_family","subject":"other","value":"player"},"max_dist":6}]` | 
+| goal_radius | 0.5 | Decimal number | Distance in blocks within the entity considers it has reached it's target position. | Cat: `1` | 
+| loot_table | *not set* | String | The loot table that contains the possible loot the entity can drop with this goal. | Cat: `"loot_tables/entities/cat_gift.json"` | 
+| max_head_look_at_height | 10 | Decimal number | The maximum height the entities head will look at when dropping the item. The entity will always be looking at its target. | Cat: `10` | 
+| minimum_teleport_distance | 2 | Decimal number | If the target position is farther away than this distance on any tick, the entity will teleport to the target position. | Cat: `2` | 
+| offering_distance | 1 | Decimal number | The preferred distance the entity tries to be from the target it is dropping an item for. | Cat: `5` | 
+| on_drop_attempt | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to trigger when the entity attempts to drop an item. | Cat: `{"event":"minecraft:cat_gifted_owner","target":"self"}` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cat: `1` | 
+| search_count | 0 | Integer number | The number of blocks each tick that the entity will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick. |  | 
+| search_height | 1 | Integer number | The Height in blocks the entity will search within to find a valid target position. | Cat: `2` | 
+| search_range | 0 | Integer number | The distance in blocks the entity will search within to find a valid target position. | Cat: `5` | 
+| seconds_before_pickup | 0 | Decimal number | The numbers of seconds that will pass before the dropped entity can be picked up from the ground. |  | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the entity when using this Goal. | Cat: `1` | 
+| target_range | [1, 1, 1] | x, y, z coordinate array | The range in blocks within which the entity searches to find a target to drop an item for. | Cat: `[5,5,5]` | 
+| teleport_offset | [0, 1, 0] | x, y, z coordinate array | When the entity teleports, offset the teleport position by this many blocks in the X, Y, and Z coordinate. | Cat: `[0,1,0]` | 
+| time_of_day_range | *not set* | Range of integers | The valid times of day that this goal can be used. For reference: noon is 0.0, sunset is 0.25, midnight is 0.5, and sunrise is 0.75, and back to noon for 1.0. | Cat: `[0.74999,0.8]` | 
+
+## Samples
+
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+
 
 ```json
 "minecraft:behavior.drop_item_for": {
-    "priority": 1,
-    "cooldown": 0.2,
-    "drop_item_chance": 1.0,
-    "offering_distance": 1.0,
-    "minimum_teleport_distance": 2.0,
-    "max_head_look_at_height": 10.0,
-    "target_range": [ 1.0, 1.0, 1.0 ],
-    "teleport_offset": [ 0.0, 1.0, 0.0],
-    "time_of_day_range": [ 0, 1 ],
-    "seconds_before_pickup": 0.0,
-    "search_range": 5,
-    "search_height": 2,
-    "search_count": 0,
-    "speed_multiplier": 1.0,
-    "goal_radius": 1.0,
-    "entity_types": [
-        {
-            "filters": { "test": "is_family", "subject": "other", "value": "player" },
-            "max_dist": 6
-        }
-    ],
-    "loot_table": "loot_tables/entities/cat_gift.json",
-    "on_drop_attempt": {
-        "event": "minecraft:cat_gifted_owner",
-        "target": "self"
+  "priority": 1,
+  "seconds_before_pickup": 0,
+  "cooldown": 0.25,
+  "drop_item_chance": 0.7,
+  "offering_distance": 5,
+  "minimum_teleport_distance": 2,
+  "max_head_look_at_height": 10,
+  "target_range": [
+    5,
+    5,
+    5
+  ],
+  "teleport_offset": [
+    0,
+    1,
+    0
+  ],
+  "time_of_day_range": [
+    0.74999,
+    0.8
+  ],
+  "speed_multiplier": 1,
+  "search_range": 5,
+  "search_height": 2,
+  "search_count": 0,
+  "goal_radius": 1,
+  "entity_types": [
+    {
+      "filters": {
+        "test": "is_family",
+        "subject": "other",
+        "value": "player"
+      },
+      "max_dist": 6
     }
-}
-```
-
-## Vanilla entities examples
-
-### cat
-
-```json
-"minecraft:behavior.drop_item_for": {
-    "priority": 1,
-    "seconds_before_pickup": 0.0,
-    "cooldown": 0.25,
-    "drop_item_chance": 0.7,
-    "offering_distance": 5.0,
-    "minimum_teleport_distance": 2.0,
-    "max_head_look_at_height": 10.0,
-    "target_range": [ 5.0, 5.0, 5.0 ],
-    "teleport_offset": [ 0.0, 1.0, 0.0],
-    "time_of_day_range": [ 0.74999, 0.80 ],
-    "speed_multiplier": 1.0,
-    "search_range": 5,
-    "search_height": 2,
-    "search_count": 0,
-    "goal_radius": 1.0,
-    "entity_types": [
-        {
-            "filters": { "test": "is_family", "subject": "other", "value": "player" },
-            "max_dist": 6
-        }
-    ],
-    "loot_table": "loot_tables/entities/cat_gift.json",
-    "on_drop_attempt": {
+  ],
+  "loot_table": "loot_tables/entities/cat_gift.json",
+  "on_drop_attempt": {
     "event": "minecraft:cat_gifted_owner",
     "target": "self"
-    }
+  }
 }
 ```
-
-## Vanilla entities using `drop_item_for`
-
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)

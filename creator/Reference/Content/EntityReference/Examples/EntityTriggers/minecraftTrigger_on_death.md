@@ -1,44 +1,33 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:on_death
-description: "A reference document detailing the 'on_death' entity trigger"
+title: "Entity Documentation - minecraft:on_death"
+description: "Describes the minecraft:on_death entity trigger"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:on_death
 
-`minecraft:on_death` adds a trigger to call on this entity's death.
+Only usable by the Ender Dragon. Adds a trigger to call on this entity's death.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|event|*not set* | String|  The event to run when the conditions for this trigger are met. |
-|[filters](../FilterList.md)|*not set* | Minecraft Filter| The list of conditions for this trigger to execute. |
-|target| self| String| The target of the event. |
+## On Death Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| event | *not set* | String | The event to run when the conditions for this trigger are met. | Ender Dragon: `"minecraft:start_death"` | 
+| filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. |  | 
+| target | self | String | The target of the event. | Ender Dragon: `"self"` | 
 
-```json
-"minecraft:on_death":{
-    "event": "minecraft:custom_death_event",
-    "filters": "is_daytime",
-    "target": "self",
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
 
-### ender_dragon
 
 ```json
 "minecraft:on_death": {
-        "event": "minecraft:start_death",
-        "target": "self"
-      }
+  "event": "minecraft:start_death",
+  "target": "self"
+}
 ```
-
-## Vanilla entities using `minecraft:on_death`
-
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)

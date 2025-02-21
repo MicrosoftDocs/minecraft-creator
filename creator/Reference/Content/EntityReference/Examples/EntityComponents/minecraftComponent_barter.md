@@ -1,42 +1,32 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:barter
-description: "A reference document detailing the 'barter' entity component"
+title: "Entity Documentation - minecraft:barter"
+description: "Describes the minecraft:barter entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:barter
 
-`minecraft:barter` compels the entity to drop an item as a barter exchange.
+Enables the component to drop an item as a barter exchange.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|barter_table|*not set* | String| Loot table used to drop a random item |
-|cooldown_after_being_attacked| 0| Integer|  Duration, in seconds, when the entity won't barter items if it was hurt |
+## Barter Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| barter_table | *not set* | String from a list of choices | Loot table that's used to drop a random item. | Piglin: `"loot_tables/entities/piglin_barter.json"` | 
+| cooldown_after_being_attacked | 0 | Range of integers | Duration, in seconds, for which mob won't barter items if it was hurt. | Piglin: `20` | 
 
-```json
-"minecraft:barter":{
-    "barter_table": "loot_tables/entities/custom_villager_barter.json",
-    "cooldown_after_being_attacked": 5
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
 
-### piglin
 
 ```json
 "minecraft:barter": {
-    "barter_table": "loot_tables/entities/piglin_barter.json",
-    "cooldown_after_being_attacked": 20
-},
+  "barter_table": "loot_tables/entities/piglin_barter.json",
+  "cooldown_after_being_attacked": 20
+}
 ```
-
-## Vanilla entities using `minecraft:barter`
-
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)

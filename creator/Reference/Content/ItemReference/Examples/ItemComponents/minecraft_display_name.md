@@ -1,33 +1,127 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:display_name
-description: "A reference document detailing the 'display_name' item component"
+title: "Items Documentation - minecraft:display_name"
+description: "Describes the minecraft:display_name item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:display_name
+# Items Documentation - minecraft:display_name
 
-`minecraft:display_name` sets the item display name within Minecraft: Bedrock Edition. This component may also be used to pull from the localization file by referencing a key from it.
+Sets the item display name within Minecraft: Bedrock Edition. This component may also be used to pull from the localization file by referencing a key from it.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value|*not set* | String | Set the display name for an item.|
+## Display Name Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | String | Name shown for an item. | Apple: `"item.apple.name"`, Breeze Rod: `"item.breeze_rod.name"`, Ominous Trial Key: `"item.ominous_trial_key.name"` | 
+
+## Samples
+
+At sample: 
 
 ```json
-"minecraft:display_name":{
-    "value": "secret_weapon"
+"minecraft:display_name": {
+  "value": "secret_weapon"
 }
 ```
 
-## Example Using Localization Key
+At sample with localication key: 
 
 ```json
-"minecraft:display_name":{
-    "value": "item.snowball.name"
+"minecraft:display_name": {
+  "value": "item.snowball.name"
+}
+```
+
+#### [Apple](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/apple.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "item.apple.name"
+}
+```
+
+#### [Breeze Rod](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/breeze_rod.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "item.breeze_rod.name"
+}
+```
+
+#### [Ominous Trial Key](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/ominous_trial_key.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "item.ominous_trial_key.name"
+}
+```
+
+#### [Trial Key](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/trial_key.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "item.trial_key.name"
+}
+```
+
+#### [Wind Charge](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/wind_charge.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "item.wind_charge.name"
+}
+```
+
+#### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "My Custom Armor"
+}
+```
+
+#### [Goo](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/goo.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "Weird Goo"
+}
+```
+
+#### [My Boots](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_boots.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "My Custom Boots"
+}
+```
+
+#### [My Helm](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_helm.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "My Custom Helmet"
+}
+```
+
+#### [My Leggings](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_leggings.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "My Custom Leggings"
 }
 ```

@@ -1,53 +1,38 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.random_breach
-description: "A reference document detailing the 'behavior.random_breach' entity goal"
+title: "Entity Documentation - minecraft:behavior.random_breach"
+description: "Describes the minecraft:behavior.random_breach ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.random_breach
 
-`minecraft:behavior.random_breach` compels an entity to breach the surface of the water at a random interval.
+Allows the mob to randomly break surface of the water.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again. |
-|interval| 120| Integer| A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
-|xz_dist| 10| Integer| Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1. |
-| y_dist| 7| Integer| Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1. |
+## Random Breach Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| cooldown_time | 0 | Decimal number | Time in seconds the mob has to wait before using the goal again | Dolphin: `2` | 
+| interval | 120 | Integer number | A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal | Dolphin: `50` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Dolphin: `6` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal |  | 
+| xz_dist | 10 | Integer number | Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1 | Dolphin: `6` | 
+| y_dist | 7 | Integer number | Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1 |  | 
 
-```json
-"minecraft:behavior.random_breach":{
-    "priority": 2,
-    "interval": 50,
-    "cooldown_time": 2.0,
-    "speed_multiplier": 1.0,
-    "xz_dist": 6,
-    "y_dist": 4
+## Samples
 
-}
-```
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
 
-## Vanilla entities examples
-
-### dolphin
 
 ```json
 "minecraft:behavior.random_breach": {
-        "priority": 6,
-        "interval": 50,
-        "xz_dist": 6,
-        "cooldown_time": 2.0
-      }
+  "priority": 6,
+  "interval": 50,
+  "xz_dist": 6,
+  "cooldown_time": 2
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.random_breach`
-
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)

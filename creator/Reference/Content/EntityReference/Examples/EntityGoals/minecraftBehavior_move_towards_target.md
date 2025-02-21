@@ -1,50 +1,39 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.move_towards_target
-description: "A reference document detailing the 'behavior.move_towards_target' entity goal"
+title: "Entity Documentation - minecraft:behavior.move_towards_target"
+description: "Describes the minecraft:behavior.move_towards_target ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.move_towards_target
 
-`minecraft:behavior.move_towards_target` compels an entity to move towards a target.
+Allows mob to move towards its current target.
 
-> [!IMPORTANT]
-> `minecraft:behavior.move_towards_target` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
->
->- [minecraft:behavior.nearest_attackable_target](minecraftBehavior_nearest_attackable_target.md)
->- [minecraft:behavior.hurt_by_target](minecraftBehavior_hurt_by_target.md)
+> [!Note]
+> Requires a target in order to work properly. Entities can generate targets via one of the following behaviors:
+> 
+> * [minecraft:behavior.nearest_attackable_target](../EntityGoals/minecraftBehavior_nearest_attackble_target.md)
+> * [minecraft:behavior.hurt_by_target](../EntityGoals/minecraftBehavior_hurt_by_target.md)
 
-## Parameters
+## Move Towards Target Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|within_radius| 0.0| Decimal| Defines the radius in blocks that the mob tries to be from the target. A value of 0 means it tries to occupy the same block as the target. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Iron Golem: `2` | 
+| speed_multiplier | *not set* | Decimal number |  | Iron Golem: `0.9` | 
+| within_radius | 0 | Decimal number | Defines the radius in blocks that the mob tries to be from the target. A value of 0 means it tries to occupy the same block as the target | Iron Golem: `32` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.move_towards_target":{
-    "priority": 1,
-    "within_radius": 0.75,
-    "speed_multiplier": 1.25
-}
-```
+#### [Iron Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/iron_golem.json)
 
-## Vanilla entities examples
-
-### iron_golem
 
 ```json
 "minecraft:behavior.move_towards_target": {
-        "priority": 2,
-        "speed_multiplier": 0.9,
-        "within_radius": 32
-      }
+  "priority": 2,
+  "speed_multiplier": 0.9,
+  "within_radius": 32
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.move_towards_target`
-
-- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)

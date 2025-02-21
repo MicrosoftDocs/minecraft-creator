@@ -1,46 +1,39 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.dragonflaming
-description: "A reference document detailing the 'behavior.dragonflaming' entity goal"
+title: "Entity Documentation - minecraft:behavior.dragonflaming"
+description: "Describes the minecraft:behavior.dragonflaming ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.dragonflaming
 
-`minecraft:behavior.dragonflaming` compels this entity to use a flame-breath attack. Can only be used by the Ender Dragon.
+Allows this entity to use a flame-breath attack.
 
-## Parameters
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Ender Dragon (minecraft:ender_dragon)
+> 
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| cooldown_time| 10| Decimal| Time (in seconds), after roar, to breath flame. |
-| flame_time| 0.5| Decimal| Time (in seconds), after roar, to breath flame. |
-| ground_flame_count| 4| Integer| Number of ground flame-breath attacks to use before flight-takeoff. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| roar_time| 2| Decimal| Time (in seconds) to roar, before breathing flame. |
+## Dragonflaming Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| cooldown_time | 10 | Decimal number | Time (in seconds), after roar, to breath flame. |  | 
+| flame_time | 0.5 | Decimal number | Time (in seconds), after roar, to breath flame. |  | 
+| ground_flame_count | 4 | Integer number | Number of ground flame-breath attacks to use before flight-takeoff. |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `1` | 
+| roar_time | 2 | Decimal number | Time (in seconds) to roar, before breathing flame. |  | 
 
-```json
-"minecraft:behavior.dragonflaming": {
-    "cooldown_time": 10,
-    "flame_time": 0.5,
-    "ground_flame_count": 4,
-    "roar_time": 2
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
 
-### ender_dragon
 
 ```json
 "minecraft:behavior.dragonflaming": {
-    "priority": 1
+  "priority": 1
 }
 ```
-
-## Vanilla entities using `dragonflaming`
-
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)

@@ -1,41 +1,34 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:bribeable
-description: "A reference document detailing the 'bribeable' entity component"
+title: "Entity Documentation - minecraft:bribeable"
+description: "Describes the minecraft:bribeable entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:bribeable
 
-`minecraft:bribeable` compels an entity to establish a way to get into the `bribed` state.
+Defines the way an entity can get into the 'bribed' state.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|bribe_cooldown| 2.0| Decimal| Time in seconds before the entity can be bribed again. |
-|bribe_items|*not set* | List|  The list of items that can be used to bribe the entity. |
+## Bribeable Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| bribe_cooldown | 2 | Decimal number | Time in seconds before the Entity can be bribed again. |  | 
+| bribe_items | *not set* | Array of strings | The list of items that can be used to bribe the entity. | Dolphin: `["fish","salmon"]` | 
 
-```json
-"minecraft:bribeable":{
-    "bribe_cooldown": 2.0,
-    "bribe_items": "stick"
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
 
-### dolphin
 
 ```json
 "minecraft:bribeable": {
-    "bribe_items": [ "fish", "salmon" ]
+  "bribe_items": [
+    "fish",
+    "salmon"
+  ]
 }
 ```
-
-## Vanilla entities using `minecraft:bribeable`
-
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)

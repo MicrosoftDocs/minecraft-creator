@@ -1,34 +1,22 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:input_ground_controlled
-description: "A reference document detailing the 'input_ground_controlled' entity component"
+title: "Entity Documentation - minecraft:input_ground_controlled"
+description: "Describes the minecraft:input_ground_controlled entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:input_ground_controlled
+# Entity Documentation - minecraft:input_ground_controlled
 
-`minecraft:input_ground_controlled` allows a ridable entity the ability to be controlled using keyboard controls when ridden by a player.
+When configured as a rideable entity, the entity will be controlled using WASD controls. Beginning with 1.19.50 the default auto step height for rideable entities is half a block. Consider adding the "minecraft:variable_max_auto_step" component to increase it.
 
-## Example
 
-```json
-"minecraft:input_ground_controlled":{
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
 
-### donkey
 
 ```json
-"minecraft:input_ground_controlled": {
-}
+"minecraft:input_ground_controlled": {}
 ```
-
-## Vanilla entities using `minecraft:input_ground_controlled`
-
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)

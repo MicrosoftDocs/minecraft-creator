@@ -1,80 +1,212 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:food
-description: "A reference document detailing the 'food' item component"
+title: "Items Documentation - minecraft:food"
+description: "Describes the minecraft:food item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:food
+# Items Documentation - minecraft:food
 
-`minecraft:food` sets the item as a food component, allowing it to be edible to the player.
+Sets the item as a food component, allowing it to be edible to the player.
 
->[!IMPORTANT]
-> The `minecraft:food` must have the `minecraft:use_modifiers` component in order to function properly.
+> [!Note]
+> Requires the following component in order to work properly:
+> 
+> * [Use Modifier (minecraft:use_modifier)](../EntityComponents/minecraftComponent_use_modifier.md)
+> 
 
-## Parameters
+## Food Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|can_always_eat |false |Boolean | If `true` you can always eat this item (even when not hungry). |
-|nutrition |0 |Integer |The value that is added to the actor's nutrition when the item is used. |
-|saturation_modifier|0.6 | Float| Saturation Modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff.|
-|using_converts_to| Not used by default. | JSON object| When used, converts to the item specified by the string in this field. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| can_always_eat | *not set* | Boolean true/false | If true you can always eat this item (even when not hungry). Default is set to false. | AppleEnchanted: `true` | 
+| cooldown_time | *not set* | Decimal number |  |  | 
+| cooldown_type | *not set* | String |  |  | 
+| effects | *not set* | Array of [Effects](#effects-item-type) items |  | AppleEnchanted: `[{"name":"regeneration","chance":1,"duration":30,"amplifier":1},{"name":"absorption","chance":1,"duration":120,"amplifier":3},{"name":"resistance","chance":1,"duration":300,"amplifier":0},{"name":"fire_resistance","chance":1,"duration":300,"amplifier":0}]`, Chicken: `[{"name":"hunger","chance":0.3,"duration":30,"amplifier":0}]` | 
+| is_meat | *not set* | String |  |  | 
+| nutrition | *not set* | Integer number | Value that is added to the entity's nutrition when the item is used. Default is set to 0. | Apple: `4`, Baked Potato: `5`, Beef: `3` | 
+| on_use_action | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  |  | 
+| on_use_range | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  |  | 
+| remove_effects | *not set* | Array of strings |  |  | 
+| saturation_modifier | *not set* | Decimal number | saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6. | Apple: `0.3`, AppleEnchanted: `"supernatural"`, Baked Potato: `"normal"` | 
+| using_converts_to | *not set* | Object | When used, converts to the item specified by the string in this field. Default does not convert item. | Beetroot Soup: `"bowl"`, Honey Bottle: `"glass_bottle"` | 
 
-See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
+## Effects item type
 
-## Example
+#### Effects Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| amplifier | *not set* | Decimal number |  | AppleEnchanted: `1` | 
+| chance | *not set* | Decimal number |  | AppleEnchanted: `1` | 
+| duration | *not set* | Decimal number |  | AppleEnchanted: `30` | 
+| name | *not set* | String |  | AppleEnchanted: `"regeneration"` | 
+
+## Samples
+
 
 ```json
-"minecraft:food":{
-    "can_always_eat": false,
-    "nutrition" : 3,
-    "saturation_modifier": 0.6,
-    "using_converts_to": "bowl"
+"minecraft:food": {
+  "can_always_eat": false,
+  "nutrition": 3,
+  "saturation_modifier": 0.6,
+  "using_converts_to": "bowl"
 }
 ```
 
-## Vanilla examples
+#### [Apple](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/apple.json)
 
-## Vanilla items using `minecraft:food`
 
-- [apple](../../../../Source/VanillaBehaviorPack_Snippets/items/apple.md)
-- [appleEnchanted](../../../../Source/VanillaBehaviorPack_Snippets/items/appleEnchanted.md)
-- [baked_potato](../../../../Source/VanillaBehaviorPack_Snippets/items/baked_potato.md)
-- [beef](../../../../Source/VanillaBehaviorPack_Snippets/items/beef.md)
-- [beetroot_soup](../../../../Source/VanillaBehaviorPack_Snippets/items/beetroot_soup.md)
-- [beetroot](../../../../Source/VanillaBehaviorPack_Snippets/items/beetroot.md)
-- [bread](../../../../Source/VanillaBehaviorPack_Snippets/items/bread.md)
-- [carrot](../../../../Source/VanillaBehaviorPack_Snippets/items/carrot.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/items/chicken.md)
-- [chorus_fruit](../../../../Source/VanillaBehaviorPack_Snippets/items/chorus_fruit.md)
-- [clownfish](../../../../Source/VanillaBehaviorPack_Snippets/items/clownfish.md)
-- [cooked_beef](../../../../Source/VanillaBehaviorPack_Snippets/items/cooked_beef.md)
-- [cooked_chicken](../../../../Source/VanillaBehaviorPack_Snippets/items/cooked_chicken.md)
-- [cooked_fish](../../../../Source/VanillaBehaviorPack_Snippets/items/cooked_fish.md)
-- [cooked_porkchop](../../../../Source/VanillaBehaviorPack_Snippets/items/cooked_porkchop.md)
-- [cooked_rabbit](../../../../Source/VanillaBehaviorPack_Snippets/items/cooked_rabbit.md)
-- [cooked_salmon](../../../../Source/VanillaBehaviorPack_Snippets/items/cooked_salmon.md)
-- [cookie](../../../../Source/VanillaBehaviorPack_Snippets/items/cookie.md)
-- [dried_kelp](../../../../Source/VanillaBehaviorPack_Snippets/items/dried_kelp.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/items/fish.md)
-- [golden_apple](../../../../Source/VanillaBehaviorPack_Snippets/items/golden_apple.md)
-- [golden_carrot](../../../../Source/VanillaBehaviorPack_Snippets/items/golden_carrot.md)
-- [honey_bottle](../../../../Source/VanillaBehaviorPack_Snippets/items/honey_bottle.md)
-- [melon](../../../../Source/VanillaBehaviorPack_Snippets/items/melon.md)
-- [mushroom_stew](../../../../Source/VanillaBehaviorPack_Snippets/items/mushroom_stew.md)
-- [muttonCooked](../../../../Source/VanillaBehaviorPack_Snippets/items/muttonCooked.md)
-- [muttonRaw](../../../../Source/VanillaBehaviorPack_Snippets/items/muttonRaw.md)
-- [poisonous_potato](../../../../Source/VanillaBehaviorPack_Snippets/items/poisonous_potato.md)
-- [porkchop](../../../../Source/VanillaBehaviorPack_Snippets/items/porkchop.md)
-- [potato](../../../../Source/VanillaBehaviorPack_Snippets/items/potato.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/items/pufferfish.md)
-- [pumpkin_pie](../../../../Source/VanillaBehaviorPack_Snippets/items/pumpkin_pie.md)
-- [rabbit_stew](../../../../Source/VanillaBehaviorPack_Snippets/items/rabbit_stew.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/items/rabbit.md)
-- [rotten_flesh](../../../../Source/VanillaBehaviorPack_Snippets/items/rotten_flesh.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/items/salmon.md)
-- [spider_eye](../../../../Source/VanillaBehaviorPack_Snippets/items/spider_eye.md)
-- [suspicious_stew](../../../../Source/VanillaBehaviorPack_Snippets/items/suspicious_stew.md)
-- [sweet_berries](../../../../Source/VanillaBehaviorPack_Snippets/items/sweet_berries.md)
+```json
+"minecraft:food": {
+  "nutrition": 4,
+  "saturation_modifier": 0.3
+}
+```
+
+#### [AppleEnchanted](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/appleEnchanted.json)
+
+
+```json
+"minecraft:food": {
+  "nutrition": 4,
+  "saturation_modifier": "supernatural",
+  "can_always_eat": true,
+  "effects": [
+    {
+      "name": "regeneration",
+      "chance": 1,
+      "duration": 30,
+      "amplifier": 1
+    },
+    {
+      "name": "absorption",
+      "chance": 1,
+      "duration": 120,
+      "amplifier": 3
+    },
+    {
+      "name": "resistance",
+      "chance": 1,
+      "duration": 300,
+      "amplifier": 0
+    },
+    {
+      "name": "fire_resistance",
+      "chance": 1,
+      "duration": 300,
+      "amplifier": 0
+    }
+  ]
+}
+```
+
+#### [Baked Potato](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/baked_potato.json)
+
+
+```json
+"minecraft:food": {
+  "nutrition": 5,
+  "saturation_modifier": "normal"
+}
+```
+
+#### [Beef](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/beef.json)
+
+
+```json
+"minecraft:food": {
+  "nutrition": 3,
+  "saturation_modifier": "low"
+}
+```
+
+#### [Beetroot Soup](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/beetroot_soup.json)
+
+
+```json
+"minecraft:food": {
+  "nutrition": 6,
+  "saturation_modifier": "normal",
+  "using_converts_to": "bowl"
+}
+```
+
+#### [Beetroot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/beetroot.json)
+
+
+```json
+"minecraft:food": {
+  "nutrition": 1,
+  "saturation_modifier": "normal"
+}
+```
+
+#### [Carrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/carrot.json)
+
+
+```json
+"minecraft:food": {
+  "nutrition": 3,
+  "saturation_modifier": "normal"
+}
+```
+
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/chicken.json)
+
+
+```json
+"minecraft:food": {
+  "nutrition": 2,
+  "saturation_modifier": "low",
+  "effects": [
+    {
+      "name": "hunger",
+      "chance": 0.3,
+      "duration": 30,
+      "amplifier": 0
+    }
+  ]
+}
+```
+
+#### [Chorus Fruit](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/chorus_fruit.json)
+
+
+```json
+"minecraft:food": {
+  "nutrition": 4,
+  "saturation_modifier": "low",
+  "on_use_action": "chorus_teleport",
+  "on_use_range": [
+    8,
+    8,
+    8
+  ],
+  "cooldown_type": "chorusfruit",
+  "cooldown_time": 20,
+  "can_always_eat": true
+}
+```
+
+#### [Clownfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/clownfish.json)
+
+
+```json
+"minecraft:food": {
+  "nutrition": 1,
+  "saturation_modifier": "poor"
+}
+```
+
+#### [Cooked Beef](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/cooked_beef.json)
+
+
+```json
+"minecraft:food": {
+  "nutrition": 8,
+  "saturation_modifier": "good"
+}
+```

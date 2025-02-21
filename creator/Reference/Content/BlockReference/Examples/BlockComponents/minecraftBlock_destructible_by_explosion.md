@@ -1,35 +1,61 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:destructible_by_explosion
-description: "A reference document detailing the 'destructible_by_explosion' block component"
+title: "Block Components Documentation - minecraft:destructible_by_explosion"
+description: "Describes the minecraft:destructible_by_explosion block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:destructible_by_explosion
+# Block Components Documentation - minecraft:destructible_by_explosion
 
-`minecraft:destructible_by_explosion` is a `Boolean` or `JSON Object` component that describes the destructible by explosion properties for this block. If set to `true`, the block will have the default explosion resistance. If set to `false`, this block is indestructible by explosion. If the component is omitted, the block will have the default explosion resistance.
+Describes the destructible by explosion properties for this block. If set to true, the block will have the default explosion resistance. If set to false, this block is indestructible by explosion. If the component is omitted, the block will have the default explosion resistance.
 
-## Default Value of the Component
+## Alternate Simple Representations
 
-This component can be specified as a `Boolean`. If this component is omitted, the default value for this component is `true`, which will give your block the default values for its parameters (ZERO explosion resistance so your block will be destroyed right away when near an explosion).
+This item can also be represented as a `Boolean true/false`.
 
-## Parameters
 
-|Name |Default Value |Type |Description|
-|:----|:----|:----|:----|
-|explosion_resistance|0.0| Decimal|Describes how resistant the block is to explosion. Greater values mean the block is less likely to break when near an explosion (or has higher resistance to explosions). The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance.|
+## Destructible By Explosion Properties
 
-## Example (Boolean)
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| explosion_resistance | 0 | Decimal number | Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance. | Block Orange Ore: `30`, Apple Block: `2.9`, Block Frond Top: `15` | 
 
-```json
-"minecraft:destructible_by_explosion": true
-```
+## Samples
 
-## Example (JSON Object)
+#### [Block Orange Ore](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json)
+
 
 ```json
 "minecraft:destructible_by_explosion": {
-    "explosion_resistance": 50
+  "explosion_resistance": 30
+}
+```
+
+#### [Apple Block](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json)
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 2.9
+}
+```
+
+#### [Block Frond Top](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json)
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 15
+}
+```
+
+#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json)
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 1.3
 }
 ```

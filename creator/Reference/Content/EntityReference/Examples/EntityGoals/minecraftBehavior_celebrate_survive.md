@@ -1,75 +1,42 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.celebrate_survive
-description: "A reference document detailing the 'behavior.celebrate_survive' entity goal"
+title: "Entity Documentation - minecraft:behavior.celebrate_survive"
+description: "Describes the minecraft:behavior.celebrate_survive ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.celebrate_survive
 
-`minecraft:behavior.celebrate_survive` compels this entity to celebrate surviving a raid by shooting fireworks.
+Allows this entity to celebrate surviving a raid by shooting fireworks.
 
-## Parameters
 
-| Name| Default Value | Type | Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| celebration_sound| | String | The sound event to trigger during the celebration. |
-| duration| 30.000000 | Decimal | The duration in seconds that the celebration lasts for. |
-| jump_interval| [1, 3.5] | Range [a, b]| Minimum and maximum time between jumping (positive, in seconds). |
-| on_celebration_end_event| | Trigger | The event to trigger when the goal's duration expires. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| sound_interval| [2, 7] | Range [a, b] | Minimum and maximum time between sound events (positive, in seconds). |
+## Celebrate Survive Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| duration | 30 | Decimal number | The duration in seconds that the celebration lasts for. | Villager V2: `30` | 
+| fireworks_interval | *not set* | Range of integers | Minimum and maximum time between firework (positive, in seconds). | Villager V2: `{"range_min":2,"range_max":7}` | 
+| on_celebration_end_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to trigger when the goal's duration expires. | Villager V2: `{"event":"minecraft:stop_celebrating","target":"self"}` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `5` | 
 
-```json
- "minecraft:celebrate_survive": {
-    "minecraft:behavior.celebrate_survive": {
-        "priority": 5,
-        "celebration_sound": "celebrate_survive",
-        "sound_interval": {
-            "range_min": 2.0,
-            "range_max": 7.0
-        },
-        "jump_interval": {
-            "range_min": 1.0,
-            "range_max": 3.5
-        },
-        "duration": 30.0,
-        "on_celebration_end_event": {
-            "event": "minecraft:stop_celebrating",
-            "target": "self"
-        }
-    }
- }
-```
+## Samples
 
-## Vanilla entities examples
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
-### villager
 
 ```json
 "minecraft:behavior.celebrate_survive": {
-    "priority": 5,
-    "celebration_sound": "celebrate_survive",
-    "sound_interval": {
-        "range_min": 2.0,
-        "range_max": 7.0
-    },
-    "jump_interval": {
-        "range_min": 1.0,
-        "range_max": 3.5
-    },
-    "duration": 30.0,
-    "on_celebration_end_event": {
-        "event": "minecraft:stop_celebrating",
-        "target": "self"
-    }
+  "priority": 5,
+  "fireworks_interval": {
+    "range_min": 2,
+    "range_max": 7
+  },
+  "duration": 30,
+  "on_celebration_end_event": {
+    "event": "minecraft:stop_celebrating",
+    "target": "self"
+  }
 }
 ```
-
-## Vanilla entities using `celebrate_survive`
-
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)

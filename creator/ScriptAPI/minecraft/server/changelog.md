@@ -89,8 +89,6 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`unsubscribe`](ButtonPushAfterEventSignal.md#unsubscribe)*
 #### Changed *[`Camera`](Camera.md)*
 - Added property *[`isValid`](Camera.md#isvalid)*
-- Changed function *[`setCamera`](Camera.md#setcamera)*
-  - Changed argument `setOptions` type from [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md) to [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md)
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
@@ -179,11 +177,14 @@ description: Changelog of the `@minecraft/server` module
 #### Removed *MinecraftDimensionTypes*
 #### Changed *[`Player`](Player.md)*
 - Added property *[`graphicsMode`](Player.md#graphicsmode)*
+- Added function *[`clearPropertyOverridesForEntity`](Player.md#clearpropertyoverridesforentity)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getAimAssist`](Player.md#getaimassist)*
 - Added function *[`isOp`](Player.md#isop)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
+- Added function *[`removePropertyOverrideForEntity`](Player.md#removepropertyoverrideforentity)*
 - Added function *[`setOp`](Player.md#setop)*
+- Added function *[`setPropertyOverrideForEntity`](Player.md#setpropertyoverrideforentity)*
 - Added function *[`spawnParticle`](Player.md#spawnparticle)*
 #### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
 #### Added *[`PlayerButtonInputAfterEvent`](PlayerButtonInputAfterEvent.md)*

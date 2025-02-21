@@ -1,42 +1,35 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.dragonholdingpattern
-description: "A reference document detailing the 'dragonholdingpattern' entity goal"
+title: "Entity Documentation - minecraft:behavior.dragonholdingpattern"
+description: "Describes the minecraft:behavior.dragonholdingpattern ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.dragonholdingpattern
 
-`minecraft:behavior.dragonholdingpattern` allows an entity to fly around in a circle around the center podium located in `The End`.
+Allows the Dragon to fly around in a circle around the center podium.
 
-> [!NOTE]
-> This behavior can only be used by the `ender_dragon` entity type.
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Ender Dragon (minecraft:ender_dragon)
+> 
 
-## Parameters
+## Dragonholdingpattern Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*| Integer |The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `3` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.dragonholdingpattern":{
-    "priority": 3
-}
-```
+#### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
 
-## Vanilla entities example
-
-### ender_dragon
 
 ```json
 "minecraft:behavior.dragonholdingpattern": {
-     "priority": 3
+  "priority": 3
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.dragonholdingpattern`
-
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)

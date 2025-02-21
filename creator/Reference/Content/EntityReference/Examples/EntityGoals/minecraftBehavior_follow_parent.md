@@ -1,65 +1,147 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.follow_parent
-description: "A reference document detailing the 'behavior.follow_parent' entity goal"
+title: "Entity Documentation - minecraft:behavior.follow_parent"
+description: "Describes the minecraft:behavior.follow_parent ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.follow_parent
 
-`minecraft:behavior.follow_parent` compels an entity that has been tagged as a baby to follow their parent around.
+Allows the mob to follow their parent around.
 
->[!IMPORTANT]
-> `minecraft:behavior.follow_parent` requires the `minecraft:is_baby` component in order to have an adult mob tagged as a parent for the entity.
+> [!Note]
+> Requires the following component in order to work properly:
+> 
+> * [Is Baby (minecraft:is_baby)](../EntityComponents/minecraftComponent_is_baby.md)
+> Requires the `minecraft:is_baby` component in order to have an adult mob tagged as a parent for the entity.
 
-## Parameters
+## Follow Parent Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Armadillo: `5`, Bee: `11`, Dolphin: `4` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Armadillo: `1.25`, Axolotl: `1.1`, Camel: `2.5` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.follow_parent":{
-    "priority": 2,
-    "speed_multiplier":1.10
-}
-```
+#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
 
-## Vanilla entities examples
-
-### horse
 
 ```json
 "minecraft:behavior.follow_parent": {
-          "priority": 4,
-          "speed_multiplier": 1.0
-        }
+  "priority": 5,
+  "speed_multiplier": 1.25
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.follow_parent`
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 5,
+  "speed_multiplier": 1.1
+}
+```
+
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 11,
+  "speed_multiplier": 1.1
+}
+```
+
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 5,
+  "speed_multiplier": 2.5
+}
+```
+
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 4,
+  "speed_multiplier": 1.1
+}
+```
+
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 4,
+  "speed_multiplier": 1
+}
+```
+
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 9,
+  "speed_multiplier": 1.1
+}
+```
+
+#### [Goat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/goat.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 6,
+  "speed_multiplier": 1
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 5,
+  "speed_multiplier": 1
+}
+```
+
+#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 13,
+  "speed_multiplier": 1.1
+}
+```
+
+#### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 6,
+  "speed_multiplier": 1.1
+}
+```
+
+#### [Polar Bear](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/polar_bear.json)
+
+
+```json
+"minecraft:behavior.follow_parent": {
+  "priority": 4,
+  "speed_multiplier": 1.25
+}
+```

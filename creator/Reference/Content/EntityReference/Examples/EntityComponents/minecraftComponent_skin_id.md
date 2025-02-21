@@ -1,46 +1,74 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:skin_id
-description: "A reference document detailing the 'skin_id' entity component"
+title: "Entity Documentation - minecraft:skin_id"
+description: "Describes the minecraft:skin_id entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:skin_id
+# Entity Documentation - minecraft:skin_id
 
-`minecraft:skin_id` sets the entity's Skin ID value. Can be used to differentiate skins, such as base skins for villagers.
+Skin ID value. Can be used to differentiate skins, such as base skins for villagers.
 
-> [!IMPORTANT]
-> `minecraft:skin_id` requires multiple texture sets to be set up for the entity.
+> [!Note]
+> Requires multiple texture sets to be set up for the entity.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 0| Integer|The ID of the skin. By convention, 0 is the ID of the base skin.|
+## Skin Id Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 0 | Integer number | The ID of the skin. By convention, 0 is the ID of the base skin. | Villager V2: `1`, `2`, `3`, `4`, `5` | 
 
-```json
-"minecraft:skin_id":{
-    "value": 0,
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
-### villager_v2
-
-> [!NOTE]
-> In the `villager_v2` example, a component group has been set up for each variant for the villager entity. Here the `skin_id` is being set for the first texture
+At /minecraft:entity/component_groups/villager_skin_0/minecraft:skin_id/: 
 
 ```json
 "minecraft:skin_id": {
-          "value": 1
-        }
+  "value": 0
+}
 ```
 
-## Vanilla entities using `minecraft:skin_id`
+At /minecraft:entity/component_groups/villager_skin_1/minecraft:skin_id/: 
 
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
+```json
+"minecraft:skin_id": {
+  "value": 1
+}
+```
+
+At /minecraft:entity/component_groups/villager_skin_2/minecraft:skin_id/: 
+
+```json
+"minecraft:skin_id": {
+  "value": 2
+}
+```
+
+At /minecraft:entity/component_groups/villager_skin_3/minecraft:skin_id/: 
+
+```json
+"minecraft:skin_id": {
+  "value": 3
+}
+```
+
+At /minecraft:entity/component_groups/villager_skin_4/minecraft:skin_id/: 
+
+```json
+"minecraft:skin_id": {
+  "value": 4
+}
+```
+
+At /minecraft:entity/component_groups/villager_skin_5/minecraft:skin_id/: 
+
+```json
+"minecraft:skin_id": {
+  "value": 5
+}
+```

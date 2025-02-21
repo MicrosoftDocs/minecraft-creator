@@ -1,50 +1,42 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.skeleton_horse_trap
-description: "A reference document detailing the 'behavior.skeleton_horse_trap' entity goal"
+title: "Entity Documentation - behavior.skeleton_horse_trap"
+description: "Describes the behavior.skeleton_horse_trap AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.skeleton_horse_trap
+# Entity Documentation - behavior.skeleton_horse_trap
 
-`minecraft:behavior.skeleton_horse_trap` allows an entity to function as a skeleton horse trap and be triggered, spawning a lightning bolt, additional skeleton horses, and skeleton horse riders, when a player approaches to within a set radius.
+Allows Equine mobs to be Horse Traps and be triggered like them, spawning a lightning bolt and a bunch of horses when a player is nearby. Can only be used by Horses, Mules, Donkeys and Skeleton Horses.
 
-> [!NOTE]
-> This behavior can only be used by the `horse`, `mule`, `donkey` and `skeleton horses` entity type.
+> ![Note]
+> Can only be used on the following types of entity:
+> 
+> * Horse (minecraft:horse)
+> * Mule (minecraft:mule)
+> * Donkey (minecraft:donkey)
+> * Skeleton Horse (minecraft:skeleton_horse)
+> 
 
-## Parameters
+## Skeleton Horse Trap Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|duration| 1.0| Decimal| Amount of time in seconds the trap exists. After this amount of time is elapsed, the trap is removed from the world if it hasn't been activated. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|within_radius| 0.0| Decimal| Distance in blocks that the player has to be within to trigger the horse trap. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| duration | 1 | Decimal number | Amount of time in seconds the trap exists. After this amount of time is elapsed, the trap is removed from the world if it hasn't been activated | Skeleton Horse: `900` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Skeleton Horse: `2` | 
+| within_radius | 0 | Decimal number | Distance in blocks that the player has to be within to trigger the horse trap | Skeleton Horse: `10` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.skeleton_horse_trap":{
-    "priority": 2,
-    "duration": 1.0,
-    "within_radius": 12.0
-}
-```
+#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
 
-## Vanilla entities examples
-
-### skeleton_horse
 
 ```json
-"minecraft:skeleton_trap": {
-    "minecraft:behavior.skeleton_horse_trap": {
-      "within_radius": 10.0,
-      "duration": 900.0,
-      "priority": 2
-    }
+{
+  "within_radius": 10,
+  "duration": 900,
+  "priority": 2
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.skeleton_horse_trap`
-
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)

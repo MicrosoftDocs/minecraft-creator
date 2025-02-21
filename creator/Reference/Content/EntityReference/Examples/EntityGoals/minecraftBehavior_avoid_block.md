@@ -1,32 +1,37 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.avoid_block
-description: "A reference document detailing the 'behavior.avoid_block' entity goal"
+title: "Entity Documentation - minecraft:behavior.avoid_block"
+description: "Describes the minecraft:behavior.avoid_block ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.avoid_block
 
-`minecraft:behavior.avoid_block` compels an entity to avoid certain blocks.
+Allows this entity to avoid certain blocks.
 
-## Parameters
 
-| Name| Default Value| Type | Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| avoid_block_sound| | String | The sound event to play when the mob is avoiding a block. |
-| on_escape| | Trigger| Escape trigger. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| search_height| 0 | Integer | Maximum distance to look for a block in y. |
-| search_range| 0 | Integer | Maximum distance to look for a block in xz. |
-| sound_interval| [3.0, 8.0] | Range [a, b] | The range of time in seconds to randomly wait before playing the sound again. |
-| sprint_speed_modifier| 1.0 | Decimal | Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster. |
-| target_blocks| | List | List of block types this mob avoids. |
-| target_selection_method| nearest | String| Block search method. |
-| tick_interval| 1 | Integer | Should start tick interval. |
-| walk_speed_modifier| 1.0 | Decimal| Modifier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster. |
+## Avoid Block Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| avoid_block_sound | *not set* | String | The sound event to play when the mob is avoiding a block. | Hoglin: `"retreat"` | 
+| on_escape | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Escape trigger. | Hoglin: `[{"event":"escaped_event","target":"self"}]` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Hoglin: `1`, Piglin: `9` | 
+| search_height | 0 | Integer number | Maximum distance to look for a block in y. | Hoglin: `4` | 
+| search_range | 0 | Integer number | Maximum distance to look for a block in xz. | Hoglin: `8` | 
+| sound_interval | *not set* | Range of integers | The range of time in seconds to randomly wait before playing the sound again. | Hoglin: `{"range_min":2,"range_max":5}` | 
+| sprint_speed_modifier | 1 | Decimal number | Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster. | Hoglin: `1`, Piglin: `1.1` | 
+| target_blocks | *not set* | Array of strings | List of block types this mob avoids. | Hoglin: `["minecraft:warped_fungus","minecraft:portal","minecraft:respawn_anchor"]`, Piglin: `["minecraft:soul_fire","minecraft:soul_lantern","minecraft:soul_torch","minecraft:item.soul_campfire"]` | 
+| target_selection_method | nearest | String | Block search method. | Hoglin: `"nearest"` | 
+| tick_interval | 1 | Integer number | Should start tick interval. | Hoglin: `5` | 
+| walk_speed_modifier | 1 | Decimal number | Modifier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster. | Hoglin: `1` | 
+
+## Samples
+
+#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
+
 
 ```json
 "minecraft:behavior.avoid_block": {
@@ -38,8 +43,8 @@ ms.service: minecraft-bedrock-edition
   "sprint_speed_modifier": 1,
   "avoid_block_sound": "retreat",
   "sound_interval": {
-    "range_min": 2.0,
-    "range_max": 5.0
+    "range_min": 2,
+    "range_max": 5
   },
   "target_selection_method": "nearest",
   "target_blocks": [
@@ -56,9 +61,8 @@ ms.service: minecraft-bedrock-edition
 }
 ```
 
-## Vanilla entities examples
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
 
-### piglin
 
 ```json
 "minecraft:behavior.avoid_block": {
@@ -76,13 +80,8 @@ ms.service: minecraft-bedrock-edition
   ],
   "avoid_block_sound": "retreat",
   "sound_interval": {
-    "range_min": 2.0,
-    "range_max": 5.0
+    "range_min": 2,
+    "range_max": 5
   }
 }
 ```
-
-## Vanilla entities using `avoid_blocks`
-
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)

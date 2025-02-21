@@ -29,5 +29,6 @@ Registers an item custom component that can be used in item JSON configuration.
   The collection of event functions that will be called when the event occurs on an item using this custom component id.
   
 Notes:
+- This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*ItemCustomComponentAlreadyRegisteredError*](ItemCustomComponentAlreadyRegisteredError.md), [*ItemCustomComponentReloadNewComponentError*](ItemCustomComponentReloadNewComponentError.md), [*ItemCustomComponentReloadNewEventError*](ItemCustomComponentReloadNewEventError.md), [*ItemCustomComponentReloadVersionError*](ItemCustomComponentReloadVersionError.md), [*NamespaceNameError*](NamespaceNameError.md)

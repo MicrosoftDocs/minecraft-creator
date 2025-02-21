@@ -17,20 +17,32 @@ Contains a set of events that are available across the scope of the ExtensionCon
 
 Type: [*ClipboardChangeAfterEventSignal*](ClipboardChangeAfterEventSignal.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **currentThemeChange**
 `read-only currentThemeChange: CurrentThemeChangeAfterEventSignal;`
 
 Type: [*CurrentThemeChangeAfterEventSignal*](CurrentThemeChangeAfterEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
 
 ### **currentThemeColorChange**
 `read-only currentThemeColorChange: CurrentThemeColorChangeAfterEventSignal;`
 
 Type: [*CurrentThemeColorChangeAfterEventSignal*](CurrentThemeColorChangeAfterEventSignal.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **cursorPropertyChange**
 `read-only cursorPropertyChange: CursorPropertyChangeAfterEventSignal;`
 
 Type: [*CursorPropertyChangeAfterEventSignal*](CursorPropertyChangeAfterEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
 
 ### **modeChange**
 `read-only modeChange: ModeChangeAfterEventSignal;`
@@ -39,7 +51,13 @@ This event triggers when the editor mode changes for the player.
 
 Type: [*ModeChangeAfterEventSignal*](ModeChangeAfterEventSignal.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **primarySelectionChange**
 `read-only primarySelectionChange: PrimarySelectionChangeAfterEventSignal;`
 
 Type: [*PrimarySelectionChangeAfterEventSignal*](PrimarySelectionChangeAfterEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
