@@ -1,61 +1,56 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.sleep
-description: "A reference document detailing the 'behavior.sleep' entity goal"
+title: "Entity Documentation - minecraft:behavior.sleep"
+description: "Describes the minecraft:behavior.sleep ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.sleep
 
-`minecraft:behavior.sleep` allows an entity to sleep in a bed.
+Allows mobs that own a bed to in a village to move to and sleep in it.
 
-> [!NOTE]
-> This behavior can only be used by the `villager` entity type.
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Villager (minecraft:villager)
+> 
 
-## Parameters
+## Sleep Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| can_sleep_while_riding| false| Boolean|  If true, the mob will be able to use the sleep goal if riding something. |
-| cooldown_time| 0.0| Decimal| Time in seconds the mob has to wait before using the goal again. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| sleep_collider_height| 1.0| Decimal|  The height of the mob's collider while sleeping. |
-| sleep_collider_width| 1.0| Decimal|  The width of the mob's collider while sleeping. |
-| sleep_y_offset| 1.0| Decimal|  The y offset of the mob's collider while sleeping. |
-| speed_multiplier| 1.0| Decimal|  Movement speed multiplier of the mob when using this AI Goal. |
-| timeout_cooldown| 8.0| Decimal| The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| can_sleep_while_riding | false | Boolean true/false | If true, the mob will be able to use the sleep goal if riding something |  | 
+| cooldown_time | 0 | Decimal number | Time in seconds the mob has to wait before using the goal again |  | 
+| goal_radius | *not set* | Decimal number |  | Villager V2: `1.5` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `3` | 
+| sleep_collider_height | 1 | Decimal number | The height of the mob's collider while sleeping | Villager V2: `0.3` | 
+| sleep_collider_width | 1 | Decimal number | The width of the mob's collider while sleeping | Villager V2: `1` | 
+| sleep_y_offset | 1 | Decimal number | The y offset of the mob's collider while sleeping | Villager V2: `0.6` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Villager V2: `0.6` | 
+| timeout_cooldown | 8 | Decimal number | The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition | Villager V2: `10` | 
 
-## Example
+## Samples
+
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+
+At /minecraft:entity/component_groups/job_specific_goals/minecraft:behavior.sleep/: 
 
 ```json
-"minecraft:behavior.sleep":{
-    "priority": 2,
-    "cooldown_time": 0.0,
-    "sleep_collider_height": 1.0,
-    "sleep_collider_width": 1.0,
-    "sleep_y_offset": 1.0,
-    "speed_multiplier": 1.0,
-    "timer_cooldown": 8.0
-}
+"minecraft:behavior.sleep": {}
 ```
 
-## Vanilla entities examples
-
-### villager_v2
+At /minecraft:entity/component_groups/bed_schedule_villager/minecraft:behavior.sleep/: 
 
 ```json
 "minecraft:behavior.sleep": {
-    "priority": 3,
-    "goal_radius": 1.5,
-    "speed_multiplier": 0.6,
-    "sleep_collider_height": 0.3,
-    "sleep_collider_width": 1.0,
-    "sleep_y_offset": 0.6,
-    "timeout_cooldown": 10.0
+  "priority": 3,
+  "goal_radius": 1.5,
+  "speed_multiplier": 0.6,
+  "sleep_collider_height": 0.3,
+  "sleep_collider_width": 1,
+  "sleep_y_offset": 0.6,
+  "timeout_cooldown": 10
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.sleep`
-
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)

@@ -192,12 +192,9 @@ conceptualContent:
       - title: JSON Reference Documentation
         summary: "Need a hand creating your content? View the JSON reference documentation to see how things work in-game."
         links:
-          - url: Reference/Content/addonsreference/index.yml
+          - url: Reference/Content/VanillaListingsReference/index.yml
             itemType: reference
-            text: Addons JSON
-          - url: Reference/Content/animationsreference/index.yml
-            itemType: reference
-            text: Animation JSON
+            text: Vanilla Content Reference
           - url: Reference/Content/blockreference/index.yml
             itemType: reference
             text: Block JSON
@@ -223,10 +220,7 @@ conceptualContent:
           - url: Reference/Content/SchemasReference/index.yml
             itemType: reference
             text: Schemas Documentation
-          - url: Reference/Content/BiomeReference/Examples/BiomeOverview.md
-            itemType: overview
-            text: Biome Overview
-          - url: Reference/Content/FogsReference/Examples/FogsIntroduction.md
+          - url: Reference/Content/FogsReference/fogs.md
             itemType: overview
             text: Introduction to Fogs
 

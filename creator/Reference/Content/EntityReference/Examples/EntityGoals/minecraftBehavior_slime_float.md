@@ -1,45 +1,40 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.slime_float
-description: "A reference document detailing the 'behavior.slime_float' entity goal"
+title: "Entity Documentation - minecraft:behavior.slime_float"
+description: "Describes the minecraft:behavior.slime_float ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.slime_float
 
-`minecraft:behavior.slime_float` allows entities to float in water or lava. Can only be used by `slime` and `magma_cube`.
+Allow slimes to float in water / lava.
 
-## Parameters
+> [!Note]
+> Can only be used on the following types of entity:
+> 
+> * Slime (minecraft:slime)
+> * Magma Cube (minecraft:magma_cube)
+> 
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| jump_chance_percentage| 0.8| Decimal| Percent chance a slime or magma cube has to jump while in water/lava. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| speed_multiplier| 1.2| Decimal| Determines the multiplier the entity's speed is modified by when moving through water/lava. |
+## Slime Float Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| jump_chance_percentage | 0.8 | Decimal number | Percent chance a slime or magma cube has to jump while in water / lava. | Magma Cube: `0.8` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Magma Cube: `1` | 
+| speed_multiplier | 1.2 | Decimal number | Determines the multiplier the entity's speed is modified by when moving through water / lava. | Magma Cube: `1.2` | 
 
-```json
-"minecraft:behavior.slime_float":{
-    "jump_chance_percentage": 0.8,
-    "speed_multiplier": 1.2
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Magma Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/magma_cube.json)
 
-### slime
 
 ```json
 "minecraft:behavior.slime_float": {
-    "priority": 1,
-    "jump_chance_percentage": 0.8,
-    "speed_multiplier": 1.2
+  "priority": 1,
+  "jump_chance_percentage": 0.8,
+  "speed_multiplier": 1.2
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.slime_float`
-
-- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)

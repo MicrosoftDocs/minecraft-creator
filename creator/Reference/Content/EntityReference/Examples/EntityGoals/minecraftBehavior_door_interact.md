@@ -1,36 +1,22 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.door_interact
-description: "A reference document detailing the 'behavior.door_interact' entity goal"
+title: "Entity Documentation - minecraft:behavior.door_interact"
+description: "Describes the minecraft:behavior.door_interact ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.door_interact
 
-`minecraft:behavior.door_interact` allows an entity to interact with doors.
+Allows the mob to open and close doors.
 
-> [!CAUTION]
-> `minecraft:behavior.door_interact` is not currently used by any entities within Minecraft: Bedrock Edition.
+> [!Note]
+> Not currently used by any entities within Minecraft: Bedrock Edition.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Door Interact Behavior Properties
 
-## Example
-
-```json
-"minecraft:behavior.door_interact":{
-    "priority": 2
-}
-```
-
-## Vanilla entities examples
-
-No entities currently use `minecraft:behavior.door_interact`
-
-## Vanilla entities using `minecraft:behavior.door_interact`
-
-No entities currently use `minecraft:behavior.door_interact`.
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 

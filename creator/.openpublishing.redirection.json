@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path": "Reference/Content/AddonsReference/Examples/AddonManifest.md",
+      "redirect_url": "/minecraft/creator/reference/AddonsReference/PackManifest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/AnimationsReference/Examples/AnimationRenderController.md",
+      "redirect_url": "/minecraft/creator/documents/animations/AnimationRenderController",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/AnimationsReference/Examples/AnimationUpgrade.md",
+      "redirect_url": "/minecraft/creator/documents/animations/AnimationUpgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Reference/Content/AnimationsReference/Examples/AnimationGettingStarted.md",
+      "redirect_url": "/minecraft/creator/documents/animations/AnimationGettingStarted",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Reference/Content/MolangReference/Examples/MolangConcepts/ExperimentalQueryFunctions.md",
       "redirect_url": "/minecraft/creator/reference/content/molangreference/examples/molangconcepts/QueryFunctions",
       "redirect_document_id": false
@@ -121,17 +141,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_chargeable.md",
-      "redirect_url": "/minecraft/creator/Reference/Content/ItemReference/Examples/ItemComponentList",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "Reference/Content/BlockReference/Examples/BlockComponentsList.md",
-      "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "Reference/Content/BlockReference/Examples/BlockComponents/minecraftblock_unit_cube.md",
       "redirect_url": "/minecraft/creator/reference/content/blockreference/examples/blockcomponents/blockcomponentslist",
       "redirect_document_id": false
     },
@@ -192,16 +202,6 @@
     },
     {
       "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_on_use_on.md",
-      "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_render_offsets.md",
-      "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "Reference/Content/ItemReference/Examples/ItemComponents/minecraft_weapon.md",
       "redirect_url": "/reference/content/itemreference/examples/itemcomponentlist",
       "redirect_document_id": false
     }

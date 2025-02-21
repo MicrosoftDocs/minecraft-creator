@@ -1,89 +1,155 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:equippable
-description: "A reference document detailing the 'equippable' entity component"
+title: "Entity Documentation - minecraft:equippable"
+description: "Describes the minecraft:equippable entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:equippable
 
-`minecraft:equippable` defines an entity's behavior for having items equipped to it.
+Defines an entity's behavior for having items equipped to it.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| slots| *not set*| List| List of slots and the item that can be equipped.|
+## Equippable Properties
 
-### slots
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| slots | *not set* | Array of [Slots](#slots-item-type) items | List of slots and the item that can be equipped. | Camel: `[{"slot":0,"item":"saddle","accepted_items":["saddle"],"on_equip":{"event":"minecraft:camel_saddled"},"on_unequip":{"event":"minecraft:camel_unsaddled"}}]`, Donkey: `[{"slot":0,"item":"saddle","accepted_items":["saddle"],"on_equip":{"event":"minecraft:donkey_saddled"},"on_unequip":{"event":"minecraft:donkey_unsaddled"}}]` | 
 
-`slots` is a list defined by six parameters. Each item has the following properties:
+## Slots item type
+List of slots and the item that can be equipped.
 
-| Name| Default Value| Type| Description |
-|:-----------|:-----------|:-----------|:-----------|
-| accepted_items| *not set*| List| The list of items that can fill this slot. |
-| interact_text| *not set*| String| Text to be displayed while playing with touch-screen controls when the entity can be equipped with this item. |
-| item| *not set*| String| Identifier of the item that can be equipped for the slot. |
-| on_equip| *not set*| JSON Object | Event to trigger when the entity is equipped with the item. |
-| on_unequip| *not set*| JSON Object | Event to trigger when the item is removed from the entity. |
-| slot| 0| Integer| The slot number of this slot. |
 
-## Example
+#### Slots Properties
 
-```json
-"minecraft:equippable":{
-    "slots": [
-        {        
-            "slot": 0,
-            "item": "saddle",
-            "accepted_items": [ "saddle" ],
-            "on_equip": {
-                "event": "minecraft:horse_saddled"
-            },
-            "on_unequip": {
-                "event": "minecraft:horse_unsaddled"
-            }
-        }
-    ]
-}
-```
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| accepted_items | *not set* | Array of strings | The list of items that can go in this slot. |  | 
+| interact_text | *not set* | String | Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls. |  | 
+| item | *not set* | String | Identifier of the item that can be equipped for this slot. |  | 
+| on_equip | *not set* | String | Event to trigger when this entity is equipped with this item. |  | 
+| on_unequip | *not set* | String | Event to trigger when this item is removed from this entity. |  | 
+| slot | 0 | Integer number | The slot number of this slot. |  | 
 
-## Vanilla entities examples
+## Samples
 
-### horse
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+
 
 ```json
 "minecraft:equippable": {
-        "slots": [
-          {
-            "slot": 0,
-            "item": "saddle",
-            "accepted_items": [ "saddle" ],
-            "on_equip": {
-              "event": "minecraft:horse_saddled"
-            },
-            "on_unequip": {
-              "event": "minecraft:horse_unsaddled"
-            }
-          },
-          {
-            "slot": 1,
-            "item": "horsearmoriron",
-            "accepted_items": [
-              "horsearmorleather",
-              "horsearmoriron",
-              "horsearmorgold",
-              "horsearmordiamond"
-            ]
-          }
-        ]
+  "slots": [
+    {
+      "slot": 0,
+      "item": "saddle",
+      "accepted_items": [
+        "saddle"
+      ],
+      "on_equip": {
+        "event": "minecraft:camel_saddled"
       },
+      "on_unequip": {
+        "event": "minecraft:camel_unsaddled"
+      }
+    }
+  ]
+}
 ```
 
-## Vanilla entities using `minecraft:equippable`
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
 
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
+
+```json
+"minecraft:equippable": {
+  "slots": [
+    {
+      "slot": 0,
+      "item": "saddle",
+      "accepted_items": [
+        "saddle"
+      ],
+      "on_equip": {
+        "event": "minecraft:donkey_saddled"
+      },
+      "on_unequip": {
+        "event": "minecraft:donkey_unsaddled"
+      }
+    }
+  ]
+}
+```
+
+#### [Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/horse.json)
+
+
+```json
+"minecraft:equippable": {
+  "slots": [
+    {
+      "slot": 0,
+      "item": "saddle",
+      "accepted_items": [
+        "saddle"
+      ],
+      "on_equip": {
+        "event": "minecraft:horse_saddled"
+      },
+      "on_unequip": {
+        "event": "minecraft:horse_unsaddled"
+      }
+    },
+    {
+      "slot": 1,
+      "item": "horsearmoriron",
+      "accepted_items": [
+        "horsearmorleather",
+        "horsearmoriron",
+        "horsearmorgold",
+        "horsearmordiamond"
+      ]
+    }
+  ]
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:equippable": {
+  "slots": [
+    {
+      "slot": 1,
+      "item": "carpet",
+      "accepted_items": [
+        "carpet"
+      ]
+    }
+  ]
+}
+```
+
+#### [Mule](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/mule.json)
+
+
+```json
+"minecraft:equippable": {
+  "slots": [
+    {
+      "slot": 0,
+      "item": "saddle",
+      "accepted_items": [
+        "saddle"
+      ],
+      "on_equip": {
+        "event": "minecraft:mule_saddled"
+      },
+      "on_unequip": {
+        "event": "minecraft:mule_unsaddled"
+      }
+    }
+  ]
+}
+```

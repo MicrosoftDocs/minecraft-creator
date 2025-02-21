@@ -1,85 +1,78 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - has_ability
-description: "A reference document detailing the 'has_ability' entity filter"
+title: "Entity Filters Documentation - minecraft:has_ability"
+description: "Describes the minecraft:has_ability entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - has_ability
+# Entity Filters Documentation - minecraft:has_ability
 
 Returns true when the subject entity has the named ability.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value | *not set* |String |The Ability type to test. The following abilities are usable to test for:|
+## Has Ability Properties
 
-- flyspeed
-- flying
-- instabuild
-- invulnerable
-- lightning
-- mayfly
-- mute
-- noclip
-- walkspeed
-- worldbuilder
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | [Value](#value-choices) choices | (Required) The Ability type to test |  | 
 
-> [!NOTE]
-> `has_ability` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+### Operator choices
 
-### subject
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+### Subject choices
 
-### operator
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+### Value choices
 
-## Example
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| flySpeed | FlySpeed | |
+| flying | Flying | |
+| instabuild | Instabuild | |
+| invulnerable | Invulnerable | |
+| lightning | Lightning | |
+| mayfly | Mayfly | |
+| mute | Mute | |
+| noclip | Noclip | |
+| verticalFlySpeed | VerticalFlySpeed | |
+| walkSpeed | WalkSpeed | |
+| worldbuilder | Worldbuilder | |
 
-### Full
+## Samples
+
+At Full..: 
 
 ```json
 { "test": "has_ability", "subject": "self", "operator": "equals", "value": "instabuild" }
 ```
 
-### Short
+At Short (using Defaults)..: 
 
 ```json
 { "test": "has_ability", "value": "instabuild" }
 ```
-
-## Vanilla entities examples
-
-### Shulker
-
-```json
-{ "test" :  "has_ability","subject" : "other", "value" :  "instabuild"}
-```
-
-## Vanilla entities using `has_ability`
-
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)

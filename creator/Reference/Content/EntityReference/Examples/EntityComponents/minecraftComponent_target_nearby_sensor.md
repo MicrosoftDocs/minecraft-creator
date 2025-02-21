@@ -1,75 +1,63 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:target_nearby_sensor
-description: "A reference document detailing the 'target_nearby_sensor' entity component"
+title: "Entity Documentation - minecraft:target_nearby_sensor"
+description: "Describes the minecraft:target_nearby_sensor entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:target_nearby_sensor
 
-`minecraft:target_nearby_sensor` defines the entity's range within which it can see or sense other entities to target them.
+Defines the entity's range within which it can see or sense other entities to target them.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| inside_range| 1| Decimal| Maximum distance in blocks that another entity will be considered in the 'inside' range |
-| must_see| False| Boolean| Whether the other entity needs to be visible to trigger 'inside' events |
-| on_inside_range| *not set*| JSON Object | Event to call when an entity gets in the inside range. Can specify 'event' for the name of the event and 'target' for the target of the event |
-| on_outside_range| *not set*| JSON Object | Event to call when an entity gets in the outside range. Can specify 'event' for the name of the event and 'target' for the target of the event |
-| on_vision_lost_inside_range| *not set*| JSON Object | Event to call when an entity exits visual range. Can specify 'event' for the name of the event and 'target' for the target of the event |
-| outside_range| 5| Decimal| Maximum distance in blocks that another entity will be considered in the 'outside' range |
+## Target Nearby Sensor Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| inside_range | 1 | Decimal number | Maximum distance in blocks that another entity will be considered in the 'inside' range | Blaze: `2`, Drowned: `3` | 
+| must_see | false | Boolean true/false | Whether the other entity needs to be visible to trigger 'inside' events | Blaze: `true` | 
+| on_inside_range | *not set* | String | Event to call when an entity gets in the inside range. Can specify 'event' for the name of the event and 'target' for the target of the event | Blaze: `{"event":"switch_to_melee","target":"self"}`, Drowned: `{"event":"minecraft:switch_to_melee","target":"self"}` | 
+| on_outside_range | *not set* | String | Event to call when an entity gets in the outside range. Can specify 'event' for the name of the event and 'target' for the target of the event | Blaze: `{"event":"switch_to_ranged","target":"self"}`, Drowned: `{"event":"minecraft:switch_to_ranged","target":"self"}` | 
+| on_vision_lost_inside_range | *not set* | String | Event to call when an entity exits visual range. Can specify 'event' for the name of the event and 'target' for the target of the event |  | 
+| outside_range | 5 | Decimal number | Maximum distance in blocks that another entity will be considered in the 'outside' range | Blaze: `3`, Drowned: `5` | 
+
+## Samples
+
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
+
 
 ```json
 "minecraft:target_nearby_sensor": {
-    "inside_range": 1,
-    "must_see": false,
-    "on_inside_range": {
-        "event": "minecraft:i_see_you",
-        "target": "self"
-    },
-    "on_outside_range": {
-        "event": "minecraft:where_did_you_go",
-        "target": "self"
-    },
-    "on_vision_lost_inside_range": {
-        "event": "minecraft:ill_find_you",
-        "target": "self"
-    },
-    "outside_range": 5
+  "inside_range": 2,
+  "outside_range": 3,
+  "must_see": true,
+  "on_inside_range": {
+    "event": "switch_to_melee",
+    "target": "self"
+  },
+  "on_outside_range": {
+    "event": "switch_to_ranged",
+    "target": "self"
+  }
 }
 ```
 
-## Vanilla entities examples
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
 
-### creeper
 
 ```json
 "minecraft:target_nearby_sensor": {
-        "inside_range": 2.5,
-        "outside_range": 6.0,
-        "must_see": true,
-        "on_inside_range": {
-          "event": "minecraft:start_exploding",
-          "target": "self"
-        },
-        "on_outside_range": {
-          "event": "minecraft:stop_exploding",
-          "target": "self"
-        },
-        "on_vision_lost_inside_range": {
-            "event": "minecraft:stop_exploding",
-            "target": "self"
-        }
-      }
+  "inside_range": 3,
+  "outside_range": 5,
+  "on_inside_range": {
+    "event": "minecraft:switch_to_melee",
+    "target": "self"
+  },
+  "on_outside_range": {
+    "event": "minecraft:switch_to_ranged",
+    "target": "self"
+  }
+}
 ```
-
-## Vanilla entities using `minecraft:target_nearby_sensor`
-
-- [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)

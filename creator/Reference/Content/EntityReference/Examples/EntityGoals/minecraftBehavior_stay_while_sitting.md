@@ -1,42 +1,57 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.stay_while_sitting
-description: "A reference document detailing the 'behavior.stay_while_sitting' entity goal"
+title: "Entity Documentation - behavior.stay_while_sitting"
+description: "Describes the behavior.stay_while_sitting AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.stay_while_sitting
+# Entity Documentation - behavior.stay_while_sitting
 
-`minecraft:behavior.stay_while_sitting` compels an entity to stay in place while sitting.
+Allows the mob to stay put while it is in a sitting state instead of doing something else.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Stay While Sitting Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cat: `3`, Parrot: `2` | 
+
+## Samples
+
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+
 
 ```json
-"minecraft:behavior.stay_while_sitting":{
-    "priority": 3
+{
+  "priority": 3
 }
 ```
 
-## Vanilla entities examples
+#### [Ocelot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ocelot.json)
 
-### cat
 
 ```json
-"minecraft:behavior.stay_while_sitting": {
-    "priority": 3
+{
+  "priority": 3
 }
 ```
 
-## Vanilla entities using `minecraft:behavior.stay_while_sitting`
+#### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
 
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
+
+```json
+{
+  "priority": 2
+}
+```
+
+#### [Wolf](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wolf.json)
+
+
+```json
+{
+  "priority": 3
+}
+```

@@ -6,12 +6,12 @@ description: "A reference document detailing the basic information about manifes
 ms.service: minecraft-bedrock-edition
 ---
 
-# Addons Documentation - manifest.json
+# manifest.json for Behavior/Resource/Skin Packs and World Templates
 
 The manifest file contains all the basic information about the pack that Minecraft needs to identify it. The tables below contain all the components of the manifest, their individual properties, and what they mean.
 
 > [!NOTE]
-> To learn more about how to get started with writing manifest.json files in Minecraft: Bedrock Edition, you can view the [Introduction to Resource Packs](../../../../Documents/ResourcePack.md) Tutorial.
+> To learn more about how to get started with writing manifest.json files in Minecraft: Bedrock Edition, you can view the [Introduction to Resource Packs](../../../Documents/ResourcePack.md) Tutorial.
 
 ## Properties
 

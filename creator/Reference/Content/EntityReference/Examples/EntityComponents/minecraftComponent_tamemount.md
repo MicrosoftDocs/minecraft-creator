@@ -1,117 +1,186 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:tamemount
-description: "A reference document detailing the 'tamemount' entity component"
+title: "Entity Documentation - minecraft:tamemount"
+description: "Describes the minecraft:tamemount entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:tamemount
 
-`minecraft:tamemount` allows the entity to be tamed by mounting it.
+Allows the Entity to be tamed by mounting it.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| attempt_temper_mod| 5| Integer| The amount the entity's temper will increase when mounted. |
-| autoRejectItems| *not set*| JSON Object| The list of items that, if carried while interacting with the entity, will anger it.|
-| feed_items| *not set*| JSON Object| The list of items that can be used to increase the entity's temper and speed up the taming process.|
-| feed_text| *not set*| String| The text that shows in the feeding interact button. |
-| max_temper| 100| Integer| The maximum value for the entity's random starting temper. |
-| min_temper| 0| Integer| The minimum value for the entity's random starting temper. |
-| ride_text| *not set*| String| The text that shows in the riding interact button. |
-| tame_event| *not set*| JSON Object | Event that triggers when the entity becomes tamed. |
+## Tamemount Properties
 
-### autoRejectItems
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| attempt_temper_mod | 5 | Integer number | The amount the entity's temper will increase when mounted. |  | 
+| auto_reject_items | *not set* | Array of [Auto Reject Items](#auto-reject-items-item-type) items |  |  | 
+| autoRejectItems | *not set* | Array of [AutoRejectItems](#autorejectitems-item-type) items | The list of items that, if carried while interacting with the entity, will anger it. |  | 
+| feed_items | *not set* | Array of [Feed Items](#feed-items-item-type) items | The list of items that can be used to increase the entity's temper and speed up the taming process. | Donkey: `[{"item":"wheat","temper_mod":3},{"item":"sugar","temper_mod":3},{"item":"apple","temper_mod":3},{"item":"golden_carrot","temper_mod":5},{"item":"golden_apple","temper_mod":10},{"item":"appleEnchanted","temper_mod":10}]` | 
+| feed_text | *not set* | String | The text that shows in the feeding interact button. |  | 
+| max_temper | 100 | Integer number | The maximum value for the entity's random starting temper. |  | 
+| min_temper | 0 | Integer number | The minimum value for the entity's random starting temper. |  | 
+| ride_text | *not set* | String | The text that shows in the riding interact button. |  | 
+| tame_event | *not set* | String | Event that triggers when the entity becomes tamed. |  | 
 
-`autoRejectItems` is a JSON Object defined by one parameter. Each item has the following properties:
+## Auto Reject Items item type
 
-| Name| Default Value| Type| Description |
-|:-----------|:-----------|:-----------|:-----------|
-| item| *not set*| String| Name of the item this entity dislikes and will cause it to get angry if used while untamed. |
+#### Auto_reject_items Properties
 
-### feed_items
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| item | *not set* | String |  | Donkey: `"horsearmorleather"` | 
 
-`feed_items` is a JSON Object defined by one parameter. Each item has the following properties:
+## AutoRejectItems item type
+The list of items that, if carried while interacting with the entity, will anger it.
 
-| Name| Default Value| Type| Description |
-|:-----------|:-----------|:-----------|:-----------|
-| item| *not set*| String| Name of the item the entity likes and can be used to increase the entity's temper. |
 
-## Example
+#### AutoRejectItems Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| item | *not set* | String | Name of the item this entity dislikes and will cause it to get angry if used while untamed. |  | 
+
+## Feed Items item type
+The list of items that can be used to increase the entity's temper and speed up the taming process.
+
+
+#### Feed Items Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| item | *not set* | String | Name of the item this entity likes and can be used to increase this entity's temper. |  | 
+| temper_mod | 0 | Integer number | The amount of temper this entity gains when fed this item. |  | 
+
+## Samples
+
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
+
 
 ```json
 "minecraft:tamemount": {
-    "min_temper": 0,
-    "max_temper": 100,
-    "feed_text": "action.interact.feed",
-    "ride_text": "action.interact.mount",
-    "feed_items": [
-        {
-            "item": "wheat",
-            "temper_mod": 3
-        }
-    ],
-    "auto_reject_items": [
-        {
-            "item": "horsearmorleather"
-        }
-    ],
-    "tame_event": {
-        "event": "minecraft:on_tame",
-        "target": "self"
+  "min_temper": 0,
+  "max_temper": 100,
+  "feed_text": "action.interact.feed",
+  "ride_text": "action.interact.mount",
+  "feed_items": [
+    {
+      "item": "wheat",
+      "temper_mod": 3
+    },
+    {
+      "item": "sugar",
+      "temper_mod": 3
+    },
+    {
+      "item": "apple",
+      "temper_mod": 3
+    },
+    {
+      "item": "golden_carrot",
+      "temper_mod": 5
+    },
+    {
+      "item": "golden_apple",
+      "temper_mod": 10
+    },
+    {
+      "item": "appleEnchanted",
+      "temper_mod": 10
     }
+  ],
+  "auto_reject_items": [
+    {
+      "item": "horsearmorleather"
+    },
+    {
+      "item": "horsearmoriron"
+    },
+    {
+      "item": "horsearmorgold"
+    },
+    {
+      "item": "horsearmordiamond"
+    },
+    {
+      "item": "saddle"
+    }
+  ],
+  "tame_event": {
+    "event": "minecraft:on_tame",
+    "target": "self"
+  }
 }
 ```
 
-## Vanilla entities examples
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
 
-### llama
 
 ```json
 "minecraft:tamemount": {
-          "min_temper": 0,
-          "max_temper": 30,
-          "feed_text": "action.interact.feed",
-          "ride_text": "action.interact.mount",
-          "feed_items": [
-            {
-              "item": "wheat",
-              "temper_mod": 3
-            },
-            {
-              "item": "hay_block",
-              "temper_mod": 6
-            }
-          ],
-          "auto_reject_items": [
-            {
-              "item": "horsearmorleather"
-            },
-            {
-              "item": "horsearmoriron"
-            },
-            {
-              "item": "horsearmorgold"
-            },
-            {
-              "item": "horsearmordiamond"
-            },
-            {
-              "item": "saddle"
-            }
-          ],
-          "tame_event": {
-            "event": "minecraft:on_tame",
-            "target": "self"
-          }
-        }
+  "min_temper": 0,
+  "max_temper": 30,
+  "feed_text": "action.interact.feed",
+  "ride_text": "action.interact.mount",
+  "feed_items": [
+    {
+      "item": "wheat",
+      "temper_mod": 3
+    },
+    {
+      "item": "hay_block",
+      "temper_mod": 6
+    }
+  ],
+  "tame_event": {
+    "event": "minecraft:on_tame",
+    "target": "self"
+  }
+}
 ```
 
-## Vanilla entities using `minecraft:tamemount`
+#### [Trader Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/trader_llama.json)
 
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
+
+```json
+"minecraft:tamemount": {
+  "min_temper": 0,
+  "max_temper": 30,
+  "feed_text": "action.interact.feed",
+  "ride_text": "action.interact.mount",
+  "feed_items": [
+    {
+      "item": "wheat",
+      "temper_mod": 3
+    },
+    {
+      "item": "hay_block",
+      "temper_mod": 6
+    }
+  ],
+  "auto_reject_items": [
+    {
+      "item": "horsearmorleather"
+    },
+    {
+      "item": "horsearmoriron"
+    },
+    {
+      "item": "horsearmorgold"
+    },
+    {
+      "item": "horsearmordiamond"
+    },
+    {
+      "item": "saddle"
+    }
+  ],
+  "tame_event": {
+    "event": "minecraft:on_tame",
+    "target": "self"
+  }
+}
+```

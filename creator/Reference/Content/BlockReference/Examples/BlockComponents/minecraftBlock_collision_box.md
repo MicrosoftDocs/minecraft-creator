@@ -1,37 +1,33 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:collision_box
-description: "A reference document detailing the 'collision_box' block component"
+title: "Block Components Documentation - minecraft:collision_box"
+description: "Describes the minecraft:collision_box block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:collision_box
+# Block Components Documentation - minecraft:collision_box
 
-`minecraft:collision_box` is a `boolean` or `JSON Object` that defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used.
+Defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used.
 
-## Default Value of the Component
+## Alternate Simple Representations
 
-This component can be specified as a `Boolean`. If this component is omitted, the default value for this component is `true`, which will give your block the default values for its parameters (a collision box the size/shape of a regular block).
+This item can also be represented as a `Boolean true/false`.
 
-## Parameters
 
-| Name| Default Value | Type|  Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| `origin`| [-8.0, 0.0, -8.0]| Vector [a, b, c]| Minimal position of the bounds of the collision box. `origin` is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. |
-| `size`| [16.0, 16.0, 16.0]| Vector [a, b, c]| Size of each side of the collision box. Size is specified as [x, y, z]. `origin` + `size` must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. |
+## Collision Box Properties
 
-## Example (Boolean)
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| origin | [-8, 0, -8] | x, y, z coordinate array | Minimal position of the bounds of the collision box. "origin" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. |  | 
+| size | [16, 16, 16] | x, y, z coordinate array | Size of each side of the collision box. Size is specified as [x, y, z]. "origin" + "size" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. |  | 
 
-```json
-"minecraft:collision_box": false
-```
+## Samples
 
-## Example (JSON Object)
+#### [Block Orange Ore](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json)
+
 
 ```json
-"minecraft:collision_box": {
-    "origin": [-8.0, 0.0, -8.0],
-     "size": [16.0, 16.0, 16.0]
-}
+"minecraft:collision_box": true
 ```

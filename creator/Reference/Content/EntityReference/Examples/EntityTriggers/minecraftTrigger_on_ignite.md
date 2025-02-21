@@ -1,40 +1,21 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:on_ignite
-description: "A reference document detailing the 'on_ignite' entity trigger"
+title: "Entity Documentation - minecraft:on_ignite"
+description: "Describes the minecraft:on_ignite entity trigger"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:on_ignite
 
-`minecraft:on_ignite` adds a trigger to call when this entity is set on fire.
+Adds a trigger to call when this entity is set on fire.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|event|*not set* | String|  The event to run when the conditions for this trigger are met. |
-|[filters](../FilterList.md)|*not set* | Minecraft Filter| The list of conditions for this trigger to execute. |
-|target| self| String| The target of the event. |
+## On Ignite Properties
 
-## Example
-
-```json
-"minecraft:on_ignite": {
-  "event": "minecraft:on_fire",
-  "filters": {
-    "test": "has_damage",
-    "value": "fire"
-  },
-  "target": "self"
-}
-```
-
-## Vanilla entities examples
-
-No entities currently use `minecraft:on_ignite`
-
-## Vanilla entities using `minecraft:on_ignite`
-
-No entities currently use `minecraft:on_ignite`
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| event | *not set* | String | The event to run when the conditions for this trigger are met. |  | 
+| filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. |  | 
+| target | self | String | The target of the event. |  | 

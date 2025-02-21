@@ -1,46 +1,43 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:on_friendly_anger
-description: "A reference document detailing the 'on_friendly_anger' entity trigger"
+title: "Entity Documentation - minecraft:on_friendly_anger"
+description: "Describes the minecraft:on_friendly_anger entity trigger"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:on_friendly_anger
 
-`minecraft:on_friendly_anger` adds a trigger that will run when a nearby entity of the same type as this entity enters an `Angry` state.
+Adds a trigger that will run when a nearby entity of the same type as this entity becomes Angry.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|event|*not set* | String|  The event to run when the conditions for this trigger are met. |
-|[filters](../FilterList.md)|*not set* | Minecraft Filter| The list of conditions for this trigger to execute. |
-|target| self| String| The target of the event. |
+## On Friendly Anger Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| event | *not set* | String | The event to run when the conditions for this trigger are met. | Panda: `"minecraft:on_anger"`, Trader Llama: `"minecraft:defend_wandering_trader"` | 
+| filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. |  | 
+| target | self | String | The target of the event. | Panda: `"self"` | 
 
-```json
-"minecraft:on_friendly_anger":{
-    "event": "minecraft:angry_when_splashed",
-    "filters": "in_water_or_rain",
-    "target": "self"
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
 
-### polar_bear
 
 ```json
 "minecraft:on_friendly_anger": {
-    "event": "minecraft:on_anger",
-    "target": "self"
+  "event": "minecraft:on_anger",
+  "target": "self"
 }
 ```
 
-## Vanilla entities using `minecraft:on_friendly_anger`
+#### [Trader Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/trader_llama.json)
 
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [trader_llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/trader_llama.md)
+
+```json
+"minecraft:on_friendly_anger": {
+  "event": "minecraft:defend_wandering_trader",
+  "target": "self"
+}
+```

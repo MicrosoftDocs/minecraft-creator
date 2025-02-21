@@ -1,13 +1,22 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:dimension_bound
-description: "A reference document detailing the 'dimension_bound' entity component"
+title: "Entity Documentation - minecraft:dimension_bound"
+description: "Describes the minecraft:dimension_bound entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:dimension_bound
 
-`minecraft:dimension_bound` prevents the entity from changing dimension through portals.
+Prevents the entity from changing dimension through portals.
 
 
+## Samples
+
+#### [Arrow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/arrow.json)
+
+
+```json
+"minecraft:dimension_bound": {}
+```

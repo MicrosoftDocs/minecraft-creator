@@ -1,61 +1,44 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.go_and_give_items_to_owner
-description: "A reference document detailing the 'behavior.go_and_give_items_to_owner' entity goal"
+title: "Entity Documentation - minecraft:behavior.go_and_give_items_to_owner"
+description: "Describes the minecraft:behavior.go_and_give_items_to_owner ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.go_and_give_items_to_owner
 
-`minecraft:behavior.go_and_give_items_to_owner` compels the entity to attempt to toss the items from its inventory to its owner.
+The entity will attempt to toss the items from its inventory to its owner.
 
-## Parameters
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| on_item_throw|*not set*| Trigger| Event(s) to run when this mob throws items. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| reach_mob_distance| 3.000000| Decimal| Sets the desired distance to be reached before giving items to owner. |
-| run_speed| 1.000000| Decimal| Sets the entity's speed when running toward the owner. |
-| throw_force| 0.200000| Decimal| Sets the throw force. |
-| throw_sound|item_thrown| String| Sound to play when this mob throws an item. |
-| vertical_throw_mul| 1.500000| Decimal| Sets the vertical throw multiplier that is applied on top of the throw force in the vertical direction. |
+## Go And Give Items To Owner Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| on_item_throw | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when this mob throws items. | Allay: `[{"event":"pickup_item_delay","target":"self"}]` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `4` | 
+| reach_mob_distance | 3 | Decimal number | Sets the desired distance to be reached before giving items to owner. |  | 
+| run_speed | 1 | Decimal number | Sets the entity's speed when running toward the owner. | Allay: `8` | 
+| throw_force | 0.2 | Decimal number | Sets the throw force. |  | 
+| throw_sound | item_thrown | String | Sound to play when this mob throws an item. | Allay: `"item_thrown"` | 
+| vertical_throw_mul | 1.5 | Decimal number | Sets the vertical throw multiplier that is applied on top of the throw force in the vertical direction. |  | 
 
-```json
-"minecraft:behavior.go_and_give_items_to_owner": {
-        "priority": 4,
-        "run_speed": 8,
-        "throw_sound": "item_thrown",
-        "on_item_throw": [
-          {
-            "event": "pickup_item_delay",
-            "target": "self"
-          }
-        ]
-      }
-```
+## Samples
 
-## Vanilla entities example
+#### [Allay](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/allay.json)
 
-### allay
 
 ```json
 "minecraft:behavior.go_and_give_items_to_owner": {
-        "priority": 4,
-        "run_speed": 8,
-        "throw_sound": "item_thrown",
-        "on_item_throw": [
-          {
-            "event": "pickup_item_delay",
-            "target": "self"
-          }
-        ]
-      }
+  "priority": 4,
+  "run_speed": 8,
+  "throw_sound": "item_thrown",
+  "on_item_throw": [
+    {
+      "event": "pickup_item_delay",
+      "target": "self"
+    }
+  ]
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.go_and_give_items_to_owner`
-
-- [allay](../../../../Source/VanillaBehaviorPack_Snippets/entities/allay.md)

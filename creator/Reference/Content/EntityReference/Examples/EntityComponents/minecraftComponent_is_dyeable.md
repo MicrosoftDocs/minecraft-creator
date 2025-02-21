@@ -1,41 +1,30 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:is_dyeable
-description: "A reference document detailing the 'is_dyeable' entity component"
+title: "Entity Documentation - minecraft:is_dyeable"
+description: "Describes the minecraft:is_dyeable entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:is_dyeable
+# Entity Documentation - minecraft:is_dyeable
 
-`minecraft:is_dyeable` allows the entity to be interacted with dyes to change its color.
+Allows dyes to be used on this entity to change its color.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|interact_text|*not set* | String|  The text that will display when interacting with this entity with a dye when playing with Touch-screen controls. |
+## Is Dyeable Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| interact_text | *not set* | String | The text that will display when interacting with this entity with a dye when playing with Touch-screen controls. | Cat: `"action.interact.dye"` | 
 
-```json
-"minecraft:is_dyeable":{
-    "interact_text": "action.interact.dye"
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
-### sheep
 
 ```json
 "minecraft:is_dyeable": {
-    "interact_text": "action.interact.dye"
+  "interact_text": "action.interact.dye"
 }
 ```
-
-## Vanilla entities using `minecraft:is_dyeable`
-
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)

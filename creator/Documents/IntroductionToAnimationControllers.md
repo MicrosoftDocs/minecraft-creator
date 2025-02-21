@@ -12,7 +12,7 @@ In Minecraft, animation controllers do pretty much what they say: manage animati
 
 In this guide, we will cover what animation controllers are and what they do and how to use them effectively. For specific information, such as code samples and in-depth definitions, we'll refer to the [Animation Controllers Reference Doc](../Reference/Content/AnimationsReference/Examples/AnimationController.md)
 
-![NOTE]
+> [!NOTE]
 This guide will not cover how to create custom animations. You can use programs like **Blockbench** to create custom animations to add flavor to your custom blocks and entities, but for this guide, we will only cover how to use animation controllers and how to transition between animations. For more information on creating animations, see [Animation Documentation - Getting Started](../Reference/Content/AnimationsReference/Examples/AnimationGettingStarted.md).
 
 ## Key Concepts
@@ -77,7 +77,7 @@ So we've now created a nice little animation loop that takes the sheep from an i
 
 To use your new animation controller, we'll place it in the Behavior Pack of your add-on. Create a folder in your Behavior Pack called `animations`. Place your new animation controller file in this folder.
 
-![IMPORTANT]
+> [!IMPORTANT]
 Make sure you define your animation controller under the `modules` section of your `manifest.json` file. See [Introduction to Behavior Packs (from Scratch)](BehaviorPackFromScratch.md#create-the-manifest-file) for more information.
 
 ## Conclusion

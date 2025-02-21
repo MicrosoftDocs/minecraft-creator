@@ -1,57 +1,40 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:peek
-description: "A reference document detailing the 'peek' entity component"
+title: "Entity Documentation - minecraft:peek"
+description: "Describes the minecraft:peek entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:peek
 
-`minecraft:peek` defines the entity's 'peek' behavior, and the events that should be called during it.
+Defines the entity's 'peek' behavior, defining the events that should be called during it.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| on_close| *not set*| JSON Object | Event to initiate when the entity is done peeking. |
-| on_open| *not set*| JSON Object | Event to initiate when the entity starts peeking. |
-| on_target_open| *not set*| JSON Object | Event to initiate when the entity's target entity starts peeking. |
+## Peek Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| on_close | *not set* | String | Event to call when the entity is done peeking. | Shulker: `{"event":"minecraft:on_close"}` | 
+| on_open | *not set* | String | Event to call when the entity starts peeking. | Shulker: `{"event":"minecraft:on_open"}` | 
+| on_target_open | *not set* | String | Event to call when the entity's target entity starts peeking. | Shulker: `{"event":"minecraft:on_open"}` | 
+
+## Samples
+
+#### [Shulker](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/shulker.json)
+
 
 ```json
 "minecraft:peek": {
-  "on_close": {
-    "event": "minecraft:stop_peeping"
-  },
   "on_open": {
-    "event": "minecraft:start_peeping"
+    "event": "minecraft:on_open"
+  },
+  "on_close": {
+    "event": "minecraft:on_close"
   },
   "on_target_open": {
-    "event": "minecraft:ive_been_spotted"
+    "event": "minecraft:on_open"
   }
 }
 ```
-
-## Vanilla entities examples
-
-### shulker
-
-```json
-"minecraft:peek": {
-        "on_open": {
-          "event": "minecraft:on_open"
-        },
-        "on_close": {
-          "event": "minecraft:on_close"
-        },
-        "on_target_open": {
-          "event": "minecraft:on_open"
-        }
-      }
-```
-
-## Vanilla entities using `minecraft:peek`
-
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)

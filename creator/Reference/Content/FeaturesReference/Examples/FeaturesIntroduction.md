@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Features Documentation - Introduction to Features
 description: "A reference document introducing the concept of features"
 ms.service: minecraft-bedrock-edition
+ms-date: 02/11/2025
 ---
 
 # Features Documentation - Introduction to Features
@@ -330,7 +331,7 @@ Features attached with the second method are called "forced" or "explicit" featu
 Unlike feature rules, forced features are not defined in separate JSON files. Instead, they are specified in the existing biome JSON definitions via the `"minecraft:forced_features"` component.
 Like feature rules, this component includes fields that define when features should be placed ("placement_pass") and how they should be scattered ("distribution").
 
-For more information about biome components (including the complete JSON schema), consult the [biome documentation](../../BiomeReference/Examples/BiomeOverview.md).
+For more information about biome components (including the complete JSON schema), consult the [biome documentation](../../../../Documents/Biomes/BiomeOverview.md).
 
 ## Feature Samples
 

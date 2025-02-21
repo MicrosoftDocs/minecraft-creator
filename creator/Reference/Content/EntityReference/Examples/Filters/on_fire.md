@@ -1,57 +1,61 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - on_fire
-description: "A reference document detailing the 'on_fire' entity filter"
+title: "Entity Filters Documentation - minecraft:on_fire"
+description: "Describes the minecraft:on_fire entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - on_fire
+# Entity Filters Documentation - minecraft:on_fire
 
 Tests if the subject is on fire.
 
-## subject
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+## On Fire Properties
 
-### operator
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | true | Boolean true/false | (Optional) true or false. |  | 
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+### Operator choices
 
-### value
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |true |Boolean |(Optional) true or false. |
+### Subject choices
 
-## Examples
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-### Full
+## Samples
+
+At Full..: 
 
 ```json
-{ "test": "on_fire", "subject": "self", "operator": "equals", "value": true}
+{ "test": "on_fire", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "on_fire" }

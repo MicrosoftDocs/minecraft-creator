@@ -1,89 +1,194 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:transformation
-description: "A reference document detailing the 'transformation' entity component"
+title: "Entity Documentation - minecraft:transformation"
+description: "Describes the minecraft:transformation entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:transformation
 
-`minecraft:transformation` defines an entity's transformation from the current definition into another.
+Defines an entity's transformation from the current definition into another.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| add| *not set*| JSON Object| List of components to add to the entity after the transformation|
-| begin_transform_sound| *not set*| String| Sound to play when the transformation starts |
-| drop_equipment| False| Boolean| Cause the entity to drop all equipment upon transformation |
-| drop_inventory| False| Boolean| Cause the entity to drop all items in inventory upon transformation |
-| into| *not set*| | String| Entity Definition that the entity will transform into. |
-| keep_level| False| Boolean| If the entity has trades and has leveled up, it should maintain that level after transformation. |
-| keep_owner| False| Boolean| If the entity is owned by another entity, it should remain owned after transformation. |
-| preserve_equipment| False| Boolean| Causes the entity to keep equipment after going through transformation |
-| transformation_sound| *not set*| String| Sound to play when the entity is done transforming |
-| delay| *not set*| JSON Object| Defines the properties of the delay for the transformation|
+## Transformation Properties
 
-### delay
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| add | *not set* | Array of [Add](#add-item-type) items | List of components to add to the entity after the transformation |  | 
+| begin_transform_sound | *not set* | String | Sound to play when the transformation starts | Zombie Villager V2: `"remedy"` | 
+| delay | *not set* | Array of [Delay](#delay-item-type) items | Defines the properties of the delay for the transformation | Husk: `{"value":15}`, Pig: `0.5`, Zombie Villager V2: `{"value":100,"range_min":80,"range_max":200,"block_assist_chance":0.01,"block_radius":4,"block_chance":0.3,"block_types":["minecraft:bed","minecraft:iron_bars"]}` | 
+| drop_equipment | false | Boolean true/false | Cause the entity to drop all equipment upon transformation | Husk: `true` | 
+| drop_inventory | false | Boolean true/false | Cause the entity to drop all items in inventory upon transformation | Piglin: `true` | 
+| into | *not set* | String | Entity Definition that this entity will transform into | Hoglin: `"minecraft:zoglin"`, Husk: `"minecraft:zombie<minecraft:as_adult>"`, `"minecraft:zombie<minecraft:as_baby>"` | 
+| keep_level | false | Boolean true/false | If this entity has trades and has leveled up, it should maintain that level after transformation. | Hoglin: `true` | 
+| keep_owner | false | Boolean true/false | If this entity is owned by another entity, it should remain owned after transformation. |  | 
+| preserve_equipment | false | Boolean true/false | Cause the entity to keep equipment after going through transformation | Piglin Brute: `true` | 
+| transformation_sound | *not set* | String | Sound to play when the entity is done transforming | Hoglin: `"mob.hoglin.converted_to_zombified"`, Husk: `"mob.husk.convert_to_zombie"`, Pig: `"mob.pig.death"` | 
 
-`delay` is a JSON Object defined by six parameters. Each item has the following properties:
+## Add item type
+List of components to add to the entity after the transformation.
 
-| Name| Default Value| Type| Description |
-|:-----------|:-----------|:-----------|:-----------|
-| block_assist_chance| 0.0| Decimal| Chance that the entity will look for nearby blocks that can speed up the transformation. Value must be between 0.0 and 1.0 |
-| block_chance| 0| Decimal| Chance that, once a block is found, will help speed up the transformation |
-| block_max| 0| Integer| Maximum number of blocks the entity will look for to aid in the transformation. If not defined or set to 0, it will be set to the block radius |
-| block_radius| 0| Integer| Distance in Blocks that the entity will search for blocks that can help the transformation |
-| block_types| *not set*| List| List of blocks that can help the transformation of this entity |
-| range_max| 0| Decimal| Time in seconds to be added to have the maximum random time until the entity transforms (if non-zero, the time in seconds before the entity transforms will be a random decimal between 'value+range_min' and 'value+range_max') |
-| range_min| 0| Decimal| Time in seconds to be added to have the minimum random time until the entity transforms (if non-zero, the time in seconds before the entity transforms will be a random decimal between 'value+range_min' and 'value+range_max') |
-| value| 0| Decimal| Time in seconds before the entity transforms |
 
-## Example
+#### Add Properties
 
-```json
-"minecraft:transformation": {
-    "into": "minecraft:drowned<minecraft:as_adult>",
-    "transformation_sound": "convert_to_drowned",
-    "drop_equipment": false,
-    "drop_inventory": false,
-    "keep_level": false,
-    "delay": {
-        "block_assist_chance": 0.0,
-        "block_radius": 0,
-        "block_max": 0,
-        "value": 10
-    }
-}
-```
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| component_groups | *not set* | Array of strings | Names of component groups to add |  | 
 
-## Vanilla entities examples
+## Delay item type
+Defines the properties of the delay for the transformation.
 
-### piglin
+
+#### Delay Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| block_assist_chance | 0 | Decimal number | Chance that the entity will look for nearby blocks that can speed up the transformation. Value must be between 0.0 and 1.0 |  | 
+| block_chance | 0 | Decimal number | Chance that, once a block is found, will help speed up the transformation |  | 
+| block_max | 0 | Integer number | Maximum number of blocks the entity will look for to aid in the transformation. If not defined or set to 0, it will be set to the block radius |  | 
+| block_radius | 0 | Integer number | Distance in Blocks that the entity will search for blocks that can help the transformation |  | 
+| block_types | *not set* | Array of strings | List of blocks that can help the transformation of this entity |  | 
+| range_max | 0 | Decimal number | Time in seconds to be added to value to have the maximum random time range value until the entity transforms (if non-zero then the time in seconds before the entity transforms will be random between value+range_min and value+range_max) |  | 
+| range_min | 0 | Decimal number | Time in seconds to be added to value to have the minimum random time range value until the entity transforms (if non-zero then the time in seconds before the entity transforms will be random between value+range_min and value+range_max) |  | 
+| value | 0 | Decimal number | Time in seconds before the entity transforms |  | 
+
+## Samples
+
+#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
+
 
 ```json
 "minecraft:transformation": {
-    "into": "minecraft:zombie_pigman",
-    "transformation_sound" : "converted_to_zombified",
-    "keep_level": true,
-    "drop_inventory": true,
-    "preserve_equipment": true
+  "into": "minecraft:zoglin",
+  "transformation_sound": "mob.hoglin.converted_to_zombified",
+  "keep_level": true
 }
 ```
 
-## Vanilla entities using `minecraft:transformation`
+#### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
 
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+At /minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:transformation/: 
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:zombie<minecraft:as_adult>",
+  "transformation_sound": "mob.husk.convert_to_zombie",
+  "drop_equipment": true,
+  "delay": {
+    "value": 15
+  }
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:transformation/: 
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:zombie<minecraft:as_baby>",
+  "transformation_sound": "mob.husk.convert_to_zombie",
+  "drop_equipment": true,
+  "delay": {
+    "value": 15
+  }
+}
+```
+
+#### [Mooshroom](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/mooshroom.json)
+
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:cow"
+}
+```
+
+#### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
+
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:pig_zombie",
+  "transformation_sound": "mob.pig.death",
+  "delay": 0.5
+}
+```
+
+#### [Piglin Brute](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin_brute.json)
+
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:zombie_pigman",
+  "transformation_sound": "converted_to_zombified",
+  "keep_level": true,
+  "preserve_equipment": true
+}
+```
+
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
+
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:zombie_pigman",
+  "transformation_sound": "converted_to_zombified",
+  "keep_level": true,
+  "drop_inventory": true,
+  "preserve_equipment": true
+}
+```
+
+#### [Skeleton](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton.json)
+
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:stray",
+  "transformation_sound": "convert_to_stray",
+  "keep_level": true,
+  "drop_inventory": true,
+  "preserve_equipment": true
+}
+```
+
+#### [Stray](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/stray.json)
+
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:skeleton",
+  "delay": 0.5
+}
+```
+
+#### [Tadpole](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tadpole.json)
+
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:frog",
+  "transformation_sound": "convert_to_frog"
+}
+```
+
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+
+At /minecraft:entity/component_groups/become_witch/minecraft:transformation/: 
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:witch",
+  "delay": 0.5
+}
+```
+
+At /minecraft:entity/component_groups/become_zombie/minecraft:transformation/: 
+
+```json
+"minecraft:transformation": {
+  "into": "minecraft:zombie_villager_v2",
+  "keep_level": true
+}
+```

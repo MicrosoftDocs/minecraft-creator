@@ -1,21 +1,16 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:light_emission
-description: "A reference document detailing the 'light_emission' block component"
+title: "Block Components Documentation - minecraft:light_emission"
+description: "Describes the minecraft:light_emission block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:light_emission
+# Block Components Documentation - minecraft:light_emission
 
-`minecraft:light_emission` is an `Integer` component that sets the amount of light this block will emit, in a range (0-15). A higher value means more light will be emitted.
+The amount of light this block will emit in a range (0-15). Higher value means more light will be emitted.
 
-## Default Value of the Component
+## Alternate Simple Representations
 
-This component is specified as an `Integer`. If this component is omitted, the default value for this component is 0 (emits no light).
-
-## Example
-
-```json
-"minecraft:light_emission": 10
-```
+This item can also be represented as a `Integer number`.

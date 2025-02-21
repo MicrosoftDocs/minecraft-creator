@@ -1,64 +1,166 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:variant
-description: "A reference document detailing the 'variant' entity component"
+title: "Entity Documentation - minecraft:variant"
+description: "Describes the minecraft:variant entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:variant
+# Entity Documentation - minecraft:variant
 
-`minecraft:variant` is used to differentiate the component group of a variant of an entity from others, such as `ocelot`, `villager` and `horse`.
+Variant is typically used as a per-type way to express a different visual form of the same mob. For example, for cats, variant is a number that defines the breed of cat.
 
-> [!NOTE]
+> [!Note]
 > This behavior is a requirement for setting up multiple types of variants for an entity.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 0| Integer|  The ID of the variant. By convention, 0 is the ID of the base entity. |
+## Variant Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 0 | Integer number | The Id of the variant. By convention, 0 is the Id of the base entity/default appearance. | Axolotl: `1`, `2`, `3`, `4` | 
+
+## Samples
+
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
+
+At /minecraft:entity/component_groups/axolotl_lucy/minecraft:variant/: 
 
 ```json
-"minecraft:variant":{
-    "value": 0
+"minecraft:variant": {
+  "value": 0
 }
 ```
 
-## Vanilla entities examples
-
-### fox
+At /minecraft:entity/component_groups/axolotl_cyan/minecraft:variant/: 
 
 ```json
-"minecraft:fox_red": {
-        "minecraft:variant": {
-          "value": 0
-        }
+"minecraft:variant": {
+  "value": 1
+}
 ```
 
-## Vanilla entity sample JSON files using `minecraft:variant`
+At /minecraft:entity/component_groups/axolotl_gold/minecraft:variant/: 
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
+```json
+"minecraft:variant": {
+  "value": 2
+}
+```
+
+At /minecraft:entity/component_groups/axolotl_wild/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 3
+}
+```
+
+At /minecraft:entity/component_groups/axolotl_blue/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 4
+}
+```
+
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+
+At /minecraft:entity/component_groups/minecraft:cat_calico/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 5
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:cat_persian/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 6
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:cat_ragdoll/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 7
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:cat_tabby/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 8
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:cat_black/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 9
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:cat_jellie/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 10
+}
+```
+
+#### [Shulker](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/shulker.json)
+
+At /minecraft:entity/component_groups/minecraft:shulker_light_blue/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 12
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:shulker_magenta/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 13
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:shulker_orange/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 14
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:shulker_undyed/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 16
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:shulker_white/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 15
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:shulker_yellow/minecraft:variant/: 
+
+```json
+"minecraft:variant": {
+  "value": 11
+}
+```

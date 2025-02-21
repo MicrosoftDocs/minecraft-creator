@@ -1,55 +1,40 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.look_at_target
-description: "A reference document detailing the 'behavior.look_at_target' entity goal"
+title: "Entity Documentation - minecraft:behavior.look_at_target"
+description: "Describes the minecraft:behavior.look_at_target ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.look_at_target
 
-`minecraft:behavior.look_at_target` compels an entity to look at the target by rotating the head bone pose within a set limit.
+Compels an entity to look at the target by rotating the head bone pose within a set limit.
 
-> [!IMPORTANT]
-> `minecraft:behavior.look_at_target` requires a target in order to work properly. Target can be determined by using one of the following behaviors:
->
->- [minecraft:behavior.nearest_attackable_target](minecraftBehavior_nearest_attackable_target.md)
->- [minecraft:behavior.hurt_by_target](minecraftBehavior_hurt_by_target.md)
+> [!Note]
+> Requires a target in order to work properly. Entities can generate targets via one of the following behaviors:
+> 
+> * [minecraft:behavior.nearest_attackable_target](../EntityGoals/minecraftBehavior_nearest_attackble_target.md)
+> * [minecraft:behavior.hurt_by_target](../EntityGoals/minecraftBehavior_hurt_by_target.md)
 
-## Parameters
+## Look At Target Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|angle_of_view_horizontal| 360| Integer| TThe angle in degrees that the mob can see in the X-axis (left-right).|
-|angle_of_view_vertical| 360| Integer| The angle in degrees that the mob can see in the Y-axis (up-down). |
-|look_distance| 8.0| Decimal| The distance in blocks from which the entity will look at. |
-|look_time| [2, 4]| Range [a, b]| Time range to look at the entity. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|probability| 0.02|  Decimal| The probability of looking at the target. A value of 1.00 is 100%. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| angle_of_view_horizontal | 360 | Integer number | The angle in degrees that the mob can see in the Y-axis (up-down). |  | 
+| angle_of_view_vertical | 360 | Integer number | The angle in degrees that the mob can see in the X-axis (left-right). |  | 
+| look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at this mob's current target. |  | 
+| look_time | *not set* | Range of integers | Time range to look at this mob's current target. |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Wither: `5` | 
+| probability | 0.02 | Decimal number | The probability of looking at the target. A value of 1.00 is 100%. |  | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.look_at_target":{
-    "priority": 2,
-    "angle_of_view_horizontal":90,
-    "angle_of_view_vertical":90,
-    "look_distance": 16,
-    "look_time": [1,5],
-    "probability": 0.5
-}
-```
+#### [Wither](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wither.json)
 
-## Vanilla entities examples
-
-### wither
 
 ```json
 "minecraft:behavior.look_at_target": {
-        "priority": 5
-      }
+  "priority": 5
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.look_at_target`
-
-- [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)

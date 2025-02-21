@@ -1,62 +1,59 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:custom_hit_test
-description: "A reference document detailing the 'custom_hit_test' entity component"
+title: "Entity Documentation - minecraft:custom_hit_test"
+description: "Describes the minecraft:custom_hit_test entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:custom_hit_test
 
-`minecraft:custom_hit_test` defines a list of hitboxes for melee and ranged hits against the entity.
+List of hitboxes for melee and ranged hits against the entity.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|hitboxes |*not set* | Array| Comma-separated array of hitboxes. |
+## Custom Hit Test Properties
 
-### hitboxes
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| hitboxes | *not set* | Array of strings | Comma seperated list of hitboxes. | Hoglin: `[{"width":1,"height":0.85,"pivot":[0,0.5,0]}]`, `[{"width":2,"height":1.75,"pivot":[0,1,0]}]` | 
 
-`hitboxes` is an array defined by two parameters. Each item has the following properties:
+## Samples
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|height|*not set*|  Decimal| Height of the hitbox in blocks. A negative value will be assumed to be 0. |
-|width|*not set*| Decimal| Width and Depth of the hitbox in blocks. A negative value will be assumed to be 0. |
-|pivot|*not set*| Vector [a,b,c]| The offset from the entity's anchor where the hitbox will spawn |
+#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
 
-## Example
-
-```json
-"minecraft:custom_hit_test":{
-    "hitboxes": [
-      {
-        "width": 1.0,
-        "height": 1.0,
-        "pivot": [ 0, 0, 0 ]
-      }
-    ]
-}
-```
-
-## Vanilla entities examples
-
-### hoglin
+At /minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:custom_hit_test/: 
 
 ```json
 "minecraft:custom_hit_test": {
-    "hitboxes": [
-        {
-            "width": 1.0,
-            "height": 0.85,
-            "pivot": [ 0, 0.5, 0 ]
-        }
-    ]
+  "hitboxes": [
+    {
+      "width": 1,
+      "height": 0.85,
+      "pivot": [
+        0,
+        0.5,
+        0
+      ]
+    }
+  ]
 }
 ```
 
-## Vanilla entities using `minecraft:custom_hit_test`
+At /minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:custom_hit_test/: 
 
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
+```json
+"minecraft:custom_hit_test": {
+  "hitboxes": [
+    {
+      "width": 2,
+      "height": 1.75,
+      "pivot": [
+        0,
+        1,
+        0
+      ]
+    }
+  ]
+}
+```

@@ -1,47 +1,33 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:on_wake_with_owner
-description: "A reference document detailing the 'on_wake_with_owner' entity trigger"
+title: "Entity Documentation - minecraft:on_wake_with_owner"
+description: "Describes the minecraft:on_wake_with_owner entity trigger"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:on_wake_with_owner
 
-`minecraft:on_wake_with_owner` adds a trigger to call when this pet's owner awakes after sleeping with the pet.
+A trigger when a mob's tamed onwer wakes up.
 
-> [!NOTE]
-> `minecraft:on_wake_with_owner` requires a `player` to be tagged as the entity's owner, via taming or console command.
 
-## Parameters
+## On wake with owner trigger Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|event|*not set* | String|  The event to run when the conditions for this trigger are met. |
-|[filters](../FilterList.md)|*not set* | Minecraft Filter| The list of conditions for this trigger to execute. |
-|target| self| String| The target of the event. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| event | *not set* | String | The event to run when the conditions for this trigger are met. | Cat: `"minecraft:pet_slept_with_owner"` | 
+| filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. |  | 
+| target | self | String | The target of the event. | Cat: `"self"` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:on_wake_with_owner":{
-    "event": "minecraft:stretch",
-    "filters": "is_daytime",
-    "target": "self",
-}
-```
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
-## Vanilla entities examples
-
-### cat
 
 ```json
 "minecraft:on_wake_with_owner": {
-    "event": "minecraft:pet_slept_with_owner",
-    "target": "self"
+  "event": "minecraft:pet_slept_with_owner",
+  "target": "self"
 }
 ```
-
-## Vanilla entities using `minecraft:on_wake_with_owner`
-
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
