@@ -242,6 +242,8 @@
           href: Documents/Structures/JigsawTutorial.md
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
+        - name: Understanding Feature Types
+          href: Documents/FeaturesTaxonomy.md
         - name: A Simple Feature Tutorial
           href: Documents/FeaturesTutorial_1.md
         - name: A More Complex Feature Tutorial
