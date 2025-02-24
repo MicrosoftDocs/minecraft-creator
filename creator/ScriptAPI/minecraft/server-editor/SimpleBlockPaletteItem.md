@@ -23,3 +23,6 @@ new SimpleBlockPaletteItem(displayName?: string)
 - **displayName**?: *string* = `null`
 
 **Returns** [*SimpleBlockPaletteItem*](SimpleBlockPaletteItem.md)
+  
+Notes:
+- This function can't be called in read-only mode.

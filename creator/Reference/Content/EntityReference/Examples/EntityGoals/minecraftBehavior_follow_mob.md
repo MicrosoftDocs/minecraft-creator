@@ -1,48 +1,36 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.follow_mob
-description: "A reference document detailing the 'behavior.follow_mob' entity goal"
+title: "Entity Documentation - minecraft:behavior.follow_mob"
+description: "Describes the minecraft:behavior.follow_mob ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.follow_mob
 
-`minecraft:behavior.follow_mob` compels an entity to follow and gather around other mobs of the same type.
+Allows the mob to follow other mobs.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|search_range| 0| Integer| The distance in blocks it will look for a mob to follow. |
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
-|stop_distance| 2.0|Decimal| The distance in blocks this mob stops from the mob it is following. |
+## Follow Mob Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Parrot: `4` | 
+| search_range | 0 | Integer number | The distance in blocks it will look for a mob to follow | Parrot: `20` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Parrot: `1` | 
+| stop_distance | 2 | Decimal number | The distance in blocks this mob stops from the mob it is following | Parrot: `3` | 
 
-```json
-"minecraft:behavior.follow_mob":{
-    "priority": 2,
-    "search_range": 5,
-    "speed_multiplier": 0.50,
-    "stop_distance": 3.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
 
-### parrot
 
 ```json
 "minecraft:behavior.follow_mob": {
-          "priority": 3,
-          "speed_multiplier": 1.0,
-          "stop_distance": 3,
-          "search_range": 20
-        }
+  "priority": 4,
+  "speed_multiplier": 1,
+  "stop_distance": 3,
+  "search_range": 20
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.follow_mob`
-
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)

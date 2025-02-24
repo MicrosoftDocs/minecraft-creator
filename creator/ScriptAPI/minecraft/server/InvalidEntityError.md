@@ -22,9 +22,15 @@ The id of the entity that is now invalid.
 
 Type: *string*
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **type**
 `read-only type: string;`
 
 The type of the entity that is now invalid.
 
 Type: *string*
+
+Notes:
+  - This property can be read in early-execution mode.

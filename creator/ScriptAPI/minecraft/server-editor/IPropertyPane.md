@@ -35,6 +35,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addBool](#addbool)
 - [addBool_deprecated](#addbool_deprecated)
 - [addButton](#addbutton)
+- [addButtonPane](#addbuttonpane)
 - [addColorPicker](#addcolorpicker)
 - [addColorPicker_deprecated](#addcolorpicker_deprecated)
 - [addComboBox](#addcombobox)
@@ -116,16 +117,28 @@ Adds a boolean item to the pane.
 
 ### **addButton**
 `
-addButton(action: (() => void) | RegisteredAction<NoArgsAction>, options: IButtonPropertyItemOptions): IButtonPropertyItem
+addButton(action: ButtonPropertyItemSupportedActionTypes, options: IButtonPropertyItemOptions): IButtonPropertyItem
 `
 
-Adds a button to the pane and binds the specified action to the button activate.
+Adds a button to the pane and binds the specified action to the button interaction.
 
 #### **Parameters**
-- **action**: *(() => void) | RegisteredAction<NoArgsAction>*
+- **action**: *ButtonPropertyItemSupportedActionTypes*
 - **options**: *IButtonPropertyItemOptions*
 
 **Returns** *IButtonPropertyItem*
+
+### **addButtonPane**
+`
+addButtonPane(options: IButtonPanePropertyItemOptions): IButtonPanePropertyItem
+`
+
+Adds a pane for grouped button layout.
+
+#### **Parameters**
+- **options**: *IButtonPanePropertyItemOptions*
+
+**Returns** *IButtonPanePropertyItem*
 
 ### **addColorPicker**
 `

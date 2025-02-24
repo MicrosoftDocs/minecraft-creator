@@ -1,38 +1,28 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:movement.skip
-description: "A reference document detailing the 'movement.skip' entity component"
+title: "Entity Documentation - minecraft:movement.skip"
+description: "Describes the minecraft:movement.skip entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:movement.skip
 
-`minecraft:movement.skip` compels the entity to hop as it moves.
+This move control causes the mob to hop as it moves.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| max_turn| 30.0| Decimal| The maximum number in degrees the entity can turn per tick. |
+## Skip Movement Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. |  | 
 
-```json
-"minecraft:movement.skip":{
-    "max_turn": 30.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Rabbit](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/rabbit.json)
 
-### rabbit
 
 ```json
-"minecraft:movement.skip": {
-      }
+"minecraft:movement.skip": {}
 ```
-
-## Vanilla entities using `minecraft:movement.skip`
-
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)

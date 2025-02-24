@@ -1,136 +1,167 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:breathable
+title: "Entity Documentation - minecraft:breathable"
+description: "Describes the minecraft:breathable entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:breathable
 
-`minecraft:breathable` defines which blocks an entity can breathe in and defines the ability to suffocate in those blocks.
+Defines what blocks an entity can breathe in and gives them the ability to suffocate.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|breathe_blocks|*not set* | List|  List of blocks the entity can breathe in. |
-|breathes_air| true| Boolean| If true, the entity can breathe in air. |
-|breathes_lava| true| Boolean|  If true, the entity can breathe in lava. |
-|breathes_solids| false| Boolean|  If true, the entity can breathe in solid blocks. |
-|breathes_water| false| Boolean|  If true, the entity can breathe in water. |
-|generates_bubbles| true| Boolean|  If true, the entity will have visible bubbles while in water. |
-|inhale_time| 0| Decimal|  Time in seconds to recover breath to maximum. |
-|non_breathe_blocks|*not set* | List| List of blocks the entity can't breathe in, in addition to the other "breathes" parameters. |
-|suffocate_time| -20| Integer| Time in seconds between suffocation damage. |
-|total_supply| 15| Integer| Time in seconds the entity can hold its breath. |
+## Breathable Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| breathe_blocks | *not set* | Array of strings | List of blocks this entity can breathe in, in addition to the selected items above. |  | 
+| breathes_air | true | Boolean true/false | If set, this entity can breathe in air. | Axolotl: `true` | 
+| breathes_lava | true | Boolean true/false | If set, this entity can breathe in lava. | Magma Cube: `true` | 
+| breathes_solids | false | Boolean true/false | If set, this entity can breathe in solid blocks. |  | 
+| breathes_water | false | Boolean true/false | If set, this entity can breathe in water. | Axolotl: `true` | 
+| generates_bubbles | true | Boolean true/false | If set, this entity will have visible bubbles while in water. |  | 
+| inhale_time | 0 | Decimal number | Time in seconds to recover breath to maximum. | Player: `3.75` | 
+| non_breathe_blocks | *not set* | Array of strings | List of blocks this entity cannot breathe in, in addition to the selected items above. |  | 
+| suffocate_time | -20 | Integer number | Time in seconds between suffocation damage. | Player: `-1` | 
+| suffocateTime | *not set* | Decimal number |  | Bee: `-1` | 
+| total_supply | 15 | Integer number | Time in seconds the entity can hold its breath. | Armadillo: `15`, Dolphin: `240`, Tadpole: `8` | 
+| totalSupply | *not set* | Decimal number |  | Allay: `15` | 
 
-```json
-"minecraft:breathable":{
-    "breathes_air": true,
-    "breathes_lava": false,
-    "breathes_solids": false,
-    "breathes_water": false,
-    "generates_bubbles": true,
-    "inhale_time": 0.0,
-    "suffocate_time": -20,
-    "total_supply": 15
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Allay](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/allay.json)
 
-### dolphin
 
 ```json
 "minecraft:breathable": {
-    "total_supply": 240,
-    "suffocate_time": 0,
-    "breathes_air": true,
-    "breathes_water": false,
-    "generates_bubbles": false
+  "totalSupply": 15,
+  "suffocateTime": 0
 }
 ```
 
-### zombie
+#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
+
 
 ```json
 "minecraft:breathable": {
-    "total_supply": 15,
-    "suffocate_time": 0,
-    "breathes_air": true,
-    "breathes_water": true
+  "total_supply": 15,
+  "suffocate_time": 0
 }
 ```
 
-## Vanilla entities using `minecraft:breathable`
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [endermite](../../../../Source/VanillaBehaviorPack_Snippets/entities/endermite.md)
-- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
-- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
-- [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
-- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
-- [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
-- [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
-- [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+
+```json
+"minecraft:breathable": {
+  "total_supply": 15,
+  "suffocate_time": 0,
+  "breathes_water": true,
+  "breathes_air": true,
+  "generates_bubbles": false
+}
+```
+
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
+
+
+```json
+"minecraft:breathable": {
+  "totalSupply": 0,
+  "suffocateTime": -1
+}
+```
+
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
+
+
+```json
+"minecraft:breathable": {
+  "total_supply": 15,
+  "suffocate_time": 0,
+  "breathes_water": true
+}
+```
+
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
+
+
+```json
+"minecraft:breathable": {
+  "total_supply": 240,
+  "suffocate_time": 0,
+  "breathes_air": true,
+  "breathes_water": false,
+  "generates_bubbles": false
+}
+```
+
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+
+```json
+"minecraft:breathable": {
+  "total_supply": 15,
+  "suffocate_time": 0,
+  "breathes_air": true,
+  "breathes_water": true
+}
+```
+
+#### [Elder Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/elder_guardian.json)
+
+
+```json
+"minecraft:breathable": {
+  "breathes_water": true
+}
+```
+
+#### [Fish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fish.json)
+
+
+```json
+"minecraft:breathable": {
+  "total_supply": 15,
+  "suffocate_time": 0,
+  "breathes_air": false,
+  "breathes_water": true
+}
+```
+
+#### [Magma Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/magma_cube.json)
+
+
+```json
+"minecraft:breathable": {
+  "total_supply": 15,
+  "suffocate_time": 0,
+  "breathes_lava": true
+}
+```
+
+#### [Phantom](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/phantom.json)
+
+
+```json
+"minecraft:breathable": {
+  "total_supply": 15,
+  "suffocate_time": 0,
+  "breathes_air": true,
+  "breathes_water": false
+}
+```
+
+#### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
+
+
+```json
+"minecraft:breathable": {
+  "total_supply": 15,
+  "suffocate_time": -1,
+  "inhale_time": 3.75,
+  "generates_bubbles": false
+}
+```

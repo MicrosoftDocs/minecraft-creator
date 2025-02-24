@@ -11,7 +11,7 @@ ms.service: minecraft-bedrock-edition
 The minecraft:biome_filter component allows creators to specify which biomes an entity spawns in. Each biome in the game has one or more tags which are used to determine what biomes entities spawn in.
 
 > [!NOTE]
-> To learn more about how biomes are defined in JSON, please visit [Biome Documentation - Overview](../../../../BiomeReference/Examples/BiomeOverview.md)
+> To learn more about how biomes are defined in JSON, please visit [Biome Documentation - Overview](../../../../../../Documents/Biomes/BiomeOverview.md)
 
 Below is the list of Biome tags that can be used:
 

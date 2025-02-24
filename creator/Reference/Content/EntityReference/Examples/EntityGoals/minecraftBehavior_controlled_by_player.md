@@ -1,49 +1,50 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.controlled_by_player
-description: "A reference document detailing the 'behavior.controlled_by_player' entity goal"
+title: "Entity Documentation - minecraft:behavior.controlled_by_player"
+description: "Describes the minecraft:behavior.controlled_by_player ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.controlled_by_player
 
-`minecraft:behavior.controlled_by_player` compels the entity to be controlled by the player using an item in the item_controllable property. On every tick, the entity will attempt to rotate towards where the player is facing with the control item whilst simultaneously moving forward.
+Allows the entity to be controlled by the player using an item in the item_controllable property (required). On every tick, the entity will attempt to rotate towards where the player is facing with the control item whilst simultaneously moving forward.
 
-> [!NOTE]
-> This requires both an item_controllable quality, the minecraft:movement property and the minecraft:rideable property.
+> [!Note]
+> Requires the following components in order to work properly:
+> 
+> * [Movement (minecraft:movement)](../EntityComponents/minecraftComponent_movement.md)
+> * [Rideable (minecraft:rideable)](../EntityComponents/minecraftComponent_rideable.md)
+> * [Item Controllable (minecraft:item_controllable)](../EntityComponents/minecraftComponent_item_controllable.md)
+> 
 
-## Parameters
+## Controlled By Player Behavior Properties
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| fractional_rotation| 0.5| Decimal| The entity will attempt to rotate to face where the player is facing each tick. The entity will target this percentage of their difference in their current facing angles each tick (from 0.0 to 1.0 where 1.0 = 100%). This is limited by FractionalRotationLimit. A value of 0.0 will result in the entity no longer turning to where the player is facing. |
-| fractional_rotation_limit| 5.0| Decimal| Limits the total degrees the entity can rotate to face where the player is facing on each tick. |
-| mount_speed_multiplier| 1.0| Decimal| Speed multiplier of mount when controlled by player. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| fractional_rotation | 0.5 | Decimal number | The entity will attempt to rotate to face where the player is facing each tick. The entity will target this percentage of their difference in their current facing angles each tick (from 0.0 to 1.0 where 1.0 = 100%). This is limited by FractionalRotationLimit. A value of 0.0 will result in the entity no longer turning to where the player is facing. |  | 
+| fractional_rotation_limit | 5 | Decimal number | Limits the total degrees the entity can rotate to face where the player is facing on each tick. |  | 
+| mount_speed_multiplier | 1 | Decimal number | Speed multiplier of mount when controlled by player. | Strider: `1.45` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.controlled_by_player": {
-    "mount_speed_multiplier": 1.45,
-    "fractional_rotation": 0.5,
-    "fractional_rotation_limit": 5.0
-}
-```
+#### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
 
-## Vanilla entities examples
-
-### strider
 
 ```json
 "minecraft:behavior.controlled_by_player": {
-    "priority": 0,
-    "mount_speed_multiplier": 1.45
+  "priority": 0
 }
 ```
 
-## Vanilla entities using `controlled_by_player`
+#### [Strider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/strider.json)
 
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
+
+```json
+"minecraft:behavior.controlled_by_player": {
+  "priority": 0,
+  "mount_speed_multiplier": 1.45
+}
+```

@@ -18,7 +18,7 @@ Validates min/max limits of observable objects that support number
 Type: *boolean*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be used in read-only mode.
 
 ### **_max**
 `_max: number;`
@@ -26,7 +26,7 @@ Notes:
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be used in read-only mode.
 
 ### **_min**
 `_min: number;`
@@ -34,7 +34,7 @@ Notes:
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can't be used in read-only mode.
 
 ## Methods
 - [constructor](#(constructor))

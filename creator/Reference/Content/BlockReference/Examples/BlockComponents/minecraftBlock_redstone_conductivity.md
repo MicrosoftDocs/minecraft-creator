@@ -1,21 +1,25 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:redstone_conductivity
-description: "A reference document detailing the 'redstone_conductivity' block component"
+title: "Block Components Documentation - minecraft:redstone_conductivity"
+description: "Describes the minecraft:redstone_conductivity block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:redstone_conductivity
+# Block Components Documentation - minecraft:redstone_conductivity
 
-`minecraft:redstone_conductivity` specifies whether a block has redstone properties. If the component is not provided, the default values are used. 
+The basic redstone properties of a block; if the component is not provided the default values are used. Requires 1.21.30 format version and above.
+Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.30).
 
-Requires 1.21.30 format version and above. Experimental toggles required: Upcoming Creator Features (in format versions before **1.21.30**).
+## Alternate Simple Representations
 
-## Parameters
+This item can also be represented as a `String`.
 
-| Name| Type |Default Value| Description
-:-----------:|:-----------:|:-----------:|:-----------:
-| allows_wire_to_step_down | Boolean | True | Specifies if redstone wire can stair-step downward on the block. |
-| redstone_conductor | Boolean | False | Specifies if the block can be powered by redstone.|
 
+## Redstone Conductivity Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| allows_wire_to_step_down | true | Boolean true/false | Specifies if redstone wire can stair-step downward on the block. |  | 
+| redstone_conductor | false | Boolean true/false | Specifies if the block can be powered by redstone. |  | 

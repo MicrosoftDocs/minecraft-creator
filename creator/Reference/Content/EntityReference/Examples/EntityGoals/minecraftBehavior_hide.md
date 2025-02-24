@@ -1,53 +1,40 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.hide
-description: "A reference document detailing the 'behavior.hide' entity goal"
+title: "Entity Documentation - minecraft:behavior.hide"
+description: "Describes the minecraft:behavior.hide ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.hide
 
-`minecraft:behavior.hide` compels a mob with the `hide` component to attempt to move to an owned or nearby point of interest (POI) and hide there.
+Allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.
 
->[!IMPORTANT]
-> `minecraft:behavior.hide` requires a point of interest to be set in order to work properly.
+> [!Note]
+> Requires a point of interest to be set in order to work properly.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|duration| 1.0| Decimal| Amount of time in seconds that the mob reacts. |
-|poi_type|*not set* | String| Defines what POI type to hide at. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal |
-|timeout_cooldown| 8.0| Decimal| The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition. |
+## Hide Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| duration | 1 | Decimal number | Amount of time in seconds that the mob reacts. | Villager V2: `30` | 
+| poi_type | *not set* | String | Defines what POI type to hide at. | Villager V2: `"bed"` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Villager V2: `0.8` | 
+| timeout_cooldown | 8 | Decimal number | The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition. |  | 
 
-```json
-"minecraft:behavior.hide":{
-    "priority": 2,
-    "speed_multiplier": 1.2,
-    "poi_type": "bed",
-    "duration": 60.0,
-    "timeout_cooldown": 8.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
-### villager_v2
 
 ```json
 "minecraft:behavior.hide": {
-        "priority": 0,
-        "speed_multiplier": 0.8,
-        "poi_type": "bed",
-        "duration": 30.0
-      }
+  "priority": 0,
+  "speed_multiplier": 0.8,
+  "poi_type": "bed",
+  "duration": 30
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.hide`
-
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)

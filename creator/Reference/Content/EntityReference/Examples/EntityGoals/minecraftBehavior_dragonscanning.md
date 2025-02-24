@@ -1,42 +1,35 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.dragonscanning
-description: "A reference document detailing the 'behavior.dragonscanning' entity goal"
+title: "Entity Documentation - minecraft:behavior.dragonscanning"
+description: "Describes the minecraft:behavior.dragonscanning ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.dragonscanning
 
-`minecraft:behavior.dragonscanning` compels an entity to look around for a player to attack while in perch mode.
+Allows the dragon to look around for a player to attack while in perch mode.
 
-> [!NOTE]
-> This behavior can only be used by the `ender_dragon` entity type.
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Ender Dragon (minecraft:ender_dragon)
+> 
 
-## Parameters
+## Dragonscanning Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `2` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.dragonscanning":{
-    "priority": 3
-}
-```
+#### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
 
-## Vanilla entities examples
-
-### ender_dragon
 
 ```json
 "minecraft:behavior.dragonscanning": {
-    "priority": 2
+  "priority": 2
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.dragonscanning`
-
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)

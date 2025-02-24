@@ -1,30 +1,81 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:durability
-description: "A reference document detailing the 'durability' item component"
+title: "Items Documentation - minecraft:durability"
+description: "Describes the minecraft:durability item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:durability
+# Items Documentation - minecraft:durability
 
-`minecraft:durability` sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table.
+Sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|damage_chance|*not set* |JSON Object| Damage chance is the percentage chance of this item losing durability. Default is set at 100. Defined as an int range with min and max value.|
-|max_durability|*not set* |Integer | Max durability is the amount of damage that this item can take before breaking. This is a required parameter with a minimum value of 0.|
+## Durability Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| damage_chance | *not set* | Object | Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value. | My Sword Chuck: `{"min":10,"max":50}`, My Sword Singing: `{"min":0,"max":0}`, My Sword Weak: `{"min":100,"max":100}` | 
+| max_durability | *not set* | Integer number | Max durability is the amount of damage that this item can take before breaking. This is a required parameter and has a minimum of 0. | Chestplate: `200`, My Sword Chuck: `10`, My Sword Singing: `1000` | 
+
+## Samples
+
 
 ```json
-"minecraft:durability":{
-    "damage_chance": {
-        "min": 10,
-        "max": 50
-},
-    "max_durability": 36
+"minecraft:durability": {
+  "damage_chance": {
+    "min": 10,
+    "max": 50
+  },
+  "max_durability": 36
+}
+```
+
+#### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
+
+
+```json
+"minecraft:durability": {
+  "max_durability": 200
+}
+```
+
+#### [My Sword Chuck](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json)
+
+
+```json
+"minecraft:durability": {
+  "damage_chance": {
+    "min": 10,
+    "max": 50
+  },
+  "max_durability": 10
+}
+```
+
+#### [My Sword Singing](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_singing.json)
+
+
+```json
+"minecraft:durability": {
+  "damage_chance": {
+    "min": 0,
+    "max": 0
+  },
+  "max_durability": 1000
+}
+```
+
+#### [My Sword Weak](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_weak.json)
+
+
+```json
+"minecraft:durability": {
+  "damage_chance": {
+    "min": 100,
+    "max": 100
+  },
+  "max_durability": 2
 }
 ```

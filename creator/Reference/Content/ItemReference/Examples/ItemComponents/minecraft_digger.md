@@ -1,42 +1,43 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:digger
-description: "A reference document detailing the 'digger' item component"
+title: "Items Documentation - minecraft:digger"
+description: "Describes the minecraft:digger item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:digger
+# Items Documentation - minecraft:digger
 
-`minecraft:digger` allows a creator to determine how quickly an item can dig specific blocks.
+Allows a creator to determine how quickly an item can dig specific blocks.
 
-[Here is a list of addon blocks.](../../../AddonsReference/Examples/AddonBlocks.md)
 
-[Here is a list of vanilla block tags.](../../../BlockReference/Examples/VanillaBlockTags.md)
+## Digger Properties
 
-## Parameters
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| destroy_speeds | *not set* | Array of objects | A list of blocks to dig with correlating speeds of digging. |  | 
+| use_efficiency | *not set* | Boolean true/false | Determines whether this item should be impacted if the efficiency enchantment is applied to it. |  | 
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| destroy_speeds| *not set*| Array| A list of blocks to dig, with correlating speeds of digging.|
-| use_efficiency| *not set*| Boolean| Determines whether the item should be impacted if the `efficiency` enchant is applied to it.|
+## Samples
 
-## Example
 
 ```json
 "minecraft:digger": {
-  "use_efficiency": true,
-  "destroy_speeds": [
-    {
-      "speed": 6,
-      "block": {
-        "tags": "query.any_tag( 'wood' )"
+  "minecraft:digger": {
+    "use_efficiency": true,
+    "destroy_speeds": [
+      {
+        "speed": 6,
+        "block": {
+          "tags": "query.any_tag( 'wood' )"
+        }
+      },
+      {
+        "block": "minecraft:coal_ore",
+        "speed": 2
       }
-    },
-    {
-      "block": "minecraft:coal_ore",
-      "speed": 2
-    }
-  ]
+    ]
+  }
 }
 ```

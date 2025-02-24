@@ -1,49 +1,34 @@
 ---
-author: IconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:bundle_interaction
-description: "A reference document detailing the 'bundle_interaction' item component"
+title: "Items Documentation - minecraft:bundle_interaction"
+description: "Describes the minecraft:bundle_interaction item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:bundle_interaction
+# Items Documentation - minecraft:bundle_interaction
 
-`minecraft:bundle_interaction` enables the bundle-specific interaction scheme and tooltip for an item.
+Enables the bundle-specific interaction scheme and tooltip for an item.
 
-> [!IMPORTANT]
-> To use this component, the item must have a **`minecraft:storage_item`** item component defined. 
+> [!Note]
+> To use this component, the item must have a minecraft:storage_item item component defined.
 
-## Parameters
+> [!Note]
+> In `/textures/textures_list.json`, the following code needs to be added for an item named `my_custom_bundle`: [ '<resource pack>/textures/items/my_custom_bundle.png', '<resource pack>/textures/items/my_custom_bundle_open_front.png','<resource pack>/textures/items/my_custom_bundle_open_back.png']. The respective icon textures would need to be added: my_custom_bundle.png, my_custom_bundle_open_front.png, my_custom_bundle_open_back.png. Note that it's important that the filenames are the item name, plus `_open_front` and `_open_back` respectively.
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| num_viewable_slots | *not set* | Integer | This value can be from 1 to 64. The tooltip will grow as items are added until `num_viewable_slots` has been surpassed. Then, all items will shift down and hidden items are represented by an icon showing the number of hidden items: +XX.|
 
-## Defining Front/Back Icon Textures
+## Bundle Interaction Properties
 
-In **/textures/textures_list.json**, the following code needs to be added for an item named **"my_custom_bundle"**:
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| num_viewable_slots | *not set* | Integer number | The maximum number of slots in the bundle viewable by the plater. Can be from 1 to 64. Default is 12. | Black Bundle: `12` | 
 
-```json
-[
-  "<resource pack>/textures/items/my_custom_bundle.png"
-  "<resource pack>/textures/items/my_custom_bundle_open_front.png"
-  "<resource pack>/textures/items/my_custom_bundle_open_back.png"
-]
-```
+## Samples
 
-The respective icon textures would need to be added:
- - my_custom_bundle.png
- - my_custom_bundle_open_front.png
- - my_custom_bundle_open_back.png
-
-Note that it's important that the filenames are the item name, plus **"_open_front"** and **"_open_back"** respectively.
-
-### Example
-
-The bundle item is defined as follows:
 
 ```json
-{
+"minecraft:bundle_interaction": {
   "format_version": "1.21.30",
   "minecraft:item": {
     "description": {
@@ -61,7 +46,9 @@ The bundle item is defined as follows:
         "max_weight_limit": 64,
         "weight_in_storage_item": 4,
         "allow_nested_storage_items": true,
-        "banned_items": [ "minecraft:shulker_box" ]
+        "banned_items": [
+          "minecraft:shulker_box"
+        ]
       },
       "minecraft:bundle_interaction": {
         "num_viewable_slots": 8
@@ -71,13 +58,11 @@ The bundle item is defined as follows:
 }
 ```
 
-And the following icon textures are defined in textures/textures_list.json
+#### [Black Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/black_bundle.json)
+
 
 ```json
-[
-  "textures/items/bundle.png",
-  "textures/items/bundle_open.png",
-  "textures/items/bundle_open_back.png",
-  "textures/items/bundle_open_front.png"
-]
+"minecraft:bundle_interaction": {
+  "num_viewable_slots": 12
+}
 ```

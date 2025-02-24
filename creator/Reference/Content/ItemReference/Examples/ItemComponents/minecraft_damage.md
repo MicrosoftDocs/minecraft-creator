@@ -1,23 +1,28 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:damage
-description: "A reference document detailing the 'damage' item component"
+title: "Items Documentation - minecraft:damage"
+description: "Describes the minecraft:damage item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:damage
+# Items Documentation - minecraft:damage
 
-`minecraft:damage` determines how much extra damage an item does on attack.
+The damage component determines how much extra damage the item does on attack.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value|*not set* | Integer| How much extra damage the item does on attack. Note that this must be a positive value.|
+## Damage Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | Integer number | Specifies how much extra damage the item does, must be a positive number. |  | 
+
+## Samples
+
 
 ```json
-"minecraft:damage": 2,
+"minecraft:damage": {
+  "minecraft:damage": 2
+}
 ```

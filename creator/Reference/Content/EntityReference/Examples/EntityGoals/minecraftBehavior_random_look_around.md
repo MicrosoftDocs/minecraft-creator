@@ -1,88 +1,125 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.random_look_around
-description: "A reference document detailing the 'behavior.random_look_around' entity goal"
+title: "Entity Documentation - minecraft:behavior.random_look_around"
+description: "Describes the minecraft:behavior.random_look_around ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.random_look_around
 
-`minecraft:behavior.random_look_around` compels an entity to choose a random direction to look in for a random duration within a range.
+Allows the mob to randomly look around.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|angle_of_view_horizontal|360|Integer|The angle in degrees that an entity can see in the Y-axis (up-down).|
-|angle_of_view_vertical|360|Integer|The angle in degrees that an entity can see in the X-axis (left-right).|
-|look_distance|8.0|Float|The distance in blocks from which the entity will look at.|
-|look_time| [2, 4]| Range [a, b]|  The range of time in seconds the mob will stay looking in a random direction before looking elsewhere. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|probability|0.2|Float|The probability of looking at the target. A value of 1.00 is 100%.|
+## Random Look Around Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| look_distance | *not set* | Decimal number |  | Witch: `8` | 
+| look_time | *not set* | Range of integers | The range of time in seconds the mob will stay looking in a random direction before looking elsewhere |  | 
+| max_angle_of_view_horizontal | 30 | Integer number | The rightmost angle a mob can look at on the horizontal plane with respect to its initial facing direction. |  | 
+| min_angle_of_view_horizontal | -30 | Integer number | The leftmost angle a mob can look at on the horizontal plane with respect to its initial facing direction. |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `8`, Blaze: `5`, Cave Spider: `7` | 
 
-```json
-"minecraft:behavior.random_look_around":{
-    "priority": 2,
-    "look_time": [1,5]
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Allay](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/allay.json)
 
-### blaze
 
 ```json
 "minecraft:behavior.random_look_around": {
-        "priority": 5
-      }
+  "priority": 8
+}
 ```
 
-### Vanilla entities using `minecraft:behavior.random_look_around`
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
 
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
-- [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
-- [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
-- [zombie pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 5
+}
+```
+
+#### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
+
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 7
+}
+```
+
+#### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
+
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 9
+}
+```
+
+#### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
+
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 6
+}
+```
+
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 15
+}
+```
+
+#### [Goat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/goat.json)
+
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 11
+}
+```
+
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
+
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 12
+}
+```
+
+#### [Pillager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pillager.json)
+
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 10
+}
+```
+
+#### [Snow Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/snow_golem.json)
+
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 4
+}
+```
+
+#### [Witch](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/witch.json)
+
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 5,
+  "look_distance": 8
+}
+```

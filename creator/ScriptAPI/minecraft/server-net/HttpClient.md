@@ -50,7 +50,7 @@ Cancels all pending requests.
 - **reason**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **get**
 `
@@ -67,7 +67,7 @@ Performs a simple HTTP get request.
 **Returns** Promise&lt;[*HttpResponse*](HttpResponse.md)&gt; - An awaitable promise that contains the HTTP response.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **request**
 `
@@ -84,7 +84,7 @@ Performs an HTTP request.
 **Returns** Promise&lt;[*HttpResponse*](HttpResponse.md)&gt; - An awaitable promise that contains the HTTP response.
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 #### Examples
 

@@ -154,6 +154,9 @@ Gets a state for the permutation.
   Name of the block state who's value is to be returned.
 
 **Returns** *minecraftvanilladata.BlockStateSuperset[T] | undefined* - Returns the state if the permutation has it, else `undefined`.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getTags**
 `
@@ -258,6 +261,9 @@ Returns a boolean whether a specified permutation matches this permutation. If s
 - **states**: *BlockStateArg<T>*
 
 **Returns** *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **withState**
 `
@@ -277,6 +283,7 @@ Returns a derived BlockPermutation with a specific property set.
 **Returns** *BlockPermutation*
   
 Notes:
+- This function can't be called in read-only mode.
 - This function can throw errors.
 
 ### **resolve**
@@ -295,6 +302,7 @@ Given a type identifier and an optional set of properties, will return a BlockPe
 **Returns** *BlockPermutation*
   
 Notes:
+- This function can't be called in read-only mode.
 - This function can throw errors.
 
 #### Examples

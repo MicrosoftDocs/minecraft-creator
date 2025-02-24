@@ -1,42 +1,111 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:geometry
-description: "A reference document detailing the 'geometry' block component"
+title: "Block Components Documentation - minecraft:geometry"
+description: "Describes the minecraft:geometry block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:geometry
+# Block Components Documentation - minecraft:geometry
 
-`minecraft:geometry` is an `Identifier String` component that specifies the geometry description identifier to use to render this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs.
+The description identifier of the geometry to use to render this block. This identifier must either match an existing geometry identifier in any of the loaded resource packs or be one of the currently supported Vanilla identifiers: "minecraft:geometry.full_block" or "minecraft:geometry.cross".
 
-## UV Rotation (preview feature)
-In version 1.21.0 of Minecraft, your geometry model can use a new `uv_rotation` attribute, in 90 degeree increments, to adjust the rotation of how UV textures apply to cube faces. See [the 1.21.0 geometry reference](../../../SchemasReference/Schemas/minecraftSchema_geometry_1.21.0.md) for more details.
+## Alternate Simple Representations
 
-## Default Value of the Component
+This item can also be represented as a `String`.
 
-This component is specified as an `Identifier String`, so it does not have a default value. You must provide a valid geometry identifier in order to use this component.
 
-## bone_visibility
+## Geometry Properties
 
-`minecraft:bone_visibility` is an optional array of Booleans that define the visibility of individual bones in the geometry file. In order to set up 'bone_visibility' the geometry file name must be entered as an identifier. After the identifier has been specified, bone_visibility can be defined based on the names of the bones in the specified geometry file on a true/false basis.
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| bone_visibility | *not set* | Keyed collection of boolean values |  | Blue Bubble Fish: `{"bb_main":true,"fish":true}` | 
+| identifier | *not set* | String |  | Blue Bubble Fish: `"geometry.bubble_fish"`, Die: `"minecraft:geometry.full_block"` | 
 
-Note that all bones default to 'true,' so bones should only be defined if they are being set to 'false.' Including bones set to 'true' will work the same as the default.
+## Samples
 
-## Basic Geometry Example
+#### [Blue Bubble Fish](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json)
+
 
 ```json
-"minecraft:geometry": "geometry.bubble_fish"
+"minecraft:geometry": {
+  "identifier": "geometry.bubble_fish",
+  "bone_visibility": {
+    "bb_main": true,
+    "fish": true
+  }
+}
 ```
 
-## Geometry and Bone Visibility Example
+#### [California Roll](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks/behavior_packs/custom_blocks/blocks/california_roll.json)
+
 
 ```json
-"minecraft:geometry": { 
-        "identifier": "geometry:bubble_fish", 
-        "bone_visibility": { 
-          "bone1": true, 
-          "bone2": false 
-        } 
-      }
+"minecraft:geometry": "geometry.sushi"
+```
+
+#### [Die](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks/behavior_packs/custom_blocks/blocks/die.json)
+
+
+```json
+"minecraft:geometry": {
+  "identifier": "minecraft:geometry.full_block"
+}
+```
+
+#### [Block Orange Ore](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.orange_ore"
+```
+
+#### [Apple Block](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json)
+
+
+```json
+"minecraft:geometry": "geometry.apple_block"
+```
+
+#### [Block Frond Top](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.frond_top"
+```
+
+#### [Block Palm Leave Corner](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_corner.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.palm_leave_corner"
+```
+
+#### [Block Palm Leave Tip](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_tip.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.palm_leave_tip"
+```
+
+#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.palm_leave"
+```
+
+#### [Block Palm Tree Top](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_tree_top.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.palm_tree_top"
+```
+
+#### [Block Palm Trunk](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_trunk.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.palm_trunk"
 ```

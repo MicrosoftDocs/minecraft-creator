@@ -51,3 +51,6 @@ new WidgetComponentRenderPrimitiveTypeLine(start: minecraftserver.Vector3, end: 
 - **color**: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 **Returns** [*WidgetComponentRenderPrimitiveTypeLine*](WidgetComponentRenderPrimitiveTypeLine.md)
+  
+Notes:
+- This function can't be called in read-only mode.

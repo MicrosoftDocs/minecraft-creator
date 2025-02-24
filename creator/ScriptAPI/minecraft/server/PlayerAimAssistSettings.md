@@ -11,10 +11,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
- 
-## Required Experiments
-- Camera Aim Assist
-
 
 Settings relating to a player's aim-assist targeting.
 

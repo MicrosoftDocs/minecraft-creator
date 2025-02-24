@@ -23,3 +23,6 @@ Thrown when a name requires a namespace and an error occurs when validating that
 `read-only reason: NamespaceNameErrorReason;`
 
 Type: [*NamespaceNameErrorReason*](NamespaceNameErrorReason.md)
+
+Notes:
+  - This property can be read in early-execution mode.

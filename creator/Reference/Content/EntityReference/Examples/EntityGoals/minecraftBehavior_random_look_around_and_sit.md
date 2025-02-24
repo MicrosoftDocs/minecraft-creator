@@ -1,58 +1,64 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.random_look_around_and_sit
-description: "A reference document detailing the 'behavior.random_look_around_and_sit' entity goal"
+title: "Entity Documentation - minecraft:behavior.random_look_around_and_sit"
+description: "Describes the minecraft:behavior.random_look_around_and_sit ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.random_look_around_and_sit
 
-`minecraft:behavior.random_look_around_and_sit` compels an entity to sit in place and look around in different directions. The entity must have a sitting animation configured in order to use this goal.
+Allows the mob to randomly sit and look around for a duration. Note: Must have a sitting animation set up to use this.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|continue_if_leashed| false| Boolean|  Determines if the goal should continue to be used if the entity is leashed. |
-|continue_sitting_on_reload| false| Boolean| When set to 'true' the entity will stay sitting on reload.|
-|max_angle_of_view_horizontal| 30.0| Decimal| The rightmost angle the entity can look at on the horizontal plane with respect to its initial facing direction.|
-|max_look_count| 2| Integer|  The max amount of unique looks an entity will have while looking around. |
-|max_look_time| 40| Integer|  The max amount of time (in ticks) an entity will stay looking at a direction while looking around. |
-|min_angle_of_view_horizontal| -30.0| Decimal| The leftmost angle the entity can look at on the horizontal plane with respect to its initial facing direction.|
-|min_look_count| 1| Integer| The min amount of unique looks an entity will have while looking around. |
-|min_look_time| 20| Integer|  The min amount of time (in ticks) an entity will stay looking at a direction while looking around. |
-| probability| 0.02| Decimal| The probability of randomly looking around/sitting. |
-| random_look_around_cooldown| 0| Integer| The cooldown in seconds before the goal can be used again. |
+## Random Look Around And Sit Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| continue_if_leashed | false | Boolean true/false | If the goal should continue to be used as long as the mob is leashed. | Camel: `true` | 
+| continue_sitting_on_reload | false | Boolean true/false | The mob will stay sitting on reload. | Camel: `true` | 
+| max_angle_of_view_horizontal | 30 | Decimal number | The rightmost angle a mob can look at on the horizontal plane with respect to its initial facing direction. | Camel: `30` | 
+| max_look_count | 2 | Integer number | The max amount of unique looks a mob will have while looking around. | Camel: `5` | 
+| max_look_time | 40 | Integer number | The max amount of time (in ticks) a mob will stay looking at a direction while looking around. | Camel: `100` | 
+| min_angle_of_view_horizontal | -30 | Decimal number | The leftmost angle a mob can look at on the horizontal plane with respect to its initial facing direction. | Camel: `-30` | 
+| min_look_count | 1 | Integer number | The min amount of unique looks a mob will have while looking around. | Camel: `2` | 
+| min_look_time | 20 | Integer number | The min amount of time (in ticks) a mob will stay looking at a direction while looking around. | Camel: `80` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Camel: `4`, Fox: `12` | 
+| probability | 0.02 | Decimal number | The probability of randomly looking around/sitting. | Camel: `0.001` | 
+| random_look_around_cooldown | 0 | Integer number | The cooldown in seconds before the goal can be used again. | Camel: `5` | 
 
-```json
-"minecraft:behavior.random_look_around_and_sit":{
-    "priority": 2,
-    "max_look_count": 4,
-    "min_look_count": 1,
-    "max_look_time": 60,
-    "min_look_time": 5,
-    "probability": 0.35
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
 
-### fox
 
 ```json
 "minecraft:behavior.random_look_around_and_sit": {
-        "priority": 12,
-        "min_look_count": 2,
-        "max_look_count": 5,
-        "min_look_time": 80,
-        "max_look_time": 100,
-        "probability": 0.001
-      }
+  "priority": 4,
+  "continue_if_leashed": true,
+  "continue_sitting_on_reload": true,
+  "min_look_count": 2,
+  "max_look_count": 5,
+  "min_look_time": 80,
+  "max_look_time": 100,
+  "min_angle_of_view_horizontal": -30,
+  "max_angle_of_view_horizontal": 30,
+  "random_look_around_cooldown": 5,
+  "probability": 0.001
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.random_look_around_and_sit`
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
 
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+
+```json
+"minecraft:behavior.random_look_around_and_sit": {
+  "priority": 12,
+  "min_look_count": 2,
+  "max_look_count": 5,
+  "min_look_time": 80,
+  "max_look_time": 100,
+  "probability": 0.001
+}
+```

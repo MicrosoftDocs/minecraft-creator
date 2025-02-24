@@ -1,33 +1,19 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:friction_modifier
-description: "A reference document detailing the 'friction_modifier' entity component"
+title: "Entity Documentation - minecraft:friction_modifier"
+description: "Describes the minecraft:friction_modifier entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:friction_modifier
+# Entity Documentation - minecraft:friction_modifier
 
-`minecraft:friction_modifier` defines how much friction affects this entity.
+Defines how much friction affects this entity.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 1.0| Decimal| The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much. |
+## Friction Modifier Properties
 
-## Example
-
-```json
-"minecraft:friction_modifier":{
-    "value": 2.0
-}
-```
-
-## Vanilla entities examples
-
-No entities currently use `minecraft:friction_modifier`
-
-## Vanilla entities using `minecraft:friction_modifier`
-
-No entities currently use `minecraft:friction_modifier`
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 1 | Decimal number | The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much. |  | 

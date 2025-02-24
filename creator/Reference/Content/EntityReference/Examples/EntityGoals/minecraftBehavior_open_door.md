@@ -1,40 +1,32 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.open_door
-description: "A reference document detailing the 'behavior.open_door' entity goal"
+title: "Entity Documentation - minecraft:behavior.open_door"
+description: "Describes the minecraft:behavior.open_door ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.open_door
 
-`minecraft:behavior.open_door` compels an entity to interact and open a door.
+Allows the mob to open doors. Requires the mob to be able to path through doors, otherwise the mob won't even want to try opening them.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|close_door_after| true| Boolean| If true, the mob will close the door after opening it and going through it. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Open Door Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| close_door_after | true | Boolean true/false | If true, the mob will close the door after opening it and going through it | Villager: `true` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager: `6` | 
 
-```json
-"minecraft:behavior.open_door":{
-    "priority": 2,
-    "close_door_after":true
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
-### villager
 
 ```json
-"minecraft:annotation.open_door": {
+"minecraft:behavior.open_door": {
+  "priority": 6,
+  "close_door_after": true
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.open_door`
-
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)

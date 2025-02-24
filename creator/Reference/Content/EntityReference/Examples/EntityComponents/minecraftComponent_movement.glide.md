@@ -1,39 +1,20 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:movement.glide
-description: "A reference document detailing the 'movement.glide' entity component"
+title: "Entity Documentation - minecraft:movement.glide"
+description: "Describes the minecraft:movement.glide entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:movement.glide
 
-`minecraft:movement.glide` is the move control for a flying entity that has a gliding movement.
+This move control causes the mob to glide.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| max_turn| 30.0| Decimal| The maximum number in degrees the entity can turn per tick. |
+## Glide Movement Properties
 
-## Example
-
-```json
-"minecraft:movement.glide": {
-    "start_speed": 0.1,
-    "speed_when_turning": 0.2
-}
-```
-
-## Vanilla entities examples
-
-### phantom
-
-"minecraft:movement.glide": {
-    "start_speed": 0.1,
-    "speed_when_turning": 0.2
-}
-
-## Vanilla entities using `minecraft:movement.glide`
-
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. |  | 
+| speed_when_turning | 0.2 | Decimal number | Speed that the mob adjusts to when it has to turn quickly. |  | 

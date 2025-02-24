@@ -18,48 +18,20 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (comment to space cards)
-  - title: Addons
+  - title: Vanilla Listings
     linkLists:
       - linkListType: overview
         links:
-           - text: Addons JSON Documentation Homepage
-             url: Content/addonsreference/index.yml
+           - text: Vanilla Listings Documentation Homepage
+             url: Content/VanillaListingsReference/index.yml
       - linkListType: reference
         links:
-           - text: Addon Blocks
-             url: Content/addonsreference/Examples/AddonBlocks.md
-           - text: Addon Entities
-             url: Content/addonsreference/Examples/addonEntities.md
-           - text: Addon Items
-             url: Content/Addonsreference/Examples/AddonItems.md
-           - text: Addon Manifest JSON
-             url: Content/addonsreference/Examples/AddonManifest.md
-  # Card (comment to space cards)
-  - title: Animation
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Animation JSON Documentation Homepage
-            url: Content/animationsreference/index.yml
-          - text: Animation Reference - Getting Started
-            url: Content/animationsreference/Examples/AnimationGettingStarted.md
-      - linkListType: reference
-        links:
-          - text: Animation Reference - Upgrading Animation Scripts
-            url: Content/animationsreference/Examples/AnimationUpgrade.md
-          - text: Animation Controllers
-            url: Content/animationsreference/Examples/AnimationController.md
-          - text: Render Controllers
-            url: Content/animationsreference/Examples/AnimationRenderController.md
-  # Card (comment to space cards)
-  - title: Biome and Fogs
-    linkLists:
-      - linkListType: overview
-        links:
-           - text: Biome overview
-             url: Content/biomereference/Examples/Biomeoverview.md
-           - text: Introduction to Fogs
-             url: Content/FogsReference/Examples/FogsIntroduction.md
+           - text: Vanilla Blocks
+             url: Content/VanillaListingsReference/Blocks.md
+           - text: Vanilla Entities
+             url: Content/VanillaListingsReference/Entities.md
+           - text: Vanilla Items
+             url: Content/VanillaListingsReference/Items.md
   # Card (comment to space cards)
   - title: Blocks
     linkLists:

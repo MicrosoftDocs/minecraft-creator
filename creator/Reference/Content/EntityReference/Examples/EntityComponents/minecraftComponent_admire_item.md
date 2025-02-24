@@ -1,42 +1,32 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:admire_item
-description: "A reference document detailing the 'admire_item' entity component"
+title: "Entity Documentation - minecraft:admire_item"
+description: "Describes the minecraft:admire_item entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:admire_item
 
-`minecraft:admire_item` compels an entity to ignore attackable targets for a given duration.
+Allows an entity to ignore attackable targets for a given duration.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|cooldown_after_being_attacked| 0| Integer|  Duration, in seconds, that th mob won't admire items if it was hurt |
-|duration| 10| Integer|  Duration, in seconds, that the mob is pacified. |
+## Admire Item Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| cooldown_after_being_attacked | 0 | Integer number | Duration, in seconds, for which mob won't admire items if it was hurt | Piglin: `20` | 
+| duration | 10 | Integer number | Duration, in seconds, that the mob is pacified. | Piglin: `8` | 
 
-```json
-"minecraft:admire_item":{
-    "cooldown_after_being_attacked": 5,
-    "duration":10
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
 
-### piglin
 
 ```json
 "minecraft:admire_item": {
-    "duration": 8,
-    "cooldown_after_being_attacked": 20
+  "duration": 8,
+  "cooldown_after_being_attacked": 20
 }
 ```
-
-## Vanilla entities using `minecraft:admire_item`
-
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)

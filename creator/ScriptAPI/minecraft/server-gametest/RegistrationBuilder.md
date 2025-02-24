@@ -39,6 +39,7 @@ Sets the batch for the test to run in.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **maxAttempts**
 `
@@ -54,6 +55,7 @@ Sets the maximum number of times a test will try to rerun if it fails.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **maxTicks**
 `
@@ -69,6 +71,7 @@ Sets the maximum number of ticks a test will run for before timing out and faili
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **padding**
 `
@@ -86,6 +89,7 @@ Size around the GameTest, in blocks, that should be reserved for the test when r
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **required**
 `
@@ -103,6 +107,7 @@ Whether this test is required to pass as part of its broader set of tests.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **requiredSuccessfulAttempts**
 `
@@ -118,6 +123,7 @@ Sets the number of successful test runs to be considered successful.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **rotateTest**
 `
@@ -133,6 +139,7 @@ If true, runs the test in all four rotations when run via /gametest runset.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **setupTicks**
 `
@@ -148,6 +155,7 @@ Sets the number of ticks for a test to wait before executing when the structure 
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **structureLocation**
 `
@@ -164,6 +172,7 @@ Overrides the default structure placement with a specific location and dimension
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
 
@@ -181,6 +190,7 @@ Sets the name of the structure for a test to use. "xyz:bar" will load `/structur
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 #### Examples
 
@@ -217,6 +227,7 @@ Adds a tag to a test. You can run all tests with a given tag with `/gametest run
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 #### Examples
 

@@ -1,21 +1,16 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:breathability
-description: "A reference document detailing the 'breathability' block component"
+title: "Block Components Documentation - minecraft:breathability"
+description: "Describes the minecraft:breathability block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:breathability
+# Block Components Documentation - minecraft:breathability
 
-`minecraft:breathability` is a string that specifies whether the block is breathable by defining if the block is treated as a `solid` or as `air`. 
+Determines whether the block is breathable by defining if the block is treated as a `solid` or as `air`. The default is `solid` if this component is omitted.
 
-## Default Value of the Component
+## Alternate Simple Representations
 
-The default is `solid` if this component is omitted. 
-
-## Example
-
-```json
-"minecraft:breathability": "solid"
-```
+This item can also be represented as a `String`.

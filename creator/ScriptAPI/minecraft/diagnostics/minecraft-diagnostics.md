@@ -14,8 +14,6 @@ Contains diagnostics functionality for discovering and diagnosing issues with co
 > [!CAUTION]
 > This module is still in pre-release.  It may change or it may be removed in future releases.
 
-`@minecraft/diagnostics` will only function within Bedrock Dedicated Server contexts. It will not function within games hosted by the Minecraft app, or within Realms.
-
 ## [Changelog](changelog.md)
 
 ## Manifest Details

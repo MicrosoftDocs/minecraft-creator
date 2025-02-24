@@ -1,8 +1,0 @@
- - name: Animation - Getting Started
-   href: AnimationGettingStarted.md
- - name: Animation - Upgrading Scripts
-   href: AnimationUpgrade.md
- - name: Animation - Animation Controllers
-   href: AnimationController.md
- - name: Animation - Render Controllers
-   href: AnimationRenderController.md

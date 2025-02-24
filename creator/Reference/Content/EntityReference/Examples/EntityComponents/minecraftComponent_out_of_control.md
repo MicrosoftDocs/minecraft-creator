@@ -1,48 +1,23 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:out_of_control
-description: "A reference document detailing the 'out_of_control' entity component"
+title: "Entity Documentation - minecraft:out_of_control"
+description: "Describes the minecraft:out_of_control entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:out_of_control
 
-`minecraft:out_of_control` defines the entity's 'out of control' state.
+Defines the entity's 'out of control' state.
 
-## Example
 
-```json
-"minecraft:out_of_control":{
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/boat.json)
 
-### boat
-
-In the `boat` entity, `minecraft:out_of_control` is used in conjunction with `minecraft:buoyant`to create a custom event.
+At /minecraft:entity/component_groups/minecraft:above_bubble_column_down/minecraft:out_of_control/: 
 
 ```json
-"minecraft:out_of_control": {
-        }
-      },
-      "minecraft:above_bubble_column_up": {
-        "minecraft:buoyant": {
-          "base_buoyancy": 1.0,
-          "apply_gravity": true,
-          "simulate_waves": false,
-          "liquid_blocks": [
-            "minecraft:water",
-            "minecraft:flowing_water"
-          ],
-          "drag_down_on_buoyancy_removed": 0.7
-        },
-        "minecraft:out_of_control": {
-        }
-      }
+"minecraft:out_of_control": {}
 ```
-
-## Vanilla entities using `minecraft:out_of_control`
-
-- [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)

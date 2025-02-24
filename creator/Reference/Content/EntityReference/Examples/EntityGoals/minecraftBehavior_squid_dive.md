@@ -1,43 +1,39 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.squid_dive
-description: "A reference document detailing the 'behavior.squid_dive' entity goal"
+title: "Entity Documentation - behavior.squid_dive"
+description: "Describes the behavior.squid_dive AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.squid_dive
+# Entity Documentation - behavior.squid_dive
 
-`minecraft:behavior.squid_dive` compels an entity to dive underwater.
+Allows the squid to dive down in water. Can only be used by the Squid.
 
-> [!NOTE]
-> This behavior can only be used by the `squid` entity type.
 
-## Parameters
+## Squid Dive Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Glow Squid: `2` | 
 
-## Example
+## Samples
+
+#### [Glow Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/glow_squid.json)
+
 
 ```json
-"minecraft:behavior.squid_dive":{
-    "priority": 2
+{
+  "priority": 2
 }
 ```
 
-## Vanilla entities examples
+#### [Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/squid.json)
 
-### squid
 
 ```json
-"minecraft:behavior.squid_dive": {
-    "priority": 2
+{
+  "priority": 2
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.squid_dive`
-
-- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)

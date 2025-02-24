@@ -17,3 +17,6 @@ description: Contents of the .FormRejectError class.
 `read-only reason: FormRejectReason;`
 
 Type: [*FormRejectReason*](FormRejectReason.md)
+
+Notes:
+  - This property can be read in early-execution mode.

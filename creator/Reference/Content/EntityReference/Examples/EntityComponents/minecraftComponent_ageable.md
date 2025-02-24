@@ -1,123 +1,284 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:ageable
-description: "A reference document detailing the 'ageable' entity component"
+title: "Entity Documentation - minecraft:ageable"
+description: "Describes the minecraft:ageable entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:ageable
 
-`minecraft:ageable` adds a timer for the entity to grow up. The timer can be accelerated by giving the entity items it likes as defined by `feed_items`.
+Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feed_items.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| drop_items |*not set* | List|  List of items the entity drops when it grows up. |
-| duration | 1200.0| Decimal |  Amount of time before the entity grows up, -1 for always a baby. |
-| feed_items |*not set* | List | List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time growth is accelerated. |
-| grow_up | *not set* | JSON Object  |  Event to run when the entity grows up. |
-| interact_filters| --| Minecraft Filter| A list of conditions to meet for the entity to be fed. |
-| transform_to_item |-- |Item Description Properties| The feed item used will transform into this item upon successful interaction. Format: `itemName:auxValue`. |
+## Ageable Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| drop_items | *not set* | Array of strings | List of items that the entity drops when it grows up. | Turtle: `["turtle_shell_piece"]` | 
+| duration | 1200 | Decimal number | Length of time before an entity grows up (-1 to always stay a baby) | Armadillo: `1200`, Sniffer: `2400` | 
+| feed_items | *not set* | Array of strings | List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by. | Armadillo: `"spider_eye"`, Axolotl: `"tropical_fish_bucket"`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:wildflowers","minecraft:cactus_flower"]` | 
+| feedItems | *not set* | Array of strings |  |  | 
+| grow_up | *not set* | Decimal number | Event to run when this entity grows up. | Armadillo: `{"event":"minecraft:ageable_grow_up","target":"self"}`, Dolphin: `{"event":"ageable_grow_up","target":"self"}`, Rabbit: `{"event":"grow_up","target":"self"}` | 
+| interact_filters | *not set* | Minecraft filter | List of conditions to meet so that the entity can be fed. | Armadillo: `{"test":"enum_property","domain":"minecraft:armadillo_state","value":"unrolled"}` | 
+| transform_to_item | *not set* | Array of strings | The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue | Axolotl: `"water_bucket:0"` | 
 
-```json
-"minecraft:ageable":{
-    "drop_items": "fish",
-    "duration": 1200.0,
-    "feed_items": ["carrot", "wheat"],
-    "grow_up": {
-        "event": "minecraft:ageable_grow_up",
-        "target": "self"
-    }
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
 
-### pig
 
 ```json
 "minecraft:ageable": {
-    "duration": 1200,
-    "feed_items": [ "carrot", "beetroot", "potato" ],
-    "grow_up": {
-        "event": "minecraft:ageable_grow_up",
-        "target": "self"
-    }
+  "duration": 1200,
+  "interact_filters": {
+    "test": "enum_property",
+    "domain": "minecraft:armadillo_state",
+    "value": "unrolled"
+  },
+  "feed_items": "spider_eye",
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
 }
 ```
 
-### mule
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
+
 
 ```json
 "minecraft:ageable": {
-    "duration": 1200,
-    "feed_items": [
-        {
-            "item": "wheat",
-            "growth": 0.016667
-        },
-        {
-            "item": "sugar",
-            "growth": 0.025
-        },
-        {
-            "item": "hay_block",
-            "growth": 0.15
-        },
-        {
-            "item": "apple",
-            "growth": 0.05
-        },
-        {
-            "item": "golden_carrot",
-            "growth": 0.05
-        },
-        {
-            "item": "golden_apple",
-            "growth": 0.2
-        },
-        {
-            "item": "appleEnchanted",
-            "growth": 0.2
-        }
-    ],
-    "grow_up": {
-        "event": "minecraft:ageable_grow_up",
-        "target": "self"
-    }
+  "duration": 1200,
+  "feed_items": "tropical_fish_bucket",
+  "transform_to_item": "water_bucket:0",
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
 }
 ```
 
-## Vanilla entities using `minecraft:ageable`
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [bat](../../../../Source/VanillaBehaviorPack_Snippets/entities/bat.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "feed_items": [
+    "minecraft:poppy",
+    "minecraft:blue_orchid",
+    "minecraft:allium",
+    "minecraft:azure_bluet",
+    "minecraft:red_tulip",
+    "minecraft:orange_tulip",
+    "minecraft:white_tulip",
+    "minecraft:pink_tulip",
+    "minecraft:oxeye_daisy",
+    "minecraft:cornflower",
+    "minecraft:lily_of_the_valley",
+    "minecraft:dandelion",
+    "minecraft:wither_rose",
+    "minecraft:sunflower",
+    "minecraft:lilac",
+    "minecraft:rose_bush",
+    "minecraft:peony",
+    "minecraft:flowering_azalea",
+    "minecraft:azalea_leaves_flowered",
+    "minecraft:mangrove_propagule",
+    "minecraft:pitcher_plant",
+    "minecraft:torchflower",
+    "minecraft:cherry_leaves",
+    "minecraft:pink_petals",
+    "minecraft:wildflowers",
+    "minecraft:cactus_flower"
+  ],
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
+}
+```
+
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "feed_items": "cactus",
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
+}
+```
+
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "feed_items": [
+    "fish",
+    "salmon"
+  ],
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
+}
+```
+
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
+
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "feed_items": [
+    "wheat_seeds",
+    "beetroot_seeds",
+    "melon_seeds",
+    "pumpkin_seeds",
+    "pitcher_pod",
+    "torchflower_seeds"
+  ],
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
+}
+```
+
+#### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
+
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "feed_items": "wheat",
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
+}
+```
+
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
+
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "feed_items": [
+    "fish",
+    "salmon"
+  ],
+  "grow_up": {
+    "event": "ageable_grow_up",
+    "target": "self"
+  }
+}
+```
+
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
+
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "feed_items": [
+    {
+      "item": "wheat",
+      "growth": 0.016667
+    },
+    {
+      "item": "sugar",
+      "growth": 0.025
+    },
+    {
+      "item": "hay_block",
+      "growth": 0.15
+    },
+    {
+      "item": "apple",
+      "growth": 0.05
+    },
+    {
+      "item": "golden_carrot",
+      "growth": 0.05
+    },
+    {
+      "item": "golden_apple",
+      "growth": 0.2
+    },
+    {
+      "item": "appleEnchanted",
+      "growth": 0.2
+    }
+  ],
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
+}
+```
+
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "feed_items": [
+    "sweet_berries",
+    "glow_berries"
+  ],
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
+}
+```
+
+#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
+
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "feed_items": [
+    "crimson_fungus"
+  ],
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:ageable": {
+  "duration": 1200,
+  "feed_items": [
+    {
+      "item": "wheat",
+      "growth": 0.1
+    },
+    {
+      "item": "hay_block",
+      "growth": 0.9
+    }
+  ],
+  "grow_up": {
+    "event": "minecraft:ageable_grow_up",
+    "target": "self"
+  }
+}
+```

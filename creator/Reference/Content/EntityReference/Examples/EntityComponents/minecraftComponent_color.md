@@ -1,51 +1,123 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:color
-description: "A reference document detailing the 'color' entity component"
+title: "Entity Documentation - minecraft:color"
+description: "Describes the minecraft:color entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:color
+# Entity Documentation - minecraft:color
 
-`minecraft:color` Defines the entity's main color.
+Defines the entity's main color.
 
-> [!NOTE]
-> This attribute only works on vanilla entities that have predefined color values (`sheep`, `llama`, `shulker`).
+> [!Note]
+> This attribute only works on vanilla entities that have predefined color values (sheep, llama, shulker).
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| 0| Integer|  The Palette Color value of the entity. |
+## Color Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | 0 | Integer number | The Palette Color value of the entity. | Cat: `14`, Sheep: `12`, `15`, `7`, `8`, `6`, `11`, `3`, `9`, `1`, `4` | 
 
-```json
-"minecraft:color":{
-    "value": 0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
-### tropical fish
-
->[!Note]
->This snippet is showing how `minecraft:color` and `minecraft:color2` working together to create a special variant.
 
 ```json
 "minecraft:color": {
-    "value": 7
-},
-"minecraft:color2": {
-    "value": 3
+  "value": 14
 }
 ```
 
-## Vanilla entities using `minecraft:color`
+#### [Sheep](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sheep.json)
 
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
+At /minecraft:entity/component_groups/minecraft:sheep_white/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 0
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sheep_brown/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 12
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sheep_black/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 15
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sheep_gray/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 7
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sheep_light_gray/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 8
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sheep_pink/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 6
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sheep_blue/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 11
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sheep_light_blue/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 3
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sheep_cyan/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 9
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sheep_orange/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 1
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:sheep_yellow/minecraft:color/: 
+
+```json
+"minecraft:color": {
+  "value": 4
+}
+```

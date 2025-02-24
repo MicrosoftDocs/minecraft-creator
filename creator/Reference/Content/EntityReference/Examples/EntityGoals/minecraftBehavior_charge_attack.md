@@ -1,46 +1,34 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.charge_attack
-description: "A reference document detailing the 'behavior.charge_attack' entity goal"
+title: "Entity Documentation - minecraft:behavior.charge_attack"
+description: "Describes the minecraft:behavior.charge_attack ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.charge_attack
 
-`minecraft:behavior.charge_attack` compels an entity to damage a target by using a running attack.
+Allows this entity to damage a target by using a running attack.
 
-## Parameters
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| max_distance| 3| Decimal| A charge attack cannot start if the entity is farther than this distance to the target. |
-| min_distance| 2| Decimal| A charge attack cannot start if the entity is closer than this distance to the target. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| speed_multiplier| 1| Decimal| Modifies the entity's speed when charging toward the target. |
-| success_rate| 0.1428| Decimal| Percent chance this entity will start a charge attack, if not already attacking (1.0 = 100%) |
+## Charge Attack Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max_distance | 3 | Decimal number | A charge attack cannot start if the entity is farther than this distance to the target. |  | 
+| min_distance | 2 | Decimal number | A charge attack cannot start if the entity is closer than this distance to the target. |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Vex: `4` | 
+| speed_multiplier | 1 | Decimal number | Modifies the entity's speed when charging toward the target. |  | 
+| success_rate | 0.1428 | Decimal number | Percent chance this entity will start a charge attack, if not already attacking (1.0 = 100%) |  | 
 
-```json
-"minecraft:behavior.charge_attack": {
-    "max_distance": 3,
-    "min_distance": 2,
-    "speed_multiplier": 1,
-    "success_rate": 0.25
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Vex](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/vex.json)
 
-### vex
 
 ```json
 "minecraft:behavior.charge_attack": {
-    "priority": 4
+  "priority": 4
 }
 ```
-
-## Vanilla entities using `charge_attack`
-
-- [vex](../../../../Source/VanillaBehaviorPack_Snippets/entities/vex.md)

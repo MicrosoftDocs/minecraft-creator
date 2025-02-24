@@ -214,6 +214,7 @@ Creates a new instance of a stack of items for use in the world.
 **Returns** [*ItemStack*](ItemStack.md)
   
 Notes:
+- This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws if `itemType` is invalid, or if `amount` is outside the range of 1-255.
 
@@ -270,6 +271,9 @@ Gets a component (that represents additional capabilities) for an item stack.
   The identifier of the component (e.g., 'minecraft:food'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.ItemComponentTypes*](../../minecraft/server/ItemComponentTypes.md) enum.
 
 **Returns** *ItemComponentTypeMap[T] | undefined* - Returns the component if it exists on the item stack, otherwise undefined.
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
 

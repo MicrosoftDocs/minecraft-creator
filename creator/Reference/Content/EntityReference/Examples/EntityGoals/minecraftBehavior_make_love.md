@@ -1,40 +1,44 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.make_love
-description: "A reference document detailing the 'behavior.make_love' entity goal"
+title: "Entity Documentation - minecraft:behavior.make_love"
+description: "Describes the minecraft:behavior.make_love ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.make_love
 
-`minecraft:behavior.make_love` compels an entity to interact with other similar entities to produce an offspring.
+Allows the villager to look for a mate to spawn other villagers with.
 
-## Parameters
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Villager (minecraft:villager)
+> 
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Make Love Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `5`, Villager: `6` | 
 
-```json
-"minecraft:behavior.make_love":{
-    "priority": 8
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
-### villager_v2
 
 ```json
 "minecraft:behavior.make_love": {
-          "priority": 5
-        }
+  "priority": 5
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.make_love`
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
+
+```json
+"minecraft:behavior.make_love": {
+  "priority": 6
+}
+```

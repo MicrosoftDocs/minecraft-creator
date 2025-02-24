@@ -1,22 +1,26 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:friction
+title: "Block Components Documentation - minecraft:friction"
+description: "Describes the minecraft:friction block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:friction
+# Block Components Documentation - minecraft:friction
 
-`minecraft:friction` is a `Decimal` component that describes a block's friction in a range of `0.0` to `0.9`, where the higher the value the greater the friction. Friction affects an entity's movement speed when it travels on the block.
+Describes the friction for this block in a range of (0.0-0.9). Friction affects an entity's movement speed when it travels on the block. Greater value results in more friction.
 
-For context, wood and dirt are set to a friction of `0.4` while ice is set to `0.02`.
+## Alternate Simple Representations
 
-## Default Value
+This item can also be represented as a `Decimal number`.
 
-This component is specified as a `Decimal`. If this component is omitted, the default value for this component is `0.4` (the same as regular ground friction in Vanilla Minecraft).
 
-## Example
+## Samples
+
+#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json)
+
 
 ```json
-"minecraft:friction": 0.6
+"minecraft:friction": 0.38
 ```

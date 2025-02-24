@@ -19,6 +19,9 @@ Returns a collection of after-events for system-level operations.
 
 Type: [*SystemAfterEvents*](SystemAfterEvents.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **beforeEvents**
 `read-only beforeEvents: SystemBeforeEvents;`
@@ -29,6 +32,9 @@ Type: [*SystemBeforeEvents*](SystemBeforeEvents.md)
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
 ::: moniker-end
 
 ### **currentTick**
@@ -37,6 +43,9 @@ Type: [*SystemBeforeEvents*](SystemBeforeEvents.md)
 Represents the current world tick of the server.
 
 Type: *number*
+
+Notes:
+  - This property can be read in early-execution mode.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **isEditorWorld**
@@ -48,6 +57,9 @@ Type: *boolean*
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
 ::: moniker-end
 
 ### **serverSystemInfo**
@@ -56,6 +68,9 @@ Type: *boolean*
 Contains the device information for the server.
 
 Type: [*SystemInfo*](SystemInfo.md)
+
+Notes:
+  - This property can be read in early-execution mode.
 
 ## Methods
 - [clearJob](#clearjob)
@@ -82,6 +97,7 @@ Cancels the execution of a job queued via [*@minecraft/server.System.runJob*](..
   The job ID returned from [*@minecraft/server.System.runJob*](../../minecraft/server/System.md#runjob).
   
 Notes:
+- This function can be called in early-execution mode.
 
 ### **clearRun**
 `
@@ -94,6 +110,7 @@ Cancels the execution of a function run that was previously scheduled via [*@min
 - **runId**: *number*
   
 Notes:
+- This function can be called in early-execution mode.
 
 ### **run**
 `
@@ -110,6 +127,7 @@ Runs a specified function at the next available future time. This is frequently 
 **Returns** *number* - An opaque identifier that can be used with the `clearRun` function to cancel the execution of this run.
   
 Notes:
+- This function can be called in early-execution mode.
 
 #### Examples
 
@@ -152,6 +170,7 @@ Runs a set of code on an interval.
 **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
   
 Notes:
+- This function can be called in early-execution mode.
 
 #### Examples
 
@@ -186,6 +205,7 @@ Queues a generator to run until completion.  The generator will be given a time 
 **Returns** *number* - An opaque handle that can be used with [*@minecraft/server.System.clearJob*](../../minecraft/server/System.md#clearjob) to stop the run of this generator.
   
 Notes:
+- This function can be called in early-execution mode.
 
 #### Examples
 
@@ -235,6 +255,7 @@ Runs a set of code at a future time specified by tickDelay.
 **Returns** *number* - An opaque handle that can be used with the clearRun method to stop the run of this function on an interval.
   
 Notes:
+- This function can be called in early-execution mode.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **sendScriptEvent**
@@ -276,5 +297,6 @@ waitTicks returns a promise that resolves after the requested number of ticks.
 **Returns** Promise&lt;*void*&gt; - A promise that is resolved when the specified amount of ticks have occurred.
   
 Notes:
+- This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md)

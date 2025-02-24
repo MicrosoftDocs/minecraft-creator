@@ -1,46 +1,38 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.barter
-description: "A reference document detailing the 'behavior.barter' entity goal"
+title: "Entity Documentation - minecraft:behavior.barter"
+description: "Describes the minecraft:behavior.barter ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.barter
 
-`minecraft:behavior.barter` compels an entity to drop an item in return after a player offers a trade by dropping a specific item near the entity.
+Enables the mob to barter for items that have been configured as barter currency. Must be used in combination with the barter component.
 
-> [!IMPORTANT]
-> `minecraft:behavior.barter` requires the following in order to work properly;
->
-> - `minecraft:barter` component.
-> - `barter_table` loot table.
+> [!Note]
+> Requires the `minecraft:barter` component and `barter_table` loot table in order to work properly.
 
-## Parameters
+> [!Note]
+> Requires the following component in order to work properly:
+> 
+> * [Barter (minecraft:barter)](../EntityComponents/minecraftComponent_barter.md)
+> 
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Barter Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Piglin: `3` | 
+
+## Samples
+
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
+
 
 ```json
-"minecraft:behavior.barter":{
-    "priority": 1
+"minecraft:behavior.barter": {
+  "priority": 3
 }
 ```
-
-## Vanilla entities examples
-
-### piglin
-
-```json
-"minecraft:barter": {
-          "barter_table": "loot_tables/entities/piglin_barter.json",
-          "cooldown_after_being_attacked": 20
-        }
-```
-
-## Vanilla entities using `minecraft:behavior.barter`
-
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)

@@ -51,3 +51,6 @@ new WidgetComponentRenderPrimitiveTypeDisc(center: minecraftserver.Vector3, radi
 - **color**: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
 
 **Returns** [*WidgetComponentRenderPrimitiveTypeDisc*](WidgetComponentRenderPrimitiveTypeDisc.md)
+  
+Notes:
+- This function can't be called in read-only mode.

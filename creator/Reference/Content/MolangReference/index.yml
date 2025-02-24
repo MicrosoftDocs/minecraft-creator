@@ -32,5 +32,4 @@ landingContent:
         links:
           - text: Query Functions
             url: Examples/MolangConcepts/QueryFunctions.md
-          - text: Experimental Query Functions
-            url: Examples/MolangConcepts/ExperimentalQueryFunctions.md
+            

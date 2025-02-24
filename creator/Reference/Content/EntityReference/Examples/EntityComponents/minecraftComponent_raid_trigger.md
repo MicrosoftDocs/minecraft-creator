@@ -1,47 +1,44 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:raid_trigger
-description: "A reference document detailing the 'raid_trigger' entity component"
+title: "Entity Documentation - minecraft:raid_trigger"
+description: "Describes the minecraft:raid_trigger entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:raid_trigger
 
-`minecraft:raid_trigger` attempts to trigger a raid at the entity's location.
+Attempts to trigger a raid at the entity's location.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| triggered_event| *not set*| String | Event to run when a raid is triggered. |
+## Raid Trigger Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| minecraft:raid_trigger | *not set* | [Raid Trigger](#raid-trigger-item-type) item |  | Player: `{"triggered_event":{"event":"minecraft:remove_raid_trigger","target":"self"}}` | 
+| triggered_event | *not set* | String | Event to run when a raid is triggered on the village. |  | 
 
-```json
-"minecraft:raid_trigger":{
-    "triggered_event": "minecraft:prepare_for_war",
-}
-```
+## Raid Trigger item type
 
-## Vanilla entities examples
+#### Minecraft:raid_trigger Properties
 
-### player
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| triggered_event | *not set* | String |  | Player: `{"event":"minecraft:remove_raid_trigger","target":"self"}` | 
+
+## Samples
+
+#### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
+
 
 ```json
 "minecraft:raid_trigger": {
-        "minecraft:raid_trigger": {
-          "triggered_event": {
-            "event": "minecraft:remove_raid_trigger",
-            "target": "self"
-          }
-        },
-        "minecraft:spell_effects": {
-          "remove_effects": "bad_omen"
-        }
-      }
+  "minecraft:raid_trigger": {
+    "triggered_event": {
+      "event": "minecraft:remove_raid_trigger",
+      "target": "self"
+    }
+  }
+}
 ```
-
-## Vanilla entities using `minecraft:raid_trigger`
-
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
