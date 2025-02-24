@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Features Taxonomy
 description: "An overview of feature types, how they are used, and how they can be combined."
 ms.service: minecraft-bedrock-edition
+ms.date: 02/20/2025
 ---
 
 # Features Types

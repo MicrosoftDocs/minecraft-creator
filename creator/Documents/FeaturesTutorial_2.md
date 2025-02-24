@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Features Tutorial - A More Complex Feature
 description: "How to add a feature to a world with a behavior pack and a resource pack."
 ms.service: minecraft-bedrock-edition
+ms.date: 02/20/2025
 ---
 
 # Features Tutorial - A More Complex Feature

@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Features Tutorial - A Simple Feature
 description: "How to add a simple feature to a world with a behavior pack."
 ms.service: minecraft-bedrock-edition
+ms.date: 02/20/2025
 ---
 
 # Features Tutorial - a Simple Feature

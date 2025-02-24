@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Features Documentation - Introduction to Features
 description: "A reference document introducing the concept of features"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/20/2025
 ---
 
 # Features Documentation - Introduction to Features

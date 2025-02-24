@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Features Documentation - Feature List
 description: "A reference document listing all available features for use in JSON files"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/20/2025
 ---
 
 # Features Documentation - Feature List
