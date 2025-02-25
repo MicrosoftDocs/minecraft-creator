@@ -322,6 +322,8 @@
           href: Documents/Structures/IntroductionToStructureBlocks.md
         - name: Getting Started with Command Blocks
           href: Documents/CommandBlocks.md
+        - name: Cool Command Block Ideas
+          href: Documents/CoolCommandBlocks.md
         - name: Building Custom Blocks
           items: 
           - name: Block Traits
