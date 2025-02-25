@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Use Command Blocks to Have a Snowball Fight
 description: "A guide to the fun things that you can do to enhance your world with command blocks!"
 ms.service: minecraft-bedrock-edition
+ms.date: 2/20/25
 ---
 
 # Use Command Blocks to Have a Snowball Fight
