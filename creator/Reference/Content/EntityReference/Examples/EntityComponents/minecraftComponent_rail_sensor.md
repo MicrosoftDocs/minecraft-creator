@@ -17,8 +17,8 @@ ms.date: 02/11/2025
 | check_block_types | false | Boolean true/false | If true, on tick this entity will trigger its on_deactivate behavior | Command Block Minecart: `true` | 
 | eject_on_activate | true | Boolean true/false | If true, this entity will eject all of its riders when it passes over an activated rail | Minecart: `true` | 
 | eject_on_deactivate | false | Boolean true/false | If true, this entity will eject all of its riders when it passes over a deactivated rail |  | 
-| on_activate | *not set* | String | Event to call when the rail is activated | Command Block Minecart: `{"event":"minecraft:command_block_activate"}`, Hopper Minecart: `{"event":"minecraft:hopper_deactivate"}`, Tnt Minecart: `{"filters":{"all_of":[{"test":"is_game_rule","domain":"tntexplodes","operator":"==","value":true}]},"event":"minecraft:on_prime"}` | 
-| on_deactivate | *not set* | String | Event to call when the rail is deactivated | Command Block Minecart: `{"event":"minecraft:command_block_deactivate"}`, Hopper Minecart: `{"event":"minecraft:hopper_activate"}` | 
+| on_activate | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when the rail is activated | Command Block Minecart: `{"event":"minecraft:command_block_activate"}`, Hopper Minecart: `{"event":"minecraft:hopper_deactivate"}`, Tnt Minecart: `{"filters":{"all_of":[{"test":"is_game_rule","domain":"tntexplodes","operator":"==","value":true}]},"event":"minecraft:on_prime"}` | 
+| on_deactivate | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when the rail is deactivated | Command Block Minecart: `{"event":"minecraft:command_block_deactivate"}`, Hopper Minecart: `{"event":"minecraft:hopper_activate"}` | 
 | tick_command_block_on_activate | true | Boolean true/false | If true, command blocks will start ticking when passing over an activated rail | Command Block Minecart: `true` | 
 | tick_command_block_on_deactivate | false | Boolean true/false | If false, command blocks will stop ticking when passing over a deactivated rail |  | 
 

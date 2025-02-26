@@ -17,7 +17,7 @@ Defines the entity's heartbeat.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | interval | 1.00 | String | A Molang expression defining the inter-beat interval in seconds. A value of zero or less means no heartbeat. | Warden: `"2.0 - math.clamp(query.anger_level / 80 * 1.5, 0, 1.5)"` | 
-| sound_event | heartbeat | String | Level sound event to be played as the heartbeat sound. |  | 
+| sound_event | heartbeat | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Level sound event to be played as the heartbeat sound. |  | 
 
 ## Samples
 

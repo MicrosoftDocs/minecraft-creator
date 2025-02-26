@@ -64,12 +64,12 @@ landingContent:
             url: Content/entityreference/Examples/ComponentList.md
           - text: Filters List
             url: Content/entityreference/Examples/FilterList.md
-          - text: Events List
+          - text: Built-in Events List
             url: Content/entityreference/Examples/EventList.md
+          - text: Entity Event Actions JSON List
+            url: Content/entityreference/Examples/EventActions.md
           - text: Trigger List
             url: Content/entityreference/Examples/TriggerList.md
-          - text: Sample Entity JSON List
-            url: Content/entityreference/Examples/EntityList.md
           - text: Entity JSON ID List
             url: Content/entityreference/Examples/ClientEntityDocumentation/IDLists.md
   # Card (comment to space cards)

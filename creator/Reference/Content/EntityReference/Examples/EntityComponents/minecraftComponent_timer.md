@@ -20,7 +20,7 @@ Adds a timer after which an event will fire.
 | random_time_choices | [ ] | Array of strings | This is a list of objects, representing one value in seconds that can be picked before firing the event and an optional weight. Incompatible with time. | Wandering Trader: `[{"weight":50,"value":2400},{"weight":50,"value":3600}]` | 
 | randomInterval | true | Boolean true/false | If true, the amount of time on the timer will be random between the min and max values specified in time. | Bee: `true` | 
 | time | *not set* | Range of integers | Amount of time in seconds for the timer. Can be specified as a number or a pair of numbers (min and max). Incompatible with random_time_choices. | Allay: `3`, Armadillo: `4`, Bee: `[20,50]`, `[10,60]`, `5`, `180`, `[5,20]` | 
-| time_down_event | *not set* | String | Event to fire when the time on the timer runs out. | Allay: `{"event":"pickup_item_delay_complete"}`, Armadillo: `{"event":"minecraft:unroll"}`, Bee: `{"event":"stop_panicking_after_fire","target":"self"}`, `{"event":"perish_event","target":"self"}`, `{"event":"calmed_down","target":"self"}`, `{"event":"find_flower_timeout"}`, `{"event":"find_hive_timeout","target":"self"}`, `{"event":"find_hive_event","target":"self"}` | 
+| time_down_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the time on the timer runs out. | Allay: `{"event":"pickup_item_delay_complete"}`, Armadillo: `{"event":"minecraft:unroll"}`, Bee: `{"event":"stop_panicking_after_fire","target":"self"}`, `{"event":"perish_event","target":"self"}`, `{"event":"calmed_down","target":"self"}`, `{"event":"find_flower_timeout"}`, `{"event":"find_hive_timeout","target":"self"}`, `{"event":"find_hive_event","target":"self"}` | 
 
 ## Samples
 

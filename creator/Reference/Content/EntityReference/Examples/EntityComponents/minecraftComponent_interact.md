@@ -25,7 +25,7 @@ Defines interactions with this entity.
 | hurt_item | 0 | Integer number | The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |  | 
 | interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls. |  | 
 | interactions | *not set* | Array of [Interactions](#interactions-item-type) items |  | Allay: `[{"on_interact":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_sneak_held","subject":"other","value":false}]}},"give_item":true,"take_item":true,"interact_text":"action.interact.allay"}]`, Armadillo: `[{"on_interact":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"has_equipment","subject":"other","domain":"hand","value":"brush"}]}},"play_sounds":"mob.armadillo.brush","interact_text":"action.interact.brush","hurt_item":16,"swing":true,"spawn_items":{"table":"loot_tables/entities/armadillo_brush.json"}}]` | 
-| on_interact | *not set* | String | Event to fire when the interaction occurs. |  | 
+| on_interact | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the interaction occurs. |  | 
 | particle_on_start | *not set* | Array of [Particle On Start](#particle-on-start-item-type) items | Particle effect that will be triggered at the start of the interaction. |  | 
 | play_sounds | *not set* | String | List of sounds to play when the interaction occurs. |  | 
 | repair_entity_item | *not set* | Array of [Repair Entity Item](#repair-entity-item-item-type) items | Allows to repair one of the entity's items. |  | 

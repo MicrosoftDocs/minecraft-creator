@@ -16,8 +16,8 @@ Defines the entity's 'sit' state.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| sit_event | *not set* | String | Event to run when the entity enters the 'sit' state |  | 
-| stand_event | *not set* | String | Event to run when the entity exits the 'sit' state |  | 
+| sit_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when the entity enters the 'sit' state |  | 
+| stand_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when the entity exits the 'sit' state |  | 
 
 ## Samples
 

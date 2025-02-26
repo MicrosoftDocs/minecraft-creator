@@ -19,8 +19,8 @@ Describes how this mob can be leashed to other items.
 | can_be_stolen | false | Boolean true/false | If true, players can leash this entity even if it is already leashed to another mob. | Llama: `true` | 
 | hard_distance | 6 | Integer number | Distance in blocks at which the leash stiffens, restricting movement. | Allay: `6` | 
 | max_distance | 10 | Integer number | Distance in blocks it which the leash breaks. | Allay: `10` | 
-| on_leash | *not set* | String | Event to call when this entity is leashed. | Ocelot: `{"event":"minecraft:on_leash","target":"self"}` | 
-| on_unleash | *not set* | String | Event to call when this entity is unleashed. | Ocelot: `{"event":"minecraft:on_unleash","target":"self"}` | 
+| on_leash | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when this entity is leashed. | Ocelot: `{"event":"minecraft:on_leash","target":"self"}` | 
+| on_unleash | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when this entity is unleashed. | Ocelot: `{"event":"minecraft:on_unleash","target":"self"}` | 
 | soft_distance | 4 | Integer number | Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it. | Allay: `4` | 
 
 ## Samples

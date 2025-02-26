@@ -268,6 +268,8 @@
       href: minecraft/server/BlockComponentStepOnEvent.md
     - name: BlockComponentTickEvent
       href: minecraft/server/BlockComponentTickEvent.md
+    - name: BlockDestructionParticlesComponent
+      href: minecraft/server/BlockDestructionParticlesComponent.md
     - name: BlockEvent
       href: minecraft/server/BlockEvent.md
     - name: BlockExplodeAfterEvent
@@ -640,14 +642,6 @@
       href: minecraft/server/ItemUseBeforeEvent.md
     - name: ItemUseBeforeEventSignal
       href: minecraft/server/ItemUseBeforeEventSignal.md
-    - name: ItemUseOnAfterEvent
-      href: minecraft/server/ItemUseOnAfterEvent.md
-    - name: ItemUseOnAfterEventSignal
-      href: minecraft/server/ItemUseOnAfterEventSignal.md
-    - name: ItemUseOnBeforeEvent
-      href: minecraft/server/ItemUseOnBeforeEvent.md
-    - name: ItemUseOnBeforeEventSignal
-      href: minecraft/server/ItemUseOnBeforeEventSignal.md
     - name: ItemUseOnEvent
       href: minecraft/server/ItemUseOnEvent.md
     - name: LeverActionAfterEvent
@@ -1090,6 +1084,8 @@
       href: minecraft/server-editor/WidgetMouseButtonActionType.md
     - name: BedrockEventSubscriptionCache
       href: minecraft/server-editor/BedrockEventSubscriptionCache.md
+    - name: BlockIdentifierListObservableValidator
+      href: minecraft/server-editor/BlockIdentifierListObservableValidator.md
     - name: BlockIdentifierObservableValidator
       href: minecraft/server-editor/BlockIdentifierObservableValidator.md
     - name: BlockPalette
@@ -1258,6 +1254,10 @@
       href: minecraft/server-editor/IActionBarItem.md
     - name: IActionBarItemCreationParams
       href: minecraft/server-editor/IActionBarItemCreationParams.md
+    - name: IBlockListPropertyItem
+      href: minecraft/server-editor/IBlockListPropertyItem.md
+    - name: IBlockListPropertyItemOptions
+      href: minecraft/server-editor/IBlockListPropertyItemOptions.md
     - name: IBlockTableEntryInfo
       href: minecraft/server-editor/IBlockTableEntryInfo.md
     - name: IBlockTablePropertyItem
@@ -1284,6 +1284,12 @@
       href: minecraft/server-editor/IComboBoxPropertyItem.md
     - name: IComboBoxPropertyItemOptions
       href: minecraft/server-editor/IComboBoxPropertyItemOptions.md
+    - name: IDataTablePropertyItem
+      href: minecraft/server-editor/IDataTablePropertyItem.md
+    - name: IDataTablePropertyItemEntry
+      href: minecraft/server-editor/IDataTablePropertyItemEntry.md
+    - name: IDataTablePropertyItemOptions
+      href: minecraft/server-editor/IDataTablePropertyItemOptions.md
     - name: IDisposable
       href: minecraft/server-editor/IDisposable.md
     - name: IDropdownItem
@@ -1346,8 +1352,6 @@
       href: minecraft/server-editor/IPropertyItemOptions.md
     - name: IPropertyItemOptionsBase
       href: minecraft/server-editor/IPropertyItemOptionsBase.md
-    - name: IPropertyItemOptionsBlockList
-      href: minecraft/server-editor/IPropertyItemOptionsBlockList.md
     - name: IPropertyItemOptionsBool
       href: minecraft/server-editor/IPropertyItemOptionsBool.md
     - name: IPropertyItemOptionsColorPicker_deprecated
@@ -1358,16 +1362,12 @@
       href: minecraft/server-editor/IPropertyItemOptionsNumber.md
     - name: IPropertyItemOptionsSubPane
       href: minecraft/server-editor/IPropertyItemOptionsSubPane.md
-    - name: IPropertyItemOptionsTable
-      href: minecraft/server-editor/IPropertyItemOptionsTable.md
     - name: IPropertyItemOptionsVector3
       href: minecraft/server-editor/IPropertyItemOptionsVector3.md
     - name: IPropertyPane
       href: minecraft/server-editor/IPropertyPane.md
     - name: IPropertyPaneOptions
       href: minecraft/server-editor/IPropertyPaneOptions.md
-    - name: IPropertyTableCellItem
-      href: minecraft/server-editor/IPropertyTableCellItem.md
     - name: IRegisteredKeyBinding
       href: minecraft/server-editor/IRegisteredKeyBinding.md
     - name: IRegisterExtensionOptionalParameters
