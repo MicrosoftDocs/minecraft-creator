@@ -71,6 +71,9 @@ new HttpHeader(key: string, value: minecraftserveradmin.SecretString | string)
 - **value**: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/SecretString.md) | *string*
 
 **Returns** [*HttpHeader*](HttpHeader.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 #### Examples
 

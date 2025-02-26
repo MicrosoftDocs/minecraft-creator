@@ -23,6 +23,9 @@ description: Contents of the @minecraft/server-editor.SpeedSettings class.
 - **property**: *T*
 
 **Returns** *SpeedSettingsPropertyTypeMap[T] | undefined*
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getAll**
 `
@@ -30,6 +33,9 @@ getAll(): SpeedSettingsPropertyTypeMap
 `
 
 **Returns** *SpeedSettingsPropertyTypeMap*
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **set**
 `

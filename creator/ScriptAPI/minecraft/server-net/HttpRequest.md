@@ -105,6 +105,9 @@ new HttpRequest(uri: string)
 - **uri**: *string*
 
 **Returns** [*HttpRequest*](HttpRequest.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **addHeader**
 `

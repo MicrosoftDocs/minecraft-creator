@@ -31,6 +31,9 @@ Creates a new instance of ListBlockVolume.
   Initial array of block locations that ListBlockVolume will be constructed with.
 
 **Returns** [*ListBlockVolume*](ListBlockVolume.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **add**
 `

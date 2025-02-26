@@ -61,6 +61,9 @@ Constructor that takes a unique Id to associate with the created AimAssistCatego
 - **identifier**: *string*
 
 **Returns** [*AimAssistCategorySettings*](AimAssistCategorySettings.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getBlockPriorities**
 `

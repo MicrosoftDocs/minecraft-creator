@@ -65,6 +65,9 @@ new BlockVolume(from: Vector3, to: Vector3)
 - **to**: [*Vector3*](Vector3.md)
 
 **Returns** [*BlockVolume*](BlockVolume.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **doesLocationTouchFaces**
 `
