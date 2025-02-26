@@ -18,7 +18,7 @@ Allows an entity to attack, while also delaying the damage-dealt until a specifi
 |:----------|:-------------|:----|:-----------|:------------- |
 | attack_duration | 0.75 | Decimal number | The entity's attack animation will play out over this duration (in seconds). Also controls attack cooldown. | Ravager: `0.75` | 
 | attack_once | false | Boolean true/false | Allows the entity to use this attack behavior, only once EVER. |  | 
-| attack_types | N/A | String | Defines the entity types this entity will attack. |  | 
+| attack_types | *not set* | String | Defines the entity types this entity will attack. |  | 
 | can_spread_on_fire | false | Boolean true/false | If the entity is on fire, this allows the entity's target to catch on fire after being hit. |  | 
 | hit_delay_pct | 0.5 | Decimal number | The percentage into the attack animation to apply the damage of the attack (1.0 = 100%). | Ravager: `0.5` | 
 | inner_boundary_time_increase | 0.25 | Decimal number | Time (in seconds) to add to attack path recalculation when the target is beyond the "path_inner_boundary". |  | 
@@ -26,7 +26,7 @@ Allows an entity to attack, while also delaying the damage-dealt until a specifi
 | max_path_time | 0.55 | Decimal number | Maximum base time (in seconds) to recalculate new attack path to target (before increases applied). |  | 
 | melee_fov | 90 | Decimal number | Field of view (in degrees) when using the sensing component to detect an attack target. |  | 
 | min_path_time | 0.2 | Decimal number | Minimum base time (in seconds) to recalculate new attack path to target (before increases applied). |  | 
-| on_attack | N/A | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines the event to trigger when this entity successfully attacks. |  | 
+| on_attack | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines the event to trigger when this entity successfully attacks. |  | 
 | outer_boundary_time_increase | 0.5 | Decimal number | Time (in seconds) to add to attack path recalculation when the target is beyond the "path_outer_boundary". |  | 
 | path_fail_time_increase | 0.75 | Decimal number | Time (in seconds) to add to attack path recalculation when this entity cannot move along the current path. |  | 
 | path_inner_boundary | 16 | Decimal number | Distance at which to increase attack path recalculation by "inner_boundary_tick_increase". |  | 

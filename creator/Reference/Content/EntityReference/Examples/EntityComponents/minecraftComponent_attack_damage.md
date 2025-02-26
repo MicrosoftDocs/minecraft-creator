@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:attack_damage
 
-specifies how much damage is dealt by the entity when it attacks.
+Specifies how much damage is dealt by the entity when it attacks.
 
 
 ## Attack Damage Properties

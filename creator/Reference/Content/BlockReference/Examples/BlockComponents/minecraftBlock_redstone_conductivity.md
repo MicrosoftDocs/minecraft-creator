@@ -12,10 +12,6 @@ ms.date: 02/11/2025
 The basic redstone properties of a block; if the component is not provided the default values are used. Requires 1.21.30 format version and above.
 Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.30).
 
-## Alternate Simple Representations
-
-This item can also be represented as a `String`.
-
 
 ## Redstone Conductivity Properties
 

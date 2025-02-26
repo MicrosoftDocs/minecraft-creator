@@ -16,7 +16,7 @@ Adds a trigger to call when this entity loses the target it currently has.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String | The event to run when the conditions for this trigger are met. | Drowned: `"minecraft:lost_target"`, Llama: `"minecraft:on_calm"`, Magma Cube: `"minecraft:become_calm"` | 
+| event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to run when the conditions for this trigger are met. | Drowned: `"minecraft:lost_target"`, Llama: `"minecraft:on_calm"`, Magma Cube: `"minecraft:become_calm"` | 
 | filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. | Llama: `{"all_of":[{"test":"is_family","subject":"target","value":"wolf"},{"test":"has_component","subject":"target","operator":"!=","value":"minecraft:is_tamed"}]}` | 
 | target | self | String | The target of the event. | Dolphin: `"self"` | 
 

@@ -14,15 +14,20 @@ Allows an entity to deal damage through a melee attack.
 > [!Note]
 > Requires a target in order to work properly. Entities can generate targets via one of the following behaviors:
 > 
-> * [minecraft:behavior.nearest_attackable_target](../EntityGoals/minecraftBehavior_nearest_attackble_target.md)
+> * [minecraft:behavior.nearest_attackable_target](../EntityGoals/minecraftBehavior_nearest_attackable_target.md)
 > * [minecraft:behavior.hurt_by_target](../EntityGoals/minecraftBehavior_hurt_by_target.md)
+> [!Note]
+> Requires the following component in order to work properly:
+> 
+> * [Attack (minecraft:attack)](../EntityComponents/minecraftComponent_attack.md)
+> 
 
 ## Melee Attack Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | attack_once | false | Boolean true/false | Allows the entity to use this attack behavior, only once EVER. |  | 
-| attack_types | N/A | String | Defines the entity types this entity will attack. |  | 
+| attack_types | *not set* | String | Defines the entity types this entity will attack. |  | 
 | can_spread_on_fire | false | Boolean true/false | If the entity is on fire, this allows the entity's target to catch on fire after being hit. |  | 
 | cooldown_time | 1 | Decimal number | Cooldown time (in seconds) between attacks. |  | 
 | inner_boundary_time_increase | 0.25 | Decimal number | Time (in seconds) to add to attack path recalculation when the target is beyond the "path_inner_boundary". |  | 
@@ -30,7 +35,7 @@ Allows an entity to deal damage through a melee attack.
 | max_path_time | 0.55 | Decimal number | Maximum base time (in seconds) to recalculate new attack path to target (before increases applied). |  | 
 | melee_fov | 90 | Decimal number | Field of view (in degrees) when using the sensing component to detect an attack target. |  | 
 | min_path_time | 0.2 | Decimal number | Minimum base time (in seconds) to recalculate new attack path to target (before increases applied). |  | 
-| on_attack | N/A | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines the event to trigger when this entity successfully attacks. |  | 
+| on_attack | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines the event to trigger when this entity successfully attacks. |  | 
 | outer_boundary_time_increase | 0.5 | Decimal number | Time (in seconds) to add to attack path recalculation when the target is beyond the "path_outer_boundary". |  | 
 | path_fail_time_increase | 0.75 | Decimal number | Time (in seconds) to add to attack path recalculation when this entity cannot move along the current path. |  | 
 | path_inner_boundary | 16 | Decimal number | Distance at which to increase attack path recalculation by "inner_boundary_tick_increase". |  | 

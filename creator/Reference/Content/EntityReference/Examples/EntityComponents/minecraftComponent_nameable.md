@@ -30,7 +30,7 @@ Describes the special names for this entity and the events to call when the enti
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | name_filter | *not set* | String | List of special names that will cause the events defined in 'on_named' to fire |  | 
-| on_named | *not set* | String | Event to be called when this entity acquires the name specified in 'name_filter' |  | 
+| on_named | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to be called when this entity acquires the name specified in 'name_filter' |  | 
 
 ## Samples
 

@@ -16,7 +16,7 @@ Sets the width and height of the Entity's collision box.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| height | 1 | Decimal number | Height of the collision box in blocks. A negative value will be assumed to be 0. Min value is -100000000.000000 Max value is 100000000.000000 | Allay: `0.6`, Armadillo: `0.65`, Armor Stand: `1.975` | 
+| height | 1 | Decimal number | Height of the collision box in blocks. A negative value will be assumed to be 0. | Allay: `0.6`, Armadillo: `0.65`, Armor Stand: `1.975` | 
 | width | 1 | Decimal number | Width of the collision box in blocks. A negative value will be assumed to be 0. Min value is -100000000.000000 Max value is 100000000.000000 | Allay: `0.35`, Armadillo: `0.7`, Armor Stand: `0.5` | 
 
 ## Samples

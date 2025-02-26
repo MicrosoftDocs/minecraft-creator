@@ -37,7 +37,7 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| binding | *not set* | String | useful for items. A molang expression specifying the bone name of the parent skeletal hierarchy that this bone should use as the root transform. Without this field it will look for a bone in the parent entity with the same name as this bone. If both are missing, it will assume a local skeletal hierarchy (via the "parent" field). If that is also missing, it will attach to the owning entity's root transform. |  | 
+| binding | *not set* | Molang | useful for items. A molang expression specifying the bone name of the parent skeletal hierarchy that this bone should use as the root transform. Without this field it will look for a bone in the parent entity with the same name as this bone. If both are missing, it will assume a local skeletal hierarchy (via the "parent" field). If that is also missing, it will attach to the owning entity's root transform. |  | 
 | cubes | *not set* | Array of [Cubes](#cubes-item-type) items |  |  | 
 | cubes (Alternate 1) | *not set* | Array of strings | This is the list of cubes associated with this bone. |  | 
 | debug | *not set* | Boolean true/false |  |  | 

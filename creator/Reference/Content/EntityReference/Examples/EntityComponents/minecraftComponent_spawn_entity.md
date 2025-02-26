@@ -24,7 +24,7 @@ Adds a timer after which this entity will spawn another entity or item (similar 
 | should_leash | false | Boolean true/false | If true, this the spawned entity will be leashed to the parent. |  | 
 | single_use | false | Boolean true/false | If true, this component will only ever spawn the specified entity once. |  | 
 | spawn_entity | *not set* | String | Identifier of the entity to spawn, leave empty to spawn the item defined by "spawn_item" instead. |  | 
-| spawn_event | minecraft:entity_born | String | Event to call on the spawned entity when it spawns. |  | 
+| spawn_event | minecraft:entity_born | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call on the spawned entity when it spawns. |  | 
 | spawn_item | egg | String | Item identifier of the item to spawn. |  | 
 | spawn_item_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call on this entity when the item is spawned. |  | 
 | spawn_method | born | String | Method to use to spawn the entity. |  | 

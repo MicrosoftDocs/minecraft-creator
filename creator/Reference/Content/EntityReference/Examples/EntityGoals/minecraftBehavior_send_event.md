@@ -47,8 +47,8 @@ List of events to send.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | base_delay | 0 | Decimal number | Amount of time in seconds before starting this step |  | 
-| event | *not set* | String | The event to send to the entity |  | 
-| sound_event | *not set* | String | The sound event to play when this step happens |  | 
+| event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to send to the entity |  | 
+| sound_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The sound event to play when this step happens |  | 
 
 ## Samples
 

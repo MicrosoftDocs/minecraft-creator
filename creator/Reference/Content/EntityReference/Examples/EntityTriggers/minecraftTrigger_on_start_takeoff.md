@@ -16,7 +16,7 @@ Only usable by the Ender Dragon. Adds a trigger to call when this entity starts 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String | The event to run when the conditions for this trigger are met. | Ender Dragon: `"minecraft:start_fly"` | 
+| event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to run when the conditions for this trigger are met. | Ender Dragon: `"minecraft:start_fly"` | 
 | filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. |  | 
 | target | self | String | The target of the event. | Ender Dragon: `"self"` | 
 

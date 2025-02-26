@@ -16,7 +16,7 @@ Adds a trigger that will run when a nearby entity of the same type as this entit
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String | The event to run when the conditions for this trigger are met. | Panda: `"minecraft:on_anger"`, Trader Llama: `"minecraft:defend_wandering_trader"` | 
+| event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to run when the conditions for this trigger are met. | Panda: `"minecraft:on_anger"`, Trader Llama: `"minecraft:defend_wandering_trader"` | 
 | filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. |  | 
 | target | self | String | The target of the event. | Panda: `"self"` | 
 

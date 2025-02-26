@@ -24,7 +24,7 @@ Allows the Entity to be tamed by mounting it.
 | max_temper | 100 | Integer number | The maximum value for the entity's random starting temper. |  | 
 | min_temper | 0 | Integer number | The minimum value for the entity's random starting temper. |  | 
 | ride_text | *not set* | String | The text that shows in the riding interact button. |  | 
-| tame_event | *not set* | String | Event that triggers when the entity becomes tamed. |  | 
+| tame_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event that triggers when the entity becomes tamed. |  | 
 
 ## Auto Reject Items item type
 

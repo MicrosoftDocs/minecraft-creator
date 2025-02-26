@@ -46,7 +46,7 @@ landingContent:
         links:
           - text: Components List
             url: Examples/ComponentList.md
-          - text: "NEW! minecraft:combat_regeneration"
+          - text: "minecraft:combat_regeneration"
             url: Examples/EntityComponents/minecraftComponent_combat_regeneration.md
           - text: minecraft:addrider
             url: Examples/EntityComponents/minecraftComponent_addrider.md
@@ -76,6 +76,19 @@ landingContent:
             url: Examples/EntityEvents/minecraftEvents_entity_spawned.md
           - text: minecraft:entity_transformed
             url: Examples/EntityEvents/minecraftEvents_entity_transformed.md
+# Card
+  - title: Event Action Reponses
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Events Action Responses
+            url: Examples/EventActions.md
+          - text: minecraft:emit_particle
+            url: Examples/EventActions/emit_particle.md
+          - text: minecraft:queue_command
+            url: Examples/EventActions/queue_command.md
+          - text: minecraft:play_soudn
+            url: Examples/EventActions/play_sound.md            
 # Card
   - title: Triggers
     linkLists:

@@ -16,9 +16,9 @@ Adds a timer for drying out that will count down and fire 'dried_out_event' or w
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| dried_out_event | *not set* | String | Event to fire when the drying out time runs out. | Axolotl: `{"event":"dried_out"}` | 
-| recover_after_dried_out_event | *not set* | String | Event to fire when entity was already dried out but received increase in water supply. | Axolotl: `{"event":"recover_after_dried_out"}` | 
-| stopped_drying_out_event | *not set* | String | Event to fire when entity stopped drying out, for example got into water or under rain. | Axolotl: `{"event":"stop_drying_out"}`, Dolphin: `{"event":"stop_dryingout"}` | 
+| dried_out_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the drying out time runs out. | Axolotl: `{"event":"dried_out"}` | 
+| recover_after_dried_out_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when entity was already dried out but received increase in water supply. | Axolotl: `{"event":"recover_after_dried_out"}` | 
+| stopped_drying_out_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when entity stopped drying out, for example got into water or under rain. | Axolotl: `{"event":"stop_drying_out"}`, Dolphin: `{"event":"stop_dryingout"}` | 
 | total_time | 0 | Decimal number | Amount of time in seconds to dry out fully. | Axolotl: `300`, Dolphin: `120` | 
 | water_bottle_refill_time | 0 | Decimal number | Optional amount of additional time in seconds given by using splash water bottle on entity. | Axolotl: `90` | 
 

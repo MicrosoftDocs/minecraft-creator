@@ -41,7 +41,7 @@ The list of genetic variants for this gene. These check for particular allele co
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| birth_event | *not set* | String | Event to run when this mob is created and matches the allele conditions. |  | 
+| birth_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when this mob is created and matches the allele conditions. |  | 
 | both_allele | -1 | Integer number | If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with both. Can also be a range of integers. |  | 
 | either_allele | -1 | Integer number | If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with either. Can also be a range of integers. |  | 
 | hidden_allele | -1 | Integer number | If this value is non-negative, compare the mob's hidden allele with this value for a match. Can also be a range of integers. |  | 

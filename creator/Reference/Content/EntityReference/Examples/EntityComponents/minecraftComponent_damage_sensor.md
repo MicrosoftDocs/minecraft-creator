@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:damage_sensor
 
-"Defines what events to call when this entity is damaged by specific entities or items.
+Defines what events to call when this entity is damaged by specific entities or items.
 
 
 ## Damage Sensor Properties
