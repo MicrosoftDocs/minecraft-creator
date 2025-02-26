@@ -16,14 +16,14 @@ Sets the entity's visual size.
 ## Properties
 
 ### **value**
-`value: number;`
+`read-only value: number;`
 
 Current value for the scale property set on entities.
 
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can throw errors when used.
 
 ## Constants
 

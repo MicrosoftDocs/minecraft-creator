@@ -16,8 +16,8 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| on_bred | 0 | String | A Molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total. | Armadillo: `"Math.Random(1,7)"` | 
-| on_death | 0 | String | A Molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total. | Armadillo: `"query.last_hit_by_player ? Math.Random(1,3) : 0"`, Blaze: `"query.last_hit_by_player ? 10 : 0"`, Bogged: `"query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"` | 
+| on_bred | 0 | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | A Molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total. | Armadillo: `"Math.Random(1,7)"` | 
+| on_death | 0 | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | A Molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total. | Armadillo: `"query.last_hit_by_player ? Math.Random(1,3) : 0"`, Blaze: `"query.last_hit_by_player ? 10 : 0"`, Bogged: `"query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"` | 
 
 ## Samples
 

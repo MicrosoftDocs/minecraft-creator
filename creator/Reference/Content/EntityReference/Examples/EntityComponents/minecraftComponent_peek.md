@@ -16,9 +16,9 @@ Defines the entity's 'peek' behavior, defining the events that should be called 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| on_close | *not set* | String | Event to call when the entity is done peeking. | Shulker: `{"event":"minecraft:on_close"}` | 
-| on_open | *not set* | String | Event to call when the entity starts peeking. | Shulker: `{"event":"minecraft:on_open"}` | 
-| on_target_open | *not set* | String | Event to call when the entity's target entity starts peeking. | Shulker: `{"event":"minecraft:on_open"}` | 
+| on_close | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when the entity is done peeking. | Shulker: `{"event":"minecraft:on_close"}` | 
+| on_open | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when the entity starts peeking. | Shulker: `{"event":"minecraft:on_open"}` | 
+| on_target_open | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when the entity's target entity starts peeking. | Shulker: `{"event":"minecraft:on_open"}` | 
 
 ## Samples
 

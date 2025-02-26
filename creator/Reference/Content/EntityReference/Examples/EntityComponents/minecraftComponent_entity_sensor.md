@@ -29,7 +29,7 @@ The list of subsensors which sense for entities and emit events when all their c
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | cooldown | -1 | Decimal number | How many seconds should elapse before the subsensor can once again sense for entities. The cooldown is applied on top of the base 1 tick (0.05 seconds) delay. Negative values will result in no cooldown being used. |  | 
-| event | *not set* | String | Event to fire when the conditions are met. |  | 
+| event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the conditions are met. |  | 
 | event_filters | *not set* | Minecraft filter | The set of conditions that must be satisfied to fire the event. |  | 
 | maximum_count | -1 | Integer number | The maximum number of entities that must pass the filter conditions for the event to send. |  | 
 | minimum_count | 1 | Integer number | The minimum number of entities that must pass the filter conditions for the event to send. |  | 

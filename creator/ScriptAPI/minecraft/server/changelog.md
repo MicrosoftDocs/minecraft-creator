@@ -45,7 +45,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`canContainLiquid`](Block.md#cancontainliquid)*
 - Added function *[`canPlace`](Block.md#canplace)*
 - Changed function *[`getComponent`](Block.md#getcomponent)*
-  - Changed return type from [*BlockComponent*](BlockComponent.md) (throws exceptions) to *BlockComponentTypeMap[T] | undefined* (throws exceptions)
+  - Changed return type from [*BlockComponent*](BlockComponent.md) (throws exceptions) to *BlockComponentReturnType<T> | undefined* (throws exceptions)
   - Changed argument `componentId` type from *string* to *T*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
 - Added function *[`isLiquidBlocking`](Block.md#isliquidblocking)*
@@ -56,6 +56,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockComponentRegistry`](BlockComponentRegistry.md)*
 - Changed function *[`registerCustomComponent`](BlockComponentRegistry.md#registercustomcomponent)*
   - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
+#### Added *[`BlockDestructionParticlesComponent`](BlockDestructionParticlesComponent.md)*
 #### Changed *[`BlockFluidContainerComponent`](BlockFluidContainerComponent.md)*
 - Changed constant *[`componentId`](BlockFluidContainerComponent.md#componentid)* from `minecraft:fluidContainer` to `minecraft:fluid_container`
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
@@ -129,7 +130,7 @@ description: Changelog of the `@minecraft/server` module
   - Removed argument `directionZ`
   - Removed argument `horizontalStrength`
 - Changed function *[`getComponent`](Entity.md#getcomponent)*
-  - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentTypeMap[T] | undefined* (throws exceptions)
+  - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentReturnType<T> | undefined* (throws exceptions)
   - Changed argument `componentId` type from *string* to *T*
 - Changed function *[`getComponents`](Entity.md#getcomponents)*
   - Changed return type from [*EntityComponent*](EntityComponent.md)[] to [*EntityComponent*](EntityComponent.md)[] (throws exceptions)
@@ -148,6 +149,9 @@ description: Changelog of the `@minecraft/server` module
 - Changed type for *[`container`](EntityInventoryComponent.md#container)* from [*Container*](Container.md) to [*Container*](Container.md) (throws exceptions)
 #### Added *[`EntityIterator`](EntityIterator.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
+#### Changed *[`EntityScaleComponent`](EntityScaleComponent.md)*
+- Changed read-only flag for *[`value`](EntityScaleComponent.md#value)* from `false` to `true`
+- Changed type for *[`value`](EntityScaleComponent.md#value)* from *number* to *number* (throws exceptions)
 #### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
 #### Added *[`FilterGroup`](FilterGroup.md)*
 #### Removed *IButtonPushAfterEventSignal*
@@ -166,9 +170,13 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`ItemStack`](ItemStack.md)*
 - Added function *[`createPotion`](ItemStack.md#createpotion)*
 - Changed function *[`getComponent`](ItemStack.md#getcomponent)*
-  - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentTypeMap[T] | undefined*
+  - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentReturnType<T> | undefined*
   - Changed argument `componentId` type from *string* to *T*
 - Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
+#### Removed *ItemUseOnAfterEvent*
+#### Removed *ItemUseOnAfterEventSignal*
+#### Removed *ItemUseOnBeforeEvent*
+#### Removed *ItemUseOnBeforeEventSignal*
 #### Changed *[`LeverActionAfterEventSignal`](LeverActionAfterEventSignal.md)*
 - Removed base class *ILeverActionAfterEventSignal*
 - Added function *[`subscribe`](LeverActionAfterEventSignal.md#subscribe)*
@@ -247,12 +255,14 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`setDynamicProperties`](World.md#setdynamicproperties)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
+- Removed property *itemUseOn*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`playerButtonInput`](WorldAfterEvents.md#playerbuttoninput)*
 - Removed property *worldInitialize*
 - Added property *[`worldLoad`](WorldAfterEvents.md#worldload)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
+- Removed property *itemUseOn*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 - Removed property *worldInitialize*
 #### Removed *WorldInitializeAfterEvent*

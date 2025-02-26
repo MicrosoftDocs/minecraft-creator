@@ -17,7 +17,7 @@ Allows an entity to deal damage through a melee attack with reach calculations b
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | attack_once | false | Boolean true/false | Allows the entity to use this attack behavior, only once EVER. | Bee: `true` | 
-| attack_types | N/A | String | Defines the entity types this entity will attack. |  | 
+| attack_types | *not set* | String | Defines the entity types this entity will attack. |  | 
 | can_spread_on_fire | false | Boolean true/false | If the entity is on fire, this allows the entity's target to catch on fire after being hit. | Drowned: `true` | 
 | cooldown_time | 1 | Decimal number | Cooldown time (in seconds) between attacks. | Creaking: `2`, Hoglin: `0.75` | 
 | horizontal_reach | 0.8 | Decimal number | The attack reach of the mob will be a box with the size of the mobs bounds increased by this value in all horizontal directions. |  | 
@@ -26,7 +26,7 @@ Allows an entity to deal damage through a melee attack with reach calculations b
 | max_path_time | 0.55 | Decimal number | Maximum base time (in seconds) to recalculate new attack path to target (before increases applied). |  | 
 | melee_fov | 90 | Decimal number | Field of view (in degrees) when using the sensing component to detect an attack target. | Warden: `360` | 
 | min_path_time | 0.2 | Decimal number | Minimum base time (in seconds) to recalculate new attack path to target (before increases applied). |  | 
-| on_attack | N/A | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines the event to trigger when this entity successfully attacks. | Bee: `{"event":"countdown_to_perish_event","target":"self"}` | 
+| on_attack | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines the event to trigger when this entity successfully attacks. | Bee: `{"event":"countdown_to_perish_event","target":"self"}` | 
 | on_kill | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Axolotl: `{"event":"killed_enemy_event","target":"self"}` | 
 | outer_boundary_time_increase | 0.5 | Decimal number | Time (in seconds) to add to attack path recalculation when the target is beyond the "path_outer_boundary". |  | 
 | path_fail_time_increase | 0.75 | Decimal number | Time (in seconds) to add to attack path recalculation when this entity cannot move along the current path. |  | 

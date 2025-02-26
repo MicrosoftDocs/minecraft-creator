@@ -16,7 +16,7 @@ Adds a trigger to call when this entity is attacked by the player.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String | The event to run when the conditions for this trigger are met. | Blaze: `"minecraft:on_hurt_event"`, Pillager: `"minecraft:ranged_mode"` | 
+| event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to run when the conditions for this trigger are met. | Blaze: `"minecraft:on_hurt_event"`, Pillager: `"minecraft:ranged_mode"` | 
 | filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. |  | 
 | target | self | String | The target of the event. | Blaze: `"self"` | 
 

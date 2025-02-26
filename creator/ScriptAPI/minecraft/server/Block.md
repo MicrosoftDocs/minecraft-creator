@@ -334,7 +334,7 @@ Notes:
 
 ### **getComponent**
 `
-getComponent(componentId: T): BlockComponentTypeMap[T] | undefined
+getComponent(componentId: T): BlockComponentReturnType<T> | undefined
 `
 
 Gets a component (that represents additional capabilities) for a block - for example, an inventory component of a chest block.
@@ -344,7 +344,7 @@ Gets a component (that represents additional capabilities) for a block - for exa
   
   The identifier of the component (e.g., 'minecraft:inventory'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.BlockComponentTypes*](../../minecraft/server/BlockComponentTypes.md) enum.
 
-**Returns** *BlockComponentTypeMap[T] | undefined* - Returns the component if it exists on the block, otherwise undefined.
+**Returns** *BlockComponentReturnType<T> | undefined* - Returns the component if it exists on the block, otherwise undefined.
   
 Notes:
 - This function can't be called in read-only mode.

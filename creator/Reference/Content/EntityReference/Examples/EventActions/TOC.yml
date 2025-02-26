@@ -1,0 +1,20 @@
+ - name: Event Response Actions List
+   href: ../EventActions.md
+ - name: add_component_group
+   href: add_component_group.md
+ - name: emit_particle
+   href: emit_particle.md
+ - name: emit_vibration
+   href: emit_vibration.md
+ - name: entity_transformed
+   href: entity_transformed.md
+ - name: queue_command
+   href: queue_command.md
+ - name: play_sound
+   href: play_sound.md
+ - name: remove_component_group
+   href: remove_component_group.md
+ - name: reset_target
+   href: reset_target.md
+ - name: set_property
+   href: set_property.md

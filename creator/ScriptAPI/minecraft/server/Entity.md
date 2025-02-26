@@ -579,7 +579,7 @@ Notes:
 
 ### **getComponent**
 `
-getComponent(componentId: T): EntityComponentTypeMap[T] | undefined
+getComponent(componentId: T): EntityComponentReturnType<T> | undefined
 `
 
 Gets a component (that represents additional capabilities) for an entity.
@@ -589,7 +589,7 @@ Gets a component (that represents additional capabilities) for an entity.
   
   The identifier of the component (e.g., 'minecraft:health'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.EntityComponentTypes*](../../minecraft/server/EntityComponentTypes.md) enum.
 
-**Returns** *EntityComponentTypeMap[T] | undefined* - Returns the component if it exists on the entity, otherwise undefined.
+**Returns** *EntityComponentReturnType<T> | undefined* - Returns the component if it exists on the entity, otherwise undefined.
   
 Notes:
 - This function can't be called in read-only mode.

@@ -15,9 +15,11 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Declaration
 ```ts
 type BlockComponentTypeMap = {
+  'destruction_particles': BlockDestructionParticlesComponent;
   'fluid_container': BlockFluidContainerComponent;
   'inventory': BlockInventoryComponent;
   'map_color': BlockMapColorComponent;
+  'minecraft:destruction_particles': BlockDestructionParticlesComponent;
   'minecraft:fluid_container': BlockFluidContainerComponent;
   'minecraft:inventory': BlockInventoryComponent;
   'minecraft:map_color': BlockMapColorComponent;

@@ -17,6 +17,8 @@ Predefined action bar items
 `Locate = editor:actionBarItem:locate`
 ### **Playtest**
 `Playtest = editor:actionBarItem:playtest`
+### **Realms**
+`Realms = editor:actionBarItem:realms`
 ### **Redo**
 `Redo = editor:actionBarItem:redo`
 ### **Settings**

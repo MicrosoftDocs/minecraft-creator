@@ -16,7 +16,7 @@ Adds a trigger to call when this entity finds a target.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| event | *not set* | String | The event to run when the conditions for this trigger are met. | Bee: `"attacked"`, Cave Spider: `"minecraft:become_angry"`, Drowned: `"minecraft:has_target"` | 
+| event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to run when the conditions for this trigger are met. | Bee: `"attacked"`, Cave Spider: `"minecraft:become_angry"`, Drowned: `"minecraft:has_target"` | 
 | filters | *not set* | Minecraft filter | The list of conditions for this trigger to execute. | Llama: `{"all_of":[{"test":"is_family","subject":"target","value":"wolf"},{"test":"has_component","subject":"target","operator":"!=","value":"minecraft:is_tamed"}]}` | 
 | target | self | String | The target of the event. | Bee: `"self"` | 
 

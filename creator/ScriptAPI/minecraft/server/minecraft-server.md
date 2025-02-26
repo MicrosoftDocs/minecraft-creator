@@ -92,9 +92,12 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [WeatherType](WeatherType.md)
 
 # Type Aliases
+- [BlockComponentReturnType](BlockComponentReturnType.md)
 - [BlockComponentTypeMap](BlockComponentTypeMap.md)
 - [BlockStateArg](BlockStateArg.md)
+- [EntityComponentReturnType](EntityComponentReturnType.md)
 - [EntityComponentTypeMap](EntityComponentTypeMap.md)
+- [ItemComponentReturnType](ItemComponentReturnType.md)
 - [ItemComponentTypeMap](ItemComponentTypeMap.md)
 
 ## Classes
@@ -117,6 +120,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockComponentStepOffEvent](BlockComponentStepOffEvent.md)
 - [BlockComponentStepOnEvent](BlockComponentStepOnEvent.md)
 - [BlockComponentTickEvent](BlockComponentTickEvent.md)
+- [BlockDestructionParticlesComponent](BlockDestructionParticlesComponent.md)
 - [BlockEvent](BlockEvent.md)
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
 - [BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)
@@ -303,10 +307,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemUseAfterEventSignal](ItemUseAfterEventSignal.md)
 - [ItemUseBeforeEvent](ItemUseBeforeEvent.md)
 - [ItemUseBeforeEventSignal](ItemUseBeforeEventSignal.md)
-- [ItemUseOnAfterEvent](ItemUseOnAfterEvent.md)
-- [ItemUseOnAfterEventSignal](ItemUseOnAfterEventSignal.md)
-- [ItemUseOnBeforeEvent](ItemUseOnBeforeEvent.md)
-- [ItemUseOnBeforeEventSignal](ItemUseOnBeforeEventSignal.md)
 - [ItemUseOnEvent](ItemUseOnEvent.md)
 - [LeverActionAfterEvent](LeverActionAfterEvent.md)
 - [LeverActionAfterEventSignal](LeverActionAfterEventSignal.md)
