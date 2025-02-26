@@ -102,9 +102,6 @@ new MessageFormData()
 Creates a new modal form builder.
 
 **Returns** [*MessageFormData*](MessageFormData.md)
-  
-Notes:
-- This function can't be called in read-only mode.
 
 ### **body**
 `

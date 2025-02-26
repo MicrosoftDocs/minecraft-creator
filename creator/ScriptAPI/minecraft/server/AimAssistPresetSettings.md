@@ -63,9 +63,6 @@ Constructor that takes a unique Id to associate with the created AimAssistPreset
 - **identifier**: *string*
 
 **Returns** [*AimAssistPresetSettings*](AimAssistPresetSettings.md)
-  
-Notes:
-- This function can't be called in read-only mode.
 
 ### **getExcludedTargets**
 `

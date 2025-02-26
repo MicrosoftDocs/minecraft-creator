@@ -25,6 +25,8 @@ Type of item that can be added to the property pane
 `ColorPicker = editorUI:ColorPicker`
 ### **ComboBox**
 `ComboBox = editorUI:ComboBox`
+### **DataTable**
+`DataTable = editorUI:DataTable`
 ### **Divider**
 `Divider = editorUI:Divider`
 ### **Dropdown**
@@ -41,8 +43,6 @@ Type of item that can be added to the property pane
 `String = editorUI:String`
 ### **SubPane**
 `SubPane = editorUI:SubPane`
-### **Table**
-`Table = editorUI:Table`
 ### **Text**
 `Text = editorUI:Text`
 ### **ToggleGroup**

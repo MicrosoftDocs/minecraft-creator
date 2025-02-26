@@ -39,6 +39,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addColorPicker](#addcolorpicker)
 - [addColorPicker_deprecated](#addcolorpicker_deprecated)
 - [addComboBox](#addcombobox)
+- [addDataTable](#adddatatable)
 - [addDivider](#adddivider)
 - [addDropdown](#adddropdown)
 - [addDropdown_deprecated](#adddropdown_deprecated)
@@ -49,7 +50,6 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addProgressIndicator](#addprogressindicator)
 - [addString](#addstring)
 - [addString_deprecated](#addstring_deprecated)
-- [addTable](#addtable)
 - [addText](#addtext)
 - [addToggleGroup](#addtogglegroup)
 - [addVector3](#addvector3)
@@ -62,19 +62,16 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 
 ### **addBlockList**
 `
-addBlockList(options: IPropertyItemOptionsBlockList): IBlockListPropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>
+addBlockList(value: IObservableProp<string[]>, options: IBlockListPropertyItemOptions): IBlockListPropertyItem
 `
 
 Adds a block list to the pane.
 
 #### **Parameters**
-- **options**: *IPropertyItemOptionsBlockList*
+- **value**: *IObservableProp<string[]>*
+- **options**: *IBlockListPropertyItemOptions*
 
-**Returns** *IBlockListPropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>*
+**Returns** *IBlockListPropertyItem*
 
 ### **addBlockTable**
 `
@@ -179,6 +176,18 @@ Adds a combo box item to the pane.
 - **options**: *IComboBoxPropertyItemOptions*
 
 **Returns** *IComboBoxPropertyItem*
+
+### **addDataTable**
+`
+addDataTable(options: IDataTablePropertyItemOptions): IDataTablePropertyItem
+`
+
+Adds a data table to the pane.
+
+#### **Parameters**
+- **options**: *IDataTablePropertyItemOptions*
+
+**Returns** *IDataTablePropertyItem*
 
 ### **addDivider**
 `
@@ -307,22 +316,6 @@ Adds a string item to the pane
 - **options**: *IPropertyItemOptions*
 
 **Returns** *IPropertyItem<T, Prop>*
-
-### **addTable**
-`
-addTable(options: IPropertyItemOptionsTable): ITablePropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>
-`
-
-Adds a table to the pane.
-
-#### **Parameters**
-- **options**: *IPropertyItemOptionsTable*
-
-**Returns** *ITablePropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>*
 
 ### **addText**
 `

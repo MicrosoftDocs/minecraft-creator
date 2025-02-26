@@ -12,6 +12,7 @@ description: Contents of the @minecraft/server.BlockComponent class.
 - [*Component*](Component.md)
 
 ## Classes that extend BlockComponent
+- [*BlockDestructionParticlesComponent*](BlockDestructionParticlesComponent.md)
 - [*BlockFluidContainerComponent*](BlockFluidContainerComponent.md)
 - [*BlockInventoryComponent*](BlockInventoryComponent.md)
 - [*BlockMapColorComponent*](BlockMapColorComponent.md)

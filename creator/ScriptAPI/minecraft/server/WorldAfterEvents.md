@@ -237,16 +237,6 @@ Type: [*ItemUseAfterEventSignal*](ItemUseAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-### **itemUseOn**
-`read-only itemUseOn: ItemUseOnAfterEventSignal;`
-
-This event fires when an item is used on a block by a player.
-
-Type: [*ItemUseOnAfterEventSignal*](ItemUseOnAfterEventSignal.md)
-
-Notes:
-  - This property can be read in early-execution mode.
-
 ### **leverAction**
 `read-only leverAction: LeverActionAfterEventSignal;`
 

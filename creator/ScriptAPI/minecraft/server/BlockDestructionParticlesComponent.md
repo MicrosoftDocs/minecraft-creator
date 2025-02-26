@@ -3,11 +3,11 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server.BlockMapColorComponent Class
-description: Contents of the @minecraft/server.BlockMapColorComponent class.
+title: minecraft/server.BlockDestructionParticlesComponent Class
+description: Contents of the @minecraft/server.BlockDestructionParticlesComponent class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# BlockMapColorComponent Class
+# BlockDestructionParticlesComponent Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -15,32 +15,25 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Extends
 - [*BlockComponent*](BlockComponent.md)
 
-Represents the color of a block when displayed on a map.
+Represents the particles that appear when the block is destroyed.
 
 ## Properties
 
-### **color**
-`read-only color: RGBA;`
+### **texture**
+`read-only texture: string;`
 
-Base map color defined for that block.
+Name of the texture used for the particles.
 
-Type: [*RGBA*](RGBA.md)
+Type: *string*
 
 Notes:
   - This property can throw errors when used.
     - Throws *Error*
 
-### **tintedColor**
-`read-only tintedColor: RGBA;`
-
-Returns the base color multiplied to the evaluated tint at the given position.
-
-Type: [*RGBA*](RGBA.md)
-
 ### **tintMethod**
 `read-only tintMethod: TintMethod;`
 
-Type of tint applied to the color.
+Type of tint applied to the particles.
 
 Type: [*TintMethod*](TintMethod.md)
 
@@ -51,6 +44,6 @@ Notes:
 ## Constants
 
 ### **componentId**
-`static read-only componentId = "minecraft:map_color";`
+`static read-only componentId = "minecraft:destruction_particles";`
 
 Type: *string*

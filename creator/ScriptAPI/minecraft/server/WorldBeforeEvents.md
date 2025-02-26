@@ -100,16 +100,6 @@ Type: [*ItemUseBeforeEventSignal*](ItemUseBeforeEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-### **itemUseOn**
-`read-only itemUseOn: ItemUseOnBeforeEventSignal;`
-
-This event fires when an item is used on a block by a player.
-
-Type: [*ItemUseOnBeforeEventSignal*](ItemUseOnBeforeEventSignal.md)
-
-Notes:
-  - This property can be read in early-execution mode.
-
 ### **playerBreakBlock**
 `read-only playerBreakBlock: PlayerBreakBlockBeforeEventSignal;`
 

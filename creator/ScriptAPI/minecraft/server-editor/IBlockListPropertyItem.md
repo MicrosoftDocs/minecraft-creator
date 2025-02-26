@@ -3,14 +3,21 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .IBlockListPropertyItem type alias.
+title: minecraft/server-editor.IBlockListPropertyItem Interface
+description: Contents of the @minecraft/server-editor.IBlockListPropertyItem class.
 ---
-# IBlockListPropertyItem Type Alias
+# IBlockListPropertyItem Interface
 
-A property item which supports BlockList properties
+## Extends
+- *IPropertyItemBase*
 
-## Declaration
-`export type IBlockListPropertyItem<T extends PropertyBag, Prop extends keyof T & string> = IPropertyItem<T, Prop> & {
-    updateBlockList(newBlockList: string[]): void;
-};`
+A property item which supports block list properties
+
+## Properties
+
+### **value**
+`read-only value: ReadonlyArray<string>;`
+
+Current value of the property item.
+
+Type: *ReadonlyArray<string>*
