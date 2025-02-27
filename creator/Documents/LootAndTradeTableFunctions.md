@@ -530,7 +530,7 @@ Transforms a normal map into a treasure map that marks the location of hidden tr
   }
 ```
 
-You could currently choose from the following destinations:
+These are the current destinations:
 
 |Destination|
 |:---|

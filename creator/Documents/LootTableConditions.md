@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Loot Table Conditions
 
-Conditions are a list of requirements that must be met before a pool can be used or an individual entry can be selected. All conditions are stored within the conditions list, and each condition runs one at a time. If any one condition in the list fails, the remaining conditions in said list will be ignored.
+Conditions are a list of requirements that must be met before a pool can be used or an individual entry can be selected. All conditions are stored within the `conditions` list, and each condition runs one at a time. If any one condition in the list fails, the remaining conditions in the list will be ignored.
 
 ### has_mark_variant
 
@@ -29,20 +29,36 @@ Example:
 
 `has_variant` specifies that there are different variations for the loot.
 
+An example of this is when a frog kills a magma cube and drops either a verdant, ochre, or pearlescent froglight.
+
 Example:
 
 ```json
- "conditions": [
-        {
-          "condition": "has_variant",
-          "value": 0
-        }
-      ]
+{
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:pearlescent_froglight",
+            "weight": 1
+          }
+        ],
+        "conditions": [
+          {
+            "condition": "has_variant",
+            "value": 2
+          },
+          {
+            "condition": "entity_killed",
+            "entity_type": "minecraft:magma_cube"
+          }
+        ]
+      }
 ```
 
 ### killed_by_player_or_pets
 
-The `killed_by_player_or_pets`condition can supply another way to customize a loot drop, depending on how the entity was killed.
+The `killed_by_player_or_pets`condition can supply another way to customize a loot drop, depending on how the entity was killed. For example, if you create a custom entity like a pet dragon and it kills a chicken for you, you could make a cooked chicken drop.
 
 Example:
 
@@ -125,6 +141,7 @@ Example:
 ### match_tool
 
 `match_tool` checks whether the tool (or weapon/item the player is using) used to make the loot drop matches the modifier conditions provided.
+
 The predicates used are: count, durability, enchantments, and item.
 
 >- **count:** amount of the item
@@ -198,7 +215,7 @@ The below example will only trigger if the entity calling it was killed by a ske
 
 ### Entry conditions
 
-You can also apply conditions to specific `entries` within the roll. The following example will only return diamond 50% of the time if the entity that called it was killed by the player. All other times it's called, it will return coal.
+You can also apply conditions to specific `entries` within the roll. The following example will only return a diamond 50% of the time if the entity that called it was killed by the player. All other times it's called, it will return coal.
 
 ```json
 "pools": [
@@ -225,4 +242,6 @@ You can also apply conditions to specific `entries` within the roll. The followi
 ]
 ```
 
-Exploring the different [functions](LootAndTradeTableFunctions.md) available can allow creators to really customize the player experience. Name items and give them lore, drop resource crates full of supplies, and even create written books for instructions or information. The possibilities truly are staggering!
+Exploring the different [loot and trade table functions](LootAndTradeTableFunctions.md) can allow creators to further customize the player experience. 
+
+From naming items and giving them lore to dropping resource crates full of supplies, or even creating written books for instructions or information, the possibilities truly are staggering!
