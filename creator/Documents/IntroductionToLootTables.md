@@ -17,7 +17,9 @@ With just a few lines of JSON, loot tables control what you find when you break 
 
 Loot table files live in a directory (cleverly named `loot_tables`) at the root level of a behavior pack.
 
-The five categories of loot tables in Vanilla Minecraft are blocks, chests, entities, equipment, and gameplay (such as fishing). If you have more than one type of loot table in your behavior pack, it would be a good idea to put each type in its own subfolder. But this is not required.
+The five categories of loot tables in Vanilla Minecraft are blocks, chests, entities, equipment, and gameplay (such as fishing, milking a mooshroom, or watching your sniffer find seeds). 
+
+If you have more than one type of loot table in your behavior pack, it would be a good idea to put each type in its own subfolder. But this is not required.
 
 ![Image of the structure of a behavior pack showing that the example block loot file can go into a blocks subfolder or directly in the loot_tables folder.](Media/IntroToLootTables/loot-behavior-pack-structure.png)
 
