@@ -317,8 +317,8 @@ Controls the scatter distribution of a particular object.
 
 | Name| Type | Required? | Description |
 |:-----------|:-----------|:-----------|:-----------|
-| coordinate_eval_order | *n/a* | Optional | The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to "xzy". Supported orders are defined by "Coordinate Evaluation Order". |
-| iterations | Object of type struct SharedTypes::Legacy::ExpressionNode | Required | Number of scattered positions to generate. |
+| coordinate_eval_order | *not set* | Optional | The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to "xzy". Supported orders are defined by "Coordinate Evaluation Order". |
+| iterations | Integer | Required | Number of times the placement will be attempted. Greater values will mean a greater concentration of items placed. |
 | scatter_chance | Object of type Scatter Chance | Optional | Probability that this scatter will occur. Not evaluated each iteration; either no iterations will run, or all will. |
 | x | Object of type Coordinate Range | Required | Distribution for the coordinate (evaluated each iteration). |
 | y | Object of type Coordinate Range | Required | Distribution for the coordinate (evaluated each iteration). |
