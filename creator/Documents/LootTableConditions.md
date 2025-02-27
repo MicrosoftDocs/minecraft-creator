@@ -1,9 +1,10 @@
 ---
-author: JimSeaman42
+author: iconicNurdle
 ms.author: mikeam
 title: Loot and Trade Table Conditions
-description: "A guide to the sse of loot table conditions"
+description: "A guide to the use of loot table conditions"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/26/2025
 ---
 
 # Loot Table Conditions
@@ -14,59 +15,77 @@ Conditions are a list of requirements that must be met before a pool can be used
 
 `has_mark_variant` specifies that there are different variations for the loot.
 
+An example of this are the marked variants for which suspicious stew you might get from a mooshroom.
+
 Example:
 
 ```json
- "conditions": [
+{
+  "conditions": [
+    {
+      "condition": "has_mark_variant",
+      "value": 7
+    }
+  ],
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:suspicious_stew",
+      "weight": 1,
+      "functions": [
         {
-          "condition": "has_mark_variant",
-          "value": 0
+          "function": "set_data",
+          "data": 7
         }
       ]
+    }
+  ]
+}
 ```
 
 ### has_variant
 
 `has_variant` specifies that there are different variations for the loot.
 
-An example of this is when a frog kills a magma cube and drops either a verdant, ochre, or pearlescent froglight.
+An example of this is when a frog kills a magma cube and drops either a verdant, ochre, or pearlescent froglight. 
 
 Example:
 
 ```json
 {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "name": "minecraft:pearlescent_froglight",
-            "weight": 1
-          }
-        ],
-        "conditions": [
-          {
-            "condition": "has_variant",
-            "value": 2
-          },
-          {
-            "condition": "entity_killed",
-            "entity_type": "minecraft:magma_cube"
-          }
-        ]
-      }
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:pearlescent_froglight",
+       "weight": 1
+     }
+   ],
+   "conditions": [
+     {
+       "condition": "has_variant",
+       "value": 2
+     },
+     {
+       "condition": "entity_killed",
+       "entity_type": "minecraft:magma_cube"
+     }
+   ]
+}
 ```
 
 ### killed_by_player_or_pets
 
-The `killed_by_player_or_pets`condition can supply another way to customize a loot drop, depending on how the entity was killed. For example, if you create a custom entity like a pet dragon and it kills a chicken for you, you could make a cooked chicken drop.
+The `killed_by_player_or_pets`condition can supply another way to customize a loot drop, depending on how the entity was killed. For example, if you make your pet wolf takes down a drowned zombie for you, then that entity's loot table takes that into consideration.
 
 Example:
 
 ```json
  "conditions": [
-        {
-         "condition": "killed_by_player_or_pets"
-         },
+    {
+      "condition": "killed_by_player_or_pets"
+    },
  ]
 ```
 
@@ -88,6 +107,8 @@ Example:
 ### random_chance_with_looting
 
 The `random_chance_with_looting` condition is similar to the `random_chance` condition, but also includes a multiplier value.
+
+The **looting** enchantment results in more dropped items from entities, like getting two or more raw chickens when you kill one chicken.
 
 Example:
 
