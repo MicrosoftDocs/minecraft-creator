@@ -101,11 +101,11 @@ Now we add a lever in front of our impulse command block and have each player co
 
 Now it's time to hand out the ammunition for our snowball fight!
 
-Create a repeating command block set to **Always Active** in Team 1's area and enter the following command:
+Create a repeating command block set to **Always Active** and enter the following command:
 
 `/execute as @e[type=snowball] at @e[family=player, c=1] if entity @e[type=snowball,r=1] at @e[family=player, c=1] run damage @e[family=player, c=1, r=1] 2`
 
-Whew! Okay, let's break that down. We're using the `execute` command to continuously execute a command everywhere in the world, all the time. The `as @e[type=snowball]` part means that we are executing the command *as any snowball in the world*. The `at @e[family=player, c=1]` means that the snowball will target the **closest** player within one block of itself (c=1) that has the `player` family type. If all of those conditions are met, then it will damage that player for 2 health. You can adjust this final value to increase or decrease the amount of damage dealt by each snowball.
+Whew! Okay, let's break that down. We're using the `execute` command in a repeating command block to continuously execute a command everywhere in the world, all the time. The `as @e[type=snowball]` part means that we are executing the command *as any snowball in the world*. The `at @e[family=player, c=1]` means that the snowball will target the **closest** player within one block of itself (c=1) that has the `player` family type. If all of those conditions are met, then it will damage that player for 2 health. You can adjust this final value to increase or decrease the amount of damage dealt by each snowball.
 
 ## Snowball Fight!
 
