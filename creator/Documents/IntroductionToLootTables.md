@@ -11,7 +11,7 @@ ms.date: 02/26/2025
 
 When you do something fun and get rewarded with loot in Minecraft, a loot table was involved. 
 
-With just a few lines of JSON, loot tables control what you find when you break a block, open a chest, interact with an entity, and use differently enchanted items in typical gameplay.
+With just a few lines of JSON, loot tables control what you find when you break a block, open a newly discovered chest, interact with an entity, and use differently enchanted items in typical gameplay.
 
 ![Image showing Steve opening a chest to find glowing loot.](Media/IntroToLootTables/Loot-and-Trading-Tables.jpg)
 
@@ -23,12 +23,12 @@ If you have more than one type of loot table in your behavior pack, it would be 
 
 ![Image of the structure of a behavior pack showing that the example block loot file can go into a blocks subfolder or directly in the loot_tables folder.](Media/IntroToLootTables/loot-behavior-pack-structure.png)
 
-A loot table file generally consists of three main sections collectively known as a "pool."
+A loot table file generally consists of three main sections collectively known as a "pool." As a creator, you might want to have different pools so you can drop different loot to your players if they satisfy different [loot table conditions](../Documents/LootTableConditions.md).
 
 - **Rolls**
   - Rolls dictate how many times the pool will be rolled to select an entry. This could be either an integer which will result in a set amount of rolls or a min/max range from which the number of rolls can be chosen.
 - [Loot Table Conditions](LootTableConditions.md)
-  - These are optional requirements that must be met for the pool to be rolled.
+  - These are optional requirements that must be met for the pool to be rolled. Some of the more interesting [functions](../Documents/LootAndTradeTableFunctions.md) you might want in your gameplay include setting the lore on an item (`set_lore`) and putting your own content into a book (`set_book_contents`).
 - **Entries**
   - This is a list of objects the game will select from in this roll. It can be an `item`, a `loot_table`, or `empty` if you want a chance of nothing happening this roll.
 
