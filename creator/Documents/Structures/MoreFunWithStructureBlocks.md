@@ -4,6 +4,7 @@ ms.author: mikeam
 title: More Fun with Structure Blocks
 description: "A continuation of how to use Structure Blocks in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/28/2025
 ---
 
 # More Fun with Structure Blocks
