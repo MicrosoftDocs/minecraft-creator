@@ -1,75 +1,80 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:break_blocks
-description: "A reference document detailing the 'break_blocks' entity component"
+title: "Entity Documentation - minecraft:break_blocks"
+description: "Describes the minecraft:break_blocks entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:break_blocks
 
-`minecraft:break_blocks` specifies which blocks the entity can break as it moves.
+Specifies the blocks that the entity can break as it moves around.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|breakable_blocks|*not set* | List|  A list of the blocks that can be broken as the entity moves |
+## Break Blocks Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| breakable_blocks | *not set* | Array of strings | A list of the blocks that can be broken as this entity moves around. | Ravager: `["bamboo","bamboo_sapling","beetroot","brown_mushroom","carrots","carved_pumpkin","chorus_flower","chorus_plant","deadbush","double_plant","leaves","leaves2","lit_pumpkin","melon_block","melon_stem","potatoes","pumpkin","pumpkin_stem","red_flower","red_mushroom","crimson_fungus","warped_fungus","reeds","sapling","snow_layer","sweet_berry_bush","tallgrass","turtle_egg","vine","waterlily","wheat","dandelion","azalea","flowering_azalea","azalea_leaves","azalea_leaves_flowered","cave_vines","cave_vines_body_with_berries","cave_vines_head_with_berries","small_dripleaf_block","big_dripleaf","spore_blossom","hanging_roots","mangrove_leaves","pale_hanging_moss","cherry_leaves","pale_oak_leaves","firefly_bush","bush"]` | 
 
-```json
-"minecraft:break_blocks":{
-    "breakable_blocks": [
-        "grass",
-        "dirt"
-    ]
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Ravager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ravager.json)
 
-### ravager
 
 ```json
 "minecraft:break_blocks": {
-    "breakable_blocks": [
-        "bamboo",
-        "bamboo_sapling",
-        "beetroot",
-        "brown_mushroom",
-        "carrots",
-        "carved_pumpkin",
-        "chorus_flower",
-        "chorus_plant",
-        "deadbush",
-        "double_plant",
-        "leaves",
-        "leaves2",
-        "lit_pumpkin",
-        "melon_block",
-        "melon_stem",
-        "potatoes",
-        "pumpkin",
-        "pumpkin_stem",
-        "red_flower",
-        "red_mushroom",
-        "crimson_fungus",
-        "warped_fungus",
-        "reeds",
-        "sapling",
-        "snow_layer",
-        "sweet_berry_bush",
-        "tallgrass",
-        "turtle_egg",
-        "vine",
-        "waterlily",
-        "wheat",
-        "yellow_flower"
-    ]
+  "breakable_blocks": [
+    "bamboo",
+    "bamboo_sapling",
+    "beetroot",
+    "brown_mushroom",
+    "carrots",
+    "carved_pumpkin",
+    "chorus_flower",
+    "chorus_plant",
+    "deadbush",
+    "double_plant",
+    "leaves",
+    "leaves2",
+    "lit_pumpkin",
+    "melon_block",
+    "melon_stem",
+    "potatoes",
+    "pumpkin",
+    "pumpkin_stem",
+    "red_flower",
+    "red_mushroom",
+    "crimson_fungus",
+    "warped_fungus",
+    "reeds",
+    "sapling",
+    "snow_layer",
+    "sweet_berry_bush",
+    "tallgrass",
+    "turtle_egg",
+    "vine",
+    "waterlily",
+    "wheat",
+    "dandelion",
+    "azalea",
+    "flowering_azalea",
+    "azalea_leaves",
+    "azalea_leaves_flowered",
+    "cave_vines",
+    "cave_vines_body_with_berries",
+    "cave_vines_head_with_berries",
+    "small_dripleaf_block",
+    "big_dripleaf",
+    "spore_blossom",
+    "hanging_roots",
+    "mangrove_leaves",
+    "pale_hanging_moss",
+    "cherry_leaves",
+    "pale_oak_leaves",
+    "firefly_bush",
+    "bush"
+  ]
 }
 ```
-
-## Vanilla entities using `minecraft:break_blocks`
-
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)

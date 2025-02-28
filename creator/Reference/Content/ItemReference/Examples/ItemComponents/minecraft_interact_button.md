@@ -1,11 +1,12 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:interact_button
-description: "A reference document detailing the 'interact button' item component"
+title: "Items Documentation - minecraft:interact_button"
+description: "Describes the minecraft:interact_button item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:interact_button
+# Items Documentation - minecraft:interact_button
 
-`minecraft:interact_button` is a boolean or string that determines if the interact button is shown in touch controls, and what text is displayed on the button. When set to 'true', the default 'Use Item' text will be used.
+A boolean or string that determines if the interact button is shown in touch controls, and what text is displayed on the button. When set to 'true', the default 'Use Item' text will be used.

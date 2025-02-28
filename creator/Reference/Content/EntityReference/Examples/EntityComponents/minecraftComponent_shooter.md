@@ -1,55 +1,229 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:shooter(entity)
-description: "A reference document detailing the 'shooter (entity)' entity component"
+title: "Entity Documentation - minecraft:shooter"
+description: "Describes the minecraft:shooter entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:shooter (Entity)
+# Entity Documentation - minecraft:shooter
 
-`minecraft:shooter` defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_attack" goal uses this component to determine which projectiles to shoot.
+Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_attack" goal uses this component to determine which projectiles to shoot.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| aux_val| -1| Integer| ID of the Potion effect for the default projectile to be applied on hit |
-| def| *not set*| String| Actor definition to use as projectile for the ranged attack. The entity definition must have the projectile component to be able to be shot as a projectile |
-| magic| False| Boolean| Sets whether the projectiles being used are flagged as magic. If set, the ranged attack goal will not be used at the same time as other magic goals, such as minecraft:behavior.drink_potion |
-| power| 0.00| Decimal| Velocity in which the projectiles will be shot. A power of 0 will be overwritten by the default projectile throw power. |
-| projectiles| -- | List| List of projectiles that can be used by the shooter. Projectiles are evaluated in the order of the list; after a projectile is chosen, the rest of the list is ignored. |
-| sound| -- | String| Sound that is played when the shooter shoots a projectile. |
+## Shooter Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| aux_val | -1 | Integer number | ID of the Potion effect for the default projectile to be applied on hit. | Bogged: `26`, Witch: `23` | 
+| def | *not set* | String | Actor definition to use as the default projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile. | Blaze: `"minecraft:small_fireball"`, Bogged: `"minecraft:arrow"`, Drowned: `"minecraft:thrown_trident"` | 
+| magic | false | Boolean true/false | Sets whether the projectiles being used are flagged as magic. If set, the ranged attack goal will not be used at the same time as other magic goals, such as minecraft:behavior.drink_potion | Witch: `true` | 
+| power | 0 | Decimal number | Velocity in which the projectiles will be shot at. A power of 0 will be overwritten by the default projectile throw power. | Witch: `0.75` | 
+| projectiles | *not set* | Array of strings | List of projectiles that can be used by the shooter. Projectiles are evaluated in the order of the list; After a projectile is chosen, the rest of the list is ignored. | Witch: `[{"def":"minecraft:splash_potion","aux_val":21,"filters":{"all_of":[{"test":"is_raider","subject":"other","value":true},{"test":"actor_health","subject":"other","value":4,"operator":"<="}]},"lose_target":true},{"def":"minecraft:splash_potion","aux_val":28,"filters":{"all_of":[{"test":"is_raider","subject":"other","value":true}]},"lose_target":true},{"def":"minecraft:splash_potion","aux_val":17,"filters":{"all_of":[{"test":"target_distance","subject":"self","value":8,"operator":">="},{"none_of":[{"test":"has_mob_effect","subject":"other","value":"slowness"}]}]}},{"def":"minecraft:splash_potion","aux_val":25,"filters":{"all_of":[{"test":"actor_health","subject":"other","value":8,"operator":">="},{"none_of":[{"test":"has_mob_effect","subject":"other","value":"poison"}]}]}},{"def":"minecraft:splash_potion","aux_val":34,"filters":{"all_of":[{"test":"target_distance","subject":"self","value":3,"operator":"<="},{"none_of":[{"test":"has_mob_effect","subject":"other","value":"weakness"}]}]},"chance":0.25}]` | 
+| sound | *not set* | String | Sound that is played when the shooter shoots a projectile. | Bogged: `"bow"`, Drowned: `"item.trident.throw"`, Witch: `"throw"` | 
 
-```json
-"minecraft:shooter":{
-    "aux_val": -1,
-    "def": "minecraft:small_fireball",
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
 
-### ghast
 
 ```json
 "minecraft:shooter": {
-    "def": "minecraft:fireball"
+  "def": "minecraft:small_fireball"
 }
 ```
 
-## Vanilla entities using `minecraft:shooter`
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
 
-- [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
+
+```json
+"minecraft:shooter": {
+  "def": "minecraft:arrow",
+  "sound": "bow",
+  "aux_val": 26
+}
+```
+
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
+
+
+```json
+"minecraft:shooter": {
+  "def": "minecraft:thrown_trident",
+  "sound": "item.trident.throw"
+}
+```
+
+#### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
+
+
+```json
+"minecraft:shooter": {
+  "def": "minecraft:dragon_fireball"
+}
+```
+
+#### [Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ghast.json)
+
+
+```json
+"minecraft:shooter": {
+  "def": "minecraft:fireball"
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:shooter": {
+  "def": "minecraft:llama_spit"
+}
+```
+
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
+
+
+```json
+"minecraft:shooter": {
+  "def": "minecraft:arrow"
+}
+```
+
+#### [Shulker](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/shulker.json)
+
+
+```json
+"minecraft:shooter": {
+  "def": "minecraft:shulker_bullet"
+}
+```
+
+#### [Snow Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/snow_golem.json)
+
+
+```json
+"minecraft:shooter": {
+  "def": "minecraft:snowball"
+}
+```
+
+#### [Witch](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/witch.json)
+
+
+```json
+"minecraft:shooter": {
+  "power": 0.75,
+  "def": "minecraft:splash_potion",
+  "aux_val": 23,
+  "sound": "throw",
+  "projectiles": [
+    {
+      "def": "minecraft:splash_potion",
+      "aux_val": 21,
+      "filters": {
+        "all_of": [
+          {
+            "test": "is_raider",
+            "subject": "other",
+            "value": true
+          },
+          {
+            "test": "actor_health",
+            "subject": "other",
+            "value": 4,
+            "operator": "<="
+          }
+        ]
+      },
+      "lose_target": true
+    },
+    {
+      "def": "minecraft:splash_potion",
+      "aux_val": 28,
+      "filters": {
+        "all_of": [
+          {
+            "test": "is_raider",
+            "subject": "other",
+            "value": true
+          }
+        ]
+      },
+      "lose_target": true
+    },
+    {
+      "def": "minecraft:splash_potion",
+      "aux_val": 17,
+      "filters": {
+        "all_of": [
+          {
+            "test": "target_distance",
+            "subject": "self",
+            "value": 8,
+            "operator": ">="
+          },
+          {
+            "none_of": [
+              {
+                "test": "has_mob_effect",
+                "subject": "other",
+                "value": "slowness"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "def": "minecraft:splash_potion",
+      "aux_val": 25,
+      "filters": {
+        "all_of": [
+          {
+            "test": "actor_health",
+            "subject": "other",
+            "value": 8,
+            "operator": ">="
+          },
+          {
+            "none_of": [
+              {
+                "test": "has_mob_effect",
+                "subject": "other",
+                "value": "poison"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "def": "minecraft:splash_potion",
+      "aux_val": 34,
+      "filters": {
+        "all_of": [
+          {
+            "test": "target_distance",
+            "subject": "self",
+            "value": 3,
+            "operator": "<="
+          },
+          {
+            "none_of": [
+              {
+                "test": "has_mob_effect",
+                "subject": "other",
+                "value": "weakness"
+              }
+            ]
+          }
+        ]
+      },
+      "chance": 0.25
+    }
+  ],
+  "magic": true
+}
+```

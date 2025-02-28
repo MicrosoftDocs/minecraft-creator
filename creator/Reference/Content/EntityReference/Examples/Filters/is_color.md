@@ -1,96 +1,83 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - is_color
-description: "A reference document detailing the 'is_color' entity filter"
+title: "Entity Filters Documentation - minecraft:is_color"
+description: "Describes the minecraft:is_color entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - is_color
+# Entity Filters Documentation - minecraft:is_color
 
-Returns true if the subject entity is of the named color.
+Returns true if the subject entity is the named color.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |String |(Required) The Palette Color to test |
+## Is Color Properties
 
-### List of colors
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | [Value](#value-choices) choices | (Required) The Palette Color to test |  | 
 
-Below is a list of color types that can be used for the `value` string.
+### Operator choices
 
-| Options|
-|:-----------|
-| black|
-| blue|
-| brown|
-| cyan|
-| gray|
-| green|
-| light_blue|
-| light_green|
-| magenta|
-| orange|
-| pink|
-| purple|
-| red|
-| silver|
-| white|
-| yellow|
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
->[!Note]
-> `is_color` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+### Subject choices
 
-### subject
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+### Value choices
 
-### operator
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| black | Black | |
+| blue | Blue | |
+| brown | Brown | |
+| cyan | Cyan | |
+| gray | Gray | |
+| green | Green | |
+| light_blue | Light Blue | |
+| light_green | Light Green | |
+| magenta | Magenta | |
+| orange | Orange | |
+| pink | Pink | |
+| purple | Purple | |
+| red | Red | |
+| silver | Silver | |
+| white | White | |
+| yellow | Yellow | |
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+## Samples
 
-## Example
-
-### Full
+At Full..: 
 
 ```json
 { "test": "is_color", "subject": "self", "operator": "equals", "value": "white" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "is_color", "value": "white" }
 ```
-
-## Vanilla entities examples
-
-### evocation_illager
-
-```json
-{ "test" :  "is_color", "subject" : "other", "value" :  "blue"}
-```
-
-## Vanilla entities using is_color
-
-- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)

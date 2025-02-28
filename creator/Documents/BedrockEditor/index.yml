@@ -30,15 +30,46 @@ landingContent:
             url: EditorWorldOptions.md
           - text: Action Bar
             url: EditorActionBar.md
+          - text: Action Bar
+            url: EditorActionBar.md
+          - text: Settings
+            url: EditorSettings.md  
+          - text: Paste Preview
+            url: EditorPastePreview.md
+  - title: Tools
+    linkLists:            
+      - linkListType: reference
+        links:
           - text: Selection Tool
             url: EditorSelectionTool.md
           - text: Brush Tool
             url: EditorBrushTool.md
-          - text: Paste Preview
-            url: EditorPastePreview.md
+          - text: Extrude Tool
+            url: EditorExtrudeTool.md  
+          - text: Farm Tool
+            url: EditorFarmTool.md    
+          - text: Fill Tool
+            url: EditorFillTool.md    
+          - text: Flatten Tool
+            url: EditorFlattenTool.md   
+          - text: Repeater Tool
+            url: EditorRepeaterTool.md 
+          - text: Terrain Tool
+            url: EditorTerrainTool.md   
           - text: Summon Tool
             url: EditorSummonTool.md
-
+  - title: Inspectors and Panels
+    linkLists:            
+      - linkListType: reference
+        links:
+          - text: Block Inspector
+            url: EditorBlockInspector.md
+          - text: Entity Inspector
+            url: EditorEntityInspector.md
+          - text: Structures
+            url: EditorStructures.md    
+          - text: Workbench
+            url: EditorWorkbench.md               
   - title: Working with Bedrock Editor
     linkLists:
       - linkListType: get-started

@@ -1,81 +1,252 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.tempt
-description: "A reference document detailing the 'behavior.tempt' entity goal"
+title: "Entity Documentation - behavior.tempt"
+description: "Describes the behavior.tempt AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.tempt
+# Entity Documentation - behavior.tempt
 
-`minecraft:behavior.tempt` compels an entity to be tempted by a set item.
+Allows the mob to be tempted by food they like.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| can_get_scared| false| Boolean| If true, the mob can stop being tempted if the player moves too fast while close to this mob. |
-| can_tempt_vertically| false| Boolean| If true, vertical distance to the player will be considered when tempting. |
-| can_tempt_while_ridden| false| Boolean| If true, the mob can be tempted even if it has a passenger riding it. |
-| items| | List| List of items this mob is tempted by |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| sound_interval| [0.0, 0.0]| Range [a, b] |Range of random ticks to wait between tempt sounds. |
-| speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
-| tempt_sound| | String | Sound to play while the mob is being tempted. |
-| within_radius| 0.0| Decimal| Distance in blocks this mob can get tempted by a player holding an item they like. |
+## Tempt Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| can_get_scared | false | Boolean true/false | If true, the mob can stop being tempted if the player moves too fast while close to this mob | Cat: `true` | 
+| can_tempt_vertically | false | Boolean true/false | If true, vertical distance to the player will be considered when tempting. | Armadillo: `true` | 
+| can_tempt_while_ridden | false | Boolean true/false | If true, the mob can be tempted even if it has a passenger (i.e. if being ridden). | Strider: `true` | 
+| items | *not set* | Array of strings | List of items this mob is tempted by | Armadillo: `["spider_eye"]`, Axolotl: `["tropical_fish_bucket"]`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:open_eyeblossom","minecraft:wildflowers","minecraft:cactus_flower"]` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Armadillo: `3`, Axolotl: `2`, Bee: `5` | 
+| sound_interval | *not set* | Range of integers | Range of random ticks to wait between tempt sounds. | Cat: `[0,100]`, Strider: `{"range_min":2,"range_max":5}` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Armadillo: `1.25`, Axolotl: `1.1`, Camel: `2.5` | 
+| tempt_sound | *not set* | String | Sound to play while the mob is being tempted. | Cat: `"tempt"` | 
+| within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like | Bee: `8`, Cat: `16` | 
+
+## Samples
+
+#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
+
 
 ```json
-"minecraft:behavior.tempt":{
-    "priority": 2,
-    "can_get_scared":true,
-    "can_tempt_vertically": false,
-    "can_tempt_while_ridden": true,
-    "speed_multiplier": 1.3,
-    "within_radius": 5.0,
-    "items":["carrot"]
+{
+  "priority": 3,
+  "speed_multiplier": 1.25,
+  "can_tempt_vertically": true,
+  "items": [
+    "spider_eye"
+  ]
 }
 ```
 
-## Vanilla entities examples
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-### strider
 
 ```json
-"minecraft:behavior.tempt": {
-        "priority": 5,
-        "speed_multiplier": 1.2,
-        "items": [
-          "warped_fungus",
-          "warped_fungus_on_a_stick"
-        ],
-        "can_tempt_while_ridden": true,
-        "tempt_sound": "tempt",
-        "sound_interval": {
-          "range_min": 2.0,
-          "range_max": 5.0
-        }
-      }
+{
+  "priority": 2,
+  "speed_multiplier": 1.1,
+  "can_tempt_vertically": true,
+  "items": [
+    "tropical_fish_bucket"
+  ]
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.tempt`
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
+
+```json
+{
+  "priority": 5,
+  "speed_multiplier": 1.25,
+  "within_radius": 8,
+  "can_tempt_vertically": true,
+  "items": [
+    "minecraft:poppy",
+    "minecraft:blue_orchid",
+    "minecraft:allium",
+    "minecraft:azure_bluet",
+    "minecraft:red_tulip",
+    "minecraft:orange_tulip",
+    "minecraft:white_tulip",
+    "minecraft:pink_tulip",
+    "minecraft:oxeye_daisy",
+    "minecraft:cornflower",
+    "minecraft:lily_of_the_valley",
+    "minecraft:dandelion",
+    "minecraft:wither_rose",
+    "minecraft:sunflower",
+    "minecraft:lilac",
+    "minecraft:rose_bush",
+    "minecraft:peony",
+    "minecraft:flowering_azalea",
+    "minecraft:azalea_leaves_flowered",
+    "minecraft:mangrove_propagule",
+    "minecraft:pitcher_plant",
+    "minecraft:torchflower",
+    "minecraft:cherry_leaves",
+    "minecraft:pink_petals",
+    "minecraft:open_eyeblossom",
+    "minecraft:wildflowers",
+    "minecraft:cactus_flower"
+  ]
+}
+```
+
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+
+
+```json
+{
+  "priority": 3,
+  "speed_multiplier": 2.5,
+  "can_tempt_vertically": true,
+  "items": [
+    "cactus"
+  ]
+}
+```
+
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+
+At /minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/: 
+
+```json
+{
+  "priority": 5,
+  "speed_multiplier": 0.5,
+  "within_radius": 16,
+  "can_get_scared": true,
+  "tempt_sound": "tempt",
+  "sound_interval": [
+    0,
+    100
+  ],
+  "items": [
+    "fish",
+    "salmon"
+  ]
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.tempt/: 
+
+```json
+{
+  "priority": 5,
+  "speed_multiplier": 0.5,
+  "within_radius": 16,
+  "items": [
+    "fish",
+    "salmon"
+  ]
+}
+```
+
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
+
+
+```json
+{
+  "priority": 4,
+  "speed_multiplier": 1,
+  "items": [
+    "wheat_seeds",
+    "beetroot_seeds",
+    "melon_seeds",
+    "pumpkin_seeds",
+    "pitcher_pod",
+    "torchflower_seeds"
+  ]
+}
+```
+
+#### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
+
+
+```json
+{
+  "priority": 4,
+  "speed_multiplier": 1.25,
+  "items": [
+    "wheat"
+  ]
+}
+```
+
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
+
+
+```json
+{
+  "priority": 5,
+  "speed_multiplier": 1.2,
+  "items": [
+    "golden_apple",
+    "appleEnchanted",
+    "golden_carrot"
+  ]
+}
+```
+
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+
+
+```json
+{
+  "priority": 3,
+  "speed_multiplier": 0.5,
+  "within_radius": 16,
+  "can_get_scared": true,
+  "items": [
+    "sweet_berries",
+    "glow_berries"
+  ]
+}
+```
+
+#### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
+
+
+```json
+{
+  "priority": 5,
+  "speed_multiplier": 1.25,
+  "can_tempt_vertically": true,
+  "items": [
+    "slime_ball"
+  ]
+}
+```
+
+#### [Goat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/goat.json)
+
+
+```json
+{
+  "priority": 4,
+  "speed_multiplier": 0.75,
+  "items": [
+    "wheat"
+  ]
+}
+```
+
+#### [Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/horse.json)
+
+
+```json
+{
+  "priority": 5,
+  "speed_multiplier": 1.2,
+  "items": [
+    "golden_apple",
+    "appleEnchanted",
+    "golden_carrot"
+  ]
+}
+```

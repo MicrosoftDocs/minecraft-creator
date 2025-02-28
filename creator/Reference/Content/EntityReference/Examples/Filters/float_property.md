@@ -1,68 +1,63 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - float_property
-description: "A reference document detailing the 'float_property' entity filter"
+title: "Entity Filters Documentation - minecraft:float_property"
+description: "Describes the minecraft:float_property entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - float_property
+# Entity Filters Documentation - minecraft:float_property
 
-Returns true when the `float` entity property matches the value provided.
+Returns true when the float actor property matches the value provided.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-| domain|*not set* |String | (Required) The property name to look for. |
-| operator|equals |String | (Optional) The comparison to apply with 'value'.|
-| value|*not set* |Decimal | (Required) A floating point value. |
+## Float Property Properties
 
-### operator
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| domain | *not set* | String | (Required) The property name to look for |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | Decimal number | (Required) A floating point value. |  | 
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+### Operator choices
 
-### subject
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+### Subject choices
 
-## Examples
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-### Full
+## Samples
+
+At Full..: 
 
 ```json
 { "test": "float_property", "subject": "self", "domain": "minecraft:can_climb", "operator": "equals", "value": "0.00" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "float_property", "domain": "minecraft:can_climb", "value": "0.00" }
 ```
-
-## Vanilla entity examples
-
-No entities currently use `float_property`
-
-## Vanilla entities using `float_property`
-
-No entities currently use `float_property`

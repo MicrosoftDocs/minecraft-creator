@@ -17,6 +17,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 `BirchFoliage = "BirchFoliage"`
 ### **DefaultFoliage**
 `DefaultFoliage = "DefaultFoliage"`
+### **DryFoliage**
+`DryFoliage = "DryFoliage"`
 ### **EvergreenFoliage**
 `EvergreenFoliage = "EvergreenFoliage"`
 ### **Grass**

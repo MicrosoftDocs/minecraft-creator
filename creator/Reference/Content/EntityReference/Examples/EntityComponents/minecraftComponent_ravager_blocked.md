@@ -1,54 +1,43 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:ravager_blocked
-description: "A reference document detailing the 'ravager_blocked' entity component"
+title: "Entity Documentation - minecraft:ravager_blocked"
+description: "Describes the minecraft:ravager_blocked entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:ravager_blocked
 
-`minecraft:ravager_blocked` defines the ravager's response to their melee attack being blocked.
+Defines the ravager's response to their melee attack being blocked.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| knockback_strength| 3.0| Decimal| The strength with which blocking entities should be knocked back |
-| reaction_choices| *not set*| List| A list of weighted responses to the melee attack being blocked |
+## Ravager Blocked Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| knockback_strength | 3 | Decimal number | The strength with which blocking entities should be knocked back | Ravager: `3` | 
+| reaction_choices | [ ] | Array of strings | A list of weighted responses to the melee attack being blocked | Ravager: `[{"weight":1,"value":{"event":"minecraft:become_stunned","target":"self"}},{"weight":1}]` | 
 
-```json
-"minecraft:ravager_blocked":{
-    "knockback_strength": 3.0,
-    "reaction_choices": []
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Ravager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ravager.json)
 
-### ravager
 
 ```json
 "minecraft:ravager_blocked": {
-        "knockback_strength": 3.0,
-        "reaction_choices": [
-          {
-            "weight": 1,
-            "value": {
-              "event": "minecraft:become_stunned",
-              "target": "self"
-            }
-          },
-          {
-            // Default, large knockback case
-            "weight": 1
-          }
-        ]
+  "knockback_strength": 3,
+  "reaction_choices": [
+    {
+      "weight": 1,
+      "value": {
+        "event": "minecraft:become_stunned",
+        "target": "self"
       }
+    },
+    {
+      "weight": 1
+    }
+  ]
+}
 ```
-
-## Vanilla entities using `minecraft:ravager_blocked`
-
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)

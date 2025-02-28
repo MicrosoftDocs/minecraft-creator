@@ -1,41 +1,63 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.player_ride_tamed
-description: "A reference document detailing the 'behavior.player_ride_tamed' entity goal"
+title: "Entity Documentation - behavior.player_ride_tamed"
+description: "Describes the behavior.player_ride_tamed AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.player_ride_tamed
+# Entity Documentation - behavior.player_ride_tamed
 
-`minecraft:behavior.player_ride_tamed` allows an entity to be rideable after being tamed by a player.
+Allows the mob to be ridden by the player after being tamed.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+## Player Ride Tamed Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
 
-```json
-"minecraft:behavior.player_ride_tamed":{
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
 
-### zombie_horse
 
 ```json
-"minecraft:behavior.player_ride_tamed": {
-}
+{}
 ```
 
-## Vanilla entities using `minecraft:behavior.player_ride_tamed`
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
 
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
+
+```json
+{}
+```
+
+#### [Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/horse.json)
+
+
+```json
+{}
+```
+
+#### [Mule](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/mule.json)
+
+
+```json
+{}
+```
+
+#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
+
+
+```json
+{}
+```
+
+#### [Zombie Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_horse.json)
+
+
+```json
+{}
+```

@@ -30,6 +30,7 @@ Method to register an event handler for what happens when an entity loads.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **unsubscribe**
 `
@@ -45,3 +46,4 @@ Unregisters a method that was previously subscribed to the subscription event.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

@@ -1,49 +1,83 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:wearable
-description: "A reference document detailing the 'wearable' item component"
+title: "Items Documentation - wearable"
+description: "Describes the wearable Items"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:wearable
+# Items Documentation - wearable
 
-`minecraft:wearable` sets the wearable item component.
-
-## Parameters
-
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| protection| 0 | Integer| How much protection the wearable has.|
-| slot|*not set*| Enumerator| Determines where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.|
-| dispensable |*not set*| Boolean| **Optional** - Certain components have a 'dispensed' behavior. These items can be dispensed to the player.|
+Sets the wearable item component.
 
 
-See [Custom Item Use Priority](../ItemUsePriority.md) for more information on use behavior.
+## Wearable Properties
 
-### slot
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| dispensable | *not set* | String |  | Chestplate: `true` | 
+| protection | *not set* | Integer number | How much protection the wearable item provides. Default is set to 0. |  | 
+| slot | *not set* | String | Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1. | Chestplate: `"slot.armor.chest"`, Crown: `"slot.armor.head"`, My Boots: `"slot.armor.feet"` | 
 
-Here are the following equipment slots that can be set for the value of `slot`.
+## Samples
 
-- slot.weapon.mainhand
-- slot.weapon.offhand
-- slot.armor.head
-- slot.armor.chest
-- slot.armor.legs
-- slot.armor.feet
-- slot.hotbar
-- slot.inventory
-- slot.enderchest
-- slot.saddle
-- slot.armor
-- slot.chest
-- slot.equippable
+#### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
 
-## Example
 
 ```json
-"minecraft:wearable":{
-    "dispensable" : true,
-    "slot": "slot.chest"
+{
+  "dispensable": true,
+  "slot": "slot.armor.chest"
+}
+```
+
+#### [Crown](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/crown.json)
+
+
+```json
+{
+  "dispensable": true,
+  "slot": "slot.armor.head"
+}
+```
+
+#### [My Boots](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_boots.json)
+
+
+```json
+{
+  "dispensable": true,
+  "slot": "slot.armor.feet"
+}
+```
+
+#### [My Helm](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_helm.json)
+
+
+```json
+{
+  "dispensable": true,
+  "slot": "slot.armor.head"
+}
+```
+
+#### [My Leggings](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_leggings.json)
+
+
+```json
+{
+  "dispensable": true,
+  "slot": "slot.armor.legs"
+}
+```
+
+#### [Wrench](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/wrench.json)
+
+
+```json
+{
+  "dispensable": true,
+  "slot": "slot.weapon.offhand"
 }
 ```

@@ -1,55 +1,66 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:group_size
-description: "A reference document detailing the 'group_size' entity component"
+title: "Entity Documentation - minecraft:group_size"
+description: "Describes the minecraft:group_size entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:group_size
 
-`minecraft:group_size` keeps track of entity group size in the given radius.
+Keeps track of entity group size in the given radius.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| filters| *not set*| Minecraft Filter| The list of conditions that must be satisfied for other entities to be counted towards group size. |
-| radius| 16| Decimal| Radius from center of entity. |
+## Group Size Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| filters | *not set* | Minecraft filter | The list of conditions that must be satisfied for other entities to be counted towards group size. | Hoglin: `{"all_of":[{"test":"has_component","operator":"!=","value":"minecraft:is_baby"},{"test":"is_family","value":"hoglin"}]}`, Piglin: `{"all_of":[{"test":"has_component","operator":"!=","value":"minecraft:is_baby"},{"test":"is_family","value":"piglin"}]}` | 
+| radius | 16 | Decimal number | Radius from center of entity. | Hoglin: `32` | 
 
-```json
-"minecraft:group_size":{
-    "filters": {"test": "has_ranged_weapon"} ,
-    "radius": 16,
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
 
-### piglin
 
 ```json
 "minecraft:group_size": {
-          "radius": 32,
-          "filters": {
-            "all_of": [
-              {
-                "test": "has_component",
-                "operator": "!=",
-                "value": "minecraft:is_baby"
-              },
-              {
-                "test": "is_family",
-                "value": "piglin"
-              }
-            ]
-          }
-        }
+  "radius": 32,
+  "filters": {
+    "all_of": [
+      {
+        "test": "has_component",
+        "operator": "!=",
+        "value": "minecraft:is_baby"
+      },
+      {
+        "test": "is_family",
+        "value": "hoglin"
+      }
+    ]
+  }
+}
 ```
 
-## Vanilla entities using `minecraft:group_size`
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
 
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
+
+```json
+"minecraft:group_size": {
+  "radius": 32,
+  "filters": {
+    "all_of": [
+      {
+        "test": "has_component",
+        "operator": "!=",
+        "value": "minecraft:is_baby"
+      },
+      {
+        "test": "is_family",
+        "value": "piglin"
+      }
+    ]
+  }
+}
+```

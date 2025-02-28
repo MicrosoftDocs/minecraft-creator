@@ -1,43 +1,35 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.silverfish_wake_up_friends
-description: "A reference document detailing the 'behavior.silverfish_wake_up_friends' entity goal"
+title: "Entity Documentation - minecraft:behavior.silverfish_wake_up_friends"
+description: "Describes the minecraft:behavior.silverfish_wake_up_friends ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.silverfish_wake_up_friends
 
-`minecraft:behavior.silverfish_wake_up_friends` compels an entity to alert other entities of the same family to leave a stone block.
+Allows the mob to alert mobs in nearby blocks to come out.
 
-> [!NOTE]
-> This behavior can only be used by the `silverfish` entity type.
-> This behavior requires `minecraft:behavior.silverfish_merge_with_stone` to be set.
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Ender Dragon (minecraft:ender_dragon)
+> 
 
-## Parameters
+## Silverfish Wake Up Friends Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Silverfish: `1` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.silverfish_wake_up_friends":{
-    "priority": 2
-}
-```
+#### [Silverfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/silverfish.json)
 
-## Vanilla entities examples
-
-### silverfish
 
 ```json
 "minecraft:behavior.silverfish_wake_up_friends": {
-    "priority": 1
+  "priority": 1
 }
 ```
-
-## Vanilla entities using `minecraft:behavior.silverfish_wake_up_friends`
-
-- [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)

@@ -1,75 +1,62 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - hourly_clock_time
-description: "A reference document detailing the 'hourly_clock_time' entity filter"
+title: "Entity Filters Documentation - minecraft:hourly_clock_time"
+description: "Describes the minecraft:hourly_clock_time entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - hourly_clock_time
+# Entity Filters Documentation - minecraft:hourly_clock_time
 
-Compares the current 24 hour time with an int value in the range[0, 24000]
+Compares the current 24 hour time with an int value in the range[0, 24000].
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |Integer | (Required) An integer value set between 0 and 24000 |
+## Hourly Clock Time Properties
 
-> [!NOTE]
-> `hourly_clock_time` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | Integer number | (Required) An integer value. |  | 
 
-### subject
+### Operator choices
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### operator
+### Subject choices
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-## Example
+## Samples
 
-### Full
+At Full..: 
 
 ```json
 { "test": "hourly_clock_time", "subject": "self", "operator": "equals", "value": "0" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "hourly_clock_time", "value": "0" }
 ```
-
-## Vanilla entities examples
-
-### villager_v2
-
-```json
-{ "test": "hourly_clock_time", "operator": ">=", "value": 0 },
-{ "test": "hourly_clock_time", "operator": "<", "value": 8000 }
-```
-
-## Vanilla entities using `hourly_clock_time`
-
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)

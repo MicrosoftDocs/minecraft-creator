@@ -1,42 +1,32 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:grows_crop
-description: "A reference document detailing the 'grows_crop' entity component"
+title: "Entity Documentation - minecraft:grows_crop"
+description: "Describes the minecraft:grows_crop entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:grows_crop
 
-`minecraft:grows_crop` allows increased crop growth when the entity walks over crops.
+Could increase crop growth when entity walks over crop.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| chance| 0| Decimal| Value between 0-1. Chance of success per tick. |
-| charges| 10| Integer| Number of charges |
+## Grows Crop Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| chance | 0 | Decimal number | Value between 0-1. Chance of success per tick. | Bee: `0.03` | 
+| charges | 10 | Integer number | Number of charges | Bee: `10` | 
 
-```json
-"minecraft:grows_crop":{
-    "chance": 0,
-    "charges": 10
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
 
-### bee
 
 ```json
 "minecraft:grows_crop": {
-                    "charges": 10,
-                    "chance": 0.03
-                }
+  "charges": 10,
+  "chance": 0.03
+}
 ```
-
-## Vanilla entities using `minecraft:grows_crop`
-
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)

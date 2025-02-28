@@ -288,7 +288,7 @@ Molang is a language just for resource and behavior packs. It allows us to get v
 }
 ```
 
-Now that the animation is created, we need to link it in the client entity file. (Remember, the resource pack is the client, so open `<resource pack>/entity/robot.entity.json` for this next part.) The `animations` tag links all animations and animation controllers that are used by the entity. Each animation gets a short name that can be used to play the animation in an animation controller or directly in the file, in this case `drive`.
+Now that the animation is created, we need to link it in the client entity file. (Remember, the resource pack is the client, so open `&lt;resource pack&gt;/entity/robot.entity.json` for this next part.) The `animations` tag links all animations and animation controllers that are used by the entity. Each animation gets a short name that can be used to play the animation in an animation controller or directly in the file, in this case `drive`.
 
 The `scripts` and `animate` sections can be used to directly play animations:
 

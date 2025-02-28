@@ -1,17 +1,19 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:should_despawn
-description: "A reference document detailing the 'should despawn' item component"
+title: "Items Documentation - should_despawn"
+description: "Describes the should_despawn Items"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:should_despawn
+# Items Documentation - should_despawn
 
-`minecraft:should_despawn` determines if an item should despawn while floating in the world.
+Should_despawn component determines if the item should eventually despawn while floating in the world.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| value|*not set* | Boolean| Sets whether the item should eventually despawn while floating in the world.|
+## Should Despawn Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | Boolean true/false | Determines whether the item should eventually despawn while floating in the world. |  | 

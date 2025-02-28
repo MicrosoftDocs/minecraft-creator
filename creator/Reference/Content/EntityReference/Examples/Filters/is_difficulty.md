@@ -1,91 +1,100 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - is_difficulty
-description: "A reference document detailing the 'is_difficulty' entity filter"
+title: "Entity Filters Documentation - minecraft:is_difficulty"
+description: "Describes the minecraft:is_difficulty entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - is_difficulty
+# Entity Filters Documentation - minecraft:is_difficulty
 
 Tests the current difficulty level of the game.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |String |(Required) The game's difficulty level to test |
+## Is Difficulty Properties
 
-### List of difficulty levels
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | [Value](#value-choices) choices | (Required) The game's difficulty level to test |  | 
 
-Below is a list of difficulty levels that can be used for the `value` string.
+### Operator choices
 
-| Options|
-|:-----------|
-| easy|
-| hard|
-| normal|
-| peaceful|
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
->[!Note]
->`is_difficulty` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+### Subject choices
 
-### subject
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+### Value choices
 
-### operator
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| easy | Easy | |
+| hard | Hard | |
+| normal | Normal | |
+| peaceful | Peaceful | |
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+## Samples
 
-## Example
-
-### Full
+At Full..: 
 
 ```json
 { "test": "is_difficulty", "subject": "self", "operator": "equals", "value": "normal" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "is_difficulty", "value": "normal" }
 ```
 
-## Vanilla entities examples
+#### [Arrow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/arrow.json)
 
-### wither_skeleton
 
 ```json
-{ "test": "is_difficulty", "operator": "!=", "value": "peaceful" }
+{"test":"is_difficulty","value":"hard"}
 ```
 
-## Vanilla entities using is_difficulty
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
 
-- [arrow](../../../../Source/VanillaBehaviorPack_Snippets/entities/arrow.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
+At /minecraft:entity/events/attacked/sequence/1/filters/: 
+
+```json
+{"test":"is_difficulty","value":"easy"}
+```
+
+At /minecraft:entity/events/attacked/sequence/2/filters/: 
+
+```json
+{"test":"is_difficulty","value":"normal"}
+```
+
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+
+At /minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/1/: 
+
+```json
+{"test":"is_difficulty","operator":"!=","value":"peaceful"}
+```

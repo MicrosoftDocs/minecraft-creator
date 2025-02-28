@@ -19,12 +19,18 @@ Contains a set of events that are applicable to the entirety of the world.  Even
 
 Type: [*WorldAfterEvents*](WorldAfterEvents.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **beforeEvents**
 `read-only beforeEvents: WorldBeforeEvents;`
 
 Contains a set of events that are applicable to the entirety of the world. Event callbacks are called immediately. Event callbacks are executed in read-only mode.
 
 Type: [*WorldBeforeEvents*](WorldBeforeEvents.md)
+
+Notes:
+  - This property can be read in early-execution mode.
 
 #### Examples
 
@@ -174,10 +180,6 @@ The aim-assist presets and categories that can be used in the world.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
- 
-#### Required Experiments
-- Camera Aim Assist
-
 ::: moniker-end
 
 ### **getAllPlayers**

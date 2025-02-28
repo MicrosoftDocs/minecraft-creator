@@ -17,61 +17,152 @@ A Processor List contains one or more Processors that are run in sequence on eac
 
 ## Properties
 
-- Identifier: Identifier of the Processor List. This is referenced by Template Pools when pairing processors with Structure Templates.
+## Description
 
-- Processor Type: The type of processor. Currently, only the Block Rule processor (minecraft:rule) is supported.
+- `"identifier": "<string>"`: Identifier of the Processor List. This is referenced by Template Pools when pairing processors with Structure Templates.
 
-- Rules: A list of block rules. Each rule contains one or more predicates and is evaluated on every block in the Structure Template. If each predicate evaluates true, the output state specifies the replacement block. Subsequent rules in the processor list are evaluated using the output state block as the source block of the next input predicate.
+## Processors
 
-## Predicates 
+- `"processors": [<Processor>, ...]`: A list of processors that will be run when placing associated structures.  Rules are run in order as defined in the list.
 
-Predicates are a series of filters that run across all blocks being placed in the world during Jigsaw Structure generation. When all the predicates in a given rule pass, the output state of that rule replaces the block that would normally be placed with a new block specified by the output state's block specifier.  
+## Processor Types
 
-- Distance Predicate: A filter evaluated on the world position of the block being placed and the Jigsaw Structure's origin.
+### Block Ignore (minecraft:block_ignore)
 
-- Input Predicate: A filter evaluated on the Structure Template block.
+Removes specified blocks from the placed structure. The removed blocks are not replaced by air, but retain the blocks from the world.
 
-- Location Predicate: A filter evaluated on the target block, i.e. the block in the world where the structure block will be placed.
+Fields:
 
-- Output State: The block type that will replace the target block if all filters evaluate true. If no block is specified, then no replacement will occur.
+- `"processor_type": "minecraft:block_ignore"`
+- `"blocks": ["<block_name>", ...]`
+  - Blocks that when found within the structure will be filtered from the final output.
 
-  - Name: Name of the block.
+### Protected Blocks (minecraft:protected_blocks)
+Specifies which blocks in the world cannot be overridden by this structure.
 
-  - States (optional): Additional block states to apply.
+- `"processor_type": "minecraft:protected_blocks"`
+- `"value": "<block_tag>"`
+  - Block tag for blocks already in the world that will be protected from replacement
 
-Note: Some filters can modify blocks directly as a side-effect of filter evaluation, such as setting a block entity's loot table, so having an undefined result block is sometimes desired.
+### Capped (minecraft:capped)
 
-## Filters
+Applies a processor to some random blocks instead of applying it to all blocks, with a limit on the number of times it can be applied.
 
-- Always True: A filter that always succeeds. Empty predicates default to always_true.
+- `"processor_type": "minecraft:capped"`
+- `"delegate": <Processor>`
+  - The processor to run (Can be any processor except a `minecraft:capped` processor)
+- `"limit": <Integer | IntProvider>`
 
-- Archeology Block Loot: A rule that adds a loot table to blocks. Note: Adding a loot table is a side-effect of the filter and can modify blocks independently from the output state. Note: The block must support loot tables; for example, the Suspicious Sand or Suspicious Gravel block.
+#### Int Provider
 
-  - Limit: Upper limit for how many blocks can receive loot as a result of this filter.
+The IntProvider type provides dynamic integer values for the `Capped` processor type.
 
-  - Loot Table: The loot table to add to the replaced block for the archaeology block replacement rule.
+- `"type": <type>`
+  - The type of the int provider. One of `constant` or `uniform`.
 
-  - Block Mapping: Specifies how a block should be transformed before applying the loot table.  
+If the type is `constant`
 
-- Block Match: A filter that returns true if the block filter matches.
+- `"value": <Integer>`:
+  - Specifies the constant value to be returned.
 
-  - Block: The block type to compare.
+If the type is `uniform`, an integer is randomly selected between `min_inclusive` and `max_inclusive` based on a uniform distribution:
 
-- Random Block Match: A filter that returns true if the block filter matches AND a randomly generated number between 0-1 is greater than probability.
+- `"min_inclusive": <Integer>`
+  - The minimum possible value.
 
-  - Block: The block type to compare.
+- `"max_inclusive": <Integer>`
+  - The maximum possible value. (Must be greater than min_inclusive)
 
-  - Probability: The chance of the block being replaced.
+### Block Rules (minecraft:rule)
+
+A list of rules that are applied per block. Only the first rule that all conditions are met takes effect.
+
+Each block in the structure template is independently processed.
+
+- `"processor_type": "minecraft:rule"`
+- `"rules": [<Rule>,...]`
+
+#### Rule
+
+A rule is a set of conditions that determine if a block should be replaced or modified.
+
+- `"input_predicate": <BlockRule>`
+  - Optional
+  - Test to apply to the block that will be placed by the structure.
+- `"location_predicate": <BlockRule>`
+  - Optional
+  - Test to apply to the block in the world that will be overriden in the world.
+- `"position_predicate": <PositionRule>`
+  - Optional
+  - Test for block's positional relationship to the origin of the structure.
+- `"output_state": <BlockSpecifier>`
+  - The block that will be placed if the conditions are met.
+- `"block_entity_modifier": <BlockEntityModifier>`
+  - Optional
+  - Modifies the block's state if the conditions are met.
+
+#### Block Rule
+
+- `"predicate_type": <type>`
+  - The type of Block rule. One of the following `minecraft:always_true`, `minecraft:block_match`, `minecraft:random_block_match`, and `minecraft:tag_match`
+
+If the type is `minecraft:always_true` the test will be skipped and assumed true.
+
+If the type is `minecraft:block_match` the block will be matched based on it's name.
+
+- `"block": "<block_name>"`
+
+If the type is `minecraft:random_block_match` the block will be matched based on it's name
+
+- `"block": "<block_name>"`
+- `"probability": <Number>`
+  - Must be between `[0, 1)` (Use `minecraft:block_match` if it should always be replaced if matched.)
+
+If the type is `minecraft:tag_match` the block will be matched based on it's name
+
+- `"tag": "<block_tag>"`
+
+#### Position Rule
+
+- `"predicate_type": <type>`
+  - The type of positional rule. One of the following `minecraft:always_true` or `minecraft:axis_aligned_linear_pos`
+
+If the type is `minecraft:always_true` the test will be skipped and assumed true.
+
+If the type is `minecraft:axis_aligned_linear_pos` the block will be validated
+based on the linear distance along the provided axis from the structures origin.
+
+- `"min_chance": <Number>`
+  - Must be between `[0, 1)`
+- `"max_chance": <Number>`
+  - Must be between `[0, 1)`. Must be greater than `min_chance`
+- `"min_dist": <Integer>`
+  - Must be greater than `0`
+- `"max_dist": <Integer>`
+  - Must be greater than `0`.
+- `"axis": "<axis>"`
+  - The axis can be one of the following: `x`, `y`, or `z`.
+
+#### Block Entity Modifier
+
+- `"type": <type>`
+  - The type of block entity modifier. One of the following `minecraft:passthrough` or `minecraft:append_loot`
+
+If the type is `minecraft:passthrough` no modification is performed (default)
+
+If the type is `minecraft:append_loot` a loot table will be set on the output block.
+
+- `"loot_table": "<path_to_loot_table.json>"`
 
 ## Example JSON
 
-This example shows how a structure template can be dynamically modified at generation time to replace blocks and add loot tables. 
+This example shows how a structure template can be dynamically modified at generation time to replace blocks and add loot tables.
 
-The first rule randomly replaces 20% of gravel blocks with dirt blocks. 
+The first rule randomly replaces 20% of gravel blocks with dirt blocks.
 
-The second rule replaces 10% of gravel blocks with coarse dirt blocks. 
+The second rule replaces 10% of gravel blocks with coarse dirt blocks.
 
-The third rule replaces 10% of mud bricks blocks with packed mud. 
+The third rule replaces 10% of mud bricks blocks with packed mud.
 
 Finally, the fourth rule replaces a single random gravel block with a suspicious gravel block and adds a loot table to it.
 

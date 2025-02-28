@@ -1,45 +1,23 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:movement.jump
-description: "A reference document detailing the 'movement.jump' entity component"
+title: "Entity Documentation - minecraft:movement.jump"
+description: "Describes the minecraft:movement.jump entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:movement.jump
 
-`minecraft:movement.jump` causes the entity to jump as it moves with a specified delay between jumps.
+Move control that causes the mob to jump as it moves with a specified delay between jumps.
 
-> [!IMPORTANT]
-> In order to follow targets, this entity must have `minecraft:behavior.slime_attack`, otherwise the entity will jump in the direction it's looking in.
+> [!Note]
+> In order to follow targets, this entity must have the `minecraft:behavior.slime_attack` component, otherwise the entity will jump in the direction it's looking in.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| jump_delay| [0.0, 0.0]| Range [a, b]| Delay after landing when using the slime move control. |
-| max_turn| 30.0| Decimal| The maximum number in degrees the entity can turn per tick. |
+## Jump Movement Properties
 
-## Example
-
-```json
-"minecraft:movement.jump":{
-    "jump_delay": [0.0, 0.0],
-    "max_turn": 30.0
-}
-```
-
-## Vanilla entities examples
-
-### slime
-
-```json
-"minecraft:movement.jump": {
-          "jump_delay": [ 0.5, 1.5 ]
-        }
-```
-
-## Vanilla entities using `minecraft:movement.jump`
-
-- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| jump_delay | *not set* | Range of integers | Delay after landing when using the slime move control. |  | 
+| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. |  | 

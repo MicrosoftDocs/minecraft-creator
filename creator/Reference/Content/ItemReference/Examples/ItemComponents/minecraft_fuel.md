@@ -1,25 +1,30 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:fuel
-description: "A reference document detailing the 'fuel' item component"
+title: "Items Documentation - minecraft:fuel"
+description: "Describes the minecraft:fuel item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:fuel
+# Items Documentation - minecraft:fuel
 
-`minecraft:fuel` allows this item to be used as fuel in a furnace to 'cook' other items.
+Allows this item to be used as fuel in a furnace to 'cook' other items.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|duration|*not set* |Float |How long in seconds will this fuel cook items for. Minimum value: 0.05. |
+## Fuel Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| duration | *not set* | Decimal number | How long in seconds will this fuel cook items for. Minimum value: 0.05. | My Sword Chuck: `3` | 
+
+## Samples
+
+#### [My Sword Chuck](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json)
+
 
 ```json
-"minecraft:fuel":{
-    "duration": 3.0
+"minecraft:fuel": {
+  "duration": 3
 }
 ```

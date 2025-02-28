@@ -1,41 +1,30 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:combat_regeneration
-description: "A reference document detailing the 'combat_regeneration' entity component"
+title: "Entity Documentation - minecraft:combat_regeneration"
+description: "Describes the minecraft:combat_regeneration entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:combat_regeneration
 
-`minecraft:combat_regeneration`adds Regeneration I and removes Mining Fatigue from the entity that kills the Actor's attack target.
+Gives `Regeneration I` and removes `Mining Fatigue` from the mob that kills the entity's attack target.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-| regeneration_duration | 5 | Integer | The duration in seconds that the entity will gain Regeneration I. |
-| apply_to_self | False | Boolean | Whether the entity will grant itself Combat Regeneration if it kills the target. |
-| apply_to_family | False | Boolean | Whether the entity will grant mobs of the same type Combat Regeneration if they kill the target. |
+## Combat Regeneration Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| apply_to_family | false | Boolean true/false | Determines if the mob will grant mobs of the same type combat buffs if they kill the target. |  | 
+| apply_to_self | false | Boolean true/false | Determines if the mob will grant itself the combat buffs if it kills the target. |  | 
+| regeneration_duration | 5 | Integer number | The duration in seconds of Regeneration I added to the mob. Can also be set to "infinite" |  | 
 
-```json
-"minecraft:combat_regeneration":{
-    "regeneration_duration": 7,
-    "apply_to_self": true,
-    "apply_to_family": false
-}
-```
+## Samples
 
-## Vanilla Mob examples
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-### axolotl
 
 ```json
 "minecraft:combat_regeneration": {}
 ```
-
-## Vanilla Mobs using `minecraft:combat_regeneration`
-
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)

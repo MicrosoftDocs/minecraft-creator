@@ -35,6 +35,7 @@ Adds a breadcrumb to the next Sentry error reported.  This can be useful for und
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*SentryUninitializedError*](SentryUninitializedError.md)
 
@@ -51,6 +52,7 @@ Adds a tag to the Sentry session.  See Sentry documentation for more details: ht
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*SentryUninitializedError*](SentryUninitializedError.md)
 
@@ -65,6 +67,7 @@ Gets the list of all session tags.  See Sentry documentation for more details: h
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*SentryUninitializedError*](SentryUninitializedError.md)
 
@@ -80,6 +83,7 @@ Initializes Sentry for use.  This must be successfully called before any other S
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*SentryAlreadyInitializedError*](SentryAlreadyInitializedError.md)
 
@@ -95,5 +99,6 @@ Removes a tag to the Sentry session.  See Sentry documentation for more details:
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*SentryUninitializedError*](SentryUninitializedError.md)

@@ -23,6 +23,9 @@ Type: [*ChatSendBeforeEventSignal*](ChatSendBeforeEventSignal.md)
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Notes:
+  - This property can be read in early-execution mode.
+
 #### Examples
 
 ##### ***customCommand.ts***
@@ -64,12 +67,18 @@ This event is triggered after an event has been added to an entity.
 
 Type: [*EffectAddBeforeEventSignal*](EffectAddBeforeEventSignal.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **entityRemove**
 `read-only entityRemove: EntityRemoveBeforeEventSignal;`
 
 Fires before an entity is removed from the world (for example, unloaded or removed after being killed.)
 
 Type: [*EntityRemoveBeforeEventSignal*](EntityRemoveBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
 
 ### **explosion**
 `read-only explosion: ExplosionBeforeEventSignal;`
@@ -78,6 +87,9 @@ This event is fired after an explosion occurs.
 
 Type: [*ExplosionBeforeEventSignal*](ExplosionBeforeEventSignal.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **itemUse**
 `read-only itemUse: ItemUseBeforeEventSignal;`
 
@@ -85,12 +97,8 @@ This event fires when an item is successfully used by a player.
 
 Type: [*ItemUseBeforeEventSignal*](ItemUseBeforeEventSignal.md)
 
-### **itemUseOn**
-`read-only itemUseOn: ItemUseOnBeforeEventSignal;`
-
-This event fires when an item is used on a block by a player.
-
-Type: [*ItemUseOnBeforeEventSignal*](ItemUseOnBeforeEventSignal.md)
+Notes:
+  - This property can be read in early-execution mode.
 
 ### **playerBreakBlock**
 `read-only playerBreakBlock: PlayerBreakBlockBeforeEventSignal;`
@@ -99,10 +107,16 @@ This event fires before a block is broken by a player.
 
 Type: [*PlayerBreakBlockBeforeEventSignal*](PlayerBreakBlockBeforeEventSignal.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **playerGameModeChange**
 `read-only playerGameModeChange: PlayerGameModeChangeBeforeEventSignal;`
 
 Type: [*PlayerGameModeChangeBeforeEventSignal*](PlayerGameModeChangeBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
 
 ### **playerInteractWithBlock**
 `read-only playerInteractWithBlock: PlayerInteractWithBlockBeforeEventSignal;`
@@ -111,6 +125,9 @@ Fires before a player interacts with a block.
 
 Type: [*PlayerInteractWithBlockBeforeEventSignal*](PlayerInteractWithBlockBeforeEventSignal.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **playerInteractWithEntity**
 `read-only playerInteractWithEntity: PlayerInteractWithEntityBeforeEventSignal;`
 
@@ -118,12 +135,18 @@ Fires before a player interacts with an entity.
 
 Type: [*PlayerInteractWithEntityBeforeEventSignal*](PlayerInteractWithEntityBeforeEventSignal.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **playerLeave**
 `read-only playerLeave: PlayerLeaveBeforeEventSignal;`
 
 Fires when a player leaves the game.
 
 Type: [*PlayerLeaveBeforeEventSignal*](PlayerLeaveBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **playerPlaceBlock**
@@ -135,9 +158,15 @@ Type: [*PlayerPlaceBlockBeforeEventSignal*](PlayerPlaceBlockBeforeEventSignal.md
 
 > [!CAUTION]
 > This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
 ::: moniker-end
 
 ### **weatherChange**
 `read-only weatherChange: WeatherChangeBeforeEventSignal;`
 
 Type: [*WeatherChangeBeforeEventSignal*](WeatherChangeBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.

@@ -259,7 +259,7 @@ Notes:
 
 ### **getComponent**
 `
-getComponent(componentId: T): ItemComponentTypeMap[T] | undefined
+getComponent(componentId: T): ItemComponentReturnType<T> | undefined
 `
 
 Gets a component (that represents additional capabilities) for an item stack.
@@ -269,7 +269,7 @@ Gets a component (that represents additional capabilities) for an item stack.
   
   The identifier of the component (e.g., 'minecraft:food'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.ItemComponentTypes*](../../minecraft/server/ItemComponentTypes.md) enum.
 
-**Returns** *ItemComponentTypeMap[T] | undefined* - Returns the component if it exists on the item stack, otherwise undefined.
+**Returns** *ItemComponentReturnType<T> | undefined* - Returns the component if it exists on the item stack, otherwise undefined.
 
 #### Examples
 

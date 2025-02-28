@@ -1,35 +1,38 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:is_stackable
-description: "A reference document detailing the 'is_stackable' entity component"
+title: "Entity Documentation - minecraft:is_stackable"
+description: "Describes the minecraft:is_stackable entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:is_stackable
+# Entity Documentation - minecraft:is_stackable
 
-`minecraft:is_stackable` sets that this entity can be stacked.
+Allows instances of this entity to have vertical and horizontal collisions with each other. For a collision to occur, both instances must have a "minecraft:collision_box" component.
+Stackable behavior is closely related to collidable behavior. While the "minecraft:is_stackable" component describes how an entity interacts with others of its own kind, the "minecraft:is_collidable" component governs how other mobs interact with the component's owner.).
 
-## Example
+
+## Is Stackable Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | String |  | Chest Minecart: `true` | 
+
+## Samples
+
+#### [Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/boat.json)
+
 
 ```json
-"minecraft:is_stackable":{
-}
+"minecraft:is_stackable": {}
 ```
 
-## Vanilla entities examples
+#### [Chest Minecart](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chest_minecart.json)
 
-### Entity Documentation -  minecart
 
 ```json
-"minecraft:is_stackable":{
+"minecraft:is_stackable": {
+  "value": true
 }
 ```
-
-## Vanilla entities using `minecraft:is_stackable`
-
-- [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)
-- [chest_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/chest_minecart.md)
-- [hopper_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/hopper_minecart.md)
-- [minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/minecart.md)
-- [tnt_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)

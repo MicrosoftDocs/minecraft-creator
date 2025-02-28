@@ -1,115 +1,150 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - has_biome_tag
-description: "A reference document detailing the 'has_biome_tag' entity filter"
+title: "Entity Filters Documentation - minecraft:has_biome_tag"
+description: "Describes the minecraft:has_biome_tag entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - has_biome_tag
+# Entity Filters Documentation - minecraft:has_biome_tag
 
 Tests whether the biome the subject is in has the specified tag.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |String | (Required) The tag to look for |
+## Has Biome Tag Properties
 
-> [!NOTE]
-> `has_biome_tag` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | String | (Required) The tag to look for |  | 
 
-### subject
+### Operator choices
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### operator
+### Subject choices
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-## Example
+## Samples
 
-### Full
+At Full..: 
 
 ```json
 { "test": "has_biome_tag", "subject": "self", "operator": "equals", "value": " " }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "has_biome_tag", "value": " " }
 ```
 
-## Vanilla entities examples
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
 
-### Bee
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/: 
 
 ```json
-{ // Assume we are already going home if we have nectar
- "test": "has_biome_tag", "value": "overworld"
-}
+{"test":"has_biome_tag","value":"spawns_warm_variant_farm_animals"}
 ```
 
-## Vanilla entities using `has_biome_tag`
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/filters/: 
 
-- [bat](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/bat.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/bee.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/chicken.md)
-- [cod](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/cod.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/cow.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/dolphin.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/donkey.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/drowned.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/enderman.md)
-- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/ghast.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/hoglin.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/horse.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/husk.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/llama.md)
-- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/magma_cube.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/mooshroom.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/panda.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/parrot.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/phantom.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/pig.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/piglin.md)
-- [pillager_patrol](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/pillager_patrol.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/polar_bear.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/pufferfish.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/rabbit.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/salmon.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/sheep.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/skeleton.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/slime.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/spider.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/squid.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/stray.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/strider.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/tropicalfish.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/turtle.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/witch.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/wolf.md)
-- [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/zombie_pigman.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/spawn_rules/zombie.md)
+```json
+{"test":"has_biome_tag","value":"spawns_cold_variant_farm_animals"}
+```
+
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/0/: 
+
+```json
+{"test":"has_biome_tag","value":"desert"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/1/: 
+
+```json
+{"test":"has_biome_tag","value":"mesa"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/3/filters/: 
+
+```json
+{"test":"has_biome_tag","value":"jungle"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/4/filters/: 
+
+```json
+{"test":"has_biome_tag","value":"savanna"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/0/: 
+
+```json
+{"test":"has_biome_tag","value":"cold"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/0/all_of/1/: 
+
+```json
+{"test":"has_biome_tag","operator":"!=","value":"ocean"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/1/: 
+
+```json
+{"test":"has_biome_tag","value":"frozen"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/any_of/0/: 
+
+```json
+{"test":"has_biome_tag","value":"swamp"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/any_of/1/: 
+
+```json
+{"test":"has_biome_tag","value":"mangrove_swamp"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/0/: 
+
+```json
+{"test":"has_biome_tag","value":"taiga"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/1/: 
+
+```json
+{"test":"has_biome_tag","value":"extreme_hills"}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/1/: 
+
+```json
+{"test":"has_biome_tag","operator":"!=","value":"cold"}
+```

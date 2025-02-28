@@ -81,6 +81,9 @@ function showFavoriteMonth(log: (message: string, status?: number) => void, targ
 - [body](#body)
 - [button](#button)
 ::: moniker range="=minecraft-bedrock-experimental"
+- [divider](#divider)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [header](#header)
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -97,6 +100,9 @@ new ActionFormData()
 Creates a new modal form builder.
 
 **Returns** [*ActionFormData*](ActionFormData.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **body**
 `
@@ -122,6 +128,20 @@ Adds a button to this form with an icon from a resource pack.
 - **iconPath**?: *string* = `null`
 
 **Returns** [*ActionFormData*](ActionFormData.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **divider**
+`
+divider(): ActionFormData
+`
+
+Adds a section divider to the form.
+
+**Returns** [*ActionFormData*](ActionFormData.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **header**

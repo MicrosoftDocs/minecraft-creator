@@ -1,45 +1,43 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:boss
-description: "A reference document detailing the 'boss' entity component"
+title: "Entity Documentation - minecraft:boss"
+description: "Describes the minecraft:boss entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:boss
 
-`minecraft:boss` defines the current state of the boss for updating the boss HUD.
+Defines the current state of the boss for updating the boss HUD.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| hud_range| 55| Integer| The max distance from the boss at which the boss's health bar appears on the screen. |
-| name|*not set* | String| The name that displays above the boss's health bar. |
-|should_darken_sky| Boolean| false| Whether the sky should darken in the presence of the boss. |
+## Boss Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| hud_range | 55 | Integer number | The max distance from the boss at which the boss's health bar is present on the players screen. | Ender Dragon: `125`, Wither: `55` | 
+| name | 55 | String | The name that will be displayed above the boss's health bar. |  | 
+| should_darken_sky | false | Boolean true/false | Whether the sky should darken in the presence of the boss. | Wither: `true` | 
 
-```json
-"minecraft:boss":{
-    "hud_range": 55,
-    "name": "Spooky Boss!",
-    "should_darken_sky": true
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
 
-### wither
 
 ```json
 "minecraft:boss": {
-    "should_darken_sky": true,
-    "hud_range": 55
+  "should_darken_sky": false,
+  "hud_range": 125
 }
 ```
 
-## Vanilla entities using `minecraft:boss`
+#### [Wither](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wither.json)
 
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
-- [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
+
+```json
+"minecraft:boss": {
+  "should_darken_sky": true,
+  "hud_range": 55
+}
+```

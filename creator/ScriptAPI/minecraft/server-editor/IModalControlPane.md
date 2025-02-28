@@ -16,6 +16,7 @@ A sub pane for modal control elements.
 ## Methods
 - [addBool](#addbool)
 - [addButton](#addbutton)
+- [addButtonPane](#addbuttonpane)
 - [addDivider](#adddivider)
 
 ### **addBool**
@@ -33,16 +34,28 @@ Adds a togglable boolean item to the pane.
 
 ### **addButton**
 `
-addButton(action: (() => void) | RegisteredAction<NoArgsAction>, options: IButtonPropertyItemOptions): IButtonPropertyItem
+addButton(action: ButtonPropertyItemSupportedActionTypes, options: IButtonPropertyItemOptions): IButtonPropertyItem
 `
 
 Adds a button to the pane and binds the specified action to the button activation.
 
 #### **Parameters**
-- **action**: *(() => void) | RegisteredAction<NoArgsAction>*
+- **action**: *ButtonPropertyItemSupportedActionTypes*
 - **options**: *IButtonPropertyItemOptions*
 
 **Returns** *IButtonPropertyItem*
+
+### **addButtonPane**
+`
+addButtonPane(options: IButtonPanePropertyItemOptions): IButtonPanePropertyItem
+`
+
+Adds a pane for grouped button layout.
+
+#### **Parameters**
+- **options**: *IButtonPanePropertyItemOptions*
+
+**Returns** *IButtonPanePropertyItem*
 
 ### **addDivider**
 `

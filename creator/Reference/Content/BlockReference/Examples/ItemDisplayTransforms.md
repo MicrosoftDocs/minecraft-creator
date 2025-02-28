@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 For custom blocks that do not use a basic 1x1x1 cube geometry or have multiple rotation states, the item representation of the block can look a bit odd with the standard block item orientation. To change how a custom block looks in any of the scenarios where the block is rendered as an item, the `"item_display_transforms"` field in the geometry can be used to configure a custom orientation to properly display the block geometry.
 
-> ![Note]
+> [!Note]
 > You must use geometry version `1.21.0` or greater and the `Upcoming Creator Features` toggle to use `"item_display_transforms"`.
 
 ## What are ItemDisplayTransforms

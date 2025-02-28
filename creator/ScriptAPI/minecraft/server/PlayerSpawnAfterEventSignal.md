@@ -36,6 +36,7 @@ Registers a new event receiver for this particular type of event.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -54,4 +55,5 @@ De-registers an event receiver for the player spawn event.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 ::: moniker-end

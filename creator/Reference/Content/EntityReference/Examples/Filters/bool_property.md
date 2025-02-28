@@ -1,68 +1,83 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - bool_property
-description: "A reference document detailing the 'bool_property' entity filter"
+title: "Entity Filters Documentation - minecraft:bool_property"
+description: "Describes the minecraft:bool_property entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - bool_property
+# Entity Filters Documentation - minecraft:bool_property
 
-Returns true when the `bool` entity property matches the value provided.
+Returns true when the bool actor property matches the value provided.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-| domain| *not set* |String | (Required) The property name to look for. |
-| operator|equals |String | (Optional) The comparison to apply with 'value'.|
-| value| true| Boolean | (Optional) true or false. |
+## Bool Property Properties
 
-### subject
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| domain | *not set* | String | (Required) The property name to look for |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | true | Boolean true/false | (Optional) true or false. |  | 
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+### Operator choices
 
-### operator
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+### Subject choices
 
-## Examples
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-### Full
+## Samples
+
+At Full..: 
 
 ```json
 { "test": "bool_property", "subject": "self", "domain": "minecraft:can_climb", "operator": "equals", "value": "true" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "bool_property", "domain": "minecraft:can_climb" }
 ```
 
-## Vanilla entity examples
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
 
-No entities currently use `bool_property`
+At /minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/: 
 
-## Vanilla entities using `bool_property`
+```json
+{"test":"bool_property","domain":"minecraft:has_nectar","operator":"!="}
+```
 
-No entities currently use `bool_property`
+At /minecraft:entity/events/find_hive_timeout/sequence/0/filters/: 
+
+```json
+{"test":"bool_property","operator":"!=","domain":"minecraft:has_nectar"}
+```
+
+At /minecraft:entity/events/find_hive_timeout/sequence/1/filters/: 
+
+```json
+{"test":"bool_property","domain":"minecraft:has_nectar"}
+```

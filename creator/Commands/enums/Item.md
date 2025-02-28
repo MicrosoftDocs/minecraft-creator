@@ -3186,6 +3186,10 @@ Mutton
 Tropical Fish
 - `tropical_fish`
 Tropical Fish
+- `minecraft:brown_egg`
+- `brown_egg`
+- `minecraft:blue_egg`
+- `blue_egg`
 - `minecraft:sugar_cane`
 Sugar Cane
 - `sugar_cane`
@@ -3514,10 +3518,6 @@ Chorus Fruit
 Popped Chorus Fruit
 - `popped_chorus_fruit`
 Popped Chorus Fruit
-- `minecraft:brown_egg`
-- `brown_egg`
-- `minecraft:blue_egg`
-- `blue_egg`
 - `minecraft:leather_helmet`
 Leather Helmet
 - `leather_helmet`

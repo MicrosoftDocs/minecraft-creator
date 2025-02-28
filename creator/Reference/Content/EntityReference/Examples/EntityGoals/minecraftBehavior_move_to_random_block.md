@@ -1,48 +1,48 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.move_to_random_block
-description: "A reference document detailing the 'behavior.move_to_random_block' entity goal"
+title: "Entity Documentation - minecraft:behavior.move_to_random_block"
+description: "Describes the minecraft:behavior.move_to_random_block ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.move_to_random_block
 
-`minecraft:behavior.move_to_random_block` compels an entity to move to a random block within a set radius.
+Allows mob to move towards a random block.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|block_distance| 16.0| Decimal| Defines the distance from the mob, in blocks, that the block to move to will be chosen. |
-|within_radius| 0.0| Decimal|Defines the distance in blocks the mob has to be from the block for the movement to be finished. |
-| speed_multiplier| 1.0| Decimal| Movement speed multiplier of the mob when using this AI Goal. |
-| priority| -1| Integer| The Minecraft behavior priority. The higher the priority, the sooner this behavior will be executed as a goal. |
+## Move To Random Block Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| block_distance | 16 | Decimal number | Defines the distance from the mob, in blocks, that the block to move to will be chosen. | Pillager: `512` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Pillager: `6`, Vindicator: `5` | 
+| speed_multiplier | *not set* | Decimal number |  | Pillager: `0.55` | 
+| within_radius | 0 | Decimal number | Defines the distance in blocks the mob has to be from the block for the movement to be finished. | Pillager: `8` | 
 
-```json
-"minecraft:behavior.move_to_random_block":{
-    "priority": 2,
-    "within_radius": 5.0,
-    "block_distance": 128.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Pillager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pillager.json)
 
-### pillager
 
 ```json
 "minecraft:behavior.move_to_random_block": {
-          "priority": 6,
-          "speed_multiplier": 0.55,
-          "within_radius": 8,
-          "block_distance": 512
-        }
+  "priority": 6,
+  "speed_multiplier": 0.55,
+  "within_radius": 8,
+  "block_distance": 512
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.move_to_random_block`
+#### [Vindicator](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/vindicator.json)
 
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
+
+```json
+"minecraft:behavior.move_to_random_block": {
+  "priority": 5,
+  "speed_multiplier": 0.55,
+  "within_radius": 8,
+  "block_distance": 512
+}
+```

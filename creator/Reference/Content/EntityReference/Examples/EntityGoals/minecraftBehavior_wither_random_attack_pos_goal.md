@@ -1,42 +1,30 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal
-description: "A reference document detailing the 'behavior.wither_random_attack_pos_goal' entity goal"
+title: "Entity Documentation - behavior.wither_random_attack_pos_goal"
+description: "Describes the behavior.wither_random_attack_pos_goal AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal
+# Entity Documentation - behavior.wither_random_attack_pos_goal
 
-`minecraft:behavior.wither_random_attack_pos_goal` compels an entity to attack at random.
+Allows the wither to launch random attacks. Can only be used by the Wither Boss.
 
-> [!NOTE]
-> This behavior can only be used by the `wither` entity type.
 
-## Parameters
+## Wither Random Attack Pos Goal Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Wither: `3` | 
 
-## Example
+## Samples
+
+#### [Wither](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wither.json)
+
 
 ```json
-"minecraft:behavior.wither_random_attack_pos_goal":{
-    "priority": 3
+{
+  "priority": 3
 }
 ```
-
-## Vanilla entities examples
-
-### wither
-
-```json
-"minecraft:behavior.wither_random_attack_pos_goal": {
-        "priority": 3
-      }
-```
-
-## Vanilla entities using `minecraft:behavior.wither_random_attack_pos_goal`
-
-- [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
