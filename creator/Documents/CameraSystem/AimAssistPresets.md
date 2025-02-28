@@ -96,6 +96,6 @@ When you use [camera presets](CameraCommandIntroduction.md), you can use the `ai
         "distance": 10
     }
 }
-``
+```
 
 The aim assist settings defined in this preset will override any settings set by the aim assist command when this camera preset is active. Other aim assist commands or presets will only be active when the camera preset does not have a defined `aim_assist` object.
