@@ -77,7 +77,7 @@ Let's take a closer look at our `test:axe_priorities` category in this file to h
     - **entities**: The list of entities that should override the `entity_default` priority when this category evaluates targets.
     - **blocks**: The list of blocks that should override the `block_default` priority when this category evaluates targets.
 
->![Important]
+>[!Important]
 > The number used for priority values works by modifying the targeting criteria by the specified value. For example, in this aim assist category, we've given **oak logs** a priority of 6. This setting will make the aim assist feature treat oak logs as if they are 6 times closer to the player (or the center of the targeting cone, in angle aim assist mode) than any other block. This does not mean that oak logs will *always* be targeted over other blocks, it simply means that they will be treated as if they are much closer than they actually are and blocks that are closer than even the modified distance of an oak log could still be targeted.
 > You should fine tune the priority numbers in your categories to get them feeling right.
 
