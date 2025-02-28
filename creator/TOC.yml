@@ -260,6 +260,10 @@
             href: Documents/CameraSystem/FreeCameraScriptAPITutorial.md
           - name: Third Person Camera Preset
             href: Documents/CameraSystem/CameraPresetThirdPerson.md
+          - name: Introduction to Aim Assist
+            href: Documents/CameraSystem/IntroToAimAssist.md
+          - name: Aim Assist Presets
+            href: Documents/CameraSystem/AimAssistPresets.md
     - name: Entities and Particles
       items:
         - name: Creating New Entity Types
