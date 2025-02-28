@@ -1,109 +1,132 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:loot
-description: "A reference document detailing the 'loot' entity component"
+title: "Entity Documentation - minecraft:loot"
+description: "Describes the minecraft:loot entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:loot
+# Entity Documentation - minecraft:loot
 
-`minecraft:loot` sets the loot table for what items this entity drops upon death.
+Sets the loot table for what items this entity drops upon death.
 
->[!IMPORTANT]
-> `minecraft:loot` requires a `loot table` to be used when dropping items upon death.
+> [!Note]
+> Requires a loot table to be used when dropping items upon death.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|table|*not set* | String| The path to the loot table, relative to the Behavior Pack's root. |
+## Loot Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| table | *not set* | String | The path to the loot table, relative to the Behavior Pack's root. | Armor Stand: `"loot_tables/entities/armor_stand.json"`, Blaze: `"loot_tables/entities/blaze.json"`, Boat: `"loot_tables/entities/boat.json"` | 
 
-```json
-"minecraft:loot":{
-    "table": "loot_tables/entities/wither_skeleton.json"
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Armor Stand](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armor_stand.json)
 
-### zombie
 
 ```json
 "minecraft:loot": {
-    "table": "loot_tables/entities/zombie.json"
+  "table": "loot_tables/entities/armor_stand.json"
 }
 ```
 
-## Vanilla entities using `minecraft:loot`
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
 
-- [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
-- [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
-- [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [fishing_hook](../../../../Source/VanillaBehaviorPack_Snippets/entities/fishing_hook.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
-- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [magma_cube](../../../../Source/VanillaBehaviorPack_Snippets/entities/magma_cube.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [npc](../../../../Source/VanillaBehaviorPack_Snippets/entities/npc.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [parrot](../../../../Source/VanillaBehaviorPack_Snippets/entities/parrot.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
-- [silverfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/silverfish.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton.md)
-- [slime](../../../../Source/VanillaBehaviorPack_Snippets/entities/slime.md)
-- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)
-- [stray](../../../../Source/VanillaBehaviorPack_Snippets/entities/stray.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
-- [wither_skeleton](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither_skeleton.md)
-- [wither](../../../../Source/VanillaBehaviorPack_Snippets/entities/wither.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
-- [zombie pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/blaze.json"
+}
+```
+
+#### [Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/boat.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/boat.json"
+}
+```
+
+#### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/bogged.json"
+}
+```
+
+#### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/breeze.json"
+}
+```
+
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/cat.json"
+}
+```
+
+#### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/spider.json"
+}
+```
+
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/chicken.json"
+}
+```
+
+#### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/cow.json"
+}
+```
+
+#### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/creeper.json"
+}
+```
+
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/dolphin.json"
+}
+```
+
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/horse.json"
+}
+```

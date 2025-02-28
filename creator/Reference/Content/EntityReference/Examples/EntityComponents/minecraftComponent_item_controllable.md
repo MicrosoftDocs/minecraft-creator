@@ -1,38 +1,39 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:item_controllable
-description: "A reference document detailing the 'item_controllable' entity component"
+title: "Entity Documentation - minecraft:item_controllable"
+description: "Describes the minecraft:item_controllable entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation -  minecraft:item_controllable
+# Entity Documentation - minecraft:item_controllable
 
-`minecraft:item_controllable` allows an entity to be controlled by an item when riding this entity.
+Defines what items can be used to control this entity while ridden.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|control_items|*not set* | List| List of items that can be used to control this entity. |
+## Item Controllable Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| control_items | *not set* | Array of strings | List of items that can be used to control this entity. | Pig: `"carrotOnAStick"`, Strider: `"warped_fungus_on_a_stick"` | 
+
+## Samples
+
+#### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
+
 
 ```json
-"minecraft:item_controllable":{
-    "control_items:":"iron_sword"
+"minecraft:item_controllable": {
+  "control_items": "carrotOnAStick"
 }
 ```
 
-## Vanilla entities examples
+#### [Strider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/strider.json)
 
-### pig
 
+```json
 "minecraft:item_controllable": {
-    "control_items": "carrotOnAStick"
-},
-
-## Vanilla entities using `minecraft:item_controllable`
-
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
+  "control_items": "warped_fungus_on_a_stick"
+}
+```

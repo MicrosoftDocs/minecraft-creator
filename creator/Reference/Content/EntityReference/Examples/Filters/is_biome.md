@@ -1,101 +1,107 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - is_biome
-description: "A reference document detailing the 'is_biome' entity filter"
+title: "Entity Filters Documentation - minecraft:is_biome"
+description: "Describes the minecraft:is_biome entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - is_biome
+# Entity Filters Documentation - minecraft:is_biome
 
 Tests whether the Subject is currently in the named biome.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |String | (Required) The Biome type to test|
+## Is Biome Properties
 
-### List of biomes
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | [Value](#value-choices) choices | (Required) The Biome type to test |  | 
 
-Below is a list of biome types that can be used for the `value` string.
+### Operator choices
 
-| Options| Description |
-|:-----------|:-----------|
-| beach|  |
-| desert|  |
-| extreme_hills|  |
-| flat|  |
-| forest|  |
-| ice|  |
-| jungle|  |
-| mesa|  |
-| mushroom_island|  |
-| ocean|  |
-| plain|  |
-| river|  |
-| savanna|  |
-| stone_beach|  |
-| swamp|  |
-| taiga|  |
-| the_end|  |
-| the_nether|  |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
->[!Note]
->`is_biome` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+### Subject choices
 
-### subject
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+### Value choices
 
-### operator
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| beach | Beach | |
+| desert | Desert | |
+| extreme_hills | Extreme Hills | |
+| flat | Flat | |
+| forest | Forest | |
+| ice | Ice | |
+| jungle | Jungle | |
+| mesa | Mesa | |
+| mushroom_island | Mushroom Island | |
+| ocean | Ocean | |
+| plain | Plain | |
+| river | River | |
+| savanna | Savanna | |
+| stone_beach | Stone Beach | |
+| swamp | Swamp | |
+| taiga | Taiga | |
+| the_end | The End | |
+| the_nether | The Nether | |
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+## Samples
 
-## Example
-
-### Full
+At Full..: 
 
 ```json
 { "test": "is_biome", "subject": "self", "operator": "equals", "value": "beach" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "is_biome", "value": "beach" }
 ```
 
-## Vanilla entities examples
+#### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
-### cave_spider
 
 ```json
-{ "test": "is_biome", "value" : "the_nether" }
+{"test":"is_biome","value":"the_nether"}
 ```
 
-## Vanilla entities using `is_biome`
+#### [Fishing Hook](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fishing_hook.json)
 
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [fishing_hook](../../../../Source/VanillaBehaviorPack_Snippets/entities/fishing_hook.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
+
+```json
+{"test":"is_biome","value":"jungle"}
+```
+
+#### [Rabbit](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/rabbit.json)
+
+At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/: 
+
+```json
+{"test":"is_biome","value":"desert"}
+```

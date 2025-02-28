@@ -1,49 +1,37 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.stay_near_noteblock
-description: "A reference document detailing the 'behavior.stay_near_noteblock' entity goal"
+title: "Entity Documentation - behavior.stay_near_noteblock"
+description: "Describes the behavior.stay_near_noteblock AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.stay_near_noteblock
+# Entity Documentation - behavior.stay_near_noteblock
 
-`minecraft:behavior.stay_near_noteblock` compels the entity to stay near a recently played noteblock.
+The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.
 
-## Parameters
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| listen_time| 0 | Integer| Sets the time an entity should stay near a noteblock after hearing it. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| speed| 1.000000| Decimal| Sets the entity's speed when moving toward the block. |
-| start_distance| 10.000000| Decimal| Sets the distance the entity needs to be away from the block to attempt to start the goal. |
-| stop_distance| 2.000000| Decimal| Sets the distance from the block the entity will attempt to reach. |
+## Stay Near Noteblock Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| listen_time | 30 | Integer number | Sets the time an entity should stay near a noteblock after hearing it. |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `5` | 
+| speed | 1 | Decimal number | Sets the entity's speed when moving toward the block. | Allay: `8` | 
+| start_distance | 10 | Decimal number | Sets the distance the entity needs to be away from the block to attempt to start the goal. | Allay: `16` | 
+| stop_distance | 2 | Decimal number | Sets the distance from the block the entity will attempt to reach. | Allay: `4` | 
 
-```json
-"minecraft:behavior.stay_near_noteblock": {
-        "priority": 5,
-        "speed": 8,
-        "start_distance": 16,
-        "stop_distance": 4
-      }
-```
+## Samples
 
-## Vanilla entities example
+#### [Allay](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/allay.json)
 
-### allay
 
 ```json
-"minecraft:behavior.stay_near_noteblock": {
-        "priority": 5,
-        "speed": 8,
-        "start_distance": 16,
-        "stop_distance": 4
-      }
+{
+  "priority": 5,
+  "speed": 8,
+  "start_distance": 16,
+  "stop_distance": 4
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.go_and_give_items_to_noteblock`
-
-- [allay](../../../../Source/VanillaBehaviorPack_Snippets/entities/allay.md)

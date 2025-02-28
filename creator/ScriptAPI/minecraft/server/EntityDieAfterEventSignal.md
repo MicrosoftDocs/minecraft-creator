@@ -33,6 +33,7 @@ Subscribes to an event that fires when an entity dies.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **unsubscribe**
 `
@@ -46,3 +47,4 @@ Stops this event from calling your function when an entity dies.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

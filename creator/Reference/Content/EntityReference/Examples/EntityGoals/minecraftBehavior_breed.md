@@ -1,64 +1,86 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.breed
-description: "A reference document detailing the 'behavior.breed' entity goal"
+title: "Entity Documentation - minecraft:behavior.breed"
+description: "Describes the minecraft:behavior.breed ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.breed
 
-`minecraft:behavior.breed` allows an entity to breed with other entities that have been assigned.
+Allows this mob to breed with other mobs.
 
->[!IMPORTANT]
-> `minecraft:behavior.breed` requires the [minecraft:breedable](../EntityComponents/minecraftComponent_breedable.md) component in order to work properly.
+> [!Note]
+> Requires the following component in order to work properly:
+> 
+> * [Breedable (minecraft:breedable)](../EntityComponents/minecraftComponent_breedable.md)
+> 
 
-## Parameters
+## Breed Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| speed_multiplier| 1.0|Decimal |  Movement speed multiplier of the mob when using this AI Goal. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Armadillo: `2`, Axolotl: `1`, Bee: `4` | 
+| speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Armadillo: `1`, Goat: `0.6` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:behavior.breed":{
-    "priority": 1,
-    "speed_multiplier": 3.0
-}
-```
+#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
 
-## Vanilla entities examples
-
-### cow
 
 ```json
 "minecraft:behavior.breed": {
-          "priority": 3,
-          "speed_multiplier": 1.0
-        }
+  "priority": 2,
+  "speed_multiplier": 1
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.breed`
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
-- [goat](../../../../Source/VanillaBehaviorPack_Snippets/entities/goat.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [rabbit](../../../../Source/VanillaBehaviorPack_Snippets/entities/rabbit.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
+
+```json
+"minecraft:behavior.breed": {
+  "priority": 1,
+  "speed_multiplier": 1
+}
+```
+
+#### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
+
+
+```json
+"minecraft:behavior.breed": {
+  "priority": 4,
+  "speed_multiplier": 1
+}
+```
+
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
+
+
+```json
+"minecraft:behavior.breed": {
+  "priority": 3,
+  "speed_multiplier": 1
+}
+```
+
+#### [Frog](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/frog.json)
+
+
+```json
+"minecraft:behavior.breed": {
+  "priority": 4
+}
+```
+
+#### [Goat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/goat.json)
+
+
+```json
+"minecraft:behavior.breed": {
+  "priority": 3,
+  "speed_multiplier": 0.6
+}
+```

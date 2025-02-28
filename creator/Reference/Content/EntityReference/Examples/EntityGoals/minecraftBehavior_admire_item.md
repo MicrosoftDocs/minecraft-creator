@@ -1,72 +1,52 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.admire_item
-description: "A reference document detailing the 'behavior.admire_item' entity goal"
+title: "Entity Documentation - minecraft:behavior.admire_item"
+description: "Describes the minecraft:behavior.admire_item ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.admire_item
 
-`minecraft:behavior.admire_item` compels an entity to admire an object they are holding.
+Enables the mob to admire items that have been configured as admirable.
 
->[!IMPORTANT]
-> `minecraft:behavior.admire_item` requires the `minecraft:admire_item` component to be set within the entity definition as well.
+> [!Note]
+> Requires the following component in order to work properly:
+> 
+> * [Admire Item (minecraft:admire_item)](../EntityComponents/minecraftComponent_admire_item.md)
+> 
 
-## Parameters
+## Admire Item Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|admire_item_sound|*not set* |String |The sound event to play when admiring the item. |
-|sound_interval|0 |Range ["range_min", "range_max"] |The range of time in seconds to randomly wait before playing the sound again. |
-|on_admire_item_start|*not set* | ["event", "target"] |What happens when the entity starts admiring an item. |
-|on_admire_item_stop|*not set* | ["event", "target"] |What happens when the entity stops admiring an item. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| admire_item_sound | *not set* | String | The sound event to play when admiring the item | Piglin: `"admire"` | 
+| on_admire_item_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Piglin: `{"event":"admire_item_started_event","target":"self"}` | 
+| on_admire_item_stop | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  | Piglin: `{"event":"admire_item_stopped_event","target":"self"}` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Piglin: `2` | 
+| sound_interval | 0 | Range of integers | The range of time in seconds to randomly wait before playing the sound again. | Piglin: `{"range_min":2,"range_max":5}` | 
 
-## Example
+## Samples
+
+#### [Piglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin.json)
+
 
 ```json
-"minecraft:behavior.admire_item":{
-    "priority": 4,
-    "admire_item_sound": "admire",
-    "sound_interval": {
-        "range_min": 0.0,
-        "range_max": 5.0
-    },
-    "on_admire_item_start": {
-        "event": "admire_item_started_event",
-        "target": "self"
-    },
-    "on_admire_item_stop": {
-        "event": "admire_item_stopped_event",
-        "target": "self"
-    }
+"minecraft:behavior.admire_item": {
+  "priority": 2,
+  "admire_item_sound": "admire",
+  "sound_interval": {
+    "range_min": 2,
+    "range_max": 5
+  },
+  "on_admire_item_start": {
+    "event": "admire_item_started_event",
+    "target": "self"
+  },
+  "on_admire_item_stop": {
+    "event": "admire_item_stopped_event",
+    "target": "self"
+  }
 }
 ```
-
-## Vanilla entities examples
-
-### piglin
-
-```json
-      "minecraft:behavior.admire_item": {
-        "priority": 2,
-        "admire_item_sound": "admire",
-        "sound_interval": {
-          "range_min": 2.0,
-          "range_max": 5.0
-        },
-        "on_admire_item_start": {
-          "event": "admire_item_started_event",
-          "target": "self"
-        },
-        "on_admire_item_stop": {
-          "event": "admire_item_stopped_event",
-          "target": "self"
-        }
-      }
-```
-
-## Vanilla entities using `admire_item`
-
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)

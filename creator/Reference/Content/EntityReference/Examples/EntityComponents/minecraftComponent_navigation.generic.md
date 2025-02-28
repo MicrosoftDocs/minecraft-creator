@@ -1,89 +1,107 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:navigation.generic
-description: "A reference document detailing the 'navigation.generic' entity component"
+title: "Entity Documentation - minecraft:navigation.generic"
+description: "Describes the minecraft:navigation.generic entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:navigation.generic
 
-`minecraft:navigation.generic` compels the entity to generate paths by walking, swimming, flying, climbing, or jumping up and down a block.
+Allows this entity to generate paths by walking, swimming, flying and/or climbing around and jumping up and down a block.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| avoid_damage_blocks| False| Boolean| Tells the pathfinder to avoid blocks that cause damage when finding a path |
-| avoid_portals| False| Boolean| Tells the pathfinder to avoid portals when finding a path |
-| avoid_sun| False| Boolean| Determines whether the pathfinder should avoid tiles that are exposed to the sun when creating paths |
-| avoid_water| False| Boolean| Determines whether the pathfinder should avoid water when creating a path |
-| blocks_to_avoid| *not set*| List| Tells the pathfinder which blocks to avoid when creating a path |
-| can_breach| False| Boolean| Tells the pathfinder whether or not it can jump out of water, like a dolphin |
-| can_break_doors| False| Boolean| Determines whether the pathfinder can break through doors when creating a path |
-| can_jump| True| Boolean| Tells the pathfinder whether or not it can jump up blocks |
-| can_open_doors| False| Boolean| Determines whether the pathfinder can path through a closed door when creating a path |
-| can_open_iron_doors| False| Boolean| Determines whether the pathfinder can path through a closed iron door when creating a path |
-| can_pass_doors| True| Boolean| Whether a path can be created through a door |
-| can_path_from_air| False| Boolean| Determines whether the pathfinder can start pathing when in the air |
-| can_path_over_lava| False| Boolean| Determines whether the pathfinder can travel on the surface of lava |
-| can_path_over_water| False| Boolean| Determines whether the pathfinder can travel on the surface of water |
-| can_sink| True| Boolean| Determines whether the pathfinder will be pulled down by gravity while in water |
-| can_swim| False| Boolean| Determines whether the pathfinder can path anywhere through water and play a swimming animation along that path |
-| can_walk| True| Boolean| Determines if the pathfinder can walk on the ground outside water |
-| can_walk_in_lava| False| Boolean| Determines if the pathfinder can walk in lava |
-| is_amphibious| False| Boolean| Determines if the pathfinder can walk on the ground underwater |
+## Generic Navigation Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| avoid_damage_blocks | false | Boolean true/false | Tells the pathfinder to avoid blocks that cause damage when finding a path | Axolotl: `true` | 
+| avoid_portals | false | Boolean true/false | Tells the pathfinder to avoid portals (like nether portals) when finding a path |  | 
+| avoid_sun | false | Boolean true/false | Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths |  | 
+| avoid_water | false | Boolean true/false | Tells the pathfinder to avoid water when creating a path |  | 
+| blocks_to_avoid | *not set* | Array of strings | Tells the pathfinder which blocks to avoid when creating a path |  | 
+| can_breach | false | Boolean true/false | Tells the pathfinder whether or not it can jump out of water (like a dolphin) | Elder Guardian: `true` | 
+| can_break_doors | false | Boolean true/false | Tells the pathfinder that it can path through a closed door and break it |  | 
+| can_jump | true | Boolean true/false | Tells the pathfinder whether or not it can jump up blocks |  | 
+| can_open_doors | false | Boolean true/false | Tells the pathfinder that it can path through a closed door assuming the AI will open the door |  | 
+| can_open_iron_doors | false | Boolean true/false | Tells the pathfinder that it can path through a closed iron door assuming the AI will open the door |  | 
+| can_pass_doors | true | Boolean true/false | Whether a path can be created through a door |  | 
+| can_path_from_air | false | Boolean true/false | Tells the pathfinder that it can start pathing when in the air |  | 
+| can_path_over_lava | false | Boolean true/false | Tells the pathfinder whether or not it can travel on the surface of the lava |  | 
+| can_path_over_water | false | Boolean true/false | Tells the pathfinder whether or not it can travel on the surface of the water | Axolotl: `true` | 
+| can_sink | true | Boolean true/false | Tells the pathfinder whether or not it will be pulled down by gravity while in water |  | 
+| can_swim | false | Boolean true/false | Tells the pathfinder whether or not it can path anywhere through water and plays swimming animation along that path | Axolotl: `true` | 
+| can_walk | true | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground outside water | Axolotl: `true` | 
+| can_walk_in_lava | false | Boolean true/false | Tells the pathfinder whether or not it can travel in lava like walking on ground |  | 
+| is_amphibious | false | Boolean true/false | Tells the pathfinder whether or not it can walk on the ground underwater | Axolotl: `true` | 
+
+## Samples
+
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
+
 
 ```json
-"minecraft:navigation.generic":{
-    "avoid_damage_blocks": false,
-    "avoid_portals": false,
-    "avoid_sun": false,
-    "avoid_water": false,
-    "blocks_to_avoid": [],
-    "can_breach": false,
-    "can_break_doors": false,
-    "can_jump": true,
-    "can_open_doors": false,
-    "can_open_iron_doors": false,
-    "can_pass_doors": true,
-    "can_path_from_air": false,
-    "can_path_over_lava": false,
-    "can_path_over_water": false,
-    "can_sink": true,
-    "can_swim": false,
-    "can_walk": true,
-    "can_walk_in_lava": false,
-    "is_amphibious": false
+"minecraft:navigation.generic": {
+  "is_amphibious": true,
+  "can_path_over_water": true,
+  "can_swim": true,
+  "can_walk": true,
+  "can_sink": false,
+  "avoid_damage_blocks": true
 }
 ```
 
-## Vanilla entities examples
+#### [Elder Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/elder_guardian.json)
 
-### fish
 
 ```json
-"minecraft:navigation.generic": { 
-        "is_amphibious": false,
-        "can_path_over_water": false,
-        "can_swim": true,
-        "can_walk": false,
-        "can_breach": false,
-        "can_sink": false
-      }
+"minecraft:navigation.generic": {
+  "is_amphibious": true,
+  "can_path_over_water": false,
+  "can_swim": true,
+  "can_walk": false,
+  "can_breach": true
+}
 ```
 
-## Vanilla entities using `minecraft:navigation.generic`
+#### [Fish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fish.json)
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
+
+```json
+"minecraft:navigation.generic": {
+  "is_amphibious": false,
+  "can_path_over_water": false,
+  "can_swim": true,
+  "can_walk": false,
+  "can_breach": false,
+  "can_sink": false
+}
+```
+
+#### [Tadpole](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tadpole.json)
+
+
+```json
+"minecraft:navigation.generic": {
+  "can_path_over_water": true,
+  "can_swim": true,
+  "can_walk": false,
+  "can_sink": false,
+  "avoid_damage_blocks": true
+}
+```
+
+#### [Turtle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/turtle.json)
+
+
+```json
+"minecraft:navigation.generic": {
+  "is_amphibious": true,
+  "can_path_over_water": false,
+  "can_swim": true,
+  "can_walk": true,
+  "can_sink": false,
+  "avoid_damage_blocks": true
+}
+```

@@ -1,38 +1,28 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:movement.generic
-description: "A reference document detailing the 'movement.generic' entity component"
+title: "Entity Documentation - minecraft:movement.generic"
+description: "Describes the minecraft:movement.generic entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:movement.generic
 
-`minecraft:movement.generic` allows an entity to fly, swim, climb, etc.
+This move control allows a mob to fly, swim, climb, etc.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| max_turn| 30.0| Decimal| The maximum number in degrees the entity can turn per tick. |
+## Generic Movement Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max_turn | 30 | Decimal number | The maximum number in degrees the mob can turn per tick. |  | 
 
-```json
-"minecraft:movement.generic":{
-    "max_turn": 30.0
-}
-```
+## Samples
 
-## Vanilla entities examples
+#### [Drowned](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/drowned.json)
 
-### drowned
 
 ```json
-"minecraft:movement.generic": {
-      }
+"minecraft:movement.generic": {}
 ```
-
-## Vanilla entities using `minecraft:movement.generic`
-
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)

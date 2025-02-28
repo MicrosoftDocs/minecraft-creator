@@ -1,131 +1,320 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:rideable
-description: "A reference document detailing the 'rideable' entity component"
+title: "Entity Documentation - minecraft:rideable"
+description: "Describes the minecraft:rideable entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:rideable
 
-`minecraft:rideable` determines whether the entity can be ridden. Allows specifying the different seat positions and quantity.
+This entity can be ridden.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| controlling_seat| 0| Integer| The seat that designates the driver of the entity. This is only observed by the horse/boat styles of riding; minecarts/entities with "minecraft:controlled_by_player" give control to any player in any seat.  |
-| crouching_skip_interact| True| Boolean| If true, the entity can't be interacted with if the entity interacting with it is crouching |
-| family_types| *not set*| List| List of entities that can ride this entity |
-| interact_text| *not set*| String| The text to display while playing with touch-screen controls when the player can interact with the entity |
-| passenger_max_width| 0.00| Decimal| The max width a mob can be to be a passenger. A value of 0 ignores this parameter. |
-| priority| 0| Integer| This field may exist in old data but isn't used by `minecraft:rideable`. |
-| pull_in_entities| False| Boolean| If true, the entity will pull in entities that are in the correct family_types into any available seats |
-| rider_can_interact| False| Boolean| If true, the entity will be picked when looked at by the rider |
-| seat_count| 1| Integer| The number of entities that can ride this entity at the same time |
-| seats| *not set*| List| The list of positions and number of riders for each position for entities riding this entity|
+## Rideable Properties
 
-### seats
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| controlling_seat | 0 | Integer number | The seat that designates the driver of the entity. Entities with the "minecraft:behavior.controlled_by_player" goal ignore this field and give control to any player in any seat. |  | 
+| crouching_skip_interact | true | Boolean true/false | If true, this entity can't be interacted with if the entity interacting with it is crouching. | Camel: `true` | 
+| family_types | *not set* | Array of strings | List of entities that can ride this entity. | Camel: `["player"]`, Cat: `["zombie"]`, Donkey: `["player","zombie"]` | 
+| interact_text | *not set* | String | The text to display when the player can interact with the entity when playing with touch-screen controls. | Camel: `"action.interact.ride.horse"`, Donkey: `"action.interact.mount"`, Minecart: `"action.interact.ride.minecart"` | 
+| passenger_max_width | 0 | Decimal number | The max width a mob can have to be a rider. A value of 0 ignores this parameter. |  | 
+| priority | *not set* | Integer number | This field may exist in old data but isn't used by "minecraft:rideable". |  | 
+| pull_in_entities | false | Boolean true/false | If true, this entity will pull in entities that are in the correct "family_types" into any available seats. | Camel: `true` | 
+| pulls_in_entities | *not set* | Boolean true/false |  |  | 
+| rider_can_interact | false | Boolean true/false | If true, this entity will be picked when looked at by the rider. |  | 
+| seat_count | 1 | Integer number | The number of entities that can ride this entity at the same time. | Camel: `2`, Cat: `1`, Hoglin: `3` | 
+| seats | *not set* | Array of [Seats](#seats-item-type) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]`, Cat: `{"position":[0,0.35,0]}`, Chicken: `{"position":[0,0.4,0]}` | 
 
-`seats` is a list defined by five parameters. Each item has the following properties:
+## Seats item type
+The list of positions and number of riders for each position for entities riding this entity.
 
-| Name| Default Value| Type| Description |
-|:-----------|:-----------|:-----------|:-----------|
-| lock_rider_rotation| 181| Decimal| Angle in degrees that a rider is allowed to rotate while riding this entity. Omit this property for no limit |
-| max_rider_count| seat_count| Integer| Defines the maximum number of riders that can be riding this entity for this seat to be valid |
-| min_rider_count| 0| Integer| Defines the minimum number of riders that need to be riding this entity before this seat can be used |
-| position| [0, 0, 0]| Vector [a, b, c]| Position of this seat relative to this entity's position |
-| rotate_rider_by| 0| Molang| Offset to rotate riders by |
 
-## Example
+#### Seats Properties
 
-```json
-"minecraft:rideable":{
-    "controlling_seat": 0,
-    "crouching_skip_interact": true,
-    "family_types": [],
-    "interact_text": "Ride me",
-    "priority": 0,
-    "pull_in_entities": false,
-    "rider_can_interact": false,
-    "seat_count": 1,
-    "seats": [
-        {
-            "lock_rider_rotation": 181,
-            "max_rider_count": "seat_count",
-            "min_rider_count": 0,
-            "position": [0, 0, 0],
-            "rotate_rider_by": 0
-        }
-    ],
-}
-```
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| lock_rider_rotation | 181 | Decimal number | Angle in degrees that a rider is allowed to rotate while riding this entity. Omit this property for no limit. |  | 
+| max_rider_count | 0 | Integer number | Defines the maximum number of riders that can be riding this entity for this seat to be valid. |  | 
+| min_rider_count | 0 | Integer number | Defines the minimum number of riders that need to be riding this entity before this seat can be used. |  | 
+| position | [0, 0, 0] | x, y, z coordinate array | Position of this seat relative to this entity's position. |  | 
+| rotate_rider_by | 0 | String | Offset to rotate riders by. |  | 
 
-## Vanilla entities examples
+## Samples
 
-### boat
+#### [Camel](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/camel.json)
+
 
 ```json
 "minecraft:rideable": {
-        "seat_count": 2,
-        "interact_text": "action.interact.ride.boat",
-        "pull_in_entities": true,
-
-        "seats": [
-          {
-            "position": [ 0.0, -0.2, 0.0 ],
-            "min_rider_count": 0,
-            "max_rider_count": 1,
-
-            "rotate_rider_by": -90,
-            "lock_rider_rotation": 90
-          },
-          {
-            "position": [ 0.2, -0.2, 0.0 ],
-            "min_rider_count": 2,
-            "max_rider_count": 2,
-
-            "rotate_rider_by": "query.has_any_family('blaze', 'creeper', 'enderman', 'illager', 'magmacube', 'piglin', 'player', 'skeleton', 'slime', 'villager', 'wandering_trader', 'witch', 'zombie', 'zombie_pigman') ? -90 : 0",
-            "lock_rider_rotation": 90
-          },
-          {
-            "position": [ -0.6, -0.2, 0.0 ],
-            "min_rider_count": 2,
-            "max_rider_count": 2,
-            "rotate_rider_by": "query.has_any_family('blaze', 'creeper', 'enderman', 'illager', 'magmacube', 'piglin', 'player', 'skeleton', 'slime', 'villager', 'wandering_trader', 'witch', 'zombie', 'zombie_pigman') ? -90 : 0",
-            "lock_rider_rotation": 90
-          }
-        ]
-      }
+  "seat_count": 2,
+  "crouching_skip_interact": true,
+  "pull_in_entities": true,
+  "family_types": [
+    "player"
+  ],
+  "interact_text": "action.interact.ride.horse",
+  "seats": [
+    {
+      "min_rider_count": 0,
+      "max_rider_count": 2,
+      "position": [
+        0,
+        1.905,
+        0.5
+      ]
+    },
+    {
+      "min_rider_count": 1,
+      "max_rider_count": 2,
+      "position": [
+        0,
+        1.905,
+        -0.5
+      ]
+    }
+  ]
+}
 ```
 
-## Vanilla entities using `minecraft:rideable`
+#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
-- [boat](../../../../Source/VanillaBehaviorPack_Snippets/entities/boat.md)
-- [cat](../../../../Source/VanillaBehaviorPack_Snippets/entities/cat.md)
-- [cave_spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/cave_spider.md)
-- [chicken](../../../../Source/VanillaBehaviorPack_Snippets/entities/chicken.md)
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/horse.md)
-- [husk](../../../../Source/VanillaBehaviorPack_Snippets/entities/husk.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/minecart.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [ocelot](../../../../Source/VanillaBehaviorPack_Snippets/entities/ocelot.md)
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [spider](../../../../Source/VanillaBehaviorPack_Snippets/entities/spider.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [wolf](../../../../Source/VanillaBehaviorPack_Snippets/entities/wolf.md)
-- [zombie_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_horse.md)
-- [zombie_pigman](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_pigman.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
-- [zombie](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie.md)
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "family_types": [
+    "zombie"
+  ],
+  "seats": {
+    "position": [
+      0,
+      0.35,
+      0
+    ]
+  }
+}
+```
+
+#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chicken.json)
+
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "family_types": [
+    "zombie"
+  ],
+  "seats": {
+    "position": [
+      0,
+      0.4,
+      0
+    ]
+  }
+}
+```
+
+#### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
+
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "family_types": [
+    "zombie"
+  ],
+  "seats": {
+    "position": [
+      0,
+      1.105,
+      0
+    ]
+  }
+}
+```
+
+#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
+
+At /minecraft:entity/component_groups/minecraft:donkey_wild/minecraft:rideable/: 
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "family_types": [
+    "player",
+    "zombie"
+  ],
+  "interact_text": "action.interact.mount",
+  "seats": {
+    "position": [
+      0,
+      0.925,
+      -0.2
+    ]
+  }
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/: 
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "crouching_skip_interact": true,
+  "family_types": [
+    "player"
+  ],
+  "interact_text": "action.interact.ride.horse",
+  "seats": {
+    "position": [
+      0,
+      0.925,
+      -0.2
+    ]
+  }
+}
+```
+
+#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
+
+
+```json
+"minecraft:rideable": {
+  "seat_count": 3,
+  "family_types": [
+    "piglin"
+  ],
+  "seats": [
+    {
+      "position": [
+        0,
+        0.9,
+        -0.3
+      ],
+      "lock_rider_rotation": 0
+    },
+    {
+      "position": [
+        0,
+        2.4,
+        -0.3
+      ],
+      "lock_rider_rotation": 0
+    },
+    {
+      "position": [
+        0,
+        3.9,
+        -0.3
+      ],
+      "lock_rider_rotation": 0
+    }
+  ]
+}
+```
+
+#### [Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/horse.json)
+
+At /minecraft:entity/component_groups/minecraft:horse_wild/minecraft:rideable/: 
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "family_types": [
+    "player",
+    "zombie"
+  ],
+  "interact_text": "action.interact.mount",
+  "seats": {
+    "position": [
+      0,
+      1.1,
+      -0.2
+    ]
+  }
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:rideable/: 
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "crouching_skip_interact": true,
+  "family_types": [
+    "player"
+  ],
+  "interact_text": "action.interact.ride.horse",
+  "seats": {
+    "position": [
+      0,
+      1.1,
+      -0.2
+    ]
+  }
+}
+```
+
+#### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
+
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "family_types": [
+    "zombie"
+  ],
+  "seats": {
+    "position": [
+      0,
+      1.1,
+      -0.35
+    ],
+    "lock_rider_rotation": 0
+  }
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+At /minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/: 
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "family_types": [
+    "player"
+  ],
+  "interact_text": "action.interact.mount",
+  "seats": {
+    "position": [
+      0,
+      1.17,
+      -0.3
+    ]
+  }
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:rideable/: 
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "crouching_skip_interact": true,
+  "family_types": [
+    "player"
+  ],
+  "interact_text": "action.interact.ride.horse",
+  "seats": {
+    "position": [
+      0,
+      1.17,
+      -0.3
+    ]
+  }
+}
+```

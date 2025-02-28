@@ -25,6 +25,7 @@ subscribe(callback: (arg0: PacketReceivedBeforeEvent) => void, options?: PacketE
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **unsubscribe**
 `
@@ -36,3 +37,4 @@ unsubscribe(callback: (arg0: PacketReceivedBeforeEvent) => void): void
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

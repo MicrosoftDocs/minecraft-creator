@@ -1,0 +1,32 @@
+### YamlMime:Landing
+
+title: Vanilla Reference JSON Documentation # < 60 chars
+summary: "Landing page containing a high-level introduction of vanilla reference content for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Vanilla Reference JSON Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing a high-level introduction of vanilla reference content for Minecraft: Bedrock Edition."  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: minecraft-bedrock-edition
+  ms.topic: landing-page # Required
+  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/11/2025 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Overview of Vanilla Content Listings
+    linkLists:
+      - linkListType: reference
+        links:
+           - text: Blocks
+             url: Blocks.md
+           - text: Entities
+             url: Entities.md
+           - text: Entity Damage Sources
+             url: AddonEntityDamageSources.md
+           - text: Items
+             url: Items.md

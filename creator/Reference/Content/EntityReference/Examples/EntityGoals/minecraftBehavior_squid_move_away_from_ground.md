@@ -1,43 +1,39 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.squid_move_away_from_ground
-description: "A reference document detailing the 'behavior.squid_move_away_from_ground' entity goal"
+title: "Entity Documentation - behavior.squid_move_away_from_ground"
+description: "Describes the behavior.squid_move_away_from_ground AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.squid_move_away_from_ground
+# Entity Documentation - behavior.squid_move_away_from_ground
 
-`minecraft:behavior.squid_move_away_from_ground` compels an entity to swim away from the ground blocks.
+Allows the squid to move away from ground blocks and back to water. Can only be used by the Squid.
 
-> [!NOTE]
-> This behavior can only be used by the `squid` entity type.
 
-## Parameters
+## Squid Move Away From Ground Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Glow Squid: `1` | 
 
-## Example
+## Samples
+
+#### [Glow Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/glow_squid.json)
+
 
 ```json
-"minecraft:behavior.squid_move_away_from_ground":{
-    "priority": 2
+{
+  "priority": 1
 }
 ```
 
-## Vanilla entities examples
+#### [Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/squid.json)
 
-### squid
 
 ```json
-"minecraft:behavior.squid_move_away_from_ground": {
-    "priority": 1
-},
+{
+  "priority": 1
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.squid_move_away_from_ground`
-
-- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)

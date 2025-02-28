@@ -1,41 +1,37 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:water_movement
-description: "A reference document detailing the 'water_movement' entity component"
+title: "Entity Documentation - minecraft:water_movement"
+description: "Describes the minecraft:water_movement entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:water_movement
 
-`minecraft:water_movement` defines the speed with which an entity can move through water.
 
-## Parameters
+## Water Movement Properties
 
-|Name |Default Value  |Type  |Description  |
-|:-----------|:-----------|:-----------|:-----------|
-| drag_factor| 0.8| Decimal| Drag factor to determine movement speed when in water. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| drag_factor | 0.8 | Decimal number | Drag factor to determine movement speed when in water. | Panda: `0.98`, Turtle: `0.9` | 
 
-## Example
+## Samples
 
-```json
-"minecraft:water_movement":{
-    "drag_factor": 0.8
-}
-```
+#### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
 
-## Vanilla entities examples
-
-### panda
 
 ```json
 "minecraft:water_movement": {
-        "drag_factor": 0.98
-      }
+  "drag_factor": 0.98
+}
 ```
 
-## Vanilla entities using `minecraft:water_movement`
+#### [Turtle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/turtle.json)
 
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
+
+```json
+"minecraft:water_movement": {
+  "drag_factor": 0.9
+}
+```

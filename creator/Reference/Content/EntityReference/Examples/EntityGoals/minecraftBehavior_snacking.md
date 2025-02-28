@@ -1,54 +1,23 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.snacking
-description: "A reference document detailing the 'behavior.snacking' entity goal"
+title: "Entity Documentation - minecraft:behavior.snacking"
+description: "Describes the minecraft:behavior.snacking ai behavior component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:behavior.snacking
 
-`minecraft:behavior.snacking` compels an entity to stop and interact with select food items that are nearby.
+Allows the mob to take a load off and snack on food that it found nearby.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|items|*not set* | List| Items that we are interested in snacking on. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-|snacking_cooldown| 7.5| Decimal| The cooldown time in seconds before the mob is able to snack again. |
-|snacking_cooldown_min| 0.5| Decimal| The minimum time in seconds before the mob is able to snack again. |
-|snacking_stop_chance| 0.0017| Decimal| This is the chance that the mob will stop snacking, from 0 to 1. |
+## Snacking Behavior Properties
 
-## Example
-
-```json
-"minecraft:behavior.snacking":{
-    "priority": 5,
-    "snacking_cooldown": 25.0,
-    "snacking_cooldown_min": 15.0,
-    "snacking_stop_chance": 0.001,
-    "items":["cake"]
-}
-```
-
-## Vanilla entities examples
-
-### panda
-
-```json
-"minecraft:behavior.snacking": {
-    "priority": 3,
-    "snacking_cooldown": 17.5,
-    "snacking_cooldown_min": 10,
-    "snacking_stop_chance": 0.0011,
-    "items": [
-        "bamboo",
-        "cake"
-        ]
-}
-```
-
-## Vanilla entities using `minecraft:behavior.snacking`
-
-- [panda](../../../../Source/VanillaBehaviorPack_Snippets/entities/panda.md)
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| items | *not set* | Array of strings | Items that we are interested in snacking on |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| snacking_cooldown | 7.5 | Decimal number | The cooldown time in seconds before the mob is able to snack again |  | 
+| snacking_cooldown_min | 0.5 | Decimal number | The minimum time in seconds before the mob is able to snack again |  | 
+| snacking_stop_chance | 0.0017 | Decimal number | This is the chance that the mob will stop snacking, from 0 to 1 |  | 

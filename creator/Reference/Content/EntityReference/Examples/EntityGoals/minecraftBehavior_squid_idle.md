@@ -1,43 +1,39 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.squid_idle
-description: "A reference document detailing the 'behavior.squid_idle' entity goal"
+title: "Entity Documentation - behavior.squid_idle"
+description: "Describes the behavior.squid_idle AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.squid_idle
+# Entity Documentation - behavior.squid_idle
 
-`minecraft:behavior.squid_idle` compels an entity to swim in place.
+Allows the squid to swim in place idly. Can only be used by the Squid.
 
-> [!NOTE]
-> This behavior can only be used by the `squid` entity type.
 
-## Parameters
+## Squid Idle Behavior Properties
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Glow Squid: `2` | 
 
-## Example
+## Samples
+
+#### [Glow Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/glow_squid.json)
+
 
 ```json
-"minecraft:behavior.squid_idle":{
-    "priority": 2
+{
+  "priority": 2
 }
 ```
 
-## Vanilla entities examples
+#### [Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/squid.json)
 
-### squid
 
 ```json
-"minecraft:behavior.squid_idle": {
-        "priority": 2
-      }
+{
+  "priority": 2
+}
 ```
-
-## Vanilla entities using `minecraft:behavior.squid_idle`
-
-- [glow_squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/glow_squid.md)
-- [squid](../../../../Source/VanillaBehaviorPack_Snippets/entities/squid.md)

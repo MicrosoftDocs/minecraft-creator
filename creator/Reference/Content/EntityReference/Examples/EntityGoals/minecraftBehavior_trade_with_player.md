@@ -1,43 +1,122 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.trade_with_player
-description: "A reference document detailing the 'behavior.trade_with_player' entity goal"
+title: "Entity Documentation - behavior.trade_with_player"
+description: "Describes the behavior.trade_with_player AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.trade_with_player
+# Entity Documentation - behavior.trade_with_player
 
-`minecraft:behavior.trade_with_player` compels the entity to stop moving and trade with the player.
+Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| priority|*not set*|Integer|Conditions that need to be met for the behavior to start.|
-|filters| -- |Minecraft filter|The higher the priority, the sooner this behavior will be executed as a goal.|
-|max_distance_from_player|8.00|Decimal|The max distance that the mob can be from the player before exiting the goal.|
+## Trade With Player Behavior Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| filters | *not set* | Minecraft filter | Conditions that need to be met for the behavior to start. | Villager V2: `{"all_of":[{"all_of":[{"test":"in_water","value":false}]},{"any_of":[{"test":"on_ground","value":true},{"test":"is_sleeping","value":true}]}]}` | 
+| max_distance_from_player | 8 | Decimal number | The max distance that the mob can be from the player before exiting the goal. |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `2`, Villager: `1` | 
+
+## Samples
+
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+
 
 ```json
-"minecraft:behavior.trade_with_player":{
-    "priority": 1
+{
+  "priority": 2,
+  "filters": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "test": "in_water",
+            "value": false
+          }
+        ]
+      },
+      {
+        "any_of": [
+          {
+            "test": "on_ground",
+            "value": true
+          },
+          {
+            "test": "is_sleeping",
+            "value": true
+          }
+        ]
+      }
+    ]
+  }
 }
 ```
 
-## Vanilla entities examples
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
-### wandering_trader
 
 ```json
-"minecraft:behavior.trade_with_player": {
-        "priority": 1
+{
+  "priority": 1,
+  "filters": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "test": "in_water",
+            "value": false
+          }
+        ]
+      },
+      {
+        "any_of": [
+          {
+            "test": "on_ground",
+            "value": true
+          },
+          {
+            "test": "is_sleeping",
+            "value": true
+          }
+        ]
       }
+    ]
+  }
+}
 ```
 
-## Vanilla entities using `minecraft:behavior.trade_with_player`
+#### [Wandering Trader](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wandering_trader.json)
 
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager.md)
-- [wandering_trader](../../../../Source/VanillaBehaviorPack_Snippets/entities/wandering_trader.md)
+
+```json
+{
+  "priority": 1,
+  "filters": {
+    "all_of": [
+      {
+        "all_of": [
+          {
+            "test": "in_water",
+            "value": false
+          }
+        ]
+      },
+      {
+        "any_of": [
+          {
+            "test": "on_ground",
+            "value": true
+          },
+          {
+            "test": "is_sleeping",
+            "value": true
+          }
+        ]
+      }
+    ]
+  }
+}
+```

@@ -17,50 +17,36 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 Represents the color of a block when displayed on a map.
 
-## Methods
-- [color](#color)
-- [tintedColor](#tintedcolor)
-- [tintMethod](#tintmethod)
+## Properties
 
 ### **color**
-`
-color(): RGBA
-`
+`read-only color: RGBA;`
 
 Base map color defined for that block.
 
-**Returns** [*RGBA*](RGBA.md)
-  
+Type: [*RGBA*](RGBA.md)
+
 Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-  - Throws *Error*
+  - This property can throw errors when used.
+    - Throws *Error*
 
 ### **tintedColor**
-`
-tintedColor(): RGBA
-`
+`read-only tintedColor: RGBA;`
 
 Returns the base color multiplied to the evaluated tint at the given position.
 
-**Returns** [*RGBA*](RGBA.md)
-  
-Notes:
-- This function can't be called in read-only mode.
+Type: [*RGBA*](RGBA.md)
 
 ### **tintMethod**
-`
-tintMethod(): TintMethod
-`
+`read-only tintMethod: TintMethod;`
 
 Type of tint applied to the color.
 
-**Returns** [*TintMethod*](TintMethod.md)
-  
+Type: [*TintMethod*](TintMethod.md)
+
 Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-  - Throws *Error*
+  - This property can throw errors when used.
+    - Throws *Error*
 
 ## Constants
 

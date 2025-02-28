@@ -84,6 +84,9 @@ Create a CompoundBlockVolume object
   If not specified, the origin is set to (0,0,0)
 
 **Returns** [*CompoundBlockVolume*](CompoundBlockVolume.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **clear**
 `

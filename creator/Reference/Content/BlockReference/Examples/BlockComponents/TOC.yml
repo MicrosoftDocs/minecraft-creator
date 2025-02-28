@@ -10,6 +10,8 @@
    href: minecraftBlock_destructible_by_explosion.md
  - name: destructible_by_mining
    href: minecraftBlock_destructible_by_mining.md
+ - name: destruction_particles
+   href: minecraftBlock_destruction_particles.md
  - name: display_name
    href: minecraftBlock_display_name.md
  - name: entity_fall_on

@@ -1,29 +1,12 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:trade_resupply
-description: "A reference document detailing the 'trade_resupply' entity component"
+title: "Entity Documentation - minecraft:trade_resupply"
+description: "Describes the minecraft:trade_resupply entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:trade_resupply
 
-`minecraft:trade_resupply` resupplies the entity's trade.
-
-## Example
-
-```json
-"minecraft:trade_resupply": {}
-```
-
-## Vanilla entities examples
-
-### villager_v2
-
-```json
- "minecraft:trade_resupply": {}
-```
-
-## Vanilla entities using `minecraft:trade_resupply`
-
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
+Resupplies an entity's trade.

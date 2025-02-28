@@ -12,6 +12,12 @@ Add-Ons that can extend your vanilla playing experience have always been a popul
 
 But as players add more add-ons additively to their world, there may come a point where their device runs out of resources, and bad behaviors could result (textures may grow fuzzy or fail to load; performance may slow down; there may even be crashes if you add enough add-ons). The best solution for this is for individual add-ons to attempt to be a thrifty in their resource usage and performance. But even if it's most important for add-ons to be thrifty, these techniques also apply to any custom world experiences or texture packs you may be building - better performance is almost always noticeable and appreciated by players.
 
+## Model Complexity
+
+### Custom Block Geometry
+
+Be mindful of how blocks with complex geometry are used within your pack. Blocks that appear repeatedly throughout your world, or are expected to be placed repeatedly by players, can quickly consume large amounts of memory. We recommend targeting no more than 50 cubes per block model, but depending on the usage this may need to be even lower. Use your best judgment in determining how a given block will be utilized within your pack.
+
 ## Texture size
 
 Typically, we see overall texture size as one of the first things that can fail on devices. Generally, all textures - including for the user interface of Minecraft, are loaded when a world is first loaded. Everything you see in the game has a texture applied to it. And textures, being two-dimensional and all, can occupy a lot of memory quickly if the collective texture dimensions grow in size; the difference between a 256 x 256 texture (65536 bytes) and a 1024 x 1024 texture (1,048,576 bytes) is a factor of 16x (983,040 additional bytes), and when multiplied by 100 different entities or skin variants, can add up to some serious memory usages.

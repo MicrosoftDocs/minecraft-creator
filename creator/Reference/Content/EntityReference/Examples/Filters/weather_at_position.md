@@ -1,79 +1,82 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - weather_at_position
-description: "A reference document detailing the 'weather_at_position' entity filter"
+title: "Entity Filters Documentation - minecraft:weather_at_position"
+description: "Describes the minecraft:weather_at_position entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - weather_at_position
+# Entity Filters Documentation - minecraft:weather_at_position
 
 Tests the current weather, at the actor's position, against a provided weather value.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |String |(Required) The weather type to test against. |
+## Weather At Position Properties
 
-## values
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | String | (Required) The Family name to look for |  | 
 
-clear - no precipitation
-rain - precipitation, or snow in cold biomes
-thunder - lightning and sky noises, or blizzard in cold biomes
+### Operator choices
 
->[!Note]
-> `weather_at_position` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### subject
+### Subject choices
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-### operator
+## Samples
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
-
-## Example
-
-### Full
+At Full..: 
 
 ```json
-{ "test": "weather_at_position", "subject": "self", "operator": "equals", "value": "rain" }
+{ "test": "weather_at_position", "subject": "self", "operator": "equals", "value": "player" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
-{ "test": "weather_at_position", "value": "rain" }
+{ "test": "weather_at_position", "value": "player" }
 ```
 
-## Vanilla entities examples
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
 
-### fox
+At /minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/0/filters/all_of/0/: 
 
 ```json
-{ "test": "weather_at_position", "operator": "!=", "value": "thunderstorm" } 
+{"test":"weather_at_position","operator":"!=","value":"thunderstorm"}
 ```
 
-## Vanilla entities using `weather_at_position`
+At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:environment_sensor/triggers/0/filters/: 
 
-- [fox](../../../../Source/VanillaBehaviorPack_Snippets/entities/fox.md)
+```json
+{"test":"weather_at_position","value":"thunderstorm"}
+```
+
+At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/can_nap_filters/all_of/3/: 
+
+```json
+{"test":"weather_at_position","subject":"self","operator":"!=","value":"thunderstorm"}
+```

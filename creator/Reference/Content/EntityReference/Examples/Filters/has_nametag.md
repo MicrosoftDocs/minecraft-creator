@@ -1,69 +1,70 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - has_nametag
-description: "A reference document detailing the 'has_nametag' entity filter"
+title: "Entity Filters Documentation - minecraft:has_nametag"
+description: "Describes the minecraft:has_nametag entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - has_nametag
+# Entity Filters Documentation - minecraft:has_nametag
 
-Returns true when the subject entity contains the named component.
+Tests if the subject has been given a custom name.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |String | (Required) The component name to look for |
+## Has Nametag Properties
 
-### Nested Table
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | true | Boolean true/false | (Optional) true or false. |  | 
 
-> [!NOTE]
-> `has_nametag` can also use `subject` and [operator](../Definitions/NestedTables/operator.md) parameters but they are optional.
+### Operator choices
 
-### subject
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+### Subject choices
 
-### operator
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+## Samples
 
-## Examples
-
-### Full
+At Full..: 
 
 ```json
-{ "test": "has_nametag", "subject": "self", "operator": "equals", "value": "minecraft:explode" }
+{ "test": "has_nametag", "subject": "self", "operator": "equals", "value": "true" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
-{ "test": "has_nametag", "value": "minecraft:explode" }
+{ "test": "has_nametag" }
 ```
 
-## Vanilla entities examples
+#### [Evocation Illager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/evocation_illager.json)
 
-### zombie pigman
+At /minecraft:entity/events/minecraft:start_celebrating/sequence/1/filters/: 
 
-## Vanilla entities using `has_nametag`
+```json
+{"test":"has_nametag","value":false}
+```

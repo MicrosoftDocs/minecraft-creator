@@ -68,6 +68,7 @@ Returns a SecretString that is a placeholder for a secret configured in a JSON f
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 #### Examples
 

@@ -15,7 +15,13 @@ description: Contents of the @minecraft/server-net.NetworkBeforeEvents class.
 
 Type: [*PacketReceiveBeforeEventSignal*](PacketReceiveBeforeEventSignal.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **packetSend**
 `read-only packetSend: PacketSendBeforeEventSignal;`
 
 Type: [*PacketSendBeforeEventSignal*](PacketSendBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.

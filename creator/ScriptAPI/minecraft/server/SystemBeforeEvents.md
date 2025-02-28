@@ -21,10 +21,16 @@ A set of events that fire before an actual action occurs. In most cases, you can
 
 Type: [*ShutdownBeforeEventSignal*](ShutdownBeforeEventSignal.md)
 
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **startup**
 `read-only startup: StartupBeforeEventSignal;`
 
 Type: [*StartupBeforeEventSignal*](StartupBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
 
 ### **watchdogTerminate**
 `read-only watchdogTerminate: WatchdogTerminateBeforeEventSignal;`
@@ -34,3 +40,6 @@ Fires when the scripting watchdog shuts down the server. The can be due to using
 To prevent shutdown, set the event's cancel property to true.
 
 Type: [*WatchdogTerminateBeforeEventSignal*](WatchdogTerminateBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.

@@ -33,6 +33,7 @@ Will call your function every time an entity is removed from the game.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
 
 ### **unsubscribe**
 `
@@ -46,3 +47,4 @@ Unsubscribes your function from subsequent calls when an entity is removed.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

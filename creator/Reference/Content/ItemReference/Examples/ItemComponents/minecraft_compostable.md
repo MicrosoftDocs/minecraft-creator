@@ -1,18 +1,19 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - minecraft:compostable
-description: "A reference document detailing the 'compostable' item component"
+title: "Items Documentation - minecraft:compostable"
+description: "Describes the minecraft:compostable item component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - minecraft:compostable
+# Items Documentation - minecraft:compostable
 
-Items with the `minecraft:compostable` component are compostable in the composter block. The component has a required field that defines the chance of generating a layer of compost in the composter block when a compostable item is supplied to a composter block.
+Specifies that an item is compostable and provides the chance of creating a composting layer in the composter.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| composting_chance | 100 |Integer | The chance of this item generating a compost layer when supplied to the composter block. Valid values range from 1 - 100, inclusive. |
+## Compostable Properties
 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| composting_chance | *not set* | Integer number | The chance of this item to create a layer upon composting with the composter. Valid value range is 1 - 100 inclusive |  | 

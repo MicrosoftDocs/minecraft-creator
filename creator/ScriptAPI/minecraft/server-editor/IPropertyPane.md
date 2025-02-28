@@ -35,9 +35,11 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addBool](#addbool)
 - [addBool_deprecated](#addbool_deprecated)
 - [addButton](#addbutton)
+- [addButtonPane](#addbuttonpane)
 - [addColorPicker](#addcolorpicker)
 - [addColorPicker_deprecated](#addcolorpicker_deprecated)
 - [addComboBox](#addcombobox)
+- [addDataTable](#adddatatable)
 - [addDivider](#adddivider)
 - [addDropdown](#adddropdown)
 - [addDropdown_deprecated](#adddropdown_deprecated)
@@ -48,7 +50,6 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addProgressIndicator](#addprogressindicator)
 - [addString](#addstring)
 - [addString_deprecated](#addstring_deprecated)
-- [addTable](#addtable)
 - [addText](#addtext)
 - [addToggleGroup](#addtogglegroup)
 - [addVector3](#addvector3)
@@ -61,19 +62,16 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 
 ### **addBlockList**
 `
-addBlockList(options: IPropertyItemOptionsBlockList): IBlockListPropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>
+addBlockList(value: IObservableProp<string[]>, options: IBlockListPropertyItemOptions): IBlockListPropertyItem
 `
 
 Adds a block list to the pane.
 
 #### **Parameters**
-- **options**: *IPropertyItemOptionsBlockList*
+- **value**: *IObservableProp<string[]>*
+- **options**: *IBlockListPropertyItemOptions*
 
-**Returns** *IBlockListPropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>*
+**Returns** *IBlockListPropertyItem*
 
 ### **addBlockTable**
 `
@@ -116,16 +114,28 @@ Adds a boolean item to the pane.
 
 ### **addButton**
 `
-addButton(action: (() => void) | RegisteredAction<NoArgsAction>, options: IButtonPropertyItemOptions): IButtonPropertyItem
+addButton(action: ButtonPropertyItemSupportedActionTypes, options: IButtonPropertyItemOptions): IButtonPropertyItem
 `
 
-Adds a button to the pane and binds the specified action to the button activate.
+Adds a button to the pane and binds the specified action to the button interaction.
 
 #### **Parameters**
-- **action**: *(() => void) | RegisteredAction<NoArgsAction>*
+- **action**: *ButtonPropertyItemSupportedActionTypes*
 - **options**: *IButtonPropertyItemOptions*
 
 **Returns** *IButtonPropertyItem*
+
+### **addButtonPane**
+`
+addButtonPane(options: IButtonPanePropertyItemOptions): IButtonPanePropertyItem
+`
+
+Adds a pane for grouped button layout.
+
+#### **Parameters**
+- **options**: *IButtonPanePropertyItemOptions*
+
+**Returns** *IButtonPanePropertyItem*
 
 ### **addColorPicker**
 `
@@ -166,6 +176,18 @@ Adds a combo box item to the pane.
 - **options**: *IComboBoxPropertyItemOptions*
 
 **Returns** *IComboBoxPropertyItem*
+
+### **addDataTable**
+`
+addDataTable(options: IDataTablePropertyItemOptions): IDataTablePropertyItem
+`
+
+Adds a data table to the pane.
+
+#### **Parameters**
+- **options**: *IDataTablePropertyItemOptions*
+
+**Returns** *IDataTablePropertyItem*
 
 ### **addDivider**
 `
@@ -294,22 +316,6 @@ Adds a string item to the pane
 - **options**: *IPropertyItemOptions*
 
 **Returns** *IPropertyItem<T, Prop>*
-
-### **addTable**
-`
-addTable(options: IPropertyItemOptionsTable): ITablePropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>
-`
-
-Adds a table to the pane.
-
-#### **Parameters**
-- **options**: *IPropertyItemOptionsTable*
-
-**Returns** *ITablePropertyItem<{
-        EMPTY: undefined;
-    }, 'EMPTY'>*
 
 ### **addText**
 `

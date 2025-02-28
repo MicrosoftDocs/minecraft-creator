@@ -1,41 +1,44 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:behavior.sonic_boom
-description: "A reference document detailing the 'behavior.sonic_boom' entity goal"
+title: "Entity Documentation - behavior.sonic_boom"
+description: "Describes the behavior.sonic_boom AI Goals"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - minecraft:behavior.sonic_boom
+# Entity Documentation - behavior.sonic_boom
 
-`minecraft:behavior.sonic_boom` compels this entity to perform a 'sonic boom' ranged attack.
+Allows this entity to perform a 'sonic boom' ranged attack.
 
-## Parameters
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-| attack_cooldown| 5.00| Decimal| Cooldown in seconds required after using this attack until the entity can use sonic boom again. |
-| attack_damage| 30.00| Decimal| Attack damage of the sonic boom. |
-| attack_range_horizontal| 15.00| Decimal| Horizontal range (in blocks) at which the sonic boom can damage the target. |
-| attack_range_vertical| 20.00| Decimal| Vertical range (in blocks) at which the sonic boom can damage the target. |
-| attack_sound| | String| Sound event for the attack. |
-| charge_sound| | String| Sound event for the charge up. |
-| duration| 3.00| Decimal| Goal duration in seconds |
-| duration_until_attack_sound| 1.70| Decimal| Duration in seconds until the attack sound is played. |
-| knockback_height_cap| 0.00| Decimal| Height cap of the attack knockback's vertical delta. |
-| knockback_horizontal_strength| 0.00| Decimal| Horizontal strength of the attack's knockback applied to the attack target. |
-| knockback_vertical_strength| 0.00| Decimal| Vertical strength of the attack's knockback applied to the attack target. |
-| priority|*not set*|Integer|The higher the priority, the sooner this behavior will be executed as a goal.|
-| speed_multiplier| 1.00| Decimal| This multiplier modifies the attacking entity's speed when moving toward the target. |
+## Sonic Boom Behavior Properties
 
-## Vanilla entities examples
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| attack_cooldown | 5 | Decimal number | Cooldown in seconds required after using this attack until the entity can use sonic boom again. | Warden: `2` | 
+| attack_damage | 30 | Decimal number | Attack damage of the sonic boom. | Warden: `10` | 
+| attack_range_horizontal | 15 | Decimal number | Horizontal range (in blocks) at which the sonic boom can damage the target. | Warden: `15` | 
+| attack_range_vertical | 20 | Decimal number | Vertical range (in blocks) at which the sonic boom can damage the target. | Warden: `20` | 
+| attack_sound | *not set* | String | Sound event for the attack. | Warden: `"sonic_boom"` | 
+| charge_sound | *not set* | String | Sound event for the charge up. | Warden: `"sonic_charge"` | 
+| duration | 3 | Decimal number | Goal duration in seconds | Warden: `3` | 
+| duration_until_attack_sound | 1.7 | Decimal number | Duration in seconds until the attack sound is played. | Warden: `1.7` | 
+| knockback_height_cap | 0 | Decimal number | Height cap of the attack knockback's vertical delta. | Warden: `0.5` | 
+| knockback_horizontal_strength | 0 | Decimal number | Horizontal strength of the attack's knockback applied to the attack target. | Warden: `2.5` | 
+| knockback_vertical_strength | 0 | Decimal number | Vertical strength of the attack's knockback applied to the attack target. | Warden: `0.5` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Warden: `3` | 
+| speed_multiplier | 1 | Decimal number | This multiplier modifies the attacking entity's speed when moving toward the target. | Warden: `1.2` | 
 
-### warden
+## Samples
+
+#### [Warden](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/warden.json)
+
 
 ```json
-"minecraft:behavior.sonic_boom": {
+{
   "priority": 3,
-  "duration": 3.0,
+  "duration": 3,
   "speed_multiplier": 1.2,
   "attack_damage": 10,
   "attack_range_horizontal": 15,
@@ -49,7 +52,3 @@ ms.service: minecraft-bedrock-edition
   "attack_sound": "sonic_boom"
 }
 ```
-
-## Vanilla entities using `sonic_boom`
-
-- [warden](../../../../Source/VanillaBehaviorPack_Snippets/entities/warden.md)

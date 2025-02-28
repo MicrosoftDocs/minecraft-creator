@@ -1,105 +1,91 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Entity Documentation - has_equipment
-description: "A reference document detailing the 'has_equipment' entity filter"
+title: "Entity Filters Documentation - minecraft:has_equipment"
+description: "Describes the minecraft:has_equipment entity filter element"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - has_equipment
+# Entity Filters Documentation - minecraft:has_equipment
 
 Tests for the presence of a named item in the designated slot of the subject entity.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|---------|---------|---------|---------|
-|value |*not set* |String |(Required) The item name to look for |
+## Has Equipment Properties
 
-> [!NOTE]
-> `has_equipment` can also use `subject`, [operator](../Definitions/NestedTables/operator.md) and domain parameters but they are optional.
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| domain | any | [Domain](#domain-choices) choices | (Optional) The equipment location to test |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| value | *not set* | String | (Required) The item name to look for |  | 
 
-### subject
+### Domain choices
 
-| Options| Description |
-|:-----------|:-----------|
-| block| The block involved with the interaction. |
-| damager| The damaging entity involved with the interaction. |
-| other| The other member of an interaction, not the caller. |
-| parent| The caller's current parent. |
-| player| The player involved with the interaction. |
-| self| The entity or object calling the test |
-| target| The caller's current target. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| any | Any | |
+| armor | Armor | |
+| body | Body | |
+| feet | Feet | |
+| hand | Hand | |
+| head | Head | |
+| inventory | Inventory | |
+| leg | Leg | |
+| torso | Torso | |
 
-### operator
+### Operator choices
 
-| Options| Description |
-|:-----------|:-----------|
-| !=| Test for inequality. |
-| <| Test for less-than the value. |
-| <=| Test for less-than or equal to the value. |
-| <>| Test for inequality. |
-| =| Test for equality. |
-| ==| Test for equality. |
-| >| Test for greater-than the value. |
-| >=| Test for greater-than or equal to the value. |
-| equals| Test for equality. |
-| not| Test for inequality. |
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| != | != | Test for inequality.|
+| < | < | Test for less-than the value.|
+| <= | <= | Test for less-than or equal to the value.|
+| <> | <> | Test for inequality.|
+| = | = | Test for equality.|
+| == | == | Test for equality.|
+| > | > | Test for greater-than the value.|
+| >= | >= | Test for greater-than or equal to the value.|
+| equals | Equals | Test for equality.|
+| not | Not | Test for inequality.|
 
-### domain
+### Subject choices
 
-Domain is used to test where the equipment is located.
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| block | Block | The block involved with the interaction.|
+| damager | Damager | The damaging actor involved with the interaction.|
+| other | Other | The other member of an interaction, not the caller.|
+| parent | Parent | The caller's current parent.|
+| player | Player | The player involved with the interaction.|
+| self | Self | The entity or object calling the test|
+| target | Target | The caller's current target.|
 
-|Options|
-|:-----------|
-| any|
-| armor|
-| feet|
-| hand|
-| head|
-| inventory|
-| leg|
-| torso|
+## Samples
 
-## Example
-
-### Full
+At Full..: 
 
 ```json
-{ "test": "has_equipment", "subject": "self", "domain": "any", "operator": "equals", "value": "dirt"
+{ "test": "has_equipment", "subject": "self", "domain": "any", "operator": "equals", "value": "dirt" }
 ```
 
-### Short (using Defaults)
+At Short (using Defaults)..: 
 
 ```json
 { "test": "has_equipment", "value": "dirt" }
 ```
 
-## Vanilla entities example
+#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
 
-### mule
 
 ```json
-{ "test": "has_equipment", "subject": "other", "domain": "hand", "value": "chest"}
+{"test":"has_equipment","domain":"head","subject":"other","operator":"not","value":"carved_pumpkin"}
 ```
 
-## Vanilla entities using `has_equipment`
+#### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
 
-- [cow](../../../../Source/VanillaBehaviorPack_Snippets/entities/cow.md)
-- [creeper](../../../../Source/VanillaBehaviorPack_Snippets/entities/creeper.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [donkey](../../../../Source/VanillaBehaviorPack_Snippets/entities/donkey.md)
-- [ender_pearl](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_pearl.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [mooshroom](../../../../Source/VanillaBehaviorPack_Snippets/entities/mooshroom.md)
-- [mule](../../../../Source/VanillaBehaviorPack_Snippets/entities/mule.md)
-- [pig](../../../../Source/VanillaBehaviorPack_Snippets/entities/pig.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [sheep](../../../../Source/VanillaBehaviorPack_Snippets/entities/sheep.md)
-- [shulker](../../../../Source/VanillaBehaviorPack_Snippets/entities/shulker.md)
-- [snow_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/snow_golem.md)
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)
-- [tnt_minecart](../../../../Source/VanillaBehaviorPack_Snippets/entities/tnt_minecart.md)
-- [zombie_villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager_v2.md)
-- [zombie_villager](../../../../Source/VanillaBehaviorPack_Snippets/entities/zombie_villager.md)
+
+```json
+{"test":"has_equipment","subject":"other","domain":"hand","value":"saddle"}
+```
