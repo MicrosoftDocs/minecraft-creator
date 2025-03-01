@@ -334,6 +334,8 @@
           href: Reference/Content/blockreference/Examples/BlockStateAndTraitListings.md
         - name: Create a Village with Structure Blocks
           href: Documents/Structures/IntroductionToStructureBlocks.md
+        - name: Delete, Rotate, and Take a Core Sample with Structure Blocks
+          href: Documents/Structures/MoreFunWithStructureBlocks.md
         - name: Getting Started with Command Blocks
           href: Documents/CommandBlocks.md
         - name: Use Command Blocks to Have a Snowball Fight
