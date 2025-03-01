@@ -32,7 +32,11 @@ You can also customize the appearance of the aim assist targeting reticle. Here 
 
 ![Entity targeting reticle](Media/aim_assist_entity_reticle.png)
 
-If you want to replace the targeting reticle with a different shape or color, you can create or update a resource pack to include custome textures. In the `resourcepack/textures/ui` folder, add your textures with the names `aimassist_block_highlight` and `aimassist_entity_highlight` to replace the appropriate targeting reticle.
+If you want to replace the targeting reticle with a different shape or color, you can create or update a resource pack to include custom textures.
+
+1. Create a `resourcepack/textures/ui` folder. 
+
+1. Add your textures with the names `aimassist_block_highlight` and `aimassist_entity_highlight` to replace the appropriate targeting reticle.
 
 ## Next Steps
 
