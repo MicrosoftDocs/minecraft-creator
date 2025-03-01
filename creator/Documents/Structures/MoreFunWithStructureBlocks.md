@@ -63,6 +63,8 @@ Suppose you built a structure and then realized it's facing the wrong direction.
 
 ## Take a Cross-Section of the world ... for Science!
 
+A cross-section or "core sample" is a good way to see what's going on underground. You can use this to check for an Ancient City, or to evaluate the density of diamonds, or to see if your [cave carver feature](../../Reference/Content/FeaturesReference/Examples/Features/minecraftCave_carver_feature.md) is functioning as expected.
+
 1. Start by placing a Save structure block on top of the surface of the world.
 
 1. Adjust the Size and offset to make the y settings dig deep down in the ground.
@@ -71,7 +73,7 @@ Suppose you built a structure and then realized it's facing the wrong direction.
 
    - Size: X = 10, Y = 210, Z = 10
 
-   - Offset: X: 0. Y = -182, Z: 0
+   - Offset: X: 0, Y = -182, Z: 0
 
    ![Image of a structure block modal with the settings adjusted to make it dig all the way down to bedrock](../Media/StructureBlock/core_sample_settings.png)
 
