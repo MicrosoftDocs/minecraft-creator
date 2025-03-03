@@ -14,11 +14,12 @@ After you get comfortable with the basics of saving, exporting, and importing st
 In this tutorial, you will learn how to use structure blocks to:
 
 - Rotate a structure
+- Load a group of mobs
 - Take a cross-section of the world
 
 ## Rotate a Structure
 
-Suppose you built a structure and then realized it's facing the wrong direction. That's okay. 
+Suppose you built a structure and then realized it's facing the wrong direction. That's okay. We can fix it.
 
 1. Start by exporting the structure and saving it on your computer.
 
@@ -34,7 +35,22 @@ Suppose you built a structure and then realized it's facing the wrong direction.
 
    ![Image of the saved structure pointing at a distant village like we want it to.](../Media/StructureBlock/rotated_arrow_structure.png)
 
-   Now the arrow is pointing the correct direction.
+   Now the structure is pointing the correct direction.
+
+## Load a Group of Mobs
+
+You can use a structure block to select, save, and load just a group of mobs, like if you want to fill someone's base with chickens or simulate a Trojan Horse scenario.
+
+1. Start by selecting a structure that will contain your spawned-in mobs.
+
+1. Spawn them in with eggs or by summoning them with a command.
+
+1. Save only the entities with a descriptive name.
+
+   ![Image of a selected group of raiders](../Media/StructureBlock/save_raiders_only.png)
+
+1. Use a **load** block to bring in the mobs.
+
 
 ## Take a Cross-Section of the World
 
