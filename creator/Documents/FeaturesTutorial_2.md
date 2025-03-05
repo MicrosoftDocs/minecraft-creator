@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Features Tutorial - A More Complex Feature
 description: "How to add a feature to a world with a behavior pack and a resource pack."
 ms.service: minecraft-bedrock-edition
+ms.date: 02/20/2025
 ---
 
 # Features Tutorial - A More Complex Feature
@@ -26,15 +27,15 @@ If you already did the [simple feature tutorial](FeaturesTutorial_1.md), this ne
 
 1. Expand the folder. It will be called **mineraft-samples-main**.
 
-1. Take a look at all the delightful Minecraft sample projects and find **custom_features**.
+1. Find the **custom_features** folder and open it.
 
-1. Inside custom_features, find the **example_feature_set** folder, we want only the **behavior_packs** folder and the **resource_packs** folder right now.
+1. Inside custom_features, find the **example_feature_set** folder, we want both the **behavior_packs** folder and the **resource_packs** folder right now.
 
 ## oak_apple - Behavior Pack Structure
 
-This example uses a behavior pack, so [create one of those](BehaviorPack.md) and call it something like **oak_apple_BP**.
+[Create a behavior pack folder](BehaviorPack.md) and call it something like **oak_apple_BP**.
 
-The finished behavior pack should have this structure:
+This should be the final behavior pack structure:
 
 ```
 - oak_apple_BP (main behavior pack folder)
@@ -55,7 +56,39 @@ The finished behavior pack should have this structure:
   - manifest.json
 ```
 
-Go ahead and put the manifest.json file in there.
+Go ahead and put a manifest.json file in there, like this one:
+
+```
+{
+  "format_version": 2,
+  "header": {
+    "description": "Feature: Oak trees can grow apples! (BP)",
+    "name": "Oak Apple",
+    "uuid":"<PUT A UNIQUE UUID HERE>",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 20]
+  },
+  "modules":
+    [
+      {
+        "description": "Features Samples",
+          "type": "data",
+          "uuid": "<PUT A UNIQUE UUID HERE>",
+          "version": [1, 0, 0]
+      }
+    ],
+    "dependencies": [ 
+      { 
+        "uuid": "<PUT A UUID HERE>", 
+        "version": [ 1, 0, 0 ] 
+      } 
+    ] 
+}
+```
+
+>[!IMPORTANT]
+>Remember that the UUID in the dependencies section should match the UUID for the resource pack if you want them to load each other automatically.
+>For more information, review [Creating a Behavior Pack from Scratch](BehaviorPackFromScratch.md#create-the-dependency).
 
 The path and contents for the other files are next. The content given next in this section might look different from what you find in the sample pack because the features we are not using right now have been removed, for clarity.
 
@@ -467,7 +500,38 @@ If you want to learn more about how to make your feature's loot drop more varied
   - manifest.json
 ```
 
-Just like for the behavior pack, go ahead and put the manifest.json file in there.
+Just like you did for the behavior pack, create a manifest.json file in there like this one:
+
+```
+{
+  "format_version": 2,
+  "header": {
+    "description": "Feature: Oak trees can grow apples! (RP)",
+    "name": "Oak Apple",
+    "uuid":"<PUT A UNIQUE UUID HERE>",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 20]
+  },
+  "modules":
+    [
+      {
+        "description": "Features Samples",
+          "type": "resources",
+          "uuid": "<PUT A UNIQUE UUID HERE>",
+          "version": [1, 0, 0]
+      }
+    ],
+    "dependencies": [ 
+      { 
+        "uuid": "<PUT A UUID HERE>", 
+        "version": [ 1, 0, 0 ] 
+      } 
+    ] 
+}
+```
+
+>[!IMPORTANT]
+>Remember that the UUID in the dependencies section should match the UUID for the resource pack if you want them to load each other automatically.
 
 The path and contents for the other files are next. Again, the content given next in this section might look different from what you find in the sample pack because the features we are not using right now have been removed, for clarity. 
 
@@ -525,10 +589,9 @@ title.example:apple_block.name="Apple Block"
 
 ### oak_apple_RP/textures/blocks/apple_block.png
 
-You can right-click this image and save it where it needs to go.
+You can right-click this image and save it in the **blocks** folder inside the **textures** folder.
 
 ![Downloadable image of an 'apple block'](../Documents/Media/Features/apple_block.png)
-
 
 ### oak_apple_RP/textures/terrain_texture.json
 
@@ -550,7 +613,8 @@ This is the path to the texture for the custom apple_block.
 
 ## What Success Looks Like...
 
-This is a forest with apple blocks appended to the trees. 
+This is a forest with apple blocks appended to the trees. After you activate the packs and find your apple trees, take a moment to break an apple block and munch on some apples. 
+
+Notice that the apple blocks only attach to oak logs (because that's what oak tree trunks are made of) and oak leaves.
 
 ![Image of a forest with oak trees that have apple blocks from the features packs added to them.](Media/Features/features_tutorial2_apples_galore.png)
-

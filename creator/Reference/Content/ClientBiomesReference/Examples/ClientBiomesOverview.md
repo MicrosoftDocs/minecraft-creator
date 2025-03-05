@@ -52,6 +52,8 @@ Contains a description and components to define a biome.
 |[ambient_sounds](./Components/minecraftClientBiomes_ambient_sounds.md)|
 |[biome_music](./Components/minecraftClientBiomes_biome_music.md)|
 |[fog_appearance](./Components/minecraftClientBiomes_fog_appearance.md)|
+|[foliage_appearance](./Components/minecraftClientBiomes_foliage_appearance.md)|
+|[grass_appearance](./Components/minecraftClientBiomes_grass_appearance.md)|
 |[sky_color](./Components/minecraftClientBiomes_sky_color.md)|
 |[water_appearance](./Components/minecraftClientBiomes_water_appearance.md)|
 

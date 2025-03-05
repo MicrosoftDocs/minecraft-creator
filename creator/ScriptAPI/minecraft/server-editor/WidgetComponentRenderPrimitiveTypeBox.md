@@ -51,6 +51,3 @@ new WidgetComponentRenderPrimitiveTypeBox(center: minecraftserver.Vector3, color
 - **size**?: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) = `null`
 
 **Returns** [*WidgetComponentRenderPrimitiveTypeBox*](WidgetComponentRenderPrimitiveTypeBox.md)
-  
-Notes:
-- This function can't be called in read-only mode.

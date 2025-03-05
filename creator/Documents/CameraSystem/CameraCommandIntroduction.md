@@ -214,7 +214,9 @@ Second, if a fade is already in progress, new fades will continue to use the sam
 
 **Aim Assist**
  
-Aim assist allows content creators to enable aim assist for players with specified settings. The Aim assist will find a target in a specified range and allow players to interact with them directly. When in free cam, for example a bird's-eye view, it can be hard to target things like levers and buttons so aim assist will help highlight whatever the player is aiming at in any given moment. It should improve players' aiming experience that allows players to target and interact with blocks and actors easily regardless of the camera preset chosen by the creator.   
+Aim assist allows content creators to enable aim assist for players with specified settings. The Aim assist will find a target in a specified range and allow players to interact with them directly. When in free cam, for example a bird's-eye view, it can be hard to target things like levers and buttons so aim assist will help highlight whatever the player is aiming at in any given moment. It should improve players' aiming experience that allows players to target and interact with blocks and actors easily regardless of the camera preset chosen by the creator.
+
+For more information, see [Introduction to Aim Assist](IntroToAimAssist.md).
 
 **Focus Target**
 
@@ -236,7 +238,7 @@ In addition to these commands, you can also control a variety of options through
 
 - `"rotation_speed":` is a float value that controls the rotation speed of the target camera is degrees per second. Must be > 0.0f. By default this is set to 0.0f which is "perfect" tracking and will always keep up with the target no matter the speed.
 
--  `"snap_to_target":` is a Boolean that, if true and used in combination with a valid rotation speed, will make the camera snap to the target in the first frame of tracking, then continue to track at the given rotation speed. This value defaults to false where the camera will always rotate at the given valid rotation speed.
+- `"snap_to_target":` is a Boolean that, if true and used in combination with a valid rotation speed, will make the camera snap to the target in the first frame of tracking, then continue to track at the given rotation speed. This value defaults to false where the camera will always rotate at the given valid rotation speed.
 
 Note for horizontal rotation limits: The direction the free camera is initially facing when spawned in will be what the target camera considers as 'zero' rotation. That means that if you were to have horizontal rotation limits, they would be based relative to where the target camera was FIRST looking.
 

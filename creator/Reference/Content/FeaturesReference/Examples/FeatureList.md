@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Features Documentation - Feature List
 description: "A reference document listing all available features for use in JSON files"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/20/2025
 ---
 
 # Features Documentation - Feature List
@@ -32,6 +33,7 @@ Below is a list of all the available Features within Minecraft: Bedrock Edition 
 | [minecraft:single_block_feature](Features/minecraftSingle_block_feature.md)| Places a single block in the world.|
 | [minecraft:snap_to_surface_feature](Features/minecraftSnap_to_surface_feature.md)| snaps the y-value of a feature placement pos to the floor or the ceiling within the provided `vertical_search_range`.|
 | [minecraft:structure_template_feature](Features/minecraftStructure_template_feature.md)| Places a structure in the world. The structure must be stored as a .mcstructure file in the "structures" subdirectory of a behavior pack.|
+| [minecraft:surface_relative_threshold_feature](Features/minecraftsurface_relative_threshold_feature.md)| Determines whether the provided position is below the estimated surface level of the world, and places a feature if so.If the provided position is above configured surface or the surface is not available, placement will fail. |
 | [minecraft:tree_feature](Features/minecraftTree_feature.md)| Places a tree in the world. |
 | [minecraft:underwater_cave_carver_feature](Features/minecraftUnderwater_cave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8-block radial pattern.|
 | [minecraft:vegetation_patch_feature](Features/minecraftVegetation_patch_feature.md)| Scatters vegetation in an area. |

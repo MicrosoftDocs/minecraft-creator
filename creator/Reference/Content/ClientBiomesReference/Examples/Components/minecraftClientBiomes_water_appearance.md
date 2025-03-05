@@ -1,27 +1,28 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Client Biomes Documentation - water appearance
-description: "A reference document detailing the 'water appearance' client biome component"
+title: "Client Biome Documentation - minecraft:water_appearance"
+description: "Describes the minecraft:water_appearance client biome"
 ms.service: minecraft-bedrock-edition
-ms.date: 12/03/2024 #Required; mm/dd/yyyy format.
+ms.date: 02/11/2025 
 ---
 
-# Client Biomes Documentation - water_appearance
+# Client Biome Documentation - minecraft:water_appearance
 
-Sets the water surface color used during rendering. Biomes without this component will have default water surface color behavior.
-
-## Attributes
-
-|Name |Type |Required |Description |
-|:-----------|:-----------|:-------|:-----------|
-|surface_color| Object of type Color255RGB| Required| RGB color of the water surface.|
+Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.
 
 
-## Example JSON
+## Water Appearance Properties
 
-```JSON
-      "minecraft:water_appearance": {
-        "surface_color": "#62529e"
-      }
-```      
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| surface_color | *not set* | Object | RGB color of the water surface |  | 
+| surface_opacity | *not set* | Decimal number | Opacity of the water surface (must be between 0 for invisible and 1 for opaque, inclusive) |  | 
+
+## Samples
+
+
+```json
+"minecraft:water_appearance": {
+	"surface_color": "#62529e"}
+```

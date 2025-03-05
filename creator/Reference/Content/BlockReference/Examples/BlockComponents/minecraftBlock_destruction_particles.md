@@ -11,6 +11,7 @@ ms.date: 02/11/2025
 
 [Note: This component is currently experimental]. Sets the particles that will be used when block is destroyed. This component can be omitted.
 
+
 ## Destruction Particles Properties
 
 |Name       |Default Value |Type |Description |Example Values |

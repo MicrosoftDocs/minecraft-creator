@@ -26,9 +26,6 @@ new MolangVariableMap()
 An constructor for creating a new MolangVariableMap object.
 
 **Returns** [*MolangVariableMap*](MolangVariableMap.md)
-  
-Notes:
-- This function can't be called in read-only mode.
 
 ### **setColorRGB**
 `

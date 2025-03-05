@@ -11,6 +11,10 @@ ms.date: 02/11/2025
 
 Triggers additional entity events when hit. For example, you could use a randomize node in minecraft:entity_spawned to choose either an adult or baby event for adding component groups.
 
+## Alternate Simple Representations
+
+This item can also be represented as a `String`.
+
 
 ## Samples
 

@@ -51,6 +51,3 @@ new WidgetComponentRenderPrimitiveTypeAxialSphere(center: minecraftserver.Vector
 - **color**?: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md) = `null`
 
 **Returns** [*WidgetComponentRenderPrimitiveTypeAxialSphere*](WidgetComponentRenderPrimitiveTypeAxialSphere.md)
-  
-Notes:
-- This function can't be called in read-only mode.
