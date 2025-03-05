@@ -1,0 +1,24 @@
+---
+author: mammerla
+ms.author: mikeam
+title: "Biome Documentation - minecraft:surface_parameters"
+description: "Describes the minecraft:surface_parameters biome"
+ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
+---
+
+# Biome Documentation - minecraft:surface_parameters
+
+Controls the blocks used for the default Minecraft Overworld terrain generation.
+
+
+## Surface Parameters Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| foundation_material | *not set* | Object | Controls the block type used deep underground in this biome. |  | 
+| mid_material | *not set* | Object | Controls the block type used in a layer below the surface of this biome. |  | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur. |  | 
+| sea_floor_material | *not set* | Object | Controls the block type used as a floor for bodies of water in this biome. |  | 
+| sea_material | *not set* | Object | Controls the block type used for the bodies of water in this biome. |  | 
+| top_material | *not set* | Object | Controls the block type used for the surface of this biome. |  | 

@@ -1,27 +1,27 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Client Biomes Documentation - sky color
-description: "A reference document detailing the 'sky color' client biome component"
+title: "Client Biome Documentation - minecraft:sky_color"
+description: "Describes the minecraft:sky_color client biome"
 ms.service: minecraft-bedrock-edition
-ms.date: 12/03/2024 #Required; mm/dd/yyyy format.
+ms.date: 02/11/2025 
 ---
 
-# Client Biomes Documentation - sky_color
+# Client Biome Documentation - minecraft:sky_color
 
 Sets the sky color used during rendering. Biomes without this component will have default sky color behavior.
 
-## Attributes
 
-|Name |Type |Required |Description |
-|:-----------|:-----------|:-------|:-----------|
-|sky_color| Object of type Color255RGB| Required| RGB color of the sky.|
+## Sky Color Properties
 
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| sky_color | *not set* | Object | RGB color of the sky |  | 
 
-## Example
+## Samples
+
 
 ```json
-      "minecraft:sky_color": {
-        "sky_color": "#000000"
-      }
-```      
+"minecraft:sky_color": {
+	"sky_color": "#000000"}
+```

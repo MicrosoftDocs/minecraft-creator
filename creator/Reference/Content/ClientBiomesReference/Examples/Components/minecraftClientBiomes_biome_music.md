@@ -1,18 +1,19 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Client Biomes Documentation - biome music
-description: "A reference document detailing the 'biome music' client biome component"
+title: "Client Biome Documentation - minecraft:biome_music"
+description: "Describes the minecraft:biome_music client biome"
 ms.service: minecraft-bedrock-edition
-ms.date: 12/03/2024 #Required; mm/dd/yyyy format.
+ms.date: 02/11/2025 
 ---
 
-# Client Biomes Documentation - biome_music
+# Client Biome Documentation - minecraft:biome_music
 
 Affects how music plays within the biome.
 
-## Attributes
 
-|Name |Type |Required |Description |
-|:-----------|:-----------|:-------|:-----------|
-|volume_multiplier| Float| Optional| Multiplier temporarily and gradually applied to music volume when within this biome. Must be a value between 0 and 1, inclusive.|
+## Biome Music Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| volume_multiplier | *not set* | Decimal number | Multiplier temporarily and gradually applied to music volume when within this biome. Must be a value between 0 and 1, inclusive. |  | 
