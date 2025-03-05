@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:breathable
 
-Defines what blocks an entity can breathe in and gives them the ability to suffocate.
+Defines what blocks this entity can breathe in and gives them the ability to suffocate.
 
 
 ## Breathable Properties

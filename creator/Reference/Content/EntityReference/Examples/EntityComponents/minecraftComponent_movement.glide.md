@@ -9,10 +9,8 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:movement.glide
 
-This move control causes the mob to glide.
 
-
-## Glide Movement Properties
+## Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

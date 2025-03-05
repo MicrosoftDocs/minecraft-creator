@@ -1,26 +1,19 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Client Biomes Documentation - fog appearance
-description: "A reference document detailing the 'fog appeareance' client biome component"
+title: "Client Biome Documentation - minecraft:fog_appearance"
+description: "Describes the minecraft:fog_appearance client biome"
 ms.service: minecraft-bedrock-edition
-ms.date: 12/03/2024 #Required; mm/dd/yyyy format.
+ms.date: 02/11/2025 
 ---
 
-# Client Biomes Documentation - fog_appearance
+# Client Biome Documentation - minecraft:fog_appearance
 
 Sets the fog settings used during rendering. Biomes without this component will have default fog settings.
 
-## Attributes
 
-|Name |Type |Required |Description |
-|:-----------|:-----------|:-------|:-----------|
-|fog_identifier| String| Optional| Identifier of fog definition to use.|
+## Fog Appearance Properties
 
-## Example
-
-```json
-      "minecraft:fog_appearance": {
-        "fog_identifier": "minecraft:fog_the_end"
-      }
-```      
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| fog_identifier | *not set* | String | Identifier of fog definition to use |  | 

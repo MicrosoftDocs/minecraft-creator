@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Loot and Trade Table Functions
 description: "An article showcasing the available functions for Loot and Trade Tables"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/27/2025
 ---
 
 # Loot and Trade Table Functions
@@ -14,7 +15,7 @@ In this tutorial you will learn the following:
 
 > [!div class="checklist"]
 >
-> - A variety of loot and trade table functions and how they can modify an item.
+> - There is a variety of loot and trade table functions and they can modify a player's loot experience.
 
 ### Requirements
 
@@ -47,11 +48,13 @@ This function enchants a book using the algorithm for enchanting items sold by v
 }
 ```
 
-At this time, defining these parameters won't affect the enchantment received. Currently, the default values above are hard-coded. In the future, you'll be able to tweak these values to help narrow down what enchantments and enchantment levels this function results in.
+At this time, defining these parameters won't affect the enchantment received. Currently, the default values above are hard-coded. In the future, you will be able to adjust these values to help narrow down what enchantments and enchantment levels this function results in.
 
 ### enchant_random_gear
 
-Enchants an item utilizing the same algorithm used while enchanting equipment vanilla mobs spawn with. Takes a `chance` modifier to manipulate the algorithm. Note that a `chance` modifier of 1.0 doesn't mean a 100% chance that gear will become enchanted. Rather, the chance is modified based on the difficulty. On Peaceful and Easy difficulties, the chance will always be 0% no matter what. On Hard difficulty, a `chance` of 1.0 will be 100%, but the chance is roughly 2/3 that on Normal difficulty.
+Enchants an item using the same algorithm used while enchanting equipment vanilla mobs spawn with. Takes a `chance` modifier to manipulate the algorithm. Note that a `chance` modifier of 1.0 doesn't mean a 100% chance that gear will become enchanted. Rather, the chance is modified based on the difficulty. 
+
+On Peaceful and Easy difficulties, the chance will always be 0% no matter what. On Hard difficulty, a `chance` of 1.0 will be 100%, but the chance is roughly 2/3 that on Normal difficulty.
 
 ```json
 {
@@ -111,7 +114,7 @@ Applies an enchantment as if it were enchanted through an enchanting table using
 
 ### set_potion
 
-This function sets the potion type of compatible items with a potion id.
+This function sets the potion type of compatible items with a potion ID.
 
 ```json
 {
@@ -221,23 +224,21 @@ Similar to `random_block_state`, this allows you to pick a random auxiliary valu
 
 ### random_block_state
 
-This allows you to randomize the block state of the resulting item. For instance, the following example code can drop stone (0), granite (1), polished granite (2), diorite (3), polished diorite (4), or andesite (5).
+This allows you to randomize the block state of the resulting item. This example is from the trade table for a shepherd to control what color wool they give.
 
 ```json
 {
-    "type": "item",
-    "name": "minecraft:stone",
-    "weight": 1,
-    "functions": [
-        {
-          "function": "random_block_state",
-          "block_state": "stone_type",
-          "values": {
-            "min": 0,
-            "max": 5
-          }
-        }
-    ]
+  "item": "minecraft:wool",
+  "functions": [
+    {
+      "function": "random_block_state",
+      "block_state": "color",
+      "values": {
+        "min": 0,
+        "max": 15
+      }
+    }
+  ]
 }
 ```
 
@@ -249,15 +250,15 @@ Example:
 
 ```json
 "gives": [
-           {
-            "item": "minecraft:leather_helmet",
-            "quantity": 1,
-            "functions": [
-                {
-                    "function": "random_dye"
-                }
-              ]
-            }
+  {
+    "item": "minecraft:leather_helmet",
+    "quantity": 1,
+    "functions": [
+      {
+        "function": "random_dye"
+      }
+    ]
+  }
 ]
 ```
 
@@ -279,7 +280,7 @@ This function only works with a spawn egg and is used to set the entity ID of th
 }
 ```
 
-You can also inherit the entity ID of the entity that's associated with that loot table (i.e., make a rabbit drop a rabbit spawn egg) by omitting the `id`.
+You can also inherit the entity ID of the entity that's associated with that loot table (like making a rabbit drop a rabbit spawn egg) by omitting the `id`.
 
 ```json
 {
@@ -294,11 +295,14 @@ You can also inherit the entity ID of the entity that's associated with that loo
 }
 ```
 
-Be aware that if you use `set_actor_id` on a chest's loot table and omit the `id` value, it will generate the spawn egg of whatever opens the chest (the player). A player spawn egg will spawn a "player" that just stands around and throws up Molang errors (since it's trying to use the player's behavior file as well as the player's controllers). If you break a chest containing a loot table that uses an inherited id from `set_actor_id`, it drops a default spawn egg that doesn't spawn anything.
+Be aware that if you use `set_actor_id` on a chest's loot table and omit the `id` value, it will generate the spawn egg of whatever opens the chest (the player). A player spawn egg will spawn a "player" that just stands around and throws up Molang errors (because it's trying to use the player's behavior file as well as the player's controllers). 
+
+If you break a chest containing a loot table that uses an inherited ID from `set_actor_id`, it drops a default spawn egg that doesn't spawn anything.
 
 ### set_banner_details
 
-This function only works on banners and currently only supports a banner `type` of `1`. A banner `type` of `1` results in an illager banner.
+This function only works on banners and currently only supports a banner `type` of `1`. 
+A banner `type` of `1` results in an illager banner.
 
 ```json
 {
@@ -329,7 +333,7 @@ This function allows you to set the contents of a book.
             "title": "Creator Woes",
             "pages": [
                 "Once upon a time there were some marketplace partners that had to edit items using NBT. And it made them sad.",
-                "Then the Bedrock team added the ability to customize items from JSON and everyone rejoiced."
+                "Then the Bedrock team added the ability to customize items from JSON and everyone rejoiced!"
             ]
         }
     ]
@@ -376,7 +380,7 @@ Sets the quantity of items returned by setting the `count` value. It could eithe
 }
 ```
 
-Or it can be within a min/max range:
+... or it can be within a min/max range:
 
 ```json
 {
@@ -397,7 +401,7 @@ Or it can be within a min/max range:
 
 ### set_damage
 
-Sets the percentage of durability remaining for items that have durability by setting the `damage` value. 1.0 is 100% of durability remaining (undamaged) while 0.0 is no durability remaining.
+Sets the percentage of durability remaining for items that have durability by setting the `damage` value. 1.0 is 100% of durability remaining (undamaged) while 0.0 has no durability remaining.
 
 You can either set it to an exact durability like in the following example where we set the item to have 50% durability remaining.
 
@@ -415,7 +419,9 @@ You can either set it to an exact durability like in the following example where
 }
 ```
 
-Or you can define a min/max amount the game will randomly choose from. The next example sets the durability to somewhere between 30% and 90% remaining.
+You can also define a min/max range the game will use to pick a value. 
+
+This example sets the durability to somewhere between 30% and 90% remaining.
 
 ```json
 {
@@ -436,24 +442,27 @@ Or you can define a min/max amount the game will randomly choose from. The next 
 
 ### set_data
 
-Sets the data value of a block or item to an exact id. This is useful for things like returning a specific potion or specific color of item. It also allows you to return different block values, like a specific log type.The following example will result in a polished diorite block.
+Sets the data value of a block or item to an exact ID. This is useful for things like returning a specific potion or an item of a specific color.
+
+The following example will result in a particular variant of suspicious stew.
 
 ```json
-{
+  {
     "type": "item",
-    "name": "minecraft:stone",
+    "name": "minecraft:suspicious_stew",
+    "weight": 1,
     "functions": [
-        {
-            "function": "set_data",
-            "data": 4
-        }
+      {
+        "function": "set_data",
+        "data": 3
+      }
     ]
-}
+  }
 ```
 
 ### set_data_from_color_index
 
-Inherits the data value of the resulting item from the associated entity's color index. An in-game example would be a pink sheep dropping pink wool on death. If the associated entity doesn't have a color index set (or it's used inside a chest's loot table), it will always result in a data value of 0.
+Inherits the data value of the resulting item from the associated entity's color index. An in-game example would be a pink sheep dropping pink wool when you kill it or shear it. If the associated entity doesn't have a color index set (or if it's used inside a chest's loot table), it will always result in a data value of 0.
 
 ```json
 {
@@ -474,20 +483,20 @@ This function allows you to set the lore of an item. Each line within the lore o
 
 ```json
 {
-    "type": "item",
-    "name": "minecraft:stick",
-    "weight": 1,
-    "functions": [
-        {
-            "function": "set_lore",
-            "lore": [
-                "Big Stick has been handed down",
-                "for generations from King to Prince",
-                "until it went missing four score ago"
-            ]
-       }
-    ]
- }
+  "type": "item",
+  "name": "minecraft:stick",
+  "weight": 1,
+  "functions": [
+      {
+          "function": "set_lore",
+          "lore": [
+              "Big Stick has been handed down",
+              "for generations within the royal family",
+              "until it went missing four score years ago..."
+          ]
+     }
+  ]
+}
 ```
 
 ### set_name
@@ -510,7 +519,7 @@ This function allows you to set the name of an item. There's currently no suppor
 
 ## Miscellaneous
 
-The following contains functions that don't fit anywhere else.
+The following functions don't seem to fit anywhere else.
 
 ### exploration_map
 
@@ -530,7 +539,7 @@ Transforms a normal map into a treasure map that marks the location of hidden tr
   }
 ```
 
-You could currently choose from the following destinations:
+These are the current destinations:
 
 |Destination|
 |:---|
@@ -570,20 +579,31 @@ It's advisable to always use `set_name` to give the chest a name when using `fil
 
 ### furnace_smelt (loot table only)
 
-If the item to return has a smelted crafting recipe and the loot table is triggered by an entity killed with fire (Fire Aspect, flint and steel, lava, etc), the result will be the smelted version of the item. Due to these requirements, this function does not work in villager trades or with chests. This function only works if used in conjunction with the `minecraft:loot` behavior.
+The `"furnace_smelt"` function can be called on the loot dropping from an entity. What this means is, if an entity is killed with fire (like if a player is hunting chickens with a sword that has a fire aspect enchantment), the dropped loot will be the cooked version of the item - as if you cooked the chicken in a furnace. 
 
-The following example will drop a stone block if the entity is killed by fire or cobblestone if not.
+Logically, this function will not work in villager trades or with chests. 
+
+This is the part of the chicken loot table code that shows how the game calls the furnace_smelt function on the loot being dropped. This would be triggered by the enchantment on the weapon used by the player to kill the chicken.
 
 ```json
 {
-    "type": "item",
-    "name": "minecraft:cobblestone",
-    "weight": 1,
-    "functions": [
+  "type": "item",
+  "name": "minecraft:chicken",
+  "weight": 1,
+  "functions": [
+    {
+      "function": "furnace_smelt",
+      "conditions": [
         {
-            "function": "furnace_smelt"
+          "condition": "entity_properties",
+          "entity": "this",
+          "properties": {
+          "on_fire": true
+          }
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 
@@ -593,16 +613,16 @@ This function affects the type of items a fisherman wants to trade for other ite
 
 ```json
 "wants": [
-            {
-                "item": "minecraft:boat",
-                "quantity": 1,
-                "price_multiplier": 0.05,
-                "functions": [
-                    {
-                      "function": "trader_material_type"
-                    }
-                ]
-            }
+  {
+    "item": "minecraft:boat",
+    "quantity": 1,
+    "price_multiplier": 0.05,
+    "functions": [
+      {
+        "function": "trader_material_type"
+      }
+     ]
+  }
 
 ```
 

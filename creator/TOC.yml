@@ -242,6 +242,8 @@
           href: Documents/Structures/JigsawTutorial.md
         - name: Introduction to Features
           href: Reference/Content/FeaturesReference/Examples/FeaturesIntroduction.md
+        - name: Understanding Feature Types
+          href: Documents/FeaturesTaxonomy.md
         - name: A Simple Feature Tutorial
           href: Documents/FeaturesTutorial_1.md
         - name: A More Complex Feature Tutorial
@@ -262,6 +264,10 @@
             href: Documents/CameraSystem/FreeCameraScriptAPITutorial.md
           - name: Third Person Camera Preset
             href: Documents/CameraSystem/CameraPresetThirdPerson.md
+          - name: Introduction to Aim Assist
+            href: Documents/CameraSystem/IntroToAimAssist.md
+          - name: Aim Assist Presets
+            href: Documents/CameraSystem/AimAssistPresets.md
     - name: Entities and Particles
       items:
         - name: Creating New Entity Types
@@ -332,8 +338,12 @@
           href: Reference/Content/blockreference/Examples/BlockStateAndTraitListings.md
         - name: Create a Village with Structure Blocks
           href: Documents/Structures/IntroductionToStructureBlocks.md
+        - name: Delete, Rotate, and Take a Core Sample with Structure Blocks
+          href: Documents/Structures/MoreFunWithStructureBlocks.md
         - name: Getting Started with Command Blocks
           href: Documents/CommandBlocks.md
+        - name: Use Command Blocks to Have a Snowball Fight
+          href: Documents/CommandBlockSnowballFight.md
         - name: Building Custom Blocks
           items: 
           - name: Block Traits
@@ -461,7 +471,33 @@
         - name: Pack Manifest JSON (Behavior or Resource or Skin)
           href: Reference/Content/AddonsReference/PackManifest.md
         - name: Biome JSON
-          href: Documents/Biomes/BiomeOverview.md
+          items:
+          - name: Biomes Overview
+            href: Documents/Biomes/BiomeOverview.md
+          - name: Capped Surface Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_capped_surface.md
+          - name: Climate Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_climate.md
+          - name: Creature Spawn Probability Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_creature_spawn_probability.md
+          - name: Frozen Ocean Surface Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_frozen_ocean_surface.md
+          - name: Mesa Surface Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_mesa_surface.md
+          - name: Mountain Parameters Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_mountain_parameters.md
+          - name: Multinoise Generation Rules Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_multinoise_generation_rules.md
+          - name: Overworld Generation Rules Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_overworld_generation_rules.md
+          - name: Surface Material Adjustments Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_surface_material_adjustments.md
+          - name: Surface Parameters Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_surface_parameters.md
+          - name: Swamp Surface Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_swamp_surface.md
+          - name: Tags Component
+            href: Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_tags.md
         - name: Block JSON
           items:
           - name: Block Definitions
@@ -603,7 +639,23 @@
           - name: Animation Upgrades 
             href: Documents/Animations/AnimationUpgrade.md
         - name: Client Biome JSON
-          href: Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md
+          items: 
+          - name: Overview
+            href: Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md
+          - name: Ambient Sounds Component 
+            href: Reference/Content/ClientBiomesReference/Examples/Components/minecraftClientBiomes_ambient_sounds.md
+          - name: Biome Music Component 
+            href: Reference/Content/ClientBiomesReference/Examples/Components/minecraftClientBiomes_biome_music.md
+          - name: Fog Appearance Component 
+            href: Reference/Content/ClientBiomesReference/Examples/Components/minecraftClientBiomes_fog_appearance.md
+          - name: Foliage Appearance Component 
+            href: Reference/Content/ClientBiomesReference/Examples/Components/minecraftClientBiomes_foliage_appearance.md
+          - name: Grass Appearance Component 
+            href: Reference/Content/ClientBiomesReference/Examples/Components/minecraftClientBiomes_grass_appearance.md
+          - name: Sky Color Component 
+            href: Reference/Content/ClientBiomesReference/Examples/Components/minecraftClientBiomes_sky_color.md
+          - name: Water Appearance Component 
+            href: Reference/Content/ClientBiomesReference/Examples/Components/minecraftClientBiomes_water_appearance.md
         - name: Fog JSON
           href: Reference/Content/FogsReference/fogs.md
         - name: Particle JSON
