@@ -33,6 +33,3 @@ Creates a new trigger.
 - **eventName**: *string*
 
 **Returns** [*Trigger*](Trigger.md)
-  
-Notes:
-- This function can't be called in read-only mode.

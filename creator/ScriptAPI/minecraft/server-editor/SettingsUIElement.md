@@ -45,6 +45,3 @@ new SettingsUIElement(name: string, initialValue: boolean | number | string | mi
 - **options**?: [*SettingsUIElementOptions*](SettingsUIElementOptions.md) = `null`
 
 **Returns** [*SettingsUIElement*](SettingsUIElement.md)
-  
-Notes:
-- This function can't be called in read-only mode.
