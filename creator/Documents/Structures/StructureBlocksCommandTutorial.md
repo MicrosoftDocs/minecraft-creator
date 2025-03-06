@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Structure Blocks and the Structure Command Tutorial
 description: "A tutorial on using Structure Blocks and the Structure command in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/28/2025
 ---
 
 # Structure Blocks and the Structure Command Tutorial
@@ -36,7 +37,7 @@ In creative mode, build a structure smaller than 64 x 384 x 64 blocks.
 
 A log cabin is included in the [Structure Blocks Samples Behavior Pack](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md) as `mystructure:house2`.
 
-![A structure built to look like a log cabin](Media/house2.png)
+![A structure built to look like a log cabin](../Media/StructureBlock/house2.png)
 
 Let's use this as a base to build a village.
 
@@ -55,7 +56,7 @@ Now, the structure is saved and can be placed in your Minecraft world.
 
 Let's begin building a village by adding another log cabin nearby.
 
-![The structure block load screen with a log cabin](Media/loadscreen.png)
+![The structure block load screen with a log cabin](../Media/StructureBlock/loadscreen.png)
 
 1. Put a structure block on the ground.
 1. Load your structure name. We're using `mystructure:house2`.
@@ -67,7 +68,7 @@ Let's begin building a village by adding another log cabin nearby.
    - Don't show bounding box so that our house loads in without it.
 1. Click Load.
 
-![The log cabin on a small hill](Media/house2move.png)
+![The log cabin on a small hill](../Media/StructureBlock/house2move.png)
 
 We'll need another set of stairs but otherwise it's looking good! Now you can place as many copies of this log cabin as you'd like to create a village. You can also customize the look of a village by saving different sections of this building as separate structures (like roofs, eaves, and such) and then varying how they're loaded in.
 
@@ -94,7 +95,7 @@ This command deletes the saved structure:
 
 `structure delete <name: string>`
 
-![Image of chat open with the structure command entered](Media/structurecommand.png)
+![Image of chat open with the structure command entered](../Media/StructureBlock/structurecommand.png)
 
 Let's use the `/structure` command to save and load a structure.
 
@@ -114,7 +115,7 @@ Great! Now we can build a village more quickly than before.
 
 ## Load a Structure with a Command Block and /structure Command
 
-![A statue loading in block by block in Adventure mode](Media/structureblockbyblock.png)
+![A statue loading in block by block in Adventure mode](../Media/StructureBlock/structureblockbyblock.png)
 
 Let's say we want to load a statue in Adventure mode, using an animation. This could be at the end of an epic adventure map to reward a player's persistence.
 Or maybe you want to use this as a way to give clues during gameplay.
