@@ -36,18 +36,21 @@ Suppose you built a structure and then realized it's facing the wrong direction.
    ![Image of the saved structure pointing at a distant village like we want it to.](../Media/StructureBlock/rotated_arrow_structure.png)
 
    Now the structure is pointing the correct direction.
+   
 
 ## Load a Group of Mobs
 
-You can use a structure block to select, save, and load just a group of mobs, like if you want to fill someone's base with chickens or simulate a Trojan Horse scenario.
+You can use a structure block to select, save, and load just a group of mobs. Basically, you create a structure that *has no blocks* - it's just the mobs inside (and the air blocks around them.)
 
 1. Start by selecting a structure that will contain your spawned-in mobs.
 
-1. Spawn them in with eggs or by summoning them with a command.
+1. Spawn them in the usual way - with eggs or by summoning them with a command.
 
-1. Save only the entities with a descriptive name.
+1. Select only the blocks containing the mobs. It will look like a room without walls.
 
    ![Image of a selected group of raiders](../Media/StructureBlock/save_raiders_only.png)
+
+1. Save the selection like you would any other structure.
 
 1. Use a **load** block to bring in the mobs.
 
