@@ -140,7 +140,7 @@ After the structure is imported, and the structure block UI looks similar to the
 
 This is what it will look like when the Load button is clicked:
 
-![Load Mode window with imported file ready to be loaded into the world.](Media/StructureBlock/importButton4.png)
+![Load Mode window with imported file ready to be loaded into the world.](../Media/StructureBlock/importButton4.png)
 
 Here are some other important notes about importing a structure:
 
