@@ -36,11 +36,11 @@ Suppose you built a structure and then realized it's facing the wrong direction.
    ![Image of the saved structure pointing at a distant village like we want it to.](../Media/StructureBlock/rotated_arrow_structure.png)
 
    Now the structure is pointing the correct direction.
-   
 
-## Load a Group of Mobs
 
-You can use a structure block to select, save, and load just a group of mobs. Basically, you create a structure that *has no blocks* - it's just the mobs inside (and the air blocks around them.)
+## Load a Group of Mobs - Without the Structure
+
+You can use a structure block to select, save, and load just a group of mobs. Basically, you create a structure that *has no blocks* - it's just the mobs inside and the air blocks around them.
 
 1. Start by selecting a structure that will contain your spawned-in mobs.
 
