@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Structure Blocks and the Structure Command Tutorial
 description: "A tutorial on using Structure Blocks and the Structure command in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/28/2025
 ---
 
 # Structure Blocks and the Structure Command Tutorial
