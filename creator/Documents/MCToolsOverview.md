@@ -27,7 +27,7 @@ Once you've started your project, you'll see an editor that shows top-level file
 
 Command line tools let you access the power of creator tools from a command line. You can also integrate this into broader processes or project-level tasks.
 
-Command line tools are available via the [@minecraft/creator-tools](https://aka.ms/mctnpm) page on NPM. To install via NPM, install [nodejs tools](https://nodejs.org/) and then run `npm -i @minecraft/creator-tools` from a command line. See the [NPM page](https://aka.ms/mctnpm) for more documentation and sample command lines.
+Command line tools are available via the [@minecraft/creator-tools](https://aka.ms/mctnpm) page on NPM. To install via NPM, install [nodejs tools](https://nodejs.org/) and then run `npm i @minecraft/creator-tools` from a command line. See the [NPM page](https://aka.ms/mctnpm) for more documentation and sample command lines.
 
 
 ## Minecraft Creator Tools - what it does
