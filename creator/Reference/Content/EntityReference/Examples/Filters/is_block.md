@@ -16,9 +16,10 @@ Returns true when the block has the given name.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | String | (Required) The Family name to look for |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bee: `"!="`, Fox: `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Bee: `"block"` | 
+| test | *not set* | String |  | Bee: `"is_block"` | 
+| value | *not set* | String | (Required) The Family name to look for | Bee: `"minecraft:bee_nest"`, `"minecraft:beehive"`, `"minecraft:sweet_berry_bush"` | 
 
 ### Operator choices
 
@@ -66,31 +67,53 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/0/: 
 
 ```json
-{"test":"is_block","subject":"block","value":"minecraft:bee_nest"}
+{
+  "test": "is_block",
+  "subject": "block",
+  "value": "minecraft:bee_nest"
+}
 ```
 
 At /minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/1/: 
 
 ```json
-{"test":"is_block","subject":"block","value":"minecraft:beehive"}
+{
+  "test": "is_block",
+  "subject": "block",
+  "value": "minecraft:beehive"
+}
 ```
 
 At /minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/0/: 
 
 ```json
-{"test":"is_block","subject":"block","operator":"!=","value":"minecraft:bee_nest"}
+{
+  "test": "is_block",
+  "subject": "block",
+  "operator": "!=",
+  "value": "minecraft:bee_nest"
+}
 ```
 
 At /minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/1/: 
 
 ```json
-{"test":"is_block","subject":"block","operator":"!=","value":"minecraft:beehive"}
+{
+  "test": "is_block",
+  "subject": "block",
+  "operator": "!=",
+  "value": "minecraft:beehive"
+}
 ```
 
 At /minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/: 
 
 ```json
-{"test":"is_block","subject":"block","value":"minecraft:sweet_berry_bush"}
+{
+  "test": "is_block",
+  "subject": "block",
+  "value": "minecraft:sweet_berry_bush"
+}
 ```
 
 #### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
@@ -98,5 +121,10 @@ At /minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/fil
 At /minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/stuck_blocks/: 
 
 ```json
-{"test":"is_block","subject":"block","operator":"==","value":"snow_layer"}
+{
+  "test": "is_block",
+  "subject": "block",
+  "operator": "==",
+  "value": "snow_layer"
+}
 ```

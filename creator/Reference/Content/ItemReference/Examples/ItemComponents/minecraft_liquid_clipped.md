@@ -11,6 +11,10 @@ ms.date: 02/11/2025
 
 The liquid_clipped component determines whether the item interacts with liquid blocks on use.
 
+## Alternate Simple Representations
+
+This item can also be represented as a `Boolean true/false`.
+
 
 ## Liquid Clipped Properties
 

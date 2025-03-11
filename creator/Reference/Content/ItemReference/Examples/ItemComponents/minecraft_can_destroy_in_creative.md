@@ -11,6 +11,10 @@ ms.date: 02/11/2025
 
 The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode.
 
+## Alternate Simple Representations
+
+This item can also be represented as a `Boolean true/false`.
+
 
 ## Can Destroy In Creative Properties
 

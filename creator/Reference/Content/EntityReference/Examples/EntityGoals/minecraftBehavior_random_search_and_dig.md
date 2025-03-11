@@ -18,7 +18,7 @@ Allows this entity to locate a random target block that it can path find to. Onc
 |:----------|:-------------|:----|:-----------|:------------- |
 | cooldown_range | *not set* | Range of integers | Goal cooldown range in seconds. |  | 
 | digging_duration_range | *not set* | Range of integers | Digging duration in seconds. | Sniffer: `[8,10]` | 
-| find_valid_position_retries | 5 | Decimal number | Amount of retries to find a valid target position within search range. | Sniffer: `5` | 
+| find_valid_position_retries | 5 | Integer number | Amount of retries to find a valid target position within search range. | Sniffer: `5` | 
 | goal_radius | 1.5 | Decimal number | Distance in blocks within the entity to considers it has reached it's target position. | Sniffer: `2` | 
 | item_table | *not set* | String | File path relative to the resource pack root for items to spawn list (loot table format). | Sniffer: `"loot_tables/gameplay/entities/sniffer_seeds.json"` | 
 | on_digging_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when the goal ends searching has begins digging. | Sniffer: `{"event":"on_digging_start","target":"self"}` | 
@@ -28,8 +28,8 @@ Allows this entity to locate a random target block that it can path find to. Onc
 | on_searching_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when the goal starts searching. | Sniffer: `{"event":"on_searching_start","target":"self"}` | 
 | on_success | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when searching and digging has ended. | Sniffer: `{"event":"on_search_and_digging_success","target":"self"}` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Sniffer: `5` | 
-| search_range_xz | 10 | Decimal number | Width and length of the volume around the entity used to find a valid target position | Sniffer: `20` | 
-| search_range_y | 7 | Decimal number | Height of the volume around the entity used to find a valid target position | Sniffer: `3` | 
+| search_range_xz | 10 | Integer number | Width and length of the volume around the entity used to find a valid target position | Sniffer: `20` | 
+| search_range_y | 7 | Integer number | Height of the volume around the entity used to find a valid target position | Sniffer: `3` | 
 | spawn_item_after_seconds | 0 | Decimal number | Digging duration before spawning item in seconds. | Sniffer: `6` | 
 | spawn_item_pos_offset | 0 | Decimal number | Distance to offset the item's spawn location in the direction the mob is facing. | Sniffer: `2.25` | 
 | speed_multiplier | 1 | Decimal number | Searching movement speed multiplier. | Sniffer: `1.25` | 

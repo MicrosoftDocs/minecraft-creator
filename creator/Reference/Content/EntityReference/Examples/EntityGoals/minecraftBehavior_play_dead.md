@@ -16,7 +16,7 @@ Allows this entity to pretend to be dead to avoid being targeted by attackers.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| apply_regeneration | true | Boolean true/false | Whether the mob will receive the regeneration effect while playing dead. | Axolotl: `true` | 
+| apply_regeneration | false | Boolean true/false | Whether the mob will receive the regeneration effect while playing dead. | Axolotl: `true` | 
 | damage_sources | all | Array of strings | The list of Entity Damage Sources that will cause this mob to play dead. | Axolotl: `["contact","entity_attack","entity_explosion","magic","projectile","thorns","wither"]` | 
 | duration | 1 | Decimal number | The amount of time the mob will remain playing dead (in seconds). | Axolotl: `10` | 
 | filters | *not set* | Minecraft filter | The list of other triggers that are required for the mob to activate play dead | Axolotl: `{"test":"in_water","operator":"==","value":true}` | 

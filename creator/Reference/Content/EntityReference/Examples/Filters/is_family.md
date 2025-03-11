@@ -16,9 +16,10 @@ Returns true when the subject entity is a member of the named family.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | String | (Required) The Family name to look for |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bee: `"!="`, Fox: `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Arrow: `"other"`, Bee: `"self"`, Breeze: `"damager"` | 
+| test | *not set* | String |  | Arrow: `"is_family"` | 
+| value | *not set* | String | (Required) The Family name to look for | Arrow: `"player"`, `"pillager"`, Bee: `"pacified"` | 
 
 ### Operator choices
 
@@ -66,13 +67,21 @@ At Short (using Defaults)..:
 At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/: 
 
 ```json
-{"test":"is_family","subject":"other","value":"player"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "value": "player"
+}
 ```
 
 At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/: 
 
 ```json
-{"test":"is_family","subject":"other","value":"pillager"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "value": "pillager"
+}
 ```
 
 #### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
@@ -80,13 +89,22 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/:
 At /minecraft:entity/component_groups/angry_bee/minecraft:angry/broadcast_filters/: 
 
 ```json
-{"test":"is_family","operator":"!=","value":"pacified"}
+{
+  "test": "is_family",
+  "operator": "!=",
+  "value": "pacified"
+}
 ```
 
 At /minecraft:entity/events/hive_destroyed/sequence/0/filters/: 
 
 ```json
-{"test":"is_family","subject":"self","operator":"!=","value":"pacified"}
+{
+  "test": "is_family",
+  "subject": "self",
+  "operator": "!=",
+  "value": "pacified"
+}
 ```
 
 #### [Bogged](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bogged.json)
@@ -94,25 +112,42 @@ At /minecraft:entity/events/hive_destroyed/sequence/0/filters/:
 At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/: 
 
 ```json
-{"test":"is_family","subject":"other","operator":"!=","value":"breeze"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "operator": "!=",
+  "value": "breeze"
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/: 
 
 ```json
-{"test":"is_family","subject":"other","value":"irongolem"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "value": "irongolem"
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/2/filters/all_of/0/: 
 
 ```json
-{"test":"is_family","subject":"other","value":"baby_turtle"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "value": "baby_turtle"
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/: 
 
 ```json
-{"test":"is_family","subject":"other","value":"wolf"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "value": "wolf"
+}
 ```
 
 #### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
@@ -120,47 +155,87 @@ At /minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0
 At /minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/: 
 
 ```json
-{"test":"is_family","subject":"damager","operator":"!=","value":"wind_charge"}
+{
+  "test": "is_family",
+  "subject": "damager",
+  "operator": "!=",
+  "value": "wind_charge"
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/0/: 
 
 ```json
-{"test":"is_family","subject":"other","operator":"!=","value":"skeleton"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "operator": "!=",
+  "value": "skeleton"
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/1/: 
 
 ```json
-{"test":"is_family","subject":"other","operator":"!=","value":"stray"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "operator": "!=",
+  "value": "stray"
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/2/: 
 
 ```json
-{"test":"is_family","subject":"other","operator":"!=","value":"zombie"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "operator": "!=",
+  "value": "zombie"
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/3/: 
 
 ```json
-{"test":"is_family","subject":"other","operator":"!=","value":"husk"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "operator": "!=",
+  "value": "husk"
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/4/: 
 
 ```json
-{"test":"is_family","subject":"other","operator":"!=","value":"spider"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "operator": "!=",
+  "value": "spider"
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/5/: 
 
 ```json
-{"test":"is_family","subject":"other","operator":"!=","value":"cavespider"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "operator": "!=",
+  "value": "cavespider"
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/all_of/6/: 
 
 ```json
-{"test":"is_family","subject":"other","operator":"!=","value":"slime"}
+{
+  "test": "is_family",
+  "subject": "other",
+  "operator": "!=",
+  "value": "slime"
+}
 ```

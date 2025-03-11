@@ -18,7 +18,8 @@ Tests whether the Subject is currently in the named biome.
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | [Value](#value-choices) choices | (Required) The Biome type to test |  | 
+| test | *not set* | String |  | Cave Spider: `"is_biome"` | 
+| value | *not set* | [Value](#value-choices) choices | (Required) The Biome type to test | Cave Spider: `"the_nether"`, Fishing Hook: `"jungle"`, Rabbit: `"desert"` | 
 
 ### Operator choices
 
@@ -88,14 +89,20 @@ At Short (using Defaults)..:
 
 
 ```json
-{"test":"is_biome","value":"the_nether"}
+{
+  "test": "is_biome",
+  "value": "the_nether"
+}
 ```
 
 #### [Fishing Hook](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fishing_hook.json)
 
 
 ```json
-{"test":"is_biome","value":"jungle"}
+{
+  "test": "is_biome",
+  "value": "jungle"
+}
 ```
 
 #### [Rabbit](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/rabbit.json)
@@ -103,5 +110,8 @@ At Short (using Defaults)..:
 At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/: 
 
 ```json
-{"test":"is_biome","value":"desert"}
+{
+  "test": "is_biome",
+  "value": "desert"
+}
 ```

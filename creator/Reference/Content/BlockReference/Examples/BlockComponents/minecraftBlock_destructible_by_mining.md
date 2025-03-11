@@ -31,8 +31,19 @@ Optional array of objects to describe item specific block destroy speeds, each o
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| destroy_speed | *not set* | Decimal number | Required. <br>A destroy speed applied while using the defined 'item'. |  | 
-| item | *not set* | Array of strings | Required. <br>An ItemDescriptor filtering for the item used while mining. |  | 
+| destroy_speed | *not set* | Decimal number | Required. A destroy speed applied while using the defined 'item'. |  | 
+| item | *not set* | Array of [Item](#item-item-type) items | Required. A filter for the item used while mining. |  | 
+| item (Alternate 1) | *not set* | String | An item tag that is usable for the item. |  | 
+
+## Item item type
+Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.
+
+
+#### Item Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| tags | *not set* | String |  |  | 
 
 ## Samples
 

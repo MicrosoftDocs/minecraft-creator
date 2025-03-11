@@ -11,6 +11,10 @@ ms.date: 02/11/2025
 
 The damage component determines how much extra damage the item does on attack.
 
+## Alternate Simple Representations
+
+This item can also be represented as a `Integer number`.
+
 
 ## Damage Properties
 

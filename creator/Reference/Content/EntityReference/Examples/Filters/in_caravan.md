@@ -22,6 +22,7 @@ Returns true if the subject entity is in a caravan.
 | minecraft:damage_sensor | *not set* | [Damage Sensor](#damage-sensor-item-type) item |  | Llama: `{"triggers":{"cause":"all","deals_damage":true}}` | 
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| test | *not set* | String |  | Llama: `"in_caravan"` | 
 | value | true | Boolean true/false | (Optional) true or false. |  | 
 
 ## Damage Sensor item type
@@ -91,5 +92,8 @@ At /minecraft:entity/component_groups/minecraft:in_caravan/:
 At /minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/: 
 
 ```json
-{"test":"in_caravan","value":false}
+{
+  "test": "in_caravan",
+  "value": false
+}
 ```

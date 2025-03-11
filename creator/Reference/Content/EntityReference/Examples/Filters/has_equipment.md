@@ -16,10 +16,11 @@ Tests for the presence of a named item in the designated slot of the subject ent
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | any | [Domain](#domain-choices) choices | (Optional) The equipment location to test |  | 
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | String | (Required) The item name to look for |  | 
+| domain | any | [Domain](#domain-choices) choices | (Optional) The equipment location to test | Enderman: `"head"`, Pig: `"hand"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Enderman: `"not"` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Enderman: `"other"` | 
+| test | *not set* | String |  | Enderman: `"has_equipment"` | 
+| value | *not set* | String | (Required) The item name to look for | Enderman: `"carved_pumpkin"`, Pig: `"saddle"` | 
 
 ### Domain choices
 
@@ -80,12 +81,23 @@ At Short (using Defaults)..:
 
 
 ```json
-{"test":"has_equipment","domain":"head","subject":"other","operator":"not","value":"carved_pumpkin"}
+{
+  "test": "has_equipment",
+  "domain": "head",
+  "subject": "other",
+  "operator": "not",
+  "value": "carved_pumpkin"
+}
 ```
 
 #### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
 
 
 ```json
-{"test":"has_equipment","subject":"other","domain":"hand","value":"saddle"}
+{
+  "test": "has_equipment",
+  "subject": "other",
+  "domain": "hand",
+  "value": "saddle"
+}
 ```

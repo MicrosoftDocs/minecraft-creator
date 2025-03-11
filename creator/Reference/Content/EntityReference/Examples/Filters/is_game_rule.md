@@ -16,9 +16,10 @@ Tests whether a named game rule is active.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | *not set* | String | (Required) The Game Rule to test. |  | 
+| domain | *not set* | String | (Required) The Game Rule to test. | Ender Pearl: `"domobspawning"` | 
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| test | *not set* | String |  | Ender Pearl: `"is_game_rule"` | 
 | value | true | Boolean true/false | (Optional) true or false. |  | 
 
 ### Operator choices
@@ -66,5 +67,9 @@ At Short (using Defaults)..:
 
 
 ```json
-{"test":"is_game_rule","domain":"domobspawning","value":false}
+{
+  "test": "is_game_rule",
+  "domain": "domobspawning",
+  "value": false
+}
 ```

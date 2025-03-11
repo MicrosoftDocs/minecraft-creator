@@ -16,9 +16,10 @@ Tests the current difficulty level of the game.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Villager V2: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | [Value](#value-choices) choices | (Required) The game's difficulty level to test |  | 
+| test | *not set* | String |  | Arrow: `"is_difficulty"` | 
+| value | *not set* | [Value](#value-choices) choices | (Required) The game's difficulty level to test | Arrow: `"hard"`, Bee: `"easy"`, `"normal"` | 
 
 ### Operator choices
 
@@ -74,7 +75,10 @@ At Short (using Defaults)..:
 
 
 ```json
-{"test":"is_difficulty","value":"hard"}
+{
+  "test": "is_difficulty",
+  "value": "hard"
+}
 ```
 
 #### [Bee](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/bee.json)
@@ -82,13 +86,19 @@ At Short (using Defaults)..:
 At /minecraft:entity/events/attacked/sequence/1/filters/: 
 
 ```json
-{"test":"is_difficulty","value":"easy"}
+{
+  "test": "is_difficulty",
+  "value": "easy"
+}
 ```
 
 At /minecraft:entity/events/attacked/sequence/2/filters/: 
 
 ```json
-{"test":"is_difficulty","value":"normal"}
+{
+  "test": "is_difficulty",
+  "value": "normal"
+}
 ```
 
 #### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
@@ -96,5 +106,9 @@ At /minecraft:entity/events/attacked/sequence/2/filters/:
 At /minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/1/: 
 
 ```json
-{"test":"is_difficulty","operator":"!=","value":"peaceful"}
+{
+  "test": "is_difficulty",
+  "operator": "!=",
+  "value": "peaceful"
+}
 ```

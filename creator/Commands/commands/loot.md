@@ -116,12 +116,15 @@ Replace `loot` from a `block` at a `position` from `killing` an `entity` using a
 
 Replace `loot` from a `block` at a `position` into a `slotID` in a specified amount, from `mining` a block at `position` using a `tool`.
 
-### Replace loot from block, mining a block with tool.
+### Replace loot at a slot in a container block with a count, using the results that come from mining a block with tool
 `/loot replace block <position: x y z> slot.container <slotId: int> <count: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
 
-Replace `loot` from a `block` at a `position` from `mining` a block at `position` using a `tool`.
+Replace `loot` in a continer `block` (e.g., a chest) at a `slotId` with an overriden `count`, with the results from `mining` a block at `position` using a `tool`.
 
-### `/loot replace block <position: x y z> slot.container <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+### Replace loot at a slot in a container block, using the results that come from mining a block with tool
+`/loot replace block <position: x y z> slot.container <slotId: int> mine <TargetBlockPosition: x y z> [<tool>|mainhand|offhand: Tool]`
+
+Replace `loot` in a continer `block` (e.g., a chest) at a `slotId`, with the results from `mining` a block at `position` using a `tool`.
 
 ## Arguments
 - `<tool>|mainhand|offhand`: Tool
@@ -898,7 +901,6 @@ Globe Banner Pattern
 - `minecraft:hard_brown_stained_glass_pane`
 - `minecraft:gold_nugget`
 Gold Nugget
-- `minecraft:short_dry_grass`
 - `minecraft:brick`
 Brick
 - `minecraft:netherite_ingot`
@@ -1111,7 +1113,6 @@ Cooked Mutton
 Fermented Spider Eye
 - `minecraft:blaze_powder`
 Blaze Powder
-- `minecraft:tall_dry_grass`
 - `minecraft:magma_cream`
 Magma Cream
 - `minecraft:light_gray_terracotta`
@@ -1681,6 +1682,9 @@ Double Stone Block Slab
 - `minecraft:archer_pottery_sherd`
 - `minecraft:stone_brick_double_slab`
 - `minecraft:blade_pottery_sherd`
+- `minecraft:gray_candle_cake`
+Gray Candle Cake
+- `minecraft:light_block_5`
 - `minecraft:danger_pottery_sherd`
 - `minecraft:flow_pottery_sherd`
 - `minecraft:friend_pottery_sherd`
@@ -1796,10 +1800,6 @@ Normal Stone Stairs
 - `minecraft:double_stone_block_slab2`
 Double Stone Block Slab 2
 - `minecraft:resin_clump`
-- `minecraft:blue_egg`
-- `minecraft:conduit`
-Conduit
-- `minecraft:brown_egg`
 - `minecraft:nether_brick_stairs`
 Nether Brick Stairs
 - `minecraft:white_wool`
@@ -2067,9 +2067,10 @@ Anvil
 Big Dripleaf
 - `minecraft:deprecated_anvil`
 - `minecraft:infested_stone`
+- `minecraft:conduit`
+Conduit
 - `minecraft:prismarine`
 Prismarine
-- `minecraft:leaf_litter`
 - `minecraft:dark_prismarine`
 - `minecraft:gray_concrete`
 - `minecraft:light_gray_concrete`
@@ -2088,7 +2089,6 @@ Lime Candle
 - `minecraft:pink_concrete_powder`
 - `minecraft:spruce_trapdoor`
 Spruce Trapdoor
-- `minecraft:firefly_bush`
 - `minecraft:light_gray_concrete_powder`
 - `minecraft:purple_concrete_powder`
 - `minecraft:blue_concrete_powder`
@@ -2205,9 +2205,6 @@ Gravel
 - `minecraft:light_block_2`
 - `minecraft:light_block_3`
 - `minecraft:light_block_4`
-- `minecraft:gray_candle_cake`
-Gray Candle Cake
-- `minecraft:light_block_5`
 - `minecraft:light_block_6`
 - `minecraft:moss_block`
 Moss Block
@@ -2491,7 +2488,6 @@ Stripped Dark Oak Log
 Lime Glazed Terracotta
 - `minecraft:trapdoor`
 Trapdoor
-- `minecraft:cactus_flower`
 - `minecraft:bamboo_planks`
 - `minecraft:mossy_cobblestone`
 Mossy Cobblestone
@@ -2707,7 +2703,6 @@ Nether Brick Fence
 - `minecraft:pale_oak_button`
 - `minecraft:crimson_hyphae`
 Crimson Hyphae
-- `minecraft:wildflowers`
 - `minecraft:polished_blackstone_stairs`
 Polished Blackstone Stairs
 - `minecraft:small_dripleaf_block`
@@ -2959,7 +2954,6 @@ Mud Bricks
 - `minecraft:birch_wall_sign`
 Birch Wall Sign
 - `minecraft:bamboo_wall_sign`
-- `minecraft:bush`
 - `minecraft:bamboo_sapling`
 Bamboo Sapling
 - `minecraft:standing_banner`

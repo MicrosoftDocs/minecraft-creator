@@ -11,6 +11,10 @@ ms.date: 02/11/2025
 
 Allows this item to be used as fuel in a furnace to 'cook' other items.
 
+## Alternate Simple Representations
+
+This item can also be represented as a `Decimal number`.
+
 
 ## Fuel Properties
 

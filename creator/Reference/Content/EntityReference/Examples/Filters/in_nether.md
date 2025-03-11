@@ -19,9 +19,10 @@ Returns true when the subject entity is in Nether.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Hoglin: `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Hoglin: `"self"` | 
+| test | *not set* | String |  | Hoglin: `"in_nether"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Hoglin: `true` | 
 
 ### Operator choices
 
@@ -69,11 +70,21 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/zombification_sensor/minecraft:environment_sensor/triggers/filters/: 
 
 ```json
-{"test":"in_nether","subject":"self","operator":"==","value":false}
+{
+  "test": "in_nether",
+  "subject": "self",
+  "operator": "==",
+  "value": false
+}
 ```
 
 At /minecraft:entity/component_groups/start_zombification/minecraft:environment_sensor/triggers/filters/: 
 
 ```json
-{"test":"in_nether","subject":"self","operator":"==","value":true}
+{
+  "test": "in_nether",
+  "subject": "self",
+  "operator": "==",
+  "value": true
+}
 ```

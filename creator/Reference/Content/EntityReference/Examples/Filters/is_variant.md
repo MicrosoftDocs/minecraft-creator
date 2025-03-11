@@ -16,9 +16,10 @@ Returns true if the subject entity is the variant number provided.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | Integer number | (Required) An integer value. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Boat: `"!="`, `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Chest Boat: `"self"` | 
+| test | *not set* | String |  | Boat: `"is_variant"` | 
+| value | *not set* | Integer number | (Required) An integer value. | Boat: `7`, Panda: `3`, `6` | 
 
 ### Operator choices
 
@@ -66,13 +67,21 @@ At Short (using Defaults)..:
 At /minecraft:entity/events/minecraft:add_can_ride/sequence/0/filters/: 
 
 ```json
-{"test":"is_variant","operator":"!=","value":7}
+{
+  "test": "is_variant",
+  "operator": "!=",
+  "value": 7
+}
 ```
 
 At /minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/: 
 
 ```json
-{"test":"is_variant","operator":"==","value":7}
+{
+  "test": "is_variant",
+  "operator": "==",
+  "value": 7
+}
 ```
 
 #### [Chest Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chest_boat.json)
@@ -80,13 +89,23 @@ At /minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/:
 At /minecraft:entity/events/minecraft:add_can_ride/sequence/0/filters/: 
 
 ```json
-{"test":"is_variant","subject":"self","operator":"!=","value":7}
+{
+  "test": "is_variant",
+  "subject": "self",
+  "operator": "!=",
+  "value": 7
+}
 ```
 
 At /minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/: 
 
 ```json
-{"test":"is_variant","subject":"self","operator":"==","value":7}
+{
+  "test": "is_variant",
+  "subject": "self",
+  "operator": "==",
+  "value": 7
+}
 ```
 
 #### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
@@ -94,11 +113,21 @@ At /minecraft:entity/events/minecraft:add_can_ride/sequence/1/filters/:
 At /minecraft:entity/events/minecraft:ageable_grow_up/sequence/2/filters/: 
 
 ```json
-{"test":"is_variant","subject":"self","operator":"==","value":3}
+{
+  "test": "is_variant",
+  "subject": "self",
+  "operator": "==",
+  "value": 3
+}
 ```
 
 At /minecraft:entity/events/minecraft:ageable_grow_up/sequence/3/filters/: 
 
 ```json
-{"test":"is_variant","subject":"self","operator":"==","value":6}
+{
+  "test": "is_variant",
+  "subject": "self",
+  "operator": "==",
+  "value": 6
+}
 ```

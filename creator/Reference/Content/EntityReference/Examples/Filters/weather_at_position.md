@@ -16,9 +16,10 @@ Tests the current weather, at the actor's position, against a provided weather v
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | String | (Required) The Family name to look for |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Fox: `"!="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Fox: `"self"` | 
+| test | *not set* | String |  | Fox: `"weather_at_position"` | 
+| value | *not set* | String | (Required) The Family name to look for | Fox: `"thunderstorm"` | 
 
 ### Operator choices
 
@@ -66,17 +67,29 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/minecraft:fox_thunderstorm/minecraft:environment_sensor/triggers/0/filters/all_of/0/: 
 
 ```json
-{"test":"weather_at_position","operator":"!=","value":"thunderstorm"}
+{
+  "test": "weather_at_position",
+  "operator": "!=",
+  "value": "thunderstorm"
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:environment_sensor/triggers/0/filters/: 
 
 ```json
-{"test":"weather_at_position","value":"thunderstorm"}
+{
+  "test": "weather_at_position",
+  "value": "thunderstorm"
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/can_nap_filters/all_of/3/: 
 
 ```json
-{"test":"weather_at_position","subject":"self","operator":"!=","value":"thunderstorm"}
+{
+  "test": "weather_at_position",
+  "subject": "self",
+  "operator": "!=",
+  "value": "thunderstorm"
+}
 ```

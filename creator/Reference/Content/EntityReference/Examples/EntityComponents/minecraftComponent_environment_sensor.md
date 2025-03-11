@@ -393,6 +393,12 @@ At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecr
             "value": "twitching"
           },
           {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "operator": "not",
+            "value": "crumbling"
+          },
+          {
             "test": "is_bound_to_creaking_heart",
             "value": false
           }

@@ -12,6 +12,15 @@ ms.date: 02/11/2025
 Sets that this entity is a baby. This is used to set the is_baby value for use in query functions like Molang and Filters.
 
 
+## Is Baby Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| operator | *not set* | String |  | Villager V2: `"=="` | 
+| subject | *not set* | String |  | Villager V2: `"other"` | 
+| test | *not set* | String |  | Villager V2: `"is_baby"` | 
+| value | *not set* | String |  | Villager V2: `true` | 
+
 ## Samples
 
 #### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
@@ -26,5 +35,10 @@ Sets that this entity is a baby. This is used to set the is_baby value for use i
 At /minecraft:entity/component_groups/play_schedule_villager/minecraft:behavior.play/friend_types/0/filters/all_of/1/: 
 
 ```json
-"minecraft:is_baby": {"test":"is_baby","subject":"other","operator":"==","value":true}
+"minecraft:is_baby": {
+  "test": "is_baby",
+  "subject": "other",
+  "operator": "==",
+  "value": true
+}
 ```

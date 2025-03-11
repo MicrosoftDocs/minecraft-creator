@@ -19,9 +19,10 @@ Returns true when the subject entity is holding a ranged weapon like a bow or cr
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bogged: `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Bogged: `"self"` | 
+| test | *not set* | String |  | Bogged: `"has_ranged_weapon"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Bogged: `true` | 
 
 ### Operator choices
 
@@ -69,11 +70,21 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/1/filters/: 
 
 ```json
-{"test":"has_ranged_weapon","subject":"self","operator":"==","value":false}
+{
+  "test": "has_ranged_weapon",
+  "subject": "self",
+  "operator": "==",
+  "value": false
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/0/filters/all_of/1/: 
 
 ```json
-{"test":"has_ranged_weapon","subject":"self","operator":"==","value":true}
+{
+  "test": "has_ranged_weapon",
+  "subject": "self",
+  "operator": "==",
+  "value": true
+}
 ```

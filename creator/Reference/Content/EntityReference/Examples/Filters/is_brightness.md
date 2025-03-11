@@ -16,9 +16,10 @@ Tests the current brightness against a provided value in the range (0.0f, 1.0f).
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Cave Spider: `"<"`, `">"` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | Decimal number | (Required) The brightness value to compare with. |  | 
+| test | *not set* | String |  | Cave Spider: `"is_brightness"` | 
+| value | *not set* | Decimal number | (Required) The brightness value to compare with. | Cave Spider: `0.49` | 
 
 ### Operator choices
 
@@ -66,11 +67,19 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/minecraft:spider_neutral/minecraft:environment_sensor/triggers/filters/: 
 
 ```json
-{"test":"is_brightness","operator":"<","value":0.49}
+{
+  "test": "is_brightness",
+  "operator": "<",
+  "value": 0.49
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:environment_sensor/triggers/filters/: 
 
 ```json
-{"test":"is_brightness","operator":">","value":0.49}
+{
+  "test": "is_brightness",
+  "operator": ">",
+  "value": 0.49
+}
 ```

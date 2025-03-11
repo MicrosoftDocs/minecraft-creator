@@ -11,6 +11,10 @@ ms.date: 02/11/2025
 
 Determines the color of the item name when hovering over it.
 
+## Alternate Simple Representations
+
+This item can also be represented as a `String`.
+
 
 ## Hover Text Color Properties
 

@@ -19,9 +19,10 @@ Returns true when the subject entity is under water. An entity is considered und
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bogged: `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Bogged: `"self"` | 
+| test | *not set* | String |  | Bogged: `"is_underwater"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Bogged: `true` | 
 
 ### Operator choices
 
@@ -69,7 +70,12 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/0/filters/: 
 
 ```json
-{"test":"is_underwater","subject":"self","operator":"==","value":true}
+{
+  "test": "is_underwater",
+  "subject": "self",
+  "operator": "==",
+  "value": true
+}
 ```
 
 #### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
@@ -77,7 +83,12 @@ At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environm
 At /minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:environment_sensor/triggers/filters/: 
 
 ```json
-{"test":"is_underwater","subject":"self","operator":"==","value":false}
+{
+  "test": "is_underwater",
+  "subject": "self",
+  "operator": "==",
+  "value": false
+}
 ```
 
 #### [Zombie](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie.json)
@@ -85,5 +96,9 @@ At /minecraft:entity/component_groups/minecraft:start_zombie_transformation/mine
 At /minecraft:entity/components/minecraft:environment_sensor/triggers/filters/: 
 
 ```json
-{"test":"is_underwater","operator":"==","value":true}
+{
+  "test": "is_underwater",
+  "operator": "==",
+  "value": true
+}
 ```

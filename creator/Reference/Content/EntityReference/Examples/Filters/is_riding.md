@@ -19,9 +19,10 @@ Returns true if the subject entity is riding on another entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Enderman: `"=="`, Parrot: `"equals"`, `"!="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Enderman: `"self"` | 
+| test | *not set* | String |  | Enderman: `"is_riding"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Enderman: `true` | 
 
 ### Operator choices
 
@@ -69,13 +70,23 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/minecraft:riding/minecraft:environment_sensor/triggers/filters/: 
 
 ```json
-{"test":"is_riding","subject":"self","operator":"==","value":false}
+{
+  "test": "is_riding",
+  "subject": "self",
+  "operator": "==",
+  "value": false
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:not_riding/minecraft:environment_sensor/triggers/filters/: 
 
 ```json
-{"test":"is_riding","subject":"self","operator":"==","value":true}
+{
+  "test": "is_riding",
+  "subject": "self",
+  "operator": "==",
+  "value": true
+}
 ```
 
 #### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
@@ -83,17 +94,31 @@ At /minecraft:entity/component_groups/minecraft:not_riding/minecraft:environment
 At /minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/subsensors/0/event_filters/all_of/0/: 
 
 ```json
-{"test":"is_riding","subject":"self","operator":"equals","value":true}
+{
+  "test": "is_riding",
+  "subject": "self",
+  "operator": "equals",
+  "value": true
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/subsensors/0/event_filters/all_of/0/: 
 
 ```json
-{"test":"is_riding","subject":"self","operator":"equals","value":false}
+{
+  "test": "is_riding",
+  "subject": "self",
+  "operator": "equals",
+  "value": false
+}
 ```
 
 At /minecraft:entity/components/minecraft:healable/filters/: 
 
 ```json
-{"test":"is_riding","operator":"!=","value":true}
+{
+  "test": "is_riding",
+  "operator": "!=",
+  "value": true
+}
 ```

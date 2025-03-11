@@ -16,10 +16,11 @@ Returns true when the enum actor property matches the value provided.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | *not set* | String | (Required) The property name to look for |  | 
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | String | (Required) A string value. |  | 
+| domain | *not set* | String | (Required) The property name to look for | Armadillo: `"minecraft:armadillo_state"`, Creaking: `"minecraft:creaking_state"`, Egg: `"minecraft:climate_variant"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Armadillo: `"not"` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Egg: `"other"` | 
+| test | *not set* | String |  | Armadillo: `"enum_property"` | 
+| value | *not set* | String | (Required) A string value. | Armadillo: `"unrolled"`, `"rolled_up"`, `"rolled_up_peeking"`, `"rolled_up_relaxing"`, `"rolled_up_unrolling"` | 
 
 ### Operator choices
 
@@ -67,49 +68,84 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/interact_filters/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:armadillo_state","value":"unrolled"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:armadillo_state",
+  "value": "unrolled"
+}
 ```
 
 At /minecraft:entity/events/minecraft:no_threat_detected/sequence/0/filters/all_of/0/any_of/0/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:armadillo_state","value":"rolled_up"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:armadillo_state",
+  "value": "rolled_up"
+}
 ```
 
 At /minecraft:entity/events/minecraft:no_threat_detected/sequence/0/filters/all_of/0/any_of/1/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:armadillo_state","value":"rolled_up_peeking"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:armadillo_state",
+  "value": "rolled_up_peeking"
+}
 ```
 
 At /minecraft:entity/events/minecraft:threat_detected/sequence/1/filters/any_of/0/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:armadillo_state","value":"rolled_up_relaxing"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:armadillo_state",
+  "value": "rolled_up_relaxing"
+}
 ```
 
 At /minecraft:entity/events/minecraft:threat_detected/sequence/1/filters/any_of/1/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:armadillo_state","value":"rolled_up_unrolling"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:armadillo_state",
+  "value": "rolled_up_unrolling"
+}
 ```
 
 At /minecraft:entity/events/minecraft:unroll/sequence/0/filters/all_of/0/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:armadillo_state","operator":"not","value":"unrolled"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:armadillo_state",
+  "operator": "not",
+  "value": "unrolled"
+}
 ```
 
 At /minecraft:entity/events/minecraft:roll_up/sequence/0/filters/all_of/0/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:armadillo_state","operator":"not","value":"rolled_up"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:armadillo_state",
+  "operator": "not",
+  "value": "rolled_up"
+}
 ```
 
 At /minecraft:entity/events/minecraft:roll_up/sequence/0/filters/all_of/1/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:armadillo_state","operator":"not","value":"rolled_up_peeking"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:armadillo_state",
+  "operator": "not",
+  "value": "rolled_up_peeking"
+}
 ```
 
 #### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
@@ -117,41 +153,72 @@ At /minecraft:entity/events/minecraft:roll_up/sequence/0/filters/all_of/1/:
 At /minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/0/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:creaking_state","value":"hostile_observed"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:creaking_state",
+  "value": "hostile_observed"
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/1/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:creaking_state","value":"hostile_unobserved"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:creaking_state",
+  "value": "hostile_unobserved"
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/1/filters/all_of/0/none_of/0/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:creaking_state","value":"twitching"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:creaking_state",
+  "value": "twitching"
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/2/filters/all_of/0/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:creaking_state","operator":"not","value":"twitching"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:creaking_state",
+  "operator": "not",
+  "value": "twitching"
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/2/filters/all_of/1/: 
+
+```json
+{
+  "test": "enum_property",
+  "domain": "minecraft:creaking_state",
+  "operator": "not",
+  "value": "crumbling"
+}
 ```
 
 At /minecraft:entity/events/minecraft:become_hostile/filters/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:creaking_state","value":"neutral"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:creaking_state",
+  "value": "neutral"
+}
 ```
 
 At /minecraft:entity/events/minecraft:become_neutral/filters/: 
 
 ```json
-{"test":"enum_property","domain":"minecraft:creaking_state","operator":"not","value":"neutral"}
-```
-
-At /minecraft:entity/events/minecraft:crumble/filters/: 
-
-```json
-{"test":"enum_property","domain":"minecraft:creaking_state","operator":"not","value":"crumbling"}
+{
+  "test": "enum_property",
+  "domain": "minecraft:creaking_state",
+  "operator": "not",
+  "value": "neutral"
+}
 ```

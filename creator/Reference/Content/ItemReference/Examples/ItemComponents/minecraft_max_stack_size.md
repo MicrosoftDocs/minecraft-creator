@@ -11,6 +11,10 @@ ms.date: 02/11/2025
 
 Determines how many of an item can be stacked together.
 
+## Alternate Simple Representations
+
+This item can also be represented as a `Integer number`.
+
 
 ## Max Stack Size Properties
 

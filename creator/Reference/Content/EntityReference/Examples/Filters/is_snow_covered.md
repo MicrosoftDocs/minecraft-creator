@@ -21,7 +21,8 @@ Tests whether the Subject is in an area with snow cover.
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| test | *not set* | String |  | Fox: `"is_snow_covered"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Fox: `true` | 
 
 ### Operator choices
 
@@ -69,11 +70,17 @@ At Short (using Defaults)..:
 At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/: 
 
 ```json
-{"test":"is_snow_covered","value":true}
+{
+  "test": "is_snow_covered",
+  "value": true
+}
 ```
 
 At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/: 
 
 ```json
-{"test":"is_snow_covered","value":false}
+{
+  "test": "is_snow_covered",
+  "value": false
+}
 ```

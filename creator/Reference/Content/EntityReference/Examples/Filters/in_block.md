@@ -19,9 +19,10 @@ Returns true when the subject entity is inside a specified Block type.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | String | (Optional) A string value. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Skeleton: `"!="`, `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Skeleton: `"self"` | 
+| test | *not set* | String |  | Skeleton: `"in_block"` | 
+| value | *not set* | String | (Optional) A string value. | Skeleton: `"minecraft:powder_snow"` | 
 
 ### Operator choices
 
@@ -69,11 +70,21 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/in_powder_snow/minecraft:environment_sensor/triggers/0/filters/: 
 
 ```json
-{"test":"in_block","subject":"self","operator":"!=","value":"minecraft:powder_snow"}
+{
+  "test": "in_block",
+  "subject": "self",
+  "operator": "!=",
+  "value": "minecraft:powder_snow"
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:environment_sensor/triggers/2/filters/: 
 
 ```json
-{"test":"in_block","subject":"self","operator":"==","value":"minecraft:powder_snow"}
+{
+  "test": "in_block",
+  "subject": "self",
+  "operator": "==",
+  "value": "minecraft:powder_snow"
+}
 ```

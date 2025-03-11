@@ -16,9 +16,10 @@ Returns true when the subject entity contains the named component.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | String | (Required) The component name to look for |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Axolotl: `"!="`, Panda: `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Axolotl: `"self"`, Panda: `"other"` | 
+| test | *not set* | String |  | Axolotl: `"has_component"` | 
+| value | *not set* | String | (Required) The component name to look for | Axolotl: `"minecraft:attack_cooldown"`, `"minecraft:variant"`, Cat: `"minecraft:is_baby"` | 
 
 ### Operator choices
 
@@ -66,20 +67,33 @@ At Short (using Defaults)..:
 At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/1/: 
 
 ```json
-{"test":"has_component","subject":"self","operator":"!=","value":"minecraft:attack_cooldown"}
+{
+  "test": "has_component",
+  "subject": "self",
+  "operator": "!=",
+  "value": "minecraft:attack_cooldown"
+}
 ```
 
 At /minecraft:entity/events/minecraft:entity_born/sequence/1/filters/: 
 
 ```json
-{"test":"has_component","operator":"!=","value":"minecraft:variant"}
+{
+  "test": "has_component",
+  "operator": "!=",
+  "value": "minecraft:variant"
+}
 ```
 
 #### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
 
 
 ```json
-{"test":"has_component","operator":"!=","value":"minecraft:is_baby"}
+{
+  "test": "has_component",
+  "operator": "!=",
+  "value": "minecraft:is_baby"
+}
 ```
 
 #### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
@@ -87,19 +101,30 @@ At /minecraft:entity/events/minecraft:entity_born/sequence/1/filters/:
 At /minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/2/: 
 
 ```json
-{"test":"has_component","operator":"!=","value":"minecraft:explode"}
+{
+  "test": "has_component",
+  "operator": "!=",
+  "value": "minecraft:explode"
+}
 ```
 
 At /minecraft:entity/events/minecraft:start_exploding_forced/sequence/0/filters/: 
 
 ```json
-{"test":"has_component","operator":"!=","value":"minecraft:is_charged"}
+{
+  "test": "has_component",
+  "operator": "!=",
+  "value": "minecraft:is_charged"
+}
 ```
 
 At /minecraft:entity/events/minecraft:start_exploding_forced/sequence/1/filters/: 
 
 ```json
-{"test":"has_component","value":"minecraft:is_charged"}
+{
+  "test": "has_component",
+  "value": "minecraft:is_charged"
+}
 ```
 
 #### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
@@ -107,7 +132,10 @@ At /minecraft:entity/events/minecraft:start_exploding_forced/sequence/1/filters/
 At /minecraft:entity/events/minecraft:convert_to_zombie/sequence/1/filters/: 
 
 ```json
-{"test":"has_component","value":"minecraft:is_baby"}
+{
+  "test": "has_component",
+  "value": "minecraft:is_baby"
+}
 ```
 
 #### [Panda](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/panda.json)
@@ -115,13 +143,22 @@ At /minecraft:entity/events/minecraft:convert_to_zombie/sequence/1/filters/:
 At /minecraft:entity/component_groups/minecraft:panda_baby/minecraft:behavior.sneeze/entity_types/0/filters/all_of/0/: 
 
 ```json
-{"test":"has_component","subject":"other","operator":"!=","value":"minecraft:is_baby"}
+{
+  "test": "has_component",
+  "subject": "other",
+  "operator": "!=",
+  "value": "minecraft:is_baby"
+}
 ```
 
 At /minecraft:entity/events/minecraft:panda_weak/sequence/1/filters/: 
 
 ```json
-{"test":"has_component","operator":"==","value":"minecraft:is_baby"}
+{
+  "test": "has_component",
+  "operator": "==",
+  "value": "minecraft:is_baby"
+}
 ```
 
 #### [Sheep](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/sheep.json)
@@ -129,11 +166,19 @@ At /minecraft:entity/events/minecraft:panda_weak/sequence/1/filters/:
 At /minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/3/: 
 
 ```json
-{"test":"has_component","value":"minecraft:is_dyeable"}
+{
+  "test": "has_component",
+  "value": "minecraft:is_dyeable"
+}
 ```
 
 At /minecraft:entity/events/minecraft:on_eat_block/sequence/1/filters/: 
 
 ```json
-{"subject":"self","test":"has_component","operator":"!=","value":"minecraft:is_baby"}
+{
+  "subject": "self",
+  "test": "has_component",
+  "operator": "!=",
+  "value": "minecraft:is_baby"
+}
 ```
