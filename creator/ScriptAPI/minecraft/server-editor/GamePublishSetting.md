@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .GamePublishSetting Enumeration
-description: Contents of the .GamePublishSetting enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.GamePublishSetting Enumeration
+description: Contents of the @minecraft/server-editor.GamePublishSetting enumeration.
 ---
 # GamePublishSetting Enumeration
 

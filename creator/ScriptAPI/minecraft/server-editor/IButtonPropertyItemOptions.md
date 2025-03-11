@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.IButtonPropertyItemOptions Interface
 description: Contents of the @minecraft/server-editor.IButtonPropertyItemOptions class.
 ---

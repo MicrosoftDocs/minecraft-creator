@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .PlayerPermissionLevel Enumeration
-description: Contents of the .PlayerPermissionLevel enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.PlayerPermissionLevel Enumeration
+description: Contents of the @minecraft/server-editor.PlayerPermissionLevel enumeration.
 ---
 # PlayerPermissionLevel Enumeration
 

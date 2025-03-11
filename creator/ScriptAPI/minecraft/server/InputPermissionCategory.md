@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InputPermissionCategory Enumeration
-description: Contents of the .InputPermissionCategory enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.InputPermissionCategory Enumeration
+description: Contents of the @minecraft/server.InputPermissionCategory enumeration.
 ---
 # InputPermissionCategory Enumeration
 
-Input permission categories. Used by [*@minecraft/server.PlayerInputPermissionCategoryChangeAfterEvent*](../../minecraft/server/PlayerInputPermissionCategoryChangeAfterEvent.md) to specify which category was changed and [*@minecraft/server.PlayerInputPermissions*](../../minecraft/server/PlayerInputPermissions.md) to get or set permissions.
+Input permission categories. Used by [*@minecraft/server.PlayerInputPermissionCategoryChangeAfterEvent*](../../../scriptapi/minecraft/server/PlayerInputPermissionCategoryChangeAfterEvent.md) to specify which category was changed and [*@minecraft/server.PlayerInputPermissions*](../../../scriptapi/minecraft/server/PlayerInputPermissions.md) to get or set permissions.
 
 ## Constants
 ### **Camera**

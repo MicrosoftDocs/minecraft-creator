@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .ActivationFunctionType type alias.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ActivationFunctionType Type Alias
+description: Contents of the @minecraft/server-editor.ActivationFunctionType type alias.
 ---
 # ActivationFunctionType Type Alias
 

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ScriptEventSource Enumeration
-description: Contents of the .ScriptEventSource enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.ScriptEventSource Enumeration
+description: Contents of the @minecraft/server.ScriptEventSource enumeration.
 ---
 # ScriptEventSource Enumeration
 

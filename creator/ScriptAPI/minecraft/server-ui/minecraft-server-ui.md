@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-ui Module
 description: Contents of the @minecraft/server-ui module
 ---
@@ -12,11 +13,11 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
 
 
 
-  * [*@minecraft/server-ui.ActionFormData*](../../minecraft/server-ui/ActionFormData.md) contain a list of buttons with captions and images that can be used for presenting a set of options to a player.
+  * [*@minecraft/server-ui.ActionFormData*](../../../scriptapi/minecraft/server-ui/ActionFormData.md) contain a list of buttons with captions and images that can be used for presenting a set of options to a player.
 
-  * [*@minecraft/server-ui.MessageFormData*](../../minecraft/server-ui/MessageFormData.md) are simple two-button message experiences that are functional for Yes/No or OK/Cancel questions.
+  * [*@minecraft/server-ui.MessageFormData*](../../../scriptapi/minecraft/server-ui/MessageFormData.md) are simple two-button message experiences that are functional for Yes/No or OK/Cancel questions.
 
-  * [*@minecraft/server-ui.ModalFormData*](../../minecraft/server-ui/ModalFormData.md) allow for a more flexible "questionnaire-style" list of controls that can be used to take input.
+  * [*@minecraft/server-ui.ModalFormData*](../../../scriptapi/minecraft/server-ui/ModalFormData.md) allow for a more flexible "questionnaire-style" list of controls that can be used to take input.
 
 ## [Changelog](changelog.md)
 
@@ -34,7 +35,6 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
 - `1.2.0`
 - `1.1.0`
 - `1.0.0`
-- `0.1.0`
 
 ## Enumerations
 - [FormCancelationReason](FormCancelationReason.md)
@@ -49,6 +49,12 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
 - [ModalFormData](ModalFormData.md)
 - [ModalFormResponse](ModalFormResponse.md)
 - [UIManager](UIManager.md)
+
+## Interfaces
+- [ModalFormDataDropdownOptions](ModalFormDataDropdownOptions.md)
+- [ModalFormDataSliderOptions](ModalFormDataSliderOptions.md)
+- [ModalFormDataTextFieldOptions](ModalFormDataTextFieldOptions.md)
+- [ModalFormDataToggleOptions](ModalFormDataToggleOptions.md)
 
 ## Errors
 - [FormRejectError](FormRejectError.md)

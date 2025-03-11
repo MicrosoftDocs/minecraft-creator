@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .DisplaySlotId Enumeration
-description: Contents of the .DisplaySlotId enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.DisplaySlotId Enumeration
+description: Contents of the @minecraft/server.DisplaySlotId enumeration.
 ---
 # DisplaySlotId Enumeration
 

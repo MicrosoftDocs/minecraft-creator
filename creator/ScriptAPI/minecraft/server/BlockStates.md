@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.BlockStates Class
 description: Contents of the @minecraft/server.BlockStates class.
 ---
 # BlockStates Class
 
-Enumerates all [*@minecraft/server.BlockStateType*](../../minecraft/server/BlockStateType.md)s.
+Enumerates all [*@minecraft/server.BlockStateType*](../../../scriptapi/minecraft/server/BlockStateType.md)s.
 
 ## Methods
 - [get](#get)
@@ -24,7 +25,7 @@ Retrieves a specific block state instance.
 #### **Parameters**
 - **stateName**: *string*
 
-**Returns** [*BlockStateType*](BlockStateType.md) | *undefined* - Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) state instance if it is found. If the block state instance is not found returns undefined.
+**Returns** [*BlockStateType*](BlockStateType.md) | *undefined* - Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) state instance if it is found. If the block state instance is not found returns undefined.
 
 ### **getAll**
 `

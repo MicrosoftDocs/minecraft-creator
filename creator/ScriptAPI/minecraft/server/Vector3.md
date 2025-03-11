@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.Vector3 Interface
 description: Contents of the @minecraft/server.Vector3 class.
 ---

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InputMode Enumeration
-description: Contents of the .InputMode enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.InputMode Enumeration
+description: Contents of the @minecraft/server.InputMode enumeration.
 ---
 # InputMode Enumeration
 

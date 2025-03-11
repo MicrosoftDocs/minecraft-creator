@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .TimeOfDay Enumeration
-description: Contents of the .TimeOfDay enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.TimeOfDay Enumeration
+description: Contents of the @minecraft/server.TimeOfDay enumeration.
 ---
 # TimeOfDay Enumeration
 

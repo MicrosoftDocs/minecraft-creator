@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.CompoundBlockVolumeItem Interface
 description: Contents of the @minecraft/server.CompoundBlockVolumeItem class.
 monikerRange: "=minecraft-bedrock-experimental"
@@ -12,7 +13,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-This interface defines an entry into the [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) which represents a volume of positive or negative space.
+This interface defines an entry into the [*@minecraft/server.CompoundBlockVolume*](../../../scriptapi/minecraft/server/CompoundBlockVolume.md) which represents a volume of positive or negative space.
 
 
 

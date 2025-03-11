@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .GameTestError Class
-description: Contents of the .GameTestError class.
+ms.date: 02/10/2025
+title: minecraft/server-gametest.GameTestError Class
+description: Contents of the @minecraft/server-gametest.GameTestError class.
 ---
 # GameTestError Class
 

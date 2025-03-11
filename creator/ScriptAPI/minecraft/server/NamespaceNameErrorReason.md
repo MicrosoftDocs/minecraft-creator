@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .NamespaceNameErrorReason Enumeration
-description: Contents of the .NamespaceNameErrorReason enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.NamespaceNameErrorReason Enumeration
+description: Contents of the @minecraft/server.NamespaceNameErrorReason enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # NamespaceNameErrorReason Enumeration

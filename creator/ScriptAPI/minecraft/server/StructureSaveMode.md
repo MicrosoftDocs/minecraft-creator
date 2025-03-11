@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .StructureSaveMode Enumeration
-description: Contents of the .StructureSaveMode enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.StructureSaveMode Enumeration
+description: Contents of the @minecraft/server.StructureSaveMode enumeration.
 ---
 # StructureSaveMode Enumeration
 

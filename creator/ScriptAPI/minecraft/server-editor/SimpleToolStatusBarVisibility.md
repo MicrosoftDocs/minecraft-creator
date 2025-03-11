@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .SimpleToolStatusBarVisibility Enumeration
-description: Contents of the .SimpleToolStatusBarVisibility enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.SimpleToolStatusBarVisibility Enumeration
+description: Contents of the @minecraft/server-editor.SimpleToolStatusBarVisibility enumeration.
 ---
 # SimpleToolStatusBarVisibility Enumeration
 

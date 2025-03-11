@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .CursorTargetMode Enumeration
-description: Contents of the .CursorTargetMode enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.CursorTargetMode Enumeration
+description: Contents of the @minecraft/server-editor.CursorTargetMode enumeration.
 ---
 # CursorTargetMode Enumeration
 

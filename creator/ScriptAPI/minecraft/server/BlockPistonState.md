@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .BlockPistonState Enumeration
-description: Contents of the .BlockPistonState enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.BlockPistonState Enumeration
+description: Contents of the @minecraft/server.BlockPistonState enumeration.
 ---
 # BlockPistonState Enumeration
 

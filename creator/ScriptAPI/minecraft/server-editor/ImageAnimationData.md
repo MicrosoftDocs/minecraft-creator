@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .ImageAnimationData type alias.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ImageAnimationData Type Alias
+description: Contents of the @minecraft/server-editor.ImageAnimationData type alias.
 ---
 # ImageAnimationData Type Alias
 

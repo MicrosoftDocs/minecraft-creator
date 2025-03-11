@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .PacketId Enumeration
-description: Contents of the .PacketId enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-net.PacketId Enumeration
+description: Contents of the @minecraft/server-net.PacketId enumeration.
 ---
 # PacketId Enumeration
 
@@ -251,6 +252,8 @@ Represents the unique type of network packet.
 `PlayerInputPacket = "PlayerInputPacket"`
 ### **PlayerListPacket**
 `PlayerListPacket = "PlayerListPacket"`
+### **PlayerLocationPacket**
+`PlayerLocationPacket = "PlayerLocationPacket"`
 ### **PlayerSkinPacket**
 `PlayerSkinPacket = "PlayerSkinPacket"`
 ### **PlayerStartItemCooldownPacket**

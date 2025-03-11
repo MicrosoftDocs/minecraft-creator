@@ -38,6 +38,8 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:stonecutter_cut_red_sandstone_slab`
+- `minecraft:stonecutter_cut_sandstone_slab`
 - `minecraft:cake`
 - `minecraft:lodestone`
 - `minecraft:pink_dye_from_cactus_flower`

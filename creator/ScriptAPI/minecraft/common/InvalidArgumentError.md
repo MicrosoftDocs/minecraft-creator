@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InvalidArgumentError Class
-description: Contents of the .InvalidArgumentError class.
+ms.date: 02/10/2025
+title: minecraft/common.InvalidArgumentError Class
+description: Contents of the @minecraft/common.InvalidArgumentError class.
 ---
 # InvalidArgumentError Class
 

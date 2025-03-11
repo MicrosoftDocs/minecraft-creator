@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .BlockComponentTypes Enumeration
-description: Contents of the .BlockComponentTypes enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.BlockComponentTypes Enumeration
+description: Contents of the @minecraft/server.BlockComponentTypes enumeration.
 ---
 # BlockComponentTypes Enumeration
 

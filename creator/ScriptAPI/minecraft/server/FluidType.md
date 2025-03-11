@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .FluidType Enumeration
-description: Contents of the .FluidType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.FluidType Enumeration
+description: Contents of the @minecraft/server.FluidType enumeration.
 ---
 # FluidType Enumeration
 

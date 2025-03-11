@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ProjectExportType Enumeration
-description: Contents of the .ProjectExportType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ProjectExportType Enumeration
+description: Contents of the @minecraft/server-editor.ProjectExportType enumeration.
 ---
 # ProjectExportType Enumeration
 

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .GameMode Enumeration
-description: Contents of the .GameMode enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.GameMode Enumeration
+description: Contents of the @minecraft/server.GameMode enumeration.
 ---
 # GameMode Enumeration
 

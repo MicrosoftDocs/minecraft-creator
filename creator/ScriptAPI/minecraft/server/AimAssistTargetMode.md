@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .AimAssistTargetMode Enumeration
-description: Contents of the .AimAssistTargetMode enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.AimAssistTargetMode Enumeration
+description: Contents of the @minecraft/server.AimAssistTargetMode enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # AimAssistTargetMode Enumeration

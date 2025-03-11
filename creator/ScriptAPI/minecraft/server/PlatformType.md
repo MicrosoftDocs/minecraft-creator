@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .PlatformType Enumeration
-description: Contents of the .PlatformType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.PlatformType Enumeration
+description: Contents of the @minecraft/server.PlatformType enumeration.
 ---
 # PlatformType Enumeration
 

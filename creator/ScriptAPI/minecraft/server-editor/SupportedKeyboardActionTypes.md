@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .SupportedKeyboardActionTypes type alias.
+ms.date: 02/10/2025
+title: minecraft/server-editor.SupportedKeyboardActionTypes Type Alias
+description: Contents of the @minecraft/server-editor.SupportedKeyboardActionTypes type alias.
 ---
 # SupportedKeyboardActionTypes Type Alias
 

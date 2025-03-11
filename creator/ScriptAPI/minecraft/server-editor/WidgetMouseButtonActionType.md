@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .WidgetMouseButtonActionType Enumeration
-description: Contents of the .WidgetMouseButtonActionType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.WidgetMouseButtonActionType Enumeration
+description: Contents of the @minecraft/server-editor.WidgetMouseButtonActionType enumeration.
 ---
 # WidgetMouseButtonActionType Enumeration
 

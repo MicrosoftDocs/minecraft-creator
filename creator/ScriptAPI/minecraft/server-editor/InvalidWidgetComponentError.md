@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InvalidWidgetComponentError Class
-description: Contents of the .InvalidWidgetComponentError class.
+ms.date: 02/10/2025
+title: minecraft/server-editor.InvalidWidgetComponentError Class
+description: Contents of the @minecraft/server-editor.InvalidWidgetComponentError class.
 ---
 # InvalidWidgetComponentError Class
 

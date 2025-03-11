@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetComponentRenderPrimitiveTypeBox Class
 description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimitiveTypeBox class.
 ---
@@ -16,7 +17,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentRenderPrimi
 ### **center**
 `center: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
   - This property can't be edited in read-only mode.
@@ -24,7 +25,7 @@ Notes:
 ### **color**
 `color: minecraftserver.RGBA;`
 
-Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
   - This property can't be edited in read-only mode.
@@ -32,7 +33,7 @@ Notes:
 ### **size**
 `size?: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
   - This property can't be edited in read-only mode.
@@ -46,8 +47,8 @@ new WidgetComponentRenderPrimitiveTypeBox(center: minecraftserver.Vector3, color
 `
 
 #### **Parameters**
-- **center**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-- **color**: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
-- **size**?: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) = `null`
+- **center**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **color**: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
+- **size**?: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) = `null`
 
 **Returns** [*WidgetComponentRenderPrimitiveTypeBox*](WidgetComponentRenderPrimitiveTypeBox.md)

@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor Module
 description: Contents of the @minecraft/server-editor module
 monikerRange: "=minecraft-bedrock-experimental"
@@ -38,6 +39,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ContiguousSelectionType](ContiguousSelectionType.md)
 - [ContinuousActionState](ContinuousActionState.md)
 - [CoreActionBarItemType](CoreActionBarItemType.md)
+- [CoreBrushShapeType](CoreBrushShapeType.md)
 - [CoreMenuType](CoreMenuType.md)
 - [CursorControlMode](CursorControlMode.md)
 - [CursorTargetMode](CursorTargetMode.md)
@@ -67,12 +69,14 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ProgressIndicatorPropertyItemVariant](ProgressIndicatorPropertyItemVariant.md)
 - [ProjectExportType](ProjectExportType.md)
 - [PropertyItemType](PropertyItemType.md)
+- [SelectionVolumeEventType](SelectionVolumeEventType.md)
 - [SimpleToolStatusBarVisibility](SimpleToolStatusBarVisibility.md)
 - [SpeedSettingsProperty](SpeedSettingsProperty.md)
 - [SplineType](SplineType.md)
 - [StatusBarAlignment](StatusBarAlignment.md)
 - [ThemeSettingsColorKey](ThemeSettingsColorKey.md)
 - [WidgetComponentType](WidgetComponentType.md)
+- [WidgetGizmoEventType](WidgetGizmoEventType.md)
 - [WidgetGroupSelectionMode](WidgetGroupSelectionMode.md)
 - [WidgetMouseButtonActionType](WidgetMouseButtonActionType.md)
 
@@ -84,12 +88,10 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ContinuousAction](ContinuousAction.md)
 - [EventHandler](EventHandler.md)
 - [GraphicsSettingsPropertyTypeMap](GraphicsSettingsPropertyTypeMap.md)
-- [IDropdownPropertyItem_deprecated](IDropdownPropertyItem_deprecated.md)
 - [ImageAnimationData](ImageAnimationData.md)
 - [ImageResourceData](ImageResourceData.md)
 - [IObservableProp](IObservableProp.md)
 - [IPlayerUISession](IPlayerUISession.md)
-- [IVector3PropertyItem_deprecated](IVector3PropertyItem_deprecated.md)
 - [KeyBinding](KeyBinding.md)
 - [KeyBindingInfo](KeyBindingInfo.md)
 - [LocalizedString](LocalizedString.md)
@@ -98,7 +100,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [MouseProps](MouseProps.md)
 - [MouseRayCastAction](MouseRayCastAction.md)
 - [NoArgsAction](NoArgsAction.md)
-- [OnChangeCallback](OnChangeCallback.md)
 - [PropertyBag](PropertyBag.md)
 - [PropertyPaneVisibilityUpdate](PropertyPaneVisibilityUpdate.md)
 - [Ray](Ray.md)
@@ -120,11 +121,14 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [BlockPalette](BlockPalette.md)
 - [BlockPaletteManager](BlockPaletteManager.md)
 - [BlockUtilities](BlockUtilities.md)
+- [BrushShape](BrushShape.md)
 - [BrushShapeManager](BrushShapeManager.md)
 - [ClipboardChangeAfterEvent](ClipboardChangeAfterEvent.md)
 - [ClipboardChangeAfterEventSignal](ClipboardChangeAfterEventSignal.md)
 - [ClipboardItem](ClipboardItem.md)
 - [ClipboardManager](ClipboardManager.md)
+- [ConeBrushShape](ConeBrushShape.md)
+- [CuboidBrushShape](CuboidBrushShape.md)
 - [CurrentThemeChangeAfterEvent](CurrentThemeChangeAfterEvent.md)
 - [CurrentThemeChangeAfterEventSignal](CurrentThemeChangeAfterEventSignal.md)
 - [CurrentThemeColorChangeAfterEvent](CurrentThemeColorChangeAfterEvent.md)
@@ -132,7 +136,9 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [Cursor](Cursor.md)
 - [CursorPropertiesChangeAfterEvent](CursorPropertiesChangeAfterEvent.md)
 - [CursorPropertyChangeAfterEventSignal](CursorPropertyChangeAfterEventSignal.md)
+- [CylinderBrushShape](CylinderBrushShape.md)
 - [EditorStructureManager](EditorStructureManager.md)
+- [EllipsoidBrushShape](EllipsoidBrushShape.md)
 - [EntityIdentifierObservableValidator](EntityIdentifierObservableValidator.md)
 - [ExportManager](ExportManager.md)
 - [Extension](Extension.md)
@@ -147,17 +153,21 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [NumberLimitObservableValidator](NumberLimitObservableValidator.md)
 - [ObservableValidator](ObservableValidator.md)
 - [PlaytestManager](PlaytestManager.md)
-- [PrimarySelectionChangeAfterEventSignal](PrimarySelectionChangeAfterEventSignal.md)
-- [PrimarySelectionChangedEvent](PrimarySelectionChangedEvent.md)
 - [ProbabilityBlockPaletteItem](ProbabilityBlockPaletteItem.md)
-- [Selection](Selection.md)
+- [PyramidBrushShape](PyramidBrushShape.md)
+- [RelativeVolumeListBlockVolume](RelativeVolumeListBlockVolume.md)
+- [SelectionChangeAfterEventSignal](SelectionChangeAfterEventSignal.md)
+- [SelectionContainerBase](SelectionContainerBase.md)
+- [SelectionContainerEntity](SelectionContainerEntity.md)
+- [SelectionContainerVolume](SelectionContainerVolume.md)
+- [SelectionContainerVolumeEvent](SelectionContainerVolumeEvent.md)
 - [SelectionEventAfterEvent](SelectionEventAfterEvent.md)
 - [SelectionManager](SelectionManager.md)
 - [SettingsManager](SettingsManager.md)
-- [SettingsUIElement](SettingsUIElement.md)
 - [SimpleBlockPaletteItem](SimpleBlockPaletteItem.md)
 - [SimpleToolWrapper](SimpleToolWrapper.md)
 - [SimulationState](SimulationState.md)
+- [SingleBlockBrushShape](SingleBlockBrushShape.md)
 - [SpeedSettings](SpeedSettings.md)
 - [ThemeSettings](ThemeSettings.md)
 - [TransactionManager](TransactionManager.md)
@@ -166,9 +176,12 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [Vector3LimitObservableValidator](Vector3LimitObservableValidator.md)
 - [Widget](Widget.md)
 - [WidgetComponentBase](WidgetComponentBase.md)
+- [WidgetComponentBoundingBox](WidgetComponentBoundingBox.md)
+- [WidgetComponentBoundingBoxStateChangeEventParameters](WidgetComponentBoundingBoxStateChangeEventParameters.md)
 - [WidgetComponentClipboard](WidgetComponentClipboard.md)
 - [WidgetComponentEntity](WidgetComponentEntity.md)
 - [WidgetComponentGizmo](WidgetComponentGizmo.md)
+- [WidgetComponentGizmoStateChangeEventParameters](WidgetComponentGizmoStateChangeEventParameters.md)
 - [WidgetComponentGuide](WidgetComponentGuide.md)
 - [WidgetComponentRenderPrimitive](WidgetComponentRenderPrimitive.md)
 - [WidgetComponentRenderPrimitiveTypeAxialSphere](WidgetComponentRenderPrimitiveTypeAxialSphere.md)
@@ -177,8 +190,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [WidgetComponentRenderPrimitiveTypeDisc](WidgetComponentRenderPrimitiveTypeDisc.md)
 - [WidgetComponentRenderPrimitiveTypeLine](WidgetComponentRenderPrimitiveTypeLine.md)
 - [WidgetComponentSpline](WidgetComponentSpline.md)
-- [WidgetComponentStateChangeEventData](WidgetComponentStateChangeEventData.md)
 - [WidgetComponentText](WidgetComponentText.md)
+- [WidgetComponentVolumeOutline](WidgetComponentVolumeOutline.md)
 - [WidgetGroup](WidgetGroup.md)
 - [WidgetManager](WidgetManager.md)
 - [WidgetMouseButtonEventData](WidgetMouseButtonEventData.md)
@@ -187,7 +200,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 ## Interfaces
 - [ActionManager](ActionManager.md)
 - [BlockMaskList](BlockMaskList.md)
-- [BrushShape](BrushShape.md)
 - [BuiltInUIManager](BuiltInUIManager.md)
 - [ClipboardWriteOptions](ClipboardWriteOptions.md)
 - [ContiguousSelectionProperties](ContiguousSelectionProperties.md)
@@ -221,10 +233,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [IDataTablePropertyItemEntry](IDataTablePropertyItemEntry.md)
 - [IDataTablePropertyItemOptions](IDataTablePropertyItemOptions.md)
 - [IDisposable](IDisposable.md)
-- [IDropdownItem](IDropdownItem.md)
 - [IDropdownPropertyItem](IDropdownPropertyItem.md)
 - [IDropdownPropertyItemEntry](IDropdownPropertyItemEntry.md)
-- [IDropdownPropertyItemMixIn](IDropdownPropertyItemMixIn.md)
 - [IDropdownPropertyItemOptions](IDropdownPropertyItemOptions.md)
 - [IEventToken](IEventToken.md)
 - [IGlobalInputManager](IGlobalInputManager.md)
@@ -247,16 +257,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [IPlayerLogger](IPlayerLogger.md)
 - [IProgressIndicatorPropertyItem](IProgressIndicatorPropertyItem.md)
 - [IProgressIndicatorPropertyItemOptions](IProgressIndicatorPropertyItemOptions.md)
-- [IPropertyItem](IPropertyItem.md)
 - [IPropertyItemBase](IPropertyItemBase.md)
-- [IPropertyItemOptions](IPropertyItemOptions.md)
 - [IPropertyItemOptionsBase](IPropertyItemOptionsBase.md)
-- [IPropertyItemOptionsBool](IPropertyItemOptionsBool.md)
-- [IPropertyItemOptionsColorPicker_deprecated](IPropertyItemOptionsColorPicker_deprecated.md)
-- [IPropertyItemOptionsDropdown](IPropertyItemOptionsDropdown.md)
-- [IPropertyItemOptionsNumber](IPropertyItemOptionsNumber.md)
-- [IPropertyItemOptionsSubPane](IPropertyItemOptionsSubPane.md)
-- [IPropertyItemOptionsVector3](IPropertyItemOptionsVector3.md)
 - [IPropertyPane](IPropertyPane.md)
 - [IPropertyPaneOptions](IPropertyPaneOptions.md)
 - [IRegisteredKeyBinding](IRegisteredKeyBinding.md)
@@ -291,9 +293,9 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [ModalToolCreationParameters](ModalToolCreationParameters.md)
 - [ProjectExportOptions](ProjectExportOptions.md)
 - [QuickExtrudeProperties](QuickExtrudeProperties.md)
-- [SettingsUIElementOptions](SettingsUIElementOptions.md)
 - [WeightedBlock](WeightedBlock.md)
 - [WidgetComponentBaseOptions](WidgetComponentBaseOptions.md)
+- [WidgetComponentBoundingBoxOptions](WidgetComponentBoundingBoxOptions.md)
 - [WidgetComponentClipboardOptions](WidgetComponentClipboardOptions.md)
 - [WidgetComponentEntityOptions](WidgetComponentEntityOptions.md)
 - [WidgetComponentGizmoOptions](WidgetComponentGizmoOptions.md)
@@ -301,6 +303,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [WidgetComponentRenderPrimitiveOptions](WidgetComponentRenderPrimitiveOptions.md)
 - [WidgetComponentSplineOptions](WidgetComponentSplineOptions.md)
 - [WidgetComponentTextOptions](WidgetComponentTextOptions.md)
+- [WidgetComponentVolumeOutlineOptions](WidgetComponentVolumeOutlineOptions.md)
 - [WidgetCreateOptions](WidgetCreateOptions.md)
 - [WidgetGroupCreateOptions](WidgetGroupCreateOptions.md)
 
@@ -310,23 +313,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [InvalidWidgetGroupError](InvalidWidgetGroupError.md)
 
 ## Functions
-
-### **bindDataSource**
-`
-bindDataSource(propertyPane: IPropertyPane, target: T): T
-`
-
-Takes the input object (a property bag of values) and bind it to the pane as a data source. UI child elements of the pane will be updated when the values in the object change, and vice versa.
-
-#### **Parameters**
-- **propertyPane**: *IPropertyPane*
-  
-  The property pane to bind the property bag to.
-- **target**: *T*
-  
-  The property bag to bind to the pane.
-
-**Returns** *T*
 
 ### **deserialize**
 `
@@ -342,15 +328,13 @@ Deserialize anything, defaults to the same behavior as JSON.parse but will use c
 
 ### **executeLargeOperation**
 `
-executeLargeOperation(selection: Selection, operation: (blockLocation: minecraftserver.Vector3) => void): Promise<void>
+executeLargeOperation(volume: RelativeVolumeListBlockVolume, operation: (blockLocation: minecraftserver.Vector3) => void): Promise<void>
 `
 
 Executes an operation over a selection via chunks to allow splitting operation over multiple game ticks
 
 #### **Parameters**
-- **selection**: *Selection*
-  
-  the selection to iterator over
+- **volume**: *RelativeVolumeListBlockVolume*
 - **operation**: *(blockLocation: minecraftserver.Vector3) => void*
   
   the operation to apply over each block location
@@ -382,6 +366,20 @@ getDefaultAllowBlockList(): string[]
 Returns a string array of the default block types for editor operations. Can be used to further filter blocks. This will throw if called in early execution.
 
 **Returns** *string[]* - Default allowed block list
+
+### **getDefaultBrushShapes**
+`
+getDefaultBrushShapes(excludeList: CoreBrushShapeType[]): BrushShape[]
+`
+
+Returns a list of default core brush shapes
+
+#### **Parameters**
+- **excludeList**: *CoreBrushShapeType[]*
+  
+  List of shape types to exclude
+
+**Returns** *BrushShape[]*
 
 ### **makeObservable**
 `

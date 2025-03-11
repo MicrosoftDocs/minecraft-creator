@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .BlockCustomComponentReloadNewComponentError Class
-description: Contents of the .BlockCustomComponentReloadNewComponentError class.
+ms.date: 02/10/2025
+title: minecraft/server.BlockCustomComponentReloadNewComponentError Class
+description: Contents of the @minecraft/server.BlockCustomComponentReloadNewComponentError class.
 ---
 # BlockCustomComponentReloadNewComponentError Class
 

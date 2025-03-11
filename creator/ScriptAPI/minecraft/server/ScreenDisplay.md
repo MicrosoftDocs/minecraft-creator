@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.ScreenDisplay Class
 description: Contents of the @minecraft/server.ScreenDisplay class.
 ---
@@ -97,7 +98,9 @@ Type: *boolean*
 - [getHiddenHudElements](#gethiddenhudelements)
 - [hideAllExcept](#hideallexcept)
 - [isForcedHidden](#isforcedhidden)
-- [resetHudElements](#resethudelements)
+::: moniker range="=minecraft-bedrock-experimental"
+- [resetHudElementsVisibility](#resethudelementsvisibility)
+::: moniker-end
 - [setActionBar](#setactionbar)
 - [setHudVisibility](#sethudvisibility)
 - [setTitle](#settitle)
@@ -113,6 +116,7 @@ getHiddenHudElements(): HudElement[]
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **hideAllExcept**
 `
@@ -125,6 +129,7 @@ hideAllExcept(hudElements?: HudElement[]): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **isForcedHidden**
 `
@@ -139,15 +144,22 @@ isForcedHidden(hudElement: HudElement): boolean
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
-### **resetHudElements**
+::: moniker range="=minecraft-bedrock-experimental"
+### **resetHudElementsVisibility**
 `
-resetHudElements(): void
+resetHudElementsVisibility(): void
 `
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
 
 ### **setActionBar**
 `
@@ -164,6 +176,7 @@ Set the action bar text - a piece of text that displays beneath the title and ab
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*RawMessageError*](RawMessageError.md)
 
 ### **setHudVisibility**
 `
@@ -183,6 +196,7 @@ Sets visibility of a particular element of the heads up display (HUD).
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **setTitle**
 `
@@ -198,6 +212,7 @@ Will cause a title to show up on the player's on screen display. Will clear the 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md), [*RawMessageError*](RawMessageError.md)
 
 #### Examples
 
@@ -281,6 +296,7 @@ Updates the subtitle if the subtitle was previously displayed via the setTitle m
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*RawMessageError*](RawMessageError.md)
 
 #### Examples
 

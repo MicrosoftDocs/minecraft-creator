@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.ExtensionContext Class
 description: Contents of the @minecraft/server-editor.ExtensionContext class.
 ---
@@ -71,7 +72,7 @@ Type: [*Extension*](Extension.md)
 
 The current player which is the subject of the extension invocation
 
-Type: [*@minecraft/server.Player*](../../minecraft/server/Player.md)
+Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
 
 ### **playtest**
 `read-only playtest: PlaytestManager;`

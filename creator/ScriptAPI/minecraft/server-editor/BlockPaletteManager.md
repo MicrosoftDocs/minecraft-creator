@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.BlockPaletteManager Class
 description: Contents of the @minecraft/server-editor.BlockPaletteManager class.
 ---
@@ -76,7 +77,7 @@ getPrimaryPalette(): BlockPalette
 getSelectedBlockType(): minecraftserver.BlockType
 `
 
-**Returns** [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
+**Returns** [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md)
   
 Notes:
 - This function can throw errors.

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .MalformedHttpRequestError Class
-description: Contents of the .MalformedHttpRequestError class.
+ms.date: 02/10/2025
+title: minecraft/server-net.MalformedHttpRequestError Class
+description: Contents of the @minecraft/server-net.MalformedHttpRequestError class.
 ---
 # MalformedHttpRequestError Class
 

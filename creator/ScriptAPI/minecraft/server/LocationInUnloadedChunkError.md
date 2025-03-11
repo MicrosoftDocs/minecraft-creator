@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .LocationInUnloadedChunkError Class
-description: Contents of the .LocationInUnloadedChunkError class.
+ms.date: 02/10/2025
+title: minecraft/server.LocationInUnloadedChunkError Class
+description: Contents of the @minecraft/server.LocationInUnloadedChunkError class.
 ---
 # LocationInUnloadedChunkError Class
 

@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetComponentSpline Class
 description: Contents of the @minecraft/server-editor.WidgetComponentSpline class.
 ---
@@ -46,7 +47,7 @@ getInterpolatedPoints(maxPointsPerControlSegment?: number): minecraftserver.Vect
 #### **Parameters**
 - **maxPointsPerControlSegment**?: *number* = `null`
 
-**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)[]
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[]
   
 Notes:
 - This function can't be called in read-only mode.

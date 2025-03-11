@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .LookDuration Enumeration
-description: Contents of the .LookDuration enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-gametest.LookDuration Enumeration
+description: Contents of the @minecraft/server-gametest.LookDuration enumeration.
 ---
 # LookDuration Enumeration
 

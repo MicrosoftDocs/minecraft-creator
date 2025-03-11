@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ArgumentOutOfBoundsError Class
-description: Contents of the .ArgumentOutOfBoundsError class.
+ms.date: 02/10/2025
+title: minecraft/common.ArgumentOutOfBoundsError Class
+description: Contents of the @minecraft/common.ArgumentOutOfBoundsError class.
 ---
 # ArgumentOutOfBoundsError Class
 

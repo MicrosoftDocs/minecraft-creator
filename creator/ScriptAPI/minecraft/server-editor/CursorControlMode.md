@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .CursorControlMode Enumeration
-description: Contents of the .CursorControlMode enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.CursorControlMode Enumeration
+description: Contents of the @minecraft/server-editor.CursorControlMode enumeration.
 ---
 # CursorControlMode Enumeration
 
-An enumeration used by the 3D block cursor [*@minecraft/server-editor.Cursor*](../../minecraft/server-editor/Cursor.md)
+An enumeration used by the 3D block cursor [*@minecraft/server-editor.Cursor*](../../../scriptapi/minecraft/server-editor/Cursor.md)
 
 ## Constants
 ### **Keyboard**

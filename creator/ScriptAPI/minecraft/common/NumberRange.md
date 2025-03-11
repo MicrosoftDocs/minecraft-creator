@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/common.NumberRange Interface
 description: Contents of the @minecraft/common.NumberRange class.
 ---

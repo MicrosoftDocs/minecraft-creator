@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.BlockPermutation Class
 description: Contents of the @minecraft/server.BlockPermutation class.
 ---
 # BlockPermutation Class
 
-Contains the combination of type [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../../minecraft/server/Block.md)).
+Contains the combination of type [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md)).
 
 #### Examples
 
@@ -46,7 +47,7 @@ function addTranslatedSign(log: (message: string, status?: number) => void, targ
 ### **type**
 `read-only type: BlockType;`
 
-The [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) that the permutation has.
+The [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) that the permutation has.
 
 Type: [*BlockType*](BlockType.md)
 

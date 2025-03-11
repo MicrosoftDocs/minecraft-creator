@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.BoundingBoxUtils Class
 description: Contents of the @minecraft/server.BoundingBoxUtils class.
 monikerRange: "=minecraft-bedrock-experimental"
@@ -12,7 +13,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Bounding Box Utils is a utility class that provides a number of useful functions for the creation and utility of [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) objects
+Bounding Box Utils is a utility class that provides a number of useful functions for the creation and utility of [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) objects
 
 ## Methods
 - [createValid](#createvalid)
@@ -32,7 +33,7 @@ Bounding Box Utils is a utility class that provides a number of useful functions
 static createValid(min: Vector3, max: Vector3): BoundingBox
 `
 
-Create a validated instance of a [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) where the min and max components are guaranteed to be (min <= max)
+Create a validated instance of a [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) where the min and max components are guaranteed to be (min <= max)
 
 #### **Parameters**
 - **min**: [*Vector3*](Vector3.md)
@@ -52,7 +53,7 @@ Notes:
 static dilate(box: BoundingBox, size: Vector3): BoundingBox
 `
 
-Expand a [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) by a given amount along each axis.
+Expand a [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) by a given amount along each axis.
 
 Sizes can be negative to perform contraction.
 
@@ -62,7 +63,7 @@ Note: corners can be inverted if the contraction size is greater than the span, 
 - **box**: [*BoundingBox*](BoundingBox.md)
 - **size**: [*Vector3*](Vector3.md)
 
-**Returns** [*BoundingBox*](BoundingBox.md) - Return a new [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object representing the changes
+**Returns** [*BoundingBox*](BoundingBox.md) - Return a new [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) object representing the changes
   
 Notes:
 - This function can't be called in read-only mode.
@@ -72,7 +73,7 @@ Notes:
 static equals(box: BoundingBox, other: BoundingBox): boolean
 `
 
-Check if two [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) objects are identical
+Check if two [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) objects are identical
 
 #### **Parameters**
 - **box**: [*BoundingBox*](BoundingBox.md)
@@ -88,13 +89,13 @@ Notes:
 static expand(box: BoundingBox, other: BoundingBox): BoundingBox
 `
 
-Expand the initial box object bounds to include the 2nd box argument.  The resultant [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object will be a BoundingBox which exactly encompasses the two boxes.
+Expand the initial box object bounds to include the 2nd box argument.  The resultant [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) object will be a BoundingBox which exactly encompasses the two boxes.
 
 #### **Parameters**
 - **box**: [*BoundingBox*](BoundingBox.md)
 - **other**: [*BoundingBox*](BoundingBox.md)
 
-**Returns** [*BoundingBox*](BoundingBox.md) - A new [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) instance representing the smallest possible bounding box which can encompass both
+**Returns** [*BoundingBox*](BoundingBox.md) - A new [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) instance representing the smallest possible bounding box which can encompass both
   
 Notes:
 - This function can't be called in read-only mode.
@@ -104,12 +105,12 @@ Notes:
 static getCenter(box: BoundingBox): Vector3
 `
 
-Calculate the center block of a given [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object.  
+Calculate the center block of a given [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) object.  
 
 #### **Parameters**
 - **box**: [*BoundingBox*](BoundingBox.md)
 
-**Returns** [*Vector3*](Vector3.md) - Note that [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected) - Note that [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected)
+**Returns** [*Vector3*](Vector3.md) - Note that [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected) - Note that [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected)
   
 Notes:
 - This function can't be called in read-only mode.

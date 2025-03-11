@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .HudElement Enumeration
-description: Contents of the .HudElement enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.HudElement Enumeration
+description: Contents of the @minecraft/server.HudElement enumeration.
 ---
 # HudElement Enumeration
 

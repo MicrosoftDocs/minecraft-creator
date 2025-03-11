@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .PrimitiveType Enumeration
-description: Contents of the .PrimitiveType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.PrimitiveType Enumeration
+description: Contents of the @minecraft/server-editor.PrimitiveType enumeration.
 ---
 # PrimitiveType Enumeration
 

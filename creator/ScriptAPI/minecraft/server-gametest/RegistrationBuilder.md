@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-gametest.RegistrationBuilder Class
 description: Contents of the @minecraft/server-gametest.RegistrationBuilder class.
 ---
@@ -165,8 +166,8 @@ structureLocation(structureLocation: minecraftserver.Vector3, structureDimension
 Overrides the default structure placement with a specific location and dimension. If height (y) is set to Dimension.heightRange.max, the structure will snap to the ground. If the dimension is not specified, it will run in the dimension the command was run from.
 
 #### **Parameters**
-- **structureLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-- **structureDimension**?: [*@minecraft/server.DimensionType*](../../minecraft/server/DimensionType.md) | *string* = `null`
+- **structureLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **structureDimension**?: [*@minecraft/server.DimensionType*](../../../scriptapi/minecraft/server/DimensionType.md) | *string* = `null`
 
 **Returns** [*RegistrationBuilder*](RegistrationBuilder.md) - RegistrationBuilder object where additional configuration methods can be called.
   
@@ -174,7 +175,7 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 ### **structureName**
 `

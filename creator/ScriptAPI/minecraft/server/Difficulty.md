@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .Difficulty Enumeration
-description: Contents of the .Difficulty enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.Difficulty Enumeration
+description: Contents of the @minecraft/server.Difficulty enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # Difficulty Enumeration

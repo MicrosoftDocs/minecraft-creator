@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .KeyboardKey Enumeration
-description: Contents of the .KeyboardKey enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.KeyboardKey Enumeration
+description: Contents of the @minecraft/server-editor.KeyboardKey enumeration.
 ---
 # KeyboardKey Enumeration
 

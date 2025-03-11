@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .PlaytestSessionResult Enumeration
-description: Contents of the .PlaytestSessionResult enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.PlaytestSessionResult Enumeration
+description: Contents of the @minecraft/server-editor.PlaytestSessionResult enumeration.
 ---
 # PlaytestSessionResult Enumeration
 

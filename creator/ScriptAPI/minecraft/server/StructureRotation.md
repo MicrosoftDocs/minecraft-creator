@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .StructureRotation Enumeration
-description: Contents of the .StructureRotation enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.StructureRotation Enumeration
+description: Contents of the @minecraft/server.StructureRotation enumeration.
 ---
 # StructureRotation Enumeration
 

@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.JigsawStructurePlaceOptions Interface
 description: Contents of the @minecraft/server.JigsawStructurePlaceOptions class.
 monikerRange: "=minecraft-bedrock-experimental"
@@ -12,7 +13,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Provides additional options for [*@minecraft/server.StructureManager.placeJigsawStructure*](../../minecraft/server/StructureManager.md#placejigsawstructure).
+Provides additional options for [*@minecraft/server.StructureManager.placeJigsawStructure*](../../../scriptapi/minecraft/server/StructureManager.md#placejigsawstructure).
 
 ## Properties
 

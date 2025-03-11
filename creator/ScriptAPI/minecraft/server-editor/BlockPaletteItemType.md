@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .BlockPaletteItemType Enumeration
-description: Contents of the .BlockPaletteItemType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.BlockPaletteItemType Enumeration
+description: Contents of the @minecraft/server-editor.BlockPaletteItemType enumeration.
 ---
 # BlockPaletteItemType Enumeration
 

@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.BlockVolumeBase Class
 description: Contents of the @minecraft/server.BlockVolumeBase class.
 ---
@@ -11,6 +12,7 @@ description: Contents of the @minecraft/server.BlockVolumeBase class.
 ## Classes that extend BlockVolumeBase
 - [*BlockVolume*](BlockVolume.md)
 - [*ListBlockVolume*](ListBlockVolume.md)
+- [*@minecraft/server-editor.RelativeVolumeListBlockVolume*](../../../scriptapi/minecraft/server-editor/RelativeVolumeListBlockVolume.md)
 
 Base type for BlockVolumes.
 
@@ -31,7 +33,7 @@ Base type for BlockVolumes.
 getBlockLocationIterator(): BlockLocationIterator
 `
 
-Fetch a [*@minecraft/server.BlockLocationIterator*](../../minecraft/server/BlockLocationIterator.md) that represents all of the block world locations within the specified volume
+Fetch a [*@minecraft/server.BlockLocationIterator*](../../../scriptapi/minecraft/server/BlockLocationIterator.md) that represents all of the block world locations within the specified volume
 
 **Returns** [*BlockLocationIterator*](BlockLocationIterator.md)
 
@@ -41,7 +43,7 @@ Fetch a [*@minecraft/server.BlockLocationIterator*](../../minecraft/server/Block
 getBoundingBox(): BoundingBox
 `
 
-Return a [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object which represents the validated min and max coordinates of the volume
+Return a [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) object which represents the validated min and max coordinates of the volume
 
 **Returns** [*BoundingBox*](BoundingBox.md)
 
@@ -90,7 +92,7 @@ Notes:
 getSpan(): Vector3
 `
 
-Get a [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) object where each component represents the number of blocks along that axis
+Get a [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) object where each component represents the number of blocks along that axis
 
 **Returns** [*Vector3*](Vector3.md)
 

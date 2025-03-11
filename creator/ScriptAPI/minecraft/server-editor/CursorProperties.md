@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.CursorProperties Interface
 description: Contents of the @minecraft/server-editor.CursorProperties class.
 ---
@@ -36,7 +37,7 @@ Type: [*CursorControlMode*](CursorControlMode.md)
 ### **fillColor**
 `fillColor?: minecraftserver.RGBA;`
 
-Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 ### **fixedModeDistance**
 `fixedModeDistance?: number;`
@@ -52,7 +53,7 @@ Type: *number*
 
 A [Color] Property representing the color of the block cursor object outline
 
-Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 ### **projectThroughLiquid**
 `projectThroughLiquid?: boolean;`

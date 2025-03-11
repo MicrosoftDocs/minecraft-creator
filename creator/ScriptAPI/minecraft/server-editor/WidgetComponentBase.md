@@ -3,12 +3,14 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetComponentBase Class
 description: Contents of the @minecraft/server-editor.WidgetComponentBase class.
 ---
 # WidgetComponentBase Class
 
 ## Classes that extend WidgetComponentBase
+- [*WidgetComponentBoundingBox*](WidgetComponentBoundingBox.md)
 - [*WidgetComponentClipboard*](WidgetComponentClipboard.md)
 - [*WidgetComponentEntity*](WidgetComponentEntity.md)
 - [*WidgetComponentGizmo*](WidgetComponentGizmo.md)
@@ -16,6 +18,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentBase class.
 - [*WidgetComponentRenderPrimitive*](WidgetComponentRenderPrimitive.md)
 - [*WidgetComponentSpline*](WidgetComponentSpline.md)
 - [*WidgetComponentText*](WidgetComponentText.md)
+- [*WidgetComponentVolumeOutline*](WidgetComponentVolumeOutline.md)
 
 ## Properties
 
@@ -31,11 +34,11 @@ Notes:
 ### **location**
 `read-only location: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
   - This property can throw errors when used.
-    - Throws [*@minecraft/server.InvalidWidgetComponentError*](../../minecraft/server/InvalidWidgetComponentError.md)
+    - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md)
 
 ### **lockToSurface**
 `lockToSurface: boolean;`
@@ -57,7 +60,7 @@ Notes:
 ### **offset**
 `offset: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
   - This property can't be edited in read-only mode.
@@ -83,25 +86,11 @@ Notes:
 
 ## Methods
 - [delete](#delete)
-- [setStateChangeEvent](#setstatechangeevent)
 
 ### **delete**
 `
 "delete"(): void
 `
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-  - Throws [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md)
-
-### **setStateChangeEvent**
-`
-setStateChangeEvent(eventFunction?: (arg0: WidgetComponentStateChangeEventData) => void): void
-`
-
-#### **Parameters**
-- **eventFunction**?: (arg0: [*WidgetComponentStateChangeEventData*](WidgetComponentStateChangeEventData.md)) => *void* = `null`
   
 Notes:
 - This function can't be called in read-only mode.

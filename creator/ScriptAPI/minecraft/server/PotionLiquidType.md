@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.PotionLiquidType Class
 description: Contents of the @minecraft/server.PotionLiquidType class.
 monikerRange: "=minecraft-bedrock-experimental"

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InputModifier Enumeration
-description: Contents of the .InputModifier enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.InputModifier Enumeration
+description: Contents of the @minecraft/server-editor.InputModifier enumeration.
 ---
 # InputModifier Enumeration
 

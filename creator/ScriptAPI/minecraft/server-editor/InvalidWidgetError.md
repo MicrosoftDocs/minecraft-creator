@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InvalidWidgetError Class
-description: Contents of the .InvalidWidgetError class.
+ms.date: 02/10/2025
+title: minecraft/server-editor.InvalidWidgetError Class
+description: Contents of the @minecraft/server-editor.InvalidWidgetError class.
 ---
 # InvalidWidgetError Class
 

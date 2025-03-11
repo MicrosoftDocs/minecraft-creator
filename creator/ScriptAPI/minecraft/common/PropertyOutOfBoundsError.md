@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .PropertyOutOfBoundsError Class
-description: Contents of the .PropertyOutOfBoundsError class.
+ms.date: 02/10/2025
+title: minecraft/common.PropertyOutOfBoundsError Class
+description: Contents of the @minecraft/common.PropertyOutOfBoundsError class.
 ---
 # PropertyOutOfBoundsError Class
 

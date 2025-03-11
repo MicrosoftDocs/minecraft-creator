@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-net.PacketSendBeforeEvent Class
 description: Contents of the @minecraft/server-net.PacketSendBeforeEvent class.
 ---
@@ -29,4 +30,4 @@ Type: [*PacketId*](PacketId.md)
 
 Which clients the network packet is being sent to.
 
-Type: [*@minecraft/server.Player*](../../minecraft/server/Player.md)[]
+Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)[]

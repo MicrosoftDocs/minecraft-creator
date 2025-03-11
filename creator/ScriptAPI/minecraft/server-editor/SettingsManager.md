@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.SettingsManager Class
 description: Contents of the @minecraft/server-editor.SettingsManager class.
 ---
 # SettingsManager Class
 
-The SettingsManager (accessible from the [*@minecraft/server-editor.ExtensionContext*](../../minecraft/server-editor/ExtensionContext.md)) is responsible for the management all player settings.
+The SettingsManager (accessible from the [*@minecraft/server-editor.ExtensionContext*](../../../scriptapi/minecraft/server-editor/ExtensionContext.md)) is responsible for the management all player settings.
 
 ## Properties
 

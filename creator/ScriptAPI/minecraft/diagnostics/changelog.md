@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/diagnostics Changelog
 description: Changelog of the `@minecraft/diagnostics` module
 ---

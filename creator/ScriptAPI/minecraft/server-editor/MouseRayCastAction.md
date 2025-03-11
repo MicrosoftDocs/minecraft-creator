@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .MouseRayCastAction type alias.
+ms.date: 02/10/2025
+title: minecraft/server-editor.MouseRayCastAction Type Alias
+description: Contents of the @minecraft/server-editor.MouseRayCastAction type alias.
 ---
 # MouseRayCastAction Type Alias
 

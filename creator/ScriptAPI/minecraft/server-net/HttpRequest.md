@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-net.HttpRequest Class
 description: Contents of the @minecraft/server-net.HttpRequest class.
 ---
@@ -115,7 +116,7 @@ Adds an additional header to the overall list of headers used in the correspondi
 
 #### **Parameters**
 - **key**: *string*
-- **value**: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/SecretString.md) | *string*
+- **value**: [*@minecraft/server-admin.SecretString*](../../../scriptapi/minecraft/server-admin/SecretString.md) | *string*
 
 **Returns** [*HttpRequest*](HttpRequest.md)
   

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .CompoundBlockVolumeAction Enumeration
-description: Contents of the .CompoundBlockVolumeAction enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.CompoundBlockVolumeAction Enumeration
+description: Contents of the @minecraft/server.CompoundBlockVolumeAction enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CompoundBlockVolumeAction Enumeration

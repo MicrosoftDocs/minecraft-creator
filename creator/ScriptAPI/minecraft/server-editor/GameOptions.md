@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.GameOptions Interface
 description: Contents of the @minecraft/server-editor.GameOptions class.
 ---
@@ -38,7 +39,7 @@ Type: [*DaylightCycle*](DaylightCycle.md)
 ### **difficulty**
 `difficulty?: minecraftserver.Difficulty;`
 
-Type: [*@minecraft/server.Difficulty*](../../minecraft/server/Difficulty.md)
+Type: [*@minecraft/server.Difficulty*](../../../scriptapi/minecraft/server/Difficulty.md)
 
 ### **dimensionId**
 `dimensionId?: string;`
@@ -78,7 +79,7 @@ Type: *boolean*
 ### **gameMode**
 `gameMode?: minecraftserver.GameMode;`
 
-Type: [*@minecraft/server.GameMode*](../../minecraft/server/GameMode.md)
+Type: [*@minecraft/server.GameMode*](../../../scriptapi/minecraft/server/GameMode.md)
 
 ### **hardcore**
 `hardcore?: boolean;`
@@ -178,7 +179,7 @@ Type: *number*
 ### **spawnPosition**
 `spawnPosition?: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 ### **startingMap**
 `startingMap?: boolean;`

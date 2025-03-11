@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.IPropertyPane Interface
 description: Contents of the @minecraft/server-editor.IPropertyPane class.
 ---
@@ -33,27 +34,21 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addBlockList](#addblocklist)
 - [addBlockTable](#addblocktable)
 - [addBool](#addbool)
-- [addBool_deprecated](#addbool_deprecated)
 - [addButton](#addbutton)
 - [addButtonPane](#addbuttonpane)
 - [addColorPicker](#addcolorpicker)
-- [addColorPicker_deprecated](#addcolorpicker_deprecated)
 - [addComboBox](#addcombobox)
 - [addDataTable](#adddatatable)
 - [addDivider](#adddivider)
 - [addDropdown](#adddropdown)
-- [addDropdown_deprecated](#adddropdown_deprecated)
 - [addImage](#addimage)
 - [addLink](#addlink)
 - [addNumber](#addnumber)
-- [addNumber_deprecated](#addnumber_deprecated)
 - [addProgressIndicator](#addprogressindicator)
 - [addString](#addstring)
-- [addString_deprecated](#addstring_deprecated)
 - [addText](#addtext)
 - [addToggleGroup](#addtogglegroup)
 - [addVector3](#addvector3)
-- [addVector3_deprecated](#addvector3_deprecated)
 - [collapse](#collapse)
 - [createSubPane](#createsubpane)
 - [getTitle](#gettitle)
@@ -98,20 +93,6 @@ Adds a togglable boolean item to the pane.
 
 **Returns** *IBoolPropertyItem*
 
-### **addBool_deprecated**
-`
-addBool_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsBool): IPropertyItem<T, Prop>
-`
-
-Adds a boolean item to the pane.
-
-#### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsBool*
-
-**Returns** *IPropertyItem<T, Prop>*
-
 ### **addButton**
 `
 addButton(action: ButtonPropertyItemSupportedActionTypes, options: IButtonPropertyItemOptions): IButtonPropertyItem
@@ -149,20 +130,6 @@ Adds a color picker item to the pane.
 - **options**: *IColorPickerPropertyItemOptions*
 
 **Returns** *IColorPickerPropertyItem*
-
-### **addColorPicker_deprecated**
-`
-addColorPicker_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsColorPicker_deprecated): IPropertyItem<T, Prop>
-`
-
-Adds a color picker item to the pane.
-
-#### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsColorPicker_deprecated*
-
-**Returns** *IPropertyItem<T, Prop>*
 
 ### **addComboBox**
 `
@@ -211,20 +178,6 @@ Adds an Dropdown item to the pane.
 
 **Returns** *IDropdownPropertyItem*
 
-### **addDropdown_deprecated**
-`
-addDropdown_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsDropdown): IDropdownPropertyItem_deprecated<T, Prop>
-`
-
-Adds an DropDown item to the pane.
-
-#### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsDropdown*
-
-**Returns** *IDropdownPropertyItem_deprecated<T, Prop>*
-
 ### **addImage**
 `
 addImage(value: IObservableProp<string | ImageResourceData>, options: IImagePropertyItemOptions): IImagePropertyItem
@@ -264,20 +217,6 @@ Adds a number item to the pane.
 
 **Returns** *INumberPropertyItem*
 
-### **addNumber_deprecated**
-`
-addNumber_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsNumber): IPropertyItem<T, Prop>
-`
-
-Adds a number item to the pane.
-
-#### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsNumber*
-
-**Returns** *IPropertyItem<T, Prop>*
-
 ### **addProgressIndicator**
 `
 addProgressIndicator(options: IProgressIndicatorPropertyItemOptions): IProgressIndicatorPropertyItem
@@ -302,20 +241,6 @@ Adds an editable string item to the pane
 - **options**: *IStringPropertyItemOptions*
 
 **Returns** *IStringPropertyItem*
-
-### **addString_deprecated**
-`
-addString_deprecated(obj: T, property: Prop, options: IPropertyItemOptions): IPropertyItem<T, Prop>
-`
-
-Adds a string item to the pane
-
-#### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptions*
-
-**Returns** *IPropertyItem<T, Prop>*
 
 ### **addText**
 `
@@ -355,20 +280,6 @@ Adds a Vec3 item to the pane.
 - **options**: *IVector3PropertyItemOptions*
 
 **Returns** *IVector3PropertyItem*
-
-### **addVector3_deprecated**
-`
-addVector3_deprecated(obj: T, property: Prop, options: IPropertyItemOptionsVector3): IVector3PropertyItem_deprecated<T, Prop>
-`
-
-Adds a Vec3 item to the pane.
-
-#### **Parameters**
-- **obj**: *T*
-- **property**: *Prop*
-- **options**: *IPropertyItemOptionsVector3*
-
-**Returns** *IVector3PropertyItem_deprecated<T, Prop>*
 
 ### **collapse**
 `

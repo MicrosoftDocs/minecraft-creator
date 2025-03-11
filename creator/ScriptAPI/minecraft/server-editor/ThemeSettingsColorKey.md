@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ThemeSettingsColorKey Enumeration
-description: Contents of the .ThemeSettingsColorKey enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ThemeSettingsColorKey Enumeration
+description: Contents of the @minecraft/server-editor.ThemeSettingsColorKey enumeration.
 ---
 # ThemeSettingsColorKey Enumeration
 
@@ -127,6 +128,10 @@ description: Contents of the .ThemeSettingsColorKey enumeration.
 `SelectionVolumeBorder = "SelectionVolumeBorder"`
 ### **SelectionVolumeFill**
 `SelectionVolumeFill = "SelectionVolumeFill"`
+### **SelectionVolumeOutlineBorder**
+`SelectionVolumeOutlineBorder = "SelectionVolumeOutlineBorder"`
+### **SelectionVolumeOutlineFill**
+`SelectionVolumeOutlineFill = "SelectionVolumeOutlineFill"`
 ### **TitleBarBackground**
 `TitleBarBackground = "TitleBarBackground"`
 ### **ViewportOutline**

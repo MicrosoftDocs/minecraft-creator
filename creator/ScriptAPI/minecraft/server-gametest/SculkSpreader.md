@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-gametest.SculkSpreader Class
 description: Contents of the @minecraft/server-gametest.SculkSpreader class.
 ---
@@ -36,7 +37,7 @@ addCursorsWithOffset(offset: minecraftserver.Vector3, charge: number): void
 Adds a cursor - which is a notional waypoint that the sculk will spread in the direction of.
 
 #### **Parameters**
-- **offset**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **offset**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **charge**: *number*
   
 Notes:
@@ -52,7 +53,7 @@ Retrieves the current position of the specified cursor.
 #### **Parameters**
 - **index**: *number*
 
-**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
 - This function can't be called in read-only mode.

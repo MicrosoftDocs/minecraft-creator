@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ButtonPropertyItemVariant Enumeration
-description: Contents of the .ButtonPropertyItemVariant enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ButtonPropertyItemVariant Enumeration
+description: Contents of the @minecraft/server-editor.ButtonPropertyItemVariant enumeration.
 ---
 # ButtonPropertyItemVariant Enumeration
 

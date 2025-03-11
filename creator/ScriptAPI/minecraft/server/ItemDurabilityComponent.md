@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.ItemDurabilityComponent Class
 description: Contents of the @minecraft/server.ItemDurabilityComponent class.
 ---
@@ -94,7 +95,7 @@ getDamageChanceRange(): minecraftcommon.NumberRange
 
 A range of numbers that is used to calculate the damage chance for an item. The damage chance will fall within this range.
 
-**Returns** [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
+**Returns** [*@minecraft/common.NumberRange*](../../../scriptapi/minecraft/common/NumberRange.md)
   
 Notes:
 - This function can't be called in read-only mode.

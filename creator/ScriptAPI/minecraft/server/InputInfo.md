@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.InputInfo Class
 description: Contents of the @minecraft/server.InputInfo class.
 ---
@@ -21,7 +22,7 @@ Type: [*InputMode*](InputMode.md)
 
 Notes:
   - This property can throw errors when used.
-    - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
+    - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **touchOnlyAffectsHotbar**
 `read-only touchOnlyAffectsHotbar: boolean;`
@@ -58,7 +59,7 @@ getButtonState(button: InputButton): ButtonState
   
 Notes:
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"

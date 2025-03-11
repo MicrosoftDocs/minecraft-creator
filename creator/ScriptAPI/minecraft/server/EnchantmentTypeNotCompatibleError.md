@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EnchantmentTypeNotCompatibleError Class
-description: Contents of the .EnchantmentTypeNotCompatibleError class.
+ms.date: 02/10/2025
+title: minecraft/server.EnchantmentTypeNotCompatibleError Class
+description: Contents of the @minecraft/server.EnchantmentTypeNotCompatibleError class.
 ---
 # EnchantmentTypeNotCompatibleError Class
 

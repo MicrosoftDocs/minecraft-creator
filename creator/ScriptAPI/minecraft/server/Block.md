@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.Block Class
 description: Contents of the @minecraft/server.Block class.
 ---
@@ -193,7 +194,7 @@ Type: *number*
 above(steps?: number): Block | undefined
 `
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) above this block (positive in the Y direction).
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) above this block (positive in the Y direction).
 
 #### **Parameters**
 - **steps**?: *number* = `1`
@@ -211,7 +212,7 @@ Notes:
 below(steps?: number): Block | undefined
 `
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) below this block (negative in the Y direction).
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) below this block (negative in the Y direction).
 
 #### **Parameters**
 - **steps**?: *number* = `1`
@@ -229,7 +230,7 @@ Notes:
 bottomCenter(): Vector3
 `
 
-Returns the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) of the center of this block on the X and Z axis.
+Returns the [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) of the center of this block on the X and Z axis.
 
 **Returns** [*Vector3*](Vector3.md)
 
@@ -310,7 +311,7 @@ Notes:
 center(): Vector3
 `
 
-Returns the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) of the center of this block on the X, Y, and Z axis.
+Returns the [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) of the center of this block on the X, Y, and Z axis.
 
 **Returns** [*Vector3*](Vector3.md)
 
@@ -319,7 +320,7 @@ Returns the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) of 
 east(steps?: number): Block | undefined
 `
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the east of this block (positive in the X direction).
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) to the east of this block (positive in the X direction).
 
 #### **Parameters**
 - **steps**?: *number* = `1`
@@ -342,7 +343,7 @@ Gets a component (that represents additional capabilities) for a block - for exa
 #### **Parameters**
 - **componentId**: *T*
   
-  The identifier of the component (e.g., 'minecraft:inventory'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.BlockComponentTypes*](../../minecraft/server/BlockComponentTypes.md) enum.
+  The identifier of the component (e.g., 'minecraft:inventory'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.BlockComponentTypes*](../../../scriptapi/minecraft/server/BlockComponentTypes.md) enum.
 
 **Returns** *BlockComponentReturnType<T> | undefined* - Returns the component if it exists on the block, otherwise undefined.
   
@@ -549,7 +550,7 @@ Notes:
 north(steps?: number): Block | undefined
 `
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the north of this block (negative in the Z direction).
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) to the north of this block (negative in the Z direction).
 
 #### **Parameters**
 - **steps**?: *number* = `1`
@@ -636,7 +637,7 @@ Notes:
 south(steps?: number): Block | undefined
 `
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the south of this block (positive in the Z direction).
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) to the south of this block (positive in the Z direction).
 
 #### **Parameters**
 - **steps**?: *number* = `1`
@@ -678,7 +679,7 @@ Notes:
 west(steps?: number): Block | undefined
 `
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the west of this block (negative in the X direction).
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) to the west of this block (negative in the X direction).
 
 #### **Parameters**
 - **steps**?: *number* = `1`

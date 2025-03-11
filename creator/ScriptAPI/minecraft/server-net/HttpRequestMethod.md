@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .HttpRequestMethod Enumeration
-description: Contents of the .HttpRequestMethod enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-net.HttpRequestMethod Enumeration
+description: Contents of the @minecraft/server-net.HttpRequestMethod enumeration.
 ---
 # HttpRequestMethod Enumeration
 

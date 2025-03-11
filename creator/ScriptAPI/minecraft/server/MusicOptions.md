@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.MusicOptions Interface
 description: Contents of the @minecraft/server.MusicOptions class.
 ---
 # MusicOptions Interface
 
-Additional configuration options for [*@minecraft/server.World.playMusic*](../../minecraft/server/World.md#playmusic)/[*@minecraft/server.World.queueMusic*](../../minecraft/server/World.md#queuemusic) methods.
+Additional configuration options for [*@minecraft/server.World.playMusic*](../../../scriptapi/minecraft/server/World.md#playmusic)/[*@minecraft/server.World.queueMusic*](../../../scriptapi/minecraft/server/World.md#queuemusic) methods.
 
 ## Properties
 

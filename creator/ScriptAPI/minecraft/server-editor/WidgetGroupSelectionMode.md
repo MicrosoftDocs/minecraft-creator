@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .WidgetGroupSelectionMode Enumeration
-description: Contents of the .WidgetGroupSelectionMode enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.WidgetGroupSelectionMode Enumeration
+description: Contents of the @minecraft/server-editor.WidgetGroupSelectionMode enumeration.
 ---
 # WidgetGroupSelectionMode Enumeration
 

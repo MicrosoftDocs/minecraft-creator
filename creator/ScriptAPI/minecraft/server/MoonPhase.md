@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .MoonPhase Enumeration
-description: Contents of the .MoonPhase enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.MoonPhase Enumeration
+description: Contents of the @minecraft/server.MoonPhase enumeration.
 ---
 # MoonPhase Enumeration
 

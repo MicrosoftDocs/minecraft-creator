@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InternalHttpRequestError Class
-description: Contents of the .InternalHttpRequestError class.
+ms.date: 02/10/2025
+title: minecraft/server-net.InternalHttpRequestError Class
+description: Contents of the @minecraft/server-net.InternalHttpRequestError class.
 ---
 # InternalHttpRequestError Class
 

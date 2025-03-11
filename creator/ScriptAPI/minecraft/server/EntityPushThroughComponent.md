@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.EntityPushThroughComponent Class
 description: Contents of the @minecraft/server.EntityPushThroughComponent class.
 ---
@@ -16,14 +17,14 @@ Sets the distance through which the entity can push through.
 ## Properties
 
 ### **value**
-`value: number;`
+`read-only value: number;`
 
 Value of the push through distances of this entity.
 
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can throw errors when used.
 
 ## Constants
 

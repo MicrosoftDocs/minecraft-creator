@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ColorPickerPropertyItemVariant Enumeration
-description: Contents of the .ColorPickerPropertyItemVariant enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ColorPickerPropertyItemVariant Enumeration
+description: Contents of the @minecraft/server-editor.ColorPickerPropertyItemVariant enumeration.
 ---
 # ColorPickerPropertyItemVariant Enumeration
 

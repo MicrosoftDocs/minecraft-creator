@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EntityComponentTypes Enumeration
-description: Contents of the .EntityComponentTypes enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.EntityComponentTypes Enumeration
+description: Contents of the @minecraft/server.EntityComponentTypes enumeration.
 ---
 # EntityComponentTypes Enumeration
 

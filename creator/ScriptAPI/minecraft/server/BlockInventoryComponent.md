@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.BlockInventoryComponent Class
 description: Contents of the @minecraft/server.BlockInventoryComponent class.
 ---
@@ -55,7 +56,7 @@ function placeItemsInChest(log: (message: string, status?: number) => void, targ
 ### **container**
 `read-only container?: Container;`
 
-The container which holds an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md).
+The container which holds an [*@minecraft/server.ItemStack*](../../../scriptapi/minecraft/server/ItemStack.md).
 
 Type: [*Container*](Container.md)
 

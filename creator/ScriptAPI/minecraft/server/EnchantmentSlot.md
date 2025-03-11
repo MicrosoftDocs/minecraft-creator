@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EnchantmentSlot Enumeration
-description: Contents of the .EnchantmentSlot enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.EnchantmentSlot Enumeration
+description: Contents of the @minecraft/server.EnchantmentSlot enumeration.
 ---
 # EnchantmentSlot Enumeration
 

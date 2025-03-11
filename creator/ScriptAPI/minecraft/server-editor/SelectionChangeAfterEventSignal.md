@@ -3,10 +3,11 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: minecraft/server-editor.PrimarySelectionChangeAfterEventSignal Class
-description: Contents of the @minecraft/server-editor.PrimarySelectionChangeAfterEventSignal class.
+ms.date: 02/10/2025
+title: minecraft/server-editor.SelectionChangeAfterEventSignal Class
+description: Contents of the @minecraft/server-editor.SelectionChangeAfterEventSignal class.
 ---
-# PrimarySelectionChangeAfterEventSignal Class
+# SelectionChangeAfterEventSignal Class
 
 ## Methods
 - [subscribe](#subscribe)

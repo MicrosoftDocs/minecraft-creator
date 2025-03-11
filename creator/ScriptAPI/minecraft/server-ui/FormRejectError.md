@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .FormRejectError Class
-description: Contents of the .FormRejectError class.
+ms.date: 02/10/2025
+title: minecraft/server-ui.FormRejectError Class
+description: Contents of the @minecraft/server-ui.FormRejectError class.
 ---
 # FormRejectError Class
 

@@ -3,12 +3,15 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .Plane Enumeration
-description: Contents of the .Plane enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.Plane Enumeration
+description: Contents of the @minecraft/server-editor.Plane enumeration.
 ---
 # Plane Enumeration
 
 ## Constants
+### **None**
+`None = 0`
 ### **XY**
 `XY = 1`
 ### **XZ**

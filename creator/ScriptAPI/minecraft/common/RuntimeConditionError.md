@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .RuntimeConditionError Class
-description: Contents of the .RuntimeConditionError class.
+ms.date: 02/10/2025
+title: minecraft/common.RuntimeConditionError Class
+description: Contents of the @minecraft/common.RuntimeConditionError class.
 ---
 # RuntimeConditionError Class
 

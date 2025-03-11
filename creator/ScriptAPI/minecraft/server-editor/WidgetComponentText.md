@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetComponentText Class
 description: Contents of the @minecraft/server-editor.WidgetComponentText class.
 ---
@@ -16,7 +17,7 @@ description: Contents of the @minecraft/server-editor.WidgetComponentText class.
 ### **color**
 `color: minecraftserver.RGBA;`
 
-Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 Notes:
   - This property can't be edited in read-only mode.

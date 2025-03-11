@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .HudVisibility Enumeration
-description: Contents of the .HudVisibility enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.HudVisibility Enumeration
+description: Contents of the @minecraft/server.HudVisibility enumeration.
 ---
 # HudVisibility Enumeration
 

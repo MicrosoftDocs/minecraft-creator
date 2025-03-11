@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WeightedBlock Interface
 description: Contents of the @minecraft/server-editor.WeightedBlock class.
 ---
@@ -13,7 +14,7 @@ description: Contents of the @minecraft/server-editor.WeightedBlock class.
 ### **block**
 `block: minecraftserver.BlockType;`
 
-Type: [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md)
+Type: [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md)
 
 ### **weight**
 `weight: number;`

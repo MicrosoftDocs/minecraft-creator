@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ItemLockMode Enumeration
-description: Contents of the .ItemLockMode enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.ItemLockMode Enumeration
+description: Contents of the @minecraft/server.ItemLockMode enumeration.
 ---
 # ItemLockMode Enumeration
 

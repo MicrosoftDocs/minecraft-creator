@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.StructureManager Class
 description: Contents of the @minecraft/server.StructureManager class.
 ---
@@ -29,7 +30,7 @@ Manager for Structure related APIs. Includes APIs for creating, getting, placing
 createEmpty(identifier: string, size: Vector3, saveMode?: StructureSaveMode): Structure
 `
 
-Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlockPermutation*](../../minecraft/server/Structure.md#setblockpermutation) to populate the structure with blocks and save changes with [*@minecraft/server.Structure.saveAs*](../../minecraft/server/Structure.md#saveas).
+Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlockPermutation*](../../../scriptapi/minecraft/server/Structure.md#setblockpermutation) to populate the structure with blocks and save changes with [*@minecraft/server.Structure.saveAs*](../../../scriptapi/minecraft/server/Structure.md#saveas).
 
 #### **Parameters**
 - **identifier**: *string*
@@ -47,7 +48,7 @@ Creates an empty Structure in memory. Use [*@minecraft/server.Structure.setBlock
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 ### **createFromWorld**
 `
@@ -74,7 +75,7 @@ Creates a new Structure from blocks in the world. This is functionally equivalen
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 ### **delete**
 `
@@ -93,7 +94,7 @@ Deletes a structure from memory and from the world if it exists.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md)
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 ### **get**
 `
@@ -146,7 +147,7 @@ Places a structure in the world. Structures placed in unloaded chunks will be qu
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **placeJigsaw**
@@ -176,7 +177,7 @@ Places a partial jigsaw structure in the world. This is useful for debugging con
   
   Optional settings to use when generating the jigsaw structure.
 
-**Returns** [*BoundingBox*](BoundingBox.md) - Returns a [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
+**Returns** [*BoundingBox*](BoundingBox.md) - Returns a [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -209,7 +210,7 @@ Places a jigsaw structure in the world.
   
   Optional settings to use when generating the jigsaw structure.
 
-**Returns** [*BoundingBox*](BoundingBox.md) - Returns a [*@minecraft/server.BoundingBox*](../../minecraft/server/BoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
+**Returns** [*BoundingBox*](BoundingBox.md) - Returns a [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-net.PacketReceivedBeforeEvent Class
 description: Contents of the @minecraft/server-net.PacketReceivedBeforeEvent class.
 ---
@@ -36,4 +37,4 @@ Type: *number*
 
 Which client sent the network packet to the game server.
 
-Type: [*@minecraft/server.Player*](../../minecraft/server/Player.md)
+Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)

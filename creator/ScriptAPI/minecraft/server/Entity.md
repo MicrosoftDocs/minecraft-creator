@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.Entity Class
 description: Contents of the @minecraft/server.Entity class.
 ---
@@ -28,7 +29,7 @@ Notes:
 ### **id**
 `read-only id: string;`
 
-Unique identifier of the entity. This identifier is intended to be consistent across loads of a world instance. No meaning should be inferred from the value and structure of this unique identifier - do not parse or interpret it. This property is accessible even if [*@minecraft/server.Entity.isValid*](../../minecraft/server/Entity.md#isvalid) is false.
+Unique identifier of the entity. This identifier is intended to be consistent across loads of a world instance. No meaning should be inferred from the value and structure of this unique identifier - do not parse or interpret it. This property is accessible even if [*@minecraft/server.Entity.isValid*](../../../scriptapi/minecraft/server/Entity.md#isvalid) is false.
 
 Type: *string*
 
@@ -171,7 +172,7 @@ Notes:
 ### **typeId**
 `read-only typeId: string;`
 
-Identifier of the type of the entity - for example, 'minecraft:skeleton'. This property is accessible even if [*@minecraft/server.Entity.isValid*](../../minecraft/server/Entity.md#isvalid) is false.
+Identifier of the type of the entity - for example, 'minecraft:skeleton'. This property is accessible even if [*@minecraft/server.Entity.isValid*](../../../scriptapi/minecraft/server/Entity.md#isvalid) is false.
 
 Type: *string*
 
@@ -236,7 +237,7 @@ Adds or updates an effect, like poison, to the entity.
   Type of effect to add to the entity.
 - **duration**: *number*
   
-  Amount of time, in ticks, for the effect to apply. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds. The value must be within the range [0, 20000000].
+  Amount of time, in ticks, for the effect to apply. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../../scriptapi/minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds. The value must be within the range [0, 20000000].
 - **options**?: [*EntityEffectOptions*](EntityEffectOptions.md) = `null`
   
   Additional options for the effect.
@@ -587,7 +588,7 @@ Gets a component (that represents additional capabilities) for an entity.
 #### **Parameters**
 - **componentId**: *T*
   
-  The identifier of the component (e.g., 'minecraft:health'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.EntityComponentTypes*](../../minecraft/server/EntityComponentTypes.md) enum.
+  The identifier of the component (e.g., 'minecraft:health'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.EntityComponentTypes*](../../../scriptapi/minecraft/server/EntityComponentTypes.md) enum.
 
 **Returns** *EntityComponentReturnType<T> | undefined* - Returns the component if it exists on the entity, otherwise undefined.
   
@@ -996,7 +997,7 @@ Resets an Entity Property back to its default value, as specified in the Entity'
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
 
 ### **runCommand**
 `

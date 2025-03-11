@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ObjectiveSortOrder Enumeration
-description: Contents of the .ObjectiveSortOrder enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.ObjectiveSortOrder Enumeration
+description: Contents of the @minecraft/server.ObjectiveSortOrder enumeration.
 ---
 # ObjectiveSortOrder Enumeration
 

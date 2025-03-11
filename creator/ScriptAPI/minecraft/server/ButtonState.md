@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ButtonState Enumeration
-description: Contents of the .ButtonState enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.ButtonState Enumeration
+description: Contents of the @minecraft/server.ButtonState enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ButtonState Enumeration

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ImageResourceType Enumeration
-description: Contents of the .ImageResourceType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ImageResourceType Enumeration
+description: Contents of the @minecraft/server-editor.ImageResourceType enumeration.
 ---
 # ImageResourceType Enumeration
 

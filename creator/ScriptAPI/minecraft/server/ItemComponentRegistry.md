@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.ItemComponentRegistry Class
 description: Contents of the @minecraft/server.ItemComponentRegistry class.
 ---
@@ -31,4 +32,4 @@ Registers an item custom component that can be used in item JSON configuration.
 Notes:
 - This function can be called in early-execution mode.
 - This function can throw errors.
-  - Throws [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*ItemCustomComponentAlreadyRegisteredError*](ItemCustomComponentAlreadyRegisteredError.md), [*ItemCustomComponentReloadNewComponentError*](ItemCustomComponentReloadNewComponentError.md), [*ItemCustomComponentReloadNewEventError*](ItemCustomComponentReloadNewEventError.md), [*ItemCustomComponentReloadVersionError*](ItemCustomComponentReloadVersionError.md), [*NamespaceNameError*](NamespaceNameError.md)
+  - Throws [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*ItemCustomComponentAlreadyRegisteredError*](ItemCustomComponentAlreadyRegisteredError.md), [*ItemCustomComponentReloadNewComponentError*](ItemCustomComponentReloadNewComponentError.md), [*ItemCustomComponentReloadNewEventError*](ItemCustomComponentReloadNewEventError.md), [*ItemCustomComponentReloadVersionError*](ItemCustomComponentReloadVersionError.md), [*NamespaceNameError*](NamespaceNameError.md)

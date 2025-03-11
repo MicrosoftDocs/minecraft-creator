@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.IBlockPaletteItem Class
 description: Contents of the @minecraft/server-editor.IBlockPaletteItem class.
 ---
@@ -23,7 +24,7 @@ description: Contents of the @minecraft/server-editor.IBlockPaletteItem class.
 getBlock(): minecraftserver.BlockType | undefined
 `
 
-**Returns** [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *undefined*
+**Returns** [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) | *undefined*
 
 ### **getDisplayName**
 `
@@ -45,7 +46,7 @@ setBlock(block: minecraftserver.BlockPermutation | minecraftserver.BlockType | s
 `
 
 #### **Parameters**
-- **block**: [*@minecraft/server.BlockPermutation*](../../minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string*
+- **block**: [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) | *string*
   
 Notes:
 - This function can't be called in read-only mode.

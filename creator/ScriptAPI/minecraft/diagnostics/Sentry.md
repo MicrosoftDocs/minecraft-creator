@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/diagnostics.Sentry Class
 description: Contents of the @minecraft/diagnostics.Sentry class.
 ---
@@ -85,7 +86,7 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*SentryAlreadyInitializedError*](SentryAlreadyInitializedError.md)
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*SentryAlreadyInitializedError*](SentryAlreadyInitializedError.md)
 
 ### **removeTag**
 `

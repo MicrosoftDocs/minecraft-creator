@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.Container Class
 description: Contents of the @minecraft/server.Container class.
 ---
@@ -142,7 +143,7 @@ Notes:
 addItem(itemStack: ItemStack): ItemStack | undefined
 `
 
-Adds an item to the container. The item is placed in the first available slot(s) and can be stacked with existing items of the same type. Note, use [*@minecraft/server.Container.setItem*](../../minecraft/server/Container.md#setitem) if you wish to set the item in a particular slot.
+Adds an item to the container. The item is placed in the first available slot(s) and can be stacked with existing items of the same type. Note, use [*@minecraft/server.Container.setItem*](../../../scriptapi/minecraft/server/Container.md#setitem) if you wish to set the item in a particular slot.
 
 #### **Parameters**
 - **itemStack**: [*ItemStack*](ItemStack.md)
@@ -172,7 +173,7 @@ Notes:
 getItem(slot: number): ItemStack | undefined
 `
 
-Gets an [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) of the item at the specified slot. If the slot is empty, returns `undefined`. This method does not change or clear the contents of the specified slot. To get a reference to a particular slot, see [*@minecraft/server.Container.getSlot*](../../minecraft/server/Container.md#getslot).
+Gets an [*@minecraft/server.ItemStack*](../../../scriptapi/minecraft/server/ItemStack.md) of the item at the specified slot. If the slot is empty, returns `undefined`. This method does not change or clear the contents of the specified slot. To get a reference to a particular slot, see [*@minecraft/server.Container.getSlot*](../../../scriptapi/minecraft/server/Container.md#getslot).
 
 #### **Parameters**
 - **slot**: *number*

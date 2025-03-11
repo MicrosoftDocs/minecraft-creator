@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ItemCustomComponentAlreadyRegisteredError Class
-description: Contents of the .ItemCustomComponentAlreadyRegisteredError class.
+ms.date: 02/10/2025
+title: minecraft/server.ItemCustomComponentAlreadyRegisteredError Class
+description: Contents of the @minecraft/server.ItemCustomComponentAlreadyRegisteredError class.
 ---
 # ItemCustomComponentAlreadyRegisteredError Class
 
