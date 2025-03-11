@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InvalidEntityError Class
-description: Contents of the .InvalidEntityError class.
+ms.date: 02/10/2025
+title: minecraft/server.InvalidEntityError Class
+description: Contents of the @minecraft/server.InvalidEntityError class.
 ---
 # InvalidEntityError Class
 

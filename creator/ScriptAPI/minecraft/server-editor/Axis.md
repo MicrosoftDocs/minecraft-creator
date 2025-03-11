@@ -3,12 +3,15 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .Axis Enumeration
-description: Contents of the .Axis enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.Axis Enumeration
+description: Contents of the @minecraft/server-editor.Axis enumeration.
 ---
 # Axis Enumeration
 
 ## Constants
+### **None**
+`None = 0`
 ### **X**
 `X = 1`
 ### **Y**

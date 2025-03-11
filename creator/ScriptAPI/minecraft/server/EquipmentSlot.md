@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EquipmentSlot Enumeration
-description: Contents of the .EquipmentSlot enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.EquipmentSlot Enumeration
+description: Contents of the @minecraft/server.EquipmentSlot enumeration.
 ---
 # EquipmentSlot Enumeration
 

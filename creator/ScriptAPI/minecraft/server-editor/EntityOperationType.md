@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EntityOperationType Enumeration
-description: Contents of the .EntityOperationType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.EntityOperationType Enumeration
+description: Contents of the @minecraft/server-editor.EntityOperationType enumeration.
 ---
 # EntityOperationType Enumeration
 

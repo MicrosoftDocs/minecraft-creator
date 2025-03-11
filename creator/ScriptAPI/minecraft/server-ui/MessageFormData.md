@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-ui.MessageFormData Class
 description: Contents of the @minecraft/server-ui.MessageFormData class.
 ---
@@ -111,7 +112,7 @@ body(bodyText: minecraftserver.RawMessage | string): MessageFormData
 Method that sets the body text for the modal form.
 
 #### **Parameters**
-- **bodyText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+- **bodyText**: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*
 
 **Returns** [*MessageFormData*](MessageFormData.md)
 
@@ -123,7 +124,7 @@ button1(text: minecraftserver.RawMessage | string): MessageFormData
 Method that sets the text for the first button of the dialog.
 
 #### **Parameters**
-- **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+- **text**: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*
 
 **Returns** [*MessageFormData*](MessageFormData.md)
 
@@ -135,7 +136,7 @@ button2(text: minecraftserver.RawMessage | string): MessageFormData
 This method sets the text for the second button on the dialog.
 
 #### **Parameters**
-- **text**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+- **text**: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*
 
 **Returns** [*MessageFormData*](MessageFormData.md)
 
@@ -147,7 +148,7 @@ show(player: minecraftserver.Player): Promise<MessageFormResponse>
 Creates and shows this modal popup form. Returns asynchronously when the player confirms or cancels the dialog.
 
 #### **Parameters**
-- **player**: [*@minecraft/server.Player*](../../minecraft/server/Player.md)
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
   Player to show this dialog to.
 
@@ -156,7 +157,7 @@ Creates and shows this modal popup form. Returns asynchronously when the player 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/server.InvalidEntityError*](../../minecraft/server/InvalidEntityError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md), [*@minecraft/server.RawMessageError*](../../../scriptapi/minecraft/server/RawMessageError.md)
 
 ### **title**
 `
@@ -166,7 +167,7 @@ title(titleText: minecraftserver.RawMessage | string): MessageFormData
 This builder method sets the title for the modal dialog.
 
 #### **Parameters**
-- **titleText**: [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) | *string*
+- **titleText**: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*
 
 **Returns** [*MessageFormData*](MessageFormData.md)
 

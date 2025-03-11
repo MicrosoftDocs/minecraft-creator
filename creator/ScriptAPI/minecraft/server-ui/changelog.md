@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-ui Changelog
 description: Changelog of the `@minecraft/server-ui` module
 ---
@@ -27,8 +28,23 @@ description: Changelog of the `@minecraft/server-ui` module
   - Changed return type from Promise&lt;[*MessageFormResponse*](MessageFormResponse.md)&gt; (throws exceptions) to Promise&lt;[*MessageFormResponse*](MessageFormResponse.md)&gt; (throws exceptions)
 #### Changed *[`ModalFormData`](ModalFormData.md)*
 - Added function *[`divider`](ModalFormData.md#divider)*
+- Changed function *[`dropdown`](ModalFormData.md#dropdown)*
+  - Added argument `items`
+  - Added argument `dropdownOptions`
+  - Removed argument `options`
+  - Removed argument `defaultValueIndex`
 - Added function *[`header`](ModalFormData.md#header)*
 - Added function *[`label`](ModalFormData.md#label)*
+- Changed function *[`slider`](ModalFormData.md#slider)*
+  - Added argument `sliderOptions`
+  - Removed argument `valueStep`
+  - Removed argument `defaultValue`
+- Changed function *[`textField`](ModalFormData.md#textfield)*
+  - Added argument `textFieldOptions`
+  - Removed argument `defaultValue`
+- Changed function *[`toggle`](ModalFormData.md#toggle)*
+  - Added argument `toggleOptions`
+  - Removed argument `defaultValue`
 ## 1.3.0
 #### Added module dependency `@minecraft/server@1.3.0` 
 #### Removed module dependency `@minecraft/server@1.2.0` 

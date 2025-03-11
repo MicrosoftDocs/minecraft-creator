@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .KeyBindingInfo type alias.
+ms.date: 02/10/2025
+title: minecraft/server-editor.KeyBindingInfo Type Alias
+description: Contents of the @minecraft/server-editor.KeyBindingInfo type alias.
 ---
 # KeyBindingInfo Type Alias
 

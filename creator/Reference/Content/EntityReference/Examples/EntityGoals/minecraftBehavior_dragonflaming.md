@@ -21,7 +21,7 @@ Allows this entity to use a flame-breath attack.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| cooldown_time | 10 | Decimal number | Time (in seconds), after roar, to breath flame. |  | 
+| cooldown_time | 10 | Decimal number | Time (in seconds) between each start of the cycle to roar, then breath flame. |  | 
 | flame_time | 0.5 | Decimal number | Time (in seconds), after roar, to breath flame. |  | 
 | ground_flame_count | 4 | Integer number | Number of ground flame-breath attacks to use before flight-takeoff. |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Ender Dragon: `1` | 

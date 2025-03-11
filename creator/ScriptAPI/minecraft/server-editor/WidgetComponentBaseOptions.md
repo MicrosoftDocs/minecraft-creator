@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetComponentBaseOptions Interface
 description: Contents of the @minecraft/server-editor.WidgetComponentBaseOptions class.
 ---
@@ -18,12 +19,7 @@ Type: *boolean*
 ### **offset**
 `offset?: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-
-### **stateChangeEvent**
-`stateChangeEvent?: (arg0: WidgetComponentStateChangeEventData) => void;`
-
-Type: (arg0: [*WidgetComponentStateChangeEventData*](WidgetComponentStateChangeEventData.md)) => *void*
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 ### **visible**
 `visible?: boolean;`

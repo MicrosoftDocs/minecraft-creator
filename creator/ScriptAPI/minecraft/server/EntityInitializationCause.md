@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EntityInitializationCause Enumeration
-description: Contents of the .EntityInitializationCause enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.EntityInitializationCause Enumeration
+description: Contents of the @minecraft/server.EntityInitializationCause enumeration.
 ---
 # EntityInitializationCause Enumeration
 

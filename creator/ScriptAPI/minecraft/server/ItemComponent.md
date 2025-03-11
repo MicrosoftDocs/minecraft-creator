@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.ItemComponent Class
 description: Contents of the @minecraft/server.ItemComponent class.
 ---
@@ -14,6 +15,7 @@ description: Contents of the @minecraft/server.ItemComponent class.
 ## Classes that extend ItemComponent
 - [*ItemCompostableComponent*](ItemCompostableComponent.md)
 - [*ItemCooldownComponent*](ItemCooldownComponent.md)
+- [*ItemCustomComponentInstance*](ItemCustomComponentInstance.md)
 - [*ItemDurabilityComponent*](ItemDurabilityComponent.md)
 - [*ItemDyeableComponent*](ItemDyeableComponent.md)
 - [*ItemEnchantableComponent*](ItemEnchantableComponent.md)

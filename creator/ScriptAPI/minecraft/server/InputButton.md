@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InputButton Enumeration
-description: Contents of the .InputButton enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.InputButton Enumeration
+description: Contents of the @minecraft/server.InputButton enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # InputButton Enumeration
@@ -12,7 +13,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-All the different input buttons that are supported. Use with [*@minecraft/server.InputInfo.getButtonState*](../../minecraft/server/InputInfo.md#getbuttonstate) via [*@minecraft/server.Player.inputInfo*](../../minecraft/server/Player.md#inputinfo) or [*@minecraft/server.PlayerButtonInputAfterEvent*](../../minecraft/server/PlayerButtonInputAfterEvent.md) via [*@minecraft/server.WorldAfterEvents.playerButtonInput*](../../minecraft/server/WorldAfterEvents.md#playerbuttoninput)
+All the different input buttons that are supported. Use with [*@minecraft/server.InputInfo.getButtonState*](../../../scriptapi/minecraft/server/InputInfo.md#getbuttonstate) via [*@minecraft/server.Player.inputInfo*](../../../scriptapi/minecraft/server/Player.md#inputinfo) or [*@minecraft/server.PlayerButtonInputAfterEvent*](../../../scriptapi/minecraft/server/PlayerButtonInputAfterEvent.md) via [*@minecraft/server.WorldAfterEvents.playerButtonInput*](../../../scriptapi/minecraft/server/WorldAfterEvents.md#playerbuttoninput)
 
 ## Constants
 ### **Jump**

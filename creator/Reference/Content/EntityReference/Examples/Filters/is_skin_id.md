@@ -17,8 +17,9 @@ Returns true if the subject entity is the skin id number provided.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | Integer number | (Required) An integer value. |  | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Villager V2: `"other"` | 
+| test | *not set* | String |  | Villager V2: `"is_skin_id"` | 
+| value | *not set* | Integer number | (Required) An integer value. | Villager V2: `1`, `2`, `3`, `4`, `5` | 
 
 ### Operator choices
 
@@ -66,35 +67,59 @@ At Short (using Defaults)..:
 At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/0/filters/: 
 
 ```json
-{"test":"is_skin_id","subject":"other","value":0}
+{
+  "test": "is_skin_id",
+  "subject": "other",
+  "value": 0
+}
 ```
 
 At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/1/filters/: 
 
 ```json
-{"test":"is_skin_id","subject":"other","value":1}
+{
+  "test": "is_skin_id",
+  "subject": "other",
+  "value": 1
+}
 ```
 
 At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/2/filters/: 
 
 ```json
-{"test":"is_skin_id","subject":"other","value":2}
+{
+  "test": "is_skin_id",
+  "subject": "other",
+  "value": 2
+}
 ```
 
 At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/3/filters/: 
 
 ```json
-{"test":"is_skin_id","subject":"other","value":3}
+{
+  "test": "is_skin_id",
+  "subject": "other",
+  "value": 3
+}
 ```
 
 At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/4/filters/: 
 
 ```json
-{"test":"is_skin_id","subject":"other","value":4}
+{
+  "test": "is_skin_id",
+  "subject": "other",
+  "value": 4
+}
 ```
 
 At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/5/filters/: 
 
 ```json
-{"test":"is_skin_id","subject":"other","value":5}
+{
+  "test": "is_skin_id",
+  "subject": "other",
+  "value": 5
+}
 ```

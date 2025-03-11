@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .WatchdogTerminateReason Enumeration
-description: Contents of the .WatchdogTerminateReason enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.WatchdogTerminateReason Enumeration
+description: Contents of the @minecraft/server.WatchdogTerminateReason enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WatchdogTerminateReason Enumeration

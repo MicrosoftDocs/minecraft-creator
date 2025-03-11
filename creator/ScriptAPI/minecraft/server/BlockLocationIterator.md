@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.BlockLocationIterator Class
 description: Contents of the @minecraft/server.BlockLocationIterator class.
 ---
@@ -53,7 +54,7 @@ Checks if the underlining block volume has been invalidated. Will return false i
   
 Notes:
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 ::: moniker-end
 
 ### **next**

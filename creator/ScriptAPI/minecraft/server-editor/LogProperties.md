@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.LogProperties Interface
 description: Contents of the @minecraft/server-editor.LogProperties class.
 ---
@@ -10,7 +11,7 @@ description: Contents of the @minecraft/server-editor.LogProperties class.
 
 A properties class for the global instance of the logger object.
 
-While the logger object is available through the [*@minecraft/server-editor.ExtensionContext*](../../minecraft/server-editor/ExtensionContext.md) - using the global instance allows the creator to use this properties class to perform direct server->client messaging and broadcasts.
+While the logger object is available through the [*@minecraft/server-editor.ExtensionContext*](../../../scriptapi/minecraft/server-editor/ExtensionContext.md) - using the global instance allows the creator to use this properties class to perform direct server->client messaging and broadcasts.
 
 ## Properties
 
@@ -19,7 +20,7 @@ While the logger object is available through the [*@minecraft/server-editor.Exte
 
 Direct a log message to a specific player.  If no player is specified, then all players will receive the message
 
-Type: [*@minecraft/server.Player*](../../minecraft/server/Player.md)
+Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
 
 ### **tags**
 `tags?: string[];`

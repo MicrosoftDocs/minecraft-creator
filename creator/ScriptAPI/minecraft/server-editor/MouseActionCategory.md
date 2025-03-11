@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .MouseActionCategory Enumeration
-description: Contents of the .MouseActionCategory enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.MouseActionCategory Enumeration
+description: Contents of the @minecraft/server-editor.MouseActionCategory enumeration.
 ---
 # MouseActionCategory Enumeration
 

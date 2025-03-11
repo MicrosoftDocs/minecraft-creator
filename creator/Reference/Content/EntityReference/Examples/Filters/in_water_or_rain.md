@@ -19,9 +19,10 @@ Returns true when the subject entity is in water or rain.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Axolotl: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| test | *not set* | String |  | Axolotl: `"in_water_or_rain"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Axolotl: `true` | 
 
 ### Operator choices
 
@@ -68,5 +69,9 @@ At Short (using Defaults)..:
 
 
 ```json
-{"test":"in_water_or_rain","operator":"!=","value":true}
+{
+  "test": "in_water_or_rain",
+  "operator": "!=",
+  "value": true
+}
 ```

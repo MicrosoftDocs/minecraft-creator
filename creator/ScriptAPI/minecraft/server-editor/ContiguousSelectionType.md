@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ContiguousSelectionType Enumeration
-description: Contents of the .ContiguousSelectionType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ContiguousSelectionType Enumeration
+description: Contents of the @minecraft/server-editor.ContiguousSelectionType enumeration.
 ---
 # ContiguousSelectionType Enumeration
 

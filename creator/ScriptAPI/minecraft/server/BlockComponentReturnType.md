@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .BlockComponentReturnType type alias.
+ms.date: 02/10/2025
+title: minecraft/server.BlockComponentReturnType Type Alias
+description: Contents of the @minecraft/server.BlockComponentReturnType type alias.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockComponentReturnType Type Alias

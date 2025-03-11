@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.Dimension Class
 description: Contents of the @minecraft/server.Dimension class.
 ---
@@ -17,7 +18,7 @@ A class that represents a particular dimension (e.g., The End) within a world.
 
 Height range of the dimension.
 
-Type: [*@minecraft/common.NumberRange*](../../minecraft/common/NumberRange.md)
+Type: [*@minecraft/common.NumberRange*](../../../scriptapi/minecraft/common/NumberRange.md)
 
 Notes:
   - This property can throw errors when used.
@@ -195,7 +196,7 @@ Fills an area of blocks with a specific block type.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*, [*UnloadedChunksError*](UnloadedChunksError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **findClosestBiome**
@@ -224,7 +225,7 @@ Finds the location of the closest biome of a particular type. Note that the find
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), *Error*
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
 ::: moniker-end
 
 ### **getBlock**
@@ -548,7 +549,7 @@ Places the given feature into the dimension at the specified location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
+  - Throws *Error*, [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
 ::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -575,7 +576,7 @@ Places the given feature rule into the dimension at the specified location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
 ::: moniker-end
 
 ### **playSound**

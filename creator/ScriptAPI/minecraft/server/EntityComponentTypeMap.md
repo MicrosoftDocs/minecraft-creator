@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .EntityComponentTypeMap type alias.
+ms.date: 02/10/2025
+title: minecraft/server.EntityComponentTypeMap Type Alias
+description: Contents of the @minecraft/server.EntityComponentTypeMap type alias.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EntityComponentTypeMap Type Alias

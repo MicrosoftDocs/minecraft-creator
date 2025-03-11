@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.TransactionManager Class
 description: Contents of the @minecraft/server-editor.TransactionManager class.
 ---
@@ -26,9 +27,8 @@ The transactions are stored as a stack, and can be undone in stack order to rest
 - [redo](#redo)
 - [redoSize](#redosize)
 - [trackBlockChangeArea](#trackblockchangearea)
-- [trackBlockChangeCompoundBlockVolume](#trackblockchangecompoundblockvolume)
 - [trackBlockChangeList](#trackblockchangelist)
-- [trackBlockChangeSelection](#trackblockchangeselection)
+- [trackBlockChangeVolume](#trackblockchangevolume)
 - [undo](#undo)
 - [undoSize](#undosize)
 
@@ -38,7 +38,7 @@ addEntityOperation(entity: minecraftserver.Entity, type: EntityOperationType): b
 `
 
 #### **Parameters**
-- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+- **entity**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
 - **type**: [*EntityOperationType*](EntityOperationType.md)
 
 **Returns** *boolean*
@@ -193,32 +193,12 @@ Begin tracking block changes in a specified area.  These will be added to a pend
 The pending list will be added to the open transaction record when a commit has been issued.
 
 #### **Parameters**
-- **from**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **from**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
   Min block location of a bounding area
-- **to**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **to**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
   Max block location of a bounding area
-
-**Returns** *boolean*
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-
-### **trackBlockChangeCompoundBlockVolume**
-`
-trackBlockChangeCompoundBlockVolume(compoundBlockVolume: minecraftserver.CompoundBlockVolume): boolean
-`
-
-Begin tracking block changes in an area defined by a [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md).  These will be added to a pending changes list.
-
-The pending list will be added to the open transaction record when a commit has been issued.
-
-#### **Parameters**
-- **compoundBlockVolume**: [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
-  
-  [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) to track.  Only non-void block locations will be tracked -- any changes falling into a void/negative space will not be tracked
 
 **Returns** *boolean*
   
@@ -234,7 +214,7 @@ trackBlockChangeList(locations: minecraftserver.Vector3[]): boolean
 Begin tracking block changes in a list of specified block locations.
 
 #### **Parameters**
-- **locations**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)[]
+- **locations**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[]
   
   An array of block locations to monitor for changes
 
@@ -244,23 +224,13 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
 
-### **trackBlockChangeSelection**
+### **trackBlockChangeVolume**
 `
-trackBlockChangeSelection(selection: Selection): boolean
+trackBlockChangeVolume(blockVolume: minecraftserver.BlockVolumeBase): boolean
 `
-
-Begin tracking block changes that may happen in a selection volume.
-
-The volume is copied, so tracking will not move if the selection volume is translated after this instruction is issued.
-
-Selection Volumes can also represent irregular shapes with non-contiguous blocks and this tracking call will honor the actual selected areas in the volume (and not the negative space) (see [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) for more details
 
 #### **Parameters**
-- **selection**: [*Selection*](Selection.md)
-  
-  A collection of block location volumes represented by a Selection volume to monitor for changes.
-  
-  The Selection Volume is copied, so further changes to the volume after this call will not be reflected in the tracking list.
+- **blockVolume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md)
 
 **Returns** *boolean*
   

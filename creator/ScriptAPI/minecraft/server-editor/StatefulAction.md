@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .StatefulAction type alias.
+ms.date: 02/10/2025
+title: minecraft/server-editor.StatefulAction Type Alias
+description: Contents of the @minecraft/server-editor.StatefulAction type alias.
 ---
 # StatefulAction Type Alias
 

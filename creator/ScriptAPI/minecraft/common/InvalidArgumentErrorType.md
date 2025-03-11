@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InvalidArgumentErrorType Enumeration
-description: Contents of the .InvalidArgumentErrorType enumeration.
+ms.date: 02/10/2025
+title: minecraft/common.InvalidArgumentErrorType Enumeration
+description: Contents of the @minecraft/common.InvalidArgumentErrorType enumeration.
 ---
 # InvalidArgumentErrorType Enumeration
 

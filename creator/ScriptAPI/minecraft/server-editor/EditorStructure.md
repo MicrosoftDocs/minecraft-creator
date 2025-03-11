@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.EditorStructure Interface
 description: Contents of the @minecraft/server-editor.EditorStructure class.
 ---
@@ -18,7 +19,7 @@ Type: *string*
 ### **structure**
 `structure: minecraftserver.Structure;`
 
-Type: [*@minecraft/server.Structure*](../../minecraft/server/Structure.md)
+Type: [*@minecraft/server.Structure*](../../../scriptapi/minecraft/server/Structure.md)
 
 ### **tags**
 `tags: string[];`

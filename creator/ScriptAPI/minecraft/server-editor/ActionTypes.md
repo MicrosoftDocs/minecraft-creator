@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ActionTypes Enumeration
-description: Contents of the .ActionTypes enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ActionTypes Enumeration
+description: Contents of the @minecraft/server-editor.ActionTypes enumeration.
 ---
 # ActionTypes Enumeration
 

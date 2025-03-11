@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .CustomComponentInvalidRegistryError Class
-description: Contents of the .CustomComponentInvalidRegistryError class.
+ms.date: 02/10/2025
+title: minecraft/server.CustomComponentInvalidRegistryError Class
+description: Contents of the @minecraft/server.CustomComponentInvalidRegistryError class.
 ---
 # CustomComponentInvalidRegistryError Class
 

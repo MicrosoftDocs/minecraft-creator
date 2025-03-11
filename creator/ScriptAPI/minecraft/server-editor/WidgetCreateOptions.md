@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetCreateOptions Interface
 description: Contents of the @minecraft/server-editor.WidgetCreateOptions class.
 ---
@@ -18,7 +19,7 @@ Type: *boolean*
 ### **collisionOffset**
 `collisionOffset?: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 ### **collisionRadius**
 `collisionRadius?: number;`
@@ -49,3 +50,18 @@ Type: (arg0: [*WidgetStateChangeEventData*](WidgetStateChangeEventData.md)) => *
 `visible?: boolean;`
 
 Type: *boolean*
+
+### **widgetName**
+`widgetName?: string;`
+
+Type: *string*
+
+### **worldBoundsMax**
+`worldBoundsMax?: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+### **worldBoundsMin**
+`worldBoundsMin?: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)

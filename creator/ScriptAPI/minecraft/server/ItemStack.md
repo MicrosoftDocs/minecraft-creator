@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.ItemStack Class
 description: Contents of the @minecraft/server.ItemStack class.
 ---
@@ -267,7 +268,7 @@ Gets a component (that represents additional capabilities) for an item stack.
 #### **Parameters**
 - **componentId**: *T*
   
-  The identifier of the component (e.g., 'minecraft:food'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.ItemComponentTypes*](../../minecraft/server/ItemComponentTypes.md) enum.
+  The identifier of the component (e.g., 'minecraft:food'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs are those in the [*@minecraft/server.ItemComponentTypes*](../../../scriptapi/minecraft/server/ItemComponentTypes.md) enum and custom component IDs registered with the [*@minecraft/server.ItemComponentRegistry*](../../../scriptapi/minecraft/server/ItemComponentRegistry.md).
 
 **Returns** *ItemComponentReturnType<T> | undefined* - Returns the component if it exists on the item stack, otherwise undefined.
 

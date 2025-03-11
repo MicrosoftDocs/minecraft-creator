@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .LiquidType Enumeration
-description: Contents of the .LiquidType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.LiquidType Enumeration
+description: Contents of the @minecraft/server.LiquidType enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # LiquidType Enumeration

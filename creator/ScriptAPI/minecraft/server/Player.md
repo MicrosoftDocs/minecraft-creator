@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.Player Class
 description: Contents of the @minecraft/server.Player class.
 ---
@@ -12,7 +13,7 @@ description: Contents of the @minecraft/server.Player class.
 - [*Entity*](Entity.md)
 
 ## Classes that extend Player
-- [*@minecraft/server-gametest.SimulatedPlayer*](../../minecraft/server-gametest/SimulatedPlayer.md)
+- [*@minecraft/server-gametest.SimulatedPlayer*](../../../scriptapi/minecraft/server-gametest/SimulatedPlayer.md)
 
 Represents a player within the world.
 
@@ -539,7 +540,7 @@ Sends a message to the player.
   
 Notes:
 - This function can throw errors.
-  - This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*RawMessageError*](RawMessageError.md)
 
 #### Examples
 

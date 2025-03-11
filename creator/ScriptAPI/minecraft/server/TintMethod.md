@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .TintMethod Enumeration
-description: Contents of the .TintMethod enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.TintMethod Enumeration
+description: Contents of the @minecraft/server.TintMethod enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # TintMethod Enumeration

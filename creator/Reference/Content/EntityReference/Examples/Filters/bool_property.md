@@ -16,9 +16,10 @@ Returns true when the bool actor property matches the value provided.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | *not set* | String | (Required) The property name to look for |  | 
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| domain | *not set* | String | (Required) The property name to look for | Bee: `"minecraft:has_nectar"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bee: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| test | *not set* | String |  | Bee: `"bool_property"` | 
 | value | true | Boolean true/false | (Optional) true or false. |  | 
 
 ### Operator choices
@@ -67,17 +68,28 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/: 
 
 ```json
-{"test":"bool_property","domain":"minecraft:has_nectar","operator":"!="}
+{
+  "test": "bool_property",
+  "domain": "minecraft:has_nectar",
+  "operator": "!="
+}
 ```
 
 At /minecraft:entity/events/find_hive_timeout/sequence/0/filters/: 
 
 ```json
-{"test":"bool_property","operator":"!=","domain":"minecraft:has_nectar"}
+{
+  "test": "bool_property",
+  "operator": "!=",
+  "domain": "minecraft:has_nectar"
+}
 ```
 
 At /minecraft:entity/events/find_hive_timeout/sequence/1/filters/: 
 
 ```json
-{"test":"bool_property","domain":"minecraft:has_nectar"}
+{
+  "test": "bool_property",
+  "domain": "minecraft:has_nectar"
+}
 ```

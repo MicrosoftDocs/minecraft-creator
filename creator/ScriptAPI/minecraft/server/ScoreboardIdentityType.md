@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ScoreboardIdentityType Enumeration
-description: Contents of the .ScoreboardIdentityType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.ScoreboardIdentityType Enumeration
+description: Contents of the @minecraft/server.ScoreboardIdentityType enumeration.
 ---
 # ScoreboardIdentityType Enumeration
 

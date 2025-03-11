@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.ExplosionOptions Interface
 description: Contents of the @minecraft/server.ExplosionOptions class.
 ---
 # ExplosionOptions Interface
 
-Additional configuration options for the [*@minecraft/server.Dimension.createExplosion*](../../minecraft/server/Dimension.md#createexplosion) method.
+Additional configuration options for the [*@minecraft/server.Dimension.createExplosion*](../../../scriptapi/minecraft/server/Dimension.md#createexplosion) method.
 
 #### Examples
 

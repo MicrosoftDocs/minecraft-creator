@@ -13,37 +13,13 @@ After you get comfortable with the basics of saving, exporting, and importing st
 
 In this tutorial, you will learn how to use structure blocks to:
 
-- Quickly delete a structure
 - Rotate a structure
-- Take a cross-section of the world (for science purposes)
-
-## Delete a Structure
-
-If you built a structure and you don't want it anymore, you can use a structure block to delete it quickly.
-
-1. Start by making a note of the dimensions of the selection. One way to do this is to place a structure block and then adjust the selection lines. You could save your structure at this point, in case you want to get it back later.
-
-   ![Image of a structure slated to be deleted](../Media/StructureBlock/selected_structure_for_deletion.png)
-
-   In this image, the selection box encompasses the structure and a one-block depth into the ground to show that something will be different in the "after" picture.
-
-1. Now, place a structure block and adjust the y-offset until it selects nothing but empty air.
-
-   ![Image of an empty selection box.](../Media/StructureBlock/empty_selection.png)
-
-1. Save this selection as something like **mystructure:empty**.
- 
-1. Use a Load structure block to load mystructure:empty and make sure the **Remove Blocks:** toggle is not set to **Remove**.
-
-1. An empty selection will be loaded over the structure.
-
-   ![Image of an empty field where a structure used to be, with some confused bunnies.](../Media/StructureBlock/deleted_structure.png)
-
-   That was much faster than deleting it block-by-block.
+- Load a group of mobs
+- Take a cross-section of the world
 
 ## Rotate a Structure
 
-Suppose you built a structure and then realized it's facing the wrong direction. That's okay. 
+Suppose you built a structure and then realized it's facing the wrong direction. That's okay. We can fix it.
 
 1. Start by exporting the structure and saving it on your computer.
 
@@ -59,9 +35,27 @@ Suppose you built a structure and then realized it's facing the wrong direction.
 
    ![Image of the saved structure pointing at a distant village like we want it to.](../Media/StructureBlock/rotated_arrow_structure.png)
 
-   Now the arrow is pointing the correct direction.
+   Now the structure is pointing the correct direction.
 
-## Take a Cross-Section of the world ... for Science!
+
+## Load a Group of Mobs - Without the Structure
+
+You can use a structure block to select, save, and load just a group of mobs. Basically, you create a structure that *has no blocks* - it's just the mobs inside and the air blocks around them.
+
+1. Start by selecting a structure that will contain your spawned-in mobs.
+
+1. Spawn them in the usual way - with eggs or by summoning them with a command.
+
+1. Select only the blocks containing the mobs. It will look like a room without walls.
+
+   ![Image of a selected group of raiders](../Media/StructureBlock/save_raiders_only.png)
+
+1. Save the selection like you would any other structure.
+
+1. Use a **load** block to bring in the mobs.
+
+
+## Take a Cross-Section of the World
 
 A cross-section or "core sample" is a good way to see what's going on underground. You can use this to check for an Ancient City, or to evaluate the density of diamonds, or to see if your [cave carver feature](../../Reference/Content/FeaturesReference/Examples/Features/minecraftCave_carver_feature.md) is functioning as expected.
 

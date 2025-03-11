@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .SpeedSettingsProperty Enumeration
-description: Contents of the .SpeedSettingsProperty enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.SpeedSettingsProperty Enumeration
+description: Contents of the @minecraft/server-editor.SpeedSettingsProperty enumeration.
 ---
 # SpeedSettingsProperty Enumeration
 

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .UnloadedChunksError Class
-description: Contents of the .UnloadedChunksError class.
+ms.date: 02/10/2025
+title: minecraft/server.UnloadedChunksError Class
+description: Contents of the @minecraft/server.UnloadedChunksError class.
 ---
 # UnloadedChunksError Class
 

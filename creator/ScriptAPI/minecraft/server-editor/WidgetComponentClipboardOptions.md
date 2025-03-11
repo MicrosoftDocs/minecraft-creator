@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetComponentClipboardOptions Interface
 description: Contents of the @minecraft/server-editor.WidgetComponentClipboardOptions class.
 ---
@@ -13,37 +14,47 @@ description: Contents of the @minecraft/server-editor.WidgetComponentClipboardOp
 
 ## Properties
 
-### **boundsFillColor**
-`boundsFillColor?: minecraftserver.RGBA;`
-
-Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
-
-### **boundsOutlineColor**
-`boundsOutlineColor?: minecraftserver.RGBA;`
-
-Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
-
-### **clipboardMirror**
-`clipboardMirror?: minecraftserver.StructureMirrorAxis;`
-
-Type: [*@minecraft/server.StructureMirrorAxis*](../../minecraft/server/StructureMirrorAxis.md)
-
-### **clipboardNormalizedOrigin**
-`clipboardNormalizedOrigin?: minecraftserver.Vector3;`
-
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-
 ### **clipboardOffset**
 `clipboardOffset?: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
-### **clipboardRotation**
-`clipboardRotation?: minecraftserver.StructureRotation;`
+### **highlightHullColor**
+`highlightHullColor?: minecraftserver.RGBA;`
 
-Type: [*@minecraft/server.StructureRotation*](../../minecraft/server/StructureRotation.md)
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
-### **showBounds**
-`showBounds?: boolean;`
+### **highlightOutlineColor**
+`highlightOutlineColor?: minecraftserver.RGBA;`
+
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
+
+### **hullColor**
+`hullColor?: minecraftserver.RGBA;`
+
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
+
+### **mirror**
+`mirror?: minecraftserver.StructureMirrorAxis;`
+
+Type: [*@minecraft/server.StructureMirrorAxis*](../../../scriptapi/minecraft/server/StructureMirrorAxis.md)
+
+### **normalizedOrigin**
+`normalizedOrigin?: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+### **outlineColor**
+`outlineColor?: minecraftserver.RGBA;`
+
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
+
+### **rotation**
+`rotation?: minecraftserver.StructureRotation;`
+
+Type: [*@minecraft/server.StructureRotation*](../../../scriptapi/minecraft/server/StructureRotation.md)
+
+### **showOutline**
+`showOutline?: boolean;`
 
 Type: *boolean*

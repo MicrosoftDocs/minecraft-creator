@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .WeatherType Enumeration
-description: Contents of the .WeatherType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.WeatherType Enumeration
+description: Contents of the @minecraft/server.WeatherType enumeration.
 ---
 # WeatherType Enumeration
 

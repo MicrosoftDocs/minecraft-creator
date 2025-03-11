@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.System Class
 description: Contents of the @minecraft/server.System class.
 ---
@@ -89,12 +90,12 @@ Notes:
 clearJob(jobId: number): void
 `
 
-Cancels the execution of a job queued via [*@minecraft/server.System.runJob*](../../minecraft/server/System.md#runjob).
+Cancels the execution of a job queued via [*@minecraft/server.System.runJob*](../../../scriptapi/minecraft/server/System.md#runjob).
 
 #### **Parameters**
 - **jobId**: *number*
   
-  The job ID returned from [*@minecraft/server.System.runJob*](../../minecraft/server/System.md#runjob).
+  The job ID returned from [*@minecraft/server.System.runJob*](../../../scriptapi/minecraft/server/System.md#runjob).
   
 Notes:
 - This function can be called in early-execution mode.
@@ -104,7 +105,7 @@ Notes:
 clearRun(runId: number): void
 `
 
-Cancels the execution of a function run that was previously scheduled via [*@minecraft/server.System.run*](../../minecraft/server/System.md#run).
+Cancels the execution of a function run that was previously scheduled via [*@minecraft/server.System.run*](../../../scriptapi/minecraft/server/System.md#run).
 
 #### **Parameters**
 - **runId**: *number*
@@ -202,7 +203,7 @@ Queues a generator to run until completion.  The generator will be given a time 
   
   The instance of the generator to run.
 
-**Returns** *number* - An opaque handle that can be used with [*@minecraft/server.System.clearJob*](../../minecraft/server/System.md#clearjob) to stop the run of this generator.
+**Returns** *number* - An opaque handle that can be used with [*@minecraft/server.System.clearJob*](../../../scriptapi/minecraft/server/System.md#clearjob) to stop the run of this generator.
   
 Notes:
 - This function can be called in early-execution mode.
@@ -279,7 +280,7 @@ Causes an event to fire within script with the specified message ID and payload.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*NamespaceNameError*](NamespaceNameError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*NamespaceNameError*](NamespaceNameError.md)
 ::: moniker-end
 
 ### **waitTicks**
@@ -299,4 +300,4 @@ waitTicks returns a promise that resolves after the requested number of ticks.
 Notes:
 - This function can be called in early-execution mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)

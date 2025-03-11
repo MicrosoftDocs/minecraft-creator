@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .LocationOutOfWorldBoundariesError Class
-description: Contents of the .LocationOutOfWorldBoundariesError class.
+ms.date: 02/10/2025
+title: minecraft/server.LocationOutOfWorldBoundariesError Class
+description: Contents of the @minecraft/server.LocationOutOfWorldBoundariesError class.
 ---
 # LocationOutOfWorldBoundariesError Class
 

@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.Structure Class
 description: Contents of the @minecraft/server.Structure class.
 ---
 # Structure Class
 
-Represents a loaded structure template (.mcstructure file). Structures can be placed in a world using the /structure command or the [*@minecraft/server.StructureManager*](../../minecraft/server/StructureManager.md) APIs.
+Represents a loaded structure template (.mcstructure file). Structures can be placed in a world using the /structure command or the [*@minecraft/server.StructureManager*](../../../scriptapi/minecraft/server/StructureManager.md) APIs.
 
 ## Properties
 
@@ -65,7 +66,7 @@ Returns a BlockPermutation representing the block contained within the Structure
   
 Notes:
 - This function can throw errors.
-  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
 ### **getIsWaterlogged**
 `
@@ -83,7 +84,7 @@ Returns whether the block at the given location is waterlogged.
   
 Notes:
 - This function can throw errors.
-  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
 ### **saveAs**
 `
@@ -105,7 +106,7 @@ Creates a copy of a Structure and saves it with a new name.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
 ### **saveToWorld**
 `
@@ -140,4 +141,4 @@ Sets a BlockPermutation within a Structure.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.InvalidArgumentError*](../../minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)

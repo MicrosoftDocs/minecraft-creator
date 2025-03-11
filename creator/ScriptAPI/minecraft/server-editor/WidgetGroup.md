@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetGroup Class
 description: Contents of the @minecraft/server-editor.WidgetGroup class.
 ---
@@ -48,7 +49,7 @@ createWidget(location: minecraftserver.Vector3, options?: WidgetCreateOptions): 
 `
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **options**?: [*WidgetCreateOptions*](WidgetCreateOptions.md) = `null`
 
 **Returns** [*Widget*](Widget.md)
@@ -56,7 +57,7 @@ createWidget(location: minecraftserver.Vector3, options?: WidgetCreateOptions): 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
+  - Throws *Error*, [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
 
 ### **delete**
 `

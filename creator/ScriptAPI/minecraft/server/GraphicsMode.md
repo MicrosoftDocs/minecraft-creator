@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .GraphicsMode Enumeration
-description: Contents of the .GraphicsMode enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.GraphicsMode Enumeration
+description: Contents of the @minecraft/server.GraphicsMode enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # GraphicsMode Enumeration
@@ -12,7 +13,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Describes the graphics mode of a client. Used by [*@minecraft/server.Player.graphicsMode*](../../minecraft/server/Player.md#graphicsmode)
+Describes the graphics mode of a client. Used by [*@minecraft/server.Player.graphicsMode*](../../../scriptapi/minecraft/server/Player.md#graphicsmode)
 
 ## Constants
 ### **Deferred**

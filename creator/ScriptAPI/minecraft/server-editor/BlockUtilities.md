@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.BlockUtilities Class
 description: Contents of the @minecraft/server-editor.BlockUtilities class.
 ---
@@ -16,12 +17,12 @@ description: Contents of the @minecraft/server-editor.BlockUtilities class.
 
 ### **fillVolume**
 `
-fillVolume(volume: minecraftserver.BlockVolumeBase | minecraftserver.CompoundBlockVolume | Selection, block?: minecraftserver.BlockPermutation | minecraftserver.BlockType | string): void
+fillVolume(volume: minecraftserver.BlockVolumeBase | minecraftserver.CompoundBlockVolume | RelativeVolumeListBlockVolume, block?: minecraftserver.BlockPermutation | minecraftserver.BlockType | string): void
 `
 
 #### **Parameters**
-- **volume**: [*@minecraft/server.BlockVolumeBase*](../../minecraft/server/BlockVolumeBase.md) | [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) | [*Selection*](Selection.md)
-- **block**?: [*@minecraft/server.BlockPermutation*](../../minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string* = `null`
+- **volume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*@minecraft/server.CompoundBlockVolume*](../../../scriptapi/minecraft/server/CompoundBlockVolume.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
+- **block**?: [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) | *string* = `null`
   
 Notes:
 - This function can't be called in read-only mode.
@@ -35,12 +36,12 @@ getContiguousSelection(properties?: ContiguousSelectionProperties): minecraftser
 #### **Parameters**
 - **properties**?: [*ContiguousSelectionProperties*](ContiguousSelectionProperties.md) = `null`
 
-**Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md)
+**Returns** [*@minecraft/server.CompoundBlockVolume*](../../../scriptapi/minecraft/server/CompoundBlockVolume.md)
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *@minecraft/server.Error*
+  - Throws *Error*
 
 ### **getFacePreviewSelection**
 `
@@ -50,12 +51,12 @@ getFacePreviewSelection(properties?: QuickExtrudeProperties): minecraftserver.Li
 #### **Parameters**
 - **properties**?: [*QuickExtrudeProperties*](QuickExtrudeProperties.md) = `null`
 
-**Returns** [*@minecraft/server.ListBlockVolume*](../../minecraft/server/ListBlockVolume.md)
+**Returns** [*@minecraft/server.ListBlockVolume*](../../../scriptapi/minecraft/server/ListBlockVolume.md)
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *@minecraft/server.Error*
+  - Throws *Error*
 
 ### **quickExtrude**
 `

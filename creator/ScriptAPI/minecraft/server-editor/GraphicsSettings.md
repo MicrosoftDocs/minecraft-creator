@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.GraphicsSettings Class
 description: Contents of the @minecraft/server-editor.GraphicsSettings class.
 ---
 # GraphicsSettings Class
 
-Settings category that manages [*@minecraft/server-editor.GraphicsSettingsProperty*](../../minecraft/server-editor/GraphicsSettingsProperty.md) configurations.
+Settings category that manages [*@minecraft/server-editor.GraphicsSettingsProperty*](../../../scriptapi/minecraft/server-editor/GraphicsSettingsProperty.md) configurations.
 
 ## Methods
 - [get](#get)
