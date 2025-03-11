@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .MemoryTier Enumeration
-description: Contents of the .MemoryTier enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.MemoryTier Enumeration
+description: Contents of the @minecraft/server.MemoryTier enumeration.
 ---
 # MemoryTier Enumeration
 

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .DyeColor Enumeration
-description: Contents of the .DyeColor enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.DyeColor Enumeration
+description: Contents of the @minecraft/server.DyeColor enumeration.
 ---
 # DyeColor Enumeration
 

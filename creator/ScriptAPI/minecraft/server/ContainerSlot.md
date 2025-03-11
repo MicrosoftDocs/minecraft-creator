@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.ContainerSlot Class
 description: Contents of the @minecraft/server.ContainerSlot class.
 ---
@@ -103,7 +104,7 @@ Type: [*ItemType*](ItemType.md)
 
 Notes:
   - This property can throw errors when used.
-    - Throws [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+    - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **typeId**
 `read-only typeId: string;`

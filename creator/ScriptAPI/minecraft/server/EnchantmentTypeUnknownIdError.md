@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EnchantmentTypeUnknownIdError Class
-description: Contents of the .EnchantmentTypeUnknownIdError class.
+ms.date: 02/10/2025
+title: minecraft/server.EnchantmentTypeUnknownIdError Class
+description: Contents of the @minecraft/server.EnchantmentTypeUnknownIdError class.
 ---
 # EnchantmentTypeUnknownIdError Class
 

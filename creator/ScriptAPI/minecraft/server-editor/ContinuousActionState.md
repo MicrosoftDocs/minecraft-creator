@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ContinuousActionState Enumeration
-description: Contents of the .ContinuousActionState enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ContinuousActionState Enumeration
+description: Contents of the @minecraft/server-editor.ContinuousActionState enumeration.
 ---
 # ContinuousActionState Enumeration
 

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .BlockVolumeIntersection Enumeration
-description: Contents of the .BlockVolumeIntersection enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.BlockVolumeIntersection Enumeration
+description: Contents of the @minecraft/server.BlockVolumeIntersection enumeration.
 ---
 # BlockVolumeIntersection Enumeration
 

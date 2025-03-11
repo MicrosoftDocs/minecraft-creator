@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-net.HttpHeader Class
 description: Contents of the @minecraft/server-net.HttpHeader class.
 ---
@@ -53,7 +54,7 @@ Notes:
 
 Value of the HTTP header.
 
-Type: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/SecretString.md) | *string*
+Type: [*@minecraft/server-admin.SecretString*](../../../scriptapi/minecraft/server-admin/SecretString.md) | *string*
 
 Notes:
   - This property can be edited in early-execution mode.
@@ -68,7 +69,7 @@ new HttpHeader(key: string, value: minecraftserveradmin.SecretString | string)
 
 #### **Parameters**
 - **key**: *string*
-- **value**: [*@minecraft/server-admin.SecretString*](../../minecraft/server-admin/SecretString.md) | *string*
+- **value**: [*@minecraft/server-admin.SecretString*](../../../scriptapi/minecraft/server-admin/SecretString.md) | *string*
 
 **Returns** [*HttpHeader*](HttpHeader.md)
 

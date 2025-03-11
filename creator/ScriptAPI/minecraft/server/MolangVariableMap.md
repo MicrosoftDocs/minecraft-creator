@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.MolangVariableMap Class
 description: Contents of the @minecraft/server.MolangVariableMap class.
 ---
@@ -96,11 +97,11 @@ Adds the following variables to Molang:
 
 - `<variable_name>.speed` - Speed number provided
 
-- `<variable_name>.direction_x` - X value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
+- `<variable_name>.direction_x` - X value from the [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) provided
 
-- `<variable_name>.direction_y` - Y value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
+- `<variable_name>.direction_y` - Y value from the [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) provided
 
-- `<variable_name>.direction_z` - Z value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
+- `<variable_name>.direction_z` - Z value from the [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) provided
 
 #### **Parameters**
 - **variableName**: *string*
@@ -117,11 +118,11 @@ setVector3(variableName: string, vector: Vector3): void
 
 Adds the following variables to Molang:
 
-- `<variable_name>.x` - X value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
+- `<variable_name>.x` - X value from the [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) provided
 
-- `<variable_name>.y` - Y value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
+- `<variable_name>.y` - Y value from the [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) provided
 
-- `<variable_name>.z` - Z value from the [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) provided
+- `<variable_name>.z` - Z value from the [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) provided
 
 #### **Parameters**
 - **variableName**: *string*

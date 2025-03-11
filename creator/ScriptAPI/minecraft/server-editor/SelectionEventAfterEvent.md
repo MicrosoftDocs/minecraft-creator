@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.SelectionEventAfterEvent Class
 description: Contents of the @minecraft/server-editor.SelectionEventAfterEvent class.
 ---
@@ -10,7 +11,7 @@ description: Contents of the @minecraft/server-editor.SelectionEventAfterEvent c
 
 ## Properties
 
-### **selectionEvent**
-`read-only selectionEvent: PrimarySelectionChangedEvent;`
+### **volumeEventData**
+`read-only volumeEventData?: SelectionContainerVolumeEvent;`
 
-Type: [*PrimarySelectionChangedEvent*](PrimarySelectionChangedEvent.md)
+Type: [*SelectionContainerVolumeEvent*](SelectionContainerVolumeEvent.md)

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .SentryAlreadyInitializedError Class
-description: Contents of the .SentryAlreadyInitializedError class.
+ms.date: 02/10/2025
+title: minecraft/diagnostics.SentryAlreadyInitializedError Class
+description: Contents of the @minecraft/diagnostics.SentryAlreadyInitializedError class.
 ---
 # SentryAlreadyInitializedError Class
 

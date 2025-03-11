@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.ExtensionContextAfterEvents Class
 description: Contents of the @minecraft/server-editor.ExtensionContextAfterEvents class.
 ---
@@ -54,10 +55,10 @@ Type: [*ModeChangeAfterEventSignal*](ModeChangeAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-### **primarySelectionChange**
-`read-only primarySelectionChange: PrimarySelectionChangeAfterEventSignal;`
+### **SelectionChange**
+`read-only SelectionChange: SelectionChangeAfterEventSignal;`
 
-Type: [*PrimarySelectionChangeAfterEventSignal*](PrimarySelectionChangeAfterEventSignal.md)
+Type: [*SelectionChangeAfterEventSignal*](SelectionChangeAfterEventSignal.md)
 
 Notes:
   - This property can be read in early-execution mode.

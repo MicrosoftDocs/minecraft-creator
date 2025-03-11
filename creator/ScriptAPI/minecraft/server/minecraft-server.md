@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server Module
 description: Contents of the @minecraft/server module
 ---
@@ -40,7 +41,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - `1.2.0`
 - `1.1.0`
 - `1.0.0`
-- `0.1.0`
 
 ## Enumerations
 - [AimAssistTargetMode](AimAssistTargetMode.md)
@@ -285,6 +285,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemComponentUseOnEvent](ItemComponentUseOnEvent.md)
 - [ItemCompostableComponent](ItemCompostableComponent.md)
 - [ItemCooldownComponent](ItemCooldownComponent.md)
+- [ItemCustomComponentInstance](ItemCustomComponentInstance.md)
 - [ItemDurabilityComponent](ItemDurabilityComponent.md)
 - [ItemDyeableComponent](ItemDyeableComponent.md)
 - [ItemEnchantableComponent](ItemEnchantableComponent.md)
@@ -501,6 +502,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [LocationOutOfWorldBoundariesError](LocationOutOfWorldBoundariesError.md)
 - [NamespaceNameError](NamespaceNameError.md)
 - [PlaceJigsawError](PlaceJigsawError.md)
+- [RawMessageError](RawMessageError.md)
 - [UnloadedChunksError](UnloadedChunksError.md)
 
 ## Constants

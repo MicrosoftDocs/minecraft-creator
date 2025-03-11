@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .NumberPropertyItemVariant Enumeration
-description: Contents of the .NumberPropertyItemVariant enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.NumberPropertyItemVariant Enumeration
+description: Contents of the @minecraft/server-editor.NumberPropertyItemVariant enumeration.
 ---
 # NumberPropertyItemVariant Enumeration
 

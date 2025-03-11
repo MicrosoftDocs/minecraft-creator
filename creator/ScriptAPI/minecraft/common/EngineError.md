@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EngineError Class
-description: Contents of the .EngineError class.
+ms.date: 02/10/2025
+title: minecraft/common.EngineError Class
+description: Contents of the @minecraft/common.EngineError class.
 ---
 # EngineError Class
 

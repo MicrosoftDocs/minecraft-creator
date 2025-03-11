@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ProgressIndicatorPropertyItemVariant Enumeration
-description: Contents of the .ProgressIndicatorPropertyItemVariant enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ProgressIndicatorPropertyItemVariant Enumeration
+description: Contents of the @minecraft/server-editor.ProgressIndicatorPropertyItemVariant enumeration.
 ---
 # ProgressIndicatorPropertyItemVariant Enumeration
 

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .LayoutDirection Enumeration
-description: Contents of the .LayoutDirection enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.LayoutDirection Enumeration
+description: Contents of the @minecraft/server-editor.LayoutDirection enumeration.
 ---
 # LayoutDirection Enumeration
 

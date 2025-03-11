@@ -3,37 +3,22 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.SelectionManager Class
 description: Contents of the @minecraft/server-editor.SelectionManager class.
 ---
 # SelectionManager Class
 
-The SelectionManager (accessible from the [*@minecraft/server-editor.ExtensionContext*](../../minecraft/server-editor/ExtensionContext.md)) is responsible for the management of all [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) objects, and provides the user the ability to create new [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) objects for use within an extension.
+The SelectionManager (accessible from the [*@minecraft/server-editor.ExtensionContext*](../../../scriptapi/minecraft/server-editor/ExtensionContext.md)) is responsible for the management of all {@link @minecraft/server-editor.Selection} objects, and provides the user the ability to create new {@link @minecraft/server-editor.Selection} objects for use within an extension.
 
 ## Properties
 
-### **selection**
-`read-only selection: Selection;`
+### **entity**
+`read-only entity: SelectionContainerEntity;`
 
-The primary [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) object is always present (even if it's empty) and cannot be deleted.  This object represents the main selection object which is always accessible through the UI, and by default is synchronized between the client and server.
+Type: [*SelectionContainerEntity*](SelectionContainerEntity.md)
 
-Type: [*Selection*](Selection.md)
+### **volume**
+`read-only volume: SelectionContainerVolume;`
 
-Notes:
-  - This property can throw errors when used.
-
-## Methods
-- [create](#create)
-
-### **create**
-`
-create(): Selection
-`
-
-Create a new, empty [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) object
-
-**Returns** [*Selection*](Selection.md)
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
+Type: [*SelectionContainerVolume*](SelectionContainerVolume.md)

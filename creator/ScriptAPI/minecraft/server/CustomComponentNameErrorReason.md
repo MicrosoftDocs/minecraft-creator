@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .CustomComponentNameErrorReason Enumeration
-description: Contents of the .CustomComponentNameErrorReason enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.CustomComponentNameErrorReason Enumeration
+description: Contents of the @minecraft/server.CustomComponentNameErrorReason enumeration.
 ---
 # CustomComponentNameErrorReason Enumeration
 

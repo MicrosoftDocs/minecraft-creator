@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.DimensionLocation Interface
 description: Contents of the @minecraft/server.DimensionLocation class.
 ---

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .SignSide Enumeration
-description: Contents of the .SignSide enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.SignSide Enumeration
+description: Contents of the @minecraft/server.SignSide enumeration.
 ---
 # SignSide Enumeration
 

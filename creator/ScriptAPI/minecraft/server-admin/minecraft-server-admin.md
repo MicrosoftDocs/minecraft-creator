@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-admin Module
 description: Contents of the @minecraft/server-admin module
 monikerRange: "=minecraft-bedrock-experimental"
@@ -42,7 +43,7 @@ transferPlayer(player: minecraftserver.Player, host: string, port: number): void
 Transfer player to another server.
 
 #### **Parameters**
-- **player**: [*@minecraft/server.Player*](../../minecraft/server/Player.md)
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
   Player to transfer.
 - **host**: *string*

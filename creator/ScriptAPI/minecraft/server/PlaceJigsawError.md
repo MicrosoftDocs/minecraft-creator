@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .PlaceJigsawError Class
-description: Contents of the .PlaceJigsawError class.
+ms.date: 02/10/2025
+title: minecraft/server.PlaceJigsawError Class
+description: Contents of the @minecraft/server.PlaceJigsawError class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlaceJigsawError Class

@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.StructurePlaceOptions Interface
 description: Contents of the @minecraft/server.StructurePlaceOptions class.
 ---
 # StructurePlaceOptions Interface
 
-Provides additional options for [*@minecraft/server.StructureManager.place*](../../minecraft/server/StructureManager.md#place)
+Provides additional options for [*@minecraft/server.StructureManager.place*](../../../scriptapi/minecraft/server/StructureManager.md#place)
 
 ## Properties
 
@@ -43,7 +44,7 @@ Type: *boolean*
 ### **integrity**
 `integrity?: number;`
 
-What percentage of blocks should be placed. A value of 1 will place 100% of the blocks while a value of 0 will place none. The blocks are chosen randomly based on the [*@minecraft/server.StructurePlaceOptions.integritySeed*](../../minecraft/server/StructurePlaceOptions.md#integrityseed).
+What percentage of blocks should be placed. A value of 1 will place 100% of the blocks while a value of 0 will place none. The blocks are chosen randomly based on the [*@minecraft/server.StructurePlaceOptions.integritySeed*](../../../scriptapi/minecraft/server/StructurePlaceOptions.md#integrityseed).
 
 Type: *number*
 

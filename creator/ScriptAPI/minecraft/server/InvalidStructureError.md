@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InvalidStructureError Class
-description: Contents of the .InvalidStructureError class.
+ms.date: 02/10/2025
+title: minecraft/server.InvalidStructureError Class
+description: Contents of the @minecraft/server.InvalidStructureError class.
 ---
 # InvalidStructureError Class
 

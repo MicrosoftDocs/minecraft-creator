@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InvalidWidgetGroupError Class
-description: Contents of the .InvalidWidgetGroupError class.
+ms.date: 02/10/2025
+title: minecraft/server-editor.InvalidWidgetGroupError Class
+description: Contents of the @minecraft/server-editor.InvalidWidgetGroupError class.
 ---
 # InvalidWidgetGroupError Class
 

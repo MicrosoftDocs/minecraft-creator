@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ItemCustomComponentReloadVersionError Class
-description: Contents of the .ItemCustomComponentReloadVersionError class.
+ms.date: 02/10/2025
+title: minecraft/server.ItemCustomComponentReloadVersionError Class
+description: Contents of the @minecraft/server.ItemCustomComponentReloadVersionError class.
 ---
 # ItemCustomComponentReloadVersionError Class
 

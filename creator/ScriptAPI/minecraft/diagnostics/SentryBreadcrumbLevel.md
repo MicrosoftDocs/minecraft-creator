@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .SentryBreadcrumbLevel Enumeration
-description: Contents of the .SentryBreadcrumbLevel enumeration.
+ms.date: 02/10/2025
+title: minecraft/diagnostics.SentryBreadcrumbLevel Enumeration
+description: Contents of the @minecraft/diagnostics.SentryBreadcrumbLevel enumeration.
 ---
 # SentryBreadcrumbLevel Enumeration
 

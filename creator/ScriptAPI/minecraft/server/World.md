@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.World Class
 description: Contents of the @minecraft/server.World class.
 ---
@@ -87,7 +88,7 @@ Type: [*Scoreboard*](Scoreboard.md)
 ### **structureManager**
 `read-only structureManager: StructureManager;`
 
-Returns the manager for [*@minecraft/server.Structure*](../../minecraft/server/Structure.md) related APIs.
+Returns the manager for [*@minecraft/server.Structure*](../../../scriptapi/minecraft/server/Structure.md) related APIs.
 
 Type: [*StructureManager*](StructureManager.md)
 
@@ -491,7 +492,7 @@ Sends a message to all players.
   
 Notes:
 - This function can throw errors.
-  - This method can throw if the provided [*@minecraft/server.RawMessage*](../../minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
+  - This method can throw if the provided [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) is in an invalid format. For example, if an empty `name` string is provided to `score`.
 
 ### **setAbsoluteTime**
 `

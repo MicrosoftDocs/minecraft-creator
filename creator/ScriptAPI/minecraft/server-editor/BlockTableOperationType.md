@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .BlockTableOperationType Enumeration
-description: Contents of the .BlockTableOperationType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.BlockTableOperationType Enumeration
+description: Contents of the @minecraft/server-editor.BlockTableOperationType enumeration.
 ---
 # BlockTableOperationType Enumeration
 

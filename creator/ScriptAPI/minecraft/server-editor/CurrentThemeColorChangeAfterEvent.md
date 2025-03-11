@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.CurrentThemeColorChangeAfterEvent Class
 description: Contents of the @minecraft/server-editor.CurrentThemeColorChangeAfterEvent class.
 ---
@@ -13,7 +14,7 @@ description: Contents of the @minecraft/server-editor.CurrentThemeColorChangeAft
 ### **color**
 `read-only color: minecraftserver.RGBA;`
 
-Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 ### **colorKey**
 `read-only colorKey: string;`

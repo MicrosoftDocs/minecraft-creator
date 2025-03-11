@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .CompoundBlockVolumePositionRelativity Enumeration
-description: Contents of the .CompoundBlockVolumePositionRelativity enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.CompoundBlockVolumePositionRelativity Enumeration
+description: Contents of the @minecraft/server.CompoundBlockVolumePositionRelativity enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CompoundBlockVolumePositionRelativity Enumeration

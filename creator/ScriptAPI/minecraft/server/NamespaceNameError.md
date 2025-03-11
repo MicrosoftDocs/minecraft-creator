@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .NamespaceNameError Class
-description: Contents of the .NamespaceNameError class.
+ms.date: 02/10/2025
+title: minecraft/server.NamespaceNameError Class
+description: Contents of the @minecraft/server.NamespaceNameError class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # NamespaceNameError Class

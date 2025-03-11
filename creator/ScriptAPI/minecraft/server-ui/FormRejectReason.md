@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .FormRejectReason Enumeration
-description: Contents of the .FormRejectReason enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-ui.FormRejectReason Enumeration
+description: Contents of the @minecraft/server-ui.FormRejectReason enumeration.
 ---
 # FormRejectReason Enumeration
 

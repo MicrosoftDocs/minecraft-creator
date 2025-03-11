@@ -3,12 +3,13 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.StructureCreateOptions Interface
 description: Contents of the @minecraft/server.StructureCreateOptions class.
 ---
 # StructureCreateOptions Interface
 
-Provides additional options for [*@minecraft/server.StructureManager.createFromWorld*](../../minecraft/server/StructureManager.md#createfromworld)
+Provides additional options for [*@minecraft/server.StructureManager.createFromWorld*](../../../scriptapi/minecraft/server/StructureManager.md#createfromworld)
 
 ## Properties
 

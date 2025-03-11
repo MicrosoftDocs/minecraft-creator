@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-gametest.NavigationResult Class
 description: Contents of the @minecraft/server-gametest.NavigationResult class.
 ---
@@ -23,4 +24,4 @@ Type: *boolean*
 getPath(): minecraftserver.Vector3[]
 `
 
-**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)[]
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[]

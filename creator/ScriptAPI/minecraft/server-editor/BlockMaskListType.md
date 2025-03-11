@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .BlockMaskListType Enumeration
-description: Contents of the .BlockMaskListType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.BlockMaskListType Enumeration
+description: Contents of the @minecraft/server-editor.BlockMaskListType enumeration.
 ---
 # BlockMaskListType Enumeration
 

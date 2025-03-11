@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.BlockMaskList Interface
 description: Contents of the @minecraft/server-editor.BlockMaskList class.
 ---
@@ -13,7 +14,7 @@ description: Contents of the @minecraft/server-editor.BlockMaskList class.
 ### **blockList**
 `blockList: (minecraftserver.BlockPermutation | minecraftserver.BlockType | string)[];`
 
-Type: ([*@minecraft/server.BlockPermutation*](../../minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../minecraft/server/BlockType.md) | *string*)[]
+Type: ([*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) | [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) | *string*)[]
 
 ### **maskType**
 `maskType: BlockMaskListType;`

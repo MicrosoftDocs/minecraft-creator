@@ -19,9 +19,10 @@ Returns true when the subject entity is in water.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Axolotl: `"!="`, `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Axolotl: `"other"`, Pillager: `"self"` | 
+| test | *not set* | String |  | Axolotl: `"in_water"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Axolotl: `true` | 
 
 ### Operator choices
 
@@ -69,24 +70,41 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/axolotl_in_water/minecraft:environment_sensor/triggers/0/filters/: 
 
 ```json
-{"test":"in_water","operator":"!=","value":true}
+{
+  "test": "in_water",
+  "operator": "!=",
+  "value": true
+}
 ```
 
 At /minecraft:entity/component_groups/axolotl_on_land_in_rain/minecraft:environment_sensor/triggers/1/filters/: 
 
 ```json
-{"test":"in_water","operator":"==","value":true}
+{
+  "test": "in_water",
+  "operator": "==",
+  "value": true
+}
 ```
 
 At /minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/0/: 
 
 ```json
-{"test":"in_water","subject":"other","value":true}
+{
+  "test": "in_water",
+  "subject": "other",
+  "value": true
+}
 ```
 
 #### [Pillager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pillager.json)
 
 
 ```json
-{"test":"in_water","subject":"self","operator":"==","value":false}
+{
+  "test": "in_water",
+  "subject": "self",
+  "operator": "==",
+  "value": false
+}
 ```

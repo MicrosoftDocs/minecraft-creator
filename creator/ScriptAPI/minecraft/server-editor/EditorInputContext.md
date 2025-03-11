@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EditorInputContext Enumeration
-description: Contents of the .EditorInputContext enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.EditorInputContext Enumeration
+description: Contents of the @minecraft/server-editor.EditorInputContext enumeration.
 ---
 # EditorInputContext Enumeration
 

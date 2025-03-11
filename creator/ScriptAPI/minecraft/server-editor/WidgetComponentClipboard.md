@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetComponentClipboard Class
 description: Contents of the @minecraft/server-editor.WidgetComponentClipboard class.
 ---
@@ -13,37 +14,50 @@ description: Contents of the @minecraft/server-editor.WidgetComponentClipboard c
 
 ## Properties
 
-### **clipboardMirror**
-`clipboardMirror: minecraftserver.StructureMirrorAxis;`
-
-Type: [*@minecraft/server.StructureMirrorAxis*](../../minecraft/server/StructureMirrorAxis.md)
-
-### **clipboardNormalizedOrigin**
-`clipboardNormalizedOrigin: minecraftserver.Vector3;`
-
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-
 ### **clipboardOffset**
 `clipboardOffset: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
-### **clipboardRotation**
-`clipboardRotation: minecraftserver.StructureRotation;`
+Notes:
+  - This property can't be edited in read-only mode.
 
-Type: [*@minecraft/server.StructureRotation*](../../minecraft/server/StructureRotation.md)
+### **highlightHullColor**
+`highlightHullColor: minecraftserver.RGBA;`
 
-### **fillColor**
-`fillColor: minecraftserver.RGBA;`
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
-Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+### **highlightOutlineColor**
+`highlightOutlineColor: minecraftserver.RGBA;`
+
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
+
+### **hullColor**
+`hullColor: minecraftserver.RGBA;`
+
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
+
+### **mirror**
+`mirror: minecraftserver.StructureMirrorAxis;`
+
+Type: [*@minecraft/server.StructureMirrorAxis*](../../../scriptapi/minecraft/server/StructureMirrorAxis.md)
+
+### **normalizedOrigin**
+`normalizedOrigin: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 ### **outlineColor**
 `outlineColor: minecraftserver.RGBA;`
 
-Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
-### **showBounds**
-`showBounds: boolean;`
+### **rotation**
+`rotation: minecraftserver.StructureRotation;`
+
+Type: [*@minecraft/server.StructureRotation*](../../../scriptapi/minecraft/server/StructureRotation.md)
+
+### **showOutline**
+`showOutline: boolean;`
 
 Type: *boolean*

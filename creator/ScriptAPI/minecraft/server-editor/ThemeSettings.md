@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.ThemeSettings Class
 description: Contents of the @minecraft/server-editor.ThemeSettings class.
 ---
@@ -74,7 +75,7 @@ getThemeColors(id: string): Record<string, minecraftserver.RGBA> | undefined
 #### **Parameters**
 - **id**: *string*
 
-**Returns** Record<*string*, [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)> | *undefined*
+**Returns** Record<*string*, [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)> | *undefined*
 
 ### **getThemeIdList**
 `
@@ -105,7 +106,7 @@ resolveColorKey(key: ThemeSettingsColorKey): minecraftserver.RGBA
 #### **Parameters**
 - **key**: [*ThemeSettingsColorKey*](ThemeSettingsColorKey.md)
 
-**Returns** [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+**Returns** [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
 
 ### **setCurrentTheme**
 `
@@ -142,7 +143,7 @@ updateThemeColor(id: string, key: ThemeSettingsColorKey, newColor: minecraftserv
 #### **Parameters**
 - **id**: *string*
 - **key**: [*ThemeSettingsColorKey*](ThemeSettingsColorKey.md)
-- **newColor**: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+- **newColor**: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)
   
 Notes:
 - This function can't be called in read-only mode.

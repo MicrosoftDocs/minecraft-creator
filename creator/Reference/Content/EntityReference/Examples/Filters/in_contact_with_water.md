@@ -19,9 +19,10 @@ Returns true when the subject entity in contact with any water: water, rain, spl
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Blaze: `"=="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| test | *not set* | String |  | Blaze: `"in_contact_with_water"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Blaze: `true` | 
 
 ### Operator choices
 
@@ -68,12 +69,18 @@ At Short (using Defaults)..:
 
 
 ```json
-{"test":"in_contact_with_water","operator":"==","value":true}
+{
+  "test": "in_contact_with_water",
+  "operator": "==",
+  "value": true
+}
 ```
 
 #### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
 
 
 ```json
-{"test":"in_contact_with_water"}
+{
+  "test": "in_contact_with_water"
+}
 ```

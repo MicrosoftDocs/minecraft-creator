@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .BlockCustomComponentReloadVersionError Class
-description: Contents of the .BlockCustomComponentReloadVersionError class.
+ms.date: 02/10/2025
+title: minecraft/server.BlockCustomComponentReloadVersionError Class
+description: Contents of the @minecraft/server.BlockCustomComponentReloadVersionError class.
 ---
 # BlockCustomComponentReloadVersionError Class
 

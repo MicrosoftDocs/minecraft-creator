@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.Widget Class
 description: Contents of the @minecraft/server-editor.Widget class.
 ---
@@ -21,7 +22,7 @@ Notes:
 ### **collisionOffset**
 `collisionOffset: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
   - This property can't be edited in read-only mode.
@@ -34,10 +35,19 @@ Type: *number*
 Notes:
   - This property can't be edited in read-only mode.
 
+### **group**
+`read-only group: WidgetGroup;`
+
+Type: [*WidgetGroup*](WidgetGroup.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidWidgetError*](InvalidWidgetError.md)
+
 ### **location**
 `location: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 Notes:
   - This property can't be edited in read-only mode.
@@ -87,7 +97,13 @@ Notes:
 
 Type: *boolean*
 
+### **widgetName**
+`read-only widgetName: string;`
+
+Type: *string*
+
 ## Methods
+- [addBoundingBox](#addboundingbox)
 - [addClipboardComponent](#addclipboardcomponent)
 - [addEntityComponent](#addentitycomponent)
 - [addGizmoComponent](#addgizmocomponent)
@@ -95,11 +111,29 @@ Type: *boolean*
 - [addRenderPrimitiveComponent](#addrenderprimitivecomponent)
 - [addSplineComponent](#addsplinecomponent)
 - [addTextComponent](#addtextcomponent)
+- [addVolumeOutline](#addvolumeoutline)
 - [delete](#delete)
 - [deleteComponent](#deletecomponent)
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [setStateChangeEvent](#setstatechangeevent)
+
+### **addBoundingBox**
+`
+addBoundingBox(componentName: string, size: minecraftserver.Vector3, options?: WidgetComponentBoundingBoxOptions): WidgetComponentBoundingBox
+`
+
+#### **Parameters**
+- **componentName**: *string*
+- **size**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **options**?: [*WidgetComponentBoundingBoxOptions*](WidgetComponentBoundingBoxOptions.md) = `null`
+
+**Returns** [*WidgetComponentBoundingBox*](WidgetComponentBoundingBox.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **addClipboardComponent**
 `
@@ -211,6 +245,23 @@ addTextComponent(componentName: string, label: string, options?: WidgetComponent
 - **options**?: [*WidgetComponentTextOptions*](WidgetComponentTextOptions.md) = `null`
 
 **Returns** [*WidgetComponentText*](WidgetComponentText.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
+
+### **addVolumeOutline**
+`
+addVolumeOutline(componentName: string, volume?: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, options?: WidgetComponentVolumeOutlineOptions): WidgetComponentVolumeOutline
+`
+
+#### **Parameters**
+- **componentName**: *string*
+- **volume**?: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) = `null`
+- **options**?: [*WidgetComponentVolumeOutlineOptions*](WidgetComponentVolumeOutlineOptions.md) = `null`
+
+**Returns** [*WidgetComponentVolumeOutline*](WidgetComponentVolumeOutline.md)
   
 Notes:
 - This function can't be called in read-only mode.

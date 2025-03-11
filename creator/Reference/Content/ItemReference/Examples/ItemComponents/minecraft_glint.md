@@ -11,6 +11,10 @@ ms.date: 02/11/2025
 
 Determines whether the item has the enchanted glint render effect on it.
 
+## Alternate Simple Representations
+
+This item can also be represented as a `Boolean true/false`.
+
 
 ## Glint Properties
 

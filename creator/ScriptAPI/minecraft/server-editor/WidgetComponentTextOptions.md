@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetComponentTextOptions Interface
 description: Contents of the @minecraft/server-editor.WidgetComponentTextOptions class.
 ---
@@ -16,4 +17,4 @@ description: Contents of the @minecraft/server-editor.WidgetComponentTextOptions
 ### **color**
 `color?: minecraftserver.RGBA;`
 
-Type: [*@minecraft/server.RGBA*](../../minecraft/server/RGBA.md)
+Type: [*@minecraft/server.RGBA*](../../../scriptapi/minecraft/server/RGBA.md)

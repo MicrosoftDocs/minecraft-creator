@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ItemComponentTypes Enumeration
-description: Contents of the .ItemComponentTypes enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.ItemComponentTypes Enumeration
+description: Contents of the @minecraft/server.ItemComponentTypes enumeration.
 ---
 # ItemComponentTypes Enumeration
 

@@ -21,7 +21,8 @@ Returns true when the subject entity is underground. An entity is considered und
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| test | *not set* | String |  | Stray: `"is_underground"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Stray: `true` | 
 
 ### Operator choices
 
@@ -68,5 +69,8 @@ At Short (using Defaults)..:
 
 
 ```json
-{"test":"is_underground","value":true}
+{
+  "test": "is_underground",
+  "value": true
+}
 ```

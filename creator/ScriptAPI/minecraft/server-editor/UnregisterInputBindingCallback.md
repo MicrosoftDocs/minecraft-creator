@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .UnregisterInputBindingCallback type alias.
+ms.date: 02/10/2025
+title: minecraft/server-editor.UnregisterInputBindingCallback Type Alias
+description: Contents of the @minecraft/server-editor.UnregisterInputBindingCallback type alias.
 ---
 # UnregisterInputBindingCallback Type Alias
 

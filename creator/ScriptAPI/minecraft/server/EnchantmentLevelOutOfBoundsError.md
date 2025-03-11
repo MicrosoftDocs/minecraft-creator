@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EnchantmentLevelOutOfBoundsError Class
-description: Contents of the .EnchantmentLevelOutOfBoundsError class.
+ms.date: 02/10/2025
+title: minecraft/server.EnchantmentLevelOutOfBoundsError Class
+description: Contents of the @minecraft/server.EnchantmentLevelOutOfBoundsError class.
 ---
 # EnchantmentLevelOutOfBoundsError Class
 

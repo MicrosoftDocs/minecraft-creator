@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .KeyProcessingState Enumeration
-description: Contents of the .KeyProcessingState enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.KeyProcessingState Enumeration
+description: Contents of the @minecraft/server-editor.KeyProcessingState enumeration.
 ---
 # KeyProcessingState Enumeration
 

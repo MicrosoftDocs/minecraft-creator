@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .StructureAnimationMode Enumeration
-description: Contents of the .StructureAnimationMode enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.StructureAnimationMode Enumeration
+description: Contents of the @minecraft/server.StructureAnimationMode enumeration.
 ---
 # StructureAnimationMode Enumeration
 

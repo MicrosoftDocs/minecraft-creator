@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.Effect Class
 description: Contents of the @minecraft/server.Effect class.
 ---
@@ -35,7 +36,7 @@ Notes:
 ### **duration**
 `read-only duration: number;`
 
-Gets the entire specified duration, in ticks, of this effect. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds.
+Gets the entire specified duration, in ticks, of this effect. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../../scriptapi/minecraft/server/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds.
 
 Type: *number*
 

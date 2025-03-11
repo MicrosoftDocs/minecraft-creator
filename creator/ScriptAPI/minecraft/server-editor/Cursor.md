@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.Cursor Class
 description: Contents of the @minecraft/server-editor.Cursor class.
 ---
@@ -59,7 +60,7 @@ getPosition(): minecraftserver.Vector3
 
 Get the world position of the 3D block cursor
 
-**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
 Notes:
 - This function can't be called in read-only mode.
@@ -95,7 +96,7 @@ Notes:
 hide(): void
 `
 
-Hide the 3D block cursor from view until the corresponding [*@minecraft/server-editor.Cursor.show*](../../minecraft/server-editor/Cursor.md#show) function is called
+Hide the 3D block cursor from view until the corresponding [*@minecraft/server-editor.Cursor.show*](../../../scriptapi/minecraft/server-editor/Cursor.md#show) function is called
   
 Notes:
 - This function can't be called in read-only mode.
@@ -106,14 +107,14 @@ Notes:
 moveBy(offset: minecraftserver.Vector3): minecraftserver.Vector3
 `
 
-Manually offset the 3D block cursor by given amount.  Depending on the [*@minecraft/server-editor.CursorProperties.controlMode*](../../minecraft/server-editor/CursorProperties.md#controlmode) - this function may have no effect
+Manually offset the 3D block cursor by given amount.  Depending on the [*@minecraft/server-editor.CursorProperties.controlMode*](../../../scriptapi/minecraft/server-editor/CursorProperties.md#controlmode) - this function may have no effect
 
 #### **Parameters**
-- **offset**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **offset**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
   Amount by which the 3D block cursor should be moved
 
-**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) - Return the newly modified position (or previous position if movement was restricted)
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) - Return the newly modified position (or previous position if movement was restricted)
   
 Notes:
 - This function can't be called in read-only mode.

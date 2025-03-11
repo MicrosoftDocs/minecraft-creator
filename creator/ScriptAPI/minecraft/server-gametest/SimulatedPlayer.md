@@ -3,15 +3,16 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-gametest.SimulatedPlayer Class
 description: Contents of the @minecraft/server-gametest.SimulatedPlayer class.
 ---
 # SimulatedPlayer Class
 
 ## Extends
-- [*@minecraft/server.Player*](../../minecraft/server/Player.md)
+- [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
 
-A simulated player can be used within GameTests to represent how a player moves throughout the world and to support testing of how entities and the environment will react to a player. This type derives much of its structure and methods from the [*@minecraft/server.Player*](../../minecraft/server/Player.md) type. Note that many types of events that may be available for entities more broadly, such as item use events, may not fire in the same capacity for simulated players.
+A simulated player can be used within GameTests to represent how a player moves throughout the world and to support testing of how entities and the environment will react to a player. This type derives much of its structure and methods from the [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md) type. Note that many types of events that may be available for entities more broadly, such as item use events, may not fire in the same capacity for simulated players.
 
 ## Properties
 
@@ -20,7 +21,7 @@ A simulated player can be used within GameTests to represent how a player moves 
 
 Rotation of the head across pitch and yaw angles.
 
-Type: [*@minecraft/server.Vector2*](../../minecraft/server/Vector2.md)
+Type: [*@minecraft/server.Vector2*](../../../scriptapi/minecraft/server/Vector2.md)
 
 Notes:
   - This property can throw errors when used.
@@ -100,7 +101,7 @@ attackEntity(entity: minecraftserver.Entity): boolean
 Causes the simulated player to attack the provided target. Returns true if the attack was performed - for example, the player was not on cooldown and had a valid target. The attack can be performed at any distance and does not require line of sight to the target entity.
 
 #### **Parameters**
-- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+- **entity**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
 
 **Returns** *boolean*
   
@@ -116,10 +117,10 @@ breakBlock(blockLocation: minecraftserver.Vector3, direction?: minecraftserver.D
 Destroys the block at blockLocation, respecting the rules of the server player's game mode. The block will be hit until broken, an item is used or stopBreakingBlock is called. Returns true if the block at blockLocation is solid.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
   Location of the block to interact with.
-- **direction**?: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) = `1`
+- **direction**?: [*@minecraft/server.Direction*](../../../scriptapi/minecraft/server/Direction.md) = `1`
   
   Direction to place the specified item within.
 
@@ -184,7 +185,7 @@ giveItem(itemStack: minecraftserver.ItemStack, selectSlot?: boolean): boolean
 Gives the simulated player a particular item stack.
 
 #### **Parameters**
-- **itemStack**: [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md)
+- **itemStack**: [*@minecraft/server.ItemStack*](../../../scriptapi/minecraft/server/ItemStack.md)
   
   Item to give.
 - **selectSlot**?: *boolean* = `false`
@@ -231,10 +232,10 @@ interactWithBlock(blockLocation: minecraftserver.Vector3, direction?: minecrafts
 Causes the simulated player to interact with a block. The block at the specified block location must be solid. Returns true if the interaction was performed.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
   Location of the block to interact with.
-- **direction**?: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) = `1`
+- **direction**?: [*@minecraft/server.Direction*](../../../scriptapi/minecraft/server/Direction.md) = `1`
   
   Direction to place the specified item within.
 
@@ -252,7 +253,7 @@ interactWithEntity(entity: minecraftserver.Entity): boolean
 Causes the simulated player to interact with a mob. Returns true if the interaction was performed.
 
 #### **Parameters**
-- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+- **entity**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
   
   Entity to interact with.
 
@@ -283,7 +284,7 @@ lookAtBlock(blockLocation: minecraftserver.Vector3, duration?: LookDuration): vo
 Rotates the simulated player's head/body to look at the given block location.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **duration**?: [*LookDuration*](LookDuration.md) = `2`
   
 Notes:
@@ -298,7 +299,7 @@ lookAtEntity(entity: minecraftserver.Entity, duration?: LookDuration): void
 Rotates the simulated player's head/body to look at the given entity.
 
 #### **Parameters**
-- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+- **entity**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
 - **duration**?: [*LookDuration*](LookDuration.md) = `2`
   
 Notes:
@@ -313,7 +314,7 @@ lookAtLocation(location: minecraftserver.Vector3, duration?: LookDuration): void
 Rotates the simulated player's head/body to look at the given location.
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **duration**?: [*LookDuration*](LookDuration.md) = `2`
   
 Notes:
@@ -360,7 +361,7 @@ moveToBlock(blockLocation: minecraftserver.Vector3, options?: MoveToOptions): vo
 Orders the simulated player to move to the given block location in a straight line. If a move or navigation is already playing, this will override the last move/navigation.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **options**?: [*MoveToOptions*](MoveToOptions.md) = `null`
   
 Notes:
@@ -375,7 +376,7 @@ moveToLocation(location: minecraftserver.Vector3, options?: MoveToOptions): void
 Orders the simulated player to move to the given location in a straight line. If a move or navigation is already playing, this will override the last move/navigation.
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **options**?: [*MoveToOptions*](MoveToOptions.md) = `null`
   
 Notes:
@@ -390,7 +391,7 @@ navigateToBlock(blockLocation: minecraftserver.Vector3, speed?: number): Navigat
 Orders the simulated player to move to a specific block location using navigation. If a move or navigation is already playing, this will override the last move/walk. Note that if the simulated player gets stuck, that simulated player will stop. The player must be touching the ground in order to start navigation.
 
 #### **Parameters**
-- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **speed**?: *number* = `1`
 
 **Returns** [*NavigationResult*](NavigationResult.md)
@@ -407,7 +408,7 @@ navigateToEntity(entity: minecraftserver.Entity, speed?: number): NavigationResu
 Will use navigation to follow the selected entity to within a one block radius. If a move or navigation is already playing, this will override the last move/navigation.
 
 #### **Parameters**
-- **entity**: [*@minecraft/server.Entity*](../../minecraft/server/Entity.md)
+- **entity**: [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md)
 - **speed**?: *number* = `1`
 
 **Returns** [*NavigationResult*](NavigationResult.md)
@@ -424,7 +425,7 @@ navigateToLocation(location: minecraftserver.Vector3, speed?: number): Navigatio
 Orders the simulated player to move to a specific location using navigation. If a move or navigation is already playing, this will override the last move/walk. Note that if the simulated player gets stuck, that simulated player will stop. The player must be touching the ground in order to start navigation.
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **speed**?: *number* = `1`
 
 **Returns** [*NavigationResult*](NavigationResult.md)
@@ -441,7 +442,7 @@ navigateToLocations(locations: minecraftserver.Vector3[], speed?: number): void
 Use navigation to follow the route provided via the locations parameter. If a move or navigation is already playing, this will override the last move/navigation. 
 
 #### **Parameters**
-- **locations**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)[]
+- **locations**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)[]
   
   A list of locations to use for routing.
 - **speed**?: *number* = `1`
@@ -501,7 +502,7 @@ setItem(itemStack: minecraftserver.ItemStack, slot: number, selectSlot?: boolean
 Sets a particular item for the simulated player.
 
 #### **Parameters**
-- **itemStack**: [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md)
+- **itemStack**: [*@minecraft/server.ItemStack*](../../../scriptapi/minecraft/server/ItemStack.md)
   
   Item to set.
 - **slot**: *number*
@@ -611,7 +612,7 @@ stopUsingItem(): minecraftserver.ItemStack | undefined
 
 Stops using the currently active item.
 
-**Returns** [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md) | *undefined* - Returns the item that was in use. Undefined if no item was in use.
+**Returns** [*@minecraft/server.ItemStack*](../../../scriptapi/minecraft/server/ItemStack.md) | *undefined* - Returns the item that was in use. Undefined if no item was in use.
   
 Notes:
 - This function can't be called in read-only mode.
@@ -636,7 +637,7 @@ useItem(itemStack: minecraftserver.ItemStack): boolean
 Causes the simulated player to use an item. Does not consume the item. Returns false if the item is on cooldown.
 
 #### **Parameters**
-- **itemStack**: [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md)
+- **itemStack**: [*@minecraft/server.ItemStack*](../../../scriptapi/minecraft/server/ItemStack.md)
   
   Item to use.
 
@@ -675,13 +676,13 @@ Causes the simulated player to use an item in their inventory on a block. The bl
 - **slot**: *number*
   
   Index of the slot to use.
-- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
   Location to use the item upon.
-- **direction**?: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) = `1`
+- **direction**?: [*@minecraft/server.Direction*](../../../scriptapi/minecraft/server/Direction.md) = `1`
   
   Direction to place the specified item within.
-- **faceLocation**?: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) = `null`
+- **faceLocation**?: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) = `null`
   
   Location relative to the bottom north-west corner of the block where the item is placed.
 
@@ -699,16 +700,16 @@ useItemOnBlock(itemStack: minecraftserver.ItemStack, blockLocation: minecraftser
 Causes the simulated player to use an item on a block. The block at the specified block location must be solid. Returns true if the item was used.
 
 #### **Parameters**
-- **itemStack**: [*@minecraft/server.ItemStack*](../../minecraft/server/ItemStack.md)
+- **itemStack**: [*@minecraft/server.ItemStack*](../../../scriptapi/minecraft/server/ItemStack.md)
   
   Item to use.
-- **blockLocation**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **blockLocation**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
   Location to use the item upon.
-- **direction**?: [*@minecraft/server.Direction*](../../minecraft/server/Direction.md) = `1`
+- **direction**?: [*@minecraft/server.Direction*](../../../scriptapi/minecraft/server/Direction.md) = `1`
   
   Direction to place the specified item within.
-- **faceLocation**?: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md) = `null`
+- **faceLocation**?: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md) = `null`
   
   Location relative to the bottom north-west corner of the block where the item is placed.
 

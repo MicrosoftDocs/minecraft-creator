@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Introduction to Structure Blocks
 description: "An overview of Structure Blocks in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/27/2025
 ---
 
 # Introduction to Structure Blocks
@@ -17,7 +18,7 @@ Like command blocks, you obtain them by using the `/give` command in the chat, a
 >[!NOTE]
 > Any block saved with a structure block will have its state saved. Command blocks will have command information, chests will have their inventory, and even structure blocks will have their structure information when the structure is loaded.
 
-![The UI for saving with a structure block](Media/saveui.png)
+![The UI for saving with a structure block](../Media/StructureBlock/saveui.png)
 
 The first thing to notice is the Mode setting. The four structure block modes are:
 
@@ -26,7 +27,7 @@ The first thing to notice is the Mode setting. The four structure block modes ar
 - **Corner** Can be used to save a specific section of a structure into memory, using two blocks to define the selection around a structure
 - **3D Export** Exports a .glb file that can be used to 3D print a model
 
-![Four structure blocks, showing each mode, all in a row](Media/structureBlocks.png)
+![Four structure blocks, showing each mode, all in a row](../Media/StructureBlock/structureBlocks.png)
 
 The settings for Corner and 3D Export are different and we will cover those when we get to them. The buttons under the image of the structure change depending on mode, too.
 
@@ -115,17 +116,17 @@ When you're happy with the placement, click Load to load the structure into your
 
 To load a structure, start by placing a structure block and put it in 'Load' mode.
 
-![A structure block using load mode](Media/load.png)
+![A structure block using load mode](../Media/StructureBlock/load.png)
 
 ### Importing a Saved Structure
 
 Notice the **Import** button. This button allows you to import a .mcstructure file from anywhere on your computer into your Minecraft world.
 
-![Load Mode page with a highlighted Import button](Media/importButton1.png)
+![Load Mode page with a highlighted Import button](../Media/StructureBlock/importButton1.png)
 
 When you click the **Import** button, a file picker opens that allows you to choose the file you would like to import into your world.
 
-![Load Mode file picker window with potential files to select highlighted.](Media/importButton2.png)
+![Load Mode file picker window with potential files to select highlighted.](../Media/StructureBlock/importButton2.png)
 
 After you have chosen a file, the structure block will then fill out all of the necessary information about the structure into the structure block itself, and ready the structure to load.
 
@@ -133,13 +134,13 @@ For this example, **mystructure:1** was chosen, and the structure block's name a
 
 When a structure is successfully loaded, you will see a message in the structure block UI telling you the structure has been successfully imported.
 
-![Load Mode file picker window with selected file ready to be imported.](Media/importButton3.png)
+![Load Mode file picker window with selected file ready to be imported.](../Media/StructureBlock/importButton3.png)
 
 After the structure is imported, and the structure block UI looks similar to the UI above, the structure can be loaded into the world.
 
 This is what it will look like when the Load button is clicked:
 
-![Load Mode window with imported file ready to be loaded into the world.](Media/importButton4.png)
+![Load Mode window with imported file ready to be loaded into the world.](../Media/StructureBlock/importButton4.png)
 
 Here are some other important notes about importing a structure:
 
@@ -152,7 +153,7 @@ Here are some other important notes about importing a structure:
 
 This mode uses three structure blocks: two to set the size and position of the selection, and one to detect the area selected by the other two blocks.
 
-![A structure block using corner mode](Media/corner.png)
+![A structure block using corner mode](../Media/StructureBlock/corner.png)
 
 1. Place a structure block in corner mode outside of one of the structure's sides. Remember the name you use to save it.
 1. Place another structure block in corner mode on the opposite corner of the structure and give it the same name.
@@ -160,11 +161,11 @@ This mode uses three structure blocks: two to set the size and position of the s
 1. Enter the same name again that was used for the other two corner mode structure blocks.
 1. Click Detect. The selection box should encompass the area between the corners of the corner mode blocks. All three blocks must have the same name and there must be at least 1 block between the corners for the Save block to detect the structure.
 
-![A statue surrounded in corner mode structure blocks.](Media/statueWaterfall.png)
+![A statue surrounded in corner mode structure blocks.](../Media/StructureBlock/statueWaterfall.png)
 
 ## 3D Export Mode
 
-![A structure block using 3D Export mode](Media/3d.png)
+![A structure block using 3D Export mode](../Media/StructureBlock/3d.png)
 
 Export mode is used to create a .glb file that will be usable in behavior packs or a file that can be used to 3D print a Minecraft structure.
 

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: . Type Alias
-description: Contents of the .BlockStateArg type alias.
+ms.date: 02/10/2025
+title: minecraft/server.BlockStateArg Type Alias
+description: Contents of the @minecraft/server.BlockStateArg type alias.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockStateArg Type Alias
@@ -12,7 +13,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This alias is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Type alias used by the [*@minecraft/server.BlockPermutation*](../../minecraft/server/BlockPermutation.md) matches and resolve functions to narrow block state argument types to those mapped by {@link @minecraft/vanilla-data.BlockStateMapping}.
+Type alias used by the [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) matches and resolve functions to narrow block state argument types to those mapped by {@link @minecraft/vanilla-data.BlockStateMapping}.
 
 ## Declaration
 `export type BlockStateArg<T> = T extends `${minecraftvanilladata.MinecraftBlockTypes}` ? T extends keyof minecraftvanilladata.BlockStateMapping ? minecraftvanilladata.BlockStateMapping[T] : never : Record<string, boolean | number | string>;`

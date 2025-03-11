@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .ComboBoxPropertyItemDataType Enumeration
-description: Contents of the .ComboBoxPropertyItemDataType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.ComboBoxPropertyItemDataType Enumeration
+description: Contents of the @minecraft/server-editor.ComboBoxPropertyItemDataType enumeration.
 ---
 # ComboBoxPropertyItemDataType Enumeration
 

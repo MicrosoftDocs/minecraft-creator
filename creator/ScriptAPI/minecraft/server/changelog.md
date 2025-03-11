@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server Changelog
 description: Changelog of the `@minecraft/server` module
 ---
@@ -149,6 +150,9 @@ description: Changelog of the `@minecraft/server` module
 - Changed type for *[`container`](EntityInventoryComponent.md#container)* from [*Container*](Container.md) to [*Container*](Container.md) (throws exceptions)
 #### Added *[`EntityIterator`](EntityIterator.md)*
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
+#### Changed *[`EntityPushThroughComponent`](EntityPushThroughComponent.md)*
+- Changed read-only flag for *[`value`](EntityPushThroughComponent.md#value)* from `false` to `true`
+- Changed type for *[`value`](EntityPushThroughComponent.md#value)* from *number* to *number* (throws exceptions)
 #### Changed *[`EntityScaleComponent`](EntityScaleComponent.md)*
 - Changed read-only flag for *[`value`](EntityScaleComponent.md#value)* from `false` to `true`
 - Changed type for *[`value`](EntityScaleComponent.md#value)* from *number* to *number* (throws exceptions)
@@ -165,6 +169,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`ItemComponentRegistry`](ItemComponentRegistry.md)*
 - Changed function *[`registerCustomComponent`](ItemComponentRegistry.md#registercustomcomponent)*
   - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
+#### Added *[`ItemCustomComponentInstance`](ItemCustomComponentInstance.md)*
 #### Added *[`ItemDyeableComponent`](ItemDyeableComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
@@ -228,6 +233,8 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`ScreenDisplay`](ScreenDisplay.md)*
 - Added property *[`isValid`](ScreenDisplay.md#isvalid)*
 - Removed function *isValid*
+- Removed function *resetHudElements*
+- Added function *[`resetHudElementsVisibility`](ScreenDisplay.md#resethudelementsvisibility)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Added *[`ShutdownBeforeEventSignal`](ShutdownBeforeEventSignal.md)*
 #### Added *[`ShutdownEvent`](ShutdownEvent.md)*

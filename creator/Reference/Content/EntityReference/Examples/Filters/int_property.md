@@ -16,10 +16,11 @@ Returns true when the int actor property matches the value provided.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | *not set* | String | (Required) The property name to look for |  | 
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
+| domain | *not set* | String | (Required) The property name to look for | Creaking: `"minecraft:creaking_swaying_ticks"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Creaking: `">"`, `"<="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | *not set* | Integer number | (Required) An integer value. |  | 
+| test | *not set* | String |  | Creaking: `"int_property"` | 
+| value | *not set* | Integer number | (Required) An integer value. | Creaking: `5` | 
 
 ### Operator choices
 
@@ -67,17 +68,32 @@ At Short (using Defaults)..:
 At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/0/: 
 
 ```json
-{"test":"int_property","domain":"minecraft:creaking_swaying_ticks","operator":">","value":0}
+{
+  "test": "int_property",
+  "domain": "minecraft:creaking_swaying_ticks",
+  "operator": ">",
+  "value": 0
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/3/filters/all_of/1/: 
 
 ```json
-{"test":"int_property","domain":"minecraft:creaking_swaying_ticks","operator":"<=","value":5}
+{
+  "test": "int_property",
+  "domain": "minecraft:creaking_swaying_ticks",
+  "operator": "<=",
+  "value": 5
+}
 ```
 
 At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/4/filters/: 
 
 ```json
-{"test":"int_property","domain":"minecraft:creaking_swaying_ticks","operator":">","value":5}
+{
+  "test": "int_property",
+  "domain": "minecraft:creaking_swaying_ticks",
+  "operator": ">",
+  "value": 5
+}
 ```

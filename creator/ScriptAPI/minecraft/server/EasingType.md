@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .EasingType Enumeration
-description: Contents of the .EasingType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.EasingType Enumeration
+description: Contents of the @minecraft/server.EasingType enumeration.
 ---
 # EasingType Enumeration
 

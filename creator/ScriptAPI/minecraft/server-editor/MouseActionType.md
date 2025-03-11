@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .MouseActionType Enumeration
-description: Contents of the .MouseActionType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.MouseActionType Enumeration
+description: Contents of the @minecraft/server-editor.MouseActionType enumeration.
 ---
 # MouseActionType Enumeration
 

@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.WidgetStateChangeEventData Class
 description: Contents of the @minecraft/server-editor.WidgetStateChangeEventData class.
 ---
@@ -18,7 +19,7 @@ Type: [*WidgetGroup*](WidgetGroup.md)
 ### **location**
 `read-only location?: minecraftserver.Vector3;`
 
-Type: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 ### **mouseEvent**
 `read-only mouseEvent?: WidgetMouseButtonEventData;`

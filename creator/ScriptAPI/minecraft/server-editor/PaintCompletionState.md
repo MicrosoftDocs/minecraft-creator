@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .PaintCompletionState Enumeration
-description: Contents of the .PaintCompletionState enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.PaintCompletionState Enumeration
+description: Contents of the @minecraft/server-editor.PaintCompletionState enumeration.
 ---
 # PaintCompletionState Enumeration
 

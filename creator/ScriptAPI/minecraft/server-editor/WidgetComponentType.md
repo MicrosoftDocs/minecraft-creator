@@ -3,12 +3,15 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .WidgetComponentType Enumeration
-description: Contents of the .WidgetComponentType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.WidgetComponentType Enumeration
+description: Contents of the @minecraft/server-editor.WidgetComponentType enumeration.
 ---
 # WidgetComponentType Enumeration
 
 ## Constants
+### **BoundingBox**
+`BoundingBox = "BoundingBox"`
 ### **Clipboard**
 `Clipboard = "Clipboard"`
 ### **Entity**
@@ -23,3 +26,5 @@ description: Contents of the .WidgetComponentType enumeration.
 `Spline = "Spline"`
 ### **Text**
 `Text = "Text"`
+### **VolumeOutline**
+`VolumeOutline = "VolumeOutline"`

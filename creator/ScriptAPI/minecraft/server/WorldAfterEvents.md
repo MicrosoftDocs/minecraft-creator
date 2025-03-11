@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.WorldAfterEvents Class
 description: Contents of the @minecraft/server.WorldAfterEvents class.
 ---
@@ -286,7 +287,7 @@ Notes:
 ### **playerButtonInput**
 `read-only playerButtonInput: PlayerButtonInputAfterEventSignal;`
 
-This event fires when an [*@minecraft/server.InputButton*](../../minecraft/server/InputButton.md) state is changed.
+This event fires when an [*@minecraft/server.InputButton*](../../../scriptapi/minecraft/server/InputButton.md) state is changed.
 
 Type: [*PlayerButtonInputAfterEventSignal*](PlayerButtonInputAfterEventSignal.md)
 
@@ -326,7 +327,7 @@ Notes:
 ### **playerInputModeChange**
 `read-only playerInputModeChange: PlayerInputModeChangeAfterEventSignal;`
 
-This event fires when a player's [*@minecraft/server.InputMode*](../../minecraft/server/InputMode.md) changes.
+This event fires when a player's [*@minecraft/server.InputMode*](../../../scriptapi/minecraft/server/InputMode.md) changes.
 
 Type: [*PlayerInputModeChangeAfterEventSignal*](PlayerInputModeChangeAfterEventSignal.md)
 

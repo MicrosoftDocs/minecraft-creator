@@ -16,7 +16,7 @@ Allows this entity to emerge from the ground.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| cooldown_time | 0 | Integer number | Time in seconds the mob has to wait before using the goal again |  | 
+| cooldown_time | 0.5 | Decimal number | Time in seconds the mob has to wait before using the goal again |  | 
 | duration | 5 | Decimal number | Goal duration in seconds | Warden: `7` | 
 | on_done | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Trigger to be executed when the goal execution is about to end | Warden: `{"event":"minecraft:emerged","target":"self"}` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .BlockCustomComponentReloadNewEventError Class
-description: Contents of the .BlockCustomComponentReloadNewEventError class.
+ms.date: 02/10/2025
+title: minecraft/server.BlockCustomComponentReloadNewEventError Class
+description: Contents of the @minecraft/server.BlockCustomComponentReloadNewEventError class.
 ---
 # BlockCustomComponentReloadNewEventError Class
 

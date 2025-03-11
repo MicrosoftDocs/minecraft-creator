@@ -19,9 +19,10 @@ Returns true when the subject entity is in lava.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Allay: `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Allay: `"self"` | 
+| test | *not set* | String |  | Allay: `"in_lava"` | 
+| value | true | Boolean true/false | (Optional) true or false. | Allay: `true` | 
 
 ### Operator choices
 
@@ -68,14 +69,22 @@ At Short (using Defaults)..:
 
 
 ```json
-{"test":"in_lava","subject":"self","operator":"==","value":true}
+{
+  "test": "in_lava",
+  "subject": "self",
+  "operator": "==",
+  "value": true
+}
 ```
 
 #### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
 
 
 ```json
-{"test":"in_lava","subject":"self"}
+{
+  "test": "in_lava",
+  "subject": "self"
+}
 ```
 
 #### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
@@ -83,12 +92,17 @@ At Short (using Defaults)..:
 At /minecraft:entity/components/minecraft:behavior.jump_around_target/filters/all_of/2/: 
 
 ```json
-{"test":"in_lava","value":false}
+{
+  "test": "in_lava",
+  "value": false
+}
 ```
 
 #### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
 
 
 ```json
-{"test":"in_lava"}
+{
+  "test": "in_lava"
+}
 ```

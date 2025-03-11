@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-ui.UIManager Class
 description: Contents of the @minecraft/server-ui.UIManager class.
 ---
@@ -17,7 +18,7 @@ closeAllForms(player: minecraftserver.Player): void
 `
 
 #### **Parameters**
-- **player**: [*@minecraft/server.Player*](../../minecraft/server/Player.md)
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
 Notes:
 - This function can't be called in read-only mode.

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .Direction Enumeration
-description: Contents of the .Direction enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.Direction Enumeration
+description: Contents of the @minecraft/server.Direction enumeration.
 ---
 # Direction Enumeration
 
@@ -14,24 +15,24 @@ A general purpose relative direction enumeration.
 ### **Down**
 `Down = "Down"`
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) beneath (y - 1) of this item.
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) beneath (y - 1) of this item.
 ### **East**
 `East = "East"`
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the east (x + 1) of this item.
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) to the east (x + 1) of this item.
 ### **North**
 `North = "North"`
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the east (z + 1) of this item.
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) to the east (z + 1) of this item.
 ### **South**
 `South = "South"`
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the south (z - 1) of this item.
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) to the south (z - 1) of this item.
 ### **Up**
 `Up = "Up"`
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) above (y + 1) of this item.
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) above (y + 1) of this item.
 ### **West**
 `West = "West"`
 
-Returns the [*@minecraft/server.Block*](../../minecraft/server/Block.md) to the west (x - 1) of this item.
+Returns the [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md) to the west (x - 1) of this item.

@@ -20,11 +20,11 @@ Allows this entity to damage a target by using a running attack.
 | cooldown_range | *not set* | Range of integers | Minimum and maximum cooldown time-range (positive, in seconds) between each attempted ram attack. | Goat: `[30,300]`, `[5,15]` | 
 | knockback_force | 5 | Decimal number | The force of the knockback of the ram attack. | Goat: `2.5` | 
 | knockback_height | 0.1 | Decimal number | The height of the knockback of the ram attack. | Goat: `0.04` | 
-| min_ram_distance | 4 | Decimal number | The minimum distance at which the mob can start a ram attack. | Goat: `4` | 
-| on_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to trigger when attacking | Goat: `[{"event":"start_event","target":"self"}]` | 
+| min_ram_distance | 4 | Integer number | The minimum distance at which the mob can start a ram attack. | Goat: `4` | 
+| on_start | *not set* | Array of strings | The event to trigger when attacking | Goat: `[{"event":"start_event","target":"self"}]` | 
 | pre_ram_sound | *not set* | String | The sound to play when an entity is about to perform a ram attack. | Goat: `"pre_ram"`, `"pre_ram.screamer"` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Goat: `5` | 
-| ram_distance | 7 | Decimal number | The distance at which the mob start to run with ram speed. | Goat: `7` | 
+| ram_distance | 7 | Integer number | The distance at which the mob start to run with ram speed. | Goat: `7` | 
 | ram_impact_sound | *not set* | String | The sound to play when an entity is impacting on a ram attack. | Goat: `"ram_impact"`, `"ram_impact.screamer"` | 
 | ram_speed | 2 | Decimal number | Sets the entity's speed when charging toward the target. | Goat: `1.8` | 
 | run_speed | 1 | Decimal number | Sets the entity's speed when running toward the target. | Goat: `0.7` | 

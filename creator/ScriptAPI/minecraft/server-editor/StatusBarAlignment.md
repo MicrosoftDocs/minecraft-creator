@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .StatusBarAlignment Enumeration
-description: Contents of the .StatusBarAlignment enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-editor.StatusBarAlignment Enumeration
+description: Contents of the @minecraft/server-editor.StatusBarAlignment enumeration.
 ---
 # StatusBarAlignment Enumeration
 

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .InvalidIteratorError Class
-description: Contents of the .InvalidIteratorError class.
+ms.date: 02/10/2025
+title: minecraft/server.InvalidIteratorError Class
+description: Contents of the @minecraft/server.InvalidIteratorError class.
 ---
 # InvalidIteratorError Class
 

@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .FormCancelationReason Enumeration
-description: Contents of the .FormCancelationReason enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-ui.FormCancelationReason Enumeration
+description: Contents of the @minecraft/server-ui.FormCancelationReason enumeration.
 ---
 # FormCancelationReason Enumeration
 

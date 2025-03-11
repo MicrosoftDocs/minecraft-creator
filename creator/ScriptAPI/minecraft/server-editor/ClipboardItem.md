@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server-editor.ClipboardItem Class
 description: Contents of the @minecraft/server-editor.ClipboardItem class.
 ---
@@ -24,15 +25,14 @@ Return whether there is any block content in the item
 
 Type: *boolean*
 
-Notes:
-  - This property can throw errors when used.
+### **size**
+`read-only size: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 ## Methods
 - [clear](#clear)
-- [getPredictedWriteAsCompoundBlockVolume](#getpredictedwriteascompoundblockvolume)
-- [getPredictedWriteAsSelection](#getpredictedwriteasselection)
-- [getSize](#getsize)
-- [readFromSelection](#readfromselection)
+- [getPredictedWriteVolume](#getpredictedwritevolume)
 - [readFromStructure](#readfromstructure)
 - [readFromWorld](#readfromworld)
 - [writeToWorld](#writetoworld)
@@ -48,80 +48,21 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
 
-### **getPredictedWriteAsCompoundBlockVolume**
+### **getPredictedWriteVolume**
 `
-getPredictedWriteAsCompoundBlockVolume(location: minecraftserver.Vector3, options?: ClipboardWriteOptions): minecraftserver.CompoundBlockVolume
+getPredictedWriteVolume(location: minecraftserver.Vector3, options?: ClipboardWriteOptions): RelativeVolumeListBlockVolume
 `
-
-Create a [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) container which represents the occupied block volumes within the ClipboardItem.
-
-This function does not perform any write operations, and instead returns only a prediction of the volume area which would be affected as part of a write operation with a given set of write options.
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-  
-  A world location to which the ClipboardItem may potentially be written (nothing is actually written as part of this operation)
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 - **options**?: [*ClipboardWriteOptions*](ClipboardWriteOptions.md) = `null`
-  
-  An optional set of write parameters which govern how the ClipboardItem should be potentially applied to the world
 
-**Returns** [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) - A [*@minecraft/server.CompoundBlockVolume*](../../minecraft/server/CompoundBlockVolume.md) which represents the occupied block volumes within the ClipboardItem as they would be written to the world with the specified [*@minecraft/server-editor.ClipboardWriteOptions*](../../minecraft/server-editor/ClipboardWriteOptions.md)
+**Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-
-### **getPredictedWriteAsSelection**
-`
-getPredictedWriteAsSelection(location: minecraftserver.Vector3, options?: ClipboardWriteOptions): Selection
-`
-
-Create a [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) container which represents the occupied block volumes within the ClipboardItem.
-
-This function does not perform any write operations, and instead returns only a prediction of the volume area which would be affected as part of a write operation with a given set of write options.
-
-#### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-  
-  A world location to which the ClipboardItem may potentially be written (nothing is actually written as part of this operation)
-- **options**?: [*ClipboardWriteOptions*](ClipboardWriteOptions.md) = `null`
-  
-  An optional set of write parameters which govern how the ClipboardItem should be potentially applied to the world
-
-**Returns** [*Selection*](Selection.md) - A [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) which represents the occupied block volumes within the ClipboardItem as they would be written to the world with the specified [*@minecraft/server-editor.ClipboardWriteOptions*](../../minecraft/server-editor/ClipboardWriteOptions.md)
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-
-### **getSize**
-`
-getSize(): minecraftserver.Vector3
-`
-
-Get the bounding size of the ClipboardItem
-
-**Returns** [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-
-### **readFromSelection**
-`
-readFromSelection(selection: Selection): void
-`
-
-Copy the contents of the area represented by a [*@minecraft/server-editor.Selection*](../../minecraft/server-editor/Selection.md) volume into the ClipboardItem
-
-#### **Parameters**
-- **selection**: [*Selection*](Selection.md)
-  
-  A volume which represents the area to be copied
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
+  - Throws *Error*
 
 ### **readFromStructure**
 `
@@ -134,22 +75,16 @@ readFromStructure(structure: EditorStructure): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **readFromWorld**
 `
-readFromWorld(from: minecraftserver.Vector3, to: minecraftserver.Vector3): void
+readFromWorld(source: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume): void
 `
 
 Copy the contents of a rectangular volume into the Clipboard Item
 
 #### **Parameters**
-- **from**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-  
-  The world location of one corner of a bounding volume
-- **to**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
-  
-  The world location of the opposite corner of a bounding volume
+- **source**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
   
 Notes:
 - This function can't be called in read-only mode.
@@ -163,9 +98,9 @@ writeToWorld(location: minecraftserver.Vector3, options?: ClipboardWriteOptions)
 Apply the contents of a ClipboardItem to the world at a given location using a set of write options
 
 #### **Parameters**
-- **location**: [*@minecraft/server.Vector3*](../../minecraft/server/Vector3.md)
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
   
-  The root point of the world location to which the ClipboardItem is written (this is modified by the various anchor, offset and rotation parameters of the [*@minecraft/server-editor.ClipboardWriteOptions*](../../minecraft/server-editor/ClipboardWriteOptions.md)
+  The root point of the world location to which the ClipboardItem is written (this is modified by the various anchor, offset and rotation parameters of the [*@minecraft/server-editor.ClipboardWriteOptions*](../../../scriptapi/minecraft/server-editor/ClipboardWriteOptions.md)
 - **options**?: [*ClipboardWriteOptions*](ClipboardWriteOptions.md) = `null`
   
   An optional set of write parameters which modify the properties of the ClipboardItem as it is applied to the world
@@ -175,3 +110,4 @@ Apply the contents of a ClipboardItem to the world at a given location using a s
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws *Error*

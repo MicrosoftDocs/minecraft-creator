@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .GameRule Enumeration
-description: Contents of the .GameRule enumeration.
+ms.date: 02/10/2025
+title: minecraft/server.GameRule Enumeration
+description: Contents of the @minecraft/server.GameRule enumeration.
 ---
 # GameRule Enumeration
 

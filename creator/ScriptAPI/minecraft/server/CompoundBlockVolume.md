@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.CompoundBlockVolume Class
 description: Contents of the @minecraft/server.CompoundBlockVolume class.
 monikerRange: "=minecraft-bedrock-experimental"
@@ -304,13 +305,13 @@ Notes:
 translateOrigin(delta: Vector3, preserveExistingVolumes?: boolean): void
 `
 
-Similar to [*@minecraft/server.CompoundBlockVolume.setOrigin*](../../minecraft/server/CompoundBlockVolume.md#setorigin) - this function will translate the origin by a given delta to a new position
+Similar to [*@minecraft/server.CompoundBlockVolume.setOrigin*](../../../scriptapi/minecraft/server/CompoundBlockVolume.md#setorigin) - this function will translate the origin by a given delta to a new position
 
 #### **Parameters**
 - **delta**: [*Vector3*](Vector3.md)
 - **preserveExistingVolumes**?: *boolean* = `null`
   
-  See the description for the arguments to [*@minecraft/server.CompoundBlockVolume.setOrigin*](../../minecraft/server/CompoundBlockVolume.md#setorigin)
+  See the description for the arguments to [*@minecraft/server.CompoundBlockVolume.setOrigin*](../../../scriptapi/minecraft/server/CompoundBlockVolume.md#setorigin)
   
 Notes:
 - This function can't be called in read-only mode.

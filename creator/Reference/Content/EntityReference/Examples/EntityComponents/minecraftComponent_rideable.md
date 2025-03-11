@@ -18,8 +18,11 @@ This entity can be ridden.
 |:----------|:-------------|:----|:-----------|:------------- |
 | controlling_seat | 0 | Integer number | The seat that designates the driver of the entity. Entities with the "minecraft:behavior.controlled_by_player" goal ignore this field and give control to any player in any seat. |  | 
 | crouching_skip_interact | true | Boolean true/false | If true, this entity can't be interacted with if the entity interacting with it is crouching. | Camel: `true` | 
+| dismount_mode | default | String | Defines where riders are placed when dismounting this entity: <br>- "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found. <br>- "on_top_center", riders are placed at the center of the top of the entity's collision box. |  | 
 | family_types | *not set* | Array of strings | List of entities that can ride this entity. | Camel: `["player"]`, Cat: `["zombie"]`, Donkey: `["player","zombie"]` | 
 | interact_text | *not set* | String | The text to display when the player can interact with the entity when playing with touch-screen controls. | Camel: `"action.interact.ride.horse"`, Donkey: `"action.interact.mount"`, Minecart: `"action.interact.ride.minecart"` | 
+| on_rider_enter_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to execute on the owner entity when an entity starts riding it. |  | 
+| on_rider_exit_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to execute on the owner entity when an entity stops riding it. |  | 
 | passenger_max_width | 0 | Decimal number | The max width a mob can have to be a rider. A value of 0 ignores this parameter. |  | 
 | priority | *not set* | Integer number | This field may exist in old data but isn't used by "minecraft:rideable". |  | 
 | pull_in_entities | false | Boolean true/false | If true, this entity will pull in entities that are in the correct "family_types" into any available seats. | Camel: `true` | 

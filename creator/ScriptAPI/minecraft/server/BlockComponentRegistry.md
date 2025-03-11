@@ -3,6 +3,7 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
 title: minecraft/server.BlockComponentRegistry Class
 description: Contents of the @minecraft/server.BlockComponentRegistry class.
 ---
@@ -23,4 +24,4 @@ registerCustomComponent(name: string, customComponent: BlockCustomComponent): vo
 Notes:
 - This function can be called in early-execution mode.
 - This function can throw errors.
-  - Throws [*BlockCustomComponentAlreadyRegisteredError*](BlockCustomComponentAlreadyRegisteredError.md), [*BlockCustomComponentReloadNewComponentError*](BlockCustomComponentReloadNewComponentError.md), [*BlockCustomComponentReloadNewEventError*](BlockCustomComponentReloadNewEventError.md), [*BlockCustomComponentReloadVersionError*](BlockCustomComponentReloadVersionError.md), [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*@minecraft/common.EngineError*](../../minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md)
+  - Throws [*BlockCustomComponentAlreadyRegisteredError*](BlockCustomComponentAlreadyRegisteredError.md), [*BlockCustomComponentReloadNewComponentError*](BlockCustomComponentReloadNewComponentError.md), [*BlockCustomComponentReloadNewEventError*](BlockCustomComponentReloadNewEventError.md), [*BlockCustomComponentReloadVersionError*](BlockCustomComponentReloadVersionError.md), [*CustomComponentInvalidRegistryError*](CustomComponentInvalidRegistryError.md), [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*NamespaceNameError*](NamespaceNameError.md)

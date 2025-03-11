@@ -3,8 +3,9 @@
 author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
-title: .GameTestErrorType Enumeration
-description: Contents of the .GameTestErrorType enumeration.
+ms.date: 02/10/2025
+title: minecraft/server-gametest.GameTestErrorType Enumeration
+description: Contents of the @minecraft/server-gametest.GameTestErrorType enumeration.
 ---
 # GameTestErrorType Enumeration
 

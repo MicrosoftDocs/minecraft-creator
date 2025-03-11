@@ -18,6 +18,7 @@ Tests if the subject has been given a custom name.
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| test | *not set* | String |  | Evocation Illager: `"has_nametag"` | 
 | value | true | Boolean true/false | (Optional) true or false. |  | 
 
 ### Operator choices
@@ -66,5 +67,8 @@ At Short (using Defaults)..:
 At /minecraft:entity/events/minecraft:start_celebrating/sequence/1/filters/: 
 
 ```json
-{"test":"has_nametag","value":false}
+{
+  "test": "has_nametag",
+  "value": false
+}
 ```
