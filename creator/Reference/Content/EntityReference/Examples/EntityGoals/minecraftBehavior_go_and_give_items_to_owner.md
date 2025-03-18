@@ -16,7 +16,7 @@ The entity will attempt to toss the items from its inventory to its owner.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| on_item_throw | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when this mob throws items. | Allay: `[{"event":"pickup_item_delay","target":"self"}]` | 
+| on_item_throw | *not set* | Array of strings | Event(s) to run when this mob throws items. | Allay: `[{"event":"pickup_item_delay","target":"self"}]` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `4` | 
 | reach_mob_distance | 3 | Decimal number | Sets the desired distance to be reached before giving items to owner. |  | 
 | run_speed | 1 | Decimal number | Sets the entity's speed when running toward the owner. | Allay: `8` | 

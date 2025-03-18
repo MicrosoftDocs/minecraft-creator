@@ -21,6 +21,20 @@ Sets the color of the block when rendered to a map. If this component is omitted
 
 ## Samples
 
+#### [Block Fabricator](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json)
+
+
+```json
+"minecraft:map_color": "#5f4a2b"
+```
+
+#### [Block Gray Ore](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json)
+
+
+```json
+"minecraft:map_color": "#ffcd17"
+```
+
 #### [Block Orange Ore](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json)
 
 
@@ -33,13 +47,6 @@ Sets the color of the block when rendered to a map. If this component is omitted
 
 ```json
 "minecraft:map_color": "#f30000"
-```
-
-#### [Block Frond Top](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json)
-
-
-```json
-"minecraft:map_color": "#5f4a2b"
 ```
 
 #### [Block Palm Leave Corner](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_corner.block.json)

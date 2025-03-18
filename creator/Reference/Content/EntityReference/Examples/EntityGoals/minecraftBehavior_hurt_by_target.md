@@ -235,3 +235,20 @@ List of entity types that this mob can target when hurt by them.
   }
 }
 ```
+
+#### [Axe Turret](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json)
+
+
+```json
+"minecraft:behavior.hurt_by_target": {
+  "priority": 3,
+  "entity_types": {
+    "filters": {
+      "test": "is_family",
+      "subject": "other",
+      "value": "monster"
+    },
+    "max_dist": 16
+  }
+}
+```

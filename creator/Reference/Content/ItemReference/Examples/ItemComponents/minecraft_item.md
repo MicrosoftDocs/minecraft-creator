@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Item definition includes the "description" and "components" sections.
 
 
-## Item Properties
+## Minecraft Item Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -62,7 +62,7 @@ List of all components used in this item.
 | minecraft:storage_item | *not set* | [Storage Item](#storage-item-item-type) item | [EXPERIMENTAL] Storage Items can be used by other components to store other items within this item. |  | 
 | minecraft:storage_weight_limit | *not set* | [Storage Weight Limit](#storage-weight-limit-item-type) item | Specifies the maximum weight limit that a storage item can hold |  | 
 | minecraft:storage_weight_modifier | *not set* | [Storage Weight Modifier](#storage-weight-modifier-item-type) item | Specifies the maximum weight limit that a storage item can hold |  | 
-| minecraft:tags | *not set* | [Tags](#tags-item-type) item | The tags component specifies which tags an item has on it. |  | 
+| minecraft:tags | *not set* | Object | The tags component specifies which tags an item has on it. |  | 
 | minecraft:throwable | *not set* | [Throwable](#throwable-item-type) item | Throwable items can be thrown by the player, such as a snowball. |  | 
 | minecraft:use_animation | *not set* | Object | Use_animation specifies which animation is played when the player uses the item. |  | 
 | minecraft:use_modifiers | *not set* | [Use Modifiers](#use-modifiers-item-type) item | This component modifies use effects, including how long the item takes to use and the player's speed when used in combination with components like "shooter", "throwable", or "food". |  | 
@@ -288,16 +288,6 @@ Specifies the maximum weight limit that a storage item can hold.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | weight_in_storage_item | *not set* | Integer number | The weight of this item when inside another Storage Item. Default is 4. 0 means item is not allowed in another Storage Item. |  | 
-
-## Tags item type
-The tags component specifies which tags an item has on it.
-
-
-#### Tags Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| tags | *not set* | Array of objects | An array that can contain multiple item tags. |  | 
 
 ## Throwable item type
 Throwable items can be thrown by the player, such as a snowball.

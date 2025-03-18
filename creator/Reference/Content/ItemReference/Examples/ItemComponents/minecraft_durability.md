@@ -32,6 +32,15 @@ Sets how much damage the item can take before breaking, and allows the item to b
 }
 ```
 
+#### [Item Axe Turret Kit](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json)
+
+
+```json
+"minecraft:durability": {
+  "max_durability": 251
+}
+```
+
 #### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
 
 

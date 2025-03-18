@@ -21,9 +21,34 @@ This item can also be represented as a `String`.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | bone_visibility | *not set* | Keyed collection of boolean values |  | Blue Bubble Fish: `{"bb_main":true,"fish":true}` | 
-| identifier | *not set* | String |  | Blue Bubble Fish: `"geometry.bubble_fish"`, Die: `"minecraft:geometry.full_block"` | 
+| culling | *not set* | String |  | Tuna Roll: `"test:sushi_cull"` | 
+| identifier | *not set* | String |  | Tuna Roll: `"geometry.sushi"`, Blue Bubble Fish: `"geometry.bubble_fish"`, Die: `"minecraft:geometry.full_block"` | 
 
 ## Samples
+
+#### [Block Fabricator](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.mikeamm_gwve_fabricator"
+```
+
+#### [Block Gray Ore](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.mikeamm_gwve_gray_ore"
+```
+
+#### [Tuna Roll](https://github.com/microsoft/minecraft-samples/tree/main/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json)
+
+
+```json
+"minecraft:geometry": {
+  "identifier": "geometry.sushi",
+  "culling": "test:sushi_cull"
+}
+```
 
 #### [Blue Bubble Fish](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json)
 
@@ -94,18 +119,4 @@ This item can also be represented as a `String`.
 
 ```json
 "minecraft:geometry": "geometry.palm_leave"
-```
-
-#### [Block Palm Tree Top](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_tree_top.block.json)
-
-
-```json
-"minecraft:geometry": "geometry.palm_tree_top"
-```
-
-#### [Block Palm Trunk](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_trunk.block.json)
-
-
-```json
-"minecraft:geometry": "geometry.palm_trunk"
 ```

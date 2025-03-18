@@ -1,160 +1,194 @@
-- name: Filters List
+- name: Entity Filter List
   href: ../FilterList.md
-- name: actor_health
+- name: Actor Health
   href: actor_health.md
-- name: all_slots_empty
+- name: All Slots Empty
   href: all_slots_empty.md
-- name: any_slot_empty
+- name: Any Slot Empty
   href: any_slot_empty.md
-- name: clock_time
+- name: Bool Property
+  href: bool_property.md
+- name: Clock Time
   href: clock_time.md
-- name: distance_to_nearest_player
+- name: Distance To Nearest Player
   href: distance_to_nearest_player.md
-- name: has_ability
+- name: Enum Property
+  href: enum_property.md
+- name: Float Property
+  href: float_property.md
+- name: Has Ability
   href: has_ability.md
-- name: has_biome_tag
+- name: Has Biome Tag
   href: has_biome_tag.md
-- name: has_component
+- name: Has Component
   href: has_component.md
-- name: has_container_open
+- name: Has Container Open
   href: has_container_open.md
-- name: has_damage
+- name: Has Damage
   href: has_damage.md
-- name: has_equipment
+- name: Has Damaged Equipment
+  href: has_damaged_equipment.md
+- name: Has Equipment
   href: has_equipment.md
-- name: has_mob_effect
+- name: Has Mob Effect
   href: has_mob_effect.md
-- name: has_nametag
+- name: Has Nametag
   href: has_nametag.md
-- name: has_ranged_weapon
+- name: Has Property
+  href: has_property.md
+- name: Has Ranged Weapon
   href: has_ranged_weapon.md
-- name: has_silk_touch
+- name: Has Silk Touch
   href: has_silk_touch.md
-- name: has_tag
+- name: Has Tag
   href: has_tag.md
-- name: has_target
+- name: Has Target
   href: has_target.md
-- name: has_trade_supply
+- name: Has Trade Supply
   href: has_trade_supply.md
-- name: hourly_clock_time
+- name: Home Distance
+  href: home_distance.md
+- name: Hourly Clock Time
   href: hourly_clock_time.md
-- name: in_caravan
-  href: in_caravan.md
-- name: in_block
-  href: in_block.md
-- name: in_clouds
-  href: in_clouds.md
-- name: in_contact_with_water
-  href: in_contact_with_water.md
-- name: in_lava
-  href: in_lava.md
-- name: in_nether
-  href: in_nether.md
-- name: in_water_or_rain
-  href: in_water_or_rain.md
-- name: in_water
-  href: in_water.md
-- name: inactivity_timer
+- name: Inactivity Timer
   href: inactivity_timer.md
-- name: is_altitude
+- name: Int Property
+  href: int_property.md
+- name: In Block
+  href: in_block.md
+- name: In Caravan
+  href: in_caravan.md
+- name: In Clouds
+  href: in_clouds.md
+- name: In Contact With Water
+  href: in_contact_with_water.md
+- name: In Lava
+  href: in_lava.md
+- name: In Nether
+  href: in_nether.md
+- name: In Overworld
+  href: in_overworld.md
+- name: In Water
+  href: in_water.md
+- name: In Water Or Rain
+  href: in_water_or_rain.md
+- name: Is Altitude
   href: is_altitude.md
-- name: is_avoiding_mobs
+- name: Is Avoiding Mobs
   href: is_avoiding_mobs.md
-- name: is_biome
+- name: Is Baby
+  href: is_baby.md
+- name: Is Biome
   href: is_biome.md
-- name: is_block
+- name: Is Block
   href: is_block.md
-- name: is_brightness
+- name: Is Bound To Creaking Heart
+  href: is_bound_to_creaking_heart.md
+- name: Is Brightness
   href: is_brightness.md
-- name: is_climbing
+- name: Is Climbing
   href: is_climbing.md
-- name: is_color
+- name: Is Color
   href: is_color.md
-- name: is_daytime
+- name: Is Daytime
   href: is_daytime.md
-- name: is_difficulty
+- name: Is Difficulty
   href: is_difficulty.md
-- name: is_family
+- name: Is Family
   href: is_family.md
-- name: is_game_rule
+- name: Is Game Rule
   href: is_game_rule.md
-- name: is_humid
+- name: Is Humid
   href: is_humid.md
-- name: is_immobile
+- name: Is Immobile
   href: is_immobile.md
-- name: is_in_village
+- name: Is In Village
   href: is_in_village.md
-- name: is_leashed
+- name: Is Leashed
   href: is_leashed.md
-- name: is_leashed_to
+- name: Is Leashed To
   href: is_leashed_to.md
-- name: is_mark_variant
+- name: Is Mark Variant
   href: is_mark_variant.md
-- name: is_moving
+- name: Is Missing Health
+  href: is_missing_health.md
+- name: Is Moving
   href: is_moving.md
-- name: is_owner
+- name: Is Navigating
+  href: is_navigating.md
+- name: Is Owner
   href: is_owner.md
-- name: is_panicking
+- name: Is Panicking
   href: is_panicking.md
-- name: is_persistent
+- name: Is Persistent
   href: is_persistent.md
-- name: is_raider
+- name: Is Raider
   href: is_raider.md
-- name: is_riding
+- name: Is Riding
   href: is_riding.md
-- name: is_skin_id
+- name: Is Sitting
+  href: is_sitting.md
+- name: Is Skin Id
   href: is_skin_id.md
-- name: is_sleeping
+- name: Is Sleeping
   href: is_sleeping.md
-- name: is_sneak_held
-  href: is_sneak_held.md
-- name: is_sneaking
+- name: Is Sneaking
   href: is_sneaking.md
-- name: is_snow_covered
+- name: Is Sneak Held
+  href: is_sneak_held.md
+- name: Is Snow Covered
   href: is_snow_covered.md
-- name: is_sprinting
+- name: Is Sprinting
   href: is_sprinting.md
-- name: is_target
+- name: Is Target
   href: is_target.md
-- name: is_temperature_type
+- name: Is Temperature Type
   href: is_temperature_type.md
-- name: is_temperature_value
+- name: Is Temperature Value
   href: is_temperature_value.md
-- name: is_underground
+- name: Is Underground
   href: is_underground.md
-- name: is_underwater
+- name: Is Underwater
   href: is_underwater.md
-- name: is_variant
+- name: Is Variant
   href: is_variant.md
-- name: is_visible
+- name: Is Visible
   href: is_visible.md
-- name: light_level
+- name: Is Waterlogged
+  href: is_waterlogged.md
+- name: Is Weather
+  href: is_weather.md
+- name: Light Level
   href: light_level.md
-- name: moon_intensity
+- name: Moon Intensity
   href: moon_intensity.md
-- name: moon_phase
+- name: Moon Phase
   href: moon_phase.md
-- name: on_fire
+- name: On Fire
   href: on_fire.md
-- name: on_ground
+- name: On Ground
   href: on_ground.md
-- name: on_hot_block
+- name: On Hot Block
   href: on_hot_block.md
-- name: on_ladder
+- name: On Ladder
   href: on_ladder.md
-- name: random_chance
+- name: Owner Distance
+  href: owner_distance.md
+- name: Random Chance
   href: random_chance.md
-- name: rider_count
+- name: Rider Count
   href: rider_count.md
-- name: surface_mob
+- name: Surface Mob
   href: surface_mob.md
-- name: target_distance
+- name: Taking Fire Damage
+  href: taking_fire_damage.md
+- name: Target Distance
   href: target_distance.md
-- name: trusts
+- name: Trusts
   href: trusts.md
-- name: was_last_hurt_by
+- name: Was Last Hurt By
   href: was_last_hurt_by.md
-- name: weather_at_position
-  href: weather_at_position.md
-- name: weather
+- name: Weather
   href: weather.md
+- name: Weather At Position
+  href: weather_at_position.md

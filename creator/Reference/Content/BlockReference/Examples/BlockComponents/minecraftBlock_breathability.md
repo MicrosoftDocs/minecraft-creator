@@ -9,6 +9,9 @@ ms.date: 02/11/2025
 
 # Block Components Documentation - minecraft:breathability
 
+> [!IMPORTANT]
+> This type is now deprecated, and no longer in use in the latest versions of Minecraft.
+
 Determines whether the block is breathable by defining if the block is treated as a `solid` or as `air`. The default is `solid` if this component is omitted.
 
 ## Alternate Simple Representations

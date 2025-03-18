@@ -16,8 +16,9 @@ Returns the number of riders on this entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Dream Turkey: `"=="` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Dream Turkey: `"self"` | 
+| test | *not set* | String |  | Dream Turkey: `"rider_count"` | 
 | value | *not set* | Integer number | (Required) An integer value. |  | 
 
 ### Operator choices
@@ -59,4 +60,16 @@ At Short (using Defaults)..:
 
 ```json
 { "test": "rider_count", "value": "0" }
+```
+
+#### [Dream Turkey](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json)
+
+
+```json
+{
+  "test": "rider_count",
+  "subject": "self",
+  "operator": "==",
+  "value": 0
+}
 ```

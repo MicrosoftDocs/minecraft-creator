@@ -14,3 +14,20 @@ The amount of light this block will emit in a range (0-15). Higher value means m
 ## Alternate Simple Representations
 
 This item can also be represented as a `Integer number`.
+
+
+## Samples
+
+#### [Block Fabricator](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json)
+
+
+```json
+"minecraft:light_emission": 7
+```
+
+#### [Block Gray Ore](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json)
+
+
+```json
+"minecraft:light_emission": 15
+```

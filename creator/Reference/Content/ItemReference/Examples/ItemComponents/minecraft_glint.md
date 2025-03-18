@@ -21,3 +21,12 @@ This item can also be represented as a `Boolean true/false`.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | value | *not set* | Boolean true/false | Whether the item has the enchanted glint render effect. |  | 
+
+## Samples
+
+#### [Item Depleted Gray Shard](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/depleted_gray_shard.item.json)
+
+
+```json
+"minecraft:glint": true
+```
