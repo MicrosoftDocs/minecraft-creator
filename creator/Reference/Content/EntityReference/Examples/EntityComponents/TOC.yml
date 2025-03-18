@@ -1,344 +1,350 @@
 - name: Components List
   href: ../ComponentList.md
-- name: addrider
+- name: Add Rider
   href: minecraftComponent_addrider.md
-- name: admire_item
+- name: Admire Item
   href: minecraftComponent_admire_item.md
-- name: ageable
+- name: Ageable
   href: minecraftComponent_ageable.md
-- name: ambient_sound_interval
+- name: Ambient Sound Interval
   href: minecraftComponent_ambient_sound_interval.md
-- name: anger_level
+- name: Anger Level
   href: minecraftComponent_anger_level.md
-- name: angry
+- name: Angry
   href: minecraftComponent_angry.md
-- name: annotation_break_door
+- name: Break doors annotation
   href: minecraftComponent_annotation_break_door.md
-- name: annotation_open_door
+- name: Open doors annotation
   href: minecraftComponent_annotation_open_door.md
-- name: area_attack
+- name: Area Attack
   href: minecraftComponent_area_attack.md
-- name: attack
+- name: Attack
   href: minecraftComponent_attack.md
-- name: attack_cooldown
+- name: Attack Cooldown
   href: minecraftComponent_attack_cooldown.md
-- name: attack_damage
+- name: Attack Damage
   href: minecraftComponent_attack_damage.md
-- name: balloonable
+- name: Balloonable
   href: minecraftComponent_balloonable.md
-- name: barter
+- name: Barter
   href: minecraftComponent_barter.md
-- name: block_climber
+- name: Block Climber
   href: minecraftComponent_block_climber.md
-- name: block_sensor
+- name: Block Sensor
   href: minecraftComponent_block_sensor.md
-- name: body rotation blocked
+- name: Body Rotation Axis Aligned
+  href: minecraftComponent_body_rotation_axis_aligned.md
+- name: Body Rotation Blocked
   href: minecraftComponent_body_rotation_blocked.md
-- name: boostable
+- name: Boostable
   href: minecraftComponent_boostable.md
-- name: boss
+- name: Boss
   href: minecraftComponent_boss.md
-- name: break_blocks
+- name: Break Blocks
   href: minecraftComponent_break_blocks.md
-- name: breathable
+- name: Breathable
   href: minecraftComponent_breathable.md
-- name: breedable
+- name: Breedable
   href: minecraftComponent_breedable.md
-- name: bribeable
+- name: Bribeable
   href: minecraftComponent_bribeable.md
-- name: buoyant
+- name: Buoyant
   href: minecraftComponent_buoyant.md
-- name: burns_in_daylight
+- name: Burns In Daylight
   href: minecraftComponent_burns_in_daylight.md
-- name: can_climb
-  href: minecraftComponent_can_climb.md
-- name: can_fly
-  href: minecraftComponent_can_fly.md
-- name: can_join_raid
-  href: minecraftComponent_can_join_raid.md
-- name: can_power_jump
-  href: minecraftComponent_can_power_jump.md
-- name: cannot_be_attacked
+- name: Cannot Be Attacked
   href: minecraftComponent_cannot_be_attacked.md
-- name: celebrate_hunt
+- name: Can climb
+  href: minecraftComponent_can_climb.md
+- name: Can Fly
+  href: minecraftComponent_can_fly.md
+- name: Can Join Raid
+  href: minecraftComponent_can_join_raid.md
+- name: Can Power Jump
+  href: minecraftComponent_can_power_jump.md
+- name: Celebrate Hunt
   href: minecraftComponent_celebrate_hunt.md
-- name: color
+- name: Collision Box
+  href: minecraftComponent_collision_box.md
+- name: Color
   href: minecraftComponent_color.md
-- name: color2
+- name: Color2
   href: minecraftComponent_color2.md
-- name: combat_regeneration
+- name: Combat Regeneration
   href: minecraftComponent_combat_regeneration.md
-- name: conditional_bandwidth_optimization
+- name: Conditional Bandwidth Optimization
   href: minecraftComponent_conditional_bandwidth_optimization.md
-- name: custom_hit_test
+- name: Custom Hit Test
   href: minecraftComponent_custom_hit_test.md
-- name: damage_over_time
+- name: Damage Over Time
   href: minecraftComponent_damage_over_time.md
-- name: damage_sensor
+- name: Damage Sensor
   href: minecraftComponent_damage_sensor.md
-- name: dash
+- name: Dash
   href: minecraftComponent_dash.md
-- name: default_look_angle
+- name: Default Look Angle
   href: minecraftComponent_default_look_angle.md
-- name: despawn
+- name: Despawn
   href: minecraftComponent_despawn.md
-- name: dimension_bound
+- name: Dimension Bound
   href: minecraftComponent_dimension_bound.md
-- name: drying_out_timer
+- name: Drying Out Timer
   href: minecraftComponent_drying_out_timer.md
-- name: dweller
+- name: Dweller
   href: minecraftComponent_dweller.md
-- name: economy_trade_table
+- name: Economy Trade Table
   href: minecraftComponent_economy_trade_table.md
-- name: entity_sensor
+- name: Entity Armor Equipment Slot Mapping
+  href: minecraftComponent_entity_armor_equipment_slot_mapping.md
+- name: Entity Sensor
   href: minecraftComponent_entity_sensor.md
-- name: environment_sensor
+- name: Environment Sensor
   href: minecraftComponent_environment_sensor.md
-- name: equip_item
-  href: minecraftComponent_equip_item.md
-- name: equipment
+- name: Equipment
   href: minecraftComponent_equipment.md
-- name: equippable
+- name: Equippable
   href: minecraftComponent_equippable.md
-- name: exhaustion_values
+- name: Equip Item
+  href: minecraftComponent_equip_item.md
+- name: Exhaustion Values
   href: minecraftComponent_exhaustion_values.md
-- name: experience_reward
+- name: Experience Reward
   href: minecraftComponent_experience_reward.md
-- name: explode
+- name: Explode
   href: minecraftComponent_explode.md
-- name: fire_immune
+- name: Fire Immune
   href: minecraftComponent_fire_immune.md
-- name: floats_in_liquid
+- name: Floats In Liquid
   href: minecraftComponent_floats_in_liquid.md
-- name: flocking
+- name: Flocking
   href: minecraftComponent_flocking.md
-- name: flying_speed
+- name: Flying Speed
   href: minecraftComponent_flying_speed.md
-- name: follow_range
-  href: minecraftComponent_follow_range.md
-- name: friction_modifier
+- name: Friction Modifier
   href: minecraftComponent_friction_modifier.md
-- name: game_event_movement_tracking
+- name: Game Event Movement Tracking
   href: minecraftComponent_game_event_movement_tracking.md
-- name: genetics
+- name: Genetics
   href: minecraftComponent_genetics.md
-- name: giveable
+- name: Giveable
   href: minecraftComponent_giveable.md
-- name: ground_offset
+- name: Ground Offset
   href: minecraftComponent_ground_offset.md
-- name: group_size
+- name: Group Size
   href: minecraftComponent_group_size.md
-- name: grows_crop
+- name: Grows Crop
   href: minecraftComponent_grows_crop.md
-- name: healable
+- name: Healable
   href: minecraftComponent_healable.md
-- name: health
+- name: Health
   href: minecraftComponent_health.md
-- name: heartbeat
+- name: Heartbeat
   href: minecraftComponent_heartbeat.md
-- name: hide
+- name: Hide
   href: minecraftComponent_hide.md
-- name: home
+- name: Home
   href: minecraftComponent_home.md
-- name: horse.jump_strength
-  href: minecraftComponent_horse.jump_strength.md
-- name: hurt_on_condition
+- name: Hurt On Condition
   href: minecraftComponent_hurt_on_condition.md
-- name: ignore_cannot_be_attacked
+- name: Ignore Cannot Be Attacked
   href: minecraftComponent_ignore_cannot_be_attacked.md
-- name: input_ground_controlled
+- name: Input Air Controlled
+  href: minecraftComponent_input_air_controlled.md
+- name: Input Ground Controlled
   href: minecraftComponent_input_ground_controlled.md
-- name: inside_block_notifier
+- name: Inside Block Notifier
   href: minecraftComponent_inside_block_notifier.md
-- name: insomnia
+- name: Insomnia
   href: minecraftComponent_insomnia.md
-- name: instant_despawn
+- name: Instant Despawn
   href: minecraftComponent_instant_despawn.md
-- name: interact
+- name: Interact
   href: minecraftComponent_interact.md
-- name: inventory
+- name: Inventory
   href: minecraftComponent_inventory.md
-- name: is_baby
+- name: Is Baby
   href: minecraftComponent_is_baby.md
-- name: is_charged
+- name: Is Charged
   href: minecraftComponent_is_charged.md
-- name: is_chested
+- name: Is Chested
   href: minecraftComponent_is_chested.md
-- name: is_dyeable
+- name: Is Collidable
+  href: minecraftComponent_is_collidable.md
+- name: Is Dyeable
   href: minecraftComponent_is_dyeable.md
-- name: is_hidden_when_invisible
+- name: Is Hidden When Invisible
   href: minecraftComponent_is_hidden_when_invisible.md
-- name: is_ignited
+- name: Is Ignited
   href: minecraftComponent_is_ignited.md
-- name: is_illager_captain
+- name: Is Illager Captain
   href: minecraftComponent_is_illager_captain.md
-- name: is_saddled
+- name: Is Pregnant
+  href: minecraftComponent_is_pregnant.md
+- name: Is Saddled
   href: minecraftComponent_is_saddled.md
-- name: is_shaking
+- name: Is Shaking
   href: minecraftComponent_is_shaking.md
-- name: is_sheared
+- name: Is Sheared
   href: minecraftComponent_is_sheared.md
-- name: is_stackable
+- name: Is Stackable
   href: minecraftComponent_is_stackable.md
-- name: is_stunned
+- name: Is Stunned
   href: minecraftComponent_is_stunned.md
-- name: is_tamed
+- name: Is Tamed
   href: minecraftComponent_is_tamed.md
-- name: item_controllable
+- name: Item Controllable
   href: minecraftComponent_item_controllable.md
-- name: item_hopper
+- name: Item Hopper
   href: minecraftComponent_item_hopper.md
-- name: jump.dynamic
+- name: Dynamic Jump
   href: minecraftComponent_jump.dynamic.md
-- name: jump.static
+- name: Static Jump
   href: minecraftComponent_jump.static.md
-- name: knockback_resistance
-  href: minecraftComponent_knockback_resistance.md
-- name: lava_movement
-  href: minecraftComponent_lava_movement.md
-- name: leashable
+- name: Leashable
   href: minecraftComponent_leashable.md
-- name: looked_at
+- name: Looked At
   href: minecraftComponent_looked_at.md
-- name: loot
+- name: Loot
   href: minecraftComponent_loot.md
-- name: managed_wandering_trader
+- name: Managed Wandering Trader
   href: minecraftComponent_managed_wandering_trader.md
-- name: mark_variant
+- name: Mark Variant
   href: minecraftComponent_mark_variant.md
-- name: mob_effect
+- name: Mob Effect
   href: minecraftComponent_mob_effect.md
-- name: movement.amphibious
+- name: Mob Effect Immunity
+  href: minecraftComponent_mob_effect_immunity.md
+- name: Movement
+  href: minecraftComponent_movement.md
+- name: Amphibious Movement
   href: minecraftComponent_movement.amphibious.md
-- name: movement.basic
+- name: Basic Movement
   href: minecraftComponent_movement.basic.md
-- name: movement.dolphin
+- name: Dolphin Movement
   href: minecraftComponent_movement.dolphin.md
-- name: movement.fly
+- name: Fly Movement
   href: minecraftComponent_movement.fly.md
-- name: movement.generic
+- name: Generic Movement
   href: minecraftComponent_movement.generic.md
-- name: movement.glide
-  href: minecraftComponent_movement.glide.md 
-- name: movement.hover
+- name: Glide Movement
+  href: minecraftComponent_movement.glide.md
+- name: Hover Movement
   href: minecraftComponent_movement.hover.md
-- name: movement.jump
+- name: Jump Movement
   href: minecraftComponent_movement.jump.md
-- name: movement.skip
+- name: Skip Movement
   href: minecraftComponent_movement.skip.md
-- name: movement.sway
+- name: Movement Sound Distance Offset
+  href: minecraftComponent_movement.sound_distance_offset.md
+- name: Sway Movement
   href: minecraftComponent_movement.sway.md
-- name: nameable
+- name: Nameable
   href: minecraftComponent_nameable.md
-- name: navigation.climb
+- name: Climb Navigation
   href: minecraftComponent_navigation.climb.md
-- name: navigation.float
+- name: Float Navigation
   href: minecraftComponent_navigation.float.md
-- name: navigation.fly
+- name: Fly Navigation
   href: minecraftComponent_navigation.fly.md
-- name: navigation.generic
+- name: Generic Navigation
   href: minecraftComponent_navigation.generic.md
-- name: navigation.hover
+- name: Hover Navigation
   href: minecraftComponent_navigation.hover.md
-- name: navigation.swim
+- name: Swim Navigation
   href: minecraftComponent_navigation.swim.md
-- name: navigation.walk
+- name: Walk navigation
   href: minecraftComponent_navigation.walk.md
-- name: out_of_control
+- name: Out Of Control
   href: minecraftComponent_out_of_control.md
-- name: peek
+- name: Peek
   href: minecraftComponent_peek.md
-- name: persistent
+- name: Persistent
   href: minecraftComponent_persistent.md
-- name: physics
+- name: Physics
   href: minecraftComponent_physics.md
-- name: player.exhaustion
-  href: minecraftComponent_player.exhaustion.md
-- name: player.experience
-  href: minecraftComponent_player.experience.md
-- name: player.level
-  href: minecraftComponent_player.level.md
-- name: player.saturation
-  href: minecraftComponent_player.saturation.md
-- name: preferred_path
+- name: Preferred Path
   href: minecraftComponent_preferred_path.md
-- name: projectile
+- name: Projectile
   href: minecraftComponent_projectile.md
-- name: push_through
-  href: minecraftComponent_push_through.md
-- name: pushable
+- name: Pushable
   href: minecraftComponent_pushable.md
-- name: raid_trigger
+- name: Push Through
+  href: minecraftComponent_push_through.md
+- name: Raid Trigger
   href: minecraftComponent_raid_trigger.md
-- name: rail_movement
+- name: Rail Movement
   href: minecraftComponent_rail_movement.md
-- name: rail_sensor
+- name: Rail Sensor
   href: minecraftComponent_rail_sensor.md
-- name: ravager_blocked
+- name: Ravager Blocked
   href: minecraftComponent_ravager_blocked.md
-- name: rideable
+- name: Reflect Projectiles
+  href: minecraftComponent_reflect_projectiles.md
+- name: Renders When Invisible
+  href: minecraftComponent_renders_when_invisible.md
+- name: Rideable
   href: minecraftComponent_rideable.md
-- name: scaffolding_climber
-  href: minecraftComponent_scaffolding_climber.md
-- name: scale
+- name: Scale
   href: minecraftComponent_scale.md
-- name: scale_by_age
+- name: Scale By Age
   href: minecraftComponent_scale_by_age.md
-- name: scheduler
+- name: Scheduler
   href: minecraftComponent_scheduler.md
-- name: shareables
+- name: Shareables
   href: minecraftComponent_shareables.md
-- name: shooter
+- name: Shooter
   href: minecraftComponent_shooter.md
-- name: sittable
+- name: Sittable
   href: minecraftComponent_sittable.md
-- name: skin_id
+- name: Skin Id
   href: minecraftComponent_skin_id.md
-- name: sound_volume
+- name: Sound Volume
   href: minecraftComponent_sound_volume.md
-- name: spawn_entity
+- name: Spawn Entity
   href: minecraftComponent_spawn_entity.md
-- name: spell_effects
+- name: Spell Effects
   href: minecraftComponent_spell_effects.md
-- name: strength
+- name: Strength
   href: minecraftComponent_strength.md
-- name: tameable
+- name: Suspect Tracking
+  href: minecraftComponent_suspect_tracking.md
+- name: Tameable
   href: minecraftComponent_tameable.md
-- name: tamemount
+- name: Tamemount
   href: minecraftComponent_tamemount.md
-- name: target_nearby_sensor
+- name: Target Nearby Sensor
   href: minecraftComponent_target_nearby_sensor.md
-- name: teleport
+- name: Teleport
   href: minecraftComponent_teleport.md
-- name: tick_world
+- name: Tick World
   href: minecraftComponent_tick_world.md
-- name: timer
+- name: Timer
   href: minecraftComponent_timer.md
-- name: trade_resupply
+- name: Trade Resupply
   href: minecraftComponent_trade_resupply.md
-- name: trade_table
+- name: Trade Table
   href: minecraftComponent_trade_table.md
-- name: trail
+- name: Trail
   href: minecraftComponent_trail.md
-- name: transformation
+- name: Transformation
   href: minecraftComponent_transformation.md
-- name: transient
+- name: Transient
   href: minecraftComponent_transient.md
-- name: trust
+- name: Trust
   href: minecraftComponent_trust.md
-- name: trusting
+- name: Trusting
   href: minecraftComponent_trusting.md
-- name: type_family
+- name: Type Family
   href: minecraftComponent_type_family.md
-- name: underwater_movement
-  href: minecraftComponent_underwater_movement.md
-- name: variant
-  href: minecraftComponent_variant.md
-- name: walk_animation_speed
-  href: minecraftComponent_walk_animation_speed.md
-- name: wants_jockey
-  href: minecraftComponent_wants_jockey.md
-- name: water_movement
-  href: minecraftComponent_water_movement.md
-- name: variable_max_auto_step
+- name: Variable Max Auto Step
   href: minecraftComponent_variable_max_auto_step.md
+- name: Variant
+  href: minecraftComponent_variant.md
+- name: Vibration Damper
+  href: minecraftComponent_vibration_damper.md
+- name: Walk Animation Speed
+  href: minecraftComponent_walk_animation_speed.md
+- name: Wants Jockey
+  href: minecraftComponent_wants_jockey.md
+- name: Water Movement
+  href: minecraftComponent_water_movement.md

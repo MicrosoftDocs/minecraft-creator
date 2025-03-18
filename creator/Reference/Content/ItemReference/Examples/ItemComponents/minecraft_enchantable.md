@@ -24,6 +24,16 @@ Determines what enchantments can be applied to the item. Not all enchantments wi
 
 ## Samples
 
+#### [Item Axe Turret Kit](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json)
+
+
+```json
+"minecraft:enchantable": {
+  "slot": "pickaxe",
+  "value": 14
+}
+```
+
 #### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
 
 

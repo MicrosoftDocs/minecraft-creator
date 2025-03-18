@@ -9,11 +9,11 @@ ms.date: 02/11/2025
 
 | Entity Filter Types | Description |
 |:-----|:----------|
-| [actor_health](Filters/actor_health.md)| Tests the health of the subject. |
-| [all_slots_empty](Filters/all_slots_empty.md)| Returns true when the designated equipment location for the subject entity is completely empty. |
-| [any_slot_empty](Filters/any_slot_empty.md)| Returns true when the designated equipment location for the subject entity has any empty slot. |
-| [bool_property](Filters/bool_property.md)| Returns true when the bool actor property matches the value provided. |
-| [clock_time](Filters/clock_time.md)| Compares the current time with a float value in the range (0.0, 1.0). 0.0= Noon 0.25= Sunset 0.5= Midnight 0.75= Sunrise |
+| [Actor Health](Filters/actor_health.md)| Tests the health of the subject. |
+| [All Slots Empty](Filters/all_slots_empty.md)| Returns true when the designated equipment location for the subject entity is completely empty. |
+| [Any Slot Empty](Filters/any_slot_empty.md)| Returns true when the designated equipment location for the subject entity has any empty slot. |
+| [Bool Property](Filters/bool_property.md)| Returns true when the bool actor property matches the value provided. |
+| [Clock Time](Filters/clock_time.md)| Compares the current time with a float value in the range (0.0, 1.0). 0.0= Noon 0.25= Sunset 0.5= Midnight 0.75= Sunrise |
 | [distance_to_nearest_player](Filters/distance_to_nearest_player.md)| Compares the distance to the nearest Player with a float value. |
 | [enum_property](Filters/enum_property.md)| Returns true when the enum actor property matches the value provided. |
 | [float_property](Filters/float_property.md)| Returns true when the float actor property matches the value provided. |

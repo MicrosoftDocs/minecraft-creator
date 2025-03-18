@@ -286,7 +286,7 @@ Notes:
 canPlace(blockToPlace: BlockPermutation | BlockType | string, faceToPlaceOn?: Direction): boolean
 `
 
-Checks to see whether it is valid to place the specified block type or block permutation, on a specified face on this block
+Checks to see whether it is valid to place the specified block type or block permutation, on a specified face on this block.
 
 #### **Parameters**
 - **blockToPlace**: [*BlockPermutation*](BlockPermutation.md) | [*BlockType*](BlockType.md) | *string*

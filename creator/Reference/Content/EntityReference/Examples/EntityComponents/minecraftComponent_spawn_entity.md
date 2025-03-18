@@ -205,3 +205,37 @@ Adds a timer after which this entity will spawn another entity or item (similar 
   ]
 }
 ```
+
+#### [Dream Turkey](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json)
+
+
+```json
+"minecraft:spawn_entity": {
+  "entities": {
+    "min_wait_time": 300,
+    "max_wait_time": 600,
+    "spawn_sound": "plop",
+    "spawn_item": "egg",
+    "filters": {
+      "test": "rider_count",
+      "subject": "self",
+      "operator": "==",
+      "value": 0
+    }
+  }
+}
+```
+
+#### [Memory Jar](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/memory_jar.json)
+
+
+```json
+"minecraft:spawn_entity": {
+  "entities": {
+    "min_wait_time": 300,
+    "max_wait_time": 600,
+    "spawn_sound": "place",
+    "spawn_item": "egg"
+  }
+}
+```

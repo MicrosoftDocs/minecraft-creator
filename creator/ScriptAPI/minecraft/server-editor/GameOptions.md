@@ -31,6 +31,11 @@ Type: *boolean*
 
 Type: *boolean*
 
+### **commandBlockOutput**
+`commandBlockOutput?: boolean;`
+
+Type: *boolean*
+
 ### **daylightCycle**
 `daylightCycle?: DaylightCycle;`
 
@@ -51,6 +56,11 @@ Type: *string*
 
 Type: *boolean*
 
+### **drowningDamage**
+`drowningDamage?: boolean;`
+
+Type: *boolean*
+
 ### **educationEdition**
 `educationEdition?: boolean;`
 
@@ -66,8 +76,23 @@ Type: *boolean*
 
 Type: [*ProjectExportType*](ProjectExportType.md)
 
+### **fallDamage**
+`fallDamage?: boolean;`
+
+Type: *boolean*
+
+### **fireDamage**
+`fireDamage?: boolean;`
+
+Type: *boolean*
+
 ### **fireSpreads**
 `fireSpreads?: boolean;`
+
+Type: *boolean*
+
+### **freezeDamage**
+`freezeDamage?: boolean;`
 
 Type: *boolean*
 
@@ -75,6 +100,11 @@ Type: *boolean*
 `friendlyFire?: boolean;`
 
 Type: *boolean*
+
+### **functionCommandLimit**
+`functionCommandLimit?: number;`
+
+Type: *number*
 
 ### **gameMode**
 `gameMode?: minecraftserver.GameMode;`
@@ -91,6 +121,11 @@ Type: *boolean*
 
 Type: *boolean*
 
+### **insomnia**
+`insomnia?: boolean;`
+
+Type: *boolean*
+
 ### **keepInventory**
 `keepInventory?: boolean;`
 
@@ -100,6 +135,16 @@ Type: *boolean*
 `lanVisibility?: boolean;`
 
 Type: *boolean*
+
+### **limitedCrafting**
+`limitedCrafting?: boolean;`
+
+Type: *boolean*
+
+### **maxCommandChainLength**
+`maxCommandChainLength?: number;`
+
+Type: *number*
 
 ### **mobGriefing**
 `mobGriefing?: boolean;`
@@ -156,6 +201,16 @@ Type: *boolean*
 
 Type: *number*
 
+### **sendCommandFeedback**
+`sendCommandFeedback?: boolean;`
+
+Type: *boolean*
+
+### **showBorderEffect**
+`showBorderEffect?: boolean;`
+
+Type: *boolean*
+
 ### **showCoordinates**
 `showCoordinates?: boolean;`
 
@@ -163,6 +218,16 @@ Type: *boolean*
 
 ### **showDaysPlayed**
 `showDaysPlayed?: boolean;`
+
+Type: *boolean*
+
+### **showDeathMessage**
+`showDeathMessage?: boolean;`
+
+Type: *boolean*
+
+### **showItemTags**
+`showItemTags?: boolean;`
 
 Type: *boolean*
 

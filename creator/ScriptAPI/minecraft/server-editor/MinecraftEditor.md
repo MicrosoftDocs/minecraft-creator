@@ -13,6 +13,11 @@ The MinecraftEditor class is a namespace container for Editor functionality whic
 
 ## Properties
 
+### **constants**
+`read-only constants: EditorConstants;`
+
+Type: [*EditorConstants*](EditorConstants.md)
+
 ### **log**
 `read-only log: Logger;`
 

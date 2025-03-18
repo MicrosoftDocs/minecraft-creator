@@ -20,9 +20,27 @@ This item can also be represented as a `Boolean true/false`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| explosion_resistance | 0 | Decimal number | Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance. | Block Orange Ore: `30`, Apple Block: `2.9`, Block Frond Top: `15` | 
+| explosion_resistance | 0 | Decimal number | Sets the explosion resistance for the block. Greater values result in greater resistance to explosions. The scale will be different for different explosion power levels. A negative value or 0 means it will easily explode; larger numbers increase level of resistance. | Block Fabricator: `15`, Block Gray Ore: `96`, Block Orange Ore: `30` | 
 
 ## Samples
+
+#### [Block Fabricator](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json)
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 15
+}
+```
+
+#### [Block Gray Ore](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json)
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 96
+}
+```
 
 #### [Block Orange Ore](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json)
 
@@ -39,15 +57,6 @@ This item can also be represented as a `Boolean true/false`.
 ```json
 "minecraft:destructible_by_explosion": {
   "explosion_resistance": 2.9
-}
-```
-
-#### [Block Frond Top](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json)
-
-
-```json
-"minecraft:destructible_by_explosion": {
-  "explosion_resistance": 15
 }
 ```
 
