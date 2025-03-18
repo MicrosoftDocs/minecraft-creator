@@ -17,14 +17,14 @@ Additional variant value. Can be used to further differentiate variants.
 ## Properties
 
 ### **value**
-`value: number;`
+`read-only value: number;`
 
 Value of the mark variant value for this entity.
 
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can throw errors when used.
 
 ## Constants
 

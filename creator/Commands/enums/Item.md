@@ -3510,6 +3510,7 @@ Ravager Spawn Egg
 - `bogged_spawn_egg`
 - `minecraft:creaking_spawn_egg`
 - `creaking_spawn_egg`
+- `editor:map_marker_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit
 - `chorus_fruit`
@@ -4540,7 +4541,6 @@ Firework Star
 - `trial_key`
 - `minecraft:ominous_trial_key`
 - `ominous_trial_key`
-- `editor:map_marker_spawn_egg`
 - `speckled_melon`
 Speckled Melon
 - `nametag`

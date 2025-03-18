@@ -17,15 +17,15 @@ Used for accessing all entity types currently available for use within the world
 
 ### **get**
 `
-static "get"(identifier: string): EntityType | undefined
+static "get"(identifier: EntityIdentifierType<NoInfer<T>>): EntityType | undefined
 `
 
 Retrieves an entity type using a string-based identifier.
 
 #### **Parameters**
-- **identifier**: *string*
+- **identifier**: *EntityIdentifierType<NoInfer<T>>*
 
-**Returns** [*EntityType*](EntityType.md) | *undefined*
+**Returns** *EntityType | undefined*
 
 ### **getAll**
 `

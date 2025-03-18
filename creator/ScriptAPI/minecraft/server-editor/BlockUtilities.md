@@ -13,7 +13,12 @@ description: Contents of the @minecraft/server-editor.BlockUtilities class.
 - [fillVolume](#fillvolume)
 - [getContiguousSelection](#getcontiguousselection)
 - [getFacePreviewSelection](#getfacepreviewselection)
+- [getMaxWorldLocation](#getmaxworldlocation)
+- [getMinWorldLocation](#getminworldlocation)
+- [isLocationInWorld](#islocationinworld)
 - [quickExtrude](#quickextrude)
+- [shrinkWrapVolume](#shrinkwrapvolume)
+- [trimVolumeToFitContents](#trimvolumetofitcontents)
 
 ### **fillVolume**
 `
@@ -58,6 +63,39 @@ Notes:
 - This function can throw errors.
   - Throws *Error*
 
+### **getMaxWorldLocation**
+`
+getMaxWorldLocation(): minecraftserver.Vector3
+`
+
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **getMinWorldLocation**
+`
+getMinWorldLocation(): minecraftserver.Vector3
+`
+
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **isLocationInWorld**
+`
+isLocationInWorld(locationOrVolumeOrBounds: minecraftserver.BlockVolumeBase | minecraftserver.BoundingBox | RelativeVolumeListBlockVolume | minecraftserver.Vector3): boolean
+`
+
+#### **Parameters**
+- **locationOrVolumeOrBounds**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+**Returns** *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+
 ### **quickExtrude**
 `
 quickExtrude(properties?: QuickExtrudeProperties): void
@@ -69,3 +107,35 @@ quickExtrude(properties?: QuickExtrudeProperties): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+### **shrinkWrapVolume**
+`
+shrinkWrapVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume): RelativeVolumeListBlockVolume
+`
+
+#### **Parameters**
+- **volume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
+
+**Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **trimVolumeToFitContents**
+`
+trimVolumeToFitContents(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume, retainMarqueeAfterTrimming: boolean, ignoreLiquid: boolean, ignoreNoCollision: boolean, blockMask?: BlockMaskList): RelativeVolumeListBlockVolume
+`
+
+#### **Parameters**
+- **volume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
+- **retainMarqueeAfterTrimming**: *boolean*
+- **ignoreLiquid**: *boolean*
+- **ignoreNoCollision**: *boolean*
+- **blockMask**?: [*BlockMaskList*](BlockMaskList.md) = `null`
+
+**Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws *Error*

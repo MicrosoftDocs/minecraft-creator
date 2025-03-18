@@ -117,7 +117,9 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`placeFeatureRule`](Dimension.md#placefeaturerule)*
 - Removed function *runCommandAsync*
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
-  - Changed argument `identifier` type from *string* to [*EntityType*](EntityType.md) | *string*
+  - Changed return type from [*Entity*](Entity.md) (throws exceptions) to *Entity* (throws exceptions)
+  - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
+  - Changed argument `location` type from [*Vector3*](Vector3.md) to *Vector3*
   - Added argument `options`
 #### Changed *[`Effect`](Effect.md)*
 - Added property *[`isValid`](Effect.md#isvalid)*
@@ -149,6 +151,9 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntityInventoryComponent`](EntityInventoryComponent.md)*
 - Changed type for *[`container`](EntityInventoryComponent.md#container)* from [*Container*](Container.md) to [*Container*](Container.md) (throws exceptions)
 #### Added *[`EntityIterator`](EntityIterator.md)*
+#### Changed *[`EntityMarkVariantComponent`](EntityMarkVariantComponent.md)*
+- Changed read-only flag for *[`value`](EntityMarkVariantComponent.md#value)* from `false` to `true`
+- Changed type for *[`value`](EntityMarkVariantComponent.md#value)* from *number* to *number* (throws exceptions)
 #### Added *[`EntityNpcComponent`](EntityNpcComponent.md)*
 #### Changed *[`EntityPushThroughComponent`](EntityPushThroughComponent.md)*
 - Changed read-only flag for *[`value`](EntityPushThroughComponent.md#value)* from `false` to `true`
@@ -157,6 +162,10 @@ description: Changelog of the `@minecraft/server` module
 - Changed read-only flag for *[`value`](EntityScaleComponent.md#value)* from `false` to `true`
 - Changed type for *[`value`](EntityScaleComponent.md#value)* from *number* to *number* (throws exceptions)
 #### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
+#### Changed *[`EntityTypes`](EntityTypes.md)*
+- Changed function *[`get`](EntityTypes.md#get)*
+  - Changed return type from [*EntityType*](EntityType.md) to *EntityType | undefined*
+  - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
 #### Added *[`FilterGroup`](FilterGroup.md)*
 #### Removed *IButtonPushAfterEventSignal*
 #### Removed *ILeverActionAfterEventSignal*

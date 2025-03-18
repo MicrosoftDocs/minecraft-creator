@@ -685,21 +685,21 @@ Notes:
 
 ### **spawnEntity**
 `
-spawnEntity(identifier: EntityType | string, location: Vector3, options?: SpawnEntityOptions): Entity
+spawnEntity(identifier: EntityIdentifierType<NoInfer<T>>, location: Vector3, options: SpawnEntityOptions): Entity
 `
 
 Creates a new entity (e.g., a mob) at the specified location.
 
 #### **Parameters**
-- **identifier**: [*EntityType*](EntityType.md) | *string*
+- **identifier**: *EntityIdentifierType<NoInfer<T>>*
   
   Identifier of the type of entity to spawn. If no namespace is specified, 'minecraft:' is assumed.
-- **location**: [*Vector3*](Vector3.md)
+- **location**: *Vector3*
   
   The location at which to create the entity.
-- **options**?: [*SpawnEntityOptions*](SpawnEntityOptions.md) = `null`
+- **options**: *SpawnEntityOptions*
 
-**Returns** [*Entity*](Entity.md) - Newly created entity at the specified location.
+**Returns** *Entity* - Newly created entity at the specified location.
   
 Notes:
 - This function can't be called in read-only mode.

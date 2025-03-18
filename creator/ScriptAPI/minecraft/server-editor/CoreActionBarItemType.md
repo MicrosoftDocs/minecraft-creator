@@ -14,6 +14,8 @@ Predefined action bar items
 ## Constants
 ### **Export**
 `Export = editor:actionBarItem:export`
+### **Fill**
+`Fill = editor:actionBarItem:fill`
 ### **Locate**
 `Locate = editor:actionBarItem:locate`
 ### **Playtest**

@@ -137,6 +137,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [CursorPropertiesChangeAfterEvent](CursorPropertiesChangeAfterEvent.md)
 - [CursorPropertyChangeAfterEventSignal](CursorPropertyChangeAfterEventSignal.md)
 - [CylinderBrushShape](CylinderBrushShape.md)
+- [EditorConstants](EditorConstants.md)
 - [EditorStructureManager](EditorStructureManager.md)
 - [EllipsoidBrushShape](EllipsoidBrushShape.md)
 - [EntityIdentifierObservableValidator](EntityIdentifierObservableValidator.md)
