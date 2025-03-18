@@ -97,8 +97,10 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockStateArg](BlockStateArg.md)
 - [EntityComponentReturnType](EntityComponentReturnType.md)
 - [EntityComponentTypeMap](EntityComponentTypeMap.md)
+- [EntityIdentifierType](EntityIdentifierType.md)
 - [ItemComponentReturnType](ItemComponentReturnType.md)
 - [ItemComponentTypeMap](ItemComponentTypeMap.md)
+- [VanillaEntityIdentifier](VanillaEntityIdentifier.md)
 
 ## Classes
 - [AimAssistCategory](AimAssistCategory.md)

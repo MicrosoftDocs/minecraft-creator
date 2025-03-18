@@ -1048,6 +1048,8 @@
       href: minecraft/server-editor/CursorPropertyChangeAfterEventSignal.md
     - name: CylinderBrushShape
       href: minecraft/server-editor/CylinderBrushShape.md
+    - name: EditorConstants
+      href: minecraft/server-editor/EditorConstants.md
     - name: EditorStructureManager
       href: minecraft/server-editor/EditorStructureManager.md
     - name: EllipsoidBrushShape

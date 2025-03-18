@@ -37,3 +37,19 @@ This item can also be represented as a `Integer number`.
 ```json
 "minecraft:max_stack_size": 16
 ```
+
+#### [Item Axe Turret Kit](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json)
+
+
+```json
+"minecraft:max_stack_size": {
+  "value": 64
+}
+```
+
+#### [Item Depleted Gray Shard](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/depleted_gray_shard.item.json)
+
+
+```json
+"minecraft:max_stack_size": 64
+```

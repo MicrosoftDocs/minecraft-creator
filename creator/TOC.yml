@@ -329,7 +329,7 @@
         - name: Adding Custom Items
           href: Documents/AddCustomItems.md
         - name: Crafting Item Catalog Customization
-          href: Documents/CraftingItemCatalogCustomization.md
+          href: Documents/CraftingItemCatalogDocumentation.md
         - name: Introduction to Enchantments
           href: Documents/IntroToEnchantments.md
     - name: Blocks

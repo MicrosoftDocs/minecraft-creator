@@ -1,22 +1,22 @@
-- name: Trigger List
+- name: Triggers List
   href: ../TriggerList.md
-- name: on_death
+- name: On Death
   href: minecraftTrigger_on_death.md
-- name: on_friendly_anger
+- name: On Friendly Anger
   href: minecraftTrigger_on_friendly_anger.md
-- name: on_hurt_by_player
-  href: minecraftTrigger_on_hurt_by_player.md
-- name: on_hurt
+- name: On Hurt
   href: minecraftTrigger_on_hurt.md
-- name: on_ignite
+- name: On Hurt By Player
+  href: minecraftTrigger_on_hurt_by_player.md
+- name: On Ignite
   href: minecraftTrigger_on_ignite.md
-- name: on_start_landing
+- name: On Start Landing
   href: minecraftTrigger_on_start_landing.md
-- name: on_start_takeoff
+- name: On Start Takeoff
   href: minecraftTrigger_on_start_takeoff.md
-- name: on_target_acquired
+- name: On Target Acquired
   href: minecraftTrigger_on_target_acquired.md
-- name: on_target_escape
+- name: On Target Escape
   href: minecraftTrigger_on_target_escape.md
-- name: on_wake_with_owner
+- name: On wake with owner trigger
   href: minecraftTrigger_on_wake_with_owner.md

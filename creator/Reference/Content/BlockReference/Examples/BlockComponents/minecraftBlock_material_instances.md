@@ -16,12 +16,12 @@ The material instances for a block. Maps face or material_instance names in a ge
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| * | *not set* | [*](#*-item-type) item |  | Blue Bubble Fish: `{"texture":"bubble_fish_blue","render_method":"blend","face_dimming":true}`, California Roll: `{"texture":"sushi_wrap"}`, Green Bubble Fish: `{"texture":"bubble_fish_green","render_method":"blend","face_dimming":true}` | 
+| * | *not set* | [*](#*-item-type) item |  | Block Fabricator: `{"texture":"mikeamm_gwve_fabricator","render_method":"alpha_test","ambient_occlusion":1}`, Block Gray Ore: `{"texture":"mikeamm_gwve_gray_ore","render_method":"alpha_test","face_dimming":false}`, Tuna Roll: `{"texture":"sushi_wrap"}` | 
 | down | *not set* | [Down](#down-item-type) item |  |  | 
 | east | *not set* | [East](#east-item-type) item |  |  | 
 | Material Instance | *not set* | Array of [Material Instance](#material-instance-item-type) items | A material instance definition to map to a material instance in a geometry file. The material instance "*" will be used for any materials that don't have a match. |  | 
-| north | *not set* | [North](#north-item-type) item |  | California Roll: `"sushi_side"` | 
-| south | *not set* | [South](#south-item-type) item |  | California Roll: `"sushi_side"` | 
+| north | *not set* | [North](#north-item-type) item |  | Tuna Roll: `"sushi_side"` | 
+| south | *not set* | [South](#south-item-type) item |  | Tuna Roll: `"sushi_side"` | 
 | up | *not set* | [Up](#up-item-type) item |  |  | 
 | west | *not set* | [West](#west-item-type) item |  |  | 
 
@@ -189,6 +189,48 @@ A material instance definition to map to a material instance in a geometry file.
 
 ## Samples
 
+#### [Block Fabricator](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json)
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "mikeamm_gwve_fabricator",
+    "render_method": "alpha_test",
+    "ambient_occlusion": 1
+  }
+}
+```
+
+#### [Block Gray Ore](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json)
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "mikeamm_gwve_gray_ore",
+    "render_method": "alpha_test",
+    "face_dimming": false
+  }
+}
+```
+
+#### [Tuna Roll](https://github.com/microsoft/minecraft-samples/tree/main/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json)
+
+
+```json
+"minecraft:material_instances": {
+  "north": "sushi_side",
+  "south": "sushi_side",
+  "*": {
+    "texture": "sushi_wrap"
+  },
+  "sushi_side": {
+    "texture": "tuna_roll"
+  }
+}
+```
+
 #### [Blue Bubble Fish](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json)
 
 
@@ -197,7 +239,8 @@ A material instance definition to map to a material instance in a geometry file.
   "*": {
     "texture": "bubble_fish_blue",
     "render_method": "blend",
-    "face_dimming": true
+    "face_dimming": true,
+    "ambient_occlusion": 1
   }
 }
 ```
@@ -260,22 +303,6 @@ A material instance definition to map to a material instance in a geometry file.
 }
 ```
 
-#### [Tuna Roll](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks/behavior_packs/custom_blocks/blocks/tuna_roll.json)
-
-
-```json
-"minecraft:material_instances": {
-  "north": "sushi_side",
-  "south": "sushi_side",
-  "*": {
-    "texture": "sushi_wrap"
-  },
-  "sushi_side": {
-    "texture": "tuna_roll"
-  }
-}
-```
-
 #### [Block Orange Ore](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json)
 
 
@@ -319,30 +346,6 @@ A material instance definition to map to a material instance in a geometry file.
 "minecraft:material_instances": {
   "*": {
     "texture": "palm_leave_corner",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block Palm Leave Tip](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_tip.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "palm_leave_tip",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "palm_leave",
     "render_method": "alpha_test"
   }
 }
