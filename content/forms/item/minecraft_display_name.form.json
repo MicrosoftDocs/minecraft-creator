@@ -1,0 +1,501 @@
+{
+  "fields": [],
+  "description": "Sets the item display name within Minecraft: Bedrock Edition. This component may also be used to pull from the localization file by referencing a key from it.",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "value": "secret_weapon"
+        }
+      },
+      {
+        "path": "sample with localication key",
+        "content": {
+          "value": "item.snowball.name"
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "title": "Display Name",
+    "description": "The display_name item component specifies the text shown whenever an item's name is displayed, like in hover text.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "value",
+        "description": "Name shown for an item.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.apple.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/breeze_rod.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.breeze_rod.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/ominous_trial_key.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.ominous_trial_key.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/trial_key.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.trial_key.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/wind_charge.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.wind_charge.name"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/chestplate.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "My Custom Armor"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/goo.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Weird Goo"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_boots.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "My Custom Boots"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_helm.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "My Custom Helmet"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_leggings.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "My Custom Leggings"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Chuck"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Oh Shoot"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Sword Singer"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_turtle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Turtle Sword"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_weak.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Really Just Wet Paper"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Secret Weapon"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.apple.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/breeze_rod.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.breeze_rod.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/ominous_trial_key.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.ominous_trial_key.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/trial_key.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.trial_key.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/wind_charge.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.wind_charge.name"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/chestplate.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "My Custom Armor"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/goo.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Weird Goo"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_boots.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "My Custom Boots"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_helm.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "My Custom Helmet"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_leggings.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "My Custom Leggings"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Chuck"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Oh Shoot"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Sword Singer"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_turtle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Turtle Sword"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_weak.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Really Just Wet Paper"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Secret Weapon"
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Display Name",
+    "description": "The display_name item component specifies the text shown whenever an item's name is displayed, like in hover text.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "value",
+        "description": "Name shown for an item.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.apple.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/breeze_rod.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.breeze_rod.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/ominous_trial_key.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.ominous_trial_key.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/trial_key.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.trial_key.name"
+            }
+          ],
+          "/vanilla/behavior_pack/items/wind_charge.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "item.wind_charge.name"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/chestplate.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "My Custom Armor"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/goo.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Weird Goo"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_boots.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "My Custom Boots"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_helm.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "My Custom Helmet"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_leggings.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "My Custom Leggings"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Chuck"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Oh Shoot"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Sword Singer"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_turtle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Turtle Sword"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_weak.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Really Just Wet Paper"
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Secret Weapon"
+            }
+          ]
+        }
+      }
+    ],
+    "id": "minecraft:display_name",
+    "samples": {
+      "/vanilla/behavior_pack/items/apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.apple.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/breeze_rod.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.breeze_rod.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/ominous_trial_key.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.ominous_trial_key.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/trial_key.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.trial_key.name"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/wind_charge.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "item.wind_charge.name"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/chestplate.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "My Custom Armor"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/goo.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Weird Goo"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_boots.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "My Custom Boots"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_helm.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "My Custom Helmet"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_leggings.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "My Custom Leggings"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Chuck"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Oh Shoot"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Sword Singer"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_turtle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Turtle Sword"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_weak.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Really Just Wet Paper"
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Secret Weapon"
+          }
+        }
+      ]
+    }
+  }
+}

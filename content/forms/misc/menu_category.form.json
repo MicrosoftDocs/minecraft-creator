@@ -1,0 +1,27 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Menu Category",
+    "description": "menu_category contains the creative group name and category for this item.",
+    "fields": [
+      {
+        "id": "category",
+        "title": "enum CreativeItemCategory",
+        "description": "Creative category where this item belongs. Defaults to \"none\".",
+        "dataType": 2
+      },
+      {
+        "id": "group",
+        "title": "group",
+        "description": "The Creative Group that this item belongs to. Group name is limited to 256 characters. The name also must start with a namespace.",
+        "dataType": 2
+      },
+      {
+        "id": "is_hidden_in_commands",
+        "title": "is_hidden_in_commands",
+        "description": "Determines whether or not this item can be used with commands. Commands can use items by default if a category is set.",
+        "dataType": 1
+      }
+    ]
+  }
+}

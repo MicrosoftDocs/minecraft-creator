@@ -1,0 +1,264 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:equippable",
+    "title": "Equippable",
+    "description": "Defines an entity's behavior for having items equipped to it.",
+    "fields": [
+      {
+        "id": "slots",
+        "title": "Slots",
+        "description": "List of slots and the item that can be equipped.",
+        "dataType": 15,
+        "subForm": {
+          "description": "List of slots and the item that can be equipped.",
+          "fields": [
+            {
+              "id": "accepted_items",
+              "title": "Accepted Items",
+              "description": "The list of items that can go in this slot.",
+              "dataType": 17
+            },
+            {
+              "id": "interact_text",
+              "title": "Interact Text",
+              "description": "Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls.",
+              "dataType": 2
+            },
+            {
+              "id": "item",
+              "title": "Item",
+              "description": "Identifier of the item that can be equipped for this slot.",
+              "dataType": 2
+            },
+            {
+              "id": "on_equip",
+              "title": "On Equip",
+              "description": "Event to trigger when this entity is equipped with this item.",
+              "dataType": 22
+            },
+            {
+              "id": "on_unequip",
+              "title": "On Unequip",
+              "description": "Event to trigger when this item is removed from this entity.",
+              "dataType": 22
+            },
+            {
+              "id": "slot",
+              "title": "Slot",
+              "description": "The slot number of this slot.",
+              "defaultValue": 0,
+              "dataType": 0
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:equippable/",
+              "content": [
+                {
+                  "slot": 0,
+                  "item": "saddle",
+                  "accepted_items": [
+                    "saddle"
+                  ],
+                  "on_equip": {
+                    "event": "minecraft:camel_saddled"
+                  },
+                  "on_unequip": {
+                    "event": "minecraft:camel_unsaddled"
+                  }
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/donkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:equippable/",
+              "content": [
+                {
+                  "slot": 0,
+                  "item": "saddle",
+                  "accepted_items": [
+                    "saddle"
+                  ],
+                  "on_equip": {
+                    "event": "minecraft:donkey_saddled"
+                  },
+                  "on_unequip": {
+                    "event": "minecraft:donkey_unsaddled"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 0,
+                "item": "saddle",
+                "accepted_items": [
+                  "saddle"
+                ],
+                "on_equip": {
+                  "event": "minecraft:camel_saddled"
+                },
+                "on_unequip": {
+                  "event": "minecraft:camel_unsaddled"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 0,
+                "item": "saddle",
+                "accepted_items": [
+                  "saddle"
+                ],
+                "on_equip": {
+                  "event": "minecraft:donkey_saddled"
+                },
+                "on_unequip": {
+                  "event": "minecraft:donkey_unsaddled"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 0,
+                "item": "saddle",
+                "accepted_items": [
+                  "saddle"
+                ],
+                "on_equip": {
+                  "event": "minecraft:horse_saddled"
+                },
+                "on_unequip": {
+                  "event": "minecraft:horse_unsaddled"
+                }
+              },
+              {
+                "slot": 1,
+                "item": "horsearmoriron",
+                "accepted_items": [
+                  "horsearmorleather",
+                  "horsearmoriron",
+                  "horsearmorgold",
+                  "horsearmordiamond"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 1,
+                "item": "carpet",
+                "accepted_items": [
+                  "carpet"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:mule_tamed/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 0,
+                "item": "saddle",
+                "accepted_items": [
+                  "saddle"
+                ],
+                "on_equip": {
+                  "event": "minecraft:mule_saddled"
+                },
+                "on_unequip": {
+                  "event": "minecraft:mule_unsaddled"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 1,
+                "item": "carpet",
+                "accepted_items": [
+                  "carpet"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 1,
+                "item": "carpet",
+                "accepted_items": [
+                  "carpet"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:equippable/",
+          "content": {
+            "slots": [
+              {
+                "slot": 1,
+                "item": "carpet",
+                "accepted_items": [
+                  "carpet"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

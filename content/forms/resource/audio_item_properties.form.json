@@ -1,0 +1,40 @@
+{
+  "title": "Audio Properties",
+  "fields": [
+    {
+      "id": "definitions",
+      "displayTitle": false,
+      "allowCreateDelete": false,
+      "dataType": 14,
+      "subForm": {
+        "fields": [
+          {
+            "id": "sounds",
+            "displayTitle": false,
+            "allowCreateDelete": false,
+            "objectArrayTitleFieldKey": "name",
+            "dataType": 15,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "volume",
+                  "title": "Volume",
+                  "experienceType": 3,
+                  "dataType": 3,
+                  "minValue": 0,
+                  "maxValue": 1,
+                  "step": 0.05
+                },
+                {
+                  "id": "weight",
+                  "title": "Weight",
+                  "dataType": 0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "title": "Open doors annotation",
+  "note": "Requires the entity's `navigation` component to have the parameter `can_open_doors` set to `true`.",
+  "description": "Allows the entity to open doors.",
+  "generated_doNotEdit": {
+    "id": "minecraft:annotation.open_door",
+    "title": "Open Door Annotation",
+    "description": "Allows the actor to open doors assuming that that flags set up for the component to use in navigation",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:annotation.open_door/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:annotation.open_door/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:annotation.open_door/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:annotation.open_door/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

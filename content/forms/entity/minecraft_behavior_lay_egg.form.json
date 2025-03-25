@@ -1,0 +1,352 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.lay_egg",
+    "title": "Lay Egg Behavior",
+    "description": "Allows the mob to lay an egg block on certain types of blocks if the mob is pregnant.",
+    "fields": [
+      {
+        "id": "allow_laying_from_below",
+        "title": "Allow Laying From Below",
+        "description": "Allows the mob to lay its eggs from below the target if it can't get there. This is useful if the target block is water with air above, since mobs may not be able to get to the air block above water.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "egg_type",
+        "title": "Egg Type",
+        "description": "Block type for the egg to lay. If this is a turtle egg, the number of eggs in the block is randomly set.",
+        "defaultValue": "minecraft:turtle_egg",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": "minecraft:frog_spawn"
+            }
+          ]
+        }
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
+        "defaultValue": 0.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": 1.7
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": 1.5
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": 1.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "lay_egg_sound",
+        "title": "Lay Egg Sound",
+        "description": "Name of the sound event played when laying the egg. Defaults to lay_egg, which is used for Turtles.",
+        "defaultValue": "lay_egg",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": "lay_spawn"
+            }
+          ]
+        }
+      },
+      {
+        "id": "lay_seconds",
+        "title": "Lay Seconds",
+        "description": "Duration of the laying egg process in seconds.",
+        "defaultValue": 10,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_lay",
+        "title": "On Lay",
+        "description": "Event to run when this mob lays the egg.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": {
+                "event": "laid_egg",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": {
+                "event": "minecraft:laid_egg",
+                "target": "self"
+              }
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": {
+                "event": "minecraft:laid_egg",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "description": "Height in blocks the mob will look for a target block to move towards",
+        "defaultValue": 1,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": 4
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "The distance in blocks it will look for a target block to move towards",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": 16
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": 16
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "target_blocks",
+        "title": "Target Blocks",
+        "description": "Blocks that the mob can lay its eggs on top of.",
+        "defaultValue": "[ minecraft:sand ]",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": [
+                "minecraft:water"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "target_materials_above_block",
+        "title": "Target Materials Above Block",
+        "description": "Types of materials that can exist above the target block. Valid types are Air, Water, and Lava.",
+        "defaultValue": "[ Air ]",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": [
+                "Air"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "use_default_animation",
+        "title": "Use Default Animation",
+        "description": "Specifies if the default lay-egg animation should be played when the egg is placed or not.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": 1
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.lay_egg/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1,
+            "search_range": 10,
+            "search_height": 3,
+            "goal_radius": 1.7,
+            "target_blocks": [
+              "minecraft:water"
+            ],
+            "target_materials_above_block": [
+              "Air"
+            ],
+            "allow_laying_from_below": true,
+            "use_default_animation": false,
+            "lay_seconds": 2,
+            "egg_type": "minecraft:frog_spawn",
+            "lay_egg_sound": "lay_spawn",
+            "on_lay": {
+              "event": "laid_egg",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/turtle.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+          "content": {
+            "priority": 1,
+            "speed_multiplier": 1,
+            "search_range": 16,
+            "search_height": 4,
+            "goal_radius": 1.5,
+            "on_lay": {
+              "event": "minecraft:laid_egg",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+          "content": {
+            "priority": 1,
+            "speed_multiplier": 1,
+            "search_range": 16,
+            "search_height": 4,
+            "goal_radius": 1.5,
+            "on_lay": {
+              "event": "minecraft:laid_egg",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wants_to_lay_egg/minecraft:behavior.lay_egg/",
+          "content": {
+            "priority": 1,
+            "speed_multiplier": 1,
+            "search_range": 16,
+            "search_height": 4,
+            "goal_radius": 1.5,
+            "on_lay": {
+              "event": "minecraft:laid_egg",
+              "target": "self"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

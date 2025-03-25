@@ -1,0 +1,86 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Motion Collision Misc",
+    "description": "Particle Motion Collision Misc",
+    "fields": [
+      {
+        "id": "enabled",
+        "title": "enabled",
+        "description": "enabled",
+        "dataType": 16,
+        "subForm": {
+          "title": "Enabled",
+          "description": "Enabled",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "enabled",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "collision_radius",
+        "title": "collision_radius",
+        "description": "collision_radius",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 0.5
+          }
+        ]
+      },
+      {
+        "id": "collision_drag",
+        "title": "collision_drag",
+        "description": "collision_drag",
+        "dataType": 3
+      },
+      {
+        "id": "coefficient_of_restitution",
+        "title": "coefficient_of_restitution",
+        "description": "coefficient_of_restitution",
+        "dataType": 3
+      },
+      {
+        "id": "expire_on_contact",
+        "title": "expire_on_contact",
+        "description": "expire_on_contact",
+        "dataType": 1
+      },
+      {
+        "id": "events",
+        "title": "events",
+        "description": "events",
+        "dataType": 16,
+        "alternates": [
+          {
+            "id": "events",
+            "dataType": 16,
+            "subForm": {
+              "title": "Events",
+              "description": "Events",
+              "fields": [
+                {
+                  "id": "min_speed",
+                  "title": "min_speed",
+                  "description": "min_speed",
+                  "dataType": 3
+                },
+                {
+                  "id": "event",
+                  "title": "event",
+                  "description": "event",
+                  "dataType": 16
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:flying_speed",
+    "title": "Flying Speed",
+    "description": "Speed in Blocks that this entity flies at.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "Flying speed in blocks per tick.",
+        "defaultValue": 0.02,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flying_speed/",
+              "content": 0.1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flying_speed/",
+              "content": 0.15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ender_dragon.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:flying_speed/",
+              "content": 0.6
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:flying_speed/",
+          "content": {
+            "value": 0.1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:flying_speed/",
+          "content": {
+            "value": 0.15
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ender_dragon.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:flying_speed/",
+          "content": {
+            "value": 0.6
+          }
+        }
+      ]
+    }
+  }
+}

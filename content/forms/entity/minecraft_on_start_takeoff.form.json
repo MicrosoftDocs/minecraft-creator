@@ -1,0 +1,56 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:on_start_takeoff",
+    "title": "On Start Takeoff",
+    "description": "Only usable by the Ender Dragon. Adds a trigger to call when this entity starts flying.",
+    "fields": [
+      {
+        "id": "event",
+        "title": "Event",
+        "description": "The event to run when the conditions for this trigger are met.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ender_dragon.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_start_takeoff/",
+              "content": "minecraft:start_fly"
+            }
+          ]
+        }
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "The list of conditions for this trigger to execute.",
+        "dataType": 20
+      },
+      {
+        "id": "target",
+        "title": "Target",
+        "description": "The target of the event.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ender_dragon.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_start_takeoff/",
+              "content": "self"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/ender_dragon.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:on_start_takeoff/",
+          "content": {
+            "event": "minecraft:start_fly",
+            "target": "self"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -22,7 +22,8 @@
       "lookupId": "entityTypeEvents"
     }
   ],
-  "source": {
+  "generated_doNotEdit": {
+    "id": "minecraft:addrider",
     "title": "Addrider",
     "description": "Adds a rider to the entity. Requires minecraft:rideable.",
     "fields": [

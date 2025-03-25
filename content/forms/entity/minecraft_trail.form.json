@@ -1,0 +1,69 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:trail",
+    "title": "Trail",
+    "description": "Causes an entity to leave a trail of blocks as it moves about the world.",
+    "fields": [
+      {
+        "id": "block_type",
+        "title": "Block Type",
+        "description": "The type of block you wish to be spawned by the entity as it move about the world. Solid blocks may not be spawned at an offset of (0,0,0).",
+        "defaultValue": "air",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/snow_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:trail/",
+              "content": "minecraft:snow_layer"
+            }
+          ]
+        }
+      },
+      {
+        "id": "spawn_filter",
+        "title": "Spawn Filter",
+        "description": "One or more conditions that must be met in order to cause the chosen block type to spawn.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/snow_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:trail/",
+              "content": {
+                "test": "is_temperature_value",
+                "operator": "<",
+                "value": 0.81
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "spawn_offset",
+        "title": "Spawn Offset",
+        "description": "The distance from the entities current position to spawn the block. Capped at up to 16 blocks away. The X value is left/right(-/+), the Z value is backward/forward(-/+), the Y value is below/above(-/+).",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "dataType": 11
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:trail/",
+          "content": {
+            "block_type": "minecraft:snow_layer",
+            "spawn_filter": {
+              "test": "is_temperature_value",
+              "operator": "<",
+              "value": 0.81
+            }
+          }
+        }
+      ]
+    }
+  }
+}

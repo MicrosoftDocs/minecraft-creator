@@ -1,0 +1,10 @@
+{
+  "title": "Idle",
+  "fields": [
+    {
+      "id": "idle",
+      "title": "Ticks",
+      "dataType": 2
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "minecraft:surface_relative_threshold_feature",
+  "description": "Determines whether the provided position is below the estimated surface level of the world, and places a feature if so. If the provided position is above the configured surface or the surface is not available, placement will fail. This feature only works for Overworld generators using world generation 1.18 or later.",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "samples": {
+    "example": [
+      {
+        "path": "Define a feature that places the underwater_magma_snap_to_surface_feature, if the given position is at least two blocks below estimated surface level.",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:surface_relative_threshold_feature": {
+            "description": {
+              "identifier": "example:underwater_magma_underground_feature"
+            },
+            "feature_to_place": "log_decoration_feature",
+            "minimum_distance_below_surface": 2
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:surface_relative_threshold_feature",
+    "title": "Surface Relative Threshold Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 0,
+        "id": "minimum_distance_below_surface",
+        "title": "Minimum Distance Below Surface",
+        "description": "The minimum number of blocks required to be between the estimated surface level and a valid place for this feature. Defaults to zero.",
+        "isRequired": false
+      }
+    ]
+  }
+}

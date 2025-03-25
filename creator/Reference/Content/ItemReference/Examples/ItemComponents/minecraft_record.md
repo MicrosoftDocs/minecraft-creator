@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Items Documentation - record"
-description: "Describes the record Items"
+title: "Items Documentation - minecraft:record"
+description: "Describes the minecraft:record item component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Items Documentation - record
+# Items Documentation - minecraft:record
 
 Used by record items to play music.
 
@@ -22,11 +22,20 @@ Used by record items to play music.
 
 ## Samples
 
+
+```json
+"minecraft:record": {
+  "comparator_signal": 1,
+  "duration": 5,
+  "sound_event": "ambient.tame"
+}
+```
+
 #### [My Sword Singing](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_singing.json)
 
 
 ```json
-{
+"minecraft:record": {
   "comparator_signal": 1,
   "duration": 5,
   "sound_event": "pre_ram.screamer"

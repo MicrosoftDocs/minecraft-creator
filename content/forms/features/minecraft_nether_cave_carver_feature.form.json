@@ -1,0 +1,72 @@
+{
+  "id": "minecraft:nether_cave_carver_feature",
+  "description": "Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature will also only work when placed specifically in the pass \"pregeneration_pass\".",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "samples": {
+    "example": [
+      {
+        "path": "Carve nether caves normally",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:nether_cave_carver_feature": {
+            "description": {
+              "identifier": "example:nether_cave_carver_feature"
+            },
+            "fill_with": "minecraft:air",
+            "width_modifier": 0
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:nether_cave_carver_feature",
+    "title": "Nether Cave Carver Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 34,
+        "id": "width_modifier",
+        "title": "Width Modifier",
+        "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
+        "isRequired": false
+      },
+      {
+        "dataType": 0,
+        "id": "skip_carve_chance",
+        "title": "Skip Carve Chance",
+        "description": "The chance to skip doing the carve (1 / value).",
+        "isRequired": false
+      },
+      {
+        "dataType": 0,
+        "id": "height_limit",
+        "title": "Height Limit",
+        "description": "The height limit where we attempt to carve.",
+        "isRequired": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Effect Misc",
+    "description": "Particle Effect Misc",
+    "fields": [
+      {
+        "id": "components",
+        "title": "components",
+        "description": "components",
+        "dataType": 16
+      },
+      {
+        "id": "description",
+        "title": "description",
+        "description": "The description MUST contain an identifier and basic_render_parameters.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Particle Effect Description",
+          "description": "The description MUST contain an identifier and basic_render_parameters.",
+          "fields": [
+            {
+              "id": "identifier",
+              "title": "identifier",
+              "description": "identifier",
+              "dataType": 2
+            },
+            {
+              "id": "basic_render_parameters",
+              "title": "basic_render_parameters",
+              "description": "The parameters MUST contain a material and texture.",
+              "dataType": 16,
+              "subForm": {
+                "title": "Particle Effect Basic Render Parameters",
+                "description": "The parameters MUST contain a material and texture.",
+                "fields": [
+                  {
+                    "id": "material",
+                    "title": "material",
+                    "description": "material",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "texture",
+                    "title": "texture",
+                    "description": "texture",
+                    "dataType": 2
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "curves",
+        "title": "curves",
+        "description": "curves",
+        "dataType": 16,
+        "subForm": {
+          "title": "Curves",
+          "description": "Curves",
+          "fields": [
+            {
+              "id": "type",
+              "title": "type",
+              "description": "type",
+              "dataType": 16
+            },
+            {
+              "id": "nodes",
+              "title": "nodes",
+              "description": "nodes",
+              "dataType": 15,
+              "subForm": {
+                "title": "Nodes",
+                "description": "Nodes",
+                "fields": []
+              },
+              "alternates": [
+                {
+                  "id": "nodes",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "input",
+              "title": "input",
+              "description": "input",
+              "dataType": 16,
+              "subForm": {
+                "title": "Input",
+                "description": "Input",
+                "fields": []
+              },
+              "alternates": [
+                {
+                  "id": "input",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "horizontal_range",
+              "title": "horizontal_range",
+              "description": "horizontal_range",
+              "dataType": 16,
+              "subForm": {
+                "title": "Horizontal Range",
+                "description": "Horizontal Range",
+                "fields": []
+              },
+              "alternates": [
+                {
+                  "id": "horizontal_range",
+                  "dataType": 3
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "events",
+        "title": "events",
+        "description": "events",
+        "dataType": 16
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:input_ground_controlled",
+    "title": "Input Ground Controlled",
+    "description": "When configured as a rideable entity, the entity will be controlled using WASD controls. Beginning with 1.19.50 the default auto step height for rideable entities is half a block. Consider adding the \"minecraft:variable_max_auto_step\" component to increase it.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:input_ground_controlled/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:donkey_saddled/minecraft:input_ground_controlled/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_saddled/minecraft:input_ground_controlled/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:mule_saddled/minecraft:input_ground_controlled/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:input_ground_controlled/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

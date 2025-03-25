@@ -1,0 +1,180 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:block_sensor",
+    "title": "Block Sensor",
+    "description": "Fires off a specified event when a block in the block list is broken within the sensor range.",
+    "fields": [
+      {
+        "id": "on_break",
+        "title": "On Break",
+        "description": "List of blocks to watch for being broken to fire off a specified event. If a block is in multiple lists, multiple events will fire.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:block_sensor/",
+              "content": [
+                {
+                  "block_list": [
+                    "minecraft:beehive",
+                    "minecraft:bee_nest"
+                  ],
+                  "on_block_broken": "hive_destroyed"
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:block_sensor/",
+              "content": [
+                {
+                  "block_list": [
+                    "minecraft:gold_block",
+                    "minecraft:gilded_blackstone",
+                    "minecraft:nether_gold_ore",
+                    "minecraft:deepslate_gold_ore",
+                    "minecraft:raw_gold_block",
+                    "minecraft:gold_ore",
+                    "minecraft:chest",
+                    "minecraft:trapped_chest",
+                    "minecraft:ender_chest",
+                    "minecraft:barrel",
+                    "minecraft:white_shulker_box",
+                    "minecraft:orange_shulker_box",
+                    "minecraft:magenta_shulker_box",
+                    "minecraft:light_blue_shulker_box",
+                    "minecraft:yellow_shulker_box",
+                    "minecraft:lime_shulker_box",
+                    "minecraft:pink_shulker_box",
+                    "minecraft:gray_shulker_box",
+                    "minecraft:light_gray_shulker_box",
+                    "minecraft:cyan_shulker_box",
+                    "minecraft:purple_shulker_box",
+                    "minecraft:blue_shulker_box",
+                    "minecraft:brown_shulker_box",
+                    "minecraft:green_shulker_box",
+                    "minecraft:red_shulker_box",
+                    "minecraft:black_shulker_box",
+                    "minecraft:undyed_shulker_box"
+                  ],
+                  "on_block_broken": "important_block_destroyed_event"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "sensor_radius",
+        "title": "Sensor Radius",
+        "description": "The maximum radial distance in which a specified block can be detected. The biggest radius is 32.0.",
+        "defaultValue": 16,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:block_sensor/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:block_sensor/",
+              "content": 16
+            }
+          ]
+        }
+      },
+      {
+        "id": "sources",
+        "title": "Sources",
+        "description": "List of sources that break the block to listen for. If none are specified, all block breaks will be detected.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:block_sensor/",
+              "content": [
+                {
+                  "test": "has_silk_touch",
+                  "subject": "other",
+                  "value": false
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:block_sensor/",
+          "content": {
+            "sensor_radius": 16,
+            "sources": [
+              {
+                "test": "has_silk_touch",
+                "subject": "other",
+                "value": false
+              }
+            ],
+            "on_break": [
+              {
+                "block_list": [
+                  "minecraft:beehive",
+                  "minecraft:bee_nest"
+                ],
+                "on_block_broken": "hive_destroyed"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:block_sensor/",
+          "content": {
+            "sensor_radius": 16,
+            "on_break": [
+              {
+                "block_list": [
+                  "minecraft:gold_block",
+                  "minecraft:gilded_blackstone",
+                  "minecraft:nether_gold_ore",
+                  "minecraft:deepslate_gold_ore",
+                  "minecraft:raw_gold_block",
+                  "minecraft:gold_ore",
+                  "minecraft:chest",
+                  "minecraft:trapped_chest",
+                  "minecraft:ender_chest",
+                  "minecraft:barrel",
+                  "minecraft:white_shulker_box",
+                  "minecraft:orange_shulker_box",
+                  "minecraft:magenta_shulker_box",
+                  "minecraft:light_blue_shulker_box",
+                  "minecraft:yellow_shulker_box",
+                  "minecraft:lime_shulker_box",
+                  "minecraft:pink_shulker_box",
+                  "minecraft:gray_shulker_box",
+                  "minecraft:light_gray_shulker_box",
+                  "minecraft:cyan_shulker_box",
+                  "minecraft:purple_shulker_box",
+                  "minecraft:blue_shulker_box",
+                  "minecraft:brown_shulker_box",
+                  "minecraft:green_shulker_box",
+                  "minecraft:red_shulker_box",
+                  "minecraft:black_shulker_box",
+                  "minecraft:undyed_shulker_box"
+                ],
+                "on_block_broken": "important_block_destroyed_event"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

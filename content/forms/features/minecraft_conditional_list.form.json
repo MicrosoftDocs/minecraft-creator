@@ -1,0 +1,65 @@
+{
+  "id": "minecraft:conditional_list",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "isInternal": true,
+  "generated_doNotEdit": {
+    "id": "minecraft:conditional_list",
+    "title": "Conditional List",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "conditional_features",
+        "dataType": 15,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 34,
+              "id": "condition",
+              "title": "Condition",
+              "description": "Condition for placing associated Feature",
+              "isRequired": true
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "dataType": 17,
+            "id": "conditional_features",
+            "title": "Conditional Features",
+            "description": "Array of Features, and their associated Conditions, for attempted placement. These features will be evaluated as ordered.",
+            "isRequired": true
+          }
+        ]
+      },
+      {
+        "dataType": 2,
+        "id": "early_out_scheme\"<\"condition_success\", \"placement_success\"",
+        "title": "Early Out Scheme\"<\"condition Success\", \"placement Success\"",
+        "description": "Denote whether placement should end on first successful placement or first passed condition.",
+        "isRequired": false
+      }
+    ]
+  }
+}

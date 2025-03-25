@@ -1,0 +1,71 @@
+{
+  "title": "Render Controller Set",
+  "fields": [
+    {
+      "id": "render_controllers",
+      "displayTitle": false,
+      "allowCreateDelete": false,
+      "dataType": 14,
+      "subForm": {
+        "fields": [
+          {
+            "id": "geometry",
+            "title": "Geometry",
+            "description": "A name or expression that describes which model to use for this item",
+            "dataType": 2
+          },
+          {
+            "id": "materials",
+            "title": "Materials",
+            "description": "A name or expression that expresses logic for which material to use to display this particular entity",
+            "dataType": 29
+          },
+          {
+            "id": "textures",
+            "title": "Textures",
+            "description": "A name or expression that expresses logic for which texture to select",
+            "dataType": 17
+          },
+          {
+            "id": "arrays",
+            "title": "Lists",
+            "description": "Lists of available textures, materials, and geometries that can be selected",
+            "dataType": 16,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "textures",
+                  "title": "Textures",
+                  "undefinedIfEmpty": true,
+                  "description": "Lists of textures that can be used in selection calculations",
+                  "dataType": 28
+                },
+                {
+                  "id": "materials",
+                  "title": "Materials",
+                  "undefinedIfEmpty": true,
+                  "description": "Lists of materials that can be used in selection calculations",
+                  "dataType": 28
+                },
+                {
+                  "id": "geometries",
+                  "title": "Geometries",
+                  "undefinedIfEmpty": true,
+                  "description": "Lists of geometries that can be used in selection calculations",
+                  "dataType": 28
+                }
+              ]
+            }
+          },
+          {
+            "id": "part_visibility",
+            "title": "Part Visibility",
+            "description": "Lists of available textures, materials, and geometries that can be selected",
+            "objectArrayTitleFieldKey": "name",
+            "dataType": 24
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Items Documentation - weapon"
-description: "Describes the weapon Items"
+title: "Items Documentation - minecraft:weapon"
+description: "Describes the minecraft:weapon item component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Items Documentation - weapon
+# Items Documentation - minecraft:weapon
 
 > [!IMPORTANT]
 > This type is now deprecated, and no longer in use in the latest versions of Minecraft.

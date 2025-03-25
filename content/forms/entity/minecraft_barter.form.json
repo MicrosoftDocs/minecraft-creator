@@ -1,0 +1,65 @@
+{
+  "description": "Enables the component to drop an item as a barter exchange.",
+  "fields": [
+    {
+      "id": "barter_table",
+      "description": "Loot table that's used to drop a random item.",
+      "dataType": 8,
+      "lookupId": "lootTable"
+    },
+    {
+      "id": "cooldown_after_being_attacked",
+      "description": "Duration, in seconds, for which mob won't barter items if it was hurt.",
+      "dataType": 18,
+      "minValue": 0,
+      "maxValue": 60
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:barter",
+    "title": "Barter",
+    "description": "Enables the component to drop an item as a barter exchange.",
+    "fields": [
+      {
+        "id": "barter_table",
+        "title": "Barter Table",
+        "description": "Loot table that's used to drop a random item.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:barter/",
+              "content": "loot_tables/entities/piglin_barter.json"
+            }
+          ]
+        }
+      },
+      {
+        "id": "cooldown_after_being_attacked",
+        "title": "Cooldown After Being Attacked",
+        "description": "Duration, in seconds, for which mob won't barter items if it was hurt",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:barter/",
+              "content": 20
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:barter/",
+          "content": {
+            "barter_table": "loot_tables/entities/piglin_barter.json",
+            "cooldown_after_being_attacked": 20
+          }
+        }
+      ]
+    }
+  }
+}

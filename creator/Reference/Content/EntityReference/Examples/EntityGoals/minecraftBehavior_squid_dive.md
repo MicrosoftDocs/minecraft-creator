@@ -1,16 +1,21 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.squid_dive"
-description: "Describes the behavior.squid_dive AI Goals"
+title: "Entity Documentation - minecraft:behavior.squid_dive"
+description: "Describes the minecraft:behavior.squid_dive ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.squid_dive
+# Entity Documentation - minecraft:behavior.squid_dive
 
-Allows the squid to dive down in water. Can only be used by the Squid.
+Allows the squid to dive down in water.
 
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Squid (minecraft:squid)
+> 
 
 ## Squid Dive Behavior Properties
 
@@ -24,16 +29,7 @@ Allows the squid to dive down in water. Can only be used by the Squid.
 
 
 ```json
-{
-  "priority": 2
-}
-```
-
-#### [Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/squid.json)
-
-
-```json
-{
+"minecraft:behavior.squid_dive": {
   "priority": 2
 }
 ```

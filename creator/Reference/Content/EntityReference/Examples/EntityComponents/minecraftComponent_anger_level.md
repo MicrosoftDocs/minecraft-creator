@@ -17,8 +17,8 @@ Compels the entity to track anger towards a set of nuisances.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | anger_decrement_interval | 1 | String | Anger level will decay over time. Defines how often anger towards all nuisances will decrease by on. | Warden: `1` | 
-| angry_boost | 20 | Integer number | Anger boost applied to angry threshold when mob gets angry | Warden: `20` | 
-| angry_threshold | 80 | Integer number | Threshold that define when the mob is considered angry at a nuisance | Warden: `80` | 
+| angry_boost | 20 | Integer number | Anger boost applied to angry threshold when mob gets angry Value must be >= 0. | Warden: `20` | 
+| angry_threshold | 80 | Integer number | Threshold that define when the mob is considered angry at a nuisance Value must be >= 0. | Warden: `80` | 
 | broadcast_anger | false | Boolean true/false | If set, other entities of the same entity definition within the broadcastRange will also become angry |  | 
 | broadcast_anger_on_attack | false | Boolean true/false | If set, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks |  | 
 | broadcast_filters | *not set* | Minecraft filter | Conditions that make this entry in the list valid |  | 
@@ -30,7 +30,7 @@ Compels the entity to track anger towards a set of nuisances.
 | duration | *not set* | Integer number | The amount of time in seconds that the entity will be angry. |  | 
 | duration_delta | *not set* | Integer number | Variance in seconds added to the duration [-delta, delta]. |  | 
 | filters | *not set* | Minecraft filter | Filter out mob types that it should not attack while angry (other Piglins) |  | 
-| max_anger | 100 | Integer number | The maximum anger level that can be reached. Applies to any nuisance | Warden: `150` | 
+| max_anger | 100 | Integer number | The maximum anger level that can be reached. Applies to any nuisance Value must be >= 0. | Warden: `150` | 
 | nuisance_filter | *not set* | Minecraft filter | Filter that is applied to determine if a mob can be a nuisance | Warden: `{"all_of":[{"test":"is_family","subject":"other","operator":"not","value":"warden"},{"test":"is_family","subject":"other","operator":"not","value":"inanimate"}]}` | 
 | on_increase_sounds | *not set* | Array of [On Increase Sounds](#on-increase-sounds-item-type) items | Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins | Warden: `[{"sound":"listening_angry","condition":"query.anger_level(this) >= 40"},{"sound":"listening","condition":"query.anger_level(this) >= 0"}]` | 
 | remove_targets_below_angry_threshold | true | Boolean true/false | Defines if the mob should remove target if it falls below 'angry' threshold | Warden: `true` | 

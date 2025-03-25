@@ -1,0 +1,43 @@
+{
+  "fields": [],
+  "tags": [
+    "visual"
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:transformation",
+    "title": "Transformation",
+    "description": "The block's translation, rotation and scale with respect to the center of its world position",
+    "fields": [
+      {
+        "id": "rotation",
+        "title": "Rotation",
+        "description": "The block's rotation in increments of 90 degrees",
+        "dataType": 17
+      },
+      {
+        "id": "rotation_pivot",
+        "title": "Rotation Pivot",
+        "description": "The point to apply rotation around",
+        "dataType": 11
+      },
+      {
+        "id": "scale",
+        "title": "Scale",
+        "description": "The block's scale",
+        "dataType": 11
+      },
+      {
+        "id": "scale_pivot",
+        "title": "Scale Pivot",
+        "description": "The point to apply scale around",
+        "dataType": 11
+      },
+      {
+        "id": "translation",
+        "title": "Translation",
+        "description": "The block's translation",
+        "dataType": 11
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "minecraft:storage_weight_modifier",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Storage Weight Modifier",
+    "description": "Specifies the maximum weight limit that a storage item can hold",
+    "fields": [
+      {
+        "id": "weight_in_storage_item",
+        "title": "weight_in_storage_item",
+        "description": "The weight of this item when inside another Storage Item. Default is 4. 0 means item is not allowed in another Storage Item.",
+        "dataType": 0
+      }
+    ],
+    "id": "minecraft:storage_weight_modifier"
+  }
+}

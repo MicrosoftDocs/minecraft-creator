@@ -1,0 +1,44 @@
+{
+  "id": "block_reference",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "block_reference",
+    "fields": [
+      {
+        "dataType": 2,
+        "id": "name",
+        "title": "Name",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "states",
+        "title": "States",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 0,
+              "id": "\\w*:?\\w+",
+              "title": "\\w* ?\\w+",
+              "isRequired": false,
+              "alternates": [
+                {
+                  "dataType": 1,
+                  "id": "\\w*:?\\w+",
+                  "isRequired": false
+                },
+                {
+                  "dataType": 2,
+                  "id": "\\w*:?\\w+",
+                  "isRequired": false
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "dataVersion": "1.10.0"
+  }
+}

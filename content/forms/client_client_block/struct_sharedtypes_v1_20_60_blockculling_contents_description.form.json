@@ -1,0 +1,15 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct SharedTypes V1 20 60 BlockCulling Contents Description Client Client Block",
+    "description": "Struct SharedTypes V1 20 60 BlockCulling Contents Description Client Client Block",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "identifier",
+        "description": "identifier",
+        "dataType": 2
+      }
+    ]
+  }
+}

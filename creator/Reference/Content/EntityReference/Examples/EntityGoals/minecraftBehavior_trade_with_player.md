@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.trade_with_player"
-description: "Describes the behavior.trade_with_player AI Goals"
+title: "Entity Documentation - minecraft:behavior.trade_with_player"
+description: "Describes the minecraft:behavior.trade_with_player ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.trade_with_player
+# Entity Documentation - minecraft:behavior.trade_with_player
 
 Allows the player to trade with this mob. When the goal starts, it will stop the mob's navigation.
 
@@ -26,7 +26,7 @@ Allows the player to trade with this mob. When the goal starts, it will stop the
 
 
 ```json
-{
+"minecraft:behavior.trade_with_player": {
   "priority": 2,
   "filters": {
     "all_of": [
@@ -59,40 +59,7 @@ Allows the player to trade with this mob. When the goal starts, it will stop the
 
 
 ```json
-{
-  "priority": 1,
-  "filters": {
-    "all_of": [
-      {
-        "all_of": [
-          {
-            "test": "in_water",
-            "value": false
-          }
-        ]
-      },
-      {
-        "any_of": [
-          {
-            "test": "on_ground",
-            "value": true
-          },
-          {
-            "test": "is_sleeping",
-            "value": true
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-#### [Wandering Trader](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wandering_trader.json)
-
-
-```json
-{
+"minecraft:behavior.trade_with_player": {
   "priority": 1,
   "filters": {
     "all_of": [

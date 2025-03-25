@@ -1,0 +1,43 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Emitter Rate Steady Misc",
+    "description": "Emitter Rate Steady Misc",
+    "fields": [
+      {
+        "id": "spawn_rate",
+        "title": "spawn_rate",
+        "description": "spawn_rate",
+        "dataType": 16,
+        "subForm": {
+          "title": "Spawn Rate",
+          "description": "Spawn Rate",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "spawn_rate",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "max_particles",
+        "title": "max_particles",
+        "description": "max_particles",
+        "dataType": 16,
+        "subForm": {
+          "title": "Max Particles",
+          "description": "Max Particles",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "max_particles",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

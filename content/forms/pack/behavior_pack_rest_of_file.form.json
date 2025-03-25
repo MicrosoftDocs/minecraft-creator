@@ -1,0 +1,48 @@
+{
+  "fields": [
+    {
+      "id": "modules",
+      "title": "Modules",
+      "dataType": 15,
+      "subForm": {
+        "fields": [
+          {
+            "id": "description",
+            "description": "Description of this module.",
+            "dataType": 13
+          },
+          {
+            "id": "language",
+            "description": "Description of this module.",
+            "dataType": 2
+          },
+          {
+            "id": "type",
+            "description": "Type of this module.",
+            "dataType": 2
+          },
+          {
+            "id": "uuid",
+            "description": "Unique identifier of this module.",
+            "dataType": 2
+          },
+          {
+            "id": "version",
+            "description": "Version",
+            "dataType": 2
+          },
+          {
+            "id": "entry",
+            "description": "Script entry point for this behavior pack.",
+            "dataType": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "dependencies",
+      "title": "Dependencies",
+      "dataType": 24
+    }
+  ]
+}

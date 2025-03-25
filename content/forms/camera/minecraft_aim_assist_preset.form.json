@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Aim Assist Preset",
+    "description": "Aim Assist Preset",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "Version of the JSON schema for this file. Aim-assist preset requires at least version 1.21.50.",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:aim_assist_preset",
+        "title": "minecraft:aim_assist_preset",
+        "description": "A single Camera Aim-Assist Preset Definition.",
+        "dataType": 16
+      }
+    ]
+  }
+}

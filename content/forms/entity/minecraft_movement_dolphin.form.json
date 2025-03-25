@@ -1,0 +1,7 @@
+{
+  "title": "Dolphin Movement",
+  "description": "This component can control how dolphins move, in a dolphin-esque style.",
+  "note": "This movement is not currently being used in game.",
+  "fields": [
+  ]
+}

@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.work_composter"
-description: "Describes the behavior.work_composter AI Goals"
+title: "Entity Documentation - minecraft:behavior.work_composter"
+description: "Describes the minecraft:behavior.work_composter ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.work_composter
+# Entity Documentation - minecraft:behavior.work_composter
 
 Allows the NPC to use the composter POI to convert excess seeds into bone meal.
 
@@ -24,7 +24,7 @@ Allows the NPC to use the composter POI to convert excess seeds into bone meal.
 | goal_cooldown | 0 | Integer number | The amount of ticks the goal will be on cooldown before it can be used again | Villager V2: `200` | 
 | items_per_use_max | 20 | Integer number | The maximum number of items which can be added to the composter per block interaction. |  | 
 | min_item_count | 10 | Integer number | Limits the amount of each compostable item the mob can use. Any amount held over this number will be composted if possible |  | 
-| on_arrival | *not set* | Minecraft Event Trigger | Event to run when the mob reaches their jobsite. | Villager V2: `{"event":"minecraft:resupply_trades","target":"self"}` | 
+| on_arrival | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when the mob reaches their jobsite. | Villager V2: `{"event":"minecraft:resupply_trades","target":"self"}` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `9` | 
 | speed_multiplier | 0.5 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Villager V2: `0.5` | 
 | use_block_max | 200 | Integer number | The maximum interval in which the mob will interact with the composter. |  | 
@@ -38,13 +38,13 @@ Allows the NPC to use the composter POI to convert excess seeds into bone meal.
 At /minecraft:entity/component_groups/job_specific_goals/minecraft:behavior.work_composter/: 
 
 ```json
-{}
+"minecraft:behavior.work_composter": {}
 ```
 
 At /minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.work_composter/: 
 
 ```json
-{
+"minecraft:behavior.work_composter": {
   "priority": 9,
   "active_time": 250,
   "speed_multiplier": 0.5,

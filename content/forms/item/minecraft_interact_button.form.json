@@ -1,0 +1,10 @@
+{
+  "description": "A boolean or string that determines if the interact button is shown in touch controls, and what text is displayed on the button. When set to 'true', the default 'Use Item' text will be used.",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Interact Button",
+    "description": "This component is a boolean or string that determines if the interact button is shown in touch controls and what text is displayed on the button. When set as true, default \"Use Item\" text will be displayed.",
+    "fields": [],
+    "id": "minecraft:interact_button"
+  }
+}

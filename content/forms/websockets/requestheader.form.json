@@ -1,0 +1,36 @@
+{
+  "id": "RequestHeader",
+  "title": "Request Header",
+  "description": "Describes a web socket server request header.",
+  "fields": [
+    {
+      "id": "version",
+      "desciption": "Version identifier. Should be 1.",
+      "dataType": 1
+    },
+    {
+      "id": "requestId",
+      "desciption": "Request unique identifier. Should be in UUID form.",
+      "dataType": 26
+    },
+    {
+      "id": "messagePurpose",
+      "desciption": "Request message purpose.",
+      "dataType": 2,
+      "choices": [
+        {
+          "id": "subscribe",
+          "title": "Subscribe"
+        },
+        {
+          "id": "unsubscribe",
+          "title": "Unsubscribe"
+        },
+        {
+          "id": "commandRequest",
+          "title": "Run a /slash command"
+        }
+      ]
+    }
+  ]
+}

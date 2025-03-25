@@ -1,0 +1,33 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Minecraft Jigsaw Structure Metadata Misc",
+    "description": "Minecraft Jigsaw Structure Metadata Misc",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "Format version of the contained metadata registry.",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:jigsaw_structure_metadata",
+        "title": "minecraft:jigsaw_structure_metadata",
+        "description": "The Jigsaw metadata registry.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Struct SharedTypes V1 21 80 JigsawStructureMetadataRegistry",
+          "description": "Struct SharedTypes V1 21 80 JigsawStructureMetadataRegistry",
+          "fields": [
+            {
+              "id": "metadata",
+              "title": "metadata",
+              "description": "The registry associating structure locations with generated Jigsaw structure metadata.",
+              "dataType": 14
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructureSet Structure",
+    "description": "JigsawStructureSet Structure",
+    "fields": [
+      {
+        "id": "structure",
+        "title": "structure",
+        "description": "Identifier of the Jigsaw Structure.",
+        "dataType": 2
+      },
+      {
+        "id": "weight",
+        "title": "weight",
+        "description": "Weight of the Jigsaw Structure in the set. Higher weights are more likely to be selected.",
+        "dataType": 0
+      }
+    ]
+  }
+}

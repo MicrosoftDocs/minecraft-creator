@@ -1,15 +1,18 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.vex_copy_owner_target"
-description: "Describes the behavior.vex_copy_owner_target AI Goals"
+title: "Entity Documentation - minecraft:behavior.vex_copy_owner_target"
+description: "Describes the minecraft:behavior.vex_copy_owner_target ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.vex_copy_owner_target
+# Entity Documentation - minecraft:behavior.vex_copy_owner_target
 
 Allows the mob to target the same entity its owner is targeting.
+
+> [!Note]
+> No longer used for the `vex` entity.
 
 
 ## Vex Copy Owner Target Behavior Properties

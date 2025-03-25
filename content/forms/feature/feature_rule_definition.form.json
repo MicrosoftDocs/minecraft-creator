@@ -1,0 +1,94 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Feature Rule Definition",
+    "description": "Feature Rule Definition",
+    "fields": [
+      {
+        "id": "description",
+        "title": "description",
+        "description": "Identifier for the Feature Rule and Feture to place.",
+        "dataType": 16
+      },
+      {
+        "id": "conditions",
+        "title": "conditions",
+        "description": "Parameters to control where and when the feature will be placed.",
+        "dataType": 16
+      },
+      {
+        "id": "distribution",
+        "title": "distribution",
+        "description": "Parameters controlling the initial scatter of the feature.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Distribution",
+          "description": "Controls the scatter distribution of a particular object.",
+          "fields": [
+            {
+              "id": "z",
+              "title": "z",
+              "description": "Distribution for the coordinate (evaluated each iteration).",
+              "dataType": 16,
+              "subForm": {
+                "title": "Z",
+                "description": "Represents the scatter distrubution over a coordinate (x/y/z), can also be built by an expression.",
+                "fields": []
+              }
+            },
+            {
+              "id": "iterations",
+              "title": "iterations",
+              "description": "Number of scattered positions to generate.",
+              "dataType": 16,
+              "subForm": {
+                "title": "Iterations",
+                "description": "Iterations",
+                "fields": []
+              }
+            },
+            {
+              "id": "scatter_chance",
+              "title": "scatter_chance",
+              "description": "Probability that this scatter will occur. Not evaluated each iteration; either no iterations will run, or all will.",
+              "dataType": 16,
+              "subForm": {
+                "title": "Scatter Chance",
+                "description": "Scatter probability represented by an expression or an object with a numerator and denominator.",
+                "fields": []
+              }
+            },
+            {
+              "id": "coordinate_eval_order",
+              "title": "Coordinate Evaluation Order",
+              "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to \"xzy\". Supported orders are defined by \"Coordinate Evaluation Order\".",
+              "dataType": 2
+            },
+            {
+              "id": "x",
+              "title": "x",
+              "description": "Distribution for the coordinate (evaluated each iteration).",
+              "dataType": 16,
+              "subForm": {
+                "title": "X",
+                "description": "Represents the scatter distrubution over a coordinate (x/y/z), can also be built by an expression.",
+                "fields": []
+              }
+            },
+            {
+              "id": "y",
+              "title": "y",
+              "description": "Distribution for the coordinate (evaluated each iteration).",
+              "dataType": 16,
+              "subForm": {
+                "title": "Y",
+                "description": "Represents the scatter distrubution over a coordinate (x/y/z), can also be built by an expression.",
+                "fields": []
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

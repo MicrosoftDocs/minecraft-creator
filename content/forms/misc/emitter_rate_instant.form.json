@@ -1,0 +1,26 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Emitter Rate Instant Misc",
+    "description": "Emitter Rate Instant Misc",
+    "fields": [
+      {
+        "id": "num_particles",
+        "title": "num_particles",
+        "description": "num_particles",
+        "dataType": 16,
+        "subForm": {
+          "title": "Num Particles",
+          "description": "Num Particles",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "num_particles",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

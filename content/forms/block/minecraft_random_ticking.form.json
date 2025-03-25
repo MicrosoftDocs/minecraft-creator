@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "isDeprecated": true,
+  "generated_doNotEdit": {
+    "id": "minecraft:random_ticking",
+    "title": "Random Ticking",
+    "description": "Triggers the specified event randomly based on the random tick speed gamerule. The random tick speed determines how often blocks are updated. Some other examples of game mechanics that use random ticking are crop growth and fire spreading.",
+    "fields": [
+      {
+        "id": "on_tick",
+        "title": "On Tick",
+        "description": "The event that will be triggered on random ticks.",
+        "dataType": 22
+      }
+    ]
+  }
+}

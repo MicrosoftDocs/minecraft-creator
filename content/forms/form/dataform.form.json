@@ -1,0 +1,189 @@
+{
+  "fields": [
+    {
+      "id": "id",
+      "dataType": 2
+    },
+    {
+      "id": "title",
+      "dataType": 2
+    },
+    {
+      "id": "description",
+      "dataType": 13
+    },
+    {
+      "id": "fields",
+      "dataType": 15,
+      "defaultValue": false,
+      "objectArrayTitleFieldKey": "id",
+      "matchObjectArrayToSubFieldKey": true,
+      "newItemPrototype": {
+        "id": "newfield",
+        "dataType": 2
+      },
+      "subForm": {
+        "fields": [
+          {
+            "id": "id",
+            "description": "Identifier of the field.",
+            "dataType": 2
+          },
+          {
+            "id": "description",
+            "description": "Description of the of the field.",
+            "dataType": 13
+          },
+          {
+            "id": "dataType",
+            "description": "Type of data.",
+            "dataType": 5,
+            "choices": [
+              {
+                "id": 0,
+                "title": "Integer"
+              },
+              {
+                "id": 1,
+                "title": "Boolean"
+              },
+              {
+                "id": 2,
+                "title": "String"
+              },
+              {
+                "id": 3,
+                "title": "Float"
+              },
+              {
+                "id": 4,
+                "title": "Set of strings"
+              },
+              {
+                "id": 5,
+                "title": "Set of integers"
+              },
+              {
+                "id": 6,
+                "title": "Integer as a boolean 0/1"
+              },
+              {
+                "id": 7,
+                "title": "Number"
+              },
+              {
+                "id": 8,
+                "title": "Lookup (for strings)"
+              },
+              {
+                "id": 9,
+                "title": "Lookup (for integers)"
+              },
+              {
+                "id": 10,
+                "title": "Long"
+              },
+              {
+                "id": 11,
+                "title": "Point location"
+              },
+              {
+                "id": 12,
+                "title": "Integer Point location"
+              },
+              {
+                "id": 13,
+                "title": "Long form string"
+              },
+              {
+                "id": 14,
+                "title": "Keyed object collection ({\"foo\": {\"color\":\"green\"}})"
+              },
+              {
+                "id": 15,
+                "title": "Object array ([\"foo\", \"green\"])"
+              },
+              {
+                "id": 16,
+                "title": "Object"
+              },
+              {
+                "id": 17,
+                "title": "String array"
+              },
+              {
+                "id": 18,
+                "title": "Integer range"
+              },
+              {
+                "id": 19,
+                "title": "Float range"
+              },
+              {
+                "id": 20,
+                "title": "Minecraft Filter"
+              },
+              {
+                "id": 21,
+                "title": "Percent range"
+              },
+              {
+                "id": 22,
+                "title": "Minecraft Event Trigger"
+              },
+              {
+                "id": 23,
+                "title": "Long form string array"
+              },
+              {
+                "id": 24,
+                "title": "Keyed string ({\"foo\": \"alpha\"})"
+              },
+              {
+                "id": 25,
+                "title": "Version"
+              },
+              {
+                "id": 26,
+                "title": "Uuid"
+              },
+              {
+                "id": 27,
+                "title": "Keyed boolean ({\"foo\": true})"
+              },
+              {
+                "id": 28,
+                "title": "Keyed string array ({\"foo\": [\"alpha\"]})"
+              }
+            ]
+          },
+          {
+            "id": "Minimum value",
+            "description": "Minimum value for this number.",
+            "dataType": 1,
+            "visibility": [
+              {
+                "field": "dataType",
+                "comparison": "=",
+                "anyValues": [0, 3]
+              }
+            ]
+          },
+          {
+            "id": "Maximum value",
+            "description": "Maximum value for this number.",
+            "dataType": 1,
+            "visibility": [
+              {
+                "field": "dataType",
+                "comparison": "=",
+                "anyValues": [0, 3]
+              }
+            ]
+          }
+        ]
+      },
+      "description": "The sub-items within this form."
+    }
+  ]
+}

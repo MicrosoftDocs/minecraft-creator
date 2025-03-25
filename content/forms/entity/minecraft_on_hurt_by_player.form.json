@@ -1,0 +1,95 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:on_hurt_by_player",
+    "title": "On Hurt By Player",
+    "description": "Adds a trigger to call when this entity is attacked by the player.",
+    "fields": [
+      {
+        "id": "event",
+        "title": "Event",
+        "description": "The event to run when the conditions for this trigger are met.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_hurt_by_player/",
+              "content": "minecraft:on_hurt_event"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pillager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:illager_squad_captain/minecraft:on_hurt_by_player/",
+              "content": "minecraft:ranged_mode"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:patrol_captain/minecraft:on_hurt_by_player/",
+              "content": "minecraft:ranged_mode"
+            }
+          ]
+        }
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "The list of conditions for this trigger to execute.",
+        "dataType": 20
+      },
+      {
+        "id": "target",
+        "title": "Target",
+        "description": "The target of the event.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:on_hurt_by_player/",
+              "content": "self"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pillager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:illager_squad_captain/minecraft:on_hurt_by_player/",
+              "content": "self"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:on_hurt_by_player/",
+          "content": {
+            "event": "minecraft:on_hurt_event",
+            "target": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:illager_squad_captain/minecraft:on_hurt_by_player/",
+          "content": {
+            "event": "minecraft:ranged_mode",
+            "target": "self"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:patrol_captain/minecraft:on_hurt_by_player/",
+          "content": {
+            "event": "minecraft:ranged_mode",
+            "target": "self"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:patrol_follower/minecraft:on_hurt_by_player/",
+          "content": {
+            "event": "minecraft:ranged_mode",
+            "target": "self"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:body_rotation_blocked",
+    "title": "Body Rotation Blocked",
+    "description": "When set, the entity will no longer visually rotate their body to match their facing direction.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:rolled_up/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creaking.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:immobile/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

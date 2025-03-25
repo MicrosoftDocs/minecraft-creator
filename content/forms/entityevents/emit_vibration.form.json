@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "id": "vibration",
+      "desciption": "Type of vibration to emit.",
+      "dataType": 2,
+      "mustMatchChoices": true,
+      "choices": [
+        {
+          "id": "entity_interact"
+        },
+        {
+          "id": "entity_act"
+        },
+        {
+          "id": "entity_die"
+        }
+      ]
+    }
+  ],
+  "description": "Allows the entity to emit a vibration having the entity itself as its source.",
+  "id": "emit_vibration",
+  "title": "Emit Vibration",
+  "samples": {
+    "samples": [
+      {
+        "path": "Example:",
+        "content": "{\r\n\t\"emit_vibration\": {\r\n\t\t\"vibration\": \"entity_act\"\r\n\t}\r\n}"
+      }
+    ]
+  }
+}

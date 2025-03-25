@@ -18,3 +18,5 @@ Adds a cooldown to an entity. The intention of this cooldown is to be used to pr
 |:----------|:-------------|:----|:-----------|:------------- |
 | attack_cooldown_complete_event | *not set* | String from a list of choices | Event to be run when the cooldown is complete. |  | 
 | attack_cooldown_time | *not set* | Range of floats | Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max). |  | 
+
+## Samples

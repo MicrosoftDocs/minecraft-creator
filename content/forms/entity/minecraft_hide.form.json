@@ -1,0 +1,6 @@
+{
+  "id": "minecraft:hide",
+  "title": "Hide",
+  "description": "Moves to and hides at their owned POI or the closest nearby.",
+  "fields": []
+}

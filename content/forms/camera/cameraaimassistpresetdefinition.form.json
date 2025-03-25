@@ -1,0 +1,45 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "CameraAimAssistPresetDefinition",
+    "description": "CameraAimAssistPresetDefinition",
+    "fields": [
+      {
+        "id": "item_settings",
+        "title": "item_settings",
+        "description": "Optional. Map of Item identifiers to Aim-Assist Category names found in the specified 'categories'.",
+        "dataType": 16
+      },
+      {
+        "id": "liquid_targeting_list",
+        "title": "liquid_targeting_list",
+        "description": "Optional. List of item identifiers that will target liquid blocks with aim-assist when being held.",
+        "dataType": 15
+      },
+      {
+        "id": "identifier",
+        "title": "identifier",
+        "description": "Namespaced identifier for Camera Aim-Assist preset. Namespace and name must be separated by a ':'.",
+        "dataType": 2
+      },
+      {
+        "id": "default_item_settings",
+        "title": "default_item_settings",
+        "description": "Optional. Default Aim-Assist Category used for Items not found in 'item_settings'.",
+        "dataType": 2
+      },
+      {
+        "id": "exclusion_list",
+        "title": "exclusion_list",
+        "description": "Optional. List of block/entity identifiers to exclude from aim assist targeting.",
+        "dataType": 15
+      },
+      {
+        "id": "hand_settings",
+        "title": "hand_settings",
+        "description": "Optional. Aim-assist Category used for an empty hand.",
+        "dataType": 2
+      }
+    ]
+  }
+}

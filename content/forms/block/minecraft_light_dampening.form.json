@@ -1,0 +1,19 @@
+{
+  "fields": [],
+  "scalarField": {
+    "id": "integer",
+    "title": "Light Dampening Value",
+    "dataType": 0
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:light_dampening",
+    "title": "Light Dampening",
+    "description": "The amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more.",
+    "fields": [],
+    "scalarField": {
+      "id": "integer",
+      "title": "Integer",
+      "dataType": 0
+    }
+  }
+}

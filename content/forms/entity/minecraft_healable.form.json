@@ -1,0 +1,457 @@
+{
+  "title": "Healable",
+  "description": "How entities heal",
+  "fields": [
+    {
+      "id": "force_use",
+      "title": "Whether an item can be used even if the entity is at full health",
+      "dataType": 1
+    },
+    {
+      "id": "filters",
+      "title": "Additional filters when healing happens",
+      "dataType": 20
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:healable",
+    "title": "Healable",
+    "description": "Defines the interactions with this entity for healing it.",
+    "fields": [
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "The filter group that defines the conditions for using this item to heal the entity.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": {
+                "test": "is_riding",
+                "operator": "!=",
+                "value": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "force_use",
+        "title": "Force Use",
+        "description": "Determines if item can be used regardless of entity being at full health.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "items",
+        "title": "Items",
+        "description": "The array of items that can be used to heal this entity.",
+        "dataType": 15,
+        "subForm": {
+          "description": "The array of items that can be used to heal this entity.",
+          "fields": [
+            {
+              "id": "heal_amount",
+              "title": "Heal Amount",
+              "description": "The amount of health this entity gains when fed this item.",
+              "defaultValue": 1,
+              "dataType": 0
+            },
+            {
+              "id": "item",
+              "title": "Item",
+              "description": "Item identifier that can be used to heal this entity.",
+              "dataType": 2
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": [
+                {
+                  "item": "cactus",
+                  "heal_amount": 2
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:healable/",
+              "content": [
+                {
+                  "item": "fish",
+                  "heal_amount": 2
+                },
+                {
+                  "item": "salmon",
+                  "heal_amount": 2
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "cactus",
+                "heal_amount": 2
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "fish",
+                "heal_amount": 2
+              },
+              {
+                "item": "salmon",
+                "heal_amount": 2
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "wheat",
+                "heal_amount": 2
+              },
+              {
+                "item": "sugar",
+                "heal_amount": 1
+              },
+              {
+                "item": "hay_block",
+                "heal_amount": 20
+              },
+              {
+                "item": "apple",
+                "heal_amount": 3
+              },
+              {
+                "item": "golden_carrot",
+                "heal_amount": 4
+              },
+              {
+                "item": "golden_apple",
+                "heal_amount": 10
+              },
+              {
+                "item": "appleEnchanted",
+                "heal_amount": 10
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "wheat",
+                "heal_amount": 2
+              },
+              {
+                "item": "sugar",
+                "heal_amount": 1
+              },
+              {
+                "item": "hay_block",
+                "heal_amount": 20
+              },
+              {
+                "item": "apple",
+                "heal_amount": 3
+              },
+              {
+                "item": "golden_carrot",
+                "heal_amount": 4
+              },
+              {
+                "item": "golden_apple",
+                "heal_amount": 10
+              },
+              {
+                "item": "appleEnchanted",
+                "heal_amount": 10
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "wheat",
+                "heal_amount": 2
+              },
+              {
+                "item": "hay_block",
+                "heal_amount": 10
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "wheat",
+                "heal_amount": 2
+              },
+              {
+                "item": "sugar",
+                "heal_amount": 1
+              },
+              {
+                "item": "hay_block",
+                "heal_amount": 20
+              },
+              {
+                "item": "apple",
+                "heal_amount": 3
+              },
+              {
+                "item": "golden_carrot",
+                "heal_amount": 4
+              },
+              {
+                "item": "golden_apple",
+                "heal_amount": 10
+              },
+              {
+                "item": "appleEnchanted",
+                "heal_amount": 10
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "force_use": true,
+            "filters": {
+              "test": "is_riding",
+              "operator": "!=",
+              "value": true
+            },
+            "items": [
+              {
+                "item": "cookie",
+                "heal_amount": 0,
+                "effects": [
+                  {
+                    "name": "fatal_poison",
+                    "chance": 1,
+                    "duration": 1000,
+                    "amplifier": 0
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "torchflower_seeds",
+                "heal_amount": 2
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "wheat",
+                "heal_amount": 2
+              },
+              {
+                "item": "hay_block",
+                "heal_amount": 10
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "porkchop",
+                "heal_amount": 6
+              },
+              {
+                "item": "cooked_porkchop",
+                "heal_amount": 16
+              },
+              {
+                "item": "fish",
+                "heal_amount": 4
+              },
+              {
+                "item": "salmon",
+                "heal_amount": 4
+              },
+              {
+                "item": "clownfish",
+                "heal_amount": 2
+              },
+              {
+                "item": "pufferfish",
+                "heal_amount": 2
+              },
+              {
+                "item": "cooked_fish",
+                "heal_amount": 10
+              },
+              {
+                "item": "cooked_salmon",
+                "heal_amount": 12
+              },
+              {
+                "item": "beef",
+                "heal_amount": 6
+              },
+              {
+                "item": "cooked_beef",
+                "heal_amount": 16
+              },
+              {
+                "item": "chicken",
+                "heal_amount": 4
+              },
+              {
+                "item": "cooked_chicken",
+                "heal_amount": 12
+              },
+              {
+                "item": "muttonRaw",
+                "heal_amount": 4
+              },
+              {
+                "item": "muttonCooked",
+                "heal_amount": 12
+              },
+              {
+                "item": "rotten_flesh",
+                "heal_amount": 8
+              },
+              {
+                "item": "rabbit",
+                "heal_amount": 6
+              },
+              {
+                "item": "cooked_rabbit",
+                "heal_amount": 10
+              },
+              {
+                "item": "rabbit_stew",
+                "heal_amount": 20
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "wheat",
+                "heal_amount": 2
+              },
+              {
+                "item": "hay_block",
+                "heal_amount": 10
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "wheat",
+                "heal_amount": 2
+              },
+              {
+                "item": "hay_block",
+                "heal_amount": 10
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:healable/",
+          "content": {
+            "items": [
+              {
+                "item": "fish",
+                "heal_amount": 2
+              },
+              {
+                "item": "salmon",
+                "heal_amount": 2
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "play_sound",
+  "title": "Play Sound",
+  "description": "Plays a sound as part of an entity event response.",
+  "fields": [],
+  "samples": {
+    "samples": [
+      {
+        "path": "Example:",
+        "content": "{\r\n\t\"play_sound\": {\r\n\t\t\"sound\": \"death\"\r\n\t}\r\n}"
+      }
+    ]
+  }
+}

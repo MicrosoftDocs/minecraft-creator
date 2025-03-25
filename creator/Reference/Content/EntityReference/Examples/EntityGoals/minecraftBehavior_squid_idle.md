@@ -1,16 +1,21 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.squid_idle"
-description: "Describes the behavior.squid_idle AI Goals"
+title: "Entity Documentation - minecraft:behavior.squid_idle"
+description: "Describes the minecraft:behavior.squid_idle ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.squid_idle
+# Entity Documentation - minecraft:behavior.squid_idle
 
-Allows the squid to swim in place idly. Can only be used by the Squid.
+Allows the squid to swim in place idly.
 
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Squid (minecraft:squid)
+> 
 
 ## Squid Idle Behavior Properties
 
@@ -24,16 +29,7 @@ Allows the squid to swim in place idly. Can only be used by the Squid.
 
 
 ```json
-{
-  "priority": 2
-}
-```
-
-#### [Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/squid.json)
-
-
-```json
-{
+"minecraft:behavior.squid_idle": {
   "priority": 2
 }
 ```

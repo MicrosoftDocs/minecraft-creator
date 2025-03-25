@@ -1,0 +1,79 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Motion Dynamic Misc",
+    "description": "Particle Motion Dynamic Misc",
+    "fields": [
+      {
+        "id": "linear_acceleration",
+        "title": "linear_acceleration",
+        "description": "linear_acceleration",
+        "dataType": 15,
+        "minLength": 3,
+        "maxLength": 3,
+        "subForm": {
+          "title": "Linear Acceleration",
+          "description": "Linear Acceleration",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "linear_acceleration",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "linear_drag_coefficient",
+        "title": "linear_drag_coefficient",
+        "description": "linear_drag_coefficient",
+        "dataType": 16,
+        "subForm": {
+          "title": "Linear Drag Coefficient",
+          "description": "Linear Drag Coefficient",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "linear_drag_coefficient",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "rotation_acceleration",
+        "title": "rotation_acceleration",
+        "description": "rotation_acceleration",
+        "dataType": 16,
+        "subForm": {
+          "title": "Rotation Acceleration",
+          "description": "Rotation Acceleration",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "rotation_acceleration",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "rotation_drag_coefficient",
+        "title": "rotation_drag_coefficient",
+        "description": "rotation_drag_coefficient",
+        "dataType": 16,
+        "subForm": {
+          "title": "Rotation Drag Coefficient",
+          "description": "Rotation Drag Coefficient",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "rotation_drag_coefficient",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

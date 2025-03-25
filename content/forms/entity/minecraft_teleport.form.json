@@ -1,0 +1,70 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:teleport",
+    "title": "Teleport",
+    "description": "Defines an entity's teleporting behavior.",
+    "fields": [
+      {
+        "id": "dark_teleport_chance",
+        "title": "Dark Teleport Chance",
+        "description": "Modifies the chance that the entity will teleport if the entity is in darkness",
+        "defaultValue": 0.01,
+        "dataType": 3
+      },
+      {
+        "id": "light_teleport_chance",
+        "title": "Light Teleport Chance",
+        "description": "Modifies the chance that the entity will teleport if the entity is in daylight",
+        "defaultValue": 0.01,
+        "dataType": 3
+      },
+      {
+        "id": "max_random_teleport_time",
+        "title": "Max Random Teleport Time",
+        "description": "Maximum amount of time in seconds between random teleports",
+        "defaultValue": 20,
+        "dataType": 3
+      },
+      {
+        "id": "min_random_teleport_time",
+        "title": "Min Random Teleport Time",
+        "description": "Minimum amount of time in seconds between random teleports",
+        "defaultValue": 0,
+        "dataType": 3
+      },
+      {
+        "id": "random_teleport_cube",
+        "title": "Random Teleport Cube",
+        "description": "Entity will teleport to a random position within the area defined by this cube",
+        "defaultValue": [
+          32,
+          16,
+          32
+        ],
+        "dataType": 11
+      },
+      {
+        "id": "random_teleports",
+        "title": "Random Teleports",
+        "description": "If true, the entity will teleport randomly",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "target_distance",
+        "title": "Target Distance",
+        "description": "Maximum distance the entity will teleport when chasing a target",
+        "defaultValue": 16,
+        "dataType": 3
+      },
+      {
+        "id": "target_teleport_chance",
+        "title": "Target Teleport Chance",
+        "description": "The chance that the entity will teleport between 0.0 and 1.0. 1.0 means 100%",
+        "defaultValue": 1,
+        "dataType": 3
+      }
+    ]
+  }
+}

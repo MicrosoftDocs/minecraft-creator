@@ -1,0 +1,99 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:scale_by_age",
+    "title": "Scale By Age",
+    "description": "Defines the entity's size interpolation based on the entity's age.",
+    "fields": [
+      {
+        "id": "end_scale",
+        "title": "End Scale",
+        "description": "Ending scale of the entity when it's fully grown.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/donkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:donkey_baby/minecraft:scale_by_age/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:scale_by_age/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "start_scale",
+        "title": "Start Scale",
+        "description": "Initial scale of the newborn entity.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/donkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:donkey_baby/minecraft:scale_by_age/",
+              "content": 0.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:scale_by_age/",
+              "content": 0.5
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:donkey_baby/minecraft:scale_by_age/",
+          "content": {
+            "start_scale": 0.5,
+            "end_scale": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:scale_by_age/",
+          "content": {
+            "start_scale": 0.5,
+            "end_scale": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:mule_baby/minecraft:scale_by_age/",
+          "content": {
+            "start_scale": 0.5,
+            "end_scale": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:skeleton_horse_baby/minecraft:scale_by_age/",
+          "content": {
+            "start_scale": 0.5,
+            "end_scale": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:scale_by_age/",
+          "content": {
+            "start_scale": 0.5,
+            "end_scale": 1
+          }
+        }
+      ]
+    }
+  }
+}

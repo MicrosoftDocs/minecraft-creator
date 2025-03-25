@@ -1,0 +1,42 @@
+{
+  "fields": [],
+  "restrictions": [
+    {
+      "id": "minecraft:ender_dragon",
+      "type": "entity_type"
+    }
+  ],
+  "description": "Allows the mob to alert mobs in nearby blocks to come out.",
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.silverfish_wake_up_friends",
+    "title": "Silverfish Wake Up Friends Behavior",
+    "description": "Allows the mob to alert mobs in nearby blocks to come out. Currently it can only be used by Silverfish.",
+    "fields": [
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/silverfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:silverfish_angry/minecraft:behavior.silverfish_wake_up_friends/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/silverfish.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:silverfish_angry/minecraft:behavior.silverfish_wake_up_friends/",
+          "content": {
+            "priority": 1
+          }
+        }
+      ]
+    }
+  }
+}

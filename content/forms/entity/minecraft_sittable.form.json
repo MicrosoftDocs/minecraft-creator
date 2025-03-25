@@ -1,0 +1,54 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:sittable",
+    "title": "Sittable",
+    "description": "Defines the entity's 'sit' state.",
+    "fields": [
+      {
+        "id": "sit_event",
+        "title": "Sit Event",
+        "description": "Event to run when the entity enters the 'sit' state",
+        "dataType": 22
+      },
+      {
+        "id": "stand_event",
+        "title": "Stand Event",
+        "description": "Event to run when the entity exits the 'sit' state",
+        "dataType": 22
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:sittable/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ocelot_tame/minecraft:sittable/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_tame/minecraft:sittable/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_tame/minecraft:sittable/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_tame/minecraft:sittable/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

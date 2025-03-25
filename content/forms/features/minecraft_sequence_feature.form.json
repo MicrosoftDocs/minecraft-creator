@@ -1,0 +1,60 @@
+{
+  "id": "minecraft:sequence_feature",
+  "description": "Places a collection of features sequentially, in the order they appear in data. The output position of the previous feature is used as the input position for the next. For example, a tree feature is placed at (0, 0, 0) and places blocks up to (0, 10, 0). The next feature in the sequence begins at (0, 10, 0). Succeeds if all features in the sequence are successfully placed. Fails if any feature in the sequence fails to be placed. Features that have not yet been placed at the time of failure are skipped.",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "samples": {
+    "example": [
+      {
+        "path": "Scattering fruit throughout the canopy of a tree",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:sequence_feature": {
+            "description": {
+              "identifier": "example:oak_tree_then_apples_feature"
+            },
+            "features": [
+              "example:oak_tree_feature",
+              "example:scatter_apples_feature"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:sequence_feature",
+    "title": "Sequence Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 17,
+        "id": "features",
+        "title": "Features",
+        "description": "List of features to be placed in sequence. The output position of the previous feature is used as the input position to the next.",
+        "isRequired": true
+      }
+    ]
+  }
+}

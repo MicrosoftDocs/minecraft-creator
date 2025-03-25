@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "CameraAimAssistCategoryDefinition",
+    "description": "CameraAimAssistCategoryDefinition",
+    "fields": [
+      {
+        "id": "name",
+        "title": "name",
+        "description": "Name of the Aim-Assist Category used during lookup.",
+        "dataType": 2
+      },
+      {
+        "id": "priorities",
+        "title": "priorities",
+        "description": "The set of priorities used when determining aim-assist selection.",
+        "dataType": 16
+      }
+    ]
+  }
+}

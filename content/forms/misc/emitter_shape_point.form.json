@@ -1,0 +1,47 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Emitter Shape Point Misc",
+    "description": "Emitter Shape Point Misc",
+    "fields": [
+      {
+        "id": "offset",
+        "title": "offset",
+        "description": "offset",
+        "dataType": 15,
+        "minLength": 3,
+        "maxLength": 3,
+        "subForm": {
+          "title": "Offset",
+          "description": "Offset",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "offset",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "direction",
+        "title": "direction",
+        "description": "direction",
+        "dataType": 15,
+        "minLength": 3,
+        "maxLength": 3,
+        "subForm": {
+          "title": "Direction",
+          "description": "Direction",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "direction",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

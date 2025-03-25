@@ -1,15 +1,18 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Items Documentation - storage_item"
-description: "Describes the storage_item Items"
+title: "Items Documentation - minecraft:storage_item"
+description: "Describes the minecraft:storage_item item component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Items Documentation - storage_item
+# Items Documentation - minecraft:storage_item
 
 Enables an item to store data of the dynamic container associated with it. A dynamic container is a container for storing items that is linked to an item instead of a block or an entity.
+
+> [!Note]
+> While this component can be defined on its own, to be able to interact with the item's storage container the item must have a `minecraft:bundle_interaction` item component defined.
 
 
 ## Storage Item Properties
@@ -17,9 +20,11 @@ Enables an item to store data of the dynamic container associated with it. A dyn
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | allow_nested_storage_items | *not set* | Boolean true/false | Determines whether another Storage Item is allowed inside of this item. Default is true. | Black Bundle: `true` | 
-| allowed_items | *not set* | Array of objects | List of items that are exclusively allowed in this Storage Item. If empty all items are allowed. |  | 
-| banned_items | *not set* | Array of objects | List of items that are not allowed in this Storage Item. | Black Bundle: `["minecraft:shulker_box","minecraft:undyed_shulker_box"]` | 
-| max_slots | *not set* | Integer number | The maximum allowed weight of the sum of all contained items. Maximum is 64. Default is 64. | Black Bundle: `64` | 
+| allowed_items | *not set* | String | List of items that are exclusively allowed in this Storage Item. If empty all items are allowed. |  | 
+| allowed_items (Alternate 1) | *not set* | Keyed set of strings |  |  | 
+| banned_items | *not set* | String | List of items that are not allowed in this Storage Item. | Black Bundle: `["minecraft:shulker_box","minecraft:undyed_shulker_box"]` | 
+| banned_items (Alternate 1) | *not set* | Keyed set of strings |  |  | 
+| max_slots | *not set* | Integer number | The maximum allowed weight of the sum of all contained items. Maximum is 64. Default is 64. Value must be <= 64. | Black Bundle: `64` | 
 | max_weight_limit | *not set* | Decimal number |  | Black Bundle: `64` | 
 | weight_in_storage_item | *not set* | Decimal number |  | Black Bundle: `4` | 
 
@@ -29,183 +34,7 @@ Enables an item to store data of the dynamic container associated with it. A dyn
 
 
 ```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Blue Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/blue_bundle.json)
-
-
-```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Brown Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/brown_bundle.json)
-
-
-```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/bundle.json)
-
-
-```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Cyan Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/cyan_bundle.json)
-
-
-```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Gray Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/gray_bundle.json)
-
-
-```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Green Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/green_bundle.json)
-
-
-```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Light Blue Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/light_blue_bundle.json)
-
-
-```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Light Gray Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/light_gray_bundle.json)
-
-
-```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Lime Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/lime_bundle.json)
-
-
-```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Magenta Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/magenta_bundle.json)
-
-
-```json
-{
-  "max_slots": 64,
-  "max_weight_limit": 64,
-  "weight_in_storage_item": 4,
-  "allow_nested_storage_items": true,
-  "banned_items": [
-    "minecraft:shulker_box",
-    "minecraft:undyed_shulker_box"
-  ]
-}
-```
-
-#### [Orange Bundle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/orange_bundle.json)
-
-
-```json
-{
+"minecraft:storage_item": {
   "max_slots": 64,
   "max_weight_limit": 64,
   "weight_in_storage_item": 4,

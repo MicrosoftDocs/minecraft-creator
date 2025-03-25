@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Items Documentation - throwable"
-description: "Describes the throwable Items"
+title: "Items Documentation - minecraft:throwable"
+description: "Describes the minecraft:throwable item component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Items Documentation - throwable
+# Items Documentation - minecraft:throwable
 
 Sets the throwable item component.
 
@@ -29,7 +29,7 @@ Sets the throwable item component.
 
 
 ```json
-{
+"minecraft:throwable": {
   "do_swing_animation": true,
   "launch_power_scale": 1.5,
   "max_launch_power": 1.5
@@ -40,7 +40,7 @@ Sets the throwable item component.
 
 
 ```json
-{
+"minecraft:throwable": {
   "do_swing_animation": true,
   "launch_power_scale": 1,
   "max_draw_duration": 0,

@@ -1,0 +1,29 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:on_ignite",
+    "title": "On Ignite",
+    "description": "Adds a trigger to call when this entity is set on fire.",
+    "fields": [
+      {
+        "id": "event",
+        "title": "Event",
+        "description": "The event to run when the conditions for this trigger are met.",
+        "dataType": 22
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "The list of conditions for this trigger to execute.",
+        "dataType": 20
+      },
+      {
+        "id": "target",
+        "title": "Target",
+        "description": "The target of the event.",
+        "defaultValue": "self",
+        "dataType": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Filter Test",
+    "description": "Filter Test",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "operator",
+        "description": "The comparison to apply with 'value'.",
+        "dataType": 16
+      },
+      {
+        "id": "test",
+        "title": "test",
+        "description": "The name of the test to apply.",
+        "dataType": 2
+      },
+      {
+        "id": "subject",
+        "title": "subject",
+        "description": "The subject of this filter test.",
+        "dataType": 16
+      },
+      {
+        "id": "domain",
+        "title": "domain",
+        "description": "The domain the test should be performed in.",
+        "dataType": 16
+      },
+      {
+        "id": "value",
+        "title": "value",
+        "description": "The value being compared with the test.",
+        "dataType": 16
+      }
+    ]
+  }
+}

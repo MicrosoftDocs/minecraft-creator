@@ -1,0 +1,45 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct SharedTypes V1 20 60 BlockCulling Contents Rule Client Client Block",
+    "description": "Struct SharedTypes V1 20 60 BlockCulling Contents Rule Client Client Block",
+    "fields": [
+      {
+        "id": "geometry_part",
+        "title": "geometry_part",
+        "description": "geometry_part",
+        "dataType": 16,
+        "subForm": {
+          "title": "Geometry Part",
+          "description": "Geometry Part",
+          "fields": [
+            {
+              "id": "bone",
+              "title": "bone",
+              "description": "bone",
+              "dataType": 2
+            },
+            {
+              "id": "cube",
+              "title": "cube",
+              "description": "cube",
+              "dataType": 0
+            },
+            {
+              "id": "face",
+              "title": "enum SharedTypes_Facing",
+              "description": "enum SharedTypes_Facing",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "direction",
+        "title": "enum SharedTypes_Facing",
+        "description": "enum SharedTypes_Facing",
+        "dataType": 2
+      }
+    ]
+  }
+}

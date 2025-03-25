@@ -1,0 +1,1332 @@
+{
+  "title": "Ageable",
+  "description": "Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feed_items.",
+  "fields": [
+    {
+      "id": "duration",
+      "description": "Length of time before an entity grows up (-1 to always stay a baby)",
+      "dataType": 3
+    },
+    {
+      "id": "feedItems",
+      "desciption": "List of items that can be fed to an entity to age them up",
+      "dataType": 17
+    },
+    {
+      "id": "drop_items",
+      "desciption": "List of items that are dropped when an entity grows up",
+      "dataType": 17
+    },
+    {
+      "id": "grow_up",
+      "title": "Grow up event",
+      "desciption": "Event to fire when an entity grows up"
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:ageable",
+    "title": "Ageable",
+    "description": "Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feedItems.",
+    "fields": [
+      {
+        "id": "drop_items",
+        "title": "Drop Items",
+        "description": "List of items that the entity drops when it grows up.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+              "content": [
+                "turtle_shell_piece"
+              ]
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+              "content": [
+                "turtle_shell_piece"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Amount of time before the entity grows up, -1 for always a baby.",
+        "defaultValue": 1200,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+              "content": 1200
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_baby/minecraft:ageable/",
+              "content": 1200
+            }
+          ],
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_baby/minecraft:ageable/",
+              "content": 2400
+            }
+          ]
+        }
+      },
+      {
+        "id": "feed_items",
+        "title": "Feed Items",
+        "description": "List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+              "content": "spider_eye"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_baby/minecraft:ageable/",
+              "content": "tropical_fish_bucket"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/bee_baby/minecraft:ageable/",
+              "content": [
+                "minecraft:poppy",
+                "minecraft:blue_orchid",
+                "minecraft:allium",
+                "minecraft:azure_bluet",
+                "minecraft:red_tulip",
+                "minecraft:orange_tulip",
+                "minecraft:white_tulip",
+                "minecraft:pink_tulip",
+                "minecraft:oxeye_daisy",
+                "minecraft:cornflower",
+                "minecraft:lily_of_the_valley",
+                "minecraft:dandelion",
+                "minecraft:wither_rose",
+                "minecraft:sunflower",
+                "minecraft:lilac",
+                "minecraft:rose_bush",
+                "minecraft:peony",
+                "minecraft:flowering_azalea",
+                "minecraft:azalea_leaves_flowered",
+                "minecraft:mangrove_propagule",
+                "minecraft:pitcher_plant",
+                "minecraft:torchflower",
+                "minecraft:cherry_leaves",
+                "minecraft:pink_petals",
+                "minecraft:wildflowers",
+                "minecraft:cactus_flower"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:camel_baby/minecraft:ageable/",
+              "content": "cactus"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_baby/minecraft:ageable/",
+              "content": [
+                "fish",
+                "salmon"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_baby/minecraft:ageable/",
+              "content": [
+                "wheat_seeds",
+                "beetroot_seeds",
+                "melon_seeds",
+                "pumpkin_seeds",
+                "pitcher_pod",
+                "torchflower_seeds"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:ageable/",
+              "content": "wheat"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dolphin_baby/minecraft:ageable/",
+              "content": [
+                "fish",
+                "salmon"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/donkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:donkey_baby/minecraft:ageable/",
+              "content": [
+                {
+                  "item": "wheat",
+                  "growth": 0.016667
+                },
+                {
+                  "item": "sugar",
+                  "growth": 0.025
+                },
+                {
+                  "item": "hay_block",
+                  "growth": 0.15
+                },
+                {
+                  "item": "apple",
+                  "growth": 0.05
+                },
+                {
+                  "item": "golden_carrot",
+                  "growth": 0.05
+                },
+                {
+                  "item": "golden_apple",
+                  "growth": 0.2
+                },
+                {
+                  "item": "appleEnchanted",
+                  "growth": 0.2
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_baby/minecraft:ageable/",
+              "content": [
+                "sweet_berries",
+                "glow_berries"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/goat_baby/minecraft:ageable/",
+              "content": "wheat"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:ageable/",
+              "content": [
+                "crimson_fungus"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:ageable/",
+              "content": [
+                {
+                  "item": "wheat",
+                  "growth": 0.016667
+                },
+                {
+                  "item": "sugar",
+                  "growth": 0.025
+                },
+                {
+                  "item": "hay_block",
+                  "growth": 0.15
+                },
+                {
+                  "item": "apple",
+                  "growth": 0.05
+                },
+                {
+                  "item": "golden_carrot",
+                  "growth": 0.05
+                },
+                {
+                  "item": "golden_apple",
+                  "growth": 0.2
+                },
+                {
+                  "item": "appleEnchanted",
+                  "growth": 0.2
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:ageable/",
+              "content": [
+                {
+                  "item": "wheat",
+                  "growth": 0.1
+                },
+                {
+                  "item": "hay_block",
+                  "growth": 0.9
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_baby/minecraft:ageable/",
+              "content": "bamboo"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_baby/minecraft:ageable/",
+              "content": [
+                "carrot",
+                "beetroot",
+                "potato"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/rabbit.json": [
+            {
+              "path": "/minecraft:entity/component_groups/baby/minecraft:ageable/",
+              "content": [
+                "golden_carrot",
+                "carrot",
+                "dandelion"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_baby/minecraft:ageable/",
+              "content": [
+                "torchflower_seeds"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_baby/minecraft:ageable/",
+              "content": [
+                "warped_fungus"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/tadpole.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:ageable/",
+              "content": [
+                "slime_ball"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:ageable/",
+              "content": [
+                {
+                  "item": "wheat",
+                  "growth": 0.1
+                },
+                {
+                  "item": "hay_block",
+                  "growth": 0.9
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+              "content": [
+                "seagrass"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wolf.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wolf_baby/minecraft:ageable/",
+              "content": [
+                "chicken",
+                "cooked_chicken",
+                "beef",
+                "cooked_beef",
+                "muttonRaw",
+                "muttonCooked",
+                "porkchop",
+                "cooked_porkchop",
+                "rabbit",
+                "cooked_rabbit",
+                "rotten_flesh"
+              ]
+            }
+          ],
+          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sheep_baby/minecraft:ageable/",
+              "content": "melon_slice"
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+              "content": [
+                "seagrass"
+              ]
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sheep_baby/minecraft:ageable/",
+              "content": "melon_slice"
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_baby/minecraft:ageable/",
+              "content": [
+                "wheat_seeds",
+                "beetroot_seeds",
+                "melon_seeds",
+                "pumpkin_seeds",
+                "pitcher_pod",
+                "torchflower_seeds"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "grow_up",
+        "title": "Grow Up",
+        "description": "Event to run when this entity grows up.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+              "content": {
+                "event": "minecraft:ageable_grow_up",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_baby/minecraft:ageable/",
+              "content": {
+                "event": "minecraft:ageable_grow_up",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dolphin_baby/minecraft:ageable/",
+              "content": {
+                "event": "ageable_grow_up",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/rabbit.json": [
+            {
+              "path": "/minecraft:entity/component_groups/baby/minecraft:ageable/",
+              "content": {
+                "event": "grow_up",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/tadpole.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:ageable/",
+              "content": {
+                "event": "ageable_grow_up",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "interact_filters",
+        "title": "Interact Filters",
+        "description": "List of conditions to meet so that the entity can be fed.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+              "content": {
+                "test": "enum_property",
+                "domain": "minecraft:armadillo_state",
+                "value": "unrolled"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "transform_to_item",
+        "title": "Transform To Item",
+        "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_baby/minecraft:ageable/",
+              "content": "water_bucket:0"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "interact_filters": {
+              "test": "enum_property",
+              "domain": "minecraft:armadillo_state",
+              "value": "unrolled"
+            },
+            "feed_items": "spider_eye",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/component_groups/axolotl_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "tropical_fish_bucket",
+            "transform_to_item": "water_bucket:0",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/component_groups/bee_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "minecraft:poppy",
+              "minecraft:blue_orchid",
+              "minecraft:allium",
+              "minecraft:azure_bluet",
+              "minecraft:red_tulip",
+              "minecraft:orange_tulip",
+              "minecraft:white_tulip",
+              "minecraft:pink_tulip",
+              "minecraft:oxeye_daisy",
+              "minecraft:cornflower",
+              "minecraft:lily_of_the_valley",
+              "minecraft:dandelion",
+              "minecraft:wither_rose",
+              "minecraft:sunflower",
+              "minecraft:lilac",
+              "minecraft:rose_bush",
+              "minecraft:peony",
+              "minecraft:flowering_azalea",
+              "minecraft:azalea_leaves_flowered",
+              "minecraft:mangrove_propagule",
+              "minecraft:pitcher_plant",
+              "minecraft:torchflower",
+              "minecraft:cherry_leaves",
+              "minecraft:pink_petals",
+              "minecraft:wildflowers",
+              "minecraft:cactus_flower"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:camel_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "cactus",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cat_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "fish",
+              "salmon"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:chicken_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "wheat",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/dolphin_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "fish",
+              "salmon"
+            ],
+            "grow_up": {
+              "event": "ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:donkey_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              {
+                "item": "wheat",
+                "growth": 0.016667
+              },
+              {
+                "item": "sugar",
+                "growth": 0.025
+              },
+              {
+                "item": "hay_block",
+                "growth": 0.15
+              },
+              {
+                "item": "apple",
+                "growth": 0.05
+              },
+              {
+                "item": "golden_carrot",
+                "growth": 0.05
+              },
+              {
+                "item": "golden_apple",
+                "growth": 0.2
+              },
+              {
+                "item": "appleEnchanted",
+                "growth": 0.2
+              }
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:fox_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "sweet_berries",
+              "glow_berries"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/goat_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "wheat",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "crimson_fungus"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              {
+                "item": "wheat",
+                "growth": 0.016667
+              },
+              {
+                "item": "sugar",
+                "growth": 0.025
+              },
+              {
+                "item": "hay_block",
+                "growth": 0.15
+              },
+              {
+                "item": "apple",
+                "growth": 0.05
+              },
+              {
+                "item": "golden_carrot",
+                "growth": 0.05
+              },
+              {
+                "item": "golden_apple",
+                "growth": 0.2
+              },
+              {
+                "item": "appleEnchanted",
+                "growth": 0.2
+              }
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              {
+                "item": "wheat",
+                "growth": 0.1
+              },
+              {
+                "item": "hay_block",
+                "growth": 0.9
+              }
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mooshroom.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "wheat",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:mule_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              {
+                "item": "wheat",
+                "growth": 0.016667
+              },
+              {
+                "item": "sugar",
+                "growth": 0.025
+              },
+              {
+                "item": "hay_block",
+                "growth": 0.15
+              },
+              {
+                "item": "apple",
+                "growth": 0.05
+              },
+              {
+                "item": "golden_carrot",
+                "growth": 0.05
+              },
+              {
+                "item": "golden_apple",
+                "growth": 0.2
+              },
+              {
+                "item": "appleEnchanted",
+                "growth": 0.2
+              }
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ocelot_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "fish",
+              "salmon"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:panda_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "bamboo",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "carrot",
+              "beetroot",
+              "potato"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/component_groups/baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "golden_carrot",
+              "carrot",
+              "dandelion"
+            ],
+            "grow_up": {
+              "event": "grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "wheat",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:skeleton_horse_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/component_groups/sniffer_baby/minecraft:ageable/",
+          "content": {
+            "duration": 2400,
+            "feed_items": [
+              "torchflower_seeds"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:strider_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "warped_fungus"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tadpole.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "slime_ball"
+            ],
+            "grow_up": {
+              "event": "ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              {
+                "item": "wheat",
+                "growth": 0.1
+              },
+              {
+                "item": "hay_block",
+                "growth": 0.9
+              }
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/turtle.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "seagrass"
+            ],
+            "drop_items": [
+              "turtle_shell_piece"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/component_groups/baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "chicken",
+              "cooked_chicken",
+              "beef",
+              "cooked_beef",
+              "muttonRaw",
+              "muttonCooked",
+              "porkchop",
+              "cooked_porkchop",
+              "rabbit",
+              "cooked_rabbit",
+              "rotten_flesh"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "melon_slice",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              {
+                "item": "wheat",
+                "growth": 0.1
+              },
+              {
+                "item": "hay_block",
+                "growth": 0.9
+              }
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "seagrass"
+            ],
+            "drop_items": [
+              "turtle_shell_piece"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "melon_slice",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              {
+                "item": "wheat",
+                "growth": 0.1
+              },
+              {
+                "item": "hay_block",
+                "growth": 0.9
+              }
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "seagrass"
+            ],
+            "drop_items": [
+              "turtle_shell_piece"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "melon_slice",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/behavior_pack_sample/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": "wheat",
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_baby/minecraft:ageable/",
+          "content": {
+            "duration": 1200,
+            "feed_items": [
+              "fish",
+              "salmon"
+            ],
+            "grow_up": {
+              "event": "minecraft:ageable_grow_up",
+              "target": "self"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

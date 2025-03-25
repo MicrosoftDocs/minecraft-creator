@@ -1,0 +1,281 @@
+{
+  "title": "Geometry",
+  "tags": [
+    "visual"
+  ],
+  "fields": [
+    {
+      "id": "bone_visibility",
+      "title": "Bone Visibility",
+      "dataType": 27,
+      "hideSamples": true
+    }
+  ],
+  "scalarFieldUpgradeName": "identifier",
+  "generated_doNotEdit": {
+    "id": "minecraft:geometry",
+    "title": "Geometry",
+    "description": "The description identifier of the geometry to use to render this block. This identifier must either match an existing geometry identifier in any of the loaded resource packs or be one of the currently supported Vanilla identifiers: \"minecraft:geometry.full_block\" or \"minecraft:geometry.cross\".",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "dataType": 2,
+        "samples": {
+          "/samples/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:geometry/",
+              "content": "geometry.sushi"
+            }
+          ],
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:geometry/",
+              "content": "geometry.bubble_fish"
+            }
+          ],
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:geometry/",
+              "content": "minecraft:geometry.full_block"
+            }
+          ],
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/green_bubble_fish.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:geometry/",
+              "content": "geometry.bubble_fish"
+            }
+          ],
+          "/samples/starter_blocks/behavior_packs/starter_blocks/blocks/simple_cube.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:geometry/",
+              "content": "minecraft:geometry.full_block"
+            }
+          ]
+        }
+      },
+      {
+        "id": "culling",
+        "title": "Culling",
+        "dataType": 2,
+        "samples": {
+          "/samples/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:geometry/",
+              "content": "test:sushi_cull"
+            }
+          ]
+        }
+      },
+      {
+        "id": "bone_visibility",
+        "title": "Bone Visibility",
+        "dataType": 16,
+        "subForm": {
+          "id": "bone_visibility",
+          "title": "Bone_visibility",
+          "fields": [
+            {
+              "id": "bb_main",
+              "title": "Bb_main",
+              "dataType": 2,
+              "samples": {
+                "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
+                  {
+                    "path": "bb_main",
+                    "content": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": "fish",
+              "title": "Fish",
+              "dataType": 2,
+              "samples": {
+                "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
+                  {
+                    "path": "fish",
+                    "content": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:geometry/",
+              "content": {
+                "bb_main": true,
+                "fish": true
+              }
+            }
+          ],
+          "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/green_bubble_fish.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:geometry/",
+              "content": {
+                "bb_main": true,
+                "fish": true
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "scalarField": {
+      "id": "string",
+      "title": "String",
+      "dataType": 2
+    },
+    "samples": {
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.mikeamm_gwve_fabricator"
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.mikeamm_gwve_gray_ore"
+        }
+      ],
+      "/samples/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "geometry.sushi",
+            "culling": "test:sushi_cull"
+          }
+        }
+      ],
+      "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "geometry.bubble_fish",
+            "bone_visibility": {
+              "bb_main": true,
+              "fish": true
+            }
+          }
+        }
+      ],
+      "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/california_roll.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.sushi"
+        }
+      ],
+      "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/die.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "minecraft:geometry.full_block"
+          }
+        }
+      ],
+      "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/green_bubble_fish.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "geometry.bubble_fish",
+            "bone_visibility": {
+              "bb_main": true,
+              "fish": true
+            }
+          }
+        }
+      ],
+      "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/orange_bubble_fish.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "geometry.bubble_fish",
+            "bone_visibility": {
+              "bb_main": true,
+              "fish": true
+            }
+          }
+        }
+      ],
+      "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/salmon_roll.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.sushi"
+        }
+      ],
+      "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/tuna_roll.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.sushi"
+        }
+      ],
+      "/samples/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.orange_ore"
+        }
+      ],
+      "/samples/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.apple_block"
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.frond_top"
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_corner.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.palm_leave_corner"
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_tip.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.palm_leave_tip"
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.palm_leave"
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_tree_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.palm_tree_top"
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_trunk.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.palm_trunk"
+        }
+      ],
+      "/samples/starter_blocks/behavior_packs/starter_blocks/blocks/crate.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.crate"
+        }
+      ],
+      "/samples/starter_blocks/behavior_packs/starter_blocks/blocks/simple_cube.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": {
+            "identifier": "minecraft:geometry.full_block"
+          }
+        }
+      ]
+    }
+  }
+}

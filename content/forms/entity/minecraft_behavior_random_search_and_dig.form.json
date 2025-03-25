@@ -1,0 +1,358 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.random_search_and_dig",
+    "title": "Random Search And Dig Behavior",
+    "description": "Allows this entity to locate a random target block that it can path find to. Once found, the entity will move towards it and dig up an item. [Default target block types: Dirt, Grass, Podzol, DirtWithRoots, MossBlock, Mud, MuddyMangroveRoots].",
+    "fields": [
+      {
+        "id": "cooldown_range",
+        "title": "Cooldown Range",
+        "description": "Goal cooldown range in seconds.",
+        "dataType": 18
+      },
+      {
+        "id": "digging_duration_range",
+        "title": "Digging Duration Range",
+        "description": "Digging duration in seconds.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": [
+                8,
+                10
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "find_valid_position_retries",
+        "title": "Find Valid Position Retries",
+        "description": "Amount of retries to find a valid target position within search range.",
+        "defaultValue": 5,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the entity to considers it has reached it's target position.",
+        "defaultValue": 1.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "item_table",
+        "title": "Item Table",
+        "description": "File path relative to the resource pack root for items to spawn list (loot table format).",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": "loot_tables/gameplay/entities/sniffer_seeds.json"
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_digging_start",
+        "title": "On Digging Start",
+        "description": "Event to run when the goal ends searching has begins digging.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": {
+                "event": "on_digging_start",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_fail_during_digging",
+        "title": "On Fail During Digging",
+        "description": "Event to run when the goal failed while in digging state.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": {
+                "event": "on_fail_during_digging",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_fail_during_searching",
+        "title": "On Fail During Searching",
+        "description": "Event to run when the goal failed while in searching state.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": {
+                "event": "on_fail_during_searching",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_item_found",
+        "title": "On Item Found",
+        "description": "Event to run when the goal find a item.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": {
+                "event": "on_item_found",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_searching_start",
+        "title": "On Searching Start",
+        "description": "Event to run when the goal starts searching.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": {
+                "event": "on_searching_start",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_success",
+        "title": "On Success",
+        "description": "Event to run when searching and digging has ended.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": {
+                "event": "on_search_and_digging_success",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_range_xz",
+        "title": "Search Range Xz",
+        "description": "Width and length of the volume around the entity used to find a valid target position",
+        "defaultValue": 10,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_range_y",
+        "title": "Search Range Y",
+        "description": "Height of the volume around the entity used to find a valid target position",
+        "defaultValue": 7,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "spawn_item_after_seconds",
+        "title": "Spawn Item After Seconds",
+        "description": "Digging duration before spawning item in seconds.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "spawn_item_pos_offset",
+        "title": "Spawn Item Pos Offset",
+        "description": "Distance to offset the item's spawn location in the direction the mob is facing.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": 2.25
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Searching movement speed multiplier.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": 1.25
+            }
+          ]
+        }
+      },
+      {
+        "id": "target_blocks",
+        "title": "Target Blocks",
+        "description": "List of target block types the goal will look to dig on. Overrides the default list.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": [
+                "minecraft:dirt",
+                "minecraft:coarse_dirt",
+                "minecraft:grass",
+                "minecraft:podzol",
+                "minecraft:dirt_with_roots",
+                "minecraft:moss_block",
+                "minecraft:pale_moss_block",
+                "minecraft:mud",
+                "minecraft:muddy_mangrove_roots"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "target_dig_position_offset",
+        "title": "Target Dig Position Offset",
+        "description": "Dig target position offset from the feet position of the mob in their facing direction.",
+        "defaultValue": 2.25,
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+              "content": 5
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/component_groups/sniffer_search_and_dig/minecraft:behavior.random_search_and_dig/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.25,
+            "find_valid_position_retries": 5,
+            "target_blocks": [
+              "minecraft:dirt",
+              "minecraft:coarse_dirt",
+              "minecraft:grass",
+              "minecraft:podzol",
+              "minecraft:dirt_with_roots",
+              "minecraft:moss_block",
+              "minecraft:pale_moss_block",
+              "minecraft:mud",
+              "minecraft:muddy_mangrove_roots"
+            ],
+            "goal_radius": 2,
+            "search_range_xz": 20,
+            "search_range_y": 3,
+            "cooldown_range": 0,
+            "digging_duration_range": [
+              8,
+              10
+            ],
+            "item_table": "loot_tables/gameplay/entities/sniffer_seeds.json",
+            "spawn_item_after_seconds": 6,
+            "spawn_item_pos_offset": 2.25,
+            "on_searching_start": {
+              "event": "on_searching_start",
+              "target": "self"
+            },
+            "on_fail_during_searching": {
+              "event": "on_fail_during_searching",
+              "target": "self"
+            },
+            "on_digging_start": {
+              "event": "on_digging_start",
+              "target": "self"
+            },
+            "on_item_found": {
+              "event": "on_item_found",
+              "target": "self"
+            },
+            "on_fail_during_digging": {
+              "event": "on_fail_during_digging",
+              "target": "self"
+            },
+            "on_success": {
+              "event": "on_search_and_digging_success",
+              "target": "self"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

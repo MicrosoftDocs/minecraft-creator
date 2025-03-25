@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructure ProcessorRule TagMatch",
+    "description": "Predicate that evaluates to true if the block at the specified location constains the tag.",
+    "fields": [
+      {
+        "id": "tag",
+        "title": "tag",
+        "description": "The tag to be matched",
+        "dataType": 2
+      },
+      {
+        "id": "predicate_type",
+        "title": "PositionalBlockRuleAxis",
+        "description": "PositionalBlockRuleAxis",
+        "dataType": 2
+      }
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.summon_entity"
-description: "Describes the behavior.summon_entity AI Goals"
+title: "Entity Documentation - minecraft:behavior.summon_entity"
+description: "Describes the minecraft:behavior.summon_entity ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.summon_entity
+# Entity Documentation - minecraft:behavior.summon_entity
 
 Allows the mob to attack the player by summoning other entities.
 
@@ -53,10 +53,10 @@ List of steps for the spell. Each step has the following parameters:
 | num_entities_spawned | 1 | Integer number | Number of entities that will be spawned in this step |  | 
 | shape | line | String | The base shape of this step. Valid values are circle and line |  | 
 | size | 1 | Decimal number | The base size of the entity |  | 
-| sound_event | *not set* | String | The sound event to play for this step |  | 
+| sound_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The sound event to play for this step |  | 
 | summon_cap | 0 | Integer number | Maximum number of summoned entities at any given time |  | 
 | summon_cap_radius | 0 | Decimal number |  |  | 
-| summon_event | *not set* | String | Event to invoke on each summoned entity on spawn |  | 
+| summon_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to invoke on each summoned entity on spawn |  | 
 | target | self | String | The target of the spell. This is where the spell will start (line will start here, circle will be centered here) |  | 
 
 ## Samples
@@ -65,7 +65,7 @@ List of steps for the spell. Each step has the following parameters:
 
 
 ```json
-{
+"minecraft:behavior.summon_entity": {
   "priority": 2,
   "summon_choices": [
     {

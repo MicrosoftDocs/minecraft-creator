@@ -1,0 +1,470 @@
+{
+  "description": "A component that does damage to entities that get within range.",
+  "fields": [
+    {
+      "id": "cause",
+      "description": "The type of damage that is applied to entities that enter the damage range. A list of available damage sources can be found at [Entity Damage Sources located in the Vanilla Listings Documentation](../../VanillaListingsReference/AddonEntityDamageSources.md).",
+      "dataType": 8,
+      "lookupId": "damageCause"
+    },
+    {
+      "id": "entity_filter",
+      "description": "The set of entities that are valid to apply the damage to when within range.",
+      "dataType": 20
+    },
+    {
+      "id": "damage_per_tick",
+      "description": "How much damage per tick is applied to entities that enter the damage range.",
+      "dataType": 0
+    },
+    {
+      "id": "damage_range",
+      "description": "How close a hostile entity must be to have the damage applied.",
+      "dataType": 0.2
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:area_attack",
+    "title": "Area Attack",
+    "description": "A component that does damage to entities that get within range.",
+    "fields": [
+      {
+        "id": "cause",
+        "title": "Cause",
+        "description": "The type of damage that is applied to entities that enter the damage range.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/magma_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
+              "content": "entity_attack"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
+              "content": "entity_attack"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:area_attack/",
+              "content": "contact"
+            }
+          ]
+        }
+      },
+      {
+        "id": "damage_cooldown",
+        "title": "Damage Cooldown",
+        "description": "Attack cooldown (in seconds) for how often this entity can attack a target.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/magma_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
+              "content": 0.5
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "damage_per_tick",
+        "title": "Damage Per Tick",
+        "description": "How much damage per tick is applied to entities that enter the damage range.",
+        "defaultValue": 2,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/magma_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
+              "content": 6
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
+              "content": 4
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_small/minecraft:area_attack/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:area_attack/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/slime.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
+              "content": 4
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "damage_range",
+        "title": "Damage Range",
+        "description": "How close a hostile entity must be to have the damage applied.",
+        "defaultValue": 0.2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/magma_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
+              "content": 0.15
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
+              "content": 0.15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:area_attack/",
+              "content": 0.2
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity_filter",
+        "title": "Entity Filter",
+        "description": "The set of entities that are valid to apply the damage to when within range.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/magma_cube.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
+              "content": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  }
+                ]
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
+              "content": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  }
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:area_attack/",
+              "content": {
+                "any_of": [
+                  {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "mob"
+                      },
+                      {
+                        "any_of": [
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "axolotl"
+                          },
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "operator": "not",
+                            "value": "aquatic"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "operator": "not",
+                        "value": "instabuild"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/slime.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
+              "content": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "snowgolem"
+                  }
+                ]
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
+              "content": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "snowgolem"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "play_attack_sound",
+        "title": "Play Attack Sound",
+        "description": "If the entity should play their attack sound when attacking a target.",
+        "defaultValue": true,
+        "dataType": 1
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
+          "content": {
+            "damage_range": 0.15,
+            "damage_per_tick": 6,
+            "damage_cooldown": 0.5,
+            "cause": "entity_attack",
+            "entity_filter": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
+          "content": {
+            "damage_range": 0.15,
+            "damage_per_tick": 4,
+            "damage_cooldown": 0.5,
+            "cause": "entity_attack",
+            "entity_filter": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:slime_small/minecraft:area_attack/",
+          "content": {
+            "damage_range": 0.15,
+            "damage_per_tick": 3,
+            "damage_cooldown": 0.5,
+            "cause": "entity_attack",
+            "entity_filter": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pufferfish.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:area_attack/",
+          "content": {
+            "damage_range": 0.2,
+            "damage_per_tick": 2,
+            "damage_cooldown": 0.5,
+            "cause": "contact",
+            "entity_filter": {
+              "any_of": [
+                {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "mob"
+                    },
+                    {
+                      "any_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "axolotl"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "operator": "not",
+                          "value": "aquatic"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_ability",
+                      "subject": "other",
+                      "operator": "not",
+                      "value": "instabuild"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/slime.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:slime_large/minecraft:area_attack/",
+          "content": {
+            "damage_range": 0.15,
+            "damage_per_tick": 4,
+            "damage_cooldown": 0.5,
+            "cause": "entity_attack",
+            "entity_filter": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "snowgolem"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:slime_medium/minecraft:area_attack/",
+          "content": {
+            "damage_range": 0.15,
+            "damage_per_tick": 2,
+            "damage_cooldown": 0.5,
+            "cause": "entity_attack",
+            "entity_filter": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "snowgolem"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

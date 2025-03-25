@@ -1,0 +1,110 @@
+{
+  "fields": [],
+  "restrictions": [
+    {
+      "id": "minecraft:villager",
+      "type": "entity_type"
+    }
+  ],
+  "note": "Requires a flower item to be held by the entity.",
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.offer_flower",
+    "title": "Offer Flower Behavior",
+    "description": "Allows the mob to offer a flower to another mob with the minecraft:take_flower behavior.",
+    "fields": [
+      {
+        "id": "chance_to_start",
+        "title": "Chance To Start",
+        "description": "Percent chance that the mob will start this goal from 0.0 to 1.0 (where 1.0 = 100%).",
+        "defaultValue": 0,
+        "dataType": 3
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "Conditions that need to be met for the behavior to start.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/iron_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.offer_flower/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "is_daytime",
+                    "value": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_head_rotation_y",
+        "title": "Max Head Rotation Y",
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
+        "defaultValue": 30,
+        "dataType": 3
+      },
+      {
+        "id": "max_offer_flower_duration",
+        "title": "Max Offer Flower Duration",
+        "description": "The max amount of time (in seconds) that the mob will offer the flower for before exiting the Goal.",
+        "defaultValue": 20,
+        "dataType": 3
+      },
+      {
+        "id": "max_rotation_x",
+        "title": "Max Rotation X",
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
+        "defaultValue": 30,
+        "dataType": 3
+      },
+      {
+        "id": "search_area",
+        "title": "Search Area",
+        "description": "The dimensions of the AABB used to search for a potential mob to offer flower to.",
+        "defaultValue": [
+          6,
+          2,
+          6
+        ],
+        "dataType": 11
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/iron_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.offer_flower/",
+              "content": 5
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/iron_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.offer_flower/",
+          "content": {
+            "priority": 5,
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_daytime",
+                  "value": true
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

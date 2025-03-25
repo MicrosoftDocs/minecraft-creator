@@ -1,0 +1,15 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructureSet Description",
+    "description": "JigsawStructureSet Description",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "identifier",
+        "description": "Identifier of the Jigsaw Structure Set.",
+        "dataType": 2
+      }
+    ]
+  }
+}

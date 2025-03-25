@@ -1,0 +1,35 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:insomnia",
+    "title": "Insomnia",
+    "description": "Adds a timer since last rested to see if phantoms should spawn.",
+    "fields": [
+      {
+        "id": "days_until_insomnia",
+        "title": "Days Until Insomnia",
+        "description": "Number of days the mob has to stay up until the insomnia effect begins.",
+        "defaultValue": 3,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:insomnia/",
+              "content": 3
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:insomnia/",
+          "content": {
+            "days_until_insomnia": 3
+          }
+        }
+      ]
+    }
+  }
+}

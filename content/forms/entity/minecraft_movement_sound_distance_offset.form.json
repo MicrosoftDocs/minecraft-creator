@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:movement_sound_distance_offset",
+    "title": "Movement Sound Distance Offset",
+    "description": "Sets the offset used to determine the next step distance for playing a movement sound.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The higher the number, the less often the movement sound will be played.",
+        "defaultValue": 1,
+        "dataType": 3
+      }
+    ]
+  }
+}

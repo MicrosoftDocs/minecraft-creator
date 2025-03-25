@@ -1,0 +1,48 @@
+{
+  "id": "minecraft:beards_and_shavers",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "isInternal": true,
+  "generated_doNotEdit": {
+    "id": "minecraft:beards_and_shavers",
+    "title": "Beards And Shavers",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 17,
+        "id": "bounding_box_min",
+        "title": "Bounding Box Min",
+        "description": "Dimensions of the Bounding Box",
+        "isRequired": true
+      },
+      {
+        "dataType": 17,
+        "id": "bounding_box_max",
+        "title": "Bounding Box Max",
+        "description": "Dimensions of the Bounding Box",
+        "isRequired": true
+      }
+    ]
+  }
+}

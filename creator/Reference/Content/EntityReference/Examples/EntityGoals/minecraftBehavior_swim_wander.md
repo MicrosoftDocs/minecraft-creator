@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.swim_wander"
-description: "Describes the behavior.swim_wander AI Goals"
+title: "Entity Documentation - minecraft:behavior.swim_wander"
+description: "Describes the minecraft:behavior.swim_wander ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.swim_wander
+# Entity Documentation - minecraft:behavior.swim_wander
 
 Allows the entity to wander around while swimming, when not path-finding.
 
@@ -28,7 +28,7 @@ Allows the entity to wander around while swimming, when not path-finding.
 
 
 ```json
-{
+"minecraft:behavior.swim_wander": {
   "priority": 4,
   "interval": 0.1,
   "look_ahead": 2,
@@ -41,7 +41,7 @@ Allows the entity to wander around while swimming, when not path-finding.
 
 
 ```json
-{
+"minecraft:behavior.swim_wander": {
   "priority": 5,
   "interval": 1,
   "look_ahead": 2,
@@ -54,24 +54,11 @@ Allows the entity to wander around while swimming, when not path-finding.
 
 
 ```json
-{
+"minecraft:behavior.swim_wander": {
   "priority": 4,
   "interval": 0.0166,
   "look_ahead": 5,
   "speed_multiplier": 0.014,
-  "wander_time": 5
-}
-```
-
-#### [Tropicalfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tropicalfish.json)
-
-
-```json
-{
-  "priority": 4,
-  "interval": 0.1,
-  "look_ahead": 2,
-  "speed_multiplier": 1,
   "wander_time": 5
 }
 ```

@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "TradeTier",
+    "description": "TradeTier",
+    "fields": [
+      {
+        "id": "groups",
+        "title": "groups",
+        "description": "groups",
+        "dataType": 15
+      },
+      {
+        "id": "total_exp_required",
+        "title": "total_exp_required",
+        "description": "total_exp_required",
+        "dataType": 0
+      }
+    ]
+  }
+}

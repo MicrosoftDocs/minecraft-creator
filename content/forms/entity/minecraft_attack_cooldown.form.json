@@ -1,0 +1,38 @@
+{
+  "description": "Adds a cooldown to an entity. The intention of this cooldown is to be used to prevent the entity from attempting to acquire new attack targets.",
+  "fields": [
+    {
+      "id": "attack_cooldown_complete_event",
+      "description": "Event to be run when the cooldown is complete.",
+      "dataType": 8,
+      "lookupId": "entityTypeEvents"
+    },
+    {
+      "id": "attack_cooldown_time",
+      "description": "Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max).",
+      "dataType": 19,
+      "minValue": 0,
+      "maxValue": 1
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:attack_cooldown",
+    "title": "Attack Cooldown",
+    "description": "Adds a cooldown to a mob. The intention of this cooldown is to be used to prevent the mob from attempting to aquire new attack targets.",
+    "fields": [
+      {
+        "id": "attack_cooldown_complete_event",
+        "title": "Attack Cooldown Complete Event",
+        "description": "Event to be run when the cooldown is complete.",
+        "dataType": 22
+      },
+      {
+        "id": "attack_cooldown_time",
+        "title": "Attack Cooldown Time",
+        "description": "Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max).",
+        "dataType": 18
+      }
+    ],
+    "samples": {}
+  }
+}

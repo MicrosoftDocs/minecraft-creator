@@ -1,0 +1,15 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructureMetadataRegistry",
+    "description": "JigsawStructureMetadataRegistry",
+    "fields": [
+      {
+        "id": "metadata",
+        "title": "metadata",
+        "description": "The registry associating structure locations with generated Jigsaw structure metadata.",
+        "dataType": 16
+      }
+    ]
+  }
+}

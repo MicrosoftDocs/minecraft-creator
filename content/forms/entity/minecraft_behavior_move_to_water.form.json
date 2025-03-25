@@ -1,0 +1,163 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.move_to_water",
+    "title": "Move To Water Behavior",
+    "description": "Allows the mob to move back into water when on land.",
+    "fields": [
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
+        "defaultValue": 0.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_to_water/",
+              "content": 0.1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.move_to_water/",
+              "content": 1.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_count",
+        "title": "Search Count",
+        "description": "The number of blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick",
+        "defaultValue": 10,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_to_water/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "description": "Height in blocks the mob will look for water to move towards",
+        "defaultValue": 1,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_to_water/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_to_water/",
+              "content": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "The distance in blocks it will look for water to move towards",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_to_water/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_to_water/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.move_to_water/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "defaultValue": 1,
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_to_water/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_to_water/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.move_to_water/",
+              "content": 3
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.move_to_water/",
+          "content": {
+            "priority": 6,
+            "search_range": 16,
+            "search_height": 5,
+            "search_count": 1,
+            "goal_radius": 0.1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.move_to_water/",
+          "content": {
+            "priority": 1,
+            "search_range": 15,
+            "search_height": 5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/component_groups/pregnant/minecraft:behavior.move_to_water/",
+          "content": {
+            "priority": 3,
+            "search_range": 20,
+            "search_height": 5,
+            "goal_radius": 1.5
+          }
+        }
+      ]
+    }
+  }
+}

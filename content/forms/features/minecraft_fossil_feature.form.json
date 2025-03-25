@@ -1,0 +1,57 @@
+{
+  "id": "minecraft:fossil_feature",
+  "description": "Generates a skeletal structure composed of bone blocks and parametric ore blocks. Succeeds if the fossil is placed. Fails if the fossil is not placed because it overlaps with another structure or because its bounding box has too many corners occupied by air or fluid.",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "samples": {
+    "example": [
+      {
+        "path": "Fossil composed of bone blocks and coal ore blocks.",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:fossil_feature": {
+            "description": {
+              "identifier": "example:fossil_feature"
+            },
+            "ore_block": "minecraft:coal_ore",
+            "max_empty_corners": 4
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:fossil_feature",
+    "title": "Fossil Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 0,
+        "id": "max_empty_corners",
+        "title": "Max Empty Corners",
+        "isRequired": true
+      }
+    ]
+  }
+}

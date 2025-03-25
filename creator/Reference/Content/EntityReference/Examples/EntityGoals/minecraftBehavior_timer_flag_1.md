@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.timer_flag_1"
-description: "Describes the behavior.timer_flag_1 AI Goals"
+title: "Entity Documentation - minecraft:behavior.timer_flag_1"
+description: "Describes the minecraft:behavior.timer_flag_1 ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.timer_flag_1
+# Entity Documentation - minecraft:behavior.timer_flag_1
 
 Fires an event when this behavior starts, then waits for a duration before stopping. When stopping due to that timeout or due to being interrupted by another behavior, fires another event. query.timer_flag_1 will return 1.0 on both the client and server when this behavior is running, and 0.0 otherwise.
 
@@ -19,8 +19,8 @@ Fires an event when this behavior starts, then waits for a duration before stopp
 | control_flags | *not set* | Array of strings |  | Sniffer: `["move","look"]` | 
 | cooldown_range | *not set* | Range of integers | Goal cooldown range in seconds. If specified, the cooldown will have to elapse even before the goal can be selected for the first time. | Armadillo: `2.5`, Sniffer: `[400,500]` | 
 | duration_range | *not set* | Range of integers | Goal duration range in seconds. | Armadillo: `[5,20]`, `1.5`, Bee: `[0.05,0.05]` | 
-| on_end | *not set* | Minecraft Event Trigger | Event(s) to run when the goal end. | Armadillo: `{"event":"minecraft:start_peeking"}`, Bee: `{"event":"minecraft:on_poison_effect_added","target":"self"}`, `{"event":"minecraft:on_wither_effect_added","target":"self"}` | 
-| on_start | *not set* | Minecraft Event Trigger | Event(s) to run when the goal starts. | Armadillo: `{"event":"minecraft:stop_peeking"}`, `{"event":"minecraft:start_unrolling"}` | 
+| on_end | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when the goal end. | Armadillo: `{"event":"minecraft:start_peeking"}`, Bee: `{"event":"minecraft:on_poison_effect_added","target":"self"}`, `{"event":"minecraft:on_wither_effect_added","target":"self"}` | 
+| on_start | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event(s) to run when the goal starts. | Armadillo: `{"event":"minecraft:stop_peeking"}`, `{"event":"minecraft:start_unrolling"}` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Sniffer: `6` | 
 
 ## Samples
@@ -30,7 +30,7 @@ Fires an event when this behavior starts, then waits for a duration before stopp
 At /minecraft:entity/component_groups/minecraft:rolled_up_with_threats/minecraft:behavior.timer_flag_1/: 
 
 ```json
-{
+"minecraft:behavior.timer_flag_1": {
   "priority": 0,
   "cooldown_range": 2.5,
   "duration_range": [
@@ -49,7 +49,7 @@ At /minecraft:entity/component_groups/minecraft:rolled_up_with_threats/minecraft
 At /minecraft:entity/component_groups/minecraft:rolled_up_without_threats/minecraft:behavior.timer_flag_1/: 
 
 ```json
-{
+"minecraft:behavior.timer_flag_1": {
   "priority": 0,
   "cooldown_range": 2.5,
   "duration_range": 1.5,
@@ -64,7 +64,7 @@ At /minecraft:entity/component_groups/minecraft:rolled_up_without_threats/minecr
 At /minecraft:entity/component_groups/add_poison_effect/minecraft:behavior.timer_flag_1/: 
 
 ```json
-{
+"minecraft:behavior.timer_flag_1": {
   "priority": 0,
   "cooldown_range": 0,
   "duration_range": [
@@ -81,7 +81,7 @@ At /minecraft:entity/component_groups/add_poison_effect/minecraft:behavior.timer
 At /minecraft:entity/component_groups/add_wither_effect/minecraft:behavior.timer_flag_1/: 
 
 ```json
-{
+"minecraft:behavior.timer_flag_1": {
   "priority": 0,
   "cooldown_range": 0,
   "duration_range": [
@@ -99,7 +99,7 @@ At /minecraft:entity/component_groups/add_wither_effect/minecraft:behavior.timer
 
 
 ```json
-{
+"minecraft:behavior.timer_flag_1": {
   "priority": 0,
   "cooldown_range": 0,
   "duration_range": [
@@ -117,7 +117,7 @@ At /minecraft:entity/component_groups/add_wither_effect/minecraft:behavior.timer
 
 
 ```json
-{
+"minecraft:behavior.timer_flag_1": {
   "priority": 6,
   "control_flags": [
     "move",

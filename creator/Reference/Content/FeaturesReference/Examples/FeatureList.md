@@ -1,40 +1,42 @@
 ---
-author: iconicnurdle
+author: mammerla
 ms.author: mikeam
-title: Features Documentation - Feature List
-description: "A reference document listing all available features for use in JSON files"
+title: "Features Documentation - Features"
+description: "A reference document describing all current Features"
 ms.service: minecraft-bedrock-edition
-ms.date: 02/20/2025
+ms.date: 02/11/2025 
 ---
 
-# Features Documentation - Feature List
+| Features | Description |
+|:-----|:----------|
+| [minecraft:aggregate_feature](Features/minecraftComponent_aggregate_feature.md)| Places a collection of features in an arbitrary order. |
+| [minecraft:cave_carver_feature](Features/minecraftComponent_cave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. |
+| [minecraft:fossil_feature](Features/minecraftComponent_fossil_feature.md)| Generates a skeletal structure composed of bone blocks and parametric ore blocks. |
+| [minecraft:geode_feature](Features/minecraftComponent_geode_feature.md)| generates a rock formation to simulate a geode. |
+| [minecraft:growing_plant_feature](Features/minecraftComponent_growing_plant_feature.md)| Places a growing plant in the world. |
+| [minecraft:multiface_feature](Features/minecraftComponent_multiface_feature.md)| Places multiface blocks on floors/walls/ceilings. |
+| [minecraft:nether_cave_carver_feature](Features/minecraftComponent_nether_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. |
+| [minecraft:ore_feature](Features/minecraftComponent_ore_feature.md)| Places a vein of blocks to simulate ore deposits. |
+| [minecraft:partially_exposed_blob_feature](Features/minecraftComponent_partially_exposed_blob_feature.md)| Generates a blob of the specified block with the specified dimensions. |
+| [minecraft:scatter_feature](Features/minecraftComponent_scatter_feature.md)| Scatters a feature throughout a chunk. |
+| [minecraft:search_feature](Features/minecraftComponent_search_feature.md)| Sweeps a volume searching for a valid placement location for its referenced feature. |
+| [minecraft:sequence_feature](Features/minecraftComponent_sequence_feature.md)| Places a collection of features sequentially, in the order they appear in data. |
+| [minecraft:single_block_feature](Features/minecraftComponent_single_block_feature.md)| Places a single block in the world. |
+| [minecraft:snap_to_surface_feature](Features/minecraftComponent_snap_to_surface_feature.md)| Snaps the y-value of a feature placement pos to the floor or the ceiling within the provided vertical_search_range. |
+| [minecraft:structure_template_feature](Features/minecraftComponent_structure_template_feature.md)| Places a structure in the world. |
+| [minecraft:surface_relative_threshold_feature](Features/minecraftComponent_surface_relative_threshold_feature.md)| Determines whether the provided position is below the estimated surface level of the world, and places a feature if so. |
+| [minecraft:tree_feature](Features/minecraftComponent_tree_feature.md)| Places a tree in the world. |
+| [minecraft:underwater_cave_carver_feature](Features/minecraftComponent_underwater_cave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8-block radial pattern. |
+| [minecraft:vegetation_patch_feature](Features/minecraftComponent_vegetation_patch_feature.md)| Scatters vegetation in an area. |
+| [minecraft:weighted_random_feature](Features/minecraftComponent_weighted_random_feature.md)|  |
 
-Below is a list of all the available Features within Minecraft: Bedrock Edition for use within JSON files.
+## Internal/Deprecated Components
+These components are either deprecated or internal to Minecraft and not usable in custom content.
 
-> [!NOTE]
-> To learn more about Features within Minecraft: Bedrock Edition, please visit [Introduction to Features](FeaturesIntroduction.md)
-
-## List of Features
-
-| Name| Description |
-|:-----------|:-----------|
-| [minecraft:aggregate_feature](Features/minecraftAggregate_feature.md)| A collection of features in an arbitrary order.|
-| [minecraft:cave_carver_feature](Features/minecraftCave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
-| [minecraft:fossil_feature](Features/minecraftFossil_feature.md)| Generates a skeletal structure composed of bone blocks and parametric ore blocks. |
-| [minecraft:geode_feature](Features/minecraftGeode_feature.md)| Generates a rock formation to simulate a geode.|
-| [minecraft:growing_plant_feature](Features/minecraftGrowing_plant_feature.md)| Places a growing plant in the world.|
-| [minecraft:multiface_feature](Features/minecraftMultiface_feature.md)| Places one or a few multiface blocks on floors/walls/ceilings.|
-| [minecraft:nether_cave_carver_feature](Features/minecraftnether_cave_carver_feature.md)| Carves a cave through the Nether in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.|
-| [minecraft:ore_feature](Features/minecraftOre_feature.md)| Places a vein of blocks to simulate ore deposits.|
-| [minecraft:partially_exposed_blob_feature](Features/minecraftPartially_exposed_blob_feature.md)| generates a blob of the specified block with the specified dimensions. For the most part, the blob is embedded in the specified surface, however a single side is allowed to be exposed.|
-| [minecraft:scatter_feature](Features/minecraftScatter_feature.md)| Scatters a feature throughout a chunk.|
-| [minecraft:search_feature](Features/minecraftSearch_feature.md)| Sweeps a volume searching for a valid placement location for its referenced feature.|
-| [minecraft:sequence_feature](Features/minecraftSequence_feature.md)| A collection of features sequentially, in the order they appear in data.|
-| [minecraft:single_block_feature](Features/minecraftSingle_block_feature.md)| Places a single block in the world.|
-| [minecraft:snap_to_surface_feature](Features/minecraftSnap_to_surface_feature.md)| snaps the y-value of a feature placement pos to the floor or the ceiling within the provided `vertical_search_range`.|
-| [minecraft:structure_template_feature](Features/minecraftStructure_template_feature.md)| Places a structure in the world. The structure must be stored as a .mcstructure file in the "structures" subdirectory of a behavior pack.|
-| [minecraft:surface_relative_threshold_feature](Features/minecraftsurface_relative_threshold_feature.md)| Determines whether the provided position is below the estimated surface level of the world, and places a feature if so.If the provided position is above configured surface or the surface is not available, placement will fail. |
-| [minecraft:tree_feature](Features/minecraftTree_feature.md)| Places a tree in the world. |
-| [minecraft:underwater_cave_carver_feature](Features/minecraftUnderwater_cave_carver_feature.md)| Carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8-block radial pattern.|
-| [minecraft:vegetation_patch_feature](Features/minecraftVegetation_patch_feature.md)| Scatters vegetation in an area. |
-| [minecraft:weighted_random_feature](Features/minecraftWeighted_random_feature.md)| Randomly selects and places a feature based on a weight value.|
+| Features | Description |
+|:-----|:----------|
+| [beards_and_shavers](Features/minecraftComponent_beards_and_shavers.md)|  |
+| [conditional_list](Features/minecraftComponent_conditional_list.md)|  |
+| [rect_layout](Features/minecraftComponent_rect_layout.md)|  |
+| [scan_surface](Features/minecraftComponent_scan_surface.md)|  |
+| [sculk_patch_feature](Features/minecraftComponent_sculk_patch_feature.md)|  |

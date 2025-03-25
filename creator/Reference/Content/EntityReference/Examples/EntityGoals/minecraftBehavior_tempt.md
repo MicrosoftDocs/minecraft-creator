@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.tempt"
-description: "Describes the behavior.tempt AI Goals"
+title: "Entity Documentation - minecraft:behavior.tempt"
+description: "Describes the minecraft:behavior.tempt ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.tempt
+# Entity Documentation - minecraft:behavior.tempt
 
 Allows the mob to be tempted by food they like.
 
@@ -24,7 +24,7 @@ Allows the mob to be tempted by food they like.
 | sound_interval | *not set* | Range of integers | Range of random ticks to wait between tempt sounds. | Cat: `[0,100]`, Strider: `{"range_min":2,"range_max":5}` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Armadillo: `1.25`, Axolotl: `1.1`, Camel: `2.5` | 
 | tempt_sound | *not set* | String | Sound to play while the mob is being tempted. | Cat: `"tempt"` | 
-| within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like | Bee: `8`, Cat: `16` | 
+| within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like | Bee: `8`, Cat: `16`, Robot: `7` | 
 
 ## Samples
 
@@ -32,7 +32,7 @@ Allows the mob to be tempted by food they like.
 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 3,
   "speed_multiplier": 1.25,
   "can_tempt_vertically": true,
@@ -46,7 +46,7 @@ Allows the mob to be tempted by food they like.
 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 2,
   "speed_multiplier": 1.1,
   "can_tempt_vertically": true,
@@ -60,7 +60,7 @@ Allows the mob to be tempted by food they like.
 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 5,
   "speed_multiplier": 1.25,
   "within_radius": 8,
@@ -101,7 +101,7 @@ Allows the mob to be tempted by food they like.
 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 3,
   "speed_multiplier": 2.5,
   "can_tempt_vertically": true,
@@ -116,7 +116,7 @@ Allows the mob to be tempted by food they like.
 At /minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/: 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 5,
   "speed_multiplier": 0.5,
   "within_radius": 16,
@@ -136,7 +136,7 @@ At /minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.temp
 At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.tempt/: 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 5,
   "speed_multiplier": 0.5,
   "within_radius": 16,
@@ -151,7 +151,7 @@ At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.temp
 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 4,
   "speed_multiplier": 1,
   "items": [
@@ -169,7 +169,7 @@ At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.temp
 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 4,
   "speed_multiplier": 1.25,
   "items": [
@@ -182,7 +182,7 @@ At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.temp
 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 5,
   "speed_multiplier": 1.2,
   "items": [
@@ -197,7 +197,7 @@ At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.temp
 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 3,
   "speed_multiplier": 0.5,
   "within_radius": 16,
@@ -213,7 +213,7 @@ At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.temp
 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 5,
   "speed_multiplier": 1.25,
   "can_tempt_vertically": true,
@@ -227,26 +227,11 @@ At /minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.temp
 
 
 ```json
-{
+"minecraft:behavior.tempt": {
   "priority": 4,
   "speed_multiplier": 0.75,
   "items": [
     "wheat"
-  ]
-}
-```
-
-#### [Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/horse.json)
-
-
-```json
-{
-  "priority": 5,
-  "speed_multiplier": 1.2,
-  "items": [
-    "golden_apple",
-    "appleEnchanted",
-    "golden_carrot"
   ]
 }
 ```

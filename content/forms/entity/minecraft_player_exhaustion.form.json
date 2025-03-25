@@ -1,0 +1,19 @@
+{
+  "id": "minecraft:player.exhaustion",
+  "title": "Player Exhaustion",
+  "description": "Defines the player's exhaustion level.",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "The initial value of a player's exhaustion level.",
+      "dataType": 0
+    },
+    {
+      "id": "max",
+      "title": "Maximum Value",
+      "description": "A maximum value for a player's exhaustion.",
+      "dataType": 0
+    }
+  ]
+}

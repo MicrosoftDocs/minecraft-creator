@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.stroll_towards_village"
-description: "Describes the behavior.stroll_towards_village AI Goals"
+title: "Entity Documentation - minecraft:behavior.stroll_towards_village"
+description: "Describes the minecraft:behavior.stroll_towards_village ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.stroll_towards_village
+# Entity Documentation - minecraft:behavior.stroll_towards_village
 
 Allows the mob to move into a random location within a village within the search range.
 
@@ -29,7 +29,7 @@ Allows the mob to move into a random location within a village within the search
 
 
 ```json
-{
+"minecraft:behavior.stroll_towards_village": {
   "priority": 11,
   "speed_multiplier": 1,
   "goal_radius": 3,

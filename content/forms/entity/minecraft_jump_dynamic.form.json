@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:jump.dynamic",
+    "title": "Dynamic Jump",
+    "description": "Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:jump.dynamic/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

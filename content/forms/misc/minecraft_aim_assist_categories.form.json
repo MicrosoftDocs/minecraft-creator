@@ -1,0 +1,51 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Minecraft Aim Assist Categories Misc",
+    "description": "Minecraft Aim Assist Categories Misc",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "Version of the JSON schema for this file. Aim-assist categories requires at least version 1.21.50.",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:aim_assist_categories",
+        "title": "minecraft:aim_assist_categories",
+        "description": "A single Camera Aim-Assist Categories Definition.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Struct SharedTypes V1 21 50 CameraAimAssistCategoriesDefinition",
+          "description": "Struct SharedTypes V1 21 50 CameraAimAssistCategoriesDefinition",
+          "fields": [
+            {
+              "id": "categories",
+              "title": "categories",
+              "description": "List of categories used by Camera Aim-Assist 'minecraft:aim_assist_preset'.",
+              "dataType": 15,
+              "subForm": {
+                "title": "Struct SharedTypes V1 21 50 CameraAimAssistCategoryDefinition",
+                "description": "Struct SharedTypes V1 21 50 CameraAimAssistCategoryDefinition",
+                "fields": [
+                  {
+                    "id": "name",
+                    "title": "name",
+                    "description": "Name of the Aim-Assist Category used during lookup.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "priorities",
+                    "title": "priorities",
+                    "description": "The set of priorities used when determining aim-assist selection.",
+                    "dataType": 16
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

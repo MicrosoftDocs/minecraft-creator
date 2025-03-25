@@ -1,0 +1,67 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.swell",
+    "title": "Swell Behavior",
+    "description": "Allows the creeper to swell up when a player is nearby. It can only be used by Creepers.",
+    "fields": [
+      {
+        "id": "start_distance",
+        "title": "Start Distance",
+        "description": "This mob starts swelling when a target is at least this many blocks away",
+        "defaultValue": 10,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/creeper.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swell/",
+              "content": 2.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "stop_distance",
+        "title": "Stop Distance",
+        "description": "This mob stops swelling when a target has moved away at least this many blocks",
+        "defaultValue": 2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/creeper.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swell/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/creeper.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swell/",
+              "content": 2
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.swell/",
+          "content": {
+            "start_distance": 2.5,
+            "stop_distance": 6,
+            "priority": 2
+          }
+        }
+      ]
+    }
+  }
+}

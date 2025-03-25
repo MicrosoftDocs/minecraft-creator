@@ -1,15 +1,18 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.vex_random_move"
-description: "Describes the behavior.vex_random_move AI Goals"
+title: "Entity Documentation - minecraft:behavior.vex_random_move"
+description: "Describes the minecraft:behavior.vex_random_move ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.vex_random_move
+# Entity Documentation - minecraft:behavior.vex_random_move
 
 Allows the mob to move around randomly like the Vex.
+
+> [!Note]
+> No longer used for the `vex` entity. Instead, `minecraft:navigation.walk` and `minecraft:behavior.float` allow the `vex` entity to navigate.
 
 
 ## Vex Random Move Behavior Properties

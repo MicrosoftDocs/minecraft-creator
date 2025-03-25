@@ -1,0 +1,149 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "is_temperature_type",
+    "title": "Is Temperature Type",
+    "description": "Tests whether the current temperature is a given type.",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ]
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Required) The Biome temperature catagory to test",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "cold",
+            "title": "Cold"
+          },
+          {
+            "id": "mild",
+            "title": "Mild"
+          },
+          {
+            "id": "ocean",
+            "title": "Ocean"
+          },
+          {
+            "id": "warm",
+            "title": "Warm"
+          }
+        ]
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"is_temperature_type\", \"subject\": \"self\", \"operator\": \"equals\", \"value\": \"cold\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"is_temperature_type\", \"value\": \"cold\" }"
+        }
+      ]
+    }
+  }
+}

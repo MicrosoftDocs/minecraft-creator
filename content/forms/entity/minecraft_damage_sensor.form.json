@@ -1,0 +1,922 @@
+{
+  "fields": [
+    {
+      "id": "deals_damage",
+      "title": "Deals Damage",
+      "description": "Defines how received damage affects the entity.",
+      "defaultValue": false,
+      "dataType": 1,
+      "choices": [
+        {
+          "id": "yes",
+          "description": "Received damage is applied to the entity."
+        },
+        {
+          "id": "no",
+          "description": "Received damage is not applied to the entity."
+        },
+        {
+          "id": "no_but_side_effects_apply",
+          "description": "Received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on."
+        }
+      ],
+      "alternates": [
+        {
+          "id": "deals_damage",
+          "title": "Deals Damage",
+          "defaultValue": false,
+          "dataType": 1
+        }
+      ]
+    }
+  ],
+  "description": "Defines what events to call when this entity is damaged by specific entities or items.",
+  "generated_doNotEdit": {
+    "id": "minecraft:damage_sensor",
+    "title": "Damage Sensor",
+    "description": "\"Defines what events to call when this entity is damaged by specific entities or items.",
+    "fields": [
+      {
+        "id": "triggers",
+        "title": "Triggers",
+        "description": "List of triggers with the events to call when taking specific kinds of damage.\"",
+        "dataType": 15,
+        "subForm": {
+          "description": "List of triggers with the events to call when taking specific kinds of damage.\"",
+          "fields": [
+            {
+              "id": "cause",
+              "title": "Cause",
+              "description": "Type of damage that triggers the events.",
+              "defaultValue": "none",
+              "dataType": 2
+            },
+            {
+              "id": "damage_modifier",
+              "title": "Damage Modifier",
+              "description": "A modifier that adds/removes to the base damage received from the specified damage cause. It does not reduce damage to less than 0.",
+              "defaultValue": 0,
+              "dataType": 3
+            },
+            {
+              "id": "damage_multiplier",
+              "title": "Damage Multiplier",
+              "description": "A multiplier that modifies the base damage received from the specified damage cause. If \"deals_damage\" is true the multiplier can only reduce the damage the entity will take to a minimum of 1.",
+              "defaultValue": 1,
+              "dataType": 3
+            },
+            {
+              "id": "deals_damage",
+              "title": "Deals Damage",
+              "description": "Defines how received damage affects the entity:\r\n                                          \\n- \"yes\", received damage is applied to the entity.\r\n                                          \\n- \"no\", received damage is not applied to the entity.\r\n                                          \\n- \"no_but_side_effects_apply\", received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on.",
+              "defaultValue": false,
+              "dataType": 1
+            },
+            {
+              "id": "on_damage",
+              "title": "On Damage",
+              "description": "Defines which entities the trigger applies to, and which, if any, event to emit when damaged.",
+              "dataType": 22
+            },
+            {
+              "id": "on_damage_sound_event",
+              "title": "On Damage Sound Event",
+              "description": "Defines what sound to play, if any, when the \"on_damage\" filters are met.",
+              "dataType": 2
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+              "content": [
+                {
+                  "on_damage": {
+                    "filters": {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        },
+                        {
+                          "test": "is_owner",
+                          "subject": "other",
+                          "value": true
+                        }
+                      ]
+                    }
+                  },
+                  "deals_damage": false
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:unrolled/minecraft:damage_sensor/",
+              "content": {
+                "on_damage": {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "mob"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:threat_detected"
+                }
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_sensor/",
+              "content": [
+                {
+                  "on_damage": {
+                    "filters": {
+                      "any_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "mob"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        }
+                      ]
+                    },
+                    "event": "minecraft:threat_detected"
+                  },
+                  "damage_multiplier": 0.5,
+                  "damage_modifier": -1
+                },
+                {
+                  "damage_multiplier": 0.5,
+                  "damage_modifier": -1
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+              "content": {
+                "cause": "lightning",
+                "deals_damage": "yes",
+                "damage_multiplier": 2000
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+              "content": {
+                "cause": "fall",
+                "deals_damage": false
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "on_damage": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_owner",
+                        "subject": "other",
+                        "value": true
+                      }
+                    ]
+                  }
+                },
+                "deals_damage": false
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:unrolled/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "on_damage": {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "mob"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    }
+                  ]
+                },
+                "event": "minecraft:threat_detected"
+              }
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "on_damage": {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "mob"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:threat_detected"
+                },
+                "damage_multiplier": 0.5,
+                "damage_modifier": -1
+              },
+              {
+                "damage_multiplier": 0.5,
+                "damage_modifier": -1
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "lightning",
+              "deals_damage": "yes",
+              "damage_multiplier": 2000
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "cause": "fall",
+                "deals_damage": "no"
+              },
+              {
+                "on_damage": {
+                  "filters": {
+                    "test": "is_block",
+                    "subject": "block",
+                    "value": "minecraft:sweet_berry_bush"
+                  }
+                },
+                "deals_damage": "no"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "cause": "fall",
+                "deals_damage": false
+              },
+              {
+                "on_damage": {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "damager",
+                    "operator": "!=",
+                    "value": "wind_charge"
+                  }
+                },
+                "cause": "projectile",
+                "deals_damage": false
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": "no"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": "no"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creaking.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "cause": "void",
+                "deals_damage": "yes"
+              },
+              {
+                "on_damage": {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "event": "minecraft:damaged_by_player"
+                },
+                "cause": "all",
+                "deals_damage": "no_but_side_effects_apply"
+              },
+              {
+                "on_damage": {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "mob"
+                  },
+                  "event": "minecraft:damaged_by_entity"
+                },
+                "cause": "all",
+                "deals_damage": "no_but_side_effects_apply"
+              },
+              {
+                "on_damage": {
+                  "event": "minecraft:damaged_by_entity"
+                },
+                "cause": "projectile",
+                "deals_damage": "no_but_side_effects_apply"
+              },
+              {
+                "cause": "all",
+                "deals_damage": "no_but_side_effects_apply"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "on_damage": {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "lightning"
+                },
+                "event": "minecraft:become_charged"
+              },
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ender_dragon.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": "no"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "on_damage": {
+                  "filters": {
+                    "test": "is_block",
+                    "subject": "block",
+                    "value": "minecraft:sweet_berry_bush"
+                  }
+                },
+                "deals_damage": "no"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": true,
+              "damage_modifier": -5
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": true,
+              "damage_modifier": -10
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/iron_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mooshroom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "on_damage": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "lightning"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "event": "minecraft:become_brown"
+                },
+                "deals_damage": "no",
+                "on_damage_sound_event": "convert_mooshroom"
+              },
+              {
+                "on_damage": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "lightning"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  "event": "minecraft:become_red"
+                },
+                "deals_damage": "no",
+                "on_damage_sound_event": "convert_mooshroom"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/npc.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "all",
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": "no"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": "no"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "on_damage": {
+                "filters": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "lightning"
+                  },
+                  {
+                    "test": "is_difficulty",
+                    "operator": "!=",
+                    "value": "peaceful"
+                  }
+                ],
+                "event": "become_zombie"
+              },
+              "deals_damage": "no"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:lightning_immune/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "on_damage": {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "lightning"
+                }
+              },
+              "deals_damage": "no"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:lightning_immune/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "on_damage": {
+                "filters": {
+                  "other_with_families": "lightning"
+                }
+              },
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/turtle.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "lightning",
+              "deals_damage": "yes",
+              "damage_multiplier": 2000
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "on_damage": {
+                  "filters": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "lightning"
+                    },
+                    {
+                      "test": "is_difficulty",
+                      "operator": "!=",
+                      "value": "peaceful"
+                    }
+                  ],
+                  "event": "become_witch"
+                },
+                "deals_damage": false
+              },
+              {
+                "on_damage": {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "zombie"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "husk"
+                      }
+                    ],
+                    "all_of": [
+                      {
+                        "test": "has_damage",
+                        "value": "fatal"
+                      }
+                    ]
+                  },
+                  "event": "become_zombie"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "on_damage": {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "lightning"
+                  },
+                  "event": "become_witch"
+                },
+                "deals_damage": false
+              },
+              {
+                "on_damage": {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "zombie"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "husk"
+                      }
+                    ],
+                    "all_of": [
+                      {
+                        "test": "has_damage",
+                        "value": "fatal"
+                      }
+                    ]
+                  },
+                  "event": "become_zombie"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wandering_trader.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "cause": "entity_attack",
+                "deals_damage": true,
+                "on_damage": {
+                  "event": "minecraft:become_scared"
+                }
+              },
+              {
+                "cause": "projectile",
+                "deals_damage": true,
+                "on_damage": {
+                  "event": "minecraft:become_scared"
+                }
+              },
+              {
+                "cause": "magic",
+                "deals_damage": true,
+                "on_damage": {
+                  "event": "minecraft:become_scared"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/witch.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "on_damage": {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "undead"
+                }
+              },
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "lightning",
+              "deals_damage": true,
+              "damage_multiplier": 2000
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "lightning",
+              "deals_damage": true,
+              "damage_multiplier": 2000
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": false
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "cause": "fall",
+              "deals_damage": "no"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

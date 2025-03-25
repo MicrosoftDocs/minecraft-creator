@@ -1,0 +1,106 @@
+{
+  "fields": [],
+  "description": "The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again.",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "category": "attack",
+          "duration": 0.2
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "title": "Cooldown",
+    "description": "After you use an item, all items specified with the same `cool down category` setting becomes unusable for the duration specified by the 'cool down time' setting in this component.",
+    "fields": [
+      {
+        "id": "category",
+        "title": "category",
+        "description": "The type of cool down for this item. All items with a cool down component with the same category are put on cool down when one is used.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/items/wind_charge.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:cooldown/",
+              "content": "wind_charge"
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "duration",
+        "description": "The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again.",
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/items/wind_charge.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:cooldown/",
+              "content": 0.5
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/wind_charge.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:cooldown/",
+          "content": {
+            "category": "wind_charge",
+            "duration": 0.5
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Cooldown",
+    "description": "After you use an item, all items specified with the same `cool down category` setting becomes unusable for the duration specified by the 'cool down time' setting in this component.",
+    "fields": [
+      {
+        "id": "category",
+        "title": "category",
+        "description": "The type of cool down for this item. All items with a cool down component with the same category are put on cool down when one is used.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/items/wind_charge.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:cooldown/",
+              "content": "wind_charge"
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "duration",
+        "description": "The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again.",
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/items/wind_charge.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:cooldown/",
+              "content": 0.5
+            }
+          ]
+        }
+      }
+    ],
+    "id": "minecraft:cooldown",
+    "samples": {
+      "/vanilla/behavior_pack/items/wind_charge.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:cooldown/",
+          "content": {
+            "category": "wind_charge",
+            "duration": 0.5
+          }
+        }
+      ]
+    }
+  }
+}

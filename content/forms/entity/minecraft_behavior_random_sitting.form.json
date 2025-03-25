@@ -1,0 +1,45 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.random_sitting",
+    "title": "Random Sitting Behavior",
+    "description": "Allows the mob to randomly sit for a duration.",
+    "fields": [
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time in seconds the mob has to wait before using the goal again",
+        "defaultValue": 0,
+        "dataType": 3
+      },
+      {
+        "id": "min_sit_time",
+        "title": "Min Sit Time",
+        "description": "The minimum amount of time in seconds before the mob can stand back up",
+        "defaultValue": 10,
+        "dataType": 3
+      },
+      {
+        "id": "start_chance",
+        "title": "Start Chance",
+        "description": "This is the chance that the mob will start this goal, from 0 to 1",
+        "defaultValue": 0.1,
+        "dataType": 3
+      },
+      {
+        "id": "stop_chance",
+        "title": "Stop Chance",
+        "description": "This is the chance that the mob will stop this goal, from 0 to 1",
+        "defaultValue": 0.3,
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0
+      }
+    ]
+  }
+}

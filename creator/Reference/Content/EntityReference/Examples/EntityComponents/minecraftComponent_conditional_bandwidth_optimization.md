@@ -28,7 +28,7 @@ The object containing the conditional bandwidth optimization values.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | conditional_values | *not set* | Minecraft filter | Conditions that must be met for these optimization values to be used. |  | 
-| max_dropped_ticks | 10 | Integer number | In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent. |  | 
+| max_dropped_ticks | 10 | Integer number | In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent. Value must be >= 0. |  | 
 | max_optimized_distance | 80 | Decimal number | The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization. |  | 
 | use_motion_prediction_hints | false | Boolean true/false | When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities. |  | 
 
@@ -40,7 +40,7 @@ The object containing the default bandwidth optimization values.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| max_dropped_ticks | 10 | Integer number | In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent. |  | 
+| max_dropped_ticks | 10 | Integer number | In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent. Value must be >= 0. |  | 
 | max_optimized_distance | 80 | Decimal number | The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization. |  | 
 | use_motion_prediction_hints | false | Boolean true/false | When set to true, smaller motion packets will be sent during drop packet intervals, resulting in the same amount of packets being sent as without optimizations but with much less data being sent. This should be used when actors are travelling very quickly or teleporting to prevent visual oddities. |  | 
 

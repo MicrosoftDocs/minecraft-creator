@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.sonic_boom"
-description: "Describes the behavior.sonic_boom AI Goals"
+title: "Entity Documentation - minecraft:behavior.sonic_boom"
+description: "Describes the minecraft:behavior.sonic_boom ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.sonic_boom
+# Entity Documentation - minecraft:behavior.sonic_boom
 
 Allows this entity to perform a 'sonic boom' ranged attack.
 
@@ -36,7 +36,7 @@ Allows this entity to perform a 'sonic boom' ranged attack.
 
 
 ```json
-{
+"minecraft:behavior.sonic_boom": {
   "priority": 3,
   "duration": 3,
   "speed_multiplier": 1.2,

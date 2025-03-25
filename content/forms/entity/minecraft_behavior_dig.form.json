@@ -1,0 +1,135 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.dig",
+    "title": "Dig Behavior",
+    "description": "Allows this entity to dig into the ground before despawning.",
+    "fields": [
+      {
+        "id": "allow_dig_when_named",
+        "title": "Allow Dig When Named",
+        "description": "If true, this behavior can run when this entity is named. Otherwise not.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "digs_in_daylight",
+        "title": "Digs In Daylight",
+        "description": "Indicates that the actor should start digging when it sees daylight",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Goal duration in seconds",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.dig/",
+              "content": 5.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "idle_time",
+        "title": "Idle Time",
+        "description": "The minimum idle time in seconds between the last detected disturbance to the start of digging.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.dig/",
+              "content": 60
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_start",
+        "title": "On Start",
+        "description": "Event(s) to run when the goal starts.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.dig/",
+              "content": {
+                "event": "on_digging_event",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "suspicion_is_disturbance",
+        "title": "Suspicion Is Disturbance",
+        "description": "If true, finding new suspicious locations count as disturbances that may delay the start of this goal.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.dig/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "vibration_is_disturbance",
+        "title": "Vibration Is Disturbance",
+        "description": "If true, vibrations count as disturbances that may delay the start of this goal.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.dig/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.dig/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.dig/",
+          "content": {
+            "priority": 1,
+            "duration": 5.5,
+            "idle_time": 60,
+            "vibration_is_disturbance": true,
+            "suspicion_is_disturbance": true,
+            "digs_in_daylight": false,
+            "on_start": {
+              "event": "on_digging_event",
+              "target": "self"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

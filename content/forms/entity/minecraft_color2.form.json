@@ -1,0 +1,329 @@
+{
+  "fields": [],
+  "note": "Only works on vanilla entities that have a second predefined color values (tropical fish).",
+  "description": "Defines the entity's second texture color.",
+  "generated_doNotEdit": {
+    "id": "minecraft:color2",
+    "title": "Color2",
+    "description": "Defines the entity's second texture color. Only works on vanilla entities that have a second predefined color values (tropical fish).",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The second Palette Color value of the entity.",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/tropicalfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_orange/minecraft:color2/",
+              "content": 1
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_magenta/minecraft:color2/",
+              "content": 2
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_lightblue/minecraft:color2/",
+              "content": 3
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_yellow/minecraft:color2/",
+              "content": 4
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_lightgreen/minecraft:color2/",
+              "content": 5
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_pink/minecraft:color2/",
+              "content": 6
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_gray/minecraft:color2/",
+              "content": 7
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_silver/minecraft:color2/",
+              "content": 8
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_cyan/minecraft:color2/",
+              "content": 9
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_purple/minecraft:color2/",
+              "content": 10
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_blue/minecraft:color2/",
+              "content": 11
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_brown/minecraft:color2/",
+              "content": 12
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_green/minecraft:color2/",
+              "content": 13
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_red/minecraft:color2/",
+              "content": 14
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:anenonme/minecraft:color2/",
+              "content": 7
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:blue_dory/minecraft:color2/",
+              "content": 3
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:dog_fish/minecraft:color2/",
+              "content": 4
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:e_red_snapper/minecraft:color2/",
+              "content": 14
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ornate_butterfly/minecraft:color2/",
+              "content": 1
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_fish/minecraft:color2/",
+              "content": 6
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/tropicalfish.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_white/minecraft:color2/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_orange/minecraft:color2/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_magenta/minecraft:color2/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_lightblue/minecraft:color2/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_yellow/minecraft:color2/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_lightgreen/minecraft:color2/",
+          "content": {
+            "value": 5
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_pink/minecraft:color2/",
+          "content": {
+            "value": 6
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_gray/minecraft:color2/",
+          "content": {
+            "value": 7
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_silver/minecraft:color2/",
+          "content": {
+            "value": 8
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_cyan/minecraft:color2/",
+          "content": {
+            "value": 9
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_purple/minecraft:color2/",
+          "content": {
+            "value": 10
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_blue/minecraft:color2/",
+          "content": {
+            "value": 11
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_brown/minecraft:color2/",
+          "content": {
+            "value": 12
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_green/minecraft:color2/",
+          "content": {
+            "value": 13
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_pattern_red/minecraft:color2/",
+          "content": {
+            "value": 14
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:anenonme/minecraft:color2/",
+          "content": {
+            "value": 7
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:black_tang/minecraft:color2/",
+          "content": {
+            "value": 7
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:blue_dory/minecraft:color2/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:butterfly_fish/minecraft:color2/",
+          "content": {
+            "value": 7
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cichlid/minecraft:color2/",
+          "content": {
+            "value": 7
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:clownfish/minecraft:color2/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cc_betta/minecraft:color2/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:dog_fish/minecraft:color2/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:e_red_snapper/minecraft:color2/",
+          "content": {
+            "value": 14
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:goat_fish/minecraft:color2/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:moorish_idol/minecraft:color2/",
+          "content": {
+            "value": 7
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ornate_butterfly/minecraft:color2/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_fish/minecraft:color2/",
+          "content": {
+            "value": 6
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:queen_angel_fish/minecraft:color2/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:red_cichlid/minecraft:color2/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:red_lipped_benny/minecraft:color2/",
+          "content": {
+            "value": 14
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:red_snapper/minecraft:color2/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:threadfin/minecraft:color2/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tomato_clown/minecraft:color2/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:triggerfish/minecraft:color2/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:yellow_tang/minecraft:color2/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:yellowtail_parrot/minecraft:color2/",
+          "content": {
+            "value": 4
+          }
+        }
+      ]
+    }
+  }
+}

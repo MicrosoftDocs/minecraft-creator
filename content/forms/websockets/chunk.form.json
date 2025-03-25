@@ -1,0 +1,36 @@
+{
+  "id": "Chunk",
+  "title": "Chunk",
+  "description": "Describes a the location of a chunk.",
+  "fields": [
+    {
+      "id": "x",
+      "description": "X index of the chunk. Note that each chunk is 16x16 blocks; this number is the starting block coordinate divided by 16.",
+      "dataType": 0
+    },
+    {
+      "id": "z",
+      "desciption": "Z index of the chunk. Note that each chunk is 16x16 blocks; this number is the starting block coordinate divided by 16.",
+      "dataType": 0
+    },
+    {
+      "id": "dimension",
+      "desciption": "Index of the dimension where the chunk is located.",
+      "dataType": 0,
+      "choices": [
+        {
+          "id": 0,
+          "title": "Overworld"
+        },
+        {
+          "id": 1,
+          "title": "Nether"
+        },
+        {
+          "id": 2,
+          "title": "End"
+        }
+      ]
+    }
+  ]
+}

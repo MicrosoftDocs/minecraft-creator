@@ -4,14 +4,14 @@ ms.author: kakinnun
 title: 1.21.70 Update Notes
 description: Update summary of Creator changes in Bedrock 1.21.70
 ms.service: minecraft-bedrock-edition
-ms.date: 03/21/2025 #Required; mm/dd/yyyy format.
+ms.date: 03/25/2025 #Required; mm/dd/yyyy format.
 ---
 
 # Minecraft Bedrock 1.21.70 Update Notes for Creators
 
 Minecraft Bedrock has been updated to 1.21.70 and there are a number of changes of note for Add-On creators. The following features do not require experimental toggles.
 
-> (Add Video link)
+> [!VIDEO https://www.youtube.com/embed/9-AoU4jzm44]
 *Video version of this article from the Minecraft Creator Channel*
 
 ## Editor
@@ -21,6 +21,7 @@ Minecraft Bedrock has been updated to 1.21.70 and there are a number of changes 
 Editor is now available on stable builds and is accessible via the Minecraft Launcher on Windows PC.
 
 Editor v0.9 added a number of new capabilities including:
+
 - Realms integration
 - Grid Repeat
 - Updated Structure Management
@@ -29,18 +30,19 @@ Editor v0.9 added a number of new capabilities including:
 [Get started with Editor!](./BedrockEditor/EditorInstallation.md)
 
 ## Platform
+
 - Input APIs - Script APIs to detect player input & modes:
   - [InputButton](../ScriptAPI/minecraft/server/InputButton.md)
   - [ButtonState](../ScriptAPI/minecraft/server/ButtonState.md)
   - [InputInfo](../ScriptAPI/minecraft/server/InputInfo.md)
     - [getButtonState](../ScriptAPI/minecraft/server/InputInfo.md#getbuttonstate)
     - [getMovementVector](../ScriptAPI/minecraft/server/InputInfo.md#getmovementvector)
-- Sound Locators on Actors
+- Sound Locators on Entities
 
 ## Blocks
 
 - Loot table - Item tags that support "match_tool" move out of experimental.
-- Liquid APIs - Move to stable
+- Liquid APIs - Moved from beta to stable
   - [LiquidType](../ScriptAPI/minecraft/server/LiquidType.md)
   - Block
     - [canBeDestroyedByLiquidSpread](../ScriptAPI/minecraft/server/Block#canbedestroyedbyliquidspread)
@@ -54,7 +56,6 @@ Editor v0.9 added a number of new capabilities including:
     - [liquidSpreadCausesSpawn](../ScriptAPI/minecraft/server/BlockPermutation.md#liquidspreadcausesspawn)
     - [canContainLiquid](../ScriptAPI/minecraft/server/BlockPermutation.md#cancontainliquid)
 - [replaceable](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_replaceable.md) - Define a block as "squashable" by another block (a block placed on another block replaces that block without a drop).
-- [destruction_particles](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_destruction_particles.md) - This represents the particles used when the Block is destroyed
 
 ## Entities
 
@@ -87,7 +88,8 @@ Looking ahead, here's what you can expect coming in future releases.
 - Camera-relative player control schemes
 
 ## What's Next for Blocks
-- Data-Driven biome tinting - Supports block textures per biome. 
+- Data-Driven biome tinting - Supports block textures per biome.
+- [destruction_particles](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_destruction_particles.md) - This represents the particles used when the Block is destroyed
 - Isotropic textures - Allows for random rotation of textures (e.g. vanilla dirt).
 - Destruction particle - Set a texture that appears when block is broken.
 - particle intensity - When breaking a block, defines the quantity of particles that appear.

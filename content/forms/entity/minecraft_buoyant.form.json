@@ -1,0 +1,83 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:buoyant",
+    "title": "Buoyant",
+    "description": "Enables an entity to float on the specified liquid blocks.",
+    "fields": [
+      {
+        "id": "apply_gravity",
+        "title": "Apply Gravity",
+        "description": "Applies gravity each tick. Causes more of a wave simulation, but will cause more gravity to be applied outside liquids.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "base_buoyancy",
+        "title": "Base Buoyancy",
+        "description": "Base buoyancy used to calculate how much will a mob float.",
+        "defaultValue": 1,
+        "dataType": 3
+      },
+      {
+        "id": "big_wave_probability",
+        "title": "Big Wave Probability",
+        "description": "Probability for a big wave hitting the entity. Only used if `simulate_waves` is true.",
+        "defaultValue": 0.03,
+        "dataType": 3
+      },
+      {
+        "id": "big_wave_speed",
+        "title": "Big Wave Speed",
+        "description": "Multiplier for the speed to make a big wave. Triggered depending on 'big_wave_probability'.",
+        "defaultValue": 10,
+        "dataType": 3
+      },
+      {
+        "id": "drag_down_on_buoyancy_removed",
+        "title": "Drag Down On Buoyancy Removed",
+        "description": "How much an actor will be dragged down when the Buoyancy Component is removed.",
+        "defaultValue": 0,
+        "dataType": 3
+      },
+      {
+        "id": "liquid_blocks",
+        "title": "Liquid Blocks",
+        "description": "List of blocks this entity can float on. Must be a liquid block.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/xp_orb.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:buoyant/",
+              "content": [
+                "minecraft:flowing_water",
+                "minecraft:water"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "simulate_waves",
+        "title": "Simulate Waves",
+        "description": "Should the movement simulate waves going through.",
+        "defaultValue": true,
+        "dataType": 1
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/xp_orb.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:buoyant/",
+          "content": {
+            "apply_gravity": false,
+            "liquid_blocks": [
+              "minecraft:flowing_water",
+              "minecraft:water"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
