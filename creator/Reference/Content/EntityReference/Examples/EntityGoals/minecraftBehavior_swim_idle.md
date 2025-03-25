@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.swim_idle"
-description: "Describes the behavior.swim_idle AI Goals"
+title: "Entity Documentation - minecraft:behavior.swim_idle"
+description: "Describes the minecraft:behavior.swim_idle ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.swim_idle
+# Entity Documentation - minecraft:behavior.swim_idle
 
 Allows the entity go idle, if swimming. Entity must be in water.
 
@@ -26,7 +26,7 @@ Allows the entity go idle, if swimming. Entity must be in water.
 
 
 ```json
-{
+"minecraft:behavior.swim_idle": {
   "priority": 7,
   "idle_time": 5,
   "success_rate": 0.05
@@ -37,29 +37,7 @@ Allows the entity go idle, if swimming. Entity must be in water.
 
 
 ```json
-{
-  "priority": 5,
-  "idle_time": 5,
-  "success_rate": 0.1
-}
-```
-
-#### [Salmon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/salmon.json)
-
-
-```json
-{
-  "priority": 5,
-  "idle_time": 5,
-  "success_rate": 0.1
-}
-```
-
-#### [Tropicalfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tropicalfish.json)
-
-
-```json
-{
+"minecraft:behavior.swim_idle": {
   "priority": 5,
   "idle_time": 5,
   "success_rate": 0.1

@@ -1,0 +1,51 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:grows_crop",
+    "title": "Grows Crop",
+    "description": "Could increase crop growth when entity walks over crop",
+    "fields": [
+      {
+        "id": "chance",
+        "title": "Chance",
+        "description": "Value between 0-1. Chance of success per tick.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/has_nectar/minecraft:grows_crop/",
+              "content": 0.03
+            }
+          ]
+        }
+      },
+      {
+        "id": "charges",
+        "title": "Charges",
+        "description": "Number of charges",
+        "defaultValue": 10,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/has_nectar/minecraft:grows_crop/",
+              "content": 10
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/component_groups/has_nectar/minecraft:grows_crop/",
+          "content": {
+            "charges": 10,
+            "chance": 0.03
+          }
+        }
+      ]
+    }
+  }
+}

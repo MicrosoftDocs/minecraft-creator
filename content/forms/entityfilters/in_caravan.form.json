@@ -1,0 +1,266 @@
+{
+  "fields": [],
+  "note": "Does not require any parameters to work properly. It can be used as a standalone filter.",
+  "tags": [
+    "standalone"
+  ],
+  "generated_doNotEdit": {
+    "id": "in_caravan",
+    "title": "In Caravan",
+    "description": "Returns true if the subject entity is in a caravan.",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ]
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Optional) true or false.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "minecraft:damage_sensor",
+        "title": "Damage Sensor",
+        "dataType": 16,
+        "subForm": {
+          "id": "minecraft:damage_sensor",
+          "title": "Minecraft:damage_sensor",
+          "fields": [
+            {
+              "id": "triggers",
+              "title": "Triggers",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/llama.json": [
+                  {
+                    "path": "triggers",
+                    "content": {
+                      "cause": "all",
+                      "deals_damage": true
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:in_caravan/",
+              "content": {
+                "triggers": {
+                  "cause": "all",
+                  "deals_damage": true
+                }
+              }
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:in_caravan/",
+              "content": {
+                "triggers": {
+                  "cause": "all",
+                  "deals_damage": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/",
+              "content": "in_caravan"
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/",
+              "content": "in_caravan"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"in_caravan\", \"subject\": \"self\", \"operator\": \"equals\", \"value\": \"true\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"in_caravan\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:in_caravan/",
+          "content": {
+            "minecraft:damage_sensor": {
+              "triggers": {
+                "cause": "all",
+                "deals_damage": true
+              }
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/",
+          "content": {
+            "test": "in_caravan",
+            "value": false
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:in_caravan/",
+          "content": {
+            "minecraft:damage_sensor": {
+              "triggers": {
+                "cause": "all",
+                "deals_damage": true
+              }
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/",
+          "content": {
+            "test": "in_caravan",
+            "value": false
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:in_caravan/",
+          "content": {
+            "minecraft:damage_sensor": {
+              "triggers": {
+                "cause": "all",
+                "deals_damage": true
+              }
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/",
+          "content": {
+            "test": "in_caravan",
+            "value": false
+          }
+        }
+      ]
+    }
+  }
+}

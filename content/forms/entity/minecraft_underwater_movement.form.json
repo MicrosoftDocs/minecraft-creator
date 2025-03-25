@@ -1,0 +1,13 @@
+{
+  "id": "minecraft:underwater_movement",
+  "title": "Underwater Movement",
+  "description": "Defines the speed with which an entity can move through water.",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "Movement speed of the entity under water.",
+      "dataType": 3
+    }
+  ]
+}

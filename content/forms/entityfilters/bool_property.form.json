@@ -1,0 +1,277 @@
+{
+  "fields": [
+    {
+      "id": "operator",
+      "title": "Operator",
+      "description": "(Optional) The comparison to apply with 'value'.",
+      "defaultValue": "equals",
+      "dataType": 2,
+      "mustMatchChoices": true,
+      "choices": [
+        {
+          "id": "!=",
+          "title": "!=",
+          "description": "Test for inequality."
+        },
+        {
+          "id": "<",
+          "title": "<",
+          "description": "Test for less-than the value."
+        },
+        {
+          "id": "<=",
+          "title": "<=",
+          "description": "Test for less-than or equal to the value."
+        },
+        {
+          "id": "<>",
+          "title": "<>",
+          "description": "Test for inequality."
+        },
+        {
+          "id": "=",
+          "title": "=",
+          "description": "Test for equality."
+        },
+        {
+          "id": "==",
+          "title": "==",
+          "description": "Test for equality."
+        },
+        {
+          "id": ">",
+          "title": ">",
+          "description": "Test for greater-than the value."
+        },
+        {
+          "id": ">=",
+          "title": ">=",
+          "description": "Test for greater-than or equal to the value."
+        },
+        {
+          "id": "equals",
+          "title": "Equals",
+          "description": "Test for equality."
+        },
+        {
+          "id": "not",
+          "title": "Not",
+          "description": "Test for inequality."
+        }
+      ],
+      "samples": {
+        "/vanilla/behavior_pack/entities/bee.json": [
+          {
+            "path": "/minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+            "content": "!="
+          },
+          {
+            "path": "/minecraft:entity/events/find_hive_timeout/sequence/0/filters/",
+            "content": "!="
+          }
+        ]
+      }
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "bool_property",
+    "title": "Bool Property",
+    "description": "Returns true when the bool actor property matches the value provided.",
+    "fields": [
+      {
+        "id": "domain",
+        "title": "Domain",
+        "description": "(Required) The property name to look for",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+              "content": "minecraft:has_nectar"
+            },
+            {
+              "path": "/minecraft:entity/events/find_hive_timeout/sequence/0/filters/",
+              "content": "minecraft:has_nectar"
+            }
+          ]
+        }
+      },
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+              "content": "!="
+            },
+            {
+              "path": "/minecraft:entity/events/find_hive_timeout/sequence/0/filters/",
+              "content": "!="
+            }
+          ]
+        }
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Optional) true or false.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+              "content": "bool_property"
+            },
+            {
+              "path": "/minecraft:entity/events/find_hive_timeout/sequence/0/filters/",
+              "content": "bool_property"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"bool_property\", \"subject\": \"self\", \"domain\": \"minecraft:can_climb\", \"operator\": \"equals\", \"value\": \"true\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"bool_property\", \"domain\": \"minecraft:can_climb\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/component_groups/shelter_detection/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:has_nectar",
+            "operator": "!="
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/find_hive_timeout/sequence/0/filters/",
+          "content": {
+            "test": "bool_property",
+            "operator": "!=",
+            "domain": "minecraft:has_nectar"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/find_hive_timeout/sequence/1/filters/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:has_nectar"
+          }
+        }
+      ]
+    }
+  }
+}

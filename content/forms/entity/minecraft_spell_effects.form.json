@@ -1,0 +1,153 @@
+{
+  "fields": [],
+  "description": "Allows an entity to add or remove status effects from itself. Similarly to `addrider`, this component performs a one-time operation on the entity when added. Removing the component will not change the entity's current effects. Adding different versions of the component multiple times will perform each one in turn. Once the component has been added, it will not provide any further functionality. There is one exception to this behavior: if this component is present on a player, its effects will be re-applied every time the player enters the world. To avoid this, remove the component shortly after adding it, or add an empty component to replace it.",
+  "generated_doNotEdit": {
+    "id": "minecraft:spell_effects",
+    "title": "Spell Effects",
+    "description": "Defines what mob effects to add and remove to the entity when adding this component.",
+    "fields": [
+      {
+        "id": "add_effects",
+        "title": "Add Effects",
+        "description": "List of effects to add to this entity after adding this component",
+        "dataType": 15,
+        "subForm": {
+          "description": "List of effects to add to this entity after adding this component",
+          "fields": [
+            {
+              "id": "effect",
+              "title": "Effect",
+              "description": "Effect to add to this entity. Includes 'duration' in seconds, 'amplifier' level, 'ambient' if it is to be considered an ambient effect, and 'visible' if the effect should be visible",
+              "dataType": 2
+            },
+            {
+              "id": "duration",
+              "title": "Duration",
+              "dataType": 7
+            },
+            {
+              "id": "display_on_screen_animation",
+              "title": "Display On Screen Animation",
+              "dataType": 2
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/add_poison_effect/minecraft:spell_effects/",
+              "content": [
+                {
+                  "effect": "poison",
+                  "duration": 25,
+                  "display_on_screen_animation": true
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/add_wither_effect/minecraft:spell_effects/",
+              "content": [
+                {
+                  "effect": "wither",
+                  "duration": 40,
+                  "display_on_screen_animation": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "remove_effects",
+        "title": "Remove Effects",
+        "description": "List of identifiers of effects to be removed from this entity after adding this component",
+        "dataType": 2
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/component_groups/add_poison_effect/minecraft:spell_effects/",
+          "content": {
+            "add_effects": [
+              {
+                "effect": "poison",
+                "duration": 25,
+                "display_on_screen_animation": true
+              }
+            ],
+            "remove_effects": "poison"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/add_wither_effect/minecraft:spell_effects/",
+          "content": {
+            "add_effects": [
+              {
+                "effect": "wither",
+                "duration": 40,
+                "display_on_screen_animation": true
+              }
+            ],
+            "remove_effects": "wither"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:add_raid_omen/minecraft:spell_effects/",
+          "content": {
+            "add_effects": [
+              {
+                "effect": "raid_omen",
+                "duration": 30,
+                "display_on_screen_animation": true
+              }
+            ],
+            "remove_effects": "bad_omen"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:clear_raid_omen_spell_effect/minecraft:spell_effects/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/component_groups/to_villager/minecraft:spell_effects/",
+          "content": {
+            "add_effects": [
+              {
+                "effect": "strength",
+                "duration": 300
+              },
+              {
+                "effect": "heal",
+                "duration": 300
+              }
+            ],
+            "remove_effects": "weakness"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/to_villager/minecraft:spell_effects/",
+          "content": {
+            "add_effects": [
+              {
+                "effect": "strength",
+                "duration": 100
+              },
+              {
+                "effect": "heal",
+                "duration": 100
+              }
+            ],
+            "remove_effects": "weakness"
+          }
+        }
+      ]
+    }
+  }
+}

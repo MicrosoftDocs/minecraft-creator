@@ -1,0 +1,264 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:mob_effect",
+    "title": "Mob Effect",
+    "description": "A component that applies a mob effect to entities that get within range.",
+    "fields": [
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time in seconds to wait between each application of the effect.",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:mob_effect/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "effect_range",
+        "title": "Effect Range",
+        "description": "How close a hostile entity must be to have the mob effect applied.",
+        "defaultValue": 0.2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:mob_effect/",
+              "content": 0.2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:mob_effect/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "effect_time",
+        "title": "Effect Time",
+        "description": "How long the applied mob effect lasts in seconds. Can also be set to \"infinite\"",
+        "defaultValue": 10,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:mob_effect/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:mob_effect/",
+              "content": 13
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity_filter",
+        "title": "Entity Filter",
+        "description": "The set of entities that are valid to apply the mob effect to.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:mob_effect/",
+              "content": {
+                "any_of": [
+                  {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "mob"
+                      },
+                      {
+                        "any_of": [
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "axolotl"
+                          },
+                          {
+                            "all_of": [
+                              {
+                                "test": "is_family",
+                                "subject": "other",
+                                "operator": "not",
+                                "value": "aquatic"
+                              },
+                              {
+                                "test": "is_family",
+                                "subject": "other",
+                                "operator": "not",
+                                "value": "undead"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "operator": "not",
+                        "value": "instabuild"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:mob_effect/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "operator": "not",
+                    "test": "has_ability",
+                    "subject": "other",
+                    "value": "invulnerable"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "mob_effect",
+        "title": "Mob Effect",
+        "description": "The mob effect that is applied to entities that enter this entities effect range.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:mob_effect/",
+              "content": "poison"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:mob_effect/",
+              "content": "darkness"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/pufferfish.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:full_puff/minecraft:mob_effect/",
+          "content": {
+            "effect_range": 0.2,
+            "mob_effect": "poison",
+            "effect_time": 10,
+            "entity_filter": {
+              "any_of": [
+                {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "mob"
+                    },
+                    {
+                      "any_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "axolotl"
+                        },
+                        {
+                          "all_of": [
+                            {
+                              "test": "is_family",
+                              "subject": "other",
+                              "operator": "not",
+                              "value": "aquatic"
+                            },
+                            {
+                              "test": "is_family",
+                              "subject": "other",
+                              "operator": "not",
+                              "value": "undead"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_ability",
+                      "subject": "other",
+                      "operator": "not",
+                      "value": "instabuild"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:mob_effect/",
+          "content": {
+            "effect_range": 20,
+            "effect_time": 13,
+            "mob_effect": "darkness",
+            "cooldown_time": 6,
+            "entity_filter": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "operator": "not",
+                  "test": "has_ability",
+                  "subject": "other",
+                  "value": "invulnerable"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

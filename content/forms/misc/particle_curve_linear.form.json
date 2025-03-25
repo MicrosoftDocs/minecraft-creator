@@ -1,0 +1,66 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Curve Linear Misc",
+    "description": "Particle Curve Linear Misc",
+    "fields": [
+      {
+        "id": "type",
+        "title": "type",
+        "description": "type",
+        "dataType": 16
+      },
+      {
+        "id": "nodes",
+        "title": "nodes",
+        "description": "nodes",
+        "dataType": 15,
+        "subForm": {
+          "title": "Nodes",
+          "description": "Nodes",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "nodes",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "input",
+        "title": "input",
+        "description": "input",
+        "dataType": 16,
+        "subForm": {
+          "title": "Input",
+          "description": "Input",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "input",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "horizontal_range",
+        "title": "horizontal_range",
+        "description": "horizontal_range",
+        "dataType": 16,
+        "subForm": {
+          "title": "Horizontal Range",
+          "description": "Horizontal Range",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "horizontal_range",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -31,7 +31,7 @@ The list of genes that this entity has and will cross with a partner during bree
 | genetic_variants | *not set* | Array of [Genetic Variants](#genetic-variants-item-type) items | The list of genetic variants for this gene. These check for particular allele combinations and fire events when all of them are satisfied. |  | 
 | mutation_rate | -1 | Decimal number | If this value is non-negative, overrides the chance for this gene that an allele will be replaced with a random one instead of the parent's allele during birth. Non-negative values greater than `1` will be the same as the value `1`. |  | 
 | name | *not set* | String | The name of the gene. |  | 
-| use_simplified_breeding | *not set* | String |  |  | 
+| use_simplified_breeding | *not set* | String | If true, mobs spawned from breeding will always inherit main alleles from parents' main alleles and hidden alleles from the hidden ones. |  | 
 
 ## Genetic Variants item type
 The list of genetic variants for this gene. These check for particular allele combinations and fire events when all of them are satisfied.

@@ -1,15 +1,19 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Items Documentation - use_duration"
-description: "Describes the use_duration Items"
+title: "Items Documentation - minecraft:use_duration"
+description: "Describes the minecraft:use_duration item component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Items Documentation - use_duration
+# Items Documentation - minecraft:use_duration
 
 This component determines how long the item takes to use when used in combination with components like "shooter", "throwable", or "food".
+
+## Alternate Simple Representations
+
+This item can also be represented as a `Decimal number`.
 
 
 ## Use Duration Properties
@@ -23,59 +27,27 @@ This component determines how long the item takes to use when used in combinatio
 #### [AppleEnchanted](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/appleEnchanted.json)
 
 
-`32`
-
-#### [Baked Potato](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/baked_potato.json)
-
-
-`32`
-
-#### [Beef](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/beef.json)
-
-
-`32`
-
-#### [Beetroot Soup](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/beetroot_soup.json)
-
-
-`32`
-
-#### [Beetroot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/beetroot.json)
-
-
-`32`
-
-#### [Bread](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/bread.json)
-
-
-`32`
+```json
+"minecraft:use_duration": 32
+```
 
 #### [Camera](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/camera.json)
 
 
-`100000`
+```json
+"minecraft:use_duration": 100000
+```
 
-#### [Carrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/carrot.json)
-
-
-`32`
-
-#### [Chicken](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/chicken.json)
+#### [Dried Kelp](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/dried_kelp.json)
 
 
-`32`
+```json
+"minecraft:use_duration": 16
+```
 
-#### [Chorus Fruit](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/chorus_fruit.json)
-
-
-`32`
-
-#### [Clownfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/clownfish.json)
+#### [Honey Bottle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/honey_bottle.json)
 
 
-`32`
-
-#### [Cooked Beef](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/cooked_beef.json)
-
-
-`32`
+```json
+"minecraft:use_duration": 40
+```

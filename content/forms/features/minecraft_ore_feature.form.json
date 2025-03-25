@@ -1,0 +1,119 @@
+{
+  "id": "minecraft:ore_feature",
+  "description": "Places a vein of blocks to simulate ore deposits. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if they can be replaced by the new ore block based on the list in the may_replace field of a replace_rules entry. If no may_replace field is specified, the ore block can replace any existing block. Succeeds if at least one ore block is successfully placed. Fails if all ore block placements fail.",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "samples": {
+    "example": [
+      {
+        "path": "Malachite ore in different materials",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:ore_feature": {
+            "description": {
+              "identifier": "example:malachite_ore_feature"
+            },
+            "count": 12,
+            "replace_rules": [
+              {
+                "places_block": "example:malachite_ore",
+                "may_replace": [
+                  "minecraft:stone"
+                ]
+              },
+              {
+                "places_block": "example:granite_malachite_ore",
+                "may_replace": [
+                  "minecraft:granite"
+                ]
+              },
+              {
+                "places_block": "example:andesite_malachite_ore",
+                "may_replace": [
+                  "minecraft:andesite"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "path": "Oil deposits in the sand",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:ore_feature": {
+            "description": {
+              "identifier": "example:oil_deposit_feature"
+            },
+            "count": 12,
+            "replace_rules": [
+              {
+                "places_block": "example:oil_block",
+                "may_replace": [
+                  "minecraft:sand"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:ore_feature",
+    "title": "Ore Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 0,
+        "id": "count",
+        "title": "Count",
+        "description": "The number of blocks to be placed.",
+        "isRequired": true
+      },
+      {
+        "id": "replace_rules",
+        "dataType": 15,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 17,
+              "id": "may_replace",
+              "title": "May Replace",
+              "isRequired": false
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "dataType": 17,
+            "id": "replace_rules",
+            "title": "Replace Rules",
+            "isRequired": false
+          }
+        ]
+      }
+    ]
+  }
+}

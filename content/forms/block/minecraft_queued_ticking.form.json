@@ -1,0 +1,30 @@
+{
+  "fields": [],
+  "isDeprecated": true,
+  "generated_doNotEdit": {
+    "id": "minecraft:queued_ticking",
+    "title": "Queued Ticking",
+    "description": "Triggers the specified event, either once, or at a regular interval equal to a number of ticks randomly chosen from the interval_range provided.",
+    "fields": [
+      {
+        "id": "interval_range",
+        "title": "Interval Range",
+        "description": "A range of values, specified in ticks, that will be used to decide the interval between times this event triggers. Each interval will be chosen randomly from the range, so the times between this event triggering will differ given an interval_range of two different values. If the values in the interval_range are the same, the event will always be triggered after that number of ticks.",
+        "dataType": 17
+      },
+      {
+        "id": "looping",
+        "title": "Looping",
+        "description": "Does the event loop? If false, the event will only be triggered once, after a delay equal to a number of ticks randomly chosen from the interval_range. If true, the event will loop, and each interval between events will be equal to a number of ticks randomly chosen from the interval_range.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "on_tick",
+        "title": "On Tick",
+        "description": "The event that will be triggered once or on an interval.",
+        "dataType": 22
+      }
+    ]
+  }
+}

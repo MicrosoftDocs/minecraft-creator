@@ -1,0 +1,37 @@
+{
+  "title": "Render Controller Set",
+  "fields": [
+    {
+      "id": "render_controllers",
+      "displayTitle": false,
+      "allowCreateDelete": false,
+      "dataType": 14,
+      "subForm": {
+        "fields": [
+          {
+            "id": "materials",
+            "title": "Materials",
+            "description": "A name or expression that expresses logic for which material to use to display this particular entity",
+            "dataType": 29
+          },
+          {
+            "id": "arrays",
+            "title": "Lists",
+            "dataType": 16,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "materials",
+                  "title": "Materials",
+                  "undefinedIfEmpty": true,
+                  "description": "Lists of materials that can be used in selection calculations",
+                  "dataType": 28
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

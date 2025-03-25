@@ -1,0 +1,72 @@
+{
+  "id": "minecraft:weighted_random_feature",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "samples": {
+    "example": [
+      {
+        "path": "Selecting and placing a variant of a flower",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:weighted_random_feature": {
+            "description": {
+              "identifier": "example:select_flower_feature"
+            },
+            "features": [
+              [
+                "example:white_flower_feature",
+                1
+              ],
+              [
+                "example:red_flower_feature",
+                2
+              ],
+              [
+                "example:blue_flower_feature",
+                1
+              ],
+              [
+                "example:yellow_flower_feature",
+                4
+              ]
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:weighted_random_feature",
+    "title": "Weighted Random Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 17,
+        "id": "features",
+        "title": "Features",
+        "isRequired": true
+      }
+    ]
+  }
+}

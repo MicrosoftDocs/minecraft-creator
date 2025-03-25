@@ -1,42 +1,32 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:player.exhaustion
-description: "A reference document detailing the 'player.exhaustion' entity component"
+title: "Entity Documentation - minecraft:player.exhaustion"
+description: "Describes the minecraft:player.exhaustion entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:player.exhaustion
 
-`minecraft:player.exhaustion` defines the player's exhaustion level.
+Defines the player's exhaustion level.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|max| *not set* | Integer| The maximum player.exhaustion of this entity |
-|value|  *not set* | Integer|  The initial value of the player.exhaustion |
+## Player Exhaustion Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max | *not set* | Integer number | A maximum value for a player's exhaustion. | Player: `20` | 
+| value | *not set* | Integer number | The initial value of a player's exhaustion level. |  | 
 
-```json
-"minecraft:player.exhaustion": {
-        "value": 0,
-        "max": 20
-      }
-```
+## Samples
 
-## Vanilla entities examples
+#### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
 
-### player
 
 ```json
 "minecraft:player.exhaustion": {
-        "value": 0,
-        "max": 20
-      }
+  "value": 0,
+  "max": 20
+}
 ```
-
-## Vanilla entities using `minecraft:exhaustion_values`
-
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)

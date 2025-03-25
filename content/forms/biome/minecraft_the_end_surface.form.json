@@ -1,0 +1,10 @@
+{
+  "id": "minecraft:the_end_surface",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "The End Surface",
+    "description": "Use default Minecraft End terrain generation.",
+    "fields": [],
+    "id": "minecraft:the_end_surface"
+  }
+}

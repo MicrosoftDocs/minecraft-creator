@@ -1,0 +1,88 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.swoop_attack",
+    "title": "Swoop Attack Behavior",
+    "description": "Allows an entity to attack using swoop attack behavior; Ideal for use with flying mobs. The behavior ends if the entity has a horizontal collision or gets hit.",
+    "fields": [
+      {
+        "id": "damage_reach",
+        "title": "Damage Reach",
+        "description": "Added to the base size of the entity, to determine the target's maximum allowable distance, when trying to deal attack damage.",
+        "defaultValue": 0.2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/phantom.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swoop_attack/",
+              "content": 0.2
+            }
+          ]
+        }
+      },
+      {
+        "id": "delay_range",
+        "title": "Delay Range",
+        "description": "Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/phantom.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swoop_attack/",
+              "content": [
+                10,
+                20
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "During swoop attack behavior, this determines the multiplier the entity's speed is modified by when moving toward the target.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/phantom.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swoop_attack/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/phantom.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swoop_attack/",
+              "content": 2
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/phantom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.swoop_attack/",
+          "content": {
+            "priority": 2,
+            "damage_reach": 0.2,
+            "speed_multiplier": 1,
+            "delay_range": [
+              10,
+              20
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

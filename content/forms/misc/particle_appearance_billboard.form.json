@@ -1,0 +1,46 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Appearance Billboard Misc",
+    "description": "Particle Appearance Billboard Misc",
+    "fields": [
+      {
+        "id": "size",
+        "title": "size",
+        "description": "size",
+        "dataType": 15,
+        "minLength": 2,
+        "maxLength": 2,
+        "subForm": {
+          "title": "Size",
+          "description": "Size",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "size",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "facing_camera_mode",
+        "title": "facing_camera_mode",
+        "description": "facing_camera_mode",
+        "dataType": 16
+      },
+      {
+        "id": "direction",
+        "title": "direction",
+        "description": "direction",
+        "dataType": 16
+      },
+      {
+        "id": "uv",
+        "title": "uv",
+        "description": "uv",
+        "dataType": 16
+      }
+    ]
+  }
+}

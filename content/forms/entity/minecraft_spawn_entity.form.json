@@ -1,0 +1,633 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:spawn_entity",
+    "title": "Spawn Entity",
+    "description": "Adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior).",
+    "fields": [
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "If present, the specified entity will only spawn if the filter evaluates to true.",
+        "dataType": 20
+      },
+      {
+        "id": "max_wait_time",
+        "title": "Max Wait Time",
+        "description": "Maximum amount of time to randomly wait in seconds before another entity is spawned.",
+        "defaultValue": 600,
+        "dataType": 0
+      },
+      {
+        "id": "min_wait_time",
+        "title": "Min Wait Time",
+        "description": "Minimum amount of time to randomly wait in seconds before another entity is spawned.",
+        "defaultValue": 300,
+        "dataType": 0
+      },
+      {
+        "id": "num_to_spawn",
+        "title": "Num To Spawn",
+        "description": "The number of entities of this type to spawn each time that this triggers.",
+        "defaultValue": 1,
+        "dataType": 0
+      },
+      {
+        "id": "should_leash",
+        "title": "Should Leash",
+        "description": "If true, this the spawned entity will be leashed to the parent.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "single_use",
+        "title": "Single Use",
+        "description": "If true, this component will only ever spawn the specified entity once.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "spawn_entity",
+        "title": "Spawn Entity",
+        "description": "Identifier of the entity to spawn, leave empty to spawn the item defined by \"spawn_item\" instead.",
+        "dataType": 2
+      },
+      {
+        "id": "spawn_event",
+        "title": "Spawn Event",
+        "description": "Event to call on the spawned entity when it spawns.",
+        "defaultValue": "minecraft:entity_born",
+        "dataType": 22
+      },
+      {
+        "id": "spawn_item",
+        "title": "Spawn Item",
+        "description": "Item identifier of the item to spawn.",
+        "defaultValue": "egg",
+        "dataType": 2
+      },
+      {
+        "id": "spawn_item_event",
+        "title": "Spawn Item Event",
+        "description": "Event to call on this entity when the item is spawned.",
+        "dataType": 22
+      },
+      {
+        "id": "spawn_method",
+        "title": "Spawn Method",
+        "description": "Method to use to spawn the entity.",
+        "defaultValue": "born",
+        "dataType": 2
+      },
+      {
+        "id": "spawn_sound",
+        "title": "Spawn Sound",
+        "description": "Identifier of the sound effect to play when the entity is spawned.",
+        "defaultValue": "plop",
+        "dataType": 2
+      },
+      {
+        "id": "entities",
+        "title": "Entities",
+        "dataType": 16,
+        "subForm": {
+          "id": "entities",
+          "title": "Entities",
+          "fields": [
+            {
+              "id": "min_wait_time",
+              "title": "Min_wait_time",
+              "dataType": 7,
+              "samples": {
+                "/vanilla/behavior_pack/entities/armadillo.json": [
+                  {
+                    "path": "min_wait_time",
+                    "content": 300
+                  }
+                ]
+              }
+            },
+            {
+              "id": "max_wait_time",
+              "title": "Max_wait_time",
+              "dataType": 7,
+              "samples": {
+                "/vanilla/behavior_pack/entities/armadillo.json": [
+                  {
+                    "path": "max_wait_time",
+                    "content": 600
+                  }
+                ]
+              }
+            },
+            {
+              "id": "spawn_sound",
+              "title": "Spawn_sound",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/armadillo.json": [
+                  {
+                    "path": "spawn_sound",
+                    "content": "mob.armadillo.scute_drop"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "spawn_item",
+              "title": "Spawn_item",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/armadillo.json": [
+                  {
+                    "path": "spawn_item",
+                    "content": "armadillo_scute"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "filters",
+              "title": "Filters",
+              "dataType": 15,
+              "subForm": {
+                "id": "filters",
+                "title": "Filters",
+                "fields": [
+                  {
+                    "id": "test",
+                    "title": "Test",
+                    "dataType": 2,
+                    "samples": {
+                      "/vanilla/behavior_pack/entities/chicken.json": [
+                        {
+                          "path": "test",
+                          "content": "rider_count"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "subject",
+                    "title": "Subject",
+                    "dataType": 2,
+                    "samples": {
+                      "/vanilla/behavior_pack/entities/chicken.json": [
+                        {
+                          "path": "subject",
+                          "content": "self"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "operator",
+                    "title": "Operator",
+                    "dataType": 2,
+                    "samples": {
+                      "/vanilla/behavior_pack/entities/chicken.json": [
+                        {
+                          "path": "operator",
+                          "content": "=="
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "value",
+                    "title": "Value",
+                    "dataType": 7,
+                    "samples": {
+                      "/vanilla/behavior_pack/entities/chicken.json": [
+                        {
+                          "path": "value",
+                          "content": 0
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "spawn_entity",
+              "title": "Spawn Entity",
+              "dataType": 2
+            },
+            {
+              "id": "spawn_event",
+              "title": "Spawn Event",
+              "dataType": 2
+            },
+            {
+              "id": "single_use",
+              "title": "Single Use",
+              "dataType": 2
+            },
+            {
+              "id": "num_to_spawn",
+              "title": "Num To Spawn",
+              "dataType": 7
+            },
+            {
+              "id": "should_leash",
+              "title": "Should Leash",
+              "dataType": 2
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:spawn_entity/",
+              "content": {
+                "min_wait_time": 300,
+                "max_wait_time": 600,
+                "spawn_sound": "mob.armadillo.scute_drop",
+                "spawn_item": "armadillo_scute"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:spawn_entity/",
+              "content": [
+                {
+                  "min_wait_time": 300,
+                  "max_wait_time": 600,
+                  "spawn_sound": "plop",
+                  "spawn_item": "egg",
+                  "filters": [
+                    {
+                      "test": "rider_count",
+                      "subject": "self",
+                      "operator": "==",
+                      "value": 0
+                    },
+                    {
+                      "test": "enum_property",
+                      "subject": "self",
+                      "domain": "minecraft:climate_variant",
+                      "value": "temperate"
+                    }
+                  ]
+                },
+                {
+                  "min_wait_time": 300,
+                  "max_wait_time": 600,
+                  "spawn_sound": "plop",
+                  "spawn_item": "brown_egg",
+                  "filters": [
+                    {
+                      "test": "rider_count",
+                      "subject": "self",
+                      "operator": "==",
+                      "value": 0
+                    },
+                    {
+                      "test": "enum_property",
+                      "subject": "self",
+                      "domain": "minecraft:climate_variant",
+                      "value": "warm"
+                    }
+                  ]
+                },
+                {
+                  "min_wait_time": 300,
+                  "max_wait_time": 600,
+                  "spawn_sound": "plop",
+                  "spawn_item": "blue_egg",
+                  "filters": [
+                    {
+                      "test": "rider_count",
+                      "subject": "self",
+                      "operator": "==",
+                      "value": 0
+                    },
+                    {
+                      "test": "enum_property",
+                      "subject": "self",
+                      "domain": "minecraft:climate_variant",
+                      "value": "cold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ocelot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wild_child_ocelot_spawn/minecraft:spawn_entity/",
+              "content": {
+                "filters": [
+                  {
+                    "test": "random_chance",
+                    "value": 7
+                  }
+                ],
+                "min_wait_time": 0,
+                "max_wait_time": 0,
+                "num_to_spawn": 2,
+                "single_use": true,
+                "spawn_entity": "minecraft:ocelot",
+                "spawn_event": "minecraft:entity_born",
+                "spawn_method": "born",
+                "spawn_sound": ""
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_pregnant/minecraft:spawn_entity/",
+              "content": {
+                "min_wait_time": 0,
+                "max_wait_time": 0,
+                "spawn_sound": "plop",
+                "spawn_item": "sniffer_egg",
+                "spawn_item_event": {
+                  "event": "on_egg_spawned",
+                  "target": "self"
+                },
+                "single_use": true
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:spawn_entity/",
+              "content": [
+                {
+                  "min_wait_time": 0,
+                  "max_wait_time": 0,
+                  "spawn_entity": "trader_llama",
+                  "spawn_event": "minecraft:from_wandering_trader",
+                  "single_use": true,
+                  "num_to_spawn": 2,
+                  "should_leash": true
+                }
+              ]
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/",
+              "content": {
+                "min_wait_time": 300,
+                "max_wait_time": 600,
+                "spawn_sound": "plop",
+                "spawn_item": "egg",
+                "filters": {
+                  "test": "rider_count",
+                  "subject": "self",
+                  "operator": "==",
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/",
+              "content": {
+                "min_wait_time": 300,
+                "max_wait_time": 600,
+                "spawn_sound": "plop",
+                "spawn_item": "egg",
+                "filters": {
+                  "test": "rider_count",
+                  "subject": "self",
+                  "operator": "==",
+                  "value": 0
+                }
+              }
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/memory_jar.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:spawn_entity/",
+              "content": {
+                "min_wait_time": 300,
+                "max_wait_time": 600,
+                "spawn_sound": "place",
+                "spawn_item": "egg"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:spawn_entity/",
+          "content": {
+            "entities": {
+              "min_wait_time": 300,
+              "max_wait_time": 600,
+              "spawn_sound": "mob.armadillo.scute_drop",
+              "spawn_item": "armadillo_scute"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:spawn_entity/",
+          "content": {
+            "entities": [
+              {
+                "min_wait_time": 300,
+                "max_wait_time": 600,
+                "spawn_sound": "plop",
+                "spawn_item": "egg",
+                "filters": [
+                  {
+                    "test": "rider_count",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": 0
+                  },
+                  {
+                    "test": "enum_property",
+                    "subject": "self",
+                    "domain": "minecraft:climate_variant",
+                    "value": "temperate"
+                  }
+                ]
+              },
+              {
+                "min_wait_time": 300,
+                "max_wait_time": 600,
+                "spawn_sound": "plop",
+                "spawn_item": "brown_egg",
+                "filters": [
+                  {
+                    "test": "rider_count",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": 0
+                  },
+                  {
+                    "test": "enum_property",
+                    "subject": "self",
+                    "domain": "minecraft:climate_variant",
+                    "value": "warm"
+                  }
+                ]
+              },
+              {
+                "min_wait_time": 300,
+                "max_wait_time": 600,
+                "spawn_sound": "plop",
+                "spawn_item": "blue_egg",
+                "filters": [
+                  {
+                    "test": "rider_count",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": 0
+                  },
+                  {
+                    "test": "enum_property",
+                    "subject": "self",
+                    "domain": "minecraft:climate_variant",
+                    "value": "cold"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wild_child_ocelot_spawn/minecraft:spawn_entity/",
+          "content": {
+            "entities": {
+              "filters": [
+                {
+                  "test": "random_chance",
+                  "value": 7
+                }
+              ],
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "num_to_spawn": 2,
+              "single_use": true,
+              "spawn_entity": "minecraft:ocelot",
+              "spawn_event": "minecraft:entity_born",
+              "spawn_method": "born",
+              "spawn_sound": ""
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/component_groups/sniffer_pregnant/minecraft:spawn_entity/",
+          "content": {
+            "entities": {
+              "min_wait_time": 0,
+              "max_wait_time": 0,
+              "spawn_sound": "plop",
+              "spawn_item": "sniffer_egg",
+              "spawn_item_event": {
+                "event": "on_egg_spawned",
+                "target": "self"
+              },
+              "single_use": true
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wandering_trader.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:spawn_entity/",
+          "content": {
+            "entities": [
+              {
+                "min_wait_time": 0,
+                "max_wait_time": 0,
+                "spawn_entity": "trader_llama",
+                "spawn_event": "minecraft:from_wandering_trader",
+                "single_use": true,
+                "num_to_spawn": 2,
+                "should_leash": true
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/",
+          "content": {
+            "entities": {
+              "min_wait_time": 300,
+              "max_wait_time": 600,
+              "spawn_sound": "plop",
+              "spawn_item": "egg",
+              "filters": {
+                "test": "rider_count",
+                "subject": "self",
+                "operator": "==",
+                "value": 0
+              }
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/",
+          "content": {
+            "entities": {
+              "min_wait_time": 300,
+              "max_wait_time": 600,
+              "spawn_sound": "plop",
+              "spawn_item": "egg",
+              "filters": {
+                "test": "rider_count",
+                "subject": "self",
+                "operator": "==",
+                "value": 0
+              }
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/",
+          "content": {
+            "entities": {
+              "min_wait_time": 300,
+              "max_wait_time": 600,
+              "spawn_sound": "plop",
+              "spawn_item": "egg",
+              "filters": {
+                "test": "rider_count",
+                "subject": "self",
+                "operator": "==",
+                "value": 0
+              }
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/memory_jar.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:spawn_entity/",
+          "content": {
+            "entities": {
+              "min_wait_time": 300,
+              "max_wait_time": 600,
+              "spawn_sound": "place",
+              "spawn_item": "egg"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

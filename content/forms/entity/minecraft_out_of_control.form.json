@@ -1,0 +1,31 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:out_of_control",
+    "title": "Out Of Control",
+    "description": "Defines the entity's 'out of control' state.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/boat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:above_bubble_column_down/minecraft:out_of_control/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:above_bubble_column_up/minecraft:out_of_control/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chest_boat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:above_bubble_column_down/minecraft:out_of_control/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:above_bubble_column_up/minecraft:out_of_control/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

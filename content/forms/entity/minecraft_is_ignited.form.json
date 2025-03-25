@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:is_ignited",
+    "title": "Is Ignited",
+    "description": "Sets that this entity is currently on fire.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/tnt_minecart.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:is_ignited/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:instant_explode_tnt/minecraft:is_ignited/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,951 @@
+{
+  "description": "Defines an entity's 'angry' state using a timer.",
+  "fields": [
+    {
+      "id": "angry_sound",
+      "description": "The sound event to play when the mob is angry",
+      "dataType": 2
+    },
+    {
+      "id": "sound_interval",
+      "description": "The range of time in seconds to randomly wait before playing the sound again.",
+      "dataType": 18
+    },
+    {
+      "id": "duration",
+      "description": "The amount of time in seconds that the entity will be angry.",
+      "dataType": 0
+    },
+    {
+      "id": "duration_delta",
+      "description": "Variance in seconds added to the duration [-delta, delta].",
+      "dataType": 0
+    },
+    {
+      "id": "filters",
+      "title": "Anger exemption filters",
+      "description": "Filter out mob types that it should not attack while angry (other Piglins)",
+      "dataType": 20
+    },
+    {
+      "id": "broadcast_anger",
+      "description": "If set, other entities of the same entity definition within the broadcastRange will also become angry",
+      "dataType": 1,
+      "defaultValue": false
+    },
+    {
+      "id": "broadcast_anger_on_attack",
+      "description": "If set, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks",
+      "dataType": 1,
+      "defaultValue": false
+    },
+    {
+      "id": "broadcast_range",
+      "description": "Distance in blocks within which other entities of the same entity type will become angry",
+      "dataType": 0,
+      "defaultValue": 20
+    },
+    {
+      "id": "broadcast_targets",
+      "description": "A list of entity families to broadcast anger to",
+      "dataType": 17
+    },
+    {
+      "id": "broadcast_filters",
+      "description": "Conditions that make this entry in the list valid",
+      "dataType": 20
+    },
+    {
+      "id": "calm_event",
+      "description": "Event to fire when this entity is calmed down",
+      "dataType": 8,
+      "lookupId": "entityTypeEvents"
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:angry",
+    "title": "Angry",
+    "description": "Defines the entity's 'angry' state using a timer.",
+    "fields": [
+      {
+        "id": "angry_sound",
+        "title": "Angry Sound",
+        "description": "The sound event to play when the mob is angry",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_hoglin/minecraft:angry/",
+              "content": "angry"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_zoglin/minecraft:angry/",
+              "content": "angry"
+            }
+          ]
+        }
+      },
+      {
+        "id": "broadcast_anger",
+        "title": "Broadcast Anger",
+        "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dolphin_angry/minecraft:angry/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_hoglin/minecraft:angry/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "broadcast_anger_on_attack",
+        "title": "Broadcast Anger On Attack",
+        "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "broadcast_anger_on_being_attacked",
+        "title": "Broadcast Anger On Being Attacked",
+        "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob is attacked",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "broadcast_anger_when_dying",
+        "title": "Broadcast Anger When Dying",
+        "description": "If false, when this mob is killed it does not spread its anger to other entities of the same entity definition within the broadcastRange",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "broadcast_filters",
+        "title": "Broadcast Filters",
+        "description": "Conditions that make this entry in the list valid",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_bee/minecraft:angry/",
+              "content": {
+                "test": "is_family",
+                "operator": "!=",
+                "value": "pacified"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_angry/minecraft:angry/",
+              "content": {
+                "test": "is_family",
+                "operator": "==",
+                "value": "panda_aggressive"
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
+              "content": {
+                "test": "is_family",
+                "operator": "==",
+                "value": "panda_aggressive"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:scared/minecraft:angry/",
+              "content": {
+                "test": "is_leashed_to",
+                "subject": "other",
+                "value": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "broadcast_range",
+        "title": "Broadcast Range",
+        "description": "Distance in blocks within which other entities of the same entity definition will become angry",
+        "defaultValue": 20,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dolphin_angry/minecraft:angry/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_hoglin/minecraft:angry/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_angry/minecraft:angry/",
+              "content": 41
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
+              "content": 41
+            }
+          ],
+          "/vanilla/behavior_pack/entities/polar_bear.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
+              "content": 20
+            }
+          ],
+          "/vanilla/behavior_pack/entities/silverfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:silverfish_angry/minecraft:angry/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "broadcast_targets",
+        "title": "Broadcast Targets",
+        "description": "A list of entity families to broadcast anger to",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:scared/minecraft:angry/",
+              "content": [
+                "llama",
+                "trader_llama"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "calm_event",
+        "title": "Calm Event",
+        "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being 'angry')",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_bee/minecraft:angry/",
+              "content": {
+                "event": "calmed_down",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:angry/",
+              "content": {
+                "event": "minecraft:on_calm",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dolphin_angry/minecraft:angry/",
+              "content": {
+                "event": "on_calm",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/enderman.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:enderman_angry/minecraft:angry/",
+              "content": {
+                "event": "minecraft:on_calm",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_hoglin/minecraft:angry/",
+              "content": {
+                "event": "become_calm_event",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
+              "content": {
+                "event": "minecraft:baby_on_calm",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/polar_bear.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
+              "content": {
+                "event": "minecraft:baby_on_calm",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:angry/",
+              "content": {
+                "event": "minecraft:become_calm",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/vindicator.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:vindicator_aggro/minecraft:angry/",
+              "content": {
+                "event": "minecraft:stop_aggro",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:scared/minecraft:angry/",
+              "content": {
+                "event": "minecraft:become_calm",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_zoglin/minecraft:angry/",
+              "content": {
+                "event": "become_calm_event",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "The amount of time in seconds that the entity will be angry",
+        "defaultValue": 25,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_bee/minecraft:angry/",
+              "content": 25
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:angry/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dolphin_angry/minecraft:angry/",
+              "content": 25
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_hoglin/minecraft:angry/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
+              "content": 4
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:angry/",
+              "content": -1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_angry/minecraft:angry/",
+              "content": 500
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/polar_bear.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
+              "content": 1
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
+              "content": 500
+            }
+          ],
+          "/vanilla/behavior_pack/entities/silverfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:silverfish_angry/minecraft:angry/",
+              "content": -1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:scared/minecraft:angry/",
+              "content": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration_delta",
+        "title": "Duration Delta",
+        "description": "Variance in seconds added to the duration [-delta, delta]",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:angry/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:angry/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "Filter out mob types that it should not attack while angry (other Piglins)",
+        "dataType": 20
+      },
+      {
+        "id": "sound_interval",
+        "title": "Sound Interval",
+        "description": "The range of time in seconds to randomly wait before playing the sound again",
+        "defaultValue": 0,
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_hoglin/minecraft:angry/",
+              "content": {
+                "range_min": 2,
+                "range_max": 5
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_zoglin/minecraft:angry/",
+              "content": {
+                "range_min": 2,
+                "range_max": 5
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "broadcastAnger",
+        "title": "BroadcastAnger",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_bee/minecraft:angry/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:scared/minecraft:angry/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "broadcastRange",
+        "title": "BroadcastRange",
+        "dataType": 7,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/angry_bee/minecraft:angry/",
+              "content": 20
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:scared/minecraft:angry/",
+              "content": 10
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/component_groups/angry_bee/minecraft:angry/",
+          "content": {
+            "duration": 25,
+            "broadcastAnger": true,
+            "broadcastRange": 20,
+            "broadcast_anger_when_dying": false,
+            "broadcast_filters": {
+              "test": "is_family",
+              "operator": "!=",
+              "value": "pacified"
+            },
+            "calm_event": {
+              "event": "calmed_down",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:angry/",
+          "content": {
+            "duration": 10,
+            "duration_delta": 3,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/dolphin_angry/minecraft:angry/",
+          "content": {
+            "duration": 25,
+            "broadcast_anger": true,
+            "broadcast_range": 16,
+            "calm_event": {
+              "event": "on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/enderman.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:enderman_angry/minecraft:angry/",
+          "content": {
+            "duration": 25,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/angry_hoglin/minecraft:angry/",
+          "content": {
+            "duration": 10,
+            "broadcast_anger": true,
+            "broadcast_range": 16,
+            "calm_event": {
+              "event": "become_calm_event",
+              "target": "self"
+            },
+            "angry_sound": "angry",
+            "sound_interval": {
+              "range_min": 2,
+              "range_max": 5
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
+          "content": {
+            "duration": 4,
+            "broadcast_anger": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:angry/",
+          "content": {
+            "duration": -1,
+            "broadcast_anger": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:panda_angry/minecraft:angry/",
+          "content": {
+            "duration": 500,
+            "broadcast_anger": true,
+            "broadcast_range": 41,
+            "broadcast_filters": {
+              "test": "is_family",
+              "operator": "==",
+              "value": "panda_aggressive"
+            },
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
+          "content": {
+            "duration": 1,
+            "broadcast_anger": true,
+            "broadcast_range": 41,
+            "broadcast_filters": {
+              "test": "is_family",
+              "operator": "==",
+              "value": "panda_aggressive"
+            },
+            "calm_event": {
+              "event": "minecraft:baby_on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
+          "content": {
+            "duration": 1,
+            "broadcast_anger": true,
+            "broadcast_range": 41,
+            "calm_event": {
+              "event": "minecraft:baby_on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
+          "content": {
+            "duration": 500,
+            "broadcast_anger": false,
+            "broadcast_range": 20,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/silverfish.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:silverfish_angry/minecraft:angry/",
+          "content": {
+            "duration": -1,
+            "broadcast_anger": true,
+            "broadcast_range": 20,
+            "broadcast_anger_when_dying": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:angry/",
+          "content": {
+            "duration": 10,
+            "duration_delta": 3,
+            "calm_event": {
+              "event": "minecraft:become_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
+          "content": {
+            "duration": 4,
+            "broadcast_anger": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:angry/",
+          "content": {
+            "duration": -1,
+            "broadcast_anger": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_defend_trader/minecraft:angry/",
+          "content": {
+            "duration": 10,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vindicator.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:vindicator_aggro/minecraft:angry/",
+          "content": {
+            "duration": -1,
+            "broadcast_anger": false,
+            "calm_event": {
+              "event": "minecraft:stop_aggro",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wandering_trader.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:scared/minecraft:angry/",
+          "content": {
+            "duration": 5,
+            "broadcastAnger": true,
+            "broadcastRange": 10,
+            "broadcast_targets": [
+              "llama",
+              "trader_llama"
+            ],
+            "broadcast_filters": {
+              "test": "is_leashed_to",
+              "subject": "other",
+              "value": true
+            },
+            "calm_event": {
+              "event": "minecraft:become_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_angry/minecraft:angry/",
+          "content": {
+            "duration": 25,
+            "broadcast_anger": true,
+            "broadcast_range": 20,
+            "broadcast_anger_when_dying": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/angry_zoglin/minecraft:angry/",
+          "content": {
+            "duration": 10,
+            "calm_event": {
+              "event": "become_calm_event",
+              "target": "self"
+            },
+            "angry_sound": "angry",
+            "sound_interval": {
+              "range_min": 2,
+              "range_max": 5
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_zombie_angry/minecraft:angry/",
+          "content": {
+            "duration": 25,
+            "broadcast_anger": true,
+            "broadcast_range": 20,
+            "broadcast_anger_when_dying": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
+          "content": {
+            "duration": 1,
+            "broadcast_anger": true,
+            "broadcast_range": 41,
+            "calm_event": {
+              "event": "minecraft:baby_on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
+          "content": {
+            "duration": 500,
+            "broadcast_anger": false,
+            "broadcast_range": 20,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
+          "content": {
+            "duration": 4,
+            "broadcast_anger": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:angry/",
+          "content": {
+            "duration": -1,
+            "broadcast_anger": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_defend_trader/minecraft:angry/",
+          "content": {
+            "duration": 10,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby_scared/minecraft:angry/",
+          "content": {
+            "duration": 1,
+            "broadcast_anger": true,
+            "broadcast_range": 41,
+            "calm_event": {
+              "event": "minecraft:baby_on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_hostile/minecraft:angry/",
+          "content": {
+            "duration": 500,
+            "broadcast_anger": false,
+            "broadcast_range": 20,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:angry/",
+          "content": {
+            "duration": 4,
+            "broadcast_anger": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:angry/",
+          "content": {
+            "duration": -1,
+            "broadcast_anger": false,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_defend_trader/minecraft:angry/",
+          "content": {
+            "duration": 10,
+            "calm_event": {
+              "event": "minecraft:on_calm",
+              "target": "self"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

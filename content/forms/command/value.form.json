@@ -1,0 +1,15 @@
+{
+  "fields": [
+    {
+      "id": "name",
+      "title": "Name",
+      "dataType": 2,
+      "readOnly": true
+    },
+    {
+      "id": "description",
+      "title": "Description",
+      "dataType": 13
+    }
+  ]
+}

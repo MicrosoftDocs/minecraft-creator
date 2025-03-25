@@ -1,0 +1,102 @@
+{
+  "fields": [],
+  "requires": [
+    {
+      "id": "targeting_entity_component",
+      "type": "targeting_entity_component"
+    },
+    {
+      "id": "minecraft:attack",
+      "type": "entity_component"
+    },
+    {
+      "id": "minecraft:variant",
+      "type": "entity_component"
+    }
+  ],
+  "restrictions": [
+    {
+      "id": "minecraft:slime",
+      "type": "entity_type"
+    },
+    {
+      "id": "minecraft:magma_cube",
+      "type": "entity_type"
+    }
+  ],
+  "note": "In order to attack, the entity must have a `runtime_identifier` set to `minecraft:slime` and a `variant` component with a value greater than 1. Otherwise it will still path towards a target, but it will not cause damage.",
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.slime_attack",
+    "title": "Slime Attack Behavior",
+    "description": "Causes the entity to grow tired every once in a while, while attacking.",
+    "fields": [
+      {
+        "id": "set_persistent",
+        "title": "Set Persistent",
+        "description": "Allows the actor to be set to persist upon targeting a player",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "During attack behavior, this multiplier modifies the entity's speed when moving toward the target.",
+        "defaultValue": 1,
+        "dataType": 3
+      },
+      {
+        "id": "x_max_rotation",
+        "title": "X Max Rotation",
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
+        "defaultValue": 10,
+        "dataType": 3
+      },
+      {
+        "id": "y_max_rotation",
+        "title": "Y Max Rotation",
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate while trying to look at the target.",
+        "defaultValue": 10,
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/magma_cube.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.slime_attack/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/slime.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.slime_attack/",
+              "content": 3
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.slime_attack/",
+          "content": {
+            "priority": 3
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/slime.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.slime_attack/",
+          "content": {
+            "priority": 3
+          }
+        }
+      ]
+    }
+  }
+}

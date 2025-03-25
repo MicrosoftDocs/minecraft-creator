@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.stay_while_sitting"
-description: "Describes the behavior.stay_while_sitting AI Goals"
+title: "Entity Documentation - minecraft:behavior.stay_while_sitting"
+description: "Describes the minecraft:behavior.stay_while_sitting ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.stay_while_sitting
+# Entity Documentation - minecraft:behavior.stay_while_sitting
 
 Allows the mob to stay put while it is in a sitting state instead of doing something else.
 
@@ -24,16 +24,7 @@ Allows the mob to stay put while it is in a sitting state instead of doing somet
 
 
 ```json
-{
-  "priority": 3
-}
-```
-
-#### [Ocelot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ocelot.json)
-
-
-```json
-{
+"minecraft:behavior.stay_while_sitting": {
   "priority": 3
 }
 ```
@@ -42,16 +33,7 @@ Allows the mob to stay put while it is in a sitting state instead of doing somet
 
 
 ```json
-{
+"minecraft:behavior.stay_while_sitting": {
   "priority": 2
-}
-```
-
-#### [Wolf](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wolf.json)
-
-
-```json
-{
-  "priority": 3
 }
 ```

@@ -1,0 +1,19 @@
+{
+  "id": "minecraft:player.saturation",
+  "title": "Player Saturation",
+  "description": "Defines the player's need for food.",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "The initial value of player saturation.",
+      "dataType": 0
+    },
+    {
+      "id": "max",
+      "title": "Maximum Value",
+      "description": "The maximum player saturation value.",
+      "dataType": 0
+    }
+  ]
+}

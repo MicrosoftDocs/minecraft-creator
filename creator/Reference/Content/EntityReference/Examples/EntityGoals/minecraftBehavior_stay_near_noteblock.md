@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.stay_near_noteblock"
-description: "Describes the behavior.stay_near_noteblock AI Goals"
+title: "Entity Documentation - minecraft:behavior.stay_near_noteblock"
+description: "Describes the minecraft:behavior.stay_near_noteblock ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.stay_near_noteblock
+# Entity Documentation - minecraft:behavior.stay_near_noteblock
 
 The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.
 
@@ -28,7 +28,7 @@ The entity will attempt to toss the items from its inventory to a nearby recentl
 
 
 ```json
-{
+"minecraft:behavior.stay_near_noteblock": {
   "priority": 5,
   "speed": 8,
   "start_distance": 16,

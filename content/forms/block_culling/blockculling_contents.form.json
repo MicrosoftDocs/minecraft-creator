@@ -1,0 +1,27 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "BlockCulling Contents",
+    "description": "BlockCulling Contents",
+    "fields": [
+      {
+        "id": "bone",
+        "title": "bone",
+        "description": "bone",
+        "dataType": 2
+      },
+      {
+        "id": "cube",
+        "title": "cube",
+        "description": "cube",
+        "dataType": 0
+      },
+      {
+        "id": "face",
+        "title": "enum SharedTypes_Facing",
+        "description": "enum SharedTypes_Facing",
+        "dataType": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "ShooterItemComponentLegacyFactoryData ShooterAmmunitionEntry",
+    "description": "ShooterItemComponentLegacyFactoryData ShooterAmmunitionEntry",
+    "fields": [
+      {
+        "id": "use_in_creative",
+        "title": "use_in_creative",
+        "description": "Can use in creative mode? Default is set to false.",
+        "dataType": 1
+      },
+      {
+        "id": "search_inventory",
+        "title": "search_inventory",
+        "description": "Can search inventory? Default is set to false.",
+        "dataType": 1
+      },
+      {
+        "id": "item",
+        "title": "item",
+        "description": "Ammunition item description identifier.",
+        "dataType": 16
+      },
+      {
+        "id": "use_offhand",
+        "title": "use_offhand",
+        "description": "Can use off-hand? Default is set to false.",
+        "dataType": 1
+      }
+    ]
+  }
+}

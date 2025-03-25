@@ -1,0 +1,56 @@
+{
+  "fields": [
+    {
+      "id": "burns_in_daylight",
+      "groupId": "minecraft:burns_in_daylight",
+      "dataType": 1,
+      "defaultValue": false,
+      "description": "Whether this entity burns in daylight"
+    },
+    {
+      "id": "can_climb",
+      "groupId": "minecraft:can_climb",
+      "dataType": 1,
+      "defaultValue": false,
+      "description": "Whether this entity can climb ladders"
+    },
+    {
+      "id": "can_fly",
+      "groupId": "minecraft:can_fly",
+      "dataType": 1,
+      "defaultValue": false,
+      "description": "Whether this entity can fly"
+    },
+    {
+      "id": "can_power_jump",
+      "groupId": "minecraft:can_power_jump",
+      "dataType": 1,
+      "defaultValue": false,
+      "description": "Whether this entity can power jump"
+    },
+    {
+      "id": "chested",
+      "altId": "Chested",
+      "groupId": "minecraft:is_chested",
+      "dataType": 0,
+      "defaultValue": false,
+      "description": "Whether this entity has a chest"
+    },
+    {
+      "id": "color",
+      "altId": "Color",
+      "groupId": "minecraft:color",
+      "dataType": 0,
+      "defaultValue": 0,
+      "description": "Palette color of the entity"
+    },
+    {
+      "id": "color2",
+      "altId": "Color2",
+      "groupId": "minecraft:color2",
+      "dataType": 0,
+      "defaultValue": 0,
+      "description": "Second palette color of the entity"
+    }
+  ]
+}

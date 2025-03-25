@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructure Processors BlockIgnore",
+    "description": "Specifies block types in the template that should be ignored by other processors.",
+    "fields": [
+      {
+        "id": "processor_type",
+        "title": "enum SharedTypes_v1_21_20_JigsawStructure_Processors_Type",
+        "description": "enum SharedTypes_v1_21_20_JigsawStructure_Processors_Type",
+        "dataType": 2
+      },
+      {
+        "id": "blocks",
+        "title": "blocks",
+        "description": "List of blocks evaluated on all blocks of a Structure Template. If a block is matched in the provided list the block will be ignored for processing.",
+        "dataType": 15
+      }
+    ]
+  }
+}

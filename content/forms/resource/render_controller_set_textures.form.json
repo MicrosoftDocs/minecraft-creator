@@ -1,0 +1,38 @@
+{
+  "title": "Render Controller Set",
+  "fields": [
+    {
+      "id": "render_controllers",
+      "displayTitle": false,
+      "allowCreateDelete": false,
+      "dataType": 14,
+      "subForm": {
+        "fields": [
+          {
+            "id": "textures",
+            "title": "Textures",
+            "description": "A name or expression that expresses logic for which texture to select",
+            "dataType": 17,
+            "allowCreateDelete": false
+          },
+          {
+            "id": "arrays",
+            "title": "Lists",
+            "dataType": 16,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "textures",
+                  "title": "Textures",
+                  "undefinedIfEmpty": true,
+                  "description": "Lists of textures that can be used in selection calculations",
+                  "dataType": 28
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

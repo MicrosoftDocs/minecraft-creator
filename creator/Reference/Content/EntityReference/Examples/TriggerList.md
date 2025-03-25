@@ -18,4 +18,4 @@ ms.date: 02/11/2025
 | [minecraft:on_start_takeoff](EntityTriggers/minecraftTrigger_on_start_takeoff.md)| Only usable by the Ender Dragon. |
 | [minecraft:on_target_acquired](EntityTriggers/minecraftTrigger_on_target_acquired.md)| Adds a trigger to call when this entity finds a target. |
 | [minecraft:on_target_escape](EntityTriggers/minecraftTrigger_on_target_escape.md)| Adds a trigger to call when this entity loses the target it currently has. |
-| [On wake with owner trigger](EntityTriggers/minecraftTrigger_on_wake_with_owner.md)| A trigger when a mob's tamed onwer wakes up. |
+| [minecraft:on_wake_with_owner](EntityTriggers/minecraftTrigger_on_wake_with_owner.md)| A trigger when a mob's tamed onwer wakes up. |

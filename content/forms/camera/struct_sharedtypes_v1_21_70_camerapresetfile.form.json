@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct SharedTypes V1 21 70 CameraPresetFile Camera",
+    "description": "Struct SharedTypes V1 21 70 CameraPresetFile Camera",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "Version of the JSON schema for this file. Camera preset requires at least version 1.19.50.",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:camera_preset",
+        "title": "minecraft:camera_preset",
+        "description": "minecraft:camera_preset",
+        "dataType": 16
+      }
+    ]
+  }
+}

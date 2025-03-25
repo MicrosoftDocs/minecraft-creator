@@ -1,0 +1,47 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:can_fly",
+    "title": "Can Fly",
+    "description": "Marks the entity as being able to fly, the pathfinder won't be restricted to paths where a solid block is required underneath it.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_fly/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_fly/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_fly/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_fly/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_fly/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_fly/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

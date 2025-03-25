@@ -1,0 +1,772 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.ranged_attack",
+    "title": "Ranged Attack Behavior",
+    "description": "Allows an entity to attack by using ranged shots. \"charge_shoot_trigger\" must be greater than 0 to enable charged up burst-shot attacks. Requires minecraft:shooter to define projectile behaviour.",
+    "fields": [
+      {
+        "id": "attack_interval",
+        "title": "Attack Interval",
+        "description": "Alternative to \"attack_interval_min\" & \"attack_interval_max\". Consistent reload-time (in seconds), when not using a charged shot. Does not scale with target-distance.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+              "content": 3.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/snow_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_interval_max",
+        "title": "Attack Interval Max",
+        "description": "Maximum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pillager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/shulker.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 3
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 3.8
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 0.8
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 0.8
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_interval_min",
+        "title": "Attack Interval Min",
+        "description": "Minimum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/witch.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 3
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 2.4
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 0.4
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 0.4
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_radius",
+        "title": "Attack Radius",
+        "description": "Minimum distance to target before this entity will attempt to shoot.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ghast.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 64
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
+              "content": 64
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:behavior.ranged_attack/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pillager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/shulker.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/snow_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 10
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 19
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 12
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 12
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_radius_min",
+        "title": "Attack Radius Min",
+        "description": "Minimum distance the target can be for this mob to fire. If the target is closer, this mob will move first before firing",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:behavior.ranged_attack/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "burst_interval",
+        "title": "Burst Interval",
+        "description": "Time (in seconds) between each individual shot when firing a burst of shots from a charged up attack.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 0.3
+            }
+          ]
+        }
+      },
+      {
+        "id": "burst_shots",
+        "title": "Burst Shots",
+        "description": "Number of shots fired every time the attacking entity uses a charged up attack.",
+        "defaultValue": 1,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "charge_charged_trigger",
+        "title": "Charge Charged Trigger",
+        "description": "Time (in seconds, then add \"charge_shoot_trigger\"), before a charged up attack is done charging. Charge-time decays while target is not in sight.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ghast.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "charge_shoot_trigger",
+        "title": "Charge Shoot Trigger",
+        "description": "Amount of time (in seconds, then doubled) a charged shot must be charging before reloading burst shots. Charge-time decays while target is not in sight.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ghast.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "ranged_fov",
+        "title": "Ranged Fov",
+        "description": "Field of view (in degrees) when using sensing to detect a target for attack.",
+        "defaultValue": 90,
+        "dataType": 3,
+        "samples": {
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 360
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 360
+            }
+          ]
+        }
+      },
+      {
+        "id": "set_persistent",
+        "title": "Set Persistent",
+        "description": "Allows the actor to be set to persist upon targeting a player",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "During attack behavior, this multiplier modifies the entity's speed when moving toward the target.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/snow_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 1.25
+            }
+          ],
+          "/vanilla/behavior_pack/entities/witch.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "swing",
+        "title": "Swing",
+        "description": "If a swing animation (using variable.attack_time) exists, this causes the actor to swing their arm(s) upon firing the ranged attack.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "target_in_sight_time",
+        "title": "Target In Sight Time",
+        "description": "Minimum amount of time (in seconds) the attacking entity needs to see the target before moving toward it.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:behavior.ranged_attack/",
+              "content": 0.1
+            }
+          ]
+        }
+      },
+      {
+        "id": "x_max_rotation",
+        "title": "X Max Rotation",
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
+        "defaultValue": 30,
+        "dataType": 3,
+        "samples": {
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 360
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 360
+            }
+          ]
+        }
+      },
+      {
+        "id": "y_max_head_rotation",
+        "title": "Y Max Head Rotation",
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
+        "defaultValue": 30,
+        "dataType": 3,
+        "samples": {
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 360
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+              "content": 360
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ghast.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
+              "content": 2
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:behavior.ranged_attack/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:behavior.ranged_attack/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pillager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/snow_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/component_groups/ranged_mode/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 3,
+            "burst_shots": 3,
+            "burst_interval": 0.3,
+            "charge_charged_trigger": 0,
+            "charge_shoot_trigger": 4,
+            "attack_interval_min": 3,
+            "attack_interval_max": 5,
+            "attack_radius": 16
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 0,
+            "attack_interval": 3.5,
+            "attack_radius": 15
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_mode/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 3,
+            "attack_interval_min": 1,
+            "attack_interval_max": 3,
+            "attack_radius": 10,
+            "swing": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 1,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 8,
+            "attack_interval_min": 1,
+            "attack_interval_max": 1,
+            "attack_radius": 8,
+            "attack_radius_min": 4,
+            "speed_multiplier": 1,
+            "target_in_sight_time": 0.1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ranged_attack/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 4,
+            "attack_interval_min": 1,
+            "attack_interval_max": 1,
+            "attack_radius": 8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/shulker.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+          "content": {
+            "attack_interval_min": 1,
+            "attack_interval_max": 3,
+            "attack_radius": 15
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 1,
+            "speed_multiplier": 1.25,
+            "attack_interval": 1,
+            "attack_radius": 10
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_defend_trader/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/witch.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1,
+            "attack_interval_min": 3,
+            "attack_interval_max": 3,
+            "attack_radius": 10
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_defend_trader/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_angry_wolf/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_defend_trader/minecraft:behavior.ranged_attack/",
+          "content": {
+            "priority": 2,
+            "attack_radius": 64,
+            "charge_shoot_trigger": 2,
+            "charge_charged_trigger": 1
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+          "content": {
+            "attack_interval_min": 2.4,
+            "attack_interval_max": 3.8,
+            "attack_radius": 19,
+            "ranged_fov": 360,
+            "y_max_head_rotation": 360,
+            "x_max_rotation": 360
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+          "content": {
+            "attack_interval_min": 0.4,
+            "attack_interval_max": 0.8,
+            "attack_radius": 15,
+            "ranged_fov": 360,
+            "y_max_head_rotation": 360,
+            "x_max_rotation": 360
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+          "content": {
+            "attack_interval_min": 1,
+            "attack_interval_max": 3,
+            "attack_radius": 15
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+          "content": {
+            "attack_interval_min": 0.4,
+            "attack_interval_max": 0.8,
+            "attack_radius": 12,
+            "ranged_fov": 360,
+            "y_max_head_rotation": 360,
+            "x_max_rotation": 360
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.ranged_attack/",
+          "content": {
+            "attack_interval_min": 0.4,
+            "attack_interval_max": 0.8,
+            "attack_radius": 12,
+            "ranged_fov": 360,
+            "y_max_head_rotation": 360,
+            "x_max_rotation": 360
+          }
+        }
+      ]
+    }
+  }
+}

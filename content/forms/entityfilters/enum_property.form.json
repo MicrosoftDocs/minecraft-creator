@@ -1,0 +1,600 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "enum_property",
+    "title": "Enum Property",
+    "description": "Returns true when the enum actor property matches the value provided.",
+    "fields": [
+      {
+        "id": "domain",
+        "title": "Domain",
+        "description": "(Required) The property name to look for",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/interact_filters/",
+              "content": "minecraft:armadillo_state"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/love_filters/",
+              "content": "minecraft:armadillo_state"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/creaking.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/0/",
+              "content": "minecraft:creaking_state"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/1/",
+              "content": "minecraft:creaking_state"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/egg.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn/0/filters/",
+              "content": "minecraft:climate_variant"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn/1/filters/",
+              "content": "minecraft:climate_variant"
+            }
+          ]
+        }
+      },
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:unroll/sequence/0/filters/all_of/0/",
+              "content": "not"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:unroll/sequence/1/filters/all_of/0/",
+              "content": "not"
+            }
+          ]
+        }
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/egg.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn/0/filters/",
+              "content": "other"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn/1/filters/",
+              "content": "other"
+            }
+          ]
+        }
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Required) A string value.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/interact_filters/",
+              "content": "unrolled"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/love_filters/",
+              "content": "unrolled"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:no_threat_detected/sequence/0/filters/all_of/0/any_of/0/",
+              "content": "rolled_up"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:no_threat_detected/sequence/0/filters/all_of/0/any_of/1/",
+              "content": "rolled_up_peeking"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:threat_detected/sequence/1/filters/any_of/0/",
+              "content": "rolled_up_relaxing"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:threat_detected/sequence/1/filters/any_of/1/",
+              "content": "rolled_up_unrolling"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:roll_up/sequence/0/filters/all_of/0/",
+              "content": "rolled_up"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:roll_up/sequence/0/filters/all_of/1/",
+              "content": "rolled_up_peeking"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:start_unrolling/sequence/0/filters/",
+              "content": "rolled_up_relaxing"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/creaking.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/0/",
+              "content": "hostile_observed"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/1/",
+              "content": "hostile_unobserved"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/0/",
+              "content": "hostile_observed"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/1/",
+              "content": "hostile_unobserved"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/1/filters/all_of/0/none_of/0/",
+              "content": "twitching"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/2/filters/all_of/0/",
+              "content": "twitching"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/2/filters/all_of/1/",
+              "content": "crumbling"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:become_hostile/filters/",
+              "content": "neutral"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:become_neutral/filters/",
+              "content": "neutral"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:crumble/filters/",
+              "content": "crumbling"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/egg.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn/0/filters/",
+              "content": "warm"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn/1/filters/",
+              "content": "cold"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/brown_egg/",
+              "content": "warm"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/blue_egg/",
+              "content": "cold"
+            }
+          ]
+        }
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/interact_filters/",
+              "content": "enum_property"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/love_filters/",
+              "content": "enum_property"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"enum_property\", \"subject\": \"self\", \"domain\": \"minecraft:can_climb\", \"operator\": \"equals\", \"value\": \"\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"enum_property\", \"domain\": \"minecraft:can_climb\", \"value\": \"\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:ageable/interact_filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "unrolled"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/love_filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "unrolled"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:ageable_grow_up/sequence/1/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "unrolled"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:no_threat_detected/sequence/0/filters/all_of/0/any_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "rolled_up"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:no_threat_detected/sequence/0/filters/all_of/0/any_of/1/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "rolled_up_peeking"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:threat_detected/sequence/0/filters/all_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "unrolled"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:threat_detected/sequence/1/filters/any_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "rolled_up_relaxing"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:threat_detected/sequence/1/filters/any_of/1/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "rolled_up_unrolling"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:unroll/sequence/0/filters/all_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "operator": "not",
+            "value": "unrolled"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:unroll/sequence/1/filters/all_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "operator": "not",
+            "value": "unrolled"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:unroll/sequence/2/filters/all_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "operator": "not",
+            "value": "unrolled"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:roll_up/sequence/0/filters/all_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "operator": "not",
+            "value": "rolled_up"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:roll_up/sequence/0/filters/all_of/1/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "operator": "not",
+            "value": "rolled_up_peeking"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:roll_up/sequence/1/filters/all_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "unrolled"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_peeking/sequence/0/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "rolled_up"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:stop_peeking/sequence/0/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "rolled_up_peeking"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_unrolling/sequence/0/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:armadillo_state",
+            "value": "rolled_up_relaxing"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creaking.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "value": "hostile_observed"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/1/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "value": "hostile_unobserved"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "value": "hostile_observed"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/1/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "value": "hostile_unobserved"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/1/filters/all_of/0/none_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "value": "twitching"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/2/filters/all_of/0/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "operator": "not",
+            "value": "twitching"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:environment_sensor/triggers/2/filters/all_of/1/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "operator": "not",
+            "value": "crumbling"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:become_hostile/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "value": "neutral"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:become_neutral/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "operator": "not",
+            "value": "neutral"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_target_start_looking/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "value": "hostile_unobserved"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_target_stop_looking/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "value": "hostile_observed"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_twitching/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "operator": "not",
+            "value": "twitching"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:crumble/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:creaking_state",
+            "operator": "not",
+            "value": "crumbling"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/egg.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn/0/filters/",
+          "content": {
+            "test": "enum_property",
+            "subject": "other",
+            "domain": "minecraft:climate_variant",
+            "value": "warm"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:projectile/on_hit/spawn_chance/on_spawn/1/filters/",
+          "content": {
+            "test": "enum_property",
+            "subject": "other",
+            "domain": "minecraft:climate_variant",
+            "value": "cold"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/brown_egg/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:climate_variant",
+            "value": "warm"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:projectile/on_hit/particle_on_hit/particle_item_name/blue_egg/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:climate_variant",
+            "value": "cold"
+          }
+        }
+      ]
+    }
+  }
+}

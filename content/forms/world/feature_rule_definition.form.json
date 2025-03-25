@@ -1,0 +1,63 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Feature Rule Definition World",
+    "description": "Feature Rule Definition World",
+    "fields": [
+      {
+        "id": "description",
+        "title": "description",
+        "description": "Identifier for the Feature Rule and Feture to place.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Feature Rule Description",
+          "description": "Feature Rule Description",
+          "fields": [
+            {
+              "id": "identifier",
+              "title": "identifier",
+              "description": "The name of this feature rule in the format 'namespace_name:rule_name'. 'rule_name' must match the filename.",
+              "dataType": 2
+            },
+            {
+              "id": "places_feature",
+              "title": "places_feature",
+              "description": "Named reference to the feature controlled by this rule.",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "conditions",
+        "title": "conditions",
+        "description": "Parameters to control where and when the feature will be placed.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Feature Rule Conditions",
+          "description": "Feature Rule Conditions",
+          "fields": [
+            {
+              "id": "placement_pass",
+              "title": "placement_pass",
+              "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
+              "dataType": 2
+            },
+            {
+              "id": "minecraft:biome_filter",
+              "title": "minecraft:biome_filter",
+              "description": "List of filter tests to determine which biomes this rule will attach to.",
+              "dataType": 16
+            }
+          ]
+        }
+      },
+      {
+        "id": "distribution",
+        "title": "distribution",
+        "description": "Parameters controlling the initial scatter of the feature.",
+        "dataType": 16
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:is_shaking",
+    "title": "Is Shaking",
+    "description": "Sets that this entity is currently shaking.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/start_zombification/minecraft:is_shaking/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:convert_to_zombie/minecraft:is_shaking/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft:is_shaking/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/component_groups/start_zombification/minecraft:is_shaking/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/start_zombification/minecraft:is_shaking/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:is_shaking/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:start_suffocating/minecraft:is_shaking/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/component_groups/to_villager/minecraft:is_shaking/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/to_villager/minecraft:is_shaking/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:convert_to_drowned/minecraft:is_shaking/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:convert_to_baby_drowned/minecraft:is_shaking/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:convert_to_drowned/minecraft:is_shaking/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

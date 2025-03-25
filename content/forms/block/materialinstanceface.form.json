@@ -1,0 +1,203 @@
+{
+  "id": "*",
+  "title": "*",
+  "fields": [
+    {
+      "id": "texture",
+      "title": "Texture",
+      "description": "Texture name for the material.",
+      "dataType": 2,
+      "lookupId": "terrainTexture",
+      "samples": {
+        "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
+          {
+            "path": "texture",
+            "content": "bubble_fish_blue"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ambient_occlusion",
+      "title": "Ambient Occlusion",
+      "dataType": 3,
+      "description": "If this material has ambient occlusion applied when lighting, shadows will be created around and underneath the block. Decimal value controls exponent applied to a value after lighting."
+    },
+    {
+      "id": "render_method",
+      "title": "Render Method",
+      "description": "The render method to use.",
+      "dataType": 2,
+      "mustMatchChoices": true,
+      "choices": [
+        {
+          "id": "opaque",
+          "title": "Opaque",
+          "description": "Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency"
+        },
+        {
+          "id": "double_sided",
+          "title": "Double Sided",
+          "description": "Used for completely disabling backface culling."
+        },
+        {
+          "id": "blend",
+          "title": "Blend",
+          "description": "Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures)."
+        },
+        {
+          "id": "alpha_test",
+          "title": "Alpha Test",
+          "description": "Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling."
+        },
+        {
+          "id": "alpha_test_single_sided",
+          "title": "Alpha Test (Single Sided)",
+          "description": "Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling."
+        }
+      ],
+      "samples": {
+        "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
+          {
+            "path": "render_method",
+            "content": "blend"
+          }
+        ]
+      }
+    },
+    {
+      "id": "face_dimming",
+      "title": "Face Dimming",
+      "description": "This material should be dimmed by the direction it's facing.",
+      "dataType": 2,
+      "samples": {
+        "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
+          {
+            "path": "face_dimming",
+            "content": true
+          }
+        ]
+      }
+    }
+  ],
+  "samples": {
+    "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/blue_bubble_fish.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "bubble_fish_blue",
+          "render_method": "blend",
+          "face_dimming": true
+        }
+      }
+    ],
+    "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/california_roll.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "sushi_wrap"
+        }
+      }
+    ],
+    "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/green_bubble_fish.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "bubble_fish_green",
+          "render_method": "blend",
+          "face_dimming": true
+        }
+      }
+    ],
+    "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/orange_bubble_fish.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "bubble_fish_orange",
+          "render_method": "blend",
+          "face_dimming": true
+        }
+      }
+    ],
+    "/samples/custom_blocks/behavior_packs/custom_blocks/blocks/salmon_roll.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "sushi_wrap"
+        }
+      }
+    ],
+    "/samples/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "orange_ore",
+          "render_method": "opaque"
+        }
+      }
+    ],
+    "/samples/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "apple_block",
+          "render_method": "opaque"
+        }
+      }
+    ],
+    "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "frond_top",
+          "render_method": "alpha_test"
+        }
+      }
+    ],
+    "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_corner.block.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "palm_leave_corner",
+          "render_method": "alpha_test"
+        }
+      }
+    ],
+    "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_tip.block.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "palm_leave_tip",
+          "render_method": "alpha_test"
+        }
+      }
+    ],
+    "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "palm_leave",
+          "render_method": "alpha_test"
+        }
+      }
+    ],
+    "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_tree_top.block.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "palm_tree_top",
+          "render_method": "alpha_test"
+        }
+      }
+    ],
+    "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_trunk.block.json": [
+      {
+        "path": "/minecraft:block/components/minecraft:material_instances/",
+        "content": {
+          "texture": "palm_trunk",
+          "render_method": "alpha_test"
+        }
+      }
+    ]
+  }
+}

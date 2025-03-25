@@ -1,0 +1,322 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.random_swim",
+    "title": "Random Swim Behavior",
+    "description": "Allows an entity to randomly move through water",
+    "fields": [
+      {
+        "id": "avoid_surface",
+        "title": "Avoid Surface",
+        "description": "If true, the mob will avoid surface water blocks by swimming below them",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "interval",
+        "title": "Interval",
+        "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
+        "defaultValue": 120,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 80
+            }
+          ],
+          "/vanilla/behavior_pack/entities/tadpole.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 100
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 0.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fish.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "xz_dist",
+        "title": "Xz Dist",
+        "description": "Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1",
+        "defaultValue": 10,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 30
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 20
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fish.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 30
+            }
+          ]
+        }
+      },
+      {
+        "id": "y_dist",
+        "title": "Y Dist",
+        "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
+        "defaultValue": 7,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fish.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 15
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 7
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fish.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 7
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/tadpole.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+              "content": 2
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 8,
+            "interval": 0,
+            "xz_dist": 30,
+            "y_dist": 15
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 5,
+            "interval": 0,
+            "xz_dist": 20
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 7,
+            "speed_multiplier": 0.5,
+            "avoid_surface": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1,
+            "xz_dist": 16,
+            "y_dist": 4,
+            "interval": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 7,
+            "speed_multiplier": 1,
+            "interval": 80,
+            "avoid_surface": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pufferfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1,
+            "xz_dist": 16,
+            "y_dist": 4,
+            "interval": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/salmon.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "speed_multiplier": 1,
+            "priority": 3,
+            "xz_dist": 16,
+            "y_dist": 4,
+            "interval": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tadpole.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 2,
+            "interval": 100
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tropicalfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1,
+            "xz_dist": 16,
+            "y_dist": 4,
+            "interval": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/turtle.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 7,
+            "interval": 0,
+            "xz_dist": 30,
+            "y_dist": 15
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 7,
+            "interval": 0,
+            "xz_dist": 30,
+            "y_dist": 15
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_swim/",
+          "content": {
+            "priority": 7,
+            "interval": 0,
+            "xz_dist": 30,
+            "y_dist": 15
+          }
+        }
+      ]
+    }
+  }
+}

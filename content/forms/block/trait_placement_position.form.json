@@ -1,0 +1,23 @@
+{
+  "fields": [
+    {
+      "id": "enabled_states",
+      "title": "Enabled States",
+      "dataType": 33,
+      "choices": [
+        {
+          "id": "minecraft:block_face",
+          "title": "Block Face",
+          "description": "A 6-value state representing the face on which the block was placed. Values for this state are 'up', 'down', 'north', 'south', 'east', and 'west'. For example, if a block using the minecraft:block_face is placed on the south face of a neighboring block, the state value will be 'south'."
+        },
+        {
+          "id": "minecraft:vertical_half",
+          "title": "Vertical Half",
+          "description": "A 2-value state specifying whether a block was placed in the top or bottom half of a block. The values for this state are 'bottom' and 'top'. For blocks using vertical half, if the block is placed on the 'down' face of a block or above the midline of a horizontal face, the state value will be 'top'."
+        }
+      ]
+    }
+  ],
+  "title": "Placement Position",
+  "description": "Contains information about where the player placed the block. This allows a block to replicate the upside-down placement of slabs and stairs, as well as the attachment behavior of torches and vines."
+}

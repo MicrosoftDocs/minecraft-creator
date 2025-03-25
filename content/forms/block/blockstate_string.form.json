@@ -1,0 +1,13 @@
+{
+  "title": "Text (String) Block State",
+  "description": "This is a property that can be true or false.",
+  "fields": [
+    {
+      "id": "values",
+      "title": "Choices",
+      "description": "The set of allowed text values for this state.",
+      "defaultValue": ["value1", "value2"],
+      "dataType": 17
+    }
+  ]
+}

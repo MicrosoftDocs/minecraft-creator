@@ -1,0 +1,180 @@
+{
+  "description": "Defines the conditions and behavior of a rideable entity's boost.",
+  "fields": [
+    {
+      "id": "boost_items",
+      "description": "List of items that can be used to boost while riding this entity.",
+      "dataType": 16,
+      "subForm": {
+        "fields": [
+          {
+            "id": "damage",
+            "description": "This is the damage that the item will take each time it is used.",
+            "dataType": 17
+          },
+          {
+            "id": "item",
+            "dataType": 2,
+            "description": "Name of the item that can be used to boost."
+          },
+          {
+            "id": "replace_item",
+            "dataType": 2,
+            "description": "The item used to boost will become this item once it is used up."
+          }
+        ]
+      }
+    },
+    {
+      "id": "duration",
+      "description": "Time in seconds for the boost.",
+      "dataType": 3,
+      "defaultValue": 3
+    },
+    {
+      "id": "speed_multiplier",
+      "description": "Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast.",
+      "dataType": 3,
+      "defaultValue": 1
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:boostable",
+    "title": "Boostable",
+    "description": "Defines the conditions and behavior of a rideable entity's boost.",
+    "fields": [
+      {
+        "id": "boost_items",
+        "title": "Boost Items",
+        "description": "List of items that can be used to boost while riding this entity. Each item has the following properties:",
+        "dataType": 15,
+        "subForm": {
+          "description": "List of items that can be used to boost while riding this entity. Each item has the following properties:",
+          "fields": [
+            {
+              "id": "damage",
+              "title": "Damage",
+              "description": "This is the damage that the item will take each time it is used.",
+              "defaultValue": 1,
+              "dataType": 0
+            },
+            {
+              "id": "item",
+              "title": "Item",
+              "description": "Name of the item that can be used to boost.",
+              "dataType": 2
+            },
+            {
+              "id": "replace_item",
+              "title": "Replace Item",
+              "description": "The item used to boost will become this item once it is used up.",
+              "dataType": 2
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:boostable/",
+              "content": [
+                {
+                  "item": "carrotOnAStick",
+                  "damage": 2,
+                  "replace_item": "fishing_rod"
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:boostable/",
+              "content": [
+                {
+                  "item": "warped_fungus_on_a_stick",
+                  "damage": 1,
+                  "replace_item": "fishing_rod"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Time in seconds for the boost.",
+        "defaultValue": 3,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:boostable/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:boostable/",
+              "content": 16
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast. Requires \"format_version\" of 1.20 or more, otherwise the value 1.35 will be used.",
+        "defaultValue": 1.35,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:boostable/",
+              "content": 1.35
+            }
+          ],
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:boostable/",
+              "content": 1.35
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:boostable/",
+          "content": {
+            "speed_multiplier": 1.35,
+            "duration": 3,
+            "boost_items": [
+              {
+                "item": "carrotOnAStick",
+                "damage": 2,
+                "replace_item": "fishing_rod"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:boostable/",
+          "content": {
+            "speed_multiplier": 1.35,
+            "duration": 16,
+            "boost_items": [
+              {
+                "item": "warped_fungus_on_a_stick",
+                "damage": 1,
+                "replace_item": "fishing_rod"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "minecraft:knockback_resistance",
+  "title": "Knockback Resistance",
+  "description": "Compels an entity to resist being knocked backwards by a melee attack.",
+  "scalarFieldUpgradeName": "value",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "The amount of knockback resistance that an entity has.",
+      "dataType": 3
+    },
+    {
+      "id": "max",
+      "title": "Maximum Value",
+      "description": "Maximum potential knockback resistence that this has.",
+      "dataType": 3
+    }
+  ]
+}

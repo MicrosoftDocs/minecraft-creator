@@ -1,0 +1,137 @@
+{
+  "fields": [],
+  "description": "Used by record items to play music.",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "comparator_signal": 1,
+          "duration": 5,
+          "sound_event": "ambient.tame"
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "title": "Record",
+    "description": "Record Item Component. Used by record items to play music.",
+    "fields": [
+      {
+        "id": "sound_event",
+        "title": "enum SharedTypes_Legacy_LevelSoundEvent",
+        "description": "Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic.",
+        "dataType": 2,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:record/",
+              "content": "pre_ram.screamer"
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "duration",
+        "description": "Specifies duration of sound event in seconds, float value.",
+        "dataType": 3,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:record/",
+              "content": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "comparator_signal",
+        "title": "comparator_signal",
+        "description": "Specifies signal strength for comparator blocks to use, from 1 - 13.",
+        "dataType": 0,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:record/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:record/",
+          "content": {
+            "comparator_signal": 1,
+            "duration": 5,
+            "sound_event": "pre_ram.screamer"
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Record",
+    "description": "Record Item Component. Used by record items to play music.",
+    "fields": [
+      {
+        "id": "sound_event",
+        "title": "enum SharedTypes_Legacy_LevelSoundEvent",
+        "description": "Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic.",
+        "dataType": 2,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:record/",
+              "content": "pre_ram.screamer"
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "duration",
+        "description": "Specifies duration of sound event in seconds, float value.",
+        "dataType": 3,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:record/",
+              "content": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "comparator_signal",
+        "title": "comparator_signal",
+        "description": "Specifies signal strength for comparator blocks to use, from 1 - 13.",
+        "dataType": 0,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:record/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "id": "minecraft:record",
+    "samples": {
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:record/",
+          "content": {
+            "comparator_signal": 1,
+            "duration": 5,
+            "sound_event": "pre_ram.screamer"
+          }
+        }
+      ]
+    }
+  }
+}

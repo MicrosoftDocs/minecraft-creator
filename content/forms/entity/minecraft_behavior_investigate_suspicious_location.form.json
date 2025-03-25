@@ -1,0 +1,65 @@
+{
+  "fields": [],
+  "requires": [
+    {
+      "id": "minecraft:suspect_tracking",
+      "type": "entity_component"
+    }
+  ],
+  "description": "Allows this entity to move towards a \"suspicious\" position based on data gathered in `minecraft:suspect_tracking`.",
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.investigate_suspicious_location",
+    "title": "Investigate Suspicious Location Behavior",
+    "description": "Allows this entity to move towards a \"suspicious\" position based on data gathered in minecraft:suspect_tracking",
+    "fields": [
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the entity considers it has reached it's target position.",
+        "defaultValue": 1.5,
+        "dataType": 3
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.investigate_suspicious_location/",
+              "content": 0.7
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.investigate_suspicious_location/",
+              "content": 5
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.investigate_suspicious_location/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

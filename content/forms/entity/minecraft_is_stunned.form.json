@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:is_stunned",
+    "title": "Is Stunned",
+    "description": "Sets that this entity is currently stunned.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/ravager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/stunned/minecraft:is_stunned/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

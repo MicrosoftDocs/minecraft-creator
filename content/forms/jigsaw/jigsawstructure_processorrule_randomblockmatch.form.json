@@ -1,0 +1,27 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructure ProcessorRule RandomBlockMatch",
+    "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
+    "fields": [
+      {
+        "id": "predicate_type",
+        "title": "PositionalBlockRuleAxis",
+        "description": "PositionalBlockRuleAxis",
+        "dataType": 2
+      },
+      {
+        "id": "block",
+        "title": "block",
+        "description": "The block to match against.",
+        "dataType": 2
+      },
+      {
+        "id": "probability",
+        "title": "probability",
+        "description": "Probability of the evaluating to true when the block matches.",
+        "dataType": 3
+      }
+    ]
+  }
+}

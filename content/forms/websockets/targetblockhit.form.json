@@ -1,0 +1,18 @@
+{
+  "id": "TargetBlockHit",
+  "title": "Target Block Hit",
+  "description": "A target block was hit.",
+  "fields": [
+    {
+      "id": "player",
+      "description": "Identifier of the player that has moved.",
+      "dataType": 16,
+      "subFormId": "websockets/Player"
+    },
+    {
+      "id": "redstoneLevel",
+      "description": "Redstone level of the target block, from the hit. The closer a projectile is to the center, the higher the redstone level.",
+      "dataType": 0
+    }
+  ]
+}

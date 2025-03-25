@@ -1,0 +1,116 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:reflect_projectiles",
+    "title": "Reflect Projectiles",
+    "description": "[EXPERIMENTAL] Allows an entity to reflect projectiles.",
+    "fields": [
+      {
+        "id": "azimuth_angle",
+        "title": "Azimuth Angle",
+        "description": "[EXPERIMENTAL] A Molang expression defining the angle in degrees to add to the projectile's y axis rotation.",
+        "defaultValue": "0",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:reflect_projectiles/",
+              "content": "180.0 + Math.random(-20.0, 20.0)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "elevation_angle",
+        "title": "Elevation Angle",
+        "description": "[EXPERIMENTAL] A Molang expression defining the angle in degrees to add to the projectile's x axis rotation.",
+        "defaultValue": "0",
+        "dataType": 2
+      },
+      {
+        "id": "reflected_projectiles",
+        "title": "Reflected Projectiles",
+        "description": "[EXPERIMENTAL] An array of strings defining the types of projectiles that are reflected when they hit the entity.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:reflect_projectiles/",
+              "content": [
+                "xp_bottle",
+                "thrown_trident",
+                "shulker_bullet",
+                "dragon_fireball",
+                "arrow",
+                "snowball",
+                "egg",
+                "fireball",
+                "splash_potion",
+                "ender_pearl",
+                "wither_skull",
+                "wither_skull_dangerous",
+                "small_fireball",
+                "lingering_potion",
+                "llama_spit",
+                "fireworks_rocket",
+                "fishing_hook"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "reflection_scale",
+        "title": "Reflection Scale",
+        "description": "[EXPERIMENTAL] A Molang expression defining the velocity scaling of the reflected projectile. Values below 1 decrease the projectile's velocity, and values above 1 increase it.",
+        "defaultValue": "1",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:reflect_projectiles/",
+              "content": "0.5"
+            }
+          ]
+        }
+      },
+      {
+        "id": "reflection_sound",
+        "title": "Reflection Sound",
+        "description": "[EXPERIMENTAL] A string defining the name of the sound event to be played when a projectile is reflected. \"reflect\" unless specified.",
+        "defaultValue": "reflect",
+        "dataType": 2
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:reflect_projectiles/",
+          "content": {
+            "reflected_projectiles": [
+              "xp_bottle",
+              "thrown_trident",
+              "shulker_bullet",
+              "dragon_fireball",
+              "arrow",
+              "snowball",
+              "egg",
+              "fireball",
+              "splash_potion",
+              "ender_pearl",
+              "wither_skull",
+              "wither_skull_dangerous",
+              "small_fireball",
+              "lingering_potion",
+              "llama_spit",
+              "fireworks_rocket",
+              "fishing_hook"
+            ],
+            "azimuth_angle": "180.0 + Math.random(-20.0, 20.0)",
+            "reflection_scale": "0.5"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "PlayerTraveled",
+  "title": "Player Traveled",
+  "description": "A player has moved positions.",
+  "fields": [
+    {
+      "id": "player",
+      "description": "Identifier of the player that has moved.",
+      "dataType": 16,
+      "subFormId": "websockets/Player"
+    },
+    {
+      "id": "travelMethod",
+      "description": "Travel method type.",
+      "dataType": 0
+    },
+    {
+      "id": "vehicle",
+      "description": "If the player is riding another entity, a description of the entity being ridden.",
+      "dataType": 0
+    },
+    {
+      "id": "isUnderwater",
+      "description": "True if the player is underwater.",
+      "dataType": 1
+    },
+    {
+      "id": "newBiome",
+      "description": "If the player has entered a new biome, identifier of the type of biome.",
+      "dataType": 0
+    },
+    {
+      "id": "metersTravelled",
+      "description": "Meters travelled in the last positional move.",
+      "dataType": 0
+    }
+  ]
+}

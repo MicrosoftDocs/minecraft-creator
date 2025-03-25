@@ -1,0 +1,43 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Initial Spin Misc",
+    "description": "Particle Initial Spin Misc",
+    "fields": [
+      {
+        "id": "rotation",
+        "title": "rotation",
+        "description": "rotation",
+        "dataType": 16,
+        "subForm": {
+          "title": "Rotation",
+          "description": "Rotation",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "rotation",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "rotation_rate",
+        "title": "rotation_rate",
+        "description": "rotation_rate",
+        "dataType": 16,
+        "subForm": {
+          "title": "Rotation Rate",
+          "description": "Rotation Rate",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "rotation_rate",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

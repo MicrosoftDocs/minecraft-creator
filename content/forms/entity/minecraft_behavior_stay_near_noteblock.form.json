@@ -1,0 +1,90 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.stay_near_noteblock",
+    "title": "Stay Near Noteblock Behavior",
+    "description": "The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.",
+    "fields": [
+      {
+        "id": "listen_time",
+        "title": "Listen Time",
+        "description": "Sets the time an entity should stay near a noteblock after hearing it.",
+        "defaultValue": 30,
+        "dataType": 0
+      },
+      {
+        "id": "speed",
+        "title": "Speed",
+        "description": "Sets the entity's speed when moving toward the block.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stay_near_noteblock/",
+              "content": 8
+            }
+          ]
+        }
+      },
+      {
+        "id": "start_distance",
+        "title": "Start Distance",
+        "description": "Sets the distance the entity needs to be away from the block to attempt to start the goal.",
+        "defaultValue": 10,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stay_near_noteblock/",
+              "content": 16
+            }
+          ]
+        }
+      },
+      {
+        "id": "stop_distance",
+        "title": "Stop Distance",
+        "description": "Sets the distance from the block the entity will attempt to reach.",
+        "defaultValue": 2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stay_near_noteblock/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stay_near_noteblock/",
+              "content": 5
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.stay_near_noteblock/",
+          "content": {
+            "priority": 5,
+            "speed": 8,
+            "start_distance": 16,
+            "stop_distance": 4
+          }
+        }
+      ]
+    }
+  }
+}

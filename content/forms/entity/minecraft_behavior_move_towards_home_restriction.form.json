@@ -1,0 +1,114 @@
+{
+  "fields": [],
+  "requires": [
+    {
+      "id": "minecraft:home",
+      "type": "entity_component"
+    }
+  ],
+  "description": "Allows entities with a `minecraft:home` component to move towards their home position. \r\n\t\tIf `restriction_radius` is set, entities will be able to run this behavior only if outside of it.",
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.move_towards_home_restriction",
+    "title": "Move Towards Home Restriction Behavior",
+    "description": "\r\n\t\tAllows entities with a \"minecraft:home\" component to move towards their home position. \r\n\t\tIf \"restriction_radius\" is set, entities will be able to run this behavior only if outside of it.\r\n\t",
+    "fields": [
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "This multiplier modifies the entity's speed when moving towards its restriction.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+              "content": 0.6
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+              "content": 9
+            }
+          ],
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+              "content": 6
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+          "content": {
+            "priority": 9
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wandering_trader.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.move_towards_home_restriction/",
+          "content": {
+            "priority": 6,
+            "speed_multiplier": 0.6
+          }
+        }
+      ]
+    }
+  }
+}

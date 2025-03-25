@@ -1,0 +1,56 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Appearance Billboard Flipbook Data 1.21.0 Misc",
+    "description": "Particle Appearance Billboard Flipbook Data 1.21.0 Misc",
+    "fields": [
+      {
+        "id": "base_UV",
+        "title": "base_UV",
+        "description": "base_UV",
+        "dataType": 15
+      },
+      {
+        "id": "size_UV",
+        "title": "size_UV",
+        "description": "size_UV",
+        "dataType": 15
+      },
+      {
+        "id": "step_UV",
+        "title": "step_UV",
+        "description": "step_UV",
+        "dataType": 15
+      },
+      {
+        "id": "max_frame",
+        "title": "max_frame",
+        "description": "max_frame",
+        "dataType": 16,
+        "subForm": {
+          "title": "Max Frame",
+          "description": "Max Frame",
+          "fields": []
+        }
+      },
+      {
+        "id": "loop",
+        "title": "loop",
+        "description": "loop",
+        "dataType": 1
+      },
+      {
+        "id": "frames_per_second",
+        "title": "frames_per_second",
+        "description": "frames_per_second",
+        "dataType": 3
+      },
+      {
+        "id": "stretch_to_lifetime",
+        "title": "stretch_to_lifetime",
+        "description": "stretch_to_lifetime",
+        "dataType": 1
+      }
+    ]
+  }
+}

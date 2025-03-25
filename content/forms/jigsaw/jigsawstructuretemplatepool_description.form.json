@@ -1,0 +1,15 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructureTemplatePool Description",
+    "description": "JigsawStructureTemplatePool Description",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "identifier",
+        "description": "Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates.",
+        "dataType": 2
+      }
+    ]
+  }
+}

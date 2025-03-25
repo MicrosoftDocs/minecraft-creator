@@ -1,0 +1,35 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:can_power_jump",
+    "title": "Can Power Jump",
+    "description": "Allows the entity to power jump like the Horse does in Vanilla.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:donkey_saddled/minecraft:can_power_jump/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_saddled/minecraft:can_power_jump/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:mule_saddled/minecraft:can_power_jump/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_power_jump/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

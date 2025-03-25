@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:friction_modifier",
+    "title": "Friction Modifier",
+    "description": "Defines how much friction affects this entity.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much.",
+        "defaultValue": 1,
+        "dataType": 3
+      }
+    ]
+  }
+}

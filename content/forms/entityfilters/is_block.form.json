@@ -1,0 +1,275 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "is_block",
+    "title": "Is Block",
+    "description": "Returns true when the block has the given name.",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/0/",
+              "content": "!="
+            },
+            {
+              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/1/",
+              "content": "!="
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/stuck_blocks/",
+              "content": "=="
+            }
+          ]
+        }
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/0/",
+              "content": "block"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/1/",
+              "content": "block"
+            }
+          ]
+        }
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Required) The Family name to look for",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/0/",
+              "content": "minecraft:bee_nest"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/1/",
+              "content": "minecraft:beehive"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/0/",
+              "content": "minecraft:bee_nest"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/1/",
+              "content": "minecraft:beehive"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/",
+              "content": "minecraft:sweet_berry_bush"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/",
+              "content": "minecraft:sweet_berry_bush"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/stuck_blocks/",
+              "content": "snow_layer"
+            }
+          ]
+        }
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/0/",
+              "content": "is_block"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/1/",
+              "content": "is_block"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"is_block\", \"subject\": \"self\", \"operator\": \"equals\", \"value\": \"player\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"is_block\", \"value\": \"player\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/0/",
+          "content": {
+            "test": "is_block",
+            "subject": "block",
+            "value": "minecraft:bee_nest"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/0/filters/any_of/1/",
+          "content": {
+            "test": "is_block",
+            "subject": "block",
+            "value": "minecraft:beehive"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/0/",
+          "content": {
+            "test": "is_block",
+            "subject": "block",
+            "operator": "!=",
+            "value": "minecraft:bee_nest"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/return_to_home/minecraft:behavior.go_home/on_home/1/filters/all_of/1/",
+          "content": {
+            "test": "is_block",
+            "subject": "block",
+            "operator": "!=",
+            "value": "minecraft:beehive"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/",
+          "content": {
+            "test": "is_block",
+            "subject": "block",
+            "value": "minecraft:sweet_berry_bush"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/",
+          "content": {
+            "test": "is_block",
+            "subject": "block",
+            "value": "minecraft:sweet_berry_bush"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/stuck_blocks/",
+          "content": {
+            "test": "is_block",
+            "subject": "block",
+            "operator": "==",
+            "value": "snow_layer"
+          }
+        }
+      ]
+    }
+  }
+}

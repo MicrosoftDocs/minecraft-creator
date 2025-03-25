@@ -1,0 +1,42 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:heartbeat",
+    "title": "Heartbeat",
+    "description": "Defines the entity's heartbeat.",
+    "fields": [
+      {
+        "id": "interval",
+        "title": "Interval",
+        "description": "A Molang expression defining the inter-beat interval in seconds. A value of zero or less means no heartbeat.",
+        "defaultValue": "1.00",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:heartbeat/",
+              "content": "2.0 - math.clamp(query.anger_level / 80 * 1.5, 0, 1.5)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "sound_event",
+        "title": "Sound Event",
+        "description": "Level sound event to be played as the heartbeat sound.",
+        "defaultValue": "heartbeat",
+        "dataType": 22
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:heartbeat/",
+          "content": {
+            "interval": "2.0 - math.clamp(query.anger_level / 80 * 1.5, 0, 1.5)"
+          }
+        }
+      ]
+    }
+  }
+}

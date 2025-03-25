@@ -1,0 +1,1218 @@
+{
+  "title": "Breathable",
+  "fields": [
+    {
+      "id": "total_supply",
+      "title": "Total air supply",
+      "description": "Time in seconds the entity can hold its breath.",
+      "dataType": 0,
+      "experienceType": 3,
+      "minValue": 0,
+      "suggestedMaxValue": 120,
+      "defaultValue": 15
+    },
+    {
+      "id": "suffocate_time",
+      "title": "Suffocate length",
+      "description": "Time in seconds between suffocation damage.",
+      "dataType": 0,
+      "defaultValue": -20
+    },
+    {
+      "id": "breathes_air",
+      "title": "Breathes in air",
+      "description": "If set, this entity can breathe in air.",
+      "dataType": 1,
+      "defaultValue": true
+    },
+    {
+      "id": "breathes_lava",
+      "title": "Breathes in lava",
+      "description": "If set, this entity can breathe in lava.",
+      "dataType": 1,
+      "defaultValue": true
+    },
+    {
+      "id": "breathes_solids",
+      "title": "Breathes in solids",
+      "description": "If set, this entity can breathe in solid blocks.",
+      "dataType": 1,
+      "defaultValue": false
+    },
+    {
+      "id": "breathes_water",
+      "title": "Breathes in water",
+      "description": "If set, this entity can breathe in water.",
+      "dataType": 1,
+      "defaultValue": false
+    },
+    {
+      "id": "generates_bubbles",
+      "description": "If set, this entity will have visible bubbles while in water.",
+      "dataType": 1,
+      "defaultValue": true
+    },
+    {
+      "id": "inhale_time",
+      "description": "Time in seconds to recover breath to maximum.",
+      "dataType": 7,
+      "defaultValue": 0
+    },
+    {
+      "id": "breathe_blocks",
+      "title": "Breathable blocks",
+      "description": "List of blocks this entity can breathe in, in addition to the selected items above.",
+      "dataType": 17,
+      "lookupId": "blockType"
+    },
+    {
+      "id": "non_breathe_blocks",
+      "title": "Non-breathable blocks",
+      "description": "List of blocks this entity cannot breathe in, in addition to the selected items above.",
+      "dataType": 17,
+      "lookupId": "blockType"
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:breathable",
+    "title": "Breathable",
+    "description": "Defines what blocks this entity can breathe in and gives them the ability to suffocate.",
+    "fields": [
+      {
+        "id": "breathe_blocks",
+        "title": "Breathe Blocks",
+        "description": "List of blocks this entity can breathe in, in addition to the other \"breathes\" parameters.",
+        "dataType": 17
+      },
+      {
+        "id": "breathes_air",
+        "title": "Breathes Air",
+        "description": "If true, this entity can breathe in air.",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "breathes_lava",
+        "title": "Breathes Lava",
+        "description": "If true, this entity can breathe in lava.",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/magma_cube.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "breathes_solids",
+        "title": "Breathes Solids",
+        "description": "If true, this entity can breathe in solid blocks.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "breathes_water",
+        "title": "Breathes Water",
+        "description": "If true, this entity can breathe in water.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "generates_bubbles",
+        "title": "Generates Bubbles",
+        "description": "If true, this entity will have visible bubbles while in water.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "inhale_time",
+        "title": "Inhale Time",
+        "description": "Time in seconds to recover breath to maximum.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": 3.75
+            }
+          ]
+        }
+      },
+      {
+        "id": "non_breathe_blocks",
+        "title": "Non Breathe Blocks",
+        "description": "List of blocks this entity can't breathe in, in addition to the other \"breathes\" parameters.",
+        "dataType": 17
+      },
+      {
+        "id": "suffocate_time",
+        "title": "Suffocate Time",
+        "description": "Time in seconds between suffocation damage.",
+        "defaultValue": -20,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": -1
+            }
+          ]
+        }
+      },
+      {
+        "id": "total_supply",
+        "title": "Total Supply",
+        "description": "Time in seconds the entity can hold its breath.",
+        "defaultValue": 15,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": 240
+            }
+          ],
+          "/vanilla/behavior_pack/entities/tadpole.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": 8
+            }
+          ]
+        }
+      },
+      {
+        "id": "totalSupply",
+        "title": "TotalSupply",
+        "dataType": 7,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": 15
+            }
+          ]
+        }
+      },
+      {
+        "id": "suffocateTime",
+        "title": "SuffocateTime",
+        "dataType": 7,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breathable/",
+              "content": -1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "totalSupply": 15,
+            "suffocateTime": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true,
+            "breathes_air": true,
+            "generates_bubbles": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "totalSupply": 0,
+            "suffocateTime": -1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 240,
+            "suffocate_time": 0,
+            "breathes_air": true,
+            "breathes_water": false,
+            "generates_bubbles": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": true,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/enderman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/endermite.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/evocation_illager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": false,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "totalSupply": 15,
+            "suffocateTime": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true,
+            "breathes_air": true,
+            "generates_bubbles": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/glow_squid.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": false,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_lava": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mooshroom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/phantom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": true,
+            "breathes_water": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": -1,
+            "inhale_time": 3.75,
+            "generates_bubbles": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pufferfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": false,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ravager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "suffocate_time": 0,
+            "total_supply": 15
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/salmon.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": false,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/shulker.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_lava": false,
+            "breathes_water": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/silverfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/slime.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/squid.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": false,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tadpole.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 8,
+            "suffocate_time": 0,
+            "breathes_water": true,
+            "breathes_air": false,
+            "generates_bubbles": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tropicalfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": false,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/turtle.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true,
+            "breathes_air": true,
+            "generates_bubbles": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vindicator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wandering_trader.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/witch.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": true,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true,
+            "breathes_air": true,
+            "generates_bubbles": false
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_water": true,
+            "breathes_air": true,
+            "generates_bubbles": false
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/behavior_pack_sample/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0,
+            "breathes_air": true,
+            "breathes_water": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breathable/",
+          "content": {
+            "total_supply": 15,
+            "suffocate_time": 0
+          }
+        }
+      ]
+    }
+  }
+}

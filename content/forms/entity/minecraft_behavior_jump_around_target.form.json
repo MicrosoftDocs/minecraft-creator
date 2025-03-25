@@ -1,0 +1,334 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.jump_around_target",
+    "title": "Jump Around Target Behavior",
+    "description": "Allows an entity to jump around a target.",
+    "fields": [
+      {
+        "id": "check_collision",
+        "title": "Check Collision",
+        "description": "Enables collision checks when calculating the jump. Setting check_collision to true may affect performance and should be used with care.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "entity_bounding_box_scale",
+        "title": "Entity Bounding Box Scale",
+        "description": "Scaling temporarily applied to the entity's AABB bounds when jumping. A smaller bounding box reduces the risk of collisions during the jump. When check_collision is true it also increases the chance of being able to jump when close to obstacles.",
+        "defaultValue": 0.7,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 0.7
+            }
+          ]
+        }
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "Conditions that need to be met for the behavior to start.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": {
+                "all_of": [
+                  {
+                    "any_of": [
+                      {
+                        "test": "in_water",
+                        "value": true
+                      },
+                      {
+                        "test": "on_ground",
+                        "value": true
+                      }
+                    ]
+                  },
+                  {
+                    "test": "is_riding",
+                    "value": false
+                  },
+                  {
+                    "test": "in_lava",
+                    "value": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "jump_angles",
+        "title": "Jump Angles",
+        "description": "The jump angles in float degrees that are allowed when performing the jump. The order in which the angles are chosen is randomized.",
+        "defaultValue": "[ 40.0, 55.0, 60.0, 75.0, 80.0 ]",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": [
+                40,
+                55,
+                60,
+                75,
+                80
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "jump_cooldown_duration",
+        "title": "Jump Cooldown Duration",
+        "description": "The time in seconds to spend in cooldown before this goal can be used again.",
+        "defaultValue": 0.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "jump_cooldown_when_hurt_duration",
+        "title": "Jump Cooldown When Hurt Duration",
+        "description": "The time in seconds to spend in cooldown after being hurt before this goal can be used again.",
+        "defaultValue": 0.1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 0.1
+            }
+          ]
+        }
+      },
+      {
+        "id": "landing_distance_from_target",
+        "title": "Landing Distance From Target",
+        "description": "The range deciding how close to and how far away from the target the landing position can be when jumping.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": [
+                4,
+                8
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "landing_position_spread_degrees",
+        "title": "Landing Position Spread Degrees",
+        "description": "This angle (in degrees) is used for controlling the spread when picking a landing position behind the target. A zero spread angle means the landing position will be straight behind the target with no variance. A 90 degree spread angle means the landing position can be up to 45 degrees to the left and to the right of the position straight behind the target's view direction.",
+        "defaultValue": 90,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 90
+            }
+          ]
+        }
+      },
+      {
+        "id": "last_hurt_duration",
+        "title": "Last Hurt Duration",
+        "description": "If the entity was hurt within these last seconds, the jump_cooldown_when_hurt_duration will be used instead of jump_cooldown_duration.",
+        "defaultValue": 2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "line_of_sight_obstruction_height_ignore",
+        "title": "Line Of Sight Obstruction Height Ignore",
+        "description": "If the entity's line of sight towards its target is obstructed by an obstacle with a height below this number, the obstacle will be ignored, and the goal will try to find a valid landing position.",
+        "defaultValue": 4,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_jump_velocity",
+        "title": "Max Jump Velocity",
+        "description": "Maximum velocity a jump can be performed at.",
+        "defaultValue": 1.4,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 1.4
+            }
+          ]
+        }
+      },
+      {
+        "id": "prepare_jump_duration",
+        "title": "Prepare Jump Duration",
+        "description": "The time in seconds to spend preparing for the jump.",
+        "defaultValue": 0.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "required_vertical_space",
+        "title": "Required Vertical Space",
+        "description": "The number of blocks above the entity's head that has to be air for this goal to be usable.",
+        "defaultValue": 4,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "snap_to_surface_block_range",
+        "title": "Snap To Surface Block Range",
+        "description": "The number of blocks above and below from the jump target position that will be checked to find a surface to land on.",
+        "defaultValue": 10,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "valid_distance_to_target",
+        "title": "Valid Distance To Target",
+        "description": "Target needs to be within this range for the jump to happen.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": [
+                4,
+                20
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+              "content": 5
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/",
+          "content": {
+            "priority": 5,
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "in_water",
+                      "value": true
+                    },
+                    {
+                      "test": "on_ground",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "test": "is_riding",
+                  "value": false
+                },
+                {
+                  "test": "in_lava",
+                  "value": false
+                }
+              ]
+            },
+            "jump_cooldown_duration": 0.5,
+            "jump_cooldown_when_hurt_duration": 0.1,
+            "last_hurt_duration": 2,
+            "prepare_jump_duration": 0.5,
+            "max_jump_velocity": 1.4,
+            "check_collision": false,
+            "entity_bounding_box_scale": 0.7,
+            "line_of_sight_obstruction_height_ignore": 4,
+            "valid_distance_to_target": [
+              4,
+              20
+            ],
+            "landing_position_spread_degrees": 90,
+            "landing_distance_from_target": [
+              4,
+              8
+            ],
+            "required_vertical_space": 4,
+            "snap_to_surface_block_range": 10,
+            "jump_angles": [
+              40,
+              55,
+              60,
+              75,
+              80
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

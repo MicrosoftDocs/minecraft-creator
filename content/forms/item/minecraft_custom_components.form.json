@@ -1,0 +1,10 @@
+{
+  "id": "minecraft:custom_components",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Custom Components",
+    "description": "Specifies an array of custom components defined in a script that should be added to this item.",
+    "fields": [],
+    "id": "minecraft:custom_components"
+  }
+}

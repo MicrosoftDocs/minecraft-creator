@@ -1,0 +1,380 @@
+{
+  "fields": [],
+  "description": "Enables the bundle-specific interaction scheme and tooltip for an item.",
+  "note": "To use this component, the item must have a minecraft:storage_item item component defined.",
+  "note2": "In `/textures/textures_list.json`, the following code needs to be added for an item named `my_custom_bundle`: [ '<resource pack>/textures/items/my_custom_bundle.png', '<resource pack>/textures/items/my_custom_bundle_open_front.png','<resource pack>/textures/items/my_custom_bundle_open_back.png']. The respective icon textures would need to be added: my_custom_bundle.png, my_custom_bundle_open_front.png, my_custom_bundle_open_back.png. Note that it's important that the filenames are the item name, plus `_open_front` and `_open_back` respectively.",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "format_version": "1.21.30",
+          "minecraft:item": {
+            "description": {
+              "identifier": "minecraft:bundle"
+            },
+            "components": {
+              "minecraft:icon": {
+                "textures": {
+                  "default": "bundle"
+                }
+              },
+              "minecraft:max_stack_size": 1,
+              "minecraft:storage_item": {
+                "max_slots": 64,
+                "max_weight_limit": 64,
+                "weight_in_storage_item": 4,
+                "allow_nested_storage_items": true,
+                "banned_items": [
+                  "minecraft:shulker_box"
+                ]
+              },
+              "minecraft:bundle_interaction": {
+                "num_viewable_slots": 8
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "title": "Bundle Interaction",
+    "description": "[EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a \"minecraft:storage_item\" component.",
+    "fields": [
+      {
+        "id": "num_viewable_slots",
+        "title": "num_viewable_slots",
+        "description": "The maximum number of slots in the bundle viewable by the plater. Can be from 1 to 64. Default is 12.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/items/black_bundle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+              "content": 12
+            }
+          ],
+          "/vanilla/behavior_pack/items/blue_bundle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+              "content": 12
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/black_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/blue_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/brown_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cyan_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/gray_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/green_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/light_blue_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/light_gray_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/lime_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/magenta_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/orange_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/pink_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/purple_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/red_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/white_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/yellow_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Bundle Interaction",
+    "description": "[EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a \"minecraft:storage_item\" component.",
+    "fields": [
+      {
+        "id": "num_viewable_slots",
+        "title": "num_viewable_slots",
+        "description": "The maximum number of slots in the bundle viewable by the plater. Can be from 1 to 64. Default is 12.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          },
+          {
+            "comparison": "<=",
+            "value": 64
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/items/black_bundle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+              "content": 12
+            }
+          ],
+          "/vanilla/behavior_pack/items/blue_bundle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+              "content": 12
+            }
+          ]
+        }
+      }
+    ],
+    "id": "minecraft:bundle_interaction",
+    "samples": {
+      "/vanilla/behavior_pack/items/black_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/blue_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/brown_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cyan_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/gray_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/green_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/light_blue_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/light_gray_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/lime_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/magenta_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/orange_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/pink_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/purple_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/red_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/white_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/yellow_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:bundle_interaction/",
+          "content": {
+            "num_viewable_slots": 12
+          }
+        }
+      ]
+    }
+  }
+}

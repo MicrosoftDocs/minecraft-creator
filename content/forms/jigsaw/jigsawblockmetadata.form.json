@@ -1,0 +1,63 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawBlockMetadata",
+    "description": "JigsawBlockMetadata",
+    "fields": [
+      {
+        "id": "name",
+        "title": "name",
+        "description": "The name identifier referenced by the 'target' field of another Jigsaw block.",
+        "dataType": 2
+      },
+      {
+        "id": "pool",
+        "title": "pool",
+        "description": "The structure template pool containing possible structures to generate.",
+        "dataType": 2
+      },
+      {
+        "id": "target",
+        "title": "target",
+        "description": "The name identifier of the Jigsaw block to target within the generated structure.",
+        "dataType": 2
+      },
+      {
+        "id": "joint_type",
+        "title": "Jigsaw Joint Type",
+        "description": "The type of Jigsaw joint made with 'target'.",
+        "dataType": 2
+      },
+      {
+        "id": "block",
+        "title": "block",
+        "description": "The serialization Id of the Jigsaw block before generation.",
+        "dataType": 2
+      },
+      {
+        "id": "selection_priority",
+        "title": "selection_priority",
+        "description": "The priority used during target block selection.",
+        "dataType": 0
+      },
+      {
+        "id": "final_block",
+        "title": "final_block",
+        "description": "The serialization Id to replace the starting Jigsaw block with.",
+        "dataType": 2
+      },
+      {
+        "id": "pos",
+        "title": "pos",
+        "description": "The Jigsaw block position.",
+        "dataType": 16
+      },
+      {
+        "id": "placement_priority",
+        "title": "placement_priority",
+        "description": "The priority used during target block placement.",
+        "dataType": 0
+      }
+    ]
+  }
+}

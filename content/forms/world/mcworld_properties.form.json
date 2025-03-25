@@ -1,0 +1,40 @@
+{
+  "title": "MCWorld Properties",
+  "fields": [
+    {
+      "id": "spawnX",
+      "title": "Spawn X",
+      "dataType": 0
+    },
+    {
+      "id": "spawnY",
+      "title": "Spawn Y",
+      "dataType": 0
+    },
+    {
+      "id": "spawnZ",
+      "title": "Spawn Z",
+      "dataType": 0
+    },
+    {
+      "id": "difficulty",
+      "title": "Difficulty",
+      "dataType": 0
+    },
+    {
+      "id": "generator",
+      "title": "Generator",
+      "dataType": 0
+    },
+    {
+      "id": "gameType",
+      "title": "Game Type",
+      "dataType": 0
+    },
+    {
+      "id": "isEditor",
+      "title": "Editor World",
+      "dataType": 1
+    }
+  ]
+}

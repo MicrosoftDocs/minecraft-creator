@@ -1,0 +1,9 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:custom_components",
+    "title": "Custom Components",
+    "description": "Sets an ordered list of custom component names which are bound in script to be executed upon a block event.",
+    "fields": []
+  }
+}

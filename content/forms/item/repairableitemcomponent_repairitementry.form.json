@@ -1,0 +1,31 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": ":RepairItemEntry",
+    "description": ":RepairItemEntry",
+    "fields": [
+      {
+        "id": "items",
+        "title": "items",
+        "description": "Items that may be used to repair an item.",
+        "dataType": 15,
+        "subForm": {
+          "title": "Items",
+          "description": "Items",
+          "fields": []
+        }
+      },
+      {
+        "id": "repair_amount",
+        "title": "repair_amount",
+        "description": "How much the item is repaired.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Repair Amount",
+          "description": "Repair Amount",
+          "fields": []
+        }
+      }
+    ]
+  }
+}

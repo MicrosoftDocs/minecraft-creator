@@ -1,0 +1,259 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:trade_table",
+    "title": "Trade Table",
+    "description": "Defines this entity's ability to trade with players.",
+    "fields": [
+      {
+        "id": "convert_trades_economy",
+        "title": "Convert Trades Economy",
+        "description": "Determines when the mob transforms, if the trades should be converted when the new mob has a economy_trade_table. When the trades are converted, the mob will generate a new trade list with their new trade table, but then it will try to convert any of the same trades over to have the same enchantments and user data. For example, if the original has a Emerald to Enchanted Iron Sword (Sharpness 1), and the new trade also has an Emerald for Enchanted Iron Sword, then the enchantment will be Sharpness 1.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/farmer/minecraft:trade_table/",
+              "content": true
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fisherman/minecraft:trade_table/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "display_name",
+        "title": "Display Name",
+        "description": "Name to be displayed while trading with this entity.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/farmer/minecraft:trade_table/",
+              "content": "entity.villager.farmer"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fisherman/minecraft:trade_table/",
+              "content": "entity.villager.fisherman"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/shepherd/minecraft:trade_table/",
+              "content": "entity.villager.shepherd"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fletcher/minecraft:trade_table/",
+              "content": "entity.villager.fletcher"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/librarian/minecraft:trade_table/",
+              "content": "entity.villager.librarian"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/cartographer/minecraft:trade_table/",
+              "content": "entity.villager.cartographer"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/cleric/minecraft:trade_table/",
+              "content": "entity.villager.cleric"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/armorer/minecraft:trade_table/",
+              "content": "entity.villager.armor"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:trade_table/",
+              "content": "entity.villager.weapon"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/toolsmith/minecraft:trade_table/",
+              "content": "entity.villager.tool"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/butcher/minecraft:trade_table/",
+              "content": "entity.villager.butcher"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/leatherworker/minecraft:trade_table/",
+              "content": "entity.villager.leather"
+            }
+          ]
+        }
+      },
+      {
+        "id": "new_screen",
+        "title": "New Screen",
+        "description": "Used to determine if trading with entity opens the new trade screen.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "persist_trades",
+        "title": "Persist Trades",
+        "description": "Determines if the trades should persist when the mob transforms. This makes it so that the next time the mob is transformed to something with a trade_table or economy_trade_table, then it keeps their trades.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "table",
+        "title": "Table",
+        "description": "File path relative to the behavior pack root for this entity's trades.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/farmer/minecraft:trade_table/",
+              "content": "trading/farmer_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fisherman/minecraft:trade_table/",
+              "content": "trading/fisherman_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/shepherd/minecraft:trade_table/",
+              "content": "trading/shepherd_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fletcher/minecraft:trade_table/",
+              "content": "trading/fletcher_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/librarian/minecraft:trade_table/",
+              "content": "trading/librarian_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/cartographer/minecraft:trade_table/",
+              "content": "trading/cartographer_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/cleric/minecraft:trade_table/",
+              "content": "trading/cleric_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/armorer/minecraft:trade_table/",
+              "content": "trading/armorer_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:trade_table/",
+              "content": "trading/weapon_smith_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/toolsmith/minecraft:trade_table/",
+              "content": "trading/tool_smith_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/butcher/minecraft:trade_table/",
+              "content": "trading/butcher_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/leatherworker/minecraft:trade_table/",
+              "content": "trading/leather_worker_trades.json"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/farmer/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.farmer",
+            "table": "trading/farmer_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fisherman/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.fisherman",
+            "table": "trading/fisherman_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/shepherd/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.shepherd",
+            "table": "trading/shepherd_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fletcher/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.fletcher",
+            "table": "trading/fletcher_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/librarian/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.librarian",
+            "table": "trading/librarian_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cartographer/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.cartographer",
+            "table": "trading/cartographer_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cleric/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.cleric",
+            "table": "trading/cleric_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/armorer/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.armor",
+            "table": "trading/armorer_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.weapon",
+            "table": "trading/weapon_smith_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/toolsmith/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.tool",
+            "table": "trading/tool_smith_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/butcher/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.butcher",
+            "table": "trading/butcher_trades.json",
+            "convert_trades_economy": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/leatherworker/minecraft:trade_table/",
+          "content": {
+            "display_name": "entity.villager.leather",
+            "table": "trading/leather_worker_trades.json",
+            "convert_trades_economy": true
+          }
+        }
+      ]
+    }
+  }
+}

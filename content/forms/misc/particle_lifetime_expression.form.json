@@ -1,0 +1,43 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Lifetime Expression Misc",
+    "description": "Particle Lifetime Expression Misc",
+    "fields": [
+      {
+        "id": "max_lifetime",
+        "title": "max_lifetime",
+        "description": "max_lifetime",
+        "dataType": 16,
+        "subForm": {
+          "title": "Max Lifetime",
+          "description": "Max Lifetime",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "max_lifetime",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "expiration_expression",
+        "title": "expiration_expression",
+        "description": "expiration_expression",
+        "dataType": 16,
+        "subForm": {
+          "title": "Expiration Expression",
+          "description": "Expiration Expression",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "expiration_expression",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -9,11 +9,11 @@ ms.date: 02/11/2025
 
 # Biome Documentation - minecraft:tags
 
-The tags component specifies which tags an item has on it.
+Attach arbitrary string tags to this biome.
 
 
 ## Tags Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| tags | *not set* | Array of objects | An array that can contain multiple item tags. |  | 
+| tags | *not set* | Array of strings | Array of string tags used by other systems such as entity spawning |  | 

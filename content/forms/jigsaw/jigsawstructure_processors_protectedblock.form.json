@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructure Processors ProtectedBlock",
+    "description": "Protect blocks from this structure's placement in the world. Ensuring that it does not replace matching blocks in the world",
+    "fields": [
+      {
+        "id": "processor_type",
+        "title": "enum SharedTypes_v1_21_20_JigsawStructure_Processors_Type",
+        "description": "enum SharedTypes_v1_21_20_JigsawStructure_Processors_Type",
+        "dataType": 2
+      },
+      {
+        "id": "value",
+        "title": "value",
+        "description": "Block tag for the blocks that will be protected",
+        "dataType": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "minecraft:scan_surface",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "isInternal": true,
+  "generated_doNotEdit": {
+    "id": "minecraft:scan_surface",
+    "title": "Scan Surface",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

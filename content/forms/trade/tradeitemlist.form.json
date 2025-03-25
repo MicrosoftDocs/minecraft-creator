@@ -1,0 +1,15 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "TradeItemList",
+    "description": "TradeItemList",
+    "fields": [
+      {
+        "id": "choice",
+        "title": "choice",
+        "description": "choice",
+        "dataType": 16
+      }
+    ]
+  }
+}

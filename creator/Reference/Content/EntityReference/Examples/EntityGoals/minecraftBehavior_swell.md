@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.swell"
-description: "Describes the behavior.swell AI Goals"
+title: "Entity Documentation - minecraft:behavior.swell"
+description: "Describes the minecraft:behavior.swell ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.swell
+# Entity Documentation - minecraft:behavior.swell
 
 Allows the creeper to swell up when a player is nearby. It can only be used by Creepers.
 
@@ -26,7 +26,7 @@ Allows the creeper to swell up when a player is nearby. It can only be used by C
 
 
 ```json
-{
+"minecraft:behavior.swell": {
   "start_distance": 2.5,
   "stop_distance": 6,
   "priority": 2

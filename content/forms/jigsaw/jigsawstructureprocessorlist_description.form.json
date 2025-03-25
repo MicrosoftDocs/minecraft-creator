@@ -1,0 +1,15 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructureProcessorList Description",
+    "description": "JigsawStructureProcessorList Description",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "identifier",
+        "description": "Identifier of the Processor List. This is referenced by Template Pools when pairing processors with Structure Templates.",
+        "dataType": 2
+      }
+    ]
+  }
+}

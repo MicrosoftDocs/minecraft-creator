@@ -1,0 +1,305 @@
+{
+  "fields": [
+    {
+      "id": "item_specific_speeds",
+      "title": "Item Specific Speeds",
+      "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
+      "dataType": 15,
+      "subForm": {
+        "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
+        "fields": [
+          {
+            "id": "destroy_speed",
+            "title": "Destroy Speed",
+            "description": "Required. A destroy speed applied while using the defined 'item'.",
+            "dataType": 3
+          },
+          {
+            "id": "item",
+            "title": "Item",
+            "description": "Required. A filter for the item used while mining.",
+            "dataType": 15,
+            "subForm": {
+              "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
+              "fields": [
+                {
+                  "id": "tags",
+                  "title": "Tags",
+                  "type": 32
+                }
+              ]
+            },
+            "alternates": [
+              {
+                "id": "item",
+                "title": "Item",
+                "description": "An item tag that is usable for the item.",
+                "dataType": 2,
+                "lookupId": "itemType"
+              }
+            ]
+          }
+        ],
+        "samples": {
+          "samples": [
+            {
+              "path": "Example1",
+              "content": {
+                "minecraft:destructible_by_mining": {
+                  "seconds_to_destroy": 10,
+                  "item_specific_speeds": [
+                    {
+                      "item": {
+                        "tags": "q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') "
+                      },
+                      "destroy_speed": 5
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "path": "Example2",
+              "content": {
+                "minecraft:destructible_by_mining": {
+                  "seconds_to_destroy": 10,
+                  "item_specific_speeds": [
+                    {
+                      "item": "minecraft:iron_pickaxe",
+                      "destroy_speed": 5
+                    },
+                    {
+                      "item": "minecraft:diamond_pickaxe",
+                      "destroy_speed": 2
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "samples": {
+        "samples": [
+          {
+            "path": "Example1",
+            "content": {
+              "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 10,
+                "item_specific_speeds": [
+                  {
+                    "item": {
+                      "tags": "q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') "
+                    },
+                    "destroy_speed": 5
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "path": "Example2",
+            "content": {
+              "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 10,
+                "item_specific_speeds": [
+                  {
+                    "item": "minecraft:iron_pickaxe",
+                    "destroy_speed": 5
+                  },
+                  {
+                    "item": "minecraft:diamond_pickaxe",
+                    "destroy_speed": 2
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "seconds_to_destroy",
+      "title": "Seconds To Destroy",
+      "description": "Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times.",
+      "defaultValue": 0,
+      "dataType": 3
+    }
+  ],
+  "scalarField": {
+    "id": "boolean",
+    "title": "Object enabled",
+    "tags": [
+      "presence"
+    ],
+    "dataType": 1
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:destructible_by_mining",
+    "title": "Destructible By Mining",
+    "description": "Describes the destructible by mining properties for this block. If set to true, the block will take the default number of seconds to destroy. If set to false, this block is indestructible by mining. If the component is omitted, the block will take the default number of seconds to destroy.",
+    "fields": [
+      {
+        "id": "item_specific_speeds",
+        "title": "Item Specific Speeds",
+        "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
+        "dataType": 15,
+        "subForm": {
+          "description": "Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.",
+          "fields": [
+            {
+              "id": "destroy_speed",
+              "title": "Destroy Speed",
+              "description": "Required.\r\nA destroy speed applied while using the defined 'item'.",
+              "dataType": 3
+            },
+            {
+              "id": "item",
+              "title": "Item",
+              "description": "Required.\r\nAn ItemDescriptor filtering for the item used while mining.",
+              "dataType": 17
+            }
+          ],
+          "samples": {
+            "samples": [
+              {
+                "path": "Example1",
+                "content": "{\r\n\t\"minecraft:destructible_by_mining\": {\r\n\t\t\"seconds_to_destroy\": 10,\r\n\t\t\"item_specific_speeds\": [\r\n\t\t\t{\r\n\t\t\t\t\"item\": { \"tags\": \"q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') \" },\r\n\t\t\t\t\"destroy_speed\": 5.0\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}"
+              },
+              {
+                "path": "Example2",
+                "content": "{\r\n\t\"minecraft:destructible_by_mining\": {\r\n\t\t\"seconds_to_destroy\": 10,\r\n\t\t\"item_specific_speeds\": [\r\n\t\t\t{\r\n\t\t\t\t\"item\": \"minecraft:iron_pickaxe\",\r\n\t\t\t\t\"destroy_speed\": 5.0\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"item\": \"minecraft:diamond_pickaxe\",\r\n\t\t\t\t\"destroy_speed\": 2.0\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}"
+              }
+            ]
+          }
+        },
+        "samples": {
+          "samples": [
+            {
+              "path": "Example1",
+              "content": "{\r\n\t\"minecraft:destructible_by_mining\": {\r\n\t\t\"seconds_to_destroy\": 10,\r\n\t\t\"item_specific_speeds\": [\r\n\t\t\t{\r\n\t\t\t\t\"item\": { \"tags\": \"q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') \" },\r\n\t\t\t\t\"destroy_speed\": 5.0\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}"
+            },
+            {
+              "path": "Example2",
+              "content": "{\r\n\t\"minecraft:destructible_by_mining\": {\r\n\t\t\"seconds_to_destroy\": 10,\r\n\t\t\"item_specific_speeds\": [\r\n\t\t\t{\r\n\t\t\t\t\"item\": \"minecraft:iron_pickaxe\",\r\n\t\t\t\t\"destroy_speed\": 5.0\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"item\": \"minecraft:diamond_pickaxe\",\r\n\t\t\t\t\"destroy_speed\": 2.0\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}"
+            }
+          ]
+        }
+      },
+      {
+        "id": "seconds_to_destroy",
+        "title": "Seconds To Destroy",
+        "description": "Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": 0.4
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": 0.4
+            }
+          ],
+          "/samples/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "scalarField": {
+      "id": "boolean",
+      "title": "Boolean",
+      "dataType": 1
+    },
+    "samples": {
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 1
+          }
+        }
+      ],
+      "/samples/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_corner.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_tip.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_tree_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_trunk.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ]
+    }
+  }
+}

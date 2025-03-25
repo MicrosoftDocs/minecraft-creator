@@ -1,0 +1,136 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:game_event_movement_tracking",
+    "title": "Game Event Movement Tracking",
+    "description": "Allows an entity to emit `entityMove`, `swim` and `flap` game events, depending on the block the entity is moving through. It is added by default to every mob. Add it again to override its behavior.",
+    "fields": [
+      {
+        "id": "emit_flap",
+        "title": "Emit Flap",
+        "description": "If true, the `flap` game event will be emitted when the entity moves through air.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "emit_move",
+        "title": "Emit Move",
+        "description": "If true, the `entityMove` game event will be emitted when the entity moves on ground or through a solid.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "emit_swim",
+        "title": "Emit Swim",
+        "description": "If true, the `swim` game event will be emitted when the entity moves through a liquid.",
+        "defaultValue": true,
+        "dataType": 1
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_flap": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_flap": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_flap": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_flap": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ender_dragon.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_flap": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_flap": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/phantom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_flap": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vex.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_move": false,
+            "emit_swim": false
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_flap": true
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_flap": true
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:game_event_movement_tracking/",
+          "content": {
+            "emit_flap": true
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "minecraft:multiface_feature",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "description": "Places multiface blocks on floors/walls/ceilings. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if this feature can be applied to them based on the list in the can_place_on field. If no can_replace_on field is specified, the place_block block can be placed on any existing block. This feature will also try to spread the place_block block around the location the feature is placed. Succeeds if: At least one block is successfully placed. Fails if ll block placements fail.",
+  "samples": {
+    "example": [
+      {
+        "path": "Blue vines in caves",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:multiface_feature": {
+            "description": {
+              "identifier": "example:blue_vines_feature"
+            },
+            "places_block": "example:blue_vine",
+            "search_range": 64,
+            "can_place_on_floor": true,
+            "can_place_on_ceiling": true,
+            "can_place_on_wall": true,
+            "chance_of_spreading": 0.5,
+            "can_place_on": [
+              "minecraft:stone"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:multiface_feature",
+    "title": "Multiface Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 0,
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "How far, in blocks, this feature can search for a valid position to place.",
+        "isRequired": true
+      },
+      {
+        "dataType": 1,
+        "id": "can_place_on_floor",
+        "title": "Can Place On Floor",
+        "description": "Can this feature be placed on the ground (top face of a block)?",
+        "isRequired": true
+      },
+      {
+        "dataType": 1,
+        "id": "can_place_on_ceiling",
+        "title": "Can Place On Ceiling",
+        "description": "Can this feature be placed on the ceiling (bottom face of a block)?",
+        "isRequired": true
+      },
+      {
+        "dataType": 1,
+        "id": "can_place_on_wall",
+        "title": "Can Place On Wall",
+        "description": "Can this feature be placed on the wall (side faces of a block)?",
+        "isRequired": true
+      },
+      {
+        "dataType": 17,
+        "id": "can_place_on",
+        "title": "Can Place On",
+        "isRequired": false
+      }
+    ]
+  }
+}

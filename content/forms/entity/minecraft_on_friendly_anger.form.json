@@ -1,0 +1,134 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:on_friendly_anger",
+    "title": "On Friendly Anger",
+    "description": "Adds a trigger that will run when a nearby entity of the same type as this entity becomes Angry.",
+    "fields": [
+      {
+        "id": "event",
+        "title": "Event",
+        "description": "The event to run when the conditions for this trigger are met.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_aggressive/minecraft:on_friendly_anger/",
+              "content": "minecraft:on_anger"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/polar_bear.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:on_friendly_anger/",
+              "content": "minecraft:on_anger"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wandering_trader/minecraft:on_friendly_anger/",
+              "content": "minecraft:defend_wandering_trader"
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_wandering_trader/minecraft:on_friendly_anger/",
+              "content": "minecraft:defend_wandering_trader"
+            }
+          ]
+        }
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "The list of conditions for this trigger to execute.",
+        "dataType": 20
+      },
+      {
+        "id": "target",
+        "title": "Target",
+        "description": "The target of the event.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_aggressive/minecraft:on_friendly_anger/",
+              "content": "self"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/polar_bear.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:on_friendly_anger/",
+              "content": "self"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:panda_aggressive/minecraft:on_friendly_anger/",
+          "content": {
+            "event": "minecraft:on_anger",
+            "target": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:on_friendly_anger/",
+          "content": {
+            "event": "minecraft:on_anger",
+            "target": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_wandering_trader/minecraft:on_friendly_anger/",
+          "content": {
+            "event": "minecraft:defend_wandering_trader",
+            "target": "self"
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:on_friendly_anger/",
+          "content": {
+            "event": "minecraft:on_anger",
+            "target": "self"
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_wandering_trader/minecraft:on_friendly_anger/",
+          "content": {
+            "event": "minecraft:defend_wandering_trader",
+            "target": "self"
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:on_friendly_anger/",
+          "content": {
+            "event": "minecraft:on_anger",
+            "target": "self"
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_wandering_trader/minecraft:on_friendly_anger/",
+          "content": {
+            "event": "minecraft:defend_wandering_trader",
+            "target": "self"
+          }
+        }
+      ]
+    }
+  }
+}

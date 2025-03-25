@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "id": "enabled_states",
+      "title": "Enabled States",
+      "dataType": 33,
+      "choices": [
+        {
+          "id": "minecraft:cardinal_direction",
+          "title": "Cardinal Direction",
+          "description": "A 4-value state containing the cardinal-facing direction of the player when the block was placed. The values for this state are 'north', 'south', 'east', and 'west'."
+        },
+        {
+          "id": "minecraft:facing_direction",
+          "title": "Facing Direction",
+          "description": "A 6-value state containing the overall direction of the player when the block was placed. The values for this state are 'down', 'up', 'north', 'south', 'east', and 'west'."
+        }
+      ]
+    },
+    {
+      "id": "y_rotation_offset",
+      "title": "Y rotation offset",
+      "dataType": 3
+    }
+  ],
+  "title": "Placement Direction",
+  "description": "Add states containing information about the player's rotation when the block is placed. For example, if a block using placement direction is placed while the player is facing south, the state value will be 'south'. This will allow a data-driven block to replicate the rotation behavior of a furnace, pumpkin, or terracotta block."
+}

@@ -1,0 +1,33 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "CameraAimAssistCategoryPriorities",
+    "description": "CameraAimAssistCategoryPriorities",
+    "fields": [
+      {
+        "id": "entities",
+        "title": "entities",
+        "description": "Optional. Map of Entity identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
+        "dataType": 16
+      },
+      {
+        "id": "blocks",
+        "title": "blocks",
+        "description": "Optional. Map of Block identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
+        "dataType": 16
+      },
+      {
+        "id": "block_default",
+        "title": "block_default",
+        "description": "Optional. Default Aim-Assist targeting priority used for Blocks not found in 'blocks'.",
+        "dataType": 0
+      },
+      {
+        "id": "entity_default",
+        "title": "entity_default",
+        "description": "Optional. Default Aim-Assist targeting priority used for Entities not found in 'entities'.",
+        "dataType": 0
+      }
+    ]
+  }
+}

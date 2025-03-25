@@ -1,0 +1,28 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Tags",
+    "description": "The tags component specifies which tags an item has on it.",
+    "fields": [
+      {
+        "id": "tags",
+        "title": "tags",
+        "description": "An array that can contain multiple item tags.",
+        "dataType": 15
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Tags",
+    "description": "Attach arbitrary string tags to this biome.",
+    "fields": [
+      {
+        "id": "tags",
+        "title": "tags",
+        "description": "Array of string tags used by other systems such as entity spawning",
+        "dataType": 17
+      }
+    ],
+    "id": "minecraft:tags"
+  }
+}

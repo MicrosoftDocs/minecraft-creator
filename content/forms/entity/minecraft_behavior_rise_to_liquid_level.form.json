@@ -1,0 +1,75 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.rise_to_liquid_level",
+    "title": "Rise To Liquid Level Behavior",
+    "description": "Allows the mob to stay at a certain level when in liquid.",
+    "fields": [
+      {
+        "id": "liquid_y_offset",
+        "title": "Liquid Y Offset",
+        "description": "Target distance down from the liquid surface. i.e. Positive values move the target Y down.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_pathing_behaviors/minecraft:behavior.rise_to_liquid_level/",
+              "content": 0.25
+            }
+          ]
+        }
+      },
+      {
+        "id": "rise_delta",
+        "title": "Rise Delta",
+        "description": "Movement up in Y per tick when below the liquid surface.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_pathing_behaviors/minecraft:behavior.rise_to_liquid_level/",
+              "content": 0.01
+            }
+          ]
+        }
+      },
+      {
+        "id": "sink_delta",
+        "title": "Sink Delta",
+        "description": "Movement down in Y per tick when above the liquid surface.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_pathing_behaviors/minecraft:behavior.rise_to_liquid_level/",
+              "content": 0.01
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:strider_pathing_behaviors/minecraft:behavior.rise_to_liquid_level/",
+          "content": {
+            "priority": 0,
+            "liquid_y_offset": 0.25,
+            "rise_delta": 0.01,
+            "sink_delta": 0.01
+          }
+        }
+      ]
+    }
+  }
+}

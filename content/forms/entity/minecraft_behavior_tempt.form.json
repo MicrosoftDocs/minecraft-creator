@@ -1,0 +1,1131 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.tempt",
+    "title": "Tempt Behavior",
+    "description": "Allows the mob to be tempted by food they like.",
+    "fields": [
+      {
+        "id": "can_get_scared",
+        "title": "Can Get Scared",
+        "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_tempt_vertically",
+        "title": "Can Tempt Vertically",
+        "description": "If true, vertical distance to the player will be considered when tempting.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:unrolled/minecraft:behavior.tempt/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_tempt_while_ridden",
+        "title": "Can Tempt While Ridden",
+        "description": "If true, the mob can be tempted even if it has a passenger (i.e. if being ridden).",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "items",
+        "title": "Items",
+        "description": "List of items this mob is tempted by",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:unrolled/minecraft:behavior.tempt/",
+              "content": [
+                "spider_eye"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "tropical_fish_bucket"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "minecraft:poppy",
+                "minecraft:blue_orchid",
+                "minecraft:allium",
+                "minecraft:azure_bluet",
+                "minecraft:red_tulip",
+                "minecraft:orange_tulip",
+                "minecraft:white_tulip",
+                "minecraft:pink_tulip",
+                "minecraft:oxeye_daisy",
+                "minecraft:cornflower",
+                "minecraft:lily_of_the_valley",
+                "minecraft:dandelion",
+                "minecraft:wither_rose",
+                "minecraft:sunflower",
+                "minecraft:lilac",
+                "minecraft:rose_bush",
+                "minecraft:peony",
+                "minecraft:flowering_azalea",
+                "minecraft:azalea_leaves_flowered",
+                "minecraft:mangrove_propagule",
+                "minecraft:pitcher_plant",
+                "minecraft:torchflower",
+                "minecraft:cherry_leaves",
+                "minecraft:pink_petals",
+                "minecraft:open_eyeblossom",
+                "minecraft:wildflowers",
+                "minecraft:cactus_flower"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "cactus"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/",
+              "content": [
+                "fish",
+                "salmon"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.tempt/",
+              "content": [
+                "fish",
+                "salmon"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "wheat_seeds",
+                "beetroot_seeds",
+                "melon_seeds",
+                "pumpkin_seeds",
+                "pitcher_pod",
+                "torchflower_seeds"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "wheat"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/donkey.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "golden_apple",
+                "appleEnchanted",
+                "golden_carrot"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "sweet_berries",
+                "glow_berries"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "slime_ball"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "wheat"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/horse.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "golden_apple",
+                "appleEnchanted",
+                "golden_carrot"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "hay_block"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "bamboo"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "potato",
+                "carrot",
+                "beetroot",
+                "carrotOnAStick"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/rabbit.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "golden_carrot",
+                "carrot",
+                "dandelion"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "torchflower_seeds"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "warped_fungus",
+                "warped_fungus_on_a_stick"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/tadpole.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "slime_ball"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "hay_block"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "seagrass"
+              ]
+            }
+          ],
+          "/samples/add_entity_robot/full/robot_example_full_behavior/entities/robot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "diamond"
+              ]
+            }
+          ],
+          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "melon_slice"
+              ]
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "seagrass"
+              ]
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "melon_slice"
+              ]
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": [
+                "wheat_seeds",
+                "beetroot_seeds",
+                "melon_seeds",
+                "pumpkin_seeds",
+                "pitcher_pod",
+                "torchflower_seeds"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "sound_interval",
+        "title": "Sound Interval",
+        "description": "Range of random ticks to wait between tempt sounds.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/",
+              "content": [
+                0,
+                100
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": {
+                "range_min": 2,
+                "range_max": 5
+              }
+            }
+          ],
+          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_wild/minecraft:behavior.tempt/",
+              "content": [
+                0,
+                100
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:unrolled/minecraft:behavior.tempt/",
+              "content": 1.25
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 1.1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 1.25
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 2.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/",
+              "content": 0.5
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.tempt/",
+              "content": 0.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/donkey.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 1.2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 0.75
+            }
+          ],
+          "/vanilla/behavior_pack/entities/horse.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 1.2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/rabbit.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 1.1
+            }
+          ],
+          "/samples/add_entity_robot/full/robot_example_full_behavior/entities/robot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 1.4
+            }
+          ]
+        }
+      },
+      {
+        "id": "tempt_sound",
+        "title": "Tempt Sound",
+        "description": "Sound to play while the mob is being tempted.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/",
+              "content": "tempt"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": "tempt"
+            }
+          ]
+        }
+      },
+      {
+        "id": "within_radius",
+        "title": "Within Radius",
+        "description": "Distance in blocks this mob can get tempted by a player holding an item they like",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/",
+              "content": 16
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.tempt/",
+              "content": 16
+            }
+          ],
+          "/samples/add_entity_robot/full/robot_example_full_behavior/entities/robot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 7
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:unrolled/minecraft:behavior.tempt/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 4
+            }
+          ],
+          "/samples/add_entity_robot/full/robot_example_full_behavior/entities/robot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:unrolled/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1.25,
+            "can_tempt_vertically": true,
+            "items": [
+              "spider_eye"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1.1,
+            "can_tempt_vertically": true,
+            "items": [
+              "tropical_fish_bucket"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.25,
+            "within_radius": 8,
+            "can_tempt_vertically": true,
+            "items": [
+              "minecraft:poppy",
+              "minecraft:blue_orchid",
+              "minecraft:allium",
+              "minecraft:azure_bluet",
+              "minecraft:red_tulip",
+              "minecraft:orange_tulip",
+              "minecraft:white_tulip",
+              "minecraft:pink_tulip",
+              "minecraft:oxeye_daisy",
+              "minecraft:cornflower",
+              "minecraft:lily_of_the_valley",
+              "minecraft:dandelion",
+              "minecraft:wither_rose",
+              "minecraft:sunflower",
+              "minecraft:lilac",
+              "minecraft:rose_bush",
+              "minecraft:peony",
+              "minecraft:flowering_azalea",
+              "minecraft:azalea_leaves_flowered",
+              "minecraft:mangrove_propagule",
+              "minecraft:pitcher_plant",
+              "minecraft:torchflower",
+              "minecraft:cherry_leaves",
+              "minecraft:pink_petals",
+              "minecraft:open_eyeblossom",
+              "minecraft:wildflowers",
+              "minecraft:cactus_flower"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 2.5,
+            "can_tempt_vertically": true,
+            "items": [
+              "cactus"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 0.5,
+            "within_radius": 16,
+            "can_get_scared": true,
+            "tempt_sound": "tempt",
+            "sound_interval": [
+              0,
+              100
+            ],
+            "items": [
+              "fish",
+              "salmon"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cat_tame/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 0.5,
+            "within_radius": 16,
+            "items": [
+              "fish",
+              "salmon"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1,
+            "items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.25,
+            "items": [
+              "wheat"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.2,
+            "items": [
+              "golden_apple",
+              "appleEnchanted",
+              "golden_carrot"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 0.5,
+            "within_radius": 16,
+            "can_get_scared": true,
+            "items": [
+              "sweet_berries",
+              "glow_berries"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.25,
+            "can_tempt_vertically": true,
+            "items": [
+              "slime_ball"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 0.75,
+            "items": [
+              "wheat"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.2,
+            "items": [
+              "golden_apple",
+              "appleEnchanted",
+              "golden_carrot"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.2,
+            "items": [
+              "hay_block"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mooshroom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.25,
+            "items": [
+              "wheat"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.2,
+            "items": [
+              "golden_apple",
+              "appleEnchanted",
+              "golden_carrot"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ocelot_wild/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 0.5,
+            "within_radius": 16,
+            "can_get_scared": true,
+            "items": [
+              "fish",
+              "salmon"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ocelot_trusting/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 0.5,
+            "within_radius": 16,
+            "items": [
+              "fish",
+              "salmon"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.25,
+            "items": [
+              "bamboo"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.2,
+            "items": [
+              "potato",
+              "carrot",
+              "beetroot",
+              "carrotOnAStick"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1,
+            "items": [
+              "golden_carrot",
+              "carrot",
+              "dandelion"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.25,
+            "items": [
+              "wheat"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.25,
+            "items": [
+              "torchflower_seeds"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.2,
+            "items": [
+              "warped_fungus",
+              "warped_fungus_on_a_stick"
+            ],
+            "can_tempt_while_ridden": true,
+            "tempt_sound": "tempt",
+            "sound_interval": {
+              "range_min": 2,
+              "range_max": 5
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tadpole.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.25,
+            "can_tempt_vertically": true,
+            "items": [
+              "slime_ball"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 1.2,
+            "items": [
+              "hay_block"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/turtle.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1.1,
+            "can_tempt_vertically": true,
+            "items": [
+              "seagrass"
+            ]
+          }
+        }
+      ],
+      "/samples/add_entity_robot/full/robot_example_full_behavior/entities/robot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 1,
+            "speed_multiplier": 1.4,
+            "items": [
+              "diamond"
+            ],
+            "within_radius": 7
+          }
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.25,
+            "items": [
+              "melon_slice"
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1.1,
+            "items": [
+              "seagrass"
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.25,
+            "items": [
+              "melon_slice"
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 1.1,
+            "items": [
+              "seagrass"
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.25,
+            "items": [
+              "melon_slice"
+            ]
+          }
+        }
+      ],
+      "/samples/behavior_pack_sample/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.25,
+            "items": [
+              "wheat"
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1,
+            "items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1,
+            "items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1,
+            "items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_wild/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 0.5,
+            "within_radius": 16,
+            "can_get_scared": true,
+            "tempt_sound": "tempt",
+            "sound_interval": [
+              0,
+              100
+            ],
+            "items": [
+              "fish",
+              "salmon"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_tame/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 5,
+            "speed_multiplier": 0.5,
+            "within_radius": 16,
+            "items": [
+              "fish",
+              "salmon"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

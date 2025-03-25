@@ -1,0 +1,106 @@
+{
+  "fields": [
+    {
+      "id": "pools",
+      "description": "A set of loot table outcomes.",
+      "dataType": 15,
+      "defaultValue": false,
+      "newItemPrototype": {
+        "pool": 1,
+        "entries": []
+      },
+      "noun": "Pool",
+      "subForm": {
+        "fields": [
+          {
+            "id": "rolls",
+            "description": "How many times the pool will be rolled to select an entry.",
+            "dataType": 0
+          },
+          {
+            "id": "conditions",
+            "dataType": 15,
+            "defaultValue": false,
+            "newItemPrototype": {
+              "condition": "random_difficulty_change",
+              "default_chance": 0.5,
+              "peaceful": 0,
+              "hard": 6
+            },
+            "noun": "Condition",
+            "subForm": {
+              "fields": [
+                {
+                  "id": "default_chance",
+                  "description": "Default percent chance.",
+                  "dataType": 3
+                },
+                {
+                  "id": "peaceful",
+                  "description": "Percent chance under peaceful mode.",
+                  "dataType": 3
+                },
+                {
+                  "id": "hard",
+                  "description": "Percent chance under hard mode.",
+                  "dataType": 3
+                },
+                {
+                  "id": "condition",
+                  "description": "How this condition is evaluated.",
+                  "dataType": 5,
+                  "choices": [
+                    {
+                      "id": "random_difficulty_chance",
+                      "title": "Random Difficulty Chance"
+                    },
+                    {
+                      "id": "default_chance",
+                      "title": "Default Chance"
+                    }
+                  ]
+                }
+              ]
+            },
+            "description": "Conditions for this item to be considered."
+          },
+          {
+            "id": "entries",
+            "dataType": 15,
+            "defaultValue": false,
+            "newItemPrototype": {
+              "id": "newfield",
+              "dataType": 2
+            },
+            "description": "The sub-items within this form.",
+            "noun": "Choice",
+            "subForm": {
+              "fields": [
+                {
+                  "id": "name",
+                  "description": "Item in the loot table.",
+                  "dataType": 2
+                },
+                {
+                  "id": "type",
+                  "description": "Type of choice.",
+                  "dataType": 5,
+                  "choices": [
+                    {
+                      "id": "item",
+                      "title": "Item"
+                    },
+                    {
+                      "id": "loot_table",
+                      "title": "Loot Table"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

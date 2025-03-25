@@ -1,0 +1,19 @@
+{
+  "id": "minecraft:follow_range",
+  "title": "Follow Range",
+  "description": "Defines the range, in blocks, that a mob will pursue a target.",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "The radius of the area of blocks the entity will attempt to stay within around a target.",
+      "dataType": 0
+    },
+    {
+      "id": "max",
+      "title": "Max",
+      "description": "Maximum distance the mob will go from a target.",
+      "dataType": 0
+    }
+  ]
+}

@@ -1,15 +1,18 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Items Documentation - wearable"
-description: "Describes the wearable Items"
+title: "Items Documentation - minecraft:wearable"
+description: "Describes the minecraft:wearable item component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Items Documentation - wearable
+# Items Documentation - minecraft:wearable
 
 Sets the wearable item component.
+
+> [!Note]
+> Here are the following equipment slots that can be set for the value of slot: slot.weapon.mainhand, slot.weapon.offhand, slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.hotbar, slot.inventory, slot.enderchest, slot.saddle, slot.armor, slot.chest, slot.equippable.
 
 
 ## Wearable Properties
@@ -22,11 +25,21 @@ Sets the wearable item component.
 
 ## Samples
 
+#### [Journal Pencil](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/items/journal_pencil.json)
+
+
+```json
+"minecraft:wearable": {
+  "dispensable": true,
+  "slot": "slot.weapon.offhand"
+}
+```
+
 #### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
 
 
 ```json
-{
+"minecraft:wearable": {
   "dispensable": true,
   "slot": "slot.armor.chest"
 }
@@ -36,7 +49,7 @@ Sets the wearable item component.
 
 
 ```json
-{
+"minecraft:wearable": {
   "dispensable": true,
   "slot": "slot.armor.head"
 }
@@ -46,19 +59,9 @@ Sets the wearable item component.
 
 
 ```json
-{
+"minecraft:wearable": {
   "dispensable": true,
   "slot": "slot.armor.feet"
-}
-```
-
-#### [My Helm](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_helm.json)
-
-
-```json
-{
-  "dispensable": true,
-  "slot": "slot.armor.head"
 }
 ```
 
@@ -66,18 +69,8 @@ Sets the wearable item component.
 
 
 ```json
-{
+"minecraft:wearable": {
   "dispensable": true,
   "slot": "slot.armor.legs"
-}
-```
-
-#### [Wrench](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/wrench.json)
-
-
-```json
-{
-  "dispensable": true,
-  "slot": "slot.weapon.offhand"
 }
 ```

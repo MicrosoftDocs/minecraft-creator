@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructure Processors BlockRules",
+    "description": "Replaces and modifies blocks based on a series of rules",
+    "fields": [
+      {
+        "id": "rules",
+        "title": "rules",
+        "description": "List of block rules evaluated on all blocks of a Structure Template. Block rules are evaluated in order. If a block rule succeeds and the output_state is set, the output_state block will be used as the input_predicate block for subsequent rules.",
+        "dataType": 15
+      },
+      {
+        "id": "processor_type",
+        "title": "enum SharedTypes_v1_21_20_JigsawStructure_Processors_Type",
+        "description": "enum SharedTypes_v1_21_20_JigsawStructure_Processors_Type",
+        "dataType": 2
+      }
+    ]
+  }
+}

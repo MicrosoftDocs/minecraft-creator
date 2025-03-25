@@ -1,0 +1,51 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Biome JSON File Biome",
+    "description": "Contains a format version and a biome definition",
+    "fields": [
+      {
+        "id": "minecraft:biome",
+        "title": "minecraft:biome",
+        "description": "A single biome definition",
+        "dataType": 16,
+        "subForm": {
+          "title": "Biome Definition",
+          "description": "Contains a description and components to define a Biome.",
+          "fields": [
+            {
+              "id": "components",
+              "title": "components",
+              "description": "Components for this Biome.",
+              "dataType": 16
+            },
+            {
+              "id": "description",
+              "title": "description",
+              "description": "Non-component settings, including the Biome name.",
+              "dataType": 16,
+              "subForm": {
+                "title": "Biome Description",
+                "description": "Contains non-component settings for a Biome.",
+                "fields": [
+                  {
+                    "id": "identifier",
+                    "title": "identifier",
+                    "description": "The name of the Biome, used by other features like the '/locate biome' command.",
+                    "dataType": 2
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "Version of the JSON schema used by this file",
+        "dataType": 2
+      }
+    ]
+  }
+}

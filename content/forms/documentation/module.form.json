@@ -1,0 +1,15 @@
+{
+  "title": "Documented Module",
+  "fields": [
+    {
+      "id": "uuid",
+      "title": "Unique Id",
+      "dataType": 2
+    },
+    {
+      "id": "version",
+      "title": "Version",
+      "dataType": 2
+    }
+  ]
+}

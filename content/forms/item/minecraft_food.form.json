@@ -1,0 +1,1825 @@
+{
+  "fields": [],
+  "description": "Sets the item as a food component, allowing it to be edible to the player.",
+  "requires": [
+    {
+      "id": "minecraft:use_modifier",
+      "type": "item_component"
+    }
+  ],
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "can_always_eat": false,
+          "nutrition": 3,
+          "saturation_modifier": 0.6,
+          "using_converts_to": "bowl"
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "title": "Food",
+    "description": "When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly.",
+    "fields": [
+      {
+        "id": "saturation_modifier",
+        "title": "saturation_modifier",
+        "description": "saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6.",
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 0.3
+            }
+          ],
+          "/vanilla/behavior_pack/items/appleEnchanted.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "supernatural"
+            }
+          ],
+          "/vanilla/behavior_pack/items/baked_potato.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "normal"
+            }
+          ],
+          "/vanilla/behavior_pack/items/beef.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "low"
+            }
+          ],
+          "/vanilla/behavior_pack/items/beetroot_soup.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "normal"
+            }
+          ],
+          "/vanilla/behavior_pack/items/chicken.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "low"
+            }
+          ],
+          "/vanilla/behavior_pack/items/clownfish.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "poor"
+            }
+          ],
+          "/vanilla/behavior_pack/items/cooked_beef.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "good"
+            }
+          ],
+          "/vanilla/behavior_pack/items/cooked_porkchop.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "good"
+            }
+          ],
+          "/vanilla/behavior_pack/items/cookie.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "poor"
+            }
+          ],
+          "/vanilla/behavior_pack/items/golden_apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "supernatural"
+            }
+          ]
+        }
+      },
+      {
+        "id": "nutrition",
+        "title": "nutrition",
+        "description": "Value that is added to the entity's nutrition when the item is used. Default is set to 0.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/items/appleEnchanted.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/items/baked_potato.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/items/beef.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/items/beetroot_soup.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/items/beetroot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/items/bread.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/items/carrot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/items/chicken.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/items/clownfish.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/items/cooked_beef.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/items/cooked_chicken.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/items/cooked_porkchop.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/items/cookie.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/items/rabbit_stew.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_always_eat",
+        "title": "can_always_eat",
+        "description": "If true you can always eat this item (even when not hungry). Default is set to false.",
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/items/appleEnchanted.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/items/chorus_fruit.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "using_converts_to",
+        "title": "using_converts_to",
+        "description": "When used, converts to the item specified by the string in this field. Default does not convert item.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Using Converts To",
+          "description": "Using Converts To",
+          "fields": []
+        },
+        "samples": {
+          "/vanilla/behavior_pack/items/beetroot_soup.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "bowl"
+            }
+          ],
+          "/vanilla/behavior_pack/items/honey_bottle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "glass_bottle"
+            }
+          ],
+          "/vanilla/behavior_pack/items/mushroom_stew.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "bowl"
+            }
+          ]
+        }
+      },
+      {
+        "id": "effects",
+        "title": "Effects",
+        "dataType": 15,
+        "subForm": {
+          "id": "effects",
+          "title": "Effects",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/items/appleEnchanted.json": [
+                  {
+                    "path": "name",
+                    "content": "regeneration"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "chance",
+              "title": "Chance",
+              "dataType": 7,
+              "samples": {
+                "/vanilla/behavior_pack/items/appleEnchanted.json": [
+                  {
+                    "path": "chance",
+                    "content": 1
+                  }
+                ]
+              }
+            },
+            {
+              "id": "duration",
+              "title": "Duration",
+              "dataType": 7,
+              "samples": {
+                "/vanilla/behavior_pack/items/appleEnchanted.json": [
+                  {
+                    "path": "duration",
+                    "content": 30
+                  }
+                ]
+              }
+            },
+            {
+              "id": "amplifier",
+              "title": "Amplifier",
+              "dataType": 7,
+              "samples": {
+                "/vanilla/behavior_pack/items/appleEnchanted.json": [
+                  {
+                    "path": "amplifier",
+                    "content": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/items/appleEnchanted.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": [
+                {
+                  "name": "regeneration",
+                  "chance": 1,
+                  "duration": 30,
+                  "amplifier": 1
+                },
+                {
+                  "name": "absorption",
+                  "chance": 1,
+                  "duration": 120,
+                  "amplifier": 3
+                },
+                {
+                  "name": "resistance",
+                  "chance": 1,
+                  "duration": 300,
+                  "amplifier": 0
+                },
+                {
+                  "name": "fire_resistance",
+                  "chance": 1,
+                  "duration": 300,
+                  "amplifier": 0
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/items/chicken.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": [
+                {
+                  "name": "hunger",
+                  "chance": 0.3,
+                  "duration": 30,
+                  "amplifier": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_use_action",
+        "title": "On Use Action",
+        "dataType": 22
+      },
+      {
+        "id": "on_use_range",
+        "title": "On Use Range",
+        "dataType": 22
+      },
+      {
+        "id": "cooldown_type",
+        "title": "Cooldown Type",
+        "dataType": 2
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "dataType": 7
+      },
+      {
+        "id": "is_meat",
+        "title": "Is Meat",
+        "dataType": 2
+      },
+      {
+        "id": "remove_effects",
+        "title": "Remove Effects",
+        "dataType": 17
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": 0.3
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/appleEnchanted.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": "supernatural",
+            "can_always_eat": true,
+            "effects": [
+              {
+                "name": "regeneration",
+                "chance": 1,
+                "duration": 30,
+                "amplifier": 1
+              },
+              {
+                "name": "absorption",
+                "chance": 1,
+                "duration": 120,
+                "amplifier": 3
+              },
+              {
+                "name": "resistance",
+                "chance": 1,
+                "duration": 300,
+                "amplifier": 0
+              },
+              {
+                "name": "fire_resistance",
+                "chance": 1,
+                "duration": 300,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/baked_potato.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 5,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/beef.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 3,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/beetroot_soup.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "normal",
+            "using_converts_to": "bowl"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/beetroot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 1,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/bread.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 5,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/carrot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 3,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/chicken.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low",
+            "effects": [
+              {
+                "name": "hunger",
+                "chance": 0.3,
+                "duration": 30,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/chorus_fruit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": "low",
+            "on_use_action": "chorus_teleport",
+            "on_use_range": [
+              8,
+              8,
+              8
+            ],
+            "cooldown_type": "chorusfruit",
+            "cooldown_time": 20,
+            "can_always_eat": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/clownfish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 1,
+            "saturation_modifier": "poor"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_beef.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 8,
+            "saturation_modifier": "good"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_chicken.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_fish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 5,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_porkchop.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 8,
+            "saturation_modifier": "good"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_rabbit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 5,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_salmon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "good"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cookie.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "poor"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/dried_kelp.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 1,
+            "saturation_modifier": "poor"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/fish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "poor"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/glow_berries.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low",
+            "is_meat": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": "supernatural",
+            "can_always_eat": true,
+            "effects": [
+              {
+                "name": "regeneration",
+                "chance": 1,
+                "duration": 5,
+                "amplifier": 1
+              },
+              {
+                "name": "absorption",
+                "chance": 1,
+                "duration": 120,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_carrot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "supernatural"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/honey_bottle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "poor",
+            "can_always_eat": true,
+            "using_converts_to": "glass_bottle",
+            "remove_effects": [
+              "poison"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/melon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/mushroom_stew.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "normal",
+            "using_converts_to": "bowl"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/muttonCooked.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "good"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/muttonRaw.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/poisonous_potato.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low",
+            "effects": [
+              {
+                "name": "poison",
+                "chance": 0.6,
+                "duration": 5,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/porkchop.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 3,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/potato.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 1,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/pufferfish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 1,
+            "saturation_modifier": "poor",
+            "effects": [
+              {
+                "name": "poison",
+                "duration": 60,
+                "amplifier": 1
+              },
+              {
+                "name": "nausea",
+                "duration": 15,
+                "amplifier": 0
+              },
+              {
+                "name": "hunger",
+                "duration": 15,
+                "amplifier": 2
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/pumpkin_pie.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 8,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/rabbit_stew.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 10,
+            "saturation_modifier": "normal",
+            "using_converts_to": "bowl"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/rabbit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 3,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/rotten_flesh.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": "poor",
+            "effects": [
+              {
+                "name": "hunger",
+                "chance": 0.8,
+                "duration": 30,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/salmon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "poor"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/spider_eye.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "good",
+            "effects": [
+              {
+                "name": "poison",
+                "chance": 1,
+                "duration": 5,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/suspicious_stew.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "normal",
+            "using_converts_to": "bowl",
+            "on_use_action": "suspicious_stew_effect",
+            "can_always_eat": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/sweet_berries.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low",
+            "is_meat": false
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Food",
+    "description": "When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly.",
+    "fields": [
+      {
+        "id": "saturation_modifier",
+        "title": "saturation_modifier",
+        "description": "saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6.",
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 0.3
+            }
+          ],
+          "/vanilla/behavior_pack/items/appleEnchanted.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "supernatural"
+            }
+          ],
+          "/vanilla/behavior_pack/items/baked_potato.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "normal"
+            }
+          ],
+          "/vanilla/behavior_pack/items/beef.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "low"
+            }
+          ],
+          "/vanilla/behavior_pack/items/beetroot_soup.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "normal"
+            }
+          ],
+          "/vanilla/behavior_pack/items/chicken.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "low"
+            }
+          ],
+          "/vanilla/behavior_pack/items/clownfish.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "poor"
+            }
+          ],
+          "/vanilla/behavior_pack/items/cooked_beef.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "good"
+            }
+          ],
+          "/vanilla/behavior_pack/items/cooked_porkchop.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "good"
+            }
+          ],
+          "/vanilla/behavior_pack/items/cookie.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "poor"
+            }
+          ],
+          "/vanilla/behavior_pack/items/golden_apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "supernatural"
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 0.6
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/dream_essence.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 0.2
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/dream_turkey.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 0.2
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 0.6
+            }
+          ]
+        }
+      },
+      {
+        "id": "nutrition",
+        "title": "nutrition",
+        "description": "Value that is added to the entity's nutrition when the item is used. Default is set to 0.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/items/appleEnchanted.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/items/baked_potato.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/items/beef.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/items/beetroot_soup.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/items/beetroot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/items/bread.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/items/carrot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/items/chicken.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/items/clownfish.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/items/cooked_beef.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/items/cooked_chicken.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/items/cooked_porkchop.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/items/cookie.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/items/rabbit_stew.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_always_eat",
+        "title": "can_always_eat",
+        "description": "If true you can always eat this item (even when not hungry). Default is set to false.",
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/items/appleEnchanted.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/items/chorus_fruit.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "using_converts_to",
+        "title": "using_converts_to",
+        "description": "When used, converts to the item specified by the string in this field. Default does not convert item.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "using_converts_to",
+            "dataType": 24
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/items/beetroot_soup.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "bowl"
+            }
+          ],
+          "/vanilla/behavior_pack/items/honey_bottle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "glass_bottle"
+            }
+          ],
+          "/vanilla/behavior_pack/items/mushroom_stew.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": "bowl"
+            }
+          ]
+        }
+      },
+      {
+        "id": "effects",
+        "title": "Effects",
+        "dataType": 15,
+        "subForm": {
+          "id": "effects",
+          "title": "Effects",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/items/appleEnchanted.json": [
+                  {
+                    "path": "name",
+                    "content": "regeneration"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "chance",
+              "title": "Chance",
+              "dataType": 7,
+              "samples": {
+                "/vanilla/behavior_pack/items/appleEnchanted.json": [
+                  {
+                    "path": "chance",
+                    "content": 1
+                  }
+                ]
+              }
+            },
+            {
+              "id": "duration",
+              "title": "Duration",
+              "dataType": 7,
+              "samples": {
+                "/vanilla/behavior_pack/items/appleEnchanted.json": [
+                  {
+                    "path": "duration",
+                    "content": 30
+                  }
+                ]
+              }
+            },
+            {
+              "id": "amplifier",
+              "title": "Amplifier",
+              "dataType": 7,
+              "samples": {
+                "/vanilla/behavior_pack/items/appleEnchanted.json": [
+                  {
+                    "path": "amplifier",
+                    "content": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/items/appleEnchanted.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": [
+                {
+                  "name": "regeneration",
+                  "chance": 1,
+                  "duration": 30,
+                  "amplifier": 1
+                },
+                {
+                  "name": "absorption",
+                  "chance": 1,
+                  "duration": 120,
+                  "amplifier": 3
+                },
+                {
+                  "name": "resistance",
+                  "chance": 1,
+                  "duration": 300,
+                  "amplifier": 0
+                },
+                {
+                  "name": "fire_resistance",
+                  "chance": 1,
+                  "duration": 300,
+                  "amplifier": 0
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/items/chicken.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": [
+                {
+                  "name": "hunger",
+                  "chance": 0.3,
+                  "duration": 30,
+                  "amplifier": 0
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_use_action",
+        "title": "On Use Action",
+        "dataType": 22
+      },
+      {
+        "id": "on_use_range",
+        "title": "On Use Range",
+        "dataType": 22
+      },
+      {
+        "id": "cooldown_type",
+        "title": "Cooldown Type",
+        "dataType": 2
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "dataType": 7
+      },
+      {
+        "id": "is_meat",
+        "title": "Is Meat",
+        "dataType": 2
+      },
+      {
+        "id": "remove_effects",
+        "title": "Remove Effects",
+        "dataType": 17
+      }
+    ],
+    "id": "minecraft:food",
+    "samples": {
+      "/vanilla/behavior_pack/items/apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": 0.3
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/appleEnchanted.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": "supernatural",
+            "can_always_eat": true,
+            "effects": [
+              {
+                "name": "regeneration",
+                "chance": 1,
+                "duration": 30,
+                "amplifier": 1
+              },
+              {
+                "name": "absorption",
+                "chance": 1,
+                "duration": 120,
+                "amplifier": 3
+              },
+              {
+                "name": "resistance",
+                "chance": 1,
+                "duration": 300,
+                "amplifier": 0
+              },
+              {
+                "name": "fire_resistance",
+                "chance": 1,
+                "duration": 300,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/baked_potato.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 5,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/beef.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 3,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/beetroot_soup.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "normal",
+            "using_converts_to": "bowl"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/beetroot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 1,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/bread.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 5,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/carrot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 3,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/chicken.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low",
+            "effects": [
+              {
+                "name": "hunger",
+                "chance": 0.3,
+                "duration": 30,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/chorus_fruit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": "low",
+            "on_use_action": "chorus_teleport",
+            "on_use_range": [
+              8,
+              8,
+              8
+            ],
+            "cooldown_type": "chorusfruit",
+            "cooldown_time": 20,
+            "can_always_eat": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/clownfish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 1,
+            "saturation_modifier": "poor"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_beef.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 8,
+            "saturation_modifier": "good"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_chicken.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_fish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 5,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_porkchop.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 8,
+            "saturation_modifier": "good"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_rabbit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 5,
+            "saturation_modifier": "normal"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_salmon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "good"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cookie.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "poor"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/dried_kelp.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 1,
+            "saturation_modifier": "poor"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/fish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "poor"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/glow_berries.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low",
+            "is_meat": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": "supernatural",
+            "can_always_eat": true,
+            "effects": [
+              {
+                "name": "regeneration",
+                "chance": 1,
+                "duration": 5,
+                "amplifier": 1
+              },
+              {
+                "name": "absorption",
+                "chance": 1,
+                "duration": 120,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_carrot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "supernatural"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/honey_bottle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "poor",
+            "can_always_eat": true,
+            "using_converts_to": "glass_bottle",
+            "remove_effects": [
+              "poison"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/melon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/mushroom_stew.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "normal",
+            "using_converts_to": "bowl"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/muttonCooked.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "good"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/muttonRaw.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/poisonous_potato.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low",
+            "effects": [
+              {
+                "name": "poison",
+                "chance": 0.6,
+                "duration": 5,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/porkchop.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 3,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/potato.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 1,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/pufferfish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 1,
+            "saturation_modifier": "poor",
+            "effects": [
+              {
+                "name": "poison",
+                "duration": 60,
+                "amplifier": 1
+              },
+              {
+                "name": "nausea",
+                "duration": 15,
+                "amplifier": 0
+              },
+              {
+                "name": "hunger",
+                "duration": 15,
+                "amplifier": 2
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/pumpkin_pie.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 8,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/rabbit_stew.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 10,
+            "saturation_modifier": "normal",
+            "using_converts_to": "bowl"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/rabbit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 3,
+            "saturation_modifier": "low"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/rotten_flesh.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 4,
+            "saturation_modifier": "poor",
+            "effects": [
+              {
+                "name": "hunger",
+                "chance": 0.8,
+                "duration": 30,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/salmon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "poor"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/spider_eye.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "good",
+            "effects": [
+              {
+                "name": "poison",
+                "chance": 1,
+                "duration": 5,
+                "amplifier": 0
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/suspicious_stew.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 6,
+            "saturation_modifier": "normal",
+            "using_converts_to": "bowl",
+            "on_use_action": "suspicious_stew_effect",
+            "can_always_eat": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/sweet_berries.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "nutrition": 2,
+            "saturation_modifier": "low",
+            "is_meat": false
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "can_always_eat": true,
+            "nutrition": 6,
+            "saturation_modifier": 0.6
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/dream_essence.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "can_always_eat": true,
+            "nutrition": 2,
+            "saturation_modifier": 0.2
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "can_always_eat": true,
+            "nutrition": 2,
+            "saturation_modifier": 0.2
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "can_always_eat": true,
+            "nutrition": 6,
+            "saturation_modifier": 0.6
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/items/dream_essence.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "can_always_eat": true,
+            "nutrition": 2,
+            "saturation_modifier": 0.2
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/items/dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "can_always_eat": true,
+            "nutrition": 2,
+            "saturation_modifier": 0.2
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "can_always_eat": true,
+            "nutrition": 6,
+            "saturation_modifier": 0.6
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/items/dream_essence.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "can_always_eat": true,
+            "nutrition": 2,
+            "saturation_modifier": 0.2
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/items/dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:food/",
+          "content": {
+            "can_always_eat": true,
+            "nutrition": 2,
+            "saturation_modifier": 0.2
+          }
+        }
+      ]
+    }
+  }
+}
