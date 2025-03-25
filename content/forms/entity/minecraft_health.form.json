@@ -1,0 +1,24 @@
+{
+  "title": "Health",
+  "description": "Default and maximum health settings",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "dataType": 0,
+      "experienceType": 3,
+      "minValue": 0,
+      "suggestedMaxValue": 120,
+      "defaultValue": 100
+    },
+    {
+      "id": "max",
+      "title": "Maximum health possible for this mob.",
+      "dataType": 0,
+      "experienceType": 3,
+      "minValue": 0,
+      "suggestedMaxValue": 120,
+      "defaultValue": 100
+    }
+  ]
+}

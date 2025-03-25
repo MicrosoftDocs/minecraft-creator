@@ -1,16 +1,21 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.squid_flee"
-description: "Describes the behavior.squid_flee AI Goals"
+title: "Entity Documentation - minecraft:behavior.squid_flee"
+description: "Describes the minecraft:behavior.squid_flee ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.squid_flee
+# Entity Documentation - minecraft:behavior.squid_flee
 
-Allows the squid to swim away. Can only be used by the Squid.
+Allows the squid to swim away.
 
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Squid (minecraft:squid)
+> 
 
 ## Squid Flee Behavior Properties
 
@@ -24,16 +29,7 @@ Allows the squid to swim away. Can only be used by the Squid.
 
 
 ```json
-{
-  "priority": 2
-}
-```
-
-#### [Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/squid.json)
-
-
-```json
-{
+"minecraft:behavior.squid_flee": {
   "priority": 2
 }
 ```

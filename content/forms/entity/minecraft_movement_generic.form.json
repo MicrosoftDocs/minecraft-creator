@@ -1,0 +1,25 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:movement.generic",
+    "title": "Generic Movement",
+    "description": "This move control allows a mob to fly, swim, climb, etc.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "defaultValue": 30,
+        "dataType": 3
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.generic/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

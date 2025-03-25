@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.trade_interest"
-description: "Describes the behavior.trade_interest AI Goals"
+title: "Entity Documentation - minecraft:behavior.trade_interest"
+description: "Describes the minecraft:behavior.trade_interest ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.trade_interest
+# Entity Documentation - minecraft:behavior.trade_interest
 
 Allows the mob to look at a player that is holding a tradable item.
 
@@ -30,169 +30,13 @@ Allows the mob to look at a player that is holding a tradable item.
 At /minecraft:entity/component_groups/trade_components/minecraft:behavior.trade_interest/: 
 
 ```json
-{}
+"minecraft:behavior.trade_interest": {}
 ```
 
 At /minecraft:entity/component_groups/farmer/minecraft:behavior.trade_interest/: 
 
 ```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/fisherman/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/shepherd/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/fletcher/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/librarian/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/cartographer/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/cleric/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/armorer/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/weaponsmith/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/toolsmith/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/butcher/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/leatherworker/minecraft:behavior.trade_interest/: 
-
-```json
-{
-  "priority": 5,
-  "within_radius": 6,
-  "interest_time": 45,
-  "remove_item_time": 1,
-  "carried_item_switch_time": 2,
-  "cooldown": 2
-}
-```
-
-At /minecraft:entity/component_groups/mason/minecraft:behavior.trade_interest/: 
-
-```json
-{
+"minecraft:behavior.trade_interest": {
   "priority": 5,
   "within_radius": 6,
   "interest_time": 45,
@@ -206,7 +50,7 @@ At /minecraft:entity/component_groups/mason/minecraft:behavior.trade_interest/:
 
 
 ```json
-{
+"minecraft:behavior.trade_interest": {
   "priority": 3,
   "within_radius": 6,
   "interest_time": 45,

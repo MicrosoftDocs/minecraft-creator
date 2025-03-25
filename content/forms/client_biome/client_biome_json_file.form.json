@@ -1,0 +1,51 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Client Biome JSON File Client Biome",
+    "description": "Contains a format version and a Client Biome definition",
+    "fields": [
+      {
+        "id": "minecraft:client_biome",
+        "title": "minecraft:client_biome",
+        "description": "A single Client Biome definition, containing rendering or sound settings related to a Biome defined by the game or a behavior pack",
+        "dataType": 16,
+        "subForm": {
+          "title": "Client Biome Definition",
+          "description": "Contains a description and components to define a Client Biome.",
+          "fields": [
+            {
+              "id": "description",
+              "title": "description",
+              "description": "Non-component settings, including the Client Biome name.",
+              "dataType": 16,
+              "subForm": {
+                "title": "Client Biome Description",
+                "description": "Contains non-component settings for a Client Biome.",
+                "fields": [
+                  {
+                    "id": "identifier",
+                    "title": "identifier",
+                    "description": "The name of the Client Biome, used by other features like the '/locate biome' command. Must match the name of a Biome defined by the game or a behavior pack.",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "components",
+              "title": "components",
+              "description": "Components for this Client Biome.",
+              "dataType": 16
+            }
+          ]
+        }
+      },
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "Version of the JSON schema used by this file",
+        "dataType": 2
+      }
+    ]
+  }
+}

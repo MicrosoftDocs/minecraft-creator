@@ -1,0 +1,28 @@
+{
+  "id": "ItemEquipped",
+  "title": "Item Equipped",
+  "description": "An item was equipped by a player.",
+  "fields": [
+    {
+      "id": "player",
+      "description": "Identifier of the player that has equipped an item.",
+      "dataType": 16,
+      "subFormId": "websockets/Player"
+    },
+    {
+      "id": "item",
+      "description": "Item that was acquired.",
+      "dataType": 2
+    },
+    {
+      "id": "slot",
+      "description": "Slot tha an item was equipped into.",
+      "dataType": 0
+    },
+    {
+      "id": "count",
+      "description": "Amount of items that were acquired.",
+      "dataType": 0
+    }
+  ]
+}

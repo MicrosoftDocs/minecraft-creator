@@ -1,0 +1,28 @@
+{
+  "id": "PlayerTeleported",
+  "title": "Player Teleported",
+  "description": "A player has teleported to a different location in the world.",
+  "fields": [
+    {
+      "id": "player",
+      "description": "Identifier of the player that teleported.",
+      "dataType": 16,
+      "subFormId": "websockets/Player"
+    },
+    {
+      "id": "cause",
+      "description": "Cause of the teleportation.",
+      "dataType": 0
+    },
+    {
+      "id": "itemType",
+      "description": "Cause of the teleportation.",
+      "dataType": 0
+    },
+    {
+      "id": "metersTravelled",
+      "description": "Distance, in meters, that was travelled.",
+      "dataType": 3
+    }
+  ]
+}

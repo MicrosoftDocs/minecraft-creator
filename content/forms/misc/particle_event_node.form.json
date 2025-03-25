@@ -1,0 +1,203 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Event Node Misc",
+    "description": "Particle Event Node Misc",
+    "fields": [
+      {
+        "id": "expression",
+        "title": "expression",
+        "description": "expression",
+        "dataType": 16,
+        "subForm": {
+          "title": "Expression",
+          "description": "Expression",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "expression",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "log",
+        "title": "log",
+        "description": "log",
+        "dataType": 2
+      },
+      {
+        "id": "particle_effect",
+        "title": "particle_effect",
+        "description": "particle_effect",
+        "dataType": 16,
+        "subForm": {
+          "title": "Particle Visual Effect Event",
+          "description": "Particle Visual Effect Event",
+          "fields": [
+            {
+              "id": "effect",
+              "title": "effect",
+              "description": "effect",
+              "dataType": 16
+            },
+            {
+              "id": "pre_effect_expression",
+              "title": "pre_effect_expression",
+              "description": "pre_effect_expression",
+              "dataType": 16,
+              "subForm": {
+                "title": "Pre Effect Expression",
+                "description": "Pre Effect Expression",
+                "fields": []
+              },
+              "alternates": [
+                {
+                  "id": "pre_effect_expression",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "type",
+              "title": "particle_visual_effect_event effect_type",
+              "description": "particle_visual_effect_event effect_type",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "sequence",
+        "title": "sequence",
+        "description": "sequence",
+        "dataType": 15,
+        "subForm": {
+          "title": "Particle Event Node",
+          "description": "Particle Event Node",
+          "fields": [
+            {
+              "id": "expression",
+              "title": "expression",
+              "description": "expression",
+              "dataType": 16,
+              "subForm": {
+                "title": "Expression",
+                "description": "Expression",
+                "fields": []
+              },
+              "alternates": [
+                {
+                  "id": "expression",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "log",
+              "title": "log",
+              "description": "log",
+              "dataType": 2
+            },
+            {
+              "id": "particle_effect",
+              "title": "particle_effect",
+              "description": "particle_effect",
+              "dataType": 16,
+              "subForm": {
+                "title": "Particle Visual Effect Event",
+                "description": "Particle Visual Effect Event",
+                "fields": [
+                  {
+                    "id": "effect",
+                    "title": "effect",
+                    "description": "effect",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "pre_effect_expression",
+                    "title": "pre_effect_expression",
+                    "description": "pre_effect_expression",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Pre Effect Expression",
+                      "description": "Pre Effect Expression",
+                      "fields": []
+                    },
+                    "alternates": [
+                      {
+                        "id": "pre_effect_expression",
+                        "dataType": 3
+                      }
+                    ]
+                  },
+                  {
+                    "id": "type",
+                    "title": "particle_visual_effect_event effect_type",
+                    "description": "particle_visual_effect_event effect_type",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "sequence",
+              "title": "sequence",
+              "description": "sequence",
+              "dataType": 16
+            },
+            {
+              "id": "sound_effect",
+              "title": "sound_effect",
+              "description": "sound_effect",
+              "dataType": 16,
+              "subForm": {
+                "title": "Particle Sound Effect Event",
+                "description": "Particle Sound Effect Event",
+                "fields": [
+                  {
+                    "id": "event_name",
+                    "title": "event_name",
+                    "description": "event_name",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "randomize",
+              "title": "randomize",
+              "description": "randomize",
+              "dataType": 16
+            }
+          ]
+        }
+      },
+      {
+        "id": "sound_effect",
+        "title": "sound_effect",
+        "description": "sound_effect",
+        "dataType": 16,
+        "subForm": {
+          "title": "Particle Sound Effect Event",
+          "description": "Particle Sound Effect Event",
+          "fields": [
+            {
+              "id": "event_name",
+              "title": "event_name",
+              "description": "event_name",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "randomize",
+        "title": "randomize",
+        "description": "randomize",
+        "dataType": 16
+      }
+    ]
+  }
+}

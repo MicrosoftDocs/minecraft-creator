@@ -1,0 +1,47 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:is_sheared",
+    "title": "Is Sheared",
+    "description": "Sets that this entity is currently sheared.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:bogged_sheared/minecraft:is_sheared/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:is_sheared/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:snowman_sheared/minecraft:is_sheared/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:is_sheared/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:is_sheared/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:is_sheared/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

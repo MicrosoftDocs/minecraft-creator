@@ -1,0 +1,37 @@
+{
+  "title": "Render Controller Set",
+  "fields": [
+    {
+      "id": "render_controllers",
+      "displayTitle": false,
+      "allowCreateDelete": false,
+      "dataType": 14,
+      "subForm": {
+        "fields": [
+          {
+            "id": "geometry",
+            "title": "Geometry",
+            "description": "A name or expression that describes which model to use for this item",
+            "dataType": 2
+          },
+          {
+            "id": "arrays",
+            "title": "Lists",
+            "dataType": 16,
+            "subForm": {
+              "fields": [
+                {
+                  "id": "geometries",
+                  "title": "Geometries",
+                  "undefinedIfEmpty": true,
+                  "description": "Lists of geometries that can be used in selection calculations",
+                  "dataType": 28
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

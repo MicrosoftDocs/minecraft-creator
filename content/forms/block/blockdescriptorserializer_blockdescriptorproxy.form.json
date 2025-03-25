@@ -1,0 +1,27 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "BlockDescriptorSerializer BlockDescriptorProxy",
+    "description": "BlockDescriptorSerializer BlockDescriptorProxy",
+    "fields": [
+      {
+        "id": "name",
+        "title": "name",
+        "description": "name",
+        "dataType": 2
+      },
+      {
+        "id": "tags",
+        "title": "tags",
+        "description": "tags",
+        "dataType": 2
+      },
+      {
+        "id": "states",
+        "title": "states",
+        "description": "states",
+        "dataType": 16
+      }
+    ]
+  }
+}

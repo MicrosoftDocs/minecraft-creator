@@ -1,0 +1,13 @@
+{
+  "id": "ChunkChanged",
+  "title": "Chunk Changed",
+  "description": "Fires when a chunk is changed (e.g., blocks are changed). Note that this event will only fire in Minecraft: Education Edition.",
+  "fields": [
+    {
+      "id": "chunk",
+      "description": "Identifier of the chunk that has had some of its contents changed.",
+      "dataType": 16,
+      "subFormId": "websockets/Chunk"
+    }
+  ]
+}

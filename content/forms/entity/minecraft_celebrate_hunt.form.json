@@ -1,0 +1,162 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:celebrate_hunt",
+    "title": "Celebrate Hunt",
+    "description": "Specifies hunt celebration behaviour.",
+    "fields": [
+      {
+        "id": "broadcast",
+        "title": "Broadcast",
+        "description": "If true, celebration will be broadcasted to other entities in the radius.",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:celebrate_hunt/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "celeberation_targets",
+        "title": "Celeberation Targets",
+        "description": "The list of conditions that target of hunt must satisfy to initiate celebration.",
+        "dataType": 20
+      },
+      {
+        "id": "celebrate_sound",
+        "title": "Celebrate Sound",
+        "description": "The sound event to play when the mob is celebrating",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:celebrate_hunt/",
+              "content": "celebrate"
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Duration, in seconds, of celebration",
+        "defaultValue": 4,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:celebrate_hunt/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "radius",
+        "title": "Radius",
+        "description": "If broadcast is enabled, specifies the radius in which it will notify other entities for celebration.",
+        "defaultValue": 16,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:celebrate_hunt/",
+              "content": 16
+            }
+          ]
+        }
+      },
+      {
+        "id": "sound_interval",
+        "title": "Sound Interval",
+        "description": "The range of time in seconds to randomly wait before playing the sound again",
+        "defaultValue": 0,
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:celebrate_hunt/",
+              "content": {
+                "range_min": 2,
+                "range_max": 5
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "celebration_targets",
+        "title": "Celebration Targets",
+        "dataType": 16,
+        "subForm": {
+          "id": "celebration_targets",
+          "title": "Celebration_targets",
+          "fields": [
+            {
+              "id": "all_of",
+              "title": "All_of",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/piglin.json": [
+                  {
+                    "path": "all_of",
+                    "content": [
+                      {
+                        "test": "is_family",
+                        "value": "hoglin"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:celebrate_hunt/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "value": "hoglin"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:celebrate_hunt/",
+          "content": {
+            "celebration_targets": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "value": "hoglin"
+                }
+              ]
+            },
+            "broadcast": true,
+            "duration": 10,
+            "celebrate_sound": "celebrate",
+            "sound_interval": {
+              "range_min": 2,
+              "range_max": 5
+            },
+            "radius": 16
+          }
+        }
+      ]
+    }
+  }
+}

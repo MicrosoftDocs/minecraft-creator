@@ -1,0 +1,9 @@
+{
+  "fields": [
+    {
+      "id": "materials",
+      "dataType": 24,
+      "description": "A list of identified models that this entity uses."
+    }
+  ]
+}

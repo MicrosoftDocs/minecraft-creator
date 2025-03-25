@@ -1,0 +1,22 @@
+{
+  "fields": [],
+  "isDeprecated": true,
+  "generated_doNotEdit": {
+    "title": "Render Offsets",
+    "description": "Render offsets component: optional values can be given to offset the way the item is rendered.",
+    "fields": [
+      {
+        "id": "main_hand",
+        "title": "main_hand",
+        "description": "Main hand transform data.",
+        "dataType": 16
+      },
+      {
+        "id": "off_hand",
+        "title": "off_hand",
+        "description": "Offhand hand transform data.",
+        "dataType": 16
+      }
+    ]
+  }
+}

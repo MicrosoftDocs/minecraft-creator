@@ -1,0 +1,225 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.sonic_boom",
+    "title": "Sonic Boom Behavior",
+    "description": "Allows this entity to perform a 'sonic boom' ranged attack",
+    "fields": [
+      {
+        "id": "attack_cooldown",
+        "title": "Attack Cooldown",
+        "description": "Cooldown in seconds required after using this attack until the entity can use sonic boom again.",
+        "defaultValue": 5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_damage",
+        "title": "Attack Damage",
+        "description": "Attack damage of the sonic boom.",
+        "defaultValue": 30,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_range_horizontal",
+        "title": "Attack Range Horizontal",
+        "description": "Horizontal range (in blocks) at which the sonic boom can damage the target.",
+        "defaultValue": 15,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 15
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_range_vertical",
+        "title": "Attack Range Vertical",
+        "description": "Vertical range (in blocks) at which the sonic boom can damage the target.",
+        "defaultValue": 20,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_sound",
+        "title": "Attack Sound",
+        "description": "Sound event for the attack.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": "sonic_boom"
+            }
+          ]
+        }
+      },
+      {
+        "id": "charge_sound",
+        "title": "Charge Sound",
+        "description": "Sound event for the charge up.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": "sonic_charge"
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Goal duration in seconds",
+        "defaultValue": 3,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration_until_attack_sound",
+        "title": "Duration Until Attack Sound",
+        "description": "Duration in seconds until the attack sound is played.",
+        "defaultValue": 1.7,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 1.7
+            }
+          ]
+        }
+      },
+      {
+        "id": "knockback_height_cap",
+        "title": "Knockback Height Cap",
+        "description": "Height cap of the attack knockback's vertical delta.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "knockback_horizontal_strength",
+        "title": "Knockback Horizontal Strength",
+        "description": "Horizontal strength of the attack's knockback applied to the attack target.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 2.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "knockback_vertical_strength",
+        "title": "Knockback Vertical Strength",
+        "description": "Vertical strength of the attack's knockback applied to the attack target.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "This multiplier modifies the attacking entity's speed when moving toward the target.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 1.2
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+              "content": 3
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.sonic_boom/",
+          "content": {
+            "priority": 3,
+            "duration": 3,
+            "speed_multiplier": 1.2,
+            "attack_damage": 10,
+            "attack_range_horizontal": 15,
+            "attack_range_vertical": 20,
+            "attack_cooldown": 2,
+            "knockback_vertical_strength": 0.5,
+            "knockback_horizontal_strength": 2.5,
+            "knockback_height_cap": 0.5,
+            "duration_until_attack_sound": 1.7,
+            "charge_sound": "sonic_charge",
+            "attack_sound": "sonic_boom"
+          }
+        }
+      ]
+    }
+  }
+}

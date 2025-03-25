@@ -1,16 +1,21 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.take_flower"
-description: "Describes the behavior.take_flower AI Goals"
+title: "Entity Documentation - minecraft:behavior.take_flower"
+description: "Describes the minecraft:behavior.take_flower ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.take_flower
+# Entity Documentation - minecraft:behavior.take_flower
 
 Allows the mob to accept flowers from another mob with the minecraft:offer_flower behavior.
 
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Villager (minecraft:villager)
+> 
 
 ## Take Flower Behavior Properties
 
@@ -32,7 +37,7 @@ Allows the mob to accept flowers from another mob with the minecraft:offer_flowe
 
 
 ```json
-{
+"minecraft:behavior.take_flower": {
   "priority": 9,
   "filters": {
     "all_of": [
@@ -49,7 +54,7 @@ Allows the mob to accept flowers from another mob with the minecraft:offer_flowe
 
 
 ```json
-{
+"minecraft:behavior.take_flower": {
   "priority": 7,
   "filters": {
     "all_of": [

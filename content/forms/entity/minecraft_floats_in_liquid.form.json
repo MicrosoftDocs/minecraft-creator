@@ -1,0 +1,9 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:floats_in_liquid",
+    "title": "Floats In Liquid",
+    "description": "Sets that this entity can float in liquid blocks.",
+    "fields": []
+  }
+}

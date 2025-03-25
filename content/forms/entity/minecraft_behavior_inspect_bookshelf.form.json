@@ -1,0 +1,111 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.inspect_bookshelf",
+    "title": "Inspect Bookshelf Behavior",
+    "description": "Allows the mob to inspect bookshelves.",
+    "fields": [
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
+        "defaultValue": 0.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_librarian/minecraft:behavior.inspect_bookshelf/",
+              "content": 0.8
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_count",
+        "title": "Search Count",
+        "description": "The number of blocks each tick that the mob will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick",
+        "defaultValue": 10,
+        "dataType": 0
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "description": "The height that the mob will search for bookshelves",
+        "defaultValue": 1,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_librarian/minecraft:behavior.inspect_bookshelf/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "Distance in blocks the mob will look for books to inspect",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_librarian/minecraft:behavior.inspect_bookshelf/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_librarian/minecraft:behavior.inspect_bookshelf/",
+              "content": 0.6
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_librarian/minecraft:behavior.inspect_bookshelf/",
+              "content": 8
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/component_groups/job_specific_goals/minecraft:behavior.inspect_bookshelf/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/work_schedule_librarian/minecraft:behavior.inspect_bookshelf/",
+          "content": {
+            "priority": 8,
+            "speed_multiplier": 0.6,
+            "search_range": 4,
+            "search_height": 3,
+            "goal_radius": 0.8,
+            "search_count": 0
+          }
+        }
+      ]
+    }
+  }
+}

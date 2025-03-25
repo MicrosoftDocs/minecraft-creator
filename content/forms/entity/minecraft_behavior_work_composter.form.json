@@ -1,0 +1,181 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.work_composter",
+    "title": "Work Composter Behavior",
+    "description": "Allows the NPC to use the composter POI to convert excess seeds into bone meal.",
+    "fields": [
+      {
+        "id": "active_time",
+        "title": "Active Time",
+        "description": "The amount of ticks the NPC will stay in their the work location",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.work_composter/",
+              "content": 250
+            }
+          ]
+        }
+      },
+      {
+        "id": "block_interaction_max",
+        "title": "Block Interaction Max",
+        "description": "The maximum number of times the mob will interact with the composter.",
+        "defaultValue": 1,
+        "dataType": 0
+      },
+      {
+        "id": "can_empty_composter",
+        "title": "Can Empty Composter",
+        "description": "Determines whether the mob can empty a full composter.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "can_fill_composter",
+        "title": "Can Fill Composter",
+        "description": "Determines whether the mob can add items to a composter given that it is not full.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "can_work_in_rain",
+        "title": "Can Work In Rain",
+        "description": "If true, this entity can work when their jobsite POI is being rained on.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "goal_cooldown",
+        "title": "Goal Cooldown",
+        "description": "The amount of ticks the goal will be on cooldown before it can be used again",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.work_composter/",
+              "content": 200
+            }
+          ]
+        }
+      },
+      {
+        "id": "items_per_use_max",
+        "title": "Items Per Use Max",
+        "description": "The maximum number of items which can be added to the composter per block interaction.",
+        "defaultValue": 20,
+        "dataType": 0
+      },
+      {
+        "id": "min_item_count",
+        "title": "Min Item Count",
+        "description": "Limits the amount of each compostable item the mob can use. Any amount held over this number will be composted if possible",
+        "defaultValue": 10,
+        "dataType": 0
+      },
+      {
+        "id": "on_arrival",
+        "title": "On Arrival",
+        "description": "Event to run when the mob reaches their jobsite.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.work_composter/",
+              "content": {
+                "event": "minecraft:resupply_trades",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "defaultValue": 0.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.work_composter/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "use_block_max",
+        "title": "Use Block Max",
+        "description": "The maximum interval in which the mob will interact with the composter.",
+        "defaultValue": 200,
+        "dataType": 0
+      },
+      {
+        "id": "use_block_min",
+        "title": "Use Block Min",
+        "description": "The minimum interval in which the mob will interact with the composter.",
+        "defaultValue": 100,
+        "dataType": 0
+      },
+      {
+        "id": "work_in_rain_tolerance",
+        "title": "Work In Rain Tolerance",
+        "description": "If \"can_work_in_rain\" is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal",
+        "defaultValue": -1,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.work_composter/",
+              "content": 100
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.work_composter/",
+              "content": 9
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/component_groups/job_specific_goals/minecraft:behavior.work_composter/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/work_schedule_farmer/minecraft:behavior.work_composter/",
+          "content": {
+            "priority": 9,
+            "active_time": 250,
+            "speed_multiplier": 0.5,
+            "goal_cooldown": 200,
+            "can_work_in_rain": false,
+            "work_in_rain_tolerance": 100,
+            "on_arrival": {
+              "event": "minecraft:resupply_trades",
+              "target": "self"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

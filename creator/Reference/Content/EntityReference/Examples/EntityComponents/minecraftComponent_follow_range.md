@@ -1,64 +1,124 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:follow_range
-description: "A reference document detailing the 'follow_range' entity component"
+title: "Entity Documentation - minecraft:follow_range"
+description: "Describes the minecraft:follow_range entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:follow_range
 
-`minecraft:follow_range` defines the range, in blocks, that a mob will pursue a target.
+Defines the range, in blocks, that a mob will pursue a target.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value| *not set* | Integer| The radius of the area of blocks the entity will attempt to stay within around a target. |
-|max| *not set*| Integer| Maximum distance the mob will go from a target. |
+## Follow Range Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max | *not set* | Integer number | Maximum distance the mob will go from a target. | Blaze: `48`, Creaking: `32`, Elder Guardian: `16` | 
+| value | *not set* | Integer number | The radius of the area of blocks the entity will attempt to stay within around a target. | Allay: `1024`, Blaze: `48`, Breeze: `32` | 
 
-```json
-"minecraft:follow_range": {
-        "value": 48,
-        "max": 48
-      }
-```
+## Samples
 
-## Vanilla entities examples
+#### [Allay](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/allay.json)
 
-### allay
 
 ```json
 "minecraft:follow_range": {
-        "value": 1024
-      }
+  "value": 1024
+}
 ```
 
-## Vanilla entities using `minecraft:follow_range`
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
 
-- [allay](../../../../Source/VanillaBehaviorPack_Snippets/entities/allay.md)
-- [bee](../../../../Source/VanillaBehaviorPack_Snippets/entities/bee.md)
-- [blaze](../../../../Source/VanillaBehaviorPack_Snippets/entities/blaze.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [enderman](../../../../Source/VanillaBehaviorPack_Snippets/entities/enderman.md)
-- [evocation_illager](../../../../Source/VanillaBehaviorPack_Snippets/entities/evocation_illager.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [ghast](../../../../Source/VanillaBehaviorPack_Snippets/entities/ghast.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
-- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/llama.md)
-- [phantom](../../../../Source/VanillaBehaviorPack_Snippets/entities/phantom.md)
-- [piglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin.md)
-- [piglin_brute](../../../../Source/VanillaBehaviorPack_Snippets/entities/piglin_brute.md)
-- [pillager](../../../../Source/VanillaBehaviorPack_Snippets/entities/pillager.md)
-- [polar_bear](../../../../Source/VanillaBehaviorPack_Snippets/entities/polar_bear.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [trader_llama](../../../../Source/VanillaBehaviorPack_Snippets/entities/trader_llama.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
-- [villager_v2](../../../../Source/VanillaBehaviorPack_Snippets/entities/villager_v2.md)
-- [vindicator](../../../../Source/VanillaBehaviorPack_Snippets/entities/vindicator.md)
-- [warden](../../../../Source/VanillaBehaviorPack_Snippets/entities/warden.md)
-- [witch](../../../../Source/VanillaBehaviorPack_Snippets/entities/witch.md)
+
+```json
+"minecraft:follow_range": {
+  "value": 48,
+  "max": 48
+}
+```
+
+#### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
+
+
+```json
+"minecraft:follow_range": {
+  "value": 32
+}
+```
+
+#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
+
+
+```json
+"minecraft:follow_range": {
+  "value": 32,
+  "max": 32
+}
+```
+
+#### [Elder Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/elder_guardian.json)
+
+
+```json
+"minecraft:follow_range": {
+  "value": 16,
+  "max": 16
+}
+```
+
+#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
+
+
+```json
+"minecraft:follow_range": {
+  "value": 64,
+  "max": 64
+}
+```
+
+#### [Evocation Illager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/evocation_illager.json)
+
+
+```json
+"minecraft:follow_range": {
+  "value": 64
+}
+```
+
+#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+
+
+```json
+"minecraft:follow_range": {
+  "value": 40,
+  "max": 40
+}
+```
+
+#### [Polar Bear](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/polar_bear.json)
+
+
+```json
+"minecraft:follow_range": {
+  "value": 48
+}
+```
+
+#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+
+
+```json
+"minecraft:follow_range": {
+  "value": 128
+}
+```
+
+#### [Warden](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/warden.json)
+
+
+```json
+"minecraft:follow_range": 30
+```

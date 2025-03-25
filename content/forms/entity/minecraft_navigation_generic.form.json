@@ -1,0 +1,381 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:navigation.generic",
+    "title": "Generic Navigation",
+    "description": "Allows this entity to generate paths by walking, swimming, flying and/or climbing around and jumping up and down a block.",
+    "fields": [
+      {
+        "id": "avoid_damage_blocks",
+        "title": "Avoid Damage Blocks",
+        "description": "Tells the pathfinder to avoid blocks that cause damage when finding a path",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "avoid_portals",
+        "title": "Avoid Portals",
+        "description": "Tells the pathfinder to avoid portals (like nether portals) when finding a path",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "avoid_sun",
+        "title": "Avoid Sun",
+        "description": "Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "avoid_water",
+        "title": "Avoid Water",
+        "description": "Tells the pathfinder to avoid water when creating a path",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "blocks_to_avoid",
+        "title": "Blocks To Avoid",
+        "description": "Tells the pathfinder which blocks to avoid when creating a path",
+        "dataType": 17
+      },
+      {
+        "id": "can_breach",
+        "title": "Can Breach",
+        "description": "Tells the pathfinder whether or not it can jump out of water (like a dolphin)",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_break_doors",
+        "title": "Can Break Doors",
+        "description": "Tells the pathfinder that it can path through a closed door and break it",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "can_jump",
+        "title": "Can Jump",
+        "description": "Tells the pathfinder whether or not it can jump up blocks",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "can_open_doors",
+        "title": "Can Open Doors",
+        "description": "Tells the pathfinder that it can path through a closed door assuming the AI will open the door",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "can_open_iron_doors",
+        "title": "Can Open Iron Doors",
+        "description": "Tells the pathfinder that it can path through a closed iron door assuming the AI will open the door",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "can_pass_doors",
+        "title": "Can Pass Doors",
+        "description": "Whether a path can be created through a door",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "can_path_from_air",
+        "title": "Can Path From Air",
+        "description": "Tells the pathfinder that it can start pathing when in the air",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "can_path_over_lava",
+        "title": "Can Path Over Lava",
+        "description": "Tells the pathfinder whether or not it can travel on the surface of the lava",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "can_path_over_water",
+        "title": "Can Path Over Water",
+        "description": "Tells the pathfinder whether or not it can travel on the surface of the water",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_sink",
+        "title": "Can Sink",
+        "description": "Tells the pathfinder whether or not it will be pulled down by gravity while in water",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "can_swim",
+        "title": "Can Swim",
+        "description": "Tells the pathfinder whether or not it can path anywhere through water and plays swimming animation along that path",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_walk",
+        "title": "Can Walk",
+        "description": "Tells the pathfinder whether or not it can walk on the ground outside water",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_walk_in_lava",
+        "title": "Can Walk In Lava",
+        "description": "Tells the pathfinder whether or not it can travel in lava like walking on ground",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "is_amphibious",
+        "title": "Is Amphibious",
+        "description": "Tells the pathfinder whether or not it can walk on the ground underwater",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+              "content": true
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": true,
+            "can_path_over_water": true,
+            "can_swim": true,
+            "can_walk": true,
+            "can_sink": false,
+            "avoid_damage_blocks": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": true,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": false,
+            "can_breach": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": false,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": false,
+            "can_breach": false,
+            "can_sink": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": true,
+            "can_path_over_water": true,
+            "can_swim": true,
+            "can_walk": true,
+            "can_sink": false,
+            "avoid_damage_blocks": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": true,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": false,
+            "can_breach": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pufferfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": false,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": false,
+            "can_breach": false,
+            "can_sink": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/salmon.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": false,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": false,
+            "can_breach": false,
+            "can_sink": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tadpole.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "can_path_over_water": true,
+            "can_swim": true,
+            "can_walk": false,
+            "can_sink": false,
+            "avoid_damage_blocks": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tropicalfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": false,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": false,
+            "can_breach": false,
+            "can_sink": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/turtle.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": true,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": true,
+            "can_sink": false,
+            "avoid_damage_blocks": true
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": true,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": true,
+            "can_sink": false,
+            "avoid_damage_blocks": true
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.generic/",
+          "content": {
+            "is_amphibious": true,
+            "can_path_over_water": false,
+            "can_swim": true,
+            "can_walk": true,
+            "can_sink": false,
+            "avoid_damage_blocks": true
+          }
+        }
+      ]
+    }
+  }
+}

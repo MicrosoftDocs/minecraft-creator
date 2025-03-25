@@ -31,7 +31,8 @@ Sets the item as a food component, allowing it to be edible to the player.
 | on_use_range | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) |  |  | 
 | remove_effects | *not set* | Array of strings |  |  | 
 | saturation_modifier | *not set* | Decimal number | saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6. | Apple: `0.3`, AppleEnchanted: `"supernatural"`, Baked Potato: `"normal"` | 
-| using_converts_to | *not set* | Object | When used, converts to the item specified by the string in this field. Default does not convert item. | Beetroot Soup: `"bowl"`, Honey Bottle: `"glass_bottle"` | 
+| using_converts_to | *not set* | String | When used, converts to the item specified by the string in this field. Default does not convert item. | Beetroot Soup: `"bowl"`, Honey Bottle: `"glass_bottle"` | 
+| using_converts_to (Alternate 1) | *not set* | Keyed set of strings |  |  | 
 
 ## Effects item type
 

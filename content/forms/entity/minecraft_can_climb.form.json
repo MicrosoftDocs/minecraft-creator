@@ -1,0 +1,397 @@
+{
+  "title": "Can climb",
+  "description": "Allows an entity to climb ladders.",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:can_climb",
+    "title": "Can Climb",
+    "description": "Allows this entity to climb up ladders.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creaking.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/enderman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/endermite.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/evocation_illager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/glow_squid.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/iron_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mooshroom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/silverfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/slime.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/squid.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vex.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wandering_trader.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/witch.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/behavior_pack_sample/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:can_climb/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

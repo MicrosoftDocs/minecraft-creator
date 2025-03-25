@@ -1,0 +1,73 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:ravager_blocked",
+    "title": "Ravager Blocked",
+    "description": "Defines the ravager's response to their melee attack being blocked.",
+    "fields": [
+      {
+        "id": "knockback_strength",
+        "title": "Knockback Strength",
+        "description": "The strength with which blocking entities should be knocked back",
+        "defaultValue": 3,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ravager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:ravager_blocked/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "reaction_choices",
+        "title": "Reaction Choices",
+        "description": "A list of weighted responses to the melee attack being blocked",
+        "defaultValue": "[ ]",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ravager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:ravager_blocked/",
+              "content": [
+                {
+                  "weight": 1,
+                  "value": {
+                    "event": "minecraft:become_stunned",
+                    "target": "self"
+                  }
+                },
+                {
+                  "weight": 1
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/ravager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:ravager_blocked/",
+          "content": {
+            "knockback_strength": 3,
+            "reaction_choices": [
+              {
+                "weight": 1,
+                "value": {
+                  "event": "minecraft:become_stunned",
+                  "target": "self"
+                }
+              },
+              {
+                "weight": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

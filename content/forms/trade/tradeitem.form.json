@@ -1,0 +1,56 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "TradeItem",
+    "description": "TradeItem",
+    "fields": [
+      {
+        "id": "__DEP_fnctns",
+        "title": "__DEP_fnctns",
+        "description": "__DEP_fnctns",
+        "dataType": 16
+      },
+      {
+        "id": "functions",
+        "title": "functions",
+        "description": "functions",
+        "dataType": 15
+      },
+      {
+        "id": "item",
+        "title": "item",
+        "description": "item",
+        "dataType": 2
+      },
+      {
+        "id": "__DEP_fltrs",
+        "title": "__DEP_fltrs",
+        "description": "__DEP_fltrs",
+        "dataType": 16
+      },
+      {
+        "id": "quantity",
+        "title": "quantity",
+        "description": "quantity",
+        "dataType": 16
+      },
+      {
+        "id": "price_multiplier",
+        "title": "price_multiplier",
+        "description": "price_multiplier",
+        "dataType": 3
+      },
+      {
+        "id": "filters",
+        "title": "filters",
+        "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Filters",
+          "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+          "fields": []
+        }
+      }
+    ]
+  }
+}

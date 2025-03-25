@@ -1,0 +1,258 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.fire_at_target",
+    "title": "Fire At Target Behavior",
+    "description": "Allows an entity to attack by firing a shot with a delay. Anchor and offset parameters of this component overrides the anchor and offset from projectile component.",
+    "fields": [
+      {
+        "id": "attack_cooldown",
+        "title": "Attack Cooldown",
+        "description": "The cooldown time in seconds before this goal can be used again.",
+        "defaultValue": 0.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_range",
+        "title": "Attack Range",
+        "description": "Target needs to be within this range for the attack to happen.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": [
+                0,
+                16
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "Conditions that need to be met for the behavior to start.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "is_navigating",
+                    "value": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_head_rotation_x",
+        "title": "Max Head Rotation X",
+        "description": "Maximum head rotation (in degrees), on the X-axis, that this entity can apply while trying to look at the target.",
+        "defaultValue": 30,
+        "dataType": 3
+      },
+      {
+        "id": "max_head_rotation_y",
+        "title": "Max Head Rotation Y",
+        "description": "Maximum head rotation (in degrees), on the Y-axis, that this entity can apply while trying to look at the target.",
+        "defaultValue": 30,
+        "dataType": 3
+      },
+      {
+        "id": "owner_anchor",
+        "title": "Owner Anchor",
+        "description": "Entity anchor for the projectile spawn location.",
+        "defaultValue": 2,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "owner_offset",
+        "title": "Owner Offset",
+        "description": "Offset vector from the owner_anchor.",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "dataType": 11,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": [
+                0,
+                0.3,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "post_shoot_delay",
+        "title": "Post Shoot Delay",
+        "description": "Time in seconds between firing the projectile and ending the goal.",
+        "defaultValue": 0.2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": 0.2
+            }
+          ]
+        }
+      },
+      {
+        "id": "pre_shoot_delay",
+        "title": "Pre Shoot Delay",
+        "description": "Time in seconds before firing the projectile.",
+        "defaultValue": 0.75,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": 0.75
+            }
+          ]
+        }
+      },
+      {
+        "id": "projectile_def",
+        "title": "Projectile Def",
+        "description": "Actor definition to use as projectile for the ranged attack. The actor must be a projectile. This field is required for the goal to be usable.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": "minecraft:breeze_wind_charge_projectile"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ranged_fov",
+        "title": "Ranged Fov",
+        "description": "Field of view (in degrees) when using sensing to detect a target for attack.",
+        "defaultValue": 90,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": 90
+            }
+          ]
+        }
+      },
+      {
+        "id": "target_anchor",
+        "title": "Target Anchor",
+        "description": "Entity anchor for projectile target.",
+        "defaultValue": 2,
+        "dataType": 0
+      },
+      {
+        "id": "target_offset",
+        "title": "Target Offset",
+        "description": "Offset vector from the target_anchor.",
+        "defaultValue": [
+          0,
+          0,
+          0
+        ],
+        "dataType": 11,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": [
+                0,
+                0.5,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+              "content": 2
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.fire_at_target/",
+          "content": {
+            "projectile_def": "minecraft:breeze_wind_charge_projectile",
+            "priority": 2,
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_navigating",
+                  "value": false
+                }
+              ]
+            },
+            "attack_range": [
+              0,
+              16
+            ],
+            "attack_cooldown": 0.5,
+            "pre_shoot_delay": 0.75,
+            "post_shoot_delay": 0.2,
+            "ranged_fov": 90,
+            "owner_anchor": 2,
+            "owner_offset": [
+              0,
+              0.3,
+              0
+            ],
+            "target_anchor": 0,
+            "target_offset": [
+              0,
+              0.5,
+              0
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

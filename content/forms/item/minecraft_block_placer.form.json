@@ -1,0 +1,179 @@
+{
+  "fields": [],
+  "description": "Sets the item as a planter item component for blocks. Items with this component will place a block when used.",
+  "note": "[EXPERIMENTAL] This component can also be used instead of the minecraft:icon component to render the block this item will place as the icon (Requires the 'Upcoming Creator Features' toggle).",
+  "samples": {
+    "sample": [
+      {
+        "path": "/minecraft:item/components/minecraft:block_placer/",
+        "content": {
+          "block": "seeds",
+          "use_on": [
+            "dirt",
+            "grass"
+          ],
+          "replace_block_item": true
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "title": "Block Placer",
+    "description": "Items with the block_placer component will place a block when used. \nThis component can also be used instead of the \"minecraft:icon\" component to render the referenced block as the item icon.",
+    "fields": [
+      {
+        "id": "block",
+        "title": "block",
+        "description": "Defines the block that will be placed.",
+        "dataType": 16,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:block_placer/",
+              "content": "minecraft:dirt"
+            }
+          ]
+        }
+      },
+      {
+        "id": "use_on",
+        "title": "use_on",
+        "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
+        "dataType": 15,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:block_placer/",
+              "content": [
+                "dirt",
+                "grass",
+                "anvil"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "replace_block_item",
+        "title": "replace_block_item",
+        "description": "If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid.",
+        "dataType": 1
+      }
+    ],
+    "samples": {
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:block_placer/",
+          "content": {
+            "block": "minecraft:dirt",
+            "use_on": [
+              "dirt",
+              "grass",
+              "anvil"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Block Placer",
+    "description": "Items with the block_placer component will place a block when used. \nThis component can also be used instead of the \"minecraft:icon\" component to render the referenced block as the item icon.",
+    "fields": [
+      {
+        "id": "block",
+        "title": "block",
+        "description": "Defines the block that will be placed.",
+        "dataType": 16,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:block_placer/",
+              "content": "minecraft:dirt"
+            }
+          ]
+        }
+      },
+      {
+        "id": "use_on",
+        "title": "use_on",
+        "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
+        "dataType": 15,
+        "subForm": {
+          "title": "Use On",
+          "description": "Use On",
+          "fields": [
+            {
+              "id": "name",
+              "title": "name",
+              "description": "name",
+              "dataType": 2
+            },
+            {
+              "id": "tags",
+              "title": "tags",
+              "description": "tags",
+              "dataType": 2
+            },
+            {
+              "id": "states",
+              "title": "states",
+              "description": "states",
+              "dataType": 0,
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "dataType": 1
+                }
+              ]
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "use_on",
+            "dataType": 2
+          }
+        ],
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:block_placer/",
+              "content": [
+                "dirt",
+                "grass",
+                "anvil"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "replace_block_item",
+        "title": "replace_block_item",
+        "description": "If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid.",
+        "dataType": 1
+      }
+    ],
+    "id": "minecraft:block_placer",
+    "samples": {
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:block_placer/",
+          "content": {
+            "block": "minecraft:dirt",
+            "use_on": [
+              "dirt",
+              "grass",
+              "anvil"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

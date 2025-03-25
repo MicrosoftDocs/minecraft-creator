@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:push_through",
+    "title": "Push Through",
+    "description": "Sets the distance through which the entity can push through.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The value of the entity's push-through, in blocks.",
+        "defaultValue": 0,
+        "dataType": 3
+      }
+    ]
+  }
+}

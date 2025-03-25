@@ -1,0 +1,19 @@
+{
+  "fields": [
+    {
+      "id": "name",
+      "title": "Name",
+      "dataType": 2
+    },
+    {
+      "id": "description",
+      "title": "Description",
+      "dataType": 13
+    },
+    {
+      "id": "version",
+      "title": "Version",
+      "dataType": 13
+    }
+  ]
+}

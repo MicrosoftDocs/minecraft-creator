@@ -1,0 +1,45 @@
+{
+  "fields": [],
+  "scalarField": {
+    "id": "string",
+    "title": "Path to loot table",
+    "dataType": 2
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:loot",
+    "title": "Loot",
+    "description": "The path to the loot table, relative to the behavior pack. Path string is limited to 256 characters.",
+    "fields": [],
+    "scalarField": {
+      "id": "string",
+      "title": "String",
+      "dataType": 2
+    },
+    "samples": {
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:loot/",
+          "content": "loot_tables/mikeamm/gray_wave/fabricator.loot.json"
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:loot/",
+          "content": "loot_tables/mikeamm/gray_wave/gray_ore.loot.json"
+        }
+      ],
+      "/samples/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:loot/",
+          "content": "loot_tables/blocks/orange_ore.json"
+        }
+      ],
+      "/samples/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:loot/",
+          "content": "loot_tables/blocks/apple_block.json"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Documented Enum",
+  "fields": [
+    {
+      "id": "name",
+      "title": "Name",
+      "dataType": 2
+    }
+  ]
+}

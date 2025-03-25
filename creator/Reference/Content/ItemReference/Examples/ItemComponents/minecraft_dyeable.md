@@ -16,7 +16,8 @@ enables custom items to be dyed in cauldrons. To use the dyeable component, the 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| default_color | *not set* | Object | default_color |  | 
+| default_color | *not set* | String | default_color |  | 
+| default_color (Alternate 1) | *not set* | Array of numbers |  |  | 
 
 ## Samples
 

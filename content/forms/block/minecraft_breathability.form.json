@@ -1,0 +1,31 @@
+{
+  "fields": [],
+  "isDeprecated": true,
+  "scalarField": {
+    "id": "_breathability",
+    "title": "Breathable as",
+    "dataType": 2,
+    "mustMatchChoices": true,
+    "choices": [
+      {
+        "id": "solid",
+        "title": "Solid"
+      },
+      {
+        "id": "air",
+        "title": "Air"
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:breathability",
+    "title": "Breathability",
+    "description": "Determines whether the block is breathable by defining if the block is treated as a `solid` or as `air`. The default is `solid` if this component is omitted.",
+    "fields": [],
+    "scalarField": {
+      "id": "string",
+      "title": "String",
+      "dataType": 2
+    }
+  }
+}

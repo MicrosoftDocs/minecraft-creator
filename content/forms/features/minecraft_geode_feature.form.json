@@ -1,0 +1,153 @@
+{
+  "id": "minecraft:geode_feature",
+  "description": "generates a rock formation to simulate a geode. Each layer of, and block within, the geode can be replaced. Succeeds if at least one block within the geode is placed. Fails if all blocks within the geode fail to be placed.",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "samples": {
+    "example": [
+      {
+        "path": "Diamond geodes with emerald blocks inside and obsidian on the outside.",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:geode_feature": {
+            "description": {
+              "identifier": "minecraft:diamond_geode_feature"
+            },
+            "filler": "minecraft:air",
+            "inner_layer": "minecraft:diamond_block",
+            "alternate_inner_layer": "minecraft:emerald_block",
+            "middle_layer": "minecraft:calcite",
+            "outer_layer": "minecraft:obsidian",
+            "inner_placements": [
+              {
+                "name": "minecraft:amethyst_cluster",
+                "states": {
+                  "amethyst_cluster_type": "small"
+                }
+              }
+            ],
+            "min_outer_wall_distance": 4,
+            "max_outer_wall_distance": 7,
+            "min_distribution_points": 3,
+            "max_distribution_points": 5,
+            "min_point_offset": 1,
+            "max_point_offset": 3,
+            "max_radius": 16,
+            "crack_point_offset": 2,
+            "generate_crack_chance": 0.95,
+            "base_crack_size": 2,
+            "noise_multiplier": 0.025,
+            "use_potential_placements_chance": 0.35,
+            "use_alternate_layer0_chance": 0.083,
+            "placements_require_layer0_alternate": true,
+            "invalid_blocks_threshold": 1
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:geode_feature",
+    "title": "Geode Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 17,
+        "id": "inner_placements",
+        "title": "Inner Placements",
+        "isRequired": false
+      },
+      {
+        "dataType": 0,
+        "id": "min_outer_wall_distance",
+        "title": "Min Outer Wall Distance",
+        "description": "The minimum distance each distribution point must be from the outer wall. [0,10]",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "max_outer_wall_distance",
+        "title": "Max Outer Wall Distance",
+        "description": "The maximum distance each distribution point can be from the outer wall. [0,20]",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "min_distribution_points",
+        "title": "Min Distribution Points",
+        "description": "The minimum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,10]",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "max_distribution_points",
+        "title": "Max Distribution Points",
+        "description": "The maximum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,20]",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "min_point_offset",
+        "title": "Min Point Offset",
+        "description": "The lowest possible value of random offset applied to the position of each distribution point. [0,10]",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "max_point_offset",
+        "title": "Max Point Offset",
+        "description": "The highest possible value of random offset applied to the position of each distribution point. [0,10]",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "max_radius",
+        "title": "Max Radius",
+        "description": "The maximum possible radius of the geode generated.",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "crack_point_offset",
+        "title": "Crack Point Offset",
+        "description": "An offset applied to each distribution point that forms the geode crack opening. [0,10]",
+        "isRequired": true
+      },
+      {
+        "dataType": 1,
+        "id": "placements_require_layer0_alternate",
+        "title": "Placements Require Layer0 Alternate",
+        "description": "If true, the potential placement block will only be placed on the alternate layer0 blocks that get placed. Potential placement blocks are blocks that depend on the existance of another block to be placed. The latter are the layer0 alternate blocks.",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "invalid_blocks_threshold",
+        "title": "Invalid Blocks Threshold",
+        "description": "The threshold of invalid blocks for a geode to have a distribution point in before it aborts generation entirely.",
+        "isRequired": true
+      }
+    ]
+  }
+}

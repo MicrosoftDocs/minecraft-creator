@@ -1,0 +1,9 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:wants_jockey",
+    "title": "Wants Jockey",
+    "description": "Sets that this entity wants to become a jockey.",
+    "fields": []
+  }
+}

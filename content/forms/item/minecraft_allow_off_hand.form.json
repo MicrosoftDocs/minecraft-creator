@@ -1,0 +1,22 @@
+{
+  "fields": [],
+  "scalarFieldUpgradeName": "value",
+  "generated_doNotEdit": {
+    "title": "Allow Off Hand",
+    "description": "The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "value",
+        "description": "Determines whether the item can be placed in the off hand slot.",
+        "dataType": 1
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Allow Off Hand",
+    "description": "The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory.",
+    "fields": [],
+    "id": "minecraft:allow_off_hand"
+  }
+}

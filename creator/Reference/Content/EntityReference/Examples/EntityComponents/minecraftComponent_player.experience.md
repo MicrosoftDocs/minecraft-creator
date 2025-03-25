@@ -1,42 +1,32 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:player.experience
-description: "A reference document detailing the 'player.experience' entity component"
+title: "Entity Documentation - minecraft:player.experience"
+description: "Describes the minecraft:player.experience entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:player.experience
 
-`minecraft:player.experience` defines how much experience each player action should take.
+Defines how much experience each player action should take.
 
-## Parameters
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-|max| 5| Integer| The maximum player experience of this entity. |
-|value| 1| Integer|  The initial value of the player experience. |
+## Player Experience Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max | 5 | Integer number | The maximum player experience of this entity. | Player: `1` | 
+| value | 1 | Integer number | The initial value of the player experience. |  | 
 
-```json
-"minecraft:player.experience": {
-        "value": 0,
-        "max": 1
-      }
-```
+## Samples
 
-## Vanilla entities examples
+#### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
 
-### player
 
 ```json
 "minecraft:player.experience": {
-        "value": 0,
-        "max": 1
-      }
+  "value": 0,
+  "max": 1
+}
 ```
-
-## Vanilla entities using `minecraft:exhaustion_values`
-
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)

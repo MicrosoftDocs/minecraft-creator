@@ -1,0 +1,33 @@
+{
+  "fields": [],
+  "scalarField": {
+    "id": "integer",
+    "title": "Light Emission Value",
+    "dataType": 0
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:light_emission",
+    "title": "Light Emission",
+    "description": "The amount of light this block will emit in a range (0-15). Higher value means more light will be emitted.",
+    "fields": [],
+    "scalarField": {
+      "id": "integer",
+      "title": "Integer",
+      "dataType": 0
+    },
+    "samples": {
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:light_emission/",
+          "content": 7
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/gray_ore.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:light_emission/",
+          "content": 15
+        }
+      ]
+    }
+  }
+}

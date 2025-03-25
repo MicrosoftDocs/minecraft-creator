@@ -1,0 +1,63 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.charge_attack",
+    "title": "Charge Attack Behavior",
+    "description": "Allows this entity to damage a target by using a running attack.",
+    "fields": [
+      {
+        "id": "max_distance",
+        "title": "Max Distance",
+        "description": "A charge attack cannot start if the entity is farther than this distance to the target.",
+        "defaultValue": 3,
+        "dataType": 3
+      },
+      {
+        "id": "min_distance",
+        "title": "Min Distance",
+        "description": "A charge attack cannot start if the entity is closer than this distance to the target.",
+        "defaultValue": 2,
+        "dataType": 3
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Modifies the entity's speed when charging toward the target.",
+        "defaultValue": 1,
+        "dataType": 3
+      },
+      {
+        "id": "success_rate",
+        "title": "Success Rate",
+        "description": "Percent chance this entity will start a charge attack, if not already attacking (1.0 = 100%)",
+        "defaultValue": 0.1428,
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/vex.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.charge_attack/",
+              "content": 4
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/vex.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.charge_attack/",
+          "content": {
+            "priority": 4
+          }
+        }
+      ]
+    }
+  }
+}

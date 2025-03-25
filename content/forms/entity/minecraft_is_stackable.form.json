@@ -1,0 +1,63 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:is_stackable",
+    "title": "Is Stackable",
+    "description": "Allows instances of this entity to have vertical and horizontal collisions with each other. For a collision to occur, both instances must have a \"minecraft:collision_box\" component.\r\nStackable behavior is closely related to collidable behavior. While the \"minecraft:is_stackable\" component describes how an entity interacts with others of its own kind, the \"minecraft:is_collidable\" component governs how other mobs interact with the component's owner.)",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/chest_minecart.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:is_stackable/",
+              "content": true
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/boat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:is_stackable/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chest_boat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:is_stackable/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chest_minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:is_stackable/",
+          "content": {
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hopper_minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:is_stackable/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:is_stackable/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tnt_minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:is_stackable/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

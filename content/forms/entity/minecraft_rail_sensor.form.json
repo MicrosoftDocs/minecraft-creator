@@ -1,0 +1,222 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:rail_sensor",
+    "title": "Rail Sensor",
+    "fields": [
+      {
+        "id": "check_block_types",
+        "title": "Check Block Types",
+        "description": "If true, on tick this entity will trigger its on_deactivate behavior",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/command_block_minecart.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:command_block_active/minecraft:rail_sensor/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "eject_on_activate",
+        "title": "Eject On Activate",
+        "description": "If true, this entity will eject all of its riders when it passes over an activated rail",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/minecart.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:rail_sensor/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "eject_on_deactivate",
+        "title": "Eject On Deactivate",
+        "description": "If true, this entity will eject all of its riders when it passes over a deactivated rail",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "on_activate",
+        "title": "On Activate",
+        "description": "Event to call when the rail is activated",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/command_block_minecart.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:command_block_inactive/minecraft:rail_sensor/",
+              "content": {
+                "event": "minecraft:command_block_activate"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hopper_minecart.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hopper_active/minecraft:rail_sensor/",
+              "content": {
+                "event": "minecraft:hopper_deactivate"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/tnt_minecart.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:inactive/minecraft:rail_sensor/",
+              "content": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_game_rule",
+                      "domain": "tntexplodes",
+                      "operator": "==",
+                      "value": true
+                    }
+                  ]
+                },
+                "event": "minecraft:on_prime"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_deactivate",
+        "title": "On Deactivate",
+        "description": "Event to call when the rail is deactivated",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/command_block_minecart.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:command_block_active/minecraft:rail_sensor/",
+              "content": {
+                "event": "minecraft:command_block_deactivate"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hopper_minecart.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hopper_inactive/minecraft:rail_sensor/",
+              "content": {
+                "event": "minecraft:hopper_activate"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "tick_command_block_on_activate",
+        "title": "Tick Command Block On Activate",
+        "description": "If true, command blocks will start ticking when passing over an activated rail",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/command_block_minecart.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:command_block_active/minecraft:rail_sensor/",
+              "content": true
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:command_block_inactive/minecraft:rail_sensor/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "tick_command_block_on_deactivate",
+        "title": "Tick Command Block On Deactivate",
+        "description": "If false, command blocks will stop ticking when passing over a deactivated rail",
+        "defaultValue": false,
+        "dataType": 1
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/command_block_minecart.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:command_block_active/minecraft:rail_sensor/",
+          "content": {
+            "check_block_types": true,
+            "eject_on_activate": false,
+            "eject_on_deactivate": false,
+            "tick_command_block_on_activate": true,
+            "tick_command_block_on_deactivate": false,
+            "on_deactivate": {
+              "event": "minecraft:command_block_deactivate"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:command_block_inactive/minecraft:rail_sensor/",
+          "content": {
+            "check_block_types": false,
+            "eject_on_activate": false,
+            "eject_on_deactivate": false,
+            "tick_command_block_on_activate": true,
+            "tick_command_block_on_deactivate": false,
+            "on_activate": {
+              "event": "minecraft:command_block_activate"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hopper_minecart.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hopper_active/minecraft:rail_sensor/",
+          "content": {
+            "on_activate": {
+              "event": "minecraft:hopper_deactivate"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hopper_inactive/minecraft:rail_sensor/",
+          "content": {
+            "on_deactivate": {
+              "event": "minecraft:hopper_activate"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:rail_sensor/",
+          "content": {
+            "eject_on_activate": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tnt_minecart.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:primed_tnt/minecraft:rail_sensor/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:instant_explode_tnt/minecraft:rail_sensor/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:inactive/minecraft:rail_sensor/",
+          "content": {
+            "on_activate": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_game_rule",
+                    "domain": "tntexplodes",
+                    "operator": "==",
+                    "value": true
+                  }
+                ]
+              },
+              "event": "minecraft:on_prime"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

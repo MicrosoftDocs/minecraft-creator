@@ -1,0 +1,22 @@
+{
+  "fields": [],
+  "scalarFieldUpgradeName": "value",
+  "generated_doNotEdit": {
+    "title": "Liquid Clipped",
+    "description": "The liquid_clipped component determines whether the item interacts with liquid blocks on use.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "value",
+        "description": "Deterines whether the item interacts with liquid blocks on use.",
+        "dataType": 1
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Liquid Clipped",
+    "description": "The liquid_clipped component determines whether the item interacts with liquid blocks on use.",
+    "fields": [],
+    "id": "minecraft:liquid_clipped"
+  }
+}

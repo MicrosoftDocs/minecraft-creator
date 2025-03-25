@@ -1,0 +1,180 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:inside_block_notifier",
+    "title": "Inside Block Notifier",
+    "description": "Verifies whether the entity is inside any of the listed blocks.",
+    "fields": [
+      {
+        "id": "block_list",
+        "title": "Block List",
+        "description": "List of blocks, with certain block states, that we are monitoring to see if the entity is inside.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/boat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:inside_block_notifier/",
+              "content": [
+                {
+                  "block": {
+                    "name": "minecraft:bubble_column",
+                    "states": {
+                      "drag_down": true
+                    }
+                  },
+                  "entered_block_event": {
+                    "event": "minecraft:entered_bubble_column_down",
+                    "target": "self"
+                  },
+                  "exited_block_event": {
+                    "event": "minecraft:exited_bubble_column",
+                    "target": "self"
+                  }
+                },
+                {
+                  "block": {
+                    "name": "minecraft:bubble_column",
+                    "states": {
+                      "drag_down": false
+                    }
+                  },
+                  "entered_block_event": {
+                    "event": "minecraft:entered_bubble_column_up",
+                    "target": "self"
+                  },
+                  "exited_block_event": {
+                    "event": "minecraft:exited_bubble_column",
+                    "target": "self"
+                  }
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chest_boat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:inside_block_notifier/",
+              "content": [
+                {
+                  "block": {
+                    "name": "minecraft:bubble_column",
+                    "states": {
+                      "drag_down": true
+                    }
+                  },
+                  "entered_block_event": {
+                    "event": "minecraft:entered_bubble_column_down",
+                    "target": "self"
+                  },
+                  "exited_block_event": {
+                    "event": "minecraft:exited_bubble_column",
+                    "target": "self"
+                  }
+                },
+                {
+                  "block": {
+                    "name": "minecraft:bubble_column",
+                    "states": {
+                      "drag_down": false
+                    }
+                  },
+                  "entered_block_event": {
+                    "event": "minecraft:entered_bubble_column_up",
+                    "target": "self"
+                  },
+                  "exited_block_event": {
+                    "event": "minecraft:exited_bubble_column",
+                    "target": "self"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/boat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:inside_block_notifier/",
+          "content": {
+            "block_list": [
+              {
+                "block": {
+                  "name": "minecraft:bubble_column",
+                  "states": {
+                    "drag_down": true
+                  }
+                },
+                "entered_block_event": {
+                  "event": "minecraft:entered_bubble_column_down",
+                  "target": "self"
+                },
+                "exited_block_event": {
+                  "event": "minecraft:exited_bubble_column",
+                  "target": "self"
+                }
+              },
+              {
+                "block": {
+                  "name": "minecraft:bubble_column",
+                  "states": {
+                    "drag_down": false
+                  }
+                },
+                "entered_block_event": {
+                  "event": "minecraft:entered_bubble_column_up",
+                  "target": "self"
+                },
+                "exited_block_event": {
+                  "event": "minecraft:exited_bubble_column",
+                  "target": "self"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chest_boat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:inside_block_notifier/",
+          "content": {
+            "block_list": [
+              {
+                "block": {
+                  "name": "minecraft:bubble_column",
+                  "states": {
+                    "drag_down": true
+                  }
+                },
+                "entered_block_event": {
+                  "event": "minecraft:entered_bubble_column_down",
+                  "target": "self"
+                },
+                "exited_block_event": {
+                  "event": "minecraft:exited_bubble_column",
+                  "target": "self"
+                }
+              },
+              {
+                "block": {
+                  "name": "minecraft:bubble_column",
+                  "states": {
+                    "drag_down": false
+                  }
+                },
+                "entered_block_event": {
+                  "event": "minecraft:entered_bubble_column_up",
+                  "target": "self"
+                },
+                "exited_block_event": {
+                  "event": "minecraft:exited_bubble_column",
+                  "target": "self"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,808 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "has_component",
+    "title": "Has Component",
+    "description": "Returns true when the subject entity contains the named component.",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/1/",
+              "content": "!="
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_born/sequence/1/filters/",
+              "content": "!="
+            }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:panda_weak/sequence/1/filters/",
+              "content": "=="
+            }
+          ],
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/0/filters/",
+              "content": "=="
+            }
+          ]
+        }
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/1/",
+              "content": "self"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_baby/minecraft:behavior.sneeze/entity_types/0/filters/all_of/0/",
+              "content": "other"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_sneezing/minecraft:behavior.sneeze/entity_types/0/filters/all_of/0/",
+              "content": "other"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/sheep.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:on_eat_block/sequence/1/filters/",
+              "content": "self"
+            }
+          ]
+        }
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Required) The component name to look for",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/1/",
+              "content": "minecraft:attack_cooldown"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_born/sequence/1/filters/",
+              "content": "minecraft:variant"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_born/sequence/0/filters/",
+              "content": "minecraft:is_baby"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/creeper.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/2/",
+              "content": "minecraft:explode"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:start_exploding_forced/sequence/0/filters/",
+              "content": "minecraft:is_charged"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:start_exploding_forced/sequence/1/filters/",
+              "content": "minecraft:is_charged"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/husk.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence/0/filters/",
+              "content": "minecraft:is_baby"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/rabbit.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/",
+              "content": "minecraft:variant"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/sheep.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/3/",
+              "content": "minecraft:is_dyeable"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+              "content": "minecraft:skin_id"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/1/filters/",
+              "content": "minecraft:skin_id"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/1/",
+              "content": "minecraft:effect.weakness"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/filters/",
+              "content": "minecraft:mark_variant"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/1/",
+              "content": "minecraft:effect.weakness"
+            }
+          ]
+        }
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/1/",
+              "content": "has_component"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_born/sequence/1/filters/",
+              "content": "has_component"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"has_component\", \"subject\": \"self\", \"operator\": \"equals\", \"value\": \"minecraft:explode\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"has_component\", \"value\": \"minecraft:explode\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/1/",
+          "content": {
+            "test": "has_component",
+            "subject": "self",
+            "operator": "!=",
+            "value": "minecraft:attack_cooldown"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/2/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:explode"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_exploding_forced/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_charged"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_exploding_forced/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_charged"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_exploding/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_charged"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_exploding/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_charged"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:convert_to_zombie/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:panda_baby/minecraft:behavior.sneeze/entity_types/0/filters/all_of/0/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:panda_sneezing/minecraft:behavior.sneeze/entity_types/0/filters/all_of/0/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:panda_weak/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "==",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/3/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_dyeable"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_eat_block/sequence/1/filters/",
+          "content": {
+            "subject": "self",
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/events/on_scenting_success/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "self",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:skin_id"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:skin_id"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "==",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:skin_id"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zoglin.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/1/",
+          "content": {
+            "test": "has_component",
+            "subject": "self",
+            "value": "minecraft:effect.weakness"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:spawn_skilled_adult/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:spawn_skilled_adult/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/0/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/0/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:mark_variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:skin_id"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/1/",
+          "content": {
+            "test": "has_component",
+            "subject": "self",
+            "value": "minecraft:effect.weakness"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/from_village/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/from_village/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:variant"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:convert_to_drowned/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:convert_to_drowned/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_eat_block/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_eat_block/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_eat_block/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "subject": "other",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        }
+      ]
+    }
+  }
+}

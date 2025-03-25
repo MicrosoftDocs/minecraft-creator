@@ -1,16 +1,21 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.squid_move_away_from_ground"
-description: "Describes the behavior.squid_move_away_from_ground AI Goals"
+title: "Entity Documentation - minecraft:behavior.squid_move_away_from_ground"
+description: "Describes the minecraft:behavior.squid_move_away_from_ground ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.squid_move_away_from_ground
+# Entity Documentation - minecraft:behavior.squid_move_away_from_ground
 
-Allows the squid to move away from ground blocks and back to water. Can only be used by the Squid.
+Allows the squid to move away from ground blocks and back to water.
 
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Squid (minecraft:squid)
+> 
 
 ## Squid Move Away From Ground Behavior Properties
 
@@ -24,16 +29,7 @@ Allows the squid to move away from ground blocks and back to water. Can only be 
 
 
 ```json
-{
-  "priority": 1
-}
-```
-
-#### [Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/squid.json)
-
-
-```json
-{
+"minecraft:behavior.squid_move_away_from_ground": {
   "priority": 1
 }
 ```

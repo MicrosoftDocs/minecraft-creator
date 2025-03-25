@@ -1,16 +1,21 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.wither_target_highest_damage"
-description: "Describes the behavior.wither_target_highest_damage AI Goals"
+title: "Entity Documentation - minecraft:behavior.wither_target_highest_damage"
+description: "Describes the minecraft:behavior.wither_target_highest_damage ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.wither_target_highest_damage
+# Entity Documentation - minecraft:behavior.wither_target_highest_damage
 
 Allows the wither to focus its attacks on whichever mob has dealt the most damage to it.
 
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Wither (minecraft:wither)
+> 
 
 ## Wither Target Highest Damage Behavior Properties
 
@@ -42,7 +47,7 @@ List of entity types the wither takes into account to find who dealt the most da
 
 
 ```json
-{
+"minecraft:behavior.wither_target_highest_damage": {
   "priority": 1
 }
 ```

@@ -1,0 +1,73 @@
+{
+  "title": "Conversion",
+  "fields": [
+    {
+      "id": "name",
+      "title": "Name",
+      "dataType": 2
+    },
+    {
+      "id": "targetJavaVersion",
+      "title": "Target Java Version",
+      "dataType": 5,
+      "choices": [
+        {
+          "id": 0,
+          "title": "1.8.8"
+        },
+        {
+          "id": 1,
+          "title": "1.9.3"
+        },
+        {
+          "id": 2,
+          "title": "1.10.2"
+        },
+        {
+          "id": 3,
+          "title": "1.11.2"
+        },
+        {
+          "id": 4,
+          "title": "1.12.2"
+        },
+        {
+          "id": 5,
+          "title": "1.13.2"
+        },
+        {
+          "id": 6,
+          "title": "1.14.4"
+        },
+        {
+          "id": 7,
+          "title": "1.15.2"
+        },
+        {
+          "id": 8,
+          "title": "1.16.5"
+        },
+        {
+          "id": 9,
+          "title": "1.17.1"
+        },
+        {
+          "id": 10,
+          "title": "1.18.2"
+        },
+        {
+          "id": 11,
+          "title": "1.19.4"
+        },
+        {
+          "id": 12,
+          "title": "1.20.6"
+        },
+        {
+          "id": 13,
+          "title": "1.21.0"
+        }
+      ]
+    }
+  ]
+}

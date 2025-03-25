@@ -1,0 +1,27 @@
+{
+  "fields": [],
+  "scalarField": {
+    "id": "number",
+    "title": "Friction value",
+    "dataType": 7
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:friction",
+    "title": "Friction",
+    "description": "Describes the friction for this block in a range of (0.0-0.9). Friction affects an entity's movement speed when it travels on the block. Greater value results in more friction.",
+    "fields": [],
+    "scalarField": {
+      "id": "number",
+      "title": "Number",
+      "dataType": 7
+    },
+    "samples": {
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:friction/",
+          "content": 0.38
+        }
+      ]
+    }
+  }
+}

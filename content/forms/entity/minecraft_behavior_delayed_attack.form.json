@@ -1,0 +1,234 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.delayed_attack",
+    "title": "Delayed Attack Behavior",
+    "description": "Allows an entity to attack, while also delaying the damage-dealt until a specific time in the attack animation.",
+    "fields": [
+      {
+        "id": "attack_duration",
+        "title": "Attack Duration",
+        "description": "The entity's attack animation will play out over this duration (in seconds). Also controls attack cooldown.",
+        "defaultValue": 0.75,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ravager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
+              "content": 0.75
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_once",
+        "title": "Attack Once",
+        "description": "Allows the entity to use this attack behavior, only once EVER.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "attack_types",
+        "title": "Attack Types",
+        "description": "Defines the entity types this entity will attack.",
+        "dataType": 2
+      },
+      {
+        "id": "can_spread_on_fire",
+        "title": "Can Spread On Fire",
+        "description": "If the entity is on fire, this allows the entity's target to catch on fire after being hit.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "hit_delay_pct",
+        "title": "Hit Delay Pct",
+        "description": "The percentage into the attack animation to apply the damage of the attack (1.0 = 100%).",
+        "defaultValue": 0.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ravager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "inner_boundary_time_increase",
+        "title": "Inner Boundary Time Increase",
+        "description": "Time (in seconds) to add to attack path recalculation when the target is beyond the \"path_inner_boundary\".",
+        "defaultValue": 0.25,
+        "dataType": 3
+      },
+      {
+        "id": "max_path_time",
+        "title": "Max Path Time",
+        "description": "Maximum base time (in seconds) to recalculate new attack path to target (before increases applied).",
+        "defaultValue": 0.55,
+        "dataType": 3
+      },
+      {
+        "id": "melee_fov",
+        "title": "Melee Fov",
+        "description": "Field of view (in degrees) when using the sensing component to detect an attack target.",
+        "defaultValue": 90,
+        "dataType": 3
+      },
+      {
+        "id": "min_path_time",
+        "title": "Min Path Time",
+        "description": "Minimum base time (in seconds) to recalculate new attack path to target (before increases applied).",
+        "defaultValue": 0.2,
+        "dataType": 3
+      },
+      {
+        "id": "on_attack",
+        "title": "On Attack",
+        "description": "Defines the event to trigger when this entity successfully attacks.",
+        "dataType": 22
+      },
+      {
+        "id": "on_kill",
+        "title": "On Kill",
+        "description": "Defines the event to trigger when this entity kills the target.",
+        "dataType": 22
+      },
+      {
+        "id": "outer_boundary_time_increase",
+        "title": "Outer Boundary Time Increase",
+        "description": "Time (in seconds) to add to attack path recalculation when the target is beyond the \"path_outer_boundary\".",
+        "defaultValue": 0.5,
+        "dataType": 3
+      },
+      {
+        "id": "path_fail_time_increase",
+        "title": "Path Fail Time Increase",
+        "description": "Time (in seconds) to add to attack path recalculation when this entity cannot move along the current path.",
+        "defaultValue": 0.75,
+        "dataType": 3
+      },
+      {
+        "id": "path_inner_boundary",
+        "title": "Path Inner Boundary",
+        "description": "Distance at which to increase attack path recalculation by \"inner_boundary_tick_increase\".",
+        "defaultValue": 16,
+        "dataType": 3
+      },
+      {
+        "id": "path_outer_boundary",
+        "title": "Path Outer Boundary",
+        "description": "Distance at which to increase attack path recalculation by \"outer_boundary_tick_increase\".",
+        "defaultValue": 32,
+        "dataType": 3
+      },
+      {
+        "id": "random_stop_interval",
+        "title": "Random Stop Interval",
+        "description": "This entity will have a 1 in N chance to stop it's current attack, where N = \"random_stop_interval\".",
+        "defaultValue": 0,
+        "dataType": 0
+      },
+      {
+        "id": "reach_multiplier",
+        "title": "Reach Multiplier",
+        "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage.",
+        "defaultValue": 1.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ravager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
+              "content": 1.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "require_complete_path",
+        "title": "Require Complete Path",
+        "description": "Toggles (on/off) the need to have a full path from the entity to the target when using this melee attack behavior.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "This multiplier modifies the attacking entity's speed when moving toward the target.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ravager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "track_target",
+        "title": "Track Target",
+        "description": "Allows the entity to track the attack target, even if the entity has no sensing.",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ravager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "x_max_rotation",
+        "title": "X Max Rotation",
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
+        "defaultValue": 30,
+        "dataType": 3
+      },
+      {
+        "id": "y_max_head_rotation",
+        "title": "Y Max Head Rotation",
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
+        "defaultValue": 30,
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ravager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
+              "content": 4
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/ravager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.delayed_attack/",
+          "content": {
+            "priority": 4,
+            "attack_once": false,
+            "track_target": true,
+            "require_complete_path": false,
+            "random_stop_interval": 0,
+            "reach_multiplier": 1.5,
+            "speed_multiplier": 1,
+            "attack_duration": 0.75,
+            "hit_delay_pct": 0.5
+          }
+        }
+      ]
+    }
+  }
+}

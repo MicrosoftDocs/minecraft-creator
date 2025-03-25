@@ -1,0 +1,279 @@
+{
+  "id": "minecraft:single_block_feature",
+  "description": "Places a single block in the world. The places_block field supports a single block or a list of weighted blocks, where the weight defines how likely it is for that block to be selected. The may_attach_to and may_replace fields are allowlists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The may_not_attach_to field is a denylist that specifies what blocks can't be close to the placement location. The randomize_rotation field will randomize the block's cardinal orientation. The block's internal survivability and placement rules can optionally be enforced with the enforce_survivability_rules and enforce_placement_rules fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures. Succeeds if the block is successfully placed in the world. Fails if the block fails to be placed. Example use: Placing a single pumpkin or carved pumpkin block where carved pumpkins are less likely to appear.",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "samples": {
+    "example": [
+      {
+        "path": "Placing a single pumpkin block",
+        "content": {
+          "format_version": "1.21.40",
+          "minecraft:single_block_feature": {
+            "description": {
+              "identifier": "example:single_pumpkin_feature"
+            },
+            "places_block": [
+              {
+                "block": "minecraft:pumpkin",
+                "weight": 5
+              },
+              {
+                "block": "minecraft:carved_pumpkin",
+                "weight": 1
+              }
+            ],
+            "randomize_rotation": true,
+            "enforce_survivability_rules": true,
+            "enforce_placement_rules": true,
+            "may_attach_to": {
+              "auto_rotate": false,
+              "min_sides_must_attach": 1,
+              "south": [
+                "minecraft:grass",
+                "minecraft:dirt"
+              ]
+            },
+            "may_not_attach_to": {
+              "south": {
+                "name": "minecraft:dirt",
+                "states": {
+                  "dirt_type": "coarse"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:single_block_feature",
+    "title": "Single Block Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "places_block",
+        "dataType": 15,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "block",
+              "title": "Block",
+              "description": "Reference to the block to be placed.",
+              "isRequired": true
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "dataType": 16,
+            "id": "places_block",
+            "title": "Places Block",
+            "description": "Reference to the block to be placed.",
+            "isRequired": false
+          },
+          {
+            "dataType": 17,
+            "id": "places_block",
+            "title": "Places Block",
+            "isRequired": false
+          }
+        ]
+      },
+      {
+        "dataType": 1,
+        "id": "enforce_placement_rules",
+        "title": "Enforce Placement Rules",
+        "description": "If true, enforce the block's canPlace check.",
+        "isRequired": true
+      },
+      {
+        "dataType": 1,
+        "id": "enforce_survivability_rules",
+        "title": "Enforce Survivability Rules",
+        "description": "If true, enforce the block's canSurvive check.",
+        "isRequired": true
+      },
+      {
+        "dataType": 1,
+        "id": "randomize_rotation",
+        "title": "Randomize Rotation",
+        "description": "If true, randomizes the block's cardinal orientation.",
+        "isRequired": false
+      },
+      {
+        "dataType": 16,
+        "id": "may_attach_to",
+        "title": "May Attach To",
+        "description": "Allowlist which specifies where the block can be placed.",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 0,
+              "id": "min_sides_must_attach",
+              "title": "Min Sides Must Attach",
+              "description": "Number of side faces that need to pass the attach conditions before the block can be placed. Default value is four.",
+              "isRequired": false
+            },
+            {
+              "dataType": 1,
+              "id": "auto_rotate",
+              "title": "Auto Rotate",
+              "description": "Automatically rotate the block to attach sensibly. This setting is ignored if 'randomize_rotation' is enabled.",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "top",
+              "title": "Top",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "bottom",
+              "title": "Bottom",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "north",
+              "title": "North",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "east",
+              "title": "East",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "south",
+              "title": "South",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "west",
+              "title": "West",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "all",
+              "title": "All",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "sides",
+              "title": "Sides",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "diagonal",
+              "title": "Diagonal",
+              "isRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 16,
+        "id": "may_not_attach_to",
+        "title": "May Not Attach To",
+        "description": "Denylist which specifies where the block can't be placed.",
+        "isRequired": false,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 17,
+              "id": "top",
+              "title": "Top",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "bottom",
+              "title": "Bottom",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "north",
+              "title": "North",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "east",
+              "title": "East",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "south",
+              "title": "South",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "west",
+              "title": "West",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "all",
+              "title": "All",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "sides",
+              "title": "Sides",
+              "isRequired": false
+            },
+            {
+              "dataType": 17,
+              "id": "diagonal",
+              "title": "Diagonal",
+              "isRequired": false
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 17,
+        "id": "may_replace",
+        "title": "May Replace",
+        "isRequired": false
+      }
+    ]
+  }
+}

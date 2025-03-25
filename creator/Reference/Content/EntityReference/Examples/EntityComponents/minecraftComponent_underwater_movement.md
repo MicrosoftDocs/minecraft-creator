@@ -1,51 +1,94 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:underwater_movement
-description: "A reference document detailing the 'underwater_movement' entity component"
+title: "Entity Documentation - minecraft:underwater_movement"
+description: "Describes the minecraft:underwater_movement entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:underwater_movement
 
-`minecraft:underwater_movement` defines the speed with which an entity can move through water.
+Defines the speed with which an entity can move through water.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:-----------|:-----------|:-----------|:-----------|
-| value| *not set*| Decimal| Movement speed of the entity under water. |
+## Underwater Movement Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | Decimal number | Movement speed of the entity under water. | Axolotl: `0.2`, Dolphin: `0.15`, Elder Guardian: `0.3` | 
 
-```json
-"minecraft:underwater_movement": {
-        "value": 0.15
-      }
-```
+## Samples
 
-## Vanilla entities examples
+#### [Axolotl](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/axolotl.json)
 
-### frog
 
 ```json
 "minecraft:underwater_movement": {
-        "value": 0.15
-      }
+  "value": 0.2
+}
 ```
 
-## Vanilla entities using `minecraft:water_movement`
+#### [Dolphin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/dolphin.json)
 
-- [axolotl](../../../../Source/VanillaBehaviorPack_Snippets/entities/axolotl.md)
-- [dolphin](../../../../Source/VanillaBehaviorPack_Snippets/entities/dolphin.md)
-- [drowned](../../../../Source/VanillaBehaviorPack_Snippets/entities/drowned.md)
-- [elder_guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/elder_guardian.md)
-- [fish](../../../../Source/VanillaBehaviorPack_Snippets/entities/fish.md)
-- [frog](../../../../Source/VanillaBehaviorPack_Snippets/entities/frog.md)
-- [guardian](../../../../Source/VanillaBehaviorPack_Snippets/entities/guardian.md)
-- [pufferfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/pufferfish.md)
-- [salmon](../../../../Source/VanillaBehaviorPack_Snippets/entities/salmon.md)
-- [skeleton_horse](../../../../Source/VanillaBehaviorPack_Snippets/entities/skeleton_horse.md)
-- [tadpole](../../../../Source/VanillaBehaviorPack_Snippets/entities/tadpole.md)
-- [tropicalfish](../../../../Source/VanillaBehaviorPack_Snippets/entities/tropicalfish.md)
-- [turtle](../../../../Source/VanillaBehaviorPack_Snippets/entities/turtle.md)
+
+```json
+"minecraft:underwater_movement": {
+  "value": 0.15
+}
+```
+
+#### [Elder Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/elder_guardian.json)
+
+
+```json
+"minecraft:underwater_movement": {
+  "value": 0.3
+}
+```
+
+#### [Fish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fish.json)
+
+
+```json
+"minecraft:underwater_movement": {
+  "value": 0.1
+}
+```
+
+#### [Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/guardian.json)
+
+
+```json
+"minecraft:underwater_movement": {
+  "value": 0.12
+}
+```
+
+#### [Pufferfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pufferfish.json)
+
+
+```json
+"minecraft:underwater_movement": {
+  "value": 0.13
+}
+```
+
+#### [Skeleton Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/skeleton_horse.json)
+
+
+```json
+"minecraft:underwater_movement": {
+  "value": 0.08
+}
+```
+
+#### [Turtle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/turtle.json)
+
+At /minecraft:entity/component_groups/minecraft:baby/minecraft:underwater_movement/: 
+
+```json
+"minecraft:underwater_movement": {
+  "value": 0.06
+}
+```

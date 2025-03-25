@@ -1,0 +1,48 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:item_controllable",
+    "title": "Item Controllable",
+    "description": "Defines what items can be used to control this entity while ridden.",
+    "fields": [
+      {
+        "id": "control_items",
+        "title": "Control Items",
+        "description": "List of items that can be used to control this entity.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:item_controllable/",
+              "content": "carrotOnAStick"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:item_controllable/",
+              "content": "warped_fungus_on_a_stick"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:item_controllable/",
+          "content": {
+            "control_items": "carrotOnAStick"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:item_controllable/",
+          "content": {
+            "control_items": "warped_fungus_on_a_stick"
+          }
+        }
+      ]
+    }
+  }
+}

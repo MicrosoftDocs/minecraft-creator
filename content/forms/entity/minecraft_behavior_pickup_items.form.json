@@ -1,0 +1,572 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.pickup_items",
+    "title": "Pickup Items Behavior",
+    "description": "Allows the mob to pick up items on the ground.",
+    "fields": [
+      {
+        "id": "can_pickup_any_item",
+        "title": "Can Pickup Any Item",
+        "description": "If true, the mob can pickup any item",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_pickup_to_hand_or_equipment",
+        "title": "Can Pickup To Hand Or Equipment",
+        "description": "If true, the mob can pickup items to its hand or armor slots",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "excluded_items",
+        "title": "Excluded Items",
+        "description": "List of items this mob will not pick up",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": [
+                "minecraft:glow_ink_sac"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": [
+                "minecraft:glow_ink_sac"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
+        "defaultValue": 0.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pickup_item/minecraft:behavior.pickup_items/",
+              "content": 2.2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_dist",
+        "title": "Max Dist",
+        "description": "Maximum distance this mob will look for items to pick up",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pickup_item/minecraft:behavior.pickup_items/",
+              "content": 32
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "pickup_based_on_chance",
+        "title": "Pickup Based On Chance",
+        "description": "If true, depending on the difficulty, there is a random chance that the mob may not be able to pickup items",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pickup_item/minecraft:behavior.pickup_items/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 0.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 0.8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "track_target",
+        "title": "Track Target",
+        "description": "If true, this mob will chase after the target as long as it's a valid target",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pickup_item/minecraft:behavior.pickup_items/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/evocation_illager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 7
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 11
+            }
+          ],
+          "/vanilla/behavior_pack/entities/husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pillager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 7
+            }
+          ],
+          "/vanilla/behavior_pack/entities/skeleton.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/villager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 9
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 8
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "dataType": 7,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pickup_item/minecraft:behavior.pickup_items/",
+              "content": 32
+            }
+          ]
+        }
+      },
+      {
+        "id": "pickup_same_items_as_in_hand",
+        "title": "Pickup Same Items As In Hand",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pickup_item/minecraft:behavior.pickup_items/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "cooldown_after_being_attacked",
+        "title": "Cooldown After Being Attacked",
+        "dataType": 7,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 20
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/component_groups/pickup_item/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 2,
+            "max_dist": 32,
+            "search_height": 32,
+            "goal_radius": 2.2,
+            "speed_multiplier": 6,
+            "pickup_based_on_chance": false,
+            "can_pickup_any_item": false,
+            "can_pickup_to_hand_or_equipment": false,
+            "pickup_same_items_as_in_hand": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 5,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 6,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true,
+            "excluded_items": [
+              "minecraft:glow_ink_sac"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/evocation_illager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 7,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 11,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 0.5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 6,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true,
+            "excluded_items": [
+              "minecraft:glow_ink_sac"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 6,
+            "max_dist": 10,
+            "goal_radius": 2,
+            "speed_multiplier": 0.8,
+            "pickup_based_on_chance": false,
+            "can_pickup_any_item": false,
+            "cooldown_after_being_attacked": 20
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 7,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 5,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 5,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 4,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 0.5,
+            "can_pickup_to_hand_or_equipment": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 9,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 0.5,
+            "can_pickup_to_hand_or_equipment": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vindicator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 7,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 5,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 6,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 8,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true,
+            "excluded_items": [
+              "minecraft:glow_ink_sac"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 8,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": false,
+            "can_pickup_any_item": true,
+            "excluded_items": [
+              "minecraft:glow_ink_sac"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 6,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true,
+            "excluded_items": [
+              "minecraft:glow_ink_sac"
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 6,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true
+          }
+        }
+      ]
+    }
+  }
+}

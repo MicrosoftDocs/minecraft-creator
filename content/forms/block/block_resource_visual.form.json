@@ -1,0 +1,26 @@
+{
+  "title": "Block Resource Visuals",
+  "description": "Defines properties related to a solid unit cube's visuals.",
+  "fields": [
+    {
+      "id": "textures",
+      "title": "Textures",
+      "description": "Texture to use.",
+      "dataType": 2,
+      "lookupId": "terrainTexture"
+    },
+    {
+      "id": "carried_textures",
+      "title": "Carried Textures",
+      "description": "Texture that represents the item when carried.",
+      "dataType": 2,
+      "lookupId": "terrainTexture"
+    },
+    {
+      "id": "isotropic",
+      "title": "Isotropic",
+      "description": "Whether to randomize which side to use when displaying a side of a unit cube.",
+      "dataType": 3
+    }
+  ]
+}

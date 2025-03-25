@@ -1,0 +1,22 @@
+{
+  "fields": [],
+  "scalarFieldUpgradeName": "value",
+  "generated_doNotEdit": {
+    "title": "Should Despawn",
+    "description": "Should_despawn component determines if the item should eventually despawn while floating in the world",
+    "fields": [
+      {
+        "id": "value",
+        "title": "value",
+        "description": "Determines whether the item should eventually despawn while floating in the world.",
+        "dataType": 1
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Should Despawn",
+    "description": "Should_despawn component determines if the item should eventually despawn while floating in the world",
+    "fields": [],
+    "id": "minecraft:should_despawn"
+  }
+}

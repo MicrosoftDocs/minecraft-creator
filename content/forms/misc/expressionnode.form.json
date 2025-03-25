@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "ExpressionNode",
+    "description": "ExpressionNode",
+    "fields": [
+      {
+        "id": "expression",
+        "title": "expression",
+        "description": "expression",
+        "dataType": 2
+      },
+      {
+        "id": "version",
+        "title": "version",
+        "description": "version",
+        "dataType": 0
+      }
+    ]
+  }
+}

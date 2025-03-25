@@ -1,0 +1,13 @@
+{
+  "id": "PlayerLeave",
+  "title": "Player Leave",
+  "description": "A player has left the world.",
+  "fields": [
+    {
+      "id": "player",
+      "description": "Identifier of the player that left.",
+      "dataType": 16,
+      "subFormId": "websockets/Player"
+    }
+  ]
+}

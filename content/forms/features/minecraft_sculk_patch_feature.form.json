@@ -1,0 +1,70 @@
+{
+  "id": "minecraft:sculk_patch_feature",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "isInternal": true,
+  "generated_doNotEdit": {
+    "id": "minecraft:sculk_patch_feature",
+    "title": "Sculk Patch Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 17,
+        "id": "can_place_sculk_patch_on",
+        "title": "Can Place Sculk Patch On",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "cursor_count",
+        "title": "Cursor Count",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "charge_amount",
+        "title": "Charge Amount",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "spread_attempts",
+        "title": "Spread Attempts",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "growth_rounds",
+        "title": "Growth Rounds",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "spread_rounds",
+        "title": "Spread Rounds",
+        "isRequired": true
+      }
+    ]
+  }
+}

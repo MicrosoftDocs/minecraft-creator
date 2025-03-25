@@ -1,0 +1,76 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Multinoise Generation Rules",
+    "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.",
+    "fields": [
+      {
+        "id": "target_weirdness",
+        "title": "target_weirdness",
+        "description": "Weirdness with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "target_temperature",
+        "title": "target_temperature",
+        "description": "Temperature with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "target_humidity",
+        "title": "target_humidity",
+        "description": "Humidity with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "target_altitude",
+        "title": "target_altitude",
+        "description": "Altitude with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "weight",
+        "title": "weight",
+        "description": "Weight with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Multinoise Generation Rules",
+    "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.",
+    "fields": [
+      {
+        "id": "target_weirdness",
+        "title": "target_weirdness",
+        "description": "Weirdness with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "target_temperature",
+        "title": "target_temperature",
+        "description": "Temperature with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "target_humidity",
+        "title": "target_humidity",
+        "description": "Humidity with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "target_altitude",
+        "title": "target_altitude",
+        "description": "Altitude with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "weight",
+        "title": "weight",
+        "description": "Weight with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      }
+    ],
+    "id": "minecraft:multinoise_generation_rules"
+  }
+}

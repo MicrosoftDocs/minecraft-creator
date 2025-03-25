@@ -1,0 +1,119 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:group_size",
+    "title": "Group Size",
+    "description": "Keeps track of entity group size in the given radius.",
+    "fields": [
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "The list of conditions that must be satisfied for other entities to be counted towards group size.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:group_size/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "has_component",
+                    "operator": "!=",
+                    "value": "minecraft:is_baby"
+                  },
+                  {
+                    "test": "is_family",
+                    "value": "hoglin"
+                  }
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:group_size/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "has_component",
+                    "operator": "!=",
+                    "value": "minecraft:is_baby"
+                  },
+                  {
+                    "test": "is_family",
+                    "value": "piglin"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "radius",
+        "title": "Radius",
+        "description": "Radius from center of entity.",
+        "defaultValue": 16,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:group_size/",
+              "content": 32
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:group_size/",
+              "content": 32
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:group_size/",
+          "content": {
+            "radius": 32,
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_component",
+                  "operator": "!=",
+                  "value": "minecraft:is_baby"
+                },
+                {
+                  "test": "is_family",
+                  "value": "hoglin"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:group_size/",
+          "content": {
+            "radius": 32,
+            "filters": {
+              "all_of": [
+                {
+                  "test": "has_component",
+                  "operator": "!=",
+                  "value": "minecraft:is_baby"
+                },
+                {
+                  "test": "is_family",
+                  "value": "piglin"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

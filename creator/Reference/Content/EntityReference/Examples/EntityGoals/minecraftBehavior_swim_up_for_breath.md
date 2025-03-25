@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.swim_up_for_breath"
-description: "Describes the behavior.swim_up_for_breath AI Goals"
+title: "Entity Documentation - minecraft:behavior.swim_up_for_breath"
+description: "Describes the minecraft:behavior.swim_up_for_breath ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.swim_up_for_breath
+# Entity Documentation - minecraft:behavior.swim_up_for_breath
 
 Allows the mob to try to move to air once it is close to running out of its total breathable supply. Requires "minecraft:breathable".
 
@@ -28,7 +28,7 @@ Allows the mob to try to move to air once it is close to running out of its tota
 
 
 ```json
-{
+"minecraft:behavior.swim_up_for_breath": {
   "priority": 1
 }
 ```

@@ -1,0 +1,27 @@
+{
+  "title": "Entity Sound Event",
+  "fields": [
+    {
+      "id": "volume",
+      "title": "Volume",
+      "dataType": 3,
+      "minValue": 0,
+      "maxValue": 1,
+      "step": 0.05,
+      "experienceType": 3,
+      "description": "Overall adjustment to the volume level of the set of sounds"
+    },
+    {
+      "id": "pitch",
+      "title": "Pitch",
+      "dataType": 3,
+      "description": "Overall adjustment to the pitch level of the set of sounds"
+    },
+    {
+      "id": "events",
+      "title": "Events",
+      "dataType": 24,
+      "description": "A set of associated events."
+    }
+  ]
+}

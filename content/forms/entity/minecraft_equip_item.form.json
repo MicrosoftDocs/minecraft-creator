@@ -1,0 +1,196 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:equip_item",
+    "title": "Equip Item",
+    "description": "The entity puts on the desired equipment.",
+    "fields": [
+      {
+        "id": "excluded_items",
+        "title": "Excluded Items",
+        "description": "List of items that the entity should not equip.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:equip_item/",
+              "content": [
+                {
+                  "item": "minecraft:banner:15"
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:equip_item/",
+              "content": [
+                {
+                  "item": "minecraft:banner:15"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/evocation_illager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vindicator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {
+            "excluded_items": [
+              {
+                "item": "minecraft:banner:15"
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equip_item/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

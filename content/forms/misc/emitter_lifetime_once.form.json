@@ -1,0 +1,26 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Emitter Lifetime Once Misc",
+    "description": "Emitter Lifetime Once Misc",
+    "fields": [
+      {
+        "id": "active_time",
+        "title": "active_time",
+        "description": "active_time",
+        "dataType": 16,
+        "subForm": {
+          "title": "Active Time",
+          "description": "Active Time",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "active_time",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

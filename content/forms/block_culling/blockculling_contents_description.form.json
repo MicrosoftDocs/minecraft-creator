@@ -1,0 +1,15 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "BlockCulling Contents Description",
+    "description": "BlockCulling Contents Description",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "identifier",
+        "description": "identifier",
+        "dataType": 2
+      }
+    ]
+  }
+}

@@ -1,54 +1,72 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:knockback_resistance
-description: "A reference document detailing the 'knockback_resistance' entity component"
+title: "Entity Documentation - minecraft:knockback_resistance"
+description: "Describes the minecraft:knockback_resistance entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:knockback_resistance
 
-`minecraft:knockback_resistance` compels an entity to resist being knocked backwards by a melee attack.
+Compels an entity to resist being knocked backwards by a melee attack.
 
-## Parameters
+## Alternate Simple Representations
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| value |*not set* | Float or object with value and max | The amount of knockback resistance that an entity has. |
+This item can also be represented as a `Decimal number`.
 
-## Example
 
-```json
-"minecraft:knockback_resistance": {
-        "value": 0.6
-      }
-```
+## Knockback Resistance Properties
 
-## Vanilla entities examples
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max | *not set* | Decimal number | Maximum potential knockback resistence that this has. | Ender Dragon: `100` | 
+| value | *not set* | Decimal number | The amount of knockback resistance that an entity has. | Armor Stand: `1`, Ender Dragon: `100`, Hoglin: `0.6` | 
 
-### ender_dragon
+## Samples
 
-```json
-"minecraft:knockback_resistance": {
-        "value": 100,
-        "max": 100
-      }
-```
+#### [Armor Stand](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armor_stand.json)
 
-### warden
 
 ```json
 "minecraft:knockback_resistance": {
-        "value": 1.0
-      }
+  "value": 1
+}
 ```
 
-## Vanilla entities using `minecraft:health`
+#### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
 
-- [armor_stand](../../../../Source/VanillaBehaviorPack_Snippets/entities/armor_stand.md)
-- [ender_dragon](../../../../Source/VanillaBehaviorPack_Snippets/entities/ender_dragon.md)
-- [hoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/hoglin.md)
-- [iron_golem](../../../../Source/VanillaBehaviorPack_Snippets/entities/iron_golem.md)
-- [ravager](../../../../Source/VanillaBehaviorPack_Snippets/entities/ravager.md)
-- [warden](../../../../Source/VanillaBehaviorPack_Snippets/entities/warden.md)
-- [zoglin](../../../../Source/VanillaBehaviorPack_Snippets/entities/zoglin.md)
+
+```json
+"minecraft:knockback_resistance": {
+  "value": 0
+}
+```
+
+#### [Ender Dragon](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ender_dragon.json)
+
+
+```json
+"minecraft:knockback_resistance": {
+  "value": 100,
+  "max": 100
+}
+```
+
+#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
+
+
+```json
+"minecraft:knockback_resistance": {
+  "value": 0.6
+}
+```
+
+#### [Ravager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ravager.json)
+
+
+```json
+"minecraft:knockback_resistance": {
+  "value": 0.75
+}
+```

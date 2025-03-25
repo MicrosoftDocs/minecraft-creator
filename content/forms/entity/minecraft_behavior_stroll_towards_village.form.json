@@ -1,0 +1,115 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.stroll_towards_village",
+    "title": "Stroll Towards Village Behavior",
+    "description": "Allows the mob to move into a random location within a village within the search range.",
+    "fields": [
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time in seconds the mob has to wait before using the goal again",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_night/minecraft:behavior.stroll_towards_village/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "goal_radius",
+        "title": "Goal Radius",
+        "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
+        "defaultValue": 0.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_night/minecraft:behavior.stroll_towards_village/",
+              "content": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "The distance in blocks to search for points inside villages. If <= 0, find the closest village regardless of distance.",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_night/minecraft:behavior.stroll_towards_village/",
+              "content": 32
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_night/minecraft:behavior.stroll_towards_village/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "start_chance",
+        "title": "Start Chance",
+        "description": "This is the chance that the mob will start this goal, from 0 to 1",
+        "defaultValue": 0.1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_night/minecraft:behavior.stroll_towards_village/",
+              "content": 0.005
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_night/minecraft:behavior.stroll_towards_village/",
+              "content": 11
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:fox_night/minecraft:behavior.stroll_towards_village/",
+          "content": {
+            "priority": 11,
+            "speed_multiplier": 1,
+            "goal_radius": 3,
+            "cooldown_time": 10,
+            "search_range": 32,
+            "start_chance": 0.005
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "PlayerJoin",
+  "title": "Player Join",
+  "description": "A player has joined the world.",
+  "fields": [
+    {
+      "id": "player",
+      "description": "Identifier of the player that joined.",
+      "dataType": 16,
+      "subFormId": "websockets/Player"
+    }
+  ]
+}

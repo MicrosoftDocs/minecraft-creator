@@ -1,0 +1,32 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "DiggerLegacyBlockInfo",
+    "description": "DiggerLegacyBlockInfo",
+    "fields": [
+      {
+        "id": "on_dig",
+        "title": "on_dig",
+        "description": "In format versions before 1.20.20, trigger for when you dig a block that matches this filter",
+        "dataType": 16
+      },
+      {
+        "id": "block",
+        "title": "block",
+        "description": "Block to be dug.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Block",
+          "description": "Block",
+          "fields": []
+        }
+      },
+      {
+        "id": "speed",
+        "title": "speed",
+        "description": "Digging speed for the correlating block(s).",
+        "dataType": 0
+      }
+    ]
+  }
+}

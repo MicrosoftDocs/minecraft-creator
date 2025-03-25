@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.sniff"
-description: "Describes the behavior.sniff AI Goals"
+title: "Entity Documentation - minecraft:behavior.sniff"
+description: "Describes the minecraft:behavior.sniff ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.sniff
+# Entity Documentation - minecraft:behavior.sniff
 
 Allows this entity to detect the nearest player within "sniffing_radius" and update its "minecraft:suspect_tracking" component state.
 
@@ -29,7 +29,7 @@ Allows this entity to detect the nearest player within "sniffing_radius" and upd
 
 
 ```json
-{
+"minecraft:behavior.sniff": {
   "priority": 6,
   "duration": 4.16,
   "sniffing_radius": 24,

@@ -1,0 +1,15 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructure ProcessorRule Passthrough",
+    "description": "Modifier that leaves the state unchanged. This is the default block modifier if no other block modifier is specified.",
+    "fields": [
+      {
+        "id": "type",
+        "title": "PositionalBlockRuleAxis",
+        "description": "PositionalBlockRuleAxis",
+        "dataType": 2
+      }
+    ]
+  }
+}

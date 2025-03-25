@@ -1,0 +1,267 @@
+{
+  "fields": [],
+  "requires": [
+    {
+      "id": "targeting_entity_component",
+      "type": "targeting_entity_component"
+    },
+    {
+      "id": "minecraft:attack",
+      "type": "entity_component"
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.stalk_and_pounce_on_target",
+    "title": "Stalk And Pounce On Target Behavior",
+    "description": "Allows a mob to stalk a target, then once within range pounce onto a target, on success the target will be attacked dealing damage defined by the attack component. On failure, the mob will risk getting stuck",
+    "fields": [
+      {
+        "id": "interest_time",
+        "title": "Interest Time",
+        "description": "The amount of time the mob will be interested before pouncing. This happens when the mob is within range of pouncing",
+        "defaultValue": 2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "leap_distance",
+        "title": "Leap Distance",
+        "description": "The distance in blocks the mob jumps in the direction of its target",
+        "defaultValue": 0.8,
+        "dataType": 3
+      },
+      {
+        "id": "leap_height",
+        "title": "Leap Height",
+        "description": "The height in blocks the mob jumps when leaping at its target",
+        "defaultValue": 0.9,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+              "content": 0.9
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_stalk_dist",
+        "title": "Max Stalk Dist",
+        "description": "The maximum distance away a target can be before the mob gives up on stalking",
+        "defaultValue": 10,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+              "content": 12
+            }
+          ]
+        }
+      },
+      {
+        "id": "pounce_max_dist",
+        "title": "Pounce Max Dist",
+        "description": "The maximum distance away from the target in blocks to begin pouncing at the target",
+        "defaultValue": 5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+              "content": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "set_persistent",
+        "title": "Set Persistent",
+        "description": "Allows the actor to be set to persist upon targeting a player",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "stalk_speed",
+        "title": "Stalk Speed",
+        "description": "The movement speed in which you stalk your target",
+        "defaultValue": 1.2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+              "content": 1.2
+            }
+          ]
+        }
+      },
+      {
+        "id": "strike_dist",
+        "title": "Strike Dist",
+        "description": "The max distance away from the target when landing from the pounce that will still result in damaging the target",
+        "defaultValue": 2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "stuck_time",
+        "title": "Stuck Time",
+        "description": "The amount of time the mob will be stuck if they fail and land on a block they can be stuck on",
+        "defaultValue": 2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+              "content": 7
+            }
+          ]
+        }
+      },
+      {
+        "id": "leap_dist",
+        "title": "Leap Dist",
+        "dataType": 7,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+              "content": 0.8
+            }
+          ]
+        }
+      },
+      {
+        "id": "stuck_blocks",
+        "title": "Stuck Blocks",
+        "dataType": 16,
+        "subForm": {
+          "id": "stuck_blocks",
+          "title": "Stuck_blocks",
+          "fields": [
+            {
+              "id": "test",
+              "title": "Test",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/fox.json": [
+                  {
+                    "path": "test",
+                    "content": "is_block"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/fox.json": [
+                  {
+                    "path": "subject",
+                    "content": "block"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/fox.json": [
+                  {
+                    "path": "operator",
+                    "content": "=="
+                  }
+                ]
+              }
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/fox.json": [
+                  {
+                    "path": "value",
+                    "content": "snow_layer"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+              "content": {
+                "test": "is_block",
+                "subject": "block",
+                "operator": "==",
+                "value": "snow_layer"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.stalk_and_pounce_on_target/",
+          "content": {
+            "priority": 7,
+            "stalk_speed": 1.2,
+            "max_stalk_dist": 12,
+            "leap_height": 0.9,
+            "leap_dist": 0.8,
+            "pounce_max_dist": 5,
+            "interest_time": 2,
+            "stuck_time": 2,
+            "strike_dist": 2,
+            "stuck_blocks": {
+              "test": "is_block",
+              "subject": "block",
+              "operator": "==",
+              "value": "snow_layer"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

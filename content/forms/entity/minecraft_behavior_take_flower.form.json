@@ -1,0 +1,158 @@
+{
+  "fields": [],
+  "restrictions": [
+    {
+      "id": "minecraft:villager",
+      "type": "entity_type"
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.take_flower",
+    "title": "Take Flower Behavior",
+    "description": "Allows the mob to accept flowers from another mob with the minecraft:offer_flower behavior.",
+    "fields": [
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "Conditions that need to be met for the behavior to start.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "is_daytime",
+                    "value": true
+                  }
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/villager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "is_daytime",
+                    "value": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_head_rotation_y",
+        "title": "Max Head Rotation Y",
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
+        "defaultValue": 30,
+        "dataType": 3
+      },
+      {
+        "id": "max_rotation_x",
+        "title": "Max Rotation X",
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
+        "defaultValue": 30,
+        "dataType": 3
+      },
+      {
+        "id": "max_wait_time",
+        "title": "Max Wait Time",
+        "description": "The maximum amount of time (in seconds) for the mob to randomly wait for before taking the flower.",
+        "defaultValue": 20,
+        "dataType": 3
+      },
+      {
+        "id": "min_distance_to_target",
+        "title": "Min Distance To Target",
+        "description": "Minimum distance (in blocks) for the entity to be considered having reached its target.",
+        "defaultValue": 2,
+        "dataType": 3
+      },
+      {
+        "id": "min_wait_time",
+        "title": "Min Wait Time",
+        "description": "The minimum amount of time (in seconds) for the mob to randomly wait for before taking the flower.",
+        "defaultValue": 4,
+        "dataType": 3
+      },
+      {
+        "id": "search_area",
+        "title": "Search Area",
+        "description": "The dimensions of the AABB used to search for a potential mob to take a flower from.",
+        "defaultValue": [
+          6,
+          2,
+          6
+        ],
+        "dataType": 11
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal.",
+        "defaultValue": 0.5,
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
+              "content": 9
+            }
+          ],
+          "/vanilla/behavior_pack/entities/villager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
+              "content": 7
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
+          "content": {
+            "priority": 9,
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_daytime",
+                  "value": true
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/baby/minecraft:behavior.take_flower/",
+          "content": {
+            "priority": 7,
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_daytime",
+                  "value": true
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fields": [
+    {
+      "id": "identifier",
+      "title": "Id",
+      "dataType": 2
+    },
+    {
+      "id": "population_control",
+      "title": "Population group",
+      "description": "Specifies a group that this mob is connected with, of which only so many mobs in the group can be spawned",
+      "dataType": 2
+    }
+  ]
+}

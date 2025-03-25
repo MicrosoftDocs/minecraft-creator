@@ -1,0 +1,244 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.random_look_around_and_sit",
+    "title": "Random Look Around And Sit Behavior",
+    "description": "Allows the mob to randomly sit and look around for a duration. Note: Must have a sitting animation set up to use this.",
+    "fields": [
+      {
+        "id": "continue_if_leashed",
+        "title": "Continue If Leashed",
+        "description": "If the goal should continue to be used as long as the mob is leashed.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "continue_sitting_on_reload",
+        "title": "Continue Sitting On Reload",
+        "description": "The mob will stay sitting on reload.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_angle_of_view_horizontal",
+        "title": "Max Angle Of View Horizontal",
+        "description": "The rightmost angle a mob can look at on the horizontal plane with respect to its initial facing direction.",
+        "defaultValue": 30,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 30
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_look_count",
+        "title": "Max Look Count",
+        "description": "The max amount of unique looks a mob will have while looking around.",
+        "defaultValue": 2,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_look_time",
+        "title": "Max Look Time",
+        "description": "The max amount of time (in ticks) a mob will stay looking at a direction while looking around.",
+        "defaultValue": 40,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 100
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 100
+            }
+          ]
+        }
+      },
+      {
+        "id": "min_angle_of_view_horizontal",
+        "title": "Min Angle Of View Horizontal",
+        "description": "The leftmost angle a mob can look at on the horizontal plane with respect to its initial facing direction.",
+        "defaultValue": -30,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": -30
+            }
+          ]
+        }
+      },
+      {
+        "id": "min_look_count",
+        "title": "Min Look Count",
+        "description": "The min amount of unique looks a mob will have while looking around.",
+        "defaultValue": 1,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "min_look_time",
+        "title": "Min Look Time",
+        "description": "The min amount of time (in ticks) a mob will stay looking at a direction while looking around.",
+        "defaultValue": 20,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 80
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 80
+            }
+          ]
+        }
+      },
+      {
+        "id": "probability",
+        "title": "Probability",
+        "description": "The probability of randomly looking around/sitting.",
+        "defaultValue": 0.02,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 0.001
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 0.001
+            }
+          ]
+        }
+      },
+      {
+        "id": "random_look_around_cooldown",
+        "title": "Random Look Around Cooldown",
+        "description": "The cooldown in seconds before the goal can be used again.",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+              "content": 12
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+          "content": {
+            "priority": 4,
+            "continue_if_leashed": true,
+            "continue_sitting_on_reload": true,
+            "min_look_count": 2,
+            "max_look_count": 5,
+            "min_look_time": 80,
+            "max_look_time": 100,
+            "min_angle_of_view_horizontal": -30,
+            "max_angle_of_view_horizontal": 30,
+            "random_look_around_cooldown": 5,
+            "probability": 0.001
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around_and_sit/",
+          "content": {
+            "priority": 12,
+            "min_look_count": 2,
+            "max_look_count": 5,
+            "min_look_time": 80,
+            "max_look_time": 100,
+            "probability": 0.001
+          }
+        }
+      ]
+    }
+  }
+}

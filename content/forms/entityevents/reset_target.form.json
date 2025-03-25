@@ -1,0 +1,14 @@
+{
+  "id": "reset_target",
+  "title": "Reset Target",
+  "description": "Resets the entities' target (the focus of its gaze, attacking behavior, etc.).",
+  "fields": [],
+  "samples": {
+    "samples": [
+      {
+        "path": "Example:",
+        "content": "{\r\n\t\"reset_target\": {}\r\n}"
+      }
+    ]
+  }
+}

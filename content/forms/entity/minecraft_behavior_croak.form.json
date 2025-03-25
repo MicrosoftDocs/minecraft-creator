@@ -1,0 +1,108 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.croak",
+    "title": "Croak Behavior",
+    "description": "Allows the entity to croak at a random time interval with configurable conditions.",
+    "fields": [
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Random range in seconds after which the croaking stops. Can also be a constant.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.croak/",
+              "content": 4.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "Conditions for the behavior to start and keep running. The interval between runs only starts after passing the filters.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.croak/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "in_water",
+                    "value": false
+                  },
+                  {
+                    "test": "in_lava",
+                    "value": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "interval",
+        "title": "Interval",
+        "description": "Random range in seconds between runs of this behavior. Can also be a constant.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.croak/",
+              "content": [
+                10,
+                20
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.croak/",
+              "content": 9
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.croak/",
+          "content": {
+            "priority": 9,
+            "interval": [
+              10,
+              20
+            ],
+            "duration": 4.5,
+            "filters": {
+              "all_of": [
+                {
+                  "test": "in_water",
+                  "value": false
+                },
+                {
+                  "test": "in_lava",
+                  "value": false
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

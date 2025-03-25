@@ -1,0 +1,27 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructureTemplatePool TemplatePoolElement",
+    "description": "JigsawStructureTemplatePool TemplatePoolElement",
+    "fields": [
+      {
+        "id": "element",
+        "title": "element",
+        "description": "A grouping of a Structure Template, the Processor List to use when placing the structure, and its weight that determines the likelihood of the element being chosen.",
+        "dataType": 16
+      },
+      {
+        "id": "weight",
+        "title": "weight",
+        "description": "The weighted probability of choosing the element from the pool. For example, a template pool containing 2 structures with weights of 1 and 3 will have a 25% and 75% chance of being chosen respectively.",
+        "dataType": 0
+      },
+      {
+        "id": "projection",
+        "title": "enum SharedTypes_v1_21_20_JigsawStructureTemplatePool_Projection",
+        "description": "Specifies how structures should be placed relative to the terrain.",
+        "dataType": 2
+      }
+    ]
+  }
+}

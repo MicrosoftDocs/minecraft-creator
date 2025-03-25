@@ -1,0 +1,31 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:movement.hover",
+    "title": "Hover Movement",
+    "description": "This move control causes the mob to hover.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "defaultValue": 30,
+        "dataType": 3
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.hover/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.hover/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

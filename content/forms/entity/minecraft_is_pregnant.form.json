@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:is_pregnant",
+    "title": "Is Pregnant",
+    "description": "Sets that this entity is currently pregnant.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/component_groups/sniffer_pregnant/minecraft:is_pregnant/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

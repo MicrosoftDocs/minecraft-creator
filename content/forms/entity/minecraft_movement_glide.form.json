@@ -1,0 +1,31 @@
+{
+  "fields": [
+    {
+      "id": "max_turn",
+      "title": "Max Turn",
+      "description": "The maximum number in degrees the mob can turn per tick.",
+      "defaultValue": 30,
+      "dataType": 3
+    },
+    {
+      "id": "speed_when_turning",
+      "title": "Speed when turning",
+      "description": "Speed that the mob adjusts to when it has to turn quickly.",
+      "defaultValue": 0.2,
+      "dataType": 3
+    }
+  ],
+  "generated_doNotEdit": {
+    "title": "Glide Movement",
+    "description": "This move control causes the mob to glide.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "defaultValue": 30,
+        "dataType": 3
+      }
+    ]
+  }
+}

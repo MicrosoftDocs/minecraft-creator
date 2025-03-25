@@ -1,0 +1,40 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Emitter Shape Entity Aabb Misc",
+    "description": "Emitter Shape Entity Aabb Misc",
+    "fields": [
+      {
+        "id": "surface_only",
+        "title": "surface_only",
+        "description": "surface_only",
+        "dataType": 1
+      },
+      {
+        "id": "direction",
+        "title": "direction",
+        "description": "direction",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "direction",
+            "dataType": 15,
+            "minLength": 3,
+            "maxLength": 3,
+            "subForm": {
+              "title": "Direction",
+              "description": "Direction",
+              "fields": []
+            },
+            "alternates": [
+              {
+                "id": "direction",
+                "dataType": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

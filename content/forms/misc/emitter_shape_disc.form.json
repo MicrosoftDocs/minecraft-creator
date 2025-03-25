@@ -1,0 +1,101 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Emitter Shape Disc Misc",
+    "description": "Emitter Shape Disc Misc",
+    "fields": [
+      {
+        "id": "offset",
+        "title": "offset",
+        "description": "offset",
+        "dataType": 15,
+        "minLength": 3,
+        "maxLength": 3,
+        "subForm": {
+          "title": "Offset",
+          "description": "Offset",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "offset",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "direction",
+        "title": "direction",
+        "description": "direction",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "direction",
+            "dataType": 15,
+            "minLength": 3,
+            "maxLength": 3,
+            "subForm": {
+              "title": "Direction",
+              "description": "Direction",
+              "fields": []
+            },
+            "alternates": [
+              {
+                "id": "direction",
+                "dataType": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "radius",
+        "title": "radius",
+        "description": "radius",
+        "dataType": 16,
+        "subForm": {
+          "title": "Radius",
+          "description": "Radius",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "radius",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "surface_only",
+        "title": "surface_only",
+        "description": "surface_only",
+        "dataType": 1
+      },
+      {
+        "id": "plane_normal",
+        "title": "plane_normal",
+        "description": "plane_normal",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "plane_normal",
+            "dataType": 15,
+            "minLength": 3,
+            "maxLength": 3,
+            "subForm": {
+              "title": "Plane Normal",
+              "description": "Plane Normal",
+              "fields": []
+            },
+            "alternates": [
+              {
+                "id": "plane_normal",
+                "dataType": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

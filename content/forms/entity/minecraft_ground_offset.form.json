@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:ground_offset",
+    "title": "Ground Offset",
+    "description": "Sets the offset from the ground that the entity is actually at.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The value of the entity's offset from the terrain, in blocks.",
+        "defaultValue": 0,
+        "dataType": 3
+      }
+    ]
+  }
+}

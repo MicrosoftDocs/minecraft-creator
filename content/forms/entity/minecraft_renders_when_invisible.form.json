@@ -1,0 +1,47 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:renders_when_invisible",
+    "title": "Renders When Invisible",
+    "description": "When set, the entity will render even when invisible. Appropriate rendering behavior can then be specified in the corresponding \"minecraft:client_entity\".",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:renders_when_invisible/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creaking.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:renders_when_invisible/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/enderman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:renders_when_invisible/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/phantom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:renders_when_invisible/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/shulker.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:renders_when_invisible/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:renders_when_invisible/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "fields": [
+    {
+      "id": "value",
+      "title": "value",
+      "description": "Sets the base rarity of the item. The rarity of an item automatically increases when enchanted, either to Rare when the base rarity is Common or Uncommon, or Epic when the base rarity is Rare.",
+      "dataType": 2,
+      "choices": [
+        {
+          "id": "common"
+        },
+        {
+          "id": "uncommon"
+        },
+        {
+          "id": "rare"
+        },
+        {
+          "id": "epic"
+        }
+      ]
+    }
+  ],
+  "scalarFieldUpgradeName": "value",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "minecraft:rarity": "rare"
+        }
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Rarity",
+    "description": "Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item.",
+    "fields": [],
+    "id": "minecraft:rarity"
+  }
+}

@@ -1,0 +1,527 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:entity_sensor",
+    "title": "Entity Sensor",
+    "description": "A component that owns multiple subsensors, each one firing an event when a set of conditions are met by other entities within the defined range.",
+    "fields": [
+      {
+        "id": "find_players_only",
+        "title": "Find Players Only",
+        "description": "Limits the search to Players only for all subsensors.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "relative_range",
+        "title": "Relative Range",
+        "description": "If true the subsensors' range is additive on top of the entity's size.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "subsensors",
+        "title": "Subsensors",
+        "description": "The list of subsensors which sense for entities and emit events when all their conditions are met.",
+        "dataType": 15,
+        "subForm": {
+          "description": "The list of subsensors which sense for entities and emit events when all their conditions are met.",
+          "fields": [
+            {
+              "id": "cooldown",
+              "title": "Cooldown",
+              "description": "How many seconds should elapse before the subsensor can once again sense for entities. The cooldown is applied on top of the base 1 tick (0.05 seconds) delay. Negative values will result in no cooldown being used.",
+              "defaultValue": -1,
+              "dataType": 3
+            },
+            {
+              "id": "event",
+              "title": "Event",
+              "description": "Event to fire when the conditions are met.",
+              "dataType": 22
+            },
+            {
+              "id": "event_filters",
+              "title": "Event Filters",
+              "description": "The set of conditions that must be satisfied to fire the event.",
+              "dataType": 20
+            },
+            {
+              "id": "maximum_count",
+              "title": "Maximum Count",
+              "description": "The maximum number of entities that must pass the filter conditions for the event to send.",
+              "defaultValue": -1,
+              "dataType": 0
+            },
+            {
+              "id": "minimum_count",
+              "title": "Minimum Count",
+              "description": "The minimum number of entities that must pass the filter conditions for the event to send.",
+              "defaultValue": 1,
+              "dataType": 0
+            },
+            {
+              "id": "range",
+              "title": "Range",
+              "description": "The maximum horizontal and vertical distance another entity can be from this and have the filters checked against it.",
+              "defaultValue": "[10, 10]",
+              "dataType": 36
+            },
+            {
+              "id": "require_all",
+              "title": "Require All",
+              "description": "If true requires all nearby entities to pass the filter conditions for the events to send.",
+              "defaultValue": false,
+              "dataType": 1
+            },
+            {
+              "id": "y_offset",
+              "title": "Y Offset",
+              "description": "Vertical offset applied to the entity's position when computing the distance from other entities.",
+              "defaultValue": 0,
+              "dataType": 3
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:entity_sensor/",
+              "content": [
+                {
+                  "event": "minecraft:no_threat_detected",
+                  "cooldown": 0.2,
+                  "range": [
+                    7,
+                    2
+                  ],
+                  "minimum_count": 0,
+                  "maximum_count": 0,
+                  "event_filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "undead"
+                      },
+                      {
+                        "all_of": [
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                          },
+                          {
+                            "any_of": [
+                              {
+                                "test": "was_last_hurt_by",
+                                "subject": "other"
+                              },
+                              {
+                                "test": "is_sprinting",
+                                "subject": "other"
+                              },
+                              {
+                                "test": "is_riding",
+                                "subject": "other"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "event": "minecraft:threat_detected",
+                  "cooldown": 0.2,
+                  "range": [
+                    7,
+                    2
+                  ],
+                  "minimum_count": 1,
+                  "event_filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "undead"
+                      },
+                      {
+                        "all_of": [
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                          },
+                          {
+                            "any_of": [
+                              {
+                                "test": "was_last_hurt_by",
+                                "subject": "other"
+                              },
+                              {
+                                "test": "is_sprinting",
+                                "subject": "other"
+                              },
+                              {
+                                "test": "is_riding",
+                                "subject": "other"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/",
+              "content": [
+                {
+                  "range": [
+                    2,
+                    2
+                  ],
+                  "event_filters": {
+                    "all_of": [
+                      {
+                        "test": "is_riding",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": true
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": "minecraft:behavior.look_at_player"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_riding_player"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:entity_sensor/",
+          "content": {
+            "subsensors": [
+              {
+                "event": "minecraft:no_threat_detected",
+                "cooldown": 0.2,
+                "range": [
+                  7,
+                  2
+                ],
+                "minimum_count": 0,
+                "maximum_count": 0,
+                "event_filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "undead"
+                    },
+                    {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        },
+                        {
+                          "any_of": [
+                            {
+                              "test": "was_last_hurt_by",
+                              "subject": "other"
+                            },
+                            {
+                              "test": "is_sprinting",
+                              "subject": "other"
+                            },
+                            {
+                              "test": "is_riding",
+                              "subject": "other"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "event": "minecraft:threat_detected",
+                "cooldown": 0.2,
+                "range": [
+                  7,
+                  2
+                ],
+                "minimum_count": 1,
+                "event_filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "undead"
+                    },
+                    {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        },
+                        {
+                          "any_of": [
+                            {
+                              "test": "was_last_hurt_by",
+                              "subject": "other"
+                            },
+                            {
+                              "test": "is_sprinting",
+                              "subject": "other"
+                            },
+                            {
+                              "test": "is_riding",
+                              "subject": "other"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/",
+          "content": {
+            "relative_range": false,
+            "subsensors": [
+              {
+                "range": [
+                  2,
+                  2
+                ],
+                "event_filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "self",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "operator": "equals",
+                      "value": "minecraft:behavior.look_at_player"
+                    }
+                  ]
+                },
+                "event": "minecraft:on_riding_player"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_riding_player/minecraft:entity_sensor/",
+          "content": {
+            "relative_range": false,
+            "subsensors": [
+              {
+                "range": [
+                  2,
+                  2
+                ],
+                "event_filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "self",
+                      "operator": "equals",
+                      "value": false
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "operator": "not",
+                      "value": "minecraft:behavior.look_at_player"
+                    }
+                  ]
+                },
+                "event": "minecraft:on_not_riding_player"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pufferfish.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:normal_puff/minecraft:entity_sensor/",
+          "content": {
+            "relative_range": false,
+            "subsensors": [
+              {
+                "range": [
+                  2.5,
+                  2.5
+                ],
+                "minimum_count": 1,
+                "event_filters": {
+                  "any_of": [
+                    {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "mob"
+                        },
+                        {
+                          "any_of": [
+                            {
+                              "test": "is_family",
+                              "subject": "other",
+                              "value": "axolotl"
+                            },
+                            {
+                              "test": "is_family",
+                              "subject": "other",
+                              "operator": "not",
+                              "value": "aquatic"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    }
+                  ]
+                },
+                "event": "minecraft:start_half_puff"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:half_puff_secondary/minecraft:entity_sensor/",
+          "content": {
+            "relative_range": false,
+            "subsensors": [
+              {
+                "range": [
+                  2.5,
+                  2.5
+                ],
+                "minimum_count": 1,
+                "event_filters": {
+                  "any_of": [
+                    {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "mob"
+                        },
+                        {
+                          "any_of": [
+                            {
+                              "test": "is_family",
+                              "subject": "other",
+                              "value": "axolotl"
+                            },
+                            {
+                              "test": "is_family",
+                              "subject": "other",
+                              "operator": "not",
+                              "value": "aquatic"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    }
+                  ]
+                },
+                "event": "minecraft:start_full_puff"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:deflate_sensor/minecraft:entity_sensor/",
+          "content": {
+            "relative_range": false,
+            "subsensors": [
+              {
+                "range": [
+                  2.9,
+                  2.9
+                ],
+                "minimum_count": 0,
+                "maximum_count": 0,
+                "event_filters": {
+                  "any_of": [
+                    {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "mob"
+                        },
+                        {
+                          "any_of": [
+                            {
+                              "test": "is_family",
+                              "subject": "other",
+                              "value": "axolotl"
+                            },
+                            {
+                              "test": "is_family",
+                              "subject": "other",
+                              "operator": "not",
+                              "value": "aquatic"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    }
+                  ]
+                },
+                "event": "minecraft:from_full_puff"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

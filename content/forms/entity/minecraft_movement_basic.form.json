@@ -1,0 +1,527 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:movement.basic",
+    "title": "Basic Movement",
+    "description": "This component accents the movement of an entity.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "defaultValue": 30,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/wither.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:movement.basic/",
+              "content": 180
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creaking.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/enderman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/endermite.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/evocation_illager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/glow_squid.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/iron_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mooshroom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ravager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/shulker.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/silverfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/squid.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vex.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vindicator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wandering_trader.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/witch.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {
+            "max_turn": 180
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/add_entity_robot/full/robot_example_full_behavior/entities/robot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/behavior_pack_sample/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

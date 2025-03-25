@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:walk_animation_speed",
+    "title": "Walk Animation Speed",
+    "description": "Sets the speed multiplier for this entity's walk animation speed.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The higher the number, the faster the animation for walking plays. A value of 1.0 means normal speed, while 2.0 means twice as fast.",
+        "defaultValue": 1,
+        "dataType": 3
+      }
+    ]
+  }
+}
