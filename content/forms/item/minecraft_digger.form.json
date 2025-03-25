@@ -1,0 +1,123 @@
+{
+  "fields": [],
+  "description": "Allows a creator to determine how quickly an item can dig specific blocks.",
+  "samples": {
+    "sample": [
+      {
+        "path": "digger",
+        "content": {
+          "minecraft:digger": {
+            "use_efficiency": true,
+            "destroy_speeds": [
+              {
+                "speed": 6,
+                "block": {
+                  "tags": "query.any_tag( 'wood' )"
+                }
+              },
+              {
+                "block": "minecraft:coal_ore",
+                "speed": 2
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "title": "Digger",
+    "description": "Digger item component specifies how quickly this item can dig specific blocks.",
+    "fields": [
+      {
+        "id": "use_efficiency",
+        "title": "use_efficiency",
+        "description": "Determines whether this item should be impacted if the efficiency enchantment is applied to it.",
+        "dataType": 1
+      },
+      {
+        "id": "destroy_speeds",
+        "title": "destroy_speeds",
+        "description": "A list of blocks to dig with correlating speeds of digging.",
+        "dataType": 15
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Digger",
+    "description": "Digger item component specifies how quickly this item can dig specific blocks.",
+    "fields": [
+      {
+        "id": "use_efficiency",
+        "title": "use_efficiency",
+        "description": "Determines whether this item should be impacted if the efficiency enchantment is applied to it.",
+        "dataType": 1
+      },
+      {
+        "id": "destroy_speeds",
+        "title": "destroy_speeds",
+        "description": "A list of blocks to dig with correlating speeds of digging.",
+        "dataType": 15,
+        "subForm": {
+          "title": "Struct SharedTypes V1 20 50 DiggerItemComponent BlockInfo",
+          "description": "Struct SharedTypes V1 20 50 DiggerItemComponent BlockInfo",
+          "fields": [
+            {
+              "id": "block",
+              "title": "block",
+              "description": "Block to be dug.",
+              "dataType": 16,
+              "subForm": {
+                "title": "Block",
+                "description": "Block",
+                "fields": [
+                  {
+                    "id": "name",
+                    "title": "name",
+                    "description": "name",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "tags",
+                    "title": "tags",
+                    "description": "tags",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "states",
+                    "title": "states",
+                    "description": "states",
+                    "dataType": 0,
+                    "alternates": [
+                      {
+                        "id": "states",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "states",
+                        "dataType": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "id": "block",
+                  "dataType": 2
+                }
+              ]
+            },
+            {
+              "id": "speed",
+              "title": "speed",
+              "description": "Digging speed for the correlating block(s).",
+              "dataType": 0
+            }
+          ]
+        }
+      }
+    ],
+    "id": "minecraft:digger"
+  }
+}

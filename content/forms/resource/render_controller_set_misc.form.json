@@ -1,0 +1,22 @@
+{
+  "title": "Render Controller Set",
+  "fields": [
+    {
+      "id": "render_controllers",
+      "displayTitle": false,
+      "allowCreateDelete": false,
+      "dataType": 14,
+      "subForm": {
+        "fields": [
+          {
+            "id": "part_visibility",
+            "title": "Part Visibility",
+            "description": "Lists of available textures, materials, and geometries that can be selected",
+            "objectArrayTitleFieldKey": "name",
+            "dataType": 24
+          }
+        ]
+      }
+    }
+  ]
+}

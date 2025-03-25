@@ -1,0 +1,16 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "Sequence Node",
+    "title": "Sequence Node",
+    "fields": [],
+    "samples": {
+      "samples": [
+        {
+          "path": "Example:",
+          "content": "\t\t\"sequence\": [\r\n\t\t\t{\r\n\t\t\t\t// I will execute first! c:\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t// I will execute last! :c\r\n\t\t\t}\r\n\t\t]\r\n\t"
+        }
+      ]
+    }
+  }
+}

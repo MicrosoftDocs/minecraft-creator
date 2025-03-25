@@ -1,0 +1,26 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Feature Rule Conditions",
+    "description": "Feature Rule Conditions",
+    "fields": [
+      {
+        "id": "placement_pass",
+        "title": "placement_pass",
+        "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:biome_filter",
+        "title": "minecraft:biome_filter",
+        "description": "List of filter tests to determine which biomes this rule will attach to.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Biome Filter",
+          "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+          "fields": []
+        }
+      }
+    ]
+  }
+}

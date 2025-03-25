@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Scatter Chance",
+    "description": "Scatter probability represented by an expression or an object with a numerator and denominator.",
+    "fields": [
+      {
+        "id": "denominator",
+        "title": "denominator",
+        "description": "Denominator for scatter probability.",
+        "dataType": 0
+      },
+      {
+        "id": "numerator",
+        "title": "numerator",
+        "description": "Numerator for scatter probability.",
+        "dataType": 0
+      }
+    ]
+  }
+}

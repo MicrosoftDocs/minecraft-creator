@@ -42,7 +42,7 @@ ms.date: 02/11/2025
 | cubes | *not set* | Array of [Cubes](#cubes-item-type) items |  |  | 
 | cubes (Alternate 1) | *not set* | Array of strings |  |  | 
 | debug | *not set* | Boolean true/false |  |  | 
-| locators | *not set* | Named set of objects or Keyed set of strings |  |  | 
+| locators | *not set* | Named set of objects |  |  | 
 | locators (Alternate 1) | *not set* | Keyed set of strings |  |  | 
 | mirror | *not set* | Boolean true/false |  |  | 
 | name | *not set* | String |  |  | 

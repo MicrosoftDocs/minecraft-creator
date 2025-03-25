@@ -1,0 +1,26 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "DiggerItemComponent BlockInfo",
+    "description": "DiggerItemComponent BlockInfo",
+    "fields": [
+      {
+        "id": "block",
+        "title": "block",
+        "description": "Block to be dug.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Block",
+          "description": "Block",
+          "fields": []
+        }
+      },
+      {
+        "id": "speed",
+        "title": "speed",
+        "description": "Digging speed for the correlating block(s).",
+        "dataType": 0
+      }
+    ]
+  }
+}

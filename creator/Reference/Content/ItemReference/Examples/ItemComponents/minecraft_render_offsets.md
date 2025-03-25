@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Items Documentation - render_offsets"
-description: "Describes the render_offsets Items"
+title: "Items Documentation - minecraft:render_offsets"
+description: "Describes the minecraft:render_offsets item component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Items Documentation - render_offsets
+# Items Documentation - minecraft:render_offsets
 
 > [!IMPORTANT]
 > This type is now deprecated, and no longer in use in the latest versions of Minecraft.

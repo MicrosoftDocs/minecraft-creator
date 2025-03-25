@@ -1,0 +1,47 @@
+{
+  "fields": [
+    {
+      "id": "max_turn",
+      "title": "Max Turn",
+      "description": "The maximum number in degrees the mob can turn per tick.",
+      "defaultValue": 30,
+      "dataType": 3
+    },
+    {
+      "id": "start_speed",
+      "title": "Start Speed",
+      "description": "Initial speed of the mob when it starts gliding.",
+      "defaultValue": 0.1,
+      "dataType": 3
+    },
+    {
+      "id": "speed_when_turning",
+      "title": "Speed when turning",
+      "description": "Speed that the mob adjusts to when it has to turn quickly.",
+      "defaultValue": 0.2,
+      "dataType": 3
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:movement.fly",
+    "title": "Fly Movement",
+    "description": "This move control causes the mob to fly.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "defaultValue": 30,
+        "dataType": 3
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.fly/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.snacking",
+    "title": "Snacking Behavior",
+    "description": "Allows the mob to take a load off and snack on food that it found nearby.",
+    "fields": [
+      {
+        "id": "items",
+        "title": "Items",
+        "description": "Items that we are interested in snacking on",
+        "dataType": 17
+      },
+      {
+        "id": "snacking_cooldown",
+        "title": "Snacking Cooldown",
+        "description": "The cooldown time in seconds before the mob is able to snack again",
+        "defaultValue": 7.5,
+        "dataType": 3
+      },
+      {
+        "id": "snacking_cooldown_min",
+        "title": "Snacking Cooldown Min",
+        "description": "The minimum time in seconds before the mob is able to snack again",
+        "defaultValue": 0.5,
+        "dataType": 3
+      },
+      {
+        "id": "snacking_stop_chance",
+        "title": "Snacking Stop Chance",
+        "description": "This is the chance that the mob will stop snacking, from 0 to 1",
+        "defaultValue": 0.0017,
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0
+      }
+    ]
+  }
+}

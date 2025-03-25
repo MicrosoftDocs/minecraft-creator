@@ -23,6 +23,6 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| \w*:?\w+ | *not set* | Integer number or Boolean true/false or String |  |  | 
+| \w*:?\w+ | *not set* | Integer number |  |  | 
 | \w*:?\w+ (Alternate 1) | *not set* | Boolean true/false |  |  | 
 | \w*:?\w+ (Alternate 2) | *not set* | String |  |  | 

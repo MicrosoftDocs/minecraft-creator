@@ -1,0 +1,231 @@
+{
+  "fields": [
+    {
+      "id": "operator",
+      "title": "Operator",
+      "description": "(Optional) The comparison to apply with 'value'.",
+      "defaultValue": "equals",
+      "dataType": 2,
+      "mustMatchChoices": true,
+      "choices": [
+        {
+          "id": "!=",
+          "title": "!=",
+          "description": "Test for inequality."
+        },
+        {
+          "id": "<",
+          "title": "<",
+          "description": "Test for less-than the value."
+        },
+        {
+          "id": "<=",
+          "title": "<=",
+          "description": "Test for less-than or equal to the value."
+        },
+        {
+          "id": "<>",
+          "title": "<>",
+          "description": "Test for inequality."
+        },
+        {
+          "id": "=",
+          "title": "=",
+          "description": "Test for equality."
+        },
+        {
+          "id": "==",
+          "title": "==",
+          "description": "Test for equality."
+        },
+        {
+          "id": ">",
+          "title": ">",
+          "description": "Test for greater-than the value."
+        },
+        {
+          "id": ">=",
+          "title": ">=",
+          "description": "Test for greater-than or equal to the value."
+        },
+        {
+          "id": "equals",
+          "title": "Equals",
+          "description": "Test for equality."
+        },
+        {
+          "id": "not",
+          "title": "Not",
+          "description": "Test for inequality."
+        }
+      ]
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "any_slot_empty",
+    "title": "Any Slot Empty",
+    "description": "Returns true when the designated equipment location for the subject entity has any empty slot.",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ]
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Optional) The equipment location to test",
+        "defaultValue": "any",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "any",
+            "title": "Any"
+          },
+          {
+            "id": "armor",
+            "title": "Armor"
+          },
+          {
+            "id": "body",
+            "title": "Body"
+          },
+          {
+            "id": "feet",
+            "title": "Feet"
+          },
+          {
+            "id": "hand",
+            "title": "Hand"
+          },
+          {
+            "id": "head",
+            "title": "Head"
+          },
+          {
+            "id": "inventory",
+            "title": "Inventory"
+          },
+          {
+            "id": "leg",
+            "title": "Leg"
+          },
+          {
+            "id": "torso",
+            "title": "Torso"
+          }
+        ]
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"any_slot_empty\", \"subject\": \"self\", \"operator\": \"equals\", \"value\": \"any\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"any_slot_empty\" }"
+        }
+      ]
+    }
+  }
+}

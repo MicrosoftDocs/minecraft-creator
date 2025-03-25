@@ -1,16 +1,21 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.wither_random_attack_pos_goal"
-description: "Describes the behavior.wither_random_attack_pos_goal AI Goals"
+title: "Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal"
+description: "Describes the minecraft:behavior.wither_random_attack_pos_goal ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.wither_random_attack_pos_goal
+# Entity Documentation - minecraft:behavior.wither_random_attack_pos_goal
 
-Allows the wither to launch random attacks. Can only be used by the Wither Boss.
+Allows the wither to launch random attacks.
 
+> [!Note]
+> Can only be used on the following type of entity:
+> 
+> * Wither (minecraft:wither)
+> 
 
 ## Wither Random Attack Pos Goal Behavior Properties
 
@@ -24,7 +29,7 @@ Allows the wither to launch random attacks. Can only be used by the Wither Boss.
 
 
 ```json
-{
+"minecraft:behavior.wither_random_attack_pos_goal": {
   "priority": 3
 }
 ```

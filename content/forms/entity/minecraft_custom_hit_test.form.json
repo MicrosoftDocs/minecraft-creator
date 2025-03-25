@@ -1,0 +1,148 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:custom_hit_test",
+    "title": "Custom Hit Test",
+    "description": "List of hitboxes for melee and ranged hits against the entity.",
+    "fields": [
+      {
+        "id": "hitboxes",
+        "title": "Hitboxes",
+        "description": "Comma seperated list of hitboxes.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:custom_hit_test/",
+              "content": [
+                {
+                  "width": 1,
+                  "height": 0.85,
+                  "pivot": [
+                    0,
+                    0.5,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:custom_hit_test/",
+              "content": [
+                {
+                  "width": 2,
+                  "height": 1.75,
+                  "pivot": [
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/zoglin_baby/minecraft:custom_hit_test/",
+              "content": [
+                {
+                  "width": 1,
+                  "height": 0.85,
+                  "pivot": [
+                    0,
+                    0.5,
+                    0
+                  ]
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/zoglin_adult/minecraft:custom_hit_test/",
+              "content": [
+                {
+                  "width": 2,
+                  "height": 1.75,
+                  "pivot": [
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:custom_hit_test/",
+          "content": {
+            "hitboxes": [
+              {
+                "width": 1,
+                "height": 0.85,
+                "pivot": [
+                  0,
+                  0.5,
+                  0
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:custom_hit_test/",
+          "content": {
+            "hitboxes": [
+              {
+                "width": 2,
+                "height": 1.75,
+                "pivot": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/zoglin_baby/minecraft:custom_hit_test/",
+          "content": {
+            "hitboxes": [
+              {
+                "width": 1,
+                "height": 0.85,
+                "pivot": [
+                  0,
+                  0.5,
+                  0
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/zoglin_adult/minecraft:custom_hit_test/",
+          "content": {
+            "hitboxes": [
+              {
+                "width": 2,
+                "height": 1.75,
+                "pivot": [
+                  0,
+                  1,
+                  0
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

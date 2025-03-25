@@ -1,0 +1,44 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Curve Bezier Chain Misc",
+    "description": "Particle Curve Bezier Chain Misc",
+    "fields": [
+      {
+        "id": "type",
+        "title": "type",
+        "description": "type",
+        "dataType": 2,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^bezier_chain$"
+          }
+        ]
+      },
+      {
+        "id": "nodes",
+        "title": "nodes",
+        "description": "nodes",
+        "dataType": 16
+      },
+      {
+        "id": "input",
+        "title": "input",
+        "description": "input",
+        "dataType": 16,
+        "subForm": {
+          "title": "Input",
+          "description": "Input",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "input",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "minecraft:rect_layout",
+  "isInternal": true,
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:rect_layout",
+    "title": "Rect Layout",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "feature_areas",
+        "dataType": 15,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 17,
+              "id": "area_dimensions",
+              "title": "Area Dimensions",
+              "description": "Dimensions (size) of the associated Feature.",
+              "isRequired": true
+            },
+            {
+              "dataType": 0,
+              "id": "[0..0]",
+              "title": "",
+              "isRequired": true
+            },
+            {
+              "dataType": 0,
+              "id": "[1..1]",
+              "title": "",
+              "isRequired": true
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "dataType": 17,
+            "id": "feature_areas",
+            "title": "Feature Areas",
+            "isRequired": true
+          }
+        ]
+      }
+    ]
+  }
+}

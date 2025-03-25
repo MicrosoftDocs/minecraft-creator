@@ -1,0 +1,4591 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.nearest_attackable_target",
+    "title": "Nearest Attackable Target Behavior",
+    "description": "Allows an entity to attack the closest target within a given subset of specific target types.",
+    "fields": [
+      {
+        "id": "attack_interval|attack_interval_min",
+        "title": "Attack Interval|attack Interval Min",
+        "description": "Time range (in seconds) between searching for an attack target, range is in (0, \"attack_interval\"]. Only used if \"attack_interval\" is greater than 0, otherwise \"scan_interval\" is used.",
+        "defaultValue": 0,
+        "dataType": 0
+      },
+      {
+        "id": "attack_owner",
+        "title": "Attack Owner",
+        "description": "If true, this entity can attack its owner.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "entity_types",
+        "title": "Entity Types",
+        "description": "Filters which types of targets are valid for this entity.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "value": true
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": "minecraft:attack_cooldown"
+                      },
+                      {
+                        "any_of": [
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "squid"
+                          },
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "fish"
+                          },
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "tadpole"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "max_dist": 8
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "value": true
+                      },
+                      {
+                        "any_of": [
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "drowned"
+                          },
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "guardian"
+                          },
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "guardian_elder"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "max_dist": 8
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/take_nearest_target/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 10
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 48
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 24
+                },
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  "max_dist": 24
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "rabbit"
+                  },
+                  "max_dist": 8
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 8
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/creeper.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                          },
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "snowgolem"
+                          },
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "irongolem"
+                          },
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "axolotl"
+                          }
+                        ]
+                      },
+                      {
+                        "any_of": [
+                          {
+                            "test": "in_water",
+                            "subject": "other",
+                            "value": true
+                          },
+                          {
+                            "test": "is_daytime",
+                            "value": false
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "max_dist": 20
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "villager"
+                          },
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "wandering_trader"
+                          }
+                        ]
+                      },
+                      {
+                        "any_of": [
+                          {
+                            "test": "in_water",
+                            "subject": "other",
+                            "value": true
+                          },
+                          {
+                            "test": "is_daytime",
+                            "value": false
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "max_dist": 20,
+                  "must_see": false
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 20
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "squid"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "axolotl"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/enderman.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "endermite"
+                  },
+                  "max_dist": 64
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/endermite.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "enderman"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/evocation_illager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wandering_trader"
+                      }
+                    ]
+                  },
+                  "max_dist": 20
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "villager"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      }
+                    ]
+                  },
+                  "max_dist": 20
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "slime"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "other",
+                        "operator": "==",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "magmacube"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "other",
+                        "operator": "==",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ghast.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 28
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "goat"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": "minecraft:attack_cooldown"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": "minecraft:attack_cooldown"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      }
+                    ]
+                  },
+                  "max_dist": 35
+                },
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "villager"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wandering_trader"
+                      }
+                    ]
+                  },
+                  "max_dist": 35,
+                  "must_see": false
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 35
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/iron_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "monster"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "creeper"
+                      }
+                    ]
+                  },
+                  "within_default": 10
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "hoglin"
+                      },
+                      {
+                        "test": "is_difficulty",
+                        "operator": "!=",
+                        "value": "peaceful"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "zoglin"
+                      },
+                      {
+                        "test": "is_difficulty",
+                        "operator": "!=",
+                        "value": "peaceful"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wolf"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "minecraft:is_tamed"
+                      }
+                    ]
+                  },
+                  "max_dist": 10
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/magma_cube.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ocelot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "chicken"
+                  },
+                  "max_dist": 8
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 8
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/phantom.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 64
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+            {
+              "path": "/minecraft:entity/component_groups/take_target_as_response_to_block_break/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/alert_for_attack_targets/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wither"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "self",
+                        "value": "piglin_hunter"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "hoglin_huntable"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": "minecraft:attack_cooldown"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "head",
+                        "operator": "!=",
+                        "value": "golden_helmet"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "torso",
+                        "operator": "!=",
+                        "value": "golden_chestplate"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "leg",
+                        "operator": "!=",
+                        "value": "golden_leggings"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "feet",
+                        "operator": "!=",
+                        "value": "golden_boots"
+                      }
+                    ]
+                  },
+                  "max_dist": 16,
+                  "reevaluate_description": true
+                },
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "has_container_open",
+                        "subject": "other",
+                        "operator": "==",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pillager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wandering_trader"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "villager"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/polar_bear.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "fox"
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ravager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "subject": "other",
+                        "test": "is_family",
+                        "value": "player"
+                      },
+                      {
+                        "subject": "other",
+                        "test": "is_family",
+                        "value": "irongolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wandering_trader"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "villager"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/shulker.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/silverfish.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      }
+                    ]
+                  },
+                  "max_dist": 8
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/skeleton.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/snow_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "monster"
+                  },
+                  "within_default": 6
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wolf"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "minecraft:is_tamed"
+                      }
+                    ]
+                  },
+                  "max_dist": 10
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/vex.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wandering_trader"
+                      }
+                    ]
+                  },
+                  "max_dist": 70
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "villager"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      }
+                    ]
+                  },
+                  "max_dist": 70
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/vindicator.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:vindicator_johnny/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "illager"
+                  },
+                  "max_dist": 12
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wandering_trader"
+                      }
+                    ]
+                  },
+                  "max_dist": 12
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "villager"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      }
+                    ]
+                  },
+                  "max_dist": 12
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "piglin"
+                      },
+                      {
+                        "test": "is_difficulty",
+                        "operator": "!=",
+                        "value": "peaceful"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wither.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 70
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "undead"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "inanimate"
+                      }
+                    ]
+                  },
+                  "max_dist": 70
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wolf.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "skeleton"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "sheep"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "rabbit"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "fox"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "skeleton"
+                      },
+                      {
+                        "test": "is_underwater",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wolf_tame/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "skeleton"
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "zoglin"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "creeper"
+                      }
+                    ]
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "villager"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wandering_trader"
+                      }
+                    ]
+                  },
+                  "max_dist": 35
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 35
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "snowgolem"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "irongolem"
+                      }
+                    ]
+                  },
+                  "max_dist": 35
+                },
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "villager"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "wandering_trader"
+                      }
+                    ]
+                  },
+                  "max_dist": 35,
+                  "must_see": false
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 35
+                }
+              ]
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "fox"
+                  },
+                  "max_dist": 16
+                }
+              ]
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 32
+                }
+              ]
+            }
+          ],
+          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  "max_dist": 32
+                }
+              ]
+            }
+          ],
+          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_wild/minecraft:behavior.nearest_attackable_target/",
+              "content": [
+                {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "rabbit"
+                  },
+                  "max_dist": 8
+                },
+                {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "baby_turtle"
+                      },
+                      {
+                        "test": "in_water",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "max_dist": 8
+                }
+              ]
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.nearest_attackable_target/",
+              "content": {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "monster"
+                },
+                "max_dist": 16
+              }
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.nearest_attackable_target/",
+              "content": {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "monster"
+                },
+                "max_dist": 16
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "must_reach",
+        "title": "Must Reach",
+        "description": "If true, this entity requires a path to the target.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/iron_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "must_see",
+        "title": "Must See",
+        "description": "Determines if target-validity requires this entity to be in range only, or both in range and in sight.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "must_see_forget_duration",
+        "title": "Must See Forget Duration",
+        "description": "Time (in seconds) the target must not be seen by this entity to become invalid. Used only if \"must_see\" is true.",
+        "defaultValue": 3,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 17
+            }
+          ],
+          "/vanilla/behavior_pack/entities/creeper.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 17
+            }
+          ],
+          "/vanilla/behavior_pack/entities/phantom.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 0.5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/vindicator.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:vindicator_johnny/minecraft:behavior.nearest_attackable_target/",
+              "content": 40
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/",
+              "content": 40
+            }
+          ]
+        }
+      },
+      {
+        "id": "persist_time",
+        "title": "Persist Time",
+        "description": "Time (in seconds) this entity can continue attacking the target after the target is no longer valid.",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "reselect_targets",
+        "title": "Reselect Targets",
+        "description": "Allows the attacking entity to update the nearest target, otherwise a target is only reselected after each \"scan_interval\" or \"attack_interval\".",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bogged.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "scan_interval",
+        "title": "Scan Interval",
+        "description": "If \"attack_interval\" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to \"scan_interval\", minimum value is 1. Values under 10 can affect performance.",
+        "defaultValue": 10,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/phantom.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "set_persistent",
+        "title": "Set Persistent",
+        "description": "Allows the actor to be set to persist upon targeting a player",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "target_invisible_multiplier",
+        "title": "Target Invisible Multiplier",
+        "description": "Multiplied with the target's armor coverage percentage to modify \"max_dist\" when detecting an invisible target.",
+        "defaultValue": 0.7,
+        "dataType": 3
+      },
+      {
+        "id": "target_search_height",
+        "title": "Target Search Height",
+        "description": "Maximum vertical target-search distance, if it's greater than the target type's \"max_dist\". A negative value defaults to \"entity_types\" greatest \"max_dist\".",
+        "defaultValue": -1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/phantom.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 80
+            }
+          ]
+        }
+      },
+      {
+        "id": "target_sneak_visibility_multiplier",
+        "title": "Target Sneak Visibility Multiplier",
+        "description": "Multiplied with the target type's \"max_dist\" when trying to detect a sneaking target.",
+        "defaultValue": 0.8,
+        "dataType": 3
+      },
+      {
+        "id": "within_radius",
+        "title": "Within Radius",
+        "description": "Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare \"minecraft:follow_range\".",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 20
+            }
+          ],
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 24
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.nearest_attackable_target/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/drowned.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 12
+            }
+          ],
+          "/vanilla/behavior_pack/entities/endermite.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/husk.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 25
+            }
+          ],
+          "/vanilla/behavior_pack/entities/phantom.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 64
+            }
+          ],
+          "/vanilla/behavior_pack/entities/vindicator.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:vindicator_johnny/minecraft:behavior.nearest_attackable_target/",
+              "content": 12
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 25
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/take_nearest_target/minecraft:behavior.nearest_attackable_target/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/blaze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/breeze.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.nearest_attackable_target/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/enderman.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/endermite.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/iron_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/alert_for_attack_targets/minecraft:behavior.nearest_attackable_target/",
+              "content": 7
+            },
+            {
+              "path": "/minecraft:entity/component_groups/take_target_as_response_to_block_break/minecraft:behavior.nearest_attackable_target/",
+              "content": 7
+            }
+          ],
+          "/vanilla/behavior_pack/entities/polar_bear.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby_wild/minecraft:behavior.nearest_attackable_target/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_interval",
+        "title": "Attack Interval",
+        "dataType": 7,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
+              "content": 5
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/enderman.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 16
+            }
+          ],
+          "/vanilla/behavior_pack/entities/spider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 16
+            }
+          ]
+        }
+      },
+      {
+        "id": "attack_interval_min",
+        "title": "Attack Interval Min",
+        "dataType": 7,
+        "samples": {
+          "/vanilla/behavior_pack/entities/elder_guardian.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "must_see": true,
+            "reselect_targets": true,
+            "within_radius": 20,
+            "must_see_forget_duration": 17,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "value": true
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "operator": "!=",
+                      "value": "minecraft:attack_cooldown"
+                    },
+                    {
+                      "any_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "squid"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "fish"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "tadpole"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "max_dist": 8
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "value": true
+                    },
+                    {
+                      "any_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "drowned"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "guardian"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "guardian_elder"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "max_dist": 8
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/component_groups/take_nearest_target/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 10
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 48
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "reselect_targets": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "within_radius": 24,
+            "scan_interval": 10,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 24
+              },
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                },
+                "max_dist": 24
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "reselect_targets": true,
+            "within_radius": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "rabbit"
+                },
+                "max_dist": 8
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 8
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "attack_interval": 5,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_angry/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "attack_interval": 10,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "must_see": true,
+            "must_see_forget_duration": 3,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "reselect_targets": true,
+            "must_see": true,
+            "within_radius": 12,
+            "must_see_forget_duration": 17,
+            "persist_time": 0.5,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "any_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "snowgolem"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "irongolem"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "axolotl"
+                        }
+                      ]
+                    },
+                    {
+                      "any_of": [
+                        {
+                          "test": "in_water",
+                          "subject": "other",
+                          "value": true
+                        },
+                        {
+                          "test": "is_daytime",
+                          "value": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "max_dist": 20
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "any_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "villager"
+                        },
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "wandering_trader"
+                        }
+                      ]
+                    },
+                    {
+                      "any_of": [
+                        {
+                          "test": "in_water",
+                          "subject": "other",
+                          "value": true
+                        },
+                        {
+                          "test": "is_daytime",
+                          "value": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "max_dist": 20,
+                "must_see": false
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 20
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "squid"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "axolotl"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ],
+            "attack_interval_min": 1,
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/enderman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 5,
+            "must_see": true,
+            "attack_interval": 10,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "endermite"
+                },
+                "max_dist": 64
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/endermite.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 5,
+            "must_see": true,
+            "within_radius": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "enderman"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/evocation_illager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wandering_trader"
+                    }
+                  ]
+                },
+                "max_dist": 20
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "villager"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "minecraft:is_baby"
+                    }
+                  ]
+                },
+                "max_dist": 20
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 8,
+            "within_radius": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "slime"
+                    },
+                    {
+                      "test": "is_variant",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": 1
+                    }
+                  ]
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "magmacube"
+                    },
+                    {
+                      "test": "is_variant",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": 1
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 28
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 6,
+            "within_radius": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "goat"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "operator": "!=",
+                      "value": "minecraft:attack_cooldown"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 4,
+            "within_radius": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "operator": "!=",
+                      "value": "minecraft:attack_cooldown"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "reselect_targets": true,
+            "within_radius": 25,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                },
+                "max_dist": 35
+              },
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "villager"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wandering_trader"
+                    }
+                  ]
+                },
+                "max_dist": 35,
+                "must_see": false
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 35
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/iron_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "must_reach": true,
+            "must_see": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "monster"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "creeper"
+                    }
+                  ]
+                },
+                "within_default": 10
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "hoglin"
+                    },
+                    {
+                      "test": "is_difficulty",
+                      "operator": "!=",
+                      "value": "peaceful"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "zoglin"
+                    },
+                    {
+                      "test": "is_difficulty",
+                      "operator": "!=",
+                      "value": "peaceful"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "attack_interval": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wolf"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "minecraft:is_tamed"
+                    }
+                  ]
+                },
+                "max_dist": 10
+              }
+            ],
+            "must_see": false,
+            "must_reach": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "reselect_targets": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "chicken"
+                },
+                "max_dist": 8
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 8
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/phantom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "reselect_targets": true,
+            "scan_interval": 20,
+            "within_radius": 64,
+            "must_see_forget_duration": 0.5,
+            "target_search_height": 80,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 64
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/component_groups/take_target_as_response_to_block_break/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/alert_for_attack_targets/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 7,
+            "within_radius": 16,
+            "persist_time": 0,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wither"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "self",
+                      "value": "piglin_hunter"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "hoglin_huntable"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "minecraft:is_baby"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "operator": "!=",
+                      "value": "minecraft:attack_cooldown"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "head",
+                      "operator": "!=",
+                      "value": "golden_helmet"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "torso",
+                      "operator": "!=",
+                      "value": "golden_chestplate"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "leg",
+                      "operator": "!=",
+                      "value": "golden_leggings"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "feet",
+                      "operator": "!=",
+                      "value": "golden_boots"
+                    }
+                  ]
+                },
+                "max_dist": 16,
+                "reevaluate_description": true
+              },
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "has_container_open",
+                      "subject": "other",
+                      "operator": "==",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/take_target_as_response_to_block_break/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 7,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "reselect_targets": true,
+            "within_radius": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wandering_trader"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "villager"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "minecraft:is_baby"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby_wild/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 4,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 4,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "fox"
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ravager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hostile/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "must_see": true,
+            "within_radius": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "subject": "other",
+                      "test": "is_family",
+                      "value": "player"
+                    },
+                    {
+                      "subject": "other",
+                      "test": "is_family",
+                      "value": "irongolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wandering_trader"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "villager"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "minecraft:is_baby"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/shulker.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 16
+            },
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/silverfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "attack_interval": 10,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                },
+                "max_dist": 8
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "reselect_targets": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/slime.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "monster"
+                },
+                "within_default": 6
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_hostile/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "attack_interval": 5,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "reselect_targets": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "attack_interval": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wolf"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "minecraft:is_tamed"
+                    }
+                  ]
+                },
+                "max_dist": 10
+              }
+            ],
+            "must_see": false,
+            "must_reach": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vex.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wandering_trader"
+                    }
+                  ]
+                },
+                "max_dist": 70
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "villager"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "minecraft:is_baby"
+                    }
+                  ]
+                },
+                "max_dist": 70
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vindicator.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:vindicator_johnny/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "within_radius": 12,
+            "must_see_forget_duration": 40,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "illager"
+                },
+                "max_dist": 12
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "within_radius": 12,
+            "must_see_forget_duration": 40,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wandering_trader"
+                    }
+                  ]
+                },
+                "max_dist": 12
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "villager"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "minecraft:is_baby"
+                    }
+                  ]
+                },
+                "max_dist": 12
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "reselect_targets": true,
+            "must_see": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "piglin"
+                    },
+                    {
+                      "test": "is_difficulty",
+                      "operator": "!=",
+                      "value": "peaceful"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 70
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "undead"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "inanimate"
+                    }
+                  ]
+                },
+                "max_dist": 70
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 4,
+            "reselect_targets": true,
+            "must_see": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "skeleton"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "sheep"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "rabbit"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "fox"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 16
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "skeleton"
+                    },
+                    {
+                      "test": "is_underwater",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_tame/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 5,
+            "must_see": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "skeleton"
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "within_radius": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "zoglin"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "creeper"
+                    }
+                  ]
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "reselect_targets": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "villager"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wandering_trader"
+                    }
+                  ]
+                },
+                "max_dist": 35
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 35
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "reselect_targets": true,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                },
+                "max_dist": 35
+              },
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "villager"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wandering_trader"
+                    }
+                  ]
+                },
+                "max_dist": 35,
+                "must_see": false
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 35
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "reselect_targets": true,
+            "within_radius": 25,
+            "must_see_forget_duration": 17,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                },
+                "max_dist": 35
+              },
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "villager"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wandering_trader"
+                    }
+                  ]
+                },
+                "max_dist": 35,
+                "must_see": false
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 35
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby_wild/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 4,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 4,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "fox"
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": false
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "attack_interval": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wolf"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "minecraft:is_tamed"
+                    }
+                  ]
+                },
+                "max_dist": 10
+              }
+            ],
+            "must_see": false,
+            "must_reach": true
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "must_see": true,
+            "reselect_targets": true,
+            "within_radius": 25,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 32
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby_wild/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 4,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_wild/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 4,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "fox"
+                },
+                "max_dist": 16
+              }
+            ],
+            "must_see": false
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "attack_interval": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wolf"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": "minecraft:is_tamed"
+                    }
+                  ]
+                },
+                "max_dist": 10
+              }
+            ],
+            "must_see": false,
+            "must_reach": true
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_sheared/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "must_see": true,
+            "reselect_targets": true,
+            "within_radius": 25,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 32
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/behavior_pack_sample/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "reselect_targets": true,
+            "within_radius": 25,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 32
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_wild/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "reselect_targets": true,
+            "within_radius": 16,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "rabbit"
+                },
+                "max_dist": 8
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 8
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 4,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "max_dist": 16
+            },
+            "must_see": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "max_dist": 16
+            },
+            "must_see": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "max_dist": 16
+            },
+            "must_see": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "max_dist": 16
+            },
+            "must_see": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 2,
+            "must_see": true,
+            "reselect_targets": true,
+            "within_radius": 25,
+            "must_see_forget_duration": 17,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "snowgolem"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "irongolem"
+                    }
+                  ]
+                },
+                "max_dist": 35
+              },
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "villager"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "wandering_trader"
+                    }
+                  ]
+                },
+                "max_dist": 35,
+                "must_see": false
+              },
+              {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "baby_turtle"
+                    },
+                    {
+                      "test": "in_water",
+                      "subject": "other",
+                      "operator": "!=",
+                      "value": true
+                    }
+                  ]
+                },
+                "max_dist": 35
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "max_dist": 16
+            },
+            "must_see": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 3,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "max_dist": 16
+            },
+            "must_see": true
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "fields": [],
+  "tags": [
+    "visual"
+  ],
+  "isDeprecated": true,
+  "generated_doNotEdit": {
+    "id": "minecraft:unit_cube",
+    "title": "Unit Cube",
+    "description": "Specifies that a unit cube is to be used with tessellation.",
+    "fields": []
+  }
+}

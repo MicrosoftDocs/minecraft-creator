@@ -16,4 +16,4 @@ It allows an item to absorb damage that would otherwise be dealt to its wearer. 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| absorbable_causes | *not set* | Array of objects | List of damage causes that can be absorbed by the item. By default, no damage cause is absorbed. |  | 
+| absorbable_causes | *not set* | Array of strings | List of damage causes that can be absorbed by the item. By default, no damage cause is absorbed. Value must have at least 1 items. |  | 

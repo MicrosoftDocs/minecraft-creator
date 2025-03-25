@@ -1,0 +1,25 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:movement.skip",
+    "title": "Skip Movement",
+    "description": "This move control causes the mob to hop as it moves.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "defaultValue": 30,
+        "dataType": 3
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.skip/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

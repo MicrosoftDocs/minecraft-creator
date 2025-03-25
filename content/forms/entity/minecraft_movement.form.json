@@ -1,0 +1,13 @@
+{
+  "id": "minecraft:movement",
+  "title": "Movement",
+  "description": "This component represents the foundational movement of an entity.",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "The standard movement speed value.",
+      "dataType": 3
+    }
+  ]
+}

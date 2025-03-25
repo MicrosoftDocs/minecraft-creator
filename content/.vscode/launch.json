@@ -1,0 +1,58 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:3000?debug=true",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost, appsim",
+      "url": "http://localhost:3000?debug=true&appsim=true",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "cli (docsupdatesource)",
+      "cwd": "${workspaceRoot}/",
+      "args": ["docsupdatesource", "--base-path", "../../public/", "--output-folder", "./debugoutput/docs/"],
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/src/cli/index.ts",
+      "sourceMaps":true,
+      "runtimeExecutable": null,
+      "localRoot": "${workspaceRoot}/src",
+      "runtimeArgs": ["--nolazy"],
+      "outFiles": ["${workspaceFolder}/toolbuild/jsn/**/*.js"]
+    },  
+    {
+      "name": "cli (docsgenerateformjson)",
+      "cwd": "${workspaceRoot}/",
+      "args": ["docsgenerateformjson","--base-path", "../../public/", "-i", "./debugoutput/docs/", "-o", "./debugoutput/docs2/"],
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/src/cli/index.ts",
+      "sourceMaps":true,
+      "runtimeExecutable": null,
+      "localRoot": "${workspaceRoot}/src",
+      "runtimeArgs": ["--nolazy"],
+      "outFiles": ["${workspaceFolder}/toolbuild/jsn/**/*.js"]
+    },  
+    {
+      "name": "cli (docsgeneratemarkdown)",
+      "cwd": "${workspaceRoot}/",
+      "args": ["docsgeneratemarkdown", "-i", "./debugoutput/docs2/forms/", "-o", "./debugoutput/docs3/"],
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/src/cli/index.ts",
+      "sourceMaps":true,
+      "runtimeExecutable": null,
+      "localRoot": "${workspaceRoot}/src",
+      "runtimeArgs": ["--nolazy"],
+      "outFiles": ["${workspaceFolder}/toolbuild/jsn/**/*.js"]
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "id": "fogs",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "fogs",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:fog_settings",
+        "title": "Fog Settings",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 16,
+              "id": "description",
+              "title": "Description",
+              "isRequired": true,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 2,
+                    "id": "identifier",
+                    "title": "Identifier",
+                    "description": "The identifier for these fog settings. The identifier must include a namespace.",
+                    "isRequired": true
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 16,
+              "id": "distance",
+              "title": "Distance",
+              "description": "The distance fog settings for different camera locations.",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 16,
+                    "id": "air",
+                    "title": "Air",
+                    "description": "The fog settings when the camera is in the air.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "render_distance_type\"<\"fixed\", \"render\"",
+                          "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                          "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "transition_fog",
+                          "title": "Transition Fog",
+                          "description": "Additional fog data which will slowly transition to the distance fog of current biome.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 16,
+                                "id": "init_fog",
+                                "title": "Init Fog",
+                                "description": "Initial fog that will slowly transition into water distance fog of the biome when player goes into water.",
+                                "isRequired": true,
+                                "subForm": {
+                                  "fields": [
+                                    {
+                                      "dataType": 2,
+                                      "id": "render_distance_type\"<\"fixed\", \"render\"",
+                                      "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                                      "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                                      "isRequired": true
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "weather",
+                    "title": "Weather",
+                    "description": "The fog settings for when the camera is in the air with active weather (rain, snow, etc..).",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "render_distance_type\"<\"fixed\", \"render\"",
+                          "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                          "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "transition_fog",
+                          "title": "Transition Fog",
+                          "description": "Additional fog data which will slowly transition to the distance fog of current biome.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 16,
+                                "id": "init_fog",
+                                "title": "Init Fog",
+                                "description": "Initial fog that will slowly transition into water distance fog of the biome when player goes into water.",
+                                "isRequired": true,
+                                "subForm": {
+                                  "fields": [
+                                    {
+                                      "dataType": 2,
+                                      "id": "render_distance_type\"<\"fixed\", \"render\"",
+                                      "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                                      "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                                      "isRequired": true
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "water",
+                    "title": "Water",
+                    "description": "The fog settings when the camera is in water.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "render_distance_type\"<\"fixed\", \"render\"",
+                          "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                          "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "transition_fog",
+                          "title": "Transition Fog",
+                          "description": "Additional fog data which will slowly transition to the distance fog of current biome.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 16,
+                                "id": "init_fog",
+                                "title": "Init Fog",
+                                "description": "Initial fog that will slowly transition into water distance fog of the biome when player goes into water.",
+                                "isRequired": true,
+                                "subForm": {
+                                  "fields": [
+                                    {
+                                      "dataType": 2,
+                                      "id": "render_distance_type\"<\"fixed\", \"render\"",
+                                      "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                                      "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                                      "isRequired": true
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "lava",
+                    "title": "Lava",
+                    "description": "The fog settings when the camera is in lava.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "render_distance_type\"<\"fixed\", \"render\"",
+                          "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                          "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "transition_fog",
+                          "title": "Transition Fog",
+                          "description": "Additional fog data which will slowly transition to the distance fog of current biome.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 16,
+                                "id": "init_fog",
+                                "title": "Init Fog",
+                                "description": "Initial fog that will slowly transition into water distance fog of the biome when player goes into water.",
+                                "isRequired": true,
+                                "subForm": {
+                                  "fields": [
+                                    {
+                                      "dataType": 2,
+                                      "id": "render_distance_type\"<\"fixed\", \"render\"",
+                                      "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                                      "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                                      "isRequired": true
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "lava_resistance",
+                    "title": "Lava Resistance",
+                    "description": "The fog settings when the camera is in lava and the player has the lava resistance effect active.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "render_distance_type\"<\"fixed\", \"render\"",
+                          "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                          "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "transition_fog",
+                          "title": "Transition Fog",
+                          "description": "Additional fog data which will slowly transition to the distance fog of current biome.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 16,
+                                "id": "init_fog",
+                                "title": "Init Fog",
+                                "description": "Initial fog that will slowly transition into water distance fog of the biome when player goes into water.",
+                                "isRequired": true,
+                                "subForm": {
+                                  "fields": [
+                                    {
+                                      "dataType": 2,
+                                      "id": "render_distance_type\"<\"fixed\", \"render\"",
+                                      "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                                      "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                                      "isRequired": true
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "powder_snow",
+                    "title": "Powder Snow",
+                    "description": "The fog settings when the camera is inside a Powder Snow block.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 2,
+                          "id": "render_distance_type\"<\"fixed\", \"render\"",
+                          "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                          "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                          "isRequired": true
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "transition_fog",
+                          "title": "Transition Fog",
+                          "description": "Additional fog data which will slowly transition to the distance fog of current biome.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 16,
+                                "id": "init_fog",
+                                "title": "Init Fog",
+                                "description": "Initial fog that will slowly transition into water distance fog of the biome when player goes into water.",
+                                "isRequired": true,
+                                "subForm": {
+                                  "fields": [
+                                    {
+                                      "dataType": 2,
+                                      "id": "render_distance_type\"<\"fixed\", \"render\"",
+                                      "title": "Render Distance Type\"<\"fixed\", \"render\"",
+                                      "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                                      "isRequired": true
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "dataType": 16,
+              "id": "volumetric",
+              "title": "Volumetric",
+              "description": "The volumetric fog settings.",
+              "isRequired": false,
+              "subForm": {
+                "fields": [
+                  {
+                    "dataType": 16,
+                    "id": "density",
+                    "title": "Density",
+                    "description": "The density settings for different camera locations.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 16,
+                          "id": "air",
+                          "title": "Air",
+                          "description": "Fog density values as light passes through air blocks.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 1,
+                                "id": "uniform",
+                                "title": "Uniform",
+                                "description": "When set to true, the density will be uniform across all heights.",
+                                "isRequired": false
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "weather",
+                          "title": "Weather",
+                          "description": "Fog density values as light passes through air blocks with active weather (rain, snow, etc..).",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 1,
+                                "id": "uniform",
+                                "title": "Uniform",
+                                "description": "When set to true, the density will be uniform across all heights.",
+                                "isRequired": false
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "water",
+                          "title": "Water",
+                          "description": "Fog density values as light passes through water blocks.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 1,
+                                "id": "uniform",
+                                "title": "Uniform",
+                                "description": "When set to true, the density will be uniform across all heights.",
+                                "isRequired": false
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "lava",
+                          "title": "Lava",
+                          "description": "Fog density values as light passes through lava blocks.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 1,
+                                "id": "uniform",
+                                "title": "Uniform",
+                                "description": "When set to true, the density will be uniform across all heights.",
+                                "isRequired": false
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "lava_resistance",
+                          "title": "Lava Resistance",
+                          "description": "Fog density values as light passes through lava blocks while the player has lava resistance.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": [
+                              {
+                                "dataType": 1,
+                                "id": "uniform",
+                                "title": "Uniform",
+                                "description": "When set to true, the density will be uniform across all heights.",
+                                "isRequired": false
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "media_coefficients",
+                    "title": "Media Coefficients",
+                    "description": "The coefficient settings for the volumetric fog in different blocks.",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 16,
+                          "id": "air",
+                          "title": "Air",
+                          "description": "Fog coefficient values while light passes through air.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": []
+                          }
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "water",
+                          "title": "Water",
+                          "description": "Fog coefficient values while light passes through water.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": []
+                          }
+                        },
+                        {
+                          "dataType": 16,
+                          "id": "cloud",
+                          "title": "Cloud",
+                          "description": "Fog coefficient values while light passes through clouds.",
+                          "isRequired": false,
+                          "subForm": {
+                            "fields": []
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

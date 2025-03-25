@@ -16,7 +16,7 @@ Will queue a slash command or a series of slash commands set in an array to trig
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| command | *not set* | String or Array of strings |  |  | 
+| command | *not set* | String |  |  | 
 | command (Alternate 1) | *not set* | Array of strings |  |  | 
 | target | *not set* | [Target](#target-choices) choices |  |  | 
 

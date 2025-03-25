@@ -1,0 +1,88 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Particle Appearance Tinting Misc",
+    "description": "Particle Appearance Tinting Misc",
+    "fields": [
+      {
+        "id": "color",
+        "title": "color",
+        "description": "color",
+        "dataType": 16,
+        "subForm": {
+          "title": "Color",
+          "description": "Color",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "color",
+            "dataType": 16,
+            "subForm": {
+              "title": "Color",
+              "description": "Color",
+              "fields": [
+                {
+                  "id": "gradient",
+                  "title": "gradient",
+                  "description": "gradient",
+                  "dataType": 15,
+                  "subForm": {
+                    "title": "Gradient",
+                    "description": "Gradient",
+                    "fields": []
+                  },
+                  "alternates": [
+                    {
+                      "id": "gradient",
+                      "dataType": 15,
+                      "subForm": {
+                        "title": "Gradient",
+                        "description": "Gradient",
+                        "fields": []
+                      },
+                      "alternates": [
+                        {
+                          "id": "gradient",
+                          "dataType": 2
+                        },
+                        {
+                          "id": "gradient",
+                          "dataType": 15,
+                          "minLength": 3,
+                          "maxLength": 3,
+                          "subForm": {
+                            "title": "Gradient",
+                            "description": "Gradient",
+                            "fields": []
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "interpolant",
+                  "title": "interpolant",
+                  "description": "interpolant",
+                  "dataType": 16,
+                  "subForm": {
+                    "title": "Interpolant",
+                    "description": "Interpolant",
+                    "fields": []
+                  },
+                  "alternates": [
+                    {
+                      "id": "interpolant",
+                      "dataType": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

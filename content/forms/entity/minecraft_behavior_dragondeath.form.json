@@ -1,0 +1,34 @@
+{
+  "fields": [],
+  "restrictions": [
+    {
+      "id": "minecraft:ender_dragon",
+      "type": "entity_type"
+    }
+  ],
+  "description": "Allows the dragon to go out with glory. This controls the Ender Dragon's death animation.",
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.dragondeath",
+    "title": "Dragondeath Behavior",
+    "description": "Allows the dragon to go out with glory. This controls the Ender Dragon's death animation and can't be used by other mobs.",
+    "fields": [
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/ender_dragon.json": [
+        {
+          "path": "/minecraft:entity/component_groups/dragon_death/minecraft:behavior.dragondeath/",
+          "content": {
+            "priority": 0
+          }
+        }
+      ]
+    }
+  }
+}

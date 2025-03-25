@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Allows an entity to establish a way to get into the love state used for breeding.
 
+> [!Note]
+> This component is commonly used in conjunction with the 'minecraft:behavior.breed' component.
+
 
 ## Breedable Properties
 

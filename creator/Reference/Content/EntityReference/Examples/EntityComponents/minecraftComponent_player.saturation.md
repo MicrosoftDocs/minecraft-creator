@@ -1,42 +1,32 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:player.saturation
-description: "A reference document detailing the 'player.saturation' entity component"
+title: "Entity Documentation - minecraft:player.saturation"
+description: "Describes the minecraft:player.saturation entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:player.saturation
 
-`minecraft:player.saturation` defines the player's need for food.
+Defines the player's need for food.
 
-## Parameters
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-|max| *not set*| Integer| The maximum player saturation value. |
-|value| *not set*| Integer|  The initial value of player saturation. |
+## Player Saturation Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max | *not set* | Integer number | The maximum player saturation value. | Player: `20` | 
+| value | *not set* | Integer number | The initial value of player saturation. | Player: `5` | 
 
-```json
-"minecraft:player.saturation": {
-        "value": 5,
-         "max": 20
-      }
-```
+## Samples
 
-## Vanilla entities examples
+#### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
 
-### player
 
 ```json
 "minecraft:player.saturation": {
-        "value": 5,
-         "max": 20
-      }
+  "value": 5,
+  "max": 20
+}
 ```
-
-## Vanilla entities using `minecraft:exhaustion_values`
-
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)

@@ -1,0 +1,347 @@
+{
+  "description": "Mark Variant is typically used as an additional per-type way (besides `variant`) to express a different visual form of the same mob.",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "The Id of the mark_variant. By convention, 0 is the Id of the base entity.",
+      "defaultValue": 0,
+      "dataType": 0,
+      "hideSamples": true
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:mark_variant",
+    "title": "Mark Variant",
+    "description": "Additional variant value. Can be used to further differentiate variants.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The ID of the variant. By convention, 0 is the ID of the base entity.",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/countdown_to_perish/minecraft:mark_variant/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:markings_white_details/minecraft:mark_variant/",
+              "content": 1
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:markings_white_fields/minecraft:mark_variant/",
+              "content": 2
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:markings_white_dots/minecraft:mark_variant/",
+              "content": 3
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:markings_black_dots/minecraft:mark_variant/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/tropicalfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_3/minecraft:mark_variant/",
+              "content": 2
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_4/minecraft:mark_variant/",
+              "content": 3
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_5/minecraft:mark_variant/",
+              "content": 4
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_6/minecraft:mark_variant/",
+              "content": 5
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cc_betta/minecraft:mark_variant/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/taiga_villager/minecraft:mark_variant/",
+              "content": 6
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/component_groups/countdown_to_perish/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:markings_none/minecraft:mark_variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:markings_white_details/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:markings_white_fields/minecraft:mark_variant/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:markings_white_dots/minecraft:mark_variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:markings_black_dots/minecraft:mark_variant/",
+          "content": {
+            "value": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:mark_variant/",
+          "content": {
+            "value": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tropicalfish.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_1/minecraft:mark_variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_2/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_3/minecraft:mark_variant/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_4/minecraft:mark_variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_5/minecraft:mark_variant/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tropicalfish_variant_pattern_6/minecraft:mark_variant/",
+          "content": {
+            "value": 5
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:anenonme/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:black_tang/minecraft:mark_variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:blue_dory/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:butterfly_fish/minecraft:mark_variant/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cichlid/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:clownfish/minecraft:mark_variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cc_betta/minecraft:mark_variant/",
+          "content": {
+            "value": 5
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:dog_fish/minecraft:mark_variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:e_red_snapper/minecraft:mark_variant/",
+          "content": {
+            "value": 5
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:goat_fish/minecraft:mark_variant/",
+          "content": {
+            "value": 5
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:moorish_idol/minecraft:mark_variant/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ornate_butterfly/minecraft:mark_variant/",
+          "content": {
+            "value": 5
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_fish/minecraft:mark_variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:queen_angel_fish/minecraft:mark_variant/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:red_cichlid/minecraft:mark_variant/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:red_lipped_benny/minecraft:mark_variant/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:red_snapper/minecraft:mark_variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:threadfin/minecraft:mark_variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:tomato_clown/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:triggerfish/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:yellow_tang/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:yellowtail_parrot/minecraft:mark_variant/",
+          "content": {
+            "value": 3
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/component_groups/desert_villager/minecraft:mark_variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/jungle_villager/minecraft:mark_variant/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/savanna_villager/minecraft:mark_variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/snow_villager/minecraft:mark_variant/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/swamp_villager/minecraft:mark_variant/",
+          "content": {
+            "value": 5
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/taiga_villager/minecraft:mark_variant/",
+          "content": {
+            "value": 6
+          }
+        }
+      ]
+    }
+  }
+}

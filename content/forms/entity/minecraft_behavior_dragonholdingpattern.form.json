@@ -1,0 +1,42 @@
+{
+  "fields": [],
+  "restrictions": [
+    {
+      "id": "minecraft:ender_dragon",
+      "type": "entity_type"
+    }
+  ],
+  "description": "Allows the Dragon to fly around in a circle around the center podium.",
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.dragonholdingpattern",
+    "title": "Dragonholdingpattern Behavior",
+    "description": "Allows the Dragon to fly around in a circle around the center podium. Can only be used by the Ender Dragon.",
+    "fields": [
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/ender_dragon.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dragon_flying/minecraft:behavior.dragonholdingpattern/",
+              "content": 3
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/ender_dragon.json": [
+        {
+          "path": "/minecraft:entity/component_groups/dragon_flying/minecraft:behavior.dragonholdingpattern/",
+          "content": {
+            "priority": 3
+          }
+        }
+      ]
+    }
+  }
+}

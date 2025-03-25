@@ -1,0 +1,122 @@
+{
+  "fields": [],
+  "scalarFieldUpgradeName": "value",
+  "generated_doNotEdit": {
+    "title": "Stacked By Data",
+    "description": "The stacked_by_data component determines whether the same items with different aux values can stack. Also defines whether the item entities can merge while floating in the world.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "value",
+        "description": "Determines whether the same item with different aux values can stack. Also defines whether the item entities can merge while floating in the world.",
+        "dataType": 1
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/appleEnchanted.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/clownfish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_fish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_salmon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/fish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/pufferfish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/salmon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Stacked By Data",
+    "description": "The stacked_by_data component determines whether the same items with different aux values can stack. Also defines whether the item entities can merge while floating in the world.",
+    "fields": [],
+    "id": "minecraft:stacked_by_data",
+    "samples": {
+      "/vanilla/behavior_pack/items/appleEnchanted.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/clownfish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_fish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_salmon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/fish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/pufferfish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ],
+      "/vanilla/behavior_pack/items/salmon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:stacked_by_data/",
+          "content": true
+        }
+      ]
+    }
+  }
+}

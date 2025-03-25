@@ -1,0 +1,15 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "JigsawStructure ProcessorRule AlwaysTrueBlock",
+    "description": "Predicate that always evaluates to true. This is the default predicate if no other predicate is specified.",
+    "fields": [
+      {
+        "id": "predicate_type",
+        "title": "PositionalBlockRuleAxis",
+        "description": "PositionalBlockRuleAxis",
+        "dataType": 2
+      }
+    ]
+  }
+}

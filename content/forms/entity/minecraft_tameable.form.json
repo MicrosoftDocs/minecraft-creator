@@ -1,0 +1,184 @@
+{
+  "title": "Tameable",
+  "description": "This entity can be tamed",
+  "fields": [
+    {
+      "id": "probability",
+      "title": "Probability of being tamed"
+    },
+    {
+      "id": "tameItems",
+      "title": "List of items that can be fed to an entity to tame them"
+    },
+    {
+      "id": "tame_event",
+      "title": "Event to fire when the entity is tamed"
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:tameable",
+    "title": "Tameable",
+    "description": "Defines the rules for a mob to be tamed by the player.",
+    "fields": [
+      {
+        "id": "probability",
+        "title": "Probability",
+        "description": "The chance of taming the entity with each item use between 0.0 and 1.0, where 1.0 is 100%",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:tameable/",
+              "content": 0.33
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:tameable/",
+              "content": 0.33
+            }
+          ]
+        }
+      },
+      {
+        "id": "tame_event",
+        "title": "Tame Event",
+        "description": "Event to run when this entity becomes tamed",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:tameable/",
+              "content": {
+                "event": "minecraft:on_tame",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:tameable/",
+              "content": {
+                "event": "minecraft:on_tame",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "tame_items",
+        "title": "Tame Items",
+        "description": "The list of items that can be used to tame this entity",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:tameable/",
+              "content": [
+                "fish",
+                "salmon"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:tameable/",
+              "content": [
+                "wheat_seeds",
+                "pumpkin_seeds",
+                "melon_seeds",
+                "beetroot_seeds",
+                "pitcher_pod",
+                "torchflower_seeds"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wolf.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:tameable/",
+              "content": "bone"
+            }
+          ],
+          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_wild/minecraft:tameable/",
+              "content": [
+                "fish",
+                "salmon"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cat_wild/minecraft:tameable/",
+          "content": {
+            "probability": 0.33,
+            "tame_items": [
+              "fish",
+              "salmon"
+            ],
+            "tame_event": {
+              "event": "minecraft:on_tame",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:parrot_wild/minecraft:tameable/",
+          "content": {
+            "probability": 0.33,
+            "tame_items": [
+              "wheat_seeds",
+              "pumpkin_seeds",
+              "melon_seeds",
+              "beetroot_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ],
+            "tame_event": {
+              "event": "minecraft:on_tame",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:tameable/",
+          "content": {
+            "probability": 0.33,
+            "tame_items": "bone",
+            "tame_event": {
+              "event": "minecraft:on_tame",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_wild/minecraft:tameable/",
+          "content": {
+            "probability": 0.33,
+            "tame_items": [
+              "fish",
+              "salmon"
+            ],
+            "tame_event": {
+              "event": "minecraft:on_tame",
+              "target": "self"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

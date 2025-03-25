@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "id": "particle",
+      "desciption": "Identifier of the particle to emit.",
+      "dataType": 2
+    }
+  ],
+  "description": "Emits a particle specified via the particle attribute.",
+  "id": "emit_particle",
+  "title": "Emit Particle",
+  "samples": {
+    "samples": [
+      {
+        "path": "Example:",
+        "content": "{\r\n\t\"emit_particle\": {\r\n\t\t\"particle\": \"creakingcrumble\"\r\n\t}\r\n}"
+      }
+    ]
+  }
+}

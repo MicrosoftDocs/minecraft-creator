@@ -1,0 +1,119 @@
+{
+  "fields": [],
+  "requires": [
+    {
+      "id": "minecraft:admire_item",
+      "type": "entity_component"
+    }
+  ],
+  "description": "Enables the mob to admire items that have been configured as admirable.",
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.admire_item",
+    "title": "Admire Item Behavior",
+    "description": "Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component",
+    "fields": [
+      {
+        "id": "admire_item_sound",
+        "title": "Admire Item Sound",
+        "description": "The sound event to play when admiring the item",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.admire_item/",
+              "content": "admire"
+            }
+          ]
+        }
+      },
+      {
+        "id": "sound_interval",
+        "title": "Sound Interval",
+        "description": "The range of time in seconds to randomly wait before playing the sound again.",
+        "defaultValue": 0,
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.admire_item/",
+              "content": {
+                "range_min": 2,
+                "range_max": 5
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.admire_item/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_admire_item_start",
+        "title": "On Admire Item Start",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.admire_item/",
+              "content": {
+                "event": "admire_item_started_event",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_admire_item_stop",
+        "title": "On Admire Item Stop",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.admire_item/",
+              "content": {
+                "event": "admire_item_stopped_event",
+                "target": "self"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.admire_item/",
+          "content": {
+            "priority": 2,
+            "admire_item_sound": "admire",
+            "sound_interval": {
+              "range_min": 2,
+              "range_max": 5
+            },
+            "on_admire_item_start": {
+              "event": "admire_item_started_event",
+              "target": "self"
+            },
+            "on_admire_item_stop": {
+              "event": "admire_item_stopped_event",
+              "target": "self"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

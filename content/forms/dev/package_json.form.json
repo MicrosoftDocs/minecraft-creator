@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "id": "name",
+      "title": "Name",
+      "dataType": 2
+    },
+    {
+      "id": "productName",
+      "title": "Product Name",
+      "dataType": 2
+    },
+    {
+      "id": "main",
+      "title": "Main Entrypoint",
+      "dataType": 2
+    },
+    {
+      "id": "homepage",
+      "title": "Homepage",
+      "dataType": 2
+    },
+    {
+      "id": "icon",
+      "title": "Icon",
+      "dataType": 2
+    },
+    {
+      "id": "private",
+      "title": "Private",
+      "dataType": 1
+    },
+    {
+      "id": "description",
+      "title": "Description",
+      "dataType": 13
+    },
+    {
+      "id": "version",
+      "title": "Version",
+      "dataType": 2
+    }
+  ]
+}

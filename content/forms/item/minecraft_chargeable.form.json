@@ -1,0 +1,19 @@
+{
+  "isDeprecated": true,
+  "title": "Chargeable",
+  "description": "Event trigger for when the item has completed its use duration.",
+  "fields": [
+    {
+      "id": "on_complete",
+      "title": "on_complete",
+      "description": "Event trigger for when the item has completed its use duration.",
+      "dataType": 16
+    },
+    {
+      "id": "movement_modifier",
+      "title": "movement_modifier",
+      "description": "Modifier value to scale the players movement speed when item is in use.",
+      "dataType": 3
+    }
+  ]
+}

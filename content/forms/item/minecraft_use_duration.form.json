@@ -1,0 +1,258 @@
+{
+  "fields": [],
+  "scalarFieldUpgradeName": "value",
+  "generated_doNotEdit": {
+    "title": "Use Duration",
+    "description": "This component determines how long the item takes to use when used in combination with components like \"shooter\", \"throwable\", or \"food\".",
+    "fields": [
+      {
+        "id": "value",
+        "title": "value",
+        "description": "How long the item takes to use in seconds.",
+        "dataType": 3
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/appleEnchanted.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/baked_potato.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/beef.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/beetroot_soup.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/beetroot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/bread.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/camera.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 100000
+        }
+      ],
+      "/vanilla/behavior_pack/items/carrot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/chicken.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/chorus_fruit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/clownfish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_beef.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_chicken.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_fish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_porkchop.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_rabbit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/cooked_salmon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/cookie.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/dried_kelp.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 16
+        }
+      ],
+      "/vanilla/behavior_pack/items/fish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/glow_berries.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/golden_carrot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/honey_bottle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 40
+        }
+      ],
+      "/vanilla/behavior_pack/items/melon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/mushroom_stew.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/muttonCooked.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/muttonRaw.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/poisonous_potato.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/porkchop.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/potato.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/pufferfish.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/pumpkin_pie.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/rabbit_stew.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/rabbit.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/rotten_flesh.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/salmon.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/spider_eye.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/suspicious_stew.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ],
+      "/vanilla/behavior_pack/items/sweet_berries.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_duration/",
+          "content": 32
+        }
+      ]
+    }
+  }
+}

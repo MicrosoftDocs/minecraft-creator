@@ -1,0 +1,297 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "is_biome",
+    "title": "Is Biome",
+    "description": "Tests whether the Subject is currently in the named biome.",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ]
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Required) The Biome type to test",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "beach",
+            "title": "Beach"
+          },
+          {
+            "id": "desert",
+            "title": "Desert"
+          },
+          {
+            "id": "extreme_hills",
+            "title": "Extreme Hills"
+          },
+          {
+            "id": "flat",
+            "title": "Flat"
+          },
+          {
+            "id": "forest",
+            "title": "Forest"
+          },
+          {
+            "id": "ice",
+            "title": "Ice"
+          },
+          {
+            "id": "jungle",
+            "title": "Jungle"
+          },
+          {
+            "id": "mesa",
+            "title": "Mesa"
+          },
+          {
+            "id": "mushroom_island",
+            "title": "Mushroom Island"
+          },
+          {
+            "id": "ocean",
+            "title": "Ocean"
+          },
+          {
+            "id": "plain",
+            "title": "Plain"
+          },
+          {
+            "id": "river",
+            "title": "River"
+          },
+          {
+            "id": "savanna",
+            "title": "Savanna"
+          },
+          {
+            "id": "stone_beach",
+            "title": "Stone Beach"
+          },
+          {
+            "id": "swamp",
+            "title": "Swamp"
+          },
+          {
+            "id": "taiga",
+            "title": "Taiga"
+          },
+          {
+            "id": "the_end",
+            "title": "The End"
+          },
+          {
+            "id": "the_nether",
+            "title": "The Nether"
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+              "content": "the_nether"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fishing_hook.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+              "content": "jungle"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/rabbit.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/",
+              "content": "desert"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_born/sequence/2/filters/",
+              "content": "desert"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/spider.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+              "content": "the_nether"
+            }
+          ]
+        }
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+              "content": "is_biome"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fishing_hook.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+              "content": "is_biome"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"is_biome\", \"subject\": \"self\", \"operator\": \"equals\", \"value\": \"beach\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"is_biome\", \"value\": \"beach\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+          "content": {
+            "test": "is_biome",
+            "value": "the_nether"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fishing_hook.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/0/filters/",
+          "content": {
+            "test": "is_biome",
+            "value": "jungle"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/",
+          "content": {
+            "test": "is_biome",
+            "value": "desert"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_born/sequence/2/filters/",
+          "content": {
+            "test": "is_biome",
+            "value": "desert"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+          "content": {
+            "test": "is_biome",
+            "value": "the_nether"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "minecraft:lava_movement",
+  "title": "Lava Movement",
+  "description": "Allows a custom movement speed across lava blocks.",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "The speed the mob moves over a lava block.",
+      "dataType": 3
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "World Test Area",
+  "fields": [
+    {
+      "id": "location",
+      "title": "Location",
+      "dataType": 11
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "fields": [],
+  "description": "Sets the sky color used during rendering. Biomes without this component will have default sky color behavior.",
+  "generated_doNotEdit": {
+    "title": "Sky Color",
+    "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
+    "fields": [
+      {
+        "id": "sky_color",
+        "title": "sky_color",
+        "description": "RGB color of the sky",
+        "dataType": 16
+      }
+    ]
+  },
+  "samples": {
+    "samples": [
+      {
+        "path": "Example:",
+        "content": "{\r\n\t\"sky_color\": \"#000000\"}"
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Sky Color",
+    "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
+    "fields": [
+      {
+        "id": "sky_color",
+        "title": "sky_color",
+        "description": "RGB color of the sky",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "sky_color",
+            "dataType": 32,
+            "minLength": 3,
+            "maxLength": 3
+          }
+        ]
+      }
+    ],
+    "id": "minecraft:sky_color"
+  }
+}

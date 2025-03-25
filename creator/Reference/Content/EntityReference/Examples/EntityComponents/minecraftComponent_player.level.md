@@ -1,42 +1,32 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:player.level
-description: "A reference document detailing the 'player.level' entity component"
+title: "Entity Documentation - minecraft:player.level"
+description: "Describes the minecraft:player.level entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:player.level
 
-`minecraft:player.level` defines the player's level.
+Defines the player's level.
 
-## Parameters
 
-| Name| Default Value| Type| Description |
-|:-----------:|:-----------:|:-----------:|:-----------:|
-|max| *not set*| Integer| The maximum player level value of the entity. |
-|value| *not set*| Integer|  The initial value of the player level. |
+## Player Level Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| max | *not set* | Integer number | The maximum player level value of the entity. | Player: `24791` | 
+| value | *not set* | Integer number | The initial value of the player level. |  | 
 
-```json
-"minecraft:player.level": {
-        "value": 0,
-        "max": 24791
-      }
-```
+## Samples
 
-## Vanilla entities examples
+#### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
 
-### player
 
 ```json
 "minecraft:player.level": {
-        "value": 0,
-        "max": 24791
-      }
+  "value": 0,
+  "max": 24791
+}
 ```
-
-## Vanilla entities using `minecraft:exhaustion_values`
-
-- [player](../../../../Source/VanillaBehaviorPack_Snippets/entities/player.md)

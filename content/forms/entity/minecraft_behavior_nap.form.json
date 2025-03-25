@@ -1,0 +1,305 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.nap",
+    "title": "Nap Behavior",
+    "description": "Allows mobs to occassionally stop and take a nap under certain conditions.",
+    "fields": [
+      {
+        "id": "cooldown_max",
+        "title": "Cooldown Max",
+        "description": "Maximum time in seconds the mob has to wait before using the goal again",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/",
+              "content": 7
+            }
+          ]
+        }
+      },
+      {
+        "id": "cooldown_min",
+        "title": "Cooldown Min",
+        "description": "Minimum time in seconds the mob has to wait before using the goal again",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "mob_detect_dist",
+        "title": "Mob Detect Dist",
+        "description": "The block distance in x and z that will be checked for mobs that this mob detects",
+        "defaultValue": 6,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/",
+              "content": 12
+            }
+          ]
+        }
+      },
+      {
+        "id": "mob_detect_height",
+        "title": "Mob Detect Height",
+        "description": "The block distance in y that will be checked for mobs that this mob detects",
+        "defaultValue": 6,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/",
+              "content": 8
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_nap_filters",
+        "title": "Can Nap Filters",
+        "dataType": 16,
+        "subForm": {
+          "id": "can_nap_filters",
+          "title": "Can_nap_filters",
+          "fields": [
+            {
+              "id": "all_of",
+              "title": "All_of",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/fox.json": [
+                  {
+                    "path": "all_of",
+                    "content": [
+                      {
+                        "test": "in_water",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": false
+                      },
+                      {
+                        "test": "on_ground",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": true
+                      },
+                      {
+                        "test": "is_underground",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": true
+                      },
+                      {
+                        "test": "weather_at_position",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": "thunderstorm"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "in_water",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": false
+                  },
+                  {
+                    "test": "on_ground",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "is_underground",
+                    "subject": "self",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "weather_at_position",
+                    "subject": "self",
+                    "operator": "!=",
+                    "value": "thunderstorm"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "wake_mob_exceptions",
+        "title": "Wake Mob Exceptions",
+        "dataType": 16,
+        "subForm": {
+          "id": "wake_mob_exceptions",
+          "title": "Wake_mob_exceptions",
+          "fields": [
+            {
+              "id": "any_of",
+              "title": "Any_of",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/fox.json": [
+                  {
+                    "path": "any_of",
+                    "content": [
+                      {
+                        "test": "trusts",
+                        "subject": "other",
+                        "operator": "==",
+                        "value": true
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "==",
+                        "value": "fox"
+                      },
+                      {
+                        "test": "is_sneaking",
+                        "subject": "other",
+                        "operator": "==",
+                        "value": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/",
+              "content": {
+                "any_of": [
+                  {
+                    "test": "trusts",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": "fox"
+                  },
+                  {
+                    "test": "is_sneaking",
+                    "subject": "other",
+                    "operator": "==",
+                    "value": true
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:fox_day/minecraft:behavior.nap/",
+          "content": {
+            "priority": 8,
+            "cooldown_min": 2,
+            "cooldown_max": 7,
+            "mob_detect_dist": 12,
+            "mob_detect_height": 6,
+            "can_nap_filters": {
+              "all_of": [
+                {
+                  "test": "in_water",
+                  "subject": "self",
+                  "operator": "==",
+                  "value": false
+                },
+                {
+                  "test": "on_ground",
+                  "subject": "self",
+                  "operator": "==",
+                  "value": true
+                },
+                {
+                  "test": "is_underground",
+                  "subject": "self",
+                  "operator": "==",
+                  "value": true
+                },
+                {
+                  "test": "weather_at_position",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": "thunderstorm"
+                }
+              ]
+            },
+            "wake_mob_exceptions": {
+              "any_of": [
+                {
+                  "test": "trusts",
+                  "subject": "other",
+                  "operator": "==",
+                  "value": true
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "==",
+                  "value": "fox"
+                },
+                {
+                  "test": "is_sneaking",
+                  "subject": "other",
+                  "operator": "==",
+                  "value": true
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

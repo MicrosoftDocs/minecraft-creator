@@ -1,0 +1,113 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "DimensionDocument Misc",
+    "description": "DimensionDocument Misc",
+    "fields": [
+      {
+        "id": "minecraft:dimension",
+        "title": "minecraft:dimension",
+        "description": "minecraft:dimension",
+        "dataType": 16,
+        "subForm": {
+          "title": "Dimension",
+          "description": "Dimension",
+          "fields": [
+            {
+              "id": "description",
+              "title": "description",
+              "description": "description",
+              "dataType": 16,
+              "subForm": {
+                "title": "Description",
+                "description": "Description",
+                "fields": [
+                  {
+                    "id": "identifier",
+                    "title": "identifier",
+                    "description": "identifier",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "components",
+              "title": "components",
+              "description": "components",
+              "dataType": 16,
+              "subForm": {
+                "title": "Components",
+                "description": "Components",
+                "fields": [
+                  {
+                    "id": "minecraft:dimension_bounds",
+                    "title": "minecraft:dimension_bounds",
+                    "description": "minecraft:dimension_bounds",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Bounds",
+                      "description": "Bounds",
+                      "fields": [
+                        {
+                          "id": "min",
+                          "title": "min",
+                          "description": "min",
+                          "dataType": 0,
+                          "validity": [
+                            {
+                              "comparison": ">=",
+                              "value": -512
+                            },
+                            {
+                              "comparison": "<=",
+                              "value": 512
+                            }
+                          ]
+                        },
+                        {
+                          "id": "max",
+                          "title": "max",
+                          "description": "max",
+                          "dataType": 0,
+                          "validity": [
+                            {
+                              "comparison": ">=",
+                              "value": -512
+                            },
+                            {
+                              "comparison": "<=",
+                              "value": 512
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:generation",
+                    "title": "minecraft:generation",
+                    "description": "minecraft:generation",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Generation",
+                      "description": "Generation",
+                      "fields": [
+                        {
+                          "id": "generator_type",
+                          "title": "generator_type",
+                          "description": "generator_type",
+                          "dataType": 2
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

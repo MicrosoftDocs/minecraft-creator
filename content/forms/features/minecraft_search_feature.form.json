@@ -1,0 +1,148 @@
+{
+  "id": "minecraft:search_feature",
+  "description": "Sweeps a volume searching for a valid placement location for its referenced feature. The search_volume field specifies the axis-aligned bounding box that defines the boundaries of the search. The search sweeps along the axis defined by the search_axis field, layer by layer. For example, if search_axis is set to -x, blocks with greater x values will be checked before blocks with lower x values. Each layer is searched from the bottom-left to the top-right before moving to the next layer along the axis. By default, only one valid position must be found, but this can be altered by specifying the required_successes field. If fewer than the required successes are found, no placement will occur. Succeeds if the number of valid positions is equal to the value specified by required_successes. Fails if the number of valid positions is less than the value specified by required_successes.",
+  "samples": {
+    "example": [
+      {
+        "path": "Uses `distribution` field to define the scattering settings.",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:search_feature": {
+            "description": {
+              "identifier": "example:find_valid_apples_feature"
+            },
+            "places_feature": "example:apple_feature",
+            "search_volume": {
+              "min": [
+                -3,
+                -3,
+                -3
+              ],
+              "max": [
+                3,
+                3,
+                3
+              ]
+            },
+            "search_axis": "-y",
+            "required_successes": 3
+          }
+        }
+      }
+    ]
+  },
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:search_feature",
+    "title": "Search Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 16,
+        "id": "search_volume",
+        "title": "Search Volume",
+        "description": "Axis-aligned bounding box that will be searched for valid placement positions. Expressed as offsets from the input position.",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 17,
+              "id": "min",
+              "title": "Min",
+              "description": "Minimum extent of the bounding volume expressed as [ x, y, z ]",
+              "isRequired": true
+            },
+            {
+              "dataType": 0,
+              "id": "[0..0]",
+              "title": "",
+              "description": "x_min",
+              "isRequired": true,
+              "alternates": [
+                {
+                  "dataType": 0,
+                  "id": "[0..0]",
+                  "description": "x_max",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "dataType": 0,
+              "id": "[1..1]",
+              "title": "",
+              "description": "y_min",
+              "isRequired": true,
+              "alternates": [
+                {
+                  "dataType": 0,
+                  "id": "[1..1]",
+                  "description": "y_max",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "dataType": 0,
+              "id": "[2..2]",
+              "title": "",
+              "description": "z_min",
+              "isRequired": true,
+              "alternates": [
+                {
+                  "dataType": 0,
+                  "id": "[2..2]",
+                  "description": "z_max",
+                  "isRequired": true
+                }
+              ]
+            },
+            {
+              "dataType": 17,
+              "id": "max",
+              "title": "Max",
+              "description": "Maxium extent of the bounding volume expressed as [ x, y, z ]",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 2,
+        "id": "search_axis\"<\"-x\", \"+x\", \"-y\", \"+y\", \"-z\", \"+z\"",
+        "title": "Search Axis\"<\"-x\", \"+x\", \"-y\", \"+y\", \"-z\", \"+z\"",
+        "description": "Axis that the search will sweep along through the 'search_volume'",
+        "isRequired": true
+      },
+      {
+        "dataType": 0,
+        "id": "required_successes",
+        "title": "Required Successes",
+        "description": "Number of valid positions the search must find in order to place the referenced feature",
+        "isRequired": false
+      }
+    ]
+  }
+}

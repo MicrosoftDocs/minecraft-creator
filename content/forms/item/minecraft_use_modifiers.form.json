@@ -1,0 +1,200 @@
+{
+  "fields": [],
+  "description": "Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food.",
+  "generated_doNotEdit": {
+    "title": "Use Modifiers",
+    "description": "This component modifies use effects, including how long the item takes to use and the player's speed when used in combination with components like \"shooter\", \"throwable\", or \"food\".",
+    "fields": [
+      {
+        "id": "use_duration",
+        "title": "use_duration",
+        "description": "How long the item takes to use in seconds.",
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 1.6
+            }
+          ]
+        }
+      },
+      {
+        "id": "movement_modifier",
+        "title": "movement_modifier",
+        "description": "Modifier value to scale the players movement speed when item is in use.",
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 0.35
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/items/apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 1.6,
+            "movement_modifier": 0.35
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Use Modifiers",
+    "description": "This component modifies use effects, including how long the item takes to use and the player's speed when used in combination with components like \"shooter\", \"throwable\", or \"food\".",
+    "fields": [
+      {
+        "id": "use_duration",
+        "title": "use_duration",
+        "description": "How long the item takes to use in seconds.",
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 1.6
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 4
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/dream_essence.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "movement_modifier",
+        "title": "movement_modifier",
+        "description": "Modifier value to scale the players movement speed when item is in use.",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/items/apple.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 0.35
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 0.35
+            }
+          ]
+        }
+      }
+    ],
+    "id": "minecraft:use_modifiers",
+    "samples": {
+      "/vanilla/behavior_pack/items/apple.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 1.6,
+            "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 4,
+            "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/dream_essence.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 4,
+            "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/items/dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 4,
+            "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 4,
+            "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/items/dream_essence.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 4,
+            "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/items/dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 4,
+            "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/items/cooked_dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 4,
+            "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/items/dream_essence.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 4,
+            "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/items/dream_turkey.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 4,
+            "movement_modifier": 0.35
+          }
+        }
+      ]
+    }
+  }
+}

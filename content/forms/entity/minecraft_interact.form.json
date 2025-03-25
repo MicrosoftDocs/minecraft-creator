@@ -1,0 +1,4092 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:interact",
+    "title": "Interact",
+    "description": "Defines interactions with this entity.",
+    "fields": [
+      {
+        "id": "add_items",
+        "title": "Add Items",
+        "description": "Loot table with items to add to the player's inventory upon successful interaction.",
+        "dataType": 15,
+        "subForm": {
+          "description": "Loot table with items to add to the player's inventory upon successful interaction.",
+          "fields": [
+            {
+              "id": "table",
+              "title": "Table",
+              "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "cooldown",
+        "title": "Cooldown",
+        "description": "Time in seconds before this entity can be interacted with again.",
+        "defaultValue": 0,
+        "dataType": 3
+      },
+      {
+        "id": "cooldown_after_being_attacked",
+        "title": "Cooldown After Being Attacked",
+        "description": "Time in seconds before this entity can be interacted with after being attacked.",
+        "defaultValue": 0,
+        "dataType": 3
+      },
+      {
+        "id": "drop_item_slot",
+        "title": "Drop Item Slot",
+        "description": "The entity's slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.",
+        "dataType": 2
+      },
+      {
+        "id": "equip_item_slot",
+        "title": "Equip Item Slot",
+        "description": "The entity's slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.",
+        "dataType": 2
+      },
+      {
+        "id": "health_amount",
+        "title": "Health Amount",
+        "description": "The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity.",
+        "defaultValue": 0,
+        "dataType": 0
+      },
+      {
+        "id": "hurt_item",
+        "title": "Hurt Item",
+        "description": "The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability.",
+        "defaultValue": 0,
+        "dataType": 0
+      },
+      {
+        "id": "interact_text",
+        "title": "Interact Text",
+        "description": "Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls.",
+        "dataType": 2
+      },
+      {
+        "id": "on_interact",
+        "title": "On Interact",
+        "description": "Event to fire when the interaction occurs.",
+        "dataType": 22
+      },
+      {
+        "id": "particle_on_start",
+        "title": "Particle On Start",
+        "description": "Particle effect that will be triggered at the start of the interaction.",
+        "dataType": 15,
+        "subForm": {
+          "description": "Particle effect that will be triggered at the start of the interaction.",
+          "fields": [
+            {
+              "id": "particle_offset_towards_interactor",
+              "title": "Particle Offset Towards Interactor",
+              "description": "Whether or not the particle will appear closer to who performed the interaction.",
+              "defaultValue": false,
+              "dataType": 1
+            },
+            {
+              "id": "particle_type",
+              "title": "Particle Type",
+              "description": "The type of particle that will be spawned.",
+              "dataType": 2
+            },
+            {
+              "id": "particle_y_offset",
+              "title": "Particle Y Offset",
+              "description": "Will offset the particle this amount in the y direction.",
+              "defaultValue": 0,
+              "dataType": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "play_sounds",
+        "title": "Play Sounds",
+        "description": "List of sounds to play when the interaction occurs.",
+        "dataType": 2
+      },
+      {
+        "id": "repair_entity_item",
+        "title": "Repair Entity Item",
+        "description": "Allows to repair one of the entity's items.",
+        "dataType": 15,
+        "subForm": {
+          "description": "Allows to repair one of the entity's items.",
+          "fields": [
+            {
+              "id": "amount",
+              "title": "Amount",
+              "description": "How much of the item durability should be restored upon interaction.",
+              "dataType": 0
+            },
+            {
+              "id": "slot",
+              "title": "Slot",
+              "description": "The entity's slot containing the item to be repaired. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.",
+              "dataType": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "spawn_entities",
+        "title": "Spawn Entities",
+        "description": "List of entities to spawn when the interaction occurs.",
+        "dataType": 2
+      },
+      {
+        "id": "spawn_items",
+        "title": "Spawn Items",
+        "description": "Loot table with items to drop on the ground upon successful interaction.",
+        "dataType": 15,
+        "subForm": {
+          "description": "Loot table with items to drop on the ground upon successful interaction.",
+          "fields": [
+            {
+              "id": "table",
+              "title": "Table",
+              "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "swing",
+        "title": "Swing",
+        "description": "If true, the player will do the 'swing' animation when interacting with this entity.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "transform_to_item",
+        "title": "Transform To Item",
+        "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue",
+        "dataType": 2
+      },
+      {
+        "id": "use_item",
+        "title": "Use Item",
+        "description": "If true, the interaction will use an item.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "vibration",
+        "title": "Vibration",
+        "description": "Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact.",
+        "defaultValue": "entity_interact",
+        "dataType": 2
+      },
+      {
+        "id": "interactions",
+        "title": "Interactions",
+        "dataType": 15,
+        "subForm": {
+          "id": "interactions",
+          "title": "Interactions",
+          "fields": [
+            {
+              "id": "on_interact",
+              "title": "On_interact",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/allay.json": [
+                  {
+                    "path": "on_interact",
+                    "content": {
+                      "filters": {
+                        "all_of": [
+                          {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "player"
+                          },
+                          {
+                            "test": "is_sneak_held",
+                            "subject": "other",
+                            "value": false
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "give_item",
+              "title": "Give_item",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/allay.json": [
+                  {
+                    "path": "give_item",
+                    "content": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": "take_item",
+              "title": "Take_item",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/allay.json": [
+                  {
+                    "path": "take_item",
+                    "content": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": "interact_text",
+              "title": "Interact_text",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/allay.json": [
+                  {
+                    "path": "interact_text",
+                    "content": "action.interact.allay"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "play_sounds",
+              "title": "Play Sounds",
+              "dataType": 2
+            },
+            {
+              "id": "hurt_item",
+              "title": "Hurt Item",
+              "dataType": 7
+            },
+            {
+              "id": "swing",
+              "title": "Swing",
+              "dataType": 2
+            },
+            {
+              "id": "spawn_items",
+              "title": "Spawn Items",
+              "dataType": 16,
+              "subForm": {
+                "id": "spawn_items",
+                "title": "Spawn_items",
+                "fields": [
+                  {
+                    "id": "table",
+                    "title": "Table",
+                    "dataType": 2,
+                    "samples": {
+                      "/vanilla/behavior_pack/entities/armadillo.json": [
+                        {
+                          "path": "table",
+                          "content": "loot_tables/entities/armadillo_brush.json"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "use_item",
+              "title": "Use Item",
+              "dataType": 2
+            },
+            {
+              "id": "particle_on_start",
+              "title": "Particle On Start",
+              "dataType": 16,
+              "subForm": {
+                "id": "particle_on_start",
+                "title": "Particle_on_start",
+                "fields": [
+                  {
+                    "id": "particle_type",
+                    "title": "Particle_type",
+                    "dataType": 2,
+                    "samples": {
+                      "/vanilla/behavior_pack/entities/bee.json": [
+                        {
+                          "path": "particle_type",
+                          "content": "food"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/",
+              "content": [
+                {
+                  "on_interact": {
+                    "filters": {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        },
+                        {
+                          "test": "is_sneak_held",
+                          "subject": "other",
+                          "value": false
+                        }
+                      ]
+                    }
+                  },
+                  "give_item": true,
+                  "take_item": true,
+                  "interact_text": "action.interact.allay"
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:interact/",
+              "content": [
+                {
+                  "on_interact": {
+                    "filters": {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        },
+                        {
+                          "test": "has_equipment",
+                          "subject": "other",
+                          "domain": "hand",
+                          "value": "brush"
+                        }
+                      ]
+                    }
+                  },
+                  "play_sounds": "mob.armadillo.brush",
+                  "interact_text": "action.interact.brush",
+                  "hurt_item": 16,
+                  "swing": true,
+                  "spawn_items": {
+                    "table": "loot_tables/entities/armadillo_brush.json"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "give_item": true,
+                "take_item": true,
+                "interact_text": "action.interact.allay"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "brush"
+                      }
+                    ]
+                  }
+                },
+                "play_sounds": "mob.armadillo.brush",
+                "interact_text": "action.interact.brush",
+                "hurt_item": 16,
+                "swing": true,
+                "spawn_items": {
+                  "table": "loot_tables/entities/armadillo_brush.json"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "minecraft:open_eyeblossom"
+                      }
+                    ]
+                  },
+                  "event": "fed_open_eyeblossom"
+                },
+                "use_item": true,
+                "particle_on_start": {
+                  "particle_type": "food"
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "minecraft:wither_rose"
+                      }
+                    ]
+                  },
+                  "event": "fed_wither_rose"
+                },
+                "use_item": true,
+                "particle_on_start": {
+                  "particle_type": "food"
+                },
+                "interact_text": "action.interact.feed"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "has_component",
+                        "operator": "!=",
+                        "value": "minecraft:is_sheared"
+                      }
+                    ]
+                  },
+                  "event": "be_sheared",
+                  "target": "self"
+                },
+                "use_item": false,
+                "hurt_item": 1,
+                "play_sounds": "shear",
+                "spawn_items": {
+                  "table": "loot_tables/entities/bogged_shear.json"
+                },
+                "interact_text": "action.interact.shear"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "saddle",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "operator": "not",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "0",
+                "interact_text": "action.interact.saddle"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "bucket:0"
+                      }
+                    ]
+                  }
+                },
+                "use_item": true,
+                "transform_to_item": "bucket:1",
+                "play_sounds": "milk",
+                "interact_text": "action.interact.milk"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "flint_and_steel"
+                    },
+                    {
+                      "test": "has_component",
+                      "operator": "!=",
+                      "value": "minecraft:explode"
+                    }
+                  ]
+                },
+                "event": "minecraft:start_exploding_forced",
+                "target": "self"
+              },
+              "hurt_item": 1,
+              "swing": true,
+              "play_sounds": "ignite",
+              "interact_text": "action.interact.creeper"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "operator": "not",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "0",
+                "interact_text": "action.interact.equip"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:donkey_unchested/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "operator": "not",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "0",
+                "interact_text": "action.interact.saddle"
+              },
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneaking",
+                        "subject": "other",
+                        "value": false
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "chest"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_chest",
+                  "target": "self"
+                },
+                "use_item": true,
+                "interact_text": "action.interact.attachchest"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:donkey_chested/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "operator": "not",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneaking",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "0",
+                "interact_text": "action.interact.saddle"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/interact_default/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_component",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "bucket:0"
+                      }
+                    ]
+                  }
+                },
+                "use_item": true,
+                "transform_to_item": "bucket:1",
+                "play_sounds": "milk_suspiciously",
+                "interact_text": "action.interact.milk"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/interact_screamer/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_component",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "bucket:0"
+                      }
+                    ]
+                  }
+                },
+                "use_item": true,
+                "transform_to_item": "bucket:1",
+                "play_sounds": "milk.screamer",
+                "interact_text": "action.interact.milk"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "none_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "inventory",
+                            "value": "leather_horse_armor"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "inventory",
+                            "value": "iron_horse_armor"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "inventory",
+                            "value": "golden_horse_armor"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "inventory",
+                            "value": "diamond_horse_armor"
+                          }
+                        ]
+                      },
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "player",
+                            "domain": "hand",
+                            "value": "leather_horse_armor"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "player",
+                            "domain": "hand",
+                            "value": "iron_horse_armor"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "player",
+                            "domain": "hand",
+                            "value": "golden_horse_armor"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "player",
+                            "domain": "hand",
+                            "value": "diamond_horse_armor"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "1",
+                "interact_text": "action.interact.equiphorsearmor"
+              },
+              {
+                "play_sounds": "saddle",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "operator": "not",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "0",
+                "interact_text": "action.interact.saddle"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/iron_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "iron_ingot"
+                      },
+                      {
+                        "test": "is_missing_health",
+                        "value": true
+                      }
+                    ]
+                  }
+                },
+                "use_item": true,
+                "health_amount": 25,
+                "play_sounds": "irongolem.repair",
+                "interact_text": "action.interact.repair"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_unchested/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneaking",
+                        "subject": "other",
+                        "value": false
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "chest"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_chest",
+                  "target": "self"
+                },
+                "use_item": true,
+                "interact_text": "action.interact.attachchest"
+              },
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "operator": "not",
+                        "value": "carpet"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "carpet"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneaking",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "0",
+                "interact_text": "action.interact.equipcarpet"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_chested/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "operator": "not",
+                        "value": "carpet"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "carpet"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneaking",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "0",
+                "interact_text": "action.interact.equipcarpet"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mooshroom.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "bowl"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_component",
+                        "operator": "!=",
+                        "value": "minecraft:transformation"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:flowerless",
+                  "target": "self"
+                },
+                "add_items": {
+                  "table": "loot_tables/gameplay/entities/mooshroom_milking.json"
+                },
+                "use_item": true,
+                "play_sounds": "milk_suspiciously",
+                "interact_text": "action.interact.moostew"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "allium"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 7
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_allium",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "azure_bluet"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 3
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_bluet",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "blue_orchid"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 6
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_orchid",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "cornflower"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_cornflower",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dandelion"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 5
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_dandelion",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "lily_of_the_valley"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 4
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_lily",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "oxeye_daisy"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 8
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_daisy",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "poppy"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_poppy",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "red_tulip"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "orange_tulip"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "white_tulip"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "pink_tulip"
+                      }
+                    ],
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_tulip",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "wither_rose"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 9
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_rose",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "torchflower"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_torchflower",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "open_eyeblossom"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 11
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_open_eyeblossom",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "closed_eyeblossom"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      },
+                      {
+                        "test": "is_mark_variant",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": 12
+                      }
+                    ]
+                  },
+                  "event": "minecraft:ate_closed_eyeblossom",
+                  "target": "self"
+                },
+                "use_item": true,
+                "play_sounds": "eat",
+                "particle_on_start": {
+                  "particle_type": "smoke",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.feed"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "has_component",
+                        "operator": "!=",
+                        "value": "minecraft:transformation"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "event": "become_cow",
+                  "target": "self"
+                },
+                "use_item": false,
+                "hurt_item": 1,
+                "play_sounds": "shear",
+                "spawn_items": {
+                  "table": "loot_tables/entities/mooshroom_shear.json"
+                },
+                "particle_on_start": {
+                  "particle_type": "largeexplode",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.mooshear",
+                "vibration": "shear"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "has_component",
+                        "operator": "!=",
+                        "value": "minecraft:transformation"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 1
+                      }
+                    ]
+                  },
+                  "event": "become_cow",
+                  "target": "self"
+                },
+                "use_item": false,
+                "hurt_item": 1,
+                "play_sounds": "shear",
+                "spawn_items": {
+                  "table": "loot_tables/entities/brown_mooshroom_shear.json"
+                },
+                "particle_on_start": {
+                  "particle_type": "largeexplode",
+                  "particle_y_offset": 0.25,
+                  "particle_offset_towards_interactor": true
+                },
+                "interact_text": "action.interact.mooshear",
+                "vibration": "shear"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "bucket:0"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      }
+                    ]
+                  }
+                },
+                "use_item": true,
+                "transform_to_item": "bucket:1",
+                "play_sounds": "milk",
+                "interact_text": "action.interact.milk"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:mule_unchested/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "chest"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_chest",
+                  "target": "self"
+                },
+                "use_item": true,
+                "interact_text": "action.interact.attachchest"
+              },
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "operator": "not",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "0",
+                "interact_text": "action.interact.saddle"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:mule_chested/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "operator": "not",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "0",
+                "interact_text": "action.interact.saddle"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "saddle"
+                  },
+                  "event": "minecraft:on_saddled"
+                },
+                "use_item": true,
+                "play_sounds": "saddle",
+                "equip_item_slot": "slot.armor.body",
+                "interact_text": "action.interact.saddle"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/interactable_piglin/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "gold_ingot"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_component",
+                        "subject": "self",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      }
+                    ]
+                  }
+                },
+                "barter": true,
+                "admire": true,
+                "use_item": true,
+                "cooldown_after_being_attacked": 20,
+                "interact_text": "action.interact.barter"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "cooldown": 2.5,
+                "use_item": false,
+                "hurt_item": 1,
+                "spawn_items": {
+                  "table": "loot_tables/entities/sheep_shear.json"
+                },
+                "play_sounds": "shear",
+                "interact_text": "action.interact.shear",
+                "vibration": "shear",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_component",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      },
+                      {
+                        "test": "has_component",
+                        "value": "minecraft:is_dyeable"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_sheared",
+                  "target": "self"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/shulker.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:0"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:16"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_black"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:8"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_gray"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:7"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_silver"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:15"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:19"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_white"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:12"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_light_blue"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:14"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_orange"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:1"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_red"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:4"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:18"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_blue"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:5"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_purple"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:13"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_magenta"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:9"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_pink"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:3"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:17"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_brown"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:11"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_yellow"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:10"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_lime"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:2"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_green"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:6"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_cyan"
+                },
+                "use_item": true
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "cooldown": 2.5,
+                "use_item": false,
+                "hurt_item": 1,
+                "spawn_items": {
+                  "table": "loot_tables/entities/snow_golem_shear.json"
+                },
+                "play_sounds": "shear",
+                "interact_text": "action.interact.shear",
+                "vibration": "shear",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_component",
+                        "operator": "!=",
+                        "value": "minecraft:is_sheared"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_sheared",
+                  "target": "self"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:strider_unsaddled/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "saddle"
+                  },
+                  "event": "minecraft:on_saddled"
+                },
+                "use_item": true,
+                "play_sounds": "saddle",
+                "interact_text": "action.interact.saddle"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tnt_minecart.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:inactive/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "fireball:0"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "flint_and_steel"
+                      }
+                    ],
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_game_rule",
+                        "domain": "tntexplodes",
+                        "operator": "==",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_prime",
+                  "target": "self"
+                },
+                "swing": true,
+                "play_sounds": "ignite",
+                "interact_text": "action.interact.creeper"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "has_component",
+                        "subject": "other",
+                        "value": "fire_aspect"
+                      }
+                    ],
+                    "all_of": [
+                      {
+                        "test": "is_game_rule",
+                        "domain": "tntexplodes",
+                        "operator": "==",
+                        "value": true
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_prime",
+                  "target": "self"
+                },
+                "swing": true,
+                "interact_text": "action.interact.creeper"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_unchested/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "chest"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_chest",
+                  "target": "self"
+                },
+                "use_item": true,
+                "interact_text": "action.interact.attachchest"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_armorable/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "armor",
+                        "operator": "not",
+                        "value": "wolf_armor"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "wolf_armor"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_owner",
+                        "subject": "other",
+                        "value": true
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "equip_item_slot": "slot.armor.body",
+                "play_sounds": "armor.equip_wolf",
+                "interact_text": "action.interact.equipwolfarmor"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "armor",
+                        "value": "wolf_armor"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_owner",
+                        "subject": "other",
+                        "value": true
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "slot.armor.body",
+                "play_sounds": "armor.unequip_wolf",
+                "interact_text": "action.interact.removewolfarmor",
+                "vibration": "shear"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_sitting",
+                        "subject": "self"
+                      },
+                      {
+                        "test": "has_damaged_equipment",
+                        "subject": "self",
+                        "domain": "armor",
+                        "value": "wolf_armor"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "is_owner",
+                        "subject": "other",
+                        "value": true
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "armadillo_scute"
+                      }
+                    ]
+                  },
+                  "target": "self"
+                },
+                "repair_entity_item": {
+                  "slot": "slot.armor.body",
+                  "amount": 8
+                },
+                "use_item": true,
+                "play_sounds": "armor.repair_wolf",
+                "interact_text": "action.interact.repairwolfarmor"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "golden_apple"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "value": "minecraft:effect.weakness"
+                    }
+                  ]
+                },
+                "event": "villager_converted",
+                "target": "self"
+              },
+              "use_item": true,
+              "interact_text": "action.interact.cure"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "golden_apple"
+                    },
+                    {
+                      "test": "has_component",
+                      "subject": "self",
+                      "value": "minecraft:effect.weakness"
+                    }
+                  ]
+                },
+                "event": "villager_converted",
+                "target": "self"
+              },
+              "use_item": true,
+              "interact_text": "action.interact.cure"
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "cooldown": 2.5,
+                "use_item": false,
+                "hurt_item": 1,
+                "spawn_items": {
+                  "table": "loot_tables/entities/sheepomelon_shear.json"
+                },
+                "play_sounds": "shear",
+                "interact_text": "action.interact.shear",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_component",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_sheared",
+                  "target": "self"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_unchested/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "chest"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_chest",
+                  "target": "self"
+                },
+                "use_item": true,
+                "interact_text": "action.interact.attachchest"
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "cooldown": 2.5,
+                "use_item": false,
+                "hurt_item": 1,
+                "spawn_items": {
+                  "table": "loot_tables/entities/sheepomelon_shear.json"
+                },
+                "play_sounds": "shear",
+                "interact_text": "action.interact.shear",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_component",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_sheared",
+                  "target": "self"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_unchested/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "chest"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_chest",
+                  "target": "self"
+                },
+                "use_item": true,
+                "interact_text": "action.interact.attachchest"
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "cooldown": 2.5,
+                "use_item": false,
+                "hurt_item": 1,
+                "spawn_items": {
+                  "table": "loot_tables/entities/sheepomelon_shear.json"
+                },
+                "play_sounds": "shear",
+                "interact_text": "action.interact.shear",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_component",
+                        "operator": "!=",
+                        "value": "minecraft:is_baby"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_sheared",
+                  "target": "self"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/behavior_pack_sample/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "domain": "hand",
+                        "subject": "other",
+                        "value": "bucket:0"
+                      }
+                    ]
+                  }
+                },
+                "use_item": true,
+                "transform_to_item": "bucket:1",
+                "play_sounds": "milk",
+                "interact_text": "action.interact.milk"
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:0"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:16"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_black"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:8"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_gray"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:7"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_silver"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:15"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:19"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_white"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:12"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_light_blue"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:14"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_orange"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:1"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_red"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:4"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:18"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_blue"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:5"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_purple"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:13"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_magenta"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:9"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_pink"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:3"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:17"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_brown"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:11"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_yellow"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:10"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_lime"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:2"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_green"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:6"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_cyan"
+                },
+                "use_item": true
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:0"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:16"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_black"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:8"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_gray"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:7"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_silver"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:15"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:19"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_white"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:12"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_light_blue"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:14"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_orange"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:1"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_red"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:4"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:18"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_blue"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:5"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_purple"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:13"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_magenta"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:9"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_pink"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:3"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "dye:17"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_brown"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:11"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_yellow"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:10"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_lime"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:2"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_green"
+                },
+                "use_item": true
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "dye:6"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "has_ability",
+                        "subject": "other",
+                        "value": "instabuild"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:turn_cyan"
+                },
+                "use_item": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

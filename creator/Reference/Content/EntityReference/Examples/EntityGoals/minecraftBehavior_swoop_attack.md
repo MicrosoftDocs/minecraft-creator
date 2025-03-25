@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.swoop_attack"
-description: "Describes the behavior.swoop_attack AI Goals"
+title: "Entity Documentation - minecraft:behavior.swoop_attack"
+description: "Describes the minecraft:behavior.swoop_attack ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.swoop_attack
+# Entity Documentation - minecraft:behavior.swoop_attack
 
 Allows an entity to attack using swoop attack behavior; Ideal for use with flying mobs. The behavior ends if the entity has a horizontal collision or gets hit.
 
@@ -27,7 +27,7 @@ Allows an entity to attack using swoop attack behavior; Ideal for use with flyin
 
 
 ```json
-{
+"minecraft:behavior.swoop_attack": {
   "priority": 2,
   "damage_reach": 0.2,
   "speed_multiplier": 1,

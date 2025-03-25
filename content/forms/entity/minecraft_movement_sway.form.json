@@ -1,0 +1,85 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:movement.sway",
+    "title": "Sway Movement",
+    "description": "This move control causes the mob to sway side to side giving the impression it is swimming.",
+    "fields": [
+      {
+        "id": "max_turn",
+        "title": "Max Turn",
+        "description": "The maximum number in degrees the mob can turn per tick.",
+        "defaultValue": 30,
+        "dataType": 3
+      },
+      {
+        "id": "sway_amplitude",
+        "title": "Sway Amplitude",
+        "description": "Strength of the sway movement.",
+        "defaultValue": 0.05,
+        "dataType": 3
+      },
+      {
+        "id": "sway_frequency",
+        "title": "Sway Frequency",
+        "description": "Multiplier for the frequency of the sway movement.",
+        "defaultValue": 0.5,
+        "dataType": 3
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.sway/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.sway/",
+          "content": {
+            "sway_amplitude": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.sway/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pufferfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.sway/",
+          "content": {
+            "sway_amplitude": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/salmon.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.sway/",
+          "content": {
+            "sway_amplitude": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tadpole.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.sway/",
+          "content": {
+            "sway_amplitude": 0
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tropicalfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.sway/",
+          "content": {
+            "sway_amplitude": 0
+          }
+        }
+      ]
+    }
+  }
+}

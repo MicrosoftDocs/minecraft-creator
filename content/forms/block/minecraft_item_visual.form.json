@@ -1,0 +1,62 @@
+{
+  "fields": [],
+  "tags": [
+    "visual"
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:item_visual",
+    "title": "Item Visual",
+    "description": "The description identifier of the geometry and material used to render the item of this block.\r\nExperimental toggles required: Upcoming Creator Features (in format versions before 1.21.50)",
+    "fields": [
+      {
+        "id": "geometry",
+        "title": "Geometry",
+        "description": "[Required] The \"minecraft:geometry\" component that will be used for the item.",
+        "dataType": 15,
+        "samples": {
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:item_visual/",
+              "content": "geometry.mikeamm_gwve_fabricator_in_hand"
+            }
+          ]
+        }
+      },
+      {
+        "id": "material_instances",
+        "title": "Material Instances",
+        "description": "[Required] The \"minecraft:material_instances\" component that will be used for the item.",
+        "dataType": 15,
+        "samples": {
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:item_visual/",
+              "content": {
+                "*": {
+                  "texture": "mikeamm_gwve_fabricator_in_hand",
+                  "render_method": "alpha_test"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:item_visual/",
+          "content": {
+            "geometry": "geometry.mikeamm_gwve_fabricator_in_hand",
+            "material_instances": {
+              "*": {
+                "texture": "mikeamm_gwve_fabricator_in_hand",
+                "render_method": "alpha_test"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

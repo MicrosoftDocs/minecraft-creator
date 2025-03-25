@@ -1,0 +1,130 @@
+{
+  "id": "minecraft:growing_plant_feature",
+  "description": "Places a growing plant in the world. A growing plant is a column that is anchored either to the ceiling or the floor, based on its growth direction. The growing plant has a body and a head, where the head is the tip of the plant, and the body consists of the remaining blocks. This feature can be used to define growing plants with variable body and head blocks, e.g. Cave Vines.",
+  "fields": [
+    {
+      "id": "format_version",
+      "title": "Format Version",
+      "dataType": 2
+    }
+  ],
+  "samples": {
+    "example": [
+      {
+        "path": "Defining a growing plant feature with variable body and head blocks and height distribution",
+        "content": {
+          "format_version": "1.13.0",
+          "minecraft:growing_plant_feature": {
+            "description": {
+              "identifier": "example:cave_vine_feature"
+            },
+            "height_distribution": [
+              [
+                {
+                  "range_min": 1,
+                  "range_max": 13
+                },
+                2
+              ],
+              [
+                {
+                  "range_min": 1,
+                  "range_max": 2
+                },
+                3
+              ],
+              [
+                {
+                  "range_min": 1,
+                  "range_max": 7
+                },
+                10
+              ]
+            ],
+            "growth_direction": "DOWN",
+            "age": {
+              "range_min": 17,
+              "range_max": 26
+            },
+            "body_blocks": [
+              [
+                "minecraft:cave_vines",
+                4
+              ],
+              [
+                "minecraft:cave_vines_body_with_berries",
+                1
+              ]
+            ],
+            "head_blocks": [
+              [
+                "minecraft:cave_vines",
+                4
+              ],
+              [
+                "minecraft:cave_vines_head_with_berries",
+                1
+              ]
+            ],
+            "allow_water": true
+          }
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "id": "minecraft:growing_plant_feature",
+    "title": "Growing Plant Feature",
+    "fields": [
+      {
+        "dataType": 16,
+        "id": "description",
+        "title": "Description",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+              "isRequired": true
+            }
+          ]
+        }
+      },
+      {
+        "dataType": 17,
+        "id": "height_distribution",
+        "title": "Height Distribution",
+        "isRequired": true
+      },
+      {
+        "dataType": 2,
+        "id": "growth_direction",
+        "title": "Growth Direction",
+        "description": "Direction that the plant grows towards. Valid values: UP and DOWN",
+        "isRequired": true
+      },
+      {
+        "dataType": 17,
+        "id": "body_blocks",
+        "title": "Body Blocks",
+        "isRequired": true
+      },
+      {
+        "dataType": 17,
+        "id": "head_blocks",
+        "title": "Head Blocks",
+        "isRequired": true
+      },
+      {
+        "dataType": 1,
+        "id": "allow_water",
+        "title": "Allow Water",
+        "description": "Plant blocks can be placed in water.",
+        "isRequired": false
+      }
+    ]
+  }
+}

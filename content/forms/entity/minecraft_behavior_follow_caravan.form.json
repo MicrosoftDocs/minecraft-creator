@@ -1,0 +1,235 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.follow_caravan",
+    "title": "Follow Caravan Behavior",
+    "description": "Allows the mob to follow mobs that are in a caravan.",
+    "fields": [
+      {
+        "id": "entity_count",
+        "title": "Entity Count",
+        "description": "Number of entities that can be in the caravan",
+        "defaultValue": 1,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "entity_types",
+        "title": "Entity Types",
+        "description": "List of entity types that this mob can follow in a caravan",
+        "dataType": 15,
+        "subForm": {
+          "description": "List of entity types that this mob can follow in a caravan",
+          "fields": [
+            {
+              "id": "cooldown",
+              "title": "Cooldown",
+              "description": "The amount of time in seconds that the mob has to wait before selecting a target of the same type again",
+              "defaultValue": 0,
+              "dataType": 3
+            },
+            {
+              "id": "filters",
+              "title": "Filters",
+              "description": "Conditions that make this entry in the list valid",
+              "dataType": 20
+            },
+            {
+              "id": "max_dist",
+              "title": "Max Dist",
+              "description": "Maximum distance this mob can be away to be a valid choice",
+              "defaultValue": 16,
+              "dataType": 3
+            },
+            {
+              "id": "must_see",
+              "title": "Must See",
+              "description": "If true, the mob has to be visible to be a valid choice",
+              "defaultValue": false,
+              "dataType": 1
+            },
+            {
+              "id": "must_see_forget_duration",
+              "title": "Must See Forget Duration",
+              "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more",
+              "defaultValue": 3,
+              "dataType": 3
+            },
+            {
+              "id": "reevaluate_description",
+              "title": "Reevaluate Description",
+              "description": "If true, the mob will stop being targeted if it stops meeting any conditions.",
+              "defaultValue": false,
+              "dataType": 1
+            },
+            {
+              "id": "sprint_speed_multiplier",
+              "title": "Sprint Speed Multiplier",
+              "description": "Multiplier for the running speed. A value of 1.0 means the speed is unchanged",
+              "defaultValue": 1,
+              "dataType": 3
+            },
+            {
+              "id": "walk_speed_multiplier",
+              "title": "Walk Speed Multiplier",
+              "description": "Multiplier for the walking speed. A value of 1.0 means the speed is unchanged",
+              "defaultValue": 1,
+              "dataType": 3
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "content": {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "llama"
+                }
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "content": {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "llama"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Movement speed multiplier of the mob when using this AI Goal",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "content": 2.1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "content": 2.1
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "content": 3
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 2.1,
+            "entity_count": 10,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "llama"
+              }
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 2.1,
+            "entity_count": 10,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "llama"
+              }
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 2.1,
+            "entity_count": 10,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "llama"
+              }
+            }
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+          "content": {
+            "priority": 3,
+            "speed_multiplier": 2.1,
+            "entity_count": 10,
+            "entity_types": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "llama"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

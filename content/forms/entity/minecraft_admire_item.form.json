@@ -1,0 +1,52 @@
+{
+  "description": "Allows an entity to ignore attackable targets for a given duration",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:admire_item",
+    "title": "Admire Item",
+    "description": "Causes the mob to ignore attackable targets for a given duration.",
+    "fields": [
+      {
+        "id": "cooldown_after_being_attacked",
+        "title": "Cooldown After Being Attacked",
+        "description": "Duration, in seconds, for which mob won't admire items if it was hurt",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:admire_item/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Duration, in seconds, that the mob is pacified.",
+        "defaultValue": 10,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:admire_item/",
+              "content": 8
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:admire_item/",
+          "content": {
+            "duration": 8,
+            "cooldown_after_being_attacked": 20
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1034 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:despawn",
+    "title": "Despawn",
+    "description": "Despawns the Actor when the despawn rules or optional filters evaluate to true.",
+    "fields": [
+      {
+        "id": "despawn_from_chance",
+        "title": "Despawn From Chance",
+        "description": "Determines if \"min_range_random_chance\" is used in the standard despawn rules",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "despawn_from_distance",
+        "title": "Despawn From Distance",
+        "description": "Specifies if the \"min_distance\" and \"max_distance\" are used in the standard despawn rules.",
+        "dataType": 15,
+        "subForm": {
+          "description": "Specifies if the \"min_distance\" and \"max_distance\" are used in the standard despawn rules.",
+          "fields": [
+            {
+              "id": "max_distance",
+              "title": "Max Distance",
+              "description": "maximum distance for standard despawn rules to instantly despawn the mob.",
+              "defaultValue": 128,
+              "dataType": 0
+            },
+            {
+              "id": "min_distance",
+              "title": "Min Distance",
+              "description": "minimum distance for standard despawn rules to try to despawn the mob.",
+              "defaultValue": 32,
+              "dataType": 0
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:despawn/",
+              "content": {}
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:despawn/",
+              "content": {}
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fish.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:despawn/",
+              "content": {
+                "min_distance": 32,
+                "max_distance": 40
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:despawn/",
+              "content": {
+                "min_distance": 32,
+                "max_distance": 40
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "despawn_from_inactivity",
+        "title": "Despawn From Inactivity",
+        "description": "Determines if the \"min_range_inactivity_timer\" is used in the standard despawn rules.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "despawn_from_simulation_edge",
+        "title": "Despawn From Simulation Edge",
+        "description": "Determines if the mob is instantly despawned at the edge of simulation distance in the standard despawn rules.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "The list of conditions that must be satisfied before the Actor is despawned. If a filter is defined then standard despawn rules are ignored.",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:despawn/",
+              "content": {
+                "any_of": [
+                  {
+                    "all_of": [
+                      {
+                        "test": "is_persistent",
+                        "value": false
+                      },
+                      {
+                        "test": "distance_to_nearest_player",
+                        "operator": ">",
+                        "value": 54
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "is_persistent",
+                        "value": false
+                      },
+                      {
+                        "test": "inactivity_timer",
+                        "subject": "self",
+                        "value": 30
+                      },
+                      {
+                        "test": "random_chance",
+                        "value": 800
+                      },
+                      {
+                        "test": "distance_to_nearest_player",
+                        "operator": ">",
+                        "value": 32
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:despawn/",
+              "content": {
+                "all_of": [
+                  {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "self",
+                        "value": "wandering_trader_despawning"
+                      },
+                      {
+                        "test": "has_trade_supply",
+                        "subject": "self",
+                        "value": false
+                      }
+                    ]
+                  },
+                  {
+                    "test": "distance_to_nearest_player",
+                    "operator": ">",
+                    "value": 24
+                  }
+                ]
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:despawn/",
+              "content": {
+                "any_of": [
+                  {
+                    "all_of": [
+                      {
+                        "test": "is_persistent",
+                        "value": false
+                      },
+                      {
+                        "test": "distance_to_nearest_player",
+                        "operator": ">",
+                        "value": 54
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "is_persistent",
+                        "value": false
+                      },
+                      {
+                        "test": "inactivity_timer",
+                        "subject": "self",
+                        "value": 30
+                      },
+                      {
+                        "test": "random_chance",
+                        "value": 800
+                      },
+                      {
+                        "test": "distance_to_nearest_player",
+                        "operator": ">",
+                        "value": 32
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "min_range_inactivity_timer",
+        "title": "Min Range Inactivity Timer",
+        "description": "The amount of time in seconds that the mob must be inactive.",
+        "defaultValue": 30,
+        "dataType": 0
+      },
+      {
+        "id": "min_range_random_chance",
+        "title": "Min Range Random Chance",
+        "description": "A random chance between 1 and the given value.",
+        "defaultValue": 800,
+        "dataType": 0
+      },
+      {
+        "id": "remove_child_entities",
+        "title": "Remove Child Entities",
+        "description": "If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:despawn/",
+              "content": true
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creaking.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/enderman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/endermite.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/evocation_illager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:raid_despawn/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {
+              "min_distance": 32,
+              "max_distance": 40
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/glow_squid.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mooshroom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/phantom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    {
+                      "test": "is_persistent",
+                      "value": false
+                    },
+                    {
+                      "test": "distance_to_nearest_player",
+                      "operator": ">",
+                      "value": 54
+                    }
+                  ]
+                },
+                {
+                  "all_of": [
+                    {
+                      "test": "is_persistent",
+                      "value": false
+                    },
+                    {
+                      "test": "inactivity_timer",
+                      "subject": "self",
+                      "value": 30
+                    },
+                    {
+                      "test": "random_chance",
+                      "value": 800
+                    },
+                    {
+                      "test": "distance_to_nearest_player",
+                      "operator": ">",
+                      "value": 32
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pufferfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {
+              "min_distance": 32,
+              "max_distance": 40
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ravager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/salmon.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {
+              "min_distance": 32,
+              "max_distance": 40
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/silverfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/slime.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/squid.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tadpole.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tropicalfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {
+              "min_distance": 32,
+              "max_distance": 40
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/turtle.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vex.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vindicator.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:raid_despawn/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wandering_trader.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "remove_child_entities": true,
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "self",
+                      "value": "wandering_trader_despawning"
+                    },
+                    {
+                      "test": "has_trade_supply",
+                      "subject": "self",
+                      "value": false
+                    }
+                  ]
+                },
+                {
+                  "test": "distance_to_nearest_player",
+                  "operator": ">",
+                  "value": 24
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/witch.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "filters": {
+              "any_of": [
+                {
+                  "all_of": [
+                    {
+                      "test": "is_persistent",
+                      "value": false
+                    },
+                    {
+                      "test": "distance_to_nearest_player",
+                      "operator": ">",
+                      "value": 54
+                    }
+                  ]
+                },
+                {
+                  "all_of": [
+                    {
+                      "test": "is_persistent",
+                      "value": false
+                    },
+                    {
+                      "test": "inactivity_timer",
+                      "subject": "self",
+                      "value": 30
+                    },
+                    {
+                      "test": "random_chance",
+                      "value": 800
+                    },
+                    {
+                      "test": "distance_to_nearest_player",
+                      "operator": ">",
+                      "value": 32
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/behavior_pack_sample/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ]
+    }
+  }
+}

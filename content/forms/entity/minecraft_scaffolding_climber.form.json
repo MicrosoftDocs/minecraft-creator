@@ -1,0 +1,8 @@
+{
+  "id": "minecraft:scaffolding_climber",
+  "title": "Scaffolding Climber",
+  "isDeprecated": true,
+  "note": "`minecraft:scaffolding_climber` has been deprecated and replaced for minecraft:block_climber.",
+  "description": "Allows the player to detect and manuever on the scaffolding block.",
+  "fields": []
+}

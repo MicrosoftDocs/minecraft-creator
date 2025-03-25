@@ -1,0 +1,57 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:placement_filter",
+    "title": "Placement Filter",
+    "description": "Sets rules for under what conditions the block can be placed/survive",
+    "fields": [
+      {
+        "id": "conditions",
+        "title": "Conditions",
+        "description": "List of conditions where the block can be placed/survive. Limited to 64 conditions.",
+        "dataType": 15,
+        "subForm": {
+          "description": "List of conditions where the block can be placed/survive. Limited to 64 conditions.",
+          "fields": [
+            {
+              "id": "allowed_faces",
+              "title": "Allowed Faces",
+              "description": "List of any of the following strings describing which face(s) this block can be placed on: \"up\", \"down\", \"north\", \"south\", \"east\", \"west\", \"side\", \"all\". Limited to 6 faces.",
+              "dataType": 17
+            },
+            {
+              "id": "block_filter",
+              "title": "Block Filter",
+              "description": "List of blocks that this block can be placed against in the \"allowed_faces\" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below.",
+              "dataType": 15,
+              "subForm": {
+                "description": "List of blocks that this block can be placed against in the \"allowed_faces\" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below.",
+                "fields": [
+                  {
+                    "id": "name",
+                    "title": "Name",
+                    "description": "The name of a block.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "states",
+                    "title": "States",
+                    "description": "The list of Vanilla block states and their values that the block can have, expressed in key/value pairs.",
+                    "dataType": 17
+                  },
+                  {
+                    "id": "tags",
+                    "title": "Tags",
+                    "description": "A condition using Molang queries that results to true/false that can be used to query for blocks with certain tags.",
+                    "defaultValue": "1",
+                    "dataType": 2
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

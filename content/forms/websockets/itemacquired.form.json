@@ -1,0 +1,28 @@
+{
+  "id": "ItemAcquired",
+  "title": "Item Acquired",
+  "description": "An item was acquired (picked up) by a player.",
+  "fields": [
+    {
+      "id": "player",
+      "description": "Identifier of the player that has spawned.",
+      "dataType": 16,
+      "subFormId": "websockets/Player"
+    },
+    {
+      "id": "item",
+      "description": "Item that was acquired.",
+      "dataType": 2
+    },
+    {
+      "id": "acquisitionMethodId",
+      "description": "Type of the method of acquisition of the item.",
+      "dataType": 0
+    },
+    {
+      "id": "count",
+      "description": "Amount of items that were acquired.",
+      "dataType": 0
+    }
+  ]
+}

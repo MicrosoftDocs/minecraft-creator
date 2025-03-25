@@ -1,0 +1,30 @@
+{
+  "description": "Determines the color of the item name when hovering over it.",
+  "scalarFieldUpgradeName": "value",
+  "fields": [
+    {
+      "id": "value",
+      "title": "value",
+      "description": "The color of the item hover text.",
+      "dataType": 2
+    }
+  ],
+  "generated_doNotEdit": {
+    "title": "Hover Text Color",
+    "description": "The hover_text_color component specifies the color of the item name when the players hovers the cursor over the item.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "value",
+        "description": "Specifies the color of the item's hover text.",
+        "dataType": 2
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Hover Text Color",
+    "description": "The hover_text_color component specifies the color of the item name when the players hovers the cursor over the item.",
+    "fields": [],
+    "id": "minecraft:hover_text_color"
+  }
+}

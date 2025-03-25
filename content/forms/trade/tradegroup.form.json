@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "TradeGroup",
+    "description": "TradeGroup",
+    "fields": [
+      {
+        "id": "trades",
+        "title": "trades",
+        "description": "trades",
+        "dataType": 15
+      },
+      {
+        "id": "num_to_select",
+        "title": "num_to_select",
+        "description": "num_to_select",
+        "dataType": 0
+      }
+    ]
+  }
+}

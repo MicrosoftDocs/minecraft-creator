@@ -1,0 +1,301 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.avoid_block",
+    "title": "Avoid Block Behavior",
+    "description": "Allows this entity to avoid certain blocks.",
+    "fields": [
+      {
+        "id": "avoid_block_sound",
+        "title": "Avoid Block Sound",
+        "description": "The sound event to play when the mob is avoiding a block.",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": "retreat"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": "retreat"
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_escape",
+        "title": "On Escape",
+        "description": "Escape trigger.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": [
+                {
+                  "event": "escaped_event",
+                  "target": "self"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "description": "Maximum distance to look for a block in y.",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 4
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_range",
+        "title": "Search Range",
+        "description": "Maximum distance to look for a block in xz.",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 8
+            }
+          ]
+        }
+      },
+      {
+        "id": "sound_interval",
+        "title": "Sound Interval",
+        "description": "The range of time in seconds to randomly wait before playing the sound again.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": {
+                "range_min": 2,
+                "range_max": 5
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": {
+                "range_min": 2,
+                "range_max": 5
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "sprint_speed_modifier",
+        "title": "Sprint Speed Modifier",
+        "description": "Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 1.1
+            }
+          ]
+        }
+      },
+      {
+        "id": "target_blocks",
+        "title": "Target Blocks",
+        "description": "List of block types this mob avoids.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": [
+                "minecraft:warped_fungus",
+                "minecraft:portal",
+                "minecraft:respawn_anchor"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": [
+                "minecraft:soul_fire",
+                "minecraft:soul_lantern",
+                "minecraft:soul_torch",
+                "minecraft:item.soul_campfire"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "target_selection_method",
+        "title": "Target Selection Method",
+        "description": "Block search method.",
+        "defaultValue": "nearest",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": "nearest"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": "nearest"
+            }
+          ]
+        }
+      },
+      {
+        "id": "tick_interval",
+        "title": "Tick Interval",
+        "description": "Should start tick interval.",
+        "defaultValue": 1,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 5
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "walk_speed_modifier",
+        "title": "Walk Speed Modifier",
+        "description": "Modifier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+              "content": 9
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+          "content": {
+            "priority": 1,
+            "tick_interval": 5,
+            "search_range": 8,
+            "search_height": 4,
+            "walk_speed_modifier": 1,
+            "sprint_speed_modifier": 1,
+            "avoid_block_sound": "retreat",
+            "sound_interval": {
+              "range_min": 2,
+              "range_max": 5
+            },
+            "target_selection_method": "nearest",
+            "target_blocks": [
+              "minecraft:warped_fungus",
+              "minecraft:portal",
+              "minecraft:respawn_anchor"
+            ],
+            "on_escape": [
+              {
+                "event": "escaped_event",
+                "target": "self"
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_block/",
+          "content": {
+            "priority": 9,
+            "tick_interval": 5,
+            "search_range": 8,
+            "search_height": 4,
+            "sprint_speed_modifier": 1.1,
+            "target_selection_method": "nearest",
+            "target_blocks": [
+              "minecraft:soul_fire",
+              "minecraft:soul_lantern",
+              "minecraft:soul_torch",
+              "minecraft:item.soul_campfire"
+            ],
+            "avoid_block_sound": "retreat",
+            "sound_interval": {
+              "range_min": 2,
+              "range_max": 5
+            }
+          }
+        }
+      ]
+    }
+  }
+}

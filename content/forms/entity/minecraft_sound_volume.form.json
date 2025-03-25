@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:sound_volume",
+    "title": "Sound Volume",
+    "description": "Sets the entity's base volume for sound effects.",
+    "fields": [
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The value of the volume the entity uses for sound effects.",
+        "defaultValue": 1,
+        "dataType": 3
+      }
+    ]
+  }
+}

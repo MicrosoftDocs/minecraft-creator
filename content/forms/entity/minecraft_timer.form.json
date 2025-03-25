@@ -1,0 +1,752 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:timer",
+    "title": "Timer",
+    "description": "Adds a timer after which an event will fire.",
+    "fields": [
+      {
+        "id": "looping",
+        "title": "Looping",
+        "description": "If true, the timer will restart every time after it fires.",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:rolled_up_without_threats/minecraft:timer/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/take_nearest_target/minecraft:timer/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "randomInterval",
+        "title": "RandomInterval",
+        "description": "If true, the amount of time on the timer will be random between the min and max values specified in time.",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/escape_fire/minecraft:timer/",
+              "content": true
+            },
+            {
+              "path": "/minecraft:entity/component_groups/countdown_to_perish/minecraft:timer/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "random_time_choices",
+        "title": "Random Time Choices",
+        "description": "This is a list of objects, representing one value in seconds that can be picked before firing the event and an optional weight. Incompatible with time.",
+        "defaultValue": "[ ]",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:timer/",
+              "content": [
+                {
+                  "weight": 50,
+                  "value": 2400
+                },
+                {
+                  "weight": 50,
+                  "value": 3600
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "time",
+        "title": "Time",
+        "description": "Amount of time in seconds for the timer. Can be specified as a number or a pair of numbers (min and max). Incompatible with random_time_choices.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pickup_item_delay/minecraft:timer/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:rolled_up_without_threats/minecraft:timer/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/escape_fire/minecraft:timer/",
+              "content": [
+                20,
+                50
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/countdown_to_perish/minecraft:timer/",
+              "content": [
+                10,
+                60
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/take_nearest_target/minecraft:timer/",
+              "content": 5
+            },
+            {
+              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:timer/",
+              "content": 180
+            },
+            {
+              "path": "/minecraft:entity/component_groups/find_hive/minecraft:timer/",
+              "content": 180
+            },
+            {
+              "path": "/minecraft:entity/component_groups/hive_full/minecraft:timer/",
+              "content": [
+                5,
+                20
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/boat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:above_bubble_column_down/minecraft:timer/",
+              "content": 3
+            }
+          ],
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:timer/",
+              "content": [
+                1,
+                3
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/husk.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:timer/",
+              "content": 30
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+            {
+              "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
+              "content": 15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:add_raid_omen/minecraft:timer/",
+              "content": [
+                0,
+                0
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:half_puff_primary/minecraft:timer/",
+              "content": 2
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:half_puff_secondary/minecraft:timer/",
+              "content": 2
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:deflate_sensor_buffer/minecraft:timer/",
+              "content": 0.01
+            }
+          ],
+          "/vanilla/behavior_pack/entities/skeleton.json": [
+            {
+              "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:timer/",
+              "content": 20
+            }
+          ],
+          "/vanilla/behavior_pack/entities/vex.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:start_damage_timer/minecraft:timer/",
+              "content": [
+                30,
+                119
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:timer/",
+              "content": 30
+            }
+          ]
+        }
+      },
+      {
+        "id": "time_down_event",
+        "title": "Time Down Event",
+        "description": "Event to fire when the time on the timer runs out.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/component_groups/pickup_item_delay/minecraft:timer/",
+              "content": {
+                "event": "pickup_item_delay_complete"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:rolled_up_without_threats/minecraft:timer/",
+              "content": {
+                "event": "minecraft:unroll"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/escape_fire/minecraft:timer/",
+              "content": {
+                "event": "stop_panicking_after_fire",
+                "target": "self"
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/countdown_to_perish/minecraft:timer/",
+              "content": {
+                "event": "perish_event",
+                "target": "self"
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/take_nearest_target/minecraft:timer/",
+              "content": {
+                "event": "calmed_down",
+                "target": "self"
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/look_for_food/minecraft:timer/",
+              "content": {
+                "event": "find_flower_timeout"
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/find_hive/minecraft:timer/",
+              "content": {
+                "event": "find_hive_timeout",
+                "target": "self"
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/hive_full/minecraft:timer/",
+              "content": {
+                "event": "find_hive_event",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/boat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:above_bubble_column_down/minecraft:timer/",
+              "content": {
+                "event": "minecraft:sink",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chest_boat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:above_bubble_column_down/minecraft:timer/",
+              "content": {
+                "event": "minecraft:sink",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/guardian.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:timer/",
+              "content": {
+                "event": "minecraft:target_far_enough",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
+              "content": {
+                "event": "become_zombie_event"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/husk.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:timer/",
+              "content": {
+                "event": "minecraft:convert_to_zombie"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+            {
+              "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
+              "content": {
+                "event": "become_zombie_event"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:add_raid_omen/minecraft:timer/",
+              "content": {
+                "event": "minecraft:clear_add_raid_omen",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pufferfish.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:half_puff_primary/minecraft:timer/",
+              "content": {
+                "event": "minecraft:on_half_puff"
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:half_puff_secondary/minecraft:timer/",
+              "content": {
+                "event": "minecraft:on_normal_puff"
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:deflate_sensor_buffer/minecraft:timer/",
+              "content": {
+                "event": "minecraft:on_full_puff"
+              }
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:start_deflate/minecraft:timer/",
+              "content": {
+                "event": "minecraft:on_deflate"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ravager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/stunned/minecraft:timer/",
+              "content": {
+                "event": "minecraft:start_roar"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/skeleton.json": [
+            {
+              "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:timer/",
+              "content": {
+                "event": "become_stray_event"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/vex.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:start_damage_timer/minecraft:timer/",
+              "content": {
+                "event": "minecraft:add_periodic_damage"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wandering_trader.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:timer/",
+              "content": {
+                "event": "minecraft:start_despawn",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:timer/",
+              "content": {
+                "event": "minecraft:convert_to_drowned"
+              }
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:timer/",
+              "content": {
+                "event": "minecraft:convert_to_drowned"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/component_groups/pickup_item_delay/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 3,
+            "time_down_event": {
+              "event": "pickup_item_delay_complete"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:rolled_up_without_threats/minecraft:timer/",
+          "content": {
+            "looping": true,
+            "time": 4,
+            "randomInterval": false,
+            "time_down_event": {
+              "event": "minecraft:unroll"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/component_groups/escape_fire/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": [
+              20,
+              50
+            ],
+            "randomInterval": true,
+            "time_down_event": {
+              "event": "stop_panicking_after_fire",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/countdown_to_perish/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": [
+              10,
+              60
+            ],
+            "randomInterval": true,
+            "time_down_event": {
+              "event": "perish_event",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/take_nearest_target/minecraft:timer/",
+          "content": {
+            "looping": true,
+            "time": 5,
+            "time_down_event": {
+              "event": "calmed_down",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/look_for_food/minecraft:timer/",
+          "content": {
+            "looping": true,
+            "time": 180,
+            "time_down_event": {
+              "event": "find_flower_timeout"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/find_hive/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 180,
+            "time_down_event": {
+              "event": "find_hive_timeout",
+              "target": "self"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/hive_full/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": [
+              5,
+              20
+            ],
+            "randomInterval": true,
+            "time_down_event": {
+              "event": "find_hive_event",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/boat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:above_bubble_column_down/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 3,
+            "time_down_event": {
+              "event": "minecraft:sink",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chest_boat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:above_bubble_column_down/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 3,
+            "time_down_event": {
+              "event": "minecraft:sink",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:timer/",
+          "content": {
+            "time": [
+              1,
+              3
+            ],
+            "looping": false,
+            "time_down_event": {
+              "event": "minecraft:target_far_enough",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 15,
+            "time_down_event": {
+              "event": "become_zombie_event"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:start_zombie_transformation/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 30,
+            "time_down_event": {
+              "event": "minecraft:convert_to_zombie"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 15,
+            "time_down_event": {
+              "event": "become_zombie_event"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/start_zombification/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 15,
+            "time_down_event": {
+              "event": "become_zombie_event"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:add_raid_omen/minecraft:timer/",
+          "content": {
+            "time": [
+              0,
+              0
+            ],
+            "looping": false,
+            "time_down_event": {
+              "event": "minecraft:clear_add_raid_omen",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pufferfish.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:half_puff_primary/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 2,
+            "randomInterval": false,
+            "time_down_event": {
+              "event": "minecraft:on_half_puff"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:half_puff_secondary/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 2,
+            "randomInterval": false,
+            "time_down_event": {
+              "event": "minecraft:on_normal_puff"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:deflate_sensor_buffer/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 0.01,
+            "randomInterval": false,
+            "time_down_event": {
+              "event": "minecraft:on_full_puff"
+            }
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:start_deflate/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 3,
+            "randomInterval": false,
+            "time_down_event": {
+              "event": "minecraft:on_deflate"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ravager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/stunned/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 2,
+            "time_down_event": {
+              "event": "minecraft:start_roar"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/component_groups/in_powder_snow/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 20,
+            "time_down_event": {
+              "event": "become_stray_event"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vex.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:start_damage_timer/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "randomInterval": true,
+            "time": [
+              30,
+              119
+            ],
+            "time_down_event": {
+              "event": "minecraft:add_periodic_damage"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wandering_trader.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "random_time_choices": [
+              {
+                "weight": 50,
+                "value": 2400
+              },
+              {
+                "weight": 50,
+                "value": 3600
+              }
+            ],
+            "time_down_event": {
+              "event": "minecraft:start_despawn",
+              "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 30,
+            "time_down_event": {
+              "event": "minecraft:convert_to_drowned"
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:start_drowned_transformation/minecraft:timer/",
+          "content": {
+            "looping": false,
+            "time": 30,
+            "time_down_event": {
+              "event": "minecraft:convert_to_drowned"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

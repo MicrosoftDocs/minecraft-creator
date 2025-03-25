@@ -1,0 +1,1643 @@
+{
+  "description": "Allows an entity to establish a way to get into the love state used for breeding.",
+  "note": "This component is commonly used in conjunction with the 'minecraft:behavior.breed' component.",
+  "fields": [
+    {
+      "id": "allow_sitting",
+      "description": "If true, entities can breed while sitting",
+      "dataType": 1,
+      "defaultValue": false
+    },
+    {
+      "id": "blend_attributes",
+      "description": "If true, the entities will blend their attributes in the offspring after they breed. For example, horses blend their health, movement, and jump_strength in their offspring.",
+      "dataType": 1,
+      "defaultValue": true
+    },
+    {
+      "id": "breed_cooldown",
+      "description": "Time in seconds before the Entity can breed again.",
+      "dataType": 3,
+      "defaultValue": 60
+    },
+    {
+      "id": "breed_items",
+      "description": "The list of items that can be used to get the entity into the 'love' state.",
+      "dataType": 17
+    },
+    {
+      "id": "breeds_with",
+      "description": "The list of entity definitions that this entity can breed with.",
+      "dataType": 15,
+      "subForm": {
+        "fields": [
+          {
+            "id": "baby_type",
+            "description": "The entity definition of this entity's babies.",
+            "dataType": 2
+          },
+          {
+            "id": "breed_event",
+            "description": "Event to run when this entity breeds.",
+            "dataType": 8,
+            "lookupId": "entityTypeEvents"
+          },
+          {
+            "id": "mate_type",
+            "description": "The inclusive minimum of the variant range.",
+            "dataType": 8,
+            "lookupId": "entityTypePlusVariants"
+          }
+        ]
+      }
+    },
+    {
+      "id": "causes_pregnancy",
+      "description": "If true, the entity will become pregnant instead of spawning a baby.",
+      "dataType": 1,
+      "defaultValue": false
+    },
+    {
+      "id": "deny_parents_variant",
+      "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
+      "dataType": 16,
+      "subForm": {
+        "fields": [
+          {
+            "id": "chance",
+            "description": "The percentage chance of denying the parents' variant.",
+            "dataType": 3
+          },
+          {
+            "id": "max_variant",
+            "description": "The inclusive maximum of the variant range.",
+            "dataType": 2
+          },
+          {
+            "id": "min_variant",
+            "description": "The inclusive minimum of the variant range.",
+            "dataType": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "environment_requirements",
+      "description": "The list of nearby block requirements to get the entity into the 'love' state.",
+      "dataType": 15,
+      "subForm": {
+        "fields": [
+          {
+            "id": "block_types",
+            "description": "The block types required nearby for the entity to breed.",
+            "dataType": 17
+          },
+          {
+            "id": "count",
+            "description": "The number of the required block types nearby for the entity to breed.",
+            "dataType": 0
+          },
+          {
+            "id": "radius",
+            "description": "How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16.",
+            "dataType": 3,
+            "minValue": 0,
+            "maxValue": 16
+          }
+        ]
+      }
+    },
+    {
+      "id": "extra_baby_chance",
+      "description": "Chance that up to 16 babies will spawn.",
+      "dataType": 21
+    },
+    {
+      "id": "inherit_tamed",
+      "description": "If true, the babies will be automatically tamed if its parents are.",
+      "dataType": 1
+    },
+    {
+      "id": "love_filters",
+      "description": "The filters to run when attempting to fall in love.",
+      "dataType": 20
+    },
+    {
+      "id": "mutation_factor",
+      "description": "Determines how likely the babies are to NOT inherit one of their parent's variances.",
+      "dataType": 16,
+      "subForm": {
+        "fields": [
+          {
+            "id": "color",
+            "description": "The percentage chance of denying the parents' variant.",
+            "dataType": 21
+          },
+          {
+            "id": "variant",
+            "description": "The percentage chance of a mutation on the entity's variant type.",
+            "dataType": 21
+          },
+          {
+            "id": "extra_variant",
+            "description": "The percentage chance of a mutation on the entity's extra variant type.",
+            "dataType": 21
+          }
+        ]
+      }
+    },
+    {
+      "id": "require_full_health",
+      "description": "If true, the entity needs to be at full health before it can breed.",
+      "dataType": 1,
+      "defaultValue": false
+    },
+    {
+      "id": "require_tame",
+      "description": "If true, the entities need to be tamed first before they can breed.",
+      "dataType": 1,
+      "defaultValue": true
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:breedable",
+    "title": "Breedable",
+    "description": "Defines the way an entity can get into the 'love' state.",
+    "fields": [
+      {
+        "id": "allow_sitting",
+        "title": "Allow Sitting",
+        "description": "If true, entities can breed while sitting",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_adult/minecraft:breedable/",
+              "content": true
+            }
+          ],
+          "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mike_eliz:eliza_adult/minecraft:breedable/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "blend_attributes",
+        "title": "Blend Attributes",
+        "description": "If true, the entities will blend their attributes in the offspring after they breed.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "breed_cooldown",
+        "title": "Breed Cooldown",
+        "description": "Time in seconds before the Entity can breed again.",
+        "defaultValue": 60,
+        "dataType": 3
+      },
+      {
+        "id": "breed_items",
+        "title": "Breed Items",
+        "description": "The list of items that can be used to get the entity into the 'love' state",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/",
+              "content": [
+                "spider_eye"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_adult/minecraft:breedable/",
+              "content": "tropical_fish_bucket"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/bee_adult/minecraft:breedable/",
+              "content": [
+                "minecraft:poppy",
+                "minecraft:blue_orchid",
+                "minecraft:allium",
+                "minecraft:azure_bluet",
+                "minecraft:red_tulip",
+                "minecraft:orange_tulip",
+                "minecraft:white_tulip",
+                "minecraft:pink_tulip",
+                "minecraft:oxeye_daisy",
+                "minecraft:cornflower",
+                "minecraft:lily_of_the_valley",
+                "minecraft:dandelion",
+                "minecraft:wither_rose",
+                "minecraft:sunflower",
+                "minecraft:lilac",
+                "minecraft:rose_bush",
+                "minecraft:peony",
+                "minecraft:flowering_azalea",
+                "minecraft:azalea_leaves_flowered",
+                "minecraft:mangrove_propagule",
+                "minecraft:pitcher_plant",
+                "minecraft:torchflower",
+                "minecraft:cherry_leaves",
+                "minecraft:pink_petals",
+                "minecraft:wildflowers",
+                "minecraft:cactus_flower"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:breedable/",
+              "content": [
+                "cactus"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_adult/minecraft:breedable/",
+              "content": [
+                "fish",
+                "salmon"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:breedable/",
+              "content": [
+                "wheat_seeds",
+                "beetroot_seeds",
+                "melon_seeds",
+                "pumpkin_seeds",
+                "pitcher_pod",
+                "torchflower_seeds"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:breedable/",
+              "content": "wheat"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/donkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:breedable/",
+              "content": [
+                "golden_carrot",
+                "golden_apple",
+                "appleEnchanted"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/fox.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:breedable/",
+              "content": [
+                "sweet_berries",
+                "glow_berries"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:breedable/",
+              "content": [
+                "slime_ball"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/goat_adult/minecraft:breedable/",
+              "content": "wheat"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/hoglin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:breedable/",
+              "content": [
+                "crimson_fungus"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:breedable/",
+              "content": [
+                "golden_carrot",
+                "golden_apple",
+                "appleEnchanted"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:breedable/",
+              "content": [
+                "hay_block"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ocelot.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:ocelot_trusting/minecraft:breedable/",
+              "content": [
+                "fish",
+                "salmon"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_adult/minecraft:breedable/",
+              "content": "bamboo"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pig.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_adult/minecraft:breedable/",
+              "content": [
+                "carrot",
+                "beetroot",
+                "potato"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/rabbit.json": [
+            {
+              "path": "/minecraft:entity/component_groups/adult/minecraft:breedable/",
+              "content": [
+                "golden_carrot",
+                "carrot",
+                "dandelion"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/sniffer.json": [
+            {
+              "path": "/minecraft:entity/component_groups/sniffer_adult/minecraft:breedable/",
+              "content": [
+                "torchflower_seeds"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_adult/minecraft:breedable/",
+              "content": [
+                "warped_fungus"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:breedable/",
+              "content": [
+                "hay_block"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/turtle.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/",
+              "content": [
+                "seagrass"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wolf.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:wolf_adult/minecraft:breedable/",
+              "content": [
+                "chicken",
+                "cooked_chicken",
+                "beef",
+                "cooked_beef",
+                "muttonRaw",
+                "muttonCooked",
+                "porkchop",
+                "cooked_porkchop",
+                "rabbit",
+                "cooked_rabbit",
+                "rotten_flesh"
+              ]
+            }
+          ],
+          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sheep_adult/minecraft:breedable/",
+              "content": "melon_slice"
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/",
+              "content": [
+                "seagrass"
+              ]
+            }
+          ],
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:sheep_adult/minecraft:breedable/",
+              "content": "melon_slice"
+            }
+          ],
+          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:breedable/",
+              "content": [
+                "wheat_seeds",
+                "beetroot_seeds",
+                "melon_seeds",
+                "pumpkin_seeds",
+                "pitcher_pod",
+                "torchflower_seeds"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "breeds_with",
+        "title": "Breeds With",
+        "description": "The list of entity definitions that this entity can breed with.",
+        "dataType": 15,
+        "subForm": {
+          "description": "The list of entity definitions that this entity can breed with.",
+          "fields": [
+            {
+              "id": "baby_type",
+              "title": "Baby Type",
+              "description": "The entity definition of this entity's babies.",
+              "dataType": 2
+            },
+            {
+              "id": "breed_event",
+              "title": "Breed Event",
+              "description": "Event to run when this entity breeds.",
+              "dataType": 22
+            },
+            {
+              "id": "mate_type",
+              "title": "Mate Type",
+              "description": "The entity definition of this entity's mate.",
+              "dataType": 2
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/",
+              "content": [
+                {
+                  "mate_type": "minecraft:armadillo",
+                  "baby_type": "minecraft:armadillo",
+                  "breed_event": {
+                    "event": "minecraft:entity_born",
+                    "target": "baby"
+                  }
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_adult/minecraft:breedable/",
+              "content": {
+                "mate_type": "minecraft:axolotl",
+                "baby_type": "minecraft:axolotl",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/bee.json": [
+            {
+              "path": "/minecraft:entity/component_groups/bee_adult/minecraft:breedable/",
+              "content": {
+                "mate_type": "minecraft:bee",
+                "baby_type": "minecraft:bee",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:breedable/",
+              "content": [
+                {
+                  "mate_type": "minecraft:camel",
+                  "baby_type": "minecraft:camel",
+                  "breed_event": {
+                    "event": "minecraft:entity_born",
+                    "target": "baby"
+                  }
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cat.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cat_adult/minecraft:breedable/",
+              "content": {
+                "mate_type": "minecraft:cat",
+                "baby_type": "minecraft:cat",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/chicken.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:breedable/",
+              "content": {
+                "mate_type": "minecraft:chicken",
+                "baby_type": "minecraft:chicken",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/cow.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:breedable/",
+              "content": {
+                "mate_type": "minecraft:cow",
+                "baby_type": "minecraft:cow",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "causes_pregnancy",
+        "title": "Causes Pregnancy",
+        "description": "If true, the entity will become pregnant instead of spawning a baby.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "deny_parents_variant",
+        "title": "Deny Parents Variant",
+        "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
+        "dataType": 15,
+        "subForm": {
+          "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
+          "fields": [
+            {
+              "id": "chance",
+              "title": "Chance",
+              "description": "The percentage chance of denying the parents' variant.",
+              "defaultValue": 0,
+              "dataType": 3
+            },
+            {
+              "id": "max_variant",
+              "title": "Max Variant",
+              "description": "The inclusive maximum of the variant range.",
+              "defaultValue": 0,
+              "dataType": 0
+            },
+            {
+              "id": "min_variant",
+              "title": "Min Variant",
+              "description": "The inclusive minimum of the variant range.",
+              "defaultValue": 0,
+              "dataType": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "environment_requirements",
+        "title": "Environment Requirements",
+        "description": "The list of nearby block requirements to get the entity into the 'love' state.",
+        "dataType": 15,
+        "subForm": {
+          "description": "The list of nearby block requirements to get the entity into the 'love' state.",
+          "fields": [
+            {
+              "id": "blocks",
+              "title": "Blocks",
+              "description": "The block types required nearby for the entity to breed.",
+              "dataType": 17
+            },
+            {
+              "id": "count",
+              "title": "Count",
+              "description": "The number of the required block types nearby for the entity to breed.",
+              "defaultValue": 1,
+              "dataType": 0
+            },
+            {
+              "id": "radius",
+              "title": "Radius",
+              "description": "How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16.",
+              "defaultValue": 5,
+              "dataType": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "extra_baby_chance",
+        "title": "Extra Baby Chance",
+        "description": "Chance that up to 16 babies will spawn between 0.0 and 1.0, where 1.0 is 100%.",
+        "defaultValue": 0,
+        "dataType": 3
+      },
+      {
+        "id": "inherit_tamed",
+        "title": "Inherit Tamed",
+        "description": "If true, the babies will be automatically tamed if its parents are",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "love_filters",
+        "title": "Love Filters",
+        "description": "The filters to run when attempting to fall in love.",
+        "dataType": 20
+      },
+      {
+        "id": "mutation_factor",
+        "title": "Mutation Factor",
+        "description": "Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.",
+        "dataType": 15,
+        "subForm": {
+          "description": "Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.",
+          "fields": [
+            {
+              "id": "color",
+              "title": "Color",
+              "description": "The percentage chance of the offspring getting its color as if spawned rather than inheriting color from its parents.",
+              "defaultValue": 0,
+              "dataType": 3
+            },
+            {
+              "id": "extra_variant",
+              "title": "Extra Variant",
+              "description": "The percentage chance of a mutation on the entity's extra variant type.",
+              "defaultValue": 0,
+              "dataType": 3
+            },
+            {
+              "id": "variant",
+              "title": "Variant",
+              "description": "The percentage chance of a mutation on the entity's variant type.",
+              "defaultValue": 0,
+              "dataType": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "mutation_strategy",
+        "title": "Mutation Strategy",
+        "description": "Strategy used for mutating variants and extra variants for offspring. Current valid alternatives are 'random' and 'none'.",
+        "defaultValue": "none",
+        "dataType": 2
+      },
+      {
+        "id": "parent_centric_attribute_blending",
+        "title": "Parent Centric Attribute Blending",
+        "description": " [EXPERIMENTAL] List of attributes that should benefit from parent centric attribute blending. For example, horses blend their health, movement, and jump_strength in their offspring.",
+        "dataType": 17
+      },
+      {
+        "id": "property_inheritance",
+        "title": "Property Inheritance",
+        "description": "List of Entity Properties that should be inherited from the parent entities and potentially mutated.",
+        "dataType": 17
+      },
+      {
+        "id": "random_extra_variant_mutation_interval",
+        "title": "Random Extra Variant Mutation Interval",
+        "description": "Range used to determine random extra variant.",
+        "defaultValue": 0,
+        "dataType": 18
+      },
+      {
+        "id": "random_variant_mutation_interval",
+        "title": "Random Variant Mutation Interval",
+        "description": "Range used to determine random variant.",
+        "defaultValue": 0,
+        "dataType": 18
+      },
+      {
+        "id": "require_full_health",
+        "title": "Require Full Health",
+        "description": "If true, the entity needs to be at full health before it can breed.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
+        "id": "require_tame",
+        "title": "Require Tame",
+        "description": "If true, the entities need to be tamed first before they can breed.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
+        "id": "transform_to_item",
+        "title": "Transform To Item",
+        "description": "The breed item used will transform to this item upon successful interaction. Format: itemName:auxValue",
+        "dataType": 2
+      },
+      {
+        "id": "combine_parent_colors",
+        "title": "Combine Parent Colors",
+        "dataType": 2
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/",
+          "content": {
+            "love_filters": {
+              "test": "enum_property",
+              "domain": "minecraft:armadillo_state",
+              "value": "unrolled"
+            },
+            "require_tame": false,
+            "breeds_with": [
+              {
+                "mate_type": "minecraft:armadillo",
+                "baby_type": "minecraft:armadillo",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              }
+            ],
+            "breed_items": [
+              "spider_eye"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/component_groups/axolotl_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breed_items": "tropical_fish_bucket",
+            "transform_to_item": "water_bucket:0",
+            "breeds_with": {
+              "mate_type": "minecraft:axolotl",
+              "baby_type": "minecraft:axolotl",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "mutation_factor": {
+              "variant": 0.00083
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/component_groups/bee_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "minecraft:bee",
+              "baby_type": "minecraft:bee",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "minecraft:poppy",
+              "minecraft:blue_orchid",
+              "minecraft:allium",
+              "minecraft:azure_bluet",
+              "minecraft:red_tulip",
+              "minecraft:orange_tulip",
+              "minecraft:white_tulip",
+              "minecraft:pink_tulip",
+              "minecraft:oxeye_daisy",
+              "minecraft:cornflower",
+              "minecraft:lily_of_the_valley",
+              "minecraft:dandelion",
+              "minecraft:wither_rose",
+              "minecraft:sunflower",
+              "minecraft:lilac",
+              "minecraft:rose_bush",
+              "minecraft:peony",
+              "minecraft:flowering_azalea",
+              "minecraft:azalea_leaves_flowered",
+              "minecraft:mangrove_propagule",
+              "minecraft:pitcher_plant",
+              "minecraft:torchflower",
+              "minecraft:cherry_leaves",
+              "minecraft:pink_petals",
+              "minecraft:wildflowers",
+              "minecraft:cactus_flower"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:camel_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": [
+              {
+                "mate_type": "minecraft:camel",
+                "baby_type": "minecraft:camel",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              }
+            ],
+            "breed_items": [
+              "cactus"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cat_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": true,
+            "require_full_health": true,
+            "allow_sitting": true,
+            "combine_parent_colors": true,
+            "breeds_with": {
+              "mate_type": "minecraft:cat",
+              "baby_type": "minecraft:cat",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "fish",
+              "salmon"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "minecraft:chicken",
+              "baby_type": "minecraft:chicken",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ],
+            "property_inheritance": {
+              "minecraft:climate_variant": {}
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breed_items": "wheat",
+            "breeds_with": {
+              "mate_type": "minecraft:cow",
+              "baby_type": "minecraft:cow",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "property_inheritance": {
+              "minecraft:climate_variant": {}
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:breedable/",
+          "content": {
+            "parent_centric_attribute_blending": [
+              "minecraft:health"
+            ],
+            "require_tame": true,
+            "inherit_tamed": false,
+            "breeds_with": [
+              {
+                "mate_type": "minecraft:donkey",
+                "baby_type": "minecraft:donkey",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              },
+              {
+                "mate_type": "minecraft:horse",
+                "baby_type": "minecraft:mule",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              }
+            ],
+            "breed_items": [
+              "golden_carrot",
+              "golden_apple",
+              "appleEnchanted"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:fox_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breed_items": [
+              "sweet_berries",
+              "glow_berries"
+            ],
+            "breeds_with": {
+              "mate_type": "minecraft:fox",
+              "baby_type": "minecraft:fox",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "causes_pregnancy": true,
+            "breeds_with": {
+              "mate_type": "minecraft:frog",
+              "baby_type": "minecraft:tadpole",
+              "breed_event": {
+                "event": "become_pregnant"
+              }
+            },
+            "breed_items": [
+              "slime_ball"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/component_groups/goat_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breed_items": "wheat",
+            "breeds_with": {
+              "mate_type": "minecraft:goat",
+              "baby_type": "minecraft:goat",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "mutation_factor": {
+              "variant": 0
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:hoglin_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "love_filters": {
+              "test": "has_component",
+              "subject": "self",
+              "operator": "!=",
+              "value": "minecraft:attack_cooldown"
+            },
+            "breeds_with": {
+              "mate_type": "minecraft:hoglin",
+              "baby_type": "minecraft:hoglin",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "crimson_fungus"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:breedable/",
+          "content": {
+            "parent_centric_attribute_blending": [
+              "minecraft:health",
+              "minecraft:movement",
+              "minecraft:horse.jump_strength"
+            ],
+            "require_tame": true,
+            "inherit_tamed": false,
+            "breeds_with": [
+              {
+                "mate_type": "minecraft:horse",
+                "baby_type": "minecraft:horse",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              },
+              {
+                "mate_type": "minecraft:donkey",
+                "baby_type": "minecraft:mule",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              }
+            ],
+            "breed_items": [
+              "golden_carrot",
+              "golden_apple",
+              "appleEnchanted"
+            ],
+            "mutation_factor": {
+              "extra_variant": 0.2,
+              "variant": 0.111
+            },
+            "mutation_strategy": "random",
+            "random_variant_mutation_interval": [
+              0,
+              7
+            ],
+            "random_extra_variant_mutation_interval": [
+              0,
+              5
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:breedable/",
+          "content": {
+            "parent_centric_attribute_blending": [
+              "minecraft:health"
+            ],
+            "require_tame": true,
+            "inherit_tamed": false,
+            "breeds_with": {
+              "mate_type": "minecraft:llama",
+              "baby_type": "minecraft:llama",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "hay_block"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mooshroom.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breed_items": "wheat",
+            "breeds_with": {
+              "mate_type": "minecraft:mooshroom",
+              "baby_type": "minecraft:mooshroom",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "deny_parents_variant": {
+              "chance": 0.00098,
+              "min_variant": 0,
+              "max_variant": 1
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:ocelot_trusting/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "minecraft:ocelot",
+              "baby_type": "minecraft:ocelot",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "fish",
+              "salmon"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:panda_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "blend_attributes": false,
+            "environment_requirements": {
+              "blocks": "bamboo",
+              "count": 8,
+              "radius": 5
+            },
+            "breed_items": "bamboo",
+            "breeds_with": {
+              "mate_type": "minecraft:panda",
+              "baby_type": "minecraft:panda",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "mutation_factor": {
+              "variant": 1
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "minecraft:pig",
+              "baby_type": "minecraft:pig",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "carrot",
+              "beetroot",
+              "potato"
+            ],
+            "property_inheritance": {
+              "minecraft:climate_variant": {}
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/component_groups/adult/minecraft:breedable/",
+          "content": {
+            "breed_items": [
+              "golden_carrot",
+              "carrot",
+              "dandelion"
+            ],
+            "breeds_with": {
+              "mate_type": "minecraft:rabbit",
+              "baby_type": "minecraft:rabbit"
+            },
+            "require_tame": false,
+            "mutation_factor": {
+              "variant": 0.2
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "combine_parent_colors": true,
+            "breeds_with": {
+              "mate_type": "minecraft:sheep",
+              "baby_type": "minecraft:sheep"
+            },
+            "breed_items": "wheat"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/component_groups/sniffer_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "causes_pregnancy": true,
+            "breeds_with": [
+              {
+                "mate_type": "minecraft:sniffer",
+                "breed_event": {
+                  "event": "on_pregnant",
+                  "target": "self"
+                }
+              }
+            ],
+            "breed_items": [
+              "torchflower_seeds"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:strider_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "minecraft:strider",
+              "baby_type": "minecraft:strider",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "warped_fungus"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": true,
+            "inherit_tamed": false,
+            "breeds_with": [
+              {
+                "mate_type": "minecraft:llama",
+                "baby_type": "minecraft:llama",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              },
+              {
+                "mate_type": "minecraft:trader_llama",
+                "baby_type": "minecraft:trader_llama",
+                "breed_event": {
+                  "event": "minecraft:entity_born",
+                  "target": "baby"
+                }
+              }
+            ],
+            "breed_items": [
+              "hay_block"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/turtle.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "causes_pregnancy": true,
+            "breeds_with": {
+              "mate_type": "minecraft:turtle",
+              "baby_type": "minecraft:turtle",
+              "breed_event": {
+                "event": "minecraft:become_pregnant",
+                "target": "self"
+              }
+            },
+            "breed_items": [
+              "seagrass"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": true,
+            "require_full_health": true,
+            "combine_parent_colors": true,
+            "breeds_with": {
+              "mate_type": "minecraft:wolf",
+              "baby_type": "minecraft:wolf",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "chicken",
+              "cooked_chicken",
+              "beef",
+              "cooked_beef",
+              "muttonRaw",
+              "muttonCooked",
+              "porkchop",
+              "cooked_porkchop",
+              "rabbit",
+              "cooked_rabbit",
+              "rotten_flesh"
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "aop_mobs:sheepomelon",
+              "baby_type": "aop_mobs:sheepomelon"
+            },
+            "breed_items": "melon_slice"
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": true,
+            "inherit_tamed": false,
+            "love_filters": {
+              "test": "is_mark_variant",
+              "subject": "self",
+              "operator": "!=",
+              "value": 1
+            },
+            "breeds_with": {
+              "mate_type": "aop_mobs:frost_moose",
+              "baby_type": "aop_mobs:frost_moose",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "hay_block"
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "causes_pregnancy": true,
+            "breeds_with": {
+              "mate_type": "anjelika:nardolphle",
+              "baby_type": "anjelika:nardolphle",
+              "breed_event": {
+                "event": "minecraft:become_pregnant",
+                "target": "self"
+              }
+            },
+            "breed_items": [
+              "seagrass"
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "aop_mobs:sheepomelon",
+              "baby_type": "aop_mobs:sheepomelon"
+            },
+            "breed_items": "melon_slice"
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": true,
+            "inherit_tamed": false,
+            "love_filters": {
+              "test": "is_mark_variant",
+              "subject": "self",
+              "operator": "!=",
+              "value": 1
+            },
+            "breeds_with": {
+              "mate_type": "aop_mobs:frost_moose",
+              "baby_type": "aop_mobs:frost_moose",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "hay_block"
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "causes_pregnancy": true,
+            "breeds_with": {
+              "mate_type": "anjelika:nardolphle",
+              "baby_type": "anjelika:nardolphle",
+              "breed_event": {
+                "event": "minecraft:become_pregnant",
+                "target": "self"
+              }
+            },
+            "breed_items": [
+              "seagrass"
+            ]
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:sheep_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "aop_mobs:sheepomelon",
+              "baby_type": "aop_mobs:sheepomelon"
+            },
+            "breed_items": "melon_slice"
+          }
+        }
+      ],
+      "/samples/behavior_pack_sample/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breed_items": "wheat",
+            "breeds_with": {
+              "mate_type": "minecraft:cow",
+              "baby_type": "minecraft:cow",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            }
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "mamm_cds:dream_turkey",
+              "baby_type": "mamm_cds:dream_turkey",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "mamm_cds:dream_turkey",
+              "baby_type": "mamm_cds:dream_turkey",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": false,
+            "breeds_with": {
+              "mate_type": "mamm_cds:dream_turkey",
+              "baby_type": "mamm_cds:dream_turkey",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "wheat_seeds",
+              "beetroot_seeds",
+              "melon_seeds",
+              "pumpkin_seeds",
+              "pitcher_pod",
+              "torchflower_seeds"
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mike_eliz:eliza_adult/minecraft:breedable/",
+          "content": {
+            "require_tame": true,
+            "require_full_health": true,
+            "allow_sitting": true,
+            "breeds_with": {
+              "mate_type": "mike_eliz:eliza",
+              "baby_type": "mike_eliz:eliza",
+              "breed_event": {
+                "event": "minecraft:entity_born",
+                "target": "baby"
+              }
+            },
+            "breed_items": [
+              "fish",
+              "salmon"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

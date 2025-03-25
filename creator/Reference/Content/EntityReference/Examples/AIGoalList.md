@@ -81,7 +81,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.look_at_target](EntityGoals/minecraftBehavior_look_at_target.md)| Compels an entity to look at the target by rotating the head bone pose within a set limit. |
 | [minecraft:behavior.look_at_trading_player](EntityGoals/minecraftBehavior_look_at_trading_player.md)| Compels an entity to look at the player that is currently trading with the entity. |
 | [minecraft:behavior.make_love](EntityGoals/minecraftBehavior_make_love.md)| Allows the villager to look for a mate to spawn other villagers with. |
-| [Melee Attack Behavior](EntityGoals/minecraftBehavior_melee_attack.md)| Allows an entity to deal damage through a melee attack. |
+| [minecraft:behavior.melee_attack](EntityGoals/minecraftBehavior_melee_attack.md)| Allows an entity to deal damage through a melee attack. |
 | [minecraft:behavior.melee_box_attack](EntityGoals/minecraftBehavior_melee_box_attack.md)| Allows an entity to deal damage through a melee attack with reach calculations based on bounding boxes. |
 | [minecraft:behavior.mingle](EntityGoals/minecraftBehavior_mingle.md)| Allows an entity to go to the village bell and mingle with other entities |
 | [minecraft:behavior.mount_pathing](EntityGoals/minecraftBehavior_mount_pathing.md)| Allows the mob to move around on its own while mounted seeking a target to attack. |
@@ -146,7 +146,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.slime_keep_on_jumping](EntityGoals/minecraftBehavior_slime_keep_on_jumping.md)| Allows the entity to continuously jump around like a slime. |
 | [minecraft:behavior.slime_random_direction](EntityGoals/minecraftBehavior_slime_random_direction.md)| Allows the entity to move in random directions like a slime. |
 | [minecraft:behavior.snacking](EntityGoals/minecraftBehavior_snacking.md)| Allows the mob to take a load off and snack on food that it found nearby. |
-| [Sneeze Behavior](EntityGoals/minecraftBehavior_sneeze.md)| Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an item. |
+| [minecraft:behavior.sneeze](EntityGoals/minecraftBehavior_sneeze.md)| Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an item. |
 | [minecraft:behavior.sniff](EntityGoals/minecraftBehavior_sniff.md)| Allows this entity to detect the nearest player within "sniffing_radius" and update its "minecraft:suspect_tracking" component state |
 | [minecraft:behavior.sonic_boom](EntityGoals/minecraftBehavior_sonic_boom.md)| Allows this entity to perform a 'sonic boom' ranged attack |
 | [minecraft:behavior.squid_dive](EntityGoals/minecraftBehavior_squid_dive.md)| Allows the squid to dive down in water. |

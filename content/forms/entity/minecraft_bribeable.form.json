@@ -1,0 +1,47 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:bribeable",
+    "title": "Bribeable",
+    "description": "Defines the way an entity can get into the 'bribed' state.",
+    "fields": [
+      {
+        "id": "bribe_cooldown",
+        "title": "Bribe Cooldown",
+        "description": "Time in seconds before the Entity can be bribed again.",
+        "defaultValue": 2,
+        "dataType": 3
+      },
+      {
+        "id": "bribe_items",
+        "title": "Bribe Items",
+        "description": "The list of items that can be used to bribe the entity.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dolphin_adult/minecraft:bribeable/",
+              "content": [
+                "fish",
+                "salmon"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/dolphin_adult/minecraft:bribeable/",
+          "content": {
+            "bribe_items": [
+              "fish",
+              "salmon"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

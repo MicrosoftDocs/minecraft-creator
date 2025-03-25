@@ -1,0 +1,89 @@
+{
+  "title": "Fuel",
+  "description": "Allows this item to be used as fuel in a furnace to 'cook' other items.",
+  "scalarFieldUpgradeName": "duration",
+  "fields": [
+    {
+      "id": "duration",
+      "title": "duration",
+      "description": "How long in seconds will this fuel cook items for. Minimum value: 0.05.",
+      "dataType": 3
+    }
+  ],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Fuel",
+    "description": "Fuel item component allows this item to be used as fuel in a furnace to 'cook' other items.",
+    "fields": [
+      {
+        "id": "duration",
+        "title": "Duration",
+        "dataType": 7,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:fuel/",
+              "content": 3
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:fuel/",
+              "content": 3
+            }
+          ]
+        }
+      }
+    ],
+    "id": "minecraft:fuel",
+    "samples": {
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:fuel/",
+          "content": {
+            "duration": 3
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:fuel/",
+          "content": {
+            "duration": 3
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:fuel/",
+          "content": {
+            "duration": 3
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_turtle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:fuel/",
+          "content": {
+            "duration": 3
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_weak.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:fuel/",
+          "content": {
+            "duration": 3
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:fuel/",
+          "content": {
+            "duration": 3
+          }
+        }
+      ]
+    }
+  }
+}

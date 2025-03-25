@@ -1,0 +1,76 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:peek",
+    "title": "Peek",
+    "description": "Defines the entity's 'peek' behavior, defining the events that should be called during it.",
+    "fields": [
+      {
+        "id": "on_close",
+        "title": "On Close",
+        "description": "Event to call when the entity is done peeking.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/shulker.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:peek/",
+              "content": {
+                "event": "minecraft:on_close"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_open",
+        "title": "On Open",
+        "description": "Event to call when the entity starts peeking.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/shulker.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:peek/",
+              "content": {
+                "event": "minecraft:on_open"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_target_open",
+        "title": "On Target Open",
+        "description": "Event to call when the entity's target entity starts peeking.",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/shulker.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:peek/",
+              "content": {
+                "event": "minecraft:on_open"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/shulker.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:peek/",
+          "content": {
+            "on_open": {
+              "event": "minecraft:on_open"
+            },
+            "on_close": {
+              "event": "minecraft:on_close"
+            },
+            "on_target_open": {
+              "event": "minecraft:on_open"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

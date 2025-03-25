@@ -1,0 +1,21 @@
+{
+  "id": "minecraft:player.experience",
+  "title": "Player Experience",
+  "description": "Defines how much experience each player action should take.",
+  "fields": [
+    {
+      "id": "value",
+      "title": "Value",
+      "description": "The initial value of the player experience.",
+      "defaultValue": 1,
+      "dataType": 0
+    },
+    {
+      "id": "max",
+      "title": "Maximum Value",
+      "description": "The maximum player experience of this entity.",
+      "defaultValue": 5,
+      "dataType": 0
+    }
+  ]
+}

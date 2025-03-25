@@ -1,0 +1,155 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:exhaustion_values",
+    "title": "Exhaustion Values",
+    "description": "Defines how much exhaustion each player action should take.",
+    "fields": [
+      {
+        "id": "attack",
+        "title": "Attack",
+        "description": "Amount of exhaustion applied when attacking.",
+        "defaultValue": 0.1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:exhaustion_values/",
+              "content": 0.1
+            }
+          ]
+        }
+      },
+      {
+        "id": "damage",
+        "title": "Damage",
+        "description": "Amount of exhaustion applied when taking damage.",
+        "defaultValue": 0.1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:exhaustion_values/",
+              "content": 0.1
+            }
+          ]
+        }
+      },
+      {
+        "id": "heal",
+        "title": "Heal",
+        "description": "Amount of exhaustion applied when healed through food regeneration.",
+        "defaultValue": 6,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:exhaustion_values/",
+              "content": 6
+            }
+          ]
+        }
+      },
+      {
+        "id": "jump",
+        "title": "Jump",
+        "description": "Amount of exhaustion applied when jumping.",
+        "defaultValue": 0.05,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:exhaustion_values/",
+              "content": 0.05
+            }
+          ]
+        }
+      },
+      {
+        "id": "mine",
+        "title": "Mine",
+        "description": "Amount of exhaustion applied when mining.",
+        "defaultValue": 0.005,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:exhaustion_values/",
+              "content": 0.005
+            }
+          ]
+        }
+      },
+      {
+        "id": "sprint",
+        "title": "Sprint",
+        "description": "Amount of exhaustion applied when sprinting.",
+        "defaultValue": 0.01,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:exhaustion_values/",
+              "content": 0.1
+            }
+          ]
+        }
+      },
+      {
+        "id": "sprint_jump",
+        "title": "Sprint Jump",
+        "description": "Amount of exhaustion applied when sprint jumping.",
+        "defaultValue": 0.2,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:exhaustion_values/",
+              "content": 0.2
+            }
+          ]
+        }
+      },
+      {
+        "id": "swim",
+        "title": "Swim",
+        "description": "Amount of exhaustion applied when swimming.",
+        "defaultValue": 0.01,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:exhaustion_values/",
+              "content": 0.01
+            }
+          ]
+        }
+      },
+      {
+        "id": "walk",
+        "title": "Walk",
+        "description": "Amount of exhaustion applied when walking.",
+        "defaultValue": 0,
+        "dataType": 3
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:exhaustion_values/",
+          "content": {
+            "heal": 6,
+            "jump": 0.05,
+            "sprint_jump": 0.2,
+            "mine": 0.005,
+            "attack": 0.1,
+            "damage": 0.1,
+            "walk": 0,
+            "sprint": 0.1,
+            "swim": 0.01
+          }
+        }
+      ]
+    }
+  }
+}

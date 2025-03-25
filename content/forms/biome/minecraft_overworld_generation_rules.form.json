@@ -1,0 +1,109 @@
+{
+  "fields": [
+    {
+      "id": "generate_for_climates",
+      "description": "Can be just the name of a biome, or an array of any size. If an array, each entry can be a biome name string, or an array of size 2, where the first entry is a biome name and the second entry is a positive integer representing how that biome is weighted against other entries. If no weight is provided, a weight of 1 is used."
+    },
+    {
+      "id": "hills_transformation",
+      "description": "An array of any size containing arrays of exactly two elements. For each contained array, the first element is a climate category string ('medium', 'warm', 'lukewarm', 'cold', or 'frozen'). The second element is a positive integer for how much that entry is weighted relative to other entries."
+    }
+  ],
+  "generated_doNotEdit": {
+    "title": "Overworld Generation Rules",
+    "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.",
+    "fields": [
+      {
+        "id": "mutate_transformation",
+        "title": "mutate_transformation",
+        "description": "What biome to switch to when converting to a mutated biome",
+        "dataType": 16
+      },
+      {
+        "id": "hills_transformation",
+        "title": "hills_transformation",
+        "description": "What biome to switch to when converting to a hilly biome",
+        "dataType": 16
+      },
+      {
+        "id": "generate_for_climates",
+        "title": "generate_for_climates",
+        "description": "Controls the world generation climate categories that this biome can spawn for. A single biome can be associated with multiple categories with different weightings.",
+        "dataType": 15
+      },
+      {
+        "id": "river_transformation",
+        "title": "river_transformation",
+        "description": "What biome to switch to when converting to a river biome (if not the Vanilla 'river' biome)",
+        "dataType": 16
+      },
+      {
+        "id": "shore_transformation",
+        "title": "shore_transformation",
+        "description": "What biome to switch to when adjacent to an ocean biome",
+        "dataType": 16
+      }
+    ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "title": "Overworld Generation Rules",
+    "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.",
+    "fields": [
+      {
+        "id": "mutate_transformation",
+        "title": "mutate_transformation",
+        "description": "What biome to switch to when converting to a mutated biome",
+        "dataType": 17,
+        "alternates": [
+          {
+            "id": "mutate_transformation",
+            "dataType": 2
+          }
+        ]
+      },
+      {
+        "id": "hills_transformation",
+        "title": "hills_transformation",
+        "description": "What biome to switch to when converting to a hilly biome",
+        "dataType": 17,
+        "alternates": [
+          {
+            "id": "hills_transformation",
+            "dataType": 2
+          }
+        ]
+      },
+      {
+        "id": "generate_for_climates",
+        "title": "generate_for_climates",
+        "description": "Controls the world generation climate categories that this biome can spawn for. A single biome can be associated with multiple categories with different weightings.",
+        "dataType": 15
+      },
+      {
+        "id": "river_transformation",
+        "title": "river_transformation",
+        "description": "What biome to switch to when converting to a river biome (if not the Vanilla 'river' biome)",
+        "dataType": 17,
+        "alternates": [
+          {
+            "id": "river_transformation",
+            "dataType": 2
+          }
+        ]
+      },
+      {
+        "id": "shore_transformation",
+        "title": "shore_transformation",
+        "description": "What biome to switch to when adjacent to an ocean biome",
+        "dataType": 17,
+        "alternates": [
+          {
+            "id": "shore_transformation",
+            "dataType": 2
+          }
+        ]
+      }
+    ],
+    "id": "minecraft:overworld_generation_rules"
+  }
+}

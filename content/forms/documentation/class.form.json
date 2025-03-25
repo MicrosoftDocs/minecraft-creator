@@ -1,0 +1,15 @@
+{
+  "title": "Documented Class",
+  "fields": [
+    {
+      "id": "id",
+      "title": "Id",
+      "dataType": 2
+    },
+    {
+      "id": "name",
+      "title": "Name",
+      "dataType": 2
+    }
+  ]
+}

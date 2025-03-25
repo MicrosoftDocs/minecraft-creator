@@ -1,0 +1,24 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:input_air_controlled",
+    "title": "Input Air Controlled",
+    "description": "When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions. Only available with `\"use_beta_features\": true` and likely to be drastically changed or removed.",
+    "fields": [
+      {
+        "id": "backwards_movement_modifier",
+        "title": "Backwards Movement Modifier",
+        "description": "Modifies speed going backwards.",
+        "defaultValue": 0.5,
+        "dataType": 3
+      },
+      {
+        "id": "strafe_speed_modifier",
+        "title": "Strafe Speed Modifier",
+        "description": "Modifies the strafe speed.",
+        "defaultValue": 0.4,
+        "dataType": 3
+      }
+    ]
+  }
+}

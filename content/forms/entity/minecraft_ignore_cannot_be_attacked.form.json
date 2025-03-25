@@ -1,0 +1,16 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:ignore_cannot_be_attacked",
+    "title": "Ignore Cannot Be Attacked",
+    "description": "When set, blocks entities from attacking the owner entity unless they have the \"minecraft:ignore_cannot_be_attacked\" component.",
+    "fields": [
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "Defines which entities are exceptions and are allowed to be attacked by the owner entity, potentially attacked entity is subject \"other\". If this is not specified then all attacks by the owner are allowed.",
+        "dataType": 20
+      }
+    ]
+  }
+}

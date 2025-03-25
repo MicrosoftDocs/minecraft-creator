@@ -1,0 +1,64 @@
+{
+  "fields": [
+    {
+      "id": "tint_method",
+      "title": "Tint Method",
+      "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint.",
+      "dataType": 2,
+      "isRequired": false,
+      "mustMatchChoices": true,
+      "choices": [
+        {
+          "id": "none",
+          "title": "None"
+        },
+        {
+          "id": "default_foliage",
+          "title": "Default Foliage"
+        },
+        {
+          "id": "birch_foliage",
+          "title": "Birch Foliage"
+        },
+        {
+          "id": "evergreen_foliage",
+          "title": "Evergereen Foliage"
+        },
+        {
+          "id": "dry_foliage",
+          "title": "Dry Foliage"
+        },
+        {
+          "id": "grass",
+          "title": "Grass"
+        },
+        {
+          "id": "water",
+          "title": "Water"
+        }
+      ]
+    }
+  ],
+  "isExperimental": true,
+  "requiredExperiment": "Upcoming Creator Features",
+  "description": "[Note: This component is currently experimental]. Sets the particles that will be used when block is destroyed.",
+  "generated_doNotEdit": {
+    "id": "minecraft:destruction_particles",
+    "title": "Destruction Particles",
+    "description": "Sets the particles that will be used when block is destroyed. This component can be omitted.",
+    "fields": [
+      {
+        "id": "texture",
+        "title": "Texture",
+        "description": "The texture name used for the particle.",
+        "dataType": 2
+      },
+      {
+        "id": "tint_method",
+        "title": "Tint Method",
+        "description": "Optional, tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
+        "dataType": 2
+      }
+    ]
+  }
+}

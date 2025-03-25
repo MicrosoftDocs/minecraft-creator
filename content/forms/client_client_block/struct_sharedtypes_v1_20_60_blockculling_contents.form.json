@@ -1,0 +1,33 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct SharedTypes V1 20 60 BlockCulling Contents Client Client Block",
+    "description": "Struct SharedTypes V1 20 60 BlockCulling Contents Client Client Block",
+    "fields": [
+      {
+        "id": "description",
+        "title": "description",
+        "description": "description",
+        "dataType": 16,
+        "subForm": {
+          "title": "Description",
+          "description": "Description",
+          "fields": [
+            {
+              "id": "identifier",
+              "title": "identifier",
+              "description": "identifier",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "rules",
+        "title": "rules",
+        "description": "rules",
+        "dataType": 15
+      }
+    ]
+  }
+}

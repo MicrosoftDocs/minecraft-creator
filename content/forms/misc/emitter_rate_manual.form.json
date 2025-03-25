@@ -1,0 +1,26 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Emitter Rate Manual Misc",
+    "description": "Emitter Rate Manual Misc",
+    "fields": [
+      {
+        "id": "max_particles",
+        "title": "max_particles",
+        "description": "max_particles",
+        "dataType": 16,
+        "subForm": {
+          "title": "Max Particles",
+          "description": "Max Particles",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "max_particles",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

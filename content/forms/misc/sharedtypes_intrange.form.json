@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "SharedTypes IntRange",
+    "description": "SharedTypes IntRange",
+    "fields": [
+      {
+        "id": "min",
+        "title": "min",
+        "description": "min",
+        "dataType": 0
+      },
+      {
+        "id": "max",
+        "title": "max",
+        "description": "max",
+        "dataType": 0
+      }
+    ]
+  }
+}

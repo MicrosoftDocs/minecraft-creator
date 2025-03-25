@@ -1,0 +1,64 @@
+{
+  "id": "MobKilled",
+  "title": "Mob Killed",
+  "description": "A mob was unalived.",
+  "fields": [
+    {
+      "id": "player",
+      "description": "Identifier of the player that interacted with a mob.",
+      "dataType": 16,
+      "subFormId": "websockets/Player"
+    },
+    {
+      "id": "victim",
+      "description": "Entity that was unalived.",
+      "dataType": 2
+    },
+    {
+      "id": "killMethodType",
+      "description": "Method of mob interaction.",
+      "dataType": 0
+    },
+    {
+      "id": "weapon",
+      "description": "Weapon that was used.",
+      "dataType": 0
+    },
+    {
+      "id": "armorHead",
+      "description": "Armor that was on the head of the mob.",
+      "dataType": 0
+    },
+    {
+      "id": "armorFeet",
+      "description": "Armor that was on the feet of the mob.",
+      "dataType": 0
+    },
+    {
+      "id": "armorLegs",
+      "description": "Armor that was on the legs of the mob.",
+      "dataType": 0
+    },
+    {
+      "id": "armorTorso",
+      "description": "Armor that was on the torso of the mob.",
+      "dataType": 0
+    },
+    {
+      "id": "armorBody",
+      "description": "Armor that was on the body of the mob.",
+      "dataType": 0
+    },
+    {
+      "id": "isMonster",
+      "description": "True if the mob was a monster.",
+      "dataType": 1
+    },
+    {
+      "id": "playerIsHiddenFrom",
+      "description": "Player that the mob was hidden from.",
+      "dataType": 16,
+      "subFormId": "websockets/Player"
+    }
+  ]
+}

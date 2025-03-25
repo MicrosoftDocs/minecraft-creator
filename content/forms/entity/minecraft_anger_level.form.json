@@ -1,0 +1,329 @@
+{
+  "title": "Anger Level",
+  "description": "Compels the entity to track anger towards a set of nuisances.",
+  "fields": [
+    {
+      "id": "anger_decrement_interval",
+      "description": "Anger level will decay over time. Defines how often anger towards all nuisances will decrease by on.",
+      "dataType": 2
+    },
+    {
+      "id": "sound_interval",
+      "description": "Anger boost applied to angry threshold when the entity gets angry.",
+      "dataType": 18
+    },
+    {
+      "id": "duration",
+      "description": "The amount of time in seconds that the entity will be angry.",
+      "dataType": 0
+    },
+    {
+      "id": "duration_delta",
+      "description": "Variance in seconds added to the duration [-delta, delta].",
+      "dataType": 0
+    },
+    {
+      "id": "filters",
+      "title": "Anger exemption filters",
+      "description": "Filter out mob types that it should not attack while angry (other Piglins)",
+      "dataType": 20
+    },
+    {
+      "id": "broadcast_anger",
+      "description": "If set, other entities of the same entity definition within the broadcastRange will also become angry",
+      "dataType": 1,
+      "defaultValue": false
+    },
+    {
+      "id": "broadcast_anger_on_attack",
+      "description": "If set, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks",
+      "dataType": 1,
+      "defaultValue": false
+    },
+    {
+      "id": "broadcast_range",
+      "description": "Distance in blocks within which other entities of the same entity type will become angry",
+      "dataType": 0,
+      "defaultValue": 20
+    },
+    {
+      "id": "broadcast_targets",
+      "description": "A list of entity families to broadcast anger to",
+      "dataType": 17
+    },
+    {
+      "id": "broadcast_filters",
+      "description": "Conditions that make this entry in the list valid",
+      "dataType": 20
+    },
+    {
+      "id": "calm_event",
+      "description": "Event to fire when this entity is calmed down",
+      "dataType": 8,
+      "lookupId": "entityTypeEvents"
+    },
+    {
+      "id": "on_increase_sounds",
+      "title": "On Increase Sounds",
+      "description": "Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins",
+      "dataType": 15,
+      "subForm": {
+        "description": "Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins",
+        "fields": [
+          {
+            "id": "condition",
+            "title": "Condition",
+            "description": "A Molang expression describing under which conditions to play this sound, given that the entity was provoked",
+            "dataType": 2
+          },
+          {
+            "id": "sound",
+            "title": "Sound",
+            "description": "The sound to play",
+            "lookupId": "soundDefinition",
+            "dataType": 2
+          }
+        ]
+      }
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:anger_level",
+    "title": "Anger Level",
+    "description": "Allows this entity to track anger towards a set of nuisances",
+    "fields": [
+      {
+        "id": "anger_decrement_interval",
+        "title": "Anger Decrement Interval",
+        "description": "Anger level will decay over time. Defines how often anger towards all nuisances will be decreased by one",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:anger_level/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "angry_boost",
+        "title": "Angry Boost",
+        "description": "Anger boost applied to angry threshold when mob gets angry",
+        "defaultValue": 20,
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 0
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:anger_level/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "angry_threshold",
+        "title": "Angry Threshold",
+        "description": "Threshold that define when the mob is considered angry at a nuisance",
+        "defaultValue": 80,
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 0
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:anger_level/",
+              "content": 80
+            }
+          ]
+        }
+      },
+      {
+        "id": "default_annoyingness",
+        "title": "Default Annoyingness",
+        "description": "The default amount of annoyingness for any given nuisance. Specifies how much to raise anger level on each provocation",
+        "defaultValue": "0",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:anger_level/",
+              "content": 35
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_anger",
+        "title": "Max Anger",
+        "description": "The maximum anger level that can be reached. Applies to any nuisance",
+        "defaultValue": 100,
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 0
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:anger_level/",
+              "content": 150
+            }
+          ]
+        }
+      },
+      {
+        "id": "nuisance_filter",
+        "title": "Nuisance Filter",
+        "description": "Filter that is applied to determine if a mob can be a nuisance",
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:anger_level/",
+              "content": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "not",
+                    "value": "warden"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "not",
+                    "value": "inanimate"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_increase_sounds",
+        "title": "On Increase Sounds",
+        "description": "Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins",
+        "dataType": 15,
+        "subForm": {
+          "description": "Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins",
+          "fields": [
+            {
+              "id": "condition",
+              "title": "Condition",
+              "description": "A Molang expression describing under which conditions to play this sound, given that the entity was provoked",
+              "dataType": 2
+            },
+            {
+              "id": "sound",
+              "title": "Sound",
+              "description": "The sound to play",
+              "dataType": 2
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:anger_level/",
+              "content": [
+                {
+                  "sound": "listening_angry",
+                  "condition": "query.anger_level(this) >= 40"
+                },
+                {
+                  "sound": "listening",
+                  "condition": "query.anger_level(this) >= 0"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "remove_targets_below_angry_threshold",
+        "title": "Remove Targets Below Angry Threshold",
+        "description": "Defines if the mob should remove target if it falls below 'angry' threshold",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:anger_level/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "default_projectile_annoyingness",
+        "title": "Default Projectile Annoyingness",
+        "dataType": 7,
+        "samples": {
+          "/vanilla/behavior_pack/entities/warden.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:anger_level/",
+              "content": 10
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:anger_level/",
+          "content": {
+            "max_anger": 150,
+            "angry_threshold": 80,
+            "remove_targets_below_angry_threshold": true,
+            "angry_boost": 20,
+            "anger_decrement_interval": 1,
+            "default_annoyingness": 35,
+            "default_projectile_annoyingness": 10,
+            "on_increase_sounds": [
+              {
+                "sound": "listening_angry",
+                "condition": "query.anger_level(this) >= 40"
+              },
+              {
+                "sound": "listening",
+                "condition": "query.anger_level(this) >= 0"
+              }
+            ],
+            "nuisance_filter": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "not",
+                  "value": "warden"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "not",
+                  "value": "inanimate"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

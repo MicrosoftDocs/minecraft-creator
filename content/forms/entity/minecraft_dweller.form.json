@@ -1,0 +1,61 @@
+{
+  "id": "minecraft:dweller",
+  "title": "Dweller",
+  "description": "Compels an entity to join and migrate between villages and other dwellings.",
+  "fields": [
+    {
+      "id": "dwelling_type",
+      "title": "Dwelling Type",
+      "description": "The type of dwelling the entity wishes to join. Current Types: village.",
+      "dataType": 2
+    },
+    {
+      "id": "dwelling_role",
+      "title": "Dwelling Role",
+      "description": "The role of which the entity plays in the dwelling. Current Roles: inhabitant, defender, hostile, passive.",
+      "dataType": 2
+    },
+    {
+      "id": "update_interval_base",
+      "title": "Update Interval Base",
+      "description": "How often the entity checks on their dwelling status in ticks. Positive values only.",
+      "dataType": 3
+    },
+    {
+      "id": "update_interval_variant",
+      "title": "Update Interval Variant",
+      "description": "The variant value in ticks that will be added to the update_interval_base.",
+      "dataType": 3
+    },
+    {
+      "id": "can_find_poi",
+      "title": "Can find POI",
+      "description": "Whether or not the entity can find and add POIs to the dwelling.",
+      "dataType": 1
+    },
+    {
+      "id": "first_founding_reward",
+      "title": "First Founding Reward",
+      "description": "Determines how much reputation players are rewarded on first founding.",
+      "dataType": 0
+    },
+    {
+      "id": "can_migrate",
+      "title": "Can Migrate",
+      "description": "Determines whether the entity can migrate between dwellings, or only have its initial dwelling.",
+      "dataType": 1
+    },
+    {
+      "id": "dwelling_bounds_tolerance",
+      "title": "Dwelling Bounds Tolerance",
+      "description": "A padding distance for checking if the entity is within the dwelling.",
+      "dataType": 3
+    },
+    {
+      "id": "preferred_profession",
+      "title": "Preferred Profession",
+      "description": "Allows the user to define a starting profession for this particular Dweller, instead of letting them choose organically. (They still need to gain experience from trading before this takes effect.)",
+      "dataType": 2
+    }
+  ]
+}

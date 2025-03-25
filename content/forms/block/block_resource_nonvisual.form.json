@@ -1,0 +1,13 @@
+{
+  "title": "Block Resource Properties",
+  "description": "Defines properties related to a solid unit cube's audio.",
+  "fields": [
+    {
+      "id": "sound",
+      "title": "Sound",
+      "description": "Sound item to use.",
+      "lookupId": "soundDefinition",
+      "dataType": 2
+    }
+  ]
+}

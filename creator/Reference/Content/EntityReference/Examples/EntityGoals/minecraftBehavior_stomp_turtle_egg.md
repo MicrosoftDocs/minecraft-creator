@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.stomp_turtle_egg"
-description: "Describes the behavior.stomp_turtle_egg AI Goals"
+title: "Entity Documentation - minecraft:behavior.stomp_turtle_egg"
+description: "Describes the minecraft:behavior.stomp_turtle_egg ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.stomp_turtle_egg
+# Entity Documentation - minecraft:behavior.stomp_turtle_egg
 
 Allows this mob to stomp turtle eggs.
 
@@ -29,21 +29,7 @@ Allows this mob to stomp turtle eggs.
 
 
 ```json
-{
-  "priority": 4,
-  "speed_multiplier": 1,
-  "search_range": 10,
-  "search_height": 2,
-  "goal_radius": 1.14,
-  "interval": 20
-}
-```
-
-#### [Husk](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/husk.json)
-
-
-```json
-{
+"minecraft:behavior.stomp_turtle_egg": {
   "priority": 4,
   "speed_multiplier": 1,
   "search_range": 10,
@@ -57,50 +43,8 @@ Allows this mob to stomp turtle eggs.
 
 
 ```json
-{
+"minecraft:behavior.stomp_turtle_egg": {
   "priority": 5,
-  "speed_multiplier": 1,
-  "search_range": 10,
-  "search_height": 2,
-  "goal_radius": 1.14,
-  "interval": 20
-}
-```
-
-#### [Zombie Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
-
-
-```json
-{
-  "priority": 4,
-  "speed_multiplier": 1,
-  "search_range": 10,
-  "search_height": 2,
-  "goal_radius": 1.14,
-  "interval": 20
-}
-```
-
-#### [Zombie Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager.json)
-
-
-```json
-{
-  "priority": 4,
-  "speed_multiplier": 1,
-  "search_range": 10,
-  "search_height": 2,
-  "goal_radius": 1.14,
-  "interval": 20
-}
-```
-
-#### [Zombie](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie.json)
-
-
-```json
-{
-  "priority": 4,
   "speed_multiplier": 1,
   "search_range": 10,
   "search_height": 2,

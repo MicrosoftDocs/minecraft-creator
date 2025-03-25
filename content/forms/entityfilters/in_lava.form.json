@@ -1,0 +1,1286 @@
+{
+  "fields": [],
+  "note": "Does not require any parameters to work properly. It can be used as a standalone filter.",
+  "tags": [
+    "standalone"
+  ],
+  "generated_doNotEdit": {
+    "id": "in_lava",
+    "title": "In Lava",
+    "description": "Returns true when the subject entity is in lava.",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+              "content": "=="
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armor_stand.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+              "content": "=="
+            }
+          ]
+        }
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+              "content": "self"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+              "content": "self"
+            }
+          ]
+        }
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Optional) true or false.",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armor_stand.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/allay.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+              "content": "in_lava"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/armadillo.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+              "content": "in_lava"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"in_lava\", \"subject\": \"self\", \"operator\": \"equals\", \"value\": \"true\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"in_lava\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/allay.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/armadillo.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/armor_stand.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/arrow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bee.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/boat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.jump_around_target/filters/all_of/2/",
+          "content": {
+            "test": "in_lava",
+            "value": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chest_boat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/chicken.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creaking.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/donkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/enderman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/endermite.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/evocation_illager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.croak/filters/all_of/1/",
+          "content": {
+            "test": "in_lava",
+            "value": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/glow_squid.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/hoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/iron_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mooshroom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/mule.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ocelot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/parrot.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/phantom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pig.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/polar_bear.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pufferfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ravager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/salmon.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sheep.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/silverfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/slime.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/sniffer.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/snow_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/squid.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tadpole.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/trader_llama.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tripod_camera.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tropicalfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/turtle.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vindicator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wandering_trader.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/witch.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/nardolphle.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/behavior_pack_sample/entities/cow.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/entities/memory_jar.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/custom_cat_eliza/behavior_packs/mike_eliz/entities/eliza.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_zombie_leader.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ]
+    }
+  }
+}

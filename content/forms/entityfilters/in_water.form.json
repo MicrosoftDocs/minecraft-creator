@@ -1,0 +1,276 @@
+{
+  "fields": [],
+  "note": "Does not require any parameters to work properly. It can be used as a standalone filter.",
+  "tags": [
+    "standalone"
+  ],
+  "generated_doNotEdit": {
+    "id": "in_water",
+    "title": "In Water",
+    "description": "Returns true when the subject entity is in water.",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_in_water/minecraft:environment_sensor/triggers/0/filters/",
+              "content": "!="
+            },
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_on_land_in_rain/minecraft:environment_sensor/triggers/1/filters/",
+              "content": "=="
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.play_dead/filters/",
+              "content": "=="
+            }
+          ],
+          "/vanilla/behavior_pack/entities/dolphin.json": [
+            {
+              "path": "/minecraft:entity/component_groups/dolphin_swimming_navigation/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+              "content": "!="
+            }
+          ]
+        }
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ],
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/0/",
+              "content": "other"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/0/",
+              "content": "other"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/pillager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/filters/",
+              "content": "self"
+            }
+          ]
+        }
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Optional) true or false.",
+        "defaultValue": true,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_in_water/minecraft:environment_sensor/triggers/0/filters/",
+              "content": true
+            },
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_on_land_in_rain/minecraft:environment_sensor/triggers/1/filters/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/axolotl.json": [
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_in_water/minecraft:environment_sensor/triggers/0/filters/",
+              "content": "in_water"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/axolotl_on_land_in_rain/minecraft:environment_sensor/triggers/1/filters/",
+              "content": "in_water"
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"in_water\", \"subject\": \"self\", \"operator\": \"equals\", \"value\": \"true\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"in_water\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/axolotl.json": [
+        {
+          "path": "/minecraft:entity/component_groups/axolotl_in_water/minecraft:environment_sensor/triggers/0/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "!=",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/axolotl_on_land_in_rain/minecraft:environment_sensor/triggers/1/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.play_dead/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/all_of/0/",
+          "content": {
+            "test": "in_water",
+            "subject": "other",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/0/",
+          "content": {
+            "test": "in_water",
+            "subject": "other",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/dolphin.json": [
+        {
+          "path": "/minecraft:entity/component_groups/dolphin_swimming_navigation/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+          "content": {
+            "test": "in_water",
+            "operator": "!=",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/dolphin_on_land_in_rain/minecraft:environment_sensor/triggers/0/filters/",
+          "content": {
+            "test": "in_water",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:melee_attack/minecraft:environment_sensor/triggers/filters/",
+          "content": {
+            "test": "in_water",
+            "subject": "self",
+            "operator": "==",
+            "value": false
+          }
+        }
+      ]
+    }
+  }
+}

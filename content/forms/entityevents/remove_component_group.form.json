@@ -1,0 +1,17 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "Remove Component Group",
+    "title": "Remove Component Group",
+    "description": "Removes component groups from the current entity. This can be any group you have defined in the 'component_groups' section of the file.",
+    "fields": [],
+    "samples": {
+      "samples": [
+        {
+          "path": "Example:",
+          "content": "\t\t\"sequence\": [\r\n\t\t\t{\r\n\t\t\t\t\"remove\": { \"component_groups\": [ \"one\" ] }\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"remove\": { \"component_groups\": [ \"two\", \"five\", \"etc..\" ] }\r\n\t\t\t}\r\n\t\t]\r\n\t"
+        }
+      ]
+    }
+  }
+}

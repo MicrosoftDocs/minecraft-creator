@@ -1,39 +1,30 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Entity Documentation - minecraft:lava_movement
-description: "A reference document detailing the 'lava_movement' entity component"
+title: "Entity Documentation - minecraft:lava_movement"
+description: "Describes the minecraft:lava_movement entity component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
 # Entity Documentation - minecraft:lava_movement
 
-`minecraft:lava_movement` allows a custom movement speed across lava blocks.
+Allows a custom movement speed across lava blocks.
 
-## Parameters
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|value|*not set* | Float | The speed a strider moves over a lava block.|
+## Lava Movement Properties
 
-## Example
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| value | *not set* | Decimal number | The speed the mob moves over a lava block. | Strider: `0.32` | 
 
-```json
-"minecraft:lava_movement": {
-        "value": 0.32
-      }
-```
+## Samples
 
-## Vanilla entities examples
+#### [Strider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/strider.json)
 
-### strider
 
 ```json
 "minecraft:lava_movement": {
-        "value": 0.32
-      }
+  "value": 0.32
+}
 ```
-
-## Vanilla entities using `minecraft:lookat`
-
-- [strider](../../../../Source/VanillaBehaviorPack_Snippets/entities/strider.md)

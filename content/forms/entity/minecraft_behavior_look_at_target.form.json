@@ -1,0 +1,244 @@
+{
+  "fields": [],
+  "requires": [
+    {
+      "id": "targeting_entity_component",
+      "type": "targeting_entity_component"
+    }
+  ],
+  "description": "Compels an entity to look at the target by rotating the head bone pose within a set limit.",
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.look_at_target",
+    "title": "Look At Target Behavior",
+    "description": "Allows the mob to look at the entity they are targetting.",
+    "fields": [
+      {
+        "id": "angle_of_view_horizontal",
+        "title": "Angle Of View Horizontal",
+        "description": "The angle in degrees that the mob can see in the Y-axis (up-down).",
+        "defaultValue": 360,
+        "dataType": 0
+      },
+      {
+        "id": "angle_of_view_vertical",
+        "title": "Angle Of View Vertical",
+        "description": "The angle in degrees that the mob can see in the X-axis (left-right).",
+        "defaultValue": 360,
+        "dataType": 0
+      },
+      {
+        "id": "look_distance",
+        "title": "Look Distance",
+        "description": "The distance in blocks from which the entity will look at this mob's current target.",
+        "defaultValue": 8,
+        "dataType": 3,
+        "samples": {
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": 12
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": 19
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": 15
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": 15
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": 12
+            }
+          ]
+        }
+      },
+      {
+        "id": "look_time",
+        "title": "Look Time",
+        "description": "Time range to look at this mob's current target.",
+        "dataType": 18,
+        "samples": {
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": [
+                1,
+                5
+              ]
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": [
+                1,
+                5
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "probability",
+        "title": "Probability",
+        "description": "The probability of looking at the target. A value of 1.00 is 100%.",
+        "defaultValue": 0.02,
+        "dataType": 3,
+        "samples": {
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": 1
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/wither.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_target/",
+              "content": 5
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": 2
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": 1
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/wither.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_target/",
+          "content": {
+            "priority": 5
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+          "content": {
+            "priority": 2,
+            "look_distance": 12,
+            "probability": 1,
+            "look_time": [
+              1,
+              5
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/bow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+          "content": {
+            "priority": 1,
+            "look_distance": 19,
+            "probability": 1,
+            "look_time": [
+              1,
+              5
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/crossbow_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+          "content": {
+            "priority": 1,
+            "look_distance": 15,
+            "probability": 1,
+            "look_time": [
+              1,
+              5
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+          "content": {
+            "priority": 1,
+            "look_distance": 15,
+            "probability": 1,
+            "look_time": [
+              1,
+              5
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/shbullet_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+          "content": {
+            "priority": 1,
+            "look_distance": 12,
+            "probability": 1,
+            "look_time": [
+              1,
+              5
+            ]
+          }
+        }
+      ],
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/smfireball_turret.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.look_at_target/",
+          "content": {
+            "priority": 1,
+            "look_distance": 12,
+            "probability": 1,
+            "look_time": [
+              1,
+              5
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,13 +1,13 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: "Entity Documentation - behavior.teleport_to_owner"
-description: "Describes the behavior.teleport_to_owner AI Goals"
+title: "Entity Documentation - minecraft:behavior.teleport_to_owner"
+description: "Describes the minecraft:behavior.teleport_to_owner ai behavior component"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
-# Entity Documentation - behavior.teleport_to_owner
+# Entity Documentation - minecraft:behavior.teleport_to_owner
 
 Allows an entity to teleport to its owner.
 
@@ -26,49 +26,7 @@ Allows an entity to teleport to its owner.
 
 
 ```json
-{
-  "priority": 0,
-  "filters": {
-    "all_of": [
-      {
-        "test": "owner_distance",
-        "operator": ">",
-        "value": 12
-      },
-      {
-        "test": "is_panicking"
-      }
-    ]
-  }
-}
-```
-
-#### [Ocelot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ocelot.json)
-
-
-```json
-{
-  "priority": 0,
-  "filters": {
-    "all_of": [
-      {
-        "test": "owner_distance",
-        "operator": ">",
-        "value": 12
-      },
-      {
-        "test": "is_panicking"
-      }
-    ]
-  }
-}
-```
-
-#### [Parrot](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/parrot.json)
-
-
-```json
-{
+"minecraft:behavior.teleport_to_owner": {
   "priority": 0,
   "filters": {
     "all_of": [
@@ -89,7 +47,7 @@ Allows an entity to teleport to its owner.
 
 
 ```json
-{
+"minecraft:behavior.teleport_to_owner": {
   "priority": 1,
   "filters": {
     "any_of": [

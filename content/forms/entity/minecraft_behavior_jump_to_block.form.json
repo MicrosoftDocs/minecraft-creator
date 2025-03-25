@@ -1,0 +1,270 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.jump_to_block",
+    "title": "Jump To Block Behavior",
+    "description": "Allows an entity to jump to another random block.",
+    "fields": [
+      {
+        "id": "cooldown_range",
+        "title": "Cooldown Range",
+        "description": "Minimum and maximum cooldown time-range (positive, in seconds) between each attempted jump.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": [
+                5,
+                7
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": [
+                30,
+                60
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "forbidden_blocks",
+        "title": "Forbidden Blocks",
+        "description": "Blocks that the mob can't jump to.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": [
+                "minecraft:water"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_velocity",
+        "title": "Max Velocity",
+        "description": "The maximum velocity with which the mob can jump.",
+        "defaultValue": 1.5,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "minimum_distance",
+        "title": "Minimum Distance",
+        "description": "The minimum distance (in blocks) from the mob to a block, in order to consider jumping to it.",
+        "defaultValue": 2,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 1
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "minimum_path_length",
+        "title": "Minimum Path Length",
+        "description": "The minimum length (in blocks) of the mobs path to a block, in order to consider jumping to it.",
+        "defaultValue": 5,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 2
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 8
+            }
+          ]
+        }
+      },
+      {
+        "id": "preferred_blocks",
+        "title": "Preferred Blocks",
+        "description": "Blocks that the mob prefers jumping to.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": [
+                "minecraft:waterlily",
+                "minecraft:big_dripleaf"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "preferred_blocks_chance",
+        "title": "Preferred Blocks Chance",
+        "description": "Chance (between 0.0 and 1.0) that the mob will jump to a preferred block, if in range. Only matters if preferred blocks are defined.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 0.5
+            }
+          ]
+        }
+      },
+      {
+        "id": "scale_factor",
+        "title": "Scale Factor",
+        "description": "The scalefactor of the bounding box of the mob while it is jumping.",
+        "defaultValue": 0.7,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 0.6
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 0.6
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_height",
+        "title": "Search Height",
+        "description": "The height (in blocks, in range [2, 15]) of the search box, centered around the mob.",
+        "defaultValue": 10,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "search_width",
+        "title": "Search Width",
+        "description": "The width (in blocks, in range [2, 15]) of the search box, centered around the mob.",
+        "defaultValue": 8,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/frog.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 10
+            }
+          ],
+          "/vanilla/behavior_pack/entities/goat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+              "content": 8
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/frog.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+          "content": {
+            "priority": 10,
+            "search_width": 8,
+            "search_height": 4,
+            "minimum_path_length": 2,
+            "minimum_distance": 1,
+            "scale_factor": 0.6,
+            "max_velocity": 1,
+            "cooldown_range": [
+              5,
+              7
+            ],
+            "preferred_blocks": [
+              "minecraft:waterlily",
+              "minecraft:big_dripleaf"
+            ],
+            "preferred_blocks_chance": 0.5,
+            "forbidden_blocks": [
+              "minecraft:water"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/goat.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.jump_to_block/",
+          "content": {
+            "priority": 8,
+            "search_width": 10,
+            "search_height": 10,
+            "minimum_path_length": 8,
+            "minimum_distance": 1,
+            "scale_factor": 0.6,
+            "cooldown_range": [
+              30,
+              60
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

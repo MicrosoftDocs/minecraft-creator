@@ -1,0 +1,85 @@
+{
+  "fields": [],
+  "restrictions": [
+    {
+      "id": "minecraft:horse",
+      "type": "entity_type"
+    },
+    {
+      "id": "minecraft:mule",
+      "type": "entity_type"
+    },
+    {
+      "id": "minecraft:donkey",
+      "type": "entity_type"
+    },
+    {
+      "id": "minecraft:skeleton_horse",
+      "type": "entity_type"
+    }
+  ],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.skeleton_horse_trap",
+    "title": "Skeleton Horse Trap Behavior",
+    "description": "Allows Equine mobs to be Horse Traps and be triggered like them, spawning a lightning bolt and a bunch of horses when a player is nearby. Can only be used by Horses, Mules, Donkeys and Skeleton Horses.",
+    "fields": [
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Amount of time in seconds the trap exists. After this amount of time is elapsed, the trap is removed from the world if it hasn't been activated",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:skeleton_trap/minecraft:behavior.skeleton_horse_trap/",
+              "content": 900
+            }
+          ]
+        }
+      },
+      {
+        "id": "within_radius",
+        "title": "Within Radius",
+        "description": "Distance in blocks that the player has to be within to trigger the horse trap",
+        "defaultValue": 0,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:skeleton_trap/minecraft:behavior.skeleton_horse_trap/",
+              "content": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:skeleton_trap/minecraft:behavior.skeleton_horse_trap/",
+              "content": 2
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:skeleton_trap/minecraft:behavior.skeleton_horse_trap/",
+          "content": {
+            "within_radius": 10,
+            "duration": 900,
+            "priority": 2
+          }
+        }
+      ]
+    }
+  }
+}

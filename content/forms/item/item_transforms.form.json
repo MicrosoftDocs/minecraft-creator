@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Item Transforms",
+    "description": "Item Transforms",
+    "fields": [
+      {
+        "id": "first_person",
+        "title": "first_person",
+        "description": "First person transforms data",
+        "dataType": 16
+      },
+      {
+        "id": "third_person",
+        "title": "third_person",
+        "description": "Third person transforms data",
+        "dataType": 16
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "minecraft:dry_foliage_color",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Dry Foliage Color",
+    "description": "Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.",
+    "fields": [
+      {
+        "id": "color",
+        "title": "color",
+        "description": "RGB color of dry foliage",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "color",
+            "dataType": 32,
+            "minLength": 3,
+            "maxLength": 3
+          }
+        ]
+      }
+    ],
+    "id": "minecraft:dry_foliage_color"
+  }
+}

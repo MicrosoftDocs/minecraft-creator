@@ -1,0 +1,15 @@
+{
+  "title": "Spawn Entity",
+  "fields": [
+    {
+      "id": "location",
+      "title": "Location",
+      "dataType": 11
+    },
+    {
+      "id": "entityType",
+      "title": "Entity Type",
+      "dataType": 2
+    }
+  ]
+}

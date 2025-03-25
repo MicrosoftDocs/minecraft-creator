@@ -1,0 +1,18 @@
+{
+  "fields": [],
+  "note": "No longer used for the `vex` entity. Instead, `minecraft:navigation.walk` and `minecraft:behavior.float` allow the `vex` entity to navigate.",
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.vex_random_move",
+    "title": "Vex Random Move Behavior",
+    "description": "Allows the mob to move around randomly like the Vex.",
+    "fields": [
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:burns_in_daylight",
+    "title": "Burns In Daylight",
+    "description": "Specifies if a mob burns in daylight.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": false
+        }
+      ],
+      "/vanilla/behavior_pack/entities/phantom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:burns_in_daylight/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

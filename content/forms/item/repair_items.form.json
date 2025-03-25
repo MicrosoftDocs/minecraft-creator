@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "title": "Repair Items",
+    "description": "Repair Items",
+    "fields": [
+      {
+        "id": "items",
+        "title": "items",
+        "description": "Items that may be used to repair an item.",
+        "dataType": 16
+      },
+      {
+        "id": "repair_amount",
+        "title": "repair_amount",
+        "description": "How much the item is repaired.",
+        "dataType": 16
+      }
+    ]
+  }
+}

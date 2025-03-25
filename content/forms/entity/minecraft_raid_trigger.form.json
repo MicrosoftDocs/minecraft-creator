@@ -1,0 +1,71 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:raid_trigger",
+    "title": "Raid Trigger",
+    "description": "Attempts to trigger a raid at the entity's location.",
+    "fields": [
+      {
+        "id": "triggered_event",
+        "title": "Triggered Event",
+        "description": "Event to run when a raid is triggered on the village.",
+        "dataType": 22
+      },
+      {
+        "id": "minecraft:raid_trigger",
+        "title": "Raid Trigger",
+        "dataType": 16,
+        "subForm": {
+          "id": "minecraft:raid_trigger",
+          "title": "Minecraft:raid_trigger",
+          "fields": [
+            {
+              "id": "triggered_event",
+              "title": "Triggered_event",
+              "dataType": 2,
+              "samples": {
+                "/vanilla/behavior_pack/entities/player.json": [
+                  {
+                    "path": "triggered_event",
+                    "content": {
+                      "event": "minecraft:remove_raid_trigger",
+                      "target": "self"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/player.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:raid_trigger/",
+              "content": {
+                "triggered_event": {
+                  "event": "minecraft:remove_raid_trigger",
+                  "target": "self"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:raid_trigger/",
+          "content": {
+            "minecraft:raid_trigger": {
+              "triggered_event": {
+                "event": "minecraft:remove_raid_trigger",
+                "target": "self"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

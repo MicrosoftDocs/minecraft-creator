@@ -1,0 +1,97 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Used To Pair Block Rules With Structure Templates And To Randomly Place Structure Templates Using A Weighted List World",
+    "description": "Used To Pair Block Rules With Structure Templates And To Randomly Place Structure Templates Using A Weighted List World",
+    "fields": [
+      {
+        "id": "description",
+        "title": "description",
+        "description": "description",
+        "dataType": 16,
+        "subForm": {
+          "title": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool Description",
+          "description": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool Description",
+          "fields": [
+            {
+              "id": "identifier",
+              "title": "identifier",
+              "description": "Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates.",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "elements",
+        "title": "elements",
+        "description": "List of Structure Template and processor list pairs.",
+        "dataType": 15,
+        "subForm": {
+          "title": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool TemplatePoolElement",
+          "description": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool TemplatePoolElement",
+          "fields": [
+            {
+              "id": "element",
+              "title": "element",
+              "description": "A grouping of a Structure Template, the Processor List to use when placing the structure, and its weight that determines the likelihood of the element being chosen.",
+              "dataType": 16,
+              "subForm": {
+                "title": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool SinglePoolElement",
+                "description": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool SinglePoolElement",
+                "fields": [
+                  {
+                    "id": "element_type",
+                    "title": "enum SharedTypes_v1_21_20_JigsawStructureTemplatePool_ElementType",
+                    "description": "The type of element. Currently, only minecraft:single_pool_element is supported.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "location",
+                    "title": "location",
+                    "description": "The path of the structure file. This path is relative to the behavior pack's structures folder.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "processors",
+                    "title": "processors",
+                    "description": "The identifier of the processor list to use when placing the structure.",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "weight",
+              "title": "weight",
+              "description": "The weighted probability of choosing the element from the pool. For example, a template pool containing 2 structures with weights of 1 and 3 will have a 25% and 75% chance of being chosen respectively.",
+              "dataType": 0,
+              "validity": [
+                {
+                  "comparison": ">=",
+                  "value": 1
+                },
+                {
+                  "comparison": "<=",
+                  "value": 200
+                }
+              ]
+            },
+            {
+              "id": "projection",
+              "title": "enum SharedTypes_v1_21_20_JigsawStructureTemplatePool_Projection",
+              "description": "Specifies how structures should be placed relative to the terrain.",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "fallback",
+        "title": "fallback",
+        "description": "Fallback template pool to use if no element in the pool can be placed successfully.",
+        "dataType": 2
+      }
+    ]
+  }
+}

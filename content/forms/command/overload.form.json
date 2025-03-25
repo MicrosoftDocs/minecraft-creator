@@ -1,0 +1,20 @@
+{
+  "fields": [
+    {
+      "id": "id",
+      "title": "Id",
+      "dataType": 0,
+      "readOnly": true
+    },
+    {
+      "id": "header",
+      "title": "Header",
+      "dataType": 13
+    },
+    {
+      "id": "description",
+      "title": "Description",
+      "dataType": 17
+    }
+  ]
+}

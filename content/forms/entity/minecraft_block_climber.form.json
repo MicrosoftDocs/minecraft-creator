@@ -1,0 +1,42 @@
+{
+  "description": "Allows the player to detect and manuever on the scaffolding block.",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:block_climber",
+    "title": "Block Climber",
+    "description": "Allows the player to detect and maneuver on the scaffolding block.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/endermite.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:block_climber/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/fox.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:block_climber/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/player.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:block_climber/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/rabbit.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:block_climber/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/silverfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:block_climber/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

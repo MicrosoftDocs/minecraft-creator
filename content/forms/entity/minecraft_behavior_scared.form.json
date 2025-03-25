@@ -1,0 +1,51 @@
+{
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.scared",
+    "title": "Scared Behavior",
+    "description": "Allows the a mob to become scared when the weather outside is thundering",
+    "fields": [
+      {
+        "id": "sound_interval",
+        "title": "Sound Interval",
+        "description": "The interval in which a sound will play when active in a 1/delay chance to kick off",
+        "defaultValue": 0,
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_worried/minecraft:behavior.scared/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/panda.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:panda_worried/minecraft:behavior.scared/",
+              "content": 1
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/panda.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:panda_worried/minecraft:behavior.scared/",
+          "content": {
+            "priority": 1,
+            "sound_interval": 20
+          }
+        }
+      ]
+    }
+  }
+}
