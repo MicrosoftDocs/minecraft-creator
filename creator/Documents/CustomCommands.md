@@ -10,7 +10,7 @@ ms.date: 03/26/2025
 
 There is also a video version available of this overview of Scripting Custom Commands:
 
-> [!VIDEO https://www.youtube.com/embed/owfBDnOHI_o]
+> [!VIDEO https://www.youtube.com/embed/cXfMwcDg1Lo]
 
 ## Scripting Custom Commands
 
@@ -55,11 +55,11 @@ There are several parameters you will need to specify:
 
 |Parameter |Description |
 |:----------:|-----------|
-| name | Name of the command that is used. Custom commands must be namespace (that is, follow the form of namespace:commandname) |
-| description | Description of the command. This will show up in autocomplete for the command |
+| name | Name of the command that is used. Custom commands must be namespaced (that is, follow the form of namespace:commandname). |
+| description | Description of the command. This will show up in autocomplete for the command. |
 | permissionLevel | Relative permission level of the command.|
-| mandatoryParameters | A list of mandatory parameters for the command. These will come first in the list of parameters that a command has |
-| optionalParameters | A list of optional parameters for the command. These will come second in the list of parameters |
+| mandatoryParameters | A list of mandatory parameters for the command. These will come first in the list of parameters that a command may have. |
+| optionalParameters | A list of optional parameters for the command. These will come second in the list of parameters. |
 
 #### Permission Levels
 
@@ -68,10 +68,10 @@ Commands can have a permission level that is required from executing contexts an
 |Parameter |Description |
 |:----------:|-----------|
 | Any | Any player or environment can run this command. |
-| GameDirectors | Requires a player with an "Operator Commands" permission to run this command. Also, scripting and command environments, like command blocks, can run this command |
+| GameDirectors | Requires a player with an "Operator Commands" permission to run this command. Also, scripting and command environments, like command blocks, can run this command. |
 | Admin | Requires a player with "Operator Commands" permission. Commands with this level cannot be used in automations like commands or script |
-| Host | Only the originating game owner can run this command |
-| Owner | In dedicated server environments, this command can only be exited in the hosting environment at the dedicated server console |
+| Host | Only the originating game owner can run this command. |
+| Owner | In dedicated server environments, this command can only be exited in the hosting environment at the dedicated server console. |
 
 ### Execution
 
