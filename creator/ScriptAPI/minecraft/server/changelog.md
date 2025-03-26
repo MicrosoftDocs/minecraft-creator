@@ -42,6 +42,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added property *[`isValid`](Block.md#isvalid)*
+- Added property *[`localizationKey`](Block.md#localizationkey)*
 - Added function *[`canBeDestroyedByLiquidSpread`](Block.md#canbedestroyedbyliquidspread)*
 - Added function *[`canContainLiquid`](Block.md#cancontainliquid)*
 - Added function *[`canPlace`](Block.md#canplace)*
@@ -101,11 +102,17 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
 #### Changed *[`Container`](Container.md)*
 - Added property *[`isValid`](Container.md#isvalid)*
+- Added function *[`contains`](Container.md#contains)*
+- Added function *[`find`](Container.md#find)*
+- Added function *[`firstEmptySlot`](Container.md#firstemptyslot)*
+- Added function *[`firstItem`](Container.md#firstitem)*
 - Removed function *isValid*
+- Added function *[`reverseFind`](Container.md#reversefind)*
 #### Changed *[`ContainerSlot`](ContainerSlot.md)*
 - Added property *[`isValid`](ContainerSlot.md#isvalid)*
 - Removed function *isValid*
 - Added function *[`setDynamicProperties`](ContainerSlot.md#setdynamicproperties)*
+#### Added *[`CustomCommandRegistry`](CustomCommandRegistry.md)*
 #### Changed *[`Dimension`](Dimension.md)*
 - Changed function *[`fillBlocks`](Dimension.md#fillblocks)*
   - Changed argument `volume` type from [*BlockVolumeBase*](BlockVolumeBase.md) to [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
@@ -126,6 +133,7 @@ description: Changelog of the `@minecraft/server` module
 - Removed function *isValid*
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`isValid`](Entity.md#isvalid)*
+- Added property *[`localizationKey`](Entity.md#localizationkey)*
 - Added property *[`target`](Entity.md#target)*
 - Changed function *[`applyKnockback`](Entity.md#applyknockback)*
   - Added argument `horizontalForce`
@@ -161,6 +169,9 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntityScaleComponent`](EntityScaleComponent.md)*
 - Changed read-only flag for *[`value`](EntityScaleComponent.md#value)* from `false` to `true`
 - Changed type for *[`value`](EntityScaleComponent.md#value)* from *number* to *number* (throws exceptions)
+#### Changed *[`EntitySkinIdComponent`](EntitySkinIdComponent.md)*
+- Changed read-only flag for *[`value`](EntitySkinIdComponent.md#value)* from `false` to `true`
+- Changed type for *[`value`](EntitySkinIdComponent.md#value)* from *number* to *number* (throws exceptions)
 #### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
 #### Changed *[`EntityTypes`](EntityTypes.md)*
 - Changed function *[`get`](EntityTypes.md#get)*
@@ -182,6 +193,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ItemDyeableComponent`](ItemDyeableComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
+- Added property *[`localizationKey`](ItemStack.md#localizationkey)*
 - Added function *[`createPotion`](ItemStack.md#createpotion)*
 - Changed function *[`getComponent`](ItemStack.md#getcomponent)*
   - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentReturnType<T> | undefined*
@@ -293,6 +305,10 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`ButtonState`](ButtonState.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
+#### Added enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
+#### Added enum [`CustomCommandParamType`](CustomCommandParamType.md)
+#### Added enum [`CustomCommandPermissionLevel`](CustomCommandPermissionLevel.md)
+#### Added enum [`CustomCommandStatus`](CustomCommandStatus.md)
 #### Added enum [`Difficulty`](Difficulty.md)
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Added value `Npc`

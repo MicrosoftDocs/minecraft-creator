@@ -52,6 +52,14 @@
       href: minecraft/server/CompoundBlockVolumeAction.md
     - name: CompoundBlockVolumePositionRelativity
       href: minecraft/server/CompoundBlockVolumePositionRelativity.md
+    - name: CustomCommandErrorReason
+      href: minecraft/server/CustomCommandErrorReason.md
+    - name: CustomCommandParamType
+      href: minecraft/server/CustomCommandParamType.md
+    - name: CustomCommandPermissionLevel
+      href: minecraft/server/CustomCommandPermissionLevel.md
+    - name: CustomCommandStatus
+      href: minecraft/server/CustomCommandStatus.md
     - name: CustomComponentNameErrorReason
       href: minecraft/server/CustomComponentNameErrorReason.md
     - name: Difficulty
@@ -234,6 +242,8 @@
       href: minecraft/server/Container.md
     - name: ContainerSlot
       href: minecraft/server/ContainerSlot.md
+    - name: CustomCommandRegistry
+      href: minecraft/server/CustomCommandRegistry.md
     - name: DataDrivenEntityTriggerAfterEvent
       href: minecraft/server/DataDrivenEntityTriggerAfterEvent.md
     - name: DataDrivenEntityTriggerAfterEventSignal
@@ -782,6 +792,12 @@
       href: minecraft/server/CameraTargetOptions.md
     - name: CompoundBlockVolumeItem
       href: minecraft/server/CompoundBlockVolumeItem.md
+    - name: CustomCommand
+      href: minecraft/server/CustomCommand.md
+    - name: CustomCommandParameter
+      href: minecraft/server/CustomCommandParameter.md
+    - name: CustomCommandResult
+      href: minecraft/server/CustomCommandResult.md
     - name: DefinitionModifier
       href: minecraft/server/DefinitionModifier.md
     - name: DimensionLocation
