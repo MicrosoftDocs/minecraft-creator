@@ -137,6 +137,10 @@
           {
             "id": "use_on",
             "dataType": 2
+          },
+          {
+            "id": "use_on",
+            "dataType": 16
           }
         ],
         "samples": {

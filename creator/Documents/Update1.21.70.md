@@ -95,7 +95,7 @@ Looking ahead, here's what you can expect coming in future releases.
 - particle intensity - When breaking a block, defines the quantity of particles that appear.
 - Textures – UV locking - This will make it so there is no longer a need to define new geo every time a texture is rotated.
 - Loot & destroy API - Allow reading loot tables through scripting. Apply different loot tables through scripting when destroying entity or block.
-- Culling rules - A subset of culling rules will be delivered to support behaviors such as how leaves appear when configured in a tree with neighbor rules. 
+- Culling rules - A subset of culling rules will be delivered to support behaviors such as how leaves appear when configured in a tree with neighbor rules.
 
 ### What's Next for Script API, Molang and Commands
 

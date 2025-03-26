@@ -232,8 +232,6 @@ Represents the unique type of network packet.
 `OpenSignPacket = "OpenSignPacket"`
 ### **PacketViolationWarningPacket**
 `PacketViolationWarningPacket = "PacketViolationWarningPacket"`
-### **PassengerJumpPacket**
-`PassengerJumpPacket = "PassengerJumpPacket"`
 ### **PhotoTransferPacket**
 `PhotoTransferPacket = "PhotoTransferPacket"`
 ### **PlayerActionPacket**
@@ -248,8 +246,6 @@ Represents the unique type of network packet.
 `PlayerFogPacket = "PlayerFogPacket"`
 ### **PlayerHotbarPacket**
 `PlayerHotbarPacket = "PlayerHotbarPacket"`
-### **PlayerInputPacket**
-`PlayerInputPacket = "PlayerInputPacket"`
 ### **PlayerListPacket**
 `PlayerListPacket = "PlayerListPacket"`
 ### **PlayerLocationPacket**

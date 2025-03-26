@@ -204,6 +204,8 @@
             href: Documents/CustomComponents.md
           - name: Building with Custom Components
             href: Documents/CustomComponentsTutorial.md
+          - name: Scripting Custom Commands (Preview)
+            href: Documents/CustomCommands.md
           - name: Game Loops and Timed Callbacks - a system.run Guide
             href: Documents/SystemRunGuide.md
           - name: Script Module Versioning

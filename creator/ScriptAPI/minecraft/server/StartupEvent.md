@@ -23,6 +23,14 @@ Type: [*BlockComponentRegistry*](BlockComponentRegistry.md)
 Notes:
   - This property can be read in early-execution mode.
 
+### **customCommandRegistry**
+`read-only customCommandRegistry: CustomCommandRegistry;`
+
+Type: [*CustomCommandRegistry*](CustomCommandRegistry.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **itemComponentRegistry**
 `read-only itemComponentRegistry: ItemComponentRegistry;`
 

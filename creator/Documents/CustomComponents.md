@@ -20,15 +20,14 @@ This new feature is named _custom components_ because script is connected to a g
 
 ## Script API
 
-Starting from the script API, we are introducing two new major interfaces for Blocks: `BlockTypeRegistry` and `BlockCustomComponent`. (NOTE: BlockTypeRegistry is known as BlockComponentRegistry in preview versions of Minecraft after 1.21.0) The `BlockTypeRegistry` contains a single method on it for registering a new custom component by name:
+Starting from the script API, we are introducing two new major interfaces for Blocks: `BlockComponentRegistry` and `BlockCustomComponent`. The `BlockComponentRegistry` contains a single method on it for registering a new custom component by name:
 
 ```typescript
 /**
- * @beta
  * Provides the functionality for registering custom components
  * for blocks.
  */
-export class BlockTypeRegistry {
+export class BlockComponentRegistry {
     /**
      * @remarks
      * Registers a block custom component that can be used in block
@@ -51,7 +50,6 @@ A custom component in script is the association of name/id, with a set of functi
 
 ```typescript
 /**
- * @beta
  * Contains a set of events that will be raised for a block.
  * This object must be bound using the BlockRegistry.
  */
@@ -66,13 +64,13 @@ export interface BlockCustomComponent {
 }
 ```
 
-From script, you are able to access the `BlockTypeRegistry` by listening to the new, experimental `worldInitialize` _before_ event. All registration of custom components must happen during worldInitialize because this functionality is directly attached to block initialization from JSON. From within this event, you can then call `registerCustomComponent` with a unique namespaced name and an object that implements the `BlockCustomComponent` interface to register that component. Once a component is registered, any block that uses this component will invoke the callbacks on your object for the relevant events.
+From script, you are able to access the `BlockComponentRegistry` by listening to the new, experimental `worldInitialize` _before_ event. All registration of custom components must happen during `worldInitialize` because this functionality is directly attached to block initialization from JSON. From within this event, you can then call `registerCustomComponent` with a unique namespaced name and an object that implements the `BlockCustomComponent` interface to register that component. Once a component is registered, any block that uses this component will invoke the callbacks on your object for the relevant events.
 
 A small code sample showing this registration is as follows:
 
 ```typescript
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
-    initEvent.blockTypeRegistry.registerCustomComponent('content:turn_to_air', {
+    initEvent.blockComponentRegistry.registerCustomComponent('content:turn_to_air', {
         onStepOn: e => {
             e.block.setPermutation(BlockPermutation.resolve(MinecraftBlockTypes.Air));
         },
@@ -95,7 +93,7 @@ class TurnToAirComponent implements BlockCustomComponent {
 }
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
-    initEvent.blockTypeRegistry.registerCustomComponent('content:turn_to_air', new TurnToAirComponent());
+    initEvent.blockComponentRegistry.registerCustomComponent('content:turn_to_air', new TurnToAirComponent());
 });
 ```
 
@@ -134,4 +132,4 @@ Once in script, your callbacks can use any API available in the scripting API ju
 
 ## Get started in building custom components
 
-If you'd like to get started in building add-ons with custom components, visit the [custom components tutorial](./CustomComponentsTutorial.md). One important note: in preview versions of Minecraft after 1.21.0, BlockTypeRegistry is known as BlockComponentRegistry.
+If you'd like to get started in building add-ons with custom components, visit the [custom components tutorial](./CustomComponentsTutorial.md).

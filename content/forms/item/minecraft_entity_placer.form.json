@@ -119,6 +119,10 @@
           {
             "id": "dispense_on",
             "dataType": 2
+          },
+          {
+            "id": "dispense_on",
+            "dataType": 16
           }
         ]
       },
@@ -221,6 +225,10 @@
           {
             "id": "use_on",
             "dataType": 2
+          },
+          {
+            "id": "use_on",
+            "dataType": 16
           }
         ],
         "samples": {

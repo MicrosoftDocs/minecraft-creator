@@ -126,6 +126,22 @@ Type: *boolean*
 Notes:
   - This property can't be edited in read-only mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **localizationKey**
+`read-only localizationKey: string;`
+
+key for the localization of this items's name used in .lang files.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
+::: moniker-end
+
 ### **lockMode**
 `lockMode: ItemLockMode;`
 
