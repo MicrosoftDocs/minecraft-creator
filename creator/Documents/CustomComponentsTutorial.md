@@ -10,12 +10,9 @@ ms.service: minecraft-bedrock-edition
 
 ## Create an Add-On with Custom Components
 
-> [!NOTE]
-> The custom components feature is currently in preview and is available via beta APIs, but is targeted to be included with "stable APIs" in a future release of Minecraft - potentially 1.21.10. We recommend you use the latest version of Minecraft Preview as you try out this sample.
-
 Custom blocks and items use various components, declared in their definitions, to augment the behavior of the block or item.
 
-Until now, all components have been built-in to Minecraft, with various parameters used to control the component's behavior. With [custom components](./CustomComponents.md), now in preview and more broadly available in an upcoming version of Minecraft, you can define your own behavior for blocks and items when combined with scripting! In this tutorial we will make a small block and item example using custom components and scripting by adding a new strawberry crop and strawberry item. The strawberry plants will have the behavior that, if they are not picked when they are ripe, can go bad. You'll have to time it just right to get fresh strawberries, and in this sample, you'll see the block components that manage crop growth rates in addition to custom item effects.
+Until now, all components have been built-in to Minecraft, with various parameters used to control the component's behavior. With [custom components](./CustomComponents.md), you can define your own behavior for blocks and items when combined with scripting! In this tutorial we will make a small block and item example using custom components and scripting by adding a new strawberry crop and strawberry item. The strawberry plants will have the behavior that, if they are not picked when they are ripe, can go bad. You'll have to time it just right to get fresh strawberries, and in this sample, you'll see the block components that manage crop growth rates in addition to custom item effects.
 
 ![Strawberry farm with some rotten strawberries](./Media/CustomComponentsTutorial/strawberryfarm.png)
 
@@ -99,19 +96,6 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 ```
 
 Notice that the component code and name do not reference the strawberry item itself. You can reuse components on multiple items that have similar behavior.
-
-> [!NOTE]
-> As of this writing, custom components are still in preview. For this reason you will want to use a -beta scripting module in the dependencies
-> section of your behavior pack manifest.json.
-
-```JSON
-  "dependencies": [
-    {
-      "module_name": "@minecraft/server",
-      "version": "1.13.0-beta"
-    }
-  ]
-```
 
 ## Block Custom Components
 
@@ -201,7 +185,7 @@ Similar to item custom components, we use the `minecraft:custom_components` comp
 
 ### Registering Block Custom Components in Script
 
-Similar to items, we register the component in script with a list of events that the component is listening to and the behavior that should be run when the event is raised. For items we used the `ItemComponentRegistry` to do this; for blocks we use the `BlockComponentRegistry` (or `BlockTypeRegistry` in versions of Minecraft 1.21.0 or prior). In this case, we have two components to fill out. The item example above showed how to do this by placing your behavior in the registration statement. These two components will look at two alternate ways you can organize your code.
+Similar to items, we register the component in script with a list of events that the component is listening to and the behavior that should be run when the event is raised. For items we used the `ItemComponentRegistry` to do this; for blocks we use the `BlockComponentRegistry`. In this case, we have two components to fill out. The item example above showed how to do this by placing your behavior in the registration statement. These two components will look at two alternate ways you can organize your code.
 
 ### "example:crop_grow" Component
 
@@ -226,7 +210,7 @@ function cropGrowRandomTick(event : BlockComponentRandomTickEvent) {
 }
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
-  initEvent.blockTypeRegistry.registerCustomComponent('example:crop_grow', {
+  initEvent.blockComponentRegistry.registerCustomComponent('example:crop_grow', {
     onRandomTick: cropGrowRandomTick,
   });
 });
@@ -234,7 +218,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
 ### "example:crop_harvest" Component
 
-The crop grown component exists on only the finished crop when it is ready to be harvested. This component will allow the player to interact with the block to harvest the strawberries without having to break the block. It then "replants" the strawberries by changing the block permutation back to the first growth stage. This component is registered by making a new class that implements the BlockCustomComponet object, giving you a third way to register components. The same can be done with items and the ItemCustomComponent object.
+The crop grown component exists on only the finished crop when it is ready to be harvested. This component will allow the player to interact with the block to harvest the strawberries without having to break the block. It then "replants" the strawberries by changing the block permutation back to the first growth stage. This component is registered by making a new class that implements the `BlockCustomComponent` object, giving you a third way to register components. The same can be done with items and the `ItemCustomComponent` object.
 
 ```typescript
 import {
@@ -260,7 +244,7 @@ class BlockCropHarvestComponent implements BlockCustomComponent {
 };
 
 world.beforeEvents.worldInitialize.subscribe(initEvent => {
-  initEvent.blockTypeRegistry.registerCustomComponent('example:crop_harvest', new BlockCropHarvestComponent());
+  initEvent.blockComponentRegistry.registerCustomComponent('example:crop_harvest', new BlockCropHarvestComponent());
 });
 ```
 
