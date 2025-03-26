@@ -17,14 +17,14 @@ Skin Id value. Can be used to differentiate skins, such as base skins for villag
 ## Properties
 
 ### **value**
-`value: number;`
+`read-only value: number;`
 
 Returns the value of the skin Id identifier of the entity.
 
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can throw errors when used.
 
 ## Constants
 

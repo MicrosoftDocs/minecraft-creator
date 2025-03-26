@@ -28,6 +28,7 @@
   },
   "description": "Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have the minecraft:use_modifiers component in order to function properly.",
   "note": "Ammunition used by minecraft:shooter must have the minecraft:projectile component in order to function properly.",
+  "note2": "Items equipped with the shooter component will only sustain damage while shooting. Durability will remain unaffected if the item is used for melee attacks.",
   "generated_doNotEdit": {
     "title": "Shooter",
     "description": "Shooter Item Component.",

@@ -89,16 +89,6 @@
               "content": 1.77
             }
           ],
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_standing/minecraft:collision_box/",
-              "content": 2.375
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_sitting/minecraft:collision_box/",
-              "content": 0.945
-            }
-          ],
           "/vanilla/behavior_pack/entities/cat.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
@@ -512,16 +502,6 @@
               "content": 0.6
             }
           ],
-          "/vanilla/behavior_pack/entities/camel.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_standing/minecraft:collision_box/",
-              "content": 1.7
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:camel_sitting/minecraft:collision_box/",
-              "content": 1.7
-            }
-          ],
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
@@ -853,22 +833,6 @@
           "content": {
             "width": 0.6,
             "height": 1.77
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/camel.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_standing/minecraft:collision_box/",
-          "content": {
-            "width": 1.7,
-            "height": 2.375
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:camel_sitting/minecraft:collision_box/",
-          "content": {
-            "width": 1.7,
-            "height": 0.945
           }
         }
       ],

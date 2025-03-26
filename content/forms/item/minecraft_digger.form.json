@@ -105,6 +105,10 @@
                 {
                   "id": "block",
                   "dataType": 2
+                },
+                {
+                  "id": "block",
+                  "dataType": 16
                 }
               ]
             },
