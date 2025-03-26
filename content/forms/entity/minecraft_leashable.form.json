@@ -41,6 +41,27 @@
     "description": "Allows this entity to be leashed and defines the conditions and events for this entity when is leashed.",
     "fields": [
       {
+        "id": "can_be_stolen",
+        "title": "Can Be Stolen",
+        "description": "If true, players can leash this entity even if it is already leashed to another mob.",
+        "defaultValue": false,
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:leashable/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/entities/trader_llama.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:leashable/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
         "id": "on_leash",
         "title": "On Leash",
         "description": "Event to call when this entity is leashed.",
@@ -100,13 +121,6 @@
         "subForm": {
           "description": "Defines how this entity behaves when leashed to another entity. A preset is selected upon leashing and remains until the entity is leashed to something else. The first preset whose \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
           "fields": [
-            {
-              "id": "can_be_stolen",
-              "title": "Can Be Stolen",
-              "description": "If true, players can leash this entity even if it is already leashed to another mob.",
-              "defaultValue": false,
-              "dataType": 1
-            },
             {
               "id": "filter",
               "title": "Filter",
@@ -190,25 +204,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:leashable/",
               "content": 10
-            }
-          ]
-        }
-      },
-      {
-        "id": "can_be_stolen",
-        "title": "Can Be Stolen",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/llama.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:leashable/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/entities/trader_llama.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:leashable/",
-              "content": true
             }
           ]
         }

@@ -1,0 +1,145 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "JigsawStructure World",
+    "description": "A Jigsaw Structure is a group of Structure Templates that make up a larger structure.Jigsaw Structures are placed during world generation.",
+    "fields": [
+      {
+        "id": "description",
+        "title": "description",
+        "description": "Identifier of the Jigsaw Structure.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Struct SharedTypes V1 21 20 JigsawStructureDefinition Description",
+          "description": "Identifier of the Jigsaw Structure.",
+          "fields": [
+            {
+              "id": "identifier",
+              "title": "identifier",
+              "description": "identifier",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "biome_filters",
+        "title": "biome_filters",
+        "description": "Biomes in which the Jigsaw Structure can generate.",
+        "dataType": 16,
+        "subForm": {
+          "title": "Biome Filters",
+          "description": "Biome Filters",
+          "fields": [
+            {
+              "id": "operator",
+              "title": "operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": 16
+            },
+            {
+              "id": "test",
+              "title": "test",
+              "description": "The name of the test to apply.",
+              "dataType": 2
+            },
+            {
+              "id": "subject",
+              "title": "subject",
+              "description": "The subject of this filter test.",
+              "dataType": 16
+            },
+            {
+              "id": "domain",
+              "title": "domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": 16
+            },
+            {
+              "id": "value",
+              "title": "value",
+              "description": "The value being compared with the test.",
+              "dataType": 16
+            }
+          ]
+        }
+      },
+      {
+        "id": "step",
+        "title": "GenerationStep",
+        "description": "Species the world generation phase in which the structure is generated.",
+        "dataType": 2
+      },
+      {
+        "id": "terrain_adaptation",
+        "title": "enum SharedTypes_v1_21_20_JigsawStructureDefinition_TerrainAdaptation",
+        "description": "How the terrain should adapt relative to the generated Jigsaw Structure.",
+        "dataType": 2
+      },
+      {
+        "id": "start_pool",
+        "title": "start_pool",
+        "description": "The first Template Pool to use when generating the Jigsaw Structure.",
+        "dataType": 2
+      },
+      {
+        "id": "max_distance_from_center",
+        "title": "max_distance_from_center",
+        "description": "This is the max distance from the jigsaw pieces to the structure start: [1-128]",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          },
+          {
+            "comparison": "<=",
+            "value": 128
+          }
+        ]
+      },
+      {
+        "id": "start_height",
+        "title": "start_height",
+        "description": "Height at which the Jigsaw Structure's start pool should begin.",
+        "dataType": 16
+      },
+      {
+        "id": "start_jigsaw_name",
+        "title": "start_jigsaw_name",
+        "description": "The start jigsaw name is the name of the jigsaw block from the start pool to be placed first.",
+        "dataType": 2
+      },
+      {
+        "id": "max_depth",
+        "title": "max_depth",
+        "description": "The maximum recursion depth for Jigsaw Structure Generation. For example, a Jigsaw Structure that builds a road with a max_depth of 5 will only have paths that are a maximum of 5 structures templates in length in any given direction from the origin.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "id": "heightmap_projection",
+        "title": "enum SharedTypes_v1_21_20_JigsawStructureDefinition_HeightmapProjection",
+        "description": "Heightmap used to calculate the relative start height. For example, a heightmap_projection of ocean_floor and a start_height of 10 means the Jigsaw Structure will begin generating 10 blocks above the ocean floor.",
+        "dataType": 2
+      },
+      {
+        "id": "dimension_padding",
+        "title": "dimension_padding",
+        "description": "Dimension padding prevents the structure from getting cut off at the top or bottom of the world.",
+        "dataType": 16
+      },
+      {
+        "id": "pool_aliases",
+        "title": "pool_aliases",
+        "description": "Pool Aliases are used to determine which template pool can be a substitute.",
+        "dataType": 17
+      }
+    ]
+  }
+}

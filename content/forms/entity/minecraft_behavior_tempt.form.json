@@ -3,12 +3,12 @@
   "generated_doNotEdit": {
     "id": "minecraft:behavior.tempt",
     "title": "Tempt Behavior",
-    "description": "Allows the mob to be tempted by food they like.",
+    "description": "Allows a mob to be tempted by a player holding a specific item. Uses pathfinding for movement.",
     "fields": [
       {
         "id": "can_get_scared",
         "title": "Can Get Scared",
-        "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob",
+        "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob.",
         "defaultValue": false,
         "dataType": 1,
         "samples": {
@@ -65,7 +65,8 @@
       {
         "id": "items",
         "title": "Items",
-        "description": "List of items this mob is tempted by",
+        "description": "List of items that can tempt the mob.",
+        "defaultValue": "[]",
         "dataType": 17,
         "samples": {
           "/vanilla/behavior_pack/entities/armadillo.json": [
@@ -454,6 +455,13 @@
         }
       },
       {
+        "id": "stop_distance",
+        "title": "Stop Distance",
+        "description": "The distance at which the mob will stop following the player.",
+        "defaultValue": 1.5,
+        "dataType": 3
+      },
+      {
         "id": "tempt_sound",
         "title": "Tempt Sound",
         "description": "Sound to play while the mob is being tempted.",
@@ -476,7 +484,7 @@
       {
         "id": "within_radius",
         "title": "Within Radius",
-        "description": "Distance in blocks this mob can get tempted by a player holding an item they like",
+        "description": "Distance in blocks this mob can get tempted by a player holding an item they like.",
         "defaultValue": 0,
         "dataType": 3,
         "samples": {
