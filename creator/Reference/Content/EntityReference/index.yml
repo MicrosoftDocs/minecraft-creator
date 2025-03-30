@@ -87,7 +87,7 @@ landingContent:
             url: Examples/EventActions/emit_particle.md
           - text: minecraft:queue_command
             url: Examples/EventActions/queue_command.md
-          - text: minecraft:play_soudn
+          - text: minecraft:play_sound
             url: Examples/EventActions/play_sound.md            
 # Card
   - title: Triggers
