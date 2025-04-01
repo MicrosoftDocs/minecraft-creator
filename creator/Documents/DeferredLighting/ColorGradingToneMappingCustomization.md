@@ -9,7 +9,7 @@ ms.service: minecraft-bedrock-edition
 
 # Color Grading and Tone Mapping Customization
 
-New data-driving capabilities for Color Grading and Tone Mapping are available in Minecraft Bedrock **1.21.0.22** Previews and newer. These new tools allow resource packs to convey unique moods and themes through industry standard color correction controls.
+New data-driving capabilities for Color Grading and Tone Mapping are available in Minecraft Bedrock Previews. These new tools allow resource packs to convey unique moods and themes through industry standard color correction controls.
 
 ### Color Grading
 
@@ -103,7 +103,7 @@ Color grading configurations are JSON files located in the "color_grading" direc
 }
 ```
 
-The following example JSON can be used as a starting point:
+The following example JSON can be used as a starting point. You can also download a sample at [https://github.com/microsoft/minecraft-samples/tree/main/deferred_lighting_starter](https://github.com/microsoft/minecraft-samples/tree/main/deferred_lighting_starter).
 
 **color_grading/color_grading.json**
 

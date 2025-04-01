@@ -1,0 +1,43 @@
+{
+  "fields": [],
+  "id": "minecraft:point_light_settings",
+  "title": "Point Light Settings",
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct PointLightConfig PointLightConfigSettings Client Deferred Rendering",
+    "description": "Struct PointLightConfig PointLightConfigSettings Client Deferred Rendering",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "format_version",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:point_light_settings",
+        "title": "minecraft:point_light_settings",
+        "description": "minecraft:point_light_settings",
+        "dataType": 16,
+        "subForm": {
+          "title": "PointLightConfig PointLightConfigSettings PointLightSettings",
+          "description": "PointLightConfig PointLightConfigSettings PointLightSettings",
+          "fields": [
+            {
+              "id": "colors",
+              "title": "colors",
+              "description": "colors",
+              "dataType": 2,
+              "alternates": [
+                {
+                  "id": "colors",
+                  "dataType": 32,
+                  "minLength": 3,
+                  "maxLength": 3
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

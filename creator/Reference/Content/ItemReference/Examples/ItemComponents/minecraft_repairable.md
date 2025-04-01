@@ -29,8 +29,20 @@ Repair Items.
 |:----------|:-------------|:----|:-----------|:------------- |
 | items | *not set* | String | Items that may be used to repair an item. |  | 
 | items (Alternate 1) | *not set* | Keyed set of strings |  |  | 
-| repair_amount | *not set* | Object | How much the item is repaired. |  | 
-| repair_amount (Alternate 1) | *not set* | Decimal number |  |  | 
+| repair_amount | *not set* | Keyed set of strings | How much the item is repaired. |  | 
+| repair_amount (Alternate 1) | *not set* | Key/item pairs of [Repair Amount (Alternate 1)](#repair-amount-(alternate-1)-item-type) items |  |  | 
+| repair_amount (Alternate 2) | *not set* | Decimal number |  |  | 
+
+## Repair Amount (Alternate 1) item type
+Repair Amount.
+
+
+#### Repair Amount Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| expression | *not set* | String | expression |  | 
+| version | *not set* | Integer number | version |  | 
 
 ## Samples
 

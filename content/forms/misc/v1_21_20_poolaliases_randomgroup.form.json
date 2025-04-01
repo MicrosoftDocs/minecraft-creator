@@ -1,7 +1,7 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "title": "Struct SharedTypes V1 21 20 PoolAliases RandomGroup Misc",
+    "title": "Struct V1 21 20 PoolAliases RandomGroup Misc",
     "description": "Pool alias for a RandomGroup of aliases",
     "fields": [
       {
@@ -10,7 +10,7 @@
         "description": "Aliases for a RandomGroup",
         "dataType": 15,
         "subForm": {
-          "title": "Struct SharedTypes V1 21 20 WeightedRandomItem<class Std Vector<class Std Variant<struct SharedTypes V1 21 20 PoolAliases Direct,struct SharedTypes V1 21 20 PoolAliases Random>,class Std Allocator<class Std Variant<struct SharedTypes V1 21 20 PoolAliases Direct,struct SharedTypes V1 21 20 PoolAliases Random> > > >",
+          "title": "V1 21 20 WeightedRandomItem<class Std Vector<class Std Variant<struct SharedTypes V1 21 20 PoolAliases Direct,struct SharedTypes V1 21 20 PoolAliases Random>,class Std Allocator<class Std Variant<struct SharedTypes V1 21 20 PoolAliases Direct,struct SharedTypes V1 21 20 PoolAliases Random> > > >",
           "description": "Weighted Random Item",
           "fields": [
             {

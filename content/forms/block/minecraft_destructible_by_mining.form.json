@@ -183,6 +183,12 @@
               "path": "Example2",
               "content": "{\r\n\t\"minecraft:destructible_by_mining\": {\r\n\t\t\"seconds_to_destroy\": 10,\r\n\t\t\"item_specific_speeds\": [\r\n\t\t\t{\r\n\t\t\t\t\"item\": \"minecraft:iron_pickaxe\",\r\n\t\t\t\t\"destroy_speed\": 5.0\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"item\": \"minecraft:diamond_pickaxe\",\r\n\t\t\t\t\"destroy_speed\": 2.0\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}"
             }
+          ],
+          "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": []
+            }
           ]
         }
       },
@@ -209,6 +215,12 @@
             {
               "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
               "content": 1
+            }
+          ],
+          "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": 5
             }
           ]
         }
@@ -249,6 +261,15 @@
           "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
           "content": {
             "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 5,
+            "item_specific_speeds": []
           }
         }
       ],

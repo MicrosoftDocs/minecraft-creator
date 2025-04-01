@@ -243,6 +243,14 @@
               }
             }
           ],
+          "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "luckyblock"
+              }
+            }
+          ],
           "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json": [
             {
               "path": "/minecraft:block/components/minecraft:material_instances/",
@@ -486,6 +494,16 @@
             "*": {
               "texture": "apple_block",
               "render_method": "opaque"
+            }
+          }
+        }
+      ],
+      "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "luckyblock"
             }
           }
         }

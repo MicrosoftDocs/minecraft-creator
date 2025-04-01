@@ -93,6 +93,13 @@ This item can also be represented as a `String`.
 "minecraft:geometry": "geometry.apple_block"
 ```
 
+#### [Luckyblock](https://github.com/microsoft/minecraft-samples/tree/main/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json)
+
+
+```json
+"minecraft:geometry": "geometry.luckyblock"
+```
+
 #### [Block Frond Top](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json)
 
 
@@ -112,11 +119,4 @@ This item can also be represented as a `String`.
 
 ```json
 "minecraft:geometry": "geometry.palm_leave_tip"
-```
-
-#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json)
-
-
-```json
-"minecraft:geometry": "geometry.palm_leave"
 ```

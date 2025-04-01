@@ -231,8 +231,8 @@
         "description": "Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value.",
         "dataType": 16,
         "subForm": {
-          "title": "Struct SharedTypes IntRange",
-          "description": "Struct SharedTypes IntRange",
+          "title": "IntRange",
+          "description": "IntRange",
           "fields": [
             {
               "id": "min",

@@ -1,0 +1,796 @@
+{
+  "fields": [],
+  "id": "minecraft:color_grading_settings",
+  "title": "Color Grading Settings",
+  "description": "Minecraft's color grading system allows for many degrees of customization of the final image. You can control the saturation, contrast, gain, and offset of pixels per RGB channel. This can be done on a global scale regardless of pixel luminance, or it can be done on a more fine-grained scale with unique sets of parameters for shadows, midtones and highlights.",
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct ColorGraderConfig ColorGradingParametersSrc Client Deferred Rendering",
+    "description": "Struct ColorGraderConfig ColorGradingParametersSrc Client Deferred Rendering",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "format_version",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:color_grading_settings",
+        "title": "minecraft:color_grading_settings",
+        "description": "minecraft:color_grading_settings",
+        "dataType": 16,
+        "subForm": {
+          "title": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings",
+          "description": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings",
+          "fields": [
+            {
+              "id": "description",
+              "title": "description",
+              "description": "description",
+              "dataType": 16,
+              "subForm": {
+                "title": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGradingDescription",
+                "description": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGradingDescription",
+                "fields": [
+                  {
+                    "id": "identifier",
+                    "title": "identifier",
+                    "description": "identifier",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "color_grading",
+              "title": "color_grading",
+              "description": "color_grading",
+              "dataType": 16,
+              "subForm": {
+                "title": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGrading",
+                "description": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ColorGrading",
+                "fields": [
+                  {
+                    "id": "shadows",
+                    "title": "shadows",
+                    "description": "shadows",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Shadows",
+                      "description": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Shadows",
+                      "fields": [
+                        {
+                          "id": "gain",
+                          "title": "gain",
+                          "description": "gain",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 10
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "gain",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Gain",
+                                "description": "Gain",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "enabled",
+                          "title": "enabled",
+                          "description": "enabled",
+                          "dataType": 1
+                        },
+                        {
+                          "id": "shadowsMax",
+                          "title": "shadowsMax",
+                          "description": "shadowsMax",
+                          "dataType": 3,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 1
+                            }
+                          ]
+                        },
+                        {
+                          "id": "contrast",
+                          "title": "contrast",
+                          "description": "contrast",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 4
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "contrast",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Contrast",
+                                "description": "Contrast",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "offset",
+                          "title": "offset",
+                          "description": "offset",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": ">=",
+                              "value": -1
+                            },
+                            {
+                              "comparison": "<=",
+                              "value": 1
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "offset",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Offset",
+                                "description": "Offset",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "gamma",
+                          "title": "gamma",
+                          "description": "gamma",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 4
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "gamma",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Gamma",
+                                "description": "Gamma",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "saturation",
+                          "title": "saturation",
+                          "description": "saturation",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 10
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "saturation",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Saturation",
+                                "description": "Saturation",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "midtones",
+                    "title": "midtones",
+                    "description": "midtones",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Midtones",
+                      "description": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Midtones",
+                      "fields": [
+                        {
+                          "id": "contrast",
+                          "title": "contrast",
+                          "description": "contrast",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 4
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "contrast",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Contrast",
+                                "description": "Contrast",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "gain",
+                          "title": "gain",
+                          "description": "gain",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 10
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "gain",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Gain",
+                                "description": "Gain",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "offset",
+                          "title": "offset",
+                          "description": "offset",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": ">=",
+                              "value": -1
+                            },
+                            {
+                              "comparison": "<=",
+                              "value": 1
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "offset",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Offset",
+                                "description": "Offset",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "gamma",
+                          "title": "gamma",
+                          "description": "gamma",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 4
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "gamma",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Gamma",
+                                "description": "Gamma",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "saturation",
+                          "title": "saturation",
+                          "description": "saturation",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 10
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "saturation",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Saturation",
+                                "description": "Saturation",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "highlights",
+                    "title": "highlights",
+                    "description": "highlights",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Highlights",
+                      "description": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Highlights",
+                      "fields": [
+                        {
+                          "id": "gain",
+                          "title": "gain",
+                          "description": "gain",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 10
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "gain",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Gain",
+                                "description": "Gain",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "enabled",
+                          "title": "enabled",
+                          "description": "enabled",
+                          "dataType": 1
+                        },
+                        {
+                          "id": "highlightsMin",
+                          "title": "highlightsMin",
+                          "description": "highlightsMin",
+                          "dataType": 3,
+                          "validity": [
+                            {
+                              "comparison": ">=",
+                              "value": 1
+                            },
+                            {
+                              "comparison": "<=",
+                              "value": 20
+                            }
+                          ]
+                        },
+                        {
+                          "id": "contrast",
+                          "title": "contrast",
+                          "description": "contrast",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 4
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "contrast",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Contrast",
+                                "description": "Contrast",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "offset",
+                          "title": "offset",
+                          "description": "offset",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": ">=",
+                              "value": -1
+                            },
+                            {
+                              "comparison": "<=",
+                              "value": 1
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "offset",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Offset",
+                                "description": "Offset",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "gamma",
+                          "title": "gamma",
+                          "description": "gamma",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 4
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "gamma",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Gamma",
+                                "description": "Gamma",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "id": "saturation",
+                          "title": "saturation",
+                          "description": "saturation",
+                          "dataType": 32,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 10
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "saturation",
+                              "dataType": 16,
+                              "subForm": {
+                                "title": "Saturation",
+                                "description": "Saturation",
+                                "fields": [
+                                  {
+                                    "id": "x",
+                                    "title": "x",
+                                    "description": "x",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "y",
+                                    "title": "y",
+                                    "description": "y",
+                                    "dataType": 3
+                                  },
+                                  {
+                                    "id": "z",
+                                    "title": "z",
+                                    "description": "z",
+                                    "dataType": 3
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "tone_mapping",
+              "title": "tone_mapping",
+              "description": "tone_mapping",
+              "dataType": 16,
+              "subForm": {
+                "title": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ToneMapping",
+                "description": "ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings ToneMapping",
+                "fields": [
+                  {
+                    "id": "operator",
+                    "title": "enum dragon_framerenderer_modules_Tonemapper",
+                    "description": "enum dragon_framerenderer_modules_Tonemapper",
+                    "dataType": 2
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

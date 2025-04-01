@@ -327,6 +327,17 @@ A material instance definition to map to a material instance in a geometry file.
 }
 ```
 
+#### [Luckyblock](https://github.com/microsoft/minecraft-samples/tree/main/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json)
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "luckyblock"
+  }
+}
+```
+
 #### [Block Frond Top](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json)
 
 
@@ -334,18 +345,6 @@ A material instance definition to map to a material instance in a geometry file.
 "minecraft:material_instances": {
   "*": {
     "texture": "frond_top",
-    "render_method": "alpha_test"
-  }
-}
-```
-
-#### [Block Palm Leave Corner](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_corner.block.json)
-
-
-```json
-"minecraft:material_instances": {
-  "*": {
-    "texture": "palm_leave_corner",
     "render_method": "alpha_test"
   }
 }

@@ -8,13 +8,12 @@
         "id": "z",
         "title": "z",
         "description": "Distribution for the coordinate (evaluated each iteration).",
-        "dataType": 16,
-        "subForm": {
-          "title": "Z",
-          "description": "Z",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "z",
+            "dataType": 3
+          },
           {
             "id": "z",
             "dataType": 16,
@@ -64,13 +63,31 @@
         "id": "iterations",
         "title": "iterations",
         "description": "Number of scattered positions to generate.",
-        "dataType": 16,
-        "subForm": {
-          "title": "Iterations",
-          "description": "Iterations",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "iterations",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Iterations",
+              "description": "Iterations",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "iterations",
             "dataType": 3
@@ -81,13 +98,12 @@
         "id": "scatter_chance",
         "title": "scatter_chance",
         "description": "Probability that this scatter will occur. Not evaluated each iteration; either no iterations will run, or all will.",
-        "dataType": 16,
-        "subForm": {
-          "title": "Scatter Chance",
-          "description": "Scatter Chance",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "scatter_chance",
+            "dataType": 3
+          },
           {
             "id": "scatter_chance",
             "dataType": 16,
@@ -135,23 +151,111 @@
         "id": "x",
         "title": "x",
         "description": "Distribution for the coordinate (evaluated each iteration).",
-        "dataType": 16,
-        "subForm": {
-          "title": "X",
-          "description": "X",
-          "fields": []
-        }
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "x",
+            "dataType": 3
+          },
+          {
+            "id": "x",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "title": "X",
+              "description": "X",
+              "fields": [
+                {
+                  "id": "distribution",
+                  "title": "Random Distribution Type",
+                  "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
+                  "dataType": 2
+                },
+                {
+                  "id": "extent",
+                  "title": "extent",
+                  "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
+                  "dataType": 16,
+                  "minLength": 2,
+                  "maxLength": 2
+                },
+                {
+                  "id": "step_size",
+                  "title": "step_size",
+                  "description": "When the distribution type is grid, defines the distance between steps along this axis.",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "grid_offset",
+                  "title": "grid_offset",
+                  "description": "When the distribution type is grid, defines the offset along this axis.",
+                  "dataType": 0
+                }
+              ]
+            }
+          }
+        ]
       },
       {
         "id": "y",
         "title": "y",
         "description": "Distribution for the coordinate (evaluated each iteration).",
-        "dataType": 16,
-        "subForm": {
-          "title": "Y",
-          "description": "Y",
-          "fields": []
-        }
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "y",
+            "dataType": 3
+          },
+          {
+            "id": "y",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "title": "Y",
+              "description": "Y",
+              "fields": [
+                {
+                  "id": "distribution",
+                  "title": "Random Distribution Type",
+                  "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
+                  "dataType": 2
+                },
+                {
+                  "id": "extent",
+                  "title": "extent",
+                  "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
+                  "dataType": 16,
+                  "minLength": 2,
+                  "maxLength": 2
+                },
+                {
+                  "id": "step_size",
+                  "title": "step_size",
+                  "description": "When the distribution type is grid, defines the distance between steps along this axis.",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "grid_offset",
+                  "title": "grid_offset",
+                  "description": "When the distribution type is grid, defines the offset along this axis.",
+                  "dataType": 0
+                }
+              ]
+            }
+          }
+        ]
       }
     ]
   }

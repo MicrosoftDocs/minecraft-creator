@@ -226,6 +226,12 @@
           "content": "geometry.apple_block"
         }
       ],
+      "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.luckyblock"
+        }
+      ],
       "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:geometry/",

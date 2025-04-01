@@ -120,6 +120,8 @@
             href: Documents/DeferredLighting/PBRResourcePacks.md
           - name: Enabling Deferred Technical Preview in Your World
             href: Documents/DeferredLighting/EnablingDeferredTechnicalPreview.md
+          - name: Use Blockbench to Add Deferred Lighting Textures
+            href: Documents/DeferredLighting/UseBlockbenchToCreateModelsWithTextures.md
           - name: Lighting Customization
             href: Documents/DeferredLighting/LightingCustomization.md
           - name: Atmospherics Customization

@@ -8,13 +8,31 @@
         "id": "enabled",
         "title": "enabled",
         "description": "enabled",
-        "dataType": 16,
-        "subForm": {
-          "title": "Enabled",
-          "description": "Enabled",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "enabled",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Enabled",
+              "description": "Enabled",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "enabled",
             "dataType": 3
@@ -55,7 +73,25 @@
         "id": "events",
         "title": "events",
         "description": "events",
-        "dataType": 16,
+        "dataType": 15,
+        "subForm": {
+          "title": "Particle Motion Collision Event",
+          "description": "Particle Motion Collision Event",
+          "fields": [
+            {
+              "id": "min_speed",
+              "title": "min_speed",
+              "description": "min_speed",
+              "dataType": 3
+            },
+            {
+              "id": "event",
+              "title": "event",
+              "description": "event",
+              "dataType": 16
+            }
+          ]
+        },
         "alternates": [
           {
             "id": "events",

@@ -8,15 +8,33 @@
         "id": "relative_position",
         "title": "relative_position",
         "description": "relative_position",
-        "dataType": 15,
+        "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
-        "subForm": {
-          "title": "Relative Position",
-          "description": "Relative Position",
-          "fields": []
-        },
         "alternates": [
+          {
+            "id": "relative_position",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Relative Position",
+              "description": "Relative Position",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "relative_position",
             "dataType": 3
@@ -27,15 +45,33 @@
         "id": "direction",
         "title": "direction",
         "description": "direction",
-        "dataType": 15,
+        "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
-        "subForm": {
-          "title": "Direction",
-          "description": "Direction",
-          "fields": []
-        },
         "alternates": [
+          {
+            "id": "direction",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Direction",
+              "description": "Direction",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "direction",
             "dataType": 3
@@ -46,13 +82,31 @@
         "id": "rotation",
         "title": "rotation",
         "description": "rotation",
-        "dataType": 16,
-        "subForm": {
-          "title": "Rotation",
-          "description": "Rotation",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "rotation",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Rotation",
+              "description": "Rotation",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "rotation",
             "dataType": 3

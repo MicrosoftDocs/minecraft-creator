@@ -120,8 +120,8 @@
         "description": "Ammunition.",
         "dataType": 15,
         "subForm": {
-          "title": "Struct SharedTypes V1 20 50 ShooterItemComponent Ammunition",
-          "description": "Struct SharedTypes V1 20 50 ShooterItemComponent Ammunition",
+          "title": "V1 20 50 ShooterItemComponent Ammunition",
+          "description": "V1 20 50 ShooterItemComponent Ammunition",
           "fields": [
             {
               "id": "use_in_creative",

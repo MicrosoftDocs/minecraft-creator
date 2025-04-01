@@ -54,6 +54,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.fire_at_target](EntityGoals/minecraftBehavior_fire_at_target.md)| Allows an entity to attack by firing a shot with a delay. |
 | [minecraft:behavior.flee_sun](EntityGoals/minecraftBehavior_flee_sun.md)| Allows the mob to run away from direct sunlight and seek shade. |
 | [minecraft:behavior.float](EntityGoals/minecraftBehavior_float.md)| Allows the mob to stay afloat while swimming. |
+| [minecraft:behavior.float_tempt](EntityGoals/minecraftBehavior_float_tempt.md)| Allows a mob to be tempted by a player holding a specific item. |
 | [minecraft:behavior.float_wander](EntityGoals/minecraftBehavior_float_wander.md)| Allows the mob to float around like the Ghast. |
 | [minecraft:behavior.follow_caravan](EntityGoals/minecraftBehavior_follow_caravan.md)| Allows the mob to follow mobs that are in a caravan. |
 | [minecraft:behavior.follow_mob](EntityGoals/minecraftBehavior_follow_mob.md)| Allows the mob to follow other mobs. |
@@ -169,7 +170,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.swoop_attack](EntityGoals/minecraftBehavior_swoop_attack.md)| Allows an entity to attack using swoop attack behavior; Ideal for use with flying mobs. |
 | [minecraft:behavior.take_flower](EntityGoals/minecraftBehavior_take_flower.md)| Allows the mob to accept flowers from another mob with the minecraft:offer_flower behavior. |
 | [minecraft:behavior.teleport_to_owner](EntityGoals/minecraftBehavior_teleport_to_owner.md)| Allows an entity to teleport to its owner. |
-| [minecraft:behavior.tempt](EntityGoals/minecraftBehavior_tempt.md)| Allows the mob to be tempted by food they like. |
+| [minecraft:behavior.tempt](EntityGoals/minecraftBehavior_tempt.md)| Allows a mob to be tempted by a player holding a specific item. |
 | [minecraft:behavior.timer_flag_1](EntityGoals/minecraftBehavior_timer_flag_1.md)| Fires an event when this behavior starts, then waits for a duration before stopping. |
 | [minecraft:behavior.timer_flag_2](EntityGoals/minecraftBehavior_timer_flag_2.md)| Fires an event when this behavior starts, then waits for a duration before stopping. |
 | [minecraft:behavior.timer_flag_3](EntityGoals/minecraftBehavior_timer_flag_3.md)| Fires an event when this behavior starts, then waits for a duration before stopping. |

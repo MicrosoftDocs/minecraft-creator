@@ -10,8 +10,8 @@
         "description": "description",
         "dataType": 16,
         "subForm": {
-          "title": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool Description",
-          "description": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool Description",
+          "title": "V1 21 20 JigsawStructureTemplatePool Description",
+          "description": "V1 21 20 JigsawStructureTemplatePool Description",
           "fields": [
             {
               "id": "identifier",
@@ -28,8 +28,8 @@
         "description": "List of Structure Template and processor list pairs.",
         "dataType": 15,
         "subForm": {
-          "title": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool TemplatePoolElement",
-          "description": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool TemplatePoolElement",
+          "title": "V1 21 20 JigsawStructureTemplatePool TemplatePoolElement",
+          "description": "V1 21 20 JigsawStructureTemplatePool TemplatePoolElement",
           "fields": [
             {
               "id": "element",
@@ -37,12 +37,12 @@
               "description": "A grouping of a Structure Template, the Processor List to use when placing the structure, and its weight that determines the likelihood of the element being chosen.",
               "dataType": 16,
               "subForm": {
-                "title": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool SinglePoolElement",
-                "description": "Struct SharedTypes V1 21 20 JigsawStructureTemplatePool SinglePoolElement",
+                "title": "V1 21 20 JigsawStructureTemplatePool SinglePoolElement",
+                "description": "V1 21 20 JigsawStructureTemplatePool SinglePoolElement",
                 "fields": [
                   {
                     "id": "element_type",
-                    "title": "enum SharedTypes_v1_21_20_JigsawStructureTemplatePool_ElementType",
+                    "title": "enum SharedTypes_v1_21_20_JigsawureTemplatePool_ElementType",
                     "description": "The type of element. Currently, only minecraft:single_pool_element is supported.",
                     "dataType": 2
                   },
@@ -79,7 +79,7 @@
             },
             {
               "id": "projection",
-              "title": "enum SharedTypes_v1_21_20_JigsawStructureTemplatePool_Projection",
+              "title": "enum SharedTypes_v1_21_20_JigsawureTemplatePool_Projection",
               "description": "Specifies how structures should be placed relative to the terrain.",
               "dataType": 2
             }

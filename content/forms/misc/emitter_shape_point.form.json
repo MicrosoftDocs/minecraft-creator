@@ -8,15 +8,33 @@
         "id": "offset",
         "title": "offset",
         "description": "offset",
-        "dataType": 15,
+        "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
-        "subForm": {
-          "title": "Offset",
-          "description": "Offset",
-          "fields": []
-        },
         "alternates": [
+          {
+            "id": "offset",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Offset",
+              "description": "Offset",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "offset",
             "dataType": 3
@@ -27,15 +45,33 @@
         "id": "direction",
         "title": "direction",
         "description": "direction",
-        "dataType": 15,
+        "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
-        "subForm": {
-          "title": "Direction",
-          "description": "Direction",
-          "fields": []
-        },
         "alternates": [
+          {
+            "id": "direction",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Direction",
+              "description": "Direction",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "direction",
             "dataType": 3

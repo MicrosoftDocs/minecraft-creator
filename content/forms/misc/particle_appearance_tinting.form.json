@@ -8,13 +8,47 @@
         "id": "color",
         "title": "color",
         "description": "color",
-        "dataType": 16,
-        "subForm": {
-          "title": "Color",
-          "description": "Color",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "color",
+            "dataType": 24
+          },
+          {
+            "id": "color",
+            "dataType": 24,
+            "minLength": 3,
+            "maxLength": 3,
+            "alternates": [
+              {
+                "id": "color",
+                "dataType": 14,
+                "readOnly": true,
+                "subForm": {
+                  "title": "Color",
+                  "description": "Color",
+                  "fields": [
+                    {
+                      "id": "expression",
+                      "title": "expression",
+                      "description": "expression",
+                      "dataType": 2
+                    },
+                    {
+                      "id": "version",
+                      "title": "version",
+                      "description": "version",
+                      "dataType": 0
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "color",
+                "dataType": 3
+              }
+            ]
+          },
           {
             "id": "color",
             "dataType": 16,
@@ -26,21 +60,11 @@
                   "id": "gradient",
                   "title": "gradient",
                   "description": "gradient",
-                  "dataType": 15,
-                  "subForm": {
-                    "title": "Gradient",
-                    "description": "Gradient",
-                    "fields": []
-                  },
+                  "dataType": 24,
                   "alternates": [
                     {
                       "id": "gradient",
-                      "dataType": 15,
-                      "subForm": {
-                        "title": "Gradient",
-                        "description": "Gradient",
-                        "fields": []
-                      },
+                      "dataType": 24,
                       "alternates": [
                         {
                           "id": "gradient",
@@ -48,14 +72,38 @@
                         },
                         {
                           "id": "gradient",
-                          "dataType": 15,
+                          "dataType": 24,
                           "minLength": 3,
                           "maxLength": 3,
-                          "subForm": {
-                            "title": "Gradient",
-                            "description": "Gradient",
-                            "fields": []
-                          }
+                          "alternates": [
+                            {
+                              "id": "gradient",
+                              "dataType": 14,
+                              "readOnly": true,
+                              "subForm": {
+                                "title": "Gradient",
+                                "description": "Gradient",
+                                "fields": [
+                                  {
+                                    "id": "expression",
+                                    "title": "expression",
+                                    "description": "expression",
+                                    "dataType": 2
+                                  },
+                                  {
+                                    "id": "version",
+                                    "title": "version",
+                                    "description": "version",
+                                    "dataType": 0
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "id": "gradient",
+                              "dataType": 3
+                            }
+                          ]
                         }
                       ]
                     }
@@ -65,13 +113,31 @@
                   "id": "interpolant",
                   "title": "interpolant",
                   "description": "interpolant",
-                  "dataType": 16,
-                  "subForm": {
-                    "title": "Interpolant",
-                    "description": "Interpolant",
-                    "fields": []
-                  },
+                  "dataType": 24,
                   "alternates": [
+                    {
+                      "id": "interpolant",
+                      "dataType": 14,
+                      "readOnly": true,
+                      "subForm": {
+                        "title": "Interpolant",
+                        "description": "Interpolant",
+                        "fields": [
+                          {
+                            "id": "expression",
+                            "title": "expression",
+                            "description": "expression",
+                            "dataType": 2
+                          },
+                          {
+                            "id": "version",
+                            "title": "version",
+                            "description": "version",
+                            "dataType": 0
+                          }
+                        ]
+                      }
+                    },
                     {
                       "id": "interpolant",
                       "dataType": 3
