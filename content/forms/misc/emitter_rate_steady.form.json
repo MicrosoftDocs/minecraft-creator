@@ -8,13 +8,31 @@
         "id": "spawn_rate",
         "title": "spawn_rate",
         "description": "spawn_rate",
-        "dataType": 16,
-        "subForm": {
-          "title": "Spawn Rate",
-          "description": "Spawn Rate",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "spawn_rate",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Spawn Rate",
+              "description": "Spawn Rate",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "spawn_rate",
             "dataType": 3
@@ -25,13 +43,31 @@
         "id": "max_particles",
         "title": "max_particles",
         "description": "max_particles",
-        "dataType": 16,
-        "subForm": {
-          "title": "Max Particles",
-          "description": "Max Particles",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "max_particles",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Max Particles",
+              "description": "Max Particles",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "max_particles",
             "dataType": 3

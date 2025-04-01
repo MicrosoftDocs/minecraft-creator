@@ -35,7 +35,277 @@
               "id": "components",
               "title": "components",
               "description": "Components for this Client Biome.",
-              "dataType": 16
+              "dataType": 16,
+              "subForm": {
+                "title": "Client Biome Components",
+                "description": "Any components that this Client Biome uses",
+                "fields": [
+                  {
+                    "id": "minecraft:ambient_sounds",
+                    "title": "minecraft:ambient_sounds",
+                    "description": "Set the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Ambient Sounds",
+                      "description": "Set the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.",
+                      "fields": [
+                        {
+                          "id": "addition",
+                          "title": "addition",
+                          "description": "Named sound that occasionally plays at the listener position",
+                          "dataType": 2
+                        },
+                        {
+                          "id": "loop",
+                          "title": "loop",
+                          "description": "Named sound that loops while the listener position is inside the biome",
+                          "dataType": 2
+                        },
+                        {
+                          "id": "mood",
+                          "title": "mood",
+                          "description": "Named sound that rarely plays at a nearby air block position when the light level is low. Biomes without an ambient mood sound will use the 'ambient.cave' sound.",
+                          "dataType": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:sky_color",
+                    "title": "minecraft:sky_color",
+                    "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Sky Color",
+                      "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
+                      "fields": [
+                        {
+                          "id": "sky_color",
+                          "title": "sky_color",
+                          "description": "RGB color of the sky",
+                          "dataType": 2,
+                          "alternates": [
+                            {
+                              "id": "sky_color",
+                              "dataType": 32,
+                              "minLength": 3,
+                              "maxLength": 3
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:fog_appearance",
+                    "title": "minecraft:fog_appearance",
+                    "description": "Set the fog settings used during rendering. Biomes without this component will have default fog settings.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Fog Appearance",
+                      "description": "Set the fog settings used during rendering. Biomes without this component will have default fog settings.",
+                      "fields": [
+                        {
+                          "id": "fog_identifier",
+                          "title": "fog_identifier",
+                          "description": "Identifier of fog definition to use",
+                          "dataType": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:foliage_appearance",
+                    "title": "minecraft:foliage_appearance",
+                    "description": "Set the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Foliage Appearance",
+                      "description": "Set the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance.",
+                      "fields": [
+                        {
+                          "id": "color",
+                          "title": "color",
+                          "description": "RGB color of foliage, or a Foliage Color Map object.",
+                          "dataType": 16
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:lighting_identifier",
+                    "title": "minecraft:lighting_identifier",
+                    "description": "[INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. Biomes without this component will have default lighting settings.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Lighting Identifier",
+                      "description": "[INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. Biomes without this component will have default lighting settings.",
+                      "fields": [
+                        {
+                          "id": "lighting_identifier",
+                          "title": "lighting_identifier",
+                          "description": "Identifier of lighting definition to use",
+                          "dataType": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:water_appearance",
+                    "title": "minecraft:water_appearance",
+                    "description": "Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Water Appearance",
+                      "description": "Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.",
+                      "fields": [
+                        {
+                          "id": "surface_color",
+                          "title": "surface_color",
+                          "description": "RGB color of the water surface",
+                          "dataType": 2,
+                          "alternates": [
+                            {
+                              "id": "surface_color",
+                              "dataType": 32,
+                              "minLength": 3,
+                              "maxLength": 3
+                            }
+                          ]
+                        },
+                        {
+                          "id": "surface_opacity",
+                          "title": "surface_opacity",
+                          "description": "Opacity of the water surface (must be between 0 for invisible and 1 for opaque, inclusive)",
+                          "dataType": 3
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:grass_appearance",
+                    "title": "minecraft:grass_appearance",
+                    "description": "Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Grass Appearance",
+                      "description": "Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance.",
+                      "fields": [
+                        {
+                          "id": "color",
+                          "title": "color",
+                          "description": "RGB color of grass.",
+                          "dataType": 16
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:dry_foliage_color",
+                    "title": "minecraft:dry_foliage_color",
+                    "description": "Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Dry Foliage Color",
+                      "description": "Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.",
+                      "fields": [
+                        {
+                          "id": "color",
+                          "title": "color",
+                          "description": "RGB color of dry foliage",
+                          "dataType": 2,
+                          "alternates": [
+                            {
+                              "id": "color",
+                              "dataType": 32,
+                              "minLength": 3,
+                              "maxLength": 3
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:atmosphere_identifier",
+                    "title": "minecraft:atmosphere_identifier",
+                    "description": "[INTERNAL - WORK IN PROGRESS] Set the atmosphere settings used during deferred rendering. Biomes without this component will have default atmosphere settings.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Atmosphere Identifier",
+                      "description": "[INTERNAL - WORK IN PROGRESS] Set the atmosphere settings used during deferred rendering. Biomes without this component will have default atmosphere settings.",
+                      "fields": [
+                        {
+                          "id": "atmosphere_identifier",
+                          "title": "atmosphere_identifier",
+                          "description": "Identifier of atmosphere definition to use",
+                          "dataType": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:color_grading_identifier",
+                    "title": "minecraft:color_grading_identifier",
+                    "description": "[INTERNAL - WORK IN PROGRESS] Set the color_grading settings used during deferred rendering. Biomes without this component will have default color_grading settings.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Color Grading Identifier",
+                      "description": "[INTERNAL - WORK IN PROGRESS] Set the color_grading settings used during deferred rendering. Biomes without this component will have default color_grading settings.",
+                      "fields": [
+                        {
+                          "id": "color_grading_identifier",
+                          "title": "color_grading_identifier",
+                          "description": "Identifier of color_grading definition to use",
+                          "dataType": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:water_identifier",
+                    "title": "minecraft:water_identifier",
+                    "description": "[INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering. Biomes without this component will have default water settings.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Water Identifier",
+                      "description": "[INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering. Biomes without this component will have default water settings.",
+                      "fields": [
+                        {
+                          "id": "water_identifier",
+                          "title": "water_identifier",
+                          "description": "Identifier of water definition to use",
+                          "dataType": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "minecraft:biome_music",
+                    "title": "minecraft:biome_music",
+                    "description": "Affect how music plays within the biome",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Biome Music",
+                      "description": "Affect how music plays within the biome",
+                      "fields": [
+                        {
+                          "id": "volume_multiplier",
+                          "title": "volume_multiplier",
+                          "description": "Multiplier temporarily and gradually applied to music volume when within this biome. Must be a value between 0 and 1, inclusive.",
+                          "dataType": 3
+                        },
+                        {
+                          "id": "music_definition",
+                          "title": "music_definition",
+                          "description": "Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music.",
+                          "dataType": 2
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
             }
           ]
         }

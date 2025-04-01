@@ -9,22 +9,23 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:behavior.tempt
 
-Allows the mob to be tempted by food they like.
+Allows a mob to be tempted by a player holding a specific item. Uses pathfinding for movement.
 
 
 ## Tempt Behavior Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| can_get_scared | false | Boolean true/false | If true, the mob can stop being tempted if the player moves too fast while close to this mob | Cat: `true` | 
+| can_get_scared | false | Boolean true/false | If true, the mob can stop being tempted if the player moves too fast while close to this mob. | Cat: `true` | 
 | can_tempt_vertically | false | Boolean true/false | If true, vertical distance to the player will be considered when tempting. | Armadillo: `true` | 
 | can_tempt_while_ridden | false | Boolean true/false | If true, the mob can be tempted even if it has a passenger (i.e. if being ridden). | Strider: `true` | 
-| items | *not set* | Array of strings | List of items this mob is tempted by | Armadillo: `["spider_eye"]`, Axolotl: `["tropical_fish_bucket"]`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:open_eyeblossom","minecraft:wildflowers","minecraft:cactus_flower"]` | 
+| items | [] | Array of strings | List of items that can tempt the mob. | Armadillo: `["spider_eye"]`, Axolotl: `["tropical_fish_bucket"]`, Bee: `["minecraft:poppy","minecraft:blue_orchid","minecraft:allium","minecraft:azure_bluet","minecraft:red_tulip","minecraft:orange_tulip","minecraft:white_tulip","minecraft:pink_tulip","minecraft:oxeye_daisy","minecraft:cornflower","minecraft:lily_of_the_valley","minecraft:dandelion","minecraft:wither_rose","minecraft:sunflower","minecraft:lilac","minecraft:rose_bush","minecraft:peony","minecraft:flowering_azalea","minecraft:azalea_leaves_flowered","minecraft:mangrove_propagule","minecraft:pitcher_plant","minecraft:torchflower","minecraft:cherry_leaves","minecraft:pink_petals","minecraft:open_eyeblossom","minecraft:wildflowers","minecraft:cactus_flower"]` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Armadillo: `3`, Axolotl: `2`, Bee: `5` | 
 | sound_interval | *not set* | Range of integers | Range of random ticks to wait between tempt sounds. | Cat: `[0,100]`, Strider: `{"range_min":2,"range_max":5}` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Armadillo: `1.25`, Axolotl: `1.1`, Camel: `2.5` | 
+| stop_distance | 1.5 | Decimal number | The distance at which the mob will stop following the player. |  | 
 | tempt_sound | *not set* | String | Sound to play while the mob is being tempted. | Cat: `"tempt"` | 
-| within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like | Bee: `8`, Cat: `16`, Robot: `7` | 
+| within_radius | 0 | Decimal number | Distance in blocks this mob can get tempted by a player holding an item they like. | Bee: `8`, Cat: `16`, Robot: `7` | 
 
 ## Samples
 

@@ -1,0 +1,51 @@
+{
+  "fields": [],
+  "id": "minecraft:shadow_settings",
+  "title": "Shadow settings",
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct ShadowStylizationConfig ShadowStylizationConfigSettings Client Deferred Rendering",
+    "description": "Struct ShadowStylizationConfig ShadowStylizationConfigSettings Client Deferred Rendering",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "format_version",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:shadow_settings",
+        "title": "minecraft:shadow_settings",
+        "description": "minecraft:shadow_settings",
+        "dataType": 16,
+        "subForm": {
+          "title": "ShadowStylizationConfig ShadowStylizationConfigSettings ShadowStylizationSettings",
+          "description": "ShadowStylizationConfig ShadowStylizationConfigSettings ShadowStylizationSettings",
+          "fields": [
+            {
+              "id": "shadow_style",
+              "title": "enum ShadowStylizationConfig_ShadowStylizationConfigSettings_ShadowStylizationSettings_ShadowStyle",
+              "description": "enum ShadowStylizationConfig_ShadowStylizationConfigSettings_ShadowStylizationSettings_ShadowStyle",
+              "dataType": 2
+            },
+            {
+              "id": "texel_size",
+              "title": "texel_size",
+              "description": "texel_size",
+              "dataType": 0,
+              "validity": [
+                {
+                  "comparison": ">=",
+                  "value": 1
+                },
+                {
+                  "comparison": "<=",
+                  "value": 1024
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

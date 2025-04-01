@@ -47,7 +47,107 @@
               "id": "minecraft:biome_filter",
               "title": "minecraft:biome_filter",
               "description": "List of filter tests to determine which biomes this rule will attach to.",
-              "dataType": 16
+              "dataType": 16,
+              "subForm": {
+                "title": "Biome Filter",
+                "description": "Biome Filter",
+                "fields": [
+                  {
+                    "id": "operator",
+                    "title": "operator",
+                    "description": "The comparison to apply with 'value'.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "test",
+                    "title": "test",
+                    "description": "The name of the test to apply.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "subject",
+                    "title": "subject",
+                    "description": "The subject of this filter test.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "domain",
+                    "title": "domain",
+                    "description": "The domain the test should be performed in.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "value",
+                    "title": "value",
+                    "description": "The value being compared with the test.",
+                    "dataType": 16
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "id": "minecraft:biome_filter",
+                  "dataType": 16
+                },
+                {
+                  "id": "minecraft:biome_filter",
+                  "dataType": 16,
+                  "subForm": {
+                    "title": "Biome Filter",
+                    "description": "Biome Filter",
+                    "fields": [
+                      {
+                        "id": "OR",
+                        "title": "OR",
+                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "all",
+                        "title": "all",
+                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "all_of",
+                        "title": "all_of",
+                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "AND",
+                        "title": "AND",
+                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "any_of",
+                        "title": "any_of",
+                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "none_of",
+                        "title": "none_of",
+                        "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "any",
+                        "title": "any",
+                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "NOT",
+                        "title": "NOT",
+                        "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                        "dataType": 16
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ]
         }
@@ -56,7 +156,266 @@
         "id": "distribution",
         "title": "distribution",
         "description": "Parameters controlling the initial scatter of the feature.",
-        "dataType": 16
+        "dataType": 16,
+        "subForm": {
+          "title": "Scatter Params",
+          "description": "Controls the scatter distribution of a particular object.",
+          "fields": [
+            {
+              "id": "z",
+              "title": "z",
+              "description": "Distribution for the coordinate (evaluated each iteration).",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "z",
+                  "dataType": 3
+                },
+                {
+                  "id": "z",
+                  "dataType": 16,
+                  "readOnly": true,
+                  "subForm": {
+                    "title": "Z",
+                    "description": "Z",
+                    "fields": [
+                      {
+                        "id": "distribution",
+                        "title": "Random Distribution Type",
+                        "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "extent",
+                        "title": "extent",
+                        "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
+                        "dataType": 16,
+                        "minLength": 2,
+                        "maxLength": 2
+                      },
+                      {
+                        "id": "step_size",
+                        "title": "step_size",
+                        "description": "When the distribution type is grid, defines the distance between steps along this axis.",
+                        "dataType": 0,
+                        "validity": [
+                          {
+                            "comparison": ">=",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "id": "grid_offset",
+                        "title": "grid_offset",
+                        "description": "When the distribution type is grid, defines the offset along this axis.",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "iterations",
+              "title": "iterations",
+              "description": "Number of scattered positions to generate.",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "iterations",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "title": "Iterations",
+                    "description": "Iterations",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "expression",
+                        "description": "expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "version",
+                        "description": "version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "iterations",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "scatter_chance",
+              "title": "scatter_chance",
+              "description": "Probability that this scatter will occur. Not evaluated each iteration; either no iterations will run, or all will.",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "scatter_chance",
+                  "dataType": 3
+                },
+                {
+                  "id": "scatter_chance",
+                  "dataType": 16,
+                  "readOnly": true,
+                  "subForm": {
+                    "title": "Scatter Chance",
+                    "description": "Scatter Chance",
+                    "fields": [
+                      {
+                        "id": "numerator",
+                        "title": "numerator",
+                        "description": "Numerator for scatter probability.",
+                        "dataType": 0,
+                        "validity": [
+                          {
+                            "comparison": ">=",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "id": "denominator",
+                        "title": "denominator",
+                        "description": "Denominator for scatter probability.",
+                        "dataType": 0,
+                        "validity": [
+                          {
+                            "comparison": ">=",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "coordinate_eval_order",
+              "title": "Coordinate Evaluation Order",
+              "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to \"xzy\". Supported orders are defined by \"Coordinate Evaluation Order\".",
+              "dataType": 2
+            },
+            {
+              "id": "x",
+              "title": "x",
+              "description": "Distribution for the coordinate (evaluated each iteration).",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "x",
+                  "dataType": 3
+                },
+                {
+                  "id": "x",
+                  "dataType": 16,
+                  "readOnly": true,
+                  "subForm": {
+                    "title": "X",
+                    "description": "X",
+                    "fields": [
+                      {
+                        "id": "distribution",
+                        "title": "Random Distribution Type",
+                        "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "extent",
+                        "title": "extent",
+                        "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
+                        "dataType": 16,
+                        "minLength": 2,
+                        "maxLength": 2
+                      },
+                      {
+                        "id": "step_size",
+                        "title": "step_size",
+                        "description": "When the distribution type is grid, defines the distance between steps along this axis.",
+                        "dataType": 0,
+                        "validity": [
+                          {
+                            "comparison": ">=",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "id": "grid_offset",
+                        "title": "grid_offset",
+                        "description": "When the distribution type is grid, defines the offset along this axis.",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "y",
+              "title": "y",
+              "description": "Distribution for the coordinate (evaluated each iteration).",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "y",
+                  "dataType": 3
+                },
+                {
+                  "id": "y",
+                  "dataType": 16,
+                  "readOnly": true,
+                  "subForm": {
+                    "title": "Y",
+                    "description": "Y",
+                    "fields": [
+                      {
+                        "id": "distribution",
+                        "title": "Random Distribution Type",
+                        "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "extent",
+                        "title": "extent",
+                        "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
+                        "dataType": 16,
+                        "minLength": 2,
+                        "maxLength": 2
+                      },
+                      {
+                        "id": "step_size",
+                        "title": "step_size",
+                        "description": "When the distribution type is grid, defines the distance between steps along this axis.",
+                        "dataType": 0,
+                        "validity": [
+                          {
+                            "comparison": ">=",
+                            "value": 1
+                          }
+                        ]
+                      },
+                      {
+                        "id": "grid_offset",
+                        "title": "grid_offset",
+                        "description": "When the distribution type is grid, defines the offset along this axis.",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   }

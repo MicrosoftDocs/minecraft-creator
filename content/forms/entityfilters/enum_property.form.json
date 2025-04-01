@@ -2,7 +2,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "enum_property",
-    "title": "Enum Property",
+    "title": "Property",
     "description": "Returns true when the enum actor property matches the value provided.",
     "fields": [
       {

@@ -16,7 +16,8 @@ Sets the sky color used during rendering. Biomes without this component will hav
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| sky_color | *not set* | Object | RGB color of the sky |  | 
+| sky_color | *not set* | String | RGB color of the sky |  | 
+| sky_color (Alternate 1) | *not set* | Array of numbers |  |  | 
 
 ## Samples
 

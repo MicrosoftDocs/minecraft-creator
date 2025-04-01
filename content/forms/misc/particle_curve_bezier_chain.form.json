@@ -26,13 +26,31 @@
         "id": "input",
         "title": "input",
         "description": "input",
-        "dataType": 16,
-        "subForm": {
-          "title": "Input",
-          "description": "Input",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "input",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Input",
+              "description": "Input",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "input",
             "dataType": 3

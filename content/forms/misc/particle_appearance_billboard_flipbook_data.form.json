@@ -8,15 +8,33 @@
         "id": "base_UV",
         "title": "base_UV",
         "description": "base_UV",
-        "dataType": 15,
+        "dataType": 24,
         "minLength": 2,
         "maxLength": 2,
-        "subForm": {
-          "title": "Base UV",
-          "description": "Base UV",
-          "fields": []
-        },
         "alternates": [
+          {
+            "id": "base_UV",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Base UV",
+              "description": "Base UV",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "base_UV",
             "dataType": 3
@@ -43,13 +61,31 @@
         "id": "max_frame",
         "title": "max_frame",
         "description": "max_frame",
-        "dataType": 16,
-        "subForm": {
-          "title": "Max Frame",
-          "description": "Max Frame",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "max_frame",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Max Frame",
+              "description": "Max Frame",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "max_frame",
             "dataType": 3

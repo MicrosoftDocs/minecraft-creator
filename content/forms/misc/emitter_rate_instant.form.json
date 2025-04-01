@@ -8,13 +8,31 @@
         "id": "num_particles",
         "title": "num_particles",
         "description": "num_particles",
-        "dataType": 16,
-        "subForm": {
-          "title": "Num Particles",
-          "description": "Num Particles",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "num_particles",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Num Particles",
+              "description": "Num Particles",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "num_particles",
             "dataType": 3

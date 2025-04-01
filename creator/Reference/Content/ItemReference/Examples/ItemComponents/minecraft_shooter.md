@@ -15,6 +15,9 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 > Ammunition used by minecraft:shooter must have the minecraft:projectile component in order to function properly.
 
 > [!Note]
+> Items equipped with the shooter component will only sustain damage while shooting. Durability will remain unaffected if the item is used for melee attacks.
+
+> [!Note]
 > Requires the following component in order to work properly:
 > 
 > * [Projectile (minecraft:projectile)](../EntityComponents/minecraftComponent_projectile.md)
@@ -30,10 +33,10 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 | scale_power_by_draw_duration | *not set* | Boolean true/false | Scale power by draw duration? Default is set to false. | My Sword Shoot: `true` | 
 
 ## Ammunition item type
-Struct SharedTypes V1 20 50 ShooterItemComponent Ammunition.
+V1 20 50 ShooterItemComponent Ammunition.
 
 
-#### Struct SharedTypes V1 20 50 ShooterItemComponent Ammunition Properties
+#### V1 20 50 ShooterItemComponent Ammunition Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

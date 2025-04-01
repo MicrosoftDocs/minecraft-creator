@@ -8,13 +8,31 @@
         "id": "active_time",
         "title": "active_time",
         "description": "active_time",
-        "dataType": 16,
-        "subForm": {
-          "title": "Active Time",
-          "description": "Active Time",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "active_time",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Active Time",
+              "description": "Active Time",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "active_time",
             "dataType": 3
@@ -25,13 +43,31 @@
         "id": "sleep_time",
         "title": "sleep_time",
         "description": "sleep_time",
-        "dataType": 16,
-        "subForm": {
-          "title": "Sleep Time",
-          "description": "Sleep Time",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "sleep_time",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Sleep Time",
+              "description": "Sleep Time",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "sleep_time",
             "dataType": 3

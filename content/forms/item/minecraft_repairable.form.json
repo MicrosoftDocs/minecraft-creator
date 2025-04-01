@@ -221,13 +221,31 @@
                   "id": "repair_amount",
                   "title": "repair_amount",
                   "description": "How much the item is repaired.",
-                  "dataType": 16,
-                  "subForm": {
-                    "title": "Repair Amount",
-                    "description": "Repair Amount",
-                    "fields": []
-                  },
+                  "dataType": 24,
                   "alternates": [
+                    {
+                      "id": "repair_amount",
+                      "dataType": 14,
+                      "readOnly": true,
+                      "subForm": {
+                        "title": "Repair Amount",
+                        "description": "Repair Amount",
+                        "fields": [
+                          {
+                            "id": "expression",
+                            "title": "expression",
+                            "description": "expression",
+                            "dataType": 2
+                          },
+                          {
+                            "id": "version",
+                            "title": "version",
+                            "description": "version",
+                            "dataType": 0
+                          }
+                        ]
+                      }
+                    },
                     {
                       "id": "repair_amount",
                       "dataType": 3

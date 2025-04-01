@@ -16,7 +16,8 @@ Set the water surface color used during rendering. Biomes without this component
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| surface_color | *not set* | Object | RGB color of the water surface |  | 
+| surface_color | *not set* | String | RGB color of the water surface |  | 
+| surface_color (Alternate 1) | *not set* | Array of numbers |  |  | 
 | surface_opacity | *not set* | Decimal number | Opacity of the water surface (must be between 0 for invisible and 1 for opaque, inclusive) |  | 
 
 ## Samples
