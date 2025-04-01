@@ -16,8 +16,8 @@
         "description": "The Jigsaw metadata registry.",
         "dataType": 16,
         "subForm": {
-          "title": "Struct SharedTypes V1 21 80 JigsawStructureMetadataRegistry",
-          "description": "Struct SharedTypes V1 21 80 JigsawStructureMetadataRegistry",
+          "title": "V1 21 80 JigsawStructureMetadataRegistry",
+          "description": "V1 21 80 JigsawStructureMetadataRegistry",
           "fields": [
             {
               "id": "metadata",

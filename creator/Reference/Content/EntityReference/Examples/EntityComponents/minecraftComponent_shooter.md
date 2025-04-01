@@ -14,9 +14,6 @@ Defines the entity's ranged attack behavior. The "minecraft:behavior.ranged_atta
 > [!Note]
 > Ammunition used by minecraft:shooter must have the minecraft:projectile component in order to function properly.
 
-> [!Note]
-> Items equipped with the shooter component will only sustain damage while shooting. Durability will remain unaffected if the item is used for melee attacks.
-
 
 ## Shooter Properties
 

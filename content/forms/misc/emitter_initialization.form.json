@@ -8,13 +8,31 @@
         "id": "creation_expression",
         "title": "creation_expression",
         "description": "creation_expression",
-        "dataType": 16,
-        "subForm": {
-          "title": "Creation Expression",
-          "description": "Creation Expression",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "creation_expression",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Creation Expression",
+              "description": "Creation Expression",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "creation_expression",
             "dataType": 3
@@ -25,13 +43,31 @@
         "id": "per_update_expression",
         "title": "per_update_expression",
         "description": "per_update_expression",
-        "dataType": 16,
-        "subForm": {
-          "title": "Per Update Expression",
-          "description": "Per Update Expression",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "per_update_expression",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Per Update Expression",
+              "description": "Per Update Expression",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "per_update_expression",
             "dataType": 3

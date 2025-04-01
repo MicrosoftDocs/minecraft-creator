@@ -8,15 +8,33 @@
         "id": "size",
         "title": "size",
         "description": "size",
-        "dataType": 15,
+        "dataType": 24,
         "minLength": 2,
         "maxLength": 2,
-        "subForm": {
-          "title": "Size",
-          "description": "Size",
-          "fields": []
-        },
         "alternates": [
+          {
+            "id": "size",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Size",
+              "description": "Size",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "size",
             "dataType": 3

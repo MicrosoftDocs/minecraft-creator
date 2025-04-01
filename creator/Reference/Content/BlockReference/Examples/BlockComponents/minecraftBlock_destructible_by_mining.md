@@ -20,8 +20,8 @@ This item can also be represented as a `Boolean true/false`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| item_specific_speeds | *not set* | Array of [Item Specific Speeds](#item-specific-speeds-item-type) items | Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled. | Samples: `"{ <br> "minecraft:destructible_by_mining": { <br> "seconds_to_destroy": 10, <br> "item_specific_speeds": [ <br> { <br> "item": { "tags": "q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') " }, <br> "destroy_speed": 5.0 <br> } <br> ] <br> } <br>}"`, `"{ <br> "minecraft:destructible_by_mining": { <br> "seconds_to_destroy": 10, <br> "item_specific_speeds": [ <br> { <br> "item": "minecraft:iron_pickaxe", <br> "destroy_speed": 5.0 <br> }, <br> { <br> "item": "minecraft:diamond_pickaxe", <br> "destroy_speed": 2.0 <br> } <br> ] <br> } <br>}"` | 
-| seconds_to_destroy | 0 | Decimal number | Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times. | Block Fabricator: `0.4`, Block Orange Ore: `1` | 
+| item_specific_speeds | *not set* | Array of [Item Specific Speeds](#item-specific-speeds-item-type) items | Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled. | Samples: `"{ <br> "minecraft:destructible_by_mining": { <br> "seconds_to_destroy": 10, <br> "item_specific_speeds": [ <br> { <br> "item": { "tags": "q.any_tag('minecraft:is_pickaxe', 'minecraft:is_tool') " }, <br> "destroy_speed": 5.0 <br> } <br> ] <br> } <br>}"`, `"{ <br> "minecraft:destructible_by_mining": { <br> "seconds_to_destroy": 10, <br> "item_specific_speeds": [ <br> { <br> "item": "minecraft:iron_pickaxe", <br> "destroy_speed": 5.0 <br> }, <br> { <br> "item": "minecraft:diamond_pickaxe", <br> "destroy_speed": 2.0 <br> } <br> ] <br> } <br>}"`, Luckyblock: `[]` | 
+| seconds_to_destroy | 0 | Decimal number | Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times. | Block Fabricator: `0.4`, Block Orange Ore: `1`, Luckyblock: `5` | 
 
 ## Item Specific Speeds item type
 Optional array of objects to describe item specific block destroy speeds, each object contains an 'item' ItemDescriptor and a 'destroy_speed' float. This array currently requires UpcomingFeatures experiment to be enabled.
@@ -62,5 +62,15 @@ Optional array of objects to describe item specific block destroy speeds, each o
 ```json
 "minecraft:destructible_by_mining": {
   "seconds_to_destroy": 1
+}
+```
+
+#### [Luckyblock](https://github.com/microsoft/minecraft-samples/tree/main/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json)
+
+
+```json
+"minecraft:destructible_by_mining": {
+  "seconds_to_destroy": 5,
+  "item_specific_speeds": []
 }
 ```

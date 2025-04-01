@@ -14,3 +14,13 @@ Specifies the language file key that maps to what text will be displayed when yo
 ## Alternate Simple Representations
 
 This item can also be represented as a `String`.
+
+
+## Samples
+
+#### [Luckyblock](https://github.com/microsoft/minecraft-samples/tree/main/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json)
+
+
+```json
+"minecraft:display_name": "Lucky Block"
+```

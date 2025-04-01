@@ -1,7 +1,7 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "title": "Struct SharedTypes V1 21 20 UniformHeight Misc",
+    "title": "Struct V1 21 20 UniformHeight Misc",
     "description": "Uniform distribution of possible anchor points",
     "fields": [
       {

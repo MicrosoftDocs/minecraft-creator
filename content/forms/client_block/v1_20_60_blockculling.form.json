@@ -1,8 +1,8 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "title": "Struct SharedTypes V1 20 60 BlockCulling Client Block",
-    "description": "Struct SharedTypes V1 20 60 BlockCulling Client Block",
+    "title": "Struct V1 20 60 BlockCulling Client Block",
+    "description": "Struct V1 20 60 BlockCulling Client Block",
     "fields": [
       {
         "id": "format_version",
@@ -16,8 +16,8 @@
         "description": "minecraft:block_culling_rules",
         "dataType": 16,
         "subForm": {
-          "title": "Struct SharedTypes V1 20 60 BlockCulling Contents",
-          "description": "Struct SharedTypes V1 20 60 BlockCulling Contents",
+          "title": "V1 20 60 BlockCulling Contents",
+          "description": "V1 20 60 BlockCulling Contents",
           "fields": [
             {
               "id": "description",
@@ -25,8 +25,8 @@
               "description": "description",
               "dataType": 16,
               "subForm": {
-                "title": "Struct SharedTypes V1 20 60 BlockCulling Contents Description",
-                "description": "Struct SharedTypes V1 20 60 BlockCulling Contents Description",
+                "title": "V1 20 60 BlockCulling Contents Description",
+                "description": "V1 20 60 BlockCulling Contents Description",
                 "fields": [
                   {
                     "id": "identifier",
@@ -43,8 +43,8 @@
               "description": "rules",
               "dataType": 15,
               "subForm": {
-                "title": "Struct SharedTypes V1 20 60 BlockCulling Contents Rule",
-                "description": "Struct SharedTypes V1 20 60 BlockCulling Contents Rule",
+                "title": "V1 20 60 BlockCulling Contents Rule",
+                "description": "V1 20 60 BlockCulling Contents Rule",
                 "fields": [
                   {
                     "id": "geometry_part",
@@ -52,8 +52,8 @@
                     "description": "geometry_part",
                     "dataType": 16,
                     "subForm": {
-                      "title": "Struct SharedTypes V1 20 60 BlockCulling Contents Rule GeometryPart",
-                      "description": "Struct SharedTypes V1 20 60 BlockCulling Contents Rule GeometryPart",
+                      "title": "V1 20 60 BlockCulling Contents Rule GeometryPart",
+                      "description": "V1 20 60 BlockCulling Contents Rule GeometryPart",
                       "fields": [
                         {
                           "id": "bone",

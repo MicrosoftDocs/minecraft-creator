@@ -14,13 +14,31 @@
         "id": "nodes",
         "title": "nodes",
         "description": "nodes",
-        "dataType": 15,
-        "subForm": {
-          "title": "Nodes",
-          "description": "Nodes",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "nodes",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Nodes",
+              "description": "Nodes",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "nodes",
             "dataType": 3
@@ -31,13 +49,31 @@
         "id": "input",
         "title": "input",
         "description": "input",
-        "dataType": 16,
-        "subForm": {
-          "title": "Input",
-          "description": "Input",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "input",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Input",
+              "description": "Input",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "input",
             "dataType": 3
@@ -48,13 +84,31 @@
         "id": "horizontal_range",
         "title": "horizontal_range",
         "description": "horizontal_range",
-        "dataType": 16,
-        "subForm": {
-          "title": "Horizontal Range",
-          "description": "Horizontal Range",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "horizontal_range",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Horizontal Range",
+              "description": "Horizontal Range",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "horizontal_range",
             "dataType": 3
