@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: 'Introducing Custom Components'
-description: "An introduction to a new experimental concept of custom components."
+description: "An introduction to a new concept of custom components."
 ms.service: minecraft-bedrock-edition
 ---
 
@@ -64,7 +64,7 @@ export interface BlockCustomComponent {
 }
 ```
 
-From script, you are able to access the `BlockComponentRegistry` by listening to the new, experimental `worldInitialize` _before_ event. All registration of custom components must happen during `worldInitialize` because this functionality is directly attached to block initialization from JSON. From within this event, you can then call `registerCustomComponent` with a unique namespaced name and an object that implements the `BlockCustomComponent` interface to register that component. Once a component is registered, any block that uses this component will invoke the callbacks on your object for the relevant events.
+From script, you are able to access the `BlockComponentRegistry` by listening to the new `worldInitialize` _before_ event. All registration of custom components must happen during `worldInitialize` because this functionality is directly attached to block initialization from JSON. From within this event, you can then call `registerCustomComponent` with a unique namespaced name and an object that implements the `BlockCustomComponent` interface to register that component. Once a component is registered, any block that uses this component will invoke the callbacks on your object for the relevant events.
 
 A small code sample showing this registration is as follows:
 

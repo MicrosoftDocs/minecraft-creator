@@ -8,13 +8,31 @@
         "id": "max_lifetime",
         "title": "max_lifetime",
         "description": "max_lifetime",
-        "dataType": 16,
-        "subForm": {
-          "title": "Max Lifetime",
-          "description": "Max Lifetime",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "max_lifetime",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Max Lifetime",
+              "description": "Max Lifetime",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "max_lifetime",
             "dataType": 3
@@ -25,13 +43,31 @@
         "id": "expiration_expression",
         "title": "expiration_expression",
         "description": "expiration_expression",
-        "dataType": 16,
-        "subForm": {
-          "title": "Expiration Expression",
-          "description": "Expiration Expression",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "expiration_expression",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Expiration Expression",
+              "description": "Expiration Expression",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "expiration_expression",
             "dataType": 3

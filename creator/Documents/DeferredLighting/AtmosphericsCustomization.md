@@ -48,7 +48,9 @@ Any of these values can be individually key framed (see Key Frame Syntax section
 
 Note that the colors defined for the sun and moon directional lights in lighting/global.json will also be used in the calculation of the atmosphere and thus will have a significant impact on the final sky color. This is especially true with both the Rayleigh and Mie scattering terms.
 
-### lighting/atmospherics.json
+You can get a sample project starter for various deferred lighting settings at [https://github.com/microsoft/minecraft-samples/tree/main/deferred_lighting_starter](https://github.com/microsoft/minecraft-samples/tree/main/deferred_lighting_starter).
+
+### atmospherics/atmospherics.json
 
 ```json
 {

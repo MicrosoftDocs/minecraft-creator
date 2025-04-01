@@ -14,6 +14,14 @@
       "id": "string",
       "title": "String",
       "dataType": 2
+    },
+    "samples": {
+      "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:display_name/",
+          "content": "Lucky Block"
+        }
+      ]
     }
   }
 }

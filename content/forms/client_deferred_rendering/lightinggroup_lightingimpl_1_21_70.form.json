@@ -1,0 +1,264 @@
+{
+  "fields": [],
+  "id": "minecraft:lighting_settings",
+  "title": "Lighting Settings",
+  "description": "Lighting Settings",
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct LightingGroup LightingImpl<1,21,70> Client Deferred Rendering",
+    "description": "Struct LightingGroup LightingImpl<1,21,70> Client Deferred Rendering",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "format_version",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:lighting_settings",
+        "title": "minecraft:lighting_settings",
+        "description": "minecraft:lighting_settings",
+        "dataType": 16,
+        "subForm": {
+          "title": "LightingGroup LightingImpl<1,21,70> LightingSettings",
+          "description": "LightingGroup LightingImpl<1,21,70> LightingSettings",
+          "fields": [
+            {
+              "id": "description",
+              "title": "description",
+              "description": "description",
+              "dataType": 16,
+              "subForm": {
+                "title": "LightingGroup LightingDescription",
+                "description": "LightingGroup LightingDescription",
+                "fields": [
+                  {
+                    "id": "identifier",
+                    "title": "identifier",
+                    "description": "identifier",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "directional_lights",
+              "title": "directional_lights",
+              "description": "directional_lights",
+              "dataType": 16,
+              "subForm": {
+                "title": "LightingGroup LightingImpl<1,21,70> LightingSettings DirectionalLights",
+                "description": "LightingGroup LightingImpl<1,21,70> LightingSettings DirectionalLights",
+                "fields": [
+                  {
+                    "id": "sun",
+                    "title": "sun",
+                    "description": "sun",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "LightingGroup LightingImpl<1,21,70> LightingSettings DirectionalLights DirectionalLight",
+                      "description": "LightingGroup LightingImpl<1,21,70> LightingSettings DirectionalLights DirectionalLight",
+                      "fields": [
+                        {
+                          "id": "illuminance",
+                          "title": "illuminance",
+                          "description": "illuminance",
+                          "dataType": 3,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 110000
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "illuminance",
+                              "dataType": 31
+                            }
+                          ]
+                        },
+                        {
+                          "id": "color",
+                          "title": "color",
+                          "description": "color",
+                          "dataType": 24,
+                          "alternates": [
+                            {
+                              "id": "color",
+                              "dataType": 38,
+                              "minLength": 3,
+                              "maxLength": 3
+                            },
+                            {
+                              "id": "color",
+                              "dataType": 14
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "moon",
+                    "title": "moon",
+                    "description": "moon",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "LightingGroup LightingImpl<1,21,70> LightingSettings DirectionalLights DirectionalLight",
+                      "description": "LightingGroup LightingImpl<1,21,70> LightingSettings DirectionalLights DirectionalLight",
+                      "fields": [
+                        {
+                          "id": "illuminance",
+                          "title": "illuminance",
+                          "description": "illuminance",
+                          "dataType": 3,
+                          "validity": [
+                            {
+                              "comparison": "<=",
+                              "value": 110000
+                            }
+                          ],
+                          "alternates": [
+                            {
+                              "id": "illuminance",
+                              "dataType": 31
+                            }
+                          ]
+                        },
+                        {
+                          "id": "color",
+                          "title": "color",
+                          "description": "color",
+                          "dataType": 24,
+                          "alternates": [
+                            {
+                              "id": "color",
+                              "dataType": 38,
+                              "minLength": 3,
+                              "maxLength": 3
+                            },
+                            {
+                              "id": "color",
+                              "dataType": 14
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "orbital_offset_degrees",
+                    "title": "orbital_offset_degrees",
+                    "description": "orbital_offset_degrees",
+                    "dataType": 3,
+                    "validity": [
+                      {
+                        "comparison": "<=",
+                        "value": 359.989990234375
+                      }
+                    ],
+                    "alternates": [
+                      {
+                        "id": "orbital_offset_degrees",
+                        "dataType": 31
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "id": "emissive",
+              "title": "emissive",
+              "description": "emissive",
+              "dataType": 16,
+              "subForm": {
+                "title": "LightingGroup Emissive",
+                "description": "LightingGroup Emissive",
+                "fields": [
+                  {
+                    "id": "desaturation",
+                    "title": "desaturation",
+                    "description": "desaturation",
+                    "dataType": 3,
+                    "validity": [
+                      {
+                        "comparison": "<=",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "id": "sky",
+              "title": "sky",
+              "description": "sky",
+              "dataType": 16,
+              "subForm": {
+                "title": "LightingGroup SkyIntensity<1,21,70>",
+                "description": "LightingGroup SkyIntensity<1,21,70>",
+                "fields": [
+                  {
+                    "id": "intensity",
+                    "title": "intensity",
+                    "description": "intensity",
+                    "dataType": 3,
+                    "validity": [
+                      {
+                        "comparison": ">=",
+                        "value": 0.10000000149011612
+                      },
+                      {
+                        "comparison": "<=",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ambient",
+              "title": "ambient",
+              "description": "ambient",
+              "dataType": 16,
+              "subForm": {
+                "title": "LightingGroup AmbientLight",
+                "description": "LightingGroup AmbientLight",
+                "fields": [
+                  {
+                    "id": "color",
+                    "title": "color",
+                    "description": "color",
+                    "dataType": 2,
+                    "alternates": [
+                      {
+                        "id": "color",
+                        "dataType": 32,
+                        "minLength": 3,
+                        "maxLength": 3
+                      }
+                    ]
+                  },
+                  {
+                    "id": "illuminance",
+                    "title": "illuminance",
+                    "description": "illuminance",
+                    "dataType": 3,
+                    "validity": [
+                      {
+                        "comparison": "<=",
+                        "value": 5
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "title": "Struct SharedTypes V1 21 20 JigsawStructureDefinition Description Misc",
+    "title": "Struct V1 21 20 JigsawStructureDefinition Description Misc",
     "description": "Identifier of the Jigsaw Structure.",
     "fields": [
       {

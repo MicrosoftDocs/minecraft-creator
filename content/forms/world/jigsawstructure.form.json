@@ -10,7 +10,7 @@
         "description": "Identifier of the Jigsaw Structure.",
         "dataType": 16,
         "subForm": {
-          "title": "Struct SharedTypes V1 21 20 JigsawStructureDefinition Description",
+          "title": "V1 21 20 JigsawStructureDefinition Description",
           "description": "Identifier of the Jigsaw Structure.",
           "fields": [
             {
@@ -62,7 +62,71 @@
               "dataType": 16
             }
           ]
-        }
+        },
+        "alternates": [
+          {
+            "id": "biome_filters",
+            "dataType": 16
+          },
+          {
+            "id": "biome_filters",
+            "dataType": 16,
+            "subForm": {
+              "title": "Biome Filters",
+              "description": "Biome Filters",
+              "fields": [
+                {
+                  "id": "OR",
+                  "title": "OR",
+                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "all",
+                  "title": "all",
+                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "all_of",
+                  "title": "all_of",
+                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "AND",
+                  "title": "AND",
+                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "any_of",
+                  "title": "any_of",
+                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "none_of",
+                  "title": "none_of",
+                  "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "any",
+                  "title": "any",
+                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "NOT",
+                  "title": "NOT",
+                  "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                  "dataType": 16
+                }
+              ]
+            }
+          }
+        ]
       },
       {
         "id": "step",
@@ -72,7 +136,7 @@
       },
       {
         "id": "terrain_adaptation",
-        "title": "enum SharedTypes_v1_21_20_JigsawStructureDefinition_TerrainAdaptation",
+        "title": "enum SharedTypes_v1_21_20_JigsawureDefinition_TerrainAdaptation",
         "description": "How the terrain should adapt relative to the generated Jigsaw Structure.",
         "dataType": 2
       },
@@ -124,7 +188,7 @@
       },
       {
         "id": "heightmap_projection",
-        "title": "enum SharedTypes_v1_21_20_JigsawStructureDefinition_HeightmapProjection",
+        "title": "enum SharedTypes_v1_21_20_JigsawureDefinition_HeightmapProjection",
         "description": "Heightmap used to calculate the relative start height. For example, a heightmap_projection of ocean_floor and a start_height of 10 means the Jigsaw Structure will begin generating 10 blocks above the ocean floor.",
         "dataType": 2
       },

@@ -1,0 +1,41 @@
+---
+author: mammerla
+ms.author: mikeam
+title: "Feature Documentation - minecraft:rect_layout"
+description: "Describes the minecraft:rect_layout feature type"
+ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
+---
+
+# Feature Documentation - minecraft:rect_layout
+
+> [!IMPORTANT]
+> This type is internal to vanilla Minecraft usage, and is not functional or supported within custom Minecraft content.
+
+
+## Rect Layout Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| description | *not set* | [Description](#description-item-type) item |  |  | 
+| feature_areas | *not set* | Array of [Feature Areas](#feature-areas-item-type) items |  |  | 
+| feature_areas (Alternate 1) | *not set* | Array of strings |  |  | 
+| format_version | *not set* | String |  |  | 
+
+## Description item type
+
+#### Description Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| identifier | *not set* | String | The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename. |  | 
+
+## Feature Areas item type
+
+#### Feature Areas Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| [0..0] | *not set* | Integer number |  |  | 
+| [1..1] | *not set* | Integer number |  |  | 
+| area_dimensions | *not set* | Array of strings | Dimensions (size) of the associated Feature. |  | 

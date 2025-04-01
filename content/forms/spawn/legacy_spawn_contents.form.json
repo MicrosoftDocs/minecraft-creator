@@ -1,0 +1,535 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct Legacy Spawn Contents Spawn",
+    "description": "Struct Legacy Spawn Contents Spawn",
+    "fields": [
+      {
+        "id": "description",
+        "title": "description",
+        "description": "description",
+        "dataType": 16,
+        "subForm": {
+          "title": "Legacy Spawn Description",
+          "description": "Legacy Spawn Description",
+          "fields": [
+            {
+              "id": "identifier",
+              "title": "identifier",
+              "description": "identifier",
+              "dataType": 2
+            },
+            {
+              "id": "population_control",
+              "title": "population_control",
+              "description": "population_control",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "conditions",
+        "title": "conditions",
+        "description": "conditions",
+        "dataType": 15,
+        "subForm": {
+          "title": "Legacy Spawn BiomeConditions",
+          "description": "Legacy Spawn BiomeConditions",
+          "fields": [
+            {
+              "id": "minecraft:difficulty_filter",
+              "title": "minecraft:difficulty_filter",
+              "description": "minecraft:difficulty_filter",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn DifficultyFilter",
+                "description": "Legacy Spawn DifficultyFilter",
+                "fields": [
+                  {
+                    "id": "min",
+                    "title": "enum SharedTypes_Legacy_Spawn_Difficulty",
+                    "description": "enum SharedTypes_Legacy_Spawn_Difficulty",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "max",
+                    "title": "enum SharedTypes_Legacy_Spawn_Difficulty",
+                    "description": "enum SharedTypes_Legacy_Spawn_Difficulty",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:weight",
+              "title": "minecraft:weight",
+              "description": "minecraft:weight",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn Weight",
+                "description": "Legacy Spawn Weight",
+                "fields": [
+                  {
+                    "id": "default",
+                    "title": "default",
+                    "description": "default",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "rarity",
+                    "title": "rarity",
+                    "description": "rarity",
+                    "dataType": 0
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:height_filter",
+              "title": "minecraft:height_filter",
+              "description": "minecraft:height_filter",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn HeightFilter",
+                "description": "Legacy Spawn HeightFilter",
+                "fields": [
+                  {
+                    "id": "min",
+                    "title": "min",
+                    "description": "min",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "max",
+                    "title": "max",
+                    "description": "max",
+                    "dataType": 0
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:distance_filter",
+              "title": "minecraft:distance_filter",
+              "description": "minecraft:distance_filter",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn DistanceFilter",
+                "description": "Legacy Spawn DistanceFilter",
+                "fields": [
+                  {
+                    "id": "min",
+                    "title": "min",
+                    "description": "min",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "max",
+                    "title": "max",
+                    "description": "max",
+                    "dataType": 0
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:brightness_filter",
+              "title": "minecraft:brightness_filter",
+              "description": "minecraft:brightness_filter",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn BrightnessFilter",
+                "description": "Legacy Spawn BrightnessFilter",
+                "fields": [
+                  {
+                    "id": "min",
+                    "title": "min",
+                    "description": "min",
+                    "dataType": 0,
+                    "validity": [
+                      {
+                        "comparison": "<=",
+                        "value": 15
+                      }
+                    ]
+                  },
+                  {
+                    "id": "max",
+                    "title": "max",
+                    "description": "max",
+                    "dataType": 0,
+                    "validity": [
+                      {
+                        "comparison": "<=",
+                        "value": 15
+                      }
+                    ]
+                  },
+                  {
+                    "id": "adjust_for_weather",
+                    "title": "adjust_for_weather",
+                    "description": "adjust_for_weather",
+                    "dataType": 1
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:density_limit",
+              "title": "minecraft:density_limit",
+              "description": "minecraft:density_limit",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn DensityLimit",
+                "description": "Legacy Spawn DensityLimit",
+                "fields": [
+                  {
+                    "id": "surface",
+                    "title": "surface",
+                    "description": "surface",
+                    "dataType": 0,
+                    "validity": [
+                      {
+                        "comparison": ">=",
+                        "value": -1
+                      }
+                    ]
+                  },
+                  {
+                    "id": "underground",
+                    "title": "underground",
+                    "description": "underground",
+                    "dataType": 0,
+                    "validity": [
+                      {
+                        "comparison": ">=",
+                        "value": -1
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:mob_event_filter",
+              "title": "minecraft:mob_event_filter",
+              "description": "minecraft:mob_event_filter",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn MobEventFilter",
+                "description": "Legacy Spawn MobEventFilter",
+                "fields": [
+                  {
+                    "id": "event",
+                    "title": "event",
+                    "description": "event",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:world_age_filter",
+              "title": "minecraft:world_age_filter",
+              "description": "minecraft:world_age_filter",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn WorldAgeFilter",
+                "description": "Legacy Spawn WorldAgeFilter",
+                "fields": [
+                  {
+                    "id": "min",
+                    "title": "min",
+                    "description": "min",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "max",
+                    "title": "max",
+                    "description": "max",
+                    "dataType": 0
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:delay_filter",
+              "title": "minecraft:delay_filter",
+              "description": "minecraft:delay_filter",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn DelayFilter",
+                "description": "Legacy Spawn DelayFilter",
+                "fields": [
+                  {
+                    "id": "min",
+                    "title": "min",
+                    "description": "min",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "spawn_chance",
+                    "title": "spawn_chance",
+                    "description": "spawn_chance",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "max",
+                    "title": "max",
+                    "description": "max",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "identifier",
+                    "title": "identifier",
+                    "description": "identifier",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:herd",
+              "title": "minecraft:herd",
+              "description": "minecraft:herd",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:permute_type",
+              "title": "minecraft:permute_type",
+              "description": "minecraft:permute_type",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:player_in_village_filter",
+              "title": "minecraft:player_in_village_filter",
+              "description": "minecraft:player_in_village_filter",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn PlayerInVillageFilter",
+                "description": "Legacy Spawn PlayerInVillageFilter",
+                "fields": [
+                  {
+                    "id": "distance",
+                    "title": "distance",
+                    "description": "distance",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "village_border_tolerance",
+                    "title": "village_border_tolerance",
+                    "description": "village_border_tolerance",
+                    "dataType": 0
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:spawns_on_block_filter",
+              "title": "minecraft:spawns_on_block_filter",
+              "description": "minecraft:spawns_on_block_filter",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:spawns_on_block_prevented_filter",
+              "title": "minecraft:spawns_on_block_prevented_filter",
+              "description": "minecraft:spawns_on_block_prevented_filter",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:spawns_above_block_filter",
+              "title": "minecraft:spawns_above_block_filter",
+              "description": "minecraft:spawns_above_block_filter",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn SpawnAboveBlockFilter",
+                "description": "Legacy Spawn SpawnAboveBlockFilter",
+                "fields": [
+                  {
+                    "id": "blocks",
+                    "title": "blocks",
+                    "description": "blocks",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "distance",
+                    "title": "distance",
+                    "description": "distance",
+                    "dataType": 0
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:disallow_spawns_in_bubble",
+              "title": "minecraft:disallow_spawns_in_bubble",
+              "description": "minecraft:disallow_spawns_in_bubble",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:biome_filter",
+              "title": "minecraft:biome_filter",
+              "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+              "dataType": 16,
+              "subForm": {
+                "title": "Biome Filter",
+                "description": "Biome Filter",
+                "fields": [
+                  {
+                    "id": "operator",
+                    "title": "operator",
+                    "description": "The comparison to apply with 'value'.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "test",
+                    "title": "test",
+                    "description": "The name of the test to apply.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "subject",
+                    "title": "subject",
+                    "description": "The subject of this filter test.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "domain",
+                    "title": "domain",
+                    "description": "The domain the test should be performed in.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "value",
+                    "title": "value",
+                    "description": "The value being compared with the test.",
+                    "dataType": 16
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "id": "minecraft:biome_filter",
+                  "dataType": 16
+                },
+                {
+                  "id": "minecraft:biome_filter",
+                  "dataType": 16,
+                  "subForm": {
+                    "title": "Biome Filter",
+                    "description": "Biome Filter",
+                    "fields": [
+                      {
+                        "id": "OR",
+                        "title": "OR",
+                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "all",
+                        "title": "all",
+                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "all_of",
+                        "title": "all_of",
+                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "AND",
+                        "title": "AND",
+                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "any_of",
+                        "title": "any_of",
+                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "none_of",
+                        "title": "none_of",
+                        "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "any",
+                        "title": "any",
+                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "NOT",
+                        "title": "NOT",
+                        "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                        "dataType": 16
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "minecraft:spawns_on_surface",
+              "title": "minecraft:spawns_on_surface",
+              "description": "minecraft:spawns_on_surface",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:spawns_underground",
+              "title": "minecraft:spawns_underground",
+              "description": "minecraft:spawns_underground",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:spawns_underwater",
+              "title": "minecraft:spawns_underwater",
+              "description": "minecraft:spawns_underwater",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:spawns_lava",
+              "title": "minecraft:spawns_lava",
+              "description": "minecraft:spawns_lava",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:is_persistent",
+              "title": "minecraft:is_persistent",
+              "description": "minecraft:is_persistent",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:is_experimental",
+              "title": "minecraft:is_experimental",
+              "description": "minecraft:is_experimental",
+              "dataType": 16
+            },
+            {
+              "id": "minecraft:spawn_event",
+              "title": "minecraft:spawn_event",
+              "description": "minecraft:spawn_event",
+              "dataType": 16,
+              "subForm": {
+                "title": "Legacy Spawn MobEventFilter",
+                "description": "Legacy Spawn MobEventFilter",
+                "fields": [
+                  {
+                    "id": "event",
+                    "title": "event",
+                    "description": "event",
+                    "dataType": 2
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

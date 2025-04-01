@@ -90,6 +90,8 @@
   href: minecraftBehavior_flee_sun.md
 - name: minecraft:behavior.float
   href: minecraftBehavior_float.md
+- name: minecraft:behavior.float_tempt
+  href: minecraftBehavior_float_tempt.md
 - name: minecraft:behavior.float_wander
   href: minecraftBehavior_float_wander.md
 - name: minecraft:behavior.follow_caravan

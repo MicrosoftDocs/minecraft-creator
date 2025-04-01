@@ -20,15 +20,16 @@ Allows a creator to determine how quickly an item can dig specific blocks.
 | use_efficiency | *not set* | Boolean true/false | Determines whether this item should be impacted if the efficiency enchantment is applied to it. |  | 
 
 ## Destroy Speeds item type
-Struct SharedTypes V1 20 50 DiggerItemComponent BlockInfo.
+V1 20 50 DiggerItemComponent BlockInfo.
 
 
-#### Struct SharedTypes V1 20 50 DiggerItemComponent BlockInfo Properties
+#### V1 20 50 DiggerItemComponent BlockInfo Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | block | *not set* | [Block](#block-item-type) item | Block to be dug. |  | 
 | block (Alternate 1) | *not set* | String |  |  | 
+| block (Alternate 2) | *not set* | Object |  |  | 
 | speed | *not set* | Integer number | Digging speed for the correlating block(s). |  | 
 
 ## Block item type

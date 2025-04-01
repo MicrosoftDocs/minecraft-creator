@@ -1,0 +1,240 @@
+{
+  "fields": [],
+  "id": "minecraft:atmosphere_settings",
+  "title": "Atmospheric Scattering",
+  "description": "Customize atmospherics effects",
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct AtmosphericScattering AtmosphericScatteringConfigSettings Client Deferred Rendering",
+    "description": "Struct AtmosphericScattering AtmosphericScatteringConfigSettings Client Deferred Rendering",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "format_version",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:atmosphere_settings",
+        "title": "minecraft:atmosphere_settings",
+        "description": "minecraft:atmosphere_settings",
+        "dataType": 16,
+        "subForm": {
+          "title": "AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings",
+          "description": "AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings",
+          "fields": [
+            {
+              "id": "description",
+              "title": "description",
+              "description": "description",
+              "dataType": 16,
+              "subForm": {
+                "title": "AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings AtmosphericScatteringDescription",
+                "description": "AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings AtmosphericScatteringDescription",
+                "fields": [
+                  {
+                    "id": "identifier",
+                    "title": "identifier",
+                    "description": "identifier",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "sky_zenith_color",
+              "title": "sky_zenith_color",
+              "description": "sky_zenith_color",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "sky_zenith_color",
+                  "dataType": 38,
+                  "minLength": 3,
+                  "maxLength": 3
+                },
+                {
+                  "id": "sky_zenith_color",
+                  "dataType": 14
+                }
+              ]
+            },
+            {
+              "id": "sky_horizon_color",
+              "title": "sky_horizon_color",
+              "description": "sky_horizon_color",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "sky_horizon_color",
+                  "dataType": 38,
+                  "minLength": 3,
+                  "maxLength": 3
+                },
+                {
+                  "id": "sky_horizon_color",
+                  "dataType": 14
+                }
+              ]
+            },
+            {
+              "id": "moon_mie_strength",
+              "title": "moon_mie_strength",
+              "description": "moon_mie_strength",
+              "dataType": 3,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 20
+                }
+              ],
+              "alternates": [
+                {
+                  "id": "moon_mie_strength",
+                  "dataType": 31
+                }
+              ]
+            },
+            {
+              "id": "horizon_blend_stops",
+              "title": "horizon_blend_stops",
+              "description": "horizon_blend_stops",
+              "dataType": 16,
+              "subForm": {
+                "title": "AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings HorizonBlendKeyFrames",
+                "description": "AtmosphericScattering AtmosphericScatteringConfigSettings AtmosphericScatteringSettings HorizonBlendKeyFrames",
+                "fields": [
+                  {
+                    "id": "min",
+                    "title": "min",
+                    "description": "min",
+                    "dataType": 3,
+                    "validity": [
+                      {
+                        "comparison": "<=",
+                        "value": 1
+                      }
+                    ],
+                    "alternates": [
+                      {
+                        "id": "min",
+                        "dataType": 31
+                      }
+                    ]
+                  },
+                  {
+                    "id": "start",
+                    "title": "start",
+                    "description": "start",
+                    "dataType": 3,
+                    "validity": [
+                      {
+                        "comparison": "<=",
+                        "value": 1
+                      }
+                    ],
+                    "alternates": [
+                      {
+                        "id": "start",
+                        "dataType": 31
+                      }
+                    ]
+                  },
+                  {
+                    "id": "mie_start",
+                    "title": "mie_start",
+                    "description": "mie_start",
+                    "dataType": 3,
+                    "validity": [
+                      {
+                        "comparison": "<=",
+                        "value": 1.2000000476837158
+                      }
+                    ],
+                    "alternates": [
+                      {
+                        "id": "mie_start",
+                        "dataType": 31
+                      }
+                    ]
+                  },
+                  {
+                    "id": "max",
+                    "title": "max",
+                    "description": "max",
+                    "dataType": 3,
+                    "validity": [
+                      {
+                        "comparison": "<=",
+                        "value": 1
+                      }
+                    ],
+                    "alternates": [
+                      {
+                        "id": "max",
+                        "dataType": 31
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "id": "rayleigh_strength",
+              "title": "rayleigh_strength",
+              "description": "rayleigh_strength",
+              "dataType": 3,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 11
+                }
+              ],
+              "alternates": [
+                {
+                  "id": "rayleigh_strength",
+                  "dataType": 31
+                }
+              ]
+            },
+            {
+              "id": "sun_mie_strength",
+              "title": "sun_mie_strength",
+              "description": "sun_mie_strength",
+              "dataType": 3,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 60
+                }
+              ],
+              "alternates": [
+                {
+                  "id": "sun_mie_strength",
+                  "dataType": 31
+                }
+              ]
+            },
+            {
+              "id": "sun_glare_shape",
+              "title": "sun_glare_shape",
+              "description": "sun_glare_shape",
+              "dataType": 3,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 50
+                }
+              ],
+              "alternates": [
+                {
+                  "id": "sun_glare_shape",
+                  "dataType": 31
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

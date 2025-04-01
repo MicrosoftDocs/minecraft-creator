@@ -1,7 +1,7 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "title": "Struct SharedTypes V1 21 20 PoolAliases Direct Misc",
+    "title": "Struct V1 21 20 PoolAliases Direct Misc",
     "description": "Pool alias for a Direct target.",
     "fields": [
       {

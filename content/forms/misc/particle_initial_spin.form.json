@@ -8,13 +8,31 @@
         "id": "rotation",
         "title": "rotation",
         "description": "rotation",
-        "dataType": 16,
-        "subForm": {
-          "title": "Rotation",
-          "description": "Rotation",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "rotation",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Rotation",
+              "description": "Rotation",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "rotation",
             "dataType": 3
@@ -25,13 +43,31 @@
         "id": "rotation_rate",
         "title": "rotation_rate",
         "description": "rotation_rate",
-        "dataType": 16,
-        "subForm": {
-          "title": "Rotation Rate",
-          "description": "Rotation Rate",
-          "fields": []
-        },
+        "dataType": 24,
         "alternates": [
+          {
+            "id": "rotation_rate",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "title": "Rotation Rate",
+              "description": "Rotation Rate",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "expression",
+                  "description": "expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "version",
+                  "description": "version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
           {
             "id": "rotation_rate",
             "dataType": 3

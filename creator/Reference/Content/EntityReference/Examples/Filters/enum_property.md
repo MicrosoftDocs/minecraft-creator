@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Returns true when the enum actor property matches the value provided.
 
 
-## Enum Property Properties
+## Property Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
