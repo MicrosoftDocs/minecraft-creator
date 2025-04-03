@@ -29,9 +29,15 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
 - `1.0.0-beta`
 
 ## Classes
+- [AdminBeforeEvents](AdminBeforeEvents.md)
+- [AsyncPlayerJoinBeforeEvent](AsyncPlayerJoinBeforeEvent.md)
+- [AsyncPlayerJoinBeforeEventSignal](AsyncPlayerJoinBeforeEventSignal.md)
 - [SecretString](SecretString.md)
 - [ServerSecrets](ServerSecrets.md)
 - [ServerVariables](ServerVariables.md)
+
+## Errors
+- [DisconnectedError](DisconnectedError.md)
 
 ## Functions
 
@@ -58,6 +64,11 @@ Notes:
 - This function can throw errors.
 
 ## Objects
+  
+### **beforeEvents**
+`static read-only beforeEvents: AdminBeforeEvents;`
+
+Type: [*AdminBeforeEvents*](AdminBeforeEvents.md)
   
 ### **secrets**
 `static read-only secrets: ServerSecrets;`

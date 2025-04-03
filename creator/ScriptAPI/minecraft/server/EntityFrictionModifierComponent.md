@@ -17,14 +17,14 @@ Defines how much friction affects this entity.
 ## Properties
 
 ### **value**
-`value: number;`
+`read-only value: number;`
 
 Current value of the friction modifier of the associated entity.
 
 Type: *number*
 
 Notes:
-  - This property can't be edited in read-only mode.
+  - This property can throw errors when used.
 
 ## Constants
 

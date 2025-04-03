@@ -206,9 +206,7 @@ Notes:
 - [setPropertyOverrideForEntity](#setpropertyoverrideforentity)
 ::: moniker-end
 - [setSpawnPoint](#setspawnpoint)
-::: moniker range="=minecraft-bedrock-experimental"
 - [spawnParticle](#spawnparticle)
-::: moniker-end
 - [startItemCooldown](#startitemcooldown)
 - [stopMusic](#stopmusic)
 
@@ -720,7 +718,6 @@ Notes:
 - This function can throw errors.
   - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **spawnParticle**
 `
 spawnParticle(effectName: string, location: Vector3, molangVariables?: MolangVariableMap): void
@@ -738,9 +735,6 @@ Creates a new particle emitter at a specified location in the world. Only visibl
 - **molangVariables**?: [*MolangVariableMap*](MolangVariableMap.md) = `null`
   
   A set of optional, customizable variables that can be adjusted for this particle.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
@@ -776,7 +770,6 @@ world.afterEvents.playerSpawn.subscribe(event => {
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/spawnParticle.ts) code sandbox.
-::: moniker-end
 
 ### **startItemCooldown**
 `

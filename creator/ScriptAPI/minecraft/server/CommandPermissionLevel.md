@@ -4,11 +4,11 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.CustomCommandPermissionLevel Enumeration
-description: Contents of the @minecraft/server.CustomCommandPermissionLevel enumeration.
+title: minecraft/server.CommandPermissionLevel Enumeration
+description: Contents of the @minecraft/server.CommandPermissionLevel enumeration.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# CustomCommandPermissionLevel Enumeration
+# CommandPermissionLevel Enumeration
 
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.

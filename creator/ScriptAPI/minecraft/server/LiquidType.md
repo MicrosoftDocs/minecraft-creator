@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.LiquidType Enumeration
 description: Contents of the @minecraft/server.LiquidType enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # LiquidType Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Represents the type of liquid that can be placed on a block or flow dynamically in the world.
 

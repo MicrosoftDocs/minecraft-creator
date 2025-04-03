@@ -57,7 +57,7 @@ Type: *string*[]
 
 ### **get**
 `
-"get"(name: string): any | undefined
+"get"(name: string): unknown | undefined
 `
 
 Returns the value of variable that has been configured in a dedicated server configuration JSON file.
@@ -65,7 +65,7 @@ Returns the value of variable that has been configured in a dedicated server con
 #### **Parameters**
 - **name**: *string*
 
-**Returns** *any* | *undefined*
+**Returns** *unknown* | *undefined*
   
 Notes:
 - This function can't be called in read-only mode.

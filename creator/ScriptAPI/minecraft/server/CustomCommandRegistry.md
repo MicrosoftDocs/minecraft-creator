@@ -20,14 +20,14 @@ Provides the functionality for registering custom commands.
 
 ### **registerCommand**
 `
-registerCommand(customCommand: CustomCommand, callback: (...args: any[]) => CustomCommandResult | undefined): void
+registerCommand(customCommand: CustomCommand, callback: (origin: CustomCommandOrigin, ...args: any[]) => CustomCommandResult | undefined): void
 `
 
 Registers a custom command that when executed triggers a script callback.
 
 #### **Parameters**
 - **customCommand**: *CustomCommand*
-- **callback**: *(...args: any[]) => CustomCommandResult | undefined*
+- **callback**: *(origin: CustomCommandOrigin, ...args: any[]) => CustomCommandResult | undefined*
   
   The callback triggered when the command executes.
 

@@ -80,9 +80,7 @@ Notes:
 - [runInterval](#runinterval)
 - [runJob](#runjob)
 - [runTimeout](#runtimeout)
-::: moniker range="=minecraft-bedrock-experimental"
 - [sendScriptEvent](#sendscriptevent)
-::: moniker-end
 - [waitTicks](#waitticks)
 
 ### **clearJob**
@@ -258,7 +256,6 @@ Runs a set of code at a future time specified by tickDelay.
 Notes:
 - This function can be called in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **sendScriptEvent**
 `
 sendScriptEvent(id: string, message: string): void
@@ -273,15 +270,11 @@ Causes an event to fire within script with the specified message ID and payload.
 - **message**: *string*
   
   Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world. Message may not exceed 2048 characters in length.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*NamespaceNameError*](NamespaceNameError.md)
-::: moniker-end
 
 ### **waitTicks**
 `

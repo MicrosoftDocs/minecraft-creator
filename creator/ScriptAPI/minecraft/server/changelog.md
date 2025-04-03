@@ -11,6 +11,7 @@ description: Changelog of the `@minecraft/server` module
 
 ## Version Changes
 - [2.0.0-beta](#200-beta)
+- [1.18.0](#1180)
 - [1.17.0](#1170)
 - [1.16.0](#1160)
 - [1.15.0](#1150)
@@ -31,7 +32,6 @@ description: Changelog of the `@minecraft/server` module
 - [1.0.0](#100)
 
 ## 2.0.0-beta
-#### Added module peer dependency *`@minecraft/vanilla-data`*
 #### Added *[`AimAssistCategory`](AimAssistCategory.md)*
 #### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 #### Added *[`AimAssistPreset`](AimAssistPreset.md)*
@@ -43,18 +43,11 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added property *[`isValid`](Block.md#isvalid)*
 - Added property *[`localizationKey`](Block.md#localizationkey)*
-- Added function *[`canBeDestroyedByLiquidSpread`](Block.md#canbedestroyedbyliquidspread)*
-- Added function *[`canContainLiquid`](Block.md#cancontainliquid)*
 - Added function *[`canPlace`](Block.md#canplace)*
-- Changed function *[`getComponent`](Block.md#getcomponent)*
-  - Changed return type from [*BlockComponent*](BlockComponent.md) (throws exceptions) to *BlockComponentReturnType<T> | undefined* (throws exceptions)
-  - Changed argument `componentId` type from *string* to *T*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
-- Added function *[`isLiquidBlocking`](Block.md#isliquidblocking)*
 - Removed function *isValid*
-- Added function *[`liquidCanFlowFromDirection`](Block.md#liquidcanflowfromdirection)*
-- Added function *[`liquidSpreadCausesSpawn`](Block.md#liquidspreadcausesspawn)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
+#### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Changed *[`BlockComponentRegistry`](BlockComponentRegistry.md)*
 - Changed function *[`registerCustomComponent`](BlockComponentRegistry.md#registercustomcomponent)*
   - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
@@ -64,28 +57,8 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Added *[`BlockMapColorComponent`](BlockMapColorComponent.md)*
-#### Changed *[`BlockPermutation`](BlockPermutation.md)*
-- Added function *[`canBeDestroyedByLiquidSpread`](BlockPermutation.md#canbedestroyedbyliquidspread)*
-- Added function *[`canContainLiquid`](BlockPermutation.md#cancontainliquid)*
-- Changed function *[`getState`](BlockPermutation.md#getstate)*
-  - Changed return type from *boolean* | *number* | *string* to *minecraftvanilladata.BlockStateSuperset[T] | undefined*
-  - Changed argument `stateName` type from *string* to *T*
-- Added function *[`isLiquidBlocking`](BlockPermutation.md#isliquidblocking)*
-- Added function *[`liquidSpreadCausesSpawn`](BlockPermutation.md#liquidspreadcausesspawn)*
-- Changed function *[`matches`](BlockPermutation.md#matches)*
-  - Changed argument `blockName` type from *string* to *T*
-  - Changed argument `states` type from Record<*string*, *boolean* | *number* | *string*> to *BlockStateArg<T>*
-- Changed function *[`resolve`](BlockPermutation.md#resolve)*
-  - Changed return type from [*BlockPermutation*](BlockPermutation.md) (throws exceptions) to *BlockPermutation* (throws exceptions)
-  - Changed argument `blockName` type from *string* to *T*
-  - Changed argument `states` type from Record<*string*, *boolean* | *number* | *string*> to *BlockStateArg<T>*
-- Changed function *[`withState`](BlockPermutation.md#withstate)*
-  - Changed return type from [*BlockPermutation*](BlockPermutation.md) (throws exceptions) to *BlockPermutation* (throws exceptions)
-  - Changed argument `name` type from *string* to *T*
-  - Changed argument `value` type from *boolean* | *number* | *string* to *minecraftvanilladata.BlockStateSuperset[T]*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
-#### Added *[`BoundingBoxUtils`](BoundingBoxUtils.md)*
 #### Changed *[`ButtonPushAfterEventSignal`](ButtonPushAfterEventSignal.md)*
 - Removed base class *IButtonPushAfterEventSignal*
 - Added function *[`subscribe`](ButtonPushAfterEventSignal.md#subscribe)*
@@ -112,7 +85,9 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`isValid`](ContainerSlot.md#isvalid)*
 - Removed function *isValid*
 - Added function *[`setDynamicProperties`](ContainerSlot.md#setdynamicproperties)*
+#### Added *[`CustomCommandOrigin`](CustomCommandOrigin.md)*
 #### Added *[`CustomCommandRegistry`](CustomCommandRegistry.md)*
+#### Added *[`CustomComponentParameters`](CustomComponentParameters.md)*
 #### Changed *[`Dimension`](Dimension.md)*
 - Changed function *[`fillBlocks`](Dimension.md#fillblocks)*
   - Changed argument `volume` type from [*BlockVolumeBase*](BlockVolumeBase.md) to [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
@@ -141,8 +116,7 @@ description: Changelog of the `@minecraft/server` module
   - Removed argument `directionZ`
   - Removed argument `horizontalStrength`
 - Changed function *[`getComponent`](Entity.md#getcomponent)*
-  - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentReturnType<T> | undefined* (throws exceptions)
-  - Changed argument `componentId` type from *string* to *T*
+  - Changed return type from *EntityComponentReturnType<T> | undefined* to *EntityComponentReturnType<T> | undefined* (throws exceptions)
 - Changed function *[`getComponents`](Entity.md#getcomponents)*
   - Changed return type from [*EntityComponent*](EntityComponent.md)[] to [*EntityComponent*](EntityComponent.md)[] (throws exceptions)
 - Changed function *[`hasComponent`](Entity.md#hascomponent)*
@@ -156,6 +130,9 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
 #### Changed *[`EntityComponent`](EntityComponent.md)*
 - Changed type for *[`entity`](EntityComponent.md#entity)* from [*Entity*](Entity.md) to [*Entity*](Entity.md) (throws exceptions)
+#### Changed *[`EntityFrictionModifierComponent`](EntityFrictionModifierComponent.md)*
+- Changed read-only flag for *[`value`](EntityFrictionModifierComponent.md#value)* from `false` to `true`
+- Changed type for *[`value`](EntityFrictionModifierComponent.md#value)* from *number* to *number* (throws exceptions)
 #### Changed *[`EntityInventoryComponent`](EntityInventoryComponent.md)*
 - Changed type for *[`container`](EntityInventoryComponent.md#container)* from [*Container*](Container.md) to [*Container*](Container.md) (throws exceptions)
 #### Added *[`EntityIterator`](EntityIterator.md)*
@@ -178,11 +155,10 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from [*EntityType*](EntityType.md) to *EntityType | undefined*
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
 #### Added *[`FilterGroup`](FilterGroup.md)*
+#### Changed *[`GameRules`](GameRules.md)*
+- Added property *[`locatorBar`](GameRules.md#locatorbar)*
 #### Removed *IButtonPushAfterEventSignal*
 #### Removed *ILeverActionAfterEventSignal*
-#### Changed *[`InputInfo`](InputInfo.md)*
-- Added function *[`getButtonState`](InputInfo.md#getbuttonstate)*
-- Added function *[`getMovementVector`](InputInfo.md#getmovementvector)*
 #### Removed *IPlayerJoinAfterEventSignal*
 #### Removed *IPlayerLeaveAfterEventSignal*
 #### Removed *IPlayerSpawnAfterEventSignal*
@@ -195,9 +171,6 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`ItemStack`](ItemStack.md)*
 - Added property *[`localizationKey`](ItemStack.md#localizationkey)*
 - Added function *[`createPotion`](ItemStack.md#createpotion)*
-- Changed function *[`getComponent`](ItemStack.md#getcomponent)*
-  - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentReturnType<T> | undefined*
-  - Changed argument `componentId` type from *string* to *T*
 - Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
 #### Removed *ItemUseOnAfterEvent*
 #### Removed *ItemUseOnAfterEventSignal*
@@ -219,10 +192,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`removePropertyOverrideForEntity`](Player.md#removepropertyoverrideforentity)*
 - Added function *[`setOp`](Player.md#setop)*
 - Added function *[`setPropertyOverrideForEntity`](Player.md#setpropertyoverrideforentity)*
-- Added function *[`spawnParticle`](Player.md#spawnparticle)*
 #### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
-#### Added *[`PlayerButtonInputAfterEvent`](PlayerButtonInputAfterEvent.md)*
-#### Added *[`PlayerButtonInputAfterEventSignal`](PlayerButtonInputAfterEventSignal.md)*
 #### Changed *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
 - Removed property *cameraEnabled*
 - Removed property *movementEnabled*
@@ -270,7 +240,6 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`System`](System.md)*
 - Added property *[`beforeEvents`](System.md#beforeevents)*
 - Added property *[`isEditorWorld`](System.md#iseditorworld)*
-- Added function *[`sendScriptEvent`](System.md#sendscriptevent)*
 #### Added *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
 #### Added *[`WatchdogTerminateBeforeEvent`](WatchdogTerminateBeforeEvent.md)*
 #### Added *[`WatchdogTerminateBeforeEventSignal`](WatchdogTerminateBeforeEventSignal.md)*
@@ -285,7 +254,6 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Removed property *itemUseOn*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
-- Added property *[`playerButtonInput`](WorldAfterEvents.md#playerbuttoninput)*
 - Removed property *worldInitialize*
 - Added property *[`worldLoad`](WorldAfterEvents.md#worldload)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
@@ -302,12 +270,12 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
 #### Changed enum [`BlockComponentTypes`](BlockComponentTypes.md)
 - Changed value `FluidContainer` from `minecraft:fluidContainer` to `minecraft:fluid_container`
-#### Added enum [`ButtonState`](ButtonState.md)
+#### Added enum [`CommandPermissionLevel`](CommandPermissionLevel.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
 #### Added enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
 #### Added enum [`CustomCommandParamType`](CustomCommandParamType.md)
-#### Added enum [`CustomCommandPermissionLevel`](CustomCommandPermissionLevel.md)
+#### Added enum [`CustomCommandSource`](CustomCommandSource.md)
 #### Added enum [`CustomCommandStatus`](CustomCommandStatus.md)
 #### Added enum [`Difficulty`](Difficulty.md)
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
@@ -316,16 +284,68 @@ description: Changelog of the `@minecraft/server` module
 - Removed value `suicide`
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
+#### Changed enum [`GameRule`](GameRule.md)
+- Added value `LocatorBar`
 #### Added enum [`GraphicsMode`](GraphicsMode.md)
-#### Added enum [`InputButton`](InputButton.md)
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `Dyeable`
 - Added value `Potion`
-#### Added enum [`LiquidType`](LiquidType.md)
-#### Added enum [`NamespaceNameErrorReason`](NamespaceNameErrorReason.md)
 #### Added enum [`TintMethod`](TintMethod.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `TicksPerDay`
+## 1.18.0
+#### Added module peer dependency *`@minecraft/vanilla-data`*
+#### Changed *[`Block`](Block.md)*
+- Added function *[`canBeDestroyedByLiquidSpread`](Block.md#canbedestroyedbyliquidspread)*
+- Added function *[`canContainLiquid`](Block.md#cancontainliquid)*
+- Changed function *[`getComponent`](Block.md#getcomponent)*
+  - Changed return type from [*BlockComponent*](BlockComponent.md) (throws exceptions) to *BlockComponentReturnType<T> | undefined* (throws exceptions)
+  - Changed argument `componentId` type from *string* to *T*
+- Added function *[`isLiquidBlocking`](Block.md#isliquidblocking)*
+- Added function *[`liquidCanFlowFromDirection`](Block.md#liquidcanflowfromdirection)*
+- Added function *[`liquidSpreadCausesSpawn`](Block.md#liquidspreadcausesspawn)*
+#### Changed *[`BlockPermutation`](BlockPermutation.md)*
+- Added function *[`canBeDestroyedByLiquidSpread`](BlockPermutation.md#canbedestroyedbyliquidspread)*
+- Added function *[`canContainLiquid`](BlockPermutation.md#cancontainliquid)*
+- Changed function *[`getState`](BlockPermutation.md#getstate)*
+  - Changed return type from *boolean* | *number* | *string* to *minecraftvanilladata.BlockStateSuperset[T] | undefined*
+  - Changed argument `stateName` type from *string* to *T*
+- Added function *[`isLiquidBlocking`](BlockPermutation.md#isliquidblocking)*
+- Added function *[`liquidSpreadCausesSpawn`](BlockPermutation.md#liquidspreadcausesspawn)*
+- Changed function *[`matches`](BlockPermutation.md#matches)*
+  - Changed argument `blockName` type from *string* to *T*
+  - Changed argument `states` type from Record<*string*, *boolean* | *number* | *string*> to *BlockStateArg<T>*
+- Changed function *[`resolve`](BlockPermutation.md#resolve)*
+  - Changed return type from [*BlockPermutation*](BlockPermutation.md) (throws exceptions) to *BlockPermutation* (throws exceptions)
+  - Changed argument `blockName` type from *string* to *T*
+  - Changed argument `states` type from Record<*string*, *boolean* | *number* | *string*> to *BlockStateArg<T>*
+- Changed function *[`withState`](BlockPermutation.md#withstate)*
+  - Changed return type from [*BlockPermutation*](BlockPermutation.md) (throws exceptions) to *BlockPermutation* (throws exceptions)
+  - Changed argument `name` type from *string* to *T*
+  - Changed argument `value` type from *boolean* | *number* | *string* to *minecraftvanilladata.BlockStateSuperset[T]*
+#### Changed *[`Entity`](Entity.md)*
+- Changed function *[`getComponent`](Entity.md#getcomponent)*
+  - Changed return type from [*EntityComponent*](EntityComponent.md) to *EntityComponentReturnType<T> | undefined*
+  - Changed argument `componentId` type from *string* to *T*
+#### Changed *[`InputInfo`](InputInfo.md)*
+- Added function *[`getButtonState`](InputInfo.md#getbuttonstate)*
+- Added function *[`getMovementVector`](InputInfo.md#getmovementvector)*
+#### Changed *[`ItemStack`](ItemStack.md)*
+- Changed function *[`getComponent`](ItemStack.md#getcomponent)*
+  - Changed return type from [*ItemComponent*](ItemComponent.md) to *ItemComponentReturnType<T> | undefined*
+  - Changed argument `componentId` type from *string* to *T*
+#### Changed *[`Player`](Player.md)*
+- Added function *[`spawnParticle`](Player.md#spawnparticle)*
+#### Added *[`PlayerButtonInputAfterEvent`](PlayerButtonInputAfterEvent.md)*
+#### Added *[`PlayerButtonInputAfterEventSignal`](PlayerButtonInputAfterEventSignal.md)*
+#### Changed *[`System`](System.md)*
+- Added function *[`sendScriptEvent`](System.md#sendscriptevent)*
+#### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
+- Added property *[`playerButtonInput`](WorldAfterEvents.md#playerbuttoninput)*
+#### Added enum [`ButtonState`](ButtonState.md)
+#### Added enum [`InputButton`](InputButton.md)
+#### Added enum [`LiquidType`](LiquidType.md)
+#### Added enum [`NamespaceNameErrorReason`](NamespaceNameErrorReason.md)
 ## 1.17.0
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isWaterlogged`](Block.md#iswaterlogged)*

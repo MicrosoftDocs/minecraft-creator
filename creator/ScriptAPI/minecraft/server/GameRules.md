@@ -157,6 +157,19 @@ Type: *boolean*
 Notes:
   - This property can't be edited in read-only mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **locatorBar**
+`locatorBar: boolean;`
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can't be edited in read-only mode.
+::: moniker-end
+
 ### **maxCommandChainLength**
 `maxCommandChainLength: number;`
 

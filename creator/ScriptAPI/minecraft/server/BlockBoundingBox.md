@@ -4,22 +4,22 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.BoundingBox Interface
-description: Contents of the @minecraft/server.BoundingBox class.
+title: minecraft/server.BlockBoundingBox Interface
+description: Contents of the @minecraft/server.BlockBoundingBox class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# BoundingBox Interface
+# BlockBoundingBox Interface
 
 > [!CAUTION]
 > This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-A BoundingBox is an interface to an object which represents an AABB aligned rectangle.  
+A BlockBoundingBox is an interface to an object which represents an AABB aligned rectangle.  
 
-The BoundingBox assumes that it was created in a valid state (min <= max) but cannot guarantee it (unless it was created using the associated [*@minecraft/server.BoundingBoxUtils*](../../../scriptapi/minecraft/server/BoundingBoxUtils.md) utility functions.
+The BlockBoundingBox assumes that it was created in a valid state (min <= max) but cannot guarantee it (unless it was created using the associated [*@minecraft/server.BlockBoundingBoxUtils*](../../../scriptapi/minecraft/server/BlockBoundingBoxUtils.md) utility functions.
 
 The min/max coordinates represent the diametrically opposite corners of the rectangle.
 
-The BoundingBox is not a representation of blocks - it has no association with any type, it is just a mathematical construct - so a rectangle with
+The BlockBoundingBox is not a representation of blocks - it has no association with any type, it is just a mathematical construct - so a rectangle with
 
 ( 0,0,0 ) -> ( 0,0,0 )
 

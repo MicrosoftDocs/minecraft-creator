@@ -554,6 +554,8 @@ Gold Ore
 Yellow Glazed Terracotta
 - `yellow_glazed_terracotta`
 Yellow Glazed Terracotta
+- `minecraft:dried_ghast`
+- `dried_ghast`
 - `minecraft:warped_planks`
 Warped Planks
 - `warped_planks`
@@ -3510,6 +3512,8 @@ Ravager Spawn Egg
 - `bogged_spawn_egg`
 - `minecraft:creaking_spawn_egg`
 - `creaking_spawn_egg`
+- `minecraft:happy_ghast_spawn_egg`
+- `happy_ghast_spawn_egg`
 - `editor:map_marker_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit
@@ -3947,6 +3951,38 @@ Spyglass
 Spyglass
 - `minecraft:brush`
 - `brush`
+- `minecraft:white_harness`
+- `white_harness`
+- `minecraft:light_gray_harness`
+- `light_gray_harness`
+- `minecraft:gray_harness`
+- `gray_harness`
+- `minecraft:black_harness`
+- `black_harness`
+- `minecraft:brown_harness`
+- `brown_harness`
+- `minecraft:red_harness`
+- `red_harness`
+- `minecraft:orange_harness`
+- `orange_harness`
+- `minecraft:yellow_harness`
+- `yellow_harness`
+- `minecraft:lime_harness`
+- `lime_harness`
+- `minecraft:green_harness`
+- `green_harness`
+- `minecraft:cyan_harness`
+- `cyan_harness`
+- `minecraft:light_blue_harness`
+- `light_blue_harness`
+- `minecraft:blue_harness`
+- `blue_harness`
+- `minecraft:purple_harness`
+- `purple_harness`
+- `minecraft:magenta_harness`
+- `magenta_harness`
+- `minecraft:pink_harness`
+- `pink_harness`
 - `minecraft:stick`
 Stick
 - `stick`

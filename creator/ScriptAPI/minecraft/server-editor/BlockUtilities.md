@@ -12,10 +12,11 @@ description: Contents of the @minecraft/server-editor.BlockUtilities class.
 ## Methods
 - [fillVolume](#fillvolume)
 - [getContiguousSelection](#getcontiguousselection)
+- [getDimensionLocationBoundingBox](#getdimensionlocationboundingbox)
+- [getDimensionMaxLocation](#getdimensionmaxlocation)
+- [getDimensionMinLocation](#getdimensionminlocation)
 - [getFacePreviewSelection](#getfacepreviewselection)
-- [getMaxWorldLocation](#getmaxworldlocation)
-- [getMinWorldLocation](#getminworldlocation)
-- [isLocationInWorld](#islocationinworld)
+- [isLocationInsideCurrentDimensionBounds](#islocationinsidecurrentdimensionbounds)
 - [quickExtrude](#quickextrude)
 - [shrinkWrapVolume](#shrinkwrapvolume)
 - [trimVolumeToFitContents](#trimvolumetofitcontents)
@@ -48,6 +49,36 @@ Notes:
 - This function can throw errors.
   - Throws *Error*
 
+### **getDimensionLocationBoundingBox**
+`
+getDimensionLocationBoundingBox(): minecraftserver.BlockBoundingBox
+`
+
+**Returns** [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **getDimensionMaxLocation**
+`
+getDimensionMaxLocation(): minecraftserver.Vector3
+`
+
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **getDimensionMinLocation**
+`
+getDimensionMinLocation(): minecraftserver.Vector3
+`
+
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
 ### **getFacePreviewSelection**
 `
 getFacePreviewSelection(properties?: QuickExtrudeProperties): minecraftserver.ListBlockVolume
@@ -63,33 +94,13 @@ Notes:
 - This function can throw errors.
   - Throws *Error*
 
-### **getMaxWorldLocation**
+### **isLocationInsideCurrentDimensionBounds**
 `
-getMaxWorldLocation(): minecraftserver.Vector3
-`
-
-**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
-  
-Notes:
-- This function can't be called in read-only mode.
-
-### **getMinWorldLocation**
-`
-getMinWorldLocation(): minecraftserver.Vector3
-`
-
-**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
-  
-Notes:
-- This function can't be called in read-only mode.
-
-### **isLocationInWorld**
-`
-isLocationInWorld(locationOrVolumeOrBounds: minecraftserver.BlockVolumeBase | minecraftserver.BoundingBox | RelativeVolumeListBlockVolume | minecraftserver.Vector3): boolean
+isLocationInsideCurrentDimensionBounds(locationOrVolumeOrBounds: minecraftserver.BlockBoundingBox | minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume | minecraftserver.Vector3): boolean
 `
 
 #### **Parameters**
-- **locationOrVolumeOrBounds**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **locationOrVolumeOrBounds**: [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) | [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md) | [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 **Returns** *boolean*
   

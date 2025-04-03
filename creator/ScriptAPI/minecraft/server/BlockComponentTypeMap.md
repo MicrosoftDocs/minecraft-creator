@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.BlockComponentTypeMap Type Alias
 description: Contents of the @minecraft/server.BlockComponentTypeMap type alias.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockComponentTypeMap Type Alias
-
-> [!CAUTION]
-> This alias is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Declaration
 ```ts

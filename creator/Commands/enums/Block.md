@@ -660,6 +660,8 @@ Gold Ore
 Yellow Glazed Terracotta
 - `yellow_glazed_terracotta`
 Yellow Glazed Terracotta
+- `minecraft:dried_ghast`
+- `dried_ghast`
 - `minecraft:warped_planks`
 Warped Planks
 - `warped_planks`

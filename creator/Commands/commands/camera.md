@@ -120,34 +120,46 @@ Specifies a camera timed fade-out type operation.
 Specifies a camera looking at a particular position.
 
 ### Fade
-`/camera <players: target> set <preset: CameraPresets> pos <position: x y z>`
+`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 Specifies a general camera fade-out.
 
 ### Clear
-`/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation>`
+`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Clears any active camera changes for the player.
 
 ### Timed color-tinted fade
-`/camera <players: target> set <preset: CameraPresets> facing <lookAtEntity: target>`
+`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float>`
 
 Applies a color tinted fade for the specified fade in, hold, and out time periods.
 
 ### Timed fade
-`/camera <players: target> set <preset: CameraPresets> facing <lookAtPosition: x y z>`
+`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> rot <xRot: rotation> <yRot: rotation> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Applies a fade for the specified fade in, hold, and out time periods.
 
 ### Color-tinted fade
-`/camera <players: target> set <preset: CameraPresets> [default: default]`
+`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Applies a color-tinted fade for the selected player(s).
 
 ### Fade
-`/camera <players: target> clear`
+`/camera <players: target> set <preset: CameraPresets> ease <easeTime: float> <easeType: Easing> rot <xRot: rotation> <yRot: rotation> view_offset <xViewOffset: float> <yViewOffset: float> entity_offset <xEntityOffset: float> <yEntityOffset: float> <zEntityOffset: float>`
 
 Applies a fade for the selected player(s)
+
+### `/camera <players: target> set <preset: CameraPresets> pos <position: x y z>`
+
+### `/camera <players: target> set <preset: CameraPresets> rot <xRot: rotation> <yRot: rotation>`
+
+### `/camera <players: target> set <preset: CameraPresets> facing <lookAtEntity: target>`
+
+### `/camera <players: target> set <preset: CameraPresets> facing <lookAtPosition: x y z>`
+
+### `/camera <players: target> set <preset: CameraPresets> [default: default]`
+
+### `/camera <players: target> clear`
 
 ### `/camera <players: target> fade time <fadeInSeconds: float> <holdSeconds: float> <fadeOutSeconds: float> color <red: int> <green: int> <blue: int>`
 
@@ -217,6 +229,7 @@ A listing of available camera presets.
 - `minecraft:free`
 - `minecraft:third_person`
 - `minecraft:third_person_front`
+- `minecraft:control_scheme_camera`
 
 ### `Easing`
 Specifies an easing function to use for the camera.

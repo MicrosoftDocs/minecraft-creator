@@ -48,6 +48,8 @@
       href: minecraft/server/BlockVolumeIntersection.md
     - name: ButtonState
       href: minecraft/server/ButtonState.md
+    - name: CommandPermissionLevel
+      href: minecraft/server/CommandPermissionLevel.md
     - name: CompoundBlockVolumeAction
       href: minecraft/server/CompoundBlockVolumeAction.md
     - name: CompoundBlockVolumePositionRelativity
@@ -56,8 +58,8 @@
       href: minecraft/server/CustomCommandErrorReason.md
     - name: CustomCommandParamType
       href: minecraft/server/CustomCommandParamType.md
-    - name: CustomCommandPermissionLevel
-      href: minecraft/server/CustomCommandPermissionLevel.md
+    - name: CustomCommandSource
+      href: minecraft/server/CustomCommandSource.md
     - name: CustomCommandStatus
       href: minecraft/server/CustomCommandStatus.md
     - name: CustomComponentNameErrorReason
@@ -156,6 +158,8 @@
       href: minecraft/server/BiomeTypes.md
     - name: Block
       href: minecraft/server/Block.md
+    - name: BlockBoundingBoxUtils
+      href: minecraft/server/BlockBoundingBoxUtils.md
     - name: BlockComponent
       href: minecraft/server/BlockComponent.md
     - name: BlockComponentEntityFallOnEvent
@@ -214,8 +218,6 @@
       href: minecraft/server/BlockVolume.md
     - name: BlockVolumeBase
       href: minecraft/server/BlockVolumeBase.md
-    - name: BoundingBoxUtils
-      href: minecraft/server/BoundingBoxUtils.md
     - name: ButtonPushAfterEvent
       href: minecraft/server/ButtonPushAfterEvent.md
     - name: ButtonPushAfterEventSignal
@@ -242,8 +244,12 @@
       href: minecraft/server/Container.md
     - name: ContainerSlot
       href: minecraft/server/ContainerSlot.md
+    - name: CustomCommandOrigin
+      href: minecraft/server/CustomCommandOrigin.md
     - name: CustomCommandRegistry
       href: minecraft/server/CustomCommandRegistry.md
+    - name: CustomComponentParameters
+      href: minecraft/server/CustomComponentParameters.md
     - name: DataDrivenEntityTriggerAfterEvent
       href: minecraft/server/DataDrivenEntityTriggerAfterEvent.md
     - name: DataDrivenEntityTriggerAfterEventSignal
@@ -754,6 +760,8 @@
       href: minecraft/server/WorldLoadAfterEventSignal.md
     - name: BiomeSearchOptions
       href: minecraft/server/BiomeSearchOptions.md
+    - name: BlockBoundingBox
+      href: minecraft/server/BlockBoundingBox.md
     - name: BlockCustomComponent
       href: minecraft/server/BlockCustomComponent.md
     - name: BlockEventOptions
@@ -768,8 +776,6 @@
       href: minecraft/server/BlockRaycastHit.md
     - name: BlockRaycastOptions
       href: minecraft/server/BlockRaycastOptions.md
-    - name: BoundingBox
-      href: minecraft/server/BoundingBox.md
     - name: CameraDefaultOptions
       href: minecraft/server/CameraDefaultOptions.md
     - name: CameraEaseOptions
@@ -904,6 +910,12 @@
       href: minecraft/server-admin/minecraft-server-admin.md
     - name: minecraft/server-admin Changelog
       href: minecraft/server-admin/changelog.md
+    - name: AdminBeforeEvents
+      href: minecraft/server-admin/AdminBeforeEvents.md
+    - name: AsyncPlayerJoinBeforeEvent
+      href: minecraft/server-admin/AsyncPlayerJoinBeforeEvent.md
+    - name: AsyncPlayerJoinBeforeEventSignal
+      href: minecraft/server-admin/AsyncPlayerJoinBeforeEventSignal.md
     - name: SecretString
       href: minecraft/server-admin/SecretString.md
     - name: ServerSecrets

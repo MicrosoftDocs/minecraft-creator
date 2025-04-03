@@ -92,6 +92,8 @@ Strider
 Rabbit
 - `rabbit`
 Rabbit
+- `minecraft:happy_ghast`
+- `happy_ghast`
 - `minecraft:bat`
 Bat
 - `bat`
@@ -156,10 +158,6 @@ Tadpole
 Allay
 - `allay`
 Allay
-- `minecraft:husk`
-Husk
-- `husk`
-Husk
 - `minecraft:tropicalfish`
 Tropical Fish
 - `tropicalfish`
@@ -256,6 +254,10 @@ Blaze
 Warden
 - `warden`
 Warden
+- `minecraft:husk`
+Husk
+- `husk`
+Husk
 - `minecraft:wither_skeleton`
 Wither Skeleton
 - `wither_skeleton`
@@ -414,9 +416,9 @@ NPC
 NPC
 - `editor:ruler_pointer_selected`
 - `editor:location_pointer_idle`
+- `editor:map_marker`
 - `editor:location_pointer_selected`
 - `editor:ruler_idle`
-- `editor:map_marker`
 
 ## References
 The following commands reference this enum:
