@@ -116,14 +116,14 @@ Notes:
 
 ### **getBoundingBox**
 `
-getBoundingBox(): BoundingBox
+getBoundingBox(): BlockBoundingBox
 `
 
 Get the largest bounding box that represents a container for all of the volumes on the stack
 
 Note that the bounding box returned is represented in absolute world space  (irrespective of whether the compound volume items pushed are absolute or relative)
 
-**Returns** [*BoundingBox*](BoundingBox.md)
+**Returns** [*BlockBoundingBox*](BlockBoundingBox.md)
   
 Notes:
 - This function can't be called in read-only mode.

@@ -165,12 +165,8 @@ Type: *number*
 - [above](#above)
 - [below](#below)
 - [bottomCenter](#bottomcenter)
-::: moniker range="=minecraft-bedrock-experimental"
 - [canBeDestroyedByLiquidSpread](#canbedestroyedbyliquidspread)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [canContainLiquid](#cancontainliquid)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [canPlace](#canplace)
 ::: moniker-end
@@ -184,15 +180,9 @@ Type: *number*
 - [getRedstonePower](#getredstonepower)
 - [getTags](#gettags)
 - [hasTag](#hastag)
-::: moniker range="=minecraft-bedrock-experimental"
 - [isLiquidBlocking](#isliquidblocking)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [liquidCanFlowFromDirection](#liquidcanflowfromdirection)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [liquidSpreadCausesSpawn](#liquidspreadcausesspawn)
-::: moniker-end
 - [matches](#matches)
 - [north](#north)
 - [offset](#offset)
@@ -250,7 +240,6 @@ Returns the [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Ve
 
 **Returns** [*Vector3*](Vector3.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **canBeDestroyedByLiquidSpread**
 `
 canBeDestroyedByLiquidSpread(liquidType: LiquidType): boolean
@@ -264,16 +253,11 @@ Returns whether this block is removed when touched by liquid.
   The type of liquid this function should be called for.
 
 **Returns** *boolean* - Whether this block is removed when touched by liquid.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **canContainLiquid**
 `
 canContainLiquid(liquidType: LiquidType): boolean
@@ -287,14 +271,10 @@ Returns whether this block can have a liquid placed over it, i.e. be waterlogged
   The type of liquid this function should be called for.
 
 **Returns** *boolean* - Whether this block can have a liquid placed over it.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **canPlace**
@@ -470,7 +450,6 @@ function checkBlockTags(log: (message: string, status?: number) => void, targetL
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/checkBlockTags.ts) code sandbox.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isLiquidBlocking**
 `
 isLiquidBlocking(liquidType: LiquidType): boolean
@@ -484,16 +463,11 @@ Returns whether this block stops liquid from flowing.
   The type of liquid this function should be called for.
 
 **Returns** *boolean* - Whether this block stops liquid from flowing.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **liquidCanFlowFromDirection**
 `
 liquidCanFlowFromDirection(liquidType: LiquidType, flowDirection: Direction): boolean
@@ -508,16 +482,11 @@ Returns whether liquid can flow into the block from the provided direction, or f
 - **flowDirection**: [*Direction*](Direction.md)
 
 **Returns** *boolean* - Whether liquid can flow into the block from the provided direction, or flow out from the provided direction when liquid is placed into it with a bucket
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **liquidSpreadCausesSpawn**
 `
 liquidSpreadCausesSpawn(liquidType: LiquidType): boolean
@@ -531,14 +500,10 @@ Returns whether this block is removed and spawns its item when touched by liquid
   The type of liquid this function should be called for.
 
 **Returns** *boolean* - Whether this block is removed and spawns its item when touched by liquid.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **matches**
 `

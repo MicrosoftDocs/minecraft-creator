@@ -84,6 +84,8 @@ The maximum number of commands that can be executed simultaneously by the /funct
 `KeepInventory = "keepInventory"`
 
 Controls whether players keep their inventories when they die.
+### **LocatorBar**
+`LocatorBar = "locatorBar"`
 ### **MaxCommandChainLength**
 `MaxCommandChainLength = "maxCommandChainLength"`
 

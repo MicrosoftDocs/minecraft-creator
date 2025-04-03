@@ -1,0 +1,10 @@
+{
+  "id": "query.is_eating_mob",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_eating_mob",
+    "title": "Is Eating Mob Query",
+    "description": "Returns 1.0 if the entity is eating a mob, else it returns 0.0.",
+    "fields": []
+  }
+}

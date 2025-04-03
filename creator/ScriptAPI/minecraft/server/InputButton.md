@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.InputButton Enumeration
 description: Contents of the @minecraft/server.InputButton enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # InputButton Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 All the different input buttons that are supported. Use with [*@minecraft/server.InputInfo.getButtonState*](../../../scriptapi/minecraft/server/InputInfo.md#getbuttonstate) via [*@minecraft/server.Player.inputInfo*](../../../scriptapi/minecraft/server/Player.md#inputinfo) or [*@minecraft/server.PlayerButtonInputAfterEvent*](../../../scriptapi/minecraft/server/PlayerButtonInputAfterEvent.md) via [*@minecraft/server.WorldAfterEvents.playerButtonInput*](../../../scriptapi/minecraft/server/WorldAfterEvents.md#playerbuttoninput)
 

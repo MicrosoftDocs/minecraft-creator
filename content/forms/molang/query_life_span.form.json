@@ -1,0 +1,10 @@
+{
+  "id": "query.life_span",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.life_span",
+    "title": "Life Span Query",
+    "description": "Returns the limited life span of an entity, or 0.0 if it lives forever",
+    "fields": []
+  }
+}

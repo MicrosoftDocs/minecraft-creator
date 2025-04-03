@@ -1,0 +1,10 @@
+{
+  "id": "query.surface_particle_texture_size",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.surface_particle_texture_size",
+    "title": "Surface Particle Texture Size Query",
+    "description": "Returns the texture size for generating particles for the block located in the surface below the actor (scanned up to 10 blocks down). If no actor is specified or if no surface is found, each member value will be 0.0. Available on the Client (Resource Packs) only.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.current_squish_value",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.current_squish_value",
+    "title": "Current Squish Value Query",
+    "description": "Returns the squish value for the current entity, or 0.0 if this doesn't make sense.",
+    "fields": []
+  }
+}

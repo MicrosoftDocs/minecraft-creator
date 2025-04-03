@@ -1,0 +1,10 @@
+{
+  "id": "query.out_of_control",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.out_of_control",
+    "title": "Out Of Control Query",
+    "description": "Returns 1.0 if the entity is out of control, else it returns 0.0.",
+    "fields": []
+  }
+}

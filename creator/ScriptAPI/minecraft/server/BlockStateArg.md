@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.BlockStateArg Type Alias
 description: Contents of the @minecraft/server.BlockStateArg type alias.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockStateArg Type Alias
-
-> [!CAUTION]
-> This alias is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Type alias used by the [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) matches and resolve functions to narrow block state argument types to those mapped by {@link @minecraft/vanilla-data.BlockStateMapping}.
 

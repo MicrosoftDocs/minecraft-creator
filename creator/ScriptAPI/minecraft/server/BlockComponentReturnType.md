@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.BlockComponentReturnType Type Alias
 description: Contents of the @minecraft/server.BlockComponentReturnType type alias.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockComponentReturnType Type Alias
-
-> [!CAUTION]
-> This alias is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Declaration
 `export type BlockComponentReturnType<T extends string> = T extends keyof BlockComponentTypeMap ? BlockComponentTypeMap[T] : BlockComponent;`

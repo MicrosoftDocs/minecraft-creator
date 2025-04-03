@@ -1,0 +1,10 @@
+{
+  "id": "query.invulnerable_ticks",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.invulnerable_ticks",
+    "title": "Invulnerable Ticks Query",
+    "description": "Returns the number of ticks of invulnerability the entity has left if it makes sense, else it returns 0.0.",
+    "fields": []
+  }
+}

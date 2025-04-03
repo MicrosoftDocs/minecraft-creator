@@ -3,6 +3,24 @@
   "tags": [
     "visual"
   ],
+  "samples": {
+    "sample": [
+      {
+        "path": "Full Block Example",
+        "content": {
+          "geometry": {
+            "identifier": "minecraft:geometry.full_block"
+          },
+          "material_instances": {
+            "*": {
+              "texture": "dirt",
+              "render_method": "opaque"
+            }
+          }
+        }
+      }
+    ]
+  },
   "generated_doNotEdit": {
     "id": "minecraft:item_visual",
     "title": "Item Visual",

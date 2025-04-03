@@ -1,0 +1,10 @@
+{
+  "id": "query.is_jumping",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_jumping",
+    "title": "Is Jumping Query",
+    "description": "Returns 1.0 if the entity is jumping, else it returns 0.0.",
+    "fields": []
+  }
+}

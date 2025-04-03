@@ -30,6 +30,8 @@
   href: has_damaged_equipment.md
 - name: has_equipment
   href: has_equipment.md
+- name: has_equipment_tag
+  href: has_equipment_tag.md
 - name: has_mob_effect
   href: has_mob_effect.md
 - name: has_nametag

@@ -1,0 +1,10 @@
+{
+  "id": "query.is_orphaned",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_orphaned",
+    "title": "Is Orphaned Query",
+    "description": "Returns 1.0 if the entity is orphaned, else it returns 0.0.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.health",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.health",
+    "title": "Health Query",
+    "description": "Returns the health of the entity, or 0.0 if it doesn't make sense to call on this entity.",
+    "fields": []
+  }
+}

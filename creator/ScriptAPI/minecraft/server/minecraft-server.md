@@ -17,12 +17,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.17.0"
+    "version": "1.18.0"
 }
 ```
 
 ## Available Versions
 - `2.0.0-beta`
+- `1.18.0`
 - `1.17.0`
 - `1.16.0`
 - `1.15.0`
@@ -48,11 +49,12 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockPistonState](BlockPistonState.md)
 - [BlockVolumeIntersection](BlockVolumeIntersection.md)
 - [ButtonState](ButtonState.md)
+- [CommandPermissionLevel](CommandPermissionLevel.md)
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
 - [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
 - [CustomCommandErrorReason](CustomCommandErrorReason.md)
 - [CustomCommandParamType](CustomCommandParamType.md)
-- [CustomCommandPermissionLevel](CustomCommandPermissionLevel.md)
+- [CustomCommandSource](CustomCommandSource.md)
 - [CustomCommandStatus](CustomCommandStatus.md)
 - [CustomComponentNameErrorReason](CustomComponentNameErrorReason.md)
 - [Difficulty](Difficulty.md)
@@ -115,6 +117,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BiomeType](BiomeType.md)
 - [BiomeTypes](BiomeTypes.md)
 - [Block](Block.md)
+- [BlockBoundingBoxUtils](BlockBoundingBoxUtils.md)
 - [BlockComponent](BlockComponent.md)
 - [BlockComponentEntityFallOnEvent](BlockComponentEntityFallOnEvent.md)
 - [BlockComponentOnPlaceEvent](BlockComponentOnPlaceEvent.md)
@@ -144,7 +147,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockTypes](BlockTypes.md)
 - [BlockVolume](BlockVolume.md)
 - [BlockVolumeBase](BlockVolumeBase.md)
-- [BoundingBoxUtils](BoundingBoxUtils.md)
 - [ButtonPushAfterEvent](ButtonPushAfterEvent.md)
 - [ButtonPushAfterEventSignal](ButtonPushAfterEventSignal.md)
 - [Camera](Camera.md)
@@ -158,7 +160,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [CompoundBlockVolume](CompoundBlockVolume.md)
 - [Container](Container.md)
 - [ContainerSlot](ContainerSlot.md)
+- [CustomCommandOrigin](CustomCommandOrigin.md)
 - [CustomCommandRegistry](CustomCommandRegistry.md)
+- [CustomComponentParameters](CustomComponentParameters.md)
 - [DataDrivenEntityTriggerAfterEvent](DataDrivenEntityTriggerAfterEvent.md)
 - [DataDrivenEntityTriggerAfterEventSignal](DataDrivenEntityTriggerAfterEventSignal.md)
 - [Dimension](Dimension.md)
@@ -416,6 +420,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 
 ## Interfaces
 - [BiomeSearchOptions](BiomeSearchOptions.md)
+- [BlockBoundingBox](BlockBoundingBox.md)
 - [BlockCustomComponent](BlockCustomComponent.md)
 - [BlockEventOptions](BlockEventOptions.md)
 - [BlockFillOptions](BlockFillOptions.md)
@@ -423,7 +428,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockHitInformation](BlockHitInformation.md)
 - [BlockRaycastHit](BlockRaycastHit.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
-- [BoundingBox](BoundingBox.md)
 - [CameraDefaultOptions](CameraDefaultOptions.md)
 - [CameraEaseOptions](CameraEaseOptions.md)
 - [CameraFadeOptions](CameraFadeOptions.md)

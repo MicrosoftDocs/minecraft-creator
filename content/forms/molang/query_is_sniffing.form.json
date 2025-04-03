@@ -1,0 +1,10 @@
+{
+  "id": "query.is_sniffing",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_sniffing",
+    "title": "Is Sniffing Query",
+    "description": "Returns 1.0 if the entity is sniffing, else it returns 0.0.",
+    "fields": []
+  }
+}

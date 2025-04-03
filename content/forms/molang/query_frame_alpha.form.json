@@ -1,0 +1,10 @@
+{
+  "id": "query.frame_alpha",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.frame_alpha",
+    "title": "Frame Alpha Query",
+    "description": "Returns the ratio (from 0 to 1) of how much between AI ticks this frame is being rendered.",
+    "fields": []
+  }
+}

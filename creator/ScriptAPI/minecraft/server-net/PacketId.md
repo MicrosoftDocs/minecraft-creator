@@ -106,8 +106,6 @@ Represents the unique type of network packet.
 `CommandRequestPacket = "CommandRequestPacket"`
 ### **CompletedUsingItemPacket**
 `CompletedUsingItemPacket = "CompletedUsingItemPacket"`
-### **CompressedBiomeDefinitionList**
-`CompressedBiomeDefinitionList = "CompressedBiomeDefinitionList"`
 ### **ContainerClosePacket**
 `ContainerClosePacket = "ContainerClosePacket"`
 ### **ContainerOpenPacket**

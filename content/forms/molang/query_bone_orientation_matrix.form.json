@@ -1,0 +1,10 @@
+{
+  "id": "query.bone_orientation_matrix",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.bone_orientation_matrix",
+    "title": "Bone Orientation Matrix Query",
+    "description": "Takes the name of the bone as an argument. Returns the bone orientation (as a matrix) of the desired bone provided it exists in the queryable geometry of the mob, else this returns the identity matrix and throws a content error.",
+    "fields": []
+  }
+}

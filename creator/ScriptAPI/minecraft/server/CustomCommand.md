@@ -46,8 +46,8 @@ List of optional command parameters.
 Type: [*CustomCommandParameter*](CustomCommandParameter.md)[]
 
 ### **permissionLevel**
-`permissionLevel: CustomCommandPermissionLevel;`
+`permissionLevel: CommandPermissionLevel;`
 
 The permission level required to execute the command.
 
-Type: [*CustomCommandPermissionLevel*](CustomCommandPermissionLevel.md)
+Type: [*CommandPermissionLevel*](CommandPermissionLevel.md)

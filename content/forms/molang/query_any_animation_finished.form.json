@@ -1,0 +1,10 @@
+{
+  "id": "query.any_animation_finished",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.any_animation_finished",
+    "title": "Any Animation Finished Query",
+    "description": "Only valid in an animation controller.  Returns 1.0 if any animation in the current animation controller state has played through at least once, else it returns 0.0.",
+    "fields": []
+  }
+}

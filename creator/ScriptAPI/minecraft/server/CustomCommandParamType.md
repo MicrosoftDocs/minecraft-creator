@@ -26,8 +26,8 @@ monikerRange: "=minecraft-bedrock-experimental"
 `EntitySelector = 4`
 ### **PlayerSelector**
 `PlayerSelector = 5`
-### **Position**
-`Position = 6`
+### **Location**
+`Location = 6`
 ### **BlockType**
 `BlockType = 7`
 ### **ItemType**

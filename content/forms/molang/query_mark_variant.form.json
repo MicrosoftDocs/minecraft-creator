@@ -1,0 +1,10 @@
+{
+  "id": "query.mark_variant",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.mark_variant",
+    "title": "Mark Variant Query",
+    "description": "Returns the entity's mark variant",
+    "fields": []
+  }
+}

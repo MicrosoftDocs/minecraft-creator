@@ -1,0 +1,10 @@
+{
+  "id": "query.heartbeat_phase",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.heartbeat_phase",
+    "title": "Heartbeat Phase Query",
+    "description": "Returns the heartbeat phase of the actor. 0.0 if at start of current heartbeat, 1.0 if at the end. Returns 0 on errors or when the actor has no heartbeat. Available on the Client (Resource Packs) only.",
+    "fields": []
+  }
+}

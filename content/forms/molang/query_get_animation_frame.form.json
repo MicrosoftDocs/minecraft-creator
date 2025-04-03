@@ -1,0 +1,10 @@
+{
+  "id": "query.get_animation_frame",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.get_animation_frame",
+    "title": "Get Animation Frame Query",
+    "description": "Returns the current texture of the item",
+    "fields": []
+  }
+}

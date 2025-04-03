@@ -1,0 +1,10 @@
+{
+  "id": "query.is_elder",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_elder",
+    "title": "Is Elder Query",
+    "description": "Returns 1.0 if the entity is an elder version of it, else it returns 0.0.",
+    "fields": []
+  }
+}

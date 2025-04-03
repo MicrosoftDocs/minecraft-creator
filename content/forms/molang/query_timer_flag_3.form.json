@@ -1,0 +1,10 @@
+{
+  "id": "query.timer_flag_3",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.timer_flag_3",
+    "title": "Timer Flag 3 Query",
+    "description": "Returns 1.0 if behavior.timer_flag_3 is running, else it returns 0.0.",
+    "fields": []
+  }
+}

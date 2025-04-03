@@ -62,10 +62,10 @@ Notes:
 
 ### **getBoundingBox**
 `
-getBoundingBox(): minecraftserver.BoundingBox
+getBoundingBox(): minecraftserver.BlockBoundingBox
 `
 
-**Returns** [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md)
+**Returns** [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md)
   
 Notes:
 - This function can throw errors.

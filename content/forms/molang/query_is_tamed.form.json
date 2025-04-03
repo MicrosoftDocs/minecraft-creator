@@ -1,0 +1,10 @@
+{
+  "id": "query.is_tamed",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_tamed",
+    "title": "Is Tamed Query",
+    "description": "Returns 1.0 if the entity is tamed, else it returns 0.0.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.camera_rotation",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.camera_rotation",
+    "title": "Camera Rotation Query",
+    "description": "Returns the rotation of the camera.  Requires one argument representing the rotation axis you would like (0 for x, 1 for y).",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.rider_body_x_rotation",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.rider_body_x_rotation",
+    "title": "Rider Body X Rotation Query",
+    "description": "Returns the body pitch world-rotation of a valid rider at the provided index if called on an entity, else it returns 0.0.",
+    "fields": []
+  }
+}

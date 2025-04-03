@@ -2,6 +2,7 @@
   "tags": [
     "visual"
   ],
+  "note": "From 1.21.80 onward, when using a minecraft:geometry component or minecraft:material_instances component, you must include both.",
   "customField": {
     "id": "<custom material id>",
     "title": "<Custom Material Instance Id>",

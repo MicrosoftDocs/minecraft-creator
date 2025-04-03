@@ -1,0 +1,10 @@
+{
+  "id": "query.is_carrying_block",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_carrying_block",
+    "title": "Is Carrying Block Query",
+    "description": "Returns 1.0 if the entity is carrying a block, else it returns 0.0.",
+    "fields": []
+  }
+}

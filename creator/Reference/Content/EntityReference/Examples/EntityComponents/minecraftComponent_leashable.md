@@ -21,6 +21,7 @@ Describes how this mob can be leashed to other items.
 | max_distance | *not set* | Integer number | Distance in blocks it which the leash breaks. | Allay: `10` | 
 | on_leash | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when this entity is leashed. | Ocelot: `{"event":"minecraft:on_leash","target":"self"}` | 
 | on_unleash | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when this entity is unleashed. | Ocelot: `{"event":"minecraft:on_unleash","target":"self"}` | 
+| on_unleash_interact_only | false | Boolean true/false | When set to true, "on_unleash" does not trigger when the entity gets unleashed for other reasons such as being stolen or the leash breaking. |  | 
 | presets | *not set* | Array of [Presets](#presets-item-type) items | Defines how this entity behaves when leashed to another entity. A preset is selected upon leashing and remains until the entity is leashed to something else. The first preset whose "filter" conditions are met will be applied; if none match, a default configuration is used instead. |  | 
 | soft_distance | 4 | Integer number | Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it. | Allay: `4` | 
 
