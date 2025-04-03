@@ -1,0 +1,10 @@
+{
+  "id": "query.is_selected_item",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_selected_item",
+    "title": "Is Selected Item Query",
+    "description": "Returns true if the player has selected an item in the inventory, else it returns 0.0.",
+    "fields": []
+  }
+}

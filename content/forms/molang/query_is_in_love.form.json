@@ -1,0 +1,10 @@
+{
+  "id": "query.is_in_love",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_in_love",
+    "title": "Is In Love Query",
+    "description": "Returns 1.0 if the entity is in love, else it returns 0.0.",
+    "fields": []
+  }
+}

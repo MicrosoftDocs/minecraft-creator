@@ -1,0 +1,10 @@
+{
+  "id": "query.blocking",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.blocking",
+    "title": "Blocking Query",
+    "description": "Returns 1.0 if the entity is blocking, else it returns 0.0.",
+    "fields": []
+  }
+}

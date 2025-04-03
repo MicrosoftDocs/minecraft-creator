@@ -1,0 +1,10 @@
+{
+  "id": "query.bone_orientation_trs",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.bone_orientation_trs",
+    "title": "Bone Orientation Trs Query",
+    "description": "TRS stands for Translate/Rotate/Scale.  Takes the name of the bone as an argument.  Returns the bone orientation matrix decomposed into the component translation/rotation/scale parts of the desired bone provided it exists in the queryable geometry of the mob, else this returns the identity matrix and throws a content error.  The returned value is returned as a variable of type 'struct' with members '.t', '.r', and '.s', each with members '.x', '.y', and '.z', and can be accessed as per the following example: v.my_variable = q.bone_orientation_trs('rightarm'); return v.my_variable.r.x;",
+    "fields": []
+  }
+}

@@ -1,327 +1,309 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Molang Documentation - Query Functions
-description: "A reference document detailing the query functions available via Molang"
+title: "Molang Query Functions Documentation - Molang Query Functions"
+description: "A reference document describing all current Molang Query Functions"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Molang Documentation - Query Functions
-
-Query Functions are operators that access a wide variety of information. They can return simple true/false values (1.0 or 0.0) or more complex data. See the list of functions below for per-query documentation. For query functions that do not take parameters, use: `query.function_name`. For query functions that do take parameters, use parentheses with commas separating the arguments like: `query.function_name(1, 2, 'three')`.
-
-## Example
-
-```json
-"position": [ 0.0, "query.is_baby ? -8.0 : 0.0", "query.is_baby ? 4.0 : 0.0" ]
-```
-
-## List of Entity Queries
-
-Listed below are the currently available Molang query functions in the latest retail build at the time of this writing. Not all query functions are available in respective Molang contexts (e.g., client-side animations vs. server-side animations); where possible, client-only Molang query functions are noted.
-
-| Name | Description |
-|:---------|:---------|
-| query.above_top_solid| Returns the height of the block immediately above the highest solid block at the input (x,z) position. Example: `query.above_top_solid(variable.x, variable.z)` |
-| query.actor_count| Returns the number of entities rendered in the last frame. |
-| query.all| Requires at least 3 arguments. Evaluates the first argument, then returns 1.0 if all of the following arguments evaluate to the same value as the first. Otherwise it returns 0.0. Example: `query.all(1, variable.x, variable.y)` |
-| query.all_animations_finished| Only valid in an animation controller. Returns 1.0 if all animations in the current animation controller state have played through at least once, else it returns 0.0. |
-| query.all_tags| Returns 1.0 if the item or block has all of the tags specified, else it return 0.0. |
-| query.anger_level| If available, returns the anger level of the entity as an integer value from 0 to 1 less than the `max_anger` defined on the entity, otherwise returns 0. Only returns a non-zero value in behavior packs. |
-| query.anim_time| Returns the time in seconds since the current animation started, else 0.0 if not called within an animation. |
-| query.any| Requires at least 3 arguments. Evaluates the first argument, then returns 1.0 if any of the following arguments evaluate to the same value as the first. Otherwise it returns 0.0. |
-| query.any_animation_finished| Only valid in an animation controller. Returns 1.0 if any animation in the current animation controller state has played through at least once, else it returns 0.0. |
-| query.any_tag| Returns 1.0 if the item or block has any of the tags specified, else it returns 0.0. |
-| query.approx_eq| Returns 1.0 if all of the arguments are within the smallest unit of measurement possible for the computer running this query of each other, else it returns 0.0. |
-| query.armor_color_slot| Takes the armor slot index as a parameter and returns the color value (0=Red, 1=Green, 2=Blue, 3=Alpha) of the armor in the requested slot. Valid values for the armor slot index are: 0=head, 1=chest, 2=legs, 3=feet, and 4=body.|
-| query.armor_damage_slot| Takes the armor slot index as a parameter and returns the damage value of the armor in the requested slot. Valid values for the armor slot index are: 0=head, 1=chest, 2=legs, 3=feet, and 4=body.|
-| query.armor_material_slot| Takes the armor slot index as a parameter and returns the armor material type (0=Default, 1=Enchanted, 2=Leather, 3=Enchanted Leather) in the requested armor slot. |
-| query.armor_texture_slot| Takes the armor slot index as a parameter, and returns the texture type of the requested slot. The valid values for the armor slot index are: 0=head, 1=chest, 2=legs, 3=feet, and 4=body. |
-| query.average_frame_time| Returns the time in *seconds* of the average frame time over the last `n` frames. If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.average_frame_time` (or the equivalent `query.average_frame_time(0)`) will return the frame time of the frame before the current one. `query.average_frame_time(1)` will return the average frame time of the previous two frames. Currently we store the history of the last 30 frames, although note that this may change in the future. Asking for more frames will result in only sampling the number of frames stored. |
-| query.block_face| Returns the block face for this (only valid for certain triggers such as placing blocks, or interacting with block) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
-| query.block_has_all_tags| Takes a world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided. |
-| query.block_has_any_tags| Takes a world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has any of the tags provided. |
-| query.block_neighbor_has_all_tags| Takes a block-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided. |
-| query.block_neighbor_has_any_tags| Takes a block-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has any of the tags provided. |
-| query.block_property| (No longer available in pack min_engine_version 1.20.40) Returns the value of the associated block's state. To be replaced with block_state. |
-| query.block_state| Returns the value of the associated block's Block State. |
-| query.blocking| Returns 1.0 if the entity is blocking damage, else it returns 0.0. Applies to a player blocking with a shield. |
-| query.body_x_rotation| Returns the body pitch rotation if called on an entity, else it returns 0.0. |
-| query.body_y_rotation| Returns the body yaw rotation if called on an entity, else it returns 0.0. |
-| query.bone_aabb| Returns the axis aligned bounding box of a bone as a struct with members `.min`, `.max`, along with `.x`, `.y`, and `.z` values for each. |
-| query.bone_orientation_matrix| Takes the name of the bone as an argument. Returns the bone orientation (as a matrix) of the desired bone provided it exists in the queryable geometry of the entity, else this returns the identity matrix and throws a content error. |
-| query.bone_orientation_trs| TRS stands for 'Translate/Rotate/Scale.' Takes the name of the bone as an argument. Returns the bone orientation matrix decomposed into the component translation/rotation/scale parts of the desired bone provided it exists in the queryable geometry of the entity, else this returns the identity matrix and throws a content error. The returned value is returned as a variable of type `struct` with members `.t`, `.r`, and `.s`, each with members `.x`, `.y`, and `.z`, and can be accessed as per this example: v.my_variable = q.bone_orientation_trs('rightarm'); return v.my_variable.r.x; |
-| query.bone_origin| Returns the initial (from the .geo) pivot of a bone as a struct with members `.x`, `.y`, and `.z`. |
-| query.bone_rotation| Returns the initial (from the .geo) rotation of a bone as a struct with members `.x`, `.y`, and `.z` in degrees. |
-| query.camera_distance_range_lerp| Takes two distances (any order) and return a number from 0 to 1 based on the camera distance between the two ranges clamped to that range. For example, `query.camera_distance_range_lerp(10, 20)` will return 0 for any distance less than or equal to 10, 0.2 for a distance of 12, 0.5 for 15, and 1 for 20 or greater. If you pass in (20, 10), a distance of 20 will return 0.0. |
-| query.camera_rotation| Returns the rotation of the camera. Requires one argument representing the rotation axis you would like: (0 for x, 1 for y). |
-| query.can_climb| Returns 1.0 if the entity has `can_climb` component, else it returns 0.0. Is determined by intrinsic "can climb" property of a mob.|
-| query.can_damage_nearby_mobs| Returns 1.0 if the entity can damage nearby mobs, else it returns 0.0. Applies to riptide-enchanted trident. |
-| query.can_fly| Returns 1.0 if the entity has `can_fly` component, else it returns 0.0. Applies to allay, bat, bee, ghast, parrot, wither. |
-| query.can_power_jump| Returns 1.0 if the entity has `can_power_jump` component, else it returns 0.0. |
-| query.can_swim| Returns 1.0 if the entity has `can_swim` component, else it returns 0.0. |
-| query.can_walk| Returns 1.0 if the entity has `can_walk` component, else it returns 0.0. |
-| query.cape_flap_amount| Returns value between 0.0 and 1.0 with 0.0 meaning "cape is fully down" and 1.0 means "cape is fully up." |
-| query.cardinal_block_face_placed_on| DEPRECATED (please use query.block_face instead) Returns the block face for this (only valid for on_placed_by_player trigger) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
-| query.cardinal_facing| Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
-| query.cardinal_facing_2d| Returns the current facing of the player ignoring up/down part of the direction (North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
-| query.cardinal_player_facing| Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
-| query.client_max_render_distance | Returns the max render distance in chunks of the current client. Available on the Client (Resource Packs) only. |
-| query.client_memory_tier | Returns a number representing the client RAM memory tier, 0 = 'Undetermined', 1 = 'SuperLow', 2 = 'Low', 3 = 'Mid', 4 = 'High', or 5 = 'SuperHigh'. Available on the Client (Resource Packs) only. |
-| query.combine_entities| Combines any valid entity references from all arguments into a single array. Note that order is not preserved, and duplicates and invalid values are removed. |
-| query.cooldown_time| Returns the total cooldown time in seconds for the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. Uses the same name and id that the replaceitem command takes when querying entities. |
-| query.cooldown_time_remaining| Returns the cooldown time remaining in seconds for specified cooldown type or the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. Uses the same name and id that the replaceitem command takes when querying entities. Returns highest cooldown if no parameters are supplied. |
-| query.count| Counts the number of things passed to it (arrays are counted as the number of elements they contain; non-arrays count as 1). |
-| query.current_squish_value| Returns the squish value for the current entity, or 0.0 if this doesn't make sense. Applies to slimes and magma cubes. |
-| query.day| Returns the current day of existence of the current world. When the world is first created, that is day `1`. |
-| query.death_ticks| Returns the elapsed ticks since the mob started dying. |
-| query.debug_output| Debug log a value to the output debug window for builds that have one. |
-| query.delta_time| Returns the time in seconds since the previous frame. |
-| query.distance_from_camera| Returns the distance of the root of this entity or particle emitter from the camera. |
-| query.effect_emitter_count| Returns the total number of active emitters of the callee's particle effect type. |
-| query.effect_particle_count| Returns the total number of active particles of the callee's particle effect type. |
-| query.equipment_count| Returns the number of equipped pieces of armor for an entity from 0 to 5, not counting items held in hands. (To query for hand slots, use `query.is_item_equipped` or `query.is_item_name_any`).|
-| query.equipped_item_all_tags| Takes a slot name followed by any tags you want to check for in the form of `tag_name` and returns 1 if all of the tags are on that equipped item, 0 otherwise. `query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_shovel')` |
-| query.equipped_item_any_tag| Takes a slot name followed by any tag you want to check for in the form of `tag_name` and returns 0 if none of the tags are on that equipped item or 1 if at least 1 tag exists. |
-| query.equipped_item_is_attachable| Takes the desired hand slot as a parameter (0 or `main_hand` for main hand, 1 or `off_hand` for off hand), and returns whether the item is an attachable item or not. Applies to armor. |
-| query.eye_target_x_rotation| Returns the X eye rotation of the entity, else it returns 0.0. Applies to guardian. |
-| query.eye_target_y_rotation| Returns the Y eye rotation of the entity, else it returns 0.0. Applies to guardian. |
-
-| Name | Description |
-|:---------|:---------|
-| query.facing_target_to_range_attack| Returns 1.0 if the entity is attacking from range (minecraft:behavior.ranged_attack), else it returns 0.0. |
-| query.frame_alpha| Returns the ratio (from 0 to 1) of how much between AI ticks this frame of animation is being rendered. |
-| query.get_actor_info_id| Returns the integer ID of an entity corresponding to its string name. Relates to item data fields in recipes, Applies to game versions 1.19.80 and higher. |
-| query.get_animation_frame| Returns the current texture of an item whose appearance can change (such as a drawn bow). |
-| query.get_default_bone_pivot| Gets the specified axis of the specified bone orientation pivot. |
-| query.get_equipped_item_name| DEPRECATED (Use `query.is_item_name_any` instead if possible so names can be changed later without breaking content.) Takes one optional hand slot as a parameter (0 or `main_hand` for main hand, 1 or `off_hand` for off hand), and a second parameter (0=default) if you would like the equipped item or any non-zero number for the currently rendered item, and returns the name of the item in the requested slot (defaulting to the main hand if no parameter is supplied) if there is one, otherwise returns empty. |
-| query.get_locator_offset| Gets specified axis of the specified locator offset. |
-| query.get_name| DEPRECATED (Use query.is_name_any instead if possible so names can be changed later without breaking content.) Get the name of the mob if there is one, otherwise return ``. Use only in "animations":. |
-| query.get_root_locator_offset| Gets specified axis of the specified locator offset of the root model. |
-| query.ground_speed| Returns the current ground speed of the entity in meters/second. |
-| query.had_component_group| Usable only in behavior packs when determining the default value for an entity's Property. Requires one string argument. If the entity is being loaded from data that was last saved with a component_group with the specified name, returns 1.0, otherwise returns 0.0. The purpose of this query is to allow entity definitions to change and still be able to load the correct state of entities. |
-| query.has_any_family| Returns 1 if the entity has any of the specified families, else 0. |
-| query.has_armor_slot| Takes the armor slot index (0=helmet, 1=chestplate, 2=leggings, 3=boots) as a parameter and returns 1.0 if the entity has armor in the requested slot, else it returns 0.0. |
-| query.has_biome_tag| Returns whether or not a Block Placement Target has a specific biome tag. |
-| query.has_block_property| (No longer available in pack min_engine_version 1.20.40) Returns 1.0 if the associated block has the given block state or 0.0 if not. |
-| query.has_block_state| Returns 1.0 if the associated block has the given block state or 0.0 if not. |
-| query.has_cape| Returns 1.0 if the player has a cape, else it returns 0.0. |
-| query.has_collision| Returns 1.0 if the entity has collisions enabled, else it returns 0.0. |
-| query.has_gravity| Returns 1.0 if the entity is affected by gravity, else it returns 0.0. |
-| query.has_head_gear| Returns boolean whether an entity has an item in their head armor slot or not, or false if no entity in current context. |
-| query.has_owner| Returns 1.0 if the entity has an owner ID, else it returns 0.0. Pertains to wolf. |
-| query.has_player_rider| Returns 1 if the entity has a player riding it in any seat, else it returns 0.|
-| query.has_property| Takes one argument: the name of the property on the entity. Returns 1.0 if a property with the given name exists, 0 otherwise.|
-| query.has_rider| Returns 1.0 if the entity has a rider, else it returns 0.0. |
-| query.has_target| Returns 1.0 if the entity has a target for a behavior, else it returns 0.0. |
-| query.head_roll_angle| Returns the roll angle of the head of the entity if it makes sense, else it returns 0.0. Applies to how a wolf looks at a player holding food. |
-| query.head_x_rotation| Takes one argument as a parameter. Returns the nth head x rotation of the entity if it makes sense, else it returns 0.0. |
-| query.head_y_rotation| Takes one argument as a parameter. Returns the nth head y rotation of the entity if it makes sense, else it returns 0.0. Horses, zombie horses, skeleton horses, donkeys and mules require a second parameter that clamps rotation in degrees. |
-| query.health| Returns the health of the entity, or 0.0 if it doesn't make sense to call on this entity. |
-| query.heartbeat_interval| Returns the heartbeat interval of the entity in seconds. Returns 0 when the entity has no heartbeat. |
-| query.heartbeat_phase| Returns the heartbeat phase of the entity. 0.0 if at start of current heartbeat, 1.0 if at the end. Returns 0 on errors or when the entity has no heartbeat. Available on clients (Resource Packs) only. |
-| query.heightmap| Takes two arguments: X and Z world values. Returns the world height (Y value) of the terrain at the specified position. |
-| query.hurt_direction| Returns the hurt direction for the entity, otherwise returns 0. |
-| query.hurt_time| Returns the hurt time for the entity, otherwise returns 0. |
-| query.in_range| Requires 3 numerical arguments: some value, a minimum, and a maximum. If the first argument is between the minimum and maximum (inclusive), returns 1.0. Otherwise it returns 0.0. |
-| query.invulnerable_ticks| Returns the number of ticks of invulnerability the entity has left if it makes sense, else it returns 0.0. Applies to wither.|
-
-| Name | Description |
-|:---------|:---------|
-| query.is_admiring| Returns 1.0 if the entity is admiring, else it returns 0.0. Pertains to piglin. |
-| query.is_alive| Returns 1.0 if the entity is alive, and 0.0 if it's dead. |
-| query.is_angry| Returns 1.0 if the entity is angry, else it returns 0.0. |
-| query.is_attached| Returns 1.0 if the entity is attached to another entity (such as being held or worn), else it will return 0.0. Available only with resource packs.|
-| query.is_attached_to_entity| Returns 1.0 if the entity is attached to an entity, else it will return 0.0. Pertains to player holding a fireworks rocket. |
-| query.is_avoiding_block| Returns 1.0 if the entity is fleeing from a block, else it returns 0.0. |
-| query.is_avoiding_mobs| Returns 1.0 if the entity is fleeing from mobs, else it returns 0.0. Pertains to wandering trader. |
-| query.is_baby| Returns 1.0 if the entity has `is_baby` component, else it returns 0.0. |
-| query.is_breathing| Returns 1.0 if the entity is breathing, else it returns 0.0. |
-| query.is_bribed| Returns 1.0 if the bribeable entity has been bribed, else it returns 0.0. Pertains to bribing a dolphin with a fish.|
-| query.is_carrying_block| Returns 1.0 if the entity is carrying a block, else it returns 0.0. Pertains to an Enderman carrying a block. |
-| query.is_casting| Returns 1.0 if the entity is casting, else it returns 0.0. Pertains to evoker. |
-| query.is_celebrating| Returns 1.0 if the entity is celebrating, else it returns 0.0.|
-| query.is_celebrating_special| Returns 1.0 if the entity is doing a special celebration, else it returns 0.0. Pertains to a piglin celebrating a special hunt.|
-| query.is_charged| Returns 1.0 if the entity has the `is_charged` component, else it returns 0.0. |
-| query.is_charging| Returns 1.0 if the entity is charging, else it returns 0.0. Applies to animation controller for player, vex, and drowned. |
-| query.is_chested| Returns 1.0 if the entity has has the `is_chested` component, else it returns 0.0.|
-| query.is_cooldown_type| Returns 1.0 if the specified held or worn item has the specified cooldown type name, otherwise returns 0.0. First argument is the cooldown name to check for, second argument is the equipment slot name, and if required third argument is the numerical slot id. For second and third arguments, uses the same name and id tha tthe replaceitem command takes when querying entities. |
-| query.is_critical| Returns 1.0 if the entity is at a critical level of damage, else it returns 0.0. |
-| query.is_croaking| Returns 1.0 if the entity is croaking, else it returns 0.0. |
-| query.is_dancing| Returns 1.0 if the entity is dancing, else it returns 0.0. Applies to parrot and allay. |
-| query.is_delayed_attacking| Returns 1.0 if the entity is attacking using the delayed attack, else it returns 0.0. Applies to ravager. |
-| query.is_digging| Returns 1.0 if the entity is digging, else it returns 0.0. |
-| query.is_eating| Returns 1.0 if the entity is eating, else it returns 0.0. Applies to panda.|
-| query.is_eating_mob| Returns 1.0 if the entity is eating a mob, else it returns 0.0. |
-| query.is_elder| Returns 1.0 if the entity is an elder version of it, else it returns 0.0. Applies to guardian.|
-| query.is_emerging| Returns 1.0 if the entity is emerging, else it returns 0.0. |
-| query.is_emoting| Returns 1.0 if the entity is emoting, else it returns 0.0. Applies to player. |
-| query.is_enchanted| Returns 1.0 if the entity is enchanted, else it returns 0.0. Applies to armor, bow, crossbow, shield.|
-| query.is_feeling_happy| (No longer available in pack min_engine_version 1.20.50. Deprecated) Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.|
-| query.is_fire_immune| Returns 1.0 if the entity has the `fire_immune` component, else it returns 0.0. |
-| query.is_first_person| Returns 1.0 if the entity is being rendered in first person mode, else it returns 0.0. |
-| query.is_ghost| Returns 1.0 if an entity is a ghost, else it returns 0.0. Applies to guardian.|
-| query.is_gliding| Returns 1.0 if the entity is gliding, else it returns 0.0. Applies to elytra. |
-| query.is_grazing| Returns 1.0 if the entity is grazing, or 0.0 if not. Applies to horse and sheep grazing animation.|
-| query.is_idling| Returns 1.0 if the entity is idle, else it returns 0.0. |
-| query.is_ignited| Returns 1.0 if the entity has the `is_ignited` component, else it returns 0.0. |
-| query.is_illager_captain| Returns 1.0 if the entity has the `is_illager_captain` component, else it returns 0.0. |
-| query.is_in_contact_with_water| Returns 1.0 if the entity is in contact with any water (water, rain, splash water bottle), else it returns 0.0. |
-| query.is_in_lava| Returns 1.0 if the entity is in lava, else it returns 0.0.|
-| query.is_in_love| Returns 1.0 if the entity has love hearts animation active, else it returns 0.0. |
-| query.is_in_ui| Returns 1.0 if the entity is rendered as part of the UI, else it returns 0.0. |
-| query.is_in_water| Returns 1.0 if the entity is in water, else it returns 0.0. |
-| query.is_in_water_or_rain| Returns 1.0 if the entity is in water or rain, else it returns 0.0. |
-| query.is_interested| Returns 1.0 if the entity is interested, else it returns 0.0. Applies to fox and wolf.|
-| query.is_invisible| Returns 1.0 if the entity is invisible (using render controllers), else it returns 0.0. Applies to spider, Enderman, and phantom. |
-| query.is_item_equipped| Takes one optional hand slot as a parameter (0 or `main_hand` for main hand, 1 or `off_hand` for off hand), and returns 1.0 if there is an item in the requested slot (defaulting to the main hand if no parameter is supplied), otherwise returns 0.0. |
-| query.is_item_name_any| Takes an equipment slot name (see the replaceitem command) and an optional slot index value. After that, takes one or more full name (with `namespace:`) strings to check for. Returns 1.0 if an item in the specified slot has any of the specified names, otherwise returns 0.0. An empty string `` can be specified to check for an empty slot. Note that querying slot.enderchest, slot.saddle, slot.armor, or slot.chest will only work in behavior packs. A preferred query to query.get_equipped_item_name, as it can be adjusted by Mojang to avoid breaking content if names are changed. |
-| query.is_jumping| Returns 1.0 if the entity is jumping, else it returns 0.0. |
-| query.is_laying_down| Returns 1.0 if the entity is laying down, else it returns 0.0.  |
-| query.is_laying_egg| Returns 1.0 if the entity is laying an egg, else it returns 0.0. |
-| query.is_leashed| Returns 1.0 if the entity is attached to another entity with a lead, else it returns 0.0. Pertains to the wandering trader and associated llamas. |
-| query.is_levitating| Returns 1.0 if the entity is levitating, else it returns 0.0. Pertains to how fish are animated swimming in water. |
-| query.is_lingering| Returns 1.0 if the potion type or effect is lingering, else it returns 0.0. |
-| query.is_local_player| Takes no arguments. Returns 1.0 if the entity is the local player for the current game window, else it returns 0.0. In splitscreen returns 0.0 for the other local players for other views. Always returns 0.0 if used in a behavior pack. |
-| query.is_moving| Returns 1.0 if the entity is moving, else it returns 0.0. |
-| query.is_name_any| Takes one or more arguments. If the entity's name is any of the specified string values, returns 1.0. Otherwise returns 0.0. A preferred query to query.get_name, as it can be adjusted by Mojang to avoid breaking content if names are changed. |
-| query.is_on_fire| Returns 1.0 if the entity is on fire, else it returns 0.0. |
-| query.is_on_ground| Returns 1.0 if the entity is on the ground, else it returns 0.0. |
-| query.is_on_screen| Returns 1.0 if this is called on an entity at a time when it is known if it is on screen, else it returns 0.0. |
-| query.is_onfire| Returns 1.0 if the entity is on fire, else it returns 0.0. |
-| query.is_orphaned| Returns 1.0 if the entity is orphaned, else it returns 0.0. This is part of the "sittable" component. |
-| query.is_owner_identifier_any| Takes one or more arguments. Returns whether the root entity identifier is any of the specified strings. A preferred query to query.owner_identifier, as it can be adjusted by Mojang to avoid breaking content if names are changed. |
-| query.is_persona_or_premium_skin| Returns 1.0 if the player has a persona or premium skin, else it returns 0.0. |
-| query.is_playing_dead| Returns 1.0 if the entity is playing dead, else it returns 0.0. Applies to axolotl.|
-| query.is_powered| Returns 1.0 if the entity is powered, else it returns 0.0. Applies to bee animation. |
-| query.is_pregnant| Returns 1.0 if the entity is pregnant, else it returns 0.0. Applies to turtles and frogs.|
-| query.is_ram_attacking| Returns 1.0 if the entity is using a ram attack, else it returns 0.0. Pertains to goats. |
-| query.is_resting| Returns 1.0 if the entity is resting, else it returns 0.0.Applies to bat. |
-| query.is_riding| Returns 1.0 if the entity is riding, else it returns 0.0. |
-|query.is_rising| (No longer available in pack min_engine_version 1.20.50. Deprecated.) Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.|
-| query.is_roaring| Returns 1.0 if the entity is currently roaring, else it returns 0.0. Applies to ravager and warden.|
-| query.is_rolling| Returns 1.0 if the entity is rolling, else it returns 0.0. Pertains to panda.|
-| query.is_saddled| Returns 1.0 if the entity has the `is_saddled` component, else it returns 0.0. |
-| query.is_scared| Returns 1.0 if the entity is scared, else it returns 0.0. Pertains to a panda being startled by a baby panda sneeze. |
-| query.is_scenting| (No longer available in pack min_engine_version 1.20.50.Deprecated.) Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0.|
-| query.is_searching| Returns 1.0 if the entity is searching, else it returns 0.0. |
-| query.is_selected_item| Returns true if the player has selected an item in the inventory, else it returns 0.0. |
-| query.is_shaking| Returns 1.0 if the entity is shaking, else it returns 0.0. Pertains to a hoglin, piglin, piglin brute, skeleton, strider, or villager, zombie villager |
-| query.is_shaking_wetness| Returns 1.0 if the entity is shaking water off, else it returns 0.0. Pertains to wet wolves. |
-| query.is_sheared| Returns 1.0 if the entity has the `is_sheared` component, else it returns 0.0. Applies to sheep and snow golem.|
-| query.is_shield_powered| Returns 1.0 if the entity has an active powered shield if it makes sense, else it returns 0.0. Pertains to wither boss armor. |
-| query.is_silent| Returns 1.0 if the entity is silent, else it returns 0.0. |
-| query.is_sitting| Returns 1.0 if the entity is sitting, else it returns 0.0. Pertains to fox, parrot, wolf. |
-| query.is_sleeping| Returns 1.0 if the entity is sleeping, else it returns 0.0. Pertains to fox.|
-| query.is_sneaking| Returns 1.0 if the entity is sneaking, else it returns 0.0. Pertains to fox.|
-| query.is_sneezing| Returns 1.0 if the entity is sneezing, else it returns 0.0. Applies to baby panda.|
-| query.is_sniffing| Returns 1.0 if the entity is sniffing, else it returns 0.0. |
-| query.is_sonic_boom| Returns 1.0 if the entity is using sonic boom, else it returns 0.0. |
-| query.is_sprinting| Returns 1.0 if the entity is sprinting, else it returns 0.0. Pertains to player, piglin, and rabbit. |
-| query.is_stackable| Returns 1.0 if the entity has `is_stackable` component, else it returns 0.0. |
-| query.is_stalking| Returns 1.0 if the entity is stalking, else it returns 0.0. Applies to fox.|
-| query.is_standing| Returns 1.0 if the entity is standing, else it returns 0.0. Pertains to non-grazing animation of donkey, mule, horse, skeleton horse, and zombie horse. |
-| query.is_stunned| Returns 1.0 if the entity has the `is_stunned` component, else it returns 0.0. Pertains to ravager. |
-| query.is_swimming| Returns 1.0 if the entity is swimming, else it returns 0.0. Pertains to player movement.|
-| query.is_tamed| Returns 1.0 if the entity has the `is_tamed` component, else it returns 0.0. |
-| query.is_transforming| Returns 1.0 if the entity is transforming, else it returns 0.0. Pertains to husk, or zombie. |
-| query.is_using_item| Returns 1.0 if the entity is using an item, else it returns 0.0. Applies to allay.|
-| query.is_wall_climbing| Returns 1.0 if the entity is climbing a wall, else it returns 0.0. |
-
-| Name | Description |
-|:---------|:---------|
-| query.item_in_use_duration| Returns the amount of time an item has been in use in seconds up to the maximum duration, else 0.0 if it doesn't make sense. |
-| query.item_is_charged| Takes one optional hand slot as a parameter (0 or `main_hand` for main hand, 1 or `off_hand` for off hand), and returns 1.0 if the item is charged in the requested slot (defaulting to the main hand if no parameter is supplied), otherwise returns 0.0. Pertains to crossbow.|
-| query.item_max_use_duration| Returns the maximum amount of time the item can be used, else 0.0 if it doesn't make sense. Applies to brush.|
-| query.item_remaining_use_duration| Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense. Item queried is specified by the slot name `main_hand` or `off_hand`. Time remaining is normalized using the normalization value, only if one is given, else it is returned in seconds. Applies to crossbow.|
-| query.item_slot_to_bone_name| Requires one parameter: the name of the equipment slot. This function returns the name of the bone this entity has mapped to that slot. Applies to crossbow, shield, spyglass, and trident.|
-| query.key_frame_lerp_time| Returns the ratio between the previous and next key frames in an animation. |
-| query.last_frame_time| Returns the time in *seconds* of the last frame. If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.last_frame_time` (or the equivalent `query.last_frame_time(0)`) will return the frame time of the frame before the current one. `query.last_frame_time(1)` will return the frame time of two frames ago. Currently we store the history of the last 30 frames, although note that this may change in the future. Passing an index more than the available data will return the oldest frame stored. |
-| query.last_hit_by_player| Returns 1.0 if the entity was last hit by the player, else it returns 0.0. If called by the client always returns 0.0. Relates to the `on_death` component. |
-| query.last_input_mode_is_any| Takes one or more arguments ('keyboard_and_mouse', 'touch', 'gamepad', or 'motion_controller'). If the last input used is any of the specified string values, returns 1.0. Otherwise returns 0.0. Available on the Client (Resource Packs) only. |
-| query.lie_amount| Returns the lie down amount for the entity. Applies to panda. |
-| query.life_span| Returns the limited life span of an entity, or 0.0 if it lives forever. Applies to evocation fang. |
-| query.life_time| Returns the time in seconds since the current animation started, else 0.0 if not called within an animation. |
-| query.lod_index| Takes an array of distances and returns the zero - based index of which range the entity is in based on distance from the camera. For example, `query.lod_index(10, 20, 30)` will return 0, 1, or 2 based on whether the mob is less than 10, 20, or 30 units away from the camera, or it will return 3 if it is greater than 30. |
-| query.log| Debug log a value to the content log file. |
-| query.main_hand_item_max_duration| Returns the use time maximum duration for the main hand item if it makes sense, else it returns 0.0. Used for item use computations. |
-| query.main_hand_item_use_duration| Returns the use time for the main hand item. Used for item use computations. |
-| query.mark_variant| Returns the entity's mark variant, if entity has the `mark_variant` component. |
-| query.max_durability| Returns the max durability of an item. |
-| query.max_health| Returns the maximum health of the entity, or 0.0 if it doesn't make sense to call on this entity. |
-| query.max_trade_tier| Returns the maximum trade tier of the entity if it can perform trades, else it returns 0.0. |
-| query.maximum_frame_time| Returns the time in *seconds* of the most expensive frame over the last `n` frames. If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.maximum_frame_time` (or the equivalent `query.maximum_frame_time(0)`) will return the frame time of the frame before the current one. `query.maximum_frame_time(1)` will return the maximum frame time of the previous two frames. Currently we store the history of the last 30 frames, although note that this may change in the future. Asking for more frames will result in only sampling the number of frames stored. |
-| query.minimum_frame_time| Returns the time in *seconds* of the least expensive frame over the last `n` frames. If an argument is passed, it is assumed to be the number of frames in the past that you wish to query. `query.minimum_frame_time` (or the equivalent `query.minimum_frame_time(0)`) will return the frame time of the frame before the current one. `query.minimum_frame_time(1)` will return the minimum frame time of the previous two frames. Currently we store the history of the last 30 frames, although note that this may change in the future. Asking for more frames will result in only sampling the number of frames stored. |
-| query.model_scale| Returns the scale of the current entity. Can be used with the `is_baby` component.|
-| query.modified_distance_moved| Returns the total distance the entity has moved horizontally in meters since the entity was last loaded, not necessarily since it was originally created. Distance can be affected by status flags such as `is_baby` or `on_fire`. |
-| query.modified_move_speed| Returns the current walk speed of the entity and can be modified with status flags such as `is_baby` or `on_fire.` |
-| query.moon_brightness| Returns the brightness of the moon (full_moon=1.0, waning_gibbous=0.75, first_quarter=0.5, waning_crescent=0.25, new_moon=0.0, waxing_crescent=0.25, last_quarter=0.5, waxing_gibbous=0.75). |
-| query.moon_phase| Returns the phase of the moon (full_moon=0, waning_gibbous=1, first_quarter=2, waning_crescent=3, new_moon=4, waxing_crescent=5, last_quarter=6, waxing_gibbous=7). |
-| query.movement_direction| Returns the specified axis of the normalized position delta of the entity. Pertains to elytra.|
-| query.noise| Queries Perlin Noise Map. Pertains to terrain generation. Takes x and z coordinates and generates a number that emulates a random noise pattern seen in nature. |
-| query.on_fire_time| Returns the time that the entity has been on fire, else it returns 0.0. |
-| query.out_of_control| Returns 1.0 if the entity has the `out_of_control` component, else it returns 0.0. Pertains to boats and chest boats.|
-| query.overlay_alpha| DEPRECATED (Do not use - this function is deprecated and will be removed). |
-| query.owner_identifier| DEPRECATED (Use `query.is_owner_identifier_any` instead, if possible, so names can be changed later without breaking content.) Returns the root entity identifier. Applies to attachables such as armor. |
-| query.player_level| Returns the player's experience level if the entity is a player, otherwise returns 0. |
-| query.position| Returns the absolute position of an entity. Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis). |
-| query.position_delta| Returns the position delta for an entity. Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis). Pertains to player animation. |
-| query.previous_squish_value| Returns the previous squish value for the current entity, or 0.0 if this doesn't make sense. Applies to slimes and magma cubes.  |
-| query.property| Takes one argument: The name of the property on the entity. Returns the value of that property if it exists, else 0.0 if not. |
-| query.relative_block_has_all_tags| Takes an entity-relative position and one or more tag names, and returns either 0 or 1 based on if that block at that position has all of the tags provided. |
-| query.relative_block_has_any_tags| Takes an entity-relative position and one or more tag names, and returns either 0 or 1 based on if that block at that position has any of the tags provided. |
-| query.remaining_durability| Returns the amount of durability an item has remaining. |
-| query.ride_body_x_rotation| Returns the body pitch world-rotation of the ride an entity, else it returns 0.0. |
-| query.ride_body_y_rotation| Returns the body yaw world-rotation of the ride of on an entity, else it returns 0.0. |
-| query.ride_head_x_rotation| Returns the head x world-rotation of the ride of an entity, else it returns 0.0. |
-| query.ride_head_y_rotation| Takes one optional argument as a parameter. Returns the head y world-rotation of the ride of an entity, else it returns 0.0. First parameter only for horses, zombie horses, skeleton horses, donkeys and mules that clamps rotation in degrees. |
-| query.rider_body_x_rotation| Returns the body pitch world-rotation of a valid rider at the provided index if called on an entity, else it returns 0.0. |
-| query.rider_body_y_rotation| Returns the body yaw world-rotation of a valid rider at the provided index if called on an entity, else it returns 0.0. |
-| query.rider_head_x_rotation| Takes one argument as a parameter. Returns the head x world-rotation of the rider entity at the provided index, else it returns 0.0. |
-| query.rider_head_y_rotation| Takes one or two arguments as parameters. Returns the head y world-rotation of the rider entity at the provided index, else it returns 0.0. Horses, zombie horses, skeleton horses, donkeys and mules require a second parameter that clamps rotation in degrees. |
-| query.roll_counter| Returns the roll counter of the entity. Pertains to panda.|
-| query.rotation_to_camera| Returns the rotation required to aim at the camera. Requires one argument representing the rotation axis you would like (0 for x, 1 for y) |
-| query.scoreboard| Takes one argument - the name of the scoreboard entry for this entity. Returns the specified scoreboard value for this entity. Available only with behavior packs.|
-| query.server_memory_tier | Returns a number representing the server RAM memory tier, 0 = 'SuperLow', 1 = 'Low', 2 = 'Mid', 3 = 'High', or 4 = 'SuperHigh'. Available on the server side (Behavior Packs) only. |
-
-| Name | Description |
-|:---------|:---------|
-| query.shake_angle| Returns the shaking angle of the entity if it makes sense, else it returns 0.0. Applies to wolf.|
-| query.shake_time| Returns the shake time of the entity. Applies to shot arrow, thrown trident.|
-| query.shield_blocking_bob| Returns the how much the offhand shield translates down when blocking and being hit. |
-| query.show_bottom| Returns 1.0 if we render the entity's bottom, else it returns 0.0. |
-| query.sit_amount| Returns the current sit amount of the entity. Pertains to panda. |
-| query.skin_id| Returns the entity's skin ID. Related to `skin_id` component. |
-| query.sleep_rotation| Returns the rotation of the bed the player is sleeping on. |
-| query.sneeze_counter| Returns the sneeze counter of the entity. Pertains to panda.|
-| query.spellcolor| Returns a struct representing the entity spell color for the specified entity. The struct contains `.r` `.g` `.b` and `.a` members, each 0.0 to 1.0. If no entity is specified, each member value will be 0.0. Pertains to evoker spell particles. |
-| query.standing_scale| Returns the scale of how far up the entity is standing. Pertains to polar bear. |
-| query.state_time| Only valid in an animation controller. Returns the time in seconds in the current animation controller state. |
-| query.structural_integrity| Returns the structural integrity for the entity, otherwise returns 0. Applies to minecart.|
-| query.surface_particle_color| Returns the particle color for the block located in the surface below the entity (scanned up to 10 blocks down). The struct contains `.r` `.g` `.b` and `.a` members, each 0.0 to 1.0. If no entity is specified or if no surface is found, each member value is set to 0.0. Available on clients (Resource Packs) only. |
-| query.surface_particle_texture_coordinate| Returns the texture coordinate for generating particles for the block located in the surface below the entity (scanned up to 10 blocks down) in a struct with `u` and `v` keys. If no entity is specified or if no surface is found, u and v will be 0.0. Available on clients (Resource Packs) only. |
-| query.surface_particle_texture_size| Returns the texture size for generating particles for the block located in the surface below the entity (scanned up to 10 blocks down). If no entity is specified or if no surface is found, each member value will be 0.0. Available on clients (Resource Packs) only. |
-| query.swell_amount| Returns how swollen the entity is. Applies to creeper and wither.|
-| query.swelling_dir| Returns the swelling direction of the entity if it makes sense, else it returns 0.0. Applies to overlay color of creeper preparing to explode.|
-| query.swim_amount| Returns the amount the current entity is animated as swimming.  |
-| query.tail_angle| Returns the angle of the tail of the entity if it makes sense, else it returns 0.0. Pertains to donkey, horse, mule, skeleton horse, wolf, zombie horse.|
-| query.target_x_rotation| Returns the x rotation required to aim at the entity's current target if it has one, else it returns 0.0. |
-| query.target_y_rotation| Returns the y rotation required to aim at the entity's current target if it has one, else it returns 0.0. |
-| query.texture_frame_index| Returns the icon index of the entity. Applies to experience orb. |
-| query.time_of_day| Returns the time of day (midnight=0.0, sunrise=0.25, noon=0.5, sunset=0.75) of the dimension the entity is in. |
-| query.time_since_last_vibration_detection| Returns the time in seconds since the last vibration detected by the entity. On errors or if no vibration has been detected yet, returns -1. Available on clients (Resource Packs) only. |
-| query.time_stamp| Returns the current time stamp of the level. Pertains to cod, piglin, pufferfish, tropical fish, salmon.  |
-| query.timer_flag_1| Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0.|
-| query.timer_flag_2| Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.|
-| query.timer_flag_3| Returns 1.0 if behavior.timer_flag_3 is running, else it returns 0.0.|
-| query.total_emitter_count| Returns the total number of active emitters in the world. |
-| query.total_particle_count| Returns the total number of active particles in the world. |
-| query.touch_only_affects_hotbar| Returns 1.0 if the touch input only affects the touchbar, otherwise returns 0.0. Available on the Client (Resource Packs) only. |
-| query.trade_tier| Returns the trade tier of the entity if it makes sense, else it returns 0.0. Applies to villager. |
-| query.unhappy_counter| Always returns zero. This query was originally meant to indicate panda unhappiness, but due to an early code change it has always only returned zero. |
-| query.variant| Returns the entity's variant index. Relates to `variant` component. |
-| query.vertical_speed| Returns the speed of the entity up or down in meters/second, where positive is up. |
-| query.walk_distance| Returns the total distance traveled by an entity while on the ground and not sneaking. |
-| query.wing_flap_position| Returns the wing flap position of the entity, or 0.0 if this doesn't make sense. Pertains to dragon and parrot. |
-| query.wing_flap_speed| Returns the wing flap speed of the entity, or 0.0 if this doesn't make sense. Pertains to parrot. |
-| query.yaw_speed| Returns the entity's yaw speed. Related to how an entity moves, `body_y_rotation`. |
+| Molang Query Functions | Description |
+|:-----|:----------|
+| [query.above_top_solid](queryfunctions/query_above_top_solid.md)| Returns the height of the block immediately above the highest solid block at the input (x,z) position |
+| [query.actor_count](queryfunctions/query_actor_count.md)| Returns the number of actors rendered in the last frame. |
+| [query.all](queryfunctions/query_all.md)| Requires at least 3 arguments. |
+| [query.all_animations_finished](queryfunctions/query_all_animations_finished.md)| Only valid in an animation controller. |
+| [query.all_tags](queryfunctions/query_all_tags.md)| Returns if the item or block has all of the tags specified. |
+| [query.anger_level](queryfunctions/query_anger_level.md)| Returns the anger level of the actor [0,n). |
+| [query.anim_time](queryfunctions/query_anim_time.md)| Returns the time in seconds since the current animation started, else 0.0 if not called within an animation. |
+| [query.any](queryfunctions/query_any.md)| Requires at least 3 arguments. |
+| [query.any_animation_finished](queryfunctions/query_any_animation_finished.md)| Only valid in an animation controller. |
+| [query.any_tag](queryfunctions/query_any_tag.md)| Returns if the item or block has any of the tags specified. |
+| [query.approx_eq](queryfunctions/query_approx_eq.md)| Returns 1.0 if all of the arguments are within 0.000000 of each other, else 0.0. |
+| [query.armor_color_slot](queryfunctions/query_armor_color_slot.md)| Takes the armor slot index as a parameter, and returns the color of the armor in the requested slot. |
+| [query.armor_damage_slot](queryfunctions/query_armor_damage_slot.md)| Takes the armor slot index as a parameter, and returns the damage value of the requested slot. |
+| [query.armor_material_slot](queryfunctions/query_armor_material_slot.md)| Takes the armor slot index as a parameter, and returns the armor material type in the requested armor slot. |
+| [query.armor_texture_slot](queryfunctions/query_armor_texture_slot.md)| Takes the armor slot index as a parameter, and returns the texture type of the requested slot. |
+| [query.average_frame_time](queryfunctions/query_average_frame_time.md)| Returns the time in *seconds* of the average frame time over the last 'n' frames. |
+| [query.blocking](queryfunctions/query_blocking.md)| Returns 1.0 if the entity is blocking, else it returns 0.0. |
+| [query.block_face](queryfunctions/query_block_face.md)| Returns the block face for this (only valid for certain triggers such as placing blocks, or interacting with block) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
+| [query.block_has_all_tags](queryfunctions/query_block_has_all_tags.md)| Takes a world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided. |
+| [query.block_has_any_tag](queryfunctions/query_block_has_any_tag.md)| Takes a world-origin-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has any of the tags provided. |
+| [query.block_neighbor_has_all_tags](queryfunctions/query_block_neighbor_has_all_tags.md)| Takes a block-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided. |
+| [query.block_neighbor_has_any_tag](queryfunctions/query_block_neighbor_has_any_tag.md)| Takes a block-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has any of the tags provided. |
+| [query.block_property](queryfunctions/query_block_property.md)| (No longer available in pack min_engine_version 1.20.40.) Returns the value of the associated block's Block State. |
+| [query.block_state](queryfunctions/query_block_state.md)| Returns the value of the associated block's Block State. |
+| [query.body_x_rotation](queryfunctions/query_body_x_rotation.md)| Returns the body pitch rotation if called on an actor, else it returns 0.0. |
+| [query.body_y_rotation](queryfunctions/query_body_y_rotation.md)| Returns the body yaw rotation if called on an actor, else it returns 0.0. |
+| [query.bone_aabb](queryfunctions/query_bone_aabb.md)| Returns the axis aligned bounding box of a bone as a struct with members '.min', '.max', along with '.x', '.y', and '.z' values for each. |
+| [query.bone_orientation_matrix](queryfunctions/query_bone_orientation_matrix.md)| Takes the name of the bone as an argument. |
+| [query.bone_orientation_trs](queryfunctions/query_bone_orientation_trs.md)| TRS stands for Translate/Rotate/Scale. |
+| [query.bone_origin](queryfunctions/query_bone_origin.md)| Returns the initial (from the .geo) pivot of a bone as a struct with members '.x', '.y', and '.z'. |
+| [query.bone_rotation](queryfunctions/query_bone_rotation.md)| Returns the initial (from the .geo) rotation of a bone as a struct with members '.x', '.y', and '.z' in degrees. |
+| [query.camera_distance_range_lerp](queryfunctions/query_camera_distance_range_lerp.md)| Takes two distances (any order) and return a number from 0 to 1 based on the camera distance between the two ranges clamped to that range. |
+| [query.camera_rotation](queryfunctions/query_camera_rotation.md)| Returns the rotation of the camera. |
+| [query.can_climb](queryfunctions/query_can_climb.md)| Returns 1.0 if the entity can climb, else it returns 0.0. |
+| [query.can_damage_nearby_mobs](queryfunctions/query_can_damage_nearby_mobs.md)| Returns 1.0 if the entity can damage nearby mobs, else it returns 0.0. |
+| [query.can_dash](queryfunctions/query_can_dash.md)| Returns 1.0 if the entity can dash, else it returns 0.0 |
+| [query.can_fly](queryfunctions/query_can_fly.md)| Returns 1.0 if the entity can fly, else it returns 0.0. |
+| [query.can_power_jump](queryfunctions/query_can_power_jump.md)| Returns 1.0 if the entity can power jump, else it returns 0.0. |
+| [query.can_swim](queryfunctions/query_can_swim.md)| Returns 1.0 if the entity can swim, else it returns 0.0. |
+| [query.can_walk](queryfunctions/query_can_walk.md)| Returns 1.0 if the entity can walk, else it returns 0.0. |
+| [query.cape_flap_amount](queryfunctions/query_cape_flap_amount.md)| Returns value between 0.0 and 1.0 with 0.0 meaning cape is fully down and 1.0 is cape is fully up. |
+| [query.cardinal_block_face_placed_on](queryfunctions/query_cardinal_block_face_placed_on.md)| DEPRECATED (please use query.block_face instead) Returns the block face for this (only valid for on_placed_by_player trigger) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
+| [query.cardinal_facing](queryfunctions/query_cardinal_facing.md)| Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
+| [query.cardinal_facing_2d](queryfunctions/query_cardinal_facing_2d.md)| Returns the current facing of the player ignoring up/down part of the direction (North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
+| [query.cardinal_player_facing](queryfunctions/query_cardinal_player.facing.md)| Returns the current facing of the player (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). |
+| [query.client_max_render_distance](queryfunctions/query_client_max_render_distance.md)| Returns the max render distance in chunks of the current client. |
+| [query.client_memory_tier](queryfunctions/query_client_memory_tier.md)| Returns a number representing the client RAM memory tier, 0 = 'SuperLow', 1 = 'Low', 2 = 'Mid', 3 = 'High', or 4 = 'SuperHigh'. |
+| [query.combine_entities](queryfunctions/query_combine_entities.md)| Combines any valid entity references from all arguments into a single array. |
+| [query.cooldown_time](queryfunctions/query_cooldown_time.md)| Returns the total cooldown time in seconds for the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. |
+| [query.cooldown_time_remaining](queryfunctions/query_cooldown_time_remaining.md)| Returns the cooldown time remaining in seconds for specified cooldown type or the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. |
+| [query.count](queryfunctions/query_count.md)| Counts the number of things passed to it (arrays are counted as the number of elements they contain; non-arrays count as 1). |
+| [query.current_squish_value](queryfunctions/query_current_squish_value.md)| Returns the squish value for the current entity, or 0.0 if this doesn't make sense. |
+| [query.dash_cooldown_progress](queryfunctions/query_dash_cooldown_progress.md)| (No longer available in pack min_engine_version 1.20.50.) DEPRECATED. |
+| [query.day](queryfunctions/query_day.md)| Returns the day of the current level. |
+| [query.death_ticks](queryfunctions/query_death_ticks.md)| Returns the elapsed ticks since the mob started dying. |
+| [query.debug_output](queryfunctions/query_debug_output.md)| debug log a value to the output debug window for builds that have one |
+| [query.delta_time](queryfunctions/query_delta_time.md)| Returns the time in seconds since the previous frame. |
+| [query.distance_from_camera](queryfunctions/query_distance_from_camera.md)| Returns the distance of the root of this actor or particle emitter from the camera. |
+| [query.effect_emitter_count](queryfunctions/query_effect_emitter_count.md)| Returns the total number of active emitters of the callee's particle effect type. |
+| [query.effect_particle_count](queryfunctions/query_effect_particle_count.md)| Returns the total number of active particles of the callee's particle effect type. |
+| [query.equipment_count](queryfunctions/query_equipment_count.md)| Returns the number of equipped armor pieces for an actor from 0 to 5, not counting items held in hands. |
+| [query.equipped_item_all_tags](queryfunctions/query_equipped_item_all_tags.md)| Takes a slot name followed by any tag you want to check for in the form of 'tag_name' and returns 1 if all of the tags are on that equipped item, 0 otherwise. |
+| [query.equipped_item_any_tag](queryfunctions/query_equipped_item_any_tag.md)| Takes a slot name followed by any tag you want to check for in the form of 'tag_name' and returns 0 if none of the tags are on that equipped item or 1 if at least 1 tag exists. |
+| [query.equipped_item_is_attachable](queryfunctions/query_equipped_item_is_attachable.md)| Takes the desired hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and returns whether the item is an attachable or not. |
+| [query.eye_target_x_rotation](queryfunctions/query_eye_target_x_rotation.md)| Returns the X eye rotation of the entity if it makes sense, else it returns 0.0. |
+| [query.eye_target_y_rotation](queryfunctions/query_eye_target_y_rotation.md)| Returns the Y eye rotation of the entity if it makes sense, else it returns 0.0. |
+| [query.facing_target_to_range_attack](queryfunctions/query_facing_target_to_range_attack.md)| Returns 1.0 if the entity is attacking from range (i.e. |
+| [query.frame_alpha](queryfunctions/query_frame_alpha.md)| Returns the ratio (from 0 to 1) of how much between AI ticks this frame is being rendered. |
+| [query.get_actor_info_id](queryfunctions/query_get_actor_info_id.md)| Returns the integer id of an actor by its string name. |
+| [query.get_animation_frame](queryfunctions/query_get_animation_frame.md)| Returns the current texture of the item |
+| [query.get_default_bone_pivot](queryfunctions/query_get_default_bone_pivot.md)| Gets specified axis of the specified bone orientation pivot. |
+| [query.get_equipped_item_name](queryfunctions/query_get_equipped_item_name.md)| DEPRECATED (Use query.is_item_name_any instead if possible so names can be changed later without breaking content.) Takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and a second parameter (0=default) if you would like the equipped item or any non-zero number for the currently rendered item, and returns the name of the item in the requested slot (defaulting to the main hand if no parameter is supplied) if there is one, otherwise returns ''. |
+| [query.get_locator_offset](queryfunctions/query_get_locator_offset.md)| Gets specified axis of the specified locator offset. |
+| [query.get_name](queryfunctions/query_get_name.md)| DEPRECATED (Use query.is_name_any instead if possible so names can be changed later without breaking content.)Get the name of the mob if there is one, otherwise return ''. |
+| [query.get_root_locator_offset](queryfunctions/query_get_root_locator_offset.md)| Gets specified axis of the specified locator offset of the root model. |
+| [query.graphics_mode_is_any](queryfunctions/query_graphics_mode_is_any.md)| Takes in one or more arguments ('simple', 'fancy', 'deferred', 'raytraced'). |
+| [query.ground_speed](queryfunctions/query_ground_speed.md)| Returns the ground speed of the entity in meters/second. |
+| [query.had_component_group](queryfunctions/query_had_component_group.md)| Usable only in behavior packs when determining the default value for an entity's Property. |
+| [query.has_any_family](queryfunctions/query_has_any_family.md)| Returns 1 if the entity has any of the specified families, else 0. |
+| [query.has_any_leashed_entity_of_type](queryfunctions/query_has_any_leashed_entity_of_type.md)| Returns whether or not the entity is currently leashing other entities of the designated types. |
+| [query.has_armor_slot](queryfunctions/query_has_armor_slot.md)| Takes the armor slot index as a parameter, and returns 1.0 if the entity has armor in the requested slot, else it returns 0.0. |
+| [query.has_biome_tag](queryfunctions/query_has_biome_tag.md)| Returns whether or not a Block Placement Target has a specific biome tag |
+| [query.has_block_property](queryfunctions/query_has_block_property.md)| (No longer available in pack min_engine_version 1.20.40.) Returns 1.0 if the associated block has the given block state or 0.0 if not. |
+| [query.has_block_state](queryfunctions/query_has_block_state.md)| Returns 1.0 if the associated block has the given block state or 0.0 if not. |
+| [query.has_cape](queryfunctions/query_has_cape.md)| Returns 1.0 if the player has a cape, else it returns 0.0. |
+| [query.has_collision](queryfunctions/query_has_collision.md)| Returns 1.0 if the entity has collisions enabled, else it returns 0.0. |
+| [query.has_dash_cooldown](queryfunctions/query_has_dash_cooldown.md)| Returns 1.0 if the entity has cooldown on its dash, else it returns 0.0 |
+| [query.has_gravity](queryfunctions/query_has_gravity.md)| Returns 1.0 if the entity is affected by gravity, else it returns 0.0. |
+| [query.has_head_gear](queryfunctions/query_has_head_gear.md)| Returns boolean whether an Actor has an item in their head armor slot or not, or false if no actor in current context |
+| [query.has_owner](queryfunctions/query_has_owner.md)| Returns true if the entity has an owner ID else it returns false |
+| [query.has_player_rider](queryfunctions/query_has_player.rider.md)| Returns 1 if the entity has a player riding it in any seat, else it returns 0. |
+| [query.has_property](queryfunctions/query_has_property.md)| Takes one argument: the name of the property on the Actor. |
+| [query.has_rider](queryfunctions/query_has_rider.md)| Returns 1.0 if the entity has a rider, else it returns 0.0 |
+| [query.has_target](queryfunctions/query_has_target.md)| Returns 1.0 if the entity has a target, else it returns 0.0 |
+| [query.head_roll_angle](queryfunctions/query_head_roll_angle.md)| Returns the roll angle of the head of the entity if it makes sense, else it returns 0.0. |
+| [query.head_x_rotation](queryfunctions/query_head_x_rotation.md)| Takes one argument as a parameter. |
+| [query.head_y_rotation](queryfunctions/query_head_y_rotation.md)| Takes one argument as a parameter. |
+| [query.health](queryfunctions/query_health.md)| Returns the health of the entity, or 0.0 if it doesn't make sense to call on this entity. |
+| [query.heartbeat_interval](queryfunctions/query_heartbeat_interval.md)| Returns the heartbeat interval of the actor in seconds. |
+| [query.heartbeat_phase](queryfunctions/query_heartbeat_phase.md)| Returns the heartbeat phase of the actor. |
+| [query.heightmap](queryfunctions/query_heightmap.md)| Queries Height Map |
+| [query.hurt_direction](queryfunctions/query_hurt_direction.md)| Returns the hurt direction for the actor, otherwise returns 0. |
+| [query.hurt_time](queryfunctions/query_hurt_time.md)| Returns the hurt time for the actor, otherwise returns 0. |
+| [query.invulnerable_ticks](queryfunctions/query_invulnerable_ticks.md)| Returns the number of ticks of invulnerability the entity has left if it makes sense, else it returns 0.0. |
+| [query.in_range](queryfunctions/query_in_range.md)| Requires 3 numerical arguments: some value, a minimum, and a maximum. |
+| [query.is_admiring](queryfunctions/query_is_admiring.md)| Returns 1.0 if the entity is admiring, else it returns 0.0. |
+| [query.is_alive](queryfunctions/query_is_alive.md)| Returns 1.0 if the entity is alive, and 0.0 if it's dead. |
+| [query.is_angry](queryfunctions/query_is_angry.md)| Returns 1.0 if the entity is angry, else it returns 0.0. |
+| [query.is_attached](queryfunctions/query_is_attached.md)| Returns 1.0 if the entity is attached to another entity (such as being held or worn), else it will return 0.0. |
+| [query.is_attached_to_entity](queryfunctions/query_is_attached_to_entity.md)| Returns 1.0 if the actor is attached to an entity, else it will return 0.0. |
+| [query.is_avoiding_block](queryfunctions/query_is_avoiding_block.md)| Returns 1.0 if the entity is fleeing from a block, else it returns 0.0. |
+| [query.is_avoiding_mobs](queryfunctions/query_is_avoiding_mobs.md)| Returns 1.0 if the entity is fleeing from mobs, else it returns 0.0. |
+| [query.is_baby](queryfunctions/query_is_baby.md)| Returns 1.0 if the entity is a baby, else it returns 0.0. |
+| [query.is_breathing](queryfunctions/query_is_breathing.md)| Returns 1.0 if the entity is breathing, else it returns 0.0. |
+| [query.is_bribed](queryfunctions/query_is_bribed.md)| Returns 1.0 if the entity has been bribed, else it returns 0.0. |
+| [query.is_carrying_block](queryfunctions/query_is_carrying_block.md)| Returns 1.0 if the entity is carrying a block, else it returns 0.0. |
+| [query.is_casting](queryfunctions/query_is_casting.md)| Returns 1.0 if the entity is casting, else it returns 0.0. |
+| [query.is_celebrating](queryfunctions/query_is_celebrating.md)| Returns 1.0 if the entity is celebrating, else it returns 0.0. |
+| [query.is_celebrating_special](queryfunctions/query_is_celebrating_special.md)| Returns 1.0 if the entity is doing a special celebration, else it returns 0.0. |
+| [query.is_charged](queryfunctions/query_is_charged.md)| Returns 1.0 if the entity is charged, else it returns 0.0. |
+| [query.is_charging](queryfunctions/query_is_charging.md)| Returns 1.0 if the entity is charging, else it returns 0.0. |
+| [query.is_chested](queryfunctions/query_is_chested.md)| Returns 1.0 if the entity has chests attached to it, else it returns 0.0. |
+| [query.is_cooldown_type](queryfunctions/query_is_cooldown_type.md)| Returns 1.0 if the specified held or worn item has the specified cooldown type name, otherwise returns 0.0. |
+| [query.is_crawling](queryfunctions/query_is_crawling.md)| Returns 1.0 if the entity is crawling, else it returns 0.0 |
+| [query.is_critical](queryfunctions/query_is_critical.md)| Returns 1.0 if the entity is critical, else it returns 0.0. |
+| [query.is_croaking](queryfunctions/query_is_croaking.md)| Returns 1.0 if the entity is croaking, else it returns 0.0. |
+| [query.is_dancing](queryfunctions/query_is_dancing.md)| Returns 1.0 if the entity is dancing, else it returns 0.0. |
+| [query.is_delayed_attacking](queryfunctions/query_is_delayed_attacking.md)| Returns 1.0 if the entity is attacking using the delayed attack, else it returns 0.0. |
+| [query.is_digging](queryfunctions/query_is_digging.md)| Returns 1.0 if the entity is digging, else it returns 0.0. |
+| [query.is_eating](queryfunctions/query_is_eating.md)| Returns 1.0 if the entity is eating, else it returns 0.0. |
+| [query.is_eating_mob](queryfunctions/query_is_eating_mob.md)| Returns 1.0 if the entity is eating a mob, else it returns 0.0. |
+| [query.is_elder](queryfunctions/query_is_elder.md)| Returns 1.0 if the entity is an elder version of it, else it returns 0.0. |
+| [query.is_emerging](queryfunctions/query_is_emerging.md)| Returns 1.0 if the entity is emerging, else it returns 0.0. |
+| [query.is_emoting](queryfunctions/query_is_emoting.md)| Returns 1.0 if the entity is emoting, else it returns 0.0. |
+| [query.is_enchanted](queryfunctions/query_is_enchanted.md)| Returns 1.0 if the entity is enchanted, else it returns 0.0. |
+| [query.is_feeling_happy](queryfunctions/query_is_feeling_happy.md)| (No longer available in pack min_engine_version 1.20.50.) DEPRECATED after 1.20.40. |
+| [query.is_fire_immune](queryfunctions/query_is_fire_immune.md)| Returns 1.0 if the entity is immune to fire, else it returns 0.0. |
+| [query.is_first_person](queryfunctions/query_is_first_person.md)| Returns 1.0 if the entity is being rendered in first person mode, else it returns 0.0. |
+| [query.is_ghost](queryfunctions/query_is_ghost.md)| Returns 1.0 if an entity is a ghost, else it returns 0.0. |
+| [query.is_gliding](queryfunctions/query_is_gliding.md)| Returns 1.0 if the entity is gliding, else it returns 0.0. |
+| [query.is_grazing](queryfunctions/query_is_grazing.md)| Returns 1.0 if the entity is grazing, or 0.0 if not. |
+| [query.is_idling](queryfunctions/query_is_idling.md)| Returns 1.0 if the entity is idling, else it returns 0.0. |
+| [query.is_ignited](queryfunctions/query_is_ignited.md)| Returns 1.0 if the entity is ignited, else it returns 0.0. |
+| [query.is_illager_captain](queryfunctions/query_is_illager_captain.md)| Returns 1.0 if the entity is an illager captain, else it returns 0.0. |
+| [query.is_interested](queryfunctions/query_is_interested.md)| Returns 1.0 if the entity is interested, else it returns 0.0. |
+| [query.is_invisible](queryfunctions/query_is_invisible.md)| Returns 1.0 if the entity is invisible, else it returns 0.0. |
+| [query.is_in_contact_with_water](queryfunctions/query_is_in_contact_with_water.md)| Returns 1.0 if the entity is in contact with any water (water, rain, splash water bottle), else it returns 0.0. |
+| [query.is_in_lava](queryfunctions/query_is_in_lava.md)| Returns 1.0 if the entity is in lava, else it returns 0.0. |
+| [query.is_in_love](queryfunctions/query_is_in_love.md)| Returns 1.0 if the entity is in love, else it returns 0.0. |
+| [query.is_in_ui](queryfunctions/query_is_in_ui.md)| Returns 1.0 if the entity is rendered as part of the UI, else it returns 0.0. |
+| [query.is_in_water](queryfunctions/query_is_in_water.md)| Returns 1.0 if the entity is in water, else it returns 0.0. |
+| [query.is_in_water_or_rain](queryfunctions/query_is_in_water_or_rain.md)| Returns 1.0 if the entity is in water or rain, else it returns 0.0. |
+| [query.is_item_equipped](queryfunctions/query_is_item_equipped.md)| Takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and returns 1.0 if there is an item in the requested slot (defaulting to the main hand if no parameter is supplied), otherwise returns 0.0. |
+| [query.is_item_name_any](queryfunctions/query_is_item_name_any.md)| Takes an equipment slot name (see the replaceitem command) and an optional slot index value. |
+| [query.is_jumping](queryfunctions/query_is_jumping.md)| Returns 1.0 if the entity is jumping, else it returns 0.0. |
+| [query.is_jump_goal_jumping](queryfunctions/query_is_jump.goal_jumping.md)| Returns 1.0 if the entity is doing a jump goal jump, else it returns 0.0. |
+| [query.is_laying_down](queryfunctions/query_is_laying_down.md)| Returns 1.0 if the entity is laying down, else it returns 0.0. |
+| [query.is_laying_egg](queryfunctions/query_is_laying_egg.md)| Returns 1.0 if the entity is laying an egg, else it returns 0.0. |
+| [query.is_leashed](queryfunctions/query_is_leashed.md)| Returns 1.0 if the entity is leashed to something, else it returns 0.0. |
+| [query.is_levitating](queryfunctions/query_is_levitating.md)| Returns 1.0 if the entity is levitating, else it returns 0.0. |
+| [query.is_lingering](queryfunctions/query_is_lingering.md)| Returns 1.0 if the entity is lingering, else it returns 0.0. |
+| [query.is_local_player](queryfunctions/query_is_local_player.md)| Takes no arguments. |
+| [query.is_moving](queryfunctions/query_is_moving.md)| Returns 1.0 if the entity is moving, else it returns 0.0. |
+| [query.is_name_any](queryfunctions/query_is_name_any.md)| Takes one or more arguments. |
+| [query.is_onfire](queryfunctions/query_is_onfire.md)| Returns 1.0 if the entity is on fire, else it returns 0.0. |
+| [query.is_on_fire](queryfunctions/query_is_on_fire.md)| Returns 1.0 if the entity is on fire, else it returns 0.0. |
+| [query.is_on_ground](queryfunctions/query_is_on_ground.md)| Returns 1.0 if the entity is on the ground, else it returns 0.0. |
+| [query.is_on_screen](queryfunctions/query_is_on_screen.md)| Returns 1.0 if this is called on an entity at a time when it is known if it is on screen, else it returns 0.0. |
+| [query.is_orphaned](queryfunctions/query_is_orphaned.md)| Returns 1.0 if the entity is orphaned, else it returns 0.0. |
+| [query.is_owner_identifier_any](queryfunctions/query_is_owner_identifier_any.md)| Takes one or more arguments. |
+| [query.is_persona_or_premium_skin](queryfunctions/query_is_persona_or_premium_skin.md)| Returns 1.0 if the player has a persona or premium skin, else it returns 0.0. |
+| [query.is_playing_dead](queryfunctions/query_is_playing_dead.md)| Returns 1.0 if the entity is playing dead, else it returns 0.0. |
+| [query.is_powered](queryfunctions/query_is_powered.md)| Returns 1.0 if the entity is powered, else it returns 0.0. |
+| [query.is_pregnant](queryfunctions/query_is_pregnant.md)| Returns 1.0 if the entity is pregnant, else it returns 0.0. |
+| [query.is_ram_attacking](queryfunctions/query_is_ram_attacking.md)| Returns 1.0 if the entity is using a ram attack, else it returns 0.0. |
+| [query.is_resting](queryfunctions/query_is_resting.md)| Returns 1.0 if the entity is resting, else it returns 0.0. |
+| [query.is_riding](queryfunctions/query_is_riding.md)| Returns 1.0 if the entity is riding, else it returns 0.0. |
+| [query.is_rising](queryfunctions/query_is_rising.md)| (No longer available in pack min_engine_version 1.20.50.) DEPRECATED after 1.20.40. |
+| [query.is_roaring](queryfunctions/query_is_roaring.md)| Returns 1.0 if the entity is currently roaring, else it returns 0.0. |
+| [query.is_rolling](queryfunctions/query_is_rolling.md)| Returns 1.0 if the entity is rolling, else it returns 0.0. |
+| [query.is_saddled](queryfunctions/query_is_saddled.md)| Returns 1.0 if the entity has a saddle, else it returns 0.0. |
+| [query.is_scared](queryfunctions/query_is_scared.md)| Returns 1.0 if the entity is scared, else it returns 0.0. |
+| [query.is_scenting](queryfunctions/query_is_scenting.md)| (No longer available in pack min_engine_version 1.20.50.) DEPRECATED after 1.20.40. |
+| [query.is_searching](queryfunctions/query_is_searching.md)| Returns 1.0 if the entity is searching, else it returns 0.0. |
+| [query.is_selected_item](queryfunctions/query_is_selected_item.md)| Returns true if the player has selected an item in the inventory, else it returns 0.0. |
+| [query.is_shaking](queryfunctions/query_is_shaking.md)| Returns 1.0 if the entity is casting, else it returns 0.0. |
+| [query.is_shaking_wetness](queryfunctions/query_is_shaking_wetness.md)| Returns 1.0 if the entity is shaking water off, else it returns 0.0. |
+| [query.is_sheared](queryfunctions/query_is_sheared.md)| Returns 1.0 if the entity is able to be sheared and is sheared, else it returns 0.0. |
+| [query.is_shield_powered](queryfunctions/query_is_shield_powered.md)| Returns 1.0f if the entity has an active powered shield if it makes sense, else it returns 0.0. |
+| [query.is_silent](queryfunctions/query_is_silent.md)| Returns 1.0 if the entity is silent, else it returns 0.0. |
+| [query.is_sitting](queryfunctions/query_is_sitting.md)| Returns 1.0 if the entity is sitting, else it returns 0.0. |
+| [query.is_sleeping](queryfunctions/query_is_sleeping.md)| Returns 1.0 if the entity is sleeping, else it returns 0.0. |
+| [query.is_sneaking](queryfunctions/query_is_sneaking.md)| Returns 1.0 if the entity is sneaking, else it returns 0.0. |
+| [query.is_sneezing](queryfunctions/query_is_sneezing.md)| Returns 1.0 if the entity is sneezing, else it returns 0.0. |
+| [query.is_sniffing](queryfunctions/query_is_sniffing.md)| Returns 1.0 if the entity is sniffing, else it returns 0.0. |
+| [query.is_sonic_boom](queryfunctions/query_is_sonic_boom.md)| Returns 1.0 if the entity is using sonic boom, else it returns 0.0. |
+| [query.is_spectator](queryfunctions/query_is_spectator.md)| Returns 1.0 if the entity is spectator, else it returns 0.0. |
+| [query.is_sprinting](queryfunctions/query_is_sprinting.md)| Returns 1.0 if the entity is sprinting, else it returns 0.0. |
+| [query.is_stackable](queryfunctions/query_is_stackable.md)| Returns 1.0 if the entity is stackable, else it returns 0.0. |
+| [query.is_stalking](queryfunctions/query_is_stalking.md)| Returns 1.0 if the entity is stalking, else it returns 0.0. |
+| [query.is_standing](queryfunctions/query_is_standing.md)| Returns 1.0 if the entity is standing, else it returns 0.0. |
+| [query.is_stunned](queryfunctions/query_is_stunned.md)| Returns 1.0 if the entity is currently stunned, else it returns 0.0. |
+| [query.is_swimming](queryfunctions/query_is_swimming.md)| Returns 1.0 if the entity is swimming, else it returns 0.0. |
+| [query.is_tamed](queryfunctions/query_is_tamed.md)| Returns 1.0 if the entity is tamed, else it returns 0.0. |
+| [query.is_transforming](queryfunctions/query_is_transforming.md)| Returns 1.0 if the entity is transforming, else it returns 0.0. |
+| [query.is_using_item](queryfunctions/query_is_using_item.md)| Returns 1.0 if the entity is using an item, else it returns 0.0. |
+| [query.is_wall_climbing](queryfunctions/query_is_wall_climbing.md)| Returns 1.0 if the entity is climbing a wall, else it returns 0.0. |
+| [query.item_in_use_duration](queryfunctions/query_item_in_use_duration.md)| Returns the amount of time an item has been in use in seconds up to the maximum duration, else 0.0 if it doesn't make sense. |
+| [query.item_is_charged](queryfunctions/query_item_is_charged.md)| Takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and returns 1.0 if the item is charged in the requested slot (defaulting to the main hand if no parameter is supplied), otherwise returns 0.0. |
+| [query.item_max_use_duration](queryfunctions/query_item_max_use_duration.md)| Returns the maximum amount of time the item can be used, else 0.0 if it doesn't make sense. |
+| [query.item_remaining_use_duration](queryfunctions/query_item_remaining_use_duration.md)| Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense.Item queried is specified by the slot name 'main_hand' or 'off_hand'.Time remaining is normalized using the normalization value, only if one is given, else it is returned in seconds. |
+| [query.item_slot_to_bone_name](queryfunctions/query_item_slot_to_bone_name.md)| query.item_slot_to_bone_name requires one parameter: the name of the equipment slot. |
+| [query.key_frame_lerp_time](queryfunctions/query_key_frame_lerp_time.md)| Returns the ratio between the previous and next key frames. |
+| [query.last_frame_time](queryfunctions/query_last_frame_time.md)| Returns the time in *seconds* of the last frame. |
+| [query.last_hit_by_player](queryfunctions/query_last_hit_by_player.md)| Returns 1.0 if the entity was last hit by the player, else it returns 0.0. |
+| [query.last_input_mode_is_any](queryfunctions/query_last_input_mode_is_any.md)| Takes one or more arguments ('keyboard_and_mouse', 'touch', 'gamepad', or 'motion_controller'). |
+| [query.leashed_entity_count](queryfunctions/query_leashed_entity_count.md)| Returns the number of entities for which this entity is the leash holder. |
+| [query.lie_amount](queryfunctions/query_lie_amount.md)| Returns the lie down amount for the entity. |
+| [query.life_span](queryfunctions/query_life_span.md)| Returns the limited life span of an entity, or 0.0 if it lives forever |
+| [query.life_time](queryfunctions/query_life_time.md)| Returns the time in seconds since the current animation started, else 0.0 if not called within an animation. |
+| [query.log](queryfunctions/query_log.md)| debug log a value to the content log |
+| [query.main_hand_item_max_duration](queryfunctions/query_main_hand_item_max_duration.md)| Returns the use time maximum duration for the main hand item if it makes sense, else it returns 0.0. |
+| [query.main_hand_item_use_duration](queryfunctions/query_main_hand_item_use_duration.md)| Returns the use time for the main hand item. |
+| [query.mark_variant](queryfunctions/query_mark_variant.md)| Returns the entity's mark variant |
+| [query.maximum_frame_time](queryfunctions/query_maximum_frame_time.md)| Returns the time in *seconds* of the most expensive frame over the last 'n' frames. |
+| [query.max_durability](queryfunctions/query_max_durability.md)| Returns the max durability an item can take. |
+| [query.max_health](queryfunctions/query_max_health.md)| Returns the maximum health of the entity, or 0.0 if it doesn't make sense to call on this entity. |
+| [query.max_trade_tier](queryfunctions/query_max_trade_tier.md)| Returns the maximum trade tier of the entity if it makes sense, else it returns 0.0 |
+| [query.minimum_frame_time](queryfunctions/query_minimum_frame_time.md)| Returns the time in *seconds* of the least expensive frame over the last 'n' frames. |
+| [query.model_scale](queryfunctions/query_model_scale.md)| Returns the scale of the current entity. |
+| [query.modified_distance_moved](queryfunctions/query_modified_distance_moved.md)| Returns the total distance the entity has moved horizontally in meters (since the entity was last loaded, not necessarily since it was originally created) modified along the way by status flags such as is_baby or on_fire. |
+| [query.modified_move_speed](queryfunctions/query_modified_move_speed.md)| Returns the current walk speed of the entity modified by status flags such as is_baby or on_fire. |
+| [query.moon_brightness](queryfunctions/query_moon_brightness.md)| Returns the brightness of the moon (FULL_MOON=1.0, WANING_GIBBOUS=0.75, FIRST_QUARTER=0.5, WANING_CRESCENT=0.25, NEW_MOON=0.0, WAXING_CRESCENT=0.25, LAST_QUARTER=0.5, WAXING_GIBBOUS=0.75). |
+| [query.moon_phase](queryfunctions/query_moon_phase.md)| Returns the phase of the moon (FULL_MOON=0, WANING_GIBBOUS=1, FIRST_QUARTER=2, WANING_CRESCENT=3, NEW_MOON=4, WAXING_CRESCENT=5, LAST_QUARTER=6, WAXING_GIBBOUS=7). |
+| [query.movement_direction](queryfunctions/query_movement.direction.md)| Returns the specified axis of the normalized position delta of the entity. |
+| [query.noise](queryfunctions/query_noise.md)| Queries Perlin Noise Map |
+| [query.on_fire_time](queryfunctions/query_on_fire_time.md)| Returns the time that the entity is on fire, else it returns 0.0. |
+| [query.out_of_control](queryfunctions/query_out_of_control.md)| Returns 1.0 if the entity is out of control, else it returns 0.0. |
+| [query.overlay_alpha](queryfunctions/query_overlay_alpha.md)| DEPRECATED (Do not use - this function is deprecated and will be removed). |
+| [query.owner_identifier](queryfunctions/query_owner_identifier.md)| DEPRECATED (Use query.is_owner_identifier_any instead if possible so names can be changed later without breaking content.) Returns the root actor identifier. |
+| [query.player_level](queryfunctions/query_player.level.md)| Returns the players level if the actor is a player, otherwise returns 0. |
+| [query.position](queryfunctions/query_position.md)| Returns the absolute position of an actor. |
+| [query.position_delta](queryfunctions/query_position_delta.md)| Returns the position delta for an actor. |
+| [query.previous_squish_value](queryfunctions/query_previous_squish_value.md)| Returns the previous squish value for the current entity, or 0.0 if this doesn't make sense. |
+| [query.property](queryfunctions/query_property.md)| Takes one argument: the name of the property on the entity. |
+| [query.relative_block_has_all_tags](queryfunctions/query_relative_block_has_all_tags.md)| Takes an entity-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has all of the tags provided. |
+| [query.relative_block_has_any_tag](queryfunctions/query_relative_block_has_any_tag.md)| Takes an entity-relative position and one or more tag names, and returns either 0 or 1 based on if the block at that position has any of the tags provided. |
+| [query.remaining_durability](queryfunctions/query_remaining_durability.md)| Returns how much durability an item has remaining. |
+| [query.rider_body_x_rotation](queryfunctions/query_rider_body_x_rotation.md)| Returns the body pitch world-rotation of a valid rider at the provided index if called on an entity, else it returns 0.0. |
+| [query.rider_body_y_rotation](queryfunctions/query_rider_body_y_rotation.md)| Returns the body yaw world-rotation of a valid rider at the provided index if called on an entity, else it returns 0.0. |
+| [query.rider_head_x_rotation](queryfunctions/query_rider_head_x_rotation.md)| Takes one argument as a parameter. |
+| [query.rider_head_y_rotation](queryfunctions/query_rider_head_y_rotation.md)| Takes one or two arguments as parameters. |
+| [query.ride_body_x_rotation](queryfunctions/query_ride_body_x_rotation.md)| Returns the body pitch world-rotation of the ride an entity, else it returns 0.0. |
+| [query.ride_body_y_rotation](queryfunctions/query_ride_body_y_rotation.md)| Returns the body yaw world-rotation of the ride of on an entity, else it returns 0.0. |
+| [query.ride_head_x_rotation](queryfunctions/query_ride_head_x_rotation.md)| Returns the head x world-rotation of the ride of an entity, else it returns 0.0. |
+| [query.ride_head_y_rotation](queryfunctions/query_ride_head_y_rotation.md)| Takes one optional argument as a parameter. |
+| [query.roll_counter](queryfunctions/query_roll_counter.md)| Returns the roll counter of the entity. |
+| [query.rotation_to_camera](queryfunctions/query_rotation_to_camera.md)| Returns the rotation required to aim at the camera. |
+| [query.scoreboard](queryfunctions/query_scoreboard.md)| Takes one argument - the name of the scoreboard entry for this entity. |
+| [query.server_memory_tier](queryfunctions/query_server_memory_tier.md)| Returns a number representing the server RAM memory tier, 0 = 'SuperLow', 1 = 'Low', 2 = 'Mid', 3 = 'High', or 4 = 'SuperHigh'. |
+| [query.shake_angle](queryfunctions/query_shake_angle.md)| Returns the shaking angle of the entity if it makes sense, else it returns 0.0. |
+| [query.shake_time](queryfunctions/query_shake_time.md)| Returns the shake time of the entity. |
+| [query.shield_blocking_bob](queryfunctions/query_shield_blocking_bob.md)| Returns the how much the offhand shield should translate down when blocking and being hit. |
+| [query.show_bottom](queryfunctions/query_show_bottom.md)| Returns 1.0 if we render the entity's bottom, else it returns 0.0. |
+| [query.sit_amount](queryfunctions/query_sit_amount.md)| Returns the current sit amount of the entity. |
+| [query.skin_id](queryfunctions/query_skin_id.md)| Returns the entity's skin ID |
+| [query.sleep_rotation](queryfunctions/query_sleep_rotation.md)| Returns the rotation of the bed the player is sleeping on. |
+| [query.sneeze_counter](queryfunctions/query_sneeze_counter.md)| Returns the sneeze counter of the entity. |
+| [query.spellcolor](queryfunctions/query_spellcolor.md)| Returns a struct representing the entity spell color for the specified entity. |
+| [query.standing_scale](queryfunctions/query_standing_scale.md)| Returns the scale of how standing up the entity is. |
+| [query.state_time](queryfunctions/query_state_time.md)| Only valid in an animation controller. |
+| [query.structural_integrity](queryfunctions/query_structural_integrity.md)| Returns the structural integrity for the actor, otherwise returns 0. |
+| [query.surface_particle_color](queryfunctions/query_surface_particle_color.md)| Returns the particle color for the block located in the surface below the actor (scanned up to 10 blocks down). |
+| [query.surface_particle_texture_coordinate](queryfunctions/query_surface_particle_texture_coordinate.md)| Returns the texture coordinate for generating particles for the block located in the surface below the actor (scanned up to 10 blocks down) in a struct with 'u' and 'v' keys. |
+| [query.surface_particle_texture_size](queryfunctions/query_surface_particle_texture_size.md)| Returns the texture size for generating particles for the block located in the surface below the actor (scanned up to 10 blocks down). |
+| [query.swelling_dir](queryfunctions/query_swelling_dir.md)| Returns the swelling direction of the entity if it makes sense, else it returns 0.0. |
+| [query.swell_amount](queryfunctions/query_swell_amount.md)| Returns how swollen the entity is. |
+| [query.swim_amount](queryfunctions/query_swim_amount.md)| Returns the amount the current entity is swimming. |
+| [query.tail_angle](queryfunctions/query_tail_angle.md)| Returns the angle of the tail of the entity if it makes sense, else it returns 0.0. |
+| [query.target_x_rotation](queryfunctions/query_target_x_rotation.md)| Returns the x rotation required to aim at the entity's current target if it has one, else it returns 0.0. |
+| [query.target_y_rotation](queryfunctions/query_target_y_rotation.md)| Returns the y rotation required to aim at the entity's current target if it has one, else it returns 0.0. |
+| [query.timer_flag_1](queryfunctions/query_timer_flag_1.md)| Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0. |
+| [query.timer_flag_2](queryfunctions/query_timer_flag_2.md)| Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0. |
+| [query.timer_flag_3](queryfunctions/query_timer_flag_3.md)| Returns 1.0 if behavior.timer_flag_3 is running, else it returns 0.0. |
+| [query.time_of_day](queryfunctions/query_time_of_day.md)| Returns the time of day (midnight=0.0, sunrise=0.25, noon=0.5, sunset=0.75) of the dimension the entity is in. |
+| [query.time_since_last_vibration_detection](queryfunctions/query_time_since_last_vibration_detection.md)| Returns the time in seconds since the last vibration detected by the actor. |
+| [query.time_stamp](queryfunctions/query_time_stamp.md)| Returns the current time stamp of the level |
+| [query.total_emitter_count](queryfunctions/query_total_emitter_count.md)| Returns the total number of active emitters in the world. |
+| [query.total_particle_count](queryfunctions/query_total_particle_count.md)| Returns the total number of active particles in the world. |
+| [query.touch_only_affects_hotbar](queryfunctions/query_touch_only_affects_hotbar.md)| Returns 1.0 if the touch input only affects the touchbar, otherwise returns 0.0. |
+| [query.trade_tier](queryfunctions/query_trade_tier.md)| Returns the trade tier of the entity if it makes sense, else it returns 0.0 |
+| [query.unhappy_counter](queryfunctions/query_unhappy_counter.md)| Always returns zero. |
+| [query.variant](queryfunctions/query_variant.md)| Returns the entity's variant index |
+| [query.vertical_speed](queryfunctions/query_vertical_speed.md)| Returns the speed of the entity up or down in meters/second, where positive is up. |
+| [query.walk_distance](queryfunctions/query_walk_distance.md)| Returns the total distance traveled by an entity while on the ground and not sneaking. |
+| [query.wing_flap_position](queryfunctions/query_wing_flap_position.md)| Returns the wing flap position of the entity, or 0.0 if this doesn't make sense. |
+| [query.wing_flap_speed](queryfunctions/query_wing_flap_speed.md)| Returns the wing flap speed of the entity, or 0.0 if this doesn't make sense. |
+| [query.yaw_speed](queryfunctions/query_yaw_speed.md)| Returns the entity's yaw speed |

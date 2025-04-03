@@ -40,12 +40,12 @@ Fetch a [*@minecraft/server.BlockLocationIterator*](../../../scriptapi/minecraft
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getBoundingBox**
 `
-getBoundingBox(): BoundingBox
+getBoundingBox(): BlockBoundingBox
 `
 
-Return a [*@minecraft/server.BoundingBox*](../../../scriptapi/minecraft/server/BoundingBox.md) object which represents the validated min and max coordinates of the volume
+Return a [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) object which represents the validated min and max coordinates of the volume
 
-**Returns** [*BoundingBox*](BoundingBox.md)
+**Returns** [*BlockBoundingBox*](BlockBoundingBox.md)
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

@@ -379,16 +379,21 @@ Entity eats a block
 Entity is on full puff
 - `minecraft:on_half_puff`
 Entity is on half puff
+- `minecraft:on_harnessed`
 - `minecraft:on_hurt_event`
 Entity is hurt
 - `minecraft:on_instant_prime`
 Entity is instantly primed
 - `minecraft:on_leash`
 Entity is on a leash
+- `minecraft:on_no_player_detected_above`
 - `minecraft:on_normal_puff`
 Entity is on a normal puff
 - `minecraft:on_not_riding_player`
 Entity is on a non-riding player
+- `minecraft:on_passenger_dismount`
+- `minecraft:on_passenger_mount`
+- `minecraft:on_player_detected_above`
 - `minecraft:on_prime`
 Entity is primed
 - `minecraft:on_riding_player`
@@ -399,14 +404,17 @@ Entity is saddled
 Entity is scared
 - `minecraft:on_sheared`
 Entity is sheared
+- `minecraft:on_stop_tempting`
 - `minecraft:on_tame`
 Entity is tamed
 - `minecraft:on_target_start_looking`
 - `minecraft:on_target_stop_looking`
 - `minecraft:on_trust`
 Entity trusts
+- `minecraft:on_unharnessed`
 - `minecraft:on_unleash`
 Entity is unleashed
+- `minecraft:on_unleashed`
 - `minecraft:panda_aggressive`
 Panda is in an aggressive state
 - `minecraft:panda_brown`

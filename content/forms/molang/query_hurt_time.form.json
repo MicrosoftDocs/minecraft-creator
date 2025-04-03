@@ -1,0 +1,10 @@
+{
+  "id": "query.hurt_time",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.hurt_time",
+    "title": "Hurt Time Query",
+    "description": "Returns the hurt time for the actor, otherwise returns 0.",
+    "fields": []
+  }
+}

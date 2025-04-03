@@ -1,0 +1,10 @@
+{
+  "id": "query.has_armor_slot",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.has_armor_slot",
+    "title": "Has Armor Slot Query",
+    "description": "Takes the armor slot index as a parameter, and returns 1.0 if the entity has armor in the requested slot, else it returns 0.0. The valid values for the armor slot index are 0 (head), 1 (chest), 2 (legs) and 3 (feet).",
+    "fields": []
+  }
+}

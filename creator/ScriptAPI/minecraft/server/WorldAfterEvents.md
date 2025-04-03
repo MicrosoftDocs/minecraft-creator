@@ -283,7 +283,6 @@ Type: [*PlayerBreakBlockAfterEventSignal*](PlayerBreakBlockAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerButtonInput**
 `read-only playerButtonInput: PlayerButtonInputAfterEventSignal;`
 
@@ -291,12 +290,8 @@ This event fires when an [*@minecraft/server.InputButton*](../../../scriptapi/mi
 
 Type: [*PlayerButtonInputAfterEventSignal*](PlayerButtonInputAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **playerDimensionChange**
 `read-only playerDimensionChange: PlayerDimensionChangeAfterEventSignal;`

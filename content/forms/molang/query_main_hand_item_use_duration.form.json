@@ -1,0 +1,10 @@
+{
+  "id": "query.main_hand_item_use_duration",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.main_hand_item_use_duration",
+    "title": "Main Hand Item Use Duration Query",
+    "description": "Returns the use time for the main hand item.",
+    "fields": []
+  }
+}

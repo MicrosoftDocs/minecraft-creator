@@ -1,0 +1,10 @@
+{
+  "id": "query.is_croaking",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_croaking",
+    "title": "Is Croaking Query",
+    "description": "Returns 1.0 if the entity is croaking, else it returns 0.0.",
+    "fields": []
+  }
+}

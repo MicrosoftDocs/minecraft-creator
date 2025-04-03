@@ -4,6 +4,7 @@
   "scalarField": {
     "id": "_breathability",
     "title": "Breathable as",
+    "defaultValue": "solid",
     "dataType": 2,
     "mustMatchChoices": true,
     "choices": [

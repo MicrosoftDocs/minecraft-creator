@@ -1,0 +1,10 @@
+{
+  "id": "query.skin_id",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.skin_id",
+    "title": "Skin Id Query",
+    "description": "Returns the entity's skin ID",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.can_fly",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.can_fly",
+    "title": "Can Fly Query",
+    "description": "Returns 1.0 if the entity can fly, else it returns 0.0.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.has_owner",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.has_owner",
+    "title": "Has Owner Query",
+    "description": "Returns true if the entity has an owner ID else it returns false",
+    "fields": []
+  }
+}

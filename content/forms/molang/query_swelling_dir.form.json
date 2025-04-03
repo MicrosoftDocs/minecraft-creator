@@ -1,0 +1,10 @@
+{
+  "id": "query.swelling_dir",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.swelling_dir",
+    "title": "Swelling Dir Query",
+    "description": "Returns the swelling direction of the entity if it makes sense, else it returns 0.0.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.is_laying_down",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_laying_down",
+    "title": "Is Laying Down Query",
+    "description": "Returns 1.0 if the entity is laying down, else it returns 0.0.",
+    "fields": []
+  }
+}

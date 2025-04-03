@@ -1,0 +1,10 @@
+{
+  "id": "query.is_resting",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_resting",
+    "title": "Is Resting Query",
+    "description": "Returns 1.0 if the entity is resting, else it returns 0.0.",
+    "fields": []
+  }
+}

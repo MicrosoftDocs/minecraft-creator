@@ -1,0 +1,10 @@
+{
+  "id": "query.is_interested",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_interested",
+    "title": "Is Interested Query",
+    "description": "Returns 1.0 if the entity is interested, else it returns 0.0.",
+    "fields": []
+  }
+}

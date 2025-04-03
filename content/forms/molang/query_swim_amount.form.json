@@ -1,0 +1,10 @@
+{
+  "id": "query.swim_amount",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.swim_amount",
+    "title": "Swim Amount Query",
+    "description": "Returns the amount the current entity is swimming.",
+    "fields": []
+  }
+}

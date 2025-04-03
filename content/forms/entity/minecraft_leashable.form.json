@@ -114,6 +114,13 @@
         }
       },
       {
+        "id": "on_unleash_interact_only",
+        "title": "On Unleash Interact Only",
+        "description": "When set to true, \"on_unleash\" does not trigger when the entity gets unleashed for other reasons such as being stolen or the leash breaking.",
+        "defaultValue": false,
+        "dataType": 1
+      },
+      {
         "id": "presets",
         "title": "Presets",
         "description": "Defines how this entity behaves when leashed to another entity. A preset is selected upon leashing and remains until the entity is leashed to something else. The first preset whose \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",

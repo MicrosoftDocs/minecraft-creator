@@ -1,0 +1,210 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server.BlockBoundingBoxUtils Class
+description: Contents of the @minecraft/server.BlockBoundingBoxUtils class.
+monikerRange: "=minecraft-bedrock-experimental"
+---
+# BlockBoundingBoxUtils Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Bounding Box Utils is a utility class that provides a number of useful functions for the creation and utility of [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) objects
+
+## Methods
+- [createValid](#createvalid)
+- [dilate](#dilate)
+- [equals](#equals)
+- [expand](#expand)
+- [getCenter](#getcenter)
+- [getIntersection](#getintersection)
+- [getSpan](#getspan)
+- [intersects](#intersects)
+- [isInside](#isinside)
+- [isValid](#isvalid)
+- [translate](#translate)
+
+### **createValid**
+`
+static createValid(min: Vector3, max: Vector3): BlockBoundingBox
+`
+
+Create a validated instance of a [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) where the min and max components are guaranteed to be (min <= max)
+
+#### **Parameters**
+- **min**: [*Vector3*](Vector3.md)
+  
+  A corner world location
+- **max**: [*Vector3*](Vector3.md)
+  
+  A corner world location diametrically opposite
+
+**Returns** [*BlockBoundingBox*](BlockBoundingBox.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **dilate**
+`
+static dilate(box: BlockBoundingBox, size: Vector3): BlockBoundingBox
+`
+
+Expand a [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) by a given amount along each axis.
+
+Sizes can be negative to perform contraction.
+
+Note: corners can be inverted if the contraction size is greater than the span, but the min/max relationship will remain correct
+
+#### **Parameters**
+- **box**: [*BlockBoundingBox*](BlockBoundingBox.md)
+- **size**: [*Vector3*](Vector3.md)
+
+**Returns** [*BlockBoundingBox*](BlockBoundingBox.md) - Return a new [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) object representing the changes
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **equals**
+`
+static equals(box: BlockBoundingBox, other: BlockBoundingBox): boolean
+`
+
+Check if two [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) objects are identical
+
+#### **Parameters**
+- **box**: [*BlockBoundingBox*](BlockBoundingBox.md)
+- **other**: [*BlockBoundingBox*](BlockBoundingBox.md)
+
+**Returns** *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **expand**
+`
+static expand(box: BlockBoundingBox, other: BlockBoundingBox): BlockBoundingBox
+`
+
+Expand the initial box object bounds to include the 2nd box argument.  The resultant [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) object will be a BlockBoundingBox which exactly encompasses the two boxes.
+
+#### **Parameters**
+- **box**: [*BlockBoundingBox*](BlockBoundingBox.md)
+- **other**: [*BlockBoundingBox*](BlockBoundingBox.md)
+
+**Returns** [*BlockBoundingBox*](BlockBoundingBox.md) - A new [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) instance representing the smallest possible bounding box which can encompass both
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **getCenter**
+`
+static getCenter(box: BlockBoundingBox): Vector3
+`
+
+Calculate the center block of a given [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) object.  
+
+#### **Parameters**
+- **box**: [*BlockBoundingBox*](BlockBoundingBox.md)
+
+**Returns** [*Vector3*](Vector3.md) - Note that [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BlockBoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected) - Note that [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) objects represent whole blocks, so the center of boxes which have odd numbered bounds are not mathematically centered...,i.e. a BlockBoundingBox( 0,0,0 -> 3,3,3 )  would have a center of (1,1,1)  (not (1.5, 1.5, 1.5) as expected)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **getIntersection**
+`
+static getIntersection(box: BlockBoundingBox, other: BlockBoundingBox): BlockBoundingBox | undefined
+`
+
+Calculate the BlockBoundingBox which represents the union area of two intersecting BlockBoundingBoxes
+
+#### **Parameters**
+- **box**: [*BlockBoundingBox*](BlockBoundingBox.md)
+- **other**: [*BlockBoundingBox*](BlockBoundingBox.md)
+
+**Returns** [*BlockBoundingBox*](BlockBoundingBox.md) | *undefined*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **getSpan**
+`
+static getSpan(box: BlockBoundingBox): Vector3
+`
+
+Get the Span of each of the BlockBoundingBox Axis components
+
+#### **Parameters**
+- **box**: [*BlockBoundingBox*](BlockBoundingBox.md)
+
+**Returns** [*Vector3*](Vector3.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **intersects**
+`
+static intersects(box: BlockBoundingBox, other: BlockBoundingBox): boolean
+`
+
+Check to see if two BlockBoundingBox objects intersect
+
+#### **Parameters**
+- **box**: [*BlockBoundingBox*](BlockBoundingBox.md)
+- **other**: [*BlockBoundingBox*](BlockBoundingBox.md)
+
+**Returns** *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **isInside**
+`
+static isInside(box: BlockBoundingBox, pos: Vector3): boolean
+`
+
+Check to see if a given coordinate is inside a BlockBoundingBox
+
+#### **Parameters**
+- **box**: [*BlockBoundingBox*](BlockBoundingBox.md)
+- **pos**: [*Vector3*](Vector3.md)
+
+**Returns** *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **isValid**
+`
+static isValid(box: BlockBoundingBox): boolean
+`
+
+Check to see if a BlockBoundingBox is valid (i.e. (min <= max))
+
+#### **Parameters**
+- **box**: [*BlockBoundingBox*](BlockBoundingBox.md)
+
+**Returns** *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **translate**
+`
+static translate(box: BlockBoundingBox, delta: Vector3): BlockBoundingBox
+`
+
+Move a BlockBoundingBox by a given amount
+
+#### **Parameters**
+- **box**: [*BlockBoundingBox*](BlockBoundingBox.md)
+- **delta**: [*Vector3*](Vector3.md)
+
+**Returns** [*BlockBoundingBox*](BlockBoundingBox.md) - Return a new BlockBoundingBox object which represents the change
+  
+Notes:
+- This function can't be called in read-only mode.

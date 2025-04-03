@@ -36,14 +36,9 @@ Notes:
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [getButtonState](#getbuttonstate)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getMovementVector](#getmovementvector)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getButtonState**
 `
 getButtonState(button: InputButton): ButtonState
@@ -53,27 +48,18 @@ getButtonState(button: InputButton): ButtonState
 - **button**: [*InputButton*](InputButton.md)
 
 **Returns** [*ButtonState*](ButtonState.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getMovementVector**
 `
 getMovementVector(): Vector2
 `
 
 **Returns** [*Vector2*](Vector2.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end

@@ -1,0 +1,10 @@
+{
+  "id": "query.is_charging",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_charging",
+    "title": "Is Charging Query",
+    "description": "Returns 1.0 if the entity is charging, else it returns 0.0.",
+    "fields": []
+  }
+}

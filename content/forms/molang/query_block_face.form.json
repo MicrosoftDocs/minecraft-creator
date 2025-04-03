@@ -1,0 +1,10 @@
+{
+  "id": "query.block_face",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.block_face",
+    "title": "Block Face Query",
+    "description": "Returns the block face for this (only valid for certain triggers such as placing blocks, or interacting with block) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0).",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.model_scale",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.model_scale",
+    "title": "Model Scale Query",
+    "description": "Returns the scale of the current entity.",
+    "fields": []
+  }
+}

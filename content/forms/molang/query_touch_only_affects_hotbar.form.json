@@ -1,0 +1,10 @@
+{
+  "id": "query.touch_only_affects_hotbar",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.touch_only_affects_hotbar",
+    "title": "Touch Only Affects Hotbar Query",
+    "description": "Returns 1.0 if the touch input only affects the touchbar, otherwise returns 0.0. Available on the Client (Resource Packs) only.",
+    "fields": []
+  }
+}

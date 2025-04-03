@@ -1,0 +1,10 @@
+{
+  "id": "query.sleep_rotation",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.sleep_rotation",
+    "title": "Sleep Rotation Query",
+    "description": "Returns the rotation of the bed the player is sleeping on.",
+    "fields": []
+  }
+}

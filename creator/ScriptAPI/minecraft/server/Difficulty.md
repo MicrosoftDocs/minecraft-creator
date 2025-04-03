@@ -16,19 +16,19 @@ monikerRange: "=minecraft-bedrock-experimental"
 An enumeration for the various difficulty levels of Minecraft.
 
 ## Constants
-### **Peaceful**
-`Peaceful = 0`
-
-Peaceful difficulty level.
 ### **Easy**
-`Easy = 1`
+`Easy = "Easy"`
 
 Easy difficulty level.
-### **Normal**
-`Normal = 2`
-
-Normal difficulty level.
 ### **Hard**
-`Hard = 3`
+`Hard = "Hard"`
 
 Hard difficulty level.
+### **Normal**
+`Normal = "Normal"`
+
+Normal difficulty level.
+### **Peaceful**
+`Peaceful = "Peaceful"`
+
+Peaceful difficulty level.

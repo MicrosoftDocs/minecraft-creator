@@ -1,0 +1,10 @@
+{
+  "id": "query.in_range",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.in_range",
+    "title": "In Range Query",
+    "description": "Requires 3 numerical arguments: some value, a minimum, and a maximum. If the first argument is between the minimum and maximum (inclusive), returns 1.0. Otherwise returns 0.0.",
+    "fields": []
+  }
+}

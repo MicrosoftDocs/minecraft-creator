@@ -1,0 +1,10 @@
+{
+  "id": "query.lod_index",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.lod_index",
+    "title": "Lod Index Query",
+    "description": "Takes an array of distances and returns the zero - based index of which range the actor is in based on distance from the camera. For example, 'query.lod_index(10, 20, 30)' will return 0, 1, or 2 based on whether the mob is less than 10, 20, or 30 units away from the camera, or it will return 3 if it is greater than 30.",
+    "fields": []
+  }
+}

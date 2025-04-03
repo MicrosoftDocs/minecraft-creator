@@ -1,0 +1,10 @@
+{
+  "id": "query.moon_phase",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.moon_phase",
+    "title": "Moon Phase Query",
+    "description": "Returns the phase of the moon (FULL_MOON=0, WANING_GIBBOUS=1, FIRST_QUARTER=2, WANING_CRESCENT=3, NEW_MOON=4, WAXING_CRESCENT=5, LAST_QUARTER=6, WAXING_GIBBOUS=7).",
+    "fields": []
+  }
+}

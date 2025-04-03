@@ -390,8 +390,12 @@ function moveBetweenContainers(
 reverseFind(itemStack: ItemStack): number
 `
 
+Find the index of the last instance of an item inside the container
+
 #### **Parameters**
 - **itemStack**: [*ItemStack*](ItemStack.md)
+  
+  The item to find.
 
 **Returns** *number*
 

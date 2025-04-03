@@ -1,0 +1,10 @@
+{
+  "id": "query.ground_speed",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.ground_speed",
+    "title": "Ground Speed Query",
+    "description": "Returns the ground speed of the entity in meters/second.",
+    "fields": []
+  }
+}

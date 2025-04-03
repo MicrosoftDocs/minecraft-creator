@@ -1,0 +1,10 @@
+{
+  "id": "query.is_delayed_attacking",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_delayed_attacking",
+    "title": "Is Delayed Attacking Query",
+    "description": "Returns 1.0 if the entity is attacking using the delayed attack, else it returns 0.0.",
+    "fields": []
+  }
+}

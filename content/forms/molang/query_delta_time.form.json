@@ -1,0 +1,10 @@
+{
+  "id": "query.delta_time",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.delta_time",
+    "title": "Delta Time Query",
+    "description": "Returns the time in seconds since the previous frame.",
+    "fields": []
+  }
+}

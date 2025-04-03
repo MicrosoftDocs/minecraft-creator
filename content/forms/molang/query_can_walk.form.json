@@ -1,0 +1,10 @@
+{
+  "id": "query.can_walk",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.can_walk",
+    "title": "Can Walk Query",
+    "description": "Returns 1.0 if the entity can walk, else it returns 0.0.",
+    "fields": []
+  }
+}

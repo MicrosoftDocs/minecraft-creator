@@ -47,6 +47,40 @@ Optional array of objects to describe item specific block destroy speeds, each o
 
 ## Samples
 
+At JSON Object (Item Tags): 
+
+```json
+"minecraft:destructible_by_mining": {
+  "seconds_to_destroy": 10,
+  "item_specific_speeds": [
+    {
+      "item": {
+        "tags": "q.any_tag('minecraft:is_pickaxe', 'my_pack:custom_tool') "
+      },
+      "destroy_speed": 5
+    }
+  ]
+}
+```
+
+At JSON Object (Item Ids): 
+
+```json
+"minecraft:destructible_by_mining": {
+  "seconds_to_destroy": 10,
+  "item_specific_speeds": [
+    {
+      "item": "minecraft:iron_pickaxe",
+      "destroy_speed": 5
+    },
+    {
+      "item": "minecraft:diamond_pickaxe",
+      "destroy_speed": 2
+    }
+  ]
+}
+```
+
 #### [Block Fabricator](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json)
 
 

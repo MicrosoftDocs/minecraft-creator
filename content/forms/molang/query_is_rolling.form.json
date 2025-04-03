@@ -1,0 +1,10 @@
+{
+  "id": "query.is_rolling",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_rolling",
+    "title": "Is Rolling Query",
+    "description": "Returns 1.0 if the entity is rolling, else it returns 0.0.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.time_stamp",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.time_stamp",
+    "title": "Time Stamp Query",
+    "description": "Returns the current time stamp of the level",
+    "fields": []
+  }
+}

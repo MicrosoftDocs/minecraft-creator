@@ -1,0 +1,10 @@
+{
+  "id": "query.any_tag",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.any_tag",
+    "title": "Any Tag Query",
+    "description": "Returns if the item or block has any of the tags specified.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.has_player_rider",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.has_player_rider",
+    "title": "Has Player Rider Query",
+    "description": "Returns 1 if the entity has a player riding it in any seat, else it returns 0.",
+    "fields": []
+  }
+}

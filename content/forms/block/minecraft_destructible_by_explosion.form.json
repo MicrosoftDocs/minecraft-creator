@@ -8,6 +8,14 @@
     ],
     "dataType": 1
   },
+  "samples": {
+    "Example": [
+      {
+        "path": "Boolean",
+        "content": true
+      }
+    ]
+  },
   "generated_doNotEdit": {
     "id": "minecraft:destructible_by_explosion",
     "title": "Destructible By Explosion",

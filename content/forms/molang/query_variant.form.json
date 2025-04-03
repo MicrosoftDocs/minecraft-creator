@@ -1,0 +1,10 @@
+{
+  "id": "query.variant",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.variant",
+    "title": "Variant Query",
+    "description": "Returns the entity's variant index",
+    "fields": []
+  }
+}
