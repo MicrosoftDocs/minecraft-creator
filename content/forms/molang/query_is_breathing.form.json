@@ -1,0 +1,10 @@
+{
+  "id": "query.is_breathing",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_breathing",
+    "title": "Is Breathing Query",
+    "description": "Returns 1.0 if the entity is breathing, else it returns 0.0.",
+    "fields": []
+  }
+}

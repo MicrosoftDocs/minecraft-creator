@@ -1,0 +1,10 @@
+{
+  "id": "query.sit_amount",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.sit_amount",
+    "title": "Sit Amount Query",
+    "description": "Returns the current sit amount of the entity.",
+    "fields": []
+  }
+}

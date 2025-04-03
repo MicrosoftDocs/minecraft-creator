@@ -1,0 +1,10 @@
+{
+  "id": "query.key_frame_lerp_time",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.key_frame_lerp_time",
+    "title": "Key Frame Lerp Time Query",
+    "description": "Returns the ratio between the previous and next key frames.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.average_frame_time",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.average_frame_time",
+    "title": "Average Frame Time Query",
+    "description": "Returns the time in *seconds* of the average frame time over the last 'n' frames.  If an argument is passed, it is assumed to be the number of frames in the past that you wish to query.  'query.average_frame_time' (or the equivalent 'query.average_frame_time(0)') will return the frame time of the frame before the current one.  'query.average_frame_time(1)' will return the average frame time of the previous two frames.  Currently we store the history of the last 30 frames, although note that this may change in the future.  Asking for more frames will result in only sampling the number of frames stored.",
+    "fields": []
+  }
+}

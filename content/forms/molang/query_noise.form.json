@@ -1,0 +1,10 @@
+{
+  "id": "query.noise",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.noise",
+    "title": "Noise Query",
+    "description": "Queries Perlin Noise Map",
+    "fields": []
+  }
+}

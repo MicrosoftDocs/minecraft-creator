@@ -1,0 +1,10 @@
+{
+  "id": "query.texture_frame_index",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.texture_frame_index",
+    "title": "Texture Frame Index Query",
+    "description": "Returns the icon index of the experience orb.",
+    "fields": []
+  }
+}

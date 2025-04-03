@@ -1,0 +1,10 @@
+{
+  "id": "query.is_fire_immune",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_fire_immune",
+    "title": "Is Fire Immune Query",
+    "description": "Returns 1.0 if the entity is immune to fire, else it returns 0.0.",
+    "fields": []
+  }
+}

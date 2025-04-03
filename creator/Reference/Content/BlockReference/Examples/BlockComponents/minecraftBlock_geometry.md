@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 The description identifier of the geometry to use to render this block. This identifier must either match an existing geometry identifier in any of the loaded resource packs or be one of the currently supported Vanilla identifiers: "minecraft:geometry.full_block" or "minecraft:geometry.cross".
 
+> [!Note]
+> From 1.21.80 onward, when using a minecraft:geometry component or minecraft:material_instances component, you must include both.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `String`.
@@ -20,9 +23,10 @@ This item can also be represented as a `String`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| bone_visibility | *not set* | Keyed collection of boolean values |  | Blue Bubble Fish: `{"bb_main":true,"fish":true}` | 
-| culling | *not set* | String |  | Tuna Roll: `"test:sushi_cull"` | 
-| identifier | *not set* | String |  | Tuna Roll: `"geometry.sushi"`, Blue Bubble Fish: `"geometry.bubble_fish"`, Die: `"minecraft:geometry.full_block"` | 
+| bone_visibility | *not set* | Keyed collection of boolean values | An optional array of Booleans that define the visibility of individual bones in the geometry file. In order to set up 'bone_visibility', the geometry file name must be entered as an identifier. After the identifier has been specified, bone_visibility can be defined based on the names of the bones in the specified geometry file on a true/false basis. Note that all bones default to 'true,' so bones should only be defined if they are being set to 'false.' Including bones set to 'true' will work the same as the default. | Blue Bubble Fish: `{"bb_main":true,"fish":true}` | 
+| culling | *not set* | String | An optional identifer of a culling definition. This identifier must match an existing culling definition in any of the currently loaded resource packs. The culling definition is used to determine which faces of the block should be culled when rendering. The culling definition can be used to optimize rendering performance by reducing the number of faces that need to be rendered. | Tuna Roll: `"test:sushi_cull"` | 
+| culling_layer | *not set* | String | [Experimental] - A string that allows culling rule to group multiple blocks together when comparing them. When using the minecraft namespace, the only allowed culling layer identifiers are : "minecraft:culling_layer.undefined" or "minecraft:culling_layer.leaves". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character. Additionally, the feature is currently only usable behind the "upcoming creator features" toggle. |  | 
+| identifier | *not set* | String | Specifies the geometry description identifier to use to render this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs. | Tuna Roll: `"geometry.sushi"`, Blue Bubble Fish: `"geometry.bubble_fish"`, Die: `"minecraft:geometry.full_block"` | 
 
 ## Samples
 

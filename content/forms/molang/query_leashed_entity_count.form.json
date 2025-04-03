@@ -1,0 +1,10 @@
+{
+  "id": "query.leashed_entity_count",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.leashed_entity_count",
+    "title": "Leashed Entity Count Query",
+    "description": "Returns the number of entities for which this entity is the leash holder.",
+    "fields": []
+  }
+}

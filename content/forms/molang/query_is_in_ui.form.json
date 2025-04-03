@@ -1,0 +1,10 @@
+{
+  "id": "query.is_in_ui",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_in_ui",
+    "title": "Is In Ui Query",
+    "description": "Returns 1.0 if the entity is rendered as part of the UI, else it returns 0.0.",
+    "fields": []
+  }
+}

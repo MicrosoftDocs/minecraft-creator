@@ -1,0 +1,10 @@
+{
+  "id": "query.tail_angle",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.tail_angle",
+    "title": "Tail Angle Query",
+    "description": "Returns the angle of the tail of the entity if it makes sense, else it returns 0.0.",
+    "fields": []
+  }
+}

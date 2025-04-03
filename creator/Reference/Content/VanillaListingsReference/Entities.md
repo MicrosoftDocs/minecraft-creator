@@ -73,6 +73,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [glow_squid](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/glow_squid.json) | 9089 | 129 |
 | [goat](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/goat.json) | 4992 | 128 |
 | [guardian](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/guardian.json) | 2865 | 49 |
+| happy_ghast | 5011 | 147 |
 | [hoglin](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/hoglin.json) | 4988 | 124 |
 | [hopper_minecart](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/hopper_minecart.json) | 524384 | 96 |
 | [horse](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/horse.json) | 2118423 | 23 |

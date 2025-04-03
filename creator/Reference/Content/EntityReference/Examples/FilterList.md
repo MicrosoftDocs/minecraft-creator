@@ -24,6 +24,7 @@ ms.date: 02/11/2025
 | [has_damage](Filters/has_damage.md)| Returns true when the subject entity receives the named damage type. |
 | [has_damaged_equipment](Filters/has_damaged_equipment.md)| Tests for the presence of a damaged named item in the designated slot of the subject entity. |
 | [has_equipment](Filters/has_equipment.md)| Tests for the presence of a named item in the designated slot of the subject entity. |
+| [has_equipment_tag](Filters/has_equipment_tag.md)| Tests for the presence of an item with the named tag in the designated slot of the subject entity. |
 | [has_mob_effect](Filters/has_mob_effect.md)| Tests whether the Subject has the specified mob effect. |
 | [has_nametag](Filters/has_nametag.md)| Tests if the subject has been given a custom name. |
 | [has_property](Filters/has_property.md)| Tests for the presence of a property of the subject entity. |

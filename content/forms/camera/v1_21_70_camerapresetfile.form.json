@@ -22,7 +22,7 @@
             {
               "id": "identifier",
               "title": "identifier",
-              "description": "Namespaced identifier for Camera preset. Namespace and name must be separated by a ':' and have at least one alphanumeric or underscore character.",
+              "description": "Namespaced identifier for Camera Preset. Namespace and name must be separated by a ':' and have at least one alphanumeric or underscore character.",
               "dataType": 2,
               "validity": [
                 {

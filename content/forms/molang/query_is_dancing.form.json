@@ -1,0 +1,10 @@
+{
+  "id": "query.is_dancing",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_dancing",
+    "title": "Is Dancing Query",
+    "description": "Returns 1.0 if the entity is dancing, else it returns 0.0.",
+    "fields": []
+  }
+}

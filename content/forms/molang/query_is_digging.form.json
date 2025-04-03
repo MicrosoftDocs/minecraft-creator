@@ -1,0 +1,10 @@
+{
+  "id": "query.is_digging",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_digging",
+    "title": "Is Digging Query",
+    "description": "Returns 1.0 if the entity is digging, else it returns 0.0.",
+    "fields": []
+  }
+}

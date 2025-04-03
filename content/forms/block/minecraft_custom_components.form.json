@@ -1,5 +1,6 @@
 {
   "fields": [],
+  "note": "See the [Scripting 2.0.0-beta Overview](https://learn.microsoft.com/minecraft/creator/documents/scriptingv2.0.0overview) article for an overview of upcoming changes to custom components functionality.",
   "generated_doNotEdit": {
     "id": "minecraft:custom_components",
     "title": "Custom Components",

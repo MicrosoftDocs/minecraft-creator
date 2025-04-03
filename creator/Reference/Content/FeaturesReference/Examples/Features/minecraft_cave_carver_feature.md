@@ -38,15 +38,13 @@ Carves a cave through the world in the current chunk, and in every chunk around 
 ```json
 "minecraft:cave_carver_feature": {
   "format_version": "1.13.0",
-  "minecraft:aggregate_feature": {
+  "minecraft:cave_carver_feature": {
     "description": {
-      "identifier": "example:monument_with_flowers_feature"
+      "identifier": "example:underground_cave_carver_feature"
     },
-    "features": [
-      "example:monument_feature",
-      "example:scatter_white_flowers_feature",
-      "example:scatter_yellow_flower_feature"
-    ]
+    "fill_with": "minecraft:air",
+    "width_modifier": 0,
+    "skip_carve_chance": 15
   }
 }
 ```

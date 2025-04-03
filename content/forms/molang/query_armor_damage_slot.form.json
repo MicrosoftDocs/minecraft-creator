@@ -1,0 +1,10 @@
+{
+  "id": "query.armor_damage_slot",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.armor_damage_slot",
+    "title": "Armor Damage Slot Query",
+    "description": "Takes the armor slot index as a parameter, and returns the damage value of the requested slot. The valid values for the armor slot index are 0 (head), 1 (chest), 2 (legs), 3 (feet) and 4 (body). Support for entities other than players may be limited, as the damage value is not always available on clients.",
+    "fields": []
+  }
+}

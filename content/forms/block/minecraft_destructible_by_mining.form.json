@@ -134,6 +134,40 @@
     ],
     "dataType": 1
   },
+  "samples": {
+    "samples": [
+      {
+        "path": "JSON Object (Item Tags)",
+        "content": {
+          "seconds_to_destroy": 10,
+          "item_specific_speeds": [
+            {
+              "item": {
+                "tags": "q.any_tag('minecraft:is_pickaxe', 'my_pack:custom_tool') "
+              },
+              "destroy_speed": 5
+            }
+          ]
+        }
+      },
+      {
+        "path": "JSON Object (Item Ids)",
+        "content": {
+          "seconds_to_destroy": 10,
+          "item_specific_speeds": [
+            {
+              "item": "minecraft:iron_pickaxe",
+              "destroy_speed": 5
+            },
+            {
+              "item": "minecraft:diamond_pickaxe",
+              "destroy_speed": 2
+            }
+          ]
+        }
+      }
+    ]
+  },
   "generated_doNotEdit": {
     "id": "minecraft:destructible_by_mining",
     "title": "Destructible By Mining",

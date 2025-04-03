@@ -1,0 +1,10 @@
+{
+  "id": "query.is_first_person",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_first_person",
+    "title": "Is First Person Query",
+    "description": "Returns 1.0 if the entity is being rendered in first person mode, else it returns 0.0.",
+    "fields": []
+  }
+}

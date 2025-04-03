@@ -24,6 +24,13 @@ This item can also be represented as a `Boolean true/false`.
 
 ## Samples
 
+#### [Example](Example)
+
+
+```json
+"minecraft:destructible_by_explosion": true
+```
+
 #### [Block Fabricator](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json)
 
 

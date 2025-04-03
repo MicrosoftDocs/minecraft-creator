@@ -1,0 +1,10 @@
+{
+  "id": "query.is_attached_to_entity",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_attached_to_entity",
+    "title": "Is Attached To Entity Query",
+    "description": "Returns 1.0 if the actor is attached to an entity, else it will return 0.0.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.max_durability",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.max_durability",
+    "title": "Max Durability Query",
+    "description": "Returns the max durability an item can take.",
+    "fields": []
+  }
+}

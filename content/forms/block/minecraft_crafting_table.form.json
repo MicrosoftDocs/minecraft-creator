@@ -1,5 +1,19 @@
 {
   "fields": [],
+  "samples": {
+    "Example": [
+      {
+        "path": "Crafting Table",
+        "content": {
+          "crafting_tags": [
+            "crafting_table",
+            "custom_crafting_tag"
+          ],
+          "table_name": "My Crafting Table"
+        }
+      }
+    ]
+  },
   "generated_doNotEdit": {
     "id": "minecraft:crafting_table",
     "title": "Crafting Table",

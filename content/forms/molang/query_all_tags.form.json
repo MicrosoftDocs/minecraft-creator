@@ -1,0 +1,10 @@
+{
+  "id": "query.all_tags",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.all_tags",
+    "title": "All Tags Query",
+    "description": "Returns if the item or block has all of the tags specified.",
+    "fields": []
+  }
+}

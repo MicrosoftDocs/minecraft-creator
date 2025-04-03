@@ -14,6 +14,9 @@ This new pattern combines a more structured way to listen to the block and item 
 
 If you'd like to get started in building add-ons with custom components, see our [custom components tutorial](./CustomComponentsTutorial.md).
 
+> [!Note]
+> Custom components will be revised and improved in the upcoming [Scripting 2.0.0](./ScriptingV2.0.0Overview.md) release. This document describes the current Scripting 1.0.0 version of custom components.
+
 ## Structure
 
 This new feature is named _custom components_ because script is connected to a given Block or Item's JSON in a manner very similar to attaching one of the built-in Minecraft components. As such, there is both a JSON aspect to the feature as well as a script aspect of the feature.

@@ -1,0 +1,10 @@
+{
+  "id": "query.has_collision",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.has_collision",
+    "title": "Has Collision Query",
+    "description": "Returns 1.0 if the entity has collisions enabled, else it returns 0.0.",
+    "fields": []
+  }
+}

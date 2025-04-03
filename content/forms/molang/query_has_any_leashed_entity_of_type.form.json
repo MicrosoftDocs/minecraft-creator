@@ -1,0 +1,10 @@
+{
+  "id": "query.has_any_leashed_entity_of_type",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.has_any_leashed_entity_of_type",
+    "title": "Has Any Leashed Entity Of Type Query",
+    "description": "Returns whether or not the entity is currently leashing other entities of the designated types.",
+    "fields": []
+  }
+}

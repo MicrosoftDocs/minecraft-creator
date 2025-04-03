@@ -1,0 +1,285 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "title": "Struct V1 21 80 CameraPresetFile Camera",
+    "description": "Struct V1 21 80 CameraPresetFile Camera",
+    "fields": [
+      {
+        "id": "format_version",
+        "title": "format_version",
+        "description": "Version of the JSON schema for this file. Camera preset requires at least version 1.19.50.",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:camera_preset",
+        "title": "minecraft:camera_preset",
+        "description": "minecraft:camera_preset",
+        "dataType": 16,
+        "subForm": {
+          "title": "V1 21 80 CameraPreset",
+          "description": "V1 21 80 CameraPreset",
+          "fields": [
+            {
+              "id": "identifier",
+              "title": "identifier",
+              "description": "Namespaced identifier for Camera Preset. Namespace and name must be separated by a ':' and have at least one alphanumeric or underscore character.",
+              "dataType": 2,
+              "validity": [
+                {
+                  "comparison": "pattern",
+                  "value": "^(\\w+:\\w+)?$"
+                }
+              ]
+            },
+            {
+              "id": "pos_x",
+              "title": "pos_x",
+              "description": "Optional. Set an X position for this camera's behavior.",
+              "dataType": 3
+            },
+            {
+              "id": "rot_y",
+              "title": "rot_y",
+              "description": "Optional. Set a Y rotation for this camera's behavior.",
+              "dataType": 3
+            },
+            {
+              "id": "player_effects",
+              "title": "player_effects",
+              "description": "Optional, defaults to false. Specify true to allow effects on the player to affect how the game renders when this preset is active.",
+              "dataType": 1
+            },
+            {
+              "id": "inherit_from",
+              "title": "inherit_from",
+              "description": "Optional. Namespaced identifier for another camera preset from which to inherit values and behavior.",
+              "dataType": 2,
+              "validity": [
+                {
+                  "comparison": "pattern",
+                  "value": "^(\\w+:\\w+)?$"
+                }
+              ]
+            },
+            {
+              "id": "pos_y",
+              "title": "pos_y",
+              "description": "Optional. Set a Y position for this camera's behavior.",
+              "dataType": 3
+            },
+            {
+              "id": "rot_x",
+              "title": "rot_x",
+              "description": "Optional. Set an X rotation for this camera's behavior.",
+              "dataType": 3,
+              "validity": [
+                {
+                  "comparison": ">=",
+                  "value": -90
+                },
+                {
+                  "comparison": "<=",
+                  "value": 90
+                }
+              ]
+            },
+            {
+              "id": "pos_z",
+              "title": "pos_z",
+              "description": "Optional. Set a Z position for this camera's behavior.",
+              "dataType": 3
+            },
+            {
+              "id": "rotation_speed",
+              "title": "rotation_speed",
+              "description": "Optional. Set the rotation speed for the camera.",
+              "dataType": 3,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 360
+                }
+              ]
+            },
+            {
+              "id": "snap_to_target",
+              "title": "snap_to_target",
+              "description": "Optional. Set this flag if you want the camera to snap to your target immediately in the first frame. Only available with a valid rotation speed.",
+              "dataType": 1
+            },
+            {
+              "id": "horizontal_rotation_limit",
+              "title": "horizontal_rotation_limit",
+              "description": "Optional. Set the horizontal rotation limit for the target camera (x, y), where x represents rotation to the left, and y to the right. Values can be from 0 to 360.0.",
+              "dataType": 32,
+              "minLength": 2,
+              "maxLength": 2
+            },
+            {
+              "id": "vertical_rotation_limit",
+              "title": "vertical_rotation_limit",
+              "description": "Optional. Set the vertical rotation limit for the target camera (x, y). Values can be from 0.0 to 180.0 inclusive in world space where 0 degrees is straight down, 90 degrees is horizontal and 180 degrees is straight up.",
+              "dataType": 32,
+              "minLength": 2,
+              "maxLength": 2
+            },
+            {
+              "id": "continue_targeting",
+              "title": "continue_targeting",
+              "description": "Optional. Set this flag if you want the camera to continue tracking the entity even when the target moves outside the valid rotation limits.",
+              "dataType": 1
+            },
+            {
+              "id": "entity_offset",
+              "title": "entity_offset",
+              "description": "Optional. Changes the point of the entity the camera pivots around (x, y, z). x, y and z can be floats between -64 and 64",
+              "dataType": 32,
+              "minLength": 3,
+              "maxLength": 3
+            },
+            {
+              "id": "tracking_radius",
+              "title": "tracking_radius",
+              "description": "Optional. Set a value for the block radius around the camera to keep tracking the target entity. Defaults to 50 blocks.",
+              "dataType": 3
+            },
+            {
+              "id": "view_offset",
+              "title": "view_offset",
+              "description": "Optional. Creates an over the shoulder type offset (x, y). x and y can be floats between -64 and 64",
+              "dataType": 32,
+              "minLength": 2,
+              "maxLength": 2
+            },
+            {
+              "id": "yaw_limits_min",
+              "title": "yaw_limits_min",
+              "description": "Optional. Set a min limit for the yaw of third person cameras.",
+              "dataType": 3,
+              "validity": [
+                {
+                  "comparison": ">=",
+                  "value": -180
+                },
+                {
+                  "comparison": "<=",
+                  "value": 179.89999389648438
+                }
+              ]
+            },
+            {
+              "id": "radius",
+              "title": "radius",
+              "description": "Optional. Set a radius for this camera's behavior.",
+              "dataType": 3,
+              "validity": [
+                {
+                  "comparison": ">=",
+                  "value": 0.10000000149011612
+                },
+                {
+                  "comparison": "<=",
+                  "value": 64
+                }
+              ]
+            },
+            {
+              "id": "yaw_limits_max",
+              "title": "yaw_limits_max",
+              "description": "Optional. Set a max limit for the yaw of third person cameras.",
+              "dataType": 3,
+              "validity": [
+                {
+                  "comparison": ">=",
+                  "value": -179.89999389648438
+                },
+                {
+                  "comparison": "<=",
+                  "value": 180
+                }
+              ]
+            },
+            {
+              "id": "listener",
+              "title": "enum SharedTypes_v1_21_80_CameraPreset_AudioListener",
+              "description": "Optional, defaults to 'camera'. Specify 'camera' or 'player' to control whether the camera or player is used for audio listening position when this preset is active.",
+              "dataType": 2
+            },
+            {
+              "id": "align_target_and_camera_forward",
+              "title": "align_target_and_camera_forward",
+              "description": "Optional, defaults to true. When set to true the camera will be locked to have the same forward as its target",
+              "dataType": 1
+            },
+            {
+              "id": "aim_assist",
+              "title": "aim_assist",
+              "description": "Optional. Aim-assist settings to activate when the camera preset is in use.",
+              "dataType": 16,
+              "subForm": {
+                "title": "V1 21 50 CameraPresetAimAssistDefinition",
+                "description": "V1 21 50 CameraPresetAimAssistDefinition",
+                "fields": [
+                  {
+                    "id": "preset",
+                    "title": "preset",
+                    "description": "Optional. Specify presetID or namespace:presetID to enable aim assist with the specified ID.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "distance",
+                    "title": "distance",
+                    "description": "distance",
+                    "dataType": 3
+                  },
+                  {
+                    "id": "target_mode",
+                    "title": "Aim-Assist Target Mode",
+                    "description": "Aim-Assist Target Mode",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "angle",
+                    "title": "angle",
+                    "description": "angle",
+                    "dataType": 32,
+                    "alternates": [
+                      {
+                        "id": "angle",
+                        "dataType": 16,
+                        "subForm": {
+                          "title": "Angle",
+                          "description": "Angle",
+                          "fields": [
+                            {
+                              "id": "x",
+                              "title": "x",
+                              "description": "x",
+                              "dataType": 3
+                            },
+                            {
+                              "id": "y",
+                              "title": "y",
+                              "description": "y",
+                              "dataType": 3
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "id": "control_scheme",
+              "title": "Control Scheme",
+              "description": "Optional. Set a default scheme for this camera.",
+              "dataType": 2
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

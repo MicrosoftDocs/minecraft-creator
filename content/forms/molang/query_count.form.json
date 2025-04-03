@@ -1,0 +1,10 @@
+{
+  "id": "query.count",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.count",
+    "title": "Count Query",
+    "description": "Counts the number of things passed to it (arrays are counted as the number of elements they contain; non-arrays count as 1).",
+    "fields": []
+  }
+}

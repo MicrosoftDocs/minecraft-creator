@@ -1,0 +1,10 @@
+{
+  "id": "query.player_level",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.player_level",
+    "title": "Player Level Query",
+    "description": "Returns the players level if the actor is a player, otherwise returns 0.",
+    "fields": []
+  }
+}

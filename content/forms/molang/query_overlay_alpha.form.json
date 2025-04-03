@@ -1,0 +1,10 @@
+{
+  "id": "query.overlay_alpha",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.overlay_alpha",
+    "title": "Overlay Alpha Query",
+    "description": "DEPRECATED (Do not use - this function is deprecated and will be removed).",
+    "fields": []
+  }
+}

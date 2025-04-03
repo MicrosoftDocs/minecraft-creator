@@ -1,0 +1,10 @@
+{
+  "id": "query.standing_scale",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.standing_scale",
+    "title": "Standing Scale Query",
+    "description": "Returns the scale of how standing up the entity is.",
+    "fields": []
+  }
+}

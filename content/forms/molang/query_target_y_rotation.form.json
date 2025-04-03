@@ -1,0 +1,10 @@
+{
+  "id": "query.target_y_rotation",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.target_y_rotation",
+    "title": "Target Y Rotation Query",
+    "description": "Returns the y rotation required to aim at the entity's current target if it has one, else it returns 0.0.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.cooldown_time_remaining",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.cooldown_time_remaining",
+    "title": "Cooldown Time Remaining Query",
+    "description": "Returns the cooldown time remaining in seconds for specified cooldown type or the item held or worn by the specified equipment slot name (and if required second numerical slot id), otherwise returns 0. Uses the same name and id that the replaceitem command takes when querying entities. Returns highest cooldown if no parameters are supplied.",
+    "fields": []
+  }
+}

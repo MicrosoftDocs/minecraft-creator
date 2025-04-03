@@ -1,0 +1,10 @@
+{
+  "id": "query.max_trade_tier",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.max_trade_tier",
+    "title": "Max Trade Tier Query",
+    "description": "Returns the maximum trade tier of the entity if it makes sense, else it returns 0.0",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.heightmap",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.heightmap",
+    "title": "Heightmap Query",
+    "description": "Queries Height Map",
+    "fields": []
+  }
+}

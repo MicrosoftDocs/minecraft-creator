@@ -1,0 +1,10 @@
+{
+  "id": "query.structural_integrity",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.structural_integrity",
+    "title": "Structural Integrity Query",
+    "description": "Returns the structural integrity for the actor, otherwise returns 0.",
+    "fields": []
+  }
+}

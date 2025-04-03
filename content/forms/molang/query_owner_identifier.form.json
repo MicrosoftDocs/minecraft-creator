@@ -1,0 +1,10 @@
+{
+  "id": "query.owner_identifier",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.owner_identifier",
+    "title": "Owner Identifier Query",
+    "description": "DEPRECATED (Use query.is_owner_identifier_any instead if possible so names can be changed later without breaking content.) Returns the root actor identifier.",
+    "fields": []
+  }
+}

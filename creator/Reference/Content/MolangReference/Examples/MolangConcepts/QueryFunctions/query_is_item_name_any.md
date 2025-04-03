@@ -1,0 +1,12 @@
+---
+author: mammerla
+ms.author: mikeam
+title: "Molang Documentation - minecraft:query_is_item_name_any"
+description: "Describes the minecraft:query_is_item_name_any molang"
+ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
+---
+
+# Molang Documentation - minecraft:query_is_item_name_any
+
+Takes an equipment slot name (see the replaceitem command) and an optional slot index value. (The slot index is required for slot names that have multiple slots, for example 'slot.hotbar'.) After that, takes one or more full name (with 'namespace:') strings to check for. Returns 1.0 if an item in the specified slot has any of the specified names, otherwise returns 0.0. An empty string '' can be specified to check for an empty slot. Note that querying slot.enderchest, slot.saddle, slot.armor, or slot.chest will only work in behavior packs. A preferred query to query.get_equipped_item_name, as it can be adjusted by Mojang to avoid breaking content if names are changed.

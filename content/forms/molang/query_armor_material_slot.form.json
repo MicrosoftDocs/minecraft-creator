@@ -1,0 +1,10 @@
+{
+  "id": "query.armor_material_slot",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.armor_material_slot",
+    "title": "Armor Material Slot Query",
+    "description": "Takes the armor slot index as a parameter, and returns the armor material type in the requested armor slot. The valid values for the armor slot index are 0 (head), 1 (chest), 2 (legs) and 3 (feet).",
+    "fields": []
+  }
+}

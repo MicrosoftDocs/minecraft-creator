@@ -1,0 +1,10 @@
+{
+  "id": "query.combine_entities",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.combine_entities",
+    "title": "Combine Entities Query",
+    "description": "Combines any valid entity references from all arguments into a single array.  Note that order is not preserved, and duplicates and invalid values are removed.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.unhappy_counter",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.unhappy_counter",
+    "title": "Unhappy Counter Query",
+    "description": "Always returns zero. (Was originally meant to indicate Panda unhappiness but due to an early code change it has always only returned zero)",
+    "fields": []
+  }
+}

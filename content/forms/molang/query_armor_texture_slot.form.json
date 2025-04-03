@@ -1,0 +1,10 @@
+{
+  "id": "query.armor_texture_slot",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.armor_texture_slot",
+    "title": "Armor Texture Slot Query",
+    "description": "Takes the armor slot index as a parameter, and returns the texture type of the requested slot. The valid values for the armor slot index are 0 (head), 1 (chest), 2 (legs), 3 (feet) and 4 (body).",
+    "fields": []
+  }
+}

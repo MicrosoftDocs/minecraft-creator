@@ -1,0 +1,10 @@
+{
+  "id": "query.hurt_direction",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.hurt_direction",
+    "title": "Hurt Direction Query",
+    "description": "Returns the hurt direction for the actor, otherwise returns 0.",
+    "fields": []
+  }
+}

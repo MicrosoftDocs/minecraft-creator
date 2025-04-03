@@ -1,0 +1,10 @@
+{
+  "id": "query.bone_origin",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.bone_origin",
+    "title": "Bone Origin Query",
+    "description": "Returns the initial (from the .geo) pivot of a bone as a struct with members '.x', '.y', and '.z'.",
+    "fields": []
+  }
+}

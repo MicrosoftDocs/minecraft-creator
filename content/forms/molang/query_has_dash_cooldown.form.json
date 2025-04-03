@@ -1,0 +1,10 @@
+{
+  "id": "query.has_dash_cooldown",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.has_dash_cooldown",
+    "title": "Has Dash Cooldown Query",
+    "description": "Returns 1.0 if the entity has cooldown on its dash, else it returns 0.0",
+    "fields": []
+  }
+}

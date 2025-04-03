@@ -1,0 +1,10 @@
+{
+  "id": "query.is_feeling_happy",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_feeling_happy",
+    "title": "Is Feeling Happy Query",
+    "description": "(No longer available in pack min_engine_version 1.20.50.) DEPRECATED after 1.20.40. Returns 1.0 if behavior.timer_flag_2 is running, else it returns 0.0.",
+    "fields": []
+  }
+}

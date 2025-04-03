@@ -1,0 +1,10 @@
+{
+  "id": "query.can_damage_nearby_mobs",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.can_damage_nearby_mobs",
+    "title": "Can Damage Nearby Mobs Query",
+    "description": "Returns 1.0 if the entity can damage nearby mobs, else it returns 0.0.",
+    "fields": []
+  }
+}

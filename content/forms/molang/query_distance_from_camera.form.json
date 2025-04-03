@@ -1,0 +1,10 @@
+{
+  "id": "query.distance_from_camera",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.distance_from_camera",
+    "title": "Distance From Camera Query",
+    "description": "Returns the distance of the root of this actor or particle emitter from the camera.",
+    "fields": []
+  }
+}

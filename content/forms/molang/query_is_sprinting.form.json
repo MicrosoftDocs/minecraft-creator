@@ -1,0 +1,10 @@
+{
+  "id": "query.is_sprinting",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_sprinting",
+    "title": "Is Sprinting Query",
+    "description": "Returns 1.0 if the entity is sprinting, else it returns 0.0.",
+    "fields": []
+  }
+}

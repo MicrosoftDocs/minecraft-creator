@@ -1,0 +1,10 @@
+{
+  "id": "query.camera_distance_range_lerp",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.camera_distance_range_lerp",
+    "title": "Camera Distance Range Lerp Query",
+    "description": "Takes two distances (any order) and return a number from 0 to 1 based on the camera distance between the two ranges clamped to that range.  For example, 'query.camera_distance_range_lerp(10, 20)' will return 0 for any distance less than or equal to 10, 0.2 for a distance of 12, 0.5 for 15, and 1 for 20 or greater.  If you pass in (20, 10), a distance of 20 will return 0.0.",
+    "fields": []
+  }
+}

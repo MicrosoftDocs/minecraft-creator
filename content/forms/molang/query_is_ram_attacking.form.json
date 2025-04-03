@@ -1,0 +1,10 @@
+{
+  "id": "query.is_ram_attacking",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_ram_attacking",
+    "title": "Is Ram Attacking Query",
+    "description": "Returns 1.0 if the entity is using a ram attack, else it returns 0.0.",
+    "fields": []
+  }
+}

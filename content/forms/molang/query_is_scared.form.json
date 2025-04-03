@@ -1,0 +1,10 @@
+{
+  "id": "query.is_scared",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_scared",
+    "title": "Is Scared Query",
+    "description": "Returns 1.0 if the entity is scared, else it returns 0.0.",
+    "fields": []
+  }
+}

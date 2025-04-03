@@ -1,0 +1,10 @@
+{
+  "id": "query.is_enchanted",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_enchanted",
+    "title": "Is Enchanted Query",
+    "description": "Returns 1.0 if the entity is enchanted, else it returns 0.0.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.is_casting",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_casting",
+    "title": "Is Casting Query",
+    "description": "Returns 1.0 if the entity is casting, else it returns 0.0.",
+    "fields": []
+  }
+}

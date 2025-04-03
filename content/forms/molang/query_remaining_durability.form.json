@@ -1,0 +1,10 @@
+{
+  "id": "query.remaining_durability",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.remaining_durability",
+    "title": "Remaining Durability Query",
+    "description": "Returns how much durability an item has remaining.",
+    "fields": []
+  }
+}

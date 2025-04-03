@@ -1,0 +1,10 @@
+{
+  "id": "query.is_pregnant",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_pregnant",
+    "title": "Is Pregnant Query",
+    "description": "Returns 1.0 if the entity is pregnant, else it returns 0.0.",
+    "fields": []
+  }
+}

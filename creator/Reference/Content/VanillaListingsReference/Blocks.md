@@ -378,6 +378,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:double_cut_copper_slab | minecraft:vertical_half |
 | minecraft:dragon_egg |  |
 | minecraft:dragon_head | facing_direction |
+| minecraft:dried_ghast | minecraft:cardinal_direction, rehydration_level |
 | minecraft:dried_kelp_block |  |
 | minecraft:dripstone_block |  |
 | minecraft:dropper | facing_direction, triggered_bit |
@@ -420,10 +421,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:element_24 |  |
 | minecraft:element_25 |  |
 | minecraft:element_26 |  |
-| minecraft:element_27 |  |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:element_27 |  |
 | minecraft:element_28 |  |
 | minecraft:element_29 |  |
 | minecraft:element_3 |  |
@@ -623,10 +624,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:hardened_clay |  |
 | minecraft:hay_block | deprecated, pillar_axis |
 | minecraft:heavy_core |  |
-| minecraft:heavy_weighted_pressure_plate | redstone_signal |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:heavy_weighted_pressure_plate | redstone_signal |
 | minecraft:honey_block |  |
 | minecraft:honeycomb_block |  |
 | minecraft:hopper | facing_direction, toggle_bit |
@@ -826,10 +827,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:ochre_froglight | pillar_axis |
 | minecraft:open_eyeblossom |  |
 | minecraft:orange_candle | candles, lit |
-| minecraft:orange_candle_cake | lit |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:orange_candle_cake | lit |
 | minecraft:orange_carpet |  |
 | minecraft:orange_concrete |  |
 | minecraft:orange_concrete_powder |  |
@@ -1029,10 +1030,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sculk |  |
 | minecraft:sculk_catalyst | bloom |
 | minecraft:sculk_sensor | sculk_sensor_phase |
-| minecraft:sculk_shrieker | active, can_summon |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:sculk_shrieker | active, can_summon |
 | minecraft:sculk_vein | multi_face_direction_bits |
 | minecraft:sea_lantern |  |
 | minecraft:sea_pickle | cluster_count, dead_bit |
@@ -1232,10 +1233,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_weathered_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:waxed_weathered_copper_grate |  |
 | minecraft:waxed_weathered_copper_trapdoor | direction, open_bit, upside_down_bit |
-| minecraft:waxed_weathered_cut_copper |  |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:waxed_weathered_cut_copper |  |
 | minecraft:waxed_weathered_cut_copper_slab | minecraft:vertical_half |
 | minecraft:waxed_weathered_cut_copper_stairs | upside_down_bit, weirdo_direction |
 | minecraft:waxed_weathered_double_cut_copper_slab | minecraft:vertical_half |

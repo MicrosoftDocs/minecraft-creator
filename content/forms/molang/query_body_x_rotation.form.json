@@ -1,0 +1,10 @@
+{
+  "id": "query.body_x_rotation",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.body_x_rotation",
+    "title": "Body X Rotation Query",
+    "description": "Returns the body pitch rotation if called on an actor, else it returns 0.0.",
+    "fields": []
+  }
+}

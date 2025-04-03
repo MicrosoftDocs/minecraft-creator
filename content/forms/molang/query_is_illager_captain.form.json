@@ -1,0 +1,10 @@
+{
+  "id": "query.is_illager_captain",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_illager_captain",
+    "title": "Is Illager Captain Query",
+    "description": "Returns 1.0 if the entity is an illager captain, else it returns 0.0.",
+    "fields": []
+  }
+}

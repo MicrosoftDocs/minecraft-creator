@@ -1,0 +1,10 @@
+{
+  "id": "query.swell_amount",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.swell_amount",
+    "title": "Swell Amount Query",
+    "description": "Returns how swollen the entity is.",
+    "fields": []
+  }
+}

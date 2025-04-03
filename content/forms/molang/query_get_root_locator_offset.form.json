@@ -1,0 +1,10 @@
+{
+  "id": "query.get_root_locator_offset",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.get_root_locator_offset",
+    "title": "Get Root Locator Offset Query",
+    "description": "Gets specified axis of the specified locator offset of the root model.",
+    "fields": []
+  }
+}

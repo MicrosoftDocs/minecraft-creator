@@ -1,0 +1,10 @@
+{
+  "id": "query.eye_target_y_rotation",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.eye_target_y_rotation",
+    "title": "Eye Target Y Rotation Query",
+    "description": "Returns the Y eye rotation of the entity if it makes sense, else it returns 0.0.",
+    "fields": []
+  }
+}

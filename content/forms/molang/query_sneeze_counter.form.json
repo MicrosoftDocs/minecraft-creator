@@ -1,0 +1,10 @@
+{
+  "id": "query.sneeze_counter",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.sneeze_counter",
+    "title": "Sneeze Counter Query",
+    "description": "Returns the sneeze counter of the entity.",
+    "fields": []
+  }
+}

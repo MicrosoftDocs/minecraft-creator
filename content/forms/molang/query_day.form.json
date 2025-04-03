@@ -1,0 +1,10 @@
+{
+  "id": "query.day",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.day",
+    "title": "Day Query",
+    "description": "Returns the day of the current level.",
+    "fields": []
+  }
+}

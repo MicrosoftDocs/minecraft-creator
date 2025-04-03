@@ -1,0 +1,10 @@
+{
+  "id": "query.previous_squish_value",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.previous_squish_value",
+    "title": "Previous Squish Value Query",
+    "description": "Returns the previous squish value for the current entity, or 0.0 if this doesn't make sense.",
+    "fields": []
+  }
+}

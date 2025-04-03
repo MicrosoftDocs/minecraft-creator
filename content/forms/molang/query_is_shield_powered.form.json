@@ -1,0 +1,10 @@
+{
+  "id": "query.is_shield_powered",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_shield_powered",
+    "title": "Is Shield Powered Query",
+    "description": "Returns 1.0f if the entity has an active powered shield if it makes sense, else it returns 0.0.",
+    "fields": []
+  }
+}

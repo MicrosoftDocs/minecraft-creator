@@ -1,0 +1,10 @@
+{
+  "id": "query.is_swimming",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_swimming",
+    "title": "Is Swimming Query",
+    "description": "Returns 1.0 if the entity is swimming, else it returns 0.0.",
+    "fields": []
+  }
+}

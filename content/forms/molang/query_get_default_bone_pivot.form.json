@@ -1,0 +1,10 @@
+{
+  "id": "query.get_default_bone_pivot",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.get_default_bone_pivot",
+    "title": "Get Default Bone Pivot Query",
+    "description": "Gets specified axis of the specified bone orientation pivot.",
+    "fields": []
+  }
+}

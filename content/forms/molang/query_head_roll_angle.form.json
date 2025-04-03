@@ -1,0 +1,10 @@
+{
+  "id": "query.head_roll_angle",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.head_roll_angle",
+    "title": "Head Roll Angle Query",
+    "description": "Returns the roll angle of the head of the entity if it makes sense, else it returns 0.0.",
+    "fields": []
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "query.lie_amount",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.lie_amount",
+    "title": "Lie Amount Query",
+    "description": "Returns the lie down amount for the entity.",
+    "fields": []
+  }
+}

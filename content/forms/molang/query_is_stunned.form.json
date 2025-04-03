@@ -1,0 +1,10 @@
+{
+  "id": "query.is_stunned",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_stunned",
+    "title": "Is Stunned Query",
+    "description": "Returns 1.0 if the entity is currently stunned, else it returns 0.0.",
+    "fields": []
+  }
+}

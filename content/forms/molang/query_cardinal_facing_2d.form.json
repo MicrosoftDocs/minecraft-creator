@@ -1,0 +1,10 @@
+{
+  "id": "query.cardinal_facing_2d",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.cardinal_facing_2d",
+    "title": "Cardinal Facing 2d Query",
+    "description": "Returns the current facing of the player ignoring up/down part of the direction (North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0).",
+    "fields": []
+  }
+}

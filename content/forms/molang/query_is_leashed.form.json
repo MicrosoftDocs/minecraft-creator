@@ -1,0 +1,10 @@
+{
+  "id": "query.is_leashed",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_leashed",
+    "title": "Is Leashed Query",
+    "description": "Returns 1.0 if the entity is leashed to something, else it returns 0.0.",
+    "fields": []
+  }
+}

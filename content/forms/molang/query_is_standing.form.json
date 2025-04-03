@@ -1,0 +1,10 @@
+{
+  "id": "query.is_standing",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_standing",
+    "title": "Is Standing Query",
+    "description": "Returns 1.0 if the entity is standing, else it returns 0.0.",
+    "fields": []
+  }
+}

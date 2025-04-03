@@ -1,0 +1,10 @@
+{
+  "id": "query.rider_head_x_rotation",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.rider_head_x_rotation",
+    "title": "Rider Head X Rotation Query",
+    "description": "Takes one argument as a parameter. Returns the head x world-rotation of the rider entity at the provided index, else it returns 0.0.",
+    "fields": []
+  }
+}

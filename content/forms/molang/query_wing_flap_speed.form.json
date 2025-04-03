@@ -1,0 +1,10 @@
+{
+  "id": "query.wing_flap_speed",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.wing_flap_speed",
+    "title": "Wing Flap Speed Query",
+    "description": "Returns the wing flap speed of the entity, or 0.0 if this doesn't make sense.",
+    "fields": []
+  }
+}

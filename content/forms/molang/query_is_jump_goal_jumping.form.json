@@ -1,0 +1,10 @@
+{
+  "id": "query.is_jump_goal_jumping",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_jump_goal_jumping",
+    "title": "Is Jump Goal Jumping Query",
+    "description": "Returns 1.0 if the entity is doing a jump goal jump, else it returns 0.0.",
+    "fields": []
+  }
+}

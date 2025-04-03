@@ -1,0 +1,10 @@
+{
+  "id": "query.is_grazing",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_grazing",
+    "title": "Is Grazing Query",
+    "description": "Returns 1.0 if the entity is grazing, or 0.0 if not.",
+    "fields": []
+  }
+}

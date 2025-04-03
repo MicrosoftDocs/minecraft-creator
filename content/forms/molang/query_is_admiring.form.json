@@ -1,0 +1,10 @@
+{
+  "id": "query.is_admiring",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_admiring",
+    "title": "Is Admiring Query",
+    "description": "Returns 1.0 if the entity is admiring, else it returns 0.0.",
+    "fields": []
+  }
+}

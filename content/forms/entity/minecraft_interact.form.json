@@ -43,6 +43,13 @@
         "dataType": 2
       },
       {
+        "id": "drop_item_y_offset",
+        "title": "Drop Item Y Offset",
+        "description": "Will offset the item drop position this amount in the y direction. Requires \"drop_item_slot\" to be specified.",
+        "defaultValue": 0,
+        "dataType": 3
+      },
+      {
         "id": "equip_item_slot",
         "title": "Equip Item Slot",
         "description": "The entity's slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.",

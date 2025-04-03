@@ -1,0 +1,10 @@
+{
+  "id": "query.time_since_last_vibration_detection",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.time_since_last_vibration_detection",
+    "title": "Time Since Last Vibration Detection Query",
+    "description": "Returns the time in seconds since the last vibration detected by the actor. On errors or if no vibration has been detected yet, returns -1. Available on the Client (Resource Packs) only.",
+    "fields": []
+  }
+}

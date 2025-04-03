@@ -1,0 +1,10 @@
+{
+  "id": "query.yaw_speed",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.yaw_speed",
+    "title": "Yaw Speed Query",
+    "description": "Returns the entity's yaw speed",
+    "fields": []
+  }
+}

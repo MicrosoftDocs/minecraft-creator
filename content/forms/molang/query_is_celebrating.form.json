@@ -1,0 +1,10 @@
+{
+  "id": "query.is_celebrating",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_celebrating",
+    "title": "Is Celebrating Query",
+    "description": "Returns 1.0 if the entity is celebrating, else it returns 0.0.",
+    "fields": []
+  }
+}

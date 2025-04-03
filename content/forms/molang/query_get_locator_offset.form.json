@@ -1,0 +1,10 @@
+{
+  "id": "query.get_locator_offset",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.get_locator_offset",
+    "title": "Get Locator Offset Query",
+    "description": "Gets specified axis of the specified locator offset.",
+    "fields": []
+  }
+}

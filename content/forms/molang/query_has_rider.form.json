@@ -1,0 +1,10 @@
+{
+  "id": "query.has_rider",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.has_rider",
+    "title": "Has Rider Query",
+    "description": "Returns 1.0 if the entity has a rider, else it returns 0.0",
+    "fields": []
+  }
+}

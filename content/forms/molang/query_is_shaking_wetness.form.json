@@ -1,0 +1,10 @@
+{
+  "id": "query.is_shaking_wetness",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_shaking_wetness",
+    "title": "Is Shaking Wetness Query",
+    "description": "Returns 1.0 if the entity is shaking water off, else it returns 0.0.",
+    "fields": []
+  }
+}
