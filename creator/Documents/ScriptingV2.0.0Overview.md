@@ -37,7 +37,7 @@ To help make the behavior more predictable, we've added more protections to the 
 
 ### Promise Resolution Changes
 
-In scripting V2.0.0, promises can now resolve alongside after events and system tasks during end-of-tick flushing of queues of deferred runs or asynchronous functions. In previous versions of scripting, promises were resolved only once at the end of the tick. This change will allow promises to resolve more frequently and more immediately after the action they are waiting on has been completed. Additionally, promises are also resolved once in early execution to allow for asynchronous imports to resolve before early execution is finished. 
+In scripting V2.0.0, promises can now resolve alongside after events and system tasks during end-of-tick flushing of queues of deferred runs or asynchronous functions. In previous versions of scripting, promises were resolved only once at the end of the tick. This change will allow promises to resolve more frequently and more immediately after the action they are waiting on has been completed. Additionally, promises are resolved once in early execution to allow for asynchronous imports to resolve before early execution is finished. 
 
 #### Scripting V2.0.0 Flushing Order
 
