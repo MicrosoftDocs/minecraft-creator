@@ -176,6 +176,7 @@ The biggest change with early execution is that most of the `world` object will 
 For backwards compatibility, scripting V1.x.x startup timing and capabilities has not been modified. Scripting v1.x.x does not use early execution and will be run at the same time as it is today. The general flow for loading the server with scripting:
 
 - V2 scripts are loaded and run with early execution
+- V2 scripts promises are resolved with early execution
 - V2 scripts receive the `system.beforeEvents.startup` event in early execution
 - Wait for the world to finish loading and the game to start ...
 - V1 scripts are loaded and run
