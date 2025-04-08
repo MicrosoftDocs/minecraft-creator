@@ -12,10 +12,12 @@ These properties are part of Block Culling used within block JSON files. This he
 
 ## Code Example of a Custom Block's Culling JSON file
 
-This section shows how to specify particular faces and/or bones in a geometry file for culling checks. 
+This section shows how to specify particular faces and/or bones in a geometry file for culling checks.
+
 Note that face culling and bone culling can both exist in the same culling file.
 
-A face or bone culls (becomes invisible) if the neighbor in the `"direction"` direction is full and opaque (a full cube, and drawing using the "opaque" render-method in the `minecraft:material_instances component`). 
+A face or bone culls (becomes invisible) if the neighbor in the `"direction"` direction is full and opaque (a full cube, and drawing using the "opaque" render-method in the `minecraft:material_instances component`).
+
 Note that if a `minecraft:transform` component rotates the block, the directions rotate as well.
 
 ```json
