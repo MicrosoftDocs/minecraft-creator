@@ -12,12 +12,22 @@ description: Contents of the @minecraft/server-editor.BuiltInUIManager class.
 Represents a UI session for a given player
 
 ## Methods
+- [activateTutorial](#activatetutorial)
 - [navigateToDocumentation](#navigatetodocumentation)
 - [navigateToFeedback](#navigatetofeedback)
 - [navigateToPauseScreen](#navigatetopausescreen)
 - [updateLogPanelVisibility](#updatelogpanelvisibility)
 - [updateUISettingsPanelVisibility](#updateuisettingspanelvisibility)
 - [updateWelcomePanelVisibility](#updatewelcomepanelvisibility)
+
+### **activateTutorial**
+`
+activateTutorial(): void
+`
+
+Activates tutorial overlay
+
+**Returns** *void*
 
 ### **navigateToDocumentation**
 `

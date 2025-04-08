@@ -45,6 +45,8 @@ description: Changelog of the `@minecraft/server-ui` module
 - Changed function *[`toggle`](ModalFormData.md#toggle)*
   - Added argument `toggleOptions`
   - Removed argument `defaultValue`
+#### Changed *[`ModalFormResponse`](ModalFormResponse.md)*
+- Changed type for *[`formValues`](ModalFormResponse.md#formvalues)* from (*boolean* | *number* | *string*)[] to (*boolean* | *number* | *string* | *undefined*)[]
 ## 1.3.0
 #### Added module dependency `@minecraft/server@1.3.0` 
 #### Removed module dependency `@minecraft/server@1.2.0` 

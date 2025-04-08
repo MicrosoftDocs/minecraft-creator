@@ -11,37 +11,6 @@ description: Contents of the @minecraft/server.BlockPermutation class.
 
 Contains the combination of type [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md) and properties (also sometimes called block state) which describe a block (but does not belong to a specific [*@minecraft/server.Block*](../../../scriptapi/minecraft/server/Block.md)).
 
-#### Examples
-
-##### ***addTranslatedSign.ts***
-
-```typescript
-import { world, BlockPermutation, BlockSignComponent, BlockComponentTypes, DimensionLocation } from "@minecraft/server";
-import { MinecraftBlockTypes } from "@minecraft/vanilla-data";
-
-function addTranslatedSign(log: (message: string, status?: number) => void, targetLocation: DimensionLocation) {
-  const players = world.getPlayers();
-
-  const dim = players[0].dimension;
-
-  const signBlock = dim.getBlock(targetLocation);
-
-  if (!signBlock) {
-    log("Could not find a block at specified location.");
-    return -1;
-  }
-  const signPerm = BlockPermutation.resolve(MinecraftBlockTypes.StandingSign, { ground_sign_direction: 8 });
-
-  signBlock.setPermutation(signPerm);
-
-  const signComponent = signBlock.getComponent(BlockComponentTypes.Sign) as BlockSignComponent;
-
-  signComponent?.setText({ translate: "item.skull.player.name", with: [players[0].name] });
-}
-```
-
-(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/addTranslatedSign.ts) code sandbox.
-
 ## Properties
 
 ### **type**
@@ -81,7 +50,6 @@ Returns whether this block is removed when touched by liquid.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*
 
 ### **canContainLiquid**
 `
@@ -99,7 +67,6 @@ Returns whether this block can have a liquid placed over it, i.e. be waterlogged
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*
 
 ### **getAllStates**
 `
@@ -123,6 +90,8 @@ Retrieves a prototype item stack based on this block permutation that can be use
   Number of instances of this block to place in the prototype item stack.
 
 **Returns** [*ItemStack*](ItemStack.md) | *undefined*
+  
+Notes:
 
 ### **getState**
 `
@@ -197,7 +166,6 @@ Returns whether this block stops liquid from flowing.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*
 
 ### **liquidSpreadCausesSpawn**
 `
@@ -215,7 +183,6 @@ Returns whether this block is removed and spawns its item when touched by liquid
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*
 
 ### **matches**
 `

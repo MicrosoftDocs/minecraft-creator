@@ -38,7 +38,6 @@ Type: [*ClientSystemInfo*](ClientSystemInfo.md)
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **graphicsMode**

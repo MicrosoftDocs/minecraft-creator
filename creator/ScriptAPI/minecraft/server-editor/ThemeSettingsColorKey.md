@@ -66,6 +66,8 @@ description: Contents of the @minecraft/server-editor.ThemeSettingsColorKey enum
 `ElementBorder = "ElementBorder"`
 ### **Error**
 `Error = "Error"`
+### **FocusErrorOutline**
+`FocusErrorOutline = "FocusErrorOutline"`
 ### **FocusOutline**
 `FocusOutline = "FocusOutline"`
 ### **HeaderBackground**

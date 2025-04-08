@@ -26,7 +26,6 @@ type EntityComponentTypeMap = {
   'floats_in_liquid': EntityFloatsInLiquidComponent;
   'flying_speed': EntityFlyingSpeedComponent;
   'friction_modifier': EntityFrictionModifierComponent;
-  'ground_offset': EntityGroundOffsetComponent;
   'healable': EntityHealableComponent;
   'health': EntityHealthComponent;
   'inventory': EntityInventoryComponent;
@@ -61,7 +60,6 @@ type EntityComponentTypeMap = {
   'minecraft:floats_in_liquid': EntityFloatsInLiquidComponent;
   'minecraft:flying_speed': EntityFlyingSpeedComponent;
   'minecraft:friction_modifier': EntityFrictionModifierComponent;
-  'minecraft:ground_offset': EntityGroundOffsetComponent;
   'minecraft:healable': EntityHealableComponent;
   'minecraft:health': EntityHealthComponent;
   'minecraft:inventory': EntityInventoryComponent;

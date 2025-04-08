@@ -66,10 +66,6 @@ Represents the flying speed of an entity.
 `FrictionModifier = "minecraft:friction_modifier"`
 
 Defines how much friction affects this entity.
-### **GroundOffset**
-`GroundOffset = "minecraft:ground_offset"`
-
-Sets the offset from the ground that the entity is actually at.
 ### **Healable**
 `Healable = "minecraft:healable"`
 

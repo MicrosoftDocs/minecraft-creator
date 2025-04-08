@@ -1032,7 +1032,7 @@ Runs a synchronous command on the entity.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*CommandError*](CommandError.md), *Error*
+  - Throws [*CommandError*](CommandError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setDynamicProperties**

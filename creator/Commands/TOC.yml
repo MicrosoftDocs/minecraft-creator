@@ -16,6 +16,8 @@
   href: commands/clearspawnpoint.md
 - name: clone
   href: commands/clone.md
+- name: controlscheme
+  href: commands/controlscheme.md
 - name: damage
   href: commands/damage.md
 - name: daylock

@@ -17,6 +17,7 @@ description: List and descriptions of Minecraft commands and enums
 | [`/clear`](./commands/clear.md) | Clears items from player inventory. | Game Directors | Yes |
 | [`/clearspawnpoint`](./commands/clearspawnpoint.md) | Removes the spawn point for a player. | Game Directors | Yes |
 | [`/clone`](./commands/clone.md) | Clones a set of blocks from one region to another. | Game Directors | Yes |
+| [`/controlscheme`](./commands/controlscheme.md) | Sets or clears control scheme. | Game Directors | Yes |
 | [`/damage`](./commands/damage.md) | Apply damage to the specified entities. See more in the [Damage Command documentation](https:&#x2F;&#x2F;learn.microsoft.com&#x2F;minecraft&#x2F;creator&#x2F;documents&#x2F;commandsdamageintroduction). | Game Directors | Yes |
 | [`/daylock`](./commands/daylock.md) | Locks and unlocks the day-night cycle. | Game Directors | Yes |
 | [`/deop`](./commands/deop.md) | Revokes operator status from a player. | Admin | No |

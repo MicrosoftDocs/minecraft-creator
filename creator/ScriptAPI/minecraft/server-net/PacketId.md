@@ -78,6 +78,8 @@ Represents the unique type of network packet.
 `ChunkRadiusUpdatedPacket = "ChunkRadiusUpdatedPacket"`
 ### **ClientboundCloseFormPacket**
 `ClientboundCloseFormPacket = "ClientboundCloseFormPacket"`
+### **ClientboundControlSchemeSetPacket**
+`ClientboundControlSchemeSetPacket = "ClientboundControlSchemeSetPacket"`
 ### **ClientboundDebugRendererPacket**
 `ClientboundDebugRendererPacket = "ClientboundDebugRendererPacket"`
 ### **ClientboundMapItemDataPacket**

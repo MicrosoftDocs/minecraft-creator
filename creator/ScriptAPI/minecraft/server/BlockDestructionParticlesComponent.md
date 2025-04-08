@@ -29,7 +29,6 @@ Type: *string*
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
 
 ### **tintMethod**
 `read-only tintMethod: TintMethod;`
@@ -40,7 +39,6 @@ Type: [*TintMethod*](TintMethod.md)
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
 
 ## Constants
 

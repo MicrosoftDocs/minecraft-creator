@@ -29,7 +29,6 @@ Type: [*RGBA*](RGBA.md)
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
 
 ### **tintedColor**
 `read-only tintedColor: RGBA;`
@@ -47,7 +46,6 @@ Type: [*TintMethod*](TintMethod.md)
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
 
 ## Constants
 

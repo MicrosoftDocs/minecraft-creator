@@ -69,7 +69,6 @@ getBoundingBox(): minecraftserver.BlockBoundingBox
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*
 
 ### **moveTo**
 `

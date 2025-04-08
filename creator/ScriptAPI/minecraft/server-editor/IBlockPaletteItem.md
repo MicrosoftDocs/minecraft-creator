@@ -51,4 +51,3 @@ setBlock(block: minecraftserver.BlockPermutation | minecraftserver.BlockType | s
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*

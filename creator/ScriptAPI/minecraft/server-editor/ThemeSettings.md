@@ -35,7 +35,6 @@ addNewTheme(id: string, name?: string, sourceThemeId?: string): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **canThemeBeModified**
 `
@@ -58,7 +57,6 @@ deleteTheme(id: string): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **getCurrentTheme**
 `
@@ -96,7 +94,6 @@ getThemeName(id: string): string
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*
 
 ### **resolveColorKey**
 `
@@ -119,7 +116,6 @@ setCurrentTheme(id: string): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **setThemeName**
 `
@@ -133,7 +129,6 @@ setThemeName(id: string, name: string): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **updateThemeColor**
 `
@@ -148,4 +143,3 @@ updateThemeColor(id: string, key: ThemeSettingsColorKey, newColor: minecraftserv
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*

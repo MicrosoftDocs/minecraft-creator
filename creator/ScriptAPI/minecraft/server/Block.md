@@ -339,7 +339,7 @@ Gets a component (that represents additional capabilities) for a block - for exa
 #### **Parameters**
 - **componentId**: *T*
   
-  The identifier of the component (e.g., 'minecraft:inventory'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.BlockComponentTypes*](../../../scriptapi/minecraft/server/BlockComponentTypes.md) enum.
+  The identifier of the component (e.g., 'minecraft:inventory'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs are those in the [*@minecraft/server.BlockComponentTypes*](../../../scriptapi/minecraft/server/BlockComponentTypes.md) enum and custom component IDs registered with the [*@minecraft/server.BlockComponentRegistry*](../../../scriptapi/minecraft/server/BlockComponentRegistry.md).
 
 **Returns** *BlockComponentReturnType<T> | undefined* - Returns the component if it exists on the block, otherwise undefined.
   

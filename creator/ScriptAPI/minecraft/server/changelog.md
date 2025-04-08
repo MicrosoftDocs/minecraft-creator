@@ -51,6 +51,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockComponentRegistry`](BlockComponentRegistry.md)*
 - Changed function *[`registerCustomComponent`](BlockComponentRegistry.md#registercustomcomponent)*
   - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
+#### Added *[`BlockCustomComponentInstance`](BlockCustomComponentInstance.md)*
 #### Added *[`BlockDestructionParticlesComponent`](BlockDestructionParticlesComponent.md)*
 #### Changed *[`BlockFluidContainerComponent`](BlockFluidContainerComponent.md)*
 - Changed constant *[`componentId`](BlockFluidContainerComponent.md#componentid)* from `minecraft:fluidContainer` to `minecraft:fluid_container`
@@ -133,6 +134,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntityFrictionModifierComponent`](EntityFrictionModifierComponent.md)*
 - Changed read-only flag for *[`value`](EntityFrictionModifierComponent.md#value)* from `false` to `true`
 - Changed type for *[`value`](EntityFrictionModifierComponent.md#value)* from *number* to *number* (throws exceptions)
+#### Removed *EntityGroundOffsetComponent*
 #### Changed *[`EntityInventoryComponent`](EntityInventoryComponent.md)*
 - Changed type for *[`container`](EntityInventoryComponent.md#container)* from [*Container*](Container.md) to [*Container*](Container.md) (throws exceptions)
 #### Added *[`EntityIterator`](EntityIterator.md)*
@@ -279,6 +281,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`CustomCommandStatus`](CustomCommandStatus.md)
 #### Added enum [`Difficulty`](Difficulty.md)
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
+- Removed value `GroundOffset`
 - Added value `Npc`
 #### Changed enum [`EntityDamageCause`](EntityDamageCause.md)
 - Removed value `suicide`

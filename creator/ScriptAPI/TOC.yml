@@ -182,6 +182,8 @@
       href: minecraft/server/BlockComponentStepOnEvent.md
     - name: BlockComponentTickEvent
       href: minecraft/server/BlockComponentTickEvent.md
+    - name: BlockCustomComponentInstance
+      href: minecraft/server/BlockCustomComponentInstance.md
     - name: BlockDestructionParticlesComponent
       href: minecraft/server/BlockDestructionParticlesComponent.md
     - name: BlockEvent
@@ -318,8 +320,6 @@
       href: minecraft/server/EntityFlyingSpeedComponent.md
     - name: EntityFrictionModifierComponent
       href: minecraft/server/EntityFrictionModifierComponent.md
-    - name: EntityGroundOffsetComponent
-      href: minecraft/server/EntityGroundOffsetComponent.md
     - name: EntityHealableComponent
       href: minecraft/server/EntityHealableComponent.md
     - name: EntityHealthChangedAfterEvent

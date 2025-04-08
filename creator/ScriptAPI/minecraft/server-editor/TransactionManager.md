@@ -46,7 +46,6 @@ addEntityOperation(entity: minecraftserver.Entity, type: EntityOperationType): b
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **addUserDefinedOperation**
 `

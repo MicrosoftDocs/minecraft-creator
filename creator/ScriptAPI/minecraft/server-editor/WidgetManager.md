@@ -26,7 +26,6 @@ createGroup(options?: WidgetGroupCreateOptions): WidgetGroup
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **deleteGroup**
 `
@@ -39,4 +38,3 @@ deleteGroup(groupToDelete: WidgetGroup): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)

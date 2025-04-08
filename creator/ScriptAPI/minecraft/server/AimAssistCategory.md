@@ -26,7 +26,6 @@ Type: *number*
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
 
 ### **defaultEntityPriority**
 `read-only defaultEntityPriority: number;`
@@ -37,7 +36,6 @@ Type: *number*
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
 
 ### **identifier**
 `read-only identifier: string;`
@@ -61,7 +59,6 @@ Gets the priority settings used for block targeting.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*
 
 ### **getEntityPriorities**
 `
@@ -74,4 +71,3 @@ Gets the priority settings used for entity targeting.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*

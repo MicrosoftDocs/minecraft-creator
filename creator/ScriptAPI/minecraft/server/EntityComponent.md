@@ -28,7 +28,6 @@ description: Contents of the @minecraft/server.EntityComponent class.
 - [*EntityFloatsInLiquidComponent*](EntityFloatsInLiquidComponent.md)
 - [*EntityFlyingSpeedComponent*](EntityFlyingSpeedComponent.md)
 - [*EntityFrictionModifierComponent*](EntityFrictionModifierComponent.md)
-- [*EntityGroundOffsetComponent*](EntityGroundOffsetComponent.md)
 - [*EntityHealableComponent*](EntityHealableComponent.md)
 - [*EntityInventoryComponent*](EntityInventoryComponent.md)
 - [*EntityIsBabyComponent*](EntityIsBabyComponent.md)

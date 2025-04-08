@@ -76,6 +76,7 @@ Applies shaking to the players' camera with a specified intensity and duration.
 Removes the spawn point for a player.
 - `clone`
 Clones blocks from one region to another.
+- `controlscheme`
 - `damage`
 Apply damage to the specified entities.
 - `daylock`
