@@ -1,12 +1,19 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
 title: Biome JSON and Overview
-description: "A reference document discussing biomes"
+description: "A reference document discussing biomes and custom biomes"
 ms.service: minecraft-bedrock-edition
 ---
 
 # Biome JSON and Overview
+
+> [!VIDEO https://www.youtube.com/embed/zMF3JPahrPQ]
+*This video is an excellent way to quickly get up to speed on experimental custom biome features*
+
+'Biomes' are what we call a named set of properties that drive how the game behaves in a particular area. This includes resource pack settings like what music automatically plays or the color of the sky, and behavior pack settings like whether snow accumulates or what sorts of mobs can spawn there.
+
+ The blocks that are at every surface position in a Biome are typically specified by that Biome -- for example water, in the ocean or sand in the desert. Otherwise, the blocks that you may think of when you visualize a particular Biome are from other systems like '[features](../FeaturesTaxonomy.md)' (for example tree leaves, flowers, and iron ore). Similarly, structures and entities may be associated with Biomes but are not part of the Biome itself.
 
 Minecraft biomes can have different terrain characteristics. By writing custom biome data you could change the:
 
@@ -18,7 +25,36 @@ Minecraft biomes can have different terrain characteristics. By writing custom b
 - climate
 - ...and more!
 
-Be sure to also check out [the ways to customize the audio and visual of a biome](./../../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md) for more on using client biomes files to customize audio and visual aspects of a biome.
+Also, be sure to check out [the ways to customize the audio and visual experience of a biome](./../../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md) for more on using client biomes files to customize audio and visual aspects of a biome.
+
+### How does the Minecraft Overworld generate?
+
+In simple terms, the Minecraft engine combines the level seed and the three-dimensional XYZ coordinates of a block to generate a set of smoothly changing 'noise' values. These are called things like 'humidity', 'erosion', and 'weirdness'. The game then uses those 'noise' values to two different bits of logic. The first bit of logic is used to generate a relatively simple shape of the world. You can imagine this as Minecraft with only air, water, and stone. The second bit of logic chooses which Biome should be assigned to that location. For example a warm and dry area with flat terrain that isn't too high might be assigned to be a Desert. 
+
+After the general shape of the world is made, and the Biome is selected, the visually interesting work of placing 'features' is done - for example a Desert area gets cacti installed. (This glosses over several other interesting steps like placement of structures and creation of caves. This game is complicated!) Finally, after all of the block generation is done, the game can start running various gameplay things in the area, like spawning the appropriate entities or doing the calculations required to turn a concept like 'open fence gate' to the series of geometry shapes required to render the area to the screen.
+
+### How does this compare to the Overworld before Caves & Cliffs Part 2?
+
+The 'Caves & Cliffs Part 2' update changed the Minecraft Overworld in several big ways. The relevant change is that the generation logic was upgraded from a 2-dimensional approach to a 3-dimensional approach. One part of that change is obvious - being able to consider the Y coordinate (which holds the height of a position) meant that one Biome's blocks and features could be generated directly above another Biome's blocks and features. For example, a Plains could be visible at the surface while digging straight down (Editor note: don't do that) could reveal the Deep Dark or a Lush Cave.
+
+The other big part of the change from 2-D to 3-D Biomes was where in that process the Biome was selected. Before the change, the Biome was selected much earlier, to the degree that it could affect the shape of the world before any of the Biome-specific blocks and features were placed. This change was necessary for a variety of reasons, but it did have the side-effect that Biomes no longer caused themselves to appear in the Overworld simply by being known to the game engine. Unfortunately, this meant that custom biomes as defined by the older experiment stopped appearing in the Overworld.
+
+## Adding custom biomes
+
+Custom biomes can be deployed in one of two ways:
+
+1. Supplying a behavior pack biome definition that overrides an Overworld biome definition. For example, a biome definition with an identifier of `desert` will override the definition of vanilla desert biomes. You could install dirt as a replacement for sand, for example.
+1. New [partial biome replacements](./CustomPartialBiomeReplacement.md). With this experimental feature, you can insert new biomes that, for example, take over some portion of an existing vanilla biome.
+
+You can see examples of these types of biome overrides on GitHub via the [Chill Oasis sample](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features).
+
+Keep in mind that a lot of power in custom biomes is found in the ability to override visual and audio aspects of the biome. In addition to behavior pack biome overrides of the kinds of blocks a biome will add, you can override several visual and audio characteristics of a biome in the [client biome definition](./../../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md).
+
+## Biome JSON definitions
+
+Biomes are read from JSON files in the biomes subfolders of behavior packs. Loading enforces one biome per file; and the file name and the actual biome name must match. Adding a file with a new name to the biome data location will make it available for the game to use, while existing biomes can be overridden using files that match their existing name. Note that if you add a new biome, you'll need to write component data that allows it to participate in world generation, or else it won't show up in your worlds!
+
+Biomes are read from JSON files in the biomes subfolders of behavior packs. 
 
 ## JSON format
 
@@ -32,7 +68,7 @@ There are basically two categories of components:
 
 1. 'tags' which are defined under the "minecraft:tags" component. Tags consist of alphanumeric characters, along with '.' and '_'. A tag is attached to the biome so that either code or data may check for its existence.
 
-## Biome Definition
+## Biome Definitions
 
 Contains a description and components to define a biome.
 
@@ -69,24 +105,9 @@ Specifies a particular block. Can be a string block name or a JSON object.
 
 ## Biome Components
 
-|Biome Component JSON |
-|:-----|
-|[capped_surface](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_capped_surface.md)|
-|[climate](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_climate.md)|
-|[creature_spawn_probability](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_creature_spawn_probability.md)|
-|[frozen_ocean_surface](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_frozen_ocean_surface.md)|
-|[mesa_surface](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_frozen_ocean_surface.md)|
-|[frozen_ocean_surface](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_frozen_ocean_surface.md)|
-|[mountain_parameters](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_mountain_parameters.md)|
-|[multinoise_generation_rules](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_multinoise_generation_rules.md)|
-|[overworld_generation_rules](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_overworld_generation_rules.md)|
-|[overworld_height](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_overworld_height.md)|
-|[surface_material_adjustments](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_surface_material_adjustments.md)|
-|[surface_parameters](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_surface_parameters.md)|
-|[swamp_surface](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_swamp_surface.md)|
-|[tags](./../../Reference/Content/BiomesReference/Examples/Components/minecraftBiomes_tags.md)|
+See [this article](./../../Reference/Content/BiomesReference/Examples/ComponentList.md) for a list of biome components you can use within a behavior pack.
 
-Here is a sample biome schema with additional details and the full list of namespaced components:
+See [this article](./../../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md) for a list of client biome components you can use within a resource pack.
 
 ### Example
 
@@ -133,266 +154,3 @@ Here is a sample biome schema with additional details and the full list of names
   }
 }
 ```
-
-## Adding Biomes
-
-Biomes are read from JSON files in the biomes subfolders of behavior packs. Loading enforces one biome per file; and the file name and the actual biome name must match. Adding a file with a new name to the biome data location will make it available for the game to use, while existing biomes can be overridden using files that match their existing name. Note that if you add a new biome, you'll need to write component data that allows it to participate in world generation (as shown in the full schema below), or else it won't show up in your worlds!
-
-Biomes are read from JSON files in the biomes subfolders of behavior packs. 
-
-Loading enforces one biome per file, and the file name and the actual biome name must match. Adding a file with a new name to the biome data location will make it available for the game to use, while existing biomes can be overridden using files that match their existing name. Note that if you add a new biome, you'll need to write component data that allows it to participate in world generation (as shown in the full schema below), or else it won't show up in your worlds!
-
-### Schema
-
-```json
- {
-      object "minecraft:climate"[0,7] : opt // Describes temperature, humidity, precipitation, etc.  Biomes without this component will have default values.
-      {
-          float "temperature" : opt
-          float "downfall" : opt
-          float "red_spores" : opt
-          float "blue_spores" : opt
-          float "ash" : opt
-          float "white_ash" : opt
-          array "snow_accumulation"[2] : opt
-          {
-              float "[0..0]"
-              float "[1..1]"
-          }
-      }
-      object "minecraft:overworld_height"[0,2] : opt // Noise parameters used to drive terrain height in the Overworld.
-      {
-          array "noise_params"[2] : opt
-          {
-              float "[0..0]"
-              float "[1..1]"
-          }
-          string "noise_type"<"stone_beach", "deep_ocean", "default", "default_mutated", "lowlands", "river", "ocean", "taiga", "mountains", "highlands", "mushroom", "less_extreme", "extreme", "beach", "swamp"> : opt
-      }
-      object "minecraft:forced_features"[0,1] : opt // Force specific decorative features (trees, plants, etc.) to appear in this biome, regardless of normal decoration rules.
-      {
-          array "<identifier>" : opt
-          {
-              object "<any array element>" : opt
-              {
-                  molang "iterations" // Number of scattered positions to generate
-                  object "scatter_chance" : opt // Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
-                  {
-                      int "numerator"<1-*>
-                      int "denominator"<1-*>
-                  }
-                  molang "scatter_chance" : opt // Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.
-                  enumerated_value "coordinate_eval_order"<"xyz", "xzy", "yxz", "yzx", "zxy", "zyx"> : opt // The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to "xzy".
-                  molang "x" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
-                  object "x" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
-                  {
-                      enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
-                      int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
-                      int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
-                      array "extent"[2]
-                      {
-                          molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                          molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                      }
-                  }
-                  molang "z" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
-                  object "z" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
-                  {
-                      enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
-                      int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
-                      int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
-                      array "extent"[2]
-                      {
-                          molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                          molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                      }
-                  }
-                  molang "y" : opt // Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below.
-                  object "y" : opt // Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.
-                  {
-                      enumerated_value "distribution"<"uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"> // Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered)
-                      int "step_size"<1-*> : opt // When the distribution type is grid, defines the distance between steps along this axis
-                      int "grid_offset"<0-*> : opt // When the distribution type is grid, defines the offset along this axis
-                      array "extent"[2]
-                      {
-                          molang "[0..0]" : opt // Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                          molang "[1..1]" : opt // Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around
-                      }
-                  }
-                  feature_reference "places_feature"
-                  string "identifier"
-              }
-          }
-      }
-      object "minecraft:ignore_automatic_features" : opt // No features will be automatically attached to this biome, only features specified in the minecraft:forced_features component will appear.
-      object "minecraft:consolidated_features" : opt
-      object "minecraft:surface_parameters"[0,6] : opt // Control the blocks used for the default Minecraft Overworld terrain generation.
-      {
-           "top_material" // Controls the block type used for the surface of this biome.
-           "mid_material" // Controls the block type used in a layer below the surface of this biome.
-           "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
-           "foundation_material" // Controls the block type used deep underground in this biome.
-           "sea_material" // Controls the block type used for the bodies of water in this biome.
-          int "sea_floor_depth" // Controls how deep below the world water level the floor should occur.
-      }
-      object "minecraft:surface_material_adjustments"[0,1] : opt // Specify fine-detail changes to blocks used in terrain generation (based on a noise function)
-      {
-          array "adjustments" : opt // All adjustments that match the column's noise values will be applied in the order listed.
-          {
-              object "<any array element>"
-              {
-                  object "materials"
-                  {
-                       "top_material" : opt // Controls the block type used for the surface of this biome when this adjustment is active.
-                       "mid_material" : opt // Controls the block type used in a layer below the surface of this biome when this adjustment is active.
-                       "sea_floor_material" : opt // Controls the block type used as a floor for bodies of water in this biome when this adjustment is active.
-                       "foundation_material" : opt // Controls the block type used deep underground in this biome when this adjustment is active.
-                       "sea_material" : opt // Controls the block type used in the bodies of water in this biome when this adjustment is active.
-                  }
-                  array "noise_range"[2] : opt // Defines a range of noise values [min, max) for which this adjustment should be applied.
-                  {
-                      float "[0..0]"<-1.000000-1.000000>
-                      float "[1..1]"<-1.000000-1.000000>
-                  }
-                  array "height_range"[2] : opt // Defines a range of noise values [min, max] for which this adjustment should be applied.
-                  {
-                      molang "[0..0]"
-                      molang "[1..1]"
-                  }
-                  float "noise_frequency_scale" : opt // The scale to multiply by the position when accessing the noise value for the material adjustments.
-              }
-          }
-      }
-      object "minecraft:swamp_surface"[0,6] : opt // Similar to overworld_surface.  Adds swamp surface details.
-      {
-           "top_material" // Controls the block type used for the surface of this biome.
-           "mid_material" // Controls the block type used in a layer below the surface of this biome.
-           "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
-           "foundation_material" // Controls the block type used deep underground in this biome.
-           "sea_material" // Controls the block type used for the bodies of water in this biome.
-          int "sea_floor_depth" // Controls how deep below the world water level the floor should occur.
-      }
-      object "minecraft:frozen_ocean_surface"[0,6] : opt // Similar to overworld_surface.  Adds icebergs.
-      {
-           "top_material" // Controls the block type used for the surface of this biome.
-           "mid_material" // Controls the block type used in a layer below the surface of this biome.
-           "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
-           "foundation_material" // Controls the block type used deep underground in this biome.
-           "sea_material" // Controls the block type used for the bodies of water in this biome.
-          int "sea_floor_depth" // Controls how deep below the world water level the floor should occur.
-      }
-      object "minecraft:mesa_surface"[0,10] : opt // Similar to overworld_surface.  Adds colored strata and optional pillars.
-      {
-           "top_material" // Controls the block type used for the surface of this biome.
-           "mid_material" // Controls the block type used in a layer below the surface of this biome.
-           "sea_floor_material" // Controls the block type used as a floor for bodies of water in this biome.
-           "foundation_material" // Controls the block type used deep underground in this biome.
-           "sea_material" // Controls the block type used for the bodies of water in this biome.
-          int "sea_floor_depth" // Controls how deep below the world water level the floor should occur.
-           "clay_material"
-           "hard_clay_material"
-          bool "bryce_pillars"
-          bool "has_forest"
-      }
-      object "minecraft:nether_surface" : opt // Use default Minecraft Nether terrain generation.
-      object "minecraft:the_end_surface" : opt // Use default Minecraft End terrain generation.
-      object "minecraft:capped_surface"[0,5] : opt // Generates surface on blocks with non-solid blocks above or below.
-      {
-          array "floor_materials"[1,*] // Materials used for the surface floor.
-          {
-              block_reference "<any array element>"
-          }
-          array "ceiling_materials"[1,*] // Materials used for the surface ceiling.
-          {
-              block_reference "<any array element>"
-          }
-          block_reference "sea_material" // Material used to replace air blocks below sea level.
-          block_reference "foundation_material" // Material used to replace solid blocks that are not surface blocks.
-          block_reference "beach_material" : opt // Material used to decorate surface near sea level.
-      }
-      object "minecraft:mountain_parameters"[0,3] : opt // Noise parameters used to drive mountain terrain generation in Overworld
-      {
-          float "peaks_factor" : opt
-          object "steep_material_adjustment" : opt // Defines surface material for steep slopes
-          {
-               "material" : opt // Block type use as steep material.
-              bool "north_slopes" : opt // Enable for north facing slopes
-              bool "south_slopes" : opt // Enable for south facing slopes
-              bool "west_slopes" : opt // Enable for west facing slopes
-              bool "east_slopes" : opt // Enable for east facing slopes
-          }
-          object "top_slide" : opt // Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high
-          {
-              bool "enabled" // If false, top slide will be disabled. If true, other parameters will be taken into account
-          }
-      }
-      object "minecraft:overworld_generation_rules"[0,5] : opt // Control how this biome is instantiated (and then potentially modified) during world generation of the overworld.
-      {
-          biome_reference "hills_transformation" : opt
-          array "hills_transformation"[1,*] : opt
-          {
-              biome_reference "<any array element>" : opt
-              array "<any array element>"[2] : opt
-              {
-                  biome_reference "[0..0]"
-                  int "[1..1]"
-              }
-          }
-          biome_reference "mutate_transformation" : opt
-          array "mutate_transformation"[1,*] : opt
-          {
-              biome_reference "<any array element>" : opt
-              array "<any array element>"[2] : opt
-              {
-                  biome_reference "[0..0]"
-                  int "[1..1]"
-              }
-          }
-          array "generate_for_climates" : opt // Controls the world generation climate categories that this biome can spawn for.  A single biome can be associated with multiple categories with different weightings.
-          {
-              array "<any array element>"[2]
-              {
-                  enumerated_value "[0..0]"<"medium", "warm", "lukewarm", "cold", "frozen"> // Name of a climate category
-                  int "[1..1]" // Weight with which this biome should be selected, relative to other biomes in the same category
-              }
-          }
-          biome_reference "river_transformation" : opt
-          array "river_transformation"[1,*] : opt
-          {
-              biome_reference "<any array element>" : opt
-              array "<any array element>"[2] : opt
-              {
-                  biome_reference "[0..0]"
-                  int "[1..1]"
-              }
-          }
-          biome_reference "shore_transformation" : opt
-          array "shore_transformation"[1,*] : opt
-          {
-              biome_reference "<any array element>" : opt
-              array "<any array element>"[2] : opt
-              {
-                  biome_reference "[0..0]"
-                  int "[1..1]"
-              }
-          }
-      }
-      object "minecraft:multinoise_generation_rules"[0,5] : opt // Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.
-      {
-          float "target_temperature" : opt // Temperature with which this biome should selected, relative to other biomes.
-          float "target_humidity" : opt // Humidity with which this biome should selected, relative to other biomes.
-          float "target_altitude" : opt // Altitude with which this biome should selected, relative to other biomes.
-          float "target_weirdness" : opt // Weirdness with which this biome should selected, relative to other biomes.
-          float "weight" : opt // Weight with which this biome should selected, relative to other biomes.
-      }
-      object "minecraft:legacy_world_generation_rules" : opt // Additional world generation control applicable only to legacy limited worlds.
-      object "minecraft:tags"[0,1] : opt // Attach arbitrary string tags to this biome
-      {
-          array "tags"[0,18446744073709551615] // String tags to apply to this biome.
-          {
-              string "<any array element>" : opt
-          }
-      }
-  }
-```
-

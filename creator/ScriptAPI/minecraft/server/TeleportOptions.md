@@ -11,58 +11,6 @@ description: Contents of the @minecraft/server.TeleportOptions class.
 
 Contains additional options for teleporting an entity.
 
-#### Examples
-
-##### ***teleport.ts***
-
-```typescript
-import { system, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
-
-function teleport(targetLocation: DimensionLocation) {
-  const cow = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Cow, targetLocation);
-
-  system.runTimeout(() => {
-    cow.teleport(
-      { x: targetLocation.x + 2, y: targetLocation.y + 2, z: targetLocation.z + 2 },
-      {
-        facingLocation: targetLocation,
-      }
-    );
-  }, 20);
-}
-```
-
-(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/teleport.ts) code sandbox.
-
-##### ***teleportMovement.ts***
-
-```typescript
-import { system, DimensionLocation } from "@minecraft/server";
-import { MinecraftEntityTypes } from "@minecraft/vanilla-data";
-
-function teleportMovement(targetLocation: DimensionLocation) {
-  const pig = targetLocation.dimension.spawnEntity(MinecraftEntityTypes.Pig, targetLocation);
-
-  let inc = 1;
-  const runId = system.runInterval(() => {
-    pig.teleport(
-      { x: targetLocation.x + inc / 4, y: targetLocation.y + inc / 4, z: targetLocation.z + inc / 4 },
-      {
-        facingLocation: targetLocation,
-      }
-    );
-
-    if (inc > 100) {
-      system.clearRun(runId);
-    }
-    inc++;
-  }, 4);
-}
-```
-
-(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/teleportMovement.ts) code sandbox.
-
 ## Properties
 
 ### **checkForBlocks**

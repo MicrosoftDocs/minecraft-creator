@@ -133,7 +133,6 @@ addBoundingBox(componentName: string, size: minecraftserver.Vector3, options?: W
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **addClipboardComponent**
 `
@@ -150,7 +149,6 @@ addClipboardComponent(componentName: string, clipboardItem?: ClipboardItem, opti
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **addEntityComponent**
 `
@@ -167,7 +165,6 @@ addEntityComponent(componentName: string, actorNameId: string, options?: WidgetC
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **addGizmoComponent**
 `
@@ -183,7 +180,6 @@ addGizmoComponent(componentName: string, options?: WidgetComponentGizmoOptions):
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **addGuideComponent**
 `
@@ -199,7 +195,6 @@ addGuideComponent(componentName: string, options?: WidgetComponentGuideOptions):
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **addRenderPrimitiveComponent**
 `
@@ -216,7 +211,6 @@ addRenderPrimitiveComponent(componentName: string, primitiveType: WidgetComponen
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **addSplineComponent**
 `
@@ -232,7 +226,6 @@ addSplineComponent(componentName: string, options?: WidgetComponentSplineOptions
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **addTextComponent**
 `
@@ -249,7 +242,6 @@ addTextComponent(componentName: string, label: string, options?: WidgetComponent
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **addVolumeOutline**
 `
@@ -266,7 +258,6 @@ addVolumeOutline(componentName: string, volume?: minecraftserver.BlockVolumeBase
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **delete**
 `
@@ -276,7 +267,6 @@ Notes:
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md), [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
 
 ### **deleteComponent**
 `
@@ -289,7 +279,6 @@ deleteComponent(componentOrName: string | WidgetComponentBase): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **getComponent**
 `
@@ -304,7 +293,6 @@ getComponent(componentName: string): WidgetComponentBase
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **getComponents**
 `

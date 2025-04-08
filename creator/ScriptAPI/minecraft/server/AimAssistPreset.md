@@ -26,7 +26,6 @@ Type: *string*
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
 
 ### **handSettings**
 `read-only handSettings?: string;`
@@ -37,7 +36,6 @@ Type: *string*
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
 
 ### **identifier**
 `read-only identifier: string;`
@@ -62,7 +60,6 @@ Gets the list of block/entity Ids to exclude from aim assist targeting.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*
 
 ### **getItemSettings**
 `
@@ -75,7 +72,6 @@ Gets the per-item aim-assist category Ids.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*
 
 ### **getLiquidTargetingItems**
 `
@@ -88,4 +84,3 @@ Gets the list of item Ids that will target liquid blocks with aim-assist when be
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*

@@ -47,6 +47,7 @@ Any components that this Biome uses.
 | minecraft:multinoise_generation_rules | *not set* | [Multinoise Generation Rules](#multinoise-generation-rules-item-type) item | Controls how this biome is instantiated (and then potentially modified) during world generation of the nether. |  | 
 | minecraft:overworld_generation_rules | *not set* | [Overworld Generation Rules](#overworld-generation-rules-item-type) item | Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld. |  | 
 | minecraft:overworld_height | *not set* | [Overworld Height](#overworld-height-item-type) item | Noise parameters used to drive terrain height in the Overworld. |  | 
+| minecraft:replace_biomes | *not set* | [Replace Biomes](#replace-biomes-item-type) item | Replaces a specified portion of one or more Minecraft biomes. |  | 
 | minecraft:surface_material_adjustments | *not set* | [Surface Material Adjustments](#surface-material-adjustments-item-type) item | Specify fine-detail changes to blocks used in terrain generation (based on a noise function). |  | 
 | minecraft:surface_parameters | *not set* | [Surface Parameters](#surface-parameters-item-type) item | Controls the blocks used for the default Minecraft Overworld terrain generation. |  | 
 | minecraft:swamp_surface | *not set* | [Swamp Surface](#swamp-surface-item-type) item | Similar to overworld_surface. Adds swamp surface details. |  | 
@@ -456,6 +457,29 @@ Noise parameters used to drive terrain height in the Overworld.
 |:----------|:-------------|:----|:-----------|:------------- |
 | noise_params | *not set* | Array of numbers | First value is depth - more negative means deeper underwater, while more positive means higher. Second value is scale, which affects how much noise changes as it moves from the surface. Value must have at least 2 items. Value must have at most 2 items. |  | 
 | noise_type | *not set* | String | Specifies a preset based on a built-in setting rather than manually using noise_params |  | 
+
+## Replace Biomes item type
+Replaces a specified portion of one or more Minecraft biomes.
+
+
+#### Replace Biomes Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| replacements | *not set* | Array of [Replacements](#replacements-item-type) items | List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list. |  | 
+
+## Replacements item type
+Represents the replacement information used to determine the placement of the overriding biome.
+
+
+#### Biome Replacement Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| amount | *not set* | Decimal number | Noise value used to determine whether or not the replacement is attempted, similar to a percentage. Must be in the range (0.0, 1.0]. Value must be <= 1. |  | 
+| dimension | *not set* | String | Dimension in which this replacement can happen. Must be 'minecraft:overworld'. |  | 
+| noise_frequency_scale | *not set* | Decimal number | Scaling value used to alter the frequency of replacement attempts. A lower frequency will mean a bigger contiguous biome area that occurs less often. A higher frequency will mean smaller contiguous biome areas that occur more often. Must be in the range (0.0, 100.0]. Value must be <= 100. |  | 
+| targets | *not set* | Array of strings | Biomes that are going to be replaced by the overriding biome. Value must have at least 1 items. |  | 
 
 ## Surface Material Adjustments item type
 Specify fine-detail changes to blocks used in terrain generation (based on a noise function).

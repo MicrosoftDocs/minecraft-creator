@@ -47,7 +47,6 @@ getContiguousSelection(properties?: ContiguousSelectionProperties): minecraftser
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **getDimensionLocationBoundingBox**
 `
@@ -92,7 +91,6 @@ getFacePreviewSelection(properties?: QuickExtrudeProperties): minecraftserver.Li
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **isLocationInsideCurrentDimensionBounds**
 `
@@ -149,4 +147,3 @@ trimVolumeToFitContents(volume: minecraftserver.BlockVolumeBase | RelativeVolume
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*

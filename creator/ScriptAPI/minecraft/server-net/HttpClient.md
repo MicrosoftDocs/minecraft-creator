@@ -9,32 +9,6 @@ description: Contents of the @minecraft/server-net.HttpClient class.
 ---
 # HttpClient Class
 
-#### Examples
-
-##### ***simpleHttpRequest.ts***
-
-```typescript
-import { HttpRequest, HttpHeader, HttpRequestMethod, http } from '@minecraft/server-net';
-
-async function updateScore() {
-    const req = new HttpRequest('http://localhost:3000/updateScore');
-
-    req.body = JSON.stringify({
-        score: 22,
-    });
-
-    req.method = HttpRequestMethod.Post;
-    req.headers = [
-        new HttpHeader('Content-Type', 'application/json'),
-        new HttpHeader('auth', 'my-auth-token'),
-    ];
-
-    await http.request(req);
-}
-```
-
-(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleHttpRequest.ts) code sandbox.
-
 ## Methods
 - [cancelAll](#cancelall)
 - [get](#get)

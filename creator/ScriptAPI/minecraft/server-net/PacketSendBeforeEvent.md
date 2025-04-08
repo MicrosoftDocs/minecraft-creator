@@ -26,8 +26,8 @@ The type of network packet.
 Type: [*PacketId*](PacketId.md)
 
 ### **recipients**
-`read-only recipients: minecraftserver.Player[];`
+`read-only recipients: (minecraftserver.Player | undefined)[];`
 
 Which clients the network packet is being sent to.
 
-Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)[]
+Type: ([*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md) | *undefined*)[]

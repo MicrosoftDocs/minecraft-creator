@@ -39,7 +39,6 @@ Type: [*RGB*](RGB.md)
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
 
 ## Constants
 

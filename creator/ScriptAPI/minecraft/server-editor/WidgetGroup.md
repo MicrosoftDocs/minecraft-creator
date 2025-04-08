@@ -57,7 +57,6 @@ createWidget(location: minecraftserver.Vector3, options?: WidgetCreateOptions): 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
 
 ### **delete**
 `
@@ -78,7 +77,6 @@ deleteWidget(widgetToDelete: Widget): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetError*](InvalidWidgetError.md), [*InvalidWidgetGroupError*](InvalidWidgetGroupError.md)
 
 ### **deselectAllWidgets**
 `

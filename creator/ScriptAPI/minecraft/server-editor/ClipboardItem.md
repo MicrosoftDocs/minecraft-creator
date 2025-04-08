@@ -62,7 +62,6 @@ getPredictedWriteVolume(location: minecraftserver.Vector3, options?: ClipboardWr
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **readFromStructure**
 `
@@ -110,4 +109,3 @@ Apply the contents of a ClipboardItem to the world at a given location using a s
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
