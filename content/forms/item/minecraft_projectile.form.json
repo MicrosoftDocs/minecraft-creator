@@ -120,11 +120,17 @@
         "id": "projectile_entity",
         "title": "projectile_entity",
         "description": "Which entity is to be fired as a projectile.",
-        "dataType": 2,
+        "dataType": 24,
         "validity": [
           {
             "comparison": "pattern",
             "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
+          }
+        ],
+        "alternates": [
+          {
+            "id": "projectile_entity",
+            "dataType": 24
           }
         ],
         "samples": {

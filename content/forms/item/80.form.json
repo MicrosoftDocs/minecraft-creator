@@ -694,11 +694,17 @@
                     "id": "entity",
                     "title": "entity",
                     "description": "The entity to be placed in the world.",
-                    "dataType": 2,
+                    "dataType": 24,
                     "validity": [
                       {
                         "comparison": "pattern",
                         "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
+                      }
+                    ],
+                    "alternates": [
+                      {
+                        "id": "entity",
+                        "dataType": 24
                       }
                     ]
                   },
@@ -765,16 +771,16 @@
                 "description": "When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly.",
                 "fields": [
                   {
-                    "id": "saturation_modifier",
-                    "title": "saturation_modifier",
-                    "description": "saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6.",
-                    "dataType": 3
-                  },
-                  {
                     "id": "nutrition",
                     "title": "nutrition",
                     "description": "Value that is added to the entity's nutrition when the item is used. Default is set to 0.",
                     "dataType": 0
+                  },
+                  {
+                    "id": "saturation_modifier",
+                    "title": "saturation_modifier",
+                    "description": "saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6.",
+                    "dataType": 3
                   },
                   {
                     "id": "can_always_eat",
@@ -916,7 +922,13 @@
                         "id": "textures",
                         "title": "textures",
                         "description": "This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes and bundle open textures can be specified here too. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file.",
-                        "dataType": 16
+                        "dataType": 24,
+                        "alternates": [
+                          {
+                            "id": "textures",
+                            "dataType": 24
+                          }
+                        ]
                       }
                     ]
                   }
@@ -972,7 +984,13 @@
                     "id": "block",
                     "title": "block",
                     "description": "Defines the block that will be placed.",
-                    "dataType": 16
+                    "dataType": 24,
+                    "alternates": [
+                      {
+                        "id": "block",
+                        "dataType": 24
+                      }
+                    ]
                   },
                   {
                     "id": "use_on",
@@ -1052,11 +1070,17 @@
                     "id": "projectile_entity",
                     "title": "projectile_entity",
                     "description": "Which entity is to be fired as a projectile.",
-                    "dataType": 2,
+                    "dataType": 24,
                     "validity": [
                       {
                         "comparison": "pattern",
                         "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
+                      }
+                    ],
+                    "alternates": [
+                      {
+                        "id": "projectile_entity",
+                        "dataType": 24
                       }
                     ]
                   }
@@ -1403,7 +1427,7 @@
               "id": "identifier",
               "title": "identifier",
               "description": "Unique name for the item that must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla item.",
-              "dataType": 2
+              "dataType": 16
             },
             {
               "id": "menu_category",

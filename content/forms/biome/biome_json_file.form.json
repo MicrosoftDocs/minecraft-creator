@@ -14,6 +14,24 @@
           "description": "Contains a description and components to define a Biome.",
           "fields": [
             {
+              "id": "description",
+              "title": "description",
+              "description": "Non-component settings, including the Biome name.",
+              "dataType": 16,
+              "subForm": {
+                "title": "Biome Description",
+                "description": "Contains non-component settings for a Biome.",
+                "fields": [
+                  {
+                    "id": "identifier",
+                    "title": "identifier",
+                    "description": "The name of the Biome, used by other features like the '/locate biome' command.",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
               "id": "components",
               "title": "components",
               "description": "Components for this Biome.",
@@ -1599,6 +1617,67 @@
                     }
                   },
                   {
+                    "id": "minecraft:replace_biomes",
+                    "title": "minecraft:replace_biomes",
+                    "description": "Replaces a specified portion of one or more Minecraft biomes.",
+                    "dataType": 16,
+                    "subForm": {
+                      "title": "Replace Biomes",
+                      "description": "Replaces a specified portion of one or more Minecraft biomes.",
+                      "fields": [
+                        {
+                          "id": "replacements",
+                          "title": "replacements",
+                          "description": "List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list.",
+                          "dataType": 15,
+                          "subForm": {
+                            "title": "Biome Replacement",
+                            "description": "Represents the replacement information used to determine the placement of the overriding biome.",
+                            "fields": [
+                              {
+                                "id": "dimension",
+                                "title": "dimension",
+                                "description": "Dimension in which this replacement can happen. Must be 'minecraft:overworld'.",
+                                "dataType": 2
+                              },
+                              {
+                                "id": "amount",
+                                "title": "amount",
+                                "description": "Noise value used to determine whether or not the replacement is attempted, similar to a percentage. Must be in the range (0.0, 1.0].",
+                                "dataType": 3,
+                                "validity": [
+                                  {
+                                    "comparison": "<=",
+                                    "value": 1
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "targets",
+                                "title": "targets",
+                                "description": "Biomes that are going to be replaced by the overriding biome.",
+                                "dataType": 17,
+                                "minLength": 1
+                              },
+                              {
+                                "id": "noise_frequency_scale",
+                                "title": "noise_frequency_scale",
+                                "description": "Scaling value used to alter the frequency of replacement attempts. A lower frequency will mean a bigger contiguous biome area that occurs less often. A higher frequency will mean smaller contiguous biome areas that occur more often. Must be in the range (0.0, 100.0].",
+                                "dataType": 3,
+                                "validity": [
+                                  {
+                                    "comparison": "<=",
+                                    "value": 100
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
                     "id": "minecraft:swamp_surface",
                     "title": "minecraft:swamp_surface",
                     "description": "Similar to overworld_surface. Adds swamp surface details.",
@@ -1844,24 +1923,6 @@
                         }
                       ]
                     }
-                  }
-                ]
-              }
-            },
-            {
-              "id": "description",
-              "title": "description",
-              "description": "Non-component settings, including the Biome name.",
-              "dataType": 16,
-              "subForm": {
-                "title": "Biome Description",
-                "description": "Contains non-component settings for a Biome.",
-                "fields": [
-                  {
-                    "id": "identifier",
-                    "title": "identifier",
-                    "description": "The name of the Biome, used by other features like the '/locate biome' command.",
-                    "dataType": 2
                   }
                 ]
               }

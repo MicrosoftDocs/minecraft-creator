@@ -130,11 +130,17 @@
         "id": "entity",
         "title": "entity",
         "description": "The entity to be placed in the world.",
-        "dataType": 2,
+        "dataType": 24,
         "validity": [
           {
             "comparison": "pattern",
             "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
+          }
+        ],
+        "alternates": [
+          {
+            "id": "entity",
+            "dataType": 24
           }
         ],
         "samples": {
