@@ -8,6 +8,9 @@ ms.service: minecraft-bedrock-edition
 
 # Biome JSON and Overview
 
+> [!VIDEO https://www.youtube.com/embed/zMF3JPahrPQ]
+*This video is an excellent way to quickly get up to speed on experimental custom biome features*
+
 'Biomes' are what we call a named set of properties that drive how the game behaves in a particular area. This includes resource pack settings like what music automatically plays or the color of the sky, and behavior pack settings like whether snow accumulates or what sorts of mobs can spawn there.
 
  The blocks that are at every surface position in a Biome are typically specified by that Biome -- for example water, in the ocean or sand in the desert. Otherwise, the blocks that you may think of when you visualize a particular Biome are from other systems like '[features](../FeaturesTaxonomy.md)' (for example tree leaves, flowers, and iron ore). Similarly, structures and entities may be associated with Biomes but are not part of the Biome itself.

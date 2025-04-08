@@ -1,7 +1,7 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Biome JSON and Overview
+title: Custom Partial Biome Replacements
 description: "A reference document discussing custom partial biome replacement"
 ms.service: minecraft-bedrock-edition
 ---
