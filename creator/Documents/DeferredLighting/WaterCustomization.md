@@ -25,6 +25,7 @@ The composition of particles in a body of water is what determines its color and
 Waves are an optional effect that can be used to complement water surface animations to make your water appear more realistic. They can be configured to blend with existing water texture animations or replace them entirely. The waves in the Deferred Technical Preview are purely an image-based effect meaning that the waves don't actually move the vertices of the water surface; the water surface geometry will remain unchanged.
 
 There are a variety of ways to customize waves to convey different types of water:
+
 - Depth: Determines how much waves displace the water surface. Larger values will result in deeper waves, whereas smaller values will produce shallower waves.
 - Frequency: Determines how many waves there are per water block. Can also be thought of as the size of the waves. Larger values will create more tightly packed waves, whereas smaller values will spread waves out over a wider area.
 - Frequency Scaling: Specifies how much wave frequency changes between octaves. A value of 1 will result in no change between octaves. Values higher than 1 will cause frequencies to increase while values less than 1 will cause frequencies to decrease.

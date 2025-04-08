@@ -49,3 +49,5 @@ landingContent:
             url: SubSurfaceScatteringCustomization.md
           - text: Water Customization
             url: WaterCustomization.md
+          - text: Shadows Customization
+            url: ShadowsCustomization.md            
