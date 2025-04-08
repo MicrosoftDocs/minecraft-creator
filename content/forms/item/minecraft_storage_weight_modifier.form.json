@@ -9,9 +9,161 @@
         "id": "weight_in_storage_item",
         "title": "weight_in_storage_item",
         "description": "The weight of this item when inside another Storage Item. Default is 4. 0 means item is not allowed in another Storage Item.",
-        "dataType": 0
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/items/black_bundle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/items/blue_bundle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+              "content": 4
+            }
+          ]
+        }
       }
     ],
-    "id": "minecraft:storage_weight_modifier"
+    "id": "minecraft:storage_weight_modifier",
+    "samples": {
+      "/vanilla/behavior_pack/items/black_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/blue_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/brown_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/cyan_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/gray_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/green_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/light_blue_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/light_gray_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/lime_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/magenta_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/orange_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/pink_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/purple_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/red_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/white_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/items/yellow_bundle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:storage_weight_modifier/",
+          "content": {
+            "weight_in_storage_item": 4
+          }
+        }
+      ]
+    }
   }
 }

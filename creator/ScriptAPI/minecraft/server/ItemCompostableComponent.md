@@ -25,7 +25,7 @@ Type: *number*
 
 Notes:
   - This property can throw errors when used.
-    - Throws *Error*
+    - Throws if value outside the range [1 - 100]
 
 ## Constants
 

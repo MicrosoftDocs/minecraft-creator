@@ -55,7 +55,6 @@ Adds a dye to the fluid. The dye color is combined with any existing custom colo
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **getFluidType**
 `
@@ -69,7 +68,6 @@ Gets the current fluid type in the container.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **setFluidType**
 `
@@ -84,7 +82,6 @@ Sets the current fluid type in the container.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **setPotion**
 `
@@ -99,7 +96,6 @@ Sets a potion item in the container. Changes the container's fluid type to potio
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ## Constants
 

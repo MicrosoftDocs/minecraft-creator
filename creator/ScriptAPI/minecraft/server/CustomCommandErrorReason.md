@@ -20,6 +20,14 @@ Reason why custom command registration failed.
 `AlreadyRegistered = "AlreadyRegistered"`
 
 Command name already registered.
+### **EnumDependencyMissing**
+`EnumDependencyMissing = "EnumDependencyMissing"`
+
+Custom Command references an enum that has not been registered.
+### **NamespaceMismatch**
+`NamespaceMismatch = "NamespaceMismatch"`
+
+Supplied Custom Command namespace does not match previous registrations for this add-on.
 ### **ParameterLimit**
 `ParameterLimit = "ParameterLimit"`
 

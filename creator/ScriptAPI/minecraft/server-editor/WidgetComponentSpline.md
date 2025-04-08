@@ -52,7 +52,6 @@ getInterpolatedPoints(maxPointsPerControlSegment?: number): minecraftserver.Vect
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidWidgetComponentError*](InvalidWidgetComponentError.md), [*InvalidWidgetError*](InvalidWidgetError.md)
 
 ### **setControlPoints**
 `

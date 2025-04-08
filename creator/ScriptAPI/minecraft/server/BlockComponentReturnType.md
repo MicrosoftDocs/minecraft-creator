@@ -10,4 +10,4 @@ description: Contents of the @minecraft/server.BlockComponentReturnType type ali
 # BlockComponentReturnType Type Alias
 
 ## Declaration
-`export type BlockComponentReturnType<T extends string> = T extends keyof BlockComponentTypeMap ? BlockComponentTypeMap[T] : BlockComponent;`
+`export type BlockComponentReturnType<T extends string> = T extends keyof BlockComponentTypeMap ? BlockComponentTypeMap[T] : BlockCustomComponentInstance;`

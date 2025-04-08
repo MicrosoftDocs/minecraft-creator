@@ -51,7 +51,6 @@ beginPainting(onComplete: (arg0: PaintCompletionState) => void): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **deactivateBrushTool**
 `
@@ -72,7 +71,6 @@ endPainting(cancelled: boolean): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **getBrushShapeOffset**
 `
@@ -95,7 +93,6 @@ setBrushMask(mask: BlockMaskList): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **setBrushShape**
 `
@@ -174,7 +171,6 @@ singlePaint(onComplete: (arg0: PaintCompletionState) => void): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*
 
 ### **switchBrushPaintMode**
 `

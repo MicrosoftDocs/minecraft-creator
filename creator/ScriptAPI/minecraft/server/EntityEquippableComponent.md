@@ -14,25 +14,6 @@ description: Contents of the @minecraft/server.EntityEquippableComponent class.
 
 Provides access to a mob's equipment slots. This component exists for all mob entities.
 
-#### Examples
-
-##### ***givePlayerElytra.ts***
-
-```typescript
-// Gives the player Elytra
-import { EquipmentSlot, ItemStack, Player, EntityComponentTypes } from '@minecraft/server';
-import { MinecraftItemTypes } from '@minecraft/vanilla-data';
-
-function giveEquipment(player: Player) {
-    const equipmentCompPlayer = player.getComponent(EntityComponentTypes.Equippable);
-    if (equipmentCompPlayer) {
-        equipmentCompPlayer.setEquipment(EquipmentSlot.Chest, new ItemStack(MinecraftItemTypes.Elytra));
-    }
-}
-```
-
-(preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/givePlayerElytra.ts) code sandbox.
-
 ## Methods
 - [getEquipment](#getequipment)
 - [getEquipmentSlot](#getequipmentslot)
