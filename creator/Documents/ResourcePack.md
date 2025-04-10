@@ -8,9 +8,9 @@ ms.service: minecraft-bedrock-edition
 
 # Introduction to Resource Packs
 
-Before building your first Add-On for Minecraft: Bedrock Edition, you need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. For this tutorial, we're going to be focusing on resource packs.
+Before building your first Add-On for Minecraft: Bedrock Edition, you'll need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **resource pack** is a folder structure that contains all of your custom models, sounds, textures, and other custom content.
 
-A **resource pack** is a folder structure that contains all of your custom models, sounds, textures, and other custom content.
+For this tutorial, we're going to be focusing on resource packs.
 
 :::image type="content" source="Media/ResourcePack/Introduction-to-Resource-Packs.jpg" alt-text="Image showing a pig deeply confused by its environment containing green dirt blocks":::
 
