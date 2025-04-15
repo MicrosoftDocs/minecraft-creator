@@ -16,14 +16,16 @@ This page describes how to customize lighting with Directional Lights, Point Lig
 
 ## Directional Lights
 
-The `"directional_lights"` object is where you can configure properties of the sun and the moon. These properties will affect how strong their respective light contributions are, what colors they contribute to various surfaces they illuminate and the angle at which they cast shadows. It will also greatly influence the color of the sky by way of atmospheric scattering calculations (see atmospherics/atmospherics.json for more details).
+The `"directional_lights"` object is where you can configure properties of celestial bodies in Minecraft. Directional lights are split into the `"orbital"` section, which contains properties pertaining to the sun and moon, and the `"flash"` section, which contains properties pertaining to the End light flash. These properties will affect how strong their respective light contributions are, what colors they contribute to various surfaces they illuminate and the angle at which they cast shadows. It will also greatly influence the color of the sky by way of atmospheric scattering calculations (see atmospherics/atmospherics.json for more details).
 
 The celestial bodies that are the sun and moon are assumed to be opposite of each other in the sky at all times. When both celestial bodies are visible in the sky, both will contribute opposing light to the scene.
 
-Illuminance values that correspond to "real world" values are suitable for use in our pipeline. For instance, the sun at noon on a clear day measures upwards of 100,000 lux, while the moon only registers < 1 lux. Tone mapping and auto-exposure will appropriately rebalance drastic differences in light intensities.
+The End flash is a light that's exclusive to the End dimension and has no "real world" counterpart. It disappears and reappears at random locations, and the illuminance it contributes to the scene will scale accordingly, appearing as a flash of light.
+
+Illuminance values that correspond to "real world" values are suitable for use in our pipeline. For instance, the sun at noon on a clear day measures upwards of 100,000 lux, while the moon only registers < 1 lux. In the case of the End light flash, the value provided will determine the maximum illuminance of the flashes it produces. Tone mapping and auto-exposure will appropriately rebalance drastic differences in light intensities.
 
 Color values should be described as an array of 3 numerical values from the range 0-255 or as a 6 hexadecimal digit string.
-Any of these values can be individually key framed (see Key Frame Syntax section for more details).
+These values can be individually key framed when providing values for the sun and the moon (see Key Frame Syntax section for more details).
 
 ## Point Lights
 
@@ -82,6 +84,7 @@ File location: **lighting/global.json**
 
 Schema Version|Updates
 --|--
+`1.21.80`|Added support for controlling the End light flash
 `1.21.70`|Added a new object for controlling the sky intensity
 `1.21.60`|Changed the data type for sun and moon colors from RGBA to RGB
 `1.21.40`|N/A
@@ -97,17 +100,23 @@ Schema Version|Updates
         },
         object "directional_lights"
         {
-            object "sun"
-            {
-                float "illuminance" : optkeyframe, // How bright the sun is, measured in lux (lx)
-                color "color" : optkeyframe // The RGB color that the sun contributes to direct surface lighting; supports RGB array or HEX string
+            object "orbital" {
+                object "sun"
+                {
+                    float "illuminance" : optkeyframe, // How bright the sun is, measured in lux (lx)
+                    color "color" : optkeyframe // The RGB color that the sun contributes to direct surface lighting; supports RGB array or HEX string
+                },
+                object "moon"
+                {
+                    float "illuminance" : optkeyframe,  // How bright the moon is; measured in lux (lx)
+                    color "color" : optkeyframe // The RGB color that the moon contributes to direct surface lighting; supports RGB array or HEX string
+                },
+                float "orbital_offset_degrees" : optkeyframe // The rotational offset of the sun and moon from their standard orbital axis; measured in degrees
             },
-            object "moon"
-            {
-                float "illuminance" : optkeyframe,  // How bright the moon is; measured in lux (lx)
-                color "color" : optkeyframe // The RGB color that the moon contributes to direct surface lighting; supports RGB array or HEX string
+            object "flash" {
+                float "illuminance", // The peak brightness of the End flash, measured in lux (lx)
+                color "color" // The RGB color that the End flash contributes to surface lighting; supports RGB array or HEX string
             }
-            float "orbital_offset_degrees" : optkeyframe // The rotational offset of the sun and moon from their standard orbital axis; measured in degrees
         },
         object "emissive"
         {
@@ -174,29 +183,35 @@ File location: **pbr/global.json**
 
 ```json
 {
-    "format_version": "1.21.70",
+    "format_version": "1.21.80",
     "minecraft:lighting_settings": {
         "description": {
             "identifier": "my_pack:default_lighting"
         },
         "directional_lights": {
-            "sun": {
-                "illuminance": {
-                    "0.0": 109880.0,
-                    "0.25": 20000.0,
-                    "0.35": 400.0,
-                    "0.5": 1.0,
-                    "0.65": 400.0,
-                    "0.75": 20000.0,
-                    "1.0": 109880.0
+            "orbital": {
+                "sun": {
+                    "illuminance": {
+                        "0.0": 109880.0,
+                        "0.25": 20000.0,
+                        "0.35": 400.0,
+                        "0.5": 1.0,
+                        "0.65": 400.0,
+                        "0.75": 20000.0,
+                        "1.0": 109880.0
+                    },
+                    "color": [ 255.0, 255.0, 255.0 ]
                 },
-                "color": [ 255.0, 255.0, 255.0 ]
+                "moon": { 
+                    "illuminance": 0.27,
+                    "color": "#ffffff"
+                }, 
+                "orbital_offset_degrees": 3.0
             },
-            "moon": { 
-                "illuminance": 0.27,
-                "color": "#ffffff"
-            }, 
-            "orbital_offset_degrees": 3.0
+            "flash": {
+                "illuminance": 5.0,
+                "color": [ 255.0, 255.0, 255.0 ]
+            }
         },
         "emissive": {
             "desaturation": 0.1
