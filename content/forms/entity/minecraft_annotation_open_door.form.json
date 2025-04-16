@@ -31,6 +31,12 @@
           "path": "/minecraft:entity/components/minecraft:annotation.open_door/",
           "content": {}
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:annotation.open_door/",
+          "content": {}
+        }
       ]
     }
   }

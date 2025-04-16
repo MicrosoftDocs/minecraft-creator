@@ -1,13 +1,12 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "emitter_shape_box",
     "title": "Emitter Shape Box Misc",
-    "description": "Emitter Shape Box Misc",
     "fields": [
       {
         "id": "offset",
-        "title": "offset",
-        "description": "offset",
+        "title": "Offset",
         "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
@@ -17,19 +16,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "offset",
               "title": "Offset",
-              "description": "Offset",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -43,8 +40,7 @@
       },
       {
         "id": "direction",
-        "title": "direction",
-        "description": "direction",
+        "title": "Direction",
         "dataType": 2,
         "alternates": [
           {
@@ -58,19 +54,17 @@
                 "dataType": 14,
                 "readOnly": true,
                 "subForm": {
+                  "id": "direction",
                   "title": "Direction",
-                  "description": "Direction",
                   "fields": [
                     {
                       "id": "expression",
-                      "title": "expression",
-                      "description": "expression",
+                      "title": "Expression",
                       "dataType": 2
                     },
                     {
                       "id": "version",
-                      "title": "version",
-                      "description": "version",
+                      "title": "Version",
                       "dataType": 0
                     }
                   ]
@@ -86,8 +80,7 @@
       },
       {
         "id": "half_dimensions",
-        "title": "half_dimensions",
-        "description": "half_dimensions",
+        "title": "Half Dimensions",
         "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
@@ -97,19 +90,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "half_dimensions",
               "title": "Half Dimensions",
-              "description": "Half Dimensions",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -123,8 +114,7 @@
       },
       {
         "id": "surface_only",
-        "title": "surface_only",
-        "description": "surface_only",
+        "title": "Surface Only",
         "dataType": 1
       }
     ]

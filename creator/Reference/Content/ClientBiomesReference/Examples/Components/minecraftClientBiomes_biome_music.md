@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Affects how music plays within the biome.
 
 
-## Biome Music Properties
+## Minecraft Biome Music Client Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

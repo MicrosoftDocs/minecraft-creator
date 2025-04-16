@@ -916,6 +916,50 @@
             }
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "on_damage": {
+                  "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "lightning"
+                  },
+                  "event": "become_witch"
+                }
+              },
+              {
+                "on_damage": {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "zombie"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "husk"
+                      }
+                    ],
+                    "all_of": [
+                      {
+                        "test": "has_damage",
+                        "value": "fatal"
+                      }
+                    ]
+                  },
+                  "event": "become_zombie"
+                }
+              }
+            ]
+          }
+        }
       ]
     }
   }

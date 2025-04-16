@@ -74,8 +74,6 @@ Generates surface on blocks with non-solid blocks above or below.
 | sea_material (Alternate 1) | *not set* | [Sea Material (Alternate 1)](#sea-material-(alternate-1)-item-type) item |  |  | 
 
 ## Beach Material (Alternate 1) item type
-Beach Material.
-
 
 #### Beach Material Properties
 
@@ -87,8 +85,6 @@ Beach Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Ceiling Materials (Alternate 1) item type
-Ceiling Materials.
-
 
 #### Ceiling Materials Properties
 
@@ -100,8 +96,6 @@ Ceiling Materials.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Floor Materials (Alternate 1) item type
-Floor Materials.
-
 
 #### Floor Materials Properties
 
@@ -113,8 +107,6 @@ Floor Materials.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Foundation Material (Alternate 1) item type
-Foundation Material.
-
 
 #### Foundation Material Properties
 
@@ -126,8 +118,6 @@ Foundation Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Material (Alternate 1) item type
-Sea Material.
-
 
 #### Sea Material Properties
 
@@ -185,8 +175,6 @@ Similar to overworld_surface. Adds icebergs.
 | top_material (Alternate 1) | *not set* | [Top Material (Alternate 1)](#top-material-(alternate-1)-item-type) item |  |  | 
 
 ## Foundation Material (Alternate 1) item type
-Foundation Material.
-
 
 #### Foundation Material Properties
 
@@ -198,8 +186,6 @@ Foundation Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Mid Material (Alternate 1) item type
-Mid Material.
-
 
 #### Mid Material Properties
 
@@ -211,8 +197,6 @@ Mid Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Floor Material (Alternate 1) item type
-Sea Floor Material.
-
 
 #### Sea Floor Material Properties
 
@@ -224,8 +208,6 @@ Sea Floor Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Material (Alternate 1) item type
-Sea Material.
-
 
 #### Sea Material Properties
 
@@ -237,8 +219,6 @@ Sea Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Top Material (Alternate 1) item type
-Top Material.
-
 
 #### Top Material Properties
 
@@ -276,8 +256,6 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | top_material (Alternate 1) | *not set* | [Top Material (Alternate 1)](#top-material-(alternate-1)-item-type) item |  |  | 
 
 ## Clay Material (Alternate 1) item type
-Clay Material.
-
 
 #### Clay Material Properties
 
@@ -289,8 +267,6 @@ Clay Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Foundation Material (Alternate 1) item type
-Foundation Material.
-
 
 #### Foundation Material Properties
 
@@ -302,8 +278,6 @@ Foundation Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Hard Clay Material (Alternate 1) item type
-Hard Clay Material.
-
 
 #### Hard Clay Material Properties
 
@@ -315,8 +289,6 @@ Hard Clay Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Mid Material (Alternate 1) item type
-Mid Material.
-
 
 #### Mid Material Properties
 
@@ -328,8 +300,6 @@ Mid Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Floor Material (Alternate 1) item type
-Sea Floor Material.
-
 
 #### Sea Floor Material Properties
 
@@ -341,8 +311,6 @@ Sea Floor Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Material (Alternate 1) item type
-Sea Material.
-
 
 #### Sea Material Properties
 
@@ -354,8 +322,6 @@ Sea Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Top Material (Alternate 1) item type
-Top Material.
-
 
 #### Top Material Properties
 
@@ -393,8 +359,6 @@ Defines surface material for steep slopes.
 | west_slopes | *not set* | Boolean true/false | Enable for west-facing slopes |  | 
 
 ## Material (Alternate 1) item type
-Material
-
 
 #### Material Properties
 
@@ -526,8 +490,6 @@ The specific blocks used for this surface adjustment.
 | top_material (Alternate 1) | *not set* | [Top Material (Alternate 1)](#top-material-(alternate-1)-item-type) item |  |  | 
 
 ## Foundation Material (Alternate 1) item type
-Foundation Material.
-
 
 #### Foundation Material Properties
 
@@ -539,8 +501,6 @@ Foundation Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Mid Material (Alternate 1) item type
-Mid Material.
-
 
 #### Mid Material Properties
 
@@ -552,8 +512,6 @@ Mid Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Floor Material (Alternate 1) item type
-Sea Floor Material.
-
 
 #### Sea Floor Material Properties
 
@@ -565,8 +523,6 @@ Sea Floor Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Material (Alternate 1) item type
-Sea Material.
-
 
 #### Sea Material Properties
 
@@ -578,8 +534,6 @@ Sea Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Top Material (Alternate 1) item type
-Top Material.
-
 
 #### Top Material Properties
 
@@ -611,8 +565,6 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 | top_material (Alternate 1) | *not set* | [Top Material (Alternate 1)](#top-material-(alternate-1)-item-type) item |  |  | 
 
 ## Foundation Material (Alternate 1) item type
-Foundation Material.
-
 
 #### Foundation Material Properties
 
@@ -624,8 +576,6 @@ Foundation Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Mid Material (Alternate 1) item type
-Mid Material.
-
 
 #### Mid Material Properties
 
@@ -637,8 +587,6 @@ Mid Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Floor Material (Alternate 1) item type
-Sea Floor Material.
-
 
 #### Sea Floor Material Properties
 
@@ -650,8 +598,6 @@ Sea Floor Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Material (Alternate 1) item type
-Sea Material.
-
 
 #### Sea Material Properties
 
@@ -663,8 +609,6 @@ Sea Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Top Material (Alternate 1) item type
-Top Material.
-
 
 #### Top Material Properties
 
@@ -696,8 +640,6 @@ Similar to overworld_surface. Adds swamp surface details.
 | top_material (Alternate 1) | *not set* | [Top Material (Alternate 1)](#top-material-(alternate-1)-item-type) item |  |  | 
 
 ## Foundation Material (Alternate 1) item type
-Foundation Material.
-
 
 #### Foundation Material Properties
 
@@ -709,8 +651,6 @@ Foundation Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Mid Material (Alternate 1) item type
-Mid Material.
-
 
 #### Mid Material Properties
 
@@ -722,8 +662,6 @@ Mid Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Floor Material (Alternate 1) item type
-Sea Floor Material.
-
 
 #### Sea Floor Material Properties
 
@@ -735,8 +673,6 @@ Sea Floor Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Material (Alternate 1) item type
-Sea Material.
-
 
 #### Sea Material Properties
 
@@ -748,8 +684,6 @@ Sea Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Top Material (Alternate 1) item type
-Top Material.
-
 
 #### Top Material Properties
 

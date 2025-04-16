@@ -1,13 +1,12 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "particle_appearance_billboard flipbook_data",
     "title": "Particle Appearance Billboard Flipbook Data Misc",
-    "description": "Particle Appearance Billboard Flipbook Data Misc",
     "fields": [
       {
         "id": "base_UV",
-        "title": "base_UV",
-        "description": "base_UV",
+        "title": "Base UV",
         "dataType": 24,
         "minLength": 2,
         "maxLength": 2,
@@ -17,19 +16,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "base_UV",
               "title": "Base UV",
-              "description": "Base UV",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -43,24 +40,21 @@
       },
       {
         "id": "size_UV",
-        "title": "size_UV",
-        "description": "size_UV",
+        "title": "Size UV",
         "dataType": 32,
         "minLength": 2,
         "maxLength": 2
       },
       {
         "id": "step_UV",
-        "title": "step_UV",
-        "description": "step_UV",
+        "title": "Step UV",
         "dataType": 32,
         "minLength": 2,
         "maxLength": 2
       },
       {
         "id": "max_frame",
-        "title": "max_frame",
-        "description": "max_frame",
+        "title": "Max Frame",
         "dataType": 24,
         "alternates": [
           {
@@ -68,19 +62,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "max_frame",
               "title": "Max Frame",
-              "description": "Max Frame",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -94,20 +86,17 @@
       },
       {
         "id": "loop",
-        "title": "loop",
-        "description": "loop",
+        "title": "Loop",
         "dataType": 1
       },
       {
         "id": "frames_per_second",
-        "title": "frames_per_second",
-        "description": "frames_per_second",
+        "title": "Frames Per Second",
         "dataType": 3
       },
       {
         "id": "stretch_to_lifetime",
-        "title": "stretch_to_lifetime",
-        "description": "stretch_to_lifetime",
+        "title": "Stretch To Lifetime",
         "dataType": 1
       }
     ]

@@ -20,8 +20,6 @@ Defines the items that can be used to repair a defined item, and the amount of d
 | repair_items (Alternate 1) | *not set* | [Repair Items (Alternate 1)](#repair-items-(alternate-1)-item-type) item |  |  | 
 
 ## Repair Items (Alternate 1) item type
-Repair Items.
-
 
 #### Repair Items Properties
 
@@ -34,15 +32,13 @@ Repair Items.
 | repair_amount (Alternate 2) | *not set* | Decimal number |  |  | 
 
 ## Repair Amount (Alternate 1) item type
-Repair Amount.
-
 
 #### Repair Amount Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| expression | *not set* | String | expression |  | 
-| version | *not set* | Integer number | version |  | 
+| expression | *not set* | String |  |  | 
+| version | *not set* | Integer number |  |  | 
 
 ## Samples
 

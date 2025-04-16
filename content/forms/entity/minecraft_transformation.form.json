@@ -687,6 +687,22 @@
             }
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/become_witch/minecraft:transformation/",
+          "content": {
+            "into": "minecraft:witch",
+            "delay": 0.5
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/become_zombie/minecraft:transformation/",
+          "content": {
+            "into": "minecraft:zombie_villager_v2",
+            "keep_level": true
+          }
+        }
       ]
     }
   }

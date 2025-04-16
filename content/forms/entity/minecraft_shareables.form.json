@@ -3979,6 +3979,89 @@
             ]
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/behavior_peasant/minecraft:shareables/",
+          "content": {
+            "items": [
+              {
+                "item": "minecraft:bread",
+                "want_amount": 3,
+                "surplus_amount": 6,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:carrot",
+                "want_amount": 60,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:potato",
+                "want_amount": 60,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:beetroot",
+                "want_amount": 60,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:wheat_seeds",
+                "want_amount": 64,
+                "surplus_amount": 64,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:beetroot_seeds",
+                "want_amount": 64,
+                "surplus_amount": 64,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:wheat",
+                "want_amount": 45,
+                "surplus_amount": 18,
+                "craft_into": "minecraft:bread",
+                "stored_in_inventory": true
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/behavior_non_peasant/minecraft:shareables/",
+          "content": {
+            "items": [
+              {
+                "item": "minecraft:bread",
+                "want_amount": 3,
+                "surplus_amount": 6,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:carrot",
+                "want_amount": 12,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:potato",
+                "want_amount": 12,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              },
+              {
+                "item": "minecraft:beetroot",
+                "want_amount": 12,
+                "surplus_amount": 24,
+                "stored_in_inventory": true
+              }
+            ]
+          }
+        }
       ]
     }
   }

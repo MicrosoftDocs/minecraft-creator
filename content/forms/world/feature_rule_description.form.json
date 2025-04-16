@@ -1,0 +1,21 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Feature Rule Description",
+    "title": "Feature Rule Description World",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "description": "The name of this feature rule in the format 'namespace_name:rule_name'. 'rule_name' must match the filename.",
+        "dataType": 2
+      },
+      {
+        "id": "places_feature",
+        "title": "Places Feature",
+        "description": "Named reference to the feature controlled by this rule.",
+        "dataType": 2
+      }
+    ]
+  }
+}

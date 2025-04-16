@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Specify fine-detail changes to blocks used in terrain generation (based on a noise function).
 
 
-## Surface Material Adjustments Properties
+## Minecraft Surface Material Adjustments Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -58,8 +58,6 @@ The specific blocks used for this surface adjustment.
 | top_material (Alternate 1) | *not set* | [Top Material (Alternate 1)](#top-material-(alternate-1)-item-type) item |  |  | 
 
 ## Foundation Material (Alternate 1) item type
-Foundation Material.
-
 
 #### Foundation Material Properties
 
@@ -71,8 +69,6 @@ Foundation Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Mid Material (Alternate 1) item type
-Mid Material.
-
 
 #### Mid Material Properties
 
@@ -84,8 +80,6 @@ Mid Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Floor Material (Alternate 1) item type
-Sea Floor Material.
-
 
 #### Sea Floor Material Properties
 
@@ -97,8 +91,6 @@ Sea Floor Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Material (Alternate 1) item type
-Sea Material.
-
 
 #### Sea Material Properties
 
@@ -110,8 +102,6 @@ Sea Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Top Material (Alternate 1) item type
-Top Material.
-
 
 #### Top Material Properties
 

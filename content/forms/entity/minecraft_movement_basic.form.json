@@ -521,6 +521,12 @@
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
       ]
     }
   }

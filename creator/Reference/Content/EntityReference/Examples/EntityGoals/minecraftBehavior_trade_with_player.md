@@ -87,3 +87,12 @@ Allows the player to trade with this mob. When the goal starts, it will stop the
   }
 }
 ```
+
+#### [Beachager](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json)
+
+
+```json
+"minecraft:behavior.trade_with_player": {
+  "priority": 2
+}
+```

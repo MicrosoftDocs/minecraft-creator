@@ -1,13 +1,12 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "particle_initial_spin",
     "title": "Particle Initial Spin Misc",
-    "description": "Particle Initial Spin Misc",
     "fields": [
       {
         "id": "rotation",
-        "title": "rotation",
-        "description": "rotation",
+        "title": "Rotation",
         "dataType": 24,
         "alternates": [
           {
@@ -15,19 +14,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "rotation",
               "title": "Rotation",
-              "description": "Rotation",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -41,8 +38,7 @@
       },
       {
         "id": "rotation_rate",
-        "title": "rotation_rate",
-        "description": "rotation_rate",
+        "title": "Rotation Rate",
         "dataType": 24,
         "alternates": [
           {
@@ -50,19 +46,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "rotation_rate",
               "title": "Rotation Rate",
-              "description": "Rotation Rate",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]

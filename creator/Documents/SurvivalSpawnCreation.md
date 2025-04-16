@@ -1,9 +1,10 @@
 ---
-author: neonerz
+author: mammerla
 ms.author: mikeam
 title: Survival Spawn Creation
 description: "On overview of creating a survival spawn world in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/16/2025
 ---
 
 # Survival Spawn Creation

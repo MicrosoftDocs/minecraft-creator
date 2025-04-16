@@ -2,6 +2,8 @@
   items:
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
+    - name: Creator Camp Stream - April 24th/25th
+      href: Documents/CreatorCamp.md       
     - name: "Updates and News"
       items:
         - name: 1.21.70 Update Summary
@@ -491,7 +493,7 @@
         - name: Pack Manifest JSON (Behavior or Resource or Skin)
           href: Reference/Content/AddonsReference/PackManifest.md
         - name: Biome JSON
-          href: Reference/Content/BiomesReference/Examples/TOC.yml
+          href: Reference/Content/BiomesReference/Examples/Components/TOC.yml
         - name: Block JSON
           items:
           - name: Block Definitions
@@ -635,7 +637,7 @@
           - name: Animation Upgrades 
             href: Documents/Animations/AnimationUpgrade.md
         - name: Client Biome JSON
-          href: Reference/Content/ClientBiomesReference/Examples/TOC.yml
+          href: Reference/Content/ClientBiomesReference/Examples/Components/TOC.yml
         - name: Fog JSON
           href: Reference/Content/FogsReference/fogs.md
         - name: Particle JSON

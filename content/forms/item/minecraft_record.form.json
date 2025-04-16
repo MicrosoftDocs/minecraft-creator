@@ -74,12 +74,13 @@
     }
   },
   "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:record",
     "title": "Record",
     "description": "Record Item Component. Used by record items to play music.",
     "fields": [
       {
         "id": "sound_event",
-        "title": "enum SharedTypes_Legacy_LevelSoundEvent",
+        "title": "Legacy LevelSoundEvent",
         "description": "Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic.",
         "dataType": 2,
         "samples": {
@@ -93,7 +94,7 @@
       },
       {
         "id": "duration",
-        "title": "duration",
+        "title": "Duration",
         "description": "Specifies duration of sound event in seconds, float value.",
         "dataType": 3,
         "samples": {
@@ -107,7 +108,7 @@
       },
       {
         "id": "comparator_signal",
-        "title": "comparator_signal",
+        "title": "Comparator Signal",
         "description": "Specifies signal strength for comparator blocks to use, from 1 - 13.",
         "dataType": 0,
         "samples": {
@@ -120,7 +121,6 @@
         }
       }
     ],
-    "id": "minecraft:record",
     "samples": {
       "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
         {

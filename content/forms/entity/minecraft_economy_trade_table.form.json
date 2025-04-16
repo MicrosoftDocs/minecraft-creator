@@ -101,6 +101,56 @@
               "path": "/minecraft:entity/components/minecraft:economy_trade_table/",
               "content": "entity.wandering_trader.name"
             }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/farmer/minecraft:economy_trade_table/",
+              "content": "entity.villager.farmer"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fisherman/minecraft:economy_trade_table/",
+              "content": "entity.villager.fisherman"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/shepherd/minecraft:economy_trade_table/",
+              "content": "entity.villager.shepherd"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fletcher/minecraft:economy_trade_table/",
+              "content": "entity.villager.fletcher"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/librarian/minecraft:economy_trade_table/",
+              "content": "entity.villager.librarian"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/cartographer/minecraft:economy_trade_table/",
+              "content": "entity.villager.cartographer"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/cleric/minecraft:economy_trade_table/",
+              "content": "entity.villager.cleric"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/armorer/minecraft:economy_trade_table/",
+              "content": "entity.villager.armor"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:economy_trade_table/",
+              "content": "entity.villager.weapon"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/toolsmith/minecraft:economy_trade_table/",
+              "content": "entity.villager.tool"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/butcher/minecraft:economy_trade_table/",
+              "content": "entity.villager.butcher"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/leatherworker/minecraft:economy_trade_table/",
+              "content": "entity.villager.leather"
+            }
           ]
         }
       },
@@ -258,6 +308,56 @@
             {
               "path": "/minecraft:entity/components/minecraft:economy_trade_table/",
               "content": "trading/economy_trades/wandering_trader_trades.json"
+            }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+            {
+              "path": "/minecraft:entity/component_groups/farmer/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/farmer_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fisherman/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/fisherman_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/shepherd/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/shepherd_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fletcher/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/fletcher_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/librarian/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/librarian_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/cartographer/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/cartographer_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/cleric/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/cleric_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/armorer/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/armorer_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/weapon_smith_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/toolsmith/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/tool_smith_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/butcher/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/butcher_trades.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/leatherworker/minecraft:economy_trade_table/",
+              "content": "trading/economy_trades/leather_worker_trades.json"
             }
           ]
         }
@@ -505,6 +605,120 @@
             "display_name": "entity.wandering_trader.name",
             "table": "trading/economy_trades/wandering_trader_trades.json",
             "new_screen": true
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/trade_components/minecraft:economy_trade_table/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/farmer/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.farmer",
+            "table": "trading/economy_trades/farmer_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fisherman/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.fisherman",
+            "table": "trading/economy_trades/fisherman_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/shepherd/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.shepherd",
+            "table": "trading/economy_trades/shepherd_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fletcher/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.fletcher",
+            "table": "trading/economy_trades/fletcher_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/librarian/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.librarian",
+            "table": "trading/economy_trades/librarian_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cartographer/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.cartographer",
+            "table": "trading/economy_trades/cartographer_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cleric/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.cleric",
+            "table": "trading/economy_trades/cleric_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/armorer/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.armor",
+            "table": "trading/economy_trades/armorer_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.weapon",
+            "table": "trading/economy_trades/weapon_smith_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/toolsmith/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.tool",
+            "table": "trading/economy_trades/tool_smith_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/butcher/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.butcher",
+            "table": "trading/economy_trades/butcher_trades.json",
+            "new_screen": true,
+            "persist_trades": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/leatherworker/minecraft:economy_trade_table/",
+          "content": {
+            "display_name": "entity.villager.leather",
+            "table": "trading/economy_trades/leather_worker_trades.json",
+            "new_screen": true,
+            "persist_trades": true
           }
         }
       ]

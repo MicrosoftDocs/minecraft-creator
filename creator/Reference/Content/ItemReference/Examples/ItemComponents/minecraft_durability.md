@@ -20,15 +20,13 @@ Sets how much damage the item can take before breaking, and allows the item to b
 | max_durability | *not set* | Integer number | Max durability is the amount of damage that this item can take before breaking. This is a required parameter and has a minimum of 0. | Chestplate: `200`, My Sword Chuck: `10`, My Sword Singing: `1000` | 
 
 ## Damage Chance item type
-IntRange
-
 
 #### IntRange Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| max | *not set* | Integer number | max |  | 
-| min | *not set* | Integer number | min |  | 
+| max | *not set* | Integer number |  |  | 
+| min | *not set* | Integer number |  |  | 
 
 ## Samples
 

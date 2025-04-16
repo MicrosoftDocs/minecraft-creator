@@ -1,9 +1,10 @@
 ---
-author: neonerz
+author: mammerla
 ms.author: mikeam
 title: Content Error Log
 description: "Learn more about the messages in the content error log and what they mean"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/16/2025
 ---
 
 # Content Error Log

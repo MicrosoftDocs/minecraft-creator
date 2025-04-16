@@ -1,13 +1,12 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "emitter_shape_point",
     "title": "Emitter Shape Point Misc",
-    "description": "Emitter Shape Point Misc",
     "fields": [
       {
         "id": "offset",
-        "title": "offset",
-        "description": "offset",
+        "title": "Offset",
         "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
@@ -17,19 +16,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "offset",
               "title": "Offset",
-              "description": "Offset",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -43,8 +40,7 @@
       },
       {
         "id": "direction",
-        "title": "direction",
-        "description": "direction",
+        "title": "Direction",
         "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
@@ -54,19 +50,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "direction",
               "title": "Direction",
-              "description": "Direction",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]

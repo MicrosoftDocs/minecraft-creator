@@ -288,6 +288,144 @@
             "cooldown": 2
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/trade_components/minecraft:behavior.trade_interest/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/farmer/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fisherman/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/shepherd/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fletcher/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/librarian/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cartographer/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cleric/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/armorer/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/toolsmith/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/butcher/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/leatherworker/minecraft:behavior.trade_interest/",
+          "content": {
+            "priority": 5,
+            "within_radius": 6,
+            "interest_time": 45,
+            "remove_item_time": 1,
+            "carried_item_switch_time": 2,
+            "cooldown": 2
+          }
+        }
       ]
     }
   }

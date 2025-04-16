@@ -1172,6 +1172,15 @@
             "is_pushable_by_piston": true
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable/",
+          "content": {
+            "is_pushable": true,
+            "is_pushable_by_piston": true
+          }
+        }
       ]
     }
   }

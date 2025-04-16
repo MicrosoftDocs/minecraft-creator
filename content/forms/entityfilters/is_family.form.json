@@ -745,6 +745,12 @@
               "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/0/sequence/16/filters/",
               "content": "stone_mason"
             }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/2/",
+              "content": "zombie_pigman"
+            }
           ]
         }
       },
@@ -3879,6 +3885,194 @@
             "test": "is_family",
             "subject": "other",
             "value": "monster"
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "lightning"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/any_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "zombie"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "husk"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "zombie"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "zombie_villager"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/2/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "zombie_pigman"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/3/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "illager"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/4/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "vex"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.share_items/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "villager"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "farmer"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/1/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "fisherman"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/2/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "shepherd"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/3/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "fletcher"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/4/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "librarian"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/5/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "cartographer"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/6/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "cleric"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/7/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "armorer"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/8/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "weaponsmith"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/9/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "toolsmith"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/10/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "butcher"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/11/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "leatherworker"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "==",
+            "value": "zombie_villager"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "==",
+            "value": "villager"
           }
         }
       ]

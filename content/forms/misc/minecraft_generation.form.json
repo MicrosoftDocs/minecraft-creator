@@ -1,0 +1,15 @@
+{
+  "id": "minecraft:generation",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:generation",
+    "title": "Generation",
+    "fields": [
+      {
+        "id": "generator_type",
+        "title": "Generator Type",
+        "dataType": 2
+      }
+    ]
+  }
+}

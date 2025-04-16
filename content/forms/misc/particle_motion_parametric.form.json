@@ -1,13 +1,12 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "particle_motion_parametric",
     "title": "Particle Motion Parametric Misc",
-    "description": "Particle Motion Parametric Misc",
     "fields": [
       {
         "id": "relative_position",
-        "title": "relative_position",
-        "description": "relative_position",
+        "title": "Relative Position",
         "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
@@ -17,19 +16,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "relative_position",
               "title": "Relative Position",
-              "description": "Relative Position",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -43,8 +40,7 @@
       },
       {
         "id": "direction",
-        "title": "direction",
-        "description": "direction",
+        "title": "Direction",
         "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
@@ -54,19 +50,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "direction",
               "title": "Direction",
-              "description": "Direction",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -80,8 +74,7 @@
       },
       {
         "id": "rotation",
-        "title": "rotation",
-        "description": "rotation",
+        "title": "Rotation",
         "dataType": 24,
         "alternates": [
           {
@@ -89,19 +82,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "rotation",
               "title": "Rotation",
-              "description": "Rotation",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]

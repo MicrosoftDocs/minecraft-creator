@@ -66,3 +66,12 @@ Allows the mob to accept flowers from another mob with the minecraft:offer_flowe
   }
 }
 ```
+
+#### [Beachager](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json)
+
+
+```json
+"minecraft:behavior.take_flower": {
+  "priority": 9
+}
+```

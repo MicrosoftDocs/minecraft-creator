@@ -1,12 +1,26 @@
- - name: Client Biomes Overview
-   href: ./../ClientBiomesOverview.md
- - name: ambient_sounds
-   href: minecraftClientBiomes_ambient_sounds.md
- - name: biome_music
-   href: minecraftClientBiomes_biome_music.md
- - name: fog_appearance
-   href: minecraftClientBiomes_fog_appearance.md
- - name: sky_color
-   href: minecraftClientBiomes_sky_color.md
- - name: water_appearance
-   href: minecraftClientBiomes_water_appearance.md
+- name: Components List
+  href: ../ComponentList.md
+- name: minecraft:ambient_sounds
+  href: minecraftBiomes_ambient_sounds.md
+- name: minecraft:atmosphere_identifier
+  href: minecraftBiomes_atmosphere_identifier.md
+- name: minecraft:biome_music
+  href: minecraftBiomes_biome_music.md
+- name: minecraft:color_grading_identifier
+  href: minecraftBiomes_color_grading_identifier.md
+- name: minecraft:dry_foliage_color
+  href: minecraftBiomes_dry_foliage_color.md
+- name: minecraft:fog_appearance
+  href: minecraftBiomes_fog_appearance.md
+- name: minecraft:foliage_appearance
+  href: minecraftBiomes_foliage_appearance.md
+- name: minecraft:grass_appearance
+  href: minecraftBiomes_grass_appearance.md
+- name: minecraft:lighting_identifier
+  href: minecraftBiomes_lighting_identifier.md
+- name: minecraft:sky_color
+  href: minecraftBiomes_sky_color.md
+- name: minecraft:water_appearance
+  href: minecraftBiomes_water_appearance.md
+- name: minecraft:water_identifier
+  href: minecraftBiomes_water_identifier.md

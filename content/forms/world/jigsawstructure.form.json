@@ -1,22 +1,23 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "Jigsawure",
     "title": "JigsawStructure World",
     "description": "A Jigsaw Structure is a group of Structure Templates that make up a larger structure.Jigsaw Structures are placed during world generation.",
     "fields": [
       {
         "id": "description",
-        "title": "description",
+        "title": "Description",
         "description": "Identifier of the Jigsaw Structure.",
         "dataType": 16,
         "subForm": {
+          "id": "_v1_21_20_JigsawureDefinition_Description",
           "title": "V1 21 20 JigsawStructureDefinition Description",
           "description": "Identifier of the Jigsaw Structure.",
           "fields": [
             {
               "id": "identifier",
-              "title": "identifier",
-              "description": "identifier",
+              "title": "Identifier",
               "dataType": 2
             }
           ]
@@ -24,40 +25,40 @@
       },
       {
         "id": "biome_filters",
-        "title": "biome_filters",
+        "title": "Biome Filters",
         "description": "Biomes in which the Jigsaw Structure can generate.",
         "dataType": 16,
         "subForm": {
+          "id": "biome_filters",
           "title": "Biome Filters",
-          "description": "Biome Filters",
           "fields": [
             {
               "id": "operator",
-              "title": "operator",
+              "title": "Operator",
               "description": "The comparison to apply with 'value'.",
               "dataType": 16
             },
             {
               "id": "test",
-              "title": "test",
+              "title": "Test",
               "description": "The name of the test to apply.",
               "dataType": 2
             },
             {
               "id": "subject",
-              "title": "subject",
+              "title": "Subject",
               "description": "The subject of this filter test.",
               "dataType": 16
             },
             {
               "id": "domain",
-              "title": "domain",
+              "title": "Domain",
               "description": "The domain the test should be performed in.",
               "dataType": 16
             },
             {
               "id": "value",
-              "title": "value",
+              "title": "Value",
               "description": "The value being compared with the test.",
               "dataType": 16
             }
@@ -72,8 +73,8 @@
             "id": "biome_filters",
             "dataType": 16,
             "subForm": {
+              "id": "biome_filters",
               "title": "Biome Filters",
-              "description": "Biome Filters",
               "fields": [
                 {
                   "id": "OR",
@@ -83,13 +84,13 @@
                 },
                 {
                   "id": "all",
-                  "title": "all",
+                  "title": "All",
                   "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
                   "dataType": 16
                 },
                 {
                   "id": "all_of",
-                  "title": "all_of",
+                  "title": "All Of",
                   "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
                   "dataType": 16
                 },
@@ -101,19 +102,19 @@
                 },
                 {
                   "id": "any_of",
-                  "title": "any_of",
+                  "title": "Any Of",
                   "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
                   "dataType": 16
                 },
                 {
                   "id": "none_of",
-                  "title": "none_of",
+                  "title": "None Of",
                   "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
                   "dataType": 16
                 },
                 {
                   "id": "any",
-                  "title": "any",
+                  "title": "Any",
                   "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
                   "dataType": 16
                 },
@@ -136,19 +137,19 @@
       },
       {
         "id": "terrain_adaptation",
-        "title": "enum SharedTypes_v1_21_20_JigsawureDefinition_TerrainAdaptation",
+        "title": "V1 21 20 JigsawureDefinition TerrainAdaptation",
         "description": "How the terrain should adapt relative to the generated Jigsaw Structure.",
         "dataType": 2
       },
       {
         "id": "start_pool",
-        "title": "start_pool",
+        "title": "Start Pool",
         "description": "The first Template Pool to use when generating the Jigsaw Structure.",
         "dataType": 2
       },
       {
         "id": "max_distance_from_center",
-        "title": "max_distance_from_center",
+        "title": "Max Distance From Center",
         "description": "This is the max distance from the jigsaw pieces to the structure start: [1-128]",
         "dataType": 0,
         "validity": [
@@ -164,19 +165,19 @@
       },
       {
         "id": "start_height",
-        "title": "start_height",
+        "title": "Start Height",
         "description": "Height at which the Jigsaw Structure's start pool should begin.",
         "dataType": 16
       },
       {
         "id": "start_jigsaw_name",
-        "title": "start_jigsaw_name",
+        "title": "Start Jigsaw Name",
         "description": "The start jigsaw name is the name of the jigsaw block from the start pool to be placed first.",
         "dataType": 2
       },
       {
         "id": "max_depth",
-        "title": "max_depth",
+        "title": "Max Depth",
         "description": "The maximum recursion depth for Jigsaw Structure Generation. For example, a Jigsaw Structure that builds a road with a max_depth of 5 will only have paths that are a maximum of 5 structures templates in length in any given direction from the origin.",
         "dataType": 0,
         "validity": [
@@ -188,19 +189,19 @@
       },
       {
         "id": "heightmap_projection",
-        "title": "enum SharedTypes_v1_21_20_JigsawureDefinition_HeightmapProjection",
+        "title": "V1 21 20 JigsawureDefinition HeightmapProjection",
         "description": "Heightmap used to calculate the relative start height. For example, a heightmap_projection of ocean_floor and a start_height of 10 means the Jigsaw Structure will begin generating 10 blocks above the ocean floor.",
         "dataType": 2
       },
       {
         "id": "dimension_padding",
-        "title": "dimension_padding",
+        "title": "Dimension Padding",
         "description": "Dimension padding prevents the structure from getting cut off at the top or bottom of the world.",
         "dataType": 16
       },
       {
         "id": "pool_aliases",
-        "title": "pool_aliases",
+        "title": "Pool Aliases",
         "description": "Pool Aliases are used to determine which template pool can be a substitute.",
         "dataType": 17
       }

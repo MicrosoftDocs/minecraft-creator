@@ -33,8 +33,6 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 | scale_power_by_draw_duration | *not set* | Boolean true/false | Scale power by draw duration? Default is set to false. | My Sword Shoot: `true` | 
 
 ## Ammunition item type
-V1 20 50 ShooterItemComponent Ammunition.
-
 
 #### V1 20 50 ShooterItemComponent Ammunition Properties
 

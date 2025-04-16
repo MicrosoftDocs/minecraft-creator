@@ -160,6 +160,48 @@
           "content": "geometry.mikeamm_gwve_gray_ore"
         }
       ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/frond_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.frond_top"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.palm_leave_corner"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_tip.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.palm_leave_tip"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.palm_leave"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_tree_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.chill_oasis_top"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_trunk.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.palm_trunk"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:geometry/",
+          "content": "geometry.white_sand"
+        }
+      ],
       "/samples/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json": [
         {
           "path": "/minecraft:block/components/minecraft:geometry/",

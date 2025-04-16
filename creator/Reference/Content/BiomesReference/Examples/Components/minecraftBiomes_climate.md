@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.
 
 
-## Climate Properties
+## Minecraft Climate Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

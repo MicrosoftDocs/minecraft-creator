@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Replaces a specified portion of one or more Minecraft biomes.
 
 
-## Replace Biomes Properties
+## Minecraft Replace Biomes Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

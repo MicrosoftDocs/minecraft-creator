@@ -1,0 +1,34 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "menu_category",
+    "title": "Menu Category Item",
+    "description": "menu_category contains the creative group name and category for this item.",
+    "fields": [
+      {
+        "id": "category",
+        "title": "CreativeItemCategory",
+        "description": "Creative category where this item belongs. Defaults to \"none\".",
+        "dataType": 2
+      },
+      {
+        "id": "group",
+        "title": "Group",
+        "description": "The Creative Group that this item belongs to. Group name is limited to 256 characters. The name also must start with a namespace.",
+        "dataType": 2,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^(?:.)+:(?:.)+$"
+          }
+        ]
+      },
+      {
+        "id": "is_hidden_in_commands",
+        "title": "Is Hidden In Commands",
+        "description": "Determines whether or not this item can be used with commands. Commands can use items by default if a category is set.",
+        "dataType": 1
+      }
+    ]
+  }
+}

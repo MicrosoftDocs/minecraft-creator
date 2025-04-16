@@ -1,9 +1,10 @@
 ---
-author: neonerz
+author: mammerla
 ms.author: mikeam
 title: Chunker - Advanced Mode
 description: "Working with Clunker"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/16/2025
 ---
 # Chunker - Advanced Mode
 

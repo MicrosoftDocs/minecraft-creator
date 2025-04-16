@@ -2,16 +2,16 @@
   "id": "minecraft:lighting_identifier",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "title": "Lighting Identifier",
+    "id": "minecraft:lighting_identifier",
+    "title": "Minecraft Lighting Identifier Client Biome",
     "description": "[INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. Biomes without this component will have default lighting settings.",
     "fields": [
       {
         "id": "lighting_identifier",
-        "title": "lighting_identifier",
+        "title": "Lighting Identifier",
         "description": "Identifier of lighting definition to use",
         "dataType": 2
       }
-    ],
-    "id": "minecraft:lighting_identifier"
+    ]
   }
 }

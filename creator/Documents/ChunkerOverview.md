@@ -1,9 +1,10 @@
 ---
-author: neonerz
+author: mammerla
 ms.author: mikeam
 title: Chunker - Overview
 description: "Chunker is a tool used to convert worlds between Minecraft: Java Edition and Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/16/2025
 ---
 
 # Chunker - Overview

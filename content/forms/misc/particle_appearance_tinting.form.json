@@ -1,13 +1,12 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "particle_appearance_tinting",
     "title": "Particle Appearance Tinting Misc",
-    "description": "Particle Appearance Tinting Misc",
     "fields": [
       {
         "id": "color",
-        "title": "color",
-        "description": "color",
+        "title": "Color",
         "dataType": 24,
         "alternates": [
           {
@@ -25,19 +24,17 @@
                 "dataType": 14,
                 "readOnly": true,
                 "subForm": {
+                  "id": "color",
                   "title": "Color",
-                  "description": "Color",
                   "fields": [
                     {
                       "id": "expression",
-                      "title": "expression",
-                      "description": "expression",
+                      "title": "Expression",
                       "dataType": 2
                     },
                     {
                       "id": "version",
-                      "title": "version",
-                      "description": "version",
+                      "title": "Version",
                       "dataType": 0
                     }
                   ]
@@ -53,13 +50,12 @@
             "id": "color",
             "dataType": 16,
             "subForm": {
+              "id": "color",
               "title": "Color",
-              "description": "Color",
               "fields": [
                 {
                   "id": "gradient",
-                  "title": "gradient",
-                  "description": "gradient",
+                  "title": "Gradient",
                   "dataType": 24,
                   "alternates": [
                     {
@@ -81,19 +77,17 @@
                               "dataType": 14,
                               "readOnly": true,
                               "subForm": {
+                                "id": "gradient",
                                 "title": "Gradient",
-                                "description": "Gradient",
                                 "fields": [
                                   {
                                     "id": "expression",
-                                    "title": "expression",
-                                    "description": "expression",
+                                    "title": "Expression",
                                     "dataType": 2
                                   },
                                   {
                                     "id": "version",
-                                    "title": "version",
-                                    "description": "version",
+                                    "title": "Version",
                                     "dataType": 0
                                   }
                                 ]
@@ -111,8 +105,7 @@
                 },
                 {
                   "id": "interpolant",
-                  "title": "interpolant",
-                  "description": "interpolant",
+                  "title": "Interpolant",
                   "dataType": 24,
                   "alternates": [
                     {
@@ -120,19 +113,17 @@
                       "dataType": 14,
                       "readOnly": true,
                       "subForm": {
+                        "id": "interpolant",
                         "title": "Interpolant",
-                        "description": "Interpolant",
                         "fields": [
                           {
                             "id": "expression",
-                            "title": "expression",
-                            "description": "expression",
+                            "title": "Expression",
                             "dataType": 2
                           },
                           {
                             "id": "version",
-                            "title": "version",
-                            "description": "version",
+                            "title": "Version",
                             "dataType": 0
                           }
                         ]

@@ -1,0 +1,19 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "particle_motion_collision_event",
+    "title": "Particle Motion Collision Event Misc",
+    "fields": [
+      {
+        "id": "min_speed",
+        "title": "Min Speed",
+        "dataType": 3
+      },
+      {
+        "id": "event",
+        "title": "Event",
+        "dataType": 16
+      }
+    ]
+  }
+}

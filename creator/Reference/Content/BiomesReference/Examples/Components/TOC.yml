@@ -1,9 +1,5 @@
 - name: Components List
   href: ../ComponentList.md
-- name: Biome Description Biome
-  href: minecraftBiomes_biome_description.md
-- name: Biome JSON File Biome
-  href: minecraftBiomes_biome_json_file.md
 - name: minecraft:capped_surface
   href: minecraftBiomes_capped_surface.md
 - name: minecraft:climate

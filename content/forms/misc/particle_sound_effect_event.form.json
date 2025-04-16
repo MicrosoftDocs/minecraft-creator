@@ -1,0 +1,14 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "particle_sound_effect_event",
+    "title": "Particle Sound Effect Event Misc",
+    "fields": [
+      {
+        "id": "event_name",
+        "title": "Event Name",
+        "dataType": 2
+      }
+    ]
+  }
+}

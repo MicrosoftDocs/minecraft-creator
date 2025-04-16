@@ -1,0 +1,39 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Filter Test",
+    "title": "Filter Test Spawn",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "The comparison to apply with 'value'.",
+        "dataType": 16
+      },
+      {
+        "id": "test",
+        "title": "Test",
+        "description": "The name of the test to apply.",
+        "dataType": 2
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "The subject of this filter test.",
+        "dataType": 16
+      },
+      {
+        "id": "domain",
+        "title": "Domain",
+        "description": "The domain the test should be performed in.",
+        "dataType": 16
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "The value being compared with the test.",
+        "dataType": 16
+      }
+    ]
+  }
+}

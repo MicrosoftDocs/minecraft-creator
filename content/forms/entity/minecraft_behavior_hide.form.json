@@ -18,6 +18,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.hide/",
               "content": 30
             }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.hide/",
+              "content": 30
+            }
           ]
         }
       },
@@ -28,6 +34,12 @@
         "dataType": 2,
         "samples": {
           "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.hide/",
+              "content": "bed"
+            }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.hide/",
               "content": "bed"
@@ -43,6 +55,12 @@
         "dataType": 3,
         "samples": {
           "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.hide/",
+              "content": 0.8
+            }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.hide/",
               "content": 0.8
@@ -67,6 +85,17 @@
     ],
     "samples": {
       "/vanilla/behavior_pack/entities/villager_v2.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.hide/",
+          "content": {
+            "priority": 0,
+            "speed_multiplier": 0.8,
+            "poi_type": "bed",
+            "duration": 30
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hide/",
           "content": {

@@ -1,22 +1,20 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "Block Culling",
     "title": "Block Culling Client Block",
-    "description": "Block Culling Client Block",
     "fields": [
       {
         "id": "description",
-        "title": "description",
-        "description": "description",
+        "title": "Description",
         "dataType": 16,
         "subForm": {
+          "id": "_v1_20_60_BlockCulling_Description",
           "title": "V1 20 60 BlockCulling Description",
-          "description": "V1 20 60 BlockCulling Description",
           "fields": [
             {
               "id": "identifier",
-              "title": "identifier",
-              "description": "identifier",
+              "title": "Identifier",
               "dataType": 2
             }
           ]
@@ -24,38 +22,33 @@
       },
       {
         "id": "rules",
-        "title": "rules",
-        "description": "rules",
+        "title": "Rules",
         "dataType": 15,
         "subForm": {
+          "id": "_v1_21_80_BlockCulling_Rule",
           "title": "V1 21 80 BlockCulling Rule",
-          "description": "V1 21 80 BlockCulling Rule",
           "fields": [
             {
               "id": "geometry_part",
-              "title": "geometry_part",
-              "description": "geometry_part",
+              "title": "Geometry Part",
               "dataType": 16,
               "subForm": {
+                "id": "_v1_20_60_BlockCulling_Rule_GeometryPart",
                 "title": "V1 20 60 BlockCulling Rule GeometryPart",
-                "description": "V1 20 60 BlockCulling Rule GeometryPart",
                 "fields": [
                   {
                     "id": "bone",
-                    "title": "bone",
-                    "description": "bone",
+                    "title": "Bone",
                     "dataType": 2
                   },
                   {
                     "id": "cube",
-                    "title": "cube",
-                    "description": "cube",
+                    "title": "Cube",
                     "dataType": 0
                   },
                   {
                     "id": "face",
-                    "title": "enum SharedTypes_Facing",
-                    "description": "enum SharedTypes_Facing",
+                    "title": "Facing",
                     "dataType": 2
                   }
                 ]
@@ -63,14 +56,12 @@
             },
             {
               "id": "condition",
-              "title": "enum SharedTypes_v1_21_80_BlockCulling_Rule_Condition",
-              "description": "enum SharedTypes_v1_21_80_BlockCulling_Rule_Condition",
+              "title": "V1 21 80 BlockCulling Rule Condition",
               "dataType": 2
             },
             {
               "id": "direction",
-              "title": "enum SharedTypes_Facing",
-              "description": "enum SharedTypes_Facing",
+              "title": "Facing",
               "dataType": 2
             }
           ]

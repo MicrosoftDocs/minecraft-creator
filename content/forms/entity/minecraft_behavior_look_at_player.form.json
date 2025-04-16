@@ -1114,6 +1114,16 @@
             "probability": 0.02
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+          "content": {
+            "priority": 8,
+            "look_distance": 8,
+            "probability": 0.02
+          }
+        }
       ]
     }
   }

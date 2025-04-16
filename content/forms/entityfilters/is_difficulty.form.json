@@ -324,6 +324,22 @@
             "value": "hard"
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/events/become_zombie/sequence/0/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "normal"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/become_zombie/sequence/1/filters/",
+          "content": {
+            "test": "is_difficulty",
+            "value": "hard"
+          }
+        }
       ]
     }
   }

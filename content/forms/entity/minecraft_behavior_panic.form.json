@@ -782,6 +782,15 @@
             "speed_multiplier": 1.25
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+          "content": {
+            "priority": 1,
+            "speed_multiplier": 0.6
+          }
+        }
       ]
     }
   }

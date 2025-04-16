@@ -258,12 +258,13 @@
     }
   },
   "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:display_name",
     "title": "Display Name",
     "description": "The display_name item component specifies the text shown whenever an item's name is displayed, like in hover text.",
     "fields": [
       {
         "id": "value",
-        "title": "value",
+        "title": "Value",
         "description": "Name shown for an item.",
         "dataType": 2,
         "samples": {
@@ -366,7 +367,6 @@
         }
       }
     ],
-    "id": "minecraft:display_name",
     "samples": {
       "/vanilla/behavior_pack/items/apple.json": [
         {

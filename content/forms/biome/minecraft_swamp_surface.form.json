@@ -68,12 +68,13 @@
     ]
   },
   "generatedFromSchema_doNotEdit": {
-    "title": "Swamp Surface",
+    "id": "minecraft:swamp_surface",
+    "title": "Minecraft Swamp Surface Biome",
     "description": "Similar to overworld_surface. Adds swamp surface details.",
     "fields": [
       {
         "id": "mid_material",
-        "title": "mid_material",
+        "title": "Mid Material",
         "description": "Controls the block type used in a layer below the surface of this biome.",
         "dataType": 2,
         "alternates": [
@@ -82,18 +83,18 @@
             "dataType": 16,
             "readOnly": true,
             "subForm": {
+              "id": "mid_material",
               "title": "Mid Material",
-              "description": "Mid Material",
               "fields": [
                 {
                   "id": "name",
-                  "title": "name",
+                  "title": "Name",
                   "description": "Name of the block",
                   "dataType": 2
                 },
                 {
                   "id": "states",
-                  "title": "states",
+                  "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
                   "alternates": [
@@ -114,13 +115,13 @@
       },
       {
         "id": "sea_floor_depth",
-        "title": "sea_floor_depth",
+        "title": "Sea Floor Depth",
         "description": "Controls how deep below the world water level the floor should occur.",
         "dataType": 0
       },
       {
         "id": "sea_floor_material",
-        "title": "sea_floor_material",
+        "title": "Sea Floor Material",
         "description": "Controls the block type used as a floor for bodies of water in this biome.",
         "dataType": 2,
         "alternates": [
@@ -129,18 +130,18 @@
             "dataType": 16,
             "readOnly": true,
             "subForm": {
+              "id": "sea_floor_material",
               "title": "Sea Floor Material",
-              "description": "Sea Floor Material",
               "fields": [
                 {
                   "id": "name",
-                  "title": "name",
+                  "title": "Name",
                   "description": "Name of the block",
                   "dataType": 2
                 },
                 {
                   "id": "states",
-                  "title": "states",
+                  "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
                   "alternates": [
@@ -161,7 +162,7 @@
       },
       {
         "id": "sea_material",
-        "title": "sea_material",
+        "title": "Sea Material",
         "description": "Controls the block type used for the bodies of water in this biome.",
         "dataType": 2,
         "alternates": [
@@ -170,18 +171,18 @@
             "dataType": 16,
             "readOnly": true,
             "subForm": {
+              "id": "sea_material",
               "title": "Sea Material",
-              "description": "Sea Material",
               "fields": [
                 {
                   "id": "name",
-                  "title": "name",
+                  "title": "Name",
                   "description": "Name of the block",
                   "dataType": 2
                 },
                 {
                   "id": "states",
-                  "title": "states",
+                  "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
                   "alternates": [
@@ -202,7 +203,7 @@
       },
       {
         "id": "top_material",
-        "title": "top_material",
+        "title": "Top Material",
         "description": "Controls the block type used for the surface of this biome.",
         "dataType": 2,
         "alternates": [
@@ -211,18 +212,18 @@
             "dataType": 16,
             "readOnly": true,
             "subForm": {
+              "id": "top_material",
               "title": "Top Material",
-              "description": "Top Material",
               "fields": [
                 {
                   "id": "name",
-                  "title": "name",
+                  "title": "Name",
                   "description": "Name of the block",
                   "dataType": 2
                 },
                 {
                   "id": "states",
-                  "title": "states",
+                  "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
                   "alternates": [
@@ -243,7 +244,7 @@
       },
       {
         "id": "foundation_material",
-        "title": "foundation_material",
+        "title": "Foundation Material",
         "description": "Controls the block type used deep underground in this biome.",
         "dataType": 2,
         "alternates": [
@@ -252,18 +253,18 @@
             "dataType": 16,
             "readOnly": true,
             "subForm": {
+              "id": "foundation_material",
               "title": "Foundation Material",
-              "description": "Foundation Material",
               "fields": [
                 {
                   "id": "name",
-                  "title": "name",
+                  "title": "Name",
                   "description": "Name of the block",
                   "dataType": 2
                 },
                 {
                   "id": "states",
-                  "title": "states",
+                  "title": "States",
                   "description": "Contains members named after each state, with boolean, integer, or string values.",
                   "dataType": 31,
                   "alternates": [
@@ -282,7 +283,6 @@
           }
         ]
       }
-    ],
-    "id": "minecraft:swamp_surface"
+    ]
   }
 }

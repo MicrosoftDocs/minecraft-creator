@@ -113,6 +113,12 @@
             "mingle_distance": 2
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/job_specific_goals/minecraft:behavior.mingle/",
+          "content": {}
+        }
       ]
     }
   }

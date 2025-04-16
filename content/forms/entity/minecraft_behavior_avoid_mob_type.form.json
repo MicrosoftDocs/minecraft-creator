@@ -708,6 +708,47 @@
                 }
               ]
             }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "zombie"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "zombie_villager"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "zombie_pigman"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "illager"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "vex"
+                      }
+                    ]
+                  },
+                  "max_dist": 8,
+                  "walk_speed_multiplier": 0.6,
+                  "sprint_speed_multiplier": 0.6
+                }
+              ]
+            }
           ]
         }
       },
@@ -1783,6 +1824,50 @@
                 "max_dist": 10,
                 "walk_speed_multiplier": 0.8,
                 "sprint_speed_multiplier": 1.33
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+          "content": {
+            "priority": 4,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "zombie"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "zombie_villager"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "zombie_pigman"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "illager"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "vex"
+                    }
+                  ]
+                },
+                "max_dist": 8,
+                "walk_speed_multiplier": 0.6,
+                "sprint_speed_multiplier": 0.6
               }
             ]
           }

@@ -1,13 +1,12 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "particle_appearance_billboard",
     "title": "Particle Appearance Billboard Misc",
-    "description": "Particle Appearance Billboard Misc",
     "fields": [
       {
         "id": "size",
-        "title": "size",
-        "description": "size",
+        "title": "Size",
         "dataType": 24,
         "minLength": 2,
         "maxLength": 2,
@@ -17,19 +16,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "size",
               "title": "Size",
-              "description": "Size",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -43,20 +40,17 @@
       },
       {
         "id": "facing_camera_mode",
-        "title": "facing_camera_mode",
-        "description": "facing_camera_mode",
+        "title": "Facing Camera Mode",
         "dataType": 16
       },
       {
         "id": "direction",
-        "title": "direction",
-        "description": "direction",
+        "title": "Direction",
         "dataType": 16
       },
       {
         "id": "uv",
-        "title": "uv",
-        "description": "uv",
+        "title": "Uv",
         "dataType": 16
       }
     ]

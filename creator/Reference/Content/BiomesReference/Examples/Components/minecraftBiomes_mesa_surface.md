@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Similar to overworld_surface. Adds colored strata and optional pillars.
 
 
-## Mesa Surface Properties
+## Minecraft Mesa Surface Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -35,8 +35,6 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | top_material (Alternate 1) | *not set* | [Top Material (Alternate 1)](#top-material-(alternate-1)-item-type) item |  |  | 
 
 ## Clay Material (Alternate 1) item type
-Clay Material.
-
 
 #### Clay Material Properties
 
@@ -48,8 +46,6 @@ Clay Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Foundation Material (Alternate 1) item type
-Foundation Material.
-
 
 #### Foundation Material Properties
 
@@ -61,8 +57,6 @@ Foundation Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Hard Clay Material (Alternate 1) item type
-Hard Clay Material.
-
 
 #### Hard Clay Material Properties
 
@@ -74,8 +68,6 @@ Hard Clay Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Mid Material (Alternate 1) item type
-Mid Material.
-
 
 #### Mid Material Properties
 
@@ -87,8 +79,6 @@ Mid Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Floor Material (Alternate 1) item type
-Sea Floor Material.
-
 
 #### Sea Floor Material Properties
 
@@ -100,8 +90,6 @@ Sea Floor Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Material (Alternate 1) item type
-Sea Material.
-
 
 #### Sea Material Properties
 
@@ -113,8 +101,6 @@ Sea Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Top Material (Alternate 1) item type
-Top Material.
-
 
 #### Top Material Properties
 

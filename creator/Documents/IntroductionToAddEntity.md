@@ -1,9 +1,10 @@
 ---
-author: neonerz
+author: mammerla
 ms.author: mikeam
 title: Creating New Entity Types
 description: "A guide detailing the steps needed to start creating a custom entity type"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/16/2025
 ---
 
 # Creating New Entity Types

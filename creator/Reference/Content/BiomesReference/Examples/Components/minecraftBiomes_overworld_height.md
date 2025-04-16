@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Noise parameters used to drive terrain height in the Overworld.
 
 
-## Overworld Height Properties
+## Minecraft Overworld Height Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

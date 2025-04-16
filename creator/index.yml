@@ -22,9 +22,9 @@ highlightedContent:
       itemType: reference
       url: ScriptAPI/index.yml
     #card
-    - title: "Minecraft Bedrock Editor"
+    - title: "Minecraft Creator Camp - April 24th/25th"
       itemType: whats-new
-      url: Documents/BedrockEditor/EditorOverview.md
+      url: Documents/CreatorCamp.md
     #card
     - title: "1.21.70 Update Summary"
       itemType: whats-new
@@ -34,13 +34,13 @@ highlightedContent:
       itemType: whats-new
       url: Documents/CameraCommandIntroduction.md
     #card
-    - title: "Building Editor Extensions"
+    - title: "Minecraft Bedrock Editor"
       itemType: whats-new
-      url: Documents/BedrockEditor/EditorExtensionsIntroduction.md
+      url: Documents/BedrockEditor/EditorOverview.md
     #card
-    - title: Minecraft Item Wizard
+    - title: Minecraft Creator Tools
       itemType: whats-new
-      url: Documents/MinecraftItemWizard.md
+      url: Documents/MCToolsOverview.md
 
 # productDirectory section (optional)
 productDirectory:

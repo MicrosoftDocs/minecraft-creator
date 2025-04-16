@@ -587,6 +587,14 @@
             "value": 1.3
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/baby/minecraft:scale/",
+          "content": {
+            "value": 0.5
+          }
+        }
       ]
     }
   }

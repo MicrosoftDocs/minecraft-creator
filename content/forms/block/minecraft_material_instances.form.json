@@ -179,6 +179,69 @@
               }
             }
           ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/frond_top.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "frond_top",
+                "render_method": "alpha_test"
+              }
+            }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "palm_leave_corner",
+                "render_method": "alpha_test"
+              }
+            }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_tip.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "palm_leave_tip",
+                "render_method": "alpha_test"
+              }
+            }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "palm_leave",
+                "render_method": "alpha_test"
+              }
+            }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_tree_top.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "chill_oasis_top",
+                "render_method": "alpha_test"
+              }
+            }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_trunk.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "palm_trunk",
+                "render_method": "alpha_test"
+              }
+            }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "white_sand",
+                "render_method": "alpha_test"
+              }
+            }
+          ],
           "/samples/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json": [
             {
               "path": "/minecraft:block/components/minecraft:material_instances/",
@@ -376,6 +439,83 @@
               "texture": "mikeamm_gwve_gray_ore",
               "render_method": "alpha_test",
               "face_dimming": false
+            }
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/frond_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "frond_top",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "palm_leave_corner",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_tip.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "palm_leave_tip",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "palm_leave",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_tree_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "chill_oasis_top",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_trunk.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "palm_trunk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "white_sand",
+              "render_method": "alpha_test"
             }
           }
         }

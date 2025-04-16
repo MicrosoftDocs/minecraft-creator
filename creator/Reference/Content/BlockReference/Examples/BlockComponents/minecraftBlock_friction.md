@@ -18,9 +18,16 @@ This item can also be represented as a `Decimal number`.
 
 ## Samples
 
-#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json)
+#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json)
 
 
 ```json
 "minecraft:friction": 0.38
+```
+
+#### [Block White Sand](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json)
+
+
+```json
+"minecraft:friction": 0.2
 ```

@@ -44,49 +44,47 @@
     ]
   },
   "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:digger",
     "title": "Digger",
     "description": "Digger item component specifies how quickly this item can dig specific blocks.",
     "fields": [
       {
         "id": "use_efficiency",
-        "title": "use_efficiency",
+        "title": "Use Efficiency",
         "description": "Determines whether this item should be impacted if the efficiency enchantment is applied to it.",
         "dataType": 1
       },
       {
         "id": "destroy_speeds",
-        "title": "destroy_speeds",
+        "title": "Destroy Speeds",
         "description": "A list of blocks to dig with correlating speeds of digging.",
         "dataType": 15,
         "subForm": {
+          "id": "_v1_20_50_DiggerItemComponent_BlockInfo",
           "title": "V1 20 50 DiggerItemComponent BlockInfo",
-          "description": "V1 20 50 DiggerItemComponent BlockInfo",
           "fields": [
             {
               "id": "block",
-              "title": "block",
+              "title": "Block",
               "description": "Block to be dug.",
               "dataType": 16,
               "subForm": {
+                "id": "block",
                 "title": "Block",
-                "description": "Block",
                 "fields": [
                   {
                     "id": "name",
-                    "title": "name",
-                    "description": "name",
+                    "title": "Name",
                     "dataType": 2
                   },
                   {
                     "id": "tags",
-                    "title": "tags",
-                    "description": "tags",
+                    "title": "Tags",
                     "dataType": 2
                   },
                   {
                     "id": "states",
-                    "title": "states",
-                    "description": "states",
+                    "title": "States",
                     "dataType": 0,
                     "alternates": [
                       {
@@ -114,14 +112,13 @@
             },
             {
               "id": "speed",
-              "title": "speed",
+              "title": "Speed",
               "description": "Digging speed for the correlating block(s).",
               "dataType": 0
             }
           ]
         }
       }
-    ],
-    "id": "minecraft:digger"
+    ]
   }
 }

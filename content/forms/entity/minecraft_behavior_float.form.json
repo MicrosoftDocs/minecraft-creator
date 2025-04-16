@@ -525,6 +525,14 @@
             "priority": 0
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.float/",
+          "content": {
+            "priority": 0
+          }
+        }
       ]
     }
   }

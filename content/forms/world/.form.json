@@ -1,21 +1,20 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "Used to pair block rules with ure Templates and to randomly place Structure Templates using a weighted list.",
     "title": "Used To Pair Block Rules With Structure Templates And To Randomly Place Structure Templates Using A Weighted List World",
-    "description": "Used To Pair Block Rules With Structure Templates And To Randomly Place Structure Templates Using A Weighted List World",
     "fields": [
       {
         "id": "description",
-        "title": "description",
-        "description": "description",
+        "title": "Description",
         "dataType": 16,
         "subForm": {
+          "id": "_v1_21_20_JigsawureTemplatePool_Description",
           "title": "V1 21 20 JigsawStructureTemplatePool Description",
-          "description": "V1 21 20 JigsawStructureTemplatePool Description",
           "fields": [
             {
               "id": "identifier",
-              "title": "identifier",
+              "title": "Identifier",
               "description": "Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates.",
               "dataType": 2
             }
@@ -24,37 +23,37 @@
       },
       {
         "id": "elements",
-        "title": "elements",
+        "title": "Elements",
         "description": "List of Structure Template and processor list pairs.",
         "dataType": 15,
         "subForm": {
+          "id": "_v1_21_20_JigsawureTemplatePool_TemplatePoolElement",
           "title": "V1 21 20 JigsawStructureTemplatePool TemplatePoolElement",
-          "description": "V1 21 20 JigsawStructureTemplatePool TemplatePoolElement",
           "fields": [
             {
               "id": "element",
-              "title": "element",
+              "title": "Element",
               "description": "A grouping of a Structure Template, the Processor List to use when placing the structure, and its weight that determines the likelihood of the element being chosen.",
               "dataType": 16,
               "subForm": {
+                "id": "_v1_21_20_JigsawureTemplatePool_SinglePoolElement",
                 "title": "V1 21 20 JigsawStructureTemplatePool SinglePoolElement",
-                "description": "V1 21 20 JigsawStructureTemplatePool SinglePoolElement",
                 "fields": [
                   {
                     "id": "element_type",
-                    "title": "enum SharedTypes_v1_21_20_JigsawureTemplatePool_ElementType",
+                    "title": "V1 21 20 JigsawureTemplatePool ElementType",
                     "description": "The type of element. Currently, only minecraft:single_pool_element is supported.",
                     "dataType": 2
                   },
                   {
                     "id": "location",
-                    "title": "location",
+                    "title": "Location",
                     "description": "The path of the structure file. This path is relative to the behavior pack's structures folder.",
                     "dataType": 2
                   },
                   {
                     "id": "processors",
-                    "title": "processors",
+                    "title": "Processors",
                     "description": "The identifier of the processor list to use when placing the structure.",
                     "dataType": 2
                   }
@@ -63,7 +62,7 @@
             },
             {
               "id": "weight",
-              "title": "weight",
+              "title": "Weight",
               "description": "The weighted probability of choosing the element from the pool. For example, a template pool containing 2 structures with weights of 1 and 3 will have a 25% and 75% chance of being chosen respectively.",
               "dataType": 0,
               "validity": [
@@ -79,7 +78,7 @@
             },
             {
               "id": "projection",
-              "title": "enum SharedTypes_v1_21_20_JigsawureTemplatePool_Projection",
+              "title": "V1 21 20 JigsawureTemplatePool Projection",
               "description": "Specifies how structures should be placed relative to the terrain.",
               "dataType": 2
             }
@@ -88,7 +87,7 @@
       },
       {
         "id": "fallback",
-        "title": "fallback",
+        "title": "Fallback",
         "description": "Fallback template pool to use if no element in the pool can be placed successfully.",
         "dataType": 2
       }

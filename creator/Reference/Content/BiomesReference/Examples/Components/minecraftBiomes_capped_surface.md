@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Generates surface on blocks with non-solid blocks above or below.
 
 
-## Capped Surface Properties
+## Minecraft Capped Surface Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -28,8 +28,6 @@ Generates surface on blocks with non-solid blocks above or below.
 | sea_material (Alternate 1) | *not set* | [Sea Material (Alternate 1)](#sea-material-(alternate-1)-item-type) item |  |  | 
 
 ## Beach Material (Alternate 1) item type
-Beach Material.
-
 
 #### Beach Material Properties
 
@@ -41,8 +39,6 @@ Beach Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Ceiling Materials (Alternate 1) item type
-Ceiling Materials.
-
 
 #### Ceiling Materials Properties
 
@@ -54,8 +50,6 @@ Ceiling Materials.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Floor Materials (Alternate 1) item type
-Floor Materials.
-
 
 #### Floor Materials Properties
 
@@ -67,8 +61,6 @@ Floor Materials.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Foundation Material (Alternate 1) item type
-Foundation Material.
-
 
 #### Foundation Material Properties
 
@@ -80,8 +72,6 @@ Foundation Material.
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Sea Material (Alternate 1) item type
-Sea Material.
-
 
 #### Sea Material Properties
 
