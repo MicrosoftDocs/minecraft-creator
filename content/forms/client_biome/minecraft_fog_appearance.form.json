@@ -14,16 +14,16 @@
     ]
   },
   "generatedFromSchema_doNotEdit": {
-    "title": "Fog Appearance",
+    "id": "minecraft:fog_appearance",
+    "title": "Minecraft Fog Appearance Client Biome",
     "description": "Set the fog settings used during rendering. Biomes without this component will have default fog settings.",
     "fields": [
       {
         "id": "fog_identifier",
-        "title": "fog_identifier",
+        "title": "Fog Identifier",
         "description": "Identifier of fog definition to use",
         "dataType": 2
       }
-    ],
-    "id": "minecraft:fog_appearance"
+    ]
   }
 }

@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 [INTERNAL - WORK IN PROGRESS] Set the atmosphere settings used during deferred rendering. Biomes without this component will have default atmosphere settings.
 
 
-## Atmosphere Identifier Properties
+## Minecraft Atmosphere Identifier Client Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -188,12 +188,13 @@
     }
   },
   "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:repairable",
     "title": "Repairable",
     "description": "The repairable item component specifies which items can be used to repair this item, along with how much durability is gained.",
     "fields": [
       {
         "id": "repair_items",
-        "title": "repair_items",
+        "title": "Repair Items",
         "description": "List of repair item entries. Each entry needs to define a list of strings for `items` that can be used for the repair and an optional `repair_amount` for how much durability is gained.",
         "dataType": 2,
         "alternates": [
@@ -202,12 +203,12 @@
             "dataType": 16,
             "readOnly": true,
             "subForm": {
+              "id": "repair_items",
               "title": "Repair Items",
-              "description": "Repair Items",
               "fields": [
                 {
                   "id": "items",
-                  "title": "items",
+                  "title": "Items",
                   "description": "Items that may be used to repair an item.",
                   "dataType": 2,
                   "alternates": [
@@ -219,7 +220,7 @@
                 },
                 {
                   "id": "repair_amount",
-                  "title": "repair_amount",
+                  "title": "Repair Amount",
                   "description": "How much the item is repaired.",
                   "dataType": 24,
                   "alternates": [
@@ -228,19 +229,17 @@
                       "dataType": 14,
                       "readOnly": true,
                       "subForm": {
+                        "id": "repair_amount",
                         "title": "Repair Amount",
-                        "description": "Repair Amount",
                         "fields": [
                           {
                             "id": "expression",
-                            "title": "expression",
-                            "description": "expression",
+                            "title": "Expression",
                             "dataType": 2
                           },
                           {
                             "id": "version",
-                            "title": "version",
-                            "description": "version",
+                            "title": "Version",
                             "dataType": 0
                           }
                         ]
@@ -338,7 +337,6 @@
         }
       }
     ],
-    "id": "minecraft:repairable",
     "samples": {
       "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
         {

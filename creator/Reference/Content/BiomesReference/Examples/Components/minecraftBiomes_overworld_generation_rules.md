@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.
 
 
-## Overworld Generation Rules Properties
+## Minecraft Overworld Generation Rules Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

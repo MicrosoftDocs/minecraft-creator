@@ -1,13 +1,12 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "particle_motion_dynamic",
     "title": "Particle Motion Dynamic Misc",
-    "description": "Particle Motion Dynamic Misc",
     "fields": [
       {
         "id": "linear_acceleration",
-        "title": "linear_acceleration",
-        "description": "linear_acceleration",
+        "title": "Linear Acceleration",
         "dataType": 24,
         "minLength": 3,
         "maxLength": 3,
@@ -17,19 +16,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "linear_acceleration",
               "title": "Linear Acceleration",
-              "description": "Linear Acceleration",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -43,8 +40,7 @@
       },
       {
         "id": "linear_drag_coefficient",
-        "title": "linear_drag_coefficient",
-        "description": "linear_drag_coefficient",
+        "title": "Linear Drag Coefficient",
         "dataType": 24,
         "alternates": [
           {
@@ -52,19 +48,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "linear_drag_coefficient",
               "title": "Linear Drag Coefficient",
-              "description": "Linear Drag Coefficient",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -78,8 +72,7 @@
       },
       {
         "id": "rotation_acceleration",
-        "title": "rotation_acceleration",
-        "description": "rotation_acceleration",
+        "title": "Rotation Acceleration",
         "dataType": 24,
         "alternates": [
           {
@@ -87,19 +80,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "rotation_acceleration",
               "title": "Rotation Acceleration",
-              "description": "Rotation Acceleration",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -113,8 +104,7 @@
       },
       {
         "id": "rotation_drag_coefficient",
-        "title": "rotation_drag_coefficient",
-        "description": "rotation_drag_coefficient",
+        "title": "Rotation Drag Coefficient",
         "dataType": 24,
         "alternates": [
           {
@@ -122,19 +112,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "rotation_drag_coefficient",
               "title": "Rotation Drag Coefficient",
-              "description": "Rotation Drag Coefficient",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]

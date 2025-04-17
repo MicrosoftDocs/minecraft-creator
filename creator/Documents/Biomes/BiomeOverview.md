@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Biome JSON and Overview
 description: "A reference document discussing biomes and custom biomes"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/10/2025
 ---
 
 # Biome JSON and Overview
@@ -105,9 +106,9 @@ Specifies a particular block. Can be a string block name or a JSON object.
 
 ## Biome Components
 
-See [this article](./../../Reference/Content/BiomesReference/Examples/ComponentList.md) for a list of biome components you can use within a behavior pack.
+See [this article on server biome components](./../../Reference/Content/BiomesReference/Examples/ComponentList.md) for a list of biome components you can use within a behavior pack.
 
-See [this article](./../../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md) for a list of client biome components you can use within a resource pack.
+See [this article on client biomes](./../../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md) for a list of client biome components you can use within a resource pack.
 
 ### Example
 

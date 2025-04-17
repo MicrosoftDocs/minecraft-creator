@@ -22,12 +22,13 @@
     ]
   },
   "generatedFromSchema_doNotEdit": {
-    "title": "Sky Color",
+    "id": "minecraft:sky_color",
+    "title": "Minecraft Sky Color Client Biome",
     "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
     "fields": [
       {
         "id": "sky_color",
-        "title": "sky_color",
+        "title": "Sky Color",
         "description": "RGB color of the sky",
         "dataType": 2,
         "alternates": [
@@ -39,7 +40,6 @@
           }
         ]
       }
-    ],
-    "id": "minecraft:sky_color"
+    ]
   }
 }

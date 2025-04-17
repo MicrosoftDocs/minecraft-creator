@@ -1,0 +1,14 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Generation",
+    "title": "Generation Misc",
+    "fields": [
+      {
+        "id": "generator_type",
+        "title": "Generator Type",
+        "dataType": 2
+      }
+    ]
+  }
+}

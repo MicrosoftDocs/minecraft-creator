@@ -27,18 +27,16 @@ Sets the item as a planter item component for blocks. Items with this component 
 | use_on (Alternate 2) | *not set* | Object |  |  | 
 
 ## Use On item type
-Use On
-
 
 #### Use On Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | String | name |  | 
-| states | *not set* | Integer number | states |  | 
+| name | *not set* | String |  |  | 
+| states | *not set* | Integer number |  |  | 
 | states (Alternate 1) | *not set* | String |  |  | 
 | states (Alternate 2) | *not set* | Boolean true/false |  |  | 
-| tags | *not set* | String | tags |  | 
+| tags | *not set* | String |  |  | 
 
 ## Samples
 

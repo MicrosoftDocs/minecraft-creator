@@ -218,6 +218,49 @@
               "content": "{\r\n\t\"minecraft:destructible_by_mining\": {\r\n\t\t\"seconds_to_destroy\": 10,\r\n\t\t\"item_specific_speeds\": [\r\n\t\t\t{\r\n\t\t\t\t\"item\": \"minecraft:iron_pickaxe\",\r\n\t\t\t\t\"destroy_speed\": 5.0\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"item\": \"minecraft:diamond_pickaxe\",\r\n\t\t\t\t\"destroy_speed\": 2.0\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}"
             }
           ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": [
+                {
+                  "item": {
+                    "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"
+                  },
+                  "destroy_speed": 1.15
+                },
+                {
+                  "item": {
+                    "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"
+                  },
+                  "destroy_speed": 0.6
+                },
+                {
+                  "item": {
+                    "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
+                  },
+                  "destroy_speed": 0.4
+                },
+                {
+                  "item": {
+                    "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
+                  },
+                  "destroy_speed": 0.2
+                },
+                {
+                  "item": {
+                    "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"
+                  },
+                  "destroy_speed": 0.3
+                },
+                {
+                  "item": {
+                    "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"
+                  },
+                  "destroy_speed": 0.25
+                }
+              ]
+            }
+          ],
           "/samples/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json": [
             {
               "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
@@ -243,6 +286,12 @@
             {
               "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
               "content": 0.4
+            }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+              "content": 7.5
             }
           ],
           "/samples/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json": [
@@ -279,6 +328,100 @@
           "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
           "content": {
             "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/frond_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_tip.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_tree_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_trunk.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 0.4
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_mining/",
+          "content": {
+            "seconds_to_destroy": 7.5,
+            "item_specific_speeds": [
+              {
+                "item": {
+                  "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"
+                },
+                "destroy_speed": 1.15
+              },
+              {
+                "item": {
+                  "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"
+                },
+                "destroy_speed": 0.6
+              },
+              {
+                "item": {
+                  "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
+                },
+                "destroy_speed": 0.4
+              },
+              {
+                "item": {
+                  "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
+                },
+                "destroy_speed": 0.2
+              },
+              {
+                "item": {
+                  "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"
+                },
+                "destroy_speed": 0.3
+              },
+              {
+                "item": {
+                  "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"
+                },
+                "destroy_speed": 0.25
+              }
+            ]
           }
         }
       ],

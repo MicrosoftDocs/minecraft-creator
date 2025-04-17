@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 [INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. Biomes without this component will have default lighting settings.
 
 
-## Lighting Identifier Properties
+## Minecraft Lighting Identifier Client Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -300,6 +300,56 @@
             "value": 5
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/0/filters/",
+          "content": {
+            "test": "is_skin_id",
+            "subject": "other",
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/1/filters/",
+          "content": {
+            "test": "is_skin_id",
+            "subject": "other",
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/2/filters/",
+          "content": {
+            "test": "is_skin_id",
+            "subject": "other",
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/3/filters/",
+          "content": {
+            "test": "is_skin_id",
+            "subject": "other",
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/4/filters/",
+          "content": {
+            "test": "is_skin_id",
+            "subject": "other",
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/5/filters/",
+          "content": {
+            "test": "is_skin_id",
+            "subject": "other",
+            "value": 5
+          }
+        }
       ]
     }
   }

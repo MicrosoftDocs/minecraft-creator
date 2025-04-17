@@ -99,12 +99,13 @@
     }
   },
   "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:enchantable",
     "title": "Enchantable",
     "description": "The enchantable component specifies what enchantments can be applied to the item. Not all enchantments will have an effect on all item components.",
     "fields": [
       {
         "id": "value",
-        "title": "value",
+        "title": "Value",
         "description": "Specifies the value of the enchantment (minimum of 0).",
         "dataType": 0,
         "samples": {
@@ -136,7 +137,7 @@
       },
       {
         "id": "slot",
-        "title": "slot",
+        "title": "Slot",
         "description": "Specifies which types of enchantments can be applied. For example, `bow` would allow this item to be enchanted as if it were a bow.",
         "dataType": 2,
         "samples": {
@@ -179,7 +180,6 @@
         }
       }
     ],
-    "id": "minecraft:enchantable",
     "samples": {
       "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
         {

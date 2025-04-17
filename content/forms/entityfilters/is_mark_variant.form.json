@@ -308,6 +308,56 @@
             "value": 6
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/6/filters/",
+          "content": {
+            "test": "is_mark_variant",
+            "subject": "other",
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/7/filters/",
+          "content": {
+            "test": "is_mark_variant",
+            "subject": "other",
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/8/filters/",
+          "content": {
+            "test": "is_mark_variant",
+            "subject": "other",
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/9/filters/",
+          "content": {
+            "test": "is_mark_variant",
+            "subject": "other",
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/10/filters/",
+          "content": {
+            "test": "is_mark_variant",
+            "subject": "other",
+            "value": 5
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/11/filters/",
+          "content": {
+            "test": "is_mark_variant",
+            "subject": "other",
+            "value": 6
+          }
+        }
       ]
     }
   }

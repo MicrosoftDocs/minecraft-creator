@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Attach arbitrary string tags to this biome.
 
 
-## Tags Properties
+## Minecraft Tags Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

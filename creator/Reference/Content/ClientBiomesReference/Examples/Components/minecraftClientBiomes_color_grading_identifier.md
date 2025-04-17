@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 [INTERNAL - WORK IN PROGRESS] Set the color_grading settings used during deferred rendering. Biomes without this component will have default color_grading settings.
 
 
-## Color Grading Identifier Properties
+## Minecraft Color Grading Identifier Client Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -1,19 +1,18 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "particle_effect basic_render_parameters",
     "title": "Particle Effect Basic Render Parameters Misc",
     "description": "The parameters MUST contain a material and texture.",
     "fields": [
       {
         "id": "material",
-        "title": "material",
-        "description": "material",
+        "title": "Material",
         "dataType": 16
       },
       {
         "id": "texture",
-        "title": "texture",
-        "description": "texture",
+        "title": "Texture",
         "dataType": 2
       }
     ]

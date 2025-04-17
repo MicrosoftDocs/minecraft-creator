@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Defines both the durability threshold, and the effects emitted when that threshold is met.
 
 
-## Durability Sensor Durability Threshold Properties
+## Minecraft Durability Sensor Durability Threshold Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

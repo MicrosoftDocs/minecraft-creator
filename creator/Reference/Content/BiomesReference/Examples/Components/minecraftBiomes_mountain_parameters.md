@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Noise parameters used to drive mountain terrain generation in Overworld.
 
 
-## Mountain Parameters Properties
+## Minecraft Mountain Parameters Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -40,8 +40,6 @@ Defines surface material for steep slopes.
 | west_slopes | *not set* | Boolean true/false | Enable for west-facing slopes |  | 
 
 ## Material (Alternate 1) item type
-Material
-
 
 #### Material Properties
 

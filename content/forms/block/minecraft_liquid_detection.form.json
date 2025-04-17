@@ -79,12 +79,36 @@
                 }
               ]
             }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:liquid_detection/",
+              "content": [
+                {
+                  "liquid_type": "water",
+                  "on_liquid_touches": "broken"
+                }
+              ]
+            }
           ]
         }
       }
     ],
     "samples": {
       "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:liquid_detection/",
+          "content": {
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "broken"
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:liquid_detection/",
           "content": {

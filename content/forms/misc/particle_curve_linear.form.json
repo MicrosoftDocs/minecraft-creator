@@ -1,19 +1,17 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "particle_curve_linear",
     "title": "Particle Curve Linear Misc",
-    "description": "Particle Curve Linear Misc",
     "fields": [
       {
         "id": "type",
-        "title": "type",
-        "description": "type",
+        "title": "Type",
         "dataType": 16
       },
       {
         "id": "nodes",
-        "title": "nodes",
-        "description": "nodes",
+        "title": "Nodes",
         "dataType": 24,
         "alternates": [
           {
@@ -21,19 +19,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "nodes",
               "title": "Nodes",
-              "description": "Nodes",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -47,8 +43,7 @@
       },
       {
         "id": "input",
-        "title": "input",
-        "description": "input",
+        "title": "Input",
         "dataType": 24,
         "alternates": [
           {
@@ -56,19 +51,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "input",
               "title": "Input",
-              "description": "Input",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -82,8 +75,7 @@
       },
       {
         "id": "horizontal_range",
-        "title": "horizontal_range",
-        "description": "horizontal_range",
+        "title": "Horizontal Range",
         "dataType": 24,
         "alternates": [
           {
@@ -91,19 +83,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "horizontal_range",
               "title": "Horizontal Range",
-              "description": "Horizontal Range",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]

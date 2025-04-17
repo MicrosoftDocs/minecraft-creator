@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.
 
 
-## Dry Foliage Color Properties
+## Minecraft Dry Foliage Color Client Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -73,6 +73,29 @@ Commands can have a permission level that is required from executing contexts an
 | Host | Only the originating game owner can run this command. |
 | Owner | In dedicated server environments, this command can only be exited in the hosting environment at the dedicated server console. |
 
+#### Command Enums
+
+As of the 1.21.80-preview.27 release you can now register custom enums for script-based commands, like so:
+```typescript
+system.beforeEvents.startup.subscribe((init: StartupEvent) => {
+  const commandRegistry = event.customCommandRegistry;
+
+  commandRegistry.registerEnum("creator:my_enum", ["foo", "bar", "baz"]);
+
+  const helloCommand: CustomCommand = {
+    name: "creator:hellocustomcommand",
+    description: "Example command",
+    permissionLevel: CustomCommandPermissionLevel.Any,
+    mandatoryParameters: [
+      { 
+        type: CustomCommandParamType.Enum, 
+        name: "creator:my_enum" // The parameter name must match the registered enum name above
+    }],
+  };
+  commandRegistry.registerCommand(helloCommand, helloCustomCommand);
+}
+```
+
 ### Execution
 
 After registering your command, Minecraft will call into your function with the parameters that are specified by the command context.
