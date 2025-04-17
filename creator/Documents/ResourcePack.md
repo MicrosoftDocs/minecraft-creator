@@ -103,7 +103,7 @@ To load a resource pack into Minecraft, we need a manifest file. The manifest fi
 
 ### UUID
 
-A Universally Unique Identifier (UUID) is a unique number used to identification purposes. For Minecraft, the UUID is used to define a specific pack and to prevent any duplicate software from causing issues. For the header and modules, there will need to be two different UUID numbers entered in each of the `"uuid"` fields between the quotes. You can get UUIDs from an online UUID Generator such as https://www.uuidgenerator.net/.
+A Universally Unique Identifier (UUID) is a unique number used for identification purposes. For Minecraft, the UUID is used to define a specific pack and to prevent any duplicate software from causing issues. For the header and modules, there will need to be two different UUID numbers entered in each of the `"uuid"` fields between the quotes. You can get UUIDs from an online UUID Generator such as https://www.uuidgenerator.net/.
 
 ![Image of UUIDGenerator.net home screen with a custom UUID generated](Media/BehaviorPack/UUID.png)
 
