@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Introduction to Scripting
 description: "In introducion to writing and deploying scripts in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/17/2025
 ---
 
 # Introduction to Scripting in Minecraft

@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Build a gameplay experience with TypeScript
 description: "Use TypeScript to build a simple gameplay experience in Minecraft"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/17/2025
 ---
 
 # Build a gameplay experience with TypeScript

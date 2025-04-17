@@ -4,6 +4,7 @@ ms.author: v-jillheaden
 title: Getting Started with Command Blocks
 description: "An introduction to Minecraft: Bedrock Edition Command Blocks including how to access Command Blocks, how to create chains, and how to design a gameplay loop with Command Blocks."
 ms.service: minecraft-bedrock-edition
+ms.date: 04/17/2025
 ---
 
 # Getting Started with Command Blocks

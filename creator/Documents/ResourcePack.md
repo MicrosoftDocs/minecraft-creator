@@ -4,6 +4,7 @@ ms.author: mikeam
 title: "Create Custom Grass Blocks: An Introduction to Resource Packs"
 description: "An introduction to Resource Packs and a tutorial on adding a custom texture to in-game blocks"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/17/2025
 ---
 
 # Introduction to Resource Packs
