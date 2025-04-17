@@ -46,12 +46,13 @@
     ]
   },
   "generatedFromSchema_doNotEdit": {
-    "title": "Overworld Generation Rules",
+    "id": "minecraft:overworld_generation_rules",
+    "title": "Minecraft Overworld Generation Rules Biome",
     "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.",
     "fields": [
       {
         "id": "mutate_transformation",
-        "title": "mutate_transformation",
+        "title": "Mutate Transformation",
         "description": "What biome to switch to when converting to a mutated biome",
         "dataType": 17,
         "alternates": [
@@ -63,7 +64,7 @@
       },
       {
         "id": "hills_transformation",
-        "title": "hills_transformation",
+        "title": "Hills Transformation",
         "description": "What biome to switch to when converting to a hilly biome",
         "dataType": 17,
         "alternates": [
@@ -75,13 +76,13 @@
       },
       {
         "id": "generate_for_climates",
-        "title": "generate_for_climates",
+        "title": "Generate For Climates",
         "description": "Controls the world generation climate categories that this biome can spawn for. A single biome can be associated with multiple categories with different weightings.",
         "dataType": 15
       },
       {
         "id": "river_transformation",
-        "title": "river_transformation",
+        "title": "River Transformation",
         "description": "What biome to switch to when converting to a river biome (if not the Vanilla 'river' biome)",
         "dataType": 17,
         "alternates": [
@@ -93,7 +94,7 @@
       },
       {
         "id": "shore_transformation",
-        "title": "shore_transformation",
+        "title": "Shore Transformation",
         "description": "What biome to switch to when adjacent to an ocean biome",
         "dataType": 17,
         "alternates": [
@@ -103,7 +104,6 @@
           }
         ]
       }
-    ],
-    "id": "minecraft:overworld_generation_rules"
+    ]
   }
 }

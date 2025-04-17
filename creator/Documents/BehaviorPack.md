@@ -8,10 +8,11 @@ ms.service: minecraft-bedrock-edition
 
 # Introduction to Behavior Packs
 
-Before building your first Add-On for Minecraft: Bedrock Edition, you will need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **behavior pack** is a folder structure that contains files that drive entity behaviors, loot drops, spawn rules, items, recipes, and trade tables. This tutorial covers how behavior packs are created and how to add  behaviors to an in-game cow entity to make it aggressive.
+Before building your first Add-On for Minecraft: Bedrock Edition, you'll need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **behavior pack** is a folder structure that contains files that drive entity behaviors, loot drops, spawn rules, items, recipes, and trade tables.
+
+This tutorial covers how behavior packs are created and how to add behaviors to an in-game cow entity to make it aggressive.
 
 ![Image of a cow chasing Steve. Run, Steve, run!](Media/BehaviorPack/Introduction-to-Behavior-Packs.jpg)
-
 
 ## On the Minecraft Creator Channel
 

@@ -14,22 +14,22 @@
     ]
   },
   "generatedFromSchema_doNotEdit": {
-    "title": "Biome Music",
+    "id": "minecraft:biome_music",
+    "title": "Minecraft Biome Music Client Biome",
     "description": "Affect how music plays within the biome",
     "fields": [
       {
         "id": "volume_multiplier",
-        "title": "volume_multiplier",
+        "title": "Volume Multiplier",
         "description": "Multiplier temporarily and gradually applied to music volume when within this biome. Must be a value between 0 and 1, inclusive.",
         "dataType": 3
       },
       {
         "id": "music_definition",
-        "title": "music_definition",
+        "title": "Music Definition",
         "description": "Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music.",
         "dataType": 2
       }
-    ],
-    "id": "minecraft:biome_music"
+    ]
   }
 }

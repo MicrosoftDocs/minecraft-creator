@@ -1,63 +1,63 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:aim_assist_categories",
     "title": "Minecraft Aim Assist Categories Misc",
-    "description": "Minecraft Aim Assist Categories Misc",
     "fields": [
       {
         "id": "format_version",
-        "title": "format_version",
+        "title": "Format Version",
         "description": "Version of the JSON schema for this file. Aim-assist categories requires at least version 1.21.50.",
         "dataType": 2
       },
       {
         "id": "minecraft:aim_assist_categories",
-        "title": "minecraft:aim_assist_categories",
+        "title": "Minecraft Aim Assist Categories",
         "description": "A single Camera Aim-Assist Categories Definition.",
         "dataType": 16,
         "subForm": {
+          "id": "_v1_21_50_CameraAimAssistCategoriesDefinition",
           "title": "V1 21 50 CameraAimAssistCategoriesDefinition",
-          "description": "V1 21 50 CameraAimAssistCategoriesDefinition",
           "fields": [
             {
               "id": "categories",
-              "title": "categories",
+              "title": "Categories",
               "description": "List of categories used by Camera Aim-Assist 'minecraft:aim_assist_preset'.",
               "dataType": 15,
               "subForm": {
+                "id": "_v1_21_50_CameraAimAssistCategoryDefinition",
                 "title": "V1 21 50 CameraAimAssistCategoryDefinition",
-                "description": "V1 21 50 CameraAimAssistCategoryDefinition",
                 "fields": [
                   {
                     "id": "name",
-                    "title": "name",
+                    "title": "Name",
                     "description": "Name of the Aim-Assist Category used during lookup.",
                     "dataType": 2
                   },
                   {
                     "id": "priorities",
-                    "title": "priorities",
+                    "title": "Priorities",
                     "description": "The set of priorities used when determining aim-assist selection.",
                     "dataType": 16,
                     "subForm": {
+                      "id": "_v1_21_50_CameraAimAssistCategoryPriorities",
                       "title": "V1 21 50 CameraAimAssistCategoryPriorities",
-                      "description": "V1 21 50 CameraAimAssistCategoryPriorities",
                       "fields": [
                         {
                           "id": "entities",
-                          "title": "entities",
+                          "title": "Entities",
                           "description": "Optional. Map of Entity identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
                           "dataType": 31
                         },
                         {
                           "id": "blocks",
-                          "title": "blocks",
+                          "title": "Blocks",
                           "description": "Optional. Map of Block identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
                           "dataType": 31
                         },
                         {
                           "id": "entity_default",
-                          "title": "entity_default",
+                          "title": "Entity Default",
                           "description": "Optional. Default Aim-Assist targeting priority used for Entities not found in 'entities'.",
                           "dataType": 0,
                           "validity": [
@@ -69,7 +69,7 @@
                         },
                         {
                           "id": "block_default",
-                          "title": "block_default",
+                          "title": "Block Default",
                           "description": "Optional. Default Aim-Assist targeting priority used for Blocks not found in 'blocks'.",
                           "dataType": 0,
                           "validity": [

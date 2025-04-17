@@ -268,6 +268,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 8
             }
+          ],
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 4
+            }
           ]
         }
       },
@@ -564,6 +570,18 @@
             "speed_multiplier": 1,
             "pickup_based_on_chance": true,
             "can_pickup_any_item": true
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 4,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 0.5,
+            "can_pickup_to_hand_or_equipment": false
           }
         }
       ]

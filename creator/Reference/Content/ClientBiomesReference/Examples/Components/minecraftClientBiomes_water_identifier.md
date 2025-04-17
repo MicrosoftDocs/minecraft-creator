@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 [INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering. Biomes without this component will have default water settings.
 
 
-## Water Identifier Properties
+## Minecraft Water Identifier Client Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

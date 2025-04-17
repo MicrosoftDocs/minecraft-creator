@@ -19,7 +19,8 @@
     ]
   },
   "generatedFromSchema_doNotEdit": {
-    "title": "Overworld Height",
+    "id": "minecraft:overworld_height",
+    "title": "Minecraft Overworld Height Biome",
     "description": "Noise parameters used to drive terrain height in the Overworld.",
     "fields": [
       {
@@ -30,13 +31,12 @@
       },
       {
         "id": "noise_params",
-        "title": "noise_params",
+        "title": "Noise Params",
         "description": "First value is depth - more negative means deeper underwater, while more positive means higher. Second value is scale, which affects how much noise changes as it moves from the surface.",
         "dataType": 32,
         "minLength": 2,
         "maxLength": 2
       }
-    ],
-    "id": "minecraft:overworld_height"
+    ]
   }
 }

@@ -24,13 +24,12 @@
     ]
   },
   "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:dyeable",
     "title": "Dyeable",
-    "description": "Dyeable",
     "fields": [
       {
         "id": "default_color",
-        "title": "default_color",
-        "description": "default_color",
+        "title": "Default Color",
         "dataType": 2,
         "alternates": [
           {
@@ -41,7 +40,6 @@
           }
         ]
       }
-    ],
-    "id": "minecraft:dyeable"
+    ]
   }
 }

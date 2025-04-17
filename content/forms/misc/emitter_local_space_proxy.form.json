@@ -1,0 +1,24 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "emitter_local_space proxy",
+    "title": "Emitter Local Space Proxy Misc",
+    "fields": [
+      {
+        "id": "position",
+        "title": "Position",
+        "dataType": 1
+      },
+      {
+        "id": "velocity",
+        "title": "Velocity",
+        "dataType": 1
+      },
+      {
+        "id": "rotation",
+        "title": "Rotation",
+        "dataType": 1
+      }
+    ]
+  }
+}

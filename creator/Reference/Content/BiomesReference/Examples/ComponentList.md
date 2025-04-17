@@ -9,8 +9,6 @@ ms.date: 02/11/2025
 
 | Biomes | Description |
 |:-----|:----------|
-| [Biome Description Biome](Components/biome_description.md)| Contains non-component settings for a Biome. |
-| [Biome JSON File Biome](Components/biome_json_file.md)| Contains a format version and a biome definition |
 | [minecraft:capped_surface](Components/minecraftBiomes_capped_surface.md)| Generates surface on blocks with non-solid blocks above or below. |
 | [minecraft:climate](Components/minecraftBiomes_climate.md)| Describes temperature, humidity, precipitation, and similar. |
 | [minecraft:creature_spawn_probability](Components/minecraftBiomes_creature_spawn_probability.md)| Probability that creatures will spawn within the biome when a chunk is generated. |

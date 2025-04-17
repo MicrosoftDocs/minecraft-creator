@@ -136,6 +136,44 @@
             "value": 5
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/villager_skin_0/minecraft:skin_id/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/villager_skin_1/minecraft:skin_id/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/villager_skin_2/minecraft:skin_id/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/villager_skin_3/minecraft:skin_id/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/villager_skin_4/minecraft:skin_id/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/villager_skin_5/minecraft:skin_id/",
+          "content": {
+            "value": 5
+          }
+        }
       ]
     }
   }

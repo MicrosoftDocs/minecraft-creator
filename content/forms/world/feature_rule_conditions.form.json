@@ -1,0 +1,121 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Feature Rule Conditions",
+    "title": "Feature Rule Conditions World",
+    "fields": [
+      {
+        "id": "placement_pass",
+        "title": "Placement Pass",
+        "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
+        "dataType": 2
+      },
+      {
+        "id": "minecraft:biome_filter",
+        "title": "Minecraft Biome Filter",
+        "description": "List of filter tests to determine which biomes this rule will attach to.",
+        "dataType": 16,
+        "subForm": {
+          "id": "minecraft:biome_filter",
+          "title": "Biome Filter",
+          "fields": [
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": 16
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": 2
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": 16
+            },
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": 16
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": 16
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "minecraft:biome_filter",
+            "dataType": 16
+          },
+          {
+            "id": "minecraft:biome_filter",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:biome_filter",
+              "title": "Biome Filter",
+              "fields": [
+                {
+                  "id": "OR",
+                  "title": "OR",
+                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "all",
+                  "title": "All",
+                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "all_of",
+                  "title": "All Of",
+                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "AND",
+                  "title": "AND",
+                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "any_of",
+                  "title": "Any Of",
+                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "none_of",
+                  "title": "None Of",
+                  "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "any",
+                  "title": "Any",
+                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "NOT",
+                  "title": "NOT",
+                  "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                  "dataType": 16
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

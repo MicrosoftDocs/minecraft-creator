@@ -22,16 +22,16 @@
     ]
   },
   "generatedFromSchema_doNotEdit": {
-    "title": "Foliage Appearance",
+    "id": "minecraft:foliage_appearance",
+    "title": "Minecraft Foliage Appearance Client Biome",
     "description": "Set the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance.",
     "fields": [
       {
         "id": "color",
-        "title": "color",
+        "title": "Color",
         "description": "RGB color of foliage, or a Foliage Color Map object.",
         "dataType": 16
       }
-    ],
-    "id": "minecraft:foliage_appearance"
+    ]
   }
 }

@@ -1358,6 +1358,92 @@
             "value": 10
           }
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/unskilled/minecraft:variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/farmer/minecraft:variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fisherman/minecraft:variant/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/shepherd/minecraft:variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fletcher/minecraft:variant/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/librarian/minecraft:variant/",
+          "content": {
+            "value": 5
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cartographer/minecraft:variant/",
+          "content": {
+            "value": 6
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cleric/minecraft:variant/",
+          "content": {
+            "value": 7
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/armorer/minecraft:variant/",
+          "content": {
+            "value": 8
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:variant/",
+          "content": {
+            "value": 9
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/toolsmith/minecraft:variant/",
+          "content": {
+            "value": 10
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/butcher/minecraft:variant/",
+          "content": {
+            "value": 11
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/leatherworker/minecraft:variant/",
+          "content": {
+            "value": 12
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/nitwit/minecraft:variant/",
+          "content": {
+            "value": 14
+          }
+        }
       ]
     }
   }

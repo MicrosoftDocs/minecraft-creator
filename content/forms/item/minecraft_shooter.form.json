@@ -111,33 +111,34 @@
     }
   },
   "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:shooter",
     "title": "Shooter",
     "description": "Shooter Item Component.",
     "fields": [
       {
         "id": "ammunition",
-        "title": "ammunition",
+        "title": "Ammunition",
         "description": "Ammunition.",
         "dataType": 15,
         "subForm": {
+          "id": "_v1_20_50_ShooterItemComponent_Ammunition",
           "title": "V1 20 50 ShooterItemComponent Ammunition",
-          "description": "V1 20 50 ShooterItemComponent Ammunition",
           "fields": [
             {
               "id": "use_in_creative",
-              "title": "use_in_creative",
+              "title": "Use In Creative",
               "description": "Can use in creative mode? Default is set to false.",
               "dataType": 1
             },
             {
               "id": "search_inventory",
-              "title": "search_inventory",
+              "title": "Search Inventory",
               "description": "Can search inventory? Default is set to false.",
               "dataType": 1
             },
             {
               "id": "item",
-              "title": "item",
+              "title": "Item",
               "description": "Ammunition item description identifier.",
               "dataType": 2,
               "alternates": [
@@ -149,7 +150,7 @@
             },
             {
               "id": "use_offhand",
-              "title": "use_offhand",
+              "title": "Use Offhand",
               "description": "Can use off-hand? Default is set to false.",
               "dataType": 1
             }
@@ -173,7 +174,7 @@
       },
       {
         "id": "scale_power_by_draw_duration",
-        "title": "scale_power_by_draw_duration",
+        "title": "Scale Power By Draw Duration",
         "description": "Scale power by draw duration? Default is set to false.",
         "dataType": 1,
         "samples": {
@@ -187,7 +188,7 @@
       },
       {
         "id": "max_draw_duration",
-        "title": "max_draw_duration",
+        "title": "Max Draw Duration",
         "description": "Draw Duration. Default is set to 0.",
         "dataType": 3,
         "samples": {
@@ -201,12 +202,11 @@
       },
       {
         "id": "charge_on_draw",
-        "title": "charge_on_draw",
+        "title": "Charge On Draw",
         "description": "Charge on draw? Default is set to false.",
         "dataType": 1
       }
     ],
-    "id": "minecraft:shooter",
     "samples": {
       "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
         {

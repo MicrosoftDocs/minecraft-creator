@@ -73,34 +73,32 @@
     }
   },
   "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:entity_placer",
     "title": "Entity Placer",
     "description": "The entity_placer item component specifies the blocks that the item can be placed on.",
     "fields": [
       {
         "id": "dispense_on",
-        "title": "dispense_on",
+        "title": "Dispense On",
         "description": "List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
         "dataType": 15,
         "subForm": {
+          "id": "dispense_on",
           "title": "Dispense On",
-          "description": "Dispense On",
           "fields": [
             {
               "id": "name",
-              "title": "name",
-              "description": "name",
+              "title": "Name",
               "dataType": 2
             },
             {
               "id": "tags",
-              "title": "tags",
-              "description": "tags",
+              "title": "Tags",
               "dataType": 2
             },
             {
               "id": "states",
-              "title": "states",
-              "description": "states",
+              "title": "States",
               "dataType": 0,
               "alternates": [
                 {
@@ -128,7 +126,7 @@
       },
       {
         "id": "entity",
-        "title": "entity",
+        "title": "Entity",
         "description": "The entity to be placed in the world.",
         "dataType": 24,
         "validity": [
@@ -190,29 +188,26 @@
       },
       {
         "id": "use_on",
-        "title": "use_on",
+        "title": "Use On",
         "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
         "dataType": 15,
         "subForm": {
+          "id": "use_on",
           "title": "Use On",
-          "description": "Use On",
           "fields": [
             {
               "id": "name",
-              "title": "name",
-              "description": "name",
+              "title": "Name",
               "dataType": 2
             },
             {
               "id": "tags",
-              "title": "tags",
-              "description": "tags",
+              "title": "Tags",
               "dataType": 2
             },
             {
               "id": "states",
-              "title": "states",
-              "description": "states",
+              "title": "States",
               "dataType": 0,
               "alternates": [
                 {
@@ -249,7 +244,6 @@
         }
       }
     ],
-    "id": "minecraft:entity_placer",
     "samples": {
       "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
         {

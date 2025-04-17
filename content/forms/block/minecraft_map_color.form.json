@@ -34,6 +34,48 @@
           "content": "#ffcd17"
         }
       ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/frond_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#5f4a2b"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#495f2b"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_tip.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#5f4a2b"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#639f28"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_tree_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#5f4a2b"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_trunk.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#b9ae9d"
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#fdfdfd"
+        }
+      ],
       "/samples/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:map_color/",

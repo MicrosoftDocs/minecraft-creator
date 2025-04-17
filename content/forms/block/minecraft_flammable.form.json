@@ -26,7 +26,7 @@
               "content": 5
             }
           ],
-          "/samples/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json": [
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/frond_top.block.json": [
             {
               "path": "/minecraft:block/components/minecraft:flammable/",
               "content": 5
@@ -47,7 +47,7 @@
               "content": 20
             }
           ],
-          "/samples/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json": [
+          "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/frond_top.block.json": [
             {
               "path": "/minecraft:block/components/minecraft:flammable/",
               "content": 20
@@ -63,6 +63,60 @@
     },
     "samples": {
       "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/blocks/fabricator.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:flammable/",
+          "content": {
+            "destroy_chance_modifier": 20,
+            "catch_chance_modifier": 5
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/frond_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:flammable/",
+          "content": {
+            "destroy_chance_modifier": 20,
+            "catch_chance_modifier": 5
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:flammable/",
+          "content": {
+            "destroy_chance_modifier": 20,
+            "catch_chance_modifier": 5
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_tip.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:flammable/",
+          "content": {
+            "destroy_chance_modifier": 20,
+            "catch_chance_modifier": 5
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:flammable/",
+          "content": {
+            "destroy_chance_modifier": 20,
+            "catch_chance_modifier": 5
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_tree_top.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:flammable/",
+          "content": {
+            "destroy_chance_modifier": 20,
+            "catch_chance_modifier": 5
+          }
+        }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_trunk.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:flammable/",
           "content": {

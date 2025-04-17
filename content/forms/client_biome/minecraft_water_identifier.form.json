@@ -2,16 +2,16 @@
   "id": "minecraft:water_identifier",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "title": "Water Identifier",
+    "id": "minecraft:water_identifier",
+    "title": "Minecraft Water Identifier Client Biome",
     "description": "[INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering. Biomes without this component will have default water settings.",
     "fields": [
       {
         "id": "water_identifier",
-        "title": "water_identifier",
+        "title": "Water Identifier",
         "description": "Identifier of water definition to use",
         "dataType": 2
       }
-    ],
-    "id": "minecraft:water_identifier"
+    ]
   }
 }

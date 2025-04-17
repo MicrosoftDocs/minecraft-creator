@@ -1,13 +1,12 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "particle_event_node",
     "title": "Particle Event Node Misc",
-    "description": "Particle Event Node Misc",
     "fields": [
       {
         "id": "expression",
-        "title": "expression",
-        "description": "expression",
+        "title": "Expression",
         "dataType": 24,
         "alternates": [
           {
@@ -15,19 +14,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "expression",
               "title": "Expression",
-              "description": "Expression",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]
@@ -41,29 +38,25 @@
       },
       {
         "id": "log",
-        "title": "log",
-        "description": "log",
+        "title": "Log",
         "dataType": 2
       },
       {
         "id": "particle_effect",
-        "title": "particle_effect",
-        "description": "particle_effect",
+        "title": "Particle Effect",
         "dataType": 16,
         "subForm": {
+          "id": "particle_visual_effect_event",
           "title": "Particle Visual Effect Event",
-          "description": "Particle Visual Effect Event",
           "fields": [
             {
               "id": "effect",
-              "title": "effect",
-              "description": "effect",
+              "title": "Effect",
               "dataType": 16
             },
             {
               "id": "pre_effect_expression",
-              "title": "pre_effect_expression",
-              "description": "pre_effect_expression",
+              "title": "Pre Effect Expression",
               "dataType": 24,
               "alternates": [
                 {
@@ -71,19 +64,17 @@
                   "dataType": 14,
                   "readOnly": true,
                   "subForm": {
+                    "id": "pre_effect_expression",
                     "title": "Pre Effect Expression",
-                    "description": "Pre Effect Expression",
                     "fields": [
                       {
                         "id": "expression",
-                        "title": "expression",
-                        "description": "expression",
+                        "title": "Expression",
                         "dataType": 2
                       },
                       {
                         "id": "version",
-                        "title": "version",
-                        "description": "version",
+                        "title": "Version",
                         "dataType": 0
                       }
                     ]
@@ -97,8 +88,7 @@
             },
             {
               "id": "type",
-              "title": "particle_visual_effect_event effect_type",
-              "description": "particle_visual_effect_event effect_type",
+              "title": "Particle Visual Effect Event Effect Type",
               "dataType": 2
             }
           ]
@@ -106,17 +96,15 @@
       },
       {
         "id": "sequence",
-        "title": "sequence",
-        "description": "sequence",
+        "title": "Sequence",
         "dataType": 15,
         "subForm": {
+          "id": "particle_event_node",
           "title": "Particle Event Node",
-          "description": "Particle Event Node",
           "fields": [
             {
               "id": "expression",
-              "title": "expression",
-              "description": "expression",
+              "title": "Expression",
               "dataType": 24,
               "alternates": [
                 {
@@ -124,19 +112,17 @@
                   "dataType": 14,
                   "readOnly": true,
                   "subForm": {
+                    "id": "expression",
                     "title": "Expression",
-                    "description": "Expression",
                     "fields": [
                       {
                         "id": "expression",
-                        "title": "expression",
-                        "description": "expression",
+                        "title": "Expression",
                         "dataType": 2
                       },
                       {
                         "id": "version",
-                        "title": "version",
-                        "description": "version",
+                        "title": "Version",
                         "dataType": 0
                       }
                     ]
@@ -150,29 +136,25 @@
             },
             {
               "id": "log",
-              "title": "log",
-              "description": "log",
+              "title": "Log",
               "dataType": 2
             },
             {
               "id": "particle_effect",
-              "title": "particle_effect",
-              "description": "particle_effect",
+              "title": "Particle Effect",
               "dataType": 16,
               "subForm": {
+                "id": "particle_visual_effect_event",
                 "title": "Particle Visual Effect Event",
-                "description": "Particle Visual Effect Event",
                 "fields": [
                   {
                     "id": "effect",
-                    "title": "effect",
-                    "description": "effect",
+                    "title": "Effect",
                     "dataType": 16
                   },
                   {
                     "id": "pre_effect_expression",
-                    "title": "pre_effect_expression",
-                    "description": "pre_effect_expression",
+                    "title": "Pre Effect Expression",
                     "dataType": 24,
                     "alternates": [
                       {
@@ -180,19 +162,17 @@
                         "dataType": 14,
                         "readOnly": true,
                         "subForm": {
+                          "id": "pre_effect_expression",
                           "title": "Pre Effect Expression",
-                          "description": "Pre Effect Expression",
                           "fields": [
                             {
                               "id": "expression",
-                              "title": "expression",
-                              "description": "expression",
+                              "title": "Expression",
                               "dataType": 2
                             },
                             {
                               "id": "version",
-                              "title": "version",
-                              "description": "version",
+                              "title": "Version",
                               "dataType": 0
                             }
                           ]
@@ -206,8 +186,7 @@
                   },
                   {
                     "id": "type",
-                    "title": "particle_visual_effect_event effect_type",
-                    "description": "particle_visual_effect_event effect_type",
+                    "title": "Particle Visual Effect Event Effect Type",
                     "dataType": 2
                   }
                 ]
@@ -215,23 +194,20 @@
             },
             {
               "id": "sequence",
-              "title": "sequence",
-              "description": "sequence",
+              "title": "Sequence",
               "dataType": 16
             },
             {
               "id": "sound_effect",
-              "title": "sound_effect",
-              "description": "sound_effect",
+              "title": "Sound Effect",
               "dataType": 16,
               "subForm": {
+                "id": "particle_sound_effect_event",
                 "title": "Particle Sound Effect Event",
-                "description": "Particle Sound Effect Event",
                 "fields": [
                   {
                     "id": "event_name",
-                    "title": "event_name",
-                    "description": "event_name",
+                    "title": "Event Name",
                     "dataType": 2
                   }
                 ]
@@ -239,38 +215,33 @@
             },
             {
               "id": "randomize",
-              "title": "randomize",
-              "description": "randomize",
+              "title": "Randomize",
               "dataType": 15,
               "subForm": {
+                "id": "particle_event_random_node",
                 "title": "Particle Event Random Node",
-                "description": "Particle Event Random Node",
                 "fields": [
                   {
                     "id": "log",
-                    "title": "log",
-                    "description": "log",
+                    "title": "Log",
                     "dataType": 2
                   },
                   {
                     "id": "particle_effect",
-                    "title": "particle_effect",
-                    "description": "particle_effect",
+                    "title": "Particle Effect",
                     "dataType": 16,
                     "subForm": {
+                      "id": "particle_visual_effect_event",
                       "title": "Particle Visual Effect Event",
-                      "description": "Particle Visual Effect Event",
                       "fields": [
                         {
                           "id": "effect",
-                          "title": "effect",
-                          "description": "effect",
+                          "title": "Effect",
                           "dataType": 16
                         },
                         {
                           "id": "pre_effect_expression",
-                          "title": "pre_effect_expression",
-                          "description": "pre_effect_expression",
+                          "title": "Pre Effect Expression",
                           "dataType": 24,
                           "alternates": [
                             {
@@ -278,19 +249,17 @@
                               "dataType": 14,
                               "readOnly": true,
                               "subForm": {
+                                "id": "pre_effect_expression",
                                 "title": "Pre Effect Expression",
-                                "description": "Pre Effect Expression",
                                 "fields": [
                                   {
                                     "id": "expression",
-                                    "title": "expression",
-                                    "description": "expression",
+                                    "title": "Expression",
                                     "dataType": 2
                                   },
                                   {
                                     "id": "version",
-                                    "title": "version",
-                                    "description": "version",
+                                    "title": "Version",
                                     "dataType": 0
                                   }
                                 ]
@@ -304,8 +273,7 @@
                         },
                         {
                           "id": "type",
-                          "title": "particle_visual_effect_event effect_type",
-                          "description": "particle_visual_effect_event effect_type",
+                          "title": "Particle Visual Effect Event Effect Type",
                           "dataType": 2
                         }
                       ]
@@ -313,23 +281,20 @@
                   },
                   {
                     "id": "weight",
-                    "title": "weight",
-                    "description": "weight",
+                    "title": "Weight",
                     "dataType": 3
                   },
                   {
                     "id": "sound_effect",
-                    "title": "sound_effect",
-                    "description": "sound_effect",
+                    "title": "Sound Effect",
                     "dataType": 16,
                     "subForm": {
+                      "id": "particle_sound_effect_event",
                       "title": "Particle Sound Effect Event",
-                      "description": "Particle Sound Effect Event",
                       "fields": [
                         {
                           "id": "event_name",
-                          "title": "event_name",
-                          "description": "event_name",
+                          "title": "Event Name",
                           "dataType": 2
                         }
                       ]
@@ -337,20 +302,17 @@
                   },
                   {
                     "id": "sequence",
-                    "title": "sequence",
-                    "description": "sequence",
+                    "title": "Sequence",
                     "dataType": 16
                   },
                   {
                     "id": "randomize",
-                    "title": "randomize",
-                    "description": "randomize",
+                    "title": "Randomize",
                     "dataType": 16
                   },
                   {
                     "id": "expression",
-                    "title": "expression",
-                    "description": "expression",
+                    "title": "Expression",
                     "dataType": 24,
                     "alternates": [
                       {
@@ -358,19 +320,17 @@
                         "dataType": 14,
                         "readOnly": true,
                         "subForm": {
+                          "id": "expression",
                           "title": "Expression",
-                          "description": "Expression",
                           "fields": [
                             {
                               "id": "expression",
-                              "title": "expression",
-                              "description": "expression",
+                              "title": "Expression",
                               "dataType": 2
                             },
                             {
                               "id": "version",
-                              "title": "version",
-                              "description": "version",
+                              "title": "Version",
                               "dataType": 0
                             }
                           ]
@@ -390,17 +350,15 @@
       },
       {
         "id": "sound_effect",
-        "title": "sound_effect",
-        "description": "sound_effect",
+        "title": "Sound Effect",
         "dataType": 16,
         "subForm": {
+          "id": "particle_sound_effect_event",
           "title": "Particle Sound Effect Event",
-          "description": "Particle Sound Effect Event",
           "fields": [
             {
               "id": "event_name",
-              "title": "event_name",
-              "description": "event_name",
+              "title": "Event Name",
               "dataType": 2
             }
           ]
@@ -408,38 +366,33 @@
       },
       {
         "id": "randomize",
-        "title": "randomize",
-        "description": "randomize",
+        "title": "Randomize",
         "dataType": 15,
         "subForm": {
+          "id": "particle_event_random_node",
           "title": "Particle Event Random Node",
-          "description": "Particle Event Random Node",
           "fields": [
             {
               "id": "log",
-              "title": "log",
-              "description": "log",
+              "title": "Log",
               "dataType": 2
             },
             {
               "id": "particle_effect",
-              "title": "particle_effect",
-              "description": "particle_effect",
+              "title": "Particle Effect",
               "dataType": 16,
               "subForm": {
+                "id": "particle_visual_effect_event",
                 "title": "Particle Visual Effect Event",
-                "description": "Particle Visual Effect Event",
                 "fields": [
                   {
                     "id": "effect",
-                    "title": "effect",
-                    "description": "effect",
+                    "title": "Effect",
                     "dataType": 16
                   },
                   {
                     "id": "pre_effect_expression",
-                    "title": "pre_effect_expression",
-                    "description": "pre_effect_expression",
+                    "title": "Pre Effect Expression",
                     "dataType": 24,
                     "alternates": [
                       {
@@ -447,19 +400,17 @@
                         "dataType": 14,
                         "readOnly": true,
                         "subForm": {
+                          "id": "pre_effect_expression",
                           "title": "Pre Effect Expression",
-                          "description": "Pre Effect Expression",
                           "fields": [
                             {
                               "id": "expression",
-                              "title": "expression",
-                              "description": "expression",
+                              "title": "Expression",
                               "dataType": 2
                             },
                             {
                               "id": "version",
-                              "title": "version",
-                              "description": "version",
+                              "title": "Version",
                               "dataType": 0
                             }
                           ]
@@ -473,8 +424,7 @@
                   },
                   {
                     "id": "type",
-                    "title": "particle_visual_effect_event effect_type",
-                    "description": "particle_visual_effect_event effect_type",
+                    "title": "Particle Visual Effect Event Effect Type",
                     "dataType": 2
                   }
                 ]
@@ -482,23 +432,20 @@
             },
             {
               "id": "weight",
-              "title": "weight",
-              "description": "weight",
+              "title": "Weight",
               "dataType": 3
             },
             {
               "id": "sound_effect",
-              "title": "sound_effect",
-              "description": "sound_effect",
+              "title": "Sound Effect",
               "dataType": 16,
               "subForm": {
+                "id": "particle_sound_effect_event",
                 "title": "Particle Sound Effect Event",
-                "description": "Particle Sound Effect Event",
                 "fields": [
                   {
                     "id": "event_name",
-                    "title": "event_name",
-                    "description": "event_name",
+                    "title": "Event Name",
                     "dataType": 2
                   }
                 ]
@@ -506,17 +453,15 @@
             },
             {
               "id": "sequence",
-              "title": "sequence",
-              "description": "sequence",
+              "title": "Sequence",
               "dataType": 15,
               "subForm": {
+                "id": "particle_event_node",
                 "title": "Particle Event Node",
-                "description": "Particle Event Node",
                 "fields": [
                   {
                     "id": "expression",
-                    "title": "expression",
-                    "description": "expression",
+                    "title": "Expression",
                     "dataType": 24,
                     "alternates": [
                       {
@@ -524,19 +469,17 @@
                         "dataType": 14,
                         "readOnly": true,
                         "subForm": {
+                          "id": "expression",
                           "title": "Expression",
-                          "description": "Expression",
                           "fields": [
                             {
                               "id": "expression",
-                              "title": "expression",
-                              "description": "expression",
+                              "title": "Expression",
                               "dataType": 2
                             },
                             {
                               "id": "version",
-                              "title": "version",
-                              "description": "version",
+                              "title": "Version",
                               "dataType": 0
                             }
                           ]
@@ -550,29 +493,25 @@
                   },
                   {
                     "id": "log",
-                    "title": "log",
-                    "description": "log",
+                    "title": "Log",
                     "dataType": 2
                   },
                   {
                     "id": "particle_effect",
-                    "title": "particle_effect",
-                    "description": "particle_effect",
+                    "title": "Particle Effect",
                     "dataType": 16,
                     "subForm": {
+                      "id": "particle_visual_effect_event",
                       "title": "Particle Visual Effect Event",
-                      "description": "Particle Visual Effect Event",
                       "fields": [
                         {
                           "id": "effect",
-                          "title": "effect",
-                          "description": "effect",
+                          "title": "Effect",
                           "dataType": 16
                         },
                         {
                           "id": "pre_effect_expression",
-                          "title": "pre_effect_expression",
-                          "description": "pre_effect_expression",
+                          "title": "Pre Effect Expression",
                           "dataType": 24,
                           "alternates": [
                             {
@@ -580,19 +519,17 @@
                               "dataType": 14,
                               "readOnly": true,
                               "subForm": {
+                                "id": "pre_effect_expression",
                                 "title": "Pre Effect Expression",
-                                "description": "Pre Effect Expression",
                                 "fields": [
                                   {
                                     "id": "expression",
-                                    "title": "expression",
-                                    "description": "expression",
+                                    "title": "Expression",
                                     "dataType": 2
                                   },
                                   {
                                     "id": "version",
-                                    "title": "version",
-                                    "description": "version",
+                                    "title": "Version",
                                     "dataType": 0
                                   }
                                 ]
@@ -606,8 +543,7 @@
                         },
                         {
                           "id": "type",
-                          "title": "particle_visual_effect_event effect_type",
-                          "description": "particle_visual_effect_event effect_type",
+                          "title": "Particle Visual Effect Event Effect Type",
                           "dataType": 2
                         }
                       ]
@@ -615,23 +551,20 @@
                   },
                   {
                     "id": "sequence",
-                    "title": "sequence",
-                    "description": "sequence",
+                    "title": "Sequence",
                     "dataType": 16
                   },
                   {
                     "id": "sound_effect",
-                    "title": "sound_effect",
-                    "description": "sound_effect",
+                    "title": "Sound Effect",
                     "dataType": 16,
                     "subForm": {
+                      "id": "particle_sound_effect_event",
                       "title": "Particle Sound Effect Event",
-                      "description": "Particle Sound Effect Event",
                       "fields": [
                         {
                           "id": "event_name",
-                          "title": "event_name",
-                          "description": "event_name",
+                          "title": "Event Name",
                           "dataType": 2
                         }
                       ]
@@ -639,8 +572,7 @@
                   },
                   {
                     "id": "randomize",
-                    "title": "randomize",
-                    "description": "randomize",
+                    "title": "Randomize",
                     "dataType": 16
                   }
                 ]
@@ -648,14 +580,12 @@
             },
             {
               "id": "randomize",
-              "title": "randomize",
-              "description": "randomize",
+              "title": "Randomize",
               "dataType": 16
             },
             {
               "id": "expression",
-              "title": "expression",
-              "description": "expression",
+              "title": "Expression",
               "dataType": 24,
               "alternates": [
                 {
@@ -663,19 +593,17 @@
                   "dataType": 14,
                   "readOnly": true,
                   "subForm": {
+                    "id": "expression",
                     "title": "Expression",
-                    "description": "Expression",
                     "fields": [
                       {
                         "id": "expression",
-                        "title": "expression",
-                        "description": "expression",
+                        "title": "Expression",
                         "dataType": 2
                       },
                       {
                         "id": "version",
-                        "title": "version",
-                        "description": "version",
+                        "title": "Version",
                         "dataType": 0
                       }
                     ]

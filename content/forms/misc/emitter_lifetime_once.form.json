@@ -1,13 +1,12 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
+    "id": "emitter_lifetime_once",
     "title": "Emitter Lifetime Once Misc",
-    "description": "Emitter Lifetime Once Misc",
     "fields": [
       {
         "id": "active_time",
-        "title": "active_time",
-        "description": "active_time",
+        "title": "Active Time",
         "dataType": 24,
         "alternates": [
           {
@@ -15,19 +14,17 @@
             "dataType": 14,
             "readOnly": true,
             "subForm": {
+              "id": "active_time",
               "title": "Active Time",
-              "description": "Active Time",
               "fields": [
                 {
                   "id": "expression",
-                  "title": "expression",
-                  "description": "expression",
+                  "title": "Expression",
                   "dataType": 2
                 },
                 {
                   "id": "version",
-                  "title": "version",
-                  "description": "version",
+                  "title": "Version",
                   "dataType": 0
                 }
               ]

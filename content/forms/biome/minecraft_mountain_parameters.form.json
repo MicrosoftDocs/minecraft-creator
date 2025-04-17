@@ -42,21 +42,23 @@
     ]
   },
   "generatedFromSchema_doNotEdit": {
-    "title": "Mountain Parameters",
+    "id": "minecraft:mountain_parameters",
+    "title": "Minecraft Mountain Parameters Biome",
     "description": "Noise parameters used to drive mountain terrain generation in Overworld.",
     "fields": [
       {
         "id": "steep_material_adjustment",
-        "title": "steep_material_adjustment",
+        "title": "Steep Material Adjustment",
         "description": "Defines surface material for steep slopes",
         "dataType": 16,
         "subForm": {
+          "id": "minecraft:mountain_parameters - steep_material_adjustment settings",
           "title": "Mountain Parameters - Steep Material Adjustment Settings",
           "description": "Defines surface material for steep slopes",
           "fields": [
             {
               "id": "material",
-              "title": "material",
+              "title": "Material",
               "description": "Block type use as steep material",
               "dataType": 2,
               "alternates": [
@@ -65,18 +67,18 @@
                   "dataType": 16,
                   "readOnly": true,
                   "subForm": {
+                    "id": "material",
                     "title": "Material",
-                    "description": "Material",
                     "fields": [
                       {
                         "id": "name",
-                        "title": "name",
+                        "title": "Name",
                         "description": "Name of the block",
                         "dataType": 2
                       },
                       {
                         "id": "states",
-                        "title": "states",
+                        "title": "States",
                         "description": "Contains members named after each state, with boolean, integer, or string values.",
                         "dataType": 31,
                         "alternates": [
@@ -97,25 +99,25 @@
             },
             {
               "id": "east_slopes",
-              "title": "east_slopes",
+              "title": "East Slopes",
               "description": "Enable for east-facing slopes",
               "dataType": 1
             },
             {
               "id": "north_slopes",
-              "title": "north_slopes",
+              "title": "North Slopes",
               "description": "Enable for north-facing slopes",
               "dataType": 1
             },
             {
               "id": "south_slopes",
-              "title": "south_slopes",
+              "title": "South Slopes",
               "description": "Enable for south-facing slopes",
               "dataType": 1
             },
             {
               "id": "west_slopes",
-              "title": "west_slopes",
+              "title": "West Slopes",
               "description": "Enable for west-facing slopes",
               "dataType": 1
             }
@@ -124,23 +126,23 @@
       },
       {
         "id": "top_slide",
-        "title": "top_slide",
+        "title": "Top Slide",
         "description": "Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high",
         "dataType": 16,
         "subForm": {
+          "id": "minecraft:mountain_parameters - top_slide settings",
           "title": "Mountain Parameters - Top Slide Settings",
           "description": "Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high.",
           "fields": [
             {
               "id": "enabled",
-              "title": "enabled",
+              "title": "Enabled",
               "description": "If false, top slide will be disabled. If true, other parameters will be taken into account.",
               "dataType": 1
             }
           ]
         }
       }
-    ],
-    "id": "minecraft:mountain_parameters"
+    ]
   }
 }

@@ -1,0 +1,14 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Description",
+    "title": "Description Misc",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "dataType": 2
+      }
+    ]
+  }
+}

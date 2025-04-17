@@ -44,6 +44,55 @@ This item can also be represented as a `String`.
 "minecraft:geometry": "geometry.mikeamm_gwve_gray_ore"
 ```
 
+#### [Block Frond Top](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/frond_top.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.frond_top"
+```
+
+#### [Block Palm Leave Corner](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.palm_leave_corner"
+```
+
+#### [Block Palm Leave Tip](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_tip.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.palm_leave_tip"
+```
+
+#### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.palm_leave"
+```
+
+#### [Block Palm Tree Top](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_tree_top.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.chill_oasis_top"
+```
+
+#### [Block Palm Trunk](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_trunk.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.palm_trunk"
+```
+
+#### [Block White Sand](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/white_sand.block.json)
+
+
+```json
+"minecraft:geometry": "geometry.white_sand"
+```
+
 #### [Tuna Roll](https://github.com/microsoft/minecraft-samples/tree/main/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json)
 
 
@@ -72,55 +121,4 @@ This item can also be represented as a `String`.
 
 ```json
 "minecraft:geometry": "geometry.sushi"
-```
-
-#### [Die](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks/behavior_packs/custom_blocks/blocks/die.json)
-
-
-```json
-"minecraft:geometry": {
-  "identifier": "minecraft:geometry.full_block"
-}
-```
-
-#### [Block Orange Ore](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json)
-
-
-```json
-"minecraft:geometry": "geometry.orange_ore"
-```
-
-#### [Apple Block](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/example_feature_set/behavior_packs/example_feature_set/blocks/apple_block.json)
-
-
-```json
-"minecraft:geometry": "geometry.apple_block"
-```
-
-#### [Luckyblock](https://github.com/microsoft/minecraft-samples/tree/main/lucky_block/version_1/behavior_packs/mike_luck/blocks/luckyblock.json)
-
-
-```json
-"minecraft:geometry": "geometry.luckyblock"
-```
-
-#### [Block Frond Top](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/frond_top.block.json)
-
-
-```json
-"minecraft:geometry": "geometry.frond_top"
-```
-
-#### [Block Palm Leave Corner](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_corner.block.json)
-
-
-```json
-"minecraft:geometry": "geometry.palm_leave_corner"
-```
-
-#### [Block Palm Leave Tip](https://github.com/microsoft/minecraft-samples/tree/main/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_tip.block.json)
-
-
-```json
-"minecraft:geometry": "geometry.palm_leave_tip"
 ```

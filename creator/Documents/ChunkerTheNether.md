@@ -1,9 +1,10 @@
 ---
-author: neonerz
+author: mammerla
 ms.author: mikeam
 title: Chunker - How to Clear The Nether
 description: "Using Chunker to reset the Nether in a survival world"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/16/2025
 ---
 
 # Chunker - How to Clear The Nether

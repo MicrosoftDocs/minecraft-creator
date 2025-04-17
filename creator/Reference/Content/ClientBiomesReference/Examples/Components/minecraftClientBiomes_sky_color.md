@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Sets the sky color used during rendering. Biomes without this component will have default sky color behavior.
 
 
-## Sky Color Properties
+## Minecraft Sky Color Client Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

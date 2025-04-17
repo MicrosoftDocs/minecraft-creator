@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Sets the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance.
 
 
-## Foliage Appearance Properties
+## Minecraft Foliage Appearance Client Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

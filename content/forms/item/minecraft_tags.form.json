@@ -51,12 +51,13 @@
     }
   },
   "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:tags",
     "title": "Tags",
     "description": "The tags component specifies which tags an item has on it.",
     "fields": [
       {
         "id": "tags",
-        "title": "tags",
+        "title": "Tags",
         "description": "An array that can contain multiple item tags.",
         "dataType": 17,
         "samples": {
@@ -79,7 +80,6 @@
         }
       }
     ],
-    "id": "minecraft:tags",
     "samples": {
       "/vanilla/behavior_pack/items/apple.json": [
         {

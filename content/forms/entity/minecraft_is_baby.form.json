@@ -404,6 +404,12 @@
           "path": "/minecraft:entity/component_groups/mike_eliz:eliza_baby/minecraft:is_baby/",
           "content": {}
         }
+      ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/entities/beachager.behavior.json": [
+        {
+          "path": "/minecraft:entity/component_groups/baby/minecraft:is_baby/",
+          "content": {}
+        }
       ]
     }
   }
