@@ -152,13 +152,13 @@ Now that the behavior pack has a modified cow entity, it is time to launch Minec
 
 ## Adding Your Pack to Minecraft
 
-Once you verify that your behavior pack works on [mctools.dev](https://mctools.dev), the final step is configuring the pack to be recognized by your local Minecraft instance. Check out this [Introduction to Scripting](https://learn.microsoft.com/minecraft/creator/documents/scriptingintroduction?view=minecraft-bedrock-stable#add-a-script-to-the-behavior-pack&preserve-view=true) for a guide on best practices for configuring and editing your new behavior pack.
+Once you verify that your behavior pack works on [mctools.dev](https://mctools.dev), the final step is configuring the pack to be recognized by your local Minecraft instance. Check out this [Introduction to Scripting](../Documents/ScriptingIntroduction.md) for a guide on best practices for configuring and editing your new behavior pack.
 
 ## Troubleshooting
 
 Behavior pack woes? Troubleshooting is a normal part of any development process. Here are some places to begin troubleshooting a behavior pack:
 
-- Check the [content error logs](https://learn.microsoft.com/minecraft/creator/documents/contenterrorlog?view=minecraft-bedrock-stable&preserve-view=true) for detected problems that could cause instability or unpredictable behavior.
+- Check the [content error logs](../Documents/ContentErrorLog.md) for detected problems that could cause instability or unpredictable behavior.
 
 - Use the [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) on the Minecraft samples Github to check the structure of your behavior pack.
 

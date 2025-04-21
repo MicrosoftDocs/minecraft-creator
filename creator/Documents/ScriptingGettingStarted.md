@@ -88,7 +88,7 @@ Go back the Files tree view and open `behavior_packs\cotta\manifest.json`
 
 Update the name and description properties to something like "Cotta Behavior Pack" and "My TypeScript Project".
 
-Update the first and second UUID properties to make it unique to your project. See [this article](https://learn.microsoft.com/minecraft/creator/documents/behaviorpack) for tips on working with behavior packs and creating your own unique UUIDs.
+Update the first and second UUID properties to make it unique to your project. See [this article](../Documents/BehaviorPack.md) for tips on working with behavior packs and creating your own unique UUIDs.
 
 ![Editing Manifest JSON](Media/ScriptingGettingStarted/500-ManifestJson.png)
 
