@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Introduction to Scripting
 description: "In introducion to writing and deploying scripts in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/17/2025
 ---
 
 # Introduction to Scripting in Minecraft
@@ -16,7 +17,7 @@ In this tutorial, we will write a few small scripts in the JavaScript programmin
 
 If you are new to coding in general, this tutorial should break down different elements of code enough for you to understand how to write a basic script. However, if anything seems too advanced or you are confused about something that is discussed in this tutorial, please reference this [Beginner JavaScript Tutorial](https://learn.microsoft.com/shows/beginners-series-to-javascript/) for more information.
 
-Also, all of the concepts you will learn about here will be applicable to TypeScript as well (though it will have slightly different ways of writing things), so you should feel confident in moving on to the TypeScript tutorial after this one.
+Also, all of the concepts you will learn about here will be applicable to TypeScript as well (though it will have slightly different ways of writing things), so you should feel confident in moving on to the TypeScript tutorial after successfully completing this one.
 
 ## Prerequisites
 
