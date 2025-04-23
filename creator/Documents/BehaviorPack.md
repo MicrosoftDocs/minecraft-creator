@@ -4,6 +4,7 @@ ms.author: mikeam
 title: 'Create an Angry Cow: An Introduction To Behavior Packs'
 description: "An introduction to Behavior Packs and adding attacking behaviors to an in-game cow mob."
 ms.service: minecraft-bedrock-edition
+ms.date: 04/17/2025
 ---
 
 # Introduction to Behavior Packs
@@ -48,7 +49,7 @@ For Minecraft to find and use your behavior files, you have to set up the folder
 
 ![Image of behavior pack folder and file structure](Media/BehaviorPack/behavior-pack-structure.png)
 
-### Use mctools.dev to get started
+### Use mctools.dev to Get Started
 
 In this section, we'll get started with a toolset called [Minecraft Creator Tools](./MCToolsOverview.md). This toolset is an open source project from Mojang that helps do all of the management work of creating a new project.
 
@@ -149,11 +150,18 @@ Now that the behavior pack has a modified cow entity, it is time to launch Minec
 1. Summon your cow using the summon command: `/summon cont_bp:cow` (your namespace might vary based on your creator name.)
 1. Your cow might not attack you in creative mode, so select `/gamemode s` to turn the world into a survival world.
 
+## Adding Your Pack to Minecraft
+
+Once you verify that your behavior pack works on [mctools.dev](https://mctools.dev), the final step is configuring the pack to be recognized by your local Minecraft instance. Check out this [Introduction to Scripting](../Documents/ScriptingIntroduction.md) for a guide on best practices for configuring and editing your new behavior pack.
+
 ## Troubleshooting
 
-Behavior pack woes? Troubleshooting is a normal part of any development process. Here are some places to begin troubleshooting a behavior pack.
+Behavior pack woes? Troubleshooting is a normal part of any development process. Here are some places to begin troubleshooting a behavior pack:
 
-You can use the [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) on the Minecraft samples Github to check the structure of your behavior pack.
+- Check the [content error logs](../Documents/ContentErrorLog.md) for detected problems that could cause instability or unpredictable behavior.
+
+- Use the [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) on the Minecraft samples Github to check the structure of your behavior pack.
+
 
 ## What's Next?
 

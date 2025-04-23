@@ -142,6 +142,8 @@
             href: Documents/DeferredLighting/ShadowsCustomization.md
           - name: Water Customization
             href: Documents/DeferredLighting/WaterCustomization.md
+          - name: Per-Biome Customization
+            href: Documents/DeferredLighting/BiomeCustomization.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack

@@ -19,7 +19,13 @@
               "id": "identifier",
               "title": "Identifier",
               "description": "The name of the Client Biome, used by other features like the '/locate biome' command. Must match the name of a Biome defined by the game or a behavior pack.",
-              "dataType": 2
+              "dataType": 2,
+              "validity": [
+                {
+                  "comparison": "pattern",
+                  "value": "^[a-z0-9._%+-:]+$"
+                }
+              ]
             }
           ]
         }
@@ -133,12 +139,12 @@
             {
               "id": "minecraft:lighting_identifier",
               "title": "Minecraft Lighting Identifier",
-              "description": "[INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. Biomes without this component will have default lighting settings.",
+              "description": "Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the \"lighting\" directory. Biomes without this component will have default lighting settings.",
               "dataType": 16,
               "subForm": {
                 "id": "minecraft:lighting_identifier",
                 "title": "Lighting Identifier",
-                "description": "[INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. Biomes without this component will have default lighting settings.",
+                "description": "Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the \"lighting\" directory. Biomes without this component will have default lighting settings.",
                 "fields": [
                   {
                     "id": "lighting_identifier",
@@ -231,12 +237,12 @@
             {
               "id": "minecraft:atmosphere_identifier",
               "title": "Minecraft Atmosphere Identifier",
-              "description": "[INTERNAL - WORK IN PROGRESS] Set the atmosphere settings used during deferred rendering. Biomes without this component will have default atmosphere settings.",
+              "description": "Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the \"atmospherics\" directory. Biomes without this component will have default atmosphere settings.",
               "dataType": 16,
               "subForm": {
                 "id": "minecraft:atmosphere_identifier",
                 "title": "Atmosphere Identifier",
-                "description": "[INTERNAL - WORK IN PROGRESS] Set the atmosphere settings used during deferred rendering. Biomes without this component will have default atmosphere settings.",
+                "description": "Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the \"atmospherics\" directory. Biomes without this component will have default atmosphere settings.",
                 "fields": [
                   {
                     "id": "atmosphere_identifier",
@@ -250,12 +256,12 @@
             {
               "id": "minecraft:color_grading_identifier",
               "title": "Minecraft Color Grading Identifier",
-              "description": "[INTERNAL - WORK IN PROGRESS] Set the color_grading settings used during deferred rendering. Biomes without this component will have default color_grading settings.",
+              "description": "Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the \"color_grading\" directory. Biomes without this component will have default color_grading settings.",
               "dataType": 16,
               "subForm": {
                 "id": "minecraft:color_grading_identifier",
                 "title": "Color Grading Identifier",
-                "description": "[INTERNAL - WORK IN PROGRESS] Set the color_grading settings used during deferred rendering. Biomes without this component will have default color_grading settings.",
+                "description": "Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the \"color_grading\" directory. Biomes without this component will have default color_grading settings.",
                 "fields": [
                   {
                     "id": "color_grading_identifier",
@@ -269,12 +275,12 @@
             {
               "id": "minecraft:water_identifier",
               "title": "Minecraft Water Identifier",
-              "description": "[INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering. Biomes without this component will have default water settings.",
+              "description": "Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the \"water\" directory. Biomes without this component will have default water settings.",
               "dataType": 16,
               "subForm": {
                 "id": "minecraft:water_identifier",
                 "title": "Water Identifier",
-                "description": "[INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering. Biomes without this component will have default water settings.",
+                "description": "Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the \"water\" directory. Biomes without this component will have default water settings.",
                 "fields": [
                   {
                     "id": "water_identifier",

@@ -1,0 +1,28 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/debug-utilities.DebugCircle Class
+description: Contents of the @minecraft/debug-utilities.DebugCircle class.
+---
+# DebugCircle Class
+
+## Extends
+- [*DebugShape*](DebugShape.md)
+
+A debug shape class that represents a circle (2D).
+
+## Methods
+- [constructor](#constructor)
+
+### **constructor**
+`
+new DebugCircle(location: minecraftserver.Vector3)
+`
+
+#### **Parameters**
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+**Returns** [*DebugCircle*](DebugCircle.md)

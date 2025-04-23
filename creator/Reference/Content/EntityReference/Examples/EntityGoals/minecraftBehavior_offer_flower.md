@@ -25,7 +25,7 @@ Allows the mob to offer a flower to another mob with the minecraft:take_flower b
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | chance_to_start | 0 | Decimal number | Percent chance that the mob will start this goal from 0.0 to 1.0 (where 1.0 = 100%). |  | 
-| filters | *not set* | Minecraft filter | Conditions that need to be met for the behavior to start. | Iron Golem: `{"all_of":[{"test":"is_daytime","value":true}]}` | 
+| filters | *not set* | Minecraft filter | Conditions that need to be met for the behavior to start. | Iron Golem: `{"test":"is_daytime"}` | 
 | max_head_rotation_y | 30 | Decimal number | Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target. |  | 
 | max_offer_flower_duration | 20 | Decimal number | The max amount of time (in seconds) that the mob will offer the flower for before exiting the Goal. |  | 
 | max_rotation_x | 30 | Decimal number | Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. |  | 
@@ -41,12 +41,7 @@ Allows the mob to offer a flower to another mob with the minecraft:take_flower b
 "minecraft:behavior.offer_flower": {
   "priority": 5,
   "filters": {
-    "all_of": [
-      {
-        "test": "is_daytime",
-        "value": true
-      }
-    ]
+    "test": "is_daytime"
   }
 }
 ```

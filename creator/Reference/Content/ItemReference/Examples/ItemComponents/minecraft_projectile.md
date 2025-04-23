@@ -17,7 +17,7 @@ Compels the item to shoot, similarly to an arrow. Items with minecraft:projectil
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | minimum_critical_power | *not set* | Decimal number | Specifies how long a player must charge a projectile for it to critically hit. | My Sword Chuck: `1.25` | 
-| projectile_entity | *not set* | Keyed set of strings | Which entity is to be fired as a projectile. Value must be match patern "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". | Wind Charge: `"wind_charge_projectile"`, My Sword Chuck: `"minecraft:snowball"` | 
+| projectile_entity | *not set* | String | Which entity is to be fired as a projectile. Value must be match patern "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". | Wind Charge: `"wind_charge_projectile"`, My Sword Chuck: `"minecraft:snowball"` | 
 | projectile_entity (Alternate 1) | *not set* | Keyed set of strings |  |  | 
 
 ## Samples

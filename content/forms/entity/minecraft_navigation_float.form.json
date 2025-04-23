@@ -10,7 +10,15 @@
         "title": "Avoid Damage Blocks",
         "description": "Tells the pathfinder to avoid blocks that cause damage when finding a path",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:navigation.float/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "avoid_portals",
@@ -31,7 +39,15 @@
         "title": "Avoid Water",
         "description": "Tells the pathfinder to avoid water when creating a path",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:navigation.float/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "blocks_to_avoid",
@@ -166,6 +182,16 @@
           "path": "/minecraft:entity/components/minecraft:navigation.float/",
           "content": {
             "can_path_over_water": true
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:navigation.float/",
+          "content": {
+            "can_path_over_water": true,
+            "avoid_damage_blocks": true,
+            "avoid_water": true
           }
         }
       ]

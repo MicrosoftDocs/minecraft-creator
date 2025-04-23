@@ -10,7 +10,15 @@
         "title": "Additional Collision Buffer",
         "description": "If true, the mob will have an additional buffer zone around it to avoid collisions with blocks when picking a position to wander to.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:behavior.float_wander/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "allow_navigating_through_liquids",
@@ -31,6 +39,24 @@
               "content": [
                 0.1,
                 0.35
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/ghast.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.float_wander/",
+              "content": [
+                2,
+                7
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:behavior.float_wander/",
+              "content": [
+                2,
+                7
               ]
             }
           ]
@@ -55,6 +81,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.float_wander/",
               "content": true
             }
+          ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:behavior.float_wander/",
+              "content": true
+            }
           ]
         }
       },
@@ -63,7 +95,15 @@
         "title": "Navigate Around Surface",
         "description": "If true, will prioritize finding random positions in the vicinity of surfaces, i.e. blocks that are not Air or Liquid.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:behavior.float_wander/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "random_reselect",
@@ -77,6 +117,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.float_wander/",
               "content": true
             }
+          ],
+          "/vanilla/behavior_pack/entities/ghast.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.float_wander/",
+              "content": true
+            }
           ]
         }
       },
@@ -85,21 +131,45 @@
         "title": "Surface Xz Dist",
         "description": "The horizontal distance in blocks that the goal will check for a surface from a candidate position. Only valid when `navigate_around_surface` is true.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:behavior.float_wander/",
+              "content": 16
+            }
+          ]
+        }
       },
       {
         "id": "surface_y_dist",
         "title": "Surface Y Dist",
         "description": "The vertical distance in blocks that the goal will check for a surface from a candidate position. Only valid when `navigate_around_surface` is true.",
         "defaultValue": 0,
-        "dataType": 0
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:behavior.float_wander/",
+              "content": 16
+            }
+          ]
+        }
       },
       {
         "id": "use_home_position_restriction",
         "title": "Use Home Position Restriction",
         "description": "If true, the mob will respect home position restrictions when choosing new target positions. If false, it will choose target position without considering home restrictions",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:behavior.float_wander/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "xz_dist",
@@ -158,6 +228,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.float_wander/",
               "content": 2
             }
+          ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:behavior.float_wander/",
+              "content": 7
+            }
           ]
         }
       }
@@ -183,7 +259,32 @@
           "path": "/minecraft:entity/components/minecraft:behavior.float_wander/",
           "content": {
             "priority": 2,
-            "must_reach": true
+            "must_reach": true,
+            "random_reselect": true,
+            "float_duration": [
+              2,
+              7
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:behavior.float_wander/",
+          "content": {
+            "priority": 7,
+            "must_reach": true,
+            "random_reselect": true,
+            "navigate_around_surface": true,
+            "additional_collision_buffer": true,
+            "allow_navigating_through_liquids": false,
+            "use_home_position_restriction": true,
+            "surface_xz_dist": 16,
+            "surface_y_dist": 16,
+            "float_duration": [
+              2,
+              7
+            ]
           }
         }
       ]

@@ -28,17 +28,17 @@ Any components that this Client Biome uses.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | minecraft:ambient_sounds | *not set* | [Ambient Sounds](#ambient-sounds-item-type) item | Set the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file. |  | 
-| minecraft:atmosphere_identifier | *not set* | [Atmosphere Identifier](#atmosphere-identifier-item-type) item | [INTERNAL - WORK IN PROGRESS] Set the atmosphere settings used during deferred rendering. Biomes without this component will have default atmosphere settings. |  | 
+| minecraft:atmosphere_identifier | *not set* | [Atmosphere Identifier](#atmosphere-identifier-item-type) item | Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the "atmospherics" directory. Biomes without this component will have default atmosphere settings. |  | 
 | minecraft:biome_music | *not set* | [Biome Music](#biome-music-item-type) item | Affect how music plays within the biome |  | 
-| minecraft:color_grading_identifier | *not set* | [Color Grading Identifier](#color-grading-identifier-item-type) item | [INTERNAL - WORK IN PROGRESS] Set the color_grading settings used during deferred rendering. Biomes without this component will have default color_grading settings. |  | 
+| minecraft:color_grading_identifier | *not set* | [Color Grading Identifier](#color-grading-identifier-item-type) item | Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the "color_grading" directory. Biomes without this component will have default color_grading settings. |  | 
 | minecraft:dry_foliage_color | *not set* | [Dry Foliage Color](#dry-foliage-color-item-type) item | Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior. |  | 
 | minecraft:fog_appearance | *not set* | [Fog Appearance](#fog-appearance-item-type) item | Set the fog settings used during rendering. Biomes without this component will have default fog settings. |  | 
 | minecraft:foliage_appearance | *not set* | [Foliage Appearance](#foliage-appearance-item-type) item | Set the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance. |  | 
 | minecraft:grass_appearance | *not set* | [Grass Appearance](#grass-appearance-item-type) item | Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance. |  | 
-| minecraft:lighting_identifier | *not set* | [Lighting Identifier](#lighting-identifier-item-type) item | [INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. Biomes without this component will have default lighting settings. |  | 
+| minecraft:lighting_identifier | *not set* | [Lighting Identifier](#lighting-identifier-item-type) item | Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the "lighting" directory. Biomes without this component will have default lighting settings. |  | 
 | minecraft:sky_color | *not set* | [Sky Color](#sky-color-item-type) item | Set the sky color used during rendering. Biomes without this component will have default sky color behavior. |  | 
 | minecraft:water_appearance | *not set* | [Water Appearance](#water-appearance-item-type) item | Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior. |  | 
-| minecraft:water_identifier | *not set* | [Water Identifier](#water-identifier-item-type) item | [INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering. Biomes without this component will have default water settings. |  | 
+| minecraft:water_identifier | *not set* | [Water Identifier](#water-identifier-item-type) item | Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the "water" directory. Biomes without this component will have default water settings. |  | 
 
 ## Ambient Sounds item type
 Set the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.
@@ -53,7 +53,7 @@ Set the ambient sounds for the biome. These sounds must be in the 'individual_na
 | mood | *not set* | String | Named sound that rarely plays at a nearby air block position when the light level is low. Biomes without an ambient mood sound will use the 'ambient.cave' sound. |  | 
 
 ## Atmosphere Identifier item type
-[INTERNAL - WORK IN PROGRESS] Set the atmosphere settings used during deferred rendering. Biomes without this component will have default atmosphere settings.
+Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the "atmospherics" directory. Biomes without this component will have default atmosphere settings.
 
 
 #### Atmosphere Identifier Properties
@@ -74,7 +74,7 @@ Affect how music plays within the biome.
 | volume_multiplier | *not set* | Decimal number | Multiplier temporarily and gradually applied to music volume when within this biome. Must be a value between 0 and 1, inclusive. |  | 
 
 ## Color Grading Identifier item type
-[INTERNAL - WORK IN PROGRESS] Set the color_grading settings used during deferred rendering. Biomes without this component will have default color_grading settings.
+Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the "color_grading" directory. Biomes without this component will have default color_grading settings.
 
 
 #### Color Grading Identifier Properties
@@ -125,7 +125,7 @@ Set the grass color or color map used during rendering. Biomes without this comp
 | color | *not set* | Object | RGB color of grass. |  | 
 
 ## Lighting Identifier item type
-[INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. Biomes without this component will have default lighting settings.
+Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the "lighting" directory. Biomes without this component will have default lighting settings.
 
 
 #### Lighting Identifier Properties
@@ -158,7 +158,7 @@ Set the water surface color used during rendering. Biomes without this component
 | surface_opacity | *not set* | Decimal number | Opacity of the water surface (must be between 0 for invisible and 1 for opaque, inclusive) |  | 
 
 ## Water Identifier item type
-[INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering. Biomes without this component will have default water settings.
+Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the "water" directory. Biomes without this component will have default water settings.
 
 
 #### Water Identifier Properties
@@ -175,4 +175,4 @@ Contains non-component settings for a Client Biome.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of the Client Biome, used by other features like the '/locate biome' command. Must match the name of a Biome defined by the game or a behavior pack. |  | 
+| identifier | *not set* | String | The name of the Client Biome, used by other features like the '/locate biome' command. Must match the name of a Biome defined by the game or a behavior pack. Value must be match patern "^[a-z0-9._%+-:]+$". |  | 

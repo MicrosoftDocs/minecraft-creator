@@ -321,6 +321,14 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:physics/",
+          "content": {
+            "has_gravity": false
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/hoglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:physics/",

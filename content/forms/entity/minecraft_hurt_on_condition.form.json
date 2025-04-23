@@ -42,9 +42,7 @@
                 {
                   "filters": {
                     "test": "in_lava",
-                    "subject": "self",
-                    "operator": "==",
-                    "value": true
+                    "subject": "self"
                   },
                   "cause": "lava",
                   "damage_per_tick": 4
@@ -79,9 +77,7 @@
               {
                 "filters": {
                   "test": "in_lava",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": true
+                  "subject": "self"
                 },
                 "cause": "lava",
                 "damage_per_tick": 4
@@ -602,9 +598,7 @@
               {
                 "filters": {
                   "test": "in_lava",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": true
+                  "subject": "self"
                 },
                 "cause": "lava",
                 "damage_per_tick": 4
@@ -621,9 +615,7 @@
               {
                 "filters": {
                   "test": "in_lava",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": true
+                  "subject": "self"
                 },
                 "cause": "lava",
                 "damage_per_tick": 4
@@ -643,6 +635,22 @@
                   "subject": "self",
                   "operator": "==",
                   "value": true
+                },
+                "cause": "lava",
+                "damage_per_tick": 4
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/",
+          "content": {
+            "damage_conditions": [
+              {
+                "filters": {
+                  "test": "in_lava"
                 },
                 "cause": "lava",
                 "damage_per_tick": 4
@@ -716,9 +724,7 @@
               {
                 "filters": {
                   "test": "in_lava",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": true
+                  "subject": "self"
                 },
                 "cause": "lava",
                 "damage_per_tick": 4
@@ -1230,9 +1236,7 @@
               {
                 "filters": {
                   "test": "in_lava",
-                  "subject": "self",
-                  "operator": "==",
-                  "value": true
+                  "subject": "self"
                 },
                 "cause": "lava",
                 "damage_per_tick": 4

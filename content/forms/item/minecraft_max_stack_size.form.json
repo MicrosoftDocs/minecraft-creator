@@ -5,7 +5,7 @@
   "fields": [
     {
       "id": "value",
-      "title": "value",
+      "title": "Max Stack Size",
       "description": "How many of an item that can be stacked together.",
       "defaultValue": 64,
       "dataType": 0

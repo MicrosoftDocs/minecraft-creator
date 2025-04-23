@@ -4,14 +4,15 @@ ms.author: mikeam
 title: Build a gameplay experience with TypeScript
 description: "Use TypeScript to build a simple gameplay experience in Minecraft"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/17/2025
 ---
 
 # Build a gameplay experience with TypeScript
 
-This leverages a starter sample available from [https://github.com/microsoft/minecraft-scripting-samples/](https://github.com/microsoft/minecraft-scripting-samples/) with a simple build process and TypeScript compilation for Minecraft. From it, you can build out and expand simple gameplay styles. You can also use this project as a starter for your own scripting projects.
+This guide leverages a starter sample available on [our public GitHub repository](https://github.com/microsoft/minecraft-scripting-samples/) with a simple build process and TypeScript compilation for Minecraft. From it, you can build out and expand simple gameplay styles. You can also use this project as a starter for your own scripting projects.
 
 > [!IMPORTANT]
-> Just getting started with JavaScript? You may want to check out the [Scripting Introduction](./ScriptingIntroduction.md) article which will show the basics of creating a very basic behavior pack with JavaScript fundamentals. Once you're comfortable with the JavaScript fundamentals and concepts, this article will help you use TypeScript with Minecraft. TypeScript is a more helpfully structured dialect of JavaScript; however, because TypeScript requires compilation of your TypeScript source into JavaScript that Minecraft can use, there is a bit more project structure you'll need to establish up front that this tutorial will walk you through.  
+> Just getting started with JavaScript? You may want to check out [Introduction to Scripting](./ScriptingIntroduction.md) to learn the basics of creating a simple behavior pack using JavaScript fundamentals. Once you're comfortable with the JavaScript fundamentals and concepts, this article will help you use TypeScript with Minecraft for more complex customization. TypeScript is a more helpfully structured dialect of JavaScript; however, because TypeScript must be compiled into JavaScript before Minecraft can use it, there is a bit more project structure you'll need to establish up front that this tutorial will walk you through.  
 
 ## On the Minecraft Creator Channel
 
@@ -66,7 +67,7 @@ Visit the [Visual Studio Code website](https://code.visualstudio.com) and instal
 
 It might also ask you to install the Minecraft Debugger and Blockception's Visual Studio Code plugin, which are plugins to Visual Studio Code that can help with Minecraft development. Go ahead and do that, if you haven't already.
 
-### Chapter 1. Customize the behavior pack
+## Chapter 1. Customize the behavior pack
 
 In Visual Studio Code, open the file `.env`. This contains the environment variables to use to configure project:
 
@@ -87,11 +88,11 @@ Go back the Files tree view and open `behavior_packs\cotta\manifest.json`
 
 Update the name and description properties to something like "Cotta Behavior Pack" and "My TypeScript Project".
 
-Update the first and second UUID properties to make it unique to your project. See [this article](https://learn.microsoft.com/minecraft/creator/documents/behaviorpack) for tips on working with behavior packs and creating your own unique UUIDs.
+Update the first and second UUID properties to make it unique to your project. See [this article](../Documents/BehaviorPack.md) for tips on working with behavior packs and creating your own unique UUIDs.
 
 ![Editing Manifest JSON](Media/ScriptingGettingStarted/500-ManifestJson.png)
 
-### Chapter 2. Let's test the parts of our project
+## Chapter 2. Let's test the parts of our project
 
 To get started, go into PowerShell and navigate to your **C:\projects\cotta** directory.
 Run this command:
@@ -130,13 +131,13 @@ This means your behavior pack is working and your tools for compiling and pushin
 
 ![Hello Starter, displayed](Media/ScriptingGettingStarted/800-HelloStarter.png)
 
-### Chapter 3. Scripting your gameplay
+## Chapter 3. Scripting your gameplay
 
 Let's go back to Visual Studio Code and change up some code.
 
 Open up `scripts/main.ts` within Visual Studio Code.
 
-#### Add some initialization code
+### Add some initialization code
 
 Remove all the existing script code in **main.ts**. Replace it with this to start:
 
@@ -255,7 +256,7 @@ Note that as you work through this tutorial, we are going to run the initializat
 
 ![Initial items](Media/ScriptingGettingStarted/1000-InitialItems.png)
 
-#### Build your arena with some helper code
+### Build your arena with some helper code
 
 We're going to start by adding some handy helper utility code functions. This will show you how you can organize your code into separate modules or classes.
 
@@ -370,7 +371,7 @@ Exit out of your Minecraft world and restart it to load your changes. After a br
 
 Now, let's give ourselves some terracotta to break.
 
-### Chapter 4. Add some gameplay basics - scoring and objectives
+## Chapter 4. Add some gameplay basics - scoring and objectives
 
 First, let's track some more game variables. Inside **main.ts**, add this directly beneath the `let curTick = 0` line of code:
 
@@ -449,7 +450,7 @@ To play, you will need to run the command `/gamemode s` to put Minecraft into su
 
 After the terracotta is broken, your score will increment, and a new block is spawned.
 
-#### Add a challenge - let's add some mobs
+### Add a challenge - let's add some mobs
 
 OK, let's add this function after the `checkForTerracotta()` function:
 
@@ -492,7 +493,7 @@ As you play, zombies should spawn and start chasing you. They'll spawn slowly at
 
 ![Mobs chasing you](Media/ScriptingGettingStarted/1700-MobChase.png)
 
-### Add more challenges!
+## Add more challenges!
 
 Let's add a new gameplay twist: randomly spawning obstructions in the form of leaves.
 
@@ -530,7 +531,7 @@ You may wonder why the interval here is 29. The main idea was to select a number
 
 Now exit out and reload your game. As you run around, you should see new leaves get spawned. This should add a little bit more challenge to your gameplay!
 
-### Other Commands
+## Other Commands
 
 To run a lint operation (that is, scan your code for errors) use this shortcut command:
 

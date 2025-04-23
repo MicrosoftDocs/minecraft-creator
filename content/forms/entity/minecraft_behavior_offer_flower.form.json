@@ -29,12 +29,7 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.offer_flower/",
               "content": {
-                "all_of": [
-                  {
-                    "test": "is_daytime",
-                    "value": true
-                  }
-                ]
+                "test": "is_daytime"
               }
             }
           ]
@@ -95,12 +90,7 @@
           "content": {
             "priority": 5,
             "filters": {
-              "all_of": [
-                {
-                  "test": "is_daytime",
-                  "value": true
-                }
-              ]
+              "test": "is_daytime"
             }
           }
         }

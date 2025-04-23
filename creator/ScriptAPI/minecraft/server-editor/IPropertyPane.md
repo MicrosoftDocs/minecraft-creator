@@ -49,11 +49,14 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addText](#addtext)
 - [addToggleGroup](#addtogglegroup)
 - [addVector3](#addvector3)
+- [beginConstruct](#beginconstruct)
 - [collapse](#collapse)
 - [createSubPane](#createsubpane)
+- [endConstruct](#endconstruct)
 - [getTitle](#gettitle)
 - [removeSubPane](#removesubpane)
 - [setTitle](#settitle)
+- [toggleSubPaneVisibility](#togglesubpanevisibility)
 
 ### **addBlockList**
 `
@@ -281,6 +284,15 @@ Adds a Vec3 item to the pane.
 
 **Returns** *IVector3PropertyItem*
 
+### **beginConstruct**
+`
+beginConstruct(): void
+`
+
+Begins pane construction for batching property item additions
+
+**Returns** *void*
+
 ### **collapse**
 `
 collapse(): void
@@ -301,6 +313,15 @@ Creates an sub pane that can store property items.
 - **options**: *ISubPanePropertyItemOptions*
 
 **Returns** *ISubPanePropertyItem*
+
+### **endConstruct**
+`
+endConstruct(): void
+`
+
+Finalizes pane construction and synchronizes item data
+
+**Returns** *void*
 
 ### **getTitle**
 `
@@ -334,5 +355,19 @@ Updates title of pane.
 - **newTitle**: *LocalizedString | undefined*
   
   New title
+
+**Returns** *void*
+
+### **toggleSubPaneVisibility**
+`
+toggleSubPaneVisibility(subPaneId: string | undefined): void
+`
+
+Shows only the specified sub-pane, hiding all others
+
+#### **Parameters**
+- **subPaneId**: *string | undefined*
+  
+  Identifier of the sub pane to display.
 
 **Returns** *void*

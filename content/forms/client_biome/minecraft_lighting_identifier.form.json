@@ -4,7 +4,7 @@
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:lighting_identifier",
     "title": "Minecraft Lighting Identifier Client Biome",
-    "description": "[INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. Biomes without this component will have default lighting settings.",
+    "description": "Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the \"lighting\" directory. Biomes without this component will have default lighting settings.",
     "fields": [
       {
         "id": "lighting_identifier",

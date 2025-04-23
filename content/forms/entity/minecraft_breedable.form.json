@@ -1059,7 +1059,7 @@
             "love_filters": {
               "test": "has_component",
               "subject": "self",
-              "operator": "!=",
+              "operator": "not",
               "value": "minecraft:attack_cooldown"
             },
             "breeds_with": {

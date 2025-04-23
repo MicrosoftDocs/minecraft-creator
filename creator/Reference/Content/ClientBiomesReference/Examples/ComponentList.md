@@ -10,14 +10,14 @@ ms.date: 02/11/2025
 | Client Biomes | Description |
 |:-----|:----------|
 | [minecraft:ambient_sounds](Components/minecraftClientBiomes_ambient_sounds.md)| Sets the ambient sounds for the biome. |
-| [minecraft:atmosphere_identifier](Components/minecraftClientBiomes_atmosphere_identifier.md)| [INTERNAL - WORK IN PROGRESS] Set the atmosphere settings used during deferred rendering. |
+| [minecraft:atmosphere_identifier](Components/minecraftClientBiomes_atmosphere_identifier.md)| Set the identifier used for atmospherics in Vibrant Visuals mode. |
 | [minecraft:biome_music](Components/minecraftClientBiomes_biome_music.md)| Affects how music plays within the biome |
-| [minecraft:color_grading_identifier](Components/minecraftClientBiomes_color_grading_identifier.md)| [INTERNAL - WORK IN PROGRESS] Set the color_grading settings used during deferred rendering. |
+| [minecraft:color_grading_identifier](Components/minecraftClientBiomes_color_grading_identifier.md)| Set the identifier used for color grading in Vibrant Visuals mode. |
 | [minecraft:dry_foliage_color](Components/minecraftClientBiomes_dry_foliage_color.md)| Set the dry foliage color used during rendering. |
 | [minecraft:fog_appearance](Components/minecraftClientBiomes_fog_appearance.md)| Sets the fog settings used during rendering. |
 | [minecraft:foliage_appearance](Components/minecraftClientBiomes_foliage_appearance.md)| Sets the foliage color or color map used during rendering. |
 | [minecraft:grass_appearance](Components/minecraftClientBiomes_grass_appearance.md)| Set the grass color or color map used during rendering. |
-| [minecraft:lighting_identifier](Components/minecraftClientBiomes_lighting_identifier.md)| [INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. |
+| [minecraft:lighting_identifier](Components/minecraftClientBiomes_lighting_identifier.md)| Set the identifier used for lighting in Vibrant Visuals mode. |
 | [minecraft:sky_color](Components/minecraftClientBiomes_sky_color.md)| Sets the sky color used during rendering. |
 | [minecraft:water_appearance](Components/minecraftClientBiomes_water_appearance.md)| Set the water surface color used during rendering. |
-| [minecraft:water_identifier](Components/minecraftClientBiomes_water_identifier.md)| [INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering. |
+| [minecraft:water_identifier](Components/minecraftClientBiomes_water_identifier.md)| Set the identifier used for rendering water in Vibrant Visuals mode. |

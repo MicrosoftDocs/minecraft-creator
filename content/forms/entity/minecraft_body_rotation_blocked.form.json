@@ -18,6 +18,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_immobile/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ],
       "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/axe_turret.behavior.json": [
         {
           "path": "/minecraft:entity/components/minecraft:body_rotation_blocked/",

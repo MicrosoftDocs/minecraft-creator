@@ -441,6 +441,14 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/hoglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:despawn/",

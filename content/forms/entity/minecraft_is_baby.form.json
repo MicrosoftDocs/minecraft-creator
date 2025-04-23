@@ -11,6 +11,12 @@
         "title": "Test",
         "dataType": 2,
         "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.follow_mob/filters/all_of/1/",
+              "content": "is_baby"
+            }
+          ],
           "/vanilla/behavior_pack/entities/villager_v2.json": [
             {
               "path": "/minecraft:entity/component_groups/play_schedule_villager/minecraft:behavior.play/friend_types/0/filters/all_of/1/",
@@ -24,23 +30,16 @@
         "title": "Subject",
         "dataType": 2,
         "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.follow_mob/filters/all_of/1/",
+              "content": "other"
+            }
+          ],
           "/vanilla/behavior_pack/entities/villager_v2.json": [
             {
               "path": "/minecraft:entity/component_groups/play_schedule_villager/minecraft:behavior.play/friend_types/0/filters/all_of/1/",
               "content": "other"
-            }
-          ]
-        }
-      },
-      {
-        "id": "operator",
-        "title": "Operator",
-        "dataType": 2,
-        "samples": {
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
-            {
-              "path": "/minecraft:entity/component_groups/play_schedule_villager/minecraft:behavior.play/friend_types/0/filters/all_of/1/",
-              "content": "=="
             }
           ]
         }
@@ -54,6 +53,19 @@
             {
               "path": "/minecraft:entity/component_groups/play_schedule_villager/minecraft:behavior.play/friend_types/0/filters/all_of/1/",
               "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "operator",
+        "title": "Operator",
+        "dataType": 2,
+        "samples": {
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/component_groups/play_schedule_villager/minecraft:behavior.play/friend_types/0/filters/all_of/1/",
+              "content": "=="
             }
           ]
         }
@@ -136,6 +148,20 @@
         {
           "path": "/minecraft:entity/component_groups/goat_baby/minecraft:is_baby/",
           "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:is_baby/",
+          "content": {}
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.follow_mob/filters/all_of/1/",
+          "content": {
+            "test": "is_baby",
+            "subject": "other",
+            "value": false
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/hoglin.json": [

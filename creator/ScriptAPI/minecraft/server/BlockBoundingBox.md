@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.BlockBoundingBox Interface
 description: Contents of the @minecraft/server.BlockBoundingBox class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # BlockBoundingBox Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 A BlockBoundingBox is an interface to an object which represents an AABB aligned rectangle.  
 

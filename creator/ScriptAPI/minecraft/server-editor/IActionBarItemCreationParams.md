@@ -20,6 +20,13 @@ Initial enabled state of the item. If not defined, default is true.
 
 Type: *boolean*
 
+### **executeOnAdd**
+`executeOnAdd: boolean;`
+
+Sets whether the Action Bar Item's execute is run when it is added to the Action Bar. If not defined, default is false.
+
+Type: *boolean*
+
 ### **icon**
 `icon: string;`
 

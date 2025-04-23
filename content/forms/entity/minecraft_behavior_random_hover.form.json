@@ -140,6 +140,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
               "content": 12
             }
+          ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.random_hover/",
+              "content": 8
+            }
           ]
         }
       }
@@ -166,6 +172,22 @@
           "path": "/minecraft:entity/components/minecraft:behavior.random_hover/",
           "content": {
             "priority": 12,
+            "xz_dist": 8,
+            "y_dist": 8,
+            "y_offset": -1,
+            "interval": 1,
+            "hover_height": [
+              1,
+              4
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.random_hover/",
+          "content": {
+            "priority": 8,
             "xz_dist": 8,
             "y_dist": 8,
             "y_offset": -1,

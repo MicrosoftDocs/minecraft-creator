@@ -17,12 +17,13 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.18.0"
+    "version": "1.19.0"
 }
 ```
 
 ## Available Versions
-- `2.0.0-beta`
+- `2.1.0-beta`
+- `1.19.0`
 - `1.18.0`
 - `1.17.0`
 - `1.16.0`
@@ -85,6 +86,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ObjectiveSortOrder](ObjectiveSortOrder.md)
 - [PaletteColor](PaletteColor.md)
 - [PlatformType](PlatformType.md)
+- [PlayerInventoryType](PlayerInventoryType.md)
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
 - [ScriptEventSource](ScriptEventSource.md)
 - [SignSide](SignSide.md)
@@ -121,7 +123,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockComponent](BlockComponent.md)
 - [BlockComponentEntityFallOnEvent](BlockComponentEntityFallOnEvent.md)
 - [BlockComponentOnPlaceEvent](BlockComponentOnPlaceEvent.md)
-- [BlockComponentPlayerDestroyEvent](BlockComponentPlayerDestroyEvent.md)
+- [BlockComponentPlayerBreakEvent](BlockComponentPlayerBreakEvent.md)
 - [BlockComponentPlayerInteractEvent](BlockComponentPlayerInteractEvent.md)
 - [BlockComponentPlayerPlaceBeforeEvent](BlockComponentPlayerPlaceBeforeEvent.md)
 - [BlockComponentRandomTickEvent](BlockComponentRandomTickEvent.md)
@@ -223,7 +225,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityIsStunnedComponent](EntityIsStunnedComponent.md)
 - [EntityIsTamedComponent](EntityIsTamedComponent.md)
 - [EntityItemComponent](EntityItemComponent.md)
-- [EntityIterator](EntityIterator.md)
 - [EntityLavaMovementComponent](EntityLavaMovementComponent.md)
 - [EntityLeashableComponent](EntityLeashableComponent.md)
 - [EntityLoadAfterEvent](EntityLoadAfterEvent.md)
@@ -265,7 +266,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EntityTameMountComponent](EntityTameMountComponent.md)
 - [EntityType](EntityType.md)
 - [EntityTypeFamilyComponent](EntityTypeFamilyComponent.md)
-- [EntityTypeIterator](EntityTypeIterator.md)
 - [EntityTypes](EntityTypes.md)
 - [EntityUnderwaterMovementComponent](EntityUnderwaterMovementComponent.md)
 - [EntityVariantComponent](EntityVariantComponent.md)
@@ -276,7 +276,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ExplosionBeforeEventSignal](ExplosionBeforeEventSignal.md)
 - [FeedItem](FeedItem.md)
 - [FeedItemEffect](FeedItemEffect.md)
-- [FilterGroup](FilterGroup.md)
 - [FluidContainer](FluidContainer.md)
 - [GameRuleChangeAfterEvent](GameRuleChangeAfterEvent.md)
 - [GameRuleChangeAfterEventSignal](GameRuleChangeAfterEventSignal.md)
@@ -344,6 +343,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerGameModeChangeAfterEventSignal](PlayerGameModeChangeAfterEventSignal.md)
 - [PlayerGameModeChangeBeforeEvent](PlayerGameModeChangeBeforeEvent.md)
 - [PlayerGameModeChangeBeforeEventSignal](PlayerGameModeChangeBeforeEventSignal.md)
+- [PlayerHotbarSelectedSlotChangeAfterEvent](PlayerHotbarSelectedSlotChangeAfterEvent.md)
+- [PlayerHotbarSelectedSlotChangeAfterEventSignal](PlayerHotbarSelectedSlotChangeAfterEventSignal.md)
 - [PlayerInputModeChangeAfterEvent](PlayerInputModeChangeAfterEvent.md)
 - [PlayerInputModeChangeAfterEventSignal](PlayerInputModeChangeAfterEventSignal.md)
 - [PlayerInputPermissionCategoryChangeAfterEvent](PlayerInputPermissionCategoryChangeAfterEvent.md)
@@ -357,7 +358,8 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PlayerInteractWithEntityAfterEventSignal](PlayerInteractWithEntityAfterEventSignal.md)
 - [PlayerInteractWithEntityBeforeEvent](PlayerInteractWithEntityBeforeEvent.md)
 - [PlayerInteractWithEntityBeforeEventSignal](PlayerInteractWithEntityBeforeEventSignal.md)
-- [PlayerIterator](PlayerIterator.md)
+- [PlayerInventoryItemChangeAfterEvent](PlayerInventoryItemChangeAfterEvent.md)
+- [PlayerInventoryItemChangeAfterEventSignal](PlayerInventoryItemChangeAfterEventSignal.md)
 - [PlayerJoinAfterEvent](PlayerJoinAfterEvent.md)
 - [PlayerJoinAfterEventSignal](PlayerJoinAfterEventSignal.md)
 - [PlayerLeaveAfterEvent](PlayerLeaveAfterEvent.md)
@@ -462,7 +464,9 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ExplosionOptions](ExplosionOptions.md)
 - [GreaterThanComparison](GreaterThanComparison.md)
 - [GreaterThanOrEqualsComparison](GreaterThanOrEqualsComparison.md)
+- [HotbarEventOptions](HotbarEventOptions.md)
 - [InputEventOptions](InputEventOptions.md)
+- [InventoryItemEventOptions](InventoryItemEventOptions.md)
 - [ItemCustomComponent](ItemCustomComponent.md)
 - [JigsawPlaceOptions](JigsawPlaceOptions.md)
 - [JigsawStructurePlaceOptions](JigsawStructurePlaceOptions.md)

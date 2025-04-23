@@ -16,4 +16,4 @@ Contains non-component settings for a Client Biome.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of the Client Biome, used by other features like the '/locate biome' command. Must match the name of a Biome defined by the game or a behavior pack. |  | 
+| identifier | *not set* | String | The name of the Client Biome, used by other features like the '/locate biome' command. Must match the name of a Biome defined by the game or a behavior pack. Value must be match patern "^[a-z0-9._%+-:]+$". |  | 

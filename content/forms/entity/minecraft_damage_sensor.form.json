@@ -102,13 +102,12 @@
                         },
                         {
                           "test": "is_owner",
-                          "subject": "other",
-                          "value": true
+                          "subject": "other"
                         }
                       ]
                     }
                   },
-                  "deals_damage": false
+                  "deals_damage": "no"
                 }
               ]
             }
@@ -206,13 +205,12 @@
                       },
                       {
                         "test": "is_owner",
-                        "subject": "other",
-                        "value": true
+                        "subject": "other"
                       }
                     ]
                   }
                 },
-                "deals_damage": false
+                "deals_damage": "no"
               }
             ]
           }
@@ -482,7 +480,7 @@
           "content": {
             "triggers": {
               "cause": "fall",
-              "deals_damage": true,
+              "deals_damage": "yes",
               "damage_modifier": -5
             }
           }
@@ -494,7 +492,7 @@
           "content": {
             "triggers": {
               "cause": "fall",
-              "deals_damage": false
+              "deals_damage": "no"
             }
           }
         }
@@ -505,9 +503,22 @@
           "content": {
             "triggers": {
               "cause": "fall",
-              "deals_damage": true,
+              "deals_damage": "yes",
               "damage_modifier": -10
             }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "cause": "fall",
+                "deals_damage": "no"
+              }
+            ]
           }
         }
       ],
@@ -517,7 +528,7 @@
           "content": {
             "triggers": {
               "cause": "fall",
-              "deals_damage": false
+              "deals_damage": "no"
             }
           }
         }
@@ -682,7 +693,7 @@
           "content": {
             "triggers": {
               "cause": "fall",
-              "deals_damage": false
+              "deals_damage": "no"
             }
           }
         }
