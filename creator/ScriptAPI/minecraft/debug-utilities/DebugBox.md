@@ -1,0 +1,37 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/debug-utilities.DebugBox Class
+description: Contents of the @minecraft/debug-utilities.DebugBox class.
+---
+# DebugBox Class
+
+## Extends
+- [*DebugShape*](DebugShape.md)
+
+A debug shape class that represents a box or cuboid.
+
+## Properties
+
+### **bound**
+`bound: minecraftserver.Vector3;`
+
+The bounding box of the shape. The final box will be this bound multiplied by the shape's scale.
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+## Methods
+- [constructor](#constructor)
+
+### **constructor**
+`
+new DebugBox(location: minecraftserver.Vector3)
+`
+
+#### **Parameters**
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+**Returns** [*DebugBox*](DebugBox.md)

@@ -17,3 +17,10 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [*ItemComponent*](ItemComponent.md)
 
 An instance of a custom component on an item.
+
+## Properties
+
+### **customComponentParameters**
+`read-only customComponentParameters: CustomComponentParameters;`
+
+Type: [*CustomComponentParameters*](CustomComponentParameters.md)

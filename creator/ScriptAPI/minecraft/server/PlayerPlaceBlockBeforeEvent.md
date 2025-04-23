@@ -41,10 +41,10 @@ Location relative to the bottom north-west corner of the block where the new blo
 
 Type: [*Vector3*](Vector3.md)
 
-### **permutationBeingPlaced**
-`read-only permutationBeingPlaced: BlockPermutation;`
+### **permutationToPlace**
+`read-only permutationToPlace: BlockPermutation;`
 
-The block permutation that is being placed.
+The block permutation that will be placed if the event is not cancelled.
 
 Type: [*BlockPermutation*](BlockPermutation.md)
 

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.Difficulty Enumeration
 description: Contents of the @minecraft/server.Difficulty enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # Difficulty Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 An enumeration for the various difficulty levels of Minecraft.
 

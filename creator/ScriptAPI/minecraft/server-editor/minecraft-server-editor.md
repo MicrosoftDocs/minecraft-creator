@@ -79,6 +79,7 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [WidgetGizmoEventType](WidgetGizmoEventType.md)
 - [WidgetGroupSelectionMode](WidgetGroupSelectionMode.md)
 - [WidgetMouseButtonActionType](WidgetMouseButtonActionType.md)
+- [WorldGeneratorType](WorldGeneratorType.md)
 
 # Type Aliases
 - [Action](Action.md)

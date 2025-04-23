@@ -54,12 +54,8 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [placeFeature](#placefeature)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [placeFeatureRule](#placefeaturerule)
-::: moniker-end
 - [playSound](#playsound)
 - [runCommand](#runcommand)
 - [setBlockPermutation](#setblockpermutation)
@@ -68,6 +64,12 @@ Type: *string*
 - [spawnEntity](#spawnentity)
 - [spawnItem](#spawnitem)
 - [spawnParticle](#spawnparticle)
+::: moniker range="=minecraft-bedrock-experimental"
+- [stopAllSounds](#stopallsounds)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [stopSound](#stopsound)
+::: moniker-end
 
 ### **containsBlock**
 `
@@ -520,7 +522,6 @@ Notes:
 - This function can't be called in read-only mode.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **placeFeature**
 `
 placeFeature(featureName: string, location: Vector3, shouldThrow?: boolean): boolean
@@ -542,17 +543,12 @@ Places the given feature into the dimension at the specified location.
   Note: The function call will always throw an error if using an unknown feature name or trying to place in a unloaded chunk.
 
 **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws *Error*, [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **placeFeatureRule**
 `
 placeFeatureRule(featureRuleName: string, location: Vector3): boolean
@@ -569,15 +565,11 @@ Places the given feature rule into the dimension at the specified location.
   Location to place the feature rule.
 
 **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
-::: moniker-end
 
 ### **playSound**
 `
@@ -886,3 +878,38 @@ function spawnParticle(targetLocation: DimensionLocation) {
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/spawnParticle.ts) code sandbox.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **stopAllSounds**
+`
+stopAllSounds(): void
+`
+
+Stops all sounds from playing for all players.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **stopSound**
+`
+stopSound(soundId: string): void
+`
+
+Stops a sound from playing for all players.
+
+#### **Parameters**
+- **soundId**: *string*
+  
+  Identifier of the sound.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+::: moniker-end

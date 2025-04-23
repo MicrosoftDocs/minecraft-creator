@@ -15,15 +15,9 @@ Builds a simple player form with buttons that let the player take action.
 - [constructor](#constructor)
 - [body](#body)
 - [button](#button)
-::: moniker range="=minecraft-bedrock-experimental"
 - [divider](#divider)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [header](#header)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [label](#label)
-::: moniker-end
 - [show](#show)
 - [title](#title)
 
@@ -61,7 +55,6 @@ Adds a button to this form with an icon from a resource pack.
 
 **Returns** [*ActionFormData*](ActionFormData.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **divider**
 `
 divider(): ActionFormData
@@ -71,11 +64,6 @@ Adds a section divider to the form.
 
 **Returns** [*ActionFormData*](ActionFormData.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **header**
 `
 header(text: minecraftserver.RawMessage | string): ActionFormData
@@ -90,11 +78,6 @@ Adds a header to the form.
 
 **Returns** [*ActionFormData*](ActionFormData.md)
 
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
-::: moniker range="=minecraft-bedrock-experimental"
 ### **label**
 `
 label(text: minecraftserver.RawMessage | string): ActionFormData
@@ -108,10 +91,6 @@ Adds a label to the form.
   Text to display.
 
 **Returns** [*ActionFormData*](ActionFormData.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **show**
 `

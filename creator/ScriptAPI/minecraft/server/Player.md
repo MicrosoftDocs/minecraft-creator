@@ -170,9 +170,7 @@ Notes:
 ## Methods
 - [addExperience](#addexperience)
 - [addLevels](#addlevels)
-::: moniker range="=minecraft-bedrock-experimental"
 - [clearPropertyOverridesForEntity](#clearpropertyoverridesforentity)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [eatItem](#eatitem)
 ::: moniker-end
@@ -192,22 +190,24 @@ Notes:
 - [postClientMessage](#postclientmessage)
 ::: moniker-end
 - [queueMusic](#queuemusic)
-::: moniker range="=minecraft-bedrock-experimental"
 - [removePropertyOverrideForEntity](#removepropertyoverrideforentity)
-::: moniker-end
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
 - [setGameMode](#setgamemode)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [setOp](#setop)
 ::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [setPropertyOverrideForEntity](#setpropertyoverrideforentity)
-::: moniker-end
 - [setSpawnPoint](#setspawnpoint)
 - [spawnParticle](#spawnparticle)
 - [startItemCooldown](#startitemcooldown)
+::: moniker range="=minecraft-bedrock-experimental"
+- [stopAllSounds](#stopallsounds)
+::: moniker-end
 - [stopMusic](#stopmusic)
+::: moniker range="=minecraft-bedrock-experimental"
+- [stopSound](#stopsound)
+::: moniker-end
 
 ### **addExperience**
 `
@@ -245,7 +245,6 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **clearPropertyOverridesForEntity**
 `
 clearPropertyOverridesForEntity(targetEntity: Entity): void
@@ -257,15 +256,11 @@ For this player, removes all overrides of any Entity Properties on the target En
 - **targetEntity**: [*Entity*](Entity.md)
   
   The Entity whose Entity Property overrides are being cleared.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws if the entity is invalid.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **eatItem**
@@ -485,7 +480,6 @@ Notes:
   - An error will be thrown if fade is less than 0.0.
   - 
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **removePropertyOverrideForEntity**
 `
 removePropertyOverrideForEntity(targetEntity: Entity, identifier: string): void
@@ -500,9 +494,6 @@ For this player, removes the override on an Entity Property. This change is not 
 - **identifier**: *string*
   
   The Entity Property identifier.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
@@ -510,7 +501,6 @@ Notes:
   - Throws if the entity is invalid.
   - Throws if an invalid identifier is provided.
   - Throws if the provided value type does not match the property type.
-::: moniker-end
 
 ### **resetLevel**
 `
@@ -670,7 +660,6 @@ Notes:
 - This function can throw errors.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setPropertyOverrideForEntity**
 `
 setPropertyOverrideForEntity(targetEntity: Entity, identifier: string, value: boolean | number | string): void
@@ -688,9 +677,6 @@ For this player, overrides an Entity Property on the target Entity to the provid
 - **value**: *boolean* | *number* | *string*
   
   The override value. The provided type must be compatible with the type specified in the entity's definition. 
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
@@ -700,7 +686,6 @@ Notes:
   - Throws if the provided value type does not match the property type.
   - Throws if the provided value is outside the expected range (int, float properties).
   - Throws if the provided string value does not match the set of accepted enum values (enum properties)
-::: moniker-end
 
 ### **setSpawnPoint**
 `
@@ -789,6 +774,23 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **stopAllSounds**
+`
+stopAllSounds(): void
+`
+
+Stops all sounds from playing for this particular player.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
 ### **stopMusic**
 `
 stopMusic(): void
@@ -799,3 +801,25 @@ Stops any music tracks from playing for this particular player.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **stopSound**
+`
+stopSound(soundId: string): void
+`
+
+Stops a sound from playing for this particular player.
+
+#### **Parameters**
+- **soundId**: *string*
+  
+  Identifier of the sound.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end

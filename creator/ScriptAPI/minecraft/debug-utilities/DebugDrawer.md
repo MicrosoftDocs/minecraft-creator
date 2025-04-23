@@ -1,0 +1,46 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/debug-utilities.DebugDrawer Class
+description: Contents of the @minecraft/debug-utilities.DebugDrawer class.
+---
+# DebugDrawer Class
+
+Debug Drawing class used to allow adding and removing wireframe shapes in world space.
+
+## Methods
+- [addShape](#addshape)
+- [removeAll](#removeall)
+- [removeShape](#removeshape)
+
+### **addShape**
+`
+addShape(shape: DebugShape): void
+`
+
+Adds a new debug shape to the world.
+
+#### **Parameters**
+- **shape**: [*DebugShape*](DebugShape.md)
+  
+  The debug shape to be added. Should be of type DebugBox, DebugLine, DebugCircle, DebugSphere, DebugArrow or DebugText.
+
+### **removeAll**
+`
+removeAll(): void
+`
+
+Removes all debug shapes from the world.
+
+### **removeShape**
+`
+removeShape(shape: DebugShape): void
+`
+
+Removes an instance of a debug shape from the world. This is equivalent to calling remove on the shape itself.
+
+#### **Parameters**
+- **shape**: [*DebugShape*](DebugShape.md)

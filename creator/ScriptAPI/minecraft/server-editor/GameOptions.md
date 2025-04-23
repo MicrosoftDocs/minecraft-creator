@@ -141,6 +141,11 @@ Type: *boolean*
 
 Type: *boolean*
 
+### **locatorBar**
+`locatorBar?: boolean;`
+
+Type: *boolean*
+
 ### **maxCommandChainLength**
 `maxCommandChainLength?: number;`
 

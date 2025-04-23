@@ -18,12 +18,8 @@ Manager for Structure related APIs. Includes APIs for creating, getting, placing
 - [get](#get)
 - [getWorldStructureIds](#getworldstructureids)
 - [place](#place)
-::: moniker range="=minecraft-bedrock-experimental"
 - [placeJigsaw](#placejigsaw)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [placeJigsawStructure](#placejigsawstructure)
-::: moniker-end
 
 ### **createEmpty**
 `
@@ -149,7 +145,6 @@ Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidStructureError*](InvalidStructureError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **placeJigsaw**
 `
 placeJigsaw(pool: string, targetJigsaw: string, maxDepth: number, dimension: Dimension, location: Vector3, options?: JigsawPlaceOptions): BlockBoundingBox
@@ -178,17 +173,12 @@ Places a partial jigsaw structure in the world. This is useful for debugging con
   Optional settings to use when generating the jigsaw structure.
 
 **Returns** [*BlockBoundingBox*](BlockBoundingBox.md) - Returns a [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*PlaceJigsawError*](PlaceJigsawError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **placeJigsawStructure**
 `
 placeJigsawStructure(identifier: string, dimension: Dimension, location: Vector3, options?: JigsawStructurePlaceOptions): BlockBoundingBox
@@ -211,12 +201,8 @@ Places a jigsaw structure in the world.
   Optional settings to use when generating the jigsaw structure.
 
 **Returns** [*BlockBoundingBox*](BlockBoundingBox.md) - Returns a [*@minecraft/server.BlockBoundingBox*](../../../scriptapi/minecraft/server/BlockBoundingBox.md) object which represents the maximum bounds of the jigsaw structure.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*PlaceJigsawError*](PlaceJigsawError.md)
-::: moniker-end

@@ -57,6 +57,9 @@ Notes:
 - [find](#find)
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
+- [findLast](#findlast)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [firstEmptySlot](#firstemptyslot)
 ::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -65,9 +68,6 @@ Notes:
 - [getItem](#getitem)
 - [getSlot](#getslot)
 - [moveItem](#moveitem)
-::: moniker range="=minecraft-bedrock-experimental"
-- [reverseFind](#reversefind)
-::: moniker-end
 - [setItem](#setitem)
 - [swapItems](#swapitems)
 - [transferItem](#transferitem)
@@ -128,7 +128,7 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **find**
 `
-find(itemStack: ItemStack): number
+find(itemStack: ItemStack): number | undefined
 `
 
 Find the index of the first instance of an item inside the container
@@ -138,7 +138,30 @@ Find the index of the first instance of an item inside the container
   
   The item to find.
 
-**Returns** *number*
+**Returns** *number* | *undefined*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidContainerError*](InvalidContainerError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **findLast**
+`
+findLast(itemStack: ItemStack): number | undefined
+`
+
+Find the index of the last instance of an item inside the container
+
+#### **Parameters**
+- **itemStack**: [*ItemStack*](ItemStack.md)
+  
+  The item to find.
+
+**Returns** *number* | *undefined*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -151,12 +174,12 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **firstEmptySlot**
 `
-firstEmptySlot(): number
+firstEmptySlot(): number | undefined
 `
 
 Finds the index of the first empty slot inside the container
 
-**Returns** *number*
+**Returns** *number* | *undefined*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -169,12 +192,12 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **firstItem**
 `
-firstItem(): number
+firstItem(): number | undefined
 `
 
 Finds the index of the first item inside the container
 
-**Returns** *number*
+**Returns** *number* | *undefined*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
@@ -302,29 +325,6 @@ function moveBetweenContainers(
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/moveBetweenContainers.ts) code sandbox.
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **reverseFind**
-`
-reverseFind(itemStack: ItemStack): number
-`
-
-Find the index of the last instance of an item inside the container
-
-#### **Parameters**
-- **itemStack**: [*ItemStack*](ItemStack.md)
-  
-  The item to find.
-
-**Returns** *number*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-  
-Notes:
-- This function can throw errors.
-  - Throws [*InvalidContainerError*](InvalidContainerError.md)
-::: moniker-end
 
 ### **setItem**
 `

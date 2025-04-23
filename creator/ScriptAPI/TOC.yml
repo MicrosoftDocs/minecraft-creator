@@ -14,6 +14,22 @@
       href: minecraft/debug-utilities/minecraft-debug-utilities.md
     - name: minecraft/debug-utilities Changelog
       href: minecraft/debug-utilities/changelog.md
+    - name: DebugArrow
+      href: minecraft/debug-utilities/DebugArrow.md
+    - name: DebugBox
+      href: minecraft/debug-utilities/DebugBox.md
+    - name: DebugCircle
+      href: minecraft/debug-utilities/DebugCircle.md
+    - name: DebugDrawer
+      href: minecraft/debug-utilities/DebugDrawer.md
+    - name: DebugLine
+      href: minecraft/debug-utilities/DebugLine.md
+    - name: DebugShape
+      href: minecraft/debug-utilities/DebugShape.md
+    - name: DebugSphere
+      href: minecraft/debug-utilities/DebugSphere.md
+    - name: DebugText
+      href: minecraft/debug-utilities/DebugText.md
     - name: HandleCounts
       href: minecraft/debug-utilities/HandleCounts.md
     - name: PluginStats
@@ -120,6 +136,8 @@
       href: minecraft/server/PaletteColor.md
     - name: PlatformType
       href: minecraft/server/PlatformType.md
+    - name: PlayerInventoryType
+      href: minecraft/server/PlayerInventoryType.md
     - name: ScoreboardIdentityType
       href: minecraft/server/ScoreboardIdentityType.md
     - name: ScriptEventSource
@@ -166,8 +184,8 @@
       href: minecraft/server/BlockComponentEntityFallOnEvent.md
     - name: BlockComponentOnPlaceEvent
       href: minecraft/server/BlockComponentOnPlaceEvent.md
-    - name: BlockComponentPlayerDestroyEvent
-      href: minecraft/server/BlockComponentPlayerDestroyEvent.md
+    - name: BlockComponentPlayerBreakEvent
+      href: minecraft/server/BlockComponentPlayerBreakEvent.md
     - name: BlockComponentPlayerInteractEvent
       href: minecraft/server/BlockComponentPlayerInteractEvent.md
     - name: BlockComponentPlayerPlaceBeforeEvent
@@ -370,8 +388,6 @@
       href: minecraft/server/EntityIsTamedComponent.md
     - name: EntityItemComponent
       href: minecraft/server/EntityItemComponent.md
-    - name: EntityIterator
-      href: minecraft/server/EntityIterator.md
     - name: EntityLavaMovementComponent
       href: minecraft/server/EntityLavaMovementComponent.md
     - name: EntityLeashableComponent
@@ -454,8 +470,6 @@
       href: minecraft/server/EntityType.md
     - name: EntityTypeFamilyComponent
       href: minecraft/server/EntityTypeFamilyComponent.md
-    - name: EntityTypeIterator
-      href: minecraft/server/EntityTypeIterator.md
     - name: EntityTypes
       href: minecraft/server/EntityTypes.md
     - name: EntityUnderwaterMovementComponent
@@ -476,8 +490,6 @@
       href: minecraft/server/FeedItem.md
     - name: FeedItemEffect
       href: minecraft/server/FeedItemEffect.md
-    - name: FilterGroup
-      href: minecraft/server/FilterGroup.md
     - name: FluidContainer
       href: minecraft/server/FluidContainer.md
     - name: GameRuleChangeAfterEvent
@@ -612,6 +624,10 @@
       href: minecraft/server/PlayerGameModeChangeBeforeEvent.md
     - name: PlayerGameModeChangeBeforeEventSignal
       href: minecraft/server/PlayerGameModeChangeBeforeEventSignal.md
+    - name: PlayerHotbarSelectedSlotChangeAfterEvent
+      href: minecraft/server/PlayerHotbarSelectedSlotChangeAfterEvent.md
+    - name: PlayerHotbarSelectedSlotChangeAfterEventSignal
+      href: minecraft/server/PlayerHotbarSelectedSlotChangeAfterEventSignal.md
     - name: PlayerInputModeChangeAfterEvent
       href: minecraft/server/PlayerInputModeChangeAfterEvent.md
     - name: PlayerInputModeChangeAfterEventSignal
@@ -638,8 +654,10 @@
       href: minecraft/server/PlayerInteractWithEntityBeforeEvent.md
     - name: PlayerInteractWithEntityBeforeEventSignal
       href: minecraft/server/PlayerInteractWithEntityBeforeEventSignal.md
-    - name: PlayerIterator
-      href: minecraft/server/PlayerIterator.md
+    - name: PlayerInventoryItemChangeAfterEvent
+      href: minecraft/server/PlayerInventoryItemChangeAfterEvent.md
+    - name: PlayerInventoryItemChangeAfterEventSignal
+      href: minecraft/server/PlayerInventoryItemChangeAfterEventSignal.md
     - name: PlayerJoinAfterEvent
       href: minecraft/server/PlayerJoinAfterEvent.md
     - name: PlayerJoinAfterEventSignal
@@ -844,8 +862,12 @@
       href: minecraft/server/GreaterThanComparison.md
     - name: GreaterThanOrEqualsComparison
       href: minecraft/server/GreaterThanOrEqualsComparison.md
+    - name: HotbarEventOptions
+      href: minecraft/server/HotbarEventOptions.md
     - name: InputEventOptions
       href: minecraft/server/InputEventOptions.md
+    - name: InventoryItemEventOptions
+      href: minecraft/server/InventoryItemEventOptions.md
     - name: ItemCustomComponent
       href: minecraft/server/ItemCustomComponent.md
     - name: JigsawPlaceOptions
@@ -1032,6 +1054,8 @@
       href: minecraft/server-editor/WidgetGroupSelectionMode.md
     - name: WidgetMouseButtonActionType
       href: minecraft/server-editor/WidgetMouseButtonActionType.md
+    - name: WorldGeneratorType
+      href: minecraft/server-editor/WorldGeneratorType.md
     - name: BedrockEventSubscriptionCache
       href: minecraft/server-editor/BedrockEventSubscriptionCache.md
     - name: BlockIdentifierListObservableValidator
