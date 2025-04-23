@@ -343,13 +343,13 @@
           "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
             {
               "path": "/minecraft:item/components/minecraft:display_name/",
-              "content": "Sword Singer"
+              "content": "Sword Singer (as a Record)"
             }
           ],
           "/samples/custom_items/behavior_packs/custom_item/items/my_sword_turtle.json": [
             {
               "path": "/minecraft:item/components/minecraft:display_name/",
-              "content": "Turtle Sword"
+              "content": "Turtle Sword on Sand"
             }
           ],
           "/samples/custom_items/behavior_packs/custom_item/items/my_sword_weak.json": [
@@ -468,7 +468,7 @@
         {
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
-            "value": "Sword Singer"
+            "value": "Sword Singer (as a Record)"
           }
         }
       ],
@@ -476,7 +476,7 @@
         {
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
-            "value": "Turtle Sword"
+            "value": "Turtle Sword on Sand"
           }
         }
       ],

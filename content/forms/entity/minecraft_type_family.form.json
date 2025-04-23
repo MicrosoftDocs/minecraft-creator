@@ -397,6 +397,15 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "happy_ghast",
+                "mob"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/hoglin.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:type_family/",
@@ -1843,6 +1852,17 @@
               "aquatic",
               "guardian",
               "monster",
+              "mob"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "happy_ghast",
               "mob"
             ]
           }

@@ -64,6 +64,16 @@
           }
         ],
         "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+              "content": "equals"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/",
+              "content": "equals"
+            }
+          ],
           "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
             {
               "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
@@ -122,15 +132,13 @@
           }
         ],
         "samples": {
-          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
               "content": "self"
-            }
-          ],
-          "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+            },
             {
-              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
+              "path": "/minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/",
               "content": "self"
             }
           ]
@@ -140,22 +148,28 @@
         "id": "value",
         "title": "Value",
         "description": "(Required) An integer value.",
-        "dataType": 0
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/",
+              "content": 1
+            }
+          ]
+        }
       },
       {
         "id": "test",
         "title": "Test",
         "dataType": 2,
         "samples": {
-          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
               "content": "rider_count"
-            }
-          ],
-          "/samples/casual_creator/chill_dreams/2_dreams_come_true/behavior_packs/mamm_cds/entities/dream_turkey.json": [
+            },
             {
-              "path": "/minecraft:entity/component_groups/mamm_cds:turkey_adult/minecraft:spawn_entity/entities/filters/",
+              "path": "/minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/",
               "content": "rider_count"
             }
           ]
@@ -171,6 +185,35 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"rider_count\", \"value\": \"0\" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "equals",
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_passenger_mount/sequence/0/filters/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "equals",
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_passenger_dismount/sequence/0/filters/",
+          "content": {
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "equals",
+            "value": 0
+          }
         }
       ],
       "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [

@@ -26,7 +26,7 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 | non_breathe_blocks | *not set* | Array of strings | List of blocks this entity cannot breathe in, in addition to the selected items above. |  | 
 | suffocate_time | -20 | Integer number | Time in seconds between suffocation damage. | Player: `-1` | 
 | suffocateTime | *not set* | Decimal number |  | Bee: `-1` | 
-| total_supply | 15 | Integer number | Time in seconds the entity can hold its breath. | Armadillo: `15`, Dolphin: `240`, Tadpole: `8` | 
+| total_supply | 15 | Integer number | Time in seconds the entity can hold its breath. | Armadillo: `15`, Dolphin: `240`, Happy Ghast: `5` | 
 | totalSupply | *not set* | Decimal number |  | Allay: `15` | 
 
 ## Samples
@@ -131,6 +131,30 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 }
 ```
 
+#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
+
+At /minecraft:entity/component_groups/minecraft:adult/minecraft:breathable/: 
+
+```json
+"minecraft:breathable": {
+  "total_supply": 5,
+  "suffocate_time": 0,
+  "breathes_air": true,
+  "breathes_water": false
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:baby/minecraft:breathable/: 
+
+```json
+"minecraft:breathable": {
+  "total_supply": 5,
+  "suffocate_time": 0,
+  "breathes_air": true,
+  "breathes_water": true
+}
+```
+
 #### [Magma Cube](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/magma_cube.json)
 
 
@@ -139,29 +163,5 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
   "total_supply": 15,
   "suffocate_time": 0,
   "breathes_lava": true
-}
-```
-
-#### [Phantom](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/phantom.json)
-
-
-```json
-"minecraft:breathable": {
-  "total_supply": 15,
-  "suffocate_time": 0,
-  "breathes_air": true,
-  "breathes_water": false
-}
-```
-
-#### [Player](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/player.json)
-
-
-```json
-"minecraft:breathable": {
-  "total_supply": 15,
-  "suffocate_time": -1,
-  "inhale_time": 3.75,
-  "generates_bubbles": false
 }
 ```

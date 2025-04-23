@@ -20,7 +20,7 @@ This item can also be represented as a `Decimal number`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| duration | *not set* | Decimal number | How long in seconds will this fuel cook items for. Minimum value: 0.05. | My Sword Chuck: `3` | 
+| duration | *not set* | Decimal number | How long in seconds will this fuel cook items for. Value must be >= 0.05. | My Sword Chuck: `3` | 
 
 ## Samples
 

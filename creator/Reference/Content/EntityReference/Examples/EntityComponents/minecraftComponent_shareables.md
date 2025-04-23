@@ -981,6 +981,13 @@ List of items that the entity wants to share.
       "stored_in_inventory": true
     },
     {
+      "item": "minecraft:golden_rail",
+      "priority": 2,
+      "admire": true,
+      "pickup_limit": 1,
+      "stored_in_inventory": true
+    },
+    {
       "item": "minecraft:golden_helmet",
       "priority": 2,
       "admire": true,

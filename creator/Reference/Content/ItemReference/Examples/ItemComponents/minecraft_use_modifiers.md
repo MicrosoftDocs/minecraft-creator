@@ -40,3 +40,12 @@ Determines how long an item takes to use in combination with components such as 
   "movement_modifier": 0.35
 }
 ```
+
+#### [My Sword Shoot](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json)
+
+
+```json
+"minecraft:use_modifiers": {
+  "use_duration": 3
+}
+```

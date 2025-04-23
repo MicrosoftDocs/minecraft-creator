@@ -16,4 +16,4 @@ Contains non-component settings for a Biome.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| identifier | *not set* | String | The name of the Biome, used by other features like the '/locate biome' command. |  | 
+| identifier | *not set* | String | The name of the Biome, used by other features like the '/locate biome' command. Identifiers should only be lowercase. Value must be match patern "^[a-z0-9._%+-:]+$". |  | 

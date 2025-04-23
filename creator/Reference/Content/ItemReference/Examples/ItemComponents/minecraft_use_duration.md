@@ -9,6 +9,9 @@ ms.date: 02/11/2025
 
 # Items Documentation - minecraft:use_duration
 
+> [!IMPORTANT]
+> This type is now deprecated, and no longer in use in the latest versions of Minecraft.
+
 This component determines how long the item takes to use when used in combination with components like "shooter", "throwable", or "food".
 
 ## Alternate Simple Representations

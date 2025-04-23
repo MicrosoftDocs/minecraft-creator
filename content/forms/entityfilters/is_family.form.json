@@ -80,6 +80,16 @@
               "content": "=="
             }
           ],
+          "/vanilla/behavior_pack/entities/iron_golem.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:player_created/minecraft:behavior.hurt_by_target/entity_types/filters/all_of/0/",
+              "content": "not"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:player_created/minecraft:behavior.hurt_by_target/entity_types/filters/all_of/1/",
+              "content": "not"
+            }
+          ],
           "/vanilla/behavior_pack/entities/panda.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:panda_angry/minecraft:angry/broadcast_filters/",
@@ -454,7 +464,7 @@
           ],
           "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/entity_types/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/entity_types/filters/",
               "content": "llama"
             }
           ],
@@ -558,6 +568,10 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:lightning_immune/minecraft:damage_sensor/triggers/on_damage/filters/",
               "content": "lightning"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:leashable/presets/0/filter/",
+              "content": "happy_ghast"
             }
           ],
           "/vanilla/behavior_pack/entities/spider.json": [
@@ -568,12 +582,12 @@
           ],
           "/vanilla/behavior_pack/entities/trader_llama.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/filters/",
-              "content": "trader_llama"
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/entity_types/filters/",
+              "content": "llama"
             },
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/entity_types/filters/",
-              "content": "llama"
+              "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/filters/",
+              "content": "trader_llama"
             },
             {
               "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/all_of/0/",
@@ -1531,7 +1545,7 @@
           "content": {
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
+            "operator": "not",
             "value": "player"
           }
         },
@@ -1540,7 +1554,7 @@
           "content": {
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
+            "operator": "not",
             "value": "creeper"
           }
         },
@@ -1581,7 +1595,7 @@
           "content": {
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
+            "operator": "not",
             "value": "creeper"
           }
         },
@@ -1598,7 +1612,7 @@
           "content": {
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
+            "operator": "not",
             "value": "creeper"
           }
         },
@@ -1623,7 +1637,7 @@
           "content": {
             "test": "is_family",
             "subject": "other",
-            "operator": "!=",
+            "operator": "not",
             "value": "creeper"
           }
         }
@@ -1654,7 +1668,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/entity_types/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/entity_types/filters/",
           "content": {
             "test": "is_family",
             "subject": "other",
@@ -2232,6 +2246,14 @@
             "subject": "other",
             "value": "lightning"
           }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:leashable/presets/0/filter/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "happy_ghast"
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
@@ -2391,6 +2413,14 @@
           }
         },
         {
+          "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/entity_types/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "llama"
+          }
+        },
+        {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/filters/",
           "content": {
             "test": "is_family",
@@ -2405,14 +2435,6 @@
             "test": "is_family",
             "subject": "other",
             "value": "wolf"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/entity_types/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "llama"
           }
         },
         {

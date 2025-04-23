@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Client Biome Documentation - minecraft:color_grading_identifier
 
-[INTERNAL - WORK IN PROGRESS] Set the color_grading settings used during deferred rendering. Biomes without this component will have default color_grading settings.
+Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the "color_grading" directory. Biomes without this component will have default color_grading settings.
 
 
 ## Minecraft Color Grading Identifier Client Biome Properties

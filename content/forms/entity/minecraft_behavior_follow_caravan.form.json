@@ -14,13 +14,13 @@
         "samples": {
           "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/",
               "content": 10
             }
           ],
           "/vanilla/behavior_pack/entities/trader_llama.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/",
               "content": 10
             }
           ]
@@ -94,7 +94,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/",
               "content": {
                 "filters": {
                   "test": "is_family",
@@ -106,7 +106,7 @@
           ],
           "/vanilla/behavior_pack/entities/trader_llama.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/",
               "content": {
                 "filters": {
                   "test": "is_family",
@@ -127,13 +127,13 @@
         "samples": {
           "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/",
               "content": 2.1
             }
           ],
           "/vanilla/behavior_pack/entities/trader_llama.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/",
               "content": 2.1
             }
           ]
@@ -148,13 +148,13 @@
         "samples": {
           "/vanilla/behavior_pack/entities/llama.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/",
               "content": 3
             }
           ],
           "/vanilla/behavior_pack/entities/trader_llama.json": [
             {
-              "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+              "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/",
               "content": 3
             }
           ]
@@ -164,7 +164,7 @@
     "samples": {
       "/vanilla/behavior_pack/entities/llama.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+          "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/",
           "content": {
             "priority": 3,
             "speed_multiplier": 2.1,
@@ -181,7 +181,7 @@
       ],
       "/vanilla/behavior_pack/entities/trader_llama.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:behavior.follow_caravan/",
+          "path": "/minecraft:entity/component_groups/minecraft:llama_unleashed/minecraft:behavior.follow_caravan/",
           "content": {
             "priority": 3,
             "speed_multiplier": 2.1,

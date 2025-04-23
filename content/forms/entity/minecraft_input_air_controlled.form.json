@@ -10,15 +10,42 @@
         "title": "Backwards Movement Modifier",
         "description": "Modifies speed going backwards.",
         "defaultValue": 0.5,
-        "dataType": 3
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:input_air_controlled/",
+              "content": 0.5
+            }
+          ]
+        }
       },
       {
         "id": "strafe_speed_modifier",
         "title": "Strafe Speed Modifier",
         "description": "Modifies the strafe speed.",
         "defaultValue": 0.4,
-        "dataType": 3
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:input_air_controlled/",
+              "content": 1
+            }
+          ]
+        }
       }
-    ]
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:input_air_controlled/",
+          "content": {
+            "strafe_speed_modifier": 1,
+            "backwards_movement_modifier": 0.5
+          }
+        }
+      ]
+    }
   }
 }

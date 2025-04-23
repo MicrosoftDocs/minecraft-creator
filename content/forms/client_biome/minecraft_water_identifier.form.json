@@ -4,7 +4,7 @@
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:water_identifier",
     "title": "Minecraft Water Identifier Client Biome",
-    "description": "[INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering. Biomes without this component will have default water settings.",
+    "description": "Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the \"water\" directory. Biomes without this component will have default water settings.",
     "fields": [
       {
         "id": "water_identifier",

@@ -265,6 +265,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:nameable/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/hoglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:nameable/",

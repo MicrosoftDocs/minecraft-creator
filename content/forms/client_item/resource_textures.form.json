@@ -1,0 +1,10 @@
+{
+  "fields": [
+    {
+      "id": "textures",
+      "dataType": 24,
+      "title": "Textures",
+      "description": "A list of identified textures that this item uses."
+    }
+  ]
+}

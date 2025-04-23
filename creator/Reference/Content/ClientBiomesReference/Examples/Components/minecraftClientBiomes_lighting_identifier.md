@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Client Biome Documentation - minecraft:lighting_identifier
 
-[INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering. Biomes without this component will have default lighting settings.
+Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the "lighting" directory. Biomes without this component will have default lighting settings.
 
 
 ## Minecraft Lighting Identifier Client Biome Properties

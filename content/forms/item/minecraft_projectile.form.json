@@ -1,5 +1,10 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "projectile_entity",
+      "dataType": 2
+    }
+  ],
   "description": "Compels the item to shoot, similarly to an arrow. Items with minecraft:projectile can be shot from dispensers or used as ammunition for items with the minecraft:shooter item component. Additionally, this component sets the entity that is spawned for items that also contain the minecraft:throwable component",
   "samples": {
     "sample": [

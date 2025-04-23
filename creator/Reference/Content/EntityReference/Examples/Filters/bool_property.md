@@ -16,11 +16,11 @@ Returns true when the bool actor property matches the value provided.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | *not set* | String | (Required) The property name to look for | Bee: `"minecraft:has_nectar"` | 
+| domain | *not set* | String | (Required) The property name to look for | Bee: `"minecraft:has_nectar"`, Happy Ghast: `"minecraft:can_move"` | 
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bee: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Bee: `"bool_property"` | 
-| value | true | Boolean true/false | (Optional) true or false. |  | 
+| value | true | Boolean true/false | (Optional) true or false. | Happy Ghast: `true` | 
 
 ### Operator choices
 
@@ -91,5 +91,27 @@ At /minecraft:entity/events/find_hive_timeout/sequence/1/filters/:
 {
   "test": "bool_property",
   "domain": "minecraft:has_nectar"
+}
+```
+
+#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
+
+At /minecraft:entity/events/minecraft:on_player_detected_above/filters/: 
+
+```json
+{
+  "test": "bool_property",
+  "domain": "minecraft:can_move",
+  "value": true
+}
+```
+
+At /minecraft:entity/events/minecraft:on_no_player_detected_above/filters/: 
+
+```json
+{
+  "test": "bool_property",
+  "domain": "minecraft:can_move",
+  "value": false
 }
 ```

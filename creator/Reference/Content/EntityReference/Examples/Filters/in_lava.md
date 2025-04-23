@@ -19,10 +19,10 @@ Returns true when the subject entity is in lava.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Allay: `"=="` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Armor Stand: `"=="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Allay: `"self"` | 
 | test | *not set* | String |  | Allay: `"in_lava"` | 
-| value | true | Boolean true/false | (Optional) true or false. | Allay: `true` | 
+| value | true | Boolean true/false | (Optional) true or false. | Armor Stand: `true` | 
 
 ### Operator choices
 
@@ -71,19 +71,19 @@ At Short (using Defaults)..:
 ```json
 {
   "test": "in_lava",
-  "subject": "self",
-  "operator": "==",
-  "value": true
+  "subject": "self"
 }
 ```
 
-#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
+#### [Armor Stand](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armor_stand.json)
 
 
 ```json
 {
   "test": "in_lava",
-  "subject": "self"
+  "subject": "self",
+  "operator": "==",
+  "value": true
 }
 ```
 

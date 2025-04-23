@@ -74,6 +74,12 @@
               "path": "/minecraft:item/components/minecraft:use_modifiers/",
               "content": 4
             }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:use_modifiers/",
+              "content": 3
+            }
           ]
         }
       },
@@ -192,6 +198,14 @@
           "content": {
             "use_duration": 4,
             "movement_modifier": 0.35
+          }
+        }
+      ],
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:use_modifiers/",
+          "content": {
+            "use_duration": 3
           }
         }
       ]

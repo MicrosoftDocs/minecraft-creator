@@ -222,6 +222,17 @@
             "avoid_sun": false
           }
         }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:navigation.hover/",
+          "content": {
+            "can_path_over_water": true,
+            "avoid_damage_blocks": true,
+            "can_path_from_air": true,
+            "avoid_water": true
+          }
+        }
       ]
     }
   }

@@ -199,6 +199,14 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.tempt/",
+              "content": [
+                "minecraft:snowball"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/horse.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.tempt/",
@@ -568,6 +576,21 @@
             }
           ]
         }
+      },
+      {
+        "id": "on_tempt_end",
+        "title": "On Tempt End",
+        "dataType": 22,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.tempt/",
+              "content": {
+                "event": "minecraft:on_stop_tempting"
+              }
+            }
+          ]
+        }
       }
     ],
     "samples": {
@@ -762,6 +785,23 @@
             "items": [
               "wheat"
             ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.tempt/",
+          "content": {
+            "priority": 3,
+            "can_tempt_vertically": true,
+            "items": [
+              "minecraft:snowball"
+            ],
+            "speed_multiplier": 1.25,
+            "within_radius": 16,
+            "on_tempt_end": {
+              "event": "minecraft:on_stop_tempting"
+            }
           }
         }
       ],

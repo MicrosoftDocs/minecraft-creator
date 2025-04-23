@@ -130,6 +130,16 @@ At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:behavior
 }
 ```
 
+#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
+
+
+```json
+"minecraft:behavior.panic": {
+  "priority": 2,
+  "speed_multiplier": 2
+}
+```
+
 #### [Horse](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/horse.json)
 
 
@@ -147,15 +157,5 @@ At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:behavior
 "minecraft:behavior.panic": {
   "priority": 4,
   "speed_multiplier": 1.2
-}
-```
-
-#### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
-
-
-```json
-"minecraft:behavior.panic": {
-  "priority": 3,
-  "speed_multiplier": 1.25
 }
 ```

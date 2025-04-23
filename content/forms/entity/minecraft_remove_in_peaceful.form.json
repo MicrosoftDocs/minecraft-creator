@@ -1,0 +1,216 @@
+{
+  "id": "minecraft:remove_in_peaceful",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:remove_in_peaceful",
+    "title": "Remove In Peaceful",
+    "description": "Denotes entities that are not allowed to exist in \"Peaceful\" difficulty.",
+    "fields": [],
+    "samples": {
+      "/vanilla/behavior_pack/entities/blaze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/bogged.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creaking.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/drowned.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/elder_guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/enderman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/endermite.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/evocation_illager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/guardian.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/husk.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/magma_cube.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/phantom.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/pillager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/ravager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/silverfish.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/slime.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/stray.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vex.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/vindicator.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/warden.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/witch.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:remove_in_peaceful/",
+          "content": {}
+        }
+      ]
+    }
+  }
+}

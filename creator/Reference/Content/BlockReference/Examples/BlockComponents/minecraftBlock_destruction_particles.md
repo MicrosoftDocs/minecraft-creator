@@ -16,6 +16,7 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| particle_count | *not set* | Integer number | Optional, number of particles to spawn of destruction. Default is 100, maximum is 255 inclusively |  | 
 | texture | *not set* | String | The texture name used for the particle. |  | 
 | tint_method | *not set* | [Tint Method](#tint-method-choices) choices | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. |  | 
 

@@ -219,6 +219,12 @@
               "content": 2
             }
           ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.panic/",
+              "content": 2
+            }
+          ],
           "/vanilla/behavior_pack/entities/horse.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
@@ -241,12 +247,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
               "content": 4
-            }
-          ],
-          "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.panic/",
-              "content": 2
             }
           ]
         }
@@ -436,6 +436,15 @@
           "content": {
             "priority": 1,
             "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.panic/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 2
           }
         }
       ],

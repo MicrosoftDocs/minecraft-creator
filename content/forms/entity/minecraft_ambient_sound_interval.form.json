@@ -200,6 +200,16 @@
               "content": 80
             }
           ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:has_passengers/minecraft:ambient_sound_interval/",
+              "content": 30
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:has_no_passengers/minecraft:ambient_sound_interval/",
+              "content": 5
+            }
+          ],
           "/vanilla/behavior_pack/entities/ravager.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:raid_configuration/minecraft:ambient_sound_interval/",
@@ -307,6 +317,20 @@
           "path": "/minecraft:entity/component_groups/minecraft:fox_ambient_defending_target/minecraft:ambient_sound_interval/",
           "content": {
             "event_name": "mad"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:has_passengers/minecraft:ambient_sound_interval/",
+          "content": {
+            "value": 30
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:has_no_passengers/minecraft:ambient_sound_interval/",
+          "content": {
+            "value": 5
           }
         }
       ],

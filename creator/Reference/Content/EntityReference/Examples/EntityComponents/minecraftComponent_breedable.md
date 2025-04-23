@@ -379,7 +379,7 @@ Allows an entity to establish a way to get into the love state used for breeding
   "love_filters": {
     "test": "has_component",
     "subject": "self",
-    "operator": "!=",
+    "operator": "not",
     "value": "minecraft:attack_cooldown"
   },
   "breeds_with": {

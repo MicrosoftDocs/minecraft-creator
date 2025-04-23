@@ -48,6 +48,12 @@
     "description": "Sets the particles that will be used when block is destroyed. This component can be omitted.",
     "fields": [
       {
+        "id": "particle_count",
+        "title": "Particle Count",
+        "description": "Optional, number of particles to spawn of destruction. Default is 100, maximum is 255 inclusively",
+        "dataType": 0
+      },
+      {
         "id": "texture",
         "title": "Texture",
         "description": "The texture name used for the particle.",

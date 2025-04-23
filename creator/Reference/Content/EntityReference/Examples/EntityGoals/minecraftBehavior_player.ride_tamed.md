@@ -16,7 +16,7 @@ Allows the mob to be ridden by the player after being tamed.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Happy Ghast: `1` | 
 
 ## Samples
 
@@ -25,4 +25,13 @@ Allows the mob to be ridden by the player after being tamed.
 
 ```json
 "minecraft:behavior.player_ride_tamed": {}
+```
+
+#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
+
+
+```json
+"minecraft:behavior.player_ride_tamed": {
+  "priority": 1
+}
 ```

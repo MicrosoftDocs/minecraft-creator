@@ -5,9 +5,13 @@
   "fields": [
     {
       "id": "duration",
-      "title": "duration",
-      "description": "How long in seconds will this fuel cook items for. Minimum value: 0.05.",
-      "dataType": 3
+      "description": "How long in seconds will this fuel cook items for.",
+      "validity": [
+        {
+          "comparison": ">=",
+          "value": 0.05
+        }
+      ]
     }
   ],
   "generatedFromSchema_doNotEdit": {

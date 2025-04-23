@@ -1,5 +1,11 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "dispensable",
+      "dataType": 1,
+      "isDeprecated": true
+    }
+  ],
   "description": "Sets the wearable item component.",
   "note": "Here are the following equipment slots that can be set for the value of slot: slot.weapon.mainhand, slot.weapon.offhand, slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.hotbar, slot.inventory, slot.enderchest, slot.saddle, slot.armor, slot.chest, slot.equippable",
   "generated_doNotEdit": {
@@ -237,7 +243,6 @@
         {
           "path": "/minecraft:item/components/minecraft:wearable/",
           "content": {
-            "dispensable": true,
             "slot": "slot.armor.chest"
           }
         }
@@ -246,7 +251,6 @@
         {
           "path": "/minecraft:item/components/minecraft:wearable/",
           "content": {
-            "dispensable": true,
             "slot": "slot.armor.head"
           }
         }
@@ -255,7 +259,6 @@
         {
           "path": "/minecraft:item/components/minecraft:wearable/",
           "content": {
-            "dispensable": true,
             "slot": "slot.armor.feet"
           }
         }
@@ -264,7 +267,6 @@
         {
           "path": "/minecraft:item/components/minecraft:wearable/",
           "content": {
-            "dispensable": true,
             "slot": "slot.armor.head"
           }
         }
@@ -273,7 +275,6 @@
         {
           "path": "/minecraft:item/components/minecraft:wearable/",
           "content": {
-            "dispensable": true,
             "slot": "slot.armor.legs"
           }
         }
@@ -282,7 +283,6 @@
         {
           "path": "/minecraft:item/components/minecraft:wearable/",
           "content": {
-            "dispensable": true,
             "slot": "slot.weapon.offhand"
           }
         }

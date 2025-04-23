@@ -245,6 +245,12 @@
               "content": 0.85
             }
           ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:collision_box/",
+              "content": 0.95
+            }
+          ],
           "/vanilla/behavior_pack/entities/hoglin.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:collision_box/",
@@ -337,12 +343,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
               "content": 1.75
-            }
-          ],
-          "/vanilla/behavior_pack/entities/squid.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.95
             }
           ],
           "/vanilla/behavior_pack/entities/strider.json": [
@@ -604,6 +604,16 @@
               "content": 0.85
             }
           ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:collision_box/",
+              "content": 4
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:collision_box/",
+              "content": 0.95
+            }
+          ],
           "/vanilla/behavior_pack/entities/hoglin.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:hoglin_baby/minecraft:collision_box/",
@@ -656,12 +666,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
               "content": 1.9
-            }
-          ],
-          "/vanilla/behavior_pack/entities/squid.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.95
             }
           ],
           "/vanilla/behavior_pack/entities/tadpole.json": [
@@ -1121,6 +1125,22 @@
           "content": {
             "width": 0.85,
             "height": 0.85
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:collision_box/",
+          "content": {
+            "width": 4,
+            "height": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:collision_box/",
+          "content": {
+            "width": 0.95,
+            "height": 0.95
           }
         }
       ],

@@ -18,8 +18,14 @@
             {
               "id": "identifier",
               "title": "Identifier",
-              "description": "The name of the Biome, used by other features like the '/locate biome' command.",
-              "dataType": 2
+              "description": "The name of the Biome, used by other features like the '/locate biome' command. Identifiers should only be lowercase.",
+              "dataType": 2,
+              "validity": [
+                {
+                  "comparison": "pattern",
+                  "value": "^[a-z0-9._%+-:]+$"
+                }
+              ]
             }
           ]
         }
@@ -1652,6 +1658,13 @@
                           "dataType": 2
                         },
                         {
+                          "id": "targets",
+                          "title": "Targets",
+                          "description": "Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces.",
+                          "dataType": 17,
+                          "minLength": 1
+                        },
+                        {
                           "id": "amount",
                           "title": "Amount",
                           "description": "Noise value used to determine whether or not the replacement is attempted, similar to a percentage. Must be in the range (0.0, 1.0].",
@@ -1662,13 +1675,6 @@
                               "value": 1
                             }
                           ]
-                        },
-                        {
-                          "id": "targets",
-                          "title": "Targets",
-                          "description": "Biomes that are going to be replaced by the overriding biome.",
-                          "dataType": 17,
-                          "minLength": 1
                         },
                         {
                           "id": "noise_frequency_scale",
