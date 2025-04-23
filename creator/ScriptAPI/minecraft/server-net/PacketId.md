@@ -306,6 +306,8 @@ Represents the unique type of network packet.
 `ServerboundLoadingScreenPacket = "ServerboundLoadingScreenPacket"`
 ### **ServerPlayerPostMovePositionPacket**
 `ServerPlayerPostMovePositionPacket = "ServerPlayerPostMovePositionPacket"`
+### **ServerScriptDebugDrawerPacket**
+`ServerScriptDebugDrawerPacket = "ServerScriptDebugDrawerPacket"`
 ### **ServerSettingsRequestPacket**
 `ServerSettingsRequestPacket = "ServerSettingsRequestPacket"`
 ### **ServerSettingsResponsePacket**
@@ -336,8 +338,6 @@ Represents the unique type of network packet.
 `SetLastHurtByPacket = "SetLastHurtByPacket"`
 ### **SetLocalPlayerAsInitializedPacket**
 `SetLocalPlayerAsInitializedPacket = "SetLocalPlayerAsInitializedPacket"`
-### **SetMovementAuthorityPacket**
-`SetMovementAuthorityPacket = "SetMovementAuthorityPacket"`
 ### **SetPlayerGameTypePacket**
 `SetPlayerGameTypePacket = "SetPlayerGameTypePacket"`
 ### **SetPlayerInventoryOptionsPacket**

@@ -34,12 +34,15 @@ This function will be called when the block that this custom component is bound 
 
 Type: (arg0: [*BlockComponentOnPlaceEvent*](BlockComponentOnPlaceEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
 
-### **onPlayerDestroy**
-`onPlayerDestroy?: (arg0: BlockComponentPlayerDestroyEvent, arg1: CustomComponentParameters) => void;`
+::: moniker range="=minecraft-bedrock-experimental"
+### **onPlayerBreak**
+`onPlayerBreak?: (arg0: BlockComponentPlayerBreakEvent, arg1: CustomComponentParameters) => void;`
 
-This function will be called when a player destroys a specific block.
+Type: (arg0: [*BlockComponentPlayerBreakEvent*](BlockComponentPlayerBreakEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
 
-Type: (arg0: [*BlockComponentPlayerDestroyEvent*](BlockComponentPlayerDestroyEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **onPlayerInteract**
 `onPlayerInteract?: (arg0: BlockComponentPlayerInteractEvent, arg1: CustomComponentParameters) => void;`

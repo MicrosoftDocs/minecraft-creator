@@ -28,6 +28,16 @@ Contains debug utility functions.
 ## Available Versions
 - `1.0.0-beta`
 
+## Classes
+- [DebugArrow](DebugArrow.md)
+- [DebugBox](DebugBox.md)
+- [DebugCircle](DebugCircle.md)
+- [DebugDrawer](DebugDrawer.md)
+- [DebugLine](DebugLine.md)
+- [DebugShape](DebugShape.md)
+- [DebugSphere](DebugSphere.md)
+- [DebugText](DebugText.md)
+
 ## Interfaces
 - [HandleCounts](HandleCounts.md)
 - [PluginStats](PluginStats.md)
@@ -67,3 +77,12 @@ Disable watchdog slow and spike warnings per plugin.
   
 Notes:
 - This function can throw errors.
+
+## Objects
+  
+### **debugDrawer**
+`static read-only debugDrawer: DebugDrawer;`
+
+Debug Drawing class used to allow adding and removing wireframe shapes in world space.
+
+Type: [*DebugDrawer*](DebugDrawer.md)

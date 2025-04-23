@@ -1,0 +1,38 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/debug-utilities.DebugText Class
+description: Contents of the @minecraft/debug-utilities.DebugText class.
+---
+# DebugText Class
+
+## Extends
+- [*DebugShape*](DebugShape.md)
+
+A debug shape class that a text label. The text label automatically faces the screen.
+
+## Properties
+
+### **text**
+`text: string;`
+
+The text of the shape to display.
+
+Type: *string*
+
+## Methods
+- [constructor](#constructor)
+
+### **constructor**
+`
+new DebugText(location: minecraftserver.Vector3, text: string)
+`
+
+#### **Parameters**
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **text**: *string*
+
+**Returns** [*DebugText*](DebugText.md)

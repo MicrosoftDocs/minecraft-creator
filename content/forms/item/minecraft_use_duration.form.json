@@ -1,6 +1,7 @@
 {
   "fields": [],
   "scalarFieldUpgradeName": "value",
+  "isDeprecated": true,
   "generated_doNotEdit": {
     "title": "Use Duration",
     "description": "This component determines how long the item takes to use when used in combination with components like \"shooter\", \"throwable\", or \"food\".",

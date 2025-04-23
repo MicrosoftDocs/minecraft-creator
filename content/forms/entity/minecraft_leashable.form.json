@@ -41,19 +41,26 @@
     "description": "Allows this entity to be leashed and defines the conditions and events for this entity when is leashed.",
     "fields": [
       {
+        "id": "can_be_cut",
+        "title": "Can Be Cut",
+        "description": "If true, players can cut both incoming and outgoing leashes by using shears on the entity.",
+        "defaultValue": true,
+        "dataType": 1
+      },
+      {
         "id": "can_be_stolen",
         "title": "Can Be Stolen",
-        "description": "If true, players can leash this entity even if it is already leashed to another mob.",
-        "defaultValue": false,
+        "description": "If true, players can leash this entity even if it is already leashed to another entity.",
+        "defaultValue": true,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/llama.json": [
+          "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
               "path": "/minecraft:entity/components/minecraft:leashable/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/trader_llama.json": [
+          "/samples/addon_starter/complete/behavior_packs/aop_mobs/entities/frost_moose.behavior.json": [
             {
               "path": "/minecraft:entity/components/minecraft:leashable/",
               "content": true
@@ -67,7 +74,7 @@
         "description": "Event to call when this entity is leashed.",
         "dataType": 22,
         "samples": {
-          "/vanilla/behavior_pack/entities/ocelot.json": [
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/components/minecraft:leashable/",
               "content": {
@@ -76,7 +83,7 @@
               }
             }
           ],
-          "/vanilla/behavior_pack/entities/wolf.json": [
+          "/vanilla/behavior_pack/entities/ocelot.json": [
             {
               "path": "/minecraft:entity/components/minecraft:leashable/",
               "content": {
@@ -93,7 +100,16 @@
         "description": "Event to call when this entity is unleashed.",
         "dataType": 22,
         "samples": {
-          "/vanilla/behavior_pack/entities/ocelot.json": [
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:leashable/",
+              "content": {
+                "event": "minecraft:on_unleashed",
+                "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/llama.json": [
             {
               "path": "/minecraft:entity/components/minecraft:leashable/",
               "content": {
@@ -102,7 +118,7 @@
               }
             }
           ],
-          "/vanilla/behavior_pack/entities/wolf.json": [
+          "/vanilla/behavior_pack/entities/ocelot.json": [
             {
               "path": "/minecraft:entity/components/minecraft:leashable/",
               "content": {
@@ -116,7 +132,7 @@
       {
         "id": "on_unleash_interact_only",
         "title": "On Unleash Interact Only",
-        "description": "When set to true, \"on_unleash\" does not trigger when the entity gets unleashed for other reasons such as being stolen or the leash breaking.",
+        "description": "When set to true, \"on_unleash\" does not trigger when the entity gets unleashed for reasons other than the player directly interacting with it.",
         "defaultValue": false,
         "dataType": 1
       },
@@ -137,23 +153,75 @@
             {
               "id": "hard_distance",
               "title": "Hard Distance",
-              "description": "Distance in blocks at which the leash stiffens, restricting movement.",
-              "defaultValue": 6,
+              "description": "Distance (in blocks) over which the entity starts being pulled toward the leash holder with an spring-like force.",
+              "defaultValue": 7,
               "dataType": 3
             },
             {
               "id": "max_distance",
               "title": "Max Distance",
               "description": "Distance in blocks at which the leash breaks.",
-              "defaultValue": 10,
+              "defaultValue": 12,
+              "dataType": 3
+            },
+            {
+              "id": "rotation_adjustment",
+              "title": "Rotation Adjustment",
+              "description": "Adjusts the rotation at which the entity reaches equilibrium, when \"spring_type\" is set to \"dampened\" or \"quad_dampened\".",
+              "defaultValue": 0,
               "dataType": 3
             },
             {
               "id": "soft_distance",
               "title": "Soft Distance",
-              "description": "Distance in blocks at which the \"spring\" effect starts acting to keep this entity close to the entity that leashed it.",
+              "description": "Distance (in blocks) over which the entity begins pathfinding toward the leash holder, if able.",
               "defaultValue": 4,
               "dataType": 3
+            },
+            {
+              "id": "spring_type",
+              "title": "Spring Type",
+              "description": "Defines the type of spring-like force that pulls the entity towards its leash holder:\r\n- \"bouncy\": Simulates a highly elastic spring that never reaches an equilibrium if the leashed entity is suspended mid-air.\r\n- \"dampened\": Simulates a dampened spring attached to the front of the leashed entity's collision. It reaches an equilibrium if the entity is suspended mid-air and aligns with the movement direction.\r\n- \"quad_dampened\": Simulates four dampened springs connected to the center of each side of the entities' collisions. It reaches an equilibrium if the entity is suspended mid-air and gradually aligns with the leash holder over time.",
+              "defaultValue": "dampened",
+              "dataType": 2
+            }
+          ]
+        },
+        "samples": {
+          "/vanilla/behavior_pack/entities/boat.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:leashable/",
+              "content": [
+                {
+                  "filter": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "happy_ghast"
+                  },
+                  "spring_type": "quad_dampened",
+                  "rotation_adjustment": 90
+                },
+                {
+                  "rotation_adjustment": 90,
+                  "soft_distance": 2,
+                  "hard_distance": 4
+                }
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:leashable/",
+              "content": [
+                {
+                  "filter": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "happy_ghast"
+                  },
+                  "spring_type": "quad_dampened"
+                }
+              ]
             }
           ]
         }
@@ -161,109 +229,64 @@
       {
         "id": "soft_distance",
         "title": "Soft Distance",
-        "dataType": 7,
-        "samples": {
-          "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:leashable/",
-              "content": 4
-            }
-          ],
-          "/vanilla/behavior_pack/entities/armadillo.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:leashable/",
-              "content": 4
-            }
-          ]
-        }
+        "dataType": 7
       },
       {
         "id": "hard_distance",
         "title": "Hard Distance",
-        "dataType": 7,
-        "samples": {
-          "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:leashable/",
-              "content": 6
-            }
-          ],
-          "/vanilla/behavior_pack/entities/armadillo.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:leashable/",
-              "content": 6
-            }
-          ]
-        }
+        "dataType": 7
       },
       {
         "id": "max_distance",
         "title": "Max Distance",
-        "dataType": 7,
-        "samples": {
-          "/vanilla/behavior_pack/entities/allay.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:leashable/",
-              "content": 10
-            }
-          ],
-          "/vanilla/behavior_pack/entities/armadillo.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:leashable/",
-              "content": 10
-            }
-          ]
-        }
+        "dataType": 7
       }
     ],
     "samples": {
       "/vanilla/behavior_pack/entities/allay.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/armadillo.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/axolotl.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/bee.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/boat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
+            "presets": [
+              {
+                "filter": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "happy_ghast"
+                },
+                "spring_type": "quad_dampened",
+                "rotation_adjustment": 90
+              },
+              {
+                "rotation_adjustment": 90,
+                "soft_distance": 2,
+                "hard_distance": 4
+              }
+            ]
           }
         }
       ],
@@ -271,9 +294,16 @@
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
+            "presets": [
+              {
+                "filter": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "happy_ghast"
+                },
+                "spring_type": "quad_dampened"
+              }
+            ]
           }
         }
       ],
@@ -291,9 +321,20 @@
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
+            "presets": [
+              {
+                "filter": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "happy_ghast"
+                },
+                "spring_type": "quad_dampened",
+                "rotation_adjustment": 90
+              },
+              {
+                "rotation_adjustment": 90
+              }
+            ]
           }
         }
       ],
@@ -331,20 +372,23 @@
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
+            "presets": [
+              {
+                "filter": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "happy_ghast"
+                },
+                "spring_type": "quad_dampened"
+              }
+            ]
           }
         }
       ],
       "/vanilla/behavior_pack/entities/fox.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/frog.json": [
@@ -356,91 +400,92 @@
       "/vanilla/behavior_pack/entities/glow_squid.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/goat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
+            "on_unleash": {
+              "event": "minecraft:on_unleashed",
+              "target": "self"
+            },
+            "presets": [
+              {
+                "hard_distance": 10,
+                "max_distance": 14
+              }
+            ]
           }
         }
       ],
       "/vanilla/behavior_pack/entities/hoglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/horse.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
+            "presets": [
+              {
+                "filter": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "happy_ghast"
+                },
+                "spring_type": "quad_dampened"
+              }
+            ]
           }
         }
       ],
       "/vanilla/behavior_pack/entities/iron_golem.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/llama.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10,
-            "can_be_stolen": true
+            "on_leash": {
+              "event": "minecraft:on_leash",
+              "target": "self"
+            },
+            "on_unleash": {
+              "event": "minecraft:on_unleash",
+              "target": "self"
+            }
           }
         }
       ],
       "/vanilla/behavior_pack/entities/mooshroom.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/mule.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/ocelot.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10,
             "on_leash": {
               "event": "minecraft:on_leash",
               "target": "self"
@@ -455,60 +500,47 @@
       "/vanilla/behavior_pack/entities/parrot.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/pig.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/polar_bear.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/rabbit.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/sheep.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/skeleton_horse.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
+            "presets": [
+              {
+                "filter": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "happy_ghast"
+                },
+                "spring_type": "quad_dampened"
+              }
+            ]
           }
         }
       ],
@@ -516,50 +548,49 @@
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
+            "presets": [
+              {
+                "filter": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "happy_ghast"
+                },
+                "spring_type": "quad_dampened"
+              }
+            ]
           }
         }
       ],
       "/vanilla/behavior_pack/entities/snow_golem.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/squid.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/strider.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/trader_llama.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10,
-            "can_be_stolen": true
+            "on_leash": {
+              "event": "minecraft:on_leash",
+              "target": "self"
+            },
+            "on_unleash": {
+              "event": "minecraft:on_unleash",
+              "target": "self"
+            }
           }
         }
       ],
@@ -567,9 +598,6 @@
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10,
             "on_leash": {
               "event": "minecraft:on_leash",
               "target": "self"
@@ -584,20 +612,23 @@
       "/vanilla/behavior_pack/entities/zoglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
           "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
+            "presets": [
+              {
+                "filter": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "happy_ghast"
+                },
+                "spring_type": "quad_dampened"
+              }
+            ]
           }
         }
       ],

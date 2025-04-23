@@ -10,14 +10,16 @@ description: Changelog of the `@minecraft/server-ui` module
 # `@minecraft/server-ui` Changelog
 
 ## Version Changes
-- [2.0.0-beta](#200-beta)
+- [2.1.0-beta](#210-beta)
+- [2.0.0](#200)
 - [1.3.0](#130)
 - [1.2.0](#120)
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.0.0-beta
-#### Added module dependency `@minecraft/server@2.0.0-beta` 
+## 2.1.0-beta
+## 2.0.0
+#### Added module dependency `@minecraft/server@2.0.0` 
 #### Removed module dependency `@minecraft/server@1.3.0` 
 #### Changed *[`ActionFormData`](ActionFormData.md)*
 - Added function *[`divider`](ActionFormData.md#divider)*

@@ -10,7 +10,15 @@
         "title": "Find Players Only",
         "description": "Limits the search to Players only for all subsensors.",
         "defaultValue": false,
-        "dataType": 1
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:entity_sensor/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "relative_range",
@@ -178,32 +186,40 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/parrot.json": [
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:parrot_not_riding_player/minecraft:entity_sensor/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:entity_sensor/",
               "content": [
                 {
+                  "event": "minecraft:on_no_player_detected_above",
+                  "cooldown": 0,
+                  "y_offset": 4.5,
                   "range": [
                     2,
-                    2
+                    1.5
                   ],
+                  "minimum_count": 0,
+                  "maximum_count": 0,
                   "event_filters": {
-                    "all_of": [
-                      {
-                        "test": "is_riding",
-                        "subject": "self",
-                        "operator": "equals",
-                        "value": true
-                      },
-                      {
-                        "test": "has_component",
-                        "subject": "self",
-                        "operator": "equals",
-                        "value": "minecraft:behavior.look_at_player"
-                      }
-                    ]
-                  },
-                  "event": "minecraft:on_riding_player"
+                    "test": "is_riding",
+                    "subject": "other",
+                    "value": false
+                  }
+                },
+                {
+                  "event": "minecraft:on_player_detected_above",
+                  "cooldown": 0,
+                  "y_offset": 4.5,
+                  "range": [
+                    2,
+                    1.5
+                  ],
+                  "minimum_count": 1,
+                  "event_filters": {
+                    "test": "is_riding",
+                    "subject": "other",
+                    "value": false
+                  }
                 }
               ]
             }
@@ -302,6 +318,48 @@
                       ]
                     }
                   ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:entity_sensor/",
+          "content": {
+            "find_players_only": true,
+            "relative_range": false,
+            "subsensors": [
+              {
+                "event": "minecraft:on_no_player_detected_above",
+                "cooldown": 0,
+                "y_offset": 4.5,
+                "range": [
+                  2,
+                  1.5
+                ],
+                "minimum_count": 0,
+                "maximum_count": 0,
+                "event_filters": {
+                  "test": "is_riding",
+                  "subject": "other",
+                  "value": false
+                }
+              },
+              {
+                "event": "minecraft:on_player_detected_above",
+                "cooldown": 0,
+                "y_offset": 4.5,
+                "range": [
+                  2,
+                  1.5
+                ],
+                "minimum_count": 1,
+                "event_filters": {
+                  "test": "is_riding",
+                  "subject": "other",
+                  "value": false
                 }
               }
             ]

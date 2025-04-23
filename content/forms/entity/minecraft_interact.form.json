@@ -907,6 +907,174 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:unharnessed/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "black_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "blue_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "brown_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "cyan_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "gray_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "green_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "light_blue_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "light_gray_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "lime_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "magenta_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "orange_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "pink_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "purple_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "red_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "white_harness"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "other",
+                            "domain": "hand",
+                            "value": "yellow_harness"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_harnessed",
+                  "target": "self"
+                },
+                "use_item": true,
+                "equip_item_slot": "slot.armor.body",
+                "play_sounds": "armor.equip_generic",
+                "interact_text": "action.interact.equipharness"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "player"
+                      },
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_unharnessed",
+                  "target": "self"
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "slot.armor.body",
+                "drop_item_y_offset": 5,
+                "play_sounds": "armor.unequip_generic",
+                "interact_text": "action.interact.removeharness",
+                "vibration": "shear"
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/horse.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:interact/",
@@ -1050,8 +1218,7 @@
                         "value": "iron_ingot"
                       },
                       {
-                        "test": "is_missing_health",
-                        "value": true
+                        "test": "is_missing_health"
                       }
                     ]
                   }

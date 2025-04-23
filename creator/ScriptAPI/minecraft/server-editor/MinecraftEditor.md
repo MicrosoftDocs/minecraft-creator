@@ -34,3 +34,8 @@ Notes:
 Allows querying and modifying some properties of the simulation.
 
 Type: [*SimulationState*](SimulationState.md)
+
+### **worldGeneratorType**
+`read-only worldGeneratorType?: WorldGeneratorType;`
+
+Type: [*WorldGeneratorType*](WorldGeneratorType.md)

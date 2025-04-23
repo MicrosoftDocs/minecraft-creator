@@ -16,7 +16,7 @@ Defines a set of conditions under which an entity should take damage.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage_conditions | *not set* | Array of [Damage Conditions](#damage-conditions-item-type) items | List of damage conditions that when met can cause damage to the entity. | Allay: `[{"filters":{"test":"in_lava","subject":"self","operator":"==","value":true},"cause":"lava","damage_per_tick":4}]`, Armadillo: `[{"filters":{"test":"in_lava","subject":"self"},"cause":"lava","damage_per_tick":4}]` | 
+| damage_conditions | *not set* | Array of [Damage Conditions](#damage-conditions-item-type) items | List of damage conditions that when met can cause damage to the entity. | Allay: `[{"filters":{"test":"in_lava","subject":"self"},"cause":"lava","damage_per_tick":4}]` | 
 
 ## Damage Conditions item type
 List of damage conditions that when met can cause damage to the entity.
@@ -41,9 +41,7 @@ List of damage conditions that when met can cause damage to the entity.
     {
       "filters": {
         "test": "in_lava",
-        "subject": "self",
-        "operator": "==",
-        "value": true
+        "subject": "self"
       },
       "cause": "lava",
       "damage_per_tick": 4
@@ -52,7 +50,7 @@ List of damage conditions that when met can cause damage to the entity.
 }
 ```
 
-#### [Armadillo](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armadillo.json)
+#### [Armor Stand](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/armor_stand.json)
 
 
 ```json
@@ -61,7 +59,9 @@ List of damage conditions that when met can cause damage to the entity.
     {
       "filters": {
         "test": "in_lava",
-        "subject": "self"
+        "subject": "self",
+        "operator": "==",
+        "value": true
       },
       "cause": "lava",
       "damage_per_tick": 4

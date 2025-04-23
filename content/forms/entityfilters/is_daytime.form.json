@@ -231,6 +231,14 @@
             "value": true
           }
         }
+      ],
+      "/vanilla/behavior_pack/entities/iron_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.offer_flower/filters/",
+          "content": {
+            "test": "is_daytime"
+          }
+        }
       ]
     }
   }

@@ -222,6 +222,14 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.float/",
+          "content": {
+            "priority": 0
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/horse.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.float/",

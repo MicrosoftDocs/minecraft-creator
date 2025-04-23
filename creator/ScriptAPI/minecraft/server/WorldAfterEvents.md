@@ -319,6 +319,19 @@ Type: [*PlayerGameModeChangeAfterEventSignal*](PlayerGameModeChangeAfterEventSig
 Notes:
   - This property can be read in early-execution mode.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerHotbarSelectedSlotChange**
+`read-only playerHotbarSelectedSlotChange: PlayerHotbarSelectedSlotChangeAfterEventSignal;`
+
+Type: [*PlayerHotbarSelectedSlotChangeAfterEventSignal*](PlayerHotbarSelectedSlotChangeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **playerInputModeChange**
 `read-only playerInputModeChange: PlayerInputModeChangeAfterEventSignal;`
 
@@ -358,6 +371,19 @@ Type: [*PlayerInteractWithEntityAfterEventSignal*](PlayerInteractWithEntityAfter
 
 Notes:
   - This property can be read in early-execution mode.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerInventoryItemChange**
+`read-only playerInventoryItemChange: PlayerInventoryItemChangeAfterEventSignal;`
+
+Type: [*PlayerInventoryItemChangeAfterEventSignal*](PlayerInventoryItemChangeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
 
 ### **playerJoin**
 `read-only playerJoin: PlayerJoinAfterEventSignal;`

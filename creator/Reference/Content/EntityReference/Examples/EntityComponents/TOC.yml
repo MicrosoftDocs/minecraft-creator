@@ -32,6 +32,8 @@
   href: minecraftComponent_block_climber.md
 - name: minecraft:block_sensor
   href: minecraftComponent_block_sensor.md
+- name: minecraft:body_rotation_always_follows_head
+  href: minecraftComponent_body_rotation_always_follows_head.md
 - name: minecraft:body_rotation_axis_aligned
   href: minecraftComponent_body_rotation_axis_aligned.md
 - name: minecraft:body_rotation_blocked
@@ -210,6 +212,8 @@
   href: minecraftComponent_lava_movement.md
 - name: minecraft:leashable
   href: minecraftComponent_leashable.md
+- name: minecraft:leashable_to
+  href: minecraftComponent_leashable_to.md
 - name: minecraft:looked_at
   href: minecraftComponent_looked_at.md
 - name: minecraft:loot
@@ -296,6 +300,8 @@
   href: minecraftComponent_ravager_blocked.md
 - name: minecraft:reflect_projectiles
   href: minecraftComponent_reflect_projectiles.md
+- name: minecraft:remove_in_peaceful
+  href: minecraftComponent_remove_in_peaceful.md
 - name: minecraft:renders_when_invisible
   href: minecraftComponent_renders_when_invisible.md
 - name: minecraft:rideable

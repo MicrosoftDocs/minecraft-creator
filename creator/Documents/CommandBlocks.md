@@ -4,6 +4,7 @@ ms.author: v-jillheaden
 title: Getting Started with Command Blocks
 description: "An introduction to Minecraft: Bedrock Edition Command Blocks including how to access Command Blocks, how to create chains, and how to design a gameplay loop with Command Blocks."
 ms.service: minecraft-bedrock-edition
+ms.date: 04/17/2025
 ---
 
 # Getting Started with Command Blocks
@@ -44,15 +45,15 @@ Command blocks can only be obtained by running a command.
 1. Open up chat.
 1. Type the following command: `/give @p command_block`.
 
-You will see a single command block that been added to your inventory.
+You'll see a command block added to your inventory.
 
 ## How to use Command Blocks
 
-First, place the command block on the ground like any other block. Look at the command block from the side, and you may notice an arrow.
+Start by placing the command block on the ground like any other block. If you look at the command block from the side, you should see an arrow.
 
 ![Image showcasing CommandBlock Arrows pointing to the right of the image](Media/CommandBlocks/commandblockarrows.png)
 
-These arrows will always point towards the player when placing down. The arrows show the flow of execution. As shown in the image, the block on the left will execute first, followed by the middle command block, and finally the last block on the right will execute.
+These arrows always point in the direction of the player at the time the command block is placed. The arrows show the flow of execution. As shown in the image, the block on the left will execute first, followed by the middle command block, and finally the last block on the right will execute.
 
 Click the **Use** button (right-click on PC) to open up the command block user interface.
 

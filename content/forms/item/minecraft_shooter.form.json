@@ -1,5 +1,18 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "scale_power_by_draw_duration",
+      "required": true
+    },
+    {
+      "id": "max_draw_duration",
+      "required": true
+    },
+    {
+      "id": "charge_on_draw",
+      "required": true
+    }
+  ],
   "requires": [
     {
       "id": "minecraft:projectile",

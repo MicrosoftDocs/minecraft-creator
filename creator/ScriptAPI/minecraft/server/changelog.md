@@ -10,7 +10,8 @@ description: Changelog of the `@minecraft/server` module
 # `@minecraft/server` Changelog
 
 ## Version Changes
-- [2.0.0-beta](#200-beta)
+- [2.1.0-beta](#210-beta)
+- [1.19.0](#1190)
 - [1.18.0](#1180)
 - [1.17.0](#1170)
 - [1.16.0](#1160)
@@ -31,7 +32,7 @@ description: Changelog of the `@minecraft/server` module
 - [1.1.0](#110)
 - [1.0.0](#100)
 
-## 2.0.0-beta
+## 2.1.0-beta
 #### Added *[`AimAssistCategory`](AimAssistCategory.md)*
 #### Added *[`AimAssistCategorySettings`](AimAssistCategorySettings.md)*
 #### Added *[`AimAssistPreset`](AimAssistPreset.md)*
@@ -48,6 +49,8 @@ description: Changelog of the `@minecraft/server` module
 - Removed function *isValid*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
+#### Added *[`BlockComponentPlayerBreakEvent`](BlockComponentPlayerBreakEvent.md)*
+#### Removed *BlockComponentPlayerDestroyEvent*
 #### Changed *[`BlockComponentRegistry`](BlockComponentRegistry.md)*
 - Changed function *[`registerCustomComponent`](BlockComponentRegistry.md#registercustomcomponent)*
   - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
@@ -78,10 +81,10 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`isValid`](Container.md#isvalid)*
 - Added function *[`contains`](Container.md#contains)*
 - Added function *[`find`](Container.md#find)*
+- Added function *[`findLast`](Container.md#findlast)*
 - Added function *[`firstEmptySlot`](Container.md#firstemptyslot)*
 - Added function *[`firstItem`](Container.md#firstitem)*
 - Removed function *isValid*
-- Added function *[`reverseFind`](Container.md#reversefind)*
 #### Changed *[`ContainerSlot`](ContainerSlot.md)*
 - Added property *[`isValid`](ContainerSlot.md#isvalid)*
 - Removed function *isValid*
@@ -96,14 +99,14 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getBlockAbove`](Dimension.md#getblockabove)*
 - Added function *[`getBlockBelow`](Dimension.md#getblockbelow)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
-- Added function *[`placeFeature`](Dimension.md#placefeature)*
-- Added function *[`placeFeatureRule`](Dimension.md#placefeaturerule)*
 - Removed function *runCommandAsync*
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
   - Changed return type from [*Entity*](Entity.md) (throws exceptions) to *Entity* (throws exceptions)
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
   - Changed argument `location` type from [*Vector3*](Vector3.md) to *Vector3*
   - Added argument `options`
+- Added function *[`stopAllSounds`](Dimension.md#stopallsounds)*
+- Added function *[`stopSound`](Dimension.md#stopsound)*
 #### Changed *[`Effect`](Effect.md)*
 - Added property *[`isValid`](Effect.md#isvalid)*
 - Removed function *isValid*
@@ -137,7 +140,6 @@ description: Changelog of the `@minecraft/server` module
 #### Removed *EntityGroundOffsetComponent*
 #### Changed *[`EntityInventoryComponent`](EntityInventoryComponent.md)*
 - Changed type for *[`container`](EntityInventoryComponent.md#container)* from [*Container*](Container.md) to [*Container*](Container.md) (throws exceptions)
-#### Added *[`EntityIterator`](EntityIterator.md)*
 #### Changed *[`EntityMarkVariantComponent`](EntityMarkVariantComponent.md)*
 - Changed read-only flag for *[`value`](EntityMarkVariantComponent.md#value)* from `false` to `true`
 - Changed type for *[`value`](EntityMarkVariantComponent.md#value)* from *number* to *number* (throws exceptions)
@@ -151,12 +153,10 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntitySkinIdComponent`](EntitySkinIdComponent.md)*
 - Changed read-only flag for *[`value`](EntitySkinIdComponent.md#value)* from `false` to `true`
 - Changed type for *[`value`](EntitySkinIdComponent.md#value)* from *number* to *number* (throws exceptions)
-#### Added *[`EntityTypeIterator`](EntityTypeIterator.md)*
 #### Changed *[`EntityTypes`](EntityTypes.md)*
 - Changed function *[`get`](EntityTypes.md#get)*
   - Changed return type from [*EntityType*](EntityType.md) to *EntityType | undefined*
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
-#### Added *[`FilterGroup`](FilterGroup.md)*
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`locatorBar`](GameRules.md#locatorbar)*
 #### Removed *IButtonPushAfterEventSignal*
@@ -186,19 +186,21 @@ description: Changelog of the `@minecraft/server` module
 #### Removed *MinecraftDimensionTypes*
 #### Changed *[`Player`](Player.md)*
 - Added property *[`graphicsMode`](Player.md#graphicsmode)*
-- Added function *[`clearPropertyOverridesForEntity`](Player.md#clearpropertyoverridesforentity)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getAimAssist`](Player.md#getaimassist)*
 - Added function *[`isOp`](Player.md#isop)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
-- Added function *[`removePropertyOverrideForEntity`](Player.md#removepropertyoverrideforentity)*
 - Added function *[`setOp`](Player.md#setop)*
-- Added function *[`setPropertyOverrideForEntity`](Player.md#setpropertyoverrideforentity)*
+- Added function *[`stopAllSounds`](Player.md#stopallsounds)*
+- Added function *[`stopSound`](Player.md#stopsound)*
 #### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
+#### Added *[`PlayerHotbarSelectedSlotChangeAfterEvent`](PlayerHotbarSelectedSlotChangeAfterEvent.md)*
+#### Added *[`PlayerHotbarSelectedSlotChangeAfterEventSignal`](PlayerHotbarSelectedSlotChangeAfterEventSignal.md)*
 #### Changed *[`PlayerInputPermissions`](PlayerInputPermissions.md)*
 - Removed property *cameraEnabled*
 - Removed property *movementEnabled*
-#### Added *[`PlayerIterator`](PlayerIterator.md)*
+#### Added *[`PlayerInventoryItemChangeAfterEvent`](PlayerInventoryItemChangeAfterEvent.md)*
+#### Added *[`PlayerInventoryItemChangeAfterEventSignal`](PlayerInventoryItemChangeAfterEventSignal.md)*
 #### Changed *[`PlayerJoinAfterEventSignal`](PlayerJoinAfterEventSignal.md)*
 - Removed base class *IPlayerJoinAfterEventSignal*
 - Added function *[`subscribe`](PlayerJoinAfterEventSignal.md#subscribe)*
@@ -236,9 +238,6 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Structure`](Structure.md)*
 - Added property *[`isValid`](Structure.md#isvalid)*
 - Removed function *isValid*
-#### Changed *[`StructureManager`](StructureManager.md)*
-- Added function *[`placeJigsaw`](StructureManager.md#placejigsaw)*
-- Added function *[`placeJigsawStructure`](StructureManager.md#placejigsawstructure)*
 #### Changed *[`System`](System.md)*
 - Added property *[`beforeEvents`](System.md#beforeevents)*
 - Added property *[`isEditorWorld`](System.md#iseditorworld)*
@@ -248,14 +247,14 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`World`](World.md)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getAimAssist`](World.md#getaimassist)*
-- Added function *[`getDifficulty`](World.md#getdifficulty)*
 - Removed function *playSound*
-- Added function *[`setDifficulty`](World.md#setdifficulty)*
 - Added function *[`setDynamicProperties`](World.md#setdynamicproperties)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Removed property *itemUseOn*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
+- Added property *[`playerHotbarSelectedSlotChange`](WorldAfterEvents.md#playerhotbarselectedslotchange)*
+- Added property *[`playerInventoryItemChange`](WorldAfterEvents.md#playerinventoryitemchange)*
 - Removed property *worldInitialize*
 - Added property *[`worldLoad`](WorldAfterEvents.md#worldload)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
@@ -279,7 +278,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`CustomCommandParamType`](CustomCommandParamType.md)
 #### Added enum [`CustomCommandSource`](CustomCommandSource.md)
 #### Added enum [`CustomCommandStatus`](CustomCommandStatus.md)
-#### Added enum [`Difficulty`](Difficulty.md)
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Removed value `GroundOffset`
 - Added value `Npc`
@@ -287,15 +285,40 @@ description: Changelog of the `@minecraft/server` module
 - Removed value `suicide`
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
 - Added value `Body`
+#### Changed enum [`GameMode`](GameMode.md)
+- Removed value `adventure`
+- Added value `Adventure`
+- Removed value `creative`
+- Added value `Creative`
+- Removed value `spectator`
+- Added value `Spectator`
+- Removed value `survival`
+- Added value `Survival`
 #### Changed enum [`GameRule`](GameRule.md)
 - Added value `LocatorBar`
 #### Added enum [`GraphicsMode`](GraphicsMode.md)
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `Dyeable`
 - Added value `Potion`
+#### Added enum [`PlayerInventoryType`](PlayerInventoryType.md)
 #### Added enum [`TintMethod`](TintMethod.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `TicksPerDay`
+## 1.19.0
+#### Changed *[`Dimension`](Dimension.md)*
+- Added function *[`placeFeature`](Dimension.md#placefeature)*
+- Added function *[`placeFeatureRule`](Dimension.md#placefeaturerule)*
+#### Changed *[`Player`](Player.md)*
+- Added function *[`clearPropertyOverridesForEntity`](Player.md#clearpropertyoverridesforentity)*
+- Added function *[`removePropertyOverrideForEntity`](Player.md#removepropertyoverrideforentity)*
+- Added function *[`setPropertyOverrideForEntity`](Player.md#setpropertyoverrideforentity)*
+#### Changed *[`StructureManager`](StructureManager.md)*
+- Added function *[`placeJigsaw`](StructureManager.md#placejigsaw)*
+- Added function *[`placeJigsawStructure`](StructureManager.md#placejigsawstructure)*
+#### Changed *[`World`](World.md)*
+- Added function *[`getDifficulty`](World.md#getdifficulty)*
+- Added function *[`setDifficulty`](World.md#setdifficulty)*
+#### Added enum [`Difficulty`](Difficulty.md)
 ## 1.18.0
 #### Added module peer dependency *`@minecraft/vanilla-data`*
 #### Changed *[`Block`](Block.md)*

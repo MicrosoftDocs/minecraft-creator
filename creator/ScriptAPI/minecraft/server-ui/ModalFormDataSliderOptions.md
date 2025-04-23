@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server-ui.ModalFormDataSliderOptions Interface
 description: Contents of the @minecraft/server-ui.ModalFormDataSliderOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ModalFormDataSliderOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 An interface that is passed into {@link @minecraft/Server-ui.ModalFormData.slider} to provide additional options for the slider creation.
 

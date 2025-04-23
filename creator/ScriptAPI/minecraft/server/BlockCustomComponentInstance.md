@@ -17,3 +17,10 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [*BlockComponent*](BlockComponent.md)
 
 An instance of a custom component on a block.
+
+## Properties
+
+### **customComponentParameters**
+`read-only customComponentParameters: CustomComponentParameters;`
+
+Type: [*CustomComponentParameters*](CustomComponentParameters.md)

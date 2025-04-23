@@ -104,9 +104,7 @@ Type: [*StructureManager*](StructureManager.md)
 - [getAllPlayers](#getallplayers)
 - [getDay](#getday)
 - [getDefaultSpawnLocation](#getdefaultspawnlocation)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getDifficulty](#getdifficulty)
-::: moniker-end
 - [getDimension](#getdimension)
 - [getDynamicProperty](#getdynamicproperty)
 - [getDynamicPropertyIds](#getdynamicpropertyids)
@@ -120,9 +118,7 @@ Type: [*StructureManager*](StructureManager.md)
 - [sendMessage](#sendmessage)
 - [setAbsoluteTime](#setabsolutetime)
 - [setDefaultSpawnLocation](#setdefaultspawnlocation)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setDifficulty](#setdifficulty)
-::: moniker-end
 ::: moniker range="=minecraft-bedrock-experimental"
 - [setDynamicProperties](#setdynamicproperties)
 ::: moniker-end
@@ -213,7 +209,6 @@ Returns the default Overworld spawn location.
 
 **Returns** [*Vector3*](Vector3.md) - The default Overworld spawn location. By default, the Y coordinate is 32767, indicating a player's spawn height is not fixed and will be determined by surrounding blocks.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getDifficulty**
 `
 getDifficulty(): Difficulty
@@ -222,10 +217,6 @@ getDifficulty(): Difficulty
 Gets the difficulty from the world.
 
 **Returns** [*Difficulty*](Difficulty.md) - Returns the world difficulty.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **getDimension**
 `
@@ -526,7 +517,6 @@ Notes:
 - This function can throw errors.
   - Throws *Error*, [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setDifficulty**
 `
 setDifficulty(difficulty: Difficulty): void
@@ -538,13 +528,9 @@ Sets the worlds difficulty.
 - **difficulty**: [*Difficulty*](Difficulty.md)
   
   The difficulty we want to set the world to.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setDynamicProperties**

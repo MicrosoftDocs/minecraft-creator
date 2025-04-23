@@ -152,9 +152,15 @@
             {
               "path": "/minecraft:item/components/minecraft:block_placer/",
               "content": [
-                "dirt",
-                "grass",
-                "anvil"
+                {
+                  "name": "minecraft:dirt"
+                },
+                {
+                  "name": "minecraft:grass_block"
+                },
+                {
+                  "name": "minecraft:anvil"
+                }
               ]
             }
           ]
@@ -174,9 +180,15 @@
           "content": {
             "block": "minecraft:dirt",
             "use_on": [
-              "dirt",
-              "grass",
-              "anvil"
+              {
+                "name": "minecraft:dirt"
+              },
+              {
+                "name": "minecraft:grass_block"
+              },
+              {
+                "name": "minecraft:anvil"
+              }
             ]
           }
         }

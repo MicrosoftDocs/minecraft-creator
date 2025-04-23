@@ -93,6 +93,16 @@
               "path": "/minecraft:entity/events/find_hive_timeout/sequence/0/filters/",
               "content": "minecraft:has_nectar"
             }
+          ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:on_player_detected_above/filters/",
+              "content": "minecraft:can_move"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:on_no_player_detected_above/filters/",
+              "content": "minecraft:can_move"
+            }
           ]
         }
       },
@@ -216,7 +226,15 @@
         "title": "Value",
         "description": "(Optional) true or false.",
         "defaultValue": true,
-        "dataType": 1
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:on_player_detected_above/filters/",
+              "content": true
+            }
+          ]
+        }
       },
       {
         "id": "test",
@@ -269,6 +287,24 @@
           "content": {
             "test": "bool_property",
             "domain": "minecraft:has_nectar"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:on_player_detected_above/filters/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:can_move",
+            "value": true
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:on_no_player_detected_above/filters/",
+          "content": {
+            "test": "bool_property",
+            "domain": "minecraft:can_move",
+            "value": false
           }
         }
       ]

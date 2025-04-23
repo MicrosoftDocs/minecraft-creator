@@ -52,6 +52,16 @@
               "path": "/minecraft:entity/components/minecraft:home/",
               "content": 16
             }
+          ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:home/",
+              "content": 32
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:unharnessed/minecraft:home/",
+              "content": 64
+            }
           ]
         }
       },
@@ -121,6 +131,29 @@
           "content": {
             "restriction_type": "random_movement",
             "restriction_radius": 16
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:home/",
+          "content": {
+            "restriction_radius": 32,
+            "restriction_type": "random_movement"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:unharnessed/minecraft:home/",
+          "content": {
+            "restriction_radius": 64,
+            "restriction_type": "random_movement"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:home/",
+          "content": {
+            "restriction_radius": 32,
+            "restriction_type": "random_movement"
           }
         }
       ],

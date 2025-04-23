@@ -84,3 +84,12 @@ At /minecraft:entity/component_groups/minecraft:defending_fox/minecraft:environm
   "value": false
 }
 ```
+
+#### [Iron Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/iron_golem.json)
+
+
+```json
+{
+  "test": "is_daytime"
+}
+```

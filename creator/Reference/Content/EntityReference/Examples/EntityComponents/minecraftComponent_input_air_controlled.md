@@ -16,5 +16,17 @@ When configured as a rideable entity, the entity will be controlled using WASD c
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| backwards_movement_modifier | 0.5 | Decimal number | Modifies speed going backwards. |  | 
-| strafe_speed_modifier | 0.4 | Decimal number | Modifies the strafe speed. |  | 
+| backwards_movement_modifier | 0.5 | Decimal number | Modifies speed going backwards. | Happy Ghast: `0.5` | 
+| strafe_speed_modifier | 0.4 | Decimal number | Modifies the strafe speed. | Happy Ghast: `1` | 
+
+## Samples
+
+#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
+
+
+```json
+"minecraft:input_air_controlled": {
+  "strafe_speed_modifier": 1,
+  "backwards_movement_modifier": 0.5
+}
+```

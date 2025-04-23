@@ -25,6 +25,7 @@ ms.date: 02/11/2025
 | [minecraft:barter](EntityComponents/minecraftComponent_barter.md)| Enables the component to drop an item as a barter exchange. |
 | [minecraft:block_climber](EntityComponents/minecraftComponent_block_climber.md)| Allows the player to detect and manuever on the scaffolding block. |
 | [minecraft:block_sensor](EntityComponents/minecraftComponent_block_sensor.md)| Fires off a specified event when a block in the block list is broken within the sensor range. |
+| [minecraft:body_rotation_always_follows_head](EntityComponents/minecraftComponent_body_rotation_always_follows_head.md)| Causes the entity's body to always be automatically rotated to align with the entity's head. <br>Does not override the "minecraft:body_rotation_blocked" component. |
 | [minecraft:body_rotation_axis_aligned](EntityComponents/minecraftComponent_body_rotation_axis_aligned.md)| Causes the entity's body to automatically rotate to align with the nearest cardinal direction based on its current facing direction. <br>Combining this with the "minecraft:body_rotation_blocked" component will cause the entity to align to the nearest cardinal direction and remain fixed in that orientation, regardless of future changes in its facing direction. |
 | [minecraft:body_rotation_blocked](EntityComponents/minecraftComponent_body_rotation_blocked.md)| When set, the entity will no longer visually rotate their body to match their facing direction. |
 | [minecraft:boostable](EntityComponents/minecraftComponent_boostable.md)| Defines the conditions and behavior of a rideable entity's boost. |
@@ -114,6 +115,7 @@ ms.date: 02/11/2025
 | [minecraft:knockback_resistance](EntityComponents/minecraftComponent_knockback_resistance.md)| Compels an entity to resist being knocked backwards by a melee attack. |
 | [minecraft:lava_movement](EntityComponents/minecraftComponent_lava_movement.md)| Allows a custom movement speed across lava blocks. |
 | [minecraft:leashable](EntityComponents/minecraftComponent_leashable.md)| Describes how this mob can be leashed to other items |
+| [minecraft:leashable_to](EntityComponents/minecraftComponent_leashable_to.md)| Allows players to leash entities to this entity, retrieve those already leashed to it, or free them using shears. |
 | [minecraft:looked_at](EntityComponents/minecraftComponent_looked_at.md)| Defines the behavior when another entity looks at the owner entity. |
 | [minecraft:loot](EntityComponents/minecraftComponent_loot.md)| Sets the loot table for what items this entity drops upon death. |
 | [minecraft:managed_wandering_trader](EntityComponents/minecraftComponent_managed_wandering_trader.md)| Manages the entity's ability to trade. |
@@ -157,6 +159,7 @@ ms.date: 02/11/2025
 | [minecraft:rail_sensor](EntityComponents/minecraftComponent_rail_sensor.md)|  |
 | [minecraft:ravager_blocked](EntityComponents/minecraftComponent_ravager_blocked.md)| Defines the ravager's response to their melee attack being blocked. |
 | [minecraft:reflect_projectiles](EntityComponents/minecraftComponent_reflect_projectiles.md)| [EXPERIMENTAL] Allows an entity to reflect projectiles. |
+| [minecraft:remove_in_peaceful](EntityComponents/minecraftComponent_remove_in_peaceful.md)| Denotes entities that are not allowed to exist in "Peaceful" difficulty. |
 | [minecraft:renders_when_invisible](EntityComponents/minecraftComponent_renders_when_invisible.md)| When set, the entity will render even when invisible. |
 | [minecraft:rideable](EntityComponents/minecraftComponent_rideable.md)| This entity can be ridden |
 | [minecraft:scale](EntityComponents/minecraftComponent_scale.md)| Sets the entity's visual size. |

@@ -29,6 +29,16 @@
               "path": "/minecraft:entity/components/minecraft:flying_speed/",
               "content": 0.6
             }
+          ],
+          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:flying_speed/",
+              "content": 0.016
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:flying_speed/",
+              "content": 0.15
+            }
           ]
         }
       }
@@ -55,6 +65,26 @@
           "path": "/minecraft:entity/components/minecraft:flying_speed/",
           "content": {
             "value": 0.6
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:flying_speed/",
+          "content": {
+            "value": 0.016
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult_immobile/minecraft:flying_speed/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:flying_speed/",
+          "content": {
+            "value": 0.15
           }
         }
       ]

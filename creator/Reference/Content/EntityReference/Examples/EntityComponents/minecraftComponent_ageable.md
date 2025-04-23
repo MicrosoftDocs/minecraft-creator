@@ -244,14 +244,14 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
 }
 ```
 
-#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
+#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
 
 
 ```json
 "minecraft:ageable": {
   "duration": 1200,
   "feed_items": [
-    "crimson_fungus"
+    "minecraft:snowball"
   ],
   "grow_up": {
     "event": "minecraft:ageable_grow_up",
@@ -260,21 +260,14 @@ Adds a timer for the entity to grow up. It can be accelerated by giving the enti
 }
 ```
 
-#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
+#### [Hoglin](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/hoglin.json)
 
 
 ```json
 "minecraft:ageable": {
   "duration": 1200,
   "feed_items": [
-    {
-      "item": "wheat",
-      "growth": 0.1
-    },
-    {
-      "item": "hay_block",
-      "growth": 0.9
-    }
+    "crimson_fungus"
   ],
   "grow_up": {
     "event": "minecraft:ageable_grow_up",

@@ -141,34 +141,20 @@ At /minecraft:entity/component_groups/minecraft:fox_ambient_defending_target/min
 }
 ```
 
-#### [Ravager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ravager.json)
+#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
 
+At /minecraft:entity/component_groups/minecraft:has_passengers/minecraft:ambient_sound_interval/: 
 
 ```json
 "minecraft:ambient_sound_interval": {
-  "value": 4,
-  "range": 8,
-  "event_name": "ambient.in.raid"
+  "value": 30
 }
 ```
 
-#### [Warden](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/warden.json)
-
+At /minecraft:entity/component_groups/minecraft:has_no_passengers/minecraft:ambient_sound_interval/: 
 
 ```json
 "minecraft:ambient_sound_interval": {
-  "value": 2,
-  "range": 4,
-  "event_name": "ambient",
-  "event_names": [
-    {
-      "event_name": "angry",
-      "condition": "query.anger_level(this) >= 80"
-    },
-    {
-      "event_name": "agitated",
-      "condition": "query.anger_level(this) >= 40"
-    }
-  ]
+  "value": 5
 }
 ```
