@@ -41,6 +41,7 @@ The component can be defined as an object to gain control over more specific beh
 | culling | *not set* | String | Which block_culling .json file to use when rendering this block. |  | 
 | culling_layer | minecraft:culling_layer.undefined | String | A string that allows culling rule to group multiple blocks together when comparing them. When using the minecraft namespace, the only allowed culling layer identifiers are : "minecraft:culling_layer.undefined" or "minecraft:culling_layer.leaves". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character. Additionally, the feature is currently only usable behind the "upcoming creator features" toggle. |  | 
 | identifier | *not set* | String | The description identifier of the geometry to use to render this block. |  | 
+| uv_lock | *not set* | String | A Boolean locking UV orientation of all bones in the geometry, or an array of strings locking UV orientation of specific bones in the geometry. For performance reasons it is recommended to use the Boolean. |  | 
 
 ## Samples
 

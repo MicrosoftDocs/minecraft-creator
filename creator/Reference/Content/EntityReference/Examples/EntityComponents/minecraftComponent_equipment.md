@@ -142,3 +142,21 @@ At /minecraft:entity/component_groups/melee_unit/minecraft:equipment/:
   "table": "loot_tables/entities/wither_skeleton_gear.json"
 }
 ```
+
+#### [Zombie Pigman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_pigman.json)
+
+At /minecraft:entity/component_groups/minecraft:pig_zombie_adult/minecraft:equipment/: 
+
+```json
+"minecraft:equipment": {
+  "table": "loot_tables/entities/zombie_pigman_gear.json"
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:strider_jockey/minecraft:equipment/: 
+
+```json
+"minecraft:equipment": {
+  "table": "loot_tables/entities/zombified_piglin_rider_gear.json"
+}
+```

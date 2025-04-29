@@ -1,14 +1,15 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
 title: Introduction to Jigsaw Structures
 description: "An overview of Jigsaw Structures in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms-date: 04/29/2025
 ---
 
 # Introduction to Jigsaw Structures
 
-In this overview, you will be learning about Jigsaw Structures! Jigsaw Structures are large structures composed of multiple structures generated from templates. These structure templates contain Jigsaw Blocks which specify how each structure template should connect to one another when they are created in the game.
+In this overview, you will be learning about Jigsaw Structures. Jigsaw Structures are large structures composed of multiple structures generated from templates. These structure templates contain Jigsaw Blocks which specify how each structure template should connect to one another when they are created in the game.
 
 Jigsaw Structures can generate randomly in the world. Examples of Vanilla Jigsaw Structures include Trail Ruins and Trial Chambers.
 

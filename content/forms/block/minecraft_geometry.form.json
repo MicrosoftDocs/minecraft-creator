@@ -66,6 +66,12 @@
               "title": "Identifier",
               "description": "The description identifier of the geometry to use to render this block.",
               "dataType": 2
+            },
+            {
+              "id": "uv_lock",
+              "title": "Uv Lock",
+              "description": "A Boolean locking UV orientation of all bones in the geometry, or an array of strings locking UV orientation of specific bones in the geometry. For performance reasons it is recommended to use the Boolean.",
+              "dataType": 2
             }
           ]
         }
