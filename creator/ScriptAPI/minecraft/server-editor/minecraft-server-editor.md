@@ -63,7 +63,6 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [PaintCompletionState](PaintCompletionState.md)
 - [PaintMode](PaintMode.md)
 - [Plane](Plane.md)
-- [PlayerPermissionLevel](PlayerPermissionLevel.md)
 - [PlaytestSessionResult](PlaytestSessionResult.md)
 - [PrimitiveType](PrimitiveType.md)
 - [ProgressIndicatorPropertyItemVariant](ProgressIndicatorPropertyItemVariant.md)

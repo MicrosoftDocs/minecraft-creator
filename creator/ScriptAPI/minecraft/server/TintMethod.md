@@ -13,18 +13,34 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
+Tint logic applied to a block or part of a block. The color may vary when a world position is part of the context, as biomes often have an influence on the resulting tint.
+
 ## Constants
 ### **BirchFoliage**
 `BirchFoliage = "BirchFoliage"`
+
+Specifies a birch foliage tint method.
 ### **DefaultFoliage**
 `DefaultFoliage = "DefaultFoliage"`
+
+Specifies a default foliage tint method.
 ### **DryFoliage**
 `DryFoliage = "DryFoliage"`
+
+Specifies a dry foliage tint method.
 ### **EvergreenFoliage**
 `EvergreenFoliage = "EvergreenFoliage"`
+
+Specifies an evergreen foliage tint method.
 ### **Grass**
 `Grass = "Grass"`
+
+Specifies a grass tint method.
 ### **None**
 `None = "None"`
+
+Specifies no tint method, resulting in a white tint.
 ### **Water**
 `Water = "Water"`
+
+Specifies a water tint method.

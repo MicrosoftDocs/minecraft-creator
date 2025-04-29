@@ -182,9 +182,9 @@ Type: *boolean*
 Type: [*GamePublishSetting*](GamePublishSetting.md)
 
 ### **playerPermissions**
-`playerPermissions?: PlayerPermissionLevel;`
+`playerPermissions?: minecraftserver.PlayerPermissionLevel;`
 
-Type: [*PlayerPermissionLevel*](PlayerPermissionLevel.md)
+Type: [*@minecraft/server.PlayerPermissionLevel*](../../../scriptapi/minecraft/server/PlayerPermissionLevel.md)
 
 ### **randomTickSpeed**
 `randomTickSpeed?: number;`
