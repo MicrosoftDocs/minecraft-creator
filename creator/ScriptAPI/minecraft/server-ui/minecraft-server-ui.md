@@ -32,10 +32,6 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
 ## Available Versions
 - `2.1.0-beta`
 - `2.0.0`
-- `1.3.0`
-- `1.2.0`
-- `1.1.0`
-- `1.0.0`
 
 ## Enumerations
 - [FormCancelationReason](FormCancelationReason.md)

@@ -1,0 +1,129 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityLeashableComponent Class
+description: Contents of the @minecraft/server.EntityLeashableComponent class (Version 1.x.x).
+---
+# EntityLeashableComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityLeashableComponent.md).
+
+## Extends
+- [*EntityComponent*](EntityComponent.md)
+
+Allows the entity to be leashed. Defines the conditions and events for when an entity is leashed.
+
+## Properties
+
+### **canBeStolen**
+`read-only canBeStolen: boolean;`
+
+Returns true if another entity can 'steal' the leashed entity by attaching their own leash to it.
+
+Type: *boolean*
+
+Notes:
+  - This property can throw errors when used.
+
+### **hardDistance**
+`read-only hardDistance: number;`
+
+Distance in blocks at which the leash stiffens, restricting movement.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+### **isLeashed**
+`read-only isLeashed: boolean;`
+
+Returns true if the entity is leashed.
+
+Type: *boolean*
+
+Notes:
+  - This property can throw errors when used.
+
+### **leashHolder**
+`read-only leashHolder?: Entity;`
+
+Entity that is holding the leash.
+
+Type: [*Entity*](Entity.md)
+
+Notes:
+  - This property can throw errors when used.
+
+### **leashHolderEntityId**
+`read-only leashHolderEntityId?: string;`
+
+Identifier of entity that is holding the leash.
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+
+### **maxDistance**
+`read-only maxDistance: number;`
+
+Distance in blocks at which the leash breaks.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+### **softDistance**
+`read-only softDistance: number;`
+
+Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+## Methods
+- [leashTo](#leashto)
+- [unleash](#unleash)
+
+### **leashTo**
+`
+leashTo(leashHolder: Entity): void
+`
+
+Leashes this entity to another entity.
+
+#### **Parameters**
+- **leashHolder**: [*Entity*](Entity.md)
+  
+  The entity to leash this entity to.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws if the entity to leash to is over the max distance, and if the player is dead or in spectator mode.
+
+### **unleash**
+`
+unleash(): void
+`
+
+Unleashes this entity if it is leashed to another entity.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:leashable";`
+
+Type: *string*

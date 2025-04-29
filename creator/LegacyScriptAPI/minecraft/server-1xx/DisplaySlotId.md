@@ -1,0 +1,29 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.DisplaySlotId Enumeration
+description: Contents of the @minecraft/server.DisplaySlotId enumeration (Version 1.x.x).
+---
+# DisplaySlotId Enumeration (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/DisplaySlotId.md).
+
+Specifies a mechanism for displaying scores on a scoreboard.
+
+## Constants
+### **BelowName**
+`BelowName = "BelowName"`
+
+Displays the score below the player's name.
+### **List**
+`List = "List"`
+
+Displays the score as a list on the pause screen.
+### **Sidebar**
+`Sidebar = "Sidebar"`
+
+Displays the score on the side of the player's screen.

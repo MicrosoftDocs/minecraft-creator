@@ -1,0 +1,98 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.ItemCooldownComponent Class
+description: Contents of the @minecraft/server.ItemCooldownComponent class (Version 1.x.x).
+---
+# ItemCooldownComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/ItemCooldownComponent.md).
+
+## Extends
+- [*ItemComponent*](ItemComponent.md)
+
+When present on an item, this item has a cooldown effect when used by entities.
+
+## Properties
+
+### **cooldownCategory**
+`read-only cooldownCategory: string;`
+
+Represents the cooldown category that this item is associated with.
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+
+### **cooldownTicks**
+`read-only cooldownTicks: number;`
+
+Amount of time, in ticks, it will take this item to cooldown.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+## Methods
+- [getCooldownTicksRemaining](#getcooldownticksremaining)
+- [isCooldownCategory](#iscooldowncategory)
+- [startCooldown](#startcooldown)
+
+### **getCooldownTicksRemaining**
+`
+getCooldownTicksRemaining(player: Player): number
+`
+
+#### **Parameters**
+- **player**: [*Player*](Player.md)
+
+**Returns** *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+
+### **isCooldownCategory**
+`
+isCooldownCategory(cooldownCategory: string): boolean
+`
+
+Will return true if the item is the cooldown category passed in and false otherwise.
+
+#### **Parameters**
+- **cooldownCategory**: *string*
+  
+  The cooldown category that might be associated with this item.
+
+**Returns** *boolean* - True if the item is the given cooldown category.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+
+### **startCooldown**
+`
+startCooldown(player: Player): void
+`
+
+Starts a new cooldown period for this item.
+
+#### **Parameters**
+- **player**: [*Player*](Player.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:cooldown";`
+
+Type: *string*

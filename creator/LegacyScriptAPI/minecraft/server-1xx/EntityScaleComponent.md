@@ -1,0 +1,37 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityScaleComponent Class
+description: Contents of the @minecraft/server.EntityScaleComponent class (Version 1.x.x).
+---
+# EntityScaleComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityScaleComponent.md).
+
+## Extends
+- [*EntityComponent*](EntityComponent.md)
+
+Sets the entity's visual size.
+
+## Properties
+
+### **value**
+`value: number;`
+
+Current value for the scale property set on entities.
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:scale";`
+
+Type: *string*

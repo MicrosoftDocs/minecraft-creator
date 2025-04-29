@@ -1,0 +1,21 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.ButtonState Enumeration
+description: Contents of the @minecraft/server.ButtonState enumeration (Version 1.x.x).
+---
+# ButtonState Enumeration (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/ButtonState.md).
+
+The state of a button on a keyboard, controller, or touch interface.
+
+## Constants
+### **Pressed**
+`Pressed = "Pressed"`
+### **Released**
+`Released = "Released"`
