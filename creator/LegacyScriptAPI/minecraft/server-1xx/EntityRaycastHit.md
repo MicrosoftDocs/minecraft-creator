@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.EntityRaycastHit class (Version 1
 ---
 # EntityRaycastHit Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityRaycastHit.md).
+
 Contains information for entity raycast hit results.
 
 ## Properties

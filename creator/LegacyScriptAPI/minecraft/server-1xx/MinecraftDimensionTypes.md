@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.MinecraftDimensionTypes class (Ve
 > This documentation is for an older version of this module.
 
 > [!CAUTION]
-> This class is deprecated and will be removed in 2.1.0.
+> This class is deprecated and will be removed in 2.0.0.
 > 
 > Use {@link @minecraft/vanilla-data.MinecraftDimensionTypes} instead.
 
@@ -29,7 +29,7 @@ The Nether is a collection of biomes separate from the Overworld, including Soul
 Type: *string*
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 > 
 > Use {@link @minecraft/vanilla-data.MinecraftDimensionTypes} instead.
 
@@ -41,7 +41,7 @@ The overworld is a collection of biomes, including forests, plains, jungles, mou
 Type: *string*
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 > 
 > Use {@link @minecraft/vanilla-data.MinecraftDimensionTypes} instead.
 
@@ -53,6 +53,6 @@ The End is separate from the Overworld and the Nether and is generated whenever 
 Type: *string*
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 > 
 > Use {@link @minecraft/vanilla-data.MinecraftDimensionTypes} instead.

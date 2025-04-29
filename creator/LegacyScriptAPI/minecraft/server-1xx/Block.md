@@ -387,7 +387,7 @@ Returns true if this reference to a block is still valid (for example, if the bl
 **Returns** *boolean* - True if this block object is still working and valid.
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
 
 ### **liquidCanFlowFromDirection**
 `

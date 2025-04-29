@@ -24,7 +24,7 @@ Camera input permissions for the player. If set to true, input relating to camer
 Type: *boolean*
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 
 ### **movementEnabled**
 `movementEnabled: boolean;`
@@ -34,7 +34,7 @@ Movement input permissions for the player. If set to true input relating to move
 Type: *boolean*
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 
 ## Methods
 - [isPermissionCategoryEnabled](#ispermissioncategoryenabled)

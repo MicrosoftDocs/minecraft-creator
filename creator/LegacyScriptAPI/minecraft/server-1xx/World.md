@@ -418,7 +418,7 @@ Plays a sound for all players. DEPRECATED: Use Dimension.playSound.
 - **soundOptions**?: [*WorldSoundOptions*](WorldSoundOptions.md) = `null`
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
   
 Notes:
 - This function can't be called in read-only mode.

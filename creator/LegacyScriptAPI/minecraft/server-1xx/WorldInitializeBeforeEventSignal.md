@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.WorldInitializeBeforeEventSignal 
 > This documentation is for an older version of this module.
 
 > [!CAUTION]
-> This class is deprecated and will be removed in 2.1.0.
+> This class is deprecated and will be removed in 2.0.0.
 
 Manages callbacks that are run at the initialization of the scripting environment for a World. Do note that this event may run multiple times within a session in the case that the /reload command is used.
 
@@ -34,7 +34,7 @@ Adds a callback that will be called when the scripting environment is initialize
 **Returns** (arg0: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
   
 Notes:
 - This function can't be called in read-only mode.
@@ -51,7 +51,7 @@ Removes a callback from being called the scripting environment is initialized fo
 - **callback**: (arg0: [*WorldInitializeBeforeEvent*](WorldInitializeBeforeEvent.md)) => *void*
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
   
 Notes:
 - This function can't be called in read-only mode.

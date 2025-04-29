@@ -75,7 +75,7 @@ Returns true if the current reference to this screen display manager object is v
 **Returns** *boolean*
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
 
 ### **resetHudElements**
 `
@@ -83,7 +83,7 @@ resetHudElements(): void
 `
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
   
 Notes:
 - This function can't be called in read-only mode.

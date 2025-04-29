@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.ScoreboardObjectiveDisplayOptions
 ---
 # ScoreboardObjectiveDisplayOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/ScoreboardObjectiveDisplayOptions.md).
+
 Contains additional options for how a scoreboard should be displayed within its display slot.
 
 ## Properties

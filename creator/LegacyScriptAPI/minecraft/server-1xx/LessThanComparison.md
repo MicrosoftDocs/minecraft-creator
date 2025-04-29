@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.LessThanComparison class (Version
 ---
 # LessThanComparison Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/LessThanComparison.md).
+
 Less than operator.
 
 ## Properties

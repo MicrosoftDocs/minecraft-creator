@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.EntityDamageSource class (Version
 ---
 # EntityDamageSource Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityDamageSource.md).
+
 Provides information about how damage has been applied to an entity.
 
 ## Properties

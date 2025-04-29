@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.ItemUseOnAfterEvent class (Versio
 > This documentation is for an older version of this module.
 
 > [!CAUTION]
-> This class is deprecated and will be removed in 2.1.0.
+> This class is deprecated and will be removed in 2.0.0.
 > 
 > Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../legacyscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
 
@@ -32,7 +32,7 @@ The block that the item is used on.
 Type: [*Block*](Block.md)
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 > 
 > Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../legacyscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
 
@@ -44,7 +44,7 @@ The face of the block that an item is being used on.
 Type: [*Direction*](Direction.md)
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 > 
 > Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../legacyscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
 
@@ -56,7 +56,7 @@ Location relative to the bottom north-west corner of the block where the item is
 Type: [*Vector3*](Vector3.md)
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 > 
 > Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../legacyscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
 
@@ -68,7 +68,7 @@ This value will be true if the event was triggered on players initial interactio
 Type: *boolean*
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 > 
 > Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../legacyscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
 
@@ -80,7 +80,7 @@ The impacted item stack that is being used on a block.
 Type: [*ItemStack*](ItemStack.md)
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 > 
 > Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../legacyscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
 
@@ -92,6 +92,6 @@ Returns the source entity that triggered this item event.
 Type: [*Player*](Player.md)
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 > 
 > Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../legacyscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.

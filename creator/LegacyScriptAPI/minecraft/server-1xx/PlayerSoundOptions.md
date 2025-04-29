@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.PlayerSoundOptions class (Version
 ---
 # PlayerSoundOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/PlayerSoundOptions.md).
+
 Additional options for how a sound plays for a player.
 
 ## Properties

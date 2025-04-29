@@ -88,7 +88,7 @@ Returns whether the Structure is valid. The Structure may become invalid if it i
 **Returns** *boolean* - Returns whether the Structure is valid.
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
 
 ### **saveAs**
 `

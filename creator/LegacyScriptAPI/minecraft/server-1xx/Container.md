@@ -151,7 +151,7 @@ Returns whether a container object (or the entity or block that this container i
 **Returns** *boolean*
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
 
 ### **moveItem**
 `

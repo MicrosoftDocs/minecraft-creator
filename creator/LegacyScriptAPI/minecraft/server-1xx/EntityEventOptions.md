@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.EntityEventOptions class (Version
 ---
 # EntityEventOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityEventOptions.md).
+
 Contains optional parameters for registering an entity event.
 
 ## Properties

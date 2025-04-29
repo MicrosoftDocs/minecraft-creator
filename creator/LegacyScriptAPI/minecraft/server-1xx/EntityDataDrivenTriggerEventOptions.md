@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.EntityDataDrivenTriggerEventOptio
 ---
 # EntityDataDrivenTriggerEventOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityDataDrivenTriggerEventOptions.md).
+
 Specifies additional filters that are used in registering a data driven trigger event for entities.
 
 ## Properties

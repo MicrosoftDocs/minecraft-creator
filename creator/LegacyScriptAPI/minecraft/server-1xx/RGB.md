@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.RGB class (Version 1.x.x).
 ---
 # RGB Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/RGB.md).
+
 Represents a fully customizable color within Minecraft.
 
 ## Properties

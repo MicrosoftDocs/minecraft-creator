@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.BlockRaycastOptions class (Versio
 ---
 # BlockRaycastOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/BlockRaycastOptions.md).
+
 ## Extends
 - [*BlockFilter*](BlockFilter.md)
 

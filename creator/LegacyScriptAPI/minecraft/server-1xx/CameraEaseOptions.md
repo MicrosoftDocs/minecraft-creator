@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.CameraEaseOptions class (Version 
 ---
 # CameraEaseOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/CameraEaseOptions.md).
+
 Contains options associated with a camera ease operation.
 
 ## Properties

@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.BlockComponentPlayerDestroyEvent 
 > This documentation is for an older version of this module.
 
 > [!CAUTION]
-> This class is deprecated and will be removed in 2.1.0.
+> This class is deprecated and will be removed in 2.0.0.
 
 ## Extends
 - [*BlockEvent*](BlockEvent.md)
@@ -30,7 +30,7 @@ Returns permutation information about this block before it was destroyed.
 Type: [*BlockPermutation*](BlockPermutation.md)
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 
 ### **player**
 `read-only player?: Player;`
@@ -40,4 +40,4 @@ The player that destroyed this block.
 Type: [*Player*](Player.md)
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.

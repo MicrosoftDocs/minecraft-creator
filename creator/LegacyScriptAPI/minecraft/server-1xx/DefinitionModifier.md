@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.DefinitionModifier class (Version
 ---
 # DefinitionModifier Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/DefinitionModifier.md).
+
 Contains a set of updates to the component definition state of an entity.
 
 ## Properties

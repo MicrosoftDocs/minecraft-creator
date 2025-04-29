@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.ScriptEventMessageFilterOptions c
 ---
 # ScriptEventMessageFilterOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/ScriptEventMessageFilterOptions.md).
+
 Contains additional options for registering a script event event callback.
 
 ## Properties

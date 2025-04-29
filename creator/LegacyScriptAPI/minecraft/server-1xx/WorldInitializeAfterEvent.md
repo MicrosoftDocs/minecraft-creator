@@ -13,6 +13,6 @@ description: Contents of the @minecraft/server.WorldInitializeAfterEvent class (
 > This documentation is for an older version of this module.
 
 > [!CAUTION]
-> This class is deprecated and will be removed in 2.1.0.
+> This class is deprecated and will be removed in 2.0.0.
 
 Contains information and methods that can be used at the initialization of the scripting environment for a World.

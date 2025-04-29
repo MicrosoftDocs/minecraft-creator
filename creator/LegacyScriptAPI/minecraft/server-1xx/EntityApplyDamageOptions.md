@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.EntityApplyDamageOptions class (V
 ---
 # EntityApplyDamageOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityApplyDamageOptions.md).
+
 Additional descriptions and metadata for a damage event.
 
 ## Properties

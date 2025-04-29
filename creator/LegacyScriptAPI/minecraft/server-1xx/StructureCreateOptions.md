@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.StructureCreateOptions class (Ver
 ---
 # StructureCreateOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/StructureCreateOptions.md).
+
 Provides additional options for [*@minecraft/server.StructureManager.createFromWorld*](../../../legacyscriptapi/minecraft/server-1xx/StructureManager.md#createfromworld)
 
 ## Properties

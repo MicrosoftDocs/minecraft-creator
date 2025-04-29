@@ -63,4 +63,4 @@ Returns true if the ScoreboardIdentity reference is still valid.
 **Returns** *boolean*
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.

@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.BlockFilter class (Version 1.x.x)
 ---
 # BlockFilter Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/BlockFilter.md).
+
 Options to include or exclude blocks based on type, tag or permutation. If no include options are added it will select all blocks that are not rejected by the exclude options. If at least one include option is added the block must match one of the include options to not be rejected.
 
 ## Properties

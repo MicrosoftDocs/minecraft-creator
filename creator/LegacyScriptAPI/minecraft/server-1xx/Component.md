@@ -41,4 +41,4 @@ Returns whether the component is valid. A component is considered valid if its o
 **Returns** *boolean* - Whether the component is valid.
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.

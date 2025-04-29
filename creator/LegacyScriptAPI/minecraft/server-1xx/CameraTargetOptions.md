@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.CameraTargetOptions class (Versio
 ---
 # CameraTargetOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/CameraTargetOptions.md).
+
 Used to target an entity with a free camera.
 
 ## Properties

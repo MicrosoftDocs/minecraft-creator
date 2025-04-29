@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.ExplosionOptions class (Version 1
 ---
 # ExplosionOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/ExplosionOptions.md).
+
 Additional configuration options for the [*@minecraft/server.Dimension.createExplosion*](../../../legacyscriptapi/minecraft/server-1xx/Dimension.md#createexplosion) method.
 
 ## Properties

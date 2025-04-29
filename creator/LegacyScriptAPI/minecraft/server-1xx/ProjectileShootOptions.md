@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.ProjectileShootOptions class (Ver
 ---
 # ProjectileShootOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/ProjectileShootOptions.md).
+
 Optional arguments for @minecraft/server.EntityProjectileComponent.shoot.
 
 ## Properties

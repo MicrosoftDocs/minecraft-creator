@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.Vector3 class (Version 1.x.x).
 ---
 # Vector3 Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/Vector3.md).
+
 Contains a description of a vector.
 
 ## Properties

@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.BlockRaycastHit class (Version 1.
 ---
 # BlockRaycastHit Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/BlockRaycastHit.md).
+
 Contains information for block raycast hit results.
 
 ## Properties

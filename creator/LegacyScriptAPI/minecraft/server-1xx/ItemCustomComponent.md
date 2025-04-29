@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.ItemCustomComponent class (Versio
 ---
 # ItemCustomComponent Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/ItemCustomComponent.md).
+
 Contains a set of events that will be raised for an item. This object must be bound using the ItemComponentRegistry.
 
 ## Properties

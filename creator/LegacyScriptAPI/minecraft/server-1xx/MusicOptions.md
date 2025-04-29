@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.MusicOptions class (Version 1.x.x
 ---
 # MusicOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/MusicOptions.md).
+
 Additional configuration options for [*@minecraft/server.World.playMusic*](../../../legacyscriptapi/minecraft/server-1xx/World.md#playmusic)/[*@minecraft/server.World.queueMusic*](../../../legacyscriptapi/minecraft/server-1xx/World.md#queuemusic) methods.
 
 ## Properties

@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.RawMessageScore class (Version 1.
 ---
 # RawMessageScore Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/RawMessageScore.md).
+
 Provides a description of a score token to use within a raw message.
 
 ## Properties

@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.ILeverActionAfterEventSignal clas
 > This documentation is for an older version of this module.
 
 > [!CAUTION]
-> This class is deprecated and will be removed in 2.1.0.
+> This class is deprecated and will be removed in 2.0.0.
 
 ## Classes that extend ILeverActionAfterEventSignal
 - [*LeverActionAfterEventSignal*](LeverActionAfterEventSignal.md)
@@ -37,7 +37,7 @@ Subscribes to the event.
 **Returns** (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
   
 Notes:
 - This function can't be called in read-only mode.
@@ -53,7 +53,7 @@ Unsubscribes from the event.
 - **callback**: (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
   
 Notes:
 - This function can't be called in read-only mode.

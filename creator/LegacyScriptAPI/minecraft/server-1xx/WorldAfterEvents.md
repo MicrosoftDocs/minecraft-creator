@@ -231,7 +231,7 @@ This event fires when an item is used on a block by a player.
 Type: [*ItemUseOnAfterEventSignal*](ItemUseOnAfterEventSignal.md)
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 
 Notes:
   - This property can be read in early-execution mode.
@@ -448,7 +448,7 @@ This event fires when the script environment is initialized on a World.
 Type: [*WorldInitializeAfterEventSignal*](WorldInitializeAfterEventSignal.md)
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 
 Notes:
   - This property can be read in early-execution mode.

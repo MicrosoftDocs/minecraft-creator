@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.DimensionLocation class (Version 
 ---
 # DimensionLocation Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/DimensionLocation.md).
+
 An exact coordinate within the world, including its dimension and location.
 
 ## Properties

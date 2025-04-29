@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.CameraFixedBoomOptions class (Ver
 ---
 # CameraFixedBoomOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/CameraFixedBoomOptions.md).
+
 Options to control pivot points and offsets of the third person boom preset.
 
 ## Properties

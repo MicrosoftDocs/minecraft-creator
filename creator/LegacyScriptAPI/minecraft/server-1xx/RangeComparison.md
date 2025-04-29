@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.RangeComparison class (Version 1.
 ---
 # RangeComparison Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/RangeComparison.md).
+
 Operator represents a lower/upper bound structure for expressing a potential range of numbers.
 
 ## Properties

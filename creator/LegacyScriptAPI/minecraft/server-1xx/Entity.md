@@ -811,7 +811,7 @@ Returns whether the entity can be manipulated by script. A Player is considered 
 **Returns** *boolean* - Whether the entity is valid.
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
 
 ### **kill**
 `
@@ -988,7 +988,7 @@ runCommandAsync(commandString: string): Promise<CommandResult>
 **Returns** Promise&lt;[*CommandResult*](CommandResult.md)&gt;
 
 > [!CAUTION]
-> This function is deprecated and will be removed in 2.1.0.
+> This function is deprecated and will be removed in 2.0.0.
   
 Notes:
 - This function can throw errors.

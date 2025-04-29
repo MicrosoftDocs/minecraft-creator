@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.EntityGroundOffsetComponent class
 > This documentation is for an older version of this module.
 
 > [!CAUTION]
-> This class is deprecated and will be removed in 2.1.0.
+> This class is deprecated and will be removed in 2.0.0.
 
 ## Extends
 - [*EntityComponent*](EntityComponent.md)
@@ -30,7 +30,7 @@ Value of this particular ground offset. Note that this value is effectively read
 Type: *number*
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 
 Notes:
   - This property can't be edited in read-only mode.
@@ -43,4 +43,4 @@ Notes:
 Type: *string*
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.

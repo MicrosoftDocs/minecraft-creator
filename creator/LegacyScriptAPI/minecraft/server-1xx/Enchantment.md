@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.Enchantment class (Version 1.x.x)
 ---
 # Enchantment Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/Enchantment.md).
+
 This interface represents a specific leveled enchantment that is applied to an item.
 
 ## Properties

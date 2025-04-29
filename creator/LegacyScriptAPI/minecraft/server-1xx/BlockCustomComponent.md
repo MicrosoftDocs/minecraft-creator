@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.BlockCustomComponent class (Versi
 ---
 # BlockCustomComponent Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/BlockCustomComponent.md).
+
 Contains a set of events that will be raised for a block. This object must be bound using the BlockRegistry.
 
 ## Properties
@@ -42,7 +45,7 @@ This function will be called when a player destroys a specific block.
 Type: (arg0: [*BlockComponentPlayerDestroyEvent*](BlockComponentPlayerDestroyEvent.md)) => *void*
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 
 ### **onPlayerInteract**
 `onPlayerInteract?: (arg0: BlockComponentPlayerInteractEvent) => void;`

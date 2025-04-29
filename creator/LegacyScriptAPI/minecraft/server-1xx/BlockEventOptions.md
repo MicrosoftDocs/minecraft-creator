@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.BlockEventOptions class (Version 
 ---
 # BlockEventOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/BlockEventOptions.md).
+
 Contains optional parameters for registering a block event.
 
 ## Properties

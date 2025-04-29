@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.RawMessage class (Version 1.x.x).
 ---
 # RawMessage Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/RawMessage.md).
+
 Defines a JSON structure that is used for more flexible.
 
 ## Properties

@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.JigsawStructurePlaceOptions class
 ---
 # JigsawStructurePlaceOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/JigsawStructurePlaceOptions.md).
+
 Provides additional options for [*@minecraft/server.StructureManager.placeJigsawStructure*](../../../legacyscriptapi/minecraft/server-1xx/StructureManager.md#placejigsawstructure).
 
 ## Properties

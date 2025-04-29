@@ -13,7 +13,7 @@ description: Contents of the @minecraft/server.ItemUseOnBeforeEvent class (Versi
 > This documentation is for an older version of this module.
 
 > [!CAUTION]
-> This class is deprecated and will be removed in 2.1.0.
+> This class is deprecated and will be removed in 2.0.0.
 > 
 > Use [*@minecraft/server.PlayerInteractWithBlockBeforeEvent*](../../../legacyscriptapi/minecraft/server-1xx/PlayerInteractWithBlockBeforeEvent.md) instead.
 
@@ -32,6 +32,6 @@ If set to true, this will cancel the item use behavior.
 Type: *boolean*
 
 > [!CAUTION]
-> This property is deprecated and will be removed in 2.1.0.
+> This property is deprecated and will be removed in 2.0.0.
 > 
 > Use [*@minecraft/server.PlayerInteractWithBlockBeforeEvent*](../../../legacyscriptapi/minecraft/server-1xx/PlayerInteractWithBlockBeforeEvent.md) instead.

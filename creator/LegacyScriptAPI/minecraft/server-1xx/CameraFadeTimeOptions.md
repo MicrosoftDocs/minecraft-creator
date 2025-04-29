@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.CameraFadeTimeOptions class (Vers
 ---
 # CameraFadeTimeOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/CameraFadeTimeOptions.md).
+
 Contains timings for a fade transition.
 
 ## Properties

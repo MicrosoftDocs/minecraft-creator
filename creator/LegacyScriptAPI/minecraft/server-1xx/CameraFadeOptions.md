@@ -9,6 +9,9 @@ description: Contents of the @minecraft/server.CameraFadeOptions class (Version 
 ---
 # CameraFadeOptions Interface (Version 1.x.x)
 
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/CameraFadeOptions.md).
+
 Used to initiate a full-screen color fade.
 
 ## Properties
