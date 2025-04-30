@@ -202,8 +202,8 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
       "max_rider_count": 4,
       "position": [
         0,
-        3.8,
-        1.8
+        0.95,
+        0.45
       ],
       "third_person_camera_radius": 8,
       "camera_relax_distance_smoothing": 6
@@ -212,8 +212,8 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
       "min_rider_count": 1,
       "max_rider_count": 4,
       "position": [
-        -1.8,
-        3.8,
+        -0.45,
+        0.95,
         0
       ],
       "third_person_camera_radius": 8,
@@ -224,8 +224,8 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
       "max_rider_count": 4,
       "position": [
         0,
-        3.8,
-        -1.8
+        0.95,
+        -0.45
       ],
       "third_person_camera_radius": 8,
       "camera_relax_distance_smoothing": 6
@@ -234,8 +234,8 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
       "min_rider_count": 3,
       "max_rider_count": 4,
       "position": [
-        1.8,
-        3.8,
+        0.45,
+        0.95,
         0
       ],
       "third_person_camera_radius": 8,

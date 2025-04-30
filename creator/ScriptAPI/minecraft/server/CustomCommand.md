@@ -17,6 +17,13 @@ Define the custom command, including name, permissions, and parameters.
 
 ## Properties
 
+### **cheatsRequired**
+`cheatsRequired?: boolean;`
+
+Cheats must be enabled to run this command. Defaults to true.
+
+Type: *boolean*
+
 ### **description**
 `description: string;`
 

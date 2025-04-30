@@ -144,7 +144,7 @@
           "/vanilla/behavior_pack/entities/blaze.json": [
             {
               "path": "/minecraft:entity/component_groups/ranged_mode/minecraft:behavior.ranged_attack/",
-              "content": 16
+              "content": 48
             }
           ],
           "/vanilla/behavior_pack/entities/bogged.json": [
@@ -503,7 +503,7 @@
             "charge_shoot_trigger": 4,
             "attack_interval_min": 3,
             "attack_interval_max": 5,
-            "attack_radius": 16
+            "attack_radius": 48
           }
         }
       ],

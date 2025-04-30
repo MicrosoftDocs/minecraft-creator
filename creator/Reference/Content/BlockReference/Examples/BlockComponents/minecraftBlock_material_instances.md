@@ -48,6 +48,9 @@ The material instances for a block. Maps face or material_instance names in a ge
 | blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
 | alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
 | alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
+| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
+| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
+| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
 
 ## Down item type
 
@@ -69,6 +72,9 @@ The material instances for a block. Maps face or material_instance names in a ge
 | blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
 | alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
 | alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
+| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
+| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
+| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
 
 ## East item type
 
@@ -90,6 +96,9 @@ The material instances for a block. Maps face or material_instance names in a ge
 | blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
 | alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
 | alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
+| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
+| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
+| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
 
 ## Material Instance item type
 A material instance definition to map to a material instance in a geometry file. The material instance "*" will be used for any materials that don't have a match.
@@ -126,6 +135,9 @@ A material instance definition to map to a material instance in a geometry file.
 | blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
 | alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
 | alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
+| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
+| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
+| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
 
 ## South item type
 
@@ -147,6 +159,9 @@ A material instance definition to map to a material instance in a geometry file.
 | blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
 | alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
 | alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
+| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
+| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
+| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
 
 ## Up item type
 
@@ -168,6 +183,9 @@ A material instance definition to map to a material instance in a geometry file.
 | blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
 | alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
 | alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
+| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
+| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
+| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
 
 ## West item type
 
@@ -189,6 +207,9 @@ A material instance definition to map to a material instance in a geometry file.
 | blend | Blend | Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).|
 | alpha_test | Alpha Test | Used for a block like the monster spawner. Does not allow for translucency, only fully opaque or fully transparent textures. Also disabled backface culling.|
 | alpha_test_single_sided | Alpha Test (Single Sided) | Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling.|
+| blend_to_opaque | Blend to Opaque | Will blend like stained glass in the near render and turn opaque on the far render.|
+| alpha_test_to_opaque | Alpha Test to Opaque | Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling.|
+| alpha_test_single_sided_to_opaque | Alpha Test (Single Sided) to Opaque | Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling.|
 
 ## Samples
 

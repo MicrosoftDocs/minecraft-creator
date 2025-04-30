@@ -81,6 +81,11 @@
                       {
                         "test": "is_family",
                         "subject": "other",
+                        "value": "happy_ghast"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
                         "value": "horse"
                       },
                       {
@@ -354,6 +359,11 @@
                       "test": "is_family",
                       "subject": "other",
                       "value": "goat"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "happy_ghast"
                     },
                     {
                       "test": "is_family",

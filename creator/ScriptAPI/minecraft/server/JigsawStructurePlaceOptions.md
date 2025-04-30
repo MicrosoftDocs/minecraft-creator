@@ -33,3 +33,15 @@ Type: *boolean*
 Whether the jigsaw blocks should be kept when generating the structure. Defaults to false.
 
 Type: *boolean*
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **liquidSettings**
+`liquidSettings?: LiquidSettings;`
+
+Specifies how to handle waterloggable blocks overlapping with existing liquid. Defaults to `ApplyWaterlogging`.
+
+Type: [*LiquidSettings*](LiquidSettings.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end

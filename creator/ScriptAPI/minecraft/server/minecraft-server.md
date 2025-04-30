@@ -79,6 +79,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [InputPermissionCategory](InputPermissionCategory.md)
 - [ItemComponentTypes](ItemComponentTypes.md)
 - [ItemLockMode](ItemLockMode.md)
+- [LiquidSettings](LiquidSettings.md)
 - [LiquidType](LiquidType.md)
 - [MemoryTier](MemoryTier.md)
 - [MoonPhase](MoonPhase.md)
@@ -87,6 +88,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [PaletteColor](PaletteColor.md)
 - [PlatformType](PlatformType.md)
 - [PlayerInventoryType](PlayerInventoryType.md)
+- [PlayerPermissionLevel](PlayerPermissionLevel.md)
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
 - [ScriptEventSource](ScriptEventSource.md)
 - [SignSide](SignSide.md)
@@ -547,6 +549,8 @@ Type: *number*
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **TicksPerDay**
 `static read-only TicksPerDay = 24000;`
+
+How many times the server ticks in one in-game day.
 
 Type: *number*
 

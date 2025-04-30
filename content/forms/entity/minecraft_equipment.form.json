@@ -123,6 +123,16 @@
               "content": "loot_tables/entities/wither_skeleton_gear.json"
             }
           ],
+          "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_zombie_adult/minecraft:equipment/",
+              "content": "loot_tables/entities/zombie_pigman_gear.json"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_jockey/minecraft:equipment/",
+              "content": "loot_tables/entities/zombified_piglin_rider_gear.json"
+            }
+          ],
           "/vanilla/behavior_pack/entities/zombie.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:can_have_equipment/minecraft:equipment/",
@@ -253,6 +263,20 @@
           "path": "/minecraft:entity/components/minecraft:equipment/",
           "content": {
             "table": "loot_tables/entities/wither_skeleton_gear.json"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_pigman.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_zombie_adult/minecraft:equipment/",
+          "content": {
+            "table": "loot_tables/entities/zombie_pigman_gear.json"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:strider_jockey/minecraft:equipment/",
+          "content": {
+            "table": "loot_tables/entities/zombified_piglin_rider_gear.json"
           }
         }
       ],

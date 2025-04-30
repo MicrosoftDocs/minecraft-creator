@@ -39,6 +39,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 #### Values
 - `*`
 - `minecraft:dried_ghast`
+- `minecraft:lead`
 - `minecraft:stonecutter_cut_red_sandstone_slab`
 - `minecraft:stonecutter_cut_sandstone_slab`
 - `minecraft:cake`
@@ -864,7 +865,6 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:lantern`
 - `minecraft:lapis_block`
 - `minecraft:lapis_lazuli`
-- `minecraft:lead`
 - `minecraft:leather`
 - `minecraft:leather_boots`
 - `minecraft:leather_chestplate`
