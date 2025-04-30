@@ -40,6 +40,19 @@ Notes:
   - This property can throw errors when used.
 
 ::: moniker range="=minecraft-bedrock-experimental"
+### **commandPermissionLevel**
+`commandPermissionLevel: CommandPermissionLevel;`
+
+Type: [*CommandPermissionLevel*](CommandPermissionLevel.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can't be edited in read-only mode.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
 ### **graphicsMode**
 `read-only graphicsMode: GraphicsMode;`
 
@@ -139,6 +152,20 @@ Type: [*ScreenDisplay*](ScreenDisplay.md)
 Notes:
   - This property can throw errors when used.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **playerPermissionLevel**
+`read-only playerPermissionLevel: PlayerPermissionLevel;`
+
+Type: [*PlayerPermissionLevel*](PlayerPermissionLevel.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
 ### **selectedSlotIndex**
 `selectedSlotIndex: number;`
 
@@ -181,9 +208,6 @@ Notes:
 - [getItemCooldown](#getitemcooldown)
 - [getSpawnPoint](#getspawnpoint)
 - [getTotalXp](#gettotalxp)
-::: moniker range="=minecraft-bedrock-experimental"
-- [isOp](#isop)
-::: moniker-end
 - [playMusic](#playmusic)
 - [playSound](#playsound)
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -194,9 +218,6 @@ Notes:
 - [resetLevel](#resetlevel)
 - [sendMessage](#sendmessage)
 - [setGameMode](#setgamemode)
-::: moniker range="=minecraft-bedrock-experimental"
-- [setOp](#setop)
-::: moniker-end
 - [setPropertyOverrideForEntity](#setpropertyoverrideforentity)
 - [setSpawnPoint](#setspawnpoint)
 - [spawnParticle](#spawnparticle)
@@ -350,23 +371,6 @@ getTotalXp(): number
   
 Notes:
 - This function can throw errors.
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **isOp**
-`
-isOp(): boolean
-`
-
-Returns true if this player has operator-level permissions.
-
-**Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-  
-Notes:
-- This function can throw errors.
-::: moniker-end
 
 ### **playMusic**
 `
@@ -640,25 +644,6 @@ Sets a gamemode override for this player.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **setOp**
-`
-setOp(isOp: boolean): void
-`
-
-Will change the specified players permissions, and whether they are operator or not.
-
-#### **Parameters**
-- **isOp**: *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-::: moniker-end
 
 ### **setPropertyOverrideForEntity**
 `

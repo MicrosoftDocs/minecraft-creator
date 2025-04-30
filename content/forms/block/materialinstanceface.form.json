@@ -54,6 +54,21 @@
           "id": "alpha_test_single_sided",
           "title": "Alpha Test (Single Sided)",
           "description": "Used for a block like the (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also enables backface culling."
+        },
+        {
+          "id": "blend_to_opaque",
+          "title": "Blend to Opaque",
+          "description": "Will blend like stained glass in the near render and turn opaque on the far render."
+        },
+        {
+          "id": "alpha_test_to_opaque",
+          "title": "Alpha Test to Opaque",
+          "description": "Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling."
+        },
+        {
+          "id": "alpha_test_single_sided_to_opaque",
+          "title": "Alpha Test (Single Sided) to Opaque",
+          "description": "Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling."
         }
       ],
       "samples": {

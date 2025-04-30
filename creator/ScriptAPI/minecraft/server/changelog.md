@@ -185,12 +185,12 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Removed *MinecraftDimensionTypes*
 #### Changed *[`Player`](Player.md)*
+- Added property *[`commandPermissionLevel`](Player.md#commandpermissionlevel)*
 - Added property *[`graphicsMode`](Player.md#graphicsmode)*
+- Added property *[`playerPermissionLevel`](Player.md#playerpermissionlevel)*
 - Added function *[`eatItem`](Player.md#eatitem)*
 - Added function *[`getAimAssist`](Player.md#getaimassist)*
-- Added function *[`isOp`](Player.md#isop)*
 - Added function *[`postClientMessage`](Player.md#postclientmessage)*
-- Added function *[`setOp`](Player.md#setop)*
 - Added function *[`stopAllSounds`](Player.md#stopallsounds)*
 - Added function *[`stopSound`](Player.md#stopsound)*
 #### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
@@ -300,7 +300,9 @@ description: Changelog of the `@minecraft/server` module
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `Dyeable`
 - Added value `Potion`
+#### Added enum [`LiquidSettings`](LiquidSettings.md)
 #### Added enum [`PlayerInventoryType`](PlayerInventoryType.md)
+#### Added enum [`PlayerPermissionLevel`](PlayerPermissionLevel.md)
 #### Added enum [`TintMethod`](TintMethod.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `TicksPerDay`

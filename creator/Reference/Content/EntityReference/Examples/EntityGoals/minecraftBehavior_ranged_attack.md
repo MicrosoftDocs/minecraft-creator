@@ -19,7 +19,7 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
 | attack_interval | 0 | Decimal number | Alternative to "attack_interval_min" & "attack_interval_max". Consistent reload-time (in seconds), when not using a charged shot. Does not scale with target-distance. | Bogged: `3.5`, Snow Golem: `1` | 
 | attack_interval_max | 0 | Decimal number | Maximum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance. | Blaze: `5`, Drowned: `3`, Piglin: `1` | 
 | attack_interval_min | 0 | Decimal number | Minimum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance. | Blaze: `3`, Drowned: `1`, Bow Turret: `2.4` | 
-| attack_radius | 0 | Decimal number | Minimum distance to target before this entity will attempt to shoot. | Blaze: `16`, Bogged: `15`, Drowned: `10` | 
+| attack_radius | 0 | Decimal number | Minimum distance to target before this entity will attempt to shoot. | Blaze: `48`, Bogged: `15`, Drowned: `10` | 
 | attack_radius_min | 0 | Decimal number | Minimum distance the target can be for this mob to fire. If the target is closer, this mob will move first before firing | Piglin: `4` | 
 | burst_interval | 0 | Decimal number | Time (in seconds) between each individual shot when firing a burst of shots from a charged up attack. | Blaze: `0.3` | 
 | burst_shots | 1 | Integer number | Number of shots fired every time the attacking entity uses a charged up attack. | Blaze: `3` | 
@@ -48,7 +48,7 @@ Allows an entity to attack by using ranged shots. "charge_shoot_trigger" must be
   "charge_shoot_trigger": 4,
   "attack_interval_min": 3,
   "attack_interval_max": 5,
-  "attack_radius": 16
+  "attack_radius": 48
 }
 ```
 

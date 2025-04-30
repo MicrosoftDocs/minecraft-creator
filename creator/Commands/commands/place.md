@@ -21,9 +21,9 @@ Places a jigsaw structure, feature, or feature rule in the world.
 </table>
 
 ## Usage
-### `/place structure <structure: JigsawStructure> [pos: x y z] [ignoreStartHeight: Boolean] [keepJigsaws: Boolean] [includeEntities: Boolean]`
+### `/place structure <structure: JigsawStructure> [pos: x y z] [ignoreStartHeight: Boolean] [keepJigsaws: Boolean] [includeEntities: Boolean] [liquidSettings: LiquidSettings]`
 
-### `/place jigsaw <pool: filepath> <jigsawTarget: string> <maxDepth: int> [pos: x y z] [keepJigsaws: Boolean] [includeEntities: Boolean]`
+### `/place jigsaw <pool: filepath> <jigsawTarget: string> <maxDepth: int> [pos: x y z] [keepJigsaws: Boolean] [includeEntities: Boolean] [liquidSettings: LiquidSettings]`
 
 ### `/place feature <feature: features> [position: x y z]`
 
@@ -36,6 +36,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `includeEntities`: [Boolean](../enums/Boolean.md)
 - `jigsawTarget`: string
 - `keepJigsaws`: [Boolean](../enums/Boolean.md)
+- `liquidSettings`: LiquidSettings
 - `maxDepth`: int
 - `pool`: filepath
 - `pos: x y z`: position
@@ -458,3 +459,9 @@ Places a jigsaw structure, feature, or feature rule in the world.
 #### Values
 - `minecraft:trail_ruins`
 - `minecraft:trial_chambers`
+
+### `LiquidSettings`
+
+#### Values
+- `apply_waterlogging`
+- `ignore_waterlogging`

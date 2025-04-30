@@ -122,6 +122,8 @@
       href: minecraft/server/ItemComponentTypes.md
     - name: ItemLockMode
       href: minecraft/server/ItemLockMode.md
+    - name: LiquidSettings
+      href: minecraft/server/LiquidSettings.md
     - name: LiquidType
       href: minecraft/server/LiquidType.md
     - name: MemoryTier
@@ -138,6 +140,8 @@
       href: minecraft/server/PlatformType.md
     - name: PlayerInventoryType
       href: minecraft/server/PlayerInventoryType.md
+    - name: PlayerPermissionLevel
+      href: minecraft/server/PlayerPermissionLevel.md
     - name: ScoreboardIdentityType
       href: minecraft/server/ScoreboardIdentityType.md
     - name: ScriptEventSource
@@ -1022,8 +1026,6 @@
       href: minecraft/server-editor/PaintMode.md
     - name: Plane
       href: minecraft/server-editor/Plane.md
-    - name: PlayerPermissionLevel
-      href: minecraft/server-editor/PlayerPermissionLevel.md
     - name: PlaytestSessionResult
       href: minecraft/server-editor/PlaytestSessionResult.md
     - name: PrimitiveType

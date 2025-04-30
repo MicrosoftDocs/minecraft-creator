@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:input_air_controlled
 
-When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions. Only available with `"use_beta_features": true` and likely to be drastically changed or removed.
+When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions.
 
 
 ## Input Air Controlled Properties

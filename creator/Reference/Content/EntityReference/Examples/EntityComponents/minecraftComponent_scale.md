@@ -83,6 +83,33 @@ At /minecraft:entity/component_groups/minecraft:cat_adult/minecraft:scale/:
 }
 ```
 
+#### [Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/ghast.json)
+
+
+```json
+"minecraft:scale": {
+  "value": 4.5
+}
+```
+
+#### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
+
+At /minecraft:entity/component_groups/minecraft:adult/minecraft:scale/: 
+
+```json
+"minecraft:scale": {
+  "value": 3.999
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:baby/minecraft:scale/: 
+
+```json
+"minecraft:scale": {
+  "value": 1.999
+}
+```
+
 #### [Pufferfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pufferfish.json)
 
 
@@ -99,23 +126,5 @@ At /minecraft:entity/component_groups/scale_large/minecraft:scale/:
 ```json
 "minecraft:scale": {
   "value": 1.5
-}
-```
-
-#### [Tropicalfish](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/tropicalfish.json)
-
-
-```json
-"minecraft:scale": {
-  "value": 1.3
-}
-```
-
-#### [Turtle](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/turtle.json)
-
-
-```json
-"minecraft:scale": {
-  "value": 0.16
 }
 ```

@@ -204,6 +204,12 @@
         "title": "Pool Aliases",
         "description": "Pool Aliases are used to determine which template pool can be a substitute.",
         "dataType": 17
+      },
+      {
+        "id": "liquid_settings",
+        "title": "V1 21 20 JigsawureDefinition LiquidSettings",
+        "description": "How to handle waterloggable blocks overlapping with existing liquid.",
+        "dataType": 2
       }
     ]
   }
