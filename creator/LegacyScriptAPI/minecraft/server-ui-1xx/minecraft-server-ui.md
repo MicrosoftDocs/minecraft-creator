@@ -20,7 +20,7 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
   * [*@minecraft/server-ui.ModalFormData*](../../../legacyscriptapi/minecraft/server-ui-1xx/ModalFormData.md) allow for a more flexible "questionnaire-style" list of controls that can be used to take input.
 
 > [!IMPORTANT]
-> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server-ui/@minecraft/server-ui.md).
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server-ui/minecraft-server-ui.md).
 
 ## Manifest Details
 ```json
