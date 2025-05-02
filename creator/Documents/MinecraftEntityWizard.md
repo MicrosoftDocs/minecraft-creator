@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Getting Started with Minecraft Entity Wizard
 description: "A tutorial covering how to create a custom entity model using the Minecraft Entity Wizard tool in Blockbench"
 ms.service: minecraft-bedrock-edition
+ms.date: 4/21/2025
 ---
 
 # Getting Started with the Minecraft Entity Wizard
@@ -156,7 +157,7 @@ The pack icon is optional. You can upload an image as an icon to represent your 
 To enable your packs for the first time, you need to add the behavior pack to your Minecraft world. Open the world settings and locate the Behavior Packs section. Find your new pack and activate it. Activating the behavior pack will also automatically activate the connected resource pack. This means that you now have the full addon installed into your world.
 
 > [!TIP]
-> You can view a detailed step-by-step walkthrough on how to enable tutorial in the [Behavior Pack](BehaviorPack.md#testing-the-pack) tutorial.
+> You can view a detailed step-by-step walkthrough on how to enable tutorial in the [Behavior Pack](BehaviorPack.md#test-the-pack) tutorial.
 
 Enter the world and follow the instructions in the wizard to spawn your custom entity. Usually, you can do this by getting a spawn egg from the creative inventory and using it.
 

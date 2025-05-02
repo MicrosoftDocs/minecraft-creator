@@ -36,7 +36,7 @@ Let's set up your computer. Here are the things you will need:
 - A Windows 10 (or higher) computer
 - Keyboard and mouse
 - Visual Studio Code (or another similar text editor)
-- The Attack Cow sample behavior pack downloaded from the Minecraft samples Github repository.
+- The Attack Cow sample behavior pack downloaded from the Minecraft samples GitHub repository.
 
 > [!NOTE] 
 > If you have never downloaded and used a sample behavior pack, here's how:

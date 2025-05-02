@@ -10,7 +10,7 @@ metadata:
   ms.service: minecraft-bedrock-edition
   ms.topic: hub-page # Required
   ms.date: 08/30/2021
-  author: mammerla # Required; Github alias
+  author: mammerla # Required; GitHub alias
   ms.author: kakinnun # Required; Microsoft alias; with correct grammar
 
 # highlighted content section (optional), will outlined up to 8 items in a 4x2 grid.

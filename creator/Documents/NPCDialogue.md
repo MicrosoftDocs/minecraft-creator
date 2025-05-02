@@ -4,6 +4,7 @@ ms.author: mikeam
 title: NPC Dialogue Command
 description: "A tutorial covering how to create a branching dialogue script for use with NPCs in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 4/21/2025
 ---
 
 # NPC Dialogue Command
@@ -29,7 +30,7 @@ We strongly suggest that the following tutorial be completed before reviewing th
 
 ### NPC Dialogue Sample Behavior Pack
 
-There is a [sample NPC dialogue behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/npc_dialogue_sample) available at the Minecraft Samples Github. You can use it to check your work after using this tutorial.
+There is a [sample NPC dialogue behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/npc_dialogue_sample) available at the Minecraft Samples GitHub. You can use it to check your work after using this tutorial.
 
 ## Creating NPC Dialogue
 
@@ -40,7 +41,7 @@ We will be building on the [Create a Custom NPC tutorial](CreateNPCs.md) to crea
 The `scene.json` file is located inside the dialogue folder in the root directory of your behavior pack that contains all the information needed for your branching dialogue.
 
 > [!NOTE]
-> If you need help finding your **com.mojang folder**, look in the [Getting Started](GettingStarted.md#commojang) tutorial. 
+> If you need help finding your **com.mojang folder**, look in the [Getting Started](GettingStarted.md#the-commojang-folder) tutorial. 
 
 You can create as many scene files as you need. In fact, you can create a scene file for each NPC in your world, or a scene file for each chapter of your narrative, or one scene file for the entire world. The branching dialogue feature reads all of the files in the dialogue folder regardless of how they are organized.
 

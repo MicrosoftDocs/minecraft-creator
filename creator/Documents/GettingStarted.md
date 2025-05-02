@@ -1,18 +1,19 @@
 ---
 author: iconicNurdle
 ms.author: mikeam
-title: Getting Started With Minecraft Add-Ons
-description: "A tutorial covering how to start developing Add-Ons for Minecraft: Bedrock Edition"
+title: Getting Started with Minecraft Add-Ons
+description: "A tutorial covering how to start developing add-ons for Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 4/22/2025
 ---
 
-# Getting Started with Add-on Development for Bedrock Edition
+# Getting Started with Add-On Development for Bedrock Edition
 
 Whether you create them yourself or get them from another creator, add-ons are the first step on the journey of bringing greater levels of customization to Minecraft: Bedrock Edition. Add-ons allow players to transform the look of their worlds and even change the behavior of entities. For example, you can change the blast radius of a creeper and the texture it's wearing.
 
 :::image type="content" source="Media/GettingStarted/Getting-Started.jpg" alt-text="A creeper mob that has been re-textured to look like TNT":::
 
-In this article, you will learn:
+In this article, you'll learn:
 
 >[!div class="checklist"]
 >
@@ -21,13 +22,13 @@ In this article, you will learn:
 > - How Visual Studio Code can be used for editing JSON files.
 > - Where to find applicable extensions for Visual Studio Code.
 
-## Installing Add-on Instructions
+## Installing add-ons
 
 Add-ons can be installed on a variety of platforms running Minecraft. Here's how:
 
-# [Windows 10 or Windows 11](#tab/Windows10)
+### [Windows 10 or Windows 11](#tab/Windows10)
 
-1. First, you will need a Windows 10 or Windows 11 computer with Minecraft: Bedrock Edition installed.
+1. First, you'll need a Windows 10 or Windows 11 computer with Minecraft: Bedrock Edition installed.
 1. Download the world or add-on file from the provided source. If the file downloads as a .zip file, change the file extension name to ".mcworld" or ".mcpack".
 1. Navigate to the directory where you downloaded the file.
 1. Open the file and the add-on should open in Minecraft.
@@ -35,50 +36,50 @@ Add-ons can be installed on a variety of platforms running Minecraft. Here's how
 - If you're opening a .mcworld that contains add-ons, the game will notify you that you've successfully imported the world. It will then be available from the "Play" menu.
 - If you're opening a .mcpack, a pop-up notification will alert you that you've successfully imported the pack. Depending on the pack type, this will then be available when editing worlds in either the Behavior Pack tab or Resource Pack tab.
 
-# [Realms/Console](#tab/realms)
+### [Realms/Console](#tab/realms)
 
 1. You will need a Windows 10 or Windows 11 computer with Minecraft: Bedrock Edition installed, a subscription to Realms, and a Minecraft world with add-ons activated.
 1. On the computer, launch Minecraft and upload the world with add-ons active to your realm.
 1. Go to your console, launch Minecraft, and open the add-on enhanced world on the realm.
 
-# [Android](#tab/android)
+### [Android](#tab/android)
 
 1. Launch Minecraft.
 1. Download the world or add-on file to your Android device.
-1. Go to the Settings app and select Storage > Explore (at the bottom). If you do not have a settings app, you can install a file explorer app like ES File Explorer.
+1. Go to the Settings app and select **Storage > Explore** (at the bottom). If you do not have a settings app, you can install a file explorer app like ES File Explorer.
 1. Select the directory where you saved the file, usually "Download".
 1. Select the file & the add-on should open in Minecraft.
 
 - If you're opening a .mcworld that contains add-ons, the game will notify you that you've successfully imported the world. It will then be available from the "Play" menu.
 - If you're opening a .mcpack, a pop-up notification will alert you that you've successfully imported the pack. Depending on the pack type, this will then be available when editing worlds in either the Behavior Pack tab or Resource Pack tab.
 
-# [iOS](#tab/iOS)
+### [iOS](#tab/iOS)
 
 1. Launch Minecraft.
-1. Click on the world or add-on file you want to open (URL, e-mail attachment, etc.).
+1. Tap on the world or add-on file you want to open (URL, e-mail attachment, etc.).
 1. Your device will prompt you to open the file with Minecraft.
-1. Click `Open` in Minecraft; This will launch Minecraft with your selected file.
+1. Tap **Open in Minecraft**. This will launch Minecraft with your selected file.
 
 - If you're opening a .mcworld that contains add-ons, the game will notify you that you've successfully imported the world. It will then be available from the "Play" menu.
 - If you're opening a .mcpack, a pop-up notification will alert you that you've successfully imported the pack. Depending on the pack type, this will then be available when editing worlds in either the Behavior Pack tab or Resource Pack tab.
 
-# [Oculus Rift](#tab/oculusrift)
+### [Oculus Rift](#tab/oculusrift)
 
-1. Open Minecraft for Windows 10 in Rift Mode (if not in Rift mode, add-ons will open the regular version of Minecraft for Windows 10).
+1. Open Minecraft for Windows 10 in Rift Mode (if not in Rift mode, add-ons will open in the regular version of Minecraft for Windows 10).
 1. Download the world or add-on file from the provided source (URL, email attachment, etc.). If the file downloads as a .zip file, change the file extension name to ".mcworld" or ".mcpack".
 1. Navigate to the directory where you downloaded the file.
-1. Open the file & the add-on should open in Minecraft.
+1. Open the file, and the add-on should open in Minecraft.
 
 - If you're opening a .mcworld that contains add-ons, the game will notify you that you've successfully imported the world. It will then be available from the "Play" menu.
 - If you're opening a .mcpack, a pop-up notification will alert you that you've successfully imported the pack. Depending on the pack type, this will then be available when editing worlds in either the Behavior Pack tab or Resource Pack tab.
 
 ---
 
-## com.mojang
+## The com.mojang folder
 
-When Minecraft is installed on your computer, there is a folder called **com.mojang** that is generated in the AppData folder. You will need to find this folder so you can add your content to it.
+A folder called **com.mojang** was added to the AppData folder during Minecraft installation. You'll need to find this folder so you can add your content to it.
 
-To locate the **com.mojang** folder on your computer, you will need to have the **Hidden items** checkbox set to **true**, as shown below. Also, check the box for **File name extensions**.
+To locate the **com.mojang** folder on your computer, you'll need to have the **Hidden items** checkbox set to **true**, as shown below. Also, check the box for **File name extensions**.
 
 ### Showing hidden items
 
@@ -107,11 +108,11 @@ As shown in the image below, there are multiple subdirectories located within th
 
 ### Behavior, Skin, and Resource Packs
 
-There are three folders called **behavior_packs**, **resource_packs**, and **skin_packs** that will store finalized custom content that will be added to Minecraft: Bedrock Edition. Don't worry about these folders right now - you are going to be developing content, so you will be working in the development versions of these folders, as discussed in the next section.
+There are three folders called **behavior_packs**, **resource_packs**, and **skin_packs** that will store finalized custom content that will be added to Minecraft: Bedrock Edition. Don't worry about these folders right now; you're going to be developing content, so you'll be working in the development versions of these folders, as discussed in the next section.
 
 ### Development Packs
 
-You will use the **development_resource_packs** and **development_behavior_packs** folders for the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials. Development pack folders are updated each time Minecraft is launched so you can quickly load and test the changes you made to their contents.
+Use the **development_resource_packs** and **development_behavior_packs** folders for the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials. Development pack folders are updated each time Minecraft is launched, so you can quickly load and test the changes you made to their contents.
 
 ### minecraftWorlds
 
@@ -122,29 +123,30 @@ You will use the **development_resource_packs** and **development_behavior_packs
 
 ## Visual Studio Code
 
-JSON is a popular text file format that is used by Minecraft: Bedrock Edition to interact with content. JSON can be edited in any text editor such as Notepad or Word. However, Visual Studio Code is a free-to-use, text-based editor that supports third-party extensions, including some built specifically for Bedrock development.
+The files you'll be creating to customize Minecraft: Bedrock Edition will be written in JSON, a popular format for describing data. JSON can be edited in any text editor such as Notepad or Word, but it's easier to edit it with a programming editor that understands JSON natively. Microsoft's Visual Studio Code is a free programming editor that not only works great with JSON, it supports extensions that add functionality&mdash;including some built specifically for Bedrock development.
 
 ### Installing Visual Studio Code
 
 Follow this link to [install Visual Studio Code](https://code.visualstudio.com/Download).
 
-## Visual Studio Code Extensions
+### Visual Studio Code Extensions
 
 Visual Studio Code supports extensions created by the Visual Studio Code developer community. Extensions are a great way to help write and understand Minecraft syntax when working on resource and behavior packs.
 
-### Installing Extensions
+Here's two recommended extensions for Minecraft development:
 
-1. Click on this link to download [Bedrock Definitions](https://marketplace.visualstudio.com/items?itemName=destruc7i0n.vscode-bedrock-definitions) for Visual Studio Code.
-1. Click on this link to download [Blockception's Minecraft Bedrock Development](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension) for Visual Studio Code.
+- [Blockception's Minecraft Bedrock Development](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension)
+- [Bedrock Definitions](https://marketplace.visualstudio.com/items?itemName=destruc7i0n.vscode-bedrock-definitions)
 
-## What's Next?
+## What's next?
 
 Now that your development environment is set up, you can start creating your first add-on and learn more about resource packs.
 
 > [!div class="nextstepaction"]
 > [Introduction to Resource Packs](ResourcePack.md)
 
-Alternatively, if you would like to learn how to use commands, head on over to **Getting Started with Command Blocks** and learn how to use command blocks to chain together different commands.
+Alternatively, if you'd like to learn how to use commands, head on over to **Getting Started with Command Blocks** and learn how to use command blocks to chain together different commands.
 
 > [!div class="nextstepaction"]
+
 > [Getting Started with Command Blocks](CommandBlocks.md)
