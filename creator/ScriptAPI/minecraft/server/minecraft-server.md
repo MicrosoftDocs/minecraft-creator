@@ -20,9 +20,35 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.1.0-beta"
 }
 ```
+This is version 2.x.x of this module, which is the latest as of version 1.21.90-beta.21 of Minecraft.
 
 ## Available Versions
 - `2.1.0-beta`
+
+### Prior Versions
+
+The following API versions are from a major version that is documented here: [*@minecraft/server*](../../../priorscriptapi/minecraft/server-1xx/minecraft-server.md):
+- `1.19.0`
+- `1.18.0`
+- `1.17.0`
+- `1.16.0`
+- `1.15.0`
+- `1.14.0`
+- `1.13.0`
+- `1.12.0`
+- `1.11.0`
+- `1.10.0`
+- `1.9.0`
+- `1.8.0`
+- `1.7.0`
+- `1.6.0`
+- `1.5.0`
+- `1.4.0`
+- `1.3.0`
+- `1.2.0`
+- `1.1.0`
+- `1.0.0`
+
 
 ## Enumerations
 - [AimAssistTargetMode](AimAssistTargetMode.md)
