@@ -904,7 +904,7 @@ You edit **Pack/attachables/custom_chestplate.attachable.json** like this...
 ```json
 "scripts": {
   "pre_animation": [
-    "variable.is_dyed = query.armor_color_slot(1, 0) != 0.0 || query.armor_color_slot(1, 1) != 0.0 || query.armor_color_slot(1, 2) != 0.0 || query.armor_color_slot(1, 3) != 0.0;"
+    "variable.is_dyed = query.armor_color_slot(1, 0) != 1.0 || query.armor_color_slot(1, 1) != 1.0 || query.armor_color_slot(1, 2) != 1.0"
   ]
 }
 ```
@@ -931,7 +931,7 @@ So that the final version of **custom_chestplate.attachable.json** looks like th
       },
       "scripts": {
         "pre_animation": [
-          "variable.is_dyed = query.armor_color_slot(1, 0) != 0.0 || query.armor_color_slot(1, 1) != 0.0 || query.armor_color_slot(1, 2) != 0.0 || query.armor_color_slot(1, 3) != 0.0;"
+          "variable.is_dyed = query.armor_color_slot(1, 0) != 1.0 || query.armor_color_slot(1, 1) != 1.0 || query.armor_color_slot(1, 2) != 1.0"
         ]
       }
     }
