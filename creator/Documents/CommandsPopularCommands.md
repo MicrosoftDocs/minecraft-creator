@@ -4,17 +4,12 @@ ms.author: mikeam
 title: Popular Commands
 description: "A guide covering many of the most common commands that are used within Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/29/2025
 ---
 
 # Popular Commands
 
-There are a number of commands that are vital to many command systems. This list will go over the more popular and useful commands that are likely to be used in some fashion.
-
-In this tutorial you will learn the following:
-
-> [!div class="checklist"]
->
-> - Some of the more popular commands to use when starting out.
+This list covers some of the more popular and useful commands available in Minecraft: Bedrock Edition.
 
 ### Requirements
 
@@ -29,15 +24,12 @@ First and foremost is the `/help` command.
 
 ```
 /help <page: int>
-```
-
-Running `/help` in the chat by itself will list every command you can run. However, since there are so many, they have been divided up into several pages, where you are shown only one page at a time. Supplying a page number will change which page of commands to show.
-
-Whenever you want to know the usage and all of the syntaxes of a command, you can use `/help` followed by the name of the command. This can be helpful if you want an overview of the command.
-
-```
 /help [command: CommandName]
 ```
+
+Running `/help` in the chat by itself will list every command you can run. However, since there are so many, they have been divided up into pages. Supplying a page number will change which page of commands to show.
+
+Whenever you want to know the usage and all of the syntaxes of a command, you can use `/help` followed by the name of the command. This can be helpful if you want an overview of the command.
 
 ## /effect
 
@@ -91,7 +83,7 @@ This `/gamerule` command changes specific gameplay aspects and has options helpf
 
 Some gamerules accept only true or false as the value of the rule ("BoolGameRule") while others only accept integers ("IntGameRule"). The primary gamerules crucial for development, which are all booleans, are "commandblockoutput", "sendcommandfeedback", and "commandblocksenabled", "dodaylightcycle", and "doweathercycle" listed below.
 
-### "commandblockoutput"
+### commandblockoutput
 
 You may have noticed that all of the previous command examples send an output to the chat. This can be a nuisance, especially for commands running every tick. The "commandblockoutput" gamerule, when set to false, will disable that chat output.
 
@@ -99,15 +91,15 @@ You may have noticed that all of the previous command examples send an output to
 /gamerule commandblockoutput false
 ```
 
-### "sendcommandfeedback"
+### sendcommandfeedback
 
-Disabling command block output does not disable all feedback. There are some commands, such as `/xp`, that will continue providing feedback even when command block output is disabled. The "sendcommandfeedback" gamerule will disable these messages as well, allowing for a completely silent command system.
+Disabling command block output does not disable all feedback. Some commands, such as `/xp`, continue providing feedback even when command block output is disabled. The "sendcommandfeedback" gamerule disables these messages as well, allowing for a completely silent command system.
 
 ```
 /gamerule sendcommandfeedback false
 ```
 
-### "commandblocksenabled"
+### commandblocksenabled
 
 To quickly enable or disable command blocks in the world, the "commandblocksenabled" can be toggled on and off. This can be especially helpful if a repeating command block is repeatedly teleporting you.
 
@@ -115,7 +107,7 @@ To quickly enable or disable command blocks in the world, the "commandblocksenab
 /gamerule commandblocksenabled false
 ```
 
-### "dodaylightcycle"
+### dodaylightcycle
 
 Either for development or for gameplay concerns, you can choose to prevent the daylight cycle from moving. This means that whatever time you set the game to (such as with the [`/time` command](#time-set)), it will stay at that time.
 
@@ -123,7 +115,7 @@ Either for development or for gameplay concerns, you can choose to prevent the d
 /gamerule dodaylightcycle false
 ```
 
-### "doweathercycle"
+### doweathercycle
 
 As with "dodaylightcycle", you may also want to control the weather cycle. If you intend to have a happy setting, a thunderstorm setting in may not achieve the best effect. When "doweathercycle" is disabled, the weather will stay as it is, including when set with the [`/weather` command](#weather).
 
@@ -133,7 +125,7 @@ As with "dodaylightcycle", you may also want to control the weather cycle. If yo
 
 ## /give, /clear, /replaceitem
 
-This trio of commands manipulate the player's inventory, though `/replaceitem` can also modify non-player entity inventories and blocks with inventories. The `/give` command can provide items, the `/clear` command can remove items, and the `/replaceitem` command can place items in specific slots in the inventory.
+These commands manipulate the player's inventory; `/replaceitem` can also modify non-player entity inventories and blocks with inventories. The `/give` command provides items, the `/clear` command removes items, and the `/replaceitem` command places items in specific slots in the inventory.
 
 ## /locate
 
@@ -144,7 +136,7 @@ Finds the nearest specified biome or structure if it exists in the current dimen
 /locate structure <structure name>
 ```
 
-The locate command takes two arguments: the first argument specifies whether to locate a biome or a structure, the second argument specifies the name of the biome or structure to be located.
+The locate command takes two arguments: "biome" or "structure" specifies which to locate, followed by the name of the biome or structure you're looking for.
 
 ```
 /locate biome beach
@@ -206,7 +198,7 @@ Similar to `/scoreboard`, the `/tag` command allows you to keep track of string 
 
 ## /tellraw, /titleraw
 
-The `/say`, `/tell`, and `/title` commands are not ideal when presenting information as they are not open to translation. The `/tellraw` and `/titleraw` commands can be translated using a JSON input for the message. The `/tellraw` command is also clearer in intent as the message is not accompanied with a "whisper" statement.
+The `/say`, `/tell`, and `/title` commands don't provide translation support. To provide that, use the `/tellraw` and `/titleraw` commands, which take JSON objects for their messages. The `/tellraw` command is also clearer in intent, as the message is not accompanied with a "whisper" statement.
 
 ```
 /tellraw @a {"rawtext":[{"translate":"commands.testfor.success","with":["PlayerName"]}]}
@@ -216,9 +208,9 @@ The `/say`, `/tell`, and `/title` commands are not ideal when presenting informa
 
 ## /testfor, /testforblock, /testforblocks
 
-These commands test for the existence of an entity, block, and a copy of a block structure. While these commands can be useful alongside conditional command blocks, they are less useful in functions as there is no equivalent conditional setting in functions.
+These commands test for the existence of an entity, block, and a copy of a block structure. While these commands can be useful alongside conditional command blocks, they are less useful in functions, as there is no equivalent conditional setting in functions.
 
-Both the `/testfor` and `/testforblock` commands can generally be skipped over in favor of `/execute`, which supports running a command based on the existence of an entity and running a command based on the existence of a block.
+Both the `/testfor` and `/testforblock` commands can generally be skipped over in favor of `/execute`, which can run a command based on the existence of an entity or a block.
 
 ## /time set
 
@@ -288,7 +280,7 @@ The optional duration is the number of game ticks that the selected weather will
 
 Be sure that the ["doweathercycle" gamerule](#doweathercycle) is false if you intend on making use of the duration. If it is true, the weather cycle will not occur, rendering the duration useless.
 
-## What's Next?
+## What's next?
 
 After learning about commands and target selectors, command blocks, and a variety of useful commands, it's time to put them together and create a small project in the form of a Complete the Monument system.
 

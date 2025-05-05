@@ -22,12 +22,12 @@ In this tutorial, you will learn the following:
 
 In this guide, we will set up a command block chain to look for a certain type of block in a set location, and then reward the player for placing a block in the correct place.
 
-### Requirements
+## Requirements
 
 - [Introduction to Commands](CommandsIntroduction.md)
 - A Minecraft world with cheats enabled.
 
-#### Setting the world up
+## Setting up the world
 
 While command blocks can be used in any Minecraft world, we will be using a flat world for a simple and clean environment.
 
@@ -38,7 +38,7 @@ While command blocks can be used in any Minecraft world, we will be using a flat
 1. In the world settings, enable **Activate Cheats**.
 1. Select **Create**.
 
-### How to get Command Blocks
+## Getting command blocks
 
 Command blocks can only be obtained by running a command.
 
@@ -47,7 +47,7 @@ Command blocks can only be obtained by running a command.
 
 You'll see a command block added to your inventory.
 
-## How to use Command Blocks
+## Using command blocks
 
 Start by placing the command block on the ground like any other block. If you look at the command block from the side, you should see an arrow.
 
@@ -56,8 +56,6 @@ Start by placing the command block on the ground like any other block. If you lo
 These arrows always point in the direction of the player at the time the command block is placed. The arrows show the flow of execution. As shown in the image, the block on the left will execute first, followed by the middle command block, and finally the last block on the right will execute.
 
 Click the **Use** button (right-click on PC) to open up the command block user interface.
-
-## Command Block User Interface
 
 ![Overview of the command block graphical user interface](Media/CommandBlocks/commandblockgui.png)
 
@@ -74,7 +72,7 @@ Click the **Use** button (right-click on PC) to open up the command block user i
 - **Execute on First Tick** is only usable for repeating command blocks with a delay. If enabled, the command will execute as soon as the block is powered, and then will wait for the delay before running again. If disabled, the command will not run the first time until the delay has finished.
 - **Delay in Ticks** is a value that defines how long a command block waits to execute after the command block receives redstone power.
 
-## Designing a Gameplay Loop
+## Designing a gameplay loop
 
 A use case of command blocks is allowing creators to create gameplay loops within Minecraft. A simple gameplay loop would be rewarding a player for completing an action. If the gameplay loop was to give a player an emerald for placing a diamond block in a certain location, you can break down each step needed:
 
@@ -83,7 +81,7 @@ A use case of command blocks is allowing creators to create gameplay loops withi
 1. If the player hasn't received the reward, give the player an emerald.
 1. After giving the player an emerald, mark that they have received the reward.
 
-### Setting up the first Command Block
+### Setting up the first command block
 
 Now that we have looked at the settings of a command block, let's set up the first block to detect a certain type of block in a location.
 
@@ -92,7 +90,7 @@ Now that we have looked at the settings of a command block, let's set up the fir
 1. Set the **Block Type** to **Repeat**.
 1. Set the **Redstone** to **Always Active**.
 
-#### The `/testforblock` Command
+### The `/testforblock` command
 
 The `/testforblock` command looks for a specific block at a specified point in the world.
 
@@ -107,11 +105,11 @@ If you are following this tutorial, you will be in a flat world. As you walk aro
 1. In the Command Input section, input the following: `/testforblock 0 4 0 diamond_block`.
 1. Close the interface.
 
-## Command Block Chains
+### Command block chains
 
-For the next step, we need to place a chain command block. As mentioned above, chain command blocks execute when a block pointing into them is activated. Make sure you place the block like the image showing the arrows.
+For the next steps, we need to place two command blocks in a chain. As mentioned above, chain command blocks execute when a block pointing into them is activated. Make sure you place the block like the image showing the arrows.
 
-### Setting up the `/testforblock` Command Block
+#### Setting up the `/testfor` command block
 
 1. Place another command block next to the existing block. Make sure that the new block is placed in front of the direction that the arrow is pointing.
 1. Open the command block interface.
@@ -122,7 +120,7 @@ For the next step, we need to place a chain command block. As mentioned above, c
 
 Since the second block is set to **Conditional**, this new block will only execute if the first command block succeeds, meaning the diamond block was present. This command checks to see if the player hasn't already received the reward.
 
-### Setting up the Reward Command Block
+#### Setting up the reward command block
 
 Let's add a third block to set a command to reward the player for placing a block in the right spot.
 
@@ -135,9 +133,9 @@ Let's add a third block to set a command to reward the player for placing a bloc
 
 Once again, this command will only activate if the previous command succeeded, meaning both the diamond block was present and the player hasn't received the reward yet.
 
-### Closing the loop
+#### Closing the loop
 
-If we stop now, placing the diamond block at `0 4 0` will give the player 20 emeralds per second! That's because we need to do one last step, marking the player as having received the reward.
+If we stop now, placing the diamond block at `0 4 0` will give the player 20 emeralds per second! We need to do one last step, marking the player as having received the reward.
 
 1. Place another command block next to the existing block. Make sure that the new block is placed in front of the direction that the arrow is pointing.
 1. Open the command block interface.
