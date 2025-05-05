@@ -449,6 +449,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockCustomComponentReloadNewEventError](BlockCustomComponentReloadNewEventError.md)
 - [BlockCustomComponentReloadVersionError](BlockCustomComponentReloadVersionError.md)
 - [CommandError](CommandError.md)
+- [ContainerRulesError](ContainerRulesError.md)
 - [CustomComponentInvalidRegistryError](CustomComponentInvalidRegistryError.md)
 - [CustomComponentNameError](CustomComponentNameError.md)
 - [EnchantmentLevelOutOfBoundsError](EnchantmentLevelOutOfBoundsError.md)

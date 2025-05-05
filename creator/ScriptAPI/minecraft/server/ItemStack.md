@@ -101,6 +101,18 @@ Identifier of the type of items for the stack. If a namespace is not specified, 
 
 Type: *string*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **weight**
+`read-only weight: number;`
+
+The total weight of all items in the stack plus the weight of all items in the items container which is defined with the `Storage Item` component. The weight per item can be modified by the `Storage Weight Modifier` component.
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ## Methods
 - [constructor](#constructor)
 - [clearDynamicProperties](#cleardynamicproperties)

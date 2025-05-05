@@ -10,7 +10,14 @@ description: Contents of the @minecraft/server.CameraDefaultOptions class (Versi
 # CameraDefaultOptions Interface (Version 1.x.x)
 
 > [!IMPORTANT]
-> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/CameraDefaultOptions.md).
+> This documentation is for an older version of this module.
+
+> [!CAUTION]
+> This interface is deprecated and will be removed in 2.0.0.
+> 
+> Use Camera.setDefaultCamera instead to reset the cameras position and rotation in V2.0.
+
+Options to reset the position and rotation of a camera to the values defined in the JSON.
 
 ## Properties
 
@@ -20,3 +27,8 @@ description: Contents of the @minecraft/server.CameraDefaultOptions class (Versi
 Sets a set of easing options for the camera.
 
 Type: [*CameraEaseOptions*](CameraEaseOptions.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+> 
+> Use Camera.setDefaultCamera instead to reset the cameras position and rotation in V2.0.

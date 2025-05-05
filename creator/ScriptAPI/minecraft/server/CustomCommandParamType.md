@@ -16,43 +16,47 @@ monikerRange: "=minecraft-bedrock-experimental"
 The types of paramaters accepted by a custom command.
 
 ## Constants
-### **Boolean**
-`Boolean = 0`
-
-Command boolean parameter expecting true or false as input.
-### **Integer**
-`Integer = 1`
-
-Command integer parameter.
-### **Float**
-`Float = 2`
-
-Command float parameter.
-### **String**
-`String = 3`
-
-Command string parameter.
-### **EntitySelector**
-`EntitySelector = 4`
-
-Command entity selector parameter.
-### **PlayerSelector**
-`PlayerSelector = 5`
-
-Command player selector parameter.
-### **Location**
-`Location = 6`
-
-Command location parameter.
 ### **BlockType**
-`BlockType = 7`
+`BlockType = "BlockType"`
 
-Command block type parameter expecting a Minecraft block.
-### **ItemType**
-`ItemType = 8`
+Block type parameter provides a [*@minecraft/server.BlockType*](../../../scriptapi/minecraft/server/BlockType.md).
+### **Boolean**
+`Boolean = "Boolean"`
 
-Command item name parameter.
+Boolean parameter.
+### **EntitySelector**
+`EntitySelector = "EntitySelector"`
+
+Entity selector parameter provides an [*@minecraft/server.Entity*](../../../scriptapi/minecraft/server/Entity.md).
+### **EntityType**
+`EntityType = "EntityType"`
+
+Entity type parameter provides an [*@minecraft/server.EntityType*](../../../scriptapi/minecraft/server/EntityType.md).
 ### **Enum**
-`Enum = 9`
+`Enum = "Enum"`
 
 Command enum parameter.
+### **Float**
+`Float = "Float"`
+
+Float parameter.
+### **Integer**
+`Integer = "Integer"`
+
+Integer parameter.
+### **ItemType**
+`ItemType = "ItemType"`
+
+Item type parameter provides an [*@minecraft/server.ItemType*](../../../scriptapi/minecraft/server/ItemType.md).
+### **Location**
+`Location = "Location"`
+
+Location parameter provides a {@link @minecraft/server.Location}.
+### **PlayerSelector**
+`PlayerSelector = "PlayerSelector"`
+
+Player selector parameter provides a [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md).
+### **String**
+`String = "String"`
+
+String parameter.

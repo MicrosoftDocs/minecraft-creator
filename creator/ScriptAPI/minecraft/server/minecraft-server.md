@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.1.0-beta"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.90-beta.21 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.90-beta.23 of Minecraft.
 
 ## Available Versions
 - `2.1.0-beta`
@@ -59,6 +59,7 @@ The following API versions are from a major version that is documented here: [*@
 - [CommandPermissionLevel](CommandPermissionLevel.md)
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
 - [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
+- [ContainerRulesErrorReason](ContainerRulesErrorReason.md)
 - [CustomCommandErrorReason](CustomCommandErrorReason.md)
 - [CustomCommandParamType](CustomCommandParamType.md)
 - [CustomCommandSource](CustomCommandSource.md)
@@ -308,6 +309,7 @@ The following API versions are from a major version that is documented here: [*@
 - [ItemDyeableComponent](ItemDyeableComponent.md)
 - [ItemEnchantableComponent](ItemEnchantableComponent.md)
 - [ItemFoodComponent](ItemFoodComponent.md)
+- [ItemInventoryComponent](ItemInventoryComponent.md)
 - [ItemPotionComponent](ItemPotionComponent.md)
 - [ItemReleaseUseAfterEvent](ItemReleaseUseAfterEvent.md)
 - [ItemReleaseUseAfterEventSignal](ItemReleaseUseAfterEventSignal.md)
@@ -438,7 +440,6 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockHitInformation](BlockHitInformation.md)
 - [BlockRaycastHit](BlockRaycastHit.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
-- [CameraDefaultOptions](CameraDefaultOptions.md)
 - [CameraEaseOptions](CameraEaseOptions.md)
 - [CameraFadeOptions](CameraFadeOptions.md)
 - [CameraFadeTimeOptions](CameraFadeTimeOptions.md)
@@ -449,6 +450,7 @@ The following API versions are from a major version that is documented here: [*@
 - [CameraSetRotOptions](CameraSetRotOptions.md)
 - [CameraTargetOptions](CameraTargetOptions.md)
 - [CompoundBlockVolumeItem](CompoundBlockVolumeItem.md)
+- [ContainerRules](ContainerRules.md)
 - [CustomCommand](CustomCommand.md)
 - [CustomCommandParameter](CustomCommandParameter.md)
 - [CustomCommandResult](CustomCommandResult.md)
@@ -511,6 +513,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockCustomComponentReloadNewEventError](BlockCustomComponentReloadNewEventError.md)
 - [BlockCustomComponentReloadVersionError](BlockCustomComponentReloadVersionError.md)
 - [CommandError](CommandError.md)
+- [ContainerRulesError](ContainerRulesError.md)
 - [CustomCommandError](CustomCommandError.md)
 - [CustomComponentInvalidRegistryError](CustomComponentInvalidRegistryError.md)
 - [CustomComponentNameError](CustomComponentNameError.md)

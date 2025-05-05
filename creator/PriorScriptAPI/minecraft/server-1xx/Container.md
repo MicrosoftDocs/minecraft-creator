@@ -66,6 +66,7 @@ Adds an item to the container. The item is placed in the first available slot(s)
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*
 
 ### **clearAll**
 `
@@ -174,7 +175,7 @@ Moves an item from one slot to another, potentially across containers.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
+  - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*
 
 #### Examples
 
@@ -228,7 +229,7 @@ Sets an item stack within a particular slot.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws if the container is invalid or if the `slot` index is out of bounds.
+  - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*
 
 ### **swapItems**
 `
@@ -251,7 +252,7 @@ Swaps items between two different slots within containers.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws if either this container or `otherContainer` are invalid or if the `slot` or `otherSlot` are out of bounds.
+  - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*
 
 ### **transferItem**
 `
@@ -273,7 +274,7 @@ Moves an item from one slot to another container, or to the first available slot
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws if either this container or `toContainer` are invalid or if the `fromSlot` or `toSlot` indices out of bounds.
+  - Throws [*ContainerRulesError*](ContainerRulesError.md), *Error*
 
 #### Examples
 

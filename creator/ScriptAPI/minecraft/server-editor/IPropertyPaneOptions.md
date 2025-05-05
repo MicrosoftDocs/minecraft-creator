@@ -13,9 +13,23 @@ Common optional properties used for constructing a property pane.
 
 ## Properties
 
+### **infoTooltip**
+`infoTooltip: TooltipInteractiveContent;`
+
+Optional information tooltip for the pane to be displayed on the header.
+
+Type: *TooltipInteractiveContent*
+
 ### **title**
 `title: LocalizedString;`
 
 Localized title of the property pane
 
 Type: *LocalizedString*
+
+### **uniqueId**
+`uniqueId: string;`
+
+Unique identifier for the pane
+
+Type: *string*
