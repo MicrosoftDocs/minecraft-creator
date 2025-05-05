@@ -118,7 +118,3 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 ## What's Next?
 Select the entire structure, then use the Repeater to build at a massive scale!
 
--	Moving to different dimensions?
-
--	Anything else missing?
-
