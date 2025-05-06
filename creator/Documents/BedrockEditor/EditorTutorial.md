@@ -107,7 +107,7 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 3. Set your target back to Adjacent, then place a border in one of the spaces on either side of the arc. 
 ![Detail border beside arc](media/ArcScreenshots/SideDetail2.png)
 
-4. Copy the smaller boarder and use Paste Preview to paste it on the other side of the monument.
+4. Copy the smaller border and use Paste Preview to paste it on the other side of the monument.
 
 5. Set your target to block and select all three borders, then use Paste Preview to place the selection on the remaining three faces.
 ![Three borders selected](media/ArcScreenshots/CopyDetail1.png)
