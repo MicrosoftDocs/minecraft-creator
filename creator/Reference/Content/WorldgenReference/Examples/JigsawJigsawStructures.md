@@ -78,32 +78,32 @@ The JSON below shows how to combine the properties above to make `trail_ruins`.
 } 
 ```
 
-
-# description
+### Description
 
 Object containing the identifier of the Jigsaw Structure. This MUST contain an identifier.
 
-## Properties
+#### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
-| identifier | *not set* | Required | String | Identifier of the Jigsaw Structure. This is referenced by Structure Sets when adding Structures to the world generation. This will also be used in commands such as the `/locate` command.<br><br>Must include a namespace. The 'Minecraft' namespace must not be used, unless overriding a Vanilla item.|  trail_ruins: `"minecraft:trail_ruins"`  | 
+| identifier | *not set* | Required | String | Identifier of the Jigsaw Structure. This is referenced by Structure Sets when adding Structures to the world generation. This will also be used in commands such as the `/locate` command.<br><br>Must include a namespace. The 'minecraft' namespace must not be used, unless overriding a Vanilla item.|  trail_ruins: `"minecraft:trail_ruins"`  | 
 
-
-# biome_filters
+### biome_filters
 
 Biomes in which the Jigsaw Structure can generate.
 
-Biome filters are just a type of Entity Filter that only iterative over biomes. As such, most of the available [tests](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/filterlist?view=minecraft-bedrock-stable), while functional, don't make a lot of sense. For instance, would a biome ever return true for [has_ranged_weapon](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/filters/has_ranged_weapon?view=minecraft-bedrock-stable)? It's doubful. 
+Biome filters are just a type of Entity Filter that only iterative over biomes. As such, most of the available [tests](../../EntityReference/Examples/FilterList.md), while functional, may not be useful in the context of biomes.
 
->[!NOTE] Generally speaking, the most useful `test` will be [`"has_biome_tag"`](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/filters/has_biome_tag?view=minecraft-bedrock-stable). With a `value` of the strings of the tags you're looking for. Here is a list of available [biome tags](https://review.learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/definitions/nestedtables/biome_filter?view=minecraft-bedrock-experimental&branch=main#biome-tags).
+>[!NOTE] Generally speaking, the most useful `test` will be [`"has_biome_tag"`](../../EntityReference/Examples/Filters/has_biome_tag.md). With a `value` of the strings of the tags you're looking for. Here is a list of available [biome tags](../../entityreference/examples/definitions/nestedtables/biome_filter.md).
 
-## Properties
+#### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
-| subject | `"self"` | Optional | String | The subject of this filter test. For biome_filters, you'll want to use the default value.<br><br>Here is a list of available [subjects](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/filters/has_biome_tag?view=minecraft-bedrock-stable#subject-choices). |  |
-| test | *not set* | Required | String | The filter test applied to each biome.<br><br>Here is a list of available [tests](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/filterlist?view=minecraft-bedrock-stable). | trail_ruins: `"has_biome_tag"` |
-| operator | `"=="` | Optional | String | The comparison to apply with `value`.<br><br> Here is a list of available [operators](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/filters/has_biome_tag?view=minecraft-bedrock-stable#operator-choices).  | trail_ruins: `"=="` |
-| value | *not set* | Required | Varies | The data the test will test with.<br><br> The expected type can be different for each [test](https://learn.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/filterlist?view=minecraft-bedrock-stable). | trail_ruins: `"has_structure_trail_ruins"` |
+| subject | `"self"` | Optional | String | The subject of this filter test. For biome_filters, you'll want to use the default value.<br><br>Here is a list of available [subjects](../../entityreference/examples/filters/has_biome_tag.md). |  |
+| test | *not set* | Required | String | The filter test applied to each biome.<br><br>Here is a list of available [tests](../../entityreference/examples/filterlist.md). | trail_ruins: `"has_biome_tag"` |
+| operator | `"=="` | Optional | String | The comparison to apply with `value`.<br><br> Here is a list of available [operators](../../entityreference/examples/filters/has_biome_tag.md#operator-choices).  | trail_ruins: `"=="` |
+| value | *not set* | Required | Varies | The data the test will test with.<br><br> The expected type can be different for each [test](../../entityreference/examples/filterlist.md). | trail_ruins: `"has_structure_trail_ruins"` |
 
 ```json
 "biome_filters": [ 
@@ -114,11 +114,11 @@ Biome filters are just a type of Entity Filter that only iterative over biomes. 
 ], 
 ```
 
-# step
+### step
 
 Specifies the world generation phase in which the structure is generated. This is used as a grouping concept to keep similar world-generation features generally bundled together. Useful for ordering the structures against each other.
 
-## Values
+#### Values
 |Value      |Order       |
 |:----------|:-----------|
 | `"raw_generation"` | 1 |
@@ -134,13 +134,13 @@ Specifies the world generation phase in which the structure is generated. This i
 | `"top_layer_modification"`  | 11 |
 
 
-# terrain_adaptation
+### terrain_adaptation
 
 How the terrain should adapt relative to the generated Jigsaw Structure. 
 
 > Note: "Beard" is the phrase used to denote the act of adding mass below structures that happen to get spawned floating in air.
 
-## Values
+#### Values
 |Value      |Description |
 |:----------|:-----------|
 | `"none"` | Do not adjust ambient block density. |
@@ -149,38 +149,39 @@ How the terrain should adapt relative to the generated Jigsaw Structure.
 | `"beard_box"` | Ambient block density will be added below the structure, and block density will be reduced within the entire box the structure occupies. |
 | `"encapsulate"` | Ambient block density will be added all around every piece of a structure. |
 
-
-# max_depth
+### max_depth
 
 The maximum recursive steps the generation can take. Value between 0 and 20 (inclusive).
 
 For example, a Jigsaw Structure that builds a road with a `max_depth` of 5 will only have paths that are a maximum of 5 structures templates in length in any given direction from the origin.
 
-
-# start_height
+### start_height
 
 The height provider which gives us the offset at which the Jigsaw Structure's `start_pool` should begin. 
 
 >[!NOTE] This is an offset from the `heightmap_projection`. If `heightmap_projection` is set, it is recommended to use the [`"absolute"`](#absolute) Vertical Anchor for ease of use.
 
-### height provider type
+##### height provider type
+
 The `type` of the the height provider. These values determine the format of the `start_height` JSON Object. That is, the rest of properties of the object.
-### Values
+
+#### Values
+
 |Value      |Description |
 |:----------|:-----------|
 | `"constant"` | Constant anchor point.<br>[`start_height`](#start_height) now expects the rest of the parameters to match the [`"constant"`](#constant-height-provider) format. |
 | `"uniform"` | Uniform distribution of possible anchor points.<br>Requires that the [`start_height`](#start_height)'s `value` be in the [`"uniform"`](#uniform-height-provider) format. |
 
-
-## `"constant"` height provider
+#### `"constant"` height provider
 
 When the `type` is `"constant"` it now also expects one vertical anchor point to use as the constant height.
 
-### Properties
+##### Properties
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | [type](#height-provider-type) | *not set* | Required | String | Determines the rest of the parameters in this JSON Object. |  `"constant"` |
 | value | *not set* | Required | JSON Object  | The [Vertical Anchor](#vertical-anchor) to use as the constant height. |  trail_ruins: `{ "absolute": -15 }` |
+
 ```json
 "start_height": {
   "type": "constant",
@@ -190,15 +191,18 @@ When the `type` is `"constant"` it now also expects one vertical anchor point to
 },
 ```
 
-## `"uniform"` height provider
+#### `"uniform"` height provider
+
 When the `type` is `"uniform"` it now also expects two vertical anchor points to use as the minimum and maximum heights over which to perform the uniform distribution.
 
-### Properties
+##### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | [type](#height-provider-type) | *not set* | Required | String | Determines the rest of the parameters in this JSON Object. | `"uniform"` |
 | min | *not set* | Required | JSON Object | The [Vertical Anchor](#vertical-anchor) to use as the minimum value of the uniform distribution. |  |
 | max | *not set* | Required | JSON Object | The [Vertical Anchor](#vertical-anchor) to use as the maximum value of the uniform distribution. |  |
+
 ```json
 "start_height": {
   "type": "uniform",
@@ -211,54 +215,64 @@ When the `type` is `"uniform"` it now also expects two vertical anchor points to
 },
 ```
 
-# Vertical Anchor
+### Vertical Anchor
 
 A vertical anchor defines a point in the dimension to offset from. There are four types and each has it own individually named property:
 
-## Absolute
+#### Absolute
+
 An absolute height.
-### Properties
+
+#### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | absolute | *not set* | Required | Integer | An absolute height. |  trail_ruins: `-15` |
 
-## Above Bottom
+#### Above Bottom
+
 A relative height above the bottom of the dimension. Must be positive. 
 
-### Properties
+##### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | above_bottom | *not set* | Required | Positive Integer | A relative height above the bottom of the dimension. |  |
 
-## Below Top
+#### Below Top
+
 A relative height below the top of the dimension. Must be positive. 
 
-### Properties
+##### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | below_top | *not set* | Required | Positive Integer | A relative height below the top of the dimension. |  |
 
-## From Sea
+#### From Sea
+
 A relative height starting at the dimension's sea level.
 
-### Properties
+##### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | from_sea | *not set* | Required | Integer | A relative height starting at the dimensions sea level. |  |
 
 
-# heightmap_projection
+### heightmap_projection
 
 The heightmap that should be used when determining the starting height.
 
-## Values
+#### Values
+
 |Value      |Description |
 |:----------|:-----------|
 | `"world_surface"` | Begin generating relative to the first non-air block encountered from the top down. |
 | `"ocean_floor"` | Begin generating relative to the first motion-blocking block encountered from the top down. |
 
+For example, this:
 
-<br>For example, this:
 ```json
 "heightmap_projection": "ocean_floor",
 "start_height": {
@@ -268,40 +282,45 @@ The heightmap that should be used when determining the starting height.
   }, 
 },
 ```
+
 means that the Jigsaw Structure will begin generating 10 blocks above the ocean floor.
 
-
-# dimension_padding
+### dimension_padding
 
 Used to specify the padding at the top and bottom of the dimension when placing Jigsaw Structures. Stops the structure from attempting to place blocks where they cannot be placed. This prevents the structure from creating holes in the bedrock or being cut off at the top.
 
-## Properties
+#### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | bottom | `0` | Optional | Positive Integer | Distance in blocks from the bottom of the dimension that may not be used by the Jigsaw Structure. |  |
 | top | `0` | Optional | Positive Integer | Distance in blocks from the top of the dimension that may not be used by the Jigsaw Structure. | |
 
 
-# pool_aliases 
+### pool_aliases 
 
 Used to rewire jigsaw pool connections by redirecting pool references in an individual structure. Done by specifying aliases for Template Pools.  This can allow for themes across a full structure. 
 
 For instance: an alias `chambers/melee`, can be replaced by `chambers/melee/normal`, `chambers/melee/poison` or `chambers/melee/wither` which are specialized Template Pools.
 
-### pool alias type
+##### pool alias type
+
 The `type` of the pool alias. These values determine the format of each individual pool alias JSON Object. That is, the rest of the properties on the object.
 
-### Values
+##### Values
+
 |Value      |Description |
 |:----------|:-----------|
 | `"direct"` | Pool alias for a Direct target.<br>[`pool_aliases`](#pool_aliases) now expects the rest of the parameters to match the [`"direct"`](#direct-pool-alias) format. |
 | `"random"` | Pool alias for a Random list of targets.<br>[`pool_aliases`](#pool_aliases) now expects the rest of the parameters to match the [`"random"`](#random-pool-alias) format. |
 | `"random_group"` | Pool alias for a RandomGroup of aliases.<br>[`pool_aliases`](#pool_aliases) now expects the rest of the parameters to match the [`"random_group"`](#random_group-pool-alias) format. |
 
+#### direct pool alias
 
-## direct pool alias
 Pool alias for a Direct target.
-### Properties
+
+##### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | [type](#pool-alias-type) | *not set* | Required | String | Determines the rest of the parameters in this JSON Object. |  `"direct"` |
@@ -318,14 +337,18 @@ Pool alias for a Direct target.
 ],
 ```
 
-## random pool alias
+#### random pool alias
+
 Pool alias for a Random list of targets.
-### Properties
+
+##### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | [type](#pool-alias-type) | *not set* | Required | String | Determines the rest of the parameters in this JSON Object. |  `"random"` |
 | alias | *not set* | Required | String | The alias of the Template Pool to replace.|  |
 | targets | *not set* | Required | JSON Object | A [weighted random list](#weighted-random-item) containing [items](#weighted-random-item) that contain potential Template Pools that will be randomly chosen from when the alias matches. |  |
+
 ```json
 "pool_aliases": [
   {
@@ -345,9 +368,12 @@ Pool alias for a Random list of targets.
 ],
 ```
 
-## random_group pool alias
+#### random_group pool alias
+
 Pool alias for a RandomGroup of aliases.
-### Properties
+
+##### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | [type](#pool-alias-type) | *not set* | Required | String | Determines the rest of the parameters in this JSON Object. |  `"random_group"` |
@@ -397,7 +423,7 @@ Pool alias for a RandomGroup of aliases.
 ],
 ```
 
-# Weighted Random List
+### Weighted Random List
 
 A weighted random list is a collection of items where each item is assigned a specific weight, representing its probability of being selected. The weights determine how likely each item is to be chosen when a random selection is made. Items with higher weights have a greater chance of being selected compared to items with lower weights.
 
@@ -414,22 +440,23 @@ The probability of selecting each fruit is:
 - Cherry: $\frac{3}{6}$ ≈ 50%
 
 
-## Weighted Random Item
+#### Weighted Random Item
 
 A used by [Weighted Random Lists](#weighted-random-list). the `weight` property must be positive. The `data` property can be anything.
 
-### Properties
+##### Properties
+
 |Name       |Default Value |Requirement Status |Type |Description |Example Values |
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | data | *not set* | Required | JSON Object | The data used when randomly selected. |  |
 | weight | *not set* | Required | Positive Integer | The weight of the item relative to the total weight of all items in the list. |  |
 
 
-# liquid_settings
+### liquid_settings
 
 How to handle waterloggable blocks overlapping with existing liquid.
 
-## Values
+#### Values
 |Value      |Description |
 |:----------|:-----------|
 | `"apply_waterlogging"` | Causes a waterloggable block to become waterlogged, if it overlaps with existing liquid. |

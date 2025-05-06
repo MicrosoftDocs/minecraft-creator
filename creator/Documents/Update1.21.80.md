@@ -11,9 +11,6 @@ ms.date: 03/25/2025 #Required; mm/dd/yyyy format.
 
 Minecraft Bedrock has been updated to 1.21.80 and there are a number of changes of note for Add-On creators. The following features do not require experimental toggles.
 
->
-*Video version of this article from the Minecraft Creator Channel*
-
 ## Editor
 
 **Editor v0.9.5**
@@ -55,7 +52,7 @@ Improvements have been made to rideables.
   - "third_person_camera_radius" can be used to set a different camera radius when in third person or third person front camera. 
   - "camera_relax_distance_smoothing" adds springiness to the camera movement when the camera moves back to its radius after being pushed closer to the player by and obstacle.
 
-Improvements have been made to leaches.
+Improvements have been made to leashes.
 - The [minecraft:leashable](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_leashable.md) component now support multiple presets.
 - [query.leashed_entity_count](../Reference/Content/MolangReference/Examples/MolangConcepts/QueryFunctions/query_leashed_entity_count.md) - allows querying how many entities have the given entity as their leash holder.
 - [query.has_any_leashed_entity_of_type](../Reference/Content/MolangReference/Examples/MolangConcepts/QueryFunctions/query_has_any_leashed_entity_of_type.md) - checks if the entity has any of the listed entities leashed.
