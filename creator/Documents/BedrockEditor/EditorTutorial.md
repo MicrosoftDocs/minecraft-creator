@@ -50,7 +50,7 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 5. Change your target to Adjacent if it's not already, then select the top of one of the corner blocks of the monolith.
 ![Select a corner block](media/ArcScreenshots/CornerSelect.png)
 
-6. **CTRL** + click the corner block diagonal from the one you selected in the last step, then expand the selection one block along the X and Z axes on both corners. Fill the selection
+6. **CTRL** + click the corner block diagonal from the one you selected in the last step, then expand the selection one block along the X and Z axes on both corners. Fill the selection.
 ![Expanding x / z axes](media/ArcScreenshots/ExpandCornersTop.png)
 
 
