@@ -12,7 +12,7 @@ ms.date: 05/05/2025
 This tutorial is intended to guide you through using Minecraft Bedrock Editor to accomplish a variety of tasks. Before you begin, you should know how to launch Editor, create a project, move around, and switch between the two modes.
 
 > [!IMPORTANT]
-> The Editor is in early preview and we're working to add more capabilities.
+> The Editor is in preview and we're working to add more capabilities.
 > It will change significantly as we get feedback from creators like you.
 > Also, the images of Editor in this document might vary a little from what you have on your screen.
 
@@ -34,7 +34,7 @@ It's recommended that the following be completed before beginning this tutorial.
 
 In this tutorial, you're going to learn how to build the Arc de Triomphe and instantly duplicate the structure to edit a world at massive scale. You'll only need two types of quartz block and a block of your choice to use as a visual guide.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LyumuBINeCc?si=DuRjghEGdCl17SpV&amp;start=360" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+> [!VIDEO https://www.youtube.com/embed/LyumuBINeCc]
 
 ## Make the monument
 1. Launch Minecraft Editor and find a relatively flat spot in the world.
@@ -52,7 +52,6 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 
 6. **CTRL** + click the corner block diagonal from the one you selected in the last step, then expand the selection one block along the X and Z axes on both corners. Fill the selection.
 ![Expanding x / z axes](media/ArcScreenshots/ExpandCornersTop.png)
-
 
 7. Select the top of the monument's corner block and use the Repeater to create a grid that repeats 12 times along the X and Z axes only.
 ![Grid repeat on top of monument](media/ArcScreenshots/GridRepeatTop.png)

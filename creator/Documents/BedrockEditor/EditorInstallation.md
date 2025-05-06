@@ -49,7 +49,6 @@ The easiest way to install either of these versions is from the Minecraft Launch
 
 ![Image of Minecraft Launcher app in the Microsoft Store](Media/editor_launcher_ms_store.png)
 
-
 Once you have the Minecraft Launcher installed, navigate to the "Creator Tools" tab. From here you can install Retail and Preview versions of Bedrock.
 
 ![Image of Minecraft Launcher app to install versions of Bedrock](Media/editor_launcher_install.png)
