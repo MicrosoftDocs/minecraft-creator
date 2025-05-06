@@ -10,7 +10,7 @@ metadata:
   ms.service: minecraft-bedrock-edition
   ms.topic: hub-page # Required
   ms.date: 08/30/2021
-  author: mammerla # Required; Github alias
+  author: mammerla # Required; GitHub alias
   ms.author: kakinnun # Required; Microsoft alias; with correct grammar
 
 # highlighted content section (optional), will outlined up to 8 items in a 4x2 grid.
@@ -26,9 +26,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/CreatorCamp.md
     #card
-    - title: "1.21.70 Update Summary"
+    - title: "1.21.80 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.21.70.md
+      url: Documents/Update1.21.80.md
     #card
     - title: Camera Command
       itemType: whats-new
@@ -45,22 +45,22 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Building Custom Content  # < 60 chars (optional)
-  summary: Whether you are creating first Add-On or your one-hundredth, there is content for all types of creators to help you on your journey! # < 160 chars (optional)
+  summary: Whether you're creating your first Add-On or your one-hundredth, there's content for all types of creators to help you on your journey! # < 160 chars (optional)
   items:
     # Card
     - title: Getting Started with Add-On Development
       imageSrc: images/Add-Resource-Pack.png
-      summary: "Working with Add-Ons in Minecraft: Bedrock Edition is easy! Learn how to get started"
+      summary: "Working with Add-Ons in Minecraft: Bedrock Edition is easy! Learn how to get started."
       url: Documents/GettingStarted.md
     # Card
     - title: Getting Started with Minecraft Block Wizard
       imageSrc: images/Firework.png
-      summary: Rapidly design, build and deploy a brand new Block with the new Minecraft Block Wizard Tool
+      summary: Rapidly design, build and deploy a brand new Block with the new Minecraft Block Wizard Tool.
       url: Documents/MinecraftBlockWizard.md
     # Card
     - title: Getting Started with Minecraft Entity Wizard
       imageSrc: images/Firework.png
-      summary: Rapidly design, build and deploy a brand new Entity with the Minecraft Entity Wizard Tool
+      summary: Rapidly design, build and deploy a brand new Entity with the Minecraft Entity Wizard Tool.
       url: Documents/MinecraftEntityWizard.md
 
 # conceptualContent section (optional)
@@ -69,11 +69,11 @@ conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   sections:
     - title: Discover what you can Create # < 60 chars (optional)
-      summary: "Building new Add-Ons or want to learning about new Features? The Creator Documentation provides a collection of written content to assist creators." # < 160 chars (optional)
+      summary: "Building new Add-Ons or want to learn about new features? You'll find all you need in the Creator Documentation!" # < 160 chars (optional)
       items:
         # card
         - title: Add-On Pack Tutorials
-          summary: "Learn how Add-Ons are used to bring custom content into Minecraft"
+          summary: "Learn how to use Add-Ons to bring custom content into Minecraft."
           links:
             - url: Documents/ResourcePack.md
               itemType: get-started
@@ -86,7 +86,7 @@ conceptualContent:
               text: How to add a Custom Block
         # card
         - title: Build a simple game with Commands
-          summary: "Commands are a powerful way to add logic into your experiences."
+          summary: "Commands are a powerful way to add logic to your experiences."
           links:
             - url: Documents/CommandsIntroduction.md
               itemType: concept
@@ -167,7 +167,7 @@ conceptualContent:
             text: Oversized Blocks
     # Reference Section
     - title: References  # < 60 chars (optional)
-      summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
+      # summary: "Learn how content works with Reference documentation and how GameTest can empower your workflow." # < 160 chars (optional)
       items:
       # card
       - title: Using Script APIs
@@ -215,7 +215,7 @@ conceptualContent:
             text: Particle JSON
       # card
       - title: Common Schema Documentation
-        summary: "See how Schemas are used to validate JSON files in Minecraft: Bedrock Edition "
+        summary: "Learn to use schemas to validate JSON files in Minecraft: Bedrock Edition."
         links:
           - url: Reference/Content/SchemasReference/index.yml
             itemType: reference

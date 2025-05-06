@@ -23,7 +23,7 @@ In this tutorial, you will learn the following:
 
 ## Sample Behavior Pack
 
-There is a [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) available at the Microsoft samples Github. It may be used to understand the structure of behavior packs and to check your work after the tutorial.
+There is a [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) available at the Microsoft samples GitHub. It may be used to understand the structure of behavior packs and to check your work after the tutorial.
 
 ### Requirements
 
@@ -459,7 +459,7 @@ Now that the behavior pack has both a manifest file and a cow entity, it is time
 
 Behavior pack woes? Troubleshooting is a normal part of any development process. Here are some places to begin troubleshooting a behavior pack.
 
-You can use the [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) on the Minecraft samples Github to check the structure of your behavior pack.
+You can use the [sample behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) on the Minecraft samples GitHub to check the structure of your behavior pack.
 
 ### Behavior Pack Does Not Appear in Minecraft
 
