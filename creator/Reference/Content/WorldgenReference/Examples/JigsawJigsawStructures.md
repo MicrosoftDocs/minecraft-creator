@@ -94,7 +94,8 @@ Biomes in which the Jigsaw Structure can generate.
 
 Biome filters are just a type of Entity Filter that only iterative over biomes. As such, most of the available [tests](../../EntityReference/Examples/FilterList.md), while functional, may not be useful in the context of biomes.
 
->[!NOTE] Generally speaking, the most useful `test` will be [`"has_biome_tag"`](../../EntityReference/Examples/Filters/has_biome_tag.md). With a `value` of the strings of the tags you're looking for. Here is a list of available [biome tags](../../entityreference/examples/definitions/nestedtables/biome_filter.md).
+> [!NOTE]
+> Generally speaking, the most useful `test` will be [`"has_biome_tag"`](../../EntityReference/Examples/Filters/has_biome_tag.md). With a `value` of the strings of the tags you're looking for. Here is a list of available [biome tags](../../entityreference/examples/definitions/nestedtables/biome_filter.md).
 
 #### Properties
 
@@ -159,7 +160,8 @@ For example, a Jigsaw Structure that builds a road with a `max_depth` of 5 will 
 
 The height provider which gives us the offset at which the Jigsaw Structure's `start_pool` should begin. 
 
->[!NOTE] This is an offset from the `heightmap_projection`. If `heightmap_projection` is set, it is recommended to use the [`"absolute"`](#absolute) Vertical Anchor for ease of use.
+> [!NOTE]
+> This is an offset from the `heightmap_projection`. If `heightmap_projection` is set, it is recommended to use the [`"absolute"`](#absolute) Vertical Anchor for ease of use.
 
 ##### height provider type
 
@@ -435,10 +437,10 @@ Consider a list of fruits with associated weights:
 The total weight is: 1 + 2 + 3 = 6
 
 The probability of selecting each fruit is:
-- Apple: $\frac{1}{6}$ ≈ 16.67%
-- Banana: $\frac{2}{6}$ ≈ 33.33%
-- Cherry: $\frac{3}{6}$ ≈ 50%
 
+- Apple: `1/6 ≈ 16.67%`
+- Banana: `2/6 ≈ 33.33%`
+- Cherry: `3/6 ≈ 50%`
 
 #### Weighted Random Item
 
@@ -450,7 +452,6 @@ A used by [Weighted Random Lists](#weighted-random-list). the `weight` property 
 |:----------|:-------------|:------------------|:----|:-----------|:------------- |
 | data | *not set* | Required | JSON Object | The data used when randomly selected. |  |
 | weight | *not set* | Required | Positive Integer | The weight of the item relative to the total weight of all items in the list. |  |
-
 
 ### liquid_settings
 
