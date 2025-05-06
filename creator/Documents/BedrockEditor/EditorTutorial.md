@@ -60,7 +60,7 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 8. Change the X and Z axis spacing to 2, then place the selection.
 
 9. Use the Selection tool to delete all but the outermost repeated blocks, creating a border around the top of the monument.
-![Finishing the boarder](media/ArcScreenshots/CompleteTop.png)
+![Finishing the border](media/ArcScreenshots/CompleteTop.png)
 
 10. (Optional) Select a line of 12 blocks from the bottom corner towards the center with a different block type of your choosing. Repeat the process vertically from the horizontal center point of the monument to mark the center block.
 ![Create a visual guide](media/ArcScreenshots/VisualAid.png)
