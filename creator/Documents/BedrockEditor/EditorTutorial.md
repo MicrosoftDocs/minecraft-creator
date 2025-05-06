@@ -104,7 +104,7 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 2. Switch your target to Block, then select and delete the interior quartz blocks of your new rectangle to create a border.
 ![Detail border above arc](media/ArcScreenshots/SideDetail1.png)
 
-3. Set your target back to Adjacent, then place a boarder in one of the spaces on either side of the arc. 
+3. Set your target back to Adjacent, then place a border in one of the spaces on either side of the arc. 
 ![Detail border beside arc](media/ArcScreenshots/SideDetail2.png)
 
 4. Copy the smaller boarder and use Paste Preview to paste it on the other side of the monument.
