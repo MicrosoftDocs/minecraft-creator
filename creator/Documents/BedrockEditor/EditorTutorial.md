@@ -112,7 +112,7 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 5. Set your target to block and select all three borders, then use Paste Preview to place the selection on the remaining three faces.
 ![Three borders selected](media/ArcScreenshots/CopyDetail1.png)
 
-6. Use the Brush to select Single Block and set your target to Adjacent, then add details inside the boarders of your Arc De Triomphe.
+6. Use the Brush to select Single Block and set your target to Adjacent, then add details inside the borders of your Arc De Triomphe.
 ![Final details with single block brush](media/ArcScreenshots/FinalArcDeTriomphe.png)
 
 ## What's Next?
