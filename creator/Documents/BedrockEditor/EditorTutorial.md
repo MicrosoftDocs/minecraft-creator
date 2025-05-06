@@ -96,7 +96,7 @@ In this tutorial, you're going to learn how to build the Arc de Triomphe and ins
 4. Press **DELETE** to clear the rest of the blocks and complete the arc.
 ![Complete the arc](media/ArcScreenshots/CompleteArc.png)
 
-5. Repeat steps 22-25 on the other faces. You'll need to change the axis of extrusion.
+5. Repeat steps 2-4 on the other faces. You'll need to change the axis of extrusion.
 
 ## Add some detail
 1. Use the Block Picker to select quartz blocks, then use the Selection tool with your target set to Adjacent and place a rectangle that fills the space above the arc.
