@@ -25,7 +25,7 @@ If you don't already have one, you'll need to [create a GitHub account.](https:/
 
 When setting up your GitHub account, we also recommend these security precautions:
 
-- Create a strong password for your Github account.
+- Create a strong password for your GitHub account.
 - Enable two-factor authentication.
 - Save your recovery codes in a safe place.
 - Update your public profile settings.

@@ -11,8 +11,6 @@ ms.date: 04/17/2025
 
 Before building your first Add-On for Minecraft: Bedrock Edition, you'll need to create a pack to hold your custom content. There are two types of packs that a creator can make: resource packs and behavior packs. A **resource pack** is a folder structure that contains all of your custom models, sounds, textures, and other custom content.
 
-For this tutorial, we're going to be focusing on resource packs.
-
 :::image type="content" source="Media/ResourcePack/Introduction-to-Resource-Packs.jpg" alt-text="Image showing a pig deeply confused by its environment containing green dirt blocks":::
 
 In this tutorial, you will learn:
@@ -21,18 +19,16 @@ In this tutorial, you will learn:
 >
 > - How a **resource pack** is created.
 > - How a **manifest file** is created.
-> - How custom textures are loaded into Minecraft.
+> - How custom textures are loaded into Minecraft: Bedrock Edition.
 > - The concept of **Pack Stacking** when working with Add-On content.
 
 ## Sample Resource Pack
 
-There is a [sample resource pack](https://github.com/microsoft/minecraft-samples/tree/main/resource_pack_sample) available on the Minecraft samples Github. This pack may be used to understand the structure of resource packs and to check your work after you complete this tutorial.
+There is a [sample resource pack](https://github.com/microsoft/minecraft-samples/tree/main/resource_pack_sample) available on the Minecraft samples GitHub. This pack may be used to understand the structure of resource packs and to check your work after you complete this tutorial.
 
 ## Requirements
 
-We recommend completing the following before beginning this tutorial:
-
-- [Getting Started with Add-On Development](GettingStarted.md)
+It's recommended you complete [Getting Started with Add-On Development](GettingStarted.md) before beginning this tutorial.
 
 ## Building the Resource Pack
 
@@ -45,7 +41,7 @@ For Minecraft to find and use your resource files, you must set up the folders a
 We will start by creating a folder called **My_RESOURCE_Pack**. Technically you can name this folder anything you want, but the other folders have to be named exactly as specified in this tutorial so that Minecraft knows where to find the information.
 
 
-### Locating com.mojang on a Windows device
+### Locate com.mojang on a Windows device
 
 1. Open the **com.mojang** folder.
 
@@ -102,7 +98,7 @@ To load a resource pack into Minecraft, we need a manifest file. The manifest fi
 }
 ```
 
-### UUID
+### Set the UUID
 
 A Universally Unique Identifier (UUID) is a unique number used for identification purposes. For Minecraft, the UUID is used to define a specific pack and to prevent any duplicate software from causing issues. For the header and modules, there will need to be two different UUID numbers entered in each of the `"uuid"` fields between the quotes. You can get UUIDs from an online UUID Generator such as https://www.uuidgenerator.net/.
 
@@ -122,7 +118,7 @@ With the manifest file completed, you can now start adding custom content to Min
 1. Open the **textures** folder and create a folder named **blocks**.
 1. Double-click the **blocks** folder to open it.
 
-### Creating the texture
+### Create the texture
 
 Now that the folder structure is created, we can start adding some custom textures. This green square is an example of the type of file created using the following steps.
 
@@ -145,7 +141,7 @@ You can now design a pattern or any artwork in the editor. To make the green squ
 1. In the **Save As** dialog box, navigate to the **blocks** folder.
 1. Save the file as **dirt.png**.
 
-### Testing the pack
+### Test the pack
 
 Now that the pack has both a manifest file and a texture file, you can launch Minecraft and test your new resource Add-On.
 
@@ -169,7 +165,7 @@ Your custom texture will be used on every dirt.png block in the world, but it wi
 
 Resource pack woes? Don't worry, troubleshooting is a normal part of any development process.
 
-You can use the [sample resource pack](https://github.com/microsoft/minecraft-samples/tree/main/resource_pack_sample) on the Minecraft samples Github site to check the structure of your resource pack.
+You can use the [sample resource pack](https://github.com/microsoft/minecraft-samples/tree/main/resource_pack_sample) on the Minecraft samples GitHub site to check the structure of your resource pack.
 
 ### Your Resource Pack Does Not Appear in Minecraft
 

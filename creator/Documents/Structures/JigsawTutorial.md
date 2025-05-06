@@ -36,7 +36,7 @@ If you want to follow the video exactly, you should know how to use scripts to d
 [!NOTE]
 > There are a lot of "moving parts" to this feature, so here is a link to the [Jigsaw - Basic Dungeon sample pack](https://github.com/microsoft/minecraft-samples/tree/main/jigsaws/basic_dungeon) that goes along with the video, just in case you get lost along the way. This behavior pack is different from the starter ["Angry Cow" behavior pack](../BehaviorPack.md) mentioned in step 1.
 
-1. If you don't want to do everything from scratch, you can start with the [behavior_pack_sample](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) from the Minecraft samples on Github.
+1. If you don't want to do everything from scratch, you can start with the [behavior_pack_sample](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) from the Minecraft samples on GitHub.
 
 1. Download the "angry cow" sample behavior pack, pop it into the **development_behavior_pack** folder in your **com.mojang** folder. You won't need a resource pack.
 

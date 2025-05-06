@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Getting Started with Minecraft Item Wizard
 description: "A tutorial covering how to create a custom item using the Minecraft Item Wizard tool in Blockbench"
 ms.service: minecraft-bedrock-edition
+ms.date: 4/21/2025
 ---
 
 # Getting Started with the Minecraft Item Wizard
@@ -239,7 +240,7 @@ Starting with the sword icon...
 To enable your packs for the first time, you need to add the behavior pack to your Minecraft world. Open the world settings and locate the behavior packs section. Find your new pack and activate it. Activating the behavior pack will also automatically activate the connected resource pack. This means that you now have the full addon installed into your world.
 
 > [!TIP]
-> You can view a detailed step-by-step walkthrough on how to enable tutorial in the [Behavior Pack](BehaviorPack.md#testing-the-pack) tutorial.
+> You can view a detailed step-by-step walkthrough on how to enable tutorial in the [Behavior Pack](BehaviorPack.md#test-the-pack) tutorial.
 
 Enter the world and locate the custom item in your creative inventory. Alternatively, if you didn't choose to add your item to a creative inventory tab, you can get it using the `/give` command.
 

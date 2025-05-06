@@ -4,6 +4,7 @@ ms.author: v-bbortree
 title: Introduction to Commands
 description: "A guide covering how Commands work in-game, the syntax that is used, and what parameters are available"
 ms.service: minecraft-bedrock-edition
+ms.date: 04/28/2025
 ---
 
 # Introduction to Commands
@@ -14,7 +15,7 @@ Content creators use commands to change or react to the environment around the p
 
 :::image type="content" source="Media/Commands/Introduction-to-Commands.jpg" alt-text="Image showcasing four different time of day settings":::
 
-In this tutorial you will learn the following:
+In this tutorial, you'll learn the following:
 
 > [!div class="checklist"]
 >
@@ -26,15 +27,15 @@ In this tutorial you will learn the following:
 
 Before getting started with commands, cheats must be enabled. This can be done when you create a world or when you edit an existing one. Be aware that enabling cheats will disable achievements for that world.
 
-Activating cheats will allow the use of commands in the chat interface. Running commands in the chat is essential for getting the first command block in a newly created world, which must also be enabled (in the same menu) in order to use them. Command blocks will be enabled by default, so you do not have to change that option.
+Activating cheats lets you use commands in the chat interface. Running commands in the chat is essential for getting the first command block in a newly created world, which must also be enabled (in the same menu) in order to use them. Command blocks will be enabled by default, so you do not have to change that option.
 
 ![Activate cheats and command blocks options](Media/Commands/enablecheats.png)
 
-While not required, it can be helpful to set the default game mode to creative when starting out as command blocks can only be edited in creative mode. Setting the default game mode to creative will also activate cheats.
+While not required, it's helpful to set the default game mode to creative when starting out, as command blocks can only be edited in creative mode. Setting the default game mode to creative will also activate cheats.
 
 ![Default game mode option](Media/Commands/defaultgamemode.png)
 
-Finally, you may need to enable the "operator commands" permission for yourself in order to run commands in the chat and access command blocks. While this setting is on by default for new worlds you create, you may need to change this on previously created worlds or for other players you would like to grant this permission for. This can be done by opening the pause menu while in the world and clicking the icon to the right of your player.
+Finally, you may need to enable the "operator commands" permission for yourself in order to run commands in the chat and access command blocks. While this setting is on by default for new worlds you create, you may need to change this on previously created worlds or for other players you would like to grant this permission to. This can be done by opening the pause menu while in the world and clicking the icon to the right of your player.
 
 ![Player permissions icon](Media/Commands/openpermissions.png)
 
@@ -61,104 +62,99 @@ If you open the chat and press the up arrow on your keyboard, you can see the pr
 
 All commands follow the same grammar:
 
-1. To run a command in the chat, start it with a forward slash.
-2. Following the potential forward slash is the name of the command.
-3. Following the name is a space, should there be any arguments after.
-4. Following the space are any arguments for the command, each separated by a space.
+1. Start the command with a forward slash (`/`).
+2. Follow the slash with the name of the command.
+3. If there are any arguments to the command, they come after the command, separated by spaces.
 
-For example, the following `/say` command will send a supplied message to the chat for all players to see:
+For example, the `/say` command sends a message to the chat for all players to see:
 
 ```
 /say Hello World
 ```
 
 1. It starts with a forward slash.
-2. It is then followed by the name of the command, "say".
-3. Because there are arguments after the name, a space is placed after the name.
-4. Then, the only argument for `/say` is provided, which is the message to display.
+2. The command's name is "say".
+3. Because there are arguments, a space is placed after the name.
+4. Then, the only argument for `/say` is provided, the message to display.
 
 As a result, "Hello World" will be printed out in the chat.
 
 ### Arguments
 
-Different commands need different arguments. The `/help` command will describe a command and the arguments it has. The auto-complete feature, which is available in the chat when typing out a command, will display the same information.
+Different commands need different arguments. The `/help` command describes both a command and the arguments it takes. The auto-complete feature, which is available in the chat when typing out a command, displays the same information.
 
-For example, running `/help testfor` in the chat will provide the available syntax for the `/testfor` command.
+For example, typing `/help testfor` in the chat will provide the available syntax for the `/testfor` command.
 
 ```
 /testfor <victim: target>
 ```
 
-The command has only one argument: a target to test the existence of. Filling in the argument with a player name and running the command will print out a success message if the player of the specified name is logged into the world.
+The command has only one argument: a target to test for the existence of. Filling in the argument with a player name and running the command will print out a success message if the named player is logged into the world.
 
 ```
 /testfor PlayerName
 ```
 
-There are three primary types of arguments: required, optional, and literal.
+Arguments can be _required, optional,_ or _literal._
 
-**Required arguments**
+A **required argument** is shown in help surrounded by angle brackets, like `<this>`. In the case of the `/testfor` command, you can tell that the only argument it has is required. because it is surrounded by angle brackets. If the argument is not provided, the command will fail to run.
 
-A required argument is surrounded by angle brackets like `<this>`. In the case of the `/testfor` command, you can tell that the only argument it has is required because it is surrounded by angle brackets. If the argument is not provided, the command will fail to run. These types of arguments have a short descriptor of the argument as well as the expected input type. Consider the `/difficulty` command:
+Required arguments have a short descriptor of the argument as well as the expected input type. For `/testfor`, the argument is the victim, and the input type is `target`: a player name or target selector. Other commands can take different kinds of input values for the same argument, such as `/difficulty`:
 
 ```
 /difficulty <difficulty: Difficulty>
 /difficulty <difficulty: int>
 ```
 
-The `/difficulty` command sets the difficulty level for the world, and there are two different ways to specify which level you want. The text is giving you some clues about what to enter. On each line, after the colon is the expected type of input. So we can tell that the input can either be one value from a list of expected values such as "peaceful", "easy," "normal," or "hard", or an integer that corresponds to each difficulty level: 0, 1, 2, or 3.
-
-Either of the following commands will set the difficulty to hard:
+The `/difficulty` command sets the world's difficulty level. You can specify it as a `Difficulty`, the name of a difficulty level such as "peaceful", "easy", "normal", or "hard"; you can also specify it as an `int`, an integer number that corresponds to a difficulty level from 0 to 3. Either of these commands sets the difficulty to hard:
 
 ```
 /difficulty hard
 /difficulty 3
 ```
 
-**Optional arguments**
-
-An optional argument is surrounded by square brackets. These arguments do not need to be provided. Like a required argument, it will contain a descriptor and an expected type.
+An **optional argument** is shown surrounded by square brackets, like `[this]`. Optional arguments don't have to be provided.
 
 ```
 /gamemode <gameMode: GameMode> [player: target]
 /gamemode <gameMode: int> [player: target]
 ```
 
-As with the `/difficulty` command, the `/gamemode` command has two different ways to do the same thing. The "gameMode" descriptor implies that the expected value is a game mode, while the actual type can either be one value from an enumeration (labeled as "GameMode") or an integer corresponding to a game mode (0 through 2).
+As with the `/difficulty` command, the `/gamemode` command has two different ways to do the same thing: you can set the game mode by using the name of a `GameMode`, or using an integer from 0 to 2 corresponding to a game mode.
 
-In this case, there is an optional argument after the game mode: the player who will have their game mode changed. The input type is "target," which accepts either a player name or a target selector. Without supplying the optional argument, the command will still run. Doing so changes the game mode of the player who executed the command. By filling in the optional argument, the game mode of the target will be changed instead.
+The `gameMode` argument is required, but the command takes an optional argument to specify a player who will have their game mode changed. The input type is "target", which accepts either a player name or a target selector. Without supplying the optional argument, the command will still run. Doing so changes the game mode of the player who executed the command. By filling in the optional argument, the game mode of the target will be changed instead.
 
-Either of the following commands will set the game mode for the specified player ("PlayerName") to survival mode.
+Either of the following commands will set the game mode for the specified player ("PlayerName") to survival mode:
 
 ```
 /gamemode survival PlayerName
 /gamemode 0 PlayerName
 ```
 
-**Literal arguments**
+A **literal argument** should be typed exactly as is, and when shown in help, it has no descriptors or value types.
 
-A literal argument is one without a descriptor. The expected input is the name of the argument itself.  For example, the `/time` command has an argument called "set":
+A literal argument that's the first argument to a command generally acts as a subcommand. For example, the `/time` command has a literal argument called "set":
 
 ```
 /time set <amount: int>
 /time set <time: TimeSpec>
 ```
 
-The "set" argument has no descriptor, which means it must be written out literally. It also contains no brackets, though it is still a required argument.
+Since `set` is a subcommand, it's not shown in angle brackets, but it's still required.
 
 ```
 /time set 6000
 /time set noon
 ```
 
-A literal argument can have multiple accepted values. In those cases, a vertical bar separates the literal values. The `/weather` command makes use of this for the type of weather to apply, where the value of the argument must be one of the acceptable values.
+A literal argument can have multiple accepted values. In those cases, a vertical bar separates the possible values. The `/weather` command uses this for the type of weather to apply:
 
 ```
 /weather <clear|rain|thunder> [duration: int]
 /weather rain 10000
 ```
 
-An optional literal argument will be surrounded by square brackets. The final argument of `/testforblocks` is an optional literal argument that can be either "all" or "masked". If none is specified, it defaults to "all." The "masked" option will cause the comparison to ignore air blocks, allowing any block to exist at the destination where there would be an air block at the source.
+An optional literal argument will be shown surrounded by square brackets. The final argument of `/testforblocks` is an optional literal argument that can be either "all" or "masked". If none is specified, it defaults to "all". The "masked" option will cause the comparison to ignore air blocks, allowing any block to exist at the destination where there would be an air block at the source.
 
 ```
 /testforblocks <begin: x y z> <end: x y z> <destination: x y z> [masked|all]
