@@ -139,15 +139,15 @@
       {
         "id": "presets",
         "title": "Presets",
-        "description": "Defines how this entity behaves when leashed to another entity. A preset is selected upon leashing and remains until the entity is leashed to something else. The first preset whose \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
+        "description": "Defines how this entity behaves when leashed to another entity. The first preset which \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
         "dataType": 15,
         "subForm": {
-          "description": "Defines how this entity behaves when leashed to another entity. A preset is selected upon leashing and remains until the entity is leashed to something else. The first preset whose \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
+          "description": "Defines how this entity behaves when leashed to another entity. The first preset which \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
           "fields": [
             {
               "id": "filter",
               "title": "Filter",
-              "description": "Conditions that must be met for this preset to be applied. These conditions are only evaluated upon leashing.",
+              "description": "Conditions that must be met for this preset to be applied.",
               "dataType": 20
             },
             {
