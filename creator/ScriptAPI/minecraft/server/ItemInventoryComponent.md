@@ -1,0 +1,37 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server.ItemInventoryComponent Class
+description: Contents of the @minecraft/server.ItemInventoryComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
+---
+# ItemInventoryComponent Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+## Extends
+- [*ItemComponent*](ItemComponent.md)
+
+This component is added to items with the `Storage Item` component. Can access and modify this items inventory container.
+
+## Properties
+
+### **container**
+`read-only container: Container;`
+
+Type: [*Container*](Container.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidContainerError*](InvalidContainerError.md)
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:inventory";`
+
+Type: *string*

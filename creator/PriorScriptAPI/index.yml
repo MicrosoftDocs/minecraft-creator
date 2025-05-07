@@ -1,0 +1,34 @@
+### YamlMime:Landing
+
+title: Prior Script API Reference Documentation # < 60 chars
+summary: "Landing page containing a high-level introduction of older Script APIs for Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Prior Script API Reference Documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Landing page containing a high-level introduction of older Script APIs for Minecraft: Bedrock Edition."  # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: minecraft-bedrock-edition
+  ms.topic: landing-page # Required
+  author: mammerla #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mikeam #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/29/2025 #Required; mm/dd/yyyy format.
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Getting Started with Script APIs
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+           - text: Use Visual Studio Code tools to write script
+             url: ../Documents/ScriptDeveloperTools.md
+           - text: Use scripting with dedicated servers
+             url: ../Documents/ScriptingServers.md
+           - text: Building your first GameTest
+             url: ../Documents/GameTestBuildYourFirstGameTest.md
+           - text: Creating a simple gameplay experience
+             url: ../Documents/ScriptingGettingStarted.md
+      - linkListType: concept
+        links:
+           - text: Introduction to the GameTest Framework
+             url: ../Documents/GameTestGettingStarted.md

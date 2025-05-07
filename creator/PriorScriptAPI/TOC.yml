@@ -1,0 +1,796 @@
+  - name: minecraft/server 1.x.x
+    items:
+    - name: minecraft/server 1.x.x
+      href: minecraft/server-1xx/minecraft-server.md
+    - name: BlockComponentTypes
+      href: minecraft/server-1xx/BlockComponentTypes.md
+    - name: BlockPistonState
+      href: minecraft/server-1xx/BlockPistonState.md
+    - name: BlockVolumeIntersection
+      href: minecraft/server-1xx/BlockVolumeIntersection.md
+    - name: ButtonState
+      href: minecraft/server-1xx/ButtonState.md
+    - name: CustomComponentNameErrorReason
+      href: minecraft/server-1xx/CustomComponentNameErrorReason.md
+    - name: Difficulty
+      href: minecraft/server-1xx/Difficulty.md
+    - name: Direction
+      href: minecraft/server-1xx/Direction.md
+    - name: DisplaySlotId
+      href: minecraft/server-1xx/DisplaySlotId.md
+    - name: DyeColor
+      href: minecraft/server-1xx/DyeColor.md
+    - name: EasingType
+      href: minecraft/server-1xx/EasingType.md
+    - name: EnchantmentSlot
+      href: minecraft/server-1xx/EnchantmentSlot.md
+    - name: EntityComponentTypes
+      href: minecraft/server-1xx/EntityComponentTypes.md
+    - name: EntityDamageCause
+      href: minecraft/server-1xx/EntityDamageCause.md
+    - name: EntityInitializationCause
+      href: minecraft/server-1xx/EntityInitializationCause.md
+    - name: EquipmentSlot
+      href: minecraft/server-1xx/EquipmentSlot.md
+    - name: FluidType
+      href: minecraft/server-1xx/FluidType.md
+    - name: GameMode
+      href: minecraft/server-1xx/GameMode.md
+    - name: GameRule
+      href: minecraft/server-1xx/GameRule.md
+    - name: HudElement
+      href: minecraft/server-1xx/HudElement.md
+    - name: HudVisibility
+      href: minecraft/server-1xx/HudVisibility.md
+    - name: InputButton
+      href: minecraft/server-1xx/InputButton.md
+    - name: InputMode
+      href: minecraft/server-1xx/InputMode.md
+    - name: InputPermissionCategory
+      href: minecraft/server-1xx/InputPermissionCategory.md
+    - name: ItemComponentTypes
+      href: minecraft/server-1xx/ItemComponentTypes.md
+    - name: ItemLockMode
+      href: minecraft/server-1xx/ItemLockMode.md
+    - name: LiquidType
+      href: minecraft/server-1xx/LiquidType.md
+    - name: MemoryTier
+      href: minecraft/server-1xx/MemoryTier.md
+    - name: MoonPhase
+      href: minecraft/server-1xx/MoonPhase.md
+    - name: NamespaceNameErrorReason
+      href: minecraft/server-1xx/NamespaceNameErrorReason.md
+    - name: ObjectiveSortOrder
+      href: minecraft/server-1xx/ObjectiveSortOrder.md
+    - name: PaletteColor
+      href: minecraft/server-1xx/PaletteColor.md
+    - name: PlatformType
+      href: minecraft/server-1xx/PlatformType.md
+    - name: ScoreboardIdentityType
+      href: minecraft/server-1xx/ScoreboardIdentityType.md
+    - name: ScriptEventSource
+      href: minecraft/server-1xx/ScriptEventSource.md
+    - name: SignSide
+      href: minecraft/server-1xx/SignSide.md
+    - name: StructureAnimationMode
+      href: minecraft/server-1xx/StructureAnimationMode.md
+    - name: StructureMirrorAxis
+      href: minecraft/server-1xx/StructureMirrorAxis.md
+    - name: StructureRotation
+      href: minecraft/server-1xx/StructureRotation.md
+    - name: StructureSaveMode
+      href: minecraft/server-1xx/StructureSaveMode.md
+    - name: TimeOfDay
+      href: minecraft/server-1xx/TimeOfDay.md
+    - name: WeatherType
+      href: minecraft/server-1xx/WeatherType.md
+    - name: Block
+      href: minecraft/server-1xx/Block.md
+    - name: BlockComponent
+      href: minecraft/server-1xx/BlockComponent.md
+    - name: BlockComponentEntityFallOnEvent
+      href: minecraft/server-1xx/BlockComponentEntityFallOnEvent.md
+    - name: BlockComponentOnPlaceEvent
+      href: minecraft/server-1xx/BlockComponentOnPlaceEvent.md
+    - name: BlockComponentPlayerDestroyEvent
+      href: minecraft/server-1xx/BlockComponentPlayerDestroyEvent.md
+    - name: BlockComponentPlayerInteractEvent
+      href: minecraft/server-1xx/BlockComponentPlayerInteractEvent.md
+    - name: BlockComponentPlayerPlaceBeforeEvent
+      href: minecraft/server-1xx/BlockComponentPlayerPlaceBeforeEvent.md
+    - name: BlockComponentRandomTickEvent
+      href: minecraft/server-1xx/BlockComponentRandomTickEvent.md
+    - name: BlockComponentRegistry
+      href: minecraft/server-1xx/BlockComponentRegistry.md
+    - name: BlockComponentStepOffEvent
+      href: minecraft/server-1xx/BlockComponentStepOffEvent.md
+    - name: BlockComponentStepOnEvent
+      href: minecraft/server-1xx/BlockComponentStepOnEvent.md
+    - name: BlockComponentTickEvent
+      href: minecraft/server-1xx/BlockComponentTickEvent.md
+    - name: BlockEvent
+      href: minecraft/server-1xx/BlockEvent.md
+    - name: BlockExplodeAfterEvent
+      href: minecraft/server-1xx/BlockExplodeAfterEvent.md
+    - name: BlockExplodeAfterEventSignal
+      href: minecraft/server-1xx/BlockExplodeAfterEventSignal.md
+    - name: BlockFluidContainerComponent
+      href: minecraft/server-1xx/BlockFluidContainerComponent.md
+    - name: BlockInventoryComponent
+      href: minecraft/server-1xx/BlockInventoryComponent.md
+    - name: BlockLocationIterator
+      href: minecraft/server-1xx/BlockLocationIterator.md
+    - name: BlockPermutation
+      href: minecraft/server-1xx/BlockPermutation.md
+    - name: BlockPistonComponent
+      href: minecraft/server-1xx/BlockPistonComponent.md
+    - name: BlockRecordPlayerComponent
+      href: minecraft/server-1xx/BlockRecordPlayerComponent.md
+    - name: BlockSignComponent
+      href: minecraft/server-1xx/BlockSignComponent.md
+    - name: BlockStates
+      href: minecraft/server-1xx/BlockStates.md
+    - name: BlockStateType
+      href: minecraft/server-1xx/BlockStateType.md
+    - name: BlockType
+      href: minecraft/server-1xx/BlockType.md
+    - name: BlockTypes
+      href: minecraft/server-1xx/BlockTypes.md
+    - name: BlockVolume
+      href: minecraft/server-1xx/BlockVolume.md
+    - name: BlockVolumeBase
+      href: minecraft/server-1xx/BlockVolumeBase.md
+    - name: ButtonPushAfterEvent
+      href: minecraft/server-1xx/ButtonPushAfterEvent.md
+    - name: ButtonPushAfterEventSignal
+      href: minecraft/server-1xx/ButtonPushAfterEventSignal.md
+    - name: Camera
+      href: minecraft/server-1xx/Camera.md
+    - name: ClientSystemInfo
+      href: minecraft/server-1xx/ClientSystemInfo.md
+    - name: CommandResult
+      href: minecraft/server-1xx/CommandResult.md
+    - name: Component
+      href: minecraft/server-1xx/Component.md
+    - name: Container
+      href: minecraft/server-1xx/Container.md
+    - name: ContainerSlot
+      href: minecraft/server-1xx/ContainerSlot.md
+    - name: DataDrivenEntityTriggerAfterEvent
+      href: minecraft/server-1xx/DataDrivenEntityTriggerAfterEvent.md
+    - name: DataDrivenEntityTriggerAfterEventSignal
+      href: minecraft/server-1xx/DataDrivenEntityTriggerAfterEventSignal.md
+    - name: Dimension
+      href: minecraft/server-1xx/Dimension.md
+    - name: DimensionType
+      href: minecraft/server-1xx/DimensionType.md
+    - name: DimensionTypes
+      href: minecraft/server-1xx/DimensionTypes.md
+    - name: Effect
+      href: minecraft/server-1xx/Effect.md
+    - name: EffectAddAfterEvent
+      href: minecraft/server-1xx/EffectAddAfterEvent.md
+    - name: EffectAddAfterEventSignal
+      href: minecraft/server-1xx/EffectAddAfterEventSignal.md
+    - name: EffectAddBeforeEvent
+      href: minecraft/server-1xx/EffectAddBeforeEvent.md
+    - name: EffectAddBeforeEventSignal
+      href: minecraft/server-1xx/EffectAddBeforeEventSignal.md
+    - name: EffectType
+      href: minecraft/server-1xx/EffectType.md
+    - name: EffectTypes
+      href: minecraft/server-1xx/EffectTypes.md
+    - name: EnchantmentType
+      href: minecraft/server-1xx/EnchantmentType.md
+    - name: EnchantmentTypes
+      href: minecraft/server-1xx/EnchantmentTypes.md
+    - name: Entity
+      href: minecraft/server-1xx/Entity.md
+    - name: EntityAddRiderComponent
+      href: minecraft/server-1xx/EntityAddRiderComponent.md
+    - name: EntityAgeableComponent
+      href: minecraft/server-1xx/EntityAgeableComponent.md
+    - name: EntityAttributeComponent
+      href: minecraft/server-1xx/EntityAttributeComponent.md
+    - name: EntityBaseMovementComponent
+      href: minecraft/server-1xx/EntityBaseMovementComponent.md
+    - name: EntityBreathableComponent
+      href: minecraft/server-1xx/EntityBreathableComponent.md
+    - name: EntityCanClimbComponent
+      href: minecraft/server-1xx/EntityCanClimbComponent.md
+    - name: EntityCanFlyComponent
+      href: minecraft/server-1xx/EntityCanFlyComponent.md
+    - name: EntityCanPowerJumpComponent
+      href: minecraft/server-1xx/EntityCanPowerJumpComponent.md
+    - name: EntityColor2Component
+      href: minecraft/server-1xx/EntityColor2Component.md
+    - name: EntityColorComponent
+      href: minecraft/server-1xx/EntityColorComponent.md
+    - name: EntityComponent
+      href: minecraft/server-1xx/EntityComponent.md
+    - name: EntityDefinitionFeedItem
+      href: minecraft/server-1xx/EntityDefinitionFeedItem.md
+    - name: EntityDieAfterEvent
+      href: minecraft/server-1xx/EntityDieAfterEvent.md
+    - name: EntityDieAfterEventSignal
+      href: minecraft/server-1xx/EntityDieAfterEventSignal.md
+    - name: EntityEquippableComponent
+      href: minecraft/server-1xx/EntityEquippableComponent.md
+    - name: EntityFireImmuneComponent
+      href: minecraft/server-1xx/EntityFireImmuneComponent.md
+    - name: EntityFloatsInLiquidComponent
+      href: minecraft/server-1xx/EntityFloatsInLiquidComponent.md
+    - name: EntityFlyingSpeedComponent
+      href: minecraft/server-1xx/EntityFlyingSpeedComponent.md
+    - name: EntityFrictionModifierComponent
+      href: minecraft/server-1xx/EntityFrictionModifierComponent.md
+    - name: EntityGroundOffsetComponent
+      href: minecraft/server-1xx/EntityGroundOffsetComponent.md
+    - name: EntityHealableComponent
+      href: minecraft/server-1xx/EntityHealableComponent.md
+    - name: EntityHealthChangedAfterEvent
+      href: minecraft/server-1xx/EntityHealthChangedAfterEvent.md
+    - name: EntityHealthChangedAfterEventSignal
+      href: minecraft/server-1xx/EntityHealthChangedAfterEventSignal.md
+    - name: EntityHealthComponent
+      href: minecraft/server-1xx/EntityHealthComponent.md
+    - name: EntityHitBlockAfterEvent
+      href: minecraft/server-1xx/EntityHitBlockAfterEvent.md
+    - name: EntityHitBlockAfterEventSignal
+      href: minecraft/server-1xx/EntityHitBlockAfterEventSignal.md
+    - name: EntityHitEntityAfterEvent
+      href: minecraft/server-1xx/EntityHitEntityAfterEvent.md
+    - name: EntityHitEntityAfterEventSignal
+      href: minecraft/server-1xx/EntityHitEntityAfterEventSignal.md
+    - name: EntityHurtAfterEvent
+      href: minecraft/server-1xx/EntityHurtAfterEvent.md
+    - name: EntityHurtAfterEventSignal
+      href: minecraft/server-1xx/EntityHurtAfterEventSignal.md
+    - name: EntityInventoryComponent
+      href: minecraft/server-1xx/EntityInventoryComponent.md
+    - name: EntityIsBabyComponent
+      href: minecraft/server-1xx/EntityIsBabyComponent.md
+    - name: EntityIsChargedComponent
+      href: minecraft/server-1xx/EntityIsChargedComponent.md
+    - name: EntityIsChestedComponent
+      href: minecraft/server-1xx/EntityIsChestedComponent.md
+    - name: EntityIsDyeableComponent
+      href: minecraft/server-1xx/EntityIsDyeableComponent.md
+    - name: EntityIsHiddenWhenInvisibleComponent
+      href: minecraft/server-1xx/EntityIsHiddenWhenInvisibleComponent.md
+    - name: EntityIsIgnitedComponent
+      href: minecraft/server-1xx/EntityIsIgnitedComponent.md
+    - name: EntityIsIllagerCaptainComponent
+      href: minecraft/server-1xx/EntityIsIllagerCaptainComponent.md
+    - name: EntityIsSaddledComponent
+      href: minecraft/server-1xx/EntityIsSaddledComponent.md
+    - name: EntityIsShakingComponent
+      href: minecraft/server-1xx/EntityIsShakingComponent.md
+    - name: EntityIsShearedComponent
+      href: minecraft/server-1xx/EntityIsShearedComponent.md
+    - name: EntityIsStackableComponent
+      href: minecraft/server-1xx/EntityIsStackableComponent.md
+    - name: EntityIsStunnedComponent
+      href: minecraft/server-1xx/EntityIsStunnedComponent.md
+    - name: EntityIsTamedComponent
+      href: minecraft/server-1xx/EntityIsTamedComponent.md
+    - name: EntityItemComponent
+      href: minecraft/server-1xx/EntityItemComponent.md
+    - name: EntityLavaMovementComponent
+      href: minecraft/server-1xx/EntityLavaMovementComponent.md
+    - name: EntityLeashableComponent
+      href: minecraft/server-1xx/EntityLeashableComponent.md
+    - name: EntityLoadAfterEvent
+      href: minecraft/server-1xx/EntityLoadAfterEvent.md
+    - name: EntityLoadAfterEventSignal
+      href: minecraft/server-1xx/EntityLoadAfterEventSignal.md
+    - name: EntityMarkVariantComponent
+      href: minecraft/server-1xx/EntityMarkVariantComponent.md
+    - name: EntityMovementAmphibiousComponent
+      href: minecraft/server-1xx/EntityMovementAmphibiousComponent.md
+    - name: EntityMovementBasicComponent
+      href: minecraft/server-1xx/EntityMovementBasicComponent.md
+    - name: EntityMovementComponent
+      href: minecraft/server-1xx/EntityMovementComponent.md
+    - name: EntityMovementFlyComponent
+      href: minecraft/server-1xx/EntityMovementFlyComponent.md
+    - name: EntityMovementGenericComponent
+      href: minecraft/server-1xx/EntityMovementGenericComponent.md
+    - name: EntityMovementGlideComponent
+      href: minecraft/server-1xx/EntityMovementGlideComponent.md
+    - name: EntityMovementHoverComponent
+      href: minecraft/server-1xx/EntityMovementHoverComponent.md
+    - name: EntityMovementJumpComponent
+      href: minecraft/server-1xx/EntityMovementJumpComponent.md
+    - name: EntityMovementSkipComponent
+      href: minecraft/server-1xx/EntityMovementSkipComponent.md
+    - name: EntityMovementSwayComponent
+      href: minecraft/server-1xx/EntityMovementSwayComponent.md
+    - name: EntityNavigationClimbComponent
+      href: minecraft/server-1xx/EntityNavigationClimbComponent.md
+    - name: EntityNavigationComponent
+      href: minecraft/server-1xx/EntityNavigationComponent.md
+    - name: EntityNavigationFloatComponent
+      href: minecraft/server-1xx/EntityNavigationFloatComponent.md
+    - name: EntityNavigationFlyComponent
+      href: minecraft/server-1xx/EntityNavigationFlyComponent.md
+    - name: EntityNavigationGenericComponent
+      href: minecraft/server-1xx/EntityNavigationGenericComponent.md
+    - name: EntityNavigationHoverComponent
+      href: minecraft/server-1xx/EntityNavigationHoverComponent.md
+    - name: EntityNavigationWalkComponent
+      href: minecraft/server-1xx/EntityNavigationWalkComponent.md
+    - name: EntityOnFireComponent
+      href: minecraft/server-1xx/EntityOnFireComponent.md
+    - name: EntityProjectileComponent
+      href: minecraft/server-1xx/EntityProjectileComponent.md
+    - name: EntityPushThroughComponent
+      href: minecraft/server-1xx/EntityPushThroughComponent.md
+    - name: EntityRemoveAfterEvent
+      href: minecraft/server-1xx/EntityRemoveAfterEvent.md
+    - name: EntityRemoveAfterEventSignal
+      href: minecraft/server-1xx/EntityRemoveAfterEventSignal.md
+    - name: EntityRemoveBeforeEvent
+      href: minecraft/server-1xx/EntityRemoveBeforeEvent.md
+    - name: EntityRemoveBeforeEventSignal
+      href: minecraft/server-1xx/EntityRemoveBeforeEventSignal.md
+    - name: EntityRideableComponent
+      href: minecraft/server-1xx/EntityRideableComponent.md
+    - name: EntityRidingComponent
+      href: minecraft/server-1xx/EntityRidingComponent.md
+    - name: EntityScaleComponent
+      href: minecraft/server-1xx/EntityScaleComponent.md
+    - name: EntitySkinIdComponent
+      href: minecraft/server-1xx/EntitySkinIdComponent.md
+    - name: EntitySpawnAfterEvent
+      href: minecraft/server-1xx/EntitySpawnAfterEvent.md
+    - name: EntitySpawnAfterEventSignal
+      href: minecraft/server-1xx/EntitySpawnAfterEventSignal.md
+    - name: EntityStrengthComponent
+      href: minecraft/server-1xx/EntityStrengthComponent.md
+    - name: EntityTameableComponent
+      href: minecraft/server-1xx/EntityTameableComponent.md
+    - name: EntityTameMountComponent
+      href: minecraft/server-1xx/EntityTameMountComponent.md
+    - name: EntityType
+      href: minecraft/server-1xx/EntityType.md
+    - name: EntityTypeFamilyComponent
+      href: minecraft/server-1xx/EntityTypeFamilyComponent.md
+    - name: EntityTypes
+      href: minecraft/server-1xx/EntityTypes.md
+    - name: EntityUnderwaterMovementComponent
+      href: minecraft/server-1xx/EntityUnderwaterMovementComponent.md
+    - name: EntityVariantComponent
+      href: minecraft/server-1xx/EntityVariantComponent.md
+    - name: EntityWantsJockeyComponent
+      href: minecraft/server-1xx/EntityWantsJockeyComponent.md
+    - name: ExplosionAfterEvent
+      href: minecraft/server-1xx/ExplosionAfterEvent.md
+    - name: ExplosionAfterEventSignal
+      href: minecraft/server-1xx/ExplosionAfterEventSignal.md
+    - name: ExplosionBeforeEvent
+      href: minecraft/server-1xx/ExplosionBeforeEvent.md
+    - name: ExplosionBeforeEventSignal
+      href: minecraft/server-1xx/ExplosionBeforeEventSignal.md
+    - name: FeedItem
+      href: minecraft/server-1xx/FeedItem.md
+    - name: FeedItemEffect
+      href: minecraft/server-1xx/FeedItemEffect.md
+    - name: FluidContainer
+      href: minecraft/server-1xx/FluidContainer.md
+    - name: GameRuleChangeAfterEvent
+      href: minecraft/server-1xx/GameRuleChangeAfterEvent.md
+    - name: GameRuleChangeAfterEventSignal
+      href: minecraft/server-1xx/GameRuleChangeAfterEventSignal.md
+    - name: GameRules
+      href: minecraft/server-1xx/GameRules.md
+    - name: IButtonPushAfterEventSignal
+      href: minecraft/server-1xx/IButtonPushAfterEventSignal.md
+    - name: ILeverActionAfterEventSignal
+      href: minecraft/server-1xx/ILeverActionAfterEventSignal.md
+    - name: InputInfo
+      href: minecraft/server-1xx/InputInfo.md
+    - name: IPlayerJoinAfterEventSignal
+      href: minecraft/server-1xx/IPlayerJoinAfterEventSignal.md
+    - name: IPlayerLeaveAfterEventSignal
+      href: minecraft/server-1xx/IPlayerLeaveAfterEventSignal.md
+    - name: IPlayerSpawnAfterEventSignal
+      href: minecraft/server-1xx/IPlayerSpawnAfterEventSignal.md
+    - name: ItemCompleteUseAfterEvent
+      href: minecraft/server-1xx/ItemCompleteUseAfterEvent.md
+    - name: ItemCompleteUseAfterEventSignal
+      href: minecraft/server-1xx/ItemCompleteUseAfterEventSignal.md
+    - name: ItemCompleteUseEvent
+      href: minecraft/server-1xx/ItemCompleteUseEvent.md
+    - name: ItemComponent
+      href: minecraft/server-1xx/ItemComponent.md
+    - name: ItemComponentBeforeDurabilityDamageEvent
+      href: minecraft/server-1xx/ItemComponentBeforeDurabilityDamageEvent.md
+    - name: ItemComponentCompleteUseEvent
+      href: minecraft/server-1xx/ItemComponentCompleteUseEvent.md
+    - name: ItemComponentConsumeEvent
+      href: minecraft/server-1xx/ItemComponentConsumeEvent.md
+    - name: ItemComponentHitEntityEvent
+      href: minecraft/server-1xx/ItemComponentHitEntityEvent.md
+    - name: ItemComponentMineBlockEvent
+      href: minecraft/server-1xx/ItemComponentMineBlockEvent.md
+    - name: ItemComponentRegistry
+      href: minecraft/server-1xx/ItemComponentRegistry.md
+    - name: ItemComponentUseEvent
+      href: minecraft/server-1xx/ItemComponentUseEvent.md
+    - name: ItemComponentUseOnEvent
+      href: minecraft/server-1xx/ItemComponentUseOnEvent.md
+    - name: ItemCompostableComponent
+      href: minecraft/server-1xx/ItemCompostableComponent.md
+    - name: ItemCooldownComponent
+      href: minecraft/server-1xx/ItemCooldownComponent.md
+    - name: ItemDurabilityComponent
+      href: minecraft/server-1xx/ItemDurabilityComponent.md
+    - name: ItemEnchantableComponent
+      href: minecraft/server-1xx/ItemEnchantableComponent.md
+    - name: ItemFoodComponent
+      href: minecraft/server-1xx/ItemFoodComponent.md
+    - name: ItemReleaseUseAfterEvent
+      href: minecraft/server-1xx/ItemReleaseUseAfterEvent.md
+    - name: ItemReleaseUseAfterEventSignal
+      href: minecraft/server-1xx/ItemReleaseUseAfterEventSignal.md
+    - name: ItemStack
+      href: minecraft/server-1xx/ItemStack.md
+    - name: ItemStartUseAfterEvent
+      href: minecraft/server-1xx/ItemStartUseAfterEvent.md
+    - name: ItemStartUseAfterEventSignal
+      href: minecraft/server-1xx/ItemStartUseAfterEventSignal.md
+    - name: ItemStartUseOnAfterEvent
+      href: minecraft/server-1xx/ItemStartUseOnAfterEvent.md
+    - name: ItemStartUseOnAfterEventSignal
+      href: minecraft/server-1xx/ItemStartUseOnAfterEventSignal.md
+    - name: ItemStopUseAfterEvent
+      href: minecraft/server-1xx/ItemStopUseAfterEvent.md
+    - name: ItemStopUseAfterEventSignal
+      href: minecraft/server-1xx/ItemStopUseAfterEventSignal.md
+    - name: ItemStopUseOnAfterEvent
+      href: minecraft/server-1xx/ItemStopUseOnAfterEvent.md
+    - name: ItemStopUseOnAfterEventSignal
+      href: minecraft/server-1xx/ItemStopUseOnAfterEventSignal.md
+    - name: ItemType
+      href: minecraft/server-1xx/ItemType.md
+    - name: ItemTypes
+      href: minecraft/server-1xx/ItemTypes.md
+    - name: ItemUseAfterEvent
+      href: minecraft/server-1xx/ItemUseAfterEvent.md
+    - name: ItemUseAfterEventSignal
+      href: minecraft/server-1xx/ItemUseAfterEventSignal.md
+    - name: ItemUseBeforeEvent
+      href: minecraft/server-1xx/ItemUseBeforeEvent.md
+    - name: ItemUseBeforeEventSignal
+      href: minecraft/server-1xx/ItemUseBeforeEventSignal.md
+    - name: ItemUseOnAfterEvent
+      href: minecraft/server-1xx/ItemUseOnAfterEvent.md
+    - name: ItemUseOnAfterEventSignal
+      href: minecraft/server-1xx/ItemUseOnAfterEventSignal.md
+    - name: ItemUseOnBeforeEvent
+      href: minecraft/server-1xx/ItemUseOnBeforeEvent.md
+    - name: ItemUseOnBeforeEventSignal
+      href: minecraft/server-1xx/ItemUseOnBeforeEventSignal.md
+    - name: ItemUseOnEvent
+      href: minecraft/server-1xx/ItemUseOnEvent.md
+    - name: LeverActionAfterEvent
+      href: minecraft/server-1xx/LeverActionAfterEvent.md
+    - name: LeverActionAfterEventSignal
+      href: minecraft/server-1xx/LeverActionAfterEventSignal.md
+    - name: ListBlockVolume
+      href: minecraft/server-1xx/ListBlockVolume.md
+    - name: MinecraftDimensionTypes
+      href: minecraft/server-1xx/MinecraftDimensionTypes.md
+    - name: MolangVariableMap
+      href: minecraft/server-1xx/MolangVariableMap.md
+    - name: PistonActivateAfterEvent
+      href: minecraft/server-1xx/PistonActivateAfterEvent.md
+    - name: PistonActivateAfterEventSignal
+      href: minecraft/server-1xx/PistonActivateAfterEventSignal.md
+    - name: Player
+      href: minecraft/server-1xx/Player.md
+    - name: PlayerBreakBlockAfterEvent
+      href: minecraft/server-1xx/PlayerBreakBlockAfterEvent.md
+    - name: PlayerBreakBlockAfterEventSignal
+      href: minecraft/server-1xx/PlayerBreakBlockAfterEventSignal.md
+    - name: PlayerBreakBlockBeforeEvent
+      href: minecraft/server-1xx/PlayerBreakBlockBeforeEvent.md
+    - name: PlayerBreakBlockBeforeEventSignal
+      href: minecraft/server-1xx/PlayerBreakBlockBeforeEventSignal.md
+    - name: PlayerButtonInputAfterEvent
+      href: minecraft/server-1xx/PlayerButtonInputAfterEvent.md
+    - name: PlayerButtonInputAfterEventSignal
+      href: minecraft/server-1xx/PlayerButtonInputAfterEventSignal.md
+    - name: PlayerCursorInventoryComponent
+      href: minecraft/server-1xx/PlayerCursorInventoryComponent.md
+    - name: PlayerDimensionChangeAfterEvent
+      href: minecraft/server-1xx/PlayerDimensionChangeAfterEvent.md
+    - name: PlayerDimensionChangeAfterEventSignal
+      href: minecraft/server-1xx/PlayerDimensionChangeAfterEventSignal.md
+    - name: PlayerEmoteAfterEvent
+      href: minecraft/server-1xx/PlayerEmoteAfterEvent.md
+    - name: PlayerEmoteAfterEventSignal
+      href: minecraft/server-1xx/PlayerEmoteAfterEventSignal.md
+    - name: PlayerGameModeChangeAfterEvent
+      href: minecraft/server-1xx/PlayerGameModeChangeAfterEvent.md
+    - name: PlayerGameModeChangeAfterEventSignal
+      href: minecraft/server-1xx/PlayerGameModeChangeAfterEventSignal.md
+    - name: PlayerGameModeChangeBeforeEvent
+      href: minecraft/server-1xx/PlayerGameModeChangeBeforeEvent.md
+    - name: PlayerGameModeChangeBeforeEventSignal
+      href: minecraft/server-1xx/PlayerGameModeChangeBeforeEventSignal.md
+    - name: PlayerInputModeChangeAfterEvent
+      href: minecraft/server-1xx/PlayerInputModeChangeAfterEvent.md
+    - name: PlayerInputModeChangeAfterEventSignal
+      href: minecraft/server-1xx/PlayerInputModeChangeAfterEventSignal.md
+    - name: PlayerInputPermissionCategoryChangeAfterEvent
+      href: minecraft/server-1xx/PlayerInputPermissionCategoryChangeAfterEvent.md
+    - name: PlayerInputPermissionCategoryChangeAfterEventSignal
+      href: minecraft/server-1xx/PlayerInputPermissionCategoryChangeAfterEventSignal.md
+    - name: PlayerInputPermissions
+      href: minecraft/server-1xx/PlayerInputPermissions.md
+    - name: PlayerInteractWithBlockAfterEvent
+      href: minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md
+    - name: PlayerInteractWithBlockAfterEventSignal
+      href: minecraft/server-1xx/PlayerInteractWithBlockAfterEventSignal.md
+    - name: PlayerInteractWithBlockBeforeEvent
+      href: minecraft/server-1xx/PlayerInteractWithBlockBeforeEvent.md
+    - name: PlayerInteractWithBlockBeforeEventSignal
+      href: minecraft/server-1xx/PlayerInteractWithBlockBeforeEventSignal.md
+    - name: PlayerInteractWithEntityAfterEvent
+      href: minecraft/server-1xx/PlayerInteractWithEntityAfterEvent.md
+    - name: PlayerInteractWithEntityAfterEventSignal
+      href: minecraft/server-1xx/PlayerInteractWithEntityAfterEventSignal.md
+    - name: PlayerInteractWithEntityBeforeEvent
+      href: minecraft/server-1xx/PlayerInteractWithEntityBeforeEvent.md
+    - name: PlayerInteractWithEntityBeforeEventSignal
+      href: minecraft/server-1xx/PlayerInteractWithEntityBeforeEventSignal.md
+    - name: PlayerJoinAfterEvent
+      href: minecraft/server-1xx/PlayerJoinAfterEvent.md
+    - name: PlayerJoinAfterEventSignal
+      href: minecraft/server-1xx/PlayerJoinAfterEventSignal.md
+    - name: PlayerLeaveAfterEvent
+      href: minecraft/server-1xx/PlayerLeaveAfterEvent.md
+    - name: PlayerLeaveAfterEventSignal
+      href: minecraft/server-1xx/PlayerLeaveAfterEventSignal.md
+    - name: PlayerLeaveBeforeEvent
+      href: minecraft/server-1xx/PlayerLeaveBeforeEvent.md
+    - name: PlayerLeaveBeforeEventSignal
+      href: minecraft/server-1xx/PlayerLeaveBeforeEventSignal.md
+    - name: PlayerPlaceBlockAfterEvent
+      href: minecraft/server-1xx/PlayerPlaceBlockAfterEvent.md
+    - name: PlayerPlaceBlockAfterEventSignal
+      href: minecraft/server-1xx/PlayerPlaceBlockAfterEventSignal.md
+    - name: PlayerSpawnAfterEvent
+      href: minecraft/server-1xx/PlayerSpawnAfterEvent.md
+    - name: PlayerSpawnAfterEventSignal
+      href: minecraft/server-1xx/PlayerSpawnAfterEventSignal.md
+    - name: PressurePlatePopAfterEvent
+      href: minecraft/server-1xx/PressurePlatePopAfterEvent.md
+    - name: PressurePlatePopAfterEventSignal
+      href: minecraft/server-1xx/PressurePlatePopAfterEventSignal.md
+    - name: PressurePlatePushAfterEvent
+      href: minecraft/server-1xx/PressurePlatePushAfterEvent.md
+    - name: PressurePlatePushAfterEventSignal
+      href: minecraft/server-1xx/PressurePlatePushAfterEventSignal.md
+    - name: ProjectileHitBlockAfterEvent
+      href: minecraft/server-1xx/ProjectileHitBlockAfterEvent.md
+    - name: ProjectileHitBlockAfterEventSignal
+      href: minecraft/server-1xx/ProjectileHitBlockAfterEventSignal.md
+    - name: ProjectileHitEntityAfterEvent
+      href: minecraft/server-1xx/ProjectileHitEntityAfterEvent.md
+    - name: ProjectileHitEntityAfterEventSignal
+      href: minecraft/server-1xx/ProjectileHitEntityAfterEventSignal.md
+    - name: Scoreboard
+      href: minecraft/server-1xx/Scoreboard.md
+    - name: ScoreboardIdentity
+      href: minecraft/server-1xx/ScoreboardIdentity.md
+    - name: ScoreboardObjective
+      href: minecraft/server-1xx/ScoreboardObjective.md
+    - name: ScoreboardScoreInfo
+      href: minecraft/server-1xx/ScoreboardScoreInfo.md
+    - name: ScreenDisplay
+      href: minecraft/server-1xx/ScreenDisplay.md
+    - name: ScriptEventCommandMessageAfterEvent
+      href: minecraft/server-1xx/ScriptEventCommandMessageAfterEvent.md
+    - name: ScriptEventCommandMessageAfterEventSignal
+      href: minecraft/server-1xx/ScriptEventCommandMessageAfterEventSignal.md
+    - name: Seat
+      href: minecraft/server-1xx/Seat.md
+    - name: Structure
+      href: minecraft/server-1xx/Structure.md
+    - name: StructureManager
+      href: minecraft/server-1xx/StructureManager.md
+    - name: System
+      href: minecraft/server-1xx/System.md
+    - name: SystemAfterEvents
+      href: minecraft/server-1xx/SystemAfterEvents.md
+    - name: SystemInfo
+      href: minecraft/server-1xx/SystemInfo.md
+    - name: TargetBlockHitAfterEvent
+      href: minecraft/server-1xx/TargetBlockHitAfterEvent.md
+    - name: TargetBlockHitAfterEventSignal
+      href: minecraft/server-1xx/TargetBlockHitAfterEventSignal.md
+    - name: Trigger
+      href: minecraft/server-1xx/Trigger.md
+    - name: TripWireTripAfterEvent
+      href: minecraft/server-1xx/TripWireTripAfterEvent.md
+    - name: TripWireTripAfterEventSignal
+      href: minecraft/server-1xx/TripWireTripAfterEventSignal.md
+    - name: WeatherChangeAfterEvent
+      href: minecraft/server-1xx/WeatherChangeAfterEvent.md
+    - name: WeatherChangeAfterEventSignal
+      href: minecraft/server-1xx/WeatherChangeAfterEventSignal.md
+    - name: WeatherChangeBeforeEvent
+      href: minecraft/server-1xx/WeatherChangeBeforeEvent.md
+    - name: WeatherChangeBeforeEventSignal
+      href: minecraft/server-1xx/WeatherChangeBeforeEventSignal.md
+    - name: World
+      href: minecraft/server-1xx/World.md
+    - name: WorldAfterEvents
+      href: minecraft/server-1xx/WorldAfterEvents.md
+    - name: WorldBeforeEvents
+      href: minecraft/server-1xx/WorldBeforeEvents.md
+    - name: WorldInitializeAfterEvent
+      href: minecraft/server-1xx/WorldInitializeAfterEvent.md
+    - name: WorldInitializeAfterEventSignal
+      href: minecraft/server-1xx/WorldInitializeAfterEventSignal.md
+    - name: WorldInitializeBeforeEvent
+      href: minecraft/server-1xx/WorldInitializeBeforeEvent.md
+    - name: WorldInitializeBeforeEventSignal
+      href: minecraft/server-1xx/WorldInitializeBeforeEventSignal.md
+    - name: BlockBoundingBox
+      href: minecraft/server-1xx/BlockBoundingBox.md
+    - name: BlockCustomComponent
+      href: minecraft/server-1xx/BlockCustomComponent.md
+    - name: BlockEventOptions
+      href: minecraft/server-1xx/BlockEventOptions.md
+    - name: BlockFillOptions
+      href: minecraft/server-1xx/BlockFillOptions.md
+    - name: BlockFilter
+      href: minecraft/server-1xx/BlockFilter.md
+    - name: BlockHitInformation
+      href: minecraft/server-1xx/BlockHitInformation.md
+    - name: BlockRaycastHit
+      href: minecraft/server-1xx/BlockRaycastHit.md
+    - name: BlockRaycastOptions
+      href: minecraft/server-1xx/BlockRaycastOptions.md
+    - name: CameraDefaultOptions
+      href: minecraft/server-1xx/CameraDefaultOptions.md
+    - name: CameraEaseOptions
+      href: minecraft/server-1xx/CameraEaseOptions.md
+    - name: CameraFadeOptions
+      href: minecraft/server-1xx/CameraFadeOptions.md
+    - name: CameraFadeTimeOptions
+      href: minecraft/server-1xx/CameraFadeTimeOptions.md
+    - name: CameraFixedBoomOptions
+      href: minecraft/server-1xx/CameraFixedBoomOptions.md
+    - name: CameraSetFacingOptions
+      href: minecraft/server-1xx/CameraSetFacingOptions.md
+    - name: CameraSetLocationOptions
+      href: minecraft/server-1xx/CameraSetLocationOptions.md
+    - name: CameraSetPosOptions
+      href: minecraft/server-1xx/CameraSetPosOptions.md
+    - name: CameraSetRotOptions
+      href: minecraft/server-1xx/CameraSetRotOptions.md
+    - name: CameraTargetOptions
+      href: minecraft/server-1xx/CameraTargetOptions.md
+    - name: DefinitionModifier
+      href: minecraft/server-1xx/DefinitionModifier.md
+    - name: DimensionLocation
+      href: minecraft/server-1xx/DimensionLocation.md
+    - name: Enchantment
+      href: minecraft/server-1xx/Enchantment.md
+    - name: EntityApplyDamageByProjectileOptions
+      href: minecraft/server-1xx/EntityApplyDamageByProjectileOptions.md
+    - name: EntityApplyDamageOptions
+      href: minecraft/server-1xx/EntityApplyDamageOptions.md
+    - name: EntityDamageSource
+      href: minecraft/server-1xx/EntityDamageSource.md
+    - name: EntityDataDrivenTriggerEventOptions
+      href: minecraft/server-1xx/EntityDataDrivenTriggerEventOptions.md
+    - name: EntityEffectOptions
+      href: minecraft/server-1xx/EntityEffectOptions.md
+    - name: EntityEventOptions
+      href: minecraft/server-1xx/EntityEventOptions.md
+    - name: EntityFilter
+      href: minecraft/server-1xx/EntityFilter.md
+    - name: EntityHitInformation
+      href: minecraft/server-1xx/EntityHitInformation.md
+    - name: EntityQueryOptions
+      href: minecraft/server-1xx/EntityQueryOptions.md
+    - name: EntityQueryPropertyOptions
+      href: minecraft/server-1xx/EntityQueryPropertyOptions.md
+    - name: EntityQueryScoreOptions
+      href: minecraft/server-1xx/EntityQueryScoreOptions.md
+    - name: EntityRaycastHit
+      href: minecraft/server-1xx/EntityRaycastHit.md
+    - name: EntityRaycastOptions
+      href: minecraft/server-1xx/EntityRaycastOptions.md
+    - name: EqualsComparison
+      href: minecraft/server-1xx/EqualsComparison.md
+    - name: ExplosionOptions
+      href: minecraft/server-1xx/ExplosionOptions.md
+    - name: GreaterThanComparison
+      href: minecraft/server-1xx/GreaterThanComparison.md
+    - name: GreaterThanOrEqualsComparison
+      href: minecraft/server-1xx/GreaterThanOrEqualsComparison.md
+    - name: InputEventOptions
+      href: minecraft/server-1xx/InputEventOptions.md
+    - name: ItemCustomComponent
+      href: minecraft/server-1xx/ItemCustomComponent.md
+    - name: JigsawPlaceOptions
+      href: minecraft/server-1xx/JigsawPlaceOptions.md
+    - name: JigsawStructurePlaceOptions
+      href: minecraft/server-1xx/JigsawStructurePlaceOptions.md
+    - name: LessThanComparison
+      href: minecraft/server-1xx/LessThanComparison.md
+    - name: LessThanOrEqualsComparison
+      href: minecraft/server-1xx/LessThanOrEqualsComparison.md
+    - name: MusicOptions
+      href: minecraft/server-1xx/MusicOptions.md
+    - name: NotEqualsComparison
+      href: minecraft/server-1xx/NotEqualsComparison.md
+    - name: PlayAnimationOptions
+      href: minecraft/server-1xx/PlayAnimationOptions.md
+    - name: PlayerSoundOptions
+      href: minecraft/server-1xx/PlayerSoundOptions.md
+    - name: ProjectileShootOptions
+      href: minecraft/server-1xx/ProjectileShootOptions.md
+    - name: RangeComparison
+      href: minecraft/server-1xx/RangeComparison.md
+    - name: RawMessage
+      href: minecraft/server-1xx/RawMessage.md
+    - name: RawMessageScore
+      href: minecraft/server-1xx/RawMessageScore.md
+    - name: RawText
+      href: minecraft/server-1xx/RawText.md
+    - name: RGB
+      href: minecraft/server-1xx/RGB.md
+    - name: RGBA
+      href: minecraft/server-1xx/RGBA.md
+    - name: ScoreboardObjectiveDisplayOptions
+      href: minecraft/server-1xx/ScoreboardObjectiveDisplayOptions.md
+    - name: ScriptEventMessageFilterOptions
+      href: minecraft/server-1xx/ScriptEventMessageFilterOptions.md
+    - name: StructureCreateOptions
+      href: minecraft/server-1xx/StructureCreateOptions.md
+    - name: StructurePlaceOptions
+      href: minecraft/server-1xx/StructurePlaceOptions.md
+    - name: TeleportOptions
+      href: minecraft/server-1xx/TeleportOptions.md
+    - name: TitleDisplayOptions
+      href: minecraft/server-1xx/TitleDisplayOptions.md
+    - name: Vector2
+      href: minecraft/server-1xx/Vector2.md
+    - name: Vector3
+      href: minecraft/server-1xx/Vector3.md
+    - name: VectorXZ
+      href: minecraft/server-1xx/VectorXZ.md
+    - name: WorldSoundOptions
+      href: minecraft/server-1xx/WorldSoundOptions.md
+  - name: minecraft/server-ui 1.x.x
+    items:
+    - name: minecraft/server-ui 1.x.x
+      href: minecraft/server-ui-1xx/minecraft-server-ui.md
+    - name: FormCancelationReason
+      href: minecraft/server-ui-1xx/FormCancelationReason.md
+    - name: FormRejectReason
+      href: minecraft/server-ui-1xx/FormRejectReason.md
+    - name: ActionFormData
+      href: minecraft/server-ui-1xx/ActionFormData.md
+    - name: ActionFormResponse
+      href: minecraft/server-ui-1xx/ActionFormResponse.md
+    - name: FormResponse
+      href: minecraft/server-ui-1xx/FormResponse.md
+    - name: MessageFormData
+      href: minecraft/server-ui-1xx/MessageFormData.md
+    - name: MessageFormResponse
+      href: minecraft/server-ui-1xx/MessageFormResponse.md
+    - name: ModalFormData
+      href: minecraft/server-ui-1xx/ModalFormData.md
+    - name: ModalFormResponse
+      href: minecraft/server-ui-1xx/ModalFormResponse.md
+    - name: UIManager
+      href: minecraft/server-ui-1xx/UIManager.md

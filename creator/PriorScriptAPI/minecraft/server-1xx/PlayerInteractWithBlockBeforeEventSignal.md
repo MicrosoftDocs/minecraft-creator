@@ -1,0 +1,49 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.PlayerInteractWithBlockBeforeEventSignal Class
+description: Contents of the @minecraft/server.PlayerInteractWithBlockBeforeEventSignal class (Version 1.x.x).
+---
+# PlayerInteractWithBlockBeforeEventSignal Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/PlayerInteractWithBlockBeforeEventSignal.md).
+
+Manages callbacks that are connected to before a player interacts with a block.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg0: PlayerInteractWithBlockBeforeEvent) => void): (arg0: PlayerInteractWithBlockBeforeEvent) => void
+`
+
+Adds a callback that will be called before a player interacts with a block.
+
+#### **Parameters**
+- **callback**: (arg0: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*
+
+**Returns** (arg0: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg0: PlayerInteractWithBlockBeforeEvent) => void): void
+`
+
+Removes a callback from being called before a player interacts with a block.
+
+#### **Parameters**
+- **callback**: (arg0: [*PlayerInteractWithBlockBeforeEvent*](PlayerInteractWithBlockBeforeEvent.md)) => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

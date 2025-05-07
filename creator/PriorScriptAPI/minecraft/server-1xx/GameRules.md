@@ -1,0 +1,313 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.GameRules Class
+description: Contents of the @minecraft/server.GameRules class (Version 1.x.x).
+---
+# GameRules Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/GameRules.md).
+
+Represents the game rules for a world experience.
+
+## Properties
+
+### **commandBlockOutput**
+`commandBlockOutput: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **commandBlocksEnabled**
+`commandBlocksEnabled: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **doDayLightCycle**
+`doDayLightCycle: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **doEntityDrops**
+`doEntityDrops: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **doFireTick**
+`doFireTick: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **doImmediateRespawn**
+`doImmediateRespawn: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **doInsomnia**
+`doInsomnia: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **doLimitedCrafting**
+`doLimitedCrafting: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **doMobLoot**
+`doMobLoot: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **doMobSpawning**
+`doMobSpawning: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **doTileDrops**
+`doTileDrops: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **doWeatherCycle**
+`doWeatherCycle: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **drowningDamage**
+`drowningDamage: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **fallDamage**
+`fallDamage: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **fireDamage**
+`fireDamage: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **freezeDamage**
+`freezeDamage: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **functionCommandLimit**
+`functionCommandLimit: number;`
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **keepInventory**
+`keepInventory: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **maxCommandChainLength**
+`maxCommandChainLength: number;`
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **mobGriefing**
+`mobGriefing: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **naturalRegeneration**
+`naturalRegeneration: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **playersSleepingPercentage**
+`playersSleepingPercentage: number;`
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **projectilesCanBreakBlocks**
+`projectilesCanBreakBlocks: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **pvp**
+`pvp: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **randomTickSpeed**
+`randomTickSpeed: number;`
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **recipesUnlock**
+`recipesUnlock: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **respawnBlocksExplode**
+`respawnBlocksExplode: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **sendCommandFeedback**
+`sendCommandFeedback: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **showBorderEffect**
+`showBorderEffect: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **showCoordinates**
+`showCoordinates: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **showDaysPlayed**
+`showDaysPlayed: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **showDeathMessages**
+`showDeathMessages: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **showRecipeMessages**
+`showRecipeMessages: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **showTags**
+`showTags: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **spawnRadius**
+`spawnRadius: number;`
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **tntExplodes**
+`tntExplodes: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+### **tntExplosionDropDecay**
+`tntExplosionDropDecay: boolean;`
+
+Type: *boolean*
+
+Notes:
+  - This property can't be edited in read-only mode.

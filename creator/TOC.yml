@@ -492,6 +492,8 @@
         href: Commands/TOC.yml
       - name: Script APIs
         href: ScriptAPI/TOC.yml
+      - name: Prior Versions of Script APIs
+        href: PriorScriptAPI/TOC.yml
       - name: Behavior Pack JSON Files
         items:
         - name: Pack Manifest JSON (Behavior or Resource or Skin)

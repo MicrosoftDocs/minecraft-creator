@@ -70,6 +70,8 @@
       href: minecraft/server/CompoundBlockVolumeAction.md
     - name: CompoundBlockVolumePositionRelativity
       href: minecraft/server/CompoundBlockVolumePositionRelativity.md
+    - name: ContainerRulesErrorReason
+      href: minecraft/server/ContainerRulesErrorReason.md
     - name: CustomCommandErrorReason
       href: minecraft/server/CustomCommandErrorReason.md
     - name: CustomCommandParamType
@@ -542,6 +544,8 @@
       href: minecraft/server/ItemEnchantableComponent.md
     - name: ItemFoodComponent
       href: minecraft/server/ItemFoodComponent.md
+    - name: ItemInventoryComponent
+      href: minecraft/server/ItemInventoryComponent.md
     - name: ItemPotionComponent
       href: minecraft/server/ItemPotionComponent.md
     - name: ItemReleaseUseAfterEvent
@@ -798,8 +802,6 @@
       href: minecraft/server/BlockRaycastHit.md
     - name: BlockRaycastOptions
       href: minecraft/server/BlockRaycastOptions.md
-    - name: CameraDefaultOptions
-      href: minecraft/server/CameraDefaultOptions.md
     - name: CameraEaseOptions
       href: minecraft/server/CameraEaseOptions.md
     - name: CameraFadeOptions
@@ -820,6 +822,8 @@
       href: minecraft/server/CameraTargetOptions.md
     - name: CompoundBlockVolumeItem
       href: minecraft/server/CompoundBlockVolumeItem.md
+    - name: ContainerRules
+      href: minecraft/server/ContainerRules.md
     - name: CustomCommand
       href: minecraft/server/CustomCommand.md
     - name: CustomCommandParameter
@@ -1280,6 +1284,12 @@
       href: minecraft/server-editor/IColorPickerPropertyItem.md
     - name: IColorPickerPropertyItemOptions
       href: minecraft/server-editor/IColorPickerPropertyItemOptions.md
+    - name: IColorTimelinePropertyItem
+      href: minecraft/server-editor/IColorTimelinePropertyItem.md
+    - name: IColorTimelinePropertyItemEntry
+      href: minecraft/server-editor/IColorTimelinePropertyItemEntry.md
+    - name: IColorTimelinePropertyItemOptions
+      href: minecraft/server-editor/IColorTimelinePropertyItemOptions.md
     - name: IComboBoxPropertyItem
       href: minecraft/server-editor/IComboBoxPropertyItem.md
     - name: IComboBoxPropertyItemOptions
@@ -1330,6 +1340,12 @@
       href: minecraft/server-editor/INumberPropertyItem.md
     - name: INumberPropertyItemOptions
       href: minecraft/server-editor/INumberPropertyItemOptions.md
+    - name: INumberTimelinePropertyItem
+      href: minecraft/server-editor/INumberTimelinePropertyItem.md
+    - name: INumberTimelinePropertyItemEntry
+      href: minecraft/server-editor/INumberTimelinePropertyItemEntry.md
+    - name: INumberTimelinePropertyItemOptions
+      href: minecraft/server-editor/INumberTimelinePropertyItemOptions.md
     - name: IObservable
       href: minecraft/server-editor/IObservable.md
     - name: IPane

@@ -1,0 +1,38 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.WorldInitializeBeforeEvent Class
+description: Contents of the @minecraft/server.WorldInitializeBeforeEvent class (Version 1.x.x).
+---
+# WorldInitializeBeforeEvent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module.
+
+> [!CAUTION]
+> This class is deprecated and will be removed in 2.0.0.
+
+Contains information and methods that can be used at the initialization of the scripting environment for a World. Also, use the supplied blockRegistry object to register block custom components within the scope of the World Initialize execution.
+
+## Properties
+
+### **blockComponentRegistry**
+`read-only blockComponentRegistry: BlockComponentRegistry;`
+
+Type: [*BlockComponentRegistry*](BlockComponentRegistry.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+
+### **itemComponentRegistry**
+`read-only itemComponentRegistry: ItemComponentRegistry;`
+
+Provides the functionality for registering custom components for items.
+
+Type: [*ItemComponentRegistry*](ItemComponentRegistry.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.

@@ -1,0 +1,46 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityGroundOffsetComponent Class
+description: Contents of the @minecraft/server.EntityGroundOffsetComponent class (Version 1.x.x).
+---
+# EntityGroundOffsetComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module.
+
+> [!CAUTION]
+> This class is deprecated and will be removed in 2.0.0.
+
+## Extends
+- [*EntityComponent*](EntityComponent.md)
+
+Sets the offset from the ground that the entity is actually at.
+
+## Properties
+
+### **value**
+`value: number;`
+
+Value of this particular ground offset. Note that this value is effectively read only; setting the ground offset value will not have an impact on the related entity.
+
+Type: *number*
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:ground_offset";`
+
+Type: *string*
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.

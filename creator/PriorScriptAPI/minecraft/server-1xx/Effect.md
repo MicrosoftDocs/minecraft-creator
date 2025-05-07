@@ -1,0 +1,72 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.Effect Class
+description: Contents of the @minecraft/server.Effect class (Version 1.x.x).
+---
+# Effect Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/Effect.md).
+
+Represents an effect - like poison - that has been added to an Entity.
+
+## Properties
+
+### **amplifier**
+`read-only amplifier: number;`
+
+Gets an amplifier that may have been applied to this effect. Sample values range typically from 0 to 4. Example: The effect 'Jump Boost II' will have an amplifier value of 1.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+### **displayName**
+`read-only displayName: string;`
+
+Gets the player-friendly name of this effect.
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+
+### **duration**
+`read-only duration: number;`
+
+Gets the entire specified duration, in ticks, of this effect. There are 20 ticks per second. Use [*@minecraft/server.TicksPerSecond*](../../../priorscriptapi/minecraft/server-1xx/minecraft-server.md#tickspersecond) constant to convert between ticks and seconds.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+### **typeId**
+`read-only typeId: string;`
+
+Gets the type id of this effect.
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+
+## Methods
+- [isValid](#isvalid)
+
+### **isValid**
+`
+isValid(): boolean
+`
+
+Returns whether an effect instance is available for use in this context.
+
+**Returns** *boolean*
+
+> [!CAUTION]
+> This function is deprecated and will be removed in 2.0.0.

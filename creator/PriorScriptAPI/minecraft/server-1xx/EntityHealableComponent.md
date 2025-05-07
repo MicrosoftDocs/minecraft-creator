@@ -1,0 +1,52 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityHealableComponent Class
+description: Contents of the @minecraft/server.EntityHealableComponent class (Version 1.x.x).
+---
+# EntityHealableComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityHealableComponent.md).
+
+## Extends
+- [*EntityComponent*](EntityComponent.md)
+
+Defines the interactions with this entity for healing it.
+
+## Properties
+
+### **forceUse**
+`read-only forceUse: boolean;`
+
+Determines if an item can be used regardless of the entity being at full health.
+
+Type: *boolean*
+
+Notes:
+  - This property can throw errors when used.
+
+## Methods
+- [getFeedItems](#getfeeditems)
+
+### **getFeedItems**
+`
+getFeedItems(): FeedItem[]
+`
+
+A set of items that can specifically heal this entity.
+
+**Returns** [*FeedItem*](FeedItem.md)[] - Entity that this component is associated with.
+  
+Notes:
+- This function can throw errors.
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:healable";`
+
+Type: *string*

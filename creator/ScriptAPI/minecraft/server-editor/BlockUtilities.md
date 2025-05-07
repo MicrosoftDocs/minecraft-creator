@@ -11,6 +11,7 @@ description: Contents of the @minecraft/server-editor.BlockUtilities class.
 
 ## Methods
 - [fillVolume](#fillvolume)
+- [findObscuredBlocksWithinVolume](#findobscuredblockswithinvolume)
 - [getContiguousSelection](#getcontiguousselection)
 - [getDimensionLocationBoundingBox](#getdimensionlocationboundingbox)
 - [getDimensionMaxLocation](#getdimensionmaxlocation)
@@ -33,6 +34,19 @@ fillVolume(volume: minecraftserver.BlockVolumeBase | minecraftserver.CompoundBlo
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+### **findObscuredBlocksWithinVolume**
+`
+findObscuredBlocksWithinVolume(volume: minecraftserver.BlockVolumeBase | RelativeVolumeListBlockVolume): RelativeVolumeListBlockVolume
+`
+
+#### **Parameters**
+- **volume**: [*@minecraft/server.BlockVolumeBase*](../../../scriptapi/minecraft/server/BlockVolumeBase.md) | [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
+
+**Returns** [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **getContiguousSelection**
 `

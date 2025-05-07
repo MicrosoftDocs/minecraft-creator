@@ -32,5 +32,7 @@ The minecraft:enchantable component.
 `Food = "minecraft:food"`
 
 The minecraft:food component.
+### **Inventory**
+`Inventory = "minecraft:inventory"`
 ### **Potion**
 `Potion = "minecraft:potion"`

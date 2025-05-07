@@ -35,11 +35,11 @@ Specifies the state to transition to.
 Type: *string*
 
 ### **players**
-`players?: string[];`
+`players?: Player[];`
 
 A list of players the animation will be visible to.
 
-Type: *string*[]
+Type: [*Player*](Player.md)[]
 
 ### **stopExpression**
 `stopExpression?: string;`

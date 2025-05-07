@@ -24,6 +24,8 @@ Type of item that can be added to the property pane
 `ButtonPane = editorUI:ButtonPane`
 ### **ColorPicker**
 `ColorPicker = editorUI:ColorPicker`
+### **ColorTimeline**
+`ColorTimeline = editorUI:ColorTimeline`
 ### **ComboBox**
 `ComboBox = editorUI:ComboBox`
 ### **DataTable**
@@ -38,6 +40,8 @@ Type of item that can be added to the property pane
 `Link = editorUI:Link`
 ### **Number**
 `Number = editorUI:Number`
+### **NumberTimeline**
+`NumberTimeline = editorUI:NumberTimeline`
 ### **ProgressIndicator**
 `ProgressIndicator = editorUI:ProgressIndicator`
 ### **String**

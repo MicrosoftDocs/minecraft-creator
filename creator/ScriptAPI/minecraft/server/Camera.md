@@ -29,6 +29,9 @@ Type: *boolean*
 - [clear](#clear)
 - [fade](#fade)
 - [setCamera](#setcamera)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setDefaultCamera](#setdefaultcamera)
+::: moniker-end
 
 ### **clear**
 `
@@ -59,7 +62,7 @@ Notes:
 
 ### **setCamera**
 `
-setCamera(cameraPreset: string, setOptions?: CameraDefaultOptions | CameraFixedBoomOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions | CameraTargetOptions): void
+setCamera(cameraPreset: string, setOptions?: CameraFixedBoomOptions | CameraSetFacingOptions | CameraSetLocationOptions | CameraSetPosOptions | CameraSetRotOptions | CameraTargetOptions): void
 `
 
 Sets the current active camera for the specified player.
@@ -68,10 +71,34 @@ Sets the current active camera for the specified player.
 - **cameraPreset**: *string*
   
   Identifier of a camera preset file defined within JSON.
-- **setOptions**?: [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md) = `null`
+- **setOptions**?: [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md) = `null`
   
   Additional options for the camera.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setDefaultCamera**
+`
+setDefaultCamera(cameraPreset: string, easeOptions?: CameraEaseOptions): void
+`
+
+Sets the current active camera for the specified player and resets the position and rotation to the values defined in the JSON.
+
+#### **Parameters**
+- **cameraPreset**: *string*
+  
+  Identifier of a camera preset file defined within JSON.
+- **easeOptions**?: [*CameraEaseOptions*](CameraEaseOptions.md) = `null`
+  
+  Options to ease the camera back to its original position and rotation.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+::: moniker-end

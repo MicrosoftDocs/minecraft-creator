@@ -1,0 +1,34 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.BlockExplodeAfterEvent Class
+description: Contents of the @minecraft/server.BlockExplodeAfterEvent class (Version 1.x.x).
+---
+# BlockExplodeAfterEvent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/BlockExplodeAfterEvent.md).
+
+## Extends
+- [*BlockEvent*](BlockEvent.md)
+
+Contains information regarding an explosion that has occurred for a specific block.
+
+## Properties
+
+### **explodedBlockPermutation**
+`read-only explodedBlockPermutation: BlockPermutation;`
+
+Description of the block that has exploded.
+
+Type: [*BlockPermutation*](BlockPermutation.md)
+
+### **source**
+`read-only source?: Entity;`
+
+Optional source of the explosion.
+
+Type: [*Entity*](Entity.md)

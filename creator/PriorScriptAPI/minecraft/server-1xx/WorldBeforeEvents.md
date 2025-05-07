@@ -1,0 +1,139 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.WorldBeforeEvents Class
+description: Contents of the @minecraft/server.WorldBeforeEvents class (Version 1.x.x).
+---
+# WorldBeforeEvents Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/WorldBeforeEvents.md).
+
+A set of events that fire before an actual action occurs. In most cases, you can potentially cancel or modify the impending event. Note that in before events any APIs that modify gameplay state will not function and will throw an error. (e.g., dimension.spawnEntity) 
+
+## Properties
+
+### **effectAdd**
+`read-only effectAdd: EffectAddBeforeEventSignal;`
+
+This event is triggered after an event has been added to an entity.
+
+Type: [*EffectAddBeforeEventSignal*](EffectAddBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **entityRemove**
+`read-only entityRemove: EntityRemoveBeforeEventSignal;`
+
+Fires before an entity is removed from the world (for example, unloaded or removed after being killed.)
+
+Type: [*EntityRemoveBeforeEventSignal*](EntityRemoveBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **explosion**
+`read-only explosion: ExplosionBeforeEventSignal;`
+
+This event is fired after an explosion occurs.
+
+Type: [*ExplosionBeforeEventSignal*](ExplosionBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **itemUse**
+`read-only itemUse: ItemUseBeforeEventSignal;`
+
+This event fires when an item is successfully used by a player.
+
+Type: [*ItemUseBeforeEventSignal*](ItemUseBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **itemUseOn**
+`read-only itemUseOn: ItemUseOnBeforeEventSignal;`
+
+This event fires when an item is used on a block by a player.
+
+Type: [*ItemUseOnBeforeEventSignal*](ItemUseOnBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **playerBreakBlock**
+`read-only playerBreakBlock: PlayerBreakBlockBeforeEventSignal;`
+
+This event fires before a block is broken by a player.
+
+Type: [*PlayerBreakBlockBeforeEventSignal*](PlayerBreakBlockBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **playerGameModeChange**
+`read-only playerGameModeChange: PlayerGameModeChangeBeforeEventSignal;`
+
+Type: [*PlayerGameModeChangeBeforeEventSignal*](PlayerGameModeChangeBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **playerInteractWithBlock**
+`read-only playerInteractWithBlock: PlayerInteractWithBlockBeforeEventSignal;`
+
+Fires before a player interacts with a block.
+
+Type: [*PlayerInteractWithBlockBeforeEventSignal*](PlayerInteractWithBlockBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **playerInteractWithEntity**
+`read-only playerInteractWithEntity: PlayerInteractWithEntityBeforeEventSignal;`
+
+Fires before a player interacts with an entity.
+
+Type: [*PlayerInteractWithEntityBeforeEventSignal*](PlayerInteractWithEntityBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **playerLeave**
+`read-only playerLeave: PlayerLeaveBeforeEventSignal;`
+
+Fires when a player leaves the game.
+
+Type: [*PlayerLeaveBeforeEventSignal*](PlayerLeaveBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **weatherChange**
+`read-only weatherChange: WeatherChangeBeforeEventSignal;`
+
+Type: [*WeatherChangeBeforeEventSignal*](WeatherChangeBeforeEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **worldInitialize**
+`read-only worldInitialize: WorldInitializeBeforeEventSignal;`
+
+This event fires immediately when the script environment is initialized on a World. Not all script functionality may be available. For guaranteed access to world state, use the world initialize after event.
+
+Type: [*WorldInitializeBeforeEventSignal*](WorldInitializeBeforeEventSignal.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+
+Notes:
+  - This property can be read in early-execution mode.
