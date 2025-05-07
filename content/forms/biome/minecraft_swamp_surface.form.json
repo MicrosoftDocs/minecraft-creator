@@ -73,6 +73,12 @@
     "description": "Similar to overworld_surface. Adds swamp surface details.",
     "fields": [
       {
+        "id": "sea_floor_depth",
+        "title": "Sea Floor Depth",
+        "description": "Controls how deep below the world water level the floor should occur.",
+        "dataType": 0
+      },
+      {
         "id": "mid_material",
         "title": "Mid Material",
         "description": "Controls the block type used in a layer below the surface of this biome.",
@@ -112,12 +118,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "sea_floor_depth",
-        "title": "Sea Floor Depth",
-        "description": "Controls how deep below the world water level the floor should occur.",
-        "dataType": 0
       },
       {
         "id": "sea_floor_material",
@@ -161,18 +161,18 @@
         ]
       },
       {
-        "id": "sea_material",
-        "title": "Sea Material",
-        "description": "Controls the block type used for the bodies of water in this biome.",
+        "id": "foundation_material",
+        "title": "Foundation Material",
+        "description": "Controls the block type used deep underground in this biome.",
         "dataType": 2,
         "alternates": [
           {
-            "id": "sea_material",
+            "id": "foundation_material",
             "dataType": 16,
             "readOnly": true,
             "subForm": {
-              "id": "sea_material",
-              "title": "Sea Material",
+              "id": "foundation_material",
+              "title": "Foundation Material",
               "fields": [
                 {
                   "id": "name",
@@ -243,18 +243,18 @@
         ]
       },
       {
-        "id": "foundation_material",
-        "title": "Foundation Material",
-        "description": "Controls the block type used deep underground in this biome.",
+        "id": "sea_material",
+        "title": "Sea Material",
+        "description": "Controls the block type used for the bodies of water in this biome.",
         "dataType": 2,
         "alternates": [
           {
-            "id": "foundation_material",
+            "id": "sea_material",
             "dataType": 16,
             "readOnly": true,
             "subForm": {
-              "id": "foundation_material",
-              "title": "Foundation Material",
+              "id": "sea_material",
+              "title": "Sea Material",
               "fields": [
                 {
                   "id": "name",

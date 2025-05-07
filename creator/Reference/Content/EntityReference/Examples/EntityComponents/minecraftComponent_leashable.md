@@ -23,18 +23,18 @@ Describes how this mob can be leashed to other items.
 | on_leash | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when this entity is leashed. | Llama: `{"event":"minecraft:on_leash","target":"self"}` | 
 | on_unleash | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to call when this entity is unleashed. | Happy Ghast: `{"event":"minecraft:on_unleashed","target":"self"}`, Llama: `{"event":"minecraft:on_unleash","target":"self"}` | 
 | on_unleash_interact_only | false | Boolean true/false | When set to true, "on_unleash" does not trigger when the entity gets unleashed for reasons other than the player directly interacting with it. |  | 
-| presets | *not set* | Array of [Presets](#presets-item-type) items | Defines how this entity behaves when leashed to another entity. A preset is selected upon leashing and remains until the entity is leashed to something else. The first preset whose "filter" conditions are met will be applied; if none match, a default configuration is used instead. | Boat: `[{"filter":{"test":"is_family","subject":"other","value":"happy_ghast"},"spring_type":"quad_dampened","rotation_adjustment":90},{"rotation_adjustment":90,"soft_distance":2,"hard_distance":4}]`, Camel: `[{"filter":{"test":"is_family","subject":"other","value":"happy_ghast"},"spring_type":"quad_dampened"}]` | 
+| presets | *not set* | Array of [Presets](#presets-item-type) items | Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead. | Boat: `[{"filter":{"test":"is_family","subject":"other","value":"happy_ghast"},"spring_type":"quad_dampened","rotation_adjustment":90},{"rotation_adjustment":90,"soft_distance":2,"hard_distance":4}]`, Camel: `[{"filter":{"test":"is_family","subject":"other","value":"happy_ghast"},"spring_type":"quad_dampened"}]` | 
 | soft_distance | 4 | Integer number | Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it. |  | 
 
 ## Presets item type
-Defines how this entity behaves when leashed to another entity. A preset is selected upon leashing and remains until the entity is leashed to something else. The first preset whose "filter" conditions are met will be applied; if none match, a default configuration is used instead.
+Defines how this entity behaves when leashed to another entity. The first preset which "filter" conditions are met will be applied; if none match, a default configuration is used instead.
 
 
 #### Presets Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| filter | *not set* | Minecraft filter | Conditions that must be met for this preset to be applied. These conditions are only evaluated upon leashing. |  | 
+| filter | *not set* | Minecraft filter | Conditions that must be met for this preset to be applied. |  | 
 | hard_distance | 7 | Decimal number | Distance (in blocks) over which the entity starts being pulled toward the leash holder with an spring-like force. |  | 
 | max_distance | 12 | Decimal number | Distance in blocks at which the leash breaks. |  | 
 | rotation_adjustment | 0 | Decimal number | Adjusts the rotation at which the entity reaches equilibrium, when "spring_type" is set to "dampened" or "quad_dampened". |  | 

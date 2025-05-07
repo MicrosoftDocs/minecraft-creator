@@ -22,9 +22,9 @@ highlightedContent:
       itemType: reference
       url: ScriptAPI/index.yml
     #card
-    - title: "Minecraft Creator Camp - April 24th/25th"
+    - title: "Control Schemes"
       itemType: whats-new
-      url: Documents/CreatorCamp.md
+      url: Documents/ControlSchemes.md
     #card
     - title: "1.21.80 Update Summary"
       itemType: whats-new

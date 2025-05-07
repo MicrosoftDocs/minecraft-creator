@@ -28,7 +28,7 @@
             {
               "id": "texture",
               "title": "Texture",
-              "dataType": 2
+              "dataType": 16
             }
           ]
         }

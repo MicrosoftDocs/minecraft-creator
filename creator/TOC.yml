@@ -2,8 +2,6 @@
   items:
     - name: "Minecraft: Bedrock Documentation Homepage"
       href: index.yml
-    - name: Creator Camp Stream - April 24th/25th
-      href: Documents/CreatorCamp.md       
     - name: "Updates and News"
       items:
         - name: 1.21.80 Update Summary
@@ -74,6 +72,8 @@
       items:
         - name: Guide
           href: Documents/LearningJourneyGuide.md
+        - name: Creator Camp Stream
+          href: Documents/CreatorCamp.md       
         - name: 1. Create an In-World Game with Commands
           href: Documents/CreateAnInWorldGame.md
         - name: '2. Create Custom Grass Blocks: An Introduction to Resource Packs'
@@ -278,6 +278,8 @@
           href: Documents/DataDrivenOverworldHeight.md
         - name: Fog in Resource Packs
           href: Documents/FogInResourcePacks.md
+        - name: Control Schemes
+          href: Documents/ControlSchemes.md
         - name: Cameras
           items:  
           - name: Camera System Document List
