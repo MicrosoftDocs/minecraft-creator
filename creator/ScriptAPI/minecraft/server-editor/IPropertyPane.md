@@ -37,6 +37,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addButton](#addbutton)
 - [addButtonPane](#addbuttonpane)
 - [addColorPicker](#addcolorpicker)
+- [addColorTimeline](#addcolortimeline)
 - [addComboBox](#addcombobox)
 - [addDataTable](#adddatatable)
 - [addDivider](#adddivider)
@@ -44,6 +45,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addImage](#addimage)
 - [addLink](#addlink)
 - [addNumber](#addnumber)
+- [addNumberTimeline](#addnumbertimeline)
 - [addProgressIndicator](#addprogressindicator)
 - [addString](#addstring)
 - [addText](#addtext)
@@ -134,6 +136,19 @@ Adds a color picker item to the pane.
 
 **Returns** *IColorPickerPropertyItem*
 
+### **addColorTimeline**
+`
+addColorTimeline(value: IObservableProp<number>, options: IColorTimelinePropertyItemOptions): IColorTimelinePropertyItem
+`
+
+Adds a Color Timeline item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<number>*
+- **options**: *IColorTimelinePropertyItemOptions*
+
+**Returns** *IColorTimelinePropertyItem*
+
 ### **addComboBox**
 `
 addComboBox(value: IObservableProp<string>, options: IComboBoxPropertyItemOptions): IComboBoxPropertyItem
@@ -219,6 +234,19 @@ Adds a number item to the pane.
 - **options**: *INumberPropertyItemOptions*
 
 **Returns** *INumberPropertyItem*
+
+### **addNumberTimeline**
+`
+addNumberTimeline(value: IObservableProp<number>, options: INumberTimelinePropertyItemOptions): INumberTimelinePropertyItem
+`
+
+Adds a Number Timeline item to the pane.
+
+#### **Parameters**
+- **value**: *IObservableProp<number>*
+- **options**: *INumberTimelinePropertyItemOptions*
+
+**Returns** *INumberTimelinePropertyItem*
 
 ### **addProgressIndicator**
 `

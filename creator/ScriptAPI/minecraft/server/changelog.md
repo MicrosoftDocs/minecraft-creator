@@ -69,6 +69,9 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`unsubscribe`](ButtonPushAfterEventSignal.md#unsubscribe)*
 #### Changed *[`Camera`](Camera.md)*
 - Added property *[`isValid`](Camera.md#isvalid)*
+- Changed function *[`setCamera`](Camera.md#setcamera)*
+  - Changed argument `setOptions` type from [*CameraDefaultOptions*](CameraDefaultOptions.md) | [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md) to [*CameraFixedBoomOptions*](CameraFixedBoomOptions.md) | [*CameraSetFacingOptions*](CameraSetFacingOptions.md) | [*CameraSetLocationOptions*](CameraSetLocationOptions.md) | [*CameraSetPosOptions*](CameraSetPosOptions.md) | [*CameraSetRotOptions*](CameraSetRotOptions.md) | [*CameraTargetOptions*](CameraTargetOptions.md)
+- Added function *[`setDefaultCamera`](Camera.md#setdefaultcamera)*
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
@@ -78,7 +81,9 @@ description: Changelog of the `@minecraft/server` module
 - Removed function *isValid*
 #### Added *[`CompoundBlockVolume`](CompoundBlockVolume.md)*
 #### Changed *[`Container`](Container.md)*
+- Added property *[`containerRules`](Container.md#containerrules)*
 - Added property *[`isValid`](Container.md#isvalid)*
+- Added property *[`weight`](Container.md#weight)*
 - Added function *[`contains`](Container.md#contains)*
 - Added function *[`find`](Container.md#find)*
 - Added function *[`findLast`](Container.md#findlast)*
@@ -169,9 +174,11 @@ description: Changelog of the `@minecraft/server` module
   - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
 #### Added *[`ItemCustomComponentInstance`](ItemCustomComponentInstance.md)*
 #### Added *[`ItemDyeableComponent`](ItemDyeableComponent.md)*
+#### Added *[`ItemInventoryComponent`](ItemInventoryComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
 - Added property *[`localizationKey`](ItemStack.md#localizationkey)*
+- Added property *[`weight`](ItemStack.md#weight)*
 - Added function *[`createPotion`](ItemStack.md#createpotion)*
 - Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
 #### Removed *ItemUseOnAfterEvent*
@@ -274,6 +281,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`CommandPermissionLevel`](CommandPermissionLevel.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
+#### Added enum [`ContainerRulesErrorReason`](ContainerRulesErrorReason.md)
 #### Added enum [`CustomCommandErrorReason`](CustomCommandErrorReason.md)
 #### Added enum [`CustomCommandParamType`](CustomCommandParamType.md)
 #### Added enum [`CustomCommandSource`](CustomCommandSource.md)
@@ -299,6 +307,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added enum [`GraphicsMode`](GraphicsMode.md)
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `Dyeable`
+- Added value `Inventory`
 - Added value `Potion`
 #### Added enum [`LiquidSettings`](LiquidSettings.md)
 #### Added enum [`PlayerInventoryType`](PlayerInventoryType.md)

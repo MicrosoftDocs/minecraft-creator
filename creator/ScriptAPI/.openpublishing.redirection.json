@@ -1327,6 +1327,56 @@
         "redirect_document_id": false
     },
     {
+        "source_path": "minecraft/server/MinecraftDimensionTypes.md",
+        "redirect_url": "/minecraft/creator/priorscriptapi/minecraft/server-1xx/MinecraftDimensionTypes",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/IPlayerJoinAfterEventSignal.md",
+        "redirect_url": "/minecraft/creator/priorscriptapi/minecraft/server-1xx/IPlayerJoinAfterEventSignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/IPlayerLeaveAfterEventSignal.md",
+        "redirect_url": "/minecraft/creator/priorscriptapi/minecraft/server-1xx/IPlayerLeaveAfterEventSignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/IPlayerSpawnAfterEventSignal.md",
+        "redirect_url": "/minecraft/creator/priorscriptapi/minecraft/server-1xx/IPlayerSpawnAfterEventSignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/IButtonPushAfterEventSignal.md",
+        "redirect_url": "/minecraft/creator/priorscriptapi/minecraft/server-1xx/IButtonPushAfterEventSignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/ILeverActionAfterEventSignal.md",
+        "redirect_url": "/minecraft/creator/priorscriptapi/minecraft/server-1xx/ILeverActionAfterEventSignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/WorldInitializeAfterEventSignal.md",
+        "redirect_url": "/minecraft/creator/priorscriptapi/minecraft/server-1xx/WorldInitializeAfterEventSignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/WorldInitializeBeforeEvent.md",
+        "redirect_url": "/minecraft/creator/priorscriptapi/minecraft/server-1xx/WorldInitializeBeforeEvent",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/WorldInitializeBeforeEventSignal.md",
+        "redirect_url": "/minecraft/creator/priorscriptapi/minecraft/server-1xx/WorldInitializeBeforeEventSignal",
+        "redirect_document_id": false
+    },
+    {
+        "source_path": "minecraft/server/WorldInitializeAfterEvent.md",
+        "redirect_url": "/minecraft/creator/priorscriptapi/minecraft/server-1xx/WorldInitializeAfterEvent",
+        "redirect_document_id": false
+    },
+    {
         "source_path": "Reference/content/featuresreference/examples/features/minecraftbeards_and_shavers.md",
         "redirect_url": "/reference/content/featuresreference/features/featurelist",
         "redirect_document_id": false

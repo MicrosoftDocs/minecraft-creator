@@ -1,0 +1,54 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityDieAfterEventSignal Class
+description: Contents of the @minecraft/server.EntityDieAfterEventSignal class (Version 1.x.x).
+---
+# EntityDieAfterEventSignal Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityDieAfterEventSignal.md).
+
+Supports registering for an event that fires after an entity has died.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg0: EntityDieAfterEvent) => void, options?: EntityEventOptions): (arg0: EntityDieAfterEvent) => void
+`
+
+Subscribes to an event that fires when an entity dies.
+
+#### **Parameters**
+- **callback**: (arg0: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void*
+  
+  Function to call when an entity dies.
+- **options**?: [*EntityEventOptions*](EntityEventOptions.md) = `null`
+  
+  Additional filtering options for when the subscription fires.
+
+**Returns** (arg0: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void* - Returns the closure that can be used in future downstream calls to unsubscribe.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg0: EntityDieAfterEvent) => void): void
+`
+
+Stops this event from calling your function when an entity dies.
+
+#### **Parameters**
+- **callback**: (arg0: [*EntityDieAfterEvent*](EntityDieAfterEvent.md)) => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

@@ -1,0 +1,50 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.ScriptEventCommandMessageAfterEventSignal Class
+description: Contents of the @minecraft/server.ScriptEventCommandMessageAfterEventSignal class (Version 1.x.x).
+---
+# ScriptEventCommandMessageAfterEventSignal Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/ScriptEventCommandMessageAfterEventSignal.md).
+
+Allows for registering an event handler that responds to inbound /scriptevent commands.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg0: ScriptEventCommandMessageAfterEvent) => void, options?: ScriptEventMessageFilterOptions): (arg0: ScriptEventCommandMessageAfterEvent) => void
+`
+
+Registers a new ScriptEvent handler.
+
+#### **Parameters**
+- **callback**: (arg0: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
+- **options**?: [*ScriptEventMessageFilterOptions*](ScriptEventMessageFilterOptions.md) = `null`
+
+**Returns** (arg0: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg0: ScriptEventCommandMessageAfterEvent) => void): void
+`
+
+Unsubscribes a particular handler for a ScriptEvent event.
+
+#### **Parameters**
+- **callback**: (arg0: [*ScriptEventCommandMessageAfterEvent*](ScriptEventCommandMessageAfterEvent.md)) => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.

@@ -17,12 +17,17 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "1.19.0"
+    "version": "2.1.0-beta"
 }
 ```
+This is version 2.x.x of this module, which is the latest as of version 1.21.90-beta.23 of Minecraft.
 
 ## Available Versions
 - `2.1.0-beta`
+
+### Prior Versions
+
+The following API versions are from a major version that is documented here: [*@minecraft/server*](../../../priorscriptapi/minecraft/server-1xx/minecraft-server.md):
 - `1.19.0`
 - `1.18.0`
 - `1.17.0`
@@ -44,6 +49,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - `1.1.0`
 - `1.0.0`
 
+
 ## Enumerations
 - [AimAssistTargetMode](AimAssistTargetMode.md)
 - [BlockComponentTypes](BlockComponentTypes.md)
@@ -53,6 +59,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [CommandPermissionLevel](CommandPermissionLevel.md)
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
 - [CompoundBlockVolumePositionRelativity](CompoundBlockVolumePositionRelativity.md)
+- [ContainerRulesErrorReason](ContainerRulesErrorReason.md)
 - [CustomCommandErrorReason](CustomCommandErrorReason.md)
 - [CustomCommandParamType](CustomCommandParamType.md)
 - [CustomCommandSource](CustomCommandSource.md)
@@ -302,6 +309,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [ItemDyeableComponent](ItemDyeableComponent.md)
 - [ItemEnchantableComponent](ItemEnchantableComponent.md)
 - [ItemFoodComponent](ItemFoodComponent.md)
+- [ItemInventoryComponent](ItemInventoryComponent.md)
 - [ItemPotionComponent](ItemPotionComponent.md)
 - [ItemReleaseUseAfterEvent](ItemReleaseUseAfterEvent.md)
 - [ItemReleaseUseAfterEventSignal](ItemReleaseUseAfterEventSignal.md)
@@ -432,7 +440,6 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockHitInformation](BlockHitInformation.md)
 - [BlockRaycastHit](BlockRaycastHit.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
-- [CameraDefaultOptions](CameraDefaultOptions.md)
 - [CameraEaseOptions](CameraEaseOptions.md)
 - [CameraFadeOptions](CameraFadeOptions.md)
 - [CameraFadeTimeOptions](CameraFadeTimeOptions.md)
@@ -443,6 +450,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [CameraSetRotOptions](CameraSetRotOptions.md)
 - [CameraTargetOptions](CameraTargetOptions.md)
 - [CompoundBlockVolumeItem](CompoundBlockVolumeItem.md)
+- [ContainerRules](ContainerRules.md)
 - [CustomCommand](CustomCommand.md)
 - [CustomCommandParameter](CustomCommandParameter.md)
 - [CustomCommandResult](CustomCommandResult.md)
@@ -505,6 +513,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [BlockCustomComponentReloadNewEventError](BlockCustomComponentReloadNewEventError.md)
 - [BlockCustomComponentReloadVersionError](BlockCustomComponentReloadVersionError.md)
 - [CommandError](CommandError.md)
+- [ContainerRulesError](ContainerRulesError.md)
 - [CustomCommandError](CustomCommandError.md)
 - [CustomComponentInvalidRegistryError](CustomComponentInvalidRegistryError.md)
 - [CustomComponentNameError](CustomComponentNameError.md)

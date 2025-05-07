@@ -397,7 +397,7 @@ Sets the given ItemStack in the slot, replacing any existing item.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+  - Throws [*ContainerRulesError*](ContainerRulesError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
 ### **setLore**
 `

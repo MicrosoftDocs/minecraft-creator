@@ -27,10 +27,24 @@ Whether the menu should be enabled or disabled
 
 Type: *boolean*
 
+### **icon**
+`icon: string;`
+
+Whether the menu should have an icon.
+
+Type: *string*
+
 ### **label**
 `label: string;`
 
 Localized display text of the menu
+
+Type: *string*
+
+### **tooltip**
+`tooltip: string;`
+
+Whether the menu should have a tooltip.
 
 Type: *string*
 

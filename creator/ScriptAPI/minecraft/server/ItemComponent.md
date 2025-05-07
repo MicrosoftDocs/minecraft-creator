@@ -20,6 +20,7 @@ description: Contents of the @minecraft/server.ItemComponent class.
 - [*ItemDyeableComponent*](ItemDyeableComponent.md)
 - [*ItemEnchantableComponent*](ItemEnchantableComponent.md)
 - [*ItemFoodComponent*](ItemFoodComponent.md)
+- [*ItemInventoryComponent*](ItemInventoryComponent.md)
 - [*ItemPotionComponent*](ItemPotionComponent.md)
 
 Base class for item components.

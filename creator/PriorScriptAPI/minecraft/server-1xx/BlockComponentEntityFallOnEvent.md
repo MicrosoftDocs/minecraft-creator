@@ -1,0 +1,34 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.BlockComponentEntityFallOnEvent Class
+description: Contents of the @minecraft/server.BlockComponentEntityFallOnEvent class (Version 1.x.x).
+---
+# BlockComponentEntityFallOnEvent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/BlockComponentEntityFallOnEvent.md).
+
+## Extends
+- [*BlockEvent*](BlockEvent.md)
+
+Contains information regarding an entity falling onto a specific block.
+
+## Properties
+
+### **entity**
+`read-only entity?: Entity;`
+
+The entity that fell onto the block.
+
+Type: [*Entity*](Entity.md)
+
+### **fallDistance**
+`read-only fallDistance: number;`
+
+The distance that the entity fell onto this block with.
+
+Type: *number*

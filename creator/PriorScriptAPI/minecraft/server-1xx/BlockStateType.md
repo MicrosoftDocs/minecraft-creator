@@ -1,0 +1,31 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.BlockStateType Class
+description: Contents of the @minecraft/server.BlockStateType class (Version 1.x.x).
+---
+# BlockStateType Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/BlockStateType.md).
+
+Represents a configurable state value of a block instance.  For example, the facing direction of stairs is accessible as a block state. 
+
+## Properties
+
+### **id**
+`read-only id: string;`
+
+Identifier of the block property.
+
+Type: *string*
+
+### **validValues**
+`read-only validValues: (boolean | number | string)[];`
+
+A set of valid values for the block property.
+
+Type: (*boolean* | *number* | *string*)[]

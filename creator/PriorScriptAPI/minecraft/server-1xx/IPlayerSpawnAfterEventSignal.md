@@ -1,0 +1,59 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.IPlayerSpawnAfterEventSignal Class
+description: Contents of the @minecraft/server.IPlayerSpawnAfterEventSignal class (Version 1.x.x).
+---
+# IPlayerSpawnAfterEventSignal Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module.
+
+> [!CAUTION]
+> This class is deprecated and will be removed in 2.0.0.
+
+## Classes that extend IPlayerSpawnAfterEventSignal
+- [*PlayerSpawnAfterEventSignal*](PlayerSpawnAfterEventSignal.md)
+
+Provides an adaptable interface for callers to subscribe to an event that fires after a player spawns.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg0: PlayerSpawnAfterEvent) => void): (arg0: PlayerSpawnAfterEvent) => void
+`
+
+Subscribes to the event.
+
+#### **Parameters**
+- **callback**: (arg0: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
+
+**Returns** (arg0: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
+
+> [!CAUTION]
+> This function is deprecated and will be removed in 2.0.0.
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg0: PlayerSpawnAfterEvent) => void): void
+`
+
+Unsubscribes from the event.
+
+#### **Parameters**
+- **callback**: (arg0: [*PlayerSpawnAfterEvent*](PlayerSpawnAfterEvent.md)) => *void*
+
+> [!CAUTION]
+> This function is deprecated and will be removed in 2.0.0.
+  
+Notes:
+- This function can't be called in read-only mode.

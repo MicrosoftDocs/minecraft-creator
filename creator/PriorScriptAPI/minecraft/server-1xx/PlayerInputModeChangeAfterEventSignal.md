@@ -1,0 +1,49 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.PlayerInputModeChangeAfterEventSignal Class
+description: Contents of the @minecraft/server.PlayerInputModeChangeAfterEventSignal class (Version 1.x.x).
+---
+# PlayerInputModeChangeAfterEventSignal Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/PlayerInputModeChangeAfterEventSignal.md).
+
+Manages callbacks that are connected to player input mode.
+
+## Methods
+- [subscribe](#subscribe)
+- [unsubscribe](#unsubscribe)
+
+### **subscribe**
+`
+subscribe(callback: (arg0: PlayerInputModeChangeAfterEvent) => void): (arg0: PlayerInputModeChangeAfterEvent) => void
+`
+
+Adds a callback that will be called after the player input mode changes.
+
+#### **Parameters**
+- **callback**: (arg0: [*PlayerInputModeChangeAfterEvent*](PlayerInputModeChangeAfterEvent.md)) => *void*
+
+**Returns** (arg0: [*PlayerInputModeChangeAfterEvent*](PlayerInputModeChangeAfterEvent.md)) => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
+
+### **unsubscribe**
+`
+unsubscribe(callback: (arg0: PlayerInputModeChangeAfterEvent) => void): void
+`
+
+Removes a callback from being called after the player input mode changes.
+
+#### **Parameters**
+- **callback**: (arg0: [*PlayerInputModeChangeAfterEvent*](PlayerInputModeChangeAfterEvent.md)) => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
