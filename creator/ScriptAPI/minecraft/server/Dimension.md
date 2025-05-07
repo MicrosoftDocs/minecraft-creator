@@ -254,9 +254,15 @@ Notes:
 getBlockAbove(location: Vector3, options?: BlockRaycastOptions): Block | undefined
 `
 
+Gets the first block found above a given block location based on the given options (by default will find the first solid block above).
+
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
+  
+  Location to retrieve the block above from.
 - **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
+  
+  The options to decide if a block is a valid result.
 
 **Returns** [*Block*](Block.md) | *undefined*
 
@@ -274,9 +280,15 @@ Notes:
 getBlockBelow(location: Vector3, options?: BlockRaycastOptions): Block | undefined
 `
 
+Gets the first block found below a given block location based on the given options (by default will find the first solid block below).
+
 #### **Parameters**
 - **location**: [*Vector3*](Vector3.md)
+  
+  Location to retrieve the block below from.
 - **options**?: [*BlockRaycastOptions*](BlockRaycastOptions.md) = `null`
+  
+  The options to decide if a block is a valid result.
 
 **Returns** [*Block*](Block.md) | *undefined*
 

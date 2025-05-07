@@ -18,12 +18,14 @@ type ItemComponentTypeMap = {
   'dyeable': ItemDyeableComponent;
   'enchantable': ItemEnchantableComponent;
   'food': ItemFoodComponent;
+  'inventory': ItemInventoryComponent;
   'minecraft:compostable': ItemCompostableComponent;
   'minecraft:cooldown': ItemCooldownComponent;
   'minecraft:durability': ItemDurabilityComponent;
   'minecraft:dyeable': ItemDyeableComponent;
   'minecraft:enchantable': ItemEnchantableComponent;
   'minecraft:food': ItemFoodComponent;
+  'minecraft:inventory': ItemInventoryComponent;
   'minecraft:potion': ItemPotionComponent;
   'potion': ItemPotionComponent;
 };

@@ -1,0 +1,47 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityStrengthComponent Class
+description: Contents of the @minecraft/server.EntityStrengthComponent class (Version 1.x.x).
+---
+# EntityStrengthComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityStrengthComponent.md).
+
+## Extends
+- [*EntityComponent*](EntityComponent.md)
+
+Defines the entity's ability to carry items. An entity with a higher strength would have higher potential carry capacity and more item slots.
+
+## Properties
+
+### **max**
+`read-only max: number;`
+
+Maximum strength of this entity, as defined in the entity type definition.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+### **value**
+`read-only value: number;`
+
+Current value of the strength component that has been set for entities.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:strength";`
+
+Type: *string*

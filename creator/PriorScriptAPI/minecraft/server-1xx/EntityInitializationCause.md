@@ -1,0 +1,37 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityInitializationCause Enumeration
+description: Contents of the @minecraft/server.EntityInitializationCause enumeration (Version 1.x.x).
+---
+# EntityInitializationCause Enumeration (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityInitializationCause.md).
+
+An enumeration describing initialization cause of an entity.
+
+## Constants
+### **Born**
+`Born = "Born"`
+
+Case when an entity is created as child of other entity or entities, e.g., cows making a cow or slimes making smaller slimes after dying.
+### **Event**
+`Event = "Event"`
+
+Case when an entity is created by an event, e.g., a Wandering trader spawning llamas.
+### **Loaded**
+`Loaded = "Loaded"`
+
+Case when an entity is loaded into the world.
+### **Spawned**
+`Spawned = "Spawned"`
+
+Case when an entity is naturally spawned in the world.
+### **Transformed**
+`Transformed = "Transformed"`
+
+Case when an entity is transformed into another entity.

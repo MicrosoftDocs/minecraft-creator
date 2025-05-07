@@ -1,0 +1,38 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.RGB Interface
+description: Contents of the @minecraft/server.RGB class (Version 1.x.x).
+---
+# RGB Interface (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/RGB.md).
+
+Represents a fully customizable color within Minecraft.
+
+## Properties
+
+### **blue**
+`blue: number;`
+
+Determines a color's blue component. Valid values are between 0 and 1.0.
+
+Type: *number*
+
+### **green**
+`green: number;`
+
+Determines a color's green component. Valid values are between 0 and 1.0.
+
+Type: *number*
+
+### **red**
+`red: number;`
+
+Determines a color's red component. Valid values are between 0 and 1.0.
+
+Type: *number*

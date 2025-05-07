@@ -1,0 +1,31 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.CameraFixedBoomOptions Interface
+description: Contents of the @minecraft/server.CameraFixedBoomOptions class (Version 1.x.x).
+---
+# CameraFixedBoomOptions Interface (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/CameraFixedBoomOptions.md).
+
+Options to control pivot points and offsets of the third person boom preset.
+
+## Properties
+
+### **entityOffset**
+`entityOffset?: Vector3;`
+
+Changes the pivot point to be <x, y, z> away from the player.
+
+Type: [*Vector3*](Vector3.md)
+
+### **viewOffset**
+`viewOffset?: Vector2;`
+
+Offsets the camera from center by <x, y>.
+
+Type: [*Vector2*](Vector2.md)

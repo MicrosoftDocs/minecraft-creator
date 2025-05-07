@@ -1,0 +1,97 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.ItemUseOnAfterEvent Class
+description: Contents of the @minecraft/server.ItemUseOnAfterEvent class (Version 1.x.x).
+---
+# ItemUseOnAfterEvent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module.
+
+> [!CAUTION]
+> This class is deprecated and will be removed in 2.0.0.
+> 
+> Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../priorscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
+
+## Classes that extend ItemUseOnAfterEvent
+- [*ItemUseOnBeforeEvent*](ItemUseOnBeforeEvent.md)
+
+Contains information related to an item being used on a block. This event fires when an item used by a player successfully triggers a block interaction.
+
+## Properties
+
+### **block**
+`read-only block: Block;`
+
+The block that the item is used on.
+
+Type: [*Block*](Block.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+> 
+> Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../priorscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
+
+### **blockFace**
+`read-only blockFace: Direction;`
+
+The face of the block that an item is being used on.
+
+Type: [*Direction*](Direction.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+> 
+> Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../priorscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
+
+### **faceLocation**
+`read-only faceLocation: Vector3;`
+
+Location relative to the bottom north-west corner of the block where the item is placed.
+
+Type: [*Vector3*](Vector3.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+> 
+> Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../priorscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
+
+### **isFirstEvent**
+`read-only isFirstEvent: boolean;`
+
+This value will be true if the event was triggered on players initial interaction button press and false on events triggered from holding the interaction button.
+
+Type: *boolean*
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+> 
+> Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../priorscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
+
+### **itemStack**
+`read-only itemStack: ItemStack;`
+
+The impacted item stack that is being used on a block.
+
+Type: [*ItemStack*](ItemStack.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+> 
+> Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../priorscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.
+
+### **source**
+`read-only source: Player;`
+
+Returns the source entity that triggered this item event.
+
+Type: [*Player*](Player.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+> 
+> Use [*@minecraft/server.PlayerInteractWithBlockAfterEvent*](../../../priorscriptapi/minecraft/server-1xx/PlayerInteractWithBlockAfterEvent.md) instead.

@@ -1,0 +1,41 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityBaseMovementComponent Class
+description: Contents of the @minecraft/server.EntityBaseMovementComponent class (Version 1.x.x).
+---
+# EntityBaseMovementComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityBaseMovementComponent.md).
+
+## Extends
+- [*EntityComponent*](EntityComponent.md)
+
+## Classes that extend EntityBaseMovementComponent
+- [*EntityMovementAmphibiousComponent*](EntityMovementAmphibiousComponent.md)
+- [*EntityMovementBasicComponent*](EntityMovementBasicComponent.md)
+- [*EntityMovementFlyComponent*](EntityMovementFlyComponent.md)
+- [*EntityMovementGenericComponent*](EntityMovementGenericComponent.md)
+- [*EntityMovementHoverComponent*](EntityMovementHoverComponent.md)
+- [*EntityMovementJumpComponent*](EntityMovementJumpComponent.md)
+- [*EntityMovementSkipComponent*](EntityMovementSkipComponent.md)
+- [*EntityMovementGlideComponent*](EntityMovementGlideComponent.md)
+- [*EntityMovementSwayComponent*](EntityMovementSwayComponent.md)
+
+Base class for a family of entity movement events.
+
+## Properties
+
+### **maxTurn**
+`read-only maxTurn: number;`
+
+Maximum turn rate for this movement modality of the mob.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.

@@ -1,0 +1,37 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityVariantComponent Class
+description: Contents of the @minecraft/server.EntityVariantComponent class (Version 1.x.x).
+---
+# EntityVariantComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityVariantComponent.md).
+
+## Extends
+- [*EntityComponent*](EntityComponent.md)
+
+Used to differentiate the component group of a variant of an entity from others. (e.g. ocelot, villager).
+
+## Properties
+
+### **value**
+`read-only value: number;`
+
+Current value for variant for this entity, as specified via components.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:variant";`
+
+Type: *string*

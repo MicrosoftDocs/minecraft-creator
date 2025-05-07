@@ -1,0 +1,33 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.FluidType Enumeration
+description: Contents of the @minecraft/server.FluidType enumeration (Version 1.x.x).
+---
+# FluidType Enumeration (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/FluidType.md).
+
+Represents the type of fluid for use within a fluid containing block, like a cauldron.
+
+## Constants
+### **Lava**
+`Lava = "Lava"`
+
+Represents lava as a type of fluid.
+### **Potion**
+`Potion = "Potion"`
+
+Represents a potion as a type of fluid.
+### **PowderSnow**
+`PowderSnow = "PowderSnow"`
+
+Represents powder snow as a type of fluid.
+### **Water**
+`Water = "Water"`
+
+Represents water as a type of fluida.

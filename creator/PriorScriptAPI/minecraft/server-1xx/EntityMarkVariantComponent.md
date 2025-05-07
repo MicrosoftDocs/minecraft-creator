@@ -1,0 +1,37 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityMarkVariantComponent Class
+description: Contents of the @minecraft/server.EntityMarkVariantComponent class (Version 1.x.x).
+---
+# EntityMarkVariantComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityMarkVariantComponent.md).
+
+## Extends
+- [*EntityComponent*](EntityComponent.md)
+
+Additional variant value. Can be used to further differentiate variants.
+
+## Properties
+
+### **value**
+`value: number;`
+
+Value of the mark variant value for this entity.
+
+Type: *number*
+
+Notes:
+  - This property can't be edited in read-only mode.
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:mark_variant";`
+
+Type: *string*

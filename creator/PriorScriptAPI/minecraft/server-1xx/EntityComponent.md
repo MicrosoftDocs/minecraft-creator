@@ -1,0 +1,78 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityComponent Class
+description: Contents of the @minecraft/server.EntityComponent class (Version 1.x.x).
+---
+# EntityComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityComponent.md).
+
+## Extends
+- [*Component*](Component.md)
+
+## Classes that extend EntityComponent
+- [*EntityAttributeComponent*](EntityAttributeComponent.md)
+- [*EntityBaseMovementComponent*](EntityBaseMovementComponent.md)
+- [*EntityCanClimbComponent*](EntityCanClimbComponent.md)
+- [*EntityCanFlyComponent*](EntityCanFlyComponent.md)
+- [*EntityCanPowerJumpComponent*](EntityCanPowerJumpComponent.md)
+- [*EntityColorComponent*](EntityColorComponent.md)
+- [*EntityEquippableComponent*](EntityEquippableComponent.md)
+- [*EntityFireImmuneComponent*](EntityFireImmuneComponent.md)
+- [*EntityFloatsInLiquidComponent*](EntityFloatsInLiquidComponent.md)
+- [*EntityFlyingSpeedComponent*](EntityFlyingSpeedComponent.md)
+- [*EntityFrictionModifierComponent*](EntityFrictionModifierComponent.md)
+- [*EntityGroundOffsetComponent*](EntityGroundOffsetComponent.md)
+- [*EntityHealableComponent*](EntityHealableComponent.md)
+- [*EntityInventoryComponent*](EntityInventoryComponent.md)
+- [*EntityIsBabyComponent*](EntityIsBabyComponent.md)
+- [*EntityIsChargedComponent*](EntityIsChargedComponent.md)
+- [*EntityIsChestedComponent*](EntityIsChestedComponent.md)
+- [*EntityIsDyeableComponent*](EntityIsDyeableComponent.md)
+- [*EntityIsHiddenWhenInvisibleComponent*](EntityIsHiddenWhenInvisibleComponent.md)
+- [*EntityIsIgnitedComponent*](EntityIsIgnitedComponent.md)
+- [*EntityIsIllagerCaptainComponent*](EntityIsIllagerCaptainComponent.md)
+- [*EntityIsSaddledComponent*](EntityIsSaddledComponent.md)
+- [*EntityIsShakingComponent*](EntityIsShakingComponent.md)
+- [*EntityIsShearedComponent*](EntityIsShearedComponent.md)
+- [*EntityIsStackableComponent*](EntityIsStackableComponent.md)
+- [*EntityIsStunnedComponent*](EntityIsStunnedComponent.md)
+- [*EntityIsTamedComponent*](EntityIsTamedComponent.md)
+- [*EntityItemComponent*](EntityItemComponent.md)
+- [*EntityMarkVariantComponent*](EntityMarkVariantComponent.md)
+- [*EntityOnFireComponent*](EntityOnFireComponent.md)
+- [*EntityProjectileComponent*](EntityProjectileComponent.md)
+- [*EntityPushThroughComponent*](EntityPushThroughComponent.md)
+- [*EntityScaleComponent*](EntityScaleComponent.md)
+- [*EntitySkinIdComponent*](EntitySkinIdComponent.md)
+- [*EntityTypeFamilyComponent*](EntityTypeFamilyComponent.md)
+- [*EntityVariantComponent*](EntityVariantComponent.md)
+- [*EntityWantsJockeyComponent*](EntityWantsJockeyComponent.md)
+- [*EntityAddRiderComponent*](EntityAddRiderComponent.md)
+- [*EntityColor2Component*](EntityColor2Component.md)
+- [*EntityNavigationComponent*](EntityNavigationComponent.md)
+- [*EntityRideableComponent*](EntityRideableComponent.md)
+- [*EntityRidingComponent*](EntityRidingComponent.md)
+- [*EntityTameMountComponent*](EntityTameMountComponent.md)
+- [*EntityAgeableComponent*](EntityAgeableComponent.md)
+- [*EntityTameableComponent*](EntityTameableComponent.md)
+- [*EntityLeashableComponent*](EntityLeashableComponent.md)
+- [*EntityStrengthComponent*](EntityStrengthComponent.md)
+- [*PlayerCursorInventoryComponent*](PlayerCursorInventoryComponent.md)
+- [*EntityBreathableComponent*](EntityBreathableComponent.md)
+
+Base class for downstream entity components.
+
+## Properties
+
+### **entity**
+`read-only entity: Entity;`
+
+The entity that owns this component. The entity will be undefined if it has been removed.
+
+Type: [*Entity*](Entity.md)

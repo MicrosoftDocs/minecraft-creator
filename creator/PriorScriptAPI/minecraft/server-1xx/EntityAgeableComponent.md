@@ -1,0 +1,85 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server-1xx.EntityAgeableComponent Class
+description: Contents of the @minecraft/server.EntityAgeableComponent class (Version 1.x.x).
+---
+# EntityAgeableComponent Class (Version 1.x.x)
+
+> [!IMPORTANT]
+> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/EntityAgeableComponent.md).
+
+## Extends
+- [*EntityComponent*](EntityComponent.md)
+
+Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feedItems.
+
+## Properties
+
+### **duration**
+`read-only duration: number;`
+
+Amount of time before the entity grows up, -1 for always a baby.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+
+### **growUp**
+`read-only growUp: Trigger;`
+
+Event that runs when this entity grows up.
+
+Type: [*Trigger*](Trigger.md)
+
+Notes:
+  - This property can throw errors when used.
+
+### **transformToItem**
+`read-only transformToItem: string;`
+
+The feed item used will transform into this item upon successful interaction.
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+
+## Methods
+- [getDropItems](#getdropitems)
+- [getFeedItems](#getfeeditems)
+
+### **getDropItems**
+`
+getDropItems(): string[]
+`
+
+List of items that the entity drops when it grows up.
+
+**Returns** *string*[]
+  
+Notes:
+- This function can throw errors.
+
+### **getFeedItems**
+`
+getFeedItems(): EntityDefinitionFeedItem[]
+`
+
+List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by.
+
+**Returns** [*EntityDefinitionFeedItem*](EntityDefinitionFeedItem.md)[]
+  
+Notes:
+- This function can throw errors.
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:ageable";`
+
+Type: *string*

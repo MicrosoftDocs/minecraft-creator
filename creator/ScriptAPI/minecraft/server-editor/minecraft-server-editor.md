@@ -22,6 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
+This is version 0.x.x of this module, which is the latest as of version 1.21.90-beta.23 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -228,6 +229,9 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [IButtonPropertyItemOptions](IButtonPropertyItemOptions.md)
 - [IColorPickerPropertyItem](IColorPickerPropertyItem.md)
 - [IColorPickerPropertyItemOptions](IColorPickerPropertyItemOptions.md)
+- [IColorTimelinePropertyItem](IColorTimelinePropertyItem.md)
+- [IColorTimelinePropertyItemEntry](IColorTimelinePropertyItemEntry.md)
+- [IColorTimelinePropertyItemOptions](IColorTimelinePropertyItemOptions.md)
 - [IComboBoxPropertyItem](IComboBoxPropertyItem.md)
 - [IComboBoxPropertyItemOptions](IComboBoxPropertyItemOptions.md)
 - [IDataTablePropertyItem](IDataTablePropertyItem.md)
@@ -253,6 +257,9 @@ monikerRange: "=minecraft-bedrock-experimental"
 - [IModalToolContainer](IModalToolContainer.md)
 - [INumberPropertyItem](INumberPropertyItem.md)
 - [INumberPropertyItemOptions](INumberPropertyItemOptions.md)
+- [INumberTimelinePropertyItem](INumberTimelinePropertyItem.md)
+- [INumberTimelinePropertyItemEntry](INumberTimelinePropertyItemEntry.md)
+- [INumberTimelinePropertyItemOptions](INumberTimelinePropertyItemOptions.md)
 - [IObservable](IObservable.md)
 - [IPane](IPane.md)
 - [IPlayerLogger](IPlayerLogger.md)
