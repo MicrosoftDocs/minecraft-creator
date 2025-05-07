@@ -20,16 +20,14 @@ This item can also be represented as a `String`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| texture | *not set* | String | This contains a single texture for the items icon. Note that you should either set the Texture or Textures, but not both. | Apple: `"apple"`, Breeze Rod: `"breeze_rod"`, Ominous Trial Key: `"ominous_trial_key"` | 
-| textures | *not set* | Keyed set of strings | This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes can be specified here as well. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file. Note that you should either set the Texture or Textures, but not both. | Black Bundle: `{"default":"bundle_black"}`, Blue Bundle: `{"default":"bundle_blue"}`, Brown Bundle: `{"default":"bundle_brown"}` | 
+| textures | *not set* | Keyed set of strings | This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes can be specified here as well. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file. | Black Bundle: `{"default":"bundle_black"}`, Blue Bundle: `{"default":"bundle_blue"}`, Brown Bundle: `{"default":"bundle_brown"}` | 
+| (deprecated) texture | *not set* | String | Deprecated - no longer in use. This contains a single texture for the items icon. | Apple: `"apple"`, Breeze Rod: `"breeze_rod"`, Ominous Trial Key: `"ominous_trial_key"` | 
 
 ## Samples
 
 
 ```json
-"minecraft:icon": {
-  "textures": "oak_slab"
-}
+"minecraft:icon": "oak_slab"
 ```
 
 #### [Apple](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/items/apple.json)

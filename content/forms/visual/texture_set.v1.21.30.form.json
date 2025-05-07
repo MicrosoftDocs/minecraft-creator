@@ -1,0 +1,61 @@
+{
+  "id": "texture_set",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "texture_set",
+    "fields": [
+      {
+        "dataType": 25,
+        "id": "format_version",
+        "title": "Format Version",
+        "isRequired": true
+      },
+      {
+        "dataType": 16,
+        "id": "minecraft:texture_set",
+        "title": "Texture Set",
+        "isRequired": true,
+        "subForm": {
+          "fields": [
+            {
+              "dataType": 2,
+              "id": "color",
+              "title": "Color",
+              "description": "The texture name of a textureset layer",
+              "isRequired": false
+            },
+            {
+              "dataType": 2,
+              "id": "normal",
+              "title": "Normal",
+              "description": "The texture name of a textureset layer",
+              "isRequired": false
+            },
+            {
+              "dataType": 2,
+              "id": "heightmap",
+              "title": "Heightmap",
+              "description": "The texture name of a textureset layer",
+              "isRequired": false
+            },
+            {
+              "dataType": 2,
+              "id": "metalness_emissive_roughness",
+              "title": "Metalness Emissive Roughness",
+              "description": "The texture name of a textureset layer",
+              "isRequired": false
+            },
+            {
+              "dataType": 2,
+              "id": "metalness_emissive_roughness_subsurface",
+              "title": "Metalness Emissive Roughness Subsurface",
+              "description": "The texture name of a textureset layer",
+              "isRequired": false
+            }
+          ]
+        }
+      }
+    ],
+    "dataVersion": "1.21.30"
+  }
+}

@@ -22,5 +22,5 @@ ms.date: 02/11/2025
 | [minecraft:surface_material_adjustments](Components/minecraftBiomes_surface_material_adjustments.md)| Specify fine-detail changes to blocks used in terrain generation (based on a noise function). |
 | [minecraft:surface_parameters](Components/minecraftBiomes_surface_parameters.md)| Controls the blocks used for the default Minecraft Overworld terrain generation. |
 | [minecraft:swamp_surface](Components/minecraftBiomes_swamp_surface.md)| Similar to overworld_surface. |
-| [minecraft:tags](Components/minecraftBiomes_tags.md)| Attach arbitrary string tags to this biome. |
+| [minecraft:tags](Components/minecraftBiomes_tags.md)| <br>Attach arbitrary string tags to this biome.<br>Most biome tags are referenced by JSON settings, but some meanings of tags are directly implemented in the game's code. |
 | [minecraft:the_end_surface](Components/minecraftBiomes_the_end_surface.md)| Use default Minecraft End terrain generation. |

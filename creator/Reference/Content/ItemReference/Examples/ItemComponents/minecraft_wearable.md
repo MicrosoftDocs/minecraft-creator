@@ -19,9 +19,9 @@ Sets the wearable item component.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| dispensable | *not set* | Boolean true/false |  | Chestplate: `true` | 
 | protection | *not set* | Integer number | How much protection the wearable item provides. Default is set to 0. |  | 
 | slot | *not set* | String | Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1. | Chestplate: `"slot.armor.chest"`, Crown: `"slot.armor.head"`, My Boots: `"slot.armor.feet"` | 
+| (deprecated) dispensable | *not set* | Boolean true/false |  | Chestplate: `true` | 
 
 ## Samples
 

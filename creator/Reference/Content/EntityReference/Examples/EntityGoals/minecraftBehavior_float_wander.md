@@ -60,7 +60,8 @@ Allows the mob to float around like the Ghast.
   "float_duration": [
     2,
     7
-  ]
+  ],
+  "float_wander_has_move_control": false
 }
 ```
 

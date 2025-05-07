@@ -1715,6 +1715,12 @@
                       "description": "Similar to overworld_surface. Adds swamp surface details.",
                       "fields": [
                         {
+                          "id": "sea_floor_depth",
+                          "title": "Sea Floor Depth",
+                          "description": "Controls how deep below the world water level the floor should occur.",
+                          "dataType": 0
+                        },
+                        {
                           "id": "mid_material",
                           "title": "Mid Material",
                           "description": "Controls the block type used in a layer below the surface of this biome.",
@@ -1754,12 +1760,6 @@
                               }
                             }
                           ]
-                        },
-                        {
-                          "id": "sea_floor_depth",
-                          "title": "Sea Floor Depth",
-                          "description": "Controls how deep below the world water level the floor should occur.",
-                          "dataType": 0
                         },
                         {
                           "id": "sea_floor_material",
@@ -1803,18 +1803,18 @@
                           ]
                         },
                         {
-                          "id": "sea_material",
-                          "title": "Sea Material",
-                          "description": "Controls the block type used for the bodies of water in this biome.",
+                          "id": "foundation_material",
+                          "title": "Foundation Material",
+                          "description": "Controls the block type used deep underground in this biome.",
                           "dataType": 2,
                           "alternates": [
                             {
-                              "id": "sea_material",
+                              "id": "foundation_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
-                                "id": "sea_material",
-                                "title": "Sea Material",
+                                "id": "foundation_material",
+                                "title": "Foundation Material",
                                 "fields": [
                                   {
                                     "id": "name",
@@ -1885,18 +1885,18 @@
                           ]
                         },
                         {
-                          "id": "foundation_material",
-                          "title": "Foundation Material",
-                          "description": "Controls the block type used deep underground in this biome.",
+                          "id": "sea_material",
+                          "title": "Sea Material",
+                          "description": "Controls the block type used for the bodies of water in this biome.",
                           "dataType": 2,
                           "alternates": [
                             {
-                              "id": "foundation_material",
+                              "id": "sea_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
-                                "id": "foundation_material",
-                                "title": "Foundation Material",
+                                "id": "sea_material",
+                                "title": "Sea Material",
                                 "fields": [
                                   {
                                     "id": "name",
@@ -1937,12 +1937,12 @@
                   {
                     "id": "minecraft:tags",
                     "title": "Minecraft Tags",
-                    "description": "Attach arbitrary string tags to this biome.",
+                    "description": "\nAttach arbitrary string tags to this biome.\nMost biome tags are referenced by JSON settings, but some meanings of tags are directly implemented in the game's code. These tags are listed here:\nbirch: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged \"hills\".\ncold: Villagers will be dressed for snowy weather.\ndeep: Pre-Caves and Cliffs, prevents an ocean from having islands or connected rivers and makes the biome less likely to have hills.\ndesert: Allows partially-buried ruined portals to be placed in the biome. Sand blocks will play ambient sounds when the player is nearby.\nextreme_hills: Ruined portals can be placed higher than normal. Biomes tagged \"forest\" or \"forest_generation\" will use normal Overworld flowers instead of forest flowers.\nflower_forest: Biome uses forest flowers (mutually exclusive with other flower biome tags).\nforest: Biome uses forest flowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged tagged \"taiga\" or \"extreme_hills\".\nforest_generation: Equivalent to \"forest\".\nfrozen: Villagers will be dressed for snowy weather. Prevents the biome from containing lava springs if it is also tagged \"ocean\".\nice: Around ruined portals, lava is always replaced by Netherrack and Netherrack cannot be replaced by magma.\nice_plains: Prevents the biome from containing lava springs if it is also tagged \"mutated\".\njungle: Ruined portals will be very mossy.\nhills: Biomes tagged \"meadow\" or \"birch\" will use normal Overworld flowers instead of wildflowers.\nmeadow: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged \"hills\".\nmesa: Sand blocks will play ambient sounds when the player is nearby.\nmountain: Ruined portals can be placed higher than normal.\nmutated: Pre-Caves and Cliffs, prevents switching to the specified \"mutate_transformation\" as the biome is already considered mutated. Prevents the biome from containing lava springs if it is also tagged \"ice_plains\".\nno_legacy_worldgen: Prevents biome from using legacy world generation behavior unless the biome is being placed in the Overworld.\nocean: Prevents the biome from containing lava springs if it is also tagged \"frozen\". Allows ruined portals to be found underwater. Pre-Caves and Cliffs, determines if shorelines and rivers should be placed at the edges of the biome and identifies the biome as a shallow ocean for placing islands, unless the \"deep\" tag is present.\npale_garden: Biome uses closed-eye blossoms (mutually exclusive with other flower biome tags).\nplains: Biome uses plains flowers (mutually exclusive with other flower biome tags).\nrare: Pre-Caves and Cliffs, this tag flags the biome as a special biome. Oceans cannot be special.\nswamp: Allows ruined portals to be found underwater. Biome uses swamp flowers (mutually exclusive with other flower biome tags).\ntaiga: Biomes tagged \"forest\" or \"forest_generation\" will use normal Overworld flowers instead of forest flowers.\n",
                     "dataType": 16,
                     "subForm": {
                       "id": "minecraft:tags",
                       "title": "Tags",
-                      "description": "Attach arbitrary string tags to this biome.",
+                      "description": "\nAttach arbitrary string tags to this biome.\nMost biome tags are referenced by JSON settings, but some meanings of tags are directly implemented in the game's code. These tags are listed here:\nbirch: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged \"hills\".\ncold: Villagers will be dressed for snowy weather.\ndeep: Pre-Caves and Cliffs, prevents an ocean from having islands or connected rivers and makes the biome less likely to have hills.\ndesert: Allows partially-buried ruined portals to be placed in the biome. Sand blocks will play ambient sounds when the player is nearby.\nextreme_hills: Ruined portals can be placed higher than normal. Biomes tagged \"forest\" or \"forest_generation\" will use normal Overworld flowers instead of forest flowers.\nflower_forest: Biome uses forest flowers (mutually exclusive with other flower biome tags).\nforest: Biome uses forest flowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged tagged \"taiga\" or \"extreme_hills\".\nforest_generation: Equivalent to \"forest\".\nfrozen: Villagers will be dressed for snowy weather. Prevents the biome from containing lava springs if it is also tagged \"ocean\".\nice: Around ruined portals, lava is always replaced by Netherrack and Netherrack cannot be replaced by magma.\nice_plains: Prevents the biome from containing lava springs if it is also tagged \"mutated\".\njungle: Ruined portals will be very mossy.\nhills: Biomes tagged \"meadow\" or \"birch\" will use normal Overworld flowers instead of wildflowers.\nmeadow: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged \"hills\".\nmesa: Sand blocks will play ambient sounds when the player is nearby.\nmountain: Ruined portals can be placed higher than normal.\nmutated: Pre-Caves and Cliffs, prevents switching to the specified \"mutate_transformation\" as the biome is already considered mutated. Prevents the biome from containing lava springs if it is also tagged \"ice_plains\".\nno_legacy_worldgen: Prevents biome from using legacy world generation behavior unless the biome is being placed in the Overworld.\nocean: Prevents the biome from containing lava springs if it is also tagged \"frozen\". Allows ruined portals to be found underwater. Pre-Caves and Cliffs, determines if shorelines and rivers should be placed at the edges of the biome and identifies the biome as a shallow ocean for placing islands, unless the \"deep\" tag is present.\npale_garden: Biome uses closed-eye blossoms (mutually exclusive with other flower biome tags).\nplains: Biome uses plains flowers (mutually exclusive with other flower biome tags).\nrare: Pre-Caves and Cliffs, this tag flags the biome as a special biome. Oceans cannot be special.\nswamp: Allows ruined portals to be found underwater. Biome uses swamp flowers (mutually exclusive with other flower biome tags).\ntaiga: Biomes tagged \"forest\" or \"forest_generation\" will use normal Overworld flowers instead of forest flowers.\n",
                       "fields": [
                         {
                           "id": "tags",
