@@ -278,6 +278,8 @@
           href: Documents/DataDrivenOverworldHeight.md
         - name: Fog in Resource Packs
           href: Documents/FogInResourcePacks.md
+        - name: Control Schemes
+          href: Documents/ControlSchemes.md
         - name: Cameras
           items:  
           - name: Camera System Document List
