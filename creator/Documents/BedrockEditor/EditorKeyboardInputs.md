@@ -1,50 +1,52 @@
 ---
-author: iconicNurdle
-ms.author: mikeam
-title: Minecraft Bedrock Editor Keyboard Inputs
+author: camwilkerson
+ms.author: v-cwilkerson
+title: Minecraft Bedrock Editor Hotkeys
 description: "An overview of the keyboard input shortcuts in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date 05/09/2025
 ---
 
-# Editor Keyboard Inputs
+# Editor Hotkeys
 
 You can use the Keyboard Settings to view the default keyboard shortcuts and set custom keyboard shortcuts. Custom shortcuts are available in Editor and all Editor extensions!
 
 To set a custom keyboard shortcut, 
 
 1. Use the left pane of the Keyboard Settings window to locate the input you want to map. 
-1. Click the **Shortcut** field for the input.
-1. Press the keyboard buttons that you want to use for your custom shortcut. 
-1. Click the **Save** button. If you have made mul
+
+2. Click the **Shortcut** field for the input.
+
+3. Press the keyboard buttons that you want to use for your custom shortcut. 
+
+4. Click the **Save** button. If you have made mul
 
 [!NOTE]
-All custom shortcuts must be saved before closing the Keyboard Settings window. If you do not save your custom shortcuts, they will revert to the default shortcuts when the window is closed.
+> All custom shortcuts must be saved before closing the Keyboard Settings window. If you do not save your custom shortcuts, they will revert to the default shortcuts when the window is closed.
 
 To clear a keyboard shortcut, right-click it or click the **Unbind** button in the far-right column. Both methods for clearing a shortcut will remove it entirely, including the default key binding.
 
-## Input Mapping - Core
+## Input Mapping
 
-Click the Input Mapping button to open the modal to configure registered bindings.
+|Function|Description|
+|:----|:----|
+|Name|The name of the action you want to perform.|
+|Shortcut| Click on the input field and press the keys you want to bind. Press ENTER or unfocus to confirm the binding, or press Esc to reset it. Right-clicking while focused on the field will unbind the current binding.|
+|Exclusive| When the Exclusive toggle is enabled, single-key actions will only activate if no other modifiers are present or if the specified modifier combination is used alongside the key.|
+|Save All| Saves all of the new bindings.|
+|Reset All| Restores all bindings to the previous setting.|
+|Save| Saves the new bindings.|
+|Reset| Resets the bindings on the current page.|
+|Restore All Defaults| Restores all default bindings for all pages of the mappings.|
+|Restore Defaults| Restores default bindings for this page.|
 
-The input maps are organized into two main groups: Core and Modal Tools.
+[!Tip]
+> You can reconfigure key bindings by clicking *Input Mapping* [!!unclear where this is!!] .
 
-**Name**: The name of the action you want to perform.
+Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 
-**Shortcut**: Click on the input field and press keyboard keys to create the desired binding. Press ENTER or unfocus to confirm the binding or ESC to reset it. Right-clicking while focused on the field will unbind the current binding.
 
-**Exclusive**: When the Exclusive toggle is enabled, single-key actions will activate only if no other modifiers are present, or if the specified modifier combination is used alongside the key. 
-
-**Save All**: Saves all of the new bindings.
-
-**Reset All**: Restores all bindings to the previous setting.
-
-**Save**: Saves the new bindings.
-
-**Reset**: Resets the bindings on the current page.
-
-**Restore All Defaults**: Restores all default bindings for all pages of the mappings.
-
-**Restore Defaults**: Restores default bindings for this page.
+## Core Tools
 
 ### Project
 
@@ -54,6 +56,7 @@ The input maps are organized into two main groups: Core and Modal Tools.
 | Redo | CTRL + Y | - |
 | Toggle Mode | CTRL + TAB | - |
 | Undo | CTRL + Z | - |
+
 
 ### Tool Mode
 
@@ -67,8 +70,8 @@ The input maps are organized into two main groups: Core and Modal Tools.
 | Go To Next Navigation Position | CTRL + BRACKET OPEN | - |
 | Go To Previous Navigation Position | CTRL + BRACKET OPEN | - |
 | Open Console | SLASH | On |
-| Paste | CTRL + SHIFT + V | - |
-| Quick Paste | CTRL + V | - |
+| Paste Preview| CTRL + SHIFT + V | - |
+| Paste | CTRL + V | - |
 | Select Hotbar 1 | 1 | On |
 | Select Hotbar 2 | 2 | On |
 | Select Hotbar 3 | 3 | On |
@@ -89,41 +92,62 @@ The input maps are organized into two main groups: Core and Modal Tools.
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 | Fly to Cursor | G | On |
-| Fly to Selection | F | On |
+| Fly to Selection | CTRL + SHIFT + F | On |
 | Move Back | S or SHIFT + S | On |
-| Move Down | SHIFT | On |
+| Move Up | E | On |
+| Move Down | Q | On |
 | Move Forward | W or SHIFT + W | On |
 | Move Left | A or SHIFT + A | On |
 | Move Right | D or SHIFT + D | On |
-| Move Up | SPACE or SHIFT + SPACE | On |
 
-## Input Mapping - Modal Tools
 
-### Line
+## Modal Tools
+
+### Selection
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Delete Contents | SHIFT + DELETE | - |
-| Delete Contents and Deselect | DELETE | On |
-| Deselect | CTRL + D | - |
-| Deselect All | CTRL + SHIFT + D | - |
-| Fill Contents | CTRL + SHIFT + F | - |
-| Fill Contents and Deselect | CTRL + F | - |
-| Move Selected Back | DOWN ARROW | On |
-| Move Selected Down | PAGE DOWN | On |
-| Move Selected Forward | UP ARROW | On |
-| Move Selected Left | LEFT ARROW | On |
-| Move Selected Right | RIGHT ARROW | On |
-| Move Selected Up | PAGE UP | On |
-| Select All | CTRL + A | - |
+| Move Cursor Up | PAGE DOWN | On |
+| Move Cursor Down | PAGE DOWN | On |
+| Move Cursor Back | DOWN ARROW | On |
+| Move Cursor Forward | UP ARROW | On |
+| Move Cursor Left | LEFT ARROW | On |
+| Move Cursor Right | RIGHT ARROW | On |
+| Move Selection Up | ALT + PAGE UP | - |
+| Move Selection Down | ALT + PAGE DOWN | - |
+| Move Selection Back | ALT + DOWN ARROW | - |
+| Move Selection Forward | ALT + UP ARROW | - |
+| Move Selection Left | ALT + LEFT ARROW | - |
+| Move Selection Right | ALT + RIGHT ARROW | - |
+| Grow Selection Up | SHIFT + PAGE UP | - |
+| Grow Selection Down | SHIFT + PAGE DOWN | - |
+| Grow Selection Back | SHIFT + DOWN ARROW | - |
+| Grow Selection Forward | SHIFT + UP ARROW | - |
+| Grow Selection Left | SHIFT + LEFT ARROW | - |
+| Grow Selection Right | SHIFT + RIGHT ARROW | - |
+| Shrink Selection Up | CTRL + PAGE UP | - |
+| Shrink Selection Down | CTRL + PAGE DOWN | - |
+| Shrink Selection Back | CTRL + DOWN ARROW | - |
+| Shrink Selection Forward | CTRL + UP ARROW | - |
+| Shrink Selection Left | CTRL + LEFT ARROW | - |
+| Shrink Selection Right | CTRL + RIGHT ARROW | - |
+
+
+### Brush Paint
+
+| Name | Shortcut | Exclusive |
+|:----|:----|:----|
+|???|???|???|
 
 ### Paste Preview
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 | Clear Preview | CTRL + D | - |
-| Enable Fixed Distance | - | - |
-| Enable Mouse Tracking | C | On |
+| Enable Fixed Distance | F | - |
+| Adjacent Target Mode | - | On |
+| Block Target Mode | B | On |
+| Mouse Tracking | C | On |
 | Move Offset Back | CTRL + SHIFT + DOWN ARROW | - |
 | Move Offset Down | CTRL + SHIFT + PAGE DOWN | - |
 | Move Offset Forward | CTRL + SHIFT + UP ARROW | - |
@@ -145,50 +169,75 @@ The input maps are organized into two main groups: Core and Modal Tools.
 | Paste at Cursor | CTRL + F | - |
 | Rotate Preview Clockwise | R | On |
 | Rotate Preview Counter Clockwise | SHIFT + R | - |
-| Toggle Adjacent Target Mode | F | On |
-| Toggle Block Target Mode | B | On |
 | Toggle Mirror X | X | On |
 | Toggle Mirror Z | Z | On |
 
-### Selection
+
+### Line
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Grow Selection Back | SHIFT + DOWN ARROW | - |
-| Grow Selection Down | SHIFT + PAGE DOWN | - |
-| Grow Selection Forward | SHIFT + UP ARROW | - |
-| Grow Selection Left | SHIFT + LEFT ARROW | - |
-| Grow Selection Right | SHIFT + RIGHT ARROW | - |
-| Grow Selection Up | SHIFT + PAGE UP | - |
-| Move All Selection Back | CTRL + ALT + DOWN ARROW | - |
-| Move All Selection Down | CTRL + ALT + PAGE DOWN | - |
-| Move All Selection Forward | CTRL + ALT + UP ARROW | - |
-| Move All Selection Left | CTRL + ALT + LEFT ARROW | - |
-| Move All Selection Right | CTRL + ALT + RIGHT ARROW | - |
-| Move All Selection Up | CTRL + ALT + PAGE UP | - |
-| Move Cursor Back | DOWN ARROW | On |
-| Move Cursor Down | PAGE DOWN | On |
-| Move Cursor Forward | UP ARROW | On |
-| Move Cursor Left | LEFT ARROW | On |
-| Move Cursor Right | RIGHT ARROW | On |
-| Move Cursor Up | PAGE DOWN | On |
-| Move Selection Back | ALT + DOWN ARROW | - |
-| Move Selection Down | ALT + PAGE DOWN | - |
-| Move Selection Forward | ALT + UP ARROW | - |
-| Move Selection Left | ALT + LEFT ARROW | - |
-| Move Selection Right | ALT + RIGHT ARROW | - |
-| Move Selection Up | ALT +  PAGE UP | - |
-| Shrink Selection Back | CTRL + DOWN ARROW | - |
-| Shrink Selection Down | CTRL + PAGE DOWN | - |
-| Shrink Selection Forward | CTRL + UP ARROW | - |
-| Shrink Selection Left | CTRL + LEFT ARROW | - |
-| Shrink Selection Right | CTRL + RIGHT ARROW | - |
-| Shrink Selection Up | CTRL + PAGE UP | - |
+| Delete Contents | SHIFT + DELETE | - |
+| Delete Contents and Deselect | DELETE | On |
+| Deselect | CTRL + D | - |
+| Deselect All | CTRL + SHIFT + D | - |
+| Fill Contents | CTRL + F | - |
+| Move Selected Back | DOWN ARROW | On |
+| Move Selected Down | PAGE DOWN | On |
+| Move Selected Forward | UP ARROW | On |
+| Move Selected Left | LEFT ARROW | On |
+| Move Selected Right | RIGHT ARROW | On |
+| Move Selected Up | PAGE UP | On |
+| Select All | - | - |
+
+
+### Ruler
+
+| Name | Shortcut | Exclusive |
+|:----|:----|:----|
+|???|???|???|
+
+
+### Smart Fill
+
+| Name | Shortcut | Exclusive |
+|:----|:----|:----|
+|???|???|???|
+
+
+### Terrain
+
+| Name | Shortcut | Exclusive |
+|:----|:----|:----|
+|???|???|???|
+
+
+### Flatten Brush
+
+| Name | Shortcut | Exclusive |
+|:----|:----|:----|
+|???|???|???|
+
+
+### Extrude
+
+| Name | Shortcut | Exclusive |
+|:----|:----|:----|
+|???|???|???|
+
+
+### Repeater
+
+| Name | Shortcut | Exclusive |
+|:----|:----|:----|
+|???|???|???|
+
 
 ### Summon Tool
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
+| Summon Tool | CTRL + SHIFT + S | - |
 | Clear Selection | CTRL + D | - |
 | Delete Entity | DELETE | On |
 | Move Selected Back | DOWN ARROW | On |
@@ -198,9 +247,8 @@ The input maps are organized into two main groups: Core and Modal Tools.
 | Move Selected Right | RIGHT ARROW | On |
 | Move Selected Up | PAGE UP | On |
 
-## Legacy Mapping List
 
-## Keyboard shortcuts
+## Legacy Mapping List
 
 | Action | Keyboard Shortcut | Mode |
 |:----|:----|:----|
