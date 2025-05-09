@@ -40,7 +40,7 @@ To clear a keyboard shortcut, right-click it or click the **Unbind** button in t
 |Restore All Defaults| Restores all default bindings for all pages of the mappings.|
 |Restore Defaults| Restores default bindings for this page.|
 
-[!Tip]
+> [!Tip]
 > You can reconfigure key bindings by clicking *Input Mapping* [!!unclear where this is!!] .
 
 Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
