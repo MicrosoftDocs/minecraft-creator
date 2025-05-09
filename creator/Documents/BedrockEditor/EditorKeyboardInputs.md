@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Hotkeys
 description: "An overview of the keyboard input shortcuts in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date 05/09/2025
+ms.date: 05/09/2025
 ---
 
 # Editor Hotkeys
