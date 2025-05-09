@@ -11,7 +11,7 @@ ms.date: 05/09/2025
 
 You can use the Keyboard Settings to view the default keyboard shortcuts and set custom keyboard shortcuts. Custom shortcuts are available in Editor and all Editor extensions!
 
-To set a custom keyboard shortcut, 
+To set a custom keyboard shortcut:
 
 1. Use the left pane of the Keyboard Settings window to locate the input you want to map. 
 
