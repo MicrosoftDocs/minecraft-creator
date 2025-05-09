@@ -21,7 +21,7 @@ To set a custom keyboard shortcut:
 
 4. Click the **Save** button. If you have made mul
 
-[!NOTE]
+> [!NOTE]
 > All custom shortcuts must be saved before closing the Keyboard Settings window. If you do not save your custom shortcuts, they will revert to the default shortcuts when the window is closed.
 
 To clear a keyboard shortcut, right-click it or click the **Unbind** button in the far-right column. Both methods for clearing a shortcut will remove it entirely, including the default key binding.
