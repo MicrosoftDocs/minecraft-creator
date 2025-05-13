@@ -16,7 +16,7 @@ We recommend reviewing the following articles before you begin:
 - [Introduction to Commands](../CommandsIntroduction.md)
 - [Introduction to Structure Blocks](../IntroductionToStructureBlocks.md)
 
-You should also download the structure blocks sample if you'd like to follow along with these buildings.
+There is a [sample Structure Blocks behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/structure_blocks_sample_behavior_pack) available at the **Minecraft Samples** GitHub repo. You can download it to use the same structures used in the tutorial, or to simply get a sense of the structure of behavior packs.
 
 In this tutorial, you will learn:
 
@@ -27,11 +27,7 @@ In this tutorial, you will learn:
 > - How to use the `/structure` command to place structures.
 > - How to animate a structure into Adventure or Survival mode using a command block and the `/structure` command.
 
-## Structure Block Sample Behavior Pack
-
-There is a [sample Structure Blocks behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/structure_blocks_sample_behavior_pack) available at the **Minecraft Samples** GitHub repo. You can download it to use the same structures used in the tutorial, or to simply get a sense of the structure of behavior packs.
-
-## Create a Structure
+## Create a structure
 
 In creative mode, build a structure smaller than 64 x 384 x 64 blocks.
 
@@ -52,7 +48,7 @@ To start, we'll save the log cabin.
 
 Now, the structure is saved and can be placed in your Minecraft world.
 
-## Load the Structure
+## Load the structure
 
 Let's begin building a village by adding another log cabin nearby.
 
@@ -72,7 +68,7 @@ Let's begin building a village by adding another log cabin nearby.
 
 We'll need another set of stairs but otherwise it's looking good! Now you can place as many copies of this log cabin as you'd like to create a village. You can also customize the look of a village by saving different sections of this building as separate structures (like roofs, eaves, and such) and then varying how they're loaded in.
 
-## Using the /structure Command
+## Using the /structure command
 
 So now we have a saved structure in a structure block. But what if we want to interact with a structure **without** using a structure block? Let's get to know the `/structure` command.
 
@@ -113,7 +109,7 @@ Now, let's load that same structure elsewhere, and rotate it, just to see how th
 
 Great! Now we can build a village more quickly than before.
 
-## Load a Structure with a Command Block and /structure Command
+## Load a structure with a command block and /structure command
 
 ![A statue loading in block by block in Adventure mode](../Media/StructureBlock/structureblockbyblock.png)
 
@@ -138,7 +134,7 @@ We're going to place an **impulse command block** and use the `/structure` comma
 7. After you load the structure, change your world from Creative mode to Adventure mode. (Hint: Use `/gamemode adventure` or `/gamemode a`.)
 8. Click the acacia button and watch!
 
-## What's Next?
+## What's next?
 
 Now that you're familiar with structure blocks and the `/structure` command, you could become the village building speedrun champion, create tons of cool animations using command blocks, or even try out recursively loading structures using structure blocks. Before you get to that, however, we suggest checking out more commands.
 

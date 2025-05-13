@@ -4,17 +4,18 @@ ms.author: mikeam
 title: 'Create an Animated Block Texture'
 description: "A guide to using flipbook textures to create custom animated block textures in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/05/2025
 ---
 
 # Create an Animated Block Texture
 
-In this tutorial, you will learn how to create custom block texture animations using a resource pack. You do not need any third-party animation applications.
+In this tutorial, you'll learn how to create custom block texture animations using a resource pack. You do not need any third-party animation applications.
 
-Flipbook animation is an illusion made by displaying multiple graphics one at a time in the same spot so that the viewer perceives motion. It's called a "flipbook" because animators can get a thick book of drawing paper and make little drawings in the corner and then hold the book just right to make the pages flip by so quickly that it looks like their drawings are moving.
+Flipbook animation is an illusion made by displaying multiple images one at a time in the same spot so that the viewer perceives motion. It's called a "flipbook" because animators can get a thick book of drawing paper and make little drawings in the corner and then hold the book just right to make the pages flip by so quickly that it looks like their drawings are moving.
 
-Each page's graphic is called a "frame" and the illusion can be affected by how quickly each frame is replaced by the next one, and whether the changes between each frame are blended together to create a smoother appearance.
+Each page's graphic is called a "frame," and the illusion can be affected by how quickly each frame is replaced by the next one and whether the changes between each frame are blended together to create a smoother appearance.
 
-One difference between Minecraft flipbook animation and paper flipbook animation is that rather than using individual pages/graphic files for each frame, Minecraft animation frames are stored as one long strip. Each frame is a 16 by 16-pixel square and the animation code inside the Minecraft game assigns each square a number and then displays each one starting at the top with frame 0.
+One difference between Minecraft flipbook animation and paper flipbook animation is that rather than using individual pages/graphic files for each frame, Minecraft animation frames are stored as one long strip. Each frame is a 16 by 16-pixel square. The animation code inside the Minecraft game assigns each square a number and then displays each one starting at the top with frame 0.
 
 ![Image of sculk graphics with four 16- by 16-pixel frame labeled 0 through 3, going top to bottom](Media/CreateAnimatedBlockTexture/sculk_frames_numbered.png)
 
@@ -22,12 +23,12 @@ By default, each of the six faces of a Minecraft block show the same frame of an
 
 ### Prerequisites
 
-The following actions are recommended before beginning this tutorial:
+Before you begin this tutorial, you should do the following:
 
 - Create a resource pack using [the Creating a Resource Pack tutorial](ResourcePack.md), or download the [sample pack collection](https://github.com/microsoft/minecraft-samples/tree/main/resource_pack_sample) and keep it handy on your computer.
 - Download and expand the latest [Vanilla Minecraft packs](https://aka.ms/resourcepacktemplate). The code and graphics needed for these tutorials will be provided along the way, but it's a good idea to have the sample pack as a reference.
 
-## A Flipbook Animation Resource Pack
+## A Flipbook animation resource pack
 
 This is the basic structure and content for the animation pack we are creating:
 
@@ -93,7 +94,7 @@ Here are some examples:
 | ticks_per_frame | How many ticks (1/20th of one second) of game time should pass before the next frame is displayed.|
 | frames | An array of frame numbers, used to show what order to display the frames. |
 
-## Prepare an Animation Resource Pack
+## Prepare an animation resource pack
 
 1. Start with the finished "green dirt block" resource pack that you can either [create with the resource pack tutorial](ResourcePack.md) or download from [Minecraft pack samples](https://github.com/microsoft/minecraft-samples).
 
@@ -105,9 +106,9 @@ Here are some examples:
 
 Okay. Now we're ready to animate!
 
-## Edit an Already Animated Block
+## Edit an already animated block
 
-To get familiar with how block textures are animated, we are going to start with one that is already animated, make some changes to it, and then observe the changes.
+To get familiar with how block textures are animated, we're going to start with one that is already animated, make some changes to it, and then observe the changes.
 
 1. Inside the **animation_resource_pack**, open the **textures** folder.
 
@@ -148,7 +149,7 @@ When you put it in your resource pack, you will need to rename it from **sculk_E
 
 Now that we have a better idea how flipbook animated textures work on an already animated block, let's see if we can animated a block that is NOT already animated.
 
-## Add Animation to a Non-Animated Block: Lapis Lazuli Ore
+## Add animation to a non-animated block: lapis lazuli ore
 
 Let's build on the existing animation pack by replacing the contents of your animation resource pack's **flipbook_texture.json** file with this:
 
@@ -177,7 +178,7 @@ The original Vanilla lapis ore texture file, **lapis_ore.png**, looks like this:
 
 ![Image of an unedited lapis_ore.png file. It has only one frame.](Media/CreateAnimatedBlockTexture/lapis_ore.png)
 
-The original file is 16- by 16-pixels. If we want to have a 6-frame animation like it says in the flipbook_texture.json file code (and we do), we need to open the graphic file and change the canvas size to be 96 pixels tall. 
+The original file is 16 by 16 pixels. If we want to have a 6-frame animation like it says in the **flipbook_texture.json** file code (and we do), we need to open the graphic file and change the canvas size to be 96 pixels tall. 
 
 Like this:
 
@@ -187,15 +188,15 @@ Now that the canvas can accommodate a total of 6 frames, add 5 more frames worth
 
 ![Image of the texture file for lapis lazuli ore that has been edited for animation.](Media/CreateAnimatedBlockTexture/lapis_ore_EDITED.png)
 
-Put the edited graphic file in the **textures/blocks** folder of your animation pack, make sure the name is changed from **`lapis_ore_EDITED.png`** to **`lapis_ore.png`**, and you're ready to go take a look at your animated block in Minecraft.
+Put the edited graphic file in the **textures/blocks** folder of your animation pack, make sure the name is changed from **lapis_ore_EDITED.png** to **lapis_ore.png**, and you're ready to go take a look at your animated block in Minecraft.
 
 ![Image of a Minecraft world with an animated block of lapis_ore placed on the ground.](Media/CreateAnimatedBlockTexture/placed_animated_lapis_ore.png)
 
-## Custom Die Block - Animated
+## Animate the custom die block
 
 After completing the [Advanced Custom Blocks tutorial](AdvancedCustomBlocks.md) you will have a red block in your hotbar and hand that, when placed, looks like a die block.
 
-In this next example, we are going to animate the block in the player's hand to scroll through the pattern of dots.
+In this next example, we're going to animate the block in the player's hand to scroll through the pattern of dots.
 
 Due to how textures are mapped onto blocks in the hotbar, all three visible sides of the die block will have the same pattern as the numbers shift from one through six.
 
@@ -229,10 +230,12 @@ For the purpose of this discussion, we are talking only about the basic "Vanilla
 
 If you take a really close look at a command block, you'll notice that the front, back, and sides of the block have different shapes with animated blinking dots on them.
 
-The front of the block has the circle shape and the four sides have an arrow shape::
+The front of the block has a circle shape and the four sides have an arrow shape:
+
 ![Image showing the front of a placed command block ](Media/CreateAnimatedBlockTexture/placed_command_block_front.png)
 
-The back of the block has the square shape:
+The back of the block has a square shape:
+
 ![Image showing the back of a placed command block](Media/CreateAnimatedBlockTexture/placed_command_block_back.png)
 
 The frames are mapped onto the command block with this code:
@@ -275,4 +278,4 @@ This is the final result:
 
 ## Next Steps
 
-Now that you know how to animate block textures, take a look at this page about [Add-on Pack Contents](ComprehensivePackContents.md) to see what else you could do to customize your own Minecraft world.
+Now that you know how to animate block textures, take a look at this page about [Add-on Pack Contents](ComprehensivePackContents.md) to see what else you could do to customize your own Minecraft world!
