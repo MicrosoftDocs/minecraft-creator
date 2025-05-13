@@ -5,6 +5,16 @@
     "title": "Particle Appearance Billboard Misc",
     "fields": [
       {
+        "id": "direction",
+        "title": "Direction",
+        "dataType": 16
+      },
+      {
+        "id": "facing_camera_mode",
+        "title": "Facing Camera Mode",
+        "dataType": 16
+      },
+      {
         "id": "size",
         "title": "Size",
         "dataType": 24,
@@ -37,16 +47,6 @@
             "dataType": 3
           }
         ]
-      },
-      {
-        "id": "facing_camera_mode",
-        "title": "Facing Camera Mode",
-        "dataType": 16
-      },
-      {
-        "id": "direction",
-        "title": "Direction",
-        "dataType": 16
       },
       {
         "id": "uv",

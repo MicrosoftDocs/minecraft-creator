@@ -58,16 +58,19 @@
         {
           "id": "blend_to_opaque",
           "title": "Blend to Opaque",
+          "versionIntroduced": "1.21.80",
           "description": "Will blend like stained glass in the near render and turn opaque on the far render."
         },
         {
           "id": "alpha_test_to_opaque",
           "title": "Alpha Test to Opaque",
+          "versionIntroduced": "1.21.80",
           "description": "Used for a block like the leaves. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also disabled backface culling."
         },
         {
           "id": "alpha_test_single_sided_to_opaque",
           "title": "Alpha Test (Single Sided) to Opaque",
+          "versionIntroduced": "1.21.80",
           "description": "Used for a block like the sugar cane. Does not allow for translucency, only fully opaque or fully transparent textures in the near render and turn only opaque on the far render. Also enables backface culling."
         }
       ],
@@ -79,6 +82,22 @@
           }
         ]
       }
+    },
+    {
+      "id": "tint_method",
+      "title": "Tint Method",
+      "versionIntroduced": "1.21.80",
+      "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint. Supported tint methods are \"none\", \"default_foliage\", \"birch_foliage\", \"evergreen_foliage\", \"dry_foliage\", \"grass\" and \"water\"",
+      "defaultValue": false,
+      "dataType": 1
+    },
+    {
+      "id": "isotropic",
+      "title": "Isotropic",
+      "versionIntroduced": "1.21.80",
+      "description": "Should the faces that this material is applied to randomize their UVs?",
+      "defaultValue": false,
+      "dataType": 1
     },
     {
       "id": "face_dimming",

@@ -24,7 +24,7 @@ This item can also be represented as a `String`.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | As an object | *not set* | Array of [As An Object](#as-an-object-item-type) items | The component can be defined as an object to gain control over more specific behaviors. |  | 
-| bone_visibility | *not set* | Keyed collection of boolean values | An optional array of Booleans that define the visibility of individual bones in the geometry file. In order to set up 'bone_visibility', the geometry file name must be entered as an identifier. After the identifier has been specified, bone_visibility can be defined based on the names of the bones in the specified geometry file on a true/false basis. Note that all bones default to 'true,' so bones should only be defined if they are being set to 'false.' Including bones set to 'true' will work the same as the default. | Blue Bubble Fish: `{"bb_main":true,"fish":true}` | 
+| bone_visibility | *not set* | [Bone Visibility](#bone-visibility-item-type) item | An optional array of Booleans that define the visibility of individual bones in the geometry file. In order to set up 'bone_visibility', the geometry file name must be entered as an identifier. After the identifier has been specified, bone_visibility can be defined based on the names of the bones in the specified geometry file on a true/false basis. Note that all bones default to 'true,' so bones should only be defined if they are being set to 'false.' Including bones set to 'true' will work the same as the default. | Blue Bubble Fish: `{"bb_main":true,"fish":true}` | 
 | culling | *not set* | String | An optional identifer of a culling definition. This identifier must match an existing culling definition in any of the currently loaded resource packs. The culling definition is used to determine which faces of the block should be culled when rendering. The culling definition can be used to optimize rendering performance by reducing the number of faces that need to be rendered. | Tuna Roll: `"test:sushi_cull"` | 
 | culling_layer | *not set* | String | [Experimental] - A string that allows culling rule to group multiple blocks together when comparing them. When using the minecraft namespace, the only allowed culling layer identifiers are : "minecraft:culling_layer.undefined" or "minecraft:culling_layer.leaves". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character. Additionally, the feature is currently only usable behind the "upcoming creator features" toggle. |  | 
 | identifier | *not set* | String | Specifies the geometry description identifier to use to render this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs. | Tuna Roll: `"geometry.sushi"`, Blue Bubble Fish: `"geometry.bubble_fish"`, Die: `"minecraft:geometry.full_block"` | 
@@ -39,9 +39,18 @@ The component can be defined as an object to gain control over more specific beh
 |:----------|:-------------|:----|:-----------|:------------- |
 | bone_visibility | *not set* | Array of objects | A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a boolean that tells whether the bone should be visible or not (value). |  | 
 | culling | *not set* | String | Which block_culling .json file to use when rendering this block. |  | 
-| culling_layer | minecraft:culling_layer.undefined | String | A string that allows culling rule to group multiple blocks together when comparing them. When using the minecraft namespace, the only allowed culling layer identifiers are : "minecraft:culling_layer.undefined" or "minecraft:culling_layer.leaves". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character. Additionally, the feature is currently only usable behind the "upcoming creator features" toggle. |  | 
+| culling_layer | minecraft:culling_layer.undefined | String | A string that allows culling rule to group multiple blocks together when comparing them. When using the minecraft namespace, the only allowed culling layer identifiers are : "minecraft:culling_layer.undefined" or "minecraft:culling_layer.leaves". When using no namespaces or a custom one, the names must start and end with an alpha-numeric character. |  | 
 | identifier | *not set* | String | The description identifier of the geometry to use to render this block. |  | 
-| uv_lock | *not set* | String | A Boolean locking UV orientation of all bones in the geometry, or an array of strings locking UV orientation of specific bones in the geometry. For performance reasons it is recommended to use the Boolean. |  | 
+| uv_lock | *not set* | String | A Boolean locking UV orientation of all bones in the geometry, or an array of strings locking UV orientation of specific bones in the geometry. For performance reasons it is recommended to use the Boolean. Note that for cubes using Box UVs, rather than Per-face UVs, 'uv_lock' is only supported if the cube faces are square. |  | 
+
+## Bone Visibility item type
+
+#### Bone_visibility Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| bb_main | *not set* | String |  | Blue Bubble Fish: `true` | 
+| fish | *not set* | String |  | Blue Bubble Fish: `true` | 
 
 ## Samples
 

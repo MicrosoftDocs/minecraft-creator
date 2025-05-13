@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Emits a particle specified via the particle attribute.
 
+> [!Note]
+> This item requires a format version of at least 1.21.50.
+
 
 ## Emit Particle Properties
 

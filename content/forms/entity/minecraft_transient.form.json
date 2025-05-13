@@ -1,5 +1,6 @@
 {
   "fields": [],
+  "versionIntroduced": "1.21.40",
   "generated_doNotEdit": {
     "id": "minecraft:transient",
     "title": "Transient",

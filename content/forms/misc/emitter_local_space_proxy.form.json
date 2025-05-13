@@ -10,13 +10,13 @@
         "dataType": 1
       },
       {
-        "id": "velocity",
-        "title": "Velocity",
+        "id": "rotation",
+        "title": "Rotation",
         "dataType": 1
       },
       {
-        "id": "rotation",
-        "title": "Rotation",
+        "id": "velocity",
+        "title": "Velocity",
         "dataType": 1
       }
     ]

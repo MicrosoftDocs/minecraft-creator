@@ -1,5 +1,6 @@
 {
   "fields": [],
+  "versionIntroduced": "1.21.30",
   "generated_doNotEdit": {
     "id": "minecraft:behavior.jump_around_target",
     "title": "Jump Around Target Behavior",

@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Sets the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.
 
+> [!Note]
+> This item requires a format version of at least 1.21.50.
+
 
 ## Ambient Sounds Properties
 

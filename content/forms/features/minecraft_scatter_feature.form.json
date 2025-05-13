@@ -6,6 +6,10 @@
       "id": "format_version",
       "title": "Format Version",
       "dataType": 2
+    },
+    {
+      "id": "distribution",
+      "versionIntroduced": "1.21.20"
     }
   ],
   "samples": {

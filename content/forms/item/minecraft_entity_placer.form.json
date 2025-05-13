@@ -92,11 +92,6 @@
               "dataType": 2
             },
             {
-              "id": "tags",
-              "title": "Tags",
-              "dataType": 2
-            },
-            {
               "id": "states",
               "title": "States",
               "dataType": 0,
@@ -110,6 +105,11 @@
                   "dataType": 1
                 }
               ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2
             }
           ]
         },
@@ -201,11 +201,6 @@
               "dataType": 2
             },
             {
-              "id": "tags",
-              "title": "Tags",
-              "dataType": 2
-            },
-            {
               "id": "states",
               "title": "States",
               "dataType": 0,
@@ -219,6 +214,11 @@
                   "dataType": 1
                 }
               ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2
             }
           ]
         },

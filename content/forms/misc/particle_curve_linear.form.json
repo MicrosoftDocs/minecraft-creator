@@ -5,22 +5,17 @@
     "title": "Particle Curve Linear Misc",
     "fields": [
       {
-        "id": "type",
-        "title": "Type",
-        "dataType": 16
-      },
-      {
-        "id": "nodes",
-        "title": "Nodes",
+        "id": "horizontal_range",
+        "title": "Horizontal Range",
         "dataType": 24,
         "alternates": [
           {
-            "id": "nodes",
+            "id": "horizontal_range",
             "dataType": 14,
             "readOnly": true,
             "subForm": {
-              "id": "nodes",
-              "title": "Nodes",
+              "id": "horizontal_range",
+              "title": "Horizontal Range",
               "fields": [
                 {
                   "id": "expression",
@@ -36,7 +31,7 @@
             }
           },
           {
-            "id": "nodes",
+            "id": "horizontal_range",
             "dataType": 3
           }
         ]
@@ -74,17 +69,17 @@
         ]
       },
       {
-        "id": "horizontal_range",
-        "title": "Horizontal Range",
+        "id": "nodes",
+        "title": "Nodes",
         "dataType": 24,
         "alternates": [
           {
-            "id": "horizontal_range",
+            "id": "nodes",
             "dataType": 14,
             "readOnly": true,
             "subForm": {
-              "id": "horizontal_range",
-              "title": "Horizontal Range",
+              "id": "nodes",
+              "title": "Nodes",
               "fields": [
                 {
                   "id": "expression",
@@ -100,10 +95,15 @@
             }
           },
           {
-            "id": "horizontal_range",
+            "id": "nodes",
             "dataType": 3
           }
         ]
+      },
+      {
+        "id": "type",
+        "title": "Type",
+        "dataType": 16
       }
     ]
   }

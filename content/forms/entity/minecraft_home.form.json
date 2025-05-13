@@ -1,5 +1,10 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "restriction_type",
+      "versionIntroduced": "1.21.40"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:home",
     "title": "Home",

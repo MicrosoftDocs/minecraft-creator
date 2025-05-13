@@ -24,7 +24,7 @@ Defines interactions with this entity.
 | equip_item_slot | *not set* | String | The entity's slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
 | health_amount | 0 | Integer number | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. |  | 
 | hurt_item | 0 | Integer number | The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |  | 
-| interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls. |  | 
+| interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls. |  | 
 | interactions | *not set* | Array of [Interactions](#interactions-item-type) items |  | Allay: `[{"on_interact":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_sneak_held","subject":"other","value":false}]}},"give_item":true,"take_item":true,"interact_text":"action.interact.allay"}]`, Armadillo: `[{"on_interact":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"has_equipment","subject":"other","domain":"hand","value":"brush"}]}},"play_sounds":"mob.armadillo.brush","interact_text":"action.interact.brush","hurt_item":16,"swing":true,"spawn_items":{"table":"loot_tables/entities/armadillo_brush.json"}}]` | 
 | on_interact | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the interaction occurs. |  | 
 | particle_on_start | *not set* | Array of [Particle On Start](#particle-on-start-item-type) items | Particle effect that will be triggered at the start of the interaction. |  | 
@@ -112,6 +112,7 @@ Loot table with items to drop on the ground upon successful interaction.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | table | *not set* | String | File path, relative to the Behavior Pack's path, to the loot table file. |  | 
+| y_offset | 1 | Decimal number | Will offset the items spawn position this amount in the y direction. |  | 
 
 ## Samples
 
@@ -305,9 +306,42 @@ Loot table with items to drop on the ground upon successful interaction.
               "value": "saddle"
             },
             {
-              "test": "is_family",
+              "test": "is_sneak_held",
               "subject": "other",
-              "value": "player"
+              "value": false
+            }
+          ]
+        }
+      },
+      "equip_item_slot": "0",
+      "interact_text": "action.interact.saddle"
+    },
+    {
+      "on_interact": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "is_sitting",
+              "subject": "self",
+              "value": false
+            },
+            {
+              "test": "rider_count",
+              "subject": "self",
+              "operator": "equals",
+              "value": 0
+            },
+            {
+              "test": "has_equipment",
+              "subject": "self",
+              "domain": "inventory",
+              "value": "saddle"
+            },
+            {
+              "test": "has_equipment",
+              "subject": "other",
+              "domain": "hand",
+              "value": "shears"
             },
             {
               "test": "is_sneak_held",
@@ -315,11 +349,55 @@ Loot table with items to drop on the ground upon successful interaction.
               "value": false
             }
           ]
-        },
-        "target": "self"
+        }
       },
-      "equip_item_slot": "0",
-      "interact_text": "action.interact.saddle"
+      "hurt_item": 1,
+      "drop_item_slot": "0",
+      "drop_item_y_offset": 2,
+      "interact_text": "action.interact.removesaddle",
+      "play_sounds": "shear",
+      "vibration": "shear"
+    },
+    {
+      "on_interact": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "is_sitting",
+              "subject": "self"
+            },
+            {
+              "test": "rider_count",
+              "subject": "self",
+              "operator": "equals",
+              "value": 0
+            },
+            {
+              "test": "has_equipment",
+              "subject": "self",
+              "domain": "inventory",
+              "value": "saddle"
+            },
+            {
+              "test": "has_equipment",
+              "subject": "other",
+              "domain": "hand",
+              "value": "shears"
+            },
+            {
+              "test": "is_sneak_held",
+              "subject": "other",
+              "value": false
+            }
+          ]
+        }
+      },
+      "hurt_item": 1,
+      "drop_item_slot": "0",
+      "drop_item_y_offset": 1,
+      "interact_text": "action.interact.removesaddle",
+      "play_sounds": "shear",
+      "vibration": "shear"
     }
   ]
 }
@@ -422,11 +500,6 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:interact/
               "value": "saddle"
             },
             {
-              "test": "is_family",
-              "subject": "other",
-              "value": "player"
-            },
-            {
               "test": "is_sneak_held",
               "subject": "other",
               "value": false
@@ -437,6 +510,43 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:interact/
       },
       "equip_item_slot": "0",
       "interact_text": "action.interact.equip"
+    },
+    {
+      "on_interact": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "rider_count",
+              "subject": "self",
+              "operator": "equals",
+              "value": 0
+            },
+            {
+              "test": "has_equipment",
+              "subject": "self",
+              "domain": "inventory",
+              "value": "saddle"
+            },
+            {
+              "test": "has_equipment",
+              "subject": "other",
+              "domain": "hand",
+              "value": "shears"
+            },
+            {
+              "test": "is_sneak_held",
+              "subject": "other",
+              "value": false
+            }
+          ]
+        }
+      },
+      "hurt_item": 1,
+      "drop_item_slot": "0",
+      "drop_item_y_offset": 1.1,
+      "interact_text": "action.interact.removesaddle",
+      "play_sounds": "shear",
+      "vibration": "shear"
     }
   ]
 }
@@ -466,11 +576,6 @@ At /minecraft:entity/component_groups/minecraft:donkey_unchested/minecraft:inter
               "value": "saddle"
             },
             {
-              "test": "is_family",
-              "subject": "other",
-              "value": "player"
-            },
-            {
               "test": "is_sneak_held",
               "subject": "other",
               "value": false
@@ -483,15 +588,47 @@ At /minecraft:entity/component_groups/minecraft:donkey_unchested/minecraft:inter
       "interact_text": "action.interact.saddle"
     },
     {
-      "play_sounds": "armor.equip_generic",
       "on_interact": {
         "filters": {
           "all_of": [
             {
-              "test": "is_family",
-              "subject": "other",
-              "value": "player"
+              "test": "rider_count",
+              "subject": "self",
+              "operator": "equals",
+              "value": 0
             },
+            {
+              "test": "has_equipment",
+              "subject": "self",
+              "domain": "inventory",
+              "value": "saddle"
+            },
+            {
+              "test": "has_equipment",
+              "subject": "other",
+              "domain": "hand",
+              "value": "shears"
+            },
+            {
+              "test": "is_sneak_held",
+              "subject": "other",
+              "value": false
+            }
+          ]
+        }
+      },
+      "hurt_item": 1,
+      "drop_item_slot": "0",
+      "drop_item_y_offset": 1.1,
+      "interact_text": "action.interact.removesaddle",
+      "play_sounds": "shear",
+      "vibration": "shear"
+    },
+    {
+      "play_sounds": "armor.equip_generic",
+      "on_interact": {
+        "filters": {
+          "all_of": [
             {
               "test": "is_sneaking",
               "subject": "other",
@@ -554,6 +691,43 @@ At /minecraft:entity/component_groups/minecraft:donkey_chested/minecraft:interac
       },
       "equip_item_slot": "0",
       "interact_text": "action.interact.saddle"
+    },
+    {
+      "on_interact": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "rider_count",
+              "subject": "self",
+              "operator": "equals",
+              "value": 0
+            },
+            {
+              "test": "has_equipment",
+              "subject": "self",
+              "domain": "inventory",
+              "value": "saddle"
+            },
+            {
+              "test": "has_equipment",
+              "subject": "other",
+              "domain": "hand",
+              "value": "shears"
+            },
+            {
+              "test": "is_sneak_held",
+              "subject": "other",
+              "value": false
+            }
+          ]
+        }
+      },
+      "hurt_item": 1,
+      "drop_item_slot": "0",
+      "drop_item_y_offset": 1.1,
+      "interact_text": "action.interact.removesaddle",
+      "play_sounds": "shear",
+      "vibration": "shear"
     }
   ]
 }

@@ -9,7 +9,7 @@
         "id": "identifier",
         "title": "Identifier",
         "description": "The name of the Biome, used by other features like the '/locate biome' command. Identifiers should only be lowercase.",
-        "dataType": 2,
+        "dataType": 16,
         "validity": [
           {
             "comparison": "pattern",

@@ -1652,14 +1652,6 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:llama_unchested/minecraft:interact/interactions/1/on_interact/filters/all_of/2/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        },
-        {
           "path": "/minecraft:entity/component_groups/minecraft:llama_chested/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
           "content": {
             "test": "is_family",

@@ -37,38 +37,6 @@
         ]
       },
       {
-        "id": "travel_distance_events",
-        "title": "Travel Distance Events",
-        "dataType": 15,
-        "alternates": [
-          {
-            "id": "travel_distance_events",
-            "dataType": 16,
-            "subForm": {
-              "id": "travel_distance_events",
-              "title": "Travel Distance Events",
-              "fields": []
-            }
-          }
-        ]
-      },
-      {
-        "id": "timeline",
-        "title": "Timeline",
-        "dataType": 15,
-        "alternates": [
-          {
-            "id": "timeline",
-            "dataType": 16,
-            "subForm": {
-              "id": "timeline",
-              "title": "Timeline",
-              "fields": []
-            }
-          }
-        ]
-      },
-      {
         "id": "looping_travel_distance_events",
         "title": "Looping Travel Distance Events",
         "dataType": 15,
@@ -99,6 +67,38 @@
             }
           ]
         }
+      },
+      {
+        "id": "timeline",
+        "title": "Timeline",
+        "dataType": 15,
+        "alternates": [
+          {
+            "id": "timeline",
+            "dataType": 16,
+            "subForm": {
+              "id": "timeline",
+              "title": "Timeline",
+              "fields": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "travel_distance_events",
+        "title": "Travel Distance Events",
+        "dataType": 15,
+        "alternates": [
+          {
+            "id": "travel_distance_events",
+            "dataType": 16,
+            "subForm": {
+              "id": "travel_distance_events",
+              "title": "Travel Distance Events",
+              "fields": []
+            }
+          }
+        ]
       }
     ]
   }
