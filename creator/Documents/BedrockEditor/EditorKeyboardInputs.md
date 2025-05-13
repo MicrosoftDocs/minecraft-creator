@@ -19,7 +19,7 @@ To set a custom keyboard shortcut:
 
 3. Press the keyboard buttons that you want to use for your custom shortcut. 
 
-4. Click the **Save** button. If you have made mul
+4. Click **Save**.
 
 > [!NOTE]
 > All custom shortcuts must be saved before closing the Keyboard Settings window. If you do not save your custom shortcuts, they will revert to the default shortcuts when the window is closed.
@@ -137,7 +137,7 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-|???|???|???|
+| Brush Paint Tool | CTRL + B | - |
 
 ### Paste Preview
 
@@ -177,6 +177,7 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
+| Line Tool | CTRL + L | - |
 | Delete Contents | SHIFT + DELETE | - |
 | Delete Contents and Deselect | DELETE | On |
 | Deselect | CTRL + D | - |
@@ -191,46 +192,26 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Select All | - | - |
 
 
-### Ruler
-
-| Name | Shortcut | Exclusive |
-|:----|:----|:----|
-|???|???|???|
-
-
-### Smart Fill
-
-| Name | Shortcut | Exclusive |
-|:----|:----|:----|
-|???|???|???|
-
-
 ### Terrain
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-|???|???|???|
+| Terrain Tool | CTRL + T | - |
+| Toggle Smooth/Roughen| R | - |
 
 
 ### Flatten Brush
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-|???|???|???|
+| Flatten Tool | CTRL + SHIFT + H |  |
 
 
 ### Extrude
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-|???|???|???|
-
-
-### Repeater
-
-| Name | Shortcut | Exclusive |
-|:----|:----|:----|
-|???|???|???|
+|Extrude Tool| CTRL + SHIFT + E | - |
 
 
 ### Summon Tool
