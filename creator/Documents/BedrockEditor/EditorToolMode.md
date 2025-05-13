@@ -24,7 +24,7 @@ In a new project, before you touch anything, you are in Tool Mode.
 If you're ever not sure which mode you are in, press **Esc**. If you're in Crosshair mode, you'll go back into Tool Mode - if you're in Tool Mode already, nothing will happen.
 
 > [!PRACTICE]
-> In the top right corner of the screen, select the "Crosshair Mode" button or press `Ctrl+Tab` to go into Crosshair Mode. Note the differences. To go back to Tool Mode, you can press `Ctrl+Tab` again or press `Esc`. You can also go from Tool Mode to Crosshair Mode by clicking the Crosshair Mode button in the upper right corner.
+> In the top right corner of the screen, select the "Crosshair Mode" button or press **Ctrl+Tab** to go into Crosshair Mode. Note the differences. To go back to Tool Mode, you can press **Ctrl+Tab** again or press **Esc**. You can also go from Tool Mode to Crosshair Mode by clicking the Crosshair Mode button in the upper right corner.
 
 Think of the Tool Mode UI as a collection of containers. The menu bar contains menus. The action bar contains buttons that do simple functions like Undo and Redo. The toolrail contains more complicated tools that have their own configuration windows where you can change the settings.
 
