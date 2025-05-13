@@ -33,19 +33,20 @@ Defines surface material for steep slopes.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | east_slopes | *not set* | Boolean true/false | Enable for east-facing slopes |  | 
-| material | *not set* | String | Block type use as steep material |  | 
-| material (Alternate 1) | *not set* | [Material (Alternate 1)](#material-(alternate-1)-item-type) item |  |  | 
+| material | *not set* | Keyed set of strings | Block type use as steep material |  | 
+| material (Alternate 1) | *not set* | Keyed set of strings |  |  | 
+| material (Alternate 2) | *not set* | [Material (Alternate 2)](#material-(alternate-2)-item-type) item |  |  | 
 | north_slopes | *not set* | Boolean true/false | Enable for north-facing slopes |  | 
 | south_slopes | *not set* | Boolean true/false | Enable for south-facing slopes |  | 
 | west_slopes | *not set* | Boolean true/false | Enable for west-facing slopes |  | 
 
-## Material (Alternate 1) item type
+## Material (Alternate 2) item type
 
 #### Material Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | String | Name of the block |  | 
+| name | *not set* | Object | Name of the block |  | 
 | states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
 | states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
 | states (Alternate 2) | *not set* | Keyed set of strings |  |  | 

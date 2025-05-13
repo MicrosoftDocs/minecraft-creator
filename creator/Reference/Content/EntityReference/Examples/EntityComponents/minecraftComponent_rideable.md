@@ -18,7 +18,7 @@ This entity can be ridden.
 |:----------|:-------------|:----|:-----------|:------------- |
 | controlling_seat | 0 | Integer number | The seat that designates the driver of the entity. Entities with the "minecraft:behavior.controlled_by_player" goal ignore this field and give control to any player in any seat. |  | 
 | crouching_skip_interact | true | Boolean true/false | If true, this entity can't be interacted with if the entity interacting with it is crouching. | Camel: `true` | 
-| dismount_mode | default | String | Defines where riders are placed when dismounting this entity: <br>- "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found. <br>- "on_top_center", riders are placed at the center of the top of the entity's collision box. | Happy Ghast: `"on_top_center"` | 
+| dismount_mode | default | [Dismount Mode](#dismount-mode-choices) choices | Defines where riders are placed when dismounting this entity: <br>- "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found. <br>- "on_top_center", riders are placed at the center of the top of the entity's collision box. | Happy Ghast: `"on_top_center"` | 
 | family_types | *not set* | Array of strings | List of entities that can ride this entity. | Camel: `["player"]`, Cat: `["zombie"]`, Donkey: `["player","zombie"]` | 
 | interact_text | *not set* | String | The text to display when the player can interact with the entity when playing with touch-screen controls. | Camel: `"action.interact.ride.horse"`, Donkey: `"action.interact.mount"`, Minecart: `"action.interact.ride.minecart"` | 
 | on_rider_enter_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to execute on the owner entity when an entity starts riding it. | Happy Ghast: `"minecraft:on_passenger_mount"` | 
@@ -30,6 +30,13 @@ This entity can be ridden.
 | rider_can_interact | false | Boolean true/false | If true, this entity will be picked when looked at by the rider. |  | 
 | seat_count | 1 | Integer number | The number of entities that can ride this entity at the same time. | Camel: `2`, Cat: `1`, Happy Ghast: `4` | 
 | seats | *not set* | Array of [Seats](#seats-item-type) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]`, Cat: `{"position":[0,0.35,0]}`, Chicken: `{"position":[0,0.4,0]}` | 
+
+### Dismount Mode choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| default | Default | |
+| on_top_center | On Top Center | |
 
 ## Seats item type
 The list of positions and number of riders for each position for entities riding this entity.

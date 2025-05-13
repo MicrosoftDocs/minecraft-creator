@@ -17,7 +17,7 @@ Scatters a feature throughout a chunk. The x, y, and z fields are per-coordinate
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | description | *not set* | [Description](#description-item-type) item |  |  | 
-| distribution | *not set* | Object | Parameters controlling the scatter of the feature. Object of type ScatterParams |  | 
+| distribution | *not set* | Object | Parameters controlling the scatter of the feature. Object of type ScatterParams This item requires a format version of at least undefined. |  | 
 | format_version | *not set* | String |  |  | 
 | project_input_to_floor | *not set* | Boolean true/false | If true, snaps the y-value of the scattered position to the terrain heightmap. If false or unset, y-value is unmodified. |  | 
 

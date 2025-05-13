@@ -49,12 +49,6 @@
     "description": "Digger item component specifies how quickly this item can dig specific blocks.",
     "fields": [
       {
-        "id": "use_efficiency",
-        "title": "Use Efficiency",
-        "description": "Determines whether this item should be impacted if the efficiency enchantment is applied to it.",
-        "dataType": 1
-      },
-      {
         "id": "destroy_speeds",
         "title": "Destroy Speeds",
         "description": "A list of blocks to dig with correlating speeds of digging.",
@@ -78,11 +72,6 @@
                     "dataType": 2
                   },
                   {
-                    "id": "tags",
-                    "title": "Tags",
-                    "dataType": 2
-                  },
-                  {
                     "id": "states",
                     "title": "States",
                     "dataType": 0,
@@ -96,6 +85,11 @@
                         "dataType": 1
                       }
                     ]
+                  },
+                  {
+                    "id": "tags",
+                    "title": "Tags",
+                    "dataType": 2
                   }
                 ]
               },
@@ -118,6 +112,12 @@
             }
           ]
         }
+      },
+      {
+        "id": "use_efficiency",
+        "title": "Use Efficiency",
+        "description": "Determines whether this item should be impacted if the efficiency enchantment is applied to it.",
+        "dataType": 1
       }
     ]
   }

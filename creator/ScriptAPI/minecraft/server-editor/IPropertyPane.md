@@ -47,6 +47,7 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 - [addNumber](#addnumber)
 - [addNumberTimeline](#addnumbertimeline)
 - [addProgressIndicator](#addprogressindicator)
+- [addProxyPane](#addproxypane)
 - [addString](#addstring)
 - [addText](#addtext)
 - [addToggleGroup](#addtogglegroup)
@@ -259,6 +260,18 @@ Adds a Progress Indicator item to the pane.
 - **options**: *IProgressIndicatorPropertyItemOptions*
 
 **Returns** *IProgressIndicatorPropertyItem*
+
+### **addProxyPane**
+`
+addProxyPane(paneId: string): void
+`
+
+Adds a proxy view of another supported pane
+
+#### **Parameters**
+- **paneId**: *string*
+
+**Returns** *void*
 
 ### **addString**
 `

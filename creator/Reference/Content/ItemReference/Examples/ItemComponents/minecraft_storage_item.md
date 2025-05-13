@@ -14,6 +14,9 @@ Enables an item to store data of the dynamic container associated with it. A dyn
 > [!Note]
 > While this component can be defined on its own, to be able to interact with the item's storage container the item must have a `minecraft:bundle_interaction` item component defined.
 
+> [!Note]
+> This item requires a format version of at least 1.21.40.
+
 
 ## Storage Item Properties
 

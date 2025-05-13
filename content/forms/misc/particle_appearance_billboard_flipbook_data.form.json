@@ -39,18 +39,14 @@
         ]
       },
       {
-        "id": "size_UV",
-        "title": "Size UV",
-        "dataType": 32,
-        "minLength": 2,
-        "maxLength": 2
+        "id": "frames_per_second",
+        "title": "Frames Per Second",
+        "dataType": 3
       },
       {
-        "id": "step_UV",
-        "title": "Step UV",
-        "dataType": 32,
-        "minLength": 2,
-        "maxLength": 2
+        "id": "loop",
+        "title": "Loop",
+        "dataType": 1
       },
       {
         "id": "max_frame",
@@ -85,14 +81,18 @@
         ]
       },
       {
-        "id": "loop",
-        "title": "Loop",
-        "dataType": 1
+        "id": "size_UV",
+        "title": "Size UV",
+        "dataType": 32,
+        "minLength": 2,
+        "maxLength": 2
       },
       {
-        "id": "frames_per_second",
-        "title": "Frames Per Second",
-        "dataType": 3
+        "id": "step_UV",
+        "title": "Step UV",
+        "dataType": 32,
+        "minLength": 2,
+        "maxLength": 2
       },
       {
         "id": "stretch_to_lifetime",

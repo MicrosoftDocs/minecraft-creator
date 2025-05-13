@@ -1,5 +1,6 @@
 {
   "fields": [],
+  "versionIntroduced": "1.21.50",
   "generated_doNotEdit": {
     "id": "minecraft:ignore_cannot_be_attacked",
     "title": "Ignore Cannot Be Attacked",

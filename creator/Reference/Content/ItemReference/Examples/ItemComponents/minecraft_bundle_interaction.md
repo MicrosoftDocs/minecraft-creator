@@ -17,6 +17,9 @@ Enables the bundle-specific interaction scheme and tooltip for an item.
 > [!Note]
 > In `/textures/textures_list.json`, the following code needs to be added for an item named `my_custom_bundle`: [ '<resource pack>/textures/items/my_custom_bundle.png', '<resource pack>/textures/items/my_custom_bundle_open_front.png','<resource pack>/textures/items/my_custom_bundle_open_back.png']. The respective icon textures would need to be added: my_custom_bundle.png, my_custom_bundle_open_front.png, my_custom_bundle_open_back.png. Note that it's important that the filenames are the item name, plus `_open_front` and `_open_back` respectively.
 
+> [!Note]
+> This item requires a format version of at least 1.21.40.
+
 
 ## Bundle Interaction Properties
 

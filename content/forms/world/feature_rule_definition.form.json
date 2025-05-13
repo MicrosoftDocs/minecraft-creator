@@ -5,6 +5,130 @@
     "title": "Feature Rule Definition World",
     "fields": [
       {
+        "id": "conditions",
+        "title": "Conditions",
+        "description": "Parameters to control where and when the feature will be placed.",
+        "dataType": 16,
+        "subForm": {
+          "id": "Feature Rule Conditions",
+          "title": "Feature Rule Conditions",
+          "fields": [
+            {
+              "id": "minecraft:biome_filter",
+              "title": "Minecraft Biome Filter",
+              "description": "List of filter tests to determine which biomes this rule will attach to.",
+              "dataType": 16,
+              "subForm": {
+                "id": "minecraft:biome_filter",
+                "title": "Biome Filter",
+                "fields": [
+                  {
+                    "id": "domain",
+                    "title": "Domain",
+                    "description": "The domain the test should be performed in.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "operator",
+                    "title": "Operator",
+                    "description": "The comparison to apply with 'value'.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "subject",
+                    "title": "Subject",
+                    "description": "The subject of this filter test.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "test",
+                    "title": "Test",
+                    "description": "The name of the test to apply.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "value",
+                    "title": "Value",
+                    "description": "The value being compared with the test.",
+                    "dataType": 16
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "id": "minecraft:biome_filter",
+                  "dataType": 16
+                },
+                {
+                  "id": "minecraft:biome_filter",
+                  "dataType": 16,
+                  "subForm": {
+                    "id": "minecraft:biome_filter",
+                    "title": "Biome Filter",
+                    "fields": [
+                      {
+                        "id": "AND",
+                        "title": "AND",
+                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "NOT",
+                        "title": "NOT",
+                        "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "OR",
+                        "title": "OR",
+                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "all",
+                        "title": "All",
+                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "all_of",
+                        "title": "All Of",
+                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "any",
+                        "title": "Any",
+                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "any_of",
+                        "title": "Any Of",
+                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "none_of",
+                        "title": "None Of",
+                        "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                        "dataType": 16
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "placement_pass",
+              "title": "Placement Pass",
+              "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
         "id": "description",
         "title": "Description",
         "description": "Identifier for the Feature Rule and Feture to place.",
@@ -29,130 +153,6 @@
         }
       },
       {
-        "id": "conditions",
-        "title": "Conditions",
-        "description": "Parameters to control where and when the feature will be placed.",
-        "dataType": 16,
-        "subForm": {
-          "id": "Feature Rule Conditions",
-          "title": "Feature Rule Conditions",
-          "fields": [
-            {
-              "id": "placement_pass",
-              "title": "Placement Pass",
-              "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
-              "dataType": 2
-            },
-            {
-              "id": "minecraft:biome_filter",
-              "title": "Minecraft Biome Filter",
-              "description": "List of filter tests to determine which biomes this rule will attach to.",
-              "dataType": 16,
-              "subForm": {
-                "id": "minecraft:biome_filter",
-                "title": "Biome Filter",
-                "fields": [
-                  {
-                    "id": "operator",
-                    "title": "Operator",
-                    "description": "The comparison to apply with 'value'.",
-                    "dataType": 16
-                  },
-                  {
-                    "id": "test",
-                    "title": "Test",
-                    "description": "The name of the test to apply.",
-                    "dataType": 2
-                  },
-                  {
-                    "id": "subject",
-                    "title": "Subject",
-                    "description": "The subject of this filter test.",
-                    "dataType": 16
-                  },
-                  {
-                    "id": "domain",
-                    "title": "Domain",
-                    "description": "The domain the test should be performed in.",
-                    "dataType": 16
-                  },
-                  {
-                    "id": "value",
-                    "title": "Value",
-                    "description": "The value being compared with the test.",
-                    "dataType": 16
-                  }
-                ]
-              },
-              "alternates": [
-                {
-                  "id": "minecraft:biome_filter",
-                  "dataType": 16
-                },
-                {
-                  "id": "minecraft:biome_filter",
-                  "dataType": 16,
-                  "subForm": {
-                    "id": "minecraft:biome_filter",
-                    "title": "Biome Filter",
-                    "fields": [
-                      {
-                        "id": "OR",
-                        "title": "OR",
-                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "all",
-                        "title": "All",
-                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "all_of",
-                        "title": "All Of",
-                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "AND",
-                        "title": "AND",
-                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "any_of",
-                        "title": "Any Of",
-                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "none_of",
-                        "title": "None Of",
-                        "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "any",
-                        "title": "Any",
-                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "NOT",
-                        "title": "NOT",
-                        "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
-                        "dataType": 16
-                      }
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
         "id": "distribution",
         "title": "Distribution",
         "description": "Parameters controlling the initial scatter of the feature.",
@@ -163,59 +163,10 @@
           "description": "Controls the scatter distribution of a particular object.",
           "fields": [
             {
-              "id": "z",
-              "title": "Z",
-              "description": "Distribution for the coordinate (evaluated each iteration).",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "z",
-                  "dataType": 3
-                },
-                {
-                  "id": "z",
-                  "dataType": 16,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "z",
-                    "title": "Z",
-                    "fields": [
-                      {
-                        "id": "distribution",
-                        "title": "Random Distribution Type",
-                        "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "extent",
-                        "title": "Extent",
-                        "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
-                        "dataType": 16,
-                        "minLength": 2,
-                        "maxLength": 2
-                      },
-                      {
-                        "id": "step_size",
-                        "title": "Step Size",
-                        "description": "When the distribution type is grid, defines the distance between steps along this axis.",
-                        "dataType": 0,
-                        "validity": [
-                          {
-                            "comparison": ">=",
-                            "value": 1
-                          }
-                        ]
-                      },
-                      {
-                        "id": "grid_offset",
-                        "title": "Grid Offset",
-                        "description": "When the distribution type is grid, defines the offset along this axis.",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                }
-              ]
+              "id": "coordinate_eval_order",
+              "title": "Coordinate Evaluation Order",
+              "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to \"xzy\". Supported orders are defined by \"Coordinate Evaluation Order\".",
+              "dataType": 2
             },
             {
               "id": "iterations",
@@ -269,9 +220,9 @@
                     "title": "Scatter Chance",
                     "fields": [
                       {
-                        "id": "numerator",
-                        "title": "Numerator",
-                        "description": "Numerator for scatter probability.",
+                        "id": "denominator",
+                        "title": "Denominator",
+                        "description": "Denominator for scatter probability.",
                         "dataType": 0,
                         "validity": [
                           {
@@ -281,9 +232,9 @@
                         ]
                       },
                       {
-                        "id": "denominator",
-                        "title": "Denominator",
-                        "description": "Denominator for scatter probability.",
+                        "id": "numerator",
+                        "title": "Numerator",
+                        "description": "Numerator for scatter probability.",
                         "dataType": 0,
                         "validity": [
                           {
@@ -296,12 +247,6 @@
                   }
                 }
               ]
-            },
-            {
-              "id": "coordinate_eval_order",
-              "title": "Coordinate Evaluation Order",
-              "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to \"xzy\". Supported orders are defined by \"Coordinate Evaluation Order\".",
-              "dataType": 2
             },
             {
               "id": "x",
@@ -336,6 +281,12 @@
                         "maxLength": 2
                       },
                       {
+                        "id": "grid_offset",
+                        "title": "Grid Offset",
+                        "description": "When the distribution type is grid, defines the offset along this axis.",
+                        "dataType": 0
+                      },
+                      {
                         "id": "step_size",
                         "title": "Step Size",
                         "description": "When the distribution type is grid, defines the distance between steps along this axis.",
@@ -346,12 +297,6 @@
                             "value": 1
                           }
                         ]
-                      },
-                      {
-                        "id": "grid_offset",
-                        "title": "Grid Offset",
-                        "description": "When the distribution type is grid, defines the offset along this axis.",
-                        "dataType": 0
                       }
                     ]
                   }
@@ -391,6 +336,12 @@
                         "maxLength": 2
                       },
                       {
+                        "id": "grid_offset",
+                        "title": "Grid Offset",
+                        "description": "When the distribution type is grid, defines the offset along this axis.",
+                        "dataType": 0
+                      },
+                      {
                         "id": "step_size",
                         "title": "Step Size",
                         "description": "When the distribution type is grid, defines the distance between steps along this axis.",
@@ -401,12 +352,61 @@
                             "value": 1
                           }
                         ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "z",
+              "title": "Z",
+              "description": "Distribution for the coordinate (evaluated each iteration).",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "z",
+                  "dataType": 3
+                },
+                {
+                  "id": "z",
+                  "dataType": 16,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "z",
+                    "title": "Z",
+                    "fields": [
+                      {
+                        "id": "distribution",
+                        "title": "Random Distribution Type",
+                        "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "extent",
+                        "title": "Extent",
+                        "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
+                        "dataType": 16,
+                        "minLength": 2,
+                        "maxLength": 2
                       },
                       {
                         "id": "grid_offset",
                         "title": "Grid Offset",
                         "description": "When the distribution type is grid, defines the offset along this axis.",
                         "dataType": 0
+                      },
+                      {
+                        "id": "step_size",
+                        "title": "Step Size",
+                        "description": "When the distribution type is grid, defines the distance between steps along this axis.",
+                        "dataType": 0,
+                        "validity": [
+                          {
+                            "comparison": ">=",
+                            "value": 1
+                          }
+                        ]
                       }
                     ]
                   }

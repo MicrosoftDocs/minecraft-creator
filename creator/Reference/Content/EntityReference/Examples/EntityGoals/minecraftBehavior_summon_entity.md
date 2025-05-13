@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Allows the mob to attack the player by summoning other entities.
 
+> [!Note]
+> This item requires a format version of at least 1.21.50.
+
 
 ## Summon Entity Behavior Properties
 

@@ -11,3 +11,6 @@ ms.date: 02/11/2025
 
 A block with this component can be replaced when another block is placed in the same block position.
 Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60).
+
+> [!Note]
+> This item requires a format version of at least 1.21.70.

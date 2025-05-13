@@ -42,6 +42,8 @@ Allows an entity to establish a way to get into the love state used for breeding
 | transform_to_item | *not set* | String | The breed item used will transform to this item upon successful interaction. Format: itemName:auxValue |  | 
 
 ## Breeds With item type
+The list of entity definitions that this entity can breed with.
+
 
 #### Breeds With Properties
 
@@ -52,34 +54,41 @@ Allows an entity to establish a way to get into the love state used for breeding
 | mate_type | *not set* | String from a list of choices | The inclusive minimum of the variant range. |  | 
 
 ## Deny Parents Variant item type
+Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.
+
 
 #### Deny Parents Variant Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| chance | *not set* | Decimal number | The percentage chance of denying the parents' variant. |  | 
-| max_variant | *not set* | String | The inclusive maximum of the variant range. |  | 
-| min_variant | *not set* | String | The inclusive minimum of the variant range. |  | 
+| chance | 0 | Decimal number | The percentage chance of denying the parents' variant. |  | 
+| max_variant | 0 | String | The inclusive maximum of the variant range. |  | 
+| min_variant | 0 | String | The inclusive minimum of the variant range. |  | 
 
 ## Environment Requirements item type
+The list of nearby block requirements to get the entity into the 'love' state.
+
 
 #### Environment Requirements Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | block_types | *not set* | Array of strings | The block types required nearby for the entity to breed. |  | 
-| count | *not set* | Integer number | The number of the required block types nearby for the entity to breed. |  | 
-| radius | *not set* | Decimal number | How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16. |  | 
+| blocks | *not set* | Array of strings | The block types required nearby for the entity to breed. |  | 
+| count | 1 | Integer number | The number of the required block types nearby for the entity to breed. |  | 
+| radius | 5 | Decimal number | How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16. |  | 
 
 ## Mutation Factor item type
+Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.
+
 
 #### Mutation Factor Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| color | *not set* | Percent Range | The percentage chance of denying the parents' variant. |  | 
-| extra_variant | *not set* | Percent Range | The percentage chance of a mutation on the entity's extra variant type. |  | 
-| variant | *not set* | Percent Range | The percentage chance of a mutation on the entity's variant type. |  | 
+| color | 0 | Percent Range | The percentage chance of denying the parents' variant. |  | 
+| extra_variant | 0 | Percent Range | The percentage chance of a mutation on the entity's extra variant type. |  | 
+| variant | 0 | Percent Range | The percentage chance of a mutation on the entity's variant type. |  | 
 
 ## Samples
 

@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Plays a sound as part of an entity event response.
 
+> [!Note]
+> This item requires a format version of at least 1.21.50.
+
 
 ## Samples
 

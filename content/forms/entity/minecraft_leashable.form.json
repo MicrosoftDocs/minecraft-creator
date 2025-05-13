@@ -310,11 +310,7 @@
       "/vanilla/behavior_pack/entities/cat.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/chest_boat.json": [
@@ -341,31 +337,19 @@
       "/vanilla/behavior_pack/entities/chicken.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/cow.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/dolphin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "soft_distance": 4,
-            "hard_distance": 6,
-            "max_distance": 10
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/donkey.json": [

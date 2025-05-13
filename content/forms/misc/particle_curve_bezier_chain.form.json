@@ -5,22 +5,6 @@
     "title": "Particle Curve Bezier Chain Misc",
     "fields": [
       {
-        "id": "type",
-        "title": "Type",
-        "dataType": 2,
-        "validity": [
-          {
-            "comparison": "pattern",
-            "value": "^bezier_chain$"
-          }
-        ]
-      },
-      {
-        "id": "nodes",
-        "title": "Nodes",
-        "dataType": 16
-      },
-      {
         "id": "input",
         "title": "Input",
         "dataType": 24,
@@ -49,6 +33,22 @@
           {
             "id": "input",
             "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "nodes",
+        "title": "Nodes",
+        "dataType": 16
+      },
+      {
+        "id": "type",
+        "title": "Type",
+        "dataType": 2,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^bezier_chain$"
           }
         ]
       }

@@ -1,5 +1,30 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "toggles_blocks",
+      "versionIntroduced": "1.21.40"
+    },
+    {
+      "id": "knockback_scaling",
+      "versionIntroduced": "1.21.40"
+    },
+    {
+      "id": "particle_effect",
+      "versionIntroduced": "1.21.40"
+    },
+    {
+      "id": "sound_effect",
+      "versionIntroduced": "1.21.40"
+    },
+    {
+      "id": "negates_fall_damage",
+      "versionIntroduced": "1.21.40"
+    },
+    {
+      "id": "allow_underwater",
+      "versionIntroduced": "1.21.40"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:explode",
     "title": "Explode",

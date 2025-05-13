@@ -60,11 +60,9 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
               "content": "hand"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/strider.json": [
+            },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:strider_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/",
               "content": "hand"
             }
           ]
@@ -211,9 +209,17 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
               "content": "saddle"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/",
+              "content": "shears"
             }
           ],
           "/vanilla/behavior_pack/entities/strider.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/",
+              "content": "shears"
+            },
             {
               "path": "/minecraft:entity/component_groups/minecraft:strider_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
               "content": "saddle"
@@ -273,9 +279,27 @@
             "domain": "hand",
             "value": "saddle"
           }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/",
+          "content": {
+            "test": "has_equipment",
+            "subject": "other",
+            "domain": "hand",
+            "value": "shears"
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/",
+          "content": {
+            "test": "has_equipment",
+            "subject": "other",
+            "domain": "hand",
+            "value": "shears"
+          }
+        },
         {
           "path": "/minecraft:entity/component_groups/minecraft:strider_unsaddled/minecraft:interact/interactions/0/on_interact/filters/",
           "content": {

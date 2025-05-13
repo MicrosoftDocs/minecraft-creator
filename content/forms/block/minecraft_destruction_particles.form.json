@@ -39,6 +39,7 @@
       ]
     }
   ],
+  "versionIntroduced": "1.21.80",
   "isExperimental": true,
   "requiredExperiment": "Upcoming Creator Features",
   "description": "[Note: This component is currently experimental]. Sets the particles that will be used when block is destroyed.",

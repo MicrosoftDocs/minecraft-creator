@@ -13,6 +13,7 @@ Defines type information for graphics settings properties.
 
 ## Declaration
 `export type GraphicsSettingsPropertyTypeMap = {
+    [GraphicsSettingsProperty.GraphicsMode]?: minecraftserver.GraphicsMode;
     [GraphicsSettingsProperty.ShowInvisibleBlocks]?: boolean;
     [GraphicsSettingsProperty.ShowChunkBoundaries]?: boolean;
     [GraphicsSettingsProperty.ShowCompass]?: boolean;

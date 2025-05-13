@@ -40,6 +40,7 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `*`
 - `minecraft:dried_ghast`
 - `minecraft:lead`
+- `minecraft:saddle`
 - `minecraft:stonecutter_cut_red_sandstone_slab`
 - `minecraft:stonecutter_cut_sandstone_slab`
 - `minecraft:cake`

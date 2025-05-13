@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Allows an entity to attack by firing a shot with a delay. Anchor and offset parameters of this component overrides the anchor and offset from projectile component.
 
+> [!Note]
+> This item requires a format version of at least 1.21.30.
+
 
 ## Fire At Target Behavior Properties
 

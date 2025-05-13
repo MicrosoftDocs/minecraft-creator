@@ -21,12 +21,14 @@ Defines the conditions and behavior of a rideable entity's boost.
 | speed_multiplier | 1 | Decimal number | Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast. | Pig: `1.35` | 
 
 ## Boost Items item type
+List of items that can be used to boost while riding this entity. Each item has the following properties:
+
 
 #### Boost Items Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| damage | *not set* | Array of strings | This is the damage that the item will take each time it is used. |  | 
+| damage | 1 | Array of strings | This is the damage that the item will take each time it is used. |  | 
 | item | *not set* | String | Name of the item that can be used to boost. |  | 
 | replace_item | *not set* | String | The item used to boost will become this item once it is used up. |  | 
 

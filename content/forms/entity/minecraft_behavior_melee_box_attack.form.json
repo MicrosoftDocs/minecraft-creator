@@ -271,7 +271,7 @@
           "/vanilla/behavior_pack/entities/zombie_pigman.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
-              "content": 1.05
+              "content": 1.5
             }
           ]
         }
@@ -697,7 +697,7 @@
           "path": "/minecraft:entity/components/minecraft:behavior.melee_box_attack/",
           "content": {
             "priority": 4,
-            "speed_multiplier": 1.05
+            "speed_multiplier": 1.5
           }
         }
       ],

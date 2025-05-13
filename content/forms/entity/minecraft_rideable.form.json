@@ -26,6 +26,42 @@
       "id": "rider_can_interact",
       "title": "Whether a rider can interact with this item.",
       "dataType": 1
+    },
+    {
+      "id": "on_rider_enter_event",
+      "versionIntrouduced": "1.21.80"
+    },
+    {
+      "id": "on_rider_exit_event",
+      "versionIntrouduced": "1.21.80"
+    },
+    {
+      "id": "dismount_mode",
+      "choices": [
+        {
+          "id": "default",
+          "title": "Default"
+        },
+        {
+          "id": "on_top_center",
+          "title": "On Top Center"
+        }
+      ]
+    },
+    {
+      "id": "seats",
+      "subForm": {
+        "fields": [
+          {
+            "id": "third_person_camera_radius",
+            "versionIntrouduced": "1.21.80"
+          },
+          {
+            "id": "camera_relax_distance_smoothing",
+            "versionIntrouduced": "1.21.80"
+          }
+        ]
+      }
     }
   ],
   "generated_doNotEdit": {

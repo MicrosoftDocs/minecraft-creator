@@ -73,6 +73,7 @@ ms.date: 02/11/2025
 | [is_persistent](Filters/is_persistent.md)| Tests if the subject's persistence matches the bool value passed in. |
 | [is_raider](Filters/is_raider.md)| Tests if the subject is a raider. |
 | [is_riding](Filters/is_riding.md)| Returns true if the subject entity is riding on another entity. |
+| [is_riding_self](Filters/is_riding_self.md)| Returns true if the subject entity is riding the calling entity. |
 | [is_sitting](Filters/is_sitting.md)| Tests if the subject is sitting. |
 | [is_skin_id](Filters/is_skin_id.md)| Returns true if the subject entity is the skin id number provided. |
 | [is_sleeping](Filters/is_sleeping.md)| Tests whether the Subject is sleeping. |

@@ -5,13 +5,18 @@
     "title": "Particle Curve Bezier Chain Node Proxy Misc",
     "fields": [
       {
+        "id": "left_slope",
+        "title": "Left Slope",
+        "dataType": 3
+      },
+      {
         "id": "left_value",
         "title": "Left Value",
         "dataType": 3
       },
       {
-        "id": "value",
-        "title": "Value",
+        "id": "right_slope",
+        "title": "Right Slope",
         "dataType": 3
       },
       {
@@ -20,18 +25,13 @@
         "dataType": 3
       },
       {
-        "id": "left_slope",
-        "title": "Left Slope",
-        "dataType": 3
-      },
-      {
         "id": "slope",
         "title": "Slope",
         "dataType": 3
       },
       {
-        "id": "right_slope",
-        "title": "Right Slope",
+        "id": "value",
+        "title": "Value",
         "dataType": 3
       }
     ]

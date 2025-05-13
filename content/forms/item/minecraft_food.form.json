@@ -869,6 +869,26 @@
     "description": "When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly.",
     "fields": [
       {
+        "id": "can_always_eat",
+        "title": "Can Always Eat",
+        "description": "If true you can always eat this item (even when not hungry). Default is set to false.",
+        "dataType": 1,
+        "samples": {
+          "/vanilla/behavior_pack/items/appleEnchanted.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": true
+            }
+          ],
+          "/vanilla/behavior_pack/items/chorus_fruit.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:food/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
         "id": "nutrition",
         "title": "Nutrition",
         "description": "Value that is added to the entity's nutrition when the item is used. Default is set to 0.",
@@ -1060,26 +1080,6 @@
             {
               "path": "/minecraft:item/components/minecraft:food/",
               "content": 0.6
-            }
-          ]
-        }
-      },
-      {
-        "id": "can_always_eat",
-        "title": "Can Always Eat",
-        "description": "If true you can always eat this item (even when not hungry). Default is set to false.",
-        "dataType": 1,
-        "samples": {
-          "/vanilla/behavior_pack/items/appleEnchanted.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": true
-            }
-          ],
-          "/vanilla/behavior_pack/items/chorus_fruit.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:food/",
-              "content": true
             }
           ]
         }
