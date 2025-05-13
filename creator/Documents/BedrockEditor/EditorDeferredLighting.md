@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Minecraft Bedrock Editor Deferred Lighting
 description: "An overview of deferred lighting in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/13/2025
 ---
 
 # Editor Deferred Lighting

@@ -1,5 +1,5 @@
 ---
-author: camwilkerson
+author: cam-wilkerson
 ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Hotkeys
 description: "An overview of the keyboard input shortcuts in Minecraft Bedrock Editor"
@@ -13,16 +13,18 @@ You can use the Keyboard Settings to view the default keyboard shortcuts and set
 
 To set a custom keyboard shortcut:
 
-1. Use the left pane of the Keyboard Settings window to locate the input you want to map. 
+1. Add the Keyboard Settings action to the hotbar if it's not already active, then open Keyboard Settings.
 
-2. Click the **Shortcut** field for the input.
+2. Use the left pane to locate the input you want to map. 
 
-3. Press the keyboard buttons that you want to use for your custom shortcut. 
+3. Click the **Shortcut** field for the input.
 
-4. Click **Save**.
+4. Press the keyboard buttons that you want to use for your custom shortcut. 
 
-> [!NOTE]
-> All custom shortcuts must be saved before closing the Keyboard Settings window. If you do not save your custom shortcuts, they will revert to the default shortcuts when the window is closed.
+5. Click **Save**.
+
+    > [!NOTE]
+    > All custom shortcuts must be saved before closing the Keyboard Settings window. If you do not save your custom shortcuts, they will revert to the default shortcuts when the window is closed.
 
 To clear a keyboard shortcut, right-click it or click the **Unbind** button in the far-right column. Both methods for clearing a shortcut will remove it entirely, including the default key binding.
 
@@ -39,9 +41,6 @@ To clear a keyboard shortcut, right-click it or click the **Unbind** button in t
 |Reset| Resets the bindings on the current page.|
 |Restore All Defaults| Restores all default bindings for all pages of the mappings.|
 |Restore Defaults| Restores default bindings for this page.|
-
-> [!Tip]
-> You can reconfigure key bindings by clicking *Input Mapping* [!!unclear where this is!!] .
 
 Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 
@@ -178,18 +177,23 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 | Line Tool | CTRL + L | - |
-| Delete Contents | SHIFT + DELETE | - |
-| Delete Contents and Deselect | DELETE | On |
+| Fill Line | CTRL + F | - |
+| Convert to Selection | Alt + S | - |
+| Adjust Line Thickness | SHIFT + Up/Down/Left/Right| -|
+| Select All | Ctrl + A | - |
 | Deselect | CTRL + D | - |
 | Deselect All | CTRL + SHIFT + D | - |
-| Fill Contents | CTRL + F | - |
+| Clear All | CTRL + BACKSPACE | - |
+| Clear selected | CTRL + SHIFT + BACKSPACE | - |
+| Delete Contents | SHIFT + DELETE | - |
+| Delete Contents and Deselect | DELETE | On |
+| Delete Selected | Delete | - |
 | Move Selected Back | DOWN ARROW | On |
 | Move Selected Down | PAGE DOWN | On |
 | Move Selected Forward | UP ARROW | On |
 | Move Selected Left | LEFT ARROW | On |
 | Move Selected Right | RIGHT ARROW | On |
 | Move Selected Up | PAGE UP | On |
-| Select All | - | - |
 
 
 ### Terrain
