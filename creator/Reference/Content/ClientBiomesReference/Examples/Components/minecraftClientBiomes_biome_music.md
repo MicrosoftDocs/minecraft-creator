@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Affects how music plays within the biome.
 
+> [!Note]
+> This item requires a format version of at least 1.21.50.
+
 
 ## Minecraft Biome Music Client Biome Properties
 

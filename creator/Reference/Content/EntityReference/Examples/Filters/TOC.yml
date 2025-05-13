@@ -128,6 +128,8 @@
   href: is_raider.md
 - name: is_riding
   href: is_riding.md
+- name: is_riding_self
+  href: is_riding_self.md
 - name: is_sitting
   href: is_sitting.md
 - name: is_skin_id

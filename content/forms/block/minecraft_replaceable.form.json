@@ -1,5 +1,6 @@
 {
   "fields": [],
+  "versionIntroduced": "1.21.70",
   "generated_doNotEdit": {
     "id": "minecraft:replaceable",
     "title": "Replaceable",

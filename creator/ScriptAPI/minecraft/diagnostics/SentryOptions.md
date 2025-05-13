@@ -13,9 +13,30 @@ Describes options for configuring Sentry for this scripting module.
 
 ## Properties
 
+### **debug**
+`debug?: boolean;`
+
+When set to true, additional content logging from the Sentry system will be enabled.  Defaults to false.
+
+Type: *boolean*
+
 ### **dsn**
-`dsn: string;`
+`dsn: minecraftserveradmin.SecretString | string;`
 
 The fully qualified DSN for a Sentry project.  See Sentry documentation for more information: https://docs.sentry.io/concepts/key-terms/dsn-explainer/
 
-Type: *string*
+Type: [*@minecraft/server-admin.SecretString*](../../../scriptapi/minecraft/server-admin/SecretString.md) | *string*
+
+### **maxBreadcrumbs**
+`maxBreadcrumbs?: number;`
+
+The maximum number of breadcrumbs (submitted via [*@minecraft/diagnostics.Sentry.addBreadcrumb*](../../../scriptapi/minecraft/diagnostics/Sentry.md#addbreadcrumb)) to store and report per error event to Sentry. Default is 20, supported values range from 0 (no breadcrumbs) to 100.
+
+Type: *number*
+
+### **sampleRate**
+`sampleRate?: number;`
+
+A number between 0 and 1 that indicates the percentage of events that should be sent to Sentry. For example, a value of 0.5 means that 50% of events will be sent. Default is 1 (100% of events). 0 means no events will be sent.
+
+Type: *number*

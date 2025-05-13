@@ -72,7 +72,7 @@
       {
         "id": "interact_text",
         "title": "Interact Text",
-        "description": "Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls.",
+        "description": "Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls.",
         "dataType": 2
       },
       {
@@ -160,6 +160,13 @@
               "title": "Table",
               "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
               "dataType": 2
+            },
+            {
+              "id": "y_offset",
+              "title": "Y Offset",
+              "description": "Will offset the items spawn position this amount in the y direction.",
+              "defaultValue": 1,
+              "dataType": 3
             }
           ]
         }
@@ -587,9 +594,42 @@
                         "value": "saddle"
                       },
                       {
-                        "test": "is_family",
+                        "test": "is_sneak_held",
                         "subject": "other",
-                        "value": "player"
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "equip_item_slot": "0",
+                "interact_text": "action.interact.saddle"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_sitting",
+                        "subject": "self",
+                        "value": false
+                      },
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
                       },
                       {
                         "test": "is_sneak_held",
@@ -597,11 +637,55 @@
                         "value": false
                       }
                     ]
-                  },
-                  "target": "self"
+                  }
                 },
-                "equip_item_slot": "0",
-                "interact_text": "action.interact.saddle"
+                "hurt_item": 1,
+                "drop_item_slot": "0",
+                "drop_item_y_offset": 2,
+                "interact_text": "action.interact.removesaddle",
+                "play_sounds": "shear",
+                "vibration": "shear"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_sitting",
+                        "subject": "self"
+                      },
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "0",
+                "drop_item_y_offset": 1,
+                "interact_text": "action.interact.removesaddle",
+                "play_sounds": "shear",
+                "vibration": "shear"
               }
             ]
           }
@@ -700,11 +784,6 @@
                         "value": "saddle"
                       },
                       {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
-                      },
-                      {
                         "test": "is_sneak_held",
                         "subject": "other",
                         "value": false
@@ -715,6 +794,43 @@
                 },
                 "equip_item_slot": "0",
                 "interact_text": "action.interact.equip"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "0",
+                "drop_item_y_offset": 1.1,
+                "interact_text": "action.interact.removesaddle",
+                "play_sounds": "shear",
+                "vibration": "shear"
               }
             ]
           }
@@ -742,11 +858,6 @@
                         "value": "saddle"
                       },
                       {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
-                      },
-                      {
                         "test": "is_sneak_held",
                         "subject": "other",
                         "value": false
@@ -759,15 +870,47 @@
                 "interact_text": "action.interact.saddle"
               },
               {
-                "play_sounds": "armor.equip_generic",
                 "on_interact": {
                   "filters": {
                     "all_of": [
                       {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
                       },
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "0",
+                "drop_item_y_offset": 1.1,
+                "interact_text": "action.interact.removesaddle",
+                "play_sounds": "shear",
+                "vibration": "shear"
+              },
+              {
+                "play_sounds": "armor.equip_generic",
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
                       {
                         "test": "is_sneaking",
                         "subject": "other",
@@ -828,6 +971,43 @@
                 },
                 "equip_item_slot": "0",
                 "interact_text": "action.interact.saddle"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "0",
+                "drop_item_y_offset": 1.1,
+                "interact_text": "action.interact.removesaddle",
+                "play_sounds": "shear",
+                "vibration": "shear"
               }
             ]
           }
@@ -915,111 +1095,102 @@
               {
                 "on_interact": {
                   "filters": {
-                    "all_of": [
+                    "any_of": [
                       {
-                        "any_of": [
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "black_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "blue_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "brown_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "cyan_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "gray_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "green_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "light_blue_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "light_gray_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "lime_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "magenta_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "orange_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "pink_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "purple_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "red_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "white_harness"
-                          },
-                          {
-                            "test": "has_equipment",
-                            "subject": "other",
-                            "domain": "hand",
-                            "value": "yellow_harness"
-                          }
-                        ]
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "black_harness"
                       },
                       {
-                        "test": "is_family",
+                        "test": "has_equipment",
                         "subject": "other",
-                        "value": "player"
+                        "domain": "hand",
+                        "value": "blue_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "brown_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "cyan_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "gray_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "green_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "light_blue_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "light_gray_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "lime_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "magenta_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "orange_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "pink_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "purple_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "red_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "white_harness"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "yellow_harness"
                       }
                     ]
                   },
@@ -1043,15 +1214,15 @@
                   "filters": {
                     "all_of": [
                       {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      },
+                      {
                         "test": "has_equipment",
                         "subject": "other",
                         "domain": "hand",
                         "value": "shears"
-                      },
-                      {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
                       },
                       {
                         "test": "rider_count",
@@ -1142,11 +1313,6 @@
                         ]
                       },
                       {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
-                      },
-                      {
                         "test": "is_sneak_held",
                         "subject": "other",
                         "value": false
@@ -1157,6 +1323,65 @@
                 },
                 "equip_item_slot": "1",
                 "interact_text": "action.interact.equiphorsearmor"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      },
+                      {
+                        "any_of": [
+                          {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "inventory",
+                            "value": "leather_horse_armor"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "inventory",
+                            "value": "iron_horse_armor"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "inventory",
+                            "value": "golden_horse_armor"
+                          },
+                          {
+                            "test": "has_equipment",
+                            "subject": "self",
+                            "domain": "inventory",
+                            "value": "diamond_horse_armor"
+                          }
+                        ]
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "1",
+                "drop_item_y_offset": 1.1,
+                "interact_text": "action.interact.removehorsearmor",
+                "play_sounds": "shear",
+                "vibration": "shear"
               },
               {
                 "play_sounds": "saddle",
@@ -1177,11 +1402,6 @@
                         "value": "saddle"
                       },
                       {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
-                      },
-                      {
                         "test": "is_sneak_held",
                         "subject": "other",
                         "value": false
@@ -1192,6 +1412,43 @@
                 },
                 "equip_item_slot": "0",
                 "interact_text": "action.interact.saddle"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "0",
+                "drop_item_y_offset": 1.1,
+                "interact_text": "action.interact.removesaddle",
+                "play_sounds": "shear",
+                "vibration": "shear"
               }
             ]
           }
@@ -1285,11 +1542,6 @@
                         "value": "carpet"
                       },
                       {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
-                      },
-                      {
                         "test": "is_sneaking",
                         "subject": "other",
                         "value": false
@@ -1300,6 +1552,43 @@
                 },
                 "equip_item_slot": "0",
                 "interact_text": "action.interact.equipcarpet"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "value": "carpet"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "0",
+                "drop_item_y_offset": 1.1,
+                "interact_text": "action.interact.removecarpet",
+                "play_sounds": "shear",
+                "vibration": "shear"
               }
             ]
           }
@@ -1342,6 +1631,43 @@
                 },
                 "equip_item_slot": "0",
                 "interact_text": "action.interact.equipcarpet"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "value": "carpet"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "0",
+                "drop_item_y_offset": 1.1,
+                "interact_text": "action.interact.removecarpet",
+                "play_sounds": "shear",
+                "vibration": "shear"
               }
             ]
           }
@@ -2061,11 +2387,6 @@
                         "value": "chest"
                       },
                       {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
-                      },
-                      {
                         "test": "is_sneak_held",
                         "subject": "other",
                         "value": false
@@ -2097,11 +2418,6 @@
                         "value": "saddle"
                       },
                       {
-                        "test": "is_family",
-                        "subject": "other",
-                        "value": "player"
-                      },
-                      {
                         "test": "is_sneak_held",
                         "subject": "other",
                         "value": false
@@ -2112,6 +2428,43 @@
                 },
                 "equip_item_slot": "0",
                 "interact_text": "action.interact.saddle"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "0",
+                "drop_item_y_offset": 1.1,
+                "interact_text": "action.interact.removesaddle",
+                "play_sounds": "shear",
+                "vibration": "shear"
               }
             ]
           }
@@ -2154,6 +2507,43 @@
                 },
                 "equip_item_slot": "0",
                 "interact_text": "action.interact.saddle"
+              },
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "self",
+                        "domain": "inventory",
+                        "value": "saddle"
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      }
+                    ]
+                  }
+                },
+                "hurt_item": 1,
+                "drop_item_slot": "0",
+                "drop_item_y_offset": 1.1,
+                "interact_text": "action.interact.removesaddle",
+                "play_sounds": "shear",
+                "vibration": "shear"
               }
             ]
           }
@@ -2177,6 +2567,46 @@
                 "use_item": true,
                 "play_sounds": "saddle",
                 "interact_text": "action.interact.saddle"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_unsaddled"
+                },
+                "hurt_item": 1,
+                "spawn_items": {
+                  "table": "loot_tables/entities/saddle.json"
+                },
+                "interact_text": "action.interact.removesaddle",
+                "play_sounds": "shear",
+                "vibration": "shear"
               }
             ]
           }
@@ -2779,6 +3209,47 @@
         }
       ],
       "/vanilla/behavior_pack/entities/strider.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:strider_saddled/minecraft:interact/",
+          "content": {
+            "interactions": [
+              {
+                "on_interact": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_sneak_held",
+                        "subject": "other",
+                        "value": false
+                      },
+                      {
+                        "test": "has_equipment",
+                        "subject": "other",
+                        "domain": "hand",
+                        "value": "shears"
+                      },
+                      {
+                        "test": "rider_count",
+                        "subject": "self",
+                        "operator": "equals",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "event": "minecraft:on_unsaddled"
+                },
+                "hurt_item": 1,
+                "spawn_items": {
+                  "table": "loot_tables/entities/saddle.json",
+                  "y_offset": 1.7
+                },
+                "interact_text": "action.interact.removesaddle",
+                "play_sounds": "shear",
+                "vibration": "shear"
+              }
+            ]
+          }
+        },
         {
           "path": "/minecraft:entity/component_groups/minecraft:strider_unsaddled/minecraft:interact/",
           "content": {

@@ -6,31 +6,6 @@
     "description": "Contains a description and components to define a Client Biome.",
     "fields": [
       {
-        "id": "description",
-        "title": "Description",
-        "description": "Non-component settings, including the Client Biome name.",
-        "dataType": 16,
-        "subForm": {
-          "id": "Client Biome Description",
-          "title": "Client Biome Description",
-          "description": "Contains non-component settings for a Client Biome.",
-          "fields": [
-            {
-              "id": "identifier",
-              "title": "Identifier",
-              "description": "The name of the Client Biome, used by other features like the '/locate biome' command. Must match the name of a Biome defined by the game or a behavior pack.",
-              "dataType": 2,
-              "validity": [
-                {
-                  "comparison": "pattern",
-                  "value": "^[a-z0-9._%+-:]+$"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
         "id": "components",
         "title": "Components",
         "description": "Components for this Client Biome.",
@@ -72,23 +47,86 @@
               }
             },
             {
-              "id": "minecraft:sky_color",
-              "title": "Minecraft Sky Color",
-              "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
+              "id": "minecraft:atmosphere_identifier",
+              "title": "Minecraft Atmosphere Identifier",
+              "description": "Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the \"atmospherics\" directory. Biomes without this component will have default atmosphere settings.",
               "dataType": 16,
               "subForm": {
-                "id": "minecraft:sky_color",
-                "title": "Sky Color",
-                "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
+                "id": "minecraft:atmosphere_identifier",
+                "title": "Atmosphere Identifier",
+                "description": "Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the \"atmospherics\" directory. Biomes without this component will have default atmosphere settings.",
                 "fields": [
                   {
-                    "id": "sky_color",
-                    "title": "Sky Color",
-                    "description": "RGB color of the sky",
+                    "id": "atmosphere_identifier",
+                    "title": "Atmosphere Identifier",
+                    "description": "Identifier of atmosphere definition to use",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:biome_music",
+              "title": "Minecraft Biome Music",
+              "description": "Affect how music plays within the biome",
+              "dataType": 16,
+              "subForm": {
+                "id": "minecraft:biome_music",
+                "title": "Biome Music",
+                "description": "Affect how music plays within the biome",
+                "fields": [
+                  {
+                    "id": "music_definition",
+                    "title": "Music Definition",
+                    "description": "Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "volume_multiplier",
+                    "title": "Volume Multiplier",
+                    "description": "Multiplier temporarily and gradually applied to music volume when within this biome. Must be a value between 0 and 1, inclusive.",
+                    "dataType": 3
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:color_grading_identifier",
+              "title": "Minecraft Color Grading Identifier",
+              "description": "Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the \"color_grading\" directory. Biomes without this component will have default color_grading settings.",
+              "dataType": 16,
+              "subForm": {
+                "id": "minecraft:color_grading_identifier",
+                "title": "Color Grading Identifier",
+                "description": "Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the \"color_grading\" directory. Biomes without this component will have default color_grading settings.",
+                "fields": [
+                  {
+                    "id": "color_grading_identifier",
+                    "title": "Color Grading Identifier",
+                    "description": "Identifier of color_grading definition to use",
+                    "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:dry_foliage_color",
+              "title": "Minecraft Dry Foliage Color",
+              "description": "Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.",
+              "dataType": 16,
+              "subForm": {
+                "id": "minecraft:dry_foliage_color",
+                "title": "Dry Foliage Color",
+                "description": "Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.",
+                "fields": [
+                  {
+                    "id": "color",
+                    "title": "Color",
+                    "description": "RGB color of dry foliage",
                     "dataType": 2,
                     "alternates": [
                       {
-                        "id": "sky_color",
+                        "id": "color",
                         "dataType": 32,
                         "minLength": 3,
                         "maxLength": 3
@@ -137,6 +175,25 @@
               }
             },
             {
+              "id": "minecraft:grass_appearance",
+              "title": "Minecraft Grass Appearance",
+              "description": "Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance.",
+              "dataType": 16,
+              "subForm": {
+                "id": "minecraft:grass_appearance",
+                "title": "Grass Appearance",
+                "description": "Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance.",
+                "fields": [
+                  {
+                    "id": "color",
+                    "title": "Color",
+                    "description": "RGB color of grass.",
+                    "dataType": 16
+                  }
+                ]
+              }
+            },
+            {
               "id": "minecraft:lighting_identifier",
               "title": "Minecraft Lighting Identifier",
               "description": "Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the \"lighting\" directory. Biomes without this component will have default lighting settings.",
@@ -151,6 +208,33 @@
                     "title": "Lighting Identifier",
                     "description": "Identifier of lighting definition to use",
                     "dataType": 2
+                  }
+                ]
+              }
+            },
+            {
+              "id": "minecraft:sky_color",
+              "title": "Minecraft Sky Color",
+              "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
+              "dataType": 16,
+              "subForm": {
+                "id": "minecraft:sky_color",
+                "title": "Sky Color",
+                "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
+                "fields": [
+                  {
+                    "id": "sky_color",
+                    "title": "Sky Color",
+                    "description": "RGB color of the sky",
+                    "dataType": 2,
+                    "alternates": [
+                      {
+                        "id": "sky_color",
+                        "dataType": 32,
+                        "minLength": 3,
+                        "maxLength": 3
+                      }
+                    ]
                   }
                 ]
               }
@@ -189,90 +273,6 @@
               }
             },
             {
-              "id": "minecraft:grass_appearance",
-              "title": "Minecraft Grass Appearance",
-              "description": "Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance.",
-              "dataType": 16,
-              "subForm": {
-                "id": "minecraft:grass_appearance",
-                "title": "Grass Appearance",
-                "description": "Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance.",
-                "fields": [
-                  {
-                    "id": "color",
-                    "title": "Color",
-                    "description": "RGB color of grass.",
-                    "dataType": 16
-                  }
-                ]
-              }
-            },
-            {
-              "id": "minecraft:dry_foliage_color",
-              "title": "Minecraft Dry Foliage Color",
-              "description": "Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.",
-              "dataType": 16,
-              "subForm": {
-                "id": "minecraft:dry_foliage_color",
-                "title": "Dry Foliage Color",
-                "description": "Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.",
-                "fields": [
-                  {
-                    "id": "color",
-                    "title": "Color",
-                    "description": "RGB color of dry foliage",
-                    "dataType": 2,
-                    "alternates": [
-                      {
-                        "id": "color",
-                        "dataType": 32,
-                        "minLength": 3,
-                        "maxLength": 3
-                      }
-                    ]
-                  }
-                ]
-              }
-            },
-            {
-              "id": "minecraft:atmosphere_identifier",
-              "title": "Minecraft Atmosphere Identifier",
-              "description": "Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the \"atmospherics\" directory. Biomes without this component will have default atmosphere settings.",
-              "dataType": 16,
-              "subForm": {
-                "id": "minecraft:atmosphere_identifier",
-                "title": "Atmosphere Identifier",
-                "description": "Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the \"atmospherics\" directory. Biomes without this component will have default atmosphere settings.",
-                "fields": [
-                  {
-                    "id": "atmosphere_identifier",
-                    "title": "Atmosphere Identifier",
-                    "description": "Identifier of atmosphere definition to use",
-                    "dataType": 2
-                  }
-                ]
-              }
-            },
-            {
-              "id": "minecraft:color_grading_identifier",
-              "title": "Minecraft Color Grading Identifier",
-              "description": "Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the \"color_grading\" directory. Biomes without this component will have default color_grading settings.",
-              "dataType": 16,
-              "subForm": {
-                "id": "minecraft:color_grading_identifier",
-                "title": "Color Grading Identifier",
-                "description": "Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the \"color_grading\" directory. Biomes without this component will have default color_grading settings.",
-                "fields": [
-                  {
-                    "id": "color_grading_identifier",
-                    "title": "Color Grading Identifier",
-                    "description": "Identifier of color_grading definition to use",
-                    "dataType": 2
-                  }
-                ]
-              }
-            },
-            {
               "id": "minecraft:water_identifier",
               "title": "Minecraft Water Identifier",
               "description": "Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the \"water\" directory. Biomes without this component will have default water settings.",
@@ -290,31 +290,31 @@
                   }
                 ]
               }
-            },
+            }
+          ]
+        }
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "description": "Non-component settings, including the Client Biome name.",
+        "dataType": 16,
+        "subForm": {
+          "id": "Client Biome Description",
+          "title": "Client Biome Description",
+          "description": "Contains non-component settings for a Client Biome.",
+          "fields": [
             {
-              "id": "minecraft:biome_music",
-              "title": "Minecraft Biome Music",
-              "description": "Affect how music plays within the biome",
-              "dataType": 16,
-              "subForm": {
-                "id": "minecraft:biome_music",
-                "title": "Biome Music",
-                "description": "Affect how music plays within the biome",
-                "fields": [
-                  {
-                    "id": "volume_multiplier",
-                    "title": "Volume Multiplier",
-                    "description": "Multiplier temporarily and gradually applied to music volume when within this biome. Must be a value between 0 and 1, inclusive.",
-                    "dataType": 3
-                  },
-                  {
-                    "id": "music_definition",
-                    "title": "Music Definition",
-                    "description": "Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music.",
-                    "dataType": 2
-                  }
-                ]
-              }
+              "id": "identifier",
+              "title": "Identifier",
+              "description": "The name of the Client Biome, used by other features like the '/locate biome' command. Must match the name of a Biome defined by the game or a behavior pack.",
+              "dataType": 2,
+              "validity": [
+                {
+                  "comparison": "pattern",
+                  "value": "^[a-z0-9._%+-:]+$"
+                }
+              ]
             }
           ]
         }

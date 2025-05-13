@@ -5,91 +5,6 @@
     "title": "Particle Effect Component Misc",
     "fields": [
       {
-        "id": "minecraft:emitter_local_space",
-        "title": "Minecraft Emitter Local Space",
-        "dataType": 16
-      },
-      {
-        "id": "minecraft:particle_expire_if_in_blocks",
-        "title": "Minecraft Particle Expire If In Blocks",
-        "dataType": 16
-      },
-      {
-        "id": "minecraft:emitter_lifetime_expression",
-        "title": "Minecraft Emitter Lifetime Expression",
-        "dataType": 16,
-        "subForm": {
-          "id": "emitter_lifetime_expression",
-          "title": "Emitter Lifetime Expression",
-          "fields": [
-            {
-              "id": "activation_expression",
-              "title": "Activation Expression",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "activation_expression",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "activation_expression",
-                    "title": "Activation Expression",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "activation_expression",
-                  "dataType": 3
-                }
-              ]
-            },
-            {
-              "id": "expiration_expression",
-              "title": "Expiration Expression",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "expiration_expression",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "expiration_expression",
-                    "title": "Expiration Expression",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "expiration_expression",
-                  "dataType": 3
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
         "id": "minecraft:emitter_initialization",
         "title": "Minecraft Emitter Initialization",
         "dataType": 16,
@@ -165,68 +80,30 @@
         }
       },
       {
-        "id": "minecraft:emitter_rate_instant",
-        "title": "Minecraft Emitter Rate Instant",
-        "dataType": 16,
-        "subForm": {
-          "id": "emitter_rate_instant",
-          "title": "Emitter Rate Instant",
-          "fields": [
-            {
-              "id": "num_particles",
-              "title": "Num Particles",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "num_particles",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "num_particles",
-                    "title": "Num Particles",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "num_particles",
-                  "dataType": 3
-                }
-              ]
-            }
-          ]
-        }
+        "id": "minecraft:emitter_lifetime_events",
+        "title": "Minecraft Emitter Lifetime Events",
+        "dataType": 16
       },
       {
-        "id": "minecraft:particle_lifetime_expression",
-        "title": "Minecraft Particle Lifetime Expression",
+        "id": "minecraft:emitter_lifetime_expression",
+        "title": "Minecraft Emitter Lifetime Expression",
         "dataType": 16,
         "subForm": {
-          "id": "particle_lifetime_expression",
-          "title": "Particle Lifetime Expression",
+          "id": "emitter_lifetime_expression",
+          "title": "Emitter Lifetime Expression",
           "fields": [
             {
-              "id": "max_lifetime",
-              "title": "Max Lifetime",
+              "id": "activation_expression",
+              "title": "Activation Expression",
               "dataType": 24,
               "alternates": [
                 {
-                  "id": "max_lifetime",
+                  "id": "activation_expression",
                   "dataType": 14,
                   "readOnly": true,
                   "subForm": {
-                    "id": "max_lifetime",
-                    "title": "Max Lifetime",
+                    "id": "activation_expression",
+                    "title": "Activation Expression",
                     "fields": [
                       {
                         "id": "expression",
@@ -242,7 +119,7 @@
                   }
                 },
                 {
-                  "id": "max_lifetime",
+                  "id": "activation_expression",
                   "dataType": 3
                 }
               ]
@@ -358,86 +235,6 @@
         }
       },
       {
-        "id": "minecraft:emitter_rate_steady",
-        "title": "Minecraft Emitter Rate Steady",
-        "dataType": 16,
-        "subForm": {
-          "id": "emitter_rate_steady",
-          "title": "Emitter Rate Steady",
-          "fields": [
-            {
-              "id": "spawn_rate",
-              "title": "Spawn Rate",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "spawn_rate",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "spawn_rate",
-                    "title": "Spawn Rate",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "spawn_rate",
-                  "dataType": 3
-                }
-              ]
-            },
-            {
-              "id": "max_particles",
-              "title": "Max Particles",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "max_particles",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "max_particles",
-                    "title": "Max Particles",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "max_particles",
-                  "dataType": 3
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "id": "minecraft:emitter_lifetime_events",
-        "title": "Minecraft Emitter Lifetime Events",
-        "dataType": 16
-      },
-      {
         "id": "minecraft:emitter_lifetime_once",
         "title": "Minecraft Emitter Lifetime Once",
         "dataType": 16,
@@ -473,6 +270,54 @@
                 },
                 {
                   "id": "active_time",
+                  "dataType": 3
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "minecraft:emitter_local_space",
+        "title": "Minecraft Emitter Local Space",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:emitter_rate_instant",
+        "title": "Minecraft Emitter Rate Instant",
+        "dataType": 16,
+        "subForm": {
+          "id": "emitter_rate_instant",
+          "title": "Emitter Rate Instant",
+          "fields": [
+            {
+              "id": "num_particles",
+              "title": "Num Particles",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "num_particles",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "num_particles",
+                    "title": "Num Particles",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "num_particles",
                   "dataType": 3
                 }
               ]
@@ -524,27 +369,25 @@
         }
       },
       {
-        "id": "minecraft:emitter_shape_point",
-        "title": "Minecraft Emitter Shape Point",
+        "id": "minecraft:emitter_rate_steady",
+        "title": "Minecraft Emitter Rate Steady",
         "dataType": 16,
         "subForm": {
-          "id": "emitter_shape_point",
-          "title": "Emitter Shape Point",
+          "id": "emitter_rate_steady",
+          "title": "Emitter Rate Steady",
           "fields": [
             {
-              "id": "offset",
-              "title": "Offset",
+              "id": "max_particles",
+              "title": "Max Particles",
               "dataType": 24,
-              "minLength": 3,
-              "maxLength": 3,
               "alternates": [
                 {
-                  "id": "offset",
+                  "id": "max_particles",
                   "dataType": 14,
                   "readOnly": true,
                   "subForm": {
-                    "id": "offset",
-                    "title": "Offset",
+                    "id": "max_particles",
+                    "title": "Max Particles",
                     "fields": [
                       {
                         "id": "expression",
@@ -560,25 +403,23 @@
                   }
                 },
                 {
-                  "id": "offset",
+                  "id": "max_particles",
                   "dataType": 3
                 }
               ]
             },
             {
-              "id": "direction",
-              "title": "Direction",
+              "id": "spawn_rate",
+              "title": "Spawn Rate",
               "dataType": 24,
-              "minLength": 3,
-              "maxLength": 3,
               "alternates": [
                 {
-                  "id": "direction",
+                  "id": "spawn_rate",
                   "dataType": 14,
                   "readOnly": true,
                   "subForm": {
-                    "id": "direction",
-                    "title": "Direction",
+                    "id": "spawn_rate",
+                    "title": "Spawn Rate",
                     "fields": [
                       {
                         "id": "expression",
@@ -594,7 +435,7 @@
                   }
                 },
                 {
-                  "id": "direction",
+                  "id": "spawn_rate",
                   "dataType": 3
                 }
               ]
@@ -610,40 +451,6 @@
           "id": "emitter_shape_box",
           "title": "Emitter Shape Box",
           "fields": [
-            {
-              "id": "offset",
-              "title": "Offset",
-              "dataType": 24,
-              "minLength": 3,
-              "maxLength": 3,
-              "alternates": [
-                {
-                  "id": "offset",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "offset",
-                    "title": "Offset",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "offset",
-                  "dataType": 3
-                }
-              ]
-            },
             {
               "id": "direction",
               "title": "Direction",
@@ -719,22 +526,6 @@
               ]
             },
             {
-              "id": "surface_only",
-              "title": "Surface Only",
-              "dataType": 1
-            }
-          ]
-        }
-      },
-      {
-        "id": "minecraft:emitter_shape_sphere",
-        "title": "Minecraft Emitter Shape Sphere",
-        "dataType": 16,
-        "subForm": {
-          "id": "emitter_shape_sphere",
-          "title": "Emitter Shape Sphere",
-          "fields": [
-            {
               "id": "offset",
               "title": "Offset",
               "dataType": 24,
@@ -764,78 +555,6 @@
                 },
                 {
                   "id": "offset",
-                  "dataType": 3
-                }
-              ]
-            },
-            {
-              "id": "direction",
-              "title": "Direction",
-              "dataType": 2,
-              "alternates": [
-                {
-                  "id": "direction",
-                  "dataType": 24,
-                  "minLength": 3,
-                  "maxLength": 3,
-                  "alternates": [
-                    {
-                      "id": "direction",
-                      "dataType": 14,
-                      "readOnly": true,
-                      "subForm": {
-                        "id": "direction",
-                        "title": "Direction",
-                        "fields": [
-                          {
-                            "id": "expression",
-                            "title": "Expression",
-                            "dataType": 2
-                          },
-                          {
-                            "id": "version",
-                            "title": "Version",
-                            "dataType": 0
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "id": "direction",
-                      "dataType": 3
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "radius",
-              "title": "Radius",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "radius",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "radius",
-                    "title": "Radius",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "radius",
                   "dataType": 3
                 }
               ]
@@ -856,40 +575,6 @@
           "id": "emitter_shape_custom",
           "title": "Emitter Shape Custom",
           "fields": [
-            {
-              "id": "offset",
-              "title": "Offset",
-              "dataType": 24,
-              "minLength": 3,
-              "maxLength": 3,
-              "alternates": [
-                {
-                  "id": "offset",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "offset",
-                    "title": "Offset",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "offset",
-                  "dataType": 3
-                }
-              ]
-            },
             {
               "id": "direction",
               "title": "Direction",
@@ -923,74 +608,7 @@
                   "dataType": 3
                 }
               ]
-            }
-          ]
-        }
-      },
-      {
-        "id": "minecraft:emitter_shape_entity_aabb",
-        "title": "Minecraft Emitter Shape Entity Aabb",
-        "dataType": 16,
-        "subForm": {
-          "id": "emitter_shape_entity_aabb",
-          "title": "Emitter Shape Entity Aabb",
-          "fields": [
-            {
-              "id": "surface_only",
-              "title": "Surface Only",
-              "dataType": 1
             },
-            {
-              "id": "direction",
-              "title": "Direction",
-              "dataType": 2,
-              "alternates": [
-                {
-                  "id": "direction",
-                  "dataType": 24,
-                  "minLength": 3,
-                  "maxLength": 3,
-                  "alternates": [
-                    {
-                      "id": "direction",
-                      "dataType": 14,
-                      "readOnly": true,
-                      "subForm": {
-                        "id": "direction",
-                        "title": "Direction",
-                        "fields": [
-                          {
-                            "id": "expression",
-                            "title": "Expression",
-                            "dataType": 2
-                          },
-                          {
-                            "id": "version",
-                            "title": "Version",
-                            "dataType": 0
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "id": "direction",
-                      "dataType": 3
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "id": "minecraft:emitter_shape_disc",
-        "title": "Minecraft Emitter Shape Disc",
-        "dataType": 16,
-        "subForm": {
-          "id": "emitter_shape_disc",
-          "title": "Emitter Shape Disc",
-          "fields": [
             {
               "id": "offset",
               "title": "Offset",
@@ -1024,7 +642,18 @@
                   "dataType": 3
                 }
               ]
-            },
+            }
+          ]
+        }
+      },
+      {
+        "id": "minecraft:emitter_shape_disc",
+        "title": "Minecraft Emitter Shape Disc",
+        "dataType": 16,
+        "subForm": {
+          "id": "emitter_shape_disc",
+          "title": "Emitter Shape Disc",
+          "fields": [
             {
               "id": "direction",
               "title": "Direction",
@@ -1066,17 +695,19 @@
               ]
             },
             {
-              "id": "radius",
-              "title": "Radius",
+              "id": "offset",
+              "title": "Offset",
               "dataType": 24,
+              "minLength": 3,
+              "maxLength": 3,
               "alternates": [
                 {
-                  "id": "radius",
+                  "id": "offset",
                   "dataType": 14,
                   "readOnly": true,
                   "subForm": {
-                    "id": "radius",
-                    "title": "Radius",
+                    "id": "offset",
+                    "title": "Offset",
                     "fields": [
                       {
                         "id": "expression",
@@ -1092,15 +723,10 @@
                   }
                 },
                 {
-                  "id": "radius",
+                  "id": "offset",
                   "dataType": 3
                 }
               ]
-            },
-            {
-              "id": "surface_only",
-              "title": "Surface Only",
-              "dataType": 1
             },
             {
               "id": "plane_normal",
@@ -1141,6 +767,300 @@
                   ]
                 }
               ]
+            },
+            {
+              "id": "radius",
+              "title": "Radius",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "radius",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "radius",
+                    "title": "Radius",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "radius",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "surface_only",
+              "title": "Surface Only",
+              "dataType": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "minecraft:emitter_shape_entity_aabb",
+        "title": "Minecraft Emitter Shape Entity Aabb",
+        "dataType": 16,
+        "subForm": {
+          "id": "emitter_shape_entity_aabb",
+          "title": "Emitter Shape Entity Aabb",
+          "fields": [
+            {
+              "id": "direction",
+              "title": "Direction",
+              "dataType": 2,
+              "alternates": [
+                {
+                  "id": "direction",
+                  "dataType": 24,
+                  "minLength": 3,
+                  "maxLength": 3,
+                  "alternates": [
+                    {
+                      "id": "direction",
+                      "dataType": 14,
+                      "readOnly": true,
+                      "subForm": {
+                        "id": "direction",
+                        "title": "Direction",
+                        "fields": [
+                          {
+                            "id": "expression",
+                            "title": "Expression",
+                            "dataType": 2
+                          },
+                          {
+                            "id": "version",
+                            "title": "Version",
+                            "dataType": 0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "direction",
+                      "dataType": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "surface_only",
+              "title": "Surface Only",
+              "dataType": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "minecraft:emitter_shape_point",
+        "title": "Minecraft Emitter Shape Point",
+        "dataType": 16,
+        "subForm": {
+          "id": "emitter_shape_point",
+          "title": "Emitter Shape Point",
+          "fields": [
+            {
+              "id": "direction",
+              "title": "Direction",
+              "dataType": 24,
+              "minLength": 3,
+              "maxLength": 3,
+              "alternates": [
+                {
+                  "id": "direction",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "direction",
+                    "title": "Direction",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "direction",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "offset",
+              "title": "Offset",
+              "dataType": 24,
+              "minLength": 3,
+              "maxLength": 3,
+              "alternates": [
+                {
+                  "id": "offset",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "offset",
+                    "title": "Offset",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "offset",
+                  "dataType": 3
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "minecraft:emitter_shape_sphere",
+        "title": "Minecraft Emitter Shape Sphere",
+        "dataType": 16,
+        "subForm": {
+          "id": "emitter_shape_sphere",
+          "title": "Emitter Shape Sphere",
+          "fields": [
+            {
+              "id": "direction",
+              "title": "Direction",
+              "dataType": 2,
+              "alternates": [
+                {
+                  "id": "direction",
+                  "dataType": 24,
+                  "minLength": 3,
+                  "maxLength": 3,
+                  "alternates": [
+                    {
+                      "id": "direction",
+                      "dataType": 14,
+                      "readOnly": true,
+                      "subForm": {
+                        "id": "direction",
+                        "title": "Direction",
+                        "fields": [
+                          {
+                            "id": "expression",
+                            "title": "Expression",
+                            "dataType": 2
+                          },
+                          {
+                            "id": "version",
+                            "title": "Version",
+                            "dataType": 0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "direction",
+                      "dataType": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "offset",
+              "title": "Offset",
+              "dataType": 24,
+              "minLength": 3,
+              "maxLength": 3,
+              "alternates": [
+                {
+                  "id": "offset",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "offset",
+                    "title": "Offset",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "offset",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "radius",
+              "title": "Radius",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "radius",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "radius",
+                    "title": "Radius",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "radius",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "surface_only",
+              "title": "Surface Only",
+              "dataType": 1
             }
           ]
         }
@@ -1153,6 +1073,16 @@
           "id": "particle_appearance_billboard",
           "title": "Particle Appearance Billboard",
           "fields": [
+            {
+              "id": "direction",
+              "title": "Direction",
+              "dataType": 16
+            },
+            {
+              "id": "facing_camera_mode",
+              "title": "Facing Camera Mode",
+              "dataType": 16
+            },
             {
               "id": "size",
               "title": "Size",
@@ -1188,22 +1118,17 @@
               ]
             },
             {
-              "id": "facing_camera_mode",
-              "title": "Facing Camera Mode",
-              "dataType": 16
-            },
-            {
-              "id": "direction",
-              "title": "Direction",
-              "dataType": 16
-            },
-            {
               "id": "uv",
               "title": "Uv",
               "dataType": 16
             }
           ]
         }
+      },
+      {
+        "id": "minecraft:particle_appearance_lighting",
+        "title": "Minecraft Particle Appearance Lighting",
+        "dataType": 16
       },
       {
         "id": "minecraft:particle_appearance_tinting",
@@ -1353,14 +1278,52 @@
         }
       },
       {
-        "id": "minecraft:particle_appearance_lighting",
-        "title": "Minecraft Particle Appearance Lighting",
+        "id": "minecraft:particle_expire_if_in_blocks",
+        "title": "Minecraft Particle Expire If In Blocks",
         "dataType": 16
       },
       {
-        "id": "minecraft:particle_kill_plane",
-        "title": "Minecraft Particle Kill Plane",
+        "id": "minecraft:particle_expire_if_not_in_blocks",
+        "title": "Minecraft Particle Expire If Not In Blocks",
         "dataType": 16
+      },
+      {
+        "id": "minecraft:particle_initial_speed",
+        "title": "Minecraft Particle Initial Speed",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "minecraft:particle_initial_speed",
+            "dataType": 24,
+            "alternates": [
+              {
+                "id": "minecraft:particle_initial_speed",
+                "dataType": 16,
+                "readOnly": true,
+                "subForm": {
+                  "id": "minecraft:particle_initial_speed",
+                  "title": "Particle Initial Speed",
+                  "fields": [
+                    {
+                      "id": "expression",
+                      "title": "Expression",
+                      "dataType": 2
+                    },
+                    {
+                      "id": "version",
+                      "title": "Version",
+                      "dataType": 0
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "id": "minecraft:particle_initial_speed",
+            "dataType": 3
+          }
+        ]
       },
       {
         "id": "minecraft:particle_initial_spin",
@@ -1438,44 +1401,6 @@
         }
       },
       {
-        "id": "minecraft:particle_initial_speed",
-        "title": "Minecraft Particle Initial Speed",
-        "dataType": 24,
-        "alternates": [
-          {
-            "id": "minecraft:particle_initial_speed",
-            "dataType": 24,
-            "alternates": [
-              {
-                "id": "minecraft:particle_initial_speed",
-                "dataType": 16,
-                "readOnly": true,
-                "subForm": {
-                  "id": "minecraft:particle_initial_speed",
-                  "title": "Particle Initial Speed",
-                  "fields": [
-                    {
-                      "id": "expression",
-                      "title": "Expression",
-                      "dataType": 2
-                    },
-                    {
-                      "id": "version",
-                      "title": "Version",
-                      "dataType": 0
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          {
-            "id": "minecraft:particle_initial_speed",
-            "dataType": 3
-          }
-        ]
-      },
-      {
         "id": "minecraft:particle_initialization",
         "title": "Minecraft Particle Initialization",
         "dataType": 16,
@@ -1483,38 +1408,6 @@
           "id": "particle_initialization",
           "title": "Particle Initialization",
           "fields": [
-            {
-              "id": "per_update_expression",
-              "title": "Per Update Expression",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "per_update_expression",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "per_update_expression",
-                    "title": "Per Update Expression",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "per_update_expression",
-                  "dataType": 3
-                }
-              ]
-            },
             {
               "id": "per_render_expression",
               "title": "Per Render Expression",
@@ -1546,19 +1439,238 @@
                   "dataType": 3
                 }
               ]
+            },
+            {
+              "id": "per_update_expression",
+              "title": "Per Update Expression",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "per_update_expression",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "per_update_expression",
+                    "title": "Per Update Expression",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "per_update_expression",
+                  "dataType": 3
+                }
+              ]
             }
           ]
         }
       },
       {
-        "id": "minecraft:particle_expire_if_not_in_blocks",
-        "title": "Minecraft Particle Expire If Not In Blocks",
+        "id": "minecraft:particle_kill_plane",
+        "title": "Minecraft Particle Kill Plane",
         "dataType": 16
       },
       {
         "id": "minecraft:particle_lifetime_events",
         "title": "Minecraft Particle Lifetime Events",
         "dataType": 16
+      },
+      {
+        "id": "minecraft:particle_lifetime_expression",
+        "title": "Minecraft Particle Lifetime Expression",
+        "dataType": 16,
+        "subForm": {
+          "id": "particle_lifetime_expression",
+          "title": "Particle Lifetime Expression",
+          "fields": [
+            {
+              "id": "expiration_expression",
+              "title": "Expiration Expression",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "expiration_expression",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "expiration_expression",
+                    "title": "Expiration Expression",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "expiration_expression",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "max_lifetime",
+              "title": "Max Lifetime",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "max_lifetime",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "max_lifetime",
+                    "title": "Max Lifetime",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "max_lifetime",
+                  "dataType": 3
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "minecraft:particle_motion_collision",
+        "title": "Minecraft Particle Motion Collision",
+        "dataType": 16,
+        "subForm": {
+          "id": "particle_motion_collision",
+          "title": "Particle Motion Collision",
+          "fields": [
+            {
+              "id": "coefficient_of_restitution",
+              "title": "Coefficient Of Restitution",
+              "dataType": 3
+            },
+            {
+              "id": "collision_drag",
+              "title": "Collision Drag",
+              "dataType": 3
+            },
+            {
+              "id": "collision_radius",
+              "title": "Collision Radius",
+              "dataType": 3,
+              "validity": [
+                {
+                  "comparison": "<=",
+                  "value": 0.5
+                }
+              ]
+            },
+            {
+              "id": "enabled",
+              "title": "Enabled",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "enabled",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "enabled",
+                    "title": "Enabled",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "enabled",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "events",
+              "title": "Events",
+              "dataType": 15,
+              "subForm": {
+                "id": "particle_motion_collision_event",
+                "title": "Particle Motion Collision Event",
+                "fields": [
+                  {
+                    "id": "event",
+                    "title": "Event",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "min_speed",
+                    "title": "Min Speed",
+                    "dataType": 3
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "id": "events",
+                  "dataType": 16,
+                  "subForm": {
+                    "id": "events",
+                    "title": "Events",
+                    "fields": [
+                      {
+                        "id": "event",
+                        "title": "Event",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "min_speed",
+                        "title": "Min Speed",
+                        "dataType": 3
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "expire_on_contact",
+              "title": "Expire On Contact",
+              "dataType": 1
+            }
+          ]
+        }
       },
       {
         "id": "minecraft:particle_motion_dynamic",
@@ -1710,40 +1822,6 @@
           "title": "Particle Motion Parametric",
           "fields": [
             {
-              "id": "relative_position",
-              "title": "Relative Position",
-              "dataType": 24,
-              "minLength": 3,
-              "maxLength": 3,
-              "alternates": [
-                {
-                  "id": "relative_position",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "relative_position",
-                    "title": "Relative Position",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "relative_position",
-                  "dataType": 3
-                }
-              ]
-            },
-            {
               "id": "direction",
               "title": "Direction",
               "dataType": 24,
@@ -1778,6 +1856,40 @@
               ]
             },
             {
+              "id": "relative_position",
+              "title": "Relative Position",
+              "dataType": 24,
+              "minLength": 3,
+              "maxLength": 3,
+              "alternates": [
+                {
+                  "id": "relative_position",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "relative_position",
+                    "title": "Relative Position",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "relative_position",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
               "id": "rotation",
               "title": "Rotation",
               "dataType": 24,
@@ -1806,118 +1918,6 @@
                 {
                   "id": "rotation",
                   "dataType": 3
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "id": "minecraft:particle_motion_collision",
-        "title": "Minecraft Particle Motion Collision",
-        "dataType": 16,
-        "subForm": {
-          "id": "particle_motion_collision",
-          "title": "Particle Motion Collision",
-          "fields": [
-            {
-              "id": "enabled",
-              "title": "Enabled",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "enabled",
-                  "dataType": 14,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "enabled",
-                    "title": "Enabled",
-                    "fields": [
-                      {
-                        "id": "expression",
-                        "title": "Expression",
-                        "dataType": 2
-                      },
-                      {
-                        "id": "version",
-                        "title": "Version",
-                        "dataType": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "id": "enabled",
-                  "dataType": 3
-                }
-              ]
-            },
-            {
-              "id": "collision_radius",
-              "title": "Collision Radius",
-              "dataType": 3,
-              "validity": [
-                {
-                  "comparison": "<=",
-                  "value": 0.5
-                }
-              ]
-            },
-            {
-              "id": "collision_drag",
-              "title": "Collision Drag",
-              "dataType": 3
-            },
-            {
-              "id": "coefficient_of_restitution",
-              "title": "Coefficient Of Restitution",
-              "dataType": 3
-            },
-            {
-              "id": "expire_on_contact",
-              "title": "Expire On Contact",
-              "dataType": 1
-            },
-            {
-              "id": "events",
-              "title": "Events",
-              "dataType": 15,
-              "subForm": {
-                "id": "particle_motion_collision_event",
-                "title": "Particle Motion Collision Event",
-                "fields": [
-                  {
-                    "id": "min_speed",
-                    "title": "Min Speed",
-                    "dataType": 3
-                  },
-                  {
-                    "id": "event",
-                    "title": "Event",
-                    "dataType": 16
-                  }
-                ]
-              },
-              "alternates": [
-                {
-                  "id": "events",
-                  "dataType": 16,
-                  "subForm": {
-                    "id": "events",
-                    "title": "Events",
-                    "fields": [
-                      {
-                        "id": "min_speed",
-                        "title": "Min Speed",
-                        "dataType": 3
-                      },
-                      {
-                        "id": "event",
-                        "title": "Event",
-                        "dataType": 16
-                      }
-                    ]
-                  }
                 }
               ]
             }

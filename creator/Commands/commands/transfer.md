@@ -21,7 +21,7 @@ Transfers a player to another server.
 </table>
 
 ## Usage
-### `/transfer <pfidOrMSA: string> <server: string> <port: int>`
+### `/transfer <pfidOrMSA: string> <server: string> [port: int]`
 
 ## Arguments
 - `pfidOrMSA`: string

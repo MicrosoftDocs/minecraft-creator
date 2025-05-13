@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Describes the destructible by mining properties for this block. If set to true, the block will take the default number of seconds to destroy. If set to false, this block is indestructible by mining. If the component is omitted, the block will take the default number of seconds to destroy.
 
+> [!Note]
+> This item requires a format version of at least 1.21.50.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `Boolean true/false`.

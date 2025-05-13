@@ -1,13 +1,14 @@
 {
   "id": "minecraft:dimension_bounds",
   "fields": [],
+  "versionIntroduced": "1.21.40",
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:dimension_bounds",
     "title": "Bounds",
     "fields": [
       {
-        "id": "min",
-        "title": "Min",
+        "id": "max",
+        "title": "Max",
         "dataType": 0,
         "validity": [
           {
@@ -21,8 +22,8 @@
         ]
       },
       {
-        "id": "max",
-        "title": "Max",
+        "id": "min",
+        "title": "Min",
         "dataType": 0,
         "validity": [
           {

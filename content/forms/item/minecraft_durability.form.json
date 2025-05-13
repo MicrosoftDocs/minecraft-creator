@@ -236,13 +236,13 @@
           "title": "IntRange",
           "fields": [
             {
-              "id": "min",
-              "title": "Min",
+              "id": "max",
+              "title": "Max",
               "dataType": 0
             },
             {
-              "id": "max",
-              "title": "Max",
+              "id": "min",
+              "title": "Min",
               "dataType": 0
             }
           ]

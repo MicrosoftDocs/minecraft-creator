@@ -104,38 +104,6 @@
     "description": "The enchantable component specifies what enchantments can be applied to the item. Not all enchantments will have an effect on all item components.",
     "fields": [
       {
-        "id": "value",
-        "title": "Value",
-        "description": "Specifies the value of the enchantment (minimum of 0).",
-        "dataType": 0,
-        "samples": {
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:enchantable/",
-              "content": 14
-            }
-          ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/bow_turret_kit.item.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:enchantable/",
-              "content": 14
-            }
-          ],
-          "/samples/custom_items/behavior_packs/custom_item/items/chestplate.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:enchantable/",
-              "content": 10
-            }
-          ],
-          "/samples/custom_items/behavior_packs/custom_item/items/my_boots.json": [
-            {
-              "path": "/minecraft:item/components/minecraft:enchantable/",
-              "content": 10
-            }
-          ]
-        }
-      },
-      {
         "id": "slot",
         "title": "Slot",
         "description": "Specifies which types of enchantments can be applied. For example, `bow` would allow this item to be enchanted as if it were a bow.",
@@ -175,6 +143,38 @@
             {
               "path": "/minecraft:item/components/minecraft:enchantable/",
               "content": "armor_legs"
+            }
+          ]
+        }
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "Specifies the value of the enchantment (minimum of 0).",
+        "dataType": 0,
+        "samples": {
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": 14
+            }
+          ],
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/bow_turret_kit.item.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": 14
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/chestplate.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": 10
+            }
+          ],
+          "/samples/custom_items/behavior_packs/custom_item/items/my_boots.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:enchantable/",
+              "content": 10
             }
           ]
         }

@@ -5,12 +5,6 @@
     "title": "Feature Rule Conditions World",
     "fields": [
       {
-        "id": "placement_pass",
-        "title": "Placement Pass",
-        "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
-        "dataType": 2
-      },
-      {
         "id": "minecraft:biome_filter",
         "title": "Minecraft Biome Filter",
         "description": "List of filter tests to determine which biomes this rule will attach to.",
@@ -20,16 +14,16 @@
           "title": "Biome Filter",
           "fields": [
             {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": 16
+            },
+            {
               "id": "operator",
               "title": "Operator",
               "description": "The comparison to apply with 'value'.",
               "dataType": 16
-            },
-            {
-              "id": "test",
-              "title": "Test",
-              "description": "The name of the test to apply.",
-              "dataType": 2
             },
             {
               "id": "subject",
@@ -38,10 +32,10 @@
               "dataType": 16
             },
             {
-              "id": "domain",
-              "title": "Domain",
-              "description": "The domain the test should be performed in.",
-              "dataType": 16
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": 2
             },
             {
               "id": "value",
@@ -64,6 +58,18 @@
               "title": "Biome Filter",
               "fields": [
                 {
+                  "id": "AND",
+                  "title": "AND",
+                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
+                  "id": "NOT",
+                  "title": "NOT",
+                  "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
+                  "dataType": 16
+                },
+                {
                   "id": "OR",
                   "title": "OR",
                   "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
@@ -82,9 +88,9 @@
                   "dataType": 16
                 },
                 {
-                  "id": "AND",
-                  "title": "AND",
-                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
+                  "id": "any",
+                  "title": "Any",
+                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
                   "dataType": 16
                 },
                 {
@@ -98,23 +104,17 @@
                   "title": "None Of",
                   "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
                   "dataType": 16
-                },
-                {
-                  "id": "any",
-                  "title": "Any",
-                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
-                  "dataType": 16
-                },
-                {
-                  "id": "NOT",
-                  "title": "NOT",
-                  "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
-                  "dataType": 16
                 }
               ]
             }
           }
         ]
+      },
+      {
+        "id": "placement_pass",
+        "title": "Placement Pass",
+        "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
+        "dataType": 2
       }
     ]
   }

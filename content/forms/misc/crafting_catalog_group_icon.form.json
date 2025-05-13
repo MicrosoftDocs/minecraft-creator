@@ -6,18 +6,6 @@
     "description": "The identifier of a group of items.",
     "fields": [
       {
-        "id": "name",
-        "title": "Name",
-        "description": "A localization key representing the name of the group that starts with a namespace. The 'minecraft' namespace is reservered for the Vanilla game. Creating new group names starting with 'minecraft' run the risk of being overwritten in later updates.",
-        "dataType": 2,
-        "validity": [
-          {
-            "comparison": "pattern",
-            "value": "^(?:.)+:(?:.)+$"
-          }
-        ]
-      },
-      {
         "id": "icon",
         "title": "Icon",
         "description": "The item or block that represents the group.",
@@ -45,6 +33,18 @@
                 }
               ]
             }
+          }
+        ]
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "description": "A localization key representing the name of the group that starts with a namespace. The 'minecraft' namespace is reservered for the Vanilla game. Creating new group names starting with 'minecraft' run the risk of being overwritten in later updates.",
+        "dataType": 2,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^(?:.)+:(?:.)+$"
           }
         ]
       }

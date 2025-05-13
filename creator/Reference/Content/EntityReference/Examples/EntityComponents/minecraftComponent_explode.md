@@ -17,7 +17,7 @@ Defines how the entity explodes.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | add | *not set* | [Add](#add-item-type) item |  | Fireball: `{"component_groups":["minecraft:exploding"]}` | 
-| allow_underwater | false | Boolean true/false | If true, the explosion will affect blocks and entities under water. | Breeze Wind Charge Projectile: `true` | 
+| allow_underwater | false | Boolean true/false | If true, the explosion will affect blocks and entities under water. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `true` | 
 | breaks_blocks | true | Boolean true/false | If true, the explosion will destroy blocks in the explosion radius. |  | 
 | causes_fire | false | Boolean true/false | If true, blocks in the explosion radius will be set on fire. | Fireball: `true` | 
 | damage_scaling | 1 | Decimal number | A scale factor applied to the explosion's damage to entities. A value of 0 prevents the explosion from dealing any damage. Negative values cause the explosion to heal entities instead. |  | 
@@ -25,13 +25,13 @@ Defines how the entity explodes.
 | fire_affected_by_griefing | false | Boolean true/false | If true, whether the explosion causes fire is affected by the mob griefing game rule. | Fireball: `true` | 
 | fuse_length | *not set* | Range of integers | The range for the random amount of time the fuse will be lit before exploding, a negative value means the explosion will be immediate. | Creeper: `1.5`, Tnt Minecart: `4` | 
 | fuse_lit | false | Boolean true/false | If true, the fuse is already lit when this component is added to the entity. | Creeper: `true` | 
-| knockback_scaling | 1 | Decimal number | A scale factor applied to the knockback force caused by the explosion. | Breeze Wind Charge Projectile: `0.6`, Wind Charge Projectile: `1.22` | 
+| knockback_scaling | 1 | Decimal number | A scale factor applied to the knockback force caused by the explosion. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `0.6`, Wind Charge Projectile: `1.22` | 
 | max_resistance | 3.40282e+38 | Decimal number | A blocks explosion resistance will be capped at this value when an explosion occurs. | Wither Skull Dangerous: `4` | 
-| negates_fall_damage | false | Boolean true/false | Defines whether the explosion should apply fall damage negation to Players above the point of collision. | Wind Charge Projectile: `true` | 
-| particle_effect | explosion | String | The name of the particle effect to use. The accepted strings are 'explosion', 'wind_burst', or 'breeze_wind_burst'. | Breeze Wind Charge Projectile: `"breeze_wind_burst"`, Wind Charge Projectile: `"wind_burst"` | 
+| negates_fall_damage | false | Boolean true/false | Defines whether the explosion should apply fall damage negation to Players above the point of collision. This item requires a format version of at least undefined. | Wind Charge Projectile: `true` | 
+| particle_effect | explosion | String | The name of the particle effect to use. The accepted strings are 'explosion', 'wind_burst', or 'breeze_wind_burst'. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `"breeze_wind_burst"`, Wind Charge Projectile: `"wind_burst"` | 
 | power | 3 | Decimal number | The radius of the explosion in blocks and the amount of damage the explosion deals. | Breeze Wind Charge Projectile: `3`, Creeper: `6`, Fireball: `1` | 
-| sound_effect | explode | String | The name of the sound effect played when the explosion triggers. | Breeze Wind Charge Projectile: `"breeze_wind_charge.burst"`, Wind Charge Projectile: `"wind_charge.burst"` | 
-| toggles_blocks | false | Boolean true/false | If true, the explosion will toggle blocks in the explosion radius. | Breeze Wind Charge Projectile: `true` | 
+| sound_effect | explode | String | The name of the sound effect played when the explosion triggers. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `"breeze_wind_charge.burst"`, Wind Charge Projectile: `"wind_charge.burst"` | 
+| toggles_blocks | false | Boolean true/false | If true, the explosion will toggle blocks in the explosion radius. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `true` | 
 
 ## Add item type
 

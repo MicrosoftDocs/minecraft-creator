@@ -193,6 +193,37 @@
                 {
                   "event": "minecraft:on_no_player_detected_above",
                   "cooldown": 0,
+                  "y_offset": 5,
+                  "range": [
+                    3,
+                    1
+                  ],
+                  "minimum_count": 0,
+                  "maximum_count": 0,
+                  "event_filters": {
+                    "test": "is_riding_self",
+                    "subject": "other",
+                    "value": false
+                  }
+                },
+                {
+                  "event": "minecraft:on_player_detected_above",
+                  "cooldown": 0,
+                  "y_offset": 5,
+                  "range": [
+                    3,
+                    1
+                  ],
+                  "minimum_count": 1,
+                  "event_filters": {
+                    "test": "is_riding_self",
+                    "subject": "other",
+                    "value": false
+                  }
+                },
+                {
+                  "event": "minecraft:on_no_player_detected_above",
+                  "cooldown": 0,
                   "y_offset": 4.5,
                   "range": [
                     2,
@@ -201,7 +232,7 @@
                   "minimum_count": 0,
                   "maximum_count": 0,
                   "event_filters": {
-                    "test": "is_riding",
+                    "test": "is_riding_self",
                     "subject": "other",
                     "value": false
                   }
@@ -216,7 +247,7 @@
                   ],
                   "minimum_count": 1,
                   "event_filters": {
-                    "test": "is_riding",
+                    "test": "is_riding_self",
                     "subject": "other",
                     "value": false
                   }
@@ -334,6 +365,37 @@
               {
                 "event": "minecraft:on_no_player_detected_above",
                 "cooldown": 0,
+                "y_offset": 5,
+                "range": [
+                  3,
+                  1
+                ],
+                "minimum_count": 0,
+                "maximum_count": 0,
+                "event_filters": {
+                  "test": "is_riding_self",
+                  "subject": "other",
+                  "value": false
+                }
+              },
+              {
+                "event": "minecraft:on_player_detected_above",
+                "cooldown": 0,
+                "y_offset": 5,
+                "range": [
+                  3,
+                  1
+                ],
+                "minimum_count": 1,
+                "event_filters": {
+                  "test": "is_riding_self",
+                  "subject": "other",
+                  "value": false
+                }
+              },
+              {
+                "event": "minecraft:on_no_player_detected_above",
+                "cooldown": 0,
                 "y_offset": 4.5,
                 "range": [
                   2,
@@ -342,7 +404,7 @@
                 "minimum_count": 0,
                 "maximum_count": 0,
                 "event_filters": {
-                  "test": "is_riding",
+                  "test": "is_riding_self",
                   "subject": "other",
                   "value": false
                 }
@@ -357,7 +419,7 @@
                 ],
                 "minimum_count": 1,
                 "event_filters": {
-                  "test": "is_riding",
+                  "test": "is_riding_self",
                   "subject": "other",
                   "value": false
                 }

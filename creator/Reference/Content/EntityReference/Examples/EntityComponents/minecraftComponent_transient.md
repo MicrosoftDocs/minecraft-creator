@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 An entity with this component will NEVER persist, and forever disappear when unloaded.
 
+> [!Note]
+> This item requires a format version of at least 1.21.40.
+
 
 ## Samples
 

@@ -6,11 +6,6 @@
     "description": "The description MUST contain an identifier and basic_render_parameters.",
     "fields": [
       {
-        "id": "identifier",
-        "title": "Identifier",
-        "dataType": 2
-      },
-      {
         "id": "basic_render_parameters",
         "title": "Basic Render Parameters",
         "description": "The parameters MUST contain a material and texture.",
@@ -32,6 +27,11 @@
             }
           ]
         }
+      },
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "dataType": 2
       }
     ]
   }

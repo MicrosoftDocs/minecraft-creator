@@ -145,6 +145,12 @@
     "description": "Wearable items can be worn by a player in the head, chest, legs, feet, or off-hand slots.",
     "fields": [
       {
+        "id": "protection",
+        "title": "Protection",
+        "description": "How much protection the wearable item provides. Default is set to 0.",
+        "dataType": 0
+      },
+      {
         "id": "slot",
         "title": "Legacy EquipmentSlot",
         "description": "Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.",
@@ -193,12 +199,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "protection",
-        "title": "Protection",
-        "description": "How much protection the wearable item provides. Default is set to 0.",
-        "dataType": 0
       },
       {
         "id": "dispensable",

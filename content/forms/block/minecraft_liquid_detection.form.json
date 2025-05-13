@@ -1,5 +1,6 @@
 {
   "fields": [],
+  "versionIntroduced": "1.21.60",
   "generated_doNotEdit": {
     "id": "minecraft:liquid_detection",
     "title": "Liquid Detection",

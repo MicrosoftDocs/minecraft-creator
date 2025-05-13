@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Allows an entity to jump around a target.
 
+> [!Note]
+> This item requires a format version of at least 1.21.30.
+
 
 ## Jump Around Target Behavior Properties
 
