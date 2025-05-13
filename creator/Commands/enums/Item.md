@@ -2940,84 +2940,84 @@ Skull
 Skull
 - `minecraft:chicken`
 Chicken
-- `chicken`
-Chicken
 - `minecraft:rabbit`
-Rabbit
-- `rabbit`
 Rabbit
 - `minecraft:cod`
 Cod
-- `cod`
-Cod
 - `minecraft:pufferfish`
-Pufferfish
-- `pufferfish`
 Pufferfish
 - `minecraft:salmon`
 Salmon
-- `salmon`
-Salmon
 - `minecraft:minecart`
-Minecart
-- `minecart`
 Minecart
 - `minecraft:hopper_minecart`
 Hopper Minecart
-- `hopper_minecart`
-Hopper Minecart
 - `minecraft:tnt_minecart`
-TNT Minecart
-- `tnt_minecart`
 TNT Minecart
 - `minecraft:chest_minecart`
 Chest Minecart
-- `chest_minecart`
-Chest Minecart
 - `minecraft:command_block_minecart`
 Command Block Minecart
-- `command_block_minecart`
-Block Minecart
 - `minecraft:arrow`
-Arrow
-- `arrow`
 Arrow
 - `minecraft:snowball`
 Snowball
-- `snowball`
-Snowball
 - `minecraft:egg`
-Egg
-- `egg`
 Egg
 - `minecraft:painting`
 Painting
+- `minecraft:splash_potion`
+Splash Potion
+- `minecraft:ender_pearl`
+Ender Pearl
+- `minecraft:boat`
+Boat
+- `minecraft:chest_boat`
+Chest Boat
+- `minecraft:lingering_potion`
+Lingering Potion
+- `minecraft:armor_stand`
+Armor Stand
+- `chicken`
+Chicken
+- `rabbit`
+Rabbit
+- `cod`
+Cod
+- `pufferfish`
+Pufferfish
+- `salmon`
+Salmon
+- `minecart`
+Minecart
+- `hopper_minecart`
+Hopper Minecart
+- `tnt_minecart`
+TNT Minecart
+- `chest_minecart`
+Chest Minecart
+- `command_block_minecart`
+Block Minecart
+- `arrow`
+Arrow
+- `snowball`
+Snowball
+- `egg`
+Egg
 - `painting`
 Painting
 - `fireball`
 Fireball
-- `minecraft:splash_potion`
-Splash Potion
 - `splash_potion`
 Splash Potion
-- `minecraft:ender_pearl`
-Ender Pearl
 - `ender_pearl`
 Ender Pearl
-- `minecraft:boat`
-Boat
 - `boat`
 Boat
-- `minecraft:chest_boat`
-Chest Boat
 - `chest_boat`
 Chest Boat
-- `minecraft:lingering_potion`
-Lingering Potion
 - `lingering_potion`
 Lingering Potion
-- `minecraft:armor_stand`
-Armor Stand
 - `armor_stand`
 Armor Stand
 - `minecraft:wheat_seeds`
@@ -4055,6 +4055,8 @@ Music Disc Pigstep
 - `music_disc_creator_music_box`
 - `minecraft:music_disc_precipice`
 - `music_disc_precipice`
+- `minecraft:music_disc_tears`
+- `music_disc_tears`
 - `minecraft:disc_fragment_5`
 Disc Fragment 5
 - `disc_fragment_5`
@@ -4626,6 +4628,7 @@ Glazed Terracotta Black
 - `glazedterracotta.red`
 Glazed Terracotta Red
 - `record_relic`
+- `record_tears`
 - `record_cat`
 Record Cat
 - `record_creator`

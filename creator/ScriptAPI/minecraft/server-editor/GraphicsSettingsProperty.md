@@ -12,6 +12,8 @@ description: Contents of the @minecraft/server-editor.GraphicsSettingsProperty e
 Enumeration representing identifiers for graphics settings properties.
 
 ## Constants
+### **GraphicsMode**
+`GraphicsMode = "GraphicsMode"`
 ### **NightVision**
 `NightVision = "NightVision"`
 ### **ShowChunkBoundaries**

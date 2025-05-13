@@ -2008,7 +2008,6 @@ Azalea Leaves Flowered
 Sandstone
 - `minecraft:chiseled_sandstone`
 - `minecraft:smooth_sandstone`
-- `minecraft:hard_light_gray_stained_glass_pane`
 - `minecraft:spruce_button`
 Spruce Button
 - `minecraft:red_sandstone`
@@ -2197,6 +2196,7 @@ Bell
 - `minecraft:stripped_dark_oak_wood`
 - `minecraft:music_disc_creator`
 - `minecraft:music_disc_precipice`
+- `minecraft:music_disc_tears`
 - `minecraft:material_reducer`
 - `minecraft:lab_table`
 - `minecraft:hard_white_stained_glass`
@@ -2216,6 +2216,7 @@ Cobbled Deepslate
 - `minecraft:hard_stained_glass`
 Hard Stained Glass
 - `minecraft:hard_yellow_stained_glass_pane`
+- `minecraft:hard_light_gray_stained_glass_pane`
 - `minecraft:hard_purple_stained_glass_pane`
 - `minecraft:hard_blue_stained_glass_pane`
 - `minecraft:hard_black_stained_glass_pane`

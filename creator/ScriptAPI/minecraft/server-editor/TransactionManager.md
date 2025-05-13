@@ -23,6 +23,7 @@ The transactions are stored as a stack, and can be undone in stack order to rest
 - [createUserDefinedTransactionHandler](#createuserdefinedtransactionhandler)
 - [discardOpenTransaction](#discardopentransaction)
 - [discardTrackedChanges](#discardtrackedchanges)
+- [isBusy](#isbusy)
 - [openTransaction](#opentransaction)
 - [redo](#redo)
 - [redoSize](#redosize)
@@ -129,6 +130,17 @@ discardTrackedChanges(): number
 Discard any pending tracked changes.  This does not affect the current open transaction contents, only the pending tracked block operations
 
 **Returns** *number* - Returns the number of change requests that were discarded
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+
+### **isBusy**
+`
+isBusy(): boolean
+`
+
+**Returns** *boolean*
   
 Notes:
 - This function can't be called in read-only mode.
