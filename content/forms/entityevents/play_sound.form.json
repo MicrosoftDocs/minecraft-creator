@@ -1,6 +1,7 @@
 {
   "id": "play_sound",
   "title": "Play Sound",
+  "versionIntroduced": "1.21.50",
   "description": "Plays a sound as part of an entity event response.",
   "fields": [],
   "samples": {

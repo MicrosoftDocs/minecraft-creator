@@ -44,6 +44,8 @@ Type of item that can be added to the property pane
 `NumberTimeline = editorUI:NumberTimeline`
 ### **ProgressIndicator**
 `ProgressIndicator = editorUI:ProgressIndicator`
+### **ProxyPane**
+`ProxyPane = editorUI:ProxyPane`
 ### **String**
 `String = editorUI:String`
 ### **SubPane**

@@ -44,21 +44,9 @@
                       "title": "V1 21 50 CameraAimAssistCategoryPriorities",
                       "fields": [
                         {
-                          "id": "entities",
-                          "title": "Entities",
-                          "description": "Optional. Map of Entity identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
-                          "dataType": 31
-                        },
-                        {
-                          "id": "blocks",
-                          "title": "Blocks",
-                          "description": "Optional. Map of Block identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
-                          "dataType": 31
-                        },
-                        {
-                          "id": "entity_default",
-                          "title": "Entity Default",
-                          "description": "Optional. Default Aim-Assist targeting priority used for Entities not found in 'entities'.",
+                          "id": "block_default",
+                          "title": "Block Default",
+                          "description": "Optional. Default Aim-Assist targeting priority used for Blocks not found in 'blocks'.",
                           "dataType": 0,
                           "validity": [
                             {
@@ -68,9 +56,21 @@
                           ]
                         },
                         {
-                          "id": "block_default",
-                          "title": "Block Default",
-                          "description": "Optional. Default Aim-Assist targeting priority used for Blocks not found in 'blocks'.",
+                          "id": "blocks",
+                          "title": "Blocks",
+                          "description": "Optional. Map of Block identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
+                          "dataType": 31
+                        },
+                        {
+                          "id": "entities",
+                          "title": "Entities",
+                          "description": "Optional. Map of Entity identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
+                          "dataType": 31
+                        },
+                        {
+                          "id": "entity_default",
+                          "title": "Entity Default",
+                          "description": "Optional. Default Aim-Assist targeting priority used for Entities not found in 'entities'.",
                           "dataType": 0,
                           "validity": [
                             {

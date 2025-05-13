@@ -5,40 +5,6 @@
     "title": "Emitter Shape Point Misc",
     "fields": [
       {
-        "id": "offset",
-        "title": "Offset",
-        "dataType": 24,
-        "minLength": 3,
-        "maxLength": 3,
-        "alternates": [
-          {
-            "id": "offset",
-            "dataType": 14,
-            "readOnly": true,
-            "subForm": {
-              "id": "offset",
-              "title": "Offset",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": 2
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": 0
-                }
-              ]
-            }
-          },
-          {
-            "id": "offset",
-            "dataType": 3
-          }
-        ]
-      },
-      {
         "id": "direction",
         "title": "Direction",
         "dataType": 24,
@@ -68,6 +34,40 @@
           },
           {
             "id": "direction",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "offset",
+        "title": "Offset",
+        "dataType": 24,
+        "minLength": 3,
+        "maxLength": 3,
+        "alternates": [
+          {
+            "id": "offset",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "offset",
+              "title": "Offset",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
+          {
+            "id": "offset",
             "dataType": 3
           }
         ]

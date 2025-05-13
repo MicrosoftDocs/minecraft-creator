@@ -92,17 +92,6 @@ Defines how this entity behaves when leashed to another entity. The first preset
 }
 ```
 
-#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
-
-
-```json
-"minecraft:leashable": {
-  "soft_distance": 4,
-  "hard_distance": 6,
-  "max_distance": 10
-}
-```
-
 #### [Chest Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chest_boat.json)
 
 
@@ -156,6 +145,17 @@ Defines how this entity behaves when leashed to another entity. The first preset
     "event": "minecraft:on_unleash",
     "target": "self"
   }
+}
+```
+
+#### [Sheepomelon](https://github.com/microsoft/minecraft-samples/tree/main/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json)
+
+
+```json
+"minecraft:leashable": {
+  "soft_distance": 4,
+  "hard_distance": 6,
+  "max_distance": 10
 }
 ```
 

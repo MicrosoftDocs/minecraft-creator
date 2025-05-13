@@ -1,5 +1,6 @@
 {
   "fields": [],
+  "versionIntroduced": "1.21.30",
   "generated_doNotEdit": {
     "id": "minecraft:behavior.fire_at_target",
     "title": "Fire At Target Behavior",

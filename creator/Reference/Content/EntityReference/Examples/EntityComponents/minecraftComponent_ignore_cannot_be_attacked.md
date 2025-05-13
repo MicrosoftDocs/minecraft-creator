@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 When set, blocks entities from attacking the owner entity unless they have the "minecraft:ignore_cannot_be_attacked" component.
 
+> [!Note]
+> This item requires a format version of at least 1.21.50.
+
 
 ## Ignore Cannot Be Attacked Properties
 

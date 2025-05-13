@@ -5,22 +5,6 @@
     "title": "Dimension Misc",
     "fields": [
       {
-        "id": "description",
-        "title": "Description",
-        "dataType": 16,
-        "subForm": {
-          "id": "Description",
-          "title": "Description",
-          "fields": [
-            {
-              "id": "identifier",
-              "title": "Identifier",
-              "dataType": 2
-            }
-          ]
-        }
-      },
-      {
         "id": "components",
         "title": "Components",
         "dataType": 16,
@@ -37,8 +21,8 @@
                 "title": "Bounds",
                 "fields": [
                   {
-                    "id": "min",
-                    "title": "Min",
+                    "id": "max",
+                    "title": "Max",
                     "dataType": 0,
                     "validity": [
                       {
@@ -52,8 +36,8 @@
                     ]
                   },
                   {
-                    "id": "max",
-                    "title": "Max",
+                    "id": "min",
+                    "title": "Min",
                     "dataType": 0,
                     "validity": [
                       {
@@ -84,6 +68,22 @@
                   }
                 ]
               }
+            }
+          ]
+        }
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "dataType": 16,
+        "subForm": {
+          "id": "Description",
+          "title": "Description",
+          "fields": [
+            {
+              "id": "identifier",
+              "title": "Identifier",
+              "dataType": 2
             }
           ]
         }

@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # Entity Documentation - minecraft:leashable_to
 
-Allows players to leash entities to this entity, retrieve those already leashed to it, or free them using shears.
+Allows players to leash entities to this entity, retrieve entities already leashed to it, or free them using shears. For the last interaction to work, the leashed entities must have "can_be_cut" set to true in their "minecraft:leashable" component.
 
 
 ## Leashable To Properties

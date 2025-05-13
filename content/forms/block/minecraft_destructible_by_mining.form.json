@@ -1,4 +1,5 @@
 {
+  "versionIntroduced": "1.21.50",
   "fields": [
     {
       "id": "item_specific_speeds",

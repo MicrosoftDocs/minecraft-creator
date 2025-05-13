@@ -22,6 +22,7 @@ Type: [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 - [deactivateBrushTool](#deactivatebrushtool)
 - [endPainting](#endpainting)
 - [getBrushShapeOffset](#getbrushshapeoffset)
+- [isBrushPaintBusy](#isbrushpaintbusy)
 - [setBrushMask](#setbrushmask)
 - [setBrushShape](#setbrushshape)
 - [setBrushShapeOffset](#setbrushshapeoffset)
@@ -78,6 +79,16 @@ getBrushShapeOffset(): minecraftserver.Vector3
 `
 
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **isBrushPaintBusy**
+`
+isBrushPaintBusy(): boolean
+`
+
+**Returns** *boolean*
   
 Notes:
 - This function can't be called in read-only mode.

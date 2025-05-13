@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Places a single block in the world. The places_block field supports a single block or a list of weighted blocks, where the weight defines how likely it is for that block to be selected. The may_attach_to and may_replace fields are allowlists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The may_not_attach_to field is a denylist that specifies what blocks can't be close to the placement location. The randomize_rotation field will randomize the block's cardinal orientation. The block's internal survivability and placement rules can optionally be enforced with the enforce_survivability_rules and enforce_placement_rules fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures. Succeeds if the block is successfully placed in the world. Fails if the block fails to be placed. Example use: Placing a single pumpkin or carved pumpkin block where carved pumpkins are less likely to appear.
 
+> [!Note]
+> This item requires a format version of at least 1.21.40.
+
 
 ## Single Block Feature Properties
 

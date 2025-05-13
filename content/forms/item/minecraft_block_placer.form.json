@@ -1,7 +1,8 @@
 {
   "fields": [],
   "description": "Sets the item as a planter item component for blocks. Items with this component will place a block when used.",
-  "note": "[EXPERIMENTAL] This component can also be used instead of the minecraft:icon component to render the block this item will place as the icon (Requires the 'Upcoming Creator Features' toggle).",
+  "note": "This component can also be used instead of the minecraft:icon component to render the block this item will place as the icon.",
+  "versionIntroduced": "1.21.50",
   "samples": {
     "sample": [
       {
@@ -102,6 +103,12 @@
         }
       },
       {
+        "id": "replace_block_item",
+        "title": "Replace Block Item",
+        "description": "If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid.",
+        "dataType": 1
+      },
+      {
         "id": "use_on",
         "title": "Use On",
         "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
@@ -113,11 +120,6 @@
             {
               "id": "name",
               "title": "Name",
-              "dataType": 2
-            },
-            {
-              "id": "tags",
-              "title": "Tags",
               "dataType": 2
             },
             {
@@ -134,6 +136,11 @@
                   "dataType": 1
                 }
               ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2
             }
           ]
         },
@@ -165,12 +172,6 @@
             }
           ]
         }
-      },
-      {
-        "id": "replace_block_item",
-        "title": "Replace Block Item",
-        "description": "If true, the item will be registered as the item for this block. This item will be returned by default when the block is broken/picked. Note: the identifier for this item must match the block's identifier for this field to be valid.",
-        "dataType": 1
       }
     ],
     "samples": {

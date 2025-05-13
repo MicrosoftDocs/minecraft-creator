@@ -9,14 +9,17 @@
       "choices": [
         {
           "id": "yes",
+          "versionIntroduced": "1.21.40",
           "description": "Received damage is applied to the entity."
         },
         {
           "id": "no",
+          "versionIntroduced": "1.21.40",
           "description": "Received damage is not applied to the entity."
         },
         {
           "id": "no_but_side_effects_apply",
+          "versionIntroduced": "1.21.40",
           "description": "Received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on."
         }
       ],

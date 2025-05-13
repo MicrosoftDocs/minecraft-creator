@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 enables custom items to be dyed in cauldrons. To use the dyeable component, the format version on the item and the attachable needs to have a format_version of 1.21.30 or greater.
 
+> [!Note]
+> This item requires a format version of at least 1.21.30.
+
 
 ## Dyeable Properties
 

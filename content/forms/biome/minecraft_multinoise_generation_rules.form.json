@@ -42,15 +42,9 @@
     "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.",
     "fields": [
       {
-        "id": "target_weirdness",
-        "title": "Target Weirdness",
-        "description": "Weirdness with which this biome should be generated, relative to other biomes.",
-        "dataType": 3
-      },
-      {
-        "id": "target_temperature",
-        "title": "Target Temperature",
-        "description": "Temperature with which this biome should be generated, relative to other biomes.",
+        "id": "target_altitude",
+        "title": "Target Altitude",
+        "description": "Altitude with which this biome should be generated, relative to other biomes.",
         "dataType": 3
       },
       {
@@ -60,9 +54,15 @@
         "dataType": 3
       },
       {
-        "id": "target_altitude",
-        "title": "Target Altitude",
-        "description": "Altitude with which this biome should be generated, relative to other biomes.",
+        "id": "target_temperature",
+        "title": "Target Temperature",
+        "description": "Temperature with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "target_weirdness",
+        "title": "Target Weirdness",
+        "description": "Weirdness with which this biome should be generated, relative to other biomes.",
         "dataType": 3
       },
       {

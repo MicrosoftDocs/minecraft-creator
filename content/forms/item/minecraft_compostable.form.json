@@ -1,5 +1,6 @@
 {
   "fields": [],
+  "versionIntroduced": "1.21.60",
   "generated_doNotEdit": {
     "title": "Compostable",
     "description": "Specifies that an item is compostable and provides the chance of creating a composting layer in the composter",

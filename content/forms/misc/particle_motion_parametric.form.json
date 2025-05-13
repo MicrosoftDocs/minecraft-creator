@@ -5,40 +5,6 @@
     "title": "Particle Motion Parametric Misc",
     "fields": [
       {
-        "id": "relative_position",
-        "title": "Relative Position",
-        "dataType": 24,
-        "minLength": 3,
-        "maxLength": 3,
-        "alternates": [
-          {
-            "id": "relative_position",
-            "dataType": 14,
-            "readOnly": true,
-            "subForm": {
-              "id": "relative_position",
-              "title": "Relative Position",
-              "fields": [
-                {
-                  "id": "expression",
-                  "title": "Expression",
-                  "dataType": 2
-                },
-                {
-                  "id": "version",
-                  "title": "Version",
-                  "dataType": 0
-                }
-              ]
-            }
-          },
-          {
-            "id": "relative_position",
-            "dataType": 3
-          }
-        ]
-      },
-      {
         "id": "direction",
         "title": "Direction",
         "dataType": 24,
@@ -68,6 +34,40 @@
           },
           {
             "id": "direction",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "relative_position",
+        "title": "Relative Position",
+        "dataType": 24,
+        "minLength": 3,
+        "maxLength": 3,
+        "alternates": [
+          {
+            "id": "relative_position",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "relative_position",
+              "title": "Relative Position",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
+          {
+            "id": "relative_position",
             "dataType": 3
           }
         ]

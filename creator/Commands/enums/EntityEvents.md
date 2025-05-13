@@ -415,6 +415,7 @@ Entity trusts
 - `minecraft:on_unleash`
 Entity is unleashed
 - `minecraft:on_unleashed`
+- `minecraft:on_unsaddled`
 - `minecraft:panda_aggressive`
 Panda is in an aggressive state
 - `minecraft:panda_brown`

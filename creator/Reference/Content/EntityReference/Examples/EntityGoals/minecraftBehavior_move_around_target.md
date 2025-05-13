@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Allows an entity to move around a target. If the entity is too close (i.e. closer than destination range min and height difference limit) it will try to move away from its target. If the entity is too far away from its target it will try to move closer to a random position within the destination range. A randomized amount of those positions will be behind the target, and the spread can be tweaked with 'destination_pos_spread_degrees'.
 
+> [!Note]
+> This item requires a format version of at least 1.21.30.
+
 
 ## Move Around Target Behavior Properties
 

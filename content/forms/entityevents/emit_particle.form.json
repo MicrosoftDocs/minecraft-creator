@@ -8,6 +8,7 @@
   ],
   "description": "Emits a particle specified via the particle attribute.",
   "id": "emit_particle",
+  "versionIntroduced": "1.21.50",
   "title": "Emit Particle",
   "samples": {
     "samples": [

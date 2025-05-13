@@ -117,4 +117,4 @@ Note that you can only switch to a control scheme that's allowed in the current 
 
 ## Control scheme inheritance
 
-A custom camera preset inherits the allowed control schemes of the built-in camera preset it descends from. It will use the default control scheme of its parent camera if its own `control_scheme` is not defined, or if the defined scheme is not supported by the parent camera.
+A custom camera preset inherits the allowed control schemes of the built-in camera preset it descends from. It will use the default control scheme of its parent camera if its own `control_scheme` is not defined, or if the defined scheme is not supported by the camera.

@@ -115,7 +115,7 @@ ms.date: 02/11/2025
 | [minecraft:knockback_resistance](EntityComponents/minecraftComponent_knockback_resistance.md)| Compels an entity to resist being knocked backwards by a melee attack. |
 | [minecraft:lava_movement](EntityComponents/minecraftComponent_lava_movement.md)| Allows a custom movement speed across lava blocks. |
 | [minecraft:leashable](EntityComponents/minecraftComponent_leashable.md)| Describes how this mob can be leashed to other items |
-| [minecraft:leashable_to](EntityComponents/minecraftComponent_leashable_to.md)| Allows players to leash entities to this entity, retrieve those already leashed to it, or free them using shears. |
+| [minecraft:leashable_to](EntityComponents/minecraftComponent_leashable_to.md)| Allows players to leash entities to this entity, retrieve entities already leashed to it, or free them using shears. |
 | [minecraft:looked_at](EntityComponents/minecraftComponent_looked_at.md)| Defines the behavior when another entity looks at the owner entity. |
 | [minecraft:loot](EntityComponents/minecraftComponent_loot.md)| Sets the loot table for what items this entity drops upon death. |
 | [minecraft:managed_wandering_trader](EntityComponents/minecraftComponent_managed_wandering_trader.md)| Manages the entity's ability to trade. |

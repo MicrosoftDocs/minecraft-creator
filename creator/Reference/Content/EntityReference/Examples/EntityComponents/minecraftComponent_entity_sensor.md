@@ -18,7 +18,7 @@ A component that owns multiple subsensors, each one firing an event when a set o
 |:----------|:-------------|:----|:-----------|:------------- |
 | find_players_only | false | Boolean true/false | Limits the search to Players only for all subsensors. | Happy Ghast: `true` | 
 | relative_range | true | Boolean true/false | If true the subsensors' range is additive on top of the entity's size. |  | 
-| subsensors | *not set* | Array of [Subsensors](#subsensors-item-type) items | The list of subsensors which sense for entities and emit events when all their conditions are met. | Armadillo: `[{"event":"minecraft:no_threat_detected","cooldown":0.2,"range":[7,2],"minimum_count":0,"maximum_count":0,"event_filters":{"any_of":[{"test":"is_family","subject":"other","value":"undead"},{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"any_of":[{"test":"was_last_hurt_by","subject":"other"},{"test":"is_sprinting","subject":"other"},{"test":"is_riding","subject":"other"}]}]}]}},{"event":"minecraft:threat_detected","cooldown":0.2,"range":[7,2],"minimum_count":1,"event_filters":{"any_of":[{"test":"is_family","subject":"other","value":"undead"},{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"any_of":[{"test":"was_last_hurt_by","subject":"other"},{"test":"is_sprinting","subject":"other"},{"test":"is_riding","subject":"other"}]}]}]}}]`, Happy Ghast: `[{"event":"minecraft:on_no_player_detected_above","cooldown":0,"y_offset":4.5,"range":[2,1.5],"minimum_count":0,"maximum_count":0,"event_filters":{"test":"is_riding","subject":"other","value":false}},{"event":"minecraft:on_player_detected_above","cooldown":0,"y_offset":4.5,"range":[2,1.5],"minimum_count":1,"event_filters":{"test":"is_riding","subject":"other","value":false}}]` | 
+| subsensors | *not set* | Array of [Subsensors](#subsensors-item-type) items | The list of subsensors which sense for entities and emit events when all their conditions are met. | Armadillo: `[{"event":"minecraft:no_threat_detected","cooldown":0.2,"range":[7,2],"minimum_count":0,"maximum_count":0,"event_filters":{"any_of":[{"test":"is_family","subject":"other","value":"undead"},{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"any_of":[{"test":"was_last_hurt_by","subject":"other"},{"test":"is_sprinting","subject":"other"},{"test":"is_riding","subject":"other"}]}]}]}},{"event":"minecraft:threat_detected","cooldown":0.2,"range":[7,2],"minimum_count":1,"event_filters":{"any_of":[{"test":"is_family","subject":"other","value":"undead"},{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"any_of":[{"test":"was_last_hurt_by","subject":"other"},{"test":"is_sprinting","subject":"other"},{"test":"is_riding","subject":"other"}]}]}]}}]`, Happy Ghast: `[{"event":"minecraft:on_no_player_detected_above","cooldown":0,"y_offset":5,"range":[3,1],"minimum_count":0,"maximum_count":0,"event_filters":{"test":"is_riding_self","subject":"other","value":false}},{"event":"minecraft:on_player_detected_above","cooldown":0,"y_offset":5,"range":[3,1],"minimum_count":1,"event_filters":{"test":"is_riding_self","subject":"other","value":false}},{"event":"minecraft:on_no_player_detected_above","cooldown":0,"y_offset":4.5,"range":[2,1.5],"minimum_count":0,"maximum_count":0,"event_filters":{"test":"is_riding_self","subject":"other","value":false}},{"event":"minecraft:on_player_detected_above","cooldown":0,"y_offset":4.5,"range":[2,1.5],"minimum_count":1,"event_filters":{"test":"is_riding_self","subject":"other","value":false}}]` | 
 
 ## Subsensors item type
 The list of subsensors which sense for entities and emit events when all their conditions are met.
@@ -147,6 +147,37 @@ The list of subsensors which sense for entities and emit events when all their c
     {
       "event": "minecraft:on_no_player_detected_above",
       "cooldown": 0,
+      "y_offset": 5,
+      "range": [
+        3,
+        1
+      ],
+      "minimum_count": 0,
+      "maximum_count": 0,
+      "event_filters": {
+        "test": "is_riding_self",
+        "subject": "other",
+        "value": false
+      }
+    },
+    {
+      "event": "minecraft:on_player_detected_above",
+      "cooldown": 0,
+      "y_offset": 5,
+      "range": [
+        3,
+        1
+      ],
+      "minimum_count": 1,
+      "event_filters": {
+        "test": "is_riding_self",
+        "subject": "other",
+        "value": false
+      }
+    },
+    {
+      "event": "minecraft:on_no_player_detected_above",
+      "cooldown": 0,
       "y_offset": 4.5,
       "range": [
         2,
@@ -155,7 +186,7 @@ The list of subsensors which sense for entities and emit events when all their c
       "minimum_count": 0,
       "maximum_count": 0,
       "event_filters": {
-        "test": "is_riding",
+        "test": "is_riding_self",
         "subject": "other",
         "value": false
       }
@@ -170,7 +201,7 @@ The list of subsensors which sense for entities and emit events when all their c
       ],
       "minimum_count": 1,
       "event_filters": {
-        "test": "is_riding",
+        "test": "is_riding_self",
         "subject": "other",
         "value": false
       }

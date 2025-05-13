@@ -6,19 +6,6 @@
     "description": "Represents the replacement information used to determine the placement of the overriding biome.",
     "fields": [
       {
-        "id": "dimension",
-        "title": "Dimension",
-        "description": "Dimension in which this replacement can happen. Must be 'minecraft:overworld'.",
-        "dataType": 2
-      },
-      {
-        "id": "targets",
-        "title": "Targets",
-        "description": "Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces.",
-        "dataType": 17,
-        "minLength": 1
-      },
-      {
         "id": "amount",
         "title": "Amount",
         "description": "Noise value used to determine whether or not the replacement is attempted, similar to a percentage. Must be in the range (0.0, 1.0].",
@@ -31,6 +18,12 @@
         ]
       },
       {
+        "id": "dimension",
+        "title": "Dimension",
+        "description": "Dimension in which this replacement can happen. Must be 'minecraft:overworld'.",
+        "dataType": 2
+      },
+      {
         "id": "noise_frequency_scale",
         "title": "Noise Frequency Scale",
         "description": "Scaling value used to alter the frequency of replacement attempts. A lower frequency will mean a bigger contiguous biome area that occurs less often. A higher frequency will mean smaller contiguous biome areas that occur more often. Must be in the range (0.0, 100.0].",
@@ -39,6 +32,19 @@
           {
             "comparison": "<=",
             "value": 100
+          }
+        ]
+      },
+      {
+        "id": "targets",
+        "title": "Targets",
+        "description": "Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces.",
+        "dataType": 24,
+        "minLength": 1,
+        "alternates": [
+          {
+            "id": "targets",
+            "dataType": 24
           }
         ]
       }

@@ -20,7 +20,7 @@ Tests for the presence of a named item in the designated slot of the subject ent
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Enderman: `"not"` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Enderman: `"other"` | 
 | test | *not set* | String |  | Enderman: `"has_equipment"` | 
-| value | *not set* | String | (Required) The item name to look for | Enderman: `"carved_pumpkin"`, Pig: `"saddle"` | 
+| value | *not set* | String | (Required) The item name to look for | Enderman: `"carved_pumpkin"`, Pig: `"saddle"`, `"shears"` | 
 
 ### Domain choices
 
@@ -92,6 +92,7 @@ At Short (using Defaults)..:
 
 #### [Pig](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/pig.json)
 
+At /minecraft:entity/component_groups/minecraft:pig_unsaddled/minecraft:interact/interactions/0/on_interact/filters/: 
 
 ```json
 {
@@ -99,5 +100,16 @@ At Short (using Defaults)..:
   "subject": "other",
   "domain": "hand",
   "value": "saddle"
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:pig_saddled/minecraft:interact/interactions/0/on_interact/filters/all_of/1/: 
+
+```json
+{
+  "test": "has_equipment",
+  "subject": "other",
+  "domain": "hand",
+  "value": "shears"
 }
 ```

@@ -39,6 +39,11 @@
               "dataType": 1
             },
             {
+              "id": "direction",
+              "title": "Facing",
+              "dataType": 2
+            },
+            {
               "id": "geometry_part",
               "title": "Geometry Part",
               "dataType": 16,
@@ -63,11 +68,6 @@
                   }
                 ]
               }
-            },
-            {
-              "id": "direction",
-              "title": "Facing",
-              "dataType": 2
             }
           ]
         }

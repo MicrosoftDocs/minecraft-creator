@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Specifies that an item is compostable and provides the chance of creating a composting layer in the composter.
 
+> [!Note]
+> This item requires a format version of at least 1.21.60.
+
 
 ## Compostable Properties
 

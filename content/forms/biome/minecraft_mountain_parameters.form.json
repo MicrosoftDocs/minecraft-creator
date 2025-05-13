@@ -57,11 +57,21 @@
           "description": "Defines surface material for steep slopes",
           "fields": [
             {
+              "id": "east_slopes",
+              "title": "East Slopes",
+              "description": "Enable for east-facing slopes",
+              "dataType": 1
+            },
+            {
               "id": "material",
               "title": "Material",
               "description": "Block type use as steep material",
-              "dataType": 2,
+              "dataType": 24,
               "alternates": [
+                {
+                  "id": "material",
+                  "dataType": 24
+                },
                 {
                   "id": "material",
                   "dataType": 16,
@@ -74,7 +84,7 @@
                         "id": "name",
                         "title": "Name",
                         "description": "Name of the block",
-                        "dataType": 2
+                        "dataType": 16
                       },
                       {
                         "id": "states",
@@ -96,12 +106,6 @@
                   }
                 }
               ]
-            },
-            {
-              "id": "east_slopes",
-              "title": "East Slopes",
-              "description": "Enable for east-facing slopes",
-              "dataType": 1
             },
             {
               "id": "north_slopes",
