@@ -21,7 +21,12 @@ You start in the Overworld by default. Go here to change to the Nether or the En
 
 ## Test World
 
-This opens the Test World panel, which allows you to enter your Editor project as a playable Minecraft world. You can choose the **Game Mode** and **Difficulty** settings and, in the **Advanced Settings**, you can set the **Daylight Settings**, **Time of Day**, **Weather** settings, and use the **Show Coordinates** setting if you want to display your current position while you are playing. While you are playing, you can press the **Esc** button and click **Return to Editor** to go back to end your test and resume editing your project. No changes will be saved to your project. Available only when hosting a single player world.
+Opens the Test World panel, where you can test your Editor project as a playable Minecraft world. You can set the game mode and difficulty settings and use the **Advanced Settings** to set things like **Daylight Settings**, **Time of Day**, and **Weather**. **Show Coordinates** lets you display your current position.
+
+While you are playing, you can press **Esc** and click **Return to Editor** at any time to end your test and resume editing your project. No changes you make while testing will be saved to your project.
+
+> [!Note]
+> Available only when hosting a single player world.
 
  ![Editor selection tool window](Media/editor_test_settings.png)
 
@@ -58,19 +63,20 @@ This opens the Test World panel, which allows you to enter your Editor project a
 
 ## Time of Day Settings
 
-This option opens the **Time Settings** panel. In this panel, you can set the **Clock Type** (24hr, 12hr, or Minecraft Clock) and whether the **Daylight Cycle** will be locked in the current position, always daytime, or proceed as normal. You can also set the time of day to a number of **Presets** or use the slider to set a custom time.
+Opens **Time Settings**, where you can set the **Clock Type** (24hr, 12hr, or Minecraft Clock) and choose whether the Daylight Cycle will be locked in the current position, always daytime, or proceed normally. You can also set the time of day to one of the available presets or use the slider to set a custom time.
 
 
 ## Navigation Panel
 
-Go here to open the **Navigation Panel**. At the top is a toggle to show a birds-eye view mini-map which will teleport you to that coordinate on click. In the **Stored Locations** section, you can add markers to locations in your world and they will show up as colored flags within your mini-map.
+Contains a toggle that shows a birds-eye view mini-map you can use to teleport to the coordinates you click. You can add markers to locations in your world and they will show up as colored flags within your mini-map in **Stored Locations**.
+
 
 ## Weather
 
-This option lets you instantly change the weather in your project to **Clear**, **Rain**, or **Thunder**.
+This option lets you instantly change the weather in your project to Clear, Rain, or Thunder.
 
 
-# Practice: Test a world
+## Practice: Test a world
 
 1. After selecting the options you want, click the Test World button.
 
