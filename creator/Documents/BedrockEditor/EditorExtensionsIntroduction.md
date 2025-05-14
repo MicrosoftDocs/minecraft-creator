@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Getting Started with Minecraft Bedrock Editor Extensions
 description: "How to get started creating Editor Extensions"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/14/2025
 ---
 
 # Getting Started with Editor Extensions
