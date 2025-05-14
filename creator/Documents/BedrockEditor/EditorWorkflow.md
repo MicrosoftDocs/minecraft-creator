@@ -25,7 +25,7 @@ Here are the steps to create a project, make a quick edit, export the file, and 
 
 7. You will receive messages confirming that the export started and when it has finished, and a temporary chat message will display the path to **projectbackups** in your **com.mojang** folder.
 
-8. From **File**, select Game menu (`CTRL+Q`) and choose **Save & Quit** to close the Editor.
+8. From **File**, select Game menu (`Ctrl+Q`) and choose **Save & Quit** to close the Editor.
 
 9. Go to **projectbackups** in your **com.mojang** folder. You should find a file with the name you gave it appended to the date, time, and a **.mcworld** extension.
 
