@@ -52,25 +52,25 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 | Delete Selection Contents | Delete | On |
-| Redo | CTRL + Y | - |
-| Toggle Mode | CTRL + TAB | - |
-| Undo | CTRL + Z | - |
+| Redo | Ctrl+Y | - |
+| Toggle Mode | Ctrl+Tab | - |
+| Undo | Ctrl+Z | - |
 
 
 ### Tool Mode
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Add Navigation Position | CTRL + K | - |
-| Copy Selection | CTRL + C | - |
-| Cut Selection | CTRL + X | - |
-| Deselect Selection | CTRL + D | - |
-| Fill Selection Contents | CTRL + F | - |
-| Go To Next Navigation Position | CTRL + BRACKET OPEN | - |
-| Go To Previous Navigation Position | CTRL + BRACKET OPEN | - |
-| Open Console | SLASH | On |
-| Paste Preview| CTRL + SHIFT + V | - |
-| Paste | CTRL + V | - |
+| Add Navigation Position | Ctrl+K | - |
+| Copy Selection | Ctrl+C | - |
+| Cut Selection | Ctrl+X | - |
+| Deselect Selection | Ctrl+D | - |
+| Fill Selection Contents | Ctrl+F | - |
+| Go To Next Navigation Position | Ctrl+] | - |
+| Go To Previous Navigation Position | Ctrl+[ | - |
+| Open Console | / | On |
+| Paste Preview| Ctrl+Shift+V | - |
+| Paste | Ctrl+V | - |
 | Select Hotbar 1 | 1 | On |
 | Select Hotbar 2 | 2 | On |
 | Select Hotbar 3 | 3 | On |
@@ -80,10 +80,10 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Select Hotbar 7 | 7 | On |
 | Select Hotbar 8 | 8 | On |
 | Select Hotbar 9 | 9 | On |
-| Show Game Menu | CTRL + Q | - |
-| Show Log Panel | CTRL + H | - |
-| Toggle Selection Tool | CTRL + S | - |
-| Toggle Summon Tool | CTRL + SHIFT + S | - |
+| Show Game Menu | Ctrl+Q | - |
+| Show Log Panel | Ctrl+H | - |
+| Toggle Selection Tool | Ctrl+S | - |
+| Toggle Summon Tool | Ctrl+Shift+S | - |
 
 
 ### Viewport
@@ -91,13 +91,13 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
 | Fly to Cursor | G | On |
-| Fly to Selection | CTRL + SHIFT + F | On |
-| Move Back | S or SHIFT + S | On |
+| Fly to Selection | Ctrl+Shift+F | On |
+| Move Back | S or Shift+S | On |
 | Move Up | E | On |
 | Move Down | Q | On |
-| Move Forward | W or SHIFT + W | On |
-| Move Left | A or SHIFT + A | On |
-| Move Right | D or SHIFT + D | On |
+| Move Forward | W or Shift+W | On |
+| Move Left | A or Shift+A | On |
+| Move Right | D or Shift+D | On |
 
 
 ## Modal Tools
@@ -106,68 +106,68 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Move Cursor Up | PAGE DOWN | On |
-| Move Cursor Down | PAGE DOWN | On |
-| Move Cursor Back | DOWN ARROW | On |
-| Move Cursor Forward | UP ARROW | On |
-| Move Cursor Left | LEFT ARROW | On |
-| Move Cursor Right | RIGHT ARROW | On |
-| Move Selection Up | ALT + PAGE UP | - |
-| Move Selection Down | ALT + PAGE DOWN | - |
-| Move Selection Back | ALT + DOWN ARROW | - |
-| Move Selection Forward | ALT + UP ARROW | - |
-| Move Selection Left | ALT + LEFT ARROW | - |
-| Move Selection Right | ALT + RIGHT ARROW | - |
-| Grow Selection Up | SHIFT + PAGE UP | - |
-| Grow Selection Down | SHIFT + PAGE DOWN | - |
-| Grow Selection Back | SHIFT + DOWN ARROW | - |
-| Grow Selection Forward | SHIFT + UP ARROW | - |
-| Grow Selection Left | SHIFT + LEFT ARROW | - |
-| Grow Selection Right | SHIFT + RIGHT ARROW | - |
-| Shrink Selection Up | CTRL + PAGE UP | - |
-| Shrink Selection Down | CTRL + PAGE DOWN | - |
-| Shrink Selection Back | CTRL + DOWN ARROW | - |
-| Shrink Selection Forward | CTRL + UP ARROW | - |
-| Shrink Selection Left | CTRL + LEFT ARROW | - |
-| Shrink Selection Right | CTRL + RIGHT ARROW | - |
+| Move Cursor Up | PgUp | On |
+| Move Cursor Down | PgDn | On |
+| Move Cursor Back | Down Arrow | On |
+| Move Cursor Forward | Up Arrow | On |
+| Move Cursor Left | Left Arrow | On |
+| Move Cursor Right | Right Arrow | On |
+| Move Selection Up | Alt+PgUp | - |
+| Move Selection Down | Alt+PgDn | - |
+| Move Selection Back | Alt+Down Arrow | - |
+| Move Selection Forward | Alt+Up Arrow | - |
+| Move Selection Left | Alt+Left Arrow | - |
+| Move Selection Right | Alt+Right Arrow | - |
+| Grow Selection Up | Shift+PgUp | - |
+| Grow Selection Down | Shift+PgDn | - |
+| Grow Selection Back | Shift+Down Arrow | - |
+| Grow Selection Forward | Shift+Up Arrow | - |
+| Grow Selection Left | Shift+Left Arrow | - |
+| Grow Selection Right | Shift+Right Arrow | - |
+| Shrink Selection Up | Ctrl+PgUp | - |
+| Shrink Selection Down | Ctrl+PgDn | - |
+| Shrink Selection Back | Ctrl+Down Arrow | - |
+| Shrink Selection Forward | Ctrl+Up Arrow | - |
+| Shrink Selection Left | Ctrl+Left Arrow | - |
+| Shrink Selection Right | Ctrl+Right Arrow | - |
 
 
 ### Brush Paint
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Brush Paint Tool | CTRL + B | - |
+| Brush Paint Tool | Ctrl+B | - |
 
 ### Paste Preview
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Clear Preview | CTRL + D | - |
+| Clear Preview | Ctrl+D | - |
 | Enable Fixed Distance | F | - |
 | Adjacent Target Mode | - | On |
 | Block Target Mode | B | On |
 | Mouse Tracking | C | On |
-| Move Offset Back | CTRL + SHIFT + DOWN ARROW | - |
-| Move Offset Down | CTRL + SHIFT + PAGE DOWN | - |
-| Move Offset Forward | CTRL + SHIFT + UP ARROW | - |
-| Move Offset Left | CTRL + SHIFT + LEFT ARROW | - |
-| Move Offset Right | CTRL + SHIFT + RIGHT ARROW | - |
-| Move Offset Up | CTRL + SHIFT + PAGE UP | - |
-| Move Origin Back | CTRL + SHIFT + DOWN ARROW | - |
-| Move Origin Down | CTRL + SHIFT + PAGE DOWN | - |
-| Move Origin Forward | CTRL + UP ARROW | - |
-| Move Origin Left | CTRL + LEFT ARROW | - |
-| Move Origin Right | CTRL + RIGHT ARROW | - |
-| Move Origin Up | CTRL + PAGE UP | - |
-| Move Preview Back | DOWN ARROW | On |
-| Move Preview Down | PAGE DOWN | On |
-| Move Preview Forward | UP ARROW | On |
-| Move Preview Left | LEFT ARROW | On |
-| Move Preview Right | RIGHT ARROW | On |
-| Move Preview Up | PAGE UP | On |
-| Paste at Cursor | CTRL + F | - |
+| Move Offset Back | Ctrl+Shift+Down Arrow | - |
+| Move Offset Down | Ctrl+Shift+PgDn | - |
+| Move Offset Forward | Ctrl+Shift+Up Arrow | - |
+| Move Offset Left | Ctrl+Shift+Left Arrow | - |
+| Move Offset Right | Ctrl+Shift+Right Arrow | - |
+| Move Offset Up | Ctrl+Shift+PgUp | - |
+| Move Origin Back | Ctrl+Shift+Down Arrow | - |
+| Move Origin Down | Ctrl+Shift+PgDn | - |
+| Move Origin Forward | Ctrl+Up Arrow | - |
+| Move Origin Left | Ctrl+Left Arrow | - |
+| Move Origin Right | Ctrl+Right Arrow | - |
+| Move Origin Up | Ctrl+PgUp | - |
+| Move Preview Back | Down Arrow | On |
+| Move Preview Down | PgDn | On |
+| Move Preview Forward | Up Arrow | On |
+| Move Preview Left | Left Arrow | On |
+| Move Preview Right | Right Arrow | On |
+| Move Preview Up | PgUp | On |
+| Paste at Cursor | Ctrl+F | - |
 | Rotate Preview Clockwise | R | On |
-| Rotate Preview Counter Clockwise | SHIFT + R | - |
+| Rotate Preview Counter Clockwise | Shift+R | - |
 | Toggle Mirror X | X | On |
 | Toggle Mirror Z | Z | On |
 
@@ -176,31 +176,32 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Line Tool | CTRL + L | - |
-| Fill Line | CTRL + F | - |
-| Convert to Selection | Alt + S | - |
-| Adjust Line Thickness | SHIFT + Up/Down/Left/Right| -|
-| Select All | Ctrl + A | - |
-| Deselect | CTRL + D | - |
-| Deselect All | CTRL + SHIFT + D | - |
-| Clear All | CTRL + BACKSPACE | - |
-| Clear selected | CTRL + SHIFT + BACKSPACE | - |
-| Delete Contents | SHIFT + DELETE | - |
-| Delete Contents and Deselect | DELETE | On |
+| Line Tool | Ctrl+L | - |
+| Fill Line | Ctrl+F | - |
+| Convert to Selection | Alt+S | - |
+| Adjust Line Thickness | Shift+Up/Down/Left/Right| -|
+| Select All | Ctrl+A | - |
+| Deselect | Ctrl+D | - |
+| Deselect All | Ctrl+Shift+D | - |
+| Clear All | Ctrl+BACKSPACE | - |
+| Clear selected | Ctrl+Shift+BACKSPACE | - |
+| Delete Contents | Shift+Delete | - |
+| Delete Contents and Deselect | Delete | On |
 | Delete Selected | Delete | - |
-| Move Selected Back | DOWN ARROW | On |
-| Move Selected Down | PAGE DOWN | On |
-| Move Selected Forward | UP ARROW | On |
-| Move Selected Left | LEFT ARROW | On |
-| Move Selected Right | RIGHT ARROW | On |
-| Move Selected Up | PAGE UP | On |
+| Move Selected Back | Down Arrow | On |
+| Move Selected Up | PgUp | On |
+| Move Selected Down | PgDn | On |
+| Move Selected Forward | Up Arrow | On |
+| Move Selected Left | Left Arrow | On |
+| Move Selected Right | Right Arrow | On |
+
 
 
 ### Terrain
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Terrain Tool | CTRL + T | - |
+| Terrain Tool | Ctrl+T | - |
 | Toggle Smooth/Roughen| R | - |
 
 
@@ -208,29 +209,29 @@ Input Maps fall into one of two main groups &mdash; Core Tools and Modal Tools.
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Flatten Tool | CTRL + SHIFT + H |  |
+| Flatten Tool | Ctrl+Shift+H |  |
 
 
 ### Extrude
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-|Extrude Tool| CTRL + SHIFT + E | - |
+|Extrude Tool| Ctrl+Shift+E | - |
 
 
 ### Summon Tool
 
 | Name | Shortcut | Exclusive |
 |:----|:----|:----|
-| Summon Tool | CTRL + SHIFT + S | - |
-| Clear Selection | CTRL + D | - |
-| Delete Entity | DELETE | On |
-| Move Selected Back | DOWN ARROW | On |
-| Move Selected Down | PAGE DOWN | On |
-| Move Selected Forward |UP ARROW  | On |
-| Move Selected Left | LEFT ARROW | On |
-| Move Selected Right | RIGHT ARROW | On |
-| Move Selected Up | PAGE UP | On |
+| Summon Tool | Ctrl+Shift+S | - |
+| Clear Selection | Ctrl+D | - |
+| Delete Entity | Delete | On |
+| Move Selected Back | Down Arrow | On |
+| Move Selected Down | PgDn | On |
+| Move Selected Forward |Up Arrow  | On |
+| Move Selected Left | Left Arrow | On |
+| Move Selected Right | Right Arrow | On |
+| Move Selected Up | PgUp | On |
 
 
 ## Legacy Mapping List
