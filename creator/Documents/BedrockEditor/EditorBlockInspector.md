@@ -1,6 +1,6 @@
 ---
-author: v-cwilkerson
-ms.author: cam-wilkerson
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Block Inspector
 description: "An overview of the Block Inspector in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition

@@ -1,6 +1,6 @@
 ---
-author: v-cwilkerson
-ms.author: cam-wilkerson
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Structures Panel
 description: "An overview of the Structures Panel part of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
