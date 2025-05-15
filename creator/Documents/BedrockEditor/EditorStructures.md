@@ -1,26 +1,37 @@
 ---
-author: v-kimjeff
-ms.author: mikeam
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Structures Panel
 description: "An overview of the Structures Panel part of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/15/2025
 ---
 
 # Structures
 
-[!NOTE]
-The Structures panel is not added to the Action Bar by default. Click the **+** button to add the Structures panel to the Action Bar.
+The Structures panel is designed to hold structures so you can move them to and from the clipboard. This helps you rapidly build complex scenes by stamping prebuilt structures instead of relying on copy/paste or rebuilding them each from scratch.
 
-The Structures panel is the hub for keeping structures that you will be able to move back-and-forth from the clipboard. This means you can quickly build complex scenes by stamping prebuilt structures instead of relying on copy/paste or rebuilding them one-by-one. The Structures Panel is synchronized so if you'll be able to see and use structures that are saved by other players in your world. You can add a shortcut to the Structures Panel via the action bar.
+The Structures Panel is routinely synchronized, so you'll also be able to see and use the structures that other players save in your world.
 
-## Save a Structure
+> [!NOTE]
+> The Structures panel is not added to the Action Bar by default. Click the **+** button to add the Structures panel to the Action Bar.
 
-1. Select an area in the world.
-1. Press `Ctrl C` to copy it to your clipboard.
-1. In the Structures panel, name your structure and click **New from Clipboard**.
 
-## Use a Structure
+## Saving a structure
 
-1. In the Structures panel, check the box next to the structure you want to use.
-1. Click **Copy to Clipboard**.
-1. Press `Ctrl Shift V` to begin Paste Preview.
+1. Select the area or structure in the world you want to save.
+
+2. Press **Ctrl+C** to copy the selection to your clipboard.
+
+3. From Structures, name your structure and click **New from Clipboard**.
+
+
+## Deploying a structure
+
+1. From Structures, check the box next to the structure you want to use.
+
+2. Click **Copy to Clipboard**.
+
+3. Press **Ctrl+Shift+V** to begin Paste Preview.
+
+4. Right-click to place the structure.
