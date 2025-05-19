@@ -4,6 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Repeater Tool
 description: "An overview of the Repeater Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/19/2025
 ---
 
 # Repeater Tool
