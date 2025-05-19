@@ -1,16 +1,18 @@
 ---
-author: iconicNurdle
-ms.author: mikeam
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Brush Tool
 description: "An overview of the Brush Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/16/2025
 ---
 
-# Editor Brush Tool
+# Brush Tool
 
-The brush tool is used to draw shapes with a selected Block Type.
+The Brush is used to draw shapes with a selected block type.
 
-`Ctrl B` opens the brush tool window.
+> [!Tip]
+> Pressing **Ctrl+B** switches to the Brush.
 
 You can change the brush size, ranging from 1 to 16. Brush sizes are rendered as squares of the selected brush size. This means a brush size of 1 draws a 1x1 block shape. If you select a brush size of 3, you get a 3x3 block shape, or 9 total blocks arranged as a cube.
 

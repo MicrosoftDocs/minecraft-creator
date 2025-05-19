@@ -1,20 +1,22 @@
 ---
-author: iconicNurdle
-ms.author: mikeam
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Selection Tool
 description: "An overview of the Selection Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/16/2025
 ---
 
-# Editor Selection Tool
+# Selection Tool
 
-`Ctrl S` opens the Selection tool window.
+Use Selection to select any of the blocks in the world, including air.
+
+> [!Tip]
+> Pressing **Ctrl+S** also switches to the Selection tool.
 
 ![Editor selection tool window](Media/editor_overview_selection_tool_window.png)
 
-The selection tool is used to select any of the blocks in the world, including air.
-
-The Selection window that you use to configure the selection tool has sections where you can change the selection mode, transform the selection, fill the selection with blocks, or deselect your selection.
+The Selection window gives you the option to change the selection mode, Transform the selection, Fill the selection with blocks, or Deselect your selection.
 
 ### Freeform Selection Mode
 
