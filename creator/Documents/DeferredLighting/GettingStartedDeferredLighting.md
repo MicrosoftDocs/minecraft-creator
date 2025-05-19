@@ -5,6 +5,7 @@ title: Getting Started with Deferred Lighting
 ms.topic: tutorial
 description: "An Introduction to Deferred Lighting in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/13/2025
 ---
 
 # Getting Started with Deferred Lighting
@@ -25,6 +26,6 @@ All newly added lighting capabilities are opt-in, and appropriate defaults will 
 > [!NOTE]
 > New capabilities are **NOT** backwards-compatible with the RTX pipeline.
 
-## Opting Into the Deferred Lighting Pipeline
+## Opting into the deferred lighting pipeline
 
 To opt into the Deferred Lighting Pipeline, you will need to provide a PBR-enabled resource pack and join a world with the "Render Dragon Features for Creators" Experiment enabled. Resource packs built for RTX should work with the new pipeline, but you will likely want to add some JSON files to make full use of the pipeline, as explained in the following sections.

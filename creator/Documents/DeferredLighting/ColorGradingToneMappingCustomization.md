@@ -5,13 +5,14 @@ title: Color Grading and Tone Mapping Customization
 ms.topic: tutorial
 description: "Color Grading and Tone Mapping Customization section of Deferred Lighting in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/14/2025
 ---
 
 # Color Grading and Tone Mapping Customization
 
 New data-driving capabilities for Color Grading and Tone Mapping are available in Minecraft Bedrock Previews. These new tools allow resource packs to convey unique moods and themes through industry standard color correction controls.
 
-### Color Grading
+## Color grading
 
 Minecraft's color grading system allows for many degrees of customization of the final image. You can control the saturation, contrast, gain, and offset of pixels per RGB channel. This can be done on a global scale regardless of pixel luminance, or it can be done on a more fine-grained scale with unique sets of parameters for shadows, midtones and highlights. The highlight parameters are applied to the brightest pixels, the shadow parameters applied to the darkest pixels, and the midtone parameters applied to the pixels with luminance close to the average luminance of the scene.
 
@@ -33,7 +34,7 @@ For convenience, when data-driving, midtones will be applied to all pixels unles
 
 - **Highlight Min** - A factor multiplied by the average luminance of the scene to determine which pixels are considered highlights. Pixels with luminance greater than `HighlightMin * AverageLuminance` will have the highlights set of color grading values applied. A value of `1.0` indicates highlights occupy the entire range of values including and above the average luminance. Higher values will cause the minimum required luminance value for a pixel to be considered a highlight to rise. This value should not be equal to Shadow Max.
 
-### Tone Mapping
+## Tone mapping
 
 Tone mapping determines how a color is remapped from HDR-space to SDR-space for display on modern televisions and monitors. For tone mapping, you can choose from the following operators:
 
@@ -45,15 +46,15 @@ Tone mapping determines how a color is remapped from HDR-space to SDR-space for 
 | Hable | A filmic tone mapping operator meant to emulate the behaviors of real-life film, developed and shared by John Hable at a GDC talk from 2010 titled "Uncharted 2: HDR Lighting". [[1](#ref_hable)] |
 | Academy Color Encoding System (ACES) | A filmic tone mapping operator meant to emulate the behaviors of real-life film, specifically following the ACES standard used in television and film. [[2](#ref_hill)] |
 
-### Filmic tone mapping operators
+## Filmic tone mapping operators
 
 Because filmic tone mapping operators are designed to emulate real-life film, they tend to look best when remapping HDR scene values that were themselves produced from other real-life, physically accurate values, such as the intensity of the sun or the strength of Rayleigh scattering in the atmosphere.
 
 For instance, the relative difference in luminous power between a torch and an Earth-based sun is orders of magnitudes different at noon. Filmic operators are designed to preserve subtle differences in extremely dark and extremely bright areas (like low luminance and high luminance) for this reason, but they come at a higher performance cost compared to the non-filmic variants. There is currently no way for creators to alter the properties of the filmic curves.
 
-### Schema
+## Schema
 
-Color grading configurations are JSON files located in the "color_grading" directory in a resource pack. They must have the filename "color_grading.json", and adhere to the following format:
+Color grading configurations are JSON files located in the **color_grading** directory in a resource pack. They must have the filename **color_grading.json**, and adhere to the following format:
 
 ```json
 {
@@ -105,7 +106,7 @@ Color grading configurations are JSON files located in the "color_grading" direc
 
 The following example JSON can be used as a starting point. You can also download a sample at [https://github.com/microsoft/minecraft-samples/tree/main/deferred_lighting_starter](https://github.com/microsoft/minecraft-samples/tree/main/deferred_lighting_starter).
 
-**color_grading/color_grading.json**
+## Example color_grading/color_grading.json
 
 ```json
 {
@@ -131,6 +132,7 @@ The following example JSON can be used as a starting point. You can also downloa
 ```
 
 ## References
+
 <a name="ref_hable"></a>[1] Hable, John. 2010. Uncharted 2: HDR Lighting. GDC 2010. Naughty Dog. https://www.gdcvault.com/play/1012351/Uncharted-2-HDR
 
 <a name="ref_hill"></a>[2] Hill, Stephen & Narkowicz, Krzysztof & MJP. https://github.com/ampas/aces-dev & https://knarkowicz.wordpress.com/2016/01/06/aces-filmic-tone-mapping-curve/ & https://github.com/TheRealMJP/BakingLab
