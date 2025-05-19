@@ -1,9 +1,10 @@
 ---
 author: mammerla
-ms.author: v-jillheaden
+ms.author: v-wamartin
 title: Fog in Resource Packs
 description: "A guide detailing the way in which fogs are established in resource packs"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/19/2025
 ---
 
 # Fog in Resource Packs
@@ -19,11 +20,9 @@ In this tutorial you will learn the following:
 > - What a fog file looks like and what options are available for customization.
 > - The order that fog is applied based on various features, including biome definitions and the `/fog` command.
 
-### Requirements
+## Requirements
 
-It's recommended that the following be completed before beginning this tutorial.
-
-- [Introduction to Resource Packs](ResourcePack.md)
+It's recommended you complete [Introduction to Resource Packs](ResourcePack.md) before beginning this tutorial.
 
 ## JSON
 
@@ -242,6 +241,38 @@ In each coefficient setting type, you can set the following variables:
 
 - `scattering`: how much of the RGB of the light the fog will spread. Either can be set as an array of 3 multipliers from [0.0, 1.0] or as a Hex color value.
 - `absorption`: how much of the RGB of the light the fog will absorb. Either can be set as an array of 3 multipliers from [0.0, 1.0] or as a Hex color value.
+
+### Henyey-Greenstein G
+
+Available in format_version `1.21.90` and above, and only applicable in Vibrant Visuals resource packs.
+
+Held within the `volumetric` object.
+
+Each field within this object defines one type of _g_ value. These are used to determine the distribution of scattered light in different mediums.
+
+You can set the following types by name:
+
+- `air`: used when light is passing through air.
+- `water`: used when light is passing through water.
+
+You can have one of each type as needed, though they are all optional.
+
+```json
+    "volumetric": {
+      "henyey_greenstein_g": {
+        "air": {
+          "henyey_greenstein_g": 0.75
+        },
+        "water": {
+          "henyey_greenstein_g": 0.6
+        }
+      }
+    }
+```
+
+In each medium setting type, you can set the following variable:
+
+- `henyey_greenstein_g`: Controls the distribution of scattered light. Values can range from `[-1.0, 1.0]`. Positive values will result in forward-scattering, while negative values will result in back-scattering. The default value for air is `0.75`, while the default for water is `0.6`.
 
 ## Active Fog Stack
 

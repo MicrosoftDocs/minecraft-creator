@@ -34,6 +34,12 @@ For convenience, when data-driving, midtones will be applied to all pixels unles
 
 - **Highlight Min** - A factor multiplied by the average luminance of the scene to determine which pixels are considered highlights. Pixels with luminance greater than `HighlightMin * AverageLuminance` will have the highlights set of color grading values applied. A value of `1.0` indicates highlights occupy the entire range of values including and above the average luminance. Higher values will cause the minimum required luminance value for a pixel to be considered a highlight to rise. This value should not be equal to Shadow Max.
 
+## Temperature grading
+
+Temperature-based color grading, added in version 1.21.90, allows you to globally adjust how "warm" or "cool" the scene is. Warmer temperatures will cause the scene to become more yellow/orange, while cooler temperatures will make the scene more blue.
+- **Temperature** - The overall image temperature measured in Kelvin. The default value is `6500.0`, since our system is calibrated with the CIE standard illuminant D65.
+- **Type** - For artistic preference, the temperature scale can be inverted using the `type` field. A value of `"color_temperature"` will cause higher `temperature` values to result in a warmer image, while lower `temperature` values will result in a cooler image. A value of `"white_balance"` will behave in the inverse, i.e., higher `temperature` values will correspond to a cooler image, while lower `temperature` values will result in a warmer image. The default, if not provided, is `"white_balance"`.
+
 ## Tone mapping
 
 Tone mapping determines how a color is remapped from HDR-space to SDR-space for display on modern televisions and monitors. For tone mapping, you can choose from the following operators:
@@ -45,6 +51,7 @@ Tone mapping determines how a color is remapped from HDR-space to SDR-space for 
 | Reinhard Luminance | A version of the extended Reinhard operator [[3](#ref_reinhard), eq. 4] modified to adjust the luminance of the input colors. It comes at a slightly higher cost, but it preserves colors in high luminance regions of an image that would otherwise be washed out by the standard Reinhard operator. |
 | Hable | A filmic tone mapping operator meant to emulate the behaviors of real-life film, developed and shared by John Hable at a GDC talk from 2010 titled "Uncharted 2: HDR Lighting". [[1](#ref_hable)] |
 | Academy Color Encoding System (ACES) | A filmic tone mapping operator meant to emulate the behaviors of real-life film, specifically following the ACES standard used in television and film. [[2](#ref_hill)] |
+| Generic | A generic tone mapping curve that has been hand-tuned by Mojang's artists. It is similar to the other filmic operators but preserves a bit more hue saturation at high luminance regions. |
 
 ## Filmic tone mapping operators
 
@@ -54,7 +61,12 @@ For instance, the relative difference in luminous power between a torch and an E
 
 ## Schema
 
-Color grading configurations are JSON files located in the **color_grading** directory in a resource pack. They must have the filename **color_grading.json**, and adhere to the following format:
+Color grading configurations are JSON files located in the **color_grading** directory in a resource pack. They must adhere to one of the following formats:
+
+Schema Version|Updates
+--|--
+`1.21.90`|Added support for temperature grading
+`1.21.40`|N/A
 
 ```json
 {
@@ -74,7 +86,7 @@ Color grading configurations are JSON files located in the **color_grading** dir
         float[3] "gamma" <0.0-4.0> : opt
         float[3] "offset" <-1.0-1.0> : opt
         float[3] "saturation" <0.0-10.0> : opt
-      }
+      },
       object "highlights" : opt // Optional color grading parameters for highlights.
       {
         bool "enabled" <true | false>
@@ -84,7 +96,7 @@ Color grading configurations are JSON files located in the **color_grading** dir
         float[3] "gamma" <0.0-4.0> : opt
         float[3] "offset" <-1.0-1.0> : opt
         float[3] "saturation" <0.0-10.0> : opt
-      }
+      },
       object "shadows" : opt // Optional color grading parameters for shadows.
       {
         bool "enabled" <true | false>
@@ -94,11 +106,17 @@ Color grading configurations are JSON files located in the **color_grading** dir
         float[3] "gamma" <0.0-4.0> : opt
         float[3] "offset" <-1.0-1.0> : opt
         float[3] "saturation" <0.0-10.0> : opt
+      },
+      object "temperature": opt // Optional parameters for temperature based color grading.
+      {
+        bool "enabled" <true | false>
+        float "temperature" <1000.0-15000.0> : opt
+        string "type" <"white_balance" | "color_temperature"> : opt
       }
-    }
+    },
     object "tone_mapping" : opt
     {
-      string "operator" <"reinhard"|"reinhard_luma"|"reinhard_luminance"|"hable"|"aces">
+      string "operator" <"reinhard"|"reinhard_luma"|"reinhard_luminance"|"hable"|"aces"|"generic">
     }
   }
 }
@@ -126,6 +144,34 @@ The following example JSON can be used as a starting point. You can also downloa
     },
     "tone_mapping": {
       "operator": "reinhard_luminance"
+    }
+  }
+}
+```
+
+```json
+{
+  "format_version": "1.21.90",
+  "minecraft:color_grading_settings": {
+    "description": {
+      "identifier": "my_pack:default_color_grading"
+    },
+    "color_grading": {
+      "midtones": {
+        "contrast": [1.3, 1.3, 1.3],
+        "gain": [1.0, 1.0, 1.0],
+        "gamma": [2.2, 2.2, 2.2],
+        "offset": [0.0, 0.0, 0.0],
+        "saturation": [1.05, 1.05, 1.05]
+      },
+      "temperature": {
+        "enabled": true,
+        "temperature": 6500,
+        "type": "color_temperature"
+      }
+    },
+    "tone_mapping": {
+      "operator": "generic"
     }
   }
 }
