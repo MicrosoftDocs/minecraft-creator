@@ -1,5 +1,10 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "within_radius_event",
+      "dataType": 39
+    }
+  ],
   "requires": [
     {
       "id": "targeting_entity_component",

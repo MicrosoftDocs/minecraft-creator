@@ -770,6 +770,12 @@
           "path": "/minecraft:entity/components/minecraft:nameable/",
           "content": {}
         }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:nameable/",
+          "content": {}
+        }
       ]
     }
   }

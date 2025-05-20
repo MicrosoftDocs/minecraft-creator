@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Creating a Goblin Chef
 description: "Learn how to make a goblin chef entity with a Mojang 3D artist"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/06/2025
 ---
 
 # Creating a Goblin Chef
@@ -12,7 +13,7 @@ ms.service: minecraft-bedrock-edition
 
 This tutorial is meant to be an inside look at how professional Minecraft creators make something cool from beginning to end. Instead of teaching the basics of creation tools, this tutorial assumes some base knowledge of creating in Minecraft and lets us spend more time talking about creative decisions like color choice or finding the right proportions. The goal is to give you direct insight into how pros think while they are creating, and hopefully you can learn some tips and tricks along the way.
 
-This following videos feature Mojang 3D artist Peter Sheff, as he walks you through the creation of a custom Goblin Chef entity. Here, we will take you from the early concept phase of the Chef all the way to it being ready to be placed inside of Minecraft. There are three parts to the tutorial: Part 1 is modeling, part 2 is texturing, and part 3 is animating. These videos are 10-15 minutes each, so feel free to watch each part separately.
+These videos feature Mojang 3D artist Peter Sheff, as he walks you through the creation of a custom Goblin Chef entity. Here, we will take you from the early concept phase of the Chef all the way to it being ready to be placed inside of Minecraft. There are three parts to the tutorial: Part 1 is modeling, part 2 is texturing, and part 3 is animating. These videos are 10-15 minutes each, so feel free to watch each part separately.
 
 ## Part 1: Modeling
 

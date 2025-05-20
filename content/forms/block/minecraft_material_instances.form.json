@@ -242,6 +242,16 @@
               }
             }
           ],
+          "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:material_instances/",
+              "content": {
+                "texture": "leaf_pile",
+                "render_method": "alpha_test",
+                "tint_method": "default_foliage"
+              }
+            }
+          ],
           "/samples/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json": [
             {
               "path": "/minecraft:block/components/minecraft:material_instances/",
@@ -516,6 +526,18 @@
             "*": {
               "texture": "white_sand",
               "render_method": "alpha_test"
+            }
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:material_instances/",
+          "content": {
+            "*": {
+              "texture": "leaf_pile",
+              "render_method": "alpha_test",
+              "tint_method": "default_foliage"
             }
           }
         }

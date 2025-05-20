@@ -58,20 +58,10 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/ghast.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:scale/",
-              "content": 4.5
-            }
-          ],
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:scale/",
-              "content": 3.999
-            },
-            {
               "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:scale/",
-              "content": 1.999
+              "content": 0.2375
             }
           ],
           "/vanilla/behavior_pack/entities/ocelot.json": [
@@ -236,14 +226,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/ghast.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:scale/",
-          "content": {
-            "value": 4.5
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/glow_squid.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:squid_baby/minecraft:scale/",
@@ -262,15 +244,9 @@
       ],
       "/vanilla/behavior_pack/entities/happy_ghast.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:scale/",
-          "content": {
-            "value": 3.999
-          }
-        },
-        {
           "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:scale/",
           "content": {
-            "value": 1.999
+            "value": 0.2375
           }
         }
       ],

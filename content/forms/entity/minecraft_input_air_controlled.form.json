@@ -1,5 +1,6 @@
 {
   "fields": [],
+  "isExperimental": true,
   "generated_doNotEdit": {
     "id": "minecraft:input_air_controlled",
     "title": "Input Air Controlled",

@@ -132,6 +132,8 @@
       href: minecraft/server/MemoryTier.md
     - name: MoonPhase
       href: minecraft/server/MoonPhase.md
+    - name: MovementType
+      href: minecraft/server/MovementType.md
     - name: NamespaceNameErrorReason
       href: minecraft/server/NamespaceNameErrorReason.md
     - name: ObjectiveSortOrder
@@ -150,6 +152,8 @@
       href: minecraft/server/ScriptEventSource.md
     - name: SignSide
       href: minecraft/server/SignSide.md
+    - name: StickyType
+      href: minecraft/server/StickyType.md
     - name: StructureAnimationMode
       href: minecraft/server/StructureAnimationMode.md
     - name: StructureMirrorAxis
@@ -224,6 +228,8 @@
       href: minecraft/server/BlockLocationIterator.md
     - name: BlockMapColorComponent
       href: minecraft/server/BlockMapColorComponent.md
+    - name: BlockMovableComponent
+      href: minecraft/server/BlockMovableComponent.md
     - name: BlockPermutation
       href: minecraft/server/BlockPermutation.md
     - name: BlockPistonComponent
@@ -336,6 +342,8 @@
       href: minecraft/server/EntityDieAfterEventSignal.md
     - name: EntityEquippableComponent
       href: minecraft/server/EntityEquippableComponent.md
+    - name: EntityExhaustionComponent
+      href: minecraft/server/EntityExhaustionComponent.md
     - name: EntityFireImmuneComponent
       href: minecraft/server/EntityFireImmuneComponent.md
     - name: EntityFloatsInLiquidComponent
@@ -360,6 +368,8 @@
       href: minecraft/server/EntityHitEntityAfterEvent.md
     - name: EntityHitEntityAfterEventSignal
       href: minecraft/server/EntityHitEntityAfterEventSignal.md
+    - name: EntityHungerComponent
+      href: minecraft/server/EntityHungerComponent.md
     - name: EntityHurtAfterEvent
       href: minecraft/server/EntityHurtAfterEvent.md
     - name: EntityHurtAfterEventSignal
@@ -458,6 +468,8 @@
       href: minecraft/server/EntityRideableComponent.md
     - name: EntityRidingComponent
       href: minecraft/server/EntityRidingComponent.md
+    - name: EntitySaturationComponent
+      href: minecraft/server/EntitySaturationComponent.md
     - name: EntityScaleComponent
       href: minecraft/server/EntityScaleComponent.md
     - name: EntitySkinIdComponent
@@ -802,8 +814,6 @@
       href: minecraft/server/BlockRaycastHit.md
     - name: BlockRaycastOptions
       href: minecraft/server/BlockRaycastOptions.md
-    - name: CameraEaseOptions
-      href: minecraft/server/CameraEaseOptions.md
     - name: CameraFadeOptions
       href: minecraft/server/CameraFadeOptions.md
     - name: CameraFadeTimeOptions
@@ -834,6 +844,8 @@
       href: minecraft/server/DefinitionModifier.md
     - name: DimensionLocation
       href: minecraft/server/DimensionLocation.md
+    - name: EaseOptions
+      href: minecraft/server/EaseOptions.md
     - name: Enchantment
       href: minecraft/server/Enchantment.md
     - name: EntityApplyDamageByProjectileOptions
@@ -952,6 +964,10 @@
       href: minecraft/server-admin/ServerSecrets.md
     - name: ServerVariables
       href: minecraft/server-admin/ServerVariables.md
+    - name: TransferPlayerIpPortOptions
+      href: minecraft/server-admin/TransferPlayerIpPortOptions.md
+    - name: TransferPlayerNetherNetOptions
+      href: minecraft/server-admin/TransferPlayerNetherNetOptions.md
   - name: minecraft/server-editor
     items:
     - name: minecraft/server-editor

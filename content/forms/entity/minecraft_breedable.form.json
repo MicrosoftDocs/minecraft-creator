@@ -39,8 +39,7 @@
           {
             "id": "breed_event",
             "description": "Event to run when this entity breeds.",
-            "dataType": 8,
-            "lookupId": "entityTypeEvents"
+            "dataType": 39
           },
           {
             "id": "mate_type",

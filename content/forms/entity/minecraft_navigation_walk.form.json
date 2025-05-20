@@ -1149,6 +1149,14 @@
             "avoid_water": true
           }
         }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
+          "content": {
+            "can_path_over_water": true
+          }
+        }
       ]
     }
   }

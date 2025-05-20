@@ -12,9 +12,9 @@ description: Contents of the @minecraft/server.CameraSetLocationOptions class.
 ## Properties
 
 ### **easeOptions**
-`easeOptions?: CameraEaseOptions;`
+`easeOptions?: EaseOptions;`
 
-Type: [*CameraEaseOptions*](CameraEaseOptions.md)
+Type: [*EaseOptions*](EaseOptions.md)
 
 ### **location**
 `location: Vector3;`

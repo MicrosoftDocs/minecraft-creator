@@ -21,8 +21,8 @@ Adds a rider to the entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| entity_type | *not set* | String from a list of choices | Type of entity to acquire as a rider | Cave Spider: `"minecraft:skeleton"`, `"minecraft:skeleton.stray"`, `"minecraft:skeleton.wither"` | 
-| spawn_event | *not set* | String from a list of choices | Trigger event when a rider is acquired | Ravager: `"minecraft:spawn_for_raid"`, `"minecraft:spawn_as_illager_captain"`, Strider: `"minecraft:spawn_as_strider_jockey"`, `"minecraft:spawn_baby_strider_jockey"` | 
+| entity_type | *not set* | String from a list of choices | Type of entity to acquire as a rider | Cave Spider: `"minecraft:skeleton"`, `"minecraft:stray"`, `"minecraft:wither_skeleton"` | 
+| spawn_event | *not set* | Minecraft Event Reference | Trigger event when a rider is acquired | Ravager: `"minecraft:spawn_for_raid"`, `"minecraft:spawn_as_illager_captain"`, Strider: `"minecraft:spawn_as_strider_jockey"`, `"minecraft:spawn_baby_strider_jockey"` | 
 
 ## Samples
 
@@ -40,7 +40,7 @@ At /minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:ad
 
 ```json
 "minecraft:addrider": {
-  "entity_type": "minecraft:skeleton.stray"
+  "entity_type": "minecraft:stray"
 }
 ```
 
@@ -48,7 +48,7 @@ At /minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:a
 
 ```json
 "minecraft:addrider": {
-  "entity_type": "minecraft:skeleton.wither"
+  "entity_type": "minecraft:wither_skeleton"
 }
 ```
 

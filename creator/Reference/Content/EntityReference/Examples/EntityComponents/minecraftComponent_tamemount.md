@@ -19,7 +19,7 @@ Allows the Entity to be tamed by mounting it.
 | attempt_temper_mod | 5 | Integer number | The amount the entity's temper will increase when mounted. |  | 
 | auto_reject_items | *not set* | Array of [Auto Reject Items](#auto-reject-items-item-type) items |  |  | 
 | autoRejectItems | *not set* | Array of [AutoRejectItems](#autorejectitems-item-type) items | The list of items that, if carried while interacting with the entity, will anger it. |  | 
-| feed_items | *not set* | Array of [Feed Items](#feed-items-item-type) items | The list of items that can be used to increase the entity's temper and speed up the taming process. | Donkey: `[{"item":"wheat","temper_mod":3},{"item":"sugar","temper_mod":3},{"item":"apple","temper_mod":3},{"item":"golden_carrot","temper_mod":5},{"item":"golden_apple","temper_mod":10},{"item":"appleEnchanted","temper_mod":10}]` | 
+| feed_items | *not set* | Array of [Feed Items](#feed-items-item-type) items | The list of items that can be used to increase the entity's temper and speed up the taming process. | Donkey: `[{"item":"wheat","temper_mod":3},{"item":"sugar","temper_mod":3},{"item":"apple","temper_mod":3},{"item":"carrot","temper_mod":3},{"item":"golden_carrot","temper_mod":5},{"item":"golden_apple","temper_mod":10},{"item":"appleEnchanted","temper_mod":10}]` | 
 | feed_text | *not set* | String | The text that shows in the feeding interact button. |  | 
 | max_temper | 100 | Integer number | The maximum value for the entity's random starting temper. |  | 
 | min_temper | 0 | Integer number | The minimum value for the entity's random starting temper. |  | 
@@ -77,6 +77,10 @@ The list of items that can be used to increase the entity's temper and speed up 
     },
     {
       "item": "apple",
+      "temper_mod": 3
+    },
+    {
+      "item": "carrot",
       "temper_mod": 3
     },
     {

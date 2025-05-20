@@ -95,7 +95,18 @@
         "id": "look_time",
         "title": "Look Time",
         "description": "Time range to look at the nearest player.",
-        "dataType": 18
+        "dataType": 18,
+        "samples": {
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": [
+                0,
+                100
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "probability",
@@ -1122,6 +1133,19 @@
             "priority": 8,
             "look_distance": 8,
             "probability": 0.02
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+          "content": {
+            "priority": 6,
+            "look_distance": 8,
+            "look_time": [
+              0,
+              100
+            ]
           }
         }
       ]

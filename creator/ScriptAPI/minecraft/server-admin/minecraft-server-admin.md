@@ -24,7 +24,7 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.90-beta.25 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.90-beta.26 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -37,6 +37,10 @@ This is version 1.x.x of this module, which is the latest as of version 1.21.90-
 - [ServerSecrets](ServerSecrets.md)
 - [ServerVariables](ServerVariables.md)
 
+## Interfaces
+- [TransferPlayerIpPortOptions](TransferPlayerIpPortOptions.md)
+- [TransferPlayerNetherNetOptions](TransferPlayerNetherNetOptions.md)
+
 ## Errors
 - [DisconnectedError](DisconnectedError.md)
 
@@ -44,7 +48,7 @@ This is version 1.x.x of this module, which is the latest as of version 1.21.90-
 
 ### **transferPlayer**
 `
-transferPlayer(player: minecraftserver.Player, host: string, port: number): void
+transferPlayer(player: minecraftserver.Player, options: TransferPlayerIpPortOptions | TransferPlayerNetherNetOptions): void
 `
 
 Transfer player to another server.
@@ -53,12 +57,9 @@ Transfer player to another server.
 - **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
   
   Player to transfer.
-- **host**: *string*
+- **options**: [*TransferPlayerIpPortOptions*](TransferPlayerIpPortOptions.md) | [*TransferPlayerNetherNetOptions*](TransferPlayerNetherNetOptions.md)
   
-  Host of the server to transfer to.
-- **port**: *number*
-  
-  Port of the server to transfer to.
+  Options for where to send the player.
   
 Notes:
 - This function can't be called in read-only mode.

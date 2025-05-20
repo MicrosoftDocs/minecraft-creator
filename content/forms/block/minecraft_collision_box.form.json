@@ -42,7 +42,19 @@
           0,
           -8
         ],
-        "dataType": 11
+        "dataType": 11,
+        "samples": {
+          "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:collision_box/",
+              "content": [
+                -8,
+                2,
+                -8
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "size",
@@ -53,7 +65,19 @@
           16,
           16
         ],
-        "dataType": 11
+        "dataType": 11,
+        "samples": {
+          "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:collision_box/",
+              "content": [
+                16,
+                4,
+                16
+              ]
+            }
+          ]
+        }
       }
     ],
     "scalarField": {
@@ -114,6 +138,23 @@
         {
           "path": "/minecraft:block/components/minecraft:collision_box/",
           "content": true
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:collision_box/",
+          "content": {
+            "origin": [
+              -8,
+              2,
+              -8
+            ],
+            "size": [
+              16,
+              4,
+              16
+            ]
+          }
         }
       ],
       "/samples/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json": [

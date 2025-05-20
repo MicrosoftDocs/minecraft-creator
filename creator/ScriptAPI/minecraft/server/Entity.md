@@ -508,7 +508,7 @@ Notes:
 clearVelocity(): void
 `
 
-Sets the current velocity of the Entity to zero. Note that this method may not have an impact on Players.
+Sets the current velocity of the Entity to zero.
   
 Notes:
 - This function can't be called in read-only mode.

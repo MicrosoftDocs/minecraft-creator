@@ -1036,6 +1036,14 @@
             "despawn_from_distance": {}
           }
         }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:despawn/",
+          "content": {
+            "despawn_from_distance": {}
+          }
+        }
       ]
     }
   }

@@ -191,7 +191,7 @@
               "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:entity_sensor/",
               "content": [
                 {
-                  "event": "minecraft:on_no_player_detected_above",
+                  "event": "minecraft:become_mobile",
                   "cooldown": 0,
                   "y_offset": 5,
                   "range": [
@@ -201,13 +201,47 @@
                   "minimum_count": 0,
                   "maximum_count": 0,
                   "event_filters": {
-                    "test": "is_riding_self",
-                    "subject": "other",
-                    "value": false
+                    "all_of": [
+                      {
+                        "test": "is_riding_self",
+                        "subject": "other",
+                        "value": false
+                      },
+                      {
+                        "test": "actor_health",
+                        "operator": ">",
+                        "value": 0
+                      }
+                    ]
                   }
                 },
                 {
-                  "event": "minecraft:on_player_detected_above",
+                  "event": "minecraft:become_mobile",
+                  "cooldown": 0,
+                  "y_offset": 4,
+                  "range": [
+                    2,
+                    1
+                  ],
+                  "minimum_count": 0,
+                  "maximum_count": 0,
+                  "event_filters": {
+                    "all_of": [
+                      {
+                        "test": "is_riding_self",
+                        "subject": "other",
+                        "value": false
+                      },
+                      {
+                        "test": "actor_health",
+                        "operator": ">",
+                        "value": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "event": "minecraft:become_immobile",
                   "cooldown": 0,
                   "y_offset": 5,
                   "range": [
@@ -216,40 +250,42 @@
                   ],
                   "minimum_count": 1,
                   "event_filters": {
-                    "test": "is_riding_self",
-                    "subject": "other",
-                    "value": false
+                    "all_of": [
+                      {
+                        "test": "is_riding_self",
+                        "subject": "other",
+                        "value": false
+                      },
+                      {
+                        "test": "actor_health",
+                        "operator": ">",
+                        "value": 0
+                      }
+                    ]
                   }
                 },
                 {
-                  "event": "minecraft:on_no_player_detected_above",
+                  "event": "minecraft:become_immobile",
                   "cooldown": 0,
-                  "y_offset": 4.5,
+                  "y_offset": 4,
                   "range": [
                     2,
-                    1.5
-                  ],
-                  "minimum_count": 0,
-                  "maximum_count": 0,
-                  "event_filters": {
-                    "test": "is_riding_self",
-                    "subject": "other",
-                    "value": false
-                  }
-                },
-                {
-                  "event": "minecraft:on_player_detected_above",
-                  "cooldown": 0,
-                  "y_offset": 4.5,
-                  "range": [
-                    2,
-                    1.5
+                    1
                   ],
                   "minimum_count": 1,
                   "event_filters": {
-                    "test": "is_riding_self",
-                    "subject": "other",
-                    "value": false
+                    "all_of": [
+                      {
+                        "test": "is_riding_self",
+                        "subject": "other",
+                        "value": false
+                      },
+                      {
+                        "test": "actor_health",
+                        "operator": ">",
+                        "value": 0
+                      }
+                    ]
                   }
                 }
               ]
@@ -363,7 +399,7 @@
             "relative_range": false,
             "subsensors": [
               {
-                "event": "minecraft:on_no_player_detected_above",
+                "event": "minecraft:become_mobile",
                 "cooldown": 0,
                 "y_offset": 5,
                 "range": [
@@ -373,13 +409,47 @@
                 "minimum_count": 0,
                 "maximum_count": 0,
                 "event_filters": {
-                  "test": "is_riding_self",
-                  "subject": "other",
-                  "value": false
+                  "all_of": [
+                    {
+                      "test": "is_riding_self",
+                      "subject": "other",
+                      "value": false
+                    },
+                    {
+                      "test": "actor_health",
+                      "operator": ">",
+                      "value": 0
+                    }
+                  ]
                 }
               },
               {
-                "event": "minecraft:on_player_detected_above",
+                "event": "minecraft:become_mobile",
+                "cooldown": 0,
+                "y_offset": 4,
+                "range": [
+                  2,
+                  1
+                ],
+                "minimum_count": 0,
+                "maximum_count": 0,
+                "event_filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding_self",
+                      "subject": "other",
+                      "value": false
+                    },
+                    {
+                      "test": "actor_health",
+                      "operator": ">",
+                      "value": 0
+                    }
+                  ]
+                }
+              },
+              {
+                "event": "minecraft:become_immobile",
                 "cooldown": 0,
                 "y_offset": 5,
                 "range": [
@@ -388,40 +458,42 @@
                 ],
                 "minimum_count": 1,
                 "event_filters": {
-                  "test": "is_riding_self",
-                  "subject": "other",
-                  "value": false
+                  "all_of": [
+                    {
+                      "test": "is_riding_self",
+                      "subject": "other",
+                      "value": false
+                    },
+                    {
+                      "test": "actor_health",
+                      "operator": ">",
+                      "value": 0
+                    }
+                  ]
                 }
               },
               {
-                "event": "minecraft:on_no_player_detected_above",
+                "event": "minecraft:become_immobile",
                 "cooldown": 0,
-                "y_offset": 4.5,
+                "y_offset": 4,
                 "range": [
                   2,
-                  1.5
-                ],
-                "minimum_count": 0,
-                "maximum_count": 0,
-                "event_filters": {
-                  "test": "is_riding_self",
-                  "subject": "other",
-                  "value": false
-                }
-              },
-              {
-                "event": "minecraft:on_player_detected_above",
-                "cooldown": 0,
-                "y_offset": 4.5,
-                "range": [
-                  2,
-                  1.5
+                  1
                 ],
                 "minimum_count": 1,
                 "event_filters": {
-                  "test": "is_riding_self",
-                  "subject": "other",
-                  "value": false
+                  "all_of": [
+                    {
+                      "test": "is_riding_self",
+                      "subject": "other",
+                      "value": false
+                    },
+                    {
+                      "test": "actor_health",
+                      "operator": ">",
+                      "value": 0
+                    }
+                  ]
                 }
               }
             ]

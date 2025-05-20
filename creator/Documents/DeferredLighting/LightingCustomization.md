@@ -5,6 +5,7 @@ title: Lighting Customization
 ms.topic: tutorial
 description: "Lighting Customization section of Deferred Lighting in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/14/2025
 ---
 
 # Lighting Customization
@@ -14,7 +15,7 @@ This page describes how to customize lighting with Directional Lights, Point Lig
 > [!NOTE]
 > As of version `1.21.40.22`, the JSON for lighting has been split into 3 separate files.
 
-## Directional Lights
+## Directional lights
 
 The `"directional_lights"` object is where you can configure properties of celestial bodies in Minecraft. Directional lights are split into the `"orbital"` section, which contains properties pertaining to the sun and moon, and the `"flash"` section, which contains properties pertaining to the End light flash. These properties will affect how strong their respective light contributions are, what colors they contribute to various surfaces they illuminate and the angle at which they cast shadows. It will also greatly influence the color of the sky by way of atmospheric scattering calculations (see atmospherics/atmospherics.json for more details).
 
@@ -27,7 +28,7 @@ Illuminance values that correspond to "real world" values are suitable for use i
 Color values should be described as an array of 3 numerical values from the range 0-255 or as a 6 hexadecimal digit string.
 These values can be individually key framed when providing values for the sun and the moon (see Key Frame Syntax section for more details).
 
-## Point Lights
+## Point lights
 
 The `"point_lights"` object allows you to specify which blocks should be considered point lights and what color a given point light should emit.
 
@@ -37,20 +38,20 @@ Like directional lights, they produce sophisticated lighting effects such as dif
 
 Feel free to experiment, but beware that point lights are considerably more resource-intensive than light produced by other means, so it is recommended that they be employed with care. For instance, while you technically can turn lava blocks into point lights, this is not recommended simply because of the sheer amount of point lights that could be generated in common scenes. 
 
-By default, the game will treat the following blocks as point lights. This functionality can't be changed. However, you can override their default color if you include an entry for that block in your pack's **point_lights_/global.json** file:
+By default, the game will treat the following blocks as point lights. This functionality can't be changed. However, you can override their default color if you include an entry for that block in your pack's **point_lights/global.json** file:
 
->- `minecraft:torch` as `#EFE39D`
->- `minecraft:redstone_torch` as `#FF0000`
->- `minecraft:end_rod` as `#FFFFFF`
->- `minecraft:lantern` as `#CE8133`
->- `minecraft:soul_lantern` as `#00FFFF`
->- `minecraft:soul_torch` as `#00FFFF`
+- `minecraft:torch` as `#EFE39D`
+- `minecraft:redstone_torch` as `#FF0000`
+- `minecraft:end_rod` as `#FFFFFF`
+- `minecraft:lantern` as `#CE8133`
+- `minecraft:soul_lantern` as `#00FFFF`
+- `minecraft:soul_torch` as `#00FFFF`
 
 To change the strength of a point light, refer to the [documentation for lightEmission block](../../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_light_emission.md) components. Be aware that this lightEmission value is a separate concept from the "Emissive" value described in PBR or Texture Set documentation.
 
 Color values can be described either as an array of 3 numerical values from the range 0-255 or as a 6-digit hexadecimal string.
 
-## Ambient Light
+## Ambient light
 
 The `"ambient"` object allows for some control over how surfaces are lit when there are no other sensible light sources available. For instance, imagine a scene with no direct or indirect light sources, like a dark cavern with no torches or lava. Absent any light source, the player would be left in complete darkness. Another common case is when no indirect specular contribution is available. This often happens when in underground scenes where there is no exposure to the sky and when SSR can't be calculated for one reason or another. The ambient object allows packs to specify a minimum, fallback light source to provide for both cases.
 
@@ -60,7 +61,7 @@ The `"illuminance"` value corresponds to the strength, in lux (lx), of the ambie
 
 If not provided, a default color of `#FFFFFF` and illuminance of `0.02` will be used.
 
-## PBR Uniforms
+## PBR uniforms
 
 The `"pbr"` object is meant to complement the larger Texture Set functionality by acting as a default or fallback value when texture set detail isn't provided for particular blocks, entities, particles, or items. For example, if you provide texture sets for pigs and creepers, but no other entities, then, when a cow is rendered in game, the `"global_metalness_emissive_roughness_subsurface"` value defined in **pbr/global.json** will be applied uniformly across the entire surface of the cow. This allows you to quickly provide a general art direction without having to author textures for every single game object initially, and iteratively add more detail to the blocks/entities as you see fit.
 
@@ -70,15 +71,15 @@ Values can be described either as an array of 4 numerical values from the range 
 
 The `"emissive"` object allows for some control over how emissive light sources behave. These parameters can be especially useful for fine-tuning emissive light sources for certain types of tone mapping.
 
->- `"desaturation"` is a factor from [0.0-1.0] that controls how much the albedo of a given pixel is desaturated when computing the color of emissive light. A value of 0.0 results in no desaturation, while a value of 1.0 results in full desaturation of the albedo color.
+- `"desaturation"` is a factor from [0.0-1.0] that controls how much the albedo of a given pixel is desaturated when computing the color of emissive light. A value of 0.0 results in no desaturation, while a value of 1.0 results in full desaturation of the albedo color.
 
 ## Sky
 
 The `"sky"` object allows you to control some properties of the sky in terms of its contribution as a light source. The sky contributes significantly to indirect diffuse (meaning indirect bounce light from the sky) and to indirect specular (reflections of the sky, clouds, etc...).
 
->- `"intensity"` is a factor from [0.1-1.0] that controls how much sky light is factored into the indirect term for both diffuse and specular. A value of 1.0 will cause the sky to contribute more to indirect light and will result in shadows being less dark, while a value of 0.1 will result in darker shadows, because there is less indirect light contributed from the sky. The default value, if not provided, is 1.0.
+- `"intensity"` is a factor from [0.1-1.0] that controls how much sky light is factored into the indirect term for both diffuse and specular. A value of 1.0 will cause the sky to contribute more to indirect light and will result in shadows being less dark, while a value of 0.1 will result in darker shadows, because there is less indirect light contributed from the sky. The default value, if not provided, is 1.0.
 
-## Lighting JSON Schemas
+## Lighting JSON schemas
 
 File location: **lighting/global.json**
 

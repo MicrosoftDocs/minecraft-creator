@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Minecraft Bedrock Editor Deferred Lighting
 description: "An overview of deferred lighting in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/13/2025
 ---
 
 # Editor Deferred Lighting
@@ -11,17 +12,26 @@ ms.service: minecraft-bedrock-edition
 > [!IMPORTANT]
 > Deferred Lighting is only available in Bedrock Preview.
 
-From the View menu, you can choose the Deferred Lighting Settings to open the Settings Editor.
-
-On the Settings Editor Window, you can find the options for:
-
-- Global Lighting
-- Atmospheric Scattering
-- Color Grading
-
-When Deferred Lighting is enabled, you can use these options.
-
-To learn more about deferred lighting please reference the following documentation:
+Reference these articles to learn more about deferred lighting:
 
 * [Getting Started with Deferred Lighting](./../DeferredLighting/GettingStartedDeferredLighting.md)
+
 * [Enabling Deferred Technical Preview in Your World](./../DeferredLighting/EnablingDeferredTechnicalPreview.md)
+
+From View, select Deferred Lighting Settings to open the Settings Editor. You can adjust the following light settings in the Settings Editor:
+
+- Water
+
+- Global Lighting
+
+- Atmospheric Scattering
+
+- Color Grading
+
+- Point Lights
+
+- PBR Fallbacks
+
+- Shadows
+
+

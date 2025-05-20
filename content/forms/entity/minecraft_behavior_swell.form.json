@@ -17,6 +17,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.swell/",
               "content": 2.5
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swell/",
+              "content": 2.5
+            }
           ]
         }
       },
@@ -28,6 +34,12 @@
         "dataType": 3,
         "samples": {
           "/vanilla/behavior_pack/entities/creeper.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swell/",
+              "content": 6
+            }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.swell/",
               "content": 6
@@ -47,12 +59,28 @@
               "path": "/minecraft:entity/components/minecraft:behavior.swell/",
               "content": 2
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.swell/",
+              "content": 2
+            }
           ]
         }
       }
     ],
     "samples": {
       "/vanilla/behavior_pack/entities/creeper.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.swell/",
+          "content": {
+            "start_distance": 2.5,
+            "stop_distance": 6,
+            "priority": 2
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.swell/",
           "content": {

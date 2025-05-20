@@ -31,6 +31,12 @@
               "path": "/minecraft:block/components/minecraft:flammable/",
               "content": 5
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:flammable/",
+              "content": 100
+            }
           ]
         }
       },
@@ -51,6 +57,12 @@
             {
               "path": "/minecraft:block/components/minecraft:flammable/",
               "content": 20
+            }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:flammable/",
+              "content": 100
             }
           ]
         }
@@ -122,6 +134,15 @@
           "content": {
             "destroy_chance_modifier": 20,
             "catch_chance_modifier": 5
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:flammable/",
+          "content": {
+            "destroy_chance_modifier": 100,
+            "catch_chance_modifier": 100
           }
         }
       ],

@@ -33,8 +33,8 @@ Sets or clears control scheme.
 ### `controlscheme`
 
 #### Values
-- `camera_relative`
 - `camera_relative_strafe`
+- `camera_relative`
 - `player_relative_strafe`
 - `player_relative`
 - `locked_player_relative_strafe`

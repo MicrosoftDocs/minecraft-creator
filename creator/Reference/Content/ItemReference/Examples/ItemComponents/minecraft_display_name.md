@@ -81,6 +81,15 @@ At sample with localication key:
 }
 ```
 
+#### [Bag O Leaves](https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/items/bag_o_leaves.json)
+
+
+```json
+"minecraft:display_name": {
+  "value": "Bag o' Leaves"
+}
+```
+
 #### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
 
 
@@ -114,14 +123,5 @@ At sample with localication key:
 ```json
 "minecraft:display_name": {
   "value": "My Custom Helmet"
-}
-```
-
-#### [My Leggings](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/my_leggings.json)
-
-
-```json
-"minecraft:display_name": {
-  "value": "My Custom Leggings"
 }
 ```

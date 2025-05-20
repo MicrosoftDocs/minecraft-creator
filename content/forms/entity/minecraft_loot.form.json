@@ -525,6 +525,12 @@
               "path": "/minecraft:entity/components/minecraft:loot/",
               "content": "loot_tables/mikeamm/gray_wave/smfireball_turret.loot.json"
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:loot/",
+              "content": "loot_tables/entities/campghost.json"
+            }
           ]
         }
       }
@@ -1317,6 +1323,14 @@
           "path": "/minecraft:entity/components/minecraft:loot/",
           "content": {
             "table": "loot_tables/mikeamm/gray_wave/smfireball_turret.loot.json"
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:loot/",
+          "content": {
+            "table": "loot_tables/entities/campghost.json"
           }
         }
       ]

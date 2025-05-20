@@ -5,6 +5,7 @@ title: Water Customization
 ms.topic: tutorial
 description: "Water Customization section of Deferred Lighting in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/14/2025 
 ---
 
 # Water Customization
@@ -13,7 +14,7 @@ A variety of new features for Water are available in Minecraft Bedrock **1.21.30
 
 ![In-game screenshot showing a shoreline near a cherry grove biome at sunrise in Minecraft with realistic water.](Media/caustics.png)
 
-## Particle Concentrations
+## Particle concentrations
 
 The composition of particles in a body of water is what determines its color and how light behaves as it travels through the water, and we've boiled them down to 3 concentrations in mg/L. Use these values to convey different types of water, such as crystal clear lakes, deep oceans or muddy rivers:
 - CDOM (Chromophoric Dissolved Organic Matter): High concentrations produce yellow to yellow-brown colors, due to CDOM strongly absorbing blue wavelengths. Open oceans typically have little to no CDOM, and thus retain a blue appearance, whereas fresh water sources, like rivers, tend to have higher concentrations.
@@ -39,6 +40,7 @@ There are a variety of ways to customize waves to convey different types of wate
 - Speed Scaling: Controls how much faster each subsequent octave moves. A value of 1 will result in no change between octaves. Values higher than 1 will cause speeds to increase while values less than 1 will cause speeds to decrease.
 
 ## Caustics
+
 Caustics are an effect introduced in version 1.21.80 that make bodies of water more realistic by projecting light rays on underwater surfaces. These rays then scatter and dance as the surface of the water moves. This effect is enabled by default, but can be selectively disabled in given Water configurations.
 
 The following parameters can be used to control the appearance of caustics:

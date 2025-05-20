@@ -1218,6 +1218,15 @@
             "is_pushable_by_piston": true
           }
         }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:pushable/",
+          "content": {
+            "is_pushable": true,
+            "is_pushable_by_piston": true
+          }
+        }
       ]
     }
   }

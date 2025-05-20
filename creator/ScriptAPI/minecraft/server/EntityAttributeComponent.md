@@ -13,9 +13,12 @@ description: Contents of the @minecraft/server.EntityAttributeComponent class.
 - [*EntityComponent*](EntityComponent.md)
 
 ## Classes that extend EntityAttributeComponent
+- [*EntityExhaustionComponent*](EntityExhaustionComponent.md)
 - [*EntityHealthComponent*](EntityHealthComponent.md)
+- [*EntityHungerComponent*](EntityHungerComponent.md)
 - [*EntityLavaMovementComponent*](EntityLavaMovementComponent.md)
 - [*EntityMovementComponent*](EntityMovementComponent.md)
+- [*EntitySaturationComponent*](EntitySaturationComponent.md)
 - [*EntityUnderwaterMovementComponent*](EntityUnderwaterMovementComponent.md)
 
 This is a base abstract class for any entity component that centers around a number and can have a minimum, maximum, and default defined value.
@@ -106,7 +109,7 @@ Notes:
 setCurrentValue(value: number): boolean
 `
 
-Sets the current value of this attribute. The provided value will be clamped to the range of this attribute.
+Sets the current value of this attribute.
 
 #### **Parameters**
 - **value**: *number*
@@ -116,3 +119,4 @@ Sets the current value of this attribute. The provided value will be clamped to 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md)

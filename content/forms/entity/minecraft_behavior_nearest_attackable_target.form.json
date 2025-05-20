@@ -1850,6 +1850,12 @@
               "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/",
               "content": 40
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+              "content": 3
+            }
           ]
         }
       },
@@ -4608,6 +4614,26 @@
               "max_dist": 16
             },
             "must_see": true
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/",
+          "content": {
+            "priority": 1,
+            "must_see": true,
+            "must_see_forget_duration": 3,
+            "entity_types": [
+              {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                "max_dist": 16
+              }
+            ]
           }
         }
       ]

@@ -172,6 +172,12 @@
               "path": "/minecraft:entity/component_groups/mikeamm_gwve:active/minecraft:behavior.melee_attack/",
               "content": 5
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.melee_attack/",
+              "content": 1.25
+            }
           ]
         }
       },
@@ -262,6 +268,12 @@
               "path": "/minecraft:entity/components/minecraft:behavior.melee_attack/",
               "content": 3
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.melee_attack/",
+              "content": 4
+            }
           ]
         }
       }
@@ -322,6 +334,17 @@
           "path": "/minecraft:entity/components/minecraft:behavior.melee_attack/",
           "content": {
             "priority": 3
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.melee_attack/",
+          "content": {
+            "priority": 4,
+            "speed_multiplier": 1.25,
+            "track_target": false,
+            "reach_multiplier": 0
           }
         }
       ]

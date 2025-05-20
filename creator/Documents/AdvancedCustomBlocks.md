@@ -4,6 +4,7 @@ ms.author: mikeam
 title: 'Create a Sushi Block: Advanced Custom Blocks'
 description: "A guide to using the Geometry and Material instances to create custom blocks in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/05/2025
 ---
 
 # Custom Blocks: Geometry and Material Instances
@@ -17,34 +18,30 @@ In this tutorial, you will learn more about custom block components, including:
 > - Using the `minecraft:geometry` component to reference your custom geometry.
 > - Using the `minecraft:material_instances` component to set the texture(s) for your custom geometry.
 
-### Prerequisites
+If you haven't completed the [How to Add a Simple Custom Block](AddCustomDieBlock.md) tutorial yet, it's recommended you do that before starting this one.
 
-It's recommended that the following be completed before beginning this tutorial:
-
-- [How to Add a Simple Custom Block](AddCustomDieBlock.md)
-
-We've already created a cool die block that you can make with the fewest number of files and json, so let's explore the exciting possibilities that are offered by the behavior pack json components: **geometry** and **material_instances**!
+We've already created a cool die block that you can make with the fewest number of files and JSON, so let's explore the exciting possibilities that are offered by the behavior pack JSON components: **geometry** and **material_instances**!
 
 ## Creating custom blocks with resource and behavior packs
 
 > [!VIDEO https://www.youtube.com/embed/eUFuDkyTom8]
 *For extra help, follow along with this video!*
 
-This tutorial builds from part one and uses the same file structure, with one major difference: For these blocks, we will be using custom geometry models, so we will be adding a **models** folder to the `custom_block_resource_pack`. Here is the updated file structure we'll follow for this tutorial:
+This tutorial builds from the Simple Custom Block lesson and uses the same file structure, with one major difference: for these blocks, we will be using custom geometry models, so we'll be adding a **models** folder to the **custom_block_resource_pack**. Here is the updated file structure we'll follow for this tutorial:
 
 :::image type="content" source="Media/AdvancedCustomBlocks/advancedblock.png" alt-text="Visual hierarchy of the project file structure.":::
 
-## Sushi blocks - Custom block with geometry and material instances
+## Sushi blocks
+
+We're going to create custom blocks with geometry and material instances: sushi!
 
 :::image type="content" source="Media/AdvancedCustomBlocks/advancedblock1.png" alt-text="Picture of sushi blocks in Minecraft: Bedrock Edition.":::
 
 ### Let's use Blockbench
 
-[Blockbench](https://blockbench.net/)
+For this tutorial, we're going to be doing some work in [Blockbench](https://blockbench.net/). Blockbench is a free entity-modeling application for creating entity models in Minecraft: Bedrock Edition. Additionally, users have the ability to create textures, and the ability to animate them for Bedrock Edition maps. Blockbench has external plugin support, enabling developers to create additional tools to use within the program. It also has the ability to export models into a standard OBJ format, Java Edition block model, and more.
 
-For this tutorial, we're going to be doing some work in Blockbench. Blockbench is a free entity-modeling application for creating entity models in Minecraft: Bedrock Edition. Additionally, users have the ability to create textures, and the ability to animate them for Bedrock Edition maps. Blockbench has external plugin support, enabling developers to create additional tools to use within the program. It also has the ability to export models into a standard OBJ format, Java Edition block model, and more.
-
-We will use Blockbench in these tutorials to create custom geometries for the more advanced blocks we'll create for sushi, fish in a bubble, and a giant umbrella. If this is your first time using Blockbench, we recommend taking a look at our Entity Wizard document [here](MinecraftEntityWizard.md).
+We will use Blockbench in these tutorials to create custom geometries for the more advanced blocks we'll create for sushi, fish in a bubble, and a giant umbrella. If this is your first time using Blockbench, we recommend taking a look at the [Entity Wizard tutorial](MinecraftEntityWizard.md).
 
 ### Geometry in Blockbench
 
@@ -62,11 +59,11 @@ The textures for the individual rolls, however, will be different depending on t
 
 :::image type="content" source="Media/AdvancedCustomBlocks/advancedblock5.png" alt-text="Flat picture of salmon roll.":::
 
-We highly recommend learning the ins and outs of Blockbench as you begin to create more complex and personalized custom entities. For this tutorial, however, we will be creating a blank file and exporting it to our pc, where we can copy our sushi block data.
+We highly recommend learning the ins and outs of Blockbench as you begin to create more complex and personalized custom entities. For this tutorial, however, we will be creating a blank file and exporting it to our PC, where we can copy our sushi block data.
 
 ### Export the file from Blockbench
 
-Navigate to **File > Export > Export Bedrock Geometry** to save the geo file to your computer.
+Navigate to **File > Export > Export Bedrock Geometry** to save the geometry file to your computer.
 
 ```json
 { 
@@ -97,18 +94,18 @@ Navigate to **File > Export > Export Bedrock Geometry** to save the geo file to 
 
 Now you can create textures in Blockbench, or create textures in a separate paint or photo editing application (assuring that it matches the size and UV of the geometry).
 
-## Resource Pack
+## Resource pack
 
-### Add geometry to resource pack
+### Add the geometry
 
-Let's start by adding the sushi blocks' files to the resource pack.
+Let's start by adding files for the sushi blocks to the resource pack.
 
-1. In **File Explorer**, navigate to the folder **custom_block_resource_pack**, located in the **development_resource_packs** folder.
+1. In File Explorer, navigate to the folder **custom_block_resource_pack**, located in the **development_resource_packs** folder.
 1. Inside the **custom_block_resource_pack** folder, create a folder and name it **models**.
 1. Open the **models** folder.
 1. Inside the **models** folder, create a folder and name it **blocks**.
 1. Open the **blocks** folder.
-1. Inside the **blocks** folder, copy in the downloaded geo files from Blockbench.
+1. Inside the **blocks** folder, copy the downloaded geometry files from Blockbench.
 
 ### Create custom block localization
 
@@ -136,13 +133,13 @@ Place the following images in the **textures/blocks** folder:
 
 As always, feel free to create your own textures!
 
-### Add friendly name in terrain_texture.json
+### Add friendly names in terrain_texture.json
 
-The next step is to associate the texture names with a texture file path. This is done in a`terrain_texture.json`file.
+The next step is to associate the texture names with a texture file path. This is done in a **terrain_texture.json** file.
 
 - In **File Explorer**, navigate to the **custom_block_resource_pack** folder and open the **textures** folder.
 - Open **terrain_texture.json** in a text editor.
-- Copy and paste the following code into **terrain_texture.json** in the **texture_data** section:
+- Copy and paste the following code into **terrain_texture.json** in the `texture_data` section:
 
 ```json
 { 
@@ -166,11 +163,11 @@ The next step is to associate the texture names with a texture file path. This i
 } 
 ```
 
-### Optional: Include sounds in blocks.json
+### Optional: include sounds in blocks.json
 
-Adding a sound in blocks.json is optional, but you can include it here for fun.
+Adding a sound in **blocks.json** is optional, but you can include it here for fun.
 
-**Important!** Because you'll be using advanced geometry and material_instances, any rendering information will be overridden by the custom block file in the behavior pack. So we will only be adding the sound here. We'll give the sushi blocks the same sound as mud because they are squishy!
+**Important!** Because you'll be using advanced geometry and material instances, any rendering information will be overridden by the custom block file in the behavior pack. So we will only be adding the sound here. We'll give the sushi blocks the same sound as mud because they are squishy!
 
 1. In the resource pack, navigate to **blocks.json**.
 1. Add the following sound information below the **demo:die** section.
@@ -178,21 +175,21 @@ Adding a sound in blocks.json is optional, but you can include it here for fun.
 ```json
 { 
   "format_version": "1.19.30", 
-    "demo:die": {
-    }, 
-    "demo:salmon_roll": { 
+  "demo:die": {
+  }, 
+  "demo:salmon_roll": { 
     "sound": "mud" 
   }, 
-    "demo:tuna_roll": { 
+  "demo:tuna_roll": { 
     "sound": "mud" 
   }, 
-    "demo:california_roll": { 
+  "demo:california_roll": { 
     "sound": "mud" 
   }
 } 
 ```
 
-## Behavior Pack
+## Behavior pack
 
 ### Create individual custom block files for each roll
 
@@ -200,11 +197,11 @@ Let's bring all those resource pieces together into one beautiful combination in
 
 Although the sushi blocks share the same `geometry.sushi` geometry, create separate files for each of these rolls so they become their own blocks that display their own unique textures.
 
-1. In **File Explorer**, navigate to the folder **custom_block_behavior_pack**, located in the **development_behavior_packs** folder.
+1. In File Explorer, navigate to the folder **custom_block_behavior_pack**, located in the **development_behavior_packs** folder.
 1. Open the **blocks** folder and create a text document named **salmon_roll.json**.
 1. Double-click **salmon_roll.json** to open it in a text editor.
 
-### Create the behavior custom block json file
+### Create the behavior custom block JSON file
 
 In the file, you will need to define what each of the blocks is.
 
@@ -243,13 +240,13 @@ All of this has been a set up to the moment you've been waiting for: custom bloc
 
 - `minecraft:material_instances` has a ton of goodies. It's an object that defines the various textures (a single texture, or per-face) and allows you to specify some information about rendering and lighting. We'll talk more about the specific render methods and lighting options offered by this component later, in the [Exploring the Material Instances Render and Lighting Options Tutorial](./CustomBlockRenderLighting.md).
 
-Just like in blocks.json, we can define the various sides of the block that we want to use here. For now, we're going to define 'north' and 'south' for the salmon roll sides.
+Just like in **blocks.json**, we can define the various sides of the block that we want to use here. For now, we're going to define `north` and `south` for the salmon roll sides.
 
-The rest can be defined using *to capture any side not previously defined.* is the default texture that will be used if the correct texture for one side cannot be found, and you are required to specify it. For all sides to use the same texture, you could simply use * and define the identifier.
+The rest of the sides are defined with `*`. This special key defines the default texture that will be used when a texture isn't given for a named side. If `north` and `south` weren't defined, the `*` key would give all the sides of our new block the `sushi_wrap` texture. You must specify a `*` key when you're defining `material_instances`.
 
-## Optional: Name custom instance of materials and use them
+## Optional: Name custom instances of materials
 
-There is another cool part of material_instances to show off. We can actually create defined variables within the material instances component. Let's see an example using salmon_roll:
+There is another cool part of `material_instances` to show off: we can actually create defined variables within the material instances component. Let's see an example using **salmon_roll**:
 
 ```json
 {
@@ -275,13 +272,13 @@ There is another cool part of material_instances to show off. We can actually cr
 }
 ```
 
-Here, we've defined **sushi_side** as having the **salmon_roll** texture.  
+Here, we've defined `sushi_side` as having the `salmon_roll` texture.  
 
-Then, for north and south, we can use **sushi_side** as a string rather than a whole object specifying the texture as **salmon_roll**.
+Then, for north and south, we can use `sushi_side` as a string rather than a whole object specifying the texture as `salmon_roll`.
 
-Now it's your turn to create the Tuna and California rolls. Feel free to copy this **salmon_roll** file to start from, making sure to change the identifier and the **salmon_roll** texture name to match the corresponding roll.
+Now it's your turn to create the Tuna and California rolls. Feel free to copy this **salmon_roll** file to start from, making sure to change the identifier and the `salmon_roll` texture name to match the corresponding roll.
 
-## Test the Block
+## Test the block
 
 Let's head back to the test world.
 
