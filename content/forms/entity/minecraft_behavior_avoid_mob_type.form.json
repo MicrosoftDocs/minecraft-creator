@@ -749,6 +749,31 @@
                 }
               ]
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+              "content": [
+                {
+                  "filters": {
+                    "any_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "ocelot"
+                      },
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "cat"
+                      }
+                    ]
+                  },
+                  "max_dist": 6,
+                  "sprint_speed_multiplier": 1.2
+                }
+              ]
+            }
           ]
         }
       },
@@ -1868,6 +1893,34 @@
                 "max_dist": 8,
                 "walk_speed_multiplier": 0.6,
                 "sprint_speed_multiplier": 0.6
+              }
+            ]
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/",
+          "content": {
+            "priority": 3,
+            "entity_types": [
+              {
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "ocelot"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "cat"
+                    }
+                  ]
+                },
+                "max_dist": 6,
+                "sprint_speed_multiplier": 1.2
               }
             ]
           }

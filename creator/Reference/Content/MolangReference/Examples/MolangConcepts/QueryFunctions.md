@@ -186,6 +186,7 @@ ms.date: 02/11/2025
 | [query.is_ram_attacking](queryfunctions/query_is_ram_attacking.md)| Returns 1.0 if the entity is using a ram attack, else it returns 0.0. |
 | [query.is_resting](queryfunctions/query_is_resting.md)| Returns 1.0 if the entity is resting, else it returns 0.0. |
 | [query.is_riding](queryfunctions/query_is_riding.md)| Returns 1.0 if the entity is riding, else it returns 0.0. |
+| [query.is_riding_any_entity_of_type](queryfunctions/query_is_riding_any_entity_of_type.md)| Returns whether or not the entity is currently riding an entity of any of the designated types. |
 | [query.is_rising](queryfunctions/query_is_rising.md)| (No longer available in pack min_engine_version 1.20.50.) DEPRECATED after 1.20.40. |
 | [query.is_roaring](queryfunctions/query_is_roaring.md)| Returns 1.0 if the entity is currently roaring, else it returns 0.0. |
 | [query.is_rolling](queryfunctions/query_is_rolling.md)| Returns 1.0 if the entity is rolling, else it returns 0.0. |

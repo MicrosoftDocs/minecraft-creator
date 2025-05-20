@@ -354,6 +354,8 @@
   href: query_is_resting.md
 - name: query.is_riding
   href: query_is_riding.md
+- name: query.is_riding_any_entity_of_type
+  href: query_is_riding_any_entity_of_type.md
 - name: query.is_rising
   href: query_is_rising.md
 - name: query.is_roaring

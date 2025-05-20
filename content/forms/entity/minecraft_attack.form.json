@@ -742,6 +742,14 @@
             "damage": 6
           }
         }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:attack/",
+          "content": {
+            "damage": 3
+          }
+        }
       ]
     }
   }

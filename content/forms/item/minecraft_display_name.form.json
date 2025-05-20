@@ -298,6 +298,12 @@
               "content": "item.wind_charge.name"
             }
           ],
+          "/samples/creator_camp/behavior_packs/creator_camp/items/bag_o_leaves.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:display_name/",
+              "content": "Bag o' Leaves"
+            }
+          ],
           "/samples/custom_items/behavior_packs/custom_item/items/chestplate.json": [
             {
               "path": "/minecraft:item/components/minecraft:display_name/",
@@ -405,6 +411,14 @@
           "path": "/minecraft:item/components/minecraft:display_name/",
           "content": {
             "value": "item.wind_charge.name"
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/items/bag_o_leaves.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:display_name/",
+          "content": {
+            "value": "Bag o' Leaves"
           }
         }
       ],

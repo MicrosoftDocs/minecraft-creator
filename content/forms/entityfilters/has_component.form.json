@@ -235,6 +235,12 @@
               "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/1/",
               "content": "minecraft:effect.weakness"
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/2/",
+              "content": "minecraft:explode"
+            }
           ]
         }
       },
@@ -860,6 +866,55 @@
             "test": "has_component",
             "operator": "!=",
             "value": "minecraft:skin_id"
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/2/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:explode"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_exploding_forced/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_charged"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_exploding_forced/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_charged"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_exploding/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_charged"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_exploding/sequence/1/filters/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_charged"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:start_exploding/sequence/2/filters/",
+          "content": {
+            "operator": "!=",
+            "test": "has_component",
+            "value": "minecraft:is_charged",
+            "subject": "self"
           }
         }
       ]

@@ -2,7 +2,7 @@
   "fields": [
     {
       "id": "tint_method",
-      "versionIntrouduced": "1.21.80"
+      "versionIntroduced": "1.21.80"
     }
   ],
   "tags": [
@@ -79,6 +79,12 @@
         {
           "path": "/minecraft:block/components/minecraft:map_color/",
           "content": "#fdfdfd"
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:map_color/",
+          "content": "#ffffff"
         }
       ],
       "/samples/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json": [

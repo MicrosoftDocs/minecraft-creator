@@ -58,8 +58,7 @@
     {
       "id": "calm_event",
       "description": "Event to fire when this entity is calmed down",
-      "dataType": 8,
-      "lookupId": "entityTypeEvents"
+      "dataType": 39
     }
   ],
   "generated_doNotEdit": {

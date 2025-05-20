@@ -31,6 +31,17 @@
           "dataType": 1
         }
       ]
+    },
+    {
+      "id": "triggers",
+      "subForm": {
+        "fields": [
+          {
+            "id": "on_damage_sound_event",
+            "dataType": 39
+          }
+        ]
+      }
     }
   ],
   "description": "Defines what events to call when this entity is damaged by specific entities or items.",
@@ -329,7 +340,7 @@
           "content": {
             "triggers": {
               "cause": "fall",
-              "deals_damage": false
+              "deals_damage": "no"
             }
           }
         }
@@ -972,6 +983,24 @@
                 }
               }
             ]
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": {
+              "on_damage": {
+                "filters": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "lightning"
+                },
+                "event": "minecraft:become_charged"
+              },
+              "deals_damage": false
+            }
           }
         }
       ]

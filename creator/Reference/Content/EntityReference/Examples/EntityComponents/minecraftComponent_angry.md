@@ -26,7 +26,7 @@ Defines an entity's 'angry' state using a timer.
 | broadcast_targets | *not set* | Array of strings | A list of entity families to broadcast anger to | Wandering Trader: `["llama","trader_llama"]` | 
 | broadcastAnger | *not set* | String |  | Bee: `true` | 
 | broadcastRange | *not set* | Decimal number |  | Bee: `20`, Wandering Trader: `10` | 
-| calm_event | *not set* | String from a list of choices | Event to fire when this entity is calmed down | Bee: `{"event":"calmed_down","target":"self"}`, Cave Spider: `{"event":"minecraft:on_calm","target":"self"}`, Dolphin: `{"event":"on_calm","target":"self"}` | 
+| calm_event | *not set* | Minecraft Event Reference | Event to fire when this entity is calmed down | Bee: `{"event":"calmed_down","target":"self"}`, Cave Spider: `{"event":"minecraft:on_calm","target":"self"}`, Dolphin: `{"event":"on_calm","target":"self"}` | 
 | duration | 25 | Integer number | The amount of time in seconds that the entity will be angry. | Bee: `25`, Cave Spider: `10`, Llama: `4`, `-1` | 
 | duration_delta | 0 | Integer number | Variance in seconds added to the duration [-delta, delta]. | Cave Spider: `3` | 
 | filters | *not set* | Minecraft filter | Filter out mob types that it should not attack while angry (other Piglins) |  | 

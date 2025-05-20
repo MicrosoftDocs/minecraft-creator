@@ -50,7 +50,7 @@ The list of entity definitions that this entity can breed with.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | baby_type | *not set* | String | The entity definition of this entity's babies. |  | 
-| breed_event | *not set* | String from a list of choices | Event to run when this entity breeds. |  | 
+| breed_event | *not set* | Minecraft Event Reference | Event to run when this entity breeds. |  | 
 | mate_type | *not set* | String from a list of choices | The inclusive minimum of the variant range. |  | 
 
 ## Deny Parents Variant item type

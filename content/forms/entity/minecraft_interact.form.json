@@ -1,5 +1,310 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "add_items",
+      "isRemoved": true
+    },
+    {
+      "id": "particle_on_start",
+      "isRemoved": true
+    },
+    {
+      "id": "play_sounds",
+      "isRemoved": true
+    },
+    {
+      "id": "spawn_entities",
+      "isRemoved": true
+    },
+    {
+      "id": "spawn_items",
+      "isRemoved": true
+    },
+    {
+      "id": "repair_entity_item",
+      "isRemoved": true
+    },
+    {
+      "id": "swing",
+      "isRemoved": true
+    },
+    {
+      "id": "transform_to_item",
+      "isRemoved": true
+    },
+    {
+      "id": "use_item",
+      "isRemoved": true
+    },
+    {
+      "id": "vibration",
+      "isRemoved": true
+    },
+    {
+      "id": "on_interact",
+      "isRemoved": true
+    },
+    {
+      "id": "interactions",
+      "subForm": {
+        "id": "interactions",
+        "fields": [
+          {
+            "id": "particle_on_start",
+            "title": "Particle On Start",
+            "description": "Particle effect that will be triggered at the start of the interaction.",
+            "dataType": 15,
+            "subForm": {
+              "description": "Particle effect that will be triggered at the start of the interaction.",
+              "fields": [
+                {
+                  "id": "particle_offset_towards_interactor",
+                  "title": "Particle Offset Towards Interactor",
+                  "description": "Whether or not the particle will appear closer to who performed the interaction.",
+                  "defaultValue": false,
+                  "dataType": 1
+                },
+                {
+                  "id": "particle_type",
+                  "title": "Particle Type",
+                  "description": "The type of particle that will be spawned.",
+                  "dataType": 2
+                },
+                {
+                  "id": "particle_y_offset",
+                  "title": "Particle Y Offset",
+                  "description": "Will offset the particle this amount in the y direction.",
+                  "defaultValue": 0,
+                  "dataType": 3
+                }
+              ]
+            }
+          },
+          {
+            "id": "play_sounds",
+            "title": "Play Sounds",
+            "description": "List of sounds to play when the interaction occurs.",
+            "dataType": 2
+          },
+          {
+            "id": "repair_entity_item",
+            "title": "Repair Entity Item",
+            "description": "Allows to repair one of the entity's items.",
+            "dataType": 15,
+            "subForm": {
+              "description": "Allows to repair one of the entity's items.",
+              "fields": [
+                {
+                  "id": "amount",
+                  "title": "Amount",
+                  "description": "How much of the item durability should be restored upon interaction.",
+                  "dataType": 0
+                },
+                {
+                  "id": "slot",
+                  "title": "Slot",
+                  "description": "The entity's slot containing the item to be repaired. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'.",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
+          {
+            "id": "spawn_entities",
+            "title": "Spawn Entities",
+            "description": "List of entities to spawn when the interaction occurs.",
+            "dataType": 2
+          },
+          {
+            "id": "spawn_items",
+            "title": "Spawn Items",
+            "description": "Loot table with items to drop on the ground upon successful interaction.",
+            "dataType": 15,
+            "subForm": {
+              "description": "Loot table with items to drop on the ground upon successful interaction.",
+              "fields": [
+                {
+                  "id": "table",
+                  "title": "Table",
+                  "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
+                  "dataType": 2
+                },
+                {
+                  "id": "y_offset",
+                  "title": "Y Offset",
+                  "description": "Will offset the items spawn position this amount in the y direction.",
+                  "defaultValue": 1,
+                  "dataType": 3
+                }
+              ]
+            }
+          },
+          {
+            "id": "swing",
+            "title": "Swing",
+            "description": "If true, the player will do the 'swing' animation when interacting with this entity.",
+            "defaultValue": false,
+            "dataType": 1
+          },
+          {
+            "id": "transform_to_item",
+            "title": "Transform To Item",
+            "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue",
+            "dataType": 2
+          },
+          {
+            "id": "use_item",
+            "title": "Use Item",
+            "description": "If true, the interaction will use an item.",
+            "defaultValue": false,
+            "dataType": 1
+          },
+          {
+            "id": "vibration",
+            "title": "Vibration",
+            "description": "Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact.",
+            "defaultValue": "entity_interact",
+            "dataType": 2
+          },
+          {
+            "id": "on_interact",
+            "title": "On_interact",
+            "dataType": 2,
+            "samples": {
+              "/vanilla/behavior_pack/entities/allay.json": [
+                {
+                  "path": "on_interact",
+                  "content": {
+                    "filters": {
+                      "all_of": [
+                        {
+                          "test": "is_family",
+                          "subject": "other",
+                          "value": "player"
+                        },
+                        {
+                          "test": "is_sneak_held",
+                          "subject": "other",
+                          "value": false
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "give_item",
+            "title": "Give_item",
+            "dataType": 2,
+            "samples": {
+              "/vanilla/behavior_pack/entities/allay.json": [
+                {
+                  "path": "give_item",
+                  "content": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "take_item",
+            "title": "Take_item",
+            "dataType": 2,
+            "samples": {
+              "/vanilla/behavior_pack/entities/allay.json": [
+                {
+                  "path": "take_item",
+                  "content": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "interact_text",
+            "title": "Interact_text",
+            "dataType": 2,
+            "samples": {
+              "/vanilla/behavior_pack/entities/allay.json": [
+                {
+                  "path": "interact_text",
+                  "content": "action.interact.allay"
+                }
+              ]
+            }
+          },
+          {
+            "id": "play_sounds",
+            "title": "Play Sounds",
+            "dataType": 2
+          },
+          {
+            "id": "hurt_item",
+            "title": "Hurt Item",
+            "dataType": 7
+          },
+          {
+            "id": "swing",
+            "title": "Swing",
+            "dataType": 2
+          },
+          {
+            "id": "spawn_items",
+            "title": "Spawn Items",
+            "dataType": 16,
+            "subForm": {
+              "id": "spawn_items",
+              "title": "Spawn_items",
+              "fields": [
+                {
+                  "id": "table",
+                  "title": "Table",
+                  "dataType": 2,
+                  "samples": {
+                    "/vanilla/behavior_pack/entities/armadillo.json": [
+                      {
+                        "path": "table",
+                        "content": "loot_tables/entities/armadillo_brush.json"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "use_item",
+            "title": "Use Item",
+            "dataType": 2
+          },
+          {
+            "id": "particle_on_start",
+            "title": "Particle On Start",
+            "dataType": 16,
+            "subForm": {
+              "id": "particle_on_start",
+              "title": "Particle_on_start",
+              "fields": [
+                {
+                  "id": "particle_type",
+                  "title": "Particle_type",
+                  "dataType": 2,
+                  "samples": {
+                    "/vanilla/behavior_pack/entities/bee.json": [
+                      {
+                        "path": "particle_type",
+                        "content": "food"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:interact",
     "title": "Interact",
@@ -643,7 +948,7 @@
                 "drop_item_slot": "0",
                 "drop_item_y_offset": 2,
                 "interact_text": "action.interact.removesaddle",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               },
               {
@@ -684,7 +989,7 @@
                 "drop_item_slot": "0",
                 "drop_item_y_offset": 1,
                 "interact_text": "action.interact.removesaddle",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               }
             ]
@@ -829,7 +1134,7 @@
                 "drop_item_slot": "0",
                 "drop_item_y_offset": 1.1,
                 "interact_text": "action.interact.removesaddle",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               }
             ]
@@ -903,7 +1208,7 @@
                 "drop_item_slot": "0",
                 "drop_item_y_offset": 1.1,
                 "interact_text": "action.interact.removesaddle",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               },
               {
@@ -1006,7 +1311,7 @@
                 "drop_item_slot": "0",
                 "drop_item_y_offset": 1.1,
                 "interact_text": "action.interact.removesaddle",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               }
             ]
@@ -1252,7 +1557,6 @@
           "content": {
             "interactions": [
               {
-                "play_sounds": "armor.equip_generic",
                 "on_interact": {
                   "filters": {
                     "all_of": [
@@ -1322,7 +1626,8 @@
                   "target": "self"
                 },
                 "equip_item_slot": "1",
-                "interact_text": "action.interact.equiphorsearmor"
+                "interact_text": "action.interact.equiphorsearmor",
+                "play_sounds": "armor.equip_generic"
               },
               {
                 "on_interact": {
@@ -1380,11 +1685,10 @@
                 "drop_item_slot": "1",
                 "drop_item_y_offset": 1.1,
                 "interact_text": "action.interact.removehorsearmor",
-                "play_sounds": "shear",
+                "play_sounds": "armor.unequip_generic",
                 "vibration": "shear"
               },
               {
-                "play_sounds": "saddle",
                 "on_interact": {
                   "filters": {
                     "all_of": [
@@ -1411,7 +1715,8 @@
                   "target": "self"
                 },
                 "equip_item_slot": "0",
-                "interact_text": "action.interact.saddle"
+                "interact_text": "action.interact.saddle",
+                "play_sounds": "saddle"
               },
               {
                 "on_interact": {
@@ -1447,7 +1752,7 @@
                 "drop_item_slot": "0",
                 "drop_item_y_offset": 1.1,
                 "interact_text": "action.interact.removesaddle",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               }
             ]
@@ -1587,7 +1892,7 @@
                 "drop_item_slot": "0",
                 "drop_item_y_offset": 1.1,
                 "interact_text": "action.interact.removecarpet",
-                "play_sounds": "shear",
+                "play_sounds": "armor.unequip_generic",
                 "vibration": "shear"
               }
             ]
@@ -1666,7 +1971,7 @@
                 "drop_item_slot": "0",
                 "drop_item_y_offset": 1.1,
                 "interact_text": "action.interact.removecarpet",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               }
             ]
@@ -2463,7 +2768,7 @@
                 "drop_item_slot": "0",
                 "drop_item_y_offset": 1.1,
                 "interact_text": "action.interact.removesaddle",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               }
             ]
@@ -2542,7 +2847,7 @@
                 "drop_item_slot": "0",
                 "drop_item_y_offset": 1.1,
                 "interact_text": "action.interact.removesaddle",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               }
             ]
@@ -2605,7 +2910,7 @@
                   "table": "loot_tables/entities/saddle.json"
                 },
                 "interact_text": "action.interact.removesaddle",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               }
             ]
@@ -3244,7 +3549,7 @@
                   "y_offset": 1.7
                 },
                 "interact_text": "action.interact.removesaddle",
-                "play_sounds": "shear",
+                "play_sounds": "unsaddle",
                 "vibration": "shear"
               }
             ]
@@ -4728,6 +5033,43 @@
                 "use_item": true
               }
             ]
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/",
+          "content": {
+            "interactions": {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "flint_and_steel"
+                    },
+                    {
+                      "test": "has_component",
+                      "operator": "!=",
+                      "value": "minecraft:explode"
+                    }
+                  ]
+                },
+                "event": "minecraft:start_exploding_forced",
+                "target": "self"
+              },
+              "hurt_item": 1,
+              "swing": true,
+              "play_sounds": "ignite",
+              "interact_text": "action.interact.campghost"
+            }
           }
         }
       ]

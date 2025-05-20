@@ -4089,6 +4089,48 @@
             "value": "villager"
           }
         }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "lightning"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "ocelot"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "cat"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        }
       ]
     }
   }

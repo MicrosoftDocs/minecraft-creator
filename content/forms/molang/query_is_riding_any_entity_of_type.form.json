@@ -1,0 +1,10 @@
+{
+  "id": "query.is_riding_any_entity_of_type",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_riding_any_entity_of_type",
+    "title": "Is Riding Any Entity Of Type Query",
+    "description": "Returns whether or not the entity is currently riding an entity of any of the designated types.",
+    "fields": []
+  }
+}

@@ -19,7 +19,7 @@ Compels an entity to look at the player by rotating the `head` bone pose within 
 | angle_of_view_horizontal | 360 | Integer number | The angle in degrees that the mob can see in the Y-axis (up-down). | Ravager: `45` | 
 | angle_of_view_vertical | 360 | Integer number | The angle in degrees that the mob can see in the X-axis (left-right). |  | 
 | look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at the nearest player. | Bogged: `8`, Breeze: `16`, Cave Spider: `6` | 
-| look_time | *not set* | Range of integers | Time range to look at the nearest player. |  | 
+| look_time | *not set* | Range of integers | Time range to look at the nearest player. | Campghost: `[0,100]` | 
 | max_look_time | *not set* | Decimal number |  | Armadillo: `80` | 
 | min_look_time | *not set* | Decimal number |  | Armadillo: `40` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Allay: `8`, Armadillo: `7`, Axolotl: `10` | 

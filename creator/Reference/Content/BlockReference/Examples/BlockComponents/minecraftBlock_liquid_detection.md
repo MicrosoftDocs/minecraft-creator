@@ -50,3 +50,17 @@ Experimental toggles required: Upcoming Creator Features (in format versions bef
   ]
 }
 ```
+
+#### [Block Leaf Pile](https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json)
+
+
+```json
+"minecraft:liquid_detection": {
+  "detection_rules": [
+    {
+      "liquid_type": "water",
+      "on_liquid_touches": "popped"
+    }
+  ]
+}
+```

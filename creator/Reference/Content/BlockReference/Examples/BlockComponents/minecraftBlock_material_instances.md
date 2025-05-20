@@ -321,6 +321,19 @@ A material instance definition to map to a material instance in a geometry file.
 }
 ```
 
+#### [Block Leaf Pile](https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json)
+
+
+```json
+"minecraft:material_instances": {
+  "*": {
+    "texture": "leaf_pile",
+    "render_method": "alpha_test",
+    "tint_method": "default_foliage"
+  }
+}
+```
+
 #### [Tuna Roll](https://github.com/microsoft/minecraft-samples/tree/main/culled_block_sample/culled_block_behavior_pack/blocks/tuna_roll.json)
 
 
@@ -347,22 +360,6 @@ A material instance definition to map to a material instance in a geometry file.
     "render_method": "blend",
     "face_dimming": true,
     "ambient_occlusion": 1
-  }
-}
-```
-
-#### [California Roll](https://github.com/microsoft/minecraft-samples/tree/main/custom_blocks/behavior_packs/custom_blocks/blocks/california_roll.json)
-
-
-```json
-"minecraft:material_instances": {
-  "north": "sushi_side",
-  "south": "sushi_side",
-  "*": {
-    "texture": "sushi_wrap"
-  },
-  "sushi_side": {
-    "texture": "california_roll"
   }
 }
 ```

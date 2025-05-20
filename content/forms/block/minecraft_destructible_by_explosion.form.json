@@ -58,6 +58,12 @@
               "content": 1.1
             }
           ],
+          "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+            {
+              "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+              "content": 0.5
+            }
+          ],
           "/samples/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json": [
             {
               "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
@@ -154,6 +160,14 @@
           "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
           "content": {
             "explosion_resistance": 1.1
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:destructible_by_explosion/",
+          "content": {
+            "explosion_resistance": 0.5
           }
         }
       ],

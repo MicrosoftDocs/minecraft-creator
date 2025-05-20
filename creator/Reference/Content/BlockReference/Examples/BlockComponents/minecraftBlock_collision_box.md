@@ -20,8 +20,8 @@ This item can also be represented as a `Boolean true/false`.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| origin | [-8, 0, -8] | x, y, z coordinate array | Minimal position of the bounds of the collision box. "origin" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. |  | 
-| size | [16, 16, 16] | x, y, z coordinate array | Size of each side of the collision box. Size is specified as [x, y, z]. "origin" + "size" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. |  | 
+| origin | [-8, 0, -8] | x, y, z coordinate array | Minimal position of the bounds of the collision box. "origin" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. | Block Leaf Pile: `[-8,2,-8]` | 
+| size | [16, 16, 16] | x, y, z coordinate array | Size of each side of the collision box. Size is specified as [x, y, z]. "origin" + "size" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive. | Block Leaf Pile: `[16,4,16]` | 
 
 ## Samples
 
@@ -46,4 +46,22 @@ This item can also be represented as a `Boolean true/false`.
 
 ```json
 "minecraft:collision_box": true
+```
+
+#### [Block Leaf Pile](https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json)
+
+
+```json
+"minecraft:collision_box": {
+  "origin": [
+    -8,
+    2,
+    -8
+  ],
+  "size": [
+    16,
+    4,
+    16
+  ]
+}
 ```

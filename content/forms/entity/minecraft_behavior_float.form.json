@@ -541,6 +541,14 @@
             "priority": 0
           }
         }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.float/",
+          "content": {
+            "priority": 0
+          }
+        }
       ]
     }
   }

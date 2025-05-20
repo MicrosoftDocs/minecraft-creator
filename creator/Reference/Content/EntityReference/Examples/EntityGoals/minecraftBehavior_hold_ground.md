@@ -25,7 +25,7 @@ Compels an entity to stop at their current location, turn to face a mob they are
 | broadcast_range | 0 | Decimal number | Range in blocks for how far to broadcast. | Pillager: `8` | 
 | min_radius | 10 | Decimal number | Minimum distance the target must be for the mob to run this goal. | Pillager: `10` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Pillager: `5`, `6` | 
-| within_radius_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to run when target is within the radius. This event is broadcasted if broadcast is true. | Pillager: `{"event":"minecraft:ranged_mode","target":"self"}` | 
+| within_radius_event | *not set* | Minecraft Event Reference | Event to run when target is within the radius. This event is broadcasted if broadcast is true. | Pillager: `{"event":"minecraft:ranged_mode","target":"self"}` | 
 
 ## Samples
 

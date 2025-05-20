@@ -88,6 +88,10 @@ The array of items that can be used to heal this entity.
       "heal_amount": 3
     },
     {
+      "item": "carrot",
+      "heal_amount": 3
+    },
+    {
       "item": "golden_carrot",
       "heal_amount": 4
     },

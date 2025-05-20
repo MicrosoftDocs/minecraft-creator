@@ -18,7 +18,7 @@
     {
       "id": "spawn_event",
       "description": "Trigger event when a rider is acquired",
-      "dataType": 8,
+      "dataType": 39,
       "lookupId": "entityTypeEvents"
     }
   ],
@@ -40,11 +40,11 @@
             },
             {
               "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
-              "content": "minecraft:skeleton.stray"
+              "content": "minecraft:stray"
             },
             {
               "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
-              "content": "minecraft:skeleton.wither"
+              "content": "minecraft:wither_skeleton"
             }
           ],
           "/vanilla/behavior_pack/entities/ravager.json": [
@@ -76,11 +76,11 @@
             },
             {
               "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
-              "content": "minecraft:skeleton.stray"
+              "content": "minecraft:stray"
             },
             {
               "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
-              "content": "minecraft:skeleton.wither"
+              "content": "minecraft:wither_skeleton"
             }
           ],
           "/vanilla/behavior_pack/entities/strider.json": [
@@ -143,13 +143,13 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
           "content": {
-            "entity_type": "minecraft:skeleton.stray"
+            "entity_type": "minecraft:stray"
           }
         },
         {
           "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
           "content": {
-            "entity_type": "minecraft:skeleton.wither"
+            "entity_type": "minecraft:wither_skeleton"
           }
         }
       ],
@@ -205,13 +205,13 @@
         {
           "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
           "content": {
-            "entity_type": "minecraft:skeleton.stray"
+            "entity_type": "minecraft:stray"
           }
         },
         {
           "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
           "content": {
-            "entity_type": "minecraft:skeleton.wither"
+            "entity_type": "minecraft:wither_skeleton"
           }
         }
       ],

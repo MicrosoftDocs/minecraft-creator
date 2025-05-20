@@ -1,0 +1,25 @@
+{
+  "id": "minecraft:movable",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:movable",
+    "title": "Movable",
+    "description": "The description identifier of the movable component\r\nExperimental toggles required: Upcoming Creator Features",
+    "fields": [
+      {
+        "id": "movement_type",
+        "title": "Movement Type",
+        "description": "[Required] How the block reacts to being pushed by another block like a piston. Must be one of the following options:\r\n\"push_pull\" - The default value for this field. The block will be pushed and pulled by a piston.\r\n\"push\" - The block will only be pulled by a piston and will ignore a sticky piston.\r\n\"popped\" - The block is destroyed when moved by a piston.\r\n\"immovable\" - The block is unaffected by a piston.",
+        "defaultValue": "push_pull",
+        "dataType": 2
+      },
+      {
+        "id": "sticky",
+        "title": "Sticky",
+        "description": "[Optional] How the block should handle adjacent blocks around it when being pushed by another block like a piston. Must be one of the following options:\r\n\"same\" - Adjacent blocks to this block will be moved when moved. This excludes other blocks with the \"same\" property. This will only work with the movement_type: \"push_pull\".\r\n\"none\" - The default and will not move adjacent blocks.",
+        "defaultValue": "none",
+        "dataType": 2
+      }
+    ]
+  }
+}
