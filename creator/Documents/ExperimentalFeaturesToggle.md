@@ -4,12 +4,13 @@ ms.author: mikeam
 title: "Experimental Features in Minecraft: Bedrock Edition"
 description: "An overview of experimental content available to creators in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/12/2025
 ---
 
 # Experimental Features in Minecraft: Bedrock Edition
 
 > [!NOTE]
-> To see full documentation about experimental features and APIs, select the **Minecraft Bedrock Experimental APIs** option or use [this link](/minecraft/creator/documents/experimentalfeaturestoggle?view=minecraft-bedrock-experimental).
+> To see full documentation about experimental features and APIs, select the **Minecraft Bedrock Experimental APIs** version on the sidebar, or [switch using this link](/minecraft/creator/documents/experimentalfeaturestoggle?view=minecraft-bedrock-experimental&preserve-view=true).
 
 ![image showing the Document Versions Dropdown.](Media/ExperimentalFeatures/ExperimentalApiDocs.png)
 
@@ -18,53 +19,55 @@ With each retail version of Minecraft: Bedrock Edition, there are a few features
 > [!NOTE]
 > The Experiments toggle list is subject to frequent changes and could have entirely different options from the ones in your own version of Minecraft. Also, the screen shots shown here might look different.
 
-## Experimental Features available in Minecraft: Bedrock Edition
+## Available experimental features
 
 There are two sets of experimental features available, depending on whether you are using a retail version of Minecraft or the latest version of Minecraft Preview.
 
 ### Retail
 
-These are the currently available Experimental toggles in the **1.21.20** retail build at the time of this writing.
+These are the currently available Experimental toggles in the **1.21.80** retail build at the time of this writing.
 
 GAMEPLAY - Change the way your world works
 
 | Experimental Toggle | Description |
-|:------|:------|
-|Villager Trade Rebalancing |Contains updated trades for villages for the purpose of rebalancing|
+| :------------------ | :---------- |
+| Villager Trade Rebalancing | Contains updated trades for villages for the purpose of rebalancing |
+| Drop 2 2025 | Experience flying with the Happy Ghast, coming in the second game drop of 2025 |
+| Locator Bar | Show the direction of other players in multiplayer |
 
 ADD-ON CREATORS - For creators of game packs and other add-ons
 
 | Experimental Toggle | Description |
-|:------|:------|
-|Holiday Creator Features | Add data-driven block and item technology to customize block shape, rotation, damage and more |
-|Custom Biomes| Create custom biomes and change world generation |
-|Upcoming Creator Features | Includes adjustable fog parameters |
-|Beta APIs| Use "-beta" versions of API modules in add-on packs |
-|Creator Cameras: New Third Person Presets | Contains new third person over the shoulder follow-orbit camera preset |
-|Render Dragon Features for Creators | Enable the deferred rendering pipeline. Requires a PBR-enabled resource pack and compatible hardware. |
+| :------------------ | :---------- |
+| Custom Biomes | Create custom biomes and change world generation |
+| Upcoming Creator Features | Includes adjustable fog parameters |
+| Beta APIs | Use "-beta" versions of API modules in add-on packs |
+| Custom Components V2 | Enables custom components V2 for scripting (V2.0.0-beta and higher) and JSON (V1.21.80 and higher) APIs |
+| Experimental Creator Camera Features | Enables the use of the latest custom camera features |
+| Data-Driven Jigsaw Structures | Loads Jigsaw Structures from the behavior pack worldgen folder |
 
 ### Preview
 
-These are the currently available Experimental toggles in the **1.21.20.23** preview build at the time of this writing.
+These are the currently available Experimental toggles in the **1.21.90.23** preview build at the time of this writing.
 
 GAMEPLAY - Change the way your world works
 
 | Experimental Toggle | Description |
-|:------|:------|
+| :------------------ | :---------- |
 |Villager Trade Rebalancing |Contains updated trades for villages for the purpose of rebalancing|
 
 ADD-ON CREATORS - For creators of game packs and other add-ons
 
-| Experimental Toggle |Features |
-|:------|:------|
-|Custom Biomes| Create custom biomes and change world generation |
-|Upcoming Creator Features | Includes adjustable fog parameters |
-|Beta APIs| Use "-beta" versions of API modules in add-on packs |
-|Creator Cameras: New Third Person Presets | Contains new third person over the shoulder follow_orbit camera preset|
-|Creator Cameras: Focus Target Camera | Enables behavior for the existing free camera to target an entity|
-|Render Dragon Features for Creators | Enable the deferred rendering pipeline. Requires a PBR-enables resource pack and compatible hardware.|
+| Experimental Toggle | Description |
+| :------------------ | :---------- |
+| Custom Biomes | Create custom biomes and change world generation |
+| Upcoming Creator Features | Includes actor properties and adjustable fog parameters |
+| Beta APIs| Use "-beta" versions of API modules in add-on packs |
+| Experimental Creator Camera Features | Enables the use of the latest custom camera features |
+| Render Dragon Features for Creators | Enable the deferred rendering pipeline. Requires a PBR-enables resource pack and compatible hardware.|
+| Data-Driven Jigsaw Structures | Loads Jigsaw Structures from the behavior pack worldgen folder |
 
-## How do I activate an Experimental Features toggle for my world?
+## How do I activate an experimental features toggle for my world?
 
 You can activate an experimental toggle for any of your new or existing worlds.
 
@@ -73,7 +76,7 @@ You can activate an experimental toggle for any of your new or existing worlds.
 
 If you're planning to build content that you want to share with the community, it would be best to do it in a non-experimental world.
 
-### Toggle Experimental Features in a New World
+### Toggle experimental features in a new world
 
 If you are building a new world from scratch to test experimental features, you can toggle which features you want enabled in the **Game** Settings.
 
@@ -85,7 +88,7 @@ If you are building a new world from scratch to test experimental features, you 
 
    ![image showing a pop up to confirm if you want to activate experimental features in Minecraft.](Media/ExperimentalFeatures/ActivateExperiments_121.png)
 
-### Toggle Experimental Features in an Existing World
+### Toggle experimental features in an existing world
 
 If you want to add experimental features to an existing world, open that world's game settings and activate the toggles just like you would for a new world.
 
@@ -96,7 +99,7 @@ After you select **Activate Experiments**, a copy of your existing world will be
 
 ![image showing a duplicated world](Media/ExperimentalFeatures/CopyOfWorld.png)
 
-### Verify that the World has Experimental Features Enabled
+### Verify the world has experimental features enabled
 
 After you've created a world that has an experimental feature toggle enabled, your world will get a **tag** next to the game mode in your Worlds list that says **Experimental**.
 
@@ -107,7 +110,7 @@ Another way to identify if your world is using experimental toggles is to visit 
 > [!IMPORTANT]
 > Worlds that use experimental features cannot be restored to a non-experimental state.
 
-## What's Next?
+## What's next?
 
 If you like experimenting and testing things in Minecraft, you could learn more about the GameTest Framework.
 

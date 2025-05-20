@@ -4,6 +4,7 @@ ms.author: mikeam
 title: "More Sources of Info on Minecraft: Bedrock Edition"
 description: "An overview of additional sources of information on Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/09/2025
 ---
 
 # More Sources of Information about Minecraft: Bedrock Edition
@@ -14,7 +15,7 @@ First, we have a YouTube channel! Check out the [Minecraft Creator Channel](http
 
 Here are many other handy references and sources of information that you can use when building Minecraft solutions.
 
-## bedrock-samples GitHub repository
+## Bedrock samples GitHub repository
 
 The [github.com/mojang/bedrock-samples](https://github.com/mojang/bedrock-samples) repository is a set of example definitions and assets adapted from the vanilla experience of Minecraft.
 
@@ -22,15 +23,15 @@ Importantly, there are two "branches" in the repository: a ["main" branch](https
 
 The `bedrock-samples` GitHub repository is divided into several subfolders:
 
-### bedrock-samples Packs
+### Sample packs
 
 The samples you see in the [behavior_pack](https://github.com/Mojang/bedrock-samples/tree/main/behavior_pack) and [resource_pack](https://github.com/Mojang/bedrock-samples/tree/main/resource_pack) are derived from some in-game samples. Keep in mind that sometimes these samples are not comprehensive across all of what "vanilla gameplay" encompasses, or across all of the platform capabilities (for example, they don't demonstrate how you can build script-powered gameplay experiences.. but [you can](./ScriptingIntroduction.md))! Nevertheless, we'd strongly recommend downloading the bedrock-samples packs to use as "sample references" you can search through in a tool like Visual Studio Code to find an uncommonly used property on an item JSON component, for example.
 
-### bedrock-samples Metadata
+### Sample metadata
 
 Where possible, we try to publish more and more lists of "Minecraft things" within the [`metadata` folder](https://github.com/Mojang/bedrock-samples/tree/main/metadata). The various folders whose name ends in `_modules` contain metadata such as canonical lists of ["default Minecraft mobs"](https://github.com/Mojang/bedrock-samples/blob/main/metadata/vanilladata_modules/mojang-entities.json) or a listing of [available Minecraft commands](https://github.com/Mojang/bedrock-samples/blob/main/metadata/command_modules/mojang-commands.json). Typically these files are more useful for tooling authors or creators that build very comprehensive add-ons or hosted experiences. Keep in mind that the schema of these various JSON files may change over time, so if you build tools that parse them, they would likely need to be updated, from time to time.
 
-### bedrock-samples Documentation
+### Sample documentation
 
 The HTML files contained in the [documentation folder](https://github.com/Mojang/bedrock-samples/tree/main/documentation) are replicated and organized into the [Reference](./../Reference/index.yml) section of this site. However, if you need information on a brand new JSON definition in Minecraft Preview (but hasn't been integrated into this site) it may first show up in the [preview HTML documentation](https://github.com/Mojang/bedrock-samples/tree/preview/documentation).
 
@@ -38,23 +39,22 @@ The HTML files contained in the [documentation folder](https://github.com/Mojang
 
 Because the repository is hosted on GitHub, you can use GitHub site features to view historical and change items for Minecraft. For example, the [preview commits page](https://github.com/Mojang/bedrock-samples/commits/preview/) will show you, week over week, what's new from a file perspective in Minecraft Preview. You can also see a summary of what's new for Minecraft from the [Minecraft Beta Changelog notes](https://aka.ms/MinecraftBeta).
 
-## Network Protocol Documentation
-
-Like many games, Minecraft is an engine split into two parts: there is a "Minecraft Server" where all of the game logic and world state definitions are hosted, and where management of players in the world happens, and a "Minecraft Client" that connects to the server, displays all of the graphics, plays sounds, and handles player inputs. This is true whether you're playing a game on a hosted server, or if you're playing a single player game on your phone. The Minecraft Client speaks to the Minecraft Server via a "protocol" - a pipeline of messages that conform to one of hundreds of types of "packet formats". For example, when a player types in a "slash command" in their client, it results in a Command Request packet being sent from client to server so that the server can process and run the command.
-
-Implementing the Minecraft Protocol is a highly advanced task and not supported. Why? Well, it is basically guaranteed to break every time a new version of Minecraft is released. Or there may be new capabilities that are introduced over time that are hard to replicate in a "protocol implementation." That said, documentation on the Minecraft Protocol formats is available from a GitHub repository at [https://github.com/Mojang/bedrock-protocol-docs/](https://github.com/Mojang/bedrock-protocol-docs/). If nothing else, it can be an interesting way to peek at the internals of how Minecraft: Bedrock Edition works at a more fundamental level.
+## Network protocol documentation
 
 >[!IMPORTANT]
-> The Minecraft protocol is not a formally supported API. The Minecraft Protocol changes from one release to the next - sometimes quite significantly - with no guarantee of backwards compatibility or support.
-> Use at your own risk.
+> The Minecraft protocol is not a formally supported API. The Minecraft Protocol changes from one release to the next&mdash;sometimes quite significantly&mdash;with no guarantee of backwards compatibility or support. Use at your own risk!
 
-## Sample Repos
+Like many games, Minecraft is an engine split into two parts: there is a "Minecraft Server" where all of the game logic and world state definitions are hosted, and where management of players in the world happens, and a "Minecraft Client" that connects to the server, displays all of the graphics, plays sounds, and handles player inputs. This is true whether you're playing a game on a hosted server, or if you're playing a single player game on your phone. The Minecraft Client speaks to the Minecraft Server via a "protocol"&mdash;a pipeline of messages that conform to one of hundreds of types of "packet formats". For example, when a player types in a "slash command" in their client, it results in a Command Request packet being sent from client to server so that the server can process and run the command.
+
+Documentation on the Minecraft Protocol formats is available from a GitHub repository at [https://github.com/Mojang/bedrock-protocol-docs/](https://github.com/Mojang/bedrock-protocol-docs/). **Implementing the Protocol in your own software and tools is not supported.** In addition to being extremely difficult, it's very likely to break every time a new version of Minecraft is released. New capabilities may also be introduced that are hard to replicate in an unofficial implementation. The documentation exists to give you a look at how the client/server internals of Minecraft: Bedrock Edition work at a more fundamental level.
+
+## Other sample repos
 
 There are other sample repositories officially hosted by Mojang:
 
 ### minecraft-samples
 
-The [minecraft-samples](https://github.com/microsoft/minecraft-samples) repository shows a number of samples otherwise discussed in this documentation across a number of different capabilities of Minecraft. You can see example custom entities, items, and mobs as well as some basic "starters" for creating your own projects.
+The [minecraft-samples](https://github.com/microsoft/minecraft-samples) repository shows a number of samples discussed in this documentation demonstrating a number of different capabilities of Minecraft. You can see example custom entities, items, and mobs as well as some basic "starters" for creating your own projects.
 
 ### minecraft-scripting-samples
 
@@ -66,16 +66,16 @@ The [minecraft-gametests](https://github.com/microsoft/minecraft-gametests) repo
 
 ## Community
 
-One of the best things about Minecraft is that there is a large, passionate community of creators who build all kinds of things - and create sites, write docs, record podcasts, and create videos of their progress. They also discuss and ask questions on forums such as Discord or Reddit. Often, the best way to find information is to search on your favorite search engine or video website for just about any topic, and chances are, someone has probably tried it and talked about it.
+One of the best things about Minecraft is that there is a large, passionate community of creators who build all kinds of things&mdash;and create sites, write docs, record podcasts, and create videos of their progress. They also discuss and ask questions on forums such as Discord or Reddit. Often, the best way to find information is to search on your favorite search engine or video website for just about any topic, and chances are, someone has probably tried it and talked about it.
+
+>[!IMPORTANT]
+> This section contains links to external community-run sites and forums. Use at your own discretion.
 
 Within Discord, you can visit channels such as `#bedrock-mechanics` on the Official Minecraft Discord at [https://discord.gg/minecraft](https://discord.gg/minecraft).
 
 You can see some great community-run sites via [bedrock.dev](https://wiki.bedrock.dev) and the [Minecraft wiki (minecraft.wiki)](https://minecraft.wiki) amongst many others.
 
-There is also an [amazing Discord community focused on building Add-Ons for Bedrock - (bedrock.dev)](https://wiki.bedrock.dev/discord.html).
-
->[!IMPORTANT]
-> This section contains links to external, community run sites and forums. Use at your own discretion.
+There is also an [amazing Discord community focused on building Add-Ons for Bedrock at bedrock.dev](https://wiki.bedrock.dev/discord.html).
 
 ## Tools
 
