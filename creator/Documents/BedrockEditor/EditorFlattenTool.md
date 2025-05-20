@@ -19,7 +19,7 @@ The flatten tool is used to create an area of flat terrain around the cursor.
 
 1. Switch to Flatten by clicking the button in the toolbar on the left of the Editor.
     > [!Tip]
-    > Pressing **Ctrl+Shift+H** switches to Flatten. 
+    > Pressing **Ctrl+Shift+H** also switches to Flatten. 
 
 2. Select the **Radius** for the area you want to flatten, then adjust the **Height Threshold**.
 

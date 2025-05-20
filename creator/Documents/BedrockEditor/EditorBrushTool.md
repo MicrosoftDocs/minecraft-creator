@@ -9,10 +9,7 @@ ms.date: 05/16/2025
 
 # Brush Tool
 
-The Brush is used to draw shapes with a selected block type.
-
-> [!Tip]
-> Pressing **Ctrl+B** switches to the Brush.
+Brush is used to draw shapes with a selected block type.
 
 You can change the brush size, ranging from 1 to 16. Brush sizes are rendered as squares of the selected brush size. This means a brush size of 1 draws a 1x1 block shape. If you select a brush size of 3, you get a 3x3 block shape, or 9 total blocks arranged as a cube.
 
@@ -27,12 +24,21 @@ If the Face Mode checkbox is selected, the brush cursor acts like the Adjacent s
 Practice 1: A humble tree...
 
 1. Move to a clear area.
-1. Set the Brush Size to 1, check the box for Face Mode, and choose 'log' for the Block Type.
-1. Find a clear place on the ground and place one log block.
-1. Draw another log on top of that one.
-1. Draw two more log blocks on top of each other to create a tree trunk.
+
+2. Switch to Brush by clicking the button in the toolbar on the left of the Editor.
+    > [!Tip]
+    > Pressing **Ctrl+B** also switches to Brush. 
+
+3. Set the Brush Size to 1, check the box for Face Mode, and choose 'log' for the Block Type.
+
+4. Find a clear place on the ground and place one log block.
+
+5. Draw another log on top of that one.
+
+6. Draw two more log blocks on top of each other to create a tree trunk.
 ![Brush tool was used to draw logs stacked up like a tree trunk](Media/editor_overview_brush_log.png)
-1. Change the Block Size to 3 and the Block Type to 'leaves' and click the top of your log blocks to put leaves around the top of your tree.
+
+7. Change the Block Size to 3 and the Block Type to 'leaves' and click the top of your log blocks to put leaves around the top of your tree.
 ![Brush tool was used to draw leaves at the top of the tree trunk](Media/editor_overview_brush_leaves.png)
 
 Practice 2: Is it really Hollow?
