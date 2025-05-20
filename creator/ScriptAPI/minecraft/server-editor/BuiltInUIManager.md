@@ -16,6 +16,8 @@ Represents a UI session for a given player
 - [navigateToDocumentation](#navigatetodocumentation)
 - [navigateToFeedback](#navigatetofeedback)
 - [navigateToPauseScreen](#navigatetopausescreen)
+- [navigateToSamples](#navigatetosamples)
+- [saveAndExit](#saveandexit)
 - [updateLogPanelVisibility](#updatelogpanelvisibility)
 - [updateUISettingsPanelVisibility](#updateuisettingspanelvisibility)
 - [updateWelcomePanelVisibility](#updatewelcomepanelvisibility)
@@ -53,6 +55,24 @@ navigateToPauseScreen(): void
 `
 
 Navigates to the pause screen
+
+**Returns** *void*
+
+### **navigateToSamples**
+`
+navigateToSamples(): void
+`
+
+Navigates to the github-samples site
+
+**Returns** *void*
+
+### **saveAndExit**
+`
+saveAndExit(): void
+`
+
+Saves levels & exits back to Editor main menu.
 
 **Returns** *void*
 

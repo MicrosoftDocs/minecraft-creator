@@ -10,7 +10,12 @@ description: Contents of the @minecraft/server.CameraEaseOptions class (Version 
 # CameraEaseOptions Interface (Version 1.x.x)
 
 > [!IMPORTANT]
-> This documentation is for an older version of this module. Go to the latest documentation [*here*](../../../scriptapi/minecraft/server/CameraEaseOptions.md).
+> This documentation is for an older version of this module.
+
+> [!CAUTION]
+> This interface is deprecated and will be removed in 2.0.0.
+> 
+> Renamed to EaseOptions for V2.0 scripting.
 
 Contains options associated with a camera ease operation.
 
@@ -23,9 +28,19 @@ Time for the ease operation.
 
 Type: *number*
 
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+> 
+> Renamed to EaseOptions for V2.0 scripting.
+
 ### **easeType**
 `easeType?: EasingType;`
 
 Type of ease operation to use.
 
 Type: [*EasingType*](EasingType.md)
+
+> [!CAUTION]
+> This property is deprecated and will be removed in 2.0.0.
+> 
+> Renamed to EaseOptions for V2.0 scripting.

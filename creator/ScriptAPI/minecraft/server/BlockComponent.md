@@ -18,6 +18,7 @@ description: Contents of the @minecraft/server.BlockComponent class.
 - [*BlockFluidContainerComponent*](BlockFluidContainerComponent.md)
 - [*BlockInventoryComponent*](BlockInventoryComponent.md)
 - [*BlockMapColorComponent*](BlockMapColorComponent.md)
+- [*BlockMovableComponent*](BlockMovableComponent.md)
 - [*BlockPistonComponent*](BlockPistonComponent.md)
 - [*BlockRecordPlayerComponent*](BlockRecordPlayerComponent.md)
 - [*BlockSignComponent*](BlockSignComponent.md)

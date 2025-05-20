@@ -14,6 +14,40 @@ description: Contents of the @minecraft/server.EntityEquippableComponent class.
 
 Provides access to a mob's equipment slots. This component exists for all mob entities.
 
+## Properties
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **totalArmor**
+`read-only totalArmor: number;`
+
+Returns the total Armor level of the owner.
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **totalToughness**
+`read-only totalToughness: number;`
+
+Returns the total Toughness level of the owner.
+
+Type: *number*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
 ## Methods
 - [getEquipment](#getequipment)
 - [getEquipmentSlot](#getequipmentslot)

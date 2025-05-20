@@ -30,6 +30,18 @@ Identifier of the dimension.
 
 Type: *string*
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **localizationKey**
+`read-only localizationKey: string;`
+
+Key for the localization of a dimension's name used by language files.
+
+Type: *string*
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ## Methods
 - [containsBlock](#containsblock)
 - [createExplosion](#createexplosion)

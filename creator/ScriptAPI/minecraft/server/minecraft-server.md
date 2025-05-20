@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.1.0-beta"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.90-beta.25 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.90-beta.26 of Minecraft.
 
 ## Available Versions
 - `2.1.0-beta`
@@ -90,6 +90,7 @@ The following API versions are from a major version that is documented here: [*@
 - [LiquidType](LiquidType.md)
 - [MemoryTier](MemoryTier.md)
 - [MoonPhase](MoonPhase.md)
+- [MovementType](MovementType.md)
 - [NamespaceNameErrorReason](NamespaceNameErrorReason.md)
 - [ObjectiveSortOrder](ObjectiveSortOrder.md)
 - [PaletteColor](PaletteColor.md)
@@ -99,6 +100,7 @@ The following API versions are from a major version that is documented here: [*@
 - [ScoreboardIdentityType](ScoreboardIdentityType.md)
 - [ScriptEventSource](ScriptEventSource.md)
 - [SignSide](SignSide.md)
+- [StickyType](StickyType.md)
 - [StructureAnimationMode](StructureAnimationMode.md)
 - [StructureMirrorAxis](StructureMirrorAxis.md)
 - [StructureRotation](StructureRotation.md)
@@ -149,6 +151,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockInventoryComponent](BlockInventoryComponent.md)
 - [BlockLocationIterator](BlockLocationIterator.md)
 - [BlockMapColorComponent](BlockMapColorComponent.md)
+- [BlockMovableComponent](BlockMovableComponent.md)
 - [BlockPermutation](BlockPermutation.md)
 - [BlockPistonComponent](BlockPistonComponent.md)
 - [BlockRecordPlayerComponent](BlockRecordPlayerComponent.md)
@@ -205,6 +208,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityDieAfterEvent](EntityDieAfterEvent.md)
 - [EntityDieAfterEventSignal](EntityDieAfterEventSignal.md)
 - [EntityEquippableComponent](EntityEquippableComponent.md)
+- [EntityExhaustionComponent](EntityExhaustionComponent.md)
 - [EntityFireImmuneComponent](EntityFireImmuneComponent.md)
 - [EntityFloatsInLiquidComponent](EntityFloatsInLiquidComponent.md)
 - [EntityFlyingSpeedComponent](EntityFlyingSpeedComponent.md)
@@ -217,6 +221,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityHitBlockAfterEventSignal](EntityHitBlockAfterEventSignal.md)
 - [EntityHitEntityAfterEvent](EntityHitEntityAfterEvent.md)
 - [EntityHitEntityAfterEventSignal](EntityHitEntityAfterEventSignal.md)
+- [EntityHungerComponent](EntityHungerComponent.md)
 - [EntityHurtAfterEvent](EntityHurtAfterEvent.md)
 - [EntityHurtAfterEventSignal](EntityHurtAfterEventSignal.md)
 - [EntityInventoryComponent](EntityInventoryComponent.md)
@@ -266,6 +271,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityRemoveBeforeEventSignal](EntityRemoveBeforeEventSignal.md)
 - [EntityRideableComponent](EntityRideableComponent.md)
 - [EntityRidingComponent](EntityRidingComponent.md)
+- [EntitySaturationComponent](EntitySaturationComponent.md)
 - [EntityScaleComponent](EntityScaleComponent.md)
 - [EntitySkinIdComponent](EntitySkinIdComponent.md)
 - [EntitySpawnAfterEvent](EntitySpawnAfterEvent.md)
@@ -440,7 +446,6 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockHitInformation](BlockHitInformation.md)
 - [BlockRaycastHit](BlockRaycastHit.md)
 - [BlockRaycastOptions](BlockRaycastOptions.md)
-- [CameraEaseOptions](CameraEaseOptions.md)
 - [CameraFadeOptions](CameraFadeOptions.md)
 - [CameraFadeTimeOptions](CameraFadeTimeOptions.md)
 - [CameraFixedBoomOptions](CameraFixedBoomOptions.md)
@@ -456,6 +461,7 @@ The following API versions are from a major version that is documented here: [*@
 - [CustomCommandResult](CustomCommandResult.md)
 - [DefinitionModifier](DefinitionModifier.md)
 - [DimensionLocation](DimensionLocation.md)
+- [EaseOptions](EaseOptions.md)
 - [Enchantment](Enchantment.md)
 - [EntityApplyDamageByProjectileOptions](EntityApplyDamageByProjectileOptions.md)
 - [EntityApplyDamageOptions](EntityApplyDamageOptions.md)

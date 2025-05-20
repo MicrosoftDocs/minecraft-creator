@@ -184,12 +184,14 @@ Entity, presumably a villager, takes on the role of fletcher
 Entity becomes a goat fish
 - `minecraft:become_hostile`
 Entity becomes hostile
+- `minecraft:become_immobile`
 - `minecraft:become_leatherworker`
 Entity, presumably a villager, takes on the role of leatherworker
 - `minecraft:become_librarian`
 Entity, presumably a villager, takes on the role of librarian
 - `minecraft:become_mason`
 Entity, presumably a villager, takes on the role of mason
+- `minecraft:become_mobile`
 - `minecraft:become_moorish_idol`
 Entity becomes a moorish idol
 - `minecraft:become_neutral`
@@ -386,14 +388,12 @@ Entity is hurt
 Entity is instantly primed
 - `minecraft:on_leash`
 Entity is on a leash
-- `minecraft:on_no_player_detected_above`
 - `minecraft:on_normal_puff`
 Entity is on a normal puff
 - `minecraft:on_not_riding_player`
 Entity is on a non-riding player
 - `minecraft:on_passenger_dismount`
 - `minecraft:on_passenger_mount`
-- `minecraft:on_player_detected_above`
 - `minecraft:on_prime`
 Entity is primed
 - `minecraft:on_riding_player`

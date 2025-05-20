@@ -82,7 +82,7 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **setDefaultCamera**
 `
-setDefaultCamera(cameraPreset: string, easeOptions?: CameraEaseOptions): void
+setDefaultCamera(cameraPreset: string, easeOptions?: EaseOptions): void
 `
 
 Sets the current active camera for the specified player and resets the position and rotation to the values defined in the JSON.
@@ -91,7 +91,7 @@ Sets the current active camera for the specified player and resets the position 
 - **cameraPreset**: *string*
   
   Identifier of a camera preset file defined within JSON.
-- **easeOptions**?: [*CameraEaseOptions*](CameraEaseOptions.md) = `null`
+- **easeOptions**?: [*EaseOptions*](EaseOptions.md) = `null`
   
   Options to ease the camera back to its original position and rotation.
 

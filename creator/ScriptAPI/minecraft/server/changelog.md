@@ -61,6 +61,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Added *[`BlockMapColorComponent`](BlockMapColorComponent.md)*
+#### Added *[`BlockMovableComponent`](BlockMovableComponent.md)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Changed *[`ButtonPushAfterEventSignal`](ButtonPushAfterEventSignal.md)*
@@ -98,6 +99,7 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`CustomCommandRegistry`](CustomCommandRegistry.md)*
 #### Added *[`CustomComponentParameters`](CustomComponentParameters.md)*
 #### Changed *[`Dimension`](Dimension.md)*
+- Added property *[`localizationKey`](Dimension.md#localizationkey)*
 - Changed function *[`fillBlocks`](Dimension.md#fillblocks)*
   - Changed argument `volume` type from [*BlockVolumeBase*](BlockVolumeBase.md) to [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
@@ -134,15 +136,23 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`lookAt`](Entity.md#lookat)*
 - Removed function *runCommandAsync*
 - Added function *[`setDynamicProperties`](Entity.md#setdynamicproperties)*
+#### Changed *[`EntityAttributeComponent`](EntityAttributeComponent.md)*
+- Changed function *[`setCurrentValue`](EntityAttributeComponent.md#setcurrentvalue)*
+  - Changed return type from *boolean* (throws exceptions) to *boolean* (throws exceptions)
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
 - Added property *[`canBreathe`](EntityBreathableComponent.md#canbreathe)*
 #### Changed *[`EntityComponent`](EntityComponent.md)*
 - Changed type for *[`entity`](EntityComponent.md#entity)* from [*Entity*](Entity.md) to [*Entity*](Entity.md) (throws exceptions)
+#### Changed *[`EntityEquippableComponent`](EntityEquippableComponent.md)*
+- Added property *[`totalArmor`](EntityEquippableComponent.md#totalarmor)*
+- Added property *[`totalToughness`](EntityEquippableComponent.md#totaltoughness)*
+#### Added *[`EntityExhaustionComponent`](EntityExhaustionComponent.md)*
 #### Changed *[`EntityFrictionModifierComponent`](EntityFrictionModifierComponent.md)*
 - Changed read-only flag for *[`value`](EntityFrictionModifierComponent.md#value)* from `false` to `true`
 - Changed type for *[`value`](EntityFrictionModifierComponent.md#value)* from *number* to *number* (throws exceptions)
 #### Removed *EntityGroundOffsetComponent*
+#### Added *[`EntityHungerComponent`](EntityHungerComponent.md)*
 #### Changed *[`EntityInventoryComponent`](EntityInventoryComponent.md)*
 - Changed type for *[`container`](EntityInventoryComponent.md#container)* from [*Container*](Container.md) to [*Container*](Container.md) (throws exceptions)
 #### Changed *[`EntityMarkVariantComponent`](EntityMarkVariantComponent.md)*
@@ -152,6 +162,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`EntityPushThroughComponent`](EntityPushThroughComponent.md)*
 - Changed read-only flag for *[`value`](EntityPushThroughComponent.md#value)* from `false` to `true`
 - Changed type for *[`value`](EntityPushThroughComponent.md#value)* from *number* to *number* (throws exceptions)
+#### Added *[`EntitySaturationComponent`](EntitySaturationComponent.md)*
 #### Changed *[`EntityScaleComponent`](EntityScaleComponent.md)*
 - Changed read-only flag for *[`value`](EntityScaleComponent.md#value)* from `false` to `true`
 - Changed type for *[`value`](EntityScaleComponent.md#value)* from *number* to *number* (throws exceptions)
@@ -289,6 +300,9 @@ description: Changelog of the `@minecraft/server` module
 #### Changed enum [`EntityComponentTypes`](EntityComponentTypes.md)
 - Removed value `GroundOffset`
 - Added value `Npc`
+- Added value `Exhaustion`
+- Added value `Hunger`
+- Added value `Saturation`
 #### Changed enum [`EntityDamageCause`](EntityDamageCause.md)
 - Removed value `suicide`
 #### Changed enum [`EquipmentSlot`](EquipmentSlot.md)
@@ -310,8 +324,10 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Inventory`
 - Added value `Potion`
 #### Added enum [`LiquidSettings`](LiquidSettings.md)
+#### Added enum [`MovementType`](MovementType.md)
 #### Added enum [`PlayerInventoryType`](PlayerInventoryType.md)
 #### Added enum [`PlayerPermissionLevel`](PlayerPermissionLevel.md)
+#### Added enum [`StickyType`](StickyType.md)
 #### Added enum [`TintMethod`](TintMethod.md)
 #### Added enum [`WatchdogTerminateReason`](WatchdogTerminateReason.md)
 #### Added constant `TicksPerDay`

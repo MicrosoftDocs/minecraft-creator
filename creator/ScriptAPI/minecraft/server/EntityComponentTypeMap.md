@@ -98,6 +98,9 @@ type EntityComponentTypeMap = {
   'minecraft:navigation.walk': EntityNavigationWalkComponent;
   'minecraft:npc': EntityNpcComponent;
   'minecraft:onfire': EntityOnFireComponent;
+  'minecraft:player.exhaustion': EntityExhaustionComponent;
+  'minecraft:player.hunger': EntityHungerComponent;
+  'minecraft:player.saturation': EntitySaturationComponent;
   'minecraft:projectile': EntityProjectileComponent;
   'minecraft:push_through': EntityPushThroughComponent;
   'minecraft:rideable': EntityRideableComponent;
@@ -129,6 +132,9 @@ type EntityComponentTypeMap = {
   'navigation.walk': EntityNavigationWalkComponent;
   'npc': EntityNpcComponent;
   'onfire': EntityOnFireComponent;
+  'player.exhaustion': EntityExhaustionComponent;
+  'player.hunger': EntityHungerComponent;
+  'player.saturation': EntitySaturationComponent;
   'projectile': EntityProjectileComponent;
   'push_through': EntityPushThroughComponent;
   'rideable': EntityRideableComponent;
