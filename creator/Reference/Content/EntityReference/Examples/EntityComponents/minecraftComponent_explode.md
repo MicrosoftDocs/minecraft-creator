@@ -30,7 +30,7 @@ Defines how the entity explodes.
 | negates_fall_damage | false | Boolean true/false | Defines whether the explosion should apply fall damage negation to Players above the point of collision. This item requires a format version of at least undefined. | Wind Charge Projectile: `true` | 
 | particle_effect | explosion | String | The name of the particle effect to use. The accepted strings are 'explosion', 'wind_burst', or 'breeze_wind_burst'. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `"breeze_wind_burst"`, Wind Charge Projectile: `"wind_burst"` | 
 | power | 3 | Decimal number | The radius of the explosion in blocks and the amount of damage the explosion deals. | Breeze Wind Charge Projectile: `3`, Creeper: `6`, Fireball: `1` | 
-| sound_effect | explode | String | The name of the sound effect played when the explosion triggers. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `"breeze_wind_charge.burst"`, Wind Charge Projectile: `"wind_charge.burst"` | 
+| sound_effect | explode | String | The name of the sound effect played when the explosion triggers. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `"breeze_wind_charge.burst"`, Wind Charge Projectile: `"wind_charge.burst"`, Campghost: `"scary"` | 
 | toggles_blocks | false | Boolean true/false | If true, the explosion will toggle blocks in the explosion radius. This item requires a format version of at least undefined. | Breeze Wind Charge Projectile: `true` | 
 
 ## Add item type
@@ -197,5 +197,33 @@ At /minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/:
   "power": 1,
   "causes_fire": false,
   "destroy_affected_by_griefing": true
+}
+```
+
+#### [Campghost](https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/entities/campghost.json)
+
+At /minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/: 
+
+```json
+"minecraft:explode": {
+  "fuse_length": 1.5,
+  "fuse_lit": true,
+  "power": 3,
+  "causes_fire": false,
+  "destroy_affected_by_griefing": true,
+  "sound_effect": "scary"
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:charged_exploding/minecraft:explode/: 
+
+```json
+"minecraft:explode": {
+  "fuse_length": 1.5,
+  "fuse_lit": true,
+  "power": 6,
+  "causes_fire": false,
+  "destroy_affected_by_griefing": true,
+  "sound_effect": "scary"
 }
 ```

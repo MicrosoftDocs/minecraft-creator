@@ -5,6 +5,7 @@ title: Reflections Customization
 ms.topic: tutorial
 description: "Reflections Customization section of Deferred Lighting in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/14/2025
 ---
 
 # Reflections Customization

@@ -1279,6 +1279,17 @@
             "value": true
           }
         }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
       ]
     }
   }

@@ -121,6 +121,19 @@
             ]
           }
         }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:liquid_detection/",
+          "content": {
+            "detection_rules": [
+              {
+                "liquid_type": "water",
+                "on_liquid_touches": "popped"
+              }
+            ]
+          }
+        }
       ]
     }
   }

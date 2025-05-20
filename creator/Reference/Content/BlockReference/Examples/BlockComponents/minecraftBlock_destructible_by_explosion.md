@@ -67,6 +67,15 @@ This item can also be represented as a `Boolean true/false`.
 }
 ```
 
+#### [Block Leaf Pile](https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/blocks/leaf_pile.block.json)
+
+
+```json
+"minecraft:destructible_by_explosion": {
+  "explosion_resistance": 0.5
+}
+```
+
 #### [Block Orange Ore](https://github.com/microsoft/minecraft-samples/tree/main/custom_features/basic_orange_ore/behavior_packs/basic_orange_ore/blocks/orange_ore.block.json)
 
 

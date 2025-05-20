@@ -4,12 +4,16 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.CameraEaseOptions Interface
-description: Contents of the @minecraft/server.CameraEaseOptions class.
+title: minecraft/server.EaseOptions Interface
+description: Contents of the @minecraft/server.EaseOptions class.
+monikerRange: "=minecraft-bedrock-experimental"
 ---
-# CameraEaseOptions Interface
+# EaseOptions Interface
 
-Contains options associated with a camera ease operation.
+> [!CAUTION]
+> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Contains options associated with easing between positions and/or rotations.
 
 ## Properties
 

@@ -294,6 +294,16 @@
               "path": "/minecraft:entity/components/minecraft:explode/",
               "content": "wind_charge.burst"
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
+              "content": "scary"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:charged_exploding/minecraft:explode/",
+              "content": "scary"
+            }
           ]
         }
       },
@@ -543,6 +553,52 @@
                 "minecraft:exploding"
               ]
             }
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:exploding/minecraft:explode/",
+          "content": {
+            "fuse_length": 1.5,
+            "fuse_lit": true,
+            "power": 3,
+            "causes_fire": false,
+            "destroy_affected_by_griefing": true,
+            "sound_effect": "scary"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:charged_exploding/minecraft:explode/",
+          "content": {
+            "fuse_length": 1.5,
+            "fuse_lit": true,
+            "power": 6,
+            "causes_fire": false,
+            "destroy_affected_by_griefing": true,
+            "sound_effect": "scary"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:forced_exploding/minecraft:explode/",
+          "content": {
+            "fuse_length": 1.5,
+            "fuse_lit": true,
+            "power": 3,
+            "causes_fire": false,
+            "destroy_affected_by_griefing": true,
+            "sound_effect": "scary"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:forced_charged_exploding/minecraft:explode/",
+          "content": {
+            "fuse_length": 1.5,
+            "fuse_lit": true,
+            "power": 6,
+            "causes_fire": false,
+            "destroy_affected_by_griefing": true,
+            "sound_effect": "scary"
           }
         }
       ]

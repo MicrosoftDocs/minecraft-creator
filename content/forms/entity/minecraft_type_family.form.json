@@ -1438,6 +1438,16 @@
                 "mob"
               ]
             }
+          ],
+          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "campghost",
+                "monster",
+                "mob"
+              ]
+            }
           ]
         }
       }
@@ -3227,6 +3237,18 @@
               "gray_wave",
               "player",
               "gray_wave_consumer"
+            ]
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "campghost",
+              "monster",
+              "mob"
             ]
           }
         }

@@ -96,7 +96,7 @@ At /minecraft:entity/events/find_hive_timeout/sequence/1/filters/:
 
 #### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
 
-At /minecraft:entity/events/minecraft:on_player_detected_above/filters/: 
+At /minecraft:entity/events/minecraft:become_immobile/filters/: 
 
 ```json
 {
@@ -106,7 +106,7 @@ At /minecraft:entity/events/minecraft:on_player_detected_above/filters/:
 }
 ```
 
-At /minecraft:entity/events/minecraft:on_no_player_detected_above/filters/: 
+At /minecraft:entity/events/minecraft:become_mobile/filters/: 
 
 ```json
 {

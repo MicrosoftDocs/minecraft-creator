@@ -72,30 +72,40 @@
       items:
         - name: Guide
           href: Documents/LearningJourneyGuide.md
-        - name: Creator Camp Stream
-          href: Documents/CreatorCamp.md       
-        - name: 1. Create an In-World Game with Commands
-          href: Documents/CreateAnInWorldGame.md
-        - name: '2. Create Custom Grass Blocks: An Introduction to Resource Packs'
+        - name: Getting Started with Add-Ons
+          href: Documents/GettingStarted.md
+        - name: 'Create Custom Grass Blocks: An Introduction to Resource Packs'
           href: Documents/ResourcePack.md
-        - name: '3. Create an Angry Cow: An Introduction to Behavior Packs'
+        - name: 'Create an Angry Cow: An Introduction to Behavior Packs'
           href: Documents/BehaviorPack.md
-        - name: 4. Creating and Adding Custom Sounds
+        - name: Creating and Adding Custom Sounds
           href: Documents/AddCustomSounds.md
-        - name: 5. Creating New Entity Types
+        - name: Creating New Entity Types
           href: Documents/IntroductionToAddEntity.md
-        - name: 6. Create a Custom Die Block 
+        - name: Create a Custom Die Block 
           href: Documents/AddCustomDieBlock.md
-        - name: '7. Create a Sushi Block: Advanced Custom Blocks' 
+        - name: 'Create a Sushi Block: Advanced Custom Blocks' 
           href: Documents/AdvancedCustomBlocks.md
-        - name: 8. Creating an Animated Block Texture
-          href: Documents/CreateAnimatedBlockTexture.md
-        - name: 9. Creating a Goblin Chef Entity 
-          href: Documents/MakerSeriesMakingTheGoblinChef.md
-        - name: 10. Create a Loot Table
-          href: Documents/CreateLootTable.md
-        - name: 11. Create a Village with Structure Blocks
-          href: Documents/Structures/StructureBlocksCommandTutorial.md
+        - name: Adding Custom Items
+          href: Documents/AddCustomItems.md
+        - name: Change Your Look with a Skin Pack
+          href: Documents/SkinPack.md
+        - name: Advanced Stuff
+          items:
+            - name: Creating an Animated Block Texture
+              href: Documents/CreateAnimatedBlockTexture.md
+            - name: Creating a Goblin Chef Entity 
+              href: Documents/MakerSeriesMakingTheGoblinChef.md
+            - name: Create a Loot Table
+              href: Documents/CreateLootTable.md
+            - name: Create a Village with Structure Blocks
+              href: Documents/Structures/StructureBlocksCommandTutorial.md
+            - name: Create an In-World Game with Commands
+              href: Documents/CreateAnInWorldGame.md
+            - name: Non-Player Character (NPC) Dialogue
+              href: Documents/NPCDialogue.md
+        - name: Bedrock Creator Camp 2025
+          href: Documents/CreatorCamp.md
     - name: Concepts
       items:
         - name: Getting Started with Add-Ons

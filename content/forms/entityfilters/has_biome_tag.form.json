@@ -136,6 +136,12 @@
         "description": "(Required) The tag to look for",
         "dataType": 2,
         "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+              "content": "nether"
+            }
+          ],
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
               "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/",
@@ -154,6 +160,12 @@
             {
               "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/filters/",
               "content": "spawns_cold_variant_farm_animals"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/spider.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+              "content": "nether"
             }
           ],
           "/vanilla/behavior_pack/entities/villager_v2.json": [
@@ -295,13 +307,15 @@
         "title": "Test",
         "dataType": 2,
         "samples": {
+          "/vanilla/behavior_pack/entities/cave_spider.json": [
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+              "content": "has_biome_tag"
+            }
+          ],
           "/vanilla/behavior_pack/entities/chicken.json": [
             {
               "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/",
-              "content": "has_biome_tag"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/filters/",
               "content": "has_biome_tag"
             }
           ]
@@ -317,6 +331,15 @@
         {
           "path": "Short (using Defaults)..",
           "content": "{ \"test\": \"has_biome_tag\", \"value\": \" \" }"
+        }
+      ],
+      "/vanilla/behavior_pack/entities/cave_spider.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "nether"
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/chicken.json": [
@@ -380,6 +403,15 @@
           "content": {
             "test": "has_biome_tag",
             "value": "spawns_warm_variant_farm_animals"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/spider.json": [
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "nether"
           }
         }
       ],

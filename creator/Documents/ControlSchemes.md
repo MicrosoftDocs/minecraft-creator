@@ -22,50 +22,50 @@ Each control scheme defines how Minecraft responds to game controllers, touch in
 
 ### Player relative
 
-**Controller:** Push the left stick forward or backward to move the player forward or backward in the direction they're facing, and left or right to rotate the player to the left or right. Use the right stick to rotate the camera in third-person or free camera views.
+**Controller:** Push the left stick forward or backward to move the player forward or backward in the direction they're facing, and left or right to rotate the player to the left or right. Use the right stick to rotate the camera when using the third-person Follow Orbit camera.
 
-**Touch:** Swipe up or down to move the player forward or backward in the direction they're facing. Swipe right or left to rotate the player in that direction. Drag on the right side of the screen to rotate the camera in third-person or free camera views.
+**Touch:** Push the virtual joystick or D-pad forward or backward to move forward or backward in the direction they're facing, and left or right to rotate the player to the left or right. Drag on the screen to rotate the camera when using the third-person Follow Orbit camera.
 
-**Keyboard + Mouse:** Press W to move the player forward, S to move backward, A to rotate them left, and D to rotate right. Use the mouse to rotate the camera in third-person or free camera views.
+**Keyboard + Mouse:** Press W to move the player forward, S to move backward, A to rotate them left, and D to rotate right. Use the mouse to rotate the camera when using the third-person Follow Orbit camera.
 
-**Full Keyboard:** Press W to move the player forward, S to move backward, A to rotate them left, and D to rotate right. Press the left and right arrows to rotate the camera in third-person or free camera views. The numeric keypad can also be used for camera rotation if enabled.
+**Full Keyboard:** Press W to move the player forward, S to move backward, A to rotate them left, and D to rotate right. Press the left and right arrows to rotate the camera when using the third-person Follow Orbit camera. The numeric keypad can also be used for camera rotation if enabled.
 
 ### Player relative strafe
 
-**Controller:** Push the left stick forward or backward to move the player forward or backward in the direction they're facing, and left or right to move the player to the left or right without turning (strafe). Push the right stick left or right to rotate the player.
+**Controller:** Push the left stick forward or backward to move the player forward or backward in the direction they're facing, and left or right to move the player to the left or right without turning (strafe). Push the right stick in a direction to have the player look in that direction.
 
-**Touch:** Swipe up or down on the left side of the screen to move the player forward or backward in the direction they're facing. Swipe right or left to move the player to the left or right without turning (strafe). Drag on the right side of the screen to rotate the player.
+**Touch:** Push the virtual joystick or D-pad forward or backward to move forward or backward in the direction they're facing. Push it left or right to move the player to their left or right without turning (strafe). Touch and drag on the screen to have your character look at the point you are touching. _Note:_ this control scheme will force the visible joystick option on.
 
-**Keyboard + Mouse:** Press W to move the player forward, S to move backward, A to move (strafe) left, and D to move (strafe) right. Use the mouse to rotate the player.
+**Keyboard + Mouse:** Press W to move the player forward, S to move backward, A to move (strafe) to the character's left, and D to move (strafe) to the character's right. The character will look toward where the mouse is on screen.
 
-**Full Keyboard:** Press W to move the player forward, S to move backward, A to move (strafe) left, and D to move (strafe) right. Press the left and right arrows to rotate the player. The numeric keypad can also be used for player rotation if enabled.
+**Full Keyboard:** Press W to move the player forward, S to move backward, A to move (strafe) to the character's left, and D to move (strafe) to the character's right. Press the left and right arrows to rotate the player. The numeric keypad can also be used for player rotation if enabled.
 
 ### Locked player relative strafe
 
-The controls in this scheme are the same as in player relative strafe, but the camera is locked to the direction the player faces.
+The controls in this scheme are the same as in player relative strafe, but the character is locked to face the same way the camera is facing.
 
 ### Camera relative
 
-**Controller:** Use the left stick to control player movement; the player automatically faces the direction of motion. Use the right stick to rotate the camera.
+**Controller:** Use the left stick to control player movement; the player automatically faces the direction of motion. Down moves toward the camera, up moves away, left moves toward the left side of the screen, and right moves toward the right side. Use the right stick to rotate the camera.
 
-**Touch:** Drag on the left side of the screen to control player movement; the player automatically faces the direction of motion. Drag on the right side of the screen to rotate the camera.
+**Touch:** Push the virtual joystick or D-pad to control player movement; the player automatically faces the direction of motion. Drag on the screen to rotate the camera.
 
-**Keyboard + Mouse:** Press W to move the player forward, S to move backward, A to move left, and D to move right; the player automatically faces the direction of motion. Use the mouse to rotate the camera.
+**Keyboard + Mouse:** Press W to move the player in the direction the camera faces, S to move backward toward the camera, A to move screen left, and D to move screen right; the player automatically faces the direction of motion. Use the mouse to rotate the camera.
 
-**Full Keyboard:** Press W to move the player forward, S to move backward, A to move left, and D to move right; the player automatically faces the direction of motion. Press the left and right arrows to rotate the camera. The numeric keypad can also be used for camera rotation if enabled.
+**Full Keyboard:** Press W to move the player in the direction the camera faces, S to move backward toward the camera, A to move screen left, and D to move screen right; the player automatically faces the direction of motion. Press the left and right arrows to rotate the camera. The numeric keypad can also be used for camera rotation if enabled.
 
 ### Camera relative strafe
 
 > [!NOTE]
 > This scheme is experimental, and requires the **Experimental Creator Camera** setting to be enabled.
 
-**Controller:** Use the left stick to move the player. Use the right stick to rotate the player to look in the direction the stick is moved.
+**Controller:** Use the left stick to move the player without turning (strafe). Use the right stick to rotate the player to look in the direction the stick is moved.
 
-**Touch:** Drag on the left side of the screen to control player movement. Drag on the right side of the screen to rotate the player to look in the direction of the drag.
+**Touch:** Push the virtual joystick or D-pad to move the player without turning (strafe). Drag on the screen to rotate the player to look toward the point being touched. _Note:_ This control scheme will force the visible joystick option on.
 
-**Keyboard + Mouse:** Press W to move the player forward, S to move backward, A to move left, and D to move right. Use the mouse to rotate the player to look in the direction the mouse is moved.
+**Keyboard + Mouse:** Press W to move the player in the direction the camera faces, S to move backward toward the camera, A to move screen left, and D to move screen right. The player will rotate to look toward the mouse location.
 
-**Full Keyboard:** Press W to move the player forward, S to move backward, A to move left, and D to move right. Press the left and right arrows to rotate the player to look in that direction. The numeric keypad can also be used for rotation if enabled.
+**Full Keyboard:** Press W to move the player in the direction the camera faces, S to move backward toward the camera, A to move screen left, and D to move screen right. Press the arrow keys to rotate the player to look in that direction. The numeric keypad can also be used for rotation if enabled.
 
 ## Control schemes and camera presets
 

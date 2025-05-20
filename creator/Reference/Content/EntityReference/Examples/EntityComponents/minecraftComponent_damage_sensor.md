@@ -41,7 +41,7 @@ List of triggers with the events to call when taking specific kinds of damage.".
 | damage_multiplier | 1 | Decimal number | A multiplier that modifies the base damage received from the specified damage cause. If "deals_damage" is true the multiplier can only reduce the damage the entity will take to a minimum of 1. |  | 
 | deals_damage | false | Boolean true/false | Defines how received damage affects the entity: <br>           <br>- "yes", received damage is applied to the entity. <br>           <br>- "no", received damage is not applied to the entity. <br>           <br>- "no_but_side_effects_apply", received damage is not applied to the entity, but the side effects of the attack are. This means that the attacker's weapon loses durability, enchantment side effects are applied, and so on. |  | 
 | on_damage | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Defines which entities the trigger applies to, and which, if any, event to emit when damaged. |  | 
-| on_damage_sound_event | *not set* | String | Defines what sound to play, if any, when the "on_damage" filters are met. |  | 
+| on_damage_sound_event | *not set* | Minecraft Event Reference | Defines what sound to play, if any, when the "on_damage" filters are met. |  | 
 
 ## Samples
 
@@ -184,6 +184,18 @@ At /minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_senso
 }
 ```
 
+#### [Blaze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/blaze.json)
+
+
+```json
+"minecraft:damage_sensor": {
+  "triggers": {
+    "cause": "fall",
+    "deals_damage": "no"
+  }
+}
+```
+
 #### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
 
 
@@ -207,18 +219,6 @@ At /minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_senso
       "deals_damage": false
     }
   ]
-}
-```
-
-#### [Cat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cat.json)
-
-
-```json
-"minecraft:damage_sensor": {
-  "triggers": {
-    "cause": "fall",
-    "deals_damage": "no"
-  }
 }
 ```
 

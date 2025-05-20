@@ -5,18 +5,19 @@ title: Atmospherics Customization
 ms.topic: tutorial
 description: "Atmospherics Customization section of Deferred Lighting in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/14/2025
 ---
 
 # Atmospherics Customization
 
-This page describes how to customize atmospherics effects.
+This page describes how to customize atmospheric effects.
 
-## Atmospherics JSON Schema
+## Atmospherics JSON schema
 
 > [!NOTE]
 > As of version `1.21.40.22`, the JSON files for atmospheric scattering have been relocated to the `atmospherics` directory.
 
-File location: atmospherics/atmospherics.json
+Atmospheric effect configuations are JSON files located in the **atmospherics** directory in a resource pack. They must have the filename **atmospherics.json**, and adhere to the following format:
 
 ```json
 {
@@ -44,13 +45,13 @@ File location: atmospherics/atmospherics.json
 }
 ```
 
-Any of these values can be individually key framed (see Key Frame Syntax section for more details).
+Any of these values can be individually key framed; see [Key Frame JSON Syntax](./KeyFrameJSONSyntax.md) for more details.
 
-Note that the colors defined for the sun and moon directional lights in lighting/global.json will also be used in the calculation of the atmosphere and thus will have a significant impact on the final sky color. This is especially true with both the Rayleigh and Mie scattering terms.
+Note that the colors defined for the sun and moon directional lights in **lighting/global.json** will also be used in the calculation of the atmosphere and thus will have a significant impact on the final sky color. This is especially true with both the Rayleigh and Mie scattering terms.
 
 You can get a sample project starter for various deferred lighting settings at [https://github.com/microsoft/minecraft-samples/tree/main/deferred_lighting_starter](https://github.com/microsoft/minecraft-samples/tree/main/deferred_lighting_starter).
 
-### atmospherics/atmospherics.json
+## Example atmospherics/atmospherics.json
 
 ```json
 {

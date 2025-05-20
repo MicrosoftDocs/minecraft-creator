@@ -12,9 +12,9 @@ description: Contents of the @minecraft/server.CameraSetFacingOptions class.
 ## Properties
 
 ### **easeOptions**
-`easeOptions?: CameraEaseOptions;`
+`easeOptions?: EaseOptions;`
 
-Type: [*CameraEaseOptions*](CameraEaseOptions.md)
+Type: [*EaseOptions*](EaseOptions.md)
 
 ### **facingEntity**
 `facingEntity: Entity;`

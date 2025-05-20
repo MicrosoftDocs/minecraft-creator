@@ -21,15 +21,22 @@ This entity can be ridden.
 | dismount_mode | default | [Dismount Mode](#dismount-mode-choices) choices | Defines where riders are placed when dismounting this entity: <br>- "default", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found. <br>- "on_top_center", riders are placed at the center of the top of the entity's collision box. | Happy Ghast: `"on_top_center"` | 
 | family_types | *not set* | Array of strings | List of entities that can ride this entity. | Camel: `["player"]`, Cat: `["zombie"]`, Donkey: `["player","zombie"]` | 
 | interact_text | *not set* | String | The text to display when the player can interact with the entity when playing with touch-screen controls. | Camel: `"action.interact.ride.horse"`, Donkey: `"action.interact.mount"`, Minecart: `"action.interact.ride.minecart"` | 
-| on_rider_enter_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to execute on the owner entity when an entity starts riding it. | Happy Ghast: `"minecraft:on_passenger_mount"` | 
-| on_rider_exit_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to execute on the owner entity when an entity stops riding it. | Happy Ghast: `"minecraft:on_passenger_dismount"` | 
+| on_rider_enter_event | *not set* | Minecraft Event Reference | Event to execute on the owner entity when an entity starts riding it. | Happy Ghast: `"minecraft:on_passenger_mount"` | 
+| on_rider_exit_event | *not set* | Minecraft Event Reference | Event to execute on the owner entity when an entity stops riding it. | Happy Ghast: `"minecraft:on_passenger_dismount"` | 
 | passenger_max_width | 0 | Decimal number | The max width a mob can have to be a rider. A value of 0 ignores this parameter. |  | 
 | priority | *not set* | Integer number | This field may exist in old data but isn't used by "minecraft:rideable". |  | 
 | pull_in_entities | false | Boolean true/false | If true, this entity will pull in entities that are in the correct "family_types" into any available seats. | Camel: `true` | 
-| pulls_in_entities | *not set* | Boolean true/false |  |  | 
 | rider_can_interact | false | Boolean true/false | If true, this entity will be picked when looked at by the rider. |  | 
 | seat_count | 1 | Integer number | The number of entities that can ride this entity at the same time. | Camel: `2`, Cat: `1`, Happy Ghast: `4` | 
-| seats | *not set* | Array of [Seats](#seats-item-type) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]`, Cat: `{"position":[0,0.35,0]}`, Chicken: `{"position":[0,0.4,0]}` | 
+| seats | *not set* | Array of [Seats](#seats-item-type) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]`, Cat: `{"position":[0,0.35,0]}`, Chicken: `{"position":[0,0.48,0]}` | 
+| (deprecated) pulls_in_entities | *not set* | Boolean true/false |  |  | 
+
+### Dismount Mode choices
+
+|Value       |Title |Description |
+|:-----------|:-----|:-----------|
+| default | Default | |
+| on_top_center | On Top Center | |
 
 ### Dismount Mode choices
 
@@ -122,7 +129,7 @@ The list of positions and number of riders for each position for entities riding
   "seats": {
     "position": [
       0,
-      0.4,
+      0.48,
       0
     ]
   }
@@ -131,6 +138,7 @@ The list of positions and number of riders for each position for entities riding
 
 #### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
 
+At /minecraft:entity/component_groups/minecraft:cow_baby/minecraft:rideable/: 
 
 ```json
 "minecraft:rideable": {
@@ -141,7 +149,25 @@ The list of positions and number of riders for each position for entities riding
   "seats": {
     "position": [
       0,
-      1.105,
+      1,
+      0
+    ]
+  }
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:cow_adult/minecraft:rideable/: 
+
+```json
+"minecraft:rideable": {
+  "seat_count": 1,
+  "family_types": [
+    "zombie"
+  ],
+  "seats": {
+    "position": [
+      0,
+      1.15,
       0
     ]
   }
@@ -209,8 +235,8 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
       "max_rider_count": 4,
       "position": [
         0,
-        0.95,
-        0.45
+        3.8,
+        1.7
       ],
       "third_person_camera_radius": 8,
       "camera_relax_distance_smoothing": 6
@@ -219,8 +245,8 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
       "min_rider_count": 1,
       "max_rider_count": 4,
       "position": [
-        -0.45,
-        0.95,
+        -1.7,
+        3.8,
         0
       ],
       "third_person_camera_radius": 8,
@@ -231,8 +257,8 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
       "max_rider_count": 4,
       "position": [
         0,
-        0.95,
-        -0.45
+        3.8,
+        -1.7
       ],
       "third_person_camera_radius": 8,
       "camera_relax_distance_smoothing": 6
@@ -241,8 +267,8 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
       "min_rider_count": 3,
       "max_rider_count": 4,
       "position": [
-        0.45,
-        0.95,
+        1.7,
+        3.8,
         0
       ],
       "third_person_camera_radius": 8,
@@ -265,7 +291,7 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
     {
       "position": [
         0,
-        0.9,
+        1.125,
         -0.3
       ],
       "lock_rider_rotation": 0
@@ -273,7 +299,7 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
     {
       "position": [
         0,
-        2.4,
+        2.625,
         -0.3
       ],
       "lock_rider_rotation": 0
@@ -281,7 +307,7 @@ At /minecraft:entity/component_groups/minecraft:donkey_tamed/minecraft:rideable/
     {
       "position": [
         0,
-        3.9,
+        4.125,
         -0.3
       ],
       "lock_rider_rotation": 0
@@ -344,51 +370,10 @@ At /minecraft:entity/component_groups/minecraft:horse_tamed/minecraft:rideable/:
   "seats": {
     "position": [
       0,
-      1.1,
+      1.175,
       -0.35
     ],
     "lock_rider_rotation": 0
-  }
-}
-```
-
-#### [Llama](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/llama.json)
-
-At /minecraft:entity/component_groups/minecraft:llama_wild/minecraft:rideable/: 
-
-```json
-"minecraft:rideable": {
-  "seat_count": 1,
-  "family_types": [
-    "player"
-  ],
-  "interact_text": "action.interact.mount",
-  "seats": {
-    "position": [
-      0,
-      1.17,
-      -0.3
-    ]
-  }
-}
-```
-
-At /minecraft:entity/component_groups/minecraft:llama_tamed/minecraft:rideable/: 
-
-```json
-"minecraft:rideable": {
-  "seat_count": 1,
-  "crouching_skip_interact": true,
-  "family_types": [
-    "player"
-  ],
-  "interact_text": "action.interact.ride.horse",
-  "seats": {
-    "position": [
-      0,
-      1.17,
-      -0.3
-    ]
   }
 }
 ```

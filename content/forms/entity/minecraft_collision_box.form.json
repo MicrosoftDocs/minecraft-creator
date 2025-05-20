@@ -224,7 +224,7 @@
           "/vanilla/behavior_pack/entities/ghast.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.8888888889
+              "content": 4
             }
           ],
           "/vanilla/behavior_pack/entities/glow_squid.json": [
@@ -243,16 +243,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
               "content": 0.85
-            }
-          ],
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:collision_box/",
-              "content": 1
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:collision_box/",
-              "content": 0.95
             }
           ],
           "/vanilla/behavior_pack/entities/hoglin.json": [
@@ -301,6 +291,12 @@
               "content": 1.25
             }
           ],
+          "/vanilla/behavior_pack/entities/parrot.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 1
+            }
+          ],
           "/vanilla/behavior_pack/entities/pig.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
@@ -341,6 +337,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
               "content": 1.75
+            }
+          ],
+          "/vanilla/behavior_pack/entities/squid.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 0.95
             }
           ],
           "/vanilla/behavior_pack/entities/strider.json": [
@@ -587,7 +589,7 @@
           "/vanilla/behavior_pack/entities/ghast.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.8933333333
+              "content": 4.02
             }
           ],
           "/vanilla/behavior_pack/entities/glow_squid.json": [
@@ -604,12 +606,8 @@
           ],
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:collision_box/",
-              "content": 1
-            },
-            {
-              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:collision_box/",
-              "content": 0.95
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 4
             }
           ],
           "/vanilla/behavior_pack/entities/hoglin.json": [
@@ -666,6 +664,12 @@
               "content": 1.9
             }
           ],
+          "/vanilla/behavior_pack/entities/squid.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 0.95
+            }
+          ],
           "/vanilla/behavior_pack/entities/tadpole.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
@@ -700,6 +704,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
               "content": 0.15
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wither.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 1
             }
           ],
           "/samples/addon_starter/2_entities/behavior_packs/aop_mobs/entities/biceson.behavior.json": [
@@ -1088,8 +1098,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:collision_box/",
           "content": {
-            "width": 0.8933333333,
-            "height": 0.8888888889
+            "width": 4.02,
+            "height": 4
           }
         }
       ],
@@ -1122,17 +1132,10 @@
       ],
       "/vanilla/behavior_pack/entities/happy_ghast.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:collision_box/",
+          "path": "/minecraft:entity/components/minecraft:collision_box/",
           "content": {
-            "width": 1,
-            "height": 1
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:collision_box/",
-          "content": {
-            "width": 0.95,
-            "height": 0.95
+            "width": 4,
+            "height": 4
           }
         }
       ],
@@ -1951,6 +1954,15 @@
           "content": {
             "width": 0.6,
             "height": 1.9
+          }
+        }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:collision_box/",
+          "content": {
+            "width": 0.6,
+            "height": 1.8
           }
         }
       ]

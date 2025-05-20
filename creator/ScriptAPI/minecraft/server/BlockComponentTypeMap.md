@@ -20,9 +20,11 @@ type BlockComponentTypeMap = {
   'minecraft:fluid_container': BlockFluidContainerComponent;
   'minecraft:inventory': BlockInventoryComponent;
   'minecraft:map_color': BlockMapColorComponent;
+  'minecraft:movable': BlockMovableComponent;
   'minecraft:piston': BlockPistonComponent;
   'minecraft:record_player': BlockRecordPlayerComponent;
   'minecraft:sign': BlockSignComponent;
+  'movable': BlockMovableComponent;
   'piston': BlockPistonComponent;
   'record_player': BlockRecordPlayerComponent;
   'sign': BlockSignComponent;

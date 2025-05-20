@@ -19,10 +19,10 @@ Returns true when the subject entity in contact with any water: water, rain, spl
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Blaze: `"=="` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Snow Golem: `"=="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Blaze: `"in_contact_with_water"` | 
-| value | true | Boolean true/false | (Optional) true or false. | Blaze: `true` | 
+| value | true | Boolean true/false | (Optional) true or false. | Snow Golem: `true` | 
 
 ### Operator choices
 
@@ -70,17 +70,17 @@ At Short (using Defaults)..:
 
 ```json
 {
-  "test": "in_contact_with_water",
-  "operator": "==",
-  "value": true
+  "test": "in_contact_with_water"
 }
 ```
 
-#### [Enderman](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/enderman.json)
+#### [Snow Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/snow_golem.json)
 
 
 ```json
 {
-  "test": "in_contact_with_water"
+  "test": "in_contact_with_water",
+  "operator": "==",
+  "value": true
 }
 ```

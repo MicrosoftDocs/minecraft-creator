@@ -1033,6 +1033,14 @@
             "on_death": "query.last_hit_by_player ? 5 : 0"
           }
         }
+      ],
+      "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:experience_reward/",
+          "content": {
+            "on_death": "query.last_hit_by_player ? 5 : 0"
+          }
+        }
       ]
     }
   }

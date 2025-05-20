@@ -374,7 +374,7 @@ function applyDamageThenHeal(
 applyImpulse(vector: Vector3): void
 `
 
-Applies impulse vector to the current velocity of the entity.
+Applies impulse vector to the current velocity of the entity. Note that this method throws an error if called on Players and will have no impact.
 
 #### **Parameters**
 - **vector**: [*Vector3*](Vector3.md)
@@ -472,7 +472,7 @@ Notes:
 clearVelocity(): void
 `
 
-Sets the current velocity of the Entity to zero. Note that this method may not have an impact on Players.
+Sets the current velocity of the Entity to zero. Note that this method throws an error if called on Players and will have no impact.
   
 Notes:
 - This function can't be called in read-only mode.

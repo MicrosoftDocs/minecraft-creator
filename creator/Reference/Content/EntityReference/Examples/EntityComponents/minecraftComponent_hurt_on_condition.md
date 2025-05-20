@@ -78,9 +78,7 @@ List of damage conditions that when met can cause damage to the entity.
   "damage_conditions": [
     {
       "filters": {
-        "test": "in_contact_with_water",
-        "operator": "==",
-        "value": true
+        "test": "in_contact_with_water"
       },
       "cause": "drowning",
       "damage_per_tick": 1

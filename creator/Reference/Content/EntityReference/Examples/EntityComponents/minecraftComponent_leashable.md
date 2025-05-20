@@ -92,28 +92,6 @@ Defines how this entity behaves when leashed to another entity. The first preset
 }
 ```
 
-#### [Chest Boat](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/chest_boat.json)
-
-
-```json
-"minecraft:leashable": {
-  "presets": [
-    {
-      "filter": {
-        "test": "is_family",
-        "subject": "other",
-        "value": "happy_ghast"
-      },
-      "spring_type": "quad_dampened",
-      "rotation_adjustment": 90
-    },
-    {
-      "rotation_adjustment": 90
-    }
-  ]
-}
-```
-
 #### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
 
 

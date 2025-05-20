@@ -5,13 +5,14 @@ title: Biome Customization
 ms.topic: tutorial
 description: "Biome Customization section of Deferred Lighting in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/14/2025
 ---
 
 # Biome Customization
 
 This page describes how to customize a variety of Deferred Lighting effects for different biomes available in Minecraft Bedrock Previews 1.21.90+.
 
-## Deferred Lighting JSONs
+## Deferred lighting JSONs
 
 Deferred Lighting resource packs support a variety of JSON files that allow Creators to customize things like the sun and moon color, the atmospheric properties of the sky, color grading, and more. Each grouping is documented on the following pages:
 
@@ -22,7 +23,7 @@ Deferred Lighting resource packs support a variety of JSON files that allow Crea
 
 Packs can provide multiple instances for each type of JSON as long as they have unique filenames and unique `identifier` fields in their JSON schema. Those identifiers can then be specified in [Client Biome JSONs](../../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md) to customize the look and feel of a given biome(s).
 
-## Transitions Between Biomes
+## Transitions between biomes
 
 In order to smoothly transition between different visual settings for different biomes, the game will automatically blend any customized settings in one of two ways: 
 
@@ -74,11 +75,12 @@ water/water.json|`my_pack:default_water`
 water/ocean.json|`my_pack:ocean_water`
 water/deep_ocean.json|`my_pack:deep_ocean_water`
 
-Because the filenames are reserved to act as global/default values, the identifiers found in `atmospherics/atmospherics.json`, `color_grading/color_grading.json`, `lighting/global.json` and `water/water.json` will automatically be assigned to the `minecraft:atmosphere_identifier`, `minecraft:color_grading_identifier`, `minecraft:lighting_identifier` and `minecraft:water_identifier` biome components respectively unless a particular biome JSON specifies differently.
+Because the filenames are reserved to act as global/default values, the identifiers found in **atmospherics/atmospherics.json**, **color_grading/color_grading.json**, **lighting/global.json** and **water/water.json** will automatically be assigned to the `minecraft:atmosphere_identifier`, `minecraft:color_grading_identifier`, `minecraft:lighting_identifier` and `minecraft:water_identifier` biome components respectively unless a particular biome JSON specifies differently.
 
 Let's customize the End and Nether biomes to use their own sets of visual parameters.
 
-Filename: biomes/the_end.client_biome.json
+Filename: **biomes/the_end.client_biome.json**
+
 ```json
 {
   "format_version": "1.21.70",
@@ -103,7 +105,8 @@ Filename: biomes/the_end.client_biome.json
 
 ```
 
-Filename: biomes/hell.client_biome.json
+Filename: **biomes/hell.client_biome.json**
+
 ```json
 {
   "format_version": "1.21.70",
@@ -127,11 +130,12 @@ Filename: biomes/hell.client_biome.json
 }
 ```
 
-To be complete, one would also want to specify the other biomes in the Nether, such as the Crimson Forest, the Nether Wastes, the Warped Forest, etc... where you could further customize the look and feel to match the distinct mood of each biome. But we'll leave that as an exercise for the Creator.
+To be complete, one would also want to specify the other biomes in the Nether, such as the Crimson Forest, the Nether Wastes, the Warped Forest, and so on, where you could further customize the look and feel to match the distinct mood of each biome. But we'll leave that as an exercise for the Creator.
 
 Next, let's assign unique water configurations to the Ocean and Deep Ocean biomes.
 
-Filename: biomes/ocean.client_biome.json
+Filename: **biomes/ocean.client_biome.json**
+
 ```json
 {
   "format_version": "1.21.70",
@@ -150,7 +154,8 @@ Filename: biomes/ocean.client_biome.json
 
 ```
 
-Filename: biomes/deep_ocean.client_biome.json
+Filename: **biomes/deep_ocean.client_biome.json**
+
 ```json
 {
   "format_version": "1.21.70",

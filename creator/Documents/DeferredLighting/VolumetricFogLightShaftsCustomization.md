@@ -5,6 +5,7 @@ title: Volumetric Fog and Light Shafts
 ms.topic: tutorial
 description: "Volumetric Fog and Light Shafts section of Deferred Lighting in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/14/2025
 ---
 
 # Volumetric Fog and Light Shafts 
@@ -13,9 +14,7 @@ Minecraft Bedrock Preview version `1.20.60.21` adds a visual effect to the Defer
 
 Rather than defining new JSON files, this effect takes advantage of existing resource pack capabilities for Fog and Volumes. You can define fog properties for specific biomes, discrete regions in your world, whether the player is under water or above water, and much more.
 
-Please refer to the following articles to get started with these systems: 
-
->- [Fog in Resource Packs](../FogInResourcePacks.md)
+To get started with these systems, check out the [Fog in Resource Packs](../FogInResourcePacks.md) article.
 
 Note that the Deferred Technical Preview does not fully support tinted absorption as described in the `"media_coefficients"` section of **Fog in Resource Packs**. The JSON format takes an RGB triplet for this value to describe how much light the fog will absorb on a per-channel granularity. This is the behavior for RTX Resource Packs, but volumes in the Deferred Technical Preview only operate at a single-channel of granularity. Therefore, our engine will calculate the standard luminance of the RGB triplet specified for absorption and use it instead of the RGB triplet itself when in "Deferred Technical Preview" mode.
 
@@ -27,12 +26,10 @@ Another way to write that is:
 
 `Luminance = 0.2126*R + 0.7152*G + 0.0722*B`
 
-The following example is a good place to start: 
-
-### fogs/default_fog_settings.json
+The following example is a good place to start:  **fogs/default_fog_settings.json**
 
 > [!NOTE]
-> We're working on the format of these JSON elements. More formatting changes - for example, to format_version - may be coming soon.
+> We're working on the format of these JSON elements. More formatting changes&mdash;for example, to `format_version`&mdash;may be coming soon.
 
 ```json
 {

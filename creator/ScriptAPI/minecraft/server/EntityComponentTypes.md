@@ -218,6 +218,12 @@ Adds NPC capabilities to an entity such as custom skin, name, and dialogue inter
 `OnFire = "minecraft:onfire"`
 
 When present on an entity, this entity is on fire.
+### **Exhaustion**
+`Exhaustion = "minecraft:player.exhaustion"`
+### **Hunger**
+`Hunger = "minecraft:player.hunger"`
+### **Saturation**
+`Saturation = "minecraft:player.saturation"`
 ### **Projectile**
 `Projectile = "minecraft:projectile"`
 
