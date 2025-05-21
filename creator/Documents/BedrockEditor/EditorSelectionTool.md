@@ -30,7 +30,7 @@ There's more than one way to specify the coordinates in Marquee mode thanks to t
 
 #### Gizmos
 
-When you make a selection and click on one of the white corners, a blue, red, and green arrow appear &mdash; that's the **Resize Gizmo**! You can click and drag the **Resize Gizmo** to adjust the size of your selection with your mouse.
+When you make a selection and click on one of the white corners, a blue, red, and green arrow appears &mdash; that's the **Resize Gizmo**! You can click and drag the **Resize Gizmo** to adjust the size of your selection with your mouse.
 
 ![Animation of how to use a resize gizmo](Media/Gizmo1.gif)
 
