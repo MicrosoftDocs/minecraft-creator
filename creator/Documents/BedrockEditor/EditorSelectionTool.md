@@ -180,7 +180,7 @@ Retains the outline of your selection while changing all interior blocks to air.
 
 - **Keyboard Only**
 
-    Uses the directional keys to move the cursor around the world. The mouse and W,A,S,D keys are still used to move and look around the world, but they're not involved in selecting a block.
+    Uses the directional keys to move the cursor around the world. The mouse and W, A, S, and D keys are still used to move and look around the world, but they're not involved in selecting a block.
 
 - **Mouse & Keys**
 
