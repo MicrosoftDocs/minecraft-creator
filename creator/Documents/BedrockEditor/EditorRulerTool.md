@@ -6,6 +6,7 @@ description: "An overview of the Ruler Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
 ms.date: 05/27/2025
 ---
+# Ruler Tool
 
 The Ruler is a quick way to measure the distance between blocks in the Editor. 
 
