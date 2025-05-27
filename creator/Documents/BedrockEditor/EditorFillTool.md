@@ -11,7 +11,7 @@ ms.date: 05/16/2025
 
 Use Fill to replace a selection with the block type selected in the Block Picker.
 
-You can open the fill tool window by clicking the fill tool button on the left side. 
+You can open the fill tool window by clicking the fill tool button on the left side of the Editor. 
 
 - **Area Limit**: The number of blocks around the cursor that will be replaced in all directions. This value can range from 1 to 16.
 

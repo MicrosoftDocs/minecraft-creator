@@ -436,22 +436,17 @@
               href: Documents/BedrockEditor/EditorKeyboardInputs.md
             - name: Paste Preview
               href: Documents/BedrockEditor/EditorPastePreview.md
+            - name: Line Tool
+              href: Documents/BedrockEditor/EditorLineTool.md
+            - name: Ruler Tool
+              href: Documents/BedrockEditor/EditorRulerTool.md
             - name: Tool Mode
               href: Documents/BedrockEditor/EditorToolMode.md
             - name: Workflow
               href: Documents/BedrockEditor/EditorWorkflow.md
             - name: World Options
               href: Documents/BedrockEditor/EditorWorldOptions.md
-            - name: "Inspectors and Panels"
-              items:
-              - name: Block Inspector
-                href: Documents/BedrockEditor/EditorBlockInspector.md
-              - name: Entity Inspector
-                href: Documents/BedrockEditor/EditorEntityInspector.md
-              - name: Structures Panel
-                href: Documents/BedrockEditor/EditorStructures.md
-              - name: Workbench
-                href: Documents/BedrockEditor/EditorWorkbench.md
+            
             - name: Tools
               items:
               - name: Brush Tool
@@ -472,6 +467,16 @@
                 href: Documents/BedrockEditor/EditorRepeaterTool.md
               - name: Farm Tool
                 href: Documents/BedrockEditor/EditorFarmTool.md
+              - name: Inspectors and Panels
+                items:
+                - name: Block Inspector
+                  href: Documents/BedrockEditor/EditorBlockInspector.md
+                - name: Entity Inspector
+                  href: Documents/BedrockEditor/EditorEntityInspector.md
+                - name: Structures Panel
+                  href: Documents/BedrockEditor/EditorStructures.md
+                - name: Workbench
+                  href: Documents/BedrockEditor/EditorWorkbench.md
             - name: Building Editor Extensions
               href: Documents/BedrockEditor/EditorExtensionsIntroduction.md
         - name: "Blockbench - Model Editing"
