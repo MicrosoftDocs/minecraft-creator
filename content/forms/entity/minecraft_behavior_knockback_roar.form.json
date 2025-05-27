@@ -163,7 +163,7 @@
       },
       {
         "id": "on_roar_end",
-        "title": "On Roar End",
+        "title": "Roar End",
         "description": "Event that is triggered when the roar ends.",
         "dataType": 22,
         "samples": {

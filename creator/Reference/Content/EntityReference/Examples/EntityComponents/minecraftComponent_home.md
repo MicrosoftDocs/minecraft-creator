@@ -67,7 +67,7 @@ At /minecraft:entity/component_groups/minecraft:baby/minecraft:home/:
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:unharnessed/minecraft:home/: 
+At /minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:home/: 
 
 ```json
 "minecraft:home": {

@@ -6,7 +6,7 @@
   ],
   "generated_doNotEdit": {
     "id": "on_ladder",
-    "title": "On Ladder",
+    "title": "Ladder",
     "description": "Returns true when the subject entity is on a ladder.",
     "fields": [
       {

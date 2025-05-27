@@ -579,7 +579,7 @@
       },
       {
         "id": "on_tempt_end",
-        "title": "On Tempt End",
+        "title": "Tempt End",
         "dataType": 22,
         "samples": {
           "/vanilla/behavior_pack/entities/happy_ghast.json": [

@@ -15,7 +15,7 @@ Returns true when the subject entity is on ground.
 > Does not require any parameters to work properly. It can be used as a standalone filter.
 
 
-## On Ground Properties
+## Ground Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

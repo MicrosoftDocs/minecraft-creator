@@ -95,9 +95,9 @@
       },
       {
         "id": "on_start",
-        "title": "On Start",
+        "title": "Start",
         "description": "The event to trigger when attacking",
-        "dataType": 17,
+        "dataType": 22,
         "samples": {
           "/vanilla/behavior_pack/entities/goat.json": [
             {

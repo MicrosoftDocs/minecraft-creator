@@ -370,7 +370,7 @@
       },
       {
         "id": "on_fire_time",
-        "title": "On Fire Time",
+        "title": "Fire Time",
         "description": "Time in seconds that the entity hit will be on fire for",
         "defaultValue": 5,
         "dataType": 3
@@ -675,7 +675,7 @@
       },
       {
         "id": "on_hit",
-        "title": "On Hit",
+        "title": "Hit",
         "dataType": 22,
         "samples": {
           "/vanilla/behavior_pack/entities/breeze_wind_charge_projectile.json": [

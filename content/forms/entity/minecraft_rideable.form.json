@@ -112,7 +112,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:rideable/",
               "content": "on_top_center"
             }
           ]
@@ -263,13 +263,13 @@
       },
       {
         "id": "on_rider_enter_event",
-        "title": "On Rider Enter Event",
+        "title": "Rider Enter Event",
         "description": "Event to execute on the owner entity when an entity starts riding it.",
         "dataType": 22,
         "samples": {
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:rideable/",
               "content": "minecraft:on_passenger_mount"
             }
           ]
@@ -277,13 +277,13 @@
       },
       {
         "id": "on_rider_exit_event",
-        "title": "On Rider Exit Event",
+        "title": "Rider Exit Event",
         "description": "Event to execute on the owner entity when an entity stops riding it.",
         "dataType": 22,
         "samples": {
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:rideable/",
               "content": "minecraft:on_passenger_dismount"
             }
           ]
@@ -357,7 +357,7 @@
           ],
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:rideable/",
               "content": 4
             }
           ],
@@ -530,7 +530,7 @@
           ],
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:rideable/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:rideable/",
               "content": [
                 {
                   "min_rider_count": 0,
@@ -727,7 +727,7 @@
       ],
       "/vanilla/behavior_pack/entities/happy_ghast.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:rideable/",
+          "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:rideable/",
           "content": {
             "seat_count": 4,
             "family_types": [

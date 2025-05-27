@@ -42,7 +42,13 @@ Each control scheme defines how Minecraft responds to game controllers, touch in
 
 ### Locked player relative strafe
 
-The controls in this scheme are the same as in player relative strafe, but the character is locked to face the same way the camera is facing.
+**Controller:** Push the left stick forward or backward to move the player forward or backward in the direction they're facing, and left or right to move the player to their left or right without turning (strafe). Push the right stick left or right to turn the player to their left or right. Pushing the right stick up or down will make the player's aim rotate up or down.
+
+**Touch:** Push the virtual joystick or D-pad forward or backward to make the player move forward or backward in the direction they're facing. Push the virtual joystick or D-pad left or right to move the player to their left or right without turning (strafe). Swiping left or right rotates the player, while swiping up or down makes the player look up or down. _Note:_ This control scheme will force the visible joystick option on.
+
+**Keyboard + Mouse:** Press W to move the player forward, S to move backward, A to move (strafe) to the player's left, and D to move (strafe) to the player's right. Moving the mouse left or right will turn the player to their left or right. Moving the mouse forward or back will move the player's aim up or down.
+
+**Full Keyboard:** Press W to move the player forward, S to move backward, A to move (strafe) to the player's left, and D to move (strafe) to the player's right. Press the left and right arrows to rotate the player. Press the up and down arrows to rotate the player's aim up or down. The numeric keypad can also be used for player rotation if enabled.
 
 ### Camera relative
 
@@ -84,16 +90,16 @@ When you use [camera presets][cp], you can use the `control_scheme` key in the *
 
 Setting a control scheme in a camera preset will override the preset's default control scheme, as long as the scheme is allowed in that camera mode. If the scheme is _not_ allowed in that mode, or you don't include the `control_scheme` key in that preset, the default control scheme of the camera mode will be used instead.
 
-Here are the allowed control schemes and default scheme for each built-in camera preset:
+Here are the allowed control schemes for each built-in camera preset. The default control scheme for all built-in presets is **locked player relative strafe**.
 
-| Camera Preset | Allowed Control Schemes | Default Scheme |
-| :------------ | :---------------------- | :------------- |
-| minecraft:first_person | locked player relative strafe | locked player relative strafe |
-| minecraft:third_person | locked player relative strafe | locked player relative strafe |
-| minecraft:third_person_front | locked player relative strafe | locked player relative strafe |
-| minecraft:free | player relative strafe<br>player relative<br>camera relative<br>camera relative strafe | player relative strafe |
-| minecraft:follow_orbit | locked player relative strafe<br>player relative<br>camera relative | locked player relative strafe |
-| minecraft:fixed_boom | camera relative<br>camera relative strafe<br>player relative strafe<br>player relative | camera relative |
+| Camera Preset                | Allowed Control Schemes       |
+|:-----------------------------|:------------------------------|
+| minecraft:first_person       | locked player relative strafe |
+| minecraft:third_person       | locked player relative strafe |
+| minecraft:third_person_front | locked player relative strafe |
+| minecraft:free               | locked player relative strafe<br>player relative strafe<br>player relative<br>camera relative<br>camera relative strafe |
+| minecraft:follow_orbit       | locked player relative strafe<br>player relative<br>camera relative |
+| minecraft:fixed_boom         | locked player relative strafe<br>camera relative<br>camera relative strafe<br>player relative strafe<br>player relative |
 
 ## Switching control schemes
 

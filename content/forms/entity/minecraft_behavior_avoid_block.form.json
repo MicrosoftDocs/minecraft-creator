@@ -27,9 +27,9 @@
       },
       {
         "id": "on_escape",
-        "title": "On Escape",
+        "title": "Escape",
         "description": "Escape trigger.",
-        "dataType": 17,
+        "dataType": 22,
         "samples": {
           "/vanilla/behavior_pack/entities/hoglin.json": [
             {
