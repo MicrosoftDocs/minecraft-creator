@@ -43,7 +43,7 @@
       },
       {
         "id": "on_activate",
-        "title": "On Activate",
+        "title": "Activate",
         "description": "Event to call when the rail is activated",
         "dataType": 22,
         "samples": {
@@ -85,7 +85,7 @@
       },
       {
         "id": "on_deactivate",
-        "title": "On Deactivate",
+        "title": "Deactivate",
         "description": "Event to call when the rail is deactivated",
         "dataType": 22,
         "samples": {

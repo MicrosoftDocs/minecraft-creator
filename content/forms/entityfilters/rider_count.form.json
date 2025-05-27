@@ -66,7 +66,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
               "content": "equals"
             },
             {
@@ -134,7 +134,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
               "content": "self"
             },
             {
@@ -165,7 +165,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
               "content": "rider_count"
             },
             {
@@ -189,7 +189,7 @@
       ],
       "/vanilla/behavior_pack/entities/happy_ghast.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+          "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
           "content": {
             "test": "rider_count",
             "subject": "self",

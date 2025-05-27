@@ -70,7 +70,7 @@
       },
       {
         "id": "on_leash",
-        "title": "On Leash",
+        "title": "Leash",
         "description": "Event to call when this entity is leashed.",
         "dataType": 22,
         "samples": {
@@ -96,7 +96,7 @@
       },
       {
         "id": "on_unleash",
-        "title": "On Unleash",
+        "title": "Unleash",
         "description": "Event to call when this entity is unleashed.",
         "dataType": 22,
         "samples": {
@@ -131,7 +131,7 @@
       },
       {
         "id": "on_unleash_interact_only",
-        "title": "On Unleash Interact Only",
+        "title": "Unleash Interact Only",
         "description": "When set to true, \"on_unleash\" does not trigger when the entity gets unleashed for reasons other than the player directly interacting with it.",
         "defaultValue": false,
         "dataType": 1
@@ -465,7 +465,18 @@
       "/vanilla/behavior_pack/entities/mule.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {}
+          "content": {
+            "presets": [
+              {
+                "filter": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "happy_ghast"
+                },
+                "spring_type": "quad_dampened"
+              }
+            ]
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/ocelot.json": [

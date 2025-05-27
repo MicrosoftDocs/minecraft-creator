@@ -133,17 +133,6 @@ Defines what blocks this entity can breathe in and gives them the ability to suf
 
 #### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
 
-At /minecraft:entity/component_groups/minecraft:adult/minecraft:breathable/: 
-
-```json
-"minecraft:breathable": {
-  "total_supply": 5,
-  "suffocate_time": 0,
-  "breathes_air": true,
-  "breathes_water": false
-}
-```
-
 At /minecraft:entity/component_groups/minecraft:baby/minecraft:breathable/: 
 
 ```json
@@ -152,6 +141,17 @@ At /minecraft:entity/component_groups/minecraft:baby/minecraft:breathable/:
   "suffocate_time": 0,
   "breathes_air": true,
   "breathes_water": true
+}
+```
+
+At /minecraft:entity/component_groups/minecraft:adult/minecraft:breathable/: 
+
+```json
+"minecraft:breathable": {
+  "total_supply": 5,
+  "suffocate_time": 0,
+  "breathes_air": true,
+  "breathes_water": false
 }
 ```
 

@@ -79,7 +79,7 @@
       },
       {
         "id": "on_arrival",
-        "title": "On Arrival",
+        "title": "Arrival",
         "description": "Event to run when the mob reaches their jobsite.",
         "dataType": 22,
         "samples": {

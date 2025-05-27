@@ -101,7 +101,7 @@
       ],
       "/vanilla/behavior_pack/entities/glow_squid.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:squid_ault/minecraft:leashable_to/",
+          "path": "/minecraft:entity/component_groups/minecraft:squid_adult/minecraft:leashable_to/",
           "content": {}
         }
       ],

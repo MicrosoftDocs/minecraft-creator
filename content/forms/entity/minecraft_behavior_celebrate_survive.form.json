@@ -54,7 +54,7 @@
       },
       {
         "id": "on_celebration_end_event",
-        "title": "On Celebration End Event",
+        "title": "Celebration End Event",
         "description": "The event to trigger when the goal's duration expires.",
         "dataType": 22,
         "samples": {

@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Tests if the subject is on a hot block.
 
 
-## On Hot Block Properties
+## Hot Block Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

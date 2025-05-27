@@ -6,7 +6,7 @@
   ],
   "generated_doNotEdit": {
     "id": "on_ground",
-    "title": "On Ground",
+    "title": "Ground",
     "description": "Returns true when the subject entity is on ground.",
     "fields": [
       {

@@ -29,7 +29,7 @@
       },
       {
         "id": "on_done",
-        "title": "On Done",
+        "title": "Done",
         "description": "Trigger to be executed when the goal execution is about to end",
         "dataType": 22,
         "samples": {

@@ -14,7 +14,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:behavior.player_ride_tamed/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.player_ride_tamed/",
               "content": 1
             }
           ]
@@ -36,7 +36,7 @@
       ],
       "/vanilla/behavior_pack/entities/happy_ghast.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:behavior.player_ride_tamed/",
+          "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.player_ride_tamed/",
           "content": {
             "priority": 1
           }

@@ -2,7 +2,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "on_hot_block",
-    "title": "On Hot Block",
+    "title": "Hot Block",
     "description": "Tests if the subject is on a hot block.",
     "fields": [
       {
