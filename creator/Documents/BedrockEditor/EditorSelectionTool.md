@@ -30,7 +30,7 @@ There's more than one way to specify the coordinates in Marquee mode thanks to t
 
 #### Gizmos
 
-When you make a selection and click on one of the white corners, a blue, red, and green arrow appear &mdash; that's the **Resize Gizmo**! You can click and drag the **Resize Gizmo** to adjust the size of your selection with your mouse.
+When you make a selection and click on one of the white corners, a blue, red, and green arrow appears &mdash; that's the **Resize Gizmo**! You can click and drag the **Resize Gizmo** to adjust the size of your selection with your mouse.
 
 ![Animation of how to use a resize gizmo](Media/Gizmo1.gif)
 
@@ -180,7 +180,7 @@ Retains the outline of your selection while changing all interior blocks to air.
 
 - **Keyboard Only**
 
-    Uses the directional keys to move the cursor around the world. The mouse and W,A,S,D keys are still used to move and look around the world, but they're not involved in selecting a block.
+    Uses the directional keys to move the cursor around the world. The mouse and W, A, S, and D keys are still used to move and look around the world, but they're not involved in selecting a block.
 
 - **Mouse & Keys**
 
