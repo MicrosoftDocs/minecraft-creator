@@ -216,7 +216,7 @@
       },
       {
         "id": "on_increase_sounds",
-        "title": "On Increase Sounds",
+        "title": "Increase Sounds",
         "description": "Sounds to play when the entity is getting provoked. Evaluated in order. First matching condition wins",
         "dataType": 15,
         "subForm": {

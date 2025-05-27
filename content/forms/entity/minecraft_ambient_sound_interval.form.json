@@ -202,11 +202,11 @@
           ],
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:has_passengers/minecraft:ambient_sound_interval/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_with_passengers/minecraft:ambient_sound_interval/",
               "content": 30
             },
             {
-              "path": "/minecraft:entity/component_groups/minecraft:has_no_passengers/minecraft:ambient_sound_interval/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_without_passengers/minecraft:ambient_sound_interval/",
               "content": 5
             }
           ],
@@ -322,13 +322,13 @@
       ],
       "/vanilla/behavior_pack/entities/happy_ghast.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:has_passengers/minecraft:ambient_sound_interval/",
+          "path": "/minecraft:entity/component_groups/minecraft:adult_with_passengers/minecraft:ambient_sound_interval/",
           "content": {
             "value": 30
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:has_no_passengers/minecraft:ambient_sound_interval/",
+          "path": "/minecraft:entity/component_groups/minecraft:adult_without_passengers/minecraft:ambient_sound_interval/",
           "content": {
             "value": 5
           }

@@ -74,7 +74,7 @@
       },
       {
         "id": "on_digging_start",
-        "title": "On Digging Start",
+        "title": "Digging Start",
         "description": "Event to run when the goal ends searching has begins digging.",
         "dataType": 22,
         "samples": {
@@ -91,7 +91,7 @@
       },
       {
         "id": "on_fail_during_digging",
-        "title": "On Fail During Digging",
+        "title": "Fail During Digging",
         "description": "Event to run when the goal failed while in digging state.",
         "dataType": 22,
         "samples": {
@@ -108,7 +108,7 @@
       },
       {
         "id": "on_fail_during_searching",
-        "title": "On Fail During Searching",
+        "title": "Fail During Searching",
         "description": "Event to run when the goal failed while in searching state.",
         "dataType": 22,
         "samples": {
@@ -125,7 +125,7 @@
       },
       {
         "id": "on_item_found",
-        "title": "On Item Found",
+        "title": "Item Found",
         "description": "Event to run when the goal find a item.",
         "dataType": 22,
         "samples": {
@@ -142,7 +142,7 @@
       },
       {
         "id": "on_searching_start",
-        "title": "On Searching Start",
+        "title": "Searching Start",
         "description": "Event to run when the goal starts searching.",
         "dataType": 22,
         "samples": {
@@ -159,7 +159,7 @@
       },
       {
         "id": "on_success",
-        "title": "On Success",
+        "title": "Success",
         "description": "Event to run when searching and digging has ended.",
         "dataType": 22,
         "samples": {

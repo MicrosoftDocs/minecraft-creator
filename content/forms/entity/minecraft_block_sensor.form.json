@@ -7,7 +7,7 @@
     "fields": [
       {
         "id": "on_break",
-        "title": "On Break",
+        "title": "Break",
         "description": "List of blocks to watch for being broken to fire off a specified event. If a block is in multiple lists, multiple events will fire.",
         "dataType": 17,
         "samples": {

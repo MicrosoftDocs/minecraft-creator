@@ -60,7 +60,7 @@
             },
             {
               "id": "on_named",
-              "title": "On Named",
+              "title": "Named",
               "description": "Event to be called when this entity acquires the name specified in 'name_filter'",
               "dataType": 22
             }

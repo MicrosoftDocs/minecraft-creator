@@ -26,7 +26,7 @@
       },
       {
         "id": "on_reach",
-        "title": "On Reach",
+        "title": "Reach",
         "description": "Event to run on block reached.",
         "dataType": 22,
         "samples": {
@@ -45,7 +45,7 @@
       },
       {
         "id": "on_stay_completed",
-        "title": "On Stay Completed",
+        "title": "Stay Completed",
         "description": "Event to run on completing a stay of stay_duration at the block.",
         "dataType": 22,
         "samples": {

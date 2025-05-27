@@ -20,7 +20,7 @@
       },
       {
         "id": "on_give",
-        "title": "On Give",
+        "title": "Give",
         "description": "Event to fire when the correct item is given.",
         "dataType": 22
       },

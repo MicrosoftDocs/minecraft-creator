@@ -94,7 +94,7 @@
       },
       {
         "id": "on_lay",
-        "title": "On Lay",
+        "title": "Lay",
         "description": "Event to run when this mob lays the egg.",
         "dataType": 22,
         "samples": {

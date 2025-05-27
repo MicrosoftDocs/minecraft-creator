@@ -7,7 +7,7 @@
     "fields": [
       {
         "id": "on_close",
-        "title": "On Close",
+        "title": "Close",
         "description": "Event to call when the entity is done peeking.",
         "dataType": 22,
         "samples": {
@@ -23,7 +23,7 @@
       },
       {
         "id": "on_open",
-        "title": "On Open",
+        "title": "Open",
         "description": "Event to call when the entity starts peeking.",
         "dataType": 22,
         "samples": {
@@ -39,7 +39,7 @@
       },
       {
         "id": "on_target_open",
-        "title": "On Target Open",
+        "title": "Target Open",
         "description": "Event to call when the entity's target entity starts peeking.",
         "dataType": 22,
         "samples": {

@@ -15,7 +15,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:input_air_controlled/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:input_air_controlled/",
               "content": 0.5
             }
           ]
@@ -30,7 +30,7 @@
         "samples": {
           "/vanilla/behavior_pack/entities/happy_ghast.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:input_air_controlled/",
+              "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:input_air_controlled/",
               "content": 1
             }
           ]
@@ -40,7 +40,7 @@
     "samples": {
       "/vanilla/behavior_pack/entities/happy_ghast.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:input_air_controlled/",
+          "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:input_air_controlled/",
           "content": {
             "strafe_speed_modifier": 1,
             "backwards_movement_modifier": 0.5

@@ -43,7 +43,7 @@
       },
       {
         "id": "on_inside_range",
-        "title": "On Inside Range",
+        "title": "Inside Range",
         "description": "Event to call when an entity gets in the inside range. Can specify 'event' for the name of the event and 'target' for the target of the event",
         "dataType": 22,
         "samples": {
@@ -69,7 +69,7 @@
       },
       {
         "id": "on_outside_range",
-        "title": "On Outside Range",
+        "title": "Outside Range",
         "description": "Event to call when an entity gets in the outside range. Can specify 'event' for the name of the event and 'target' for the target of the event",
         "dataType": 22,
         "samples": {
@@ -95,7 +95,7 @@
       },
       {
         "id": "on_vision_lost_inside_range",
-        "title": "On Vision Lost Inside Range",
+        "title": "Vision Lost Inside Range",
         "description": "Event to call when an entity exits visual range. Can specify 'event' for the name of the event and 'target' for the target of the event",
         "dataType": 22
       },

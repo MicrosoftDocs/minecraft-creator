@@ -88,13 +88,13 @@
             },
             {
               "id": "on_damage",
-              "title": "On Damage",
+              "title": "Damage",
               "description": "Defines which entities the trigger applies to, and which, if any, event to emit when damaged.",
               "dataType": 22
             },
             {
               "id": "on_damage_sound_event",
-              "title": "On Damage Sound Event",
+              "title": "Damage Sound Event",
               "description": "Defines what sound to play, if any, when the \"on_damage\" filters are met.",
               "dataType": 2
             }

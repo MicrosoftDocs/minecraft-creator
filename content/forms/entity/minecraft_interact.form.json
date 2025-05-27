@@ -382,7 +382,7 @@
       },
       {
         "id": "on_interact",
-        "title": "On Interact",
+        "title": "Interact",
         "description": "Event to fire when the interaction occurs.",
         "dataType": 22
       },
@@ -1394,7 +1394,7 @@
       ],
       "/vanilla/behavior_pack/entities/happy_ghast.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:unharnessed/minecraft:interact/",
+          "path": "/minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:interact/",
           "content": {
             "interactions": [
               {
@@ -1511,7 +1511,7 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/",
+          "path": "/minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:interact/",
           "content": {
             "interactions": [
               {

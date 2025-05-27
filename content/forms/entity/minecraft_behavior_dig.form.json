@@ -51,7 +51,7 @@
       },
       {
         "id": "on_start",
-        "title": "On Start",
+        "title": "Start",
         "description": "Event(s) to run when the goal starts.",
         "dataType": 22,
         "samples": {

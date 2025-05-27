@@ -33,13 +33,13 @@
             },
             {
               "id": "on_equip",
-              "title": "On Equip",
+              "title": "Equip",
               "description": "Event to trigger when this entity is equipped with this item.",
               "dataType": 22
             },
             {
               "id": "on_unequip",
-              "title": "On Unequip",
+              "title": "Unequip",
               "description": "Event to trigger when this item is removed from this entity.",
               "dataType": 22
             },

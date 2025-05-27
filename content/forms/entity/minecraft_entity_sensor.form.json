@@ -193,35 +193,10 @@
                 {
                   "event": "minecraft:become_mobile",
                   "cooldown": 0,
-                  "y_offset": 5,
+                  "y_offset": 4.5,
                   "range": [
-                    3,
-                    1
-                  ],
-                  "minimum_count": 0,
-                  "maximum_count": 0,
-                  "event_filters": {
-                    "all_of": [
-                      {
-                        "test": "is_riding_self",
-                        "subject": "other",
-                        "value": false
-                      },
-                      {
-                        "test": "actor_health",
-                        "operator": ">",
-                        "value": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "event": "minecraft:become_mobile",
-                  "cooldown": 0,
-                  "y_offset": 4,
-                  "range": [
-                    2,
-                    1
+                    3.5,
+                    2
                   ],
                   "minimum_count": 0,
                   "maximum_count": 0,
@@ -243,34 +218,10 @@
                 {
                   "event": "minecraft:become_immobile",
                   "cooldown": 0,
-                  "y_offset": 5,
+                  "y_offset": 4.5,
                   "range": [
                     3,
-                    1
-                  ],
-                  "minimum_count": 1,
-                  "event_filters": {
-                    "all_of": [
-                      {
-                        "test": "is_riding_self",
-                        "subject": "other",
-                        "value": false
-                      },
-                      {
-                        "test": "actor_health",
-                        "operator": ">",
-                        "value": 0
-                      }
-                    ]
-                  }
-                },
-                {
-                  "event": "minecraft:become_immobile",
-                  "cooldown": 0,
-                  "y_offset": 4,
-                  "range": [
-                    2,
-                    1
+                    1.5
                   ],
                   "minimum_count": 1,
                   "event_filters": {
@@ -401,35 +352,10 @@
               {
                 "event": "minecraft:become_mobile",
                 "cooldown": 0,
-                "y_offset": 5,
+                "y_offset": 4.5,
                 "range": [
-                  3,
-                  1
-                ],
-                "minimum_count": 0,
-                "maximum_count": 0,
-                "event_filters": {
-                  "all_of": [
-                    {
-                      "test": "is_riding_self",
-                      "subject": "other",
-                      "value": false
-                    },
-                    {
-                      "test": "actor_health",
-                      "operator": ">",
-                      "value": 0
-                    }
-                  ]
-                }
-              },
-              {
-                "event": "minecraft:become_mobile",
-                "cooldown": 0,
-                "y_offset": 4,
-                "range": [
-                  2,
-                  1
+                  3.5,
+                  2
                 ],
                 "minimum_count": 0,
                 "maximum_count": 0,
@@ -451,34 +377,10 @@
               {
                 "event": "minecraft:become_immobile",
                 "cooldown": 0,
-                "y_offset": 5,
+                "y_offset": 4.5,
                 "range": [
                   3,
-                  1
-                ],
-                "minimum_count": 1,
-                "event_filters": {
-                  "all_of": [
-                    {
-                      "test": "is_riding_self",
-                      "subject": "other",
-                      "value": false
-                    },
-                    {
-                      "test": "actor_health",
-                      "operator": ">",
-                      "value": 0
-                    }
-                  ]
-                }
-              },
-              {
-                "event": "minecraft:become_immobile",
-                "cooldown": 0,
-                "y_offset": 4,
-                "range": [
-                  2,
-                  1
+                  1.5
                 ],
                 "minimum_count": 1,
                 "event_filters": {

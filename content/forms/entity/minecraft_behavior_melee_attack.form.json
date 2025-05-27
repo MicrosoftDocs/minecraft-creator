@@ -95,13 +95,13 @@
       },
       {
         "id": "on_attack",
-        "title": "On Attack",
+        "title": "Attack",
         "description": "Defines the event to trigger when this entity successfully attacks.",
         "dataType": 22
       },
       {
         "id": "on_kill",
-        "title": "On Kill",
+        "title": "Kill",
         "description": "Defines the event to trigger when this entity kills the target.",
         "dataType": 22
       },

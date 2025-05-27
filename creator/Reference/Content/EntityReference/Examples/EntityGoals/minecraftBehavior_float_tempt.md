@@ -32,7 +32,7 @@ Allows a mob to be tempted by a player holding a specific item. Uses point-to-po
 
 #### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
 
-At /minecraft:entity/component_groups/minecraft:unharnessed/minecraft:behavior.float_tempt/: 
+At /minecraft:entity/component_groups/minecraft:adult_unharnessed/minecraft:behavior.float_tempt/: 
 
 ```json
 "minecraft:behavior.float_tempt": {
@@ -65,7 +65,7 @@ At /minecraft:entity/component_groups/minecraft:unharnessed/minecraft:behavior.f
 }
 ```
 
-At /minecraft:entity/component_groups/minecraft:harnessed/minecraft:behavior.float_tempt/: 
+At /minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:behavior.float_tempt/: 
 
 ```json
 "minecraft:behavior.float_tempt": {

@@ -176,20 +176,3 @@ List of damage conditions that when met can cause damage to the entity.
   ]
 }
 ```
-
-#### [Strider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/strider.json)
-
-
-```json
-"minecraft:hurt_on_condition": {
-  "damage_conditions": [
-    {
-      "filters": {
-        "test": "in_contact_with_water"
-      },
-      "cause": "drowning",
-      "damage_per_tick": 1
-    }
-  ]
-}
-```

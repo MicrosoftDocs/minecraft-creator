@@ -14,9 +14,9 @@
       },
       {
         "id": "on_item_throw",
-        "title": "On Item Throw",
+        "title": "Item Throw",
         "description": "Event(s) to run when this mob throws items.",
-        "dataType": 17,
+        "dataType": 22,
         "samples": {
           "/vanilla/behavior_pack/entities/allay.json": [
             {

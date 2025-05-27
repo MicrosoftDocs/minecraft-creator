@@ -38,13 +38,6 @@ This entity can be ridden.
 | default | Default | |
 | on_top_center | On Top Center | |
 
-### Dismount Mode choices
-
-|Value       |Title |Description |
-|:-----------|:-----|:-----------|
-| default | Default | |
-| on_top_center | On Top Center | |
-
 ## Seats item type
 The list of positions and number of riders for each position for entities riding this entity.
 

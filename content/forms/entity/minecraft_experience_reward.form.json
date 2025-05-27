@@ -1,5 +1,14 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "on_bred",
+      "dataType": 34
+    },
+    {
+      "id": "on_death",
+      "dataType": 34
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:experience_reward",
     "title": "Experience Reward",
@@ -7,7 +16,7 @@
     "fields": [
       {
         "id": "on_bred",
-        "title": "On Bred",
+        "title": "Bred",
         "description": "A Molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total.",
         "defaultValue": "0",
         "dataType": 22,
@@ -28,7 +37,7 @@
       },
       {
         "id": "on_death",
-        "title": "On Death",
+        "title": "Death",
         "description": "A Molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total.",
         "defaultValue": "0",
         "dataType": 22,

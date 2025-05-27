@@ -144,7 +144,7 @@
       },
       {
         "id": "on_defend_start",
-        "title": "On Defend Start",
+        "title": "Defend Start",
         "dataType": 22,
         "samples": {
           "/vanilla/behavior_pack/entities/fox.json": [

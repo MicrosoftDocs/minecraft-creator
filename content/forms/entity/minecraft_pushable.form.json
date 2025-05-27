@@ -449,6 +449,13 @@
       ],
       "/vanilla/behavior_pack/entities/happy_ghast.json": [
         {
+          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:pushable/",
+          "content": {
+            "is_pushable": true,
+            "is_pushable_by_piston": true
+          }
+        },
+        {
           "path": "/minecraft:entity/component_groups/minecraft:adult_mobile/minecraft:pushable/",
           "content": {
             "is_pushable": true,
@@ -463,21 +470,14 @@
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:pushable/",
-          "content": {
-            "is_pushable": true,
-            "is_pushable_by_piston": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:has_passengers/minecraft:pushable/",
+          "path": "/minecraft:entity/component_groups/minecraft:adult_with_passengers/minecraft:pushable/",
           "content": {
             "is_pushable": false,
             "is_pushable_by_piston": true
           }
         },
         {
-          "path": "/minecraft:entity/component_groups/minecraft:has_no_passengers/minecraft:pushable/",
+          "path": "/minecraft:entity/component_groups/minecraft:adult_without_passengers/minecraft:pushable/",
           "content": {
             "is_pushable": true,
             "is_pushable_by_piston": true

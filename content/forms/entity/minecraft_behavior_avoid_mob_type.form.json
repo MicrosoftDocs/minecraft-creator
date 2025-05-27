@@ -836,7 +836,7 @@
       },
       {
         "id": "on_escape_event",
-        "title": "On Escape Event",
+        "title": "Escape Event",
         "description": "Event that is triggered when escaping from a mob.",
         "dataType": 22,
         "samples": {

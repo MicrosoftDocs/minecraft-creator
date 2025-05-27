@@ -64,7 +64,7 @@ At Short (using Defaults)..:
 
 #### [Happy Ghast](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/happy_ghast.json)
 
-At /minecraft:entity/component_groups/minecraft:harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/: 
+At /minecraft:entity/component_groups/minecraft:adult_harnessed/minecraft:interact/interactions/0/on_interact/filters/all_of/2/: 
 
 ```json
 {

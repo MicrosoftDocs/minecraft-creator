@@ -60,7 +60,7 @@
       },
       {
         "id": "on_eat",
-        "title": "On Eat",
+        "title": "Eat",
         "description": "The event to trigger when the block eating animation has completed.",
         "dataType": 22,
         "samples": {

@@ -8,7 +8,7 @@
     "fields": [
       {
         "id": "on_tick",
-        "title": "On Tick",
+        "title": "Tick",
         "description": "The event that will be triggered on random ticks.",
         "dataType": 22
       }

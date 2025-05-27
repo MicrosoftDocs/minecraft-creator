@@ -198,7 +198,7 @@
       },
       {
         "id": "on_drop_attempt",
-        "title": "On Drop Attempt",
+        "title": "Drop Attempt",
         "description": "The event to trigger when the entity attempts to drop an item.",
         "dataType": 22,
         "samples": {
