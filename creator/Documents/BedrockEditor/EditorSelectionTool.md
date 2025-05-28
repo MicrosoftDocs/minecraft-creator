@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Selection Tool
 description: "An overview of the Selection Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/20/2025
+ms.date: 05/28/2025
 ---
 
 # Selection Tool
@@ -103,21 +103,29 @@ Creates a selection with the same mechanic as the Brush Paint Tool to create a m
 
 **Fill Constraints (Block Filters)**
 
+Block Filters determine what type of blocks are included/excluded from the Brush Paint action and how your selection is filled.
+
+
+![Fil Constraints Menu](media/BrushScreenshots/FillConstraints.png)
+
 - Disabled
 
-    ???
+    *Uses the type of block currently selected in the Block Picker to fill the entirety of your selection with.*
 
 - Mask
 
-    ???
+    *Lets you specify a list of block types to exclude from the Brush Paint action, preventing them from changing even when included in your selection.*
 
 - Replace
 
-    ???
+    *Lets you specify what type of blocks to replace and the type of block to replace them with.*
 
 ### Magic Select Mode
 
-???
+Used to select entire structures from blocks that are connected to each other in the world. Magic Select can help you quickly adjust, copy, or paste structures to add richness your world.
+
+> [!Note]
+> Magic Select is best used to select isolated structures since it creats a selection out of all connected blocks beside and above the initial selected block. All connected structures will be grouped together (i.e. adjacent trees that are connected by touching leaf blocks).
 
 
 ## Quick Actions
