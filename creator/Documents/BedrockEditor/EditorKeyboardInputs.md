@@ -22,7 +22,6 @@ To set a custom keyboard shortcut:
 4. Press the keyboard buttons that you want to use for your custom shortcut. 
 
 5. Click **Save**.
-
     > [!NOTE]
     > All custom shortcuts must be saved before closing the Keyboard Settings window. If you do not save your custom shortcuts, they will revert to the default shortcuts when the window is closed.
 
