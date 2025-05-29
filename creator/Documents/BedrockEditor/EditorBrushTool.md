@@ -105,19 +105,21 @@ Shape Settings apply to all Brush Types except for Single Block. Here, you'll fi
 
 ## Fill Constraints
 
+Block Filters determine what type of blocks are included/excluded from the Brush Paint action and how your selection is filled.
+
 ![Fil Constraints Menu](media/BrushScreenshots/FillConstraints.png)
 
-- Disabled
+- ### Disabled
 
-    ???
+    Uses the type of block currently selected in the Block Picker to fill the entirety of your selection with.
 
-- Mask
+- ### Mask
 
-    ???
+    Lets you specify a list of block types to exclude from the Brush Paint action, preventing them from changing even when included in your selection.
 
-- Replace
+- ### Replace
 
-    ???
+    Lets you specify what type of blocks to replace and the type of block to replace them with.
 
 
 ## Practice: A humble tree...
