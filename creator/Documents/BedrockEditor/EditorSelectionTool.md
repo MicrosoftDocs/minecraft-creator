@@ -106,7 +106,7 @@ Creates a selection with the same mechanic as the Brush Paint Tool to create a m
 Block Filters determine what type of blocks are included/excluded from the Brush Paint action and how your selection is filled.
 
 
-![Fil Constraints Menu](media/BrushScreenshots/FillConstraints.png)
+![Fill Constraints Menu](media/BrushScreenshots/FillConstraints.png)
 
 - Disabled
 
