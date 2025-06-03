@@ -84,7 +84,7 @@ Notes:
 ### **explosion**
 `read-only explosion: ExplosionBeforeEventSignal;`
 
-This event is fired after an explosion occurs.
+This event is fired before an explosion occurs.
 
 Type: [*ExplosionBeforeEventSignal*](ExplosionBeforeEventSignal.md)
 
