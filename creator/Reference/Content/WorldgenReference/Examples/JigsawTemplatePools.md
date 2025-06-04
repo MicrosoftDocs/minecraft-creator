@@ -45,7 +45,7 @@ A templated pool element object that depending on the element type will contain 
 
 | Name| Default Value| Requirement Status| Type| Description| Example Values|
 | ----| -------------| ------------------| ----| -----------| --------------|
-| element_type | *not set* | Required | String | The type of element. Supported types include [minecraft:single_pool_element](#minecraft:single_pool_element) and [minecraft:empty_pool_element](#minecraftempty_pool_element). |  |
+| element_type | *not set* | Required | String | The type of element. Supported types include [minecraft:single_pool_element](#minecraftsingle_pool_element) and [minecraft:empty_pool_element](#minecraftempty_pool_element). |  |
 
 ### minecraft:single_pool_element
 
