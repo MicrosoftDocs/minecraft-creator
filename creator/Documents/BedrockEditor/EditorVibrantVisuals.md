@@ -147,7 +147,7 @@ What is the identifier?
             The color your world’s Moon contributes to direct surface lighting.
 
             > [!Note]
-            > Supports RGB Array and HEX strings.
+            > Supports RGB Array and hex strings.
 
 - **Orbital Offset Degrees**
 
