@@ -26,40 +26,40 @@ What is the identifier?
 
 #### Particle Concentration
 
--	Chromophoric Dissolved Organic Matter (CDOM)
+-	**Chromophoric Dissolved Organic Matter (CDOM)**
 
     Represents the organic matter suspended in the water. Increasing this value increases the strength of the organic matter’s blue wavelength absorption, turning the water yellow to yellow-brown (CDOM values range from 1 – 15).
 
--	Chlorophyll
+-	**Chlorophyll**
 
     Represents the amount of chlorophyll present in a body of water. Chlorophyll absorbs blue and red wavelengths, turning the water green according to the slider’s value (ranges from 1 – 10).
 
--	Suspended Sediment
+-	**Suspended Sediment**
 
     Represents the amount of sediment suspended in the water. Sediment absorbs blue and green light wavelengths, so adding more Suspended Sediment will turn the water red to red-brown (sediment values range from 1 – 300).
 
 #### Caustics
 Enabling Caustics lets light rays project onto underwater surfaces.
 
--	Frame length
+-	**Frame length**
 
     Represents the time spent (in seconds) on a single frame of animation in the caustics sprite sheet texture.
 
     > [!Tip]
     > A larger frame length results in a slower animation.
 
--	Power
+-	**Power**
 
     Adjusts the brightness of the caustic effect (ranges from 1 - 6).
 
--	Scale
+-	**Scale**
 
-    Adjusts the caustics texture projection size 
+    Adjusts the caustics texture projection size.
 
     > [!Tip]
     > Larger scale values make the texture repeat/tile more frequently, making it appear smaller. Smaller scale values make the texture cover a larger area.
 
--	Texture
+-	**Texture**
 
     Reveals the texture used for the caustics animation. 
 
@@ -128,7 +128,7 @@ What is the identifier?
     - Sun
         - Illuminance:
         
-            Measures the brightness of the sun’s surface (in lux)
+            Measures the brightness of the sun’s surface (in lux).
 
         - Color:
         
@@ -273,24 +273,20 @@ Use the Operator to define how a color gets remapped from HDR-space to SDR-space
 
 ## PBR Fallback
 
-### PBR Fallback Settings
+### PBR Fallback Settings?
 
-#### Blocks
-PBR Fallbacks for Blocks
--	Global Metalness Emissive Roughness Subsurface?
+You can configure the default MERS values for the following entities in your world when they're not specifically defined with a textureset:
 
-#### Actors
-PBR Fallbacks for Actors
--	Global Metalness Emissive Roughness Subsurface?
+- #### Blocks
 
-#### Particles
-PBR Fallbacks for Particles
--	Global Metalness Emissive Roughness Subsurface?
+- #### Actors
 
-#### Items
-PBR Fallbacks for Items
--	Global Metalness Emissive Roughness Subsurface?
+- #### Particles
 
+- #### Items
+
+> [!Tip]
+> You can use either RGBA Array or Hex string to set the MERS value.
 
 ## Shadows
 
@@ -300,9 +296,9 @@ PBR Fallbacks for Items
 
 Changes the way shadows render in your world.
 
--	Blocky Shadows
+-	Blocky Shadows?
 
--	Soft Shadows
+-	Soft Shadows?
 
 #### Texel Size
 
