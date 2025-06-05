@@ -101,7 +101,7 @@ When enabled, bodies of water in your world generate waves, which you can edit b
 
 -	**Shape**
 
-    Alters the core shape of your world’s waves. A value of 1 yields a true sin wave while values lower than 1 sharpen wave peaks and valleys.
+    Alters the core shape of your world’s waves. A value of 1 yields a true sine wave while values lower than 1 sharpen wave peaks and valleys.
 
 -	**Speed**
 
