@@ -286,7 +286,7 @@ You can configure the default MERS values for the following entities in your wor
 - #### Items
 
 > [!Tip]
-> You can use either RGBA Array or Hex string to set the MERS value.
+> You can use either an RGBA array or a hex string to set the MERS value.
 
 ## Shadows
 
