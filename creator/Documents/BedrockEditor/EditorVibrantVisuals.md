@@ -8,21 +8,18 @@ ms.date: 06/05/2025
 ---
 
 # Vibrant Visuals
-Generate Resource Pack?
 
-- Revert changes – does this undo ALL changes and set back to default?
+When you click **Generate Resource Pack**, a link appears beneath the button that takes you to a template on mctools.dev for a new resource pack with the Vibrant Visuals settings you've configured.
 
-- format_version??
+Selecting **Export to Clipboard** copys the JSON of the current visual setting to your device's clipboard. You can use this to quickly modify parts of a resource pack without the need to generate a completely new one.
+
+> [!Tip]
+> You can reset the current visual settings to the Editor default by clicking **Revert Changes** near the top of the Vibrant Visuals menu at any time.
 
 
 ## Water
 
 ### Water Settings
-
-#### Description – Identifier
-
-What is the identifier?
-	Is it a resource pack name?
 
 #### Particle Concentration
 
@@ -111,17 +108,10 @@ When enabled, bodies of water in your world generate waves, which you can edit b
 
     Controls how much faster each subsequent wave moves. A value of 1 is neutral, while anything below it reduces wave speed and anything above it increases wave speed.
 
-Export to clipboard – anything worth noting?
-
 
 ## Global Lighting
 
 ### Lighting Settings
-
-#### Description – Identifier
-
-What is the identifier?
-    Is it a resource pack name?
 
 #### Directional Lights
 -	**Orbital**
@@ -174,10 +164,6 @@ Use the Intensity slider to adjust the brilliance of your world’s sun. By defa
 
 ### Atmosphere Settings
 
-#### Description – Identifier
-
-What is the identifier?
-
 #### Sky Zenith Color
 
 Controls the color of the atmosphere’s zenith.
@@ -221,10 +207,6 @@ Adjusts how your world’s atmosphere layers are divided.
 Lets you adjust things like saturation, contrast, gain, and pixel offset to fine-tune the look of your world.
 
 ### Color Grading Settings
-
-#### Description – Identifier
-
-What is the identifier?
 
 #### Color Grading
 
@@ -273,7 +255,7 @@ Use the Operator to define how a color gets remapped from HDR-space to SDR-space
 
 ## PBR Fallback
 
-### PBR Fallback Settings?
+### PBR Fallback Settings
 
 You can configure the default MERS values for the following entities in your world when they're not specifically defined with a textureset:
 
@@ -296,9 +278,13 @@ You can configure the default MERS values for the following entities in your wor
 
 Changes the way shadows render in your world.
 
--	Blocky Shadows?
+-	**Blocky Shadows**
 
--	Soft Shadows?
+    Renders shadows with hard edges that reflect the shape of the object casting them.
+
+-	**Soft Shadows**
+
+    Renders shadows with softened edges that are inspired by shape casting them.
 
 #### Texel Size
 
