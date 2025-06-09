@@ -9,7 +9,7 @@ ms.date: 06/09/2025
 
 # Vibrant Visuals
 
-Vibrant Visuals (previously Advanced Rendering: Deferred Lighting) is a complete overhaul to the Minecraft graphics system that officially rolled out in version [??].
+Vibrant Visuals (previously Advanced Rendering: Deferred Lighting) is a complete overhaul to the Minecraft graphics system that officially rolled out in Editor v1.0.
 
 ![Vibrant Visuals Disabled](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/VibrantVisualsDisabled.png)
 
