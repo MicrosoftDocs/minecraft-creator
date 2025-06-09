@@ -11,12 +11,12 @@ ms.date: 06/09/2025
 
 Vibrant Visuals (previously Advanced Rendering: Deferred Lighting) is a complete overhaul to the Minecraft graphics system that officially rolled out in Editor v1.0.
 
-![Vibrant Visuals Disabled](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/VibrantVisualsDisabled.png)
+![Vibrant Visuals Disabled](Media/VibrantVisualsScreenshots/VibrantVisualsDisabled.png)
 
 Open Minecraft Editor and add Vibrant Visuals to the Action Bar to get started, then select the graphical element you want to start editing.
 
 
-![Vibrant Visuals Enabled](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/VibrantVisualsEnabled.png)
+![Vibrant Visuals Enabled](Media/VibrantVisualsScreenshots/VibrantVisualsEnabled.png)
 
 When you click **Generate Resource Pack**, a link appears beneath the button that takes you to a template on mctools.dev for a new resource pack with the Vibrant Visuals settings you've configured.
 
@@ -28,7 +28,7 @@ Selecting **Export to Clipboard** copys the JSON of the current visual setting t
 
 ## Water
 
-![Water Settings](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/WaterSettings.png)
+![Water Settings](Media/VibrantVisualsScreenshots/WaterSettings.png)
 
 ### Water Settings
 
@@ -122,7 +122,7 @@ When enabled, bodies of water in your world generate waves, which you can edit b
 
 ## Global Lighting
 
-![Global Lighting Settings](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/GlobalLighting.png)
+![Global Lighting Settings](Media/VibrantVisualsScreenshots/GlobalLighting.png)
 
 ### Lighting Settings
 
@@ -174,7 +174,7 @@ Use the Intensity slider to adjust the brilliance of your world’s sun. By defa
 
 ## Atmospheric Scattering
 
-![Atmospheric Scattering Settings](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/AtmosphericScattering.png)
+![Atmospheric Scattering Settings](Media/VibrantVisualsScreenshots/AtmosphericScattering.png)
 
 ### Atmosphere Settings
 
@@ -222,7 +222,7 @@ Lets you adjust things like saturation, contrast, gain, and pixel offset to fine
 
 ### Color Grading Settings
 
-![Color Grading Settings](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/ColorGrading.png)
+![Color Grading Settings](Media/VibrantVisualsScreenshots/ColorGrading.png)
 
 #### Color Grading
 
@@ -268,7 +268,7 @@ Lets you adjust things like saturation, contrast, gain, and pixel offset to fine
 #### Tone Mapping
 Use the Operator to define how a color gets remapped from HDR-space to SDR-space for modern displays.
 
-![Tone Mapping Operators](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/ToneMapping.png)
+![Tone Mapping Operators](Media/VibrantVisualsScreenshots/ToneMapping.png)
 
 - #### Aces
 
@@ -285,7 +285,7 @@ Use the Operator to define how a color gets remapped from HDR-space to SDR-space
 
 ## PBR Fallbacks
 
-![PBR Fallbacks](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/PBRFallbacks.png)
+![PBR Fallbacks](Media/VibrantVisualsScreenshots/PBRFallbacks.png)
 
 ### PBR Fallbacks Settings
 
@@ -304,7 +304,7 @@ You can configure the default MERS values for the following entities in your wor
 
 ## Shadows
 
-![Shadows](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/Shadows.png)
+![Shadows](Media/VibrantVisualsScreenshots/Shadows.png)
 
 ### Shadow Settings
 
