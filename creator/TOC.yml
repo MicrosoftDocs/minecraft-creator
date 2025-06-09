@@ -431,15 +431,11 @@
             - name: Action Bar
               href: Documents/BedrockEditor/EditorActionBar.md
             - name: Deferred Lighting
-              href: Documents/BedrockEditor/EditorDeferredLighting.md
+              href: Documents/BedrockEditor/EditorVibrantVisuals.md
             - name: Keyboard Inputs
               href: Documents/BedrockEditor/EditorKeyboardInputs.md
             - name: Paste Preview
               href: Documents/BedrockEditor/EditorPastePreview.md
-            - name: Line Tool
-              href: Documents/BedrockEditor/EditorLineTool.md
-            - name: Ruler Tool
-              href: Documents/BedrockEditor/EditorRulerTool.md
             - name: Tool Mode
               href: Documents/BedrockEditor/EditorToolMode.md
             - name: Workflow
@@ -452,19 +448,23 @@
               - name: Brush Tool
                 href: Documents/BedrockEditor/EditorBrushTool.md
               - name: Selection Tool
-                href: Documents/BedrockEditor/EditorSelectionTool.md
-              - name: Summon Tool
-                href: Documents/BedrockEditor/EditorSummonTool.md
-              - name: Flatten Tool
-                href: Documents/BedrockEditor/EditorFlattenTool.md
+                href: Documents/BedrockEditor/EditorSelectionTool.md  
+              - name: Line Tool
+                href: Documents/BedrockEditor/EditorLineTool.md
+              - name: Ruler Tool
+                href: Documents/BedrockEditor/EditorRulerTool.md
               - name: Smart Fill Tool
                 href: Documents/BedrockEditor/EditorFillTool.md
               - name: Terrain Tool
                 href: Documents/BedrockEditor/EditorTerrainTool.md
+              - name: Flatten Tool
+                href: Documents/BedrockEditor/EditorFlattenTool.md
               - name: Extrude Tool
                 href: Documents/BedrockEditor/EditorExtrudeTool.md
               - name: Repeater Tool
                 href: Documents/BedrockEditor/EditorRepeaterTool.md
+              - name: Summon Tool
+                href: Documents/BedrockEditor/EditorSummonTool.md
               - name: Farm Tool
                 href: Documents/BedrockEditor/EditorFarmTool.md
               - name: Inspectors and Panels
