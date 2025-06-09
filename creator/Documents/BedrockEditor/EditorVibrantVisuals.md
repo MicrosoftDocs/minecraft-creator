@@ -4,10 +4,19 @@ ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Vibrant Visuals
 description: "An overview of Vibrant Visuals in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
-ms.date: 06/05/2025
+ms.date: 06/09/2025
 ---
 
 # Vibrant Visuals
+
+Vibrant Visuals (previously Advanced Rendering: Deferred Lighting) is a complete overhaul to the Minecraft graphics system that officially rolled out in version [??].
+
+![Vibrant Visuals Disabled](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/VibrantVisualsDisabled.png)
+
+Open Minecraft Editor and add Vibrant Visuals to the Action Bar to get started, then select the graphical element you want to start editing.
+
+
+![Vibrant Visuals Enabled](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/VibrantVisualsEnabled.png)
 
 When you click **Generate Resource Pack**, a link appears beneath the button that takes you to a template on mctools.dev for a new resource pack with the Vibrant Visuals settings you've configured.
 
@@ -18,6 +27,8 @@ Selecting **Export to Clipboard** copys the JSON of the current visual setting t
 
 
 ## Water
+
+![Water Settings](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/WaterSettings.png)
 
 ### Water Settings
 
@@ -111,6 +122,8 @@ When enabled, bodies of water in your world generate waves, which you can edit b
 
 ## Global Lighting
 
+![Global Lighting Settings](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/GlobalLighting.png)
+
 ### Lighting Settings
 
 #### Directional Lights
@@ -139,9 +152,8 @@ When enabled, bodies of water in your world generate waves, which you can edit b
             > [!Note]
             > Supports RGB Array and hex strings.
 
-- **Orbital Offset Degrees**
-
-    Controls the angle the moon and sun are offset from their typical orbital paths, relative to the earth.
+    - Orbital Offset Degrees
+        - Controls the angle the moon and sun are offset from their typical orbital paths, relative to the earth.
  
 - **Flash**
 
@@ -161,6 +173,8 @@ Use the Intensity slider to adjust the brilliance of your world’s sun. By defa
 
 
 ## Atmospheric Scattering
+
+![Atmospheric Scattering Settings](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/AtmosphericScattering.png)
 
 ### Atmosphere Settings
 
@@ -208,6 +222,8 @@ Lets you adjust things like saturation, contrast, gain, and pixel offset to fine
 
 ### Color Grading Settings
 
+![Color Grading Settings](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/ColorGrading.png)
+
 #### Color Grading
 
 -	**Midtones**
@@ -252,10 +268,26 @@ Lets you adjust things like saturation, contrast, gain, and pixel offset to fine
 #### Tone Mapping
 Use the Operator to define how a color gets remapped from HDR-space to SDR-space for modern displays.
 
+![Tone Mapping Operators](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/ToneMapping.png)
 
-## PBR Fallback
+- #### Aces
 
-### PBR Fallback Settings
+- #### Hable
+
+- #### Reinhard
+
+- #### Rreinhard Luma
+
+- #### Reinhard Luminance
+
+- #### Generic
+
+
+## PBR Fallbacks
+
+![PBR Fallbacks](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/PBRFallbacks.png)
+
+### PBR Fallbacks Settings
 
 You can configure the default MERS values for the following entities in your world when they're not specifically defined with a textureset:
 
@@ -272,6 +304,8 @@ You can configure the default MERS values for the following entities in your wor
 
 ## Shadows
 
+![Shadows](/creator/Documents/BedrockEditor/Media/VibrantVisualsScreenshots/Shadows.png)
+
 ### Shadow Settings
 
 #### Shadow Style
@@ -280,16 +314,16 @@ Changes the way shadows render in your world.
 
 -	**Blocky Shadows**
 
-    Renders shadows with hard edges that reflect the shape of the object casting them.
+    Shadows render with hard edges that reflect the shape of the object casting them.
 
 -	**Soft Shadows**
 
-    Renders shadows with softened edges that are inspired by shape casting them.
+    Shadows render with softened edges that are inspired by shape of the object casting them.
 
 #### Texel Size
 
-Changes the size of texel-based shadows (ranges from 1 to < 1024).
+Changes the size of texel-based shadows (ranges from 1 - 1024).
 
 > [!Tip]
-> A texel is basically a pixel, but for a texture pack instead of an image. For more information, check out [Mozilla’s article on Texels](https://developer.mozilla.org/en-US/docs/Glossary/Texel).
+> A texel is basically a pixel, but for a texture pack instead of an image. For a more detailed explanation, check out [Mozilla’s article on Texels](https://developer.mozilla.org/en-US/docs/Glossary/Texel).
 
