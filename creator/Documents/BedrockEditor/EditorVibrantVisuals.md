@@ -304,7 +304,7 @@ You can configure the default MERS values for the following entities in your wor
 
 ## Shadows
 
-![Shadows](Media/VibrantVisualsScreenshots/Shadows.png)
+![Shadows Settings Menu](Media/VibrantVisualsScreenshots/Shadows.png)
 
 ### Shadow Settings
 
