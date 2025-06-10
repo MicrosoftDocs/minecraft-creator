@@ -16,14 +16,14 @@ Allows this entity to celebrate surviving a raid by shooting fireworks.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| duration | 30 | Decimal number | The duration in seconds that the celebration lasts for. | Villager V2: `30` | 
-| fireworks_interval | *not set* | Range of integers | Minimum and maximum time between firework (positive, in seconds). | Villager V2: `{"range_min":2,"range_max":7}` | 
-| on_celebration_end_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to trigger when the goal's duration expires. | Villager V2: `{"event":"minecraft:stop_celebrating","target":"self"}` | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `5` | 
+| duration | 30 | Decimal number | The duration in seconds that the celebration lasts for. | Villager v2: `30` | 
+| fireworks_interval | *not set* | Range of integers | Minimum and maximum time between firework (positive, in seconds). | Villager v2: `{"range_min":2,"range_max":7}` | 
+| on_celebration_end_event | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | The event to trigger when the goal's duration expires. | Villager v2: `{"event":"minecraft:stop_celebrating","target":"self"}` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager v2: `5` | 
 
 ## Samples
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 
 ```json

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.EaseOptions Interface
 description: Contents of the @minecraft/server.EaseOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # EaseOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains options associated with easing between positions and/or rotations.
 

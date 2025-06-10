@@ -16,8 +16,16 @@ This type of error is thrown when a parameter to a method or property is out of 
 
 ## Properties
 
+### **index**
+`read-only index: number;`
+
+Type: *number*
+
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **maxValue**
-`read-only maxValue: number;`
+`read-only maxValue?: number;`
 
 Max expected value for the condition.
 
@@ -27,7 +35,7 @@ Notes:
   - This property can be read in early-execution mode.
 
 ### **minValue**
-`read-only minValue: number;`
+`read-only minValue?: number;`
 
 Min expected value for the condition.
 
@@ -37,7 +45,7 @@ Notes:
   - This property can be read in early-execution mode.
 
 ### **value**
-`read-only value: number;`
+`read-only value?: number;`
 
 Passed-in value for the argument.
 

@@ -17,8 +17,8 @@ Defines an entity's transformation from the current definition into another.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | add | *not set* | Array of [Add](#add-item-type) items | List of components to add to the entity after the transformation |  | 
-| begin_transform_sound | *not set* | String | Sound to play when the transformation starts | Zombie Villager V2: `"remedy"` | 
-| delay | *not set* | Array of [Delay](#delay-item-type) items | Defines the properties of the delay for the transformation | Husk: `{"value":15}`, Pig: `0.5`, Zombie Villager V2: `{"value":100,"range_min":80,"range_max":200,"block_assist_chance":0.01,"block_radius":4,"block_chance":0.3,"block_types":["minecraft:bed","minecraft:iron_bars"]}` | 
+| begin_transform_sound | *not set* | String | Sound to play when the transformation starts | Zombie Villager v2: `"remedy"` | 
+| delay | *not set* | Array of [Delay](#delay-item-type) items | Defines the properties of the delay for the transformation | Husk: `{"value":15}`, Pig: `0.5`, Zombie Villager v2: `{"value":100,"range_min":80,"range_max":200,"block_assist_chance":0.01,"block_radius":4,"block_chance":0.3,"block_types":["minecraft:bed","minecraft:iron_bars"]}` | 
 | drop_equipment | false | Boolean true/false | Cause the entity to drop all equipment upon transformation | Husk: `true` | 
 | drop_inventory | false | Boolean true/false | Cause the entity to drop all items in inventory upon transformation | Piglin: `true` | 
 | into | *not set* | String | Entity Definition that this entity will transform into | Hoglin: `"minecraft:zoglin"`, Husk: `"minecraft:zombie<minecraft:as_adult>"`, `"minecraft:zombie<minecraft:as_baby>"` | 
@@ -173,7 +173,7 @@ At /minecraft:entity/component_groups/minecraft:convert_to_baby_zombie/minecraft
 }
 ```
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 At /minecraft:entity/component_groups/become_witch/minecraft:transformation/: 
 

@@ -29,19 +29,22 @@
                     "id": "addition",
                     "title": "Addition",
                     "description": "Named sound that occasionally plays at the listener position",
-                    "dataType": 2
+                    "dataType": 2,
+                    "alternates": []
                   },
                   {
                     "id": "loop",
                     "title": "Loop",
                     "description": "Named sound that loops while the listener position is inside the biome",
-                    "dataType": 2
+                    "dataType": 2,
+                    "alternates": []
                   },
                   {
                     "id": "mood",
                     "title": "Mood",
                     "description": "Named sound that rarely plays at a nearby air block position when the light level is low. Biomes without an ambient mood sound will use the 'ambient.cave' sound.",
-                    "dataType": 2
+                    "dataType": 2,
+                    "alternates": []
                   }
                 ]
               }
@@ -60,7 +63,8 @@
                     "id": "atmosphere_identifier",
                     "title": "Atmosphere Identifier",
                     "description": "Identifier of atmosphere definition to use",
-                    "dataType": 2
+                    "dataType": 2,
+                    "alternates": []
                   }
                 ]
               }
@@ -79,7 +83,8 @@
                     "id": "music_definition",
                     "title": "Music Definition",
                     "description": "Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music.",
-                    "dataType": 2
+                    "dataType": 2,
+                    "alternates": []
                   },
                   {
                     "id": "volume_multiplier",
@@ -104,7 +109,8 @@
                     "id": "color_grading_identifier",
                     "title": "Color Grading Identifier",
                     "description": "Identifier of color_grading definition to use",
-                    "dataType": 2
+                    "dataType": 2,
+                    "alternates": []
                   }
                 ]
               }
@@ -150,7 +156,8 @@
                     "id": "fog_identifier",
                     "title": "Fog Identifier",
                     "description": "Identifier of fog definition to use",
-                    "dataType": 2
+                    "dataType": 2,
+                    "alternates": []
                   }
                 ]
               }
@@ -207,7 +214,8 @@
                     "id": "lighting_identifier",
                     "title": "Lighting Identifier",
                     "description": "Identifier of lighting definition to use",
-                    "dataType": 2
+                    "dataType": 2,
+                    "alternates": []
                   }
                 ]
               }
@@ -286,7 +294,8 @@
                     "id": "water_identifier",
                     "title": "Water Identifier",
                     "description": "Identifier of water definition to use",
-                    "dataType": 2
+                    "dataType": 2,
+                    "alternates": []
                   }
                 ]
               }
@@ -312,7 +321,7 @@
               "validity": [
                 {
                   "comparison": "pattern",
-                  "value": "^[a-z0-9._%+-:]+$"
+                  "value": "^[a-z0-9._%+-]+:[a-z0-9._%+-]+$"
                 }
               ]
             }

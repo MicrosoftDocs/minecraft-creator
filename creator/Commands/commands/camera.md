@@ -169,6 +169,10 @@ Applies a fade for the selected player(s)
 
 ### `/camera <players: target> fade`
 
+### `/camera <players: target> fov_set <fov_value: float>`
+
+### `/camera <players: target> fov_clear`
+
 ## Arguments
 - `blue`: int
 Blue component of a color value. Valid values are between 0 and 255.
@@ -184,6 +188,7 @@ Related entity
 Specifies a fade-in time value.
 - `fadeOutSeconds`: float
 Specifies the number of seconds to fade out the camera.
+- `fov_value`: float
 - `green`: int
 Green component of a color value. Valid values are between 0 and 255.
 - `holdSeconds`: float

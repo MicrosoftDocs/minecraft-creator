@@ -13,7 +13,6 @@ Contains information about user interface elements that are showing up on the sc
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isValid**
 `read-only isValid: boolean;`
 
@@ -21,17 +20,11 @@ Returns true if the current reference to this screen display manager object is v
 
 Type: *boolean*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
 ## Methods
 - [getHiddenHudElements](#gethiddenhudelements)
 - [hideAllExcept](#hideallexcept)
 - [isForcedHidden](#isforcedhidden)
-::: moniker range="=minecraft-bedrock-experimental"
 - [resetHudElementsVisibility](#resethudelementsvisibility)
-::: moniker-end
 - [setActionBar](#setactionbar)
 - [setHudVisibility](#sethudvisibility)
 - [setTitle](#settitle)
@@ -77,20 +70,15 @@ Notes:
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **resetHudElementsVisibility**
 `
 resetHudElementsVisibility(): void
 `
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end
 
 ### **setActionBar**
 `

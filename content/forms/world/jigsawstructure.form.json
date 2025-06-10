@@ -50,64 +50,6 @@
           {
             "id": "biome_filters",
             "dataType": 16
-          },
-          {
-            "id": "biome_filters",
-            "dataType": 16,
-            "subForm": {
-              "id": "biome_filters",
-              "title": "Biome Filters",
-              "fields": [
-                {
-                  "id": "AND",
-                  "title": "AND",
-                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
-                  "dataType": 16
-                },
-                {
-                  "id": "NOT",
-                  "title": "NOT",
-                  "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
-                  "dataType": 16
-                },
-                {
-                  "id": "OR",
-                  "title": "OR",
-                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
-                  "dataType": 16
-                },
-                {
-                  "id": "all",
-                  "title": "All",
-                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
-                  "dataType": 16
-                },
-                {
-                  "id": "all_of",
-                  "title": "All Of",
-                  "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
-                  "dataType": 16
-                },
-                {
-                  "id": "any",
-                  "title": "Any",
-                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
-                  "dataType": 16
-                },
-                {
-                  "id": "any_of",
-                  "title": "Any Of",
-                  "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
-                  "dataType": 16
-                },
-                {
-                  "id": "none_of",
-                  "title": "None Of",
-                  "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
-                  "dataType": 16
-                }
-              ]
-            }
           }
         ]
       },
@@ -117,8 +59,8 @@
         "description": "Identifier of the Jigsaw Structure.",
         "dataType": 16,
         "subForm": {
-          "id": "_v1_21_20_JigsawureDefinition_Description",
-          "title": "V1 21 20 JigsawStructureDefinition Description",
+          "id": "JigsawDescriptionIdentifier",
+          "title": "JigsawDescriptionIdentifier",
           "description": "Identifier of the Jigsaw Structure.",
           "fields": [
             {
@@ -137,13 +79,13 @@
       },
       {
         "id": "heightmap_projection",
-        "title": "V1 21 20 JigsawureDefinition HeightmapProjection",
-        "description": "Heightmap used to calculate the relative start height. For example, a heightmap_projection of ocean_floor and a start_height of 10 means the Jigsaw Structure will begin generating 10 blocks above the ocean floor.",
+        "title": "HeightmapProjection",
+        "description": "Heightmap used to calculate the relative start height. For example, a heightmap_projection of ocean_floor and a start_height of 10 means the Jigsaw Structure will begin generating 10 blocks above the ocean floor. Defaults to 'none'",
         "dataType": 2
       },
       {
         "id": "liquid_settings",
-        "title": "V1 21 20 JigsawureDefinition LiquidSettings",
+        "title": "LiquidSettings",
         "description": "How to handle waterloggable blocks overlapping with existing liquid.",
         "dataType": 2
       },
@@ -162,16 +104,51 @@
       {
         "id": "max_distance_from_center",
         "title": "Max Distance From Center",
-        "description": "This is the max distance from the jigsaw pieces to the structure start: [1-128]",
+        "description": "The max distances on the horizontal plane and optionally the vertical axis from the jigsaw pieces to the structure start.",
         "dataType": 0,
-        "validity": [
+        "alternates": [
           {
-            "comparison": ">=",
-            "value": 1
-          },
-          {
-            "comparison": "<=",
-            "value": 128
+            "id": "max_distance_from_center",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "id": "max_distance_from_center",
+              "title": "Max Distance From Center",
+              "fields": [
+                {
+                  "id": "horizontal",
+                  "title": "Horizontal",
+                  "description": "The max distance on the horizontal plane (XZ): [1-128]",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    },
+                    {
+                      "comparison": "<=",
+                      "value": 128
+                    }
+                  ]
+                },
+                {
+                  "id": "vertical",
+                  "title": "Vertical",
+                  "description": "The max distance on the vertical axis (Y). Defaults to no limit.",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    },
+                    {
+                      "comparison": "<=",
+                      "value": 2147483647
+                    }
+                  ]
+                }
+              ]
+            }
           }
         ]
       },
@@ -207,7 +184,7 @@
       },
       {
         "id": "terrain_adaptation",
-        "title": "V1 21 20 JigsawureDefinition TerrainAdaptation",
+        "title": "TerrainAdaptation",
         "description": "How the terrain should adapt relative to the generated Jigsaw Structure.",
         "dataType": 2
       }

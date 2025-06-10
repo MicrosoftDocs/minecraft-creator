@@ -24,7 +24,7 @@ Defines interactions with this entity.
 | health_amount | 0 | Integer number | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. |  | 
 | hurt_item | 0 | Integer number | The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |  | 
 | interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls. |  | 
-| interactions | *not set* | Array of [Interactions](#interactions-item-type) items |  | Allay: `[{"on_interact":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_sneak_held","subject":"other","value":false}]}},"give_item":true,"take_item":true,"interact_text":"action.interact.allay"}]`, Armadillo: `[{"on_interact":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"has_equipment","subject":"other","domain":"hand","value":"brush"}]}},"play_sounds":"mob.armadillo.brush","interact_text":"action.interact.brush","hurt_item":16,"swing":true,"spawn_items":{"table":"loot_tables/entities/armadillo_brush.json"}}]` | 
+| interactions | *not set* | Array of [Interactions](#interactions-item-type) items |  | Allay: `[{"on_interact":{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","operator":"not","value":"lead"},{"test":"is_sneak_held","subject":"other","value":false},{"any_of":[{"test":"all_slots_empty","subject":"other","operator":"not","value":"hand"},{"test":"all_slots_empty","subject":"self","operator":"not","value":"hand"}]}]}},"give_item":true,"take_item":true,"interact_text":"action.interact.allay"}]`, Armadillo: `[{"on_interact":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"has_equipment","subject":"other","domain":"hand","value":"brush"}]}},"play_sounds":"mob.armadillo.brush","interact_text":"action.interact.brush","hurt_item":16,"swing":true,"spawn_items":{"table":"loot_tables/entities/armadillo_brush.json"}}]` | 
 
 ## Interactions item type
 
@@ -35,7 +35,7 @@ Defines interactions with this entity.
 | give_item | *not set* | String |  | Allay: `true` | 
 | hurt_item | *not set* | Decimal number |  |  | 
 | interact_text | *not set* | String |  | Allay: `"action.interact.allay"` | 
-| on_interact | *not set* | String |  | Allay: `{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"is_sneak_held","subject":"other","value":false}]}}` | 
+| on_interact | *not set* | String |  | Allay: `{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","operator":"not","value":"lead"},{"test":"is_sneak_held","subject":"other","value":false},{"any_of":[{"test":"all_slots_empty","subject":"other","operator":"not","value":"hand"},{"test":"all_slots_empty","subject":"self","operator":"not","value":"hand"}]}]}}` | 
 | particle_on_start | *not set* | Array of [Particle On Start](#particle-on-start-item-type) items | Particle effect that will be triggered at the start of the interaction. |  | 
 | particle_on_start | *not set* | [Particle On Start](#particle-on-start-item-type) item |  |  | 
 | play_sounds | *not set* | String | List of sounds to play when the interaction occurs. |  | 
@@ -115,14 +115,32 @@ Loot table with items to drop on the ground upon successful interaction.
         "filters": {
           "all_of": [
             {
-              "test": "is_family",
+              "test": "has_equipment",
               "subject": "other",
-              "value": "player"
+              "domain": "hand",
+              "operator": "not",
+              "value": "lead"
             },
             {
               "test": "is_sneak_held",
               "subject": "other",
               "value": false
+            },
+            {
+              "any_of": [
+                {
+                  "test": "all_slots_empty",
+                  "subject": "other",
+                  "operator": "not",
+                  "value": "hand"
+                },
+                {
+                  "test": "all_slots_empty",
+                  "subject": "self",
+                  "operator": "not",
+                  "value": "hand"
+                }
+              ]
             }
           ]
         }

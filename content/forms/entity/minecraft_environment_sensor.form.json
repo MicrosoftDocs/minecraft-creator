@@ -1,5 +1,10 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "triggers",
+      "dataType": 42
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:environment_sensor",
     "title": "Environment Sensor",

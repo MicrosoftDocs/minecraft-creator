@@ -13,7 +13,6 @@ Contains methods relating to the active camera for the specified player.
 
 ## Properties
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isValid**
 `read-only isValid: boolean;`
 
@@ -21,17 +20,11 @@ Returns whether the Camera is valid to access and use. A Camera is considered va
 
 Type: *boolean*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
-
 ## Methods
 - [clear](#clear)
 - [fade](#fade)
 - [setCamera](#setcamera)
-::: moniker range="=minecraft-bedrock-experimental"
 - [setDefaultCamera](#setdefaultcamera)
-::: moniker-end
 
 ### **clear**
 `
@@ -79,7 +72,6 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **setDefaultCamera**
 `
 setDefaultCamera(cameraPreset: string, easeOptions?: EaseOptions): void
@@ -94,11 +86,7 @@ Sets the current active camera for the specified player and resets the position 
 - **easeOptions**?: [*EaseOptions*](EaseOptions.md) = `null`
   
   Options to ease the camera back to its original position and rotation.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-::: moniker-end

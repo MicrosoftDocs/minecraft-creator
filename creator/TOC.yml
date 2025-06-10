@@ -124,38 +124,36 @@
           href: Documents/ComprehensivePackContents.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
-        - name: "Advanced Rendering: Deferred Lighting" 
+        - name: "Advanced Rendering: Vibrant Visuals"
           items:  
-          - name: Deferred Lighting Topics
-            href: Documents/DeferredLighting/index.yml
-          - name: Getting Started with Deferred Lighting
-            href: Documents/DeferredLighting/GettingStartedDeferredLighting.md
-          - name: PBR Resource Packs
-            href: Documents/DeferredLighting/PBRResourcePacks.md
-          - name: Enabling Deferred Technical Preview in Your World
-            href: Documents/DeferredLighting/EnablingDeferredTechnicalPreview.md
-          - name: Use Blockbench to Add Deferred Lighting Textures
-            href: Documents/DeferredLighting/UseBlockbenchToCreateModelsWithTextures.md
-          - name: Lighting Customization
-            href: Documents/DeferredLighting/LightingCustomization.md
-          - name: Atmospherics Customization
-            href: Documents/DeferredLighting/AtmosphericsCustomization.md
-          - name: Volumetric Fog and Light Shafts Customization
-            href: Documents/DeferredLighting/VolumetricFogLightShaftsCustomization.md
-          - name: Reflections Customization
-            href: Documents/DeferredLighting/ReflectionsCustomization.md
-          - name: Color Grading and Tone Mapping Customization
-            href: Documents/DeferredLighting/ColorGradingToneMappingCustomization.md
-          - name: Key Frame JSON Syntax
-            href: Documents/DeferredLighting/KeyFrameJSONSyntax.md
-          - name: Subsurface Scattering Customization
-            href: Documents/DeferredLighting/SubSurfaceScatteringCustomization.md
-          - name: Shadow Customization
-            href: Documents/DeferredLighting/ShadowsCustomization.md
-          - name: Water Customization
-            href: Documents/DeferredLighting/WaterCustomization.md
+          - name: Vibrant Visuals Topics
+            href: Documents/VibrantVisuals/index.yml
+          - name: Intro to Vibrant Visuals
+            href: Documents/VibrantVisuals/IntroVibrantVisuals.md
+          - name: Vibrant Visuals Resource Packs
+            href: Documents/VibrantVisuals/VVResourcePacks.md
+          - name: Overview of Physically Based Rendering
+            href: Documents/VibrantVisuals/PBROverview.md
+          - name: Creating Texture Maps
+            href: Documents/VibrantVisuals/UseBlockbenchToCreateModelsWithTextures.md
+          - name: Light Sources
+            href: Documents/VibrantVisuals/LightingCustomization.md
+          - name: Atmospheric Effects
+            href: Documents/VibrantVisuals/AtmosphericsCustomization.md
+          - name: Volumetric Fog and Light Shafts
+            href: Documents/VibrantVisuals/VolumetricFogLightShaftsCustomization.md
+          - name: Color Grading and Tone Mapping
+            href: Documents/VibrantVisuals/ColorGradingToneMappingCustomization.md
+          - name: Subsurface Scattering
+            href: Documents/VibrantVisuals/SubSurfaceScatteringCustomization.md
+          - name: Shadows
+            href: Documents/VibrantVisuals/ShadowsCustomization.md
+          - name: Water Effects
+            href: Documents/VibrantVisuals/WaterCustomization.md
           - name: Per-Biome Customization
-            href: Documents/DeferredLighting/BiomeCustomization.md
+            href: Documents/VibrantVisuals/BiomeCustomization.md
+          - name: Key Frame JSON Syntax
+            href: Documents/VibrantVisuals/KeyFrameJSONSyntax.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
@@ -431,7 +429,7 @@
             - name: Action Bar
               href: Documents/BedrockEditor/EditorActionBar.md
             - name: Deferred Lighting
-              href: Documents/BedrockEditor/EditorDeferredLighting.md
+              href: Documents/BedrockEditor/EditorVibrantVisuals.md
             - name: Keyboard Inputs
               href: Documents/BedrockEditor/EditorKeyboardInputs.md
             - name: Paste Preview
@@ -442,36 +440,41 @@
               href: Documents/BedrockEditor/EditorWorkflow.md
             - name: World Options
               href: Documents/BedrockEditor/EditorWorldOptions.md
-            - name: "Inspectors and Panels"
-              items:
-              - name: Block Inspector
-                href: Documents/BedrockEditor/EditorBlockInspector.md
-              - name: Entity Inspector
-                href: Documents/BedrockEditor/EditorEntityInspector.md
-              - name: Structures Panel
-                href: Documents/BedrockEditor/EditorStructures.md
-              - name: Workbench
-                href: Documents/BedrockEditor/EditorWorkbench.md
+            
             - name: Tools
               items:
               - name: Brush Tool
                 href: Documents/BedrockEditor/EditorBrushTool.md
               - name: Selection Tool
-                href: Documents/BedrockEditor/EditorSelectionTool.md
-              - name: Summon Tool
-                href: Documents/BedrockEditor/EditorSummonTool.md
-              - name: Flatten Tool
-                href: Documents/BedrockEditor/EditorFlattenTool.md
+                href: Documents/BedrockEditor/EditorSelectionTool.md  
+              - name: Line Tool
+                href: Documents/BedrockEditor/EditorLineTool.md
+              - name: Ruler Tool
+                href: Documents/BedrockEditor/EditorRulerTool.md
               - name: Smart Fill Tool
                 href: Documents/BedrockEditor/EditorFillTool.md
               - name: Terrain Tool
                 href: Documents/BedrockEditor/EditorTerrainTool.md
+              - name: Flatten Tool
+                href: Documents/BedrockEditor/EditorFlattenTool.md
               - name: Extrude Tool
                 href: Documents/BedrockEditor/EditorExtrudeTool.md
               - name: Repeater Tool
                 href: Documents/BedrockEditor/EditorRepeaterTool.md
+              - name: Summon Tool
+                href: Documents/BedrockEditor/EditorSummonTool.md
               - name: Farm Tool
                 href: Documents/BedrockEditor/EditorFarmTool.md
+              - name: Inspectors and Panels
+                items:
+                - name: Block Inspector
+                  href: Documents/BedrockEditor/EditorBlockInspector.md
+                - name: Entity Inspector
+                  href: Documents/BedrockEditor/EditorEntityInspector.md
+                - name: Structures Panel
+                  href: Documents/BedrockEditor/EditorStructures.md
+                - name: Workbench
+                  href: Documents/BedrockEditor/EditorWorkbench.md
             - name: Building Editor Extensions
               href: Documents/BedrockEditor/EditorExtensionsIntroduction.md
         - name: "Blockbench - Model Editing"

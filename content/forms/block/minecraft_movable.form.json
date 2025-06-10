@@ -4,7 +4,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:movable",
     "title": "Movable",
-    "description": "The description identifier of the movable component\r\nExperimental toggles required: Upcoming Creator Features",
+    "description": "The description identifier of the movable component\r\nExperimental toggles required: Upcoming Creator Features (in format versions before 1.21.100)",
     "fields": [
       {
         "id": "movement_type",

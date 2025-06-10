@@ -4,33 +4,16 @@ ms.author: mikeam
 title: Texture Set JSON and Introduction to Texture Sets
 description: "A reference document introducing creators to the concept of texture sets"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/28/2025
 ---
 
 # Texture Set JSON and Introduction to Texture Sets
 
 Minecraft supports a Physically Based Rendering (PBR) color pipeline (e.g. used for Ray Tracing). This uses more texture data than just 'color', which enables richer, more realistic visuals. Using PBR, you can have layers for different specular reflections, emissivity, normal maps, and more, which goes beyond the classic color pipeline for Vanilla Minecraft. Texture Sets have been added as the feature for defining multiple PBR layers for a texture resource. Texture Sets are data driven from json files.
 
-## Texture Set JSON Schema � Version 1.16.100
+## Texture set JSON schema version 1.21.30
 
-```json
-{
-  version "format_version"
-  object "minecraft:texture_set"
-  {
-      color "color" : opt // Fill RGBA channels of a textureset layer with the specified values in an array or hex string
-      string "color" : opt // The texture name of a textureset layer
-      string "normal" : opt // The texture name of a textureset layer
-      string "heightmap" : opt // The texture name of a textureset layer
-      color "metalness_emissive_roughness" : opt // Fill RGB channels of a textureset layer with the specified values in an array or hex string
-      string "metalness_emissive_roughness" : opt // The texture name of a textureset layer
-  }
-}
-
-```
-
-## Texture Set JSON Schema � Version 1.21.30
-
-This new schema version is only applicable to resource packs used in the Deferred Technical Preview at this time. RTX-based resource packs will not make use of the "metalness_emissive_roughness_subsurface" field.
+Note that RTX-based resource packs will not make use of the `"metalness_emissive_roughness_subsurface"` field.
 
 ```JSON
 {
@@ -51,12 +34,11 @@ This new schema version is only applicable to resource packs used in the Deferre
 
 ## Layers
 
-A texture_set.json file may specify several layers.
-Layers are references to texture image resources. They can also be defined in JSON as values for uniform solid values as an alternative to referencing texture images in a pack.
+A **texture_set.json** file may specify several layers. Layers are references to texture image resources. They can also be defined in JSON as values for uniform solid values as an alternative to referencing texture images in a pack.
 
 ### Color
 
-- This is an RGB 3-channel image (defaults to uniform alpha of 1.0), or an RGBA 4-channel image, or a 4 value array for a uniform color with alpha.
+- This is an RGB 3-channel image (defaults to uniform alpha of 1.0), an RGBA 4-channel image, or a 4 value array for a uniform color with alpha.
 - This is the only required layer.
 - This is the only layer used by the Classic pipeline.
 - There is typically lighting baked in the color image.

@@ -92,6 +92,8 @@
   href: commands/reload.md
 - name: reloadconfig
   href: commands/reloadconfig.md
+- name: reloadpacketlimitconfig
+  href: commands/reloadpacketlimitconfig.md
 - name: replaceitem
   href: commands/replaceitem.md
 - name: ride

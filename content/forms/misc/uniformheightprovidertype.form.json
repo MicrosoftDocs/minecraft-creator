@@ -1,0 +1,28 @@
+{
+  "id": "UniformHeightProviderType",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "UniformHeightProviderType",
+    "title": "UniformHeightProviderType Misc",
+    "description": "Uniform distribution of possible anchor points",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "description": "Max value of the uniform distribution",
+        "dataType": 16
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "description": "Min value of the uniform distribution",
+        "dataType": 16
+      },
+      {
+        "id": "type",
+        "title": "HeightProviderType",
+        "dataType": 2
+      }
+    ]
+  }
+}

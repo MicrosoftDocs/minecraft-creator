@@ -58,64 +58,6 @@
                 {
                   "id": "minecraft:biome_filter",
                   "dataType": 16
-                },
-                {
-                  "id": "minecraft:biome_filter",
-                  "dataType": 16,
-                  "subForm": {
-                    "id": "minecraft:biome_filter",
-                    "title": "Biome Filter",
-                    "fields": [
-                      {
-                        "id": "AND",
-                        "title": "AND",
-                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "NOT",
-                        "title": "NOT",
-                        "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "OR",
-                        "title": "OR",
-                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "all",
-                        "title": "All",
-                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "all_of",
-                        "title": "All Of",
-                        "description": "Evaluates all tests in the group, all must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "any",
-                        "title": "Any",
-                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "any_of",
-                        "title": "Any Of",
-                        "description": "Evaluates tests in the group, one or more must pass in order for the group to pass.",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "none_of",
-                        "title": "None Of",
-                        "description": "Evaluates all tests in the group, all must fail in order for the group to pass.",
-                        "dataType": 16
-                      }
-                    ]
-                  }
                 }
               ]
             },

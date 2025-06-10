@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.TintMethod Enumeration
 description: Contents of the @minecraft/server.TintMethod enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # TintMethod Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Tint logic applied to a block or part of a block. The color may vary when a world position is part of the context, as biomes often have an influence on the resulting tint.
 

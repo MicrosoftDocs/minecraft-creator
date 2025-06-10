@@ -58,17 +58,12 @@ Notes:
     - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isValid**
 `read-only isValid: boolean;`
 
 Returns true if this reference to a block is still valid (for example, if the block is unloaded, references to that block will no longer be valid.)
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **isWaterlogged**
 `read-only isWaterlogged: boolean;`

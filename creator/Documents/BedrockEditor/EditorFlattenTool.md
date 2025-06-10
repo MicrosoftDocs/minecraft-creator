@@ -1,24 +1,28 @@
 ---
-author: v-kimjeff
-ms.author: mikeam
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Flatten Tool
 description: "An overview of the Flatten Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/16/2025
 ---
 
-# Editor Flatten Tool
+# Flatten Tool
 
 The flatten tool is used to create an area of flat terrain around the cursor.
 
-You can open the flatten tool window by pressing `Ctrl + Shift + H`. 
+- **Height Threshold**: The number of blocks above the cursor that will be flattened when you click. This value ranges from 1 to 32.
 
-- **Height Threshold**: The number of blocks above the cursor that will be flattened. This value can range from 1 to 32.
-- **Radius**: The number of blocks around the cursor that will be flattened. This value can range from 1 to 5.
+- **Radius**: The number of blocks around the cursor that will be flattened when you click. This value ranges from 1 to 5.
 
-To use the flatten tool to adjust the elevation of the terrain:
+#### Use Flatten to adjust the terrain:
 
-1. Choose the **Height Threshold** and the **Radius** in the flatten tool window.
+1. Switch to Flatten by clicking the button in the toolbar on the left of the Editor.
+    > [!Tip]
+    > Pressing **Ctrl+Shift+H** also switches to Flatten. 
 
-1. Click and drag the cursor along the ground.
+2. Select the **Radius** for the area you want to flatten, then adjust the **Height Threshold**.
 
-![Animation of the flatten tool.](Media/editor_flatten_tool.gif)
+3. Click and drag the cursor along the ground to flatten the terrain according to your preferences.
+
+    ![Animation of the flatten tool.](Media/editor_flatten_tool.gif)

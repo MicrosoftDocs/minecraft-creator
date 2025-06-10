@@ -9,8 +9,8 @@
         "title": "Description",
         "dataType": 16,
         "subForm": {
-          "id": "_v1_20_60_BlockCulling_Description",
-          "title": "V1 20 60 BlockCulling Description",
+          "id": "",
+          "title": "",
           "fields": [
             {
               "id": "identifier",
@@ -25,12 +25,12 @@
         "title": "Rules",
         "dataType": 15,
         "subForm": {
-          "id": "_v1_21_80_BlockCulling_Rule",
-          "title": "V1 21 80 BlockCulling Rule",
+          "id": "",
+          "title": "",
           "fields": [
             {
               "id": "condition",
-              "title": "V1 21 80 BlockCulling Rule Condition",
+              "title": "Condition",
               "dataType": 2
             },
             {
@@ -40,7 +40,7 @@
             },
             {
               "id": "direction",
-              "title": "Facing",
+              "title": "Direction",
               "dataType": 2
             },
             {
@@ -48,8 +48,8 @@
               "title": "Geometry Part",
               "dataType": 16,
               "subForm": {
-                "id": "_v1_20_60_BlockCulling_Rule_GeometryPart",
-                "title": "V1 20 60 BlockCulling Rule GeometryPart",
+                "id": "",
+                "title": "",
                 "fields": [
                   {
                     "id": "bone",
@@ -63,7 +63,7 @@
                   },
                   {
                     "id": "face",
-                    "title": "Facing",
+                    "title": "Face",
                     "dataType": 2
                   }
                 ]

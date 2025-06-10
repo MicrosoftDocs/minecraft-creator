@@ -43,13 +43,13 @@ Updates title of the property item.
 
 ### **setTooltip**
 `
-setTooltip(tooltip: LocalizedString | undefined): void
+setTooltip(tooltip: BasicTooltipContent | undefined): void
 `
 
 Updates tooltip of the property item.
 
 #### **Parameters**
-- **tooltip**: *LocalizedString | undefined*
+- **tooltip**: *BasicTooltipContent | undefined*
   
   New tooltip.
 

@@ -1,0 +1,36 @@
+{
+  "id": "RandomGroupPoolAlias",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "RandomGroupPoolAlias",
+    "title": "RandomGroupPoolAlias World",
+    "description": "Pool alias for a RandomGroup of aliases",
+    "fields": [
+      {
+        "id": "groups",
+        "title": "Groups",
+        "description": "Aliases for a RandomGroup",
+        "dataType": 15,
+        "subForm": {
+          "id": "WeightedRandomItem",
+          "title": "WeightedRandomItem",
+          "description": "Weighted Random Item",
+          "fields": [
+            {
+              "id": "data",
+              "title": "Data",
+              "description": "Item's data",
+              "dataType": 17
+            },
+            {
+              "id": "weight",
+              "title": "Weight",
+              "description": "Weight of item",
+              "dataType": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

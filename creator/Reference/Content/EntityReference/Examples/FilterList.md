@@ -87,6 +87,7 @@ ms.date: 02/11/2025
 | [is_underground](Filters/is_underground.md)| Returns true when the subject entity is underground. |
 | [is_underwater](Filters/is_underwater.md)| Returns true when the subject entity is under water. |
 | [is_variant](Filters/is_variant.md)| Returns true if the subject entity is the variant number provided. |
+| [is_vehicle_family](Filters/is_vehicle_family.md)| Returns true when the subject entity's vehicle is a member of the named family. |
 | [is_visible](Filters/is_visible.md)| Returns true if the subject entity is visible. |
 | [is_waterlogged](Filters/is_waterlogged.md)| Tests if the subject block is submerged in water. |
 | [is_weather](Filters/is_weather.md)| DEPRECATED |

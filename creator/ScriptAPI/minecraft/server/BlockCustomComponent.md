@@ -34,15 +34,10 @@ This function will be called when the block that this custom component is bound 
 
 Type: (arg0: [*BlockComponentOnPlaceEvent*](BlockComponentOnPlaceEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **onPlayerBreak**
 `onPlayerBreak?: (arg0: BlockComponentPlayerBreakEvent, arg1: CustomComponentParameters) => void;`
 
 Type: (arg0: [*BlockComponentPlayerBreakEvent*](BlockComponentPlayerBreakEvent.md), arg1: [*CustomComponentParameters*](CustomComponentParameters.md)) => *void*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **onPlayerInteract**
 `onPlayerInteract?: (arg0: BlockComponentPlayerInteractEvent, arg1: CustomComponentParameters) => void;`

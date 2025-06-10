@@ -55,6 +55,8 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:warped_roots_feature`
 - `minecraft:savanna_surface_tall_grass_feature`
 - `minecraft:overworld_surface_extra_brown_mushroom_feature`
+- `minecraft:birch_forest_before_surface_wildflowers_feature_rules`
+- `minecraft:grove_spruce_tree_feature`
 - `minecraft:bamboo_jungle_surface_tall_grass_feature`
 - `minecraft:cherry_biome_surface_double_plant_feature_rules`
 - `minecraft:cherry_biome_surface_tall_grass_feature_rules`
@@ -64,7 +66,6 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:cherry_grove_surface_pink_petals_feature_rules`
 - `minecraft:overworld_surface_extra_red_mushroom_feature`
 - `minecraft:swamp_after_surface_seagrass_feature_rules`
-- `minecraft:grove_pine_tree_feature`
 - `minecraft:flower_forest_surface_flowers_feature`
 - `minecraft:meadow_flowers_feature`
 - `minecraft:lush_caves_underground_clay_ore_feature`
@@ -104,8 +105,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:taiga_surface_tall_grass_feature`
 - `minecraft:eyeblossom_feature_rules`
 - `minecraft:mangrove_swamp_mangrove_tree_with_beenest_feature`
-- `minecraft:birch_forest_before_surface_wildflowers_feature_rules`
-- `minecraft:grove_spruce_tree_feature`
+- `minecraft:grove_pine_tree_feature`
 - `minecraft:overworld_underground_lapis_ore_buried_feature`
 - `minecraft:desert_or_swamp_after_surface_fossil_feature`
 - `minecraft:taiga_first_sweet_berry_bush_feature`
@@ -306,6 +306,7 @@ Places a jigsaw structure, feature, or feature rule in the world.
 - `minecraft:beehive_west_feature`
 - `minecraft:crimson_fungus_feature`
 - `minecraft:warped_roots_scatter_feature`
+- `minecraft:optional_mountain_spruce_tree_feature`
 - `minecraft:scatter_dry_grass_feature`
 - `minecraft:scatter_meadow_tall_grass_feature`
 - `minecraft:scatter_bush_feature`

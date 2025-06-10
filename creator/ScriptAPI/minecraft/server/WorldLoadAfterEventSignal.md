@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.WorldLoadAfterEventSignal Class
 description: Contents of the @minecraft/server.WorldLoadAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # WorldLoadAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Methods
 - [subscribe](#subscribe)

@@ -39,14 +39,9 @@
         "id": "targets",
         "title": "Targets",
         "description": "Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces.",
-        "dataType": 24,
+        "dataType": 2,
         "minLength": 1,
-        "alternates": [
-          {
-            "id": "targets",
-            "dataType": 24
-          }
-        ]
+        "alternates": []
       }
     ]
   }

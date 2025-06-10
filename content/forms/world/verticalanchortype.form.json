@@ -1,0 +1,17 @@
+{
+  "id": "VerticalAnchorType",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "VerticalAnchorType",
+    "title": "VerticalAnchorType World",
+    "description": "Specifies the vertical anchor",
+    "fields": [
+      {
+        "id": "from_sea",
+        "title": "From Sea",
+        "description": "Offset from anchored vertical position",
+        "dataType": 0
+      }
+    ]
+  }
+}

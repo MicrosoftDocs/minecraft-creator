@@ -20,17 +20,12 @@ The name of the structure. The identifier must include a namespace. For structur
 
 Type: *string*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isValid**
 `read-only isValid: boolean;`
 
 Returns whether the Structure is valid. The Structure may become invalid if it is deleted.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **size**
 `read-only size: Vector3;`

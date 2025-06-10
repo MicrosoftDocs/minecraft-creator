@@ -20,7 +20,7 @@ Contains additional filtering options for inventory item events.
 ### **allowedSlots**
 `allowedSlots?: number[];`
 
-The slot indexes to consider.
+The slot indexes to consider. Values should be positive numbers. If not specified, all slots are considered.
 
 Type: *number*[]
 

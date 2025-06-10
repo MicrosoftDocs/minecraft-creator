@@ -9,6 +9,10 @@
       "id": "max_delay_secs",
       "title": "The maximum the scheduler will be delayed.",
       "dataType": 3
+    },
+    {
+      "id": "scheduled_events",
+      "dataType": 42
     }
   ],
   "generated_doNotEdit": {

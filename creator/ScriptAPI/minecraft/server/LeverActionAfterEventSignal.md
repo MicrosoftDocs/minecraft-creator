@@ -12,14 +12,9 @@ description: Contents of the @minecraft/server.LeverActionAfterEventSignal class
 Manages callbacks that are connected to lever moves (activates or deactivates).
 
 ## Methods
-::: moniker range="=minecraft-bedrock-experimental"
 - [subscribe](#subscribe)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [unsubscribe](#unsubscribe)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **subscribe**
 `
 subscribe(callback: (arg0: LeverActionAfterEvent) => void): (arg0: LeverActionAfterEvent) => void
@@ -31,16 +26,11 @@ Adds a callback that will be called when a lever is moved (activates or deactiva
 - **callback**: (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
 
 **Returns** (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can be called in early-execution mode.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **unsubscribe**
 `
 unsubscribe(callback: (arg0: LeverActionAfterEvent) => void): void
@@ -50,14 +40,10 @@ Removes a callback from being called when a lever is moved (activates or deactiv
 
 #### **Parameters**
 - **callback**: (arg0: [*LeverActionAfterEvent*](LeverActionAfterEvent.md)) => *void*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can be called in early-execution mode.
-::: moniker-end
 
 #### Examples
 

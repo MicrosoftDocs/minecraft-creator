@@ -33,17 +33,12 @@ Type: *string*
 Notes:
   - This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isValid**
 `read-only isValid: boolean;`
 
 Returns true if the ScoreboardObjective reference is still valid.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ## Methods
 - [addScore](#addscore)

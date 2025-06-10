@@ -511,3 +511,9 @@ Type: [*System*](System.md)
 A class that wraps the state of a world - a set of dimensions and the environment of Minecraft.
 
 Type: [*World*](World.md)
+
+## Dependencies
+- [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
+
+## Peer Dependencies
+- `@minecraft/vanilla-data`

@@ -88,7 +88,7 @@ At /minecraft:entity/component_groups/minecraft:clear_raid_omen_spell_effect/min
 "minecraft:spell_effects": {}
 ```
 
-#### [Zombie Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
+#### [Zombie Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
 
 
 ```json
