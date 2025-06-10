@@ -24,7 +24,7 @@ The `@minecraft/server-net` module contains types for executing HTTP-based reque
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.90-beta.26 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.100-beta.20 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -62,3 +62,8 @@ Type: [*NetworkBeforeEvents*](NetworkBeforeEvents.md)
 `static read-only http: HttpClient;`
 
 Type: [*HttpClient*](HttpClient.md)
+
+## Dependencies
+- [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
+- [`@minecraft/server`](../../../scriptapi/minecraft/server/minecraft-server.md)
+- [`@minecraft/server-admin`](../../../scriptapi/minecraft/server-admin/minecraft-server-admin.md)

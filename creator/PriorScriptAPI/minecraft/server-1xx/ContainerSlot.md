@@ -394,4 +394,4 @@ Sets the lore value - a secondary display string - for an ItemStack.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md)

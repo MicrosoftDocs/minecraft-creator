@@ -113,17 +113,12 @@ Type: *boolean*
 Notes:
   - This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isValid**
 `read-only isValid: boolean;`
 
 Returns whether the entity can be manipulated by script. A Player is considered valid when it's EntityLifetimeState is set to Loaded.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **localizationKey**
@@ -219,9 +214,7 @@ Type: *string*
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
 - [kill](#kill)
-::: moniker range="=minecraft-bedrock-experimental"
 - [lookAt](#lookat)
-::: moniker-end
 - [matches](#matches)
 - [playAnimation](#playanimation)
 - [remove](#remove)
@@ -428,6 +421,7 @@ Applies impulse vector to the current velocity of the entity.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*
 
 #### Examples
 
@@ -891,7 +885,6 @@ function tagsQuery(targetLocation: DimensionLocation) {
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/tagsQuery.ts) code sandbox.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **lookAt**
 `
 lookAt(targetLocation: Vector3): void
@@ -903,14 +896,10 @@ Sets the rotation of the entity to face a target location. Both pitch and yaw wi
 - **targetLocation**: [*Vector3*](Vector3.md)
   
   The target location that this entity should face/look towards.
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-::: moniker-end
 
 ### **matches**
 `

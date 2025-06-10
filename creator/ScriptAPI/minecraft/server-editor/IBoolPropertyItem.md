@@ -41,12 +41,12 @@ Sets title of the property item.
 
 ### **setTooltip**
 `
-setTooltip(title: LocalizedString | undefined): void
+setTooltip(tooltip: BasicTooltipContent | undefined): void
 `
 
 Sets tooltip description of the property item.
 
 #### **Parameters**
-- **title**: *LocalizedString | undefined*
+- **tooltip**: *BasicTooltipContent | undefined*
 
 **Returns** *void*

@@ -986,6 +986,8 @@
       href: minecraft/server-editor/BlockTableOperationType.md
     - name: BoolPropertyItemVariant
       href: minecraft/server-editor/BoolPropertyItemVariant.md
+    - name: BrushDirectionalPlacementMode
+      href: minecraft/server-editor/BrushDirectionalPlacementMode.md
     - name: ButtonPropertyItemVariant
       href: minecraft/server-editor/ButtonPropertyItemVariant.md
     - name: ColorPickerPropertyItemVariant
@@ -1058,8 +1060,6 @@
       href: minecraft/server-editor/PropertyItemType.md
     - name: SelectionVolumeEventType
       href: minecraft/server-editor/SelectionVolumeEventType.md
-    - name: SimpleToolStatusBarVisibility
-      href: minecraft/server-editor/SimpleToolStatusBarVisibility.md
     - name: SpeedSettingsProperty
       href: minecraft/server-editor/SpeedSettingsProperty.md
     - name: SplineType
@@ -1180,8 +1180,6 @@
       href: minecraft/server-editor/SettingsManager.md
     - name: SimpleBlockPaletteItem
       href: minecraft/server-editor/SimpleBlockPaletteItem.md
-    - name: SimpleToolWrapper
-      href: minecraft/server-editor/SimpleToolWrapper.md
     - name: SimulationState
       href: minecraft/server-editor/SimulationState.md
     - name: SingleBlockBrushShape
@@ -1390,24 +1388,6 @@
       href: minecraft/server-editor/IRootPropertyPaneHeaderAction.md
     - name: IRootPropertyPaneOptions
       href: minecraft/server-editor/IRootPropertyPaneOptions.md
-    - name: ISimpleTool
-      href: minecraft/server-editor/ISimpleTool.md
-    - name: ISimpleToolKeyBinding
-      href: minecraft/server-editor/ISimpleToolKeyBinding.md
-    - name: ISimpleToolOptions
-      href: minecraft/server-editor/ISimpleToolOptions.md
-    - name: ISimpleToolPaneComponent
-      href: minecraft/server-editor/ISimpleToolPaneComponent.md
-    - name: ISimpleToolPaneOptions
-      href: minecraft/server-editor/ISimpleToolPaneOptions.md
-    - name: ISimpleToolRailComponent
-      href: minecraft/server-editor/ISimpleToolRailComponent.md
-    - name: ISimpleToolRailOptions
-      href: minecraft/server-editor/ISimpleToolRailOptions.md
-    - name: ISimpleToolStatusBarComponent
-      href: minecraft/server-editor/ISimpleToolStatusBarComponent.md
-    - name: ISimpleToolStatusBarOptions
-      href: minecraft/server-editor/ISimpleToolStatusBarOptions.md
     - name: IStatusBar
       href: minecraft/server-editor/IStatusBar.md
     - name: IStatusBarItem

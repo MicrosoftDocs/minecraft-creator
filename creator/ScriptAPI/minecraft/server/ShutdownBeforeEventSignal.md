@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.ShutdownBeforeEventSignal Class
 description: Contents of the @minecraft/server.ShutdownBeforeEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ShutdownBeforeEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Provides an adaptable interface for callers to subscribe to an event that fires before the game world shuts down. This event occurs after players have left, but before the world has closed.
 

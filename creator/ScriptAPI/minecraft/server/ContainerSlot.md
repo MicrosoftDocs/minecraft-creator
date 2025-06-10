@@ -36,17 +36,12 @@ Notes:
   - This property can throw errors when used.
     - Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isValid**
 `read-only isValid: boolean;`
 
 Returns whether the ContainerSlot is valid. The container slot is valid if the container exists and is loaded, and the slot index is valid.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **keepOnDeath**
 `keepOnDeath: boolean;`
@@ -414,4 +409,4 @@ Sets the lore value - a secondary display string - for an ItemStack.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md)

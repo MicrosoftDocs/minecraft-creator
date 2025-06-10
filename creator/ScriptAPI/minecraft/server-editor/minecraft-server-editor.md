@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.21.90-beta.26 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.21.100-beta.20 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -34,6 +34,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.90-
 - [BlockPaletteItemType](BlockPaletteItemType.md)
 - [BlockTableOperationType](BlockTableOperationType.md)
 - [BoolPropertyItemVariant](BoolPropertyItemVariant.md)
+- [BrushDirectionalPlacementMode](BrushDirectionalPlacementMode.md)
 - [ButtonPropertyItemVariant](ButtonPropertyItemVariant.md)
 - [ColorPickerPropertyItemVariant](ColorPickerPropertyItemVariant.md)
 - [ComboBoxPropertyItemDataType](ComboBoxPropertyItemDataType.md)
@@ -70,7 +71,6 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.90-
 - [ProjectExportType](ProjectExportType.md)
 - [PropertyItemType](PropertyItemType.md)
 - [SelectionVolumeEventType](SelectionVolumeEventType.md)
-- [SimpleToolStatusBarVisibility](SimpleToolStatusBarVisibility.md)
 - [SpeedSettingsProperty](SpeedSettingsProperty.md)
 - [SplineType](SplineType.md)
 - [StatusBarAlignment](StatusBarAlignment.md)
@@ -85,6 +85,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.90-
 - [Action](Action.md)
 - [ActionID](ActionID.md)
 - [ActivationFunctionType](ActivationFunctionType.md)
+- [BasicTooltipContent](BasicTooltipContent.md)
 - [ButtonPropertyItemSupportedActionTypes](ButtonPropertyItemSupportedActionTypes.md)
 - [ContinuousAction](ContinuousAction.md)
 - [EventHandler](EventHandler.md)
@@ -110,6 +111,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.90-
 - [StatefulAction](StatefulAction.md)
 - [SupportedKeyboardActionTypes](SupportedKeyboardActionTypes.md)
 - [SupportedMouseActionTypes](SupportedMouseActionTypes.md)
+- [TooltipContent](TooltipContent.md)
 - [TooltipInteractiveContent](TooltipInteractiveContent.md)
 - [TooltipInteractiveContentDescription](TooltipInteractiveContentDescription.md)
 - [TooltipLink](TooltipLink.md)
@@ -167,7 +169,6 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.90-
 - [SelectionManager](SelectionManager.md)
 - [SettingsManager](SettingsManager.md)
 - [SimpleBlockPaletteItem](SimpleBlockPaletteItem.md)
-- [SimpleToolWrapper](SimpleToolWrapper.md)
 - [SimulationState](SimulationState.md)
 - [SingleBlockBrushShape](SingleBlockBrushShape.md)
 - [SpeedSettings](SpeedSettings.md)
@@ -274,15 +275,6 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.90-
 - [IRootPropertyPane](IRootPropertyPane.md)
 - [IRootPropertyPaneHeaderAction](IRootPropertyPaneHeaderAction.md)
 - [IRootPropertyPaneOptions](IRootPropertyPaneOptions.md)
-- [ISimpleTool](ISimpleTool.md)
-- [ISimpleToolKeyBinding](ISimpleToolKeyBinding.md)
-- [ISimpleToolOptions](ISimpleToolOptions.md)
-- [ISimpleToolPaneComponent](ISimpleToolPaneComponent.md)
-- [ISimpleToolPaneOptions](ISimpleToolPaneOptions.md)
-- [ISimpleToolRailComponent](ISimpleToolRailComponent.md)
-- [ISimpleToolRailOptions](ISimpleToolRailOptions.md)
-- [ISimpleToolStatusBarComponent](ISimpleToolStatusBarComponent.md)
-- [ISimpleToolStatusBarOptions](ISimpleToolStatusBarOptions.md)
 - [IStatusBar](IStatusBar.md)
 - [IStatusBarItem](IStatusBarItem.md)
 - [IStatusBarItemCreationParams](IStatusBarItemCreationParams.md)
@@ -486,3 +478,7 @@ Small utility for getting a string from an unknown exception type
 `static read-only editor: MinecraftEditor;`
 
 Type: [*MinecraftEditor*](MinecraftEditor.md)
+
+## Dependencies
+- [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
+- [`@minecraft/server`](../../../scriptapi/minecraft/server/minecraft-server.md)

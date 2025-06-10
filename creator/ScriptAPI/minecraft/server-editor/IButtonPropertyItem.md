@@ -64,13 +64,13 @@ Updates title of the button.
 
 ### **setTooltip**
 `
-setTooltip(tooltip: LocalizedString | undefined): void
+setTooltip(tooltip: BasicTooltipContent | undefined): void
 `
 
 Updates tooltip description of the button.
 
 #### **Parameters**
-- **tooltip**: *LocalizedString | undefined*
+- **tooltip**: *BasicTooltipContent | undefined*
   
   New button tooltip.
 

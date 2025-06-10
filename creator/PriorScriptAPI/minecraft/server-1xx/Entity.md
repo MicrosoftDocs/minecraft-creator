@@ -384,6 +384,7 @@ Applies impulse vector to the current velocity of the entity. Note that this met
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*
 
 #### Examples
 

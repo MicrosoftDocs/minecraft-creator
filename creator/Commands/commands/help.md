@@ -220,6 +220,7 @@ Adds an enchantment to a player's selected item.
 - `clearrealmevents`
 - `allowlist`
 - `whitelist`
+- `reloadpacketlimitconfig`
 - `changesetting`
 - `sendshowstoreoffer`
 - `reloadconfig`

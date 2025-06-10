@@ -13,13 +13,13 @@ description: Contents of the @minecraft/server.EntityAttributeComponent class.
 - [*EntityComponent*](EntityComponent.md)
 
 ## Classes that extend EntityAttributeComponent
-- [*EntityExhaustionComponent*](EntityExhaustionComponent.md)
 - [*EntityHealthComponent*](EntityHealthComponent.md)
-- [*EntityHungerComponent*](EntityHungerComponent.md)
 - [*EntityLavaMovementComponent*](EntityLavaMovementComponent.md)
 - [*EntityMovementComponent*](EntityMovementComponent.md)
-- [*EntitySaturationComponent*](EntitySaturationComponent.md)
 - [*EntityUnderwaterMovementComponent*](EntityUnderwaterMovementComponent.md)
+- [*EntityExhaustionComponent*](EntityExhaustionComponent.md)
+- [*EntityHungerComponent*](EntityHungerComponent.md)
+- [*EntitySaturationComponent*](EntitySaturationComponent.md)
 
 This is a base abstract class for any entity component that centers around a number and can have a minimum, maximum, and default defined value.
 

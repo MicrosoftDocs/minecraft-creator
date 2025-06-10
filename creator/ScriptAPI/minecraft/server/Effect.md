@@ -43,17 +43,12 @@ Type: *number*
 Notes:
   - This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isValid**
 `read-only isValid: boolean;`
 
 Returns whether an effect instance is available for use in this context.
 
 Type: *boolean*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **typeId**
 `read-only typeId: string;`

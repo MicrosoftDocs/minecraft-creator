@@ -17,13 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.1.0-beta"
+    "version": "2.0.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.90-beta.26 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.100-beta.20 of Minecraft.
 
 ## Available Versions
-- `2.1.0-beta`
+- `2.2.0-beta`
+- `2.0.0`
 
 ### Prior Versions
 
@@ -529,6 +530,7 @@ The following API versions are from a major version that is documented here: [*@
 - [InvalidContainerError](InvalidContainerError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
 - [InvalidEntityError](InvalidEntityError.md)
+- [InvalidItemStackError](InvalidItemStackError.md)
 - [InvalidIteratorError](InvalidIteratorError.md)
 - [InvalidStructureError](InvalidStructureError.md)
 - [ItemCustomComponentAlreadyRegisteredError](ItemCustomComponentAlreadyRegisteredError.md)
@@ -561,17 +563,12 @@ Holds the number of MoonPhases
 
 Type: *number*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **TicksPerDay**
 `static read-only TicksPerDay = 24000;`
 
 How many times the server ticks in one in-game day.
 
 Type: *number*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ### **TicksPerSecond**
 `static read-only TicksPerSecond = 20;`
@@ -595,3 +592,9 @@ Type: [*System*](System.md)
 A class that wraps the state of a world - a set of dimensions and the environment of Minecraft.
 
 Type: [*World*](World.md)
+
+## Dependencies
+- [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
+
+## Peer Dependencies
+- `@minecraft/vanilla-data`

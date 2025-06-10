@@ -24,7 +24,7 @@ Contains diagnostics functionality for discovering and diagnosing issues with co
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.90-beta.26 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.100-beta.20 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -50,3 +50,7 @@ This is version 1.x.x of this module, which is the latest as of version 1.21.90-
 A class that allows hooking up reporting to Sentry.  See https://sentry.io/ for more information.
 
 Type: [*Sentry*](Sentry.md)
+
+## Dependencies
+- [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
+- [`@minecraft/server-admin`](../../../scriptapi/minecraft/server-admin/minecraft-server-admin.md)

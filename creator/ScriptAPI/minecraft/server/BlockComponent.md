@@ -14,7 +14,6 @@ description: Contents of the @minecraft/server.BlockComponent class.
 
 ## Classes that extend BlockComponent
 - [*BlockCustomComponentInstance*](BlockCustomComponentInstance.md)
-- [*BlockDestructionParticlesComponent*](BlockDestructionParticlesComponent.md)
 - [*BlockFluidContainerComponent*](BlockFluidContainerComponent.md)
 - [*BlockInventoryComponent*](BlockInventoryComponent.md)
 - [*BlockMapColorComponent*](BlockMapColorComponent.md)
@@ -22,6 +21,7 @@ description: Contents of the @minecraft/server.BlockComponent class.
 - [*BlockPistonComponent*](BlockPistonComponent.md)
 - [*BlockRecordPlayerComponent*](BlockRecordPlayerComponent.md)
 - [*BlockSignComponent*](BlockSignComponent.md)
+- [*BlockDestructionParticlesComponent*](BlockDestructionParticlesComponent.md)
 
 Base type for components associated with blocks.
 

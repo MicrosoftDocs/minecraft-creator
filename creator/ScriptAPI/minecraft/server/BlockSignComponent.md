@@ -87,15 +87,15 @@ Notes:
 
 ### **setText**
 `
-setText(message: RawMessage | RawText | string, side?: SignSide): void
+setText(message: RawMessage | string, side?: SignSide): void
 `
 
 Sets the text of the sign component.
 
 #### **Parameters**
-- **message**: [*RawMessage*](RawMessage.md) | [*RawText*](RawText.md) | *string*
+- **message**: [*RawMessage*](RawMessage.md) | *string*
   
-  The message to set on the sign. If set to a string, then call `getText` to read that string. If set to a RawMessage, then calling `getRawText` will return a RawText. If set to a RawText, then calling `getRawText` will return the same object that was passed in.
+  The message to set on the sign. If set to a string, then call `getText` to read that string. If set to a RawMessage, then calling `getRawText` will return a RawText.
 - **side**?: [*SignSide*](SignSide.md) = `0`
   
   The side of the sign the message will be set on. If not provided, the message will be set on the front side of the sign.

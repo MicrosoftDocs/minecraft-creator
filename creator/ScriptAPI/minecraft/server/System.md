@@ -23,7 +23,6 @@ Type: [*SystemAfterEvents*](SystemAfterEvents.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **beforeEvents**
 `read-only beforeEvents: SystemBeforeEvents;`
 
@@ -31,12 +30,8 @@ Returns a collection of before-events for system-level operations.
 
 Type: [*SystemBeforeEvents*](SystemBeforeEvents.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **currentTick**
 `read-only currentTick: number;`
@@ -48,7 +43,6 @@ Type: *number*
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **isEditorWorld**
 `read-only isEditorWorld: boolean;`
 
@@ -56,12 +50,8 @@ Returns true if this is a world where the editor is currently loaded, returns fa
 
 Type: *boolean*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **serverSystemInfo**
 `read-only serverSystemInfo: SystemInfo;`

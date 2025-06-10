@@ -22,13 +22,17 @@ Type: [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 - [deactivateBrushTool](#deactivatebrushtool)
 - [endPainting](#endpainting)
 - [getBrushShapeOffset](#getbrushshapeoffset)
+- [getDirectionalPlacementMode](#getdirectionalplacementmode)
+- [getInverseEraseMode](#getinverseerasemode)
 - [isBrushPaintBusy](#isbrushpaintbusy)
 - [setBrushMask](#setbrushmask)
 - [setBrushShape](#setbrushshape)
 - [setBrushShapeOffset](#setbrushshapeoffset)
 - [setBrushShapeVisible](#setbrushshapevisible)
+- [setDirectionalPlacementMode](#setdirectionalplacementmode)
 - [setFlattenHeight](#setflattenheight)
 - [setFlattenRadius](#setflattenradius)
+- [setInverseEraseMode](#setinverseerasemode)
 - [setTerrainStrength](#setterrainstrength)
 - [singlePaint](#singlepaint)
 - [switchBrushPaintMode](#switchbrushpaintmode)
@@ -79,6 +83,26 @@ getBrushShapeOffset(): minecraftserver.Vector3
 `
 
 **Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **getDirectionalPlacementMode**
+`
+getDirectionalPlacementMode(): BrushDirectionalPlacementMode
+`
+
+**Returns** [*BrushDirectionalPlacementMode*](BrushDirectionalPlacementMode.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **getInverseEraseMode**
+`
+getInverseEraseMode(): boolean
+`
+
+**Returns** *boolean*
   
 Notes:
 - This function can't be called in read-only mode.
@@ -138,6 +162,17 @@ setBrushShapeVisible(visible: boolean): void
 Notes:
 - This function can't be called in read-only mode.
 
+### **setDirectionalPlacementMode**
+`
+setDirectionalPlacementMode(directionalPlacementMode: BrushDirectionalPlacementMode): void
+`
+
+#### **Parameters**
+- **directionalPlacementMode**: [*BrushDirectionalPlacementMode*](BrushDirectionalPlacementMode.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+
 ### **setFlattenHeight**
 `
 setFlattenHeight(flattenHeight: number): void
@@ -156,6 +191,17 @@ setFlattenRadius(flattenRadius: number): void
 
 #### **Parameters**
 - **flattenRadius**: *number*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **setInverseEraseMode**
+`
+setInverseEraseMode(inverseEraseMode: boolean): void
+`
+
+#### **Parameters**
+- **inverseEraseMode**: *boolean*
   
 Notes:
 - This function can't be called in read-only mode.
