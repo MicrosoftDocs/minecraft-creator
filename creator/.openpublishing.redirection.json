@@ -237,82 +237,82 @@
     },
     {
       "source_path": "Documents/DeferredLighting/index.yml",
-      "redirect_url": "documents/vibrantvisuals/",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/GettingStartedDeferredLighting.md",
-      "redirect_url": "documents/vibrantvisuals/introvibrantvisuals",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/introvibrantvisuals",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/PBRResourcePacks.md",
-      "redirect_url": "documents/vibrantvisuals/vvresourcepacks",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/vvresourcepacks",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/EnablingDeferredTechnicalPreview.md",
-      "redirect_url": "documents/vibrantvisuals/introvibrantvisuals",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/introvibrantvisuals",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/UseBlockbenchToCreateModelsWithTextures.md",
-      "redirect_url": "documents/vibrantvisuals/useblockbenchtocreatemodelswithtextures",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/useblockbenchtocreatemodelswithtextures",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/LightingCustomization.md",
-      "redirect_url": "documents/vibrantvisuals/lightingcustomization",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/lightingcustomization",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/AtmosphericsCustomization.md",
-      "redirect_url": "documents/vibrantvisuals/atmosphericscustomization",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/atmosphericscustomization",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/VolumetricFogLightShaftsCustomization.md",
-      "redirect_url": "documents/vibrantvisuals/volumetricfoglightshaftscustomization",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/volumetricfoglightshaftscustomization",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/ReflectionsCustomization.md",
-      "redirect_url": "documents/vibrantvisuals/reflectionscustomization",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/reflectionscustomization",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/ColorGradingToneMappingCustomization.md",
-      "redirect_url": "documents/vibrantvisuals/colorgradingtonemappingcustomization",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/colorgradingtonemappingcustomization",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/KeyFrameJSONSyntax.md",
-      "redirect_url": "documents/vibrantvisuals/keyframejsonsyntax",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/keyframejsonsyntax",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/SubSurfaceScatteringCustomization.md",
-      "redirect_url": "documents/vibrantvisuals/subsurfacescatteringcustomization",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/subsurfacescatteringcustomization",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/ShadowsCustomization.md",
-      "redirect_url": "documents/vibrantvisuals/shadowscustomization",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/shadowscustomization",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/WaterCustomization.md",
-      "redirect_url": "documents/vibrantvisuals/watercustomization",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/watercustomization",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/DeferredLighting/BiomeCustomization.md",
-      "redirect_url": "documents/vibrantvisuals/biomecustomization",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/biomecustomization",
       "redirect_document_id": false
     },
     {
       "source_path": "Documents/RTXPBRIntro.md",
-      "redirect_url": "documents/vibrantvisuals/pbroverview",
+      "redirect_url": "/minecraft/creator/documents/vibrantvisuals/pbroverview",
       "redirect_document_id": false
     }
   ]
