@@ -104,7 +104,7 @@ A rule is a set of conditions that determine if a block should be replaced or mo
 #### Block Rule
 
 - `"predicate_type": <type>`
-  - The type of Block rule. One of the following `minecraft:always_true`, `minecraft:block_match`, `minecraft:random_block_match`, and `minecraft:tag_match`
+  - The type of Block rule. One of the following `minecraft:always_true`, `minecraft:block_match`, `minecraft:random_block_match`, `minecraft:block_state_match`, `minecraft:random_block_state_match` and `minecraft:tag_match`
 
 If the type is `minecraft:always_true` the test will be skipped and assumed true.
 
@@ -116,11 +116,25 @@ If the type is `minecraft:random_block_match` the block will be matched based on
 
 - `"block": "<block_name>"`
 - `"probability": <Number>`
-  - Must be between `[0, 1)` (Use `minecraft:block_match` if it should always be replaced if matched.)
+  - Must be between `[0, 1]` (Use `minecraft:block_match` if it should always be replaced if matched.)
 
-If the type is `minecraft:tag_match` the block will be matched based on it's name
+If the type is `minecraft:block_state_match` the block will be matched based on it's block state specifier.
+
+- `"block_state": <BlockState>`
+
+If the type is `minecraft:random_block_state_match` the block will be matched based on it's block state specifier.
+
+- `"block_state": <BlockState>`
+- `"probability": <Number>`
+  - Must be between `[0, 1]` (Use `minecraft:block_state_match` if it should always be replaced if matched.)
+
+If the type is `minecraft:tag_match` the block will be matched based on it's tags
 
 - `"tag": "<block_tag>"`
+
+#### Block State
+- `"name": "<complex block state name>"`
+- `"states": { "<state_name>": <state value: string, number, boolean> } `
 
 #### Position Rule
 
