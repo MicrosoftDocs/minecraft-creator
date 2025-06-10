@@ -1420,7 +1420,7 @@
               "dataType": 16,
               "id": "base_cluster",
               "title": "Base Cluster",
-              "description": "Allows you to define a number of clusters for the base of the tree. Used to generate mega tree variants.",
+              "description": "Clusters of blocks randomly replaced with \"base_block\" around the base of the tree.",
               "isRequired": false,
               "subForm": {
                 "fields": [
@@ -1434,14 +1434,14 @@
                     "dataType": 0,
                     "id": "num_clusters",
                     "title": "Num Clusters",
-                    "description": "Number of clusters that can be generated.",
+                    "description": "Number of clusters to generate.",
                     "isRequired": true
                   },
                   {
                     "dataType": 0,
                     "id": "cluster_radius",
                     "title": "Cluster Radius",
-                    "description": "Radius where the clusters that can be generated.",
+                    "description": "The radius of each cluster.",
                     "isRequired": true
                   }
                 ]

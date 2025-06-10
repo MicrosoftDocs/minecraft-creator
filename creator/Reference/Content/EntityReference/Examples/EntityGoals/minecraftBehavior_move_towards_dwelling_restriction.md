@@ -21,8 +21,8 @@ Allows entities with the "minecraft:dweller" component to move toward their Vill
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cat: `7`, Iron Golem: `4`, Villager V2: `11` | 
-| speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. | Iron Golem: `1`, Villager V2: `0.6` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Cat: `7`, Iron Golem: `4`, Villager v2: `11` | 
+| speed_multiplier | 1 | Decimal number | This multiplier modifies the entity's speed when moving towards its restriction. | Iron Golem: `1`, Villager v2: `0.6` | 
 
 ## Samples
 
@@ -45,7 +45,7 @@ Allows entities with the "minecraft:dweller" component to move toward their Vill
 }
 ```
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 
 ```json

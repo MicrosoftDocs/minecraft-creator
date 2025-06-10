@@ -118,7 +118,7 @@ Allows the mob to pick up items on the ground.
 }
 ```
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 
 ```json
@@ -171,7 +171,7 @@ Allows the mob to pick up items on the ground.
 }
 ```
 
-#### [Zombie Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
+#### [Zombie Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
 
 
 ```json

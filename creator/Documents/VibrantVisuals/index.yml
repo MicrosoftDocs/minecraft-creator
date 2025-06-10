@@ -1,0 +1,56 @@
+### YamlMime:Landing
+
+title: Vibrant Visuals # < 60 chars
+summary: "Tutorials and references for Vibrant Visuals in Minecraft: Bedrock Edition." # < 160 chars
+
+metadata:
+  title: Vibrant Visuals # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: "Minecraft Vibrant Visuals give creators enhanced lighting and shadows, reflective textures, atmospheric effects, and more." # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: minecraft-bedrock-edition
+  ms.topic: landing-page # Required
+  author: chipotle #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-wamartin #Required; microsoft alias of author; optional team alias.
+  ms.date: 05/23/2025 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Get Started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Intro to Vibrant Visuals
+            url: IntroVibrantVisuals.md
+          - text: Overview of Physically Based Rendering
+            url: PBROverview.md
+      - linkListType: get-started
+        links:
+          - text: Vibrant Visuals Resource Packs
+            url: VVResourcePacks.md
+          - text: Use Blockbench to Create Vibrant Visuals Models
+            url: UseBlockbenchToCreateModelsWithTextures.md
+  - title: Customize Your Lighting
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Light Sources
+            url: LightingCustomization.md
+          - text: Atmospheric Effects
+            url: AtmosphericsCustomization.md
+          - text: Volumetric Fog and Light Shafts
+            url: VolumetricFogLightShaftsCustomization.md
+          - text: Shadows
+            url: ShadowsCustomization.md            
+          - text: Water Effects
+            url: WaterCustomization.md
+          - text: Color Grading and Tone Mapping
+            url: ColorGradingToneMappingCustomization.md
+          - text: Subsurface Scattering
+            url: SubSurfaceScatteringCustomization.md
+          - text: Per-Biome Customization
+            url: BiomeCustomization.md
+          - text: Key Frame JSON Syntax
+            url: KeyFrameJSONSyntax.md

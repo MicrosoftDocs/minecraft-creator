@@ -1145,43 +1145,6 @@
               "alternates": [
                 {
                   "id": "color",
-                  "dataType": 24
-                },
-                {
-                  "id": "color",
-                  "dataType": 24,
-                  "minLength": 3,
-                  "maxLength": 3,
-                  "alternates": [
-                    {
-                      "id": "color",
-                      "dataType": 14,
-                      "readOnly": true,
-                      "subForm": {
-                        "id": "color",
-                        "title": "Color",
-                        "fields": [
-                          {
-                            "id": "expression",
-                            "title": "Expression",
-                            "dataType": 2
-                          },
-                          {
-                            "id": "version",
-                            "title": "Version",
-                            "dataType": 0
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "id": "color",
-                      "dataType": 3
-                    }
-                  ]
-                },
-                {
-                  "id": "color",
                   "dataType": 16,
                   "subForm": {
                     "id": "color",
@@ -1191,51 +1154,7 @@
                         "id": "gradient",
                         "title": "Gradient",
                         "dataType": 24,
-                        "alternates": [
-                          {
-                            "id": "gradient",
-                            "dataType": 24,
-                            "alternates": [
-                              {
-                                "id": "gradient",
-                                "dataType": 2
-                              },
-                              {
-                                "id": "gradient",
-                                "dataType": 24,
-                                "minLength": 3,
-                                "maxLength": 3,
-                                "alternates": [
-                                  {
-                                    "id": "gradient",
-                                    "dataType": 14,
-                                    "readOnly": true,
-                                    "subForm": {
-                                      "id": "gradient",
-                                      "title": "Gradient",
-                                      "fields": [
-                                        {
-                                          "id": "expression",
-                                          "title": "Expression",
-                                          "dataType": 2
-                                        },
-                                        {
-                                          "id": "version",
-                                          "title": "Version",
-                                          "dataType": 0
-                                        }
-                                      ]
-                                    }
-                                  },
-                                  {
-                                    "id": "gradient",
-                                    "dataType": 3
-                                  }
-                                ]
-                              }
-                            ]
-                          }
-                        ]
+                        "alternates": []
                       },
                       {
                         "id": "interpolant",
@@ -1292,33 +1211,6 @@
         "title": "Minecraft Particle Initial Speed",
         "dataType": 24,
         "alternates": [
-          {
-            "id": "minecraft:particle_initial_speed",
-            "dataType": 24,
-            "alternates": [
-              {
-                "id": "minecraft:particle_initial_speed",
-                "dataType": 16,
-                "readOnly": true,
-                "subForm": {
-                  "id": "minecraft:particle_initial_speed",
-                  "title": "Particle Initial Speed",
-                  "fields": [
-                    {
-                      "id": "expression",
-                      "title": "Expression",
-                      "dataType": 2
-                    },
-                    {
-                      "id": "version",
-                      "title": "Version",
-                      "dataType": 0
-                    }
-                  ]
-                }
-              }
-            ]
-          },
           {
             "id": "minecraft:particle_initial_speed",
             "dataType": 3

@@ -1,13 +1,17 @@
 ---
 author: mammerla
-ms.author: v-bbortree
+ms.author: mikeam
 title: Getting Started with Ray Tracing
 ms.topic: tutorial
 description: "An introduction to the Ray Tracing features in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/28/2025
 ---
 
 # Getting Started with Ray Tracing
+
+> [!TIP]
+> While ray tracing is still supported, it's largely been superseded by [Vibrant Visuals](./VibrantVisuals/IntroVibrantVisuals.md).
 
 Minecraft: Bedrock Edition has cutting-edge path-traced ray tracing, enabling gamers and world builders to craft incredible new sights and immersive environments. Physically-based textures have been introduced for creating more complex and realistic (or fabulously unrealistic!) block textures. To further enhance the visual experience of RTX, creators can also define their own settings for fog via resource packs.
 
@@ -32,7 +36,7 @@ By the end of this series, you will learn:
 > - How to enable ray tracing in Minecraft.
 > - How to create a physically-based texture resource pack.
 
-### Requirements
+## Requirements
 
 It's recommended that you have the following when working with ray tracing in Minecraft: Bedrock Edition:
 
@@ -45,7 +49,6 @@ It's recommended that you have the following when working with ray tracing in Mi
 
 > [!IMPORTANT]
 > Virtual Reality (VR) headsets and Mixed Reality (MR) headsets are not supported.
-
 
 ## Ray Tracing Examples in Minecraft
 
@@ -76,14 +79,7 @@ Next, we will create  PBR textures as a resource pack and you can enable it in t
 You will learn about each new texture map creators can use to build and design photorealistic materials and lighting effects, and you will learn how to use texture maps to create a mirror in-game.
 
 > [!div class="nextstepaction"]
-> [Introduction to Physically Based Rendering](./RTXPBRIntro.md)
-
-### Physically Based Rendering Tutorial
-
-In this part, you will learn how to create physically-based textures by creating a series of texture maps for your own texture set for use on the Redstone block.
-
-> [!div class="nextstepaction"]
-> [Physically Based Rendering Tutorial](./RTXPBRTutorial.md)
+> [Introduction to Physically Based Rendering](./VibrantVisuals/PBROverview.md)
 
 ### Fog in Resources
 

@@ -47,7 +47,6 @@ description: Contents of the @minecraft/server.EntityComponent class.
 - [*EntityLeashableComponent*](EntityLeashableComponent.md)
 - [*EntityMarkVariantComponent*](EntityMarkVariantComponent.md)
 - [*EntityNavigationComponent*](EntityNavigationComponent.md)
-- [*EntityNpcComponent*](EntityNpcComponent.md)
 - [*EntityOnFireComponent*](EntityOnFireComponent.md)
 - [*EntityProjectileComponent*](EntityProjectileComponent.md)
 - [*EntityPushThroughComponent*](EntityPushThroughComponent.md)
@@ -62,6 +61,7 @@ description: Contents of the @minecraft/server.EntityComponent class.
 - [*EntityVariantComponent*](EntityVariantComponent.md)
 - [*EntityWantsJockeyComponent*](EntityWantsJockeyComponent.md)
 - [*PlayerCursorInventoryComponent*](PlayerCursorInventoryComponent.md)
+- [*EntityNpcComponent*](EntityNpcComponent.md)
 
 Base class for downstream entity components.
 

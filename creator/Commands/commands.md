@@ -55,6 +55,7 @@ description: List and descriptions of Minecraft commands and enums
 | [`/recipe`](./commands/recipe.md) | Supports unlocking of built-in (vanilla) recipes that a particular player can craft with. | Game Directors | Yes |
 | [`/reload`](./commands/reload.md) | Reloads all function and script files from all behavior packs. | Game Directors | Yes |
 | [`/reloadconfig`](./commands/reloadconfig.md) | Reloads configuration files relating to variables, secrets, permissions, etc. | Owner | Yes |
+| [`/reloadpacketlimitconfig`](./commands/reloadpacketlimitconfig.md) | Reload packet limit config from file | Owner | Yes |
 | [`/replaceitem`](./commands/replaceitem.md) | Replaces items in inventories. | Game Directors | Yes |
 | [`/ride`](./commands/ride.md) | Makes entities ride other entities, stops entities from riding, makes rides evict their riders, or summons rides or riders. | Game Directors | Yes |
 | [`/save`](./commands/save.md) | Control or check how the game saves data to disk. This command is for use on a dedicated server only. | Owner | Yes |

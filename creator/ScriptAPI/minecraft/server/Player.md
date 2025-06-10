@@ -52,7 +52,6 @@ Notes:
   - This property can't be edited in read-only mode.
 ::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **graphicsMode**
 `read-only graphicsMode: GraphicsMode;`
 
@@ -60,13 +59,9 @@ Gets the current graphics mode of the player's client. This can be changed in th
 
 Type: [*GraphicsMode*](GraphicsMode.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end
 
 ### **inputInfo**
 `read-only inputInfo: InputInfo;`

@@ -24,7 +24,7 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.90-beta.26 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.100-beta.20 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -152,3 +152,7 @@ gameTest
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobAsyncTest.ts) code sandbox.
+
+## Dependencies
+- [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
+- [`@minecraft/server`](../../../scriptapi/minecraft/server/minecraft-server.md)

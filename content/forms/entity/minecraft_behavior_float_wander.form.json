@@ -143,7 +143,7 @@
       },
       {
         "id": "surface_y_dist",
-        "title": "Surface Y Dist",
+        "title": "Surface y Dist",
         "description": "The vertical distance in blocks that the goal will check for a surface from a candidate position. Only valid when `navigate_around_surface` is true.",
         "defaultValue": 0,
         "dataType": 0,
@@ -188,7 +188,7 @@
       },
       {
         "id": "y_dist",
-        "title": "Y Dist",
+        "title": "y Dist",
         "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
         "defaultValue": 7,
         "dataType": 0,
@@ -203,7 +203,7 @@
       },
       {
         "id": "y_offset",
-        "title": "Y Offset",
+        "title": "y Offset",
         "description": "Height in blocks to add to the selected target position",
         "defaultValue": 0,
         "dataType": 3,

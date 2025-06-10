@@ -323,6 +323,8 @@ Notes:
 ### **playerHotbarSelectedSlotChange**
 `read-only playerHotbarSelectedSlotChange: PlayerHotbarSelectedSlotChangeAfterEventSignal;`
 
+This event fires when a player's selected slot changes.
+
 Type: [*PlayerHotbarSelectedSlotChangeAfterEventSignal*](PlayerHotbarSelectedSlotChangeAfterEventSignal.md)
 
 > [!CAUTION]
@@ -375,6 +377,8 @@ Notes:
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInventoryItemChange**
 `read-only playerInventoryItemChange: PlayerInventoryItemChangeAfterEventSignal;`
+
+This event fires when an item gets added or removed to the player's inventory.
 
 Type: [*PlayerInventoryItemChangeAfterEventSignal*](PlayerInventoryItemChangeAfterEventSignal.md)
 
@@ -495,15 +499,10 @@ Type: [*WeatherChangeAfterEventSignal*](WeatherChangeAfterEventSignal.md)
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **worldLoad**
 `read-only worldLoad: WorldLoadAfterEventSignal;`
 
 Type: [*WorldLoadAfterEventSignal*](WorldLoadAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end

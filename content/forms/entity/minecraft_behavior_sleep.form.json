@@ -57,7 +57,7 @@
       },
       {
         "id": "sleep_y_offset",
-        "title": "Sleep Y Offset",
+        "title": "Sleep y Offset",
         "description": "The y offset of the mob's collider while sleeping",
         "defaultValue": 1,
         "dataType": 3,

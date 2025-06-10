@@ -1,0 +1,42 @@
+{
+  "id": "RandomPoolAlias",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "RandomPoolAlias",
+    "title": "RandomPoolAlias World",
+    "description": "Pool alias for a Random list of targets",
+    "fields": [
+      {
+        "id": "alias",
+        "title": "Alias",
+        "description": "Alias of Random Pool",
+        "dataType": 2
+      },
+      {
+        "id": "targets",
+        "title": "Targets",
+        "description": "List of potential pools",
+        "dataType": 15,
+        "subForm": {
+          "id": "WeightedRandomItem",
+          "title": "WeightedRandomItem",
+          "description": "Weighted Random Item",
+          "fields": [
+            {
+              "id": "data",
+              "title": "Data",
+              "description": "Item's data",
+              "dataType": 2
+            },
+            {
+              "id": "weight",
+              "title": "Weight",
+              "description": "Weight of item",
+              "dataType": 0
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

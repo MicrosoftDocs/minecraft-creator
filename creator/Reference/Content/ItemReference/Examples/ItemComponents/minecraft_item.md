@@ -308,7 +308,7 @@ The entity_placer item component specifies the blocks that the item can be place
 | dispense_on | *not set* | Array of [Dispense On](#dispense-on-item-type) items | List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed. |  | 
 | dispense_on (Alternate 1) | *not set* | String |  |  | 
 | dispense_on (Alternate 2) | *not set* | Object |  |  | 
-| entity | *not set* | String | The entity to be placed in the world. Value must be match patern "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". |  | 
+| entity | *not set* | String | The entity to be placed in the world. Value must match a regular expression pattern of "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". |  | 
 | use_on | *not set* | Array of [Use On](#use-on-item-type) items | List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed. |  | 
 | use_on (Alternate 1) | *not set* | String |  |  | 
 | use_on (Alternate 2) | *not set* | Object |  |  | 
@@ -434,7 +434,7 @@ Projectile items shoot out, like an arrow.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | minimum_critical_power | *not set* | Decimal number | Specifies how long a player must charge a projectile for it to critically hit. |  | 
-| projectile_entity | *not set* | String | Which entity is to be fired as a projectile. Value must be match patern "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". |  | 
+| projectile_entity | *not set* | String | Which entity is to be fired as a projectile. Value must match a regular expression pattern of "^(?:\w+(?:\.\w+)*:(?=\w))?(?:\w+(?:\.\w+)*)(?:<((?:\w+(?:\.\w+)*:(?=\w))?\w+(?:\.\w+)*)*>)?$". |  | 
 
 ## Rarity (Alternate 1) item type
 Rarity
@@ -653,5 +653,5 @@ menu_category contains the creative group name and category for this item.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | category | *not set* | String | Creative category where this item belongs. Defaults to "none". |  | 
-| group | *not set* | String | The Creative Group that this item belongs to. Group name is limited to 256 characters. The name also must start with a namespace. Value must be match patern "^(?:.)+:(?:.)+$". |  | 
+| group | *not set* | String | The Creative Group that this item belongs to. Group name is limited to 256 characters. The name also must start with a namespace. Value must match a regular expression pattern of "^(?:.)+:(?:.)+$". |  | 
 | is_hidden_in_commands | *not set* | Boolean true/false | Determines whether or not this item can be used with commands. Commands can use items by default if a category is set. |  | 

@@ -1,26 +1,31 @@
 ---
-author: v-kimjeff
-ms.author: mikeam
+author: cam-wilkerson
+ms.author: v-cwilkerson
 title: Minecraft Bedrock Editor Repeater Tool
 description: "An overview of the Repeater Tool in Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date: 05/19/2025
 ---
 
-# Editor Repeater Tool
+# Repeater Tool
 
-The repeater tool is used to repeat a selection of blocks in a repeating pattern across a volume. You can use this tool to make repetetive block placement easier. 
+The Repeater is used to repeat a selection of blocks to make pattern across a specific volume. You can use this tool to make repetitive block placement much more efficient. 
 
-You can open the repeater tool window by clicking the repeater tool button on the left side.
+- **Spacing**: The size of the area between each repetition. If you leave the value for an axis at 0, the selection will not repeat along that axis. The maximum value for each axis is the size of your world, but keep in mind that setting very high values will likely cause the Editor to work considerably slower.
 
-- **Spacing**: The size of the area between each repetition your block selection. If you leave the value for an axis at 0, the selection will not repeat along that axis. For example, if you set an X value, but leave the Y and Z axes at 0, the selection will repeat along the X axis for the number of repetitions that you specified, but it will not repeat along the Y or Z axes. The maximum value for each axis is the size of your world, but keep in mind that setting very high values will cause the editor to work slowly.
-- **Repetitions**: The number of times this pattern should repeat across the specified axes.  
+- **Repetitions**: The number of times the pattern should repeat across the specified axes.  
 
-To use the repeater tool to create patterns of blocks:
 
-1. Use the selection tool to select the group of blocks that you want to repeat.
+#### Use the Repeater to create patterns:
 
-1. Set the **Spacing** and **Repetitions** in the repeater tool window.
+1. Open the Repeater by clicking the button on the left side of the Editor.
+    > [!Tip]
+    > Pressing **Ctrl+R** also switches to the Repeater.
 
-1. Click **Apply**.
+2. Select the group of blocks that you want to repeat.
 
-![Animation of the repeater tool.](Media/editor_repeater_tool.gif)
+3. Set the **Spacing** and **Repetitions** in the repeater tool window.
+
+4. Click **Apply**.
+
+    ![Animation of the repeater tool.](Media/editor_repeater_tool.gif)

@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.eye_target_x_rotation",
-    "title": "Eye Target X Rotation Query",
+    "title": "Eye Target x Rotation Query",
     "description": "Returns the X eye rotation of the entity if it makes sense, else it returns 0.0.",
     "fields": []
   }

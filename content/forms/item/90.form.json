@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:item v1.21.90",
-    "title": "Minecraft Item V1.21.90 Item",
+    "title": "Minecraft Item v1.21.90 Item",
     "description": "Item definition includes the \"description\" and \"components\" sections.",
     "fields": [
       {
@@ -54,13 +54,8 @@
                     "id": "block",
                     "title": "Block",
                     "description": "Defines the block that will be placed.",
-                    "dataType": 24,
-                    "alternates": [
-                      {
-                        "id": "block",
-                        "dataType": 24
-                      }
-                    ]
+                    "dataType": 2,
+                    "alternates": []
                   },
                   {
                     "id": "replace_block_item",
@@ -291,8 +286,8 @@
                     "description": "A list of blocks to dig with correlating speeds of digging.",
                     "dataType": 15,
                     "subForm": {
-                      "id": "_v1_20_50_DiggerItemComponent_BlockInfo",
-                      "title": "V1 20 50 DiggerItemComponent BlockInfo",
+                      "id": "BlockInfo",
+                      "title": "BlockInfo",
                       "fields": [
                         {
                           "id": "block",
@@ -394,8 +389,8 @@
                     "description": "Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value.",
                     "dataType": 16,
                     "subForm": {
-                      "id": "_IntRange",
-                      "title": "IntRange",
+                      "id": "",
+                      "title": "",
                       "fields": [
                         {
                           "id": "max",
@@ -448,13 +443,13 @@
                         },
                         {
                           "id": "particle_type",
-                          "title": "ParticleType",
+                          "title": "Particle Type",
                           "description": "Particle effect to emit when the threshold is met.",
                           "dataType": 2
                         },
                         {
                           "id": "sound_event",
-                          "title": "Legacy LevelSoundEvent",
+                          "title": "Sound Event",
                           "description": "Sound effect to emit when the threshold is met.",
                           "dataType": 2
                         }
@@ -574,19 +569,14 @@
                     "id": "entity",
                     "title": "Entity",
                     "description": "The entity to be placed in the world.",
-                    "dataType": 24,
+                    "dataType": 2,
                     "validity": [
                       {
                         "comparison": "pattern",
                         "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
                       }
                     ],
-                    "alternates": [
-                      {
-                        "id": "entity",
-                        "dataType": 24
-                      }
-                    ]
+                    "alternates": []
                   },
                   {
                     "id": "use_on",
@@ -800,13 +790,8 @@
                         "id": "textures",
                         "title": "Textures",
                         "description": "This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes and bundle open textures can be specified here too. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file.",
-                        "dataType": 24,
-                        "alternates": [
-                          {
-                            "id": "textures",
-                            "dataType": 24
-                          }
-                        ]
+                        "dataType": 2,
+                        "alternates": []
                       }
                     ]
                   }
@@ -903,19 +888,14 @@
                     "id": "projectile_entity",
                     "title": "Projectile Entity",
                     "description": "Which entity is to be fired as a projectile.",
-                    "dataType": 24,
+                    "dataType": 2,
                     "validity": [
                       {
                         "comparison": "pattern",
                         "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
                       }
                     ],
-                    "alternates": [
-                      {
-                        "id": "projectile_entity",
-                        "dataType": 24
-                      }
-                    ]
+                    "alternates": []
                   }
                 ]
               }
@@ -968,7 +948,7 @@
                   },
                   {
                     "id": "sound_event",
-                    "title": "Legacy LevelSoundEvent",
+                    "title": "Sound Event",
                     "description": "Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic.",
                     "dataType": 2
                   }
@@ -1068,8 +1048,8 @@
                     "description": "Ammunition.",
                     "dataType": 15,
                     "subForm": {
-                      "id": "_v1_20_50_ShooterItemComponent_Ammunition",
-                      "title": "V1 20 50 ShooterItemComponent Ammunition",
+                      "id": "Ammunition",
+                      "title": "Ammunition",
                       "fields": [
                         {
                           "id": "item",
@@ -1355,7 +1335,7 @@
                     "fields": [
                       {
                         "id": "value",
-                        "title": "Legacy UseAnimation",
+                        "title": "Animation",
                         "description": "Specifies which animation to play when the the item is used.",
                         "dataType": 2
                       }
@@ -1419,7 +1399,7 @@
                   },
                   {
                     "id": "slot",
-                    "title": "Legacy EquipmentSlot",
+                    "title": "Slot",
                     "description": "Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.",
                     "dataType": 2
                   }
@@ -1457,7 +1437,7 @@
                 "fields": [
                   {
                     "id": "category",
-                    "title": "CreativeItemCategory",
+                    "title": "Category",
                     "description": "Creative category where this item belongs. Defaults to \"none\".",
                     "dataType": 2
                   },

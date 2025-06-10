@@ -59,3 +59,7 @@ The `@minecraft/server-ui` module contains types for expressing simple dialog-ba
 `static read-only uiManager: UIManager;`
 
 Type: [*UIManager*](UIManager.md)
+
+## Dependencies
+- [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
+- [`@minecraft/server`](../../../priorscriptapi/minecraft/server-1xx/minecraft-server.md)

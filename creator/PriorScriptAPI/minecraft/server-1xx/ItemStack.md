@@ -455,6 +455,7 @@ Sets the lore value - a secondary display string - for an ItemStack. The lore li
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
 
 #### Examples
 

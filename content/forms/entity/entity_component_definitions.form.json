@@ -756,12 +756,6 @@
         "dataType": 16
       },
       {
-        "id": "minecraft:body_rotation_axis_aligned",
-        "title": "Minecraft Body Rotation Axis Aligned",
-        "description": "Dynamic value",
-        "dataType": 16
-      },
-      {
         "id": "minecraft:body_rotation_blocked",
         "title": "Minecraft Body Rotation Blocked",
         "description": "Dynamic value",
@@ -1646,6 +1640,12 @@
       {
         "id": "minecraft:rideable",
         "title": "Minecraft Rideable",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:rotation_axis_aligned",
+        "title": "Minecraft Rotation Axis Aligned",
         "description": "Dynamic value",
         "dataType": 16
       },

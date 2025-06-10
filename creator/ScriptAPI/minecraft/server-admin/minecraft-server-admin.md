@@ -24,7 +24,7 @@ Contains types related to administering a Bedrock Dedicated Server. These types 
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.90-beta.26 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.100-beta.20 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -85,3 +85,7 @@ Type: [*ServerSecrets*](ServerSecrets.md)
 A globally available object that returns a list of dedicated-server configured variables.
 
 Type: [*ServerVariables*](ServerVariables.md)
+
+## Dependencies
+- [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
+- [`@minecraft/server`](../../../scriptapi/minecraft/server/minecraft-server.md)

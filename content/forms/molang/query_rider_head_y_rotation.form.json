@@ -3,7 +3,7 @@
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.rider_head_y_rotation",
-    "title": "Rider Head Y Rotation Query",
+    "title": "Rider Head y Rotation Query",
     "description": "Takes one or two arguments as parameters. Returns the head y world-rotation of the rider entity at the provided index, else it returns 0.0. Horses, zombie horses, skeleton horses, donkeys and mules require a second parameter that clamps rotation in degrees.",
     "fields": []
   }

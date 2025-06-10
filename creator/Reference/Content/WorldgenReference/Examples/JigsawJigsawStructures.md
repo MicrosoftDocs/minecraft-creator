@@ -41,9 +41,9 @@ Jigsaw Blocks act like connectors, allowing structures to grow by attaching new 
 | start_jigsaw_name | *not set* | Optional | String | The name of the Jigsaw Block from the `start_pool` to be placed first.|  |
 | [max_depth](#max_depth) | *not set* | Required | Positive Integer | The maximum recursion depth for Jigsaw Structure generation. | trail_ruins: `7`  |
 | [start_height](#start_height) | *not set* | Required | JSON Object | Height at which the Jigsaw Structure's `start_pool` should begin. |  |
-| [heightmap_projection](#heightmap_projection) | `"world_surface"` | Optional | String | Used to calculate the relative `start_height`. |  |
+| [heightmap_projection](#heightmap_projection) | `"none"` | Optional | String | Used to calculate the relative `start_height`. |  |
 | [dimension_padding](#dimension_padding) | `0` | Optional | Positive Integer or<br>JSON Object | Dimension padding prevents the structure from getting cut off at the top or bottom of the world. |  |
-| max_distance_from_center | `80` | Optional | Positive Integer | The max distance from the jigsaw pieces to the structure start. 1 to 128 inclusive.| trail_ruins: `80` |
+| [max_distance_from_center](#max_distance_from_center) | `{ "horizontal": 80, "vertical": <integer maximum> }` | Optional | Positive Integer or<br>JSON Object | The max horizontal and vertical distances from the jigsaw pieces to the structure start. horizontal is 1 to 128 inclusive, vertical is any number greater than 1.| trail_ruins: `{ "horizontal": 80, "vertical": 80 }` |
 | [pool_aliases](#pool_aliases) | *not set* | Optional | Array of JSON Objects | Pool Aliases are used to determine which Template Pool can be a substitute. |  |
 | [liquid_settings](#liquid_settings) | `"apply_waterlogging"` | Optional | String | How to handle waterloggable blocks overlapping with existing liquid. |  |
 
@@ -56,7 +56,7 @@ The JSON below shows how to combine the properties above to make `trail_ruins`.
   "format_version": "1.21.20", 
   "minecraft:jigsaw": { 
     "description": { 
-    "identifier": "minecraft:trail_ruins" 
+        "identifier": "minecraft:trail_ruins"
     }, 
     "biome_filters": [ 
       { 
@@ -73,7 +73,10 @@ The JSON below shows how to combine the properties above to make `trail_ruins`.
         "value": { "absolute": -15 }, 
     },
     "heightmap_projection": "world_surface",
-    "max_distance_from_center": 80
+    "max_distance_from_center": {
+        "horizontal": 80,
+        "vertical": 80
+    }
   } 
 } 
 ```
@@ -272,6 +275,7 @@ The heightmap that should be used when determining the starting height.
 |:----------|:-----------|
 | `"world_surface"` | Begin generating relative to the first non-air block encountered from the top down. |
 | `"ocean_floor"` | Begin generating relative to the first motion-blocking block encountered from the top down. |
+| `"none"` | Doesn't perform any heightmap projection and begins generating from a Y of `0`. |
 
 For example, this:
 
@@ -298,6 +302,15 @@ Used to specify the padding at the top and bottom of the dimension when placing 
 | bottom | `0` | Optional | Positive Integer | Distance in blocks from the bottom of the dimension that may not be used by the Jigsaw Structure. |  |
 | top | `0` | Optional | Positive Integer | Distance in blocks from the top of the dimension that may not be used by the Jigsaw Structure. | |
 
+### max_distance_from_center
+
+Used to specify the max horizontal and vertical distances from the jigsaw pieces to the structure start.
+
+#### Properties
+|Name       |Default Value |Requirement Status |Type |Description |Example Values |
+|:----------|:-------------|:------------------|:----|:-----------|:------------- |
+| horizontal | `80` | Required | Positive Integer | Max distance in blocks from the jigsaw pieces to the structure start on the horizontal plane. |  |
+| vertical | `<integer maximum>` | Optional | Positive Integer | Max distance in blocks from the jigsaw pieces to the structure start on the vertical axis. | |
 
 ### pool_aliases 
 

@@ -34,13 +34,12 @@ Defines surface material for steep slopes.
 |:----------|:-------------|:----|:-----------|:------------- |
 | east_slopes | *not set* | Boolean true/false | Enable for east-facing slopes |  | 
 | material | *not set* | Keyed set of strings | Block type use as steep material |  | 
-| material (Alternate 1) | *not set* | Keyed set of strings |  |  | 
-| material (Alternate 2) | *not set* | [Material (Alternate 2)](#material-(alternate-2)-item-type) item |  |  | 
+| material (Alternate 1) | *not set* | [Material (Alternate 1)](#material-(alternate-1)-item-type) item |  |  | 
 | north_slopes | *not set* | Boolean true/false | Enable for north-facing slopes |  | 
 | south_slopes | *not set* | Boolean true/false | Enable for south-facing slopes |  | 
 | west_slopes | *not set* | Boolean true/false | Enable for west-facing slopes |  | 
 
-## Material (Alternate 2) item type
+## Material (Alternate 1) item type
 
 #### Material Properties
 

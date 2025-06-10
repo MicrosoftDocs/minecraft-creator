@@ -6,11 +6,7 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.ShutdownEvent Class
 description: Contents of the @minecraft/server.ShutdownEvent class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # ShutdownEvent Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 The event object that gets dispatched when the game world is shutting down.

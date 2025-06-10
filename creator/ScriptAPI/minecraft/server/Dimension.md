@@ -50,12 +50,8 @@ Type: *string*
 - [findClosestBiome](#findclosestbiome)
 ::: moniker-end
 - [getBlock](#getblock)
-::: moniker range="=minecraft-bedrock-experimental"
 - [getBlockAbove](#getblockabove)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [getBlockBelow](#getblockbelow)
-::: moniker-end
 - [getBlockFromRay](#getblockfromray)
 - [getBlocks](#getblocks)
 - [getEntities](#getentities)
@@ -260,7 +256,6 @@ Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getBlockAbove**
 `
 getBlockAbove(location: Vector3, options?: BlockRaycastOptions): Block | undefined
@@ -277,16 +272,11 @@ Gets the first block found above a given block location based on the given optio
   The options to decide if a block is a valid result.
 
 **Returns** [*Block*](Block.md) | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **getBlockBelow**
 `
 getBlockBelow(location: Vector3, options?: BlockRaycastOptions): Block | undefined
@@ -303,14 +293,10 @@ Gets the first block found below a given block location based on the given optio
   The options to decide if a block is a valid result.
 
 **Returns** [*Block*](Block.md) | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-::: moniker-end
 
 ### **getBlockFromRay**
 `
