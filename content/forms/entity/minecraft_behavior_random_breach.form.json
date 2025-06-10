@@ -59,7 +59,7 @@
       },
       {
         "id": "y_dist",
-        "title": "Y Dist",
+        "title": "y Dist",
         "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
         "defaultValue": 7,
         "dataType": 0

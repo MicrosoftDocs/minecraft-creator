@@ -2,15 +2,15 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "Used to pair block rules with ure Templates and to randomly place Structure Templates using a weighted list.",
-    "title": "Used To Pair Block Rules With Structure Templates And To Randomly Place Structure Templates Using A Weighted List World",
+    "title": "Used To Pair Block Rules With Structure Templates And To Randomly Place Structure Templates Using a Weighted List World",
     "fields": [
       {
         "id": "description",
         "title": "Description",
         "dataType": 16,
         "subForm": {
-          "id": "_v1_21_20_JigsawureTemplatePool_Description",
-          "title": "V1 21 20 JigsawStructureTemplatePool Description",
+          "id": "",
+          "title": "",
           "fields": [
             {
               "id": "identifier",
@@ -27,44 +27,14 @@
         "description": "List of Structure Template and processor list pairs.",
         "dataType": 15,
         "subForm": {
-          "id": "_v1_21_20_JigsawureTemplatePool_TemplatePoolElement",
-          "title": "V1 21 20 JigsawStructureTemplatePool TemplatePoolElement",
+          "id": "",
+          "title": "",
           "fields": [
             {
               "id": "element",
               "title": "Element",
               "description": "A grouping of a Structure Template, the Processor List to use when placing the structure, and its weight that determines the likelihood of the element being chosen.",
-              "dataType": 16,
-              "subForm": {
-                "id": "_v1_21_20_JigsawureTemplatePool_SinglePoolElement",
-                "title": "V1 21 20 JigsawStructureTemplatePool SinglePoolElement",
-                "fields": [
-                  {
-                    "id": "element_type",
-                    "title": "V1 21 20 JigsawureTemplatePool ElementType",
-                    "description": "The type of element. Currently, only minecraft:single_pool_element is supported.",
-                    "dataType": 2
-                  },
-                  {
-                    "id": "location",
-                    "title": "Location",
-                    "description": "The path of the structure file. This path is relative to the behavior pack's structures folder.",
-                    "dataType": 2
-                  },
-                  {
-                    "id": "processors",
-                    "title": "Processors",
-                    "description": "The identifier of the processor list to use when placing the structure.",
-                    "dataType": 2
-                  }
-                ]
-              }
-            },
-            {
-              "id": "projection",
-              "title": "V1 21 20 JigsawureTemplatePool Projection",
-              "description": "Specifies how structures should be placed relative to the terrain.",
-              "dataType": 2
+              "dataType": 16
             },
             {
               "id": "weight",

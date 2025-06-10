@@ -16,7 +16,7 @@ Creates a trigger based on environment conditions.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| triggers | *not set* | Array of strings | The list of triggers that fire when the environment conditions match the given filter criteria. | Armadillo: `[{"filters":{"any_of":[{"test":"on_fire"},{"test":"in_water"},{"test":"is_panicking"},{"test":"is_leashed"},{"test":"is_riding"}]},"event":"minecraft:unroll"}]`, Axolotl: `[{"filters":{"test":"in_water","operator":"!=","value":true},"event":"start_drying_out"}]`, `[{"filters":{"test":"in_water_or_rain","operator":"!=","value":true},"event":"start_drying_out"},{"filters":{"test":"in_water","operator":"==","value":true},"event":"enter_water"}]` | 
+| triggers | *not set* | Array of Minecraft Event Triggers | The list of triggers that fire when the environment conditions match the given filter criteria. | Armadillo: `[{"filters":{"any_of":[{"test":"on_fire"},{"test":"in_water"},{"test":"is_panicking"},{"test":"is_leashed"},{"test":"is_riding"}]},"event":"minecraft:unroll"}]`, Axolotl: `[{"filters":{"test":"in_water","operator":"!=","value":true},"event":"start_drying_out"}]`, `[{"filters":{"test":"in_water_or_rain","operator":"!=","value":true},"event":"start_drying_out"},{"filters":{"test":"in_water","operator":"==","value":true},"event":"enter_water"}]` | 
 
 ## Samples
 

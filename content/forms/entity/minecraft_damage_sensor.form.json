@@ -34,6 +34,7 @@
     },
     {
       "id": "triggers",
+      "dataType": 42,
       "subForm": {
         "fields": [
           {

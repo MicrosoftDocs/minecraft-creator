@@ -23,7 +23,7 @@
           "fields": [
             {
               "id": "category",
-              "title": "CreativeItemCategory",
+              "title": "Category",
               "description": "Creative category where this item belongs. Defaults to \"none\".",
               "dataType": 2
             },

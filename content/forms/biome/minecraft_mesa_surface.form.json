@@ -120,10 +120,6 @@
         "alternates": [
           {
             "id": "clay_material",
-            "dataType": 24
-          },
-          {
-            "id": "clay_material",
             "dataType": 16,
             "readOnly": true,
             "subForm": {
@@ -165,10 +161,6 @@
         "alternates": [
           {
             "id": "foundation_material",
-            "dataType": 24
-          },
-          {
-            "id": "foundation_material",
             "dataType": 16,
             "readOnly": true,
             "subForm": {
@@ -208,10 +200,6 @@
         "description": "Hardened clay block to use",
         "dataType": 24,
         "alternates": [
-          {
-            "id": "hard_clay_material",
-            "dataType": 24
-          },
           {
             "id": "hard_clay_material",
             "dataType": 16,
@@ -261,10 +249,6 @@
         "alternates": [
           {
             "id": "mid_material",
-            "dataType": 24
-          },
-          {
-            "id": "mid_material",
             "dataType": 16,
             "readOnly": true,
             "subForm": {
@@ -312,10 +296,6 @@
         "alternates": [
           {
             "id": "sea_floor_material",
-            "dataType": 24
-          },
-          {
-            "id": "sea_floor_material",
             "dataType": 16,
             "readOnly": true,
             "subForm": {
@@ -357,10 +337,6 @@
         "alternates": [
           {
             "id": "sea_material",
-            "dataType": 24
-          },
-          {
-            "id": "sea_material",
             "dataType": 16,
             "readOnly": true,
             "subForm": {
@@ -400,10 +376,6 @@
         "description": "Controls the block type used for the surface of this biome",
         "dataType": 24,
         "alternates": [
-          {
-            "id": "top_material",
-            "dataType": 24
-          },
           {
             "id": "top_material",
             "dataType": 16,

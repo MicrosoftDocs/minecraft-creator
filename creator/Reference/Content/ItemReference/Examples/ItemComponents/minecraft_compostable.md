@@ -23,7 +23,7 @@ Specifies that an item is compostable and provides the chance of creating a comp
 
 ## Samples
 
-#### [Bag O Leaves](https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/items/bag_o_leaves.json)
+#### [Bag o Leaves](https://github.com/microsoft/minecraft-samples/tree/main/creator_camp/behavior_packs/creator_camp/items/bag_o_leaves.json)
 
 
 ```json

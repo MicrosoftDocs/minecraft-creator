@@ -23,12 +23,12 @@ Compels an entity to look at the player that is currently trading with the entit
 | angle_of_view_vertical | 360 | Integer number | The angle in degrees that the mob can see in the X-axis (left-right). |  | 
 | look_distance | 8 | Decimal number | The distance in blocks from which the entity will look at the player this mob is trading with. |  | 
 | look_time | *not set* | Range of integers | Time range to look at the player this mob is trading with. |  | 
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `7`, Villager: `2`, Wandering Trader: `4` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager v2: `7`, Villager: `2`, Wandering Trader: `4` | 
 | probability | 0.02 | Decimal number | The probability of looking at the target. A value of 1.00 is 100%. |  | 
 
 ## Samples
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 
 ```json

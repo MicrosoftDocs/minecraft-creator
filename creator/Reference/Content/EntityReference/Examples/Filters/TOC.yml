@@ -156,6 +156,8 @@
   href: is_underwater.md
 - name: is_variant
   href: is_variant.md
+- name: is_vehicle_family
+  href: is_vehicle_family.md
 - name: is_visible
   href: is_visible.md
 - name: is_waterlogged

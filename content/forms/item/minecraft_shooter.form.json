@@ -134,8 +134,8 @@
         "description": "Ammunition.",
         "dataType": 15,
         "subForm": {
-          "id": "_v1_20_50_ShooterItemComponent_Ammunition",
-          "title": "V1 20 50 ShooterItemComponent Ammunition",
+          "id": "Ammunition",
+          "title": "Ammunition",
           "fields": [
             {
               "id": "item",

@@ -14,7 +14,7 @@ Moves to and hides at their owned POI or the closest nearby.
 
 ## Samples
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 
 ```json

@@ -1,0 +1,10 @@
+{
+  "id": "minecraft:rotation_axis_aligned",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:rotation_axis_aligned",
+    "title": "Rotation Axis Aligned",
+    "description": "Causes the entity to automatically rotate to align with the nearest cardinal direction based on its current facing direction.\r\nCombining this with the \"minecraft:body_rotation_blocked\" component will cause the entity's body to align with the nearest cardinal direction and remain fixed in that orientation, regardless of changes in its facing direction.",
+    "fields": []
+  }
+}

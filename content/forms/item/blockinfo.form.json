@@ -1,0 +1,63 @@
+{
+  "id": "BlockInfo",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "BlockInfo",
+    "title": "BlockInfo Item",
+    "fields": [
+      {
+        "id": "block",
+        "title": "Block",
+        "description": "Block to be dug.",
+        "dataType": 16,
+        "subForm": {
+          "id": "block",
+          "title": "Block",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": 0,
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "dataType": 1
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "block",
+            "dataType": 2
+          },
+          {
+            "id": "block",
+            "dataType": 16
+          }
+        ]
+      },
+      {
+        "id": "speed",
+        "title": "Speed",
+        "description": "Digging speed for the correlating block(s).",
+        "dataType": 0
+      }
+    ]
+  }
+}

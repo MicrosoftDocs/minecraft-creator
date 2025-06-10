@@ -349,7 +349,7 @@
       },
       {
         "id": "drop_item_y_offset",
-        "title": "Drop Item Y Offset",
+        "title": "Drop Item y Offset",
         "description": "Will offset the item drop position this amount in the y direction. Requires \"drop_item_slot\" to be specified.",
         "defaultValue": 0,
         "dataType": 3
@@ -409,7 +409,7 @@
             },
             {
               "id": "particle_y_offset",
-              "title": "Particle Y Offset",
+              "title": "Particle y Offset",
               "description": "Will offset the particle this amount in the y direction.",
               "defaultValue": 0,
               "dataType": 3
@@ -468,7 +468,7 @@
             },
             {
               "id": "y_offset",
-              "title": "Y Offset",
+              "title": "y Offset",
               "description": "Will offset the items spawn position this amount in the y direction.",
               "defaultValue": 1,
               "dataType": 3
@@ -523,14 +523,32 @@
                       "filters": {
                         "all_of": [
                           {
-                            "test": "is_family",
+                            "test": "has_equipment",
                             "subject": "other",
-                            "value": "player"
+                            "domain": "hand",
+                            "operator": "not",
+                            "value": "lead"
                           },
                           {
                             "test": "is_sneak_held",
                             "subject": "other",
                             "value": false
+                          },
+                          {
+                            "any_of": [
+                              {
+                                "test": "all_slots_empty",
+                                "subject": "other",
+                                "operator": "not",
+                                "value": "hand"
+                              },
+                              {
+                                "test": "all_slots_empty",
+                                "subject": "self",
+                                "operator": "not",
+                                "value": "hand"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -658,14 +676,32 @@
                     "filters": {
                       "all_of": [
                         {
-                          "test": "is_family",
+                          "test": "has_equipment",
                           "subject": "other",
-                          "value": "player"
+                          "domain": "hand",
+                          "operator": "not",
+                          "value": "lead"
                         },
                         {
                           "test": "is_sneak_held",
                           "subject": "other",
                           "value": false
+                        },
+                        {
+                          "any_of": [
+                            {
+                              "test": "all_slots_empty",
+                              "subject": "other",
+                              "operator": "not",
+                              "value": "hand"
+                            },
+                            {
+                              "test": "all_slots_empty",
+                              "subject": "self",
+                              "operator": "not",
+                              "value": "hand"
+                            }
+                          ]
                         }
                       ]
                     }
@@ -724,14 +760,32 @@
                   "filters": {
                     "all_of": [
                       {
-                        "test": "is_family",
+                        "test": "has_equipment",
                         "subject": "other",
-                        "value": "player"
+                        "domain": "hand",
+                        "operator": "not",
+                        "value": "lead"
                       },
                       {
                         "test": "is_sneak_held",
                         "subject": "other",
                         "value": false
+                      },
+                      {
+                        "any_of": [
+                          {
+                            "test": "all_slots_empty",
+                            "subject": "other",
+                            "operator": "not",
+                            "value": "hand"
+                          },
+                          {
+                            "test": "all_slots_empty",
+                            "subject": "self",
+                            "operator": "not",
+                            "value": "hand"
+                          }
+                        ]
                       }
                     ]
                   }

@@ -70,10 +70,6 @@
               "alternates": [
                 {
                   "id": "material",
-                  "dataType": 24
-                },
-                {
-                  "id": "material",
                   "dataType": 16,
                   "readOnly": true,
                   "subForm": {

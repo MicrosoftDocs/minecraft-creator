@@ -16,13 +16,13 @@ Allows this entity to move indoors.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager V2: `6`, Villager: `4` | 
-| speed_multiplier | 0.8 | Decimal number | The movement speed modifier to apply to the entity while it is moving indoors. | Villager V2: `0.8` | 
-| timeout_cooldown | 8 | Decimal number | The cooldown time in seconds before the goal can be reused after pathfinding fails | Villager V2: `8` | 
+| priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Villager v2: `6`, Villager: `4` | 
+| speed_multiplier | 0.8 | Decimal number | The movement speed modifier to apply to the entity while it is moving indoors. | Villager v2: `0.8` | 
+| timeout_cooldown | 8 | Decimal number | The cooldown time in seconds before the goal can be reused after pathfinding fails | Villager v2: `8` | 
 
 ## Samples
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 
 ```json

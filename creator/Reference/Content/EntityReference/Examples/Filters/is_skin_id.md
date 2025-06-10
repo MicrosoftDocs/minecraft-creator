@@ -17,9 +17,9 @@ Returns true if the subject entity is the skin id number provided.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. |  | 
-| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Villager V2: `"other"` | 
-| test | *not set* | String |  | Villager V2: `"is_skin_id"` | 
-| value | *not set* | Integer number | (Required) An integer value. | Villager V2: `1`, `2`, `3`, `4`, `5` | 
+| subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. | Villager v2: `"other"` | 
+| test | *not set* | String |  | Villager v2: `"is_skin_id"` | 
+| value | *not set* | Integer number | (Required) An integer value. | Villager v2: `1`, `2`, `3`, `4`, `5` | 
 
 ### Operator choices
 
@@ -62,7 +62,7 @@ At Short (using Defaults)..:
 { "test": "is_skin_id", "value": "0" }
 ```
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 At /minecraft:entity/events/minecraft:entity_transformed/sequence/2/sequence/0/filters/: 
 

@@ -468,20 +468,6 @@
             "is_pushable": false,
             "is_pushable_by_piston": true
           }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_with_passengers/minecraft:pushable/",
-          "content": {
-            "is_pushable": false,
-            "is_pushable_by_piston": true
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:adult_without_passengers/minecraft:pushable/",
-          "content": {
-            "is_pushable": true,
-            "is_pushable_by_piston": true
-          }
         }
       ],
       "/vanilla/behavior_pack/entities/hoglin.json": [

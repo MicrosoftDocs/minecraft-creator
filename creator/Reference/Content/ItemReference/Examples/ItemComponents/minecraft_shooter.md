@@ -34,7 +34,7 @@ Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have 
 
 ## Ammunition item type
 
-#### V1 20 50 ShooterItemComponent Ammunition Properties
+#### Ammunition Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

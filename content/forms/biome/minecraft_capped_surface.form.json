@@ -64,10 +64,6 @@
         "alternates": [
           {
             "id": "beach_material",
-            "dataType": 24
-          },
-          {
-            "id": "beach_material",
             "dataType": 16,
             "readOnly": true,
             "subForm": {
@@ -108,10 +104,6 @@
         "dataType": 24,
         "minLength": 1,
         "alternates": [
-          {
-            "id": "ceiling_materials",
-            "dataType": 24
-          },
           {
             "id": "ceiling_materials",
             "dataType": 16,
@@ -156,10 +148,6 @@
         "alternates": [
           {
             "id": "floor_materials",
-            "dataType": 24
-          },
-          {
-            "id": "floor_materials",
             "dataType": 16,
             "readOnly": true,
             "subForm": {
@@ -201,10 +189,6 @@
         "alternates": [
           {
             "id": "foundation_material",
-            "dataType": 24
-          },
-          {
-            "id": "foundation_material",
             "dataType": 16,
             "readOnly": true,
             "subForm": {
@@ -244,10 +228,6 @@
         "description": "Material used to replace air blocks below sea level.",
         "dataType": 24,
         "alternates": [
-          {
-            "id": "sea_material",
-            "dataType": 24
-          },
           {
             "id": "sea_material",
             "dataType": 16,

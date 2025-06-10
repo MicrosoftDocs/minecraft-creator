@@ -21,7 +21,7 @@ Allows a creator to determine how quickly an item can dig specific blocks.
 
 ## Destroy Speeds item type
 
-#### V1 20 50 DiggerItemComponent BlockInfo Properties
+#### BlockInfo Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

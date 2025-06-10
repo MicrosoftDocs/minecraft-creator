@@ -230,7 +230,7 @@
           "/vanilla/behavior_pack/entities/glow_squid.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.95
+              "content": 0.8
             }
           ],
           "/vanilla/behavior_pack/entities/goat.json": [
@@ -309,12 +309,6 @@
               "content": 1.4
             }
           ],
-          "/vanilla/behavior_pack/entities/pufferfish.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.8
-            }
-          ],
           "/vanilla/behavior_pack/entities/rabbit.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
@@ -337,12 +331,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
               "content": 1.75
-            }
-          ],
-          "/vanilla/behavior_pack/entities/squid.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.95
             }
           ],
           "/vanilla/behavior_pack/entities/strider.json": [
@@ -595,7 +583,7 @@
           "/vanilla/behavior_pack/entities/glow_squid.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.95
+              "content": 0.8
             }
           ],
           "/vanilla/behavior_pack/entities/guardian.json": [
@@ -662,18 +650,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
               "content": 1.9
-            }
-          ],
-          "/vanilla/behavior_pack/entities/squid.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.95
-            }
-          ],
-          "/vanilla/behavior_pack/entities/tadpole.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.8
             }
           ],
           "/vanilla/behavior_pack/entities/tripod_camera.json": [
@@ -1107,8 +1083,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:collision_box/",
           "content": {
-            "width": 0.95,
-            "height": 0.95
+            "width": 0.8,
+            "height": 0.8
           }
         }
       ],
@@ -1483,8 +1459,8 @@
         {
           "path": "/minecraft:entity/components/minecraft:collision_box/",
           "content": {
-            "width": 0.95,
-            "height": 0.95
+            "width": 0.8,
+            "height": 0.8
           }
         }
       ],

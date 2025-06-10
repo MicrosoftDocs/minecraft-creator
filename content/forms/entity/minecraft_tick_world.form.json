@@ -33,5 +33,46 @@
         ]
       }
     ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:tick_world",
+    "title": "Minecraft Tick World Entity",
+    "description": "Defines if the entity ticks the world and the radius around it to tick.",
+    "fields": [
+      {
+        "id": "distance_to_players",
+        "title": "Distance To Players",
+        "description": "The distance at which the closest player has to be before this entity despawns. This option will be ignored if never_despawn is true. Default value: 128.",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 128
+          }
+        ]
+      },
+      {
+        "id": "never_despawn",
+        "title": "Never Despawn",
+        "description": "If true, this entity will not despawn even if players are far away. If false, distance_to_players will be used to determine when to despawn. Default value: true.",
+        "dataType": 1
+      },
+      {
+        "id": "radius",
+        "title": "Radius",
+        "description": "The area around the entity to tick. Allowed range: 2-6. Default value: 2.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 2
+          },
+          {
+            "comparison": "<=",
+            "value": 6
+          }
+        ]
+      }
+    ]
   }
 }

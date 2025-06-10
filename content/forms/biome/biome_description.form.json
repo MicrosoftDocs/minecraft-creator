@@ -13,7 +13,7 @@
         "validity": [
           {
             "comparison": "pattern",
-            "value": "^[a-z0-9._%+-:]+$"
+            "value": "^[a-z0-9._%+-]+:[a-z0-9._%+-]+$"
           }
         ]
       }

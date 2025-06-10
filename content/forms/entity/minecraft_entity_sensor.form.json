@@ -84,7 +84,7 @@
             },
             {
               "id": "y_offset",
-              "title": "Y Offset",
+              "title": "y Offset",
               "description": "Vertical offset applied to the entity's position when computing the distance from other entities.",
               "defaultValue": 0,
               "dataType": 3
@@ -203,9 +203,10 @@
                   "event_filters": {
                     "all_of": [
                       {
-                        "test": "is_riding_self",
+                        "test": "is_vehicle_family",
                         "subject": "other",
-                        "value": false
+                        "operator": "not",
+                        "value": "happy_ghast"
                       },
                       {
                         "test": "actor_health",
@@ -227,9 +228,10 @@
                   "event_filters": {
                     "all_of": [
                       {
-                        "test": "is_riding_self",
+                        "test": "is_vehicle_family",
                         "subject": "other",
-                        "value": false
+                        "operator": "not",
+                        "value": "happy_ghast"
                       },
                       {
                         "test": "actor_health",
@@ -362,9 +364,10 @@
                 "event_filters": {
                   "all_of": [
                     {
-                      "test": "is_riding_self",
+                      "test": "is_vehicle_family",
                       "subject": "other",
-                      "value": false
+                      "operator": "not",
+                      "value": "happy_ghast"
                     },
                     {
                       "test": "actor_health",
@@ -386,9 +389,10 @@
                 "event_filters": {
                   "all_of": [
                     {
-                      "test": "is_riding_self",
+                      "test": "is_vehicle_family",
                       "subject": "other",
-                      "value": false
+                      "operator": "not",
+                      "value": "happy_ghast"
                     },
                     {
                       "test": "actor_health",

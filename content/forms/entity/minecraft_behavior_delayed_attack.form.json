@@ -184,14 +184,14 @@
       },
       {
         "id": "x_max_rotation",
-        "title": "X Max Rotation",
+        "title": "x Max Rotation",
         "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target.",
         "defaultValue": 30,
         "dataType": 3
       },
       {
         "id": "y_max_head_rotation",
-        "title": "Y Max Head Rotation",
+        "title": "y Max Head Rotation",
         "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target.",
         "defaultValue": 30,
         "dataType": 3

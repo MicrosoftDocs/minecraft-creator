@@ -16,10 +16,10 @@ Sets that this entity is a baby. This is used to set the is_baby value for use i
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | *not set* | String |  | Villager V2: `"=="` | 
+| operator | *not set* | String |  | Villager v2: `"=="` | 
 | subject | *not set* | String |  | Happy Ghast: `"other"` | 
 | test | *not set* | String |  | Happy Ghast: `"is_baby"` | 
-| value | *not set* | String |  | Villager V2: `true` | 
+| value | *not set* | String |  | Villager v2: `true` | 
 
 ## Samples
 
@@ -42,7 +42,7 @@ At /minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.follow_m
 }
 ```
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 At /minecraft:entity/component_groups/play_schedule_villager/minecraft:behavior.play/friend_types/0/filters/all_of/1/: 
 

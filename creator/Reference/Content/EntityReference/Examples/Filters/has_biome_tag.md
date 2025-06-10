@@ -16,7 +16,7 @@ Tests whether the biome the subject is in has the specified tag.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Villager V2: `"!="`, Wolf: `"not"` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Villager v2: `"!="`, Wolf: `"not"` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Cave Spider: `"has_biome_tag"` | 
 | value | *not set* | String | (Required) The tag to look for | Cave Spider: `"nether"`, Chicken: `"spawns_warm_variant_farm_animals"`, `"spawns_cold_variant_farm_animals"` | 
@@ -92,7 +92,7 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/1/fi
 }
 ```
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 At /minecraft:entity/events/minecraft:entity_spawned/sequence/2/filters/any_of/0/: 
 

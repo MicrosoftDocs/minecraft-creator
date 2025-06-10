@@ -16,7 +16,7 @@ Tests the current difficulty level of the game.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Villager V2: `"!="` | 
+| operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Villager v2: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Arrow: `"is_difficulty"` | 
 | value | *not set* | [Value](#value-choices) choices | (Required) The game's difficulty level to test | Arrow: `"hard"`, Bee: `"easy"`, `"normal"` | 
@@ -101,7 +101,7 @@ At /minecraft:entity/events/attacked/sequence/2/filters/:
 }
 ```
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 At /minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/1/: 
 

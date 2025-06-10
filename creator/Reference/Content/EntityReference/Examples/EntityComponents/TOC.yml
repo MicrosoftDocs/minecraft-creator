@@ -306,6 +306,8 @@
   href: minecraftComponent_renders_when_invisible.md
 - name: minecraft:rideable
   href: minecraftComponent_rideable.md
+- name: minecraft:rotation_axis_aligned
+  href: minecraftComponent_rotation_axis_aligned.md
 - name: minecraft:scale
   href: minecraftComponent_scale.md
 - name: minecraft:scale_by_age

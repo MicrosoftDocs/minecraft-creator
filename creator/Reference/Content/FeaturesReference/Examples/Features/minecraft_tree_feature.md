@@ -19,7 +19,7 @@ Places a tree in the world. A tree consists of a column that is anchored to a ba
 | acacia_canopy | *not set* | [Acacia Canopy](#acacia-canopy-item-type) item |  |  | 
 | acacia_trunk | *not set* | [Acacia Trunk](#acacia-trunk-item-type) item |  |  | 
 | base_block | *not set* | Array of strings |  |  | 
-| base_cluster | *not set* | [Base Cluster](#base-cluster-item-type) item | Allows you to define a number of clusters for the base of the tree. Used to generate mega tree variants. |  | 
+| base_cluster | *not set* | [Base Cluster](#base-cluster-item-type) item | Clusters of blocks randomly replaced with "base_block" around the base of the tree. |  | 
 | canopy | *not set* | [Canopy](#canopy-item-type) item |  |  | 
 | cherry_canopy | *not set* | [Cherry Canopy](#cherry-canopy-item-type) item |  |  | 
 | cherry_trunk | *not set* | [Cherry Trunk](#cherry-trunk-item-type) item |  |  | 
@@ -244,9 +244,9 @@ Places a tree in the world. A tree consists of a column that is anchored to a ba
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| cluster_radius | *not set* | Integer number | Radius where the clusters that can be generated. |  | 
+| cluster_radius | *not set* | Integer number | The radius of each cluster. |  | 
 | may_replace | *not set* | Array of strings |  |  | 
-| num_clusters | *not set* | Integer number | Number of clusters that can be generated. |  | 
+| num_clusters | *not set* | Integer number | Number of clusters to generate. |  | 
 
 ## Canopy item type
 

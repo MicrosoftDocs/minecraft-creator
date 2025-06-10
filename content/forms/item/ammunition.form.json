@@ -1,0 +1,40 @@
+{
+  "id": "Ammunition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Ammunition",
+    "title": "Ammunition Item",
+    "fields": [
+      {
+        "id": "item",
+        "title": "Item",
+        "description": "Ammunition item description identifier.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "item",
+            "dataType": 24
+          }
+        ]
+      },
+      {
+        "id": "search_inventory",
+        "title": "Search Inventory",
+        "description": "Can search inventory? Default is set to false.",
+        "dataType": 1
+      },
+      {
+        "id": "use_in_creative",
+        "title": "Use In Creative",
+        "description": "Can use in creative mode? Default is set to false.",
+        "dataType": 1
+      },
+      {
+        "id": "use_offhand",
+        "title": "Use Offhand",
+        "description": "Can use off-hand? Default is set to false.",
+        "dataType": 1
+      }
+    ]
+  }
+}

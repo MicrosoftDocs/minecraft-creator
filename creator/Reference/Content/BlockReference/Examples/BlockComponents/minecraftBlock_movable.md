@@ -10,7 +10,7 @@ ms.date: 02/11/2025
 # Block Components Documentation - minecraft:movable
 
 The description identifier of the movable component
-Experimental toggles required: Upcoming Creator Features.
+Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.100).
 
 
 ## Movable Properties

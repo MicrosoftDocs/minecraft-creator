@@ -17,7 +17,7 @@
           "fields": [
             {
               "id": "category_name",
-              "title": "V1 21 60 CraftingCatalogItemCategory",
+              "title": "Category Name",
               "description": "The category that the items will go to. This is restricted to construction, nature, equipment, or items.",
               "dataType": 2
             },

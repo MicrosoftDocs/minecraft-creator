@@ -1,0 +1,214 @@
+{
+  "id": "Spawn Rules",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Spawn Rules",
+    "title": "Spawn Rules Spawn",
+    "fields": [
+      {
+        "id": "conditions",
+        "title": "Conditions",
+        "dataType": 15,
+        "subForm": {
+          "id": "",
+          "title": "",
+          "description": "Biome specific rules for spawning",
+          "fields": [
+            {
+              "id": "biome_filter",
+              "title": "Biome Filter",
+              "description": "Filter to limit spawns to specific biomes.",
+              "dataType": 16,
+              "subForm": {
+                "id": "biome_filter",
+                "title": "Biome Filter",
+                "fields": [
+                  {
+                    "id": "domain",
+                    "title": "Domain",
+                    "description": "The domain the test should be performed in.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "operator",
+                    "title": "Operator",
+                    "description": "The comparison to apply with 'value'.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "subject",
+                    "title": "Subject",
+                    "description": "The subject of this filter test.",
+                    "dataType": 16
+                  },
+                  {
+                    "id": "test",
+                    "title": "Test",
+                    "description": "The name of the test to apply.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "value",
+                    "title": "Value",
+                    "description": "The value being compared with the test.",
+                    "dataType": 16
+                  }
+                ]
+              },
+              "alternates": [
+                {
+                  "id": "biome_filter",
+                  "dataType": 16
+                }
+              ]
+            },
+            {
+              "id": "herds",
+              "title": "Herds",
+              "description": "Configurations for size and events when spawning groups of entities",
+              "dataType": 15,
+              "subForm": {
+                "id": "",
+                "title": "",
+                "fields": [
+                  {
+                    "id": "event",
+                    "title": "Event",
+                    "description": "An event to run after 'event_skip_count' number of entities in the group have spawned",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "event_skip_count",
+                    "title": "Event Skip Count",
+                    "description": "Number of entities spawned in the group to skip before running the event",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "initial_event",
+                    "title": "Initial Event",
+                    "description": "Event run for the first 'initial_event_count' number of the group are placed.",
+                    "dataType": 2
+                  },
+                  {
+                    "id": "initial_event_count",
+                    "title": "Initial Event Count",
+                    "description": "Number of times that 'initial_event' can run",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "max",
+                    "title": "Max",
+                    "description": "Maximum number of entities in this group to attempt to spawn",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "min",
+                    "title": "Min",
+                    "description": "Minimum number of entities in this group to attempt to spawn",
+                    "dataType": 0
+                  }
+                ]
+              }
+            },
+            {
+              "id": "mob_event_filter",
+              "title": "Mob Event Filter",
+              "description": "Filter to exclude entities if the event is disabled.",
+              "dataType": 2
+            },
+            {
+              "id": "permute_types",
+              "title": "Permute Types",
+              "description": "List of randomly choosable permutations of the entity",
+              "dataType": 15,
+              "subForm": {
+                "id": "",
+                "title": "",
+                "fields": [
+                  {
+                    "id": "entity_type",
+                    "title": "Entity Type",
+                    "description": "Specifies the entity type to spawn when selected",
+                    "dataType": 2,
+                    "alternates": []
+                  },
+                  {
+                    "id": "min_guaranteed",
+                    "title": "Min Guaranteed",
+                    "description": "The minimum number of this permutation's entity to spawn",
+                    "dataType": 0
+                  },
+                  {
+                    "id": "weight",
+                    "title": "Weight",
+                    "description": "The likelihood of this to be selected over the combined weight of all the entities in the permutation",
+                    "dataType": 0
+                  }
+                ]
+              }
+            },
+            {
+              "id": "weight",
+              "title": "Weight",
+              "description": "The weight used when comparing other entities that can  spawn within a biome",
+              "dataType": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "dataType": 16,
+        "subForm": {
+          "id": "",
+          "title": "",
+          "fields": [
+            {
+              "id": "identifier",
+              "title": "Identifier",
+              "dataType": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "placement",
+        "title": "Placement",
+        "description": "Placement rule defintions",
+        "dataType": 16,
+        "subForm": {
+          "id": "",
+          "title": "",
+          "description": "Placement rule defintions",
+          "fields": [
+            {
+              "id": "heightmap",
+              "title": "Heightmap",
+              "description": "Defines the heightmap filter for initial entity placement during chunk loading.",
+              "dataType": 2
+            },
+            {
+              "id": "spawn_obstruction_predicate",
+              "title": "Spawn Obion Predicate",
+              "description": "Checks for obstructions that might prevent entity spawning.",
+              "dataType": 2
+            },
+            {
+              "id": "spawn_predicate",
+              "title": "Spawn Predicate",
+              "description": "Determines if an entity is valid to spawn based on specific conditions.",
+              "dataType": 2
+            },
+            {
+              "id": "type",
+              "title": "Type",
+              "description": "Specifies the environment where the entity can spawn (e.g., on ground, in water, etc.).",
+              "dataType": 2
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -7,7 +7,7 @@
     "fields": [
       {
         "id": "liquid_y_offset",
-        "title": "Liquid Y Offset",
+        "title": "Liquid y Offset",
         "description": "Target distance down from the liquid surface. i.e. Positive values move the target Y down.",
         "defaultValue": 0,
         "dataType": 3,

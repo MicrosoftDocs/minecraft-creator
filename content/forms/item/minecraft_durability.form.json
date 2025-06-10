@@ -232,8 +232,8 @@
         "description": "Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value.",
         "dataType": 16,
         "subForm": {
-          "id": "_IntRange",
-          "title": "IntRange",
+          "id": "",
+          "title": "",
           "fields": [
             {
               "id": "max",

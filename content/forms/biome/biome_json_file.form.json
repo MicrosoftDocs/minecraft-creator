@@ -49,10 +49,6 @@
                           "alternates": [
                             {
                               "id": "beach_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "beach_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -93,10 +89,6 @@
                           "dataType": 24,
                           "minLength": 1,
                           "alternates": [
-                            {
-                              "id": "ceiling_materials",
-                              "dataType": 24
-                            },
                             {
                               "id": "ceiling_materials",
                               "dataType": 16,
@@ -141,10 +133,6 @@
                           "alternates": [
                             {
                               "id": "floor_materials",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "floor_materials",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -186,10 +174,6 @@
                           "alternates": [
                             {
                               "id": "foundation_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "foundation_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -229,10 +213,6 @@
                           "description": "Material used to replace air blocks below sea level.",
                           "dataType": 24,
                           "alternates": [
-                            {
-                              "id": "sea_material",
-                              "dataType": 24
-                            },
                             {
                               "id": "sea_material",
                               "dataType": 16,
@@ -371,10 +351,6 @@
                           "alternates": [
                             {
                               "id": "foundation_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "foundation_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -414,10 +390,6 @@
                           "description": "Controls the block type used in a layer below the surface of this biome",
                           "dataType": 24,
                           "alternates": [
-                            {
-                              "id": "mid_material",
-                              "dataType": 24
-                            },
                             {
                               "id": "mid_material",
                               "dataType": 16,
@@ -467,10 +439,6 @@
                           "alternates": [
                             {
                               "id": "sea_floor_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "sea_floor_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -512,10 +480,6 @@
                           "alternates": [
                             {
                               "id": "sea_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "sea_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -555,10 +519,6 @@
                           "description": "Controls the block type used for the surface of this biome",
                           "dataType": 24,
                           "alternates": [
-                            {
-                              "id": "top_material",
-                              "dataType": 24
-                            },
                             {
                               "id": "top_material",
                               "dataType": 16,
@@ -621,10 +581,6 @@
                           "alternates": [
                             {
                               "id": "clay_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "clay_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -666,10 +622,6 @@
                           "alternates": [
                             {
                               "id": "foundation_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "foundation_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -709,10 +661,6 @@
                           "description": "Hardened clay block to use",
                           "dataType": 24,
                           "alternates": [
-                            {
-                              "id": "hard_clay_material",
-                              "dataType": 24
-                            },
                             {
                               "id": "hard_clay_material",
                               "dataType": 16,
@@ -762,10 +710,6 @@
                           "alternates": [
                             {
                               "id": "mid_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "mid_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -813,10 +757,6 @@
                           "alternates": [
                             {
                               "id": "sea_floor_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "sea_floor_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -858,10 +798,6 @@
                           "alternates": [
                             {
                               "id": "sea_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "sea_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -901,10 +837,6 @@
                           "description": "Controls the block type used for the surface of this biome",
                           "dataType": 24,
                           "alternates": [
-                            {
-                              "id": "top_material",
-                              "dataType": 24
-                            },
                             {
                               "id": "top_material",
                               "dataType": 16,
@@ -975,10 +907,6 @@
                                 "description": "Block type use as steep material",
                                 "dataType": 24,
                                 "alternates": [
-                                  {
-                                    "id": "material",
-                                    "dataType": 24
-                                  },
                                   {
                                     "id": "material",
                                     "dataType": 16,
@@ -1264,14 +1192,9 @@
                                 "id": "targets",
                                 "title": "Targets",
                                 "description": "Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces.",
-                                "dataType": 24,
+                                "dataType": 2,
                                 "minLength": 1,
-                                "alternates": [
-                                  {
-                                    "id": "targets",
-                                    "dataType": 24
-                                  }
-                                ]
+                                "alternates": []
                               }
                             ]
                           }
@@ -1335,10 +1258,6 @@
                                       "alternates": [
                                         {
                                           "id": "foundation_material",
-                                          "dataType": 24
-                                        },
-                                        {
-                                          "id": "foundation_material",
                                           "dataType": 16,
                                           "readOnly": true,
                                           "subForm": {
@@ -1378,10 +1297,6 @@
                                       "description": "Controls the block type used in a layer below the surface of this biome when this adjustment is active.",
                                       "dataType": 24,
                                       "alternates": [
-                                        {
-                                          "id": "mid_material",
-                                          "dataType": 24
-                                        },
                                         {
                                           "id": "mid_material",
                                           "dataType": 16,
@@ -1425,10 +1340,6 @@
                                       "alternates": [
                                         {
                                           "id": "sea_floor_material",
-                                          "dataType": 24
-                                        },
-                                        {
-                                          "id": "sea_floor_material",
                                           "dataType": 16,
                                           "readOnly": true,
                                           "subForm": {
@@ -1470,10 +1381,6 @@
                                       "alternates": [
                                         {
                                           "id": "sea_material",
-                                          "dataType": 24
-                                        },
-                                        {
-                                          "id": "sea_material",
                                           "dataType": 16,
                                           "readOnly": true,
                                           "subForm": {
@@ -1513,10 +1420,6 @@
                                       "description": "Controls the block type used for the surface of this biome when this adjustment is active.",
                                       "dataType": 24,
                                       "alternates": [
-                                        {
-                                          "id": "top_material",
-                                          "dataType": 24
-                                        },
                                         {
                                           "id": "top_material",
                                           "dataType": 16,
@@ -1593,10 +1496,6 @@
                           "alternates": [
                             {
                               "id": "foundation_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "foundation_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -1636,10 +1535,6 @@
                           "description": "Controls the block type used in a layer below the surface of this biome.",
                           "dataType": 24,
                           "alternates": [
-                            {
-                              "id": "mid_material",
-                              "dataType": 24
-                            },
                             {
                               "id": "mid_material",
                               "dataType": 16,
@@ -1689,10 +1584,6 @@
                           "alternates": [
                             {
                               "id": "sea_floor_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "sea_floor_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -1734,10 +1625,6 @@
                           "alternates": [
                             {
                               "id": "sea_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "sea_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -1777,10 +1664,6 @@
                           "description": "Controls the block type used for the surface of this biome.",
                           "dataType": 24,
                           "alternates": [
-                            {
-                              "id": "top_material",
-                              "dataType": 24
-                            },
                             {
                               "id": "top_material",
                               "dataType": 16,
@@ -1837,10 +1720,6 @@
                           "alternates": [
                             {
                               "id": "foundation_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "foundation_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -1880,10 +1759,6 @@
                           "description": "Controls the block type used in a layer below the surface of this biome.",
                           "dataType": 24,
                           "alternates": [
-                            {
-                              "id": "mid_material",
-                              "dataType": 24
-                            },
                             {
                               "id": "mid_material",
                               "dataType": 16,
@@ -1933,10 +1808,6 @@
                           "alternates": [
                             {
                               "id": "sea_floor_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "sea_floor_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -1978,10 +1849,6 @@
                           "alternates": [
                             {
                               "id": "sea_material",
-                              "dataType": 24
-                            },
-                            {
-                              "id": "sea_material",
                               "dataType": 16,
                               "readOnly": true,
                               "subForm": {
@@ -2021,10 +1888,6 @@
                           "description": "Controls the block type used for the surface of this biome.",
                           "dataType": 24,
                           "alternates": [
-                            {
-                              "id": "top_material",
-                              "dataType": 24
-                            },
                             {
                               "id": "top_material",
                               "dataType": 16,
@@ -2109,7 +1972,7 @@
                     "validity": [
                       {
                         "comparison": "pattern",
-                        "value": "^[a-z0-9._%+-:]+$"
+                        "value": "^[a-z0-9._%+-]+:[a-z0-9._%+-]+$"
                       }
                     ]
                   }

@@ -19,11 +19,11 @@ Skin ID value. Can be used to differentiate skins, such as base skins for villag
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| value | 0 | Integer number | The ID of the skin. By convention, 0 is the ID of the base skin. | Villager V2: `1`, `2`, `3`, `4`, `5` | 
+| value | 0 | Integer number | The ID of the skin. By convention, 0 is the ID of the base skin. | Villager v2: `1`, `2`, `3`, `4`, `5` | 
 
 ## Samples
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 At /minecraft:entity/component_groups/villager_skin_0/minecraft:skin_id/: 
 

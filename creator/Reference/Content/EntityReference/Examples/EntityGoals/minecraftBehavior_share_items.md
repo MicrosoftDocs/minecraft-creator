@@ -16,7 +16,7 @@ Allows the mob to give items it has to others.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| entity_types | *not set* | Array of [Entity Types](#entity-types-item-type) items | List of entities this mob will share items with | Villager V2: `[{"filters":{"test":"is_family","subject":"other","value":"villager"}}]` | 
+| entity_types | *not set* | Array of [Entity Types](#entity-types-item-type) items | List of entities this mob will share items with | Villager v2: `[{"filters":{"test":"is_family","subject":"other","value":"villager"}}]` | 
 | goal_radius | 0.5 | Decimal number | Distance in blocks within the mob considers it has reached the goal. This is the "wiggle room" to stop the AI from bouncing back and forth trying to reach a specific spot |  | 
 | max_dist | 0 | Decimal number | Maximum distance in blocks this mob will look for entities to share items with |  | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. |  | 
@@ -41,7 +41,7 @@ List of entities this mob will share items with.
 
 ## Samples
 
-#### [Villager V2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 
 ```json

@@ -16,8 +16,8 @@
         "description": "The Jigsaw metadata registry.",
         "dataType": 16,
         "subForm": {
-          "id": "_v1_21_80_JigsawureMetadataRegistry",
-          "title": "V1 21 80 JigsawStructureMetadataRegistry",
+          "id": "Jigsaw ure Metadata Registry",
+          "title": "Jigsaw Structure Metadata Registry",
           "fields": [
             {
               "id": "metadata",
