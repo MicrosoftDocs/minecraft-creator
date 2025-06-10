@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Advanced Block Visuals
 description: "Advanced Tutorial about Customizing Block Sizes"
 ms.service: minecraft-bedrock-edition
+ms.date: 06/10/2025
 ---
 
 # Advanced Block Visuals: Sizing and Culling
@@ -204,7 +205,8 @@ Now start dropping those beautiful 'brellas!
 
 :::image type="content" source="Media/CustomOversized/Picture8.png" alt-text="A screenshot of multiple beach chairs and giant umbrellas in Minecraft: Bedrock Edition.":::
 
-[!Note] With blocks larger than the 16x16x16 pixel base cube, the parts of the block that are outside of that 16x16x16 range will overlap with other blocks. Be aware of this when creating oversized blocks to assure you are achieving your desired look, especially if your oversized blocks will be placed near other blocks.
+> [!NOTE]
+> With blocks larger than the 16x16x16 pixel base cube, the parts of the block that are outside of that 16x16x16 range will overlap with other blocks. Be aware of this when creating oversized blocks to assure you are achieving your desired look, especially if your oversized blocks will be placed near other blocks.
 
 ## Custom Block Sample Packs
 

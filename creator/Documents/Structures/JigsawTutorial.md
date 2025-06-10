@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Working with Jigsaw Structures
 description: "A tutorial about using Jigsaw Blocks in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 06/10/2025
 ---
 
 # Working with Jigsaw Structures
@@ -33,7 +34,7 @@ If you want to follow the video exactly, you should know how to use scripts to d
 
 ## Jigsaw Behavior Pack
 
-[!NOTE]
+> [!NOTE]
 > There are a lot of "moving parts" to this feature, so here is a link to the [Jigsaw - Basic Dungeon sample pack](https://github.com/microsoft/minecraft-samples/tree/main/jigsaws/basic_dungeon) that goes along with the video, just in case you get lost along the way. This behavior pack is different from the starter ["Angry Cow" behavior pack](../BehaviorPack.md) mentioned in step 1.
 
 1. If you don't want to do everything from scratch, you can start with the [behavior_pack_sample](https://github.com/microsoft/minecraft-samples/tree/main/behavior_pack_sample) from the Minecraft samples on GitHub.
@@ -46,7 +47,7 @@ If you want to follow the video exactly, you should know how to use scripts to d
 
 ### Create the Structures for Jigsaw Purposes
 
-[!NOTE]
+> [!NOTE]
 > For your first structures, try building them with brightly colored or glowing blocks that will be easy to find.
 
 1. For the easiest creation experience, make another world in Minecraft: It should be creative mode, with no mobs, no weather, no daylight cycles, cheats toggled on, and the **Data-Driven Jigsaw Structures** experiment toggled on.
