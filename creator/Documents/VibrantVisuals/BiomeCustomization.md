@@ -3,18 +3,18 @@ author: iconicNurdle
 ms.author: mikeam
 title: Biome Customization
 ms.topic: tutorial
-description: "Biome Customization section of Deferred Lighting in Minecraft: Bedrock Edition."
+description: "Biome Customization with Vibrant Visuals in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
-ms.date: 05/14/2025
+ms.date: 05/23/2025
 ---
 
 # Biome Customization
 
-This page describes how to customize a variety of Deferred Lighting effects for different biomes available in Minecraft Bedrock Previews 1.21.90+.
+There are a lot of ways you can customize Vibrant Visuals effects for different biomes! This document goes over them, linking to more detailed documentation around the Minecraft Learning Portal.
 
-## Deferred lighting JSONs
+## Vibrant Visuals JSONs
 
-Deferred Lighting resource packs support a variety of JSON files that allow Creators to customize things like the sun and moon color, the atmospheric properties of the sky, color grading, and more. Each grouping is documented on the following pages:
+Vibrant Visuals Resource packs support a variety of JSON files that allow Creators to customize things like the sun and moon color, the atmospheric properties of the sky, color grading, and more. Each grouping is documented on the following pages:
 
 - [Atmospherics](AtmosphericsCustomization.md)
 - [Color Grading](ColorGradingToneMappingCustomization.md)
@@ -25,7 +25,7 @@ Packs can provide multiple instances for each type of JSON as long as they have 
 
 ## Transitions between biomes
 
-In order to smoothly transition between different visual settings for different biomes, the game will automatically blend any customized settings in one of two ways: 
+In order to smoothly transition between different visual settings for different biomes, the game will automatically blend any customized settings in one of two ways:
 
 ### Spatial blend based on viewer location
 
@@ -49,31 +49,31 @@ For example, imagine a player standing on a cliff in a Stony Shore biome looking
 
 ## Limitations
 
-There are some parameters that can not be blended today:
+There are some parameters that cannot be blended today:
 
-- [Tone mapping operators](ColorGradingToneMappingCustomization.md#tone-mapping) can not be blended. All color grading and tone mapping schemas in a given pack should use the same tone mapping operator.
-- [Orbital offset degrees](LightingCustomization.md#directional-lights) can not be blended. All lighting schemas in a given pack should use the same orbital offset degree value.
-- [Caustics](WaterCustomization.md#caustics) can not be blended. All water schemas in a given pack should use the same caustics parameters.
-- [Waves enabled/disabled](WaterCustomization.md#waves) can not be blended. All water schemas in a given pack should use the same wave simulation bool.
+- [Tone mapping operators](ColorGradingToneMappingCustomization.md#tone-mapping) cannot be blended. All color grading and tone mapping schemas in a given pack should use the same tone mapping operator.
+- [Orbital offset degrees](LightingCustomization.md#directional-lights) cannot be blended. All lighting schemas in a given pack should use the same orbital offset degree value.
+- [Caustics](WaterCustomization.md#caustics) cannot be blended. All water schemas in a given pack should use the same caustics parameters.
+- [Waves enabled/disabled](WaterCustomization.md#waves) cannot be blended. All water schemas in a given pack should use the same wave simulation boolean.
 
 ## Example
 
 Assume a resource pack contains the following files that all contain valid schemas and unique identifiers:
 
-File|Identifier
---|--
-atmospherics/atmospherics.json|`my_pack:default_atmospherics`
-atmospherics/end.json|`my_pack:end_atmospherics`
-atmospherics/nether.json|`my_pack:nether_atmospherics`
-color_grading/color_grading.json|`my_pack:default_color_grading`
-color_grading/end.json|`my_pack:end_color_grading`
-color_grading/nether.json|`my_pack:nether_color_grading`
-lighting/global.json|`my_pack:default_lighting`
-lighting/end.json|`my_pack:end_lighting`
-lighting/nether.json|`my_pack:nether_lighting`
-water/water.json|`my_pack:default_water`
-water/ocean.json|`my_pack:ocean_water`
-water/deep_ocean.json|`my_pack:deep_ocean_water`
+| File                             | Identifier                      |
+|----------------------------------|---------------------------------|
+| atmospherics/atmospherics.json   | `my_pack:default_atmospherics`  |
+| atmospherics/end.json            | `my_pack:end_atmospherics`      |
+| atmospherics/nether.json         | `my_pack:nether_atmospherics`   |
+| color_grading/color_grading.json | `my_pack:default_color_grading` |
+| color_grading/end.json           | `my_pack:end_color_grading`     |
+| color_grading/nether.json        | `my_pack:nether_color_grading`  |
+| lighting/global.json             | `my_pack:default_lighting`      |
+| lighting/end.json                | `my_pack:end_lighting`          |
+| lighting/nether.json             | `my_pack:nether_lighting`       |
+| water/water.json                 | `my_pack:default_water`         |
+| water/ocean.json                 | `my_pack:ocean_water`           |
+| water/deep_ocean.json            | `my_pack:deep_ocean_water`      |
 
 Because the filenames are reserved to act as global/default values, the identifiers found in **atmospherics/atmospherics.json**, **color_grading/color_grading.json**, **lighting/global.json** and **water/water.json** will automatically be assigned to the `minecraft:atmosphere_identifier`, `minecraft:color_grading_identifier`, `minecraft:lighting_identifier` and `minecraft:water_identifier` biome components respectively unless a particular biome JSON specifies differently.
 

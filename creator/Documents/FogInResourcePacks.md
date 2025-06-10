@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-wamartin
+ms.author: mikeam
 title: Fog in Resource Packs
 description: "A guide detailing the way in which fogs are established in resource packs"
 ms.service: minecraft-bedrock-edition
@@ -28,7 +28,7 @@ It's recommended you complete [Introduction to Resource Packs](ResourcePack.md) 
 
 ### Example
 
-The Vanilla Resource Pack template (found [here](https://aka.ms/resourcepacktemplate)) contains all of the fog files used in the game. These files can serve as examples for creating your own fog definitions. A completed fog file will look similar to the following:
+The [Vanilla Resource Pack template](https://aka.ms/resourcepacktemplate) contains all of the fog files used in the game. These files can serve as examples for creating your own fog definitions. A completed fog file will look similar to the following:
 
 ```json
 {

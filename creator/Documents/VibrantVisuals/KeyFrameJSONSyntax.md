@@ -3,13 +3,14 @@ author: iconicNurdle
 ms.author: mikeam
 title: Key Frame JSON Syntax
 ms.topic: tutorial
-description: "Key Frame JSON Syntax section of Deferred Lighting in Minecraft: Bedrock Edition."
+description: "Key Frame JSON Syntax for Vibrant Visuals effects in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 05/28/2025
 ---
 
 # Key Frame JSON Syntax
 
-Sometimes, in order to make your world more dynamic, you will want to change a particular lighting parameter over time. To do this, you can take advantage of a new "key frame" syntax, which can be substituted for any value in the lighting JSON schemas annotated with "optkeyframe".
+Sometimes, in order to make your world more dynamic, you will want to change a particular lighting parameter over time. To do this, you can take advantage of a new "key frame" syntax, which can be substituted for any value in the lighting JSON schemas annotated with `optkeyframe`.
 
 Here's how it works:
 
@@ -41,16 +42,16 @@ Take this example of a **lighting/global.json** file:
             "color": "#ffffffff"
         }
     }
-} 
+}  
 ```
 
 While this illuminance parameter of 100,000 lux for our sun looks good at noon, it's far too bright during dawn and dusk. To address this, we can use key frames for the sun's illuminance parameter.
 
-Key frames are simply a collection of pairs of numbers. These pairs are referred to as "key-value" pairs, where the "key" is a number (0-1) representing a particular time of day in game, and the "value" represents whatever parameter is being key framed.
+Key frames are simply a collection of pairs of numbers. These pairs are referred to as **key-value pairs**, where the key is a number from 0 (noon) to 1 (the next noon, 24 hours later) representing a particular time of day in game, and the value represents whatever parameter is being key-framed.
 
-In our example using sun illuminance, the value would be of type "float". When key frames are provided for a supported lighting parameter instead of a single value, the engine will linearly interpolate between these key frames according to the time of day in game.
+In our example using sun illuminance, the value would be of type `float`. When key frames are provided for a supported lighting parameter instead of a single value, the engine linearly interpolates between the values of the key frames according to the time of day in game.
 
-With all of this in mind, we can adjust our lighting/global.json slightly to alter the sun's illuminance over time:
+With this in mind, we can adjust our **lighting/global.json** parameters to alter the sun's illuminance over time:
 
 ```json
 {

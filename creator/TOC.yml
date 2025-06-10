@@ -124,38 +124,36 @@
           href: Documents/ComprehensivePackContents.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md
-        - name: "Advanced Rendering: Deferred Lighting" 
+        - name: "Advanced Rendering: Vibrant Visuals"
           items:  
-          - name: Deferred Lighting Topics
-            href: Documents/DeferredLighting/index.yml
-          - name: Getting Started with Deferred Lighting
-            href: Documents/DeferredLighting/GettingStartedDeferredLighting.md
-          - name: PBR Resource Packs
-            href: Documents/DeferredLighting/PBRResourcePacks.md
-          - name: Enabling Deferred Technical Preview in Your World
-            href: Documents/DeferredLighting/EnablingDeferredTechnicalPreview.md
-          - name: Use Blockbench to Add Deferred Lighting Textures
-            href: Documents/DeferredLighting/UseBlockbenchToCreateModelsWithTextures.md
-          - name: Lighting Customization
-            href: Documents/DeferredLighting/LightingCustomization.md
-          - name: Atmospherics Customization
-            href: Documents/DeferredLighting/AtmosphericsCustomization.md
-          - name: Volumetric Fog and Light Shafts Customization
-            href: Documents/DeferredLighting/VolumetricFogLightShaftsCustomization.md
-          - name: Reflections Customization
-            href: Documents/DeferredLighting/ReflectionsCustomization.md
-          - name: Color Grading and Tone Mapping Customization
-            href: Documents/DeferredLighting/ColorGradingToneMappingCustomization.md
-          - name: Key Frame JSON Syntax
-            href: Documents/DeferredLighting/KeyFrameJSONSyntax.md
-          - name: Subsurface Scattering Customization
-            href: Documents/DeferredLighting/SubSurfaceScatteringCustomization.md
-          - name: Shadow Customization
-            href: Documents/DeferredLighting/ShadowsCustomization.md
-          - name: Water Customization
-            href: Documents/DeferredLighting/WaterCustomization.md
+          - name: Vibrant Visuals Topics
+            href: Documents/VibrantVisuals/index.yml
+          - name: Intro to Vibrant Visuals
+            href: Documents/VibrantVisuals/IntroVibrantVisuals.md
+          - name: Vibrant Visuals Resource Packs
+            href: Documents/VibrantVisuals/VVResourcePacks.md
+          - name: Overview of Physically Based Rendering
+            href: Documents/VibrantVisuals/PBROverview.md
+          - name: Creating Texture Maps
+            href: Documents/VibrantVisuals/UseBlockbenchToCreateModelsWithTextures.md
+          - name: Light Sources
+            href: Documents/VibrantVisuals/LightingCustomization.md
+          - name: Atmospheric Effects
+            href: Documents/VibrantVisuals/AtmosphericsCustomization.md
+          - name: Volumetric Fog and Light Shafts
+            href: Documents/VibrantVisuals/VolumetricFogLightShaftsCustomization.md
+          - name: Color Grading and Tone Mapping
+            href: Documents/VibrantVisuals/ColorGradingToneMappingCustomization.md
+          - name: Subsurface Scattering
+            href: Documents/VibrantVisuals/SubSurfaceScatteringCustomization.md
+          - name: Shadows
+            href: Documents/VibrantVisuals/ShadowsCustomization.md
+          - name: Water Effects
+            href: Documents/VibrantVisuals/WaterCustomization.md
           - name: Per-Biome Customization
-            href: Documents/DeferredLighting/BiomeCustomization.md
+            href: Documents/VibrantVisuals/BiomeCustomization.md
+          - name: Key Frame JSON Syntax
+            href: Documents/VibrantVisuals/KeyFrameJSONSyntax.md
         - name: Packaging Content
           items:
           - name: Packaging a Skin Pack
