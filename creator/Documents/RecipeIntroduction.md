@@ -30,7 +30,7 @@ Players use [Shaped Recipes](./../Reference/Content/RecipeReference/Examples/Rec
 
 ### Furnace Recipes
 
-These are recipes that require a furnace to generate the output assigned to them. When players place the correct item(s) into the furnace (the ones you define as an `input`in the table's JSON), they transform into the corresponding `output` assigned in the table. Check out the [furnace reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Furnace.md) for examples and a more detailed explanation of furnace recipe tables. 
+These are recipes that require a furnace to generate the output assigned to them. When players place the correct item(s) into the furnace (the ones you define as an `input` in the table's JSON), they transform into the corresponding `output` assigned in the table. Check out the [furnace reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Furnace.md) for examples and a more detailed explanation of furnace recipe tables. 
 
 > [!Tip]
 > Furnace recipes use the `input`, `output`, and `tags` parameters.
