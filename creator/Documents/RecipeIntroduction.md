@@ -13,6 +13,30 @@ Recipes in Minecraft are very similar to recipes in real life. You gather a vari
 
 In this article, we'll look at the basic components of a recipe and go over the different recipe types to help you get started.
 
+## Recipe Parameters
+
+Recipe parameters are the building blocks that make up the recipe. To continue the analogy from earlier &mdash; these are our ingredients! While all recipes have parameters, not all recipes share the SAME parameters.
+
+| Name | Description | Type(s) |
+|--------------|-----------|------------|
+|Input | Defines the items used to create a recipe|Furnace; Potion|
+|Output| Defines the item a certain recipe creates| Furnace; Potion|
+|Tags | Define items that can be used to create a recipe |All |
+|Pattern |Represents the item and pattern configuration required to produce the result you assign |Shaped |
+|Key |Assigns a Minecraft item to the key(s) you used in the pattern |Shaped |
+|Priority |Sets the priority level of a recipe (lower numbers represent a higher priority) |Shaped; Shapeless |
+|Result |When input items match the pattern, these items are the result |Shaped; Shapeless; Smithing Transform |
+|Ingredients |Define the items required to complete a recipe (regardless of their orientation in the table)|Shapeless |
+|Reagent |Defines the items combined with a potion in a brewing container recipe| Potion |
+|Addition |Defines the items used to perform the transformation |Smithing Transform |
+|Base |Defines the item that will be transformed |Smithing Transform |
+
+
+## Recipe Tags
+
+Recipe tags let you group simlilar elements together. For example, you can combine different types of wood stairs to construct a recipe that can adapt to a variety of parameters. See [this article](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/TagsRecipeInput.md) for more information on recipe tags.
+
+
 ## Recipe Types
 
 ### Shaped vs. Shapeless Recipes
@@ -27,62 +51,69 @@ Players use [Shaped Recipes](./../Reference/Content/RecipeReference/Examples/Rec
 > [!Tip]
 > Shapeless recipes use `ingredients`, `priority`, `result`, and `tags` parameters.
 
+#### Parameters
+
+| Name | Description | Type(s) |
+|--------------|-----------|------------|
+|Tags | Define items that can be used to create a recipe |Both |
+|Pattern |Represents the item and pattern configuration required to produce the result you assign |Shaped |
+|Key |Assigns a Minecraft item to the key(s) you used in the pattern |Shaped |
+|Ingredients |Define the items required to complete a recipe (regardless of their orientation in the table)|Shapeless |
+|Priority |Sets the priority level of a recipe (lower numbers represent a higher priority) | Both |
+|Result |When input items match the pattern, these items are the result | Both |
 
 ### Furnace Recipes
 
 These are recipes that require a furnace to generate the output assigned to them. When players place the correct item(s) into the furnace (the ones you define as an `input` in the table's JSON), they transform into the corresponding `output` assigned in the table. Check out the [furnace reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Furnace.md) for examples and a more detailed explanation of furnace recipe tables. 
 
-> [!Tip]
-> Furnace recipes use the `input`, `output`, and `tags` parameters.
+#### Parameters
+| Name | Description |
+|--------------|-----------|
+|Tags | Define items that can be used to create a recipe |
+|Input | Defines the items used to create a recipe|
+|Output| Defines the item a certain recipe creates|
 
 
 ### Potion Brewing Recipes
 
 Potions require players to use both a potion brewing mix and a potion brewing container, which is created at a potion brewing station. As a creator, you can use  [resource](./ResourcePack.md) and [behavior packs](./BehaviorPack.md) to tweak the parameters for these potions, stations, and containers. Check out our [potion brewing mix reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_PotionBrewingMix.md) for examples and a more detailed explanation of potion brewing tables. 
 
-> [!Tip]
-> Potion brewing mixes use the `input`, `output`, `reagent`, and `tags` parameters.
+
+#### Parameters
+| Name | Description |
+|--------------|-----------|
+|Tags | Define items that can be used to create a recipe |
+|Input | Defines the items used to create a recipe|
+|Reagent |Defines the items combined with a potion in a brewing container recipe|
+|Output| Defines the item a certain recipe creates|
+
 
 ### Smithing Transform Recipes
 
 Players use Smithing Transform recipes at a smithing table to retain an item's properties while transforming it into another item.  Check out our [reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_SmithingTransform.md) for examples and a more detailed explanation of smithing transform recipes.
 
+#### Parameters
+
+| Name | Description |
+|--------------|-----------|
+|Base | Defines the item that will be transformed |
+|Addition | Defines the items used to perform the transformation |
+|Result | When input items match the pattern, these items are the result |
 
 ### Smithing Trim Recipes
 
 Players use Smithing Trim recipes at a smithing table to add a color trim to an item while retaining the item's properties. Check out our [smithing trim reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_SmithingTrim.md) for examples and a more detailed explanation of smithing trim recipes.
 
-## Recipe Parameters
-
-Recipe parameters are the building blocks that make up the recipe. To continue the analogy from earlier &mdash; these are our ingredients! While all recipes have parameters, not all recipes share the SAME parameters.
-
-| Name | Description | Type(s) |
-|--------------|-----------|------------|
-|Input | Defines the items used to create a recipe|Furnace; Potion|
-|Output| Defines the item a certain recipe creates| Furnace; Potion|
-|Tags | Define items that can be used to create a recipe. For example, 'crafting_table' for a shaped recipe, or 'stonecutter' for a shapeless recipe.|All |
-|Key |Pattern key character mapped to item names |Shaped |
-|Pattern |Characters that represent a pattern to be defined by keys |Shaped |
-|Priority |Sets the priority level of a recipe. Lower numbers represent a higher priority. |Shaped; Shapeless |
-|Result |When input items match the pattern, these items are the result |Shaped; Shapeless; Smithing Transform |
-|Ingredients |Define the items required to complete a recipe (regardless of their orientation in the table)|Shapeless |
-|Reagent |Defines the items combined with a potion in a brewing container recipe| Potion |
-|Addition |Defines the items used to perform the transformation |Smithing Transform |
-|Base |Defines the item that will be transformed |Smithing Transform |
-
-## Recipe Tags
-
-Recipe tags let you group simlilar elements together. For example, you can combine different types of wood stairs to construct a recipe that can adapt to a variety of parameters. See [this article](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/TagsRecipeInput.md) for more information on recipe tags.
 
 ## Recipe Unlocking
 
-As of v1.20.10, players can "unlock" recipes ranging from very basic starters (like a wooden pickaxe) to some of the most sophisticated items Minecraft has to offer (like diamond ore or enchanted golden apples)! As part of the item and recipe design process, you can define the requirements for unlocking an item with the `unlock` element in your recipe JSON.
+As of v1.20.10, players can "unlock" recipes ranging from basic starters (like a wooden pickaxe) to some of the most sophisticated items Minecraft has to offer (like diamond ore or enchanted golden apples)! As part of the item and recipe design process, you can define the requirements for unlocking an item with the `unlock` element in your recipe JSON.
 
 > [!Tip]
 > You can choose an unlock strategy for a recipe based on either the discovery of an item or a specific in-world context.
 
 
-### Recipe Examples
+### Unlocking Examples
 
 - An `item` specifies the item to unlock. Optionally you can add a `data` tag to filter down to a specific type of item.
 
