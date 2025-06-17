@@ -4,6 +4,8 @@
       href: index.yml
     - name: "Updates and News"
       items:
+        - name: 1.21.90 Update Summary
+          href: Documents/Update1.21.90.md 
         - name: 1.21.80 Update Summary
           href: Documents/Update1.21.80.md 
         - name: 1.21.70 Update Summary
