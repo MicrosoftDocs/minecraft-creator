@@ -4,7 +4,7 @@ ms.author: v-cwilkerson
 title: Introduction to Recipes
 description: "A reference document discussing the basics of recipes for creators"
 ms.service: minecraft-bedrock-edition
-ms.date: 06/12/2025
+ms.date: 06/18/2025
 ---
 
 # Recipe Introduction
@@ -41,15 +41,12 @@ Recipe tags let you group simlilar elements together. For example, you can combi
 
 ### Shaped vs. Shapeless Recipes
 
-Players use [Shaped Recipes](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Shaped.md) at a crafting table, and must place recipe components in a *dedicated pattern* to generate the output assigned to them. As a creator, you can use [resource](./ResourcePack.md) and [behavior packs](./BehaviorPack.md) to tweak pattern assignments and output parameters to make them perfect for your world.
+Players use [Shaped Recipes](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Shaped.md) at a crafting table, and must place recipe [components](./../Documents/CustomComponents.md) in a dedicated pattern to generate the output assigned to them. As a creator, you can use [resource](./ResourcePack.md) and [behavior packs](./BehaviorPack.md) to tweak pattern assignments and output parameters to make them perfect for your world.
 
-> [!Tip]
-> Shaped recipes use `key`, `pattern`, `priority`, `result`, and `tags` parameters.
+> [!Note]
+> The maximum recipe size supported is 3x3, so anything after the third character in a pattern is ignored.
 
 [Shapeless recipes](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md) are any recipes that don't require a dedicated pattern to generate the output assigned to them. As a creator, you can also leverage resource and behavior packs to edit and create new shapeless recipes, but the parameters used differ slightly.
-
-> [!Tip]
-> Shapeless recipes use `ingredients`, `priority`, `result`, and `tags` parameters.
 
 #### Parameters
 
