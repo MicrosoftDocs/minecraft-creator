@@ -34,7 +34,7 @@ Recipe parameters are the building blocks that make up the recipe. To continue t
 
 ## Recipe Tags
 
-Recipe tags let you group simlilar elements together. For example, you can combine different types of wood stairs to construct a recipe that can adapt to a variety of parameters. See [this article](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/TagsRecipeInput.md) for more information on recipe tags.
+Recipe tags let you group similar elements together. For example, you can combine different types of wood stairs to construct a recipe that can adapt to a variety of parameters. See [this article](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/TagsRecipeInput.md) for more information on recipe tags.
 
 
 ## Recipe Types
