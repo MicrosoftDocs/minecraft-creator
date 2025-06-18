@@ -48,7 +48,6 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
-#### Added *[`BlockDestructionParticlesComponent`](BlockDestructionParticlesComponent.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*

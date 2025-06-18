@@ -10,11 +10,27 @@ description: Contents of the @minecraft/server-editor.EditorStructureManager cla
 # EditorStructureManager Class
 
 ## Methods
+- [createEmpty](#createempty)
 - [createFromClipboardItem](#createfromclipboarditem)
+- [deleteStructure](#deletestructure)
 - [getExistingTags](#getexistingtags)
-- [loadStructure](#loadstructure)
-- [saveStructure](#savestructure)
+- [getOrCreateStructure](#getorcreatestructure)
 - [searchStructures](#searchstructures)
+
+### **createEmpty**
+`
+createEmpty(id: string, size: minecraftserver.Vector3): EditorStructure
+`
+
+#### **Parameters**
+- **id**: *string*
+- **size**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+**Returns** [*EditorStructure*](EditorStructure.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
 
 ### **createFromClipboardItem**
 `
@@ -31,6 +47,18 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
 
+### **deleteStructure**
+`
+deleteStructure(id: string): void
+`
+
+#### **Parameters**
+- **id**: *string*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+
 ### **getExistingTags**
 `
 getExistingTags(): string[]
@@ -42,28 +70,15 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
 
-### **loadStructure**
+### **getOrCreateStructure**
 `
-loadStructure(location: string, id: string): EditorStructure
+getOrCreateStructure(id: string): EditorStructure
 `
 
 #### **Parameters**
-- **location**: *string*
 - **id**: *string*
 
 **Returns** [*EditorStructure*](EditorStructure.md)
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-
-### **saveStructure**
-`
-saveStructure(structure: EditorStructure): void
-`
-
-#### **Parameters**
-- **structure**: [*EditorStructure*](EditorStructure.md)
   
 Notes:
 - This function can't be called in read-only mode.

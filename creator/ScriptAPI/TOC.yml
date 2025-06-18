@@ -212,8 +212,6 @@
       href: minecraft/server/BlockComponentTickEvent.md
     - name: BlockCustomComponentInstance
       href: minecraft/server/BlockCustomComponentInstance.md
-    - name: BlockDestructionParticlesComponent
-      href: minecraft/server/BlockDestructionParticlesComponent.md
     - name: BlockEvent
       href: minecraft/server/BlockEvent.md
     - name: BlockExplodeAfterEvent
@@ -1066,6 +1064,8 @@
       href: minecraft/server-editor/SplineType.md
     - name: StatusBarAlignment
       href: minecraft/server-editor/StatusBarAlignment.md
+    - name: StructureSource
+      href: minecraft/server-editor/StructureSource.md
     - name: ThemeSettingsColorKey
       href: minecraft/server-editor/ThemeSettingsColorKey.md
     - name: WidgetComponentType
@@ -1124,6 +1124,8 @@
       href: minecraft/server-editor/CylinderBrushShape.md
     - name: EditorConstants
       href: minecraft/server-editor/EditorConstants.md
+    - name: EditorStructure
+      href: minecraft/server-editor/EditorStructure.md
     - name: EditorStructureManager
       href: minecraft/server-editor/EditorStructureManager.md
     - name: EllipsoidBrushShape
@@ -1256,8 +1258,6 @@
       href: minecraft/server-editor/CursorProperties.md
     - name: CursorRay
       href: minecraft/server-editor/CursorRay.md
-    - name: EditorStructure
-      href: minecraft/server-editor/EditorStructure.md
     - name: EditorStructureSearchOptions
       href: minecraft/server-editor/EditorStructureSearchOptions.md
     - name: EventSink

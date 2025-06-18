@@ -283,6 +283,8 @@ Entity is born wild
 - `minecraft:entity_spawned`
 Entity has spawned
 - `minecraft:entity_spawned_by_creaking_heart`
+- `minecraft:entity_spawned_with_biome_specific_jockey`
+- `minecraft:entity_spawned_with_default_jockey`
 - `minecraft:entity_transformed`
 Entity is transformed
 - `minecraft:exited_bubble_column`
@@ -625,6 +627,7 @@ Entity turns white
 - `minecraft:turn_yellow`
 Entity turns yellow
 - `minecraft:unroll`
+- `minecraft:upgrade_to_1_21_100`
 - `minecraft:warm_color`
 - `navigation_off_land`
 Entity navigates off land

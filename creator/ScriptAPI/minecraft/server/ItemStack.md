@@ -46,7 +46,7 @@ Notes:
 ### **localizationKey**
 `read-only localizationKey: string;`
 
-key for the localization of this items's name used in .lang files.
+Key for the localization of this items's name used in .lang files.
 
 Type: *string*
 
