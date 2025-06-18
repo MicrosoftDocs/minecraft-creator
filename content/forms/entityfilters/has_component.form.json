@@ -220,6 +220,20 @@
               "content": "minecraft:skin_id"
             }
           ],
+          "/vanilla/behavior_pack/entities/wolf.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+              "content": "minecraft:is_tamed"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/all_of/2/",
+              "content": "minecraft:is_tamed"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_100/sequence/0/filters/",
+              "content": "minecraft:angry"
+            }
+          ],
           "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
             {
               "path": "/minecraft:entity/components/minecraft:interact/interactions/on_interact/filters/all_of/1/",
@@ -534,6 +548,38 @@
             "subject": "other",
             "operator": "!=",
             "value": "minecraft:is_baby"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/all_of/1/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_tamed"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/all_of/1/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:is_baby"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/all_of/2/",
+          "content": {
+            "test": "has_component",
+            "value": "minecraft:is_tamed"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:upgrade_to_1_21_100/sequence/0/filters/",
+          "content": {
+            "test": "has_component",
+            "operator": "!=",
+            "value": "minecraft:angry"
           }
         }
       ],

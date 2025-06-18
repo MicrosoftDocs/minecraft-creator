@@ -16,7 +16,7 @@ Returns true when the bool actor property matches the value provided.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| domain | *not set* | String | (Required) The property name to look for | Bee: `"minecraft:has_nectar"`, Happy Ghast: `"minecraft:can_move"` | 
+| domain | *not set* | String | (Required) The property name to look for | Bee: `"minecraft:has_nectar"`, Happy Ghast: `"minecraft:can_move"`, Wolf: `"minecraft:has_increased_max_health"`, `"minecraft:is_armorable"`, `"minecraft:was_upgraded_to_1_21_100"` | 
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Bee: `"!="` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Bee: `"bool_property"` | 
@@ -113,5 +113,37 @@ At /minecraft:entity/events/minecraft:become_mobile/filters/:
   "test": "bool_property",
   "domain": "minecraft:can_move",
   "value": false
+}
+```
+
+#### [Wolf](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/wolf.json)
+
+At /minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/all_of/0/: 
+
+```json
+{
+  "test": "bool_property",
+  "operator": "!=",
+  "domain": "minecraft:has_increased_max_health"
+}
+```
+
+At /minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/all_of/0/: 
+
+```json
+{
+  "test": "bool_property",
+  "operator": "!=",
+  "domain": "minecraft:is_armorable"
+}
+```
+
+At /minecraft:entity/components/minecraft:environment_sensor/triggers/2/filters/: 
+
+```json
+{
+  "test": "bool_property",
+  "operator": "!=",
+  "domain": "minecraft:was_upgraded_to_1_21_100"
 }
 ```

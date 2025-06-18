@@ -21,7 +21,7 @@ Sets how much damage the item can take before breaking, and allows the item to b
 
 ## Damage Chance item type
 
-#### Damage Chance Properties
+#### IntRange Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

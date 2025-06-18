@@ -1,0 +1,28 @@
+{
+  "id": "Capped",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Capped",
+    "title": "Capped World",
+    "description": "Processor that wraps a processor and caps the number of times the delegated processor can be applied.",
+    "fields": [
+      {
+        "id": "delegate",
+        "title": "Delegate",
+        "description": "The processor that will be executed.",
+        "dataType": 16
+      },
+      {
+        "id": "limit",
+        "title": "Limit",
+        "description": "The maximum number of times that this delegate can be applied.",
+        "dataType": 16
+      },
+      {
+        "id": "processor_type",
+        "title": "Jigsaw Processro Type",
+        "dataType": 2
+      }
+    ]
+  }
+}

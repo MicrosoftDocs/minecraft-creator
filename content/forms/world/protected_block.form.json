@@ -1,0 +1,22 @@
+{
+  "id": "Protected Block",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Protected Block",
+    "title": "Protected Block World",
+    "description": "Protect blocks from this structure's placement in the world. Ensuring that it does not replace matching blocks in the world",
+    "fields": [
+      {
+        "id": "processor_type",
+        "title": "Jigsaw Processro Type",
+        "dataType": 2
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "Block tag for the blocks that will be protected",
+        "dataType": 2
+      }
+    ]
+  }
+}

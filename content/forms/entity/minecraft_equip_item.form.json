@@ -32,6 +32,11 @@
             }
           ]
         }
+      },
+      {
+        "id": "can_wear_armor",
+        "title": "Can Wear Armor",
+        "dataType": 2
       }
     ],
     "samples": {
@@ -68,7 +73,9 @@
       "/vanilla/behavior_pack/entities/fox.json": [
         {
           "path": "/minecraft:entity/components/minecraft:equip_item/",
-          "content": {}
+          "content": {
+            "can_wear_armor": false
+          }
         }
       ],
       "/vanilla/behavior_pack/entities/husk.json": [

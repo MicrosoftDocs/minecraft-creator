@@ -1,0 +1,16 @@
+{
+  "id": "AlwaysTruePos",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "AlwaysTruePos",
+    "title": "AlwaysTruePos World",
+    "description": "Predicate that always evaluates to true. This is the default predicate if no other predicate is specified.",
+    "fields": [
+      {
+        "id": "predicate_type",
+        "title": "PosType",
+        "dataType": 2
+      }
+    ]
+  }
+}

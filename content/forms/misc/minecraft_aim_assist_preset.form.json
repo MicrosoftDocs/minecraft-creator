@@ -16,8 +16,8 @@
         "description": "A single Camera Aim-Assist Preset Definition.",
         "dataType": 16,
         "subForm": {
-          "id": "",
-          "title": "",
+          "id": "CameraAimAssistPresetDefinition",
+          "title": "CameraAimAssistPresetDefinition",
           "fields": [
             {
               "id": "default_item_settings",

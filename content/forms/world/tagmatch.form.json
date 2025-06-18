@@ -1,0 +1,22 @@
+{
+  "id": "TagMatch",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "TagMatch",
+    "title": "TagMatch World",
+    "description": "Predicate that evaluates to true if the block at the specified location constains the tag.",
+    "fields": [
+      {
+        "id": "predicate_type",
+        "title": "BlockType",
+        "dataType": 2
+      },
+      {
+        "id": "tag",
+        "title": "Tag",
+        "description": "The tag to be matched",
+        "dataType": 2
+      }
+    ]
+  }
+}

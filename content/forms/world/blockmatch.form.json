@@ -1,0 +1,23 @@
+{
+  "id": "BlockMatch",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "BlockMatch",
+    "title": "BlockMatch World",
+    "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",
+    "fields": [
+      {
+        "id": "block",
+        "title": "Block",
+        "description": "The block to match against.",
+        "dataType": 2,
+        "alternates": []
+      },
+      {
+        "id": "predicate_type",
+        "title": "BlockType",
+        "dataType": 2
+      }
+    ]
+  }
+}

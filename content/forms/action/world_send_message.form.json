@@ -1,0 +1,12 @@
+{
+  "id": "world_send_message",
+  "title": "Send Message",
+  "tags": ["script", "action"],
+  "fields": [
+    {
+      "id": "message",
+      "title": "Message",
+      "dataType": 2
+    }
+  ]
+}

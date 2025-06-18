@@ -37,13 +37,13 @@
       },
       {
         "id": "particle_type",
-        "title": "Particle Type",
+        "title": "ParticleType",
         "description": "Particle effect to emit when the threshold is met.",
         "dataType": 2
       },
       {
         "id": "sound_event",
-        "title": "Sound Event",
+        "title": "LevelSoundEvent",
         "description": "Sound effect to emit when the threshold is met.",
         "dataType": 2
       }

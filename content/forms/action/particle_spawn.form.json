@@ -1,0 +1,20 @@
+{
+  "id": "particle_spawn",
+  "title": "Spawn Particle",
+  "tags": ["script", "action"],
+  "fields": [
+    {
+      "id": "location",
+      "title": "Location Offset",
+      "dataType": 41,
+      "priority": 10
+    },
+    {
+      "id": "particleName",
+      "title": "Particle to place",
+      "dataType": 2,
+      "isRequired": true,
+      "priority": 1
+    }
+  ]
+}

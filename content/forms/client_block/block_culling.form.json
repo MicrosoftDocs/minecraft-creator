@@ -9,8 +9,8 @@
         "title": "Description",
         "dataType": 16,
         "subForm": {
-          "id": "",
-          "title": "",
+          "id": "Description",
+          "title": "Description",
           "fields": [
             {
               "id": "identifier",
@@ -25,12 +25,12 @@
         "title": "Rules",
         "dataType": 15,
         "subForm": {
-          "id": "",
-          "title": "",
+          "id": "Rule",
+          "title": "Rule",
           "fields": [
             {
               "id": "condition",
-              "title": "Condition",
+              "title": "Rule Condition",
               "dataType": 2
             },
             {
@@ -40,7 +40,7 @@
             },
             {
               "id": "direction",
-              "title": "Direction",
+              "title": "Facing",
               "dataType": 2
             },
             {
@@ -48,8 +48,8 @@
               "title": "Geometry Part",
               "dataType": 16,
               "subForm": {
-                "id": "",
-                "title": "",
+                "id": "Rule Geometry Part",
+                "title": "Rule Geometry Part",
                 "fields": [
                   {
                     "id": "bone",
@@ -63,7 +63,7 @@
                   },
                   {
                     "id": "face",
-                    "title": "Face",
+                    "title": "Facing",
                     "dataType": 2
                   }
                 ]

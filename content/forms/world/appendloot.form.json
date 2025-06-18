@@ -1,0 +1,22 @@
+{
+  "id": "AppendLoot",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "AppendLoot",
+    "title": "AppendLoot World",
+    "description": "Modifier will attempt to add loot to a block entity.",
+    "fields": [
+      {
+        "id": "loot_table",
+        "title": "Loot Table",
+        "description": "The loot table to append",
+        "dataType": 16
+      },
+      {
+        "id": "type",
+        "title": "BlockEntityModifierType",
+        "dataType": 2
+      }
+    ]
+  }
+}

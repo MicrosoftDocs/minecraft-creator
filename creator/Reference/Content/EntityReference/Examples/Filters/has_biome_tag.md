@@ -19,7 +19,7 @@ Tests whether the biome the subject is in has the specified tag.
 | operator | equals | [Operator](#operator-choices) choices | (Optional) The comparison to apply with 'value'. | Villager v2: `"!="`, Wolf: `"not"` | 
 | subject | self | [Subject](#subject-choices) choices | (Optional) The subject of this filter test. |  | 
 | test | *not set* | String |  | Cave Spider: `"has_biome_tag"` | 
-| value | *not set* | String | (Required) The tag to look for | Cave Spider: `"nether"`, Chicken: `"spawns_warm_variant_farm_animals"`, `"spawns_cold_variant_farm_animals"` | 
+| value | *not set* | String | (Required) The tag to look for | Cave Spider: `"swamp"`, `"mangrove_swamp"`, `"nether"` | 
 
 ### Operator choices
 
@@ -64,6 +64,25 @@ At Short (using Defaults)..:
 
 #### [Cave Spider](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cave_spider.json)
 
+At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/: 
+
+```json
+{
+  "test": "has_biome_tag",
+  "value": "swamp"
+}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/: 
+
+```json
+{
+  "test": "has_biome_tag",
+  "value": "mangrove_swamp"
+}
+```
+
+At /minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/: 
 
 ```json
 {
@@ -155,24 +174,6 @@ At /minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/1
 {
   "test": "has_biome_tag",
   "value": "frozen"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/any_of/0/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "value": "swamp"
-}
-```
-
-At /minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/any_of/1/: 
-
-```json
-{
-  "test": "has_biome_tag",
-  "value": "mangrove_swamp"
 }
 ```
 

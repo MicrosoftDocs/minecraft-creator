@@ -1,0 +1,94 @@
+{
+  "id": "BlockRules",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "BlockRules",
+    "title": "BlockRules World",
+    "description": "Replaces and modifies blocks based on a series of rules",
+    "fields": [
+      {
+        "id": "processor_type",
+        "title": "Jigsaw Processro Type",
+        "dataType": 2
+      },
+      {
+        "id": "rules",
+        "title": "Rules",
+        "description": "List of block rules evaluated on all blocks of a Structure Template. Block rules are evaluated in order. If a block rule succeeds and the output_state is set, the output_state block will be used as the input_predicate block for subsequent rules.",
+        "dataType": 15,
+        "subForm": {
+          "id": "Processor Rule",
+          "title": "Processor Rule",
+          "description": "A block rule that is evaluated on all blocks of a Structure Template. All predicates must evaluate to true in order for a block to be replaced by the output_state.",
+          "fields": [
+            {
+              "id": "block_entity_modifier",
+              "title": "Block Entity Modifier",
+              "description": "A block state modifier for block entities when all predicate match.",
+              "dataType": 16
+            },
+            {
+              "id": "input_predicate",
+              "title": "Input Predicate",
+              "description": "A predicate evaluated on the Structure Template block.",
+              "dataType": 16
+            },
+            {
+              "id": "location_predicate",
+              "title": "Location Predicate",
+              "description": "A predicate evaluated on the world block.",
+              "dataType": 16
+            },
+            {
+              "id": "output_state",
+              "title": "Output State",
+              "description": "Block to replace the world block with if all predicates evaluate to true.",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "output_state",
+                  "dataType": 16,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "output_state",
+                    "title": "Output State",
+                    "fields": [
+                      {
+                        "id": "name",
+                        "title": "Name",
+                        "description": "Name of the block",
+                        "dataType": 16
+                      },
+                      {
+                        "id": "states",
+                        "title": "States",
+                        "description": "Contains members named after each state, with boolean, integer, or string values.",
+                        "dataType": 31,
+                        "alternates": [
+                          {
+                            "id": "states",
+                            "dataType": 27
+                          },
+                          {
+                            "id": "states",
+                            "dataType": 24
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "position_predicate",
+              "title": "Position Predicate",
+              "description": "A predicate evaluated on the distance between the structure's world origin and the world block.",
+              "dataType": 16
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

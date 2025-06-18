@@ -1,0 +1,139 @@
+{
+  "id": "Image Editor",
+  "title": "Image Editor",
+  "fields": [
+    {
+      "id": "width",
+      "title": "Width",
+      "type": 0,
+      "priority": 1
+    },
+    {
+      "id": "height",
+      "title": "Height",
+      "type": 0,
+      "priority": 2
+    },
+    {
+      "id": "outputs",
+      "title": "Outputs",
+      "noun": "Output",
+      "dataType": 15,
+      "priority": 10,
+      "subForm": {
+        "id": "output",
+        "title": "Output",
+        "fields": [
+          {
+            "id": "name",
+            "title": "Name",
+            "description": "Name of the block",
+            "dataType": 2
+          },
+          {
+            "id": "type",
+            "title": "Type",
+            "description": "Type of fun thing you want to create from this image.",
+            "dataType": 9,
+            "mustMatchChoices": true,
+            "choices": [
+              {
+                "id": 1,
+                "title": "Block Texture"
+              },
+              {
+                "id": 2,
+                "title": "Item Texture"
+              },
+              {
+                "id": 3,
+                "title": "Painting"
+              },
+              {
+                "id": 11,
+                "title": "Block Billboard 3x3"
+              },
+              {
+                "id": 12,
+                "title": "Block Billboard 4x6"
+              },
+              {
+                "id": 13,
+                "title": "Block Billboard 5x8"
+              }
+            ]
+          },
+          {
+            "id": "paintingOverrideName",
+            "title": "Override Painting",
+            "priority": 50,
+            "visibility": [
+              {
+                "field": "type",
+                "comparison": "=",
+                "value": 3
+              }
+            ],
+            "mustMatchChoices": true,
+            "choices": [
+              {
+                "id": "backyard",
+                "title": "Backyard"
+              },
+              {
+                "id": "baroque",
+                "title": "Baroque"
+              },
+              {
+                "id": "bouquet",
+                "title": "Bouquet"
+              },
+              {
+                "id": "cavebird",
+                "title": "Cavebird"
+              },
+              {
+                "id": "changing",
+                "title": "Changing"
+              },
+              {
+                "id": "cotan",
+                "title": "Cotan"
+              },
+              {
+                "id": "meditative",
+                "title": "Meditative (one block)"
+              }
+            ]
+          },
+          {
+            "id": "paintingSize",
+            "title": "Painting Size",
+            "visibility": [
+              {
+                "field": "type",
+                "comparison": "=",
+                "value": 3
+              }
+            ],
+            "mustMatchChoices": true,
+            "choices": [
+              {
+                "id": 1,
+                "title": "One Block"
+              },
+              {
+                "id": 3,
+                "title": "Three By Three Blocks"
+              },
+              {
+                "id": 5,
+                "title": "Three By Four Portraitn"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

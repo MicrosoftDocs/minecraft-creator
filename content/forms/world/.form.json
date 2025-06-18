@@ -9,14 +9,14 @@
         "title": "Description",
         "dataType": 16,
         "subForm": {
-          "id": "",
-          "title": "",
+          "id": "Description",
+          "title": "Description",
           "fields": [
             {
               "id": "identifier",
               "title": "Identifier",
               "description": "Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates.",
-              "dataType": 2
+              "dataType": 16
             }
           ]
         }
@@ -27,8 +27,8 @@
         "description": "List of Structure Template and processor list pairs.",
         "dataType": 15,
         "subForm": {
-          "id": "",
-          "title": "",
+          "id": "TemplatePoolElement",
+          "title": "TemplatePoolElement",
           "fields": [
             {
               "id": "element",
@@ -59,7 +59,8 @@
         "id": "fallback",
         "title": "Fallback",
         "description": "Fallback template pool to use if no element in the pool can be placed successfully.",
-        "dataType": 2
+        "dataType": 2,
+        "alternates": []
       }
     ]
   }

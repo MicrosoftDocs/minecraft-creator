@@ -16,7 +16,8 @@
         "id": "target",
         "title": "Target",
         "description": "Target pool",
-        "dataType": 2
+        "dataType": 2,
+        "alternates": []
       }
     ]
   }

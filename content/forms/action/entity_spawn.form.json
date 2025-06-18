@@ -1,15 +1,21 @@
 {
+  "id": "entity_spawn",
   "title": "Spawn Entity",
+  "tags": ["script", "action"],
   "fields": [
     {
       "id": "location",
-      "title": "Location",
-      "dataType": 11
+      "title": "Location Offset",
+      "dataType": 41,
+      "priority": 10
     },
     {
       "id": "entityType",
       "title": "Entity Type",
-      "dataType": 2
+      "dataType": 2,
+      "isRequired": true,
+      "lookupId": "entityType",
+      "priority": 1
     }
   ]
 }

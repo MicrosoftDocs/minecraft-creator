@@ -311,6 +311,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "Documents/BedrockEditor/EditorDeferredLighting.md",
+      "redirect_url": "/minecraft/creator/documents/bedrockeditor/editorvibrantvisuals",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Documents/RTXPBRIntro.md",
       "redirect_url": "/minecraft/creator/documents/vibrantvisuals/pbroverview",
       "redirect_document_id": false

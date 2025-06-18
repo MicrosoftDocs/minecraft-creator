@@ -16,6 +16,7 @@ The entity puts on the desired equipment.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| can_wear_armor | *not set* | String |  |  | 
 | excluded_items | *not set* | Array of strings | List of items that the entity should not equip. | Bogged: `[{"item":"minecraft:banner:15"}]` | 
 
 ## Samples
@@ -38,4 +39,13 @@ The entity puts on the desired equipment.
 
 ```json
 "minecraft:equip_item": {}
+```
+
+#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
+
+
+```json
+"minecraft:equip_item": {
+  "can_wear_armor": false
+}
 ```

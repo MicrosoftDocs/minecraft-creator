@@ -208,6 +208,8 @@
   href: minecraftBehavior_pet_sleep_with_owner.md
 - name: minecraft:behavior.pickup_items
   href: minecraftBehavior_pickup_items.md
+- name: minecraft:behavior.place_block
+  href: minecraftBehavior_place_block.md
 - name: minecraft:behavior.play
   href: minecraftBehavior_play.md
 - name: minecraft:behavior.player_ride_tamed
@@ -318,6 +320,8 @@
   href: minecraftBehavior_swim_with_entity.md
 - name: minecraft:behavior.swoop_attack
   href: minecraftBehavior_swoop_attack.md
+- name: minecraft:behavior.take_block
+  href: minecraftBehavior_take_block.md
 - name: minecraft:behavior.take_flower
   href: minecraftBehavior_take_flower.md
 - name: minecraft:behavior.teleport_to_owner

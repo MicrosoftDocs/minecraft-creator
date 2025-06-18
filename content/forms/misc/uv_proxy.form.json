@@ -1,0 +1,194 @@
+{
+  "id": "UV Proxy",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "UV Proxy",
+    "title": "UV Proxy Misc",
+    "fields": [
+      {
+        "id": "flipbook",
+        "title": "Flipbook",
+        "dataType": 16,
+        "subForm": {
+          "id": "particle_appearance_billboard flipbook_data",
+          "title": "Particle Appearance Billboard Flipbook Data",
+          "fields": [
+            {
+              "id": "base_UV",
+              "title": "Base UV",
+              "dataType": 24,
+              "minLength": 2,
+              "maxLength": 2,
+              "alternates": [
+                {
+                  "id": "base_UV",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "base_UV",
+                    "title": "Base UV",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "base_UV",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "frames_per_second",
+              "title": "Frames Per Second",
+              "dataType": 3
+            },
+            {
+              "id": "loop",
+              "title": "Loop",
+              "dataType": 1
+            },
+            {
+              "id": "max_frame",
+              "title": "Max Frame",
+              "dataType": 24,
+              "alternates": [
+                {
+                  "id": "max_frame",
+                  "dataType": 14,
+                  "readOnly": true,
+                  "subForm": {
+                    "id": "max_frame",
+                    "title": "Max Frame",
+                    "fields": [
+                      {
+                        "id": "expression",
+                        "title": "Expression",
+                        "dataType": 2
+                      },
+                      {
+                        "id": "version",
+                        "title": "Version",
+                        "dataType": 0
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "max_frame",
+                  "dataType": 3
+                }
+              ]
+            },
+            {
+              "id": "size_UV",
+              "title": "Size UV",
+              "dataType": 32,
+              "minLength": 2,
+              "maxLength": 2
+            },
+            {
+              "id": "step_UV",
+              "title": "Step UV",
+              "dataType": 32,
+              "minLength": 2,
+              "maxLength": 2
+            },
+            {
+              "id": "stretch_to_lifetime",
+              "title": "Stretch To Lifetime",
+              "dataType": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "texture_height",
+        "title": "Texture Height",
+        "dataType": 0
+      },
+      {
+        "id": "texture_width",
+        "title": "Texture Width",
+        "dataType": 0
+      },
+      {
+        "id": "uv",
+        "title": "Uv",
+        "dataType": 24,
+        "minLength": 2,
+        "maxLength": 2,
+        "alternates": [
+          {
+            "id": "uv",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "uv",
+              "title": "Uv",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
+          {
+            "id": "uv",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "uv_size",
+        "title": "Uv Size",
+        "dataType": 24,
+        "minLength": 2,
+        "maxLength": 2,
+        "alternates": [
+          {
+            "id": "uv_size",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "uv_size",
+              "title": "Uv Size",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0
+                }
+              ]
+            }
+          },
+          {
+            "id": "uv_size",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}
