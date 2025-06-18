@@ -138,7 +138,15 @@
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/",
+              "content": "swamp"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/",
+              "content": "mangrove_swamp"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/",
               "content": "nether"
             }
           ],
@@ -164,7 +172,15 @@
           ],
           "/vanilla/behavior_pack/entities/spider.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/",
+              "content": "swamp"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/",
+              "content": "mangrove_swamp"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/",
               "content": "nether"
             }
           ],
@@ -196,14 +212,6 @@
             {
               "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/5/filters/any_of/1/",
               "content": "frozen"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/any_of/0/",
-              "content": "swamp"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/6/filters/any_of/1/",
-              "content": "mangrove_swamp"
             },
             {
               "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/7/filters/all_of/0/any_of/0/",
@@ -240,14 +248,6 @@
             {
               "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/5/filters/any_of/1/",
               "content": "frozen"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/6/filters/any_of/0/",
-              "content": "swamp"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/6/filters/any_of/1/",
-              "content": "mangrove_swamp"
             },
             {
               "path": "/minecraft:entity/events/minecraft:spawn_from_village/sequence/7/filters/all_of/0/any_of/0/",
@@ -309,13 +309,11 @@
         "samples": {
           "/vanilla/behavior_pack/entities/cave_spider.json": [
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/",
               "content": "has_biome_tag"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/chicken.json": [
+            },
             {
-              "path": "/minecraft:entity/events/minecraft:entity_spawned/sequence/1/first_valid/0/filters/",
+              "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/",
               "content": "has_biome_tag"
             }
           ]
@@ -335,7 +333,21 @@
       ],
       "/vanilla/behavior_pack/entities/cave_spider.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "swamp"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "mangrove_swamp"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "nether"
@@ -408,7 +420,21 @@
       ],
       "/vanilla/behavior_pack/entities/spider.json": [
         {
-          "path": "/minecraft:entity/events/minecraft:entity_spawned/randomize/0/randomize/1/filters/",
+          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/0/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "swamp"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/1/filters/all_of/2/any_of/1/",
+          "content": {
+            "test": "has_biome_tag",
+            "value": "mangrove_swamp"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_spawned_with_biome_specific_jockey/first_valid/2/filters/",
           "content": {
             "test": "has_biome_tag",
             "value": "nether"

@@ -1,0 +1,16 @@
+{
+  "id": "Description",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Description",
+    "title": "Description World",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "description": "Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates.",
+        "dataType": 16
+      }
+    ]
+  }
+}

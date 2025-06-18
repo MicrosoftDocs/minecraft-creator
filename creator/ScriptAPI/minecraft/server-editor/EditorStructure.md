@@ -4,24 +4,102 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server-editor.EditorStructure Interface
+title: minecraft/server-editor.EditorStructure Class
 description: Contents of the @minecraft/server-editor.EditorStructure class.
 ---
-# EditorStructure Interface
+# EditorStructure Class
 
 ## Properties
 
-### **storageLocation**
-`storageLocation: string;`
+### **id**
+`read-only id: string;`
 
 Type: *string*
 
-### **structure**
-`structure: minecraftserver.Structure;`
+### **isValid**
+`read-only isValid: boolean;`
 
-Type: [*@minecraft/server.Structure*](../../../scriptapi/minecraft/server/Structure.md)
+Type: *boolean*
 
-### **tags**
-`tags: string[];`
+### **size**
+`read-only size: minecraftserver.Vector3;`
 
-Type: *string*[]
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+## Methods
+- [getBlockPermutation](#getblockpermutation)
+- [getIsWaterlogged](#getiswaterlogged)
+- [getTags](#gettags)
+- [setBlockPermutation](#setblockpermutation)
+- [setTags](#settags)
+
+### **getBlockPermutation**
+`
+getBlockPermutation(location: minecraftserver.Vector3): minecraftserver.BlockPermutation | undefined
+`
+
+#### **Parameters**
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+**Returns** [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md) | *undefined*
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+### **getIsWaterlogged**
+`
+getIsWaterlogged(location: minecraftserver.Vector3): boolean
+`
+
+#### **Parameters**
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+**Returns** *boolean*
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+### **getTags**
+`
+getTags(): string[]
+`
+
+**Returns** *string*[]
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+### **setBlockPermutation**
+`
+setBlockPermutation(location: minecraftserver.Vector3, blockPermutation: minecraftserver.BlockPermutation, waterlogged?: boolean): void
+`
+
+#### **Parameters**
+- **location**: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+- **blockPermutation**: [*@minecraft/server.BlockPermutation*](../../../scriptapi/minecraft/server/BlockPermutation.md)
+- **waterlogged**?: *boolean* = `false`
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
+### **setTags**
+`
+setTags(tags: string[]): void
+`
+
+#### **Parameters**
+- **tags**: *string*[]
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)

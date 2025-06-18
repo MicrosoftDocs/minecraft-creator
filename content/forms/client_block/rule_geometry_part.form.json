@@ -1,0 +1,25 @@
+{
+  "id": "Rule Geometry Part",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Rule Geometry Part",
+    "title": "Rule Geometry Part Client Block",
+    "fields": [
+      {
+        "id": "bone",
+        "title": "Bone",
+        "dataType": 2
+      },
+      {
+        "id": "cube",
+        "title": "Cube",
+        "dataType": 0
+      },
+      {
+        "id": "face",
+        "title": "Facing",
+        "dataType": 2
+      }
+    ]
+  }
+}

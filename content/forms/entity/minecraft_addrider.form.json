@@ -43,6 +43,10 @@
               "content": "minecraft:stray"
             },
             {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
+              "content": "minecraft:bogged"
+            },
+            {
               "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
               "content": "minecraft:wither_skeleton"
             }
@@ -77,6 +81,10 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
               "content": "minecraft:stray"
+            },
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
+              "content": "minecraft:bogged"
             },
             {
               "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
@@ -147,6 +155,12 @@
           }
         },
         {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
+          "content": {
+            "entity_type": "minecraft:bogged"
+          }
+        },
+        {
           "path": "/minecraft:entity/component_groups/minecraft:spider_wither_jockey/minecraft:addrider/",
           "content": {
             "entity_type": "minecraft:wither_skeleton"
@@ -206,6 +220,12 @@
           "path": "/minecraft:entity/component_groups/minecraft:spider_stray_jockey/minecraft:addrider/",
           "content": {
             "entity_type": "minecraft:stray"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:spider_bogged_jockey/minecraft:addrider/",
+          "content": {
+            "entity_type": "minecraft:bogged"
           }
         },
         {

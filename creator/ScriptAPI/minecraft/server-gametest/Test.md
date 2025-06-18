@@ -52,6 +52,7 @@ Main class for GameTest functions, with helpers and data for manipulating the re
 - [rotateVector](#rotatevector)
 - [runAfterDelay](#runafterdelay)
 - [runAtTickTime](#runatticktime)
+- [runOnFinish](#runonfinish)
 - [setBlockPermutation](#setblockpermutation)
 - [setBlockType](#setblocktype)
 - [setFluidContainer](#setfluidcontainer)
@@ -913,6 +914,23 @@ Runs the given callback after a delay of _tick_ ticks from the start of the Game
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+### **runOnFinish**
+`
+runOnFinish(callback: () => void): void
+`
+
+Runs the given callback after the GameTest has completed regardless if the test passed, failed, or timed out.
+
+#### **Parameters**
+- **callback**: () => *void*
+  
+  Callback to execute.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md)
 
 ### **setBlockPermutation**
 `

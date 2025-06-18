@@ -15,3 +15,5 @@ monikerRange: "=minecraft-bedrock-experimental"
 
 ## Extends
 - *Error*
+
+The container is invalid. This can occur if the container is missing or deleted.

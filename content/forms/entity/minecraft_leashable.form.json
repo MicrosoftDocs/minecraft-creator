@@ -593,7 +593,7 @@
       ],
       "/vanilla/behavior_pack/entities/wolf.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:leashable/",
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_leashable/minecraft:leashable/",
           "content": {
             "on_leash": {
               "event": "minecraft:on_leash",

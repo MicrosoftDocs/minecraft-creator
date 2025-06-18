@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.0.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.100-beta.20 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.100-beta.21 of Minecraft.
 
 ## Available Versions
 - `2.2.0-beta`
@@ -144,7 +144,6 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockComponentStepOnEvent](BlockComponentStepOnEvent.md)
 - [BlockComponentTickEvent](BlockComponentTickEvent.md)
 - [BlockCustomComponentInstance](BlockCustomComponentInstance.md)
-- [BlockDestructionParticlesComponent](BlockDestructionParticlesComponent.md)
 - [BlockEvent](BlockEvent.md)
 - [BlockExplodeAfterEvent](BlockExplodeAfterEvent.md)
 - [BlockExplodeAfterEventSignal](BlockExplodeAfterEventSignal.md)

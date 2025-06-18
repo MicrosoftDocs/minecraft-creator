@@ -1,0 +1,16 @@
+{
+  "id": "Processor List Description",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Processor List Description",
+    "title": "Processor List Description World",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "description": "Identifier of the Processor List. This is referenced by Template Pools when pairing processors with Structure Templates.",
+        "dataType": 16
+      }
+    ]
+  }
+}

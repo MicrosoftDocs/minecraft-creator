@@ -30,7 +30,7 @@
       },
       {
         "id": "sound_event",
-        "title": "Sound Event",
+        "title": "LevelSoundEvent",
         "dataType": 2
       },
       {

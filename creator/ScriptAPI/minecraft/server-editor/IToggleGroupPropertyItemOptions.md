@@ -52,8 +52,8 @@ Localized title of the property item.
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: LocalizedString;`
+`tooltip: BasicTooltipContent;`
 
 Tooltip description of the property item.
 
-Type: *LocalizedString*
+Type: *BasicTooltipContent*
