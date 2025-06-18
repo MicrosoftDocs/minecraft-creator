@@ -39,10 +39,11 @@ Use these functions to apply enchantment rules to your world so they work exactl
 
     |Name| Description |
     |:-----------|:-----------|
-    |`base_cost`||
-    |`base_random_cost`||
-    |`per_level_random_cost`||
-    |`per_level_cost`||
+    |`base_cost`|??|
+    |`base_random_cost`|??|
+    |`per_level_random_cost`|??|
+    |`per_level_cost`|??|
+    |`enchantments`|??|
 
     At this time, defining these parameters won't affect the enchantment received. Currently, the default values above are hard-coded. In the future, you will be able to adjust these values to help narrow down what enchantments and enchantment levels this function results in.
 
