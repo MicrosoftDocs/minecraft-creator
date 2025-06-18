@@ -4,8 +4,6 @@
       href: index.yml
     - name: "Updates and News"
       items:
-        - name: 1.21.90 Update Summary
-          href: Documents/Update1.21.90.md 
         - name: 1.21.80 Update Summary
           href: Documents/Update1.21.80.md 
         - name: 1.21.70 Update Summary
@@ -573,6 +571,8 @@
             href: Reference/Content/WorldgenReference/Examples/JigsawStructureSets.md
         - name: Recipe JSON
           href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
+        - name: Loot Table JSON
+          href: Reference/Content/LootTableReference/Examples/LootTableDefinitions/TOC.yml
         - name: Spawn Rule JSON
           items: 
           - name: Data-Driven Spawning Rules

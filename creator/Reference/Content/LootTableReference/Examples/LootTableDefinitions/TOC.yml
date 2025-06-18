@@ -1,0 +1,11 @@
+ - name: Loot Table Definition List
+   href: ../LootTableDefinitionList.md
+ - name: Enchanting Tables
+   href: enchantingtables.md
+ - name: Modifying Items
+   href: itemmodtables.md
+ - name: Miscellaneous Functions
+   href: misctables.md
+ - name: Loot Table Tags
+   href: LootTableTags.md
+ 
