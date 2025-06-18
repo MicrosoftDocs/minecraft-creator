@@ -1,0 +1,15 @@
+{
+  "id": "Description",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Description",
+    "title": "Description Client Block",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "dataType": 2
+      }
+    ]
+  }
+}

@@ -103,6 +103,20 @@
               "path": "/minecraft:entity/events/minecraft:become_mobile/filters/",
               "content": "minecraft:can_move"
             }
+          ],
+          "/vanilla/behavior_pack/entities/wolf.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/all_of/0/",
+              "content": "minecraft:has_increased_max_health"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/all_of/0/",
+              "content": "minecraft:is_armorable"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/2/filters/",
+              "content": "minecraft:was_upgraded_to_1_21_100"
+            }
           ]
         }
       },
@@ -305,6 +319,32 @@
             "test": "bool_property",
             "domain": "minecraft:can_move",
             "value": false
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/0/filters/all_of/0/",
+          "content": {
+            "test": "bool_property",
+            "operator": "!=",
+            "domain": "minecraft:has_increased_max_health"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/1/filters/all_of/0/",
+          "content": {
+            "test": "bool_property",
+            "operator": "!=",
+            "domain": "minecraft:is_armorable"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:environment_sensor/triggers/2/filters/",
+          "content": {
+            "test": "bool_property",
+            "operator": "!=",
+            "domain": "minecraft:was_upgraded_to_1_21_100"
           }
         }
       ]

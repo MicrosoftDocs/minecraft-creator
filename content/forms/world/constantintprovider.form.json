@@ -1,0 +1,22 @@
+{
+  "id": "ConstantIntProvider",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "ConstantIntProvider",
+    "title": "ConstantIntProvider World",
+    "description": "Specifies a constant integer",
+    "fields": [
+      {
+        "id": "type",
+        "title": "IntProviderType",
+        "dataType": 2
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "Constant value",
+        "dataType": 0
+      }
+    ]
+  }
+}

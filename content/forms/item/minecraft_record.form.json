@@ -108,7 +108,7 @@
       },
       {
         "id": "sound_event",
-        "title": "Sound Event",
+        "title": "LevelSoundEvent",
         "description": "Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic.",
         "dataType": 2,
         "samples": {

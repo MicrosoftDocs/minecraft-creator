@@ -389,8 +389,8 @@
                     "description": "Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value.",
                     "dataType": 16,
                     "subForm": {
-                      "id": "",
-                      "title": "",
+                      "id": "IntRange",
+                      "title": "IntRange",
                       "fields": [
                         {
                           "id": "max",
@@ -443,13 +443,13 @@
                         },
                         {
                           "id": "particle_type",
-                          "title": "Particle Type",
+                          "title": "ParticleType",
                           "description": "Particle effect to emit when the threshold is met.",
                           "dataType": 2
                         },
                         {
                           "id": "sound_event",
-                          "title": "Sound Event",
+                          "title": "LevelSoundEvent",
                           "description": "Sound effect to emit when the threshold is met.",
                           "dataType": 2
                         }
@@ -948,7 +948,7 @@
                   },
                   {
                     "id": "sound_event",
-                    "title": "Sound Event",
+                    "title": "LevelSoundEvent",
                     "description": "Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic.",
                     "dataType": 2
                   }
@@ -1399,7 +1399,7 @@
                   },
                   {
                     "id": "slot",
-                    "title": "Slot",
+                    "title": "EquipmentSlot",
                     "description": "Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.",
                     "dataType": 2
                   }
@@ -1437,7 +1437,7 @@
                 "fields": [
                   {
                     "id": "category",
-                    "title": "Category",
+                    "title": "CreativeItemCategory",
                     "description": "Creative category where this item belongs. Defaults to \"none\".",
                     "dataType": 2
                   },

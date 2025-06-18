@@ -113,6 +113,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.panic](EntityGoals/minecraftBehavior_panic.md)| Allows the mob to enter the panic state, which makes it run around and away from the damage source that made it enter this state. |
 | [minecraft:behavior.pet_sleep_with_owner](EntityGoals/minecraftBehavior_pet_sleep_with_owner.md)| Allows the pet mob to move onto a bed with its owner while sleeping. |
 | [minecraft:behavior.pickup_items](EntityGoals/minecraftBehavior_pickup_items.md)| Allows the mob to pick up items on the ground. |
+| [minecraft:behavior.place_block](EntityGoals/minecraftBehavior_place_block.md)|  |
 | [minecraft:behavior.play](EntityGoals/minecraftBehavior_play.md)| Allows the mob to play with other mobs by chasing each other and moving around randomly. |
 | [minecraft:behavior.player_ride_tamed](EntityGoals/minecraftBehavior_player.ride_tamed.md)| Allows the mob to be ridden by the player after being tamed. |
 | [minecraft:behavior.play_dead](EntityGoals/minecraftBehavior_play_dead.md)| Allows this entity to pretend to be dead to avoid being targeted by attackers. |
@@ -168,6 +169,7 @@ ms.date: 02/11/2025
 | [minecraft:behavior.swim_wander](EntityGoals/minecraftBehavior_swim_wander.md)| Allows the entity to wander around while swimming, when not path-finding. |
 | [minecraft:behavior.swim_with_entity](EntityGoals/minecraftBehavior_swim_with_entity.md)| Allows the entity follow another entity. |
 | [minecraft:behavior.swoop_attack](EntityGoals/minecraftBehavior_swoop_attack.md)| Allows an entity to attack using swoop attack behavior; Ideal for use with flying mobs. |
+| [minecraft:behavior.take_block](EntityGoals/minecraftBehavior_take_block.md)|  |
 | [minecraft:behavior.take_flower](EntityGoals/minecraftBehavior_take_flower.md)| Allows the mob to accept flowers from another mob with the minecraft:offer_flower behavior. |
 | [minecraft:behavior.teleport_to_owner](EntityGoals/minecraftBehavior_teleport_to_owner.md)| Allows an entity to teleport to its owner. |
 | [minecraft:behavior.tempt](EntityGoals/minecraftBehavior_tempt.md)| Allows a mob to be tempted by a player holding a specific item. |

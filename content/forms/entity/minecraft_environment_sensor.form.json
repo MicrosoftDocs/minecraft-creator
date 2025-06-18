@@ -772,6 +772,14 @@
                     ]
                   },
                   "event": "minecraft:become_armorable"
+                },
+                {
+                  "filters": {
+                    "test": "bool_property",
+                    "operator": "!=",
+                    "domain": "minecraft:was_upgraded_to_1_21_100"
+                  },
+                  "event": "minecraft:upgrade_to_1_21_100"
                 }
               ]
             }
@@ -1665,6 +1673,14 @@
                   ]
                 },
                 "event": "minecraft:become_armorable"
+              },
+              {
+                "filters": {
+                  "test": "bool_property",
+                  "operator": "!=",
+                  "domain": "minecraft:was_upgraded_to_1_21_100"
+                },
+                "event": "minecraft:upgrade_to_1_21_100"
               }
             ]
           }

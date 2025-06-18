@@ -1,0 +1,12 @@
+{
+  "id": "block_break",
+  "title": "Block Break",
+  "tags": ["script", "action"],
+  "fields": [
+    {
+      "id": "location",
+      "title": "Location Offset",
+      "dataType": 41
+    }
+  ]
+}

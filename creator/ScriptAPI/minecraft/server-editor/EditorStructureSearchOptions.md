@@ -11,20 +11,20 @@ description: Contents of the @minecraft/server-editor.EditorStructureSearchOptio
 
 ## Properties
 
-### **excludeTags**
-`excludeTags?: string[];`
+### **displayName**
+`displayName?: string;`
 
-Type: *string*[]
+Type: *string*
 
 ### **idPattern**
 `idPattern?: string;`
 
 Type: *string*
 
-### **includeLocation**
-`includeLocation?: string[];`
+### **includeSources**
+`includeSources?: StructureSource[];`
 
-Type: *string*[]
+Type: [*StructureSource*](StructureSource.md)[]
 
 ### **includeTags**
 `includeTags?: string[];`

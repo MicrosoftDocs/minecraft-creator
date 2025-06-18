@@ -10,8 +10,8 @@
         "title": "Conditions",
         "dataType": 15,
         "subForm": {
-          "id": "",
-          "title": "",
+          "id": "BiomeConditions",
+          "title": "BiomeConditions",
           "description": "Biome specific rules for spawning",
           "fields": [
             {
@@ -68,8 +68,8 @@
               "description": "Configurations for size and events when spawning groups of entities",
               "dataType": 15,
               "subForm": {
-                "id": "",
-                "title": "",
+                "id": "Herd",
+                "title": "Herd",
                 "fields": [
                   {
                     "id": "event",
@@ -122,8 +122,8 @@
               "description": "List of randomly choosable permutations of the entity",
               "dataType": 15,
               "subForm": {
-                "id": "",
-                "title": "",
+                "id": "PermuteType",
+                "title": "PermuteType",
                 "fields": [
                   {
                     "id": "entity_type",
@@ -161,8 +161,8 @@
         "title": "Description",
         "dataType": 16,
         "subForm": {
-          "id": "",
-          "title": "",
+          "id": "Description",
+          "title": "Description",
           "fields": [
             {
               "id": "identifier",
@@ -178,8 +178,8 @@
         "description": "Placement rule defintions",
         "dataType": 16,
         "subForm": {
-          "id": "",
-          "title": "",
+          "id": "Placement",
+          "title": "Placement",
           "description": "Placement rule defintions",
           "fields": [
             {

@@ -1,0 +1,33 @@
+{
+  "id": "ure",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "ure",
+    "title": "Structure World",
+    "fields": [
+      {
+        "id": "structure",
+        "title": "Ure",
+        "description": "Identifier of the Jigsaw Structure.",
+        "dataType": 2,
+        "alternates": []
+      },
+      {
+        "id": "weight",
+        "title": "Weight",
+        "description": "Weight of the Jigsaw Structure in the set. Higher weights are more likely to be selected.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          },
+          {
+            "comparison": "<=",
+            "value": 200
+          }
+        ]
+      }
+    ]
+  }
+}

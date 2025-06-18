@@ -1,0 +1,21 @@
+{
+  "id": "set_block",
+  "title": "Set Block",
+  "tags": ["script", "action"],
+  "fields": [
+    {
+      "id": "location",
+      "title": "Location Offset",
+      "dataType": 41,
+      "priority": 10
+    },
+    {
+      "id": "blockType",
+      "title": "Block to place",
+      "dataType": 2,
+      "isRequired": true,
+      "lookupId": "blockType",
+      "priority": 1
+    }
+  ]
+}

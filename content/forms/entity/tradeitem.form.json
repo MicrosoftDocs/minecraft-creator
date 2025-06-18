@@ -1,0 +1,123 @@
+{
+  "id": "TradeItem",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "TradeItem",
+    "title": "TradeItem Entity",
+    "fields": [
+      {
+        "id": "__DEP_fltrs",
+        "title": "DEP Fltrs",
+        "dataType": 16
+      },
+      {
+        "id": "__DEP_fnctns",
+        "title": "DEP Fnctns",
+        "dataType": 16
+      },
+      {
+        "id": "filters",
+        "title": "Filters",
+        "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+        "dataType": 16,
+        "subForm": {
+          "id": "filters",
+          "title": "Filters",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": 16
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": 16
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": 16
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": 2
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": 16
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "filters",
+            "dataType": 16
+          }
+        ]
+      },
+      {
+        "id": "functions",
+        "title": "Functions",
+        "dataType": 17
+      },
+      {
+        "id": "item",
+        "title": "Item",
+        "dataType": 2,
+        "alternates": []
+      },
+      {
+        "id": "price_multiplier",
+        "title": "Price Multiplier",
+        "dataType": 3
+      },
+      {
+        "id": "quantity",
+        "title": "Quantity",
+        "dataType": 0,
+        "alternates": [
+          {
+            "id": "quantity",
+            "dataType": 16,
+            "subForm": {
+              "id": "quantity",
+              "title": "Quantity",
+              "fields": [
+                {
+                  "id": "max",
+                  "title": "Max",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "min",
+                  "title": "Min",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

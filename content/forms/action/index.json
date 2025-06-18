@@ -1,0 +1,19 @@
+{
+  "files": [
+    "entity_spawn.form.json",
+    "entity_die.form.json",
+    "player_join.form.json",
+    "particle_spawn.form.json",
+    "music_play.form.json",
+    "sound_play.form.json",
+    "set_block.form.json",
+    "block_explode.form.json",
+    "block_break.form.json",
+    "test_idle.form.json",
+    "test_simulated_player_move.form.json",
+    "test_simulated_player_spawn.form.json",
+    "tick.form.json",
+    "world_send_message.form.json"
+  ],
+  "folders": []
+}

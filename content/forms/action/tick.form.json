@@ -1,0 +1,12 @@
+{
+  "id": "tick",
+  "title": "Tick",
+  "tags": ["script", "trigger", "container"],
+  "fields": [
+    {
+      "id": "everyNTicks",
+      "title": "Every N Ticks",
+      "dataType": 0
+    }
+  ]
+}

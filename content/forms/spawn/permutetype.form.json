@@ -1,0 +1,29 @@
+{
+  "id": "PermuteType",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "PermuteType",
+    "title": "PermuteType Spawn",
+    "fields": [
+      {
+        "id": "entity_type",
+        "title": "Entity Type",
+        "description": "Specifies the entity type to spawn when selected",
+        "dataType": 2,
+        "alternates": []
+      },
+      {
+        "id": "min_guaranteed",
+        "title": "Min Guaranteed",
+        "description": "The minimum number of this permutation's entity to spawn",
+        "dataType": 0
+      },
+      {
+        "id": "weight",
+        "title": "Weight",
+        "description": "The likelihood of this to be selected over the combined weight of all the entities in the permutation",
+        "dataType": 0
+      }
+    ]
+  }
+}

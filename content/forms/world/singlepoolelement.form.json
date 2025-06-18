@@ -1,0 +1,35 @@
+{
+  "id": "SinglePoolElement",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "SinglePoolElement",
+    "title": "SinglePoolElement World",
+    "fields": [
+      {
+        "id": "element_type",
+        "title": "ElementType",
+        "description": "The type of element.",
+        "dataType": 2
+      },
+      {
+        "id": "location",
+        "title": "Location",
+        "description": "The path of the structure file. This path is relative to the behavior pack's structures folder.",
+        "dataType": 16
+      },
+      {
+        "id": "processors",
+        "title": "Processors",
+        "description": "The identifier of the processor list to use when placing the structure.",
+        "dataType": 2,
+        "alternates": []
+      },
+      {
+        "id": "projection",
+        "title": "Projection",
+        "description": "Specifies how structures should be placed relative to the terrain.",
+        "dataType": 2
+      }
+    ]
+  }
+}

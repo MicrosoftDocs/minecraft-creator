@@ -1,0 +1,215 @@
+{
+  "id": "minecraft:behavior.take_block",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:behavior.take_block",
+    "title": "Take Block Behavior",
+    "fields": [
+      {
+        "id": "affected_by_griefing_rule",
+        "title": "Affected By Griefing Rule",
+        "description": "If true, whether the goal is affected by the mob griefing game rule.",
+        "dataType": 1
+      },
+      {
+        "id": "blocks",
+        "title": "Blocks",
+        "description": "Block descriptors for which blocks are valid to be taken by the entity, if empty all blocks are valid.",
+        "dataType": 17,
+        "samples": {
+          "/vanilla/behavior_pack/entities/enderman.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.take_block/",
+              "content": [
+                "dirt",
+                "grass_block",
+                "podzol",
+                "coarse_dirt",
+                "mycelium",
+                "dirt_with_roots",
+                "moss_block",
+                "pale_moss_block",
+                "muddy_mangrove_roots",
+                "mud",
+                "sand",
+                "red_sand",
+                "gravel",
+                "brown_mushroom",
+                "red_mushroom",
+                "tnt",
+                "cactus",
+                "cactus_flower",
+                "clay",
+                "pumpkin",
+                "carved_pumpkin",
+                "melon_block",
+                "crimson_fungus",
+                "crimson_nylium",
+                "crimson_roots",
+                "warped_fungus",
+                "warped_nylium",
+                "warped_roots",
+                "dandelion",
+                "open_eyeblossom",
+                "closed_eyeblossom",
+                "poppy",
+                "blue_orchid",
+                "allium",
+                "azure_bluet",
+                "red_tulip",
+                "orange_tulip",
+                "white_tulip",
+                "pink_tulip",
+                "oxeye_daisy",
+                "cornflower",
+                "lily_of_the_valley",
+                "wither_rose",
+                "torchflower"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "can_take",
+        "title": "Can Take",
+        "description": "Filters for if the entity should try to take a block. Self and Target are set.",
+        "dataType": 20
+      },
+      {
+        "id": "chance",
+        "title": "Chance",
+        "description": "Chance each tick for the entity to try and take a block.",
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/enderman.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.take_block/",
+              "content": 0.05
+            }
+          ]
+        }
+      },
+      {
+        "id": "on_take",
+        "title": "Take",
+        "description": "Trigger ran if the entity does take a block. Self, Target, and Block are set.",
+        "dataType": 22
+      },
+      {
+        "id": "requires_line_of_sight",
+        "title": "Requires Line Of Sight",
+        "description": "If true, whether the entity needs line of sight to the block they are trying to take.",
+        "dataType": 1
+      },
+      {
+        "id": "xz_range",
+        "title": "Xz Range",
+        "description": "XZ range from which the entity will try and take blocks from.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/enderman.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.take_block/",
+              "content": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "y_range",
+        "title": "y Range",
+        "description": "Y range from which the entity will try and take blocks from.",
+        "dataType": 18,
+        "samples": {
+          "/vanilla/behavior_pack/entities/enderman.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.take_block/",
+              "content": [
+                0,
+                3
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "hideSamples": true,
+        "description": "As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal.",
+        "dataType": 0,
+        "samples": {
+          "/vanilla/behavior_pack/entities/enderman.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.take_block/",
+              "content": 11
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/enderman.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.take_block/",
+          "content": {
+            "priority": 11,
+            "xz_range": 2,
+            "y_range": [
+              0,
+              3
+            ],
+            "chance": 0.05,
+            "blocks": [
+              "dirt",
+              "grass_block",
+              "podzol",
+              "coarse_dirt",
+              "mycelium",
+              "dirt_with_roots",
+              "moss_block",
+              "pale_moss_block",
+              "muddy_mangrove_roots",
+              "mud",
+              "sand",
+              "red_sand",
+              "gravel",
+              "brown_mushroom",
+              "red_mushroom",
+              "tnt",
+              "cactus",
+              "cactus_flower",
+              "clay",
+              "pumpkin",
+              "carved_pumpkin",
+              "melon_block",
+              "crimson_fungus",
+              "crimson_nylium",
+              "crimson_roots",
+              "warped_fungus",
+              "warped_nylium",
+              "warped_roots",
+              "dandelion",
+              "open_eyeblossom",
+              "closed_eyeblossom",
+              "poppy",
+              "blue_orchid",
+              "allium",
+              "azure_bluet",
+              "red_tulip",
+              "orange_tulip",
+              "white_tulip",
+              "pink_tulip",
+              "oxeye_daisy",
+              "cornflower",
+              "lily_of_the_valley",
+              "wither_rose",
+              "torchflower"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

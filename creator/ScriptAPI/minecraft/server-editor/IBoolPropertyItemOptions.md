@@ -38,11 +38,11 @@ Localized title of the text item.
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: LocalizedString;`
+`tooltip: BasicTooltipContent;`
 
 Tooltip description of the property item
 
-Type: *LocalizedString*
+Type: *BasicTooltipContent*
 
 ### **variant**
 `variant: BoolPropertyItemVariant;`

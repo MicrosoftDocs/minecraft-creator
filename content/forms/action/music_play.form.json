@@ -1,0 +1,20 @@
+{
+  "id": "music_play",
+  "title": "Play Music",
+  "tags": ["script", "action"],
+  "fields": [
+    {
+      "id": "location",
+      "title": "Location Offset",
+      "dataType": 41,
+      "priority": 10
+    },
+    {
+      "id": "trackName",
+      "title": "Play Track",
+      "dataType": 2,
+      "isRequired": true,
+      "priority": 1
+    }
+  ]
+}
