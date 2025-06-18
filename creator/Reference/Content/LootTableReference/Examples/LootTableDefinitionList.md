@@ -15,6 +15,6 @@ Loot Tables are setup in JSON files under the `behavior_packs/'name of pack'/loo
 
 |Type|Description |
 |:--------|:-------|
-|[Enchanting Tables](LootTableDefinitions/enchantingtables.md) |Used to set the rules for tables that enchant items|
-|[Item Modification Tables](LootTableDefinitions/itemmodtables.md) |Used to set the rules for tables that modify items|
-|[Miscellaneous Tables](LootTableDefinitions/misctables.md) |Used to set the rules for other supported types of tables|
+|[Enchanting Tables](loottabledefinitions/enchantingtables.md) |Used to set the rules for tables that enchant items|
+|[Item Modification Tables](loottabledefinitions/itemmodtables.md) |Used to set the rules for tables that modify items|
+|[Miscellaneous Tables](loottabledefinitions/miscellaneoustables.md) |Used to set the rules for other supported types of tables|
