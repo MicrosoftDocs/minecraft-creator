@@ -9,7 +9,7 @@ ms.date: 06/18/2025
 
 # Loot Tables Documentation - Loot Tables Definition List
 
-Loot Tables are setup in JSON files under the `behavior_packs/'name of pack'/loot_tables` directory. Loot table JSON files have different structures dependent on their type.
+Loot Tables are configured in JSON files under the `behavior_packs/'name of pack'/loot_tables` directory. Loot table JSON files have different structures dependent on their type.
 
 ## List of Loot Tables
 
