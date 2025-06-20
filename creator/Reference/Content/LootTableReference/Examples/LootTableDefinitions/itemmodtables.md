@@ -41,7 +41,7 @@ The following functions let you modify loot table results in different ways, lik
 
 - ### random_aux_value
 
-    Similar to `random_block_state`, this function lets your pick a random auxiliary value for an item. The following example will result in a randomly-colored dye.
+    Similar to `random_block_state`, this function lets you pick a random auxiliary value for an item. The following example will result in a randomly-colored dye.
 
     ```json
     {
