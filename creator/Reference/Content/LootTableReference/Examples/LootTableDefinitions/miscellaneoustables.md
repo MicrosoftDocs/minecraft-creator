@@ -13,7 +13,7 @@ There are a number of functions that work like loot tables, but don't fit cleanl
 
 ## Miscellaneous
 
-These functions might handy when you're creating your world.
+These functions might come in handy when you're creating your world.
 
 - ### exploration_map
 
