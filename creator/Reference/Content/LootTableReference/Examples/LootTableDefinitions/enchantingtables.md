@@ -35,6 +35,7 @@ Use these functions to apply enchantment rules to your world so they work exactl
         ]
     }
     ```
+    
     #### Supported Parameters
 
     |Name| Description |

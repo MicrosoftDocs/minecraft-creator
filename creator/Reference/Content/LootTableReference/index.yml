@@ -23,10 +23,10 @@ landingContent:
       - linkListType: reference
         links:
           - text: Loot Table Definition List
-            url: Examples/LootTableDefinitionList
+            url: Examples/loottabledefinitionlist
           - text: Enchanting Tables
-            url: Examples/LootTableDefinitions/enchantingtables.md
+            url: Examples/loottabledefinitions/enchantingtables.md
           - text: Modifying Items
-            url: Examples/LootTableDefinitions/itemmodtables.md
+            url: Examples/loottabledefinitions/itemmodtables.md
           - text: Miscellaneous Tables
-            url: Examples/LootTableDefinitions/misctables.md
+            url: Examples/loottabledefinitions/miscellaneoustables.md
