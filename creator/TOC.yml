@@ -573,6 +573,8 @@
             href: Reference/Content/WorldgenReference/Examples/JigsawStructureSets.md
         - name: Recipe JSON
           href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
+        - name: Loot Table JSON
+          href: Reference/Content/LootTableReference/Examples/loottabledefinitions/TOC.yml
         - name: Spawn Rule JSON
           items: 
           - name: Data-Driven Spawning Rules
