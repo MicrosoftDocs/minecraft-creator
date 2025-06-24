@@ -25,7 +25,7 @@ The following block traits are currently available for use:
 
 There are two states that can be included with this trait:
 
-- `minecraft:cardinal_direction` is a 4-value state containing the cardinal-facing direction of the player when the block was placed. THe values for this state are 'north', 'south', 'east', and 'west'.
+- `minecraft:cardinal_direction` is a 4-value state containing the cardinal-facing direction of the player when the block was placed. The values for this state are 'north', 'south', 'east', and 'west'.
 - `minecraft:facing_direction` is a 6-value state containing the overall direction of the player when the block was placed. The values for this state are 'down', 'up', 'north', 'south', 'east', and 'west'.
 
 This trait can also be configured with a 'y_rotation_offset' where an axis-aligned angle may be specified via degree (e.g. 90.0). This causes the state within the trait to store a rotated value. In other words, with a rotation offset of 90.0, a block placed when the player is facing south would have a state of 'east'. This rotation offset only applies to the horizontal state values (north, south, east, west).
