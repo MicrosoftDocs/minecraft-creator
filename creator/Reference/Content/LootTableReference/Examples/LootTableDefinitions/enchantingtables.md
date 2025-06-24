@@ -35,22 +35,16 @@ Use these functions to apply enchantment rules to your world so they work exactl
         ]
     }
     ```
+    The total cost of an enchantment is calculated with this equation:
     
-    #### Supported Parameters
-
-    |Name| Description |
-    |:-----------|:-----------|
-    |`base_cost`|??|
-    |`base_random_cost`|??|
-    |`per_level_random_cost`|??|
-    |`per_level_cost`|??|
-    |`enchantments`|??|
-
-    At this time, defining these parameters won't affect the enchantment received. Currently, the default values above are hard-coded. In the future, you will be able to adjust these values to help narrow down what enchantments and enchantment levels this function results in.
+    `base_cost` + (`base_random_cost`  + enchantmentLevel * `per_level_random_cost`) + enchantmentLevel * `per_level_cost`
 
 - ### enchant_random_gear
 
-    Enchants an item using the same algorithm used while enchanting equipment vanilla mobs spawn with. Takes a `chance` modifier to manipulate the algorithm. Note that a `chance` modifier of 1.0 doesn't mean a 100% chance that gear will become enchanted. Rather, the chance is modified based on the difficulty. 
+    Enchants an item using the same algorithm used while enchanting equipment vanilla mobs spawn with. Takes a `chance` modifier to manipulate the algorithm.
+    
+    > [!Note]
+    > A `chance` modifier of 1.0 doesn't mean a 100% chance that gear will become enchanted. Rather, the chance is modified based on the difficulty. 
 
     On Peaceful and Easy difficulties, the chance will always be 0% no matter what. On Hard difficulty, a `chance` of 1.0 will be 100%, but the chance is roughly 2/3 that on Normal difficulty.
 
@@ -72,7 +66,7 @@ Use these functions to apply enchantment rules to your world so they work exactl
 
 - ### enchant_randomly
 
-    Generates a random enchantment that is compatible with the item. Supports the optional treasure `boolean` (true/false) to allow treasure enchantments to be toggled on and off. Treasure enchantments are enchantments that cannot be obtained through the enchanting table, including Frost Walker, Mending, Soul Speed, Curse of Binding, and Curse of Vanishing.
+    Generates a random enchantment that is compatible with the item. Supports the optional `treasure` boolean (true/false) to allow treasure enchantments to be toggled on and off. Treasure enchantments are enchantments that cannot be obtained through the enchanting table, including Frost Walker, Mending, Soul Speed, Curse of Binding, and Curse of Vanishing.
 
     ```json
     {
@@ -130,7 +124,7 @@ Use these functions to apply enchantment rules to your world so they work exactl
 
 - ### specific_enchants
 
-    This function allows you to set a list of specific enchantments on an item. It also allows you to apply enchantments to items that wouldn't normally be enchantable in-game.
+    This function lets you set a list of specific enchantments on an item. It also lets you apply enchantments to items that wouldn't normally be enchantable in-game.
 
     ```json
     {
@@ -149,7 +143,7 @@ Use these functions to apply enchantment rules to your world so they work exactl
     }
     ```
 
-    You can also define the enchantments as objects to specifically define an enchantment level. Max enchantment levels are hard-coded and can't be overwritten.
+    You can also define the enchantments as objects to specifically define an enchantment level.
 
     ```json
     {
@@ -173,3 +167,5 @@ Use these functions to apply enchantment rules to your world so they work exactl
         ]
     }
     ```
+    > [!Note]
+    > Max enchantment levels are hard-coded and can't be overwritten.

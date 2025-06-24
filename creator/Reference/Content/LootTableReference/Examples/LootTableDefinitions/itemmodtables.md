@@ -20,7 +20,7 @@ The following functions let you modify loot table results in different ways, lik
     This function lets you modify the count of how many items are returned when an entity is killed by an item with the looting enchantment.
     
     > [!Note]
-    > `looting_enchant` only works with loot tables that are called by the death of an entity.
+    > The `looting_enchant` function only works with loot tables that are called by the death of an entity.
 
     ```json
     {
@@ -197,7 +197,8 @@ The following functions let you modify loot table results in different ways, lik
     }
     ```
 
-    Be aware that you can only use `rawtext` on the book's contents (`pages`) at the timing of writing this — `rawtext` **does not** work for the `author` or `title` tags.
+    > [!Note]
+    > Be aware that you can only use `rawtext` on the book's contents (`pages`) at the timing of writing this — `rawtext` **does not** work for the `author` or `title` tags.
 
 - ### set_count
 
@@ -299,7 +300,7 @@ The following functions let you modify loot table results in different ways, lik
 
 - ### set_data_from_color_index
 
-    This function inherits the data value of the resulting item from the associated entity's color index, like when a pink sheep drops pink wool when you kill or shear it. If the associated entity doesn't have a color index set (or if it's used inside a chest's loot table), it will always result in a data value of 0.
+    This function inherits the data value of the resulting item from the associated entity's color index, like when a pink sheep drops pink wool when you kill or shear it. If the associated entity doesn't have a color index set (or if it's used inside a chest's loot table), it will always yield a data value of 0.
 
     ```json
     {
