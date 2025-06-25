@@ -24,12 +24,12 @@ landingContent:
         links:
            - text: Use Visual Studio Code tools to write script
              url: ../Documents/ScriptDeveloperTools.md
-           - text: Use scripting with dedicated servers
-             url: ../Documents/ScriptingServers.md
            - text: Building your first GameTest
              url: ../Documents/GameTestBuildYourFirstGameTest.md
            - text: Creating a simple gameplay experience
              url: ../Documents/ScriptingGettingStarted.md
+           - text: Scripting Bedrock Dedicated Server
+             url: ../Documents/BedrockServer/scripting.md
       - linkListType: concept
         links:
            - text: Introduction to the GameTest Framework

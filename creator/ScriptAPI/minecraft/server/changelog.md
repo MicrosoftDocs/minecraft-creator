@@ -102,6 +102,7 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `identifier` type from *string* to *EntityIdentifierType<NoInfer<T>>*
 #### Changed *[`GameRules`](GameRules.md)*
 - Added property *[`locatorBar`](GameRules.md#locatorbar)*
+#### Added *[`ItemBookComponent`](ItemBookComponent.md)*
 #### Added *[`ItemInventoryComponent`](ItemInventoryComponent.md)*
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
@@ -149,6 +150,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
 #### Added enum [`AimAssistTargetMode`](AimAssistTargetMode.md)
+#### Added enum [`BookErrorReason`](BookErrorReason.md)
 #### Added enum [`CommandPermissionLevel`](CommandPermissionLevel.md)
 #### Added enum [`CompoundBlockVolumeAction`](CompoundBlockVolumeAction.md)
 #### Added enum [`CompoundBlockVolumePositionRelativity`](CompoundBlockVolumePositionRelativity.md)
@@ -167,6 +169,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed enum [`GameRule`](GameRule.md)
 - Added value `LocatorBar`
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
+- Added value `Book`
 - Added value `Inventory`
 - Added value `Potion`
 #### Added enum [`LiquidSettings`](LiquidSettings.md)

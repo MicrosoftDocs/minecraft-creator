@@ -212,6 +212,12 @@
                           "title": "Color",
                           "description": "RGB color of grass.",
                           "dataType": 16
+                        },
+                        {
+                          "id": "grass_is_shaded",
+                          "title": "Grass Is Shaded",
+                          "description": "Adds a shading effect to the grass as if there was a roof.",
+                          "dataType": 1
                         }
                       ]
                     }

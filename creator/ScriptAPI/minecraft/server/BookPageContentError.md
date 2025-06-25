@@ -1,0 +1,41 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server.BookPageContentError Class
+description: Contents of the @minecraft/server.BookPageContentError class.
+monikerRange: "=minecraft-bedrock-experimental"
+---
+# BookPageContentError Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+## Extends
+- *Error*
+
+The error called if page content being set on an [*@minecraft/server.ItemBookComponent*](../../../scriptapi/minecraft/server/ItemBookComponent.md) are invalid ie. exceeding the maximum page length.
+
+## Properties
+
+### **pageIndex**
+`read-only pageIndex: number;`
+
+The index of the page requested to be modified.
+
+Type: *number*
+
+Notes:
+  - This property can be read in early-execution mode.
+
+### **reason**
+`read-only reason: BookErrorReason;`
+
+The reason for the error.
+
+Type: [*BookErrorReason*](BookErrorReason.md)
+
+Notes:
+  - This property can be read in early-execution mode.

@@ -232,8 +232,6 @@
             href: Documents/ScriptVersioning.md
           - name: Scripting v2.0.0 Overview
             href: Documents/Scriptingv2.0.0Overview.md
-          - name: Use Script Along with Dedicated Servers
-            href: Documents/ScriptingServers.md
         - name: Introduction to Scoreboards
           href: Documents/ScoreboardIntroduction.md
         - name: Scoreboard Operations Tutorial
@@ -503,6 +501,14 @@
               href: Documents/ChunkerWorldSettings.md
             - name: Chunker - The Nether
               href: Documents/ChunkerTheNether.md
+        - name: Bedrock Dedicated Server
+          items:
+            - name: Getting Started with Dedicated Server
+              href: Documents/BedrockServer/getting-started.md
+            - name: Server Properties
+              href: Documents/BedrockServer/server-properties.md
+            - name: Scripting Bedrock Dedicated Server
+              href: Documents/BedrockServer/scripting.md
     - name: Reference Documentation
       items:
       - name: Commands
@@ -573,6 +579,8 @@
             href: Reference/Content/WorldgenReference/Examples/JigsawStructureSets.md
         - name: Recipe JSON
           href: Reference/Content/recipereference/Examples/RecipeDefinitions/TOC.yml
+        - name: Loot Table JSON
+          href: Reference/Content/LootTableReference/Examples/loottabledefinitions/TOC.yml
         - name: Spawn Rule JSON
           items: 
           - name: Data-Driven Spawning Rules

@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Minecraft Bedrock Editor Overview
 description: "An overview of the parts of Minecraft Bedrock Editor"
 ms.service: minecraft-bedrock-edition
+ms.date: 06/24/2025
 ---
 
 # Editor Overview
@@ -19,8 +20,6 @@ There's more information about Editor on the [Minecraft: Bedrock Editor GitHub s
 > It will continue to change as we get feedback from creators like you.
 > Also, the images of Editor in this document might vary a little from what you have on your screen.
 
---------
-
 In this manual, you will learn the following:
 
 > [!div class="checklist"]
@@ -35,8 +34,6 @@ In this manual, you will learn the following:
 > - How to open a world created from a project
 > - Where Editor stores exported and saved files
 
---------
-
 ## Requirements
 
 To get started, you need the following:
@@ -45,13 +42,13 @@ To get started, you need the following:
 - Keyboard and mouse
 
 > [!IMPORTANT]
-> Editor is PC only and not available on mobile or console.
+> Editor is PC only, and not available on mobile or console.
 
 It's recommended that the following be completed before beginning this tutorial.
 
 - [How to get Minecraft Bedrock Editor](EditorInstallation.md)
 
-## Creating an Editor Project
+## Creating an Editor project
 
 After you launch Editor, you get a screen that says "Create New Project."
 
@@ -99,10 +96,10 @@ If you do want to close the window, click the X in the corner. Some windows can 
 
 |Tab  |Content  |
 |:-------|:---------|
-| Introduction | Welcome to the Minecraft Editor Beta, a tool designed to help you create stunning worlds in Bedrock with ease. <br> <br> You may find these links helpful on your journey: <br> <br> <ur> <li> [Documentation](https://aka.ms/BedrockEditorDocs) </li> <li> [Report problems and give feedback](https://aka.ms/BedrockEditorFeedback) </li> <li> [Editor Community](https://aka.ms/BedrockEditorCommunity) </li></ur> <br>  To reopen Quick Start, you can find it under the 'Help' menu.|
-| Movement | To navigate in the Editor, you'll need a keyboard and mouse. Trackpads or controllers aren't recommended. <br> <br> To move around in Editor: <br> <br><ur> <li> Hold down the right mouse button to look around. </li><li> While holding the right mouse button, move horizontally with `WASD` and vertically with `SHIFT` and `SPACE`. </li></ur> |
+| Introduction | Welcome to the Minecraft Editor Beta, a tool designed to help you create stunning worlds in Bedrock with ease. <br> <br> You may find these links helpful on your journey: <br> <br> <ul> <li> [Documentation](https://aka.ms/BedrockEditorDocs) </li> <li> [Report problems and give feedback](https://aka.ms/BedrockEditorFeedback) </li> <li> [Editor Community](https://aka.ms/BedrockEditorCommunity) </li></ul> <br>  To reopen Quick Start, you can find it under the 'Help' menu.|
+| Movement | To navigate in the Editor, you'll need a keyboard and mouse. Trackpads or controllers aren't recommended. <br> <br> To move around in Editor: <br> <br><ul> <li> Hold down the right mouse button to look around. </li><li> While holding the right mouse button, move horizontally with `WASD` and vertically with `SHIFT` and `SPACE`. </li></ul> |
 |Tools|You can find tools on the left rail. Each tool allows you to edit your world in different ways. <br> <br>Click on the Information button ("i") at the top right corner of each tool to learn more about how it works.|
-|Actions|Actions are shortcuts that live at the top of your screen. Hit the “+” button in the Action Bar to customize which are displayed.<br> <br>At the top center of your screen is the Block Hotbar. Click once to change the active block, click twice to open the Block Picker to customize the Hotbar.<br> <br> You can create a new Hotbar by clicking the Hotbar Menu button to the right.  
+|Actions|Actions are shortcuts that live at the top of your screen. Hit the “+” button in the Action Bar to customize which are displayed.<br> <br>At the top center of your screen is the Block Hotbar. Click once to change the active block, click twice to open the Block Picker to customize the Hotbar.<br> <br> You can create a new Hotbar by clicking the Hotbar Menu button to the right.
 |
 
 ## Movement
@@ -121,14 +118,16 @@ Before we dive into the Tool Mode UI, you might want to take a moment to familia
 
 ## Editor and Bedrock Dedicated Server
 
-Editor is only enabled in the preview version of Win32 Bedrock Dedicated Server (BDS).
+Editor is only enabled in the preview version of Win32 Bedrock Dedicated Server.
 There are two ways to launch it:
 
-### Launch the .exe with the command line, like this: 
+### Launch editor from the command line
+
+Open a terminal window and run the following command:
 
 `bedrock_server.exe Editor=true`
 
-This will only work if you're launching BDS from scratch with no existing world.
+This will only work if you're launching Dedicated Server from scratch with no existing world.
 
 You should see the output say:
 
@@ -144,7 +143,7 @@ You should see the output say:
 
 1. Launch Editor from the usual desktop shortcut.
 1. Create a new Editor Project.
-1. Locate the Editor Project in the **com.mojang/minecraftWorlds** folder and copy it into the BDS worlds folder
+1. Locate the Editor Project in the **com.mojang/minecraftWorlds** folder and copy it into the Dedicated Server worlds folder
 1. Ensure that `server.properties` has the correct world name.
 1. Execute **bedrock_server.exe**.
 

@@ -236,6 +236,10 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "Documents/ScriptingServers.md",
+      "redirect_url": "/minecraft/creator/documents/bedrockserver/scripting"
+    },
+    {
       "source_path": "Documents/DeferredLighting/index.yml",
       "redirect_url": "/minecraft/creator/documents/vibrantvisuals/",
       "redirect_document_id": false
