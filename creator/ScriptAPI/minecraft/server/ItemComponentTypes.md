@@ -12,6 +12,10 @@ description: Contents of the @minecraft/server.ItemComponentTypes enumeration.
 The types of item components that are accessible via function ItemStack.getComponent.
 
 ## Constants
+### **Book**
+`Book = "minecraft:book"`
+
+The minecraft:book component.
 ### **Compostable**
 `Compostable = "minecraft:compostable"`
 ### **Cooldown**

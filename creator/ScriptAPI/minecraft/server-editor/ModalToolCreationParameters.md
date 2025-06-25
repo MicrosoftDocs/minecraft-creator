@@ -35,8 +35,8 @@ Localized title of the tool
 Type: *string*
 
 ### **tooltip**
-`tooltip: string;`
+`tooltip: BasicTooltipContent;`
 
 Tooltip description of the tool
 
-Type: *string*
+Type: *BasicTooltipContent*

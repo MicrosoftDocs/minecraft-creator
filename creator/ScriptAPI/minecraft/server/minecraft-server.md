@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.0.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.100-beta.21 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.100-beta.22 of Minecraft.
 
 ## Available Versions
 - `2.2.0-beta`
@@ -56,6 +56,7 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockComponentTypes](BlockComponentTypes.md)
 - [BlockPistonState](BlockPistonState.md)
 - [BlockVolumeIntersection](BlockVolumeIntersection.md)
+- [BookErrorReason](BookErrorReason.md)
 - [ButtonState](ButtonState.md)
 - [CommandPermissionLevel](CommandPermissionLevel.md)
 - [CompoundBlockVolumeAction](CompoundBlockVolumeAction.md)
@@ -296,6 +297,7 @@ The following API versions are from a major version that is documented here: [*@
 - [GameRuleChangeAfterEventSignal](GameRuleChangeAfterEventSignal.md)
 - [GameRules](GameRules.md)
 - [InputInfo](InputInfo.md)
+- [ItemBookComponent](ItemBookComponent.md)
 - [ItemCompleteUseAfterEvent](ItemCompleteUseAfterEvent.md)
 - [ItemCompleteUseAfterEventSignal](ItemCompleteUseAfterEventSignal.md)
 - [ItemCompleteUseEvent](ItemCompleteUseEvent.md)
@@ -518,6 +520,8 @@ The following API versions are from a major version that is documented here: [*@
 - [BlockCustomComponentReloadNewComponentError](BlockCustomComponentReloadNewComponentError.md)
 - [BlockCustomComponentReloadNewEventError](BlockCustomComponentReloadNewEventError.md)
 - [BlockCustomComponentReloadVersionError](BlockCustomComponentReloadVersionError.md)
+- [BookError](BookError.md)
+- [BookPageContentError](BookPageContentError.md)
 - [CommandError](CommandError.md)
 - [ContainerRulesError](ContainerRulesError.md)
 - [CustomCommandError](CustomCommandError.md)

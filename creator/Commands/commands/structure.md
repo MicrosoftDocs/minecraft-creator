@@ -22,21 +22,19 @@ Saves or loads a structure in the world. See examples of this command in use in 
 
 ## Usage
 ### Save structure, optional save mode
-`/structure save <name: string> <from: x y z> <to: x y z> [saveMode: StructureSaveMode]`
+`/structure save <name: string> <from: x y z> <to: x y z> [includeEntities: Boolean] [includeBlocks: Boolean]`
 
 `Save` a `structure` with required structure `name`, `from`, and `to`, and an optional `save mode`.
 
 ### Save structure, optional entities, blocks, save mode
-`/structure save <name: string> <from: x y z> <to: x y z> [includeEntities: Boolean] [saveMode: StructureSaveMode] [includeBlocks: Boolean]`
+`/structure delete <name: string>`
 
 `Save` a `structure` with required structure `name`, `from`, and `to`, and optional `entities`, `blocks`, and `save mode`.
 
-### Delete structure
-`/structure delete <name: string>`
+### Load structure, optional animation mode, animation seconds
+`/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
 
-`Delete` a `structure` by `name`.
-
-### `/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
+`Load` a `structure` with required structure `name` and `to`, and optional `rotation`, `mirror`, `animation mode`, `animation seconds`, `entities`, `blocks`, `integrity`, and `seed`.
 
 ### `/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includeEntities: Boolean] [includeBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
 
@@ -66,9 +64,6 @@ A `string` that specifies the name of the structure. May include a namespace.
 - `rotation`: Rotation
 An `enum` of the rotation when loading in a structure. Must be one of `0_degrees`, `90_degrees`, `180_degrees`, or `270_degrees`.
 Default: `none`.
-- `saveMode`: StructureSaveMode
-An `enum` of of either `disk` to save structure to the world database which persists between game loads, or `memory` that temporarily saves the structure.
-Default: `memory`.
 - `seed`: string
 A `string` that specifies the seed when loading in a block with variable integrity.
 - `to: x y z`: position
@@ -111,12 +106,3 @@ Enum of Structure Animation Mode
 Block by Block
 - `layer_by_layer`
 Layer by Layer
-
-### `StructureSaveMode`
-Enum of Structure Save Modes
-
-#### Values
-- `disk`
-Disk
-- `memory`
-Memory

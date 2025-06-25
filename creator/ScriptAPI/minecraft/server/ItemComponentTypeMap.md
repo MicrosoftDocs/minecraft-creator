@@ -12,6 +12,7 @@ description: Contents of the @minecraft/server.ItemComponentTypeMap type alias.
 ## Declaration
 ```ts
 type ItemComponentTypeMap = {
+  'book': ItemBookComponent;
   'compostable': ItemCompostableComponent;
   'cooldown': ItemCooldownComponent;
   'durability': ItemDurabilityComponent;
@@ -19,6 +20,7 @@ type ItemComponentTypeMap = {
   'enchantable': ItemEnchantableComponent;
   'food': ItemFoodComponent;
   'inventory': ItemInventoryComponent;
+  'minecraft:book': ItemBookComponent;
   'minecraft:compostable': ItemCompostableComponent;
   'minecraft:cooldown': ItemCooldownComponent;
   'minecraft:durability': ItemDurabilityComponent;
