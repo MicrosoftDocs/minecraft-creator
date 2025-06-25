@@ -1,6 +1,6 @@
 ---
 author: mammerla
-ms.author: v-kimjeff
+ms.author: v-cwilkerson
 title: Introduction to Entity Families
 description: "An article discussing how entity families work and how to add customized behaviors to entities using family tags."
 ms.service: minecraft-bedrock-edition
