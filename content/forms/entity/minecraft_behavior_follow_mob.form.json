@@ -161,7 +161,7 @@
                       {
                         "test": "is_family",
                         "subject": "other",
-                        "value": "wolf "
+                        "value": "wolf"
                       }
                     ]
                   }
@@ -443,7 +443,7 @@
                     {
                       "test": "is_family",
                       "subject": "other",
-                      "value": "wolf "
+                      "value": "wolf"
                     }
                   ]
                 }

@@ -420,6 +420,14 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:adult/minecraft:experience_reward/",
+          "content": {
+            "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/hoglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:experience_reward/",
