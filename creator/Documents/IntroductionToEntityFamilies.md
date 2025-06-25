@@ -56,7 +56,7 @@ Here is a list of the current entity families in Minecraft Bedrock Edition:
 | `wither` | Wither, Wither Skeleton |
 | `zombie` | Drowned, Husk, Zombie, Zombie Villager |
 
-These entity families only contain one entity, but they may be expanded in later releases as we add new entities to Minecraft!
+The following entity families only contain one entity, but they may be expanded in later releases as we add new entities to Minecraft:
 
 | Family  | Entities in this Family |
 |---------|-------------------------|
