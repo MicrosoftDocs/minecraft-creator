@@ -1,0 +1,17 @@
+{
+  "id": "minecraft:surface_builder",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:surface_builder",
+    "title": "Minecraft Surface Builder Biome",
+    "description": "Controls the materials used for terrain generation.",
+    "fields": [
+      {
+        "id": "builder",
+        "title": "Builder",
+        "description": "Controls the block types used for terrain generation.",
+        "dataType": 16
+      }
+    ]
+  }
+}

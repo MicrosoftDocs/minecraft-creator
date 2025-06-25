@@ -48,8 +48,6 @@ Players use [Shaped Recipes](./../Reference/Content/RecipeReference/Examples/Rec
 
 [Shapeless recipes](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Shapeless.md) are any recipes that don't require a dedicated pattern to generate the output assigned to them. As a creator, you can also leverage resource and behavior packs to edit and create new shapeless recipes, but the parameters used differ slightly.
 
-#### Parameters
-
 | Name | Description | Type(s) |
 |--------------|-----------|------------|
 |Tags | Define items that can be used to create a recipe |Both |
@@ -63,7 +61,6 @@ Players use [Shaped Recipes](./../Reference/Content/RecipeReference/Examples/Rec
 
 These are recipes that require a furnace to generate the output assigned to them. When players place the correct item(s) into the furnace (the ones you define as an `input` in the table's JSON), they transform into the corresponding `output` assigned in the table. Check out the [furnace reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_Furnace.md) for examples and a more detailed explanation of furnace recipe tables. 
 
-#### Parameters
 | Name | Description |
 |--------------|-----------|
 |Tags | Define items that can be used to create a recipe |
@@ -75,8 +72,6 @@ These are recipes that require a furnace to generate the output assigned to them
 
 Potions require players to use both a potion brewing mix and a potion brewing container, which is created at a potion brewing station. As a creator, you can use  [resource](./ResourcePack.md) and [behavior packs](./BehaviorPack.md) to tweak the parameters for these potions, stations, and containers. Check out our [potion brewing mix reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_PotionBrewingMix.md) for examples and a more detailed explanation of potion brewing tables. 
 
-
-#### Parameters
 | Name | Description |
 |--------------|-----------|
 |Tags | Define items that can be used to create a recipe |
@@ -88,8 +83,6 @@ Potions require players to use both a potion brewing mix and a potion brewing co
 ### Smithing Transform Recipes
 
 Players use Smithing Transform recipes at a smithing table to retain an item's properties while transforming it into another item.  Check out our [reference documentation](./../Reference/Content/RecipeReference/Examples/RecipeDefinitions/minecraftRecipe_SmithingTransform.md) for examples and a more detailed explanation of smithing transform recipes.
-
-#### Parameters
 
 | Name | Description |
 |--------------|-----------|

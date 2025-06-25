@@ -13,6 +13,11 @@ The SettingsManager (accessible from the [*@minecraft/server-editor.ExtensionCon
 
 ## Properties
 
+### **audio**
+`read-only audio: AudioSettings;`
+
+Type: [*AudioSettings*](AudioSettings.md)
+
 ### **graphics**
 `read-only graphics: GraphicsSettings;`
 

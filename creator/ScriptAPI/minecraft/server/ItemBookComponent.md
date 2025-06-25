@@ -1,0 +1,247 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server.ItemBookComponent Class
+description: Contents of the @minecraft/server.ItemBookComponent class.
+monikerRange: "=minecraft-bedrock-experimental"
+---
+# ItemBookComponent Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+## Extends
+- [*ItemComponent*](ItemComponent.md)
+
+When present on an item, this item is a book item. Can access and modify the contents of the book and sign it.
+
+## Properties
+
+### **author**
+`read-only author?: string;`
+
+The name of the author of the book if it is signed, otherwise undefined.
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **contents**
+`read-only contents: (string | undefined)[];`
+
+The contents of pages in the book that are in string format. Entries not in string format will be undefined.
+
+Type: (*string* | *undefined*)[]
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **isSigned**
+`read-only isSigned: boolean;`
+
+Determines whether the book has been signed or not.
+
+Type: *boolean*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **pageCount**
+`read-only pageCount: number;`
+
+The amount of pages the book has.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **rawContents**
+`read-only rawContents: (RawMessage | undefined)[];`
+
+The contents of pages in the book that are in [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) format. Entries not in [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) format will be undefined.
+
+Type: ([*RawMessage*](RawMessage.md) | *undefined*)[]
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **title**
+`read-only title?: string;`
+
+The title of the book if it is signed, otherwise undefined.
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*InvalidItemStackError*](InvalidItemStackError.md)
+
+## Methods
+- [getPageContent](#getpagecontent)
+- [getRawPageContent](#getrawpagecontent)
+- [insertPage](#insertpage)
+- [removePage](#removepage)
+- [setContents](#setcontents)
+- [setPageContent](#setpagecontent)
+- [signBook](#signbook)
+
+### **getPageContent**
+`
+getPageContent(pageIndex: number): string | undefined
+`
+
+Gets the string format content of a page for a given index.
+
+#### **Parameters**
+- **pageIndex**: *number*
+  
+  The index of the page.
+
+**Returns** *string* | *undefined* - The content of the page if a valid index is provided and it is in string format, otherwise returns undefined.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **getRawPageContent**
+`
+getRawPageContent(pageIndex: number): RawMessage | undefined
+`
+
+Gets the [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) format content of a page for a given index.
+
+#### **Parameters**
+- **pageIndex**: *number*
+  
+  The index of the page.
+
+**Returns** [*RawMessage*](RawMessage.md) | *undefined* - The content of the page if a valid index is provided and it is in [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) format, otherwise returns undefined.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **insertPage**
+`
+insertPage(pageIndex: number, content: (RawMessage | string)[] | RawMessage | string): void
+`
+
+Inserts a page at a given index. Empty pages will be created if the index is greater than the current book size.
+
+Pages have a maximum limit of 256 characters for strings as well as the JSON representation of a [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md).
+
+Books have a maximum limit of 50 pages.
+
+#### **Parameters**
+- **pageIndex**: *number*
+  
+  The index of the page.
+- **content**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
+  
+  The content to set for the page. Can be a single string or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) or an array of strings and/or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md)s
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*BookError*](BookError.md), [*BookPageContentError*](BookPageContentError.md), [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **removePage**
+`
+removePage(pageIndex: number): void
+`
+
+Removes a page at a given index. Existing pages following this page will be moved backward to fill the empty space.
+
+#### **Parameters**
+- **pageIndex**: *number*
+  
+  The index of the page.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **setContents**
+`
+setContents(contents: ((RawMessage | string)[] | RawMessage | string)[]): void
+`
+
+Sets the contents of the book's pages. Pre-existing pages will be cleared.
+
+Pages have a maximum limit of 256 characters for strings as well as the JSON representation of a [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md).
+
+Books have a maximum limit of 50 pages.
+
+#### **Parameters**
+- **contents**: (([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*)[]
+  
+  An array of each page's contents. Each page can be a single string or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) or an array of strings and/or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md)s.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*BookError*](BookError.md), [*BookPageContentError*](BookPageContentError.md), [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **setPageContent**
+`
+setPageContent(pageIndex: number, content: (RawMessage | string)[] | RawMessage | string): void
+`
+
+Sets or creates the content of a specific page. Empty pages will be created if the index is greater than the current book size.
+
+Pages have a maximum limit of 256 characters for strings as well as the JSON representation of a [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md).
+
+Books have a maximum limit of 50 pages.
+
+#### **Parameters**
+- **pageIndex**: *number*
+  
+  The index of the page.
+- **content**: ([*RawMessage*](RawMessage.md) | *string*)[] | [*RawMessage*](RawMessage.md) | *string*
+  
+  The content to set for the page. Can be a single string or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) or an array of strings and/or [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md)s
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*BookError*](BookError.md), [*BookPageContentError*](BookPageContentError.md), [*InvalidItemStackError*](InvalidItemStackError.md)
+
+### **signBook**
+`
+signBook(title: string, author: string): void
+`
+
+Signs a book giving it a title and author name. Once signed players can no longer directly edit the book.
+
+Titles have a maximum character limit of 16.
+
+#### **Parameters**
+- **title**: *string*
+  
+  The title to give the book.
+- **author**: *string*
+  
+  The name of the book's author.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*BookError*](BookError.md), [*InvalidEntityError*](InvalidEntityError.md), [*InvalidItemStackError*](InvalidItemStackError.md)
+
+## Constants
+
+### **componentId**
+`static read-only componentId = "minecraft:book";`
+
+Type: *string*

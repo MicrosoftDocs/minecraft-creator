@@ -1,0 +1,16 @@
+{
+  "id": "minecraft:humidity",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:humidity",
+    "title": "Minecraft Humidity Biome",
+    "description": "Forces a biome to ether always be humid or never humid. Humidity effects the spread chance, and spread rate of fire in the biome",
+    "fields": [
+      {
+        "id": "is_humid",
+        "title": "Is Humid",
+        "dataType": 1
+      }
+    ]
+  }
+}
