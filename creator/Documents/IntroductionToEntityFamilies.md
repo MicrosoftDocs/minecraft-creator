@@ -159,3 +159,20 @@ The following entity families only contain one entity, but they may be expanded 
 Believe it or not, all of that was just the beginning! You can also create your own custom entity families and really take the customization to another level. With entities in a custom family, you can create unique behaviors (or even whole game modes!) based on the relationships between the entities in your world.
 
 Keep in mind that you cannot directly add an entity family to an existing entity. If you want to achieve this, the best thing to do is to create a custom entity that is identical to the vanilla entity, but with your custom family tag included.
+
+The following example shows the type family component for a vanilla cow entity with an added custom family tag called `custom`.
+
+```json
+{
+ "components": {
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:type_family": {
+                "family": [
+                    "cow",
+                    "mob",
+                    "custom"
+                ]
+            },
+        }
+}
+```
