@@ -5,7 +5,7 @@ summary: "The Casual Creator section features regular content on ideas and sampl
 
 metadata:
   title: Casual Creator # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: "The Casual Creator section features regular ideas and samples you can build, learn from, and use. Come back often for more ideas!"  # Required; article description that is displayed in search results. < 160 chars.
+  description: "The Casual Creator section features regular ideas and samples you can build, learn from, and use. Come back often for more ideas!" # Required; article description that is displayed in search results. < 160 chars.
   ms.service: minecraft-bedrock-edition
   ms.topic: landing-page # Required
   author: mammerla #Required; your GitHub user alias, with correct capitalization.
@@ -15,24 +15,26 @@ metadata:
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
+  # Cards and links should be based on top customer tasks or top subjects
+  # Start card title with a verb
   # Card (optional)
   - title: Chill Dreams Add-on
     linkLists:
       - linkListType: learn
         links:
-           - text: Part 1 - The Dream Turkey
-             url: ./ChillDreamsPart1TheDreamTurkey.md
-           - text: Part 2 - Making Dreams Come True
-             url: ./ChillDreamsPart2MakingDreamsComeTrue.md
-           - text: Part 3 - Smells Like Memories
-             url: ./ChillDreamsPart3SmellsLikeMemories.md       
+          - text: Part 1 - The Dream Turkey
+            url: ./ChillDreamsPart1TheDreamTurkey.md
+          - text: Part 2 - Making Dreams Come True
+            url: ./ChillDreamsPart2MakingDreamsComeTrue.md
+          - text: Part 3 - Smells Like Memories
+            url: ./ChillDreamsPart3SmellsLikeMemories.md
   - title: More articles
     linkLists:
       - linkListType: learn
         links:
-           - text: Add your cat to Minecraft
-             url: ./AddYourCatToMinecraft.md
-           - text: Building Debug Tools
-             url: ./DebugTools.md
+          - text: Build a Tower Defense Add-On
+            url: ./build-tower-defense.md
+          - text: Add your cat to Minecraft
+            url: ./AddYourCatToMinecraft.md
+          - text: Building Debug Tools
+            url: ./DebugTools.md
