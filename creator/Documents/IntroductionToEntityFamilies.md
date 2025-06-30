@@ -23,7 +23,7 @@ For more information on how to use components to affect entity behavior, see [En
 
 ## List of Entity Families
 
-Here is a list of the current entity families in Minecraft Bedrock Edition:
+Here's a list of the current shared entity families in Minecraft Bedrock Edition:
 
 | Family  | Entities in this Family |
 |---------|-------------------------|
