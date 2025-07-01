@@ -15,7 +15,7 @@ Use the Line to quickly draw borders, outlines, and other line-based shapes in y
 
 ## Algorithm
 
-![Line Tool in Action](media/LineScreenshots/LineTool.png)
+![Direct algorithm options](media/LineScreenshots/LineTool.png)
 
 -	### Direct
     Draws a straight line from your Start to End point.
