@@ -1,0 +1,18 @@
+{
+  "files": [
+    "add_component_group.form.json",
+    "emit_particle.form.json",
+    "emit_vibration.form.json",
+    "overview.form.json",
+    "play_sound.form.json",
+    "queue_command.form.json",
+    "randomize_node.form.json",
+    "remove_component_group.form.json",
+    "reset_target.form.json",
+    "sequence_node.form.json",
+    "set_property.form.json",
+    "trigger.form.json",
+    "versioned_changes.form.json"
+  ],
+  "folders": []
+}

@@ -24,6 +24,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/happy_ghast.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:renders_when_invisible/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/phantom.json": [
         {
           "path": "/minecraft:entity/components/minecraft:renders_when_invisible/",

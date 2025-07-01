@@ -1,0 +1,25 @@
+{
+  "id": "3.0.0.Subpack",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.Subpack",
+    "title": "3.0.0.Subpack",
+    "fields": [
+      {
+        "id": "folder_name",
+        "title": "Folder Name",
+        "dataType": 2
+      },
+      {
+        "id": "memory_tier",
+        "title": "Memory Tier",
+        "dataType": 0
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "dataType": 2
+      }
+    ]
+  }
+}

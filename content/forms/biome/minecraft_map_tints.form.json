@@ -1,0 +1,31 @@
+{
+  "id": "minecraft:map_tints",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:map_tints",
+    "title": "Minecraft Map Tints Biome",
+    "description": "Sets the color grass and foliage will be tinted by in this biome on the map.",
+    "fields": [
+      {
+        "id": "foliage",
+        "title": "Foliage",
+        "description": "Sets the color foliage will be tinted by in this biome on the map.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "foliage",
+            "dataType": 32,
+            "minLength": 3,
+            "maxLength": 3
+          }
+        ]
+      },
+      {
+        "id": "grass",
+        "title": "Grass",
+        "description": "Controls whether the grass will use a custom tint color or a noise based tint color.",
+        "dataType": 16
+      }
+    ]
+  }
+}

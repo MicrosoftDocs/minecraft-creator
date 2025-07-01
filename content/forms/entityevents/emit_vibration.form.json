@@ -18,6 +18,7 @@
       ]
     }
   ],
+  "tags": ["entityevent"],
   "description": "Allows the entity to emit a vibration having the entity itself as its source.",
   "id": "emit_vibration",
   "title": "Emit Vibration",

@@ -455,6 +455,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
 - [EnchantmentLevelOutOfBoundsError](EnchantmentLevelOutOfBoundsError.md)
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
+- [EntitySpawnError](EntitySpawnError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
 - [InvalidEntityError](InvalidEntityError.md)
 - [InvalidIteratorError](InvalidIteratorError.md)

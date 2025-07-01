@@ -14,11 +14,11 @@ An interface that is passed into {@link @minecraft/Server-ui.ModalFormData.textF
 ## Properties
 
 ### **defaultValue**
-`defaultValue?: string;`
+`defaultValue?: minecraftserver.RawMessage | string;`
 
 The default value for the textfield.
 
-Type: *string*
+Type: [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) | *string*
 
 ### **tooltip**
 `tooltip?: minecraftserver.RawMessage | string;`

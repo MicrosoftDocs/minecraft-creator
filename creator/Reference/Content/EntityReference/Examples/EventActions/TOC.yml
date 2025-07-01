@@ -1,6 +1,6 @@
 - name: Entity Event List
   href: ../EventActions.md
-- name: Add Component Group
+- name: add_component_group
   href: add_component_group.md
 - name: emit_particle
   href: emit_particle.md
@@ -8,19 +8,19 @@
   href: emit_vibration.md
 - name: play_sound
   href: play_sound.md
-- name: Queue Command
+- name: queue_command
   href: queue_command.md
-- name: Randomize Node
+- name: randomize_node
   href: randomize_node.md
-- name: Remove Component Group
+- name: remove_component_group
   href: remove_component_group.md
 - name: reset_target
   href: reset_target.md
-- name: Sequence Node
+- name: sequence_node
   href: sequence_node.md
 - name: Set Entity Property
   href: set_entity_property.md
 - name: set_property
   href: set_property.md
-- name: Trigger
+- name: trigger
   href: trigger.md

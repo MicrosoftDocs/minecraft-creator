@@ -121,8 +121,7 @@
               "id": "entity_type",
               "title": "Entity Type",
               "description": "Specifies the entity type to spawn when selected",
-              "dataType": 2,
-              "alternates": []
+              "dataType": 16
             },
             {
               "id": "min_guaranteed",

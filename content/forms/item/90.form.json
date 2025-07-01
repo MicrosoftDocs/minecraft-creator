@@ -54,8 +54,7 @@
                     "id": "block",
                     "title": "Block",
                     "description": "Defines the block that will be placed.",
-                    "dataType": 2,
-                    "alternates": []
+                    "dataType": 16
                   },
                   {
                     "id": "replace_block_item",
@@ -569,14 +568,13 @@
                     "id": "entity",
                     "title": "Entity",
                     "description": "The entity to be placed in the world.",
-                    "dataType": 2,
+                    "dataType": 16,
                     "validity": [
                       {
                         "comparison": "pattern",
                         "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
                       }
-                    ],
-                    "alternates": []
+                    ]
                   },
                   {
                     "id": "use_on",
@@ -790,8 +788,7 @@
                         "id": "textures",
                         "title": "Textures",
                         "description": "This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes and bundle open textures can be specified here too. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file.",
-                        "dataType": 2,
-                        "alternates": []
+                        "dataType": 16
                       }
                     ]
                   }
@@ -888,14 +885,13 @@
                     "id": "projectile_entity",
                     "title": "Projectile Entity",
                     "description": "Which entity is to be fired as a projectile.",
-                    "dataType": 2,
+                    "dataType": 16,
                     "validity": [
                       {
                         "comparison": "pattern",
                         "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
                       }
-                    ],
-                    "alternates": []
+                    ]
                   }
                 ]
               }

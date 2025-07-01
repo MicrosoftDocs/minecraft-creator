@@ -1,6 +1,10 @@
 {
   "id": "entity_die",
   "title": "Entity Die",
-  "tags": ["script", "trigger", "container"],
+  "tags": [
+    "script",
+    "trigger",
+    "container"
+  ],
   "fields": []
 }

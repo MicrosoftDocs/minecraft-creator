@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.0.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.100-beta.22 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.100-beta.23 of Minecraft.
 
 ## Available Versions
 - `2.2.0-beta`
@@ -340,6 +340,7 @@ The following API versions are from a major version that is documented here: [*@
 - [LeverActionAfterEvent](LeverActionAfterEvent.md)
 - [LeverActionAfterEventSignal](LeverActionAfterEventSignal.md)
 - [ListBlockVolume](ListBlockVolume.md)
+- [LootTableManager](LootTableManager.md)
 - [MessageReceiveAfterEvent](MessageReceiveAfterEvent.md)
 - [MolangVariableMap](MolangVariableMap.md)
 - [PistonActivateAfterEvent](PistonActivateAfterEvent.md)
@@ -451,6 +452,7 @@ The following API versions are from a major version that is documented here: [*@
 - [CameraFadeOptions](CameraFadeOptions.md)
 - [CameraFadeTimeOptions](CameraFadeTimeOptions.md)
 - [CameraFixedBoomOptions](CameraFixedBoomOptions.md)
+- [CameraFovOptions](CameraFovOptions.md)
 - [CameraSetFacingOptions](CameraSetFacingOptions.md)
 - [CameraSetLocationOptions](CameraSetLocationOptions.md)
 - [CameraSetPosOptions](CameraSetPosOptions.md)
@@ -530,6 +532,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EnchantmentLevelOutOfBoundsError](EnchantmentLevelOutOfBoundsError.md)
 - [EnchantmentTypeNotCompatibleError](EnchantmentTypeNotCompatibleError.md)
 - [EnchantmentTypeUnknownIdError](EnchantmentTypeUnknownIdError.md)
+- [EntitySpawnError](EntitySpawnError.md)
 - [InvalidContainerError](InvalidContainerError.md)
 - [InvalidContainerSlotError](InvalidContainerSlotError.md)
 - [InvalidEntityError](InvalidEntityError.md)

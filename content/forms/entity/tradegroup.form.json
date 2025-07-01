@@ -94,8 +94,7 @@
                   {
                     "id": "item",
                     "title": "Item",
-                    "dataType": 2,
-                    "alternates": []
+                    "dataType": 16
                   },
                   {
                     "id": "price_multiplier",
@@ -252,8 +251,7 @@
                   {
                     "id": "item",
                     "title": "Item",
-                    "dataType": 2,
-                    "alternates": []
+                    "dataType": 16
                   },
                   {
                     "id": "price_multiplier",

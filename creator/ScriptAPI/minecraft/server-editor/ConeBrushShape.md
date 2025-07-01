@@ -25,6 +25,9 @@ new ConeBrushShape(settings: {
         width?: number;
         height?: number;
         depth?: number;
+        xRotation?: number;
+        yRotation?: number;
+        zRotation?: number;
     })
 `
 
@@ -37,6 +40,9 @@ Constructs a new instance of the `ConeBrushShape` class
         width?: number;
         height?: number;
         depth?: number;
+        xRotation?: number;
+        yRotation?: number;
+        zRotation?: number;
     }*
 
 **Returns** *ConeBrushShape*

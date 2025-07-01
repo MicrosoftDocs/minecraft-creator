@@ -1,5 +1,9 @@
 {
   "fields": [],
+  "tags": [
+    "conditional",
+    "entityevent"
+  ],
   "generated_doNotEdit": {
     "id": "is_variant",
     "title": "Is Variant",

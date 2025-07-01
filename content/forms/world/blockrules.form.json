@@ -43,42 +43,13 @@
               "id": "output_state",
               "title": "Output State",
               "description": "Block to replace the world block with if all predicates evaluate to true.",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "output_state",
-                  "dataType": 16,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "output_state",
-                    "title": "Output State",
-                    "fields": [
-                      {
-                        "id": "name",
-                        "title": "Name",
-                        "description": "Name of the block",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "states",
-                        "title": "States",
-                        "description": "Contains members named after each state, with boolean, integer, or string values.",
-                        "dataType": 31,
-                        "alternates": [
-                          {
-                            "id": "states",
-                            "dataType": 27
-                          },
-                          {
-                            "id": "states",
-                            "dataType": 24
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                }
-              ]
+              "dataType": 16,
+              "subForm": {
+                "id": "output_state",
+                "title": "Output State",
+                "fields": []
+              },
+              "alternates": []
             },
             {
               "id": "position_predicate",

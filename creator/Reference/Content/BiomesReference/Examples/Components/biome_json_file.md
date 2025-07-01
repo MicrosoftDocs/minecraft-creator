@@ -41,6 +41,7 @@ Any components that this Biome uses.
 | minecraft:climate | *not set* | [Climate](#climate-item-type) item | Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values. |  | 
 | minecraft:creature_spawn_probability | *not set* | [Creature Spawn Probability](#creature-spawn-probability-item-type) item | Probability that creatures will spawn within the biome when a chunk is generated. |  | 
 | minecraft:humidity | *not set* | [Humidity](#humidity-item-type) item | Forces a biome to ether always be humid or never humid. Humidity effects the spread chance, and spread rate of fire in the biome |  | 
+| minecraft:map_tints | *not set* | [Map Tints](#map-tints-item-type) item | Sets the color grass and foliage will be tinted by in this biome on the map. |  | 
 | minecraft:mountain_parameters | *not set* | [Mountain Parameters](#mountain-parameters-item-type) item | Noise parameters used to drive mountain terrain generation in Overworld. |  | 
 | minecraft:multinoise_generation_rules | *not set* | [Multinoise Generation Rules](#multinoise-generation-rules-item-type) item | Controls how this biome is instantiated (and then potentially modified) during world generation of the nether. |  | 
 | minecraft:overworld_generation_rules | *not set* | [Overworld Generation Rules](#overworld-generation-rules-item-type) item | Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld. |  | 
@@ -87,6 +88,18 @@ Forces a biome to ether always be humid or never humid. Humidity effects the spr
 |:----------|:-------------|:----|:-----------|:------------- |
 | is_humid | *not set* | Boolean true/false |  |  | 
 
+## Map Tints item type
+Sets the color grass and foliage will be tinted by in this biome on the map.
+
+
+#### Map Tints Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| foliage | *not set* | String | Sets the color foliage will be tinted by in this biome on the map. |  | 
+| foliage (Alternate 1) | *not set* | Array of numbers |  |  | 
+| grass | *not set* | Object | Controls whether the grass will use a custom tint color or a noise based tint color. |  | 
+
 ## Mountain Parameters item type
 Noise parameters used to drive mountain terrain generation in Overworld.
 
@@ -107,22 +120,10 @@ Defines surface material for steep slopes.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | east_slopes | *not set* | Boolean true/false | Enable for east-facing slopes |  | 
-| material | *not set* | Keyed set of strings | Block type use as steep material |  | 
-| material (Alternate 1) | *not set* | [Material (Alternate 1)](#material-(alternate-1)-item-type) item |  |  | 
+| material | *not set* | Object | Block type use as steep material |  | 
 | north_slopes | *not set* | Boolean true/false | Enable for north-facing slopes |  | 
 | south_slopes | *not set* | Boolean true/false | Enable for south-facing slopes |  | 
 | west_slopes | *not set* | Boolean true/false | Enable for west-facing slopes |  | 
-
-## Material (Alternate 1) item type
-
-#### Material Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
 
 ## Top Slide item type
 Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high.
@@ -158,17 +159,13 @@ Controls how this biome is instantiated (and then potentially modified) during w
 |:----------|:-------------|:----|:-----------|:------------- |
 | generate_for_climates | *not set* | Array of objects | Controls the world generation climate categories that this biome can spawn for. A single biome can be associated with multiple categories with different weightings. |  | 
 | hills_transformation | *not set* | Array of strings | What biome to switch to when converting to a hilly biome |  | 
-| hills_transformation (Alternate 1) | *not set* | Keyed set of strings |  |  | 
-| hills_transformation (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+| hills_transformation (Alternate 1) | *not set* | Object |  |  | 
 | mutate_transformation | *not set* | Array of strings | What biome to switch to when converting to a mutated biome |  | 
-| mutate_transformation (Alternate 1) | *not set* | Keyed set of strings |  |  | 
-| mutate_transformation (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+| mutate_transformation (Alternate 1) | *not set* | Object |  |  | 
 | river_transformation | *not set* | Array of strings | What biome to switch to when converting to a river biome (if not the Vanilla 'river' biome) |  | 
-| river_transformation (Alternate 1) | *not set* | Keyed set of strings |  |  | 
-| river_transformation (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+| river_transformation (Alternate 1) | *not set* | Object |  |  | 
 | shore_transformation | *not set* | Array of strings | What biome to switch to when adjacent to an ocean biome |  | 
-| shore_transformation (Alternate 1) | *not set* | Keyed set of strings |  |  | 
-| shore_transformation (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+| shore_transformation (Alternate 1) | *not set* | Object |  |  | 
 
 ## Overworld Height item type
 Noise parameters used to drive terrain height in the Overworld.
@@ -202,7 +199,7 @@ Represents the replacement information used to determine the placement of the ov
 | amount | *not set* | Decimal number | Noise value used to determine whether or not the replacement is attempted, similar to a percentage. Must be in the range (0.0, 1.0]. Value must be <= 1. |  | 
 | dimension | *not set* | String | Dimension in which this replacement can happen. Must be 'minecraft:overworld'. |  | 
 | noise_frequency_scale | *not set* | Decimal number | Scaling value used to alter the frequency of replacement attempts. A lower frequency will mean a bigger contiguous biome area that occurs less often. A higher frequency will mean smaller contiguous biome areas that occur more often. Must be in the range (0.0, 100.0]. Value must be <= 100. |  | 
-| targets | *not set* | String | Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces. Value must have at least 1 items. |  | 
+| targets | *not set* | Array of objects | Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces. Value must have at least 1 items. |  | 
 
 ## Surface Builder item type
 Controls the materials used for terrain generation.
@@ -247,71 +244,11 @@ The specific blocks used for this surface adjustment.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| foundation_material | *not set* | Keyed set of strings | Controls the block type used deep underground in this biome when this adjustment is active. |  | 
-| foundation_material (Alternate 1) | *not set* | [Foundation Material (Alternate 1)](#foundation-material-(alternate-1)-item-type) item |  |  | 
-| mid_material | *not set* | Keyed set of strings | Controls the block type used in a layer below the surface of this biome when this adjustment is active. |  | 
-| mid_material (Alternate 1) | *not set* | [Mid Material (Alternate 1)](#mid-material-(alternate-1)-item-type) item |  |  | 
-| sea_floor_material | *not set* | Keyed set of strings | Controls the block type used as a floor for bodies of water in this biome when this adjustment is active. |  | 
-| sea_floor_material (Alternate 1) | *not set* | [Sea Floor Material (Alternate 1)](#sea-floor-material-(alternate-1)-item-type) item |  |  | 
-| sea_material | *not set* | Keyed set of strings | Controls the block type used in the bodies of water in this biome when this adjustment is active. |  | 
-| sea_material (Alternate 1) | *not set* | [Sea Material (Alternate 1)](#sea-material-(alternate-1)-item-type) item |  |  | 
-| top_material | *not set* | Keyed set of strings | Controls the block type used for the surface of this biome when this adjustment is active. |  | 
-| top_material (Alternate 1) | *not set* | [Top Material (Alternate 1)](#top-material-(alternate-1)-item-type) item |  |  | 
-
-## Foundation Material (Alternate 1) item type
-
-#### Foundation Material Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
-
-## Mid Material (Alternate 1) item type
-
-#### Mid Material Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
-
-## Sea Floor Material (Alternate 1) item type
-
-#### Sea Floor Material Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
-
-## Sea Material (Alternate 1) item type
-
-#### Sea Material Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
-
-## Top Material (Alternate 1) item type
-
-#### Top Material Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| name | *not set* | Object | Name of the block |  | 
-| states | *not set* | Keyed set of numbers | Contains members named after each state, with boolean, integer, or string values. |  | 
-| states (Alternate 1) | *not set* | Keyed collection of boolean values |  |  | 
-| states (Alternate 2) | *not set* | Keyed set of strings |  |  | 
+| foundation_material | *not set* | Object | Controls the block type used deep underground in this biome when this adjustment is active. |  | 
+| mid_material | *not set* | Object | Controls the block type used in a layer below the surface of this biome when this adjustment is active. |  | 
+| sea_floor_material | *not set* | Object | Controls the block type used as a floor for bodies of water in this biome when this adjustment is active. |  | 
+| sea_material | *not set* | Object | Controls the block type used in the bodies of water in this biome when this adjustment is active. |  | 
+| top_material | *not set* | Object | Controls the block type used for the surface of this biome when this adjustment is active. |  | 
 
 ## Tags item type
 Attach arbitrary string tags to this biome.

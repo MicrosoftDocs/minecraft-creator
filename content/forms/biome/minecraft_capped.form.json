@@ -10,49 +10,25 @@
         "id": "beach_material",
         "title": "Beach Material",
         "description": "Material used to decorate surface near sea level.",
-        "dataType": 24,
-        "alternates": [
-          {
-            "id": "beach_material",
-            "dataType": 16,
-            "readOnly": true,
-            "subForm": {
-              "id": "beach_material",
-              "title": "Beach Material",
-              "fields": [
-                {
-                  "id": "name",
-                  "title": "Name",
-                  "description": "Name of the block",
-                  "dataType": 16
-                },
-                {
-                  "id": "states",
-                  "title": "States",
-                  "description": "Contains members named after each state, with boolean, integer, or string values.",
-                  "dataType": 31,
-                  "alternates": [
-                    {
-                      "id": "states",
-                      "dataType": 27
-                    },
-                    {
-                      "id": "states",
-                      "dataType": 24
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ]
+        "dataType": 16,
+        "subForm": {
+          "id": "beach_material",
+          "title": "Beach Material",
+          "fields": []
+        },
+        "alternates": []
       },
       {
         "id": "ceiling_materials",
         "title": "Ceiling Materials",
         "description": "Materials used for the surface ceiling.",
-        "dataType": 24,
+        "dataType": 15,
         "minLength": 1,
+        "subForm": {
+          "id": "ceiling_materials",
+          "title": "Ceiling Materials",
+          "fields": []
+        },
         "alternates": [
           {
             "id": "ceiling_materials",
@@ -93,8 +69,13 @@
         "id": "floor_materials",
         "title": "Floor Materials",
         "description": "Materials used for the surface floor.",
-        "dataType": 24,
+        "dataType": 15,
         "minLength": 1,
+        "subForm": {
+          "id": "floor_materials",
+          "title": "Floor Materials",
+          "fields": []
+        },
         "alternates": [
           {
             "id": "floor_materials",
@@ -135,83 +116,25 @@
         "id": "foundation_material",
         "title": "Foundation Material",
         "description": "Material used to replace solid blocks that are not surface blocks.",
-        "dataType": 24,
-        "alternates": [
-          {
-            "id": "foundation_material",
-            "dataType": 16,
-            "readOnly": true,
-            "subForm": {
-              "id": "foundation_material",
-              "title": "Foundation Material",
-              "fields": [
-                {
-                  "id": "name",
-                  "title": "Name",
-                  "description": "Name of the block",
-                  "dataType": 16
-                },
-                {
-                  "id": "states",
-                  "title": "States",
-                  "description": "Contains members named after each state, with boolean, integer, or string values.",
-                  "dataType": 31,
-                  "alternates": [
-                    {
-                      "id": "states",
-                      "dataType": 27
-                    },
-                    {
-                      "id": "states",
-                      "dataType": 24
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ]
+        "dataType": 16,
+        "subForm": {
+          "id": "foundation_material",
+          "title": "Foundation Material",
+          "fields": []
+        },
+        "alternates": []
       },
       {
         "id": "sea_material",
         "title": "Sea Material",
         "description": "Material used to replace air blocks below sea level.",
-        "dataType": 24,
-        "alternates": [
-          {
-            "id": "sea_material",
-            "dataType": 16,
-            "readOnly": true,
-            "subForm": {
-              "id": "sea_material",
-              "title": "Sea Material",
-              "fields": [
-                {
-                  "id": "name",
-                  "title": "Name",
-                  "description": "Name of the block",
-                  "dataType": 16
-                },
-                {
-                  "id": "states",
-                  "title": "States",
-                  "description": "Contains members named after each state, with boolean, integer, or string values.",
-                  "dataType": 31,
-                  "alternates": [
-                    {
-                      "id": "states",
-                      "dataType": 27
-                    },
-                    {
-                      "id": "states",
-                      "dataType": 24
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ]
+        "dataType": 16,
+        "subForm": {
+          "id": "sea_material",
+          "title": "Sea Material",
+          "fields": []
+        },
+        "alternates": []
       },
       {
         "id": "type",

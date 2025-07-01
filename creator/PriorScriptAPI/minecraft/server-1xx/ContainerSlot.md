@@ -360,7 +360,7 @@ Sets a specified property to a value.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 ### **setItem**
 `

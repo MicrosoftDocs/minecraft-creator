@@ -1,7 +1,10 @@
 {
   "id": "particle_spawn",
   "title": "Spawn Particle",
-  "tags": ["script", "action"],
+  "tags": [
+    "script",
+    "action"
+  ],
   "fields": [
     {
       "id": "location",

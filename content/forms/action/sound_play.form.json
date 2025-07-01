@@ -1,7 +1,10 @@
 {
   "id": "sound_play",
   "title": "Play Sound",
-  "tags": ["script", "action"],
+  "tags": [
+    "script",
+    "action"
+  ],
   "fields": [
     {
       "id": "location",

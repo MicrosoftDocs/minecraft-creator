@@ -1,7 +1,11 @@
 {
   "id": "tick",
   "title": "Tick",
-  "tags": ["script", "trigger", "container"],
+  "tags": [
+    "script",
+    "trigger",
+    "container"
+  ],
   "fields": [
     {
       "id": "everyNTicks",
