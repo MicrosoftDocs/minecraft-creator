@@ -148,6 +148,7 @@ Returns an array of all active players within the world.
   
 Notes:
 - This function can throw errors.
+  - Throws [*CommandError*](CommandError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 ### **getDay**
 `
@@ -345,7 +346,7 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
   
 Notes:
 - This function can throw errors.
-  - Throws if the provided EntityQueryOptions are invalid.
+  - Throws [*CommandError*](CommandError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 ### **getTimeOfDay**
 `
@@ -370,6 +371,7 @@ Plays a particular music track for all players.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
 #### Examples
 
@@ -423,10 +425,7 @@ Plays a sound for all players. DEPRECATED: Use Dimension.playSound.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - An error will be thrown if volume is less than 0.0.
-  - An error will be thrown if fade is less than 0.0.
-  - An error will be thrown if pitch is less than 0.01.
-  - An error will be thrown if volume is less than 0.0.
+  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
 #### Examples
 
@@ -480,9 +479,7 @@ Queues an additional music track for players. If a track is not playing, a music
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - An error will be thrown if volume is less than 0.0.
-  - An error will be thrown if fade is less than 0.0.
-  - 
+  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
 ### **sendMessage**
 `
@@ -564,7 +561,7 @@ Sets a specified property to a value.
   
 Notes:
 - This function can throw errors.
-  - Throws if the given dynamic property identifier is not defined.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
 
 #### Examples
 

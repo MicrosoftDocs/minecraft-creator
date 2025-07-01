@@ -1,6 +1,10 @@
 {
   "id": "player_join",
   "title": "Player Join",
-  "tags": ["script", "trigger", "container"],
+  "tags": [
+    "script",
+    "trigger",
+    "container"
+  ],
   "fields": []
 }

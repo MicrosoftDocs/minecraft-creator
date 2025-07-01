@@ -1,0 +1,20 @@
+{
+  "id": "3.0.0.LabelSetting",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.LabelSetting",
+    "title": "3.0.0.LabelSetting",
+    "fields": [
+      {
+        "id": "text",
+        "title": "Text",
+        "dataType": 2
+      },
+      {
+        "id": "type",
+        "title": "SettingType",
+        "dataType": 2
+      }
+    ]
+  }
+}

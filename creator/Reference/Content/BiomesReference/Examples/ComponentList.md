@@ -16,6 +16,7 @@ ms.date: 02/11/2025
 | [minecraft:frozen_ocean](Components/minecraftBiomes_frozen_ocean.md)| Similar to overworld_surface. |
 | [minecraft:frozen_ocean_surface](Components/minecraftBiomes_frozen_ocean_surface.md)| Similar to overworld_surface. |
 | [minecraft:humidity](Components/minecraftBiomes_humidity.md)| Forces a biome to ether always be humid or never humid. |
+| [minecraft:map_tints](Components/minecraftBiomes_map_tints.md)| Sets the color grass and foliage will be tinted by in this biome on the map. |
 | [minecraft:mesa](Components/minecraftBiomes_mesa.md)| Similar to overworld_surface. |
 | [minecraft:mesa_surface](Components/minecraftBiomes_mesa_surface.md)| Similar to overworld_surface. |
 | [minecraft:mountain_parameters](Components/minecraftBiomes_mountain_parameters.md)| Noise parameters used to drive mountain terrain generation in Overworld. |

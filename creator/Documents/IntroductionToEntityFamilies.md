@@ -1,9 +1,10 @@
 ---
 author: mammerla
-ms.author: v-kimjeff
+ms.author: v-cwilkerson
 title: Introduction to Entity Families
 description: "An article discussing how entity families work and how to add customized behaviors to entities using family tags."
 ms.service: minecraft-bedrock-edition
+ms.date: 06/25/2025
 ---
 
 # Entity Family
@@ -22,7 +23,40 @@ For more information on how to use components to affect entity behavior, see [En
 
 ## List of Entity Families
 
-Here is a list of the current entity families in Minecraft Bedrock Edition:
+Here's a list of the current shared entity families in Minecraft Bedrock Edition:
+
+| Family  | Entities in this Family |
+|---------|-------------------------|
+| `armorer` | Villager, Zombie Villager |
+| `arthropod` | Bee, Cave Spider, Endermite, Silverfish, Spider |
+| `butcher` | Villager, Zombie Villager |
+| `lightweight` | Endermite, Fox, Rabbit, Silverfish |
+| `cartographer` | Villager, Zombie Villager |
+| `cleric` | Villager, Zombie Villager |
+| `farmer` | Villager, Zombie Villager |
+| `fisherman` | Villager, Zombie Villager |
+| `fletcher` | Villager, Zombie Villager |
+| `monster` | Blaze, Cave Spider, Creeper, Drowned, Elder Guardian, Enderman, Endermite, Evoker, Ghast, Guardian, Husk, Magma Cube, Phantom, Piglin, Piglin Brute, Pillager, Ravager, Shulker, Silverfish, Skeleton, Slime, Spider, Stray, Vex, Vindicator, Warden, Witch, Wither, Wither Skeleton, Zombie, Zombie Pigman, Zombie Villager |
+| `illager` | Evoker, Pillager, Ravager, Vindicator |
+| `inanimate` | Armor Stand, Boat, Camera, Minecart, Minecart with Chest, Minecart with Command Block, Minecart with Hopper, Minecart with TNT, TNT |
+| `leatherworker` | Villager, Zombie Villager |
+| `librarian` | Villager, Zombie Villager |
+| `stone_mason` | Villager, Zombie Villager |
+| `minecart` | Minecart, Minecart with Chest, Minecart with Command Block, Minecart with Hopper, Minecart with TNT |
+| `mob` | Allay, Armor Stand, Axolotl, Bat, Bee, Blaze, Camera, Cat, Cave Spider, Chicken, Cow, Creeper, Dolphin, Elder Guardian, Ender Dragon, Enderman, Endermite, Evoker, Fox, Frog, Ghast, Glow Squid, Guardian, Hoglin, Horse, Husk, Iron Golem, Llama, Magma Cube, Mooshroom, Mule, NPC, Ocelot, Panda, Parrot, Phantom, Pig, Pillager, Polar Bear, Rabbit, Ravager, Sheep, Shulker, Silverfish, Skeleton, Skeleton Horse, Slime, Snow Golem, Spider, Squid, Stray, Strider, Tadpole, Turtle, Vex, Villager, Vindicator, Wandering Trader, Warden, Witch, Wither, Wither Skeleton, Wolf, Zoglin, Zombie, Zombie Horse, Zombie Pigman, Zombie Villager |
+| `nitwit` | Villager, Zombie Villager |
+| `piglin` | Piglin, Piglin Brute |
+| `shepherd` | Villager, Zombie Villager |
+| `skeleton` | Skeleton, Stray, Wither, Wither Skeleton |
+| `fish` | Cod, Pufferfish, Salmon, Tropical Fish |
+| `squid` | Glow Squid, Squid |
+| `toolsmith` | Villager, Zombie Villager |
+| `undead` | Drowned, Husk, Phantom, Skeleton, Skeleton Horse, Stray, Wither, Wither Skeleton, Zoglin, Zombie, Zombie Horse, Zombie Pigman, Zombie Villager |
+| `weaponsmith` | Villager, Zombie Villager |
+| `wither` | Wither, Wither Skeleton |
+| `zombie` | Drowned, Husk, Zombie, Zombie Villager |
+
+The following entity families only contain one entity, but they may be expanded in later releases as we add new entities to Minecraft:
 
 | Family  | Entities in this Family |
 |---------|-------------------------|
@@ -61,95 +95,84 @@ Here is a list of the current entity families in Minecraft Bedrock Edition:
 | `magmacube` | Magma Cube          |
 | `mule` | Mule                     |
 | `mushroomcow` | Mooshroom         |
-| `npc` | NPC                                                                                                                                               |
-| `ocelot` | Ocelot                                                                                                                                         |
-| `panda` | Panda                                                                                                                                           |
-| `phantom` | Phantom                                                                                                                                       |
-| `pig` | Pig                                                                                                                                               |
-| `piglin_brute` | Piglin Brute                                                                                                                             |
-| `pillager` | Pillager                                                                                                                                     |
-| `player` | Player                                                                                                                                         |
-| `polarbear` | Polar Bear                                                                                                                                  |
-| `pufferfish` | Pufferfish                                                                                                                                 |
-| `rabbit` | Rabbit                                                                                                                                         |
-| `ravager` | Ravager                                                                                                                                       |
-| `salmon` | Salmon                                                                                                                                         |
-| `sheep` | Sheep                                                                                                                                           |
-| `shulker` | Shulker                                                                                                                                       |
-| `silverfish` | Silverfish                                                                                                                                 |
-| `skeletonhorse` | Skeleton Horse                                                                                                                          |
-| `slime` | Slime                                                                                                                                           |
-| `snowgolem` | Snow Golem                                                                                                                                  |
-| `spider` | Spider                                                                                                                                         |
-| `stray` | Stray                                                                                                                                           |
-| `strider` | Strider                                                                                                                                       |
-| `tadpole` | Tadpole                                                                                                                                       |
-| `tnt` | TNT                                                                                                                                               |
-| `tripodcamera` | Camera                                                                                                                                   |
-| `tropicalfish` | Tropical Fish                                                                                                                            |
-| `turtle` | Turtle                                                                                                                                         |
-| `vex` | Vex                                                                                                                                               |
-| `villager` | Villager                                                                                                                                     |
-| `vindicator` | Vindicator                                                                                                                                 |
-| `wandering_trader` | Wandering Trader                                                                                                                     |
-| `warden` | Warden                                                                                                                                         |
-| `witch` | Witch                                                                                                                                           |
-| `wolf` | Wolf                                                                                                                                             |
-| `zoglin` | Zoglin                                                                                                                                         |
-| `zombie_pigman` | Zombie Pigman                                                                                                                           |
-| `zombie_villager` | Zombie Villager                                                                                                                       |
-| `zombiehorse` | Zombie Horse                                                                                                                              |
-| `hoglin_adult` | Hoglin                                                                                                                                   |
-| `adult_piglin` | Piglin Brute                                                                                                                             |
-| `strider_adult` | Strider                                                                                                                                 |
-| `zoglin_adult` | Zoglin                                                                                                                                   |
-| `animal` | Goat                                                                                                                                           |
-| `armorer` | Villager, Zombie Villager                                                                                                                     |
-| `arthropod` | Bee, Cave Spider, Endermite, Silverfish, Spider                                                                                             |
-| `artisan` | Villager                                                                                                                                      |
-| `hoglin_baby` | Hoglin                                                                                                                                    |
-| `strider_baby` | Strider                                                                                                                                  |
-| `zoglin_baby` | Zoglin                                                                                                                                    |
-| `blacksmith` | Villager                                                                                                                                   |
-| `butcher` | Villager, Zombie Villager                                                                                                                     |
-| `lightweight` | Endermite, Fox, Rabbit, Silverfish                                                                                                        |
-| `cartographer` | Villager, Zombie Villager                                                                                                                |
-| `cleric` | Villager, Zombie Villager                                                                                                                      |
-| `wandering_trader_despawning` | Wandering Trader                                                                                                          |
-| `farmer` | Villager, Zombie Villager                                                                                                                      |
-| `fisherman` | Villager, Zombie Villager                                                                                                                   |
-| `fletcher` | Villager, Zombie Villager                                                                                                                    |
-| `monster` | Blaze, Cave Spider, Creeper, Drowned, Elder Guardian, Enderman, Endermite, Evoker, Ghast, Guardian, Husk, Magma Cube, Phantom, Piglin, Piglin Brute, Pillager, Ravager, Shulker, Silverfish, Skeleton, Slime, Spider, Stray, Vex, Vindicator, Warden, Witch, Wither, Wither Skeleton, Zombie, Zombie Pigman, Zombie Villager                                                                                                                                     |
-| `hoglin_huntable` | Hoglin                                                                                                                                |
-| `illager` | Evoker, Pillager, Ravager, Vindicator                                                                                                         |
-| `inanimate` | Armor Stand, Boat, Camera, Minecart, Minecart with Chest, Minecart with Command Block, Minecart with Hopper, Minecart with TNT, TNT         |
-| `leatherworker` | Villager, Zombie Villager                                                                                                               |
-| `librarian` | Villager, Zombie Villager                                                                                                                   |
-| `stone_mason` | Villager, Zombie Villager                                                                                                                 |
-| `minecart` | Minecart, Minecart with Chest, Minecart with Command Block, Minecart with Hopper, Minecart with TNT                                          |
-| `mob` | Allay, Armor Stand, Axolotl, Bat, Bee, Blaze, Camera, Cat, Cave Spider, Chicken, Cow, Creeper, Dolphin, Elder Guardian, Ender Dragon, Enderman, Endermite, Evoker, Fox, Frog, Ghast, Glow Squid, Guardian, Hoglin, Horse, Husk, Iron Golem, Llama, Magma Cube, Mooshroom, Mule, NPC, Ocelot, Panda, Parrot, Phantom, Pig, Pillager, Polar Bear, Rabbit, Ravager, Sheep, Shulker, Silverfish, Skeleton, Skeleton Horse, Slime, Snow Golem, Spider, Squid, Stray, Strider, Tadpole, Turtle, Vex, Villager, Vindicator, Wandering Trader, Warden, Witch, Wither, Wither Skeleton, Wolf, Zoglin, Zombie, Zombie Horse, Zombie Pigman, Zombie Villager                                                                                                                                             |
-| `nitwit` | Villager, Zombie Villager                                                                                                                      |
-| `peasant` | Villager                                                                                                                                      |
-| `piglin` | Piglin, Piglin Brute                                                                                                                           |
-| `piglin_hunter` | Piglin                                                                                                                                  |
-| `priest` | Village                                                                                                                                        |
-| `shepherd` | Villager, Zombie Villager                                                                                                                    |
-| `skeleton` | Skeleton, Stray, Wither, Wither Skeleton                                                                                                     |
-| `fish` | Cod, Pufferfish, Salmon, Tropical Fish                                                                                                           |
-| `squid` | Glow Squid, Squid                                                                                                                               |
-| `parrot_tame` | Parrot                                                                                                                                    |
-| `pacified` | Bee                                                                                                                                          |
-| `toolsmith` | Villager, Zombie Villager                                                                                                                   |
-| `undead` | Drowned, Husk, Phantom, Skeleton, Skeleton Horse, Stray, Wither, Wither Skeleton, Zoglin, Zombie, Zombie Horse, Zombie Pigman, Zombie Villager |
-| `unskilled` | Zombie Villager                                                                                                                             |
-| `weaponsmith` | Villager, Zombie Villager                                                                                                                 |
-| `parrot_wild` | Parrot                                                                                                                                    |
-| `wither` | Wither, Wither Skeleton                                                                                                                        |
-| `panda_aggressive` | Panda                                                                                                                                |
-| `zombie` | Drowned, Husk, Zombie, Zombie Villager                                                                                                         |
+| `npc` | NPC                       |
+| `ocelot` | Ocelot                 |
+| `panda` | Panda                   |
+| `phantom` | Phantom               |
+| `pig` | Pig                       |
+| `piglin_brute` | Piglin Brute     |
+| `pillager` | Pillager             |
+| `player` | Player                 |
+| `polarbear` | Polar Bear          |
+| `pufferfish` | Pufferfish         |
+| `rabbit` | Rabbit                 |
+| `ravager` | Ravager               |
+| `salmon` | Salmon                 |
+| `sheep` | Sheep                   |
+| `shulker` | Shulker               |
+| `silverfish` | Silverfish         |
+| `skeletonhorse` | Skeleton Horse  |
+| `slime` | Slime                   |
+| `snowgolem` | Snow Golem          |
+| `spider` | Spider                 |
+| `stray` | Stray                   |
+| `strider` | Strider               |
+| `tadpole` | Tadpole               |
+| `tnt` | TNT                       |
+| `tripodcamera` | Camera           |
+| `tropicalfish` | Tropical Fish    |
+| `turtle` | Turtle                 |
+| `vex` | Vex                       |
+| `villager` | Villager             |
+| `vindicator` | Vindicator         |
+| `wandering_trader` | Wandering Trader |
+| `warden` | Warden                 |
+| `witch` | Witch                   |
+| `wolf` | Wolf                     |
+| `zoglin` | Zoglin                 |
+| `zombie_pigman` | Zombie Pigman   |
+| `zombie_villager` | Zombie Villager |
+| `zombiehorse` | Zombie Horse      |
+| `hoglin_adult` | Hoglin           |
+| `adult_piglin` | Piglin Brute     |
+| `strider_adult` | Strider         |
+| `zoglin_adult` | Zoglin           |
+| `animal` | Goat                   |
+| `artisan` | Villager |
+| `hoglin_baby` | Hoglin |
+| `strider_baby` | Strider |
+| `zoglin_baby` | Zoglin |
+| `blacksmith` | Villager |
+| `wandering_trader_despawning` | Wandering Trader |
+| `hoglin_huntable` | Hoglin |
+| `peasant` | Villager |
+| `piglin_hunter` | Piglin |
+| `priest` | Village |
+| `parrot_tame` | Parrot |
+| `pacified` | Bee |
+| `parrot_wild` | Parrot |
+| `panda_aggressive` | Panda |
+| `unskilled` | Zombie Villager |
 
 ## Adding Custom Entity Families
 
 Believe it or not, all of that was just the beginning! You can also create your own custom entity families and really take the customization to another level. With entities in a custom family, you can create unique behaviors (or even whole game modes!) based on the relationships between the entities in your world.
 
 Keep in mind that you cannot directly add an entity family to an existing entity. If you want to achieve this, the best thing to do is to create a custom entity that is identical to the vanilla entity, but with your custom family tag included.
+
+The following example shows the type family component for a vanilla cow entity with an added custom family tag called `custom`.
+
+```json
+{
+ "components": {
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:type_family": {
+                "family": [
+                    "cow",
+                    "mob",
+                    "custom"
+                ]
+            },
+        }
+}
+```

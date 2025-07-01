@@ -305,7 +305,7 @@
       {
         "id": "pull_in_entities",
         "title": "Pull In Entities",
-        "description": "If true, this entity will pull in entities that are in the correct \"family_types\" into any available seats.",
+        "description": "If true, this entity will pull entities matching the specified \"family_types\" into any available seats. Entities that are leashed will only be pulled in if their distance to their leash holder is less than the \"hard_distance\" defined in their own \"minecraft:leashable\" component.",
         "defaultValue": false,
         "dataType": 1,
         "samples": {

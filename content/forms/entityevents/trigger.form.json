@@ -1,10 +1,24 @@
 {
   "fields": [],
+  "tags": [
+    "entityevent"
+  ],
   "scalarField": {
     "id": "trigger",
     "title": "Trigger Value",
     "dataType": 2
   },
+  "description": "Triggers additional entity events when hit. For example, you could use a randomize node in minecraft:entity_spawned to choose either an adult or baby event for adding component groups.",
+  "title": "Trigger",
+  "samples": {
+    "samples": [
+      {
+        "path": "Example:",
+        "content": "\t\t\"sample:spawn_adult\": {\r\n\t\t\t// add adult component groups\r\n\t\t},\r\n\t\t\"sample:spawn_baby\": {\r\n\t\t\t// add baby component groups\r\n\t\t},\r\n\t\t\"minecraft:entity_spawned\": {\r\n\t\t\t\"randomize\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"weight\": 50.0,\r\n\t\t\t\t\t\"trigger\": \"sample:spawn_adult\"\r\n\t\t\t\t},\r\n\t\t\t\t{\r\n\t\t\t\t\t\"weight\": 50.0,\r\n\t\t\t\t\t\"trigger\": \"sample:spawn_baby\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t"
+      }
+    ]
+  },
+  "id": "trigger",
   "generated_doNotEdit": {
     "id": "Trigger",
     "title": "Trigger",

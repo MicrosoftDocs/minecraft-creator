@@ -1,7 +1,10 @@
 {
   "id": "test_idle",
   "title": "Idle",
-  "tags": ["test", "action"],
+  "tags": [
+    "test",
+    "action"
+  ],
   "fields": [
     {
       "id": "idle",

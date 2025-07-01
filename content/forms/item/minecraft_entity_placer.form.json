@@ -128,14 +128,13 @@
         "id": "entity",
         "title": "Entity",
         "description": "The entity to be placed in the world.",
-        "dataType": 2,
+        "dataType": 16,
         "validity": [
           {
             "comparison": "pattern",
             "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
           }
         ],
-        "alternates": [],
         "samples": {
           "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
             {

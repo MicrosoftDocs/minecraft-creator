@@ -16,4 +16,4 @@ Sets the fog settings used during rendering. Biomes without this component will 
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| fog_identifier | *not set* | String | Identifier of fog definition to use |  | 
+| fog_identifier | *not set* | Object | Identifier of fog definition to use |  | 

@@ -26,6 +26,9 @@ new CuboidBrushShape(settings: {
         height?: number;
         depth?: number;
         minLength?: number;
+        xRotation?: number;
+        yRotation?: number;
+        zRotation?: number;
     })
 `
 
@@ -39,6 +42,9 @@ Constructs a new instance of the `CuboidBrushShape` class
         height?: number;
         depth?: number;
         minLength?: number;
+        xRotation?: number;
+        yRotation?: number;
+        zRotation?: number;
     }*
 
 **Returns** *CuboidBrushShape*

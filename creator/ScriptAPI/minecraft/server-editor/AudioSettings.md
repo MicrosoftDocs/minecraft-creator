@@ -17,29 +17,31 @@ description: Contents of the @minecraft/server-editor.AudioSettings class.
 
 ### **get**
 `
-"get"(property: AudioSettingsProperty): boolean | number | undefined
+"get"(property: T): AudioSettingsPropertyTypeMap[T] | undefined
 `
 
 #### **Parameters**
-- **property**: [*AudioSettingsProperty*](AudioSettingsProperty.md)
+- **property**: *T*
 
-**Returns** *boolean* | *number* | *undefined*
+**Returns** *AudioSettingsPropertyTypeMap[T] | undefined*
 
 ### **getAll**
 `
-getAll(): Record<string, boolean | number>
+getAll(): AudioSettingsPropertyTypeMap
 `
 
-**Returns** Record<*string*, *boolean* | *number*>
+**Returns** *AudioSettingsPropertyTypeMap*
 
 ### **set**
 `
-"set"(property: AudioSettingsProperty, value: boolean | number): void
+"set"(property: T, value: AudioSettingsPropertyTypeMap[T]): void
 `
 
 #### **Parameters**
-- **property**: [*AudioSettingsProperty*](AudioSettingsProperty.md)
-- **value**: *boolean* | *number*
+- **property**: *T*
+- **value**: *AudioSettingsPropertyTypeMap[T]*
+
+**Returns** *void*
   
 Notes:
 - This function can't be called in read-only mode.
@@ -47,11 +49,13 @@ Notes:
 
 ### **setAll**
 `
-setAll(properties: Record<string, boolean | number>): void
+setAll(properties: AudioSettingsPropertyTypeMap): void
 `
 
 #### **Parameters**
-- **properties**: Record<*string*, *boolean* | *number*>
+- **properties**: *AudioSettingsPropertyTypeMap*
+
+**Returns** *void*
   
 Notes:
 - This function can't be called in read-only mode.

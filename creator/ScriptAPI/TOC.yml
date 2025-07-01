@@ -604,6 +604,8 @@
       href: minecraft/server/LeverActionAfterEventSignal.md
     - name: ListBlockVolume
       href: minecraft/server/ListBlockVolume.md
+    - name: LootTableManager
+      href: minecraft/server/LootTableManager.md
     - name: MessageReceiveAfterEvent
       href: minecraft/server/MessageReceiveAfterEvent.md
     - name: MolangVariableMap
@@ -822,6 +824,8 @@
       href: minecraft/server/CameraFadeTimeOptions.md
     - name: CameraFixedBoomOptions
       href: minecraft/server/CameraFixedBoomOptions.md
+    - name: CameraFovOptions
+      href: minecraft/server/CameraFovOptions.md
     - name: CameraSetFacingOptions
       href: minecraft/server/CameraSetFacingOptions.md
     - name: CameraSetLocationOptions
@@ -1038,6 +1042,8 @@
       href: minecraft/server-editor/LayoutAlignment.md
     - name: LayoutDirection
       href: minecraft/server-editor/LayoutDirection.md
+    - name: LogChannel
+      href: minecraft/server-editor/LogChannel.md
     - name: MouseActionCategory
       href: minecraft/server-editor/MouseActionCategory.md
     - name: MouseActionType
@@ -1374,6 +1380,8 @@
       href: minecraft/server-editor/IPane.md
     - name: IPlayerLogger
       href: minecraft/server-editor/IPlayerLogger.md
+    - name: IPlayerLoggerProperties
+      href: minecraft/server-editor/IPlayerLoggerProperties.md
     - name: IProgressIndicatorPropertyItem
       href: minecraft/server-editor/IProgressIndicatorPropertyItem.md
     - name: IProgressIndicatorPropertyItemOptions

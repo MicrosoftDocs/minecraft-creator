@@ -175,6 +175,7 @@ Zoglin
 - `minecraft:breeze`
 - `minecraft:bogged`
 - `minecraft:creaking`
+- `minecraft:copper_golem`
 - `minecraft:minecart`
 Minecart
 - `minecraft:hopper_minecart`
@@ -373,6 +374,7 @@ Zoglin
 - `breeze`
 - `bogged`
 - `creaking`
+- `copper_golem`
 - `minecart`
 Minecart
 - `hopper_minecart`

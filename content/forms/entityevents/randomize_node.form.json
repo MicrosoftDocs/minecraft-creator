@@ -1,6 +1,16 @@
 {
   "fields": [],
   "description": "The 'randomize' node is an array node that will pick one entry to execute, based on a weight.\r\n\t\tIf no weight is specified, a node will have a weight of 1.0.\r\n\t\tIf you add a weight of 4.0 in one node, and 8.0 in another, then those nodes will have a 33.33% (4 / (4 + 8)) and 66.66% (8 / (4 + 8)) chance of executing, respectively.",
+  "title": "Randomize Node",
+  "samples": {
+    "samples": [
+      {
+        "path": "Example:",
+        "content": "\t\t\"randomize\": [\r\n\t\t\t{\r\n\t\t\t\t\"weight\": <float>\r\n\t\t\t\t// actions like 'add' or 'remove'\r\n\t\t\t}\r\n\t\t]\r\n\t"
+      }
+    ]
+  },
+  "id": "randomize_node",
   "generated_doNotEdit": {
     "id": "Randomize Node",
     "title": "Randomize Node",

@@ -1,7 +1,10 @@
 {
   "id": "music_play",
   "title": "Play Music",
-  "tags": ["script", "action"],
+  "tags": [
+    "script",
+    "action"
+  ],
   "fields": [
     {
       "id": "location",

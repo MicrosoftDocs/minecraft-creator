@@ -1,7 +1,10 @@
 {
   "id": "world_send_message",
   "title": "Send Message",
-  "tags": ["script", "action"],
+  "tags": [
+    "script",
+    "action"
+  ],
   "fields": [
     {
       "id": "message",

@@ -41,6 +41,10 @@ highlightedContent:
     - title: Minecraft Creator Tools
       itemType: whats-new
       url: Documents/MCToolsOverview.md
+    #card
+    - title: Tower Defense Add-On
+      itemType: sample
+      url: Casual/build-tower-defense.md
 
 # productDirectory section (optional)
 productDirectory:

@@ -69,6 +69,10 @@
       }
     }
   ],
+  "tags": [
+    "conditional",
+    "entityevent"
+  ],
   "generated_doNotEdit": {
     "id": "actor_health",
     "title": "Actor Health",

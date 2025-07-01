@@ -1,0 +1,36 @@
+{
+  "id": "3.0.0.ToggleSetting",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.ToggleSetting",
+    "title": "3.0.0.ToggleSetting",
+    "fields": [
+      {
+        "id": "default",
+        "title": "Default",
+        "dataType": 1
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "dataType": 2,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^(?:(?!^(minecraft):).)+:(?:.)+$"
+          }
+        ]
+      },
+      {
+        "id": "text",
+        "title": "Text",
+        "dataType": 2
+      },
+      {
+        "id": "type",
+        "title": "SettingType",
+        "dataType": 2
+      }
+    ]
+  }
+}

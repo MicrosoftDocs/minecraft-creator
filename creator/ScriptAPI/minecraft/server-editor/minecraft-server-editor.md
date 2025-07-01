@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.21.100-beta.22 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.21.100-beta.23 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -59,6 +59,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.100
 - [KeyProcessingState](KeyProcessingState.md)
 - [LayoutAlignment](LayoutAlignment.md)
 - [LayoutDirection](LayoutDirection.md)
+- [LogChannel](LogChannel.md)
 - [MouseActionCategory](MouseActionCategory.md)
 - [MouseActionType](MouseActionType.md)
 - [MouseInputType](MouseInputType.md)
@@ -87,6 +88,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.100
 - [Action](Action.md)
 - [ActionID](ActionID.md)
 - [ActivationFunctionType](ActivationFunctionType.md)
+- [AudioSettingsPropertyTypeMap](AudioSettingsPropertyTypeMap.md)
 - [BasicTooltipContent](BasicTooltipContent.md)
 - [ButtonPropertyItemSupportedActionTypes](ButtonPropertyItemSupportedActionTypes.md)
 - [ContinuousAction](ContinuousAction.md)
@@ -267,6 +269,7 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.100
 - [IObservable](IObservable.md)
 - [IPane](IPane.md)
 - [IPlayerLogger](IPlayerLogger.md)
+- [IPlayerLoggerProperties](IPlayerLoggerProperties.md)
 - [IProgressIndicatorPropertyItem](IProgressIndicatorPropertyItem.md)
 - [IProgressIndicatorPropertyItemOptions](IProgressIndicatorPropertyItemOptions.md)
 - [IPropertyItemBase](IPropertyItemBase.md)

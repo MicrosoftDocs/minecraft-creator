@@ -1,5 +1,5 @@
 {
-  "id": "set_block",
+  "id": "block_set",
   "title": "Set Block",
   "tags": ["script", "action"],
   "fields": [

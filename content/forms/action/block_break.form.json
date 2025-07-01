@@ -1,7 +1,10 @@
 {
   "id": "block_break",
   "title": "Block Break",
-  "tags": ["script", "action"],
+  "tags": [
+    "script",
+    "action"
+  ],
   "fields": [
     {
       "id": "location",

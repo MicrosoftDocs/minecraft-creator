@@ -1,7 +1,10 @@
 {
   "id": "test_simulated_player_move",
   "title": "Move Entity",
-  "tags": ["test", "action"],
+  "tags": [
+    "test",
+    "action"
+  ],
   "fields": [
     {
       "id": "location",

@@ -126,14 +126,13 @@
         "id": "projectile_entity",
         "title": "Projectile Entity",
         "description": "Which entity is to be fired as a projectile.",
-        "dataType": 2,
+        "dataType": 16,
         "validity": [
           {
             "comparison": "pattern",
             "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
           }
         ],
-        "alternates": [],
         "samples": {
           "/vanilla/behavior_pack/items/wind_charge.json": [
             {

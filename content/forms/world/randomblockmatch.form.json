@@ -10,8 +10,7 @@
         "id": "block",
         "title": "Block",
         "description": "The block to match against.",
-        "dataType": 2,
-        "alternates": []
+        "dataType": 2
       },
       {
         "id": "predicate_type",

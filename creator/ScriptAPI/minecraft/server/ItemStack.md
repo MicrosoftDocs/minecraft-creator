@@ -125,6 +125,9 @@ Type: *number*
 - [getDynamicPropertyIds](#getdynamicpropertyids)
 - [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
 - [getLore](#getlore)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getRawLore](#getrawlore)
+::: moniker-end
 - [getTags](#gettags)
 - [hasComponent](#hascomponent)
 - [hasTag](#hastag)
@@ -295,6 +298,20 @@ getLore(): string[]
 Returns the lore value - a secondary display string - for an ItemStack.
 
 **Returns** *string*[] - An array of lore lines. If the item does not have lore, returns an empty array.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getRawLore**
+`
+getRawLore(): RawMessage[]
+`
+
+Returns the lore value - a secondary display string - for an ItemStack. String lore lines will be converted to a [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) and put under [*@minecraft/server.RawMessage.text*](../../../scriptapi/minecraft/server/RawMessage.md#text).
+
+**Returns** [*RawMessage*](RawMessage.md)[] - An array of lore lines. If the item does not have lore, returns an empty array.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
 
 ### **getTags**
 `
@@ -470,6 +487,7 @@ Sets multiple dynamic properties with specific values.
   
 Notes:
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 ::: moniker-end
 
 ### **setDynamicProperty**
@@ -489,24 +507,24 @@ Sets a specified property to a value. Note: This function only works with non-st
   
 Notes:
 - This function can throw errors.
-  - Throws if the item stack is stackable.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 ### **setLore**
 `
-setLore(loreList?: string[]): void
+setLore(loreList?: (RawMessage | string)[]): void
 `
 
 Sets the lore value - a secondary display string - for an ItemStack. The lore list is cleared if set to an empty string or undefined.
 
 #### **Parameters**
-- **loreList**?: *string*[] = `null`
+- **loreList**?: ([*RawMessage*](RawMessage.md) | *string*)[] = `null`
   
   List of lore lines. Each element in the list represents a new line. The maximum lore line count is 20. The maximum lore line length is 50 characters.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*
 
 #### Examples
 
