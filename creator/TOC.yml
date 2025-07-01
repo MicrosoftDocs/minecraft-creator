@@ -430,7 +430,7 @@
               href: Documents/BedrockEditor/EditorTutorial.md
             - name: Action Bar
               href: Documents/BedrockEditor/EditorActionBar.md
-            - name: Deferred Lighting
+            - name: Vibrant Visuals
               href: Documents/BedrockEditor/EditorVibrantVisuals.md
             - name: Keyboard Inputs
               href: Documents/BedrockEditor/EditorKeyboardInputs.md
@@ -445,10 +445,12 @@
             
             - name: Tools
               items:
-              - name: Brush Tool
-                href: Documents/BedrockEditor/EditorBrushTool.md
               - name: Selection Tool
-                href: Documents/BedrockEditor/EditorSelectionTool.md  
+                href: Documents/BedrockEditor/EditorSelectionTool.md
+              - name: Brush Tool
+                href: Documents/BedrockEditor/EditorBrushTool.md  
+              - name: Pencil Tool
+                href: Documents/BedrockEditor/EditorPencilTool.md
               - name: Line Tool
                 href: Documents/BedrockEditor/EditorLineTool.md
               - name: Ruler Tool

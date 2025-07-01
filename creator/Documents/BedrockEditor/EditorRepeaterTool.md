@@ -11,6 +11,8 @@ ms.date: 05/19/2025
 
 The Repeater is used to repeat a selection of blocks to make pattern across a specific volume. You can use this tool to make repetitive block placement much more efficient. 
 
+![Repeater Tool used to create many houses](Media/GIFs/Repeater.gif)
+
 - **Spacing**: The size of the area between each repetition. If you leave the value for an axis at 0, the selection will not repeat along that axis. The maximum value for each axis is the size of your world, but keep in mind that setting very high values will likely cause the Editor to work considerably slower.
 
 - **Repetitions**: The number of times the pattern should repeat across the specified axes.  
