@@ -1,4 +1,8 @@
 {
+  "tags": [
+    "conditional",
+    "entityevent"
+  ],
   "id": "has_equipment_tag",
   "fields": [],
   "generated_doNotEdit": {

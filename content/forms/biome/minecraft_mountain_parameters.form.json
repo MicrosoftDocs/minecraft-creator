@@ -66,42 +66,13 @@
               "id": "material",
               "title": "Material",
               "description": "Block type use as steep material",
-              "dataType": 24,
-              "alternates": [
-                {
-                  "id": "material",
-                  "dataType": 16,
-                  "readOnly": true,
-                  "subForm": {
-                    "id": "material",
-                    "title": "Material",
-                    "fields": [
-                      {
-                        "id": "name",
-                        "title": "Name",
-                        "description": "Name of the block",
-                        "dataType": 16
-                      },
-                      {
-                        "id": "states",
-                        "title": "States",
-                        "description": "Contains members named after each state, with boolean, integer, or string values.",
-                        "dataType": 31,
-                        "alternates": [
-                          {
-                            "id": "states",
-                            "dataType": 27
-                          },
-                          {
-                            "id": "states",
-                            "dataType": 24
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                }
-              ]
+              "dataType": 16,
+              "subForm": {
+                "id": "material",
+                "title": "Material",
+                "fields": []
+              },
+              "alternates": []
             },
             {
               "id": "north_slopes",

@@ -116,6 +116,39 @@
               }
             },
             {
+              "id": "minecraft:map_tints",
+              "title": "Minecraft Map Tints",
+              "description": "Sets the color grass and foliage will be tinted by in this biome on the map.",
+              "dataType": 16,
+              "subForm": {
+                "id": "minecraft:map_tints",
+                "title": "Map Tints",
+                "description": "Sets the color grass and foliage will be tinted by in this biome on the map.",
+                "fields": [
+                  {
+                    "id": "foliage",
+                    "title": "Foliage",
+                    "description": "Sets the color foliage will be tinted by in this biome on the map.",
+                    "dataType": 2,
+                    "alternates": [
+                      {
+                        "id": "foliage",
+                        "dataType": 32,
+                        "minLength": 3,
+                        "maxLength": 3
+                      }
+                    ]
+                  },
+                  {
+                    "id": "grass",
+                    "title": "Grass",
+                    "description": "Controls whether the grass will use a custom tint color or a noise based tint color.",
+                    "dataType": 16
+                  }
+                ]
+              }
+            },
+            {
               "id": "minecraft:mountain_parameters",
               "title": "Minecraft Mountain Parameters",
               "description": "Noise parameters used to drive mountain terrain generation in Overworld.",
@@ -145,42 +178,13 @@
                           "id": "material",
                           "title": "Material",
                           "description": "Block type use as steep material",
-                          "dataType": 24,
-                          "alternates": [
-                            {
-                              "id": "material",
-                              "dataType": 16,
-                              "readOnly": true,
-                              "subForm": {
-                                "id": "material",
-                                "title": "Material",
-                                "fields": [
-                                  {
-                                    "id": "name",
-                                    "title": "Name",
-                                    "description": "Name of the block",
-                                    "dataType": 16
-                                  },
-                                  {
-                                    "id": "states",
-                                    "title": "States",
-                                    "description": "Contains members named after each state, with boolean, integer, or string values.",
-                                    "dataType": 31,
-                                    "alternates": [
-                                      {
-                                        "id": "states",
-                                        "dataType": 27
-                                      },
-                                      {
-                                        "id": "states",
-                                        "dataType": 24
-                                      }
-                                    ]
-                                  }
-                                ]
-                              }
-                            }
-                          ]
+                          "dataType": 16,
+                          "subForm": {
+                            "id": "material",
+                            "title": "Material",
+                            "fields": []
+                          },
+                          "alternates": []
                         },
                         {
                           "id": "north_slopes",
@@ -292,11 +296,12 @@
                     "alternates": [
                       {
                         "id": "hills_transformation",
-                        "dataType": 24
-                      },
-                      {
-                        "id": "hills_transformation",
-                        "dataType": 24
+                        "dataType": 16,
+                        "subForm": {
+                          "id": "hills_transformation",
+                          "title": "Hills Transformation",
+                          "fields": []
+                        }
                       }
                     ]
                   },
@@ -308,11 +313,12 @@
                     "alternates": [
                       {
                         "id": "mutate_transformation",
-                        "dataType": 24
-                      },
-                      {
-                        "id": "mutate_transformation",
-                        "dataType": 24
+                        "dataType": 16,
+                        "subForm": {
+                          "id": "mutate_transformation",
+                          "title": "Mutate Transformation",
+                          "fields": []
+                        }
                       }
                     ]
                   },
@@ -324,11 +330,12 @@
                     "alternates": [
                       {
                         "id": "river_transformation",
-                        "dataType": 24
-                      },
-                      {
-                        "id": "river_transformation",
-                        "dataType": 24
+                        "dataType": 16,
+                        "subForm": {
+                          "id": "river_transformation",
+                          "title": "River Transformation",
+                          "fields": []
+                        }
                       }
                     ]
                   },
@@ -340,11 +347,12 @@
                     "alternates": [
                       {
                         "id": "shore_transformation",
-                        "dataType": 24
-                      },
-                      {
-                        "id": "shore_transformation",
-                        "dataType": 24
+                        "dataType": 16,
+                        "subForm": {
+                          "id": "shore_transformation",
+                          "title": "Shore Transformation",
+                          "fields": []
+                        }
                       }
                     ]
                   }
@@ -438,9 +446,8 @@
                           "id": "targets",
                           "title": "Targets",
                           "description": "Biomes that are going to be replaced by the overriding biome. Target biomes must not contain namespaces.",
-                          "dataType": 2,
-                          "minLength": 1,
-                          "alternates": []
+                          "dataType": 15,
+                          "minLength": 1
                         }
                       ]
                     }
@@ -519,206 +526,61 @@
                                 "id": "foundation_material",
                                 "title": "Foundation Material",
                                 "description": "Controls the block type used deep underground in this biome when this adjustment is active.",
-                                "dataType": 24,
-                                "alternates": [
-                                  {
-                                    "id": "foundation_material",
-                                    "dataType": 16,
-                                    "readOnly": true,
-                                    "subForm": {
-                                      "id": "foundation_material",
-                                      "title": "Foundation Material",
-                                      "fields": [
-                                        {
-                                          "id": "name",
-                                          "title": "Name",
-                                          "description": "Name of the block",
-                                          "dataType": 16
-                                        },
-                                        {
-                                          "id": "states",
-                                          "title": "States",
-                                          "description": "Contains members named after each state, with boolean, integer, or string values.",
-                                          "dataType": 31,
-                                          "alternates": [
-                                            {
-                                              "id": "states",
-                                              "dataType": 27
-                                            },
-                                            {
-                                              "id": "states",
-                                              "dataType": 24
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ]
+                                "dataType": 16,
+                                "subForm": {
+                                  "id": "foundation_material",
+                                  "title": "Foundation Material",
+                                  "fields": []
+                                },
+                                "alternates": []
                               },
                               {
                                 "id": "mid_material",
                                 "title": "Mid Material",
                                 "description": "Controls the block type used in a layer below the surface of this biome when this adjustment is active.",
-                                "dataType": 24,
-                                "alternates": [
-                                  {
-                                    "id": "mid_material",
-                                    "dataType": 16,
-                                    "readOnly": true,
-                                    "subForm": {
-                                      "id": "mid_material",
-                                      "title": "Mid Material",
-                                      "fields": [
-                                        {
-                                          "id": "name",
-                                          "title": "Name",
-                                          "description": "Name of the block",
-                                          "dataType": 16
-                                        },
-                                        {
-                                          "id": "states",
-                                          "title": "States",
-                                          "description": "Contains members named after each state, with boolean, integer, or string values.",
-                                          "dataType": 31,
-                                          "alternates": [
-                                            {
-                                              "id": "states",
-                                              "dataType": 27
-                                            },
-                                            {
-                                              "id": "states",
-                                              "dataType": 24
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ]
+                                "dataType": 16,
+                                "subForm": {
+                                  "id": "mid_material",
+                                  "title": "Mid Material",
+                                  "fields": []
+                                },
+                                "alternates": []
                               },
                               {
                                 "id": "sea_floor_material",
                                 "title": "Sea Floor Material",
                                 "description": "Controls the block type used as a floor for bodies of water in this biome when this adjustment is active.",
-                                "dataType": 24,
-                                "alternates": [
-                                  {
-                                    "id": "sea_floor_material",
-                                    "dataType": 16,
-                                    "readOnly": true,
-                                    "subForm": {
-                                      "id": "sea_floor_material",
-                                      "title": "Sea Floor Material",
-                                      "fields": [
-                                        {
-                                          "id": "name",
-                                          "title": "Name",
-                                          "description": "Name of the block",
-                                          "dataType": 16
-                                        },
-                                        {
-                                          "id": "states",
-                                          "title": "States",
-                                          "description": "Contains members named after each state, with boolean, integer, or string values.",
-                                          "dataType": 31,
-                                          "alternates": [
-                                            {
-                                              "id": "states",
-                                              "dataType": 27
-                                            },
-                                            {
-                                              "id": "states",
-                                              "dataType": 24
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ]
+                                "dataType": 16,
+                                "subForm": {
+                                  "id": "sea_floor_material",
+                                  "title": "Sea Floor Material",
+                                  "fields": []
+                                },
+                                "alternates": []
                               },
                               {
                                 "id": "sea_material",
                                 "title": "Sea Material",
                                 "description": "Controls the block type used in the bodies of water in this biome when this adjustment is active.",
-                                "dataType": 24,
-                                "alternates": [
-                                  {
-                                    "id": "sea_material",
-                                    "dataType": 16,
-                                    "readOnly": true,
-                                    "subForm": {
-                                      "id": "sea_material",
-                                      "title": "Sea Material",
-                                      "fields": [
-                                        {
-                                          "id": "name",
-                                          "title": "Name",
-                                          "description": "Name of the block",
-                                          "dataType": 16
-                                        },
-                                        {
-                                          "id": "states",
-                                          "title": "States",
-                                          "description": "Contains members named after each state, with boolean, integer, or string values.",
-                                          "dataType": 31,
-                                          "alternates": [
-                                            {
-                                              "id": "states",
-                                              "dataType": 27
-                                            },
-                                            {
-                                              "id": "states",
-                                              "dataType": 24
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ]
+                                "dataType": 16,
+                                "subForm": {
+                                  "id": "sea_material",
+                                  "title": "Sea Material",
+                                  "fields": []
+                                },
+                                "alternates": []
                               },
                               {
                                 "id": "top_material",
                                 "title": "Top Material",
                                 "description": "Controls the block type used for the surface of this biome when this adjustment is active.",
-                                "dataType": 24,
-                                "alternates": [
-                                  {
-                                    "id": "top_material",
-                                    "dataType": 16,
-                                    "readOnly": true,
-                                    "subForm": {
-                                      "id": "top_material",
-                                      "title": "Top Material",
-                                      "fields": [
-                                        {
-                                          "id": "name",
-                                          "title": "Name",
-                                          "description": "Name of the block",
-                                          "dataType": 16
-                                        },
-                                        {
-                                          "id": "states",
-                                          "title": "States",
-                                          "description": "Contains members named after each state, with boolean, integer, or string values.",
-                                          "dataType": 31,
-                                          "alternates": [
-                                            {
-                                              "id": "states",
-                                              "dataType": 27
-                                            },
-                                            {
-                                              "id": "states",
-                                              "dataType": 24
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ]
+                                "dataType": 16,
+                                "subForm": {
+                                  "id": "top_material",
+                                  "title": "Top Material",
+                                  "fields": []
+                                },
+                                "alternates": []
                               }
                             ]
                           }

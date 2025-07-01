@@ -1,4 +1,8 @@
 {
+  "tags": [
+    "conditional",
+    "entityevent"
+  ],
   "fields": [],
   "generated_doNotEdit": {
     "id": "has_ability",

@@ -1,5 +1,6 @@
 {
   "id": "set_property",
+  "tags": ["entityevent"],
   "title": "Set Entity Property",
   "description": "Sets the value of an entity property. The property must be defined in the 'properties' section of the file. ",
   "fields": [],

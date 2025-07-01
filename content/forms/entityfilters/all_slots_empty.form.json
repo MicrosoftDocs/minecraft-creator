@@ -1,4 +1,8 @@
 {
+  "tags": [
+    "conditional",
+    "entityevent"
+  ],
   "fields": [
     {
       "id": "operator",

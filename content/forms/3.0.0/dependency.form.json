@@ -1,0 +1,68 @@
+{
+  "id": "3.0.0.Dependency",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.Dependency",
+    "title": "3.0.0.Dependency",
+    "fields": [
+      {
+        "id": "module_name",
+        "title": "Module Name",
+        "dataType": 2
+      },
+      {
+        "id": "uuid",
+        "title": "Uuid",
+        "dataType": 16,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+          }
+        ]
+      },
+      {
+        "id": "version",
+        "title": "Version",
+        "dataType": 16,
+        "subForm": {
+          "id": "version",
+          "title": "Version",
+          "fields": [
+            {
+              "id": "buildMeta",
+              "title": "BuildMeta",
+              "dataType": 2
+            },
+            {
+              "id": "major",
+              "title": "Major",
+              "dataType": 0
+            },
+            {
+              "id": "minor",
+              "title": "Minor",
+              "dataType": 0
+            },
+            {
+              "id": "patch",
+              "title": "Patch",
+              "dataType": 0
+            },
+            {
+              "id": "preRelease",
+              "title": "PreRelease",
+              "dataType": 2
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "version",
+            "dataType": 2
+          }
+        ]
+      }
+    ]
+  }
+}

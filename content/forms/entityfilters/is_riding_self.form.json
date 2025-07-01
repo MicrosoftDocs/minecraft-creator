@@ -1,6 +1,10 @@
 {
   "id": "is_riding_self",
   "fields": [],
+  "tags": [
+    "conditional",
+    "entityevent"
+  ],
   "generated_doNotEdit": {
     "id": "is_riding_self",
     "title": "Is Riding Self",

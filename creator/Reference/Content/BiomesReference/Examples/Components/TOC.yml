@@ -14,6 +14,8 @@
   href: minecraftBiomes_frozen_ocean_surface.md
 - name: minecraft:humidity
   href: minecraftBiomes_humidity.md
+- name: minecraft:map_tints
+  href: minecraftBiomes_map_tints.md
 - name: minecraft:mesa
   href: minecraftBiomes_mesa.md
 - name: minecraft:mesa_surface

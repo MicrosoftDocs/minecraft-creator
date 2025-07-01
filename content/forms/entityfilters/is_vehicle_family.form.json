@@ -1,6 +1,10 @@
 {
   "id": "is_vehicle_family",
   "fields": [],
+  "tags": [
+    "conditional",
+    "entityevent"
+  ],
   "generated_doNotEdit": {
     "id": "is_vehicle_family",
     "title": "Is Vehicle Family",

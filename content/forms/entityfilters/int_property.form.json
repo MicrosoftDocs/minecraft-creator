@@ -1,5 +1,8 @@
 {
   "fields": [],
+  "tags": [
+    "conditional"
+  ],
   "generated_doNotEdit": {
     "id": "int_property",
     "title": "Int Property",

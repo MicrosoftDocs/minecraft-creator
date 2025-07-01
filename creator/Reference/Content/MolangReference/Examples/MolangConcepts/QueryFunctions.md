@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 | Molang Query Functions | Description |
 |:-----|:----------|
-| [query.above_top_solid](queryfunctions/query_above_top_solid.md)| Returns the height of the block immediately above the highest solid block at the input (x,z) position |
+| [query.above_top_solid](queryfunctions/query_above_top_solid.md)| Returns the height of the block immediately above the highest solid block at the input (x,z) position. This query is only valid during world generation. |
 | [query.actor_count](queryfunctions/query_actor_count.md)| Returns the number of actors rendered in the last frame. |
 | [query.all](queryfunctions/query_all.md)| Requires at least 3 arguments. |
 | [query.all_animations_finished](queryfunctions/query_all_animations_finished.md)| Only valid in an animation controller. |

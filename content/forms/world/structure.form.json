@@ -9,8 +9,7 @@
         "id": "structure",
         "title": "Ure",
         "description": "Identifier of the Jigsaw Structure.",
-        "dataType": 2,
-        "alternates": []
+        "dataType": 2
       },
       {
         "id": "weight",

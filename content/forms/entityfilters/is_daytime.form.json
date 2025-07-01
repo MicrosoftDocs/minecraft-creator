@@ -2,7 +2,9 @@
   "fields": [],
   "note": "Does not require any parameters to work properly. It can be used as a standalone filter.",
   "tags": [
-    "standalone"
+    "standalone",
+    "conditional",
+    "entityevent"
   ],
   "generated_doNotEdit": {
     "id": "is_daytime",

@@ -1,0 +1,35 @@
+{
+  "id": "3.0.0.Metadata",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.Metadata",
+    "title": "3.0.0.Metadata",
+    "fields": [
+      {
+        "id": "authors",
+        "title": "Authors",
+        "dataType": 17
+      },
+      {
+        "id": "generated_with",
+        "title": "Generated With",
+        "dataType": 16
+      },
+      {
+        "id": "license",
+        "title": "License",
+        "dataType": 2
+      },
+      {
+        "id": "product_type",
+        "title": "Product Type",
+        "dataType": 2
+      },
+      {
+        "id": "url",
+        "title": "Url",
+        "dataType": 2
+      }
+    ]
+  }
+}

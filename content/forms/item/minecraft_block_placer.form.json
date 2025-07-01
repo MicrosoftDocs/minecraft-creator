@@ -86,8 +86,7 @@
         "id": "block",
         "title": "Block",
         "description": "Defines the block that will be placed.",
-        "dataType": 2,
-        "alternates": [],
+        "dataType": 16,
         "samples": {
           "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
             {

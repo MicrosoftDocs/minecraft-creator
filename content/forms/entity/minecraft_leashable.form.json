@@ -153,7 +153,7 @@
             {
               "id": "hard_distance",
               "title": "Hard Distance",
-              "description": "Distance (in blocks) over which the entity starts being pulled toward the leash holder with an spring-like force.",
+              "description": "Distance (in blocks) over which the entity starts being pulled towards the leash holder with a spring-like force. Entities can enter and stay in vehicles if the leash is stretched under this distance, but will dismount once it exceeds it.",
               "defaultValue": 7,
               "dataType": 3
             },
@@ -174,7 +174,7 @@
             {
               "id": "soft_distance",
               "title": "Soft Distance",
-              "description": "Distance (in blocks) over which the entity begins pathfinding toward the leash holder, if able.",
+              "description": "Distance (in blocks) over which the entity starts pathfinding toward the leash holder, if able.",
               "defaultValue": 4,
               "dataType": 3
             },

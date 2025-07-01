@@ -1,5 +1,9 @@
 {
   "fields": [],
+  "tags": [
+    "conditional",
+    "entityevent"
+  ],
   "generated_doNotEdit": {
     "id": "is_bound_to_creaking_heart",
     "title": "Is Bound To Creaking Heart",

@@ -1,0 +1,31 @@
+{
+  "id": "grass",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "grass",
+    "title": "Grass Biome",
+    "description": "Sets the color grass will be tinted by in this biome on the map.",
+    "fields": [
+      {
+        "id": "tint",
+        "title": "Tint",
+        "description": "Tint color used in this biome on the map.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "tint",
+            "dataType": 32,
+            "minLength": 3,
+            "maxLength": 3
+          }
+        ]
+      },
+      {
+        "id": "type",
+        "title": "GrassType",
+        "description": "Controls the type of grass tint to use.",
+        "dataType": 2
+      }
+    ]
+  }
+}

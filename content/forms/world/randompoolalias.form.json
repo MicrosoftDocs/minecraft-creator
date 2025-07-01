@@ -26,8 +26,7 @@
               "id": "data",
               "title": "Data",
               "description": "Item's data",
-              "dataType": 2,
-              "alternates": []
+              "dataType": 2
             },
             {
               "id": "weight",

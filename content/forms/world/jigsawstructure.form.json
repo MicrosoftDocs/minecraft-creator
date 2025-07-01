@@ -66,7 +66,7 @@
             {
               "id": "identifier",
               "title": "Identifier",
-              "dataType": 16
+              "dataType": 2
             }
           ]
         }
@@ -174,8 +174,7 @@
         "id": "start_pool",
         "title": "Start Pool",
         "description": "The first Template Pool to use when generating the Jigsaw Structure.",
-        "dataType": 2,
-        "alternates": []
+        "dataType": 2
       },
       {
         "id": "step",

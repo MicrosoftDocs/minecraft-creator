@@ -16,4 +16,4 @@ Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers mu
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| atmosphere_identifier | *not set* | String | Identifier of atmosphere definition to use |  | 
+| atmosphere_identifier | *not set* | Object | Identifier of atmosphere definition to use |  | 

@@ -1,5 +1,9 @@
 {
   "fields": [],
+  "tags": [
+    "conditional",
+    "entityevent"
+  ],
   "generated_doNotEdit": {
     "id": "owner_distance",
     "title": "Owner Distance",

@@ -16,7 +16,7 @@
               "id": "identifier",
               "title": "Identifier",
               "description": "Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates.",
-              "dataType": 16
+              "dataType": 2
             }
           ]
         }
@@ -59,8 +59,7 @@
         "id": "fallback",
         "title": "Fallback",
         "description": "Fallback template pool to use if no element in the pool can be placed successfully.",
-        "dataType": 2,
-        "alternates": []
+        "dataType": 2
       }
     ]
   }

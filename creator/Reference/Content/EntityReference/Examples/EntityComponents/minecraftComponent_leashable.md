@@ -35,10 +35,10 @@ Defines how this entity behaves when leashed to another entity. The first preset
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | filter | *not set* | Minecraft filter | Conditions that must be met for this preset to be applied. |  | 
-| hard_distance | 7 | Decimal number | Distance (in blocks) over which the entity starts being pulled toward the leash holder with an spring-like force. |  | 
+| hard_distance | 7 | Decimal number | Distance (in blocks) over which the entity starts being pulled towards the leash holder with a spring-like force. Entities can enter and stay in vehicles if the leash is stretched under this distance, but will dismount once it exceeds it. |  | 
 | max_distance | 12 | Decimal number | Distance in blocks at which the leash breaks. |  | 
 | rotation_adjustment | 0 | Decimal number | Adjusts the rotation at which the entity reaches equilibrium, when "spring_type" is set to "dampened" or "quad_dampened". |  | 
-| soft_distance | 4 | Decimal number | Distance (in blocks) over which the entity begins pathfinding toward the leash holder, if able. |  | 
+| soft_distance | 4 | Decimal number | Distance (in blocks) over which the entity starts pathfinding toward the leash holder, if able. |  | 
 | spring_type | dampened | String | Defines the type of spring-like force that pulls the entity towards its leash holder: <br>- "bouncy": Simulates a highly elastic spring that never reaches an equilibrium if the leashed entity is suspended mid-air. <br>- "dampened": Simulates a dampened spring attached to the front of the leashed entity's collision. It reaches an equilibrium if the entity is suspended mid-air and aligns with the movement direction. <br>- "quad_dampened": Simulates four dampened springs connected to the center of each side of the entities' collisions. It reaches an equilibrium if the entity is suspended mid-air and gradually aligns with the leash holder over time. |  | 
 
 ## Samples

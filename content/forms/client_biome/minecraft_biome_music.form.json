@@ -23,8 +23,7 @@
         "id": "music_definition",
         "title": "Music Definition",
         "description": "Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music.",
-        "dataType": 2,
-        "alternates": []
+        "dataType": 16
       },
       {
         "id": "volume_multiplier",

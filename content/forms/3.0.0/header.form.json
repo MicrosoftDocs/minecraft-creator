@@ -1,0 +1,109 @@
+{
+  "id": "3.0.0.Header",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.Header",
+    "title": "3.0.0.Header",
+    "fields": [
+      {
+        "id": "allow_random_seed",
+        "title": "Allow Random Seed",
+        "dataType": 1
+      },
+      {
+        "id": "base_game_version",
+        "title": "Base Game Version",
+        "dataType": 2
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "dataType": 2
+      },
+      {
+        "id": "lock_template_options",
+        "title": "Lock Template Options",
+        "dataType": 1
+      },
+      {
+        "id": "min_engine_version",
+        "title": "Min Engine Version",
+        "dataType": 2
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "dataType": 2
+      },
+      {
+        "id": "pack_scope",
+        "title": "Pack Scope",
+        "dataType": 2
+      },
+      {
+        "id": "platform_locked",
+        "title": "Platform Locked",
+        "dataType": 1
+      },
+      {
+        "id": "uuid",
+        "title": "Uuid",
+        "dataType": 16,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+          }
+        ]
+      },
+      {
+        "id": "version",
+        "title": "Version",
+        "dataType": 16,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^([1-9]+)\\.([0-9]+)\\.([0-9]+)$"
+          }
+        ],
+        "subForm": {
+          "id": "version",
+          "title": "Version",
+          "fields": [
+            {
+              "id": "buildMeta",
+              "title": "BuildMeta",
+              "dataType": 2
+            },
+            {
+              "id": "major",
+              "title": "Major",
+              "dataType": 0
+            },
+            {
+              "id": "minor",
+              "title": "Minor",
+              "dataType": 0
+            },
+            {
+              "id": "patch",
+              "title": "Patch",
+              "dataType": 0
+            },
+            {
+              "id": "preRelease",
+              "title": "PreRelease",
+              "dataType": 2
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "version",
+            "dataType": 2
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -10,42 +10,13 @@
         "id": "block_state",
         "title": "Block State",
         "description": "The block state to match against.",
-        "dataType": 24,
-        "alternates": [
-          {
-            "id": "block_state",
-            "dataType": 16,
-            "readOnly": true,
-            "subForm": {
-              "id": "block_state",
-              "title": "Block State",
-              "fields": [
-                {
-                  "id": "name",
-                  "title": "Name",
-                  "description": "Name of the block",
-                  "dataType": 16
-                },
-                {
-                  "id": "states",
-                  "title": "States",
-                  "description": "Contains members named after each state, with boolean, integer, or string values.",
-                  "dataType": 31,
-                  "alternates": [
-                    {
-                      "id": "states",
-                      "dataType": 27
-                    },
-                    {
-                      "id": "states",
-                      "dataType": 24
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        ]
+        "dataType": 16,
+        "subForm": {
+          "id": "block_state",
+          "title": "Block State",
+          "fields": []
+        },
+        "alternates": []
       },
       {
         "id": "predicate_type",

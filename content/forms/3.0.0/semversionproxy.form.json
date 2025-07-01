@@ -1,0 +1,35 @@
+{
+  "id": "3.0.0.SemVersionProxy",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.SemVersionProxy",
+    "title": "3.0.0.SemVersionProxy",
+    "fields": [
+      {
+        "id": "buildMeta",
+        "title": "BuildMeta",
+        "dataType": 2
+      },
+      {
+        "id": "major",
+        "title": "Major",
+        "dataType": 0
+      },
+      {
+        "id": "minor",
+        "title": "Minor",
+        "dataType": 0
+      },
+      {
+        "id": "patch",
+        "title": "Patch",
+        "dataType": 0
+      },
+      {
+        "id": "preRelease",
+        "title": "PreRelease",
+        "dataType": 2
+      }
+    ]
+  }
+}

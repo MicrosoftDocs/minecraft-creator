@@ -48,9 +48,9 @@ Set the ambient sounds for the biome. These sounds must be in the 'individual_na
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| addition | *not set* | String | Named sound that occasionally plays at the listener position |  | 
-| loop | *not set* | String | Named sound that loops while the listener position is inside the biome |  | 
-| mood | *not set* | String | Named sound that rarely plays at a nearby air block position when the light level is low. Biomes without an ambient mood sound will use the 'ambient.cave' sound. |  | 
+| addition | *not set* | Object | Named sound that occasionally plays at the listener position |  | 
+| loop | *not set* | Object | Named sound that loops while the listener position is inside the biome |  | 
+| mood | *not set* | Object | Named sound that rarely plays at a nearby air block position when the light level is low. Biomes without an ambient mood sound will use the 'ambient.cave' sound. |  | 
 
 ## Atmosphere Identifier item type
 Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the "atmospherics" directory. Biomes without this component will have default atmosphere settings.
@@ -60,7 +60,7 @@ Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers mu
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| atmosphere_identifier | *not set* | String | Identifier of atmosphere definition to use |  | 
+| atmosphere_identifier | *not set* | Object | Identifier of atmosphere definition to use |  | 
 
 ## Biome Music item type
 Affect how music plays within the biome.
@@ -70,7 +70,7 @@ Affect how music plays within the biome.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| music_definition | *not set* | String | Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music. |  | 
+| music_definition | *not set* | Object | Music to be played when inside this biome. If left off or not found the default music will be determined by the dimension. Empty string will result in no music. |  | 
 | volume_multiplier | *not set* | Decimal number | Multiplier temporarily and gradually applied to music volume when within this biome. Must be a value between 0 and 1, inclusive. |  | 
 
 ## Color Grading Identifier item type
@@ -81,7 +81,7 @@ Set the identifier used for color grading in Vibrant Visuals mode. Identifiers m
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| color_grading_identifier | *not set* | String | Identifier of color_grading definition to use |  | 
+| color_grading_identifier | *not set* | Object | Identifier of color_grading definition to use |  | 
 
 ## Dry Foliage Color item type
 Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.
@@ -102,7 +102,7 @@ Set the fog settings used during rendering. Biomes without this component will h
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| fog_identifier | *not set* | String | Identifier of fog definition to use |  | 
+| fog_identifier | *not set* | Object | Identifier of fog definition to use |  | 
 
 ## Foliage Appearance item type
 Set the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance.
@@ -133,7 +133,7 @@ Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must r
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| lighting_identifier | *not set* | String | Identifier of lighting definition to use |  | 
+| lighting_identifier | *not set* | Object | Identifier of lighting definition to use |  | 
 
 ## Sky Color item type
 Set the sky color used during rendering. Biomes without this component will have default sky color behavior.
@@ -166,7 +166,7 @@ Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| water_identifier | *not set* | String | Identifier of water definition to use |  | 
+| water_identifier | *not set* | Object | Identifier of water definition to use |  | 
 
 ## Description item type
 Contains non-component settings for a Client Biome.

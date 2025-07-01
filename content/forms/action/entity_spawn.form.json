@@ -1,7 +1,10 @@
 {
   "id": "entity_spawn",
   "title": "Spawn Entity",
-  "tags": ["script", "action"],
+  "tags": [
+    "script",
+    "action"
+  ],
   "fields": [
     {
       "id": "location",

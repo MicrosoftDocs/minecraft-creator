@@ -25,7 +25,7 @@ This entity can be ridden.
 | on_rider_exit_event | *not set* | Minecraft Event Reference | Event to execute on the owner entity when an entity stops riding it. | Happy Ghast: `"minecraft:on_passenger_dismount"` | 
 | passenger_max_width | 0 | Decimal number | The max width a mob can have to be a rider. A value of 0 ignores this parameter. |  | 
 | priority | *not set* | Integer number | This field may exist in old data but isn't used by "minecraft:rideable". |  | 
-| pull_in_entities | false | Boolean true/false | If true, this entity will pull in entities that are in the correct "family_types" into any available seats. | Camel: `true` | 
+| pull_in_entities | false | Boolean true/false | If true, this entity will pull entities matching the specified "family_types" into any available seats. Entities that are leashed will only be pulled in if their distance to their leash holder is less than the "hard_distance" defined in their own "minecraft:leashable" component. | Camel: `true` | 
 | rider_can_interact | false | Boolean true/false | If true, this entity will be picked when looked at by the rider. |  | 
 | seat_count | 1 | Integer number | The number of entities that can ride this entity at the same time. | Camel: `2`, Cat: `1`, Happy Ghast: `4` | 
 | seats | *not set* | Array of [Seats](#seats-item-type) items | The list of positions and number of riders for each position for entities riding this entity. | Camel: `[{"min_rider_count":0,"max_rider_count":2,"position":[0,1.905,0.5]},{"min_rider_count":1,"max_rider_count":2,"position":[0,1.905,-0.5]}]`, Cat: `{"position":[0,0.35,0]}`, Chicken: `{"position":[0,0.48,0]}` | 

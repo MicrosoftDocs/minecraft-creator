@@ -1,0 +1,51 @@
+{
+  "id": "3.0.0.SliderSetting",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.SliderSetting",
+    "title": "3.0.0.SliderSetting",
+    "fields": [
+      {
+        "id": "default",
+        "title": "Default",
+        "dataType": 3
+      },
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": 3
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": 3
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "dataType": 2,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^(?:(?!^(minecraft):).)+:(?:.)+$"
+          }
+        ]
+      },
+      {
+        "id": "step",
+        "title": "Step",
+        "dataType": 3
+      },
+      {
+        "id": "text",
+        "title": "Text",
+        "dataType": 2
+      },
+      {
+        "id": "type",
+        "title": "SettingType",
+        "dataType": 2
+      }
+    ]
+  }
+}
