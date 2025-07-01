@@ -28,6 +28,7 @@ Type: [*Dimension*](Dimension.md)
 
 Notes:
   - This property can throw errors when used.
+    - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **id**
 `read-only id: string;`
@@ -45,6 +46,7 @@ Type: *boolean*
 
 Notes:
   - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **isFalling**
 `read-only isFalling: boolean;`
@@ -55,6 +57,7 @@ Type: *boolean*
 
 Notes:
   - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **isInWater**
 `read-only isInWater: boolean;`
@@ -65,6 +68,7 @@ Type: *boolean*
 
 Notes:
   - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **isOnGround**
 `read-only isOnGround: boolean;`
@@ -75,6 +79,7 @@ Type: *boolean*
 
 Notes:
   - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **isSleeping**
 `read-only isSleeping: boolean;`
@@ -85,6 +90,7 @@ Type: *boolean*
 
 Notes:
   - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **isSneaking**
 `isSneaking: boolean;`
@@ -105,6 +111,7 @@ Type: *boolean*
 
 Notes:
   - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **isSwimming**
 `read-only isSwimming: boolean;`
@@ -115,6 +122,7 @@ Type: *boolean*
 
 Notes:
   - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **location**
 `read-only location: Vector3;`
@@ -125,6 +133,7 @@ Type: [*Vector3*](Vector3.md)
 
 Notes:
   - This property can throw errors when used.
+    - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **nameTag**
 `nameTag: string;`
@@ -219,6 +228,7 @@ Adds or updates an effect, like poison, to the entity.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 #### Examples
 
@@ -291,6 +301,7 @@ Adds a specified tag to an entity.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 #### Examples
 
@@ -341,6 +352,7 @@ Applies a set of damage to an entity.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 #### Examples
 
@@ -384,7 +396,7 @@ Applies impulse vector to the current velocity of the entity. Note that this met
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 #### Examples
 
@@ -430,6 +442,7 @@ Applies impulse vector to the current velocity of the entity.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 #### Examples
 
@@ -467,6 +480,7 @@ Clears all dynamic properties that have been set on this entity.
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **clearVelocity**
 `
@@ -478,6 +492,7 @@ Sets the current velocity of the Entity to zero. Note that this method throws an
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 #### Examples
 
@@ -516,6 +531,7 @@ Extinguishes the fire if the entity is on fire. Note that you can call getCompon
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 #### Examples
 
@@ -558,6 +574,7 @@ Returns the first intersecting block from the direction that this entity is look
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getComponent**
 `
@@ -598,6 +615,7 @@ Returns a property value.
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getDynamicPropertyIds**
 `
@@ -610,6 +628,7 @@ Returns the available set of dynamic property identifiers that have been used on
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getDynamicPropertyTotalByteCount**
 `
@@ -622,6 +641,7 @@ Returns the total size, in bytes, of all the dynamic properties that are current
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getEffect**
 `
@@ -639,6 +659,7 @@ Returns the effect for the specified EffectType on the entity, undefined if the 
   
 Notes:
 - This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getEffects**
 `
@@ -651,6 +672,7 @@ Returns a set of effects applied to this entity.
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getEntitiesFromViewDirection**
 `
@@ -668,6 +690,7 @@ Gets the entities that this entity is looking at by performing a ray cast from t
   
 Notes:
 - This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 ### **getHeadLocation**
 `
@@ -680,6 +703,7 @@ Returns the current location of the head component of this entity.
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getProperty**
 `
@@ -697,7 +721,7 @@ Gets an entity Property value. If the property was set using the setProperty fun
   
 Notes:
 - This function can throw errors.
-  - Throws if the entity is invalid.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getRotation**
 `
@@ -710,6 +734,7 @@ Returns the current rotation component of this entity.
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getTags**
 `
@@ -722,6 +747,7 @@ Returns all tags associated with the entity.
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **getVelocity**
 `
@@ -734,6 +760,7 @@ Returns the current velocity vector of the entity.
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 #### Examples
 
@@ -770,6 +797,7 @@ Returns the current view direction of the entity.
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **hasComponent**
 `
@@ -801,6 +829,7 @@ Returns whether an entity has a particular tag.
   
 Notes:
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **isValid**
 `
@@ -826,6 +855,7 @@ Kills this entity. The entity will drop loot as normal.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 #### Examples
 
@@ -872,7 +902,7 @@ Matches the entity against the passed in options. Uses the location of the entit
   
 Notes:
 - This function can throw errors.
-  - Throws if the query options are misconfigured.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 ### **playAnimation**
 `
@@ -892,6 +922,7 @@ Cause the entity to play the given animation.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **remove**
 `
@@ -903,6 +934,7 @@ Immediately removes the entity from the world. The removed entity will not perfo
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 ### **removeEffect**
 `
@@ -921,6 +953,7 @@ Removes the specified EffectType on the entity, or returns false if the effect i
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **removeTag**
 `
@@ -939,6 +972,7 @@ Removes a specified tag from an entity.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **resetProperty**
 `
@@ -957,7 +991,7 @@ Resets an Entity Property back to its default value, as specified in the Entity'
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*, [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **runCommand**
 `
@@ -993,6 +1027,7 @@ runCommandAsync(commandString: string): Promise<CommandResult>
   
 Notes:
 - This function can throw errors.
+  - Throws [*CommandError*](CommandError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **setDynamicProperty**
 `
@@ -1011,6 +1046,7 @@ Sets a specified property to a value.
   
 Notes:
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **setOnFire**
 `
@@ -1032,6 +1068,7 @@ Sets an entity on fire (if it is not in water or rain). Note that you can call g
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 #### Examples
 
@@ -1076,11 +1113,7 @@ Sets an Entity Property to the provided value. This property change is not appli
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws if the entity is invalid.
-  - Throws if an invalid identifier is provided.
-  - Throws if the provided value type does not match the property type.
-  - Throws if the provided value is outside the expected range (int, float properties).
-  - Throws if the provided string value does not match the set of accepted enum values (enum properties
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **setRotation**
 `
@@ -1097,6 +1130,7 @@ Sets the main rotation of the entity.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 ### **teleport**
 `
@@ -1116,6 +1150,7 @@ Teleports the selected entity to a new location
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 #### Examples
 
@@ -1184,7 +1219,7 @@ Triggers an entity type event. For every entity, a number of events are defined 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - If the event is not defined in the definition of the entity, an error will be thrown.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 #### Examples
 
@@ -1239,3 +1274,4 @@ Attempts to try a teleport, but may not complete the teleport operation (for exa
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)

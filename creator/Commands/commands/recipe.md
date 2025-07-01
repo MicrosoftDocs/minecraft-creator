@@ -38,6 +38,18 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:copper_axe`
+- `minecraft:copper_boots`
+- `minecraft:copper_chest`
+- `minecraft:copper_chestplate`
+- `minecraft:copper_helmet`
+- `minecraft:copper_hoe`
+- `minecraft:copper_ingot_from_nuggets`
+- `minecraft:copper_leggings`
+- `minecraft:copper_nugget`
+- `minecraft:copper_pickaxe`
+- `minecraft:copper_shovel`
+- `minecraft:copper_sword`
 - `minecraft:dried_ghast`
 - `minecraft:lead`
 - `minecraft:saddle`

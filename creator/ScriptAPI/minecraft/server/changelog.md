@@ -52,6 +52,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`isValid`](BlockLocationIterator.md#isvalid)*
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
+#### Changed *[`Camera`](Camera.md)*
+- Added function *[`setFov`](Camera.md#setfov)*
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
 #### Added *[`ChatSendBeforeEvent`](ChatSendBeforeEvent.md)*
@@ -66,7 +68,11 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`firstEmptySlot`](Container.md#firstemptyslot)*
 - Added function *[`firstItem`](Container.md#firstitem)*
 #### Changed *[`ContainerSlot`](ContainerSlot.md)*
+- Added function *[`getRawLore`](ContainerSlot.md#getrawlore)*
 - Added function *[`setDynamicProperties`](ContainerSlot.md#setdynamicproperties)*
+- Changed function *[`setLore`](ContainerSlot.md#setlore)*
+  - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
+  - Changed argument `loreList` type from *string*[] to ([*RawMessage*](RawMessage.md) | *string*)[]
 #### Added *[`CustomCommandOrigin`](CustomCommandOrigin.md)*
 #### Added *[`CustomCommandRegistry`](CustomCommandRegistry.md)*
 #### Changed *[`Dimension`](Dimension.md)*
@@ -85,6 +91,10 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`localizationKey`](Entity.md#localizationkey)*
 - Added property *[`target`](Entity.md#target)*
+- Changed function *[`applyImpulse`](Entity.md#applyimpulse)*
+  - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
+- Changed function *[`clearVelocity`](Entity.md#clearvelocity)*
+  - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
 - Added function *[`setDynamicProperties`](Entity.md#setdynamicproperties)*
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*
@@ -109,7 +119,12 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`localizationKey`](ItemStack.md#localizationkey)*
 - Added property *[`weight`](ItemStack.md#weight)*
 - Added function *[`createPotion`](ItemStack.md#createpotion)*
+- Added function *[`getRawLore`](ItemStack.md#getrawlore)*
 - Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
+- Changed function *[`setLore`](ItemStack.md#setlore)*
+  - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
+  - Changed argument `loreList` type from *string*[] to ([*RawMessage*](RawMessage.md) | *string*)[]
+#### Added *[`LootTableManager`](LootTableManager.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Changed *[`Player`](Player.md)*
 - Added property *[`commandPermissionLevel`](Player.md#commandpermissionlevel)*
@@ -140,6 +155,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`World`](World.md)*
 - Added function *[`broadcastClientMessage`](World.md#broadcastclientmessage)*
 - Added function *[`getAimAssist`](World.md#getaimassist)*
+- Added function *[`getLootTableManager`](World.md#getloottablemanager)*
 - Added function *[`setDynamicProperties`](World.md#setdynamicproperties)*
 #### Changed *[`WorldAfterEvents`](WorldAfterEvents.md)*
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
@@ -214,7 +230,6 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getBlockBelow`](Dimension.md#getblockbelow)*
 - Removed function *runCommandAsync*
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
-  - Changed return type from [*Entity*](Entity.md) (throws exceptions) to [*Entity*](Entity.md) (throws exceptions)
   - Changed argument `identifier` type from *string* to [*EntityType*](EntityType.md) | *string*
   - Added argument `options`
 #### Changed *[`Effect`](Effect.md)*
@@ -777,8 +792,6 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`dataDrivenEntityTrigger`](WorldAfterEvents.md#datadrivenentitytrigger)*
 #### Added enum [`FluidType`](FluidType.md)
 ## 1.7.0
-#### Added module dependency `@minecraft/common@1.1.0` 
-#### Removed module dependency `@minecraft/common@1.0.0` 
 #### Changed *[`Block`](Block.md)*
 - Added function *[`above`](Block.md#above)*
 - Added function *[`below`](Block.md#below)*

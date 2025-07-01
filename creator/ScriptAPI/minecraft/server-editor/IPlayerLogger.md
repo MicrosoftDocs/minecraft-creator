@@ -19,7 +19,7 @@ Log helper interface for Player.
 
 ### **debug**
 `
-debug(message: string): void
+debug(message: string, props: IPlayerLoggerProperties): void
 `
 
 Dispatch a player log message with Debug log level
@@ -28,12 +28,15 @@ Dispatch a player log message with Debug log level
 - **message**: *string*
   
   Message content
+- **props**: *IPlayerLoggerProperties*
+  
+  Optional player log properties
 
 **Returns** *void*
 
 ### **error**
 `
-error(message: string): void
+error(message: string, props: IPlayerLoggerProperties): void
 `
 
 Dispatch a player log message with Error log level
@@ -42,12 +45,15 @@ Dispatch a player log message with Error log level
 - **message**: *string*
   
   Message content
+- **props**: *IPlayerLoggerProperties*
+  
+  Optional player log properties
 
 **Returns** *void*
 
 ### **info**
 `
-info(message: string): void
+info(message: string, props: IPlayerLoggerProperties): void
 `
 
 Dispatch a player log message with Info log level
@@ -56,12 +62,15 @@ Dispatch a player log message with Info log level
 - **message**: *string*
   
   Message content
+- **props**: *IPlayerLoggerProperties*
+  
+  Optional player log properties
 
 **Returns** *void*
 
 ### **warning**
 `
-warning(message: string): void
+warning(message: string, props: IPlayerLoggerProperties): void
 `
 
 Dispatch a player log message with Warning log level
@@ -70,5 +79,8 @@ Dispatch a player log message with Warning log level
 - **message**: *string*
   
   Message content
+- **props**: *IPlayerLoggerProperties*
+  
+  Optional player log properties
 
 **Returns** *void*

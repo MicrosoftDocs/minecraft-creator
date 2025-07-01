@@ -15,12 +15,26 @@ While the logger object is available through the [*@minecraft/server-editor.Exte
 
 ## Properties
 
+### **channelMask**
+`channelMask?: LogChannel;`
+
+Display the log message to a log channel. If no channel is specified, default channel is regular message.
+
+Type: [*LogChannel*](LogChannel.md)
+
 ### **player**
 `player?: minecraftserver.Player;`
 
 Direct a log message to a specific player.  If no player is specified, then all players will receive the message
 
 Type: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+
+### **subMessage**
+`subMessage?: string;`
+
+Message to be shown under the message when toast channel is selected.
+
+Type: *string*
 
 ### **tags**
 `tags?: string[];`

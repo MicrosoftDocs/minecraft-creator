@@ -1,0 +1,108 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server.LootTableManager Class
+description: Contents of the @minecraft/server.LootTableManager class.
+monikerRange: "=minecraft-bedrock-experimental"
+---
+# LootTableManager Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Manager for Loot Table related APIs. Allows for generation of drops from blocks and entities according to their loot tables.
+
+## Methods
+- [generateLootFromBlock](#generatelootfromblock)
+- [generateLootFromBlockPermutation](#generatelootfromblockpermutation)
+- [generateLootFromBlockType](#generatelootfromblocktype)
+- [generateLootFromEntity](#generatelootfromentity)
+- [generateLootFromEntityType](#generatelootfromentitytype)
+
+### **generateLootFromBlock**
+`
+generateLootFromBlock(block: Block, tool?: ItemStack): ItemStack[] | undefined
+`
+
+Generates loot from a given block as if it had been mined.
+
+#### **Parameters**
+- **block**: [*Block*](Block.md)
+  
+  The block to generate loot from.
+- **tool**?: [*ItemStack*](ItemStack.md) = `null`
+  
+  Optional. The tool to use in the looting operation.
+
+**Returns** [*ItemStack*](ItemStack.md)[] | *undefined* - An array of item stacks dropped from the loot drop event. Can be empty if no loot dropped, or undefined if the provided tool is insufficient to mine the block.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md), [*UnloadedChunksError*](UnloadedChunksError.md)
+
+### **generateLootFromBlockPermutation**
+`
+generateLootFromBlockPermutation(blockPermutation: BlockPermutation, tool?: ItemStack): ItemStack[] | undefined
+`
+
+Generates loot from a given block permutation as if it had been mined.
+
+#### **Parameters**
+- **blockPermutation**: [*BlockPermutation*](BlockPermutation.md)
+- **tool**?: [*ItemStack*](ItemStack.md) = `null`
+  
+  Optional. The tool to use in the looting operation.
+
+**Returns** [*ItemStack*](ItemStack.md)[] | *undefined* - An array of item stacks dropped from the loot drop event. Can be empty if no loot dropped, or undefined if the provided tool is insufficient to mine the block.
+
+### **generateLootFromBlockType**
+`
+generateLootFromBlockType(scriptBlockType: BlockType, tool?: ItemStack): ItemStack[] | undefined
+`
+
+Generates loot from a given block type as if it had been mined.
+
+#### **Parameters**
+- **scriptBlockType**: [*BlockType*](BlockType.md)
+- **tool**?: [*ItemStack*](ItemStack.md) = `null`
+  
+  Optional. The tool to use in the looting operation.
+
+**Returns** [*ItemStack*](ItemStack.md)[] | *undefined* - An array of item stacks dropped from the loot drop event. Can be empty if no loot dropped, or undefined if the provided tool is insufficient to mine the block.
+
+### **generateLootFromEntity**
+`
+generateLootFromEntity(entity: Entity, tool?: ItemStack): ItemStack[] | undefined
+`
+
+Generates loot from given a entity as if it had been killed.
+
+#### **Parameters**
+- **entity**: [*Entity*](Entity.md)
+- **tool**?: [*ItemStack*](ItemStack.md) = `null`
+  
+  Optional. The tool to use in the looting operation.
+
+**Returns** [*ItemStack*](ItemStack.md)[] | *undefined* - An array of item stacks dropped from the loot drop event. Can be empty if no loot dropped, or undefined if the entity was invalid.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
+
+### **generateLootFromEntityType**
+`
+generateLootFromEntityType(entityType: EntityType, tool?: ItemStack): ItemStack[] | undefined
+`
+
+Generates loot from given a entity type as if it had been killed.
+
+#### **Parameters**
+- **entityType**: [*EntityType*](EntityType.md)
+- **tool**?: [*ItemStack*](ItemStack.md) = `null`
+  
+  Optional. The tool to use in the looting operation.
+
+**Returns** [*ItemStack*](ItemStack.md)[] | *undefined* - An array of item stacks dropped from the loot drop event. Can be empty if no loot dropped.

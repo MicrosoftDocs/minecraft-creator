@@ -28,6 +28,8 @@ Nether Gold Ore
 Nether Gold Ore
 - `minecraft:zombie_head`
 - `zombie_head`
+- `minecraft:waxed_weathered_copper_chest`
+- `waxed_weathered_copper_chest`
 - `minecraft:leaf_litter`
 - `leaf_litter`
 - `minecraft:warped_door`
@@ -140,6 +142,8 @@ Prismarine Bricks Stairs
 Waxed Oxidized Cut Copper
 - `waxed_oxidized_cut_copper`
 Waxed Oxidized Cut Copper
+- `minecraft:waxed_exposed_copper_chest`
+- `waxed_exposed_copper_chest`
 - `minecraft:calcite`
 Calcite
 - `calcite`
@@ -802,6 +806,8 @@ Smithing Table
 - `poppy`
 - `minecraft:tuff_brick_slab`
 - `tuff_brick_slab`
+- `minecraft:copper_chest`
+- `copper_chest`
 - `minecraft:mossy_stone_bricks`
 - `mossy_stone_bricks`
 - `minecraft:green_wool`
@@ -932,6 +938,8 @@ Mangrove Wood
 Red Glazed Terracotta
 - `red_glazed_terracotta`
 Red Glazed Terracotta
+- `minecraft:waxed_oxidized_copper_chest`
+- `waxed_oxidized_copper_chest`
 - `minecraft:dark_oak_fence_gate`
 Dark Oak Fence Gate
 - `dark_oak_fence_gate`
@@ -1008,6 +1016,8 @@ Coal Ore
 Redstone Ore
 - `redstone_ore`
 Redstone Ore
+- `minecraft:waxed_copper_chest`
+- `waxed_copper_chest`
 - `minecraft:green_stained_glass`
 - `green_stained_glass`
 - `minecraft:bubble_coral_block`
@@ -1492,6 +1502,8 @@ Warped Fence Gate
 - `cut_sandstone_slab`
 - `minecraft:skeleton_skull`
 - `skeleton_skull`
+- `minecraft:exposed_copper_chest`
+- `exposed_copper_chest`
 - `minecraft:composter`
 Composter
 - `composter`
@@ -1564,6 +1576,8 @@ Trapped Chest
 Acacia Trapdoor
 - `acacia_trapdoor`
 Acacia Trapdoor
+- `minecraft:weathered_copper_chest`
+- `weathered_copper_chest`
 - `minecraft:brain_coral_block`
 - `brain_coral_block`
 - `minecraft:bamboo_planks`
@@ -2134,6 +2148,8 @@ Web
 Web
 - `minecraft:dead_tube_coral_fan`
 - `dead_tube_coral_fan`
+- `minecraft:oxidized_copper_chest`
+- `oxidized_copper_chest`
 - `minecraft:polished_diorite_stairs`
 Polished Diorite Stairs
 - `polished_diorite_stairs`
@@ -3514,6 +3530,8 @@ Ravager Spawn Egg
 - `creaking_spawn_egg`
 - `minecraft:happy_ghast_spawn_egg`
 - `happy_ghast_spawn_egg`
+- `minecraft:copper_golem_spawn_egg`
+- `copper_golem_spawn_egg`
 - `editor:map_marker_spawn_egg`
 - `minecraft:chorus_fruit`
 Chorus Fruit
@@ -3547,6 +3565,8 @@ Diamond Helmet
 Netherite Helmet
 - `netherite_helmet`
 Netherite Helmet
+- `minecraft:copper_helmet`
+- `copper_helmet`
 - `minecraft:leather_chestplate`
 Leather Chestplate
 - `leather_chestplate`
@@ -3571,6 +3591,8 @@ Diamond Chestplate
 Netherite Chestplate
 - `netherite_chestplate`
 Netherite Chestplate
+- `minecraft:copper_chestplate`
+- `copper_chestplate`
 - `minecraft:leather_leggings`
 Leather Leggings
 - `leather_leggings`
@@ -3595,6 +3617,8 @@ Diamond Leggings
 Netherite Leggings
 - `netherite_leggings`
 Netherite Leggings
+- `minecraft:copper_leggings`
+- `copper_leggings`
 - `minecraft:leather_boots`
 Leather Boots
 - `leather_boots`
@@ -3619,6 +3643,8 @@ Diamond Boots
 Netherite Boots
 - `netherite_boots`
 Netherite Boots
+- `minecraft:copper_boots`
+- `copper_boots`
 - `minecraft:wooden_sword`
 Wooden Sword
 - `wooden_sword`
@@ -3643,6 +3669,8 @@ Diamond Sword
 Netherite Sword
 - `netherite_sword`
 Netherite Sword
+- `minecraft:copper_sword`
+- `copper_sword`
 - `minecraft:wooden_axe`
 Wooden Axe
 - `wooden_axe`
@@ -3667,6 +3695,8 @@ Diamond Axe
 Netherite Axe
 - `netherite_axe`
 Netherite Axe
+- `minecraft:copper_axe`
+- `copper_axe`
 - `minecraft:wooden_pickaxe`
 Wooden Pickaxe
 - `wooden_pickaxe`
@@ -3691,6 +3721,8 @@ Diamond Pickaxe
 Netherite Pickaxe
 - `netherite_pickaxe`
 Netherite Pickaxe
+- `minecraft:copper_pickaxe`
+- `copper_pickaxe`
 - `minecraft:wooden_shovel`
 Wooden Shovel
 - `wooden_shovel`
@@ -3715,6 +3747,8 @@ Diamond Shovel
 Netherite Shovel
 - `netherite_shovel`
 Netherite Shovel
+- `minecraft:copper_shovel`
+- `copper_shovel`
 - `minecraft:wooden_hoe`
 Wooden Hoe
 - `wooden_hoe`
@@ -3739,6 +3773,8 @@ Diamond Hoe
 Netherite Hoe
 - `netherite_hoe`
 Netherite Hoe
+- `minecraft:copper_hoe`
+- `copper_hoe`
 - `minecraft:bow`
 Bow
 - `bow`
@@ -4057,6 +4093,8 @@ Music Disc Pigstep
 - `music_disc_precipice`
 - `minecraft:music_disc_tears`
 - `music_disc_tears`
+- `minecraft:music_disc_lava_chicken`
+- `music_disc_lava_chicken`
 - `minecraft:disc_fragment_5`
 Disc Fragment 5
 - `disc_fragment_5`
@@ -4579,6 +4617,8 @@ Firework Star
 - `trial_key`
 - `minecraft:ominous_trial_key`
 - `ominous_trial_key`
+- `minecraft:copper_nugget`
+- `copper_nugget`
 - `speckled_melon`
 Speckled Melon
 - `nametag`
@@ -4601,6 +4641,7 @@ Glazed Terracotta Magenta
 Glazed Terracotta Lime
 - `glazedterracotta.light_blue`
 Glazed Terracotta Light Blue
+- `record_lava_chicken`
 - `glazedterracotta.yellow`
 Glazed Terracotta Yellow
 - `cooked_fish`
@@ -4627,7 +4668,6 @@ Glazed Terracotta Green
 Glazed Terracotta Black
 - `glazedterracotta.red`
 Glazed Terracotta Red
-- `record_relic`
 - `record_tears`
 - `record_cat`
 Record Cat
@@ -4656,6 +4696,7 @@ Record Pigstep
 Record Mall
 - `record_mellohi`
 Record Mellohi
+- `record_relic`
 - `record_stal`
 Record Stal
 - `record_strad`

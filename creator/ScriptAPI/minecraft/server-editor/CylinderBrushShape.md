@@ -26,6 +26,9 @@ new CylinderBrushShape(settings: {
         height?: number;
         depth?: number;
         minRadius?: number;
+        xRotation?: number;
+        yRotation?: number;
+        zRotation?: number;
     })
 `
 
@@ -39,6 +42,9 @@ Constructs a new instance of the `CylinderBrushShape` class
         height?: number;
         depth?: number;
         minRadius?: number;
+        xRotation?: number;
+        yRotation?: number;
+        zRotation?: number;
     }*
 
 **Returns** *CylinderBrushShape*

@@ -110,6 +110,9 @@ Type: [*StructureManager*](StructureManager.md)
 - [getDynamicPropertyIds](#getdynamicpropertyids)
 - [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
 - [getEntity](#getentity)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getLootTableManager](#getloottablemanager)
+::: moniker-end
 - [getMoonPhase](#getmoonphase)
 - [getPlayers](#getplayers)
 - [getTimeOfDay](#gettimeofday)
@@ -190,6 +193,7 @@ Returns an array of all active players within the world.
   
 Notes:
 - This function can throw errors.
+  - Throws [*CommandError*](CommandError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 ### **getDay**
 `
@@ -362,6 +366,18 @@ Notes:
 - This function can throw errors.
   - Throws if the given entity id is invalid.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **getLootTableManager**
+`
+getLootTableManager(): LootTableManager
+`
+
+**Returns** [*LootTableManager*](LootTableManager.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
 ### **getMoonPhase**
 `
 getMoonPhase(): MoonPhase
@@ -387,7 +403,7 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
   
 Notes:
 - This function can throw errors.
-  - Throws if the provided EntityQueryOptions are invalid.
+  - Throws [*CommandError*](CommandError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 ### **getTimeOfDay**
 `
@@ -412,6 +428,7 @@ Plays a particular music track for all players.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
 #### Examples
 
@@ -465,9 +482,7 @@ Queues an additional music track for players. If a track is not playing, a music
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - An error will be thrown if volume is less than 0.0.
-  - An error will be thrown if fade is less than 0.0.
-  - 
+  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
 ### **sendMessage**
 `
@@ -550,6 +565,7 @@ Sets multiple dynamic properties with specific values.
   
 Notes:
 - This function can throw errors.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
 ::: moniker-end
 
 ### **setDynamicProperty**
@@ -569,7 +585,7 @@ Sets a specified property to a value.
   
 Notes:
 - This function can throw errors.
-  - Throws if the given dynamic property identifier is not defined.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md)
 
 #### Examples
 

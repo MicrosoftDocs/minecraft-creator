@@ -18,7 +18,7 @@ description: Contents of the @minecraft/common module
     "version": "1.2.0"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.100-beta.22 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.100-beta.23 of Minecraft.
 
 ## Available Versions
 - `1.2.0`
@@ -37,3 +37,4 @@ This is version 1.x.x of this module, which is the latest as of version 1.21.100
 - [InvalidArgumentError](InvalidArgumentError.md)
 - [PropertyOutOfBoundsError](PropertyOutOfBoundsError.md)
 - [RuntimeConditionError](RuntimeConditionError.md)
+- [UnsupportedFunctionalityError](UnsupportedFunctionalityError.md)

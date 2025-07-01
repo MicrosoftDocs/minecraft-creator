@@ -267,6 +267,7 @@ Returns a set of entities based on a set of conditions defined via the EntityQue
   
 Notes:
 - This function can throw errors.
+  - Throws [*CommandError*](CommandError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 #### Examples
 
@@ -382,6 +383,7 @@ Gets entities that intersect with a specified vector emanating from a location.
   
 Notes:
 - This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 ### **getPlayers**
 `
@@ -399,6 +401,7 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
   
 Notes:
 - This function can throw errors.
+  - Throws [*CommandError*](CommandError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
 
 ### **getTopmostBlock**
 `
@@ -491,10 +494,7 @@ Plays a sound for all players.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - An error will be thrown if volume is less than 0.0.
-  - An error will be thrown if fade is less than 0.0.
-  - An error will be thrown if pitch is less than 0.01.
-  - An error will be thrown if volume is less than 0.0.
+  - Throws [*@minecraft/common.PropertyOutOfBoundsError*](../../../scriptapi/minecraft/common/PropertyOutOfBoundsError.md)
 
 ### **runCommand**
 `
@@ -610,7 +610,7 @@ Creates a new entity (e.g., a mob) at the specified location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws *Error*, [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+  - Throws [*EntitySpawnError*](EntitySpawnError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 #### Examples
 

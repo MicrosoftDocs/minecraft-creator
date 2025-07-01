@@ -15,7 +15,7 @@ description: Contents of the @minecraft/common.PropertyOutOfBoundsError class.
 ## Properties
 
 ### **maxValue**
-`read-only maxValue: number;`
+`read-only maxValue?: number;`
 
 Type: *number*
 
@@ -23,7 +23,7 @@ Notes:
   - This property can be read in early-execution mode.
 
 ### **minValue**
-`read-only minValue: number;`
+`read-only minValue?: number;`
 
 Type: *number*
 

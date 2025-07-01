@@ -24,6 +24,9 @@ new PyramidBrushShape(settings: {
         width?: number;
         height?: number;
         depth?: number;
+        xRotation?: number;
+        yRotation?: number;
+        zRotation?: number;
     })
 `
 
@@ -35,6 +38,9 @@ Constructs a new instance of the `PyramidBrushShape` class
         width?: number;
         height?: number;
         depth?: number;
+        xRotation?: number;
+        yRotation?: number;
+        zRotation?: number;
     }*
 
 **Returns** *PyramidBrushShape*

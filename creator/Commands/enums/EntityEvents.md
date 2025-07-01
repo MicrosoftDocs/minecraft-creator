@@ -315,6 +315,10 @@ Entity is a fox configured for a thunderstorm
 Entity is going from full puff
 - `minecraft:from_player`
 Entity is from a player
+- `minecraft:from_player_default`
+- `minecraft:from_player_exposed`
+- `minecraft:from_player_oxidized`
+- `minecraft:from_player_weathered`
 - `minecraft:from_village`
 Entity is from a village
 - `minecraft:from_wandering_trader`
@@ -418,6 +422,7 @@ Entity trusts
 Entity is unleashed
 - `minecraft:on_unleashed`
 - `minecraft:on_unsaddled`
+- `minecraft:oxidize_copper`
 - `minecraft:panda_aggressive`
 Panda is in an aggressive state
 - `minecraft:panda_brown`
@@ -441,11 +446,13 @@ Raid is expired
 - `minecraft:randomize_sound_variant`
 - `minecraft:ranged_mode`
 Entity is in ranged mode
+- `minecraft:remove_oxidation_layer`
 - `minecraft:remove_persistence`
 Entity is no longer persistent
 - `minecraft:remove_raid_trigger`
 Raid trigger is removed
 - `minecraft:reset_swaying_ticks`
+- `minecraft:restart_timer`
 - `minecraft:resupply_trades`
 Entities with a trade are having those trades resupplied
 - `minecraft:roll_up`
@@ -592,6 +599,11 @@ Entity's target it too close
 - `minecraft:threat_detected`
 - `minecraft:to_full_puff`
 Entity fully puffs
+- `minecraft:transport_items.start_place_fail`
+- `minecraft:transport_items.start_place_succeed`
+- `minecraft:transport_items.start_take_fail`
+- `minecraft:transport_items.start_take_succeed`
+- `minecraft:transport_items.stop_interaction`
 - `minecraft:trigger_raid`
 Entity triggers a raid
 - `minecraft:turn_black`
@@ -629,6 +641,8 @@ Entity turns yellow
 - `minecraft:unroll`
 - `minecraft:upgrade_to_1_21_100`
 - `minecraft:warm_color`
+- `minecraft:wax_off`
+- `minecraft:wax_on`
 - `navigation_off_land`
 Entity navigates off land
 - `navigation_on_land`

@@ -32,6 +32,8 @@ Nether Gold Ore
 Nether Gold Ore
 - `minecraft:zombie_head`
 - `zombie_head`
+- `minecraft:waxed_weathered_copper_chest`
+- `waxed_weathered_copper_chest`
 - `minecraft:leaf_litter`
 - `leaf_litter`
 - `minecraft:warped_door`
@@ -170,6 +172,8 @@ Prismarine Bricks Stairs
 Waxed Oxidized Cut Copper
 - `waxed_oxidized_cut_copper`
 Waxed Oxidized Cut Copper
+- `minecraft:waxed_exposed_copper_chest`
+- `waxed_exposed_copper_chest`
 - `minecraft:calcite`
 Calcite
 - `calcite`
@@ -938,6 +942,8 @@ Smithing Table
 - `poppy`
 - `minecraft:tuff_brick_slab`
 - `tuff_brick_slab`
+- `minecraft:copper_chest`
+- `copper_chest`
 - `minecraft:mossy_stone_bricks`
 - `mossy_stone_bricks`
 - `minecraft:green_wool`
@@ -1088,6 +1094,8 @@ Mangrove Wood
 Red Glazed Terracotta
 - `red_glazed_terracotta`
 Red Glazed Terracotta
+- `minecraft:waxed_oxidized_copper_chest`
+- `waxed_oxidized_copper_chest`
 - `minecraft:dark_oak_fence_gate`
 Dark Oak Fence Gate
 - `dark_oak_fence_gate`
@@ -1176,6 +1184,8 @@ Redstone Ore
 Redstone Ore
 - `minecraft:bamboo_double_slab`
 - `bamboo_double_slab`
+- `minecraft:waxed_copper_chest`
+- `waxed_copper_chest`
 - `minecraft:green_stained_glass`
 - `green_stained_glass`
 - `minecraft:bubble_coral_block`
@@ -1738,6 +1748,8 @@ Warped Fence Gate
 - `cut_sandstone_slab`
 - `minecraft:skeleton_skull`
 - `skeleton_skull`
+- `minecraft:exposed_copper_chest`
+- `exposed_copper_chest`
 - `minecraft:composter`
 Composter
 - `composter`
@@ -1822,6 +1834,8 @@ Trapped Chest
 Acacia Trapdoor
 - `acacia_trapdoor`
 Acacia Trapdoor
+- `minecraft:weathered_copper_chest`
+- `weathered_copper_chest`
 - `minecraft:brain_coral_block`
 - `brain_coral_block`
 - `minecraft:standing_sign`
@@ -2484,6 +2498,8 @@ Web
 Web
 - `minecraft:dead_tube_coral_fan`
 - `dead_tube_coral_fan`
+- `minecraft:oxidized_copper_chest`
+- `oxidized_copper_chest`
 - `minecraft:pale_oak_standing_sign`
 - `pale_oak_standing_sign`
 - `minecraft:polished_diorite_stairs`

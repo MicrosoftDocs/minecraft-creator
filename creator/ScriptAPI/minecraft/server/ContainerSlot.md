@@ -121,6 +121,9 @@ Notes:
 - [getDynamicPropertyTotalByteCount](#getdynamicpropertytotalbytecount)
 - [getItem](#getitem)
 - [getLore](#getlore)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getRawLore](#getrawlore)
+::: moniker-end
 - [getTags](#gettags)
 - [hasItem](#hasitem)
 - [hasTag](#hastag)
@@ -241,6 +244,24 @@ Notes:
 - This function can throw errors.
   - Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **getRawLore**
+`
+getRawLore(): RawMessage[]
+`
+
+Returns the lore value - a secondary display string - for an ItemStack. String lore lines will be converted to a [*@minecraft/server.RawMessage*](../../../scriptapi/minecraft/server/RawMessage.md) and put under [*@minecraft/server.RawMessage.text*](../../../scriptapi/minecraft/server/RawMessage.md#text).
+
+**Returns** [*RawMessage*](RawMessage.md)[] - An array of lore lines. If the item does not have lore, returns an empty array.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+::: moniker-end
+
 ### **getTags**
 `
 getTags(): string[]
@@ -355,7 +376,7 @@ Sets multiple dynamic properties with specific values.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 ::: moniker-end
 
 ### **setDynamicProperty**
@@ -375,7 +396,7 @@ Sets a specified property to a value.
   
 Notes:
 - This function can throw errors.
-  - Throws *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 ### **setItem**
 `
@@ -396,17 +417,17 @@ Notes:
 
 ### **setLore**
 `
-setLore(loreList?: string[]): void
+setLore(loreList?: (RawMessage | string)[]): void
 `
 
 Sets the lore value - a secondary display string - for an ItemStack.
 
 #### **Parameters**
-- **loreList**?: *string*[] = `null`
+- **loreList**?: ([*RawMessage*](RawMessage.md) | *string*)[] = `null`
   
   A list of lore strings. Setting this argument to undefined will clear the lore.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)

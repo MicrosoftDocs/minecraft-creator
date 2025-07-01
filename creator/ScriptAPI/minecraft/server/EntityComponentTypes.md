@@ -220,10 +220,16 @@ Adds NPC capabilities to an entity such as custom skin, name, and dialogue inter
 When present on an entity, this entity is on fire.
 ### **Exhaustion**
 `Exhaustion = "minecraft:player.exhaustion"`
+
+Use this component to read the exhaustion of a player. This is only available on players.
 ### **Hunger**
 `Hunger = "minecraft:player.hunger"`
+
+Use this component to read the hunger of a player. This is only available on players.
 ### **Saturation**
 `Saturation = "minecraft:player.saturation"`
+
+Use this component to read the saturation of a player. This is only available on players.
 ### **Projectile**
 `Projectile = "minecraft:projectile"`
 

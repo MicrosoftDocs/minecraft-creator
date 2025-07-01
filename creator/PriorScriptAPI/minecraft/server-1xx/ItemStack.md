@@ -438,7 +438,7 @@ Sets a specified property to a value. Note: This function only works with non-st
   
 Notes:
 - This function can throw errors.
-  - Throws if the item stack is stackable.
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
 ### **setLore**
 `
