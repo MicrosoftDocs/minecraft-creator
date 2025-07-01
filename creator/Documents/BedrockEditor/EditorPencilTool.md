@@ -36,6 +36,8 @@ This tool should greatly reduce the need for creators to need to go into Crossha
 
     Places blocks that have rotation or permutations at their default position.
 
+![MP4 demonstrating Block Facing categories](Media/Line%20Tool.mp4)
+
 ## Cursor Settings
 
 ### Input Modes
