@@ -30,9 +30,11 @@ This tool should greatly reduce the need for creators to need to go into Crossha
 
 -	**By Camera**
 
+    Changes the placed block's rotation based on the direction the camera (player) is facing.
 
 -	**Default**
 
+    Places blocks that have rotation or permutations at their default position.
 
 ## Cursor Settings
 
