@@ -11,6 +11,8 @@ ms.date: 05/16/2025
 
 The extrude tool is used to add or subract blocks of the same type around the cursor.
 
+![Gif of Extrude Tool on Garden](Media/GIFs/Extrude.gif)
+
 - **Face Size**: Determines the number of blocks that will be extruded around the cursor. This value represents the radius size from the block face that you click (i.e., if you click the top face of a block, it will add or subtract blocks using the top face as the center of the radius). This value can range from 1 to 32.
 
 - **Layer Count**: The number of layers that will be added or subtracted from the block that you click. This value can range from 1 to 16.

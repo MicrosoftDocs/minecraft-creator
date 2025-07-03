@@ -14,4 +14,4 @@ The Block Inspector lets you view and modify block properties to fine tune block
 >[!Note]
 > Not all properties are customizable for all blocks.
 
-![Animation of the Block Inspector.](Media/editor_block_inspector.gif)
+![Animation of the Block Inspector.](Media/GIFs/BlockInspector.gif)

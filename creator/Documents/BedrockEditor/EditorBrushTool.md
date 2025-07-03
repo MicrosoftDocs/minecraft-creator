@@ -17,7 +17,7 @@ You can change the brush size, ranging from 1 to 16. Brush sizes are rendered as
 
 You can click once once to place one block shape, or click and drag to place blocks everywhere you touch. This should make it easier to build up shapes from the ground - like mountains!
 
-![Animation showing how to paint with blocks](Media/GlowstoneBrush.gif)
+![Animation showing how to paint with blocks](Media/GIFs/Brush.gif)
 
 ## Cursor Settings
 
