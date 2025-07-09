@@ -12,7 +12,7 @@ Since Add-Ons are basically just amendments to Minecraft’s vanilla resource an
 
 As a creator, there are three ways to overwrite vanilla assets. Each method has strengths and limitations for when and how you can use them, so it’s important to consider your goals for the entities you’re changing.
 
--	### Identifier
+-	## Identifier
     Since most assets are referenced by an identifier rather than their filenames, you can overwrite their vanilla values by using the same identifier in the new resource or behavior pack file. Identifier overwrites work for the following asset types:
 
     - BP Entities
@@ -35,7 +35,7 @@ As a creator, there are three ways to overwrite vanilla assets. Each method has 
 
     Check out our article on [Creating New Entity Types](/creator/Documents/IntroductionToAddEntity.md) for a detailed tutorial of how to overwrite assets with their identifier.
 
--	### Path
+-	## Path
     For assets that lack an identifier and are instead referenced by their path, you can overwrite the vanilla values by placing your custom asset in the same path destination. These assets include:
 
     - Functions
@@ -52,7 +52,7 @@ As a creator, there are three ways to overwrite vanilla assets. Each method has 
 
     Check out our article on [Creating and Adding Custom Sounds to Minecraft](/creator/Documents/AddCustomSounds.md) for a detailed tutorial of how to overwrite assets with their path.
 
--	### Reference File
+-	## Reference File
     Some assets require you to copy their vanilla reference file values into your custom packs to adjust how they render and behave in your world. These assets typically live in vast JSON files that contain an exhaustive list of the snippets you can copy and paste into your custom packs as a foundation for your customization. Customization via reference file is best for:
 
     - All UI files
@@ -74,20 +74,20 @@ As a creator, there are three ways to overwrite vanilla assets. Each method has 
     > ![Note]
     > Don’t copy the entire file directly into your custom packs. Instead, use the files as a reference or to copy specific JSON snippets into your custom pack.
 
-## Overwriting Blocks
-Vanilla block definitions are mostly immutable. As a creator, your ability to change blocks is currently limited to the assets located in:
+    ### Overwriting Blocks
+    Vanilla block definitions are mostly immutable. As a creator, your ability to change blocks is currently limited to the assets located in:
 
-- [RP/blocks.json]( https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/blocks.json)
+    - [RP/blocks.json]( https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/blocks.json)
 
-    Defines the texture set for the in-world and in-hand appearance of blocks; whether a block’s texture is isotropic or anisotropic; and for how blocks sound when they’re placed or destroyed.
+        Defines the texture set for the in-world and in-hand appearance of blocks; whether a block’s texture is isotropic or anisotropic; and for how blocks sound when they’re placed or destroyed.
 
-- [RP/textures/terrain_textures.json]( https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/textures/terrain_texture.json)
+    - [RP/textures/terrain_textures.json]( https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/textures/terrain_texture.json)
 
-    Defines the image files a texture set uses.
+        Defines the image files a texture set uses.
 
 
-## Overwriting Items
-Some Vanilla items are data-driven and can therefore be overwritten like compatible blocks, by adjusting the assets’ JSON values. You can find a list of overwritable items in [BP/items/](https://github.com/Mojang/bedrock-samples/tree/main/behavior_pack/items) on the Mojang public GitHub repository.
+    ### Overwriting Items
+    Some Vanilla items are data-driven and can therefore be overwritten like compatible blocks, by adjusting the assets’ JSON values. You can find a list of overwritable items in [BP/items/](https://github.com/Mojang/bedrock-samples/tree/main/behavior_pack/items) on the Mojang public GitHub repository.
 
-> ![Note]
-> Items defined with version 1.10 may have implicit behaviors not shown in the file, so these items can only be overwritten by other items defined by version 1.10.
+    > ![Note]
+    > Items defined with version 1.10 may have implicit behaviors not shown in the file, so these items can only be overwritten by other items defined by version 1.10.
