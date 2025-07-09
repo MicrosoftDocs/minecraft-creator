@@ -33,7 +33,7 @@ As a creator, there are three ways to overwrite vanilla assets. Each method has 
 
     - Render Controllers
 
-    Check out our article on [Creating New Entity Types](/creator/Documents/introductiontoaddentity.md) for a detailed tutorial of how to overwrite assets with their identifier.
+    Check out our article on [Creating New Entity Types](/creator/Documents/IntroductionToAddEntity.md) for a detailed tutorial of how to overwrite assets with their identifier.
 
 -	### Path
     For assets that lack an identifier and are instead referenced by their path, you can overwrite the vanilla values by placing your custom asset in the same path destination. These assets include:
@@ -50,7 +50,7 @@ As a creator, there are three ways to overwrite vanilla assets. Each method has 
 
     - Binary Assets
 
-    Check out our article on [Creating and Adding Custom Sounds to Minecraft](/creator/Documents/addcustomsounds.md) for a detailed tutorial of how to overwrite assets with their path.
+    Check out our article on [Creating and Adding Custom Sounds to Minecraft](/creator/Documents/AddCustomSounds.md) for a detailed tutorial of how to overwrite assets with their path.
 
 -	### Reference File
     Some assets require you to copy their vanilla reference file values into your custom packs to adjust how they render and behave in your world. These assets typically live in vast JSON files that contain an exhaustive list of the snippets you can copy and paste into your custom packs as a foundation for your customization. Customization via reference file is best for:
