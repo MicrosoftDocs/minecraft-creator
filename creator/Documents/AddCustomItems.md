@@ -29,7 +29,7 @@ Here is a link to the [Vanilla Minecraft Add-on Packs](https://aka.ms/resourcepa
 
 ## Minecraft Custom Items
 
-Here are three items that do not currently exist in Vanilla Minecraft. They are listed here in order of complexity:
+Here are four items that do not currently exist in Vanilla Minecraft. They are listed here in order of complexity:
 
 >- Goo
 >- Wrench
