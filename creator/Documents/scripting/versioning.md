@@ -16,7 +16,7 @@ Minecraft API modules currently operate on three tracks:
 * a beta track (for example, version `1.3.0-beta`)
 * an internal track (for example, version `1.4.0-internal`)
 
-Also, as of 1.21.70 previews, we've also introduced 2.0.0-beta versions of scripting APIs. See the [Scripting V2.0.0 Overview](./ScriptingV2.0.0Overview.md) for more on changes incorporated into 2.0.0.
+Also, as of 1.21.70 previews, we've also introduced 2.0.0-beta versions of scripting APIs. See the [Scripting V2 Overview](./v2-overview.md) for more about the changes in Version 2.
 
 When specifying dependencies within `manifest.json` of a behavior pack, it is important to consider the impact of the versions of APIs that you wish to use. Where possible, try to use stable track APIs.
 
@@ -46,7 +46,7 @@ to Minecraft product version:
 | 1.16.0 | 1.21.50 |
 | 1.17.0 | 1.21.60 |
 
-## Stable Track
+## Stable track
 
 API modules in the stable track are numbered with a version number like `1.1.0`, and with no suffix on the end. These APIs are considered "finished" and should not change in functionality across releases where minor or patch versions are incremented. With stable APIs, Minecraft uses the rules of semantic versioning, which mean:
 
@@ -61,23 +61,24 @@ This implies that as minor versions increment, and even if additional "minor rel
 
 As of version 1.19.70, only `@minecraft/server` has APIs that are in the stable track. See the following objects specifically:
 
-* [World](../ScriptAPI/minecraft/server/World.md)
-* [Dimension](../ScriptAPI/minecraft/server/Dimension.md)
-* [Entity](../ScriptAPI/minecraft/server/Entity.md)
+* [World](../../ScriptAPI/minecraft/server/World.md)
+* [Dimension](../../ScriptAPI/minecraft/server/Dimension.md)
+* [Entity](../../ScriptAPI/minecraft/server/Entity.md)
 
 Note that only a subset of the members of these types are currently exposed in the stable track.
 
-## Beta Track
+## Beta track
 
 API modules in the beta track are labeled with the "-beta" suffix - for example, `1.2.0-beta`. Beta APIs do not follow the rules of semantic versioning. With beta APIs, no backwards compatibility is implied, and even minor version increments can include backwards-compatibility breaking changes like the removal of properties or methods. Moreover, with every major release of Minecraft, it is likely that several `-beta` modules will increment their version number (for example, from `1.2.0-beta` to `1.3.0-beta`) without having an automatic upgrade from the old `-beta` version to the next. As a consequence, you may need to update the version number of `manifest.json` dependencies at every major release if you are using `-beta` APIs.
 
 > [!IMPORTANT]
 > In order to use -beta APIs, you must enable the "Beta APIs" experiment within worlds that use these behavior packs.
 
-## Internal Track
+## Internal track
 
 Internal APIs are not functional or supported for use in custom behavior packs. Their API signatures might change at any time.
 
 ## Using versioned type definitions when scripting
 
-For the definitive resource on APIs and types that are exposed in various versions, consider using the type definitions available through **npm** at [npmjs.com](https://npmjs.com). The [@minecraft/server](https://www.npmjs.com/package/@minecraft/server) definitions contain different variants of type definitions for stable and beta tracks, as well as across both main and preview releases of Minecraft Bedrock Edition. See more on how to use these type definitions in [this article](ScriptDeveloperTools.md)
+For the definitive resource on APIs and types that are exposed in various versions, consider using the type definitions available through **npm** at [npmjs.com](https://npmjs.com). The [@minecraft/server](https://www.npmjs.com/package/@minecraft/server) definitions contain different variants of type definitions for stable and beta tracks, as well as across both main and preview releases of Minecraft Bedrock Edition. See more on how to use these type definitions in the [Developer Tools article](./developer-tools.md).
+

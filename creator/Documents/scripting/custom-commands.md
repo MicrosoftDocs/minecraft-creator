@@ -12,32 +12,30 @@ There is also a video version available of this overview of Scripting Custom Com
 
 > [!VIDEO https://www.youtube.com/embed/cXfMwcDg1Lo]
 
-## Scripting Custom Commands
+## Scripting custom commands
 
-Commands are a critical part of nearly any creator project. Commonly, projects are boot-strapped and tested via a set of custom commands and functions, including commands that can reset environments or change configurations. In multiplayer environments, a set of commands can be used to administer games. You can also use commands to provide helpful little builder functions, to further build out your world.
+Commands are a critical part of nearly any Minecraft creator project. You can use them for bootstrapping and testing your projects, adding commands that reset environments or change configurations. For multiplayer servers, commands can be used to administer games. You can also use commands to provide helpful little builder functions, to further build out your world.
 
-Starting in Minecraft Bedrock Edition 1.21.80.22 Preview, you can now implement custom commands in script. These commands have the full capability of scripting APIs and custom logic, allowing you to implement sophisticated operations.
-
-Note that in the current beta, context on the executing environment (e.g., the player who ran the command, or the initiator in NPC environments) is not available; we are looking to bring this execution context in future.
+Starting in Minecraft Bedrock Edition 1.21.80.22 Preview, you can now implement custom commands in script! These commands have the full capability of scripting APIs and custom logic, allowing you to implement sophisticated operations.
 
 You can view a sample project at [https://github.com/microsoft/minecraft-scripting-samples](https://github.com/microsoft/minecraft-scripting-samples/tree/main/custom-commands).
 
-### Using 2.0.0-beta scripting environment
+### Using the 2.0.0-beta scripting environment
 
-To get started, we'll want to work with the 2.0.0-beta scripting environment. Custom commands and registration only run in [the v2.0.0 scripting environment](./ScriptingV2.0.0Overview.md), which itself is currently in beta.
+To get started, we'll want to work with the 2.0.0-beta scripting environment. Custom commands and registration only run in [the v2.0.0 scripting environment](./v2-overview.md), which itself is currently in beta.
 
 You'll want to make sure you use `2.0.0-beta` as your scripting environment, in the manifest of your behavior pack:
 
 ```json
-  {
-    "module_name": "@minecraft/server",
-    "version": "2.0.0-beta"
-  },
+{
+  "module_name": "@minecraft/server",
+  "version": "2.0.0-beta"
+},
 ```
 
-### Registering Commands
+### Registering commands
 
-The first step is to register the command. You can do this within the `startup` event of system.beforeEvents, like so:
+The first step is to register the command. You can do this within the `startup` event of `system.beforeEvents`, like so:
 
 ```typescript
 system.beforeEvents.startup.subscribe((init: StartupEvent) => {
@@ -57,25 +55,26 @@ There are several parameters you will need to specify:
 |:----------:|-----------|
 | name | Name of the command that is used. Custom commands must be namespaced (that is, follow the form of namespace:commandname). |
 | description | Description of the command. This will show up in autocomplete for the command. |
-| permissionLevel | Relative permission level of the command.|
+| permissionLevel | Relative permission level of the command. |
 | mandatoryParameters | A list of mandatory parameters for the command. These will come first in the list of parameters that a command may have. |
 | optionalParameters | A list of optional parameters for the command. These will come second in the list of parameters. |
 
 #### Permission Levels
 
-Commands can have a permission level that is required from executing contexts and players.
+Commands can require executing contexts and players to have specific permissions:
 
 |Parameter |Description |
 |:----------:|-----------|
 | Any | Any player or environment can run this command. |
 | GameDirectors | Requires a player with an "Operator Commands" permission to run this command. Also, scripting and command environments, like command blocks, can run this command. |
-| Admin | Requires a player with "Operator Commands" permission. Commands with this level cannot be used in automations like commands or script |
+| Admin | Requires a player with "Operator Commands" permission. Commands with this level cannot be used in automations like commands or script. |
 | Host | Only the originating game owner can run this command. |
 | Owner | In dedicated server environments, this command can only be exited in the hosting environment at the dedicated server console. |
 
-#### Command Enums
+#### Command enums
 
-As of the 1.21.80-preview.27 release you can now register custom enums for script-based commands, like so:
+As of the 1.21.80-preview.27 release you can  register custom enums for script-based commands, like so:
+
 ```typescript
 system.beforeEvents.startup.subscribe((init: StartupEvent) => {
   const commandRegistry = event.customCommandRegistry;
@@ -100,17 +99,17 @@ system.beforeEvents.startup.subscribe((init: StartupEvent) => {
 
 After registering your command, Minecraft will call into your function with the parameters that are specified by the command context.
 
-|Parameter Type | Corresponding data variable type |
-|:----------:|-----------|
-| BlockType | @minecraft/server.BlockType |
-| Boolean| boolean |
-| EntitySelector | Entity[] |
-| Float | number |
-| Integer | number |
-| ItemType | @minecraft/server.ItemType |
-| Position | Vector3 |
-| PlayerSelector | Player[] |
-| String | string |
+| Parameter Type | Corresponding data variable type |
+|:--------------:|----------------------------------|
+| BlockType      | @minecraft/server.BlockType      |
+| Boolean        | boolean                          |
+| EntitySelector | Entity[]                         |
+| Float          | number                           |
+| Integer        | number                           |
+| ItemType       | @minecraft/server.ItemType       |
+| Position       | Vector3                          |
+| PlayerSelector | Player[]                         |
+| String         | string                           |
 
 If the parameter is optional, then `undefined` is passed in if the parameter is not specified.
 
@@ -126,4 +125,4 @@ Note that script command function runs in a "before" context, meaning that most 
 
 ## Summary
 
-Custom script-based commands unlocks a new organization tool for functionality you have in your creations. Whether a simple internal reset tool or a sophisticated game administration suite, we hope that providing a set of powerful commands is easy and second nature in your projects.
+Custom script-based commands unlock a new organization tool for functionality you have in your creations. Whether a simple internal reset tool or a sophisticated game administration suite, we hope that providing a set of powerful commands is easy and second nature in your projects.

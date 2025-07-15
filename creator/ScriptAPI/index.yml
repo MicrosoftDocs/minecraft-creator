@@ -23,11 +23,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
            - text: Use Visual Studio Code tools to write script
-             url: ../Documents/ScriptDeveloperTools.md
+             url: ../Documents/scripting/developer-tools.md
            - text: Building your first GameTest
              url: ../Documents/GameTestBuildYourFirstGameTest.md
            - text: Creating a simple gameplay experience
-             url: ../Documents/ScriptingGettingStarted.md
+             url: ../Documents/scripting/next-steps.md
            - text: Scripting Bedrock Dedicated Server
              url: ../Documents/BedrockServer/scripting.md
       - linkListType: concept

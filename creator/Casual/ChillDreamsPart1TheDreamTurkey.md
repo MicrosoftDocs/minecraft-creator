@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Chill Dreams Add-On for Minecraft - Part 1 - The Dream Turkey
 description: Part 1 of Chill Dreams Add-On series gives a project overview and discusses the creation of some initial assets
 ms.service: minecraft-bedrock-edition
+ms.date: 07/14/2025
 ---
 
 # Chill Dreams Add-On for Minecraft: Part 1 - The Dream Turkey
@@ -16,7 +17,7 @@ Have you ever been in the middle of an adventure in Minecraft and you just had t
 
 For me, personally, I happened to have a spare mini PC and an empty screen. What better to display on it than some beautiful dynamic Minecraft-y scenes? I could sure use a "Minecraft screensaver."
 
-I also wanted to accomplish this goal in the Minecraftiest way possible: through Add-Ons. Add-Ons let you add extensions to your existing Minecraft experiences, like survival worlds. While Add-Ons are a [cool new addition to the Minecraft Marketplace](https://www.minecraft.net/article/introducing-Add-Ons) and there is a diverse set of new experiences, Add-Ons and mods have been available and delivered in the community for a long time, whether it's Add-Ons for Bedrock or Mods for Java. You can build your own nifty Add-Ons! There is also an [amazing community focused on building Add-Ons for Bedrock - (bedrock.dev)](https://wiki.bedrock.dev/discord.html).
+I also wanted to accomplish this goal in the Minecraftiest way possible: through Add-Ons. Add-Ons let you add extensions to your existing Minecraft experiences, like survival worlds. While Add-Ons are a [cool new addition to the Minecraft Marketplace](https://www.minecraft.net/article/introducing-add-ons) and there is a diverse set of new experiences, Add-Ons and mods have been available and delivered in the community for a long time, whether it's Add-Ons for Bedrock or Mods for Java. You can build your own nifty Add-Ons! There is also an [amazing community focused on building Add-Ons for Bedrock - (bedrock.dev)](https://wiki.bedrock.dev/discord.html).
 
 This is the first in a three-part set of articles.
 
@@ -62,7 +63,7 @@ This is what we'll add various assets and things into, over time. Be prepared: c
 
 Within my behavior pack, I updated the identifiers and titles to make it the **Chill Dreams Add-on**.
 
-When starting with your first BP/RP (that is, behavior pack/resource pack), you'll want to run it frequently to see how your updates are functioning, and that things are working as expected. To see the Add-On run, you'll want to run `npm i` to install dependencies for this project, and run `gulp` to deploy it. If `npm` and `gulp` doesn't sound familiar to you, check out the [Build a gameplay experience with TypeScript](../Documents/ScriptingGettingStarted.md) article to familiarize yourself with those tools. When you run the gulp script, these tools will do the work to automatically push updates into Minecraft as you work. 
+When starting with your first BP/RP (that is, behavior pack/resource pack), you'll want to run it frequently to see how your updates are functioning, and that things are working as expected. First, you'll need to run `npm i` to install dependencies for this project (you only need to do that once). Then to see the Add-On run, `just-scripts local-deploy` to deploy it. If `npm` and `just-scripts` don't sound familiar to you, check out the [Scripting with TypeScript](../Documents/scripting/next-steps.md) article to familiarize yourself with those tools. When you run the gulp script, these tools will do the work to automatically push updates into Minecraft as you work. 
 
 Now that we have our starter, we can work to add and extend it. First up: we're going to want to create our Dream Turkey entity. I started with [BlockBench](https://www.blockbench.net/) which has an optional Add-On called the Minecraft Entity Wizard. Within the entity wizard, you can choose a "starter mob", and of course, I chose the chicken as my turkey starter. See more about [the Entity Wizard here](../Documents/MinecraftEntityWizard.md).
 

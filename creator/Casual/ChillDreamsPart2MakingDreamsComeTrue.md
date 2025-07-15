@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Chill Dreams Add-On for Minecraft - Part 2 - Making Dreams Come True
 description: Part 2 of Chill Dreams Add-On series covers the coding techniques needed to make the dream screensaver work
 ms.service: minecraft-bedrock-edition
+ms.date: 07/14/2025
 ---
 
 # Chill Dreams Add-On for Minecraft: Part 2 - Making Dreams Come True
@@ -14,7 +15,7 @@ _This article is part of a casual new series of articles focusing on building co
 
 In [part 1 of our Chill Dreams Add-on series](./ChillDreamsPart1TheDreamTurkey.md), I covered the Chill-Dreams  Add-On as a "Minecraft Screen Saver.", how the screensaver mode is synonymous with "dreaming," and how dreams get started by eating the Dream Turkey. Now I need to make the dreams _happen_!
 
-In this section I'll discuss how dreams are implemented, primarily via script. This section of the series will be fairly script-heavy - if you haven't written some script yet, check out this [JavaScript Introduction](../Documents/ScriptingIntroduction.md) and the more advanced [TypeScript tutorial](../Documents/ScriptingGettingStarted.md) to get started with scripting.
+In this section I'll discuss how dreams are implemented, primarily via script. This section of the series will be fairly script-heavy - if you haven't written some script yet, check out this [JavaScript Introduction](../Documents/scripting/introduction.md) and the more advanced [TypeScript tutorial](../Documents/scripting/next-steps.md) to get started with scripting.
 
 You can get the sample from this project from [https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/). Note that there are subfolders for each part of this series - this is the `2_dreams_come_true` part.
 

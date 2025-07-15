@@ -183,7 +183,7 @@ conceptualContent:
           - url: ScriptAPI/index.yml
             itemType: reference
             text: Scripting API Reference
-          - url:  Documents/ScriptingGettingStarted.md
+          - url:  Documents/scripting/next-steps.md
             itemType: get-started
             text: Using TypeScript with Minecraft Scripting APIs
           - url: Documents/ScriptDeveloperTools.md

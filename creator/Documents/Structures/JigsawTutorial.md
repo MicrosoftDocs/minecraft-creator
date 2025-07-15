@@ -29,8 +29,8 @@ We recommend reviewing the following articles before you begin:
 
 If you want to follow the video exactly, you should know how to use scripts to deploy add-on packs, but it's not required.
 
-- [Introduction to Scripting](../ScriptingIntroduction.md)
-- [Getting Started with Scripting](../ScriptingGettingStarted.md)
+- [Introduction to Scripting](../scripting/introduction.md)
+- [Scripting with TypeScript](../scripting/next-steps.md)
 
 ## Jigsaw Behavior Pack
 

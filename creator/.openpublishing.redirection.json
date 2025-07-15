@@ -323,6 +323,56 @@
       "source_path": "Documents/RTXPBRIntro.md",
       "redirect_url": "/minecraft/creator/documents/vibrantvisuals/pbroverview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/ScriptingIntroduction.md",
+      "redirect_url": "/minecraft/creator/documents/scripting/introduction.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/ScriptingGettingStarted.md",
+      "redirect_url": "/minecraft/creator/documents/scripting/next-steps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/ScriptDeveloperTools.md",
+      "redirect_url": "/minecraft/creator/documents/scripting/developer-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/CustomComponents.md",
+      "redirect_url": "/minecraft/creator/documents/scripting/custom-components",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/CustomComponentsTutorial.md",
+      "redirect_url": "/minecraft/creator/documents/components-tutorial",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/CustomCommands.md",
+      "redirect_url": "/minecraft/creator/documents/scripting/custom-commands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/SystemRunGuide.md",
+      "redirect_url": "/minecraft/creator/documents/scripting/system-run-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/Scriptingv2.0.0Overview.md",
+      "redirect_url": "/minecraft/creator/documents/scripting/v2-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/ScriptVersioning.md",
+      "redirect_url": "/minecraft/creator/documents/scripting/versioning",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/ScriptingLibraries.md",
+      "redirect_url": "/minecraft/creator/documents/libraries",
+      "redirect_document_id": false
     }
   ]
 }
