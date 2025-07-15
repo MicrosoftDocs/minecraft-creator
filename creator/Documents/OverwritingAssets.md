@@ -32,7 +32,7 @@ As a creator, there are three ways to overwrite vanilla assets. Each method has 
 
     - Render Controllers
 
-    Check out our article on [Creating New Entity Types](/IntroductionToAddEntity.md) for a detailed tutorial of how to overwrite assets with their identifier.
+    Check out our article on [Creating New Entity Types](./IntroductionToAddEntity.md) for a detailed tutorial of how to overwrite assets with their identifier.
 
 -	## Path
     For assets that lack an identifier and are instead referenced by their path, you can overwrite the vanilla values by placing your custom asset in the same path destination. These assets include:
@@ -48,7 +48,7 @@ As a creator, there are three ways to overwrite vanilla assets. Each method has 
 
     - Binary Assets (like .png, .tga, and .ogg files)
 
-    Check out our article on [Creating and Adding Custom Sounds to Minecraft](/AddCustomSounds.md) for a detailed tutorial of how to overwrite assets with their path.
+    Check out our article on [Creating and Adding Custom Sounds to Minecraft](./AddCustomSounds.md) for a detailed tutorial of how to overwrite assets with their path.
 
 -	## Catalog File
     Some assets require you to copy their vanilla catalog file values into your custom packs to adjust how they render and behave in your world. These assets typically live in vast JSON files that contain an exhaustive list of the snippets you can copy and paste into your custom packs as a foundation for your customization. To leverage them without issues, you should delete most of the content in catalog files when you use them in your packs. Customization via catalog file is best for:
@@ -74,11 +74,11 @@ As a creator, there are three ways to overwrite vanilla assets. Each method has 
     ### Overwriting Blocks
     Vanilla block *definitions* are mostly immutable, but as a creator, you can override the *textures* for vanilla blocks by using the assets located in:
 
-    - [RP/blocks.json]( https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/blocks.json)
+    - [RP/blocks.json](https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/blocks.json)
 
         Defines the texture set for the in-world and in-hand appearance of blocks; whether a block’s texture is isotropic or anisotropic; and for how blocks sound when they’re placed or destroyed.
 
-    - [RP/textures/terrain_textures.json]( https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/textures/terrain_texture.json)
+    - [RP/textures/terrain_textures.json](https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/textures/terrain_texture.json)
 
         Defines the image files a texture set uses.
 
