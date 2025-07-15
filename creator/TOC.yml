@@ -78,6 +78,8 @@
           href: Documents/LearningJourneyGuide.md
         - name: Getting Started with Add-Ons
           href: Documents/GettingStarted.md
+        - name: Overwriting Vanilla Assets
+          href: Documents/OverwritingAssets.md
         - name: 'Create Custom Grass Blocks: An Introduction to Resource Packs'
           href: Documents/ResourcePack.md
         - name: 'Create an Angry Cow: An Introduction to Behavior Packs'
