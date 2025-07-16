@@ -14,7 +14,7 @@ Bedrock Dedicated Server supports JavaScript APIs, including several additional,
 ## Before you begin
 
 * You should have installed, tested, and configured Bedrock Dedicated Server, and be familiar with its general operation. If you haven't read the [Dedicated Server Getting Started Guide](./getting-started.md), now's the time.
-* You should be familiar with the [basics of scripting](../ScriptingGettingStarted.md), since a lot of the same concepts apply.
+* You should be familiar with the [basics of scripting](../scripting/introduction.md) and, ideally, [scripting with TypeScript](../scripting/next-steps.md), since a lot of the same concepts apply.
 
 > [!IMPORTANT]
 > The additional APIs discussed here are **experimental** as part of the Beta APIs program. As with all experiments, you may see changes or even removal of functionality in updated Minecraft versions. Check the [the Minecraft changelog](https://aka.ms/mcchanges) for details on any changes to Beta APIs. Make sure you back up your worlds and files before you start modifying them.
@@ -92,8 +92,7 @@ Unlike variables, secrets can only be read in certain contexts&mdash;they're not
 
 Your next step will probably be building an automated process to easily apply your JavaScript updates&mdash;and more easily debug them&mdash;while you work. You'll also want to make it easier to apply your world customizations to Dedicated Server. Your own process will reflect your preferences and what you're comfortable with, but we have an example ready to give you some ideas.
 
-Familiarize yourself with the [Build a gameplay experience with TypeScript article](../ScriptingGettingStarted.md). This article shows how you can get started with a client-side development flow using TypeScript and a build process tool called `just-js`.
-It's worthwhile to do the entire example using the Minecraft app to get started.
+Work through the [Scripting with TypeScript](../scripting/next-steps.md) article. This shows you how to get started with client-side development using TypeScript and the `just-scripts` build tool. It's worthwhile to do the entire example using the Minecraft app to get started.
 
 ## Wrapping up
 
