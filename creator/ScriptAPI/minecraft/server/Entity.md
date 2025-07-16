@@ -494,7 +494,10 @@ function bounceSkeletons(targetLocation: DimensionLocation) {
   };
 
   for (const entity of targetLocation.dimension.getEntities(eqo)) {
-    entity.applyKnockback(0, 0, 0, 1);
+    entity.applyKnockback({
+      x: 0,
+      z: 0
+    }, 1);
   }
 }
 ```
