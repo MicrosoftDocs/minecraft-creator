@@ -9,7 +9,8 @@
       {
         "id": "type",
         "title": "BlockEntityModifierType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

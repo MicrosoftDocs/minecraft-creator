@@ -15,7 +15,8 @@
             "id": "item",
             "dataType": 24
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "search_inventory",

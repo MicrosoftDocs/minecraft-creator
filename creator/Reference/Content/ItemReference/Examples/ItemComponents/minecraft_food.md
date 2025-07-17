@@ -17,7 +17,7 @@ Sets the item as a food component, allowing it to be edible to the player.
 > * [Use Modifier (minecraft:use_modifier)](../EntityComponents/minecraftComponent_use_modifier.md)
 > 
 
-## Food Properties
+## Minecraft Food Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

@@ -8,7 +8,8 @@
       {
         "id": "default",
         "title": "Default",
-        "dataType": 1
+        "dataType": 1,
+        "isRequired": true
       },
       {
         "id": "name",
@@ -19,17 +20,20 @@
             "comparison": "pattern",
             "value": "^(?:(?!^(minecraft):).)+:(?:.)+$"
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "text",
         "title": "Text",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "type",
         "title": "SettingType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

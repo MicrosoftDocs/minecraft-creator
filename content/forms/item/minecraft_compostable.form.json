@@ -15,7 +15,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:compostable",
-    "title": "Compostable",
+    "title": "Minecraft Compostable Item",
     "description": "Specifies that an item is compostable and provides the chance of creating a composting layer in the composter",
     "fields": [
       {
@@ -33,6 +33,7 @@
             "value": 100
           }
         ],
+        "isRequired": true,
         "samples": {
           "/samples/creator_camp/behavior_packs/creator_camp/items/bag_o_leaves.json": [
             {

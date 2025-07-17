@@ -205,7 +205,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:bundle_interaction",
-    "title": "Bundle Interaction",
+    "title": "Minecraft Bundle Interaction Item",
     "description": "[EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a \"minecraft:storage_item\" component.",
     "fields": [
       {

@@ -15,7 +15,7 @@ enables custom items to be dyed in cauldrons. To use the dyeable component, the 
 > This item requires a format version of at least 1.21.30.
 
 
-## Dyeable Properties
+## Minecraft Dyeable Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

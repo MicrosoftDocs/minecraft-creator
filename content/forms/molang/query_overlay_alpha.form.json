@@ -1,6 +1,7 @@
 {
   "id": "query.overlay_alpha",
   "fields": [],
+  "isDeprecated": true,
   "generated_doNotEdit": {
     "id": "query.overlay_alpha",
     "title": "Overlay Alpha Query",

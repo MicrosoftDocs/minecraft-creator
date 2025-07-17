@@ -9,7 +9,8 @@
       {
         "id": "identifier",
         "title": "Identifier",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

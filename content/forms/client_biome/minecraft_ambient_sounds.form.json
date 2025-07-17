@@ -28,7 +28,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:ambient_sounds",
-    "title": "Ambient Sounds",
+    "title": "Minecraft Ambient Sounds Client Biome",
     "description": "Set the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.",
     "fields": [
       {

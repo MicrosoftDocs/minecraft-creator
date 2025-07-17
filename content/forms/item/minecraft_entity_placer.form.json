@@ -74,7 +74,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:entity_placer",
-    "title": "Entity Placer",
+    "title": "Minecraft Entity Placer Item",
     "description": "The entity_placer item component specifies the blocks that the item can be placed on.",
     "fields": [
       {

@@ -8,85 +8,16 @@
         "id": "format_version",
         "title": "Format Version",
         "description": "Version of the JSON schema for this file. Aim-assist categories requires at least version 1.21.50.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "minecraft:aim_assist_categories",
         "title": "Minecraft Aim Assist Categories",
         "description": "A single Camera Aim-Assist Categories Definition.",
         "dataType": 16,
-        "subForm": {
-          "id": "CameraAimAssistCategoriesDefinition",
-          "title": "CameraAimAssistCategoriesDefinition",
-          "fields": [
-            {
-              "id": "categories",
-              "title": "Categories",
-              "description": "List of categories used by Camera Aim-Assist 'minecraft:aim_assist_preset'.",
-              "dataType": 15,
-              "subForm": {
-                "id": "CameraAimAssistCategoryDefinition",
-                "title": "CameraAimAssistCategoryDefinition",
-                "fields": [
-                  {
-                    "id": "name",
-                    "title": "Name",
-                    "description": "Name of the Aim-Assist Category used during lookup.",
-                    "dataType": 2
-                  },
-                  {
-                    "id": "priorities",
-                    "title": "Priorities",
-                    "description": "The set of priorities used when determining aim-assist selection.",
-                    "dataType": 16,
-                    "subForm": {
-                      "id": "CameraAimAssistCategoryPriorities",
-                      "title": "CameraAimAssistCategoryPriorities",
-                      "fields": [
-                        {
-                          "id": "block_default",
-                          "title": "Block Default",
-                          "description": "Optional. Default Aim-Assist targeting priority used for Blocks not found in 'blocks'.",
-                          "dataType": 0,
-                          "validity": [
-                            {
-                              "comparison": "<=",
-                              "value": 100
-                            }
-                          ]
-                        },
-                        {
-                          "id": "blocks",
-                          "title": "Blocks",
-                          "description": "Optional. Map of Block identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
-                          "dataType": 31
-                        },
-                        {
-                          "id": "entities",
-                          "title": "Entities",
-                          "description": "Optional. Map of Entity identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
-                          "dataType": 31
-                        },
-                        {
-                          "id": "entity_default",
-                          "title": "Entity Default",
-                          "description": "Optional. Default Aim-Assist targeting priority used for Entities not found in 'entities'.",
-                          "dataType": 0,
-                          "validity": [
-                            {
-                              "comparison": "<=",
-                              "value": 100
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          ]
-        }
+        "subFormId": "misc/cameraaimassistcategoriesdefinition",
+        "isRequired": true
       }
     ]
   }

@@ -9,13 +9,15 @@
         "id": "salt",
         "title": "Salt",
         "description": "Seed used for the random generator to provide a unique scatter pattern. This is used to prevent overlap in the case where multiple structure sets use the same placement values.",
-        "dataType": 0
+        "dataType": 0,
+        "isRequired": true
       },
       {
         "id": "separation",
         "title": "Separation",
         "description": "Padding (in chunks) within each grid cell. Structures will not generate within the padded area.",
-        "dataType": 0
+        "dataType": 0,
+        "isRequired": true
       },
       {
         "id": "spacing",
@@ -27,7 +29,8 @@
             "comparison": ">=",
             "value": 1
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "spread_type",
@@ -39,7 +42,8 @@
         "id": "type",
         "title": "PlacementType",
         "description": "Type of placement for the Jigsaw Structure Set.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

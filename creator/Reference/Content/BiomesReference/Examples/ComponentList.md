@@ -7,6 +7,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
+# Biomes Documentation
+
 | Biomes | Description |
 |:-----|:----------|
 | [minecraft:capped](Components/minecraftBiomes_capped.md)| Generates surface on blocks with non-solid blocks above or below. |

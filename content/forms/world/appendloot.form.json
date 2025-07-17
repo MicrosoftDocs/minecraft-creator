@@ -10,12 +10,14 @@
         "id": "loot_table",
         "title": "Loot Table",
         "description": "The loot table to append",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "type",
         "title": "BlockEntityModifierType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

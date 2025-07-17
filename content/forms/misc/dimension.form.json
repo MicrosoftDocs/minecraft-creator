@@ -8,85 +8,15 @@
         "id": "components",
         "title": "Components",
         "dataType": 16,
-        "subForm": {
-          "id": "Components",
-          "title": "Components",
-          "fields": [
-            {
-              "id": "minecraft:dimension_bounds",
-              "title": "Minecraft Dimension Bounds",
-              "dataType": 16,
-              "subForm": {
-                "id": "Bounds",
-                "title": "Bounds",
-                "fields": [
-                  {
-                    "id": "max",
-                    "title": "Max",
-                    "dataType": 0,
-                    "validity": [
-                      {
-                        "comparison": ">=",
-                        "value": -512
-                      },
-                      {
-                        "comparison": "<=",
-                        "value": 512
-                      }
-                    ]
-                  },
-                  {
-                    "id": "min",
-                    "title": "Min",
-                    "dataType": 0,
-                    "validity": [
-                      {
-                        "comparison": ">=",
-                        "value": -512
-                      },
-                      {
-                        "comparison": "<=",
-                        "value": 512
-                      }
-                    ]
-                  }
-                ]
-              }
-            },
-            {
-              "id": "minecraft:generation",
-              "title": "Minecraft Generation",
-              "dataType": 16,
-              "subForm": {
-                "id": "Generation",
-                "title": "Generation",
-                "fields": [
-                  {
-                    "id": "generator_type",
-                    "title": "Generator Type",
-                    "dataType": 2
-                  }
-                ]
-              }
-            }
-          ]
-        }
+        "subFormId": "misc/components",
+        "isRequired": true
       },
       {
         "id": "description",
         "title": "Description",
         "dataType": 16,
-        "subForm": {
-          "id": "Description",
-          "title": "Description",
-          "fields": [
-            {
-              "id": "identifier",
-              "title": "Identifier",
-              "dataType": 2
-            }
-          ]
-        }
+        "subFormId": "misc/description",
+        "isRequired": true
       }
     ]
   }

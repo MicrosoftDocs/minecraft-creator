@@ -1,6 +1,7 @@
 {
   "id": "query.state_time",
   "fields": [],
+  "description": "Returns the time in seconds in the current animation controller state. Only valid in an animation controller.",
   "generated_doNotEdit": {
     "id": "query.state_time",
     "title": "State Time Query",

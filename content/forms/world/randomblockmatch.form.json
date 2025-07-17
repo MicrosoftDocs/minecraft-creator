@@ -10,12 +10,14 @@
         "id": "block",
         "title": "Block",
         "description": "The block to match against.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "predicate_type",
         "title": "BlockType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "probability",
@@ -27,7 +29,8 @@
             "comparison": "<=",
             "value": 1
           }
-        ]
+        ],
+        "isRequired": true
       }
     ]
   }

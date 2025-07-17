@@ -1,6 +1,7 @@
 {
   "id": "query.is_scenting",
   "fields": [],
+  "isDeprecated": true,
   "generated_doNotEdit": {
     "id": "query.is_scenting",
     "title": "Is Scenting Query",

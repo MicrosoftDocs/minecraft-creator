@@ -1,76 +1,86 @@
- - name: Item Component List
-   href: ../ItemComponentList.md
- - name: Custom Item Use Priority
-   href: ../ItemUsePriority.md
- - name: description
-   href: description_component.md
- - name: allow_off_hand
-   href: minecraft_allow_off_hand.md
- - name: block_placer
-   href: minecraft_block_placer.md
- - name: bundle_interaction
-   href: minecraft_bundle_interaction.md
- - name: can_destroy_in_creative
-   href: minecraft_can_destroy_in_creative.md
- - name: cooldown
-   href: minecraft_cooldown.md
- - name: damage
-   href: minecraft_damage.md
- - name: digger
-   href: minecraft_digger.md
- - name: display_name
-   href: minecraft_display_name.md
- - name: durability
-   href: minecraft_durability.md
- - name: dyeable
-   href: minecraft_dyeable.md
- - name: enchantable
-   href: minecraft_enchantable.md
- - name: entity_placer
-   href: minecraft_entity_placer.md
- - name: food
-   href: minecraft_food.md
- - name: fuel
-   href: minecraft_fuel.md
- - name: glint
-   href: minecraft_glint.md
- - name: hand_equipped
-   href: minecraft_hand_equipped.md
- - name: hover_text_color
-   href: minecraft_hover_text_color.md
- - name: icon
-   href: minecraft_icon.md
- - name: interact_button
-   href: minecraft_interact_button.md
- - name: item
-   href: minecraft_item.md
- - name: liquid_clipped
-   href: minecraft_liquid_clipped.md
- - name: max_stack_size
-   href: minecraft_max_stack_size.md
- - name: projectile
-   href: minecraft_projectile.md
- - name: rarity
-   href: minecraft_rarity.md
- - name: record
-   href: minecraft_record.md
- - name: repairable
-   href: minecraft_repairable.md
- - name: shooter
-   href: minecraft_shooter.md
- - name: should_despawn
-   href: minecraft_should_despawn.md
- - name: stacked_by_data
-   href: minecraft_stacked_by_data.md
- - name: storage_item
-   href: minecraft_storage_item.md
- - name: tags
-   href: minecraft_tags.md
- - name: throwable
-   href: minecraft_throwable.md
- - name: use_animation
-   href: minecraft_use_animation.md
- - name: use_modifiers
-   href: minecraft_use_modifiers.md
- - name: wearable
-   href: minecraft_wearable.md
+- name: Item Components List
+  href: ../ItemComponentList.md
+- name: minecraft:allow_off_hand
+  href: minecraft_allow_off_hand.md
+- name: minecraft:block_placer
+  href: minecraft_block_placer.md
+- name: minecraft:bundle_interaction
+  href: minecraft_bundle_interaction.md
+- name: minecraft:can_destroy_in_creative
+  href: minecraft_can_destroy_in_creative.md
+- name: minecraft:compostable
+  href: minecraft_compostable.md
+- name: minecraft:cooldown
+  href: minecraft_cooldown.md
+- name: minecraft:custom_components
+  href: minecraft_custom_components.md
+- name: minecraft:damage
+  href: minecraft_damage.md
+- name: minecraft:damage_absorption
+  href: minecraft_damage_absorption.md
+- name: minecraft:digger
+  href: minecraft_digger.md
+- name: minecraft:display_name
+  href: minecraft_display_name.md
+- name: minecraft:durability
+  href: minecraft_durability.md
+- name: minecraft:durability_sensor
+  href: minecraft_durability_sensor.md
+- name: minecraft:durability_sensor durability_threshold
+  href: minecraft_durability_sensor_durability_threshold.md
+- name: minecraft:dyeable
+  href: minecraft_dyeable.md
+- name: minecraft:enchantable
+  href: minecraft_enchantable.md
+- name: minecraft:entity_placer
+  href: minecraft_entity_placer.md
+- name: minecraft:food
+  href: minecraft_food.md
+- name: minecraft:fuel
+  href: minecraft_fuel.md
+- name: minecraft:glint
+  href: minecraft_glint.md
+- name: minecraft:hand_equipped
+  href: minecraft_hand_equipped.md
+- name: minecraft:hover_text_color
+  href: minecraft_hover_text_color.md
+- name: minecraft:icon
+  href: minecraft_icon.md
+- name: minecraft:interact_button
+  href: minecraft_interact_button.md
+- name: Minecraft Item Item
+  href: minecraft_item.md
+- name: minecraft:liquid_clipped
+  href: minecraft_liquid_clipped.md
+- name: minecraft:max_stack_size
+  href: minecraft_max_stack_size.md
+- name: minecraft:projectile
+  href: minecraft_projectile.md
+- name: minecraft:rarity
+  href: minecraft_rarity.md
+- name: minecraft:record
+  href: minecraft_record.md
+- name: minecraft:repairable
+  href: minecraft_repairable.md
+- name: minecraft:shooter
+  href: minecraft_shooter.md
+- name: minecraft:should_despawn
+  href: minecraft_should_despawn.md
+- name: minecraft:stacked_by_data
+  href: minecraft_stacked_by_data.md
+- name: minecraft:storage_item
+  href: minecraft_storage_item.md
+- name: minecraft:storage_weight_limit
+  href: minecraft_storage_weight_limit.md
+- name: minecraft:storage_weight_modifier
+  href: minecraft_storage_weight_modifier.md
+- name: minecraft:tags
+  href: minecraft_tags.md
+- name: minecraft:throwable
+  href: minecraft_throwable.md
+- name: minecraft:use_animation
+  href: minecraft_use_animation.md
+- name: minecraft:use_modifiers
+  href: minecraft_use_modifiers.md
+- name: minecraft:wearable
+  href: minecraft_wearable.md

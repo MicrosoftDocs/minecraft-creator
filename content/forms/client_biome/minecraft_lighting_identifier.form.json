@@ -10,7 +10,8 @@
         "id": "lighting_identifier",
         "title": "Lighting Identifier",
         "description": "Identifier of lighting definition to use",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       }
     ]
   }

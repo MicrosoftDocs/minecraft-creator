@@ -50,13 +50,15 @@
             "id": "block",
             "dataType": 16
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "speed",
         "title": "Speed",
         "description": "Digging speed for the correlating block(s).",
-        "dataType": 0
+        "dataType": 0,
+        "isRequired": true
       }
     ]
   }

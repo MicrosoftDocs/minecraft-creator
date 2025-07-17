@@ -26,12 +26,14 @@
                     {
                       "id": "expression",
                       "title": "Expression",
-                      "dataType": 2
+                      "dataType": 2,
+                      "isRequired": true
                     },
                     {
                       "id": "version",
                       "title": "Version",
-                      "dataType": 0
+                      "dataType": 0,
+                      "isRequired": true
                     }
                   ]
                 }
@@ -62,12 +64,14 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0
+                  "dataType": 0,
+                  "isRequired": true
                 }
               ]
             }
@@ -76,7 +80,8 @@
             "id": "half_dimensions",
             "dataType": 3
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "offset",
@@ -96,12 +101,14 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0
+                  "dataType": 0,
+                  "isRequired": true
                 }
               ]
             }

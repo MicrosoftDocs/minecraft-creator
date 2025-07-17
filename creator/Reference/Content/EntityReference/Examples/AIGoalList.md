@@ -7,6 +7,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
+# Entity Behavior (AI) Components Documentation
+
 | Entity Behavior (AI) Components | Description |
 |:-----|:----------|
 | [minecraft:behavior.admire_item](EntityGoals/minecraftBehavior_admire_item.md)| Enables the mob to admire items that have been configured as admirable. |

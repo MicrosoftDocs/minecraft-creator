@@ -15,7 +15,7 @@ Determines what enchantments can be applied to the item. Not all enchantments wi
 > The following enchantment slot types that can be set for the value of `slot`: sword, bow, pickaxe, armor_head, armor_torso, armor_legs, armor_feet.
 
 
-## Enchantable Properties
+## Minecraft Enchantable Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

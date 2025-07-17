@@ -10,32 +10,16 @@
         "id": "alias",
         "title": "Alias",
         "description": "Alias of Random Pool",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "targets",
         "title": "Targets",
         "description": "List of potential pools",
-        "dataType": 15,
-        "subForm": {
-          "id": "WeightedRandomItem",
-          "title": "WeightedRandomItem",
-          "description": "Weighted Random Item",
-          "fields": [
-            {
-              "id": "data",
-              "title": "Data",
-              "description": "Item's data",
-              "dataType": 2
-            },
-            {
-              "id": "weight",
-              "title": "Weight",
-              "description": "Weight of item",
-              "dataType": 0
-            }
-          ]
-        }
+        "dataType": 16,
+        "subFormId": "world/weightedrandomitem",
+        "isRequired": true
       }
     ]
   }

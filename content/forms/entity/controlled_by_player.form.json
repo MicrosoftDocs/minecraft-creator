@@ -1,0 +1,49 @@
+{
+  "id": "minecraft:behavior.controlled_by_player",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.controlled_by_player",
+    "title": "Minecraft Behavior.controlled By Player Entity",
+    "description": "Allows the entity to be controlled by a player which is holding the item specified in \"minecraft:item_controllable\" component's \"control_items\" field (required). Also requires the \"minecraft:movement\" component, and the \"minecraft:rideable\" component. On every tick, the entity will attempt to rotate towards where the player is facing with the control item whilst simultaneously moving forward.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "fractional_rotation",
+        "title": "Fractional Rotation",
+        "description": "The entity will attempt to rotate to face where the player is facing each tick. The entity will target this percentage of their difference in their current facing angles each tick (from 0.0 to 1.0 where 1.0 = 100%). This is limited by \"fractional_rotation_limit\". A value of 0.0 will result in the entity no longer turning to where the player is facing. Default value: 0.5.",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 0.5
+          },
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "fractional_rotation_limit",
+        "title": "Fractional Rotation Limit",
+        "description": "Limits the total degrees the entity can rotate to face where the player is facing on each tick. Default value: 5.0.",
+        "dataType": 3
+      },
+      {
+        "id": "mount_speed_multiplier",
+        "title": "Mount Speed Multiplier",
+        "description": "Speed multiplier of mount when controlled by player. Default value: 1.0.",
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      }
+    ]
+  }
+}

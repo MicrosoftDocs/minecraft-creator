@@ -1,6 +1,7 @@
 {
   "id": "query.block_property",
   "fields": [],
+  "isDeprecated": true,
   "generated_doNotEdit": {
     "id": "query.block_property",
     "title": "Block Property Query",

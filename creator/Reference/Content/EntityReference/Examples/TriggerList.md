@@ -7,6 +7,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
+# Entity Triggers Documentation
+
 | Entity Triggers | Description |
 |:-----|:----------|
 | [minecraft:on_death](EntityTriggers/minecraftTrigger_on_death.md)| Only usable by the Ender Dragon. |

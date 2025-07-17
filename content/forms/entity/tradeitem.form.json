@@ -46,7 +46,8 @@
               "id": "test",
               "title": "Test",
               "description": "The name of the test to apply.",
-              "dataType": 2
+              "dataType": 2,
+              "isRequired": true
             },
             {
               "id": "value",
@@ -71,7 +72,8 @@
       {
         "id": "item",
         "title": "Item",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       },
       {
         "id": "price_multiplier",

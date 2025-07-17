@@ -79,7 +79,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:block_placer",
-    "title": "Block Placer",
+    "title": "Minecraft Block Placer Item",
     "description": "Items with the block_placer component will place a block when used. \nThis component can also be used instead of the \"minecraft:icon\" component to render the referenced block as the item icon.",
     "fields": [
       {
@@ -87,6 +87,7 @@
         "title": "Block",
         "description": "Defines the block that will be placed.",
         "dataType": 16,
+        "isRequired": true,
         "samples": {
           "/samples/custom_items/behavior_packs/custom_item/items/my_sword_singing.json": [
             {

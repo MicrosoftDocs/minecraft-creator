@@ -3,7 +3,7 @@
   "fields": [],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:storage_weight_modifier",
-    "title": "Storage Weight Modifier",
+    "title": "Minecraft Storage Weight Modifier Item",
     "description": "Specifies the maximum weight limit that a storage item can hold",
     "fields": [
       {

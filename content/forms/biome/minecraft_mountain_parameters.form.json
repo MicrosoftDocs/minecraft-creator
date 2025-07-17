@@ -109,7 +109,8 @@
               "id": "enabled",
               "title": "Enabled",
               "description": "If false, top slide will be disabled. If true, other parameters will be taken into account.",
-              "dataType": 1
+              "dataType": 1,
+              "isRequired": true
             }
           ]
         }

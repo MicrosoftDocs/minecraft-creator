@@ -9,7 +9,8 @@
         "id": "type",
         "title": "SurfaceBuilderType",
         "description": "Use default Minecraft End terrain generation.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

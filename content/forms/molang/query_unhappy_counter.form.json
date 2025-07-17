@@ -1,6 +1,7 @@
 {
   "id": "query.unhappy_counter",
   "fields": [],
+  "isDeprecated": true,
   "generated_doNotEdit": {
     "id": "query.unhappy_counter",
     "title": "Unhappy Counter Query",

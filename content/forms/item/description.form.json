@@ -9,44 +9,15 @@
         "id": "identifier",
         "title": "Identifier",
         "description": "Unique name for the item that must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla item.",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       },
       {
         "id": "menu_category",
         "title": "Menu Category",
         "description": "menu_category contains the creative group name and category for this item.",
         "dataType": 16,
-        "subForm": {
-          "id": "menu_category",
-          "title": "Menu Category",
-          "description": "menu_category contains the creative group name and category for this item.",
-          "fields": [
-            {
-              "id": "category",
-              "title": "CreativeItemCategory",
-              "description": "Creative category where this item belongs. Defaults to \"none\".",
-              "dataType": 2
-            },
-            {
-              "id": "group",
-              "title": "Group",
-              "description": "The Creative Group that this item belongs to. Group name is limited to 256 characters. The name also must start with a namespace.",
-              "dataType": 2,
-              "validity": [
-                {
-                  "comparison": "pattern",
-                  "value": "^(?:.)+:(?:.)+$"
-                }
-              ]
-            },
-            {
-              "id": "is_hidden_in_commands",
-              "title": "Is Hidden In Commands",
-              "description": "Determines whether or not this item can be used with commands. Commands can use items by default if a category is set.",
-              "dataType": 1
-            }
-          ]
-        }
+        "subFormId": "item/menu_category"
       }
     ]
   }

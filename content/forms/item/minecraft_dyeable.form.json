@@ -26,7 +26,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:dyeable",
-    "title": "Dyeable",
+    "title": "Minecraft Dyeable Item",
     "fields": [
       {
         "id": "default_color",

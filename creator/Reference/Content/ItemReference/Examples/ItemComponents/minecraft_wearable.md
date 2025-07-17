@@ -15,10 +15,11 @@ Sets the wearable item component.
 > Here are the following equipment slots that can be set for the value of slot: slot.weapon.mainhand, slot.weapon.offhand, slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.hotbar, slot.inventory, slot.enderchest, slot.saddle, slot.armor, slot.chest, slot.equippable.
 
 
-## Wearable Properties
+## Minecraft Wearable Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| hides_player_location | *not set* | Boolean true/false | Determines whether the Player's location is hidden on Locator Maps and the Locator Bar when the wearable item is worn. Default is false. |  | 
 | protection | *not set* | Integer number | How much protection the wearable item provides. Default is set to 0. |  | 
 | slot | *not set* | String | Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1. | Chestplate: `"slot.armor.chest"`, Crown: `"slot.armor.head"`, My Boots: `"slot.armor.feet"` | 
 | (deprecated) dispensable | *not set* | Boolean true/false |  | Chestplate: `true` | 

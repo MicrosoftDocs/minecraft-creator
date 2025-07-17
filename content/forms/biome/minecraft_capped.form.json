@@ -42,7 +42,8 @@
                   "id": "name",
                   "title": "Name",
                   "description": "Name of the block",
-                  "dataType": 16
+                  "dataType": 16,
+                  "isRequired": true
                 },
                 {
                   "id": "states",
@@ -63,7 +64,8 @@
               ]
             }
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "floor_materials",
@@ -89,7 +91,8 @@
                   "id": "name",
                   "title": "Name",
                   "description": "Name of the block",
-                  "dataType": 16
+                  "dataType": 16,
+                  "isRequired": true
                 },
                 {
                   "id": "states",
@@ -110,7 +113,8 @@
               ]
             }
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "foundation_material",
@@ -122,7 +126,8 @@
           "title": "Foundation Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "sea_material",
@@ -134,13 +139,15 @@
           "title": "Sea Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "type",
         "title": "SurfaceBuilderType",
         "description": "Controls the type of surface builder to use",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

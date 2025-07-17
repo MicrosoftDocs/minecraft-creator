@@ -10,28 +10,14 @@
         "title": "Basic Render Parameters",
         "description": "The parameters MUST contain a material and texture.",
         "dataType": 16,
-        "subForm": {
-          "id": "particle_effect basic_render_parameters",
-          "title": "Particle Effect Basic Render Parameters",
-          "description": "The parameters MUST contain a material and texture.",
-          "fields": [
-            {
-              "id": "material",
-              "title": "Material",
-              "dataType": 16
-            },
-            {
-              "id": "texture",
-              "title": "Texture",
-              "dataType": 16
-            }
-          ]
-        }
+        "subFormId": "misc/particle_effect_basic_render_parameters",
+        "isRequired": true
       },
       {
         "id": "identifier",
         "title": "Identifier",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

@@ -16,7 +16,8 @@
           "title": "Foundation Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "mid_material",
@@ -28,13 +29,15 @@
           "title": "Mid Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "sea_floor_depth",
         "title": "Sea Floor Depth",
         "description": "Controls how deep below the world water level the floor should occur.",
-        "dataType": 0
+        "dataType": 0,
+        "isRequired": true
       },
       {
         "id": "sea_floor_material",
@@ -46,7 +49,8 @@
           "title": "Sea Floor Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "sea_material",
@@ -58,7 +62,8 @@
           "title": "Sea Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "top_material",
@@ -70,13 +75,15 @@
           "title": "Top Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "type",
         "title": "SurfaceBuilderType",
         "description": "Controls the type of surface builder to use",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

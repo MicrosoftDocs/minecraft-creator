@@ -12,16 +12,16 @@ ms.date: 02/11/2025
 Allows a creator to determine how quickly an item can dig specific blocks.
 
 
-## Digger Properties
+## Minecraft Digger Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| destroy_speeds | *not set* | Array of [Destroy Speeds](#destroy-speeds-item-type) items | A list of blocks to dig with correlating speeds of digging. |  | 
+| destroy_speeds | *not set* | [Destroy Speeds](#destroy-speeds-item-type) item | A list of blocks to dig with correlating speeds of digging. |  | 
 | use_efficiency | *not set* | Boolean true/false | Determines whether this item should be impacted if the efficiency enchantment is applied to it. |  | 
 
 ## Destroy Speeds item type
 
-#### BlockInfo Properties
+#### BlockInfo Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

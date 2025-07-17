@@ -27,7 +27,8 @@
         "id": "identifier",
         "title": "Identifier",
         "description": "Namespaced identifier for Camera Aim-Assist preset. Namespace and name must be separated by a ':'.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "item_settings",

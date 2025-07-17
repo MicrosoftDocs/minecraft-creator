@@ -13,76 +13,14 @@
       {
         "id": "dependencies",
         "title": "Dependencies",
-        "dataType": 15,
-        "subForm": {
-          "id": "Dependency",
-          "title": "Dependency",
-          "fields": [
-            {
-              "id": "module_name",
-              "title": "Module Name",
-              "dataType": 2
-            },
-            {
-              "id": "uuid",
-              "title": "Uuid",
-              "dataType": 16,
-              "validity": [
-                {
-                  "comparison": "pattern",
-                  "value": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
-                }
-              ]
-            },
-            {
-              "id": "version",
-              "title": "Version",
-              "dataType": 16,
-              "subForm": {
-                "id": "version",
-                "title": "Version",
-                "fields": [
-                  {
-                    "id": "buildMeta",
-                    "title": "BuildMeta",
-                    "dataType": 2
-                  },
-                  {
-                    "id": "major",
-                    "title": "Major",
-                    "dataType": 0
-                  },
-                  {
-                    "id": "minor",
-                    "title": "Minor",
-                    "dataType": 0
-                  },
-                  {
-                    "id": "patch",
-                    "title": "Patch",
-                    "dataType": 0
-                  },
-                  {
-                    "id": "preRelease",
-                    "title": "PreRelease",
-                    "dataType": 2
-                  }
-                ]
-              },
-              "alternates": [
-                {
-                  "id": "version",
-                  "dataType": 2
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": 16,
+        "subFormId": "3.0.0/dependency"
       },
       {
         "id": "format_version",
         "title": "Format Version",
-        "dataType": 0
+        "dataType": 0,
+        "isRequired": true
       },
       {
         "id": "has_education_metadata",
@@ -93,238 +31,22 @@
         "id": "header",
         "title": "Header",
         "dataType": 16,
-        "subForm": {
-          "id": "Header",
-          "title": "Header",
-          "fields": [
-            {
-              "id": "allow_random_seed",
-              "title": "Allow Random Seed",
-              "dataType": 1
-            },
-            {
-              "id": "base_game_version",
-              "title": "Base Game Version",
-              "dataType": 2
-            },
-            {
-              "id": "description",
-              "title": "Description",
-              "dataType": 2
-            },
-            {
-              "id": "lock_template_options",
-              "title": "Lock Template Options",
-              "dataType": 1
-            },
-            {
-              "id": "min_engine_version",
-              "title": "Min Engine Version",
-              "dataType": 2
-            },
-            {
-              "id": "name",
-              "title": "Name",
-              "dataType": 2
-            },
-            {
-              "id": "pack_scope",
-              "title": "Pack Scope",
-              "dataType": 2
-            },
-            {
-              "id": "platform_locked",
-              "title": "Platform Locked",
-              "dataType": 1
-            },
-            {
-              "id": "uuid",
-              "title": "Uuid",
-              "dataType": 16,
-              "validity": [
-                {
-                  "comparison": "pattern",
-                  "value": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
-                }
-              ]
-            },
-            {
-              "id": "version",
-              "title": "Version",
-              "dataType": 16,
-              "validity": [
-                {
-                  "comparison": "pattern",
-                  "value": "^([1-9]+)\\.([0-9]+)\\.([0-9]+)$"
-                }
-              ],
-              "subForm": {
-                "id": "version",
-                "title": "Version",
-                "fields": [
-                  {
-                    "id": "buildMeta",
-                    "title": "BuildMeta",
-                    "dataType": 2
-                  },
-                  {
-                    "id": "major",
-                    "title": "Major",
-                    "dataType": 0
-                  },
-                  {
-                    "id": "minor",
-                    "title": "Minor",
-                    "dataType": 0
-                  },
-                  {
-                    "id": "patch",
-                    "title": "Patch",
-                    "dataType": 0
-                  },
-                  {
-                    "id": "preRelease",
-                    "title": "PreRelease",
-                    "dataType": 2
-                  }
-                ]
-              },
-              "alternates": [
-                {
-                  "id": "version",
-                  "dataType": 2
-                }
-              ]
-            }
-          ]
-        }
+        "subFormId": "3.0.0/header",
+        "isRequired": true
       },
       {
         "id": "metadata",
         "title": "Metadata",
         "dataType": 16,
-        "subForm": {
-          "id": "Metadata",
-          "title": "Metadata",
-          "fields": [
-            {
-              "id": "authors",
-              "title": "Authors",
-              "dataType": 17
-            },
-            {
-              "id": "generated_with",
-              "title": "Generated With",
-              "dataType": 16
-            },
-            {
-              "id": "license",
-              "title": "License",
-              "dataType": 2
-            },
-            {
-              "id": "product_type",
-              "title": "Product Type",
-              "dataType": 2
-            },
-            {
-              "id": "url",
-              "title": "Url",
-              "dataType": 2
-            }
-          ]
-        }
+        "subFormId": "3.0.0/metadata"
       },
       {
         "id": "modules",
         "title": "Modules",
-        "dataType": 15,
+        "dataType": 16,
         "minLength": 1,
-        "subForm": {
-          "id": "Module",
-          "title": "Module",
-          "fields": [
-            {
-              "id": "description",
-              "title": "Description",
-              "dataType": 2
-            },
-            {
-              "id": "entry",
-              "title": "Entry",
-              "dataType": 2
-            },
-            {
-              "id": "language",
-              "title": "Language",
-              "dataType": 2
-            },
-            {
-              "id": "type",
-              "title": "Type",
-              "dataType": 2
-            },
-            {
-              "id": "uuid",
-              "title": "Uuid",
-              "dataType": 16,
-              "validity": [
-                {
-                  "comparison": "pattern",
-                  "value": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
-                }
-              ]
-            },
-            {
-              "id": "version",
-              "title": "Version",
-              "dataType": 16,
-              "validity": [
-                {
-                  "comparison": "pattern",
-                  "value": "^([1-9]+)\\.([0-9]+)\\.([0-9]+)$"
-                }
-              ],
-              "subForm": {
-                "id": "version",
-                "title": "Version",
-                "fields": [
-                  {
-                    "id": "buildMeta",
-                    "title": "BuildMeta",
-                    "dataType": 2
-                  },
-                  {
-                    "id": "major",
-                    "title": "Major",
-                    "dataType": 0
-                  },
-                  {
-                    "id": "minor",
-                    "title": "Minor",
-                    "dataType": 0
-                  },
-                  {
-                    "id": "patch",
-                    "title": "Patch",
-                    "dataType": 0
-                  },
-                  {
-                    "id": "preRelease",
-                    "title": "PreRelease",
-                    "dataType": 2
-                  }
-                ]
-              },
-              "alternates": [
-                {
-                  "id": "version",
-                  "dataType": 2
-                }
-              ]
-            }
-          ]
-        }
+        "subFormId": "3.0.0/module",
+        "isRequired": true
       },
       {
         "id": "settings",
@@ -335,28 +57,8 @@
       {
         "id": "subpacks",
         "title": "Subpacks",
-        "dataType": 15,
-        "subForm": {
-          "id": "Subpack",
-          "title": "Subpack",
-          "fields": [
-            {
-              "id": "folder_name",
-              "title": "Folder Name",
-              "dataType": 2
-            },
-            {
-              "id": "memory_tier",
-              "title": "Memory Tier",
-              "dataType": 0
-            },
-            {
-              "id": "name",
-              "title": "Name",
-              "dataType": 2
-            }
-          ]
-        }
+        "dataType": 16,
+        "subFormId": "3.0.0/subpack"
       }
     ]
   }

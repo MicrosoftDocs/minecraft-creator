@@ -10,7 +10,8 @@
         "id": "bryce_pillars",
         "title": "Bryce Pillars",
         "description": "Whether the mesa generates with pillars",
-        "dataType": 1
+        "dataType": 1,
+        "isRequired": true
       },
       {
         "id": "clay_material",
@@ -22,7 +23,8 @@
           "title": "Clay Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "foundation_material",
@@ -34,7 +36,8 @@
           "title": "Foundation Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "hard_clay_material",
@@ -46,13 +49,15 @@
           "title": "Hard Clay Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "has_forest",
         "title": "Has Forest",
         "description": "Places coarse dirt and grass at high altitudes",
-        "dataType": 1
+        "dataType": 1,
+        "isRequired": true
       },
       {
         "id": "mid_material",
@@ -64,13 +69,15 @@
           "title": "Mid Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "sea_floor_depth",
         "title": "Sea Floor Depth",
         "description": "Controls how deep below the world water level the floor should occur",
-        "dataType": 0
+        "dataType": 0,
+        "isRequired": true
       },
       {
         "id": "sea_floor_material",
@@ -82,7 +89,8 @@
           "title": "Sea Floor Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "sea_material",
@@ -94,7 +102,8 @@
           "title": "Sea Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "top_material",
@@ -106,13 +115,15 @@
           "title": "Top Material",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "type",
         "title": "SurfaceBuilderType",
         "description": "Controls the type of surface builder to use",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

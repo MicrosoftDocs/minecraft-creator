@@ -1,6 +1,7 @@
 {
   "id": "query.get_name",
   "fields": [],
+  "isDeprecated": true,
   "generated_doNotEdit": {
     "id": "query.get_name",
     "title": "Get Name Query",

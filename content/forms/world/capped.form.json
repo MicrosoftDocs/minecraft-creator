@@ -10,18 +10,21 @@
         "id": "delegate",
         "title": "Delegate",
         "description": "The processor that will be executed.",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       },
       {
         "id": "limit",
         "title": "Limit",
         "description": "The maximum number of times that this delegate can be applied.",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       },
       {
         "id": "processor_type",
         "title": "Jigsaw Processro Type",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

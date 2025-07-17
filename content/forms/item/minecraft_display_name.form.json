@@ -259,7 +259,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:display_name",
-    "title": "Display Name",
+    "title": "Minecraft Display Name Item",
     "description": "The display_name item component specifies the text shown whenever an item's name is displayed, like in hover text.",
     "fields": [
       {

@@ -9,7 +9,8 @@
         "id": "color_map",
         "title": "Foliage Colormap",
         "description": "Color map from textures/colormap to determine color of foliage.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

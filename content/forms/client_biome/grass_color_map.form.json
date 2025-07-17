@@ -9,7 +9,8 @@
         "id": "color_map",
         "title": "Grass Colormap",
         "description": "Color map from textures/colormap to determine color of grass.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

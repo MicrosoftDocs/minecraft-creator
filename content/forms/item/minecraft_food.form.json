@@ -865,7 +865,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:food",
-    "title": "Food",
+    "title": "Minecraft Food Item",
     "description": "When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly.",
     "fields": [
       {

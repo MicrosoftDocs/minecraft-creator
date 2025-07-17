@@ -125,50 +125,15 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:shooter",
-    "title": "Shooter",
+    "title": "Minecraft Shooter Item",
     "description": "Shooter Item Component.",
     "fields": [
       {
         "id": "ammunition",
         "title": "Ammunition",
         "description": "Ammunition.",
-        "dataType": 15,
-        "subForm": {
-          "id": "Ammunition",
-          "title": "Ammunition",
-          "fields": [
-            {
-              "id": "item",
-              "title": "Item",
-              "description": "Ammunition item description identifier.",
-              "dataType": 2,
-              "alternates": [
-                {
-                  "id": "item",
-                  "dataType": 24
-                }
-              ]
-            },
-            {
-              "id": "search_inventory",
-              "title": "Search Inventory",
-              "description": "Can search inventory? Default is set to false.",
-              "dataType": 1
-            },
-            {
-              "id": "use_in_creative",
-              "title": "Use In Creative",
-              "description": "Can use in creative mode? Default is set to false.",
-              "dataType": 1
-            },
-            {
-              "id": "use_offhand",
-              "title": "Use Offhand",
-              "description": "Can use off-hand? Default is set to false.",
-              "dataType": 1
-            }
-          ]
-        },
+        "dataType": 16,
+        "subFormId": "item/ammunition",
         "samples": {
           "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
             {

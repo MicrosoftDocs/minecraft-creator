@@ -61,7 +61,8 @@
             "id": "version",
             "dataType": 2
           }
-        ]
+        ],
+        "isRequired": true
       }
     ]
   }

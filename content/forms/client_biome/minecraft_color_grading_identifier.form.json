@@ -10,7 +10,8 @@
         "id": "color_grading_identifier",
         "title": "Color Grading Identifier",
         "description": "Identifier of color_grading definition to use",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       }
     ]
   }

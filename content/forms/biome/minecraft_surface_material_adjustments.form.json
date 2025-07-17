@@ -165,7 +165,8 @@
                     "alternates": []
                   }
                 ]
-              }
+              },
+              "isRequired": true
             },
             {
               "id": "noise_frequency_scale",
