@@ -52,7 +52,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:tags",
-    "title": "Tags",
+    "title": "Minecraft Tags Item",
     "description": "The tags component specifies which tags an item has on it.",
     "fields": [
       {

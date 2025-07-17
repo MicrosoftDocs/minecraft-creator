@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_actor_count
 
-Returns the number of actors rendered in the last frame.
+Returns the number of entities (actors) rendered in the last frame.

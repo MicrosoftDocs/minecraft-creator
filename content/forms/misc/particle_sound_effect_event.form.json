@@ -7,7 +7,8 @@
       {
         "id": "event_name",
         "title": "Event Name",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Comprehensive List of Pack Contents
 description: "An overview of the structure and contents of behavior packs and resource packs"
 ms.service: minecraft-bedrock-edition
+ms.date: 07/15/2025
 ---
 
 # Comprehensive List of Add-on Pack Contents
@@ -333,11 +334,11 @@ To see examples of typical resource and behavior packs, check out the Minecraft 
 
 ## What's Next?
 
-Here are some more advanced add-on pack content information:
+Here is some more advanced Add-On pack content information:
 
 > [!div class="nextstepaction"]
 
-> [ScriptingGettingStarted](ScriptingGettingStarted.md)
+> [Scripting with TypeScript](scripting/next-steps.md)
 
 > [Creating New Entity Types](introductiontoaddentity.md)
 

@@ -10,6 +10,8 @@ ms.date: 05/27/2025
 
 The Ruler is a quick way to measure the distance between blocks in the Editor. 
 
+![Ruler tool used to measure the distance between two points](media/GIFs/Ruler.gif)
+
 1.	Select the Ruler by clicking the button on the left side of the Editor.
 
     > [!Tip]

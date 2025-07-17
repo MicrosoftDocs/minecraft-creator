@@ -189,7 +189,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:repairable",
-    "title": "Repairable",
+    "title": "Minecraft Repairable Item",
     "description": "The repairable item component specifies which items can be used to repair this item, along with how much durability is gained.",
     "fields": [
       {
@@ -216,7 +216,8 @@
                       "id": "items",
                       "dataType": 24
                     }
-                  ]
+                  ],
+                  "isRequired": true
                 },
                 {
                   "id": "repair_amount",
@@ -235,12 +236,14 @@
                           {
                             "id": "expression",
                             "title": "Expression",
-                            "dataType": 2
+                            "dataType": 2,
+                            "isRequired": true
                           },
                           {
                             "id": "version",
                             "title": "Version",
-                            "dataType": 0
+                            "dataType": 0,
+                            "isRequired": true
                           }
                         ]
                       }

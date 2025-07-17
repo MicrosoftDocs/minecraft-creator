@@ -9,4 +9,7 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_overlay_alpha
 
+> [!IMPORTANT]
+> This type is now deprecated, and no longer in use in the latest versions of Minecraft.
+
 DEPRECATED (Do not use - this function is deprecated and will be removed).

@@ -22,12 +22,14 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0
+                  "dataType": 0,
+                  "isRequired": true
                 }
               ]
             }
@@ -36,7 +38,8 @@
             "id": "base_UV",
             "dataType": 3
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "frames_per_second",
@@ -64,12 +67,14 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0
+                  "dataType": 0,
+                  "isRequired": true
                 }
               ]
             }
@@ -78,7 +83,8 @@
             "id": "max_frame",
             "dataType": 3
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "size_UV",

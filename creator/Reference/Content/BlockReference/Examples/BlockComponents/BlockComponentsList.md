@@ -1,49 +1,49 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - Block Components List
-description: "A reference document listing all currently available block components"
+title: "Block Components Documentation - Block Components"
+description: "A reference document describing all current Block Components"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - Block Components
+# Block Components Documentation
 
-Below is a list of all the available Block Components within Minecraft: Bedrock Edition for use with Block JSON files.
+| Block Components | Description |
+|:-----|:----------|
+| [minecraft:collision_box](Block Component/minecraftBlock_collision_box.md)| Defines the area of the block that collides with entities. |
+| [minecraft:crafting_table](Block Component/minecraftBlock_crafting_table.md)| Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes. |
+| [minecraft:custom_components](Block Component/minecraftBlock_custom_components.md)| Sets an ordered list of custom component names which are bound in script to be executed upon a block event. |
+| [minecraft:destructible_by_explosion](Block Component/minecraftBlock_destructible_by_explosion.md)| Describes the destructible by explosion properties for this block. |
+| [minecraft:destructible_by_mining](Block Component/minecraftBlock_destructible_by_mining.md)| Describes the destructible by mining properties for this block. |
+| [minecraft:destruction_particles](Block Component/minecraftBlock_destruction_particles.md)| [Note: This component is currently experimental]. |
+| [minecraft:display_name](Block Component/minecraftBlock_display_name.md)| Specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. |
+| [minecraft:entity_fall_on](Block Component/minecraftBlock_entity_fall_on.md)| Configures what distance an entity must fall onto this block to cause the `onEntityFallOn` block custom component event to be sent to script. |
+| [minecraft:flammable](Block Component/minecraftBlock_flammable.md)| Describes the flammable properties for this block. |
+| [minecraft:friction](Block Component/minecraftBlock_friction.md)| Describes the friction for this block in a range of (0.0-0.9). |
+| [minecraft:geometry](Block Component/minecraftBlock_geometry.md)| The description identifier of the geometry to use to render this block. |
+| [minecraft:item_visual](Block Component/minecraftBlock_item_visual.md)| The description identifier of the geometry and material used to render the item of this block. <br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.50) |
+| [minecraft:light_dampening](Block Component/minecraftBlock_light_dampening.md)| The amount that light will be dampened when it passes through the block, in a range (0-15). |
+| [minecraft:light_emission](Block Component/minecraftBlock_light_emission.md)| The amount of light this block will emit in a range (0-15). |
+| [minecraft:liquid_detection](Block Component/minecraftBlock_liquid_detection.md)| The definitions for how a block behaves when detecting liquid. |
+| [minecraft:loot](Block Component/minecraftBlock_loot.md)| The path to the loot table, relative to the behavior pack. |
+| [minecraft:map_color](Block Component/minecraftBlock_map_color.md)| Sets the color of the block when rendered to a map. |
+| [minecraft:material_instances](Block Component/minecraftBlock_material_instances.md)| The material instances for a block. |
+| [minecraft:movable](Block Component/minecraftBlock_movable.md)| The description identifier of the movable component <br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.100) |
+| [minecraft:placement_filter](Block Component/minecraftBlock_placement_filter.md)| Sets rules for under what conditions the block can be placed/survive |
+| [minecraft:redstone_conductivity](Block Component/minecraftBlock_redstone_conductivity.md)| The basic redstone properties of a block; if the component is not provided the default values are used. |
+| [minecraft:replaceable](Block Component/minecraftBlock_replaceable.md)| A block with this component can be replaced when another block is placed in the same block position. <br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60) |
+| [minecraft:selection_box](Block Component/minecraftBlock_selection_box.md)| Defines the area of the block that is selected by the player's cursor. |
+| [minecraft:tick](Block Component/minecraftBlock_tick.md)| Causes the block to tick based on a regular interval equal to a number of ticks randomly chosen from the internal_range parameter. |
+| [minecraft:transformation](Block Component/minecraftBlock_transformation.md)| The block's translation, rotation and scale with respect to the center of its world position |
 
-## Block Components List
+## Internal/Deprecated Components
+These components are either deprecated or internal to Minecraft and not usable in custom content.
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|[minecraft:breathability](minecraftBlock_breathability.md)| solid | String| Specifies whether the block is breathable by defining if the block is treated as a `solid` or as `air`. The default is `solid` if this component is omitted.|
-|[minecraft:collision_box](minecraftBlock_collision_box.md)| true| Boolean/JSON Object| Defines the area of the block that collides with entities. If set to true, default values are used. If set to false, the block's collision with entities is disabled. If this component is omitted, default values are used.|
-|[minecraft:crafting_table](minecraftBlock_crafting_table.md) |*not set*| JSON Object | Makes your block into a custom crafting table which enables the crafting table UI and the ability to craft recipes.|
-|[minecraft:custom_components](../../../../../Documents/CustomComponents.md)| *not set* | Array | Sets an ordered list of custom component names bound in script to be executed on a block event. Experimental toggles required: Beta APIs.|
-|[minecraft:destructible_by_explosion](minecraftBlock_destructible_by_explosion.md)| true| Boolean/JSON Object| Describes the destructible by explosion properties for this block. If set to true, the block will have the default explosion resistance. If set to false, this block is indestructible by explosion. If the component is omitted, the block will have the default explosion resistance.|
-|[minecraft:destructible_by_mining](minecraftBlock_destructible_by_mining.md)| true| Boolean / JSON Object | Describes the destructible by mining properties for this block. If set to true, the block will take the default number of seconds to destroy. If set to false, this block is indestructible by mining. If the component is omitted, the block will take the default number of seconds to destroy.|
-|[minecraft:display_name](minecraftBlock_display_name.md)|*not set* | Localization string|Specifies the language file key that maps to what text will be displayed when you hover over the block in your inventory and hotbar. If the string given can not be resolved as a loc string, the raw string given will be displayed. If this component is omitted, the name of the block will be used as the display name.|
-|[minecraft:entity_fall_on](minecraftBlock_entity_fall_on.md)| *not set* | JSON Object | Configures the distance an entity must fall onto this block to raise events.|
-|[minecraft:flammable](minecraftBlock_flammable.md)|false | Boolean/JSON Object| Describes the flammable properties for this block. If set to true, default values are used. If set to false, or if this component is omitted, the block will not be able to catch on fire naturally from neighbors, but it can still be directly ignited.|
-|[minecraft:friction](minecraftBlock_friction.md)| 0.4| Decimal| Describes the friction for this block in a range of (0.0-0.9). Friction affects an entity's movement speed when it travels on the block. Greater value results in more friction.|
-|[minecraft:geometry](minecraftBlock_geometry.md)|*not set* | Identifier string| The description identifier of the geometry to use to render this block. This identifier must match an existing geometry identifier in any of the loaded resource packs or be one of the currently supported Vanilla identifiers: `minecraft:geometry.full_block` or `minecraft:geometry.cross`.|
-|[minecraft:item_visual](minecraftBlock_item_visual.md)| *not set*| JSON object| Specifies the block's item representation. The object contains `geometry` and `material_instances` parameters which map to the existing `minecraft:geometry` and `minecraft:material_instances` block components respectively. |
-|[minecraft:light_dampening](minecraftBlock_light_dampening.md)| 15| Integer| The amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more. |
-|[minecraft:light_emission](minecraftBlock_light_emission.md)| 0| Integer|  The amount of light this block will emit in a range (0-15). Higher value means more light will be emitted. |
-|[minecraft:liquid_detection](minecraftBlock_liquid_detection.md)| *not set* | Identifier string| Defines how a block behaves when detecting liquid. Only one rule definition is allowed per liquid type. If multiple are specified, the first will be used and the rest will be ignored. |
-|[minecraft:loot](minecraftBlock_loot.md) | *not set* | Path string| The path to the loot table, relative to the behavior pack.|
-|[minecraft:map_color](minecraftBlock_map_color.md)|*not set* | String| Sets the color of the block when rendered to a map. The color is represented as a hex value in the format "#RRGGBB". May also be expressed as an array of [R, G, B] from 0 to 255. If this component is omitted, the block will not show up on the map. |
-|[minecraft:material_instances](minecraftBlock_material_instances.md)| *not set* | JSON Object| The material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: "up", "down", "north", "south", "east", "west", or "*". You can also give an instance the name of your choosing such as "my_instance", and then assign it to a face by doing "north":"my_instance".|
-|[minecraft:placement_filter](minecraftBlock_placement_filter.md)| *not set* | JSON Object|  Sets rules for under what conditions the block can be placed or survive.|
-|[minecraft:redstone_conductivity](minecraftBlock_redstone_conductivity.md)| True | Boolean | `minecraft:redstone_conductivity` specifies whether a block has redstone properties. |
-|[minecraft:selection_box](minecraftBlock_selection_box.md)|  Boolean / JSON Object | true |  Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.|
-|[tag](minecraftBlock_tag.md)| *not set* | JSON Object | `tag:` is an empty JSON Object that defines a tag to be added to a block. The component has no body or parameters. It is simply a flag, and when the block is parsed it will be added to the block's tag list.|
-|[minecraft:tick](minecraftBlock_tick.md)|*not set*|JSON Object|Configures the interval at which a block ticks.|
-|[minecraft:transformation](minecraftBlock_transformation.md)| rotation[0, 0, 0]| Vector [a, b, c]| The block's translation around the center of the cube in degrees. The rotation order is [x, y, z]. Angles need to be in multiples of 90.|
-
-## Unsupported features
-
-> [!WARNING]
-> These features were previously applicable but are no longer available.
-
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-| minecraft:unit_cube|*not set* | JSON Object| Specified that a unit cube was to be used with tessellation. The render capabilities were succeeded by the minecraft:geometry.full_block description identifier. |
+| Block Components | Description |
+|:-----|:----------|
+| [bone_visibility](Block Component/minecraftBlock_bone_visibility.md)| A JSON object that contains a list of key/value pairs that map from bone name in the specified geometry file (key) to a boolean that tells whether the bone should be visible or not (value). |
+| [breathability](Block Component/minecraftBlock_breathability.md)| Determines whether the block is breathable by defining if the block is treated as a `solid` or as `air`. |
+| [queued_ticking](Block Component/minecraftBlock_queued_ticking.md)| Triggers the specified event, either once, or at a regular interval equal to a number of ticks randomly chosen from the interval_range provided. |
+| [random_ticking](Block Component/minecraftBlock_random_ticking.md)| Triggers the specified event randomly based on the random tick speed gamerule. |
+| [unit_cube](Block Component/minecraftBlock_unit_cube.md)| Specifies that a unit cube is to be used with tessellation. |

@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Determines which tags are included on a given item.
 
 
-## Tags Properties
+## Minecraft Tags Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

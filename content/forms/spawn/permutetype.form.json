@@ -21,7 +21,8 @@
         "id": "weight",
         "title": "Weight",
         "description": "The likelihood of this to be selected over the combined weight of all the entities in the permutation",
-        "dataType": 0
+        "dataType": 0,
+        "isRequired": true
       }
     ]
   }

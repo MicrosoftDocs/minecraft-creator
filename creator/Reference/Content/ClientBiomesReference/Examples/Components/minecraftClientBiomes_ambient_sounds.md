@@ -15,7 +15,7 @@ Sets the ambient sounds for the biome. These sounds must be in the 'individual_n
 > This item requires a format version of at least 1.21.50.
 
 
-## Ambient Sounds Properties
+## Minecraft Ambient Sounds Client Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

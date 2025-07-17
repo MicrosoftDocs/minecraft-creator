@@ -20,12 +20,14 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0
+                  "dataType": 0,
+                  "isRequired": true
                 }
               ]
             }
@@ -52,12 +54,14 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0
+                  "dataType": 0,
+                  "isRequired": true
                 }
               ]
             }
@@ -66,7 +70,8 @@
             "id": "input",
             "dataType": 3
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "nodes",
@@ -84,12 +89,14 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0
+                  "dataType": 0,
+                  "isRequired": true
                 }
               ]
             }
@@ -98,12 +105,14 @@
             "id": "nodes",
             "dataType": 3
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "type",
         "title": "Type",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       }
     ]
   }

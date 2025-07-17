@@ -44,8 +44,6 @@
   href: query_block_neighbor_has_all_tags.md
 - name: query.block_neighbor_has_any_tag
   href: query_block_neighbor_has_any_tag.md
-- name: query.block_property
-  href: query_block_property.md
 - name: query.block_state
   href: query_block_state.md
 - name: query.body_x_rotation
@@ -82,8 +80,6 @@
   href: query_can_walk.md
 - name: query.cape_flap_amount
   href: query_cape_flap_amount.md
-- name: query.cardinal_block_face_placed_on
-  href: query_cardinal_block_face_placed_on.md
 - name: query.cardinal_facing
   href: query_cardinal_facing.md
 - name: query.cardinal_facing_2d
@@ -104,8 +100,6 @@
   href: query_count.md
 - name: query.current_squish_value
   href: query_current_squish_value.md
-- name: query.dash_cooldown_progress
-  href: query_dash_cooldown_progress.md
 - name: query.day
   href: query_day.md
 - name: query.death_ticks
@@ -142,12 +136,8 @@
   href: query_get_animation_frame.md
 - name: query.get_default_bone_pivot
   href: query_get_default_bone_pivot.md
-- name: query.get_equipped_item_name
-  href: query_get_equipped_item_name.md
 - name: query.get_locator_offset
   href: query_get_locator_offset.md
-- name: query.get_name
-  href: query_get_name.md
 - name: query.get_root_locator_offset
   href: query_get_root_locator_offset.md
 - name: query.graphics_mode_is_any
@@ -164,8 +154,6 @@
   href: query_has_armor_slot.md
 - name: query.has_biome_tag
   href: query_has_biome_tag.md
-- name: query.has_block_property
-  href: query_has_block_property.md
 - name: query.has_block_state
   href: query_has_block_state.md
 - name: query.has_cape
@@ -356,8 +344,6 @@
   href: query_is_riding.md
 - name: query.is_riding_any_entity_of_type
   href: query_is_riding_any_entity_of_type.md
-- name: query.is_rising
-  href: query_is_rising.md
 - name: query.is_roaring
   href: query_is_roaring.md
 - name: query.is_rolling
@@ -366,8 +352,6 @@
   href: query_is_saddled.md
 - name: query.is_scared
   href: query_is_scared.md
-- name: query.is_scenting
-  href: query_is_scenting.md
 - name: query.is_searching
   href: query_is_searching.md
 - name: query.is_selected_item
@@ -478,10 +462,6 @@
   href: query_on_fire_time.md
 - name: query.out_of_control
   href: query_out_of_control.md
-- name: query.overlay_alpha
-  href: query_overlay_alpha.md
-- name: query.owner_identifier
-  href: query_owner_identifier.md
 - name: query.player_level
   href: query_player.level.md
 - name: query.position
@@ -584,8 +564,6 @@
   href: query_touch_only_affects_hotbar.md
 - name: query.trade_tier
   href: query_trade_tier.md
-- name: query.unhappy_counter
-  href: query_unhappy_counter.md
 - name: query.variant
   href: query_variant.md
 - name: query.vertical_speed

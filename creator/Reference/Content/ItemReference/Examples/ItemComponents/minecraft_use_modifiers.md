@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food.
 
 
-## Use Modifiers Properties
+## Minecraft Use Modifiers Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

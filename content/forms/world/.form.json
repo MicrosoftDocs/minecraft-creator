@@ -1,59 +1,23 @@
 {
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "id": "Used to pair block rules with ure Templates and to randomly place Structure Templates using a weighted list.",
+    "id": "Used to pair block rules with Structure Templates and to randomly place Structure Templates using a weighted list.",
     "title": "Used To Pair Block Rules With Structure Templates And To Randomly Place Structure Templates Using a Weighted List World",
     "fields": [
       {
         "id": "description",
         "title": "Description",
         "dataType": 16,
-        "subForm": {
-          "id": "Description",
-          "title": "Description",
-          "fields": [
-            {
-              "id": "identifier",
-              "title": "Identifier",
-              "description": "Identifier of the template pool. Used by Jigsaw Structures to assign processors to Structure Templates.",
-              "dataType": 2
-            }
-          ]
-        }
+        "subFormId": "world/description",
+        "isRequired": true
       },
       {
         "id": "elements",
         "title": "Elements",
         "description": "List of Structure Template and processor list pairs.",
-        "dataType": 15,
-        "subForm": {
-          "id": "TemplatePoolElement",
-          "title": "TemplatePoolElement",
-          "fields": [
-            {
-              "id": "element",
-              "title": "Element",
-              "description": "A grouping of a Structure Template, the Processor List to use when placing the structure, and its weight that determines the likelihood of the element being chosen.",
-              "dataType": 16
-            },
-            {
-              "id": "weight",
-              "title": "Weight",
-              "description": "The weighted probability of choosing the element from the pool. For example, a template pool containing 2 structures with weights of 1 and 3 will have a 25% and 75% chance of being chosen respectively.",
-              "dataType": 0,
-              "validity": [
-                {
-                  "comparison": ">=",
-                  "value": 1
-                },
-                {
-                  "comparison": "<=",
-                  "value": 200
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": 16,
+        "subFormId": "world/templatepoolelement",
+        "isRequired": true
       },
       {
         "id": "fallback",

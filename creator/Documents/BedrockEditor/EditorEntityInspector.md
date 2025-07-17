@@ -14,4 +14,4 @@ The Entity Inspector lets you view and modify entity properties, giving you more
 >[!Note]
 > Not all properties are customizable for all entities.
 
-![Animation of the Entity Inspector.](Media/editor_entity_inspector.gif)
+![Animation of the Entity Inspector.](Media/GIFs/EntityInspector.gif)

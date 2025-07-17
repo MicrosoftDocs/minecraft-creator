@@ -19,4 +19,4 @@ ms.date: 05/16/2025
 
 4. With the entity selected, you can use Rotation to set which direction the entity is facing (until you un-pause entities).
 
-![Image of a world with a pig and 3 horses summoned.](Media/editor_summon_tool_v06.png)
+![Image of a world with many foxes](Media/GIFs/Summon.gif)

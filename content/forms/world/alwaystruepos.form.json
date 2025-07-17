@@ -9,7 +9,8 @@
       {
         "id": "predicate_type",
         "title": "PosType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

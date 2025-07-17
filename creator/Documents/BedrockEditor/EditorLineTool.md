@@ -10,10 +10,12 @@ ms.date: 05/27/2025
 # Line Tool
 Use the Line to quickly draw borders, outlines, and other line-based shapes in your world.
 
-![Line Tool Menu](media/LineScreenshots/LineTool.png)
+![Line Tool in Action](media/GIFs/LineTool.gif)
 
 
 ## Algorithm
+
+![Direct algorithm options](media/LineScreenshots/LineTool.png)
 
 -	### Direct
     Draws a straight line from your Start to End point.

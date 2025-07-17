@@ -78,6 +78,8 @@
           href: Documents/LearningJourneyGuide.md
         - name: Getting Started with Add-Ons
           href: Documents/GettingStarted.md
+        - name: Overwriting Vanilla Assets
+          href: Documents/OverwritingAssets.md
         - name: 'Create Custom Grass Blocks: An Introduction to Resource Packs'
           href: Documents/ResourcePack.md
         - name: 'Create an Angry Cow: An Introduction to Behavior Packs'
@@ -214,26 +216,28 @@
             href: Documents/CommandsNewExecute.md
           - name: Create an In-World Game with Commands
             href: Documents/CreateAnInWorldGame.md
-        - name: Introduction to Scripting
-          href: Documents/ScriptingIntroduction.md
         - name: Scripting
           items:  
-          - name: Build Gameplay with TypeScript
-            href: Documents/ScriptingGettingStarted.md
-          - name: Use Visual Studio Code Tools to Write Script
-            href: Documents/ScriptDeveloperTools.md
-          - name: Introducing Custom Components
-            href: Documents/CustomComponents.md
+          - name: Introduction to Scripting
+            href: Documents/scripting/introduction.md
+          - name: "Next Steps: Scripting with TypeScript"
+            href: Documents/scripting/next-steps.md
+          - name: Developer Tools for Minecraft
+            href: Documents/scripting/developer-tools.md
+          - name: Introduction to Custom Components
+            href: Documents/scripting/custom-components.md
           - name: Building with Custom Components
-            href: Documents/CustomComponentsTutorial.md
+            href: Documents/scripting/components-tutorial.md
           - name: Scripting Custom Commands (Preview)
-            href: Documents/CustomCommands.md
-          - name: Game Loops and Timed Callbacks - a system.run Guide
-            href: Documents/SystemRunGuide.md
+            href: Documents/scripting/custom-commands.md
+          - name: Game Loops and Timed Callbacks
+            href: Documents/scripting/system-run-guide.md
+          - name: Scripting V2 Overview
+            href: Documents/scripting/v2-overview.md
           - name: Script Module Versioning
-            href: Documents/ScriptVersioning.md
-          - name: Scripting v2.0.0 Overview
-            href: Documents/Scriptingv2.0.0Overview.md
+            href: Documents/scripting/versioning.md
+          - name: Open-Source Scripting Libraries
+            href: Documents/scripting/libraries.md
         - name: Introduction to Scoreboards
           href: Documents/ScoreboardIntroduction.md
         - name: Scoreboard Operations Tutorial
@@ -407,7 +411,7 @@
         - name: Commonly Used Tools
           href: Documents/CommonlyUsedTools.md
         - name: Open-Source Scripting Libraries
-          href: Documents/ScriptingLibraries.md
+          href: Documents/scripting/libraries.md
         - name: In-Game Tools
           items:
             - name: Copy and Paste Coordinates
@@ -430,7 +434,7 @@
               href: Documents/BedrockEditor/EditorTutorial.md
             - name: Action Bar
               href: Documents/BedrockEditor/EditorActionBar.md
-            - name: Deferred Lighting
+            - name: Vibrant Visuals
               href: Documents/BedrockEditor/EditorVibrantVisuals.md
             - name: Keyboard Inputs
               href: Documents/BedrockEditor/EditorKeyboardInputs.md
@@ -445,10 +449,12 @@
             
             - name: Tools
               items:
-              - name: Brush Tool
-                href: Documents/BedrockEditor/EditorBrushTool.md
               - name: Selection Tool
-                href: Documents/BedrockEditor/EditorSelectionTool.md  
+                href: Documents/BedrockEditor/EditorSelectionTool.md
+              - name: Brush Tool
+                href: Documents/BedrockEditor/EditorBrushTool.md  
+              - name: Pencil Tool
+                href: Documents/BedrockEditor/EditorPencilTool.md
               - name: Line Tool
                 href: Documents/BedrockEditor/EditorLineTool.md
               - name: Ruler Tool

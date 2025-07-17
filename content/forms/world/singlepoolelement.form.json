@@ -9,13 +9,15 @@
         "id": "element_type",
         "title": "ElementType",
         "description": "The type of element.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "location",
         "title": "Location",
         "description": "The path of the structure file. This path is relative to the behavior pack's structures folder.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "processors",

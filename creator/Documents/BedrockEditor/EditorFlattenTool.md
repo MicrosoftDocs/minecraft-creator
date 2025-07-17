@@ -11,6 +11,8 @@ ms.date: 05/16/2025
 
 The flatten tool is used to create an area of flat terrain around the cursor.
 
+![Gif of Flatten Tool in Action](Media/GIFs/Flatten.gif)
+
 - **Height Threshold**: The number of blocks above the cursor that will be flattened when you click. This value ranges from 1 to 32.
 
 - **Radius**: The number of blocks around the cursor that will be flattened when you click. This value ranges from 1 to 5.

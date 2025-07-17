@@ -7,6 +7,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
+# Event Actions Documentation
+
 | Event Actions | Description |
 |:-----|:----------|
 | [add_component_group](EventActions/add_component_group.md)| Adds component groups to the current entity. |

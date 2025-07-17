@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Used by record items to play music.
 
 
-## Record Properties
+## Minecraft Record Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

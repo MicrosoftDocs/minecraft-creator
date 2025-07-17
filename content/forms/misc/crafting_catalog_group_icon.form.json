@@ -29,7 +29,8 @@
                       "comparison": "pattern",
                       "value": "^(?:.)+:(?:.)+$"
                     }
-                  ]
+                  ],
+                  "isRequired": true
                 }
               ]
             }
@@ -46,7 +47,8 @@
             "comparison": "pattern",
             "value": "^(?:.)+:(?:.)+$"
           }
-        ]
+        ],
+        "isRequired": true
       }
     ]
   }

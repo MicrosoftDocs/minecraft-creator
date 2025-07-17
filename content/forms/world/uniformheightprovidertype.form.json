@@ -10,18 +10,21 @@
         "id": "max",
         "title": "Max",
         "description": "Max value of the uniform distribution",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       },
       {
         "id": "min",
         "title": "Min",
         "description": "Min value of the uniform distribution",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       },
       {
         "id": "type",
         "title": "HeightProviderType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

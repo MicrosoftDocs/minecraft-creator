@@ -1,6 +1,7 @@
 {
   "id": "query.cardinal_block_face_placed_on",
   "fields": [],
+  "isDeprecated": true,
   "generated_doNotEdit": {
     "id": "query.cardinal_block_face_placed_on",
     "title": "Cardinal Block Face Placed On Query",

@@ -28,12 +28,14 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0
+                  "dataType": 0,
+                  "isRequired": true
                 }
               ]
             }
@@ -42,7 +44,8 @@
             "id": "iterations",
             "dataType": 3
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "scatter_chance",
@@ -72,7 +75,8 @@
                       "comparison": ">=",
                       "value": 1
                     }
-                  ]
+                  ],
+                  "isRequired": true
                 },
                 {
                   "id": "numerator",
@@ -84,7 +88,8 @@
                       "comparison": ">=",
                       "value": 1
                     }
-                  ]
+                  ],
+                  "isRequired": true
                 }
               ]
             }
@@ -113,7 +118,8 @@
                   "id": "distribution",
                   "title": "Random Distribution Type",
                   "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "extent",
@@ -121,7 +127,8 @@
                   "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
                   "dataType": 16,
                   "minLength": 2,
-                  "maxLength": 2
+                  "maxLength": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "grid_offset",
@@ -144,7 +151,8 @@
               ]
             }
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "y",
@@ -168,7 +176,8 @@
                   "id": "distribution",
                   "title": "Random Distribution Type",
                   "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "extent",
@@ -176,7 +185,8 @@
                   "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
                   "dataType": 16,
                   "minLength": 2,
-                  "maxLength": 2
+                  "maxLength": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "grid_offset",
@@ -199,7 +209,8 @@
               ]
             }
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "z",
@@ -223,7 +234,8 @@
                   "id": "distribution",
                   "title": "Random Distribution Type",
                   "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "extent",
@@ -231,7 +243,8 @@
                   "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
                   "dataType": 16,
                   "minLength": 2,
-                  "maxLength": 2
+                  "maxLength": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "grid_offset",
@@ -254,7 +267,8 @@
               ]
             }
           }
-        ]
+        ],
+        "isRequired": true
       }
     ]
   }

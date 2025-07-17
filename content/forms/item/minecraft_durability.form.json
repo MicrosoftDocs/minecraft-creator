@@ -223,7 +223,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:durability",
-    "title": "Durability",
+    "title": "Minecraft Durability Item",
     "description": "The durability item component specifies how much damage the item takes before breaking, and allows the item to be combined to repair or augment them.",
     "fields": [
       {
@@ -231,22 +231,7 @@
         "title": "Damage Chance",
         "description": "Specifies the percentage chance of this item losing durability. Default is set to 100. Defined as an int range with min and max value.",
         "dataType": 16,
-        "subForm": {
-          "id": "IntRange",
-          "title": "IntRange",
-          "fields": [
-            {
-              "id": "max",
-              "title": "Max",
-              "dataType": 0
-            },
-            {
-              "id": "min",
-              "title": "Min",
-              "dataType": 0
-            }
-          ]
-        },
+        "subFormId": "item/intrange",
         "samples": {
           "/samples/custom_items/behavior_packs/custom_item/items/my_sword_chuck.json": [
             {
@@ -291,6 +276,7 @@
         "title": "Max Durability",
         "description": "Max durability is the amount of damage that this item can take before breaking. This is a required parameter and has a minimum of 0.",
         "dataType": 0,
+        "isRequired": true,
         "samples": {
           "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json": [
             {

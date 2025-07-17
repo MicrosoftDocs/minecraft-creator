@@ -35,7 +35,8 @@
               "id": "test",
               "title": "Test",
               "description": "The name of the test to apply.",
-              "dataType": 2
+              "dataType": 2,
+              "isRequired": true
             },
             {
               "id": "value",
@@ -56,7 +57,8 @@
         "id": "placement_pass",
         "title": "Placement Pass",
         "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

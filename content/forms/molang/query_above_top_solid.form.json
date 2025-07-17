@@ -1,7 +1,7 @@
 {
   "id": "query.above_top_solid",
   "fields": [],
-  "description": "Returns the height of the block immediately above the highest solid block at the input (x,z) position. This query is only valid during world generation.", 
+  "description": "Returns the height of the block immediately above the highest solid block at the input (x,z) position (note: this query is only valid during world generation).",
   "generated_doNotEdit": {
     "id": "query.above_top_solid",
     "title": "Above Top Solid Query",

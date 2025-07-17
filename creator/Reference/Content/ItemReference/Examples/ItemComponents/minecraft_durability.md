@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table.
 
 
-## Durability Properties
+## Minecraft Durability Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -21,7 +21,7 @@ Sets how much damage the item can take before breaking, and allows the item to b
 
 ## Damage Chance item type
 
-#### IntRange Properties
+#### IntRange Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

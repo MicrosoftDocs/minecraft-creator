@@ -2,14 +2,15 @@
   "id": "ure",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "id": "ure",
+    "id": "Structure",
     "title": "Structure World",
     "fields": [
       {
         "id": "structure",
-        "title": "Ure",
+        "title": "Structure",
         "description": "Identifier of the Jigsaw Structure.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "weight",
@@ -25,7 +26,8 @@
             "comparison": "<=",
             "value": 200
           }
-        ]
+        ],
+        "isRequired": true
       }
     ]
   }

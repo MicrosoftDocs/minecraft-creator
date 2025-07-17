@@ -8,17 +8,20 @@
       {
         "id": "default",
         "title": "Default",
-        "dataType": 3
+        "dataType": 3,
+        "isRequired": true
       },
       {
         "id": "max",
         "title": "Max",
-        "dataType": 3
+        "dataType": 3,
+        "isRequired": true
       },
       {
         "id": "min",
         "title": "Min",
-        "dataType": 3
+        "dataType": 3,
+        "isRequired": true
       },
       {
         "id": "name",
@@ -29,22 +32,26 @@
             "comparison": "pattern",
             "value": "^(?:(?!^(minecraft):).)+:(?:.)+$"
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "step",
         "title": "Step",
-        "dataType": 3
+        "dataType": 3,
+        "isRequired": true
       },
       {
         "id": "text",
         "title": "Text",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "type",
         "title": "SettingType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

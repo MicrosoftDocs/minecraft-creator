@@ -9,7 +9,8 @@
         "id": "gradient",
         "title": "Gradient",
         "dataType": 24,
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "interpolant",
@@ -27,12 +28,14 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0
+                  "dataType": 0,
+                  "isRequired": true
                 }
               ]
             }
@@ -41,7 +44,8 @@
             "id": "interpolant",
             "dataType": 3
           }
-        ]
+        ],
+        "isRequired": true
       }
     ]
   }

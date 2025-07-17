@@ -99,7 +99,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:projectile",
-    "title": "Projectile",
+    "title": "Minecraft Projectile Item",
     "description": "Projectile items shoot out, like an arrow.",
     "fields": [
       {
@@ -133,6 +133,7 @@
             "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
           }
         ],
+        "isRequired": true,
         "samples": {
           "/vanilla/behavior_pack/items/wind_charge.json": [
             {

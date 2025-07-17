@@ -23,7 +23,7 @@ Contains a description and components to define a Biome.
 Any components that this Biome uses.
 
 
-#### Biome Components Properties
+#### Biome Components Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -45,7 +45,7 @@ Any components that this Biome uses.
 Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.
 
 
-#### Climate Properties
+#### Minecraft Climate Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -61,7 +61,7 @@ Describes temperature, humidity, precipitation, and similar. Biomes without this
 Probability that creatures will spawn within the biome when a chunk is generated.
 
 
-#### Creature Spawn Probability Properties
+#### Minecraft Creature Spawn Probability Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -71,7 +71,7 @@ Probability that creatures will spawn within the biome when a chunk is generated
 Forces a biome to ether always be humid or never humid. Humidity effects the spread chance, and spread rate of fire in the biome.
 
 
-#### Humidity Properties
+#### Minecraft Humidity Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -81,7 +81,7 @@ Forces a biome to ether always be humid or never humid. Humidity effects the spr
 Sets the color grass and foliage will be tinted by in this biome on the map.
 
 
-#### Map Tints Properties
+#### Minecraft Map Tints Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -93,12 +93,17 @@ Sets the color grass and foliage will be tinted by in this biome on the map.
 Noise parameters used to drive mountain terrain generation in Overworld.
 
 
-#### Mountain Parameters Properties
+#### Minecraft Mountain Parameters Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| east_slopes | *not set* | Boolean true/false | Enable for east-facing slopes |  | 
+| material | *not set* | Object | Block type use as steep material |  | 
+| north_slopes | *not set* | Boolean true/false | Enable for north-facing slopes |  | 
+| south_slopes | *not set* | Boolean true/false | Enable for south-facing slopes |  | 
 | steep_material_adjustment | *not set* | [Steep Material Adjustment](#steep-material-adjustment-item-type) item | Defines surface material for steep slopes |  | 
 | top_slide | *not set* | [Top Slide](#top-slide-item-type) item | Controls the density tapering that happens at the top of the world to prevent terrain from reaching too high |  | 
+| west_slopes | *not set* | Boolean true/false | Enable for west-facing slopes |  | 
 
 ## Steep Material Adjustment item type
 Defines surface material for steep slopes.
@@ -128,7 +133,7 @@ Controls the density tapering that happens at the top of the world to prevent te
 Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.
 
 
-#### Multinoise Generation Rules Properties
+#### Minecraft Multinoise Generation Rules Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -142,12 +147,12 @@ Controls how this biome is instantiated (and then potentially modified) during w
 Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.
 
 
-#### Overworld Generation Rules Properties
+#### Minecraft Overworld Generation Rules Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| generate_for_climates | *not set* | Array of objects | Controls the world generation climate categories that this biome can spawn for. A single biome can be associated with multiple categories with different weightings. |  | 
-| hills_transformation | *not set* | Array of strings | What biome to switch to when converting to a hilly biome |  | 
+| generate_for_climates | *not set* | Array of objects | Can be just the name of a biome, or an array of any size. If an array, each entry can be a biome name string, or an array of size 2, where the first entry is a biome name and the second entry is a positive integer representing how that biome is weighted against other entries. If no weight is provided, a weight of 1 is used. |  | 
+| hills_transformation | *not set* | Array of strings | An array of any size containing arrays of exactly two elements. For each contained array, the first element is a climate category string ('medium', 'warm', 'lukewarm', 'cold', or 'frozen'). The second element is a positive integer for how much that entry is weighted relative to other entries. |  | 
 | hills_transformation (Alternate 1) | *not set* | Object |  |  | 
 | mutate_transformation | *not set* | Array of strings | What biome to switch to when converting to a mutated biome |  | 
 | mutate_transformation (Alternate 1) | *not set* | Object |  |  | 
@@ -160,7 +165,7 @@ Controls how this biome is instantiated (and then potentially modified) during w
 Noise parameters used to drive terrain height in the Overworld.
 
 
-#### Overworld Height Properties
+#### Minecraft Overworld Height Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -171,17 +176,17 @@ Noise parameters used to drive terrain height in the Overworld.
 Replaces a specified portion of one or more Minecraft biomes.
 
 
-#### Replace Biomes Properties
+#### Minecraft Replace Biomes Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| replacements | *not set* | Array of [Replacements](#replacements-item-type) items | List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list. |  | 
+| replacements | *not set* | [Replacements](#replacements-item-type) item | List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list. |  | 
 
 ## Replacements item type
 Represents the replacement information used to determine the placement of the overriding biome.
 
 
-#### Biome Replacement Properties
+#### Biome Replacement Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -194,7 +199,7 @@ Represents the replacement information used to determine the placement of the ov
 Controls the materials used for terrain generation.
 
 
-#### Surface Builder Properties
+#### Minecraft Surface Builder Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -204,11 +209,16 @@ Controls the materials used for terrain generation.
 Specify fine-detail changes to blocks used in terrain generation (based on a noise function).
 
 
-#### Surface Material Adjustments Properties
+#### Minecraft Surface Material Adjustments Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | adjustments | *not set* | Array of [Adjustments](#adjustments-item-type) items | All adjustments that match the column's noise values will be applied in the order listed. |  | 
+| foundation_material | *not set* | Object | Controls the block type used deep underground in this biome when this adjustment is active. |  | 
+| mid_material | *not set* | Object | Controls the block type used in a layer below the surface of this biome when this adjustment is active. |  | 
+| sea_floor_material | *not set* | Object | Controls the block type used as a floor for bodies of water in this biome when this adjustment is active. |  | 
+| sea_material | *not set* | Object | Controls the block type used in the bodies of water in this biome when this adjustment is active. |  | 
+| top_material | *not set* | Object | Controls the block type used for the surface of this biome when this adjustment is active. |  | 
 
 ## Adjustments item type
 An adjustment to generated terrain, replacing blocks based on the specified settings.
@@ -268,7 +278,7 @@ swamp: Allows ruined portals to be found underwater. Biome uses swamp flowers (m
 taiga: Biomes tagged "forest" or "forest_generation" will use normal Overworld flowers instead of forest flowers.
 
 
-#### Tags Properties
+#### Minecraft Tags Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -278,7 +288,7 @@ taiga: Biomes tagged "forest" or "forest_generation" will use normal Overworld f
 Contains non-component settings for a Biome.
 
 
-#### Biome Description Properties
+#### Biome Description Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
