@@ -23,7 +23,8 @@
       {
         "id": "type",
         "title": "Type",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "uuid",
@@ -34,7 +35,8 @@
             "comparison": "pattern",
             "value": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "version",
@@ -82,7 +84,8 @@
             "id": "version",
             "dataType": 2
           }
-        ]
+        ],
+        "isRequired": true
       }
     ]
   }

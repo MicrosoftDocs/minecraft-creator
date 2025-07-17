@@ -10,7 +10,8 @@
         "id": "from_sea",
         "title": "From Sea",
         "description": "Offset from anchored vertical position",
-        "dataType": 0
+        "dataType": 0,
+        "isRequired": true
       }
     ]
   }

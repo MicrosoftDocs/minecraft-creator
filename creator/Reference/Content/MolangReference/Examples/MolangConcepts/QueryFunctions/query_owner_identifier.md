@@ -9,4 +9,7 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_owner_identifier
 
+> [!IMPORTANT]
+> This type is now deprecated, and no longer in use in the latest versions of Minecraft.
+
 DEPRECATED (Use query.is_owner_identifier_any instead if possible so names can be changed later without breaking content.) Returns the root actor identifier.

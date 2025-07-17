@@ -7,6 +7,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
+# Features Documentation
+
 | Features | Description |
 |:-----|:----------|
 | [minecraft:aggregate_feature](Features/minecraft_aggregate_feature.md)| Places a collection of features in an arbitrary order. |

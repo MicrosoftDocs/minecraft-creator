@@ -1,6 +1,7 @@
 {
   "id": "query.get_equipped_item_name",
   "fields": [],
+  "isDeprecated": true,
   "generated_doNotEdit": {
     "id": "query.get_equipped_item_name",
     "title": "Get Equipped Item Name Query",

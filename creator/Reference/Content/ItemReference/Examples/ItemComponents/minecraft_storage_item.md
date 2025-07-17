@@ -18,7 +18,7 @@ Enables an item to store data of the dynamic container associated with it. A dyn
 > This item requires a format version of at least 1.21.40.
 
 
-## Storage Item Properties
+## Minecraft Storage Item Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

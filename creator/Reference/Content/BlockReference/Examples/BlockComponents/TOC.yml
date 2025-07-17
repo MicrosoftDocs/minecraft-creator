@@ -1,50 +1,52 @@
- - name: Block Components List
-   href: BlockComponentsList.md
- - name: breathability
-   href: minecraftBlock_breathability.md
- - name: collision_box
-   href: minecraftBlock_collision_box.md
- - name: crafting_table
-   href: minecraftBlock_crafting_table.md
- - name: destructible_by_explosion
-   href: minecraftBlock_destructible_by_explosion.md
- - name: destructible_by_mining
-   href: minecraftBlock_destructible_by_mining.md
- - name: destruction_particles
-   href: minecraftBlock_destruction_particles.md
- - name: display_name
-   href: minecraftBlock_display_name.md
- - name: entity_fall_on
-   href: minecraftBlock_entity_fall_on.md
- - name: flammable
-   href: minecraftBlock_flammable.md
- - name: friction
-   href: minecraftBlock_friction.md
- - name: geometry
-   href: minecraftBlock_geometry.md
- - name: item_visual
-   href: minecraftBlock_item_visual.md
- - name: light_dampening
-   href: minecraftBlock_light_dampening.md
- - name: light_emission
-   href: minecraftBlock_light_emission.md
- - name: liquid_detection 
-   href: minecraftBlock_liquid_detection.md
- - name: loot
-   href: minecraftBlock_loot.md
- - name: map_color
-   href: minecraftBlock_map_color.md
- - name: material_instances
-   href: minecraftBlock_material_instances.md
- - name: placement_filter
-   href: minecraftBlock_placement_filter.md
- - name: redstone_conductivity
-   href: minecraftBlock_redstone_conductivity.md
- - name: selection_box
-   href: minecraftBlock_selection_box.md
- - name: tag
-   href: minecraftBlock_tag.md
- - name: tick
-   href: minecraftBlock_tick.md
- - name: transformation
-   href: minecraftBlock_transformation.md
+- name: Block Components List
+  href: BlockComponentsList.md
+- name: minecraft:collision_box
+  href: minecraftBlock_collision_box.md
+- name: minecraft:crafting_table
+  href: minecraftBlock_crafting_table.md
+- name: minecraft:custom_components
+  href: minecraftBlock_custom_components.md
+- name: minecraft:destructible_by_explosion
+  href: minecraftBlock_destructible_by_explosion.md
+- name: minecraft:destructible_by_mining
+  href: minecraftBlock_destructible_by_mining.md
+- name: minecraft:destruction_particles
+  href: minecraftBlock_destruction_particles.md
+- name: minecraft:display_name
+  href: minecraftBlock_display_name.md
+- name: minecraft:entity_fall_on
+  href: minecraftBlock_entity_fall_on.md
+- name: minecraft:flammable
+  href: minecraftBlock_flammable.md
+- name: minecraft:friction
+  href: minecraftBlock_friction.md
+- name: minecraft:geometry
+  href: minecraftBlock_geometry.md
+- name: minecraft:item_visual
+  href: minecraftBlock_item_visual.md
+- name: minecraft:light_dampening
+  href: minecraftBlock_light_dampening.md
+- name: minecraft:light_emission
+  href: minecraftBlock_light_emission.md
+- name: minecraft:liquid_detection
+  href: minecraftBlock_liquid_detection.md
+- name: minecraft:loot
+  href: minecraftBlock_loot.md
+- name: minecraft:map_color
+  href: minecraftBlock_map_color.md
+- name: minecraft:material_instances
+  href: minecraftBlock_material_instances.md
+- name: minecraft:movable
+  href: minecraftBlock_movable.md
+- name: minecraft:placement_filter
+  href: minecraftBlock_placement_filter.md
+- name: minecraft:redstone_conductivity
+  href: minecraftBlock_redstone_conductivity.md
+- name: minecraft:replaceable
+  href: minecraftBlock_replaceable.md
+- name: minecraft:selection_box
+  href: minecraftBlock_selection_box.md
+- name: minecraft:tick
+  href: minecraftBlock_tick.md
+- name: minecraft:transformation
+  href: minecraftBlock_transformation.md

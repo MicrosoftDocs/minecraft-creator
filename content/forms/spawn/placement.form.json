@@ -14,7 +14,7 @@
       },
       {
         "id": "spawn_obstruction_predicate",
-        "title": "Spawn Obion Predicate",
+        "title": "Spawn Obstruction Predicate",
         "description": "Checks for obstructions that might prevent entity spawning.",
         "dataType": 2
       },

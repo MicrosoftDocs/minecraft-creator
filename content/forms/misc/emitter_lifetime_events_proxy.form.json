@@ -39,34 +39,8 @@
       {
         "id": "looping_travel_distance_events",
         "title": "Looping Travel Distance Events",
-        "dataType": 15,
-        "subForm": {
-          "id": "emitter_lifetime_events travel_distance_events",
-          "title": "Emitter Lifetime Events Travel Distance Events",
-          "fields": [
-            {
-              "id": "distance",
-              "title": "Distance",
-              "dataType": 3
-            },
-            {
-              "id": "effects",
-              "title": "Effects",
-              "dataType": 15,
-              "alternates": [
-                {
-                  "id": "effects",
-                  "dataType": 16,
-                  "subForm": {
-                    "id": "effects",
-                    "title": "Effects",
-                    "fields": []
-                  }
-                }
-              ]
-            }
-          ]
-        }
+        "dataType": 16,
+        "subFormId": "misc/emitter_lifetime_events_travel_distance_events"
       },
       {
         "id": "timeline",

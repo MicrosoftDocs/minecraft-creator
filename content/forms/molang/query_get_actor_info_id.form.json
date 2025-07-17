@@ -1,6 +1,7 @@
 {
   "id": "query.get_actor_info_id",
   "fields": [],
+  "description": "Returns the integer id of an entity (actor) by its string name.",
   "generated_doNotEdit": {
     "id": "query.get_actor_info_id",
     "title": "Get Actor Info Id Query",

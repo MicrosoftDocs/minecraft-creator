@@ -1,6 +1,7 @@
 {
   "id": "query.dash_cooldown_progress",
   "fields": [],
+  "isDeprecated": true,
   "generated_doNotEdit": {
     "id": "query.dash_cooldown_progress",
     "title": "Dash Cooldown Progress Query",

@@ -34,7 +34,8 @@
           "title": "Output State",
           "fields": []
         },
-        "alternates": []
+        "alternates": [],
+        "isRequired": true
       },
       {
         "id": "position_predicate",

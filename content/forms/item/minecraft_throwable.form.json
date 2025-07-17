@@ -112,7 +112,7 @@
   },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:throwable",
-    "title": "Throwable",
+    "title": "Minecraft Throwable Item",
     "description": "Throwable items can be thrown by the player, such as a snowball.",
     "fields": [
       {

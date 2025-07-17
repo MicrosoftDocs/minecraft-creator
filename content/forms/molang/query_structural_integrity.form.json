@@ -1,6 +1,7 @@
 {
   "id": "query.structural_integrity",
   "fields": [],
+  "description": "Returns the structural integrity for the entity, otherwise returns 0.",
   "generated_doNotEdit": {
     "id": "query.structural_integrity",
     "title": "Structural Integrity Query",

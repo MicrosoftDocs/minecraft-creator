@@ -7,6 +7,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
+# Client Biomes Documentation
+
 | Client Biomes | Description |
 |:-----|:----------|
 | [minecraft:ambient_sounds](Components/minecraftClientBiomes_ambient_sounds.md)| Sets the ambient sounds for the biome. |

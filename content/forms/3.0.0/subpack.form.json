@@ -8,17 +8,20 @@
       {
         "id": "folder_name",
         "title": "Folder Name",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "memory_tier",
         "title": "Memory Tier",
-        "dataType": 0
+        "dataType": 0,
+        "isRequired": true
       },
       {
         "id": "name",
         "title": "Name",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

@@ -9,13 +9,15 @@
       {
         "id": "predicate_type",
         "title": "BlockType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "tag",
         "title": "Tag",
         "description": "The tag to be matched",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

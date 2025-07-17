@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Sets the throwable item component.
 
 
-## Throwable Properties
+## Minecraft Throwable Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

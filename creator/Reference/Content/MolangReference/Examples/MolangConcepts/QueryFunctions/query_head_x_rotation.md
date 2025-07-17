@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_head_x_rotation
 
-Takes one argument as a parameter.  Returns the nth head x rotation of the entity if it makes sense, else it returns 0.0.
+Returns the nth head x rotation of the entity if it makes sense, else it returns 0.0. Takes one argument as a parameter.

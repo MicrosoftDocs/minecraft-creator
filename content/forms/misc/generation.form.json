@@ -7,7 +7,8 @@
       {
         "id": "generator_type",
         "title": "Generator Type",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

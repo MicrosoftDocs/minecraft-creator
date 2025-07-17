@@ -9,13 +9,15 @@
       {
         "id": "type",
         "title": "IntProviderType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "value",
         "title": "Value",
         "description": "Constant value",
-        "dataType": 0
+        "dataType": 0,
+        "isRequired": true
       }
     ]
   }

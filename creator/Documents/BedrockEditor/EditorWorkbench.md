@@ -21,4 +21,4 @@ Use the following quick-actions with Workbench to change block states:
 > [!Note]
 > Each block has unique states. 
 
-![Animation of the Workbench tool.](Media/editor_workbench.gif)
+![Animation of the Workbench tool.](Media/GIFs/Workbench.gif)

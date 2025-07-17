@@ -1,32 +1,25 @@
 {
+  "id": "minecraft:jigsaw_structure_metadata",
+  "title": "Minecraft Jigsaw Structure Metadata Misc",
   "fields": [],
   "generatedFromSchema_doNotEdit": {
-    "id": "minecraft:jigsaw_ure_metadata",
+    "id": "minecraft:jigsaw_structure_metadata",
     "title": "Minecraft Jigsaw Structure Metadata Misc",
     "fields": [
       {
         "id": "format_version",
         "title": "Format Version",
         "description": "Format version of the contained metadata registry.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "minecraft:jigsaw_structure_metadata",
-        "title": "Minecraft Jigsaw Ure Metadata",
+        "title": "Minecraft Jigsaw Structure Metadata",
         "description": "The Jigsaw metadata registry.",
         "dataType": 16,
-        "subForm": {
-          "id": "Jigsaw ure Metadata Registry",
-          "title": "Jigsaw Structure Metadata Registry",
-          "fields": [
-            {
-              "id": "metadata",
-              "title": "Metadata",
-              "description": "The registry associating structure locations with generated Jigsaw structure metadata.",
-              "dataType": 14
-            }
-          ]
-        }
+        "subFormId": "misc/jigsaw_structure_metadata_registry",
+        "isRequired": true
       }
     ]
   }

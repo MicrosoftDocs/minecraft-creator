@@ -18,33 +18,15 @@
       {
         "id": "direction",
         "title": "Facing",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "geometry_part",
         "title": "Geometry Part",
         "dataType": 16,
-        "subForm": {
-          "id": "Rule Geometry Part",
-          "title": "Rule Geometry Part",
-          "fields": [
-            {
-              "id": "bone",
-              "title": "Bone",
-              "dataType": 2
-            },
-            {
-              "id": "cube",
-              "title": "Cube",
-              "dataType": 0
-            },
-            {
-              "id": "face",
-              "title": "Facing",
-              "dataType": 2
-            }
-          ]
-        }
+        "subFormId": "client_block/rule_geometry_part",
+        "isRequired": true
       }
     ]
   }

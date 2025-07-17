@@ -1,27 +1,30 @@
 ---
-author: iconicNurdle
+author: mammerla
 ms.author: mikeam
-title: Block Documentation - minecraft:entity_fall_on
-description: "A reference document detailing the 'entity_fall_on' block component"
+title: "Block Components Documentation - minecraft:entity_fall_on"
+description: "Describes the minecraft:entity_fall_on block component"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Block Documentation - minecraft:entity_fall_on
+# Block Components Documentation - minecraft:entity_fall_on
 
-`minecraft:entity_fall_on` is a block component which configures what distance an entity must fall onto this block to cause the `onEntityFallOn` block custom component event to be sent to script.
+Configures what distance an entity must fall onto this block to cause the `onEntityFallOn` block custom component event to be sent to script. Custom components subscribed to the `onEntityFallOn` event on a block without the `minecraft:entity_fall_on` component use the default fall distance of 1 block.
 
-Custom components subscribed to the `onEntityFallOn` event on a block without the `minecraft:entity_fall_on` component use the default fall distance of 1 block.
 
-## Parameters
+## Entity Fall On Properties
 
-| Name | Default Value | Type | Description |
-|:----|:----|:----|:----|
-| minimum_fall_distance | 0.0 | Float | The minimum distance in blocks that an entity needs to fall before events are raised. |
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| minimum_fall_distance | 1 | Decimal number | The minimum distance in blocks that an entity needs to fall before events are raised. | Fall Distance Of 2 Blocks: `2` | 
 
-## Example
+## Samples
+
+#### [Fall Distance Of 2 Blocks](Fall Distance of 2 Blocks)
+
 
 ```json
-"minecraft:entity_fall_on" {
-    "minimum_fall_distance": 2.0
+"minecraft:entity_fall_on": {
+  "minimum_fall_distance": 2
 }
 ```

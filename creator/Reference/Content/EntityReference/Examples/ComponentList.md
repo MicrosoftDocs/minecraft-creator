@@ -7,6 +7,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
+# Entity Components Documentation
+
 | Entity Components | Description |
 |:-----|:----------|
 | [minecraft:addrider](EntityComponents/minecraftComponent_addrider.md)| Adds a rider to the entity. |

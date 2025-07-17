@@ -9,13 +9,15 @@
       {
         "id": "processor_type",
         "title": "Jigsaw Processro Type",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "value",
         "title": "Value",
         "description": "Block tag for the blocks that will be protected",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

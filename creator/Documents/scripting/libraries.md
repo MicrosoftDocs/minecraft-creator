@@ -4,6 +4,7 @@ ms.author: mikeam
 title: Open-Source Scripting Libraries
 description: "A guide to the currently available scripting libraries for Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 07/11/2025
 ---
 
 # Open-Source Scripting Libraries
@@ -14,7 +15,7 @@ Mojang provides a number of open-source scripting libraries, which allow you to 
 
 The [math library](https://www.npmjs.com/package/@minecraft/math) contains a set of utility functions and a wrapper class for common Vector operations. Two patterns are supported; a more computational approach operating on the Vector3 interface with no mutation, and a separate wrapper object-oriented approach following a "builder" pattern. The choice of pattern is based on your preference; behind the scenes, the same helpers are used.
 
-## Core Build Tasks
+## Core build tasks
 
 The [core build tasks library](https://www.npmjs.com/package/@minecraft/core-build-tasks) contains common build tasks used in the minecraft-scripting-libraries build, but can be used in other repositories as well. If a task is used by the 'just' build infrastructure in multiple packages, it is moved into this package to reduce duplication.
 
@@ -25,6 +26,6 @@ The [core build tasks library](https://www.npmjs.com/package/@minecraft/core-bui
 
 The [linting library](https://www.npmjs.com/package/eslint-plugin-minecraft-linting) contains best practices for authoring Minecraft script. Rules may include suggestions, such as "Use this API instead of this command!", or errors against anti-patterns to avoid pitfalls.
 
-To author a new rule, add a file under 'src/rules' named after the rule. Rules are authored via the 'ESLintUtils' rule creator; more information on rule creation can be found [here](https://typescript-eslint.io/custom-rules#utils-package).
+To author a new rule, add a file under 'src/rules' named after the rule. Rules are authored via the 'ESLintUtils' rule creator; more information on rule creation can be found in [TypeScript-ESLint's Custom Rules documentation](https://typescript-eslint.io/developers/custom-rules).
 
 Once you have a new rule, update 'src/index.ts' and add it to the exported 'rules' key in the module exports and update the default 'eslint' configuration as to whether the new rule is an error or a warning.

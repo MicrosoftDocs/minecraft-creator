@@ -15,7 +15,7 @@ Specifies that an item is compostable and provides the chance of creating a comp
 > This item requires a format version of at least 1.21.60.
 
 
-## Compostable Properties
+## Minecraft Compostable Item Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

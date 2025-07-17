@@ -29,4 +29,4 @@ The terrain tool is used to smooth and roughen the terrain. Smooth mode allows y
 
 3. Click and drag the cursor along the ground to alter the terrain.
 
-    ![Animation of the terrain tool.](Media/editor_terrain_tool.gif)
+    ![Animation of the terrain tool.](Media/GIFs/Terrain.gif)

@@ -1,9 +1,11 @@
 {
   "fields": [],
-  "requires": {
-    "id": "minecraft:suspect_tracking",
-    "type": "entity_type"
-  },
+  "requires": [
+    {
+      "id": "minecraft:suspect_tracking",
+      "type": "entity_type"
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.sniff",
     "title": "Sniff Behavior",

@@ -9,7 +9,8 @@
       {
         "id": "predicate_type",
         "title": "BlockType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

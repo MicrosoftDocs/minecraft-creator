@@ -23,7 +23,8 @@
             "comparison": "<=",
             "value": 0.5
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "enabled",
@@ -41,12 +42,14 @@
                 {
                   "id": "expression",
                   "title": "Expression",
-                  "dataType": 2
+                  "dataType": 2,
+                  "isRequired": true
                 },
                 {
                   "id": "version",
                   "title": "Version",
-                  "dataType": 0
+                  "dataType": 0,
+                  "isRequired": true
                 }
               ]
             }
@@ -60,23 +63,7 @@
       {
         "id": "events",
         "title": "Events",
-        "dataType": 15,
-        "subForm": {
-          "id": "particle_motion_collision_event",
-          "title": "Particle Motion Collision Event",
-          "fields": [
-            {
-              "id": "event",
-              "title": "Event",
-              "dataType": 16
-            },
-            {
-              "id": "min_speed",
-              "title": "Min Speed",
-              "dataType": 3
-            }
-          ]
-        },
+        "dataType": 16,
         "alternates": [
           {
             "id": "events",
@@ -88,7 +75,8 @@
                 {
                   "id": "event",
                   "title": "Event",
-                  "dataType": 16
+                  "dataType": 16,
+                  "isRequired": true
                 },
                 {
                   "id": "min_speed",

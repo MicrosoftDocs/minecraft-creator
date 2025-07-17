@@ -24,7 +24,8 @@
         "id": "grass",
         "title": "Grass",
         "description": "Controls whether the grass will use a custom tint color or a noise based tint color.",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       }
     ]
   }

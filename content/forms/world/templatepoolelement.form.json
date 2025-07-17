@@ -9,7 +9,8 @@
         "id": "element",
         "title": "Element",
         "description": "A grouping of a Structure Template, the Processor List to use when placing the structure, and its weight that determines the likelihood of the element being chosen.",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       },
       {
         "id": "weight",

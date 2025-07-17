@@ -1,18 +1,18 @@
 ---
-author: mikeam
+author: chipotle
 ms.author: mikeam
-title: Build a gameplay experience with TypeScript
-description: "Use TypeScript to build a simple gameplay experience in Minecraft"
+title: "Next Steps: Scripting with TypeScript"
+description: "A walkthrough on how to use TypeScript to create Minecraft Add-On scripts."
 ms.service: minecraft-bedrock-edition
 ms.date: 04/17/2025
 ---
 
-# Build a gameplay experience with TypeScript
+# Next Steps: Scripting with TypeScript
 
 This guide leverages a starter sample available on [our public GitHub repository](https://github.com/microsoft/minecraft-scripting-samples/) with a simple build process and TypeScript compilation for Minecraft. From it, you can build out and expand simple gameplay styles. You can also use this project as a starter for your own scripting projects.
 
 > [!IMPORTANT]
-> Just getting started with JavaScript? You may want to check out [Introduction to Scripting](./ScriptingIntroduction.md) to learn the basics of creating a simple behavior pack using JavaScript fundamentals. Once you're comfortable with the JavaScript fundamentals and concepts, this article will help you use TypeScript with Minecraft for more complex customization. TypeScript is a more helpfully structured dialect of JavaScript; however, because TypeScript must be compiled into JavaScript before Minecraft can use it, there is a bit more project structure you'll need to establish up front that this tutorial will walk you through.  
+> Just getting started with JavaScript? Check out [Introduction to Scripting](./introduction.md) to learn the basics of creating a simple behavior pack using JavaScript fundamentals. Once you're comfortable with the JavaScript fundamentals and concepts, this article will help you use TypeScript with Minecraft for more complex customization. TypeScript is a structured dialect of JavaScript that can help you find errors as you write code. However, because TypeScript must be compiled into JavaScript before Minecraft can use it, there's a bit more project structure you'll need to establish up front that this tutorial will walk you through.
 
 ## On the Minecraft Creator Channel
 
@@ -23,7 +23,7 @@ If you prefer to watch a video version of this tutorial, you can view it on the 
 
 ### Install Node.js tools, if you haven't already
 
-We're going to use the Node Package Manager (or NPM) to get more tools to make the process of building our project easier.
+We're going to use the Node Package Manager (NPM) to get more tools to make the process of building our project easier.
 
 Visit [https://nodejs.org/](https://nodejs.org).
 
@@ -33,7 +33,7 @@ Download the version with "LTS" next to the number and install it. (LTS stands f
 
 Visit the [Visual Studio Code website](https://code.visualstudio.com) and install Visual Studio Code.
 
-## Getting Started
+## Getting started
 
 1. Download a copy of the starter project from GitHub by visiting [https://github.com/microsoft/minecraft-scripting-samples/](https://github.com/microsoft/minecraft-scripting-samples/) and, under the Code button, selecting `Download ZIP`.
 
@@ -43,7 +43,7 @@ Visit the [Visual Studio Code website](https://code.visualstudio.com) and instal
 
 1. Put the extracted contents of the TypeScript Starter Project folder into **cotta**.
 
-![Initial Project Folder Contents](Media/ScriptingGettingStarted/100-InitialFolder.png)
+![Initial Project Folder Contents](./media/next-steps/100_initial_folder.png)
 
 1. Open a Windows Terminal or PowerShell window and change the working directory to your **cotta** folder:
 
@@ -51,7 +51,7 @@ Visit the [Visual Studio Code website](https://code.visualstudio.com) and instal
     cd c:\projects\cotta\
     ```
 
-1. Use NPM to install our tools:
+1. Use NPM to install required Node tools and libraries:
 
     ```powershell
     npm i
@@ -63,36 +63,35 @@ Visit the [Visual Studio Code website](https://code.visualstudio.com) and instal
     code .
     ```
 
-![Initial Visual Studio Code window](Media/ScriptingGettingStarted/300-InitialVSCode.png)
+![Initial Visual Studio Code window](./media/next-steps/300_initial_vs_code.png)
 
 It might also ask you to install the Minecraft Debugger and Blockception's Visual Studio Code plugin, which are plugins to Visual Studio Code that can help with Minecraft development. Go ahead and do that, if you haven't already.
 
-## Chapter 1. Customize the behavior pack
+## Customize the behavior pack
 
-In Visual Studio Code, open the file `.env`. This contains the environment variables to use to configure project:
+In Visual Studio Code, open the file **.env**. You can use this file to configure a project.
 
-```
+```ini
 PROJECT_NAME="starter"
 MINECRAFT_PRODUCT="BedrockUWP"
 CUSTOM_DEPLOYMENT_PATH=""
 ```
 
-- **PROJECT_NAME** is used as the folder name under all the assets are going to be deployed inside the game directories (e.g., development_behavior_packs\\**PROJECT_NAME**, development_resource_packs\\**PROJECT_NAME**).
+- **PROJECT_NAME** is used as the folder name under all the assets are going to be deployed inside the game directories (e.g., **development_behavior_packs\\PROJECT_NAME**, **development_resource_packs\\PROJECT_NAME**).
 
-- **MINECRAFT_PRODUCT**. You can choose to use either Minecraft or Minecraft Preview to debug and work with your scripts. These are the possible values: **BedrockUWP, PreviewUWP, Custom**.
-  Use **Custom** in case of deploy on any other path.
+- **MINECRAFT_PRODUCT** selects between Minecraft or Minecraft Preview to debug and work with your scripts. You can set this to **BedrockUWP**, **PreviewUWP**, or **Custom**.  The first two expect Minecraft or Minecraft Preview to be installed at standard locations; if you want to use a Minecraft installation in another directory, specify **Custom**, and put the path to the asset folder in your custom installation in **CUSTOM_DEPLOYMENT_PATH**.
 
-- **CUSTOM_DEPLOYMENT_PATH**. In case of using **Custom** for **MINECRAFT_PRODUCT**, this is the path used to generate the assets.
+- **CUSTOM_DEPLOYMENT_PATH** is used with **Custom**, above.
 
-Go back the Files tree view and open `behavior_packs\cotta\manifest.json`
+Go back to the Files tree view and open **behavior_packs\starter\manifest.json**.
 
 Update the name and description properties to something like "Cotta Behavior Pack" and "My TypeScript Project".
 
-Update the first and second UUID properties to make it unique to your project. See [this article](../Documents/BehaviorPack.md) for tips on working with behavior packs and creating your own unique UUIDs.
+Update the first and second UUID properties to make it unique to your project. See [this article](../../Documents/BehaviorPack.md) for tips on working with behavior packs and creating your own unique UUIDs.
 
-![Editing Manifest JSON](Media/ScriptingGettingStarted/500-ManifestJson.png)
+![Editing Manifest JSON](./media/next-steps/500_manifest_json.png)
 
-## Chapter 2. Let's test the parts of our project
+## Test the project
 
 To get started, go into PowerShell and navigate to your **C:\projects\cotta** directory.
 Run this command:
@@ -101,15 +100,15 @@ Run this command:
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
-Run this one, too.
+Now, run this one:
 
 ```powershell
-npm run local-deploy
+npx just-scripts local-deploy
 ```
 
-This uses a build tool called just-scripts and automatically compiles your TypeScript project and pushes it over into Minecraft.
+This local deployment step uses a build tool, just-scripts, that compiles your TypeScript project into JavaScript and copies it into the proper directory for the local Minecraft installation you specified in the **.env** file.
 
-![Initial just-scripts run](Media/ScriptingGettingStarted/600-InitialGulpRun.png)
+![Initial just-scripts run](./media/next-steps/600_initial_gulp_run.png)
 
 Launch Minecraft and create a new world:
 
@@ -121,7 +120,7 @@ Launch Minecraft and create a new world:
 
 Now you're in. Great!
 
-![Create a new world](Media/ScriptingGettingStarted/700-StartNewWorld.png)
+![Create a new world](./media/next-steps/700_start_new_world.png)
 
 By default, this starter pack comes with a simple script that will display a message every five seconds:
 
@@ -129,13 +128,13 @@ By default, this starter pack comes with a simple script that will display a mes
 
 This means your behavior pack is working and your tools for compiling and pushing TypeScript are just fine. Awesome!
 
-![Hello Starter, displayed](Media/ScriptingGettingStarted/800-HelloStarter.png)
+![Hello Starter, displayed](./media/next-steps/800_hello_starter.png)
 
-## Chapter 3. Scripting your gameplay
+## Scripting your gameplay
 
 Let's go back to Visual Studio Code and change up some code.
 
-Open up `scripts/main.ts` within Visual Studio Code.
+Open up **scripts/main.ts** within Visual Studio Code.
 
 ### Add some initialization code
 
@@ -219,11 +218,11 @@ function gameTick() {
 system.run(gameTick);
 ```
 
-![Initial code in main.ts](Media/ScriptingGettingStarted/900-MainTS.png)
+![Initial code in main.ts](./media/next-steps/900_main_ts.png)
 
 This code does some work to initialize our gameplay for Minecraft by running several commands.
 
-First, we queue up a run to our main tick function, gameTick. Note that at the end, we will requeue a game tick, which will run within the next tick frame. This will give us a callback that fires 20 times a second, and within this, we can put all of our game logic. We want the game to initialize some code; namely, the `initializeBreakTheTerracotta` function.
+First, we queue up a run to our main tick function, gameTick. Note that at the end, we will re-queue a game tick, which will run within the next tick frame. This will give us a callback that fires 20 times a second, and within this, we can put all of our game logic. We want the game to initialize some code; namely, the `initializeBreakTheTerracotta` function.
 
 Note that we wait until `START_TICK` (100 ticks in) before the world is actually initialized. This gives Minecraft time to fully load up and get ready.
 
@@ -239,7 +238,7 @@ Now, let's run the code. This time, we're going to run the local-deploy task in 
 Go back to your PowerShell window, and enter:
 
 ```powershell
-npm run local-deploy -- --watch
+npx just-scripts local-deploy --watch
 ```
 
 You should see that the local-deploy task compiles and deploys to the Minecraft folder. From here, we don't need to tend to PowerShell except to see if there are any compilation errors down the road.
@@ -254,7 +253,7 @@ Now load the world. You should see your initialization changes: a new scoreboard
 
 Note that as you work through this tutorial, we are going to run the initialization code more than once, so your player is going to get multiples of these items during this development and test phase.
 
-![Initial items](Media/ScriptingGettingStarted/1000-InitialItems.png)
+![Initial items](./media/next-steps/1000_initial_items.png)
 
 ### Build your arena with some helper code
 
@@ -314,11 +313,11 @@ export default class Utilities {
 }
 ```
 
-![Utilities TypeScript file](Media/ScriptingGettingStarted/1100-UtilitiesTS.png)
+![Utilities TypeScript file](./media/next-steps/1100_utilities_ts.png)
 
 The first utility function here (`Utilities.fillBlock`) is relatively straightforward:
 
-Across three dimensions (within three loops), it will basically set a block in the overworld to a particular type. This function just makes a big chunk of blocks.
+Across three dimensions (within three loops), it will basically set a block in the Overworld to a particular type. This function just makes a big chunk of blocks.
 
 The second utility function here (`Utilities.fourWalls`) basically creates a walled enclave. The first inner loop creates two stripes of blocks left to right (across X). The second inner loop creates two stripes of blocks south to north (across Z) - thus completing four walls that join each other.
 
@@ -361,13 +360,13 @@ if (cobblestoneBlockPerm) {
 }
 ```
 
-![Arena building code](Media/ScriptingGettingStarted/1200-WallCode.png)
+![Arena building code](./media/next-steps/1200_wall_code.png)
 
 The first line just fills a cuboid with air - basically clearing out the arena of any previous items. The second line re-installs and adds four walls of cobblestone.
 
 Exit out of your Minecraft world and restart it to load your changes. After a brief delay, you should find yourself in an arena.
 
-![Our new arena in Minecraft](Media/ScriptingGettingStarted/1300-NewArena.png)
+![Our new arena in Minecraft](./media/next-steps/1300_new_arena.png)
 
 Now, let's give ourselves some terracotta to break.
 
@@ -440,19 +439,19 @@ function checkForTerracotta() {
 }
 ```
 
-![Spawn terracotta code](Media/ScriptingGettingStarted/1400-SpawnTerracotta.png)
+![Spawn terracotta code](./media/next-steps/1400_spawn_terracotta.png)
 
 Congratulations! You've just created a very basic and very easy game where you can run around and break terracotta with your sword.
 
 To play, you will need to run the command `/gamemode s` to put Minecraft into survival mode so that you can break the terracotta.
 
-![New terracotta within Minecraft](Media/ScriptingGettingStarted/1500-NewTerracotta.png)
+![New terracotta within Minecraft](./media/next-steps/1500_new_terracotta.png)
 
 After the terracotta is broken, your score will increment, and a new block is spawned.
 
-### Add a challenge - let's add some mobs
+### Add mobs for a challenge
 
-OK, let's add this function after the `checkForTerracotta()` function:
+Let's add this function after the `checkForTerracotta()` function:
 
 ```typescript
 function spawnMobs() {
@@ -474,7 +473,7 @@ function spawnMobs() {
 }
 ```
 
-This function will spawn 1-2 zombies within the arena, at a random location. You can change the kinds of mobs to spawn, the number, and more within this function.
+This function will spawn one or two zombies within the arena at a random location. You can change the kinds of mobs to spawn, the number, and more within this function.
 
 Let's call that function within our `gameTick` method:
 
@@ -485,15 +484,15 @@ Let's call that function within our `gameTick` method:
   }
 ```
 
-![Spawn mobs code](Media/ScriptingGettingStarted/1600-SpawnMobs.png)
+![Spawn mobs code](./media/next-steps/1600_spawn_mobs.png)
 
 For gameplay, we want mobs to spawn more frequently as your score goes up. To do this, the frequency at which `spawnMobs` is called depends on the `spawnInterval` variable. `spawnInterval` is the span of time between spawning new mobs. Because we divide this interval by our current score, this means that as our score goes up, the interval of time between spawning mobs gets shorter. This makes the challenge harder over time.
 
 As you play, zombies should spawn and start chasing you. They'll spawn slowly at first, but as you break blocks they'll start to accumulate and bother you while you try to break terracotta blocks.
 
-![Mobs chasing you](Media/ScriptingGettingStarted/1700-MobChase.png)
+![Mobs chasing you](./media/next-steps/1700_mob_chase.png)
 
-## Add more challenges!
+## Add more challenges
 
 Let's add a new gameplay twist: randomly spawning obstructions in the form of leaves.
 
@@ -523,36 +522,36 @@ And call that function in your gameTick() function:
   }
 ```
 
-![Add fuzzy leaves code](Media/ScriptingGettingStarted/1800-FuzzyLeaves.png)
+![Add fuzzy leaves code](./media/next-steps/1800_fuzzy_leaves.png)
 
 You may wonder why the interval here is 29. The main idea was to select a number to avoid the chance that on a particular tick we do everything at once (create new leaves, spawn mobs AND check terracotta state), so we try to have offset schedules for all of these different game activities.
 
-![Fuzzy leaves at night](Media/ScriptingGettingStarted/1900-FuzzyLeavesAtNight.png)
+![Fuzzy leaves at night](./media/next-steps/1900_fuzzy_leaves_at_night.png)
 
 Now exit out and reload your game. As you run around, you should see new leaves get spawned. This should add a little bit more challenge to your gameplay!
 
-## Other Commands
+## Other commands
 
 To run a lint operation (that is, scan your code for errors) use this shortcut command:
 
 ```powershell
-   npm run lint
+npx just-scripts lint
 ```
 
 To auto-fix lint issues, you can use this:
 
 ```powershell
-   npm run lint -- --fix
+npx just-scripts lint --fix
 ```
 
 To create an addon file you can share, run:
 
 ```powershell
-   npm run mcaddon
+npx just-scripts mcaddon
 ```
 
 ### Summary
 
 With this starter, you've seen how to build a nice little arena game.
 
-Like the randomly spawning leaves, you can see how you can add different gameplay elements into your arena. Maybe rather than leaves, you want to randomly generate some parkour platforms - or some treasures or weapons, or different types of mobs. Experiment and build your own custom competition arenas!
+Like the randomly spawning leaves, you can see how you can add different gameplay elements into your arena. Maybe rather than leaves, you want to randomly generate some parkour platforms, some treasures or weapons, or different types of mobs. Experiment and build your own custom competition arenas!

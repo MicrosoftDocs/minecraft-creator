@@ -10,7 +10,8 @@
         "id": "builder",
         "title": "Builder",
         "description": "Controls the block types used for terrain generation.",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       }
     ]
   }

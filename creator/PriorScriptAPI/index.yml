@@ -27,7 +27,7 @@ landingContent:
            - text: Building your first GameTest
              url: ../Documents/GameTestBuildYourFirstGameTest.md
            - text: Creating a simple gameplay experience
-             url: ../Documents/ScriptingGettingStarted.md
+             url: ../Documents/scripting/next-steps.md
       - linkListType: concept
         links:
            - text: Introduction to the GameTest Framework

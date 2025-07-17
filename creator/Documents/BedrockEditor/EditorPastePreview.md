@@ -27,7 +27,7 @@ After you create a selection and copy it (**Ctrl+C**) or cut it (**Ctrl+X**), yo
 ![Animation of using the keyboard to adjust the paste preview](Media/PastePreviewKeyboardPgUpDn.gif)
 
 1. Click Confirm Paste.
-![Image of a pasted selection](Media/editor_overview_paste_preview_copied_house_paste_confirmed1.png)
+![Image of a pasted selection](Media/GIFs/PastePreview.gif)
     > [!Tip]
     > You can Transform your copied selection by editing the Origin coordinates, Rotating the selection, or mirroring the selection along the x or z axis.
         ![Image of a pasted house after the paste has been confirmed](Media/editor_overview_paste_preview_copied_house_paste_confirmed3.png)

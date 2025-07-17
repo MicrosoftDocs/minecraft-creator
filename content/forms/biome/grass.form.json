@@ -18,13 +18,15 @@
             "minLength": 3,
             "maxLength": 3
           }
-        ]
+        ],
+        "isRequired": true
       },
       {
         "id": "type",
         "title": "GrassType",
         "description": "Controls the type of grass tint to use.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

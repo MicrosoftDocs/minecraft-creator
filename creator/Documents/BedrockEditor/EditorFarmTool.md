@@ -33,4 +33,4 @@ The farm tool is used to create a farm with specified crops and/or animals.
 
 3. Click a block on the ground to place a farm with that block at its center.
 
-    ![Animation of the farm tool.](Media/editor_farm_tool.gif)
+    ![Animation of the farm tool.](Media/GIFs/FarmTool.gif)

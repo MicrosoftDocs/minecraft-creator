@@ -1,20 +1,24 @@
 ---
 author: mikeam
 ms.author: mikeam
-title: Use Visual Studio Code tools to write script
+title: Developer Tools for Minecraft
 description: "Using tools for enhanced editing, debugging, and profiling of JavaScript within Visual Studio Code"
 ms.service: minecraft-bedrock-edition
+ms.date: 07/11/2025
 ---
 
-# Use Visual Studio Code tools to write script
+# Developer Tools for Minecraft
 
-There are a few tools that can make the process of writing your JavaScript easier and more fun within Visual Studio Code. In this article, we'll discuss how you can install custom type definitions for Minecraft to provide autocomplete as you work, the Minecraft Script Debugger, and the Minecraft Script Profiler. A big note: in the GitHub repository at [https://github.com/microsoft/minecraft-scripting-samples](https://github.com/microsoft/minecraft-scripting-samples), there are various starter samples and examples that come with these tools pre-configured, so if you start your project using those, a lot of the configuration work is already done for you.  
+There are a few tools that can make the process of writing your JavaScript easier and more fun within Visual Studio Code. In this article, we'll discuss how you can install custom type definitions for Minecraft to provide autocomplete as you work, the Minecraft Script Debugger, and the Minecraft Script Profiler.
+
+> [!TIP]
+> In the GitHub repository at <https://github.com/microsoft/minecraft-scripting-samples>, there are various starter samples and examples that come with these tools pre-configured, so if you start your project using those, a lot of the configuration work is already done for you.
 
 ## Custom type definition files for Visual Studio Code Intellisense
 
 Visual Studio Code can display detailed type information for different libraries to provide hints and code-completion dropdowns as you type. Type information has been made available for scripting modules `@minecraft/server`,`@minecraft/server-ui`, and several beta modules such as `@minecraft/server-gametest`.
 
-To get started, use the Node Package Manager, or npm. npm makes it easy to download and install different modules of code within your packages. Install Node.js – which includes npm - on your development device. More info on installing npm is available from [nodejs.org](https://nodejs.org). Install the latest LTS version of Node.js to get started.
+To get started, use the Node Package Manager, or NPM. NPM makes it easy to download and install different modules of code within your packages. Install Node.js (which includes NPM) on your development device. More info on installing NPM is available from [nodejs.org](https://nodejs.org). Install the latest LTS version of Node.js to get started.
 
 Once Node.js is installed, getting the latest type definitions is a snap. From Visual Studio Code, open the folder where your behavior pack folder is located and simply run the following commands from a terminal console window:
 
@@ -23,21 +27,21 @@ npm i @minecraft/server
 npm i @minecraft/server-gametest
 ```
 
-This will install type definitions in the node_modules folder within your project.
+This will install type definitions in the **node_modules** folder within your project.
 
-To edit with new code hinting, just open up Visual Studio Code. As you write JavaScript, you should see autocomplete:
+To edit with new code hinting, just open up Visual Studio Code. As you write JavaScript, you should see it autocomplete:
 
-![Method autocomplete in Visual Studio Code](Media/ScriptDeveloperTools/autocomplete.png)
+![Method autocomplete in Visual Studio Code](media/tools/autocomplete.png)
 
 and inline reference documentation for types:
 
-![Inline reference documentation in Visual Studio Code](Media/ScriptDeveloperTools/inlinedocumentation.png)
+![Inline reference documentation in Visual Studio Code](media/tools/inlinedocumentation.png)
 
 >[!Note]
 
-> We are updating these type definitions to match the latest APIs, so be sure to check npm often to see if there are updated type definitions.
+> We are updating these type definitions to match the latest APIs, so be sure to check NPM often to see if there are updated type definitions.
 
-If you wish to access the latest beta API versions of modules, you can use the @beta version signifier, as follows:
+If you wish to access the latest beta API versions of modules, you can use the `@beta` version signifier:
 
 ```powershell
 npm i @minecraft/server@beta
@@ -80,11 +84,11 @@ Minecraft Bedrock Edition Preview:
 CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-424268864-5579737-879501358-346833251-474568803-887069379-4040235476
 ```
 
-![checknetisolation command being run](Media/ScriptDeveloperTools/commandprompt.png)
+![checknetisolation command being run](media/tools/commandprompt.png)
 
 #### Step 3: Open Visual Studio Code within your development_behavior_packs folder
 
-In order for the debugger to know where to find your source JavaScript or TypeScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript or TypeScript source files are. This may be inside of Minecraft's development_behavior_packs folder (e.g., `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`) - or you may have your source code located in a separate folder (e.g., `c:\projects\myaddon`).
+In order for the debugger to know where to find your source JavaScript or TypeScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript or TypeScript source files are. This may be inside of Minecraft's development behavior packs folder (e.g., `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`) - or you may have your source code located in a separate folder (e.g., `c:\projects\myaddon`).
 
 Open up a Visual Studio Code window pointed at the folder with your add-on script source.
 
@@ -92,11 +96,11 @@ Open up a Visual Studio Code window pointed at the folder with your add-on scrip
 
 To debug with Minecraft Bedrock Edition, you'll need to connect from Minecraft and into Visual Studio Code. This set of steps assumes you are debugging on the same Windows machine that you are running Minecraft from, but you can also debug across machines and across clients if you want to. If you are debugging across devices, you may need to open up a port within your firewall on the machine that you are running Visual Studio Code within.
 
-You'll want to configure Visual Studio Code to know how to connect to Minecraft. If you're using a sample project such as the TS starter [minecraft-scripting-samples/ts-starter](https://github.com/microsoft/minecraft-scripting-samples/tree/main/ts-starter), this .vscode/launch.json file is already configured for you. But if you're creating a project from scratch, follow these instructions:
+You'll want to configure Visual Studio Code to know how to connect to Minecraft. If you're using a sample project such as the TS starter <https://github.com/microsoft/minecraft-scripting-samples/tree/main/ts-starter>, this **.vscode/launch.json** file is already configured for you. But if you're creating a project from scratch, follow these instructions:
 
-At the root of the behavior pack you want to debug, add a `.vscode` subfolder. Add the following launch.json file into that `.vscode` folder.
+At the root of the behavior pack you want to debug, add a **.vscode** subfolder. Add the following **launch.json** file into that **.vscode** folder.
 
-If your source is in JavaScript and you are developing directly against that source (you do not use a script build process), you'll want to configure `launch.json` as follows:
+If your source is in JavaScript and you are developing directly against that source (you do not use a script build process), you'll want to configure **launch.json** as follows:
 
 ```json
 {
@@ -119,9 +123,9 @@ If your source is in JavaScript and you are developing directly against that sou
 `localRoot` should point at the folder which contains your behavior pack with script within it.
 Port 19144 is the default networking port for Minecraft Script Debugging.
 
-In the example above, `targetModuleUuid` is an optional parameter that specifies the identifier of your script module, which is located in your behavior pack's `manifest.json` file. This is important to use if you are developing add-ons in Minecraft while there are multiple behavior packs with script active.
+In the example above, `targetModuleUuid` is an optional parameter that specifies the identifier of your script module, which is located in your behavior pack's **manifest.json** file. This is important to use if you are developing add-ons in Minecraft while there are multiple behavior packs with script active.
 
-If your source is in a language like TypeScript that generates JavaScript for Minecraft, you will want to use `sourceMapRoot` and `generatedSourceRoot` parameters in `launch.json`:
+If your source is in a language like TypeScript that generates JavaScript for Minecraft, you will want to use `sourceMapRoot` and `generatedSourceRoot` parameters in **launch.json**:
 
 ```json
 {
@@ -142,7 +146,7 @@ If your source is in a language like TypeScript that generates JavaScript for Mi
 }
 ```
 
-Note that `generatedSourceRoot` should point at a folder where your generated JavaScript files (*.js) are stored - for example, the outputs of a TypeScript build process. `sourceMapRoot` should point at a folder where you have source map files - typically created during your build process - that tie your generated JavaScript source files back to your potential TypeScript source.
+Note that `generatedSourceRoot` should point at a folder where your generated JavaScript files (*.js) are stored, for example, the outputs of a TypeScript build process. `sourceMapRoot` should point at a folder where you have source map files&mdash;typically created during your build process&mdash;that tie your generated JavaScript source files back to your potential TypeScript source.
 
 #### Run your Minecraft Behavior Pack
 
@@ -154,11 +158,13 @@ Start Minecraft and load into a world with your scripting behavior pack.
 
 Use this slash command to connect Minecraft to Visual Studio Code:
 
-`script debugger connect`
+```text
+/script debugger connect
+```
 
 You should see a "Debugger connected to host" response from this command if the connection is successful.
 
-![Server debugger connected](Media/ScriptDeveloperTools/breakpointhit.png)
+![Server debugger connected](media/tools/breakpointhit.png)
 
 You can set breakpoints in your code by clicking on the left-hand side of the editor, on specific lines of code. As you run the tests in the behavior pack, your breakpoints should be hit. You can also view local variables and add watches as necessary.
 
@@ -172,21 +178,23 @@ By default, Bedrock Dedicated Servers are not configured to allow debug connecti
 
 These settings configure debugging on Bedrock Dedicated Server:
 
-- `allow-outbound-script-debugging` (true/false): enables the /script debugger connect command. Defaults to false.
-- `allow-inbound-script-debugging` (true false): enables the /script debugger listen command (and the opening of ports on a server).  Defaults to false.
-- `force-inbound-debug-port` (number): Locks the inbound debug port to a particular port. This will set the default script debugging port and prevent a user of the /script debugger listen command from specifying an alternate port.
+- `allow-outbound-script-debugging` (true/false): enables the `/script debugger connect` command. Defaults to `false`.
+- `allow-inbound-script-debugging` (true false): enables the `/script debugger listen` command (and the opening of ports on a server).  Defaults to `false`.
+- `force-inbound-debug-port` (number): Locks the inbound debug port to a particular port. This will set the default script debugging port and prevent a user of the `/script debugger listen` command from specifying an alternate port.
 
-![Editing server.properties for Bedrock Dedicated Server](Media/ScriptDeveloperTools/serverproperties.png)
+![Editing server.properties for Bedrock Dedicated Server](media/tools/serverproperties.png)
 
 Within Bedrock Dedicated Server's console, use this slash command to start listening on a port:
 
-`script debugger listen 19144`
+```text
+/script debugger listen 19144
+```
 
 You should see a "Debugger listening" response from this command.
 
-![Server debugger listening to a port](Media/ScriptDeveloperTools/serverdebuggerlistening.png)
+![Server debugger listening to a port](media/tools/serverdebuggerlistening.png)
 
-Within Visual Studio Code, you'll want to configure your debug settings in `launch.json` to have Visual Studio connect to Dedicated Server. To do this, set "mode" to "connect".
+Within Visual Studio Code, you'll want to configure your debug settings in **launch.json** to have Visual Studio connect to Dedicated Server. To do this, set `mode` to `connect`.
 
 ```json
 {
@@ -206,7 +214,7 @@ Within Visual Studio Code, you'll want to configure your debug settings in `laun
   }
 ```
 
-Now, hit "Start Debugging" inside of Visual Studio Code.
+Now, click **Start Debugging** inside of Visual Studio Code.
 
 As with when you debug against Minecraft clients, you can set breakpoints in your code by clicking on the left-hand side of the editor, on specific lines of code.
 
@@ -220,22 +228,21 @@ To get started, ensure you have a behavior pack with JavaScript within it. Your 
 
 To run the script profiler and start a new profile session, run the following command:
 
-``` 
+```text
 /script profiler start
 ```
 
 Then, exercise your code by running through and playing Minecraft. You'll want to go through normal gameplay or testing patterns to have your JavaScript exercised in representative ways of how players might encounter your experience.
 
-After a while – many minutes, perhaps, end your profiler session by running the following command:
+After a while (several minutes, perhaps), end your profiler session by running the following command:
 
-```
+```text
 /script profiler stop
 ```
 
-This will create a .cpuprofile with a timestamp within your Minecraft log folder.
+This will create a **.cpuprofile** file with a timestamp within your Minecraft log folder.
 
-![Results after saving a new profile](Media/ScriptDeveloperTools/profilerstop.png)
-
+![Results after saving a new profile](media/tools/profilerstop.png)
 
 If you are using the retail version of Minecraft, the log folder is located at:
 
@@ -247,19 +254,19 @@ If you are using Minecraft Preview, that log folder is located at:
 
 To view a CPUProfile, simply open it within Visual Studio Code. The first time you open a CPUProfile file, your operating system will ask you how you wish to open the file. Select Open in [Visual Studio Code](https://code.visualstudio.com):
 
-![Open CPU profile files in Visual Studio Code](Media/ScriptDeveloperTools/profileropeninvsc.png)
+![Open CPU profile files in Visual Studio Code](media/tools/profileropeninvsc.png)
 
 (Note that if you wish to have source links from the profile resolve to your source files correctly, start Visual Studio Code (or set its working directory) within the root of your behavior pack.)
 
 By default, this will give you a simple visual listing of the functions that were called during your CPU Profile session, and the cumulative time that they have taken:
 
-![Profiler results](Media/ScriptDeveloperTools/profilerresults.png)
+![Profiler results](media/tools/profilerresults.png)
 
 As a developer, you can start to optimize your code to adjust for performance - in this case, perhaps organizing code to share instances of a dimension object rather than repeatedly calling world.getDimension.
 
 Note that within Visual Studio Code, you can install an optional "Flame Chart" plugin by clicking the little flame icon in the upper right of your screen (circled in red, below):
 
-![Profiler showing flame icon in upper right hand corner](Media/ScriptDeveloperTools/profilerflame.png)
+![Profiler showing flame icon in upper right hand corner](media/tools/profilerflame.png)
 
 Note: In versions 1.19.10 and beyond, the script profiler has been expanded to support coverage of core Bedrock API calls in addition to overall function calls.
 

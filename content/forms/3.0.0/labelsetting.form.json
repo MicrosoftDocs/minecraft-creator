@@ -8,12 +8,14 @@
       {
         "id": "text",
         "title": "Text",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "type",
         "title": "SettingType",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       }
     ]
   }

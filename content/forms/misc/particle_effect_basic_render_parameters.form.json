@@ -8,12 +8,14 @@
       {
         "id": "material",
         "title": "Material",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       },
       {
         "id": "texture",
         "title": "Texture",
-        "dataType": 16
+        "dataType": 16,
+        "isRequired": true
       }
     ]
   }

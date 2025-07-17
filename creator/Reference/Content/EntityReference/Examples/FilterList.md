@@ -7,6 +7,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
 
+# Entity Filter Types Documentation
+
 | Entity Filter Types | Description |
 |:-----|:----------|
 | [actor_health](Filters/actor_health.md)| Tests the health of the subject. |

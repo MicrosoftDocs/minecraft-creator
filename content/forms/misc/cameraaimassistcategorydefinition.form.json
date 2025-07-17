@@ -9,55 +9,16 @@
         "id": "name",
         "title": "Name",
         "description": "Name of the Aim-Assist Category used during lookup.",
-        "dataType": 2
+        "dataType": 2,
+        "isRequired": true
       },
       {
         "id": "priorities",
         "title": "Priorities",
         "description": "The set of priorities used when determining aim-assist selection.",
         "dataType": 16,
-        "subForm": {
-          "id": "CameraAimAssistCategoryPriorities",
-          "title": "CameraAimAssistCategoryPriorities",
-          "fields": [
-            {
-              "id": "block_default",
-              "title": "Block Default",
-              "description": "Optional. Default Aim-Assist targeting priority used for Blocks not found in 'blocks'.",
-              "dataType": 0,
-              "validity": [
-                {
-                  "comparison": "<=",
-                  "value": 100
-                }
-              ]
-            },
-            {
-              "id": "blocks",
-              "title": "Blocks",
-              "description": "Optional. Map of Block identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
-              "dataType": 31
-            },
-            {
-              "id": "entities",
-              "title": "Entities",
-              "description": "Optional. Map of Entity identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
-              "dataType": 31
-            },
-            {
-              "id": "entity_default",
-              "title": "Entity Default",
-              "description": "Optional. Default Aim-Assist targeting priority used for Entities not found in 'entities'.",
-              "dataType": 0,
-              "validity": [
-                {
-                  "comparison": "<=",
-                  "value": 100
-                }
-              ]
-            }
-          ]
-        }
+        "subFormId": "misc/cameraaimassistcategorypriorities",
+        "isRequired": true
       }
     ]
   }

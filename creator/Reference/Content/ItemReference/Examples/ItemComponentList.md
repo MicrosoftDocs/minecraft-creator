@@ -1,50 +1,65 @@
 ---
-author: JimSeaman42
+author: mammerla
 ms.author: mikeam
-title: Item Documentation - Item Component List
-description: The list of all components available for Item Components.
+title: "Item Components Documentation - Item Components"
+description: "A reference document describing all current Item Components"
 ms.service: minecraft-bedrock-edition
+ms.date: 02/11/2025 
 ---
 
-# Item Documentation - Item Components
+# Item Components Documentation
 
-Below is a list of all the available Item Components within Minecraft: Bedrock Edition for use with Item JSON files.
+| Item Components | Description |
+|:-----|:----------|
+| [minecraft:allow_off_hand](Item Component/minecraft_allow_off_hand.md)| The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory. |
+| [minecraft:block_placer](Item Component/minecraft_block_placer.md)| Sets the item as a planter item component for blocks. |
+| [minecraft:bundle_interaction](Item Component/minecraft_bundle_interaction.md)| Enables the bundle-specific interaction scheme and tooltip for an item. |
+| [minecraft:can_destroy_in_creative](Item Component/minecraft_can_destroy_in_creative.md)| The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode. |
+| [minecraft:compostable](Item Component/minecraft_compostable.md)| Specifies that an item is compostable and provides the chance of creating a composting layer in the composter |
+| [minecraft:cooldown](Item Component/minecraft_cooldown.md)| The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again. |
+| [minecraft:custom_components](Item Component/minecraft_custom_components.md)| Specifies an array of custom components defined in a script that should be added to this item. |
+| [minecraft:damage](Item Component/minecraft_damage.md)| The damage component determines how much extra damage the item does on attack. |
+| [minecraft:damage_absorption](Item Component/minecraft_damage_absorption.md)| It allows an item to absorb damage that would otherwise be dealt to its wearer. |
+| [minecraft:digger](Item Component/minecraft_digger.md)| Allows a creator to determine how quickly an item can dig specific blocks. |
+| [minecraft:display_name](Item Component/minecraft_display_name.md)| Sets the item display name within Minecraft: Bedrock Edition. |
+| [minecraft:durability](Item Component/minecraft_durability.md)| Sets how much damage the item can take before breaking, and allows the item to be combined at an anvil, grindstone, or crafting table. |
+| [minecraft:durability_sensor](Item Component/minecraft_durability_sensor.md)| Enables an item to emit effects when it receives damage. |
+| [minecraft:durability_sensor durability_threshold](Item Component/minecraft_durability_sensor_durability_threshold.md)| Defines both the durability threshold, and the effects emitted when that threshold is met. |
+| [minecraft:dyeable](Item Component/minecraft_dyeable.md)| enables custom items to be dyed in cauldrons. |
+| [minecraft:enchantable](Item Component/minecraft_enchantable.md)| Determines what enchantments can be applied to the item. |
+| [minecraft:entity_placer](Item Component/minecraft_entity_placer.md)| Allows an item to place entities into the world. |
+| [minecraft:food](Item Component/minecraft_food.md)| Sets the item as a food component, allowing it to be edible to the player. |
+| [minecraft:fuel](Item Component/minecraft_fuel.md)| Allows this item to be used as fuel in a furnace to 'cook' other items. |
+| [minecraft:glint](Item Component/minecraft_glint.md)| Determines whether the item has the enchanted glint render effect on it. |
+| [minecraft:hand_equipped](Item Component/minecraft_hand_equipped.md)| The hand_equipped component determines if an item is rendered like a tool while it is in a player's hand. |
+| [minecraft:hover_text_color](Item Component/minecraft_hover_text_color.md)| Determines the color of the item name when hovering over it. |
+| [minecraft:icon](Item Component/minecraft_icon.md)| Determines the icon to represent the item in the UI and elsewhere. |
+| [minecraft:interact_button](Item Component/minecraft_interact_button.md)| A boolean or string that determines if the interact button is shown in touch controls, and what text is displayed on the button. |
+| [Minecraft Item Item](Item Component/minecraft_item.md)| Item definition includes the "description" and "components" sections. |
+| [minecraft:liquid_clipped](Item Component/minecraft_liquid_clipped.md)| The liquid_clipped component determines whether the item interacts with liquid blocks on use. |
+| [minecraft:max_stack_size](Item Component/minecraft_max_stack_size.md)| Determines how many of an item can be stacked together. |
+| [minecraft:projectile](Item Component/minecraft_projectile.md)| Compels the item to shoot, similarly to an arrow. |
+| [minecraft:rarity](Item Component/minecraft_rarity.md)| Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item. |
+| [minecraft:record](Item Component/minecraft_record.md)| Used by record items to play music. |
+| [minecraft:repairable](Item Component/minecraft_repairable.md)| Defines the items that can be used to repair a defined item, and the amount of durability each item restores upon repair. |
+| [minecraft:shooter](Item Component/minecraft_shooter.md)| Compels an item to shoot projectiles, similarly to a bow or crossbow. |
+| [minecraft:should_despawn](Item Component/minecraft_should_despawn.md)| Should_despawn component determines if the item should eventually despawn while floating in the world |
+| [minecraft:stacked_by_data](Item Component/minecraft_stacked_by_data.md)| The stacked_by_data component determines whether the same items with different aux values can stack. |
+| [minecraft:storage_item](Item Component/minecraft_storage_item.md)| Enables an item to store data of the dynamic container associated with it. |
+| [minecraft:storage_weight_limit](Item Component/minecraft_storage_weight_limit.md)| Specifies the maximum weight limit that a storage item can hold |
+| [minecraft:storage_weight_modifier](Item Component/minecraft_storage_weight_modifier.md)| Specifies the maximum weight limit that a storage item can hold |
+| [minecraft:tags](Item Component/minecraft_tags.md)| Determines which tags are included on a given item |
+| [minecraft:throwable](Item Component/minecraft_throwable.md)| Sets the throwable item component. |
+| [minecraft:use_animation](Item Component/minecraft_use_animation.md)| Use_animation specifies which animation is played when the player uses the item. |
+| [minecraft:use_modifiers](Item Component/minecraft_use_modifiers.md)| Determines how long an item takes to use in combination with components such as Shooter, Throwable, or Food. |
+| [minecraft:wearable](Item Component/minecraft_wearable.md)| Sets the wearable item component. |
 
-|Name |Default Value  |Type  |Description  |
-|:----------|:----------|:----------|:----------|
-|[description](ItemComponents/description_component.md)| *not set* | JSON Object| A list of characters representing an item. The description MUST contain an identifier; other fields are optional.|
-|[minecraft:allow_off_hand](ItemComponents/minecraft_allow_off_hand.md)| *not set* |  JSON Object| Determine whether an item can be placed in the off-hand slot of the inventory.|
-|[minecraft:block_placer](ItemComponents/minecraft_block_placer.md)| *not set* | JSON Object|  Block Placer item component. Items with this component will place a block when used.|
-|[minecraft:bundle_interaction](ItemComponents/minecraft_bundle_interaction.md)| *not set* | JSON Object| Enables the bundle-specific interaction scheme and tooltip for an item.|
-|[minecraft:can_destroy_in_creative](ItemComponents/minecraft_can_destroy_in_creative.md)| *not set* | JSON Object| Determines if the item will break blocks in Creative Mode while swinging.|
-|[minecraft:compostable](ItemComponents/minecraft_compostable.md)| *not set* | JSON Object| Specifies that an item is compostable and provides the chance of creating a composting layer in the composter.|
-|[minecraft:cooldown](ItemComponents/minecraft_cooldown.md)| *not set* | JSON Object| Cool down time for a component. After use, all items in a specified 'cool down category' become unusable for a determined amount of time defined in the component.|
-|[minecraft:damage](ItemComponents/minecraft_damage.md)| *not set* | JSON Object| Determines how much extra damage the item does on attack.|
-|[minecraft:display_name](ItemComponents/minecraft_display_name.md)| *not set* | JSON Object| Defines the text shown when an item name is shown, such as hover text.|
-|[minecraft:durability](ItemComponents/minecraft_durability.md)| *not set* |JSON Object| Determines how much damage the item can take before breaking, and allows the item to be combined in crafting.|
-|[minecraft:enchantable](ItemComponents/minecraft_enchantable.md)| *not set* |JSON Object| Determines what enchantments can be applied to the item. Not all enchantments will have an effect on all item components.|
-|[minecraft:entity_placer](ItemComponents/minecraft_entity_placer.md)| *not set* | JSON Object|  Allows the item to place specified entities into the world.|
-|[minecraft:food](ItemComponents/minecraft_food.md)| *not set* | JSON Object|  When an item has a food component, it becomes edible to the player. Must have the `minecraft:use_modifiers` component in order to function properly.|
-|[minecraft:fuel](ItemComponents/minecraft_fuel.md)| *not set* |  JSON Object| Allows the item to be used as fuel in a furnace to 'cook' other items.|
-|[minecraft:glint](ItemComponents/minecraft_glint.md)| *not set* | JSON Object| Determines whether the item has the enchanted glint render effect on it.|
-|[minecraft:hand_equipped](ItemComponents/minecraft_hand_equipped.md)| *not set* | JSON Object| Determines if an item is rendered like a tool while in hand.|
-|[minecraft:hover_text_color](ItemComponents/minecraft_hover_text_color.md)| *not set* |  JSON Object| Determines the color of the item name when hovering over it.|
-|[minecraft:icon](ItemComponents/minecraft_icon.md)| *not set* | JSON Object| Determines the icon to represent the item in the UI and elsewhere.|
-|[minecraft:interact_button](ItemComponents/minecraft_interact_button.md)| *not set* | JSON Object| This component is a Boolean or string that determines if the interact button is shown in touch controls and what text is displayed on the button. When set to 'true', default 'Use Item' text will be used.|
-|[minecraft:item](ItemComponents/minecraft_item.md)| *not set* | JSON Object| A definition of the item, including the 'description' and 'components' sections of the item file.|
-|[minecraft:liquid_clipped](ItemComponents/minecraft_liquid_clipped.md)| *not set* | JSON Object| Determines whether an item interacts with liquid blocks on use.|
-|[minecraft:max_stack_size](ItemComponents/minecraft_max_stack_size.md)| *not set* | JSON Object| Determines how many of the item can be stacked.|
-|[minecraft:projectile](ItemComponents/minecraft_projectile.md)| *not set* | JSON Object| Projectile item component. Projectile items shoot out, like an arrow.|
-|[minecraft:rarity](ItemComponents/minecraft_rarity.md)|*not set* | String|  The rarity item component allows the specifying of the base rarity of an item. |
-|[minecraft:record](ItemComponents/minecraft_record.md)| *not set* | JSON Object|  The record item component allows the item to play a sound when used in a jukebox. |
-|[minecraft:repairable](ItemComponents/minecraft_repairable.md)| *not set* | JSON Object|  Repairable item component: Determines which items can be used to repair a defined item, as well as the amount of durability specified items will repair.|
-|[minecraft:shooter](ItemComponents/minecraft_shooter.md)| *not set* | JSON Object|  Shooter Item Component. Must have the `minecraft:use_modifiers` component in order to function properly.|
-|[minecraft:should_despawn](ItemComponents/minecraft_should_despawn.md)| *not set* | JSON Object| Determines whether an item should eventually despawn while floating in the world.|
-|[minecraft:stacked_by_data](ItemComponents/minecraft_stacked_by_data.md)| *not set* | JSON Object| Determines if the same item with different aux values can stack. Additionally, defines whether the item actors can merge while floating in the world.|
-|[minecraft:storage_item](ItemComponents/minecraft_storage_item.md)| *not set* | JSON Object| Enables an item to store data of the dynamic container associated with it. A dynamic container is a container for storing items that is linked to an item instead of a block or an entity.|
-|[minecraft:tags](ItemComponents/minecraft_tags.md)| *not set* | JSON Object|  The `tags` component determines which tags are attached to an item.|
-|[minecraft:throwable](ItemComponents/minecraft_throwable.md)| *not set* | JSON Object|  Throwable item component. Throwable items, such as a snowball.|
-|[minecraft:use_animation](ItemComponents/minecraft_use_animation.md)| *not set* | JSON Object| Determines which animation plays when using an item.|
-|[minecraft:use_modifiers](ItemComponents/minecraft_use_modifiers.md)| *not set* | JSON Object| Modifies use effects, including how long an item takes to use and the player's speed when used in combination with components like Shooter, Throwable or Food.|
-|[minecraft:wearable](ItemComponents/minecraft_wearable.md)| *not set* | JSON Object| Determines where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.|
+## Internal/Deprecated Components
+These components are either deprecated or internal to Minecraft and not usable in custom content.
 
+| Item Components | Description |
+|:-----|:----------|
+| [chargeable](Item Component/minecraft_chargeable.md)| Event trigger for when the item has completed its use duration. |
+| [render_offsets](Item Component/minecraft_render_offsets.md)| Render offsets component: optional values can be given to offset the way the item is rendered. |
+| [use_duration](Item Component/minecraft_use_duration.md)| This component determines how long the item takes to use when used in combination with components like "shooter", "throwable", or "food". |
+| [weapon](Item Component/minecraft_weapon.md)| Weapon Item Component. |

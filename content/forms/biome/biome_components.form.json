@@ -1,0 +1,101 @@
+{
+  "id": "Biome Components",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Biome Components",
+    "title": "Biome Components Biome",
+    "description": "Any components that this Biome uses",
+    "fields": [
+      {
+        "id": "minecraft:climate",
+        "title": "Minecraft Climate",
+        "description": "Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_climate"
+      },
+      {
+        "id": "minecraft:creature_spawn_probability",
+        "title": "Minecraft Creature Spawn Probability",
+        "description": "Probability that creatures will spawn within the biome when a chunk is generated.",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_creature_spawn_probability"
+      },
+      {
+        "id": "minecraft:humidity",
+        "title": "Minecraft Humidity",
+        "description": "Forces a biome to ether always be humid or never humid. Humidity effects the spread chance, and spread rate of fire in the biome",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_humidity"
+      },
+      {
+        "id": "minecraft:map_tints",
+        "title": "Minecraft Map Tints",
+        "description": "Sets the color grass and foliage will be tinted by in this biome on the map.",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_map_tints"
+      },
+      {
+        "id": "minecraft:mountain_parameters",
+        "title": "Minecraft Mountain Parameters",
+        "description": "Noise parameters used to drive mountain terrain generation in Overworld.",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_mountain_parameters"
+      },
+      {
+        "id": "minecraft:multinoise_generation_rules",
+        "title": "Minecraft Multinoise Generation Rules",
+        "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_multinoise_generation_rules"
+      },
+      {
+        "id": "minecraft:overworld_generation_rules",
+        "title": "Minecraft Overworld Generation Rules",
+        "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_overworld_generation_rules"
+      },
+      {
+        "id": "minecraft:overworld_height",
+        "title": "Minecraft Overworld Height",
+        "description": "Noise parameters used to drive terrain height in the Overworld.",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_overworld_height"
+      },
+      {
+        "id": "minecraft:partially_frozen",
+        "title": "Minecraft Partially Frozen",
+        "description": "Component will impact the temperature in a frozen biome, causing some areas to not be frozen. Ex: patchy ice, patchy snow",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:replace_biomes",
+        "title": "Minecraft Replace Biomes",
+        "description": "Replaces a specified portion of one or more Minecraft biomes.",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_replace_biomes"
+      },
+      {
+        "id": "minecraft:surface_builder",
+        "title": "Minecraft Surface Builder",
+        "description": "Controls the materials used for terrain generation.",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_surface_builder"
+      },
+      {
+        "id": "minecraft:surface_material_adjustments",
+        "title": "Minecraft Surface Material Adjustments",
+        "description": "Specify fine-detail changes to blocks used in terrain generation (based on a noise function).",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_surface_material_adjustments"
+      },
+      {
+        "id": "minecraft:tags",
+        "title": "Minecraft Tags",
+        "description": "\nAttach arbitrary string tags to this biome.\nMost biome tags are referenced by JSON settings, but some meanings of tags are directly implemented in the game's code. These tags are listed here:\nbirch: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged \"hills\".\ncold: Villagers will be dressed for snowy weather.\ndeep: Pre-Caves and Cliffs, prevents an ocean from having islands or connected rivers and makes the biome less likely to have hills.\ndesert: Allows partially-buried ruined portals to be placed in the biome. Sand blocks will play ambient sounds when the player is nearby.\nextreme_hills: Ruined portals can be placed higher than normal. Biomes tagged \"forest\" or \"forest_generation\" will use normal Overworld flowers instead of forest flowers.\nflower_forest: Biome uses forest flowers (mutually exclusive with other flower biome tags).\nforest: Biome uses forest flowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged tagged \"taiga\" or \"extreme_hills\".\nforest_generation: Equivalent to \"forest\".\nfrozen: Villagers will be dressed for snowy weather. Prevents the biome from containing lava springs if it is also tagged \"ocean\".\nice: Around ruined portals, lava is always replaced by Netherrack and Netherrack cannot be replaced by magma.\nice_plains: Prevents the biome from containing lava springs if it is also tagged \"mutated\".\njungle: Ruined portals will be very mossy.\nhills: Biomes tagged \"meadow\" or \"birch\" will use normal Overworld flowers instead of wildflowers.\nmeadow: Biome uses wildflowers (mutually exclusive with other flower biome tags). Does nothing if biome is tagged \"hills\".\nmesa: Sand blocks will play ambient sounds when the player is nearby.\nmountain: Ruined portals can be placed higher than normal.\nmutated: Pre-Caves and Cliffs, prevents switching to the specified \"mutate_transformation\" as the biome is already considered mutated. Prevents the biome from containing lava springs if it is also tagged \"ice_plains\".\nno_legacy_worldgen: Prevents biome from using legacy world generation behavior unless the biome is being placed in the Overworld.\nocean: Prevents the biome from containing lava springs if it is also tagged \"frozen\". Allows ruined portals to be found underwater. Pre-Caves and Cliffs, determines if shorelines and rivers should be placed at the edges of the biome and identifies the biome as a shallow ocean for placing islands, unless the \"deep\" tag is present.\npale_garden: Biome uses closed-eye blossoms (mutually exclusive with other flower biome tags).\nplains: Biome uses plains flowers (mutually exclusive with other flower biome tags).\nrare: Pre-Caves and Cliffs, this tag flags the biome as a special biome. Oceans cannot be special.\nswamp: Allows ruined portals to be found underwater. Biome uses swamp flowers (mutually exclusive with other flower biome tags).\ntaiga: Biomes tagged \"forest\" or \"forest_generation\" will use normal Overworld flowers instead of forest flowers.\n",
+        "dataType": 16,
+        "subFormId": "biome/minecraft_tags"
+      }
+    ]
+  }
+}

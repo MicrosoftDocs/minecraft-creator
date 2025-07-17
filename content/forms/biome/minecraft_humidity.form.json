@@ -9,7 +9,8 @@
       {
         "id": "is_humid",
         "title": "Is Humid",
-        "dataType": 1
+        "dataType": 1,
+        "isRequired": true
       }
     ]
   }
