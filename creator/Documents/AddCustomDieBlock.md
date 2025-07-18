@@ -114,7 +114,7 @@ Now, let's create the custom block behavior JSON file in the Behavior Pack.
 
 4. Open **die.json** in a text editor.
 
-### Create the behavior custom block json file
+### Create the behavior custom block JSON file
 
 In the file, you will need to define what the block is, similar to the **manifest.json** file.
 
@@ -191,7 +191,7 @@ We will begin by creating a Resource Pack for the custom block:
 
 ### Set the block name with .lang
 
-Let's add the name of the block using a `.lang` file&mdash;a file that's used to organize all the custom text in an add-on and to localize creator content.
+Let's add the name of the block using a **.lang** file&mdash;a file that's used to organize all the custom text in an add-on and to localize creator content.
 
 1. Inside the **custom_block_resource_pack** folder, create a folder and name it **texts**.
 
@@ -201,7 +201,7 @@ Let's add the name of the block using a `.lang` file&mdash;a file that's used to
 
 4. Copy and paste the following into **en_US.lang**: `tile.demo:die.name=Die`
 
-5. Save and close the `.lang` file.
+5. Save and close the **.lang** file.
 
 This piece of code sets the name of the block to `Die` in the game.
 
