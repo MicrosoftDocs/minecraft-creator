@@ -165,7 +165,7 @@ We will begin by creating a Resource Pack for the custom block:
 
 5. Open the **manifest.json** file in a text editor.
 
-6. Copy the code below into the **manifest.json** file. See the [Introduction to Behavior Packs Tutorial](../BehaviorPack.md) to learn how to use UUIDs to create the dependency of this Behavior Pack on the Resource Pack, and get any new UUIDs from UUIDgenerator.net.
+6. Copy the code below into the **manifest.json** file. See the [Introduction to Behavior Packs Tutorial](./BehaviorPack.md) to learn how to use UUIDs to create the dependency of this Behavior Pack on the Resource Pack, and get any new UUIDs from UUIDgenerator.net.
 
 ```json
 { 
@@ -324,14 +324,14 @@ Because this is a hard block, we're setting the sound to `stone` so that this bl
 
 From Minecraft: Bedrock Edition v1.21.80 and onward, all custom blocks need their geometry explicitly defined to prevent your Resource Pack from conflicting with vanilla block values. Two basic geometries are available out of the box, but you can always create your own custom geometries with the [Blockbench Entity Wizard](./MinecraftEntityWizard.md) if those don't work for you. For this tutorial, we'll be using `minecraft:geometry.full_block`&mdash;the out of the box geometry for a basic cube.
 
-We'll be using a `material_instances` component to specify the die textures individually by face with the friendly texture names we assigned in **terrain_textures.json**. Consult our [Reference Documentation](./creator/Reference/Content/blockreference/Examples/BlockComponents/minecraftBlock_material_instances.md) for more information on the `material_instances` component. 
+We'll be using a `material_instances` component to specify the die textures individually by face with the friendly texture names we assigned in **terrain_textures.json**. Consult our [Reference Documentation](./minecraftBlock_material_instances.md) for more information on the `material_instances` component. 
 
 Textures can be specified as a string, or as an object with the textures broken down into sub-textures. We'll define sub-textures here as `up`, `down`, and the four cardinal directions to give each face a specific texture.
 
 > [!Note]
 > Real-life dice are designed so that the two opposite sides of the die add up to 7.
 
-The `item_visual` component lets you specify the texture(s) to use when the die block is in your hand, hotbar, and inventory. We're giving that the `die_red` texture here as a string, but this could also be given an object to specify a texture for each face, too. Check out our [Block Components Reference Documentation](./creator/Reference/Content/blockreference/Examples/BlockComponents/minecraftBlock_item_visual.md) for a complete list of Item Visual properties.
+The `item_visual` component lets you specify the texture(s) to use when the die block is in your hand, hotbar, and inventory. We're giving that the `die_red` texture here as a string, but this could also be given an object to specify a texture for each face, too. Check out our [Block Components Reference Documentation](./minecraftBlock_item_visual.md) for a complete list of Item Visual properties.
 
 1. From the File Explorer, navigate to the **custom_block_resource_pack** folder you created in the last step.
 
