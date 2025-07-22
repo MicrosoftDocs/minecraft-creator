@@ -84,7 +84,7 @@ We'll begin by creating a Bhavior Pack for the custom block:
   "name": "Demo Behavior Pack", 
   "uuid": "<UUID>", 
   "version": [ 1, 0, 0 ], 
-  "min_engine_version": [ 1, 19, 20 ] 
+  "min_engine_version": [1, 21, 80] 
  }, 
  "modules": [ 
   { 
@@ -175,7 +175,7 @@ We will begin by creating a Resource Pack for the custom block:
   "name": "Demo Resource Pack", 
   "uuid": "<UUID>", 
   "version": [ 1, 0, 0 ], 
-  "min_engine_version": [ 1, 19, 20 ] 
+  "min_engine_version": [1, 21, 80] 
  }, 
  "modules": [ 
   { 
@@ -333,15 +333,13 @@ Textures can be specified as a string, or as an object with the textures broken 
 
 The `item_visual` component lets you specify the texture(s) to use when the die block is in your hand, hotbar, and inventory. We're giving that the `die_red` texture here as a string, but this could also be given an object to specify a texture for each face, too. Check out our [Block Components Reference Documentation](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_item_visual.md) for a complete list of Item Visual properties.
 
-1. From the File Explorer, navigate to the **custom_block_resource_pack** folder you created in the last step.
+1. From the File Explorer, navigate to the **custom_block_behavior_pack** folder you created earlier.
 
-2. Create a new folder inside **custom_block_resource_pack** and name it **models**.
+2. Open the **blocks** folder you created there.
 
-3. Open **models** and create a folder inside it named **blocks**.
+3. Open **die.json** in a text editor.
 
-4. Open **blocks** and create a text file inside it named **die.json**.
-
-5. Copy and paste the content below into the die.json file.
+4. Replace the content you added earlier with the content below.
 
 ```json
 { 
