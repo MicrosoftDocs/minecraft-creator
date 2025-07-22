@@ -1,0 +1,68 @@
+{
+  "id": "minecraft:dash_action",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "minecraft:dash_action",
+    "title": "Dash Action",
+    "description": "Ability for a rideable entity to dash.",
+    "fields": [
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "The dash cooldown in seconds. Default value is 1.000000.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:dash_action/",
+              "content": 2.75
+            }
+          ]
+        }
+      },
+      {
+        "id": "horizontal_momentum",
+        "title": "Horizontal Momentum",
+        "description": "Horizontal momentum of the dash.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:dash_action/",
+              "content": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "vertical_momentum",
+        "title": "Vertical Momentum",
+        "description": "Vertical momentum of the dash.",
+        "defaultValue": 1,
+        "dataType": 3,
+        "samples": {
+          "/vanilla/behavior_pack/entities/camel.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:dash_action/",
+              "content": 0.6
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/vanilla/behavior_pack/entities/camel.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:camel_saddled/minecraft:dash_action/",
+          "content": {
+            "cooldown_time": 2.75,
+            "horizontal_momentum": 20,
+            "vertical_momentum": 0.6
+          }
+        }
+      ]
+    }
+  }
+}

@@ -9,7 +9,7 @@
         "id": "structure",
         "title": "Structure",
         "description": "Identifier of the Jigsaw Structure.",
-        "dataType": 2,
+        "dataType": 16,
         "isRequired": true
       },
       {

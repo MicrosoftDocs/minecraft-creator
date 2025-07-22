@@ -56,6 +56,12 @@
               "content": 7
             }
           ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+              "content": 6
+            }
+          ],
           "/vanilla/behavior_pack/entities/cow.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
@@ -126,12 +132,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
               "content": 5
-            }
-          ],
-          "/samples/creator_camp/behavior_packs/creator_camp/entities/campghost.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
-              "content": 6
             }
           ]
         }
@@ -212,6 +212,14 @@
           "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
           "content": {
             "priority": 8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_look_around/",
+          "content": {
+            "priority": 6
           }
         }
       ],

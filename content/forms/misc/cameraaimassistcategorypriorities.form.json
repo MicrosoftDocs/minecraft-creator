@@ -21,13 +21,13 @@
         "id": "blocks",
         "title": "Blocks",
         "description": "Optional. Map of Block identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
-        "dataType": 31
+        "dataType": 14
       },
       {
         "id": "entities",
         "title": "Entities",
         "description": "Optional. Map of Entity identifiers to Aim-Assist targeting priority. Larger numbers have greater priority.",
-        "dataType": 31
+        "dataType": 14
       },
       {
         "id": "entity_default",

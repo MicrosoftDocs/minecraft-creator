@@ -16,7 +16,12 @@
         "id": "items",
         "title": "Items",
         "description": "The items to add to the group.",
-        "dataType": 2,
+        "dataType": 15,
+        "subForm": {
+          "id": "items",
+          "title": "Items",
+          "fields": []
+        },
         "alternates": [
           {
             "id": "items",
@@ -30,7 +35,7 @@
                   "id": "name",
                   "title": "Name",
                   "description": "The name of an item or block. A namespace for the item is required. You can optionally provide an aux value for items that use it at the end. Example: namespace:my_item:1",
-                  "dataType": 2,
+                  "dataType": 16,
                   "validity": [
                     {
                       "comparison": "pattern",

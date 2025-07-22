@@ -9,7 +9,7 @@
         "id": "name",
         "title": "Name",
         "description": "Name of the Aim-Assist Category used during lookup.",
-        "dataType": 2,
+        "dataType": 16,
         "isRequired": true
       },
       {

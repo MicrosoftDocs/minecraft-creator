@@ -17,4 +17,3 @@ Set the grass color or color map used during rendering. Biomes without this comp
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | color | *not set* | Object | RGB color of grass. |  | 
-| grass_is_shaded | *not set* | Boolean true/false | Adds a shading effect to the grass as if there was a roof. |  | 

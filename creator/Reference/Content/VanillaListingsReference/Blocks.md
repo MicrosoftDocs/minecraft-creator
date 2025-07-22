@@ -30,6 +30,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:acacia_planks |  |
 | minecraft:acacia_pressure_plate | redstone_signal |
 | minecraft:acacia_sapling | age_bit |
+| minecraft:acacia_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:acacia_slab | minecraft:vertical_half |
 | minecraft:acacia_stairs | upside_down_bit, weirdo_direction |
 | minecraft:acacia_standing_sign | ground_sign_direction |
@@ -68,6 +69,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:bamboo_planks |  |
 | minecraft:bamboo_pressure_plate | redstone_signal |
 | minecraft:bamboo_sapling | age_bit |
+| minecraft:bamboo_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:bamboo_slab | minecraft:vertical_half |
 | minecraft:bamboo_stairs | upside_down_bit, weirdo_direction |
 | minecraft:bamboo_standing_sign | ground_sign_direction |
@@ -95,6 +97,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:birch_planks |  |
 | minecraft:birch_pressure_plate | redstone_signal |
 | minecraft:birch_sapling | age_bit |
+| minecraft:birch_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:birch_slab | minecraft:vertical_half |
 | minecraft:birch_stairs | upside_down_bit, weirdo_direction |
 | minecraft:birch_standing_sign | ground_sign_direction |
@@ -194,6 +197,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cherry_planks |  |
 | minecraft:cherry_pressure_plate | redstone_signal |
 | minecraft:cherry_sapling | age_bit |
+| minecraft:cherry_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:cherry_slab | minecraft:vertical_half |
 | minecraft:cherry_stairs | upside_down_bit, weirdo_direction |
 | minecraft:cherry_standing_sign | ground_sign_direction |
@@ -214,13 +218,13 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chiseled_stone_bricks |  |
 | minecraft:chiseled_tuff |  |
 | minecraft:chiseled_tuff_bricks |  |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:chorus_flower | age |
 | minecraft:chorus_plant |  |
 | minecraft:clay |  |
 | minecraft:closed_eyeblossom |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:coal_block |  |
 | minecraft:coal_ore |  |
 | minecraft:coarse_dirt |  |
@@ -246,6 +250,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:copper_bulb | lit, powered_bit |
 | minecraft:copper_chest | minecraft:cardinal_direction |
 | minecraft:copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
+| minecraft:copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:copper_grate |  |
 | minecraft:copper_ore |  |
 | minecraft:copper_trapdoor | direction, open_bit, upside_down_bit |
@@ -271,6 +276,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:crimson_planks |  |
 | minecraft:crimson_pressure_plate | redstone_signal |
 | minecraft:crimson_roots |  |
+| minecraft:crimson_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:crimson_slab | minecraft:vertical_half |
 | minecraft:crimson_stairs | upside_down_bit, weirdo_direction |
 | minecraft:crimson_standing_sign | ground_sign_direction |
@@ -311,6 +317,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:dark_oak_planks |  |
 | minecraft:dark_oak_pressure_plate | redstone_signal |
 | minecraft:dark_oak_sapling | age_bit |
+| minecraft:dark_oak_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:dark_oak_slab | minecraft:vertical_half |
 | minecraft:dark_oak_stairs | upside_down_bit, weirdo_direction |
 | minecraft:dark_oak_trapdoor | direction, open_bit, upside_down_bit |
@@ -414,6 +421,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:element_17 |  |
 | minecraft:element_18 |  |
 | minecraft:element_19 |  |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:element_2 |  |
 | minecraft:element_20 |  |
 | minecraft:element_21 |  |
@@ -421,9 +431,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:element_23 |  |
 | minecraft:element_24 |  |
 | minecraft:element_25 |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:element_26 |  |
 | minecraft:element_27 |  |
 | minecraft:element_28 |  |
@@ -524,6 +531,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:exposed_copper_bulb | lit, powered_bit |
 | minecraft:exposed_copper_chest | minecraft:cardinal_direction |
 | minecraft:exposed_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
+| minecraft:exposed_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:exposed_copper_grate |  |
 | minecraft:exposed_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:exposed_cut_copper |  |
@@ -616,6 +624,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:hard_pink_stained_glass |  |
 | minecraft:hard_pink_stained_glass_pane |  |
 | minecraft:hard_purple_stained_glass |  |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:hard_purple_stained_glass_pane |  |
 | minecraft:hard_red_stained_glass |  |
 | minecraft:hard_red_stained_glass_pane |  |
@@ -624,9 +635,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:hard_yellow_stained_glass |  |
 | minecraft:hard_yellow_stained_glass_pane |  |
 | minecraft:hardened_clay |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:hay_block | deprecated, pillar_axis |
 | minecraft:heavy_core |  |
 | minecraft:heavy_weighted_pressure_plate | redstone_signal |
@@ -663,6 +671,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:jungle_planks |  |
 | minecraft:jungle_pressure_plate | redstone_signal |
 | minecraft:jungle_sapling | age_bit |
+| minecraft:jungle_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:jungle_slab | minecraft:vertical_half |
 | minecraft:jungle_stairs | upside_down_bit, weirdo_direction |
 | minecraft:jungle_standing_sign | ground_sign_direction |
@@ -766,6 +775,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:mangrove_pressure_plate | redstone_signal |
 | minecraft:mangrove_propagule | hanging, propagule_stage |
 | minecraft:mangrove_roots |  |
+| minecraft:mangrove_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:mangrove_slab | minecraft:vertical_half |
 | minecraft:mangrove_stairs | upside_down_bit, weirdo_direction |
 | minecraft:mangrove_standing_sign | ground_sign_direction |
@@ -817,19 +827,20 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:oak_double_slab | minecraft:vertical_half |
 | minecraft:oak_fence |  |
 | minecraft:oak_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:oak_leaves | persistent_bit, update_bit |
 | minecraft:oak_log | pillar_axis |
 | minecraft:oak_planks |  |
 | minecraft:oak_sapling | age_bit |
+| minecraft:oak_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:oak_slab | minecraft:vertical_half |
 | minecraft:oak_stairs | upside_down_bit, weirdo_direction |
 | minecraft:oak_wood | pillar_axis |
 | minecraft:observer | minecraft:facing_direction, powered_bit |
 | minecraft:obsidian |  |
 | minecraft:ochre_froglight | pillar_axis |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:open_eyeblossom |  |
 | minecraft:orange_candle | candles, lit |
 | minecraft:orange_candle_cake | lit |
@@ -849,6 +860,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:oxidized_copper_bulb | lit, powered_bit |
 | minecraft:oxidized_copper_chest | minecraft:cardinal_direction |
 | minecraft:oxidized_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
+| minecraft:oxidized_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:oxidized_copper_grate |  |
 | minecraft:oxidized_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:oxidized_cut_copper |  |
@@ -871,6 +883,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:pale_oak_planks |  |
 | minecraft:pale_oak_pressure_plate | redstone_signal |
 | minecraft:pale_oak_sapling | age_bit |
+| minecraft:pale_oak_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:pale_oak_slab | minecraft:vertical_half |
 | minecraft:pale_oak_stairs | upside_down_bit, weirdo_direction |
 | minecraft:pale_oak_standing_sign | ground_sign_direction |
@@ -1017,6 +1030,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:resin_block |  |
 | minecraft:resin_brick_double_slab | minecraft:vertical_half |
 | minecraft:resin_brick_slab | minecraft:vertical_half |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:resin_brick_stairs | upside_down_bit, weirdo_direction |
 | minecraft:resin_brick_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
 | minecraft:resin_bricks |  |
@@ -1030,9 +1046,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:sandstone_stairs | upside_down_bit, weirdo_direction |
 | minecraft:sandstone_wall | wall_connection_type_east, wall_connection_type_north, wall_connection_type_south, wall_connection_type_west, wall_post_bit |
 | minecraft:scaffolding | stability, stability_check |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:sculk |  |
 | minecraft:sculk_catalyst | bloom |
 | minecraft:sculk_sensor | sculk_sensor_phase |
@@ -1089,6 +1102,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:spruce_planks |  |
 | minecraft:spruce_pressure_plate | redstone_signal |
 | minecraft:spruce_sapling | age_bit |
+| minecraft:spruce_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:spruce_slab | minecraft:vertical_half |
 | minecraft:spruce_stairs | upside_down_bit, weirdo_direction |
 | minecraft:spruce_standing_sign | ground_sign_direction |
@@ -1191,6 +1205,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:warped_planks |  |
 | minecraft:warped_pressure_plate | redstone_signal |
 | minecraft:warped_roots |  |
+| minecraft:warped_shelf | minecraft:cardinal_direction, powered_bit, powered_shelf_type |
 | minecraft:warped_slab | minecraft:vertical_half |
 | minecraft:warped_stairs | upside_down_bit, weirdo_direction |
 | minecraft:warped_standing_sign | ground_sign_direction |
@@ -1205,6 +1220,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_copper_bulb | lit, powered_bit |
 | minecraft:waxed_copper_chest | minecraft:cardinal_direction |
 | minecraft:waxed_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
+| minecraft:waxed_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:waxed_copper_grate |  |
 | minecraft:waxed_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:waxed_cut_copper |  |
@@ -1216,6 +1232,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_exposed_copper_bulb | lit, powered_bit |
 | minecraft:waxed_exposed_copper_chest | minecraft:cardinal_direction |
 | minecraft:waxed_exposed_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
+| minecraft:waxed_exposed_copper_golem_statue | minecraft:cardinal_direction |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:waxed_exposed_copper_grate |  |
 | minecraft:waxed_exposed_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:waxed_exposed_cut_copper |  |
@@ -1227,20 +1247,19 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_oxidized_copper_bulb | lit, powered_bit |
 | minecraft:waxed_oxidized_copper_chest | minecraft:cardinal_direction |
 | minecraft:waxed_oxidized_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
+| minecraft:waxed_oxidized_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:waxed_oxidized_copper_grate |  |
 | minecraft:waxed_oxidized_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:waxed_oxidized_cut_copper |  |
 | minecraft:waxed_oxidized_cut_copper_slab | minecraft:vertical_half |
 | minecraft:waxed_oxidized_cut_copper_stairs | upside_down_bit, weirdo_direction |
 | minecraft:waxed_oxidized_double_cut_copper_slab | minecraft:vertical_half |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:waxed_weathered_chiseled_copper |  |
 | minecraft:waxed_weathered_copper |  |
 | minecraft:waxed_weathered_copper_bulb | lit, powered_bit |
 | minecraft:waxed_weathered_copper_chest | minecraft:cardinal_direction |
 | minecraft:waxed_weathered_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
+| minecraft:waxed_weathered_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:waxed_weathered_copper_grate |  |
 | minecraft:waxed_weathered_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:waxed_weathered_cut_copper |  |
@@ -1252,6 +1271,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:weathered_copper_bulb | lit, powered_bit |
 | minecraft:weathered_copper_chest | minecraft:cardinal_direction |
 | minecraft:weathered_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
+| minecraft:weathered_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:weathered_copper_grate |  |
 | minecraft:weathered_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:weathered_cut_copper |  |

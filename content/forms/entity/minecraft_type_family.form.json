@@ -215,6 +215,15 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "copper_golem",
+                "mob"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/cow.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -1645,6 +1654,17 @@
             "family": [
               "minecart",
               "inanimate"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "copper_golem",
+              "mob"
             ]
           }
         }

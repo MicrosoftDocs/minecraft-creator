@@ -60,6 +60,12 @@
               "content": "loot_tables/entities/chicken.json"
             }
           ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:loot/",
+              "content": "loot_tables/entities/copper_golem.json"
+            }
+          ],
           "/vanilla/behavior_pack/entities/cow.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:loot/",
@@ -597,6 +603,14 @@
           "path": "/minecraft:entity/component_groups/minecraft:chicken_adult/minecraft:loot/",
           "content": {
             "table": "loot_tables/entities/chicken.json"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:loot/",
+          "content": {
+            "table": "loot_tables/entities/copper_golem.json"
           }
         }
       ],

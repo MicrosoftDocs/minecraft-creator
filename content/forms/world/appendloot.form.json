@@ -10,7 +10,7 @@
         "id": "loot_table",
         "title": "Loot Table",
         "description": "The loot table to append",
-        "dataType": 2,
+        "dataType": 16,
         "isRequired": true
       },
       {

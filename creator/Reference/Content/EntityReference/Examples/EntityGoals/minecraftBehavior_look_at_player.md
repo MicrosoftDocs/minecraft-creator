@@ -114,6 +114,17 @@ Compels an entity to look at the player by rotating the `head` bone pose within 
 }
 ```
 
+#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
+
+
+```json
+"minecraft:behavior.look_at_player": {
+  "priority": 5,
+  "look_distance": 6,
+  "probability": 0.02
+}
+```
+
 #### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
 
 
@@ -142,16 +153,5 @@ Compels an entity to look at the player by rotating the `head` bone pose within 
   "priority": 8,
   "look_distance": 6,
   "probability": 0.02
-}
-```
-
-#### [Elder Guardian](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/elder_guardian.json)
-
-
-```json
-"minecraft:behavior.look_at_player": {
-  "priority": 8,
-  "look_distance": 12,
-  "probability": 0.01
 }
 ```

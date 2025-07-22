@@ -93,7 +93,7 @@ At /minecraft:entity/component_groups/minecraft:rolled_up/minecraft:movement/:
 }
 ```
 
-#### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
+#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
 
 
 ```json

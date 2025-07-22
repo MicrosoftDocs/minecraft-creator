@@ -19,7 +19,7 @@ Allows a mob to randomly stroll around.
 | interval | 120 | Integer number | A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal | Axolotl: `100` | 
 | priority | *not set* | Integer number | As priority approaches 0, the priority is increased. The higher the priority, the sooner this behavior will be executed as a goal. | Armadillo: `6`, Axolotl: `9`, Blaze: `4` | 
 | speed_multiplier | 1 | Decimal number | Movement speed multiplier of the mob when using this AI Goal | Armadillo: `1`, Camel: `2`, Cat: `0.8` | 
-| xz_dist | 10 | Integer number | Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1 | Iron Golem: `16`, Rabbit: `2` | 
+| xz_dist | 10 | Integer number | Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1 | Copper Golem: `3`, Iron Golem: `16`, Rabbit: `2` | 
 | y_dist | 7 | Integer number | Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1 | Rabbit: `1` | 
 
 ## Samples
@@ -84,6 +84,16 @@ Allows a mob to randomly stroll around.
 }
 ```
 
+#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
+
+
+```json
+"minecraft:behavior.random_stroll": {
+  "priority": 4,
+  "xz_dist": 3
+}
+```
+
 #### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
 
 
@@ -131,15 +141,5 @@ Allows a mob to randomly stroll around.
 "minecraft:behavior.random_stroll": {
   "priority": 8,
   "speed_multiplier": 0.6
-}
-```
-
-#### [Fox](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/fox.json)
-
-
-```json
-"minecraft:behavior.random_stroll": {
-  "priority": 13,
-  "speed_multiplier": 0.8
 }
 ```

@@ -1,0 +1,21 @@
+{
+  "id": "Spawn Description",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Spawn Description",
+    "title": "Spawn Description Spawn",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "population_control",
+        "title": "Population Control",
+        "dataType": 2
+      }
+    ]
+  }
+}

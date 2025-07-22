@@ -106,6 +106,16 @@ Walking style of the mob.
 }
 ```
 
+#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
+
+
+```json
+"minecraft:navigation.walk": {
+  "avoid_water": true,
+  "avoid_damage_blocks": true
+}
+```
+
 #### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
 
 At /minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:navigation.walk/: 
@@ -156,15 +166,5 @@ At /minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecr
   "can_pass_doors": true,
   "can_open_doors": true,
   "avoid_water": true
-}
-```
-
-#### [Glow Squid](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/glow_squid.json)
-
-
-```json
-"minecraft:navigation.walk": {
-  "can_path_over_water": true,
-  "can_sink": false
 }
 ```

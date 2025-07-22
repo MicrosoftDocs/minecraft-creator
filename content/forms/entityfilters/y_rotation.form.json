@@ -1,0 +1,132 @@
+{
+  "id": "y_rotation",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "y_rotation",
+    "title": "y Rotation",
+    "description": "Returns the Y rotation of this entity.",
+    "fields": [
+      {
+        "id": "operator",
+        "title": "Operator",
+        "description": "(Optional) The comparison to apply with 'value'.",
+        "defaultValue": "equals",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "!=",
+            "title": "!=",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "<",
+            "title": "<",
+            "description": "Test for less-than the value."
+          },
+          {
+            "id": "<=",
+            "title": "<=",
+            "description": "Test for less-than or equal to the value."
+          },
+          {
+            "id": "<>",
+            "title": "<>",
+            "description": "Test for inequality."
+          },
+          {
+            "id": "=",
+            "title": "=",
+            "description": "Test for equality."
+          },
+          {
+            "id": "==",
+            "title": "==",
+            "description": "Test for equality."
+          },
+          {
+            "id": ">",
+            "title": ">",
+            "description": "Test for greater-than the value."
+          },
+          {
+            "id": ">=",
+            "title": ">=",
+            "description": "Test for greater-than or equal to the value."
+          },
+          {
+            "id": "equals",
+            "title": "Equals",
+            "description": "Test for equality."
+          },
+          {
+            "id": "not",
+            "title": "Not",
+            "description": "Test for inequality."
+          }
+        ]
+      },
+      {
+        "id": "subject",
+        "title": "Subject",
+        "description": "(Optional) The subject of this filter test.",
+        "defaultValue": "self",
+        "dataType": 2,
+        "choices": [
+          {
+            "id": "block",
+            "title": "Block",
+            "description": "The block involved with the interaction."
+          },
+          {
+            "id": "damager",
+            "title": "Damager",
+            "description": "The damaging actor involved with the interaction."
+          },
+          {
+            "id": "other",
+            "title": "Other",
+            "description": "The other member of an interaction, not the caller."
+          },
+          {
+            "id": "parent",
+            "title": "Parent",
+            "description": "The caller's current parent."
+          },
+          {
+            "id": "player",
+            "title": "Player",
+            "description": "The player involved with the interaction."
+          },
+          {
+            "id": "self",
+            "title": "Self",
+            "description": "The entity or object calling the test"
+          },
+          {
+            "id": "target",
+            "title": "Target",
+            "description": "The caller's current target."
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "(Required) A floating point value.",
+        "dataType": 3
+      }
+    ],
+    "samples": {
+      "samples": [
+        {
+          "path": "Full..",
+          "content": "{ \"test\": \"y_rotation\", \"subject\": \"self\", \"operator\": \"equals\", \"value\": \"0.00\" }"
+        },
+        {
+          "path": "Short (using Defaults)..",
+          "content": "{ \"test\": \"y_rotation\", \"value\": \"0.00\" }"
+        }
+      ]
+    }
+  }
+}

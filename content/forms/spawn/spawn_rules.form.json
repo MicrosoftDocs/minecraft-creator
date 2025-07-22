@@ -9,21 +9,14 @@
         "id": "conditions",
         "title": "Conditions",
         "dataType": 16,
-        "subFormId": "spawn/biomeconditions"
+        "subFormId": "spawn/spawn_biomeconditions"
       },
       {
         "id": "description",
         "title": "Description",
         "dataType": 16,
-        "subFormId": "spawn/description",
+        "subFormId": "spawn/spawn_description",
         "isRequired": true
-      },
-      {
-        "id": "placement",
-        "title": "Placement",
-        "description": "Placement rule defintions",
-        "dataType": 16,
-        "subFormId": "spawn/placement"
       }
     ]
   }

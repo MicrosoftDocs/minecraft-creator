@@ -132,6 +132,12 @@
               "content": 1.5
             }
           ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+              "content": 1.5
+            }
+          ],
           "/vanilla/behavior_pack/entities/donkey.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
@@ -185,12 +191,6 @@
               "path": "/minecraft:entity/components/minecraft:behavior.panic/",
               "content": 0.6
             }
-          ],
-          "/samples/casual_creator/chill_dreams/1_dream_turkey/behavior_packs/mamm_cds/entities/dream_turkey.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.panic/",
-              "content": 1.5
-            }
           ]
         }
       },
@@ -213,15 +213,15 @@
               "content": 1
             }
           ],
-          "/vanilla/behavior_pack/entities/fox.json": [
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:behavior.panic/",
+              "path": "/minecraft:entity/components/minecraft:behavior.panic/",
               "content": 2
             }
           ],
-          "/vanilla/behavior_pack/entities/happy_ghast.json": [
+          "/vanilla/behavior_pack/entities/fox.json": [
             {
-              "path": "/minecraft:entity/component_groups/minecraft:baby/minecraft:behavior.panic/",
+              "path": "/minecraft:entity/component_groups/minecraft:defending_fox/minecraft:behavior.panic/",
               "content": 2
             }
           ],
@@ -374,6 +374,15 @@
           "path": "/minecraft:entity/components/minecraft:behavior.panic/",
           "content": {
             "priority": 1,
+            "speed_multiplier": 1.5
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.panic/",
+          "content": {
+            "priority": 2,
             "speed_multiplier": 1.5
           }
         }

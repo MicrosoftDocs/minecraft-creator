@@ -393,6 +393,36 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/",
+          "content": {
+            "triggers": [
+              {
+                "on_damage": {
+                  "filters": {
+                    "all_of": [
+                      {
+                        "test": "is_family",
+                        "subject": "other",
+                        "value": "lightning"
+                      },
+                      {
+                        "test": "is_variant",
+                        "subject": "self",
+                        "operator": "==",
+                        "value": 0
+                      }
+                    ]
+                  },
+                  "event": "minecraft:remove_oxidation_layer"
+                },
+                "deals_damage": "no"
+              }
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/creaking.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:spawned_by_creaking_heart/minecraft:damage_sensor/",

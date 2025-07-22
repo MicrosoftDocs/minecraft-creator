@@ -1,0 +1,20 @@
+{
+  "id": "Spawn DifficultyFilter",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Spawn DifficultyFilter",
+    "title": "Spawn DifficultyFilter Spawn",
+    "fields": [
+      {
+        "id": "max",
+        "title": "SpawnDifficulty Legacy",
+        "dataType": 2
+      },
+      {
+        "id": "min",
+        "title": "SpawnDifficulty Legacy",
+        "dataType": 2
+      }
+    ]
+  }
+}

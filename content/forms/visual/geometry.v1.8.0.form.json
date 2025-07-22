@@ -251,6 +251,19 @@
                           "dataType": 17,
                           "id": "scale",
                           "title": "Scale",
+                          "isRequired": false,
+                          "alternates": [
+                            {
+                              "dataType": 17,
+                              "id": "scale",
+                              "isRequired": false
+                            }
+                          ]
+                        },
+                        {
+                          "dataType": 1,
+                          "id": "use_pixel_depth",
+                          "title": "Use Pixel Depth",
                           "isRequired": false
                         }
                       ]

@@ -77,6 +77,12 @@
         "title": "Sea Floor Depth",
         "description": "Controls how deep below the world water level the floor should occur",
         "dataType": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 127
+          }
+        ],
         "isRequired": true
       },
       {

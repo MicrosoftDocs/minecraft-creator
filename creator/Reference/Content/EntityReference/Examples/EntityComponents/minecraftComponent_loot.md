@@ -95,6 +95,15 @@ Sets the loot table for what items this entity drops upon death.
 }
 ```
 
+#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
+
+
+```json
+"minecraft:loot": {
+  "table": "loot_tables/entities/copper_golem.json"
+}
+```
+
 #### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
 
 
@@ -119,14 +128,5 @@ Sets the loot table for what items this entity drops upon death.
 ```json
 "minecraft:loot": {
   "table": "loot_tables/entities/dolphin.json"
-}
-```
-
-#### [Donkey](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/donkey.json)
-
-
-```json
-"minecraft:loot": {
-  "table": "loot_tables/entities/horse.json"
 }
 ```

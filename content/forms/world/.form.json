@@ -23,7 +23,7 @@
         "id": "fallback",
         "title": "Fallback",
         "description": "Fallback template pool to use if no element in the pool can be placed successfully.",
-        "dataType": 2
+        "dataType": 16
       }
     ]
   }

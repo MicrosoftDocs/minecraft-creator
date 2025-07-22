@@ -54,27 +54,9 @@
     "description": "Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.",
     "fields": [
       {
-        "id": "ash",
-        "title": "Ash",
-        "description": "Density of ash precipitation visuals",
-        "dataType": 3
-      },
-      {
-        "id": "blue_spores",
-        "title": "Blue Spores",
-        "description": "Density of blue spore precipitation visuals",
-        "dataType": 3
-      },
-      {
         "id": "downfall",
         "title": "Downfall",
         "description": "Amount that precipitation affects colors and block changes",
-        "dataType": 3
-      },
-      {
-        "id": "red_spores",
-        "title": "Red Spores",
-        "description": "Density of blue spore precipitation visuals",
         "dataType": 3
       },
       {
@@ -89,12 +71,6 @@
         "id": "temperature",
         "title": "Temperature",
         "description": "Temperature affects a variety of visual and behavioral things, including snow and ice placement, sponge drying, and sky color",
-        "dataType": 3
-      },
-      {
-        "id": "white_ash",
-        "title": "White Ash",
-        "description": "Density of white ash precipitation visuals",
         "dataType": 3
       }
     ]

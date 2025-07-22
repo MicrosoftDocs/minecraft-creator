@@ -84,6 +84,8 @@
   href: minecraftComponent_damage_sensor.md
 - name: minecraft:dash
   href: minecraftComponent_dash.md
+- name: minecraft:dash_action
+  href: minecraftComponent_dash_action.md
 - name: minecraft:default_look_angle
   href: minecraftComponent_default_look_angle.md
 - name: minecraft:despawn
@@ -124,6 +126,8 @@
   href: minecraftComponent_flying_speed.md
 - name: minecraft:follow_range
   href: minecraftComponent_follow_range.md
+- name: minecraft:free_camera_controlled
+  href: minecraftComponent_free_camera_controlled.md
 - name: minecraft:friction_modifier
   href: minecraftComponent_friction_modifier.md
 - name: minecraft:game_event_movement_tracking
@@ -366,6 +370,8 @@
   href: minecraftComponent_variable_max_auto_step.md
 - name: minecraft:variant
   href: minecraftComponent_variant.md
+- name: minecraft:vertical_movement_action
+  href: minecraftComponent_vertical_movement.action.md
 - name: minecraft:vibration_damper
   href: minecraftComponent_vibration_damper.md
 - name: minecraft:vibration_listener

@@ -163,6 +163,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:nameable/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/cow.json": [
         {
           "path": "/minecraft:entity/components/minecraft:nameable/",
