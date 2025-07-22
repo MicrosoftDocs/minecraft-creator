@@ -14,7 +14,7 @@ Wondering where to get started with Editor Extensions? Well, that depends on wha
 >- You have Minecraft Bedrock running on a Windows PC.
 >- You know what an Application Programming Interface (API) is.
 >- You would like to change the functionality of one or more of the Editor tools or at least know more about how to do it.
->- You have worked with Resource Packs and Behavior Packs to change something in Minecraft. If not, you should start with [Getting Started with Minecraft Add-ons](../GettingStarted.md).
+>- You have worked with Resource Packs and Behavior Packs to change something in Minecraft. If not, you should start with [Getting Started with Minecraft Add-Ons](../GettingStarted.md).
 >- You know how to use slash commands in Minecraft as shown in the [Commands Introduction](../CommandsIntroduction.md).
 >- You have taken a look at [Minecraft scripting](../ScriptingGettingStarted.md) and set up your programming environment so you can try it.
 >- You have used Editor to edit a world. If not, you should start with the [Editor Tutorial](EditorTutorial.md).

@@ -17,21 +17,21 @@ Optional properties for Link property item
 ## Properties
 
 ### **hideIcon**
-`hideIcon: boolean;`
+`hideIcon?: boolean;`
 
 Hides the link icon. If undefined, it will default to false.
 
 Type: *boolean*
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the text item.
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: LocalizedString;`
+`tooltip?: LocalizedString;`
 
 Tooltip description of the property item
 

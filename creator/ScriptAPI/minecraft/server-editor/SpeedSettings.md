@@ -17,13 +17,13 @@ description: Contents of the @minecraft/server-editor.SpeedSettings class.
 
 ### **get**
 `
-"get"(property: T): SpeedSettingsPropertyTypeMap[T] | undefined
+"get"(property: T): SpeedSettingsPropertyTypeMap[T] | void
 `
 
 #### **Parameters**
 - **property**: *T*
 
-**Returns** *SpeedSettingsPropertyTypeMap[T] | undefined*
+**Returns** *SpeedSettingsPropertyTypeMap[T]* | *void*
 
 ### **getAll**
 `

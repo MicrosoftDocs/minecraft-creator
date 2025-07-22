@@ -14,14 +14,14 @@ Common optional properties for property items
 ## Properties
 
 ### **enable**
-`enable: boolean;`
+`enable?: boolean;`
 
 Initial enabled state of property item. If undefined, it will default to true.
 
 Type: *boolean*
 
 ### **visible**
-`visible: boolean;`
+`visible?: boolean;`
 
 Initial visibility state of property item. If undefined, it will default to true.
 

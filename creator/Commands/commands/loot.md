@@ -498,6 +498,7 @@ Chest
 Pumpkin Seeds
 - `minecraft:melon_seeds`
 Melon Seeds
+- `minecraft:acacia_shelf`
 - `minecraft:nether_wart`
 Nether Wart
 - `minecraft:beetroot_seeds`
@@ -529,6 +530,7 @@ Arrow
 - `minecraft:oxeye_daisy`
 - `minecraft:coal`
 Coal
+- `minecraft:copper_golem_statue`
 - `minecraft:charcoal`
 Charcoal
 - `minecraft:stray_spawn_egg`
@@ -1465,6 +1467,7 @@ Iron Nugget
 Birch Sign
 - `minecraft:coral_fan_dead`
 Coral Fan Dead
+- `minecraft:cherry_shelf`
 - `minecraft:copper_axe`
 - `minecraft:dark_oak_sign`
 Dark Oak Sign
@@ -1502,6 +1505,7 @@ Red Nether Brick
 Honey Bottle
 - `minecraft:stripped_warped_hyphae`
 Stripped Warped Hyphae
+- `minecraft:birch_shelf`
 - `minecraft:mangrove_sign`
 Mangrove Sign
 - `minecraft:blue_candle_cake`
@@ -1528,6 +1532,7 @@ Lodestone Compass
 Quartz Ore
 - `minecraft:netherite_shovel`
 Netherite Shovel
+- `minecraft:waxed_copper_golem_statue`
 - `minecraft:chain_command_block`
 Chain Command Block
 - `minecraft:gray_wool`
@@ -1664,6 +1669,7 @@ Lit Furnace
 - `minecraft:element_89`
 [Education Edition] Actinium (Ac)
 - `minecraft:oak_hanging_sign`
+- `minecraft:crimson_shelf`
 - `minecraft:quartz_stairs`
 Quartz Stairs
 - `minecraft:explorer_pottery_sherd`
@@ -1713,6 +1719,7 @@ Unlit Redstone Torch
 - `minecraft:bolt_armor_trim_smithing_template`
 - `minecraft:wither_skeleton_skull`
 - `minecraft:music_disc_relic`
+- `minecraft:weathered_copper_golem_statue`
 - `minecraft:wool`
 Wool
 - `minecraft:red_nether_brick_wall`
@@ -1905,6 +1912,7 @@ Structure Block
 Fence
 - `minecraft:waxed_oxidized_double_cut_copper_slab`
 Waxed Oxidized Double Cut Copper Slab
+- `minecraft:oxidized_copper_golem_statue`
 - `minecraft:stone_bricks`
 - `minecraft:cracked_stone_bricks`
 - `minecraft:poppy`
@@ -2250,6 +2258,7 @@ Gravel
 - `minecraft:chiseled_tuff`
 - `minecraft:colored_torch_green`
 - `minecraft:light_block_1`
+- `minecraft:mangrove_shelf`
 - `minecraft:light_block_3`
 - `minecraft:light_block_4`
 - `minecraft:gray_candle_cake`
@@ -2588,6 +2597,7 @@ Mangrove Double Slab
 Oxidized Double Cut Copper Slab
 - `minecraft:stone_button`
 Stone Button
+- `minecraft:jungle_shelf`
 - `minecraft:exposed_double_cut_copper_slab`
 Exposed Double Cut Copper Slab
 - `minecraft:blue_glazed_terracotta`
@@ -2653,6 +2663,8 @@ Brown Mushroom
 - `minecraft:brown_glazed_terracotta`
 Brown Glazed Terracotta
 - `minecraft:waxed_copper_trapdoor`
+- `minecraft:copper_trapdoor`
+- `minecraft:spruce_shelf`
 - `minecraft:moving_block`
 Moving Block
 - `minecraft:oxidized_copper`
@@ -2670,6 +2682,7 @@ Green Candle Cake
 - `minecraft:stripped_bamboo_block`
 - `minecraft:sculk_catalyst`
 Sculk Catalyst
+- `minecraft:warped_shelf`
 - `minecraft:oak_double_slab`
 - `minecraft:brown_candle_cake`
 Brown Candle Cake
@@ -2719,6 +2732,9 @@ Mossy Cobblestone Stairs
 - `minecraft:detector_rail`
 Detector Rail
 - `minecraft:brain_coral_wall_fan`
+- `minecraft:darkoak_standing_sign`
+Dark Oak Standing Sign
+- `minecraft:waxed_exposed_copper_golem_statue`
 - `minecraft:red_glazed_terracotta`
 Red Glazed Terracotta
 - `minecraft:waxed_oxidized_copper_chest`
@@ -2733,6 +2749,7 @@ Snow
 Mangrove Standing Sign
 - `minecraft:black_glazed_terracotta`
 Black Glazed Terracotta
+- `minecraft:dark_oak_shelf`
 - `minecraft:lit_redstone_ore`
 Lit Redstone Ore
 - `minecraft:stripped_mangrove_wood`
@@ -2743,6 +2760,7 @@ Bone Block
 Lapis Block
 - `minecraft:coal_ore`
 Coal Ore
+- `minecraft:bamboo_shelf`
 - `minecraft:redstone_ore`
 Redstone Ore
 - `minecraft:waxed_copper_chest`
@@ -2765,6 +2783,7 @@ Warped Double Slab
 Jungle Wall Sign
 - `minecraft:sculk_sensor`
 Sculk Sensor
+- `minecraft:oak_shelf`
 - `minecraft:diorite_stairs`
 Diorite Stairs
 - `minecraft:stripped_cherry_log`
@@ -2811,6 +2830,7 @@ Deepslate Tile Stairs
 Crimson Fence Gate
 - `minecraft:deadbush`
 Deadbush
+- `minecraft:waxed_weathered_copper_golem_statue`
 - `minecraft:item.wheat`
 Wheat
 - `minecraft:item.spruce_door`
@@ -2839,6 +2859,7 @@ Waxed Weathered Cut Copper
 Brick Stairs
 - `minecraft:wall_sign`
 Wall Sign
+- `minecraft:waxed_oxidized_copper_golem_statue`
 - `minecraft:dark_oak_stairs`
 Dark Oak Stairs
 - `minecraft:birch_double_slab`
@@ -2899,7 +2920,6 @@ Bee Nest
 - `minecraft:bubble_column`
 Bubble Column
 - `minecraft:calibrated_sculk_sensor`
-- `minecraft:copper_trapdoor`
 - `minecraft:stripped_acacia_log`
 Stripped Acacia Log
 - `minecraft:cobbled_deepslate_double_slab`
@@ -2907,6 +2927,7 @@ Cobbled Deepslate Double Slab
 - `minecraft:warped_fence`
 Warped Fence
 - `minecraft:cherry_standing_sign`
+- `minecraft:pale_oak_shelf`
 - `minecraft:item.chain`
 Chain
 - `minecraft:waxed_exposed_copper_trapdoor`
@@ -3047,14 +3068,13 @@ Waxed Cut Copper
 Spore Blossom
 - `minecraft:crimson_standing_sign`
 Crimson Standing Sign
-- `minecraft:darkoak_standing_sign`
-Dark Oak Standing Sign
 - `minecraft:emerald_ore`
 Emerald Ore
 - `minecraft:pointed_dripstone`
 Pointed Dripstone
 - `minecraft:netherreactor`
 [Education Edition] Nether Reactor
+- `minecraft:exposed_copper_golem_statue`
 - `minecraft:item.cauldron`
 Cauldron
 - `minecraft:cave_vines_head_with_berries`

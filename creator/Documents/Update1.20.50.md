@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.20.50 Update Notes
 description: Update summary of Creator changes in Bedrock 1.20.50
 ms.service: minecraft-bedrock-edition
+ms.date: 07/17/2025
 ---
 # Minecraft Bedrock 1.20.50 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.20.50 and there are a number of changes of note for add-on creators. The following features do not require experimental toggles.
+Minecraft Bedrock has been updated to 1.20.50 and there are a number of changes of note for creators. The following features do not require experimental toggles.
 
 ## Debug Workflows
 - Added a Clear button to the content log screen

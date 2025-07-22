@@ -20,7 +20,7 @@ Despawns the Actor immediately.
 
 ## Samples
 
-#### [Creaking](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creaking.json)
+#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
 
 
 ```json

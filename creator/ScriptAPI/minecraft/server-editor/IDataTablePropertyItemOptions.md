@@ -17,14 +17,14 @@ Properties of data table item
 ## Properties
 
 ### **entries**
-`entries: IDataTablePropertyItemEntry[][];`
+`entries?: IDataTablePropertyItemEntry[][];`
 
 List of default data table entries
 
-Type: *IDataTablePropertyItemEntry[][]*
+Type: *IDataTablePropertyItemEntry*[][]
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item.
 

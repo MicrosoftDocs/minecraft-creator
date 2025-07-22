@@ -14,21 +14,21 @@ Properties required to create a Menu
 ## Properties
 
 ### **checked**
-`checked: boolean;`
+`checked?: boolean;`
 
 Whether the menu should show a checkmark
 
 Type: *boolean*
 
 ### **enabled**
-`enabled: boolean;`
+`enabled?: boolean;`
 
 Whether the menu should be enabled or disabled
 
 Type: *boolean*
 
 ### **icon**
-`icon: string;`
+`icon?: string;`
 
 Whether the menu should have an icon.
 
@@ -42,14 +42,14 @@ Localized display text of the menu
 Type: *string*
 
 ### **tooltip**
-`tooltip: string;`
+`tooltip?: string;`
 
 Whether the menu should have a tooltip.
 
 Type: *string*
 
 ### **uniqueId**
-`uniqueId: string;`
+`uniqueId?: string;`
 
 Custom unique identifier that will replace random id
 

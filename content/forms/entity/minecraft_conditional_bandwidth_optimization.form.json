@@ -331,6 +331,12 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:conditional_bandwidth_optimization/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/cow.json": [
         {
           "path": "/minecraft:entity/components/minecraft:conditional_bandwidth_optimization/",

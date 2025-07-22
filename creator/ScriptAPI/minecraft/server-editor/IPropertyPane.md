@@ -63,115 +63,115 @@ Type: *EventSink<PropertyPaneVisibilityUpdate>*
 
 ### **addBlockList**
 `
-addBlockList(value: IObservableProp<string[]>, options: IBlockListPropertyItemOptions): IBlockListPropertyItem
+addBlockList(value: IObservableProp<string[]>, options?: IBlockListPropertyItemOptions): IBlockListPropertyItem
 `
 
 Adds a block list to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<string[]>*
-- **options**: *IBlockListPropertyItemOptions*
+- **options**?: *IBlockListPropertyItemOptions*
 
 **Returns** *IBlockListPropertyItem*
 
 ### **addBlockTable**
 `
-addBlockTable(options: IBlockTablePropertyItemOptions): IBlockTablePropertyItem
+addBlockTable(options?: IBlockTablePropertyItemOptions): IBlockTablePropertyItem
 `
 
 Adds a block table to the pane.
 
 #### **Parameters**
-- **options**: *IBlockTablePropertyItemOptions*
+- **options**?: *IBlockTablePropertyItemOptions*
 
 **Returns** *IBlockTablePropertyItem*
 
 ### **addBool**
 `
-addBool(value: IObservableProp<boolean>, options: IBoolPropertyItemOptions): IBoolPropertyItem
+addBool(value: IObservableProp<boolean>, options?: IBoolPropertyItemOptions): IBoolPropertyItem
 `
 
 Adds a togglable boolean item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<boolean>*
-- **options**: *IBoolPropertyItemOptions*
+- **options**?: *IBoolPropertyItemOptions*
 
 **Returns** *IBoolPropertyItem*
 
 ### **addButton**
 `
-addButton(action: ButtonPropertyItemSupportedActionTypes, options: IButtonPropertyItemOptions): IButtonPropertyItem
+addButton(action: ButtonPropertyItemSupportedActionTypes, options?: IButtonPropertyItemOptions): IButtonPropertyItem
 `
 
 Adds a button to the pane and binds the specified action to the button interaction.
 
 #### **Parameters**
 - **action**: *ButtonPropertyItemSupportedActionTypes*
-- **options**: *IButtonPropertyItemOptions*
+- **options**?: *IButtonPropertyItemOptions*
 
 **Returns** *IButtonPropertyItem*
 
 ### **addButtonPane**
 `
-addButtonPane(options: IButtonPanePropertyItemOptions): IButtonPanePropertyItem
+addButtonPane(options?: IButtonPanePropertyItemOptions): IButtonPanePropertyItem
 `
 
 Adds a pane for grouped button layout.
 
 #### **Parameters**
-- **options**: *IButtonPanePropertyItemOptions*
+- **options**?: *IButtonPanePropertyItemOptions*
 
 **Returns** *IButtonPanePropertyItem*
 
 ### **addColorPicker**
 `
-addColorPicker(value: IObservableProp<minecraftserver.RGBA>, options: IColorPickerPropertyItemOptions): IColorPickerPropertyItem
+addColorPicker(value: IObservableProp<minecraftserver.RGBA>, options?: IColorPickerPropertyItemOptions): IColorPickerPropertyItem
 `
 
 Adds a color picker item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<minecraftserver.RGBA>*
-- **options**: *IColorPickerPropertyItemOptions*
+- **options**?: *IColorPickerPropertyItemOptions*
 
 **Returns** *IColorPickerPropertyItem*
 
 ### **addColorTimeline**
 `
-addColorTimeline(value: IObservableProp<number>, options: IColorTimelinePropertyItemOptions): IColorTimelinePropertyItem
+addColorTimeline(value: IObservableProp<number>, options?: IColorTimelinePropertyItemOptions): IColorTimelinePropertyItem
 `
 
 Adds a Color Timeline item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<number>*
-- **options**: *IColorTimelinePropertyItemOptions*
+- **options**?: *IColorTimelinePropertyItemOptions*
 
 **Returns** *IColorTimelinePropertyItem*
 
 ### **addComboBox**
 `
-addComboBox(value: IObservableProp<string>, options: IComboBoxPropertyItemOptions): IComboBoxPropertyItem
+addComboBox(value: IObservableProp<string>, options?: IComboBoxPropertyItemOptions): IComboBoxPropertyItem
 `
 
 Adds a combo box item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<string>*
-- **options**: *IComboBoxPropertyItemOptions*
+- **options**?: *IComboBoxPropertyItemOptions*
 
 **Returns** *IComboBoxPropertyItem*
 
 ### **addDataTable**
 `
-addDataTable(options: IDataTablePropertyItemOptions): IDataTablePropertyItem
+addDataTable(options?: IDataTablePropertyItemOptions): IDataTablePropertyItem
 `
 
 Adds a data table to the pane.
 
 #### **Parameters**
-- **options**: *IDataTablePropertyItemOptions*
+- **options**?: *IDataTablePropertyItemOptions*
 
 **Returns** *IDataTablePropertyItem*
 
@@ -186,78 +186,78 @@ Adds an divider item to the pane.
 
 ### **addDropdown**
 `
-addDropdown(value: IObservableProp<number>, options: IDropdownPropertyItemOptions): IDropdownPropertyItem
+addDropdown(value: IObservableProp<number>, options?: IDropdownPropertyItemOptions): IDropdownPropertyItem
 `
 
 Adds an Dropdown item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<number>*
-- **options**: *IDropdownPropertyItemOptions*
+- **options**?: *IDropdownPropertyItemOptions*
 
 **Returns** *IDropdownPropertyItem*
 
 ### **addImage**
 `
-addImage(value: IObservableProp<string | ImageResourceData>, options: IImagePropertyItemOptions): IImagePropertyItem
+addImage(value: IObservableProp<string | ImageResourceData>, options?: IImagePropertyItemOptions): IImagePropertyItem
 `
 
 Adds an image item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<string | ImageResourceData>*
-- **options**: *IImagePropertyItemOptions*
+- **options**?: *IImagePropertyItemOptions*
 
 **Returns** *IImagePropertyItem*
 
 ### **addLink**
 `
-addLink(value: IObservableProp<string>, options: ILinkPropertyItemOptions): ILinkPropertyItem
+addLink(value: IObservableProp<string>, options?: ILinkPropertyItemOptions): ILinkPropertyItem
 `
 
 Adds a Link item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<string>*
-- **options**: *ILinkPropertyItemOptions*
+- **options**?: *ILinkPropertyItemOptions*
 
 **Returns** *ILinkPropertyItem*
 
 ### **addNumber**
 `
-addNumber(value: IObservableProp<number>, options: INumberPropertyItemOptions): INumberPropertyItem
+addNumber(value: IObservableProp<number>, options?: INumberPropertyItemOptions): INumberPropertyItem
 `
 
 Adds a number item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<number>*
-- **options**: *INumberPropertyItemOptions*
+- **options**?: *INumberPropertyItemOptions*
 
 **Returns** *INumberPropertyItem*
 
 ### **addNumberTimeline**
 `
-addNumberTimeline(value: IObservableProp<number>, options: INumberTimelinePropertyItemOptions): INumberTimelinePropertyItem
+addNumberTimeline(value: IObservableProp<number>, options?: INumberTimelinePropertyItemOptions): INumberTimelinePropertyItem
 `
 
 Adds a Number Timeline item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<number>*
-- **options**: *INumberTimelinePropertyItemOptions*
+- **options**?: *INumberTimelinePropertyItemOptions*
 
 **Returns** *INumberTimelinePropertyItem*
 
 ### **addProgressIndicator**
 `
-addProgressIndicator(options: IProgressIndicatorPropertyItemOptions): IProgressIndicatorPropertyItem
+addProgressIndicator(options?: IProgressIndicatorPropertyItemOptions): IProgressIndicatorPropertyItem
 `
 
 Adds a Progress Indicator item to the pane.
 
 #### **Parameters**
-- **options**: *IProgressIndicatorPropertyItemOptions*
+- **options**?: *IProgressIndicatorPropertyItemOptions*
 
 **Returns** *IProgressIndicatorPropertyItem*
 
@@ -275,53 +275,53 @@ Adds a proxy view of another supported pane
 
 ### **addString**
 `
-addString(value: IObservableProp<string>, options: IStringPropertyItemOptions): IStringPropertyItem
+addString(value: IObservableProp<string>, options?: IStringPropertyItemOptions): IStringPropertyItem
 `
 
 Adds an editable string item to the pane
 
 #### **Parameters**
 - **value**: *IObservableProp<string>*
-- **options**: *IStringPropertyItemOptions*
+- **options**?: *IStringPropertyItemOptions*
 
 **Returns** *IStringPropertyItem*
 
 ### **addText**
 `
-addText(value: IObservableProp<LocalizedString>, options: ITextPropertyItemOptions): ITextPropertyItem
+addText(value: IObservableProp<LocalizedString>, options?: ITextPropertyItemOptions): ITextPropertyItem
 `
 
 Adds a multiline Text item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<LocalizedString>*
-- **options**: *ITextPropertyItemOptions*
+- **options**?: *ITextPropertyItemOptions*
 
 **Returns** *ITextPropertyItem*
 
 ### **addToggleGroup**
 `
-addToggleGroup(value: IObservableProp<number>, options: IToggleGroupPropertyItemOptions): IToggleGroupPropertyItem
+addToggleGroup(value: IObservableProp<number>, options?: IToggleGroupPropertyItemOptions): IToggleGroupPropertyItem
 `
 
 Adds a toggle button group to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<number>*
-- **options**: *IToggleGroupPropertyItemOptions*
+- **options**?: *IToggleGroupPropertyItemOptions*
 
 **Returns** *IToggleGroupPropertyItem*
 
 ### **addVector3**
 `
-addVector3(value: IObservableProp<minecraftserver.Vector3>, options: IVector3PropertyItemOptions): IVector3PropertyItem
+addVector3(value: IObservableProp<minecraftserver.Vector3>, options?: IVector3PropertyItemOptions): IVector3PropertyItem
 `
 
 Adds a Vec3 item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<minecraftserver.Vector3>*
-- **options**: *IVector3PropertyItemOptions*
+- **options**?: *IVector3PropertyItemOptions*
 
 **Returns** *IVector3PropertyItem*
 
@@ -366,12 +366,12 @@ Finalizes pane construction and synchronizes item data
 
 ### **getTitle**
 `
-getTitle(): LocalizedString | undefined
+getTitle(): LocalizedString | void
 `
 
 Returns pane title.
 
-**Returns** *LocalizedString | undefined*
+**Returns** *LocalizedString* | *void*
 
 ### **removeSubPane**
 `
@@ -387,13 +387,13 @@ Removes an existing sub pane.
 
 ### **setTitle**
 `
-setTitle(newTitle: LocalizedString | undefined): void
+setTitle(newTitle: LocalizedString | void): void
 `
 
 Updates title of pane.
 
 #### **Parameters**
-- **newTitle**: *LocalizedString | undefined*
+- **newTitle**: *LocalizedString* | *void*
   
   New title
 
@@ -401,13 +401,13 @@ Updates title of pane.
 
 ### **toggleSubPaneVisibility**
 `
-toggleSubPaneVisibility(subPaneId: string | undefined): void
+toggleSubPaneVisibility(subPaneId: string | void): void
 `
 
 Shows only the specified sub-pane, hiding all others
 
 #### **Parameters**
-- **subPaneId**: *string | undefined*
+- **subPaneId**: *string* | *void*
   
   Identifier of the sub pane to display.
 

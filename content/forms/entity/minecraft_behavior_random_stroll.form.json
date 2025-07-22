@@ -120,6 +120,12 @@
         "defaultValue": 10,
         "dataType": 0,
         "samples": {
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
+              "content": 3
+            }
+          ],
           "/vanilla/behavior_pack/entities/iron_golem.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
@@ -184,6 +190,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
               "content": 8
+            }
+          ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
+              "content": 4
             }
           ],
           "/vanilla/behavior_pack/entities/creaking.json": [
@@ -256,12 +268,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
               "content": 11
-            }
-          ],
-          "/vanilla/behavior_pack/entities/witch.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
-              "content": 4
             }
           ],
           "/samples/add_entity_robot/full/robot_example_full_behavior/entities/robot.json": [
@@ -358,6 +364,15 @@
           "content": {
             "priority": 6,
             "speed_multiplier": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
+          "content": {
+            "priority": 4,
+            "xz_dist": 3
           }
         }
       ],

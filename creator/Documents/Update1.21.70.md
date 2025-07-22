@@ -9,7 +9,7 @@ ms.date: 03/25/2025 #Required; mm/dd/yyyy format.
 
 # Minecraft Bedrock 1.21.70 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.21.70 and there are a number of changes of note for Add-On creators. The following features do not require experimental toggles.
+Minecraft Bedrock has been updated to 1.21.70 and there are a number of changes of note for creators. The following features do not require experimental toggles.
 
 > [!VIDEO https://www.youtube.com/embed/9-AoU4jzm44]
 *Video version of this article from the Minecraft Creator Channel*

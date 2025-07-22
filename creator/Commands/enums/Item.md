@@ -54,6 +54,8 @@ Warped Door
 Fence Gate
 - `fence_gate`
 Fence Gate
+- `minecraft:birch_shelf`
+- `birch_shelf`
 - `minecraft:dark_oak_button`
 Dark Oak Button
 - `dark_oak_button`
@@ -82,6 +84,8 @@ Jungle Button
 Spruce Stairs
 - `spruce_stairs`
 Spruce Stairs
+- `minecraft:acacia_shelf`
+- `acacia_shelf`
 - `minecraft:diorite`
 - `diorite`
 - `minecraft:pale_oak_fence_gate`
@@ -422,6 +426,8 @@ Hardened Clay
 Stripped Jungle Log
 - `stripped_jungle_log`
 Stripped Jungle Log
+- `minecraft:oxidized_copper_golem_statue`
+- `oxidized_copper_golem_statue`
 - `minecraft:light_block_9`
 - `light_block_9`
 - `minecraft:light_block_8`
@@ -692,6 +698,8 @@ Brown Glazed Terracotta
 Brown Glazed Terracotta
 - `minecraft:waxed_copper_trapdoor`
 - `waxed_copper_trapdoor`
+- `minecraft:spruce_shelf`
+- `spruce_shelf`
 - `minecraft:oxidized_copper`
 Oxidized Copper
 - `oxidized_copper`
@@ -734,8 +742,12 @@ Cobblestone
 - `horn_coral`
 - `minecraft:yellow_concrete`
 - `yellow_concrete`
+- `minecraft:mangrove_shelf`
+- `mangrove_shelf`
 - `minecraft:cyan_carpet`
 - `cyan_carpet`
+- `minecraft:warped_shelf`
+- `warped_shelf`
 - `minecraft:smooth_sandstone_stairs`
 Smooth Sandstone Stairs
 - `smooth_sandstone_stairs`
@@ -868,6 +880,8 @@ Crimson Door
 Mangrove Pressure Plate
 - `mangrove_pressure_plate`
 Mangrove Pressure Plate
+- `minecraft:jungle_shelf`
+- `jungle_shelf`
 - `minecraft:jungle_slab`
 - `jungle_slab`
 - `minecraft:light_blue_stained_glass_pane`
@@ -934,6 +948,8 @@ Cracked Deepslate Tiles
 Mangrove Wood
 - `mangrove_wood`
 Mangrove Wood
+- `minecraft:waxed_exposed_copper_golem_statue`
+- `waxed_exposed_copper_golem_statue`
 - `minecraft:red_glazed_terracotta`
 Red Glazed Terracotta
 - `red_glazed_terracotta`
@@ -1012,6 +1028,8 @@ Lapis Block
 Coal Ore
 - `coal_ore`
 Coal Ore
+- `minecraft:bamboo_shelf`
+- `bamboo_shelf`
 - `minecraft:redstone_ore`
 Redstone Ore
 - `redstone_ore`
@@ -1088,6 +1106,8 @@ Basalt
 Basalt
 - `minecraft:light_blue_terracotta`
 - `light_blue_terracotta`
+- `minecraft:copper_golem_statue`
+- `copper_golem_statue`
 - `minecraft:diamond_ore`
 Diamond Ore
 - `diamond_ore`
@@ -1120,6 +1140,8 @@ Sculk Sensor
 Sculk Sensor
 - `minecraft:copper_bulb`
 - `copper_bulb`
+- `minecraft:oak_shelf`
+- `oak_shelf`
 - `minecraft:diorite_stairs`
 Diorite Stairs
 - `diorite_stairs`
@@ -1292,6 +1314,8 @@ Red Candle
 Cut Copper
 - `cut_copper`
 Cut Copper
+- `minecraft:waxed_weathered_copper_golem_statue`
+- `waxed_weathered_copper_golem_statue`
 - `minecraft:iron_ore`
 Iron Ore
 - `iron_ore`
@@ -1372,6 +1396,8 @@ Jukebox
 Jigsaw
 - `jigsaw`
 Jigsaw
+- `minecraft:waxed_oxidized_copper_golem_statue`
+- `waxed_oxidized_copper_golem_statue`
 - `minecraft:prismarine_wall`
 - `prismarine_wall`
 - `minecraft:border_block`
@@ -1436,6 +1462,8 @@ Oxidized Cut Copper Slab
 Oxidized Cut Copper Slab
 - `minecraft:horn_coral_block`
 - `horn_coral_block`
+- `minecraft:dark_oak_shelf`
+- `dark_oak_shelf`
 - `minecraft:beetroot`
 Beetroot
 - `beetroot`
@@ -1686,6 +1714,8 @@ Crafting Table
 Sea Pickle
 - `sea_pickle`
 Sea Pickle
+- `minecraft:pale_oak_shelf`
+- `pale_oak_shelf`
 - `minecraft:brown_concrete_powder`
 - `brown_concrete_powder`
 - `minecraft:mangrove_hanging_sign`
@@ -1776,6 +1806,8 @@ Polished Blackstone Slab
 Reeds
 - `minecraft:black_shulker_box`
 - `black_shulker_box`
+- `minecraft:weathered_copper_golem_statue`
+- `weathered_copper_golem_statue`
 - `minecraft:jungle_sapling`
 - `jungle_sapling`
 - `minecraft:chiseled_sandstone`
@@ -2290,6 +2322,8 @@ Mangrove Button
 Lantern
 - `lantern`
 Lantern
+- `minecraft:crimson_shelf`
+- `crimson_shelf`
 - `minecraft:waxed_weathered_copper_door`
 - `waxed_weathered_copper_door`
 - `minecraft:red_stained_glass_pane`
@@ -2308,6 +2342,8 @@ Allow
 Birch Door
 - `birch_door`
 Birch Door
+- `minecraft:cherry_shelf`
+- `cherry_shelf`
 - `minecraft:chest`
 Chest
 - `chest`
@@ -2498,6 +2534,8 @@ Dark Prismarine Stairs
 - `chiseled_tuff_bricks`
 - `minecraft:light_blue_concrete`
 - `light_blue_concrete`
+- `minecraft:exposed_copper_golem_statue`
+- `exposed_copper_golem_statue`
 - `minecraft:red_tulip`
 - `red_tulip`
 - `minecraft:cauldron`
@@ -2704,6 +2742,8 @@ Deepslate Diamond Ore
 Grindstone
 - `grindstone`
 Grindstone
+- `minecraft:waxed_copper_golem_statue`
+- `waxed_copper_golem_statue`
 - `minecraft:light_gray_wool`
 - `light_gray_wool`
 - `minecraft:soul_campfire`
@@ -3545,6 +3585,8 @@ Popped Chorus Fruit
 Leather Helmet
 - `leather_helmet`
 Leather Helmet
+- `minecraft:copper_helmet`
+- `copper_helmet`
 - `minecraft:chainmail_helmet`
 Chainmail Helmet
 - `chainmail_helmet`
@@ -3565,12 +3607,12 @@ Diamond Helmet
 Netherite Helmet
 - `netherite_helmet`
 Netherite Helmet
-- `minecraft:copper_helmet`
-- `copper_helmet`
 - `minecraft:leather_chestplate`
 Leather Chestplate
 - `leather_chestplate`
 Leather Chestplate
+- `minecraft:copper_chestplate`
+- `copper_chestplate`
 - `minecraft:chainmail_chestplate`
 Chainmail Chestplate
 - `chainmail_chestplate`
@@ -3591,12 +3633,12 @@ Diamond Chestplate
 Netherite Chestplate
 - `netherite_chestplate`
 Netherite Chestplate
-- `minecraft:copper_chestplate`
-- `copper_chestplate`
 - `minecraft:leather_leggings`
 Leather Leggings
 - `leather_leggings`
 Leather Leggings
+- `minecraft:copper_leggings`
+- `copper_leggings`
 - `minecraft:chainmail_leggings`
 Chainmail Leggings
 - `chainmail_leggings`
@@ -3617,12 +3659,12 @@ Diamond Leggings
 Netherite Leggings
 - `netherite_leggings`
 Netherite Leggings
-- `minecraft:copper_leggings`
-- `copper_leggings`
 - `minecraft:leather_boots`
 Leather Boots
 - `leather_boots`
 Leather Boots
+- `minecraft:copper_boots`
+- `copper_boots`
 - `minecraft:chainmail_boots`
 Chainmail Boots
 - `chainmail_boots`
@@ -3643,8 +3685,6 @@ Diamond Boots
 Netherite Boots
 - `netherite_boots`
 Netherite Boots
-- `minecraft:copper_boots`
-- `copper_boots`
 - `minecraft:wooden_sword`
 Wooden Sword
 - `wooden_sword`
@@ -3653,6 +3693,8 @@ Wooden Sword
 Stone Sword
 - `stone_sword`
 Stone Sword
+- `minecraft:copper_sword`
+- `copper_sword`
 - `minecraft:iron_sword`
 Iron Sword
 - `iron_sword`
@@ -3669,8 +3711,6 @@ Diamond Sword
 Netherite Sword
 - `netherite_sword`
 Netherite Sword
-- `minecraft:copper_sword`
-- `copper_sword`
 - `minecraft:wooden_axe`
 Wooden Axe
 - `wooden_axe`
@@ -3679,6 +3719,8 @@ Wooden Axe
 Stone Axe
 - `stone_axe`
 Stone Axe
+- `minecraft:copper_axe`
+- `copper_axe`
 - `minecraft:iron_axe`
 Iron Axe
 - `iron_axe`
@@ -3695,8 +3737,6 @@ Diamond Axe
 Netherite Axe
 - `netherite_axe`
 Netherite Axe
-- `minecraft:copper_axe`
-- `copper_axe`
 - `minecraft:wooden_pickaxe`
 Wooden Pickaxe
 - `wooden_pickaxe`
@@ -3705,6 +3745,8 @@ Wooden Pickaxe
 Stone Pickaxe
 - `stone_pickaxe`
 Stone Pickaxe
+- `minecraft:copper_pickaxe`
+- `copper_pickaxe`
 - `minecraft:iron_pickaxe`
 Iron Pickaxe
 - `iron_pickaxe`
@@ -3721,8 +3763,6 @@ Diamond Pickaxe
 Netherite Pickaxe
 - `netherite_pickaxe`
 Netherite Pickaxe
-- `minecraft:copper_pickaxe`
-- `copper_pickaxe`
 - `minecraft:wooden_shovel`
 Wooden Shovel
 - `wooden_shovel`
@@ -3731,6 +3771,8 @@ Wooden Shovel
 Stone Shovel
 - `stone_shovel`
 Stone Shovel
+- `minecraft:copper_shovel`
+- `copper_shovel`
 - `minecraft:iron_shovel`
 Iron Shovel
 - `iron_shovel`
@@ -3747,8 +3789,6 @@ Diamond Shovel
 Netherite Shovel
 - `netherite_shovel`
 Netherite Shovel
-- `minecraft:copper_shovel`
-- `copper_shovel`
 - `minecraft:wooden_hoe`
 Wooden Hoe
 - `wooden_hoe`
@@ -3757,6 +3797,8 @@ Wooden Hoe
 Stone Hoe
 - `stone_hoe`
 Stone Hoe
+- `minecraft:copper_hoe`
+- `copper_hoe`
 - `minecraft:iron_hoe`
 Iron Hoe
 - `iron_hoe`
@@ -3773,8 +3815,6 @@ Diamond Hoe
 Netherite Hoe
 - `netherite_hoe`
 Netherite Hoe
-- `minecraft:copper_hoe`
-- `copper_hoe`
 - `minecraft:bow`
 Bow
 - `bow`
@@ -4221,6 +4261,8 @@ Raw Iron
 Raw Gold
 - `raw_gold`
 Raw Gold
+- `minecraft:copper_nugget`
+- `copper_nugget`
 - `minecraft:raw_copper`
 Raw Copper
 - `raw_copper`
@@ -4617,8 +4659,6 @@ Firework Star
 - `trial_key`
 - `minecraft:ominous_trial_key`
 - `ominous_trial_key`
-- `minecraft:copper_nugget`
-- `copper_nugget`
 - `speckled_melon`
 Speckled Melon
 - `nametag`

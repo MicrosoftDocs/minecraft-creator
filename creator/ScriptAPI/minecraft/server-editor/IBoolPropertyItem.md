@@ -29,24 +29,24 @@ Type: *boolean*
 
 ### **setTitle**
 `
-setTitle(title: LocalizedString | undefined): void
+setTitle(title: LocalizedString | void): void
 `
 
 Sets title of the property item.
 
 #### **Parameters**
-- **title**: *LocalizedString | undefined*
+- **title**: *LocalizedString* | *void*
 
 **Returns** *void*
 
 ### **setTooltip**
 `
-setTooltip(tooltip: BasicTooltipContent | undefined): void
+setTooltip(tooltip: BasicTooltipContent | void): void
 `
 
 Sets tooltip description of the property item.
 
 #### **Parameters**
-- **tooltip**: *BasicTooltipContent | undefined*
+- **tooltip**: *BasicTooltipContent* | *void*
 
 **Returns** *void*

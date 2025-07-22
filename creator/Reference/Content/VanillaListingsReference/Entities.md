@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: "Default Minecraft Entity Listings"
-description: "A reference document detailing the entities and damage sources used in addons for Minecraft: Bedrock Edition"
+description: "A reference document detailing the entities and damage sources used in Add-Ons for Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -45,7 +45,7 @@ Listed below are the available Entities for use in Minecraft: Bedrock Edition an
 | [chicken](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/chicken.json) | 4874 | 10 |
 | cod | 9072 | 112 |
 | [command_block_minecart](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/command_block_minecart.json) | 524388 | 100 |
-| copper_golem | 916 | 148 |
+| [copper_golem](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/copper_golem.json) | 916 | 148 |
 | [cow](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/cow.json) | 4875 | 11 |
 | [creaking](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/creaking.json) | 2962 | 146 |
 | [creeper](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/entities/creeper.json) | 2849 | 33 |

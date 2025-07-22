@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.20 Update Notes
 description: Update summary of Creator changes in Bedrock 1.20
 ms.service: minecraft-bedrock-edition
+ms.date: 06/07/2023
 ---
 # Minecraft Bedrock 1.20 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.20 and there are a number of changes of note for add-on creators.
+Minecraft Bedrock has been updated to 1.20 and there are a number of changes of note for creators.
 
 ## Holiday Creator Features ##
 
@@ -26,55 +27,55 @@ A third set of Creator APIs have been released out of beta and into stable (see:
 **APIs included in the @minecraft/server version 1.2.0 release:**
 
 - Entity damage application
-  - (Entity) [kill](../ScriptAPI/minecraft/server/Entity.md#kill)
-  - (Entity) [applyDamage](../ScriptAPI/minecraft/server/Entity.md#applydamage)
-  - [EntityApplyDamageOptions](../ScriptAPI/minecraft/server/EntityApplyDamageOptions.md)
-  - [EntityApplyDamageByProjectileOptions](../ScriptAPI/minecraft/server/EntityApplyDamageByProjectileOptions.md)
-  - [EntityDamageCause](../ScriptAPI/minecraft/server/EntityDamageCause.md)
+  - (Entity) [kill](../PriorScriptAPI/minecraft/server-1xx/Entity.md#kill)
+  - (Entity) [applyDamage](../PriorScriptAPI/minecraft/server-1xx/Entity.md#applydamage)
+  - [EntityApplyDamageOptions](../PriorScriptAPI/minecraft/server-1xx/EntityApplyDamageOptions.md)
+  - [EntityApplyDamageByProjectileOptions](../PriorScriptAPI/minecraft/server-1xx/EntityApplyDamageByProjectileOptions.md)
+  - [EntityDamageCause](../PriorScriptAPI/minecraft/server-1xx/EntityDamageCause.md)
 - Entity tagging
-  - [addTag](../ScriptAPI/minecraft/server/Entity.md#addtag)
-  - [removeTag](../ScriptAPI/minecraft/server/Entity.md#removetag)
-  - [hasTag](../ScriptAPI/minecraft/server/Entity.md#hastag)
-  - [getTags](../ScriptAPI/minecraft/server/Entity.md#gettags)
+  - [addTag](../PriorScriptAPI/minecraft/server-1xx/Entity.md#addtag)
+  - [removeTag](../PriorScriptAPI/minecraft/server-1xx/Entity.md#removetag)
+  - [hasTag](../PriorScriptAPI/minecraft/server-1xx/Entity.md#hastag)
+  - [getTags](../PriorScriptAPI/minecraft/server-1xx/Entity.md#gettags)
 - Entity Components
-  - [getComponent](../ScriptAPI/minecraft/server/Entity.md#getcomponent)
-  - [getComponents](../ScriptAPI/minecraft/server/Entity.md#getcomponents)
-  - [hasComponent](../ScriptAPI/minecraft/server/Entity.md#hascomponent)
+  - [getComponent](../PriorScriptAPI/minecraft/server-1xx/Entity.md#getcomponent)
+  - [getComponents](../PriorScriptAPI/minecraft/server-1xx/Entity.md#getcomponents)
+  - [hasComponent](../PriorScriptAPI/minecraft/server-1xx/Entity.md#hascomponent)
 - Entity Inventory
-  - [Container](../ScriptAPI/minecraft/server/Container.md)
-  - [EntityInventoryComponent](../ScriptAPI/minecraft/server/EntityInventoryComponent.md)
+  - [Container](../PriorScriptAPI/minecraft/server-1xx/Container.md)
+  - [EntityInventoryComponent](../PriorScriptAPI/minecraft/server-1xx/EntityInventoryComponent.md)
 - Block Inventory
-  - [BlockInventoryComponent](../ScriptAPI/minecraft/server/BlockInventoryComponent.md)
+  - [BlockInventoryComponent](../PriorScriptAPI/minecraft/server-1xx/BlockInventoryComponent.md)
 - Music
-  - (World) [playMusic](../ScriptAPI/minecraft/server/World.md#playmusic)
-  - (World) [queueMusic](../ScriptAPI/minecraft/server/World.md#queuemusic)
-  - (World) [stopMusic](../ScriptAPI/minecraft/server/World.md#stopmusic)
-  - [MusicOptions](../ScriptAPI/minecraft/server/MusicOptions.md)
+  - (World) [playMusic](../PriorScriptAPI/minecraft/server-1xx/World.md#playmusic)
+  - (World) [queueMusic](../PriorScriptAPI/minecraft/server-1xx/World.md#queuemusic)
+  - (World) [stopMusic](../PriorScriptAPI/minecraft/server-1xx/World.md#stopmusic)
+  - [MusicOptions](../PriorScriptAPI/minecraft/server-1xx/MusicOptions.md)
 
 - Sound
-  - (Player) [playSound](../ScriptAPI/minecraft/server/Player.md#playsound)
-  - (World) [playSound](../ScriptAPI/minecraft/server/World.md#playsound)
-  - [PlayerSoundOptions](../ScriptAPI/minecraft/server/PlayerSoundOptions.md)
-  - [WorldSoundOptions](../ScriptAPI/minecraft/server/WorldSoundOptions.md)
-- [ItemStack](../ScriptAPI/minecraft/server/ItemStack.md) (read-only APIs)
+  - (Player) [playSound](../PriorScriptAPI/minecraft/server-1xx/Player.md#playsound)
+  - (World) [playSound](../PriorScriptAPI/minecraft/server-1xx/World.md#playsound)
+  - [PlayerSoundOptions](../PriorScriptAPI/minecraft/server-1xx/PlayerSoundOptions.md)
+  - [WorldSoundOptions](../PriorScriptAPI/minecraft/server-1xx/WorldSoundOptions.md)
+- [ItemStack](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md) (read-only APIs)
 - ItemStack basic component model
-  - [EntityItemComponent](../ScriptAPI/minecraft/server/EntityItemComponent.md)
-  - [ItemComponent](../ScriptAPI/minecraft/server/ItemComponent.md)
-  - [ItemType](../ScriptAPI/minecraft/server/ItemType.md)
-  - [ItemLockMode](../ScriptAPI/minecraft/server/ItemLockMode.md)
+  - [EntityItemComponent](../PriorScriptAPI/minecraft/server-1xx/EntityItemComponent.md)
+  - [ItemComponent](../PriorScriptAPI/minecraft/server-1xx/ItemComponent.md)
+  - [ItemType](../PriorScriptAPI/minecraft/server-1xx/ItemType.md)
+  - [ItemLockMode](../PriorScriptAPI/minecraft/server-1xx/ItemLockMode.md)
 - Entity velocity APIs
-  - [applyImpulse](../ScriptAPI/minecraft/server/Entity.md#applyimpulse)
-  - [applyKnockback](../ScriptAPI/minecraft/server/Entity.md#applyknockback)
-  - [clearVelocity](../ScriptAPI/minecraft/server/Entity.md#clearvelocity)
+  - [applyImpulse](../PriorScriptAPI/minecraft/server-1xx/Entity.md#applyimpulse)
+  - [applyKnockback](../PriorScriptAPI/minecraft/server-1xx/Entity.md#applyknockback)
+  - [clearVelocity](../PriorScriptAPI/minecraft/server-1xx/Entity.md#clearvelocity)
 - Execution Fundamentals
-  - [runCommand](../ScriptAPI/minecraft/server/Entity.md#runcommand)
-  - [runInterval](../ScriptAPI/minecraft/server/System.md#runinterval)
+  - [runCommand](../PriorScriptAPI/minecraft/server-1xx/Entity.md#runcommand)
+  - [runInterval](../PriorScriptAPI/minecraft/server-1xx/System.md#runinterval)
 
 **APIs included in the @minecraft/server-ui version 1.0.0 release:**
 - Basic form server UI
-  - [ModalFormData](../ScriptAPI/minecraft/server-ui/ModalFormData.md)
-  - [MessageFormData](../ScriptAPI/minecraft/server-ui/MessageFormData.md)
-  - [ActionFormData](../ScriptAPI/minecraft/server-ui/ActionFormData.md)
+  - [ModalFormData](../PriorScriptAPI/minecraft/server-ui-1xx/ModalFormData.md)
+  - [MessageFormData](../PriorScriptAPI/minecraft/server-ui-1xx/MessageFormData.md)
+  - [ActionFormData](../PriorScriptAPI/minecraft/server-ui-1xx/ActionFormData.md)
 
 Beta APIs will continue to be developed behind the Beta API experimental flag so if you want to use those, make sure you have that flag enabled and your manifest.json references will need to update to 1.3.0-beta. Read more about [script versioning](ScriptVersioning.md).
 

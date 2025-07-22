@@ -74,44 +74,64 @@
           href: Casual/build-tower-defense.md
     - name: Learning Journey
       items:
-        - name: Guide
+        - name: Learning Journey Guide
           href: Documents/LearningJourneyGuide.md
-        - name: Getting Started with Add-Ons
-          href: Documents/GettingStarted.md
-        - name: Overwriting Vanilla Assets
-          href: Documents/OverwritingAssets.md
-        - name: 'Create Custom Grass Blocks: An Introduction to Resource Packs'
-          href: Documents/ResourcePack.md
-        - name: 'Create an Angry Cow: An Introduction to Behavior Packs'
-          href: Documents/BehaviorPack.md
-        - name: Creating and Adding Custom Sounds
-          href: Documents/AddCustomSounds.md
-        - name: Creating New Entity Types
-          href: Documents/IntroductionToAddEntity.md
-        - name: Create a Custom Die Block 
-          href: Documents/AddCustomDieBlock.md
-        - name: 'Create a Sushi Block: Advanced Custom Blocks' 
-          href: Documents/AdvancedCustomBlocks.md
-        - name: Adding Custom Items
-          href: Documents/AddCustomItems.md
-        - name: Change Your Look with a Skin Pack
-          href: Documents/SkinPack.md
-        - name: Advanced Stuff
+        - name: Learn About Add-Ons
           items:
-            - name: Creating an Animated Block Texture
+            - name: Getting Started with Add-On Development
+              href: Documents/GettingStarted.md
+            - name: "Your First Add-On: the Angry Cow Behavior Pack"
+              href: Documents/BehaviorPack.md
+        - name: Learn About Blocks
+          items:
+            - name: Create a Custom Grass Block Resource Pack
+              href: Documents/ResourcePack.md
+            - name: "Next Steps: Create a Custom Die Block"
+              href: Documents/AddCustomDieBlock.md
+            - name: "Get Fancy: Create a Sushi Block"
+              href: Documents/AdvancedCustomBlocks.md
+            - name: Create an Animated Block Texture
               href: Documents/CreateAnimatedBlockTexture.md
-            - name: Creating a Goblin Chef Entity 
+        - name: Learn About Entities and Items
+          items:
+            - name: Create a New Entity
+              href: Documents/IntroductionToAddEntity.md          
+            - name: Create a Goblin Chef Entity 
               href: Documents/MakerSeriesMakingTheGoblinChef.md
-            - name: Create a Loot Table
-              href: Documents/CreateLootTable.md
-            - name: Create a Village with Structure Blocks
-              href: Documents/Structures/StructureBlocksCommandTutorial.md
+            - name: Adding Custom Items
+              href: Documents/AddCustomItems.md
+        - name: More Customization
+          items:
+            - name: Creating and Adding Custom Sounds
+              href: Documents/AddCustomSounds.md
+            - name: Change Your Look with a Skin Pack
+              href: Documents/SkinPack.md
+            - name: Overwriting Vanilla Assets
+              href: Documents/OverwritingAssets.md
+        - name: Changing the Game
+          items:
+            - name: Survival Spawn Creation
+              href: Documents/SurvivalSpawnCreation.md
+            - name: Introduction to Game Rules
+              href: Documents/IntroductionToGamerules.md
             - name: Create an In-World Game with Commands
               href: Documents/CreateAnInWorldGame.md
+            - name: Create a Village with Structure Blocks
+              href: Documents/Structures/StructureBlocksCommandTutorial.md
+            - name: Create a Loot Table
+              href: Documents/CreateLootTable.md
             - name: Non-Player Character (NPC) Dialogue
               href: Documents/NPCDialogue.md
-        - name: Bedrock Creator Camp 2025
-          href: Documents/CreatorCamp.md
+        - name: Get to Know the Tools
+          items:
+            - name: Minecraft Creator Tools
+              href: Documents/MCToolsOverview.md
+            - name: "World Editing: Bedrock Editor"
+              href: Documents/BedrockEditor/EditorOverview.md
+            - name: "Model Editing: Blockbench"
+              href: Documents/Blockbench.md
+            - name: Other Commonly Used Tools
+              href: Documents/CommonlyUsedTools.md
     - name: Concepts
       items:
         - name: Getting Started with Add-Ons
@@ -126,7 +146,7 @@
           href: Documents/MoreInfoSources.md
         - name: Minecraft File Extensions
           href: Documents/MinecraftFileExtensions.md
-        - name: Add-on Pack Contents
+        - name: Add-On Pack Contents
           href: Documents/ComprehensivePackContents.md
         - name: "Experimental Features in Minecraft: Bedrock Edition"
           href: Documents/ExperimentalFeaturesToggle.md

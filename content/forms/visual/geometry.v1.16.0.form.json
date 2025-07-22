@@ -80,7 +80,7 @@
                     "dataType": 2,
                     "id": "parent",
                     "title": "Parent",
-                    "description": "Bone that this bone is relative to.  If the parent bone moves, this bone will move along with it.",
+                    "description": "Bone that this bone is relative to. If the parent bone moves, this bone will move along with it.",
                     "isRequired": false
                   },
                   {
@@ -154,7 +154,7 @@
                           "dataType": 16,
                           "id": "uv",
                           "title": "Uv",
-                          "description": "This is an alternate per-face uv mapping which specifies each face of the cube.  Omitting a face will cause that face to not get drawn.",
+                          "description": "This is an alternate per-face uv mapping which specifies each face of the cube. Omitting a face will cause that face to not get drawn.",
                           "isRequired": false,
                           "subForm": {
                             "fields": [
@@ -358,7 +358,7 @@
                     "dataType": 34,
                     "id": "binding",
                     "title": "Binding",
-                    "description": "useful for items.  A molang expression specifying the bone name of the parent skeletal hierarchy that this bone should use as the root transform.  Without this field it will look for a bone in the parent entity with the same name as this bone.  If both are missing, it will assume a local skeletal hierarchy (via the \"parent\" field).  If that is also missing, it will attach to the owning entity's root transform.",
+                    "description": "Useful for items. A molang expression specifying the bone name of the parent skeletal hierarchy that this bone should use as the root transform. Without this field it will look for a bone in the parent entity with the same name as this bone. If both are missing, it will assume a local skeletal hierarchy (via the \"parent\" field). If that is also missing, it will attach to the owning entity's root transform.",
                     "isRequired": false
                   },
                   {
@@ -395,7 +395,7 @@
                         "dataType": 24,
                         "id": "locators",
                         "title": "<identifier>",
-                        "description": "This is a list of locators associated with this bone.  A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation).",
+                        "description": "This is a list of locators associated with this bone. A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation).",
                         "isRequired": false,
                         "keyDescription": "<identifier>"
                       }
@@ -405,7 +405,7 @@
                     "dataType": 14,
                     "id": "poly_mesh",
                     "title": "Poly Mesh",
-                    "description": "***EXPERIMENTAL*** A triangle or quad mesh object.  Can be used in conjunction with cubes and texture geometry.",
+                    "description": "A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry.",
                     "isRequired": false,
                     "subForm": {
                       "fields": [
@@ -413,7 +413,7 @@
                           "dataType": 1,
                           "id": "normalized_uvs",
                           "title": "Normalized Uvs",
-                          "description": "If true, UVs are assumed to be [0-1].  If false, UVs are assumed to be [0-texture_width] and [0-texture_height] respectively.",
+                          "description": "If true, UVs are assumed to be [0-1]. If false, UVs are assumed to be [0-texture_width] and [0-texture_height] respectively.",
                           "isRequired": false
                         },
                         {
@@ -479,6 +479,13 @@
                           "id": "scale",
                           "title": "Scale",
                           "isRequired": false
+                        },
+                        {
+                          "dataType": 1,
+                          "id": "use_pixel_depth",
+                          "title": "Use Pixel Depth",
+                          "description": "If set to \"true\", the geometry will have a depth of one pixel (in entity space, not texture space). This causes geometries with a texture resolution different from 16x16 to appear stretched. If set to \"false\", the geometry will be built from perfectly cubic voxels, no matter the texture's aspect ratio. The default value is \"true\".",
+                          "isRequired": false
                         }
                       ]
                     },
@@ -487,7 +494,7 @@
                         "dataType": 17,
                         "id": "texture_meshes",
                         "title": "Texture Meshes",
-                        "description": "***EXPERIMENTAL*** Adds a mesh to the bone's geometry by converting texels in a texture into boxes",
+                        "description": "Adds a mesh to the bone's geometry by converting texels in a texture into voxels.",
                         "isRequired": false
                       }
                     ]

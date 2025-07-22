@@ -198,3 +198,5 @@
   href: weather.md
 - name: weather_at_position
   href: weather_at_position.md
+- name: y_rotation
+  href: y_rotation.md

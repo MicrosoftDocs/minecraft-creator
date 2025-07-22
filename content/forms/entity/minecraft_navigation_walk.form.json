@@ -454,6 +454,15 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:navigation.walk/",
+          "content": {
+            "avoid_water": true,
+            "avoid_damage_blocks": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/cow.json": [
         {
           "path": "/minecraft:entity/components/minecraft:navigation.walk/",

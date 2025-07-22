@@ -4,15 +4,14 @@ ms.author: mikeam
 title: 'Change Your Look: An Introduction To Skin Packs'
 description: "An introduction to Skin Packs."
 ms.service: minecraft-bedrock-edition
+ms.date: 07/17/2025
 ---
 
 # Introduction to Skin Packs
 
-It takes only a few files to create a custom player skin in Minecraft.
+It takes only a few files to create a custom player skin in Minecraft. These are the usual ones found in most add-on packs:
 
-These are the usual ones found in most add-on packs:
-
-- en_US.lang - This file is lives in the **texts** folder and the name might be different, depending on your language preferences
+- en_US.lang - This file lives in the **texts** folder and the name might be different, depending on your language preferences
 - manifest.json
 
 And these are the files specific to a skin pack:
@@ -147,7 +146,7 @@ If Minecraft doesn't recognize your skin, then go to the main Minecraft Settings
 
 ## What's Next?
 
-Now that you know more about how skin packs work, maybe you should learn more about how the other add-on packs work.
+Now that you know more about how skin packs work, maybe you should learn more about how the other Add-On packs work.
 
 > [!div class="nextstepaction"]
-> [Comprehensive Add-on Pack Contents](ComprehensivePackContents.md)
+> [Comprehensive Add-On Pack Contents](ComprehensivePackContents.md)

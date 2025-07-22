@@ -1,70 +1,74 @@
 ---
-author: iconicNurdle
+author: chipotle
 ms.author: mikeam
 title: Creator Learning Journey
 description: "A guided path through the creator tutorials and related documentation"
 ms.service: minecraft-bedrock-edition
-ms.date: 05/02/2025
+ms.date: 07/18/2025
 ---
 
 # Creator Learning Journey
 
-So you love Minecraft Bedrock and you've been inspired to create or modify a world that is all your own. That's a great place to start!
+You love Minecraft: Bedrock Edition, and you've been inspired to explore what you can do beyond vanilla Minecraft: you want to build your own Add-Ons that modify worlds, introduce new blocks and entities, even make new games within the larger game. You want to become a **Minecraft Creator.**
 
-If you've never done anything like that before, maybe the best first step is to prove that it can be done.
+There's a lot to learn here: Resource and Behavior Packs, textures, even programming in JavaScript and TypeScript. But if you take it one step at a time, you'll get there faster than you think. That's what the Creator Learning Journey is all about.
 
-**You, as a creator, can add your favorite things to our favorite game by using Add-Ons.**
+The articles in the Learning Journey appear in other sections of the Bedrock Edition Learning Portal, so you might have already encountered some of them. The Journey provides a different way to go through them: rather than presenting you with topics and references, it divides them into themed courses. In general, the courses get more complex as they go on, starting with creating your first Behavior Pack up to creating loot tables and working with structure blocks.
 
-Along the way, you will learn how to use computer science stuff like files and directories, JavaScript Object Notation (JSON), reference documentation, and the same tools your fellow creators use to create and test the contents of their Add-On packs.
+## Journey 1: Learn about Add-Ons
 
-Oh! That's a good thing to learn now: resource packs, behavior packs, and skin packs are collectively known as Add-On packs, or just Add-Ons.
+In Minecraft: Bedrock Edition, an **Add-On** is anything that's added to a world to modify it from its original "vanilla" state. An add-on could be a Resource Pack that contains new blocks, a Behavior Pack that changes the way an entity behaves, a Skin Pack that changes the player's look, or a more sophisticated creation that combines all of them.
 
-## Step 1: Learn what goes where
+> [!NOTE]
+> "Add-On" can refer to Marketplace Add-Ons as well as simpler add-ons that just involve Behavior and/or Resource Packs. Generally, we'll use capitalized Add-On for the former and lowercased add-on for the latter.
 
-- [Getting Started with Add-On Development for Bedrock Edition](GettingStarted.md) - Start here to learn about the file and folder structure of Minecraft, specifically, where to put your add-on packs.
+- [Getting Started with Add-On Development for Bedrock Edition](GettingStarted.md): Start here to learn about the file and folder structure Minecraft: Bedrock Edition uses for packs and other assets.
+- [Create Your First Add-On: The Angry Cow](BehaviorPack.md): This is it, your first add-on! This Behavior Pack modifies the existing Minecraft cow to aggressively attack the player.
 
-- [Comprehensive List of Add-on Pack Contents](ComprehensivePackContents.md) - After you get an idea about where your add-on packs will go, here is a page about the structures and content for each of those add-on packs.
+> [!TIP]
+> Curious about the full structure of Add-On packs? Here's a [comprehensive list of contents](./ComprehensivePackContents.md) for future reference!
 
-Just take a quick look and maybe use this later when you plan your packs!
+## Journey 2: Learn about Blocks
 
-## Step 2: Make something
+There's nothing more integral to the Minecraft experience than blocks! Learn how to create a simple custom block, then progressively more complex ones.
 
-This is where we learn to create resource and behavior packs to affect things in the world:
+- [Create Custom Grass Blocks](ResourcePack.md): An introduction to Resource Packs.
+- [Create a Custom Die Block](AddCustomDieBlock.md): A more complicated custom block, with an introduction to geometries and materials. ("Die" is the singular of "dice"; the block will be just fine.)
+- [Create a Sushi Block](AdvancedCustomBlocks.md): Now we get into more advanced custom blocks. This will also introduce [Blockbench](./Blockbench.md), a third-party modeling tool for Minecraft.
+- [Animate a Block Texture](CreateAnimatedBlockTexture.md): Here's how to get animated effects on your block textures.
 
-- [Create Custom Grass Blocks: An Introduction to Resource Packs](ResourcePack.md)
-- [Create an Angry Cow: An Introduction to Behavior Packs](BehaviorPack.md)
+## Journey 3: Learn about Entities and Items
 
-## Step 3: Make more complex things
+Now we're getting into more complex Minecraft elements&mdash;the entities and items that populate your world!
 
-You've mastered the basics, and now it's time to move to the next level. These creations are slightly more complex, but learning about them can help you create a more personalized Minecraft experience.
+- [Create an Entity](IntroductionToAddEntity.md): Entities require _both_ Resource Packs and Behavior Packs. We'll delve into making a new entity&mdash;a robot!
+- [Create a Goblin Chef Entity](MakerSeriesMakingTheGoblinChef.md): This one's a little different: a video tutorial from Mojang's own Peter Sheff, walking through creating a new entity from early design decisions to modeling and animation.
+- [Create a Custom Item](AddCustomItems.md): Apply what you've learned so far to making new items.
 
-- [Add a Custom Sound](AddCustomSounds.md)
-- [Create an Entity](IntroductionToAddEntity.md)
-- [Create a Custom Block](AddCustomDieBlock.md)
-- [Create a Sushi Block: Advanced Custom Blocks](AdvancedCustomBlocks.md)
-- [Create a Custom Item](AddCustomItems.md)
-- [Change Your Look with a Skin Pack](SkinPack.md)
+## Interlude: More Customization
 
-## Advanced stuff that might not use add-on packs
+These articles aren't as much part of the main journey as they are side trips toward points we haven't covered yet.
 
-After you pushed through both the basic and intermediate creations, you come to the top of the mountain. These are the advanced-level tutorials and&mdash;I'm not going to lie&mdash;they can get complex. However, by mastering these creations, you'll bring yourself closer to making your Minecraft dreams into Minecraft reality.
+- [Creating and Adding Custom Sounds](./AddCustomSounds.md): How to add sounds and music to your world.
+- [Changing Your Look With a Skin Pack](./SkinPack.md): Give your player character a makeover!
+- [Overwriting Vanilla Assets](./OverwritingAssets.md): Customize existing assets in the game by overwriting their JSON files.
 
-- [Commonly Used Tools](CommonlyUsedTools.md)
-- [Animate a Block Texture](CreateAnimatedBlockTexture.md)
-- [Create a Goblin Chef Entity](MakerSeriesMakingTheGoblinChef.md)
-- [Create a Loot Table](CreateLootTable.md)
-- [Create a Village with Structure Blocks](StructureBlocksTutorial.md)
-- [Create an In-World Game with Commands](CreateAnInWorldGame.md)
-- [Non-Player Character (NPC) Dialogue](NPCDialogue.md)
-- [Minecraft Bedrock Editor](BedrockEditor/EditorOverview.md)
+## Journey 4: Changing the Game
 
-## Next steps
+These articles dig into advanced creation techniques&mdash;ways to change gameplay elements in Minecraft, and even create games within the larger game!
 
-If you've made it this far, congratulations! You went on an amazing creator experience and came out the other side. Now that you've completed our suggested path, we have good news and better news.
+- [Survival Spawn Creation](./SurvivalSpawnCreation.md): An overview on creating new spans in survival Minecraft.
+- [Introduction to Game Rules](./IntroductionToGamerules.md): Adjust features of the game world.
+- [Create an In-World Game with Commands](CreateAnInWorldGame.md): Learn how to use commands to create new game mechanics.
+- [Create a Village with Structure Blocks](./Structures/StructureBlocksCommandTutorial.md): Learn how to use [structure blocks](./Structures/IntroductionToStructureBlocks.md) to create a whole village.
+- [Create a Loot Table](CreateLootTable.md): Learn how to create a [loot table](./IntroductionToLootTables.md).
+- [Non-Player Character (NPC) Dialogue](NPCDialogue.md): A tutorial on creating dynamic NPC dialogue through branching scripts.
 
-The good news is that you now have an incredible set of skills at your disposal to make custom content and provide players with something unique and fun. The better news is that this is just a small sample of what you can find on the creator learning portal. So take some time and look around, continue to create, and always keep learning!
+## Next steps: get to know the tools
 
-> [!div class="nextstepaction"]
-> [Survival Spawn Creation](SurvivalSpawnCreation.md)
-> [Introduction to Game Rules](IntroductionToGamerules.md)
-> [Bedrock Creator Camp 2025](CreatorCamp.md)
+By now, you've been exposed to some of these tools already. These articles dig into the tools in more depth.
+
+- [Minecraft Creator Tools](./MCToolsOverview.md): An open source toolset from Mojang that helps you start new Minecraft projects.
+- [Bedrock Editor](./BedrockEditor/EditorOverview.md): The editor built into Minecraft: Bedrock Edition.
+- [Blockbench](./Blockbench.md): A third-party editor used for creating new models and textures.
+- [Other Commonly Used Tools](./CommonlyUsedTools.md)

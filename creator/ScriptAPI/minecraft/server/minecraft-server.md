@@ -17,13 +17,14 @@ Contains many types related to manipulating a Minecraft world, including entitie
 ```json
 {
     "module_name": "@minecraft/server",
-    "version": "2.0.0"
+    "version": "2.1.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.100-beta.24 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.110-beta.20 of Minecraft.
 
 ## Available Versions
-- `2.2.0-beta`
+- `2.3.0-beta`
+- `2.1.0`
 - `2.0.0`
 
 ### Prior Versions
@@ -343,6 +344,8 @@ The following API versions are from a major version that is documented here: [*@
 - [LootTableManager](LootTableManager.md)
 - [MessageReceiveAfterEvent](MessageReceiveAfterEvent.md)
 - [MolangVariableMap](MolangVariableMap.md)
+- [PackSettingChangeAfterEvent](PackSettingChangeAfterEvent.md)
+- [PackSettingChangeAfterEventSignal](PackSettingChangeAfterEventSignal.md)
 - [PistonActivateAfterEvent](PistonActivateAfterEvent.md)
 - [PistonActivateAfterEventSignal](PistonActivateAfterEventSignal.md)
 - [Player](Player.md)
@@ -599,8 +602,6 @@ A class that wraps the state of a world - a set of dimensions and the environmen
 
 Type: [*World*](World.md)
 
-## Dependencies
-- [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
-
 ## Peer Dependencies
+- [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
 - `@minecraft/vanilla-data`

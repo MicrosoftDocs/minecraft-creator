@@ -18,6 +18,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:persistent/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/ender_dragon.json": [
         {
           "path": "/minecraft:entity/components/minecraft:persistent/",

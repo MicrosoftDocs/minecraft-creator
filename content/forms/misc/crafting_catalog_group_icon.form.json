@@ -9,33 +9,13 @@
         "id": "icon",
         "title": "Icon",
         "description": "The item or block that represents the group.",
-        "dataType": 2,
-        "alternates": [
-          {
-            "id": "icon",
-            "dataType": 16,
-            "readOnly": true,
-            "subForm": {
-              "id": "icon",
-              "title": "Icon",
-              "fields": [
-                {
-                  "id": "name",
-                  "title": "Name",
-                  "description": "The name of an item or block. A namespace for the item is required. You can optionally provide an aux value for items that use it at the end. Example: namespace:my_item:1",
-                  "dataType": 2,
-                  "validity": [
-                    {
-                      "comparison": "pattern",
-                      "value": "^(?:.)+:(?:.)+$"
-                    }
-                  ],
-                  "isRequired": true
-                }
-              ]
-            }
-          }
-        ]
+        "dataType": 16,
+        "subForm": {
+          "id": "icon",
+          "title": "Icon",
+          "fields": []
+        },
+        "alternates": []
       },
       {
         "id": "name",

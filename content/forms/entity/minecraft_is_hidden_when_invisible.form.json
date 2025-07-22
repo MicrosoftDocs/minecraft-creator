@@ -80,6 +80,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:is_hidden_when_invisible/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/cow.json": [
         {
           "path": "/minecraft:entity/components/minecraft:is_hidden_when_invisible/",

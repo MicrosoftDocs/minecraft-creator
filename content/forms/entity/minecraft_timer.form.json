@@ -128,6 +128,15 @@
               "content": 3
             }
           ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:copper_oxidizing/minecraft:timer/",
+              "content": [
+                25200,
+                27600
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/guardian.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:guardian_passive/minecraft:timer/",
@@ -281,6 +290,14 @@
               "content": {
                 "event": "minecraft:sink",
                 "target": "self"
+              }
+            }
+          ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:copper_oxidizing/minecraft:timer/",
+              "content": {
+                "event": "minecraft:oxidize_copper"
               }
             }
           ],
@@ -531,6 +548,21 @@
             "time_down_event": {
               "event": "minecraft:sink",
               "target": "self"
+            }
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:copper_oxidizing/minecraft:timer/",
+          "content": {
+            "time": [
+              25200,
+              27600
+            ],
+            "looping": true,
+            "time_down_event": {
+              "event": "minecraft:oxidize_copper"
             }
           }
         }

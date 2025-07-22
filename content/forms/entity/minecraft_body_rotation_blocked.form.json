@@ -12,6 +12,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:interacting_with_chest/minecraft:body_rotation_blocked/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/creaking.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:immobile/minecraft:body_rotation_blocked/",

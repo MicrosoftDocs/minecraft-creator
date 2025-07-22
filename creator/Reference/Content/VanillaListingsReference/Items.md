@@ -2,7 +2,7 @@
 author: mammerla
 ms.author: mikeam
 title: "Default Minecraft Item Listings"
-description: "A reference document detailing the items and damage sources used in addons for Minecraft: Bedrock Edition"
+description: "A reference document detailing the items and damage sources used in Add-Ons for Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
 ms.date: 02/11/2025 
 ---
@@ -32,6 +32,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | acacia_planks | -742 |
 | acacia_pressure_plate | -150 |
 | acacia_sapling | -828 |
+| acacia_shelf | -1051 |
 | acacia_sign | 590 |
 | acacia_slab | -807 |
 | acacia_stairs | 163 |
@@ -88,6 +89,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | bamboo_pressure_plate | -514 |
 | bamboo_raft | 669 |
 | bamboo_sapling | -164 |
+| bamboo_shelf | -1056 |
 | bamboo_sign | 668 |
 | bamboo_slab | -513 |
 | bamboo_stairs | -512 |
@@ -125,6 +127,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | birch_planks | -740 |
 | birch_pressure_plate | -151 |
 | birch_sapling | -826 |
+| birch_shelf | -1049 |
 | birch_sign | 588 |
 | birch_slab | -805 |
 | birch_stairs | 135 |
@@ -215,12 +218,12 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | brown_stained_glass | -684 |
 | brown_stained_glass_pane | -654 |
 | brown_terracotta | -735 |
-| brown_wool | -555 |
-| brush | 695 |
-| bubble_column | -160 |
 
 | Name | ID | 
 |:-----------|:-----------|
+| brown_wool | -555 |
+| brush | 695 |
+| bubble_column | -160 |
 | bubble_coral | -582 |
 | bubble_coral_block | -850 |
 | bubble_coral_fan | -841 |
@@ -274,6 +277,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | cherry_planks | -537 |
 | cherry_pressure_plate | -538 |
 | cherry_sapling | -547 |
+| cherry_shelf | -1054 |
 | cherry_sign | 667 |
 | cherry_slab | -539 |
 | cherry_stairs | -541 |
@@ -358,6 +362,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | copper_chestplate | 754 |
 | copper_door | -784 |
 | copper_golem_spawn_egg | 747 |
+| copper_golem_statue | -1039 |
 | copper_grate | -768 |
 | copper_helmet | 753 |
 | copper_hoe | 752 |
@@ -399,6 +404,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | crimson_planks | -242 |
 | crimson_pressure_plate | -262 |
 | crimson_roots | -223 |
+| crimson_shelf | -1057 |
 | crimson_sign | 630 |
 | crimson_slab | -264 |
 | crimson_stairs | -254 |
@@ -415,15 +421,15 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | cut_red_sandstone_double_slab | -928 |
 | cut_red_sandstone_slab | -901 |
 | cut_sandstone | -945 |
+
+| Name | ID | 
+|:-----------|:-----------|
 | cut_sandstone_double_slab | -927 |
 | cut_sandstone_slab | -900 |
 | cyan_candle | -422 |
 | cyan_candle_cake | -439 |
 | cyan_carpet | -605 |
 | cyan_concrete | -636 |
-
-| Name | ID | 
-|:-----------|:-----------|
 | cyan_concrete_powder | -717 |
 | cyan_dye | 405 |
 | cyan_glazed_terracotta | 229 |
@@ -449,6 +455,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | dark_oak_planks | -743 |
 | dark_oak_pressure_plate | -152 |
 | dark_oak_sapling | -829 |
+| dark_oak_shelf | -1052 |
 | dark_oak_sign | 591 |
 | dark_oak_slab | -808 |
 | dark_oak_stairs | 164 |
@@ -617,6 +624,9 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | element_47 | -58 |
 | element_48 | -59 |
 | element_49 | -60 |
+
+| Name | ID | 
+|:-----------|:-----------|
 | element_5 | -16 |
 | element_50 | -61 |
 | element_51 | -62 |
@@ -624,9 +634,6 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | element_53 | -64 |
 | element_54 | -65 |
 | element_55 | -66 |
-
-| Name | ID | 
-|:-----------|:-----------|
 | element_56 | -67 |
 | element_57 | -68 |
 | element_58 | -69 |
@@ -709,6 +716,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | exposed_copper_bulb | -777 |
 | exposed_copper_chest | -1032 |
 | exposed_copper_door | -785 |
+| exposed_copper_golem_statue | -1040 |
 | exposed_copper_grate | -769 |
 | exposed_copper_trapdoor | -793 |
 | exposed_cut_copper | -348 |
@@ -819,6 +827,9 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | green_shulker_box | -625 |
 | green_stained_glass | -685 |
 | green_stained_glass_pane | -655 |
+
+| Name | ID | 
+|:-----------|:-----------|
 | green_terracotta | -736 |
 | green_wool | -560 |
 | grindstone | -195 |
@@ -827,9 +838,6 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | guster_banner_pattern | 601 |
 | guster_pottery_sherd | 682 |
 | hanging_roots | -319 |
-
-| Name | ID | 
-|:-----------|:-----------|
 | happy_ghast_spawn_egg | 730 |
 | hard_black_stained_glass | -702 |
 | hard_black_stained_glass_pane | -672 |
@@ -963,6 +971,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | jungle_planks | -741 |
 | jungle_pressure_plate | -153 |
 | jungle_sapling | -827 |
+| jungle_shelf | -1050 |
 | jungle_sign | 589 |
 | jungle_slab | -806 |
 | jungle_stairs | 136 |
@@ -1021,6 +1030,9 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | light_blue_shulker_box | -615 |
 | light_blue_stained_glass | -675 |
 | light_blue_stained_glass_pane | -645 |
+
+| Name | ID | 
+|:-----------|:-----------|
 | light_blue_terracotta | -726 |
 | light_blue_wool | -562 |
 | light_gray_candle | -421 |
@@ -1030,9 +1042,6 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | light_gray_concrete_powder | -716 |
 | light_gray_dye | 406 |
 | light_gray_harness | 738 |
-
-| Name | ID | 
-|:-----------|:-----------|
 | light_gray_shulker_box | -620 |
 | light_gray_stained_glass | -680 |
 | light_gray_stained_glass_pane | -650 |
@@ -1100,6 +1109,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | mangrove_pressure_plate | -490 |
 | mangrove_propagule | -474 |
 | mangrove_roots | -482 |
+| mangrove_shelf | -1053 |
 | mangrove_sign | 650 |
 | mangrove_slab | -489 |
 | mangrove_stairs | -488 |
@@ -1211,6 +1221,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | oak_log | 17 |
 | oak_planks | 5 |
 | oak_sapling | 6 |
+| oak_shelf | -1047 |
 | oak_sign | 361 |
 | oak_slab | 158 |
 | oak_stairs | 53 |
@@ -1222,6 +1233,9 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | ominous_bottle | 607 |
 | [ominous_trial_key](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/items/ominous_trial_key.json) | 722 |
 | open_eyeblossom | -1018 |
+
+| Name | ID | 
+|:-----------|:-----------|
 | orange_candle | -414 |
 | orange_candle_cake | -431 |
 | orange_carpet | -597 |
@@ -1233,9 +1247,6 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | orange_shulker_box | -613 |
 | orange_stained_glass | -673 |
 | orange_stained_glass_pane | -643 |
-
-| Name | ID | 
-|:-----------|:-----------|
 | orange_terracotta | -724 |
 | orange_tulip | -834 |
 | orange_wool | -557 |
@@ -1245,6 +1256,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | oxidized_copper_bulb | -779 |
 | oxidized_copper_chest | -1034 |
 | oxidized_copper_door | -787 |
+| oxidized_copper_golem_statue | -1042 |
 | oxidized_copper_grate | -771 |
 | oxidized_copper_trapdoor | -795 |
 | oxidized_cut_copper | -350 |
@@ -1270,6 +1282,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | pale_oak_planks | -996 |
 | pale_oak_pressure_plate | -997 |
 | pale_oak_sapling | -1006 |
+| pale_oak_shelf | -1055 |
 | pale_oak_sign | 725 |
 | pale_oak_slab | -998 |
 | pale_oak_stairs | -1000 |
@@ -1423,6 +1436,9 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | raw_copper_block | -452 |
 | raw_gold | 518 |
 | raw_gold_block | -453 |
+
+| Name | ID | 
+|:-----------|:-----------|
 | raw_iron | 517 |
 | raw_iron_block | -451 |
 | recovery_compass | 662 |
@@ -1436,9 +1452,6 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | red_glazed_terracotta | 234 |
 | red_harness | 744 |
 | red_mushroom | 40 |
-
-| Name | ID | 
-|:-----------|:-----------|
 | red_mushroom_block | 100 |
 | red_nether_brick | 215 |
 | red_nether_brick_double_slab | -917 |
@@ -1580,6 +1593,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | spruce_planks | -739 |
 | spruce_pressure_plate | -154 |
 | spruce_sapling | -825 |
+| spruce_shelf | -1048 |
 | spruce_sign | 587 |
 | spruce_slab | -804 |
 | spruce_stairs | 134 |
@@ -1625,6 +1639,9 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | stripped_acacia_wood | -823 |
 | stripped_bamboo_block | -528 |
 | stripped_birch_log | -6 |
+
+| Name | ID | 
+|:-----------|:-----------|
 | stripped_birch_wood | -821 |
 | stripped_cherry_log | -535 |
 | stripped_cherry_wood | -545 |
@@ -1639,9 +1656,6 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | stripped_oak_log | -10 |
 | stripped_oak_wood | -819 |
 | stripped_pale_oak_log | -994 |
-
-| Name | ID | 
-|:-----------|:-----------|
 | stripped_pale_oak_wood | -1004 |
 | stripped_spruce_log | -5 |
 | stripped_spruce_wood | -820 |
@@ -1734,6 +1748,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | warped_planks | -243 |
 | warped_pressure_plate | -263 |
 | warped_roots | -224 |
+| warped_shelf | -1058 |
 | warped_sign | 631 |
 | warped_slab | -265 |
 | warped_stairs | -255 |
@@ -1750,6 +1765,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | waxed_copper_bulb | -780 |
 | waxed_copper_chest | -1035 |
 | waxed_copper_door | -788 |
+| waxed_copper_golem_statue | -1043 |
 | waxed_copper_grate | -772 |
 | waxed_copper_trapdoor | -796 |
 | waxed_cut_copper | -351 |
@@ -1761,6 +1777,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | waxed_exposed_copper_bulb | -781 |
 | waxed_exposed_copper_chest | -1036 |
 | waxed_exposed_copper_door | -789 |
+| waxed_exposed_copper_golem_statue | -1044 |
 | waxed_exposed_copper_grate | -773 |
 | waxed_exposed_copper_trapdoor | -797 |
 | waxed_exposed_cut_copper | -352 |
@@ -1772,6 +1789,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | waxed_oxidized_copper_bulb | -783 |
 | waxed_oxidized_copper_chest | -1038 |
 | waxed_oxidized_copper_door | -791 |
+| waxed_oxidized_copper_golem_statue | -1046 |
 | waxed_oxidized_copper_grate | -775 |
 | waxed_oxidized_copper_trapdoor | -799 |
 | waxed_oxidized_cut_copper | -447 |
@@ -1783,6 +1801,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | waxed_weathered_copper_bulb | -782 |
 | waxed_weathered_copper_chest | -1037 |
 | waxed_weathered_copper_door | -790 |
+| waxed_weathered_copper_golem_statue | -1045 |
 | waxed_weathered_copper_grate | -774 |
 | waxed_weathered_copper_trapdoor | -798 |
 | waxed_weathered_cut_copper | -353 |
@@ -1795,6 +1814,7 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | weathered_copper_bulb | -778 |
 | weathered_copper_chest | -1033 |
 | weathered_copper_door | -786 |
+| weathered_copper_golem_statue | -1041 |
 | weathered_copper_grate | -770 |
 | weathered_copper_trapdoor | -794 |
 | weathered_cut_copper | -349 |
@@ -1822,6 +1842,9 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | white_wool | 35 |
 | wild_armor_trim_smithing_template | 700 |
 | wildflowers | -1024 |
+
+| Name | ID | 
+|:-----------|:-----------|
 | [wind_charge](https://github.com/Mojang/bedrock-samples/blob/preview/behavior_pack/items/wind_charge.json) | 378 |
 | witch_spawn_egg | 457 |
 | wither_rose | -216 |
@@ -1842,9 +1865,6 @@ Listed below are the available Items for use in Minecraft: Bedrock Edition.
 | wooden_sword | 310 |
 | wool | 758 |
 | writable_book | 522 |
-
-| Name | ID | 
-|:-----------|:-----------|
 | written_book | 523 |
 | yellow_candle | -417 |
 | yellow_candle_cake | -434 |

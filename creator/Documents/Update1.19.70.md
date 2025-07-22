@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.19.70 Update Notes
 description: Update summary of Creator changes in Bedrock 1.19.70
 ms.service: minecraft-bedrock-edition
+ms.date: 07/17/2025
 ---
 # Minecraft Bedrock 1.19.70 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.19.70 and there are a number of changes of note for add-on creators.
+Minecraft Bedrock has been updated to 1.19.70 and there are a number of changes of note for creators.
 
 ## Holiday Creator Features ##
 

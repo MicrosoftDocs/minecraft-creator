@@ -386,7 +386,7 @@ function applyDamageThenHeal(
 applyImpulse(vector: Vector3): void
 `
 
-Applies impulse vector to the current velocity of the entity. Note that this method throws an error if called on Players and will have no impact.
+Applies impulse vector to the current velocity of the entity.
 
 #### **Parameters**
 - **vector**: [*Vector3*](Vector3.md)
@@ -396,7 +396,7 @@ Applies impulse vector to the current velocity of the entity. Note that this met
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidEntityError*](InvalidEntityError.md)
 
 #### Examples
 
@@ -487,12 +487,12 @@ Notes:
 clearVelocity(): void
 `
 
-Sets the current velocity of the Entity to zero. Note that this method throws an error if called on Players and will have no impact.
+Sets the current velocity of the Entity to zero.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
 
 #### Examples
 
@@ -578,7 +578,7 @@ Notes:
 
 ### **getComponent**
 `
-getComponent(componentId: T): EntityComponentReturnType<T> | undefined
+getComponent(componentId: T): EntityComponentReturnType<T> | void
 `
 
 Gets a component (that represents additional capabilities) for an entity.
@@ -588,7 +588,7 @@ Gets a component (that represents additional capabilities) for an entity.
   
   The identifier of the component (e.g., 'minecraft:health'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.EntityComponentTypes*](../../../priorscriptapi/minecraft/server-1xx/EntityComponentTypes.md) enum.
 
-**Returns** *EntityComponentReturnType<T> | undefined* - Returns the component if it exists on the entity, otherwise undefined.
+**Returns** *EntityComponentReturnType<T>* | *void* - Returns the component if it exists on the entity, otherwise undefined.
 
 ### **getComponents**
 `

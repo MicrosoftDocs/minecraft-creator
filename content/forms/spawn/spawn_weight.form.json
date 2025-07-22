@@ -1,0 +1,21 @@
+{
+  "id": "Spawn Weight",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Spawn Weight",
+    "title": "Spawn Weight Spawn",
+    "fields": [
+      {
+        "id": "default",
+        "title": "Default",
+        "dataType": 0,
+        "isRequired": true
+      },
+      {
+        "id": "rarity",
+        "title": "Rarity",
+        "dataType": 0
+      }
+    ]
+  }
+}

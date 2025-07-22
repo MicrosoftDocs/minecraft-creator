@@ -14,7 +14,7 @@ Properties of the Number timeline property item entry
 ## Properties
 
 ### **color**
-`color: minecraftserver.RGBA;`
+`color?: minecraftserver.RGBA;`
 
 Type: *minecraftserver.RGBA*
 

@@ -39,18 +39,13 @@ Type: [*ClientSystemInfo*](ClientSystemInfo.md)
 Notes:
   - This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **commandPermissionLevel**
 `commandPermissionLevel: CommandPermissionLevel;`
 
 Type: [*CommandPermissionLevel*](CommandPermissionLevel.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can't be edited in read-only mode.
-::: moniker-end
 
 ### **graphicsMode**
 `read-only graphicsMode: GraphicsMode;`
@@ -147,19 +142,14 @@ Type: [*ScreenDisplay*](ScreenDisplay.md)
 Notes:
   - This property can throw errors when used.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerPermissionLevel**
 `read-only playerPermissionLevel: PlayerPermissionLevel;`
 
 Type: [*PlayerPermissionLevel*](PlayerPermissionLevel.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end
 
 ### **selectedSlotIndex**
 `selectedSlotIndex: number;`

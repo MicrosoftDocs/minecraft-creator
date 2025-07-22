@@ -14,7 +14,7 @@ Block Table Entry info for block table property item
 ## Properties
 
 ### **count**
-`count: number;`
+`count?: number;`
 
 The quantity number of the same block in the selection.
 

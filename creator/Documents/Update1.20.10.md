@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.20.10 Update Notes
 description: Update summary of Creator changes in Bedrock 1.20.10
 ms.service: minecraft-bedrock-edition
+ms.date: 07/11/2023
 ---
 # Minecraft Bedrock 1.20.10 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.20.10 and there are a number of changes of note for add-on creators. The following features do not require experimental toggles.
+Minecraft Bedrock has been updated to 1.20.10 and there are a number of changes of note for creators. The following features do not require experimental toggles.
 
 ## Holiday Creator Features
 
@@ -20,11 +21,11 @@ Several Item Components have released and are now available without using the Ho
 - [shooter](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_shooter.md)
 - [projectile](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_projectile.md)
 - [throwable](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_throwable.md)
-- [can_destroy_in_creative](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_can_destroy_in_creative.md)
-- [hover_text_color](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_hover_text_color.md)
-- [max_stack_size](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_max_stack_size.md)
+- [can\_destroy\_in\_creative](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_can_destroy_in_creative.md)
+- [hover\_text\_color](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_hover_text_color.md)
+- [max\_stack\_size](../Reference/Content/ItemReference/Examples/ItemComponents/minecraft_max_stack_size.md)
 
-Additionally, [bone_visibility](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_geometry.md#bone_visibility) (part of the [geometry](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_geometry.md) Block component) has Molang capability added, restoring the functionality to be closer to the original experimental part_visibility component.
+Additionally, bone\_visibility (part of the [geometry](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_geometry.md) Block component) has Molang capability added, restoring the functionality to be closer to the original experimental part\_visibility component.
 
 ## Creator API
 
@@ -34,62 +35,62 @@ A fourth set of Creator APIs have been released out of beta and into stable (see
 
 - **Entity and Item spawning**
   - Dimension
-    - [spawnEntity()](../ScriptAPI/minecraft/server/Dimension.md#spawnentity)
-    - [spawnItem()](../ScriptAPI/minecraft/server/Dimension.md#spawnitem)
+    - [spawnEntity()](../PriorScriptAPI/minecraft/server-1xx/Dimension.md#spawnentity)
+    - [spawnItem()](../PriorScriptAPI/minecraft/server-1xx/Dimension.md#spawnitem)
 - **Entity relocation/teleportation**
   - Entity
-    - [teleport()](../ScriptAPI/minecraft/server/Entity.md#teleport)
-    - [tryTeleport()](../ScriptAPI/minecraft/server/Entity.md#tryteleport)
-    - [TeleportOptions](../ScriptAPI/minecraft/server/TeleportOptions.md)
-  - [Vector2](../ScriptAPI/minecraft/server/Vector2.md)
+    - [teleport()](../PriorScriptAPI/minecraft/server-1xx/Entity.md#teleport)
+    - [tryTeleport()](../PriorScriptAPI/minecraft/server-1xx/Entity.md#tryteleport)
+    - [TeleportOptions](../PriorScriptAPI/minecraft/server-1xx/TeleportOptions.md)
+  - [Vector2](../PriorScriptAPI/minecraft/server-1xx/Vector2.md)
 - **Entity Effects create/read/update/delete**
   - Entity
-    - [addEffect()](../ScriptAPI/minecraft/server/Entity.md#addeffect)
-    - [getEffect()](../ScriptAPI/minecraft/server/Entity.md#geteffect)
-    - [getEffects()](../ScriptAPI/minecraft/server/Entity.md#geteffects)
-    - [removeEffect()](../ScriptAPI/minecraft/server/Entity.md#removeeffect)
+    - [addEffect()](../PriorScriptAPI/minecraft/server-1xx/Entity.md#addeffect)
+    - [getEffect()](../PriorScriptAPI/minecraft/server-1xx/Entity.md#geteffect)
+    - [getEffects()](../PriorScriptAPI/minecraft/server-1xx/Entity.md#geteffects)
+    - [removeEffect()](../PriorScriptAPI/minecraft/server-1xx/Entity.md#removeeffect)
   - Effect
-    - [amplifier](../ScriptAPI/minecraft/server/Effect.md#amplifier)
-    - [displayName](../ScriptAPI/minecraft/server/Effect.md#displayname)
-    - [duration](../ScriptAPI/minecraft/server/Effect.md#duration)
-    - [typeId](../ScriptAPI/minecraft/server/Effect.md#typeid)
+    - [amplifier](../PriorScriptAPI/minecraft/server-1xx/Effect.md#amplifier)
+    - [displayName](../PriorScriptAPI/minecraft/server-1xx/Effect.md#displayname)
+    - [duration](../PriorScriptAPI/minecraft/server-1xx/Effect.md#duration)
+    - [typeId](../PriorScriptAPI/minecraft/server-1xx/Effect.md#typeid)
   - EffectType
-    - [getName()](../ScriptAPI/minecraft/server/EffectType.md#getname)
-    - [EntityEffectOptions](../ScriptAPI/minecraft/server/EntityEffectOptions.md)
+    - [getName()](../PriorScriptAPI/minecraft/server-1xx/EffectType.md#getname)
+    - [EntityEffectOptions](../PriorScriptAPI/minecraft/server-1xx/EntityEffectOptions.md)
 - **Entity Health components**
-  - [EntityAttributeComponent](../ScriptAPI/minecraft/server/EntityAttributeComponent.md)
-  - [EntityHealthComponent](../ScriptAPI/minecraft/server/EntityHealthComponent.md)
-  - [EntityHealableComponent](../ScriptAPI/minecraft/server/EntityHealableComponent.md)
-  - [FeedItem](../ScriptAPI/minecraft/server/FeedItem.md)
-  - [FeedItemEffect](../ScriptAPI/minecraft/server/FeedItemEffect.md)
+  - [EntityAttributeComponent](../PriorScriptAPI/minecraft/server-1xx/EntityAttributeComponent.md)
+  - [EntityHealthComponent](../PriorScriptAPI/minecraft/server-1xx/EntityHealthComponent.md)
+  - [EntityHealableComponent](../PriorScriptAPI/minecraft/server-1xx/EntityHealableComponent.md)
+  - [FeedItem](../PriorScriptAPI/minecraft/server-1xx/FeedItem.md)
+  - [FeedItemEffect](../PriorScriptAPI/minecraft/server-1xx/FeedItemEffect.md)
 - **Player join/spawn/leave events**
-  - [PlayerJoinAfterEvent](../ScriptAPI/minecraft/server/PlayerJoinAfterEvent.md)
-  - [PlayerJoinAfterEventSignal](../ScriptAPI/minecraft/server/PlayerJoinAfterEventSignal.md)
-  - [IPlayerJoinAfterEventSignal](../ScriptAPI/minecraft/server/IPlayerJoinAfterEventSignal.md)
-  - [PlayerLeaveAfterEvent](../ScriptAPI/minecraft/server/PlayerLeaveAfterEvent.md)
-  - [PlayerLeaveAfterEventSignal](../ScriptAPI/minecraft/server/PlayerLeaveAfterEventSignal.md)
-  - [IPlayerLeaveAfterEventSignal](../ScriptAPI/minecraft/server/IPlayerLeaveAfterEventSignal.md)
-  - [PlayerSpawnAfterEvent](../ScriptAPI/minecraft/server/PlayerSpawnAfterEvent.md)
-  - [PlayerSpawnAfterEventSignal](../ScriptAPI/minecraft/server/PlayerSpawnAfterEventSignal.md)
-  - [IPlayerSpawnAfterEventSignal](../ScriptAPI/minecraft/server/IPlayerSpawnAfterEventSignal.md)
+  - [PlayerJoinAfterEvent](../PriorScriptAPI/minecraft/server-1xx/PlayerJoinAfterEvent.md)
+  - [PlayerJoinAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/PlayerJoinAfterEventSignal.md)
+  - [IPlayerJoinAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/IPlayerJoinAfterEventSignal.md)
+  - [PlayerLeaveAfterEvent](../PriorScriptAPI/minecraft/server-1xx/PlayerLeaveAfterEvent.md)
+  - [PlayerLeaveAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/PlayerLeaveAfterEventSignal.md)
+  - [IPlayerLeaveAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/IPlayerLeaveAfterEventSignal.md)
+  - [PlayerSpawnAfterEvent](../PriorScriptAPI/minecraft/server-1xx/PlayerSpawnAfterEvent.md)
+  - [PlayerSpawnAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/PlayerSpawnAfterEventSignal.md)
+  - [IPlayerSpawnAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/IPlayerSpawnAfterEventSignal.md)
 - **WorldAfterEvents**
-  - [playerJoin](../ScriptAPI/minecraft/server/WorldAfterEvents.md#playerjoin)
-  - [playerLeave](../ScriptAPI/minecraft/server/WorldAfterEvents.md#playerleave)
-  - [playerSpawn](../ScriptAPI/minecraft/server/WorldAfterEvents.md#playerspawn)
+  - [playerJoin](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#playerjoin)
+  - [playerLeave](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#playerleave)
+  - [playerSpawn](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#playerspawn)
 - **Basic Block After Events (Button Push and Lever Action)**
-  - [ButtonPushAfterEvent](../ScriptAPI/minecraft/server/ButtonPushAfterEvent.md)
-  - [ButtonPushAfterEventSignal](../ScriptAPI/minecraft/server/ButtonPushAfterEventSignal.md)
-  - [IButtonPushAfterEventSignal](../ScriptAPI/minecraft/server/IButtonPushAfterEventSignal.md)
-  - [LeverActionAfterEvent](../ScriptAPI/minecraft/server/LeverActionAfterEvent.md)
-  - [LeverActionAfterEventSignal](../ScriptAPI/minecraft/server/LeverActionAfterEventSignal.md)
-  - [ILeverActionAfterEventSignal](../ScriptAPI/minecraft/server/ILeverActionAfterEventSignal.md)
+  - [ButtonPushAfterEvent](../PriorScriptAPI/minecraft/server-1xx/ButtonPushAfterEvent.md)
+  - [ButtonPushAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/ButtonPushAfterEventSignal.md)
+  - [IButtonPushAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/IButtonPushAfterEventSignal.md)
+  - [LeverActionAfterEvent](../PriorScriptAPI/minecraft/server-1xx/LeverActionAfterEvent.md)
+  - [LeverActionAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/LeverActionAfterEventSignal.md)
+  - [ILeverActionAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/ILeverActionAfterEventSignal.md)
 - **WorldAfterEvents**
-  - [buttonPush](../ScriptAPI/minecraft/server/WorldAfterEvents.md#buttonpush)
-  - [leverAction](../ScriptAPI/minecraft/server/WorldAfterEvents.md#leveraction)
+  - [buttonPush](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#buttonpush)
+  - [leverAction](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#leveraction)
 - **Basic Block Component Model**
   - Block
-    - [getComponent()](../ScriptAPI/minecraft/server/Block.md#getcomponent)
-    - [BlockComponent](../ScriptAPI/minecraft/server/BlockComponent.md)
+    - [getComponent()](../PriorScriptAPI/minecraft/server-1xx/Block.md#getcomponent)
+    - [BlockComponent](../PriorScriptAPI/minecraft/server-1xx/BlockComponent.md)
 
 Beta APIs will continue to be developed behind the Beta API experimental flag so if you want to use those, make sure you have that flag enabled and your manifest.json references will need to update to 1.4.0-beta. Read more about [script versioning](ScriptVersioning.md).
 

@@ -76,7 +76,6 @@ Notes:
   - This property can throw errors when used.
     - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **localizationKey**
 `read-only localizationKey: string;`
 
@@ -84,13 +83,9 @@ Key for the localization of this block's name used in .lang files.
 
 Type: *string*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
-::: moniker-end
 
 ### **location**
 `read-only location: Vector3;`
@@ -326,7 +321,7 @@ Notes:
 
 ### **getComponent**
 `
-getComponent(componentId: T): BlockComponentReturnType<T> | undefined
+getComponent(componentId: T): BlockComponentReturnType<T> | void
 `
 
 Gets a component (that represents additional capabilities) for a block - for example, an inventory component of a chest block.
@@ -336,7 +331,7 @@ Gets a component (that represents additional capabilities) for a block - for exa
   
   The identifier of the component (e.g., 'minecraft:inventory'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs are those in the [*@minecraft/server.BlockComponentTypes*](../../../scriptapi/minecraft/server/BlockComponentTypes.md) enum and custom component IDs registered with the [*@minecraft/server.BlockComponentRegistry*](../../../scriptapi/minecraft/server/BlockComponentRegistry.md).
 
-**Returns** *BlockComponentReturnType<T> | undefined* - Returns the component if it exists on the block, otherwise undefined.
+**Returns** *BlockComponentReturnType<T>* | *void* - Returns the component if it exists on the block, otherwise undefined.
   
 Notes:
 - This function can throw errors.

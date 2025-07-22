@@ -3064,8 +3064,8 @@
         "dataType": 16
       },
       {
-        "id": "minecraft:dash",
-        "title": "Minecraft Dash",
+        "id": "minecraft:dash_action",
+        "title": "Minecraft Dash Action",
         "description": "Dynamic value",
         "dataType": 16
       },
@@ -3190,6 +3190,12 @@
         "dataType": 16
       },
       {
+        "id": "minecraft:free_camera_controlled",
+        "title": "Minecraft Free Camera Controlled",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
         "id": "minecraft:friction_modifier",
         "title": "Minecraft Friction Modifier",
         "description": "Dynamic value",
@@ -3276,12 +3282,6 @@
       {
         "id": "minecraft:ignore_cannot_be_attacked",
         "title": "Minecraft Ignore Cannot Be Attacked",
-        "description": "Dynamic value",
-        "dataType": 16
-      },
-      {
-        "id": "minecraft:input_air_controlled",
-        "title": "Minecraft Input Air Controlled",
         "description": "Dynamic value",
         "dataType": 16
       },
@@ -3912,9 +3912,8 @@
       {
         "id": "minecraft:tick_world",
         "title": "Minecraft Tick World",
-        "description": "Defines if the entity ticks the world and the radius around it to tick.",
-        "dataType": 16,
-        "subFormId": "entity/minecraft_tick_world"
+        "description": "Dynamic value",
+        "dataType": 16
       },
       {
         "id": "minecraft:timer",
@@ -3985,6 +3984,12 @@
       {
         "id": "minecraft:variant",
         "title": "Minecraft Variant",
+        "description": "Dynamic value",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:vertical_movement_action",
+        "title": "Minecraft Vertical Movement Action",
         "description": "Dynamic value",
         "dataType": 16
       },

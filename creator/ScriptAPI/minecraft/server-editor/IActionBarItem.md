@@ -14,11 +14,11 @@ Registered item handle in the Action Bar collection.
 ## Properties
 
 ### **getEnabled**
-`getEnabled: () => boolean;`
+`getEnabled: () => void;`
 
 Returns the current enabled state of the item.
 
-Type: *() => boolean*
+Type: () => void
 
 ### **id**
 `read-only id: string;`
@@ -35,8 +35,8 @@ Text label of the item.
 Type: *string*
 
 ### **setEnabled**
-`setEnabled: (enabled: boolean) => void;`
+`setEnabled: () => void;`
 
 Modify enabled state of the item.
 
-Type: *(enabled: boolean) => void*
+Type: () => void

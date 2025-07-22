@@ -352,6 +352,17 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",
+          "content": {
+            "test": "in_lava",
+            "subject": "self",
+            "operator": "==",
+            "value": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/cow.json": [
         {
           "path": "/minecraft:entity/components/minecraft:hurt_on_condition/damage_conditions/0/filters/",

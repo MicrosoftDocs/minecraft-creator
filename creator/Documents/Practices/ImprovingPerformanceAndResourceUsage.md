@@ -4,17 +4,16 @@ ms.author: mikeam
 title: Improving performance and resource usage
 description: "An article that discusses several performance tips for creators"
 ms.service: minecraft-bedrock-edition
+ms.date: 07/17/2025
 ---
 
 # Improving performance and resource usage
 
-Add-Ons that can extend your vanilla playing experience have always been a popular part of the Minecraft experience - and if anything, they're growing _even more_ in popularity! It's increasingly common for someone to have a Minecraft world with a furniture add-on, a few different add-ons with new families of mobs, some custom pets, and maybe a custom gameplay extension or two. And then you add some additional utilities, like a custom back pack or a piece of equipment. And of course, every Minecraft experience loads every vanilla texture, and there is a lot of those too. Its not uncommon for players to maybe add 8 or more add-ons to their world. And they do this across a range of devices; from the latest consoles to high spec workstations, to their older phones from 5 years ago or a very basic integrated PC.
+Add-Ons that can extend your vanilla playing experience have always been a popular part of the Minecraft experience, and if anything, they're growing _even more_ in popularity! It's increasingly common for someone to have a Minecraft world with a furniture add-on, a few different add-ons with new families of mobs, some custom pets, and maybe a custom gameplay extension or two. And then you add some additional utilities, like a custom back pack or a piece of equipment. And of course, every Minecraft experience loads every vanilla texture, and there are a lot of those too. It's not uncommon for players to add eight or more add-ons to their world. And they do this across a range of devices; from the latest consoles to high spec workstations, to their older phones from five years ago or a very basic integrated PC.
 
-But as players add more add-ons additively to their world, there may come a point where their device runs out of resources, and bad behaviors could result (textures may grow fuzzy or fail to load; performance may slow down; there may even be crashes if you add enough add-ons). The best solution for this is for individual add-ons to attempt to be a thrifty in their resource usage and performance. But even if it's most important for add-ons to be thrifty, these techniques also apply to any custom world experiences or texture packs you may be building - better performance is almost always noticeable and appreciated by players.
+But as players add more add-ons additively to their world, there may come a point where their device runs out of resources, and bad behaviors could result (textures may grow fuzzy or fail to load; performance may slow down; there may even be crashes if you add enough add-ons). The best solution for this is for individual add-ons to attempt to be thrifty in their resource usage and performance. But even if it's most important for add-ons to be thrifty, these techniques also apply to any custom world experiences or texture packs you may be building - better performance is almost always noticeable and appreciated by players.
 
 ## Model Complexity
-
-### Custom Block Geometry
 
 Be mindful of how blocks with complex geometry are used within your pack. Blocks that appear repeatedly throughout your world, or are expected to be placed repeatedly by players, can quickly consume large amounts of memory. We recommend targeting no more than 50 cubes per block model, but depending on the usage this may need to be even lower. Use your best judgment in determining how a given block will be utilized within your pack.
 
@@ -142,7 +141,7 @@ In addition to overall texture size, you should consider the number of textures 
 You can use tools like [Minecraft Creator Tools](../MCToolsOverview.md) and its Inspector view to get an approximation of the number of texture handles your pack uses.
 
 * For World Templates, we recommend staying under 2,000 texture handles.
-* For Add-ons, we recommend staying under 800 texture handles.
+* For add-ons, we recommend staying under 800 texture handles.
 
 ## Pack Size & File Counts
 
@@ -154,7 +153,7 @@ It's highly recommended to stay under 10,000 files, but a top-end range of 5,000
 
 Pack size and file count impact can vary significantly so the above are just guidelines.
 
-For Add-Ons, we recommend a max pack size of 25MB (uncompressed) and a maximum of 2,500 files.
+For add-ons, we recommend a max pack size of 25MB (uncompressed) and a maximum of 2,500 files.
 
 ## Entities
 

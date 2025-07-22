@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CustomCommandSource Enumeration
 description: Contents of the @minecraft/server.CustomCommandSource enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CustomCommandSource Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Who executed the command.
 

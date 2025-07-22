@@ -114,6 +114,9 @@ Type: [*StructureManager*](StructureManager.md)
 - [getLootTableManager](#getloottablemanager)
 ::: moniker-end
 - [getMoonPhase](#getmoonphase)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getPackSettings](#getpacksettings)
+::: moniker-end
 - [getPlayers](#getplayers)
 - [getTimeOfDay](#gettimeofday)
 - [playMusic](#playmusic)
@@ -386,6 +389,23 @@ getMoonPhase(): MoonPhase
 Returns the MoonPhase for the current time.
 
 **Returns** [*MoonPhase*](MoonPhase.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getPackSettings**
+`
+getPackSettings(): Record<string, boolean | number>
+`
+
+Returns a map of pack setting name and value pairs.
+
+**Returns** Record<*string*, *boolean* | *number*>
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can be called in early-execution mode.
+::: moniker-end
 
 ### **getPlayers**
 `

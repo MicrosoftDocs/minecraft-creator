@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PlayerHotbarSelectedSlotChangeAfterEventSignal Class
 description: Contents of the @minecraft/server.PlayerHotbarSelectedSlotChangeAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerHotbarSelectedSlotChangeAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected after a player selected hotbar slot is changed.
 

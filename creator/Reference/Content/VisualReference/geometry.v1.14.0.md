@@ -45,11 +45,11 @@ ms.date: 02/11/2025
 | name | *not set* | String | Animation files refer to this bone via this identifier. |  | 
 | parent | *not set* | String | Bone that this bone is relative to. If the parent bone moves, this bone will move along with it. |  | 
 | pivot | *not set* | Array of strings |  |  | 
-| poly_mesh | *not set* | Key/item pairs of [Poly Mesh](#poly-mesh-item-type) items | ***EXPERIMENTAL*** A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry. |  | 
+| poly_mesh | *not set* | Key/item pairs of [Poly Mesh](#poly-mesh-item-type) items | A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry. |  | 
 | render_group_id | *not set* | Integer number |  |  | 
 | rotation | *not set* | Array of strings |  |  | 
 | texture_meshes | *not set* | Array of [Texture Meshes](#texture-meshes-item-type) items |  |  | 
-| texture_meshes (Alternate 1) | *not set* | Array of strings | ***EXPERIMENTAL*** Adds a mesh to the bone's geometry by converting texels in a texture into boxes |  | 
+| texture_meshes (Alternate 1) | *not set* | Array of strings | Adds a mesh to the bone's geometry by converting texels in a texture into voxels. |  | 
 
 ## Cubes item type
 
@@ -171,6 +171,7 @@ ms.date: 02/11/2025
 | rotation | *not set* | Array of strings |  |  | 
 | scale | *not set* | Array of strings |  |  | 
 | texture | *not set* | String | The friendly-named texture to use. |  | 
+| use_pixel_depth | *not set* | Boolean true/false | If set to "true", the geometry will have a depth of one pixel (in entity space, not texture space). This causes geometries with a texture resolution different from 16x16 to appear stretched. If set to "false", the geometry will be built from perfectly cubic voxels, no matter the texture's aspect ratio. The default value is "true". |  | 
 
 ## Description item type
 

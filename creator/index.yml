@@ -22,6 +22,10 @@ highlightedContent:
       itemType: reference
       url: ScriptAPI/index.yml
     #card
+    - title: Creator Learning Journey
+      itemType: learn
+      url: Documents/LearningJourneyGuide.md
+    #card
     - title: "Control Schemes"
       itemType: whats-new
       url: Documents/ControlSchemes.md

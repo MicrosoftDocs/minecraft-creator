@@ -24,14 +24,17 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.100-beta.24 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.110-beta.20 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
 
 ## Enumerations
+- [GameTestCompletedErrorReason](GameTestCompletedErrorReason.md)
 - [GameTestErrorType](GameTestErrorType.md)
 - [LookDuration](LookDuration.md)
+- [PersonaArmSize](PersonaArmSize.md)
+- [PersonaPieceType](PersonaPieceType.md)
 
 ## Classes
 - [FenceConnectivity](FenceConnectivity.md)
@@ -46,11 +49,33 @@ This is version 1.x.x of this module, which is the latest as of version 1.21.100
 ## Interfaces
 - [GameTestErrorContext](GameTestErrorContext.md)
 - [MoveToOptions](MoveToOptions.md)
+- [PlayerPersonaPiece](PlayerPersonaPiece.md)
+- [PlayerSkinData](PlayerSkinData.md)
 
 ## Errors
+- [GameTestCompletedError](GameTestCompletedError.md)
 - [GameTestError](GameTestError.md)
 
 ## Functions
+
+### **getPlayerSkin**
+`
+getPlayerSkin(player: minecraftserver.Player): PlayerSkinData
+`
+
+Returns data about a player's skin.
+
+#### **Parameters**
+- **player**: [*@minecraft/server.Player*](../../../scriptapi/minecraft/server/Player.md)
+  
+  The player who's skin is returned.
+
+**Returns** [*PlayerSkinData*](PlayerSkinData.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **register**
 `
@@ -153,6 +178,31 @@ gameTest
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobAsyncTest.ts) code sandbox.
 
-## Dependencies
+### **spawnSimulatedPlayer**
+`
+spawnSimulatedPlayer(location: minecraftserver.DimensionLocation, name: string, gameMode: minecraftserver.GameMode): SimulatedPlayer
+`
+
+Spawns a simulated player that isn't associated to a specific {@link Test}.  You can use {@link SimulatedPlayer.remove} to remove the player from the world.
+
+#### **Parameters**
+- **location**: [*@minecraft/server.DimensionLocation*](../../../scriptapi/minecraft/server/DimensionLocation.md)
+  
+  The location in which to spawn the player.
+- **name**: *string*
+  
+  The name for the player.
+- **gameMode**: [*@minecraft/server.GameMode*](../../../scriptapi/minecraft/server/GameMode.md)
+  
+  The game mode for the player.
+
+**Returns** [*SimulatedPlayer*](SimulatedPlayer.md)
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
+
+## Peer Dependencies
 - [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
 - [`@minecraft/server`](../../../scriptapi/minecraft/server/minecraft-server.md)

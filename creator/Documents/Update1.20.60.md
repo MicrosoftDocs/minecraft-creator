@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.20.60 Update Notes
 description: Update summary of Creator changes in Bedrock 1.20.60
 ms.service: minecraft-bedrock-edition
+ms.date: 07/17/2025
 ---
 # Minecraft Bedrock 1.20.60 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.20.60 and there are a number of changes of note for Add-On creators. The following features do not require experimental toggles.
+Minecraft Bedrock has been updated to 1.20.60 and there are a number of changes of note for creators. The following features do not require experimental toggles.
  
 ## Blocks
 - Data-driven culling - Allows setting of culling rules to improve custom block performance and provide more control over per  face rendering.

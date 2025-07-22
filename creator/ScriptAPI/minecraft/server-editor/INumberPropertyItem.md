@@ -30,13 +30,13 @@ Type: *Readonly<number>*
 
 ### **setTitle**
 `
-setTitle(title: LocalizedString | undefined): void
+setTitle(title: LocalizedString | void): void
 `
 
 Updates title of the property item.
 
 #### **Parameters**
-- **title**: *LocalizedString | undefined*
+- **title**: *LocalizedString* | *void*
   
   New title.
 
@@ -44,13 +44,13 @@ Updates title of the property item.
 
 ### **setTooltip**
 `
-setTooltip(tooltip: BasicTooltipContent | undefined): void
+setTooltip(tooltip: BasicTooltipContent | void): void
 `
 
 Updates tooltip description of property item.
 
 #### **Parameters**
-- **tooltip**: *BasicTooltipContent | undefined*
+- **tooltip**: *BasicTooltipContent* | *void*
   
   New tooltip.
 

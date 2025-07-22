@@ -61,7 +61,7 @@ On the first page of the Block Wizard, enter the metadata for the block. This in
 
 :::image type="content" source="Media/MinecraftBlockWizard/naming.png" alt-text="Minecraft Block Wizard showcasing where Creators can set the Name and Identifier for their new block.":::
 
-- **Identifier**: The ID of the block will be used internally, for example in commands. The identifier needs to start with a namespace, a short identifier of your or your project. This is useful to distinguish your own block from blocks with the same purpose, but from another add-on, if you are using multiple add-ons in your world. All blocks that Minecraft comes with by default have the namespace `minecraft:`. That namespace is reserved for vanilla blocks. Your ID may look like this: `my_add-on:my_block`.
+- **Identifier**: The ID of the block will be used internally, for example in commands. The identifier needs to start with a namespace, a short identifier of your or your project. This is useful to distinguish your own block from blocks with the same purpose, but from another Add-On, if you are using multiple Add-Ons in your world. All blocks that Minecraft comes with by default have the namespace `minecraft:`. That namespace is reserved for vanilla blocks. Your ID may look like this: `my_Add-On:my_block`.
 
 - **Creative Category**: Select the tab of the creative inventory that your block will appear in. You can also select a sub-group to add your block to one of the foldable groups within an inventory tab. If you select None, your block will not appear in the creative inventory and you will only be able to get it by using commands.
 
@@ -118,13 +118,13 @@ You have now entered all the information that is necessary to create the block. 
 In the Blockbench desktop app, there are three ways to save your pack:
 
 - **Export Packs:** Create a new pack with your custom block.
-- **Integrate into Pack:** Integrate your new custom block into an existing add-on.
-- **Export as MCAddon:** Generate a `.mcaddon` file and save it to your computer. You can open this file to load your add-on into Minecraft, or share this file with friends. If you select this option, you will not be able to directly edit your model in Blockbench after exporting the add-on.
+- **Integrate into Pack:** Integrate your new custom block into an existing Add-On.
+- **Export as MCAddon:** Generate a `.mcaddon` file and save it to your computer. You can open this file to load your Add-On into Minecraft, or share this file with friends. If you select this option, you will not be able to directly edit your model in Blockbench after exporting the Add-On.
 
 > [!TIP]
 > In the web app, the only option available to export your pack is **MCAddon**.
 
-Depending on the export option you selected, you may need to enter some information about the add-on you're creating.
+Depending on the export option you selected, you may need to enter some information about the Add-On you're creating.
 
 - **Pack Name**:  This name will be used both for the generated file, as well as for the name in the pack menu in Minecraft.
 
@@ -132,15 +132,15 @@ Depending on the export option you selected, you may need to enter some informat
 
 ## Installing the pack
 
-To enable your packs for the first time, you need to add the behavior pack to your Minecraft world. Open the world settings and locate the Behavior Packs section. Find your new pack and activate it. Activating the behavior pack automatically activates the connected resource pack. This means that you now have the full add-on installed into your world.
+To enable your packs for the first time, you need to add the behavior pack to your Minecraft world. Open the world settings and locate the Behavior Packs section. Find your new pack and activate it. Activating the behavior pack automatically activates the connected resource pack. This means that you now have the full Add-On installed into your world.
 
 > [!TIP]
-> You can view a detailed step-by-step walkthrough on how to enable your pack in the [Behavior Pack tutorial](BehaviorPack.md#testing-the-pack).
+> You can view a detailed step-by-step walkthrough on how to enable your pack in the [Behavior Pack tutorial](BehaviorPack.md#test-the-pack).
 
 Enter the world and locate the custom block in your creative inventory. Alternatively, if you didn't choose to add your block to a creative inventory tab, you can get it using the `/setblock` and `/give` commands.
 
 > [!NOTE]
-> Alternatively, if you have exported your add-on as a `.mcaddon` file, you can open this file in order to automatically add the packs into Minecraft.
+> Alternatively, if you have exported your Add-On as a `.mcaddon` file, you can open this file in order to automatically add the packs into Minecraft.
 
 ## Modifying your block
 
@@ -149,7 +149,7 @@ Enter the world and locate the custom block in your creative inventory. Alternat
 Because you are already in Blockbench, you can continue to use the program to edit the model and texture. To do that, press the **Edit Model** button in the bottom right.
 
 > [!CAUTION]
-> This option is not available if you have exported your add-on as an `.mcadd-on` file.
+> This option is not available if you have exported your Add-On as an `.mcaddon` file.
 
 :::image type="content" source="Media/MinecraftBlockWizard/model.png" alt-text="Minecraft Block Wizard showing where Creators can edit the model.":::
 

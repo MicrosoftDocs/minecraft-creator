@@ -16,7 +16,7 @@ description: Contents of the @minecraft/server-editor.IModalToolContainer class.
 
 Tools within this container.
 
-Type: *IModalTool[]*
+Type: *IModalTool*[]
 
 ## Methods
 - [addTool](#addtool)
@@ -53,12 +53,12 @@ Activates input bindings for the selected tool by enabling viewport focus
 
 ### **getSelectedToolId**
 `
-getSelectedToolId(): string | undefined
+getSelectedToolId(): string | void
 `
 
 Returns identifier of the selected tool.
 
-**Returns** *string | undefined*
+**Returns** *string* | *void*
 
 ### **removeTool**
 `
@@ -76,13 +76,13 @@ Remove an existing tool by id from the tool container
 
 ### **setSelectedToolId**
 `
-setSelectedToolId(id: string | undefined): void
+setSelectedToolId(id: string | void): void
 `
 
 Selects a tool in the container.
 
 #### **Parameters**
-- **id**: *string | undefined*
+- **id**: *string* | *void*
   
   Identifier of the tool
 

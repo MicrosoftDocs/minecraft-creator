@@ -20,6 +20,8 @@ Type: [*RelativeVolumeListBlockVolume*](RelativeVolumeListBlockVolume.md)
 - [activateBrushTool](#activatebrushtool)
 - [beginPainting](#beginpainting)
 - [deactivateBrushTool](#deactivatebrushtool)
+- [disableItemPlacement](#disableitemplacement)
+- [enableItemPlacement](#enableitemplacement)
 - [endPainting](#endpainting)
 - [getBrushShapeOffset](#getbrushshapeoffset)
 - [getDirectionalPlacementMode](#getdirectionalplacementmode)
@@ -61,6 +63,26 @@ Notes:
 `
 deactivateBrushTool(): void
 `
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **disableItemPlacement**
+`
+disableItemPlacement(): void
+`
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **enableItemPlacement**
+`
+enableItemPlacement(itemType: minecraftserver.ItemType, data?: number): void
+`
+
+#### **Parameters**
+- **itemType**: [*@minecraft/server.ItemType*](../../../scriptapi/minecraft/server/ItemType.md)
+- **data**?: *number* = `null`
   
 Notes:
 - This function can't be called in read-only mode.

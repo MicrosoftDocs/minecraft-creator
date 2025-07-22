@@ -320,6 +320,14 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:attack/",
+          "content": {
+            "damage": 2
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/creaking.json": [
         {
           "path": "/minecraft:entity/components/minecraft:attack/",

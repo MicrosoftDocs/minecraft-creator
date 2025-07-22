@@ -23,13 +23,13 @@ A root pane that can store property items.
 
 ### **createModalOverlayPane**
 `
-createModalOverlayPane(options: IModalOverlayPaneOptions): IModalOverlayPane
+createModalOverlayPane(options?: IModalOverlayPaneOptions): IModalOverlayPane
 `
 
 Register a modal overlay to the root pane. It will be hidden by default, when shown it will display over the root pane content. Only one modal overlay can be shown at a time.
 
 #### **Parameters**
-- **options**: *IModalOverlayPaneOptions*
+- **options**?: *IModalOverlayPaneOptions*
   
   Creation parameters for modal overlay pane.
 
@@ -37,10 +37,10 @@ Register a modal overlay to the root pane. It will be hidden by default, when sh
 
 ### **getActiveModalOverlayId**
 `
-getActiveModalOverlayId(): string | undefined
+getActiveModalOverlayId(): string | void
 `
 
-**Returns** *string | undefined* - Unique identifier of the active modal overlay
+**Returns** *string* | *void* - Unique identifier of the active modal overlay
 
 ### **isHeaderActionVisible**
 `
@@ -51,13 +51,13 @@ isHeaderActionVisible(): boolean
 
 ### **setActiveModalOverlay**
 `
-setActiveModalOverlay(id: string | undefined): void
+setActiveModalOverlay(id: string | void): void
 `
 
 Sets registered modal overlay as active, if not found it will hide the current.
 
 #### **Parameters**
-- **id**: *string | undefined*
+- **id**: *string* | *void*
   
   Unique id for modal overlay pane.
 

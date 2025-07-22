@@ -17,8 +17,8 @@ Optional properties for Bool property item
 ## Properties
 
 ### **onChange**
-`onChange: (newValue: ReadonlyArray<string>, oldValue: ReadonlyArray<string>) => void;`
+`onChange?: () => void;`
 
 This callback is called when UI control value is changed.
 
-Type: *(newValue: ReadonlyArray<string>, oldValue: ReadonlyArray<string>) => void*
+Type: () => void

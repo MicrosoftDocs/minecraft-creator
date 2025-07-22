@@ -17,28 +17,28 @@ Optional properties for Image property item
 ## Properties
 
 ### **alignment**
-`alignment: LayoutAlignment;`
+`alignment?: LayoutAlignment;`
 
 Alignment of the image in the container. If not defined, LayoutAlignment.Left is used.
 
 Type: *LayoutAlignment*
 
 ### **imageSize**
-`imageSize: number | {
+`imageSize?: number | {
         width: number;
         height: number;
     };`
 
 Size of the image. If undefined, defaults to 10.
 
-Type: *number | {
+Type: *number* | *{
         width: number;
         height: number;
     }*
 
 ### **onClick**
-`onClick: (x: number, y: number) => void;`
+`onClick?: () => void;`
 
 Called when image is clicked.
 
-Type: *(x: number, y: number) => void*
+Type: () => void

@@ -14,19 +14,20 @@ A class that allows hooking up reporting to Sentry.  See https://sentry.io/ for 
 ## Methods
 - [addBreadcrumb](#addbreadcrumb)
 - [addTag](#addtag)
+- [captureException](#captureexception)
 - [getTags](#gettags)
 - [init](#init)
 - [removeTag](#removetag)
 
 ### **addBreadcrumb**
 `
-addBreadcrumb(level: SentryBreadcrumbLevel, message: string, category?: string): void
+addBreadcrumb(level: SentryEventLevel, message: string, category?: string): void
 `
 
 Adds a breadcrumb to the next Sentry error reported.  This can be useful for understanding a "trail" of events leading up to an error.  See Sentry documentation for more details: https://docs.sentry.io/product/issues/issue-details/breadcrumbs/
 
 #### **Parameters**
-- **level**: [*SentryBreadcrumbLevel*](SentryBreadcrumbLevel.md)
+- **level**: [*SentryEventLevel*](SentryEventLevel.md)
 - **message**: *string*
   
   The message to add to the breadcrumb.
@@ -35,7 +36,6 @@ Adds a breadcrumb to the next Sentry error reported.  This can be useful for und
   The category of the breadcrumb.
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*SentryUninitializedError*](SentryUninitializedError.md)
@@ -52,7 +52,22 @@ Adds a tag to the Sentry session.  See Sentry documentation for more details: ht
 - **value**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
+- This function can throw errors.
+  - Throws [*SentryUninitializedError*](SentryUninitializedError.md)
+
+### **captureException**
+`
+captureException(exception: unknown, captureContext?: SentryCaptureContext): void
+`
+
+Captures an exception event and send it to Sentry. Note that you can pass not only `Error` objects, but also other types of thrown objects - in that case, an attempt will be made to serialize the object for you, and stack traces are likely to be missing.  See Sentry documentation for more details: https://docs.sentry.io/platforms/javascript/apis/#capturing-events
+
+#### **Parameters**
+- **exception**: *unknown*
+- **captureContext**?: [*SentryCaptureContext*](SentryCaptureContext.md) = `null`
+  
+Notes:
 - This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*SentryUninitializedError*](SentryUninitializedError.md)
@@ -67,7 +82,6 @@ Gets the list of all session tags.  See Sentry documentation for more details: h
 **Returns** Record<*string*, *string*>
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*SentryUninitializedError*](SentryUninitializedError.md)
@@ -83,7 +97,6 @@ Initializes Sentry for use.  This must be successfully called before any other S
 - **options**: [*SentryOptions*](SentryOptions.md)
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*SentryAlreadyInitializedError*](SentryAlreadyInitializedError.md)
@@ -99,7 +112,6 @@ Removes a tag to the Sentry session.  See Sentry documentation for more details:
 - **name**: *string*
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can be called in early-execution mode.
 - This function can throw errors.
   - Throws [*SentryUninitializedError*](SentryUninitializedError.md)

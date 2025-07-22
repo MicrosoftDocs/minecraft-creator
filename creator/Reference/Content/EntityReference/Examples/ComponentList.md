@@ -53,6 +53,7 @@ ms.date: 02/11/2025
 | [minecraft:damage_over_time](EntityComponents/minecraftComponent_damage_over_time.md)| Applies defined amount of damage to the entity at specified intervals. |
 | [minecraft:damage_sensor](EntityComponents/minecraftComponent_damage_sensor.md)| Defines what events to call when this entity is damaged by specific entities or items. |
 | [minecraft:dash](EntityComponents/minecraftComponent_dash.md)| Ability for a rideable entity to dash. |
+| [minecraft:dash_action](EntityComponents/minecraftComponent_dash_action.md)| Ability for a rideable entity to dash. |
 | [minecraft:default_look_angle](EntityComponents/minecraftComponent_default_look_angle.md)| Sets this entity's default head rotation angle. |
 | [minecraft:despawn](EntityComponents/minecraftComponent_despawn.md)| Despawns the Actor when the despawn rules or optional filters evaluate to true. |
 | [minecraft:dimension_bound](EntityComponents/minecraftComponent_dimension_bound.md)| Prevents the entity from changing dimension through portals. |
@@ -73,6 +74,7 @@ ms.date: 02/11/2025
 | [minecraft:flocking](EntityComponents/minecraftComponent_flocking.md)| Allows entities to flock in groups in water or not. |
 | [minecraft:flying_speed](EntityComponents/minecraftComponent_flying_speed.md)| Speed in Blocks that this entity flies at. |
 | [minecraft:follow_range](EntityComponents/minecraftComponent_follow_range.md)| Defines the range, in blocks, that a mob will pursue a target. |
+| [minecraft:free_camera_controlled](EntityComponents/minecraftComponent_free_camera_controlled.md)| When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions. |
 | [minecraft:friction_modifier](EntityComponents/minecraftComponent_friction_modifier.md)| Defines how much friction affects this entity. |
 | [minecraft:game_event_movement_tracking](EntityComponents/minecraftComponent_game_event_movement_tracking.md)| Allows an entity to emit `entityMove`, `swim` and `flap` game events, depending on the block the entity is moving through. |
 | [minecraft:genetics](EntityComponents/minecraftComponent_genetics.md)| Defines the way a mob's genes and alleles are passed on to its offspring, and how those traits manifest in the child. |
@@ -194,6 +196,7 @@ ms.date: 02/11/2025
 | [minecraft:underwater_movement](EntityComponents/minecraftComponent_underwater_movement.md)| Defines the speed with which an entity can move through water. |
 | [minecraft:variable_max_auto_step](EntityComponents/minecraftComponent_variable_max_auto_step.md)| Entities with this component will have a maximum auto step height that is different depending on whether they are on a block that prevents jumping. |
 | [minecraft:variant](EntityComponents/minecraftComponent_variant.md)| Variant is typically used as a per-type way to express a different visual form of the same mob. |
+| [minecraft:vertical_movement_action](EntityComponents/minecraftComponent_vertical_movement.action.md)| When configured as a rideable entity, the entity will move upwards or downwards when the player uses the jump action. |
 | [minecraft:vibration_damper](EntityComponents/minecraftComponent_vibration_damper.md)| Vibrations emitted by this entity will be ignored. |
 | [minecraft:vibration_listener](EntityComponents/minecraftComponent_vibration_listener.md)| Allows the entity to listen to vibration events. |
 | [minecraft:walk_animation_speed](EntityComponents/minecraftComponent_walk_animation_speed.md)| Sets the speed multiplier for this entity's walk animation speed. |
