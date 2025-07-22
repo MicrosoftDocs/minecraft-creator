@@ -14,7 +14,7 @@ The options to create a modal overlay pane.
 ## Properties
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the modal overlay.
 

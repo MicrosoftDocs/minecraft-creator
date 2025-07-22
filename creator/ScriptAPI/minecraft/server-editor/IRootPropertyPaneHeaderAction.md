@@ -14,9 +14,9 @@ Represents the data to display an action button on a root property pane header.
 ## Properties
 
 ### **action**
-`action: () => void;`
+`action?: () => void;`
 
-Type: *() => void*
+Type: () => void
 
 ### **icon**
 `icon: string;`
@@ -24,6 +24,6 @@ Type: *() => void*
 Type: *string*
 
 ### **tooltip**
-`tooltip: LocalizedString;`
+`tooltip?: LocalizedString;`
 
 Type: *LocalizedString*

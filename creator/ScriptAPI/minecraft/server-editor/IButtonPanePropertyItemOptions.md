@@ -14,7 +14,7 @@ Optional properties for Button Pane property item
 ## Properties
 
 ### **itemMinWidth**
-`itemMinWidth: number;`
+`itemMinWidth?: number;`
 
 Minimum width for each item within the layout. If undefined, it will default to 6.
 

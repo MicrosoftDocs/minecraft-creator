@@ -14,7 +14,7 @@ Validates min/max limits of observable objects that support Vector3
 ## Properties
 
 ### **_isInteger**
-`_isInteger: boolean;`
+`_isInteger?: boolean;`
 
 Type: *boolean*
 
@@ -44,7 +44,7 @@ Notes:
 
 ### **constructor**
 `
-new Vector3LimitObservableValidator(min: Partial<minecraftserver.Vector3>, max: Partial<minecraftserver.Vector3>, isInteger: boolean)
+new Vector3LimitObservableValidator(min: Partial<minecraftserver.Vector3>, max: Partial<minecraftserver.Vector3>, isInteger?: boolean)
 `
 
 Constructs a new instance of the `Vector3LimitObservableValidator` class
@@ -52,7 +52,7 @@ Constructs a new instance of the `Vector3LimitObservableValidator` class
 #### **Parameters**
 - **min**: *Partial<minecraftserver.Vector3>*
 - **max**: *Partial<minecraftserver.Vector3>*
-- **isInteger**: *boolean*
+- **isInteger**?: *boolean*
 
 **Returns** *Vector3LimitObservableValidator*
 

@@ -42,10 +42,12 @@
       href: minecraft/diagnostics/minecraft-diagnostics.md
     - name: minecraft/diagnostics Changelog
       href: minecraft/diagnostics/changelog.md
-    - name: SentryBreadcrumbLevel
-      href: minecraft/diagnostics/SentryBreadcrumbLevel.md
+    - name: SentryEventLevel
+      href: minecraft/diagnostics/SentryEventLevel.md
     - name: Sentry
       href: minecraft/diagnostics/Sentry.md
+    - name: SentryCaptureContext
+      href: minecraft/diagnostics/SentryCaptureContext.md
     - name: SentryOptions
       href: minecraft/diagnostics/SentryOptions.md
   - name: minecraft/server
@@ -610,6 +612,10 @@
       href: minecraft/server/MessageReceiveAfterEvent.md
     - name: MolangVariableMap
       href: minecraft/server/MolangVariableMap.md
+    - name: PackSettingChangeAfterEvent
+      href: minecraft/server/PackSettingChangeAfterEvent.md
+    - name: PackSettingChangeAfterEventSignal
+      href: minecraft/server/PackSettingChangeAfterEventSignal.md
     - name: PistonActivateAfterEvent
       href: minecraft/server/PistonActivateAfterEvent.md
     - name: PistonActivateAfterEventSignal
@@ -1472,10 +1478,16 @@
       href: minecraft/server-gametest/minecraft-server-gametest.md
     - name: minecraft/server-gametest Changelog
       href: minecraft/server-gametest/changelog.md
+    - name: GameTestCompletedErrorReason
+      href: minecraft/server-gametest/GameTestCompletedErrorReason.md
     - name: GameTestErrorType
       href: minecraft/server-gametest/GameTestErrorType.md
     - name: LookDuration
       href: minecraft/server-gametest/LookDuration.md
+    - name: PersonaArmSize
+      href: minecraft/server-gametest/PersonaArmSize.md
+    - name: PersonaPieceType
+      href: minecraft/server-gametest/PersonaPieceType.md
     - name: FenceConnectivity
       href: minecraft/server-gametest/FenceConnectivity.md
     - name: GameTestSequence
@@ -1496,6 +1508,10 @@
       href: minecraft/server-gametest/GameTestErrorContext.md
     - name: MoveToOptions
       href: minecraft/server-gametest/MoveToOptions.md
+    - name: PlayerPersonaPiece
+      href: minecraft/server-gametest/PlayerPersonaPiece.md
+    - name: PlayerSkinData
+      href: minecraft/server-gametest/PlayerSkinData.md
   - name: minecraft/server-net
     items:
     - name: minecraft/server-net

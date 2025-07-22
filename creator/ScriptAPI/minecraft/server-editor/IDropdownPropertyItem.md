@@ -32,7 +32,7 @@ Type: *number*
 
 ### **getEntryByIndex**
 `
-getEntryByIndex(index: number): IDropdownPropertyItemEntry | undefined
+getEntryByIndex(index: number): IDropdownPropertyItemEntry | void
 `
 
 Find a dropdown entry at an index in the dropdown list.
@@ -42,11 +42,11 @@ Find a dropdown entry at an index in the dropdown list.
   
   Index of the dropdown entry in the list.
 
-**Returns** *IDropdownPropertyItemEntry | undefined*
+**Returns** *IDropdownPropertyItemEntry* | *void*
 
 ### **getEntryByValue**
 `
-getEntryByValue(value: number): IDropdownPropertyItemEntry | undefined
+getEntryByValue(value: number): IDropdownPropertyItemEntry | void
 `
 
 Find a dropdown entry with a specific value associated with property item.
@@ -56,17 +56,17 @@ Find a dropdown entry with a specific value associated with property item.
   
   Value of the dropdown entry in the list.
 
-**Returns** *IDropdownPropertyItemEntry | undefined*
+**Returns** *IDropdownPropertyItemEntry* | *void*
 
 ### **setTitle**
 `
-setTitle(title: LocalizedString | undefined): void
+setTitle(title: LocalizedString | void): void
 `
 
 Updates title of the property item.
 
 #### **Parameters**
-- **title**: *LocalizedString | undefined*
+- **title**: *LocalizedString* | *void*
   
   New title.
 
@@ -74,13 +74,13 @@ Updates title of the property item.
 
 ### **setTooltip**
 `
-setTooltip(tooltip: BasicTooltipContent | undefined): void
+setTooltip(tooltip: BasicTooltipContent | void): void
 `
 
 Updates tooltip of the property item.
 
 #### **Parameters**
-- **tooltip**: *BasicTooltipContent | undefined*
+- **tooltip**: *BasicTooltipContent* | *void*
   
   New tooltip.
 
@@ -88,16 +88,16 @@ Updates tooltip of the property item.
 
 ### **updateEntries**
 `
-updateEntries(entries: IDropdownPropertyItemEntry[], newValue: number): void
+updateEntries(entries: IDropdownPropertyItemEntry[], newValue?: number): void
 `
 
 Update list of dropdown entries.
 
 #### **Parameters**
-- **entries**: *IDropdownPropertyItemEntry[]*
+- **entries**: *IDropdownPropertyItemEntry*[]
   
   New list of updated entries.
-- **newValue**: *number*
+- **newValue**?: *number*
   
   New value value to use for the dropdown.
 

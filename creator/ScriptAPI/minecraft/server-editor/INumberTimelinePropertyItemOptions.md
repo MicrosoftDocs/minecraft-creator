@@ -17,7 +17,7 @@ Optional properties for Number Timeline property item
 ## Properties
 
 ### **bounds**
-`bounds: {
+`bounds?: {
         minValue: number;
         maxValue: number;
     };`
@@ -30,77 +30,77 @@ Type: *{
     }*
 
 ### **decimalPrecision**
-`decimalPrecision: number;`
+`decimalPrecision?: number;`
 
 Custom precision for the calculations
 
 Type: *number*
 
 ### **disableAddRemoveNodes**
-`disableAddRemoveNodes: boolean;`
+`disableAddRemoveNodes?: boolean;`
 
 If true, nodes cannot be added or removed
 
 Type: *boolean*
 
 ### **entries**
-`entries: INumberTimelinePropertyItemEntry[];`
+`entries?: INumberTimelinePropertyItemEntry[];`
 
 List of nodes entries in the color timeline.
 
-Type: *INumberTimelinePropertyItemEntry[]*
+Type: *INumberTimelinePropertyItemEntry*[]
 
 ### **gridSeparatorSliceCount**
-`gridSeparatorSliceCount: minecraftserver.Vector2;`
+`gridSeparatorSliceCount?: minecraftserver.Vector2;`
 
 The separator slice count for the graph thin lines
 
 Type: *minecraftserver.Vector2*
 
 ### **gridSeparatorStepCount**
-`gridSeparatorStepCount: minecraftserver.Vector2;`
+`gridSeparatorStepCount?: minecraftserver.Vector2;`
 
 The separator step counts for the graph bold lines
 
 Type: *minecraftserver.Vector2*
 
 ### **isGraphReadOnly**
-`isGraphReadOnly: boolean;`
+`isGraphReadOnly?: boolean;`
 
 True means nodes cannot be dragged or modified
 
 Type: *boolean*
 
 ### **onNodeAdded**
-`onNodeAdded: (node: INumberTimelinePropertyItemEntry) => void;`
+`onNodeAdded?: () => void;`
 
 Callback triggered when a new number node is added to the timeline.
 
-Type: *(node: INumberTimelinePropertyItemEntry) => void*
+Type: () => void
 
 ### **onNodeChanged**
-`onNodeChanged: (node: INumberTimelinePropertyItemEntry) => void;`
+`onNodeChanged?: () => void;`
 
 Callback triggered when a timeline node's number value changes.
 
-Type: *(node: INumberTimelinePropertyItemEntry) => void*
+Type: () => void
 
 ### **onNodeRemoved**
-`onNodeRemoved: (node: INumberTimelinePropertyItemEntry) => void;`
+`onNodeRemoved?: () => void;`
 
 Callback triggered when an number node is removed from the timeline. *
 
-Type: *(node: INumberTimelinePropertyItemEntry) => void*
+Type: () => void
 
 ### **onTimeChanged**
-`onTimeChanged: (current: number, prev: number) => void;`
+`onTimeChanged?: () => void;`
 
 This callback is called when UI control time is changed.
 
-Type: *(current: number, prev: number) => void*
+Type: () => void
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item
 

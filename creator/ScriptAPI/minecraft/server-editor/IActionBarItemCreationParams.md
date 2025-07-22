@@ -14,14 +14,14 @@ Properties required to create an Action Bar item.
 ## Properties
 
 ### **enabled**
-`enabled: boolean;`
+`enabled?: boolean;`
 
 Initial enabled state of the item. If not defined, default is true.
 
 Type: *boolean*
 
 ### **executeOnAdd**
-`executeOnAdd: boolean;`
+`executeOnAdd?: boolean;`
 
 Sets whether the Action Bar Item's execute is run when it is added to the Action Bar. If not defined, default is false.
 
@@ -35,7 +35,7 @@ Icon resource for the item.
 Type: *string*
 
 ### **iconAnimation**
-`iconAnimation: ImageAnimationData;`
+`iconAnimation?: ImageAnimationData;`
 
 Animation data for sprite sheet icon image
 
@@ -49,14 +49,14 @@ Text label for item.
 Type: *string*
 
 ### **tooltipDescription**
-`tooltipDescription: string;`
+`tooltipDescription?: string;`
 
 Tooltip description for the item.
 
 Type: *string*
 
 ### **tooltipTitle**
-`tooltipTitle: string;`
+`tooltipTitle?: string;`
 
 Tooltip title for the item.
 

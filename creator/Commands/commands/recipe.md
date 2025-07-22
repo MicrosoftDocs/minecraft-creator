@@ -38,6 +38,10 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 
 #### Values
 - `*`
+- `minecraft:acacia_shelf_from_stripped_acacia_log`
+- `minecraft:bamboo_shelf_from_stripped_bamboo_block`
+- `minecraft:birch_shelf_from_stripped_birch_log`
+- `minecraft:cherry_shelf_from_stripped_cherry_log`
 - `minecraft:copper_axe`
 - `minecraft:copper_boots`
 - `minecraft:copper_chest`
@@ -50,6 +54,14 @@ Supports unlocking of built-in (vanilla) recipes that a particular player can cr
 - `minecraft:copper_pickaxe`
 - `minecraft:copper_shovel`
 - `minecraft:copper_sword`
+- `minecraft:crimson_shelf_from_stripped_crimson_stem`
+- `minecraft:dark_oak_shelf_from_stripped_dark_oak_log`
+- `minecraft:jungle_shelf_from_stripped_jungle_log`
+- `minecraft:mangrove_shelf_from_stripped_mangrove_log`
+- `minecraft:oak_shelf_from_stripped_oak_log`
+- `minecraft:pale_oak_shelf_from_stripped_pale_oak_log`
+- `minecraft:spruce_shelf_from_stripped_spruce_log`
+- `minecraft:warped_shelf_from_stripped_warped_stem`
 - `minecraft:dried_ghast`
 - `minecraft:lead`
 - `minecraft:saddle`

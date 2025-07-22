@@ -45,7 +45,7 @@ getData(): IColorTimelinePropertyItemEntry[]
 
 Get the list of nodes in the property item.
 
-**Returns** *IColorTimelinePropertyItemEntry[]*
+**Returns** *IColorTimelinePropertyItemEntry*[]
 
 ### **getTime**
 `

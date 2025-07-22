@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.21.100-beta.24 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.21.110-beta.20 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -334,14 +334,14 @@ Deserialize anything, defaults to the same behavior as JSON.parse but will use c
 
 ### **executeLargeOperation**
 `
-executeLargeOperation(volume: RelativeVolumeListBlockVolume, operation: (blockLocation: minecraftserver.Vector3) => void): Promise<void>
+executeLargeOperation(volume: RelativeVolumeListBlockVolume, operation: () => void): Promise<void>
 `
 
 Executes an operation over a selection via chunks to allow splitting operation over multiple game ticks
 
 #### **Parameters**
 - **volume**: *RelativeVolumeListBlockVolume*
-- **operation**: *(blockLocation: minecraftserver.Vector3) => void*
+- **operation**: () => void
   
   the operation to apply over each block location
 
@@ -349,7 +349,7 @@ Executes an operation over a selection via chunks to allow splitting operation o
 
 ### **executeLargeOperationFromIterator**
 `
-executeLargeOperationFromIterator(blockLocationIterator: minecraftserver.BlockLocationIterator, operation: (blockLocation: minecraftserver.Vector3) => void): Promise<void>
+executeLargeOperationFromIterator(blockLocationIterator: minecraftserver.BlockLocationIterator, operation: () => void): Promise<void>
 `
 
 Executes an operation over a BlockLocationIterator via chunks to allow splitting operation over multiple game ticks
@@ -358,7 +358,7 @@ Executes an operation over a BlockLocationIterator via chunks to allow splitting
 - **blockLocationIterator**: *minecraftserver.BlockLocationIterator*
   
   the selection to iterator over
-- **operation**: *(blockLocation: minecraftserver.Vector3) => void*
+- **operation**: () => void
   
   the operation to apply over each block location
 
@@ -371,25 +371,25 @@ getDefaultAllowBlockList(): string[]
 
 Returns a string array of the default block types for editor operations. Can be used to further filter blocks. This will throw if called in early execution.
 
-**Returns** *string[]* - Default allowed block list
+**Returns** *string*[] - Default allowed block list
 
 ### **getDefaultBrushShapes**
 `
-getDefaultBrushShapes(excludeList: CoreBrushShapeType[]): BrushShape[]
+getDefaultBrushShapes(excludeList?: CoreBrushShapeType[]): BrushShape[]
 `
 
 Returns a list of default core brush shapes
 
 #### **Parameters**
-- **excludeList**: *CoreBrushShapeType[]*
+- **excludeList**?: *CoreBrushShapeType*[]
   
   List of shape types to exclude
 
-**Returns** *BrushShape[]*
+**Returns** *BrushShape*[]
 
 ### **makeObservable**
 `
-makeObservable(initialValue: T, validator: ObservableValidator<T>): IObservable<T>
+makeObservable(initialValue: T, validator?: ObservableValidator<T>): IObservable<T>
 `
 
 Creates an observable object that stores a value state.
@@ -398,7 +398,7 @@ Creates an observable object that stores a value state.
 - **initialValue**: *T*
   
   Initial value of the observable.
-- **validator**: *ObservableValidator<T>*
+- **validator**?: *ObservableValidator<T>*
   
   Optional validator to use for the setter.
 
@@ -406,7 +406,7 @@ Creates an observable object that stores a value state.
 
 ### **registerEditorExtension**
 `
-registerEditorExtension(extensionName: string, activationFunction: ActivationFunctionType<PerPlayerStorageType>, shutdownFunction: ShutdownFunctionType<PerPlayerStorageType>, options: IRegisterExtensionOptionalParameters): Extension
+registerEditorExtension(extensionName: string, activationFunction: ActivationFunctionType<PerPlayerStorageType>, shutdownFunction: ShutdownFunctionType<PerPlayerStorageType>, options?: IRegisterExtensionOptionalParameters): Extension
 `
 
 Registers an editor extension into Minecraft. This function calls underlying functionality to register an extension but provides helpful and contextual wrappers for individual client lifetimes. The onActivation function is called whenever a client joins a session, while the shutdown is called when a client leaves. There may be other circumstances in which these are called as well based on client state that is an implementation detail of the system.
@@ -415,13 +415,13 @@ Registers an editor extension into Minecraft. This function calls underlying fun
 - **extensionName**: *string*
 - **activationFunction**: *ActivationFunctionType<PerPlayerStorageType>*
 - **shutdownFunction**: *ShutdownFunctionType<PerPlayerStorageType>*
-- **options**: *IRegisterExtensionOptionalParameters*
+- **options**?: *IRegisterExtensionOptionalParameters*
 
 **Returns** *Extension*
 
 ### **registerSerializationForType**
 `
-registerSerializationForType(typeConstructor: Function, name: string, serializer: (obj: T) => Record<string, unknown>, deserializer: (vals: Record<string, unknown>) => T): void
+registerSerializationForType(typeConstructor: Function, name: string, serializer: () => void, deserializer: () => void): void
 `
 
 Register a type to have custom serialization/deserialization when using {@link serialize} and {@link deserialize}.
@@ -429,14 +429,14 @@ Register a type to have custom serialization/deserialization when using {@link s
 #### **Parameters**
 - **typeConstructor**: *Function*
 - **name**: *string*
-- **serializer**: *(obj: T) => Record<string, unknown>*
-- **deserializer**: *(vals: Record<string, unknown>) => T*
+- **serializer**: () => void
+- **deserializer**: () => void
 
 **Returns** *void*
 
 ### **registerUserDefinedTransactionHandler**
 `
-registerUserDefinedTransactionHandler(transactionManager: TransactionManager, undoHandler: (payload: T) => void, redoHandler: (payload: T) => void): UserDefinedTransactionHandle<T>
+registerUserDefinedTransactionHandler(transactionManager: TransactionManager, undoHandler: () => void, redoHandler: () => void): UserDefinedTransactionHandle<T>
 `
 
 Creates a strongly typed transaction handle to enforce type safety when adding user defined transactions. This function is a wrapper around the more generalized transaction manager API for script based transactions. Any Editor Extension that needs to insert data into the transaction log for undo/redo should use this function to create a handler for the specific type of data that needs to be inserted. When a transaction is undone/redone, the associated handler function will be invoked with a copy of the payload data that was inserted into the log. As a general rule, transaction data should contain 2 things:<br> 1. The data that will be used to perform the operation we're trying to record<br> 2. The data that will be used to restore the state of the program to what it was before the operation.<br> NOTE/WARNING:<br> The payload data is serialized to JSON before being inserted into the transaction log and the underlying implementation uses the JSON.stringify() function to serialize the data. Any non-primitive data, such as classes or minecraft native objects will not serialize to JSON properly, so you should avoid using them as payload data.
@@ -445,10 +445,10 @@ Creates a strongly typed transaction handle to enforce type safety when adding u
 - **transactionManager**: *TransactionManager*
   
   A reference to the TransactionManager (from the extension context for your extension)
-- **undoHandler**: *(payload: T) => void*
+- **undoHandler**: () => void
   
   A function that will be invoked when the transaction is undone. The function will be passed a copy of the payload data that was inserted into the transaction log.
-- **redoHandler**: *(payload: T) => void*
+- **redoHandler**: () => void
   
   A function that will be invoked when the transaction is redone. The function will be passed a copy of the payload data that was inserted into the transaction log.
 
@@ -485,6 +485,6 @@ Small utility for getting a string from an unknown exception type
 
 Type: [*MinecraftEditor*](MinecraftEditor.md)
 
-## Dependencies
+## Peer Dependencies
 - [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
 - [`@minecraft/server`](../../../scriptapi/minecraft/server/minecraft-server.md)

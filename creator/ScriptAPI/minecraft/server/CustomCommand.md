@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CustomCommand Interface
 description: Contents of the @minecraft/server.CustomCommand class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CustomCommand Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Define the custom command, including name, permissions, and parameters.
 

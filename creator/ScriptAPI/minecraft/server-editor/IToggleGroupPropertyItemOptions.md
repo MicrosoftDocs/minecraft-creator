@@ -17,42 +17,42 @@ Optional properties for Toggle Group property item
 ## Properties
 
 ### **entries**
-`entries: IToggleGroupPropertyItemEntry[];`
+`entries?: IToggleGroupPropertyItemEntry[];`
 
 List of toggle button entries associated with the property item. If undefined, list will be empty.
 
-Type: *IToggleGroupPropertyItemEntry[]*
+Type: *IToggleGroupPropertyItemEntry*[]
 
 ### **hiddenEntryLabels**
-`hiddenEntryLabels: boolean;`
+`hiddenEntryLabels?: boolean;`
 
 If true toggle buttons will be displayed vertically with their labels. If undefined, labels will be hidden.
 
 Type: *boolean*
 
 ### **hiddenLabel**
-`hiddenLabel: boolean;`
+`hiddenLabel?: boolean;`
 
 If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
 ### **onChange**
-`onChange: (newValue: number, oldValue: number, items: IToggleGroupPropertyItemEntry[]) => void;`
+`onChange?: () => void;`
 
 This callback is called when UI control value is changed.
 
-Type: *(newValue: number, oldValue: number, items: IToggleGroupPropertyItemEntry[]) => void*
+Type: () => void
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item.
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: BasicTooltipContent;`
+`tooltip?: BasicTooltipContent;`
 
 Tooltip description of the property item.
 

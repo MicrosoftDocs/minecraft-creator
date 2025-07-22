@@ -263,6 +263,21 @@ Notes:
   - This property can be read in early-execution mode.
 ::: moniker-end
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **packSettingChange**
+`read-only packSettingChange: PackSettingChangeAfterEventSignal;`
+
+This event is triggered when a pack setting is changed.
+
+Type: [*PackSettingChangeAfterEventSignal*](PackSettingChangeAfterEventSignal.md)
+
+> [!CAUTION]
+> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Notes:
+  - This property can be read in early-execution mode.
+::: moniker-end
+
 ### **pistonActivate**
 `read-only pistonActivate: PistonActivateAfterEventSignal;`
 
@@ -319,7 +334,6 @@ Type: [*PlayerGameModeChangeAfterEventSignal*](PlayerGameModeChangeAfterEventSig
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerHotbarSelectedSlotChange**
 `read-only playerHotbarSelectedSlotChange: PlayerHotbarSelectedSlotChangeAfterEventSignal;`
 
@@ -327,12 +341,8 @@ This event fires when a player's selected slot changes.
 
 Type: [*PlayerHotbarSelectedSlotChangeAfterEventSignal*](PlayerHotbarSelectedSlotChangeAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **playerInputModeChange**
 `read-only playerInputModeChange: PlayerInputModeChangeAfterEventSignal;`
@@ -374,7 +384,6 @@ Type: [*PlayerInteractWithEntityAfterEventSignal*](PlayerInteractWithEntityAfter
 Notes:
   - This property can be read in early-execution mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **playerInventoryItemChange**
 `read-only playerInventoryItemChange: PlayerInventoryItemChangeAfterEventSignal;`
 
@@ -382,12 +391,8 @@ This event fires when an item gets added or removed to the player's inventory.
 
 Type: [*PlayerInventoryItemChangeAfterEventSignal*](PlayerInventoryItemChangeAfterEventSignal.md)
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can be read in early-execution mode.
-::: moniker-end
 
 ### **playerJoin**
 `read-only playerJoin: PlayerJoinAfterEventSignal;`

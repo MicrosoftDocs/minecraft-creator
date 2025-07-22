@@ -19,7 +19,7 @@ Settings category that manages [*@minecraft/server-editor.GraphicsSettingsProper
 
 ### **get**
 `
-"get"(property: T): GraphicsSettingsPropertyTypeMap[T] | undefined
+"get"(property: T): GraphicsSettingsPropertyTypeMap[T] | void
 `
 
 Retrieves a graphics settings property value.
@@ -29,7 +29,7 @@ Retrieves a graphics settings property value.
   
   Property identifier.
 
-**Returns** *GraphicsSettingsPropertyTypeMap[T] | undefined* - Returns the property value if it is found. If the property is not available, it returns undefined.
+**Returns** *GraphicsSettingsPropertyTypeMap[T]* | *void* - Returns the property value if it is found. If the property is not available, it returns undefined.
 
 ### **getAll**
 `

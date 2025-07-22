@@ -256,7 +256,7 @@ Notes:
 
 ### **getComponent**
 `
-getComponent(componentId: T): BlockComponentReturnType<T> | undefined
+getComponent(componentId: T): BlockComponentReturnType<T> | void
 `
 
 Gets a component (that represents additional capabilities) for a block - for example, an inventory component of a chest block.
@@ -266,7 +266,7 @@ Gets a component (that represents additional capabilities) for a block - for exa
   
   The identifier of the component (e.g., 'minecraft:inventory'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs are those in the [*@minecraft/server.BlockComponentTypes*](../../../priorscriptapi/minecraft/server-1xx/BlockComponentTypes.md) enum and custom component IDs registered with the [*@minecraft/server.BlockComponentRegistry*](../../../priorscriptapi/minecraft/server-1xx/BlockComponentRegistry.md).
 
-**Returns** *BlockComponentReturnType<T> | undefined* - Returns the component if it exists on the block, otherwise undefined.
+**Returns** *BlockComponentReturnType<T>* | *void* - Returns the component if it exists on the block, otherwise undefined.
   
 Notes:
 - This function can throw errors.

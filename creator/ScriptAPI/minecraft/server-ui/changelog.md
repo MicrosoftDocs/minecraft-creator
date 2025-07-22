@@ -19,8 +19,8 @@ description: Changelog of the `@minecraft/server-ui` module
 
 ## 2.1.0-beta
 ## 2.0.0
-#### Added module dependency `@minecraft/server@2.0.0` 
-#### Removed module dependency `@minecraft/server@1.3.0` 
+#### Added module peer dependency `@minecraft/server@2.0.0`
+#### Removed module peer dependency `@minecraft/server@1.3.0`
 #### Changed *[`ActionFormData`](ActionFormData.md)*
 - Added function *[`divider`](ActionFormData.md#divider)*
 - Added function *[`header`](ActionFormData.md#header)*
@@ -50,8 +50,8 @@ description: Changelog of the `@minecraft/server-ui` module
 #### Changed *[`ModalFormResponse`](ModalFormResponse.md)*
 - Changed type for *[`formValues`](ModalFormResponse.md#formvalues)* from (*boolean* | *number* | *string*)[] to (*boolean* | *number* | *string* | *undefined*)[]
 ## 1.3.0
-#### Added module dependency `@minecraft/server@1.3.0` 
-#### Removed module dependency `@minecraft/server@1.2.0` 
+#### Added module peer dependency `@minecraft/server@1.3.0`
+#### Removed module peer dependency `@minecraft/server@1.2.0`
 #### Added *[`UIManager`](UIManager.md)*
 #### Added object `uiManager`
 ## 1.2.0

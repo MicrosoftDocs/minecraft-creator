@@ -17,11 +17,11 @@ A property item which supports ProgressIndicator properties
 ## Properties
 
 ### **progress**
-`read-only progress: Readonly<number> | undefined;`
+`read-only progress: Readonly<number> | void;`
 
 Current progress of the property item.
 
-Type: *Readonly<number> | undefined*
+Type: *Readonly<number>* | *void*
 
 ## Methods
 - [setTitle](#settitle)
@@ -29,13 +29,13 @@ Type: *Readonly<number> | undefined*
 
 ### **setTitle**
 `
-setTitle(title: LocalizedString | undefined): void
+setTitle(title: LocalizedString | void): void
 `
 
 Updates title of the property item.
 
 #### **Parameters**
-- **title**: *LocalizedString | undefined*
+- **title**: *LocalizedString* | *void*
   
   New title.
 
@@ -43,13 +43,13 @@ Updates title of the property item.
 
 ### **setTooltip**
 `
-setTooltip(tooltip: LocalizedString | undefined): void
+setTooltip(tooltip: LocalizedString | void): void
 `
 
 Updates tooltip description of property item.
 
 #### **Parameters**
-- **tooltip**: *LocalizedString | undefined*
+- **tooltip**: *LocalizedString* | *void*
   
   New tooltip.
 

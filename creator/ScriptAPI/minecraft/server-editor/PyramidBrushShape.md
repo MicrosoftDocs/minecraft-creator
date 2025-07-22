@@ -19,7 +19,7 @@ description: Contents of the @minecraft/server-editor.PyramidBrushShape class.
 
 ### **constructor**
 `
-new PyramidBrushShape(settings: {
+new PyramidBrushShape(settings?: {
         uniform?: boolean;
         width?: number;
         height?: number;
@@ -33,7 +33,7 @@ new PyramidBrushShape(settings: {
 Constructs a new instance of the `PyramidBrushShape` class
 
 #### **Parameters**
-- **settings**: *{
+- **settings**?: *{
         uniform?: boolean;
         width?: number;
         height?: number;
@@ -47,12 +47,12 @@ Constructs a new instance of the `PyramidBrushShape` class
 
 ### **createSettingsPane**
 `
-createSettingsPane(parentPane: IPropertyPane, onSettingsChange: () => void): ISubPanePropertyItem
+createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
 `
 
 #### **Parameters**
 - **parentPane**: *IPropertyPane*
-- **onSettingsChange**: *() => void*
+- **onSettingsChange**?: () => void
 
 **Returns** *ISubPanePropertyItem*
 

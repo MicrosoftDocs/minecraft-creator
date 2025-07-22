@@ -30,13 +30,13 @@ Type: *Readonly<minecraftserver.Vector3>*
 
 ### **setTitle**
 `
-setTitle(title: LocalizedString | undefined): void
+setTitle(title: LocalizedString | void): void
 `
 
 Updates title of the button.
 
 #### **Parameters**
-- **title**: *LocalizedString | undefined*
+- **title**: *LocalizedString* | *void*
   
   New button title.
 
@@ -44,13 +44,13 @@ Updates title of the button.
 
 ### **setTooltip**
 `
-setTooltip(tooltip: BasicTooltipContent | undefined): void
+setTooltip(tooltip: BasicTooltipContent | void): void
 `
 
 Updates tooltip description of the button.
 
 #### **Parameters**
-- **tooltip**: *BasicTooltipContent | undefined*
+- **tooltip**: *BasicTooltipContent* | *void*
   
   New button tooltip.
 

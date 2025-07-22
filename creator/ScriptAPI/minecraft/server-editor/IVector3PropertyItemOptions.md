@@ -17,49 +17,49 @@ Optional properties for Vector3 property item
 ## Properties
 
 ### **hiddenLabel**
-`hiddenLabel: boolean;`
+`hiddenLabel?: boolean;`
 
 If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
 ### **isInteger**
-`isInteger: boolean;`
+`isInteger?: boolean;`
 
 If we should treat the Vector3 properties as integer values. By default is false.
 
 Type: *boolean*
 
 ### **max**
-`max: Partial<minecraftserver.Vector3>;`
+`max?: Partial<minecraftserver.Vector3>;`
 
 The min possible limits. If undefined, Number.MAX_SAFE_INTEGER will be used.
 
 Type: *Partial<minecraftserver.Vector3>*
 
 ### **min**
-`min: Partial<minecraftserver.Vector3>;`
+`min?: Partial<minecraftserver.Vector3>;`
 
 The min possible limits. If undefined, Number.MIN_SAFE_INTEGER will be used.
 
 Type: *Partial<minecraftserver.Vector3>*
 
 ### **onChange**
-`onChange: (newValue: minecraftserver.Vector3, oldValue: minecraftserver.Vector3) => void;`
+`onChange?: () => void;`
 
 This callback is called when UI control is changed.
 
-Type: *(newValue: minecraftserver.Vector3, oldValue: minecraftserver.Vector3) => void*
+Type: () => void
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: BasicTooltipContent;`
+`tooltip?: BasicTooltipContent;`
 
 Tooltip description of the property item
 

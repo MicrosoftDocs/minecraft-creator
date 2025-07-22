@@ -20,13 +20,13 @@ A property item pane which supports multiple buttons
 
 ### **addButton**
 `
-addButton(action: ButtonPropertyItemSupportedActionTypes, options: IButtonPropertyItemOptions): IButtonPropertyItem
+addButton(action: ButtonPropertyItemSupportedActionTypes, options?: IButtonPropertyItemOptions): IButtonPropertyItem
 `
 
 Adds a button to the pane and binds the specified action to the button interaction.
 
 #### **Parameters**
 - **action**: *ButtonPropertyItemSupportedActionTypes*
-- **options**: *IButtonPropertyItemOptions*
+- **options**?: *IButtonPropertyItemOptions*
 
 **Returns** *IButtonPropertyItem*

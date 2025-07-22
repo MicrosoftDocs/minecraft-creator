@@ -17,42 +17,42 @@ Optional properties for Color Picker property item
 ## Properties
 
 ### **hiddenAlpha**
-`hiddenAlpha: boolean;`
+`hiddenAlpha?: boolean;`
 
 If true alpha control will be hidden. If undefined, it will default to false.
 
 Type: *boolean*
 
 ### **hiddenLabel**
-`hiddenLabel: boolean;`
+`hiddenLabel?: boolean;`
 
 If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
 ### **onChange**
-`onChange: (newValue: minecraftserver.RGBA, oldValue: minecraftserver.RGBA) => void;`
+`onChange?: () => void;`
 
 This callback is called when UI control value is changed.
 
-Type: *(newValue: minecraftserver.RGBA, oldValue: minecraftserver.RGBA) => void*
+Type: () => void
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item.
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: LocalizedString;`
+`tooltip?: LocalizedString;`
 
 Tooltip description of the property item.
 
 Type: *LocalizedString*
 
 ### **variant**
-`variant: ColorPickerPropertyItemVariant;`
+`variant?: ColorPickerPropertyItemVariant;`
 
 The variant for the button. By default it is Primary.
 

@@ -262,7 +262,6 @@ Causes an event to fire within script with the specified message ID and payload.
   Data component of the message to send. This is custom and dependent on the kinds of behavior packs and content you may have installed within the world.
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*NamespaceNameError*](NamespaceNameError.md)
 

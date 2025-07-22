@@ -14,7 +14,7 @@ Properties of dropdown property item menu entry
 ## Properties
 
 ### **imageData**
-`read-only imageData: ImageResourceData;`
+`read-only imageData?: ImageResourceData;`
 
 Optional image of the dropdown entry.
 

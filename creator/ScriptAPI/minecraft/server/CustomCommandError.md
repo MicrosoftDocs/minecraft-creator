@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CustomCommandError Class
 description: Contents of the @minecraft/server.CustomCommandError class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CustomCommandError Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 ## Extends
 - *Error*

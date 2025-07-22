@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CommandPermissionLevel Enumeration
 description: Contents of the @minecraft/server.CommandPermissionLevel enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CommandPermissionLevel Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 The required permission level to execute the custom command.
 

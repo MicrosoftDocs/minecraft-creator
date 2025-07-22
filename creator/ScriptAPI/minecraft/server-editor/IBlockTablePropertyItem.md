@@ -29,7 +29,7 @@ addOrUpdateEntry(block: string | minecraftserver.BlockType, blockInfo: IBlockTab
 Create new or update an existing entry in the block table
 
 #### **Parameters**
-- **block**: *string | minecraftserver.BlockType*
+- **block**: *string* | *minecraftserver.BlockType*
   
   a new entry in the block table.
 - **blockInfo**: *IBlockTableEntryInfo*
@@ -54,17 +54,17 @@ Delete entry in the block table, by block name
 
 ### **getEntry**
 `
-getEntry(block: string | minecraftserver.BlockType): IBlockTableEntryInfo | undefined
+getEntry(block: string | minecraftserver.BlockType): IBlockTableEntryInfo | void
 `
 
 Read entry from the block table, by block name
 
 #### **Parameters**
-- **block**: *string | minecraftserver.BlockType*
+- **block**: *string* | *minecraftserver.BlockType*
   
   an entry in the block table.
 
-**Returns** *IBlockTableEntryInfo | undefined*
+**Returns** *IBlockTableEntryInfo* | *void*
 
 ### **setTitle**
 `

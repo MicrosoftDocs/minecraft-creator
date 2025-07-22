@@ -17,35 +17,35 @@ Optional properties for String property item
 ## Properties
 
 ### **hiddenLabel**
-`hiddenLabel: boolean;`
+`hiddenLabel?: boolean;`
 
 If true label text will be hidden. If undefined, the label will be visible by default.
 
 Type: *boolean*
 
 ### **onChange**
-`onChange: (newValue: string, oldValue: string) => void;`
+`onChange?: () => void;`
 
 This callback is called when UI control value is changed.
 
-Type: *(newValue: string, oldValue: string) => void*
+Type: () => void
 
 ### **regexPattern**
-`regexPattern: string;`
+`regexPattern?: string;`
 
 Optional regular expression pattern to validate string.
 
 Type: *string*
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item.
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: BasicTooltipContent;`
+`tooltip?: BasicTooltipContent;`
 
 Tooltip description of the property item.
 

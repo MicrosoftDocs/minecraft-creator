@@ -236,6 +236,7 @@ Entity, presumably a villager, becomes a weaponsmith
 Entity becomes a yellow tail parrot
 - `minecraft:become_yellow_tang`
 Entity becomes a yellow tang
+- `minecraft:begin_oxidizing`
 - `minecraft:born_default`
 Entity is born in default mode
 - `minecraft:born_screamer`
@@ -319,6 +320,7 @@ Entity is from a player
 - `minecraft:from_player_exposed`
 - `minecraft:from_player_oxidized`
 - `minecraft:from_player_weathered`
+- `minecraft:from_serialized_entity`
 - `minecraft:from_village`
 Entity is from a village
 - `minecraft:from_wandering_trader`
@@ -366,6 +368,7 @@ Entity is made dark brown
 Entity is made gray
 - `minecraft:make_white`
 Entity is made white
+- `minecraft:maximum_oxidation`
 - `minecraft:melee_mode`
 Entity is in melee mode
 - `minecraft:mule_saddled`
@@ -379,6 +382,7 @@ Entity is angered
 Entity is calmed
 - `minecraft:on_chest`
 Entity is on a chest
+- `minecraft:on_death`
 - `minecraft:on_deflate`
 Entity deflates
 - `minecraft:on_eat_block`
@@ -452,7 +456,7 @@ Entity is no longer persistent
 - `minecraft:remove_raid_trigger`
 Raid trigger is removed
 - `minecraft:reset_swaying_ticks`
-- `minecraft:restart_timer`
+- `minecraft:restart_oxidation_timer`
 - `minecraft:resupply_trades`
 Entities with a trade are having those trades resupplied
 - `minecraft:roll_up`
@@ -476,6 +480,7 @@ Librarian entity schedules work
 Entity schedules work as a villager with a profession
 - `minecraft:scheduled`
 Entity action is scheduled
+- `minecraft:serialize_entity_succeeded`
 - `minecraft:set_trap`
 Entity sets a trap
 - `minecraft:sink`

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.InventoryItemEventOptions Interface
 description: Contents of the @minecraft/server.InventoryItemEventOptions class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # InventoryItemEventOptions Interface
-
-> [!CAUTION]
-> This interface is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Contains additional filtering options for inventory item events.
 

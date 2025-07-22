@@ -35,13 +35,13 @@ Returns current processing state of the binding.
 
 ### **setProcessingState**
 `
-setProcessingState(newState: KeyProcessingState | undefined): void
+setProcessingState(newState: KeyProcessingState | void): void
 `
 
 Updates how the key input will be processed for this binding. If undefined, it will be consumed.
 
 #### **Parameters**
-- **newState**: *KeyProcessingState | undefined*
+- **newState**: *KeyProcessingState* | *void*
   
   New binding processing state.
 

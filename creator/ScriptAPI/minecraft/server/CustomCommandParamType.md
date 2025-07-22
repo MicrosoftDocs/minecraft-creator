@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CustomCommandParamType Enumeration
 description: Contents of the @minecraft/server.CustomCommandParamType enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CustomCommandParamType Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 The types of paramaters accepted by a custom command.
 

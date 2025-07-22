@@ -14,25 +14,25 @@ Properties of toggle group property item list entry
 ## Properties
 
 ### **icon**
-`read-only icon: string;`
+`read-only icon?: string;`
 
 Optional icon of the dropdown entry.
 
 Type: *string*
 
 ### **label**
-`read-only label: LocalizedString;`
+`read-only label?: LocalizedString;`
 
 Localized display text of the entry.
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`read-only tooltip: LocalizedString;`
+`read-only tooltip?: BasicTooltipContent;`
 
 Optional tooltip description text of the entry.
 
-Type: *LocalizedString*
+Type: *BasicTooltipContent*
 
 ### **value**
 `read-only value: number;`

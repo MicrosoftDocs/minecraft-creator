@@ -17,35 +17,35 @@ Optional properties for Sub Pane property item
 ## Properties
 
 ### **alignment**
-`alignment: LayoutAlignment;`
+`alignment?: LayoutAlignment;`
 
 Alignment of property items within the pane of the property pane. If undefined, it will default to Left.
 
 Type: *LayoutAlignment*
 
 ### **collapsed**
-`collapsed: boolean;`
+`collapsed?: boolean;`
 
 Initial expander state of sub pane. If undefined, it will default to false.
 
 Type: *boolean*
 
 ### **direction**
-`direction: LayoutDirection;`
+`direction?: LayoutDirection;`
 
 Determines layout direction of sub pane property items. If undefined, it will default to Vertical.
 
 Type: *LayoutDirection*
 
 ### **hasExpander**
-`hasExpander: boolean;`
+`hasExpander?: boolean;`
 
 Determines if sub pane should have an expander. If undefined, it will default to true.
 
 Type: *boolean*
 
 ### **hasMargins**
-`hasMargins: boolean;`
+`hasMargins?: boolean;`
 
 Adds additional margins to sub pane. If undefined, it will default to true.
 

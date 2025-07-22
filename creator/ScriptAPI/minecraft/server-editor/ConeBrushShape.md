@@ -19,7 +19,7 @@ description: Contents of the @minecraft/server-editor.ConeBrushShape class.
 
 ### **constructor**
 `
-new ConeBrushShape(settings: {
+new ConeBrushShape(settings?: {
         uniform?: boolean;
         radius?: number;
         width?: number;
@@ -34,7 +34,7 @@ new ConeBrushShape(settings: {
 Constructs a new instance of the `ConeBrushShape` class
 
 #### **Parameters**
-- **settings**: *{
+- **settings**?: *{
         uniform?: boolean;
         radius?: number;
         width?: number;
@@ -49,12 +49,12 @@ Constructs a new instance of the `ConeBrushShape` class
 
 ### **createSettingsPane**
 `
-createSettingsPane(parentPane: IPropertyPane, onSettingsChange: () => void): ISubPanePropertyItem
+createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
 `
 
 #### **Parameters**
 - **parentPane**: *IPropertyPane*
-- **onSettingsChange**: *() => void*
+- **onSettingsChange**?: () => void
 
 **Returns** *ISubPanePropertyItem*
 

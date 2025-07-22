@@ -29,13 +29,13 @@ Type: *minecraftserver.RGBA*
 
 ### **setTitle**
 `
-setTitle(title: LocalizedString | undefined): void
+setTitle(title: LocalizedString | void): void
 `
 
 Updates title of the property item.
 
 #### **Parameters**
-- **title**: *LocalizedString | undefined*
+- **title**: *LocalizedString* | *void*
   
   New title.
 
@@ -43,13 +43,13 @@ Updates title of the property item.
 
 ### **setTooltip**
 `
-setTooltip(tooltip: LocalizedString | undefined): void
+setTooltip(tooltip: LocalizedString | void): void
 `
 
 Updates tooltip of the property item.
 
 #### **Parameters**
-- **tooltip**: *LocalizedString | undefined*
+- **tooltip**: *LocalizedString* | *void*
   
   New tooltip.
 

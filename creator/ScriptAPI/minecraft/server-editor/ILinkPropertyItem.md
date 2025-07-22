@@ -29,24 +29,24 @@ Type: *Readonly<string>*
 
 ### **setTitle**
 `
-setTitle(title: LocalizedString | undefined): void
+setTitle(title: LocalizedString | void): void
 `
 
 Sets title of the property item.
 
 #### **Parameters**
-- **title**: *LocalizedString | undefined*
+- **title**: *LocalizedString* | *void*
 
 **Returns** *void*
 
 ### **setTooltip**
 `
-setTooltip(tooltip: LocalizedString | undefined): void
+setTooltip(tooltip: LocalizedString | void): void
 `
 
 Sets tooltip description of the property item.
 
 #### **Parameters**
-- **tooltip**: *LocalizedString | undefined*
+- **tooltip**: *LocalizedString* | *void*
 
 **Returns** *void*

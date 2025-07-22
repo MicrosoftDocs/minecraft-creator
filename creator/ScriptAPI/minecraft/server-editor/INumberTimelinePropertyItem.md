@@ -47,7 +47,7 @@ getData(): INumberTimelinePropertyItemEntry[]
 
 Get the list of nodes in the property item.
 
-**Returns** *INumberTimelinePropertyItemEntry[]*
+**Returns** *INumberTimelinePropertyItemEntry*[]
 
 ### **getTime**
 `

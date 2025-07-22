@@ -65,6 +65,7 @@ Notes:
 - [rotateBody](#rotatebody)
 - [setBodyRotation](#setbodyrotation)
 - [setItem](#setitem)
+- [setSkin](#setskin)
 - [startBuild](#startbuild)
 - [stopBreakingBlock](#stopbreakingblock)
 - [stopBuild](#stopbuild)
@@ -129,6 +130,7 @@ Destroys the block at blockLocation, respecting the rules of the server player's
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **chat**
 `
@@ -244,6 +246,7 @@ Causes the simulated player to interact with a block. The block at the specified
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **interactWithEntity**
 `
@@ -262,6 +265,7 @@ Causes the simulated player to interact with a mob. Returns true if the interact
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **jump**
 `
@@ -290,6 +294,7 @@ Rotates the simulated player's head/body to look at the given block location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **lookAtEntity**
 `
@@ -382,6 +387,7 @@ Orders the simulated player to move to the given location in a straight line. If
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws *Error*, [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **navigateToBlock**
 `
@@ -399,6 +405,7 @@ Orders the simulated player to move to a specific block location using navigatio
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **navigateToEntity**
 `
@@ -416,6 +423,7 @@ Will use navigation to follow the selected entity to within a one block radius. 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **navigateToLocation**
 `
@@ -433,6 +441,7 @@ Orders the simulated player to move to a specific location using navigation. If 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **navigateToLocations**
 `
@@ -452,6 +461,7 @@ Use navigation to follow the route provided via the locations parameter. If a mo
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **respawn**
 `
@@ -517,6 +527,23 @@ Sets a particular item for the simulated player.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+### **setSkin**
+`
+setSkin(options: PlayerSkinData): void
+`
+
+Updates information about the player's skin.
+
+#### **Parameters**
+- **options**: [*PlayerSkinData*](PlayerSkinData.md)
+  
+  Options for the skin to set on the player.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **startBuild**
 `
@@ -691,6 +718,7 @@ Causes the simulated player to use an item in their inventory on a block. The bl
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)
 
 ### **useItemOnBlock**
 `
@@ -718,3 +746,4 @@ Causes the simulated player to use an item on a block. The block at the specifie
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md), [*@minecraft/server.InvalidEntityError*](../../../scriptapi/minecraft/server/InvalidEntityError.md)

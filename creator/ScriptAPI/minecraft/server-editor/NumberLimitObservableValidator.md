@@ -14,7 +14,7 @@ Validates min/max limits of observable objects that support number
 ## Properties
 
 ### **_isInteger**
-`_isInteger: boolean;`
+`_isInteger?: boolean;`
 
 Type: *boolean*
 
@@ -22,7 +22,7 @@ Notes:
   - This property can't be used in read-only mode.
 
 ### **_max**
-`_max: number;`
+`_max?: number;`
 
 Type: *number*
 
@@ -30,7 +30,7 @@ Notes:
   - This property can't be used in read-only mode.
 
 ### **_min**
-`_min: number;`
+`_min?: number;`
 
 Type: *number*
 
@@ -44,26 +44,26 @@ Notes:
 
 ### **constructor**
 `
-new NumberLimitObservableValidator(min: number | undefined, max: number | undefined, isInteger: boolean)
+new NumberLimitObservableValidator(min: number | void, max: number | void, isInteger?: boolean)
 `
 
 Constructs a new instance of the `NumberLimitObservableValidator` class
 
 #### **Parameters**
-- **min**: *number | undefined*
-- **max**: *number | undefined*
-- **isInteger**: *boolean*
+- **min**: *number* | *void*
+- **max**: *number* | *void*
+- **isInteger**?: *boolean*
 
 **Returns** *NumberLimitObservableValidator*
 
 ### **updateLimits**
 `
-updateLimits(min: number | undefined, max: number | undefined): void
+updateLimits(min: number | void, max: number | void): void
 `
 
 #### **Parameters**
-- **min**: *number | undefined*
-- **max**: *number | undefined*
+- **min**: *number* | *void*
+- **max**: *number* | *void*
 
 **Returns** *void*
 

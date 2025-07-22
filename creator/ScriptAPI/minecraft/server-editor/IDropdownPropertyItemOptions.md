@@ -17,35 +17,35 @@ Optional properties for Dropdown property item
 ## Properties
 
 ### **entries**
-`entries: IDropdownPropertyItemEntry[];`
+`entries?: IDropdownPropertyItemEntry[];`
 
 List of dropdown entries associated with the property item. If undefined, list will be empty.
 
-Type: *IDropdownPropertyItemEntry[]*
+Type: *IDropdownPropertyItemEntry*[]
 
 ### **hiddenLabel**
-`hiddenLabel: boolean;`
+`hiddenLabel?: boolean;`
 
 If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
 ### **onChange**
-`onChange: (newValue: number, oldValue: number, items: IDropdownPropertyItemEntry[]) => void;`
+`onChange?: () => void;`
 
 This callback is called when UI control value is changed.
 
-Type: *(newValue: number, oldValue: number, items: IDropdownPropertyItemEntry[]) => void*
+Type: () => void
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item.
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: BasicTooltipContent;`
+`tooltip?: BasicTooltipContent;`
 
 Tooltip description of the property item.
 

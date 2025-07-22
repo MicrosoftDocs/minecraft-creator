@@ -17,13 +17,13 @@ description: Contents of the @minecraft/server-editor.AudioSettings class.
 
 ### **get**
 `
-"get"(property: T): AudioSettingsPropertyTypeMap[T] | undefined
+"get"(property: T): AudioSettingsPropertyTypeMap[T] | void
 `
 
 #### **Parameters**
 - **property**: *T*
 
-**Returns** *AudioSettingsPropertyTypeMap[T] | undefined*
+**Returns** *AudioSettingsPropertyTypeMap[T]* | *void*
 
 ### **getAll**
 `

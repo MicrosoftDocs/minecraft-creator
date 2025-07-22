@@ -16,10 +16,10 @@ Used for validating an observable value before it gets set
 
 ### **validate**
 `
-validate(newValue: T): T | undefined
+validate(newValue: T): T | void
 `
 
 #### **Parameters**
 - **newValue**: *T*
 
-**Returns** *T | undefined*
+**Returns** *T* | *void*

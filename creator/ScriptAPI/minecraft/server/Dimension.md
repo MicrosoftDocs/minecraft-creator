@@ -30,17 +30,12 @@ Identifier of the dimension.
 
 Type: *string*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **localizationKey**
 `read-only localizationKey: string;`
 
 Key for the localization of a dimension's name used by language files.
 
 Type: *string*
-
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-::: moniker-end
 
 ## Methods
 - [containsBlock](#containsblock)
@@ -57,7 +52,13 @@ Type: *string*
 - [getEntities](#getentities)
 - [getEntitiesAtBlockLocation](#getentitiesatblocklocation)
 - [getEntitiesFromRay](#getentitiesfromray)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getLightLevel](#getlightlevel)
+::: moniker-end
 - [getPlayers](#getplayers)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getSkyLightLevel](#getskylightlevel)
+::: moniker-end
 - [getTopmostBlock](#gettopmostblock)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
@@ -479,6 +480,30 @@ Notes:
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*InvalidEntityError*](InvalidEntityError.md), [*@minecraft/common.UnsupportedFunctionalityError*](../../../scriptapi/minecraft/common/UnsupportedFunctionalityError.md)
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **getLightLevel**
+`
+getLightLevel(location: Vector3): number
+`
+
+Returns the total brightness level of light shining on a certain block position.
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+  
+  Location of the block we want to check the brightness of.
+
+**Returns** *number* - The brightness level on the block.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
+::: moniker-end
+
 ### **getPlayers**
 `
 getPlayers(options?: EntityQueryOptions): Player[]
@@ -496,6 +521,30 @@ Returns a set of players based on a set of conditions defined via the EntityQuer
 Notes:
 - This function can throw errors.
   - Throws [*CommandError*](CommandError.md), [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getSkyLightLevel**
+`
+getSkyLightLevel(location: Vector3): number
+`
+
+Returns the brightness level of light shining from the sky on a certain block position.
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+  
+  Position of the block we want to check the brightness of.
+
+**Returns** *number* - The brightness level on the block.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
+::: moniker-end
 
 ### **getTopmostBlock**
 `
@@ -687,7 +736,7 @@ Notes:
 
 ### **spawnEntity**
 `
-spawnEntity(identifier: EntityIdentifierType<NoInfer<T>>, location: Vector3, options: SpawnEntityOptions): Entity
+spawnEntity(identifier: EntityIdentifierType<NoInfer<T>>, location: Vector3, options?: SpawnEntityOptions): Entity
 `
 
 Creates a new entity (e.g., a mob) at the specified location.
@@ -699,7 +748,7 @@ Creates a new entity (e.g., a mob) at the specified location.
 - **location**: *Vector3*
   
   The location at which to create the entity.
-- **options**: *SpawnEntityOptions*
+- **options**?: *SpawnEntityOptions*
 
 **Returns** *Entity* - Newly created entity at the specified location.
   

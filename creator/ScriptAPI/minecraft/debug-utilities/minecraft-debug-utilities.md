@@ -24,7 +24,7 @@ Contains debug utility functions.
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.100-beta.24 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.110-beta.20 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -51,7 +51,7 @@ This is version 1.x.x of this module, which is the latest as of version 1.21.100
 collectPluginStats(): PluginStats
 `
 
-Collect type usage stats for each active script plugin/Add-On.
+Collect type usage stats for each active script plugin/add-on.
 
 **Returns** [*PluginStats*](PluginStats.md) - PluginStats object.
 
@@ -88,6 +88,6 @@ Debug Drawing class used to allow adding and removing wireframe shapes in world 
 
 Type: [*DebugDrawer*](DebugDrawer.md)
 
-## Dependencies
+## Peer Dependencies
 - [`@minecraft/common`](../../../scriptapi/minecraft/common/minecraft-common.md)
 - [`@minecraft/server`](../../../scriptapi/minecraft/server/minecraft-server.md)

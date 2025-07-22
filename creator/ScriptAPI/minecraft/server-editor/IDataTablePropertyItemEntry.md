@@ -14,11 +14,11 @@ Properties of data table property item menu entry
 ## Properties
 
 ### **image**
-`image: ImageResourceData;`
+`image?: ImageResourceData;`
 
 Type: *ImageResourceData*
 
 ### **text**
-`text: LocalizedString;`
+`text?: LocalizedString;`
 
 Type: *LocalizedString*

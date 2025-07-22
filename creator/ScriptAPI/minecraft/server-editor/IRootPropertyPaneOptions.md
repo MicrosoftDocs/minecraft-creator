@@ -17,7 +17,7 @@ The options to create a root pane.
 ## Properties
 
 ### **headerAction**
-`headerAction: IRootPropertyPaneHeaderAction;`
+`headerAction?: IRootPropertyPaneHeaderAction;`
 
 Optional action button to be displayed on the header.
 

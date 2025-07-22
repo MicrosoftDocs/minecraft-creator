@@ -23,7 +23,7 @@ Used for accessing all entity types currently available for use within the world
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **get**
 `
-static "get"(identifier: EntityIdentifierType<NoInfer<T>>): EntityType | undefined
+static "get"(identifier: EntityIdentifierType<NoInfer<T>>): EntityType | void
 `
 
 Retrieves an entity type using a string-based identifier.
@@ -31,7 +31,7 @@ Retrieves an entity type using a string-based identifier.
 #### **Parameters**
 - **identifier**: *EntityIdentifierType<NoInfer<T>>*
 
-**Returns** *EntityType | undefined*
+**Returns** *EntityType* | *void*
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

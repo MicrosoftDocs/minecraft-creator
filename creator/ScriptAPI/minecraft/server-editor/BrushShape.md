@@ -57,14 +57,14 @@ Constructs a new instance of the `BrushShape` class
 
 ### **createSettingsPane**
 `
-createSettingsPane(parentPane: IPropertyPane, onSettingsChange: () => void): ISubPanePropertyItem | undefined
+createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem | void
 `
 
 #### **Parameters**
 - **parentPane**: *IPropertyPane*
-- **onSettingsChange**: *() => void*
+- **onSettingsChange**?: () => void
 
-**Returns** *ISubPanePropertyItem | undefined*
+**Returns** *ISubPanePropertyItem* | *void*
 
 ### **createShape**
 `

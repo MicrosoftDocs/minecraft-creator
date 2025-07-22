@@ -19,7 +19,7 @@ description: Contents of the @minecraft/server-editor.CuboidBrushShape class.
 
 ### **constructor**
 `
-new CuboidBrushShape(settings: {
+new CuboidBrushShape(settings?: {
         uniform?: boolean;
         length?: number;
         width?: number;
@@ -35,7 +35,7 @@ new CuboidBrushShape(settings: {
 Constructs a new instance of the `CuboidBrushShape` class
 
 #### **Parameters**
-- **settings**: *{
+- **settings**?: *{
         uniform?: boolean;
         length?: number;
         width?: number;
@@ -51,12 +51,12 @@ Constructs a new instance of the `CuboidBrushShape` class
 
 ### **createSettingsPane**
 `
-createSettingsPane(parentPane: IPropertyPane, onSettingsChange: () => void): ISubPanePropertyItem
+createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
 `
 
 #### **Parameters**
 - **parentPane**: *IPropertyPane*
-- **onSettingsChange**: *() => void*
+- **onSettingsChange**?: () => void
 
 **Returns** *ISubPanePropertyItem*
 

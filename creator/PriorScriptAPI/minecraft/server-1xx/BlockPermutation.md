@@ -98,7 +98,7 @@ Notes:
 
 ### **getState**
 `
-getState(stateName: T): minecraftvanilladata.BlockStateSuperset[T] | undefined
+getState(stateName: T): minecraftvanilladata.BlockStateSuperset[T] | void
 `
 
 Gets a state for the permutation.
@@ -108,7 +108,7 @@ Gets a state for the permutation.
   
   Name of the block state who's value is to be returned.
 
-**Returns** *minecraftvanilladata.BlockStateSuperset[T] | undefined* - Returns the state if the permutation has it, else `undefined`.
+**Returns** *minecraftvanilladata.BlockStateSuperset[T]* | *void* - Returns the state if the permutation has it, else `undefined`.
 
 ### **getTags**
 `
@@ -189,7 +189,7 @@ Notes:
 
 ### **matches**
 `
-matches(blockName: T, states: BlockStateArg<T>): boolean
+matches(blockName: T, states?: BlockStateArg<T>): boolean
 `
 
 Returns a boolean whether a specified permutation matches this permutation. If states is not specified, matches checks against the set of types more broadly.
@@ -198,7 +198,7 @@ Returns a boolean whether a specified permutation matches this permutation. If s
 - **blockName**: *T*
   
   An optional set of states to compare against.
-- **states**: *BlockStateArg<T>*
+- **states**?: *BlockStateArg<T>*
 
 **Returns** *boolean*
 
@@ -224,7 +224,7 @@ Notes:
 
 ### **resolve**
 `
-static resolve(blockName: T, states: BlockStateArg<T>): BlockPermutation
+static resolve(blockName: T, states?: BlockStateArg<T>): BlockPermutation
 `
 
 Given a type identifier and an optional set of properties, will return a BlockPermutation object that is usable in other block APIs (e.g., block.setPermutation)
@@ -233,7 +233,7 @@ Given a type identifier and an optional set of properties, will return a BlockPe
 - **blockName**: *T*
   
   Identifier of the block to check.
-- **states**: *BlockStateArg<T>*
+- **states**?: *BlockStateArg<T>*
 
 **Returns** *BlockPermutation*
   

@@ -17,35 +17,35 @@ Optional properties for progress indicator property item
 ## Properties
 
 ### **hiddenLabel**
-`hiddenLabel: boolean;`
+`hiddenLabel?: boolean;`
 
 If true label text will be hidden. If undefined, the label will be visible by default.
 
 Type: *boolean*
 
 ### **progress**
-`progress: IObservableProp<number>;`
+`progress?: IObservableProp<number>;`
 
 Normalized loading progress (0 to 1).
 
 Type: *IObservableProp<number>*
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item.
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: LocalizedString;`
+`tooltip?: LocalizedString;`
 
 Tooltip description of the property item.
 
 Type: *LocalizedString*
 
 ### **variant**
-`variant: ProgressIndicatorPropertyItemVariant;`
+`variant?: ProgressIndicatorPropertyItemVariant;`
 
 Determines how we display progress indicator. If undefined, it will default to Spinner.
 

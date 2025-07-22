@@ -14,21 +14,21 @@ Optional parameter definition for RegisterEditorExtension function Allows the ex
 ## Properties
 
 ### **description**
-`description: string;`
+`description?: string;`
 
 Description of the extension.
 
 Type: *string*
 
 ### **notes**
-`notes: string;`
+`notes?: string;`
 
 Additional notes and description of the extension.
 
 Type: *string*
 
 ### **toolGroupId**
-`toolGroupId: string;`
+`toolGroupId?: string;`
 
 An optional custom group identifier that will be used for all Modal Tools created from the registered extension.
 
