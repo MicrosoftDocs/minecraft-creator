@@ -16,7 +16,7 @@ Worlds in the Minecraft Marketplace, like [survival spawns](SurvivalSpawnCreatio
 
 So where do world templates come from? Well, they are made from a zipped Minecraft world has been given the file extension **.mctemplate** and has the proper **manifest.json** file and a **texts** folder with some files inside it.
 
-If your exported world has custom stuff added to it, like [add-on packs](GettingStarted.md), those get included, too.
+If your exported world has custom stuff added to it, like [Add-On packs](GettingStarted.md), those get included, too.
 
 When you import a world file (**.mcworld**), it gets added to your list of worlds where you can open it and start mining and crafting.
 
@@ -64,7 +64,7 @@ Ready? Here we go!
 
 10. Open the files and check them out in Visual Studio Code, but don't move them or change the names of anything.
 
-### Structure of a Minecraft World package (without add-on packs)
+### Structure of a Minecraft World package (without Add-On packs)
 
 This is the baseline for our project.
 
@@ -136,7 +136,7 @@ Okay. Now that we know what a world file has in it, and how to zip and rename th
 
 All you need to do to turn a Minecraft world into a world template is:
 
-1. Create a working exported world with any configurations and add-on packs activated.
+1. Create a working exported world with any configurations and Add-On packs activated.
 
 2. Add the proper **manifest.json** file.
 
@@ -247,9 +247,9 @@ If you accidentally drag the entire folder out of your **com.mojang** folder, it
 
 3. All of your imported templates are in the **world_templates** folder. Minecraft puts them in there during the import process.
 
-## Variation: Add-on Packs
+## Variation: Add-On Packs
 
-If you activate add-on packs in a world and then export that world, Minecraft creates a few more folders and files to handle it all:
+If you activate Add-On packs in a world and then export that world, Minecraft creates a few more folders and files to handle it all:
 
 -------------------------
 

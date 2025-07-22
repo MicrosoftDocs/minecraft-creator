@@ -74,7 +74,7 @@ Inside the description tag, a few basic properties define how the game registers
 
 | **Parameter Name** | **Type** | **Description**    |
 |---|----------|--------|
-| `identifier`  | String   | Identifier of the entity. If this is a custom entity in an add-on, you should use a custom unique namespace as seen in the example.|
+| `identifier`  | String   | Identifier of the entity. If this is a custom entity in an Add-On, you should use a custom unique namespace as seen in the example.|
 | `runtime_identifier` | String   | Identifier that's used internally by the game. This can be used to inherit custom mechanics from Vanilla entities that are not yet available as a component. Only one runtime identifier may be specified per entity. **Only use this if it is really necessary.** If a Vanilla entity's mechanics are turned into components, you may lose functionality if you are relying on those mechanics through a runtime identifier. |
 | `is_spawnable`   | Boolean  | If true, a spawn egg for the entity is added to the creative inventory.   |
 | `is_summonable` | Boolean  | If true, the entity can be summoned using the `/summon` command.  |

@@ -51,7 +51,7 @@ This is version 1.x.x of this module, which is the latest as of version 1.21.100
 collectPluginStats(): PluginStats
 `
 
-Collect type usage stats for each active script plugin/add-on.
+Collect type usage stats for each active script plugin/Add-On.
 
 **Returns** [*PluginStats*](PluginStats.md) - PluginStats object.
 

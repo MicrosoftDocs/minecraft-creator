@@ -27,7 +27,7 @@ On to the major changes with Scripting API 2:
 
 ### Earlier execution and loading of the scripting environment
 
-Scripting environments in version 1 are loaded in a world only after Minecraft has loaded a bit of other infrastructure (things like the definitions of entities, and so on.) That said, even in Scripting 1.x, the first execution of scripting logic happens typically before even the first chunk has loaded, so the environment is still in a bit of a half-loaded state. It's typical to sometimes wait until later in the cycle&mdash;after the first number of ticks, or when a player has joined, or when blocks become available&mdash;to do "true" initialization logic for an add-on.
+Scripting environments in version 1 are loaded in a world only after Minecraft has loaded a bit of other infrastructure (things like the definitions of entities). That said, even in Scripting 1.x, the first execution of scripting logic happens typically before even the first chunk has loaded, so the environment is still in a bit of a half-loaded state. It's typical to sometimes wait until later in the cycle&mdash;after the first number of ticks, or when a player has joined, or when blocks become available&mdash;to do "true" initialization logic for an Add-On.
 
 ![World Load Processing](./media/v2-overview/worldload.png)
 

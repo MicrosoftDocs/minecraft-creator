@@ -12,7 +12,7 @@ We're working on a new, extended version of Minecraft's `/execute` command. Star
 
 ## What the /execute command does today
 
-The /execute command lies at the heart of gameplay for many more advanced add-ons in Minecraft. If you're not familiar with execute, the execute command does three very powerful things:
+The /execute command lies at the heart of gameplay for many more advanced Add-Ons in Minecraft. If you're not familiar with execute, the execute command does three very powerful things:
 
 1. It allows you to run a subcommand from the perspective of multiple entities within the world.  One command becomes many!
 For example, run a command for every one of 20 skeletons near to a location.

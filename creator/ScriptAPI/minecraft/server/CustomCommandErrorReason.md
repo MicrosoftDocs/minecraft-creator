@@ -27,7 +27,7 @@ Custom Command references an enum that has not been registered.
 ### **NamespaceMismatch**
 `NamespaceMismatch = "NamespaceMismatch"`
 
-Supplied Custom Command namespace does not match previous registrations for this add-on.
+Supplied Custom Command namespace does not match previous registrations for this Add-On.
 ### **ParameterLimit**
 `ParameterLimit = "ParameterLimit"`
 

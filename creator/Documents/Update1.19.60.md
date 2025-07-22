@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.19.60 Update Notes
 description: Update summary of Creator changes in Bedrock 1.19.60
 ms.service: minecraft-bedrock-edition
+ms.date: 02/07/2023
 ---
 # Minecraft Bedrock 1.19.60 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.19.60 and there are a number of changes of note for add-on creators.
+Minecraft Bedrock has been updated to 1.19.60 and there are a number of changes of note for creators.
 
 ## Holiday Creator Features ##
 
@@ -27,7 +28,7 @@ We continue to work on bringing the Holiday Creator Features out of experimental
 
 ## Components ##
 
-Some existing entity components have new capability that may be helpful to add-on creators.
+Some existing entity components have new capability that may be helpful to creators.
 
 - [Minecraft:shooter](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_shooter.md) component – expanded to define multiple projectiles that can specify different projectile definitions and condition filters. Exposed more fields to shooter component to allow for more projectile customization such as throw power, sounds, and whether the attack is a magic attack.
 - [has_equipment](../Reference/Content/EntityReference/Examples/Filters/has_equipment.md) filter - Added "inventory" as a possible "domain" value which allows to check for items stored in the entities' inventory.
@@ -47,54 +48,55 @@ The following APIs have been added to the Beta API experiment. To use these, you
 
 **Updated scoreboard APIs allow for score read/write**
 
-- [Scoreboard](../ScriptAPI/minecraft/server/Scoreboard.md)
-  - [setScore](../ScriptAPI/minecraft/server/Scoreboard.md#setscore)(ScoreboardObjective, ScoreboardIdentity, Number)
-  - [getScore](../ScriptAPI/minecraft/server/Scoreboard.md#getscore)(ScoreboardObjective, ScoreboardIdentity)
-- [ScoreboardObjective](../ScriptAPI/minecraft/server/ScoreboardObjective.md)
-  - [setScore](../ScriptAPI/minecraft/server/ScoreboardObjective.md#setscore)(ScoreboardIdentity, Number)
-  - [getScore](../ScriptAPI/minecraft/server/ScoreboardObjective.md#getscore)(ScoreboardIdentity)
-  - [removeParticipant](../ScriptAPI/minecraft/server/ScoreboardObjective.md#removeparticipant)(ScoreboardIdentity)
-- [ScoreboardIdentity](../ScriptAPI/minecraft/server/ScoreboardIdentity.md)
-  - [setScore](../ScriptAPI/minecraft/server/ScoreboardIdentity.md#setscore)(ScoreboardObjective, Number)
-  - [getScore](../ScriptAPI/minecraft/server/ScoreboardIdentity.md#getscore)(ScoreboardObjective)
-  - [removeFromObjective](../ScriptAPI/minecraft/server/ScoreboardIdentity.md#removefromobjective)(ScoreboardObjective)
+- [Scoreboard](../PriorScriptAPI/minecraft/server-1xx/Scoreboard.md)
+  - [setScore](../PriorScriptAPI/minecraft/server-1xx/Sc
+  oreboard.md#setscore)(ScoreboardObjective, ScoreboardIdentity, Number)
+  - [getScore](../PriorScriptAPI/minecraft/server-1xx/Scoreboard.md#getscore)(ScoreboardObjective, ScoreboardIdentity)
+- [ScoreboardObjective](../PriorScriptAPI/minecraft/server-1xx/ScoreboardObjective.md)
+  - [setScore](../PriorScriptAPI/minecraft/server-1xx/ScoreboardObjective.md#setscore)(ScoreboardIdentity, Number)
+  - [getScore](../PriorScriptAPI/minecraft/server-1xx/ScoreboardObjective.md#getscore)(ScoreboardIdentity)
+  - [removeParticipant](../PriorScriptAPI/minecraft/server-1xx/ScoreboardObjective.md#removeparticipant)(ScoreboardIdentity)
+- [ScoreboardIdentity](../PriorScriptAPI/minecraft/server-1xx/ScoreboardIdentity.md)
+  - [setScore](../PriorScriptAPI/minecraft/server-1xx/ScoreboardIdentity.md#setscore)(ScoreboardObjective, Number)
+  - [getScore](../PriorScriptAPI/minecraft/server-1xx/ScoreboardIdentity.md#getscore)(ScoreboardObjective)
+  - [removeFromObjective](../PriorScriptAPI/minecraft/server-1xx/ScoreboardIdentity.md#removefromobjective)(ScoreboardObjective)
 
 **EntityHurt event**
 
 - Added read-only property damageSource: EntityDamageSource - Gets information about the damage source.
 
-- [EntityDamageSource](../ScriptAPI/minecraft/server/EntityDamageSource.md)
-  - Added property [cause](../ScriptAPI/minecraft/server/EntityDamageSource.md#cause): EntityDamageCause - Gets the damage cause
-  - Added property [damagingEntity](../ScriptAPI/minecraft/server/EntityDamageSource.md#damagingentity)?: Entity - Gets the damaging Entity
-  - Added property [damagingProjectile](../ScriptAPI/minecraft/server/EntityDamageSource.md#damagingprojectile)?: Entity - Gets the damaging projectile Entity
-  - Added function [applyDamage](../ScriptAPI/minecraft/server/Entity.md#applydamage)(amount: number, source?: EntityDamageSource): boolean - Applies damage to the Entity and returns the result of the operation
+- [EntityDamageSource](../PriorScriptAPI/minecraft/server-1xx/EntityDamageSource.md)
+  - Added property [cause](../PriorScriptAPI/minecraft/server-1xx/EntityDamageSource.md#cause): EntityDamageCause - Gets the damage cause
+  - Added property [damagingEntity](../PriorScriptAPI/minecraft/server-1xx/EntityDamageSource.md#damagingentity)?: Entity - Gets the damaging Entity
+  - Added property [damagingProjectile](../PriorScriptAPI/minecraft/server-1xx/EntityDamageSource.md#damagingprojectile)?: Entity - Gets the damaging projectile Entity
+  - Added function [applyDamage](../PriorScriptAPI/minecraft/server-1xx/Entity.md#applydamage)(amount: number, source?: EntityDamageSource): boolean - Applies damage to the Entity and returns the result of the operation
 
 **Fill Blocks APIs**
 
-- Added function [dimension.fillBlocks](../ScriptAPI/minecraft/server/Dimension.md#fillblocks)(begin: BlockLocation, end: BlockLocation, block: BlockPermutation | BlockType, options?: BlockFillOptions): number
+- Added function [dimension.fillBlocks](../PriorScriptAPI/minecraft/server-1xx/Dimension.md#fillblocks)(begin: BlockLocation, end: BlockLocation, block: BlockPermutation | BlockType, options?: BlockFillOptions): number
   - Fills an area between begin and end with block of type block. Returns number of blocks placed
-- Added new interface [BlockFillOptions](../ScriptAPI/minecraft/server/BlockFillOptions.md) with member matchingBlock?: BlockPermutation | BlockType
+- Added new interface [BlockFillOptions](../PriorScriptAPI/minecraft/server-1xx/BlockFillOptions.md) with member matchingBlock?: BlockPermutation | BlockType
   - Used with fillBlocks to apply additional options, such as only filling blocks matching matchingBlock
 
 **Experience/Level APIs on Player**
 
-Additional functions and properties added to the [Player](../ScriptAPI/minecraft/server/Player.md) Class to manage experience and levels.
+Additional functions and properties added to the [Player](../PriorScriptAPI/minecraft/server-1xx/Player.md) Class to manage experience and levels.
 
-- Added function [addLevels](../ScriptAPI/minecraft/server/Player.md#addlevels)(amount: number): number - Adds/Removes level to/from the Player and returns the current level of the Player
-- Added function [addExperience](../ScriptAPI/minecraft/server/Player.md#addexperience)(amount: number): number - Adds/Removes experience to/from the Player and returns the current experience of the Player
-- Added function [resetLevel](../ScriptAPI/minecraft/server/Player.md#resetlevel)(): void - Resets the level of the Player
-- Added function [getTotalXp](../ScriptAPI/minecraft/server/Player.md#gettotalxp)(): number - Gets the total experience of the Player
-- Added read-only property [level](../ScriptAPI/minecraft/server/Player.md#level) - Gets the level of the Player
-- Added read-only property [xpEarnedAtCurrentLevel](../ScriptAPI/minecraft/server/Player.md#xpearnedatcurrentlevel) - Gets the experience earned at the current level of the Player
-- Added read-only property [totalXpNeededForNextLevel](../ScriptAPI/minecraft/server/Player.md#totalxpneededfornextlevel) - Gets the total experience required for the current level of the Player
+- Added function [addLevels](../PriorScriptAPI/minecraft/server-1xx/Player.md#addlevels)(amount: number): number - Adds/Removes level to/from the Player and returns the current level of the Player
+- Added function [addExperience](../PriorScriptAPI/minecraft/server-1xx/Player.md#addexperience)(amount: number): number - Adds/Removes experience to/from the Player and returns the current experience of the Player
+- Added function [resetLevel](../PriorScriptAPI/minecraft/server-1xx/Player.md#resetlevel)(): void - Resets the level of the Player
+- Added function [getTotalXp](../PriorScriptAPI/minecraft/server-1xx/Player.md#gettotalxp)(): number - Gets the total experience of the Player
+- Added read-only property [level](../PriorScriptAPI/minecraft/server-1xx/Player.md#level) - Gets the level of the Player
+- Added read-only property [xpEarnedAtCurrentLevel](../PriorScriptAPI/minecraft/server-1xx/Player.md#xpearnedatcurrentlevel) - Gets the experience earned at the current level of the Player
+- Added read-only property [totalXpNeededForNextLevel](../PriorScriptAPI/minecraft/server-1xx/Player.md#totalxpneededfornextlevel) - Gets the total experience required for the current level of the Player
 
 **Effects and fire improvements**
 
-Additional APIs added to [Entity](../ScriptAPI/minecraft/server/Entity.md) Class to manage effects and fire status.
+Additional APIs added to [Entity](../PriorScriptAPI/minecraft/server-1xx/Entity.md) Class to manage effects and fire status.
 
-- Added method [getEffects](../ScriptAPI/minecraft/server/Entity.md#geteffects) which returns an array of all active effects on the entity
-- Added method [setOnFire](../ScriptAPI/minecraft/server/Entity.md#setonfire)(seconds: number, useEffects?: boolean = true): boolean) which sets an entity on fire (if it is not in water or rain).
-- Added method [extinguishFire](../ScriptAPI/minecraft/server/Entity.md#extinguishfire)(useEffects?: boolean = true): void which extinguishes the fire.
+- Added method [getEffects](../PriorScriptAPI/minecraft/server-1xx/Entity.md#geteffects) which returns an array of all active effects on the entity
+- Added method [setOnFire](../PriorScriptAPI/minecraft/server-1xx/Entity.md#setonfire)(seconds: number, useEffects?: boolean = true): boolean) which sets an entity on fire (if it is not in water or rain).
+- Added method [extinguishFire](../PriorScriptAPI/minecraft/server-1xx/Entity.md#extinguishfire)(useEffects?: boolean = true): void which extinguishes the fire.
 
 **Send messages to JavaScript from commands with the /scriptevent command**
 
@@ -102,7 +104,7 @@ Additional APIs added to [Entity](../ScriptAPI/minecraft/server/Entity.md) Class
   - Usage: /scriptevent <messsageId: string> [message: ???]
   - messageId must be namespaced, use of the minecraft namespace is invalid (e.g. "/scriptevent give:coal", "/scriptevent my_scripts:spawn_sheep")
   - message is optional, with a max length of 256 characters
-- [events.scriptEventReceive](../ScriptAPI/minecraft/server/SystemEvents.md#scripteventreceive)
+- [events.scriptEventReceive](../PriorScriptAPI/minecraft/server-1xx/SystemAfterEvents.md#scripteventreceive)
   - Added system event events.scriptEventReceive
   - Added read-only property id: String- The namespaced ID of the event
   - Added read-only property message: String- The content of the message the event was sent with
@@ -112,14 +114,14 @@ Additional APIs added to [Entity](../ScriptAPI/minecraft/server/Entity.md) Class
   - Added read-only property sourceType: MessageSourceType- The type of source the event was triggered by
   - subscribe()can filter by valid namespace string using the ScriptEventMessageFilterOptions class
 
-- [ScriptEventMessageFilterOptions](../ScriptAPI/minecraft/server/ScriptEventMessageFilterOptions.md)
-  - Added [ScriptEventMessageFilterOptions](../ScriptAPI/minecraft/server/ScriptEventMessageFilterOptions.md#scripteventmessagefilteroptions-interface) class
-  - Added [property](../ScriptAPI/minecraft/server/ScriptEventMessageFilterOptions.md#properties) namespaces: string[]- An array of namespaces to filter on
+- [ScriptEventMessageFilterOptions](../PriorScriptAPI/minecraft/server-1xx/ScriptEventMessageFilterOptions.md)
+  - Added ScriptEventMessageFilterOptions class
+  - Added [property](../PriorScriptAPI/minecraft/server-1xx/ScriptEventMessageFilterOptions.md#properties) namespaces: string[]- An array of namespaces to filter on
 
 **Other miscellaneous improvements:**
 
-- [Block](../ScriptAPI/minecraft/server/Block.md)
-  - Added function [getRedstonePower()](../ScriptAPI/minecraft/server/Block.md#getredstonepower): number - Gets the Redstone signal strength of the Block if it is part of a circuit, otherwise returns undefined.
+- [Block](../PriorScriptAPI/minecraft/server-1xx/Block.md)
+  - Added function [getRedstonePower()](../PriorScriptAPI/minecraft/server-1xx/Block.md#getredstonepower): number - Gets the Redstone signal strength of the Block if it is part of a circuit, otherwise returns undefined.
 - [Simulated Player](../ScriptAPI/minecraft/server-gametest/SimulatedPlayer.md)
   - Added property [isSprinting](../ScriptAPI/minecraft/server-gametest/SimulatedPlayer.md#issprinting) - Used to get or set if the sprinting state of the simulated player is set to true.
 
@@ -130,4 +132,3 @@ Looking ahead to upcoming releases, we are looking to release our next set of AP
 Scripting is a powerful way to add complex behavior to your experience. It allows for a [professional development environment that includes profiling and hot reloading](./ScriptDeveloperTools.md).
 
 [Get started with scripting](https://aka.ms/startwithmcscript).
-

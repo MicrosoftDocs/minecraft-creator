@@ -12,7 +12,7 @@ ms.date: 03/25/2025 #Required; mm/dd/yyyy format.
 > [!VIDEO https://www.youtube.com/embed/EbW3TLSum7U]
 *Video version of this article from the Minecraft Creator Channel*
 
-Minecraft Bedrock has been updated to 1.21.80 and there are a number of changes of note for Add-On creators. The following features do not require experimental toggles.
+Minecraft Bedrock has been updated to 1.21.80 and there are a number of changes of note for creators. The following features do not require experimental toggles.
 
 ## Editor
 

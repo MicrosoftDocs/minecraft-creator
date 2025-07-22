@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.19.50 Update Notes
 description: Update summary of Creator changes in Bedrock 1.19.50
 ms.service: minecraft-bedrock-edition
+ms.date: 11/29/2022
 ---
 # Minecraft Bedrock 1.19.50 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.19.50 and there are a number of changes of note for add-on creators!
+Minecraft Bedrock has been updated to 1.19.50 and there are a number of changes of note for creators!
 
 **Creator API:**
 
@@ -15,22 +16,22 @@ It's a big day! Some initial APIs have been released out of experimental in a ne
 
 APIs included in the @minecraft/server version 1.0.0 release:
 
-- [System.run](../ScriptAPI/minecraft/server/System.md#run)
+- [System.run](../PriorScriptAPI/minecraft/server-1xx/System.md#run)
 - World
-  - [getAllPlayers()](../ScriptAPI/minecraft/server/World.md#getallplayers)
-  - [getDimension()](../ScriptAPI/minecraft/server/World.md#getdimension)
-- [MinecraftDimensionTypes](../ScriptAPI/minecraft/server/MinecraftDimensionTypes.md)
+  - [getAllPlayers()](../PriorScriptAPI/minecraft/server-1xx/World.md#getallplayers)
+  - [getDimension()](../PriorScriptAPI/minecraft/server-1xx/World.md#getdimension)
+- [MinecraftDimensionTypes](../PriorScriptAPI/minecraft/server-1xx/MinecraftDimensionTypes.md)
 - Dimension
-  - [id](../ScriptAPI/minecraft/server/Dimension.md#id)
-  - [runCommandAsync()](../ScriptAPI/minecraft/server/Dimension.md#runcommandasync)
-- [CommandResult](../ScriptAPI/minecraft/server/CommandResult.md)
+  - [id](../PriorScriptAPI/minecraft/server-1xx/Dimension.md#id)
+  - [runCommandAsync()](../PriorScriptAPI/minecraft/server-1xx/Dimension.md#runcommandasync)
+- [CommandResult](../PriorScriptAPI/minecraft/server-1xx/CommandResult.md)
 - Entity
-  - [id](../ScriptAPI/minecraft/server/Entity.md#id)
-  - [typeId](../ScriptAPI/minecraft/server/Entity.md#typeid)
-  - [dimension](../ScriptAPI/minecraft/server/Entity.md#dimension)
-  - [runCommandAsync()](../ScriptAPI/minecraft/server/Entity.md#runcommandasync)
+  - [id](../PriorScriptAPI/minecraft/server-1xx/Entity.md#id)
+  - [typeId](../PriorScriptAPI/minecraft/server-1xx/Entity.md#typeid)
+  - [dimension](../PriorScriptAPI/minecraft/server-1xx/Entity.md#dimension)
+  - [runCommandAsync()](../PriorScriptAPI/minecraft/server-1xx/Entity.md#runcommandasync)
 - Player
-  - [name](../ScriptAPI/minecraft/server/Player.md#name)
+  - [name](../PriorScriptAPI/minecraft/server-1xx/Player.md#name)
 
 This initial set is small, but more APIs will release in the coming months. Beta APIs will continue to be developed behind the Beta API experimental flag so if you want to use those, make sure you have that flag enabled and your manifest.json references will need to update to 1.1.0-beta. But for the released APIs, these should be a lot more stable and also allow Marketplace content creators to leverage them with backwards compatibility support. [Read more about script versioning](./ScriptVersioning.md) in this new article.
 

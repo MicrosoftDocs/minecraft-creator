@@ -89,7 +89,7 @@ The behavior pack manifest file is similar to the one created for the resource p
 - **dependencies** - Creates a link between behavior packs and resource packs to add custom textures and visuals to Minecraft.
 
 > [!NOTE]
-> To learn more about how a manifest.json file works, see the Add-ons Reference [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) documentation.
+> To learn more about how a manifest.json file works, see the Add-Ons Reference [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) documentation.
 
 ## Add a Cow
 

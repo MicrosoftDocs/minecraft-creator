@@ -27,7 +27,7 @@ We recommend reviewing the following articles before you begin:
 - [Introduction to Structure Blocks](IntroductionToStructureBlocks.md): You should know how to save and export structures to an external folder.
 - [Introduction to Jigsaw Structures](IntroductionToJigsawStructures.md): Skim this to get an idea about the different parts, and keep this page open in a browser tab in case you want more information about each file.
 
-If you want to follow the video exactly, you should know how to use scripts to deploy add-on packs, but it's not required.
+If you want to follow the video exactly, you should know how to use scripts to deploy Add-On packs, but it's not required.
 
 - [Introduction to Scripting](../scripting/introduction.md)
 - [Scripting with TypeScript](../scripting/next-steps.md)

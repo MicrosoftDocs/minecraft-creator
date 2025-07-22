@@ -8,7 +8,7 @@ ms.service: minecraft-bedrock-edition
 
 # Latest Platform Version Guidance
 
-When delivering your add-ons and worlds to players, you'll want to ensure that it is built on "up to date" versions of the Minecraft Bedrock platform. What do we mean by up to date? Unfortunately, versions are a little complicated in Minecraft; this article attempts to document the latest versions of content across sources.
+When delivering your Add-Ons and worlds to players, you'll want to ensure that it is built on "up to date" versions of the Minecraft Bedrock platform. What do we mean by up to date? Unfortunately, versions are a little complicated in Minecraft; this article attempts to document the latest versions of content across sources.
 
 In addition, we also have (preview) tooling available at [https://mctools.dev](https://mctools.dev) that can scan your content and tell you if it is conformant to "up to date version". When you open a zip or MCAddon of your content, under the Inspector option, select the "Current Platform Versions" suite, and it should show relevant versions and if any files are considered "out of date".
 

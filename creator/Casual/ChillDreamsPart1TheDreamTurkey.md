@@ -61,7 +61,7 @@ I copied the ["1_hello_world" folder](https://github.com/microsoft/minecraft-sam
 
 This is what we'll add various assets and things into, over time. Be prepared: creating and extending content in Minecraft will involve copying and extending files from a number of different sources. See this article for an [intro to behavior packs](../Documents/BehaviorPack.md) and an [intro to resource packs](../Documents/ResourcePack.md) to better understand how packs work.
 
-Within my behavior pack, I updated the identifiers and titles to make it the **Chill Dreams Add-on**.
+Within my behavior pack, I updated the identifiers and titles to make it the **Chill Dreams Add-On**.
 
 When starting with your first BP/RP (that is, behavior pack/resource pack), you'll want to run it frequently to see how your updates are functioning, and that things are working as expected. First, you'll need to run `npm i` to install dependencies for this project (you only need to do that once). Then to see the Add-On run, `just-scripts local-deploy` to deploy it. If `npm` and `just-scripts` don't sound familiar to you, check out the [Scripting with TypeScript](../Documents/scripting/next-steps.md) article to familiarize yourself with those tools. When you run the gulp script, these tools will do the work to automatically push updates into Minecraft as you work. 
 

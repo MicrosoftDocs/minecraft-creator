@@ -9,7 +9,7 @@ ms.date: 04/28/2025
 
 # Getting Started with the Minecraft Entity Wizard
 
-If you're new to Minecraft add-on development, creating your first working behavior pack and custom entity can take a lot of time and research. The Minecraft Entity Wizard for Blockbench aims to make it as easy as possible to create a custom entity and to add it to your world. From there, you can build on your entity, change the model, or add your own behavior.
+If you're new to Minecraft Add-On development, creating your first working behavior pack and custom entity can take a lot of time and research. The Minecraft Entity Wizard for Blockbench aims to make it as easy as possible to create a custom entity and to add it to your world. From there, you can build on your entity, change the model, or add your own behavior.
 
 ### Building a grizzly bear with the Minecraft Entity Wizard
 
@@ -17,7 +17,7 @@ If you're new to Minecraft add-on development, creating your first working behav
 
 [Blockbench](Blockbench.md) is a 3D modeling program with native support for many Minecraft 3D model formats. Once you've created your basic entity in the Entity Wizard, you can continue to use Blockbench to modify the model, and you can edit the behavior in an external program (more on that later).
 
-As a starting point, the Entity Wizard offers most of Minecraft's vanilla mobs as presets. For example, if you want to create a shark, you can choose the dolphin preset. There are also stripped down "basic" presets that you can use if you're a more experienced add-on creator and want to create entity behavior from scratch.
+As a starting point, the Entity Wizard offers most of Minecraft's vanilla mobs as presets. For example, if you want to create a shark, you can choose the dolphin preset. There are also stripped down "basic" presets that you can use if you're a more experienced creator and want to create entity behavior from scratch.
 
 --------
 
@@ -121,8 +121,8 @@ You have now entered all the information that is necessary to create the entity.
 In the Blockbench desktop app, there are three ways to save your pack:
 
 - **Export Packs:** Create a new pack with your custom entity.
-- **Integrate into Pack:** Integrate your new custom entity into an existing add-on.
-- **Export as MCAddon:** Generate a `.mcadd-on` file and save it to your computer. You can open this file to load your add-on into Minecraft, or share this file with friends. If you select this option, you will not be able to directly edit your model in Blockbench after exporting the add-on.
+- **Integrate into Pack:** Integrate your new custom entity into an existing Add-On.
+- **Export as MCAddon:** Generate a `.mcaddon` file and save it to your computer. You can open this file to load your Add-On into Minecraft, or share this file with friends. If you select this option, you will not be able to directly edit your model in Blockbench after exporting the Add-On.
 
 > [!TIP]
 > In the web app, the only option available to export your pack is **MCAddon**.
@@ -141,7 +141,7 @@ In the Blockbench desktop app, there are three ways to save your pack:
 
 Depending on the export option you have selected, you may need to enter some information about the Add-On that the wizard is about to create.
 
-Depending on the export option you selected, you may need to enter some information about the add-on you're creating.
+Depending on the export option you selected, you may need to enter some information about the Add-On you're creating.
 
 - **Pack Name**:  This name will be used both for the generated file, as well as for the name in the pack menu in Minecraft.
 
@@ -151,7 +151,7 @@ Depending on the export option you selected, you may need to enter some informat
 
 ## Installing the pack
 
-To enable your packs for the first time, you need to add the behavior pack to your Minecraft world. Open the world settings and locate the Behavior Packs section. Find your new pack and activate it. Activating the behavior pack automatically activates the connected resource pack. This means that you now have the full add-on installed into your world.
+To enable your packs for the first time, you need to add the behavior pack to your Minecraft world. Open the world settings and locate the Behavior Packs section. Find your new pack and activate it. Activating the behavior pack automatically activates the connected resource pack. This means that you now have the full Add-On installed into your world.
 
 > [!TIP]
 > You can view a detailed step-by-step walkthrough on how to enable tutorial in the [Behavior Pack](BehaviorPack.md#test-the-pack) tutorial.
@@ -159,7 +159,7 @@ To enable your packs for the first time, you need to add the behavior pack to yo
 Enter the world and follow the instructions in the wizard to spawn your custom entity. Usually, you can do this by getting a spawn egg from the creative inventory and using it.
 
 > [!NOTE]
-> Alternatively, if you have exported your add-on as a `.mcaddon` file, you can open this file in order to automatically add the packs into Minecraft.
+> Alternatively, if you have exported your Add-On as a `.mcaddon` file, you can open this file in order to automatically add the packs into Minecraft.
 
 ## Modifying your entity
 
@@ -168,7 +168,7 @@ Enter the world and follow the instructions in the wizard to spawn your custom e
 Since you are already in Blockbench, you can continue to use the program to edit the model, textures and animations. To do that, press the blue button in the bottom right called **Edit Model**.
 
 > [!CAUTION]
-> This option is not available if you have exported your add-on as an `.mcaddon` file.
+> This option is not available if you have exported your Add-On as an `.mcaddon` file.
 
 :::image type="content" source="Media/MinecraftEntityWizard/MinecraftEntityWizard_edit1.png" alt-text="Image showcasing how to edit an existing entity in the Minecraft Entity Wizard":::
 
@@ -178,7 +178,7 @@ More information on Blockbench can be found on the [Blockbench Wiki](https://www
 
 ### Editing behavior
 
-If you want to edit the behavior and other aspects of your entity, you need to use a code editor. The wizard will present you with an option to open the packs in Visual Studio Code, a code editor that is popular for add-on development for Minecraft: Bedrock Edition. You can learn how to [set up Visual Studio Code for add-on development](gettingstarted.md#visual-studio-code) under this link.
+If you want to edit the behavior and other aspects of your entity, you need to use a code editor. The wizard will present you with an option to open the packs in Visual Studio Code, a code editor that is popular for Add-On development for Minecraft: Bedrock Edition. You can learn how to [set up Visual Studio Code for Add-On development](gettingstarted.md#visual-studio-code) under this link.
 
 Custom entity behavior is a huge topic, and this article won't attempt to touch on it. Instead, here are some helpful resources to help you get started:
 

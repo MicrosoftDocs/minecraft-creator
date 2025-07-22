@@ -7,11 +7,11 @@ ms.service: minecraft-bedrock-edition
 ms.date: 07/15/2025
 ---
 
-# Comprehensive List of Add-on Pack Contents
+# Comprehensive List of Add-On Pack Contents
 
 Have you ever wondered what files and folders the most comprehensive behavior, resource, and skin packs would contain? If so, this list is for you.
 
-Minecraft Bedrock Edition can only use add-on pack file contents if the file is the correct type (like .json, .png, .fsb), and if it is stored in a folder with a particular name, and if that folder is in the correct location.
+Minecraft Bedrock Edition can only use Add-On pack file contents if the file is the correct type (like .json, .png, .fsb), and if it is stored in a folder with a particular name, and if that folder is in the correct location.
 
 Behavior packs and resource packs can vary wildly depending on what the creator who made them wants to create. It can also be a design choice to group entities or items in separate folders, rather than storing their **.json** files all together.
 

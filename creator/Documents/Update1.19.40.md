@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.19.40 Update Notes
 description: "A summary of the changes present for creators in Minecraft: Bedrock Edition version 1.19.40"
 ms.service: minecraft-bedrock-edition
+ms.date: 07/17/2025
 ---
 # Minecraft Bedrock 1.19.40 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.19.40 and there are a number of changes of note for Add-On creators!
+Minecraft Bedrock has been updated to 1.19.40 and there are a number of changes of note for creators!
 
 **Block Components:**
 

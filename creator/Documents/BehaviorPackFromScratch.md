@@ -65,7 +65,7 @@ To load a behavior pack into Minecraft, you will need to create a manifest file.
 - **dependencies** - Creates a link between behavior packs and resource packs to add custom textures and visuals to Minecraft.
 
 > [!NOTE]
-> To learn more about how a manifest.json file works, see the Add-ons Reference [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) documentation.
+> To learn more about how a manifest.json file works, see the Add-Ons Reference [manifest.json](../Reference/Content/AddonsReference/Examples/AddonManifest.md) documentation.
 
 1. Create a new document in your My_BEHAVIOR_Pack folder and name it **manifest.json**.
 1. You will need to change the file extension from .txt to .json. If your Explorer window does not show file extensions, you can enable File Name Extensions under the View tab.

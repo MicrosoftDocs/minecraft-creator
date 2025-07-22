@@ -90,7 +90,7 @@ CheckNetIsolation.exe LoopbackExempt -a -p=S-1-15-2-424268864-5579737-879501358-
 
 In order for the debugger to know where to find your source JavaScript or TypeScript files, you'll need to specifically open up a window of Visual Studio Code relative to the behavior pack where your JavaScript or TypeScript source files are. This may be inside of Minecraft's development behavior packs folder (e.g., `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs`) - or you may have your source code located in a separate folder (e.g., `c:\projects\myaddon`).
 
-Open up a Visual Studio Code window pointed at the folder with your add-on script source.
+Open up a Visual Studio Code window pointed at the folder with your Add-On script source.
 
 #### Step 4: Prepare Visual Studio Code for a connection
 
@@ -123,7 +123,7 @@ If your source is in JavaScript and you are developing directly against that sou
 `localRoot` should point at the folder which contains your behavior pack with script within it.
 Port 19144 is the default networking port for Minecraft Script Debugging.
 
-In the example above, `targetModuleUuid` is an optional parameter that specifies the identifier of your script module, which is located in your behavior pack's **manifest.json** file. This is important to use if you are developing add-ons in Minecraft while there are multiple behavior packs with script active.
+In the example above, `targetModuleUuid` is an optional parameter that specifies the identifier of your script module, which is located in your behavior pack's **manifest.json** file. This is important to use if you are developing Add-Ons in Minecraft while there are multiple behavior packs with script active.
 
 If your source is in a language like TypeScript that generates JavaScript for Minecraft, you will want to use `sourceMapRoot` and `generatedSourceRoot` parameters in **launch.json**:
 

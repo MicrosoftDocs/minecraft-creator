@@ -4,11 +4,12 @@ ms.author: mikeam
 title: Version Disambiguation
 description: An Exploration into Versions
 ms.service: minecraft-bedrock-edition
+ms.date: 07/16/2025
 ---
 
 # Version Disambiguation
 
-Different add-on pack JSON files have different versions of things. Have you ever wondered about the difference between `format_version` and `version`? What about `min_engine_version` or `base_game_version`? 
+Different add-on pack JSON files have different versions of things. Have you ever wondered about the difference between `format_version` and `version`? What about `min_engine_version` or `base_game_version`?
 
 Why are there so many and how are they different?
 
@@ -22,8 +23,7 @@ Why are there so many and how are they different?
 | `min_engine_version` | [1, 16, 0] | When present, players can set the minimm version needed to allow the JSON to be parsed. The version in the definition is compared to the engine version for which the top resource pack was built. |
 | `version` | [0, 0, 1] | This is the version of the Scripting API that a behavior pack is authored against. It's also inside of the **manifest.json** for the pack, but is different from `min_engine_version`. It tells the scripting system which API bindings to use for any script code in the behavior pack. |
 
-
-The following sections contain the names of files in add-on packs that have version settings inside them.
+The following sections contain the names of files in Add-On packs that have version settings inside them.
 
 To see all the files in each add-on pack, take a look at the [Comprehensive Pack Contents](../../Documents/ComprehensivePackContents.md) article.
 
@@ -133,7 +133,7 @@ Here is the introduction to [resource packs](../../Documents/ResourcePack.md).
     - `<entity_render_controllers>`.json'
     "format_version": "1.8.0"
     - default.render_controllers.json
-- [biomes_client.json](FogsReference/Examples/FogsIntroduction.md)
+- [biomes_client.json](../../Documents/Fogs/FogsIntroduction.md)
     - `version "format_version"`
 - [blocks.json]
     - `"format_version": "1.19.30"` 

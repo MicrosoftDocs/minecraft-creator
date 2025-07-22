@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.20.80 Update Notes
 description: Update summary of Creator changes in Bedrock 1.20.80
 ms.service: minecraft-bedrock-edition
+ms.date: 07/17/2025
 ---
 # Minecraft Bedrock 1.20.80 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.20.80 and there are a number of changes of note for Add-On creators. The following features do not require experimental toggles.
+Minecraft Bedrock has been updated to 1.20.80 and there are a number of changes of note for creators. The following features do not require experimental toggles.
 
 ## Entities 
 - minecraft:body_rotation_blocked component - prevents an entity from visually rotating their body to match their own facing direction.

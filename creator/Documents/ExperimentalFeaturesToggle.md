@@ -35,13 +35,13 @@ GAMEPLAY - Change the way your world works
 | Drop 2 2025 | Experience flying with the Happy Ghast, coming in the second game drop of 2025 |
 | Locator Bar | Show the direction of other players in multiplayer |
 
-ADD-ON CREATORS - For creators of game packs and other add-ons
+ADD-ON CREATORS - For creators of game packs and other Add-Ons
 
 | Experimental Toggle | Description |
 | :------------------ | :---------- |
 | Custom Biomes | Create custom biomes and change world generation |
 | Upcoming Creator Features | Includes adjustable fog parameters |
-| Beta APIs | Use "-beta" versions of API modules in add-on packs |
+| Beta APIs | Use "-beta" versions of API modules in Add-On packs |
 | Custom Components V2 | Enables custom components V2 for scripting (V2.0.0-beta and higher) and JSON (V1.21.80 and higher) APIs |
 | Experimental Creator Camera Features | Enables the use of the latest custom camera features |
 | Data-Driven Jigsaw Structures | Loads Jigsaw Structures from the behavior pack worldgen folder |
@@ -56,13 +56,13 @@ GAMEPLAY - Change the way your world works
 | :------------------ | :---------- |
 |Villager Trade Rebalancing |Contains updated trades for villages for the purpose of rebalancing|
 
-ADD-ON CREATORS - For creators of game packs and other add-ons
+ADD-ON CREATORS - For creators of game packs and other Add-Ons
 
 | Experimental Toggle | Description |
 | :------------------ | :---------- |
 | Custom Biomes | Create custom biomes and change world generation |
 | Upcoming Creator Features | Includes actor properties and adjustable fog parameters |
-| Beta APIs| Use "-beta" versions of API modules in add-on packs |
+| Beta APIs| Use "-beta" versions of API modules in Add-On packs |
 | Experimental Creator Camera Features | Enables the use of the latest custom camera features |
 | Render Dragon Features for Creators | Enable the deferred rendering pipeline. Requires a PBR-enables resource pack and compatible hardware.|
 | Data-Driven Jigsaw Structures | Loads Jigsaw Structures from the behavior pack worldgen folder |

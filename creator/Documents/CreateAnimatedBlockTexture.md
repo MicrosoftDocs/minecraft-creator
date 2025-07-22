@@ -278,4 +278,4 @@ This is the final result:
 
 ## Next Steps
 
-Now that you know how to animate block textures, take a look at this page about [Add-on Pack Contents](ComprehensivePackContents.md) to see what else you could do to customize your own Minecraft world!
+Now that you know how to animate block textures, take a look at this page about [Add-On Pack Contents](ComprehensivePackContents.md) to see what else you could do to customize your own Minecraft world!

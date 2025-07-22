@@ -1,12 +1,12 @@
 {
   "id": "caddonreq",
   "title": "Cooperative Add-On Requirements",
-  "description": "A set of requirements for cooperative add-on projects. See https://learn.microsoft.com/minecraft/creator/documents/practices/guidelinesforbuildingcooperativeaddons for more info.",
+  "description": "A set of requirements for cooperative Add-On projects. See https://learn.microsoft.com/minecraft/creator/documents/practices/guidelinesforbuildingcooperativeaddons for more info.",
   "fields": [
     {
       "id": "101",
       "title": "No loose file in type folder",
-      "desciption": "In a cooperative add-on, there should not be any 'loose files' - e.g., <pack>/entities/this_is_a_loose_file.json - inside of a folder.",
+      "desciption": "In a cooperative Add-On, there should not be any 'loose files' - e.g., <pack>/entities/this_is_a_loose_file.json - inside of a folder.",
       "dataType": 0
     },
     {

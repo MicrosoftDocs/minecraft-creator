@@ -21,9 +21,9 @@ Oh! That's a good thing to learn now: resource packs, behavior packs, and skin p
 
 ## Step 1: Learn what goes where
 
-- [Getting Started with Add-On Development for Bedrock Edition](GettingStarted.md) - Start here to learn about the file and folder structure of Minecraft, specifically, where to put your add-on packs.
+- [Getting Started with Add-On Development for Bedrock Edition](GettingStarted.md) - Start here to learn about the file and folder structure of Minecraft, specifically, where to put your Add-On packs.
 
-- [Comprehensive List of Add-on Pack Contents](ComprehensivePackContents.md) - After you get an idea about where your add-on packs will go, here is a page about the structures and content for each of those add-on packs.
+- [Comprehensive List of Add-On Pack Contents](ComprehensivePackContents.md) - After you get an idea about where your Add-On packs will go, here is a page about the structures and content for each of those Add-On packs.
 
 Just take a quick look and maybe use this later when you plan your packs!
 
@@ -45,7 +45,7 @@ You've mastered the basics, and now it's time to move to the next level. These c
 - [Create a Custom Item](AddCustomItems.md)
 - [Change Your Look with a Skin Pack](SkinPack.md)
 
-## Advanced stuff that might not use add-on packs
+## Advanced stuff that might not use Add-On packs
 
 After you pushed through both the basic and intermediate creations, you come to the top of the mountain. These are the advanced-level tutorials and&mdash;I'm not going to lie&mdash;they can get complex. However, by mastering these creations, you'll bring yourself closer to making your Minecraft dreams into Minecraft reality.
 

@@ -10,7 +10,7 @@ ms.service: minecraft-bedrock-edition
 
 It's possible to customize or create items in Minecraft, just like you can create custom blocks and entities.
 
-This tutorial shows you how to create the structure and files needed for the add-on packs for different items.
+This tutorial shows you how to create the structure and files needed for the Add-On packs for different items.
 Different types of items require different files, depending on what Minecraft needs to know about the item. For example, things a player wears, like a crown, will require a **model** file, among other things.
 
 It's important to remember that each of these files have to be stored in a folder with the correct name, in the exact location specified.
@@ -25,7 +25,7 @@ It is recommended that the following be completed before beginning this tutorial
 - [How to Add a Simple Custom Block](AddCustomDieBlock.md)
 - [Minecraft Item Wizard](MinecraftItemWizard.md)
 
-Here is a link to the [Vanilla Minecraft Add-on Packs](https://aka.ms/resourcepacktemplate) in case you want to take a look at the pack structure there.
+Here is a link to the [Vanilla Minecraft Add-On Packs](https://aka.ms/resourcepacktemplate) in case you want to take a look at the pack structure there.
 
 ## Minecraft Custom Items
 
@@ -38,7 +38,7 @@ Here are three items that do not currently exist in Vanilla Minecraft. They are 
 
 Use the following sections to create add-on packs for each item, or to do one set of packs for two or more items.
 
-Here is the general process from the Add-on pack tutorials:
+Here is the general process from the add-on pack tutorials:
 
 1. Create Behavior Pack and Resource Pack folders.
 1. Create the folder and file structure for the item you want to create. Be sure to include the **manifest.json** files.
