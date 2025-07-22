@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.20.40 Update Notes
 description: Update summary of Creator changes in Bedrock 1.20.40
 ms.service: minecraft-bedrock-edition
+ms.date: 10/24/2023
 ---
 # Minecraft Bedrock 1.20.40 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.20.40 and there are a number of changes of note for add-on creators. The following features do not require experimental toggles.
+Minecraft Bedrock has been updated to 1.20.40 and there are a number of changes of note for creators. The following features do not require experimental toggles.
 
 ## Entities
 
@@ -29,118 +30,118 @@ Another set of Creator APIs have been released out of beta and into stable (see:
 
 - **Camera APIs**
   - Camera
-    - [setCamera](../ScriptAPI/minecraft/server/Camera.md#setcamera)
-    - [fade](../ScriptAPI/minecraft/server/Camera.md#fade)
-    - [clear](../ScriptAPI/minecraft/server/Camera.md#clear)
-  - [EasingType](../ScriptAPI/minecraft/server/EasingType.md)
-  - [CameraSetRotOptions](../ScriptAPI/minecraft/server/CameraSetRotOptions.md)
-  - [CameraSetFacingOptions](../ScriptAPI/minecraft/server/CameraSetFacingOptions.md)
-  - [CameraSetPosOptions](../ScriptAPI/minecraft/server/CameraSetPosOptions.md)
-  - [CameraDefaultOptions](../ScriptAPI/minecraft/server/CameraDefaultOptions.md)
-  - [CameraSetLocationOptions](../ScriptAPI/minecraft/server/CameraSetLocationOptions.md)
+    - [setCamera](../PriorScriptAPI/minecraft/server-1xx/Camera.md#setcamera)
+    - [fade](../PriorScriptAPI/minecraft/server-1xx/Camera.md#fade)
+    - [clear](../PriorScriptAPI/minecraft/server-1xx/Camera.md#clear)
+  - [EasingType](../PriorScriptAPI/minecraft/server-1xx/EasingType.md)
+  - [CameraSetRotOptions](../PriorScriptAPI/minecraft/server-1xx/CameraSetRotOptions.md)
+  - [CameraSetFacingOptions](../PriorScriptAPI/minecraft/server-1xx/CameraSetFacingOptions.md)
+  - [CameraSetPosOptions](../PriorScriptAPI/minecraft/server-1xx/CameraSetPosOptions.md)
+  - [CameraDefaultOptions](../PriorScriptAPI/minecraft/server-1xx/CameraDefaultOptions.md)
+  - [CameraSetLocationOptions](../PriorScriptAPI/minecraft/server-1xx/CameraSetLocationOptions.md)
 - **Moon Phase APIs**   
    - World
-     - [getMoonPhase](../ScriptAPI/minecraft/server/World.md#getmoonphase)
-   - [MoonPhase](../ScriptAPI/minecraft/server/MoonPhase.md)
-   - [MoonPhaseCount](../ScriptAPI/minecraft/server/minecraft-server.md#moonphasecount)
+     - [getMoonPhase](../PriorScriptAPI/minecraft/server-1xx/World.md#getmoonphase)
+   - [MoonPhase](../PriorScriptAPI/minecraft/server-1xx/MoonPhase.md)
+   - [MoonPhaseCount](../PriorScriptAPI/minecraft/server-1xx/minecraft-server.md#moonphasecount)
 - **Entity "is" properties**
   - Player
-    - [isEmoting](../ScriptAPI/minecraft/server/Player.md#isemoting)
-    - [isGliding](../ScriptAPI/minecraft/server/Player.md#isgliding)
-    - [isJumping](../ScriptAPI/minecraft/server/Player.md#isjumping)
-    - [isFlying](../ScriptAPI/minecraft/server/Player.md#isflying)
+    - [isEmoting](../PriorScriptAPI/minecraft/server-1xx/Player.md#isemoting)
+    - [isGliding](../PriorScriptAPI/minecraft/server-1xx/Player.md#isgliding)
+    - [isJumping](../PriorScriptAPI/minecraft/server-1xx/Player.md#isjumping)
+    - [isFlying](../PriorScriptAPI/minecraft/server-1xx/Player.md#isflying)
   - Entity
-    - [isSleeping](../ScriptAPI/minecraft/server/Entity.md#issleeping)
-    - [isSneaking](../ScriptAPI/minecraft/server/Entity.md#issneaking)
-    - [isSprinting](../ScriptAPI/minecraft/server/Entity.md#issprinting)
-    - [isSwimming](../ScriptAPI/minecraft/server/Entity.md#isswimming)
-    - [isClimbing](../ScriptAPI/minecraft/server/Entity.md#isclimbing)
-    - [isOnGround](../ScriptAPI/minecraft/server/Entity.md#isonground)
-    - [isInWater](../ScriptAPI/minecraft/server/Entity.md#isinwater)
-    - [isFalling](../ScriptAPI/minecraft/server/Entity.md#isfalling)
+    - [isSleeping](../PriorScriptAPI/minecraft/server-1xx/Entity.md#issleeping)
+    - [isSneaking](../PriorScriptAPI/minecraft/server-1xx/Entity.md#issneaking)
+    - [isSprinting](../PriorScriptAPI/minecraft/server-1xx/Entity.md#issprinting)
+    - [isSwimming](../PriorScriptAPI/minecraft/server-1xx/Entity.md#isswimming)
+    - [isClimbing](../PriorScriptAPI/minecraft/server-1xx/Entity.md#isclimbing)
+    - [isOnGround](../PriorScriptAPI/minecraft/server-1xx/Entity.md#isonground)
+    - [isInWater](../PriorScriptAPI/minecraft/server-1xx/Entity.md#isinwater)
+    - [isFalling](../PriorScriptAPI/minecraft/server-1xx/Entity.md#isfalling)
 - **Entity Rotation APIs**
   - Entity
-    - [getRotation](../ScriptAPI/minecraft/server/Entity.md#getrotation)
-    - [setRotation](../ScriptAPI/minecraft/server/Entity.md#setrotation) 
+    - [getRotation](../PriorScriptAPI/minecraft/server-1xx/Entity.md#getrotation)
+    - [setRotation](../PriorScriptAPI/minecraft/server-1xx/Entity.md#setrotation) 
 - **ItemStack + its properties and methods**
   - ItemStack
-    - [amount](../ScriptAPI/minecraft/server/ItemStack.md#amount)
-    - [maxAmount](../ScriptAPI/minecraft/server/ItemStack.md#maxamount)
-    - [isStackable](../ScriptAPI/minecraft/server/ItemStack.md#isstackable)
-    - [isStackableWith](../ScriptAPI/minecraft/server/ItemStack.md#isstackablewith)
-    - [keepOnDeath](../ScriptAPI/minecraft/server/ItemStack.md#keepondeath)
-    - [lockMode](../ScriptAPI/minecraft/server/ItemStack.md#lockmode)
-    - [nameTag](../ScriptAPI/minecraft/server/ItemStack.md#nametag)
-    - [type](../ScriptAPI/minecraft/server/ItemStack.md#type)
-    - [typeId](../ScriptAPI/minecraft/server/ItemStack.md#typeid)
-    - [clone](../ScriptAPI/minecraft/server/ItemStack.md#clone)
-    - [getComponent](../ScriptAPI/minecraft/server/ItemStack.md#getcomponent)
-    - [getComponents](../ScriptAPI/minecraft/server/ItemStack.md#getcomponents)
-    - [hasComponent](../ScriptAPI/minecraft/server/ItemStack.md#hascomponent)
-    - [getLore](../ScriptAPI/minecraft/server/ItemStack.md#getlore)
-    - [setLore](../ScriptAPI/minecraft/server/ItemStack.md#setlore)
-    - [getTags](../ScriptAPI/minecraft/server/ItemStack.md#gettags)
-    - [hasTag](../ScriptAPI/minecraft/server/ItemStack.md#hastag)
-    - [setCanDestroy](../ScriptAPI/minecraft/server/ItemStack.md#setcandestroy)
-    - [setCanPlaceOn](../ScriptAPI/minecraft/server/ItemStack.md#setcanplaceon)
-  - [ItemLockMode](../ScriptAPI/minecraft/server/ItemLockMode.md)
-  - [ItemType](../ScriptAPI/minecraft/server/ItemType.md)
-  - [ItemComponent](../ScriptAPI/minecraft/server/ItemComponent.md)
+    - [amount](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#amount)
+    - [maxAmount](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#maxamount)
+    - [isStackable](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#isstackable)
+    - [isStackableWith](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#isstackablewith)
+    - [keepOnDeath](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#keepondeath)
+    - [lockMode](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#lockmode)
+    - [nameTag](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#nametag)
+    - [type](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#type)
+    - [typeId](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#typeid)
+    - [clone](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#clone)
+    - [getComponent](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#getcomponent)
+    - [getComponents](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#getcomponents)
+    - [hasComponent](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#hascomponent)
+    - [getLore](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#getlore)
+    - [setLore](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#setlore)
+    - [getTags](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#gettags)
+    - [hasTag](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#hastag)
+    - [setCanDestroy](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#setcandestroy)
+    - [setCanPlaceOn](../PriorScriptAPI/minecraft/server-1xx/ItemStack.md#setcanplaceon)
+  - [ItemLockMode](../PriorScriptAPI/minecraft/server-1xx/ItemLockMode.md)
+  - [ItemType](../PriorScriptAPI/minecraft/server-1xx/ItemType.md)
+  - [ItemComponent](../PriorScriptAPI/minecraft/server-1xx/ItemComponent.md)
 - **More Block Events**
-  - [PlayerBreakBlockAfterEvent](../ScriptAPI/minecraft/server/PlayerBreakBlockAfterEvent.md)
-  - [PlayerBreakBlockAfterEventSignal](../ScriptAPI/minecraft/server/PlayerBreakBlockAfterEventSignal.md)
-  - [PlayerBreakBlockBeforeEvent](../ScriptAPI/minecraft/server/PlayerBreakBlockBeforeEvent.md)
-  - [PlayerBreakBlockBeforeEventSignal](../ScriptAPI/minecraft/server/PlayerBreakBlockBeforeEventSignal.md)
-  - [PlayerPlaceBlockAfterEvent](../ScriptAPI/minecraft/server/PlayerPlaceBlockAfterEvent.md)
-  - [PlayerPlaceBlockAfterEventSignal](../ScriptAPI/minecraft/server/PlayerPlaceBlockAfterEvent.md)
+  - [PlayerBreakBlockAfterEvent](../PriorScriptAPI/minecraft/server-1xx/PlayerBreakBlockAfterEvent.md)
+  - [PlayerBreakBlockAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/PlayerBreakBlockAfterEventSignal.md)
+  - [PlayerBreakBlockBeforeEvent](../PriorScriptAPI/minecraft/server-1xx/PlayerBreakBlockBeforeEvent.md)
+  - [PlayerBreakBlockBeforeEventSignal](../PriorScriptAPI/minecraft/server-1xx/PlayerBreakBlockBeforeEventSignal.md)
+  - [PlayerPlaceBlockAfterEvent](../PriorScriptAPI/minecraft/server-1xx/PlayerPlaceBlockAfterEvent.md)
+  - [PlayerPlaceBlockAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/PlayerPlaceBlockAfterEvent.md)
   - WorldAfterEvents
-    - [playerBreakBlock](../ScriptAPI/minecraft/server/WorldAfterEvents.md#playerbreakblock)
-    - [playerPlaceBlock](../ScriptAPI/minecraft/server/WorldAfterEvents.md#playerplaceblock)
+    - [playerBreakBlock](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#playerbreakblock)
+    - [playerPlaceBlock](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#playerplaceblock)
   - WorldBeforeEvents
-    - [playerBreakBlock](../ScriptAPI/minecraft/server/WorldBeforeEvents.md#playerbreakblock)
-  - [BlockEventOptions](../ScriptAPI/minecraft/server/BlockEventOptions.md)
+    - [playerBreakBlock](../PriorScriptAPI/minecraft/server-1xx/WorldBeforeEvents.md#playerbreakblock)
+  - [BlockEventOptions](../PriorScriptAPI/minecraft/server-1xx/BlockEventOptions.md)
 - **Set Weather API**
   - Dimension
-    - [setWeather](../ScriptAPI/minecraft/server/Dimension.md#setweather)
+    - [setWeather](../PriorScriptAPI/minecraft/server-1xx/Dimension.md#setweather)
 - **Entity Lifetime Events**
-  - [EntityRemoveAfterEvent](../ScriptAPI/minecraft/server/EntityRemoveAfterEvent.md)
-  - [EntityRemoveAfterEventSignal](../ScriptAPI/minecraft/server/EntityRemoveAfterEventSignal.md)
-  - [EntityRemoveBeforeEvent](../ScriptAPI/minecraft/server/EntityRemoveBeforeEvent.md)
-  - [EntityRemoveBeforeEventSignal](../ScriptAPI/minecraft/server/EntityRemoveBeforeEventSignal.md)
-  - [EntitySpawnAfterEvent](../ScriptAPI/minecraft/server/EntitySpawnAfterEvent.md)
-  - [EntitySpawnAfterEventSignal](../ScriptAPI/minecraft/server/EntitySpawnAfterEventSignal.md)
-  - [EntityInitializationCause](../ScriptAPI/minecraft/server/EntityInitializationCause.md)
-  - [EntityLoadAfterEvent](../ScriptAPI/minecraft/server/EntityLoadAfterEvent.md)
-  - [EntityLoadAfterEventSignal](../ScriptAPI/minecraft/server/EntityLoadAfterEventSignal.md)
+  - [EntityRemoveAfterEvent](../PriorScriptAPI/minecraft/server-1xx/EntityRemoveAfterEvent.md)
+  - [EntityRemoveAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/EntityRemoveAfterEventSignal.md)
+  - [EntityRemoveBeforeEvent](../PriorScriptAPI/minecraft/server-1xx/EntityRemoveBeforeEvent.md)
+  - [EntityRemoveBeforeEventSignal](../PriorScriptAPI/minecraft/server-1xx/EntityRemoveBeforeEventSignal.md)
+  - [EntitySpawnAfterEvent](../PriorScriptAPI/minecraft/server-1xx/EntitySpawnAfterEvent.md)
+  - [EntitySpawnAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/EntitySpawnAfterEventSignal.md)
+  - [EntityInitializationCause](../PriorScriptAPI/minecraft/server-1xx/EntityInitializationCause.md)
+  - [EntityLoadAfterEvent](../PriorScriptAPI/minecraft/server-1xx/EntityLoadAfterEvent.md)
+  - [EntityLoadAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/EntityLoadAfterEventSignal.md)
   - WorldAfterEvents
-    - [entityRemove](../ScriptAPI/minecraft/server/WorldAfterEvents.md#entityremove)
-    - [entitySpawn](../ScriptAPI/minecraft/server/WorldAfterEvents.md#entityspawn)
-    - [entityLoad](../ScriptAPI/minecraft/server/WorldAfterEvents.md#entityload)
+    - [entityRemove](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#entityremove)
+    - [entitySpawn](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#entityspawn)
+    - [entityLoad](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#entityload)
   - WorldBeforeEvents
-    - [entityRemove](../ScriptAPI/minecraft/server/WorldBeforeEvents.md#entityremove)
+    - [entityRemove](../PriorScriptAPI/minecraft/server-1xx/WorldBeforeEvents.md#entityremove)
 - **Block isAir/isLiquid**
   - Block
-    - [isAir](../ScriptAPI/minecraft/server/Block.md#isair)
-    - [isLiquid](../ScriptAPI/minecraft/server/Block.md#isliquid) 
+    - [isAir](../PriorScriptAPI/minecraft/server-1xx/Block.md#isair)
+    - [isLiquid](../PriorScriptAPI/minecraft/server-1xx/Block.md#isliquid) 
 - **Entity Properties APIs**
   - Entity
-    - [setProperty](../ScriptAPI/minecraft/server/Entity.md#setproperty)
-    - [getProperty](../ScriptAPI/minecraft/server/Entity.md#getproperty)
-    - [resetProperty](../ScriptAPI/minecraft/server/Entity.md#resetproperty)    
+    - [setProperty](../PriorScriptAPI/minecraft/server-1xx/Entity.md#setproperty)
+    - [getProperty](../PriorScriptAPI/minecraft/server-1xx/Entity.md#getproperty)
+    - [resetProperty](../PriorScriptAPI/minecraft/server-1xx/Entity.md#resetproperty)    
 - **Player Experience/Level**
   - Player
-    - [addLevels](../ScriptAPI/minecraft/server/Player.md#addlevels)
-    - [addExperience](../ScriptAPI/minecraft/server/Player.md#addexperience)
-    - [level](../ScriptAPI/minecraft/server/Player.md#level)
-    - [getTotalXP](../ScriptAPI/minecraft/server/Player.md#gettotalxp)
-    - [xpEarnedAtCurrentLevel](../ScriptAPI/minecraft/server/Player.md#xpearnedatcurrentlevel)
-    - [totalXpNeededForNextLevel](../ScriptAPI/minecraft/server/Player.md#totalxpneededfornextlevel)
+    - [addLevels](../PriorScriptAPI/minecraft/server-1xx/Player.md#addlevels)
+    - [addExperience](../PriorScriptAPI/minecraft/server-1xx/Player.md#addexperience)
+    - [level](../PriorScriptAPI/minecraft/server-1xx/Player.md#level)
+    - [getTotalXP](../PriorScriptAPI/minecraft/server-1xx/Player.md#gettotalxp)
+    - [xpEarnedAtCurrentLevel](../PriorScriptAPI/minecraft/server-1xx/Player.md#xpearnedatcurrentlevel)
+    - [totalXpNeededForNextLevel](../PriorScriptAPI/minecraft/server-1xx/Player.md#totalxpneededfornextlevel)
 - **Player Dimension Changed Events**
-  - [PlayerDimensionChangeAfterEvent](../ScriptAPI/minecraft/server/PlayerDimensionChangeAfterEvent.md)
-  - [PlayerDimensionChangeAfterEventSignal](../ScriptAPI/minecraft/server/PlayerDimensionChangeAfterEventSignal.md)
-  - [DimensionType](../ScriptAPI/minecraft/server/DimensionType.md)
+  - [PlayerDimensionChangeAfterEvent](../PriorScriptAPI/minecraft/server-1xx/PlayerDimensionChangeAfterEvent.md)
+  - [PlayerDimensionChangeAfterEventSignal](../PriorScriptAPI/minecraft/server-1xx/PlayerDimensionChangeAfterEventSignal.md)
+  - [DimensionType](../PriorScriptAPI/minecraft/server-1xx/DimensionType.md)
   - WorldAfterEvents
-    - [playerDimensionChange](../ScriptAPI/minecraft/server/WorldAfterEvents.md#playerdimensionchange)
+    - [playerDimensionChange](../PriorScriptAPI/minecraft/server-1xx/WorldAfterEvents.md#playerdimensionchange)
      
 Beta APIs will continue to be developed behind the Beta API experimental flag so if you want to use those, make sure you have that flag enabled and your manifest.json references will need to update to 1.7.0-beta. Read more about [script versioning](ScriptVersioning.md).
 

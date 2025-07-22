@@ -39,6 +39,8 @@ Main class for GameTest functions, with helpers and data for manipulating the re
 - [getSculkSpreader](#getsculkspreader)
 - [getTestDirection](#gettestdirection)
 - [idle](#idle)
+- [isCleaningUp](#iscleaningup)
+- [isCompleted](#iscompleted)
 - [killAllEntities](#killallentities)
 - [onPlayerJump](#onplayerjump)
 - [pressButton](#pressbutton)
@@ -97,7 +99,7 @@ Tests that the condition specified in _condition_ is true. If not, an error with
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertBlockPresent**
 `
@@ -119,7 +121,7 @@ Tests that a block of the specified type is present at the specified location. I
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertBlockState**
 `
@@ -138,7 +140,7 @@ Tests that a block has a particular state value at the specified location. If it
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertCanReachLocation**
 `
@@ -160,7 +162,7 @@ Tests that an entity can reach a particular location. Depending on the value of 
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertContainerContains**
 `
@@ -179,7 +181,7 @@ Tests that a container (e.g., a chest) at the specified location contains a spec
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertContainerEmpty**
 `
@@ -195,7 +197,7 @@ Tests that a container (e.g., a chest) at the specified location is empty. If no
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertEntityHasArmor**
 `
@@ -226,7 +228,7 @@ Tests that an entity has a specific piece of armor equipped. If not, an error is
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertEntityHasComponent**
 `
@@ -251,7 +253,7 @@ Tests that an entity has a particular component. If not, an exception is thrown.
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertEntityInstancePresent**
 `
@@ -273,7 +275,7 @@ Depending on the value for isPresent, tests that a particular entity is present 
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertEntityInstancePresentInArea**
 `
@@ -292,7 +294,7 @@ Tests that an entity instance is present within the GameTest area. If not, an ex
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 #### Examples
 
@@ -344,7 +346,7 @@ Depending on the value of isPresent, tests for the presence or non-presence of e
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertEntityPresentInArea**
 `
@@ -363,7 +365,7 @@ Tests that an entity of a specified type is present within the GameTest area. If
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 #### Examples
 
@@ -436,7 +438,7 @@ Tests that an entity (e.g., a skeleton) at the specified location has a particul
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertEntityTouching**
 `
@@ -458,7 +460,7 @@ Depending on the value of isTouching, tests that an entity of a specified type i
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertIsWaterlogged**
 `
@@ -477,7 +479,7 @@ Depending on the value of isWaterlogged, tests that a block at a location contai
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertItemEntityCountIs**
 `
@@ -502,7 +504,7 @@ Tests that items of a particular type and count are present within an area. If n
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertItemEntityPresent**
 `
@@ -527,7 +529,7 @@ Depending on the value of isPresent, tests whether a particular item entity is p
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **assertRedstonePower**
 `
@@ -546,7 +548,7 @@ Tests that Redstone power at a particular location matches a particular value. I
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **destroyBlock**
 `
@@ -566,7 +568,7 @@ Destroys a block at a particular location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **fail**
 `
@@ -615,7 +617,7 @@ Gets a block at the specified block location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **getDimension**
 `
@@ -628,7 +630,7 @@ Gets the dimension of this test.
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **getFenceConnectivity**
 `
@@ -647,7 +649,7 @@ If the block at the specified block location is a fence, this returns a helper o
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **getSculkSpreader**
 `
@@ -666,7 +668,7 @@ Retrieves a sculk spreader object that can be used to control and manage how scu
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **getTestDirection**
 `
@@ -676,6 +678,10 @@ getTestDirection(): minecraftserver.Direction
 Returns the direction of the current test - see the [*@minecraft/server.Direction*](../../../scriptapi/minecraft/server/Direction.md) enum for more information on potential values (north, east, south, west - values 2-5).
 
 **Returns** [*@minecraft/server.Direction*](../../../scriptapi/minecraft/server/Direction.md)
+  
+Notes:
+- This function can throw errors.
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md)
 
 ### **idle**
 `
@@ -693,6 +699,32 @@ This asynchronous function will wait for the specified time in ticks before cont
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md)
+
+### **isCleaningUp**
+`
+isCleaningUp(): boolean
+`
+
+Returns whether or not the test is currently in the Clean Up step after running.
+
+**Returns** *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
+
+### **isCompleted**
+`
+isCompleted(): boolean
+`
+
+Returns whether or not the test has already completed
+
+**Returns** *boolean*
+  
+Notes:
+- This function can't be called in read-only mode.
 
 ### **killAllEntities**
 `
@@ -704,7 +736,7 @@ Kills all entities within the GameTest structure.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **onPlayerJump**
 `
@@ -718,7 +750,7 @@ onPlayerJump(mob: minecraftserver.Entity, jumpAmount: number): void
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **pressButton**
 `
@@ -735,7 +767,7 @@ Presses a button at a block location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **print**
 `
@@ -752,7 +784,7 @@ Displays the specified message to all players.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **pullLever**
 `
@@ -769,7 +801,7 @@ Pulls a lever at a block location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **pulseRedstone**
 `
@@ -789,7 +821,7 @@ Sends a Redstone pulse at a particular location by creating a temporary Redstone
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **relativeBlockLocation**
 `
@@ -807,7 +839,7 @@ From a BlockLocation, returns a new BlockLocation with coordinates relative to t
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **relativeLocation**
 `
@@ -826,7 +858,7 @@ From a location, returns a new location with coordinates relative to the current
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **removeSimulatedPlayer**
 `
@@ -842,6 +874,8 @@ Removes a simulated player from the world.
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md)
 
 ### **rotateDirection**
 `
@@ -860,7 +894,7 @@ Returns a relative direction given the current rotation of the current test. Pas
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **rotateVector**
 `
@@ -875,7 +909,7 @@ rotateVector(vector: minecraftserver.Vector3): minecraftserver.Vector3
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **runAfterDelay**
 `
@@ -930,7 +964,7 @@ Runs the given callback after the GameTest has completed regardless if the test 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **setBlockPermutation**
 `
@@ -950,7 +984,7 @@ Sets a block to a particular configuration (a BlockPermutation) at the specified
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **setBlockType**
 `
@@ -970,7 +1004,7 @@ Sets a block to a particular type at the specified block location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 #### Examples
 
@@ -1016,7 +1050,7 @@ For blocks that are fluid containers - like a cauldron - changes the type of flu
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **setTntFuse**
 `
@@ -1036,7 +1070,7 @@ Sets the fuse of an explodable entity.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **spawn**
 `
@@ -1056,7 +1090,7 @@ Spawns an entity at a location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 #### Examples
 
@@ -1170,7 +1204,7 @@ Spawns an entity at a location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **spawnItem**
 `
@@ -1192,7 +1226,7 @@ Spawns an item entity at a specified location.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **spawnSimulatedPlayer**
 `
@@ -1215,7 +1249,7 @@ Creates a new simulated player within the world.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **spawnWithoutBehaviors**
 `
@@ -1235,7 +1269,7 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **spawnWithoutBehaviorsAtLocation**
 `
@@ -1255,7 +1289,7 @@ Spawns an entity at a location without any AI behaviors. This method is frequent
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **spreadFromFaceTowardDirection**
 `
@@ -1278,7 +1312,7 @@ Tests that a particular item entity is present at a particular location. If not,
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **startSequence**
 `
@@ -1291,6 +1325,8 @@ Creates a new GameTestSequence - A set of steps that play out sequentially withi
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md)
 
 ### **succeed**
 `
@@ -1417,7 +1453,7 @@ Depending on the condition of isPresent, tests for the presence of a block of a 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **succeedWhenEntityHasComponent**
 `
@@ -1528,7 +1564,7 @@ Triggers a block event from a fixed list of available block events.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **until**
 `
@@ -1546,6 +1582,8 @@ This asynchronous function will wait until the code in the specified callback su
   
 Notes:
 - This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md)
 
 ### **walkTo**
 `
@@ -1568,7 +1606,7 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **walkToLocation**
 `
@@ -1591,7 +1629,7 @@ Forces a mob to walk to a particular location. Usually used in conjunction with 
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **worldBlockLocation**
 `
@@ -1609,7 +1647,7 @@ From a BlockLocation with coordinates relative to the GameTest structure block, 
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)
 
 ### **worldLocation**
 `
@@ -1627,4 +1665,4 @@ From a location with coordinates relative to the GameTest structure block, retur
   
 Notes:
 - This function can throw errors.
-  - Throws [*GameTestError*](GameTestError.md)
+  - Throws [*GameTestCompletedError*](GameTestCompletedError.md), [*GameTestError*](GameTestError.md)

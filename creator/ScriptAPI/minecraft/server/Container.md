@@ -71,21 +71,11 @@ Notes:
 ## Methods
 - [addItem](#additem)
 - [clearAll](#clearall)
-::: moniker range="=minecraft-bedrock-experimental"
 - [contains](#contains)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [find](#find)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [findLast](#findlast)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [firstEmptySlot](#firstemptyslot)
-::: moniker-end
-::: moniker range="=minecraft-bedrock-experimental"
 - [firstItem](#firstitem)
-::: moniker-end
 - [getItem](#getitem)
 - [getSlot](#getslot)
 - [moveItem](#moveitem)
@@ -124,7 +114,6 @@ Notes:
 - This function can throw errors.
   - Throws if the container is invalid.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **contains**
 `
 contains(itemStack: ItemStack): boolean
@@ -138,16 +127,11 @@ Attempts to find an item inside the container
   The item to find.
 
 **Returns** *boolean*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*InvalidContainerError*](InvalidContainerError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **find**
 `
 find(itemStack: ItemStack): number | undefined
@@ -161,16 +145,11 @@ Find the index of the first instance of an item inside the container
   The item to find.
 
 **Returns** *number* | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*InvalidContainerError*](InvalidContainerError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **findLast**
 `
 findLast(itemStack: ItemStack): number | undefined
@@ -184,16 +163,11 @@ Find the index of the last instance of an item inside the container
   The item to find.
 
 **Returns** *number* | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*InvalidContainerError*](InvalidContainerError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **firstEmptySlot**
 `
 firstEmptySlot(): number | undefined
@@ -202,16 +176,11 @@ firstEmptySlot(): number | undefined
 Finds the index of the first empty slot inside the container
 
 **Returns** *number* | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*InvalidContainerError*](InvalidContainerError.md)
-::: moniker-end
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **firstItem**
 `
 firstItem(): number | undefined
@@ -220,14 +189,10 @@ firstItem(): number | undefined
 Finds the index of the first item inside the container
 
 **Returns** *number* | *undefined*
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
 - This function can throw errors.
   - Throws [*InvalidContainerError*](InvalidContainerError.md)
-::: moniker-end
 
 ### **getItem**
 `

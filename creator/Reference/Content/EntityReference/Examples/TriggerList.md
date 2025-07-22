@@ -11,7 +11,7 @@ ms.date: 02/11/2025
 
 | Entity Triggers | Description |
 |:-----|:----------|
-| [minecraft:on_death](EntityTriggers/minecraftTrigger_on_death.md)| Only usable by the Ender Dragon. |
+| [minecraft:on_death](EntityTriggers/minecraftTrigger_on_death.md)| Adds a trigger to call on this entity's death. |
 | [minecraft:on_friendly_anger](EntityTriggers/minecraftTrigger_on_friendly_anger.md)| Adds a trigger that will run when a nearby entity of the same type as this entity becomes Angry. |
 | [minecraft:on_hurt](EntityTriggers/minecraftTrigger_on_hurt.md)| Adds a trigger to call when this entity takes damage. |
 | [minecraft:on_hurt_by_player](EntityTriggers/minecraftTrigger_on_hurt_by_player.md)| Adds a trigger to call when this entity is attacked by the player. |

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CustomCommandRegistry Class
 description: Contents of the @minecraft/server.CustomCommandRegistry class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CustomCommandRegistry Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Provides the functionality for registering custom commands.
 
@@ -21,14 +17,14 @@ Provides the functionality for registering custom commands.
 
 ### **registerCommand**
 `
-registerCommand(customCommand: CustomCommand, callback: (origin: CustomCommandOrigin, ...args: any[]) => CustomCommandResult | undefined): void
+registerCommand(customCommand: CustomCommand, callback: () => void): void
 `
 
 Registers a custom command that when executed triggers a script callback.
 
 #### **Parameters**
 - **customCommand**: *CustomCommand*
-- **callback**: *(origin: CustomCommandOrigin, ...args: any[]) => CustomCommandResult | undefined*
+- **callback**: () => void
   
   The callback triggered when the command executes.
 

@@ -49,7 +49,7 @@ Java is currently available on Windows, Mac, and Linux PCs, meaning that any con
 
 ## Next steps
 
-If you're entering the world of Bedrock creation, your next stop should be our add-on concept articles. Here are some excellent follow-up articles for your review:
+If you're entering the world of Bedrock creation, your next stop should be our Add-On concept articles. Here are some excellent follow-up articles for your review:
 
 > [!div class="nextstepaction"]
 > [Getting Started with Add-Ons](GettingStarted.md)

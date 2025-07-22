@@ -18,7 +18,7 @@ Controls the blocks used for the default Minecraft Overworld terrain generation.
 |:----------|:-------------|:----|:-----------|:------------- |
 | foundation_material | *not set* | Object | Controls the block type used deep underground in this biome |  | 
 | mid_material | *not set* | Object | Controls the block type used in a layer below the surface of this biome |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur |  | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. |  | 
 | sea_floor_material | *not set* | Object | Controls the block type used as a floor for bodies of water in this biome |  | 
 | sea_material | *not set* | Object | Controls the block type used for the bodies of water in this biome |  | 
 | top_material | *not set* | Object | Controls the block type used for the surface of this biome |  | 

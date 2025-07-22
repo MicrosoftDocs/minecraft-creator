@@ -27,7 +27,7 @@ updateEntries(data: IDataTablePropertyItemEntry[][]): void
 Update table entries
 
 #### **Parameters**
-- **data**: *IDataTablePropertyItemEntry[][]*
+- **data**: *IDataTablePropertyItemEntry*[][]
   
   New data entries.
 
@@ -61,7 +61,7 @@ updateRow(data: IDataTablePropertyItemEntry[], row: number): void
 Update table row entries
 
 #### **Parameters**
-- **data**: *IDataTablePropertyItemEntry[]*
+- **data**: *IDataTablePropertyItemEntry*[]
   
   New data entries.
 - **row**: *number*

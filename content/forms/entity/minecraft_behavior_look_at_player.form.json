@@ -196,6 +196,12 @@
               "content": 9
             }
           ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+              "content": 5
+            }
+          ],
           "/vanilla/behavior_pack/entities/creeper.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
@@ -418,6 +424,16 @@
           "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
           "content": {
             "priority": 7,
+            "look_distance": 6,
+            "probability": 0.02
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
+          "content": {
+            "priority": 5,
             "look_distance": 6,
             "probability": 0.02
           }

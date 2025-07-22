@@ -14,7 +14,7 @@ description: Contents of the @minecraft/server-editor.IGlobalInputManager class.
 
 ### **registerKeyBinding**
 `
-registerKeyBinding(inputContextId: EditorInputContext, action: SupportedKeyboardActionTypes, binding: KeyBinding, info: KeyBindingInfo): IRegisteredKeyBinding
+registerKeyBinding(inputContextId: EditorInputContext, action: SupportedKeyboardActionTypes, binding: KeyBinding, info?: KeyBindingInfo): IRegisteredKeyBinding
 `
 
 Register a key press binding for an action which will be handled by the specified input context.
@@ -29,7 +29,7 @@ Register a key press binding for an action which will be handled by the specifie
 - **binding**: *KeyBinding*
   
   Keyboard binding to invoke action.
-- **info**: *KeyBindingInfo*
+- **info**?: *KeyBindingInfo*
   
   Additional information about key binding.
 

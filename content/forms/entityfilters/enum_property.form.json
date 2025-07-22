@@ -25,6 +25,16 @@
               "content": "minecraft:armadillo_state"
             }
           ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/1/on_interact/filters/all_of/1/",
+              "content": "minecraft:oxidation_level"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:wax_off/sequence/0/first_valid/0/filters/",
+              "content": "minecraft:oxidation_level"
+            }
+          ],
           "/vanilla/behavior_pack/entities/creaking.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:spawned_by_player/minecraft:environment_sensor/triggers/0/filters/all_of/0/any_of/0/",
@@ -216,6 +226,40 @@
             {
               "path": "/minecraft:entity/events/minecraft:start_unrolling/sequence/0/filters/",
               "content": "rolled_up_relaxing"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:interact/interactions/1/on_interact/filters/all_of/1/",
+              "content": "unoxidized"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:wax_off/sequence/0/first_valid/0/filters/",
+              "content": "oxidized"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:oxidize_copper/first_valid/0/filters/",
+              "content": "unoxidized"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:oxidize_copper/first_valid/1/filters/",
+              "content": "exposed"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:oxidize_copper/first_valid/2/filters/",
+              "content": "weathered"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:remove_oxidation_layer/sequence/1/first_valid/0/filters/",
+              "content": "exposed"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:remove_oxidation_layer/sequence/1/first_valid/1/filters/",
+              "content": "weathered"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:remove_oxidation_layer/sequence/1/first_valid/2/filters/",
+              "content": "oxidized"
             }
           ],
           "/vanilla/behavior_pack/entities/creaking.json": [
@@ -449,6 +493,73 @@
             "test": "enum_property",
             "domain": "minecraft:armadillo_state",
             "value": "rolled_up_relaxing"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:interact/interactions/1/on_interact/filters/all_of/1/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:oxidation_level",
+            "operator": "not",
+            "value": "unoxidized"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:wax_off/sequence/0/first_valid/0/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:oxidation_level",
+            "value": "oxidized"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:oxidize_copper/first_valid/0/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:oxidation_level",
+            "value": "unoxidized"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:oxidize_copper/first_valid/1/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:oxidation_level",
+            "value": "exposed"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:oxidize_copper/first_valid/2/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:oxidation_level",
+            "value": "weathered"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:remove_oxidation_layer/sequence/1/first_valid/0/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:oxidation_level",
+            "value": "exposed"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:remove_oxidation_layer/sequence/1/first_valid/1/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:oxidation_level",
+            "value": "weathered"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:remove_oxidation_layer/sequence/1/first_valid/2/filters/",
+          "content": {
+            "test": "enum_property",
+            "domain": "minecraft:oxidation_level",
+            "value": "oxidized"
           }
         }
       ],

@@ -42,7 +42,6 @@ Type: *boolean*
 Notes:
   - This property can't be edited in read-only mode.
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **localizationKey**
 `read-only localizationKey: string;`
 
@@ -50,13 +49,9 @@ Key for the localization of this items's name used in .lang files.
 
 Type: *string*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
-::: moniker-end
 
 ### **lockMode**
 `lockMode: ItemLockMode;`
@@ -207,7 +202,7 @@ Notes:
 
 ### **getComponent**
 `
-getComponent(componentId: T): ItemComponentReturnType<T> | undefined
+getComponent(componentId: T): ItemComponentReturnType<T> | void
 `
 
 Gets a component (that represents additional capabilities) for an item stack.
@@ -217,7 +212,7 @@ Gets a component (that represents additional capabilities) for an item stack.
   
   The identifier of the component (e.g., 'minecraft:food'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs are those in the [*@minecraft/server.ItemComponentTypes*](../../../scriptapi/minecraft/server/ItemComponentTypes.md) enum and custom component IDs registered with the [*@minecraft/server.ItemComponentRegistry*](../../../scriptapi/minecraft/server/ItemComponentRegistry.md).
 
-**Returns** *ItemComponentReturnType<T> | undefined* - Returns the component if it exists on the item stack, otherwise undefined.
+**Returns** *ItemComponentReturnType<T>* | *void* - Returns the component if it exists on the item stack, otherwise undefined.
 
 #### Examples
 

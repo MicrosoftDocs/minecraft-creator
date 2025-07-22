@@ -32,7 +32,7 @@ Type: *number*
 
 ### **getEntryByIndex**
 `
-getEntryByIndex(index: number): IToggleGroupPropertyItemEntry | undefined
+getEntryByIndex(index: number): IToggleGroupPropertyItemEntry | void
 `
 
 Find a toggle entry at an index in the group.
@@ -42,11 +42,11 @@ Find a toggle entry at an index in the group.
   
   Index of the toggle entry in the list.
 
-**Returns** *IToggleGroupPropertyItemEntry | undefined*
+**Returns** *IToggleGroupPropertyItemEntry* | *void*
 
 ### **getEntryByValue**
 `
-getEntryByValue(value: number): IToggleGroupPropertyItemEntry | undefined
+getEntryByValue(value: number): IToggleGroupPropertyItemEntry | void
 `
 
 Find a toggle entry with a specific value associated with property item.
@@ -56,17 +56,17 @@ Find a toggle entry with a specific value associated with property item.
   
   Value of the toggle entry in the group.
 
-**Returns** *IToggleGroupPropertyItemEntry | undefined*
+**Returns** *IToggleGroupPropertyItemEntry* | *void*
 
 ### **setTitle**
 `
-setTitle(title: LocalizedString | undefined): void
+setTitle(title: LocalizedString | void): void
 `
 
 Updates title of the property item.
 
 #### **Parameters**
-- **title**: *LocalizedString | undefined*
+- **title**: *LocalizedString* | *void*
   
   New title.
 
@@ -74,13 +74,13 @@ Updates title of the property item.
 
 ### **setTooltip**
 `
-setTooltip(tooltip: BasicTooltipContent | undefined): void
+setTooltip(tooltip: BasicTooltipContent | void): void
 `
 
 Updates tooltip of the property item.
 
 #### **Parameters**
-- **tooltip**: *BasicTooltipContent | undefined*
+- **tooltip**: *BasicTooltipContent* | *void*
   
   New tooltip.
 
@@ -88,16 +88,16 @@ Updates tooltip of the property item.
 
 ### **updateEntries**
 `
-updateEntries(entries: IToggleGroupPropertyItemEntry[], newValue: number): void
+updateEntries(entries: IToggleGroupPropertyItemEntry[], newValue?: number): void
 `
 
 Update list of toggle group entries.
 
 #### **Parameters**
-- **entries**: *IToggleGroupPropertyItemEntry[]*
+- **entries**: *IToggleGroupPropertyItemEntry*[]
   
   New list of updated entries.
-- **newValue**: *number*
+- **newValue**?: *number*
   
   New value value to use for the selected toggle button.
 

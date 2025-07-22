@@ -16,14 +16,14 @@
         "id": "location",
         "title": "Location",
         "description": "The path of the structure file. This path is relative to the behavior pack's structures folder.",
-        "dataType": 2,
+        "dataType": 16,
         "isRequired": true
       },
       {
         "id": "processors",
         "title": "Processors",
         "description": "The identifier of the processor list to use when placing the structure.",
-        "dataType": 2
+        "dataType": 16
       },
       {
         "id": "projection",

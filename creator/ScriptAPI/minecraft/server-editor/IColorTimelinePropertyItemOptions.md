@@ -17,63 +17,63 @@ Optional properties for Color Timeline property item
 ## Properties
 
 ### **decimalPrecision**
-`decimalPrecision: number;`
+`decimalPrecision?: number;`
 
 Custom precision for the calculations
 
 Type: *number*
 
 ### **disableAddRemoveNodes**
-`disableAddRemoveNodes: boolean;`
+`disableAddRemoveNodes?: boolean;`
 
 If true, nodes cannot be added or removed
 
 Type: *boolean*
 
 ### **entries**
-`entries: IColorTimelinePropertyItemEntry[];`
+`entries?: IColorTimelinePropertyItemEntry[];`
 
 List of nodes entries in the color timeline.
 
-Type: *IColorTimelinePropertyItemEntry[]*
+Type: *IColorTimelinePropertyItemEntry*[]
 
 ### **isGraphReadOnly**
-`isGraphReadOnly: boolean;`
+`isGraphReadOnly?: boolean;`
 
 True means nodes cannot be dragged or modified
 
 Type: *boolean*
 
 ### **onNodeAdded**
-`onNodeAdded: (node: IColorTimelinePropertyItemEntry) => void;`
+`onNodeAdded?: () => void;`
 
 Callback triggered when a new RGBA node is added to the timeline.
 
-Type: *(node: IColorTimelinePropertyItemEntry) => void*
+Type: () => void
 
 ### **onNodeChanged**
-`onNodeChanged: (node: IColorTimelinePropertyItemEntry) => void;`
+`onNodeChanged?: () => void;`
 
 Callback triggered when a timeline node's RGBA value changes.
 
-Type: *(node: IColorTimelinePropertyItemEntry) => void*
+Type: () => void
 
 ### **onNodeRemoved**
-`onNodeRemoved: (node: IColorTimelinePropertyItemEntry) => void;`
+`onNodeRemoved?: () => void;`
 
 Callback triggered when an RGBA node is removed from the timeline. *
 
-Type: *(node: IColorTimelinePropertyItemEntry) => void*
+Type: () => void
 
 ### **onTimeChanged**
-`onTimeChanged: (current: number, prev: number) => void;`
+`onTimeChanged?: () => void;`
 
 This callback is called when UI control time is changed.
 
-Type: *(current: number, prev: number) => void*
+Type: () => void
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item
 

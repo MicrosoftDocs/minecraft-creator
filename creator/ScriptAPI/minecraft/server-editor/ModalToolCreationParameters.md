@@ -14,28 +14,28 @@ Parameters for creating a modal tool in the tool container
 ## Properties
 
 ### **action**
-`action: RegisteredAction<NoArgsAction>;`
+`action?: RegisteredAction<NoArgsAction>;`
 
 Action associated with tool activation
 
 Type: *RegisteredAction<NoArgsAction>*
 
 ### **icon**
-`icon: string;`
+`icon?: string;`
 
 Icon resource
 
 Type: *string*
 
 ### **title**
-`title: string;`
+`title?: string;`
 
 Localized title of the tool
 
 Type: *string*
 
 ### **tooltip**
-`tooltip: BasicTooltipContent;`
+`tooltip?: BasicTooltipContent;`
 
 Tooltip description of the tool
 

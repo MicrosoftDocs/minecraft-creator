@@ -20,6 +20,19 @@
         "isRequired": true
       },
       {
+        "id": "max_puddle_depth_below_sea_level",
+        "title": "Max Puddle Depth Below Sea Level",
+        "description": "Controls the depth at which surface level blocks can be replaced with water for puddles. The number represents the number of blocks (0, 127) below sea level that we will go down to look for a surface block.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 127
+          }
+        ],
+        "isRequired": true
+      },
+      {
         "id": "mid_material",
         "title": "Mid Material",
         "description": "Controls the block type used in a layer below the surface of this biome.",
@@ -37,6 +50,12 @@
         "title": "Sea Floor Depth",
         "description": "Controls how deep below the world water level the floor should occur.",
         "dataType": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 127
+          }
+        ],
         "isRequired": true
       },
       {

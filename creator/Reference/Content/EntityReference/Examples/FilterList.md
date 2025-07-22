@@ -110,3 +110,4 @@ ms.date: 02/11/2025
 | [was_last_hurt_by](Filters/was_last_hurt_by.md)| Tests if the subject is the last player who attacked the entity in the last 400 seconds, or the last mob to do so in the last 60 seconds. |
 | [weather](Filters/weather.md)| Tests the current weather in the dimension against a provided weather value. |
 | [weather_at_position](Filters/weather_at_position.md)| Tests the current weather, at the actor's position, against a provided weather value. |
+| [y_rotation](Filters/y_rotation.md)| Returns the Y rotation of this entity. |

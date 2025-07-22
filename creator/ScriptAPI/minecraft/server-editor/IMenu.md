@@ -12,7 +12,7 @@ description: Contents of the @minecraft/server-editor.IMenu class.
 ## Properties
 
 ### **checked**
-`checked: boolean;`
+`checked?: boolean;`
 
 If defined, the menu will show a checked or unchecked checkbox.
 
@@ -37,7 +37,7 @@ Type: *string*
 
 Sub menus of this menu
 
-Type: *IMenu[]*
+Type: *IMenu*[]
 
 ## Methods
 - [addItem](#additem)
@@ -48,7 +48,7 @@ Type: *IMenu[]*
 
 ### **addItem**
 `
-addItem(params: IMenuCreationParams, action: RegisteredAction<NoArgsAction>): IMenu
+addItem(params: IMenuCreationParams, action?: RegisteredAction<NoArgsAction>): IMenu
 `
 
 Create a child menu on this menu.
@@ -57,7 +57,7 @@ Create a child menu on this menu.
 - **params**: *IMenuCreationParams*
   
   The menu creation parameters for the sub item being added
-- **action**: *RegisteredAction<NoArgsAction>*
+- **action**?: *RegisteredAction<NoArgsAction>*
   
   The action to associate with the menu item. Only a subset of actions are supported
 

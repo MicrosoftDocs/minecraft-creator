@@ -17,21 +17,21 @@ Optional properties for Text property item
 ## Properties
 
 ### **alignment**
-`alignment: LayoutAlignment;`
+`alignment?: LayoutAlignment;`
 
 Determines alignment of the text. If undefined, it will default to left aligned.
 
 Type: *LayoutAlignment*
 
 ### **border**
-`border: boolean;`
+`border?: boolean;`
 
 Adds a border around the text. If undefined, it will default to true.
 
 Type: *boolean*
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the text item.
 

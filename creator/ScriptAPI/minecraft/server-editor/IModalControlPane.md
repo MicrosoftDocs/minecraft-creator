@@ -22,39 +22,39 @@ A sub pane for modal control elements.
 
 ### **addBool**
 `
-addBool(value: IObservableProp<boolean>, options: IBoolPropertyItemOptions): IBoolPropertyItem
+addBool(value: IObservableProp<boolean>, options?: IBoolPropertyItemOptions): IBoolPropertyItem
 `
 
 Adds a togglable boolean item to the pane.
 
 #### **Parameters**
 - **value**: *IObservableProp<boolean>*
-- **options**: *IBoolPropertyItemOptions*
+- **options**?: *IBoolPropertyItemOptions*
 
 **Returns** *IBoolPropertyItem*
 
 ### **addButton**
 `
-addButton(action: ButtonPropertyItemSupportedActionTypes, options: IButtonPropertyItemOptions): IButtonPropertyItem
+addButton(action: ButtonPropertyItemSupportedActionTypes, options?: IButtonPropertyItemOptions): IButtonPropertyItem
 `
 
 Adds a button to the pane and binds the specified action to the button activation.
 
 #### **Parameters**
 - **action**: *ButtonPropertyItemSupportedActionTypes*
-- **options**: *IButtonPropertyItemOptions*
+- **options**?: *IButtonPropertyItemOptions*
 
 **Returns** *IButtonPropertyItem*
 
 ### **addButtonPane**
 `
-addButtonPane(options: IButtonPanePropertyItemOptions): IButtonPanePropertyItem
+addButtonPane(options?: IButtonPanePropertyItemOptions): IButtonPanePropertyItem
 `
 
 Adds a pane for grouped button layout.
 
 #### **Parameters**
-- **options**: *IButtonPanePropertyItemOptions*
+- **options**?: *IButtonPanePropertyItemOptions*
 
 **Returns** *IButtonPanePropertyItem*
 

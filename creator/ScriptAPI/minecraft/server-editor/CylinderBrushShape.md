@@ -19,7 +19,7 @@ description: Contents of the @minecraft/server-editor.CylinderBrushShape class.
 
 ### **constructor**
 `
-new CylinderBrushShape(settings: {
+new CylinderBrushShape(settings?: {
         uniform?: boolean;
         radius?: number;
         width?: number;
@@ -35,7 +35,7 @@ new CylinderBrushShape(settings: {
 Constructs a new instance of the `CylinderBrushShape` class
 
 #### **Parameters**
-- **settings**: *{
+- **settings**?: *{
         uniform?: boolean;
         radius?: number;
         width?: number;
@@ -51,12 +51,12 @@ Constructs a new instance of the `CylinderBrushShape` class
 
 ### **createSettingsPane**
 `
-createSettingsPane(parentPane: IPropertyPane, onSettingsChange: () => void): ISubPanePropertyItem
+createSettingsPane(parentPane: IPropertyPane, onSettingsChange?: () => void): ISubPanePropertyItem
 `
 
 #### **Parameters**
 - **parentPane**: *IPropertyPane*
-- **onSettingsChange**: *() => void*
+- **onSettingsChange**?: () => void
 
 **Returns** *ISubPanePropertyItem*
 

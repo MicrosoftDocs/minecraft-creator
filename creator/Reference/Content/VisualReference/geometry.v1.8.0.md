@@ -89,4 +89,6 @@ ms.date: 02/11/2025
 | position | *not set* | Array of strings |  |  | 
 | rotation | *not set* | Array of strings |  |  | 
 | scale | *not set* | Array of strings |  |  | 
+| scale (Alternate 1) | *not set* | Array of strings |  |  | 
 | texture | *not set* | String |  |  | 
+| use_pixel_depth | *not set* | Boolean true/false |  |  | 

@@ -30,6 +30,6 @@ validate(newValue: string[]): string[]
 `
 
 #### **Parameters**
-- **newValue**: *string[]*
+- **newValue**: *string*[]
 
-**Returns** *string[]*
+**Returns** *string*[]

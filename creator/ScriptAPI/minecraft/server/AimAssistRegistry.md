@@ -113,6 +113,13 @@ Gets all available presets in the registry.
 
 ## Constants
 
+### **DefaultCategoryId**
+`static read-only DefaultCategoryId = "minecraft:default";`
+
+The default aim-assist category Id that is used when not otherwise specified.
+
+Type: *string*
+
 ### **DefaultPresetId**
 `static read-only DefaultPresetId = "minecraft:aim_assist_default";`
 

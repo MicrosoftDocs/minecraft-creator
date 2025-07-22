@@ -17,35 +17,35 @@ Properties of block table item
 ## Properties
 
 ### **entries**
-`entries: Map<string, IBlockTableEntryInfo>;`
+`entries?: Map<string, IBlockTableEntryInfo>;`
 
 Map of block entries in the block table.
 
 Type: *Map<string, IBlockTableEntryInfo>*
 
 ### **hiddenLabel**
-`hiddenLabel: boolean;`
+`hiddenLabel?: boolean;`
 
 If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
 ### **onOperationClick**
-`onOperationClick: (block: string, operation: BlockTableOperationType) => void;`
+`onOperationClick?: () => void;`
 
 This callback is called when UI control operation is selected from the UI.
 
-Type: *(block: string, operation: BlockTableOperationType) => void*
+Type: () => void
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item.
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: LocalizedString;`
+`tooltip?: LocalizedString;`
 
 Tooltip description of the property item.
 

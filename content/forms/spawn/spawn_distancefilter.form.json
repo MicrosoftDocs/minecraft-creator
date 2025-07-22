@@ -1,0 +1,20 @@
+{
+  "id": "Spawn DistanceFilter",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Spawn DistanceFilter",
+    "title": "Spawn DistanceFilter Spawn",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": 0
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": 0
+      }
+    ]
+  }
+}

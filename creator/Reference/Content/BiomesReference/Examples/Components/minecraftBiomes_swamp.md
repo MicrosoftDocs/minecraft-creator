@@ -17,8 +17,9 @@ Used to add decoration to the surface of swamp biomes such as water lilies.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | foundation_material | *not set* | Object | Controls the block type used deep underground in this biome. |  | 
+| max_puddle_depth_below_sea_level | *not set* | Integer number | Controls the depth at which surface level blocks can be replaced with water for puddles. The number represents the number of blocks (0, 127) below sea level that we will go down to look for a surface block. Value must be <= 127. |  | 
 | mid_material | *not set* | Object | Controls the block type used in a layer below the surface of this biome. |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur. |  | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur. Value must be <= 127. |  | 
 | sea_floor_material | *not set* | Object | Controls the block type used as a floor for bodies of water in this biome. |  | 
 | sea_material | *not set* | Object | Controls the block type used for the bodies of water in this biome. |  | 
 | top_material | *not set* | Object | Controls the block type used for the surface of this biome. |  | 

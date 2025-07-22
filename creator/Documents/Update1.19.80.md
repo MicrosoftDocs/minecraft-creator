@@ -4,17 +4,18 @@ ms.author: kakinnun
 title: 1.19.80 Update Notes
 description: Update summary of Creator changes in Bedrock 1.19.80
 ms.service: minecraft-bedrock-edition
+ms.date: 04/26/2023
 ---
 # Minecraft Bedrock 1.19.80 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.19.80 and there are a number of changes of note for add-on creators.
+Minecraft Bedrock has been updated to 1.19.80 and there are a number of changes of note for creators.
 
 ## Holiday Creator Features ##
 
 No existing Holiday Creator Features left experimental this release. But two new components were added, replacing previous Holiday Creator Features.
 
 - [transformation](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_transformation.md) - replaces the previous block rotation component (and adds scaling and translation)
-- [bone_visibility](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_geometry.md#bone_visibility) - added to the geometry component and replaces the previous part_visibility component
+- [bone_visibility](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_geometry.md) - added to the geometry component and replaces the previous part_visibility component
 
 ## Components ##
 
@@ -32,7 +33,7 @@ Added a new [transformation](../Reference/Content/BlockReference/Examples/BlockC
 
 **bone_visibility**
 
-Added a new [bone_visibility](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_geometry.md#bone_visibility) element to the block geometry component.
+Added a new [bone_visibility](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_geometry.md) element to the block geometry component.
 
 ## Commands ##
 
@@ -79,18 +80,18 @@ A second set of Creator APIs have been released out of beta and into stable (see
 
 **APIs included in the @minecraft/server version 1.1.0 release:**
 
- - [Vector3](../ScriptAPI/minecraft/server/Vector3.md)
+ - [Vector3](../PriorScriptAPI/minecraft/server-1xx/Vector3.md)
  - System
-    - [runTimeout](../ScriptAPI/minecraft/server/System.md#runtimeout)
-    - [runInterval](../ScriptAPI/minecraft/server/System.md#runinterval)
-    - [clearRun](../ScriptAPI/minecraft/server/System.md#clearrun)
-    - [currentTick](../ScriptAPI/minecraft/server/System.md#currenttick)
+    - [runTimeout](../PriorScriptAPI/minecraft/server-1xx/System.md#runtimeout)
+    - [runInterval](../PriorScriptAPI/minecraft/server-1xx/System.md#runinterval)
+    - [clearRun](../PriorScriptAPI/minecraft/server-1xx/System.md#clearrun)
+    - [currentTick](../PriorScriptAPI/minecraft/server-1xx/System.md#currenttick)
  - Reading Basic Block properties
-     - [BlockPermutation](../ScriptAPI/minecraft/server/BlockPermutation.md)  (only a subset)
-     - [Block](../ScriptAPI/minecraft/server/Block.md)
-     - [getBlock](../ScriptAPI/minecraft/server/Dimension.md#getblock)
+     - [BlockPermutation](../PriorScriptAPI/minecraft/server-1xx/BlockPermutation.md)  (only a subset)
+     - [Block](../PriorScriptAPI/minecraft/server-1xx/Block.md)
+     - [getBlock](../PriorScriptAPI/minecraft/server-1xx/Dimension.md#getblock)
  - Basic messaging
-     - [sendMessage](../ScriptAPI/minecraft/server/Player.md#sendmessage)
+     - [sendMessage](../PriorScriptAPI/minecraft/server-1xx/Player.md#sendmessage)
 
 Beta APIs will continue to be developed behind the Beta API experimental flag so if you want to use those, make sure you have that flag enabled and your manifest.json references will need to update to 1.2.0-beta. Read more about [script versioning](ScriptVersioning.md).
 

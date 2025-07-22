@@ -94,13 +94,13 @@ Gets the list of item Ids that will target liquid blocks with aim-assist when be
 
 ### **setExcludedTargets**
 `
-setExcludedTargets(targets: (keyof typeof minecraftvanilladata.MinecraftBlockTypes | keyof typeof minecraftvanilladata.MinecraftEntityTypes | string)[]): void
+setExcludedTargets(targets?: (minecraftvanilladata.MinecraftBlockTypes | minecraftvanilladata.MinecraftEntityTypes | string)[]): void
 `
 
 Sets the list of block/entity Ids to exclude from aim assist targeting.
 
 #### **Parameters**
-- **targets**: *(keyof typeof minecraftvanilladata.MinecraftBlockTypes | keyof typeof minecraftvanilladata.MinecraftEntityTypes | string)[]*
+- **targets**?: (*minecraftvanilladata.MinecraftBlockTypes* | *minecraftvanilladata.MinecraftEntityTypes* | *string*)[]
   
   An array of block/entity Ids.
 
@@ -128,13 +128,13 @@ Notes:
 
 ### **setLiquidTargetingItems**
 `
-setLiquidTargetingItems(items: (keyof typeof minecraftvanilladata.MinecraftItemTypes | string)[]): void
+setLiquidTargetingItems(items?: (minecraftvanilladata.MinecraftItemTypes | string)[]): void
 `
 
 Sets the list of item Ids that will target liquid blocks with aim-assist when being held.
 
 #### **Parameters**
-- **items**: *(keyof typeof minecraftvanilladata.MinecraftItemTypes | string)[]*
+- **items**?: (*minecraftvanilladata.MinecraftItemTypes* | *string*)[]
   
   An array of item Ids.
 

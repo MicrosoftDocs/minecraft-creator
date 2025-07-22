@@ -14,7 +14,7 @@ Represents a stateful value that can be observed by different objects.
 ## Properties
 
 ### **validator**
-`read-only validator: ObservableValidator<T>;`
+`read-only validator?: ObservableValidator<T>;`
 
 Optional validator that will pre-process the new value.
 

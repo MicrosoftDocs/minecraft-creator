@@ -10,7 +10,7 @@
         "id": "block",
         "title": "Block",
         "description": "The block to match against.",
-        "dataType": 2,
+        "dataType": 16,
         "isRequired": true
       },
       {

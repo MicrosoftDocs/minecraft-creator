@@ -17,35 +17,35 @@ Optional properties for Bool property item
 ## Properties
 
 ### **hiddenLabel**
-`hiddenLabel: boolean;`
+`hiddenLabel?: boolean;`
 
 If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
 ### **onChange**
-`onChange: (newValue: boolean, oldValue: boolean) => void;`
+`onChange?: () => void;`
 
 This callback is called when UI control value is changed.
 
-Type: *(newValue: boolean, oldValue: boolean) => void*
+Type: () => void
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the text item.
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: BasicTooltipContent;`
+`tooltip?: BasicTooltipContent;`
 
 Tooltip description of the property item
 
 Type: *BasicTooltipContent*
 
 ### **variant**
-`variant: BoolPropertyItemVariant;`
+`variant?: BoolPropertyItemVariant;`
 
 Determines how we display bool as a UI element. If undefined, it will default to Checkbox.
 

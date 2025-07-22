@@ -141,7 +141,7 @@ In the [guide to creating new entity types](IntroductionToAddEntity.md), we crea
 
 ![Animation controls in Blockbench](Media/EntityModeling/animation.png)
 
-Simple animations can be created in the text editor, but for more complex, keyframe-based animations, Blockbench makes this easier. Open the model and switch to the **Animate** tab in the top-right corner. Create a new animation in the **Animations** panel on the left side and name it `animation.robot.sway`. You can also choose a longer name or include a namespace to ensure compatibility with other addons. But please keep in mind that animation identifiers only support snake_case, strings and dots, but not colons or dashes.
+Simple animations can be created in the text editor, but for more complex, keyframe-based animations, Blockbench makes this easier. Open the model and switch to the **Animate** tab in the top-right corner. Create a new animation in the **Animations** panel on the left side and name it `animation.robot.sway`. You can also choose a longer name or include a namespace to ensure compatibility with other Add-Ons. But please keep in mind that animation identifiers only support snake_case, strings and dots, but not colons or dashes.
 
 Once you have set up the animation, you can start animating. Select the root bone of your entity. Move your time cursor in the timeline to 0 seconds and click the plus icon next to Rotation. This will create a new keyframe at the new position. Now move the cursor to about 0.2 seconds. Select the rotate tool and rotate the whole robot to the left slightly. This will automatically generate a new keyframe. On the left side of the screen, you can see the values. Rotate it to about 10 degrees.
 

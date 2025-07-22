@@ -119,6 +119,12 @@
               "content": 0.8
             }
           ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 1
+            }
+          ],
           "/vanilla/behavior_pack/entities/cow.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
@@ -289,12 +295,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
               "content": 1.25
-            }
-          ],
-          "/vanilla/behavior_pack/entities/parrot.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 1
             }
           ],
           "/vanilla/behavior_pack/entities/pig.json": [
@@ -512,6 +512,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
               "content": 0.98
+            }
+          ],
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:collision_box/",
+              "content": 0.875
             }
           ],
           "/vanilla/behavior_pack/entities/cow.json": [
@@ -869,6 +875,15 @@
           "content": {
             "width": 0.98,
             "height": 0.7
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:collision_box/",
+          "content": {
+            "width": 0.875,
+            "height": 1
           }
         }
       ],

@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.CustomCommandErrorReason Enumeration
 description: Contents of the @minecraft/server.CustomCommandErrorReason enumeration.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # CustomCommandErrorReason Enumeration
-
-> [!CAUTION]
-> This enum is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Reason why custom command registration failed.
 

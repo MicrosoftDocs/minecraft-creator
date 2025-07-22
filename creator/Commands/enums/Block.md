@@ -62,6 +62,8 @@ Piston Arm Collision
 Fence Gate
 - `fence_gate`
 Fence Gate
+- `minecraft:birch_shelf`
+- `birch_shelf`
 - `minecraft:powder_snow`
 Powder Snow
 - `powder_snow`
@@ -98,6 +100,8 @@ Jungle Button
 Spruce Stairs
 - `spruce_stairs`
 Spruce Stairs
+- `minecraft:acacia_shelf`
+- `acacia_shelf`
 - `minecraft:diorite`
 - `diorite`
 - `minecraft:pale_oak_fence_gate`
@@ -510,6 +514,8 @@ Hardened Clay
 Stripped Jungle Log
 - `stripped_jungle_log`
 Stripped Jungle Log
+- `minecraft:oxidized_copper_golem_statue`
+- `oxidized_copper_golem_statue`
 - `minecraft:light_block_9`
 - `light_block_9`
 - `minecraft:light_block_8`
@@ -808,6 +814,8 @@ Brown Glazed Terracotta
 Brown Glazed Terracotta
 - `minecraft:waxed_copper_trapdoor`
 - `waxed_copper_trapdoor`
+- `minecraft:spruce_shelf`
+- `spruce_shelf`
 - `minecraft:resin_brick_double_slab`
 - `resin_brick_double_slab`
 - `minecraft:oxidized_copper`
@@ -856,8 +864,12 @@ Cobblestone
 - `horn_coral`
 - `minecraft:yellow_concrete`
 - `yellow_concrete`
+- `minecraft:mangrove_shelf`
+- `mangrove_shelf`
 - `minecraft:cyan_carpet`
 - `cyan_carpet`
+- `minecraft:warped_shelf`
+- `warped_shelf`
 - `minecraft:oak_double_slab`
 - `oak_double_slab`
 - `minecraft:smooth_sandstone_stairs`
@@ -1014,6 +1026,8 @@ Crimson Door
 Mangrove Pressure Plate
 - `mangrove_pressure_plate`
 Mangrove Pressure Plate
+- `minecraft:jungle_shelf`
+- `jungle_shelf`
 - `minecraft:jungle_slab`
 - `jungle_slab`
 - `minecraft:light_blue_stained_glass_pane`
@@ -1090,6 +1104,8 @@ Cracked Deepslate Tiles
 Mangrove Wood
 - `mangrove_wood`
 Mangrove Wood
+- `minecraft:waxed_exposed_copper_golem_statue`
+- `waxed_exposed_copper_golem_statue`
 - `minecraft:red_glazed_terracotta`
 Red Glazed Terracotta
 - `red_glazed_terracotta`
@@ -1178,6 +1194,8 @@ Coal Ore
 - `mossy_stone_brick_double_slab`
 - `minecraft:cut_red_sandstone_double_slab`
 - `cut_red_sandstone_double_slab`
+- `minecraft:bamboo_shelf`
+- `bamboo_shelf`
 - `minecraft:redstone_ore`
 Redstone Ore
 - `redstone_ore`
@@ -1266,6 +1284,8 @@ Basalt
 Lit Redstone Lamp
 - `lit_redstone_lamp`
 Lit Redstone Lamp
+- `minecraft:copper_golem_statue`
+- `copper_golem_statue`
 - `minecraft:diamond_ore`
 Diamond Ore
 - `diamond_ore`
@@ -1306,6 +1326,8 @@ Sculk Sensor
 Sculk Sensor
 - `minecraft:copper_bulb`
 - `copper_bulb`
+- `minecraft:oak_shelf`
+- `oak_shelf`
 - `minecraft:diorite_stairs`
 Diorite Stairs
 - `diorite_stairs`
@@ -1504,6 +1526,8 @@ Red Candle
 Cut Copper
 - `cut_copper`
 Cut Copper
+- `minecraft:waxed_weathered_copper_golem_statue`
+- `waxed_weathered_copper_golem_statue`
 - `minecraft:iron_ore`
 Iron Ore
 - `iron_ore`
@@ -1602,6 +1626,8 @@ Jukebox
 Jigsaw
 - `jigsaw`
 Jigsaw
+- `minecraft:waxed_oxidized_copper_golem_statue`
+- `waxed_oxidized_copper_golem_statue`
 - `minecraft:prismarine_wall`
 - `prismarine_wall`
 - `minecraft:border_block`
@@ -1670,6 +1696,8 @@ Oxidized Cut Copper Slab
 Oxidized Cut Copper Slab
 - `minecraft:horn_coral_block`
 - `horn_coral_block`
+- `minecraft:dark_oak_shelf`
+- `dark_oak_shelf`
 - `minecraft:beetroot`
 Beetroot
 - `beetroot`
@@ -1966,6 +1994,8 @@ Sea Pickle
 Sea Pickle
 - `minecraft:cherry_standing_sign`
 - `cherry_standing_sign`
+- `minecraft:pale_oak_shelf`
+- `pale_oak_shelf`
 - `minecraft:brown_concrete_powder`
 - `brown_concrete_powder`
 - `minecraft:mangrove_hanging_sign`
@@ -2078,6 +2108,8 @@ Reeds
 Reeds
 - `minecraft:black_shulker_box`
 - `black_shulker_box`
+- `minecraft:weathered_copper_golem_statue`
+- `weathered_copper_golem_statue`
 - `minecraft:jungle_sapling`
 - `jungle_sapling`
 - `minecraft:chiseled_sandstone`
@@ -2668,6 +2700,8 @@ Mangrove Button
 Lantern
 - `lantern`
 Lantern
+- `minecraft:crimson_shelf`
+- `crimson_shelf`
 - `minecraft:waxed_weathered_copper_door`
 - `waxed_weathered_copper_door`
 - `minecraft:red_stained_glass_pane`
@@ -2690,6 +2724,8 @@ Allow
 Birch Door
 - `birch_door`
 Birch Door
+- `minecraft:cherry_shelf`
+- `cherry_shelf`
 - `minecraft:chest`
 Chest
 - `chest`
@@ -2912,6 +2948,8 @@ Dark Prismarine Stairs
 - `chiseled_tuff_bricks`
 - `minecraft:light_blue_concrete`
 - `light_blue_concrete`
+- `minecraft:exposed_copper_golem_statue`
+- `exposed_copper_golem_statue`
 - `minecraft:red_tulip`
 - `red_tulip`
 - `minecraft:trip_wire`
@@ -3178,6 +3216,8 @@ Deepslate Diamond Ore
 Grindstone
 - `grindstone`
 Grindstone
+- `minecraft:waxed_copper_golem_statue`
+- `waxed_copper_golem_statue`
 - `minecraft:light_gray_wool`
 - `light_gray_wool`
 - `minecraft:soul_campfire`

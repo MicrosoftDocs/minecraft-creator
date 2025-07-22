@@ -11,7 +11,7 @@ ms.service: minecraft-bedrock-edition
 A file extension is the series of letters after the period in a name of a computer file. File extensions specify the program or programs the file is associated with. In Minecraft: Bedrock Edition, many extensions begin with '.mc,' as detailed below.
 
 ## .mcaddon
-A zip file that contains .mcpack or .mcworld files to modify Minecraft (Bedrock Edition); generally used to distribute add-ons to other users.
+A zip file that contains .mcpack or .mcworld files to modify Minecraft (Bedrock Edition); generally used to distribute Add-Ons to other users.
 
 ## .mcmeta
 A custom resource pack configuration file.

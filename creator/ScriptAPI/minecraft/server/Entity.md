@@ -128,7 +128,6 @@ Returns whether the entity can be manipulated by script. A Player is considered 
 
 Type: *boolean*
 
-::: moniker range="=minecraft-bedrock-experimental"
 ### **localizationKey**
 `read-only localizationKey: string;`
 
@@ -136,13 +135,9 @@ Key for the localization of this entity's name used in .lang files.
 
 Type: *string*
 
-> [!CAUTION]
-> This property is still in pre-release.  Its signature may change or it may be removed in future releases.
-
 Notes:
   - This property can throw errors when used.
     - Throws [*InvalidEntityError*](InvalidEntityError.md)
-::: moniker-end
 
 ### **location**
 `read-only location: Vector3;`
@@ -608,7 +603,7 @@ Notes:
 
 ### **getComponent**
 `
-getComponent(componentId: T): EntityComponentReturnType<T> | undefined
+getComponent(componentId: T): EntityComponentReturnType<T> | void
 `
 
 Gets a component (that represents additional capabilities) for an entity.
@@ -618,7 +613,7 @@ Gets a component (that represents additional capabilities) for an entity.
   
   The identifier of the component (e.g., 'minecraft:health'). If no namespace prefix is specified, 'minecraft:' is assumed. Available component IDs can be found as part of the [*@minecraft/server.EntityComponentTypes*](../../../scriptapi/minecraft/server/EntityComponentTypes.md) enum.
 
-**Returns** *EntityComponentReturnType<T> | undefined* - Returns the component if it exists on the entity, otherwise undefined.
+**Returns** *EntityComponentReturnType<T>* | *void* - Returns the component if it exists on the entity, otherwise undefined.
   
 Notes:
 - This function can throw errors.

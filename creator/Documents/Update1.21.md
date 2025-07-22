@@ -4,10 +4,11 @@ ms.author: kakinnun
 title: 1.21 Update Notes
 description: Update summary of Creator changes in Bedrock 1.21
 ms.service: minecraft-bedrock-edition
+ms.date: 07/17/2025
 ---
 # Minecraft Bedrock 1.21 Update Notes for Creators
 
-Minecraft Bedrock has been updated to 1.21 and there are a number of changes of note for Add-On creators. The following features do not require experimental toggles.
+Minecraft Bedrock has been updated to 1.21 and there are a number of changes of note for creators. The following features do not require experimental toggles.
 
 ## Blocks 
 - **Transform pivot point** - We added an additional pivot point attribute to the block transformation component to facilitate rotation and scale operations. More information is available in the [minecraft:transformation](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_transformation.md) reference documentation.

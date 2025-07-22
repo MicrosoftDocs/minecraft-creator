@@ -49,7 +49,7 @@ Binds a property pane to the tool. When the tool is selected, the pane's visibil
 
 ### **registerKeyBinding**
 `
-registerKeyBinding(action: SupportedKeyboardActionTypes, binding: KeyBinding, info: KeyBindingInfo): IRegisteredKeyBinding
+registerKeyBinding(action: SupportedKeyboardActionTypes, binding: KeyBinding, info?: KeyBindingInfo): IRegisteredKeyBinding
 `
 
 Register a key press binding for an action which will be handled by the tool input context.
@@ -61,7 +61,7 @@ Register a key press binding for an action which will be handled by the tool inp
 - **binding**: *KeyBinding*
   
   Keyboard binding to invoke action.
-- **info**: *KeyBindingInfo*
+- **info**?: *KeyBindingInfo*
   
   Additional information about key binding.
 

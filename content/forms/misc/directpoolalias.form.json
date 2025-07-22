@@ -17,7 +17,7 @@
         "id": "target",
         "title": "Target",
         "description": "Target pool",
-        "dataType": 2,
+        "dataType": 16,
         "isRequired": true
       }
     ]

@@ -1,0 +1,186 @@
+{
+  "id": "Spawn BiomeConditions",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Spawn BiomeConditions",
+    "title": "Spawn BiomeConditions Spawn",
+    "fields": [
+      {
+        "id": "minecraft:biome_filter",
+        "title": "Minecraft Biome Filter",
+        "description": "Filters allow data objects to specify test criteria which allows their use. Filters can be defined by a single object of type (Filter Test), an array of tests, collection groups, or a combination of these objects.",
+        "dataType": 16,
+        "subForm": {
+          "id": "minecraft:biome_filter",
+          "title": "Biome Filter",
+          "fields": [
+            {
+              "id": "domain",
+              "title": "Domain",
+              "description": "The domain the test should be performed in.",
+              "dataType": 16
+            },
+            {
+              "id": "operator",
+              "title": "Operator",
+              "description": "The comparison to apply with 'value'.",
+              "dataType": 16
+            },
+            {
+              "id": "subject",
+              "title": "Subject",
+              "description": "The subject of this filter test.",
+              "dataType": 16
+            },
+            {
+              "id": "test",
+              "title": "Test",
+              "description": "The name of the test to apply.",
+              "dataType": 2,
+              "isRequired": true
+            },
+            {
+              "id": "value",
+              "title": "Value",
+              "description": "The value being compared with the test.",
+              "dataType": 16
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "minecraft:biome_filter",
+            "dataType": 16
+          }
+        ]
+      },
+      {
+        "id": "minecraft:brightness_filter",
+        "title": "Minecraft Brightness Filter",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_brightnessfilter"
+      },
+      {
+        "id": "minecraft:delay_filter",
+        "title": "Minecraft Delay Filter",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_delayfilter"
+      },
+      {
+        "id": "minecraft:density_limit",
+        "title": "Minecraft Density Limit",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_densitylimit"
+      },
+      {
+        "id": "minecraft:difficulty_filter",
+        "title": "Minecraft Difficulty Filter",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_difficultyfilter"
+      },
+      {
+        "id": "minecraft:disallow_spawns_in_bubble",
+        "title": "Minecraft Disallow Spawns In Bubble",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:distance_filter",
+        "title": "Minecraft Distance Filter",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_distancefilter"
+      },
+      {
+        "id": "minecraft:height_filter",
+        "title": "Minecraft Height Filter",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_heightfilter"
+      },
+      {
+        "id": "minecraft:herd",
+        "title": "Minecraft Herd",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:is_experimental",
+        "title": "Minecraft Is Experimental",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:is_persistent",
+        "title": "Minecraft Is Persistent",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:mob_event_filter",
+        "title": "Minecraft Mob Event Filter",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_mobeventfilter"
+      },
+      {
+        "id": "minecraft:permute_type",
+        "title": "Minecraft Permute Type",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:player_in_village_filter",
+        "title": "Minecraft Player In Village Filter",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_playerinvillagefilter"
+      },
+      {
+        "id": "minecraft:spawn_event",
+        "title": "Minecraft Spawn Event",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_mobeventfilter"
+      },
+      {
+        "id": "minecraft:spawns_above_block_filter",
+        "title": "Minecraft Spawns Above Block Filter",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_spawnaboveblockfilter"
+      },
+      {
+        "id": "minecraft:spawns_lava",
+        "title": "Minecraft Spawns Lava",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:spawns_on_block_filter",
+        "title": "Minecraft Spawns On Block Filter",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:spawns_on_block_prevented_filter",
+        "title": "Minecraft Spawns On Block Prevented Filter",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:spawns_on_surface",
+        "title": "Minecraft Spawns On Surface",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:spawns_underground",
+        "title": "Minecraft Spawns Underground",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:spawns_underwater",
+        "title": "Minecraft Spawns Underwater",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:weight",
+        "title": "Minecraft Weight",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_weight"
+      },
+      {
+        "id": "minecraft:world_age_filter",
+        "title": "Minecraft World Age Filter",
+        "dataType": 16,
+        "subFormId": "spawn/spawn_worldagefilter"
+      }
+    ]
+  }
+}

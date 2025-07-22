@@ -17,35 +17,35 @@ Optional properties for Button property item
 ## Properties
 
 ### **hiddenLabel**
-`hiddenLabel: boolean;`
+`hiddenLabel?: boolean;`
 
 If true label text will be hidden. It will be visible by default.
 
 Type: *boolean*
 
 ### **icon**
-`icon: string;`
+`icon?: string;`
 
 Icon image of the property item.
 
 Type: *string*
 
 ### **title**
-`title: LocalizedString;`
+`title?: LocalizedString;`
 
 Localized title of the property item.
 
 Type: *LocalizedString*
 
 ### **tooltip**
-`tooltip: BasicTooltipContent;`
+`tooltip?: BasicTooltipContent;`
 
 Tooltip description of the property item.
 
 Type: *BasicTooltipContent*
 
 ### **variant**
-`variant: ButtonPropertyItemVariant;`
+`variant?: ButtonPropertyItemVariant;`
 
 The variant for the button. By default it is Primary.
 

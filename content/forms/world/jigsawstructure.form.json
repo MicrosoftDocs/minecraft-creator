@@ -168,7 +168,7 @@
         "id": "start_pool",
         "title": "Start Pool",
         "description": "The first Template Pool to use when generating the Jigsaw Structure.",
-        "dataType": 2,
+        "dataType": 16,
         "isRequired": true
       },
       {

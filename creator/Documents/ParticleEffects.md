@@ -29,7 +29,7 @@ It is recommended that the following be completed before beginning this tutorial
 
 ## Introduction
 
-Particles can greatly enhance the visual experience of a map or add-on, for effects such as exhaust smoke or magic spells. Particles can be used for ambiance effects like falling leaves, or even to place simple 2D graphics in your world.
+Particles can greatly enhance the visual experience of a map or Add-On, for effects such as exhaust smoke or magic spells. Particles can be used for ambiance effects like falling leaves, or even to place simple 2D graphics in your world.
 
 ### Naming and Location
 

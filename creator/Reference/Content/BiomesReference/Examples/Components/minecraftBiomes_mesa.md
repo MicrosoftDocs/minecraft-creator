@@ -22,7 +22,7 @@ Similar to overworld_surface. Adds colored strata and optional pillars.
 | hard_clay_material | *not set* | Object | Hardened clay block to use |  | 
 | has_forest | *not set* | Boolean true/false | Places coarse dirt and grass at high altitudes |  | 
 | mid_material | *not set* | Object | Controls the block type used in a layer below the surface of this biome |  | 
-| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur |  | 
+| sea_floor_depth | *not set* | Integer number | Controls how deep below the world water level the floor should occur Value must be <= 127. |  | 
 | sea_floor_material | *not set* | Object | Controls the block type used as a floor for bodies of water in this biome |  | 
 | sea_material | *not set* | Object | Controls the block type used for the bodies of water in this biome |  | 
 | top_material | *not set* | Object | Controls the block type used for the surface of this biome |  | 

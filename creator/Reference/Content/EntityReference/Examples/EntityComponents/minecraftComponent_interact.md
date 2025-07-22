@@ -18,9 +18,9 @@ Defines interactions with this entity.
 |:----------|:-------------|:----|:-----------|:------------- |
 | cooldown | 0 | Decimal number | Time in seconds before this entity can be interacted with again. |  | 
 | cooldown_after_being_attacked | 0 | Decimal number | Time in seconds before this entity can be interacted with after being attacked. |  | 
-| drop_item_slot | *not set* | String | The entity's slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
+| drop_item_slot | *not set* | String | The entity's slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
 | drop_item_y_offset | 0 | Decimal number | Will offset the item drop position this amount in the y direction. Requires "drop_item_slot" to be specified. |  | 
-| equip_item_slot | *not set* | String | The entity's slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
+| equip_item_slot | *not set* | String | The entity's slot to equip the item to, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
 | health_amount | 0 | Integer number | The amount of health this entity will recover or lose when interacting with this item. Negative values will harm the entity. |  | 
 | hurt_item | 0 | Integer number | The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |  | 
 | interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls. |  | 
@@ -404,6 +404,141 @@ Loot table with items to drop on the ground upon successful interaction.
       "interact_text": "action.interact.removesaddle",
       "play_sounds": "unsaddle",
       "vibration": "shear"
+    }
+  ]
+}
+```
+
+#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
+
+
+```json
+"minecraft:interact": {
+  "interactions": [
+    {
+      "on_interact": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "bool_property",
+              "domain": "minecraft:is_waxed",
+              "value": false
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "has_equipment",
+              "domain": "hand",
+              "subject": "other",
+              "value": "honeycomb"
+            }
+          ]
+        },
+        "event": "minecraft:wax_on"
+      },
+      "use_item": true,
+      "swing": true,
+      "interact_text": "action.interact.wax_on",
+      "particle_on_start": {
+        "copper_event": "wax_on"
+      }
+    },
+    {
+      "on_interact": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "bool_property",
+              "domain": "minecraft:is_waxed",
+              "value": false
+            },
+            {
+              "test": "enum_property",
+              "domain": "minecraft:oxidation_level",
+              "operator": "not",
+              "value": "unoxidized"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "has_equipment_tag",
+              "domain": "hand",
+              "subject": "other",
+              "value": "minecraft:is_axe"
+            }
+          ]
+        },
+        "event": "minecraft:remove_oxidation_layer"
+      },
+      "swing": true,
+      "hurt_item": 1,
+      "interact_text": "action.interact.scrape",
+      "particle_on_start": {
+        "copper_event": "scrape"
+      }
+    },
+    {
+      "on_interact": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "bool_property",
+              "domain": "minecraft:is_waxed",
+              "value": true
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "has_equipment_tag",
+              "domain": "hand",
+              "subject": "other",
+              "value": "minecraft:is_axe"
+            }
+          ]
+        },
+        "event": "minecraft:wax_off"
+      },
+      "swing": true,
+      "hurt_item": 1,
+      "interact_text": "action.interact.wax_off",
+      "particle_on_start": {
+        "copper_event": "wax_off"
+      }
+    },
+    {
+      "on_interact": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "all_slots_empty",
+              "domain": "hand",
+              "operator": "not"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "all_slots_empty",
+              "domain": "hand",
+              "subject": "other"
+            }
+          ]
+        }
+      },
+      "drop_item_slot": "slot.weapon.mainhand",
+      "swing": true,
+      "interact_text": "action.interact.drop_item"
     }
   ]
 }

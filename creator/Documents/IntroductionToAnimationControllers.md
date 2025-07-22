@@ -75,7 +75,7 @@ So we've now created a nice little animation loop that takes the sheep from an i
 
 ![Animation Controller File Structure](Media/IntroToAnimationControllers/animation-controller-structure.png)
 
-To use your new animation controller, we'll place it in the Behavior Pack of your add-on. Create a folder in your Behavior Pack called `animations`. Place your new animation controller file in this folder.
+To use your new animation controller, create a folder in your Behavior Pack called `animations`. Place your new animation controller file in this folder.
 
 > [!IMPORTANT]
 Make sure you define your animation controller under the `modules` section of your `manifest.json` file. See [Introduction to Behavior Packs (from Scratch)](BehaviorPackFromScratch.md#create-the-manifest-file) for more information.

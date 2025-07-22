@@ -1,0 +1,32 @@
+---
+# DO NOT TOUCH — This file was automatically generated. See https://github.com/mojang/minecraftapidocsgenerator to modify descriptions, examples, etc.
+author: jakeshirley
+ms.author: jashir
+ms.service: minecraft-bedrock-edition
+ms.date: 02/10/2025
+title: minecraft/server.PackSettingChangeAfterEvent Class
+description: Contents of the @minecraft/server.PackSettingChangeAfterEvent class.
+monikerRange: "=minecraft-bedrock-experimental"
+---
+# PackSettingChangeAfterEvent Class
+
+> [!CAUTION]
+> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
+
+Pack setting name and value that changed.
+
+## Properties
+
+### **settingName**
+`read-only settingName: string;`
+
+The name of the setting.
+
+Type: *string*
+
+### **settingValue**
+`read-only settingValue: boolean | number;`
+
+The value of the setting.
+
+Type: *boolean* | *number*

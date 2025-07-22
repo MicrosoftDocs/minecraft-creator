@@ -6,12 +6,8 @@ ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
 title: minecraft/server.PlayerInventoryItemChangeAfterEventSignal Class
 description: Contents of the @minecraft/server.PlayerInventoryItemChangeAfterEventSignal class.
-monikerRange: "=minecraft-bedrock-experimental"
 ---
 # PlayerInventoryItemChangeAfterEventSignal Class
-
-> [!CAUTION]
-> This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
 Manages callbacks that are connected after a player's inventory item is changed.
 
