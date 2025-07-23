@@ -349,8 +349,8 @@ The `item_visual` component lets you specify the texture(s) to use when the die 
       "identifier": "demo:die"
     },
     "components": {
-      "minecraft.geometry": "geometry.full_block",
-      "minecraft.material_instances": {
+      "minecraft:geometry": "minecraft:geometry.full_block",
+      "minecraft:material_instances": {
         "north": {
           "texture": "die_3"
         },
@@ -371,6 +371,7 @@ The `item_visual` component lets you specify the texture(s) to use when the die 
         }
       },
       "minecraft:item_visual": {
+      "geometry": "minecraft:geometry.full_block",
       "material_instances": {
         "*": {
           "texture": "die_red",
