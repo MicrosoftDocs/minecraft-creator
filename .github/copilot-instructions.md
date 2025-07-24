@@ -3,13 +3,13 @@ This is a repository of markdown documentation for creators who build add-ons, w
 Markdown documents within `creator/PriorScriptAPI`, `creator/ScriptAPI`, and `creator/Reference` folders are generated from the source code and should not be edited directly.
 
 
-## Contribution Guidlines
+## Contribution Guidelines
 
 Please follow these guidelines when contributing:
 
 ### Form JSON content
 
-A lot of the content that is ultimately used to build content is in the `content` folder. This content is in JSON format, and is used to generate the documentation. The Schema of the JSON format is based on the Minecraft Creator Tools TypeScript definitions - see `docs/dataform/IDataForm.ts` for the TypeScript definition of the JSON format used for the documentation.  Per the notes in IDataForm.ts, do not edit any data in the generated_doNotEdit or generatedSchema_doNotEdit sub nodes of those JSON Files.
+A lot of the content that is ultimately used to build content is in the `content` folder. This content is in JSON format, and is used to generate the documentation. The Schema of the JSON format is based on the Minecraft Creator Tools TypeScript definitions - see `docs/dataform/IFormDefinition.ts` for the TypeScript definition of the JSON format used for the documentation.  Per the notes in IDataForm.ts, do not edit any data in the generated_doNotEdit or generatedSchema_doNotEdit sub nodes of those JSON Files.
 
 ### Markdown content
 
@@ -27,5 +27,3 @@ Minecraft Creator Tools has some additional content and knowledge that might be 
 If document files are moved, you should edit the .openpublishing.redirection.json file(s) to add redirects as necessary.
 
 New documents should have entries in the table of contents, either in the root TOC.yml at `creator/TOC.yml`, and/or in one of the more localized table of content TOC.yml files in a subfolder of `creator`.
-
-Creating content for Minecraft is awesome, and we hope it's a lot of fun for folks to learn and create. We should reflect that tone in our documentation - authentically energetic, positive, and fun.
