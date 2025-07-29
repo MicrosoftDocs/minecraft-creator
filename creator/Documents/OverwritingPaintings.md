@@ -25,7 +25,7 @@ In this tutorial, you'll learn:
 > - How to create a resource pack that adds your custom painting(s).
 
 
-## Bedrock Samples Repository
+## The bedrock-samples repository
 
 There is a public GitHub repository that contains the latest resource and behavior examples for creating add-ons for Minecraft: Bedrock Edition. The [bedrock-samples](https://github.com/Mojang/bedrock-samples/tree/main) repository contains the source of those files, with all the values for vanilla Minecraft assets.
 
