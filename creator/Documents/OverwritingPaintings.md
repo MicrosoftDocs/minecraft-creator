@@ -37,12 +37,12 @@ It's recommended you complete the following tuorials before beginning this tutor
 > [!div class="checklist"]
 >
 > - [Getting Started with Add-On Development](GettingStarted.md)
-> - [Introduction to Resource Packs](../resourcepack.md)
+> - [Introduction to Resource Packs](./ResourcePack.md)
 
 
 ## Building the Resource Pack
 
-For Minecraft to find and use your resource files, you must set up the folders and files in a specific way. Check out [Introduction to Resource Packs](../resourcepack.md) for a guide on creating and structuring your resource pack if you don't already know how to.
+For Minecraft to find and use your resource files, you must set up the folders and files in a specific way. Check out [Introduction to Resource Packs](./ResourcePack.md) for a guide on creating and structuring your resource pack if you don't already know how to.
 
 
 ## Overwriting older paintings
@@ -145,6 +145,6 @@ Now that you know how to overwrite vanilla files, you're ready to learn more abo
 
 > [!div class="nextstepaction"]
 >
-> - [Create a Custom Die Block](../AddCustomDieBlock.md)
-> - [Create a Sushi Block](../advancedcustomblocks.md)
-> - [Create an Animated Block Texture](../createanimatedblocktexture.md)
+> - [Create a Custom Die Block](./AddCustomDieBlock.md)
+> - [Create a Sushi Block](./AdvancedCustomBlocks.md)
+> - [Create an Animated Block Texture](./CreateAnimatedBlockTexture.md)
