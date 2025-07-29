@@ -120,7 +120,7 @@ Newer paintings have their own files in [bedrock-samples](https://github.com/Moj
 |Baroque|:::image type="content" source="Media/OverwritingPaintings/baroque.png" alt-text="Baroque painting":::|baroque.png|32x32|
 |Humble|:::image type="content" source="Media/OverwritingPaintings/humble.png" alt-text="Humble painting":::|humble.png|32x32|
 |Meditative|:::image type="content" source="Media/OverwritingPaintings/meditative.png" alt-text="Meditative painting":::|meditative.png|16x16|
-|Prarie_Ride|:::image type="content" source="Media/OverwritingPaintings/prarie_ride.png" alt-text="Prarie ride painting":::|prarie_ride.png|16x32|
+|Prairie_Ride|:::image type="content" source="Media/OverwritingPaintings/prairie_ride.png" alt-text="Prairie ride painting":::|prairie_ride.png|16x32|
 |Unpacked|:::image type="content" source="Media/OverwritingPaintings/unpacked.png" alt-text="Unpacked painting":::|unpacked.png|64x64|
 |Backyard|:::image type="content" source="Media/OverwritingPaintings/backyard.png" alt-text="Backyard painting":::|backyard.png|48x64|
 |Bouquet|:::image type="content" source="Media/OverwritingPaintings/bouquet.png" alt-text="Bouquet painting":::|bouquet.png|48x48|
