@@ -13,7 +13,7 @@ Now that you know how to use a Resource Pack to make an add-on for Minecraft: Be
 
 To allow new paintings into the game without breaking backwards compatibility for Bedrock Creators, we made the process pretty simple&mdash;just overwrite a vanilla painting's image file with the image you want to see instead.
 
-Paintings are randomly called based on their size and the amount of space available on the wall you're placing them on. There's currently no way to guarantee the painting you place will show your custom image unless you overwrite all the image files associated with paintings of that size. Otherwise, in game you may need to place and remove a painting multiple times in game before you get your custom painting.
+Paintings are randomly called based on their size and the amount of space available on the wall you're placing them on. There's currently no way to guarantee the painting you place will show your custom image unless you overwrite all the image files associated with paintings of that size. Otherwise, you may need to place and remove a painting multiple times in game before you get your custom painting.
 
 
 In this tutorial, you'll learn:
@@ -32,7 +32,7 @@ There is a public GitHub repository that contains the latest resource and behavi
 
 ## Requirements
 
-It's recommended you complete the following tuorials before beginning this tutorial.
+It's recommended you complete the following tutorials before beginning this guide.
 
 > [!div class="checklist"]
 >
