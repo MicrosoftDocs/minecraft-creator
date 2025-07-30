@@ -1326,6 +1326,8 @@
       href: minecraft/server-editor/IColorTimelinePropertyItemOptions.md
     - name: IComboBoxPropertyItem
       href: minecraft/server-editor/IComboBoxPropertyItem.md
+    - name: IComboBoxPropertyItemEntry
+      href: minecraft/server-editor/IComboBoxPropertyItemEntry.md
     - name: IComboBoxPropertyItemOptions
       href: minecraft/server-editor/IComboBoxPropertyItemOptions.md
     - name: IDataTablePropertyItem
