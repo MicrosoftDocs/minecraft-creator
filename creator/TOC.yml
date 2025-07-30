@@ -86,6 +86,8 @@
           items:
             - name: Create a Custom Grass Block Resource Pack
               href: Documents/ResourcePack.md
+            - name: Create a Custom Painting
+              href: Documents/OverwritingPaintings.md
             - name: "Next Steps: Create a Custom Die Block"
               href: Documents/AddCustomDieBlock.md
             - name: "Get Fancy: Create a Sushi Block"
