@@ -64,8 +64,8 @@ Most files that define the entity will be JSON files. To avoid confusion, we sug
 |File Type|File Name|
 |:---|:---|
 |Client Entity Files|*entity_name*.entity.json|
-|Model Files|*entity_name*.geo.json
-|Animation Files|*entity_name*.animation.json
+|Model Files|*entity_name*.geo.json|
+|Animation Files|*entity_name*.animation.json|
 |Animation Controllers|*entity_name*.animation_controllers.json|
 |Render Controllers|*entity_name*.render_controllers.json|
 
@@ -213,7 +213,7 @@ Now would be a good time to try the **full robot** resource and behavior packs. 
 
 Components tell the entity how to act in game. Let's add a few components and explain in detail what they do.
 
-In the **behavior pack/entities/** folder, open `robot.json` and replace the single entry of `"minecraft:physics": {} ` with all of this:
+In the **behavior pack/entities/** folder, open `robot.json` and replace the single entry of `"minecraft:physics": {}` with all of this:
 
 ```json
    "components": {

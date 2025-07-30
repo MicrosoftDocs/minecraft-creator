@@ -148,5 +148,4 @@ Now that your development environment is set up, you can start creating your fir
 Alternatively, if you'd like to learn how to use commands, head on over to **Getting Started with Command Blocks** and learn how to use command blocks to chain together different commands.
 
 > [!div class="nextstepaction"]
-
 > [Getting Started with Command Blocks](CommandBlocks.md)

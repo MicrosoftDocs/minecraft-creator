@@ -7,7 +7,7 @@ ms.service: minecraft-bedrock-edition
 ms.date: 05/05/2025
 ---
 
-# Custom Blocks: Geometry and Material Instances
+# Advanced Custom Blocks
 
 In this tutorial, you will learn more about custom block components, including:
 
@@ -20,9 +20,9 @@ In this tutorial, you will learn more about custom block components, including:
 
 If you haven't completed the [How to Add a Simple Custom Block](AddCustomDieBlock.md) tutorial yet, it's recommended you do that before starting this one.
 
-We've already created a cool die block that you can make with the fewest number of files and JSON, so let's explore the exciting possibilities that are offered by the behavior pack JSON components: **geometry** and **material_instances**!
+We've already created a cool die block that you can make with the fewest number of files and JSON, so let's explore the exciting possibilities that are offered by the Behavior Pack JSON components: **geometry** and **material_instances**!
 
-## Creating custom blocks with resource and behavior packs
+## Creating custom blocks with Resource and Behavior Packs
 
 > [!VIDEO https://www.youtube.com/embed/eUFuDkyTom8]
 *For extra help, follow along with this video!*

@@ -9,7 +9,7 @@ ms.date: 4/21/2025
 
 # NPC Dialogue Command
 
-![NPC Dialogue Intro](Media\NPCs\NPCDialogueIntro.PNG)
+![NPC Dialogue Intro](./Media/NPCs/NPCDialogueIntro.png)
 
 Branching Dialogue lets creators craft dynamic non-player character (NPC) dialogue scripts that can provide updated dialogue based on a player's in-game actions or responses.
 
@@ -22,26 +22,22 @@ In this guide, you will learn:
 > - How to use the NPC Dialogue Command.
 > - How and why you'd create dialogue scene JSON files for dialogue options.
 
-## Requirements
+If you haven't completed the [Create a Custom NPC](CreateNPCs.md) tutorial yet, you should do that before following this guide. For best results, when creating your NPC, name them "Ducky".
 
-We strongly suggest that the following tutorial be completed before reviewing this guide. For best results, when creating your NPC, name them 'Ducky'.
-
-- [Create a Custom NPC](CreateNPCs.md)
-
-### NPC Dialogue Sample Behavior Pack
+## NPC dialogue sample behavior pack
 
 There is a [sample NPC dialogue behavior pack](https://github.com/microsoft/minecraft-samples/tree/main/npc_dialogue_sample) available at the Minecraft Samples GitHub. You can use it to check your work after using this tutorial.
 
-## Creating NPC Dialogue
+## Creating NPC dialogue
 
-We will be building on the [Create a Custom NPC tutorial](CreateNPCs.md) to create custom dialogue for that character. We will create a `dialogue` folder that contain a `scene.json` file in a behavior pack.
+We'll build on the [Create a Custom NPC tutorial](CreateNPCs.md) to create custom dialogue for that character. To start, we need to create a **dialogue** folder that contains a **scene.json** file in a behavior pack.
 
-![NPC Dialogue behavior pack folder structure](Media\NPCs\NPCDialogueStructure.PNG)
+![NPC Dialogue behavior pack folder structure](./Media/NPCs/NPCDialogueStructure.png)
 
-The `scene.json` file is located inside the dialogue folder in the root directory of your behavior pack that contains all the information needed for your branching dialogue.
+The **scene.json** file is located inside the dialogue folder in the root directory of your behavior pack that contains all the information needed for your branching dialogue.
 
 > [!NOTE]
-> If you need help finding your **com.mojang folder**, look in the [Getting Started](GettingStarted.md#the-commojang-folder) tutorial. 
+> If you need help finding your **com.mojang** folder, review the [Getting Started](GettingStarted.md#the-commojang-folder) tutorial.
 
 You can create as many scene files as you need. In fact, you can create a scene file for each NPC in your world, or a scene file for each chapter of your narrative, or one scene file for the entire world. The branching dialogue feature reads all of the files in the dialogue folder regardless of how they are organized.
 
@@ -49,7 +45,7 @@ You can create as many scene files as you need. In fact, you can create a scene 
 
 1. Inside your **development_behavior_packs** folder, create a folder and name it **npc_dialogue_behavior_pack**.
 1. Create a folder inside there and name it **dialogue**.
-1. Inside the dialogue folder, create a file and name it `scene.json`.
+1. Inside the dialogue folder, create a file and name it **scene.json**.
 1. Put this content into your **scene.json** file:
 
 ```json
@@ -87,12 +83,9 @@ You can create as many scene files as you need. In fact, you can create a scene 
 }
 ```
 
-The `"scenes"` property is where all of the branching dialogue will live.
-Every new instance of NPC dialogue will require a new scene, which is defined in the scene.json file by creating a `scene_tag`.
-You will use the scene tag in-game to call the text supplied in the scene file. 
-You can also set up NPC buttons and commands that will behave identically as they would if set up using the in-game NPC editor.
+The `"scenes"` property is where all of the branching dialogue will live. Every new instance of NPC dialogue requires a new scene, which is defined in the **scene.json** file by creating a `scene_tag`. Use the scene tag in-game to call the text supplied in the scene file. You can also set up NPC buttons and commands that behave identically as they would if set up using the in-game NPC editor.
 
-### Scene Properties
+### Scene properties
 
 |Name|Type|Description|
 |:----|:----|:----|
@@ -107,17 +100,17 @@ You can also set up NPC buttons and commands that will behave identically as the
 
 You can learn more about the rawtext format here: [Raw Message JSON](../../creator/Reference/Content/RawMessageJson.md)
 
-## Dialogue Command
+## Dialogue command
 
 The Dialogue command enables NPCs to open or read scene files. The command has two distinct modes, each with their own unique purpose and syntax.
 
-### Dialogue Open
+### Dialogue open
 
 `dialogue open` is used to force open an NPC dialogue box to the targeted player(s). This command can be used on any NPC and doesn't require a behavior pack unless you want the NPC to use an optional scene file for its dialogue.
 
 The syntax for `dialogue open` is:
 
-```
+```text
 /dialogue open <npc: target> <player: target> [sceneName:string]
 ```
 
@@ -140,7 +133,7 @@ The first is to initiate an NPC dialogue box without the player interacting dire
 
 The second way `/dialogue open` is used is to create branching dialogue trees using the scene file. By using the `/dialogue open` command inside of an NPCs scene file, the NPC can automatically open the next dialogue box for a player. This is the basis for all dialogue tree branching paths.
 
-### Dialogue Change
+### Dialogue change
 
 `/dialogue change` is used to direct an NPC to use the dialogue provided in a specifically designated scene file.
 The command will instruct the targeted NPC to pull its dialogue from the location designated by the scene tag name.
@@ -148,7 +141,7 @@ The command should be run before the player initiates contact with the NPC.
 
 The syntax for Dialogue open is:
 
-```
+```text
 /dialogue change <npc: target> <sceneName:string> [player: target]
 ```
 
@@ -182,7 +175,7 @@ The NPC you want to trigger the dialog from must exist inside the world, but the
 
 Use the `/tag` command to target an NPC in a scene.
 
-```
+```text
 /tag <entity: target> <add or remove> <name: string>
 ```
 
@@ -194,7 +187,7 @@ Use the `/tag` command to target an NPC in a scene.
 
 `<name: string>` The name given to the NPC.
 
-### Targeting Players
+### Targeting players
 
 When using the `/dialogue` command, there will be times you will need to target players as well. To target players, use player selectors such as @a (all players) or @p (nearest player). Those will typically work well for a single-player experience. If you wish to have per-player scene changes, you will need to use a special target type called **@initiator** (the player interacting with the NPC).
 
@@ -224,7 +217,7 @@ Using this target selector with NPCs allows them to update their dialogue on a p
 
 This is useful for times where a player changing an NPCs dialogue could result in other players missing out on the complete dialogue branch, ensuring each player only receives one item from an NPC, not allowing that same player to return to the NPC for more items, or locking out other players from collecting their items.
 
-### Run the Scene
+### Run the scene
 
 1. Change the game mode to Survival in Settings.
 1. Run the dialogue command while targeting the NPC.

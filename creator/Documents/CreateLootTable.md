@@ -11,9 +11,7 @@ ms.date: 05/05/2025
 
 Loot tables are excellent tools, and creating your own is a big step on your journey as a creator! Following along with the instructions and examples here will help you to learn the process of creating a loot table and get you one step closer to creating the Minecraft world of your dreams.
 
-### Requirements
-
-It's recommended that the following be completed before beginning this tutorial.
+You should be familiar with these concepts before starting this tutorial:
 
 - [Introduction to Loot Tables](IntroductionToLootTables.md)
 - [Loot and Trade Table Functions](LootAndTradeTableFunctions.md)

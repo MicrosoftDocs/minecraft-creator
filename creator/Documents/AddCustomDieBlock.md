@@ -57,7 +57,7 @@ Let's create a custom die block with six different-colored sides that becomes a 
 
 ### Create a Behavior Pack
 
-We'll begin by creating a Bhavior Pack for the custom block:
+We'll begin by creating a Behavior Pack for the custom block:
 
 1. In **File Explorer**, navigate to the **com.mojang** folder.
 

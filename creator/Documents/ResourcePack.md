@@ -26,8 +26,6 @@ In this tutorial, you will learn:
 
 There is a [sample resource pack](https://github.com/microsoft/minecraft-samples/tree/main/resource_pack_sample) available on the Minecraft samples GitHub. This pack may be used to understand the structure of resource packs and to check your work after you complete this tutorial.
 
-## Requirements
-
 It's recommended you complete [Getting Started with Add-On Development](GettingStarted.md) before beginning this tutorial.
 
 ## Building the Resource Pack
@@ -36,7 +34,7 @@ For Minecraft to find and use your resource files, you must set up the folders a
 
 ![Image of resource pack folder and file structure](Media/ResourcePack/resource-pack-structure.png)
 
-### Create a Resource Pack Folder
+### Create a Resource Pack folder
 
 We will start by creating a folder called **My_RESOURCE_Pack**. Technically you can name this folder anything you want, but the other folders have to be named exactly as specified in this tutorial so that Minecraft knows where to find the information.
 
@@ -55,7 +53,7 @@ We will start by creating a folder called **My_RESOURCE_Pack**. Technically you 
 4. Double-click the **My_RESOURCE_Pack** folder to open it.
     ![image of newly created folder with a single Folder called My_RESOURCE_Pack located in the development resource packs folder](Media/ResourcePack/myresourcepack.png)
 
-### Create a Manifest File
+### Create a manifest file
 
 To load a resource pack into Minecraft, we need a manifest file. The manifest file is a JSON file that contains the following information:
 
@@ -109,7 +107,7 @@ A Universally Unique Identifier (UUID) is a unique number used for identificatio
 1. Copy and paste the new UUID into the modules section in the `"uuid"` field between the quotation marks.
 1. Save the manifest.json file.
 
-## Changing the Dirt Block
+## Changing the dirt block
 
 With the manifest file completed, you can now start adding custom content to Minecraft. Let's get started by applying a new texture to the Vanilla dirt block. The first part of the process involves creating a folder structure to hold the custom texture.
 
@@ -167,26 +165,31 @@ Resource pack woes? Don't worry, troubleshooting is a normal part of any develop
 
 You can use the [sample resource pack](https://github.com/microsoft/minecraft-samples/tree/main/resource_pack_sample) on the Minecraft samples GitHub site to check the structure of your resource pack.
 
-### Your Resource Pack Does Not Appear in Minecraft
+### Your Resource Pack does not appear in minecraft
 
-If your resource pack does not appear in the Add-Ons section of a world, the issue may be a malformed `manifest.json` file. Let's investigate.
+If your resource pack does not appear in the Add-Ons section of a world, the issue may be a malformed **manifest.json** file. Let's investigate.
 
-- Are there two different UUIDs in the `manifest.json` header and modules section? See the **UUID** section for more information.
+- Are there two different UUIDs in the **manifest.json** header and modules section? See the **UUID** section for more information.
 - Have you turned on file extensions and paths? If your Explorer window does not show file extensions, you can enable **File Name Extensions** under the **View** tab.
 - Double-check JSON curly braces and brackets. JSON linting tools can help.
 
-### Resource Pack Shows Up, Content Doesn't Work
+### Resource Pack shows up, content doesn't work
 
-- Check that the `textures` folder is in the right place, and spelled correctly. Then check the `blocks` folder as well.
-- Download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and try adding your block to the existing `textures/blocks` folder.
+- Check that the **textures** folder is in the right place, and spelled correctly. Then check the **blocks** folder as well.
+- Download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and try adding your block to the existing **textures/blocks** folder.
 - Make sure the new texture file is named the same as the Vanilla texture it's replacing.
-- Move your pack above others to ensure your `dirt.png` texture is loaded before other resource packs.
+- Move your pack above others to ensure your **dirt.png** texture is loaded before other resource packs.
 
 ## What's Next?
 
-With a custom texture now a part of your Minecraft world, it's time to see how behavior packs alter existing entity behaviors. In our next tutorial, you will add aggressive behavior to a normally peaceful cow.
+With a custom texture now a part of your Minecraft world, it's time to make a more advanced block.
+
+> [!div class="nextstepaction"]
+> [Custom Die Block](./AddCustomDieBlock.md)
+
+If you haven't checked out Behavior Packs yet, follow this simple tutorial to add aggressive behavior to a normally peaceful cow.
 
 > [!div class="nextstepaction"]
 > [Behavior pack](BehaviorPack.md)
 
-To see examples of unchanged resource and behavior files, check out the Minecraft [Vanilla resource pack](https://aka.ms/resourcepacktemplate) and [Vanilla behavior Pack](https://aka.ms/behaviorpacktemplate).
+To see examples of unchanged resource and behavior files, check out the Minecraft [Vanilla Resource Pack](https://aka.ms/resourcepacktemplate) and [Vanilla Behavior Pack](https://aka.ms/behaviorpacktemplate).
