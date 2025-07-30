@@ -9,11 +9,11 @@ ms.date: 07/25/2025
 
 # Create a Custom Painting
 
-Now that you know how to use a Resource Pack to make an add-on for Minecraft: Bedrock Edition, you're ready to start customizing your worlds! Custom paintings are one of the most straightforward changes you can make to Minecraft's vanilla values, but there are a few things to keep in mind.
+Now that you know how to use a [Resource Pack](./ResourcePack.md) to make an add-on for Minecraft: Bedrock Edition, you're ready to start customizing your worlds! Custom paintings are one of the most straightforward changes you can make to Minecraft's vanilla values, but there are a few things to keep in mind.
 
 To allow new paintings into the game without breaking backwards compatibility for Bedrock Creators, we made the process pretty simple&mdash;just overwrite a vanilla painting's image file with the image you want to see instead.
 
-Paintings are randomly called based on their size and the amount of space available on the wall you're placing them on. There's currently no way to guarantee the painting you place will show your custom image unless you overwrite all the image files associated with paintings of that size. Otherwise, you may need to place and remove a painting multiple times in game before you get your custom painting.
+Paintings are randomly called based on their size and the amount of space available on the wall you're placing them on. There's currently no way to guarantee the painting you place will show your custom image, so you may need to place and remove a painting multiple times before you get your custom painting in game.
 
 
 In this tutorial, you'll learn:
@@ -27,7 +27,7 @@ In this tutorial, you'll learn:
 
 ## The bedrock-samples repository
 
-There is a public GitHub repository that contains the latest resource and behavior examples for creating add-ons for Minecraft: Bedrock Edition. The [bedrock-samples](https://github.com/Mojang/bedrock-samples/tree/main) repository contains the source of those files, with all the values for vanilla Minecraft assets.
+There is a public GitHub repository that contains the latest resource and behavior examples for creating add-ons for Minecraft: Bedrock Edition. The [bedrock-samples](https://github.com/Mojang/bedrock-samples/tree/main) repository contains the source of those files, with all the values for [these paintings](https://github.com/Mojang/bedrock-samples/tree/main/resource_pack/textures/painting) and lots of other vanilla Minecraft assets.
 
 
 ## Requirements
@@ -47,7 +47,7 @@ For Minecraft to find and use your resource files, you must set up the folders a
 
 ## Overwriting older paintings
 
-Older paintings are stored as coordinates in a single large image (kz.png) in the public repository.
+Older paintings (paintings from before v1.21.00) are stored as coordinates in a single large image (kz.png) in the public repository.
 
 1. Create a new resource pack folder in com.mojang.
 
