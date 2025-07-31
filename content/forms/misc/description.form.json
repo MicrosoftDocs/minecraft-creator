@@ -8,6 +8,12 @@
         "id": "identifier",
         "title": "Identifier",
         "dataType": 2,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^\\w+:\\w+$"
+          }
+        ],
         "isRequired": true
       }
     ]

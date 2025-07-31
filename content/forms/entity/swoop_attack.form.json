@@ -1,0 +1,40 @@
+{
+  "id": "minecraft:behavior.swoop_attack",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.swoop_attack",
+    "title": "Minecraft Behavior.swoop Attack Entity",
+    "description": "Allows an entity to attack using swoop attack behavior; Ideal for use with flying mobs. The behavior ends if the entity has a horizontal collision or gets hit.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "damage_reach",
+        "title": "Damage Reach",
+        "description": "Added to the base size of the entity, to determine the target's maximum allowable distance, when trying to deal attack damage. Default value: 0.2.",
+        "dataType": 3
+      },
+      {
+        "id": "delay_range",
+        "title": "Delay Range",
+        "description": "Minimum and maximum cooldown time-range (in seconds) between each attempted swoop attack. Default value: [10.0, 20.0].",
+        "dataType": 16,
+        "subFormId": "entity/floatrange"
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "During swoop attack behavior, this determines the multiplier the entity's speed is modified by when moving toward the target. Default value: 1.",
+        "dataType": 3
+      }
+    ]
+  }
+}

@@ -205,7 +205,3 @@ The following are the initial APIs available in early execution mode for scripti
 #### What do I do with code that is in the root context of my scripts that are not early executable?
 
 If you have code using an API that is being run in the root context of a script file, it will need to be deferred to run either during or after the `world.afterEvents.worldLoad` event. There are a number of ways to organize your code to do so. Usage of classes or functions can assist with organizing startup of various systems that can be called within the event callback. Lazy getters can be made to call the API and cache the result only after the lazy getter is called. In many cases, you can simply wrap your "root context" scripts in a `world.afterEvents.worldLoad` call.
-
-## Summary
-
-That's it! Stay tuned for more updates to the 2.0.0-beta APIs; in a few more places, over the coming weeks, we will change the signature of some methods and properties. As always, we appreciate your feedback and bugs while 2.0.0 is in beta. You can open those bugs at [bugs.mojang.com](https://bugs.mojang.com/projects/MCPE/summary).

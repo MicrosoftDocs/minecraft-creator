@@ -20,6 +20,7 @@ ms.date: 02/11/2025
 | [minecraft:foliage_appearance](Components/minecraftClientBiomes_foliage_appearance.md)| Sets the foliage color or color map used during rendering. |
 | [minecraft:grass_appearance](Components/minecraftClientBiomes_grass_appearance.md)| Set the grass color or color map used during rendering. |
 | [minecraft:lighting_identifier](Components/minecraftClientBiomes_lighting_identifier.md)| Set the identifier used for lighting in Vibrant Visuals mode. |
+| [minecraft:precipitation](Components/minecraftClientBiomes_precipitation.md)| Describes the visuals for a biome's precipitation. |
 | [minecraft:sky_color](Components/minecraftClientBiomes_sky_color.md)| Sets the sky color used during rendering. |
 | [minecraft:water_appearance](Components/minecraftClientBiomes_water_appearance.md)| Set the water surface color used during rendering. |
 | [minecraft:water_identifier](Components/minecraftClientBiomes_water_identifier.md)| Set the identifier used for rendering water in Vibrant Visuals mode. |

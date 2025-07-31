@@ -9,7 +9,7 @@ ms.date: 02/11/2025
 
 # MCTools Validation Rules Documentation - minecraft:caddonreq
 
-A set of requirements for cooperative Add-On projects. See https://learn.microsoft.com/minecraft/creator/documents/practices/guidelinesforbuildingcooperativeAdd-Ons for more info.
+A set of requirements for cooperative Add-On projects. See https://learn.microsoft.com/minecraft/creator/documents/practices/guidelinesforbuildingcooperativeaddons for more info.
 
 
 ## Cooperative Add-On Requirements Properties

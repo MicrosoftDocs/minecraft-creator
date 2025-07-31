@@ -45,7 +45,7 @@ ms.date: 02/11/2025
 | name | *not set* | String | Animation files refer to this bone via this identifier. |  | 
 | parent | *not set* | String | Bone that this bone is relative to. If the parent bone moves, this bone will move along with it. |  | 
 | pivot | *not set* | Array of strings |  |  | 
-| poly_mesh | *not set* | Key/item pairs of [Poly Mesh](#poly-mesh-item-type) items | A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry. |  | 
+| poly_mesh | *not set* | Key/item pairs of [Poly Mesh](#poly-mesh-item-type) items | [Deprecated] A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry. This feature is deprecated, and using it in new content will result in content errors. |  | 
 | render_group_id | *not set* | Integer number |  |  | 
 | rotation | *not set* | Array of strings |  |  | 
 | texture_meshes | *not set* | Array of [Texture Meshes](#texture-meshes-item-type) items |  |  | 

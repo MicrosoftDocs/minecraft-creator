@@ -11,12 +11,6 @@
         "description": "The event to run when the conditions for this trigger are met.",
         "dataType": 22,
         "samples": {
-          "/vanilla/behavior_pack/entities/copper_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:on_death/",
-              "content": "minecraft:on_death"
-            }
-          ],
           "/vanilla/behavior_pack/entities/ender_dragon.json": [
             {
               "path": "/minecraft:entity/components/minecraft:on_death/",
@@ -45,59 +39,9 @@
             }
           ]
         }
-      },
-      {
-        "id": "drop_item",
-        "title": "Drop Item",
-        "dataType": 16,
-        "subForm": {
-          "id": "drop_item",
-          "title": "Drop_item",
-          "fields": [
-            {
-              "id": "slot",
-              "title": "Slot",
-              "dataType": 2,
-              "samples": {
-                "/vanilla/behavior_pack/entities/copper_golem.json": [
-                  {
-                    "path": "slot",
-                    "content": "slot.weapon.mainhand"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        "samples": {
-          "/vanilla/behavior_pack/entities/copper_golem.json": [
-            {
-              "path": "/minecraft:entity/events/minecraft:on_death/",
-              "content": {
-                "slot": "slot.weapon.mainhand"
-              }
-            }
-          ]
-        }
       }
     ],
     "samples": {
-      "/vanilla/behavior_pack/entities/copper_golem.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:on_death/",
-          "content": {
-            "event": "minecraft:on_death"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:on_death/",
-          "content": {
-            "drop_item": {
-              "slot": "slot.weapon.mainhand"
-            }
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/ender_dragon.json": [
         {
           "path": "/minecraft:entity/components/minecraft:on_death/",

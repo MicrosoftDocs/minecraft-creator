@@ -1,0 +1,50 @@
+{
+  "id": "minecraft:behavior.slime_attack",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.slime_attack",
+    "title": "Minecraft Behavior.slime Attack Entity",
+    "description": "Causes the entity to grow tired every once in a while, while attacking.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "grow_tired_cooldown_time",
+        "title": "Grow Tired Cooldown Time",
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "set_persistent",
+        "title": "Set Persistent",
+        "description": "Allows the actor to be set to persist upon targeting a player Default value: false.",
+        "dataType": 1
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "During attack behavior, this multiplier modifies the entity's speed when moving toward the target. Default value: 1.",
+        "dataType": 3
+      },
+      {
+        "id": "x_max_rotation",
+        "title": "x Max Rotation",
+        "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target. Default value: 10.",
+        "dataType": 3
+      },
+      {
+        "id": "y_max_rotation",
+        "title": "y Max Rotation",
+        "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate while trying to look at the target. Default value: 10.",
+        "dataType": 3
+      }
+    ]
+  }
+}
