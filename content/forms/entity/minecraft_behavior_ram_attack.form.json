@@ -1,5 +1,10 @@
 {
-  "fields": [],
+  "fields": [
+    {
+      "id": "on_start",
+      "dataType": 42
+    }
+  ],
   "generated_doNotEdit": {
     "id": "minecraft:behavior.ram_attack",
     "title": "Ram Attack Behavior",

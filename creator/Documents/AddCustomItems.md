@@ -1,23 +1,20 @@
 ---
-author: iconicNurdle
+author: chipotle
 ms.author: mikeam
 title: How to Add Custom Items
 description: "A tutorial for creating custom items in Minecraft: Bedrock Edition"
 ms.service: minecraft-bedrock-edition
+ms.date: 07/24/2025
 ---
 
 # Custom Items
 
-It's possible to customize or create items in Minecraft, just like you can create custom blocks and entities.
+Just like you can create custom blocks and entities, you can create custom items in Minecraft, too! This tutorial shows you how&mdash;what types of files different kinds of items need, where they go in resource and behavior packs, and what JSON files to edit or create.
 
-This tutorial shows you how to create the structure and files needed for the Add-On packs for different items.
-Different types of items require different files, depending on what Minecraft needs to know about the item. For example, things a player wears, like a crown, will require a **model** file, among other things.
+> [!CAUTION]
+> Just like entities and blocks, files for items have specific names (or extensions), and they need to be placed in the correct folders or sub-folders. If your add-on pack for a new or customized item doesn't work, doublecheck that everything is in the right place!
 
-It's important to remember that each of these files have to be stored in a folder with the correct name, in the exact location specified.
-
-### Prerequisites
-
-It is recommended that the following be completed before beginning this tutorial:
+You should be familiar with these other tutorials before tackling custom items:
 
 - [Getting Started with Add-On Development](GettingStarted.md)
 - [Introduction to Resource Packs](ResourcePack.md)
@@ -25,38 +22,39 @@ It is recommended that the following be completed before beginning this tutorial
 - [How to Add a Simple Custom Block](AddCustomDieBlock.md)
 - [Minecraft Item Wizard](MinecraftItemWizard.md)
 
-Here is a link to the [Vanilla Minecraft Add-On Packs](https://aka.ms/resourcepacktemplate) in case you want to take a look at the pack structure there.
+_reYou might also want to take a look at the files and folder structure of the [Vanilla Minecraft Add-On Packs](https://aka.ms/resourcepacktemplate).
 
-## Minecraft Custom Items
+## Make some items
 
-Here are three items that do not currently exist in Vanilla Minecraft. They are listed here in order of complexity:
+We're going to make four items that don't exist in vanilla Minecraft. In order of complexity:
 
->- Goo
->- Wrench
->- Crown
->- Custom Chestplate with Vanilla Armor Trim
+- Goo
+- Wrench
+- Crown
+- Custom Chestplate with Vanilla Armor Trim
 
-Use the following sections to create add-on packs for each item, or to do one set of packs for two or more items.
+And, at the end, we'll talk about dyeable custom items.
 
-Here is the general process from the add-on pack tutorials:
+You can create an add-on pack for each item, or do sets of packs for two or more items.
+
+This is the general process for creating items we'll follow:
 
 1. Create Behavior Pack and Resource Pack folders.
-1. Create the folder and file structure for the item you want to create. Be sure to include the **manifest.json** files.
-1. Copy/paste the contents for the custom item files from the content in each section.
+1. Create the folder and file structure for the item you want to create, being sure to include the **manifest.json** files.
+1. Copy and paste the contents for the custom item files from the content in each section.
 1. Download and save the graphic files into the correct location.
-1. Load the packs into the **development_behavior_pack** and **development_resource_pack** folders in your com.mojang folder.
+1. Copy or move the packs into the **development_behavior_pack** and **development_resource_pack** folders in your com.mojang folder.
 1. Launch Minecraft: Bedrock Edition.
-1. Create a world with the behavior pack and resource packs activated. 
+1. Create a world with the behavior pack and resource packs activated.
 1. Choose either Creative Mode or Survival Mode with cheats toggled on.
 1. Go into your world and use the `/give @s demo:<item>` command to get your custom item.
 
-You can also experiment with different item components and edit the graphic and model files in an application like [Blockbench](https://www.blockbench.net)
+> [!TIP]
+> While we're providing you with graphics and model files, you can edit them or create entirely new ones in [Blockbench](./Blockbench.md) or a similar editor.
 
-Here is the template for each **manifest.json** file, which is also found in the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials.
+Each **manifest.json** file follows a similar template&mdash;the same one in the [Resource Pack](ResourcePack.md) and [Behavior Pack](BehaviorPack.md) tutorials. As with those, be sure you create new [UUIDs](https://uuidgenerator.net) for your items!
 
-Be sure to put your own [UUIDs](https://www.uuidgenerator.net/) in there.
-
-**Behavior Pack/manifest.json**
+The Behavior Pack **manifest.json** file looks like this:
 
 ```json
 {
@@ -79,7 +77,7 @@ Be sure to put your own [UUIDs](https://www.uuidgenerator.net/) in there.
 }
 ```
 
-**Resource Pack/manifest.json**
+The Resource Pack **manifest.json** file looks like this:
 
 ```json
 {
@@ -104,17 +102,13 @@ Be sure to put your own [UUIDs](https://www.uuidgenerator.net/) in there.
 
 ## Goo
 
-Goo is the simplest custom item. You don't wear it or eat it. It's just a handful of weird goo.
-It's useful for making sure your add-on packs work and for experimenting with stack size and the display name.
+Goo is the simplest custom item: you don't wear it or eat it, it's just a handful of weird goo. It's useful for making sure your add-on packs work and for experimenting with stack size and the display name.
 
 ### Goo Behavior Pack
-items
-  goo.json
-manifest.json
 
-![Diagram of the Goo Behavior Pack. Main Behavior Pack folder contains manifest.json file and the items folder, which contains goo.json file.](Media/AddCustomItems/goo-behavior-pack-structure.png)
+![Diagram of the Goo Behavior Pack. The Behavior Pack folder contains the manifest.json file and the items folder, which contains goo.json](Media/AddCustomItems/goo-behavior-pack-structure.png)
 
-**Goo Behavior Pack/items/goo.json**
+Copy and paste this JSON into **development_behavior_pack/items/goo.json**:
 
 ```json
 {
@@ -139,17 +133,10 @@ manifest.json
 
 ### Goo Resource Pack
 
-```
-textures
-  items
-    goo.png
-  item_texture.json
-manifest.json
-```
-
 ![Diagram of the structure of the Goo Resource Pack. Shows the main resource pack folder containing the manifest.json file, and a textures folder that contains the items folder that contains goo.png. Textures folder also contains item_texture.json.](Media/AddCustomItems/goo-resource-pack-structure.png)
 
-**Goo Resource Pack/textures/item_texture.json**
+Copy and paste this JSON into **development_resource_pack/textures/item_texture.json**:
+
 ```json
 {
   "resource_pack_name": "Goo Resource Pack",
@@ -161,13 +148,13 @@ manifest.json
 }
 ```
 
-**Goo Resource Pack/textures/items**
-
-Here is a.png file to download and use for the goo texture:
+Here is a PNG file to use as the goo texture:
 
 ![Image of goo item texture to go in the textures folder](Media/AddCustomItems/goo.png)
 
-## Custom Goo Result
+Copy that file into **development_resource_pack/textures/items/**.
+
+### Custom Goo Result
 
 After you create the packs, go into Minecraft, and give yourself goo, it should look like this:
 
@@ -179,13 +166,7 @@ An awesome giant wrench! This item has separate texture files for the version in
 
 ### Wrench Behavior Pack
 
-```
-items
-  wrench.json
-manifest.json
-```
-
-**Wrench Behavior Pack/items/wrench.json**
+Copy and past this JSON into **development_behavior_pack/items/wrench.json**:
 
 ```json
 {
@@ -212,23 +193,9 @@ manifest.json
 
 ### Wrench Resource Pack
 
-```
-attachables
-  wrench.player.json
-models
-  entity
-    wrench.geo.json
-textures
-  items
-    wrench.png
-    wrench_ico.png
-  item_texture.json
-manifest.json
-```
-
 ![Diagram of the structure of the wrench resource pack. Shows the manifest.json file, attachables folder contains wrench.player.json file, models folder contains entity folder that contains wrench.geo.json file, and textures folder that contains the items folder that contains wrench.png and wrench_ico.png. Textures folder also contains item_texture.json file.](Media/AddCustomItems/wrench-resource-pack-structure.png)
 
-**Wrench Resource Pack/attachables/wrench.player.json**
+Copy and past this JSON into **development_resource_pack/attachables/wrench.player.json**:
 
 ```json
 {
@@ -268,7 +235,7 @@ manifest.json
 }
 ```
 
-**Wrench Resource Pack/models/entity/wrench.geo.json**
+And copy and paste this JSON into **development_resource_pack/models/entity/wrench.geo.json**:
 
 ```json
 {
@@ -311,19 +278,17 @@ manifest.json
 }
 ```
 
-**Wrench Resource Pack/textures/items**
+Now, you'll need to download these two graphics files and put them into **development_resource_pack/textures/items**:
 
-Here are the image files to use for the wrench icon and for the wrench itself.
-
-Here is the wrench icon:
+This is the wrench icon...
 
 ![Image of a wrench icon](Media/AddCustomItems/wrench_ico.png)
 
-Here is the wrench texture:
+...and this is the wrench's texture:
 
 ![Image of a wrench texture](Media/AddCustomItems/wrench.png)
 
-**Wrench Resource Pack/textures/item_texture.json**
+To complete the Resource Pack, you'll need to copy and paste this JSON into **development_resource_pack/textures/item_texture.json**:
 
 ```json
 {
@@ -342,19 +307,13 @@ After you create the packs, go into Minecraft, and give yourself a wrench, it sh
 
 ## Crown
 
-This is a crown created by customizing a helmet.
+We'll create a crown item by customizing a helmet.
 
 ### Crown Behavior Pack
 
-```
-items
-  crown.json
-manifest.json
-```
-
 ![Structure of the Crown Behavior Pack. Image shows the main Behavior Pack folder contains manifest.json and an items folder that contains the crown.json file.](Media/AddCustomItems/crown-behavior-pack-structure.png)
 
-**Crown Behavior Pack/items/crown.json**
+Copy and paste this JSON into **development_behavior_pack/items/crown.json**:
 
 ```json
 {
@@ -380,23 +339,9 @@ manifest.json
 
 ### Crown Resource Pack
 
-```
-attachables
-  crown.player.json
-models
-  entity
-    crown.geo.json
-textures
-  items
-    crown_ico.png
-    crown_minecraft.png
-  item_texture.json
-manifest.json
-```
-
 ![Structure of the Crown Resource Pack. Main Resource Pack folder contains the manifest.json file, and the attachables folder that contains the crown.player.json file. Main folder also contains the models folder that contains the entity folder that contains the crown.geo.json file. Main folder also contains the textures folder that contains the items folder that contains crown_ico.png and crown_minecraft.png files. Textures folder also contains item_texture.json file.](Media/AddCustomItems/crown-resource-pack-structure.png)
 
-**Crown Resource Pack/attachables/crown.player.json**
+Copy and paste this JSON into **development_resource_pack/attachables/crown.player.json**:
 
 ```json
 {
@@ -425,9 +370,7 @@ manifest.json
 }
 ```
 
-**Crown Resource Pack/models/entity/crown.geo.json**
-
-This file creates the custom shape of the crown that the texture will be mapped on to.
+Copy and paste this JSON into **development_resource_pack/models/entity/crown.geo.json**:
 
 ```json
 {
@@ -508,9 +451,9 @@ This file creates the custom shape of the crown that the texture will be mapped 
 }
 ```
 
-**Crown Resource Pack/textures/items**
+That file creates the custom shape of the crown that the texture will be mapped on to.
 
-Here are the image files to download and use for the crown icon and the crown texture itself.
+Now, here are the image files to download and use for the crown icon and the crown texture itself. Copy these images into **development_resource_pack/textures/items**.
 
 Here is the crown icon:
 
@@ -520,7 +463,7 @@ Here is the crown texture:
 
 ![Image of a crown texture](Media/AddCustomItems/crown_minecraft.png)
 
-**Crown Resource Pack/textures/item_texture.json**
+Last but not least, copy and paste this JSON into **development_resource_pack/textures/item_texture.json**:
 
 ```json
 {
@@ -533,27 +476,22 @@ Here is the crown texture:
 }
 ```
 
-### Custom Crown Result
+### Custom crown result
 
 After you create the packs, go into Minecraft, give yourself a crown, and put it on, you should look like this:
 
 ![Image of Minecraft character Alex wearing a custom crown](Media/AddCustomItems/alex_wearing_crown.png)
 
-## Custom Chestplate with Vanilla Armor Trim
+## Custom chestplate with vanilla armor trim
 
 If you create a custom chestplate, either by hand or through using the [Minecraft Item Wizard](MinecraftItemWizard.md), you can have it support all the Armor Trims available as of release 1.20.70. You can modify the trim patterns to better fit your custom armor too!
 
-To use armor trim on your custom armor, you need to set your **format versions** on the item and **attachable** to a minimum of 1.20.60.
+> [!NOTE]
+> To use armor trim on your custom armor, you need to set your `format_version` on the item and attachable to a minimum of `1.20.60`.
 
-### Custom Chestplate with Vanilla Armor Trim Behavior Pack
+### Chestplate Behavior Pack
 
-```
-items
-  custom_chestplate.item.json
-manifest.json
-```
-
-**Chestplate Behavior Pack/items/custom_chestplate.item.json**
+Copy and paste this JSON into **development_behavior_pack/items/custom_chestplate.item.json**:
 
 ```json
 { 
@@ -602,25 +540,9 @@ manifest.json
 }
 ```
 
-**Chestplate Resource Pack**
+### Chestplate Resource Pack
 
-```
-attachables
-  custom_chestplate.attachable.json
-models
-  entity
-    custom_chestplate.geo.json
-textures
-  items
-    custom_chestplate_ico.png
-    custom_chestplate.png
-  item_texture.json
-manifest.json
-```
-
-**Chestplate Resource Pack/attachables/custom_chestplate.attachable.json**
-
-This file defines which geometry will appear for the chestplate, as well as the armor trim palette that will be used and any adjusted trim patterns. 
+Copy and paste this JSON into **development_resource_pack/attachables/custom_chestplate.attachable.json**:
 
 ```json
 {
@@ -647,11 +569,9 @@ This file defines which geometry will appear for the chestplate, as well as the 
 }
 ```
 
-You can add any of the existing vanilla armor trim patterns to the textures section to supply adjusted trim textures to your new armor. 
+This file defines which geometry will appear for the chestplate, as well as the armor trim palette that will be used and any adjusted trim patterns. You can add any of the existing vanilla armor trim patterns to the textures section to supply adjusted trim textures to your new armor.
 
-**Chestplate Resource Pack/models/entity/custom_chestplate.geo.json**
-
-This file creates the custom shape of the chestplate that the texture and armor trim will be mapped on to. 
+Copy and paste this JSON into **development_resource_pack/models/entity/custom_chestplate.geo.json**:
 
 ```json
 {
@@ -712,7 +632,7 @@ This file creates the custom shape of the chestplate that the texture and armor 
 }
 ```
 
-### Chestplate Resource Pack/textures/items
+This file creates the custom shape of the chestplate that the texture and armor trim will be mapped on to.
 
 Here are the image files to download and use for the custom chestplate icon and the geometry's texture itself.
 
@@ -728,7 +648,7 @@ Here is the modified "wild" trim pattern:
 
 ![Downloadable image that can be used in a resource pack for the chestplate trim.](Media/AddCustomItems/custom_wild.png)
 
-**Chestplate Resource Pack/textures/item_texture.json**
+Copy and paste this JSON into **development_resource_pack/textures/item_texture.json**:
 
 ```json
 {
@@ -746,7 +666,7 @@ After you create the packs, go into Minecraft, give yourself the custom chestpla
 
 ![Image of Minecraft Alex in her beautiful custom untrimmed pink chestplate.](Media/AddCustomItems/chestplate_no_trim_yet.png)
 
-Give yourself the wild armor trim template and combine your chestplate with the wild template at a smithing table, and put it back on, you should now look like this: 
+Give yourself the wild armor trim template and combine your chestplate with the wild template at a smithing table, and put it back on, you should now look like this:
 
 ![Image of Minecraft Alex in her beautiful custom trimmed pink chestplate.](Media/AddCustomItems/chestplate_trimmed.png)
 
@@ -756,17 +676,13 @@ If your chestplate instead looks like this...
 
 ... then check the paths to your textures in the `item_texture.json` and `custom_chestplate.attachable.json` files. If there are any spelling errors or textures in incorrect folders, the geometry will display the "missing texture pattern" on your armor.
 
-## Dyeable Custom Items
+## Dyeable custom items
 
-Custom items can now be dyed in cauldrons. To use the dyeable component the format version on the item and the attachable needs to be 1.21.30 or higher.
+Custom items can now be dyed in cauldrons. To use the dyeable component, `format_version` on the item and the attachable needs to be `1.21.30` or higher.
 
-This section of the tutorial assumes that you have successfully completed the previous section: **Custom Chestplate with Vanilla Armor Trim**.
+This section of the tutorial assumes that you have successfully completed the previous section, and made your custom chestplate with vanilla armor trim. Make a copy of its add-on pack.
 
-Start by creating a copy of your Custom Chestplate with Vanilla Armor Trim add-on packs.
-
-## Dyable Custom Chestplate Behavior Pack
-
-**Chestplate Behavior Pack/textures/item_texture.json**
+## Dyeable custom chestplate Behavior Pack
 
 Inside the behavior pack, open **textures/item_texture.json** and do this:
 
@@ -774,24 +690,24 @@ Inside the behavior pack, open **textures/item_texture.json** and do this:
 
 2. Edit `minecraft:icon`:
 
-```json
-"minecraft:icon": {
-  "textures": {
-    "default": "custom_chestplate_icon",
-    "dyed": "custom_chestplate_icon_gray"
-    }
-},
-```
+    ```json
+    "minecraft:icon": {
+      "textures": {
+        "default": "custom_chestplate_icon",
+        "dyed": "custom_chestplate_icon_gray"
+        }
+    },
+    ```
 
 3. Add `minecraft:dyeable`.
 
-```json
-"minecraft:dyeable": {
-  "default_color":  "#175882"
-}
-```
+    ```json
+    "minecraft:dyeable": {
+      "default_color":  "#175882"
+    }
+    ```
 
-... So that the final version of **item_texture.json** looks like this:
+The final version of **item_texture.json** should look like this:
 
 ```json
 { 
@@ -845,71 +761,53 @@ Inside the behavior pack, open **textures/item_texture.json** and do this:
 }
 ```
 
-If you do not want a default color you can leave the "default_color" off and the texture will be the same as if you did not have the component until it is dyed.
+If you do not want a default color you can leave the `default_color` off, and the texture will be the same as if you did not have the component until it is dyed.
 
-For the icon to be dyed correctly. you need to provide a grayscale .tga version of your icon image. To do this, make a copy of the .png file, change the extension to .tga, and then change the configuration to grayscale.
+For the icon to be dyed correctly, you need to provide a grayscale TGA version of your icon image. To do this, make a copy of the PNG file, change the extension to TGA, and then change the configuration to grayscale.
 
-Hint: You can use the icon graphics from the previous section.
+*Hint: You can use the icon graphics from the previous section.*
 
-**Dyeable Custom Chestplate Resource Pack:**
+## Dyeable custom chestplate Resource Pack
 
-```
- attachables
-   custom_chestplate.attachable.json
- models
-   entity
-     custom_chestplate.geo.json
- render_controllers (NEW)
-   custom_chestplate.render_controllers.json (NEW)
- textures
-   items
-     custom_chestplate_ico.png
-     custom_chestplate.png
-     custom_chestplate_grayscale.tga
-     custom_chestplate_icon_grayscale.tga
-   item_texture.json
- manifest.json
-```
-
-You edit **Pack/attachables/custom_chestplate.attachable.json** like this...
+Edit **development_resource_pack/attachables/custom_chestplate.attachable.json** like this...
 
 1. Edit the format version to be **1.21.30**.
 
-2. Edit "render_controllers" like this...
+2. Edit `render_controllers` like this...
 
-```json
-"render_controllers": [ "controller.render.custom_chestplate" ],
-```
+    ```json
+    "render_controllers": [ "controller.render.custom_chestplate" ],
+    ```
 
-3. Edit materials to be:
+3. Edit `materials` to be:
 
-```json
-"materials": {
-  "default": "armor",
-  "dyed": "entity_alphatest_change_color"
-},
-```
+    ```json
+    "materials": {
+      "default": "armor",
+      "dyed": "entity_alphatest_change_color"
+    },
+    ```
 
-4. Edit textures to be:
+4. Edit `textures` to be:
 
-```json
-"textures": {
-  "default": "textures/items/custom_chestplate.png",
-  "dyed": "textures/items/custom_chestplate_grayscale.tga"
-},
-```
+    ```json
+    "textures": {
+      "default": "textures/items/custom_chestplate.png",
+      "dyed": "textures/items/custom_chestplate_grayscale.tga"
+    },
+    ```
 
 5. Add scripts:
 
-```json
-"scripts": {
-  "pre_animation": [
-    "variable.is_dyed = query.armor_color_slot(1, 0) != 1.0 || query.armor_color_slot(1, 1) != 1.0 || query.armor_color_slot(1, 2) != 1.0"
-  ]
-}
-```
+    ```json
+    "scripts": {
+      "pre_animation": [
+        "variable.is_dyed = query.armor_color_slot(1, 0) != 1.0 || query.armor_color_slot(1, 1) != 1.0 || query.armor_color_slot(1, 2) != 1.0"
+      ]
+    }
+    ```
 
-So that the final version of **custom_chestplate.attachable.json** looks like this:
+The final version of **custom_chestplate.attachable.json** should look like this:
 
 ```json
 {
@@ -939,9 +837,9 @@ So that the final version of **custom_chestplate.attachable.json** looks like th
 }
 ```
 
-### custom_chestplate.render_controllers.json
+### Render controller
 
-1. In the resource pack, add the **render_controllers** directory and put a new file in there named: **custom_chestplate.render_controllers.json**.
+1. In the resource pack, add a **render_controllers** directory and put a new file in there named **custom_chestplate.render_controllers.json**.
 
 2. Copy and paste this content in there:
 
@@ -961,7 +859,7 @@ So that the final version of **custom_chestplate.attachable.json** looks like th
 }
 ```
 
-**Chestplate Resource Pack/items/item_texture**
+Copy and paste this JSON into **development_resource_pack/items/item_texture.json**:
 
 ```json
 {
@@ -976,7 +874,7 @@ So that the final version of **custom_chestplate.attachable.json** looks like th
 }
 ```
 
-After you have edited and saved all of the files, you should be able to dye your custom chestplate in a cauldron full of dye and it will look like this: 
+After you have edited and saved all of the files, you should be able to dye your custom chestplate in a cauldron full of dye and it will look like this:
 
 ![Image of a dyable chestplate that has been dyed blue.](Media/AddCustomItems/dyeable_dyed_chestplate.png)
 
@@ -984,6 +882,4 @@ To learn more about the dyeable item component, take a look at the [`minecraft:d
 
 ## Next Steps
 
-After you create the custom item packs and get them to work, you could take a look at the [item components](../Reference/Content/ItemReference/Examples/ItemComponentList.md) and try adding some of these to your own custom items.
-
-Or, you could go through the [Custom Item Wizard](MinecraftItemWizard.md) and compare the add-on packs created by the Wizard to the ones you created on your own.
+After you create the custom item packs and get them to work, take a look at the [item components](../Reference/Content/ItemReference/Examples/ItemComponentList.md) and try adding some of these to your own custom items! Or, go through the [Custom Item Wizard](MinecraftItemWizard.md) and compare the add-on packs created by the Wizard to the ones you created on your own.

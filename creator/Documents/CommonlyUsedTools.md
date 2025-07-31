@@ -4,11 +4,12 @@ ms.author: mikeam
 title: Commonly Used Tools
 description: "A guide detailing popular tools used to modify Minecraft content"
 ms.service: minecraft-bedrock-edition
+ms.date: 07/28/2025
 ---
 
 # Commonly Used Tools
 
-There are a wide variety of tools that have been created for the purpose of increasing the efficiency of Minecraft content creation. Tools can help with a variety of things from creating skins, to crafting beautiful custom worlds. This article will explore some of the most commonly used tools currently available and some of their uses.
+There are a wide variety of tools that have been created for the purpose of increasing the efficiency of Minecraft content creation. Tools can help with a variety of things from creating skins to crafting beautiful custom worlds. This article will explore some of the most commonly used tools currently available and some of their uses.
 
 >[!IMPORTANT]
 >These tools are provided by external, third-party contributors and are not Mojang/Microsoft offerings. Users should use at their own discretion.
@@ -34,7 +35,7 @@ Amulet is a utility tool designed to edit Minecraft maps. It can come in handy f
 
 Image Map is a small application for both Bedrock Edition and Java Edition that can convert images to Minecraft maps. This can be used to add custom banners and art inside of Minecraft worlds.
 
-## Server Based Tools
+## Server-based tools
 
 Many commonly used tools are designed to be used on Java Edition servers utilizing a server software known as [Spigot](https://www.spigotmc.org/), which is based on the Craftbukkit API. The following tools are plugins that work on servers running this software.
 
@@ -48,13 +49,13 @@ Voxel Sniper Flattened is another in-game Minecraft map editor for Java Edition.
 
 ### [goBrush](https://www.spigotmc.org/resources/gobrush.23118/)
 
-goBrush is a server plugin for Java Edition that adds in-game tools designed for custom terrain editing by using heightmap brushes instead of geometric shapes like tools such as WorldEdit and Voxel Sniper Flattened.
+goBrush is a server plugin for Java Edition that adds in-game tools designed for custom terrain editing by using height map brushes instead of geometric shapes like tools such as WorldEdit and Voxel Sniper Flattened.
 
 ### [goPaint](https://www.spigotmc.org/resources/gopaint.27717/)
 
 goPaint is a server plugin for Java Edition that allows creators to efficiently "paint" blocks with a variety of brush shapes.
 
-## Creating Models and Visuals
+## Creating models and visuals
 
 ### [Blockbench](https://blockbench.net/)
 
@@ -64,11 +65,11 @@ Blockbench is a free entity-modeling application for creating working Bedrock Ed
 
 Snowstorm is a small application for Bedrock Edition created by the developer of Blockbench that can be used to create custom particle effects that are usable in-game. To get started with [Snowstorm](./SnowstormOverview.md), visit a [tutorial](./ParticleEffects.md) on building particle effects with Snowstorm.
 
-## Project and JSON Definition Editing
+## Project and JSON definition editing
 
 ### [Blockception VSCode Extension](https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension)
 
-An extension that provides support for files such as .mcfunction, .json and .lang. This extension adds features like completion, validations, formatters, diagnostics, cheat-sheets, code-actions, generation of files, and development tools to help develop Minecraft: Bedrock Edition Addons or Minecraft Education. It's recommended that you use the Dark+ theme for the best color highlighting.
+An extension that provides support for files such as **.mcfunction**, **.json** and **.lang**. This extension adds features like completion, validations, formatters, diagnostics, cheat-sheets, code-actions, generation of files, and development tools to help develop Minecraft: Bedrock Edition Add-Ons or Minecraft Education. It's recommended that you use the Dark+ theme for the best color highlighting.
 
 ### [bridge.](https://bridge-core.app)
 
@@ -90,7 +91,7 @@ DialogueDesigner is a Web application for Bedrock Edition created by the develop
 
 Skin and resource pack creation can be done primarily within any image-editing software, but there are also a few helpful applications that can make this process easier.
 
-### [Blockbench](https://blockbench.net/)
+### [Blockbench Skin Editor](https://blockbench.net/)
 
 Blockbench has a skin editor that allows skins to be edited in 3D (or 2D) with Blockbench's advanced paint tools such as mirror painting and color palettes. It has presets to create entity textures for resource packs as well.
 
@@ -112,7 +113,7 @@ McSkin3D is software designed entirely with skin creation in mind. It has many f
 
 LookatMySkin is a skin previewer that allows you to edit a skin in your program of choice and instantly see it previewed on a 3D player model. It has a variety of features, such as limb posing, zoom, and adjustable background color. This can also be useful for taking screenshots of skins or quickly checking skins for oddities when posed in different ways.
 
-## What's Next?
+## What's next?
 
 While there are many more tools that exist and are constantly being created to make Minecraft content creation easier, this is a great place to start. Creators should check back here often for newly added content and take advantage of all the available tools at their disposal.
 

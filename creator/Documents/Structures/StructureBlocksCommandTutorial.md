@@ -29,18 +29,19 @@ In this tutorial, you will learn:
 
 ## Create a structure
 
-In creative mode, build a structure smaller than 64 x 384 x 64 blocks.
-
 A log cabin is included in the [Structure Blocks Samples Behavior Pack](https://github.com/microsoft/minecraft-samples/blob/main/structure_blocks_sample_behavior_pack/README.md) as `mystructure:house2`.
 
 ![A structure built to look like a log cabin](../Media/StructureBlock/house2.png)
 
 Let's use this as a base to build a village.
 
-To start, we'll save the log cabin.
+> [!NOTE]
+> You can build another structure as long as it's smaller than 64 x 384 x 64 blocks, but it's going to be easier to use our prebuilt cabin!
+
+To start, we'll save the log cabin. Start in creative mode.
 
 1. Choose a name for your structure.
-2. Place the structure block so that the bounding box will surround the log cabin. (Or use corner mode to detect the corners).
+2. Place the structure block so that the bounding box will surround the log cabin. (Or use corner mode to detect the corners.)
 3. Change the size and offset to better encapsulate the building.
 4. Leave Save Entities and Redstone Save Mode as they are, since we are not using them.
 5. Leave Show Bounding Box on.
@@ -61,35 +62,34 @@ Let's begin building a village by adding another log cabin nearby.
    - We won't be using Remove Blocks, Integrity, or Seed since we want to make a usable village.
    - We rotated the building 180 degrees.
    - No mirroring or Animation for us!
-   - Don't show bounding box so that our house loads in without it.
+   - Don't show the bounding box, so that our house loads in without it.
 1. Click Load.
 
 ![The log cabin on a small hill](../Media/StructureBlock/house2move.png)
 
-We'll need another set of stairs but otherwise it's looking good! Now you can place as many copies of this log cabin as you'd like to create a village. You can also customize the look of a village by saving different sections of this building as separate structures (like roofs, eaves, and such) and then varying how they're loaded in.
+We'll need another set of stairs, but otherwise it's looking good! Now you can place as many copies of this log cabin as you'd like to create a village. You can also customize the look of a village by saving different sections of this building as separate structures (like roofs, eaves, and such) and then varying how they're loaded in.
 
 ## Using the /structure command
 
 So now we have a saved structure in a structure block. But what if we want to interact with a structure **without** using a structure block? Let's get to know the `/structure` command.
 
-**Save a structure**
+### Save a structure
 
 This command saves a structure and takes in a name, coordinates, and optionally a save mode, a flag to include entities, and a flag to include blocks.
 
-`structure save <name: string> <from: x y z> <to: x y z> [saveMode: StructureSaveMode] [includesEntities: Boolean][includesBlocks: Boolean]`
+`/structure save <name: string> <from: x y z> <to: x y z> [saveMode: StructureSaveMode] [includesEntities: Boolean][includesBlocks: Boolean]`
 
-**Load a structure**
+### Load a structure
 
 This command loads a structure and takes in the name, location, and optionally rotation, mirroring, animations, entities, and information on whether blocks are include, along with integrity and integrity string.
 
-`structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includesEntites: Boolean] [includesBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
+`/structure load <name: string> <to: x y z> [rotation: Rotation] [mirror: Mirror] [animationMode: StructureAnimationMode] [animationSeconds: float] [includesEntites: Boolean] [includesBlocks: Boolean] [waterlogged: Boolean] [integrity: float] [seed: string]`
 
-
-**Delete a saved structure**
+### Delete a saved structure
 
 This command deletes the saved structure:
 
-`structure delete <name: string>`
+`/structure delete <name: string>`
 
 ![Image of chat open with the structure command entered](../Media/StructureBlock/structurecommand.png)
 
@@ -123,14 +123,7 @@ We're going to place an **impulse command block** and use the `/structure` comma
 3. Type `/give @s acacia_button` to give yourself an button of any type of wood, such as acacia.
 4. Place the command block and acacia button on two blocks that are directly next to each other.
 5. Right-click the command block.
-6. Enter:
-
-`/structure load statue ~ ~ ~ 0_degrees none block_by_block 10`
-
- ...into the command input.
-
- This loads the structure called **statue** at the current location. It does not rotate or mirror it, but animates it in one block at a time over ten seconds. If you wanted to use this mechanic to create a timed scenario, of course you could change 10 to something else.
-
+6. Enter `/structure load statue ~ ~ ~ 0_degrees none block_by_block 10`into the command input.  This loads the structure called **statue** at the current location. It does not rotate or mirror it, but animates it in one block at a time over ten seconds. If you wanted to use this mechanic to create a timed scenario, of course you could change 10 to something else.
 7. After you load the structure, change your world from Creative mode to Adventure mode. (Hint: Use `/gamemode adventure` or `/gamemode a`.)
 8. Click the acacia button and watch!
 

@@ -86,6 +86,8 @@
           items:
             - name: Create a Custom Grass Block Resource Pack
               href: Documents/ResourcePack.md
+            - name: Create a Custom Painting
+              href: Documents/OverwritingPaintings.md
             - name: "Next Steps: Create a Custom Die Block"
               href: Documents/AddCustomDieBlock.md
             - name: "Get Fancy: Create a Sushi Block"
@@ -190,6 +192,8 @@
             href: Documents/UtilizingSubpacks.md
           - name: 'Converting Texture Packs from Minecraft: Java Edition to Minecraft: Bedrock Edition'
             href: Documents/ConvertingTexturePacks.md
+          - name: Custom Pack Settings (currently in preview)
+            href: Documents/AddOns/CustomPackSettings.md
           - name: Preparing Raw Text for Localization
             href: Documents/PreparingRawTextForLocalization.md
         - name: Advanced Topics
