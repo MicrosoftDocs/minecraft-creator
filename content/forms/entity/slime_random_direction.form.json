@@ -1,0 +1,39 @@
+{
+  "id": "minecraft:behavior.slime_random_direction",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.slime_random_direction",
+    "title": "Minecraft Behavior.slime Random Direction Entity",
+    "description": "Allows the entity to move in random directions like a slime.",
+    "fields": [
+      {
+        "id": "add_random_time_range",
+        "title": "Add Random Time Range",
+        "description": "Additional time (in whole seconds), chosen randomly in the range of [0, \"add_random_time_range\"], to add to \"min_change_direction_time\". Default value: 3.",
+        "dataType": 0
+      },
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "min_change_direction_time",
+        "title": "Min Change Direction Time",
+        "description": "Constant minimum time (in seconds) to wait before choosing a new direction. Default value: 2.",
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "turn_range",
+        "title": "Turn Range",
+        "description": "Maximum rotation angle range (in degrees) when randomly choosing a new direction. Default value: 360.",
+        "dataType": 0
+      }
+    ]
+  }
+}

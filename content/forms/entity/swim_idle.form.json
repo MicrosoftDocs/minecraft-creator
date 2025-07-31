@@ -1,0 +1,33 @@
+{
+  "id": "minecraft:behavior.swim_idle",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.swim_idle",
+    "title": "Minecraft Behavior.swim Idle Entity",
+    "description": "Allows the entity go idle, if swimming. Entity must be in water.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "idle_time",
+        "title": "Idle Time",
+        "description": "Amount of time (in seconds) to stay idle. Default value: 5.",
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "success_rate",
+        "title": "Success Rate",
+        "description": "Percent chance this entity will go idle, 1.0 = 100%. Default value: 0.1.",
+        "dataType": 3
+      }
+    ]
+  }
+}

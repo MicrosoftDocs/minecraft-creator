@@ -12,14 +12,14 @@ ms.date: 02/11/2025
 The material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: "up", "down", "north", "south", "east", "west", or "*". You can also give an instance the name of your choosing such as "my_instance", and then assign it to a face by doing "north":"my_instance".
 
 > [!Note]
-> From 1.21.80 onward, when using a minecraft:geometry component or minecraft:material_instances component, you must include both.
+> From 1.21.80 onward, you must define both a `minecraft:geometry` component and a `minecraft:material_instances` component when using either of the two for your custom block.
 
 
 ## Material Instances Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| * | *not set* | [*](#*-item-type) item |  | Block Fabricator: `{"texture":"mikeamm_gwve_fabricator","render_method":"alpha_test","ambient_occlusion":1}`, Block Gray Ore: `{"texture":"mikeamm_gwve_gray_ore","render_method":"alpha_test","face_dimming":false}`, Block Frond Top: `{"texture":"frond_top","render_method":"alpha_test"}` | 
+| * | *not set* | [*](#*-item-type) item |Defines the default texture that will be used when a texture isn't given for a named side | Block Fabricator: `{"texture":"mikeamm_gwve_fabricator","render_method":"alpha_test","ambient_occlusion":1}`, Block Gray Ore: `{"texture":"mikeamm_gwve_gray_ore","render_method":"alpha_test","face_dimming":false}`, Block Frond Top: `{"texture":"frond_top","render_method":"alpha_test"}` | 
 | down | *not set* | [Down](#down-item-type) item |  |  | 
 | east | *not set* | [East](#east-item-type) item |  |  | 
 | Material Instance | *not set* | Array of [Material Instance](#material-instance-item-type) items | A material instance definition to map to a material instance in a geometry file. The material instance "*" will be used for any materials that don't have a match. |  | 

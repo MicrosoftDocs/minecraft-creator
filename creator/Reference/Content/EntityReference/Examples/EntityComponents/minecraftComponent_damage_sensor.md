@@ -229,6 +229,10 @@ At /minecraft:entity/component_groups/minecraft:rolled_up/minecraft:damage_senso
 "minecraft:damage_sensor": {
   "triggers": [
     {
+      "cause": "fall",
+      "deals_damage": "no"
+    },
+    {
       "on_damage": {
         "filters": {
           "all_of": [

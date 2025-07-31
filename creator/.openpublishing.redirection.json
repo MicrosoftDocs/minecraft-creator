@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "Reference/Content/AddonsReference/Examples/addonmanifest.md",
+      "redirect_url": "/minecraft/creator/reference/content/addonsreference/packmanifest",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "Reference/Content/EntityReference/Examples/EntityEvents/minecraftEvents_emit_particle.md",
       "redirect_url": "/minecraft/creator/reference/EntityReference/Examples/EventActions/emit_particle",
       "redirect_document_id": false
@@ -28,11 +33,6 @@
     {
       "source_path": "Reference/Content/EntityReference/Examples/EntityEvents/minecraftEvents_set_property.md",
       "redirect_url": "/minecraft/creator/reference/EntityReference/Examples/EventActions/set_property",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "Reference/Content/AddonsReference/Examples/AddonManifest.md",
-      "redirect_url": "/minecraft/creator/reference/AddonsReference/PackManifest",
       "redirect_document_id": false
     },
     {

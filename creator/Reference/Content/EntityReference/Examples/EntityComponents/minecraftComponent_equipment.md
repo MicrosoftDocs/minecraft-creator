@@ -16,7 +16,7 @@ Sets the Equipment table to use for this Entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| slot_drop_chance | *not set* | Array of strings | A list of slots with the chance to drop an equipped item from that slot. | Drowned: `[{"slot":"slot.weapon.offhand","drop_chance":1}]`, Fox: `[{"slot":"slot.weapon.mainhand","drop_chance":1}]`, Villager v2: `[{"slot":"slot.weapon.mainhand","drop_chance":0}]` | 
+| slot_drop_chance | *not set* | Array of strings | A list of slots with the chance to drop an equipped item from that slot. | Copper Golem: `[{"slot":"slot.weapon.mainhand","drop_chance":1}]`, Drowned: `[{"slot":"slot.weapon.offhand","drop_chance":1}]`, Villager v2: `[{"slot":"slot.weapon.mainhand","drop_chance":0}]` | 
 | table | *not set* | String | The file path to the equipment table, relative to the behavior pack's root. | Bogged: `"loot_tables/entities/skeleton_gear.json"`, Drowned: `"loot_tables/entities/drowned_ranged_equipment.json"`, `"loot_tables/entities/drowned_equipment.json"` | 
 
 ## Samples
@@ -27,6 +27,20 @@ Sets the Equipment table to use for this Entity.
 ```json
 "minecraft:equipment": {
   "table": "loot_tables/entities/skeleton_gear.json"
+}
+```
+
+#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
+
+
+```json
+"minecraft:equipment": {
+  "slot_drop_chance": [
+    {
+      "slot": "slot.weapon.mainhand",
+      "drop_chance": 1
+    }
+  ]
 }
 ```
 

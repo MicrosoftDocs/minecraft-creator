@@ -11,41 +11,29 @@ ms.date: 07/17/2025
 
 It takes only a few files to create a custom player skin in Minecraft. These are the usual ones found in most add-on packs:
 
-- en_US.lang - This file lives in the **texts** folder and the name might be different, depending on your language preferences
-- manifest.json
+- **en_US.lang** - This file lives in the **texts** folder and the name might be different, depending on your language preferences
+- **manifest.json**
 
 And these are the files specific to a skin pack:
 
-- <skin_graphic>.png - The image that will be mapped into the player. There are some of tools out there to help with this, but for now, we are just going to use a basic graphic-editing program like Paint.net.
-- skins.json - JSON file containing the metadata about the skins in your skin pack
+- **<skin_graphic>.png** - The image that will be mapped into the player. There are some of tools out there to help with this, but for now, we are just going to use a basic graphic-editing program like Paint.net.
+- **skins.json** - JSON file containing the metadata about the skins in your skin pack
 
 If you put all these files together and make sure everything is complete and correct, then you will have created your own custom skin.
 
-As always, there are lots and lots ... and lots... of tools and resources out in the world about skin packs made by creators like you. This guide is intended to give you an overview of the basics so that you will have a point of reference to learn more.
+As always, there are lots and lots (and lots) of tools and resources out in the world about skin packs made by creators like you. This guide is intended to give you an overview of the basics so that you will have a point of reference to learn more.
 
-In this tutorial, you will learn:
-
-> [!div class="checklist"]
->
-> - That it's possible to change your skin in Minecraft: Bedrock Edition.
-
-> - How to customize a very simple template.
-
-## Sample Skin Pack
+## Sample skin pack
 
 There is a [sample skin pack](https://github.com/microsoft/minecraft-samples/tree/main/skin_pack_sample) available at the Microsoft samples GitHub. It may be used to understand the structure of skin packs and to check your work after the tutorial.
 
-### Requirements
+Before beginning this tutorial, you should be familiar with [the basics of add-on development](GettingStarted.md).
 
-It's recommended that the following be completed before beginning this tutorial.
-
-- [Getting Started with Add-On Development](GettingStarted.md)
-
-## Building the Skin Pack
+## Building the skin pack
 
 For Minecraft to find and use your skin pack files, you have to set up the folders and files in a particular structure. This tutorial will guide you through creating the most basic folder and file structure of a pack that can be imported and used in Minecraft.
 
-Start by creating a folder and naming it something like **My_SKIN_Pack**. Then, add the following files:
+Start by creating a folder and naming it something like **My_Skin_Pack**. Then, add the following files:
 
 ### manifest.json
 
@@ -53,23 +41,24 @@ Start by creating a folder and naming it something like **My_SKIN_Pack**. Then, 
 
 2. Paste this content in there and put in the UUIDs.
 
-```json
-{
-  "format_version": 2,
-  "header": {
-      "name": "Tutorial Skin Pack",
-      "uuid": "<FIRST GENERATED UUID>",
-      "version": [1, 0, 0]
-  },
-  "modules": [
+    ```json
     {
-      "type": "skin_pack",
-      "uuid": "<SECOND GENERATED UUID>",
-      "version": [1, 0, 0]
+      "format_version": 2,
+      "header": {
+          "name": "Tutorial Skin Pack",
+          "uuid": "<FIRST GENERATED UUID>",
+          "version": [1, 0, 0]
+      },
+      "modules": [
+        {
+          "type": "skin_pack",
+          "uuid": "<SECOND GENERATED UUID>",
+          "version": [1, 0, 0]
+        }
+      ]
     }
-  ]
-}
-```
+    ```
+
 3. Save and close the file.
 
 ### texts/en_US.lang
@@ -80,11 +69,11 @@ Start by creating a folder and naming it something like **My_SKIN_Pack**. Then, 
 
 3. Paste in this text:
 
-```
-skin.sample.skin_example=Sample Skin
-skinpack.sample=Tutorial Skin Pack
-skinpack.sample.by=YourNameHere
-```
+    ```text
+    skin.sample.skin_example=Sample Skin
+    skinpack.sample=Tutorial Skin Pack
+    skinpack.sample.by=YourNameHere
+    ```
 
 4. Save the file.
 
@@ -115,14 +104,11 @@ Create a text file named **skins.json** and paste this text in there:
 
 The `serialize_name`  and `localization_name` values are used in the **.lang** file in the paths starting with `skin.` or `skinpack.`
 
-
-## Deploying the Skin Pack
+## Deploying the skin pack
 
 1. To use your new skin pack, create a **.zip** file of the contents and save it with the **.mcpack** extension.
 
-2. Double-click the **.mcpack** to open it. Minecraft will launch and import the files automatically into the **skin_packs** folder inside your **com.mojang** directory.
-
-You should see messages stating that the import has started and that the skin pack was imported successfully.
+2. Double-click the **.mcpack** to open it. Minecraft will launch and import the files automatically into the **skin_packs** folder inside your **com.mojang** directory. You should see messages stating that the import has started and that the skin pack was imported successfully.
 
 3. After Minecraft loads, click the **Dressing Room** button.
 
@@ -144,9 +130,10 @@ If Minecraft doesn't recognize your skin, then go to the main Minecraft Settings
 
 ![image of Minecraft Settings screen. General tab, with 'Only Allow Trusted Skins' toggled off](Media/SkinPack/toggle_off_only_allow_trusted_skin_packs.png)
 
-## What's Next?
+## What's next?
 
-Now that you know more about how skin packs work, maybe you should learn more about how the other Add-On packs work.
+Now that you know more about how skin packs work, learn more about how other add-on packs work if you haven't yet!
 
-> [!div class="nextstepaction"]
-> [Comprehensive Add-On Pack Contents](ComprehensivePackContents.md)
+- [An Introduction to Behavior Packs](./BehaviorPack.md)
+- [An Introduction to Resource Packs](./ResourcePack.md)
+- [Comprehensive Add-On Pack Contents](ComprehensivePackContents.md)

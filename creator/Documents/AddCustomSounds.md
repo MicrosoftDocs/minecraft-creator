@@ -1,5 +1,5 @@
 ---
-author: v-jeffkim
+author: chipotle
 ms.author: mikeam
 title: Creating and Adding Custom Sounds 
 description: "A tutorial for creating and adding custom sounds to Minecraft: Bedrock Edition"
@@ -23,24 +23,22 @@ We recommend completing the following before beginning this tutorial:
 
 You will also need to download the [Vanilla resource pack](https://aka.ms/resourcepacktemplate).
 
-## Create a resource pack
+## Create a Resource Pack
 
-The first step in our journey is to create a resource pack to hold your custom sounds. If you completed the prerequisites as suggested (hint, hint), you're already familiar with this process. Name your resource pack **custom_sound_pack**
+The first step in our journey is to create a Resource Pack to hold your custom sounds. If you completed the prerequisites as suggested (hint, hint), you're already familiar with this process. Name your resource pack **custom_sound_pack**.
 
-For a quick refresher, see [Introduction to Resource Packs](ResourcePack.md).
-
-For detailed information on resource packs, see the [Comprehensive Resource Pack](ComprehensivePackContents.md) guide.
+For a quick refresher, see [Introduction to Resource Packs](ResourcePack.md). For detailed information on Resource Packs, see the [Comprehensive Resource Pack](ComprehensivePackContents.md) guide.
 
 ## Setting up a sound directory
 
-Now that the resource pack has been created, it's time to set up a place for our sound files.
+Now that the Resource Pack has been created, it's time to set up a place for our sound files.
 
 1. In **File Explorer**, navigate to the **com.mojang** folder.
 
-    * Press **Win+R** to open **Run**.
-    * If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
-    * Alternatively, if you are using preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
-    * Click **OK**.
+     - Press **Win+R** to open **Run**.
+     - If you are using main Minecraft releases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
+     - Alternatively, if you are using preview Minecraft preleases, copy and paste the following into the **Open** field: `%localappdata%\Packages\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\LocalState\games\com.mojang`
+     - Click **OK**.
 
 2. Open the **development_resource_packs** folder.
 3. Open **custom_sound_pack**.
@@ -66,20 +64,20 @@ If you'd like an example sound file to use, download [this sample .OGG file](htt
 
 Congratulations, things are moving along nicely. You have a sound to replace, a new sound ready, and your resource pack is set up. Now it's time to figure out where your sound will live.
 
-The [vanilla resource pack](https://github.com/Mojang/bedrock-samples/tree/main/resource_pack/sounds) contains every sound in vanilla Minecraft, and this folder will show you how to structure your custom resource pack so that you can replace the sounds you want.
+The [vanilla resource pack](https://github.com/Mojang/bedrock-samples/tree/main/resource_pack/sounds) contains every sound in vanilla Minecraft, and this folder will show you how to structure your custom Resource Pack so that you can replace the sounds you want.
 
 From here, you _could_ scroll through the list of every Minecraft sound and find the sound file for a chest opening. Instead, we recommend using **CTRL+F** to find the file. For our example, the file we are looking for is the **chestopen** file; it happens to be located at **sounds/random/chestopen**.
 
 Now we know where to place our custom sound file. Navigate to **com.mojang > development_resource_packs > custom_sound_pack > sounds**. In the **sounds** folder, create a new folder named **random** and place your custom **chestopen.ogg** file into it.
 
-If you want to replace other sounds, locate them in the vanilla resource pack and recreate the folder structure in your resource pack. For example, if you want to change one of the sounds for rain in your world, you'll need to create the following sub-folders:
+If you want to replace other sounds, locate them in the vanilla Resource Pack and recreate the folder structure in your Resource Pack. For example, if you want to change one of the sounds for rain in your world, you'll need to create the following sub-folders:
 
 **com.mojang > development_resource_packs > sounds > ambient > weather**
 
 Inside the weather folder you can add [files for the rain sounds you want to replace](https://github.com/Mojang/bedrock-samples/tree/main/resource_pack/sounds/ambient/weather).
 
->[!Note]
-> You must give your new sound file the *exact same name* as the file you want to replace; however, you *do not* need to use the same format. So you can replace **rain1.fsb** with **rain1.ogg**, as long as the file name before the extension matches exactly.
+>[!NOTE]
+> You must give your new sound file the _exact same name_ as the file you want to replace; however, you do _not_ need to use the same format. So you can replace **rain1.fsb** with **rain1.ogg**, as long as the file name before the extension matches exactly.
 
 ## Testing your sound
 
@@ -135,7 +133,7 @@ In **sound_definitions.json**, add the following code:
 }
 ```
 
-When we test our sound again, you should notice that opening a chest will play one of your two chest open sounds randomly! 
+When we test our sound again, you should notice that opening a chest will play one of your two chest open sounds randomly!
 
 ### Using the /playsound command
 

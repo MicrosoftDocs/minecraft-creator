@@ -201,13 +201,13 @@
         "defaultValue": false,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+          "/vanilla/behavior_pack/entities/evocation_illager.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
@@ -229,13 +229,13 @@
         "defaultValue": true,
         "dataType": 1,
         "samples": {
-          "/vanilla/behavior_pack/entities/evocation_illager.json": [
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
             }
           ],
-          "/vanilla/behavior_pack/entities/husk.json": [
+          "/vanilla/behavior_pack/entities/evocation_illager.json": [
             {
               "path": "/minecraft:entity/components/minecraft:navigation.walk/",
               "content": true
@@ -459,7 +459,9 @@
           "path": "/minecraft:entity/components/minecraft:navigation.walk/",
           "content": {
             "avoid_water": true,
-            "avoid_damage_blocks": true
+            "avoid_damage_blocks": true,
+            "can_pass_doors": true,
+            "can_open_doors": true
           }
         }
       ],

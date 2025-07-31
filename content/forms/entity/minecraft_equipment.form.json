@@ -11,6 +11,17 @@
         "description": "A list of slots with the chance to drop an equipped item from that slot.",
         "dataType": 17,
         "samples": {
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:equipment/",
+              "content": [
+                {
+                  "slot": "slot.weapon.mainhand",
+                  "drop_chance": 1
+                }
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/drowned.json": [
             {
               "path": "/minecraft:entity/component_groups/minecraft:ranged_equipment/minecraft:equipment/",
@@ -138,6 +149,19 @@
           "path": "/minecraft:entity/components/minecraft:equipment/",
           "content": {
             "table": "loot_tables/entities/skeleton_gear.json"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:equipment/",
+          "content": {
+            "slot_drop_chance": [
+              {
+                "slot": "slot.weapon.mainhand",
+                "drop_chance": 1
+              }
+            ]
           }
         }
       ],
