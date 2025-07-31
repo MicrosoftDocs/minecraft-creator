@@ -382,6 +382,7 @@ Entity is angered
 Entity is calmed
 - `minecraft:on_chest`
 Entity is on a chest
+- `minecraft:on_death`
 - `minecraft:on_deflate`
 Entity deflates
 - `minecraft:on_eat_block`
