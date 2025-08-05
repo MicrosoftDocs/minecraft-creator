@@ -30,9 +30,9 @@ highlightedContent:
       itemType: whats-new
       url: Documents/ControlSchemes.md
     #card
-    - title: "1.21.90 Update Summary"
+    - title: "1.21.100 Update Summary"
       itemType: whats-new
-      url: Documents/Update1.21.90.md
+      url: Documents/Update1.21.100.md
     #card
     - title: Camera Command
       itemType: whats-new
