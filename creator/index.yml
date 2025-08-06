@@ -26,6 +26,10 @@ highlightedContent:
       itemType: learn
       url: Documents/LearningJourneyGuide.md
     #card
+    - title: Game Development Journey
+      itemType: learn
+      url: Documents/GameDevOverview.md
+    #card
     - title: "Control Schemes"
       itemType: whats-new
       url: Documents/ControlSchemes.md
@@ -33,10 +37,6 @@ highlightedContent:
     - title: "1.21.100 Update Summary"
       itemType: whats-new
       url: Documents/Update1.21.100.md
-    #card
-    - title: Camera Command
-      itemType: whats-new
-      url: Documents/CameraCommandIntroduction.md
     #card
     - title: "Minecraft Bedrock Editor"
       itemType: whats-new

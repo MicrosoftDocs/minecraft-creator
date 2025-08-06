@@ -216,6 +216,8 @@
             href: Documents/ActorStorage.md
     - name: Game Logic
       items:
+        - name: Gameplay Development Journey
+          href: Documents/GameDevOverview.md
         - name: Redstone Guide
           href: Documents/RedstoneGuide.md
         - name: Molang Beginner's Guide
