@@ -1,9 +1,10 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Addons Documentation - manifest.json
+title: "Add-Ons Reference: manifest.json"
 description: "A reference document detailing the basic information about manifest.json files"
 ms.service: minecraft-bedrock-edition
+ms.date: 08/04/2025
 ---
 
 # manifest.json for Behavior/Resource/Skin Packs and World Templates

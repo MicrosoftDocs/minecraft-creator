@@ -74,7 +74,7 @@ As a creator, there are three ways to overwrite vanilla assets. Each method has 
     ### Overwriting Blocks
     Vanilla block *definitions* are mostly immutable, but as a creator, you can override the *textures* for vanilla blocks by using the assets located in:
 
-    - [RP/blocks.json](https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/blocks.json)
+    - [RP/blocks.json](https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/blocks.json) ([Reference Documentation](../Reference/Content/BlockReference/Examples/BlocksJsonFileStructure.md))
 
         Defines the texture set for the in-world and in-hand appearance of blocks; whether a block’s texture is isotropic or anisotropic; and for how blocks sound when they’re placed or destroyed.
 

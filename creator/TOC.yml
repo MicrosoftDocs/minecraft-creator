@@ -689,6 +689,8 @@
             href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
         - name: Block JSON
           items:
+          - name: blocks.json File Structure
+            href: Reference/Content/BlockReference/Examples/BlocksJsonFileStructure.md
           - name: Block Culling
             href: Reference/Content/blockreference/Examples/Definitions/BlockCulling.md
         - name: Animation JSON
