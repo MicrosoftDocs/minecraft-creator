@@ -4,16 +4,16 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.PotionLiquidType Class
-description: Contents of the @minecraft/server.PotionLiquidType class.
+title: minecraft/server.PotionDeliveryType Class
+description: Contents of the @minecraft/server.PotionDeliveryType class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# PotionLiquidType Class
+# PotionDeliveryType Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Represents a type of potion liquid - like splash, or lingering - that can be used with PotionOptions.
+Represents how the potion effect is delivered.
 
 ## Properties
 

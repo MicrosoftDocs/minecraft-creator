@@ -11,6 +11,15 @@ description: Contents of the @minecraft/server-editor.EditorStructure class.
 
 ## Properties
 
+### **displayName**
+`read-only displayName: string;`
+
+Type: *string*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/server.InvalidStructureError*](../../../scriptapi/minecraft/server/InvalidStructureError.md)
+
 ### **id**
 `read-only id: string;`
 

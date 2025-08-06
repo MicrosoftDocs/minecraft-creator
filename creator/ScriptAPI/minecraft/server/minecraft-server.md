@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.1.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.110-beta.22 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.110-beta.23 of Minecraft.
 
 ## Available Versions
 - `2.3.0-beta`
@@ -394,9 +394,8 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayerPlaceBlockBeforeEventSignal](PlayerPlaceBlockBeforeEventSignal.md)
 - [PlayerSpawnAfterEvent](PlayerSpawnAfterEvent.md)
 - [PlayerSpawnAfterEventSignal](PlayerSpawnAfterEventSignal.md)
+- [PotionDeliveryType](PotionDeliveryType.md)
 - [PotionEffectType](PotionEffectType.md)
-- [PotionLiquidType](PotionLiquidType.md)
-- [PotionModifierType](PotionModifierType.md)
 - [Potions](Potions.md)
 - [PressurePlatePopAfterEvent](PressurePlatePopAfterEvent.md)
 - [PressurePlatePopAfterEventSignal](PressurePlatePopAfterEventSignal.md)
@@ -500,7 +499,6 @@ The following API versions are from a major version that is documented here: [*@
 - [PlayAnimationOptions](PlayAnimationOptions.md)
 - [PlayerAimAssistSettings](PlayerAimAssistSettings.md)
 - [PlayerSoundOptions](PlayerSoundOptions.md)
-- [PotionOptions](PotionOptions.md)
 - [ProjectileShootOptions](ProjectileShootOptions.md)
 - [RangeComparison](RangeComparison.md)
 - [RawMessage](RawMessage.md)
@@ -541,6 +539,8 @@ The following API versions are from a major version that is documented here: [*@
 - [InvalidEntityError](InvalidEntityError.md)
 - [InvalidItemStackError](InvalidItemStackError.md)
 - [InvalidIteratorError](InvalidIteratorError.md)
+- [InvalidPotionDeliveryTypeError](InvalidPotionDeliveryTypeError.md)
+- [InvalidPotionEffectTypeError](InvalidPotionEffectTypeError.md)
 - [InvalidStructureError](InvalidStructureError.md)
 - [ItemCustomComponentAlreadyRegisteredError](ItemCustomComponentAlreadyRegisteredError.md)
 - [ItemCustomComponentReloadNewComponentError](ItemCustomComponentReloadNewComponentError.md)

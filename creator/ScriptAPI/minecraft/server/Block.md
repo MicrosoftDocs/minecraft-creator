@@ -165,9 +165,15 @@ Type: *number*
 - [getComponent](#getcomponent)
 - [getItemStack](#getitemstack)
 ::: moniker range="=minecraft-bedrock-experimental"
+- [getLightLevel](#getlightlevel)
+::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
 - [getMapColor](#getmapcolor)
 ::: moniker-end
 - [getRedstonePower](#getredstonepower)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getSkyLightLevel](#getskylightlevel)
+::: moniker-end
 - [getTags](#gettags)
 - [hasTag](#hastag)
 - [isLiquidBlocking](#isliquidblocking)
@@ -359,6 +365,25 @@ Notes:
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 
 ::: moniker range="=minecraft-bedrock-experimental"
+### **getLightLevel**
+`
+getLightLevel(): number
+`
+
+Returns the total brightness level of light shining on a certain block.
+
+**Returns** *number* - The brightness level on the block.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
 ### **getMapColor**
 `
 getMapColor(): RGBA
@@ -386,6 +411,25 @@ Returns the net redstone power of this block.
 Notes:
 - This function can throw errors.
   - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getSkyLightLevel**
+`
+getSkyLightLevel(): number
+`
+
+Returns the brightness level of light shining from the sky on a certain block.
+
+**Returns** *number* - The brightness level on the block.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
+::: moniker-end
 
 ### **getTags**
 `

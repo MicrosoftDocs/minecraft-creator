@@ -4,20 +4,14 @@ author: jakeshirley
 ms.author: jashir
 ms.service: minecraft-bedrock-edition
 ms.date: 02/10/2025
-title: minecraft/server.PotionModifierType Class
-description: Contents of the @minecraft/server.PotionModifierType class.
+title: minecraft/server.InvalidPotionEffectTypeError Class
+description: Contents of the @minecraft/server.InvalidPotionEffectTypeError class.
 monikerRange: "=minecraft-bedrock-experimental"
 ---
-# PotionModifierType Class
+# InvalidPotionEffectTypeError Class
 
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Represents a type of potion modifier - like strong, or long - that can be used with PotionOptions.
-
-## Properties
-
-### **id**
-`read-only id: string;`
-
-Type: *string*
+## Extends
+- *Error*

@@ -18,4 +18,5 @@ Defines type information for graphics settings properties.
     [GraphicsSettingsProperty.ShowChunkBoundaries]?: boolean;
     [GraphicsSettingsProperty.ShowCompass]?: boolean;
     [GraphicsSettingsProperty.NightVision]?: boolean;
+    [GraphicsSettingsProperty.ShowToastNotifications]?: boolean;
 };`

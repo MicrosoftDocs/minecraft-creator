@@ -218,6 +218,7 @@ Entity becomes a red snapper
 Entity becomes scared
 - `minecraft:become_sheperd`
 Entity, presumably a villager, becomes a shepherd
+- `minecraft:become_statue`
 - `minecraft:become_stunned`
 Entity becomes stunned
 - `minecraft:become_threadfin`
@@ -382,7 +383,6 @@ Entity is angered
 Entity is calmed
 - `minecraft:on_chest`
 Entity is on a chest
-- `minecraft:on_death`
 - `minecraft:on_deflate`
 Entity deflates
 - `minecraft:on_eat_block`
@@ -415,6 +415,7 @@ Entity is scared
 - `minecraft:on_sheared`
 Entity is sheared
 - `minecraft:on_stop_tempting`
+- `minecraft:on_take_flower`
 - `minecraft:on_tame`
 Entity is tamed
 - `minecraft:on_target_start_looking`

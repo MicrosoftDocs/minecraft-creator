@@ -13,9 +13,20 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Represents a type of potion effect - like healing or leaping - that can be used with PotionOptions.
+Represents a type of potion effect - like healing or leaping.
 
 ## Properties
+
+### **durationTicks**
+`read-only durationTicks?: number;`
+
+Duration of the effect when applied to an entity in ticks. Undefined means the effect does not expire.
+
+Type: *number*
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md)
 
 ### **id**
 `read-only id: string;`

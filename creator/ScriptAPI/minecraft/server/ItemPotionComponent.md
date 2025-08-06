@@ -20,6 +20,17 @@ When present on an item, this item is a potion item.
 
 ## Properties
 
+### **potionDeliveryType**
+`read-only potionDeliveryType: PotionDeliveryType;`
+
+The PotionDeliveryType associated with the potion item.
+
+Type: [*PotionDeliveryType*](PotionDeliveryType.md)
+
+Notes:
+  - This property can throw errors when used.
+    - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
+
 ### **potionEffectType**
 `read-only potionEffectType: PotionEffectType;`
 
@@ -29,26 +40,7 @@ Type: [*PotionEffectType*](PotionEffectType.md)
 
 Notes:
   - This property can throw errors when used.
-
-### **potionLiquidType**
-`read-only potionLiquidType: PotionLiquidType;`
-
-The PotionLiquidType associated with the potion item.
-
-Type: [*PotionLiquidType*](PotionLiquidType.md)
-
-Notes:
-  - This property can throw errors when used.
-
-### **potionModifierType**
-`read-only potionModifierType: PotionModifierType;`
-
-The PotionModifierType associated with the potion item.
-
-Type: [*PotionModifierType*](PotionModifierType.md)
-
-Notes:
-  - This property can throw errors when used.
+    - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
 
 ## Constants
 

@@ -24,7 +24,7 @@ The @minecraft/server-gametest module provides scriptable APIs for scaffolding a
     "version": "1.0.0-beta"
 }
 ```
-This is version 1.x.x of this module, which is the latest as of version 1.21.110-beta.22 of Minecraft.
+This is version 1.x.x of this module, which is the latest as of version 1.21.110-beta.23 of Minecraft.
 
 ## Available Versions
 - `1.0.0-beta`
@@ -177,6 +177,44 @@ gameTest
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/simpleMobAsyncTest.ts) code sandbox.
+
+### **setAfterBatchCallback**
+`
+setAfterBatchCallback(batchName: string, batchCallback: () => void): void
+`
+
+Sets a callback that is called after the batch gets called. This will overwrite previously set callbacks for this batch.
+
+#### **Parameters**
+- **batchName**: *string*
+  
+  Name of the batch of tests the callback will run after.
+- **batchCallback**: () => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
+- This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md)
+
+### **setBeforeBatchCallback**
+`
+setBeforeBatchCallback(batchName: string, batchCallback: () => void): void
+`
+
+Sets a callback that is called before the batch gets called. This will overwrite previously set callbacks for this batch.
+
+#### **Parameters**
+- **batchName**: *string*
+  
+  Name of the batch of tests the callback will run before.
+- **batchCallback**: () => *void*
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can be called in early-execution mode.
+- This function can throw errors.
+  - Throws [*GameTestError*](GameTestError.md)
 
 ### **spawnSimulatedPlayer**
 `

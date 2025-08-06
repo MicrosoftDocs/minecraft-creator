@@ -13,16 +13,48 @@ monikerRange: "=minecraft-bedrock-experimental"
 > [!CAUTION]
 > This class is still in pre-release.  Its signature may change or it may be removed in future releases.
 
-Used for accessing all potion effects, liquids, and modifiers currently available for use within the world.
+Used for accessing all potion effect types, delivery types, and creating potions.
 
 ## Methods
-- [getPotionEffectType](#getpotioneffecttype)
-- [getPotionLiquidType](#getpotionliquidtype)
-- [getPotionModifierType](#getpotionmodifiertype)
+- [getAllDeliveryTypes](#getalldeliverytypes)
+- [getAllEffectTypes](#getalleffecttypes)
+- [getDeliveryType](#getdeliverytype)
+- [getEffectType](#geteffecttype)
+- [resolve](#resolve)
 
-### **getPotionEffectType**
+### **getAllDeliveryTypes**
 `
-static getPotionEffectType(potionEffectId: string): PotionEffectType | undefined
+static getAllDeliveryTypes(): PotionDeliveryType[]
+`
+
+Retrieves handles for all registered potion delivery types.
+
+**Returns** [*PotionDeliveryType*](PotionDeliveryType.md)[] - Array of all registered delivery type handles.
+
+### **getAllEffectTypes**
+`
+static getAllEffectTypes(): PotionEffectType[]
+`
+
+Retrieves all type handle for all registered potion effects.
+
+**Returns** [*PotionEffectType*](PotionEffectType.md)[] - Array of all registered effect type handles.
+
+### **getDeliveryType**
+`
+static getDeliveryType(potionDeliveryId: string): PotionDeliveryType | undefined
+`
+
+Retrieves a type handle for a specified potion delivery id.
+
+#### **Parameters**
+- **potionDeliveryId**: *string*
+
+**Returns** [*PotionDeliveryType*](PotionDeliveryType.md) | *undefined* - A type handle wrapping the valid delivery id, or undefined for an invalid delivery id.
+
+### **getEffectType**
+`
+static getEffectType(potionEffectId: string): PotionEffectType | undefined
 `
 
 Retrieves a type handle for a specified potion effect id.
@@ -34,26 +66,19 @@ Retrieves a type handle for a specified potion effect id.
 
 **Returns** [*PotionEffectType*](PotionEffectType.md) | *undefined* - A type handle wrapping the valid effect id, or undefined for an invalid effect id.
 
-### **getPotionLiquidType**
+### **resolve**
 `
-static getPotionLiquidType(potionLiquidId: string): PotionLiquidType | undefined
+static resolve(potionEffectType: PotionEffectType | T, potionDeliveryType: PotionDeliveryType | U): ItemStack
 `
 
-Retrieves a type handle for a specified potion liquid id.
+Creates a potion given an effect and delivery type.
 
 #### **Parameters**
-- **potionLiquidId**: *string*
+- **potionEffectType**: *PotionEffectType* | *T*
+- **potionDeliveryType**: *PotionDeliveryType* | *U*
 
-**Returns** [*PotionLiquidType*](PotionLiquidType.md) | *undefined* - A type handle wrapping the valid liquid id, or undefined for an invalid liquid id.
-
-### **getPotionModifierType**
-`
-static getPotionModifierType(potionModifierId: string): PotionModifierType | undefined
-`
-
-Retrieves a type handle for a specified potion modifier id.
-
-#### **Parameters**
-- **potionModifierId**: *string*
-
-**Returns** [*PotionModifierType*](PotionModifierType.md) | *undefined* - A type handle wrapping the valid modifier id, or undefined for an invalid modifier id.
+**Returns** *ItemStack*
+  
+Notes:
+- This function can throw errors.
+  - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), [*InvalidPotionDeliveryTypeError*](InvalidPotionDeliveryTypeError.md), [*InvalidPotionEffectTypeError*](InvalidPotionEffectTypeError.md)

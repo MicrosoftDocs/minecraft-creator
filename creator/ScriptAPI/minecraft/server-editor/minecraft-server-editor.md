@@ -22,7 +22,7 @@ monikerRange: "=minecraft-bedrock-experimental"
     "version": "0.1.0-beta"
 }
 ```
-This is version 0.x.x of this module, which is the latest as of version 1.21.110-beta.22 of Minecraft.
+This is version 0.x.x of this module, which is the latest as of version 1.21.110-beta.23 of Minecraft.
 
 ## Available Versions
 - `0.1.0-beta`
@@ -128,6 +128,8 @@ This is version 0.x.x of this module, which is the latest as of version 1.21.110
 - [BlockIdentifierObservableValidator](BlockIdentifierObservableValidator.md)
 - [BlockPalette](BlockPalette.md)
 - [BlockPaletteManager](BlockPaletteManager.md)
+- [BlockPaletteSelectedItemChangeAfterEvent](BlockPaletteSelectedItemChangeAfterEvent.md)
+- [BlockPaletteSelectedItemChangeAfterEventSignal](BlockPaletteSelectedItemChangeAfterEventSignal.md)
 - [BlockUtilities](BlockUtilities.md)
 - [BrushShape](BrushShape.md)
 - [BrushShapeManager](BrushShapeManager.md)
