@@ -1,0 +1,19 @@
+{
+  "id": "minecraft:replace_biomes",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:replace_biomes",
+    "title": "Minecraft Replace Biomes Misc",
+    "description": "Replaces a specified portion of one or more Minecraft biomes.",
+    "fields": [
+      {
+        "id": "replacements",
+        "title": "Replacements",
+        "description": "List of biome replacement configurations. Retroactively adding a new replacement to the front of this list will cause the world generation to change. Please add any new replacements to the end of the list.",
+        "dataType": 16,
+        "subFormId": "misc/biome_replacement",
+        "isRequired": true
+      }
+    ]
+  }
+}

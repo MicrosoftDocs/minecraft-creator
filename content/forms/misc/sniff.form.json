@@ -1,0 +1,58 @@
+{
+  "id": "minecraft:behavior.sniff",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.sniff",
+    "title": "Minecraft Behavior.sniff Misc",
+    "description": "Allows this entity to detect the nearest player within \"sniffing_radius\" and update its \"minecraft:suspect_tracking\" component state",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "cooldown_range",
+        "title": "Cooldown Range",
+        "description": "Cooldown range between sniffs in seconds Default value: [3.0, 10.0].",
+        "dataType": 16,
+        "subFormId": "misc/floatrange"
+      },
+      {
+        "id": "duration",
+        "title": "Duration",
+        "description": "Sniffing duration in seconds Default value: 1.",
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "sniffing_radius",
+        "title": "Sniffing Radius",
+        "description": "Mob detection radius Default value: 5.",
+        "dataType": 3
+      },
+      {
+        "id": "suspicion_radius_horizontal",
+        "title": "Suspicion Radius Horizontal",
+        "description": "Mob suspicion horizontal radius. When a player is within this radius horizontally, the anger level towards that player is increased Default value: 3.",
+        "dataType": 3
+      },
+      {
+        "id": "suspicion_radius_vertical",
+        "title": "Suspicion Radius Vertical",
+        "description": "Mob suspicion vertical radius. When a player is within this radius vertically, the anger level towards that player is increased Default value: 3.",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  }
+}

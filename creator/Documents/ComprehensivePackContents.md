@@ -133,7 +133,7 @@ Here is an introduction to [resource packs](ResourcePack.md).
     - `<graphic>`.jpg
     - `<file>`.json
 - [biomes_client.json - deprecated, see client biomes](../Reference/Content/ClientBiomesReference/Examples/ClientBiomesOverview.md)
-- [blocks.json](AddCustomDieBlock.md#define-sounds-with-blocksjson)
+- [blocks.json](../Reference/Content/BlockReference/Examples/BlocksJsonFileStructure.md)
 - [manifest.json](ResourcePack.md#create-a-manifest-file) **(required)**
 - pack_icon.png
 - [sounds.json](AddCustomSounds.md)

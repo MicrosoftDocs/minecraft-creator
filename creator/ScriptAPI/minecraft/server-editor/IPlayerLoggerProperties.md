@@ -14,14 +14,14 @@ Player Logger Properties.
 ## Properties
 
 ### **channelMask**
-`channelMask: LogChannel;`
+`channelMask?: LogChannel;`
 
 A log channel mask, default is Message
 
 Type: *LogChannel*
 
 ### **subMessage**
-`subMessage: string;`
+`subMessage?: string;`
 
 A player log sub message for the toast channel
 

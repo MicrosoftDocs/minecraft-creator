@@ -712,12 +712,10 @@
       href: minecraft/server/PlayerSpawnAfterEvent.md
     - name: PlayerSpawnAfterEventSignal
       href: minecraft/server/PlayerSpawnAfterEventSignal.md
+    - name: PotionDeliveryType
+      href: minecraft/server/PotionDeliveryType.md
     - name: PotionEffectType
       href: minecraft/server/PotionEffectType.md
-    - name: PotionLiquidType
-      href: minecraft/server/PotionLiquidType.md
-    - name: PotionModifierType
-      href: minecraft/server/PotionModifierType.md
     - name: Potions
       href: minecraft/server/Potions.md
     - name: PressurePlatePopAfterEvent
@@ -920,8 +918,6 @@
       href: minecraft/server/PlayerAimAssistSettings.md
     - name: PlayerSoundOptions
       href: minecraft/server/PlayerSoundOptions.md
-    - name: PotionOptions
-      href: minecraft/server/PotionOptions.md
     - name: ProjectileShootOptions
       href: minecraft/server/ProjectileShootOptions.md
     - name: RangeComparison
@@ -1108,6 +1104,10 @@
       href: minecraft/server-editor/BlockPalette.md
     - name: BlockPaletteManager
       href: minecraft/server-editor/BlockPaletteManager.md
+    - name: BlockPaletteSelectedItemChangeAfterEvent
+      href: minecraft/server-editor/BlockPaletteSelectedItemChangeAfterEvent.md
+    - name: BlockPaletteSelectedItemChangeAfterEventSignal
+      href: minecraft/server-editor/BlockPaletteSelectedItemChangeAfterEventSignal.md
     - name: BlockUtilities
       href: minecraft/server-editor/BlockUtilities.md
     - name: BrushShape

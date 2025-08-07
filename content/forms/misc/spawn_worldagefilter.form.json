@@ -1,0 +1,20 @@
+{
+  "id": "Spawn WorldAgeFilter",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Spawn WorldAgeFilter",
+    "title": "Spawn WorldAgeFilter Misc",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": 0
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": 0
+      }
+    ]
+  }
+}

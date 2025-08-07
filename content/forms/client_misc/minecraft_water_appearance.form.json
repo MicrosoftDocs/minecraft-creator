@@ -1,0 +1,31 @@
+{
+  "id": "minecraft:water_appearance",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:water_appearance",
+    "title": "Minecraft Water Appearance Client Misc",
+    "description": "Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.",
+    "fields": [
+      {
+        "id": "surface_color",
+        "title": "Surface Color",
+        "description": "RGB color of the water surface",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "surface_color",
+            "dataType": 32,
+            "minLength": 3,
+            "maxLength": 3
+          }
+        ]
+      },
+      {
+        "id": "surface_opacity",
+        "title": "Surface Opacity",
+        "description": "Opacity of the water surface (must be between 0 for invisible and 1 for opaque, inclusive)",
+        "dataType": 3
+      }
+    ]
+  }
+}

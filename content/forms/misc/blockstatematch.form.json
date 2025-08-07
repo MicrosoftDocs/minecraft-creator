@@ -1,0 +1,30 @@
+{
+  "id": "BlockStateMatch",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "BlockStateMatch",
+    "title": "BlockStateMatch Misc",
+    "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",
+    "fields": [
+      {
+        "id": "block_state",
+        "title": "Block State",
+        "description": "The block state to match against.",
+        "dataType": 16,
+        "subForm": {
+          "id": "block_state",
+          "title": "Block State",
+          "fields": []
+        },
+        "alternates": [],
+        "isRequired": true
+      },
+      {
+        "id": "predicate_type",
+        "title": "BlockType",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

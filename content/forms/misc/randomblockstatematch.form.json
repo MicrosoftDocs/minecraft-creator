@@ -1,0 +1,43 @@
+{
+  "id": "RandomBlockStateMatch",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "RandomBlockStateMatch",
+    "title": "RandomBlockStateMatch Misc",
+    "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
+    "fields": [
+      {
+        "id": "block_state",
+        "title": "Block State",
+        "description": "The block state to match against.",
+        "dataType": 16,
+        "subForm": {
+          "id": "block_state",
+          "title": "Block State",
+          "fields": []
+        },
+        "alternates": [],
+        "isRequired": true
+      },
+      {
+        "id": "predicate_type",
+        "title": "BlockType",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "probability",
+        "title": "Probability",
+        "description": "Probability of the evaluating to true when the block matches.",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

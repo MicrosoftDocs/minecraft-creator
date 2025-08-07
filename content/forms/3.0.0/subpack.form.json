@@ -12,9 +12,15 @@
         "isRequired": true
       },
       {
-        "id": "memory_tier",
-        "title": "Memory Tier",
+        "id": "memory_performance_tier",
+        "title": "Memory Performance Tier",
         "dataType": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 5
+          }
+        ],
         "isRequired": true
       },
       {

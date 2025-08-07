@@ -1,0 +1,35 @@
+{
+  "id": "minecraft:precipitation",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:precipitation",
+    "title": "Minecraft Precipitation Client Misc",
+    "description": "Describes the visuals for a biome's precipitation. Biomes without this component will have default values. At most one precipitation type can be set for a biome.",
+    "fields": [
+      {
+        "id": "ash",
+        "title": "Ash",
+        "description": "Density of ash precipitation visuals",
+        "dataType": 3
+      },
+      {
+        "id": "blue_spores",
+        "title": "Blue Spores",
+        "description": "Density of blue spore precipitation visuals",
+        "dataType": 3
+      },
+      {
+        "id": "red_spores",
+        "title": "Red Spores",
+        "description": "Density of blue spore precipitation visuals",
+        "dataType": 3
+      },
+      {
+        "id": "white_ash",
+        "title": "White Ash",
+        "description": "Density of white ash precipitation visuals",
+        "dataType": 3
+      }
+    ]
+  }
+}

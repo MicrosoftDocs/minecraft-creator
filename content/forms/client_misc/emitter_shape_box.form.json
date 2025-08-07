@@ -1,0 +1,129 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "emitter_shape_box",
+    "title": "Emitter Shape Box Client Misc",
+    "fields": [
+      {
+        "id": "direction",
+        "title": "Direction",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "direction",
+            "dataType": 24,
+            "minLength": 3,
+            "maxLength": 3,
+            "alternates": [
+              {
+                "id": "direction",
+                "dataType": 14,
+                "readOnly": true,
+                "subForm": {
+                  "id": "direction",
+                  "title": "Direction",
+                  "fields": [
+                    {
+                      "id": "expression",
+                      "title": "Expression",
+                      "dataType": 2,
+                      "isRequired": true
+                    },
+                    {
+                      "id": "version",
+                      "title": "Version",
+                      "dataType": 0,
+                      "isRequired": true
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "direction",
+                "dataType": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "half_dimensions",
+        "title": "Half Dimensions",
+        "dataType": 24,
+        "minLength": 3,
+        "maxLength": 3,
+        "alternates": [
+          {
+            "id": "half_dimensions",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "half_dimensions",
+              "title": "Half Dimensions",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "half_dimensions",
+            "dataType": 3
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "offset",
+        "title": "Offset",
+        "dataType": 24,
+        "minLength": 3,
+        "maxLength": 3,
+        "alternates": [
+          {
+            "id": "offset",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "offset",
+              "title": "Offset",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "offset",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "surface_only",
+        "title": "Surface Only",
+        "dataType": 1
+      }
+    ]
+  }
+}

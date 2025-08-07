@@ -1,0 +1,24 @@
+{
+  "id": "Biome Description",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Biome Description",
+    "title": "Biome Description Misc",
+    "description": "Contains non-component settings for a Biome.",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "description": "The name of the Biome, used by other features like the '/locate biome' command. Identifiers should only be lowercase.",
+        "dataType": 16,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^[a-z0-9._%+-]+:[a-z0-9._%+-]+$"
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

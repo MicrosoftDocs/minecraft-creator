@@ -12,14 +12,14 @@ ms.date: 02/11/2025
 The material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: "up", "down", "north", "south", "east", "west", or "*". You can also give an instance the name of your choosing such as "my_instance", and then assign it to a face by doing "north":"my_instance".
 
 > [!Note]
-> From 1.21.80 onward, you must define both a `minecraft:geometry` component and a `minecraft:material_instances` component when using either of the two for your custom block.
+> From 1.21.80 onward, when using a minecraft:geometry component or minecraft:material_instances component, you must include both.
 
 
 ## Material Instances Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| * | *not set* | [*](#*-item-type) item |Defines the default texture that will be used when a texture isn't given for a named side | Block Fabricator: `{"texture":"mikeamm_gwve_fabricator","render_method":"alpha_test","ambient_occlusion":1}`, Block Gray Ore: `{"texture":"mikeamm_gwve_gray_ore","render_method":"alpha_test","face_dimming":false}`, Block Frond Top: `{"texture":"frond_top","render_method":"alpha_test"}` | 
+| * | *not set* | [*](#*-item-type) item |  | Block Fabricator: `{"texture":"mikeamm_gwve_fabricator","render_method":"alpha_test","ambient_occlusion":1}`, Block Gray Ore: `{"texture":"mikeamm_gwve_gray_ore","render_method":"alpha_test","face_dimming":false}`, Block Frond Top: `{"texture":"frond_top","render_method":"alpha_test"}` | 
 | down | *not set* | [Down](#down-item-type) item |  |  | 
 | east | *not set* | [East](#east-item-type) item |  |  | 
 | Material Instance | *not set* | Array of [Material Instance](#material-instance-item-type) items | A material instance definition to map to a material instance in a geometry file. The material instance "*" will be used for any materials that don't have a match. |  | 
@@ -101,7 +101,7 @@ A material instance definition to map to a material instance in a geometry file.
 | ambient_occlusion | *not set* | Decimal number | Should this material have ambient occlusion applied when lighting? If true, shadows will be created around and underneath the block. Optionally can be constructed with float to control exponent applied to ao value after lighting. |  | 
 | face_dimming | true | Boolean true/false | Should this material be dimmed by the direction it's facing? |  | 
 | isotropic | false | Boolean true/false | Should the faces that this material is applied to randomize their UVs? |  | 
-| render_method | opaque | String | The render method to use. Must be one of these options: <br>"opaque" - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency. <br>"double_sided" - Used for completely disabling backface culling. <br>"blend" - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures). <br>"alpha_test" - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling. |  | 
+| render_method | opaque | String | The render method to use. Must be one of these options and must be the same for each: <br>"opaque" - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency. <br>"double_sided" - Used for completely disabling backface culling. <br>"blend" - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures). <br>"alpha_test" - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling. |  | 
 | texture | *not set* | String | Texture name for the material. |  | 
 | tint_method | false | Boolean true/false | Tint multiplied to the color. Tint method logic varies, but often refers to the "rain" and "temperature" of the biome the block is placed in to compute the tint. Supported tint methods are "none", "default_foliage", "birch_foliage", "evergreen_foliage", "dry_foliage", "grass" and "water" |  | 
 

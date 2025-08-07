@@ -32,6 +32,7 @@ Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.
 
 ## Methods
 - [clear](#clear)
+- [getNormalizedOrigin](#getnormalizedorigin)
 - [getPredictedWriteVolume](#getpredictedwritevolume)
 - [readFromStructure](#readfromstructure)
 - [readFromWorld](#readfromworld)
@@ -47,6 +48,15 @@ Clear the contents of the item
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+### **getNormalizedOrigin**
+`
+getNormalizedOrigin(): minecraftserver.Vector3
+`
+
+Get the normalized origin of a ClipboardItem; a Vector3 from { -1, -1, -1 } to { 1, 1, 1 }
+
+**Returns** [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
 
 ### **getPredictedWriteVolume**
 `

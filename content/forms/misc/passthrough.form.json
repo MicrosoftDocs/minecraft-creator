@@ -1,0 +1,17 @@
+{
+  "id": "Passthrough",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Passthrough",
+    "title": "Passthrough Misc",
+    "description": "Modifier that leaves the state unchanged. This is the default block modifier if no other block modifier is specified.",
+    "fields": [
+      {
+        "id": "type",
+        "title": "BlockEntityModifierType",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

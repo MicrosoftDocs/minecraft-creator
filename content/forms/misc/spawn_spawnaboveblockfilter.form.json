@@ -1,0 +1,20 @@
+{
+  "id": "Spawn SpawnAboveBlockFilter",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Spawn SpawnAboveBlockFilter",
+    "title": "Spawn SpawnAboveBlockFilter Misc",
+    "fields": [
+      {
+        "id": "blocks",
+        "title": "Blocks",
+        "dataType": 16
+      },
+      {
+        "id": "distance",
+        "title": "Distance",
+        "dataType": 0
+      }
+    ]
+  }
+}

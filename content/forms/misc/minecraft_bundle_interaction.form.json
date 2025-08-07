@@ -1,0 +1,27 @@
+{
+  "id": "minecraft:bundle_interaction",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:bundle_interaction",
+    "title": "Minecraft Bundle Interaction Misc",
+    "description": "[EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a \"minecraft:storage_item\" component.",
+    "fields": [
+      {
+        "id": "num_viewable_slots",
+        "title": "Num Viewable Slots",
+        "description": "The maximum number of slots in the bundle viewable by the plater. Can be from 1 to 64. Default is 12.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          },
+          {
+            "comparison": "<=",
+            "value": 64
+          }
+        ]
+      }
+    ]
+  }
+}

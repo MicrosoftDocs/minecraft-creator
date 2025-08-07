@@ -13,6 +13,14 @@ Contains a set of events that are available across the scope of the ExtensionCon
 
 ## Properties
 
+### **blockPaletteSelectedItemChange**
+`read-only blockPaletteSelectedItemChange: BlockPaletteSelectedItemChangeAfterEventSignal;`
+
+Type: [*BlockPaletteSelectedItemChangeAfterEventSignal*](BlockPaletteSelectedItemChangeAfterEventSignal.md)
+
+Notes:
+  - This property can be read in early-execution mode.
+
 ### **clipboardChange**
 `read-only clipboardChange: ClipboardChangeAfterEventSignal;`
 

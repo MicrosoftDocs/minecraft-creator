@@ -119,7 +119,7 @@ Compels an entity to look at the player by rotating the `head` bone pose within 
 
 ```json
 "minecraft:behavior.look_at_player": {
-  "priority": 5,
+  "priority": 6,
   "look_distance": 6,
   "probability": 0.02
 }

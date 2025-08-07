@@ -1,0 +1,30 @@
+{
+  "id": "minecraft:wearable",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:wearable",
+    "title": "Minecraft Wearable Misc",
+    "description": "Wearable items can be worn by a player in a specified slot.",
+    "fields": [
+      {
+        "id": "hides_player_location",
+        "title": "Hides Player Location",
+        "description": "Determines whether the Player's location is hidden on Locator Maps and the Locator Bar when the wearable item is worn. Default is false.",
+        "dataType": 1
+      },
+      {
+        "id": "protection",
+        "title": "Protection",
+        "description": "How much protection the wearable item provides. Default is set to 0.",
+        "dataType": 0
+      },
+      {
+        "id": "slot",
+        "title": "EquipmentSlot",
+        "description": "Specifies where the item can be worn. If any non-hand slot is chosen, the max stack size is set to 1.",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

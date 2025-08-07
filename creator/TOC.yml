@@ -216,6 +216,8 @@
             href: Documents/ActorStorage.md
     - name: Game Logic
       items:
+        - name: Gameplay Development Journey
+          href: Documents/GameDevOverview.md
         - name: Redstone Guide
           href: Documents/RedstoneGuide.md
         - name: Molang Beginner's Guide
@@ -687,6 +689,8 @@
             href: Reference/Content/blockreference/Examples/ItemDisplayTransforms.md
         - name: Block JSON
           items:
+          - name: blocks.json File Structure
+            href: Reference/Content/BlockReference/Examples/BlocksJsonFileStructure.md
           - name: Block Culling
             href: Reference/Content/blockreference/Examples/Definitions/BlockCulling.md
         - name: Animation JSON

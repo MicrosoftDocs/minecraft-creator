@@ -1,0 +1,95 @@
+{
+  "id": "Client Biome Components",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Client Biome Components",
+    "title": "Client Biome Components Client Misc",
+    "description": "Any components that this Client Biome uses",
+    "fields": [
+      {
+        "id": "minecraft:ambient_sounds",
+        "title": "Minecraft Ambient Sounds",
+        "description": "Set the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_ambient_sounds"
+      },
+      {
+        "id": "minecraft:atmosphere_identifier",
+        "title": "Minecraft Atmosphere Identifier",
+        "description": "Set the identifier used for atmospherics in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Atmospheric Scattering JSON schemas under the \"atmospherics\" directory. Biomes without this component will have default atmosphere settings.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_atmosphere_identifier"
+      },
+      {
+        "id": "minecraft:biome_music",
+        "title": "Minecraft Biome Music",
+        "description": "Affect how music plays within the biome",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_biome_music"
+      },
+      {
+        "id": "minecraft:color_grading_identifier",
+        "title": "Minecraft Color Grading Identifier",
+        "description": "Set the identifier used for color grading in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Color Grading JSON schemas under the \"color_grading\" directory. Biomes without this component will have default color_grading settings.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_color_grading_identifier"
+      },
+      {
+        "id": "minecraft:dry_foliage_color",
+        "title": "Minecraft Dry Foliage Color",
+        "description": "Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_dry_foliage_color"
+      },
+      {
+        "id": "minecraft:fog_appearance",
+        "title": "Minecraft Fog Appearance",
+        "description": "Set the fog settings used during rendering. Biomes without this component will have default fog settings.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_fog_appearance"
+      },
+      {
+        "id": "minecraft:foliage_appearance",
+        "title": "Minecraft Foliage Appearance",
+        "description": "Set the foliage color or color map used during rendering. Biomes without this component will have default foliage appearance.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_foliage_appearance"
+      },
+      {
+        "id": "minecraft:grass_appearance",
+        "title": "Minecraft Grass Appearance",
+        "description": "Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_grass_appearance"
+      },
+      {
+        "id": "minecraft:lighting_identifier",
+        "title": "Minecraft Lighting Identifier",
+        "description": "Set the identifier used for lighting in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Lighting JSON schemas under the \"lighting\" directory. Biomes without this component will have default lighting settings.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_lighting_identifier"
+      },
+      {
+        "id": "minecraft:sky_color",
+        "title": "Minecraft Sky Color",
+        "description": "Set the sky color used during rendering. Biomes without this component will have default sky color behavior.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_sky_color"
+      },
+      {
+        "id": "minecraft:water_appearance",
+        "title": "Minecraft Water Appearance",
+        "description": "Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_water_appearance"
+      },
+      {
+        "id": "minecraft:water_identifier",
+        "title": "Minecraft Water Identifier",
+        "description": "Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the \"water\" directory. Biomes without this component will have default water settings.",
+        "dataType": 16,
+        "subFormId": "client_misc/minecraft_water_identifier"
+      }
+    ]
+  }
+}

@@ -10,7 +10,7 @@
         "id": "data",
         "title": "Data",
         "description": "Item's data",
-        "dataType": 16,
+        "dataType": 17,
         "isRequired": true
       },
       {

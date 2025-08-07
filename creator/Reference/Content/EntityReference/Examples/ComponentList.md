@@ -170,7 +170,7 @@ ms.date: 02/11/2025
 | [minecraft:scale](EntityComponents/minecraftComponent_scale.md)| Sets the entity's visual size. |
 | [minecraft:scale_by_age](EntityComponents/minecraftComponent_scale_by_age.md)| Defines the entity's size interpolation based on the entity's age. |
 | [minecraft:scheduler](EntityComponents/minecraftComponent_scheduler.md)| Fires off scheduled mob events at time of day events. |
-| [minecraft:shareables](EntityComponents/minecraftComponent_shareables.md)| Defines a list of items the mob wants to share or pick up. |
+| [minecraft:shareables](EntityComponents/minecraftComponent_shareables.md)| Defines a list of items the mob wants to share. |
 | [minecraft:shooter](EntityComponents/minecraftComponent_shooter.md)| Defines the entity's ranged attack behavior. |
 | [minecraft:sittable](EntityComponents/minecraftComponent_sittable.md)| Defines the entity's 'sit' state. |
 | [minecraft:skin_id](EntityComponents/minecraftComponent_skin_id.md)| Skin ID value. |

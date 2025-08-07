@@ -3,7 +3,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:shareables",
     "title": "Shareables",
-    "description": "Defines a list of items the mob wants to share or pick up. Each item must have the following parameters:",
+    "description": "Defines a list of items the mob wants to share. Each item must have the following parameters:",
     "fields": [
       {
         "id": "all_items",
@@ -52,10 +52,10 @@
       {
         "id": "items",
         "title": "Items",
-        "description": "List of items that the entity wants to share.",
+        "description": "List of items or item tags that the entity wants to share. Items in-game will match to this list from top to bottom, meaning that the first occurance of a match, be it name or tag, will shadow those coming after.",
         "dataType": 15,
         "subForm": {
-          "description": "List of items that the entity wants to share.",
+          "description": "List of items or item tags that the entity wants to share. Items in-game will match to this list from top to bottom, meaning that the first occurance of a match, be it name or tag, will shadow those coming after.",
           "fields": [
             {
               "id": "admire",
@@ -87,7 +87,7 @@
             {
               "id": "item",
               "title": "Item",
-              "description": "The name of the item. Aux value can be specified, for instance 'minecraft:skull:1'.",
+              "description": "The name of the item. Aux value can be specified, for instance 'minecraft:skull:1'. Alternatively, a tag can be specified to match all items with that tag.",
               "dataType": 2
             },
             {
@@ -100,7 +100,7 @@
             {
               "id": "pickup_limit",
               "title": "Pickup Limit",
-              "description": "Maximum number of this item the mob will pick up during a single goal tick.",
+              "description": "Maximum number items the mob will pick up during a single goal tick.",
               "defaultValue": -1,
               "dataType": 0
             },
@@ -135,7 +135,7 @@
             {
               "id": "want_amount",
               "title": "Want Amount",
-              "description": "Number of this item this entity wants to have.",
+              "description": "Number of this item this entity wants to share.",
               "defaultValue": -1,
               "dataType": 0
             }
@@ -647,7 +647,7 @@
       {
         "id": "singular_pickup",
         "title": "Singular Pickup",
-        "description": "Controls if the mob is able to pick up more of the same item if it is already holding that item",
+        "description": "Boolean value that controls if the mob is able to pick up more of the same item if it is already holding that item",
         "defaultValue": false,
         "dataType": 1
       }
@@ -1183,192 +1183,7 @@
             "all_items_max_amount": 1,
             "items": [
               {
-                "item": "minecraft:apple",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:appleEnchanted",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:baked_potato",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:beef",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:beetroot",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:beetroot_soup",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:bread",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:bundle",
-                "priority": 1,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:carrot",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:chicken",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:chorus_fruit",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:clownfish",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:cooked_beef",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:cooked_chicken",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:cooked_fish",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:cooked_porkchop",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:cooked_rabbit",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:cooked_salmon",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:cookie",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:dried_kelp",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:fish",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:golden_apple",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:golden_carrot",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:melon",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:mushroom_stew",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:muttonCooked",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:muttonRaw",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:poisonous_potato",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:porkchop",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:potato",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:pufferfish",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:pumpkin_pie",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:rabbit",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:rabbit_stew",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:rotten_flesh",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:salmon",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:spider_eye",
-                "priority": 0,
-                "max_amount": 1
-              },
-              {
-                "item": "minecraft:sweet_berries",
+                "item": "minecraft:is_food",
                 "priority": 0,
                 "max_amount": 1
               },
@@ -1378,8 +1193,8 @@
                 "max_amount": 1
               },
               {
-                "item": "minecraft:suspicious_stew",
-                "priority": 0,
+                "item": "minecraft:bundle",
+                "priority": 1,
                 "max_amount": 1
               }
             ]
