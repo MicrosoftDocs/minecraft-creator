@@ -232,8 +232,8 @@
   href: query_is_charging.md
 - name: query.is_chested
   href: query_is_chested.md
-- name: query.is_cooldown_type
-  href: query_is_cooldown_type.md
+- name: query.is_cooldown_category
+  href: query_is_cooldown_category.md
 - name: query.is_crawling
   href: query_is_crawling.md
 - name: query.is_critical

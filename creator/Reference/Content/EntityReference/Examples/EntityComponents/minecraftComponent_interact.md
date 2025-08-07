@@ -539,6 +539,38 @@ Loot table with items to drop on the ground upon successful interaction.
       "drop_item_slot": "slot.weapon.mainhand",
       "swing": true,
       "interact_text": "action.interact.drop_item"
+    },
+    {
+      "cooldown": 2.5,
+      "use_item": false,
+      "hurt_item": 1,
+      "play_sounds": "shear",
+      "interact_text": "action.interact.shear",
+      "vibration": "shear",
+      "on_interact": {
+        "filters": {
+          "all_of": [
+            {
+              "test": "bool_property",
+              "domain": "minecraft:has_flower",
+              "value": true
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "has_equipment",
+              "subject": "other",
+              "domain": "hand",
+              "value": "shears"
+            }
+          ]
+        },
+        "event": "minecraft:on_sheared",
+        "target": "self"
+      }
     }
   ]
 }

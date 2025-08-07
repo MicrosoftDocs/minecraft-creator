@@ -1,0 +1,23 @@
+{
+  "id": "DimensionPaddingRange",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "DimensionPaddingRange",
+    "title": "DimensionPaddingRange Misc",
+    "description": "Specifies the padding for the top and bottom of the world",
+    "fields": [
+      {
+        "id": "bottom",
+        "title": "Bottom",
+        "description": "The padding from the bottom of the world",
+        "dataType": 0
+      },
+      {
+        "id": "top",
+        "title": "Top",
+        "description": "The padding from the top of the world",
+        "dataType": 0
+      }
+    ]
+  }
+}

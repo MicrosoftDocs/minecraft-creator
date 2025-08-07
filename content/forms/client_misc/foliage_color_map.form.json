@@ -1,0 +1,18 @@
+{
+  "id": "Foliage Color Map",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Foliage Color Map",
+    "title": "Foliage Color Map Client Misc",
+    "description": "Object specifying a color map for foliage instead of a specific color.",
+    "fields": [
+      {
+        "id": "color_map",
+        "title": "Foliage Colormap",
+        "description": "Color map from textures/colormap to determine color of foliage.",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

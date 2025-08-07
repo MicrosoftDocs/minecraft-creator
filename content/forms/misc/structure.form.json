@@ -1,0 +1,34 @@
+{
+  "id": "Structure",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Structure",
+    "title": "Structure Misc",
+    "fields": [
+      {
+        "id": "structure",
+        "title": "Structure",
+        "description": "Identifier of the Jigsaw Structure.",
+        "dataType": 16,
+        "isRequired": true
+      },
+      {
+        "id": "weight",
+        "title": "Weight",
+        "description": "Weight of the Jigsaw Structure in the set. Higher weights are more likely to be selected.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          },
+          {
+            "comparison": "<=",
+            "value": 200
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

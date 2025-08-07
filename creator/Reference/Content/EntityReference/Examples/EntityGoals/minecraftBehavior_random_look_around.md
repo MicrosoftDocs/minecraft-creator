@@ -51,21 +51,21 @@ Allows the mob to randomly look around.
 }
 ```
 
-#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
-
-
-```json
-"minecraft:behavior.random_look_around": {
-  "priority": 6
-}
-```
-
 #### [Cow](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/cow.json)
 
 
 ```json
 "minecraft:behavior.random_look_around": {
   "priority": 9
+}
+```
+
+#### [Creeper](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/creeper.json)
+
+
+```json
+"minecraft:behavior.random_look_around": {
+  "priority": 6
 }
 ```
 

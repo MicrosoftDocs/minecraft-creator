@@ -1,0 +1,31 @@
+{
+  "id": "Rules used by Jigsaw Structures to determine which blocks to modify or replace when placing a Structure Template in the world.",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Used to pair block rules with Structure Templates and to randomly place Structure Templates using a weighted list.",
+    "title": "Used To Pair Block Rules With Structure Templates And To Randomly Place Structure Templates Using a Weighted List Misc",
+    "fields": [
+      {
+        "id": "description",
+        "title": "Description",
+        "dataType": 16,
+        "subFormId": "misc/description",
+        "isRequired": true
+      },
+      {
+        "id": "elements",
+        "title": "Elements",
+        "description": "List of Structure Template and processor list pairs.",
+        "dataType": 16,
+        "subFormId": "misc/templatepoolelement",
+        "isRequired": true
+      },
+      {
+        "id": "fallback",
+        "title": "Fallback",
+        "description": "Fallback template pool to use if no element in the pool can be placed successfully.",
+        "dataType": 16
+      }
+    ]
+  }
+}

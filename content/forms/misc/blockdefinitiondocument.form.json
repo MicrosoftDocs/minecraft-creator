@@ -1,0 +1,17 @@
+{
+  "id": "BlockDefinitionDocument",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "BlockDefinitionDocument",
+    "title": "BlockDefinitionDocument Misc",
+    "fields": [
+      {
+        "id": "description",
+        "title": "Description",
+        "dataType": 16,
+        "subFormId": "misc/description",
+        "isRequired": true
+      }
+    ]
+  }
+}

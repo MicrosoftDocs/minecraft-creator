@@ -89,7 +89,7 @@ Allows a mob to randomly stroll around.
 
 ```json
 "minecraft:behavior.random_stroll": {
-  "priority": 4,
+  "priority": 5,
   "xz_dist": 3
 }
 ```

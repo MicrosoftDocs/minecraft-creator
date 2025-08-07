@@ -1,0 +1,61 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "particle_appearance_billboard",
+    "title": "Particle Appearance Billboard Client Misc",
+    "fields": [
+      {
+        "id": "direction",
+        "title": "Direction",
+        "dataType": 16
+      },
+      {
+        "id": "facing_camera_mode",
+        "title": "Facing Camera Mode",
+        "dataType": 16
+      },
+      {
+        "id": "size",
+        "title": "Size",
+        "dataType": 24,
+        "minLength": 2,
+        "maxLength": 2,
+        "alternates": [
+          {
+            "id": "size",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "size",
+              "title": "Size",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "size",
+            "dataType": 3
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "uv",
+        "title": "Uv",
+        "dataType": 16
+      }
+    ]
+  }
+}

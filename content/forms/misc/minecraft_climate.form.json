@@ -1,0 +1,31 @@
+{
+  "id": "minecraft:climate",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:climate",
+    "title": "Minecraft Climate Misc",
+    "description": "Describes temperature, humidity, precipitation, and similar. Biomes without this component will have default values.",
+    "fields": [
+      {
+        "id": "downfall",
+        "title": "Downfall",
+        "description": "Amount that precipitation affects colors and block changes",
+        "dataType": 3
+      },
+      {
+        "id": "snow_accumulation",
+        "title": "Snow Accumulation",
+        "description": "Minimum and maximum snow level, each multiple of 0.125 is another snow layer",
+        "dataType": 32,
+        "minLength": 2,
+        "maxLength": 2
+      },
+      {
+        "id": "temperature",
+        "title": "Temperature",
+        "description": "Temperature affects a variety of visual and behavioral things, including snow and ice placement, sponge drying, and sky color",
+        "dataType": 3
+      }
+    ]
+  }
+}

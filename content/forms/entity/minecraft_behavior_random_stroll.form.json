@@ -195,7 +195,7 @@
           "/vanilla/behavior_pack/entities/copper_golem.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
-              "content": 4
+              "content": 5
             }
           ],
           "/vanilla/behavior_pack/entities/creaking.json": [
@@ -252,12 +252,6 @@
               "content": 10
             }
           ],
-          "/vanilla/behavior_pack/entities/polar_bear.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
-              "content": 5
-            }
-          ],
           "/vanilla/behavior_pack/entities/snow_golem.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
@@ -268,6 +262,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
               "content": 11
+            }
+          ],
+          "/vanilla/behavior_pack/entities/witch.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
+              "content": 4
             }
           ],
           "/samples/add_entity_robot/full/robot_example_full_behavior/entities/robot.json": [
@@ -371,7 +371,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.random_stroll/",
           "content": {
-            "priority": 4,
+            "priority": 5,
             "xz_dist": 3
           }
         }

@@ -1,0 +1,17 @@
+{
+  "id": "Values",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Values",
+    "title": "Values Misc",
+    "fields": [
+      {
+        "id": "values",
+        "title": "Values",
+        "dataType": 16,
+        "subFormId": "misc/range",
+        "isRequired": true
+      }
+    ]
+  }
+}

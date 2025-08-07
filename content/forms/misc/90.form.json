@@ -1,0 +1,26 @@
+{
+  "id": "minecraft:item v1.21.90",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:item v1.21.90",
+    "title": "Minecraft Item v1.21.90 Misc",
+    "description": "Item definition includes the \"description\" and \"components\" sections.",
+    "fields": [
+      {
+        "id": "components",
+        "title": "Components",
+        "description": "List of all components used in this item.",
+        "dataType": 16,
+        "subFormId": "misc/components"
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "description": "Contains the required identifier for the item. May contain optional fields like menu_category.",
+        "dataType": 16,
+        "subFormId": "misc/description",
+        "isRequired": true
+      }
+    ]
+  }
+}

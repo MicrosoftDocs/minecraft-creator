@@ -1,0 +1,31 @@
+{
+  "id": "UniformIntProvider",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "UniformIntProvider",
+    "title": "UniformIntProvider Misc",
+    "description": "Specifies a uniformly distributed integer",
+    "fields": [
+      {
+        "id": "max_inclusive",
+        "title": "Max Inclusive",
+        "description": "Maximum value (inclusive)",
+        "dataType": 0,
+        "isRequired": true
+      },
+      {
+        "id": "min_inclusive",
+        "title": "Min Inclusive",
+        "description": "Minimum value (inclusive)",
+        "dataType": 0,
+        "isRequired": true
+      },
+      {
+        "id": "type",
+        "title": "IntProviderType",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

@@ -8,6 +8,12 @@
     "description": "Allows the actor to open doors assuming that that flags set up for the component to use in navigation",
     "fields": [],
     "samples": {
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:annotation.open_door/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/piglin_brute.json": [
         {
           "path": "/minecraft:entity/components/minecraft:annotation.open_door/",

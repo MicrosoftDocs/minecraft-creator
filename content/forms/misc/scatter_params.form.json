@@ -1,0 +1,276 @@
+{
+  "id": "Scatter Params",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Scatter Params",
+    "title": "Scatter Params Misc",
+    "description": "Controls the scatter distribution of a particular object.",
+    "fields": [
+      {
+        "id": "coordinate_eval_order",
+        "title": "Coordinate Evaluation Order",
+        "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to \"xzy\". Supported orders are defined by \"Coordinate Evaluation Order\".",
+        "dataType": 2
+      },
+      {
+        "id": "iterations",
+        "title": "Iterations",
+        "description": "Number of scattered positions to generate.",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "iterations",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "iterations",
+              "title": "Iterations",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "iterations",
+            "dataType": 3
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "scatter_chance",
+        "title": "Scatter Chance",
+        "description": "Probability that this scatter will occur. Not evaluated each iteration; either no iterations will run, or all will.",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "scatter_chance",
+            "dataType": 3
+          },
+          {
+            "id": "scatter_chance",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "id": "scatter_chance",
+              "title": "Scatter Chance",
+              "fields": [
+                {
+                  "id": "denominator",
+                  "title": "Denominator",
+                  "description": "Denominator for scatter probability.",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    }
+                  ],
+                  "isRequired": true
+                },
+                {
+                  "id": "numerator",
+                  "title": "Numerator",
+                  "description": "Numerator for scatter probability.",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    }
+                  ],
+                  "isRequired": true
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "x",
+        "title": "X",
+        "description": "Distribution for the coordinate (evaluated each iteration).",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "x",
+            "dataType": 3
+          },
+          {
+            "id": "x",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "id": "x",
+              "title": "X",
+              "fields": [
+                {
+                  "id": "distribution",
+                  "title": "Random Distribution Type",
+                  "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "extent",
+                  "title": "Extent",
+                  "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
+                  "dataType": 16,
+                  "minLength": 2,
+                  "maxLength": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "grid_offset",
+                  "title": "Grid Offset",
+                  "description": "When the distribution type is grid, defines the offset along this axis.",
+                  "dataType": 0
+                },
+                {
+                  "id": "step_size",
+                  "title": "Step Size",
+                  "description": "When the distribution type is grid, defines the distance between steps along this axis.",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "y",
+        "title": "Y",
+        "description": "Distribution for the coordinate (evaluated each iteration).",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "y",
+            "dataType": 3
+          },
+          {
+            "id": "y",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "id": "y",
+              "title": "Y",
+              "fields": [
+                {
+                  "id": "distribution",
+                  "title": "Random Distribution Type",
+                  "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "extent",
+                  "title": "Extent",
+                  "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
+                  "dataType": 16,
+                  "minLength": 2,
+                  "maxLength": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "grid_offset",
+                  "title": "Grid Offset",
+                  "description": "When the distribution type is grid, defines the offset along this axis.",
+                  "dataType": 0
+                },
+                {
+                  "id": "step_size",
+                  "title": "Step Size",
+                  "description": "When the distribution type is grid, defines the distance between steps along this axis.",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "z",
+        "title": "Z",
+        "description": "Distribution for the coordinate (evaluated each iteration).",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "z",
+            "dataType": 3
+          },
+          {
+            "id": "z",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "id": "z",
+              "title": "Z",
+              "fields": [
+                {
+                  "id": "distribution",
+                  "title": "Random Distribution Type",
+                  "description": "Type of distribution. Supported distributions are defined by \"Random Distribution Type\".",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "extent",
+                  "title": "Extent",
+                  "description": "Lower and upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
+                  "dataType": 16,
+                  "minLength": 2,
+                  "maxLength": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "grid_offset",
+                  "title": "Grid Offset",
+                  "description": "When the distribution type is grid, defines the offset along this axis.",
+                  "dataType": 0
+                },
+                {
+                  "id": "step_size",
+                  "title": "Step Size",
+                  "description": "When the distribution type is grid, defines the distance between steps along this axis.",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

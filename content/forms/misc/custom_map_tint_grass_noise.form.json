@@ -1,0 +1,18 @@
+{
+  "id": "custom_map_tint_grass_noise",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "custom_map_tint_grass_noise",
+    "title": "Custom Map Tint Grass Noise Misc",
+    "description": "Makes grass use the noise based colors for tinting in this biome on the map.",
+    "fields": [
+      {
+        "id": "type",
+        "title": "GrassType",
+        "description": "Controls the type of grass tint to use.",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

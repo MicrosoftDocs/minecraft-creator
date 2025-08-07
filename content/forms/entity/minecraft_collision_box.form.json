@@ -514,12 +514,6 @@
               "content": 0.98
             }
           ],
-          "/vanilla/behavior_pack/entities/copper_golem.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:collision_box/",
-              "content": 0.875
-            }
-          ],
           "/vanilla/behavior_pack/entities/cow.json": [
             {
               "path": "/minecraft:entity/components/minecraft:collision_box/",
@@ -882,7 +876,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:collision_box/",
           "content": {
-            "width": 0.875,
+            "width": 0.6,
             "height": 1
           }
         }

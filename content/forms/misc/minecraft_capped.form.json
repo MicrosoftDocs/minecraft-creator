@@ -1,0 +1,154 @@
+{
+  "id": "minecraft:capped",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:capped",
+    "title": "Minecraft Capped Misc",
+    "description": "Generates surface on blocks with non-solid blocks above or below.",
+    "fields": [
+      {
+        "id": "beach_material",
+        "title": "Beach Material",
+        "description": "Material used to decorate surface near sea level.",
+        "dataType": 16,
+        "subForm": {
+          "id": "beach_material",
+          "title": "Beach Material",
+          "fields": []
+        },
+        "alternates": []
+      },
+      {
+        "id": "ceiling_materials",
+        "title": "Ceiling Materials",
+        "description": "Materials used for the surface ceiling.",
+        "dataType": 15,
+        "minLength": 1,
+        "subForm": {
+          "id": "ceiling_materials",
+          "title": "Ceiling Materials",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "ceiling_materials",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "id": "ceiling_materials",
+              "title": "Ceiling Materials",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": 16,
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": 31,
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": 27
+                    },
+                    {
+                      "id": "states",
+                      "dataType": 24
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "floor_materials",
+        "title": "Floor Materials",
+        "description": "Materials used for the surface floor.",
+        "dataType": 15,
+        "minLength": 1,
+        "subForm": {
+          "id": "floor_materials",
+          "title": "Floor Materials",
+          "fields": []
+        },
+        "alternates": [
+          {
+            "id": "floor_materials",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "id": "floor_materials",
+              "title": "Floor Materials",
+              "fields": [
+                {
+                  "id": "name",
+                  "title": "Name",
+                  "description": "Name of the block",
+                  "dataType": 16,
+                  "isRequired": true
+                },
+                {
+                  "id": "states",
+                  "title": "States",
+                  "description": "Contains members named after each state, with boolean, integer, or string values.",
+                  "dataType": 31,
+                  "alternates": [
+                    {
+                      "id": "states",
+                      "dataType": 27
+                    },
+                    {
+                      "id": "states",
+                      "dataType": 24
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "foundation_material",
+        "title": "Foundation Material",
+        "description": "Material used to replace solid blocks that are not surface blocks.",
+        "dataType": 16,
+        "subForm": {
+          "id": "foundation_material",
+          "title": "Foundation Material",
+          "fields": []
+        },
+        "alternates": [],
+        "isRequired": true
+      },
+      {
+        "id": "sea_material",
+        "title": "Sea Material",
+        "description": "Material used to replace air blocks below sea level.",
+        "dataType": 16,
+        "subForm": {
+          "id": "sea_material",
+          "title": "Sea Material",
+          "fields": []
+        },
+        "alternates": [],
+        "isRequired": true
+      },
+      {
+        "id": "type",
+        "title": "SurfaceBuilderType",
+        "description": "Controls the type of surface builder to use",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

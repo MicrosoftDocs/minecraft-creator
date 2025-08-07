@@ -1,0 +1,48 @@
+{
+  "id": "Processor Rule",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Processor Rule",
+    "title": "Processor Rule Misc",
+    "description": "A block rule that is evaluated on all blocks of a Structure Template. All predicates must evaluate to true in order for a block to be replaced by the output_state.",
+    "fields": [
+      {
+        "id": "block_entity_modifier",
+        "title": "Block Entity Modifier",
+        "description": "A block state modifier for block entities when all predicate match.",
+        "dataType": 16
+      },
+      {
+        "id": "input_predicate",
+        "title": "Input Predicate",
+        "description": "A predicate evaluated on the Structure Template block.",
+        "dataType": 16
+      },
+      {
+        "id": "location_predicate",
+        "title": "Location Predicate",
+        "description": "A predicate evaluated on the world block.",
+        "dataType": 16
+      },
+      {
+        "id": "output_state",
+        "title": "Output State",
+        "description": "Block to replace the world block with if all predicates evaluate to true.",
+        "dataType": 16,
+        "subForm": {
+          "id": "output_state",
+          "title": "Output State",
+          "fields": []
+        },
+        "alternates": [],
+        "isRequired": true
+      },
+      {
+        "id": "position_predicate",
+        "title": "Position Predicate",
+        "description": "A predicate evaluated on the distance between the structure's world origin and the world block.",
+        "dataType": 16
+      }
+    ]
+  }
+}

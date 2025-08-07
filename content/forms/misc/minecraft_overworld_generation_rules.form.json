@@ -1,0 +1,85 @@
+{
+  "id": "minecraft:overworld_generation_rules",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:overworld_generation_rules",
+    "title": "Minecraft Overworld Generation Rules Misc",
+    "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the overworld.",
+    "fields": [
+      {
+        "id": "generate_for_climates",
+        "title": "Generate For Climates",
+        "description": "Controls the world generation climate categories that this biome can spawn for. A single biome can be associated with multiple categories with different weightings.",
+        "dataType": 15
+      },
+      {
+        "id": "hills_transformation",
+        "title": "Hills Transformation",
+        "description": "What biome to switch to when converting to a hilly biome",
+        "dataType": 17,
+        "alternates": [
+          {
+            "id": "hills_transformation",
+            "dataType": 16,
+            "subForm": {
+              "id": "hills_transformation",
+              "title": "Hills Transformation",
+              "fields": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "mutate_transformation",
+        "title": "Mutate Transformation",
+        "description": "What biome to switch to when converting to a mutated biome",
+        "dataType": 17,
+        "alternates": [
+          {
+            "id": "mutate_transformation",
+            "dataType": 16,
+            "subForm": {
+              "id": "mutate_transformation",
+              "title": "Mutate Transformation",
+              "fields": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "river_transformation",
+        "title": "River Transformation",
+        "description": "What biome to switch to when converting to a river biome (if not the Vanilla 'river' biome)",
+        "dataType": 17,
+        "alternates": [
+          {
+            "id": "river_transformation",
+            "dataType": 16,
+            "subForm": {
+              "id": "river_transformation",
+              "title": "River Transformation",
+              "fields": []
+            }
+          }
+        ]
+      },
+      {
+        "id": "shore_transformation",
+        "title": "Shore Transformation",
+        "description": "What biome to switch to when adjacent to an ocean biome",
+        "dataType": 17,
+        "alternates": [
+          {
+            "id": "shore_transformation",
+            "dataType": 16,
+            "subForm": {
+              "id": "shore_transformation",
+              "title": "Shore Transformation",
+              "fields": []
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

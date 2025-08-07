@@ -1,0 +1,10 @@
+{
+  "id": "query.is_cooldown_category",
+  "fields": [],
+  "generated_doNotEdit": {
+    "id": "query.is_cooldown_category",
+    "title": "Is Cooldown Category Query",
+    "description": "Returns 1.0 if the specified held or worn item has the specified cooldown category, otherwise returns 0.0. First argument is the cooldown name to check for, second argument is the equipment slot name, and if required third argument is the numerical slot id. For second and third arguments, uses the same name and id that the replaceitem command takes when querying entities.",
+    "fields": []
+  }
+}

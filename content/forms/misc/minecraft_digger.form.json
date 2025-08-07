@@ -1,0 +1,24 @@
+{
+  "id": "minecraft:digger",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:digger",
+    "title": "Minecraft Digger Misc",
+    "description": "Digger item component specifies how quickly this item can dig specific blocks.",
+    "fields": [
+      {
+        "id": "destroy_speeds",
+        "title": "Destroy Speeds",
+        "description": "A list of blocks to dig with correlating speeds of digging.",
+        "dataType": 16,
+        "subFormId": "misc/blockinfo"
+      },
+      {
+        "id": "use_efficiency",
+        "title": "Use Efficiency",
+        "description": "Determines whether this item should be impacted if the efficiency enchantment is applied to it.",
+        "dataType": 1
+      }
+    ]
+  }
+}

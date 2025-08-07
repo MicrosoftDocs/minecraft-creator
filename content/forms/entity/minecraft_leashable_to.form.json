@@ -69,6 +69,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/copper_golem.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:leashable_to/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/cow.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:cow_adult/minecraft:leashable_to/",

@@ -1,0 +1,78 @@
+{
+  "id": "minecraft:repairable",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:repairable",
+    "title": "Minecraft Repairable Misc",
+    "description": "The repairable item component specifies which items can be used to repair this item, along with how much durability is gained.",
+    "fields": [
+      {
+        "id": "repair_items",
+        "title": "Repair Items",
+        "description": "List of repair item entries. Each entry needs to define a list of strings for `items` that can be used for the repair and an optional `repair_amount` for how much durability is gained.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "repair_items",
+            "dataType": 16,
+            "readOnly": true,
+            "subForm": {
+              "id": "repair_items",
+              "title": "Repair Items",
+              "fields": [
+                {
+                  "id": "items",
+                  "title": "Items",
+                  "description": "Items that may be used to repair an item.",
+                  "dataType": 2,
+                  "alternates": [
+                    {
+                      "id": "items",
+                      "dataType": 24
+                    }
+                  ],
+                  "isRequired": true
+                },
+                {
+                  "id": "repair_amount",
+                  "title": "Repair Amount",
+                  "description": "How much the item is repaired.",
+                  "dataType": 24,
+                  "alternates": [
+                    {
+                      "id": "repair_amount",
+                      "dataType": 14,
+                      "readOnly": true,
+                      "subForm": {
+                        "id": "repair_amount",
+                        "title": "Repair Amount",
+                        "fields": [
+                          {
+                            "id": "expression",
+                            "title": "Expression",
+                            "dataType": 2,
+                            "isRequired": true
+                          },
+                          {
+                            "id": "version",
+                            "title": "Version",
+                            "dataType": 0,
+                            "isRequired": true
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "id": "repair_amount",
+                      "dataType": 3
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

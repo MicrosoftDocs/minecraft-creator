@@ -127,7 +127,7 @@ ms.date: 02/11/2025
 | [query.is_charged](queryfunctions/query_is_charged.md)| Returns 1.0 if the entity is charged, else it returns 0.0. |
 | [query.is_charging](queryfunctions/query_is_charging.md)| Returns 1.0 if the entity is charging, else it returns 0.0. |
 | [query.is_chested](queryfunctions/query_is_chested.md)| Returns 1.0 if the entity has chests attached to it, else it returns 0.0. |
-| [query.is_cooldown_type](queryfunctions/query_is_cooldown_type.md)| Returns 1.0 if the specified held or worn item has the specified cooldown type name, otherwise returns 0.0. |
+| [query.is_cooldown_category](queryfunctions/query_is_cooldown_category.md)| Returns 1.0 if the specified held or worn item has the specified cooldown category, otherwise returns 0.0. |
 | [query.is_crawling](queryfunctions/query_is_crawling.md)| Returns 1.0 if the entity is crawling, else it returns 0.0 |
 | [query.is_critical](queryfunctions/query_is_critical.md)| Returns 1.0 if the entity is critical, else it returns 0.0. |
 | [query.is_croaking](queryfunctions/query_is_croaking.md)| Returns 1.0 if the entity is croaking, else it returns 0.0. |
@@ -214,7 +214,7 @@ ms.date: 02/11/2025
 | [query.item_in_use_duration](queryfunctions/query_item_in_use_duration.md)| Returns the amount of time an item has been in use in seconds up to the maximum duration, else 0.0 if it doesn't make sense. |
 | [query.item_is_charged](queryfunctions/query_item_is_charged.md)| Takes one optional hand slot as a parameter (0 or 'main_hand' for main hand, 1 or 'off_hand' for off hand), and returns 1.0 if the item is charged in the requested slot (defaulting to the main hand if no parameter is supplied), otherwise returns 0.0. |
 | [query.item_max_use_duration](queryfunctions/query_item_max_use_duration.md)| Returns the maximum amount of time the item can be used, else 0.0 if it doesn't make sense. |
-| [query.item_remaining_use_duration](queryfunctions/query_item_remaining_use_duration.md)| Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense.Item queried is specified by the slot name 'main_hand' or 'off_hand'.Time remaining is normalized using the normalization value, only if one is given, else it is returned in seconds. |
+| [query.item_remaining_use_duration](queryfunctions/query_item_remaining_use_duration.md)| Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense. |
 | [query.item_slot_to_bone_name](queryfunctions/query_item_slot_to_bone_name.md)| query.item_slot_to_bone_name requires one parameter: the name of the equipment slot. |
 | [query.key_frame_lerp_time](queryfunctions/query_key_frame_lerp_time.md)| Returns the ratio between the previous and next key frames. |
 | [query.last_frame_time](queryfunctions/query_last_frame_time.md)| Returns the time in *seconds* of the last frame. |

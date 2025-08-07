@@ -1,0 +1,33 @@
+{
+  "id": "Feature Rule Definition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Feature Rule Definition",
+    "title": "Feature Rule Definition Misc",
+    "fields": [
+      {
+        "id": "conditions",
+        "title": "Conditions",
+        "description": "Parameters to control where and when the feature will be placed.",
+        "dataType": 16,
+        "subFormId": "misc/feature_rule_conditions",
+        "isRequired": true
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "description": "Identifier for the Feature Rule and Feture to place.",
+        "dataType": 16,
+        "subFormId": "misc/feature_rule_description",
+        "isRequired": true
+      },
+      {
+        "id": "distribution",
+        "title": "Distribution",
+        "description": "Parameters controlling the initial scatter of the feature.",
+        "dataType": 16,
+        "subFormId": "misc/scatter_params"
+      }
+    ]
+  }
+}

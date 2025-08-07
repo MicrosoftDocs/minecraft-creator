@@ -17,5 +17,25 @@
         "dataType": 0
       }
     ]
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "ConstantIntProvider",
+    "title": "ConstantIntProvider Misc",
+    "description": "Specifies a constant integer",
+    "fields": [
+      {
+        "id": "type",
+        "title": "IntProviderType",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "value",
+        "title": "Value",
+        "description": "Constant value",
+        "dataType": 0,
+        "isRequired": true
+      }
+    ]
   }
 }

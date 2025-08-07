@@ -345,15 +345,7 @@
       "/vanilla/behavior_pack/entities/copper_golem.json": [
         {
           "path": "/minecraft:entity/components/minecraft:leashable/",
-          "content": {
-            "presets": [
-              {
-                "soft_distance": 4,
-                "hard_distance": 6,
-                "max_distance": 10
-              }
-            ]
-          }
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/cow.json": [

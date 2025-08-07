@@ -1,0 +1,23 @@
+{
+  "id": "Spawn Rules",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Spawn Rules",
+    "title": "Spawn Rules Misc",
+    "fields": [
+      {
+        "id": "conditions",
+        "title": "Conditions",
+        "dataType": 16,
+        "subFormId": "misc/spawn_biomeconditions"
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "dataType": 16,
+        "subFormId": "misc/spawn_description",
+        "isRequired": true
+      }
+    ]
+  }
+}

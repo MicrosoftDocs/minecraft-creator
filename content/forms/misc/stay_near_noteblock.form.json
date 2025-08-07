@@ -1,0 +1,45 @@
+{
+  "id": "minecraft:behavior.stay_near_noteblock",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.stay_near_noteblock",
+    "title": "Minecraft Behavior.stay Near Noteblock Misc",
+    "description": "The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "listen_time",
+        "title": "Listen Time",
+        "description": "Sets the time an entity should stay near a noteblock after hearing it. Default value: 30.",
+        "dataType": 0
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "speed",
+        "title": "Speed",
+        "description": "Sets the entity's speed when moving toward the block. Default value: 1.",
+        "dataType": 3
+      },
+      {
+        "id": "start_distance",
+        "title": "Start Distance",
+        "description": "Sets the distance the entity needs to be away from the block to attempt to start the goal. Default value: 10.",
+        "dataType": 3
+      },
+      {
+        "id": "stop_distance",
+        "title": "Stop Distance",
+        "description": "Sets the distance from the block the entity will attempt to reach. Default value: 2.",
+        "dataType": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "minecraft:creature_spawn_probability",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:creature_spawn_probability",
+    "title": "Minecraft Creature Spawn Probability Misc",
+    "description": "Probability that creatures will spawn within the biome when a chunk is generated.",
+    "fields": [
+      {
+        "id": "probability",
+        "title": "Probability",
+        "description": "Probabiltity between [0.0, 0.75] of creatures spawning within the biome on chunk generation.",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 0.75
+          }
+        ]
+      }
+    ]
+  }
+}

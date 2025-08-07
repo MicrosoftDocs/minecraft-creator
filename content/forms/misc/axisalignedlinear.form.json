@@ -1,0 +1,42 @@
+{
+  "id": "AxisAlignedLinear",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "AxisAlignedLinear",
+    "title": "AxisAlignedLinear Misc",
+    "description": "Predicate that evalutes to true if the block is within the distance range along the provided axis and and random number is generated between chance range",
+    "fields": [
+      {
+        "id": "axis",
+        "title": "PositionalBlockRuleAxis",
+        "dataType": 2
+      },
+      {
+        "id": "max_chance",
+        "title": "Max Chance",
+        "dataType": 3
+      },
+      {
+        "id": "max_dist",
+        "title": "Max Dist",
+        "dataType": 0
+      },
+      {
+        "id": "min_chance",
+        "title": "Min Chance",
+        "dataType": 3
+      },
+      {
+        "id": "min_dist",
+        "title": "Min Dist",
+        "dataType": 0
+      },
+      {
+        "id": "predicate_type",
+        "title": "PosType",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

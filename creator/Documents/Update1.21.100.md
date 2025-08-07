@@ -9,6 +9,9 @@ ms.date: 08/02/2025 #Required; mm/dd/yyyy format.
 
 # Minecraft Bedrock 1.21.100 Update Notes for Creators
 
+> [!VIDEO https://www.youtube.com/embed/Q75yT8dYdgM]
+*Video version of this article from the Minecraft Creator Channel*
+
 Minecraft Bedrock has been updated to 1.21.100 and there are a number of changes of note for creators. The following features do not require experimental toggles.
 
 ## Editor
@@ -24,7 +27,7 @@ Editor has been updated with a number of quality-of-life features.
 [Get started with Editor!](./BedrockEditor/EditorInstallation.md)
 
 ## Blocks
-- Particle Intensity - When breaking a block, defines the quantity of particles that appear.
+- Particle Count - When breaking a block, defines the quantity of particles that appear with a particle_count property on destruction particles.
 - Textures - UV Locking (minecraft:geometry uv_lock) - This will make it so there is no longer a need to define new geo every time a texture is rotated.
 - [Moveable](../Reference/Content/BlockReference/Examples/BlockComponents/minecraftBlock_movable.md) - Defines if block is immovable, pushable, or pullable by a piston.
 - Random offset (minecraft:random_offset) - Defines a block to have a variable offset, allowing for the kind of randomization seen in dirt blocks.
@@ -35,7 +38,6 @@ Editor has been updated with a number of quality-of-life features.
  
 ## Scripting
 - Custom Commands - Similar to block and item custom components, this allows creation of custom slash commands via script.
-- Lore APIs now support rawtext.
 - Player inventory events
     - [PlayerHotbarSelectedSlotChangeAfterEvent](../ScriptAPI/minecraft/server/PlayerHotbarSelectedSlotChangeAfterEvent.md)
     - [PlayerHotbarSelectedSlotChangeAfterEventSignal](../ScriptAPI/minecraft/server/PlayerHotbarSelectedSlotChangeAfterEventSignal.md)

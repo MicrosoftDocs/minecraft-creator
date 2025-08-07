@@ -1,0 +1,27 @@
+{
+  "id": "Biome Definition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Biome Definition",
+    "title": "Biome Definition Misc",
+    "description": "Contains a description and components to define a Biome.",
+    "fields": [
+      {
+        "id": "components",
+        "title": "Components",
+        "description": "Components for this Biome.",
+        "dataType": 16,
+        "subFormId": "misc/biome_components",
+        "isRequired": true
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "description": "Non-component settings, including the Biome name.",
+        "dataType": 16,
+        "subFormId": "misc/biome_description",
+        "isRequired": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "Shape",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Shape",
+    "title": "Shape Misc",
+    "fields": [
+      {
+        "id": "boxes",
+        "title": "Boxes",
+        "dataType": 16,
+        "minLength": 1,
+        "subFormId": "misc/box",
+        "isRequired": true
+      }
+    ]
+  }
+}

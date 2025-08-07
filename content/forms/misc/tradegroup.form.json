@@ -1,0 +1,23 @@
+{
+  "id": "TradeGroup",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "TradeGroup",
+    "title": "TradeGroup Misc",
+    "fields": [
+      {
+        "id": "num_to_select",
+        "title": "Num To Select",
+        "dataType": 0
+      },
+      {
+        "id": "trades",
+        "title": "Trades",
+        "dataType": 16,
+        "minLength": 1,
+        "subFormId": "misc/trade",
+        "isRequired": true
+      }
+    ]
+  }
+}

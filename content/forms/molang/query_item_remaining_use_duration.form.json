@@ -4,7 +4,7 @@
   "generated_doNotEdit": {
     "id": "query.item_remaining_use_duration",
     "title": "Item Remaining Use Duration Query",
-    "description": "Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense.Item queried is specified by the slot name 'main_hand' or 'off_hand'.Time remaining is normalized using the normalization value, only if one is given, else it is returned in seconds.",
+    "description": "Returns the amount of time an item has left to use, else 0.0 if it doesn't make sense. Item queried is specified by the slot name 'main_hand' or 'off_hand'. Time remaining is normalized using the normalization value, only if one is given, else it is returned in seconds.",
     "fields": []
   }
 }

@@ -1,0 +1,17 @@
+{
+  "id": "EmptyPoolElement",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "EmptyPoolElement",
+    "title": "EmptyPoolElement Misc",
+    "fields": [
+      {
+        "id": "element_type",
+        "title": "ElementType",
+        "description": "The type of element",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

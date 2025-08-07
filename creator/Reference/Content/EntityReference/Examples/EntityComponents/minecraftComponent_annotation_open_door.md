@@ -17,7 +17,7 @@ Allows the entity to open doors.
 
 ## Samples
 
-#### [Piglin Brute](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/piglin_brute.json)
+#### [Copper Golem](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/copper_golem.json)
 
 
 ```json

@@ -15,7 +15,19 @@
         "id": "can_place",
         "title": "Can Place",
         "description": "Filters for if the entity should try to place its block. Self and Target are set.",
-        "dataType": 20
+        "dataType": 20,
+        "samples": {
+          "/vanilla/behavior_pack/entities/copper_golem.json": [
+            {
+              "path": "/minecraft:entity/component_groups/minecraft:becoming_statue/minecraft:behavior.place_block/",
+              "content": {
+                "test": "bool_property",
+                "domain": "minecraft:is_becoming_statue",
+                "value": false
+              }
+            }
+          ]
+        }
       },
       {
         "id": "chance",
@@ -47,8 +59,8 @@
             {
               "path": "/minecraft:entity/component_groups/minecraft:becoming_statue/minecraft:behavior.place_block/",
               "content": {
-                "event": "minecraft:serialize_entity",
-                "target": "block"
+                "event": "minecraft:become_statue",
+                "target": "self"
               }
             }
           ]
@@ -243,6 +255,11 @@
             "xz_range": 0,
             "y_range": 0,
             "chance": 0.0058,
+            "can_place": {
+              "test": "bool_property",
+              "domain": "minecraft:is_becoming_statue",
+              "value": false
+            },
             "randomly_placeable_blocks": [
               {
                 "block": {
@@ -353,8 +370,8 @@
             ],
             "affected_by_griefing_rule": false,
             "on_place": {
-              "event": "minecraft:serialize_entity",
-              "target": "block"
+              "event": "minecraft:become_statue",
+              "target": "self"
             }
           }
         }
