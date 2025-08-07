@@ -1,0 +1,15 @@
+{
+  "id": "Spawn MobEventFilter",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Spawn MobEventFilter",
+    "title": "Spawn MobEventFilter Misc",
+    "fields": [
+      {
+        "id": "event",
+        "title": "Event",
+        "dataType": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "AlwaysTrueBlock",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "AlwaysTrueBlock",
+    "title": "AlwaysTrueBlock Misc",
+    "description": "Predicate that always evaluates to true. This is the default predicate if no other predicate is specified.",
+    "fields": [
+      {
+        "id": "predicate_type",
+        "title": "BlockType",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

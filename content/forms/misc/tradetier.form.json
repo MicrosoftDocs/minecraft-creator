@@ -1,0 +1,23 @@
+{
+  "id": "TradeTier",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "TradeTier",
+    "title": "TradeTier Misc",
+    "fields": [
+      {
+        "id": "groups",
+        "title": "Groups",
+        "dataType": 16,
+        "subFormId": "misc/tradegroup",
+        "isRequired": true
+      },
+      {
+        "id": "total_exp_required",
+        "title": "Total Exp Required",
+        "dataType": 0,
+        "isRequired": true
+      }
+    ]
+  }
+}

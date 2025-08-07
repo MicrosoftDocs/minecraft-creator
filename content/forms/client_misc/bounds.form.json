@@ -1,0 +1,41 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Bounds",
+    "title": "Bounds Misc",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": -512
+          },
+          {
+            "comparison": "<=",
+            "value": 512
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": -512
+          },
+          {
+            "comparison": "<=",
+            "value": 512
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

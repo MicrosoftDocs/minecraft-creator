@@ -1,0 +1,23 @@
+{
+  "id": "minecraft:dyeable",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:dyeable",
+    "title": "Minecraft Dyeable Misc",
+    "fields": [
+      {
+        "id": "default_color",
+        "title": "Default Color",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "default_color",
+            "dataType": 32,
+            "minLength": 3,
+            "maxLength": 3
+          }
+        ]
+      }
+    ]
+  }
+}

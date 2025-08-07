@@ -1,0 +1,50 @@
+{
+  "id": "minecraft:behavior.charge_attack",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.charge_attack",
+    "title": "Minecraft Behavior.charge Attack Misc",
+    "description": "Allows this entity to damage a target by using a running attack.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "max_distance",
+        "title": "Max Distance",
+        "description": "A charge attack cannot start if the entity is farther than this distance to the target. Default value: 3.",
+        "dataType": 3
+      },
+      {
+        "id": "min_distance",
+        "title": "Min Distance",
+        "description": "A charge attack cannot start if the entity is closer than this distance to the target. Default value: 2.",
+        "dataType": 3
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "sound_event",
+        "title": "LevelSoundEvent",
+        "dataType": 2
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Modifies the entity's speed when charging toward the target. Default value: 1.",
+        "dataType": 3
+      },
+      {
+        "id": "success_rate",
+        "title": "Success Rate",
+        "description": "Percent chance this entity will start a charge attack, if not already attacking (1.0 = 100%). Default value: 0.1428.",
+        "dataType": 3
+      }
+    ]
+  }
+}

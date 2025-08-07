@@ -1,0 +1,63 @@
+{
+  "id": "minecraft:behavior.dragonflaming",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.dragonflaming",
+    "title": "Minecraft Behavior.dragonflaming Misc",
+    "description": "Allows this entity to use a flame-breath attack. Can only be used by the Ender Dragon.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "cooldown_time",
+        "title": "Cooldown Time",
+        "description": "Time (in seconds) between each start of the cycle to roar, then breath flame. Default value: 10.",
+        "dataType": 3
+      },
+      {
+        "id": "flame_time",
+        "title": "Flame Time",
+        "description": "Time (in seconds), after roar, to breath flame. Default value: 0.5.",
+        "dataType": 3
+      },
+      {
+        "id": "ground_flame_count",
+        "title": "Ground Flame Count",
+        "description": "Number of ground flame-breath attacks to use before flight-takeoff. Default value: 4.",
+        "dataType": 0
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "roar_time",
+        "title": "Roar Time",
+        "description": "Time (in seconds) to roar, before breathing flame. Default value: 2.",
+        "dataType": 3
+      },
+      {
+        "id": "smoke_color",
+        "title": "Smoke Color",
+        "description": " Default value: #DC00EF.",
+        "dataType": 2
+      },
+      {
+        "id": "smoke_radius",
+        "title": "Smoke Radius",
+        "description": " Default value: 5.",
+        "dataType": 3
+      },
+      {
+        "id": "smoke_time",
+        "title": "Smoke Time",
+        "description": " Default value: 10.",
+        "dataType": 3
+      }
+    ]
+  }
+}

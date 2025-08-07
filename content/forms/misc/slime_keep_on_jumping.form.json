@@ -1,0 +1,27 @@
+{
+  "id": "minecraft:behavior.slime_keep_on_jumping",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:behavior.slime_keep_on_jumping",
+    "title": "Minecraft Behavior.slime Keep On Jumping Misc",
+    "description": "Allows the entity to continuously jump around like a slime.",
+    "fields": [
+      {
+        "id": "control_flags",
+        "title": "Control Flags",
+        "dataType": 17
+      },
+      {
+        "id": "priority",
+        "title": "Priority",
+        "dataType": 0
+      },
+      {
+        "id": "speed_multiplier",
+        "title": "Speed Multiplier",
+        "description": "Determines the multiplier this entity's speed is modified by when jumping around. Default value: 1.",
+        "dataType": 3
+      }
+    ]
+  }
+}

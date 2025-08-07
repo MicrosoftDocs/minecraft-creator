@@ -1,0 +1,24 @@
+{
+  "id": "BlockMatch",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "BlockMatch",
+    "title": "BlockMatch Misc",
+    "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",
+    "fields": [
+      {
+        "id": "block",
+        "title": "Block",
+        "description": "The block to match against.",
+        "dataType": 16,
+        "isRequired": true
+      },
+      {
+        "id": "predicate_type",
+        "title": "BlockType",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

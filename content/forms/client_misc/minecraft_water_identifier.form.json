@@ -1,0 +1,18 @@
+{
+  "id": "minecraft:water_identifier",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:water_identifier",
+    "title": "Minecraft Water Identifier Client Misc",
+    "description": "Set the identifier used for rendering water in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Water JSON schemas under the \"water\" directory. Biomes without this component will have default water settings.",
+    "fields": [
+      {
+        "id": "water_identifier",
+        "title": "Water Identifier",
+        "description": "Identifier of water definition to use",
+        "dataType": 16,
+        "isRequired": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "minecraft:multinoise_generation_rules",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:multinoise_generation_rules",
+    "title": "Minecraft Multinoise Generation Rules Misc",
+    "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.",
+    "fields": [
+      {
+        "id": "target_altitude",
+        "title": "Target Altitude",
+        "description": "Altitude with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "target_humidity",
+        "title": "Target Humidity",
+        "description": "Humidity with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "target_temperature",
+        "title": "Target Temperature",
+        "description": "Temperature with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "target_weirdness",
+        "title": "Target Weirdness",
+        "description": "Weirdness with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      },
+      {
+        "id": "weight",
+        "title": "Weight",
+        "description": "Weight with which this biome should be generated, relative to other biomes.",
+        "dataType": 3
+      }
+    ]
+  }
+}

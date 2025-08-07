@@ -199,7 +199,7 @@
           "/vanilla/behavior_pack/entities/copper_golem.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
-              "content": 5
+              "content": 6
             }
           ],
           "/vanilla/behavior_pack/entities/creeper.json": [
@@ -248,12 +248,6 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
               "content": 11
-            }
-          ],
-          "/vanilla/behavior_pack/entities/polar_bear.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
-              "content": 6
             }
           ],
           "/vanilla/behavior_pack/entities/rabbit.json": [
@@ -433,7 +427,7 @@
         {
           "path": "/minecraft:entity/components/minecraft:behavior.look_at_player/",
           "content": {
-            "priority": 5,
+            "priority": 6,
             "look_distance": 6,
             "probability": 0.02
           }

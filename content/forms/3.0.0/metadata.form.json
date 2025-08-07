@@ -8,8 +8,7 @@
       {
         "id": "authors",
         "title": "Authors",
-        "dataType": 17,
-        "isRequired": true
+        "dataType": 17
       },
       {
         "id": "generated_with",

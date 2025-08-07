@@ -24,3 +24,5 @@ Enumeration representing identifiers for graphics settings properties.
 `ShowInvisibleBlocks = "ShowInvisibleBlocks"`
 
 Manages rendering of invisible blocks (e.g., barrier, light, structure_void).
+### **ShowToastNotifications**
+`ShowToastNotifications = "ShowToastNotifications"`

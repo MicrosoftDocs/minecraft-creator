@@ -1,0 +1,33 @@
+{
+  "id": "TemplatePoolElement",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "TemplatePoolElement",
+    "title": "TemplatePoolElement Misc",
+    "fields": [
+      {
+        "id": "element",
+        "title": "Element",
+        "description": "A grouping of a Structure Template, the Processor List to use when placing the structure, and its weight that determines the likelihood of the element being chosen.",
+        "dataType": 16,
+        "isRequired": true
+      },
+      {
+        "id": "weight",
+        "title": "Weight",
+        "description": "The weighted probability of choosing the element from the pool. For example, a template pool containing 2 structures with weights of 1 and 3 will have a 25% and 75% chance of being chosen respectively.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": ">=",
+            "value": 1
+          },
+          {
+            "comparison": "<=",
+            "value": 200
+          }
+        ]
+      }
+    ]
+  }
+}

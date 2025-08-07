@@ -1,0 +1,41 @@
+{
+  "id": "minecraft:food",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:food",
+    "title": "Minecraft Food Misc",
+    "description": "When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly.",
+    "fields": [
+      {
+        "id": "can_always_eat",
+        "title": "Can Always Eat",
+        "description": "If true you can always eat this item (even when not hungry). Default is set to false.",
+        "dataType": 1
+      },
+      {
+        "id": "nutrition",
+        "title": "Nutrition",
+        "description": "Value that is added to the entity's nutrition when the item is used. Default is set to 0.",
+        "dataType": 0
+      },
+      {
+        "id": "saturation_modifier",
+        "title": "Saturation Modifier",
+        "description": "saturation_modifier is used in this formula: (nutrition * saturation_modifier * 2) when applying the saturation buff. Default is set to 0.6.",
+        "dataType": 3
+      },
+      {
+        "id": "using_converts_to",
+        "title": "Using Converts To",
+        "description": "When used, converts to the item specified by the string in this field. Default does not convert item.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "using_converts_to",
+            "dataType": 24
+          }
+        ]
+      }
+    ]
+  }
+}

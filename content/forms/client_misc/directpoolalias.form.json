@@ -1,0 +1,25 @@
+{
+  "id": "DirectPoolAlias",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "DirectPoolAlias",
+    "title": "DirectPoolAlias Misc",
+    "description": "Pool alias for a Direct target.",
+    "fields": [
+      {
+        "id": "alias",
+        "title": "Alias",
+        "description": "Alias of Direct pool",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "target",
+        "title": "Target",
+        "description": "Target pool",
+        "dataType": 16,
+        "isRequired": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "particle_appearance_billboard flipbook_data",
+    "title": "Particle Appearance Billboard Flipbook Data Client Misc",
+    "fields": [
+      {
+        "id": "base_UV",
+        "title": "Base UV",
+        "dataType": 24,
+        "minLength": 2,
+        "maxLength": 2,
+        "alternates": [
+          {
+            "id": "base_UV",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "base_UV",
+              "title": "Base UV",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "base_UV",
+            "dataType": 3
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "frames_per_second",
+        "title": "Frames Per Second",
+        "dataType": 3
+      },
+      {
+        "id": "loop",
+        "title": "Loop",
+        "dataType": 1
+      },
+      {
+        "id": "max_frame",
+        "title": "Max Frame",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "max_frame",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "max_frame",
+              "title": "Max Frame",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "max_frame",
+            "dataType": 3
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "size_UV",
+        "title": "Size UV",
+        "dataType": 32,
+        "minLength": 2,
+        "maxLength": 2
+      },
+      {
+        "id": "step_UV",
+        "title": "Step UV",
+        "dataType": 32,
+        "minLength": 2,
+        "maxLength": 2
+      },
+      {
+        "id": "stretch_to_lifetime",
+        "title": "Stretch To Lifetime",
+        "dataType": 1
+      }
+    ]
+  }
+}

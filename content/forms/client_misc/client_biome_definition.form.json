@@ -1,0 +1,27 @@
+{
+  "id": "Client Biome Definition",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Client Biome Definition",
+    "title": "Client Biome Definition Client Misc",
+    "description": "Contains a description and components to define a Client Biome.",
+    "fields": [
+      {
+        "id": "components",
+        "title": "Components",
+        "description": "Components for this Client Biome.",
+        "dataType": 16,
+        "subFormId": "client_misc/client_biome_components",
+        "isRequired": true
+      },
+      {
+        "id": "description",
+        "title": "Description",
+        "description": "Non-component settings, including the Client Biome name.",
+        "dataType": 16,
+        "subFormId": "client_misc/client_biome_description",
+        "isRequired": true
+      }
+    ]
+  }
+}

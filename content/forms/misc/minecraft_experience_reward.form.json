@@ -1,0 +1,148 @@
+{
+  "id": "minecraft:experience_reward",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:experience_reward",
+    "title": "Minecraft Experience Reward Misc",
+    "fields": [
+      {
+        "id": "on_bred",
+        "title": "Bred",
+        "description": "A Molang expression defining the amount of experience rewarded when this entity is successfully bred.",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "on_bred",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "on_bred",
+              "title": "Bred",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "on_bred",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "on_bred_array",
+        "title": "Bred Array",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "on_bred_array",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "on_bred_array",
+              "title": "Bred Array",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "on_bred_array",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "on_death",
+        "title": "Death",
+        "description": "A Molang expression defining the amount of experience rewarded when this entity dies.",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "on_death",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "on_death",
+              "title": "Death",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "on_death",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "on_death_array",
+        "title": "Death Array",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "on_death_array",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "on_death_array",
+              "title": "Death Array",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "on_death_array",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

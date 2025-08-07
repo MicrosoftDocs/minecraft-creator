@@ -1,0 +1,117 @@
+{
+  "id": "minecraft:entity_placer",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:entity_placer",
+    "title": "Minecraft Entity Placer Misc",
+    "description": "The entity_placer item component specifies the blocks that the item can be placed on.",
+    "fields": [
+      {
+        "id": "dispense_on",
+        "title": "Dispense On",
+        "description": "List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
+        "dataType": 15,
+        "subForm": {
+          "id": "dispense_on",
+          "title": "Dispense On",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": 0,
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "dataType": 1
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "dispense_on",
+            "dataType": 2
+          },
+          {
+            "id": "dispense_on",
+            "dataType": 16
+          }
+        ]
+      },
+      {
+        "id": "entity",
+        "title": "Entity",
+        "description": "The entity to be placed in the world.",
+        "dataType": 16,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
+          }
+        ]
+      },
+      {
+        "id": "use_on",
+        "title": "Use On",
+        "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
+        "dataType": 15,
+        "subForm": {
+          "id": "use_on",
+          "title": "Use On",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": 0,
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "dataType": 1
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "use_on",
+            "dataType": 2
+          },
+          {
+            "id": "use_on",
+            "dataType": 16
+          }
+        ]
+      }
+    ]
+  }
+}

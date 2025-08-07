@@ -1,0 +1,37 @@
+{
+  "id": "RandomBlockMatch",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "RandomBlockMatch",
+    "title": "RandomBlockMatch Misc",
+    "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
+    "fields": [
+      {
+        "id": "block",
+        "title": "Block",
+        "description": "The block to match against.",
+        "dataType": 16,
+        "isRequired": true
+      },
+      {
+        "id": "predicate_type",
+        "title": "BlockType",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "probability",
+        "title": "Probability",
+        "description": "Probability of the evaluating to true when the block matches.",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

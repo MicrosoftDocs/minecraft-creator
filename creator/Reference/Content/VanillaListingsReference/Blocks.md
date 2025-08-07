@@ -183,7 +183,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:cave_vines | growing_plant_age |
 | minecraft:cave_vines_body_with_berries | growing_plant_age |
 | minecraft:cave_vines_head_with_berries | growing_plant_age |
-| minecraft:chain | pillar_axis |
 | minecraft:chain_command_block | conditional_bit, facing_direction |
 | minecraft:chemical_heat |  |
 | minecraft:cherry_button | button_pressed_bit, facing_direction |
@@ -218,10 +217,10 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:chiseled_stone_bricks |  |
 | minecraft:chiseled_tuff |  |
 | minecraft:chiseled_tuff_bricks |  |
+| minecraft:chorus_flower | age |
 
 | Name | States |
 |:-----------|:-----------|
-| minecraft:chorus_flower | age |
 | minecraft:chorus_plant |  |
 | minecraft:clay |  |
 | minecraft:closed_eyeblossom |  |
@@ -246,13 +245,17 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:composter | composter_fill_level |
 | minecraft:compound_creator | direction |
 | minecraft:conduit |  |
+| minecraft:copper_bars |  |
 | minecraft:copper_block |  |
 | minecraft:copper_bulb | lit, powered_bit |
+| minecraft:copper_chain | pillar_axis |
 | minecraft:copper_chest | minecraft:cardinal_direction |
 | minecraft:copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:copper_grate |  |
+| minecraft:copper_lantern | hanging |
 | minecraft:copper_ore |  |
+| minecraft:copper_torch | torch_facing_direction |
 | minecraft:copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:cornflower |  |
 | minecraft:cracked_deepslate_bricks |  |
@@ -418,12 +421,12 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:element_14 |  |
 | minecraft:element_15 |  |
 | minecraft:element_16 |  |
-| minecraft:element_17 |  |
-| minecraft:element_18 |  |
-| minecraft:element_19 |  |
 
 | Name | States |
 |:-----------|:-----------|
+| minecraft:element_17 |  |
+| minecraft:element_18 |  |
+| minecraft:element_19 |  |
 | minecraft:element_2 |  |
 | minecraft:element_20 |  |
 | minecraft:element_21 |  |
@@ -528,17 +531,20 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:ender_chest | minecraft:cardinal_direction |
 | minecraft:exposed_chiseled_copper |  |
 | minecraft:exposed_copper |  |
+| minecraft:exposed_copper_bars |  |
 | minecraft:exposed_copper_bulb | lit, powered_bit |
+| minecraft:exposed_copper_chain | pillar_axis |
 | minecraft:exposed_copper_chest | minecraft:cardinal_direction |
 | minecraft:exposed_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:exposed_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:exposed_copper_grate |  |
+| minecraft:exposed_copper_lantern | hanging |
 | minecraft:exposed_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:exposed_cut_copper |  |
 | minecraft:exposed_cut_copper_slab | minecraft:vertical_half |
 | minecraft:exposed_cut_copper_stairs | upside_down_bit, weirdo_direction |
 | minecraft:exposed_double_cut_copper_slab | minecraft:vertical_half |
-| minecraft:exposed_lightning_rod | facing_direction |
+| minecraft:exposed_lightning_rod | facing_direction, powered_bit |
 | minecraft:farmland | moisturized_amount |
 | minecraft:fence_gate | in_wall_bit, minecraft:cardinal_direction, open_bit |
 | minecraft:fern |  |
@@ -618,15 +624,15 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:hard_light_gray_stained_glass_pane |  |
 | minecraft:hard_lime_stained_glass |  |
 | minecraft:hard_lime_stained_glass_pane |  |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:hard_magenta_stained_glass |  |
 | minecraft:hard_magenta_stained_glass_pane |  |
 | minecraft:hard_orange_stained_glass |  |
 | minecraft:hard_orange_stained_glass_pane |  |
 | minecraft:hard_pink_stained_glass |  |
 | minecraft:hard_pink_stained_glass_pane |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:hard_purple_stained_glass |  |
 | minecraft:hard_purple_stained_glass_pane |  |
 | minecraft:hard_red_stained_glass |  |
@@ -656,6 +662,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:infested_stone_bricks |  |
 | minecraft:iron_bars |  |
 | minecraft:iron_block |  |
+| minecraft:iron_chain | pillar_axis |
 | minecraft:iron_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:iron_ore |  |
 | minecraft:iron_trapdoor | direction, open_bit, upside_down_bit |
@@ -729,7 +736,7 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:light_gray_terracotta |  |
 | minecraft:light_gray_wool |  |
 | minecraft:light_weighted_pressure_plate | redstone_signal |
-| minecraft:lightning_rod | facing_direction |
+| minecraft:lightning_rod | facing_direction, powered_bit |
 | minecraft:lilac | upper_block_bit |
 | minecraft:lily_of_the_valley |  |
 | minecraft:lime_candle | candles, lit |
@@ -820,6 +827,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:nether_wart | age |
 | minecraft:nether_wart_block |  |
 | minecraft:netherite_block |  |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:netherrack |  |
 | minecraft:normal_stone_double_slab | minecraft:vertical_half |
 | minecraft:normal_stone_slab | minecraft:vertical_half |
@@ -827,9 +837,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:noteblock |  |
 | minecraft:oak_double_slab | minecraft:vertical_half |
 | minecraft:oak_fence |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:oak_hanging_sign | attached_bit, facing_direction, ground_sign_direction, hanging |
 | minecraft:oak_leaves | persistent_bit, update_bit |
 | minecraft:oak_log | pillar_axis |
@@ -858,17 +865,20 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:oxeye_daisy |  |
 | minecraft:oxidized_chiseled_copper |  |
 | minecraft:oxidized_copper |  |
+| minecraft:oxidized_copper_bars |  |
 | minecraft:oxidized_copper_bulb | lit, powered_bit |
+| minecraft:oxidized_copper_chain | pillar_axis |
 | minecraft:oxidized_copper_chest | minecraft:cardinal_direction |
 | minecraft:oxidized_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:oxidized_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:oxidized_copper_grate |  |
+| minecraft:oxidized_copper_lantern | hanging |
 | minecraft:oxidized_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:oxidized_cut_copper |  |
 | minecraft:oxidized_cut_copper_slab | minecraft:vertical_half |
 | minecraft:oxidized_cut_copper_stairs | upside_down_bit, weirdo_direction |
 | minecraft:oxidized_double_cut_copper_slab | minecraft:vertical_half |
-| minecraft:oxidized_lightning_rod | facing_direction |
+| minecraft:oxidized_lightning_rod | facing_direction, powered_bit |
 | minecraft:packed_ice |  |
 | minecraft:packed_mud |  |
 | minecraft:pale_hanging_moss | tip |
@@ -1020,6 +1030,9 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:red_stained_glass_pane |  |
 | minecraft:red_terracotta |  |
 | minecraft:red_tulip |  |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:red_wool |  |
 | minecraft:redstone_block |  |
 | minecraft:redstone_lamp |  |
@@ -1030,9 +1043,6 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:reinforced_deepslate |  |
 | minecraft:repeating_command_block | conditional_bit, facing_direction |
 | minecraft:resin_block |  |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:resin_brick_double_slab | minecraft:vertical_half |
 | minecraft:resin_brick_slab | minecraft:vertical_half |
 | minecraft:resin_brick_stairs | upside_down_bit, weirdo_direction |
@@ -1219,11 +1229,17 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waterlily |  |
 | minecraft:waxed_chiseled_copper |  |
 | minecraft:waxed_copper |  |
+| minecraft:waxed_copper_bars |  |
 | minecraft:waxed_copper_bulb | lit, powered_bit |
+| minecraft:waxed_copper_chain | pillar_axis |
 | minecraft:waxed_copper_chest | minecraft:cardinal_direction |
+
+| Name | States |
+|:-----------|:-----------|
 | minecraft:waxed_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:waxed_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:waxed_copper_grate |  |
+| minecraft:waxed_copper_lantern | hanging |
 | minecraft:waxed_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:waxed_cut_copper |  |
 | minecraft:waxed_cut_copper_slab | minecraft:vertical_half |
@@ -1231,60 +1247,69 @@ Listed below are the available blocks for use in Minecraft: Bedrock Edition.
 | minecraft:waxed_double_cut_copper_slab | minecraft:vertical_half |
 | minecraft:waxed_exposed_chiseled_copper |  |
 | minecraft:waxed_exposed_copper |  |
+| minecraft:waxed_exposed_copper_bars |  |
 | minecraft:waxed_exposed_copper_bulb | lit, powered_bit |
+| minecraft:waxed_exposed_copper_chain | pillar_axis |
 | minecraft:waxed_exposed_copper_chest | minecraft:cardinal_direction |
-
-| Name | States |
-|:-----------|:-----------|
 | minecraft:waxed_exposed_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:waxed_exposed_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:waxed_exposed_copper_grate |  |
+| minecraft:waxed_exposed_copper_lantern | hanging |
 | minecraft:waxed_exposed_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:waxed_exposed_cut_copper |  |
 | minecraft:waxed_exposed_cut_copper_slab | minecraft:vertical_half |
 | minecraft:waxed_exposed_cut_copper_stairs | upside_down_bit, weirdo_direction |
 | minecraft:waxed_exposed_double_cut_copper_slab | minecraft:vertical_half |
-| minecraft:waxed_exposed_lightning_rod | facing_direction |
-| minecraft:waxed_lightning_rod | facing_direction |
+| minecraft:waxed_exposed_lightning_rod | facing_direction, powered_bit |
+| minecraft:waxed_lightning_rod | facing_direction, powered_bit |
 | minecraft:waxed_oxidized_chiseled_copper |  |
 | minecraft:waxed_oxidized_copper |  |
+| minecraft:waxed_oxidized_copper_bars |  |
 | minecraft:waxed_oxidized_copper_bulb | lit, powered_bit |
+| minecraft:waxed_oxidized_copper_chain | pillar_axis |
 | minecraft:waxed_oxidized_copper_chest | minecraft:cardinal_direction |
 | minecraft:waxed_oxidized_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:waxed_oxidized_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:waxed_oxidized_copper_grate |  |
+| minecraft:waxed_oxidized_copper_lantern | hanging |
 | minecraft:waxed_oxidized_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:waxed_oxidized_cut_copper |  |
 | minecraft:waxed_oxidized_cut_copper_slab | minecraft:vertical_half |
 | minecraft:waxed_oxidized_cut_copper_stairs | upside_down_bit, weirdo_direction |
 | minecraft:waxed_oxidized_double_cut_copper_slab | minecraft:vertical_half |
-| minecraft:waxed_oxidized_lightning_rod | facing_direction |
+| minecraft:waxed_oxidized_lightning_rod | facing_direction, powered_bit |
 | minecraft:waxed_weathered_chiseled_copper |  |
 | minecraft:waxed_weathered_copper |  |
+| minecraft:waxed_weathered_copper_bars |  |
 | minecraft:waxed_weathered_copper_bulb | lit, powered_bit |
+| minecraft:waxed_weathered_copper_chain | pillar_axis |
 | minecraft:waxed_weathered_copper_chest | minecraft:cardinal_direction |
 | minecraft:waxed_weathered_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:waxed_weathered_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:waxed_weathered_copper_grate |  |
+| minecraft:waxed_weathered_copper_lantern | hanging |
 | minecraft:waxed_weathered_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:waxed_weathered_cut_copper |  |
 | minecraft:waxed_weathered_cut_copper_slab | minecraft:vertical_half |
 | minecraft:waxed_weathered_cut_copper_stairs | upside_down_bit, weirdo_direction |
 | minecraft:waxed_weathered_double_cut_copper_slab | minecraft:vertical_half |
-| minecraft:waxed_weathered_lightning_rod | facing_direction |
+| minecraft:waxed_weathered_lightning_rod | facing_direction, powered_bit |
 | minecraft:weathered_chiseled_copper |  |
 | minecraft:weathered_copper |  |
+| minecraft:weathered_copper_bars |  |
 | minecraft:weathered_copper_bulb | lit, powered_bit |
+| minecraft:weathered_copper_chain | pillar_axis |
 | minecraft:weathered_copper_chest | minecraft:cardinal_direction |
 | minecraft:weathered_copper_door | door_hinge_bit, minecraft:cardinal_direction, open_bit, upper_block_bit |
 | minecraft:weathered_copper_golem_statue | minecraft:cardinal_direction |
 | minecraft:weathered_copper_grate |  |
+| minecraft:weathered_copper_lantern | hanging |
 | minecraft:weathered_copper_trapdoor | direction, open_bit, upside_down_bit |
 | minecraft:weathered_cut_copper |  |
 | minecraft:weathered_cut_copper_slab | minecraft:vertical_half |
 | minecraft:weathered_cut_copper_stairs | upside_down_bit, weirdo_direction |
 | minecraft:weathered_double_cut_copper_slab | minecraft:vertical_half |
-| minecraft:weathered_lightning_rod | facing_direction |
+| minecraft:weathered_lightning_rod | facing_direction, powered_bit |
 | minecraft:web |  |
 | minecraft:weeping_vines | weeping_vines_age |
 | minecraft:wet_sponge |  |

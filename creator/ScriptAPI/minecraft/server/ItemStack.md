@@ -135,9 +135,6 @@ Type: *number*
 ::: moniker-end
 - [setDynamicProperty](#setdynamicproperty)
 - [setLore](#setlore)
-::: moniker range="=minecraft-bedrock-experimental"
-- [createPotion](#createpotion)
-::: moniker-end
 
 ### **constructor**
 `
@@ -547,27 +544,6 @@ function giveAwesomeSword(player: Player) {
 ```
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/diamondAwesomeSword.ts) code sandbox.
-
-::: moniker range="=minecraft-bedrock-experimental"
-### **createPotion**
-`
-static createPotion(options: PotionOptions): ItemStack
-`
-
-Helper function for creating potion items.
-
-#### **Parameters**
-- **options**: [*PotionOptions*](PotionOptions.md)
-
-**Returns** [*ItemStack*](ItemStack.md)
-
-> [!CAUTION]
-> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
-  
-Notes:
-- This function can't be called in read-only mode.
-- This function can throw errors.
-::: moniker-end
 
 #### Examples
 

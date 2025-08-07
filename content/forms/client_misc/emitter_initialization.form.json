@@ -1,0 +1,77 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "emitter_initialization",
+    "title": "Emitter Initialization Client Misc",
+    "fields": [
+      {
+        "id": "creation_expression",
+        "title": "Creation Expression",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "creation_expression",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "creation_expression",
+              "title": "Creation Expression",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "creation_expression",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "per_update_expression",
+        "title": "Per Update Expression",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "per_update_expression",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "per_update_expression",
+              "title": "Per Update Expression",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "per_update_expression",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

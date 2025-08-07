@@ -1,0 +1,548 @@
+{
+  "id": "components v1.21.80",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "components v1.21.80",
+    "title": "Components v1.21.80 Misc",
+    "description": "List of all components used in this item.",
+    "fields": [
+      {
+        "id": "minecraft:allow_off_hand",
+        "title": "Minecraft Allow Off Hand",
+        "description": "The allow_off_hand component determines whether the item can be placed in the off hand slot of the inventory.",
+        "dataType": 1,
+        "alternates": [
+          {
+            "id": "minecraft:allow_off_hand",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:allow_off_hand",
+              "title": "Allow Off Hand",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Determines whether the item can be placed in the off hand slot.",
+                  "dataType": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:block_placer",
+        "title": "Minecraft Block Placer",
+        "description": "Items with the block_placer component will place a block when used. \nThis component can also be used instead of the \"minecraft:icon\" component to render the referenced block as the item icon.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_block_placer"
+      },
+      {
+        "id": "minecraft:bundle_interaction",
+        "title": "Minecraft Bundle Interaction",
+        "description": "[EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item. Requires a \"minecraft:storage_item\" component.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_bundle_interaction"
+      },
+      {
+        "id": "minecraft:can_destroy_in_creative",
+        "title": "Minecraft Can Destroy In Creative",
+        "description": "The can_destroy_in_creative component determines if the item can be used by a player to break blocks when in creative mode.",
+        "dataType": 1,
+        "alternates": [
+          {
+            "id": "minecraft:can_destroy_in_creative",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:can_destroy_in_creative",
+              "title": "Can Destroy In Creative",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Determines whether the item can be used to destroy blocks while in creative mode.",
+                  "dataType": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:compostable",
+        "title": "Minecraft Compostable",
+        "description": "Specifies that an item is compostable and provides the chance of creating a composting layer in the composter",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_compostable"
+      },
+      {
+        "id": "minecraft:cooldown",
+        "title": "Minecraft Cooldown",
+        "description": "After you use an item, all items with a \"minecraft:cooldown\" component with the same \"category\" become unusable for the amount of seconds specified in \"duration\".",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_cooldown"
+      },
+      {
+        "id": "minecraft:custom_components",
+        "title": "Minecraft Custom Components",
+        "description": "Specifies an array of custom components defined in a script that should be added to this item.",
+        "dataType": 16
+      },
+      {
+        "id": "minecraft:damage",
+        "title": "Minecraft Damage",
+        "description": "The damage component determines how much extra damage the item does on attack.",
+        "dataType": 0,
+        "alternates": [
+          {
+            "id": "minecraft:damage",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:damage",
+              "title": "Damage",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Specifies how much extra damage the item does, must be a positive number.",
+                  "dataType": 0
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:damage_absorption",
+        "title": "Minecraft Damage Absorption",
+        "description": "It allows an item to absorb damage that would otherwise be dealt to its wearer. For this to happen, the item needs to be equipped in an armor slot. The absorbed damage reduces the item's durability, with any excess damage being ignored. Because of this, the item also needs a `minecraft:durability` component.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_damage_absorption"
+      },
+      {
+        "id": "minecraft:digger",
+        "title": "Minecraft Digger",
+        "description": "Digger item component specifies how quickly this item can dig specific blocks.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_digger"
+      },
+      {
+        "id": "minecraft:display_name",
+        "title": "Minecraft Display Name",
+        "description": "The display_name item component specifies the text shown whenever an item's name is displayed, like in hover text.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_display_name"
+      },
+      {
+        "id": "minecraft:durability",
+        "title": "Minecraft Durability",
+        "description": "The durability item component specifies how much damage the item takes before breaking, and allows the item to be combined to repair or augment them.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_durability"
+      },
+      {
+        "id": "minecraft:durability_sensor",
+        "title": "Minecraft Durability Sensor",
+        "description": "Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_durability_sensor"
+      },
+      {
+        "id": "minecraft:dyeable",
+        "title": "Minecraft Dyeable",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_dyeable"
+      },
+      {
+        "id": "minecraft:enchantable",
+        "title": "Minecraft Enchantable",
+        "description": "The enchantable component specifies what enchantments can be applied to the item. Not all enchantments will have an effect on all item components.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_enchantable"
+      },
+      {
+        "id": "minecraft:entity_placer",
+        "title": "Minecraft Entity Placer",
+        "description": "The entity_placer item component specifies the blocks that the item can be placed on.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_entity_placer"
+      },
+      {
+        "id": "minecraft:food",
+        "title": "Minecraft Food",
+        "description": "When an item has a food component, it becomes edible to the player. Must have the 'minecraft:use_duration' component in order to function properly.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_food"
+      },
+      {
+        "id": "minecraft:fuel",
+        "title": "Minecraft Fuel",
+        "description": "Fuel item component allows this item to be used as fuel in a furnace to 'cook' other items.",
+        "dataType": 3,
+        "alternates": [
+          {
+            "id": "minecraft:fuel",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:fuel",
+              "title": "Fuel",
+              "fields": [
+                {
+                  "id": "duration",
+                  "title": "Duration",
+                  "description": "Amount of time, in seconds, this fuel will cook items.",
+                  "dataType": 3,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 0.05000000074505806
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:glint",
+        "title": "Minecraft Glint",
+        "description": "The glint component determines whether the item has the enchanted glint render effect on it.",
+        "dataType": 1,
+        "alternates": [
+          {
+            "id": "minecraft:glint",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:glint",
+              "title": "Glint",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Determines whether the item has the glint effect.",
+                  "dataType": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:hand_equipped",
+        "title": "Minecraft Hand Equipped",
+        "description": "The hand_equipped component determines if an item is rendered like a tool while it is in a player's hand.",
+        "dataType": 1,
+        "alternates": [
+          {
+            "id": "minecraft:hand_equipped",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:hand_equipped",
+              "title": "Hand Equipped",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Determines whether the item is rendered like a tool while in the player's hand.",
+                  "dataType": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:hover_text_color",
+        "title": "Minecraft Hover Text Color",
+        "description": "The hover_text_color component specifies the color of the item name when the players hovers the cursor over the item.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "minecraft:hover_text_color",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:hover_text_color",
+              "title": "Hover Text Color",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Specifies the color of the item's hover text.",
+                  "dataType": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:icon",
+        "title": "Minecraft Icon",
+        "description": "Icon item component determines which icon graphic will be used to represent the item in the UI and elsewhere.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "minecraft:icon",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:icon",
+              "title": "Icon",
+              "fields": [
+                {
+                  "id": "textures",
+                  "title": "Textures",
+                  "description": "This map contains the different textures that can be used for the item's icon. Default will contain the actual icon texture. Armor trim textures and palettes and bundle open textures can be specified here too. The icon textures are the keys from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file.",
+                  "dataType": 16
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:interact_button",
+        "title": "Minecraft Interact Button",
+        "description": "This component is a boolean or string that determines if the interact button is shown in touch controls and what text is displayed on the button. When set as true, default \"Use Item\" text will be displayed.",
+        "dataType": 1,
+        "alternates": [
+          {
+            "id": "minecraft:interact_button",
+            "dataType": 2
+          }
+        ]
+      },
+      {
+        "id": "minecraft:liquid_clipped",
+        "title": "Minecraft Liquid Clipped",
+        "description": "The liquid_clipped component determines whether the item interacts with liquid blocks on use.",
+        "dataType": 1,
+        "alternates": [
+          {
+            "id": "minecraft:liquid_clipped",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:liquid_clipped",
+              "title": "Liquid Clipped",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Deterines whether the item interacts with liquid blocks on use.",
+                  "dataType": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:max_stack_size",
+        "title": "Minecraft Max Stack Size",
+        "description": "The max_stack_size component specifies how many of the item can be stacked together.",
+        "dataType": 0,
+        "alternates": [
+          {
+            "id": "minecraft:max_stack_size",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:max_stack_size",
+              "title": "Max Stack Size",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Specifies how many of the item that can be stacked.",
+                  "dataType": 0,
+                  "validity": [
+                    {
+                      "comparison": ">=",
+                      "value": 1
+                    },
+                    {
+                      "comparison": "<=",
+                      "value": 64
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:projectile",
+        "title": "Minecraft Projectile",
+        "description": "Projectile items shoot out, like an arrow.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_projectile"
+      },
+      {
+        "id": "minecraft:rarity",
+        "title": "Minecraft Rarity",
+        "description": "Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "minecraft:rarity",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:rarity",
+              "title": "Rarity",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Sets the base rarity of the item. The rarity of an item automatically increases when enchanted, either to Rare when the base rarity is Common or Uncommon, or Epic when the base rarity is Rare.",
+                  "dataType": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:record",
+        "title": "Minecraft Record",
+        "description": "Record Item Component. Used by record items to play music.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_record"
+      },
+      {
+        "id": "minecraft:repairable",
+        "title": "Minecraft Repairable",
+        "description": "The repairable item component specifies which items can be used to repair this item, along with how much durability is gained.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_repairable"
+      },
+      {
+        "id": "minecraft:shooter",
+        "title": "Minecraft Shooter",
+        "description": "Shooter Item Component.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_shooter"
+      },
+      {
+        "id": "minecraft:should_despawn",
+        "title": "Minecraft Should Despawn",
+        "description": "Should_despawn component determines if the item should eventually despawn while floating in the world",
+        "dataType": 1,
+        "alternates": [
+          {
+            "id": "minecraft:should_despawn",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:should_despawn",
+              "title": "Should Despawn",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Determines whether the item should eventually despawn while floating in the world.",
+                  "dataType": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:stacked_by_data",
+        "title": "Minecraft Stacked By Data",
+        "description": "The stacked_by_data component determines whether the same items with different aux values can stack. Also defines whether the item entities can merge while floating in the world.",
+        "dataType": 1,
+        "alternates": [
+          {
+            "id": "minecraft:stacked_by_data",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:stacked_by_data",
+              "title": "Stacked By Data",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Value",
+                  "description": "Determines whether the same item with different aux values can stack. Also defines whether the item entities can merge while floating in the world.",
+                  "dataType": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:storage_item",
+        "title": "Minecraft Storage Item",
+        "description": "[EXPERIMENTAL] Storage Items can be used by other components to store other items within this item.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_storage_item"
+      },
+      {
+        "id": "minecraft:storage_weight_limit",
+        "title": "Minecraft Storage Weight Limit",
+        "description": "Specifies the maximum weight limit that a storage item can hold",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_storage_weight_limit"
+      },
+      {
+        "id": "minecraft:storage_weight_modifier",
+        "title": "Minecraft Storage Weight Modifier",
+        "description": "Specifies the maximum weight limit that a storage item can hold",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_storage_weight_modifier"
+      },
+      {
+        "id": "minecraft:tags",
+        "title": "Minecraft Tags",
+        "description": "The tags component specifies which tags an item has on it.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_tags"
+      },
+      {
+        "id": "minecraft:throwable",
+        "title": "Minecraft Throwable",
+        "description": "Throwable items can be thrown by the player, such as a snowball.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_throwable"
+      },
+      {
+        "id": "minecraft:use_animation",
+        "title": "Minecraft Use Animation",
+        "description": "Use_animation specifies which animation is played when the player uses the item.",
+        "dataType": 2,
+        "alternates": [
+          {
+            "id": "minecraft:use_animation",
+            "dataType": 16,
+            "subForm": {
+              "id": "minecraft:use_animation",
+              "title": "Use Animation",
+              "fields": [
+                {
+                  "id": "value",
+                  "title": "Animation",
+                  "description": "Specifies which animation to play when the the item is used.",
+                  "dataType": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "minecraft:use_modifiers",
+        "title": "Minecraft Use Modifiers",
+        "description": "This component modifies use effects, including how long the item takes to use and the player's speed when used in combination with components like \"shooter\", \"throwable\", or \"food\".",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_use_modifiers"
+      },
+      {
+        "id": "minecraft:wearable",
+        "title": "Minecraft Wearable",
+        "description": "Wearable items can be worn by a player in the head, chest, legs, feet, or off-hand slots.",
+        "dataType": 16,
+        "subFormId": "misc/minecraft_wearable"
+      }
+    ]
+  }
+}

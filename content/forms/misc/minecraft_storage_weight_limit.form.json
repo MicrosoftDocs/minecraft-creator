@@ -1,0 +1,23 @@
+{
+  "id": "minecraft:storage_weight_limit",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:storage_weight_limit",
+    "title": "Minecraft Storage Weight Limit Misc",
+    "description": "Specifies the maximum weight limit that a storage item can hold",
+    "fields": [
+      {
+        "id": "max_weight_limit",
+        "title": "Max Weight Limit",
+        "description": "The maximum allowed weight of the sum of all contained items. Maximum is 64. Default is 64.",
+        "dataType": 0,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 64
+          }
+        ]
+      }
+    ]
+  }
+}

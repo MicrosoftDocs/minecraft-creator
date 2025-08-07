@@ -1,0 +1,29 @@
+{
+  "id": "minecraft:use_modifiers",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:use_modifiers",
+    "title": "Minecraft Use Modifiers Misc",
+    "description": "This component modifies use effects, including how long the item takes to use and the player's speed when used in combination with components like \"shooter\", \"throwable\", or \"food\".",
+    "fields": [
+      {
+        "id": "movement_modifier",
+        "title": "Movement Modifier",
+        "description": "Modifier value to scale the players movement speed when item is in use.",
+        "dataType": 3,
+        "validity": [
+          {
+            "comparison": "<=",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "use_duration",
+        "title": "Use Duration",
+        "description": "How long the item takes to use in seconds.",
+        "dataType": 3
+      }
+    ]
+  }
+}

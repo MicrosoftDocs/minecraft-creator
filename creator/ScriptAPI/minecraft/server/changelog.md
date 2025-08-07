@@ -45,7 +45,9 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`Block`](Block.md)*
 - Added property *[`isSolid`](Block.md#issolid)*
 - Added function *[`canPlace`](Block.md#canplace)*
+- Added function *[`getLightLevel`](Block.md#getlightlevel)*
 - Added function *[`getMapColor`](Block.md#getmapcolor)*
+- Added function *[`getSkyLightLevel`](Block.md#getskylightlevel)*
 - Added function *[`trySetPermutation`](Block.md#trysetpermutation)*
 #### Added *[`BlockBoundingBoxUtils`](BlockBoundingBoxUtils.md)*
 #### Changed *[`BlockLocationIterator`](BlockLocationIterator.md)*
@@ -100,7 +102,6 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`ItemPotionComponent`](ItemPotionComponent.md)*
 #### Changed *[`ItemStack`](ItemStack.md)*
 - Added property *[`weight`](ItemStack.md#weight)*
-- Added function *[`createPotion`](ItemStack.md#createpotion)*
 - Added function *[`getRawLore`](ItemStack.md#getrawlore)*
 - Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
 - Changed function *[`setLore`](ItemStack.md#setlore)*
@@ -119,9 +120,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
+#### Added *[`PotionDeliveryType`](PotionDeliveryType.md)*
 #### Added *[`PotionEffectType`](PotionEffectType.md)*
-#### Added *[`PotionLiquidType`](PotionLiquidType.md)*
-#### Added *[`PotionModifierType`](PotionModifierType.md)*
 #### Added *[`Potions`](Potions.md)*
 #### Added *[`ServerMessageAfterEventSignal`](ServerMessageAfterEventSignal.md)*
 #### Changed *[`SystemBeforeEvents`](SystemBeforeEvents.md)*
