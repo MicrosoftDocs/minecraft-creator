@@ -1,6 +1,7 @@
 {
   "id": "query.is_avoiding_mobs",
   "fields": [],
+  "description": "Returns 1.0 if the entity is fleeing from mobs, else it returns 0.0. Pertains to wandering trader.",
   "generated_doNotEdit": {
     "id": "query.is_avoiding_mobs",
     "title": "Is Avoiding Mobs Query",

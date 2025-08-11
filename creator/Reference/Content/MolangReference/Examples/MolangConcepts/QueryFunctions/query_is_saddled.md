@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_saddled
 
-Returns 1.0 if the entity has a saddle, else it returns 0.0.
+Returns 1.0 if the entity has a saddle (has the `is_saddled` component), else it returns 0.0.

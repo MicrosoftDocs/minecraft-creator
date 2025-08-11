@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_heartbeat_interval
 
-Returns the heartbeat interval of the actor in seconds. Returns 0 when the actor has no heartbeat.
+Returns the heartbeat interval of the entity in seconds. Returns 0 when the entity has no heartbeat.

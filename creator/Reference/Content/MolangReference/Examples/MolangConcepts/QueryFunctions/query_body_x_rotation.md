@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_body_x_rotation
 
-Returns the body pitch rotation if called on an actor, else it returns 0.0.
+Returns the body pitch rotation if called on an entity, else it returns 0.0.

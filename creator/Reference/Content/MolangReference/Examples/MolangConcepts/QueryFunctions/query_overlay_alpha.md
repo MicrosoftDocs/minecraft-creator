@@ -12,4 +12,4 @@ ms.date: 02/11/2025
 > [!IMPORTANT]
 > This type is now deprecated, and no longer in use in the latest versions of Minecraft.
 
-DEPRECATED (Do not use - this function is deprecated and will be removed).
+Deprecated; this function is deprecated and will be removed.

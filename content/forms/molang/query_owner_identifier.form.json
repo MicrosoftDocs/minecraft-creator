@@ -2,6 +2,7 @@
   "id": "query.owner_identifier",
   "fields": [],
   "isDeprecated": true,
+  "description": "Returns the root entity identifier. Deprecated; use `query.is_owner_identifier_any` instead if possible so names can be changed later without breaking content.",
   "generated_doNotEdit": {
     "id": "query.owner_identifier",
     "title": "Owner Identifier Query",

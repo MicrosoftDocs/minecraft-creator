@@ -1,6 +1,7 @@
 {
   "id": "query.is_swimming",
   "fields": [],
+  "description": "Returns 1.0 if the entity is swimming, else it returns 0.0. Applies generally to the player.",
   "generated_doNotEdit": {
     "id": "query.is_swimming",
     "title": "Is Swimming Query",

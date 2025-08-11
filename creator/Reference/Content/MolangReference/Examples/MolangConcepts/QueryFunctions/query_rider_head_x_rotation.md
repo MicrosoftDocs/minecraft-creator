@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_rider_head_x_rotation
 
-Takes one argument as a parameter. Returns the head x world-rotation of the rider entity at the provided index, else it returns 0.0.
+Returns the head x world-rotation of the rider entity at the provided index, else it returns 0.0. Takes one argument as a parameter.

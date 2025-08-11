@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_chested
 
-Returns 1.0 if the entity has chests attached to it, else it returns 0.0.
+Returns 1.0 if the entity has chests attached to it (has the `is_chested` component), else it returns 0.0.

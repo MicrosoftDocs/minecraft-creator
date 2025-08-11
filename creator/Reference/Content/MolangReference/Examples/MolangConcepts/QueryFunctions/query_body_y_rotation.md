@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_body_y_rotation
 
-Returns the body yaw rotation if called on an actor, else it returns 0.0.
+Returns the body yaw rotation if called on an entity, else it returns 0.0.

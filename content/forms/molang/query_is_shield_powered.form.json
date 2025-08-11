@@ -1,6 +1,7 @@
 {
   "id": "query.is_shield_powered",
   "fields": [],
+  "description": "Returns 1.0 if the entity has an active powered shield if it makes sense, else it returns 0.0. Applies generally to wither boss armor.",
   "generated_doNotEdit": {
     "id": "query.is_shield_powered",
     "title": "Is Shield Powered Query",

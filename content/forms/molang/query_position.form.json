@@ -1,6 +1,7 @@
 {
   "id": "query.position",
   "fields": [],
+  "description": "Returns the absolute position of an entity. Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis).",
   "generated_doNotEdit": {
     "id": "query.position",
     "title": "Position Query",

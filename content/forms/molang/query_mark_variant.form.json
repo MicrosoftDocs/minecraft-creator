@@ -1,6 +1,7 @@
 {
   "id": "query.mark_variant",
   "fields": [],
+  "description": "Returns the entity's mark variant value, if the entity has the `mark_variant` component.",
   "generated_doNotEdit": {
     "id": "query.mark_variant",
     "title": "Mark Variant Query",

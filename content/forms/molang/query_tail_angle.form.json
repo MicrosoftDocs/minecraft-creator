@@ -1,6 +1,7 @@
 {
   "id": "query.tail_angle",
   "fields": [],
+  "description": "Returns the angle of the tail of the entity if it makes sense, else it returns 0.0. Generally applies to the donkey, horse, mule, skeleton horse, wolf, zombie horse.",
   "generated_doNotEdit": {
     "id": "query.tail_angle",
     "title": "Tail Angle Query",

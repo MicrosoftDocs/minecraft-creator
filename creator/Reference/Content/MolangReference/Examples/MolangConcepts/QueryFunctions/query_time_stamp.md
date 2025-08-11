@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_time_stamp
 
-Returns the current time stamp of the level.
+Returns the current time stamp of the level. Generally applies to cod, piglin, pufferfish, tropical fish, salmon.

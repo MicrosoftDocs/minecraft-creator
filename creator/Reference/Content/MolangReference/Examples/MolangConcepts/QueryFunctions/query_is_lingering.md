@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_lingering
 
-Returns 1.0 if the entity is lingering, else it returns 0.0.
+Returns 1.0 if the potion type or effect is lingering, else it returns 0.0.

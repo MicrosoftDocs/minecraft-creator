@@ -1,6 +1,7 @@
 {
   "id": "query.is_pregnant",
   "fields": [],
+  "description": "Returns 1.0 if the entity is pregnant, else it returns 0.0. Applies generally to turtles and frogs.",
   "generated_doNotEdit": {
     "id": "query.is_pregnant",
     "title": "Is Pregnant Query",

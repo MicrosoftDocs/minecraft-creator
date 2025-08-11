@@ -1,6 +1,7 @@
 {
   "id": "query.is_shaking_wetness",
   "fields": [],
+  "description": "Returns 1.0 if the entity is shaking water off, else it returns 0.0. Applies generally to wet wolves.",
   "generated_doNotEdit": {
     "id": "query.is_shaking_wetness",
     "title": "Is Shaking Wetness Query",

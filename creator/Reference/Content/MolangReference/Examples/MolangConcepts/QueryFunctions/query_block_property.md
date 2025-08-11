@@ -12,4 +12,4 @@ ms.date: 02/11/2025
 > [!IMPORTANT]
 > This type is now deprecated, and no longer in use in the latest versions of Minecraft.
 
-(No longer available in pack min_engine_version 1.20.40.) Returns the value of the associated block's Block State.
+Returns the value of the associated block's block state. (No longer available in pack min_engine_version 1.20.40.).

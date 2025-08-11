@@ -12,4 +12,4 @@ ms.date: 02/11/2025
 > [!IMPORTANT]
 > This type is now deprecated, and no longer in use in the latest versions of Minecraft.
 
-(No longer available in pack min_engine_version 1.20.50.) DEPRECATED. DO NOT USE AFTER 1.20.40. Please see camel.entity.json script.pre_animation for example of how to now process dash cooldown. Returns dash cooldown progress if the entity can dash, else it returns 0.0.
+Returns dash cooldown progress if the entity can dash, else it returns 0.0. Deprecated; no longer available in pack min_engine_version 1.20.50. Please see camel.entity.json script.pre_animation for example of how to now process dash cooldown.

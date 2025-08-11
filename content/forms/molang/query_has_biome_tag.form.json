@@ -1,5 +1,6 @@
 {
   "id": "query.has_biome_tag",
+  "description": "Returns whether or not a block placement target has a specific biome tag.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.has_biome_tag",

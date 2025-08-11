@@ -1,6 +1,7 @@
 {
   "id": "query.main_hand_item_use_duration",
   "fields": [],
+  "description": "Returns the use time for the main hand item. Used for item use computations.",
   "generated_doNotEdit": {
     "id": "query.main_hand_item_use_duration",
     "title": "Main Hand Item Use Duration Query",

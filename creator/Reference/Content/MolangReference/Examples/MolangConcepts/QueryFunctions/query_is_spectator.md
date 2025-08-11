@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_spectator
 
-Returns 1.0 if the entity is spectator, else it returns 0.0.
+Returns 1.0 if the entity (player) is in spectator mode, else it returns 0.0.

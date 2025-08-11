@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_bribed
 
-Returns 1.0 if the entity has been bribed, else it returns 0.0.
+Returns 1.0 if the entity has been bribed, else it returns 0.0. Pertains to bribing a dolphin with a fish.

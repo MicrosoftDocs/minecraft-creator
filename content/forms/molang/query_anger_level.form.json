@@ -1,7 +1,7 @@
 {
   "id": "query.anger_level",
   "fields": [],
-  "description": "Returns the anger level of the entity (actor) [0,n). On errors or if the actor has no anger level, returns 0. Available on the server (in behavior pack animations) only.",
+  "description": "Returns the anger level of the entity [0,n). On errors or if the actor has no anger level, returns 0. Available in behavior pack animation contexts only.",
   "generated_doNotEdit": {
     "id": "query.anger_level",
     "title": "Anger Level Query",

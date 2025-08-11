@@ -1,6 +1,7 @@
 {
   "id": "query.has_property",
   "fields": [],
+  "description": "Returns 1.0 if a property with the given name exists, 0 otherwise. Takes one argument: the name of the property on the entity.",
   "generated_doNotEdit": {
     "id": "query.has_property",
     "title": "Has Property Query",

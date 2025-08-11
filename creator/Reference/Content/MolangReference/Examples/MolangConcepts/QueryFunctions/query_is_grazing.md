@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_grazing
 
-Returns 1.0 if the entity is grazing, or 0.0 if not.
+Returns 1.0 if the entity is grazing, or 0.0 if not. Applies to the horse and sheep grazing animations.

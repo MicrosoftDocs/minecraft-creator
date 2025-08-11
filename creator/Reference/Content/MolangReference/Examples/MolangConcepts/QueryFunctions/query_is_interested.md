@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_interested
 
-Returns 1.0 if the entity is interested, else it returns 0.0.
+Returns 1.0 if the entity is interested, else it returns 0.0. Applies typically to the fox and the wolf.

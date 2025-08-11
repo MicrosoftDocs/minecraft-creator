@@ -1,6 +1,7 @@
 {
   "id": "query.is_orphaned",
   "fields": [],
+  "description": "Returns 1.0 if the entity is orphaned, else it returns 0.0. This is part of the 'sittable' component.",
   "generated_doNotEdit": {
     "id": "query.is_orphaned",
     "title": "Is Orphaned Query",

@@ -31,11 +31,11 @@ We are excited to announce Editor v1.0.0! With this milestone Editor is official
 - The [/controlscheme](../Commands/commands/controlscheme.md) command allows for selecting different control schemes that are more appropriate in 3rd Person camera scenarios. For example, over the shoulder is now unlocked by using the camera_relative control scheme with the follow_orbit preset.
 
 ## Blocks
-- [Custom Components V2](../Documents/ScriptingV2.0.0Overview.md#custom-components-v2) is now avaialble with new capabilities.
+- [Custom Components V2](../Documents/ScriptingV2.0.0Overview.md#custom-components-v2) is now available with new capabilities.
 - culling improvements - A subset of culling rules to support behaviors such as how leaves appear when configured in a tree with neighbor rules. 
 
 ## Items
-- [Custom Components V2](../Documents/ScriptingV2.0.0Overview.md#custom-components-v2) is now avaialble with new capabilities.
+- [Custom Components V2](../Documents/ScriptingV2.0.0Overview.md#custom-components-v2) is now available with new capabilities.
 
 ## Entities
 - [remove_in_peaceful](../Reference/Content/EntityReference/Examples/EntityComponents/minecraftComponent_remove_in_peaceful.md) component - determines whether an entity should despawn on "Peaceful" difficulty. 

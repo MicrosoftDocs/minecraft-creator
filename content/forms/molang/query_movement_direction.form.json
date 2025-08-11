@@ -1,6 +1,7 @@
 {
   "id": "query.movement_direction",
   "fields": [],
+  "description": "Returns the specified axis of the normalized position delta of the entity. Applies generally to the elytra.",
   "generated_doNotEdit": {
     "id": "query.movement_direction",
     "title": "Movement Direction Query",

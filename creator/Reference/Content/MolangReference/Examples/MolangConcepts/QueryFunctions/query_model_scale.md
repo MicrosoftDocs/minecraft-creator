@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_model_scale
 
-Returns the scale of the current entity.
+Returns the scale of the current entity. Can be used with the `is_baby` component.

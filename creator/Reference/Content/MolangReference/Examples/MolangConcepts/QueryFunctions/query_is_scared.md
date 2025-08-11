@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_scared
 
-Returns 1.0 if the entity is scared, else it returns 0.0.
+Returns 1.0 if the entity is scared, else it returns 0.0. Applies generally to a panda being startled by a baby panda sneeze.

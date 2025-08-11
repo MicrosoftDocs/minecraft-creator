@@ -9,4 +9,7 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_debug_output
 
-debug log a value to the output debug window for builds that have one.
+> [!IMPORTANT]
+> This type is internal to vanilla Minecraft usage, and is not functional or supported within custom Minecraft content.
+
+Debug log a value to the output debug window for builds that have one.

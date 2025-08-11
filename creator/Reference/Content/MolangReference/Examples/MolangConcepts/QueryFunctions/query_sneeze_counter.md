@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_sneeze_counter
 
-Returns the sneeze counter of the entity.
+Returns the sneeze counter of the entity. Applies generally to the panda.

@@ -1,10 +1,10 @@
 {
+  "id": "has_equipment_tag",
+  "fields": [],
   "tags": [
     "conditional",
     "entityevent"
   ],
-  "id": "has_equipment_tag",
-  "fields": [],
   "generated_doNotEdit": {
     "id": "has_equipment_tag",
     "title": "Has Equipment Tag",

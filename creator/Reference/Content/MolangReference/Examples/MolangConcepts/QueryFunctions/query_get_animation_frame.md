@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_get_animation_frame
 
-Returns the current texture of the item.
+Returns the current texture of an item whose appearance can change (such as a drawn bow).

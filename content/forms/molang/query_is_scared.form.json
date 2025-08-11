@@ -1,6 +1,7 @@
 {
   "id": "query.is_scared",
   "fields": [],
+  "description": "Returns 1.0 if the entity is scared, else it returns 0.0. Applies generally to a panda being startled by a baby panda sneeze.",
   "generated_doNotEdit": {
     "id": "query.is_scared",
     "title": "Is Scared Query",

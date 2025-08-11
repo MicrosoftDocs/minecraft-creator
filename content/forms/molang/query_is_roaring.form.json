@@ -1,6 +1,7 @@
 {
   "id": "query.is_roaring",
   "fields": [],
+  "description": "Returns 1.0 if the entity is currently roaring, else it returns 0.0. Applies generally to the ravager and warden.",
   "generated_doNotEdit": {
     "id": "query.is_roaring",
     "title": "Is Roaring Query",

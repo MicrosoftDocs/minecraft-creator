@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_has_biome_tag
 
-Returns whether or not a Block Placement Target has a specific biome tag.
+Returns whether or not a block placement target has a specific biome tag.

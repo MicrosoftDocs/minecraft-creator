@@ -1,6 +1,7 @@
 {
   "id": "query.item_slot_to_bone_name",
   "fields": [],
+  "description": "This function returns the name of the bone this entity has mapped to that slot. Requires one parameter: the name of the equipment slot.",
   "generated_doNotEdit": {
     "id": "query.item_slot_to_bone_name",
     "title": "Item Slot To Bone Name Query",

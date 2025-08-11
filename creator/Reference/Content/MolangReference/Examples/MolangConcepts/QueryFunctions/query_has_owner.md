@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_has_owner
 
-Returns true if the entity has an owner ID else it returns false.
+Returns true if the entity has an owner ID else it returns false. Pertains to wolf.

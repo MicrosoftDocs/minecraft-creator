@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_swell_amount
 
-Returns how swollen the entity is.
+Returns how swollen an entity is. Generally applies to the creeper and wither.

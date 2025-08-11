@@ -1,7 +1,7 @@
 {
   "id": "query.is_scenting",
   "fields": [],
-  "isDeprecated": true,
+  "description": "Returns 1.0 if behavior.timer_flag_1 is running, else it returns 0.0. Deprecated; no longer available in packs with a `min_engine_version` >= 1.20.50.",
   "generated_doNotEdit": {
     "id": "query.is_scenting",
     "title": "Is Scenting Query",

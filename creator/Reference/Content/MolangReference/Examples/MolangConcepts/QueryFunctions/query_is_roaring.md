@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_roaring
 
-Returns 1.0 if the entity is currently roaring, else it returns 0.0.
+Returns 1.0 if the entity is currently roaring, else it returns 0.0. Applies generally to the ravager and warden.

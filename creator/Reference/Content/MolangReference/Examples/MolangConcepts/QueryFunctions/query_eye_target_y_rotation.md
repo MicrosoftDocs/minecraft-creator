@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_eye_target_y_rotation
 
-Returns the Y eye rotation of the entity if it makes sense, else it returns 0.0.
+Returns the Y eye rotation of the entity, else it returns 0.0.  Applies to the guardian.

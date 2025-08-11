@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_heightmap
 
-Queries Height Map.
+Returns the world height (Y value) of the terrain at the specified position. Takes two arguments: X and Z world values.

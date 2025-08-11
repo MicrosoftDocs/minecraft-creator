@@ -1,6 +1,7 @@
 {
   "id": "query.block_property",
   "fields": [],
+  "description": "Returns the value of the associated block's block state. (No longer available in pack min_engine_version 1.20.40.)",
   "isDeprecated": true,
   "generated_doNotEdit": {
     "id": "query.block_property",
