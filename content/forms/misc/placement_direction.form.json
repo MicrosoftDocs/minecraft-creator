@@ -1,0 +1,21 @@
+{
+  "id": "Placement Direction",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Placement Direction",
+    "title": "Placement Direction Misc",
+    "fields": [
+      {
+        "id": "enabled_states",
+        "title": "Enabled States",
+        "dataType": 17,
+        "isRequired": true
+      },
+      {
+        "id": "y_rotation_offset",
+        "title": "y Rotation Offset",
+        "dataType": 3
+      }
+    ]
+  }
+}

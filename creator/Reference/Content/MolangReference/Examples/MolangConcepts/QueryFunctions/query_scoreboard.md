@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_scoreboard
 
-Takes one argument - the name of the scoreboard entry for this entity. Returns the specified scoreboard value for this entity. Available only with behavior packs.
+Returns the specified scoreboard value for this entity. Available only with behavior packs. Takes one argument - the name of the scoreboard entry for this entity.

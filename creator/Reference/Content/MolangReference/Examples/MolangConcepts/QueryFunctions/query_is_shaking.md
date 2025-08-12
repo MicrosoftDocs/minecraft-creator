@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_shaking
 
-Returns 1.0 if the entity is casting, else it returns 0.0.
+Returns 1.0 if the entity is shaking, else it returns 0.0. Applies generally to a hoglin, piglin, piglin brute, skeleton, strider, villager, or zombie villager.

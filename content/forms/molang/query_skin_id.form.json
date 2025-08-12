@@ -1,6 +1,7 @@
 {
   "id": "query.skin_id",
   "fields": [],
+  "description": "Returns the entity's skin ID (related to the `skin_id` component).",
   "generated_doNotEdit": {
     "id": "query.skin_id",
     "title": "Skin Id Query",

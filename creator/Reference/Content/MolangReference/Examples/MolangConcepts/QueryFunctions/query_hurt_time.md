@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_hurt_time
 
-Returns the hurt time for the actor, otherwise returns 0.
+Returns the hurt time for the entity, otherwise returns 0.

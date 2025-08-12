@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_structural_integrity
 
-Returns the structural integrity for the entity, otherwise returns 0.
+Returns the structural integrity for the entity, otherwise returns 0. Generally applies to the minecart.

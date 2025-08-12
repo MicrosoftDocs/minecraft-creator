@@ -18,5 +18,5 @@ Describes the visuals for a biome's precipitation. Biomes without this component
 |:----------|:-------------|:----|:-----------|:------------- |
 | ash | *not set* | Decimal number | Density of ash precipitation visuals |  | 
 | blue_spores | *not set* | Decimal number | Density of blue spore precipitation visuals |  | 
-| red_spores | *not set* | Decimal number | Density of red spore precipitation visuals |  | 
+| red_spores | *not set* | Decimal number | Density of blue spore precipitation visuals |  | 
 | white_ash | *not set* | Decimal number | Density of white ash precipitation visuals |  | 

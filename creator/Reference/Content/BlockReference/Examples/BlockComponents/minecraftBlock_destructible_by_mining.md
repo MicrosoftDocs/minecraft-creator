@@ -46,7 +46,7 @@ Optional array of objects to describe item specific block destroy speeds, each o
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| tags | *not set* | String |  |  | 
+| tags | *not set* | Array of numbers |  |  | 
 
 ## Samples
 

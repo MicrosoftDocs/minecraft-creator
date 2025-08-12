@@ -44,6 +44,9 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [findClosestBiome](#findclosestbiome)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [getBiome](#getbiome)
+::: moniker-end
 - [getBlock](#getblock)
 - [getBlockAbove](#getblockabove)
 - [getBlockBelow](#getblockbelow)
@@ -237,6 +240,29 @@ Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getBiome**
+`
+getBiome(location: Vector3): BiomeType
+`
+
+Returns the biome type at the specified location.
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
+  
+  Location at which to check the biome.
+
+**Returns** [*BiomeType*](BiomeType.md)
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md), [*LocationOutOfWorldBoundariesError*](LocationOutOfWorldBoundariesError.md)
 ::: moniker-end
 
 ### **getBlock**

@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_movement_direction
 
-Returns the specified axis of the normalized position delta of the entity.
+Returns the specified axis of the normalized position delta of the entity. Applies generally to the elytra.

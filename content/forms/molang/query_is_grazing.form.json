@@ -1,6 +1,7 @@
 {
   "id": "query.is_grazing",
   "fields": [],
+  "description": "Returns 1.0 if the entity is grazing, or 0.0 if not. Applies to the horse and sheep grazing animations.",
   "generated_doNotEdit": {
     "id": "query.is_grazing",
     "title": "Is Grazing Query",

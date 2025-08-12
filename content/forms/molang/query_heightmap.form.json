@@ -1,6 +1,7 @@
 {
   "id": "query.heightmap",
   "fields": [],
+  "description": "Returns the world height (Y value) of the terrain at the specified position. Takes two arguments: X and Z world values.",
   "generated_doNotEdit": {
     "id": "query.heightmap",
     "title": "Heightmap Query",

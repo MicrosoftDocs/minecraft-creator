@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_skin_id
 
-Returns the entity's skin ID.
+Returns the entity's skin ID (related to the `skin_id` component).

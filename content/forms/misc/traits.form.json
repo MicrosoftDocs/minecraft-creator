@@ -1,0 +1,22 @@
+{
+  "id": "Traits",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Traits",
+    "title": "Traits Misc",
+    "fields": [
+      {
+        "id": "minecraft:placement_direction",
+        "title": "Minecraft Placement Direction",
+        "dataType": 16,
+        "subFormId": "misc/placement_direction"
+      },
+      {
+        "id": "minecraft:placement_position",
+        "title": "Minecraft Placement Position",
+        "dataType": 16,
+        "subFormId": "misc/placement_position"
+      }
+    ]
+  }
+}

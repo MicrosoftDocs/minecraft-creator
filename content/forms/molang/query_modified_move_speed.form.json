@@ -1,6 +1,7 @@
 {
   "id": "query.modified_move_speed",
   "fields": [],
+  "description": "Returns the current walk speed of the entity. Can be modified by status flags such as `is_baby` or `on_fire`.",
   "generated_doNotEdit": {
     "id": "query.modified_move_speed",
     "title": "Modified Move Speed Query",

@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_sit_amount
 
-Returns the current sit amount of the entity.
+Returns the current sit amount of the entity. Applies generally to the panda.

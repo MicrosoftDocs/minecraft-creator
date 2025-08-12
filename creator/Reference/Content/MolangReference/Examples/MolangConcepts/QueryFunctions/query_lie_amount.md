@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_lie_amount
 
-Returns the lie down amount for the entity.
+Returns the lie down amount for the entity. Applies generally to the panda.

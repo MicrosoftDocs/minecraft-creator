@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_variant
 
-Returns the entity's variant index.
+Returns the entity's variant index. Relates to `variant` component.

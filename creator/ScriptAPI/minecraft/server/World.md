@@ -393,12 +393,12 @@ Returns the MoonPhase for the current time.
 ::: moniker range="=minecraft-bedrock-experimental"
 ### **getPackSettings**
 `
-getPackSettings(): Record<string, boolean | number>
+getPackSettings(): Record<string, boolean | number | string>
 `
 
 Returns a map of pack setting name and value pairs.
 
-**Returns** Record<*string*, *boolean* | *number*>
+**Returns** Record<*string*, *boolean* | *number* | *string*>
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.

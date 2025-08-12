@@ -1,6 +1,8 @@
 {
   "id": "query.debug_output",
   "fields": [],
+  "isInternal": true,
+  "description": "Debug log a value to the output debug window for builds that have one.",
   "generated_doNotEdit": {
     "id": "query.debug_output",
     "title": "Debug Output Query",

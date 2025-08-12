@@ -1,6 +1,13 @@
 {
   "id": "minecraft:precipitation",
-  "fields": [],
+  "fields": [
+    {
+      "id": "red_spores",
+      "title": "Red Spores",
+      "description": "Density of red spore precipitation visuals",
+      "dataType": 3
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:precipitation",
     "title": "Minecraft Precipitation Client Biome",

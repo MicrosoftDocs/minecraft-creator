@@ -12,4 +12,4 @@ ms.date: 02/11/2025
 > [!IMPORTANT]
 > This type is now deprecated, and no longer in use in the latest versions of Minecraft.
 
-DEPRECATED (please use query.block_face instead) Returns the block face for this (only valid for on_placed_by_player trigger) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0).
+Returns the block face for this (only valid for on_placed_by_player trigger) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). Deprecated; please use query.block_face instead.

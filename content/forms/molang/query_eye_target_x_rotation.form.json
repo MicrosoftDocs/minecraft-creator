@@ -1,6 +1,7 @@
 {
   "id": "query.eye_target_x_rotation",
   "fields": [],
+  "description": "Returns the X eye rotation of the entity, else it returns 0.0. Applies to the guardian.",
   "generated_doNotEdit": {
     "id": "query.eye_target_x_rotation",
     "title": "Eye Target x Rotation Query",

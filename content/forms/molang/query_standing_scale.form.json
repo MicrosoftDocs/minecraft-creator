@@ -1,5 +1,6 @@
 {
   "id": "query.standing_scale",
+  "description": "Returns the scale of how standing up the entity is. Generally applies to the polar bear.",
   "fields": [],
   "generated_doNotEdit": {
     "id": "query.standing_scale",

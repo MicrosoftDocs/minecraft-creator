@@ -1,7 +1,7 @@
 {
   "id": "query.head_y_rotation",
   "fields": [],
-  "description": "Returns the nth head y rotation of the entity if it makes sense, else it returns 0.0. Horses, zombie horses, skeleton horses, donkeys and mules require a second parameter that clamps rotation in degrees. Takes one argument as a parameter.",
+  "description": "Returns the nth head y rotation of the entity if it makes sense, else it returns 0.0. Takes one argument as a parameter, but horses, zombie horses, skeleton horses, donkeys and mules require a second parameter that clamps rotation in degrees.",
   "generated_doNotEdit": {
     "id": "query.head_y_rotation",
     "title": "Head y Rotation Query",

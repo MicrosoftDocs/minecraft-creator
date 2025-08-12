@@ -25,6 +25,16 @@ Return whether there is any block content in the item
 
 Type: *boolean*
 
+### **normalizedOrigin**
+`read-only normalizedOrigin: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
+### **originalWorldLocation**
+`read-only originalWorldLocation: minecraftserver.Vector3;`
+
+Type: [*@minecraft/server.Vector3*](../../../scriptapi/minecraft/server/Vector3.md)
+
 ### **size**
 `read-only size: minecraftserver.Vector3;`
 

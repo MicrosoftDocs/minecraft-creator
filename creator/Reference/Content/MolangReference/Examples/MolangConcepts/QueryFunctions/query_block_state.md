@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_block_state
 
-Returns the value of the associated block's Block State.
+Returns the value of the associated block's block state.

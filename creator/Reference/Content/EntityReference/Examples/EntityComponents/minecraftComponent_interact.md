@@ -547,6 +547,9 @@ Loot table with items to drop on the ground upon successful interaction.
       "play_sounds": "shear",
       "interact_text": "action.interact.shear",
       "vibration": "shear",
+      "spawn_items": {
+        "table": "loot_tables/entities/copper_golem_shear.json"
+      },
       "on_interact": {
         "filters": {
           "all_of": [
