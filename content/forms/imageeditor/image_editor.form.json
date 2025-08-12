@@ -5,13 +5,13 @@
     {
       "id": "width",
       "title": "Width",
-      "type": 0,
+      "dataType": 0,
       "priority": 1
     },
     {
       "id": "height",
       "title": "Height",
-      "type": 0,
+      "dataType": 0,
       "priority": 2
     },
     {
