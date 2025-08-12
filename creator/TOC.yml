@@ -188,6 +188,8 @@
           items:
           - name: Packaging a Skin Pack
             href: Documents/PackagingASkinPack.md
+          - name: Skin Pack JSON Formatting and Localization Reference
+            href: Reference/Content/SkinPacksReference/SkinPackJSONReference.md
           - name: Create a World Template
             href: Documents/CreateAWorldTemplate.md
           - name: Utilizing Sub-Packs
@@ -278,6 +280,8 @@
           href: Documents/AddCustomSounds.md
         - name: "Create a Skin Pack"
           href: Documents/SkinPack.md
+        - name: Skin Pack JSON Formatting and Localization Reference
+          href: Reference/Content/SkinPacksReference/SkinPackJSONReference.md
     - name: Worlds and Cameras
       items:
         - name: Survival Spawn Creation
