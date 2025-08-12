@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_sprinting
 
-Returns 1.0 if the entity is sprinting, else it returns 0.0.
+Returns 1.0 if the entity is sprinting, else it returns 0.0. Applies generally to players, piglins, and rabbits.

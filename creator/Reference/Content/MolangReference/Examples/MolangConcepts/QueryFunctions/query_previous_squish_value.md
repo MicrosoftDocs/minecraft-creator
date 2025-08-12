@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_previous_squish_value
 
-Returns the previous squish value for the current entity, or 0.0 if this doesn't make sense.
+Returns the previous squish value for the current entity, or 0.0 if this doesn't make sense. Applies generally to slimes and magma cubes.

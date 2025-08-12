@@ -1,6 +1,7 @@
 {
   "id": "query.is_sleeping",
   "fields": [],
+  "description": "Returns 1.0 if the entity is sleeping, else it returns 0.0. Applies generally to the fox.",
   "generated_doNotEdit": {
     "id": "query.is_sleeping",
     "title": "Is Sleeping Query",

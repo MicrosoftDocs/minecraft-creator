@@ -1,6 +1,7 @@
 {
   "id": "query.has_owner",
   "fields": [],
+  "description": "Returns true if the entity has an owner ID else it returns false. Pertains to wolf.",
   "generated_doNotEdit": {
     "id": "query.has_owner",
     "title": "Has Owner Query",

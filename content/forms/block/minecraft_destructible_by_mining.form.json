@@ -26,7 +26,7 @@
                 {
                   "id": "tags",
                   "title": "Tags",
-                  "type": 32
+                  "dataType": 32
                 }
               ]
             },

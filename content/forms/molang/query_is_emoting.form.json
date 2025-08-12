@@ -1,6 +1,7 @@
 {
   "id": "query.is_emoting",
   "fields": [],
+  "description": "Returns 1.0 if the entity is emoting, else it returns 0.0. Applies to a player.",
   "generated_doNotEdit": {
     "id": "query.is_emoting",
     "title": "Is Emoting Query",

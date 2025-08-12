@@ -62,7 +62,7 @@
               "dataType": 16,
               "id": "item_display_transforms",
               "title": "Item Display Transforms",
-              "description": "Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: [\"gui\", \"firstperson_righthand\", \"firstperson_lefthand\", \"thirdperson_righthand\", \"thirdperson_lefthand\", \"ground\", \"fixed\", \"head\"].",
+              "description": "Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: [\"gui\", \"firstperson_righthand\", \"firstperson_lefthand\", \"thirdperson_righthand\", \"thirdperson_lefthand\", \"ground\", \"fixed\", \"head\", \"embedded\"].",
               "isRequired": false,
               "subForm": {
                 "fields": [
@@ -357,6 +357,46 @@
                     "dataType": 16,
                     "id": "head",
                     "title": "Head",
+                    "isRequired": false,
+                    "subForm": {
+                      "fields": [
+                        {
+                          "dataType": 17,
+                          "id": "translation",
+                          "title": "Translation",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 17,
+                          "id": "rotation",
+                          "title": "Rotation",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 17,
+                          "id": "scale",
+                          "title": "Scale",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 17,
+                          "id": "rotation_pivot",
+                          "title": "Rotation Pivot",
+                          "isRequired": false
+                        },
+                        {
+                          "dataType": 17,
+                          "id": "scale_pivot",
+                          "title": "Scale Pivot",
+                          "isRequired": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "dataType": 16,
+                    "id": "embedded",
+                    "title": "Embedded",
                     "isRequired": false,
                     "subForm": {
                       "fields": [

@@ -1,0 +1,22 @@
+{
+  "id": "3.0.0.DropdownOption",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.DropdownOption",
+    "title": "3.0.0.DropdownOption",
+    "fields": [
+      {
+        "id": "name",
+        "title": "Name",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "text",
+        "title": "Text",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

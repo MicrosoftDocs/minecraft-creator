@@ -1,6 +1,7 @@
 {
   "id": "query.hurt_time",
   "fields": [],
+  "description": "Returns the hurt time for the entity, otherwise returns 0.",
   "generated_doNotEdit": {
     "id": "query.hurt_time",
     "title": "Hurt Time Query",

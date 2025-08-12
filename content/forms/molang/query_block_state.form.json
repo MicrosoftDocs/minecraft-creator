@@ -1,6 +1,7 @@
 {
   "id": "query.block_state",
   "fields": [],
+  "description": "Returns the value of the associated block's block state.",
   "generated_doNotEdit": {
     "id": "query.block_state",
     "title": "Block State Query",

@@ -1,6 +1,7 @@
 {
   "id": "query.is_shaking",
   "fields": [],
+  "description": "Returns 1.0 if the entity is shaking, else it returns 0.0. Applies generally to a hoglin, piglin, piglin brute, skeleton, strider, villager, or zombie villager.",
   "generated_doNotEdit": {
     "id": "query.is_shaking",
     "title": "Is Shaking Query",

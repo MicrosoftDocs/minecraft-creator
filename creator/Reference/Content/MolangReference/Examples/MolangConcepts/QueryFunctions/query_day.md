@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_day
 
-Returns the day of the current level.
+Returns the day of the current world. When the world is first created, that is day `1`.

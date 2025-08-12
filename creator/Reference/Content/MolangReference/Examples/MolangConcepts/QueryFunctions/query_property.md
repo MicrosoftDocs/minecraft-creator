@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_property
 
-Takes one argument: the name of the property on the entity. Returns the value of that property if it exists, else 0.0 if not.
+Returns the value of that property if it exists, else 0.0 if not. Takes one argument: the name of the property on the entity.

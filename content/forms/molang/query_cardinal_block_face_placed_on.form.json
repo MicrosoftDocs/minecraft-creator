@@ -2,6 +2,7 @@
   "id": "query.cardinal_block_face_placed_on",
   "fields": [],
   "isDeprecated": true,
+  "description": "Returns the block face for this (only valid for on_placed_by_player trigger) (Down=0.0, Up=1.0, North=2.0, South=3.0, West=4.0, East=5.0, Undefined=6.0). Deprecated; please use query.block_face instead.",
   "generated_doNotEdit": {
     "id": "query.cardinal_block_face_placed_on",
     "title": "Cardinal Block Face Placed On Query",

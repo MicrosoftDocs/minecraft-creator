@@ -1,6 +1,7 @@
 {
   "id": "query.sit_amount",
   "fields": [],
+  "description": "Returns the current sit amount of the entity. Applies generally to the panda.",
   "generated_doNotEdit": {
     "id": "query.sit_amount",
     "title": "Sit Amount Query",

@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_item_max_use_duration
 
-Returns the maximum amount of time the item can be used, else 0.0 if it doesn't make sense.
+Returns the maximum amount of time the item can be used, else 0.0 if it doesn't make sense. Applies generally to the brush.

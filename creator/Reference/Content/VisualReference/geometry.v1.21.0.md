@@ -29,7 +29,7 @@ ms.date: 02/11/2025
 | bones (Alternate 1) | *not set* | Array of strings | Bones define the 'skeleton' of the mob: the parts that can be animated, and to which geometry and other bones are attached. |  | 
 | cape | *not set* | String |  |  | 
 | description | *not set* | [Description](#description-item-type) item |  |  | 
-| item_display_transforms | *not set* | [Item Display Transforms](#item-display-transforms-item-type) item | Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: ["gui", "firstperson_righthand", "firstperson_lefthand", "thirdperson_righthand", "thirdperson_lefthand", "ground", "fixed", "head"]. |  | 
+| item_display_transforms | *not set* | [Item Display Transforms](#item-display-transforms-item-type) item | Components of the 3d matrix transform to be applied to this geometry when displayed in this item rendering context. Valid contexts: ["gui", "firstperson_righthand", "firstperson_lefthand", "thirdperson_righthand", "thirdperson_lefthand", "ground", "fixed", "head", "embedded"]. |  | 
 
 ## Bones item type
 
@@ -198,6 +198,7 @@ ms.date: 02/11/2025
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
+| embedded | *not set* | [Embedded](#embedded-item-type) item |  |  | 
 | firstperson_lefthand | *not set* | [Firstperson Lefthand](#firstperson-lefthand-item-type) item |  |  | 
 | firstperson_righthand | *not set* | [Firstperson Righthand](#firstperson-righthand-item-type) item |  |  | 
 | fixed | *not set* | [Fixed](#fixed-item-type) item |  |  | 
@@ -206,6 +207,18 @@ ms.date: 02/11/2025
 | head | *not set* | [Head](#head-item-type) item |  |  | 
 | thirdperson_lefthand | *not set* | [Thirdperson Lefthand](#thirdperson-lefthand-item-type) item |  |  | 
 | thirdperson_righthand | *not set* | [Thirdperson Righthand](#thirdperson-righthand-item-type) item |  |  | 
+
+## Embedded item type
+
+#### Embedded Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| rotation | *not set* | Array of strings |  |  | 
+| rotation_pivot | *not set* | Array of strings |  |  | 
+| scale | *not set* | Array of strings |  |  | 
+| scale_pivot | *not set* | Array of strings |  |  | 
+| translation | *not set* | Array of strings |  |  | 
 
 ## Firstperson Lefthand item type
 

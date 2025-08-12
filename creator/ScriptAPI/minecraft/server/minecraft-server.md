@@ -20,7 +20,7 @@ Contains many types related to manipulating a Minecraft world, including entitie
     "version": "2.1.0"
 }
 ```
-This is version 2.x.x of this module, which is the latest as of version 1.21.110-beta.23 of Minecraft.
+This is version 2.x.x of this module, which is the latest as of version 1.21.110-beta.24 of Minecraft.
 
 ## Available Versions
 - `2.3.0-beta`
@@ -484,6 +484,7 @@ The following API versions are from a major version that is documented here: [*@
 - [EntityRaycastOptions](EntityRaycastOptions.md)
 - [EqualsComparison](EqualsComparison.md)
 - [ExplosionOptions](ExplosionOptions.md)
+- [GetBlocksStandingOnOptions](GetBlocksStandingOnOptions.md)
 - [GreaterThanComparison](GreaterThanComparison.md)
 - [GreaterThanOrEqualsComparison](GreaterThanOrEqualsComparison.md)
 - [HotbarEventOptions](HotbarEventOptions.md)

@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_mark_variant
 
-Returns the entity's mark variant.
+Returns the entity's mark variant value, if the entity has the `mark_variant` component.

@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_illager_captain
 
-Returns 1.0 if the entity is an illager captain, else it returns 0.0.
+Returns 1.0 if the entity is an illager captain (has the `is_illager_captain` component), else it returns 0.0.

@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_position_delta
 
-Returns the position delta for an entity (actor). Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis).
+Returns the position delta for an entity. Takes one argument that represents the desired axis (0 == x-axis, 1 == y-axis, 2 == z-axis). Applies to player animation.

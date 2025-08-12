@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_standing_scale
 
-Returns the scale of how standing up the entity is.
+Returns the scale of how standing up the entity is. Generally applies to the polar bear.

@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_life_span
 
-Returns the limited life span of an entity, or 0.0 if it lives forever.
+Returns the limited life span of an entity, or 0.0 if it lives forever. Applies generally to the evocation fang.

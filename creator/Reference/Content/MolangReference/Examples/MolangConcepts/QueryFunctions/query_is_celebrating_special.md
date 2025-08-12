@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_is_celebrating_special
 
-Returns 1.0 if the entity is doing a special celebration, else it returns 0.0.
+Returns 1.0 if the entity is doing a special celebration, else it returns 0.0. Pertains to a piglin celebrating a special hunt.

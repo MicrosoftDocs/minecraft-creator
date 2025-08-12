@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_has_any_family
 
-Returns 1 if the entity has any of the specified families, else 0.
+Returns 1 if the entity has any of the specified type families, else 0.

@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_log
 
-debug log a value to the content log.
+Debug log a value to the content file.

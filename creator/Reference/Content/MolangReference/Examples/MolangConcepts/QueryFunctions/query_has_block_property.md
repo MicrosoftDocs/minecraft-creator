@@ -12,4 +12,4 @@ ms.date: 02/11/2025
 > [!IMPORTANT]
 > This type is now deprecated, and no longer in use in the latest versions of Minecraft.
 
-(No longer available in pack min_engine_version 1.20.40.) Returns 1.0 if the associated block has the given block state or 0.0 if not.
+Returns 1.0 if the associated block has the given block state or 0.0 if not. (No longer available in packs with `min_engine_version` >= 1.20.40.).

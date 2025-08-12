@@ -9,4 +9,4 @@ ms.date: 02/11/2025
 
 # Molang Documentation - minecraft:query_tail_angle
 
-Returns the angle of the tail of the entity if it makes sense, else it returns 0.0.
+Returns the angle of the tail of the entity if it makes sense, else it returns 0.0. Generally applies to the donkey, horse, mule, skeleton horse, wolf, zombie horse.

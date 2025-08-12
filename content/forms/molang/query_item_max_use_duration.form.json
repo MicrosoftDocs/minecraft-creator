@@ -1,6 +1,7 @@
 {
   "id": "query.item_max_use_duration",
   "fields": [],
+  "description": "Returns the maximum amount of time the item can be used, else 0.0 if it doesn't make sense. Applies generally to the brush.",
   "generated_doNotEdit": {
     "id": "query.item_max_use_duration",
     "title": "Item Max Use Duration Query",
