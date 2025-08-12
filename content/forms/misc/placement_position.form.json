@@ -1,0 +1,16 @@
+{
+  "id": "Placement Position",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Placement Position",
+    "title": "Placement Position Misc",
+    "fields": [
+      {
+        "id": "enabled_states",
+        "title": "Enabled States",
+        "dataType": 17,
+        "isRequired": true
+      }
+    ]
+  }
+}

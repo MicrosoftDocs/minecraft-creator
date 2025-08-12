@@ -16,7 +16,6 @@ Defines interactions with this entity.
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| add_items | *not set* | Array of [Add Items](#add-items-item-type) items | Loot table with items to add to the player's inventory upon successful interaction. |  | 
 | cooldown | 0 | Decimal number | Time in seconds before this entity can be interacted with again. |  | 
 | cooldown_after_being_attacked | 0 | Decimal number | Time in seconds before this entity can be interacted with after being attacked. |  | 
 | drop_item_slot | *not set* | String | The entity's slot to remove and drop the item from, if any, upon successful interaction. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
@@ -26,26 +25,6 @@ Defines interactions with this entity.
 | hurt_item | 0 | Integer number | The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability. |  | 
 | interact_text | *not set* | String | Text to show when the player is able to interact in this way with this entity when playing with touch-screen controls. |  | 
 | interactions | *not set* | Array of [Interactions](#interactions-item-type) items |  | Allay: `[{"on_interact":{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","operator":"not","value":"lead"},{"test":"is_sneak_held","subject":"other","value":false},{"any_of":[{"test":"all_slots_empty","subject":"other","operator":"not","value":"hand"},{"test":"all_slots_empty","subject":"self","operator":"not","value":"hand"}]}]}},"give_item":true,"take_item":true,"interact_text":"action.interact.allay"}]`, Armadillo: `[{"on_interact":{"filters":{"all_of":[{"test":"is_family","subject":"other","value":"player"},{"test":"has_equipment","subject":"other","domain":"hand","value":"brush"}]}},"play_sounds":"mob.armadillo.brush","interact_text":"action.interact.brush","hurt_item":16,"swing":true,"spawn_items":{"table":"loot_tables/entities/armadillo_brush.json"}}]` | 
-| on_interact | *not set* | [Minecraft Event Trigger](../Definitions/NestedTables/triggers.md) | Event to fire when the interaction occurs. |  | 
-| particle_on_start | *not set* | Array of [Particle On Start](#particle-on-start-item-type) items | Particle effect that will be triggered at the start of the interaction. |  | 
-| play_sounds | *not set* | String | List of sounds to play when the interaction occurs. |  | 
-| repair_entity_item | *not set* | Array of [Repair Entity Item](#repair-entity-item-item-type) items | Allows to repair one of the entity's items. |  | 
-| spawn_entities | *not set* | String | List of entities to spawn when the interaction occurs. |  | 
-| spawn_items | *not set* | Array of [Spawn Items](#spawn-items-item-type) items | Loot table with items to drop on the ground upon successful interaction. |  | 
-| swing | false | Boolean true/false | If true, the player will do the 'swing' animation when interacting with this entity. |  | 
-| transform_to_item | *not set* | String | The item used will transform to this item upon successful interaction. Format: itemName:auxValue |  | 
-| use_item | false | Boolean true/false | If true, the interaction will use an item. |  | 
-| vibration | entity_interact | String | Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact. |  | 
-
-## Add Items item type
-Loot table with items to add to the player's inventory upon successful interaction.
-
-
-#### Add Items Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| table | *not set* | String | File path, relative to the Behavior Pack's path, to the loot table file. |  | 
 
 ## Interactions item type
 
@@ -57,28 +36,21 @@ Loot table with items to add to the player's inventory upon successful interacti
 | hurt_item | *not set* | Decimal number |  |  | 
 | interact_text | *not set* | String |  | Allay: `"action.interact.allay"` | 
 | on_interact | *not set* | String |  | Allay: `{"filters":{"all_of":[{"test":"has_equipment","subject":"other","domain":"hand","operator":"not","value":"lead"},{"test":"is_sneak_held","subject":"other","value":false},{"any_of":[{"test":"all_slots_empty","subject":"other","operator":"not","value":"hand"},{"test":"all_slots_empty","subject":"self","operator":"not","value":"hand"}]}]}}` | 
+| particle_on_start | *not set* | Array of [Particle On Start](#particle-on-start-item-type) items | Particle effect that will be triggered at the start of the interaction. |  | 
 | particle_on_start | *not set* | [Particle On Start](#particle-on-start-item-type) item |  |  | 
+| play_sounds | *not set* | String | List of sounds to play when the interaction occurs. |  | 
 | play_sounds | *not set* | String |  |  | 
+| repair_entity_item | *not set* | Array of [Repair Entity Item](#repair-entity-item-item-type) items | Allows to repair one of the entity's items. |  | 
+| spawn_entities | *not set* | String | List of entities to spawn when the interaction occurs. |  | 
+| spawn_items | *not set* | Array of [Spawn Items](#spawn-items-item-type) items | Loot table with items to drop on the ground upon successful interaction. |  | 
 | spawn_items | *not set* | [Spawn Items](#spawn-items-item-type) item |  |  | 
+| swing | false | Boolean true/false | If true, the player will do the 'swing' animation when interacting with this entity. |  | 
 | swing | *not set* | String |  |  | 
 | take_item | *not set* | String |  | Allay: `true` | 
+| transform_to_item | *not set* | String | The item used will transform to this item upon successful interaction. Format: itemName:auxValue |  | 
+| use_item | false | Boolean true/false | If true, the interaction will use an item. |  | 
 | use_item | *not set* | String |  |  | 
-
-## Particle On Start item type
-
-#### Particle_on_start Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| particle_type | *not set* | String |  | Bee: `"food"` | 
-
-## Spawn Items item type
-
-#### Spawn_items Properties
-
-|Name       |Default Value |Type |Description |Example Values |
-|:----------|:-------------|:----|:-----------|:------------- |
-| table | *not set* | String |  | Armadillo: `"loot_tables/entities/armadillo_brush.json"` | 
+| vibration | entity_interact | String | Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact. |  | 
 
 ## Particle On Start item type
 Particle effect that will be triggered at the start of the interaction.
@@ -92,6 +64,14 @@ Particle effect that will be triggered at the start of the interaction.
 | particle_type | *not set* | String | The type of particle that will be spawned. |  | 
 | particle_y_offset | 0 | Decimal number | Will offset the particle this amount in the y direction. |  | 
 
+## Particle On Start item type
+
+#### Particle_on_start Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| particle_type | *not set* | String |  | Bee: `"food"` | 
+
 ## Repair Entity Item item type
 Allows to repair one of the entity's items.
 
@@ -101,7 +81,7 @@ Allows to repair one of the entity's items.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | amount | *not set* | Integer number | How much of the item durability should be restored upon interaction. |  | 
-| slot | *not set* | Integer number | The entity's slot containing the item to be repaired. Inventory slots are denoted by positive numbers. Equipment slots are denoted by 'slot.weapon.mainhand', 'slot.weapon.offhand', 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
+| slot | *not set* | Integer number | The entity's slot containing the item to be repaired. Inventory slots are denoted by positive numbers. Armor slots are denoted by 'slot.armor.head', 'slot.armor.chest', 'slot.armor.legs', 'slot.armor.feet' and 'slot.armor.body'. |  | 
 
 ## Spawn Items item type
 Loot table with items to drop on the ground upon successful interaction.
@@ -113,6 +93,14 @@ Loot table with items to drop on the ground upon successful interaction.
 |:----------|:-------------|:----|:-----------|:------------- |
 | table | *not set* | String | File path, relative to the Behavior Pack's path, to the loot table file. |  | 
 | y_offset | 1 | Decimal number | Will offset the items spawn position this amount in the y direction. |  | 
+
+## Spawn Items item type
+
+#### Spawn_items Properties
+
+|Name       |Default Value |Type |Description |Example Values |
+|:----------|:-------------|:----|:-----------|:------------- |
+| table | *not set* | String |  | Armadillo: `"loot_tables/entities/armadillo_brush.json"` | 
 
 ## Samples
 
@@ -559,6 +547,9 @@ Loot table with items to drop on the ground upon successful interaction.
       "play_sounds": "shear",
       "interact_text": "action.interact.shear",
       "vibration": "shear",
+      "spawn_items": {
+        "table": "loot_tables/entities/copper_golem_shear.json"
+      },
       "on_interact": {
         "filters": {
           "all_of": [

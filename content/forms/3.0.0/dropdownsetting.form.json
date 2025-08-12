@@ -1,0 +1,48 @@
+{
+  "id": "3.0.0.DropdownSetting",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "3.0.0.DropdownSetting",
+    "title": "3.0.0.DropdownSetting",
+    "fields": [
+      {
+        "id": "default",
+        "title": "Default",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "dataType": 2,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^(?:(?!^(minecraft):).)+:(?:.)+$"
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "options",
+        "title": "Options",
+        "dataType": 16,
+        "minLength": 2,
+        "subFormId": "3.0.0/dropdownoption",
+        "isRequired": true
+      },
+      {
+        "id": "text",
+        "title": "Text",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "type",
+        "title": "SettingType",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

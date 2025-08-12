@@ -1,0 +1,36 @@
+{
+  "title": "Range of values between two numbers",
+  "description": "Specifies a range of values between two numbers, with a defined number of steps. This is used to control the variation in block properties such as offset, color, or other attributes.",
+  "fields": [
+    {
+      "id": "range",
+      "title": "Range",
+      "description": "Range of values",
+      "dataType": 16,
+      "subForm": {
+        "id": "range",
+        "title": "Range of values",
+        "fields": [
+          {
+            "id": "min",
+            "title": "Minimum value",
+            "description": "Minimum value of the range",
+            "dataType": 3
+          },
+          {
+            "id": "max",
+            "title": "Maximum value",
+            "description": "Maximum value of the range",
+            "dataType": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "steps",
+      "title": "Steps",
+      "description": "Number of steps between the range",
+      "dataType": 0
+    }
+  ]
+}
