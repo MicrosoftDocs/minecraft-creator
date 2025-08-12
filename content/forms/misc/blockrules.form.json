@@ -1,6 +1,11 @@
 {
   "id": "BlockRules",
-  "fields": [],
+  "fields": [
+    {
+      "id": "processor_type",
+      "title": "Jigsaw Processor Type"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockRules",
     "title": "BlockRules Misc",

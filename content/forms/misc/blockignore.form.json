@@ -1,6 +1,11 @@
 {
   "id": "BlockIgnore",
-  "fields": [],
+  "fields": [
+    {
+      "id": "processor_type",
+      "title": "Jigsaw Processor Type"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "BlockIgnore",
     "title": "BlockIgnore Misc",

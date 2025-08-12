@@ -1,6 +1,11 @@
 {
   "id": "Capped",
-  "fields": [],
+  "fields": [
+    {
+      "id": "processor_type",
+      "title": "Jigsaw Processor Type"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Capped",
     "title": "Capped Misc",
