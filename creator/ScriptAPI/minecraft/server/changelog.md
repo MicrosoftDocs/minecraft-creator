@@ -55,6 +55,7 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`BlockVolumeBase`](BlockVolumeBase.md)*
 - Added function *[`getBoundingBox`](BlockVolumeBase.md#getboundingbox)*
 #### Changed *[`Camera`](Camera.md)*
+- Added function *[`setCameraWithEase`](Camera.md#setcamerawithease)*
 - Added function *[`setFov`](Camera.md#setfov)*
 #### Added *[`ChatSendAfterEvent`](ChatSendAfterEvent.md)*
 #### Added *[`ChatSendAfterEventSignal`](ChatSendAfterEventSignal.md)*
@@ -74,6 +75,7 @@ description: Changelog of the `@minecraft/server` module
 - Changed function *[`fillBlocks`](Dimension.md#fillblocks)*
   - Changed argument `volume` type from [*BlockVolumeBase*](BlockVolumeBase.md) to [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
 - Added function *[`findClosestBiome`](Dimension.md#findclosestbiome)*
+- Added function *[`getBiome`](Dimension.md#getbiome)*
 - Added function *[`getLightLevel`](Dimension.md#getlightlevel)*
 - Added function *[`getSkyLightLevel`](Dimension.md#getskylightlevel)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
@@ -86,6 +88,8 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`stopSound`](Dimension.md#stopsound)*
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`target`](Entity.md#target)*
+- Added function *[`getAllBlocksStandingOn`](Entity.md#getallblocksstandingon)*
+- Added function *[`getBlockStandingOn`](Entity.md#getblockstandingon)*
 - Added function *[`setDynamicProperties`](Entity.md#setdynamicproperties)*
 #### Changed *[`EntityBreathableComponent`](EntityBreathableComponent.md)*
 - Added property *[`airSupply`](EntityBreathableComponent.md#airsupply)*

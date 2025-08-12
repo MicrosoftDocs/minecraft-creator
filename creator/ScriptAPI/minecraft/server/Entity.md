@@ -201,7 +201,13 @@ Type: *string*
 - [clearDynamicProperties](#cleardynamicproperties)
 - [clearVelocity](#clearvelocity)
 - [extinguishFire](#extinguishfire)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getAllBlocksStandingOn](#getallblocksstandingon)
+::: moniker-end
 - [getBlockFromViewDirection](#getblockfromviewdirection)
+::: moniker range="=minecraft-bedrock-experimental"
+- [getBlockStandingOn](#getblockstandingon)
+::: moniker-end
 - [getComponent](#getcomponent)
 - [getComponents](#getcomponents)
 - [getDynamicProperty](#getdynamicproperty)
@@ -583,6 +589,29 @@ function setOnFire(log: (message: string, status?: number) => void, targetLocati
 
 (preview) Work with this sample on the [MCTools.dev](https://mctools.dev/?open=gp/setOnFire.ts) code sandbox.
 
+::: moniker range="=minecraft-bedrock-experimental"
+### **getAllBlocksStandingOn**
+`
+getAllBlocksStandingOn(options?: GetBlocksStandingOnOptions): Block[]
+`
+
+Gets the solid blocks that this entity is directly standing on. Ignores pressure plates.
+
+#### **Parameters**
+- **options**?: [*GetBlocksStandingOnOptions*](GetBlocksStandingOnOptions.md) = `null`
+  
+  Additional configuration options for what blocks are returned.
+
+**Returns** [*Block*](Block.md)[] - The solid blocks that this entity is directly standing on. Returns an empty list if the entity is jumping or flying.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
+
 ### **getBlockFromViewDirection**
 `
 getBlockFromViewDirection(options?: BlockRaycastOptions): BlockRaycastHit | undefined
@@ -600,6 +629,29 @@ Returns the first intersecting block from the direction that this entity is look
 Notes:
 - This function can throw errors.
   - Throws [*InvalidEntityError*](InvalidEntityError.md)
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **getBlockStandingOn**
+`
+getBlockStandingOn(options?: GetBlocksStandingOnOptions): Block | undefined
+`
+
+Gets a single solid block closest to the center of the entity that this entity is directly standing on. Ignores pressure plates.
+
+#### **Parameters**
+- **options**?: [*GetBlocksStandingOnOptions*](GetBlocksStandingOnOptions.md) = `null`
+  
+  Additional configuration options for what block is returned.
+
+**Returns** [*Block*](Block.md) | *undefined* - A single solid block closest to the center of the entity that this entity is directly standing on. Undefined if entity is flying or jumping.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can throw errors.
+  - Throws [*InvalidEntityError*](InvalidEntityError.md)
+::: moniker-end
 
 ### **getComponent**
 `

@@ -24,6 +24,9 @@ Type: *boolean*
 - [clear](#clear)
 - [fade](#fade)
 - [setCamera](#setcamera)
+::: moniker range="=minecraft-bedrock-experimental"
+- [setCameraWithEase](#setcamerawithease)
+::: moniker-end
 - [setDefaultCamera](#setdefaultcamera)
 ::: moniker range="=minecraft-bedrock-experimental"
 - [setFov](#setfov)
@@ -74,6 +77,31 @@ Sets the current active camera for the specified player.
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **setCameraWithEase**
+`
+setCameraWithEase(cameraPreset: string, easeOptions: EaseOptions): void
+`
+
+Sets the current active camera with easing.
+
+#### **Parameters**
+- **cameraPreset**: *string*
+  
+  Identifier of a camera preset file defined within JSON.
+- **easeOptions**: [*EaseOptions*](EaseOptions.md)
+  
+  Options to ease the camera from the previous camera to the current one.
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+  
+Notes:
+- This function can't be called in read-only mode.
+- This function can throw errors.
+  - Throws when easing to minecraft:first_person presets currently without the experimental cameras toggle enabled.
+::: moniker-end
 
 ### **setDefaultCamera**
 `

@@ -888,6 +888,8 @@
       href: minecraft/server/EqualsComparison.md
     - name: ExplosionOptions
       href: minecraft/server/ExplosionOptions.md
+    - name: GetBlocksStandingOnOptions
+      href: minecraft/server/GetBlocksStandingOnOptions.md
     - name: GreaterThanComparison
       href: minecraft/server/GreaterThanComparison.md
     - name: GreaterThanOrEqualsComparison

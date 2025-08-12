@@ -320,6 +320,7 @@ Entity is from a player
 - `minecraft:from_player_default`
 - `minecraft:from_player_exposed`
 - `minecraft:from_player_oxidized`
+- `minecraft:from_player_spawned`
 - `minecraft:from_player_weathered`
 - `minecraft:from_serialized_entity`
 - `minecraft:from_village`

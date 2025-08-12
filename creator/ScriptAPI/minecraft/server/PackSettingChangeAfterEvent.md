@@ -25,8 +25,8 @@ The name of the setting.
 Type: *string*
 
 ### **settingValue**
-`read-only settingValue: boolean | number;`
+`read-only settingValue: boolean | number | string;`
 
 The value of the setting.
 
-Type: *boolean* | *number*
+Type: *boolean* | *number* | *string*
