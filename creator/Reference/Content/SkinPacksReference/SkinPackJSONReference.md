@@ -1,5 +1,5 @@
 ---
-author: copilot
+author: mammerla
 ms.author: mikeam
 title: Skin Pack JSON Formatting and Localization Reference
 description: "A comprehensive reference for skin pack JSON formatting, localization keys, and serialization keys"
@@ -224,6 +224,7 @@ skin.FantasyAdventure.WarriorArmor=Legendary Warrior Armor
 ### Texture Loading Issues
 
 **Problem**: Skins appear with default textures or fail to load
+
 **Common Causes**:
 - Incorrect filename in `texture` property
 - Missing PNG files in the pack
@@ -234,6 +235,7 @@ skin.FantasyAdventure.WarriorArmor=Legendary Warrior Armor
 ### Geometry Compatibility
 
 **Problem**: Skins appear distorted or incorrectly rendered
+
 **Common Causes**:
 - Using Alex textures with Steve geometry or vice versa
 
