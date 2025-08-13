@@ -1,18 +1,22 @@
 ---
-author: mammerla
+author: cam-wilkerson
 ms.author: mikeam
 title: "Biome Documentation - minecraft:overworld_height"
 description: "Describes the minecraft:overworld_height biome"
 ms.service: minecraft-bedrock-edition
-ms.date: 02/11/2025 
+ms.date: 08/13/2025 
 ---
 
 # Biome Documentation - minecraft:overworld_height
 
 Noise parameters used to drive terrain height in the Overworld.
 
+> (!Note)
+> This is a pre-caves and cliffs component. It 
+does not change overworld height, and currently only affects map item rendering.
 
-## Minecraft Overworld Height Biome Properties
+
+## Minecraft overworld height biome properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
