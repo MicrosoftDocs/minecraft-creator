@@ -5,4 +5,11 @@ _site/
 _themes*/
 _repo.*/
 
+dlresources/
+node_modules/
+bin/
+dist/
+lib/
+build/
+.tgz
 .openpublishing.buildcore.ps1
