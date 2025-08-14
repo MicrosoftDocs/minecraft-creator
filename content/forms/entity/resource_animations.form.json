@@ -3,7 +3,7 @@
     {
       "id": "animations",
       "dataType": 24,
-      "title:": "Animations",
+      "title": "Animations",
       "description": "A list of identified animation that this entity uses."
     }
   ]

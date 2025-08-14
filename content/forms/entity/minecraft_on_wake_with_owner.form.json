@@ -1,4 +1,5 @@
 {
+  "fields": [],
   "title": "On wake with owner trigger",
   "description": "A trigger when a mob's tamed onwer wakes up.",
   "generated_doNotEdit": {

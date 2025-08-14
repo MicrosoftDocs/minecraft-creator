@@ -3,7 +3,7 @@
     {
       "id": "geometry",
       "dataType": 24,
-      "title:": "Geometry model",
+      "title": "Geometry model",
       "description": "A list of identified models that this entity uses."
     }
   ]

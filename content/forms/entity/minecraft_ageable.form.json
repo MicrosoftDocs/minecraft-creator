@@ -9,18 +9,18 @@
     },
     {
       "id": "feedItems",
-      "desciption": "List of items that can be fed to an entity to age them up",
+      "description": "List of items that can be fed to an entity to age them up",
       "dataType": 17
     },
     {
       "id": "drop_items",
-      "desciption": "List of items that are dropped when an entity grows up",
+      "description": "List of items that are dropped when an entity grows up",
       "dataType": 17
     },
     {
       "id": "grow_up",
       "title": "Grow up event",
-      "desciption": "Event to fire when an entity grows up"
+      "description": "Event to fire when an entity grows up"
     }
   ],
   "generated_doNotEdit": {

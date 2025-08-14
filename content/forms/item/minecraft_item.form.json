@@ -1,6 +1,6 @@
 {
   "fields": [],
-  "descripiton": "Refers to the item definition, which includes the 'description' and 'components' sections of the file.",
+  "description": "Refers to the item definition, which includes the 'description' and 'components' sections of the file.",
   "generated_doNotEdit": {
     "title": "Item",
     "description": "Item definition includes the \"description\" and \"components\" sections.",

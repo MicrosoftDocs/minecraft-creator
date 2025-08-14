@@ -2,7 +2,7 @@
   "fields": [
     {
       "id": "vibration",
-      "desciption": "Type of vibration to emit.",
+      "description": "Type of vibration to emit.",
       "dataType": 2,
       "mustMatchChoices": true,
       "choices": [

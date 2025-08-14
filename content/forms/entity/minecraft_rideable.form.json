@@ -33,12 +33,12 @@
     {
       "id": "on_rider_enter_event",
       "dataType": 39,
-      "versionIntrouduced": "1.21.80"
+      "versionIntroduced": "1.21.80"
     },
     {
       "id": "on_rider_exit_event",
       "dataType": 39,
-      "versionIntrouduced": "1.21.80"
+      "versionIntroduced": "1.21.80"
     },
     {
       "id": "dismount_mode",

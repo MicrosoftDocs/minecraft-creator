@@ -1,4 +1,5 @@
 {
+  "fields": [],
   "title": "Open doors annotation",
   "note": "Requires the entity's `navigation` component to have the parameter `can_open_doors` set to `true`.",
   "description": "Allows the entity to open doors.",

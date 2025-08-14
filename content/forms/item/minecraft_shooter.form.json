@@ -2,15 +2,15 @@
   "fields": [
     {
       "id": "scale_power_by_draw_duration",
-      "required": true
+      "isRequired": true
     },
     {
       "id": "max_draw_duration",
-      "required": true
+      "isRequired": true
     },
     {
       "id": "charge_on_draw",
-      "required": true
+      "isRequired": true
     }
   ],
   "requires": [
