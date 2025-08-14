@@ -131,19 +131,6 @@ See [this article on client biomes](./../../Reference/Content/ClientBiomesRefere
       "mid_material": "minecraft:dirt",
       "top_material": "minecraft:grass_block"
     },
-    "minecraft:overworld_generation_rules": {
-      "hills_transformation": [
-        [ "forest_hills", 1 ],
-        [ "forest", 2 ]
-      ],
-      "mutate_transformation": "sunflower_plains",
-      "generate_for_climates": [
-        [ "medium", 3 ],
-        [ "warm", 1 ],
-        [ "cold", 1 ]
-      ]
-    },
-
     "minecraft:tags": {
       "tags": [
         "animal",
