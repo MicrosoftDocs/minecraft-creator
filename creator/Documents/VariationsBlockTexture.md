@@ -9,13 +9,7 @@ ms.date: 08/18/2025
 
 # Create a Variations Block Texture
 
-Variations textures assign blocks a unique texture from an array of weighted textures, based on the block's position in the array. 
-
-In this tutorial you'll learn the following:
-
-> [!div class="checklist"]
->
-> - How to create custom variations block textures
+Variations textures assign blocks a unique texture from an array of weighted textures, based on the block's position in the array. In this tutorial you'll learn how to create custom variations block textures.
 
 ### Prerequisites
 
