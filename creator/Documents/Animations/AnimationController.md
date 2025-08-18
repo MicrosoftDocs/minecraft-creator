@@ -1,14 +1,18 @@
 ---
 author: mammerla
 ms.author: mikeam
-title: Animation Documentation - Animation Controllers
+title: Animation Controllers Reference
 description: "A reference document detailing animation controllers"
 ms.service: minecraft-bedrock-edition
+ms.date: 08/08/2025
 ---
 
-# Animation Documentation - Animation Controllers
+# Animation Controllers Reference
 
 Animation controllers decide which animations to play and when.  Each controller contains a list of states that play one or more animations, each of which can be blended by a Molang expression if so desired.  Controller files are stored as JSON in the `animation_controllers` folder.
+
+> [!NOTE]
+> If you haven't read the [Introduction to Animation Controllers](../IntroductionToAnimationControllers.md) yet, check out that article first for a broader overview of the topic.
 
 ## Animation Controller Format
 

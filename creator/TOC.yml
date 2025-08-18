@@ -358,19 +358,19 @@
           href: Documents/MakerSeriesMakingTheGoblinChef.md
         - name: Animations and Rendering
           items:  
-          - name: Entity Modeling and Animation
-            href: Documents/EntityModelingAndAnimation.md
           - name: Animations Overview
             href: Documents/Animations/AnimationsOverview.md
+          - name: Entity Modeling and Animation
+            href: Documents/EntityModelingAndAnimation.md
           - name: Introduction to Animation Controllers
             href: Documents/IntroductionToAnimationControllers.md
-          - name: Animation Controllers Overview
+          - name: Animation Controllers Reference
             href: Documents/Animations/AnimationController.md
           - name: Animations vs Animation Controllers
             href: Documents/AnimationsVsControllers.md
           - name: Render Controllers
             href: Documents/Animations/AnimationRenderController.md
-          - name: Upgrading Animations
+          - name: Upgrading Animation Scripts
             href: Documents/Animations/AnimationUpgrade.md
         - name: NPCs
           items:  

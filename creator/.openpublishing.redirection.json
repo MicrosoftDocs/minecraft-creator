@@ -47,7 +47,12 @@
     },
     {
       "source_path": "Reference/Content/AnimationsReference/Examples/AnimationGettingStarted.md",
-      "redirect_url": "/minecraft/creator/documents/animations/AnimationGettingStarted",
+      "redirect_url": "/minecraft/creator/documents/animations/animationsoverview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "Documents/Animations/AnimationGettingStarted.md",
+      "redirect_url": "/minecraft/creator/documents/animations/animationsoverview",
       "redirect_document_id": false
     },
     {
