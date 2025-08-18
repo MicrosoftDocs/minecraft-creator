@@ -19,7 +19,7 @@ In this tutorial you'll learn the following:
 
 ### Prerequisites
 
-We recommend taking a look the following guides before beginning this tutorial:
+We recommend taking a look at the following guides before beginning this tutorial:
 
 - [Getting Started with Add-On Development](./GettingStarted.md)
 - [Introduction to Resource Packs](./ResourcePack.md)
