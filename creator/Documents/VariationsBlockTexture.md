@@ -108,7 +108,7 @@ This is what our custom block looks like when placed!
 
 A few things to keep in mind about variations textures on custom blocks:
 
-- The blocks json file must have a `format_version` greater than or equal to **1.21.110**. Otherwise, variations block textures will not be supported and the first texture in the array will always be selected.
+- The blocks JSON file must have a `format_version` greater than or equal to **1.21.110**. Otherwise, variations block textures will not be supported and the first texture in the array will always be selected.
 
 - Your world must have the **Upcoming Creator Features** experiment enabled.
   > [!Note]
