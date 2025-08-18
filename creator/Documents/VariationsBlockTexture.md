@@ -69,7 +69,7 @@ The array above has 10 dirt textures numbered 0-9 and each texture has an equal 
 
 ## Adding the texture to a custom block
 
-Using the defined variation texture above create a block definition json file in the behavior pack with the following code:
+Using the defined variation texture above create a block definition JSON file in the behavior pack with the following code:
 
 ```json
 { 
