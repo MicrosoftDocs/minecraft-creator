@@ -25,6 +25,9 @@ We recommend taking a look the following guides before beginning this tutorial:
 - [Introduction to Resource Packs](./ResourcePack.md)
 - [Create a Custom Die Block](./AddCustomDieBlock.md)
 
+
+## Creating the texture
+
 To create a custom variations texture you just need to define it in your resource pack's **terrain_texture.json** file. Textures in the `variations` array must have a weight value. If no weight value is provided, the first texture in the array is always selected regardless of the block's position.
 
 > [!Note]
@@ -64,7 +67,7 @@ Here is an example of a dirt variations block texture:
 The array above has 10 dirt textures numbered 0-9 and each texture has an equal (10%) chance of being selected.
 
 
-## Adding variations texture to custom block
+## Adding the texture to a custom block
 
 Using the defined variation texture above create a block definition json file in the behavior pack with the following code:
 
@@ -105,7 +108,7 @@ This is what our custom block looks like when placed!
 
 A few things to keep in mind about variations textures on custom blocks:
 
-- The blocks json file must have a `"format_version"` greater than or equal to **1.21.110**. Otherwise, variations block textures will not be supported and the first texture in the array will always be selected.
+- The blocks json file must have a `format_version` greater than or equal to **1.21.110**. Otherwise, variations block textures will not be supported and the first texture in the array will always be selected.
 
 - Your world must have the **Upcoming Creator Features** experiment enabled.
   > [!Note]
