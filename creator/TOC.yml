@@ -96,6 +96,8 @@
               href: Documents/AdvancedCustomBlocks.md
             - name: Create an Animated Block Texture
               href: Documents/CreateAnimatedBlockTexture.md
+            - name: Create a Variations Block Texture
+              href: Documents/VariationsBlockTexture.md
         - name: Learn About Entities and Items
           items:
             - name: Create a New Entity
