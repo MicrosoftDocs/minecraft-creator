@@ -31,9 +31,9 @@ ms.date: 02/11/2025
 | loop"<"hold_on_last_frame" | *not set* | String | should this animation stop, loop, or stay on the last frame when finished (true, false, "hold_on_last_frame" |  | 
 | override_previous_animation | *not set* | Boolean true/false | reset bones in this animation to the default pose before applying this animation |  | 
 | particle_effects | *not set* | Key/item pairs of [Particle Effects](#particle-effects-item-type) items |  |  | 
-| particle_effects (Alternate 1) | *not set* | Array of [Particle Effects (Alternate 1)](#particle-effects-(alternate-1)-item-type) items |  |  | 
+| particle_effects (Alternate 1) | *not set* | Array of [Particle Effects (Alternate 1)](#particle-effects-alternate-1-item-type) items |  |  | 
 | sound_effects | *not set* | Key/item pairs of [Sound Effects](#sound-effects-item-type) items | sound effects to trigger as this animation plays, keyed by time |  | 
-| sound_effects (Alternate 1) | *not set* | Array of [Sound Effects (Alternate 1)](#sound-effects-(alternate-1)-item-type) items |  |  | 
+| sound_effects (Alternate 1) | *not set* | Array of [Sound Effects (Alternate 1)](#sound-effects-alternate-1-item-type) items |  |  | 
 | start_delay | *not set* | Molang | How long to wait in seconds before playing this animation. Note that this expression is evaluated once before playing, and only re-evaluated if asked to play from the beginning again. A looping animation should use 'loop_delay' if it wants a delay between loops. |  | 
 | timeline | *not set* | Named set of objects |  |  | 
 | timeline (Alternate 1) | *not set* | Keyed set of strings |  |  | 
@@ -50,7 +50,7 @@ ms.date: 02/11/2025
 | position (Alternate 3) | *not set* | Keyed set of strings |  |  | 
 | relative_to | *not set* | [Relative To](#relative-to-item-type) item |  |  | 
 | rotation | *not set* | Key/item pairs of [Rotation](#rotation-item-type) items |  |  | 
-| rotation (Alternate 1) | *not set* | Array of [Rotation (Alternate 1)](#rotation-(alternate-1)-item-type) items |  |  | 
+| rotation (Alternate 1) | *not set* | Array of [Rotation (Alternate 1)](#rotation-alternate-1-item-type) items |  |  | 
 | rotation (Alternate 2) | *not set* | Molang array |  |  | 
 | rotation (Alternate 3) | *not set* | Molang |  |  | 
 | rotation (Alternate 4) | *not set* | Keyed set of strings |  |  | 

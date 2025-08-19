@@ -60,6 +60,12 @@
           "content": true
         }
       ],
+      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:selection_box/",
+          "content": true
+        }
+      ],
       "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:selection_box/",
@@ -67,12 +73,6 @@
         }
       ],
       "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_tip.block.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:selection_box/",
-          "content": true
-        }
-      ],
-      "/samples/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:selection_box/",
           "content": true
@@ -120,6 +120,12 @@
           "content": true
         }
       ],
+      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json": [
+        {
+          "path": "/minecraft:block/components/minecraft:selection_box/",
+          "content": true
+        }
+      ],
       "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_corner.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:selection_box/",
@@ -127,12 +133,6 @@
         }
       ],
       "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave_tip.block.json": [
-        {
-          "path": "/minecraft:block/components/minecraft:selection_box/",
-          "content": true
-        }
-      ],
-      "/samples/palm_tree_blocks_and_features/palm_tree_blocks/behavior_packs/palm_tree/blocks/palm_leave.block.json": [
         {
           "path": "/minecraft:block/components/minecraft:selection_box/",
           "content": true

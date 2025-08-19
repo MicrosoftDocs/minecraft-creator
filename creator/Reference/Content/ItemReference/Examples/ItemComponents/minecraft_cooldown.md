@@ -12,12 +12,12 @@ ms.date: 02/11/2025
 The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again.
 
 
-## Minecraft Cooldown Item Properties
+## Minecraft Cooldown Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
-| category | *not set* | String | The type of cool down for this item. All items with a cool down component with the same category are put on cool down when one is used. | Wind Charge: `"wind_charge"` | 
-| duration | *not set* | Decimal number | The duration of time (in seconds) items with a matching category will spend cooling down before becoming usable again. | Wind Charge: `0.5` | 
+| category | *not set* | String | All items with the same "category" are put on cooldown when one is used. | Wind Charge: `"wind_charge"` | 
+| duration | *not set* | Decimal number | How long the item is on cooldown before being able to be used again. | Wind Charge: `0.5` | 
 
 ## Samples
 

@@ -100,12 +100,6 @@
               "content": "loot_tables/entities/zombie_equipment.json"
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
-            {
-              "path": "/minecraft:entity/component_groups/melee_unit/minecraft:equipment/",
-              "content": "loot_tables/entities/piglin_brute_gear.json"
-            }
-          ],
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:equipment/",
@@ -114,6 +108,12 @@
             {
               "path": "/minecraft:entity/component_groups/melee_unit/minecraft:equipment/",
               "content": "loot_tables/entities/piglin_gear_melee.json"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+            {
+              "path": "/minecraft:entity/component_groups/melee_unit/minecraft:equipment/",
+              "content": "loot_tables/entities/piglin_brute_gear.json"
             }
           ],
           "/vanilla/behavior_pack/entities/skeleton.json": [
@@ -213,14 +213,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/component_groups/melee_unit/minecraft:equipment/",
-          "content": {
-            "table": "loot_tables/entities/piglin_brute_gear.json"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:equipment/",
@@ -232,6 +224,14 @@
           "path": "/minecraft:entity/component_groups/melee_unit/minecraft:equipment/",
           "content": {
             "table": "loot_tables/entities/piglin_gear_melee.json"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/component_groups/melee_unit/minecraft:equipment/",
+          "content": {
+            "table": "loot_tables/entities/piglin_brute_gear.json"
           }
         }
       ],

@@ -1,0 +1,5 @@
+{
+  "url": "https://github.com/microsoft/minecraft-samples/archive/3e8502d09bbe678602178dcca745ce43201a0761.zip",
+  "replaceFirstFolderWith": "minecraft-samples-main",
+  "exclude": ["mclive2022_addon/", "rtx_resource_pack/", "parkour_sample_world/"]
+}

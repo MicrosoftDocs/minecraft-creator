@@ -1,0 +1,17 @@
+{
+  "id": "DimensionDocument",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "DimensionDocument",
+    "title": "DimensionDocument Dimension",
+    "fields": [
+      {
+        "id": "minecraft:dimension",
+        "title": "Minecraft Dimension",
+        "dataType": 16,
+        "subFormId": "dimension/dimension",
+        "isRequired": true
+      }
+    ]
+  }
+}

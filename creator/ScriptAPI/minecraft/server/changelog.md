@@ -68,9 +68,6 @@ description: Changelog of the `@minecraft/server` module
 #### Changed *[`ContainerSlot`](ContainerSlot.md)*
 - Added function *[`getRawLore`](ContainerSlot.md#getrawlore)*
 - Added function *[`setDynamicProperties`](ContainerSlot.md#setdynamicproperties)*
-- Changed function *[`setLore`](ContainerSlot.md#setlore)*
-  - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
-  - Changed argument `loreList` type from *string*[] to ([*RawMessage*](RawMessage.md) | *string*)[]
 #### Changed *[`Dimension`](Dimension.md)*
 - Changed function *[`fillBlocks`](Dimension.md#fillblocks)*
   - Changed argument `volume` type from [*BlockVolumeBase*](BlockVolumeBase.md) to [*BlockVolumeBase*](BlockVolumeBase.md) | [*CompoundBlockVolume*](CompoundBlockVolume.md)
@@ -79,6 +76,7 @@ description: Changelog of the `@minecraft/server` module
 - Added function *[`getLightLevel`](Dimension.md#getlightlevel)*
 - Added function *[`getSkyLightLevel`](Dimension.md#getskylightlevel)*
 - Added function *[`getWeather`](Dimension.md#getweather)*
+- Added function *[`isChunkLoaded`](Dimension.md#ischunkloaded)*
 - Changed function *[`spawnEntity`](Dimension.md#spawnentity)*
   - Changed return type from [*Entity*](Entity.md) (throws exceptions) to *Entity* (throws exceptions)
   - Changed argument `identifier` type from [*EntityType*](EntityType.md) | *string* to *EntityIdentifierType<NoInfer<T>>*
@@ -86,6 +84,7 @@ description: Changelog of the `@minecraft/server` module
   - Changed argument `options` type from [*SpawnEntityOptions*](SpawnEntityOptions.md) to *SpawnEntityOptions*
 - Added function *[`stopAllSounds`](Dimension.md#stopallsounds)*
 - Added function *[`stopSound`](Dimension.md#stopsound)*
+#### Added *[`EmptyLootItem`](EmptyLootItem.md)*
 #### Changed *[`Entity`](Entity.md)*
 - Added property *[`target`](Entity.md#target)*
 - Added function *[`getAllBlocksStandingOn`](Entity.md#getallblocksstandingon)*
@@ -108,10 +107,14 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`weight`](ItemStack.md#weight)*
 - Added function *[`getRawLore`](ItemStack.md#getrawlore)*
 - Added function *[`setDynamicProperties`](ItemStack.md#setdynamicproperties)*
-- Changed function *[`setLore`](ItemStack.md#setlore)*
-  - Changed return type from *void* (throws exceptions) to *void* (throws exceptions)
-  - Changed argument `loreList` type from *string*[] to ([*RawMessage*](RawMessage.md) | *string*)[]
+#### Added *[`LootItem`](LootItem.md)*
+#### Added *[`LootPool`](LootPool.md)*
+#### Added *[`LootPoolEntry`](LootPoolEntry.md)*
+#### Added *[`LootPoolTiers`](LootPoolTiers.md)*
+#### Added *[`LootTable`](LootTable.md)*
+#### Added *[`LootTableEntry`](LootTableEntry.md)*
 #### Added *[`LootTableManager`](LootTableManager.md)*
+#### Added *[`LootTableReference`](LootTableReference.md)*
 #### Added *[`MessageReceiveAfterEvent`](MessageReceiveAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEvent`](PackSettingChangeAfterEvent.md)*
 #### Added *[`PackSettingChangeAfterEventSignal`](PackSettingChangeAfterEventSignal.md)*
@@ -124,6 +127,8 @@ description: Changelog of the `@minecraft/server` module
 #### Added *[`PlayerAimAssist`](PlayerAimAssist.md)*
 #### Added *[`PlayerPlaceBlockBeforeEvent`](PlayerPlaceBlockBeforeEvent.md)*
 #### Added *[`PlayerPlaceBlockBeforeEventSignal`](PlayerPlaceBlockBeforeEventSignal.md)*
+#### Added *[`PlayerSwingStartAfterEvent`](PlayerSwingStartAfterEvent.md)*
+#### Added *[`PlayerSwingStartAfterEventSignal`](PlayerSwingStartAfterEventSignal.md)*
 #### Added *[`PotionDeliveryType`](PotionDeliveryType.md)*
 #### Added *[`PotionEffectType`](PotionEffectType.md)*
 #### Added *[`Potions`](Potions.md)*
@@ -142,6 +147,7 @@ description: Changelog of the `@minecraft/server` module
 - Added property *[`chatSend`](WorldAfterEvents.md#chatsend)*
 - Added property *[`messageReceive`](WorldAfterEvents.md#messagereceive)*
 - Added property *[`packSettingChange`](WorldAfterEvents.md#packsettingchange)*
+- Added property *[`playerSwingStart`](WorldAfterEvents.md#playerswingstart)*
 #### Changed *[`WorldBeforeEvents`](WorldBeforeEvents.md)*
 - Added property *[`chatSend`](WorldBeforeEvents.md#chatsend)*
 - Added property *[`playerPlaceBlock`](WorldBeforeEvents.md#playerplaceblock)*
@@ -158,6 +164,7 @@ description: Changelog of the `@minecraft/server` module
 - Added value `Body`
 #### Changed enum [`GameRule`](GameRule.md)
 - Added value `LocatorBar`
+#### Added enum [`HeldItemOption`](HeldItemOption.md)
 #### Changed enum [`ItemComponentTypes`](ItemComponentTypes.md)
 - Added value `Book`
 - Added value `Inventory`

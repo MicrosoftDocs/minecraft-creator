@@ -25,7 +25,7 @@
         "title": "Distribution",
         "description": "Parameters controlling the initial scatter of the feature.",
         "dataType": 16,
-        "subFormId": "world/scatter_params"
+        "subFormId": "world_components/scatter_params"
       }
     ]
   }

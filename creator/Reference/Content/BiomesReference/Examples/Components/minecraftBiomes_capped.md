@@ -18,9 +18,9 @@ Generates surface on blocks with non-solid blocks above or below.
 |:----------|:-------------|:----|:-----------|:------------- |
 | beach_material | *not set* | Object | Material used to decorate surface near sea level. |  | 
 | ceiling_materials | *not set* | Array of objects | Materials used for the surface ceiling. Value must have at least 1 items. |  | 
-| ceiling_materials (Alternate 1) | *not set* | [Ceiling Materials (Alternate 1)](#ceiling-materials-(alternate-1)-item-type) item |  |  | 
+| ceiling_materials (Alternate 1) | *not set* | [Ceiling Materials (Alternate 1)](#ceiling-materials-alternate-1-item-type) item |  |  | 
 | floor_materials | *not set* | Array of objects | Materials used for the surface floor. Value must have at least 1 items. |  | 
-| floor_materials (Alternate 1) | *not set* | [Floor Materials (Alternate 1)](#floor-materials-(alternate-1)-item-type) item |  |  | 
+| floor_materials (Alternate 1) | *not set* | [Floor Materials (Alternate 1)](#floor-materials-alternate-1-item-type) item |  |  | 
 | foundation_material | *not set* | Object | Material used to replace solid blocks that are not surface blocks. |  | 
 | sea_material | *not set* | Object | Material used to replace air blocks below sea level. |  | 
 | type | *not set* | String | Controls the type of surface builder to use |  | 

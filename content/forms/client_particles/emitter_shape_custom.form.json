@@ -1,0 +1,81 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "emitter_shape_custom",
+    "title": "Emitter Shape Custom Client Particles",
+    "fields": [
+      {
+        "id": "direction",
+        "title": "Direction",
+        "dataType": 24,
+        "minLength": 3,
+        "maxLength": 3,
+        "alternates": [
+          {
+            "id": "direction",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "direction",
+              "title": "Direction",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "direction",
+            "dataType": 3
+          }
+        ]
+      },
+      {
+        "id": "offset",
+        "title": "Offset",
+        "dataType": 24,
+        "minLength": 3,
+        "maxLength": 3,
+        "alternates": [
+          {
+            "id": "offset",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "offset",
+              "title": "Offset",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "offset",
+            "dataType": 3
+          }
+        ]
+      }
+    ]
+  }
+}

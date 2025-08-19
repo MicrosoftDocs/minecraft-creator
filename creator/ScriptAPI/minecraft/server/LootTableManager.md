@@ -21,6 +21,8 @@ Manager for Loot Table related APIs. Allows for generation of drops from blocks 
 - [generateLootFromBlockType](#generatelootfromblocktype)
 - [generateLootFromEntity](#generatelootfromentity)
 - [generateLootFromEntityType](#generatelootfromentitytype)
+- [generateLootFromTable](#generatelootfromtable)
+- [getLootTable](#getloottable)
 
 ### **generateLootFromBlock**
 `
@@ -106,3 +108,32 @@ Generates loot from given a entity type as if it had been killed.
   Optional. The tool to use in the looting operation.
 
 **Returns** [*ItemStack*](ItemStack.md)[] | *undefined* - An array of item stacks dropped from the loot drop event. Can be empty if no loot dropped.
+
+### **generateLootFromTable**
+`
+generateLootFromTable(lootTable: LootTable, tool?: ItemStack): ItemStack[] | undefined
+`
+
+Generates loot from a given LootTable.
+
+#### **Parameters**
+- **lootTable**: [*LootTable*](LootTable.md)
+- **tool**?: [*ItemStack*](ItemStack.md) = `null`
+  
+  Optional. The tool to use in the looting operation.
+
+**Returns** [*ItemStack*](ItemStack.md)[] | *undefined* - An array of item stacks dropped from the loot drop event. Can be empty if no loot dropped, or undefined if the provided tool is insufficient to mine the block.
+
+### **getLootTable**
+`
+getLootTable(path: string): LootTable | undefined
+`
+
+Retrieves a single loot table from the level's current registry.
+
+#### **Parameters**
+- **path**: *string*
+  
+  Path to the table to retrieve. Does not include file extension, or 'loot_tables/' folder prefix. Example: `entities/creeper`.
+
+**Returns** [*LootTable*](LootTable.md) | *undefined* - Returns a LootTable if one is found, or `undefined` if the provided path does not correspond to an existing loot table.

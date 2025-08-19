@@ -1,0 +1,73 @@
+{
+  "id": "Jigsaw Block Metadata",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Jigsaw Block Metadata",
+    "title": "Jigsaw Block Metadata Structure",
+    "fields": [
+      {
+        "id": "block",
+        "title": "Block",
+        "description": "The serialization Id of the Jigsaw block before generation.",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "final_block",
+        "title": "Final Block",
+        "description": "The serialization Id to replace the starting Jigsaw block with.",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "joint_type",
+        "title": "Jigsaw Joint Type",
+        "description": "The type of Jigsaw joint made with 'target'.",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "name",
+        "title": "Name",
+        "description": "The name identifier referenced by the 'target' field of another Jigsaw block.",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "placement_priority",
+        "title": "Placement Priority",
+        "description": "The priority used during target block placement.",
+        "dataType": 0,
+        "isRequired": true
+      },
+      {
+        "id": "pool",
+        "title": "Pool",
+        "description": "The structure template pool containing possible structures to generate.",
+        "dataType": 2,
+        "isRequired": true
+      },
+      {
+        "id": "pos",
+        "title": "Pos",
+        "description": "The Jigsaw block position.",
+        "dataType": 16,
+        "isRequired": true
+      },
+      {
+        "id": "selection_priority",
+        "title": "Selection Priority",
+        "description": "The priority used during target block selection.",
+        "dataType": 0,
+        "isRequired": true
+      },
+      {
+        "id": "target",
+        "title": "Target",
+        "description": "The name identifier of the Jigsaw block to target within the generated structure.",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

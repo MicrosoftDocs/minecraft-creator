@@ -23,7 +23,7 @@
       "samples": [
         {
           "path": "Example:",
-          "content": "\t\t\"sequence\": [\r\n\t\t\t{\r\n\t\t\t\t\"remove\": { \"component_groups\": [ \"one\" ] }\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t\"remove\": { \"component_groups\": [ \"two\", \"five\", \"etc..\" ] }\r\n\t\t\t}\r\n\t\t]\r\n\t"
+          "content": "\t\t\"sequence\": [\n\t\t\t{\n\t\t\t\t\"remove\": { \"component_groups\": [ \"one\" ] }\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"remove\": { \"component_groups\": [ \"two\", \"five\", \"etc..\" ] }\n\t\t\t}\n\t\t]\n\t"
         }
       ]
     }

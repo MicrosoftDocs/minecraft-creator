@@ -15,7 +15,7 @@ Sets the wearable item component.
 > Here are the following equipment slots that can be set for the value of slot: slot.weapon.mainhand, slot.weapon.offhand, slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.hotbar, slot.inventory, slot.enderchest, slot.saddle, slot.armor, slot.chest, slot.equippable.
 
 
-## Minecraft Wearable Item Properties
+## Minecraft Wearable Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -25,16 +25,6 @@ Sets the wearable item component.
 | (deprecated) dispensable | *not set* | Boolean true/false |  | Chestplate: `true` | 
 
 ## Samples
-
-#### [Journal Pencil](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/chill_dreams/complete/behavior_packs/mamm_cds/items/journal_pencil.json)
-
-
-```json
-"minecraft:wearable": {
-  "dispensable": true,
-  "slot": "slot.weapon.offhand"
-}
-```
 
 #### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
 
@@ -73,5 +63,15 @@ Sets the wearable item component.
 "minecraft:wearable": {
   "dispensable": true,
   "slot": "slot.armor.legs"
+}
+```
+
+#### [Wrench](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/wrench.json)
+
+
+```json
+"minecraft:wearable": {
+  "dispensable": true,
+  "slot": "slot.weapon.offhand"
 }
 ```

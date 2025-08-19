@@ -22,18 +22,18 @@ ms.date: 02/11/2025
 | [minecraft:flammable](./minecraftBlock_flammable.md)| Describes the flammable properties for this block. |
 | [minecraft:friction](./minecraftBlock_friction.md)| Describes the friction for this block in a range of (0.0-0.9). |
 | [minecraft:geometry](./minecraftBlock_geometry.md)| The description identifier of the geometry to use to render this block. |
-| [minecraft:item_visual](./minecraftBlock_item_visual.md)| The description identifier of the geometry and material used to render the item of this block. <br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.50) |
+| [minecraft:item_visual](./minecraftBlock_item_visual.md)| The description identifier of the geometry and material used to render the item of this block.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.50) |
 | [minecraft:light_dampening](./minecraftBlock_light_dampening.md)| The amount that light will be dampened when it passes through the block, in a range (0-15). |
 | [minecraft:light_emission](./minecraftBlock_light_emission.md)| The amount of light this block will emit in a range (0-15). |
 | [minecraft:liquid_detection](./minecraftBlock_liquid_detection.md)| The definitions for how a block behaves when detecting liquid. |
 | [minecraft:loot](./minecraftBlock_loot.md)| The path to the loot table, relative to the behavior pack. |
 | [minecraft:map_color](./minecraftBlock_map_color.md)| Sets the color of the block when rendered to a map. |
 | [minecraft:material_instances](./minecraftBlock_material_instances.md)| The material instances for a block. |
-| [minecraft:movable](./minecraftBlock_movable.md)| The description identifier of the movable component <br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.100) |
+| [minecraft:movable](./minecraftBlock_movable.md)| The description identifier of the movable component<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.100) |
 | [minecraft:placement_filter](./minecraftBlock_placement_filter.md)| Sets rules for under what conditions the block can be placed/survive |
 | [minecraft:random_offset](./minecraftBlock_random_offset.md)| This component defines a random offset for the block, seeded based on the block's position and the specified range and steps. |
 | [minecraft:redstone_conductivity](./minecraftBlock_redstone_conductivity.md)| The basic redstone properties of a block; if the component is not provided the default values are used. |
-| [minecraft:replaceable](./minecraftBlock_replaceable.md)| A block with this component can be replaced when another block is placed in the same block position. <br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60) |
+| [minecraft:replaceable](./minecraftBlock_replaceable.md)| A block with this component can be replaced when another block is placed in the same block position.<br>Experimental toggles required: Upcoming Creator Features (in format versions before 1.21.60) |
 | [minecraft:selection_box](./minecraftBlock_selection_box.md)| Defines the area of the block that is selected by the player's cursor. |
 | [minecraft:tick](./minecraftBlock_tick.md)| Causes the block to tick based on a regular interval equal to a number of ticks randomly chosen from the internal_range parameter. |
 | [minecraft:transformation](./minecraftBlock_transformation.md)| The block's translation, rotation and scale with respect to the center of its world position |

@@ -15,7 +15,7 @@ Determines what enchantments can be applied to the item. Not all enchantments wi
 > The following enchantment slot types that can be set for the value of `slot`: sword, bow, pickaxe, armor_head, armor_torso, armor_legs, armor_feet.
 
 
-## Minecraft Enchantable Item Properties
+## Minecraft Enchantable Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -23,16 +23,6 @@ Determines what enchantments can be applied to the item. Not all enchantments wi
 | value | *not set* | Integer number | Specifies the value of the enchantment (minimum of 0). | Chestplate: `10` | 
 
 ## Samples
-
-#### [Item Axe Turret Kit](https://github.com/microsoft/minecraft-samples/tree/main/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/items/axe_turret_kit.item.json)
-
-
-```json
-"minecraft:enchantable": {
-  "slot": "pickaxe",
-  "value": 14
-}
-```
 
 #### [Chestplate](https://github.com/microsoft/minecraft-samples/tree/main/custom_items/behavior_packs/custom_item/items/chestplate.json)
 

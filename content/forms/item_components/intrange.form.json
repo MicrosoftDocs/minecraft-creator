@@ -1,0 +1,20 @@
+{
+  "id": "IntRange",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "IntRange",
+    "title": "IntRange Item Components",
+    "fields": [
+      {
+        "id": "max",
+        "title": "Max",
+        "dataType": 0
+      },
+      {
+        "id": "min",
+        "title": "Min",
+        "dataType": 0
+      }
+    ]
+  }
+}

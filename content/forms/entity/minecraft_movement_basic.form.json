@@ -202,13 +202,13 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+      "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
@@ -250,13 +250,13 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+      "/vanilla/behavior_pack/entities/skeleton.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/skeleton.json": [
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
@@ -310,13 +310,13 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
+      "/vanilla/behavior_pack/entities/villager.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/villager.json": [
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
@@ -346,18 +346,18 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:movement.basic/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/wither.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {
             "max_turn": 180
           }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
         }
       ],
       "/vanilla/behavior_pack/entities/wolf.json": [
@@ -367,6 +367,12 @@
         }
       ],
       "/vanilla/behavior_pack/entities/zoglin.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:movement.basic/",
+          "content": {}
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
@@ -384,19 +390,13 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:movement.basic/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/zombie_villager.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
@@ -498,13 +498,13 @@
           "content": {}
         }
       ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}
         }
       ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
         {
           "path": "/minecraft:entity/components/minecraft:movement.basic/",
           "content": {}

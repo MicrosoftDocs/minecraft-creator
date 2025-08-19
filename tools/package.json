@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "del": "^8.0.0",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "@minecraft/creator-tools": "^0.13.0"
+  },
+  "scripts": {
+    "preparedevenv": "npx gulp preparedevenv --max_old_space_size=16384",
+    "updateformsource": "npx mct docsupdateformsource --base-path ./build/workcontent/public/ -o ./out/",
+    "processcontent": "npx mct docsgenerateformjson --base-path ./build/workcontent/public/ -i ./../content/forms/ -o ./build/workcontent/public/data/forms/",
+    "build": "npm run-script updateformsource && npm run-script processcontent && npx mct docsgeneratemarkdown --base-path ./build/workcontent/public/ -i ./build/workcontent/public/data/forms/ -o ./out/msdocs/"
+  }
+}

@@ -1,29 +1,29 @@
 ---
-author: mammerla
+author: chipotle
 ms.author: mikeam
-title: Animation Documentation - Getting Started
-description: "A reference document detailing how to begin in the animation process with Minecraft: Bedrock Edition"
+title: Animations Overview
+description: "An overview of how to animate entities in Minecraft: Bedrock Edition."
 ms.service: minecraft-bedrock-edition
+ms.date: 08/08/2025
 ---
 
-# Animation Documentation - Getting Started
+# Animations in Minecraft: Bedrock Edition
 
-## Overview of Animations in Minecraft: Bedrock Edition
+Animations give your entities life as they move through your Minecraft world! Bedrock Edition's animation system is comprised of two parts with two very different functions:
 
-Animation follows the current Minecraft JSON paradigms:
+- **Animations** define the raw animation data for an entity, with keyframe data that tells the game how to manipulate components of the entity's model to make them walk, attack, or perform other actions.
+- **Animation controllers** add logic to the entity's animations, triggering them at certain times or in response to events.
 
-- Fields should be lower-case and use underscores (no spaces).
-- All JSON files in the definitions directory and subtree will be read into and interpreted by the animation system.
+> [!TIP]
+> The [Animations vs. Animation Controllers](../AnimationsVsControllers.md) article goes over the difference between animations and animation controllers in much greater depth.
 
-## Entity Definition
+## Entity definition
 
 In order to define what animations an entity has, both an `animations` and a `scripts/animate` section must be added to the entity definition file.
 
-Animations are specified as a short name, followed by their full resource name. The short name is used in animation controllers and the `scripts/animate` list, while the long name is used in the animations file.
+Animations are specified as a short name followed by their full resource name. The short name is used in animation controllers and the `scripts/animate` list, while the long name is used in the animations file.
 
-In the `scripts/animate` section, list the animations to play and in which order. A blend expression may be specified, or an animation may be specified directly.
-
-### Entity Definition Example
+In the `scripts/animate` section, you list the animations to play and in which order. A blend expression may be specified, or an animation may be specified directly.
 
 ```json
 {
@@ -64,18 +64,18 @@ In the `scripts/animate` section, list the animations to play and in which order
 }
 ```
 
-## Animation Hierarchy
+## Animation hierarchy
 
 Animations are channel based (rotation, position, or scale), and within that are key-framed:
 
-```
+```text
 EntityAnimation: animation name
   BoneAnimation[]: bone name for this animation
     AnimationChannel[]: rotation, scale, or translation to animate
       KeyFrame[]: the value for the channel to have at a specific time
 ```
 
-## Animation Controller
+## Animation controllers
 
 Controlling how and when animations are played, and how they interact with other animations, is incredibly important. While many items can be managed in the entity definition `scripts/animate` section, animation controllers provide the functionality of a state machine into states, and allow the user to control them as a block. Animations in an animation controller state can be animation controllers themselves, allowing for complex animation hierarchies.
 
@@ -114,7 +114,10 @@ To learn more about Animation Controllers, please visit the [Animation Controlle
 
 ## Animations
 
-At the beginning of each frame, the skeleton is reset to its default pose from its geometry definition and then animations are applied per-channel additively in order. Please note that the channels (x, y, and z) are added separately across animations **first!** They are then converted to a transform once all animations have been cumulatively applied.
+At the beginning of each frame, the skeleton is reset to its default pose from its geometry definition, then animations are applied per-channel in order.
+
+> [!NOTE]
+> The channels (x, y, and z) are added separately across animations first. Then, they're converted to a transform once all animations have been cumulatively applied.
 
 Animation data can be either raw data:
 
@@ -131,7 +134,7 @@ or a run-time interpreted script:
 > [!NOTE]
 > By default, rotations are in degrees, in X-then-Y-then-Z format.
 
-### Example from quadruped.animation.json in the vanilla resource pack's animation folder
+Here's an example from **quadruped.animation.json** in the Vanilla Resource Pack's animation folder:
 
 ```json
 {
@@ -157,7 +160,7 @@ All names (animations, bones, states, so on) must begin with a letter and contai
 
 In the key frame examples below, `"head"` is used as the name of the bone.
 
-## Key Frames
+## Key frames
 
 A key frame defines two values for a channel-specific transform to a specific bone at a specified time, one as time approaches the key frame time, and the second from the key frame time onwards.
 As such, when interpolating between two key frames, one can define the slope of the animation curve in either a continuous or discontinuous manner.
@@ -165,9 +168,9 @@ As such, when interpolating between two key frames, one can define the slope of 
 > [!NOTE]
 > Interpolation, in an animation scenario, is used to calculate the movement between 2 key frames.
 >
-> If a key frame is set on the first frame at a value of 0, and a key frame is set on the tenth frame at a value of 1, then the frames in-between will be interpolated in order to smoothly move the value from 0 to 1 over each frame until it gets to frame 10.
+> If a key frame is set on the first frame at a value of 0, and a key frame is set on the tenth frame at a value of 1, then the frames in-between will be linearly interpolated in order to smoothly move the value from 0 to 1 over each frame until it gets to frame 10.
 
-### Continuous Example
+### Continuous example
 
 ```json
 "head": {
@@ -179,7 +182,7 @@ As such, when interpolating between two key frames, one can define the slope of 
 }
 ```
 
-## Discontinuous Example
+### Discontinuous example
 
 To scale the 'head' bone:
 
@@ -204,11 +207,11 @@ To scale the 'head' bone:
 
 ## Transforms
 
-Transformations in Animation are made up of three components - location in three dimensional space, rotation, and scale.
+Transformations in animation are made up of three components: location in three dimensional space, rotation, and scale.
 
-Some key concepts on how Transforms work within Minecraft:Bedrock Edition:
+Here are a few key concepts on how transforms work within Minecraft: Bedrock Edition:
 
-- Order of operations: vertices are translated, rotated, then scaled.
+- Vertices are first translated, then rotated, then scaled.
 - Animation data is assumed to be hierarchical, and is applied to a bone by name matching the bone name in the animation data to the targeted geometry's skeleton.
 - Not every bone needs to be animated.
 - Bones that don't exist in the targeted geometry can be animated (missing bones are ignored).

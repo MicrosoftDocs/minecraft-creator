@@ -343,6 +343,17 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_adult/minecraft:behavior.mount_pathing/",
+          "content": {
+            "priority": 2,
+            "speed_multiplier": 1.25,
+            "target_dist": 0,
+            "track_target": true
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:horse_adult/minecraft:behavior.mount_pathing/",
@@ -365,17 +376,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/component_groups/adult/minecraft:behavior.mount_pathing/",
-          "content": {
-            "priority": 5,
-            "speed_multiplier": 1.25,
-            "target_dist": 0,
-            "track_target": true
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/zombie_villager.json": [
         {
           "path": "/minecraft:entity/component_groups/adult/minecraft:behavior.mount_pathing/",
@@ -387,11 +387,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_adult/minecraft:behavior.mount_pathing/",
+          "path": "/minecraft:entity/component_groups/adult/minecraft:behavior.mount_pathing/",
           "content": {
-            "priority": 2,
+            "priority": 5,
             "speed_multiplier": 1.25,
             "target_dist": 0,
             "track_target": true

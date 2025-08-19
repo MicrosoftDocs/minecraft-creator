@@ -54,13 +54,13 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/wither_skull_dangerous.json": [
+      "/vanilla/behavior_pack/entities/wither_skull.json": [
         {
           "path": "/minecraft:entity/components/minecraft:dimension_bound/",
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/wither_skull.json": [
+      "/vanilla/behavior_pack/entities/wither_skull_dangerous.json": [
         {
           "path": "/minecraft:entity/components/minecraft:dimension_bound/",
           "content": {}

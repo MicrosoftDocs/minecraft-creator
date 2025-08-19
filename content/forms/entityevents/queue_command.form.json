@@ -2,19 +2,19 @@
   "fields": [
     {
       "id": "command",
-      "desciption": "Slash command to run.",
+      "description": "Slash command to run.",
       "dataType": 2,
       "alternates": [
         {
           "id": "command",
-          "desciption": "List of slash commands to run.",
+          "description": "List of slash commands to run.",
           "dataType": 17
         }
       ]
     },
     {
       "id": "target",
-      "desciption": "The target context to execute against.",
+      "description": "The target context to execute against.",
       "dataType": 2,
       "choices": [
         {
@@ -43,7 +43,7 @@
       "samples": [
         {
           "path": "Example:",
-          "content": "\t\t\"queue_command\": {\r\n\t\t\t\"command\": \"say I have died!\"\r\n\t\t}\r\n\t"
+          "content": "\t\t\"queue_command\": {\n\t\t\t\"command\": \"say I have died!\"\n\t\t}\n\t"
         }
       ]
     }

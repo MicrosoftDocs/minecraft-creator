@@ -9,7 +9,7 @@
       {
         "id": "allow_simultaneous_interaction",
         "title": "Allow Simultaneous Interaction",
-        "description": "When true multiple mobs with the Transport Items Goal are allowed to simultaneously interact with a container. Default value: false.",
+        "description": "When true the mob will wait until a container is not used by other entities before starting to interact with it. Default value: false.",
         "dataType": 1
       },
       {

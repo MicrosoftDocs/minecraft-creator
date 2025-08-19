@@ -118,12 +118,12 @@ Allows the mob to pick up items on the ground.
 }
 ```
 
-#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
 
 
 ```json
 "minecraft:behavior.pickup_items": {
-  "priority": 4,
+  "priority": 9,
   "max_dist": 3,
   "goal_radius": 2,
   "speed_multiplier": 0.5,
@@ -131,12 +131,12 @@ Allows the mob to pick up items on the ground.
 }
 ```
 
-#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
+#### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 
 ```json
 "minecraft:behavior.pickup_items": {
-  "priority": 9,
+  "priority": 4,
   "max_dist": 3,
   "goal_radius": 2,
   "speed_multiplier": 0.5,
@@ -171,23 +171,6 @@ Allows the mob to pick up items on the ground.
 }
 ```
 
-#### [Zombie Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
-
-
-```json
-"minecraft:behavior.pickup_items": {
-  "priority": 8,
-  "max_dist": 3,
-  "goal_radius": 2,
-  "speed_multiplier": 1,
-  "pickup_based_on_chance": true,
-  "can_pickup_any_item": true,
-  "excluded_items": [
-    "minecraft:glow_ink_sac"
-  ]
-}
-```
-
 #### [Zombie Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager.json)
 
 
@@ -198,6 +181,23 @@ Allows the mob to pick up items on the ground.
   "goal_radius": 2,
   "speed_multiplier": 1,
   "pickup_based_on_chance": false,
+  "can_pickup_any_item": true,
+  "excluded_items": [
+    "minecraft:glow_ink_sac"
+  ]
+}
+```
+
+#### [Zombie Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/zombie_villager_v2.json)
+
+
+```json
+"minecraft:behavior.pickup_items": {
+  "priority": 8,
+  "max_dist": 3,
+  "goal_radius": 2,
+  "speed_multiplier": 1,
+  "pickup_based_on_chance": true,
   "can_pickup_any_item": true,
   "excluded_items": [
     "minecraft:glow_ink_sac"

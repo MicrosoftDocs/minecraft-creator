@@ -9,7 +9,7 @@ Please follow these guidelines when contributing:
 
 ### Form JSON content
 
-A lot of the content that is ultimately used to build content is in the `content` folder. This content is in JSON format, and is used to generate the documentation. The Schema of the JSON format is based on the Minecraft Creator Tools TypeScript definitions - see `docs/dataform/IFormDefinition.ts` for the TypeScript definition of the JSON format used for the documentation.  Per the notes in IDataForm.ts, do not edit any data in the generated_doNotEdit or generatedSchema_doNotEdit sub nodes of those JSON Files.
+A lot of the content that is ultimately used to build content is in the `content` folder. This content is in JSON format, and is used to generate the documentation. The schema of the JSON format is based on the Minecraft Creator Tools TypeScript definitions - see `docs/dataform/IFormDefinition.ts` for the TypeScript definition of the JSON format used for the documentation. IMPORTANT: as specified in the notes IDataForm.ts, do not edit any data in the generated_doNotEdit or generatedSchema_doNotEdit sub nodes of those JSON Files. Instead, make edits by adding or editing corresponding override field updates in the base of the JSON node if and only if the content will differ from what is in the generated sections.
 
 ### Markdown content
 
@@ -18,9 +18,9 @@ Content should be written conformant to the Microsoft Style Guide, available on 
 There is no build process for this documentation that is available in the GitHub repository. 
 
 Content should be validated to ensure it is consistent with the corpus of content at:
- - Vanilla sample files: https://github.com/mojang/bedrock-samples
- - Minecraft Content Samples: https://github.com/microsoft/minecraft-samples
- - Minecraft Scripting Samples: https://github.com/microsoft/minecraft-scripting-samples
+ - Vanilla sample files: https://github.com/mojang/bedrock-samples. This is located in the `tools/dlresources/latest/van/` folder.
+ - Minecraft Content Samples: https://github.com/microsoft/minecraft-samples. This is located in the `tools/dlresources/samples/microsoft/minecraft-samples-main` folder.
+ - Minecraft Scripting Samples: https://github.com/microsoft/minecraft-scripting-samples. This is located in the `tools/dlresources/samples/microsoft/minecraft-scripting-samples-main` folder.s
 
 Minecraft Creator Tools has some additional content and knowledge that might be useful to reference at https://github.com/mojang/minecraft-creator-tools. 
 

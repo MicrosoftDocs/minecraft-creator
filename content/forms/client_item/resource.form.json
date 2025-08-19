@@ -20,13 +20,13 @@
     {
       "id": "geometry",
       "dataType": 24,
-      "title:": "Geometry model",
+      "title": "Geometry model",
       "description": "A list of identified models that this item uses."
     },
     {
       "id": "animations",
       "dataType": 24,
-      "title:": "Animations",
+      "title": "Animations",
       "description": "A list of identified animation that this item uses."
     }
   ]

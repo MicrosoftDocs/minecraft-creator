@@ -449,14 +449,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/component_groups/melee_unit/minecraft:variant/",
-          "content": {
-            "value": 1
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/component_groups/ranged_unit/minecraft:variant/",
@@ -464,6 +456,14 @@
             "value": 0
           }
         },
+        {
+          "path": "/minecraft:entity/component_groups/melee_unit/minecraft:variant/",
+          "content": {
+            "value": 1
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
         {
           "path": "/minecraft:entity/component_groups/melee_unit/minecraft:variant/",
           "content": {
@@ -831,6 +831,80 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/farmer/minecraft:variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fisherman/minecraft:variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/shepherd/minecraft:variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fletcher/minecraft:variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/librarian/minecraft:variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cartographer/minecraft:variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cleric/minecraft:variant/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/armorer/minecraft:variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/toolsmith/minecraft:variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/butcher/minecraft:variant/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/leatherworker/minecraft:variant/",
+          "content": {
+            "value": 4
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/component_groups/unskilled/minecraft:variant/",
@@ -923,7 +997,63 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager.json": [
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_pale/minecraft:variant/",
+          "content": {
+            "value": 0
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_ashen/minecraft:variant/",
+          "content": {
+            "value": 1
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_black/minecraft:variant/",
+          "content": {
+            "value": 2
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_chestnut/minecraft:variant/",
+          "content": {
+            "value": 3
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_rusty/minecraft:variant/",
+          "content": {
+            "value": 4
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_snowy/minecraft:variant/",
+          "content": {
+            "value": 5
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_spotted/minecraft:variant/",
+          "content": {
+            "value": 6
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_striped/minecraft:variant/",
+          "content": {
+            "value": 7
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_woods/minecraft:variant/",
+          "content": {
+            "value": 8
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
         {
           "path": "/minecraft:entity/component_groups/farmer/minecraft:variant/",
           "content": {
@@ -994,62 +1124,6 @@
           "path": "/minecraft:entity/component_groups/leatherworker/minecraft:variant/",
           "content": {
             "value": 4
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_pale/minecraft:variant/",
-          "content": {
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_ashen/minecraft:variant/",
-          "content": {
-            "value": 1
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_black/minecraft:variant/",
-          "content": {
-            "value": 2
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_chestnut/minecraft:variant/",
-          "content": {
-            "value": 3
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_rusty/minecraft:variant/",
-          "content": {
-            "value": 4
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_snowy/minecraft:variant/",
-          "content": {
-            "value": 5
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_spotted/minecraft:variant/",
-          "content": {
-            "value": 6
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_striped/minecraft:variant/",
-          "content": {
-            "value": 7
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_woods/minecraft:variant/",
-          "content": {
-            "value": 8
           }
         }
       ],
@@ -1142,80 +1216,6 @@
           "path": "/minecraft:entity/component_groups/nitwit/minecraft:variant/",
           "content": {
             "value": 14
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/farmer/minecraft:variant/",
-          "content": {
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/fisherman/minecraft:variant/",
-          "content": {
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/shepherd/minecraft:variant/",
-          "content": {
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/fletcher/minecraft:variant/",
-          "content": {
-            "value": 0
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/librarian/minecraft:variant/",
-          "content": {
-            "value": 1
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/cartographer/minecraft:variant/",
-          "content": {
-            "value": 1
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/cleric/minecraft:variant/",
-          "content": {
-            "value": 2
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/armorer/minecraft:variant/",
-          "content": {
-            "value": 3
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:variant/",
-          "content": {
-            "value": 3
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/toolsmith/minecraft:variant/",
-          "content": {
-            "value": 3
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/butcher/minecraft:variant/",
-          "content": {
-            "value": 4
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/leatherworker/minecraft:variant/",
-          "content": {
-            "value": 4
           }
         }
       ],

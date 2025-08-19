@@ -1,0 +1,158 @@
+{
+  "fields": [
+    {
+      "id": "scale_power_by_draw_duration",
+      "isRequired": true
+    },
+    {
+      "id": "max_draw_duration",
+      "isRequired": true
+    },
+    {
+      "id": "charge_on_draw",
+      "isRequired": true
+    }
+  ],
+  "requires": [
+    {
+      "id": "minecraft:projectile",
+      "type": "item_component"
+    }
+  ],
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "ammunition": [
+            {
+              "item": "custom_projectile",
+              "use_offhand": true,
+              "search_inventory": true,
+              "use_in_creative": true
+            }
+          ],
+          "max_draw_duration": 1,
+          "scale_power_by_draw_duration": true,
+          "charge_on_draw": false
+        }
+      }
+    ]
+  },
+  "description": "Compels an item to shoot projectiles, similarly to a bow or crossbow. Must have the minecraft:use_modifiers component in order to function properly.",
+  "note": "Ammunition used by minecraft:shooter must have the minecraft:projectile component in order to function properly.",
+  "note2": "Items equipped with the shooter component will only sustain damage while shooting. Durability will remain unaffected if the item is used for melee attacks.",
+  "generated_doNotEdit": {
+    "title": "Shooter",
+    "description": "Shooter Item Component.",
+    "fields": [
+      {
+        "id": "ammunition",
+        "title": "ammunition",
+        "description": "Ammunition.",
+        "dataType": 15,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:shooter/",
+              "content": [
+                {
+                  "item": "minecraft:snowball",
+                  "use_offhand": true,
+                  "search_inventory": true,
+                  "use_in_creative": true
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "scale_power_by_draw_duration",
+        "title": "scale_power_by_draw_duration",
+        "description": "Scale power by draw duration? Default is set to false.",
+        "dataType": 1,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:shooter/",
+              "content": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "max_draw_duration",
+        "title": "max_draw_duration",
+        "description": "Draw Duration. Default is set to 0.",
+        "dataType": 3,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:shooter/",
+              "content": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "charge_on_draw",
+        "title": "charge_on_draw",
+        "description": "Charge on draw? Default is set to false.",
+        "dataType": 1
+      }
+    ],
+    "samples": {
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_shoot.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:shooter/",
+          "content": {
+            "ammunition": [
+              {
+                "item": "minecraft:snowball",
+                "use_offhand": true,
+                "search_inventory": true,
+                "use_in_creative": true
+              }
+            ],
+            "max_draw_duration": 1,
+            "scale_power_by_draw_duration": true,
+            "charge_on_draw": false
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:shooter",
+    "title": "Minecraft Shooter Item Components",
+    "description": "Shooter Item Component.",
+    "fields": [
+      {
+        "id": "ammunition",
+        "title": "Ammunition",
+        "description": "Ammunition.",
+        "dataType": 16,
+        "subFormId": "item_components/ammunition"
+      },
+      {
+        "id": "charge_on_draw",
+        "title": "Charge On Draw",
+        "description": "Charge on draw? Default is set to false.",
+        "dataType": 1
+      },
+      {
+        "id": "max_draw_duration",
+        "title": "Max Draw Duration",
+        "description": "Draw Duration. Default is set to 0.",
+        "dataType": 3
+      },
+      {
+        "id": "scale_power_by_draw_duration",
+        "title": "Scale Power By Draw Duration",
+        "description": "Scale power by draw duration? Default is set to false.",
+        "dataType": 1
+      }
+    ]
+  }
+}

@@ -18,7 +18,7 @@
       "samples": [
         {
           "path": "Example:",
-          "content": "\t\t\"sequence\": [\r\n\t\t\t{\r\n\t\t\t\t// I will execute first! c:\r\n\t\t\t},\r\n\t\t\t{\r\n\t\t\t\t// I will execute last! :c\r\n\t\t\t}\r\n\t\t]\r\n\t"
+          "content": "\t\t\"sequence\": [\n\t\t\t{\n\t\t\t\t// I will execute first! c:\n\t\t\t},\n\t\t\t{\n\t\t\t\t// I will execute last! :c\n\t\t\t}\n\t\t]\n\t"
         }
       ]
     }

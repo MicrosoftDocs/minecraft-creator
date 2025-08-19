@@ -284,6 +284,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/baby/minecraft:is_baby/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/component_groups/play_schedule_villager/minecraft:behavior.play/friend_types/0/filters/all_of/1/",
@@ -294,12 +300,6 @@
             "value": true
           }
         },
-        {
-          "path": "/minecraft:entity/component_groups/baby/minecraft:is_baby/",
-          "content": {}
-        }
-      ],
-      "/vanilla/behavior_pack/entities/villager.json": [
         {
           "path": "/minecraft:entity/component_groups/baby/minecraft:is_baby/",
           "content": {}
@@ -317,6 +317,12 @@
           "content": {}
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:zombie_baby/minecraft:is_baby/",
+          "content": {}
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
           "path": "/minecraft:entity/component_groups/minecraft:horse_baby/minecraft:is_baby/",
@@ -329,21 +335,15 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/component_groups/baby/minecraft:is_baby/",
-          "content": {}
-        }
-      ],
       "/vanilla/behavior_pack/entities/zombie_villager.json": [
         {
           "path": "/minecraft:entity/component_groups/baby/minecraft:is_baby/",
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
-          "path": "/minecraft:entity/component_groups/minecraft:zombie_baby/minecraft:is_baby/",
+          "path": "/minecraft:entity/component_groups/baby/minecraft:is_baby/",
           "content": {}
         }
       ],

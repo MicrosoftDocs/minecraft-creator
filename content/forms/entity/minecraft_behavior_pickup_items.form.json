@@ -175,7 +175,7 @@
               "content": 0.8
             }
           ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
+          "/vanilla/behavior_pack/entities/villager.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 0.5
@@ -245,25 +245,25 @@
               "content": 5
             }
           ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-              "content": 4
-            }
-          ],
           "/vanilla/behavior_pack/entities/villager.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 9
             }
           ],
-          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+              "content": 4
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 8
             }
           ],
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
+          "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
               "content": 8
@@ -452,11 +452,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager_v2.json": [
+      "/vanilla/behavior_pack/entities/villager.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
           "content": {
-            "priority": 4,
+            "priority": 9,
             "max_dist": 3,
             "goal_radius": 2,
             "speed_multiplier": 0.5,
@@ -464,11 +464,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager.json": [
+      "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
           "content": {
-            "priority": 9,
+            "priority": 4,
             "max_dist": 3,
             "goal_radius": 2,
             "speed_multiplier": 0.5,
@@ -499,6 +499,22 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
+          "content": {
+            "priority": 6,
+            "max_dist": 3,
+            "goal_radius": 2,
+            "speed_multiplier": 1,
+            "pickup_based_on_chance": true,
+            "can_pickup_any_item": true,
+            "excluded_items": [
+              "minecraft:glow_ink_sac"
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_pigman.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
@@ -509,22 +525,6 @@
             "speed_multiplier": 1,
             "pickup_based_on_chance": true,
             "can_pickup_any_item": true
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
-          "content": {
-            "priority": 8,
-            "max_dist": 3,
-            "goal_radius": 2,
-            "speed_multiplier": 1,
-            "pickup_based_on_chance": true,
-            "can_pickup_any_item": true,
-            "excluded_items": [
-              "minecraft:glow_ink_sac"
-            ]
           }
         }
       ],
@@ -544,11 +544,11 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
+      "/vanilla/behavior_pack/entities/zombie_villager_v2.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.pickup_items/",
           "content": {
-            "priority": 6,
+            "priority": 8,
             "max_dist": 3,
             "goal_radius": 2,
             "speed_multiplier": 1,
