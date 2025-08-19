@@ -1,0 +1,188 @@
+{
+  "fields": [],
+  "description": "Allows an item to place entities into the world. Additionally, in version 1.19.80 and above, the component allows the item to set the spawn type of a monster spawner.",
+  "samples": {
+    "sample": [
+      {
+        "path": "sample",
+        "content": {
+          "entity": "minecraft:spider",
+          "dispense_on": [
+            "minecraft:web"
+          ],
+          "use_on": [
+            "minecraft:web"
+          ]
+        }
+      }
+    ]
+  },
+  "generated_doNotEdit": {
+    "title": "Entity Placer",
+    "description": "The entity_placer item component specifies the blocks that the item can be placed on.",
+    "fields": [
+      {
+        "id": "dispense_on",
+        "title": "dispense_on",
+        "description": "List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
+        "dataType": 15
+      },
+      {
+        "id": "entity",
+        "title": "entity",
+        "description": "The entity to be placed in the world.",
+        "dataType": 2,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_turtle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:entity_placer/",
+              "content": "minecraft:turtle"
+            }
+          ]
+        }
+      },
+      {
+        "id": "use_on",
+        "title": "use_on",
+        "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
+        "dataType": 15,
+        "samples": {
+          "/samples/custom_items/behavior_packs/custom_item/items/my_sword_turtle.json": [
+            {
+              "path": "/minecraft:item/components/minecraft:entity_placer/",
+              "content": [
+                "minecraft:sand"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "samples": {
+      "/samples/custom_items/behavior_packs/custom_item/items/my_sword_turtle.json": [
+        {
+          "path": "/minecraft:item/components/minecraft:entity_placer/",
+          "content": {
+            "entity": "minecraft:turtle",
+            "use_on": [
+              "minecraft:sand"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "generatedFromSchema_doNotEdit": {
+    "id": "minecraft:entity_placer",
+    "title": "Minecraft Entity Placer Item Components",
+    "description": "The entity_placer item component specifies the blocks that the item can be placed on.",
+    "fields": [
+      {
+        "id": "dispense_on",
+        "title": "Dispense On",
+        "description": "List of block descriptors of the blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
+        "dataType": 15,
+        "subForm": {
+          "id": "dispense_on",
+          "title": "Dispense On",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": 0,
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "dataType": 1
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "dispense_on",
+            "dataType": 2
+          },
+          {
+            "id": "dispense_on",
+            "dataType": 16
+          }
+        ]
+      },
+      {
+        "id": "entity",
+        "title": "Entity",
+        "description": "The entity to be placed in the world.",
+        "dataType": 16,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^(?:\\w+(?:\\.\\w+)*:(?=\\w))?(?:\\w+(?:\\.\\w+)*)(?:<((?:\\w+(?:\\.\\w+)*:(?=\\w))?\\w+(?:\\.\\w+)*)*>)?$"
+          }
+        ]
+      },
+      {
+        "id": "use_on",
+        "title": "Use On",
+        "description": "List of block descriptors of the blocks that this item can be used on. If left empty, all blocks will be allowed.",
+        "dataType": 15,
+        "subForm": {
+          "id": "use_on",
+          "title": "Use On",
+          "fields": [
+            {
+              "id": "name",
+              "title": "Name",
+              "dataType": 2
+            },
+            {
+              "id": "states",
+              "title": "States",
+              "dataType": 0,
+              "alternates": [
+                {
+                  "id": "states",
+                  "dataType": 2
+                },
+                {
+                  "id": "states",
+                  "dataType": 1
+                }
+              ]
+            },
+            {
+              "id": "tags",
+              "title": "Tags",
+              "dataType": 2
+            }
+          ]
+        },
+        "alternates": [
+          {
+            "id": "use_on",
+            "dataType": 2
+          },
+          {
+            "id": "use_on",
+            "dataType": 16
+          }
+        ]
+      }
+    ]
+  }
+}

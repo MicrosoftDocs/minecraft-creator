@@ -121,16 +121,6 @@ Sets the width and height of the Entity's collision box.
 }
 ```
 
-#### [Breeze Wind Charge Projectile](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze_wind_charge_projectile.json)
-
-
-```json
-"minecraft:collision_box": {
-  "width": 0.3125,
-  "height": 0.3125
-}
-```
-
 #### [Breeze](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze.json)
 
 
@@ -138,5 +128,15 @@ Sets the width and height of the Entity's collision box.
 "minecraft:collision_box": {
   "width": 0.6,
   "height": 1.77
+}
+```
+
+#### [Breeze Wind Charge Projectile](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/breeze_wind_charge_projectile.json)
+
+
+```json
+"minecraft:collision_box": {
+  "width": 0.3125,
+  "height": 0.3125
 }
 ```

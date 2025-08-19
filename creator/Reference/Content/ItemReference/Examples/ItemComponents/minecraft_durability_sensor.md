@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Enables an item to emit effects when it receives damage. Because of this, the item also needs a `minecraft:durability` component.
 
 
-## Minecraft Durability Sensor Item Properties
+## Minecraft Durability Sensor Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -25,7 +25,7 @@ Enables an item to emit effects when it receives damage. Because of this, the it
 Defines both the durability threshold, and the effects emitted when that threshold is met.
 
 
-#### Minecraft Durability Sensor Durability Threshold Item Properties
+#### Minecraft Durability Sensor Durability Threshold Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

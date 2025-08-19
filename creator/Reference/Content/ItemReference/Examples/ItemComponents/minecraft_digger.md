@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Allows a creator to determine how quickly an item can dig specific blocks.
 
 
-## Minecraft Digger Item Properties
+## Minecraft Digger Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
@@ -21,7 +21,7 @@ Allows a creator to determine how quickly an item can dig specific blocks.
 
 ## Destroy Speeds item type
 
-#### BlockInfo Item Properties
+#### BlockInfo Item Components Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

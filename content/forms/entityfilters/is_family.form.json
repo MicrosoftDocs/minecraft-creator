@@ -500,19 +500,13 @@
               "content": "cat"
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+          "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/angry/minecraft:angry/filters/all_of/0/",
               "content": "piglin"
             },
             {
-              "path": "/minecraft:entity/component_groups/alert_for_attack_targets/minecraft:behavior.nearest_prioritized_attackable_target/entity_types/1/filters/",
-              "content": "wither"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/piglin.json": [
-            {
-              "path": "/minecraft:entity/component_groups/angry/minecraft:angry/filters/all_of/0/",
+              "path": "/minecraft:entity/component_groups/piglin_adult/minecraft:group_size/filters/all_of/1/",
               "content": "piglin"
             },
             {
@@ -538,6 +532,12 @@
             {
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/1/filters/any_of/0/",
               "content": "zoglin"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+            {
+              "path": "/minecraft:entity/component_groups/alert_for_attack_targets/minecraft:behavior.nearest_prioritized_attackable_target/entity_types/1/filters/",
+              "content": "wither"
             }
           ],
           "/vanilla/behavior_pack/entities/pillager.json": [
@@ -598,7 +598,7 @@
               "content": "trader_llama"
             }
           ],
-          "/vanilla/behavior_pack/entities/villager_v2.json": [
+          "/vanilla/behavior_pack/entities/villager.json": [
             {
               "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/any_of/0/",
               "content": "zombie"
@@ -607,6 +607,64 @@
               "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/any_of/1/",
               "content": "husk"
             },
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/1/",
+              "content": "zombie_villager"
+            },
+            {
+              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/3/",
+              "content": "vex"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/filters/",
+              "content": "farmer"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/filters/",
+              "content": "fisherman"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/4/filters/",
+              "content": "shepherd"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/5/filters/",
+              "content": "fletcher"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/6/filters/",
+              "content": "librarian"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/7/filters/",
+              "content": "cartographer"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/8/filters/",
+              "content": "cleric"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/9/filters/",
+              "content": "armorer"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/10/filters/",
+              "content": "weaponsmith"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/11/filters/",
+              "content": "toolsmith"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/12/filters/",
+              "content": "butcher"
+            },
+            {
+              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/13/filters/",
+              "content": "leatherworker"
+            }
+          ],
+          "/vanilla/behavior_pack/entities/villager_v2.json": [
             {
               "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/1/",
               "content": "zombie_villager"
@@ -666,64 +724,6 @@
             {
               "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/1/sequence/13/filters/",
               "content": "stone_mason"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/filters/",
-              "content": "zombie_villager"
-            }
-          ],
-          "/vanilla/behavior_pack/entities/villager.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/3/",
-              "content": "vex"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/filters/",
-              "content": "farmer"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/filters/",
-              "content": "fisherman"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/4/filters/",
-              "content": "shepherd"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/5/filters/",
-              "content": "fletcher"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/6/filters/",
-              "content": "librarian"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/7/filters/",
-              "content": "cartographer"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/8/filters/",
-              "content": "cleric"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/9/filters/",
-              "content": "armorer"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/10/filters/",
-              "content": "weaponsmith"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/11/filters/",
-              "content": "toolsmith"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/12/filters/",
-              "content": "butcher"
-            },
-            {
-              "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/13/filters/",
-              "content": "leatherworker"
             }
           ],
           "/vanilla/behavior_pack/entities/wither.json": [
@@ -1791,41 +1791,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/component_groups/angry/minecraft:angry/filters/all_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "operator": "!=",
-            "value": "piglin"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/alert_for_attack_targets/minecraft:behavior.nearest_prioritized_attackable_target/entity_types/0/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/alert_for_attack_targets/minecraft:behavior.nearest_prioritized_attackable_target/entity_types/1/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "wither"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/take_target_as_response_to_block_break/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/component_groups/angry/minecraft:angry/filters/all_of/0/",
@@ -1920,6 +1885,41 @@
             "test": "is_family",
             "subject": "other",
             "value": "hoglin"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/component_groups/angry/minecraft:angry/filters/all_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "piglin"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/alert_for_attack_targets/minecraft:behavior.nearest_prioritized_attackable_target/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/alert_for_attack_targets/minecraft:behavior.nearest_prioritized_attackable_target/entity_types/1/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "wither"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/take_target_as_response_to_block_break/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
           }
         }
       ],
@@ -2234,24 +2234,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:lightning_immune/minecraft:damage_sensor/triggers/on_damage/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "lightning"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:leashable/presets/0/filter/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "happy_ghast"
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
         {
           "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/",
@@ -2292,6 +2274,24 @@
             "test": "is_family",
             "subject": "other",
             "value": "wolf"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:lightning_immune/minecraft:damage_sensor/triggers/on_damage/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "lightning"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:leashable/presets/0/filter/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "happy_ghast"
           }
         }
       ],
@@ -2501,6 +2501,168 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "lightning"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/any_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "zombie"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "husk"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "zombie"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "zombie_villager"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/2/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "illager"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/3/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "vex"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.share_items/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "villager"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "farmer"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "fisherman"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/4/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "shepherd"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/5/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "fletcher"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/6/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "librarian"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/7/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "cartographer"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/8/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "cleric"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/9/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "armorer"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/10/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "weaponsmith"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/11/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "toolsmith"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/12/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "butcher"
+          }
+        },
+        {
+          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/13/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "leatherworker"
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/villager_v2.json": [
         {
           "path": "/minecraft:entity/component_groups/play_schedule_villager/minecraft:behavior.play/friend_types/0/filters/all_of/0/",
@@ -2705,69 +2867,340 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/villager.json": [
+      "/vanilla/behavior_pack/entities/vindicator.json": [
         {
-          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/0/on_damage/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:vindicator_johnny/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
           "content": {
             "test": "is_family",
             "subject": "other",
-            "value": "lightning"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/any_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "zombie"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/1/on_damage/filters/any_of/1/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "husk"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "zombie"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/1/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "zombie_villager"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/2/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
+            "operator": "!=",
             "value": "illager"
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/any_of/3/",
+          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/0/",
           "content": {
             "test": "is_family",
             "subject": "other",
-            "value": "vex"
+            "value": "player"
           }
         },
         {
-          "path": "/minecraft:entity/components/minecraft:behavior.share_items/entity_types/0/filters/",
+          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "snowgolem"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/2/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "irongolem"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/3/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "wandering_trader"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/0/",
           "content": {
             "test": "is_family",
             "subject": "other",
             "value": "villager"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "creaking"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "illager"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "undead"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "undead"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "inanimate"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "piglin"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/2/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "irongolem"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/3/filters/all_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "baby_turtle"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wolf.json": [
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.avoid_mob_type/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "llama"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "skeleton"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "sheep"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/2/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "rabbit"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/3/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "fox"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "baby_turtle"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/2/filters/all_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "skeleton"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_tame/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "skeleton"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_armorable/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_armorable/minecraft:interact/interactions/1/on_interact/filters/all_of/2/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/minecraft:wolf_armorable/minecraft:interact/interactions/2/on_interact/filters/all_of/2/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "operator": "!=",
+            "value": "breeze"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "snowgolem"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/2/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "irongolem"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/any_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "villager"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "wandering_trader"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/2/filters/all_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "baby_turtle"
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "snowgolem"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/2/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "irongolem"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/any_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "villager"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/any_of/1/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "wandering_trader"
+          }
+        },
+        {
+          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/2/filters/all_of/0/",
+          "content": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "baby_turtle"
           }
         },
         {
@@ -2864,234 +3297,6 @@
             "test": "is_family",
             "subject": "other",
             "value": "leatherworker"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/vindicator.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:vindicator_johnny/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "operator": "!=",
-            "value": "illager"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/1/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "snowgolem"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/2/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "irongolem"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/3/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "wandering_trader"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:default_targeting/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "villager"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.avoid_mob_type/entity_types/0/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "creaking"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "operator": "!=",
-            "value": "illager"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "piglin"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/2/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "irongolem"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/3/filters/all_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "baby_turtle"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wither.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:damage_sensor/triggers/on_damage/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "undead"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "operator": "!=",
-            "value": "undead"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/1/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "operator": "!=",
-            "value": "inanimate"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/wolf.json": [
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.avoid_mob_type/entity_types/0/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "llama"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "skeleton"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/1/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "sheep"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/2/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "rabbit"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/3/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "fox"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/all_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "baby_turtle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_wild/minecraft:behavior.nearest_attackable_target/entity_types/2/filters/all_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "skeleton"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_tame/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "skeleton"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_armorable/minecraft:interact/interactions/0/on_interact/filters/all_of/2/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_armorable/minecraft:interact/interactions/1/on_interact/filters/all_of/2/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/minecraft:wolf_armorable/minecraft:interact/interactions/2/on_interact/filters/all_of/2/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
           }
         }
       ],
@@ -3262,211 +3467,6 @@
             "test": "is_family",
             "subject": "other",
             "value": "stone_mason"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/1/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "snowgolem"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/2/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "irongolem"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/any_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "villager"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/any_of/1/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "wandering_trader"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/2/filters/all_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "baby_turtle"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/2/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "farmer"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/3/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "fisherman"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/4/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "shepherd"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/5/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "fletcher"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/6/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "librarian"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/7/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "cartographer"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/8/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "cleric"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/9/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "armorer"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/10/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "weaponsmith"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/11/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "toolsmith"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/12/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "butcher"
-          }
-        },
-        {
-          "path": "/minecraft:entity/events/minecraft:entity_transformed/sequence/13/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "leatherworker"
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.hurt_by_target/entity_types/0/filters/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "operator": "!=",
-            "value": "breeze"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "player"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/1/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "snowgolem"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/0/filters/any_of/2/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "irongolem"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/any_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "villager"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/1/filters/any_of/1/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "wandering_trader"
-          }
-        },
-        {
-          "path": "/minecraft:entity/components/minecraft:behavior.nearest_attackable_target/entity_types/2/filters/all_of/0/",
-          "content": {
-            "test": "is_family",
-            "subject": "other",
-            "value": "baby_turtle"
           }
         }
       ],

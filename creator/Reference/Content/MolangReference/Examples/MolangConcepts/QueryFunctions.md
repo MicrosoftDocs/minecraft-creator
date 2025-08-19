@@ -127,7 +127,6 @@ ms.date: 02/11/2025
 | [query.is_charging](queryfunctions/query_is_charging.md)| Returns 1.0 if the entity is charging, else it returns 0.0. |
 | [query.is_chested](queryfunctions/query_is_chested.md)| Returns 1.0 if the entity has chests attached to it (has the `is_chested` component), else it returns 0.0. |
 | [query.is_cooldown_category](queryfunctions/query_is_cooldown_category.md)| Returns 1.0 if the specified held or worn item has the specified cooldown category, otherwise returns 0.0. |
-| [query.is_cooldown_type](queryfunctions/query_is_cooldown_type.md)| Returns 1.0 if the specified held or worn item has the specified cooldown type name, otherwise returns 0.0. |
 | [query.is_crawling](queryfunctions/query_is_crawling.md)| Returns 1.0 if the entity is crawling, else it returns 0.0 |
 | [query.is_critical](queryfunctions/query_is_critical.md)| Returns 1.0 if the entity is at a critical level of damage, else it returns 0.0. |
 | [query.is_croaking](queryfunctions/query_is_croaking.md)| Returns 1.0 if the entity is croaking, else it returns 0.0. |

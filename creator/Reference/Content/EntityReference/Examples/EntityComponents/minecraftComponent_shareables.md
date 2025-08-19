@@ -1477,6 +1477,95 @@ List of items or item tags that the entity wants to share. Items in-game will ma
 }
 ```
 
+#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
+
+At /minecraft:entity/component_groups/behavior_peasant/minecraft:shareables/: 
+
+```json
+"minecraft:shareables": {
+  "items": [
+    {
+      "item": "minecraft:bread",
+      "want_amount": 3,
+      "surplus_amount": 6,
+      "stored_in_inventory": true
+    },
+    {
+      "item": "minecraft:carrot",
+      "want_amount": 60,
+      "surplus_amount": 4,
+      "stored_in_inventory": true
+    },
+    {
+      "item": "minecraft:potato",
+      "want_amount": 60,
+      "surplus_amount": 24,
+      "stored_in_inventory": true
+    },
+    {
+      "item": "minecraft:beetroot",
+      "want_amount": 60,
+      "surplus_amount": 24,
+      "stored_in_inventory": true
+    },
+    {
+      "item": "minecraft:wheat_seeds",
+      "want_amount": 64,
+      "surplus_amount": 64,
+      "stored_in_inventory": true,
+      "pickup_only": true
+    },
+    {
+      "item": "minecraft:beetroot_seeds",
+      "want_amount": 64,
+      "surplus_amount": 64,
+      "stored_in_inventory": true,
+      "pickup_only": true
+    },
+    {
+      "item": "minecraft:wheat",
+      "want_amount": 45,
+      "surplus_amount": 18,
+      "craft_into": "minecraft:bread",
+      "stored_in_inventory": true
+    }
+  ]
+}
+```
+
+At /minecraft:entity/component_groups/behavior_non_peasant/minecraft:shareables/: 
+
+```json
+"minecraft:shareables": {
+  "items": [
+    {
+      "item": "minecraft:bread",
+      "want_amount": 3,
+      "surplus_amount": 6,
+      "stored_in_inventory": true
+    },
+    {
+      "item": "minecraft:carrot",
+      "want_amount": 12,
+      "surplus_amount": 24,
+      "stored_in_inventory": true
+    },
+    {
+      "item": "minecraft:potato",
+      "want_amount": 12,
+      "surplus_amount": 24,
+      "stored_in_inventory": true
+    },
+    {
+      "item": "minecraft:beetroot",
+      "want_amount": 12,
+      "surplus_amount": 24,
+      "stored_in_inventory": true
+    }
+  ]
+}
+```
+
 #### [Villager v2](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager_v2.json)
 
 At /minecraft:entity/component_groups/work_schedule_farmer/minecraft:shareables/: 
@@ -1568,95 +1657,6 @@ At /minecraft:entity/component_groups/behavior_peasant/minecraft:shareables/:
       "item": "minecraft:carrot",
       "want_amount": 60,
       "surplus_amount": 24,
-      "stored_in_inventory": true
-    },
-    {
-      "item": "minecraft:potato",
-      "want_amount": 60,
-      "surplus_amount": 24,
-      "stored_in_inventory": true
-    },
-    {
-      "item": "minecraft:beetroot",
-      "want_amount": 60,
-      "surplus_amount": 24,
-      "stored_in_inventory": true
-    },
-    {
-      "item": "minecraft:wheat_seeds",
-      "want_amount": 64,
-      "surplus_amount": 64,
-      "stored_in_inventory": true,
-      "pickup_only": true
-    },
-    {
-      "item": "minecraft:beetroot_seeds",
-      "want_amount": 64,
-      "surplus_amount": 64,
-      "stored_in_inventory": true,
-      "pickup_only": true
-    },
-    {
-      "item": "minecraft:wheat",
-      "want_amount": 45,
-      "surplus_amount": 18,
-      "craft_into": "minecraft:bread",
-      "stored_in_inventory": true
-    }
-  ]
-}
-```
-
-At /minecraft:entity/component_groups/behavior_non_peasant/minecraft:shareables/: 
-
-```json
-"minecraft:shareables": {
-  "items": [
-    {
-      "item": "minecraft:bread",
-      "want_amount": 3,
-      "surplus_amount": 6,
-      "stored_in_inventory": true
-    },
-    {
-      "item": "minecraft:carrot",
-      "want_amount": 12,
-      "surplus_amount": 24,
-      "stored_in_inventory": true
-    },
-    {
-      "item": "minecraft:potato",
-      "want_amount": 12,
-      "surplus_amount": 24,
-      "stored_in_inventory": true
-    },
-    {
-      "item": "minecraft:beetroot",
-      "want_amount": 12,
-      "surplus_amount": 24,
-      "stored_in_inventory": true
-    }
-  ]
-}
-```
-
-#### [Villager](https://github.com/Mojang/bedrock-samples/tree/preview/behavior_pack/entities/villager.json)
-
-At /minecraft:entity/component_groups/behavior_peasant/minecraft:shareables/: 
-
-```json
-"minecraft:shareables": {
-  "items": [
-    {
-      "item": "minecraft:bread",
-      "want_amount": 3,
-      "surplus_amount": 6,
-      "stored_in_inventory": true
-    },
-    {
-      "item": "minecraft:carrot",
-      "want_amount": 60,
-      "surplus_amount": 4,
       "stored_in_inventory": true
     },
     {

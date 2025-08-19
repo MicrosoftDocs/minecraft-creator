@@ -1,9 +1,11 @@
 {
   "id": "Capped",
-  "fields": [      {
-        "id": "processor_type",
-        "title": "Jigsaw Processor Type"
-      }],
+  "fields": [
+    {
+      "id": "processor_type",
+      "title": "Jigsaw Processor Type"
+    }
+  ],
   "generatedFromSchema_doNotEdit": {
     "id": "Capped",
     "title": "Capped World",

@@ -52,17 +52,17 @@ ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Highlights.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | contrast | *not set* | Array of numbers | contrast Value must be <= 4. |  | 
-| contrast (Alternate 1) | *not set* | [Contrast (Alternate 1)](#contrast-(alternate-1)-item-type) item |  |  | 
+| contrast (Alternate 1) | *not set* | [Contrast (Alternate 1)](#contrast-alternate-1-item-type) item |  |  | 
 | enabled | *not set* | Boolean true/false | enabled |  | 
 | gain | *not set* | Array of numbers | gain Value must be <= 10. |  | 
-| gain (Alternate 1) | *not set* | [Gain (Alternate 1)](#gain-(alternate-1)-item-type) item |  |  | 
+| gain (Alternate 1) | *not set* | [Gain (Alternate 1)](#gain-alternate-1-item-type) item |  |  | 
 | gamma | *not set* | Array of numbers | gamma Value must be <= 4. |  | 
-| gamma (Alternate 1) | *not set* | [Gamma (Alternate 1)](#gamma-(alternate-1)-item-type) item |  |  | 
+| gamma (Alternate 1) | *not set* | [Gamma (Alternate 1)](#gamma-alternate-1-item-type) item |  |  | 
 | highlightsMin | *not set* | Decimal number | highlightsMin Value must be >= 1. Value must be <= 20. |  | 
 | offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. |  | 
-| offset (Alternate 1) | *not set* | [Offset (Alternate 1)](#offset-(alternate-1)-item-type) item |  |  | 
+| offset (Alternate 1) | *not set* | [Offset (Alternate 1)](#offset-alternate-1-item-type) item |  |  | 
 | saturation | *not set* | Array of numbers | saturation Value must be <= 10. |  | 
-| saturation (Alternate 1) | *not set* | [Saturation (Alternate 1)](#saturation-(alternate-1)-item-type) item |  |  | 
+| saturation (Alternate 1) | *not set* | [Saturation (Alternate 1)](#saturation-alternate-1-item-type) item |  |  | 
 
 ## Contrast (Alternate 1) item type
 Contrast
@@ -133,15 +133,15 @@ ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Midtones.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | contrast | *not set* | Array of numbers | contrast Value must be <= 4. |  | 
-| contrast (Alternate 1) | *not set* | [Contrast (Alternate 1)](#contrast-(alternate-1)-item-type) item |  |  | 
+| contrast (Alternate 1) | *not set* | [Contrast (Alternate 1)](#contrast-alternate-1-item-type) item |  |  | 
 | gain | *not set* | Array of numbers | gain Value must be <= 10. |  | 
-| gain (Alternate 1) | *not set* | [Gain (Alternate 1)](#gain-(alternate-1)-item-type) item |  |  | 
+| gain (Alternate 1) | *not set* | [Gain (Alternate 1)](#gain-alternate-1-item-type) item |  |  | 
 | gamma | *not set* | Array of numbers | gamma Value must be <= 4. |  | 
-| gamma (Alternate 1) | *not set* | [Gamma (Alternate 1)](#gamma-(alternate-1)-item-type) item |  |  | 
+| gamma (Alternate 1) | *not set* | [Gamma (Alternate 1)](#gamma-alternate-1-item-type) item |  |  | 
 | offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. |  | 
-| offset (Alternate 1) | *not set* | [Offset (Alternate 1)](#offset-(alternate-1)-item-type) item |  |  | 
+| offset (Alternate 1) | *not set* | [Offset (Alternate 1)](#offset-alternate-1-item-type) item |  |  | 
 | saturation | *not set* | Array of numbers | saturation Value must be <= 10. |  | 
-| saturation (Alternate 1) | *not set* | [Saturation (Alternate 1)](#saturation-(alternate-1)-item-type) item |  |  | 
+| saturation (Alternate 1) | *not set* | [Saturation (Alternate 1)](#saturation-alternate-1-item-type) item |  |  | 
 
 ## Contrast (Alternate 1) item type
 Contrast
@@ -212,16 +212,16 @@ ColorGraderConfig ColorGradingParametersSrc ColorGradingSettings Shadows.
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |
 | contrast | *not set* | Array of numbers | contrast Value must be <= 4. |  | 
-| contrast (Alternate 1) | *not set* | [Contrast (Alternate 1)](#contrast-(alternate-1)-item-type) item |  |  | 
+| contrast (Alternate 1) | *not set* | [Contrast (Alternate 1)](#contrast-alternate-1-item-type) item |  |  | 
 | enabled | *not set* | Boolean true/false | enabled |  | 
 | gain | *not set* | Array of numbers | gain Value must be <= 10. |  | 
-| gain (Alternate 1) | *not set* | [Gain (Alternate 1)](#gain-(alternate-1)-item-type) item |  |  | 
+| gain (Alternate 1) | *not set* | [Gain (Alternate 1)](#gain-alternate-1-item-type) item |  |  | 
 | gamma | *not set* | Array of numbers | gamma Value must be <= 4. |  | 
-| gamma (Alternate 1) | *not set* | [Gamma (Alternate 1)](#gamma-(alternate-1)-item-type) item |  |  | 
+| gamma (Alternate 1) | *not set* | [Gamma (Alternate 1)](#gamma-alternate-1-item-type) item |  |  | 
 | offset | *not set* | Array of numbers | offset Value must be >= -1. Value must be <= 1. |  | 
-| offset (Alternate 1) | *not set* | [Offset (Alternate 1)](#offset-(alternate-1)-item-type) item |  |  | 
+| offset (Alternate 1) | *not set* | [Offset (Alternate 1)](#offset-alternate-1-item-type) item |  |  | 
 | saturation | *not set* | Array of numbers | saturation Value must be <= 10. |  | 
-| saturation (Alternate 1) | *not set* | [Saturation (Alternate 1)](#saturation-(alternate-1)-item-type) item |  |  | 
+| saturation (Alternate 1) | *not set* | [Saturation (Alternate 1)](#saturation-alternate-1-item-type) item |  |  | 
 | shadowsMax | *not set* | Decimal number | shadowsMax Value must be <= 1. |  | 
 
 ## Contrast (Alternate 1) item type

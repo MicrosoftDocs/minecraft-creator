@@ -1,0 +1,16 @@
+{
+  "id": "Description",
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "Description",
+    "title": "Description Dimension",
+    "fields": [
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

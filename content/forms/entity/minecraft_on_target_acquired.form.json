@@ -59,7 +59,7 @@
               "content": "minecraft:on_scared"
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+          "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
               "content": "become_angry_event"
@@ -269,7 +269,7 @@
           "content": {}
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+      "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
           "content": {
@@ -278,7 +278,7 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin.json": [
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
         {
           "path": "/minecraft:entity/components/minecraft:on_target_acquired/",
           "content": {

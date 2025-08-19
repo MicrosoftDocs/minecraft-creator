@@ -1,20 +1,18 @@
 ---
-author: cam-wilkerson
+author: mammerla
 ms.author: mikeam
 title: "Biome Documentation - minecraft:multinoise_generation_rules"
 description: "Describes the minecraft:multinoise_generation_rules biome"
 ms.service: minecraft-bedrock-edition
-ms.date: 08/13/2025 
+ms.date: 02/11/2025 
 ---
 
 # Biome Documentation - minecraft:multinoise_generation_rules
 
 Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.
 
-> (!Note)
-> This is a pre-caves and cliffs component and is unused for custom biomes.
 
-## Minecraft multinoise generation rules biome properties
+## Minecraft Multinoise Generation Rules Biome Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

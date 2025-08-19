@@ -104,8 +104,6 @@
   href: query_day.md
 - name: query.death_ticks
   href: query_death_ticks.md
-- name: query.debug_output
-  href: query_debug_output.md
 - name: query.delta_time
   href: query_delta_time.md
 - name: query.distance_from_camera
@@ -258,8 +256,6 @@
   href: query_is_emoting.md
 - name: query.is_enchanted
   href: query_is_enchanted.md
-- name: query.is_feeling_happy
-  href: query_is_feeling_happy.md
 - name: query.is_fire_immune
   href: query_is_fire_immune.md
 - name: query.is_first_person
@@ -344,6 +340,8 @@
   href: query_is_riding.md
 - name: query.is_riding_any_entity_of_type
   href: query_is_riding_any_entity_of_type.md
+- name: query.is_rising
+  href: query_is_rising.md
 - name: query.is_roaring
   href: query_is_roaring.md
 - name: query.is_rolling
@@ -352,6 +350,8 @@
   href: query_is_saddled.md
 - name: query.is_scared
   href: query_is_scared.md
+- name: query.is_scenting
+  href: query_is_scenting.md
 - name: query.is_searching
   href: query_is_searching.md
 - name: query.is_selected_item

@@ -12,7 +12,7 @@ ms.date: 02/11/2025
 Sets the fog settings used during rendering. Biomes without this component will have default fog settings.
 
 
-## Minecraft Fog Appearance Client Biome Properties
+## Minecraft Fog Appearance Properties
 
 |Name       |Default Value |Type |Description |Example Values |
 |:----------|:-------------|:----|:-----------|:------------- |

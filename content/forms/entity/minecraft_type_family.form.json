@@ -131,15 +131,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/breeze_wind_charge_projectile.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:type_family/",
-              "content": [
-                "wind_charge",
-                "wind_charge_projectile"
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/breeze.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -147,6 +138,15 @@
                 "breeze",
                 "monster",
                 "mob"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/breeze_wind_charge_projectile.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "wind_charge",
+                "wind_charge_projectile"
               ]
             }
           ],
@@ -571,17 +571,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/piglin_brute.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:type_family/",
-              "content": [
-                "piglin",
-                "adult_piglin",
-                "piglin_brute",
-                "monster"
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/piglin.json": [
             {
               "path": "/minecraft:entity/component_groups/hunter/minecraft:type_family/",
@@ -595,6 +584,17 @@
               "path": "/minecraft:entity/component_groups/not_hunter/minecraft:type_family/",
               "content": [
                 "piglin",
+                "monster"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/piglin_brute.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "piglin",
+                "adult_piglin",
+                "piglin_brute",
                 "monster"
               ]
             }
@@ -698,16 +698,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:type_family/",
-              "content": [
-                "skeletonhorse",
-                "undead",
-                "mob"
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/skeleton.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -715,6 +705,16 @@
                 "skeleton",
                 "undead",
                 "monster",
+                "mob"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "skeletonhorse",
+                "undead",
                 "mob"
               ]
             }
@@ -898,18 +898,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/wither_skeleton.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:type_family/",
-              "content": [
-                "wither",
-                "monster",
-                "undead",
-                "skeleton",
-                "mob"
-              ]
-            }
-          ],
           "/vanilla/behavior_pack/entities/wither.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -918,6 +906,18 @@
                 "skeleton",
                 "monster",
                 "undead",
+                "mob"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "wither",
+                "monster",
+                "undead",
+                "skeleton",
                 "mob"
               ]
             }
@@ -961,6 +961,17 @@
               ]
             }
           ],
+          "/vanilla/behavior_pack/entities/zombie.json": [
+            {
+              "path": "/minecraft:entity/components/minecraft:type_family/",
+              "content": [
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            }
+          ],
           "/vanilla/behavior_pack/entities/zombie_horse.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -976,6 +987,140 @@
               "path": "/minecraft:entity/components/minecraft:type_family/",
               "content": [
                 "zombie_pigman",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            }
+          ],
+          "/vanilla/behavior_pack/entities/zombie_villager.json": [
+            {
+              "path": "/minecraft:entity/component_groups/farmer/minecraft:type_family/",
+              "content": [
+                "farmer",
+                "zombie",
+                "zombie_villager",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fisherman/minecraft:type_family/",
+              "content": [
+                "fisherman",
+                "zombie_villager",
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/shepherd/minecraft:type_family/",
+              "content": [
+                "shepherd",
+                "zombie_villager",
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/fletcher/minecraft:type_family/",
+              "content": [
+                "fletcher",
+                "zombie_villager",
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/librarian/minecraft:type_family/",
+              "content": [
+                "librarian",
+                "zombie_villager",
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/cartographer/minecraft:type_family/",
+              "content": [
+                "cartographer",
+                "zombie_villager",
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/cleric/minecraft:type_family/",
+              "content": [
+                "cleric",
+                "zombie_villager",
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/armorer/minecraft:type_family/",
+              "content": [
+                "armorer",
+                "zombie_villager",
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:type_family/",
+              "content": [
+                "weaponsmith",
+                "zombie_villager",
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/toolsmith/minecraft:type_family/",
+              "content": [
+                "toolsmith",
+                "zombie_villager",
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/butcher/minecraft:type_family/",
+              "content": [
+                "butcher",
+                "zombie_villager",
+                "zombie",
+                "undead",
+                "monster",
+                "mob"
+              ]
+            },
+            {
+              "path": "/minecraft:entity/component_groups/leatherworker/minecraft:type_family/",
+              "content": [
+                "leatherworker",
+                "zombie_villager",
+                "zombie",
                 "undead",
                 "monster",
                 "mob"
@@ -1149,151 +1294,6 @@
               ]
             }
           ],
-          "/vanilla/behavior_pack/entities/zombie_villager.json": [
-            {
-              "path": "/minecraft:entity/component_groups/farmer/minecraft:type_family/",
-              "content": [
-                "farmer",
-                "zombie",
-                "zombie_villager",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/fisherman/minecraft:type_family/",
-              "content": [
-                "fisherman",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/shepherd/minecraft:type_family/",
-              "content": [
-                "shepherd",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/fletcher/minecraft:type_family/",
-              "content": [
-                "fletcher",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/librarian/minecraft:type_family/",
-              "content": [
-                "librarian",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/cartographer/minecraft:type_family/",
-              "content": [
-                "cartographer",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/cleric/minecraft:type_family/",
-              "content": [
-                "cleric",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/armorer/minecraft:type_family/",
-              "content": [
-                "armorer",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:type_family/",
-              "content": [
-                "weaponsmith",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/toolsmith/minecraft:type_family/",
-              "content": [
-                "toolsmith",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/butcher/minecraft:type_family/",
-              "content": [
-                "butcher",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            },
-            {
-              "path": "/minecraft:entity/component_groups/leatherworker/minecraft:type_family/",
-              "content": [
-                "leatherworker",
-                "zombie_villager",
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            }
-          ],
-          "/vanilla/behavior_pack/entities/zombie.json": [
-            {
-              "path": "/minecraft:entity/components/minecraft:type_family/",
-              "content": [
-                "zombie",
-                "undead",
-                "monster",
-                "mob"
-              ]
-            }
-          ],
           "/samples/addon_starter/1_hello_world/behavior_packs/aop_mobs/entities/sheepomelon.behavior.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -1419,7 +1419,7 @@
               ]
             }
           ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
               "content": [
@@ -1428,7 +1428,7 @@
               ]
             }
           ],
-          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
+          "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
             {
               "path": "/minecraft:entity/components/minecraft:type_family/",
               "content": [
@@ -1556,17 +1556,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/breeze_wind_charge_projectile.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:type_family/",
-          "content": {
-            "family": [
-              "wind_charge",
-              "wind_charge_projectile"
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/breeze.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -1575,6 +1564,17 @@
               "breeze",
               "monster",
               "mob"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/breeze_wind_charge_projectile.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "wind_charge",
+              "wind_charge_projectile"
             ]
           }
         }
@@ -2110,19 +2110,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/piglin_brute.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:type_family/",
-          "content": {
-            "family": [
-              "piglin",
-              "adult_piglin",
-              "piglin_brute",
-              "monster"
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/piglin.json": [
         {
           "path": "/minecraft:entity/component_groups/hunter/minecraft:type_family/",
@@ -2139,6 +2126,19 @@
           "content": {
             "family": [
               "piglin",
+              "monster"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/piglin_brute.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "piglin",
+              "adult_piglin",
+              "piglin_brute",
               "monster"
             ]
           }
@@ -2263,18 +2263,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:type_family/",
-          "content": {
-            "family": [
-              "skeletonhorse",
-              "undead",
-              "mob"
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/skeleton.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -2283,6 +2271,18 @@
               "skeleton",
               "undead",
               "monster",
+              "mob"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/skeleton_horse.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "skeletonhorse",
+              "undead",
               "mob"
             ]
           }
@@ -2373,23 +2373,23 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/tnt_minecart.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:type_family/",
-          "content": {
-            "family": [
-              "minecart",
-              "inanimate"
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/tnt.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
           "content": {
             "family": [
               "tnt",
+              "inanimate"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/tnt_minecart.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "minecart",
               "inanimate"
             ]
           }
@@ -2514,20 +2514,6 @@
           }
         }
       ],
-      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:type_family/",
-          "content": {
-            "family": [
-              "wither",
-              "monster",
-              "undead",
-              "skeleton",
-              "mob"
-            ]
-          }
-        }
-      ],
       "/vanilla/behavior_pack/entities/wither.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -2537,6 +2523,20 @@
               "skeleton",
               "monster",
               "undead",
+              "mob"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/wither_skeleton.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "wither",
+              "monster",
+              "undead",
+              "skeleton",
               "mob"
             ]
           }
@@ -2589,6 +2589,19 @@
           }
         }
       ],
+      "/vanilla/behavior_pack/entities/zombie.json": [
+        {
+          "path": "/minecraft:entity/components/minecraft:type_family/",
+          "content": {
+            "family": [
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        }
+      ],
       "/vanilla/behavior_pack/entities/zombie_horse.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
@@ -2607,6 +2620,164 @@
           "content": {
             "family": [
               "zombie_pigman",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        }
+      ],
+      "/vanilla/behavior_pack/entities/zombie_villager.json": [
+        {
+          "path": "/minecraft:entity/component_groups/farmer/minecraft:type_family/",
+          "content": {
+            "family": [
+              "farmer",
+              "zombie",
+              "zombie_villager",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fisherman/minecraft:type_family/",
+          "content": {
+            "family": [
+              "fisherman",
+              "zombie_villager",
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/shepherd/minecraft:type_family/",
+          "content": {
+            "family": [
+              "shepherd",
+              "zombie_villager",
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/fletcher/minecraft:type_family/",
+          "content": {
+            "family": [
+              "fletcher",
+              "zombie_villager",
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/librarian/minecraft:type_family/",
+          "content": {
+            "family": [
+              "librarian",
+              "zombie_villager",
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cartographer/minecraft:type_family/",
+          "content": {
+            "family": [
+              "cartographer",
+              "zombie_villager",
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/cleric/minecraft:type_family/",
+          "content": {
+            "family": [
+              "cleric",
+              "zombie_villager",
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/armorer/minecraft:type_family/",
+          "content": {
+            "family": [
+              "armorer",
+              "zombie_villager",
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:type_family/",
+          "content": {
+            "family": [
+              "weaponsmith",
+              "zombie_villager",
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/toolsmith/minecraft:type_family/",
+          "content": {
+            "family": [
+              "toolsmith",
+              "zombie_villager",
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/butcher/minecraft:type_family/",
+          "content": {
+            "family": [
+              "butcher",
+              "zombie_villager",
+              "zombie",
+              "undead",
+              "monster",
+              "mob"
+            ]
+          }
+        },
+        {
+          "path": "/minecraft:entity/component_groups/leatherworker/minecraft:type_family/",
+          "content": {
+            "family": [
+              "leatherworker",
+              "zombie_villager",
+              "zombie",
               "undead",
               "monster",
               "mob"
@@ -2804,177 +2975,6 @@
               "nitwit",
               "zombie",
               "zombie_villager",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie_villager.json": [
-        {
-          "path": "/minecraft:entity/component_groups/farmer/minecraft:type_family/",
-          "content": {
-            "family": [
-              "farmer",
-              "zombie",
-              "zombie_villager",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/fisherman/minecraft:type_family/",
-          "content": {
-            "family": [
-              "fisherman",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/shepherd/minecraft:type_family/",
-          "content": {
-            "family": [
-              "shepherd",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/fletcher/minecraft:type_family/",
-          "content": {
-            "family": [
-              "fletcher",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/librarian/minecraft:type_family/",
-          "content": {
-            "family": [
-              "librarian",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/cartographer/minecraft:type_family/",
-          "content": {
-            "family": [
-              "cartographer",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/cleric/minecraft:type_family/",
-          "content": {
-            "family": [
-              "cleric",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/armorer/minecraft:type_family/",
-          "content": {
-            "family": [
-              "armorer",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/weaponsmith/minecraft:type_family/",
-          "content": {
-            "family": [
-              "weaponsmith",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/toolsmith/minecraft:type_family/",
-          "content": {
-            "family": [
-              "toolsmith",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/butcher/minecraft:type_family/",
-          "content": {
-            "family": [
-              "butcher",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        },
-        {
-          "path": "/minecraft:entity/component_groups/leatherworker/minecraft:type_family/",
-          "content": {
-            "family": [
-              "leatherworker",
-              "zombie_villager",
-              "zombie",
-              "undead",
-              "monster",
-              "mob"
-            ]
-          }
-        }
-      ],
-      "/vanilla/behavior_pack/entities/zombie.json": [
-        {
-          "path": "/minecraft:entity/components/minecraft:type_family/",
-          "content": {
-            "family": [
-              "zombie",
               "undead",
               "monster",
               "mob"
@@ -3202,7 +3202,7 @@
           }
         }
       ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
           "content": {
@@ -3213,7 +3213,7 @@
           }
         }
       ],
-      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave.json": [
+      "/samples/casual_creator/gray_wave/behavior_packs/mikeamm_gwve/entities/gray_wave_generator.json": [
         {
           "path": "/minecraft:entity/components/minecraft:type_family/",
           "content": {

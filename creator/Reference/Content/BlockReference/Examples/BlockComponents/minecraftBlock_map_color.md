@@ -35,18 +35,18 @@ Sets the color of the block when rendered to a map. If this component is omitted
 "minecraft:map_color": "#ffcd17"
 ```
 
-#### [Block Palm Leave Corner](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json)
-
-
-```json
-"minecraft:map_color": "#495f2b"
-```
-
 #### [Block Palm Leave](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave.block.json)
 
 
 ```json
 "minecraft:map_color": "#639f28"
+```
+
+#### [Block Palm Leave Corner](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_leave_corner.block.json)
+
+
+```json
+"minecraft:map_color": "#495f2b"
 ```
 
 #### [Block Palm Trunk](https://github.com/microsoft/minecraft-samples/tree/main/chill_oasis_blocks_and_features/chill_oasis_assets/behavior_packs/chill_oasis_assets/blocks/palm_trunk.block.json)

@@ -1,29 +1,6 @@
 {
+  "id": "minecraft:durability_sensor",
   "fields": [],
-  "generated_doNotEdit": {
-    "title": "Durability Sensor",
-    "description": "Defines both the durability threshold, and the effects emitted when that threshold is met.",
-    "fields": [
-      {
-        "id": "durability",
-        "title": "durability",
-        "description": "The effects are emitted when the item durability value is less than or equal to this value.",
-        "dataType": 0
-      },
-      {
-        "id": "particle_type",
-        "title": "enum ParticleType",
-        "description": "Particle effect to emit when the threshold is met.",
-        "dataType": 2
-      },
-      {
-        "id": "sound_event",
-        "title": "enum SharedTypes_Legacy_LevelSoundEvent",
-        "description": "Sound effect to emit when the threshold is met.",
-        "dataType": 2
-      }
-    ]
-  },
   "generatedFromSchema_doNotEdit": {
     "id": "minecraft:durability_sensor",
     "title": "Minecraft Durability Sensor Item",
@@ -35,7 +12,7 @@
         "description": "The list of both durability thresholds and effects emitted when each threshold is met. When multiple thresholds are met, only the threshold with the lowest durability after applying the damage is considered.",
         "dataType": 16,
         "minLength": 1,
-        "subFormId": "item/minecraft_durability_sensor_durability_threshold",
+        "subFormId": "item_components/minecraft_durability_sensor_durability_threshold",
         "isRequired": true
       }
     ]

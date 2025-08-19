@@ -16,8 +16,8 @@ A set of requirements for cooperative Add-On projects. See https://learn.microso
 
 |Name       |Description |
 |:----------|:-------------|
-| 101 |  | 
-| 102 |  | 
+| 101 | In a cooperative Add-On, there should not be any 'loose files' - e.g., <pack>/entities/this_is_a_loose_file.json - inside of a folder. | 
+| 102 | Creator folders - e.g., <pack>/entities/<custom folder name> - should not be a 'common' name. It should probably be in the form <creator_short_name>_<game_shortName>. See attached list of creator names. | 
 | 104 |  | 
 | 108 |  | 
 | 109 |  | 

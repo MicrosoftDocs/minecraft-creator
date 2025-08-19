@@ -3,7 +3,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:is_collidable",
     "title": "Is Collidable",
-    "description": "Allows other mobs to have vertical and horizontal collisions with this mob. For a collision to occur, both mobs must have a \"minecraft:collision_box\" component. This component can only be used on mobs and enables collisions exclusively between mobs.\r\nPlease note that this type of collision is unreliable for moving collidable mobs. It is recommended to use this component only in scenarios where the collidable mob remains stationary.\r\nCollidable behavior is closely related to stackable behavior. While the \"minecraft:is_collidable\" component governs how other mobs interact with the component's owner, the \"minecraft:is_stackable\" component describes how an entity interacts with others of its own kind.",
+    "description": "Allows other mobs to have vertical and horizontal collisions with this mob. For a collision to occur, both mobs must have a \"minecraft:collision_box\" component. This component can only be used on mobs and enables collisions exclusively between mobs.\nPlease note that this type of collision is unreliable for moving collidable mobs. It is recommended to use this component only in scenarios where the collidable mob remains stationary.\nCollidable behavior is closely related to stackable behavior. While the \"minecraft:is_collidable\" component governs how other mobs interact with the component's owner, the \"minecraft:is_stackable\" component describes how an entity interacts with others of its own kind.",
     "fields": [],
     "samples": {
       "/vanilla/behavior_pack/entities/boat.json": [

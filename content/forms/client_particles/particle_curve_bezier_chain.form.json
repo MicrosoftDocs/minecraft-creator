@@ -1,0 +1,62 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "particle_curve_bezier_chain",
+    "title": "Particle Curve Bezier Chain Client Particles",
+    "fields": [
+      {
+        "id": "input",
+        "title": "Input",
+        "dataType": 24,
+        "alternates": [
+          {
+            "id": "input",
+            "dataType": 14,
+            "readOnly": true,
+            "subForm": {
+              "id": "input",
+              "title": "Input",
+              "fields": [
+                {
+                  "id": "expression",
+                  "title": "Expression",
+                  "dataType": 2,
+                  "isRequired": true
+                },
+                {
+                  "id": "version",
+                  "title": "Version",
+                  "dataType": 0,
+                  "isRequired": true
+                }
+              ]
+            }
+          },
+          {
+            "id": "input",
+            "dataType": 3
+          }
+        ],
+        "isRequired": true
+      },
+      {
+        "id": "nodes",
+        "title": "Nodes",
+        "dataType": 16,
+        "isRequired": true
+      },
+      {
+        "id": "type",
+        "title": "Type",
+        "dataType": 2,
+        "validity": [
+          {
+            "comparison": "pattern",
+            "value": "^bezier_chain$"
+          }
+        ],
+        "isRequired": true
+      }
+    ]
+  }
+}

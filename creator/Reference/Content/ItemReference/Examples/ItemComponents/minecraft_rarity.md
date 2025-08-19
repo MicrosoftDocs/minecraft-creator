@@ -11,6 +11,9 @@ ms.date: 02/11/2025
 
 Specifies the base rarity and subsequently color of the item name when the player hovers the cursor over the item.
 
+> [!Note]
+> This item requires a format version of at least 1.21.30.
+
 ## Alternate Simple Representations
 
 This item can also be represented as a `String`.

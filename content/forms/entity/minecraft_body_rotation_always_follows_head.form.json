@@ -4,7 +4,7 @@
   "generated_doNotEdit": {
     "id": "minecraft:body_rotation_always_follows_head",
     "title": "Body Rotation Always Follows Head",
-    "description": "Causes the entity's body to always be automatically rotated to align with the entity's head.\r\nDoes not override the \"minecraft:body_rotation_blocked\" component.",
+    "description": "Causes the entity's body to always be automatically rotated to align with the entity's head.\nDoes not override the \"minecraft:body_rotation_blocked\" component.",
     "fields": [],
     "samples": {
       "/vanilla/behavior_pack/entities/happy_ghast.json": [

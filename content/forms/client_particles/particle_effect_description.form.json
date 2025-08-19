@@ -1,0 +1,24 @@
+{
+  "fields": [],
+  "generatedFromSchema_doNotEdit": {
+    "id": "particle_effect description",
+    "title": "Particle Effect Description Client Particles",
+    "description": "The description MUST contain an identifier and basic_render_parameters.",
+    "fields": [
+      {
+        "id": "basic_render_parameters",
+        "title": "Basic Render Parameters",
+        "description": "The parameters MUST contain a material and texture.",
+        "dataType": 16,
+        "subFormId": "client_particles/particle_effect_basic_render_parameters",
+        "isRequired": true
+      },
+      {
+        "id": "identifier",
+        "title": "Identifier",
+        "dataType": 2,
+        "isRequired": true
+      }
+    ]
+  }
+}

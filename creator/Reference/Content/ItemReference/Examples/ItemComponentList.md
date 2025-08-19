@@ -35,7 +35,7 @@ ms.date: 02/11/2025
 | [minecraft:hover_text_color](./ItemComponents/minecraft_hover_text_color.md)| Determines the color of the item name when hovering over it. |
 | [minecraft:icon](./ItemComponents/minecraft_icon.md)| Determines the icon to represent the item in the UI and elsewhere. |
 | [minecraft:interact_button](./ItemComponents/minecraft_interact_button.md)| A boolean or string that determines if the interact button is shown in touch controls, and what text is displayed on the button. |
-| [Minecraft Item Item](./ItemComponents/minecraft_item.md)| Item definition includes the "description" and "components" sections. |
+| [Minecraft Item Item](./ItemComponents/minecraft_item.md)| Refers to the item definition, which includes the 'description' and 'components' sections of the file. |
 | [minecraft:liquid_clipped](./ItemComponents/minecraft_liquid_clipped.md)| The liquid_clipped component determines whether the item interacts with liquid blocks on use. |
 | [minecraft:max_stack_size](./ItemComponents/minecraft_max_stack_size.md)| Determines how many of an item can be stacked together. |
 | [minecraft:projectile](./ItemComponents/minecraft_projectile.md)| Compels the item to shoot, similarly to an arrow. |
