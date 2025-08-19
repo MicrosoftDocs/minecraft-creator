@@ -381,17 +381,17 @@ Notes:
 
 ### **setLore**
 `
-setLore(loreList?: string[]): void
+setLore(loreList?: (RawMessage | string)[]): void
 `
 
 Sets the lore value - a secondary display string - for an ItemStack.
 
 #### **Parameters**
-- **loreList**?: *string*[] = `null`
+- **loreList**?: ([*RawMessage*](RawMessage.md) | *string*)[] = `null`
   
   A list of lore strings. Setting this argument to undefined will clear the lore.
   
 Notes:
 - This function can't be called in read-only mode.
 - This function can throw errors.
-  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), [*InvalidContainerSlotError*](InvalidContainerSlotError.md)
+  - Throws [*@minecraft/common.ArgumentOutOfBoundsError*](../../../scriptapi/minecraft/common/ArgumentOutOfBoundsError.md), *Error*, [*InvalidContainerSlotError*](InvalidContainerSlotError.md)

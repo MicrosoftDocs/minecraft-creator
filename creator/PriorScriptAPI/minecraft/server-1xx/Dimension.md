@@ -421,7 +421,6 @@ Returns the highest block at the given XZ location.
 **Returns** [*Block*](Block.md) | *undefined*
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can throw errors.
 
 ### **placeFeature**

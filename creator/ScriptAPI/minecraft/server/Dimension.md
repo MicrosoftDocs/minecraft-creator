@@ -66,6 +66,9 @@ Type: *string*
 ::: moniker range="=minecraft-bedrock-experimental"
 - [getWeather](#getweather)
 ::: moniker-end
+::: moniker range="=minecraft-bedrock-experimental"
+- [isChunkLoaded](#ischunkloaded)
+::: moniker-end
 - [placeFeature](#placefeature)
 - [placeFeatureRule](#placefeaturerule)
 - [playSound](#playsound)
@@ -237,7 +240,6 @@ Finds the location of the closest biome of a particular type. Note that the find
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.EngineError*](../../../scriptapi/minecraft/common/EngineError.md), *Error*
 ::: moniker-end
@@ -301,7 +303,6 @@ Gets the first block found above a given block location based on the given optio
 **Returns** [*Block*](Block.md) | *undefined*
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can throw errors.
 
 ### **getBlockBelow**
@@ -322,7 +323,6 @@ Gets the first block found below a given block location based on the given optio
 **Returns** [*Block*](Block.md) | *undefined*
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can throw errors.
 
 ### **getBlockFromRay**
@@ -525,7 +525,6 @@ Returns the total brightness level of light shining on a certain block position.
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
 ::: moniker-end
@@ -567,7 +566,6 @@ Returns the brightness level of light shining from the sky on a certain block po
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can throw errors.
   - Throws [*@minecraft/common.InvalidArgumentError*](../../../scriptapi/minecraft/common/InvalidArgumentError.md), [*LocationInUnloadedChunkError*](LocationInUnloadedChunkError.md)
 ::: moniker-end
@@ -590,7 +588,6 @@ Returns the highest block at the given XZ location.
 **Returns** [*Block*](Block.md) | *undefined*
   
 Notes:
-- This function can't be called in read-only mode.
 - This function can throw errors.
 
 ::: moniker range="=minecraft-bedrock-experimental"
@@ -605,9 +602,25 @@ Returns the current weather.
 
 > [!CAUTION]
 > This function is still in pre-release.  Its signature may change or it may be removed in future releases.
+::: moniker-end
+
+::: moniker range="=minecraft-bedrock-experimental"
+### **isChunkLoaded**
+`
+isChunkLoaded(location: Vector3): boolean
+`
+
+Returns true if the chunk at the given location is loaded (and valid for use with scripting).
+
+#### **Parameters**
+- **location**: [*Vector3*](Vector3.md)
   
-Notes:
-- This function can't be called in read-only mode.
+  Location to check if the chunk is loaded.
+
+**Returns** *boolean*
+
+> [!CAUTION]
+> This function is still in pre-release.  Its signature may change or it may be removed in future releases.
 ::: moniker-end
 
 ### **placeFeature**
